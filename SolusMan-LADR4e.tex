@@ -2942,7 +2942,7 @@ Thus $\range T=\Po_{m+n-1}(${\timesbf C}$)\Rightarrow T$ is surjective, and ther
 
 
 
-{\huge\timesbf 5.A} % 6.5h/8h
+{\huge\timesbf 5.A} % 7.5/9h
 
 {\timesbf\Large 1} {\timessl\Large 
 Suppose $T\in\Lm(V)$ and $U$ is a subspace of \,$V$.}\par\,\,\,
@@ -3443,8 +3443,7 @@ Hence, by [2.23], $m\leq \dim\range T+1.\quad\square$\par
 {\timesbf\Large 30} {\timessl\Large 
 Suppose $T\in\Lm(${\timesbf R}$^3)$ and $-4,5,\sqrt{7}$ are eigenvalues of $T$.}\par\quad\,
 {\timessl\Large Prove that $\,\exists\,x\in\Rbfc^3$ such that $Tx - 9x = (-4, 5, \sqrt{7})$.}\par
-{\timesbf S\footnotesize{OLUTION:}}\par\quad
-Because $9$ is not an eigenvalue. Hence $(T-9I)$ is surjective.\quad$\square$\par
+{\timesbf S\footnotesize{OLUTION:}}\,\,\,Because $9$ is not an eigenvalue. Hence $(T-9I)$ is surjective.\quad$\square$\par
 {\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
 
 {\timesbf\Large 31} {\timessl\Large 
@@ -3513,8 +3512,16 @@ $(${\timessl\Large which requires using the condition that $U$ is invariant unde
 (b) {\normalsize (O{\footnotesize R} Problem 35)} {\timessl\Large Show that each eigenvalue of $T/U$ is an eigenvalue of $T$.
 }\par
 {\timesbf S\footnotesize{OLUTION:}}\par\quad
-
-\par
+(a) Suppose $v+U=w+U\,(\,\Longleftrightarrow v-w\in U\,).$\par\qquad\,
+Then because $U$ is invariant under $T,$ $T(v-w)\in U\Longleftrightarrow Tv+U=Tw+U.$\par\qquad\,
+Hence the definition of $T/U$ makes sense.\par\quad
+(b) Suppose $\lambda$ is an eigenvalue of $T/U$ with an eigenvector $v+U.$\par\qquad\,
+Then $(T/U)(v+U)=\lambda(v+U)=Tv+U=\lambda v+U\Rightarrow (T-\lambda I)v\in U.$\par\qquad\,
+If $(T-\lambda I)v=0\Rightarrow Tv=\lambda v,$ then we are done.\par\qquad\,
+Otherwise, then $(T|_U-\lambda I):U\rightarrow U$ is invertible,\par\qquad\qquad\qquad\,\,\,\,
+hence $\,\exists\,!\,w\in U,(T|_U-\lambda I)(w)=(T-\lambda I) v\Rightarrow T(v-w)=\lambda (v-w).$\par\qquad\,
+Note that $v-w\neq 0\,($ for if not, $v\in U\Rightarrow v+U=0+U$ is not an eigenvector $).$\par\qquad\,
+Thus $\lambda$ is an eigenvalue of $T.\quad\square$\par
 {\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
 
 {\timesbf\Large 36} {\timessl\Large 
@@ -3522,8 +3529,11 @@ Prove or give an counterexample:}\par\quad\,
 {\timessl\Large The result of } {\Large(b)} {\timessl\Large in Exercise 35 is still true if $V$ is infinite-dim.
 }\par
 {\timesbf S\footnotesize{OLUTION:}}\par\quad
-
-\par
+Consider $V=\Spn(1,e^x,e^{2x},\dots)$ in $\Rbb^\Rbb$, and a subspace $U=\Spn(e^x,e^{2x},\dots)$ of $V$.\par\quad
+Define $T\in\Lm(V)$ by $Tf=e^x f.$ Then $\range T=U$ is invariant under $T.$\par\quad
+Consider $(T/U)(1+U)=e^x+U=0$\par\quad
+$\Rightarrow 0$ is an eigenvalue of $T/U$ but is not an eigenvalue of $T$\par\quad
+$(\,\null T=\{0\},$ for if not, $\exists\,f\in V\backslash\{0\},(Tf)(x)=e^{x}f(x)=0,\forall x\in\Rbf\Rightarrow f=0,$ contradicts $\,).\quad\square$\par
 {\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
 
 
@@ -3531,7 +3541,8 @@ Prove or give an counterexample:}\par\quad\,
 Suppose $T\in\Lm(V).$ Prove that $T/(\range T)=0.$
 }\par
 {\timesbf S\footnotesize{OLUTION:}}\par\quad
-
+$\forall v+\range T\in V/\range T,v+\range T\in\null(T/(\range T))$\par\quad
+$\Rightarrow\null(T/(\range T))=V/\range T\Rightarrow T/(\range T)$ is a zero map.
 \par
 {\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
 
@@ -3539,8 +3550,14 @@ Suppose $T\in\Lm(V).$ Prove that $T/(\range T)=0.$
 Suppose $T\in\Lm(V).$ Prove that $T/(\null T)$ is injective $\Longleftrightarrow$ $(\null T)\cap(\range T)=\{0\}.$
 }\par
 {\timesbf S\footnotesize{OLUTION:}}\par\quad
-
-\par
+(a) Suppose $T/(\null T)$ is injective.\par\qquad\,
+Then $(T/(\null T))(u+\null T)=Tu+\null T=0$\par\qquad\,
+$\Longleftrightarrow Tu\in\null T$ 又 $Tu\in\range T\Longleftrightarrow u+\null T=0\Longleftrightarrow u\in\null T\Longleftrightarrow Tu=0.$\par\qquad\,
+Thus $(\null T)\cap(\range T)=\{0\}.$\par\quad
+(b) Suppose $(\null T)\cap(\range T)=\{0\}.$\par\qquad\,
+Then $(T/(\null T))(u+\null T)=Tu+\null T=0$\par\qquad\,
+$\Longleftrightarrow Tu\in\null T$ 又 $Tu\in\range T\Longleftrightarrow Tu=0\Longleftrightarrow u\in\null T\Longleftrightarrow u+\null T=0.$\par\qquad\,
+Thus $T/(\null T)$ is injective.\quad$\square$\par
 {\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
 
 \rightline{\timesbf\Large{E{\normalsize NDED}}}\par{\tiny\,\par}
