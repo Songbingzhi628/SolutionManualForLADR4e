@@ -2942,7 +2942,7 @@ Thus $\range T=\Po_{m+n-1}(${\timesbf C}$)\Rightarrow T$ is surjective, and ther
 
 
 
-{\huge\timesbf 5.A} % 7.5/9h
+{\huge\timesbf 5.A} % 8/9h
 
 {\timesbf\Large 1} {\timessl\Large 
 Suppose $T\in\Lm(V)$ and $U$ is a subspace of \,$V$.}\par\,\,\,
@@ -3281,7 +3281,7 @@ While $z_1$ can be arbitrary, so that $(z_1,0,\dots)$ is an eigenvector with $z_
 For $\lambda\neq 0,$ $\lambda^k z_1=\lambda^{k-1} z_2=\dots=\lambda z_{k}=z_{k+1}$ for all $k.$\par\quad
 Then $(z_1,\lambda z_1,\lambda^2 z_1,\dots,\lambda^k z_1,\dots)$ is an eigenvector with $z_1\neq 0.$\par\quad
 Hence (a) each element of $\lambda\in\Fbf\,$is an eigenvalue of $T.$\par\quad
-And (b) the set of all eigenvectors of $T$ is $\{(z_1,\lambda z_1,\lambda^2 z_1,\dots,\lambda^k z_1,\dots)\in\Fbfc^\infty:\lambda\in\Fbfc,z_1\neq 0\}$
+And (b) the set of all eigenvectors of $T$ is $\{(z_1,\lambda z_1,\lambda^2 z_1,\dots,\lambda^k z_1,\dots)\in\Fbfc^\infty:\lambda\in\Fbfc,z_1\neq 0\}\quad\square$
 \par
 {\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
 
@@ -3413,8 +3413,17 @@ Otherwise, $\lambda_v=\lambda_{v+w}=\lambda_w.\quad\square$
 {\timessl\Large Suppose $T\in\Lm(V)$ is such that every subspace of \,$V$ of dim $k$ is invariant under $T$.}\par\qquad\quad\,
 {\timessl\Large Prove that $T$ is a scalar multiple of the identity operator.}\par
 {\timesbf S\footnotesize{OLUTION:}}\par\quad
-
-\par
+We prove the contrapositive:\par\qquad\,\,
+If $T\neq\lambda I,\forall\lambda\in\Fbfc,$ then $\,\exists$ a subspace $U$ of $V$ such that $\dim U=k,$ and $U$ is invariant under $T$.\par\quad
+By Problem (26), $\exists\,v\in V$ and $v\neq 0$ such that $v$ is not an eigenvector of $T.$\par\quad
+Thus $(v,Tv)$ is linearly independent. Extend to a basis of $V$ as $(v,Tv,u_1,\dots,u_n).$\par\quad
+Let $U=\Spn(v,u_1,\dots,u_{k-1})\Rightarrow U$ is not an invariant subspace of $V$ under $T.$\par\quad
+O{\small R.} Suppose $0\neq v=v_1\in V$ and extend to a basis of $V$ as $(v_1,\dots,v_n).$\par\quad
+Suppose $Tv_1=a_1 v_1+\dots+a_n v_n,\,\exists\,!\,\lambda_i\in\Fbfc.$\par\quad
+Consider $U=\Spn(v_1,v_{\alpha_1},\dots,v_{\alpha_{k-1}}),$\par\qquad\qquad\,\,
+where $\alpha_j\in\{2,\dots,n\}$ and $\alpha_1,\dots,\alpha_{k-1}$ are distinct and are chosen arbitrarily. $\dim U=k.$\par\quad
+Thus $Tv_1=a_1 v_1+\dots+a_n v_n\in U\Rightarrow a_2=\dots=a_n=0$\par\qquad
+$\Rightarrow Tv_1=a_1 v_1, $又 $v_1=v\in V$ is arbitrarily chosen $\Rightarrow T=\lambda I$ for some $\lambda.\quad\square$\par
 {\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
 
 {\small $\bullet$} {\timessl\Large 
@@ -3424,7 +3433,35 @@ Suppose $V$ is finite-dim and $T\in\Lm(V)$. Prove that
 {\timessl\Large such that $\dim U=\dim V - 1,$ $U$ is invariant under $T$.
 }\par
 {\timesbf S\footnotesize{OLUTION:}}\par\quad
-
+(a) Suppose $\lambda$ is an eigenvalue of $T$ with an eigenvector $v.$\par\qquad\,
+$(\,$ If $\dim V=1,$ then $U=\{0\}$ and we are done. $\,)$\par\qquad\,
+Extend $v_1=v$ to a basis of $V$ as $(v_1,v_2\dots,v_n).$\par\qquad\,
+{\timesbf Step 1} $\,$If $\,\exists\,w_1\in\Spn(v_2,\dots,v_n)$ and $w_1\neq 0$ such that $0\neq Tw_1\in\Spn(v_1)$,\par\qquad\qquad\quad\,
+then extend $w_1=\alpha_{1,1}$ to a basis of $\Spn(v_2,\dots,v_n)$ as $(\alpha_{1,1},\dots,\alpha_{1,n-1}).$\par\qquad\qquad\quad\, Otherwise, we stop at step $1.$\par\qquad\,
+{\timesbf Step 2} $\,$If $\,\exists\,w_2\in\Spn(\alpha_{1,1},\dots,\alpha_{1,n-1})$ and $w_2\neq 0$ such that $0\neq Tw_2\in\Spn(v_1,w_1),$\par\qquad\qquad\quad\,
+then extend $w_2=\alpha_{2,1}$ to a basis of $\Spn(\alpha_{1,2},\dots,\alpha_{1,n-1})$ as $(\alpha_{2,1},\dots,\alpha_{2,n-2}).$\par\qquad\qquad\quad\, Otherwise, we stop at step $2.$\par\qquad\,
+$\quad\vdots$\par\qquad\,
+{\timesbf Step k} $\,$If $\,\exists\,w_k\in\Spn(\alpha_{k-1,1},\dots,\alpha_{k-1,n-k+1})$ and $w_k\neq 0$ such that $0\neq Tw_k\in\Spn(v_1,w_1,\dots,w_{k-1}),$\par\qquad\qquad\quad\,
+then extend $w_k=\alpha_{k,1}$ to a basis of $\Spn(\alpha_{k-1,2},\dots,\alpha_{k-1,n-k})$ as $(\alpha_{k,1},\dots,\alpha_{k,n-k}).$\par\qquad\qquad\quad\,
+Otherwise, we stop at step $k.$\par\qquad\,
+$\quad\vdots$\par\qquad\,
+Finally, we stop at step $m,$ thus we get $(v_1,w_1,\dots,w_{m-1})$ and $(w_{m-1},\alpha_{m-1,2},\dots,\alpha_{m-1,n-m+1}),$\par\qquad\,
+$\range T|_{\Spn(w_1,\dots,w_{m-1})}=\Spn(v_1,x_1,\dots,x_{m-2})\Rightarrow\dim\null T|_{\Spn(w_1,\dots,w_{m-1})}=0.$\par\qquad\,
+$\Spn(\underbrace{v_1,w_1,\dots,w_{m-1}}_{\textup{length} \dim m})$ and $\Spn(\underbrace{w_{m-1},\alpha_{m-1,2},\dots,\alpha_{m-1,n-m+1}}_{\textup{length} \dim (n-m)})$ are invariant under $T.$\par\qquad\,
+Let $U=\Spn(\alpha_{m-1,2},\dots,\alpha_{m-1,n-m+1})\oplus\Spn(w_1,\dots,w_{m-1})$ and we are done.\quad$\square$\par\qquad\,
+C{\small OMMENT:} Both $\Spn(v_2,\dots,v_n)$ \,{\small and}\, $\Spn(\alpha_{m-1,2},\dots,\alpha_{m-1,n-m+1})\oplus\Spn(w_1,\dots,w_{m-1})$ are in $\mathcal{S}_V \Spn(v_1).$\par{\tiny\,\par}\quad
+(b) Suppose $U$ is an invariant subpsace of $V$ under $T$ with $\dim U=m=\dim V-1.$\par\qquad\,
+$(\,$ If $m=0,$ then $dim V=1$ and we are done $\,).$\par\qquad\,
+Let $(u_1,\dots,u_m)$ be a basis of $U$, extend to a basis of $V$ as $(u_0,u_1,\dots,u_m).$\par\qquad\,
+We discuss in cases:\par\qquad\,
+For $Tu_0\in U,$ then $\range T=U$ so that $T$ is not surjective $\Longleftrightarrow \null T\neq\{0\}\Longleftrightarrow$ $0$ is an eigenvalue of $T.$\par\qquad\,
+For $Tu_0\not\in U,$ then $Tu_0=a_0 u_0+a_1 u_1+\dots+a_{m}u_{m}.$\par\qquad\,
+(1) If $Tu_0\in\Spn(u_0),$ then we are done.\par\qquad\,
+(2) Otherwise, if $\range T|_U=U,$ then $Tu_0=a_0 u_0$ and we are done;\par\qquad\qquad\qquad\qquad\,
+otherwise, $T|_U:U\rightarrow U$ is not surjective ( $\Rightarrow$ not injective ), suppose $\range T|_U\neq\{0\}$\par\qquad\qquad\qquad\qquad\quad
+( Suppose $\range T|_U=\{0\}$. If $\dim U=0$ then we are done.\par
+\rightline{Otherwise $\exists\,u\in U\backslash\{0\},Tu=0$ and we are done. )\qquad\qquad}\par\qquad\qquad\qquad\qquad\,
+then $\exists\,u\in U\backslash\{0\},Tu=0,$ we are done.
 \par
 {\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
 
@@ -3542,8 +3579,7 @@ Suppose $T\in\Lm(V).$ Prove that $T/(\range T)=0.$
 }\par
 {\timesbf S\footnotesize{OLUTION:}}\par\quad
 $\forall v+\range T\in V/\range T,v+\range T\in\null(T/(\range T))$\par\quad
-$\Rightarrow\null(T/(\range T))=V/\range T\Rightarrow T/(\range T)$ is a zero map.
-\par
+$\Rightarrow\null(T/(\range T))=V/\range T\Rightarrow T/(\range T)$ is a zero map.\quad$\square$\par
 {\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
 
 {\timesbf\Large 34} {\timessl\Large 
