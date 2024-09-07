@@ -2942,7 +2942,7 @@ Thus $\range T=\Po_{m+n-1}(${\timesbf C}$)\Rightarrow T$ is surjective, and ther
 
 
 
-{\huge\timesbf 5.A} % 3.5h+(1h)/8h
+{\huge\timesbf 5.A} % 6.5h/8h
 
 {\timesbf\Large 1} {\timessl\Large 
 Suppose $T\in\Lm(V)$ and $U$ is a subspace of \,$V$.}\par\,\,\,
@@ -3203,7 +3203,7 @@ Thus $\lambda=\displaystyle\frac{\psi(Tv)}{\psi(v)}\Rightarrow Tv=\frac{\psi(Tv)
 Hence $\lambda$ is an eigenvalue of $T.\quad\square$\par
 {\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
 
-{\small $\bullet$} {\timessl\Large 
+{\small $\bullet$} TODO {\timessl\Large 
 Suppose $(v_1,\dots,v_n)$ is a basis of \,$V$ and $T\in\Lm(V)$.}\par\,\,
 {\timessl\Large Prove that if $\lambda$ is an eigenvalue of $T$, then}\par\,\,
 {\timessl\Large $|\lambda|\leq n \max\{|\Mt(T)_{j,k}|:1\leq j, k\leq n\}$, where $\Mt(T,(v_1,\dots,v_n)).$
@@ -3332,18 +3332,52 @@ Suppose $A\in\Fbfc^{n,n}.$ Define $T\in\Lm(${\timesbf F}$^n)$ by $Tx = Ax$,}\par
 (b) {\timessl\Large Suppose the sum of the entries in each column of $A$ equals $1$.}\par\qquad\,\,\,
 {\timessl\Large Prove that $1$ is an eigenvalue of $T$.}\par
 {\timesbf S\footnotesize{OLUTION:}}\par\quad
-
-\par
+(a) Suppose $\lambda$ is an eigenvalue of $T$ with an eigenvector $x=\,${\small$\begin{pmatrix}
+x_1\\ \vdots\\ x_n
+\end{pmatrix}.$}\par\qquad\,
+Then {\small$Tx=Ax=\begin{pmatrix} \sum\limits_{c=1}^n A_{1,c}x_c\\ \vdots\\ \sum\limits_{c=1}^n A_{n,c}x_c\end{pmatrix}=\lambda \begin{pmatrix} x_1\\ \vdots\\ x_n\end{pmatrix}.$} While $\sum\limits_{r=1}^n A_{R,c}=1$ for each $R=1,\dots,n.$\par\qquad\,
+Thus if we let $x_1=\dots=x_n,$ then $\lambda=1,$ and hence is an eigenvalue of $T.$\par\quad
+(b) Suppose $\lambda$ is an eigenvalue of $T$ with an eigenvector $x=\,${\small$\begin{pmatrix}
+x_1\\ \vdots\\ x_n
+\end{pmatrix}.$}\par\qquad\,
+Then {\small$Tx=Ax=\begin{pmatrix} \sum\limits_{r=1}^n A_{1,r}x_r\\ \vdots\\ \sum\limits_{r=1}^n A_{n,r}x_r\end{pmatrix}=\lambda \begin{pmatrix} x_1\\ \vdots\\ x_n\end{pmatrix}.$} While $\sum\limits_{r=1}^n A_{r,C}=1$ for each $C=1,\dots,n.$\par\qquad\,
+Thus $\sum\limits_{r=1}^n (Ax)_{r,\cdot}=\sum\limits_{r=1}^n (Ax)_{r,1}$\par\qquad\qquad\qquad\qquad\quad
+$=\sum\limits_{c=1}^n(A_{1,c}+\dots+A_{n,c})x_c=\sum\limits_{c=1}^n x_c=\lambda${\small$\begin{pmatrix}
+\underset{+}{x_1}\\ \vdots\\ \overset{+}{x_n}
+\end{pmatrix}.$}\par\qquad\,
+Hence $\lambda=1,$ for all $x$ such that $\sum\limits_{c=1}^n x_{c,1}\neq 0.\quad\square$\par{\tiny\,\par}\qquad\,
+O{\small R.} Prove that $(T-I)$ is not invertible, so that we can conclude $\lambda=1$ is an eigenvalue.\par\qquad\,
+Because $(T-I)x=(A-\Mt(I))x=\,${\small$\begin{pmatrix} \sum\limits_{r=1}^n A_{1,r}x_r-x_1\\ \vdots\\ \sum\limits_{r=1}^n A_{n,r}x_r-x_n\end{pmatrix}=\begin{pmatrix} y_1\\ \vdots\\ y_n\end{pmatrix}.$}\par\qquad\,
+Then $y_1+\dots+y_n=\sum\limits_{r=1}^n\sum\limits_{c=1}^n (A_{r,c}x_c-x_r)=\sum\limits_{c=1}^n x_c\sum\limits_{r=1}^n A_{r,c}-\sum\limits_{r=1}^n x_r=0.$\par{\tiny\,\par}\qquad\,
+Thus $\range(T-I)\subseteq\{\,${\small$\begin{pmatrix}
+y_1 \\ \vdots \\ y_n\end{pmatrix}$}$\,\in\Fbfc^n:y_1+\dots+y_n=0\}.$ Hence $(T-I)$ is not surjective.\quad$\square$\par
 {\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
 
-{\small $\bullet$} {\timessl\Large Suppose $A\in\Fbfc^{n,n}.$ Define $T\in\Lm(${\timesbf F}$^n)$ by $Tx = Ax$,}\par\quad\,
-{\timessl\Large where elements of $\Fbfc^n$ are thought of as $n$-by-$1$ row vectors.}\par\quad\,
-(a) {\timessl\Large Suppose the sum of the entries in each row of $A$ equals $1$.}\par\qquad\,\,\,
+{\small $\bullet$} {\timessl\Large Suppose $A\in\Fbfc^{n,n}.$ Define $T\in\Lm(${\timesbf F}$^n)$ by $Tx = xA$,}\par\quad\,
+{\timessl\Large where elements of $\Fbfc^n$ are thought of as $1$-by-$n$ row vectors.}\par\quad\,
+(a) {\timessl\Large Suppose the sum of the entries in each column of $A$ equals $1$.}\par\qquad\,\,\,
 {\timessl\Large Prove that $1$ is an eigenvalue of $T$.}\par\quad\,
-(b) {\timessl\Large Suppose the sum of the entries in each column of $A$ equals $1$.}\par\qquad\,\,\,
+(b) {\timessl\Large Suppose the sum of the entries in each row of $A$ equals $1$.}\par\qquad\,\,\,
 {\timessl\Large Prove that $1$ is an eigenvalue of $T$.}\par
 {\timesbf S\footnotesize{OLUTION:}}\par\quad
-
+(a) Suppose $\lambda$ is an eigenvalue of $T$ with an eigenvector $x=\,${\small$\begin{pmatrix}
+x_1 & \cdots & x_n
+\end{pmatrix}.$}\par\qquad\,
+Then {\small$Tx=xA=\begin{pmatrix} \sum\limits_{r=1}^n x_r A_{r,1} &\cdots & \sum\limits_{r=1}^n x_r A_{r,n}\end{pmatrix}=\lambda \begin{pmatrix} x_1 & \cdots & x_n\end{pmatrix}.$} While $\sum\limits_{r=1}^n A_{r,C}=1$ for each $C=1,\dots,n.$\par\qquad\,
+Thus if we let $x_1=\dots=x_n,$ then $\lambda=1,$ hence is an eigenvalue of $T.$\par\quad
+(b) Suppose $\lambda$ is an eigenvalue of $T$ with an eigenvector $x=\,${\small$\begin{pmatrix}
+x_1 & \cdots & x_n
+\end{pmatrix}.$}\par\qquad\,
+Then {\small$Tx=xA=\begin{pmatrix} \sum\limits_{c=1}^n x_c A_{c,1} &\cdots & \sum\limits_{c=1}^n x_c A_{c,n}\end{pmatrix}=\lambda \begin{pmatrix} x_1 & \cdots & x_n\end{pmatrix}.$} While $\sum\limits_{c=1}^n A_{R,c}=1$ for each $R=1,\dots,n.$\par\qquad\,
+Thus $\sum\limits_{c=1}^n (xA)_{\cdot,c}=\sum\limits_{c=1}^n (xA)_{1,c}=\sum\limits_{c=1}^n(A_{c,1}+\dots+A_{c,n})x_c=\sum\limits_{c=1}^n x_c=\lambda${\small$\begin{pmatrix}
+x_1\,\,\,\,+&\cdots&+\,\,\,\,x_n\end{pmatrix}.$}\par\qquad\,
+Hence $\lambda=1,$ for all $x$ such that $\sum\limits_{r=1}^n x_{1,r}\neq 0.\quad\square$\par{\tiny\,\par}\qquad\,
+O{\small R.} Prove that $(T-I)$ is not invertible, so that we can conclude $\lambda=1$ is an eigenvalue.\par\qquad\,
+Because $(T-I)x=x(A-\Mt(I))=\,${\small$=\begin{pmatrix} \sum\limits_{c=1}^n x_c A_{c,1}-x_1 &\cdots & \sum\limits_{c=1}^n x_c A_{c,n}-x_n\end{pmatrix}= \begin{pmatrix} y_1 & \cdots & y_n\end{pmatrix}.$}\par\qquad\,
+Then $y_1+\dots+y_n=\sum\limits_{c=1}^n\sum\limits_{r=1}^n(x_r A_{r,c}-x_c)=\sum\limits_{r=1}^n x_r\sum\limits_{c=1}^n A_{r,c}-\sum\limits_{c=1}^n x_c=0.$\par{\tiny\,\par}\qquad\,
+Thus $\range(T-I)\subseteq\{\,${\small$\begin{pmatrix}
+y_1 & \cdots & y_n
+\end{pmatrix}.$}$\,\in\Fbfc^n:y_1+\dots+y_n=0\}.$ Hence $(T-I)$ is not surjective.\quad$\square$\par
 \par
 {\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
 
@@ -3352,15 +3386,26 @@ Suppose $T\in\Lm(V)$ and $u, w$ are eigenvectors of $T$}\par\qquad\qquad\qquad\q
 {\timessl\Large such that $u + w$ is also an eigenvector of $T$.}\par\quad\,
 {\timessl\Large Prove that $u$ and $w$ are eigenvectors of $T$ corresponding to the same eigenvalue.}\par
 {\timesbf S\footnotesize{OLUTION:}}\par\quad
-
-\par
+Suppose $\lambda_1,\lambda_2,\lambda_0$ are eigenvalues of $T$ corresponding to $u,w,u+w$ respectively.\par\quad
+Then $T(u+w)=\lambda_0(u+w)=Tu+Tw=\lambda_1 u+\lambda_2 w\Rightarrow (\lambda_0-\lambda_1)u=(\lambda_2-\lambda_0)w.$\par\quad
+Notice that $u,w,u+w$ are nonzero.\par\quad
+If $(u,w)$ is linearly dependent, then let $w=cu,$ therefore\par\qquad\qquad\qquad
+$\lambda_2 cu=Tw=cTu=\lambda_1 cu$ \qquad\qquad\qquad\qquad\qquad\quad $\Rightarrow\lambda_2=\lambda_1.$\par\qquad\qquad\qquad
+$\lambda_0(u+w)=T(u+w)=\lambda_1 u+\lambda_1 cu=\lambda_1(u+w)$\quad$\,\Rightarrow\lambda_0=\lambda_1.$\par\quad
+Otherwise, $\lambda_0-\lambda_1=\lambda_2-\lambda_0=0\,\Rightarrow\lambda_1=\lambda_2=\lambda_0.\quad\square$\par
 {\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
 
 {\timesbf\Large 26} {\timessl\Large 
 Suppose $T\in\Lm(V)$ is such that every nonzero vector in $V$ is an eigenvector of $T$.}\par\quad\,
 {\timessl\Large Prove that $T$ is a scalar multiple of the identity operator.}\par
 {\timesbf S\footnotesize{OLUTION:}}\par\quad
-
+Because $\forall v\in V,\exists\,!\,\lambda_v\in\Fbfc,Tv=\lambda_v v.$\par\quad
+Then for any two distinct nonzero vectors $v,w\in V,$\par\quad
+$T(v+w)=\lambda_{v+w}(v+w)=Tv+Tw=\lambda_v v+\lambda_w w\Rightarrow(\lambda_{v+w}-\lambda_v)v=(\lambda_w-\lambda_{v+w})w.$\par\quad
+If $(v,w)$ is linearly independent, then let $w=cv,$ therefore\par\qquad\qquad\qquad
+$\lambda_v cv=cTv=Tw=\lambda_w w$\qquad\qquad\qquad\qquad\qquad\quad$\Rightarrow\lambda_w=\lambda_v.$\par\qquad\qquad\qquad
+$\lambda_{v+w}(v+w)=T(v+w)=Tv+Tw=\lambda_v(v+cv)$ $\,\Rightarrow \lambda_{v+w}=\lambda_v.$\par\quad
+Otherwise, $\lambda_v=\lambda_{v+w}=\lambda_w.\quad\square$
 \par
 {\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
 
@@ -3372,21 +3417,34 @@ Suppose $T\in\Lm(V)$ is such that every nonzero vector in $V$ is an eigenvector 
 \par
 {\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
 
-{\timesbf\Large 29} {\timessl\Large 
-Suppose $V$ is finite-dim and $T\in\Lm(V)$.}\par\quad\,
-{\timessl\Large Prove that $T$ has at most $1 + \dim\range T$ distinct eigenvalues.
+{\small $\bullet$} {\timessl\Large 
+Suppose $V$ is finite-dim and $T\in\Lm(V)$. Prove that
+}\par\,\,
+{\timessl\Large $T$ has an eigenvalue $\Longleftrightarrow\exists\,$ a subspace $U$ of \,$V$}\par\qquad\qquad\qquad\qquad\qquad\qquad\qquad\,
+{\timessl\Large such that $\dim U=\dim V - 1,$ $U$ is invariant under $T$.
 }\par
 {\timesbf S\footnotesize{OLUTION:}}\par\quad
 
 \par
 {\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
 
+{\timesbf\Large 29} {\timessl\Large 
+Suppose $V$ is finite-dim and $T\in\Lm(V)$.}\par\quad\,
+{\timessl\Large Prove that $T$ has at most $1 + \dim\range T$ distinct eigenvalues.
+}\par
+{\timesbf S\footnotesize{OLUTION:}}\par\quad
+Let $\lambda_1,\dots,\lambda_m$ be the distinct eigenvalues of $T$ and let $v_1,\dots,v_m$ be the corresponding eigenvectors.\par\quad
+For every $\lambda_k\neq 0,T(\frac{1}{\lambda_k}v_k)=v_k.$ And if $T=T-0I$ is not invertible, then $\exists\,!\,\lambda_A=0$ and $Tv_A=\lambda_A v_A=0.$\par\quad
+Thus for $\lambda_k\neq 0,\forall\,k,$ $(Tv_1,\dots,Tv_m)$ is a linearly independent list of length $m$ in $\range T$.\par\quad
+And for $\lambda_A=0,$ there is a linearly independent list  of length at most $(m-1)$ in $\range T$.\par\quad
+Hence, by [2.23], $m\leq \dim\range T+1.\quad\square$\par
+{\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
+
 {\timesbf\Large 30} {\timessl\Large 
 Suppose $T\in\Lm(${\timesbf R}$^3)$ and $-4,5,\sqrt{7}$ are eigenvalues of $T$.}\par\quad\,
 {\timessl\Large Prove that $\,\exists\,x\in\Rbfc^3$ such that $Tx - 9x = (-4, 5, \sqrt{7})$.}\par
 {\timesbf S\footnotesize{OLUTION:}}\par\quad
-
-\par
+Because $9$ is not an eigenvalue. Hence $(T-9I)$ is surjective.\quad$\square$\par
 {\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
 
 {\timesbf\Large 31} {\timessl\Large 
@@ -3395,7 +3453,9 @@ Suppose $V$ is finite-dim and $v_1,\dots,v_m \in V$.}\par\quad\,
 {\timessl\Large $\Longleftrightarrow\exists\,T\in\Lm(V)$ such that $v_1,\dots,v_m$ are eigenvectors of $T$}\par\qquad\quad\,\,\,\,
 {\timessl\Large corresponding to distinct eigenvalues.}\par
 {\timesbf S\footnotesize{OLUTION:}}\par\quad
-
+Suppose $(v_1,\dots,v_m)$ is linearly independent, extend it to a basis of $V$ as $(v_1,\dots,v_m,\dots,v_n)$.\par\quad
+Then define $T\in\Lm(V)$ by $Tv_k=kv_k$ for each $k\in\{1,\dots,m,\dots,n\}.$\par\quad
+Conversely by [5.10] it is true as well.\quad$\square$
 \par
 {\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
 
@@ -3405,8 +3465,8 @@ Suppose that $\lambda_1,\dots,\lambda_n$ are distinct real numbers.}\par\quad\,
 H{\small INT}: {\timessl\normalsize Let $V=\Spn(e^{\lambda_1}x,\dots,e^{\lambda_n}x)$, and define an operator $D\in\Lm(V)$ by $Df = f'$.}\par\qquad\quad\,\,\,\,
 {\timessl\normalsize Find eigenvalues and eigenvectors of $D$.}\par
 {\timesbf S\footnotesize{OLUTION:}}\par\quad
-
-\par
+Define $V$ and $D\in\Lm(V)$ as in H{\small INT}. Then because for each $k, D(e^{\lambda_k x})=\lambda_k e^{\lambda_k x}.$\par\quad
+Thus $\lambda_1,\dots,\lambda_n$ are distinct eigenvalues of $D.$ By [5.10], $(e^{\lambda_1}x,\dots,e^{\lambda_n}x)$ is linearly independent in $\Rbb^\Rbb$.\quad$\square$\par
 {\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
 
 {\small $\bullet$} {\timessl\Large 
@@ -3414,8 +3474,13 @@ Suppose $\lambda_1,\dots,\lambda_n$ are distinct positive numbers. }\par\,\,
 {\timessl\Large Prove that $(\cos(\lambda_1 x),\dots,\cos(\lambda_n x))$ is linearly independent in $\Rbb^\Rbb.$
 }\par
 {\timesbf S\footnotesize{OLUTION:}}\par\quad
-
-\par
+Let $V=\Spn(\cos(\lambda_1 x),\dots,\cos(\lambda_n x)).$ Define $D\in\Lm(V)$ by $Df=f'.$\par\quad
+Then because $D(\cos(\lambda_k x))=-\lambda_k\sin(\lambda_k x).$ 又 $D(\sin(\lambda_k x))=\lambda_k\cos(\lambda_k x).$\par\quad
+Thus $D^2(\cos(\lambda_k x))=-\lambda_k^2\cos(\lambda_k x).$\par\quad
+Notice that $\lambda_1,\dots,\lambda_n$ are distinct $\Rightarrow$ $-\lambda_1^2,\dots,-\lambda_n^2$ are distinct.\par\quad
+Hence $-\lambda_1^2,\dots,-\lambda_n^2$ are distinct eigenvalues of $D^2$\par\qquad\qquad\quad
+with the corresponding eigenvectors \,\,$\cos(\lambda_1 x),\dots,\cos(\lambda_n x)$\,\, respectively.\par\quad
+And then $(\cos(\lambda_1 x),\dots,\cos(\lambda_n x))$ is linearly independent in $\Rbb^\Rbb$.\quad$\square$\par
 {\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
 
 
@@ -3426,34 +3491,26 @@ Suppose $V$ is finite-dim and $T\in\Lm(V)$.}\par\,\,
 eigenvalues of $A$.
 }\par
 {\timesbf S\footnotesize{OLUTION:}}\par\quad
-
-\par
+(a) Suppose $\lambda_1,\dots,\lambda_m$ are all eigenvalues of $T$ with eigenvectors $v_1,\dots,v_m$ respectively.\par\qquad\,
+Extend to a basis of $V$ as $(v_1,\dots,v_m,\dots,v_n).$\par\qquad\,
+Then for each $k\in\{1,\dots,m\},\Spn(v_k)\subseteq\null(T-\lambda_k I).$\par\qquad\,
+Define $S_k\in\Lm(V)$ by $S_k(v_j)=v_k$ for each $j\in\{1,\dots,n\}$,\par\qquad\qquad\quad\,
+so that $\range S_k=\Spn(v_k)$ for each $k\in\{1,\dots,m\}$, then $A(S_k)=TS_k=\lambda_k S_k.$\par\qquad\,
+Thus the eigenvalues of $T$ are eigenvalues of $A.$\par\quad
+(b) Suppose $\lambda_1,\dots,\lambda_m$ are all eigenvalues of $A$ with eigenvectors $S_1,\dots,S_m$ respectively.\par\qquad\,
+Then for each $k\in\{1,\dots,m\},$ because $\forall v\in V,u=S_k(v)\in V\Rightarrow Tu=\lambda_k u.$\par\qquad\,
+Thus the eigenvalues of $A$ are eigenvalues of $T.\quad\square$\par
+{\small $\bullet$} C{\small OMMENT:} Define $B\in\Lm(\Lm(V))$ by $B(S)=ST$ for all $S\in\Lm(V).$\par\qquad\qquad\quad\,
+And the eigenvalues of $B$ are not the eigenvalues of $T.$\par
 {\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
 
-{\timesbf\Large 33} {\timessl\Large 
-Suppose $T\in\Lm(V).$ Prove that $T/(\range T)=0.$
-}\par
-{\timesbf S\footnotesize{OLUTION:}}\par\quad
-
-\par
-{\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
-
-{\timesbf\Large 34} {\timessl\Large 
-Suppose $T\in\Lm(V).$ Prove that $T/(\null T)$ is injective $\Longleftrightarrow$ $(\null T)\cap(\range T)=\{0\}.$
-}\par
-{\timesbf S\footnotesize{OLUTION:}}\par\quad
-
-\par
-{\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
-
-{\timesbf\Large 35} {\timessl\Large 
-Suppose $V$ is finite-dim, $T\in\Lm(V)$, and $U$ is a subspace of \,$V$ invariant under $T$.}\par\quad\,
-{\timessl\Large The quotient operator $T/U\in\Lm(V/U)$ is defined by}\par \centerline{\timessl\Large $(T/U)(v + U) = Tv + U$
-for each $v\in V$.}\par\quad\,
-(a) {\timessl\Large Show that the definition of $T/U$ makes sense}\par\qquad\,\,\,
-$(${\timessl\Large which requires using the condition that $U$ is invariant under $T$}$)$\par\qquad\,\,\,
-{\timessl\Large and show that $T/U$ is an operator on $V/U$.}\par\quad\,
-(b) {\timessl\Large Show that each eigenvalue of $T/U$ is an eigenvalue of $T$.
+{\small $\bullet$} {\timessl\Large 
+Suppose $V$ is finite-dim, $T\in\Lm(V)$, and $U$ is a subspace of \,$V$ invariant under $T$.}\par\,\,
+{\timessl\Large The quotient operator $T/U\in\Lm(V/U)$ is defined by}\par \centerline{\timessl\Large $(T/U)(v + U) = Tv + U$ for each $v\in V$.}\par\,\,
+(a) {\timessl\Large Show that the definition of $T/U$ makes sense}\par\quad\,\,\,\,
+$(${\timessl\Large which requires using the condition that $U$ is invariant under $T$}$)$\par\quad\,\,\,\,
+{\timessl\Large and show that $T/U$ is an operator on $V/U$.}\par\,\,
+(b) {\normalsize (O{\footnotesize R} Problem 35)} {\timessl\Large Show that each eigenvalue of $T/U$ is an eigenvalue of $T$.
 }\par
 {\timesbf S\footnotesize{OLUTION:}}\par\quad
 
@@ -3469,11 +3526,17 @@ Prove or give an counterexample:}\par\quad\,
 \par
 {\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
 
-{\small $\bullet$} {\timessl\Large 
-Suppose $V$ is finite-dimensional and $T\in\Lm(V)$. Prove that
-}\par\,\,
-{\timessl\Large $T$ has an eigenvalue $\Longleftrightarrow\exists\,$ a subspace $U$ of \,$V$}\par\qquad\qquad\qquad\qquad\qquad\qquad\qquad\,
-{\timessl\Large such that $\dim U=\dim V - 1,$ $U$ is invariant under $T$.
+
+{\timesbf\Large 33} {\timessl\Large 
+Suppose $T\in\Lm(V).$ Prove that $T/(\range T)=0.$
+}\par
+{\timesbf S\footnotesize{OLUTION:}}\par\quad
+
+\par
+{\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
+
+{\timesbf\Large 34} {\timessl\Large 
+Suppose $T\in\Lm(V).$ Prove that $T/(\null T)$ is injective $\Longleftrightarrow$ $(\null T)\cap(\range T)=\{0\}.$
 }\par
 {\timesbf S\footnotesize{OLUTION:}}\par\quad
 
