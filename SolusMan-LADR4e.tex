@@ -3641,7 +3641,7 @@ $\lceil$本征值的存在性$\rfloor$(也即第3版5.B前半部分)的极大扩
 }$\\ $
 
 
-% 6h+2h/20h
+% 8h+1.5h/20h
 {\huge\timesbf 5.B: I}\quad {\LARGE[}{\Large\timessl See {\timesbf 5.B: II} below.}{\LARGE ]}
 
 {\small $\bullet$} {\timessl\Large 
@@ -3751,16 +3751,6 @@ $p(T)=0\Rightarrow\forall u\in U,p(T)u=0\Rightarrow p(T|_U)=0\Rightarrow$ By [8.
 $T$ is not invertible $\Longleftrightarrow 0$ is not an eigval of $T$ $\Longleftrightarrow 0$ is a zero of $p \Longleftrightarrow$ the const term of $p$ is $0.\quad\square$\par
 {\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}{\tiny\,\par}
 
-{\timesbf\Large 1} {\timessl\Large 
-Suppose $T\in\Lm(V)$ and $\,\exists\,n\in\Nbp$ such that $T^n=0.$}\par\,\,\,
-{\timessl\Large Prove that $(I-T)$ is invertible and $(I-T)^{-1}=I+T+\dots+T^{n-1}.$}\par
-{\timesbf S\footnotesize{OLUTION:}}\,\,\,Note that $1-x^n=(1-x)(1+x+\dots+x^{n-1}).$\par\,\,\,
-$\left.\begin{array}{l}
-(I-T)(1+T+\dots+T^{n-1})=I-T^n=I\\
-(1+T+\dots+T^{n-1})(I-T)=I-T^n=I
-\end{array}\right\}\Rightarrow$ $(I-T)^{-1}=1+T+\dots+T^{n-1}.\quad\square$\par
-{\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
-
 {\small $\bullet$} {\timesbf\Large T{\normalsize IPS}:} {\timessl\Large For $T_1,\dots,T_m\in\Lm(V)$}:\par\,\,
 (a) {\timessl\Large Suppose $T_1,\dots,T_m$ are all injective. Prove that $(T_1\circ\cdots\circ T_m)$ is injective.}\par\,\,
 (b) {\timessl\Large Suppose $(T_1\circ\cdots\circ T_m)$ is not injective. Prove that at least one of $T_1,\dots,T_m$ is not injective.}\par\,\,
@@ -3773,14 +3763,37 @@ Let $T\in\Lm(${\timesbf F}$^\infty)$ be the forward shift operators ( injective 
 Then $ST=I$ is injective.\quad$\square$\par
 {\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
 
-{\timesbf\Large 7} {\timessl\Large 
-Suppose $T\in\Lm(V)$. Prove that $9$ is an eigval of $T^2$ $\Longleftrightarrow$ $3$ or $-3$ is an eigval of $T$.}\par
-{\timesbf S\footnotesize{OLUTION:}} C{\small OMMENT:} Note that $V$ can be infinite-dim. See also in (5.A.22).\par\quad
-(a) Suppose $9$ is an eigval of $T^2.$ 
-Then $(T^2-9I)v=(T-3I)(T+3I)v=0$ for some $v.$\par\qquad\,
-Thus $(T-3I)$ or $(T+3I)$ is not injective.\par\quad
-(b) Suppose $3$ or $-3$ is an eigval of $T$ with an eigenvector $v.$ Then $Tv=\pm 3v\Rightarrow T^2 v=T(Tv)=9v\quad\square$\par
-\par
+{\timesbf\Large 10} {\timessl\Large
+Suppose $T\in\Lm(V),\lambda$ is an eigval of $T$ with an eigvec $v.$}\par\quad\,
+{\timessl\Large Prove that for any $p\in\Po(${\timesbf F}$),p(T)v=p(\lambda)v.$}\par
+{\timesbf S\footnotesize{OLUTION:}}\par\quad
+Suppose $p$ is defined by $p(z)=a_0+a_1 z+\dots+a_m z^m$ for all $z\in\Fbfc.$ Because for any $n\in\Nbp,T^n v=\lambda^n v.$\par\quad
+Thus $p(T)v=a_0 v+a_1 Tv+\dots+a_m T^m v=a_0 v+a_1 \lambda v+\dots+a_m \lambda^m v=p(\lambda)v.\quad\square$\par
+{\small $\bullet$} {\timesbf C{\small OMMENT:}} For any $p\in\Po(${\timesbf F}$)$ such that $p(z)=(z-\lambda_1)^{\alpha_1}\cdots(z-\lambda_m)^{\alpha_m},$ the result is true as well.\par\quad
+Now we prove that $(T-\lambda_1 I)^{\alpha_1}\cdots(T-\lambda_m I)^{\alpha_m}v=(\lambda-\lambda_1)^{\alpha_1}\cdots(\lambda-\lambda_m)^{\alpha_m}v.$\par\quad
+Define $q_i$ by $q_i(z)=(z-\lambda_i)^{\alpha_i}$ for all $z\in\Fbfc.$\par\quad
+Because $(a+b)^{n}=a^{n}+\mathcal{C}_{n}^1 a^{n-1}b+\dots+\mathcal{C}_{n}^{k} a^{n-k}b^{k}+\dots+\mathcal{C}_{n}^{n}b^n.$\par\quad
+Let $a=z,b=\lambda_i,n=\alpha_i,$ so we can write $q_i(z)$ in the form $a_0+a_1 z+\dots+a_m z^m.$\par\quad
+Hence $q_i(T)v=q_i(\lambda)v\Rightarrow(T-\lambda_i I)^{\alpha_i}v=(\lambda-\lambda_i)^{\alpha_i}v.$\par\quad
+Then for each $k\in\{2,\dots,m\},(T-\lambda_{k-1}I)^{\alpha_{k-1}}(T-\lambda_k I)^{\alpha_k}v$\par\qquad\qquad\qquad\qquad\qquad\qquad\,
+$=q_{k-1}(T)(q_k(T)v)$\par\qquad\qquad\qquad\qquad\qquad\qquad\,
+$=q_{k-1}(T)(q_k(\lambda)v)$\par\qquad\qquad\qquad\qquad\qquad\qquad\,
+$=q_{k-1}(\lambda)(q_k(\lambda)v)$\par\qquad\qquad\qquad\qquad\qquad\qquad\,
+$=(\lambda-\lambda_{k-1})^{\alpha_{k-1}}(\lambda-\lambda_k)^{\alpha_k}v.$\par\quad
+So that $(T-\lambda_1 I)^{\alpha_1}\cdots(T-\lambda_m I)^{\alpha_m}v$\par\qquad\quad
+$=q_1(T)(q_2(T)(\dots(q_m(T)v)\dots))$\par\qquad\quad
+$=q_1(\lambda)(q_2(\lambda)(\dots(q_m(\lambda)v)\dots))$\par\qquad\quad
+$=(\lambda-\lambda_1)^{\alpha_1}\cdots(\lambda-\lambda_m)^{\alpha_m}v.\quad\square$\par
+{\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
+
+{\timesbf\Large 1} {\timessl\Large 
+Suppose $T\in\Lm(V)$ and $\,\exists\,n\in\Nbp$ such that $T^n=0.$}\par\,\,\,
+{\timessl\Large Prove that $(I-T)$ is invertible and $(I-T)^{-1}=I+T+\dots+T^{n-1}.$}\par
+{\timesbf S\footnotesize{OLUTION:}}\,\,\,Note that $1-x^n=(1-x)(1+x+\dots+x^{n-1}).$\par\,\,\,
+$\left.\begin{array}{l}
+(I-T)(1+T+\dots+T^{n-1})=I-T^n=I\\
+(1+T+\dots+T^{n-1})(I-T)=I-T^n=I
+\end{array}\right\}\Rightarrow$ $(I-T)^{-1}=1+T+\dots+T^{n-1}.\quad\square$\par
 {\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
 
 {\timesbf\Large 2} {\timessl\Large 
@@ -3788,7 +3801,11 @@ Suppose $T\in\Lm(V)$ and $(T - 2I)(T - 3I)(T - 4I) = 0$.}\par\,\,\,
 {\timessl\Large Suppose $\lambda$ is an eigval of $T$. Prove that $\lambda = 2$ or $\lambda = 3$ or $\lambda = 4$.
 }\par
 {\timesbf S\footnotesize{OLUTION:}}\par\quad
-Because $(T-2I)(T-3I)(T-4I)=0$ is not injective.\par\quad
+Suppose $v$ is an eigvec corresponding to $\lambda.$\par\quad
+Then for any $p\in\Po(${\timesbf F}$),p(T)v=p(\lambda)v.$\par\quad
+Hence $0=(T - 2I)(T - 3I)(T - 4I)v=(\lambda-2)(\lambda-3)(\lambda-4)v$ while $v\neq 0.$\par\quad
+Thus $\lambda = 2$ or $\lambda = 3$ or $\lambda = 4.\quad\square$\par\quad
+O{\small R.} Because $(T-2I)(T-3I)(T-4I)=0$ is not injective.\par\quad
 Then at least one of $(T-2I),(T-3I),(T-4I)$ is not injective.$\quad\square$\par
 {\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
 
@@ -3797,7 +3814,42 @@ Suppose $T\in\Lm(V),T^2=I$ and $-1$ is not an eigval of $T.$ Prove that $T=I.$
 }\par
 {\timesbf S\footnotesize{OLUTION:}}\par\quad
 $T^2-I=(T+I)(T-I)$ is not injective $\Rightarrow (T+I)$ or $(T-I)$ is not injective.\par\quad
-又 $-1$ is not an eigval of $T\Rightarrow (T-I)$ is not injective.$\quad\square$\par
+又 $-1$ is not an eigval of $T\Rightarrow (T-I)$ is not injective.$\quad\square$\par{\tiny\,\par}\quad
+O{\small R.} Note that $v=[\frac{1}{2}(I-T)v]+[\frac{1}{2}(I+T)v]$ for all $v\in V.$\par\quad
+And $(I-T^2)v=(I-T)(I+T)v=0$ for all $v\in V,$\par\quad
+$\left.\begin{array}{l}
+(I+T)(\frac{1}{2}(I-T)v)=\frac{1}{2}(I-T^2)v=0\Rightarrow \frac{1}{2}(I-T)v\in\null(I+T)\\
+(I-T)(\frac{1}{2}(I+T)v)=\frac{1}{2}(I-T^2)v=0\Rightarrow \frac{1}{2}(I+T)v\in\null(I-T)
+\end{array}\right\}\Rightarrow V=\null(I+T)+\null(I-T).$\par{\tiny\,\par}\quad
+又 $-1$ is not an eigval of $T\Rightarrow (I+T)$ is injective $\Rightarrow\null(I+T)=\{0\}$.\par\quad
+Hence $V=\null(I-T)\Rightarrow\range(I-T)=\{0\}.$ Thus $I-T=0\in\Lm(V)\Rightarrow T=I.\quad\square$\par
+{\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
+
+{\small $\bullet$} (\normalsize{4E 5.A.32}) {\timessl\Large 
+Suppose $T\in\Lm(V)$ has no eigvals and $T^4 = I$. Prove that $T^2=-I$.
+}\par
+{\timesbf S\footnotesize{OLUTION:}}\par\quad
+Because $T^4-I=(T^2-I)(T^2+I)=0$ is not injective $\Rightarrow (T^2-I)$ or $(T^2+I)$ is not injective.\par\quad
+又 $T$ has no eigvals $\Rightarrow$ $(T^2-I)=(T-I)(T+I)$ is injective, for if not, $(T-I)$ or $(T+I)$ is not injective. Contradicts.\par\quad
+Hence $T^2+I=0\in\Lm(V),$ for if not, $\,\exists\,v\in V,(T^2+I)v\neq 0$ while $(T^2-I)((T^2+I)v)=0$. Contradicts.\quad$\square$\par{\tiny\,\par}\quad
+O{\small R.} Note that $v=[\frac{1}{2}(I-T^2)v]+[\frac{1}{2}(I+T^2)v]$ for all $v\in V.$\par\quad
+And $(I-T^4)v=(I-T^2)(I+T^2)v=0$ for all $v\in V,$\par\quad
+$\left.\begin{array}{l}
+(I+T^2)(\frac{1}{2}(I-T^2)v)=\frac{1}{2}(I-T^4)v=0\Rightarrow \frac{1}{2}(I-T^2)v\in\null(I+T^2)\\
+(I-T^2)(\frac{1}{2}(I+T^2)v)=\frac{1}{2}(I-T^4)v=0\Rightarrow \frac{1}{2}(I+T^2)v\in\null(I-T^2)
+\end{array}\right\}\Rightarrow V=\null(I+T^2)+\null(I-T^2).$\par{\tiny\,\par}\quad
+又 $T$ has no eigvals $\Rightarrow (I-T^2)$ is injective $\Rightarrow\null(I-T^2)=\{0\}$.\par\quad
+Hence $V=\null(I+T^2)\Rightarrow\range(I+T^2)=\{0\}.$ Thus $I+T^2=0\in\Lm(V)\Rightarrow T^2=-I.\quad\square$\par
+{\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
+
+{\timesbf\Large 7} {\timessl\Large 
+Suppose $T\in\Lm(V)$. Prove that $9$ is an eigval of $T^2$ $\Longleftrightarrow$ $3$ or $-3$ is an eigval of $T$.}\par
+{\timesbf S\footnotesize{OLUTION:}} C{\small OMMENT:} Note that $V$ can be infinite-dim. See also in (5.A.22).\par\quad
+(a) Suppose $9$ is an eigval of $T^2.$ 
+Then $(T^2-9I)v=(T-3I)(T+3I)v=0$ for some $v.$\par\qquad\,
+Thus $(T-3I)$ or $(T+3I)$ is not injective.\par\quad
+(b) Suppose $3$ or $-3$ is an eigval of $T$ with an eigenvector $v.$ Then $Tv=\pm 3v\Rightarrow T^2 v=T(Tv)=9v\quad\square$\par
+\par
 {\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
 
 {\Large\timesbf 8} (\normalsize{O{\small R} 4E 5.A.31}) {\timessl\Large 
@@ -3824,15 +3876,32 @@ $\left(\begin{array}{l}$ Using \small$\begin{pmatrix}
 \cos n\alpha & \sin n\alpha\\
 -\sin n\alpha & \cos n\alpha
 \end{pmatrix}.$\large $\end{array}\right)$\par
-{\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
+{\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par{\tiny\,\par}
 
-{\small $\bullet$} (\normalsize{4E 5.A.32}) {\timessl\Large 
-Suppose $T\in\Lm(V)$ has no eigvals and $T^4 = I$. Prove that $T^2=-I$.
+
+{\small $\bullet$} (\normalsize{4E 5.B.20})\par\,\, {\timessl\Large 
+Suppose $T\in L(${\timesbf F}$^4)$ is such that the eigvals of $T$ are $3, 5, 8$.}\par\,\,
+{\timessl\Large Prove that
+$(T - 3I)^2 (T - 5I)^2 (T - 8I)^2 = 0$.
 }\par
 {\timesbf S\footnotesize{OLUTION:}}\par\quad
-Because $T^4-I=(T^2-I)(T^2+I)=0$ is not injective $\Rightarrow (T^2-I)$ or $(T^2+I)$ is not injective.\par\quad
-又 $T$ has no eigvals $\Rightarrow$ $(T^2-I)=(T-I)(T+I)$ is injective, for if not, $(T-I)$ or $(T+I)$ is not injective. Contradicts.\par\quad
-Hence $T^2+I=0\in\Lm(V),$ for if not, $\,\exists\,v\in V,(T^2+I)v\neq 0$ while $(T^2-I)((T^2+I)v)=0$. Contradicts.\quad$\square$\par
+Because the eigvals of $T$ are the zeros of the mini poly, and also are the zeros of $q(z)=(z-3)^2(z-5)^2(z-8)^2$.\par\quad
+又 $\dim V=4.$ And the degree of mini poly is less than or equal to $\dim V.$\par\quad
+Thus the mini poly of $T$ is $p$ defined by $p(z)=(z-3)^{1+A} (z-5)^{1+B} (z-8)^{1+C},$ where $0\leq A+B+C\leq 1,A,B,C\in\Nbfc.$\par\quad
+Hence $q$ is a polynomial multiple of $p.\quad\square$\par
+{\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
+
+{\small $\bullet$} (\normalsize{4E 5.B.24})\par\,\, {\timessl\Large 
+Suppose $V$ is a finite-dim complex vecsp, $T\in \Lm(V)$ is such that $5$ and $6$ are eigvals of $T$}\par\,\,
+{\timessl\Large and that $T$ has no other eigvals.
+Prove that $(T - 5I)^{\dim V-1} (T - 6I)^{\dim V-1} = 0$.
+}\par
+{\timesbf S\footnotesize{OLUTION:}}\par\quad
+Because the eigvals of $T$ are the zeros of the mini poly, and also are the zeros of $q(z)=(z-5)^{\dim V-1}(z-6)^{\dim V-1}$.\par\quad
+又 The degree of mini poly is less than or equal to $\dim V.$\par\quad
+Thus the mini poly of $T$ is $p$ defined by $p(z)=(z-5)^{1+A} (z-6)^{1+B},$ where $0\leq A+B\leq \dim V-2,A,B\in\Nbfc.$\par\quad
+Hence $q$ is a polynomial multiple of $p.\quad\square$\par
+\par
 {\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
 
 {\small $\bullet$} (\normalsize{4E 5.B.12} See also at 5.A.9)\par\,\, {\timessl\Large 
@@ -3844,8 +3913,8 @@ $T(x_1,\dots,0)=$
 By (5.A.9) and [8.49], $1,2,\dots,n$ are zeros of the mini poly of $T.$\par\quad
 $($ 又 Each eigvals of $T$ corresponds to exact one-dim subspace of $\Fbfc^n.$ $)$\par\quad
 Define a poly $q$ by $q(z)=(z-1)(z-2)\cdots(z-n),$ for all $z\in\Fbfc.$ $($ Then $q$ is the char poly of $T$.$)$\par\quad
-Because $q(T)e_j=(T-I)\cdots(T-n I)(T-j I)e_j=0$ for each $j$, where $(e_1,\dots,e_n)$ is the standard basis.\par\quad
-Thus $\forall v\in\Fbfc^n,q(T)v=0.$ Hence $q$ is the mini poly of $T.\quad\square$\par
+Because $q(T)e_j=[\,(T-I)\cdots(T-(j-1)I)(T-(j+1)I)\cdots(T-n I)\,]\,(T-j I)e_j=0$ for each $j$,\par\quad
+where $(e_1,\dots,e_n)$ is the standard basis. Thus $\forall v\in\Fbfc^n,q(T)v=0.$ Hence $q$ is the mini poly of $T.\quad\square$\par
 {\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
 
 {\small $\bullet$} {\timessl\Large 
@@ -3853,15 +3922,11 @@ Suppose $n\in\Nbp$. Define $T\in\Lm(${\timesbf F}$^{n})$ by $T(x_1,\dots,x_n)=(x
 [ {\timessl See also at }(5.A.19) ] {\timessl\Large Find the mini poly of $T$.}\par
 {\timesbf S\footnotesize{OLUTION:}}\par\quad
 Because $n$ and $0$ are all eigvals of $T$,\par\quad
+{\small
 with the sets of eigvecs $U_1=\{(x,\dots,x)\in\Fbfc^n:x\in\Fbf\wedge\,x\neq 0\}$\par\qquad\qquad\qquad\qquad\quad
 and $U_2=\{(x_1,\dots,x_n)\in\Fbfc^n:x_1+\dots+x_n=0\wedge \,\exists\,x_i\neq 0\}$ respectively.\par\quad
-$($ 又 $\dim U_1=1,\dim U_2=n-1\Rightarrow z^{n-1}(z-n)$ is the char poly of $T$. $)$\par\quad
-Because\par\quad
-$T e_1=e_1+\dots+e_n;\quad T^2 e_1=n (e_1+\dots+e_n);$\par\quad
-$\,\,\,\vdots$\par\quad
-$T e_j=e_1+\dots+e_n;\quad T^2 e_j=n (e_1+\dots+e_n);$\par\quad
-$\,\,\,\vdots$\par\quad
-$T e_n=e_1+\dots+e_n;\quad T^2 e_n=n (e_1+\dots+e_n);$\par\quad
+$($ 又 $\dim U_1=1,\dim U_2=n-1\Rightarrow z^{n-1}(z-n)$ is the char poly of $T$. $)$}\par\quad
+Because for all $e_k,T e_k=e_1+\dots+e_n;\quad T^2 e_k=n (e_1+\dots+e_n).$\par\quad
 Hence $T^2 e_k=n(T e_k)\Rightarrow T^2=n T\Rightarrow T^2-n T=T(T-n).$ Thus $z(z-n)$ is the mini poly of $T.\quad\square$\par
 {\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
 
@@ -3882,9 +3947,8 @@ If $\theta=\pi,$ then $T(w,z)=(-w,-z),T^2=I$ and the mini poly is $z+1.$\par\qua
 If $2\pi|\theta,$ then $T=I$ and the mini poly is $z-1.$\par\quad
 Now suppose $(v,Tv)$ is linearly independent.\par\quad
 Then $\Spn(v,Tv)=\Rbfc^2.$\par\quad
-{\tiny {\large Suppose the mini poly $p$ is defined by $p(z)=z^2+bz+c$ for all $z\in\Rbfc.$}\par\quad
- \includegraphics[scale=0.25]{./diagram.png}}\quad
-Because $\left\{\begin{array}{l}Tv=\displaystyle\frac{|\overset{\rightarrow}{v}|}{2L}(T^2 v+v)\Rightarrow T=\frac{|\overset{\rightarrow}{v}|}{2L}(T^2+I)\\\\ L=|\overset{\rightarrow}{v}|\cos\theta\Rightarrow\frac{|\overset{\rightarrow}{v}|}{2L}=\frac{1}{2\cos\theta} \end{array}\right.$\par{\tiny\,\par}\quad
+Suppose the mini poly $p$ is defined by $p(z)=z^2+bz+c$ for all $z\in\Rbfc.$\par{\tiny\,\par}\quad
+Because \includegraphics[scale=0.25]{./diagram.png} $\left\{\begin{array}{l}Tv=\displaystyle\frac{|\overset{\rightarrow}{v}|}{2L}(T^2 v+v)\Rightarrow T=\frac{|\overset{\rightarrow}{v}|}{2L}(T^2+I)\\\\ \displaystyle L=|\overset{\rightarrow}{v}|\cos\theta\Rightarrow\frac{|\overset{\rightarrow}{v}|}{2L}=\frac{1}{2\cos\theta}\end{array}\right.$\par{\tiny\,\par}\quad
 Hence $p(T)=T^2-2\cos\theta T+I=0.$ $z^2-2\cos\theta z+1$ is the mini poly of $T.\quad\square$\par
 {\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
 
@@ -3915,13 +3979,12 @@ Suppose $V$ is finite-dim and $T\in \Lm(V)$ has mini poly
 $p(z)=4 + 5z - 6z^2 - 7z^3 + 2z^4 + z^5$.}\par\,\,
 {\timessl\Large Find the mini poly of $T^{-1}$.}\par
 {\timesbf S\footnotesize{OLUTION:}}\par\quad
-Notice that $V$ is finite-dim. Then $p(0)=4\Rightarrow T$ is invertible.\par\quad
+Notice that $V$ is finite-dim. Then $p(0)=4\neq 0\Rightarrow T$ is invertible.\par\quad
 Then $4I+5T-6T^2-7T^3+2T^4+T^5=0.$\par\quad
 Apply $T^{-5}$ to both sides, $4(T^{-1})^5+5(T^{-1})^4-6(T^{-1})^3-7(T^{-1})^2+2(T^{-1})+I=0.$\par\quad
-Thus the degree of mini poly of $T^{-1}$ equals the degree of mini poly of $T.$\par\quad
-For if not, then suppose $\lambda$ is an zero of $p$, and therefore is an eigval of $T$.\par\quad By (5.A.21), $\frac{1}{\lambda}$ is an eigval of $T^{-1},$ and therefore is an zero of the mini poly of $T^{-1}.$\par\quad
-Conversely, it is true that each zero of the mini poly of $T^{-1}$ corresponds to an eigval of $T.$\par\quad 
-Then the mini poly of $T^{-1}$ has as many zeros as $p.$\par\quad
+Suppose $\lambda$ is an zero of $p$, and therefore is an eigval of $T$.\par\quad By (5.A.21), $\frac{1}{\lambda}$ is an eigval of $T^{-1},$ and therefore is an zero of the mini poly of $T^{-1}.$\par\quad
+Conversely, it is true that each zero of the mini poly of $T^{-1}$ corresponds to an zero of $p.$\par\quad
+And {\timessc\Large the degree of mini poly of $T^{-1}$ equals the degree of mini poly of $T$???}\par\quad
 Hence $q$ defined by $q(z)=z^{5}+\frac{5}{4}z^{4}-\frac{6}{4}z^{3}-\frac{7}{4}z^{2}+\frac{2}{4}z+\frac{1}{4}$ is the mini poly of $T^{-1}.\quad\square$
 \par
 {\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
@@ -3931,31 +3994,6 @@ Suppose $S,T\in\Lm(V),S$ is invertible, and $p\in\Po(${\timesbf F}$)$. Prove tha
 }\par
 {\timesbf S\footnotesize{OLUTION:}}\par\quad
 
-\par
-{\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
-
-{\small $\bullet$} (\normalsize{4E 5.B.20})\par\,\, {\timessl\Large 
-Suppose $T\in L(${\timesbf F}$^4)$ is such that the eigvals of $T$ are $3, 5, 8$.}\par\,\,
-{\timessl\Large Prove that
-$(T - 3I)^2 (T - 5I)^2 (T - 8I)^2 = 0$.
-}\par
-{\timesbf S\footnotesize{OLUTION:}}\par\quad
-Because the eigvals of $T$ are the zeros of the mini poly, and also are the zeros of $q(z)=(z-3)^2(z-5)^2(z-8)^2$.\par\quad
-又 $\dim V=4.$ And the degree of mini poly is less than or equal to $\dim V.$\par\quad
-Thus the mini poly of $T$ is $p$ defined by $p(z)=(z-3)^{1+A} (z-5)^{1+B} (z-8)^{1+C},$ where $A,B,C\in\Nbfc,A+B+C=1.$\par\quad
-Hence $q$ is a polynomial multiple of $p.\quad\square$\par
-{\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
-
-{\small $\bullet$} (\normalsize{4E 5.B.24})\par\,\, {\timessl\Large 
-Suppose $V$ is a finite-dim complex vecsp, $T\in \Lm(V)$ is such that $5$ and $6$ are eigvals of $T$}\par\,\,
-{\timessl\Large and that $T$ has no other eigvals.
-Prove that $(T - 5I)^{\dim V-1} (T - 6I)^{\dim V-1} = 0$.
-}\par
-{\timesbf S\footnotesize{OLUTION:}}\par\quad
-Because the eigvals of $T$ are the zeros of the mini poly, and also are the zeros of $q(z)=(z-5)^{\dim V-1}(z-6)^{\dim V-1}$.\par\quad
-又 The degree of mini poly is less than or equal to $\dim V.$\par\quad
-Thus the mini poly of $T$ is $p$ defined by $p(z)=(z-5)^{1+A} (z-6)^{1+B},$ where $A,B\in\Nbfc,0\leq A+B\leq \dim V-2.$\par\quad
-Hence $q$ is a polynomial multiple of $p.\quad\square$\par
 \par
 {\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
 
