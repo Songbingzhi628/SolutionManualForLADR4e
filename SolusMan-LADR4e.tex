@@ -3645,7 +3645,7 @@ $\lceil$注：[8.40]\qquad\, O{\small R} (4E 5.22)\qquad ——\,minimal polynom
 }\par{\tiny\,\par}
 \large
 
-% 11.5h+( 0/3 )/20h
+% 12h
 {\huge\timesbf 5.B: I}\quad {\LARGE[}{\Large\timessl See {\timesbf 5.B: II} below.}{\LARGE ]}
 
 {\small $\bullet$} {\timessl\Large 
@@ -4143,6 +4143,74 @@ $\end{array}\right\}\Rightarrow p=q.$\par{\tiny\,\par}\qquad\,
 Reversing the roles of $S$ and $T$, we conclude that if $T$ is invertible, then $p=q$ as well.\quad$\square$\par
 {\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
 
+{\timesbf\Large 11} {\timessl\Large 
+Suppose $\Fbf = \Cbfc,$ $T\in\Lm(V), p\in\Po(${\timesbf C}$)$, and $\alpha\in\Cbfc.$
+}\par\quad\,
+{\timessl\Large Prove that $\alpha$ is an eigval of $p(T)$ $\Longleftrightarrow$ $\alpha = p(\lambda)$ for some eigval $\lambda$ of $T$.
+}\par
+{\timesbf S\footnotesize{OLUTION:}}\par\quad
+(a) Suppose $\alpha$ is an eigval of $p(T)\Leftrightarrow (p(T)-\alpha I)$ is not injective.\par\qquad\,
+Write $p(z)-\alpha=c(z-\lambda_1)\cdots(z-\lambda_m)\Rightarrow p(T)-\alpha I=c(T-\lambda_1 I)\cdots(T-\lambda_m I).$\par\qquad\,
+By T{\small IPS,} $\,\exists\,(T-\lambda_j I)$ not injective. Thus $p(\lambda_j)-\alpha=0.\quad\square$\par\quad
+(b) Suppose $\alpha=p(\lambda)$ and $\lambda$ is an eigval of $T$ with an eigvec $v.$\par\qquad\,
+Define $q$ by $q(z)=p(z)-\alpha.$ $\lambda$ is a zero of $q.$\par\qquad\,
+Because $q(T)v=(p(T)-\alpha I)v=q(\lambda)v=(p(\lambda)-\alpha)v=0.$\par\qquad\,
+Hence $q(T)$ is not injective $\Rightarrow (p(T)-\alpha I)$ is not injective.\quad$\square$\par
+{\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
+
+{\timesbf\Large 12} (O{\small R} {\normalsize 4E.5.B.6}) {\timessl\Large 
+Give an example of an operator on $\Rbfc^2$
+}\par\quad\,
+{\timessl\Large that shows the result above does not hold if {\timesbf C} is replaced with {\timesbf R}.
+}\par
+{\timesbf S\footnotesize{OLUTION:}}\par\quad
+Define $T\in\Lm(${\timesbf R}$^2)$ by $T(w,z)=(-z,w).$\par\quad
+By Problem (4E 5.B.11), $\Mt(T,((1,0),(0,1))\,)=\,${\small$\begin{pmatrix}0 & -1\\ 1 & 0\end{pmatrix}$}$\Rightarrow$ the mini poly of $T$ is $z^2+1.$\par\quad
+Define $p$ by $p(z)=z^2.$ Then $p(T)=T^2=-I.$ Thus $p(T)$ has eigval $-1.$\par\quad
+While $\nexists\,\lambda\in\Rbf\,$such that $-1=p(\lambda)=\lambda^2.\quad\square$\par
+{\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
+
+{\small $\bullet$} ({\normalsize4E 5.B.17})\par\,\, {\timessl\Large 
+Suppose $V$ is finite-dim, $T\in \Lm(V)$, and $p$ is the mini poly of $T$. Suppose $\lambda \in\Fbfc.$}\par\,\,
+{\timessl\Large Show that the mini poly of $(T - \lambda I)$ is the polynomial $q$ defined by $q(z) = p(z + \lambda).$
+}\par
+{\timesbf S\footnotesize{OLUTION:}}\par\quad
+$q(T-\lambda I)=0\Rightarrow q$ is polynomial multiple of the mini poly of $(T-\lambda I).$\par\quad
+Suppose the degree of the mini poly of $(T-\lambda I)$ is $n,$ and the degree of the mini poly of $T$ is $m.$\par\quad
+%Write $q(z)=p(z+\lambda)=a_0+a_1(z+\lambda)+\dots+a_{m-1}(z+\lambda)^{m-1}+(z+\lambda)^m.$\par\quad
+By definition of mini poly,\par\quad
+$n$ is the smallest such that $(T-\lambda I)^n\in\Spn(I,(T-\lambda I),\dots,(T-\lambda I)^{n-1});$\par\quad
+$m$ is the smallest such that $T^m\in\Spn(I,T,\dots,T^{m-1}).$\par\quad
+又 $T^k\in\Spn(I,T,\dots,T^{k-1})\Longleftrightarrow (T-\lambda)^k\in\Spn(I,(T-\lambda I),\dots,(T-\lambda I)^{k-1}).$\par\quad
+Thus $n=m.$ 又 $q$ is monic. By the uniqueness of mini poly.\quad$\square$\par
+{\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
+
+{\small $\bullet$} ({\normalsize4E 5.B.18})\par\,\, {\timessl\Large 
+Suppose $V$ is finite-dim, $T\in \Lm(V)$, and $p$ is the mini poly of $T$. Suppose $\lambda \in\Fbfc\backslash\{0\}$.}\par\,\,
+{\timessl\Large Show that the mini poly of $\lambda T$ is the polynomial q defined by $q(z) = \lambda^{\deg p} p(\frac{z}{\lambda})$.
+}\par
+{\timesbf S\footnotesize{OLUTION:}}\par\quad
+$q(\lambda T)=\lambda^{\deg p}p(T)=0\Rightarrow q$ is a polynomial multiple of the mini poly of $\lambda T.$\par\quad
+Suppose the degree of the mini poly of $\lambda T$ is $n,$ and the degree of the mini poly of $T$ is $m.$\par\quad
+By definition of mini poly,\par\quad
+$n$ is the smallest such that $(\lambda T)^{n}\in\Spn(\lambda I,\lambda T,\dots,(\lambda T)^{n-1});$\par\quad
+$m$ is the smallest such that $T^m\in\Spn(I,T,\dots,T^{m-1}).$\par\quad
+又 $(\lambda T)^k\in\Spn(\lambda I,\lambda T,\dots,(\lambda T)^{k-1})\Longleftrightarrow T^k\in\Spn(I,T\dots,T^{k-1}).$\par\quad
+Thus $n=m.$ 又 $q$ is monic. By the uniqueness of mini poly.\quad$\square$\par
+{\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par{\small\,\par}
+
+{\timesbf\Large 18} ({\normalsize O{\small R} 4E 5.B.15})\par\quad\, {\timessl\Large 
+Suppose $V$ is a finite-dim complex vector space with $\dim V > 0$ and $T\in\Lm(V)$.}\par\quad\,
+{\timessl\Large Define $f:\Cbf\rightarrow\Rbf\,$by $f(\lambda) = \dim \range(T-\lambda I)$.
+Prove that $f$ is not a continuous function.
+}\par
+{\timesbf S\footnotesize{OLUTION:}}\,\,\,Note that $V$ is finite-dim.\par\quad
+Let $\lambda_0$ be an eigval of $T.$ Then $(T-\lambda_0 I)$ is not surjective. Hence $\dim\range(T-\lambda_0 I)<\dim V.$\par\quad
+Because $T$ has finitely many eigvals. There exist a sequence of number $\{\lambda_n\}$ such that $\lim\limits_{n\rightarrow\infty}\lambda_n=\lambda_0$.\par\quad
+And $\lambda_n$ is not an eigval of $T$ for each $n\Rightarrow\dim\range(T-\lambda_n I)=\dim V\neq \dim\range(T-\lambda_0 I).$\par\quad
+Thus $f(\lambda_0)\neq \lim\limits_{n\rightarrow\infty}f(\lambda_n).\quad\square$\par
+{\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
+
 {\small $\bullet$} ({\normalsize 4E 5.B.9})\par\,\, {\timessl\Large 
 Suppose $T\in\Lm(V)$ is such that with respect to some basis of \,$V$,}\par\,\,
 {\timessl\Large all entries of the matrix of $T$ are rational numbers.}\par\,\,
@@ -4165,59 +4233,6 @@ Hence we get a system of $n^2$ linear equations in $m$ unknowns $c_0,c_1,\dots,c
 We conclude that $c_0,c_1,\dots,c_{m-1}\in$ {\timesbf Q}.\quad$\square$\par
 {\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
 
-{\timesbf\Large 11} {\timessl\Large 
-Suppose $\Fbf = \Cbfc,$ $T\in\Lm(V), p\in\Po(${\timesbf C}$)$, and $\alpha\in\Cbfc.$
-}\par\quad\,
-{\timessl\Large Prove that $\alpha$ is an eigval of $p(T)$ $\Longleftrightarrow$ $\alpha = p(\lambda)$ for some eigval $\lambda$ of $T$.
-}\par
-{\timesbf S\footnotesize{OLUTION:}}\par\quad
-(a) Suppose $\alpha$ is an eigval of $p(T)\Rightarrow (p(T)-\alpha I)$ is not injective.\par\qquad\,
-Write $p(z)-\alpha=c(z-\lambda_1)\cdots(z-\lambda_m)\Rightarrow p(T)-\alpha I=c(T-\lambda_1 I)\cdots(T-\lambda_m I).$\par\qquad\,
-By T{\small IPS,} $\,\exists\,(T-\lambda_j I)$ not injective. Thus $p(\lambda_j)-\alpha=0.\quad\square$\par\quad
-(b) Suppose $\alpha=p(\lambda)$ and $\lambda$ is an eigval of $T$.\par\qquad\,
-Define $q$ by $q(z)=p(z)-\alpha=c(z-\lambda_1)\cdots(z-\lambda_m).$ Then $\lambda$ is a zero of $q.$\par\qquad\,
-Thus $q(T)=p(T)-\alpha I$ is not injective.
-\par
-{\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
-
-{\timesbf\Large 12} {\timessl\Large 
-Give an example of an operator on $\Rbfc^2$
-}\par\quad\,
-{\timessl\Large that shows the result above does not hold if {\timesbf C} is replaced with {\timesbf R}.
-}\par
-{\timesbf S\footnotesize{OLUTION:}}\par\quad
-
-\par
-{\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
-
-{\small $\bullet$} ({\normalsize4E 5.B.17})\par\,\, {\timessl\Large 
-Suppose $V$ is finite-dim, $T\in \Lm(V)$, and $p$ is the mini poly of $T$. Suppose $\lambda \in\Fbfc.$}\par\,\,
-{\timessl\Large Show that the mini poly of $(T - \lambda I)$ is the polynomial $q$ defined by $q(z) = p(z + \lambda).$
-}\par
-{\timesbf S\footnotesize{OLUTION:}}\par\quad
-
-\par
-{\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
-
-{\small $\bullet$} ({\normalsize4E 5.B.18})\par\,\, {\timessl\Large 
-Suppose $V$ is finite-dim, $T\in \Lm(V)$, and $p$ is the mini poly of $T$. Suppose $\lambda \in\Fbfc\backslash\{0\}$.}\par\,\,
-{\timessl\Large Show that the mini poly of $\lambda T$ is the polynomial q defined by $q(z) = \lambda^{\deg p} p(\frac{z}{\lambda})$.
-}\par
-{\timesbf S\footnotesize{OLUTION:}}\par\quad
-
-\par
-{\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
-
-{\timesbf\Large 18} ({\normalsize O{\small R} 4E 5.B.15})\par\quad\, {\timessl\Large 
-Suppose $V$ is a finite-dim complex vector space with $\dim V > 0$ and $T\in\Lm(V)$.}\par\quad\,
-{\timessl\Large Define $f:\Cbf\rightarrow\Rbf\,$by $f(\lambda) = \dim \range(T-\lambda I)$.
-Prove that $f$ is not a continuous function.
-}\par
-{\timesbf S\footnotesize{OLUTION:}}\par\quad
-
-\par
-{\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
-
 {\small $\bullet$} {\normalsize O{\small R} (4E 5.B.16), O{\small R} (8.C.18})\par\,\, {\timessl\Large 
 Suppose $a_0 ,\dots, a_{n-1}\in\Fbfc.$ Let $T$ be the operator on $\Fbfc^n$ such that}\par{\tiny\,\par}\,\,
 {\timessl\Large $\Mt(T)=\,${\normalsize$\begin{pmatrix}
@@ -4226,18 +4241,18 @@ Suppose $a_0 ,\dots, a_{n-1}\in\Fbfc.$ Let $T$ be the operator on $\Fbfc^n$ such
   &  1  & \ddots&       &   & \vdots\\
   &     & \ddots&       & 0 &   -a_{n-2}\\
 0 &     &       &       & 1 &   -a_{n-1}
-\end{pmatrix} $}, with respect to the standard basis.
+\end{pmatrix} $}, with respect to the standard basis $(e_1,\dots,e_n)$.
 }\par{\tiny\,\par}\,\,
-{\timessl\Large Show that the mini poly of $T$ is $a_0 + a_1 z + \dots + a_{n-1} z^{n-1} + z^n$.
+{\timessl\Large Show that the mini poly of $T$ is $p$ defined by $p(z)=a_0 + a_1 z + \dots + a_{n-1} z^{n-1} + z^n$.
 }\par\,\,
 {\timessl\small
 $\Mt(T)$ is called the {\timessc companion matrix} of the poly above. This exercise shows that every monic poly is the mini poly of some operator.}{\par}\,\,
 {\timessl\small Hence a formula or an algorithm that could produce exact eigvals for each operator on each $\Fbfc^n$ could then produce exact zeros for}{\footnotesize\par}\,\,
 {\timessl\small each poly  $[$ by 8.36(b) $]$. Thus there is no such formula or algorithm. However, efficient numeric methods exist for obtaining very good}{\footnotesize\par}\,\,
 {\timessl\small approximations for the eigvals of an operator.}{\footnotesize\par}
-{\timesbf S\footnotesize{OLUTION:}}\par\quad
-
-\par
+{\timesbf S\footnotesize{OLUTION:}}\,\,\,Note that $(e_1,Te_1,\dots,T^{n-1}e_1)$ is linearly independent. 又 The deg of mini poly is at most $n.$\par\quad
+$T^n e_1=\cdots=T^{n-k}e_{1+k}=\cdots=T e_n=-a_0 e_1-a_1 e_2-a_2 e_3-\dots-a_{n-1}e_n$\par
+$=(-a_0 I-a_1 T-a_2 T^2-\dots-a_{n-1}T^{n-1})e_1.$ Thus $p(T)e_1=0=p(T)e_j$ for each $e_j=T^{j-1}e_{1}.\quad\square$\par
 {\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
 
 {\small $\bullet$} {\Large E{\normalsize IGENVALUES ON}  O{\normalsize DD}-D{\normalsize IMENSIONAL} R{\normalsize EAL} V{\normalsize ECTOR} S{\normalsize PACES}}\qquad (Eigvals on Odd-dim Real Vecsps)\par
@@ -4256,7 +4271,7 @@ Thus $\dim (U+W)=\dim U+2-\dim(U\cap W),$ where $U\cap W=\{0\},$\par\qquad\qquad
 for if not, because $w\not\in U,T|_R w\in U,$\par\qquad\qquad $U\cap W$ is invariant under $T|_R$ of one dim ( impossible because $T|_R$ has no eigvecs ).\par\quad
 Hence $U+W$ is even-dim invariant subspace under $T|_R$, contradicting the maximality of $\dim U.$\par\quad
 Thus the assumption was incorrect. Hence $R=\null(T^2+bT+cI)=U$ has even dim.\quad$\square$\par
-{\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}{\tiny\,\par}
+{\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
 {\small $\bullet$} {O{\small PERATORS} O{\small N} O{\small DD}-D{\small IMENSIONAL} V{\small ECTOR} S{\small PACES} H{\small AVE} E{\small IGENVALUES}}\par\,\,
 (a) Suppose $\Fbf=\Cbfc.$ Then by [5.21], we are done.\par\,\,
 (b) {\timessl\Large Suppose $\Fbf=\Rbfc,$ $V$ is finite-dim, and $\dim V=n\neq 0$ is an odd number.\par\qquad
@@ -4277,7 +4292,7 @@ By mathematical induction.\quad$\square$\par
 {\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
 
 {\small $\bullet$} {\timessl\Large 
-Suppose $\Fbf=\Rbfc,T\in\Lm(V)$ has no eigvals.}\par\quad\,
+Suppose $\Fbf=\Rbfc,T\in\Lm(V)$ has no eigvals.}\par\,\,
 {\timessl\Large Prove that every invariant subspace of \,$V$ under $T$ is even-dim.
 }\par
 {\timesbf S\footnotesize{OLUTION:}}\par\quad
@@ -4285,6 +4300,8 @@ Suppose $U$ is such a subspace. Then $T|_U\in\Lm(U).$
 We prove by contradiction.\par\quad
 If $\dim U$ is odd, then $T|_U$ has an eigval and so is $T,$ so that $\,\exists$ invariant subspace of $1$ dim, contradicts.\quad$\square$\par
 {\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
+
+$\\ $
 
 {\small $\bullet$} ({\normalsize4E 5.B.29})\par\,\, {\timessl\Large 
 Show that every operator on a finite-dim vecsp of dim $\geq 2$}\par\,\,
@@ -4301,7 +4318,29 @@ Thus after some steps, we get an invariant subspace $U$ of $V$ and $\dim U=2.\qu
 
 \rightline{\timesbf\Large{E{\normalsize NDED}}}\par{\tiny\,\par}
 
+% 6h
 {\huge\timesbf 5.B: II}
+
+{\small $\bullet$} {\timesbf\Large N{\normalsize OTE} F{\normalsize OR} []:}
+%{\normalsize }
+%{\timessl\Large  }\par\quad\,
+%{\timesbf S\footnotesize{OLUTION:}}\par\quad
+\par
+{\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
+
+{\small $\bullet$} {\timesbf\Large N{\normalsize OTE} F{\normalsize OR} []:}
+%{\normalsize }
+%{\timessl\Large  }\par\quad\,
+%{\timesbf S\footnotesize{OLUTION:}}\par\quad
+\par
+{\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
+
+{\small $\bullet$} {\timesbf\Large N{\normalsize OTE} F{\normalsize OR} []:}
+%{\normalsize }
+%{\timessl\Large  }\par\quad\,
+%{\timesbf S\footnotesize{OLUTION:}}\par\quad
+\par
+{\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
 
 {\small $\bullet$} ({\normalsize4E 5.C.1})\par\,\, {\timessl\Large 
 Prove or give a counterexample:}\par\,\,
