@@ -4311,9 +4311,16 @@ Show that every operator on a finite-dim vecsp of dim $\geq 2$}\par\,\,
 Exercise $($4E 5.C.6$)$ will give an improvement of this result when $\Fbf=\Cbf.$
 }\par
 {\timesbf S\footnotesize{OLUTION:}}\par\quad
-For any such vecsp $V$ and $T\in\Lm(V),$ then $\,\exists\,$ invariant $U_0$ of even-dim.\par\quad
-Again for $T|_{U_0}\in\Lm(U_0),$ if $\dim U_0> 2,$ then $\,\exists\,$ invariant $U_1$ of even-dim;\par\qquad\qquad\qquad\qquad\qquad\quad\, otherwise, $\dim U_0=2$ and we are done.\par\quad
-Thus after some steps, we get an invariant subspace $U$ of $V$ and $\dim U=2.\quad\square$\par
+Using induction on $\dim V.$\par\quad
+(i) $\dim V=2,$ we are done.\par\,\,\,
+(ii) $\dim V>2.$ Assume that the desired result is true for vecsp of smaller dim.\par\qquad\,
+If $\dim\range T=\dim V,$ suppose $p$ is the mini poly and $p(T)=T^m+a_{m-1}T^{m-1}+\dots+a_1 T+a_0 I,$\par\qquad\qquad\qquad\qquad\qquad\qquad\,
+then $B'=(I,T,\dots,T^{m-1})$ is linearly independent.\par\qquad\qquad\qquad\qquad\qquad\qquad\,
+If $\,T=\lambda I\,(\,\Leftrightarrow m=1\,\vee\,m=-\infty\,),$ then we are done.\par\qquad\qquad\qquad\qquad\qquad\qquad\,
+If $\,2\leq m\leq\dim V-1,$ then apply the desired result to $T|_{\Spn B'}$ and we are done.\par\qquad\qquad\qquad\qquad\qquad\qquad\,
+If $\,m=\dim V,$ then ???\par\qquad\,
+Otherwise, if $\dim\null T=\dim V,$ then $T$ is the zero map and we are done.\par\qquad\qquad\qquad\quad
+If $\,\dim V>\dim\range T\geq 2$\,\, or \,\,$\dim V>\dim\null T\geq 2,$ ( at least one of the case is true )\par\qquad\qquad\qquad\quad then by the assumption, $T|_{\range T}$ or $T|_{\null T}$ has an invariant subspace of dim $2.\quad\square$\par
 {\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
 
 \rightline{\timesbf\Large{E{\normalsize NDED}}}\par{\tiny\,\par}
