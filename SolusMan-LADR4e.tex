@@ -1169,17 +1169,18 @@ $T:\quad v_1\mapsto 0,\quad\,\, v_2\mapsto 0,\,\,\quad v_i\mapsto v_i\,\,\,;$\pa
 $S:\quad v_1\mapsto v_4,\quad v_2\mapsto v_5,\quad v_i\mapsto 0\,\,\,\,\,;\qquad i=3,4,5.$\par
 {\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par{\tiny\,\par}
 
-{\small$\bullet$} {\Large\timessl Suppose $\dim V=n$ and $S,T\in\Lm(V)$ are such that $ST=0$.}\par\,\,
-{\Large\timessl Prove that $\dim\range TS\leq m=\left\{\begin{array}{l}\frac{n}{2},\quad$ if $2\mid n$. $\\\frac{n-1}{2},$ otherwise.$\end{array}\right.$}\par
+{\small$\bullet$} {\Large\timessl Suppose $\dim V=n$ and $S,T\in\Lm(V)$ are such that $ST=0$. Prove that $\dim\range TS\leq[\displaystyle\frac{n}{2}].$}\par
 {\timesbf S\footnotesize{OLUTION:}}\par\quad
-By Problem (23), $\dim\range TS\leq\min\{\overbrace{\dim \range S}^{n-\dim\null T}, \overbrace{\dim\range T}^{n-\dim\null S}\}.$ Suppose $\dim\range TS\geq m+1$.\par\quad
-Then $\min\{n-\dim\null T,n-\dim\null S\}\geq m+1$\par\qquad
-$\Rightarrow\max\{\dim\null T,\dim\null S\}\leq n-m-1$.\par\quad
-又 $\dim\null ST=n\leq\dim\null S+\dim\null T\leq 2(n-m-1)$\par\quad
-$\Rightarrow m+1\leq\,${\small$\displaystyle\frac{n}{2}$}. Contradicts. Thus $\dim\range TS\leq m.\,\,\,\square$\par{\tiny\,\par}\quad
+By Problem (23), $\dim\range TS\leq\min\{\overbrace{\dim \range S}^{n-\dim\null T}, \overbrace{\dim\range T}^{n-\dim\null S}\}.$ We prove by contradiction.\par\quad
+Assume that $\dim\range TS\geq [\displaystyle\frac{n}{2}]+1$.\par\quad
+Then $\min\{n-\dim\null T,n-\dim\null S\}\geq [\displaystyle\frac{n}{2}]+1$\par\qquad
+$\Rightarrow\max\{\dim\null T,\dim\null S\}\leq n-[\displaystyle\frac{n}{2}]-1$.\par\quad
+又 $\dim\null ST=n\leq\dim\null S+\dim\null T\leq 2(n-[\displaystyle\frac{n}{2}]-1)$\par\quad
+$\Rightarrow [\displaystyle\frac{n}{2}]+1\leq\displaystyle\frac{n}{2}$. Contradicts. Thus $\dim\range TS\leq [\displaystyle\frac{n}{2}].\quad\square$\par{\tiny\,\par}\quad
 O{\small R.} $\dim\null S=n-\dim\range S\leq n-\dim\range TS.$\par\quad
 And $ST=0\Rightarrow \dim\range TS\leq\dim\range T\leq\dim\null S\leq n-\dim\range TS$\par\quad
-$\Rightarrow 2\dim\range TS\leq n\Rightarrow\dim\range TS\leq\,${\small$\displaystyle\frac{n}{2}$}.$\quad\square$\par
+$\Rightarrow 2\dim\range TS\leq n\Rightarrow\dim\range TS\leq\displaystyle\frac{n}{2}$\par\quad
+$\Rightarrow\dim\range TS\leq[\displaystyle\frac{n}{2}]$ ( because $\dim\range TS$ is an integer ). $\quad\square$\par
 {\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
 
 {\timesbf\Large 24} {\timessl\Large 
@@ -1187,40 +1188,68 @@ Suppose that $W$ is finite-dim and $S, T\in\Lm(V, W)$.}\par\quad\,
 {\timessl\Large Prove that $\null S\subseteq\null T\Longleftrightarrow\exists\,\,E\in\Lm(W)$ such that $T=ES$.
 }\par
 {\timesbf S\footnotesize{OLUTION:}}\par\quad
-Suppose $\null S\subseteq\null T$. Let $R=(Sv_1,\dots,Sv_n)$ be a basis of $\range S\Rightarrow(v_1,\dots,v_n)$ is linearly independent.\par\quad
+Suppose $\,\,\exists\,\,E\in\Lm(W)$ such that $T=ES$. Then $\null T=\null ES\supseteq\null S.$\par\quad
+Suppose $\null S\subseteq\null T$. Let $R=(Sv_1,\dots,Sv_n)$ be a basis of $\range S$\par{\tiny\,\par}\quad
+$\Rightarrow(v_1,\dots,v_n)$ is linearly independent.\par\quad
 Let $\mathcal{K}_R=\Spn(v_1,\dots,v_n)\Rightarrow V=\mathcal{K}_R\oplus\null S$.\par\quad
 Define $E\in\Lm(W)$ by $E(Sv_i)=Tv_i,\,\,\,Eu=0;$\,\,\, for each $i=1\,\dots,n$ and $u\in\null S.$\par\quad
-Hence $\forall v\in V,\,\,(\,\exists\,!\,a_i\in\Fbfc,u\in\null S\,),\,Tv=a_1 Tv_1+\dots+a_n Tv_n=E(a_1 Sv_1+\dots+a_n Sv_n)\Rightarrow T=ES$.\par{\tiny{\,}\par}\quad
-Suppose $\,\,\exists\,\,E\in\Lm(W)$ such that $T=ES$. Then $\null T=\null ES\supseteq\null S.\,\,\,\square$\par
-{\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}{\tiny\,\par}
+Hence $\forall v\in V,\,\,(\,\exists\,!\,a_i\in\Fbfc,u\in\null S\,),\,Tv=a_1 Tv_1+\dots+a_n Tv_n=E(a_1 Sv_1+\dots+a_n Sv_n)\Rightarrow T=ES.\,\square$\par{\tiny\,\par}\quad
+O{\small R.} Extend $R$ to a basis $(Sv_1,\dots,Sv_n,w_1,\dots,w_m)$ of $W.$\par\quad
+Define $E\in\Lm(W)$ by $E(Sv_k)=Tv_k,\,\,\,Ew_j=0.$\par\quad
+Because $\forall\,v\in V,\,\exists\,a_i\in\Fbfc,Sv=a_1 Sv_1+\dots+a_n Sv_n$\par
+\centerline{$\Rightarrow S(v-(a_1 v_1+\dots+a_n v_n))=0$\qquad\qquad\qquad\qquad\qquad}\par
+\centerline{$\Rightarrow v-(a_1 v_1+\dots+a_n v_n)\in\null S$\qquad\qquad\qquad\qquad\quad\,\,\,}\par
+\centerline{$\Rightarrow v-(a_1 v_1+\dots+a_n v_n)\in\null T.$\qquad\qquad\qquad\qquad\quad\,\,}\par
+\centerline{$\Rightarrow T(v-(a_1 v_1+\dots+a_n v_n))=0$\qquad\qquad\qquad\qquad\qquad}\par\quad
+Thus $Tv=a_1 v_1+\dots+a_n v_n.$ Hence $E(Sv)=a_1 E(Sv_1)+\dots+a_n E(Sv_n)=a_1 Tv_1+\dots+a_n Tv_n=Tv.\quad\square$\par
+{\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
 
 {\timesbf\Large 25} {\timessl\Large 
 Suppose that $V$ is finite-dim and $S, T\in\Lm(V, W)$.}\par\quad\,
 {\timessl\Large Prove that $\range S\subseteq\range T\Longleftrightarrow\exists\,\,E\in\Lm(V)$ such that $S = TE$.
 }\par
 {\timesbf S\footnotesize{OLUTION:}}\par\quad
+Suppose $\,\,\exists\,\,E\in\Lm(V)$ such that $S = TE$. Then $\range S=\range TE\subseteq\range T.$\par\quad
 Suppose $\range S\subseteq\range T$. Let $(v_1,\dots,v_m)$ be a basis of $V$.\par\quad
-Because $\range S\subseteq\range T\Rightarrow Sv_i\in\range T$ for each $i$. Suppose $u_i\in V$ for each $i$ such that $Tu_i=Tv_i$.\par\quad
-Thus defining $E\in\Lm(V)$ by $Ev_i=u_i$ for each $i$ $\Rightarrow S=TE.$\par{\tiny{\,}\par}\quad
-Suppose $\,\,\exists\,\,E\in\Lm(V)$ such that $S = TE$. Then $\range S=\range TE\subseteq\range T.\,\,\,\square$\par
+Because $\range S\subseteq\range T\Rightarrow Sv_i\in\range T$ for each $i$. Suppose $u_i\in V$ for each $i$ such that $Tu_i=Sv_i$.\par\quad
+Thus defining $E\in\Lm(V)$ by $Ev_i=u_i$ for each $i$ $\Rightarrow S=TE.\quad\square$\par
 {\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
+
+$ \\ $
 
 {\timesbf\Large 26} {\timessl\Large 
 Prove that the differentiation map $D\in\Po(${\timesbf R}$)$ is surjective.
 }\par
-{\timesbf S\footnotesize{OLUTION:}}\,\,\,Note that $\deg Dx^n=n-1$.\par\quad
-Because $\Spn(Dx,Dx^2,\dots)\subseteq\range D.$ 又 By (2.A.10), $\Spn(Dx,Dx^2,\dots)=\Spn(1,x,\dots)=\Po(${\timesbf R}$).\,\,\,\square$
+{\timesbf S\footnotesize{OLUTION:}}\par\quad
+[{\timessl Informal Proof}]\par\quad
+Note that $\deg Dx^n=n-1$.\par\quad
+Because $\Spn(Dx,Dx^2,\dots)\subseteq\range D.$ 又 By (2.C.10), $\Spn(Dx,Dx^2,\dots)=\Spn(1,x,\dots)=\Po(${\timesbf R}$).\,\,\,\square$\par{\tiny\,\par}\quad
+[{\timessl Proper Proof}]\par\quad
+\par\quad
+\par\quad
+\par\quad
+\par\quad
+\par\quad
+\par\quad
+\par\quad
+\par\quad
+\par\quad
 \par
-{\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}{\tiny\,\par}
+{\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
 
 {\timesbf\Large 27} {\timessl\Large 
 Suppose $p\in\Po(${\timesbf R}$)$. Prove that there exists a polynomial $q\in\Po(${\timesbf R}$)$ such that $5q'' + 3q' = p$.
 }\par
 {\timesbf S\footnotesize{OLUTION:}}\par\quad
+[{\timessl Informal Proof}]\par\quad
 Define $B\in\Lm(\Po(${\timesbf R}$))$ by $B=5D^2+3D\Rightarrow B(q)=5q''+3q'$.\par\quad
 Note that $\deg B x^n=n-1.$ Similar to Problem (26), we conclude that $B$ is surjective.\par\quad
-Hence for any $p\in\Po(${\timesbf R}$)$, there exists $q\in\Po(${\timesbf R}$)$ such that $Bq=p.\,\,\,\square$\par
-{\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}{\tiny\,\par}
+[{\timessl Proper Proof}]\par\quad
+\par\quad
+\par\quad
+\par\quad
+\par
+{\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
 
 {\timesbf\Large 28} {\timessl\Large 
 Suppose $T\in\Lm(V,W)$ and $(w_1,\dots,w_m)$ is a basis of $\range T$. Prove that}\par\quad\,
@@ -1372,7 +1401,7 @@ $\Rightarrow\forall w+\i x\in W_\Cbb,\,\exists\,u+\i v\in V,T(u+\i v)=w+\i x\Rig
 $\end{array}\right\}\Rightarrow\,\square$\par
 {\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}{\tiny\,\par}
 \rightline{\timesbf\Large{E{\normalsize NDED}}}\par
-$\\\\\\\\\\\\\\\\\\\\\\\\ $
+$\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ $
 {\huge\timesbf 3$\cdot$C} %4h
 
 {\small $\bullet$} {\timesbf\Large N{\normalsize OTE} F{\normalsize OR} [3.47]:}\,\, $LHS=(AC)_{j,k}$=$\sum\limits_{r=1}^n A_{j,r}C_{r,k}=\sum\limits_{r=1}^n (A_{j,\cdot})_{1,r}(C_{\cdot,k})_{r,1}=(A_{j,\cdot}C_{\cdot,k})_{1,1}=A_{j,\cdot}C_{\cdot,k}=RHS$.\par
@@ -2057,7 +2086,7 @@ What is $\range\Phi$?
 $T\in\null\Phi\Longleftrightarrow\Phi(T)=0\Longleftrightarrow\forall u\in U,Tu=0\Longleftrightarrow T\in\mathcal{E}.$\qquad\qquad\qquad Hence $\null\Phi=\mathcal{E}$.\par\qquad\,
 $S\in\Lm(U,W)\Rightarrow\exists\,T\in\Lm(V,W),\Phi(T)=S,$ by (3.B.11) $\Rightarrow S\in\range T.\,$\quad Hence $\range\Phi=\Lm(U,W)$.\par\qquad\,
 Thus $\dim\null\Phi=\dim\mathcal{E}=\dim\Lm(V,W)-\dim\range\Phi=(\dim V-\dim U)\dim W.\quad\square$%\par\,\par
-\par\qquad\,
+\par{\tiny\,\par}\qquad\,
 O{\small R}. Extend $(u_1,\dots,u_m)$ a basis of $U$ to $(u_1,\dots,u_m,v_1,\dots,v_n)$ a basis of $V$. Let $p=\dim W$.\par\qquad\,
 ( See N{\small OTE} F{\small OR} [3.60])\par\qquad\,
 $\forall \,T\in\mathcal{E},k\in\{1,\dots,m\},TE_{k,k}=0\Rightarrow\underbrace{\Spn\begin{Bmatrix} \underset{,}{E_{1,1}}, & \cdots & ,\underset{,}{E_{m,1}},\\ \vdots & \ddots & \,\vdots\\ \overset{,}{E_{1,p}}, & \cdots & ,\overset{,}{E_{m,p}}\end{Bmatrix}}_{\textup{Denote\,it\,by\,R}}\,\cap\,\mathcal{E}=\{0\}$.\par\qquad\,
@@ -2066,7 +2095,7 @@ Then $\dim\mathcal{E}=\dim\Lm(V,W)-\dim R-\dim(R\cap\mathcal{E})=(\dim V-\dim U)
 {\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\par
 
 \rightline{\timesbf\Large{E{\normalsize NDED}}}\par
-
+%$\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ $
 {\huge\timesbf 3$\cdot$E}
 
 {\timesbf\Large 2} {\timessl\Large 
