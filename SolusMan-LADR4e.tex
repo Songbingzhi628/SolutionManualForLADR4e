@@ -7,6 +7,8 @@
 \usepackage{fontspec}
 \usepackage{unicode-math}
 \usepackage{ulem}
+\usepackage{tabularx}
+%\usepackage{myHeader.sty}
 \usepackage[left=1cm,right=1cm,top=1cm,bottom=0cm]{geometry}
 
 
@@ -109,10 +111,10 @@
 \def\Solution{{\timesbfx\large S\footnotesize{OLUTION:}}\,\,\,}
 \def\NOTE{\timesnr\large N{\footnotesize OTE}}
 \def\NOTEFOR{{\timesnr\large N{\footnotesize OTE} F{\footnotesize OR}}}
-\def\Notice{{\timesbfx\large N{\footnotesize OTICE}}}
-\def\COROLLARY{{\timesbfx\large C{\footnotesize OROLLARY}}}
+\def\Notice{{\timesnr\large N{\footnotesize OTICE}}}
+\def\COROLLARY{{\timesnr\large C{\footnotesize OROLLARY}}}
 \def\Tips{{\timesbfx\large T{\footnotesize IPS:}}}
-\def\TIPS{{\large T{\footnotesize IPS}}}
+\def\TIPS{{\timesnr\large T{\footnotesize IPS}}}
 
 
 % 题末分割线
@@ -163,6 +165,10 @@
 	\Solution
 }
 
+\newcommand{\ExampleXnosolus}[1]{
+	{\timesbfx E\footnotesize{XAMPLE:}} #1\vspace{-16pt}\par
+}
+
 \newcommand{\ProblemN}[2]{
 	\Onumber{#1} #2\vspace{-16pt}\par
 	\Solution
@@ -205,70 +211,91 @@
 \vspace{-25pt}
 }
 
-\newcommand{\ChapterDecl}[1]{{\huge\timesbfxx#1}}
+\newcommand{\ChapterDecl}[3]{{\huge\timesbfxx\hypertarget{#1}{#2}}#3\vspace{5pt}}
 
-\ChapterDecl{1$\cdot$B} %1.75h
+\centerline{\Large 简介}\vspace{4pt}\par
+{\normalsize 这是我个人用于复习的笔记，一本习题补注。由于我个人偏好的复习手段的特点，因此我把许多对我个人而言没什么复习价值的习题作了省略。为什么我没有用中文？因为我将来要学习的绝大多数数学课本都是全英的，国内目前的专业翻译速度慢、不全面，所以我只好用英文。但我讨厌英文单词的冗长性，这会让我复习起来很不爽，所以我对许多常用词汇适当地作了简写。这份习题补注的内容范围和标识说明，我已经在\href{run:./README}{README}中写得很清楚，不再赘述。这份笔记尚处于缓慢的编撰进度中。}\par
 
-%{\small $\bullet$} ({\normalsize \OR [9.2,9.3]. \OR Problem (1) in 9.A})\par\,\, {\timessl\Large 
-	%Suppose $V$ is a real vecsp. The complexification of \,$V$, denoted by $V_{\Cbb}$, equals $V\times V$.}\par\,\,\,
-%{\timessl\Large An element of \,$V_{\Cbb}$ is an ordered pair $(u, v)$, where $u,v\in V$, but we write this as $u+\i v$.}\par\,\,
-%{\footnotesize $\bullet$} {\timessl\Large Addition on $V_\Cbb$ is defined by $\\ $
-	%\centerline{$(u_1+\i v_1)+(u_2+\i v_2)=(u_1+u_2)+\i(v_1+v_2)$}}\par\quad\,\,
-%{\timessl\Large 
-	%for all $u_1,v_1,u_2 ,v_2\in V.$}\par\,\,
-%{\footnotesize $\bullet$} {\timessl\Large Complex scalar multi on $V_\Cbb$ is defined by $\\ $\centerline{$(a+b \i)(u+\i v)=(au-bv)+\i(av+bu)$}}\par\quad\,\,
-%{\timessl\Large for all $a,b\in$ {\timesbf R} and all $u,v\in V$.
-	%}\par\,\,\,
-%{\timessl\Large $V_\Cbb$ is a complex vecsp, with the definitions above.
-	%}\par\quad
-%{\normalsize\timessl
-	%Think of $V$ as a subset of $V_\Cbb$ by identifying $u\in V$ with $u+\i 0$. The construction of $V_\Cbb$ from $V$ can then be thought of as}\par\quad
-%{\normalsize\timessl generalizing the construction of {\timesbf C}$^n$ from {\timesbf R}$^n$.}\par
-%{\timesbfx S\footnotesize{OLUTION:}}\par\quad
-%{\tiny $\bullet$} Commutativity: $(u_1+\i v_1)+(u_2+\i v_2)=(u_2+\i v_2)+(u_1+\i v_1)$.\par\quad
-%{\tiny $\bullet$} Associ:\par\qquad
-%(I) $[(u_1+\i v_1)+(u_2+\i v_2)]+(u_3+\i v_3)=(u_1+\i v_1)+[(u_2+\i v_2)+(u_3+\i v_3)]$.\par\quad\,\,\,
-%(II) {\small $\MathLeftBrace{l}{[(a+b\i)(c+d\i)](u+\i v)=[(ac-bd)+(ad+bc)\i](u+\i v)=[(ac-bd)u-(ad+bc)v]+\i[(ac-bd)v+(ad+bc)u]\\ (a+b\i)[(c+d\i)(u+\i v)]=(a+b\i)[(cu-dv)+\i(cv+du)]=[a(cu-dv)-b(cv+du)]+\i[a(cv+du)+b(cu-dv)]}$}\par\quad
-%{\tiny $\bullet$} Additive identity.\par\quad
-%{\tiny $\bullet$} Add inv: $(u_1+\i v_1)+(-u_1+\i (-v_1))=0$.\par\quad
-%{\tiny $\bullet$} Multi identity.\par\quad
-%{\tiny $\bullet$} Distributive properties:\par\qquad
-%(I) {\small $\MathLeftBrace{l}{(a+b\i)[\,(u_1+\i v_1)+(u_2+\i v_2)\,]=(a+b\i)[\,(u_1+u_2)+\i(v_1+v_2)\,]\\\qquad\qquad\qquad\qquad\qquad\qquad\quad\,\,\,\,=[\,a(u_1+u_2)-b(v_1+v_2)\,]+\i\,[\,a(v_1+v_2)+b(u_1+u_2)\,]\\(a+b\i)(u_1+\i v_1)+(a+b\i)(u_2+\i v_2)=[\,(au_1-bv_1)+\i(av_1+bu_1)\,]+[\,(au_2-bv_2)+\i(av_2+bu_2)\,]}$}\par\quad\,\,\,
-%(II) {\small $\MathLeftBrace{l}{[\,(a+b\i)+(c+d\i)\,]\,(u+\i v)=[\,(a+c)+(b+d)\i\,\,]\,(u+\i v)=[\,(a+c)u-(b+d)v\,]+\i\,[\,(a+c)v+(b+d)u\,]\\(a+b\i)(u+\i v)+(c+d\i)(u+\i v)=[\,(au-bv)+\i(av+bu)\,]+[\,(cu-dv)+\i(cv+du)\,] }$}\par
-%\rightline{$\square$}
-%\ProblemEnding\par
-$\\ $
-\ProblemB{
-	\TextB{Suppose $S$ is a nonempty set. Let $V^S$ denote the set of functions from $S$ to $V$.}
-	\TextB{Define a natural add and scalar multi on $V^S$, and show that $V^S$ is a vecsp with these defs.}
-}\par\quad
-\bullpt Add on $V^S$ is defined by $(f+g)(x)=f(x)+g(x)$ for any $x\in S$ and $f,g\in V^S$.\par\quad
-\bullpt Scalar Multi on $V^S$ is defined by $(\lambda f)(x)=\lambda f(x).\hfill\square$\par
-\ProblemEnding\par
 
-\ProblemN{1}{\TextN{Prove that $-(-v) = v$ for every $v\in V$.}
-}
-$\MathRightBrace{l}{\,(-(-v))+(-v)=0\\$ $v+(-v)=0}\Rightarrow$ By the uniqnes of add inv. $\square$\par\vspace{6pt}\qquad\qquad\qquad
+\begin{center}
+
+Goto\vspace{8pt}\par
+
+% To see this cleaner, type Ctrl+- a few times.
+\begin{tabular}{ c c c c c c c c c c }
+\hline
+                 1  &                  2  &                  3  &  \hyperlink{Ch4}{4} &                  5  &                  6  &              7      &                  8  &                  9  &                  10\\\hline
+                {A} & \hyperlink{Ch2A}{A} & \hyperlink{Ch3A}{A} &                 {/} & \hyperlink{Ch5A}{A} & \hyperlink{Ch6A}{A} & \hyperlink{Ch7A}{A} & \hyperlink{Ch8A}{A} & \hyperlink{Ch9A}{A} & \hyperlink{Ch10A}{A}\\
+\hyperlink{Ch1B}{B} & \hyperlink{Ch2B}{B} & \hyperlink{Ch3B}{B} &                 {/} & \hyperlink{Ch5B}{B} & \hyperlink{Ch6B}{B} & \hyperlink{Ch7B}{B} & \hyperlink{Ch8B}{B} & \hyperlink{Ch9B}{B} & \hyperlink{Ch10B}{B}\\
+\hyperlink{Ch1C}{C} & \hyperlink{Ch2C}{C} & \hyperlink{Ch3C}{C} &                 {/} & \hyperlink{Ch5C}{C} & \hyperlink{Ch6C}{C} & \hyperlink{Ch7C}{C} & \hyperlink{Ch8C}{C} &                 {/} &                  {/}\\
+                {/} &                 {/} & \hyperlink{Ch3D}{D} &                 {/} &                 {/} & \hyperlink{Ch6D}{D} & \hyperlink{Ch7D}{D} & \hyperlink{Ch8D}{D} &                 {/} &                  {/}\\
+                {/} &                 {/} & \hyperlink{Ch3E}{E} &                 {/} & \hyperlink{Ch5E}{E*}&                 {/} &                 {/} &                 {/} &                 {/} &                  {/}\\
+                {/} &                 {/} & \hyperlink{Ch3F}{F} &                 {/} &                 {/} &                 {/} & \hyperlink{Ch7F}{F*}&                 {/} &                 {/} &                  {/}\\
+\hline
+\end{tabular}
+
+\vspace{20pt}
+Abbreviation Table\vspace{8pt}\par
+\begin{tabularx}{0.55\textwidth} { 
+		| c |
+		| >{\raggedright\arraybackslash}X| }
+	\hline
+def&			definition\\
+vec&			vector\\
+vecsp&			vector space\\
+subsp&			subspace\\
+add&			addition/additive\\
+multi&			multiplication/multiplicative/multiple\\
+assoc&			associative/associativity\\
+distr&			distributive properties/property\\
+inv&			inverse\\
+existns&		existence\\
+uniqnes&		uniqueness\\
+linely inde&	linearly independent/independence\\
+linely dep&		linearly dependent/dependence\\
+dim&			dimension(al)\\
+inje&			injective\\
+surj&			surjective\\
+col&			column\\
+with resp&		with respect\\
+iso&			isomorphism/isomorphic\\
+correspd&		correspond(ing)\\
+poly&			polynomial\\
+eigval&			eigenvalue\\
+eigvec&			eigenvector\\
+mini poly&		minimal polynomial\\
+char poly&		characteristic polynomial\\\hline
+\end{tabularx}
+\end{center}
+
+\clearpage
+
+\ChapterDecl{Ch1B}{1$\cdot$B}
+
+\ProblemN{1}{
+	\vspace{2pt}\TextN{Prove that $\forall v\in V,-(-v) = v$.}
+}\hspace{-6pt}$\MathRightBrace{r}{\,(-(-v))+(-v)=0\\$ $v+(-v)=0}\Rightarrow$ By the uniqnes of add inv. $\hfill\square$\par\vspace{6pt}\qquad\qquad\quad
 \Or $-(-v)=(-1)((-1)v)=((-1)(-1))v=1\cdot v=v.\hfill\square$\par
 \ProblemEnding\par
 
 \ProblemN{2}{
 	\TextN{Suppose $a\in\Fbb,v\in V$, and $av = 0$. Prove that $a = 0$ or $v = 0$.}
-}
-\dbsp If $a=0$, then we are done.\par\qquad\qquad\quad
-\dbsp Otherwise, $\,\exists\,\,a^{-1}\in\Fbb,a^{-1}a=1,$ hence $v=1\cdot v=(a^{-1}a)v=a^{-1}(av)=a^{-1}\cdot 0=0.\hfill\square$\par
+}Suppose $a\neq 0,\,\exists\,a^{-1}\in\Fbb,a^{-1}a=1,$ hence $v=1\cdot v=(a^{-1}a)v=a^{-1}(av)=a^{-1}\cdot 0=0.\hfill\square$\par
 \ProblemEnding\par
 
 \ProblemN{3}{
-	\TextN{Suppose $v, w\in V$. Explain why there exists a unique $x\in V$ such that $v + 3x = w$.
+	\TextN{Suppose $v, w\in V$. Explain why $\exists\,!\,x\in V,v + 3x = w$.
 }}\par\quad
 [{\timessl Existns}] \dbsp Let $x=\displaystyle\frac{1}{3}(w-v)$.\par\quad
-[{\timessl Uniqnes}] \dbsp Suppose $v+3x_1=w,$(I)$\,\,v+3x_2=w\,$(II). Then (I) $-$ (II) $: 3(x_1-x_2)=0\Rightarrow x_1=x_2.\hfill\square$\par
+[{\timessl Uniqnes}] \dbsp Suppose $v+3x_1=w,$(I)$\,\,v+3x_2=w\,$(II). Then (I) $-$ (II) $: 3(x_1-x_2)=0\Rightarrow x_1=x_2.\hfill\square$\par\quad
+\Or \quad$v + 3x = w \quad\Leftrightarrow\quad 3x = w − v\quad \Leftrightarrow\quad x = \frac{1}{3} (w − v).\hfill\square$
 \ProblemEnding\par
 
 \ProblemN{5}{
-	\TextN{Show that in the definition of a vecsp, the add inv condition can be replaced.}
-}Using [1.31]. $0v = 0$ for all $v\in V$ $\Longleftrightarrow (1+(-1))v=1\cdot v+(-1)v=v+(-v)=0.\hfill\square$\par
+	\TextN{Show that in the def of a vecsp, the add inv condition can be replaced by [1.29].}
+	\TextN{\normalsize Suppose $V$ satisfies all conds in the def, except we've replaced the add inv cond with [1.29]. Prove that the add inv is true.}
+}
+Using [1.31]. $0v = 0$ for all $v\in V$ $\Longleftrightarrow (1+(-1))v=1\cdot v+(-1)v=v+(-v)=0.\hfill\square$\par
 \ProblemEnding\par
 
 \ProblemN{6}{
@@ -288,107 +315,71 @@ and  (I) {$t + \infty = \infty + t = \infty + \infty = \infty,$}\par\qquad\,
 (II) {$t + (-\infty) = (-\infty) + t = (-\infty) + (-\infty) = -∞,$}\par\,\qquad
 (III) {$\infty + (-\infty) = (-\infty) + \infty = 0$.}\par\quad
 With these operations of add and scalar multi, is $\Rbb\cup\left\{\infty, -\infty\right\}$ a vecsp over $\Rbb$? Explain.\par\quad
-}\par\quad
-No. By Associ: $(a+\infty)+(-\infty)\neq a+\left(\infty+(-\infty)\right)$.\par\quad
-\Or By Distributive properties: $\infty=(2+(-1))\infty\neq 2\infty+(-\infty)=\infty+(-\infty)=0.\hfill\square$\par
+} Not a vecpsp, since the add and scalar mult is not assoc and distr.\par\quad
+By Assoc: $(a+\infty)+(-\infty)\neq a+\left(\infty+(-\infty)\right)$.\par\quad
+\Or By Distr: $\infty=(2+(-1))\infty\neq 2\infty+(-\infty)=\infty+(-\infty)=0.\hfill\square$\par
 \ProblemEnding\par
 \ChapterEnding
-$\\\\\\ $
-\ChapterDecl{1$\cdot$C} %3h
-$\\ $
-%\ProblemN{2} {\Large (1.35)}\par\,\,\,
-%(b) {\timessl\Large The set of continuous real-valued functions on the interval $[0,1]$ is a subsp of $\Rbb^{[0,1]}$.}\par\qquad\,\,
-%Denote the set by $U$. \normalsize$\forall x\in [0,1]$ we have \normalsize$\MathRightBrace{l}{$ (一) $0\in U;\,\,f(x)=0\Leftrightarrow f=0\\ $ (二) $\forall f,g\in U,\,(f+g)(x)=f(x)+g(x)\\ $ (三) $\forall f\in U,\forall\lambda\in\Fbb=\Rbb,\,(\lambda f)(x)=\lambda f(x)$
-%$}\Rightarrow\square$\large\par\par\,\,\,
-%(c) {\timessl\Large The set of differentiable real-valued functions on {\timesbf R} is a subsp of $\Rbb^\Rbb.$}\par\qquad\,\,
-%Denote the set by $U$. \normalsize$\MathRightBrace{l}{$ (一) $0\in U\\ $ (二) $\forall f,g\in U,\,(f\apostrophe+g\apostrophe)=f\apostrophe+g\apostrophe\\ $ (三) $\forall f\in U,\forall\lambda\in\Fbb=\Rbb,(\lambda f)\apostrophe=\lambda (f)\apostrophe$
-%$}\Rightarrow\square$\large\par\tinypar\,\,\,
-%(d) {\timessl\Large The set of differentiable real-valued functions $f$ on the interval $(0,3)$ such that $f\apostrophe(2)=b$}\par\qquad\,\,
-%{\timessl\Large is a subsp of $\Rbb^{(0,3)}$ if and only if $b=0$.}\par\qquad\,\,
-%Denote the set by $U$. Suppose $b=0$. Then\normalsize\par\qquad
-%$\MathRightBrace{l}{$
-%(一) $0\in U\\ $
-%(二) $\forall f,g\in U,\,(f+g)\apostrophe\,(2)=f\apostrophe(2)+g\apostrophe(2)=0\\ $
-%(三) $\forall f\in U,\forall\lambda\in\Fbb=\Rbb,\,(\lambda f)\apostrophe\,(2)=\lambda f\apostrophe(2)$
-%$}$\large$\Rightarrow U$ is a subsp of $\Rbb^{(0,3)}.$\par\qquad
-%Suppose $U$ is a subsp of $\Rbb^{(0,3)}.$ Suppose $f=0\Rightarrow f\in U$. Then $f\apostrophe(2)=0=b.\hfill\square$\par\tinypar\,\,\,
-%(e) {\timessl\Large The set of all sequences with limit 0, of complex numbers, is a subsp of $\Cbb^\infty$.}\par\qquad\,\,
-%Denote the set by $A$.\normalsize\par\qquad
-%$\MathRightBrace{l}{$
-%(一) $(0,0,\dots)\in A\\ $
-%(二) $\forall\,\,(a_1,a_2,\dots),\,(b_1,b_2,\dots)\in A\Longleftrightarrow\lim\limits_{n\rightarrow\infty}a_n=0,\lim\limits_{n\rightarrow\infty}b_n=0.\\ $\qquad\,
-%Thus $\lim\limits_{n\rightarrow\infty}(a_n+b_n)=\lim\limits_{n\rightarrow\infty}a_n+\lim\limits_{n\rightarrow\infty}b_n=0\Rightarrow(a_1+b_1,a_2+b_2,\dots)\in A\\ $
-%(三) $\forall\,\,(a_1,a_2,\dots)\in A,\forall\lambda\in\Fbb=\Cbb,\lim\limits_{n\rightarrow\infty}(\lambda a_n)=\lambda\lim\limits_{n\rightarrow\infty}a_n=0\Rightarrow\lambda(a_1,a_2,\dots)\in A$ $}\Rightarrow\square$\par\large
-%\ProblemEnding\tinypar
-
-%\ProblemN{4}{
-%	\TextN{Suppose $b\in\Rbb.$ Show that the set of continuous real-valued functions $f$ on the interval $[0,1]$}
-%	\TextN{such that $\int_0^1 f=b$ is a subsp of $\Rbb^{[0,1]}$ $\Longleftrightarrow$ $b=0$}
-%}Denote the set by $V_b$.\par\quad
-%(a) Suppose $V_b$ is a subsp of {\timesbf R}$^{[0,1]}$, then $\forall f\in V_b,$ we have $\int_0^1 f=b$.\par\qquad\,\,
-%Because $kf\in V_b$ for any $k\in\Rbb.$ Hence $\int_0^1(kf)=k\int_0^1 f=kb=b\Leftrightarrow b=0$.\par\qquad\,\,
-%\Or Because $g=0\in V_b\Rightarrow\int_0^1 g=0=b$.\par\quad
-%(b) Suppose $b=0$. $\forall f,g\in V_b=V_0,\lambda\in\Rbb,\int_0^1(f+\lambda g)=\int_0^1 f+\int_0^1 g=0.\hfill\square$
-%\par
-%\ProblemEnding\par
-
-%
-%\ProblemN{5} {\timessl\Large Is  {\timesbf R}$^2$ a subsp of the complex vecsp $\Cbb^2$?}
-%\,\,\,{\timesbf A\footnotesize{NSWER:}}\,\,\,No. $\Rbb^2$ is not closed on scalar multi on {\timesbf C}.\par
-%\ProblemEnding\tinypar
-%
-%\ProblemN{6}
-%(a) {\timessl\Large Is $\left\{(a,b,c)\in\Rbb^3:a^3=b^3\right\}$ a subsp of $\Rbb^3$?
-%}\,\,
-%{\timesbf A\footnotesize{NSWER:}}\,\,\,True. ( note that $a^3=b^3\Leftrightarrow a=b$ ).\par\,\,\,\,
-%(b) {\timessl\Large Is $\left\{(a,b,c)\in\Cbb^3:a^3=b^3\right\}$ a subsp of $\Cbb^3$?
-%}\,\,
-%{\timesbf A\footnotesize{NSWER:}}\,\,\,No. Note that $(\displaystyle\frac{-1\pm \sqrt{3}\i}{2})^3=1$.\par
-%\ProblemEnding\tinypar
+\clearpage
+\ChapterDecl{Ch1C}{1$\cdot$C}
 
 \ProblemN{7}{
-	\TextN{Prove or give a counterexample: If $\varnothing\neq U\subseteq\Rbb^2$ and $U$ is closed under}
-	\TextN{taking add invs and under add, then $U$ is a subsp of $\Rbb^2.$}
-}Let $U=\Zbb^2,(\Zbb^*)^2$, $(\Qbb^*)^2,\Qbb^2\backslash\left\{0\right\}$, or $\Rbb^2\backslash\left\{0\right\}$.\par\quad
-\ProblemEnding\par
+	\TextN{Give a nontrivial example of $U\subseteq\Rbb^2,$}
+	\TextN{$U$ is closed under taking add invs and under add, but $U$ is not a subsp of $\Rbb^2.$}
+}Let $U=\Zbb^2,(\Zbb^*)^2$, $(\Qbb^*)^2,\Qbb^2\backslash\left\{0\right\}$, or $\Rbb^2\backslash\left\{0\right\}$.\vspace{6pt}\par
 \ProblemN{8}{
-	\TextN{Give an example of $U\subseteq\Rbb^2$ such that $U$ is closed under scalar multi,}
-	\TextN{but $U$ is not a subsp of $\Rbb^2$.}
-}Let $U=\left\{(x,y)\in\Rbb^2:x=0\vee y=0\right\}.$ \Or Let $U=\left\{(x,0)\in\Rbb^2\right\}\cup\left\{(0,y)\in\Rbb^2\right\}.$\par
+	\TextN{Give a nontrivial example of $U\subseteq\Rbb^2,$}
+	\TextN{$U$ is closed under scalar multi, but $U$ is not a subsp of $\Rbb^2$.}
+}Let $U=\left\{(x,y)\in\Rbb^2:x=0\vee y=0\right\}.$\par
 \ProblemEnding\par
 
 \ProblemN{9}{
-	\TextN{A function $f:\Rbb\rightarrow\Rbb$ is called periodic if there exists $p\in\Nbp$}
-	\TextN{such that $f(x)=f(x+p)$ for all $x\in\Rbb.$}
+	\TextN{A function $f:\Rbb\rightarrow\Rbb$ is called periodic if $\,\exists\,p\in\Nbp,f(x)=f(x+p)$ for all $x\in\Rbb.$}
 	\TextN{Is the set of periodic functions from $\Rbb$ to $\Rbb$ a subsp of $\Rbb^\Rbb$ ? Explain.}
 }Denote the set by $S$.\par\quad
-Suppose $h(x)=\sin\sqrt{2}x+\cos x\in S$, since $\sin\sqrt{2}x,\cos x\in S$.\par\quad
+Suppose $h(x)=\cos(x)+\sin(\sqrt{2}x)\in S$, since $\cos(x),\sin(\sqrt{2}x)\in S$.\par\quad
 Assume $\,\exists\,\,p\in\Nbp$ such that $h(x)=h(x+p),\forall x\in\Rbb.$ Let $x=0\Rightarrow h(0)=h(\pm p)=1$.\par\quad
-Thus $1=\cos p+\sin\sqrt{2}p=\cos p-\sin\sqrt{2}p$\par\quad
-$\Rightarrow\sin\sqrt{2}p=0,\,\,\cos p=1\Rightarrow p=2k\pi,k\in$ {\timesbf Z}\,, while $p=\displaystyle\frac{m\pi}{\sqrt{2}},m\in$ {\timesbf Z}\,.\par\quad
-Hence $2k=\displaystyle\frac{m}{\sqrt{2}}\Rightarrow \sqrt{2}=\displaystyle\frac{m}{2k}\in$ {\timesbf Q}\,. Contradiction!$\hfill\square$\par
-\vspace{4pt}
+Thus $1=\cos(p)+\sin(\sqrt{2}p)=\cos(p)-\sin(\sqrt{2}p)$\par\quad
+$\Rightarrow\sin(\sqrt{2}p)=0,\,\,\cos(p)=1\Rightarrow p=2k\pi,k\in\Zbb$, while $p=\displaystyle\frac{m\pi}{\sqrt{2}},m\in\Zbb$.\par\quad
+Hence $2k=\displaystyle\frac{m}{\sqrt{2}}\Rightarrow \sqrt{2}=\displaystyle\frac{m}{2k}\in\Qbb$. Contradiction!$\hfill\square$\vspace{10pt}\par\quad
+\Or Because $[\textup{\timesbf{I}}]: \cos(x)+\sin(\sqrt{2}x)=\cos(x+p)+\sin(\sqrt{2}x+\sqrt{2}p).$ By differentiating twice,\par\qquad\qquad\qquad\hspace{0pt}
+$[\textup{\timesbf{II}}]: \cos(x)+2\sin(\sqrt{2}x)=\cos(x+p)+2\sin(\sqrt{2}x+\sqrt{2}p).$\par\vspace{2pt}\quad
+$\MathRightBrace{r}{
+	[\textup{\timesbf{II}}]-[\textup{\timesbf{I}}]:\sin(\sqrt{2}x)=\sin(\sqrt{2}x+\sqrt{2}p)\vspace{2pt}\\\, 
+	2[\textup{\timesbf{I}}]-[\textup{\timesbf{II}}]:\qquad\quad\,\, \cos(x)=\cos(x+p)}\Rightarrow p=\displaystyle\frac{m\pi}{\sqrt{2}}=2k\pi,$ if $x=0.$ Contradicts.$\hfill\square$\vspace{10pt}\par
+\ProblemEnding\par\vspace{10pt}
+
+\BulletPoint \,\hspace{1pt}{\timessl\Large Suppose $U,W,V_1,V_2,V_3$ are subsps of $V.$}\par
+\Onumber{15}\,\, \centerline{\large\timesnr$U+U\ni u+w\in U.$\qquad\qquad\!}$\hfill\square$\par
+\Onumber{16}\,\, \centerline{\large\timesnr$U+W\ni u+w=w+u\in W+U.$}$\hfill\square$\par
+\Onumber{17}\,\, \centerline{\large\timesnr$(V_1+V_2)+V_3\ni(v_1+v_2)+v_3=v_1+(v_2+v_3)\in V_1+(V_2+V_3).$}$\hfill\square$\par
+\ProblemEnding\par
+
+
+\ProblemN{18}{
+	\TextNL{Does the add on the subsps of $V$ have an add identity? Which subsps have add invs?}
+}\par\quad
+(a) Suppose $\Omega$ is the additive identity.\par\quad\Ha
+For any subsp $U$ of $V$. $\Omega\subseteq U+\Omega=U\Rightarrow\Omega\subseteq U$. Let $U=\{0\},$ then $\Omega=\{0\}.$\par\quad
+(b) Now suppose $W$ is an add inv of $U\Rightarrow U+W=\Omega$.\par\quad\Hb
+Note that $U+W\supseteq U,W\Rightarrow \Omega\supseteq U,W$. Thus $U=W=\Omega=\{0\}.\hfill\square$\par
 \ProblemEnding\par
 
 \ProblemN{11}{
 	\TextNL{Prove that the intersection of every collection of subsps of $V$ is a subsp of $V$.}
-}\par\quad
-Suppose $\left\{U_\alpha\right\}_{\alpha\in\Gamma}$ is a collection of subsps of $V$; here $\Gamma$ is an arbitrary index set.\par\quad
-We need to prove that $\bigcap_{\alpha\in\Gamma}U_\alpha,$ which equals the set of vectors that are in $U_\alpha$ for each $\alpha\in\Gamma$,\par\qquad\qquad\qquad\qquad\qquad\,\,\, is a subsp of $V$.\par\vspace{6pt}\,
+}Suppose $\left\{U_{\alpha}\right\}_{\alpha\in\Gamma}$ is a collection of subsps of $V$; here $\Gamma$ is an arbitrary index set.\par\quad
+We show that $\bigcap_{\alpha\in\Gamma}U_\alpha,$ which equals the set of vecs that are in $U_\alpha$ for each $\alpha\in\Gamma$, is a subsp of $V$.\par\vspace{6pt}\,
 $\begin{array}{l}$
 (一) $0\in\bigcap_{\alpha\in\Gamma}U_\alpha.$ Nonempty.$\\ $
 (二) $u,v\in\bigcap_{\alpha\in\Gamma}U_\alpha\Rightarrow u+v\in U_\alpha,\,\,\forall\alpha\in\Gamma\Rightarrow u+v\in\bigcap_{\alpha\in\Gamma}U_\alpha$. Closed under add.$\\ $
 (三) $u\in\bigcap_{\alpha\in\Gamma}U_\alpha,\lambda\in$ {\timesbf F} $\Rightarrow\lambda u\in U_\alpha,\,\,\forall\alpha\in\Gamma\Rightarrow\lambda u\in\bigcap_{\alpha\in\Gamma}U_\alpha$. Closed under scalar multi.
 $\end{array}$\par\vspace{6pt}\quad
-Thus $\bigcap_{\alpha\in\Gamma}U_\alpha$ is nonempty subset of $V$ that is closed under add and scalar multi.\par\quad
-Hence $\bigcap_{\alpha\in\Gamma}U_\alpha$ is a subsp of $V.\hfill\square$
-\par
+Thus $\bigcap_{\alpha\in\Gamma}U_\alpha$ is nonempty subset of $V$ that is closed under add and scalar multi.$\hfill\square$\par
 \ProblemEnding\par
 
 \ProblemN{12}{
-	\TextNL{Prove that the union of two subsps of \,$V$ is a subsp of \,$V$}
-	\TextNL{if and only if one of the subsps is contained in the other.}
-}Suppose $U$ and $W$ are subsps of \,$V$.\par\quad
+	\TextNL{Suppose $U,W$ are subsps of \,$V.$ Prove that $U\cup W$ is a subsp of \,$V\Longleftrightarrow U\subseteq W$ or $W\subseteq U$.}
+}\par\quad
 (a) Suppose $U\subseteq W$. Then $U\cup W=W$ is a subsp of \,$V$.\par\quad
 (b) Suppose $U\cup W$ is a subsp of $V$. Suppose $U\not\subseteq W$ and $U\not\supseteq W$ ( $U\cup W\neq U$ and $W$ ).\par\quad\Hb
 Then $\forall a\in U$ but $a\not\in W;\,\,\,b\in W$ but $b\not\in U.\,\,a+b\in U\cup W$.\par\vspace{6pt}\qquad
@@ -403,7 +394,8 @@ Thus $U\subseteq W$ and $U\supseteq W.\hfill\square$\par
 	\TextNL{\dbsp Prove that the union of three subsps of \,$V$ is a subsp of \,$V$}
 	\TextNL{\dbsp if and only if one of the subsps contains the other two.}
 	{\timessl\normalsize\dbsp This exercise is not true if we replace {\timesbf F} with a field containing only two elements.}\par\quad
-}Suppose $U_1,U_2,U_3$ are subsps of $V$. Denote $U_1\cup U_2\cup U_3$ by $\mathcal{U}.$\par\quad
+}\par\quad
+Suppose $U_1,U_2,U_3$ are subsps of $V$. Denote $U_1\cup U_2\cup U_3$ by $\mathcal{U}.$\par\quad
 (a) \dbsp Suppose that one of the subsps contains the other two.\par\quad\Ha
 \dbsp Then $\mathcal{U}=U_1,U_2$ or $U_3$ is a subsp of $V.$\par\quad
 (b) Suppose that $U_1\cup U_2\cup U_3$ is a subsp of $V$.\par\quad\Hb
@@ -423,7 +415,7 @@ $\forall v+\lambda u\in W,\,\exists\,i\in\{2,3\},v+\lambda u\in U_i.$\par\quad\H
 Because $U_2,U_3$ are subsps and hence have at least one element.\par\quad\Hb\HII
 If $U_2=U_3,$ then $\mathcal{U}=U_1\cup U_2$ and by Problem (12) we are done.\par\quad\Hb\HII
 Otherwise, $\,\exists\,\lambda,\mu\in\Fbb$ with $\lambda\neq\mu$ such that $v+\lambda u,v+\mu u\in U_i$ for some $i\in\{2,3\}.$\par\quad\Hb\HII
-Then $u\in U_i$ while $u\not\in U_2\cup U_3.$ Contradicts.$\hfill\square$\par
+Then $u\in U_i$ while $u\not\in U_2\cup U_3.$ Contradicts.\large$\hfill\square$\par
 \ProblemEnding\par
 
 %{\small $\bullet$} {\timessl\Large 
@@ -436,43 +428,6 @@ Then $u\in U_i$ while $u\not\in U_2\cup U_3.$ Contradicts.$\hfill\square$\par
 %(b) $U+W$ is a plane of which $(1,0,2),(0,1,0)$ is a basis.$\hfill\square$\par
 %\ProblemEnding\par
 
-\ProblemN{15}{
-	\TextNL{Suppose $U$ is a subsp of $V$. What is $U+U$?}
-}$\MathRightBrace{r}{$
-$\forall x,y\in U,x+y\in U\Rightarrow U+U\subseteq U\,\,\\ \forall x\in U,0\in U,x+0\in U+U\Rightarrow U\subseteq U+U$
-$}\Rightarrow U+U=U.\hfill\square$\par\vspace{6pt}
-\ProblemEnding\par
-
-\ProblemN{16}{
-	\TextNL{Suppose $U$ and $W$ are subsps of $V$. Prove that $U+W=W+U$?}
-}$\forall x\in U,y\in W$,
-$\MathRightBrace{l}{
-x+y=y+x\in W+U\Rightarrow U+W\subseteq W+U \\
-y+x=x+y\in U+W\Rightarrow W+U\subseteq U+W
-}\Rightarrow U+W=W+U.\hfill\square$\par
-\vspace{6pt}
-\ProblemEnding\par
-
-\ProblemN{17}{
-	\TextNL{Suppose $V_1,V_2,V_3$ are subsps of $V$. Prove that $(V_1+V_2)+V_3=V_1+(V_2+V_3)$.}
-}\par\quad
-Let $x\in V_1, y\in V_2, z\in V_3.$ Denote $(V_1+V_2)+V_3$ by $L$, $V_1+(V_2+V_3)$ by $R$. \par\,\,
-{$\MathRightBrace{l}{
-\forall u\in L,\,\,\exists\,\,x,y,z,\,\,u=(x+y)+z=x+(y+z)\in R\Rightarrow L\subseteq R\\
-\forall u\in R,\,\,\exists\,\,x,y,z,\,\,u=x+(y+z)=(x+y)+z\in L\Rightarrow R\subseteq L
-}\Rightarrow L=R.\hfill\square$}\par
-\vspace{6pt}
-\ProblemEnding\par
-
-\ProblemN{18}{
-	\TextNL{Does the operation of add on the subsps of $V$ have an additive identity?}
-	\TextNL{Which subsps have add invs?}
-}Suppose $\Omega$ is the additive identity.\par\quad
-For any subsp $U$ of $V$. $\Omega\subseteq U+\Omega=U\Rightarrow\Omega\subseteq U$. Let $U=\{0\},$ then $\Omega=\{0\}.$\par\quad
-Now suppose $W$ is an add inv of $U\Rightarrow U+W=\Omega$.\par\quad
-Note that $U+W\supseteq U,W\Rightarrow \Omega\supseteq U,W$. Thus $U=W=\Omega=\{0\}.\hfill\square$\par
-\ProblemEnding\par
-
 %\ProblemN{19} {\timessl\Large 
 %Prove or give a counterexample: If $V_1,V_2,U$ are subsps of $V$ such that $V_1+U=V_2+U$, then $V_1=V_2$.
 %}\par
@@ -482,23 +437,24 @@ Note that $U+W\supseteq U,W\Rightarrow \Omega\supseteq U,W$. Thus $U=W=\Omega=\{
 %\par
 %\ProblemEnding\par
 
-\ExampleX{
+\ExampleXnosolus{
 	\TextE{Suppose $U=\left\{(x,x,y,y)\in\Fbb^4:x,y\in\Fbb\right\},W=\left\{(x,x,x,y)\in\Fbb^4:x,y\in\Fbb\right\}.$}
 	\TextE{Prove that $U+W=\left\{(x,x,y,z)\in\Fbb^4:x,y,z\in\Fbb\right\}$.}
-}Let T denote $\left\{(x,x,y,z)\in\Fbb^4:x,y,z\in\Fbb\right\}$.\par\quad
-(a) By def, $U+W=\left\{(x_1+x_2,x_1+x_2,y_1+x_2,y_1+y_2)\in\Fbb^4:(x_1,x_1,y_1,y_1)\in U,(x_2,x_2,x_2,y_2)\in W\right\}$.\par\quad\Ha
-$\Rightarrow\forall v\in U+W,\,\exists\,t\in T,v=t\Rightarrow U+W\subseteq T$.\par\quad
-(b) $\forall x,y,z\in\Fbb,$ let $u=(0,0,y-x,y-x)\in U,w=(x,x,x,-y+x+z)\in W$\par\quad\Hb
-$\Rightarrow (x,x,y,z)=u+w\in U+W$. Hence $\forall t\in T,\,\exists\,u\in U,w\in W,t=u+w\Rightarrow T\subseteq U+W.\hfill\square$\par
+}\par\quad
+Let T denote $\left\{(x,x,y,z)\in\Fbb^4:x,y,z\in\Fbb\right\}$. By def, $U+W\subseteq T.$\par\quad
+And $T\ni(x,x,y,z)\Rightarrow(0,0,y-x,y-x)+(x,x,x,-y+x+z)\in U+W$. Hence $T\subseteq U+W.\hfill\square$\par
 \ProblemEnding\par
 
 \ProblemN{21}{
-	\TextNL{Suppose $U=\left\{(x,y,x+y,x-y,2x)\in\Fbb^5:x,y\in\Fbb\right\}$.}
-	\TextNL{Find a subsp $W$ of $\Fbb^5$ such that $\Fbb^5=U\oplus W$.}
+	\TextNL{Suppose $U=\left\{(x,y,x+y,x-y,2x)\in\Fbb^5:x,y\in\Fbb\right\}$. Find a $W$ such that $\Fbb^5=U\oplus W$.}
 }\par\quad
-(a) Let $W=\left\{(0,0,z,w,u)\in\Fbb^5:z,w,u\in\Fbb\right\}$. Then $W\cap U=\{0\}$.\par\quad
-(b) $\forall x,y,z,w,u\in\Fbb,$ let $u=(x,y,x+y,x-y,2x)\in U,w=(0,0,z-x-y,w-x-y,u-2x)\in W$\par\quad\Hb
-$\Rightarrow (x,y,z,w,u)=u+w\Rightarrow$ {\timesbf F}$^5\subseteq U+W.\hfill\square$\par
+Let $W=\left\{(0,0,z,w,u)\in\Fbb^5:z,w,u\in\Fbb\right\}$. Then $U\cap W=\{0\}$.\par\quad
+And $\Fbb^5\ni(x,y,z,w,u)\Rightarrow(x,y,x+y,x-y,2x)+(0,0,z-x-y,w-x-y,u-2x)\in U+W.\hfill\square$\par
+\ProblemEnding\par
+
+\ProblemN{23}{
+	\TextNL{Give an example of vecsps $V_1,V_2,U$ such that $V_1\oplus U=V_2\oplus U$, but $V_1\neq V_2$.}
+}$V=\Fbb^2$,  $U=\left\{(x,x)\in\Fbb^2:x\in\Fbb\right\}$, $V_1=\left\{(x,0)\in\Fbb^2:x\in\Fbb\right\}$, $V_2=\left\{(0,x)\in\Fbb^2:x\in\Fbb\right\}$.\par
 \ProblemEnding\par
 
 \ProblemN{22}{
@@ -515,28 +471,17 @@ Let $U_3=U_2\oplus W_3$. Then $U_3=\left\{(x,y,z,w,u)\in\Fbb^5:x,y,z,w,u\in\Fbb\
 Thus $\Fbb^5=\left((U\oplus W_1)\oplus W_2\right)\oplus W_3.\hfill\square$\par
 \ProblemEnding\par
 
-\ProblemN{23}{
-	\TextNL{Prove or give a counterexample: If $V_1,V_2,U$ are subsps of $V$ such that}
-	\TextNL{$V=V_1\oplus U$ and $V=V_2\oplus U$, then $V_1=V_2$.}
-}A counterexample:\par\quad
-$V=\Fbb^2$,  $U=\left\{(x,x)\in\Fbb^2:x\in\Fbb\right\}$, $V_1=\left\{(x,0)\in\Fbb^2:x\in\Fbb\right\}$, $V_2=\left\{(0,x)\in\Fbb^2:x\in\Fbb\right\}$.\par
-\ProblemEnding\par
-
 \ProblemN{24}{
-	\TextNL{Let $V_E$ denote the set of real-valued even functions on $\Rbb$}
-	\TextNL{and let $V_O$ denote the set of real-valued odd functions on $\Rbb$. Show that $\Rbb^\Rbb=V_E\oplus V_O$.}
+	\TextNL{Let $V_E=\left\{\,f\in\Rbb^{\Rbb}:f(x)=f(-x)\right\},V_O=\left\{\,f\in\Rbb^{\Rbb}:-f(x)=f(-x)\right\}.$}
+	\TextNL{Show that $V_E\oplus V_O=\Rbb^\Rbb$.}
 }\par\quad
-(a) { $V_E\cap V_O=\left\{f:f(x)=f(-x)=-f(-x)\right\}=\{0\}.$}\par\vspace{6pt}\quad
-(b){$\MathRightBrace{r}{$
-$\,\,\,\,\,f_e\in V_E\Leftrightarrow f_e(x)=f_e(-x)\Leftarrow$  let $f_e(x)=\displaystyle\frac{g(x)+g(-x)}{2}\\ $
-$f_o\in V_O\Leftrightarrow f_o(x)=-f_o(-x)\Leftarrow$ let $f_o(x)=\displaystyle\frac{g(x)-g(-x)}{2}$
-$}\Rightarrow \forall g\in\Rbb^\Rbb,g(x)=f_e(x)+f_o(x).\hfill\square$}\par
+(a) { $V_E\cap V_O=\left\{\,f\in\Rbb^{\Rbb}:f(x)=f(-x)=-f(-x)\right\}=\{0\}.$}\par\vspace{6pt}\quad
+(b){$\MathRightBrace{r}{f_e\in V_E\Longleftrightarrow f_e(x)=f_e(-x)\Longleftarrow$  let $f_e(x)=\displaystyle\frac{g(x)+g(-x)}{2}\vspace{4pt}\\ f_o\in V_O\Longleftrightarrow f_o(x)=-f_o(-x)\Longleftarrow$ let $f_o(x)=\displaystyle\frac{g(x)-g(-x)}{2}}\Rightarrow \forall g\in\Rbb^\Rbb,g(x)=f_e(x)+f_o(x).\hfill\square$}\vspace{6pt}\par
 \ProblemEnding\par
 \ChapterEnding
-{\,}\par$\\\\\\ $
-\ChapterDecl{2$\cdot$A} %2h
 
-$\\ $
+\ChapterDecl{Ch2A}{2$\cdot$A}
+
 \ProblemN{2}{
 	(a) \TextN{A list $(v)$ of length $1$ in $V$ is linely inde $\Longleftrightarrow v\neq 0.$}
 	(b) \TextN{A list $(v,w)$ of length $2$ in $V$ is linely inde $\Longleftrightarrow\forall\lambda,\mu\in\Fbb,v\neq \lambda w,w\neq \mu v.$}
@@ -560,8 +505,8 @@ Hence the list $(v_1-v_2,v_2-v_3,v_3-v_4,v_4)$ also spans V.$\hfill\square$
 \ProblemEnding\par
 
 \ProblemN{6}{
-	\TextN{Suppose $(v_1,v_2,v_3,v_4)$ is linearly independent in V.}
-	\TextN{Prove that the list $(v_1-v_2,v_2-v_3,v_3-v_4,v_4)$ is also linearly independent.}
+	\TextN{Suppose $(v_1,v_2,v_3,v_4)$ is linely inde in V.}
+	\TextN{Prove that the list $(v_1-v_2,v_2-v_3,v_3-v_4,v_4)$ is also linely inde.}
 }$a_1(v_1-v_2)+a_2(v_2-v_3)+a_3(v_3-v_4)+a_4 v_4=0$\par\qquad\quad\,\,\,\,
 $\Rightarrow a_1 v_1+(a_2-a_1)v_2+(a_3-a_2)v_3+(a_4-a_3)v_4=0$\par\quad\qquad\,\,\,\,
 $\Rightarrow a_1=a_2-a_1=a_3-a_2=a_4-a_3=0\Rightarrow a_1=\dots=a_4=0.\hfill\square$
@@ -569,7 +514,7 @@ $\Rightarrow a_1=a_2-a_1=a_3-a_2=a_4-a_3=0\Rightarrow a_1=\dots=a_4=0.\hfill\squ
 \ProblemEnding\par
 
 \ProblemN{7}{
-	\TextN{Prove that if $(v_1,v_2,\dots,v_m)$ is a linely independent list of vectors in $V$,}
+	\TextN{Prove that if $(v_1,v_2,\dots,v_m)$ is a linely inde list of vecs in $V$,}
 	\TextN{then $(5v_1-4v_2,v_2, v_3,\dots,v_m)$ is linely indep.}
 }$a_1(5v_1-4v_2)+a_2 v_2+a_3 v_3+a_4 v_4=0$\par\qquad\quad\,\,\,\,
 $\Rightarrow 5a_1 v_1+(a_2-4a_1)v_2+a_3 v_3+a_4 v_4=0$\par\qquad\quad\,\,\,\,
@@ -577,7 +522,7 @@ $\Rightarrow 5a_1=a_2-4a_1=a_3=a_4=0\Rightarrow a_1=\dots=a_4=0\hfill\square$\pa
 \ProblemEnding\par
 
 \ProblemB{
-	\TextB{Suppose $(v_1,\dots,v_m)$ is a list of vectors in $V$. For $k\in\{1,\dots,m\}$, let $w_k=v_1+\dots+v_k$.}
+	\TextB{Suppose $(v_1,\dots,v_m)$ is a list of vecs in $V$. For $k\in\{1,\dots,m\}$, let $w_k=v_1+\dots+v_k$.}
 	(a) \TextB{Show that $\Spn(v_1,\dots,v_m)$ = $\Spn(w_1,\dots,w_m)$.}
 	(b) \TextB{Show that $(v_1,\dots,v_m)$ is linely inde $\Longleftrightarrow$ $(w_1,\dots,w_m)$ is linely inde.}
 }\par\quad
@@ -645,10 +590,9 @@ Hence $(p_0,p_1,\dots,p_m)$ is linely depe in $\PoF{m}$.\par\quad
 For if not, notice that the list $(1,z,\dots,z^m)$ spans $\PoF{m}$,\par\qquad\qquad\quad\,\,
 thus by [2.23], $(p_0,p_1,\dots,p_m)$ spans $\PoF{m}$. Contradicts.$\hfill\square$\par
 \ProblemEnding\par
-
 \ChapterEnding
 
-\ChapterDecl{2$\cdot$B} %1h
+\ChapterDecl{Ch2B}{2$\cdot$B}
 
 \BulletPoint \,\hspace{1pt}\NoteFor{\timessl linely inde sequence and [2.34]}\TextB{}
 $“V=\Spn(v_1,\dots,v_n,\dots)”$ is an invalid expression.\TextB{}
@@ -685,10 +629,10 @@ And $U=\left\{(x,y,z,0)\in\Rbb^4:x,y,z\in\Fbb\right\}$. We have a counterexample
 
 \ProblemB{
 	\TextB{Suppose $V$ is finite-dim and $U$, $W$ are subsps of \,$V$ such that $V=U+W$.}
-	\TextB{Prove that there exists a basis of \,$V$ consisting of vectors in $U\cup W$.}
+	\TextB{Prove that there exists a basis of \,$V$ consisting of vecs in $U\cup W$.}
 }Let $(u_1,\dots,u_m)$ and $(w_1,\dots,w_n)$ be bases of $U$ and $W$ respectively.\par\quad
 Then $V=\Spn(u_1,\dots,u_m)+\Spn(w_1,\dots,w_n)=\Spn(u_1,\dots,u_m,w_1,\dots,w_n)$.\par\quad
-Hence, by [2.31], we get a basis of \,$V$ consisting of vectors in $U$ or $W.\hfill\square$\par
+Hence, by [2.31], we get a basis of \,$V$ consisting of vecs in $U$ or $W.\hfill\square$\par
 \ProblemEnding\par
 
 \ProblemN{8}{
@@ -710,7 +654,8 @@ $\Rightarrow\,u+\i v=c_1 v_1+\dots+c_n v_n,\,\exists\,!\,c_i=a_i+b_i\i\in\Cbb$ \
 $\Rightarrow$ By the uniqnes of $c_i$ and [2.29], $(v_1,\dots,v_n)$ is a basis of $V_\Cbb.\hfill\square$\par
 \ProblemEnding\par
 \ChapterEnding
-\ChapterDecl{2$\cdot$C} %2.5h
+
+\ChapterDecl{Ch2C}{2$\cdot$C}
 
 \Onumber{1} \TextN{Suppose $V$ is finite-dim and $U$ is a subsp of \,$V$ such that $\dim V=\dim U$.}
 \TextN{\timesnr Let $(u_1,\dots,u_m)$ be a basis of $U$. Then $n=\dim U=\dim V.$ 又 $u_i\in V$.}
@@ -849,11 +794,10 @@ For example, $X=\left\{(x,0)\in\Rbb^2:x\in\Rbb\right\},Y=\left\{(0,y)\in\Rbb^2:y
 }\par
 \AlignEq{\hspace{20pt}}{\dim(V_1+V_2+V_3)=\dim &\,V_1+\dim V_2+\dim V_3\\&-\displaystyle\frac{\dim(V_1\cap V_2)+\dim(V_1\cap V_3)+\dim(V_2\cap V_3)}{3}\\&-\displaystyle\frac{\dim\left((V_1+V_2)\cap V_3\right)+\dim\left((V_1+V_3)\cap V_2\right)+\dim\left((V_2+V_3)\cap V_1\right)}{3}.}\par\quad
 {\timessl The formula above may seem strange because the right side does not look like an integer.$\hfill\square$}\par
-\par
 \ProblemEnding\par
 \ChapterEnding
 
-\ChapterDecl{3$\cdot$A} %2h
+\ChapterDecl{Ch3A}{3$\cdot$A}
 
 %\ProblemN{2} {\timessl\Large 
 %Suppose $b,c\in\Rbb$. Define $T:\PoR{}\rightarrow$ $\Rbb^2$ by}\par\,\,\,
@@ -888,7 +832,7 @@ $T(0,0,0,\dots,0,1)=(A_{1,n},\dots,A_{m,n}).$\par
 \ProblemEnding\par
 
 \ProblemN{4}{
-	\TextN{Suppose $T\in\Lm(V,W)$ and $(v_1,\dots,v_m)$ is a list of vectors in $V$ such that}
+	\TextN{Suppose $T\in\Lm(V,W)$ and $(v_1,\dots,v_m)$ is a list of vecs in $V$ such that}
 	\TextN{$(Tv_1,\dots,Tv_m)$ is linely inde in $W$. Prove that $(v_1,\dots,v_m)$ is linely inde.}
 }Suppose $a_1 v_1+\dots+a_m v_m=0$. Then $a_1 Tv_1+\dots+a_m Tv_m=0$. Thus $a_1=\dots=a_m=0.\square$\par
 \ProblemEnding\par
@@ -903,7 +847,7 @@ $T(0,0,0,\dots,0,1)=(A_{1,n},\dots,A_{m,n}).$\par
 	\TextN{is multi by some scalar. More precisely, prove that if $\dim V = 1$ and $T\in\Lm(V)$,}
 	\TextN{then there exists $\lambda\in\Fbb$ such that $Tv = \lambda v$ for all $v\in V$.}
 }\par\quad
-Let $u$ be a nonzero vector in $V\Rightarrow V=\Spn(u)$.\par\quad
+Let $u$ be a nonzero vec in $V\Rightarrow V=\Spn(u)$.\par\quad
 Because $Tu\in V\Rightarrow Tu=\lambda u$ for some $\lambda$.\par\quad
 Suppose $v\in V\Rightarrow v=au,\,\,\exists\,!\,a\in\Fbb$. Then $Tv=T(au)=\lambda au=\lambda v.\hfill\square$\par
 \ProblemEnding\par
@@ -940,13 +884,13 @@ Define $\varphi(u\,+\i v)=u=\mathfrak{Re}\,(u\,+\i v)$\par\quad
 If $V=\{0\},$ then we are done. Now suppose $V\neq\{0\}.$\par\quad
 Assume that $(v,Tv)$ is linely depe for every $v\in V$, then by (2.A.2.(b)), $Tv=\lambda_v v$ for some $\lambda_v\in\Fbb.$\par\quad
 To prove that $\lambda_v$ is independent of $v$\par\quad
-( in other words, for any two distinct nonzero vectors $v$ and $w$ in V, we have $\lambda_v\neq\lambda_w$ ), we discuss in two cases:\par\quad
+( in other words, for any two distinct nonzero vecs $v$ and $w$ in V, we have $\lambda_v\neq\lambda_w$ ), we discuss in two cases:\par\quad
 $\MathRightBrace{l}{$
 $(-)$ If $(v,w)$ is linely inde, $\lambda_{v+w}(v+w)=T(v+w)=Tv+Tw=a_v v+a_w w\\ $\qquad\qquad\qquad\qquad\qquad\qquad\qquad $\Rightarrow (\lambda_{v+w}-\lambda_v)v+(\lambda_{v+w}-\lambda_w)w=0\\ $
 $(=)$ Otherwise, suppose $w=cv$, $a_w w=Tw=cTv=ca_v v=a_v w\Rightarrow(a_w-a_v)w$
 $}\Rightarrow a_w=a_v.$\par\quad
 Now we prove the assumption by contradiction.\par\quad
-Suppose $(v,Tv)$ is linely inde for every nonzero vector $v\in V$.\par\quad
+Suppose $(v,Tv)$ is linely inde for every nonzero vec $v\in V$.\par\quad
 Fix one $v$. Extend to $(v,Tv,u_1,\dots,u_n)$ a basis of $V$.\par\quad
 Define $S\in\Lm(V)$ by $S(av+bTv+c_1 u_1+\dots+c_n u_n)=bv\Rightarrow S(Tv)=v=T(Sv)=0.$ Contradicts.$\hfill\square$\par\vspace{6pt}\quad
 \Or \,\dbsp Let $(v_1,\dots,v_m)$ be a basis of $V.$\par\qquad\quad
@@ -990,7 +934,7 @@ Thus $(T_{x,1},\dots,T_{x,m})$ is a linely inde list in $\Lm(V,W)$ for any $x$ a
 
 
 \ProblemN{13}{
-	\TextNL{Suppose $(v_1,\dots,v_m)$ is a linely depe list of vectors in $V$.}
+	\TextNL{Suppose $(v_1,\dots,v_m)$ is a linely depe list of vecs in $V$.}
 	\TextNL{Suppose also that $W\neq\{0\}$. Prove that there exist $(w_1,\dots,w_m)\in W$}
 	\TextNL{such that no $T\in\Lm(V, W)$ satisfies $Tv_k=w_k$ for each $k = 1,\dots,m$.}
 }\par\quad
@@ -1021,10 +965,9 @@ Getting $(\displaystyle\frac{1}{a_k}T_{1,1}+\dots+\frac{1}{a_k}T_{n,n})v_j=v_j\R
 又 By assumption, $T_{x,y}\in\mathcal{E}\Rightarrow I\in\mathcal{E}.$\par\quad
 Hence for any $T\in\Lm(V),I\circ T=T\circ I=T\in\mathcal{E}\Rightarrow \mathcal{E}=\Lm(V).\hfill\square$\par\large
 \ProblemEnding\par
-
 \ChapterEnding
-%$\\\\\\\\\\\\\\\\\\\\\\ $
-\ChapterDecl{3$\cdot$B} %4h
+
+\ChapterDecl{Ch3B}{3$\cdot$B}
 
 \ProblemN{2}{
 	\TextN{Suppose $S,T\in\Lm(V)$ are such that $\range S\subseteq\null T$. Prove that $(ST)^2=0$.}
@@ -1201,7 +1144,7 @@ Define $R\in\Lm(\null ST,V)$ by $Ru=Tu$ for all $u\in\null ST\subseteq U.$\par\q
 $\MathRightBrace{r}{$
 $S(Tu)=0=S(Ru)\Rightarrow\range R\subseteq\null S\Rightarrow\dim\range R\leq\dim\null S\\ $
 $Tu=0=Ru\Rightarrow\null R\supseteq\null T\Rightarrow\dim\null R=\dim\null T$
-$}\Rightarrow\square$\par{\small\,\par}\quad
+$}\Rightarrow\square$\par\vspace{10pt}\quad
 \Or For any $u\in U,$ note that $u\in\null ST\Longleftrightarrow S(Tu)=0\Longleftrightarrow Tu\in\null S.$\par\quad
 Thus $\null ST=\mathcal{K}_{\null S\cap\range T}=\left\{u\in U:Tu\in\null S\right\}.$ By Problem (4E 3B.21),\par\quad
 $\dim\null ST=\dim\null T+\dim(\null S\cap\range T)\leq\dim\null T+\dim\null S.\hfill\square$\par
@@ -1306,7 +1249,7 @@ Then $D\left(\sum\limits_{k=0}^{\deg p}a_k p_k\right)=\sum\limits_{k=0}^{\deg p}
 \ProblemEnding\par
 
 \ProblemN{27}{
-	\TextNL{Suppose $p\in\PoR{}$. Prove that there exists a poly $q\in\PoR{}$ such that $5q\apostrophe\apostrophe + 3q\apostrophe = p$.}
+	\TextNL{Suppose $p\in\PoR{}$. Prove that $\,\exists\,q\in\PoR{}$ such that $5q\apostrophe\apostrophe + 3q\apostrophe = p$.}
 }\par\quad
 Define $B\in\Lm(\PoR{})$ by $B=5D^2+3D\Rightarrow B(q)=5q\apostrophe\apostrophe+3q\apostrophe$.\par\quad
 Note that $\deg B x^n=n-1.$ Similar to Problem (26), we conclude that $B$ is surj.$\hfill\square$\par
@@ -1324,8 +1267,7 @@ $\forall v,u\in V\,(\,\exists\,!\,a_i,b_i,c_i,d_i\in\Fbb\,),\lambda\in\Fbb,\varp
 \ProblemEnding\par
 \large
 \ProblemN{29}{
-	\TextNL{Suppose $\varphi\in\Lm(V,\Fbb)\backslash\{0\}$. Suppose $u\in V\backslash\null\varphi$.}
-	\TextNL{Prove that $V = \null\varphi\oplus\left\{au :a\in\Fbb\right\}$.}
+	\TextNL{Suppose $\varphi\in\Lm(V,\Fbb)\backslash\{0\}$. Suppose $u\in V\backslash\null\varphi$. Prove that $V = \null\varphi\oplus\left\{au :a\in\Fbb\right\}$.}
 }\par\quad
 (a) $\forall\,v=cu\in\null\varphi\cap\left\{au:a\in\Fbb\right\},\varphi(v)=0=c\varphi(u)\Rightarrow c=0.$ Hence $\null\varphi\cap\left\{au:a\in\Fbb\right\}=\{0\}.$\par\vspace{6pt}\quad
 (b) $\forall\,v\in V,v=\displaystyle\left(v-\frac{\varphi(v)}{\varphi(u)}u\right)+\frac{\varphi(v)}{\varphi(u)}u.$
@@ -1341,8 +1283,7 @@ Thus $\Spn\displaystyle\left\{v_k-\frac{a_k}{a_j}v_j\right\}_{j\neq k}\subseteq\
 \ProblemEnding\par
 
 \ProblemN{30}{
-	\TextNL{Suppose $\varphi_1,\varphi_2\in\Lm(V,\Fbb)$ and $\null\varphi_1=\null\varphi_2=\null\varphi$.}
-	\TextNL{Prove that $\,\,\exists\,\,c\in\Fbb,\varphi_1=c\varphi_2$}
+	\TextNL{Suppose $\varphi_1,\varphi_2\in\Lm(V,\Fbb)$ and $\null\varphi_1=\null\varphi_2=\null\varphi$. Prove that $\,\exists\,c\in\Fbb,\varphi_1=c\varphi_2$}
 }\par\quad
 If $\null\varphi=V$, then $\varphi_1=\varphi_2=0,$ we are done. Suppose $u\in V/\null\varphi\Rightarrow\varphi_1(u),\varphi_2(u)\neq 0.$\par\quad
 By Problem (29), $V=\null\varphi\oplus\Spn(u).$\par\quad
@@ -1454,8 +1395,7 @@ $\end{array}\right\}\Rightarrow\square$\par\vspace{10pt}
 \ProblemEnding\par
 \ChapterEnding
 
-
-\ChapterDecl{3$\cdot$C} %4h
+\ChapterDecl{Ch3C}{3$\cdot$C}
 
 \BulletPoint \,\NoteForSmall{[3.47]}\,\, $LHS=(AC)_{j,k}$=$\sum\limits_{r=1}^n A_{j,r}C_{r,k}=\sum\limits_{r=1}^n (A_{j,\cdot})_{1,r}(C_{\cdot,k})_{r,1}=(A_{j,\cdot}C_{\cdot,k})_{1,1}=A_{j,\cdot}C_{\cdot,k}=RHS$.\par
 \ProblemEnding\par
@@ -1550,7 +1490,7 @@ $\Longleftrightarrow$ $(A_{1,\cdot},\dots,A_{n,\cdot})$ is a basis of $\Fbb^{1,n
 
 \ProblemB{
 	\TextB{Suppose $A$ is an m-by-n matrix with $A\neq 0$.}
-	\TextB{Prove that the rank of $A$ is $1$ if and only if there exist $(c_1,\dots,c_m)\in\Fbb^m$ and $(d_1,\dots,d_n)\in\Fbb^n$}
+	\TextB{Prove that the rank of $A$ is $1\Longleftrightarrow\exists\,(c_1,\dots,c_m)\in\Fbb^m$ and $(d_1,\dots,d_n)\in\Fbb^n$}
 	\TextB{such that $A_{j,k}=c_j\cdot d_k$ for every $j=1,\dots,m$ and every $k=1,\dots,n$.}
 }Using the notation in CR Factorization.\par\quad
 (a) Suppose $A=\begin{pmatrix}c_1 \\ \vdots \\ c_m \end{pmatrix}\begin{pmatrix} d_1 & \cdots & d_n\end{pmatrix}=\begin{pmatrix} c_1 d_1 & \cdots & c_1 d_n\\ \vdots & \ddots & \vdots \\ c_m d_1 & \cdots & c_m d_n \end{pmatrix}.\,\,\,\,(\,\,\,\exists\,c_j,d_k\in\Fbb,\forall j,k\,)$\par\,\par\quad\Ha
@@ -1569,7 +1509,7 @@ $\Rightarrow A_{j,k}=d\apostrophe_k A_{j,1}=c_j A_{1,k}=c_j d\apostrophe_k A_{1,
 Let $(v_1,\dots,v_n)$ and $(w_1,\dots,w_m)$ be bases of $V$ and $W$ respectively. We prove by contradiction.\par\quad
 Suppose $A=\Mt\left(T,(v_1,\dots,v_n),(w_1,\dots,w_m)\right)$ has at most $(\dim\range T-1)$ nonzero entries.\par\quad
 Then by Pigeon Hole Principle, at least one of $A_{\cdot,k}=0$.\par\quad
-Thus there are at most $(\dim\range T-1)$ nonzero vectors in $Tv_1,\dots,Tv_n$.\par\quad
+Thus there are at most $(\dim\range T-1)$ nonzero vecs in $Tv_1,\dots,Tv_n$.\par\quad
 While $\range T=\Spn(Tv_1,\dots,Tv_n)\Rightarrow\dim\range T\leq \dim\range T-1.$ We get a contradiction.$\hfill\square$
 \par
 \ProblemEnding\par
@@ -1673,17 +1613,15 @@ $\sum\limits_{p=1}^n \sum\limits_{r=1}^n A_{j,p}A_{p,r}A_{r,k}$.\vspace{6pt}}
 \textup{\Or}\,\,\,\,(AAA)_{j,k} &=\sum\limits_{r=1}^n(AA)_{j,r}A_{r,k} =\sum\limits_{r=1}^n(\sum\limits_{p=1}^n A_{j,p}A_{p,r})A_{r,k}\\&=\sum\limits_{r=1}^n(A_{j,1}A_{1,r}A_{r,k}+\dots+A_{j,n}A_{n,r}A_{r,k})\\&=A_{j,1}\sum\limits_{r=1}^n A_{1,r}A_{r,k}+\dots+A_{j,n}\sum\limits_{r=1}^n A_{n,r}A_{r,k}=\sum\limits_{p=1}^n \sum\limits_{r=1}^n A_{j,p}A_{p,r}A_{r,k}.\hfill\square}\par
 \ProblemEnding\par
 \ChapterEnding
-\ChapterDecl{3$\cdot$D} %7h
 
-{\small $\bullet$} {\timessl\Large 
-Suppose $T\in\Lm(V, W)$ is inv. Show that $T^{-1}$ is inv and $(T^{-1})^{-1}=T$.
-}\par
+\ChapterDecl{Ch3D}{3$\cdot$D}
 
-$\MathRightBrace{l}{
+\ProblemB{
+	\vspace{2pt}\TextB{Suppose $T\in\Lm(V, W)$ is inv. Show that $T^{-1}$ is inv and $(T^{-1})^{-1}=T$.}
+}$\MathRightBrace{l}{
 TT^{-1}=(T^{-1})^{-1}T^{-1}=I\in\Lm(V)\\
 T^{-1}T=T^{-1}(T^{-1})^{-1}=I\in\Lm(W)
-}\Rightarrow T=(T^{-1})^{-1}$, by the uniqnes of inverse$.\hfill\square$
-\par
+}\Rightarrow T=(T^{-1})^{-1}$, by the uniqnes of inverse$.\hfill\square$\vspace{5pt}\par
 \ProblemEnding\par
 
 \ProblemN{1}{
@@ -1692,7 +1630,7 @@ T^{-1}T=T^{-1}(T^{-1})^{-1}=I\in\Lm(W)
 }$\MathRightBrace{l}{
 (ST)(T^{-1}S^{-1})=STT^{-1}S^{-1}=I\in\Lm(W)\\
 (T^{-1}S^{-1})(ST)=T^{-1}S^{-1}ST=I\in\Lm(V)
-}\Rightarrow (ST)^{-1} = T^{-1}S^{-1}$, by the uniqnes of inverse$.\hfill\square$\par
+}\Rightarrow (ST)^{-1} = T^{-1}S^{-1}$, by the uniqnes of inverse$.\hfill\square$\vspace{5pt}\par
 \ProblemEnding\par
 
 \ProblemN{9}{
@@ -1839,7 +1777,7 @@ A_{m,1}G_{1,m}+&\cdots &+A_{m,m}G_{m,m}\\
 \vdots & \ddots & \vdots\\
 +&\cdots & +\\
 A_{n,1}G_{1,n}+&\cdots &+A_{n,m}G_{m,n}
-\end{pmatrix}$}.\par
+\end{pmatrix}$}.\vspace{10pt}\par
 \ProblemEnding\par
 
 \ProblemBor{10.A.1}{
@@ -1850,8 +1788,8 @@ Notice that $\Mt$ is an iso of $\Lm(V)$ onto $\Fbb^{n,n}$.\par\quad
 (a) \,$T^{-1}T=TT^{-1}=I$\,\small$\Rightarrow\Mt(T^{-1})\Mt(T)=\Mt(T)\Mt(T^{-1})=I\Rightarrow\Mt(T^{-1})=\Mt(T)^{-1}.$\large\par\quad
 (b) \,$\Mt(T)\Mt(T)^{-1}=\Mt(T)^{-1}\Mt(T)=I.\quad\exists\,!\,S\in\Lm(V)$ such that $\Mt(T)^{-1}=\Mt(S)$\par\quad
 $\Rightarrow\Mt(T)\Mt(S)=\Mt(S)\Mt(T)=I=\Mt(TS)=\Mt(ST)$\par\quad
-$\Rightarrow\Mt^{-1}\Mt(TS)=\Mt^{-1}\Mt(ST)=I$\large$\,=\,TS=ST\Rightarrow S=T^{-1}.\hfill\square$
-{\tiny\,\par\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\par}
+$\Rightarrow\Mt^{-1}\Mt(TS)=\Mt^{-1}\Mt(ST)=I$\large$\,=\,TS=ST\Rightarrow S=T^{-1}.\hfill\square$\par
+\ProblemEnding\par
 
 \ProblemBor{10.A.4}{
 	\TextB{Suppose that $(\beta_1,\dots,\beta_n)$ and $(\alpha_1,\dots,\alpha_n)$ are bases of \,$V$.}
@@ -1896,7 +1834,7 @@ Hence $w_i=\lambda v_i\Rightarrow\Mt(S)\,=\,${\small$\begin{pmatrix}
 }[ Compare with the first solution of Problem (16) in (3.A) ]\par\quad
 Suppose $T=\lambda I$ for some $\lambda\in\Fbb.$ Then $T$ has the same matrix with resp to every basis of $V$.\par\quad
 Conversely, if $T=0$, then we are done; Suppose $T\neq 0.$
-And $v$ is a nonzero vector in $V$.\par\quad
+And $v$ is a nonzero vec in $V$.\par\quad
  Assume that $(v,Tv)$ is linely inde.\par\quad
 Extend $(v,Tv)$ to a basis of $V$ as $(v,Tv,u_3,\dots,u_n).$ Let $B=\Mt\left(T,(v,Tv,u_3,\dots,u_n)\right).$\par\quad
 $\Rightarrow Tv=B_{1,1} v+B_{2,1}(Tv)+B_{3,1}u_3+\dots+B_{n,1}u_n\Rightarrow B_{2,1}=1,B_{i,1}=0,\,\forall i\neq 2.$\par\quad
@@ -1904,7 +1842,7 @@ By assumption, $A=\Mt\left(T,(v,w_2,\dots,w_{n})\right)=B$ for any basis $(v,w_2
 $\Rightarrow Tv=w_2,$ which is not true if we let $w_2=u_3,w_3=Tv,w_j=u_j\,(\,j=4,\dots,n\,).$ Contradicts.\par\quad
 Hence $(v,Tv)$ is linely depe $\Rightarrow \forall v\in V,\,\exists\,\lambda_v\in\Fbb,Tv=\lambda_v v.$\par\quad
 Now we show that $\lambda_v$ is independent of $v$, that is, \par\qquad\quad\,\,\,
-to show that for any two nonzero distinct vectors $v,w\in V,\lambda_v=\lambda_w$. Thus $T=\lambda I,\,\exists\,\lambda\in\Fbb.$\par\qquad{\normalsize
+to show that for any two nonzero distinct vecs $v,w\in V,\lambda_v=\lambda_w$. Thus $T=\lambda I,\,\exists\,\lambda\in\Fbb.$\par\qquad{\normalsize
 $\MathRightBrace{l}{$
 $(v,w)$ is linely inde $\Rightarrow T(v+w)=\lambda_{v+w}(v+w)=\lambda_{v+w}v+\lambda_{v+w}w\\ $\qquad\qquad\qquad\qquad\qquad\qquad\qquad\,
 $=\lambda_v v+\lambda_w w=Tv+Tw\Rightarrow\lambda_{v+w}=\lambda_v=\lambda_w\\ $
@@ -2060,7 +1998,7 @@ Extend $(Tv_1,\dots,Tv_m)$ and $(Sr_1,\dots,Sr_m)$ to bases of $W$ as$\\\qquad\q
 $}$\,$\therefore$ $E_1,E_2$ are inv and $S=E_2 TE_1.$\par\vspace{6pt}\large\quad
 Conversely, $S=E_2 TE_1\Rightarrow\dim\null S=\dim\null E_2 TE_1$.\par\quad
 $v\in\null E_2 TE_1\Longleftrightarrow E_2 TE_1(v)=0\Longleftrightarrow TE_1(v)=0.$ Hence $\null E_2 TE_1=\null TE_1=\null S.$\par\quad
-又 By (3.B.22.C{\footnotesize OROLLARY}), $E$ is inv $\Rightarrow\dim\null TE_1=\dim\null T=\dim\null S.\hfill\square$\par
+又 By (3.B.22.\COROLLARY), $E$ is inv $\Rightarrow\dim\null TE_1=\dim\null T=\dim\null S.\hfill\square$\par
 \ProblemEnding\par
 
 \ProblemN{8}{
@@ -2097,10 +2035,9 @@ $\forall \,T\in\mathcal{E},k\in\{1,\dots,m\},TE_{k,k}=0\Rightarrow\underbrace{\S
 又 $W=\Spn${\small$\begin{Bmatrix} \underset{,}{E_{m+1,1}}, & \cdots & ,\underset{,}{E_{n,1}},\\ \vdots & \ddots & \,\vdots\\ \overset{,}{E_{m+1,p}}, & \cdots & ,\overset{,}{E_{n,p}}\end{Bmatrix}$}$\,\subseteq\mathcal{E}$. Where $\Lm(V,W)=R\oplus W\Rightarrow\Lm(V,W)=R+\mathcal{E}.$\par\vspace{6pt}\quad\Hb
 Then $\dim\mathcal{E}=\dim\Lm(V,W)-\dim R-\dim(R\cap\mathcal{E})=(\dim V-\dim U)\dim W.\hfill\square$\par
 \ProblemEnding\par
-
 \ChapterEnding
-%$\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ $
-\ChapterDecl{3$\cdot$E}
+
+\ChapterDecl{Ch3E}{3$\cdot$E}
 
 \ProblemN{2}{
 	\TextN{Suppose $V_1,\dots,V_m$ are vecsps such that $V_1\times\dots\times V_m$ is finite-dim.}
@@ -2366,13 +2303,13 @@ Then $\forall u\in U,Tu=S\circ\pi(u)=S(0+U)=0\Rightarrow U\subseteq\null T.\hfil
 	\dbsp(b) \hspace{-0.5pt}\TextNL{Prove that $\Gamma$ is inje:}
 	\vspace{3pt}\dbsp\Hb\hspace{0.1pt}\TextNL{{\large $\Gamma(S)=0=S\circ\pi\Longleftrightarrow\forall v\in V,S\left(\pi(v)\right)=0\Longleftrightarrow\forall v+U\in V/U,S(v+U)=0\Longleftrightarrow S=0.$}}
 	\hspace{1pt}\dbsp(c) \hspace{0.5pt}\TextNL{Prove that $\range\Gamma\,(=\range \pi \apostrophe\,)=\left\{T\in\Lm(V,W):U\subseteq\null T\right\}$: {\normalsize\timesnr By Problem (18).$\hfill\square$}}
-}
-\ProblemEnding\par
+}\ProblemEnding\par
 \ChapterEnding
-\ChapterDecl{3$\cdot$F}\par
 
-\ProblemBnoor{By (18) in (3.D)}{
-\TextB{we know that $\varphi:V\rightarrow\Lm(\Fbb,V)$ is an iso. Now we prove that}
+\ChapterDecl{Ch3F}{3$\cdot$F}\par
+
+\ProblemBnoor{By (18) in (3.D),}{
+\TextB{$\varphi:V\rightarrow\Lm(\Fbb,V)$ is an iso. Now we prove that}
 \TextB{$(v_1,\dots,v_m)$ is linely inde $\Longleftrightarrow\left(\varphi(v_1),\dots,\varphi(v_m)\right)$ is linely inde.}}\par\quad
 (a) Suppose $(v_1,\dots,v_m)$ is linely inde and $\vartheta\in\Spn\left(\varphi(v_1),\dots,\varphi(v_m)\right)$.\par\quad\Ha
 Let $\vartheta=0=a_1\varphi(v_1)+\dots+a_m\varphi(v_m).$ Then $\vartheta(1)=0=a_1 v_1+\dots+a_m v_m\Rightarrow a_1=\dots=a_m=0.$\par\quad\Ha
@@ -2384,18 +2321,10 @@ Let $v=0=a_1 v_1+\dots+a_m v_m.$ Then $\varphi(v)=a_1\varphi(v_1)+\dots+a_m\varp
 Thus $v_1,\dots,v_m$ is linely inde. $\,\hfill\square$\par
 \ProblemEnding\par
 
-\ProblemN{1}{
-	\TextN{Explain why each linear functional is surj or is the zero map.}
-}$\MathRightBrace{r}{$ For any $\varphi \in V\apostrophe$ and $\varphi \neq 0,\,\exists\,v \in V, \,$ such that $\varphi(v) \neq 0.$ (a)$ \\ \dim\range\varphi=\dim\Fbb=1.$ (b)$} \Rightarrow \square$\vspace{5pt}\par
-\ProblemEnding\par
-
-\ProblemN{4}{
-	\TextN{Suppose $V$ is finite-dim and $U$ is a subsp of $V$ such that $U \neq V$.}
-	\TextN{Prove that $\exists\,\varphi \in V\apostrophe$ and $\varphi \neq 0$ such that $\varphi(u)=0$ for every $u \in U$.}
-}\par\quad
-Let $(u_1, \dots, u_m)$ be a basis of $U$, extend to $(u_1, \dots,u_m, u_{m+1}, \dots, u_{m+n})$ a basis of $V$.\par\quad Choose a $k \in \{1,\dots,n\}$. Define $\varphi \in V\apostrophe$ by $\varphi(u_{i})=\MathLeftBrace{l}{ 1,\quad\textup{if}\,\,\,i=m+k.\\ 0,\quad\textup{otherwise}.}$ \vspace{3pt}\par\quad
-\Or Equivalent to proving that $U^0 \neq \{0\}.$ By [3.106], $\dim U^0=\dim V-\dim U>0.\hfill\square$\par
-\ProblemEnding\par
+%\ProblemN{1}{
+%	\TextN{Explain why each linear functional is surj or is the zero map.}
+%}$\MathRightBrace{r}{$ For any $\varphi \in V\apostrophe$ and $\varphi \neq 0,\,\exists\,v \in V, \,$ such that $\varphi(v) \neq 0.$ (a)$ \\ \dim\range\varphi=\dim\Fbb=1.$ (b)$} \Rightarrow \square$\vspace{5pt}\par
+%\ProblemEnding\par
 
 \ProblemB{
 	\TextB{Suppose $T \in \Lm(V, W)$ and $(w_1 , \dots , w_m)$ is a basis of $\range T$.}
@@ -2410,7 +2339,7 @@ Thus letting $\varphi_{i}=\psi_{i}\circ T.\hfill\square$\par
 \ProblemEnding\par
 
 \ProblemB{
-	\TextB{Suppose $\varphi,\beta\in V\apostrophe$. Prove that $\null \varphi\subseteq\null\beta$ if and only if $\beta=c\varphi$. $\exists\,c\in\Fbb.$}
+	\TextB{Suppose $\varphi,\beta\in V\apostrophe$. Prove that $\null \varphi\subseteq\null\beta\Longleftrightarrow\beta=c\varphi$. $\exists\,c\in\Fbb.$}
 }Using (3.B.29, 30)\par\quad
 (a) Suppose $\null \varphi \subseteq\null\beta$. Choose a $u \not\in\null\beta$. $V=\null\beta\oplus\left\{au:a \in\Fbb\right\}.$\par\quad\Ha
 If $\null\varphi=\null \beta$, then let $c=\frac{\beta(u)}{\varphi(u)}$, we are done.\par\quad\Ha
@@ -2446,6 +2375,13 @@ $}\Rightarrow \Lambda=\Gamma^{-1}.$}
 }\par
 \ProblemEnding\par
 
+\ProblemN{9}{
+	\TextN{Suppose $(v_1,\dots,v_n)$ is a basis of \,$V$ and $(\varphi_1,\cdots,\varphi_n)$ is the correspd dual basis of $V\apostrophe$.}
+	\TextN{Suppose $\psi \in V\apostrophe$. Prove that $\psi=\psi(v_1)\varphi_1+\dots+\psi(v_n)\varphi_n.$}
+}$\,\,\psi(v)=\psi(\sum\limits_{i=1}^n a_i v_i)=\sum\limits_{i=1}^n a_i\psi(v_i)=\sum\limits_{i=1}^n\psi(v_{i})\varphi_i(v)=[\psi(v_1)\varphi_1+\dots+\psi(v_n)\varphi_n](v).\hfill\square$\par
+\Comment\,\,\, For other basis $(u_1,\dots,u_n)$ and the dual basis $(\rho_1,\dots,\rho_n),\,\,\psi=\psi(u_1)\rho_1+\dots+\psi(u_n)\rho_n.$\par
+\ProblemEnding\par
+
 \ProblemN{35}{
 	\TextNL{Prove that $(\PoR{})\apostrophe$ and $\Rbb^{\infty}$ are iso.}
 }\par\quad
@@ -2456,7 +2392,7 @@ Hence $\theta$ is an iso from $(\PoR{})\apostrophe$ onto $\Rbb^{\infty}.\hfill\s
 \ProblemEnding\par
 
 \ProblemN{7}{
-	\TextN{Suppose $m$ is a positive integer. Show that the dual basis of the basis $(1, x,\dots,x_m)$ of $\PoR{m}$}
+	\TextN{Suppose $m\in\Nbp$. Show that the dual basis of the basis $(1, x,\dots,x_m)$ of $\PoR{m}$}
 	\TextN{is $\varphi_0,\varphi_1,\dots,\varphi_m$, where {\large $\varphi_k=\displaystyle\frac{p^{(k)}(0)}{k!}$.}}
 	\TextN{{\large Here $p^{(k)}$ denotes the $k^{th}$ derivative of $p$, with the understanding that the $0^{th}$ derivative of $p$ is $p$.}}
 }\par\quad
@@ -2466,26 +2402,11 @@ Then \,\,$(x^{j})^{(k)}(0)=\MathLeftBrace{l}{0\,\,\,,\,\hspace{5.2pt}j\neq k. \\
 Thus $\varphi_k=\psi_k$, where $\psi_1,\dots,\psi_m$ is the dual basis of $(1, x,\dots,x_m)$ of $\,\,\PoR{m}.\hfill\square$
 \ProblemEnding\par
 
-\ProblemN{8}{
-	\TextN{Suppose $m$ is a positive integer.}
-}\par\quad
-(a) {\small By [2.C.10], $B$} $=(1,x-5,\dots,(x-5)^m)$ is a basis of $\PoR{m}$.\par\quad
-(b) Let $\varphi_k=\displaystyle\frac{p^{(k)}(5)}{k!}$ for each $k=0,1,\dots,m$. Then $(\varphi_0,\varphi_1,\dots,\varphi_m)$ is the dual basis of $B$.\par
-\ProblemEnding\par
-
-\ProblemN{9}{
-	\TextN{Suppose $(v_1,\dots,v_n)$ is a basis of \,$V$ and $(\varphi_1,\cdots,\varphi_n)$ is the correspd dual basis of $V\apostrophe$.}
-	\TextN{Suppose $\psi \in V\apostrophe$. Prove that $\psi=\psi(v_1)\varphi_1+\dots+\psi(v_n)\varphi_n.$}
-}$\,\,\psi(v)=\psi(\sum\limits_{i=1}^n a_i v_i)=\sum\limits_{i=1}^n a_i\psi(v_i)=\sum\limits_{i=1}^n\psi(v_{i})\varphi_i(v)=[\psi(v_1)\varphi_1+\dots+\psi(v_n)\varphi_n](v).\hfill\square$\par
-\Comment\,\,\, For other basis $(u_1,\dots,u_n)$ and the dual basis $(\rho_1,\dots,\rho_n),\,\,\psi=\psi(u_1)\rho_1+\dots+\psi(u_n)\rho_n.$\par
-\ProblemEnding\par
-
-\ProblemN{12}{
-	\TextNL{Show that the dual map of the identity operator on $V$ is the identity operator on $V\apostrophe$.}
-}$I\apostrophe(\varphi)=\varphi\circ I=\varphi,\,\,\,\forall \varphi \in V\apostrophe.\hfill\square$\par
-\ProblemB{
-	\TextB{Suppose $W$ is finite-dim and $T \in \Lm(V, W)$. Prove that $T\apostrophe=0 \Longleftrightarrow T=0.$}
-}$T=0\Leftrightarrow T\apostrophe(\varphi)=\varphi\circ T=0$ for all $\varphi\in V\apostrophe\Leftrightarrow T\apostrophe=0.\hfill\square \\ $
+\ProblemNnosolus{8}{
+	\TextN{Suppose $m\in\Nbp$.}
+	\vspace{4pt}(a) \TextN{\timesnr{\large By [2.C.10], $B$} $=(1,x-5,\dots,(x-5)^m)$ is a basis of $\PoR{m}$.}
+	(b) \TextN{\timesnr$\varphi_k=\displaystyle\frac{p^{(k)}(5)}{k!}$ for each $k=0,1,\dots,m$. Then $(\varphi_0,\varphi_1,\dots,\varphi_m)$ is the dual basis of {\large$B$}.}
+}\par
 \ProblemEnding\par
 
 \ProblemNnosolus{13}{
@@ -2505,6 +2426,14 @@ Thus $\varphi_k=\psi_k$, where $\psi_1,\dots,\psi_m$ is the dual basis of $(1, x
 	\Hb\TextNL{\large $\left(T\apostrophe(\varphi)\right)(x^3)=\int_0^1(x^5+6x)\d x=\int_0^1(\frac{1}{6}x^6+3x^2)\apostrophe\d x=\frac{6}{19}.\hfill\square$}
 }\ProblemEnding\par
 
+\ProblemN{12}{
+	\TextNL{Show that the dual map of the identity operator on $V$ is the identity operator on $V\apostrophe$.}
+}$I\apostrophe(\varphi)=\varphi\circ I=\varphi,\,\,\,\forall \varphi \in V\apostrophe.\hfill\square$\par
+\ProblemB{
+	\TextB{Suppose $W$ is finite-dim and $T \in \Lm(V, W)$. Prove that $T\apostrophe=0 \Longleftrightarrow T=0.$}
+}$T=0\Longleftrightarrow T\apostrophe(\varphi)=\varphi\circ T=0$ for all $\varphi\in V\apostrophe\Longleftrightarrow T\apostrophe=0.\hfill\square \\ $
+\ProblemEnding\par
+
 \ProblemB{
 	\TextB{Suppose $V$ and $W$ are finite-dim and $T\in\Lm(V,W)$. Prove that $T$ is inv $\Longleftrightarrow$ $T\apostrophe$ is inv.}
 }By [3.108] and [3.110].\hfill$\square$\par
@@ -2518,19 +2447,23 @@ $V,W$ are finite-dim $\Rightarrow\dim\Lm(V,W)=\dim\Lm(W\apostrophe,V\apostrophe)
 又 Suppose $\Gamma(T)=T\apostrophe=0$. By Problem (15), $T=0$. Thus $T$ is inje $\Rightarrow$ $T$ is inv.$\hfill\square$
 \ProblemEnding\par
 
-\ProblemN{17}{
-	\TextNL{Suppose $U\subseteq V$. Explain why $U^0=\left\{\varphi\in V\apostrophe:U\subseteq null\varphi\right\}$.}
-}Because for $\varphi\in V\apostrophe$, $U\subseteq\null \varphi\Longleftrightarrow\forall u\in U,\varphi(u)=0$. By definition in [3.102]. $\hfill\square$\par
+\ProblemN{4}{
+	\TextN{Suppose $V$ is finite-dim and $U$ is a subsp of $V,U \neq V$.}
+	\TextN{Prove that $\exists\,\varphi \in V\apostrophe\backslash\{0\},\varphi(u)=0$ for all $u \in U$.}
+}\par\quad
+Let $(u_1, \dots, u_m)$ be a basis of $U$, extend to $(u_1, \dots,u_m, u_{m+1}, \dots, u_{m+n})$ a basis of $V$.\par\quad Choose a $k \in \{1,\dots,n\}$. Define $\varphi \in V\apostrophe$ by $\varphi(u_{i})=\MathLeftBrace{l}{ 1,\quad\textup{if}\,\,\,i=m+k.\\ 0,\quad\textup{otherwise}.}$ \vspace{3pt}\par\quad
+\Or Equivalent to proving that $U^0 \neq \{0\}.$ By [3.106], $\dim U^0=\dim V-\dim U>0.\hfill\square$\par
 \ProblemEnding\par
 
+\BulletPoint \,\hspace{1pt}{\timessl\Large Suppose $V$ is a vecsp and $U\subseteq V.$}\par
+\ProblemNnosolus{17}{
+	\TextNL{\timesnr $U^0=\left\{\varphi\in V\apostrophe:U\subseteq null\varphi\right\}$. Noticing $\varphi\in V\apostrophe$, $U\subseteq\null \varphi\Longleftrightarrow\forall u\in U,\varphi(u)=0$. }
+}\vspace{5pt}\par
 \ProblemNnosolus{18}{
-	\TextNL{Suppose $V$ is a vecsp and $U\subseteq V$.}
-	\TextNL{Then $U=\{0\}\Longleftrightarrow\forall\varphi\in V\apostrophe, U\subseteq\null \varphi\,\Longleftrightarrow U^0=V\apostrophe$.}}\ProblemEnding\par
-\ProblemN{19}{
-	\TextNL{Suppose $V$ is a vecsp and $U\subseteq V$. Prove that $U=V\Longleftrightarrow U^0_V=\{0\}=V^0_V$.}
-}\par\quad
-(a) Suppose $U^0_V=\{0\}.$ Then $U=V$.\par\quad
-(b)Suppose $U=V$, then $U^0_V=\left\{\varphi\in V\apostrophe:V\subseteq\null\varphi\right\}$, hence $U^0_V=\{0\}.\hfill\square$\par
+	\TextNL{\,$U=\{0\}\Longleftrightarrow\forall\varphi\in V\apostrophe, U\subseteq\null \varphi\,\Longleftrightarrow U^0=V\apostrophe$.}\vspace{5pt}}
+\ProblemNnosolus{19}{
+	\TextNL{\timesnr $U=V\Longleftrightarrow U^0_V=\{0\}=V^0_V$. By the inverse and contrapositive of Problem (4).}
+}\par
 %For if not, choose a $v_k\in \mathcal{S}_V U$ and the correspd $\varphi_k\in V\apostrophe$, thus $\varphi_k\in U^0$ and $\varphi_k\neq 0.\hfill\square$\par
 \ProblemEnding\par
 
@@ -2543,22 +2476,21 @@ $V,W$ are finite-dim $\Rightarrow\dim\Lm(V,W)=\dim\Lm(W\apostrophe,V\apostrophe)
 \ProblemEnding\par
 
 \ProblemN{22}{
-	\TextNL{Prove that $(U+W)^0=U^0\cap W^0$.}
+	\TextNL{Suppose $U$ and $W$ are subsps of $V$. Prove that $(U+W)^0=U^0\cap W^0$.}
 }\par\quad
 (a) $\MathRightBrace{l}{U\subseteq U+W\\W\subseteq U+W}\Rightarrow\hspace{-6pt}\MathRightBrace{l}{(U+W)^0\subseteq U^0 \\ (U+W)^0\subseteq W^0}\Rightarrow(U+W)^0\subseteq U^0\cap W^0.$\par\vspace{6pt}\quad
 (b) $\forall\varphi\in U^0\cap W^0,\varphi(u+w)=0,$ where $u\in U,w\in W \Rightarrow\varphi\in (U+W)^0$. Thus $(U+W)^0\supseteq U^0\cap W^0.\,\hfill\square$
 \ProblemEnding\par
 
 \ProblemN{23}{
-	\TextNL{Prove that $(U\cap W)^0=U^0+W^0$.}
+	\TextNL{Suppose $U$ and $W$ are subsets of $V$. Prove that $(U\cap W)^0=U^0+W^0$.}
 }\par\quad
 (a) $\MathRightBrace{r}{U\cap W\subseteq U\\U\cap W\subseteq W}\Rightarrow\hspace{-6pt}\MathRightBrace{r}{(U\cap W)^0\supseteq U^0 \\ (U\cap W)^0\supseteq W^0}\Rightarrow(U\cap W)^0\supseteq U^0+W^0\supseteq U^0\cap W^0.$\par\vspace{6pt}\quad
 (b) $\forall\varphi\in U^0,\psi\in W^0$ and $\forall v\in U\cap W$, $(\varphi+\psi)(v)=\varphi(v)+\psi(v)=0$. Thus $U^0+W^0\subseteq (U\cap W)^0.\,\hfill\square$
 \ProblemEnding\par
 
-\BulletPoint\, \Corollary\;\;\TextB{Suppose $\left\{V_{\alpha_i}\right\}_{\alpha_i\in\Gamma}$ is a collection of subsps of\, $V$.}
-\TextB{Then $(\sum_{\alpha_i\in\Gamma}V_{\alpha_i})^0=\bigcap_{\alpha_i\in\Gamma}(V^0_{\alpha_i})$;}
-\TextB{And $(\bigcap_{\alpha_i\in\Gamma}V_{\alpha_i})^0=\sum_{\alpha_i\in\Gamma}(V^0_{\alpha_i})$.}
+\BulletPoint \,\hspace{1pt}\Corollary\;\;\TextB{Suppose $\left\{V_{\alpha_i}\right\}_{\alpha_i\in\Gamma}$ is a collection of subsps of\, $V$.}
+\TextB{Then $\left(\sum_{\alpha_i\in\Gamma}V_{\alpha_i}\right)^0=\bigcap_{\alpha_i\in\Gamma}\left(V^0_{\alpha_i}\right)$;\quad And $\left(\bigcap_{\alpha_i\in\Gamma}V_{\alpha_i}\right)^0=\sum_{\alpha_i\in\Gamma}\left(V^0_{\alpha_i}\right)$.}
 \ProblemEnding\par
 
 \ProblemN{24}{
@@ -2581,8 +2513,7 @@ Hence $\Spn(\varphi_{m+1},\dots,\varphi_n)=U^0,\,\,\,\,\dim U^0=n-m=\dim V-\dim 
 \ProblemEnding\par
 
 \ProblemN{26}{
-	\TextNL{Suppose $V$ is finite-dim and $\Omega$ is a subsp of $V\apostrophe$.}
-	\TextNL{Prove that \,\,$\Omega=\left\{v\in V:\varphi(v)=0,\forall\varphi\in\Omega\right\}^0.$}
+	\TextNL{Suppose $V$ is finite-dim, $\Omega$ is a subsp of $V\apostrophe$. Prove that $\Omega=\left\{v\in V:\varphi(v)=0,\forall\varphi\in\Omega\right\}^0.$}
 }Using the corollary in Problem (20, 21).\par\quad
 Suppose $U=\left\{v\in V:\,\forall\varphi\in\Omega,\varphi(v)=0\right\}$.\par\quad
 \dbsp Getting $U^0=\left\{v\in V:\,\forall\varphi\in\Omega,\varphi(v)=0\right\}^0$. We need to show that $\Omega=U^0$.\par\hspace{0pt}
@@ -2602,8 +2533,8 @@ Hence $\Spn(\varphi)=\left\{p\in\PoR{5}:\varphi(p)=p(8)=0\right\}^0$, 又 $\Spn(
 
 \ProblemN{28, 29}{
 	\TextNL{Suppose $V,W$ are finite-dim, $T\in\Lm(V,W)$.}
-	(a) \TextNL{Suppose $\exists\,\varphi\in W\apostrophe$ such that $\null T\apostrophe=\Spn(\varphi)$. Prove that $\range T=\null\varphi.$}
-	(b) \TextNL{Suppose $\exists\,\varphi\in V\apostrophe$ such that $\range T\apostrophe=\Spn(\varphi)$. Prove that $\null T=\null\varphi.$}
+	(a) \TextNL{Suppose $\exists\,\varphi\in W\apostrophe,\null T\apostrophe=\Spn(\varphi)$. Prove that $\range T=\null\varphi.$}
+	(b) \TextNL{Suppose $\exists\,\varphi\in V\apostrophe,\range T\apostrophe=\Spn(\varphi)$. Prove that $\null T=\null\varphi.$}
 }Using Problem (26), [3.107] and [3.109].\par\quad
 Because $\Spn(\varphi)=\left\{v\in V:\forall\psi\in\Spn(\varphi),\psi(v)=0\right\}^0=\left\{v\in V:\varphi(v)=0\right\}^0=(\null\varphi)^0$.\par\quad
 (a) $(\range T)^0=\null T\apostrophe=\Spn(\varphi)=(\null \varphi)^0$ $\Longleftrightarrow\range T=\null \varphi.$\par\quad
@@ -2684,8 +2615,8 @@ for if not, $\,\,\exists\,\,j,k\in\Nbp$ such that $A_{j,k}\neq 0$, then $T(A)_{k
 \ProblemEnding\par
 
 \ProblemN{32}{
-	\TextNL{Suppose $T\in\Lm(V)$, and $(u_1,\dots,u_m)$ and $(v_1,\dots,v_m)$ are bases of \,$V$. Prove that}
-	\TextNL{T is inv $\Longleftrightarrow$ The rows of $\Mt\left(T,(u_1,\dots,u_m),(v_1,\dots,v_m)\right)$ form a basis of $\Fbb^{1,n}$.}
+	\TextNL{Suppose $T\in\Lm(V)$, and $(u_1,\dots,u_m),(v_1,\dots,v_m)$ are bases of \,$V$. Prove that}
+	\TextNL{T is inv $\Longleftrightarrow$ the rows of $\Mt\left(T,(u_1,\dots,u_m),(v_1,\dots,v_m)\right)$ form a basis of $\Fbb^{1,n}$.}
 }Note that $T$ is inveritlbe $\Longleftrightarrow$ $T\apostrophe$ is inv. And $\Mt(T\apostrophe)=\Mt(T)^t=A^t$, denote it by $B$.\par\quad
 Let $(\varphi_1,\dots,\varphi_m)$ be the dual basis of $(v_1,\dots,v_m),\,\,\,(\psi_1,\dots,\psi_m)$ be the dual basis of $(u_1,\dots,u_m)$.\par\quad
 (a) Suppose $T$ is inv, so is $T\apostrophe$. Because $T\apostrophe(\varphi_1),\dots,T\apostrophe(\varphi_m)$ is linely inde.\par\quad\Ha
@@ -2703,8 +2634,8 @@ of $V\apostrophe$.}
 	(a) \TextNL{Show that $\Lambda$ is a linear map from $V$ to $V\apostrophe\apostrophe$.}
 	(b) \TextNL{Show that if $T\in\Lm(V)$, then $T\apostrophe\apostrophe\circ\Lambda=\Lambda\circ T$, where $T\apostrophe\apostrophe=(T\apostrophe)\apostrophe$.}
 	(c) \TextNL{Show that if $V$ is finite-dim, then $\Lambda$ is an iso from $V$ onto $V\apostrophe\apostrophe$.}
-	\TextNL{\small Suppose $V$ is finite-dim. Then $V$ and $V\apostrophe$ are iso, but finding an iso from $V$ onto $V\apostrophe$ generally requires choosing}
-	\TextNL{\small a basis of $V$. In contrast, the iso $\Lambda$ from $V$ onto $V\apostrophe\apostrophe$ does not require a choice of basis and thus is considered more natural.}
+	\TextNL{\normalsize Suppose $V$ is finite-dim. Then $V$ and $V\apostrophe$ are iso, but finding an iso from $V$ onto $V\apostrophe$ generally requires choosing}
+	\TextNL{\normalsize a basis of $V$. In contrast, the iso $\Lambda$ from $V$ onto $V\apostrophe\apostrophe$ does not require a choice of basis and thus is considered more natural.}
 }\par\quad
 (a) $\forall\varphi\in V\apostrophe,\,\,\forall v,w\in V,a\in\Fbb,\,\left(\Lambda(v+a w)\right)(\varphi)=\varphi(v+aw)=\varphi(v)+a\varphi(w)=(\Lambda v)(\varphi)+a(\Lambda w)(\varphi)$.\par\quad\Ha
 Thus $\Lambda(v+aw)=\Lambda v+a\Lambda w$. Hence $\Lambda$ is linear.\par\quad
@@ -2734,10 +2665,9 @@ Hence $T\apostrophe\apostrophe(\Lambda v)=\left(\Lambda(Tv)\right)$, getting $T\
 (b) $\psi\in\range\pi\apostrophe\Longleftrightarrow\exists\,\varphi\in (V/U)\apostrophe,\psi=\varphi\,\circ\,\pi\Longleftrightarrow\null\psi\supseteq U\Longleftrightarrow \psi\in U^0$. Hence $\range\pi\apostrophe=U^0$.\par\quad
 (c) $\psi\in U^0\Longleftrightarrow\null\psi\supseteq U\Longleftrightarrow\exists\,\varphi\in (V/U)\apostrophe,\psi=\varphi\,\circ\,\pi=\pi(\varphi)$. Thus $\pi\apostrophe$ is surj. And by (a). $\hfill\square$\par 
 \ProblemEnding\par
-
 \ChapterEnding
 
-\ChapterDecl{4} % 4.0h
+\ChapterDecl{Ch4}{4}
 
 \BulletPoint \,\hspace{1pt}\NoteFor{[4.8]} {\timessl division algorithm for polynomials}\TextB{}
 {\timessl\normalsize Suppose $p, s\in\PoF{}$, with $s\neq 0$. Then $\,\exists\,!\,q, r\in\PoF{}$ such that $p = sq + r$ and $\deg r < \deg s$.} {\timessl\Large Another Proof:}\TextB{}
@@ -2931,10 +2861,9 @@ Then $r=s=0,$ for if not, write $\displaystyle\frac{q(z)}{r(z)}=\frac{p(z)}{s(z)
 Thus $\range T=\Po{m+n-1}\Rightarrow T$ is surj, and therefore is an iso.\par\quad
 (c) Immediately.$\hfill\square$\par
 \ProblemEnding\par
-
 \ChapterEnding
-% 9h
-\ChapterDecl{5.A}
+
+\ChapterDecl{Ch5A}{5.A}
 
 [1]: 31; [2]: 1, 2, 3, 15, 21; [3]: 23, (2E Ch5.20), (4E.5.A.37), 4, 5; [4]: 6, (4E.5.A.17, 18) \OR 16, (4E.5.A.15);\par
 [5]: 7, 8, (4E.5.A.8), 22, 9, 10; [6]: 11, 12, 14, 30, 13, (4E.5.A.11); [7]: 17, (4E.5.A.16), 18; [8]: 19, 20, 24;\par
@@ -3153,7 +3082,7 @@ Suppose $\lambda$ is an eigval with an eigvec $v.$ Then $P(Pv)=Pv\Rightarrow\lam
 \ProblemEnding\par
 \large
 \ProblemN{22}{
-	\TextNL{Suppose $T\in\Lm(V)$ and $\,\exists$ nonzero vectors $u,w$ in $V$ such that $Tu = 3w$ \,{\normalsize and}\, $Tw = 3u$.}
+	\TextNL{Suppose $T\in\Lm(V)$ and $\,\exists$ nonzero vecs $u,w$ in $V$ such that $Tu = 3w$ \,{\normalsize and}\, $Tw = 3u$.}
 	\TextNL{Prove that $3$ or $-3$ is an eigval of $T$.}
 }{\Comment\,\,\, \small$Tu=3w,Tw=3u\Rightarrow T(Tu)=9u\Rightarrow T^2$ has an eigval $9.$}\par\quad
 $Tu=3w,Tw=3u\Rightarrow T(u+w)=3(u+w),T(u-w)=3(w-u)=-3(u-w).\hfill\square$\par
@@ -3334,7 +3263,7 @@ And (b) the set of all eigvecs of $T$ is $\left\{(z_1,\lambda z_1,\lambda^2 z_1,
 
 \ProblemN{24}{
 	\TextNL{Suppose $A\in\Fbb^{n,n}.$ Define $T\in\Lm(\Fbb^n)$ by $Tx = Ax$,}
-	\TextNL{where elements of $\Fbb^n$ are thought of as $n$-by-$1$ col vectors.}
+	\TextNL{where elements of $\Fbb^n$ are thought of as $n$-by-$1$ col vecs.}
 	(a) \TextNL{Suppose the sum of the entries in each row of $A$ equals $1$.}
 	\Ha\TextNL{Prove that $1$ is an eigval of $T$.}
 	(b) \TextNL{Suppose the sum of the entries in each col of $A$ equals $1$.}
@@ -3363,7 +3292,7 @@ y_1 \\ \vdots \\ y_n\end{pmatrix}$}$\,\in\Fbb^n:y_1+\dots+y_n=0\}.$ Hence $(T-I)
 
 \ProblemB{
 	\TextB{Suppose $A\in\Fbb^{n,n}.$ Define $T\in\Lm(\Fbb^n)$ by $Tx = xA$,}
-	\TextB{where elements of $\Fbb^n$ are thought of as $1$-by-$n$ row vectors.}
+	\TextB{where elements of $\Fbb^n$ are thought of as $1$-by-$n$ row vecs.}
 	(a) \TextB{Suppose the sum of the entries in each col of $A$ equals $1$.}
 	\Ha\TextB{Prove that $1$ is an eigval of $T$.}
 	(b) \TextB{Suppose the sum of the entries in each row of $A$ equals $1$.}
@@ -3403,10 +3332,10 @@ Otherwise, $\lambda_0-\lambda_1=\lambda_2-\lambda_0=0\,\Rightarrow\lambda_1=\lam
 \ProblemEnding\par
 
 \ProblemN{26}{
-	\TextNL{Suppose $T\in\Lm(V)$ is such that every nonzero vector in $V$ is an eigvec of $T$.}
+	\TextNL{Suppose $T\in\Lm(V)$ is such that every nonzero vec in $V$ is an eigvec of $T$.}
 	\TextNL{Prove that $T$ is a scalar multi of the identity operator.}
 }\par\quad
-Because $\forall v\in V,\exists\,!\,\lambda_v\in\Fbb,Tv=\lambda_v v.$ For any two distinct nonzero vectors $v,w\in V,$\par\quad
+Because $\forall v\in V,\exists\,!\,\lambda_v\in\Fbb,Tv=\lambda_v v.$ For any two distinct nonzero vecs $v,w\in V,$\par\quad
 $T(v+w)=\lambda_{v+w}(v+w)=Tv+Tw=\lambda_v v+\lambda_w w\Rightarrow(\lambda_{v+w}-\lambda_v)v=(\lambda_w-\lambda_{v+w})w.$\par\quad
 If $(v,w)$ is linely inde, then let $w=cv,$ therefore\par\qquad\qquad\qquad
 $\lambda_v cv=cTv=Tw=\lambda_w w$\qquad\qquad\qquad\qquad\qquad\quad$\Rightarrow\lambda_w=\lambda_v.$\par\qquad\qquad\qquad
@@ -3516,7 +3445,7 @@ And then $\left(\cos(\lambda_1 x),\dots,\cos(\lambda_n x)\right)$ is linely inde
 	(a) \TextB{Show that the definition of $T/U$ makes sense}
 	\Ha\TextB{( which requires using the condition that $U$ is invar under $T$ )}
 	\Ha\TextB{and show that $T/U$ is an operator on $V/U$.}
-	(b) \TextB{{\normalsize (O{\footnotesize R} Problem 35)} Show that each eigval of $T/U$ is an eigval of $T$.}
+	(b) {\normalsize (O{\footnotesize R} Problem 35)} \TextB{ Show that each eigval of $T/U$ is an eigval of $T$.}
 }\par\quad
 (a) Suppose $v+U=w+U\,(\,\Longleftrightarrow v-w\in U\,).$\par\quad\Ha
 Then because $U$ is invar under $T,$ $T(v-w)\in U\Longleftrightarrow Tv+U=Tw+U.$\par\quad\Ha
@@ -3564,11 +3493,13 @@ Thus $T/(\null T)$ is inje.$\hfill\square$\par
 \ProblemEnding\par
 
 \ChapterEnding
-$ \\\\ $
-% 12h
-\ChapterDecl{5.B: I}\quad {\LARGE[}{\Large\timessl See {\timesbf 5.B: II} below.}{\LARGE ]}
-$ \\ $
-\large
+
+\ChapterDecl{Ch5BI}{5.B: I}{
+	\quad{\LARGE[}
+	{\Large\timessl See {\timesbf 5.B: II} below.}
+	{\LARGE ]}
+}\large\vspace{5pt}
+
 {\Comment\,\,\, 下面，为了照顾原书{\timesbf 5.B}节两版过大的差距，特别将此节补注分成{\timesbf I}和{\timesbf II}两部分。\par\qquad\qquad\,\,\,\,\,\,
 又考虑到第4版中{\timesbf 5.B}节的$\lceil$本征值与极小多项式$\rfloor$与$\lceil$奇维度实向量空间的本征值$\rfloor$\par\qquad\qquad\,\,\,\,\,\,
 (相当一部分是从原第3版{\timesbf 8.C}节挪过来的)是对原第3版$\lceil$多项式作用于算子$\rfloor$与\par\qquad\qquad\,\,\,\,\,\,
@@ -3593,23 +3524,11 @@ $\\ $
 	(a) \TextB{Prove that $T$ is inje $\Longleftrightarrow$ $T^m$ is inje.}
 	(b) \TextB{Prove that $T$ is surj $\Longleftrightarrow$ $T^m$ is surj.}
 }\par\quad
-(a) Suppose $T^m$ is inje. Then $Tv=0\Rightarrow T^{m-1} Tv=T^m v=0\Rightarrow v=0.\hfill\square$\par\quad\Ha
-Suppose $T$ is inje.\par\quad\Ha
-Then $T^m v=T(T^{m-1}v)=0$\par\qquad\qquad\quad\Ha\quad\,
-$\Rightarrow T^{m-1}v=0=T(T^{m-2}v)\Rightarrow\cdots$\par\qquad\quad\,
-$\Rightarrow T^2v=TTv=0$\par\qquad\quad\,
-$\Rightarrow Tv=0\Rightarrow v=0.\hfill\square$\par\quad
+(a) Suppose $T^m$ is inje. Then $Tv=0\Rightarrow T^{m-1} Tv=T^m v=0\Rightarrow v=0.$\par\quad\Ha
+Suppose $T$ is inje. Then $T^m v=T^{m-1}v=\cdots=T^2 v=Tv=v=0.$\par\quad
 (b) Suppose $T^m$ is surj. $\forall u\in V,\,\exists\,v\in V,T^m v=u=Tw,$ let $w=T^{m-1}v.\hfill\square$\par\quad\Hb
-Suppose $T$ is surj.\par\quad\Hb
-Then $\forall u\in V,\,\exists\,v\in V, T\underline{(v)}=u$\par\qquad\quad\Hb\,\,\,
-$\Rightarrow\exists\,v_2\in V,Tv_2=\underline{v}, T^2\underline{(v_2)}=u$
-\par\qquad\qquad\qquad\qquad\qquad\qquad\quad\,
-$\quad\Hb\,\vdots$\par\qquad\qquad\quad\Hb\,\,
-$\Rightarrow\exists\,v_k\in V,Tv_k=\underline{v_{k-1}}, T^k\underline{(v_k)}=u$\par\quad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\quad\,\,
-$\,\,\vdots$\par\qquad\qquad\qquad\quad\,\,
-$\Rightarrow\exists\,v_{m-1}\in V,Tv_{m-1}=\underline{v_{m-2}}, T^{m-1}\underline{(v_{m-1})}=u$\par\qquad\qquad\qquad\qquad\qquad\qquad\quad\Hb\,
-$\Rightarrow\exists\,v_m\in V,Tv_m=\underline{v_{m-1}}, T^{m-1}(Tv_m)=u.\hfill\square$\par
-\ProblemEnding{\small\par}
+Suppose $T$ is surj. Then $\forall u\in V,\,\exists\,v_1,\dots,v_m\in V, T(v_1)=T^2v_2=\cdots=T^m v_m=u.\hfill\square$\par
+\ProblemEnding\par
 
 \BulletPoint \,\hspace{1pt}\NoteFor{[5.17]}\TextB{}
 \TextB{Suppose $T\in\Lm(V),p\in\PoF{}$. Prove that $\null p(T)$ and $\range p(T)$ are invar under $T$.}
@@ -4238,7 +4157,7 @@ By assumption, $T|_{\null q(T)}$ has an invar subsp of dim $2.\hfill\square$\par
 \ChapterEnding
 
 % 6h
-\ChapterDecl{5.B: II}
+\ChapterDecl{Ch5BII}{5.B: II}
 
 
 \ProblemBnoor{({\normalsize4E 5.C.1})}{
@@ -4358,13 +4277,13 @@ By assumption, $T|_{\null q(T)}$ has an invar subsp of dim $2.\hfill\square$\par
 
 \ChapterEnding
 
-\ChapterDecl{5.C} % 10h
+\ChapterDecl{Ch5C}{5.C} % 10h
 
 \par
 \ProblemEnding\par
 
 \ChapterEnding
-\ChapterDecl{5.E* (4E)} % 0.5h/4h
+\ChapterDecl{Ch5E}{5.E* (4E)} % 0.5h/4h
 
 \ProblemN{1}{
 	\TextN{Give an example of two commuting operators $S, T\in\Fbb^4$ such that}
