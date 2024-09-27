@@ -50,7 +50,7 @@
 \def\Nbp{{\mathbb{N}^+}}
 
 \def\mathC{C}
-\def\apostrophe{{\forapos'}}
+\def\apostrophe{\prime}
 \def\BulletPoint{{\small$\bullet$}}
 \def\bullpt{{\tiny$\bullet$} }
 
@@ -480,101 +480,115 @@ Thus $\Fbb^5=\left((U\oplus W_1)\oplus W_2\right)\oplus W_3.\hfill\square$\par
 \ProblemEnding\par
 \ChapterEnding
 
+\vfill
 \ChapterDecl{Ch2A}{2$\cdot$A}
-
+$\\[10pt] $
 \ProblemN{2}{
-	(a) \TextN{A list $(v)$ of length $1$ in $V$ is linely inde $\Longleftrightarrow v\neq 0.$}
-	(b) \TextN{A list $(v,w)$ of length $2$ in $V$ is linely inde $\Longleftrightarrow\forall\lambda,\mu\in\Fbb,v\neq \lambda w,w\neq \mu v.$}
-}\par\quad\normalsize
-(a) \,$\MathLeftMid{l}{$\hspace{-6pt} Suppose $v\neq 0$. Then let $av=0,a\in\Fbb$. Now $a=0.$ Thus $(v)$ is linely inde.$\\ $
-\hspace{-6pt}Suppose $(v)$ is linely inde. $av=0\Rightarrow a=0.$ Then $v\neq 0$, for if not, $a\neq 0$ while $av=0.$ Contradicts.$}$\par\quad
-(b) \,$\MathLeftMid{l}{$\hspace{-6pt} Denote the list by $(v,w)$, where $v,w\in V$. If $(v,w)$ is linely inde, let $av+bw=0\Rightarrow a=b=0.\\ $
-\hspace{-6pt}If, say $v\neq cw\,\,\forall c\in\Fbb.$ Then let $av+bw=0$, getting $a=b=0\Rightarrow(v,w)$ is linely inde.
-$}$\par\large\vspace{6pt}
+	(a) \TextN{[P]\hspace{17pt}{\; A list $(v)$ of length $1$ in $V$ is linely inde $\Longleftrightarrow v\neq 0.$} \hfill[Q]}
+	(b) \TextN{[P]{\; A list $(v,w)$ of length $2$ in $V$ is linely inde $\Longleftrightarrow\forall\lambda,\mu\in\Fbb,v\neq \lambda w,w\neq \mu v.$} \hfill[Q]}
+}\par\quad
+(a) $Q\overset{1}{\Rightarrow} P:$ $v\neq 0\Rightarrow$ if $av=0$ then $a=0\Rightarrow(v)$ linely inde.\par\quad\Ha
+$P\overset{2}{\Rightarrow} Q:$ $(v)$ linely inde $\Rightarrow v\neq 0$, for if $v=0,$ then $av=0\not\Longrightarrow a=0.$\par\vspace{2pt}\quad\Ha
+\Or $\MathLeftMid{l}{{}^\neg Q\overset{3}{\Rightarrow}{}^\neg P:$ $v=0\Rightarrow av=0$ while we can let $a\neq 0\Rightarrow(v)$ is linely dep.$\\ {}^\neg P\overset{4}{\Rightarrow}{}^\neg Q:$ $(v)$ linely dep $\Rightarrow av=0$ while $a\neq 0\Rightarrow v=0.$
+$}$\par\vspace{4pt}\quad\Ha
+\Comment\,\,\, (1) with (3) and (2) with (4) will do as well.$\hfill\square$\par\vspace{6pt}\quad
+(b) $P\overset{1}{\Rightarrow}Q:$ $(v,w)$ linely inde $\Rightarrow$  if $av+bw=0,$ then $a=b=0\Rightarrow$ no scalar multi.\par\quad\Hb
+$Q\overset{2}{\Rightarrow} P:$ no scalar multi $\Rightarrow$ if $av+bw=0,$ then $a=b=0\Rightarrow(v,w)$ linely inde.\par\vspace{2pt}\quad\Hb
+\Or $\MathLeftMid{l}{{}^\neg P\overset{3}{\Rightarrow}{}^\neg Q:$ $(v,w)$ linely dep $\Rightarrow$ if $av+bw=0,$ then $a$ or $b\neq 0\Rightarrow$ scalar multi $\\{}^\neg Q\overset{4}{\Rightarrow}{}^\neg P:$ scalar multi $\Rightarrow$ if $av+bw=0,$ then $a$ or $b\neq 0\Rightarrow$ linely dep. $}$
+\par\vspace{4pt}\quad\Hb
+\Comment\,\,\, (1) with (3) and (2) with (4) will do as well.$\hfill\square$\par
 \ProblemEnding\par
+\vspace{20pt}
+\clearpage
 
 \ProblemN{1}{
-	\TextN{Prove that if $(v_1,v_2,v_3,v_4)$ spans $V$, then the list $(v_1-v_2,v_2-v_3,v_3-v_4,v_4)$ also spans V.}
-}Assume that $\forall v\in V,\,\,\exists\,\,a_1,\dots,a_4\in\Fbb,$\par\qquad
-$v=a_1 v_1+a_2 v_2+a_3 v_3+a_4 v_4$\par\qquad\,\,\,
-$=b_1(v_1-v_2)+b_2(v_2-v_3)+b_3(v_3-v_4)+b_4 v_4$\par\qquad\,\,\,
-$=b_1 v_1+(b_2-b_1)v_2+(b_3-b_2)v_3+(b_4-b_3)v_4,$ letting $b_i=\sum\limits_{r=1}^i a_r.$\par\quad
-Thus $\forall v\in V,\,\,\exists\,\,b_i\in$ {\timesbf F}, $v=b_1 (v_1-v_2)+b_2(v_2-v_3)+b_3(v_3-v_4)+b_4 v_4.$\par\quad
-Hence the list $(v_1-v_2,v_2-v_3,v_3-v_4,v_4)$ also spans V.$\hfill\square$
-\par
+	\TextN{Prove that [P] $(v_1,v_2,v_3,v_4)$ spans $V\Longleftrightarrow(v_1-v_2,v_2-v_3,v_3-v_4,v_4)$ also spans V [Q].}
+}\par\quad
+Notice that $V=\Spn(v_1,\dots,v_n)\Longleftrightarrow\forall v\in V,\,\exists\,a_1,\dots,a_n\in\Fbb,v=a_1v_1+\dots+a_nv_n.$\par\quad
+Assume that $\forall v\in V,\,\exists\,a_1,\dots,a_4,b_1,\dots,b_4\in\Fbb,$ ( that is, if $\exists\,a_i,$ then we are to find $b_i,$ vice versa )$\\[-8pt] $
+\AlignEq{}{v&=a_1 v_1+a_2 v_2+a_3 v_3+a_4 v_4\\&=b_1(v_1-v_2)+b_2(v_2-v_3)+b_3(v_3-v_4)+b_4 v_4\\&=b_1 v_1+(b_2-b_1)v_2+(b_3-b_2)v_3+(b_4-b_3)v_4.\\[-25pt]}\par\quad
+Now we can let $b_i=\sum\limits_{r=1}^i a_r$ if we are to prove $Q$ with $P$ already assumed;\par\qquad\qquad\quad\hspace{3pt}
+or let $a_i=b_i-b_{i-1}$ with $b_{-1}=0,$ if we are to prove $P$ with $Q$ already assumed.$\hfill\square$\par
 \ProblemEnding\par
 
 \ProblemN{6}{
-	\TextN{Suppose $(v_1,v_2,v_3,v_4)$ is linely inde in V.}
-	\TextN{Prove that the list $(v_1-v_2,v_2-v_3,v_3-v_4,v_4)$ is also linely inde.}
-}$a_1(v_1-v_2)+a_2(v_2-v_3)+a_3(v_3-v_4)+a_4 v_4=0$\par\qquad\quad\,\,\,\,
-$\Rightarrow a_1 v_1+(a_2-a_1)v_2+(a_3-a_2)v_3+(a_4-a_3)v_4=0$\par\quad\qquad\,\,\,\,
-$\Rightarrow a_1=a_2-a_1=a_3-a_2=a_4-a_3=0\Rightarrow a_1=\dots=a_4=0.\hfill\square$
-\par
+	\TextN{Prove that [P] $(v_1,v_2,v_3,v_4)$ is linely inde} \TextN{\hspace{37pt}$\Longleftrightarrow$ [Q] $(v_1-v_2,v_2-v_3,v_3-v_4,v_4)$ is linely inde.}
+}\vspace{6pt}\AlignEq{}{\qquad\qquad\qquad P\Rightarrow Q:\;&a_1(v_1-v_2)+a_2(v_2-v_3)+a_3(v_3-v_4)+a_4 v_4=0\hspace{154pt}\\\Rightarrow&a_1 v_1+(a_2-a_1)v_2+(a_3-a_2)v_3+(a_4-a_3)v_4=0\\\Rightarrow&a_1=a_2-a_1=a_3-a_2=a_4-a_3=0}\par\quad
+\vspace{-10pt}
+\AlignEq{}{\qquad\qquad\qquad Q\Rightarrow P:\;&a_1 v_1+a_2 v_2+a_3 v_3+a_4 v_4=0\\\Rightarrow&a_1(v_1-v_2)+(a_1+a_2)(v_2-v_3)+(a_1+a_2+a_3)(v_3-v_4)+(a_1+\dots+a_4)v_4=0\\\Rightarrow&a_1=a_1+a_2=a_1+a_2+a_3=a_1+\dots+a_4=0.}\par
+\vspace{-25pt}$\hfill\square$\par
 \ProblemEnding\par
-
-\ProblemN{7}{
-	\TextN{Prove that if $(v_1,v_2,\dots,v_m)$ is a linely inde list of vecs in $V$,}
-	\TextN{then $(5v_1-4v_2,v_2, v_3,\dots,v_m)$ is linely indep.}
-}$a_1(5v_1-4v_2)+a_2 v_2+a_3 v_3+a_4 v_4=0$\par\qquad\quad\,\,\,\,
-$\Rightarrow 5a_1 v_1+(a_2-4a_1)v_2+a_3 v_3+a_4 v_4=0$\par\qquad\quad\,\,\,\,
-$\Rightarrow 5a_1=a_2-4a_1=a_3=a_4=0\Rightarrow a_1=\dots=a_4=0\hfill\square$\par
-\ProblemEnding\par
+%
+%\ProblemN{7}{
+%	\TextN{Prove that if $(v_1,v_2,\dots,v_m)$ is a linely inde list of vecs in $V$,}
+%	\TextN{then $(5v_1-4v_2,v_2, v_3,\dots,v_m)$ is linely indep.}
+%}$a_1(5v_1-4v_2)+a_2 v_2+a_3 v_3+a_4 v_4=0$\par\qquad\quad\,\,\,\,
+%$\Rightarrow 5a_1 v_1+(a_2-4a_1)v_2+a_3 v_3+a_4 v_4=0$\par\qquad\quad\,\,\,\,
+%$\Rightarrow 5a_1=a_2-4a_1=a_3=a_4=0\Rightarrow a_1=\dots=a_4=0\hfill\square$\par
+%\ProblemEnding\par
 
 \ProblemB{
 	\TextB{Suppose $(v_1,\dots,v_m)$ is a list of vecs in $V$. For $k\in\{1,\dots,m\}$, let $w_k=v_1+\dots+v_k$.}
-	(a) \TextB{Show that $\Spn(v_1,\dots,v_m)$ = $\Spn(w_1,\dots,w_m)$.}
-	(b) \TextB{Show that $(v_1,\dots,v_m)$ is linely inde $\Longleftrightarrow$ $(w_1,\dots,w_m)$ is linely inde.}
+	(a) \TextB{Show that $\Spn(v_1,\dots,v_m)=\Spn(w_1,\dots,w_m)$.}
+	(b) \TextB{Show that [P] $(v_1,\dots,v_m)$ is linely inde $\Longleftrightarrow$ $(w_1,\dots,w_m)$ is linely inde [Q].}
 }\par\quad
-(a) Let $\Spn(v_1,\dots,v_m)=U$. Assume that $\forall v\in U,\,\,\exists\,\,a_i\in\Fbb,$\par\quad\Ha
-$v=a_1 v_1+\dots+a_m v_m=b_1 w_1+\dots+b_m w_m=\sum\limits_{j=1}^m(\sum\limits_{i=j}^m b_i)v_j$\par\quad\Ha
-$\Rightarrow b_1=a_1,\,\,\,b_i=a_i-\sum\limits_{r=1}^{i-1} b_r.$ Thus $\,\,\exists\,\,b_i\in\Fbb$ such that $v=b_1 w_1+\dots+b_m w_m$.\par\quad\Ha
-又 Each $w_i\in U\Rightarrow\Spn(v_1,\dots,v_m)$ = $\Spn(w_1,\dots,w_m)$.\par\quad
-(b) $a_1 w_1+\dots+a_m w_m=0$\par\quad\Hb
-$\Rightarrow (a_1+\dots+a_m)v_1+\dots+(a_i+\dots+a_m)v_i+\dots+a_m v_m=0$\par\quad\Hb
-$\Rightarrow a_m=\cdots=(a_m+\dots+a_i)=\cdots=(a_m+\dots+a_1)=0.\hfill\square$\par
+(a) $a_k=\sum\limits_{j=1}^k b_j\Leftarrow\;\;a_1 v_1+\dots+a_m v_m=b_1 w_1+\dots+b_m w_m\;\;\Rightarrow b_1=a_1,\;b_k=a_k-\sum\limits_{j=1}^{k-1}b_j=\sum\limits_{j=1}^k (-1)^{k-j}a_j.$\vspace{10pt}\par\quad
+(b) \vspace{-13.5pt}\AlignEq{}{\qquad
+	P\Rightarrow Q:\;\;&b_1 w_1+\dots+b_m w_m=0=a_1 v_1+\dots+a_m v_m,\textup{\;where\;}0=a_k=\sum\limits_{j=1}^k b_k\hspace{106pt}
+	%\\[-10pt]\Rightarrow\;&\underset{\begin{array}{l}a_m\end{array}}{\underbrace{b_1+\dots+b_m}}=\cdots=\underset{\begin{array}{l}a_k\end{array}}{\underbrace{b_1+\dots+b_k}}=\cdots=\!\underset{\begin{array}{l}a_1\end{array}}{\underbrace{\;\;b_1\;\;}}\!\!=0.
+}\par\vspace{-10pt}\quad\Hb
+\AlignEq{}{\qquad\quad Q\Rightarrow P:\;\;&a_1 v_1+\dots+a_m v_m=0=b_1 w_1+\dots+b_m w_m=0, \textup{\;where\;} 0=b_1=a_1,\;0=b_k=\sum\limits_{j=1}^k (-1)^{k-j}a_j
+%\\[-15pt]\Rightarrow\;&b_1=\cdots=b_m=0\Rightarrow a_k=\sum\limits_{j=1}^k b_j=0 {\;for\;each\;} k.
+}\par\vspace{-6pt}\hfill$\square$\vspace{-10pt}\par\quad\Hb
+\Or  Because $W=\Spn(v_1,\dots,v_m)=\Spn(w_1,\dots,w_m).$\par\quad\Hb
+By [2.21](b), a list of length $(m-1)$ spans $W,$ then by [2.23],\par\quad\Hb
+$(w_1,\dots,w_m)$ linely dep $\Rightarrow(v_1,\dots,v_m)$ linely dep. Conversely it is true as well.$\hfill\square$\par
 \ProblemEnding\par
 
 \ProblemN{10}{
 	\TextNL{Suppose $(v_1,\dots,v_m)$ is linely inde in $V$ and $w\in V$.}
 	(a) \TextNL{Prove that if $(v_1+w,\dots,v_m+w)$ is linely depe, then $w\in\Spn(v_1,\dots,v_m)$.}
-	(b) \TextNL{Show that $(v_1,\dots,v_m,w)$ is linely inde $\Longleftrightarrow w\not\in\Spn(v_1,\dots,v_m)$.}
+	(b) \TextNL{Show that [P] $(v_1,\dots,v_m,w)$ is linely inde $\Longleftrightarrow w\not\in\Spn(v_1,\dots,v_m)$ [Q].}
 }\par\quad
 (a) \dbsp Suppose $a_1(v_1+w)+\dots+a_m(v_m+w)=0,\,\,\exists\,\,a_i\neq 0\Rightarrow a_1 v_1+\dots+a_m v_m=0=-(a_1+\dots+a_m)w.$\par\quad\Ha
 \dbsp Then $a_1+\dots+a_m\neq 0$, for if not, $a_1 v_1+\dots+a_m v_m=0$ while $a_i\neq 0$ for some $i$, contradicts.\par\quad\Ha
 Hence $w\in\Spn(v_1,\dots,v_m)$.\par\quad
-(b) Suppose $w\in\Spn(v_1,\dots,v_m)$. Then $(v_1,\dots,v_m,w)$ is linely depe.\par\quad\Hb
-Thus have we proven the “$\Rightarrow$” by its contrapositive.\par\quad\Hb
-Suppose $w\not\in\Spn(v_1,\dots,v_m)$. Then by [2.23], $(v_1,\dots,v_m,w)$ is linely inde. $\hfill\square$\par
+(b) ${}^\neg Q\Rightarrow{}^\neg P:$ Suppose $w\in\Spn(v_1,\dots,v_m)$. Then $(v_1,\dots,v_m,w)$ is linely depe.\par\quad\Hb
+$Q\Rightarrow P:$ Suppose $w\not\in\Spn(v_1,\dots,v_m)$. Then by [2.23], $(v_1,\dots,v_m,w)$ is linely inde. $\hfill\square$\par
 \ProblemEnding\par
 
 \ProblemN{14}{
-	\TextNL{Prove that $V$ is infinite-dim if and only if there is a sequence $(v_1,v_2,\dots)$ in $V$}
-	\TextNL{such that $(v_1,\dots,v_m)$ is linely inde for every $m\in\Nbp$.}
-}Similar to [2.16].\par\quad
-{\small Suppose there is a sequence $(v_1,v_2,\dots)$ in $V$ such that $(v_1,\dots,v_m)$ is linely inde for any $m\in$ {\timesbf N}$^+$.}\par\quad
-Choose an $m$. Suppose a linely inde list $(v_1,\dots,v_m)$ spans $V$.\par\quad
-Then there exists $v_{m+1}\in V$ but $v_{m+1}\not\in\Spn(v_1,\dots,v_m)$. Hence no list spans $V$. Thus $V$ is infinite-dim.\par\quad 
-Conversely it is true as well. For if not, $V$ must be finite-dim, contradicting the assumption.$\hfill\square$
-\par
+	\TextNL{Prove that [P] $V$ is infinite-dim $\Longleftrightarrow[Q]\left|\hspace{-8pt}\begin{array}{l}$ there is a sequence $(v_1,v_2,\dots)$ in $V\\[-8pt]$ such that $(v_1,\dots,v_m)$ is linely inde for each $m\in\Nbp.\end{array}\right.$}
+}\par\quad
+$P\Rightarrow Q:\;$ Suppose $V$ is infinite-dim, so that no list spans $V$.\par\quad\hspace{44pt}
+{\timesbf Step 1}\;\; Pick a $v_1\neq 0,(v_1)$ linely inde.\par\quad\hspace{44pt}
+{\timesbf Step m}\; Pick a $v_m\not\in\Spn(v_1,\dots,v_{m-1}),$ by Problem (10)(b), $(v_1 , ..., v_m)$ is linely inde.\par\quad\hspace{44pt}
+This process recursively defines the desired sequence $(v_1 , v_2 , \dots).$\par\quad
+${}^\neg P\Rightarrow{}^\neg Q:\;$ Suppose $V$ is finite-dim and $V=\Spn(w_1 , ..., w_m)$.\par\quad\hspace{60pt}
+Let $(v_1 , v_2 , \dots)$ be a sequence in $V$, then $(v_1,v_2,\dots,v_{m+1})$ must be linely dep.\par\quad
+\Or $Q\Rightarrow P:\;$ Suppose there is such a sequence.\par\qquad\hspace{54pt}
+Choose an $m$. Suppose a linely inde list $(v_1,\dots,v_m)$ spans $V$.\par\qquad\hspace{54pt}
+( Similar to [2.16] ) Then $\exists\,v_{m+1}\in V\backslash\Spn(v_1,\dots,v_m)$.\par\qquad\hspace{54pt}
+Hence no list spans $V$. Thus $V$ is infinite-dim.$\hfill\square$\par
 \ProblemEnding\par
 
 \ProblemN{15}{
 	\TextNL{Prove that $\Fbb^\infty$ is infinite-dim.}
-}Let $e_i=(0,\dots,0,1,0,\dots)\in\Fbb^\infty$ for every $m\in\Nbp$, where ‘1’ is on the i$^{th}$ entry of $e_i$.\par\quad
-Suppose $\Fbb^\infty$ is finite-dim. Then let $\Spn(e_1,\dots,e_m)=V$. But $e_{m+1}\not\in\Spn(e_1,\dots,e_m)$. Contradicts. $\square$\par
+}\par\quad
+Let $e_i=(0,\dots,0,1,0,\dots)\in\Fbb^\infty$ for every $m\in\Nbp$, where $‘1’$ is on the $i^\textup{th}$ entry of $e_i$.\par\quad
+Suppose $\Fbb^\infty$ is finite-dim and $\Spn(e_1,\dots,e_m)=V$. But $\exists\,e_{m+1}\not\in\Spn(e_1,\dots,e_m)$. Contradicts. $\hfill\square$\par
 \ProblemEnding\par
 
 \ProblemN{16}{
-	\TextNL{Prove that the real vecsp of all continuous real-valued functions}
-	\TextNL{on the interval $[0,1]$ is infinite-dim.}
-}Denote the vecsp by $U$. Note that for each $m\in\Nbp$, $(1,x,\dots,x^m)$ is linely inde.\par\quad
-{\small
-$\MathRightMid{l}{$Because if $a_0,\dots,a_m\in\Rbb$ are such that $a_0+a_1 x+\dots+a_m x^m=0,\,\,\forall x\in[0,1],\\ $ then the poly has infinitely many roots and hence $a_0=\dots=a_m=0$. $}$\quad Similar to [2.16], $U$ is infinite-dim.}\par\quad
+	\TextNL{Prove that the vecsp of all continuous functions in $\Rbb^{[0,1]}$ is infinite-dim.}
+}Denote the vecsp by $U$.\par\quad
+%Note that for each $m\in\Nbp$, $(1,x,\dots,x^m)$ is linely inde in $\PoR{}$.\par\quad
+Choose an $m\in\Nbp.$ Suppose $a_0,\dots,a_m\in\Rbb$ are such that $a_0+a_1 x+\dots+a_m x^m=0,\,\forall x\in[0,1].$\par\quad
+Then the poly has infinitely many roots and hence $a_0=\dots=a_m=0$.\par\quad
+Thus $(1,x,\dots,x^m)$ is linely inde in $\Rbb^{[0,1]}.$ Similar to [2.16], $U$ is infinite-dim.\par\vspace{10pt}\quad
 \Or Note that for $a_n=\displaystyle\frac{1}{n},\,\,\,\,\,a_1<a_2<\dots<a_m,\,\,\,\forall m\in\Nbp$.\par\quad
-Suppose $f_n=\MathLeftBrace{r}{ x-{\displaystyle\frac{1}{n}},\,\,\,x\in\,${\LARGE[}$\displaystyle\frac{1}{n},1${\LARGE)}$\\ 0\,\,\,\,\,\,\,\,\,\,\,\,\,,\,\,\,x\in\,${\LARGE[}$0,\displaystyle\frac{1}{n}${\LARGE)}$
-}.$
-Then for any $m$, $f_1(\frac{1}{m})=\dots=f_m(\frac{1}{m})$, while $f_{m+1}(\frac{1}{m})\neq 0$.\par\vspace{3pt}\quad
+Suppose $f_n=\left\{\begin{array}{r}x-{\displaystyle\frac{1}{n}},\,\,\,x\in\,${\LARGE(}$\displaystyle\frac{1}{n},1${\LARGE)}$\\0\quad\;\;\;,\;\;x\in\,${\LARGE[}$0,\displaystyle\frac{1}{n}${\LARGE]}$\end{array}\right|$
+Then for any $m$, $f_1\left(\displaystyle\frac{1}{m}\right)=\dots=f_m\left(\displaystyle\frac{1}{m}\right)$, while $f_{m+1}\left(\displaystyle\frac{1}{m}\right)\neq 0$.\par\vspace{6pt}\quad
 Hence $f_{m+1}\not\in\Spn(f_1,\dots,f_m)$. Thus by Problem (14), $U$ is infinite-dim.\par
 \ProblemEnding\par
 
@@ -585,10 +599,12 @@ Hence $f_{m+1}\not\in\Spn(f_1,\dots,f_m)$. Thus by Problem (14), $U$ is infinite
 Suppose $(p_0,p_1,\dots,p_m)$ is linely inde. Define $p\in\PoF{m}$ by $p(z)=z\,\,\forall z\in\Fbb.$\par\quad
 But $\forall a_i\in\Fbb,z\neq a_0 p_0(z)+\dots+a_m p_m(z)$, for if not, let $z=2$, contradicts.
 Thus $z\not\in\Spn(p_0,p_1,\dots,p_m)$.\par\quad
-Then $\Spn(p_0,p_1,\dots,p_m)\subsetneqq\PoF{m}$ while the list $(p_0,p_1,\dots,p_m)$ has length $m+1$.\par\quad
+Then $\Spn(p_0,p_1,\dots,p_m)\subsetneq\PoF{m}$ while the list $(p_0,p_1,\dots,p_m)$ has length $(m+1)$.\par\quad
 Hence $(p_0,p_1,\dots,p_m)$ is linely depe in $\PoF{m}$.\par\quad
-For if not, notice that the list $(1,z,\dots,z^m)$ spans $\PoF{m}$,\par\qquad\qquad\quad\,\,
-thus by [2.23], $(p_0,p_1,\dots,p_m)$ spans $\PoF{m}$. Contradicts.$\hfill\square$\par
+For if not, because $(1,z,\dots,z^m)$ of length $(m+1)$ spans $\PoF{m}$,\par\qquad\qquad\quad\,\,
+thus by [2.23] trivially, $(p_0,p_1,\dots,p_m)$ spans $\PoF{m}$. Contradicts.$\hfill\square$\vspace{10pt}\par\quad
+\Or Note that $\PoF{m}=\Spn\underbrace{(1,z,\dots,z^m)}_{\textup{of length\;}(m+1)}$ and then $(p_0,p_1,\dots,p_m,x)$ of length $(m+2)$ is linely dep.\par\quad
+( See the above ) Now $z\not\in\Spn(p_0,p_1,\dots,p_m)$ and hence $(p_0,p_1,\dots,p_m)$ is linely dep.$\hfill\square$\par
 \ProblemEnding\par
 \ChapterEnding
 
@@ -786,7 +802,7 @@ Now $\left|(A\cup B)\cup C\right|=\left|A\cup B\right|+\left|C\right|-\left|(A\c
 And $\left|(A\cup B)\cap C\right|=\left|(A\cap C)\cup(B\cap C)\right|=\left|A\cap C\right|+\left|B\cap C\right|-\left|A\cap B\cap C\right|.$\par\quad
 Hence $\left|(A\cup B)\cup C\right|=\left| A\right|+\left| B\right|+\left| C\right|+\left| A\cap B\cap C\right|-\left| A\cap B\right|-\left| A\cap C\right|-\left| B\cap C\right|.$\par\vspace{12pt}\quad
 Because $(V_1+V_2)+V_3=V_1+(V_2+V_3)=(V_1+V_3)+V_2$.\par\quad
-\AlignEq{\hspace{10pt}}{\dim(V_1+V_2+V_3)&=\dim(V_1+V_2)+\dim(V_3)-\dim\left((V_1+V_2)\cap V_3\right)\quad(1)\qquad\qquad\qquad\qquad\quad\,\,\\&=\dim(V_2+V_3)+\dim(V_1)-\dim\left((V_2+V_3)\cap V_1\right)\quad(2)\\&=\dim(V_1+V_3)+\dim(V_2)-\dim\left((V_1+V_3)\cap V_2\right)\quad(3)}\par\quad
+\AlignEq{\hspace{10pt}}{\dim(V_1+V_2+V_3)&=\dim(V_1+V_2)+\dim(V_3)-\dim\left((V_1+V_2)\cap V_3\right)\quad(1)\hspace{114pt}\\&=\dim(V_2+V_3)+\dim(V_1)-\dim\left((V_2+V_3)\cap V_1\right)\quad(2)\\&=\dim(V_1+V_3)+\dim(V_2)-\dim\left((V_1+V_3)\cap V_2\right)\quad(3)}\par\quad
 Notice that in general, $(X+Y)\cap Z\neq X\cap Z+Y\cap Z$.\par\quad
 For example, $X=\left\{(x,0)\in\Rbb^2:x\in\Rbb\right\},Y=\left\{(0,y)\in\Rbb^2:y\in\Rbb\right\},Z=\left\{(z,z)\in\Rbb^2:z\in\Rbb\right\}$.\par
 {\,}\par
