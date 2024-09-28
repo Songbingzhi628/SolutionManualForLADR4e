@@ -320,7 +320,7 @@ By Assoc: $(a+\infty)+(-\infty)\neq a+\left(\infty+(-\infty)\right)$.\par\quad
 \Or By Distr: $\infty=(2+(-1))\infty\neq 2\infty+(-\infty)=\infty+(-\infty)=0.\hfill\square$\par
 \ProblemEnding\par
 \ChapterEnding
-\clearpage
+\pagebreak
 \ChapterDecl{Ch1C}{1$\cdot$C}
 
 \ProblemN{7}{
@@ -817,9 +817,8 @@ $$(1)\;\dim(V_1\cap V_2\cap V_3)=\dim V_1+\dim V_2+\dim V_3-\dim(V_2+V_3)-\dim(V
 $$(2)\;\dim(V_1\cap V_2\cap V_3)=\dim V_1+\dim V_2+\dim V_3-\dim(V_1+V_3)-\dim(V_2+(V_1\cap V_3)).\vspace{-46pt}$$\TextB{}
 $$(3)\;\dim(V_1\cap V_2\cap V_3)=\dim V_1+\dim V_2+\dim V_3-\dim(V_1+V_2)-\dim(V_3+(V_1\cap V_2)).\vspace{-6pt}$$\TextB{}
 For (1). Because $\dim (V_1\cap V_2\cap V_3)=\dim V_1+\dim(V_2\cap V_3)-\dim(V_1+(V_2\cap V_3)).$\TextB{}
-And $\dim(V_2\cap V_3)=\dim V_2+\dim V_3-\dim(V_2+V_3).$\TextB{}
-Moreover, $\dim(\bigcap\limits_{i=1}^m V_i).$\TextB{}
-
+And $\dim(V_2\cap V_3)=\dim V_2+\dim V_3-\dim(V_2+V_3).$\par
+%Moreover, $\dim(\bigcap\limits_{i=1}^m V_i).$\TextB{}
 %\AlignEq{}{\dim(V_1\cap V_2\cap V_3)=\,&\dim V_1+\dim V_2+\dim V_3-\frac{\dim(V_2+V_3)+\dim(V_1+V_3)+\dim(V_1+V_2)}{3}\\\,&-\displaystyle\frac{\dim(V_1+(V_2\cap V_3))+\dim(V_2+(V_1\cap V_3))+\dim(V_3+(V_1\cap V_2))}{3}.}\par
 \ProblemEnding\par
 
@@ -837,21 +836,24 @@ By \TIPS, $\dim(V_1\cap V_2\cap V_3)\geq\dim V_1+\dim V_2+\dim V_3-2\dim V>0.\hf
 By \TIPS, $\dim(V_1\cap V_2\cap V_3)>2\dim V-\dim(V_2+V_3)-\dim(V_1+(V_2\cap V_3))\geq 0.\hfill\square$\par
 \ProblemEnding\par
 
-\BulletPoint \,\hspace{1pt}\Comment\TextB{}
+%\BulletPoint \,\hspace{1pt}\Comment\TextB{}
 %{Suppose $V_1,\dots,V_m$ are subsets of $V$, with each $\left|V_i\right|>\frac{\left|V\right|}{2},$ and $V_j\cap V_k\neq\varnothing$ for each $j\neq k.$}\TextB{}
 %{We can give an example such that $\bigcap\limits_{i=1}^m V_i=\varnothing:\;m=3,V=\{1,2,4\},V_1=\{1,2\},V_2=\{2,4\},V_3=\{4,1\}.$}\TextB{}
-{Suppose $V_1,\dots,V_m$ are subsps of $V$, with each $\dim V_i=\left\lceil{\frac{\dim V}{2}}\right\rceil,$ and $V_j\cap V_k\neq\{0\}$ for each $j\neq k.$}\TextB{}
-{We can give an example such that $\bigcap\limits_{i=1}^m V_i=\{0\}:$}\TextB{}\qquad\qquad
-{$m=3,\;V=\Spn(v_1,v_2,v_3),\;V_1=\Spn(v_1,v_2),\;V_2=\Spn(v_2,v_3),\;V_3=\Spn(v_1,v_3).$}\vspace{4pt}\TextB{}
-{But if $\dim V_i\geq\left\lfloor{\frac{\dim V}{2}}\right\rfloor+2,$ then $s$.}\par
-\ProblemEnding\par
+%{Suppose $V_1,\dots,V_m$ are subsps of $V$, with each $\dim V_i=\left\lceil{\frac{\dim V}{2}}\right\rceil,$ and $V_j\cap V_k\neq\{0\}$ for each $j\neq k.$}\TextB{}
+%{We can give an example such that $\bigcap\limits_{i=1}^m V_i=\{0\}:$}\TextB{}\qquad\qquad
+%{$m=3,\;V=\Spn(v_1,v_2,v_3),\;V_1=\Spn(v_1,v_2),\;V_2=\Spn(v_2,v_3),\;V_3=\Spn(v_1,v_3).$}\vspace{4pt}\TextB{}
+%{But if $\dim V_i\geq\left\lfloor{\frac{\dim V}{2}}\right\rfloor+2,$ then $s$.}\par
+%\ProblemEnding\par
 
 \ProblemBnoor{({\normalsize 4E 2.C.16})\TextB{}}{
 	\TextB{Suppose $V$ is finite-dim and $U$ is a subsp of \,$V$ with $U\neq V$. Let $n=\dim V,m=\dim U$.}
 	\TextB{Prove that there exist $(n-m)$ subsps of \,$V$, say $U_1,\dots,U_{n-m}$, each of dimension $(n-1)$,}
 	\TextB{such that $\bigcap\limits_{i=1}^{n-m}U_i=U$.}
-}Let $(v_1,\dots,v_m)$ be a basis of $U$, extend to a basis of $V$ as $(v_1,\dots,v_m,\dots,v_n)$.\par\qquad\quad\quad\quad
-Define $U_i=\Spn(v_1,\dots,v_m,v_{m+1},\dots,v_{m+i-1},v_{m+i+1},\dots,v_n)$ for each $i$. Thus we are done.\par
+}\par\quad
+Let $(v_1,\dots,v_m)$ be a basis of $U$, extend to a basis of $V$ as $(v_1,\dots,v_m,u_1,\dots,v_{n-m})$.\par\quad
+Define $U_i=\Spn(v_1,\dots,v_m,u_1,\dots,u_{i-1},u_{i+1},\dots,u_{n-m})$ for each $i$. Then $U\subseteq U_i$ for each $i.$\vspace{4pt}\par\quad
+\vspace{2pt}And because $\forall v\in \bigcap\limits_{i=1}^{n-m}U_i,v=v_0+b_1 u_1+\dots+b_{n-m} u_{n-m}\in U_i\Rightarrow b_i=0 \textup{\;for\;each\;} i\Rightarrow v\in U.$\par\quad
+\vspace{8pt}Hence $\bigcap\limits_{i=1}^{n-m}U_i\subseteq U.\hfill\square$\par
 \Example\,\,\, {\normalsize Suppose $\dim V=6,\dim U=3$ .\par\quad
 $(\underbrace{\underbrace{v_1,v_2,v_3}_\textup{Basis of U},v_4,v_5,v_6}_\textup{Basis of V}),$ define $\MathRightBrace{l}{$
 $U_1=\Spn(v_1,v_2,v_3)\oplus\Spn(v_5,v_6)\\ $
@@ -864,12 +866,16 @@ $}\Rightarrow\dim U_i=6-1,\,\,i=\underbrace{1,2,3}_{6-3=3}.$}
 \ProblemN{14}{
 	\TextNL{Suppose that $V_1,\dots,V_m$ are finite-dim subsps of \,$V$.}
 	\TextNL{Prove that $V_1+\dots+V_m$ is finite-dim and $\dim(V_1+\dots+V_m)\leq\dim V_1+\dots+\dim V_m$.}
-}Choose a basis $ \mathcal{E}_i$ of $V_i\Rightarrow V_1+\dots+V_m=\Spn( \mathcal{E}_1\cup\cdots\cup \mathcal{E}_m);\,\,\,\dim U_i=\card \mathcal{E}_i$.\par\quad
+}\par\quad
+Choose a basis $ \mathcal{E}_i$ of $V_i\Rightarrow V_1+\dots+V_m=\Spn( \mathcal{E}_1\cup\cdots\cup \mathcal{E}_m);\,\,\,\dim V_i=\card \mathcal{E}_i$.\par\quad
 Then $\dim(V_1+\dots+V_m)=\dim\Spn( \mathcal{E}_1\cup\cdots\cup \mathcal{E}_m)$.\par\quad
-又 $\dim\Spn( \mathcal{E}_1\cup\cdots\cup E_m)\leq\card( \mathcal{E}_1\cup\cdots\cup \mathcal{E}_m)\leq\card \mathcal{E}_1+\cdots+\card \mathcal{E}_m$.\par\quad
-Thus $\dim(V_1+\dots+V_m)\leq \dim U_1+\dots+\dim U_m.$\par\quad
-\Comment \,\,\,$\dim(V_1+\dots+V_m)=\dim U_1+\dots+\dim U_m\Longleftrightarrow V_1+\dots+V_m$ is a direct sum.\par\qquad\qquad\qquad
-For each $i$, $(V_1+\dots+V_i)\cap V_{i+1}=\{0\}\Longleftrightarrow V_1+\dots+V_m$ is a direct sum $\Longleftrightarrow\square$\par
+又 $\dim\Spn( \mathcal{E}_1\cup\cdots\cup\mathcal{E}_m)\leq\card( \mathcal{E}_1\cup\cdots\cup \mathcal{E}_m)\leq\card \mathcal{E}_1+\cdots+\card \mathcal{E}_m$.\par\quad
+Thus $\dim(V_1+\dots+V_m)\leq \dim V_1+\dots+\dim V_m.\hfill\square$\par\quad
+\Comment \,\,\,{\timessl\Large$\dim(V_1+\dots+V_m)=\dim V_1+\dots+\dim V_m\Longleftrightarrow V_1+\dots+V_m$ is a direct sum.}\par\qquad\qquad\qquad
+For each $i$, $(V_1+\dots+V_i)\cap V_{i+1}=\{0\}\Longleftrightarrow V_1+\dots+V_m$ is a direct sum\par\qquad\qquad\;\;
+又 $\Longleftrightarrow(\mathcal{E}_1\cap\dots\cap\mathcal{E}_{k-1})\cap\mathcal{E}_k=\varnothing$ for each $i$ 又 $\dim\Spn(\mathcal{E}_1\cup\dots\cup\mathcal{E}_m)=\card(\mathcal{E}_1\cup\dots\cup\mathcal{E}_m)$\par\qquad\qquad\qquad
+$\Longleftrightarrow\dim\Spn(\mathcal{E}_1\cup\dots\cup\mathcal{E}_m)=\card\mathcal{E}_1+\dots+\card\mathcal{E}_m$\par\qquad\qquad\qquad
+$\Longleftrightarrow\dim(V_1+\dots+V_m)=\dim V_1+\dots+\dim V_m.\hfill\square$\par
 \ProblemEnding\par
 
 \ProblemN{17}{
@@ -881,18 +887,20 @@ For each $i$, $(V_1+\dots+V_i)\cap V_{i+1}=\{0\}\Longleftrightarrow V_1+\dots+V_
 Because $\left|X\cup Y\right|=\left|X\right|+\left|Y\right|-\left|X\cap Y\right|;\,\,\,(X\cup Y)\cap Z=(X\cap Z)\cup(Y\cap Z)$.\par\quad
 Now $\left|(A\cup B)\cup C\right|=\left|A\cup B\right|+\left|C\right|-\left|(A\cup B)\cap C\right|.$\par\quad
 And $\left|(A\cup B)\cap C\right|=\left|(A\cap C)\cup(B\cap C)\right|=\left|A\cap C\right|+\left|B\cap C\right|-\left|A\cap B\cap C\right|.$\par\quad
-Hence $\left|(A\cup B)\cup C\right|=\left| A\right|+\left| B\right|+\left| C\right|+\left| A\cap B\cap C\right|-\left| A\cap B\right|-\left| A\cap C\right|-\left| B\cap C\right|.$\par\vspace{12pt}\quad
+Hence $\left|(A\cup B)\cup C\right|=\left| A\right|+\left|B\right|+\left|C\right|+\left|A\cap B\cap C\right|-\left| A\cap B\right|-\left| A\cap C\right|-\left| B\cap C\right|.$\par\vspace{12pt}\quad
 Because $(V_1+V_2)+V_3=V_1+(V_2+V_3)=(V_1+V_3)+V_2$.\par\quad
 \AlignEq{\hspace{10pt}}{\dim(V_1+V_2+V_3)&=\dim(V_1+V_2)+\dim(V_3)-\dim\left((V_1+V_2)\cap V_3\right)\quad(1)\hspace{114pt}\\&=\dim(V_2+V_3)+\dim(V_1)-\dim\left((V_2+V_3)\cap V_1\right)\quad(2)\\&=\dim(V_1+V_3)+\dim(V_2)-\dim\left((V_1+V_3)\cap V_2\right)\quad(3)}\par\quad
 Notice that in general, $(X+Y)\cap Z\neq X\cap Z+Y\cap Z$.\par\quad
 For example, $X=\left\{(x,0)\in\Rbb^2:x\in\Rbb\right\},Y=\left\{(0,y)\in\Rbb^2:y\in\Rbb\right\},Z=\left\{(z,z)\in\Rbb^2:z\in\Rbb\right\}$.\par
 {\,}\par
-\BulletPoint \,\Corollary \,\,\,{\timessl\Large If $V_1,V_2$ and $V_3$ are finite-dim vecsps, then} {\small $\displaystyle\frac{(1)+(2)+(3)}{3}:$
+\BulletPoint \,\Corollary \,\,\,{\timessl\Large Suppose $V_1,V_2$ and $V_3$ are finite-dim vecsps, then} {\small $\displaystyle\frac{(1)+(2)+(3)}{3}:$
 }\par
 \AlignEq{\hspace{20pt}}{\dim(V_1+V_2+V_3)=\dim &\,V_1+\dim V_2+\dim V_3\\&-\displaystyle\frac{\dim(V_1\cap V_2)+\dim(V_1\cap V_3)+\dim(V_2\cap V_3)}{3}\\&-\displaystyle\frac{\dim\left((V_1+V_2)\cap V_3\right)+\dim\left((V_1+V_3)\cap V_2\right)+\dim\left((V_2+V_3)\cap V_1\right)}{3}.}\par\quad
 {\timessl The formula above may seem strange because the right side does not look like an integer.$\hfill\square$}\par
 \ProblemEnding\par
 \ChapterEnding
+
+\pagebreak
 
 \ChapterDecl{Ch3A}{3$\cdot$A}
 
