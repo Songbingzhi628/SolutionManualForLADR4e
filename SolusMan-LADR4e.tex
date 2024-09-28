@@ -106,7 +106,7 @@
 \def\HII{\quad\hspace{7.5pt}}
 \def\HIII{}
 
-\def\OR{\large O{\footnotesize R.}}
+\def\OR{\large O{\footnotesize R}}
 \def\Or{\large O{\footnotesize R.} }
 \def\Solution{{\timesbfx\large S\footnotesize{OLUTION:}}\,\,\,}
 \def\NOTE{\timesnr\large N{\footnotesize OTE}}
@@ -199,7 +199,7 @@
 }
 
 \newcommand{\ProblemBor}[2]{
-	\BulletPoint\,\hspace{0.5pt}\dbsp{\OR} (#1) #2\vspace{-16pt}\par
+	\BulletPoint\,\hspace{0.5pt}\OR(#1) #2\vspace{-16pt}\par
 	\Solution
 }
 
@@ -507,15 +507,15 @@ $Q\overset{2}{\Rightarrow} P:$ no scalar multi $\Rightarrow$ if $av+bw=0,$ then 
 Notice that $V=\Spn(v_1,\dots,v_n)\Longleftrightarrow\forall v\in V,\,\exists\,a_1,\dots,a_n\in\Fbb,v=a_1v_1+\dots+a_nv_n.$\par\quad
 Assume that $\forall v\in V,\,\exists\,a_1,\dots,a_4,b_1,\dots,b_4\in\Fbb,$ ( that is, if $\exists\,a_i,$ then we are to find $b_i,$ vice versa )$\\[-8pt] $
 \AlignEq{}{v&=a_1 v_1+a_2 v_2+a_3 v_3+a_4 v_4\\&=b_1(v_1-v_2)+b_2(v_2-v_3)+b_3(v_3-v_4)+b_4 v_4\\&=b_1 v_1+(b_2-b_1)v_2+(b_3-b_2)v_3+(b_4-b_3)v_4.\\[-25pt]}\par\quad
-Now we can let $b_i=\sum\limits_{r=1}^i a_r$ if we are to prove $Q$ with $P$ already assumed;\par\qquad\qquad\quad\hspace{3pt}
+Now we can let $b_i=\sum_{r=1}^i a_r$ if we are to prove $Q$ with $P$ already assumed;\par\qquad\qquad\quad\hspace{3pt}
 or let $a_i=b_i-b_{i-1}$ with $b_{-1}=0,$ if we are to prove $P$ with $Q$ already assumed.$\hfill\square$\par
 \ProblemEnding\par
 
 \ProblemN{6}{
 	\TextN{Prove that [P] $(v_1,v_2,v_3,v_4)$ is linely inde} \TextN{\hspace{37pt}$\Longleftrightarrow$ [Q] $(v_1-v_2,v_2-v_3,v_3-v_4,v_4)$ is linely inde.}
-}\vspace{6pt}\AlignEq{}{\qquad\qquad\qquad P\Rightarrow Q:\;&a_1(v_1-v_2)+a_2(v_2-v_3)+a_3(v_3-v_4)+a_4 v_4=0\hspace{154pt}\\\Rightarrow&a_1 v_1+(a_2-a_1)v_2+(a_3-a_2)v_3+(a_4-a_3)v_4=0\\\Rightarrow&a_1=a_2-a_1=a_3-a_2=a_4-a_3=0}\par\quad
+}\vspace{0pt}\AlignEq{}{\qquad\qquad\qquad P\Rightarrow Q:\;&a_1(v_1-v_2)+a_2(v_2-v_3)+a_3(v_3-v_4)+a_4 v_4=0\hspace{154pt}\\\Rightarrow\;&a_1 v_1+(a_2-a_1)v_2+(a_3-a_2)v_3+(a_4-a_3)v_4=0\\\Rightarrow&\;a_1=a_2-a_1=a_3-a_2=a_4-a_3=0}\par\quad
 \vspace{-10pt}
-\AlignEq{}{\qquad\qquad\qquad Q\Rightarrow P:\;&a_1 v_1+a_2 v_2+a_3 v_3+a_4 v_4=0\\\Rightarrow&a_1(v_1-v_2)+(a_1+a_2)(v_2-v_3)+(a_1+a_2+a_3)(v_3-v_4)+(a_1+\dots+a_4)v_4=0\\\Rightarrow&a_1=a_1+a_2=a_1+a_2+a_3=a_1+\dots+a_4=0.}\par
+\AlignEq{}{\qquad\qquad\qquad Q\Rightarrow P:\;&a_1 v_1+a_2 v_2+a_3 v_3+a_4 v_4=0\\\Rightarrow\;&a_1(v_1-v_2)+(a_1+a_2)(v_2-v_3)+(a_1+a_2+a_3)(v_3-v_4)+(a_1+\dots+a_4)v_4=0\\\Rightarrow\;&a_1=a_1+a_2=a_1+a_2+a_3=a_1+\dots+a_4=0.}\par
 \vspace{-25pt}$\hfill\square$\par
 \ProblemEnding\par
 %
@@ -532,14 +532,14 @@ or let $a_i=b_i-b_{i-1}$ with $b_{-1}=0,$ if we are to prove $P$ with $Q$ alread
 	(a) \TextB{Show that $\Spn(v_1,\dots,v_m)=\Spn(w_1,\dots,w_m)$.}
 	(b) \TextB{Show that [P] $(v_1,\dots,v_m)$ is linely inde $\Longleftrightarrow$ $(w_1,\dots,w_m)$ is linely inde [Q].}
 }\par\quad
-(a) $a_k=\sum\limits_{j=1}^k b_j\Leftarrow\;\;a_1 v_1+\dots+a_m v_m=b_1 w_1+\dots+b_m w_m\;\;\Rightarrow b_1=a_1,\;b_k=a_k-\sum\limits_{j=1}^{k-1}b_j=\sum\limits_{j=1}^k (-1)^{k-j}a_j.$\vspace{10pt}\par\quad
+(a) {\timessl\normalsize let} $a_k=\sum\limits_{j=1}^k b_j\Leftarrow\;\,a_1 v_1+\dots+a_m v_m=b_1 w_1+\dots+b_m w_m\;\,\Rightarrow$ {\timessl\normalsize let} $b_1=a_1,\;b_k=a_k-\sum\limits_{j=1}^{k-1}b_j=\sum\limits_{j=1}^k (-1)^{k-j}a_j.$\vspace{10pt}\par\quad
 (b) \vspace{-13.5pt}\AlignEq{}{\qquad
 	P\Rightarrow Q:\;\;&b_1 w_1+\dots+b_m w_m=0=a_1 v_1+\dots+a_m v_m,\textup{\;where\;}0=a_k=\sum\limits_{j=1}^k b_k\hspace{106pt}
 	%\\[-10pt]\Rightarrow\;&\underset{\begin{array}{l}a_m\end{array}}{\underbrace{b_1+\dots+b_m}}=\cdots=\underset{\begin{array}{l}a_k\end{array}}{\underbrace{b_1+\dots+b_k}}=\cdots=\!\underset{\begin{array}{l}a_1\end{array}}{\underbrace{\;\;b_1\;\;}}\!\!=0.
 }\par\vspace{-10pt}\quad\Hb
 \AlignEq{}{\qquad\quad Q\Rightarrow P:\;\;&a_1 v_1+\dots+a_m v_m=0=b_1 w_1+\dots+b_m w_m=0, \textup{\;where\;} 0=b_1=a_1,\;0=b_k=\sum\limits_{j=1}^k (-1)^{k-j}a_j
 %\\[-15pt]\Rightarrow\;&b_1=\cdots=b_m=0\Rightarrow a_k=\sum\limits_{j=1}^k b_j=0 {\;for\;each\;} k.
-}\par\vspace{-6pt}\hfill$\square$\vspace{-10pt}\par\quad\Hb
+}\par\quad\Hb
 \Or  Because $W=\Spn(v_1,\dots,v_m)=\Spn(w_1,\dots,w_m).$\par\quad\Hb
 By [2.21](b), a list of length $(m-1)$ spans $W,$ then by [2.23],\par\quad\Hb
 $(w_1,\dots,w_m)$ linely dep $\Rightarrow(v_1,\dots,v_m)$ linely dep. Conversely it is true as well.$\hfill\square$\par
@@ -547,18 +547,28 @@ $(w_1,\dots,w_m)$ linely dep $\Rightarrow(v_1,\dots,v_m)$ linely dep. Conversely
 
 \ProblemN{10}{
 	\TextNL{Suppose $(v_1,\dots,v_m)$ is linely inde in $V$ and $w\in V$.}
-	(a) \TextNL{Prove that if $(v_1+w,\dots,v_m+w)$ is linely depe, then $w\in\Spn(v_1,\dots,v_m)$.}
-	(b) \TextNL{Show that [P] $(v_1,\dots,v_m,w)$ is linely inde $\Longleftrightarrow w\not\in\Spn(v_1,\dots,v_m)$ [Q].}
+	\TextNL{Prove that if $(v_1+w,\dots,v_m+w)$ is linely depe, then $w\in\Spn(v_1,\dots,v_m)$.}
 }\par\quad
-(a) \dbsp Suppose $a_1(v_1+w)+\dots+a_m(v_m+w)=0,\,\,\exists\,\,a_i\neq 0\Rightarrow a_1 v_1+\dots+a_m v_m=0=-(a_1+\dots+a_m)w.$\par\quad\Ha
-\dbsp Then $a_1+\dots+a_m\neq 0$, for if not, $a_1 v_1+\dots+a_m v_m=0$ while $a_i\neq 0$ for some $i$, contradicts.\par\quad\Ha
-Hence $w\in\Spn(v_1,\dots,v_m)$.\par\quad
-(b) ${}^\neg Q\Rightarrow{}^\neg P:$ Suppose $w\in\Spn(v_1,\dots,v_m)$. Then $(v_1,\dots,v_m,w)$ is linely depe.\par\quad\Hb
-$Q\Rightarrow P:$ Suppose $w\not\in\Spn(v_1,\dots,v_m)$. Then by [2.23], $(v_1,\dots,v_m,w)$ is linely inde. $\hfill\square$\par
+Suppose $a_1(v_1+w)+\dots+a_m(v_m+w)=0,\,\,\exists\,\,a_i\neq 0\Rightarrow a_1 v_1+\dots+a_m v_m=0=-(a_1+\dots+a_m)w.$\par\quad
+Then $a_1+\dots+a_m\neq 0$, for if not, $a_1 v_1+\dots+a_m v_m=0$ while $a_i\neq 0$ for some $i$, contradicts.%\par\quad Hence $w\in\Spn(v_1,\dots,v_m).$
+$\hfill\square$\par\quad
+\Or By contrapositive, $w\not\in\Spn(v_1,\dots,v_m),$ similarly.\hfill$\square$\par\quad
+%Suppose $a_1(v_1+w)+\dots+a_m(v_m+w)=0\Rightarrow a_1v_1+\dots+a_mv_m=-(a_1+\dots+a_m)w.$\par\quad
+%Then $a_1+\dots+a_m=0,$ otherwise $w\in\Spn(v_1,\dots,w_m)$. Thus $a_1=\dots=a_m=0.\hfill\square$\par\quad
+\Or $\exists\,j\in\{1,\dots,m\},v_j+w\in\Spn(v_1+w,\dots,v_{j-1}+w).$ If $j=1$ then $v_1+w=0$ and we are done.\par\quad
+If $j\geq 2,$ then $\exists\,a_i\in\Fbb,v_j+w=a_1(v_1+w)+\dots+a_{j-1}(v_{j-1}+w)\Longleftrightarrow v_j+\lambda w=a_1 v_1+\dots+a_{j-1}v_{j-1}.$\par\quad
+Where $\lambda=1-(a_1+\dots+a_{j-1}).$ Note that $\lambda\neq 0,$ for if not, $v_j+\lambda w=v_j\in\Spn(v_1,\dots,v_{j-1}),$ contradicts.\par\quad
+Now $w=\lambda^{-1}(a_1 v_1+\dots+a_{j-1}v_{j-1}-v_j)\Rightarrow w\in\Spn(v_1,\dots,v_m).\hfill\square$\vspace{-6pt}\par
+\ProblemEnding\par
+
+\ProblemN{11}{
+	\TextNL{Suppose $(v_1,\dots,v_m)$ is linely inde in $V$ and $w\in V$.}
+	\TextNL{Show that [P] $(v_1,\dots,v_m,w)$ is linely inde $\Longleftrightarrow w\not\in\Spn(v_1,\dots,v_m)$ [Q].\vspace{8pt}}
+}\hspace{-7pt}$\begin{array}{l}{}^\neg Q\Rightarrow{}^\neg P:$ Suppose $w\in\Spn(v_1,\dots,v_m)$. Then $(v_1,\dots,v_m,w)$ is linely depe.$\\{}^\neg P\Rightarrow{}^\neg Q:$ Suppose $(v_1,\dots,v_m,w)$ is linely dep. Then by [2.21] $w\in\Spn(v_1,\dots,v_m).\end{array}\hfill\square$\par
 \ProblemEnding\par
 
 \ProblemN{14}{
-	\TextNL{Prove that [P] $V$ is infinite-dim $\Longleftrightarrow[Q]\left|\hspace{-8pt}\begin{array}{l}$ there is a sequence $(v_1,v_2,\dots)$ in $V\\[-8pt]$ such that $(v_1,\dots,v_m)$ is linely inde for each $m\in\Nbp.\end{array}\right.$}
+	\TextNL{Prove that [P] $V$ is infinite-dim $\Longleftrightarrow[Q]\left|\hspace{-6pt}\begin{array}{l}$ there is a sequence $(v_1,v_2,\dots)$ in $V$ such that$\\[-8pt]$ $(v_1,\dots,v_m)$ is linely inde for each $m\in\Nbp.\end{array}\right.$}
 }\par\quad
 $P\Rightarrow Q:\;$ Suppose $V$ is infinite-dim, so that no list spans $V$.\par\quad\hspace{44pt}
 {\timesbf Step 1}\;\; Pick a $v_1\neq 0,(v_1)$ linely inde.\par\quad\hspace{44pt}
@@ -572,12 +582,12 @@ Choose an $m$. Suppose a linely inde list $(v_1,\dots,v_m)$ spans $V$.\par\qquad
 Hence no list spans $V$. Thus $V$ is infinite-dim.$\hfill\square$\par
 \ProblemEnding\par
 
-\ProblemN{15}{
-	\TextNL{Prove that $\Fbb^\infty$ is infinite-dim.}
-}\par\quad
-Let $e_i=(0,\dots,0,1,0,\dots)\in\Fbb^\infty$ for every $m\in\Nbp$, where $‘1’$ is on the $i^\textup{th}$ entry of $e_i$.\par\quad
-Suppose $\Fbb^\infty$ is finite-dim and $\Spn(e_1,\dots,e_m)=V$. But $\exists\,e_{m+1}\not\in\Spn(e_1,\dots,e_m)$. Contradicts. $\hfill\square$\par
-\ProblemEnding\par
+%\ProblemN{15}{
+%	\TextNL{Prove that $\Fbb^\infty$ is infinite-dim.}
+%}\par\quad
+%Let $e_i=(0,\dots,0,1,0,\dots)\in\Fbb^\infty$ for every $m\in\Nbp$, where $‘1’$ is on the $i^\textup{th}$ entry of $e_i$.\par\quad
+%Suppose $\Fbb^\infty$ is finite-dim and $\Spn(e_1,\dots,e_m)=V$. But $\exists\,e_{m+1}\not\in\Spn(e_1,\dots,e_m)$. Contradicts. $\hfill\square$\par
+%\ProblemEnding\par
 
 \ProblemN{16}{
 	\TextNL{Prove that the vecsp of all continuous functions in $\Rbb^{[0,1]}$ is infinite-dim.}
@@ -610,37 +620,46 @@ thus by [2.23] trivially, $(p_0,p_1,\dots,p_m)$ spans $\PoF{m}$. Contradicts.$\h
 
 \ChapterDecl{Ch2B}{2$\cdot$B}
 
-\BulletPoint \,\hspace{1pt}\NoteFor{\timessl linely inde sequence and [2.34]}\TextB{}
-$“V=\Spn(v_1,\dots,v_n,\dots)”$ is an invalid expression.\TextB{}
-If we allow using $“$infinite list$”$, then we must guarantee that $(v_1,\dots,v_n,\dots)$ is a spanning $“$list$”$\TextB{}
-such that for all $v\in V$, there exists a smallest positive integer $n$ such that $v=a_1 v_1+\dots+a_n v_n$,\TextB{}
-The key point is, how can we guarantee that such a $“$list$”$ exists?\par
-\ProblemEnding\par
+\ProblemN{7}{
+	\TextN{Prove or give a counterexample: If $v_1,v_2,v_3,v_4$ is a basis of \,$V$ and $U$ is a subsp of \,$V$}
+	\TextN{such that $v_1,v_2\in U$ and $v_3\not\in U$ and $v_4\not\in U$, then $(v_1,v_2)$ is a basis of U.}
+}A counterexample:\par\quad
+Let $V=\Rbb^4$ and $e_j$ be the $j^\textup{th}$ standard basis.\par\quad
+Let $v_1=e_1,v_2=e_2,v_3=e_3+e_4,v_4=e_4.$ Then $(v_1,\dots,v_4)$ is a basis of $\Rbb^4.$\par\quad
+Let $U=\Spn(e_1,e_2,e_3)=\Spn(v_1,v_2,v_3-v_4).$ Then $v_3\not\in U$ and $(v_1,v_2)$ is not a basis of $U.\hfill\square$\par\ProblemEnding\par
 
-\BulletPoint \,\hspace{1pt}\NoteFor{\Large $“\complement_V U \cap \{0\}”$}
-$“\complement_V U \cap \{0\}”$ is supposed to be a subsp $“W”$ such that $V=U\oplus W$.\TextB{}
-But if we let $u\in U\backslash\{0\}$ and $w\in W\backslash\{0\}$, then $\MathRightBrace{l}{w\in\complement_V U \cap \{0\}\\ u\pm w\in\complement_V U \cap \{0\} }\Rightarrow u\in\complement_V U \cap \{0\}.$ Contradicts.\TextB{}
+\BulletPoint \,\hspace{1pt}\NoteForSmall{\Large $“\complement_V U \cap \{0\}”$}\TextB{}
+$“\complement_V U \cap \{0\}”$ is supposed to be a subsp $W$ such that $V=U\oplus W$.\TextB{}
+But if we let $u\in U\backslash\{0\}$ and $w\in W\backslash\{0\}$, then $\MathRightBrace{l}{w\in\complement_V U \cap \{0\}\\ u\pm w\in\complement_V U \cap \{0\} }\Rightarrow u\in\complement_V U \cap \{0\}.$ Contradicts.\vspace{4pt}\TextB{}
 To fix this, {\Large denote the set $\left\{W_1,W_2\dots\right\}$ by $\mathcal{S}_V U$,} {\small where for each $W_i,V=U\oplus W_i$. See also in (1.C.23).}\par\ProblemEnding\par
 
 \ProblemN{1}{
 	\TextN{Find all vecsps that have exactly one basis.}
-}\par
+}The trivial vecsp $\{0\}$ will do. Indeed, the only basis of $\{0\}$ is the empty list.\par\quad
+Now consider a field containing only the add identity $0$ and the multi identity $1$,\par\quad
+and we specify that $1+1=0.$ Hence the vecsp $\{0,1\}$ will do, the list $(1)$ will be the unique basis.\par\quad
+Are there other vecsps? Suppose so.\par\quad
+(I) Consider $\Fbb=\Rbb$ or $\Cbb$. Let $(v_1,\dots,v_m)$ be a basis of $V\neq\{0\}$.\par\quad\HI
+While there are infinitely many bases distinct from this one. Hence we fail.\par\quad\EndI
+(II) Consider other $\Fbb.$ Note that a field contains at least $0$ and $1$\par\quad\HII
+By {\timessc some theories or facts} given in the course of Elementary Abstract Algebra, we fail.$\hfill\square$\par
 \ProblemEnding\par
+%
+%\ProblemN{6}{
+%	\TextN{Suppose $(v_1,v_2,v_3,v_4)$ is a basis of \,$V$. Prove that $(v_1+v_2,v_2+v_3,v_3+v_4,v_4)$ is also a basis.}
+%}\par\quad
+%\Notice\;that if $(v_1,\dots,v_m)$ is linely inde and $a_1 v_1+\dots+a_m v_m=b_1 v_1+\dots+b_m v_m,$ then $a_k=b_k$ for all $k.$\par\quad
+%$\forall v\in V,\,\exists\,!\,a_1,\dots,a_4\in\Fbb,v=a_1 v_1+a_2 v_2+a_3 v_3+a_4 v_4.$\par\quad
+%Assume that $v=b_1(v_1+v_2)+b_2(v_2+v_3)+b_3(v_3+v_4)+b_4 v_4$.\par\quad
+%Then $v=b_1 v_1+(b_1+b_2)v_2+(b_2+b_3)v_3+(b_3+b_4)v_4\Rightarrow\exists\,!\,b_1=a_1,\;b_k=a_k-b_{k-1}\in\Fbb.\hfill\square$\par
+%\ProblemEnding\par
 
-\ProblemN{6}{
-	\TextN{Suppose $(v_1,v_2,v_3,v_4)$ is a basis of \,$V$. Prove that $(v_1+v_2,v_2+v_3,v_3+v_4,v_4)$ is also a basis.}
-}$\forall v\in V,\,\,\exists\,!\,\,a_1,\dots,a_4\in\Fbb,v=a_1 v_1+a_2 v_2+a_3 v_3+a_4 v_4.$\par\quad
-Assume that $v=b_1(v_1+v_2)+b_2(v_2+v_3)+b_3(v_3+v_4)+b_4 v_4$.\par\quad
-Then $v=b_1 v_1+(b_1+b_2)v_2+(b_2+b_3)v_3+(b_3+b_4)v_4$.\par\quad
-$\Rightarrow\,\exists\,!\,\,b_1=a_1,\,\,\,b_2=a_2-b_1,\,\,\,b_3=a_3-b_2,\,\,\,b_4=a_4-b_3\in\Fbb.\hfill\square$
-\par
-\ProblemEnding\par
-
-\ProblemN{7}{
-	\TextN{Prove or give a counterexample: If $v_1,v_2,v_3,v_4$ is a basis of \,$V$ and $U$ is a subsp of \,$V$}
-	\TextN{such that $v_1,v_2\in U$ and $v_3\not\in U$ and $v_4\in U$, then $v_1,v_2$ is a basis of U.}
-}Let $V=\Fbb^4,v_1=(1,0,0,0),v_2=(0,1,0,0),v_3=(0,0,1,1),v_4=(0,0,0,1).$\par\qquad\quad\quad\,\,\,
-And $U=\left\{(x,y,z,0)\in\Rbb^4:x,y,z\in\Fbb\right\}$. We have a counterexample.\par
+\ProblemB{
+	\TextB{Suppose $(v_1,\dots,v_m)$ is a list of vecs in $V$. For $k\in\{1,\dots,m\}$, let $w_k=v_1+\dots+v_k.$}
+	\TextB{Show that [P] $(v_1,\dots,v_m)$ is a basis of $V\Longleftrightarrow$ [Q] $(w_1,\dots,w_m)$ is a basis of $V.$}
+}\Notice\;that $(u_1,\dots,u_n)$ is a basis of $U$ $\Longleftrightarrow\forall u\in U,\,\exists\,!\,a_i\in\Fbb,u=a_1 u_1+\dots+a_n u_n.$\par\quad
+$P\Rightarrow Q:\;\forall v\in V,\,\exists\,!\,a_i\in\Fbb,\;v=a_1 v_1+\dots+a_m v_m\Rightarrow v=b_1 w_1+\dots+b_m v_m,\,\exists\,!\,b_1=a_1,b_k=\sum\limits_{j=1}^k(-1)^{k-j}a_j.$\vspace{-4pt}\par\quad
+$Q\Rightarrow P:\;\forall v\in V,\,\exists\,!\,b_i\in\Fbb,\;v=b_1w_1+\dots+b_mw_m\Rightarrow v=a_1v_1+\dots+a_mv_m,\,\exists\,!\,a_k=\sum\limits_{j=1}^k b_j.\hfill\square$\par
 \ProblemEnding\par
 
 \ProblemB{
@@ -652,93 +671,95 @@ Hence, by [2.31], we get a basis of \,$V$ consisting of vecs in $U$ or $W.\hfill
 \ProblemEnding\par
 
 \ProblemN{8}{
-	\TextN{Suppose $U$ and $W$ are subsps of \,$V$ such that $V=U\oplus W$. Suppose also that}
-	\TextN{$(u_1,\dots,u_m)$ is a basis of $U$ and $(w_1,\dots,w_n)$ is a basis of \,$W$.}
+	\TextN{Suppose $U$ and $W$ are subsps of \,$V$ such that $V=U\oplus W$.}
+	\TextN{Suppose $(u_1,\dots,u_m)$ is a basis of $U$ and $(w_1,\dots,w_n)$ is a basis of $W$.}
 	\TextN{Prove that $(u_1,\dots,u_m,w_1,\dots,w_n)$ is a basis of \,$V$.}
-}$\forall v\in V,\,\,\exists\,!\,a_i,b_i\in\Fbb,v=(a_1 u_1+\dots+a_m u_m)+(b_1 w_1+\dots+b_n w_n)$\par\quad
+}\par\quad
+$\forall v\in V,\,\exists\,!\,u\in U,w\in W,v=u+w=(a_1 u_1+\dots+a_m u_m)+(b_1 w_1+\dots+b_n w_n),\,\exists\,!\,a_i,b_i\in\Fbb$\par\quad
 $\Rightarrow (a_1 u_1+\dots+a_m u_m)=-(b_1 w_1+\dots+b_n w_n)\in U\cap W=\{0\}$. Thus $a_1=\dots=a_m=b_1=\dots=b_n.\hfill\square$\par
 \ProblemEnding\par
 
-\ProblemBor{9.4}{
-	\TextB{ Suppose $V$ is a real vecsp.}
-	\TextB{Show that if $(v_1,\dots,v_n)$ is a basis of \,$V$ (as a real vecsp),}
-	\TextB{then $(v_1,\dots,v_n)$ is also a basis of the complexification $V_\Cbb$ (as a complex vecsp).}\hspace{0.5pt}
-	\TextB{\small See Section 1B (4e) for the definition of the complexification $V_\Cbb$.}
-}$\forall u+\i v\in V_\Cbb,\,\exists\,!\,u,v\in V,a_i,b_i\in\Rbb,$\par\quad\,
-$u+\i v=(a_1 v_1+\dots+a_n v_n)+\i(b_1 v_1+\dots+b_n v_n)=(a_1+b_1\i)v_1+\dots+(a_n+b_n\i)v_n$\par
-$\Rightarrow\,u+\i v=c_1 v_1+\dots+c_n v_n,\,\exists\,!\,c_i=a_i+b_i\i\in\Cbb$ \par
-$\Rightarrow$ By the uniqnes of $c_i$ and [2.29], $(v_1,\dots,v_n)$ is a basis of $V_\Cbb.\hfill\square$\par
+%\ProblemBor{9.4}{
+%	\TextB{Show that if $(v_1,\dots,v_n)$ is a basis of \,$V$ (on $\Rbb$),}
+%	\TextB{then $(v_1,\dots,v_n)$ is also a basis of the complexification $V_\Cbb$ (as a complex vecsp).}\hspace{0.5pt}
+%	\TextB{\small See Section 1B (4e) for the definition of the complexification $V_\Cbb$.}
+%}$\forall u+\i v\in V_\Cbb,\,\exists\,!\,u,v\in V,a_i,b_i\in\Rbb,$\par\quad\,
+%$u+\i v=(a_1 v_1+\dots+a_n v_n)+\i(b_1 v_1+\dots+b_n v_n)=(a_1+b_1\i)v_1+\dots+(a_n+b_n\i)v_n$\par
+%$\Rightarrow\,u+\i v=c_1 v_1+\dots+c_n v_n,\,\exists\,!\,c_i=a_i+b_i\i\in\Cbb$ \par
+%$\Rightarrow$ By the uniqnes of $c_i$ and [2.29], $(v_1,\dots,v_n)$ is a basis of $V_\Cbb.\hfill\square$\par
+%\ProblemEnding\par
+
+\BulletPoint \,\hspace{1pt}\NoteFor{\timessl linely inde sequence and [2.34]}\TextB{}
+$“V=\Spn(v_1,\dots,v_n,\dots)”$ is an invalid expression.\TextB{}
+If we allow using $“$infinite list$”$, then we must guarantee that $(v_1,\dots,v_n,\dots)$ is a spanning $“$list$”$\TextB{}
+such that for all $v\in V$, there exists a smallest positive integer $n$ such that $v=a_1 v_1+\dots+a_n v_n$,\TextB{}
+The key point is, how can we guarantee that such a $“$list$”$ exists?\par
 \ProblemEnding\par
 \ChapterEnding
 
 \ChapterDecl{Ch2C}{2$\cdot$C}
 
-\Onumber{1} \TextN{Suppose $V$ is finite-dim and $U$ is a subsp of \,$V$ such that $\dim V=\dim U$.}
-\TextN{\timesnr Let $(u_1,\dots,u_m)$ be a basis of $U$. Then $n=\dim U=\dim V.$ 又 $u_i\in V$.}
-{\Large Then by [2.39], $(u_1,\dots,u_m)$ is a basis of \,$V$. Thus $V=U$.}\par
+\ProblemNnosolus{1}{
+	( \COROLLARY\;for [2.38,39] )\TextN{}
+	\vspace{-6pt}\TextN{Suppose $U$ is a subsp of \,$V$ such that $\dim V=\dim U$. Then $V=U$.}
+}
+%\TextN{\timesnr Let $(u_1,\dots,u_m)$ be a basis of $U$. Then $m=\dim U=\dim V.$ 又 $u_i\in V$.}
+%{\Large Then by [2.39], $(u_1,\dots,u_m)$ is also a basis of \,$V$. Thus $V=U$.}\par
 \ProblemEnding\par
 
-\ProblemN{2}{
-	\TextN{Show that the subsps of $\Rbb^2$ are precisely $\{0\}$, all lines in $\Rbb^2$}
-	\TextN{containing the origin, and $\Rbb^2$.}
-}Suppose $U$ is a subsp of $\Rbb^2$. Let $\dim U=n.$\par\quad
-If $n=0$, then $U=\{0\}.$\par\quad
-If $n=1$, then $U=\Spn(v)=\left\{\lambda v:\lambda\in\Fbb\right\}$, for all linely inde $v\in\Rbb^2$.\par\quad
-If $n=2$, then $U=\Rbb^2.\hfill\square$\par
-\ProblemEnding\par
+%\ProblemN{2}{
+%	\TextN{Show that the subsps of $\Rbb^2$ are precisely $\{0\}$, all lines in $\Rbb^2$}
+%	\TextN{containing the origin, and $\Rbb^2$.}
+%}Suppose $U$ is a subsp of $\Rbb^2$. Let $\dim U=n.$\par\quad
+%If $n=0$, then $U=\{0\}.$\par\quad
+%If $n=1$, then $U=\Spn(v)=\left\{\lambda v:\lambda\in\Fbb\right\}$, for all linely inde $v\in\Rbb^2$.\par\quad
+%If $n=2$, then $U=\Rbb^2.\hfill\square$\par
+%\ProblemEnding\par
 
-\ProblemN{3}{
-	\TextN{Show that the subsps of $\Rbb^3$ are precisely $\{0\}$, all lines in $\Rbb^3$}
-	\TextN{containing the origin, all planes in $\Rbb^3$ containing the origin, and $\Rbb^3$.}
-}Suppose $U$ is a subsp of $\Rbb^3$. Let $\dim U=n.$\par\quad
-If $n=0$, then $U=\{0\}.$\par\quad
-If $n=1$, then $U=\Spn(v)=\left\{\lambda v:\lambda\in\Fbb\right\}$, for all linely inde $v\in\Rbb^3$.\par\quad
-If $n=2$, then $U=\Spn(v,w)=\left\{\lambda v+\mu w:\lambda,\mu\in\Fbb\right\}$, for all linely inde $v,w\in\Rbb^3$.\par\quad
-If $n=3$, then $U=\Rbb^3.\hfill\square$\par
-\ProblemEnding\par
+%\ProblemN{3}{
+%	\TextN{Show that the subsps of \,$\Rbb^3$ are precisely $\{0\}$, all lines in $\Rbb^3$}
+%	\TextN{containing the origin, all planes in $\Rbb^3$ containing the origin, and $\Rbb^3$.}
+%}Suppose $U$ is a subsp of $\Rbb^3$. Let $\dim U=n.$\par\quad
+%If $n=0$, then $U=\{0\}.$ 
+%If $n=3$, then $U=\Rbb^3$.\par\quad
+%If $n=1$, then $U=\Spn(v)=\left\{\lambda v:\lambda\in\Rbb\right\},\,\exists\,v\in\Rbb^3\backslash\{0\}$.\par\quad
+%If $n=2$, then $U=\Spn(v,w)=\left\{\lambda v+\mu w:\lambda,\mu\in\Rbb\right\},\,\exists\,$ linely inde $v,w\in\Rbb^3.\hfill\square$\par
+%\ProblemEnding\par
 
-\ProblemN{7}{
-	(a) \TextN{Let $U=\left\{p\in\PoF{4}:p(2)=p(5)=p(6)\right\}$. Find a basis of $U$.}
-	(b) \TextN{Extend the basis in $(a)$ to a basis of $\PoF{4}$.}
-	(c) \TextN{Find a subsp $W$ of $\PoF{4}$ such that $\PoF{4}=U\oplus W$.}
-}Suppose $p(z)=az^4+bz^3+cz^2+dz+e$ and $p(2)=p(5)=p(6)$.\par\quad
-Then $\MathLeftBrace{r}{$
-$p(2)=16a+8b+4c+2d+e$ (I)\,$\\ $
-$p(5)=625a+125b+25c+5d+e$ (II)\,$\\ $
-$p(6)=1296a+216b+36c+6d+e$ (III)
-$}$\par\quad
-{\small You don't have to compute to know that the dimension of the set of solutions is 3.}\par\quad
-(a) A basis: $1,(z-2)(z-5)(z-6),z(z-2)(z-5)(z-6).$\par\quad
-(b) Extend to a basis of $\PoF{4}$ as $1,z,z^2,(z-2)(z-5)(z-6),z(z-2)(z-5)(z-6).$\par\quad
-(c) Let $W=\Spn(z,z^2)=\left\{az+bz^2:a,b\in\Fbb\right\}$, so that $\PoF{4}=U\oplus W.\hfill\square$\par
-\ProblemEnding\par
 
 \ProblemN{9}{
 		\TextN{Suppose $(v_1,\dots,v_m)$ is linely inde in $V$ and $w\in V$.}
 		\TextN{Prove that $\dim\Spn(v_1+w,\dots,v_m+w)\geq m-1$.}
-}Note that $v_i-v_1=(v_i+w)-(v_1+w)\in\Spn(v_1+w,\dots,v_n+w),$ for each $i=1,\dots,m$.\par\quad
-$(v_1,\dots,v_m)$ is linely inde $\Rightarrow$ $(v_1,v_2-v_1,\dots,v_m-v_1)$ is linely inde\par\quad
-$\Rightarrow$ $(v_2-v_1,\dots,v_m-v_1)$ is linely inde of length $m-1$.\par\quad
-又 By the contrapositive of (2.A.10), $w\not\in\Spn(v_1,\dots,v_m)\Rightarrow (v_1+w,\dots,v_m+w)$ is linely inde.\par\quad
-$\therefore\,\,m\geq\dim\Spn(v_1+w,\dots,v_m+w)\geq m-1.\hfill\square$
-\par
+}Using the result of Problem (10) and (11) in 2.A.\par\quad
+Note that $v_i-v_1=(v_i+w)-(v_1+w)\in\Spn(v_1+w,\dots,v_n+w),$ for each $i=1,\dots,m$.\par\quad
+$(v_1,\dots,v_m)$ linely inde $\Rightarrow$ $(v_1,v_2-v_1,\dots,v_m-v_1)$ linely inde $\Rightarrow$ $(\underbrace{v_2-v_1,\dots,v_m-v_1}_{\textup{of\;length\;}(m-1)})$ linely inde.\vspace{-8pt}\par\quad
+又 $w\not\in\Spn(v_1,\dots,v_m)\Rightarrow (v_1+w,\dots,v_m+w)$ is linely inde.\par\quad
+Hence $m\geq\dim\Spn(v_1+w,\dots,v_m+w)\geq m-1.\hfill\square$\par
 \ProblemEnding\par
 
 \ProblemN{10}{
 	\TextNL{Suppose $m$ is a positive integer and $p_0,p_1,\dots,p_m\in\PoF{}$ are such that}
 	\TextNL{each $p_k$ has degree $k$. Prove that $(p_0,p_1,\dots,p_m)$ is a basis of $\PoF{m}$.}
-}Using mathematical induction on $m$.\par\quad
-(i) {For $p_0, \deg p_0=0\Rightarrow\Spn(p_0)=\Spn(1)$.}\par\quad\Endi
-(ii) {Suppose for $i\geq 1,\Spn(p_0,p_1,\dots,p_i)=\Spn(1,x,\dots,x^i)$.}\par\quad\Hi
-{Then $\Spn(p_0,p_1,\dots,p_i,p_{i+1})\subseteq\Spn(1,x,\dots,x^i,x^{i+1})$.}\par\quad\Hi
-又 $\deg p_{i+1}=i+1,\,\,\,\,p_{i+1}(x)=a_{i+1}x^{i+1}+r_{i+1}(x);\,\,\,\,a_{i+1}\neq 0,\,\,\,\deg r_{i+1}\leq i.$
+}\par\quad
+{\Large\vspace{4pt}Using mathematical induction on $m$.}\par\quad
+(i) {\Large\vspace{8pt}For $p_0,\;\deg p_0=0\Rightarrow\Spn(p_0)=\Spn(1)$.}\par\quad\Endi
+(ii) {\Large\vspace{4pt}Suppose for $i\geq 1,\Spn(p_0,p_1,\dots,p_i)=\Spn(1,x,\dots,x^i)$.}\par\quad\Hi
+{\Large\vspace{4pt}Then $\Spn(p_0,p_1,\dots,p_i,p_{i+1})\subseteq\Spn(1,x,\dots,x^i,x^{i+1})$.}\par\quad\Hi
+又 {\Large\vspace{4pt}$\deg p_{i+1}=i+1,\,\,\,\,p_{i+1}(x)=a_{i+1}x^{i+1}+r_{i+1}(x);\,\,\,\,a_{i+1}\neq 0,\,\,\,\deg r_{i+1}\leq i.$}
 \par\vspace{2pt}\quad\Hi
-{$\Rightarrow x^{i+1}=\displaystyle\frac{1}{a_{i+1}}\left(p_{i+1}(x)-r_{i+1}(x)\right)\in\Spn(1,x,\dots,x^i,p_{i+1})=\Spn(p_0,p_1,\dots,p_i,p_{i+1})$.}\par\vspace{2pt}\quad\Hi
-{$\therefore\,\,x^{i+1}\in\Spn(p_0,p_1,\dots,p_i,p_{i+1})\Rightarrow\Spn(1,x,\dots,x^i,x^{i+1})\subseteq\Spn(p_0,p_1,\dots,p_i,p_{i+1})$.}\par\quad\Hi
-Thus $\PoF{m}=\Spn(1,x,\dots,x^m)=\Spn(p_0,p_1,\dots,p_m).\hfill\square$\par\large
+{\Large\vspace{4pt}$\Rightarrow x^{i+1}=\displaystyle\frac{1}{a_{i+1}}\left(p_{i+1}(x)-r_{i+1}(x)\right)\in\Spn(1,x,\dots,x^i,p_{i+1})=\Spn(p_0,p_1,\dots,p_i,p_{i+1})$.}\par\vspace{2pt}\quad\Hi
+{\Large\vspace{8pt}$\therefore\,\,x^{i+1}\in\Spn(p_0,p_1,\dots,p_i,p_{i+1})\Rightarrow\Spn(1,x,\dots,x^i,x^{i+1})\subseteq\Spn(p_0,p_1,\dots,p_i,p_{i+1})$.}\par\quad
+{\Large\vspace{4pt}Thus $\PoF{m}=\Spn(1,x,\dots,x^m)=\Spn(p_0,p_1,\dots,p_m).\hfill\square$}\vspace{14pt}\par\quad
+\Or 用比较系数法. {\Large\vspace{4pt}Denote the coefficient of $x^i$ in $p\in\PoF{}$ by $\xi_i(p).$}\par\quad
+{\Large\vspace{4pt}Suppose $L=a_m p_m(x)+\dots+a_1 p_1(x)+a_0p_0(x)=0\cdot x^m+\dots+0\cdot x+0\cdot 1=R,\forall x\in\Fbb.$}\par\quad
+{\Large\vspace{4pt}We use induction on $m$ to show that $a_m=\dots=a_0=0.$}\par\quad
+(i) {\Large\vspace{4pt}$k=m,$ \;$\xi_{m}(L)=a_{m}\xi_{m}(p_m)=\xi_{m}(R)=0$ 又 $\deg p_m=m,\xi_{m}(p_m)\neq 0\Rightarrow a_m=0.$}\par\quad\Hi
+{\Large\vspace{8pt}Now $L=a_{m-1}p_{m-1}(x)+\dots+a_0p_0(x).$}\par\quad\Endi
+(ii) {\Large\vspace{4pt}$1\leq k\leq m,$ \;$\xi_{k}(L)=a_{k}\xi_{k}(p_k)=\xi_{k}(R)=0$ 又 $\deg p_k=k,\xi_{k}(p_k)\neq 0\Rightarrow a_k=0.$}\par\quad\Hii
+{\Large Now $L=a_{k-1}p_{k-1}(x)+\dots+a_0p_0(x).\hfill\square$}\par
 \ProblemEnding\par
 
-\ProblemB{
+\ProblemBnoor{({\normalsize 4E 2.C.10})}{
 	\TextB{Suppose $m$ is a positive integer. For $0\leq k\leq m$, let $p_k(x)=x^k(1-x)^{m-k}$.}
 	\TextB{Show that $(p_0,\dots,p_m)$ is a basis of $\PoF{}$.}
 	\TextB{\small The basis in this exercise leads to what are called Bernstein polynomials. You can do a web search to learn how}\hspace{0.5pt}
@@ -748,24 +769,84 @@ Thus $\PoF{m}=\Spn(1,x,\dots,x^m)=\Spn(p_0,p_1,\dots,p_m).\hfill\square$\par\lar
 (ii) \dbsp{\Large$k\geq 2.$ {\large Suppose for} $p_{m-k}(x),\,\,\exists\,\,!\,\,a_i\in\Fbb,$ $x^{m-k}=p_{m-k}(x)+a_m x^m+\dots+a_{m-k+1}x^{m-k+1}.$\par}\quad\Hii
 \dbsp{\Large {\large Then for} $p_{m-k-1}(x),\,\,\exists\,\,!\,\,c_i\in\Fbb,$\par}
 \vspace{-10pt}
-{\Large\AlignEq{}{&x^{m-k-1}=p_{m-k-1}(x)+\mathC_{k+1}^1(-1)^2 x^{m-k}+\dots+\mathC_{k+1}^k(-1)^{k+1}x^{m-1}+(-1)^{k-2}x^m\\\Rightarrow \,&c_{m-i}=\mathC_{k+1}^{k+1-i}(-1)^{k-i}.}\vspace{-10pt}\par}\quad\Hi
-{\Large {\large Thus for each} $x^i,\,\,\exists\,\,!\,\,b_i\in\Fbb,x^i=b_m p_m(x)+\dots+b_{m-i}p_{m-i}(x)$\par}\quad\Hii
+{\Large\AlignEq{}{&x^{m-k-1}=p_{m-k-1}(x)+\mathC_{k+1}^1(-1)^2x^{m-k}+\dots+\mathC_{k+1}^k(-1)^{k+1}x^{m-1}+(-1)^{k-2}x^m\\\Rightarrow \,&c_{m-i}=\mathC_{k+1}^{k+1-i}(-1)^{k-i}.}\vspace{-10pt}\par}\quad\Hi
+{\Large {\large Thus for each} $x^i,\,\,\exists\,!\,b_i\in\Fbb,x^i=b_m p_m(x)+\dots+b_{m-i}p_{m-i}(x)$\par}\quad\Hii
 {\Large$\Rightarrow{\large\Spn}(x^m,\dots,x,1)={\large\Spn}\underbrace{(p_m,\dots,p_1,p_0)}_\textup{Basis}.$\hfill$\square$
-\par}\large
+\par\vspace{6pt}}\large\quad
+For any $m,k\in\Nbp$ such that $k\leq m.$ Define $p_{k,m}$ by $p_{k,m}(x)=x^k(1-x)^{m-k}.$\par\quad
+Define the statement $S(m)$ by $S(m):(\underbrace{p_{0,m},\dots,p_{m,m}}_{\dim\PoF{m}=m+1})$ is linely inde ( and therefore is a basis ).\vspace{4pt}\par\quad
+We use induction on to show that $S(m)$ holds for all $m\in\Nbp.$\par\quad
+(i) $m=1.$ Suppose $a_0(1-x)+a_1x=0,\forall x\in\Fbb.$ Then $\MathLeftBrace{l}{x=0\Rightarrow a_0=0;\\x=1\Rightarrow a_1.}$\par\quad\Hi
+$m=2.$ Suppose $a_0(1-x)^2+a_1(1-x)x+a_2x^2,\forall x\in\Fbb.$ Then $\MathLeftBrace{l}{x=0\Rightarrow a_0+a_1=0;\\x=1\Rightarrow a_2=0;\\x=2\Rightarrow a_0+2a_1=0.}$\par\vspace{6pt}\quad\Endi
+(ii) $2\leq m.$ Assume that $S(m)$ holds.\par\quad\Hii
+Suppose $\sum\limits_{k=0}^{m+2}a_kp_{k,m+2}(x)=\sum\limits_{k=0}^{m+2}a_kx^k(1-x)^{m+2-k}=0,\forall x\in\Fbb.$\par\quad\Hii
+While $x=0\Rightarrow a_0=0;\;x=1\Rightarrow a_{m+2}=0.$ Then $\sum\limits_{k=1}^{m+1}a_kx^k(1-x)^{m+2-k}=0;$\vspace{12pt}\par\quad\Hii
+And note that \vspace{-12pt}\AlignEq{}{&\sum\limits_{k=1}^{m+1}a_kx^k(1-x)^{m+2-k}\hspace{220pt}\\=\,&x(1-x)\sum\limits_{k=1}^{m+1}a_kx^{k-1}(1-x)^{m+1-k}\\=\,&x(1-x)\sum\limits_{k=0}^{m}a_{k+1}x^{k}(1-x)^{m-k}=x(1-x)\sum\limits_{k=0}^{m}a_{k+1}p_{k,m}(x).}\vspace{10pt}\par\quad\Hii
+Hence $x(1-x)\sum_{k=0}^{m}a_{k+1}p_{k,m}(x)=0,\forall x\in\Fbb\Rightarrow \sum_{k=0}^{m}a_{k+1}p_{k,m}(x)=0,\forall x\in\Fbb\backslash\{0,1\}.$\par\quad\Hii
+Because $\sum_{k=0}^{m}a_{k+1}p_{k,m}(x)$ has infinitely many zeros. We have $\sum_{k=0}^{m}a_{k+1}p_{k,m}(x)=0,\forall x\in\Fbb.$\par\quad\Hii
+By assumption, $a_1=\dots=a_m=0,$ while $a_0=a_{m+2}=0,$\par\quad\Hii
+\hspace{34pt}and also $\;a_{m+1}=0$ ( because $\sum_{k=0}^{m}a_{k+1}p_{k,m}(x)=a_{m+1}p_{m,m}(x)=a_{m+1}x^m=0,\forall x\in\Fbb.$ )\par\quad\Hii
+Thus $(p_{0,m+2},\dots,p_{m+2,m+2})$ is linely inde and $S(m+2)$ holds.\vspace{6pt}\par\quad
+Since $S(m)\Rightarrow S(m+2)$ for all $m\in\Nbp.$ We have $\MathLeftBrace{l}{S(1)\Rightarrow S(3)\Rightarrow\cdots\Rightarrow S(2k+1)\Rightarrow \cdots;\\S(2)\Rightarrow S(4)\Rightarrow\cdots\Rightarrow S(2k)\Rightarrow\cdots.}$\par\quad
+Hence $S(m)$ holds for all $m\in\Nbp.\hfill\square$\par
 \ProblemEnding\par
 
-\ProblemB{
+\ProblemN{7}{
+	(a) \TextN{Let $U=\left\{p\in\PoF{4}:p(2)=p(5)=p(6)\right\}$. Find a basis of $U$.}
+	(b) \TextN{Extend the basis in $(a)$ to a basis of $\PoF{4}$.}
+	(c) \TextN{Find a subsp $W$ of $\PoF{4}$ such that $\PoF{4}=U\oplus W$.}
+}Suppose $p(z)=az^4+bz^3+cz^2+dz+e$ such that $p(2)=p(5)=p(6)$.\vspace{4pt}\par\quad
+Then $\left|\begin{array}{r}
+	p(2)=16a+8b+4c+2d+e\,\;\;(\textup{I})\;\;\\
+	p(5)=625a+125b+25c+5d+e\;\;(\textup{II})\,\;\\
+	p(6)=1296a+216b+36c+6d+e\;\,(\textup{III})
+\end{array}\right\}\Rightarrow\MathLeftBrace{l}{
+	(\textup{II})\;-\;(\textup{I})=0\\
+	(\textup{III})-(\textup{II})=0\\
+	(\textup{III})-\;(\textup{I})=0\\
+}$\vspace{4pt}\par\quad
+{\timessl You don't have to compute to know that the dimension of the set of solutions is 3.}\par\quad
+( Because $\not\exists\,p\in\PoF{2}$ with $1\leq\deg p\leq 2,p(2)=p(5)=p(6).$ )\par\quad
+(a) A basis: $1,(z-2)(z-5)(z-6),z(z-2)(z-5)(z-6).$\par\quad
+(b) Extend to a basis of $\PoF{4}$ as $1,z,z^2,(z-2)(z-5)(z-6),z(z-2)(z-5)(z-6).$\par\quad
+(c) Let $W=\Spn(z,z^2)=\left\{az+bz^2:a,b\in\Fbb\right\}$, so that $\PoF{4}=U\oplus W.\hfill\square$\par
+\ProblemEnding\par
+
+\BulletPoint \,\hspace{1pt}\Tips\vspace{-30pt}\TextB{}
+$$(1)\;\dim(V_1\cap V_2\cap V_3)=\dim V_1+\dim V_2+\dim V_3-\dim(V_2+V_3)-\dim(V_1+(V_2\cap V_3)).\vspace{-46pt}$$\TextB{}
+$$(2)\;\dim(V_1\cap V_2\cap V_3)=\dim V_1+\dim V_2+\dim V_3-\dim(V_1+V_3)-\dim(V_2+(V_1\cap V_3)).\vspace{-46pt}$$\TextB{}
+$$(3)\;\dim(V_1\cap V_2\cap V_3)=\dim V_1+\dim V_2+\dim V_3-\dim(V_1+V_2)-\dim(V_3+(V_1\cap V_2)).\vspace{-6pt}$$\TextB{}
+For (1). Because $\dim (V_1\cap V_2\cap V_3)=\dim V_1+\dim(V_2\cap V_3)-\dim(V_1+(V_2\cap V_3)).$\TextB{}
+And $\dim(V_2\cap V_3)=\dim V_2+\dim V_3-\dim(V_2+V_3).$\TextB{}
+Moreover, $\dim(\bigcap\limits_{i=1}^m V_i).$\TextB{}
+
+%\AlignEq{}{\dim(V_1\cap V_2\cap V_3)=\,&\dim V_1+\dim V_2+\dim V_3-\frac{\dim(V_2+V_3)+\dim(V_1+V_3)+\dim(V_1+V_2)}{3}\\\,&-\displaystyle\frac{\dim(V_1+(V_2\cap V_3))+\dim(V_2+(V_1\cap V_3))+\dim(V_3+(V_1\cap V_2))}{3}.}\par
+\ProblemEnding\par
+
+\ProblemBnoor{({\normalsize 4E 2.C.14})}{
+	\TextB{Suppose V is a 10-dim vecsp and $V_1,V_2,V_3$ are subsps of \,$V$ with}
+	\TextB{$\dim V_1 = \dim V_2 = \dim V_3 = 7$. Prove that $V_1\cap V_2\cap V_3\neq\{0\}$.}
+}%{\normalsize$\MathRightBrace{l}{\dim V_1+\dim V_2 > \dim V\geq\dim V-\dim(V_1\cap V_2)\Rightarrow V_1\cap V_2\neq\{0\}\\\dim V_2+\dim V_3 > \dim V\geq\dim V-\dim(V_1\cap V_2)\Rightarrow V_2\cap V_3\neq\{0\}\\\dim V_1+\dim V_3 > \dim V\geq\dim V-\dim(V_1\cap V_2)\Rightarrow V_1\cap V_3\neq\{0\}}\Rightarrow V_1\cap V_2\cap V_3\neq\{0\}.\hfill\square$}\par\vspace{6pt}
+By \TIPS, $\dim(V_1\cap V_2\cap V_3)\geq\dim V_1+\dim V_2+\dim V_3-2\dim V>0.\hfill\square$\par
+\ProblemEnding\par
+
+\ProblemBnoor{({\normalsize 4E 2.C.15})}{
 	\TextB{Suppose $V$ is finite-dim and $V_1,V_2,V_3$ are subsps of $V$ with}
 	\TextB{$\dim V_1+\dim V_2+\dim V_3 > 2\dim V$. Prove that $V_1\cap V_2\cap V_3\neq\{0\}$.}
-}{\normalsize
-$\MathRightBrace{l}{$
-$\dim V_1+\dim V_2 > 2\dim V-\dim V_3\geq\dim V\Rightarrow V_1\cap V_2\neq\{0\}\\ $
-$\dim V_2+\dim V_3 > 2\dim V-\dim V_1\geq\dim V\Rightarrow V_2\cap V_3\neq\{0\}\\ $
-$\dim V_1+\dim V_3 > 2\dim V-\dim V_2\geq\dim V\Rightarrow V_1\cap V_3\neq\{0\}$
-$}\Rightarrow V_1\cap V_2\cap V_3\neq\{0\}.\hfill\square$}\par\vspace{6pt}
+}%{\normalsize $\MathRightBrace{l}{\dim V_1+\dim V_2 > 2\dim V-\dim V_3\geq\dim V\Rightarrow V_1\cap V_2\neq\{0\}\\\dim V_2+\dim V_3 > 2\dim V-\dim V_1\geq\dim V\Rightarrow V_2\cap V_3\neq\{0\}\\\dim V_1+\dim V_3 > 2\dim V-\dim V_2\geq\dim V\Rightarrow V_1\cap V_3\neq\{0\}}\Rightarrow V_1\cap V_2\cap V_3\neq\{0\}.\hfill\square$}\par\vspace{6pt}
+By \TIPS, $\dim(V_1\cap V_2\cap V_3)>2\dim V-\dim(V_2+V_3)-\dim(V_1+(V_2\cap V_3))\geq 0.\hfill\square$\par
 \ProblemEnding\par
 
-\ProblemB{
+\BulletPoint \,\hspace{1pt}\Comment\TextB{}
+%{Suppose $V_1,\dots,V_m$ are subsets of $V$, with each $\left|V_i\right|>\frac{\left|V\right|}{2},$ and $V_j\cap V_k\neq\varnothing$ for each $j\neq k.$}\TextB{}
+%{We can give an example such that $\bigcap\limits_{i=1}^m V_i=\varnothing:\;m=3,V=\{1,2,4\},V_1=\{1,2\},V_2=\{2,4\},V_3=\{4,1\}.$}\TextB{}
+{Suppose $V_1,\dots,V_m$ are subsps of $V$, with each $\dim V_i=\left\lceil{\frac{\dim V}{2}}\right\rceil,$ and $V_j\cap V_k\neq\{0\}$ for each $j\neq k.$}\TextB{}
+{We can give an example such that $\bigcap\limits_{i=1}^m V_i=\{0\}:$}\TextB{}\qquad\qquad
+{$m=3,\;V=\Spn(v_1,v_2,v_3),\;V_1=\Spn(v_1,v_2),\;V_2=\Spn(v_2,v_3),\;V_3=\Spn(v_1,v_3).$}\vspace{4pt}\TextB{}
+{But if $\dim V_i\geq\left\lfloor{\frac{\dim V}{2}}\right\rfloor+2,$ then $s$.}\par
+\ProblemEnding\par
+
+\ProblemBnoor{({\normalsize 4E 2.C.16})\TextB{}}{
 	\TextB{Suppose $V$ is finite-dim and $U$ is a subsp of \,$V$ with $U\neq V$. Let $n=\dim V,m=\dim U$.}
 	\TextB{Prove that there exist $(n-m)$ subsps of \,$V$, say $U_1,\dots,U_{n-m}$, each of dimension $(n-1)$,}
 	\TextB{such that $\bigcap\limits_{i=1}^{n-m}U_i=U$.}
@@ -796,7 +877,7 @@ For each $i$, $(V_1+\dots+V_i)\cap V_{i+1}=\{0\}\Longleftrightarrow V_1+\dots+V_
 	\TextNL{{\large$\dim(V_1+V_2+V_3)=\dim V_1+\dim V_2+\dim V_3$\par\rightline{$-\dim(V_1\cap V_2)-\dim(V_1\cap V_3)-\dim(V_2\cap V_3)+\dim(V_1\cap V_2\cap V_3)$.\qquad}}}
 	\TextNL{Explain why you might think and prove the formula above or give a counterexample.}
 }\par\quad
-[{\timessl Similar to}] Given three sets $A,B$ and $C$.\par\quad
+[{\timessl Similar to}]\; Given three sets $A,B$ and $C$.\par\quad
 Because $\left|X\cup Y\right|=\left|X\right|+\left|Y\right|-\left|X\cap Y\right|;\,\,\,(X\cup Y)\cap Z=(X\cap Z)\cup(Y\cap Z)$.\par\quad
 Now $\left|(A\cup B)\cup C\right|=\left|A\cup B\right|+\left|C\right|-\left|(A\cup B)\cap C\right|.$\par\quad
 And $\left|(A\cup B)\cap C\right|=\left|(A\cap C)\cup(B\cap C)\right|=\left|A\cap C\right|+\left|B\cap C\right|-\left|A\cap B\cap C\right|.$\par\quad
@@ -1203,15 +1284,15 @@ Thus $\dim\range TS\leq 5-\dim\range TS\Rightarrow\dim\range TS\leq\frac{5}{2}.\
 
 \ProblemB{
 	\TextB{Suppose $\dim V=n$ and $S,T\in\Lm(V)$ are such that $ST=0$.}
-	\TextB{Prove that $\dim\range TS\leq\left[\displaystyle\frac{n}{2}\right].$}
+	\TextB{Prove that $\dim\range TS\leq\left\lfloor\displaystyle\frac{n}{2}\right\rfloor.$}
 }\par\quad
 By Problem (23), $\dim\range TS\leq\min\left\{\overbrace{\dim \range S}^{n-\dim\null T}, \overbrace{\dim\range T}^{n-\dim\null S}\right\}.$ We prove by contradiction.\par\quad
-Assume that $\dim\range TS\geq \left[\displaystyle\frac{n}{2}\right]+1$.\par\quad
-\AlignEq{}{\textup{Then\,}&\min\left\{n-\dim\null T,n-\dim\null S\right\}\geq \left[\displaystyle\frac{n}{2}\right]+1\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\hspace{1.8pt}\\\Rightarrow&\max\left\{\dim\null T,\dim\null S\right\}\leq n-\left[\displaystyle\frac{n}{2}\right]-1.}\par\quad
-又 $\dim\null ST=n\leq\dim\null S+\dim\null T\leq 2(n-\left[\displaystyle\frac{n}{2}\right]-1)$\par\quad
-$\Rightarrow \left[\displaystyle\frac{n}{2}\right]+1\leq\displaystyle\frac{n}{2}$. Contradicts. Thus $\dim\range TS\leq \left[\displaystyle\frac{n}{2}\right].\hfill\square$\par\vspace{6pt}\quad
+Assume that $\dim\range TS\geq \left\lfloor\displaystyle\frac{n}{2}\right\rfloor+1$.\par\quad
+\AlignEq{}{\textup{Then\,}&\min\left\{n-\dim\null T,n-\dim\null S\right\}\geq \left\lfloor\displaystyle\frac{n}{2}\right\rfloor+1\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\hspace{1.8pt}\\\Rightarrow&\max\left\{\dim\null T,\dim\null S\right\}\leq n-\left\lfloor\displaystyle\frac{n}{2}\right\rfloor-1.}\par\quad
+又 $\dim\null ST=n\leq\dim\null S+\dim\null T\leq 2(n-\left\lfloor\displaystyle\frac{n}{2}\right\rfloor-1)$\par\quad
+$\Rightarrow \left\lfloor\displaystyle\frac{n}{2}\right\rfloor+1\leq\displaystyle\frac{n}{2}$. Contradicts. Thus $\dim\range TS\leq \left\lfloor\displaystyle\frac{n}{2}\right\rfloor.\hfill\square$\par\vspace{6pt}\quad
 \Or $\dim\null S=n-\dim\range S\leq n-\dim\range TS.$\par
-\AlignEq{}{\textup{And\,}ST=0&\Rightarrow \dim\range TS\leq\dim\range T\leq\dim\null S\leq n-\dim\range TS\qquad\qquad\qquad\qquad\quad\hspace{2pt}\\&\Rightarrow 2\dim\range TS\leq n\Rightarrow\dim\range TS\leq\displaystyle\frac{n}{2}\\&\Rightarrow\dim\range TS\leq\left[\displaystyle\frac{n}{2}\right] \textup{\,(\,because\,}\dim\range TS\textup{\,is\,an\,integer\,)}.\hfill\square}\par
+\AlignEq{}{\textup{And\,}ST=0&\Rightarrow \dim\range TS\leq\dim\range T\leq\dim\null S\leq n-\dim\range TS\qquad\qquad\qquad\qquad\quad\hspace{2pt}\\&\Rightarrow 2\dim\range TS\leq n\Rightarrow\dim\range TS\leq\displaystyle\frac{n}{2}\\&\Rightarrow\dim\range TS\leq\left\lfloor\displaystyle\frac{n}{2}\right\rfloor \textup{\,(\,because\,}\dim\range TS\textup{\,is\,an\,integer\,)}.\hfill\square}\par
 \ProblemEnding\par
 
 \ProblemN{24}{
@@ -3517,7 +3598,7 @@ Thus $T/(\null T)$ is inje.$\hfill\square$\par
 }\large\vspace{5pt}
 
 {\Comment\,\,\, 下面，为了照顾原书{\timesbf 5.B}节两版过大的差距，特别将此节补注分成{\timesbf I}和{\timesbf II}两部分。\par\qquad\qquad\,\,\,\,\,\,
-又考虑到第4版中{\timesbf 5.B}节的$\lceil$本征值与极小多项式$\rfloor$与$\lceil$奇维度实向量空间的本征值$\rfloor$\par\qquad\qquad\,\,\,\,\,\,
+又考虑到第4版中{\timesbf 5.B}节的$\lfloor$本征值与极小多项式$\rfloor$与$\lceil$奇维度实向量空间的本征值$\rfloor$\par\qquad\qquad\,\,\,\,\,\,
 (相当一部分是从原第3版{\timesbf 8.C}节挪过来的)是对原第3版$\lceil$多项式作用于算子$\rfloor$与\par\qquad\qquad\,\,\,\,\,\,
 $\lceil$本征值的存在性$\rfloor$(也即第3版{\timesbf 5.B}前半部分)的极大扩充，这一扩充也大大改变了\par\qquad\qquad\,\,\,\,\,\,
 原第3版后半部分的$\lceil$上三角矩阵$\rfloor$这一小节，故而将第4版{\timesbf 5.B}节放在第3版前面。{\par}\qquad\qquad\,\,\,\,\,\,
