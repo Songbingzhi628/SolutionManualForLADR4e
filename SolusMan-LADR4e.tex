@@ -897,13 +897,15 @@ For example, $X=\left\{(x,0)\in\Rbb^2:x\in\Rbb\right\},Y=\left\{(0,y)\in\Rbb^2:y
 }\par
 \AlignEq{\hspace{20pt}}{\dim(V_1+V_2+V_3)=\dim &\,V_1+\dim V_2+\dim V_3\\&-\displaystyle\frac{\dim(V_1\cap V_2)+\dim(V_1\cap V_3)+\dim(V_2\cap V_3)}{3}\\&-\displaystyle\frac{\dim\left((V_1+V_2)\cap V_3\right)+\dim\left((V_1+V_3)\cap V_2\right)+\dim\left((V_2+V_3)\cap V_1\right)}{3}.}\par\quad
 {\timessl The formula above may seem strange because the right side does not look like an integer.$\hfill\square$}\par
-\ProblemEnding\par
+\ProblemEnding\vspace{10pt}\par
 
 \BulletPoint \,\hspace{1pt}{\Tips\TextB{}}
 \TextB{Suppose $v_1,\dots,v_n\in V,\dim\Spn(v_1,\dots,v_n)=n.$ Then $(v_1,\dots,v_n)$ is a basis of $\Spn(v_1,\dots,v_n).$}
 Notice that $(v_1,\dots,v_n)$ is a spanning list of $\Spn(v_1,\dots,v_n)$ of length $n=\dim\Spn(v_1,\dots,v_n).\hfill\square$\par
 \ProblemEnding\par
+
 \ChapterEnding
+
 \pagebreak
 
 \ChapterDecl{Ch3A}{3$\cdot$A}
@@ -975,14 +977,14 @@ $}$ \Or Define $T(x,y)=\sqrt[3]{(x^3+y^3)}.\hfill\square$
 	\hspace{0.5pt}\TextN{\large(Here $\Cbb$ is thought of as a complex vecsp.)}
 }\par\quad
 Suppose $V_\Cbb$ is the complexification of a vecsp $V$. Suppose $\varphi:V_\Cbb\rightarrow V_\Cbb.$\par\quad
-Define $\varphi(u\,+\i v)=u=\mathfrak{Re}\,(u\,+\i v)$\par\quad
-\Or Define $\varphi(u\,+\i v)=v=\mathfrak{Im}\,(u\,+\i v).\hfill\square$\par
+Define $\varphi(u\,+\i v)=u=\mathfrak{Re}\,(u\,+\i v)$\quad\Or Define $\varphi(u\,+\i v)=v=\mathfrak{Im}\,(u\,+\i v).\hfill\square$\par
 \ProblemEnding\par
 
 \ProblemB{
 	\TextB{Prove that if $q\in\PoR{}$ and $T:\PoR{}\rightarrow\PoR{}$ is defined by $Tp=q\circ p,$ then $T$ is not linear.}
-}Because in general, $q\circ (p_1+\lambda p_2)(x)=q\left(p_1(x)+\lambda p_2(x)\right)\neq (q\circ p_1)(x)+\lambda (q\circ p_2)(x).$\par\qquad\qquad\;\;\,
-An example: let $q$ be defined by $q(x)=x^2,$ then $q\circ\left(1+(-1)\right)=0\neq q(1)+q(-1)=2.\hfill\square$\par
+}\par\quad
+Because in general, $q\circ (p_1+\lambda p_2)(x)=q\left(p_1(x)+\lambda p_2(x)\right)\neq (q\circ p_1)(x)+\lambda (q\circ p_2)(x).$\par
+\Example\,\,\, Let $q$ be defined by $q(x)=x^2,$ then $q\circ\left(1+(-1)\right)=0\neq q(1)+q(-1)=2.\hfill\square$\par
 \ProblemEnding\par
 
 \ProblemBor{3.D.16}{
@@ -992,11 +994,11 @@ An example: let $q$ be defined by $q(x)=x^2,$ then $q\circ\left(1+(-1)\right)=0\
 If $V=\{0\},$ then we are done. Now suppose $V\neq\{0\}.$\par\quad
 Assume that $(v,Tv)$ is linely depe for every $v\in V$, then by (2.A.2.(b)), $Tv=\lambda_v v$ for some $\lambda_v\in\Fbb.$\par\quad
 To prove that $\lambda_v$ is independent of $v$\par\quad
-( in other words, for any two distinct $v,w$ in $V\backslash\{0\}$, we have $\lambda_v\neq\lambda_w$ ), we discuss in two cases:\par\hspace{1pt}
+( in other words, for any two distinct $v,w$ in $V\backslash\{0\}$, we have $\lambda_v\neq\lambda_w$ ), we discuss in two cases:\vspace{4pt}\par\hspace{1pt}
 $\MathRightBrace{l}{$
 $(-)$ If $(v,w)$ is linely inde, $\lambda_{v+w}(v+w)=T(v+w)=Tv+Tw=a_v v+a_w w\\ $\qquad\qquad\qquad\qquad\qquad\qquad\qquad $\Rightarrow (\lambda_{v+w}-\lambda_v)v+(\lambda_{v+w}-\lambda_w)w=0\\ $
 $(=)$ Otherwise, suppose $w=cv$, $a_w w=Tw=cTv=ca_v v=a_v w\Rightarrow(a_w-a_v)w$
-$}\Rightarrow a_w=a_v.$\par\quad
+$}\Rightarrow a_w=a_v.$\vspace{4pt}\par\quad
 Now we prove the assumption by contradiction. Suppose $(v,Tv)$ is linely inde for every $v\in V\backslash\{0\}$.\par\quad
 Fix one $v$. Extend to $(v,Tv,u_1,\dots,u_n)$ a basis of $V$.\par\quad
 Define $S\in\Lm(V)$ by $S(av+bTv+c_1 u_1+\dots+c_n u_n)=bv\Rightarrow S(Tv)=v=T(Sv)=0.$ Contradicts.$\hfill\square$\par\vspace{6pt}\quad
@@ -1006,10 +1008,11 @@ Define $S\in\Lm(V)$ by $S(av+bTv+c_1 u_1+\dots+c_n u_n)=bv\Rightarrow S(Tv)=v=T(
 Then $Tv=T(\varphi(v_1)v)=T(S_v v_1)=S_v(Tv_1)=\varphi(Tv_1)v=\lambda v.\hfill\square$\par
 \ProblemEnding\par
 
+
 \ProblemN{10}{
 	\TextNL{Suppose $U$ is a subsp of \,$V$ with $U\neq V$. Suppose $S\in\Lm(U, W)$ and $S\neq 0$}
 	\TextNL{$($ which means that $Su\neq 0$ for some $u\in U$ $)$.}
-	\TextNL{Define $T: V\rightarrow W$ by $Tv=${\large$\MathLeftBrace{l}{Sv$, if $v\in U,\\ 0$,\,\,\,\, if $v\in V\backslash U$.$}$} Prove that $T$ is not a linear map on $V$.}
+	\TextNL{Define $T: V\rightarrow W$ by $Tv=${\large$\MathLeftBrace{l}{Sv$, if $v\in U,\\ 0$,\,\,\, if $v\in V\backslash U$.$}$} Prove that $T$ is not a linear map on $V$.}
 }\par\quad
 Suppose $T$ is a linear map. And $v\in V\backslash U,\,\, u\in U$ such that $Su\neq 0$.\par\quad
 Then $v+u\in V\backslash U,$ ( for if not, $v=(v+u)-u\in U$ ) while $T(v+u)=0=Tv+Tu=0+Su\Rightarrow Su=0.$\par\quad
@@ -1043,16 +1046,16 @@ Thus $(T_{x,1},\dots,T_{x,m})$ is a linely inde list in $\Lm(V,W)$ for any $x$ a
 	\TextB{{\large({\normalsize 4E 3.A.16})}}
 	\TextB{Suppose $V$ is finite-dim. Show that the only two-sided ideals of $\Lm(V)$ are $\{0\}$ and $\Lm(V)$.}
 	\hspace{0.5pt}\TextB{{\large A subsp $\mathcal{E}$ of $\Lm(V)$ is called a two-sided ideal of $\Lm(V)$ if $TE\in\mathcal{E},ET\in\mathcal{E},\,\,\forall E\in\mathcal{E},T\in\Lm(V)$.}}
-}\par\Large\quad
-Let $(v_1,\dots,v_n)$ be a basis of $V$. If $\mathcal{E}=0$, then we are done.\par\quad
-Suppose $\mathcal{E}\neq 0$ and $\mathcal{E}$ is a two-sided ideal of $\Lm(V)$. Let $S\in\mathcal{E}\backslash\{0\}$.\par\quad
-Suppose $Sv_i\neq 0$ and $Sv_i=a_1 v_1+\dots+a_n v_n$, where $a_k\neq 0$.\par\quad
-Define $R_{x,y}\in\Lm(V)$ by $R_{x,y}(v_x)=v_y, R_{x,y}(v_z)=0\,(\,z\neq x\,)$. Then for any $x,y\in\Nbp,$\par\quad
-$(R_{k,y}S)(v_i)=a_k v_y\Rightarrow\left((R_{k,y}S)\circ R_{x,i}\right)(v_x)=a_k v_y,\,\,\,\left((R_{k,y}S)\circ R_{x,i}\right)(v_z)=0\,(\,z\neq x\,)$.\par\quad
-Thus $R_{k,y}SR_{x,i}=a_k R_{x,y}$. Denote by $T_{x,y}$.\par\quad
-Getting $(\displaystyle\frac{1}{a_k}T_{1,1}+\dots+\frac{1}{a_k}T_{n,n})v_j=v_j\Rightarrow${$\sum\limits_{r=1}^n \displaystyle\frac{1}{a_k}T_{r,r}=I.$}\par\quad
-又 By assumption, $T_{x,y}\in\mathcal{E}\Rightarrow I\in\mathcal{E}.$\par\quad
-Hence for any $T\in\Lm(V),I\circ T=T\circ I=T\in\mathcal{E}\Rightarrow \mathcal{E}=\Lm(V).\hfill\square$\par\large
+}\par\quad
+{\Large\vspace{6pt}Let $(v_1,\dots,v_n)$ be a basis of $V$. If $\mathcal{E}=0$, then we are done.}\par\quad
+{\Large\vspace{6pt}Suppose $\mathcal{E}\neq 0$ and $\mathcal{E}$ is a two-sided ideal of $\Lm(V)$. Let $S\in\mathcal{E}\backslash\{0\}$.}\par\quad
+{\Large\vspace{6pt}Suppose $Sv_i\neq 0$ and $Sv_i=a_1 v_1+\dots+a_n v_n$, where $a_k\neq 0$.}\par\quad
+{\Large\vspace{6pt}Define $R_{x,y}\in\Lm(V)$ by $R_{x,y}(v_x)=v_y, R_{x,y}(v_z)=0\,(\,z\neq x\,)$. Then for any $x,y\in\Nbp,$}\par\quad
+{\Large\vspace{6pt}$(R_{k,y}S)(v_i)=a_k v_y\Rightarrow\left((R_{k,y}S)\circ R_{x,i}\right)(v_x)=a_k v_y,\,\,\,\left((R_{k,y}S)\circ R_{x,i}\right)(v_z)=0\,(\,z\neq x\,)$.}\par\quad
+{\Large\vspace{6pt}Thus $R_{k,y}SR_{x,i}=a_k R_{x,y}$. Denote by $T_{x,y}$.}\par\quad
+{\Large\vspace{6pt}Getting $(\displaystyle\frac{1}{a_k}T_{1,1}+\dots+\frac{1}{a_k}T_{n,n})v_j=v_j\Rightarrow${$\sum\limits_{r=1}^n \displaystyle\frac{1}{a_k}T_{r,r}=I.$}}\par\quad
+{\Large\vspace{6pt}又 By assumption, $T_{x,y}\in\mathcal{E}\Rightarrow I\in\mathcal{E}.$}\par\quad
+{\Large\vspace{6pt}Hence for any $T\in\Lm(V),I\circ T=T\circ I=T\in\mathcal{E}\Rightarrow \mathcal{E}=\Lm(V).\hfill\square$}\par\large
 \ProblemEnding\par
 
 \ProblemN{13}{
@@ -1064,16 +1067,16 @@ We prove by contradiction. By linear dependence lemma, $\,\,\exists\,\,j\in\{1,\
 Fix $j$. Let $w_j\neq 0$, while $w_1=\dots=w_{j-1}=w_{j+1}=w_m=0.$\par\quad
 Define $T$ by $Tv_k=w_k$ for all $k$. Suppose $a_1 v_1+\dots+a_m v_m=0$ ( where $a_j\neq 0$ ).\par\quad
 Then $T(a_1 v_1+\dots+a_m v_m)=0=a_1 w_1+\dots+a_m w_m=a_j w_j$ while $a_j\neq 0$ and $w_j\neq 0.$ Contradicts.$\hfill\square$\par\vspace{6pt}\quad
-\Or \,\dbsp We prove the contrapositive:\par\qquad\quad
-\dbsp Suppose for any list $(w_1,\dots,w_m)\in W,\,\exists\,T\in\Lm(V,W),Tv_k=w_k$  for each $w_k.$\par\qquad\quad
-\dbsp (We need to) Prove that $(v_1,\dots,v_n)$ is linely inde.\par\quad
-Suppose $\,\exists\,a_i\in\Fbb,a_1 v_1+\dots+a_n v_n=0.$ Choose a nonzero $w\in W.$\par\quad
-By assumption, for the list $(\overline{a_1}w,\dots,\overline{a_m}w),$ $\,\exists\,T\in\Lm(V,W),Tv_k=\overline{a_k}w$ for each $v_k.$\par\quad
-$0=T(\sum\limits_{k=1}^m a_k v_k)=\sum\limits_{k=1}^m a_k Tv_k=\sum\limits_{k=1}^m a_k\overline{a_k}w=(\sum\limits_{k=1}^m \left|a_k\right|^2)w.$ Hence $\sum\limits_{k=1}^m\left|a_k\right|^2=0\Rightarrow a_k=0.\hfill\square$\par
+\Or {\Large\vspace{6pt}\,\dbsp We prove the contrapositive:}\par\qquad\quad
+{\Large\vspace{6pt}\dbsp Suppose for any list $(w_1,\dots,w_m)\in W,\,\exists\,T\in\Lm(V,W),Tv_k=w_k$  for each $w_k.$}\par\qquad\quad
+{\Large\vspace{6pt}\dbsp (We need to) Prove that $(v_1,\dots,v_n)$ is linely inde.}\par\quad
+{\Large\vspace{6pt}Suppose $\,\exists\,a_i\in\Fbb,a_1 v_1+\dots+a_n v_n=0.$ Choose a nonzero $w\in W.$}\par\quad
+{\Large\vspace{10pt}By assumption, for the list $(\overline{a_1}w,\dots,\overline{a_m}w),$ $\,\exists\,T\in\Lm(V,W),Tv_k=\overline{a_k}w$ for each $v_k.$}\par\quad
+{\Large\vspace{10pt}Now we have $\displaystyle 0=T(\sum\limits_{k=1}^m a_k v_k)=\sum\limits_{k=1}^m a_k Tv_k=\sum\limits_{k=1}^m a_k\overline{a_k}w=(\sum\limits_{k=1}^m \left|a_k\right|^2)w.$}\par\quad
+{\Large\vspace{6pt}Then $\sum_{k=1}^m\left|a_k\right|^2=0\Rightarrow a_k=0$ for each $k.$ This contradicts the linely dep of $(v_1,\dots,v_n).\hfill\square$}\par
 \ProblemEnding\par
 \ChapterEnding
 \pagebreak
-%\vspace{30pt}
 \ChapterDecl{Ch3B}{3$\cdot$B}
 
 \vspace{10pt}
@@ -1145,7 +1148,6 @@ Define $T_2\in\Lm(V,W)$ as $T_2:\,\,\,\,v_1\mapsto w_1,$\,\,\,\quad$v_2\mapsto 0
 ( For each $j=2,\dots,m;\,\,i=1,\dots,n-m$, if $V$ is finite, otherwise let $i\in\Nbp.$ ) Thus $T_1+T_2\not\in U.\hfill\square\\[10pt]$
 \Comment \,\,\,If $\dim W=0,$ then $W=\{0\}=\Spn(\,)$. $\forall\,\,T\in\Lm(V,W), T$ is surj. Hence $U=\varnothing.$\par\qquad\qquad\quad\,If $\dim W=1,$ then $W=\Spn(v_0).$ Thus $U=\Spn(T_0),$ where $T_0 v_0=0.$\par
 \ProblemEnding\par
-
 \pagebreak
 
 \ProblemN{9}{
@@ -1205,7 +1207,6 @@ Define $T\in\Lm(V,W)$ by $Tv_i=w_i,\,\,\,i=1,\dots,n\,(\,=\dim V\,).\hfill\squar
 (b) Suppose $\dim V\geq\dim W,$ letting $(v_1,\dots,v_n)$ and $(w_1,\dots,w_m)$ be bases of $V$ and $W$ respectively.\par\quad\Hb
 Define $T\in\Lm(V,W)$ by $T(a_1 v_1+\dots+a_m v_m+a_{m+1} v_{m+1}+\dots+a_n v_n)=a_1 w_1+\dots+a_m w_m.\hfill\square$\par
 \ProblemEnding\par
-
 \pagebreak
 
 \ProblemN{19}{
@@ -1260,6 +1261,7 @@ Define $S\in\Lm(W,V)$ by $S(Tv_i)=v_i$ and $Su=0,\,\,u\in U.$ Thus $ST=I.\hfill\
 \centerline{\quad where $n=\dim\range T$ if finite-dim, otherwise $n\in\Nbp.$}\par\quad\Hb
 Then $\mathcal{K}_R\oplus\null T=V.$ Define $S\in\Lm(W,V)$ by $S(Tv_i)=v_i.$ Then $TS=I.\hfill\square\\[-6pt]$
 \ProblemEnding\par
+\pagebreak
 
 \ProblemN{22}{
 	\TextNL{Suppose $U$ and $V$ are finite-dim vecsps and $S\in\Lm(V, W)$ and $T\in\Lm(U, V)$.}
@@ -1641,6 +1643,7 @@ Thus there are at most $(\dim\range T-1)$ nonzero vecs in $Tv_1,\dots,Tv_n$.\par
 While $\range T=\Spn(Tv_1,\dots,Tv_n)\Rightarrow\dim\range T\leq \dim\range T-1.$ We get a contradiction.$\hfill\square$
 \par
 \ProblemEnding\par
+\pagebreak
 
 \ProblemN{3}{
 	\TextN{Suppose $V$ and $W$ are finite-dim and $T\in\Lm(V, W)$.}
@@ -1685,68 +1688,55 @@ Let $v_1=u_1,v_i=u_1+u_i.$ Extend it to $B_V$ the basis of $V$.$\,\,\hfill\squar
 \ProblemEnding\par
 
 %\ProblemN{12}{
-%	\TextNL{Give an example of 2-by-2 mtcs $A$ and $B$ such that $AB\neq BA$.}\vspace{6pt}
+%	\TextNL{Give an example of 2-by-2 matrices $A$ and $B$ such that $AB\neq BA$.}\vspace{6pt}
 %}$\begin{pmatrix} 1 & 0\\ 0 & -1\end{pmatrix}\begin{pmatrix}
 %0 & 1\\ 1 & 0\end{pmatrix}=\begin{pmatrix} 0 & 1\\ -1 & 0\end{pmatrix};$\qquad
 %$\begin{pmatrix} 0 & 1\\ 1 & 0\end{pmatrix}\begin{pmatrix}
 %1 & 0\\ 0 & -1\end{pmatrix}=\begin{pmatrix} 0 & -1\\ 1 & 0\end{pmatrix}.$\vspace{6pt}\par
 %\ProblemEnding\par
+\pagebreak
 
 \ProblemB{
-	\TextB{Prove that the commutativity does not hold in $\Fbb^{m,n}.$}
-}\par\quad
-Suppose $\dim V=n,\dim W=m$ and the commutativity holds in $\Fbb^{n,m}.$\par\quad
-Then $\forall T\in\Lm(V,W),S\in\Lm(W,V),\Mt(TS)=\Mt(T)\Mt(S)=\Mt(S)\Mt(T)=\Mt(ST).$\par\quad
-Hence $ST=TS.$ Which in general, does not hold. ( See 3.D )$\hfill\square$\par
-\ProblemEnding\par
-
-\ProblemB{
-	\TextB{Suppose $p$ is a poly of $n$ variables in $\Fbb$. Prove that $\Mt\left(p(T_1,\dots,T_n)\right)=p\left(\Mt(T_1),\dots,\Mt(T_n)\right).$}
+	\TextB{Suppose $p$ is a poly of $n$ variables in $\Fbb$. Prove that $\Mt\hspace{-2pt}\left(p(T_1,\dots,T_n)\right)=p\left(\Mt(T_1),\dots,\Mt(T_n)\right).$}
 	\TextB{\large Where the linear maps $T_1,\dots,T_n$ are such that $p(T_1,\dots,T_n)$ makes sense. See [5.B.16,17,20].}
 }\par\quad
 Suppose the poly $p$ is defined by $p(x_1,\dots,x_n)=\displaystyle\sum\limits_{k_1,\dots,k_n}\alpha_{k_1,\dots,k_n}\prod\limits_{i=1}^n x_i^{k_i}.$\par\quad
 Then $\displaystyle\Mt\left(p(T_1,\dots,T_n)\right)=\sum\limits_{k_1,\dots,k_n}\alpha_{k_1,\dots,k_n}\prod\limits_{i=1}^n T_i^{k_i}=\sum\limits_{k_1,\dots,k_n}\alpha_{k_1,\dots,k_n}\Mt\left(\prod\limits_{i=1}^n T_i^{k_i}\right).$\par\quad
 Note that $\Mt(T^x S^y)=\Mt(T)^x\Mt(S)^y$. Hence $\displaystyle\Mt\left(p(T_1,\dots,T_n)\right)=\sum\limits_{k_1,\dots,k_n}\alpha_{k_1,\dots,k_n}\Mt(T)^{k_1}\Mt\left(\prod\limits_{i=2}^n T_i^{k_i}\right).$\par\quad
 And for any $k\geq 1,$ $\displaystyle\Mt\left(p(T_1,\dots,T_n)\right)=\sum\limits_{k_1,\dots,k_n}\alpha_{k_1,\dots,k_n}\left(\prod\limits_{i=1}^k\Mt(T)^{k_i}\right)\Mt\left(\prod\limits_{i=k+1}^n T_i^{k_i}\right).$\par\quad
-Hence by mathematical induction, we conclude that $\displaystyle\sum\limits_{k_1,\dots,k_n}\alpha_{k_1,\dots,k_n}\Mt\left(\prod\limits_{i=1}^n T_i^{k_i}\right)=\sum\limits_{k_1,\dots,k_n}\alpha_{k_1,\dots,k_n}\prod\limits_{i=1}^n \Mt(T_i^{k_i}).$
+Hence by induction, we conclude that $\displaystyle\sum\limits_{k_1,\dots,k_n}\alpha_{k_1,\dots,k_n}\Mt\left(\prod\limits_{i=1}^n T_i^{k_i}\right)=\sum\limits_{k_1,\dots,k_n}\alpha_{k_1,\dots,k_n}\prod\limits_{i=1}^n \Mt(T_i^{k_i}).\hfill\square$\vspace{6pt}\par
 \ProblemEnding\par
 
 \ProblemN{13}{
 	\TextNL{Prove that the distr holds for matrix add and matrix multi.}
-	\TextNL{In other words, suppose $A, B, C, D, E$ and $F$ are matrices}
-	\TextNL{whose sizes are such that $A(B + C)$ and $(D + E)F$ make sense.}
-	\TextNL{Explain why $AB + AC$ and $DF + EF$ both make sense and prove the distr.}
-}Using [3.36], [3.43].\par\quad
-For left distr. Suppose $A\in\Fbb^{m,n}$ and $B,C\in\Fbb^{n,p}.$\par\quad
+}\par\quad
+Suppose $A, B, C, D, E,F$ are matrices such that $A(B + C)$ and $(D + E)F$ make sense, we prove the distr.\par\quad
+$A(B+C)=\Mt(T(S+R))\overset{[3.9]}{=}\Mt(TS+TR)=AB+AC.$\par\quad
+$(D+E)F=\Mt((T+S)R)\overset{[3.9]}{=}\Mt(TR+SR)=DF+EF.\hfill\square$\vspace{8pt}\par\quad
+\Or Using [3.36], [3.43]. For left distr. Suppose $A\in\Fbb^{m,n}$ and $B,C\in\Fbb^{n,p}.$\par\quad
 Because $[A(B+C)]_{j,k}=\sum\limits_{r=1}^n A_{j,r}(B+C)_{r,k}=\sum\limits_{r=1}^n (A_{j,r}B_{r,k}+A_{j,r}C_{r,k}).$\par\quad
-Hence we conclude that $A(B+C)=AB+AC.$ Similarly, $(D+E)F=DF+EF.\hfill\square$\par\vspace{6pt}\quad
+Hence we conclude that $A(B+C)=AB+AC.$ \; Similarly, $(D+E)F=DF+EF.\hfill\square$\par\vspace{8pt}\quad
 \Or Let $(e_1,\dots,e_m)$ be the standard basis of $\Fbb^m$, $(f_1,\dots,f_n)$ be the standard basis of $\Fbb^n.$\par\quad
 Suppose $T\in\Lm(\Fbb^n,\Fbb^m)$ such that $Tf_k=\sum\limits_{j=1}^m A_{j,k}e_j$ for each $k=1,\dots,n$. Then $\Mt(T)=A.$\par\quad
 Similarly, define $S,R$ such that $\Mt(S)=B,\Mt(R)=C.$\par\quad
 Thus $T(S+R)=TS+TR$ $\left\vert\begin{array}{l}$
 $\Rightarrow\Mt\left(T(S+R)\right)=\Mt(TS+TR)\\ $
 $\Rightarrow\Mt(T)\left[\Mt(S)+\Mt(R)\right]=\Mt(T)\Mt(S)+\Mt(T)\Mt(R)\\ $
-$\Rightarrow A(B+C)=AB+AC.\end{array}\right.$\par\quad
-Similar arguments will prove the right distr.\vspace{10pt}\par\quad
-\Or $A(B+C)=\Mt(T(S+R))\overset{[3.9]}{=}\Mt(TS+TR)=AB+AC.$\par\qquad\;\,
-$(D+E)F=\Mt((T+S)R)\overset{[3.9]}{=}\Mt(TR+SR)=DF+EF.\hfill\square$\par
+$\Rightarrow A(B+C)=AB+AC.\end{array}\right.$\vspace{4pt}\par\quad
+Similar arguments will prove the right distr.$\hfill\square$\par
 \ProblemEnding\par
 
 \ProblemN{14}{
-	\TextNL{Prove that matrix multi is associ. In other words,}
-	\TextNL{suppose $A, B$ and $C$ are mtcs whose sizes are such that $(AB)C$ makes sense.}
-	\TextNL{Explain why $A(BC)$ makes sense and prove that $(AB)C = A(BC).$}
+	\TextNL{Prove that matrix multi is associ.}
 }\par\quad
-Because $[(AB)C]_{j,k}=(AB)_{j,\cdot}C_{\cdot,k}=\sum\limits_{s=1}^n(A_{j,s}B_{s,\cdot})C_{\cdot,k}=\sum\limits_{s=1}^n A_{j,s}(B_{s,\cdot}C_{\cdot,k})=\sum\limits_{s=1}^n A_{j,s}(BC)_{s,k}=A(BC)_{j,k}$\par\quad
-Hence we conclude that $(AB)C=A(BC).$\par\vspace{6pt}\quad
-\Or Suppose $A\in\Fbb^{m,n},B\in\Fbb^{n,p},C\in\Fbb^{p,q}$.\par\quad
-Let $(e_1,\dots,e_m)$ be the standard basis of $\Fbb^m$, $(f_1,\dots,f_n)$ be the standard basis of $\Fbb^n.$\par\quad
-Suppose $T\in\Lm(\Fbb^n,\Fbb^m)$ such that $Tf_k=\sum\limits_{j=1}^m A_{j,k}e_j$ for each $k=1,\dots,n$. Then $\Mt(T)=A.$\par\quad
-Similarly, define $S,R$ such that $\Mt(S)=B,\Mt(R)=C.$\vspace{4pt}\par\quad
-Hence \vspace{-8pt}\AlignEq{}{(TS)R=T(SR)&\Rightarrow \Mt((TS)R)=\Mt(T(SR))\hspace{200pt}\\&\Rightarrow\left[\Mt(T)\Mt(S)\right]\Mt(R)=\Mt(T)\left[\Mt(S)\Mt(R)\right]\\&\Rightarrow (AB)C=A(BC).}
-\vspace{4pt}\par\quad
-\Or $(AB)C=\Mt(T(SR))\overset{[3.9]}{=}\Mt(TSR)\overset{[3.9]}{=}\Mt((TS)R)=A(BC).\hfill\square$\vspace{8pt}\par
+Suppose $A,B,C$ are matrices such that $(AB)C$ makes sense, we prove that $(AB)C = A(BC).$\vspace{4pt}\par\quad
+$(AB)C=\Mt(T(SR))\overset{[3.9]}{=}\Mt(TSR)\overset{[3.9]}{=}\Mt((TS)R)=A(BC).\hfill\square$\vspace{8pt}\par\quad
+\Or Because $[(AB)C]_{j,k}=(AB)_{j,\cdot}C_{\cdot,k}=\sum\limits_{s=1}^n(A_{j,s}B_{s,\cdot})C_{\cdot,k}=\sum\limits_{s=1}^n A_{j,s}(B_{s,\cdot}C_{\cdot,k})=\sum\limits_{s=1}^n A_{j,s}(BC)_{s,k}=A(BC)_{j,k}$\par\quad
+Hence we conclude that $(AB)C=A(BC).\hfill\square$\par\vspace{8pt}\quad
+\Or Similar to Problem (13), define $T,S,R$ such that $\Mt(T)=A,\Mt(S)=B,\Mt(R)=C.$\par\quad
+Hence \vspace{-8pt}\AlignEq{}{(TS)R=T(SR)\Rightarrow& \Mt((TS)R)=\Mt(T(SR))\hspace{200pt}\\\Rightarrow&\left[\Mt(T)\Mt(S)\right]\Mt(R)=\Mt(T)\left[\Mt(S)\Mt(R)\right]\\\Rightarrow& (AB)C=A(BC).}\vspace{-25pt}\par$\hfill\square$\par
 \ProblemEnding\par
+\pagebreak
 
 \ProblemN{15}{
 	\TextNL{Suppose $A$ is an n-by-n matrix and $1\leq j, k\leq n$.}
@@ -1756,6 +1746,15 @@ $\sum\limits_{p=1}^n \sum\limits_{r=1}^n A_{j,p}A_{p,r}A_{r,k}$.\vspace{6pt}}
 }\AlignEq{}{(AAA)_{j,k} &= (AA)_{j,\cdot}A_{\cdot,k}=\sum\limits_{p=1}^n (A_{j,p}A_{p,\cdot})A_{\cdot,k}=\sum\limits_{p=1}^n \sum\limits_{r=1}^n A_{j,p}A_{p,r}A_{r,k}.\\
 \textup{\Or}\,\,\,\,(AAA)_{j,k} &=\sum\limits_{r=1}^n(AA)_{j,r}A_{r,k} =\sum\limits_{r=1}^n(\sum\limits_{p=1}^n A_{j,p}A_{p,r})A_{r,k}\\&=\sum\limits_{r=1}^n\left[A_{j,1}(A_{1,r}A_{r,k})+\dots+A_{j,n}(A_{n,r}A_{r,k})\right]\\&=A_{j,1}\sum\limits_{r=1}^n A_{1,r}A_{r,k}+\dots+A_{j,n}\sum\limits_{r=1}^n A_{n,r}A_{r,k}=\sum\limits_{p=1}^n \sum\limits_{r=1}^n A_{j,p}A_{p,r}A_{r,k}.\hfill\square}\par
 \ProblemEnding\par
+
+\ProblemB{
+	\TextB{Prove that the commutativity does not hold in $\Fbb^{m,n}.$}
+}\par\quad
+Suppose $\dim V=n,\dim W=m$ and the commutativity holds in $\Fbb^{n,m}.$\par\quad
+Then $\forall T\in\Lm(V,W),S\in\Lm(W,V),\Mt(TS)=\Mt(T)\Mt(S)=\Mt(S)\Mt(T)=\Mt(ST).$\par\quad
+Hence $ST=TS.$ Which in general, does not hold. ( See 3.D )$\hfill\square$\par
+\ProblemEnding\par
+
 \ChapterEnding
 
 \ChapterDecl{Ch3D}{3$\cdot$D}
@@ -4311,7 +4310,7 @@ By assumption, $T|_{\null q(T)}$ has an invar subsp of dim $2.\hfill\square$\par
 \ProblemEnding\par
 
 \ProblemBnoor{({\normalsize4E 5.C.2})}{
-	\TextB{Suppose $A$ and $B$ are upper-trig mtcs of the same size,}
+	\TextB{Suppose $A$ and $B$ are upper-trig matrices of the same size,}
 	\TextB{with $\alpha_1 , \dots , \alpha_n$ on the diag of $A$ and $\beta_1 , \dots , \beta_n$ on the diag of $B$.}
 	(a) \TextB{Show that $A + B$ is an upper-trig matrix with $\alpha_1 + \beta_1 , \dots , \alpha_n + \beta_n$ on the diag.}
 	(b) \TextB{Show that $AB$ is an upper-trig matrix with $\alpha_1 \beta_1 , \dots , \alpha_n \beta_n$ on the diag.}
