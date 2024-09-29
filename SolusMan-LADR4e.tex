@@ -869,7 +869,7 @@ $}\Rightarrow\dim U_i=6-1,\,\,i=\underbrace{1,2,3}_{6-3=3}.$}
 }\par\quad
 Choose a basis $ \mathcal{E}_i$ of $V_i\Rightarrow V_1+\dots+V_m=\Spn( \mathcal{E}_1\cup\cdots\cup \mathcal{E}_m);\,\,\,\dim V_i=\card \mathcal{E}_i$.\par\quad
 Then $\dim(V_1+\dots+V_m)=\dim\Spn( \mathcal{E}_1\cup\cdots\cup \mathcal{E}_m)$.\par\quad
-又 $\dim\Spn( \mathcal{E}_1\cup\cdots\cup\mathcal{E}_m)\leq\card( \mathcal{E}_1\cup\cdots\cup \mathcal{E}_m)\leq\card \mathcal{E}_1+\cdots+\card \mathcal{E}_m$.\par\quad
+又 $\dim\Spn(\mathcal{E}_1\cup\cdots\cup\mathcal{E}_m)\leq\card( \mathcal{E}_1\cup\cdots\cup \mathcal{E}_m)\leq\card \mathcal{E}_1+\cdots+\card \mathcal{E}_m$.\par\quad
 Thus $\dim(V_1+\dots+V_m)\leq \dim V_1+\dots+\dim V_m.\hfill\square$\par\quad
 \Comment \,\,\,{\timessl\Large$\dim(V_1+\dots+V_m)=\dim V_1+\dots+\dim V_m\Longleftrightarrow V_1+\dots+V_m$ is a direct sum.}\par\qquad\qquad\qquad
 For each $i$, $(V_1+\dots+V_i)\cap V_{i+1}=\{0\}\Longleftrightarrow V_1+\dots+V_m$ is a direct sum\par\qquad\qquad\;\;
@@ -898,12 +898,17 @@ For example, $X=\left\{(x,0)\in\Rbb^2:x\in\Rbb\right\},Y=\left\{(0,y)\in\Rbb^2:y
 \AlignEq{\hspace{20pt}}{\dim(V_1+V_2+V_3)=\dim &\,V_1+\dim V_2+\dim V_3\\&-\displaystyle\frac{\dim(V_1\cap V_2)+\dim(V_1\cap V_3)+\dim(V_2\cap V_3)}{3}\\&-\displaystyle\frac{\dim\left((V_1+V_2)\cap V_3\right)+\dim\left((V_1+V_3)\cap V_2\right)+\dim\left((V_2+V_3)\cap V_1\right)}{3}.}\par\quad
 {\timessl The formula above may seem strange because the right side does not look like an integer.$\hfill\square$}\par
 \ProblemEnding\par
-\ChapterEnding
 
+\BulletPoint \,\hspace{1pt}{\Tips\TextB{}}
+\TextB{Suppose $v_1,\dots,v_n\in V,\dim\Spn(v_1,\dots,v_n)=n.$ Then $(v_1,\dots,v_n)$ is a basis of $\Spn(v_1,\dots,v_n).$}
+Notice that $(v_1,\dots,v_n)$ is a spanning list of $\Spn(v_1,\dots,v_n)$ of length $n=\dim\Spn(v_1,\dots,v_n).\hfill\square$\par
+\ProblemEnding\par
+\ChapterEnding
 \pagebreak
 
 \ChapterDecl{Ch3A}{3$\cdot$A}
 
+\vspace{12pt}
 %\ProblemN{2} {\timessl\Large 
 %Suppose $b,c\in\Rbb$. Define $T:\PoR{}\rightarrow$ $\Rbb^2$ by}\par\,\,\,
 %\centerline{\timessl\Large
@@ -948,12 +953,10 @@ $T(0,0,0,\dots,0,1)=(A_{1,n},\dots,A_{m,n}).$\par
 \ProblemEnding\par
 
 \ProblemN{7}{
-	\TextN{Show that every linear map from a one-dim vecsp to itself}
-	\TextN{is multi by some scalar. More precisely, prove that if $\dim V = 1$ and $T\in\Lm(V)$,}
-	\TextN{then there exists $\lambda\in\Fbb$ such that $Tv = \lambda v$ for all $v\in V$.}
+	\TextN{Show that every linear map from a one-dim vecsp to itself is a multi by some scalar.}
+	\TextN{More precisely, prove that if $\dim V = 1$ and $T\in\Lm(V)$, then $\exists\,\lambda\in\Fbb,Tv = \lambda v,\forall v\in V$.}
 }\par\quad
-Let $u$ be a nonzero vec in $V\Rightarrow V=\Spn(u)$.\par\quad
-Because $Tu\in V\Rightarrow Tu=\lambda u$ for some $\lambda$.\par\quad
+Let $u$ be a nonzero vec in $V\Rightarrow V=\Spn(u)$. Because $Tu\in V\Rightarrow Tu=\lambda u$ for some $\lambda$.\par\quad
 Suppose $v\in V\Rightarrow v=au,\,\,\exists\,!\,a\in\Fbb$. Then $Tv=T(au)=\lambda au=\lambda v.\hfill\square$\par
 \ProblemEnding\par
 
@@ -977,9 +980,9 @@ Define $\varphi(u\,+\i v)=u=\mathfrak{Re}\,(u\,+\i v)$\par\quad
 \ProblemEnding\par
 
 \ProblemB{
-	\TextB{Prove or give a counterexample:}
-	\TextB{If $q\in\PoR{}$ and $T:\PoR{}\rightarrow\PoR{}$ is defined by $Tp=q\circ p,$ then $T$ is linear.}
-}Because in general, $q\left(p_1(x)+\lambda p_2(x)\right)\neq (q\circ p_1)(x)+\lambda (q\circ p_2)(x).\hfill\square$\par
+	\TextB{Prove that if $q\in\PoR{}$ and $T:\PoR{}\rightarrow\PoR{}$ is defined by $Tp=q\circ p,$ then $T$ is not linear.}
+}Because in general, $q\circ (p_1+\lambda p_2)(x)=q\left(p_1(x)+\lambda p_2(x)\right)\neq (q\circ p_1)(x)+\lambda (q\circ p_2)(x).$\par\qquad\qquad\;\;\,
+An example: let $q$ be defined by $q(x)=x^2,$ then $q\circ\left(1+(-1)\right)=0\neq q(1)+q(-1)=2.\hfill\square$\par
 \ProblemEnding\par
 
 \ProblemBor{3.D.16}{
@@ -989,13 +992,12 @@ Define $\varphi(u\,+\i v)=u=\mathfrak{Re}\,(u\,+\i v)$\par\quad
 If $V=\{0\},$ then we are done. Now suppose $V\neq\{0\}.$\par\quad
 Assume that $(v,Tv)$ is linely depe for every $v\in V$, then by (2.A.2.(b)), $Tv=\lambda_v v$ for some $\lambda_v\in\Fbb.$\par\quad
 To prove that $\lambda_v$ is independent of $v$\par\quad
-( in other words, for any two distinct nonzero vecs $v$ and $w$ in V, we have $\lambda_v\neq\lambda_w$ ), we discuss in two cases:\par\quad
+( in other words, for any two distinct $v,w$ in $V\backslash\{0\}$, we have $\lambda_v\neq\lambda_w$ ), we discuss in two cases:\par\hspace{1pt}
 $\MathRightBrace{l}{$
 $(-)$ If $(v,w)$ is linely inde, $\lambda_{v+w}(v+w)=T(v+w)=Tv+Tw=a_v v+a_w w\\ $\qquad\qquad\qquad\qquad\qquad\qquad\qquad $\Rightarrow (\lambda_{v+w}-\lambda_v)v+(\lambda_{v+w}-\lambda_w)w=0\\ $
 $(=)$ Otherwise, suppose $w=cv$, $a_w w=Tw=cTv=ca_v v=a_v w\Rightarrow(a_w-a_v)w$
 $}\Rightarrow a_w=a_v.$\par\quad
-Now we prove the assumption by contradiction.\par\quad
-Suppose $(v,Tv)$ is linely inde for every nonzero vec $v\in V$.\par\quad
+Now we prove the assumption by contradiction. Suppose $(v,Tv)$ is linely inde for every $v\in V\backslash\{0\}$.\par\quad
 Fix one $v$. Extend to $(v,Tv,u_1,\dots,u_n)$ a basis of $V$.\par\quad
 Define $S\in\Lm(V)$ by $S(av+bTv+c_1 u_1+\dots+c_n u_n)=bv\Rightarrow S(Tv)=v=T(Sv)=0.$ Contradicts.$\hfill\square$\par\vspace{6pt}\quad
 \Or \,\dbsp Let $(v_1,\dots,v_m)$ be a basis of $V.$\par\qquad\quad
@@ -1037,24 +1039,6 @@ $\Rightarrow a_1=\dots=a_m=0.$ 又 $m$ arbitrary.\par\quad
 Thus $(T_{x,1},\dots,T_{x,m})$ is a linely inde list in $\Lm(V,W)$ for any $x$ and length $m$. Hence by (2.A.14).$\hfill\square$\par
 \ProblemEnding\par
 
-
-\ProblemN{13}{
-	\TextNL{Suppose $(v_1,\dots,v_m)$ is a linely depe list of vecs in $V$.}
-	\TextNL{Suppose also that $W\neq\{0\}$. Prove that there exist $(w_1,\dots,w_m)\in W$}
-	\TextNL{such that no $T\in\Lm(V, W)$ satisfies $Tv_k=w_k$ for each $k = 1,\dots,m$.}
-}\par\quad
-We prove by contradiction. By linear dependence lemma, $\,\,\exists\,\,j\in\{1,\dots,m\}$ such that $v_j\in\Spn(v_1,\dots,v_{j-1})$.\par\quad
-Fix $j$. Let $w_j\neq 0$, while $w_1=\dots=w_{j-1}=w_{j+1}=w_m=0.$\par\quad
-Define $T$ by $Tv_k=w_k$ for all $k$. Suppose $a_1 v_1+\dots+a_m v_m=0$ ( where $a_j\neq 0$ ).\par\quad
-Then $T(a_1 v_1+\dots+a_m v_m)=0=a_1 w_1+\dots+a_m w_m=a_j w_j$ while $a_j\neq 0$ and $w_j\neq 0.$ Contradicts.$\hfill\square$\par\vspace{6pt}\quad
-\Or \,\dbsp We prove the contrapositive:\par\qquad\quad
-\dbsp Suppose for any list $(w_1,\dots,w_m)\in W,\,\exists\,T\in\Lm(V,W),Tv_k=w_k$  for each $w_k.$\par\qquad\quad
-\dbsp (We need to) Prove that $(v_1,\dots,v_n)$ is linely inde.\par\quad
-Suppose $\,\exists\,a_i\in\Fbb,a_1 v_1+\dots+a_n v_n=0.$ Choose a nonzero $w\in W.$\par\quad
-By assumption, for the list $(\overline{a_1}w,\dots,\overline{a_m}w),$ $\,\exists\,T\in\Lm(V,W),Tv_k=\overline{a_k}w$ for each $v_k.$\par\quad
-$0=T(\sum\limits_{k=1}^m a_k v_k)=\sum\limits_{k=1}^m a_k Tv_k=\sum\limits_{k=1}^m a_k\overline{a_k}w=(\sum\limits_{k=1}^m \left|a_k\right|^2)w.$ Hence $\sum\limits_{k=1}^m\left|a_k\right|^2=0\Rightarrow a_k=0.\hfill\square$\par
-\ProblemEnding\par
-
 \ProblemB{
 	\TextB{{\large({\normalsize 4E 3.A.16})}}
 	\TextB{Suppose $V$ is finite-dim. Show that the only two-sided ideals of $\Lm(V)$ are $\{0\}$ and $\Lm(V)$.}
@@ -1070,14 +1054,54 @@ Getting $(\displaystyle\frac{1}{a_k}T_{1,1}+\dots+\frac{1}{a_k}T_{n,n})v_j=v_j\R
 又 By assumption, $T_{x,y}\in\mathcal{E}\Rightarrow I\in\mathcal{E}.$\par\quad
 Hence for any $T\in\Lm(V),I\circ T=T\circ I=T\in\mathcal{E}\Rightarrow \mathcal{E}=\Lm(V).\hfill\square$\par\large
 \ProblemEnding\par
-\ChapterEnding
 
+\ProblemN{13}{
+	\TextNL{Suppose $(v_1,\dots,v_m)$ is linely depe in $V$ and $W\neq\{0\}$.}
+	\TextNL{Prove that there exists a list $w_1,\dots,w_m\in W$}
+	\TextNL{such that $\not\exists\,T\in\Lm(V, W),Tv_k=w_k,\forall k = 1,\dots,m$.}
+}\par\quad
+We prove by contradiction. By linear dependence lemma, $\,\,\exists\,\,j\in\{1,\dots,m\}$ such that $v_j\in\Spn(v_1,\dots,v_{j-1})$.\par\quad
+Fix $j$. Let $w_j\neq 0$, while $w_1=\dots=w_{j-1}=w_{j+1}=w_m=0.$\par\quad
+Define $T$ by $Tv_k=w_k$ for all $k$. Suppose $a_1 v_1+\dots+a_m v_m=0$ ( where $a_j\neq 0$ ).\par\quad
+Then $T(a_1 v_1+\dots+a_m v_m)=0=a_1 w_1+\dots+a_m w_m=a_j w_j$ while $a_j\neq 0$ and $w_j\neq 0.$ Contradicts.$\hfill\square$\par\vspace{6pt}\quad
+\Or \,\dbsp We prove the contrapositive:\par\qquad\quad
+\dbsp Suppose for any list $(w_1,\dots,w_m)\in W,\,\exists\,T\in\Lm(V,W),Tv_k=w_k$  for each $w_k.$\par\qquad\quad
+\dbsp (We need to) Prove that $(v_1,\dots,v_n)$ is linely inde.\par\quad
+Suppose $\,\exists\,a_i\in\Fbb,a_1 v_1+\dots+a_n v_n=0.$ Choose a nonzero $w\in W.$\par\quad
+By assumption, for the list $(\overline{a_1}w,\dots,\overline{a_m}w),$ $\,\exists\,T\in\Lm(V,W),Tv_k=\overline{a_k}w$ for each $v_k.$\par\quad
+$0=T(\sum\limits_{k=1}^m a_k v_k)=\sum\limits_{k=1}^m a_k Tv_k=\sum\limits_{k=1}^m a_k\overline{a_k}w=(\sum\limits_{k=1}^m \left|a_k\right|^2)w.$ Hence $\sum\limits_{k=1}^m\left|a_k\right|^2=0\Rightarrow a_k=0.\hfill\square$\par
+\ProblemEnding\par
+\ChapterEnding
+\pagebreak
+%\vspace{30pt}
 \ChapterDecl{Ch3B}{3$\cdot$B}
 
-\ProblemN{2}{
-	\TextN{Suppose $S,T\in\Lm(V)$ are such that $\range S\subseteq\null T$. Prove that $(ST)^2=0$.}
-}$TS=0\Rightarrow STST=(ST)^2=0.\hfill\square$\par
+\vspace{10pt}
+
+\ProblemB{
+	\TextB{Suppose that $V$ and $W$ are real vecsps and $T\in\Lm(V, W)$.}
+	\TextB{Define $T_{\Cbb}:V_{\Cbb}\rightarrow W_{\Cbb}$ by $T_{\Cbb}(u+\i v)=Tu+\i Tv$ for all $u,v\in V$.}
+	(a) \TextB{Show that $T_{\Cbb}$ is a $($complex$)$ linear map from $V_{\Cbb}$ to $W_{\Cbb}$ .}
+	(b) \TextB{Show that $T_{\Cbb}$ is inje $\Longleftrightarrow$ T is inje.}
+	(c) \TextB{Show that $\range T_{\Cbb} = W_{\Cbb}\Longleftrightarrow\range T = W$.}
+}\par\quad
+(a) \vspace{-6pt}
+\AlignEq{}{&\forall u_1+\i v_1,u_2+\i v_2\in V_{\Cbb}, \lambda\in\Fbb,\\&T\left((u_1+\i v_1)+\lambda(u_2+\i v_2)\right)=T\left((u_1+\lambda u_2)+\i(v_1+\lambda v_2)\right)=T(u_1+\lambda u_2)+\i T(v_1+\lambda v_2)\\= \,& Tu_1+\i Tv_1+\lambda Tu_2+\i\lambda Tv_2=T(u_1+\i v_1)+\lambda T(u_2+\i v_2).}\par\quad
+(b) $\left|\begin{array}{l}$
+	Suppose $T_{\Cbb}$ is inje. Let $T(u)=0\Rightarrow T_{\Cbb}(u+\i 0)=Tu=0\Rightarrow u=0.\\ $
+	Suppose $T$ is inje. Let $T_{\Cbb}(u+\i v)=Tu+\i Tv=0\Rightarrow Tu=Tv=0\Rightarrow u+\i v=0.$
+	$\end{array}\right\}\Rightarrow\square$\par\vspace{6pt}\quad
+(c) $\left|\begin{array}{l}$
+	Suppose $T_{\Cbb}$ is surj. $\forall w\in W,\,\,\exists\,u\in V,T(u+\i 0)=Tu=w+\i 0=w\Rightarrow$ T is surj.$\\ $
+	Suppose $T$ is surj. $\,\forall w,x\in W,\,\exists\,u,v\in V,Tu=w,Tv=x\\ $\qquad\qquad\qquad\quad\hspace{0.5pt}
+	$\Rightarrow\forall w+\i x\in W_{\Cbb},\,\exists\,u+\i v\in V,T(u+\i v)=w+\i x\Rightarrow T_{\Cbb}$ is surj.
+	$\end{array}\right\}\Rightarrow\square$\par\vspace{10pt}
 \ProblemEnding\par
+
+%\ProblemN{2}{
+%	\TextN{Suppose $S,T\in\Lm(V)$ are such that $\range S\subseteq\null T$. Prove that $(ST)^2=0$.}
+%}$TS=0\Rightarrow STST=(ST)^2=0.\hfill\square$\par
+%\ProblemEnding\par
 
 \Onumber{3} \TextN{ Suppose $(v_1,\dots,v_m)$ in V. Define $T\in\Lm(\Fbb^m, V)$ by $T(z_1,\dots,z_m)=z_1 v_1+\dots+z_m v_m.$}
 	(a) \TextN{\Large The surj of $T$ corresponds to $(v_1,\dots,v_m)$ spanning $V$.}
@@ -1099,29 +1123,30 @@ Hence for any $T\in\Lm(V),I\circ T=T\circ I=T\in\mathcal{E}\Rightarrow \mathcal{
 %\ProblemEnding\par
 
 \ProblemN{7}{
-	\TextN{Suppose $V$ is finite-dim with $2\leq\dim V$ and also $\dim V\leq\dim W$, if \,$W$ is finite-dim.}
+	\TextN{Suppose $V$ is finite-dim with $2\leq\dim V.$ And $\dim V\leq\dim W$, if \,$W$ is finite-dim.}
 	\TextN{Show that $U=\left\{\,T\in\Lm(V, W):\null T\neq\{0\}\right\}$ is not a subsp of $\Lm(V, W)$.}
 }\par\quad
 Let $(v_1,\dots,v_n)$ be a basis of $V$, $(w_1,\dots,w_m)$ be linely inde in $W$.\par\quad
-( Let $\dim W=m$, if $W$ is finite, otherwise, let $m\in\{n,n+1,\dots\}$; $2\leq n\leq m$ ).\par\quad
-Define $T_1\in\Lm(V,W)$ as $T_1:\,\,\,\,v_1\mapsto 0,$\qquad$v_2\mapsto w_2,$\qquad$v_i\mapsto w_i$.\par\quad
-Define $T_2\in\Lm(V,W)$ as $T_2:\,\,\,\,v_1\mapsto w_1,$ \quad\,$v_2\mapsto 0,$\,\,\,\qquad$v_i\mapsto w_i$,\qquad $i=3,\dots,n.$\par\quad
-Thus $T_1+T_2\not\in U.\hfill\square$\par
-\Comment \,If $\dim V=0,$ then $V=\{0\}=\Spn(\,)$. $\forall\,\,T\in\Lm(V,W), T$ is inje. Hence $U=\varnothing$.\par\qquad\qquad\quad\,If $\dim V=1,$ then $V=\Spn(v_0).$ Thus $U=\Spn(T_0),$ where $T_0 v_0=0.$\par\qquad\qquad\quad\,If $V$ is infinite-dim, the result is true as well.\par
+( Let $\dim W=m$, if $W$ is finite, otherwise, let $m\in\{n,n+1,\dots\}$; $2\leq n\leq m$ ).\par\,
+$\MathRightMid{l}{$
+Define $T_1\in\Lm(V,W)$ as $T_1:\,\,\,\,v_1\mapsto 0,$\qquad$v_2\mapsto w_2,$\qquad$v_i\mapsto w_i$.$\\$
+Define $T_2\in\Lm(V,W)$ as $T_2:\,\,\,\,v_1\mapsto w_1,$ \quad\,$v_2\mapsto 0,$\,\,\,\qquad$v_i\mapsto w_i$,\qquad $i=3,\dots,n.}$ Thus $T_1+T_2\not\in U.\hfill\square\\[10pt]$
+\Comment \,\,\,If $\dim V=0,$ then $V=\{0\}=\Spn(\,)$. $\forall\,\,T\in\Lm(V,W), T$ is inje. Hence $U=\varnothing$.\par\qquad\qquad\quad\,If $\dim V=1,$ then $V=\Spn(v_0).$ Thus $U=\Spn(T_0),$ where $T_0 v_0=0.$\par
 \ProblemEnding\par
 
 \ProblemN{8}{
-	\TextN{Suppose $W$ is finite-dim with $\dim W\geq 2$ and also $\dim V\geq\dim W$, if \,$V$ is finite-dim.}
+	\TextN{Suppose $W$ is finite-dim with $\dim W\geq 2.$ And $\dim V\geq\dim W$, if \,$V$ is finite-dim.}
 	\TextN{Show that $U=\left\{\,T\in\Lm(V, W):\range T\neq W\right\}$ is not a subsp of $\Lm(V, W)$.}
 }\par\quad
 Let $(v_1,\dots,v_n)$ be linely inde in $V$, $(w_1,\dots,w_m)$ be a basis of $W$.\par\quad
 ( Let $n=\dim V$, if $V$ is finite, otherwise we choose $n\in\{m,m+1,\dots\}$; $2\leq m\leq n$ ).\par\quad
 Define $T_1\in\Lm(V,W)$ as $T_1:\,\,\,\,v_1\mapsto 0,$\qquad$v_2\mapsto w_2,$\qquad$v_j\mapsto w_j,$\qquad$v_{m+i}\mapsto 0.$\par\quad
 Define $T_2\in\Lm(V,W)$ as $T_2:\,\,\,\,v_1\mapsto w_1,$\,\,\,\quad$v_2\mapsto 0,$\,\,\,\qquad$v_j\mapsto w_j,$\qquad$v_{m+i}\mapsto 0.$\par\quad
-For each $j=2,\dots,m;\,\,i=1,\dots,n-m$, if $V$ is finite, otherwise let $i\in\Nbp.$\par\quad
-Thus $T_1+T_2\not\in U.\hfill\square$\par
-\Comment \,If $\dim W=0,$ then $W=\{0\}=\Spn(\,)$. $\forall\,\,T\in\Lm(V,W), T$ is surj. Hence $U=\varnothing.$\par\qquad\qquad\quad\,If $\dim W=1,$ then $W=\Spn(v_0).$ Thus $U=\Spn(T_0),$ where $T_0 v_0=0.$\par\qquad\qquad\quad\,If $W$ is infinite-dim, the result is true as well.\par
+( For each $j=2,\dots,m;\,\,i=1,\dots,n-m$, if $V$ is finite, otherwise let $i\in\Nbp.$ ) Thus $T_1+T_2\not\in U.\hfill\square\\[10pt]$
+\Comment \,\,\,If $\dim W=0,$ then $W=\{0\}=\Spn(\,)$. $\forall\,\,T\in\Lm(V,W), T$ is surj. Hence $U=\varnothing.$\par\qquad\qquad\quad\,If $\dim W=1,$ then $W=\Spn(v_0).$ Thus $U=\Spn(T_0),$ where $T_0 v_0=0.$\par
 \ProblemEnding\par
+
+\pagebreak
 
 \ProblemN{9}{
 	\TextN{Suppose $T\in\Lm(V, W)$ is inje and $(v_1,\dots,v_n)$ is linely inde in $V$.}
@@ -1135,18 +1160,18 @@ $a_1 Tv_1+\dots+a_n Tv_n=0=T(\sum\limits_{i=1}^n a_i v_i)\Longleftrightarrow \su
 }\par\quad
 (a) $\range T=\left\{Tv:v\in V\right\}=\left\{Tv:v\in\Spn(v_1,\dots,v_n)\right\}\Rightarrow Tv_1,\dots,Tv_n\in\range T\Rightarrow$ By [2.7].\par\quad\Ha
 \Or $\Spn(Tv_1,\dots,Tv_n)\ni a_1 Tv_1+\dots+a_n Tv_n=T(a_1 v_1+\dots+a_n v_n)\in\range T.$\par\quad
-(b) $\forall\,w\in\range T,\,\exists\,v\in V,w=Tv.\,(\,\exists\,\,a_i\in\Fbb,v=a_1 v_1+\dots+a_n v_n)\Rightarrow w=a_1 Tv_1+\dots+a_n Tv_n\Rightarrow\square$\par\quad
+(b) $\forall\,w\in\range T,\,\exists\,v\in V,w=Tv.\,(\,\exists\,\,a_i\in\Fbb,v=a_1 v_1+\dots+a_n v_n)\Rightarrow w=a_1 Tv_1+\dots+a_n Tv_n.\hfill\square$\par\quad
 \ProblemEnding\par
 
 \ProblemN{11}{
-	\TextNL{Suppose $S_1,\dots,S_n$ are inje linear maps and $S_1 S_2\dots S_n$ makes sence.}
-	\TextNL{Prove that $S_1 S_2\dots S_n$ is inje.}
-}$S_1 S_2\dots S_n(v)=0\Longleftrightarrow S_2 S_3\dots S_n(v)=0\Longleftrightarrow\cdots\Longleftrightarrow S_n(v)=0\Longleftrightarrow v=0.\hfill\square$\par
+	\TextNL{Suppose $S_1,\dots,S_n$ are linear and inje. $S_1 S_2\dots S_n$ makes sence. Prove that $S_1 S_2\dots S_n$ is inje.}
+}\par\quad
+$S_1 S_2\dots S_n(v)=0\Longleftrightarrow S_2 S_3\dots S_n(v)=0\Longleftrightarrow\cdots\Longleftrightarrow S_n(v)=0\Longleftrightarrow v=0.\hfill\square$\par
 \ProblemEnding\par
 
 \ProblemN{12}{
-	\TextNL{Suppose that $V$ is finite-dim and that $T\in\Lm(V, W)$. Prove that}
-	\TextNL{there exists a subsp $U$ of \,$V$ such that $U\cap\null T=\{0\}$ and $\range T=\left\{Tu:u\in U\right\}$.}
+	\TextNL{Suppose that $V$ is finite-dim and that $T\in\Lm(V, W)$.}
+	\TextNL{Prove that $\exists$ a subsp $U$ of \,$V$ such that $U\cap\null T=\{0\},\;\range T=\left\{Tu:u\in U\right\}$.}
 }\par\quad
 By [2.34], there exists a subsp $U$ of \,$V$ such that $V=U\oplus\null T$.\par\quad
 $\forall v\in V,\,\,\exists\,!\,\,w\in\null T,u\in U, v=w+u.$ Then $Tv=T(w+u)=Tu\in\left\{Tu:u\in U\right\}\Rightarrow\square$\par
@@ -1166,8 +1191,7 @@ Getting $V\subseteq\Spn(v_1,\dots,v_n,u_1,\dots,u_m)$. Thus $V$ is finite-dim.$\
 \ProblemEnding\par
 
 \ProblemN{17}{
-	\TextNL{Suppose $V$ and $W$ are both finite-dim. Prove that there exists an inje $T\in\Lm(V,W)$}
-	\TextNL{if and only if $\dim V\leq\dim W$.}
+	\TextNL{Suppose $V,W$ are finite-dim. Prove that $\exists$ inje $T\in\Lm(V,W)\Longleftrightarrow\dim V\leq\dim W$.}
 }\par\quad
 (a) Suppose there exists an inje $T$. Then $\dim V=\dim\range T\leq\dim W$.\par\quad
 (b) Suppose $\dim V\leq\dim W$, letting $(v_1,\dots,v_n)$ and $(w_1,\dots,w_m)$ be bases of $V$ and $W$ respectively.\par\quad\Hb
@@ -1175,47 +1199,43 @@ Define $T\in\Lm(V,W)$ by $Tv_i=w_i,\,\,\,i=1,\dots,n\,(\,=\dim V\,).\hfill\squar
 \ProblemEnding\par
 
 \ProblemN{18}{
-	\TextNL{Suppose $V$ and $W$ are both finite-dim. Prove that there exists a surj $T\in\Lm(V,W)$}
-	\TextNL{if and only if $\dim V\geq\dim W$.}
+	\TextNL{Suppose $V,W$ are finite-dim. Prove that $\exists$ surj $T\in\Lm(V,W)\Longleftrightarrow\dim V\geq\dim W$.}
 }\par\quad
 (a) Suppose there exists a surj $T$. Then $\dim V=\dim W+\dim\null T\Rightarrow\dim W\leq\dim V$.\par\quad
 (b) Suppose $\dim V\geq\dim W,$ letting $(v_1,\dots,v_n)$ and $(w_1,\dots,w_m)$ be bases of $V$ and $W$ respectively.\par\quad\Hb
 Define $T\in\Lm(V,W)$ by $T(a_1 v_1+\dots+a_m v_m+a_{m+1} v_{m+1}+\dots+a_n v_n)=a_1 w_1+\dots+a_m w_m.\hfill\square$\par
 \ProblemEnding\par
 
+\pagebreak
+
 \ProblemN{19}{
-	\TextNL{Suppose $V$ and $W$ are finite-dim and that $U$ is a subsp of \,$V$.}
-	\TextNL{Prove that $\,\exists\,\,T\in\Lm(V, W),\,\,\null T = U\Longleftrightarrow\dim U\geq\dim V-\dim W$.}
+	\TextNL{Suppose $V,W$ are finite-dim, $U$ is a subsp of \,$V$.}
+	\TextNL{Prove that if $\underbrace{\dim U}_m\geq\underbrace{\dim V}_{m\,+\,n}-\underbrace{\dim W}_{p},$ then $\exists\,\,T\in\Lm(V, W),\,\,\null T = U$.}
 }\par\quad
-(a) Suppose $\,\exists\,\,T\in\Lm(V, W),\,\,\null T = U$. Then $\dim\null T=\dim U\geq\dim V-\dim W.$\par\quad
-(b) Suppose $\underbrace{\dim U}_m\geq\underbrace{\dim V}_{m\,+\,n}-\underbrace{\dim W}_{p}\,(\,\Rightarrow\dim W=p\geq n=\dim V-\dim U\,)$.\par\quad\Hb
-Let $(u_1,\dots,u_m)$ be a basis of $U$, extend to a basis of $V$ as $(u_1,\dots,u_m,v_1,\dots,v_n).$\par\quad\Hb
-Let $(w_1,\dots,w_p)$ be a basis of $W$.\par\quad\Hb
+Let $(u_1,\dots,u_m)$ be a basis of $U$, extend to a basis of $V$ as $(u_1,\dots,u_m,v_1,\dots,v_n).$\par\quad
+Let $(w_1,\dots,w_p)$ be a basis of $W$. Note that $\dim W=p\geq n=\dim V-\dim U$.\par\quad
 Define $T\in\Lm(V,W)$ by $T(a_1 v_1+\dots+a_n v_n+b_1 u_1+\dots+b_m u_m)=a_1 w_1+\dots+a_n w_n.\hfill\square$\par
 \ProblemEnding\par
 
-\BulletPoint \,\Tips
-\,\,\TextNL{Suppose $T\in\Lm(V,W)$ and $R=(Tv_1,\dots,Tv_n)$ is linely inde in $\range T$.}\hspace{18pt}
-\dbsp{\timessl\large$($ Let $\dim\range T=n$, if $\range T$ is finite, otherwise let $n\in\Nbp.$ $)$}{\normalsize\par}\IndentNL\hspace{18pt}
-\dbsp{\timessl\Large By (3.A.4), $L=(v_1,\dots,v_n)$ is linely inde in $V$.}{\normalsize\par}
-
-\BulletPoint \,\NewNotation\TextB{}
-\TextB{Denote $\mathcal{K}_R$ by $\Spn L$, if $\range T$ is finite-dim, otherwise, denote it by a vecsp in $\mathcal{S}_V\null T$.}
-\TextB{Note that if $\range T$ is finite-dim, then $\mathcal{K}_{\range T}=\mathcal{K}_R$ for any basis $R$ of $\range T.$}\vspace{6pt}
-\BulletPoint\,\NewTheorem\,\,\,{\Large$\mathcal{K}_R\in\mathcal{S}_V\null T.$}\TextB{}
+\BulletPoint \,\hspace{1pt}\Tips \,\,\,Suppose $T\in\Lm(V,W)$ and $R=(Tv_1,\dots,Tv_n)$ is linely inde in $\range T$.\TextB{}\hspace{30pt}
+\large ( Let $\dim\range T=n$, if $\range T$ is finite, otherwise let $n\in\Nbp.$ )\TextB{}\hspace{30pt}
+{By (3.A.4), $L=(v_1,\dots,v_n)$ is linely inde in $V$.\vspace{4pt}}\par
+\BulletPoint \,\hspace{1pt}\NewNotation\TextB{}
+Denote $\mathcal{K}_R$ by $\Spn L$, if $\range T$ is finite-dim, otherwise, denote it by a vecsp in $\mathcal{S}_V\null T$.\TextB{}
+Note that if $\range T$ is finite-dim, then $\mathcal{K}_{\range T}=\mathcal{K}_R$ for any basis $R$ of $\range T.$\par\vspace{6pt}
+\BulletPoint \,\hspace{1pt}\NewTheorem\,\,\,{\Large$\mathcal{K}_R\in\mathcal{S}_V\null T.$}\TextB{}
 Suppose $\range T$ is finite-dim. Otherwise, we are done immediately.\par\vspace{6pt}\IndentB
-{\Large $\mathcal{K}_R\oplus\null T=V$} {\LARGE $\Leftarrow$} {\large $\MathLeftBrace{l}{
+{\Large $\mathcal{K}_R\oplus\null T=V$} {\LARGE $\Leftarrow$} $\MathLeftBrace{l}{
 (\textup a)\,\,T(\sum\limits_{i=1}^n a_i v_i)=0\Rightarrow \sum\limits_{i=1}^n a_i Tv_i=0\Rightarrow a_1=\dots=a_n=0\Rightarrow\mathcal{K}_R\cap\null T=\{0\}.\\
 (\textup b)\,\,\forall v\in V, Tv=\sum\limits_{i=1}^n a_i Tv_i\Rightarrow Tv-\sum\limits_{i=1}^n a_i Tv_i=T(v-\sum\limits_{i=1}^n a_i v_i)=0\\
 \Hb\Rightarrow v-\sum\limits_{i=1}^n a_i v_i\in\null T\Rightarrow v=(v-\sum\limits_{i=1}^n a_i v_i)+(\sum\limits_{i=1}^n a_i v_i)\Rightarrow\mathcal{K}_R+\null T=V.\\
-}$}\par\vspace{6pt}
-\BulletPoint \,\Comment\,\,\,$\null T\in\mathcal{S}_V \mathcal{K}_R$.\par
+}$\par\vspace{6pt}
+\BulletPoint \,\hspace{1pt}\Comment\,\,\,$\null T\in\mathcal{S}_V \mathcal{K}_R$.\vspace{-10pt}\par
 \ProblemEnding\par
 
-\ProblemB{
-	({\normalsize 4E 3.B.21}) \TextB{Suppose $V$ is finite-dim, $T\in\Lm(V, W)$, and $U$ is a subsp of \,$W$.}
-	\TextB{Prove that $\mathcal{K}_U=\left\{\,v\in V: Tv\in U\right\}$ is a subsp of \,$V$}
-	\TextB{and $\dim\mathcal{K}_U=\dim\null T +\dim(U\cap\range T)$.}
+\ProblemBnoor{({\normalsize 4E 3.B.21})\TextB{}}{
+	\TextB{Suppose $V$ is finite-dim, $T\in\Lm(V, W)$, $U$ is a subsp of \,$W$. Let $\mathcal{K}_U=\left\{\,v\in V: Tv\in U\right\}.$}
+	\TextB{Prove that $\mathcal{K}_U$ is a subsp of \,$V$ and $\dim\mathcal{K}_U=\dim\null T +\dim(U\cap\range T)$.}
 }\par\quad
 For any $u,w\in\mathcal{K}_U$ and $\lambda\in\Fbb,T(u+\lambda w)=Tu+\lambda Tw\in U\Rightarrow \mathcal{K}_U$ is a subsp of $V$.\par\quad
 Define $S\in\Lm(\mathcal{K}_U,U)$ as $Rv=Tv$ for all $v\in\mathcal{K}_U$. Hence $\range R=U\cap \range T$.\par\quad
@@ -1238,7 +1258,7 @@ Define $S\in\Lm(W,V)$ by $S(Tv_i)=v_i$ and $Su=0,\,\,u\in U.$ Thus $ST=I.\hfill\
 (a) Suppose $\exists\,\,S\in\Lm(W, V),\,\,TS=I$. Then $\forall\,w\in W,TS(w)=w\in\range T\Rightarrow \range T=W.$\par\quad
 (b) Suppose $T$ is surj. Let $R=(Tv_1,\dots,Tv_n)$ be linely inde in $\range T=W,$\par
 \centerline{\quad where $n=\dim\range T$ if finite-dim, otherwise $n\in\Nbp.$}\par\quad\Hb
-Then $\mathcal{K}_R\oplus\null T=V.$ Define $S\in\Lm(W,V)$ by $S(Tv_i)=v_i.$ Then $TS=I.\hfill\square$\par
+Then $\mathcal{K}_R\oplus\null T=V.$ Define $S\in\Lm(W,V)$ by $S(Tv_i)=v_i.$ Then $TS=I.\hfill\square\\[-6pt]$
 \ProblemEnding\par
 
 \ProblemN{22}{
@@ -1274,8 +1294,7 @@ Thus $\dim\range ST=\dim\range (S|_{\range T})=\dim\range T-\dim\null (S|_{\rang
 \ProblemEnding\par
 
 \ProblemB{
-	\dbsp(a) \TextB{Suppose $\dim V = 5$ and $S,T\in\Lm(V)$ are such that $ST = 0$.}
-	\Ha\TextB{Prove that $\dim\range TS\leq 2$.}
+	\dbsp(a) \TextB{Suppose $\dim V = 5,S,T\in\Lm(V)$ are such that $ST = 0$. Prove that $\dim\range TS\leq 2$.}
 	\dbsp(b) \TextB{Give an example of $S, T\in\Lm(\Fbb^5)$ with $ST = 0$ and $\dim\range TS = 2$.}
 }\par\quad
 By Problem (23), $\dim\range TS\leq\min\left\{\overbrace{\dim \range S}^{5-\dim\null T}, \overbrace{\dim\range T}^{5-\dim\null S}\right\}.$\par\quad
@@ -1287,9 +1306,9 @@ And $ST=0\Rightarrow\range T\subseteq\null S\Rightarrow\dim\range TS\leq\dim\ran
 Thus $\dim\range TS\leq 5-\dim\range TS\Rightarrow\dim\range TS\leq\frac{5}{2}.\hfill\square$\par\vspace{5pt}\quad
 \Example\,\,\, Let $(v_1,\dots,v_5)$ be a basis of $\Fbb^5.$ Define $S,T\in\Lm(\Fbb^5)$ by:\par
 \vspace{-5pt}
-\AlignEq{}{T&:\quad v_1\mapsto 0,\quad\,\, v_2\mapsto 0,\,\,\quad v_i\mapsto v_i\,\,\,;\\S&:\quad v_1\mapsto v_4,\quad v_2\mapsto v_5,\quad v_i\mapsto 0\,\,\,\,\,;\qquad i=3,4,5.}\par
+\AlignEq{}{T&:\quad v_1\mapsto 0,\quad\,\, v_2\mapsto 0,\,\,\quad v_i\mapsto v_i\,\,\,;\\S&:\quad v_1\mapsto v_4,\quad v_2\mapsto v_5,\quad v_i\mapsto 0\,\,\,\,\,;\qquad i=3,4,5.}\vspace{-6pt}\par
 \ProblemEnding\par
-
+\pagebreak
 \ProblemB{
 	\TextB{Suppose $\dim V=n$ and $S,T\in\Lm(V)$ are such that $ST=0$.}
 	\TextB{Prove that $\dim\range TS\leq\left\lfloor\displaystyle\frac{n}{2}\right\rfloor.$}
@@ -1308,9 +1327,8 @@ $\Rightarrow \left\lfloor\displaystyle\frac{n}{2}\right\rfloor+1\leq\displaystyl
 	\TextNL{Prove that $\null S\subseteq\null T\Longleftrightarrow\exists\,\,E\in\Lm(W)$ such that $T=ES$.}
 }\par\quad
 Suppose $\,\,\exists\,\,E\in\Lm(W)$ such that $T=ES$. Then $\null T=\null ES\supseteq\null S.$\par\quad
-Suppose $\null S\subseteq\null T$. Let $R=(Sv_1,\dots,Sv_n)$ be a basis of $\range S$\par\vspace{6pt}\quad
-$\Rightarrow(v_1,\dots,v_n)$ is linely inde.\par\quad
-Let $\mathcal{K}_R=\Spn(v_1,\dots,v_n)\Rightarrow V=\mathcal{K}_R\oplus\null S$.\par\quad
+Suppose $\null S\subseteq\null T$. Let $R=(Sv_1,\dots,Sv_n)$ be a basis of $\range S$\par\quad
+Then $(v_1,\dots,v_n)$ is linely inde. Let $\mathcal{K}_R=\Spn(v_1,\dots,v_n)\Rightarrow V=\mathcal{K}_R\oplus\null S$.\par\quad
 Define $E\in\Lm(W)$ by $E(Sv_i)=Tv_i,\,\,\,Eu=0;$\,\,\, for each $i=1\,\dots,n$ and $u\in\null S.$\par\quad
 Hence $\forall v\in V,\,\,(\,\exists\,!\,a_i\in\Fbb,u\in\null S\,),\,Tv=a_1 Tv_1+\dots+a_n Tv_n=E(a_1 Sv_1+\dots+a_n Sv_n)\Rightarrow T=ES.\hfill\square$\par\vspace{6pt}\quad
 \Or Extend $R$ to a basis $(Sv_1,\dots,Sv_n,w_1,\dots,w_m)$ of $W.$\par\quad
@@ -1333,28 +1351,41 @@ Because $\range S\subseteq\range T\Rightarrow Sv_i\in\range T$ for each $i$. Sup
 Thus defining $E\in\Lm(V)$ by $Ev_i=u_i$ for each $i$ $\Rightarrow S=TE.\hfill\square$\par
 \ProblemEnding\par
 
+\ProblemBor{5.B.4}{
+	\TextB{Suppose $P\in\Lm(V)$ and $P^2 = P$. Prove that $V=\null P\oplus\range P$.}
+}\par\quad
+Let $(P^2 v_1,\dots,P^2 v_n)$ be a basis of $\range P^2$. Then $(Pv_1,\dots,Pv_n)$ is linely inde in $V$.\par
+$\MathRightBrace{l}{$
+	\,Let $\mathcal{K}=\Spn(Pv_1,\dots,Pv_n)\Rightarrow V=\mathcal{K}\oplus\null P^2\\ $
+	\,又 $\mathcal{K}=\range P=\range P^2;\,\,\,\null P=\null P^2$
+	$}\Rightarrow\square$\par\vspace{6pt}\quad
+\Or (a) Suppose $v\in\null P\cap\range P.\, $\par\quad\Ha\hspace{18pt}
+Then $\,\exists\,u\in V,v=Pu,Pv=0\Rightarrow v=Pu=P^2 u=Pv=0.$ Hence $\null P\cap\range P=\{0\}.\,$\par\quad\hspace{18pt}
+(b) Note that $v=Pv+(v-Pv)$ and $P^2 v=Pv$ for all $v\in V.$\par\quad\Hb\hspace{18pt}
+Then $P(v-Pv)=0\Rightarrow v-Pv\in\null P.$ Hence $V=\range P+\null P.\hfill\square$\par
+\ProblemEnding\par
+
 \ProblemN{26}{
 	\TextNL{Prove that the differentiation map $D\in\PoR{}$ is surj.}
 }\par\quad
-[{\timessl Informal Proof}]\par\quad
-Note that $\deg Dx^n=n-1$.\par\quad
-Because $\Spn(Dx,Dx^2,\dots)\subseteq\range D.$ 又 By (2.C.10), $\Spn(Dx,Dx^2,\dots)=\Spn(1,x,\dots)=\PoR{}.\hfill\square$\par\vspace{6pt}\quad
-[{\timessl Proper Proof}]\par\quad
-We will recursively define a sequence of polynomials $(p_k)_{k=0}^\infty$ where $Dp_k=x^k.$\par\quad
-Because $\dim Dx=(\deg x)-1=0,$ we have $Dx=C\in\Fbb.$ Define $p_0=C^{-1}x.$ Then $Dp_0=C^{-1}Dx=1.$\par\quad
-Suppose we have defined $p_0,\dots,p_n$ such that $Dp_k=x^k$ for each $k\in\{0,\dots,n\}.$\par\quad
-Because $\deg D(x^{n+2})=n+1,$ we let $D(x^{n+2})=a_{n+1}x^{n+1}+a_n x^n+\dots+a_1 x+a_0,$ where $a_{n+1}\neq 0.$\par\quad
-Then $a_{n+1}^{-1}D(x^{n+2})=x^{n+1}+a_{n+1}^{-1}(a_n Dp_n+\dots+a_1 Dp_1 +a_0 Dp_0)$\par\quad
-$\Rightarrow x^{n+1}=D\left(a_{n+1}^{-1}(x^{n+2}-a_n p_n-\dots-a_1 p_1-a_0 p_0)\right).$\par\quad
-Thus defining $p_{n+1}=a_{n+1}^{-1}(x^{n+2}-a_n p_n-\dots-a_1 p_1-a_0 p_0),$ we have $Dp_{n+1}=x^{n+1}.$\par\quad
-Hence we get the sequence $(p_k)_{k=0}^\infty$ by recursion.
+{\Large[{\timessl Informal Proof}]}\quad$\left|\begin{array}{l}$Note that $\deg Dx^n=n-1$. Because $\Spn(Dx,Dx^2,\dots)\subseteq\range D.\\$\!又 By (2.C.10), $\Spn(Dx,Dx^2,\dots)=\Spn(1,x,\dots)=\PoR{}.$ $\end{array}\right.$\par\quad
+{\Large[{\timessl Proper Proof}]\par}\quad
+{\Large\vspace{4pt}We will recursively define a sequence of polynomials $(p_k)_{k=0}^\infty$ where $Dp_k=x^k.$}\par\quad
+(i) {\Large\vspace{4pt}Because $\dim Dx=(\deg x)-1=0,$ we have $Dx=C\in\Fbb.$}\par\quad\Hi
+{\Large\vspace{4pt}Define $p_0=C^{-1}x.$ Then $Dp_0=C^{-1}Dx=1.$}\par\quad\Endi
+(ii) {\Large\vspace{4pt}Suppose we have defined $p_0,\dots,p_n$ such that $Dp_k=x^k$ for each $k\in\{0,\dots,n\}.$}\par\quad\Hii
+{\Large\vspace{4pt}Because $\deg D(x^{n+2})=n+1,$}\par\quad\Hii
+{\Large\vspace{4pt}Let $D(x^{n+2})=a_{n+1}x^{n+1}+a_n x^n+\dots+a_1 x+a_0,$ where $a_{n+1}\neq 0.$}\par\quad\Hii
+{\Large\vspace{4pt}Then $a_{n+1}^{-1}D(x^{n+2})=x^{n+1}+a_{n+1}^{-1}(a_n Dp_n+\dots+a_1 Dp_1 +a_0 Dp_0)$}\par\quad\Hii
+{\Large\vspace{4pt}$\Rightarrow x^{n+1}=D\left(a_{n+1}^{-1}(x^{n+2}-a_n p_n-\dots-a_1 p_1-a_0 p_0)\right).$}\par\quad\Hii
+{\Large\vspace{4pt}Thus defining $p_{n+1}=a_{n+1}^{-1}(x^{n+2}-a_n p_n-\dots-a_1 p_1-a_0 p_0),$ we have $Dp_{n+1}=x^{n+1}.$}\par\quad
+{\Large\vspace{4pt}Now we get the sequence $(p_k)_{k=0}^\infty$ by recursion.}
 \par\quad
-Now it suffices to show that $D$ is surj. Let $p=\sum\limits_{k=0}^{\deg p}a_k x^k\in\PoR{}.$\par\quad
-Then $D\left(\sum\limits_{k=0}^{\deg p}a_k p_k\right)=\sum\limits_{k=0}^{\deg p}a_k Dp_k=\sum\limits_{k=0}^{\deg p}a_k x^k=p.\hfill\square$\par
+{\Large\vspace{4pt}Hence $\forall$ $p=\sum\limits_{k=0}^{\deg p}a_k x^k\in\PoR{},\exists\,q=\left(\sum\limits_{k=0}^{\deg p}a_k p_k\right),Dq=p.\hfill\square$}\par
 \ProblemEnding\par
 
 \ProblemN{27}{
-	\TextNL{Suppose $p\in\PoR{}$. Prove that $\,\exists\,q\in\PoR{}$ such that $5q\apostrophe\apostrophe + 3q\apostrophe = p$.}
+	\TextNL{Suppose $p\in\PoR{}$. Prove that $\,\exists\,q\in\PoR{}$ such that $5q\apostrophe\apostrophe + 3q\apostrophe = p$.\vspace{6pt}}
 }\par\quad
 Define $B\in\Lm(\PoR{})$ by $B=5D^2+3D\Rightarrow B(q)=5q\apostrophe\apostrophe+3q\apostrophe$.\par\quad
 Note that $\deg B x^n=n-1.$ Similar to Problem (26), we conclude that $B$ is surj.$\hfill\square$\par
@@ -1364,22 +1395,19 @@ Note that $\deg B x^n=n-1.$ Similar to Problem (26), we conclude that $B$ is sur
 	\TextNL{Suppose $T\in\Lm(V,W)$ and $(w_1,\dots,w_m)$ is a basis of $\range T$. Prove that}
 	\TextNL{$\exists\,\,\varphi_1,\dots,\varphi_m\in\Lm(V,\Fbb)$ such that for all $v\in V,Tv=\varphi_1(v)w_1+\dots+\varphi_m(v)w_m$.}
 }\par\quad
-Suppose $(v_1,\dots,v_m)$ in $V$ such that $Tv_i=w_i$ for each $i$.\par\qquad
+Suppose $(v_1,\dots,v_m)$ in $V$ such that $Tv_i=w_i$ for each $i$.\par\quad
 Then $(v_1,\dots,v_m)$ is linely inde, extend it to a basis of $V$ as $(v_1,\dots,v_m,u_1,\dots,u_n)$.\par\quad
 Note that $\forall v\in V,v=a_1 v_1+\dots+a_m v_m+b_1 u_1+\dots+b_n u_n,\,\,\exists\,!\,a_i,b_i\in\Fbb\Rightarrow Tv=a_1 w_1+\dots+a_m w_m.$\par\quad
 Define $\varphi_i:V\rightarrow\Fbb$ by $\varphi_i(v)=a_i v_i$ for each $i$. We now check the linearity.\par\quad
 $\forall v,u\in V\,(\,\exists\,!\,a_i,b_i,c_i,d_i\in\Fbb\,),\lambda\in\Fbb,\varphi_i(v+\lambda u)=a_i+\lambda c_i=\varphi(v)+\lambda\varphi(u).\hfill\square$\par
 \ProblemEnding\par
-\large
+\pagebreak
 \ProblemN{29}{
 	\TextNL{Suppose $\varphi\in\Lm(V,\Fbb)\backslash\{0\}$. Suppose $u\in V\backslash\null\varphi$. Prove that $V = \null\varphi\oplus\left\{au :a\in\Fbb\right\}$.}
 }\par\quad
 (a) $\forall\,v=cu\in\null\varphi\cap\left\{au:a\in\Fbb\right\},\varphi(v)=0=c\varphi(u)\Rightarrow c=0.$ Hence $\null\varphi\cap\left\{au:a\in\Fbb\right\}=\{0\}.$\par\vspace{6pt}\quad
 (b) $\forall\,v\in V,v=\displaystyle\left(v-\frac{\varphi(v)}{\varphi(u)}u\right)+\frac{\varphi(v)}{\varphi(u)}u.$
-$\left|\left.\begin{array}{l}$
-$\displaystyle v-\frac{\varphi(v)}{\varphi(u)}u\in\null\varphi\\ $
-$\displaystyle \frac{\varphi(v)}{\varphi(u)}u\in\left\{au:a\in\Fbb\right\}$
-$\end{array}\right\}\right.\Rightarrow V=\null\varphi\oplus\left\{au:a\in\Fbb\right\}.\hfill\square$\par\vspace{6pt}\large\quad
+$\left|\left.\begin{array}{l}\displaystyle v-\frac{\varphi(v)}{\varphi(u)}u\in\null\varphi\\[16pt]\displaystyle\frac{\varphi(v)}{\varphi(u)}u\in\left\{au:a\in\Fbb\right\}\end{array}\right\}\right.\Rightarrow V=\null\varphi\oplus\left\{au:a\in\Fbb\right\}.\hfill\square$\par\vspace{12pt}\large\quad
 {\timessl\Large This may seems strange. Here we explain why.}\par\quad
 $\varphi\neq 0\Rightarrow\varphi(v_i)=a_i\neq 0$ for each $v_i$, for some linely inde list $(v_1,\dots,v_k).$\par\quad
 Fix one $v_k$.
@@ -1390,35 +1418,48 @@ Thus $\Spn\displaystyle\left\{v_k-\frac{a_k}{a_j}v_j\right\}_{j\neq k}\subseteq\
 \ProblemN{30}{
 	\TextNL{Suppose $\varphi_1,\varphi_2\in\Lm(V,\Fbb)$ and $\null\varphi_1=\null\varphi_2=\null\varphi$. Prove that $\,\exists\,c\in\Fbb,\varphi_1=c\varphi_2$}
 }\par\quad
-If $\null\varphi=V$, then $\varphi_1=\varphi_2=0,$ we are done. Suppose $u\in V/\null\varphi\Rightarrow\varphi_1(u),\varphi_2(u)\neq 0.$\par\quad
-By Problem (29), $V=\null\varphi\oplus\Spn(u).$\par\quad
-Hence for any $v\in V,v=w+a_v u,\,\exists\,!\,w\in\null\varphi,a_v\in\Fbb.$\par\quad
-$\varphi_1(v)=a_v\varphi_1(u),\,\,\,\varphi_2(v)=a_v\varphi_2(u)\Rightarrow a_v=\displaystyle\frac{\varphi_1(v)}{\varphi_1(u)}=\frac{\varphi_2(v)}{\varphi_2(u)}\Rightarrow\frac{\varphi_1(u)}{\varphi_2(u)}=\frac{\varphi_1(v)}{\varphi_2(v)}=c\in\Fbb.$\par\quad
-Thus $\varphi_1=c\varphi_2.\hfill\square$\par\large
+If $\null\varphi=V$, then $\varphi_1=\varphi_2=0,$ we are done. Suppose $u\in V\backslash\null\varphi\Rightarrow\varphi_1(u),\varphi_2(u)\neq 0.$\par\quad
+By Problem (29), $V=\null\varphi\oplus\Spn(u).$ Hence for any $v\in V,v=w+a_v u,\,\exists\,!\,w\in\null\varphi,a_v\in\Fbb.$\par\vspace{2pt}\quad
+$\varphi_1(v)=a_v\varphi_1(u),\,\,\,\varphi_2(v)=a_v\varphi_2(u)\Rightarrow a_v=\displaystyle\frac{\varphi_1(v)}{\varphi_1(u)}=\frac{\varphi_2(v)}{\varphi_2(u)}\Rightarrow\frac{\varphi_1(u)}{\varphi_2(u)}=\frac{\varphi_1(v)}{\varphi_2(v)}=c\in\Fbb.\hfill\square$\par\large
 \ProblemEnding\par
 
-%\ProblemN{31}{
-%	\TextNL{Give an example of $T_1,T_2\in\Lm(\Rbb^5,\Rbb^2)$ such that $\null T_1=\null T_2$}\par\quad\,
-%	\TextNL{and that $T_1$ is not a scalar multi of $T_2$.}
-%}\par\quad
-%Let $(v_1,\dots,v_5)$ be a basis of $\Rbb^5$, $(w_1,w_2)$ be a basis of $\Rbb^2$. Define $T,S\in\Lm(V,W)$ by\par\vspace{6pt}\quad
-%$\MathRightBrace{l}{$
-%$Tv_1=w_1,\quad Tv_2=w_2,\quad\,\, Tv_3=Tv_4=Tv_5=0\\ $
-%$Sv_1=w_1,\quad Sv_2=2w_2,\quad Sv_3=Sv_4=Sv_5=0$
-%$}\Rightarrow\null T=\null S.$\par\vspace{6pt}\quad
-%Suppose $T=\lambda S$. Then $w_1=Tv_1=\lambda Sv_1=\lambda w_1\Rightarrow \lambda=1$.\par\qquad\qquad\qquad\qquad\,
-%While $w_2=Tv_2=\lambda Sv_2=2\lambda w_2\Rightarrow \lambda=\frac{1}{2}$. Contradicts. $\hfill\square$\par
-%\ProblemEnding\par
+\ProblemN{31}{
+	\TextNL{Prove that $\exists\,T_1,T_2\in\Lm(\Rbb^5,\Rbb^2),\null T_1=\null T_2$ and $T_1\neq cT_2,\forall c\in\Fbb$.}
+}\par\quad
+Let $(v_1,\dots,v_5)$ be a basis of $\Rbb^5$, $(w_1,w_2)$ be a basis of $\Rbb^2$. Define $T,S\in\Lm(V,W)$ by\par\vspace{6pt}\,
+$\MathRightBrace{l}{$
+$Tv_1=w_1,\quad Tv_2=w_2,\quad\,\, Tv_3=Tv_4=Tv_5=0\\ $
+$Sv_1=w_1,\quad Sv_2=2w_2,\quad Sv_3=Sv_4=Sv_5=0$
+$}\Rightarrow\null T=\null S.$\par\vspace{6pt}\quad
+Suppose $T=\lambda S$. Then $w_1=Tv_1=\lambda Sv_1=\lambda w_1\Rightarrow \lambda=1$.\par\qquad\qquad\qquad\qquad\,
+While $w_2=Tv_2=\lambda Sv_2=2\lambda w_2\Rightarrow \lambda=\frac{1}{2}$. Contradicts. $\hfill\square$\vspace{-3pt}\par
+\ProblemEnding\par
+
+\ProblemB{
+	\TextB{Suppose $V$ is finite-dim with $\dim V > 1$. Show that if $\varphi:\Lm(V)\rightarrow\Fbb$}
+	\TextB{is a linear map such that $\varphi(ST) = \varphi(S)\cdot\varphi(T)$ for all $S, T\in\Lm(V)$, then
+		$\varphi = 0$.}
+}Using notations in (4E 3.A.16).\par\quad
+{\Large\vspace{4pt}Suppose $\varphi\neq 0\Rightarrow\exists\,i,j\in\{1,\dots,n\},\,\varphi(R_{i,j})\neq 0$.}\par\quad
+{\Large\vspace{4pt}Because $R_{i,j}=R_{x,j}\circ R_{i,x},\,\,\forall x=1,\dots,n$}\par\qquad\,
+{\Large\vspace{4pt}$\Rightarrow\varphi(R_{i,j})=\varphi(R_{x,j})\cdot\varphi(R_{i,x})\neq 0\Rightarrow\varphi(R_{x,j})\neq 0$ and $\varphi(R_{i,x})\neq 0.$}\par\quad
+{\Large\vspace{4pt}Again, because $R_{i,x}=R_{y,x}\circ R_{i,y},\,\,\forall y=1,\dots,n.$ Thus $\varphi(R_{y,x})\neq 0$ for any $x,y=1,\dots,n.$}\par\quad
+{\Large\vspace{4pt}Let $l\neq i,k\neq j$ and then $\varphi(R_{l,k}\circ R_{i,j})=\varphi(0)=0=\varphi(R_{l,k})\cdot\varphi(R_{i,j})$}\par\quad
+{\Large\vspace{4pt}$\Rightarrow\varphi(R_{l,k})=0$ or $\varphi(R_{i,j})=0.$ Contradicts.$\hfill\square$}\par\vspace{10pt}\quad
+\Or {\Large\vspace{4pt}Note that by (4E 3.A.16), $\,\exists\,S,T\in\Lm(V),ST-TS\neq 0.$}\par\quad
+{\Large\vspace{4pt}Then $\varphi(ST-TS)=\varphi(S)\varphi(T)-\varphi(T)\varphi(S)=0\Rightarrow ST-TS\in\null\varphi\neq\{0\}.$}\par\quad
+{\Large\vspace{4pt}Thus $\forall\,E\in\null\varphi,T\in\Lm(V),\varphi(ET)=\varphi(TE)=0\Rightarrow ET,TE\in\null\varphi.$}\par\quad
+{\Large\vspace{4pt}Hence $\null\varphi$ is a nonzero two-sided ideal of $\Lm(V).\hfill\square$}\vspace{-5pt}\par
+\ProblemEnding\par
 
 \ProblemB{
 	\TextB{Suppose $V$ is finite-dim, $X$ is a subsp of $V$, and $Y$ is a finite-dim subsp of $W$.}
-	\TextB{Prove that if $\dim X + \dim Y = \dim V$, then $\,\exists\,T\in\Lm(V, W),\null T = X$ and $\range T = Y$.}
+	\TextB{Prove that if $\dim X + \dim Y = \dim V$, then $\,\exists\,T\in\Lm(V, W),\null T = X,\range T = Y$.}
 }\par\quad
 Suppose $\dim X + \dim Y = \dim V$. Let $(u_1,\dots,u_n)$ be a basis of $X$, $R=(w_1,\dots,w_m)$ be a basis of $Y$.\par\quad
-Extend $(u_1,\dots,u_n)$ to a basis of $V$ as $(u_1,\dots,u_n,v_1,\dots,v_m).$\par\quad
-Define $T\in\Lm(V,W)$ by $T(\sum\limits_{i=1}^m a_i v_i+\sum\limits_{i=1}^n b_i u_i)=\sum\limits_{i=1}^m a_i w_i.$\par\quad
-Now we show that $\null T=X$ and $\range T=Y$\par\quad
-Suppose $v\in V$. Then $\,\,\exists\,!\,a_i,b_j\in\Fbb,v=\sum\limits_{i=1}^m a_i v_i+\sum\limits_{i=1}^n b_i u_i.$\par\,\,
+Extend $(u_1,\dots,u_n)$ to a basis of $V$ as $(u_1,\dots,u_n,v_1,\dots,v_m).$\vspace{3pt}\par\quad
+Define $T\in\Lm(V,W)$ by $T(\sum\limits_{i=1}^m a_i v_i+\sum\limits_{i=1}^n b_i u_i)=\sum\limits_{i=1}^m a_i w_i.$ Now we show that $\null T=X$ and $\range T=Y$\vspace{3pt}\par\quad
+Suppose $v\in V$. Then $\,\,\exists\,!\,a_i,b_j\in\Fbb,v=\sum\limits_{i=1}^m a_i v_i+\sum\limits_{i=1}^n b_i u_i.$\vspace{3pt}\par\,\,
 $\MathRightBrace{r}{$
 $v\in\null T\Rightarrow Tv=0\Rightarrow a_1=\dots=a_m=0\Rightarrow v\in X\\ $
 $v\in X\Rightarrow v\in\null T$
@@ -1426,7 +1467,8 @@ $}\Rightarrow\null T=X$.\par\,\,\,
 $\MathRightBrace{l}{$
 $w\in\range T\Rightarrow\exists\,\,v=\sum\limits_{i=1}^m a_i v_i+\sum\limits_{i=1}^n b_i u_i\in V,Tv=w=\sum\limits_{i=1}^m a_i w_i\Rightarrow w\in Y\\ $
 $w\in Y\Rightarrow w=a_1 Tv_1+\dots+a_m Tv_m=T(a_1 v_1+\dots+a_m v_m)\Rightarrow w\in\range T$
-$}\Rightarrow\range T=Y.\hfill\square$\par\ProblemEnding\par
+$}\Rightarrow\range T=Y.\hfill\square$\vspace{6pt}\par
+\ProblemEnding\par
 
 \ProblemB{
 	\TextB{Suppose $V$ is finite-dim and $T\in\Lm(V,W)$. Let $(Tv_1,\dots,Tv_n)$ be a basis of $\range T$.}
@@ -1434,8 +1476,8 @@ $}\Rightarrow\range T=Y.\hfill\square$\par\ProblemEnding\par
 	\TextB{Prove or give a counterexample: $(u_1,\dots,u_m)$ is a basis of $\null T$.}
 }A counterexample:\par\quad
 Suppose $\dim V=3, Tv_1=Tv_2=Tv_3=w_1.$ Then $\Spn(Tv_1,Tv_2,Tv_3)=\Spn(w_1)$.\par\quad
-Extend $(v_i)$ to $(v_1,v_2,v_3)$ for each $i$. But none of $(v_1,v_2),(v_1,v_3),(v_2,v_3)$ is a basis of $\null T.\hfill\square$\par\quad
-\Comment\,\, $(v_2-v_1,v_3-v_1),(v_1-v_2,v_3-v_2)$ or $(v_1-v_3,v_2-v_3)$ are all bases of $\null T.$\par\quad
+Extend $(v_i)$ to $(v_1,v_2,v_3)$ for each $i$. But none of $(v_1,v_2),(v_1,v_3),(v_2,v_3)$ is a basis of $\null T.\hfill\square$\par
+\Comment\,\, $(v_2-v_1,v_3-v_1),(v_1-v_2,v_3-v_2)$ or $(v_1-v_3,v_2-v_3)$ are all bases of $\null T.$\par
 \ProblemEnding\par
 
 \ProblemB{
@@ -1444,68 +1486,18 @@ Extend $(v_i)$ to $(v_1,v_2,v_3)$ for each $i$. But none of $(v_1,v_2),(v_1,v_3)
 	\TextB{Prove or give a counterexample: $(Tv_1,\dots,Tv_n)$ spans $\range T$.}
 }\par\quad
 $\forall w\in\range T,\,\,\exists\,v\in V,\,(\,\exists\,!\,a_i,b_i\in\Fbb),Tv=T(a_1 v_1+\dots+a_n v_n)=w$\par\quad
-$\Rightarrow w\in\Spn(Tv_1,\dots,Tv_n)\Rightarrow\range T\subseteq\Spn(Tv_1,\dots,Tv_n).\hfill\square$\par\quad
+$\Rightarrow w\in\Spn(Tv_1,\dots,Tv_n)\Rightarrow\range T\subseteq\Spn(Tv_1,\dots,Tv_n).\hfill\square$\par
 \Comment\,\,\, If $T$ is inje, then $(Tv_1,\dots,Tv_n)$ is a basis of $\range T$.\par
 \ProblemEnding\par
-
-\ProblemBor{5.B.4}{
-	\TextB{Suppose $P\in\Lm(V)$ and $P^2 = P$. Prove that $V=\null P\oplus\range P$.}
-}\par\quad
-Let $(P^2 v_1,\dots,P^2 v_n)$ be a basis of $\range P^2$. Then $(Pv_1,\dots,Pv_n)$ is linely inde in $V$.\par
-$\MathRightBrace{l}{$
-\,Let $\mathcal{K}=\Spn(Pv_1,\dots,Pv_n)\Rightarrow V=\mathcal{K}\oplus\null P^2\\ $
-\,又 $\mathcal{K}=\range P=\range P^2;\,\,\,\null P=\null P^2$
-$}\Rightarrow\square$\par\vspace{6pt}\quad
-\Or (a) Suppose $v\in\null P\cap\range P.\, $\par\quad\Ha\hspace{18pt}
-Then $\,\exists\,u\in V,v=Pu,Pv=0\Rightarrow v=Pu=P^2 u=Pv=0.$ Hence $\null P\cap\range P=\{0\}.\,$\par\quad\hspace{18pt}
-(b) Note that $v=Pv+(v-Pv)$ and $P^2 v=Pv$ for all $v\in V.$\par\quad\Hb\hspace{18pt}
-Then $P(v-Pv)=0\Rightarrow v-Pv\in\null P.$ Hence $V=\range P+\null P.\hfill\square$\par
-\ProblemEnding\par
-
-\ProblemB{
-	\TextB{Suppose $V$ is finite-dim with $\dim V > 1$. Show that if $\varphi:\Lm(V)\rightarrow\Fbb$}
-	\TextB{is a linear map such that $\varphi(ST) = \varphi(S)\cdot\varphi(T)$ for all $S, T\in\Lm(V)$, then
-$\varphi = 0$.}
-}Using notations in (4E 3.A.16).\par\quad
-Suppose $\varphi\neq 0\Rightarrow\exists\,i,j\in\{1,\dots,n\},\,\varphi(R_{i,j})\neq 0$.\par\quad
-Because $R_{i,j}=R_{x,j}\circ R_{i,x},\,\,\forall x=1,\dots,n$\par\qquad\,
-$\Rightarrow\varphi(R_{i,j})=\varphi(R_{x,j})\cdot\varphi(R_{i,x})\neq 0\Rightarrow\varphi(R_{x,j})\neq 0$ and $\varphi(R_{i,x})\neq 0.$\par\quad
-Again, because $R_{i,x}=R_{y,x}\circ R_{i,y},\,\,\forall y=1,\dots,n.$ Thus $\varphi(R_{y,x})\neq 0$ for any $x,y=1,\dots,n.$\par\quad
-Let $l\neq i,k\neq j$ and then $\varphi(R_{l,k}\circ R_{i,j})=\varphi(0)=0=\varphi(R_{l,k})\cdot\varphi(R_{i,j})$\par\quad
-$\Rightarrow\varphi(R_{l,k})=0$ or $\varphi(R_{i,j})=0.$ Contradicts.$\hfill\square$\par\vspace{6pt}\quad
-\Or Note that by (4E 3.A.16), $\,\exists\,S,T\in\Lm(V),ST-TS\neq 0.$\par\quad
-Then $\varphi(ST-TS)=\varphi(S)\varphi(T)-\varphi(T)\varphi(S)=0\Rightarrow ST-TS\in\null\varphi\neq\{0\}.$\par\quad
-Thus $\forall\,E\in\null\varphi,T\in\Lm(V),\varphi(ET)=\varphi(TE)=0\Rightarrow ET,TE\in\null\varphi.$\par\quad
-Hence $\null\varphi$ is a nonzero two-sided ideal of $\Lm(V).\hfill\square$\large\par
-\ProblemEnding\par
-
-\ProblemB{
-	\TextB{Suppose that $V$ and $W$ are real vecsps and $T\in\Lm(V, W)$.}
-	\TextB{Define $T_{\Cbb}:V_{\Cbb}\rightarrow W_{\Cbb}$ by $T_{\Cbb}(u+\i v)=Tu+\i Tv$ for all $u,v\in V$.}
-	(a) \TextB{Show that $T_{\Cbb}$ is a $($complex$)$ linear map from $V_{\Cbb}$ to $W_{\Cbb}$ .}
-	(b) \TextB{Show that $T_{\Cbb}$ is inje $\Longleftrightarrow$ T is inje.}
-	(c) \TextB{Show that $\range T_{\Cbb} = W_{\Cbb}\Longleftrightarrow\range T = W$.}
-}\par\quad
-(a) \vspace{-6pt}
-\AlignEq{}{&\forall u_1+\i v_1,u_2+\i v_2\in V_{\Cbb}, \lambda\in\Fbb,\\&T\left((u_1+\i v_1)+\lambda(u_2+\i v_2)\right)=T\left((u_1+\lambda u_2)+\i(v_1+\lambda v_2)\right)=T(u_1+\lambda u_2)+\i T(v_1+\lambda v_2)\\= \,& Tu_1+\i Tv_1+\lambda Tu_2+\i\lambda Tv_2=T(u_1+\i v_1)+\lambda T(u_2+\i v_2).}\par\quad
-(b) $\left|\begin{array}{l}$
-Suppose $T_{\Cbb}$ is inje. Let $T(u)=0\Rightarrow T_{\Cbb}(u+\i 0)=Tu=0\Rightarrow u=0.\\ $
-Suppose $T$ is inje. Let $T_{\Cbb}(u+\i v)=Tu+\i Tv=0\Rightarrow Tu=Tv=0\Rightarrow u+\i v=0.$
-$\end{array}\right\}\Rightarrow\square$\par\vspace{6pt}\quad
-(c) $\left|\begin{array}{l}$
-Suppose $T_{\Cbb}$ is surj. $\forall w\in W,\,\,\exists\,u\in V,T(u+\i 0)=Tu=w+\i 0=w\Rightarrow$ T is surj.$\\ $
-Suppose $T$ is surj. $\,\forall w,x\in W,\,\exists\,u,v\in V,Tu=w,Tv=x\\ $\qquad\qquad\qquad\quad\hspace{0.5pt}
-$\Rightarrow\forall w+\i x\in W_{\Cbb},\,\exists\,u+\i v\in V,T(u+\i v)=w+\i x\Rightarrow T_{\Cbb}$ is surj.
-$\end{array}\right\}\Rightarrow\square$\par\vspace{10pt}
-\ProblemEnding\par
 \ChapterEnding
-
+\vspace{18pt}
 \ChapterDecl{Ch3C}{3$\cdot$C}
 
+\vspace{10pt}
 \BulletPoint \,\NoteForSmall{[3.47]}\,\, $LHS=(AC)_{j,k}$=$\sum\limits_{r=1}^n A_{j,r}C_{r,k}=\sum\limits_{r=1}^n (A_{j,\cdot})_{1,r}(C_{\cdot,k})_{r,1}=(A_{j,\cdot}C_{\cdot,k})_{1,1}=A_{j,\cdot}C_{\cdot,k}=RHS$.\par
 \ProblemEnding\par
 
-\BulletPoint \,\NoteForSmall{[3.48]}\par\quad
+\BulletPoint \,\NoteForSmall{[3.48]}\vspace{-5pt}\par\quad
 \AlignEq{}{\begin{pmatrix}
   1 & 2 \\
   3 & 4
@@ -1518,23 +1510,29 @@ $\end{array}\right\}\Rightarrow\square$\par\vspace{10pt}
 \end{pmatrix}\\
 &=\begin{pmatrix} 1\times 5+2\times 8 & 1\times 6+2\times 9 & 1\times 7+2\times 10\\ 3\times 5+4\times 8 & 3\times 6+4\times 9 & 3\times 7+4\times 10\end{pmatrix}=\begin{pmatrix} 21 & 24 & 27 \\ 47 & 54 & 61\end{pmatrix}}\par
 \ProblemEnding\par
-\BulletPoint \,\NoteForSmall{[3.49]} \AlignEq{}{&\because[(AC)_{\cdot,k}]_{j,1}=(AC)_{j,k}=\sum\limits_{r=1}^n A_{j,r}C_{r,k}=\sum\limits_{r=1}^n A_{j,r}(C_{\cdot,k})_{r,1}=(AC_{\cdot,k})_{j,1}\\&\therefore(AC)_{\cdot,k}=A_{\cdot,\cdot}C_{\cdot,k}=AC_{\cdot,k}}\par
+
+\pagebreak
+
+\BulletPoint \,\NoteForSmall{[3.49]} \AlignEq{}{&\because[(AC)_{\cdot,k}]_{j,1}=(AC)_{j,k}=\sum\limits_{r=1}^n A_{j,r}C_{r,k}=\sum\limits_{r=1}^n A_{j,r}(C_{\cdot,k})_{r,1}=(AC_{\cdot,k})_{j,1}\\&\therefore(AC)_{\cdot,k}=A_{\cdot,\cdot}C_{\cdot,k}=AC_{\cdot,k}}\vspace{-10pt}\par
 \ProblemEnding\par
+
 \BulletPoint \,\Exercise{10} \AlignEq{}{&\because[(AC)_{j,\cdot}]_{1,k}=(AC)_{j,k}=\sum\limits_{r=1}^n A_{j,r}C_{r,k}=\sum\limits_{r=1}^n (A_{j,\cdot})_{1,r}C_{r,k}=(A_{j,\cdot}C)_{1,k}\\
-&\therefore(AC)_{j,\cdot}=A_{j,\cdot}C_{\cdot,\cdot}=A_{j,\cdot}C.}\par
+&\therefore(AC)_{j,\cdot}=A_{j,\cdot}C_{\cdot,\cdot}=A_{j,\cdot}C.}\vspace{-10pt}\par
 \ProblemEnding\par
 
 \BulletPoint
-	\TextB{Suppose $C\in\Fbb^{m,c},R\in\Fbb^{c,p}$.}
-	(a) \TextB{\large\timesnr For $k=1,\dots,p,$\quad $(CR)_{\cdot,k}=CR_{\cdot,k}=C_{\cdot,\cdot}R_{\cdot,k}=\sum\limits_{r=1}^c C_{\cdot,r}R_{r,k}=R_{1,k}C_{\cdot,1}+\dots+R_{c,k}C_{\cdot,c}$}
-	(b) \TextB{\large\timesnr For $j=1,\dots,m,$\quad $(CR)_{j,\cdot}=C_{j,\cdot}R=C_{j,\cdot}R_{\cdot,\cdot}=\sum\limits_{r=1}^c C_{j,r}R_{r,\cdot}=C_{j,1}R_{1,\cdot}+\dots+C_{j,c}R_{c,\cdot}$}
-	\TextB{\Example}
-	\TextB{\large$P\,\,\,=\,\begin{pmatrix} 1 & 2\\ 3 & 4\end{pmatrix}\begin{pmatrix}5 & 6 & 7\\ 8 & 9 & 10\end{pmatrix}\in\Fbb^{2,3}.$}
-	\TextB{\large$P_{\cdot,1}=\begin{pmatrix} 1 & 2\\ 3 & 4\end{pmatrix}\begin{pmatrix} 5 \\ 8\end{pmatrix}=5\begin{pmatrix}1\\3\end{pmatrix}+8\begin{pmatrix}2\\4\end{pmatrix}=\begin{pmatrix} 21\\ 47\end{pmatrix}$;}
-	\TextB{\large$P_{\cdot,2}=\begin{pmatrix} 1 & 2\\ 3 & 4\end{pmatrix}\begin{pmatrix} 6 \\ 9\end{pmatrix}=6\begin{pmatrix}1\\3\end{pmatrix}+9\begin{pmatrix}2\\4\end{pmatrix}=\begin{pmatrix} 24\\ 54\end{pmatrix}$;}
-	\TextB{\large$P_{\cdot,3}=\begin{pmatrix} 1 & 2\\ 3 & 4\end{pmatrix}\begin{pmatrix} 7 \\ 10\end{pmatrix}=7\begin{pmatrix}1\\3\end{pmatrix}+10\begin{pmatrix}2\\4\end{pmatrix}=\begin{pmatrix} 27\\ 61\end{pmatrix}$;}
-	\TextB{\large$P_{1,\cdot}=\begin{pmatrix} 1 & 2\end{pmatrix}\begin{pmatrix} 5 & 6 & 7 \\ 8 & 9 & 10\end{pmatrix}=1\begin{pmatrix} 5 & 6 & 7\end{pmatrix}+2\begin{pmatrix}8 & 9 & 10\end{pmatrix}=\begin{pmatrix} 21 & 24 & 27\end{pmatrix}$;}
-	{$P_{2,\cdot}=\begin{pmatrix} 3 & 4\end{pmatrix}\begin{pmatrix} 5 & 6 & 7 \\ 8 & 9 & 10\end{pmatrix}=3\begin{pmatrix} 5 & 6 & 7\end{pmatrix}+4\begin{pmatrix}8 & 9 & 10\end{pmatrix}=\begin{pmatrix} 47 & 54 & 61\end{pmatrix}$;}\par
+	({\normalsize 4E 3.51})\;\TextB{Suppose $C\in\Fbb^{m,c},R\in\Fbb^{c,p}$.}
+	(a) \TextB{\large\timesnr For $k=1,\dots,p,$\quad $(CR)_{\cdot,k}=CR_{\cdot,k}=C_{\cdot,\cdot}R_{\cdot,k}=\sum\limits_{r=1}^c C_{\cdot,r}R_{r,k}=R_{1,k}C_{\cdot,1}+\dots+R_{c,k}C_{\cdot,c}$\vspace{3pt}}
+	\Ha\TextB{\large Which means that each cols $CR$ is a linear combination of the cols of $C.$\vspace{6pt}}
+	(b) \TextB{\large\timesnr For $j=1,\dots,m,$\quad $(CR)_{j,\cdot}=C_{j,\cdot}R=C_{j,\cdot}R_{\cdot,\cdot}=\sum\limits_{r=1}^c C_{j,r}R_{r,\cdot}=C_{j,1}R_{1,\cdot}+\dots+C_{j,c}R_{c,\cdot}$\vspace{3pt}}
+	\Hb\TextB{\large Which means that each rows $CR$ is a linear combination of the rows of $R.$}\vspace{-25pt}\par
+%	\Example\TextB{}
+%	\TextB{\large$P\,\,\,=\,\begin{pmatrix} 1 & 2\\ 3 & 4\end{pmatrix}\begin{pmatrix}5 & 6 & 7\\ 8 & 9 & 10\end{pmatrix}\in\Fbb^{2,3}.$}
+%	\TextB{\large$P_{\cdot,1}=\begin{pmatrix} 1 & 2\\ 3 & 4\end{pmatrix}\begin{pmatrix} 5 \\ 8\end{pmatrix}=5\begin{pmatrix}1\\3\end{pmatrix}+8\begin{pmatrix}2\\4\end{pmatrix}=\begin{pmatrix} 21\\ 47\end{pmatrix}$;}
+%	\TextB{\large$P_{\cdot,2}=\begin{pmatrix} 1 & 2\\ 3 & 4\end{pmatrix}\begin{pmatrix} 6 \\ 9\end{pmatrix}=6\begin{pmatrix}1\\3\end{pmatrix}+9\begin{pmatrix}2\\4\end{pmatrix}=\begin{pmatrix} 24\\ 54\end{pmatrix}$;}
+%	\TextB{\large$P_{\cdot,3}=\begin{pmatrix} 1 & 2\\ 3 & 4\end{pmatrix}\begin{pmatrix} 7 \\ 10\end{pmatrix}=7\begin{pmatrix}1\\3\end{pmatrix}+10\begin{pmatrix}2\\4\end{pmatrix}=\begin{pmatrix} 27\\ 61\end{pmatrix}$;}
+%	\TextB{\large$P_{1,\cdot}=\begin{pmatrix} 1 & 2\end{pmatrix}\begin{pmatrix} 5 & 6 & 7 \\ 8 & 9 & 10\end{pmatrix}=1\begin{pmatrix} 5 & 6 & 7\end{pmatrix}+2\begin{pmatrix}8 & 9 & 10\end{pmatrix}=\begin{pmatrix} 21 & 24 & 27\end{pmatrix}$;}
+%	{$P_{2,\cdot}=\begin{pmatrix} 3 & 4\end{pmatrix}\begin{pmatrix} 5 & 6 & 7 \\ 8 & 9 & 10\end{pmatrix}=3\begin{pmatrix} 5 & 6 & 7\end{pmatrix}+4\begin{pmatrix}8 & 9 & 10\end{pmatrix}=\begin{pmatrix} 47 & 54 & 61\end{pmatrix}$;}\par
 \ProblemEnding\par
 
 \BulletPoint \,\NoteForSmall{[3.52]}\quad $A\in\Fbb^{m,n},c\in\Fbb^{n,1}\Rightarrow Ac\in\Fbb^{m,1}$\par\quad
@@ -1544,67 +1542,92 @@ $\therefore\,Ac=A_{\cdot,\cdot}c_{\cdot,1}=\sum\limits_{r=1}^n A_{\cdot,r}c_{r,1
 \BulletPoint \,\Exercise{11}\qquad\,\,\,\, $a\in\Fbb^{1,n},C\in\Fbb^{n,p}\Rightarrow aC\in\Fbb^{1,p}$\par\quad
 $\because(aC)_{1,k}=\sum\limits_{r=1}^n a_{1,r}C_{r,k}=[\sum\limits_{r=1}^n a_{1,r}(C_{r,\cdot})]_{1,k}=(a_1 C_{1,\cdot}+\dots+a_n C_{n,\cdot})_{1,k}$\par\quad
 $\therefore\,aC=a_{1,\cdot}C_{\cdot,\cdot}=\sum\limits_{r=1}^n a_{1,r}C_{r,\cdot}=a_1 C_{1,\cdot}+\dots+a_n C_{n,\cdot}$\quad \Or By $(aC)_{1,\cdot}=a_{1,\cdot}C$. Using (b) above.
-\par
+\vspace{-4pt}\par
 \ProblemEnding\par
 
-\BulletPoint \,\textsc{Column-Row Factorization}\qquad (CR Factorization)\vspace{3pt}\TextB{}
-{\Large\timessl Suppose $A\in\Fbb^{m,n},A\neq 0.$ Let $S_c=\Spn(A_{\cdot,1},\dots,A_{\cdot,n})\subseteq\Fbb^{m,1},\dim S_c=c.$}\vspace{5pt}\TextB{}
-{\Large\timessl \rightline{And $S_r=\Spn(A_{1,\cdot},\dots,A_{n,\cdot})\subseteq\Fbb^{1,n},\dim S_r=r.$\qquad\qquad\qquad\quad}}\vspace{5pt}\TextB{}
-{\Large\timessl Prove that $A=CR.\,\,\,\exists\,\,C\in\Fbb^{m,c},R\in\Fbb^{c,n}.$}\vspace{2pt}\par
-\Solution Notice that $A\neq 0\Rightarrow c,r\geq 1.$\par\quad
-Let $(C_{\cdot,1},\dots,C_{\cdot,c})$ be a basis of $S_c$, forming $C\in\Fbb^{m,c}$.\par\quad
-Then for any $A_{\cdot,k},$\quad $A_{\cdot,k}=R_{1,k}C_{\cdot,1}+\dots+R_{c,k}C_{\cdot,c}=(CR)_{\cdot,k},\,\,\,\,\exists\,!\,R_{1,k},\dots,R_{c,k}\in\Fbb.$\par\quad
-Hence, by letting $R=$ {\tiny $\begin{pmatrix} R_{1,1} & \cdots & R_{1,n} \\ \vdots & \ddots & \vdots \\ R_{c,1} & \cdots & R_{c,n} \end{pmatrix}$}, we have $A=CR.$\par\quad
-\Or Let $(R_{1,\cdot},\dots,R_{c,\cdot})$ be a basis of $S_r,$ forming $R\in\Fbb^{c,n}$.\par\quad
-For any $A_{j,\cdot},$\quad $A_{j,\cdot}=C_{j,1}R_{1,\cdot}+\dots+C_{j,c}R_{c,\cdot}=(CR)_{j,\cdot},\,\,\,\,\exists\,!\,C_{j,1},\dots,C_{j,c}\in\Fbb.$ Similarly.$\hfill\square$
-\par\quad
+\ProblemB{
+	\textsc{Column-Row Factorization}\quad(CR Factorization)\vspace{3pt}\TextB{}
+\TextB{Suppose $A\in\Fbb^{m,n},A\neq 0.$ Let $\MathLeftMid{l}{S_c=\Spn(A_{\cdot,1},\dots,A_{\cdot,n})\subseteq\Fbb^{m,1},\dim S_c=c.\\S_r=\Spn(A_{1,\cdot},\dots,A_{m,\cdot})\subseteq\Fbb^{1,n},\dim S_r=r.}$\vspace{5pt}}
+\TextB{Prove that $A=CR,\,\exists\,C\in\Fbb^{m,c},R\in\Fbb^{c,n}.$\vspace{6pt}}
+}Notice that $A\neq 0\Rightarrow c,r\geq 1.$\par\quad
+Let $(C_{\cdot,1},\dots,C_{\cdot,c})$ be a basis of $S_c$, forming $C\in\Fbb^{m,c}$.\par\qquad
+\Or Let $(R_{1,\cdot},\dots,R_{r,\cdot})$ be a basis of $S_r,$ forming $R\in\Fbb^{c,n}$.\par\quad
+Then for any $k,\;A_{\cdot,k}=R_{1,k}C_{\cdot,1}+\dots+R_{c,k}C_{\cdot,c}=(CR)_{\cdot,k},\,\exists\,!\,R_{1,k},\dots,R_{c,k}\in\Fbb,$ forming $R\in\Fbb^{c,n}.$\par\qquad
+\Or For any $k,\;A_{j,\cdot}=C_{j,1}R_{1,\cdot}+\dots+C_{j,c}R_{c,\cdot}=(CR)_{j,\cdot},\,\exists\,!\,C_{j,1},\dots,C_{j,c}\in\Fbb,$ forming $C\in\Fbb^{m,c}.$\par\quad
+Now we have $A=CR.\hfill\square$\vspace{6pt}\par
 \Example\par\quad
-$A\,=\,$ {\small$\begin{pmatrix} 10 & 7 & 4 & 1 \\ 26 & 19 & 12 & 5\\ 46 & 33 & 20 & 7\end{pmatrix}$
+$A\,=\,$ {\normalsize$\begin{pmatrix} 10 & 7 & 4 & 1 \\ 26 & 19 & 12 & 5\\ 46 & 33 & 20 & 7\end{pmatrix}$
 {$\overset{(1)}{=}$}
 $\begin{pmatrix} 1 & 0\\ 0 & 1\\ 2 & 1\end{pmatrix}\begin{pmatrix} 10 & 7 & 4 & 1\\ 26 & 19 & 12 & 5\end{pmatrix}$
 {$\overset{(2)}{=}$}
 $\begin{pmatrix} 7 & 4\\ 19 & 12\\ 33 & 20\end{pmatrix}\begin{pmatrix} 2 & -1\\ 1 & 0\\ 0 & 1\\ -1 & 2\end{pmatrix}$}\par\quad
-(I) \dbsp Because {\small$\begin{pmatrix} 46 & 33 & 20 & 7 \end{pmatrix}=2\begin{pmatrix} 10 & 7 & 4 & 1\end{pmatrix}+\begin{pmatrix} 26 & 19 & 12 & 5\end{pmatrix}$}.\par\quad\HI
+(I) {\normalsize$\begin{pmatrix} 46 & 33 & 20 & 7 \end{pmatrix}=2\begin{pmatrix} 10 & 7 & 4 & 1\end{pmatrix}+\begin{pmatrix} 26 & 19 & 12 & 5\end{pmatrix}$}.
 %{\small$\begin{pmatrix} 46 & 33 & 20 & 7 \end{pmatrix}$} can be uniquely written as a linear combination of $A_{1,\cdot},A_{2,\cdot}$.\par\quad
-\dbsp Hence $\dim S_r=2$. We choose $(A_{1,\cdot},A_{2,\cdot})$ as the basis.\par\vspace{6pt}\quad\EndI
-(II) \dbsp Because {\small$\begin{pmatrix} 10\\ 26\\ 46\end{pmatrix}=2\begin{pmatrix} 7\\ 19\\ 33\end{pmatrix}-\begin{pmatrix} 4\\ 12\\ 20\end{pmatrix}; \quad \begin{pmatrix} 1\\ 5\\ 7\end{pmatrix}=2\begin{pmatrix} 4\\ 12\\ 20\end{pmatrix}-\begin{pmatrix} 7\\ 19\\ 33\end{pmatrix}$}.\par\vspace{6pt}\quad\HII
-\dbsp Hence $\dim S_c=2.$ We choose $(A_{\cdot,2},A_{\cdot,3})$ as the basis.\par
+Hence $\dim S_r=2$. Let $(A_{1,\cdot},A_{2,\cdot})$ be the basis.\par\vspace{6pt}\quad\EndI
+(II) {\normalsize$\begin{pmatrix} 10\\ 26\\ 46\end{pmatrix}=2\begin{pmatrix} 7\\ 19\\ 33\end{pmatrix}-\begin{pmatrix} 4\\ 12\\ 20\end{pmatrix}; \quad \begin{pmatrix} 1\\ 5\\ 7\end{pmatrix}=2\begin{pmatrix} 4\\ 12\\ 20\end{pmatrix}-\begin{pmatrix} 7\\ 19\\ 33\end{pmatrix}$}. Hence $\dim S_c=2.$ Let $(A_{\cdot,2},A_{\cdot,3})$ be the basis.\par
 \ProblemEnding\par
 
-\BulletPoint \,{\Large C{\normalsize OLUMN} R{\normalsize ANK} E{\normalsize QUALS} R{\normalsize OW} R{\normalsize ANK}}\quad (Using the notation above)\TextB{}
-For any $A_{j,\cdot}\in S_r,$\quad $A_{j,\cdot}=(CR)_{j,\cdot}=C_{j,1}R=C_{j,1}R_{1,\cdot}+\dots+C_{j,c}R_{c,\cdot}$\TextB{}
-$\Rightarrow\Spn(A_{1,\cdot},\dots,A_{m,\cdot})=S_r=\Spn(R_{1,\cdot},\dots,R_{c,\cdot})\Rightarrow\dim S_r=r\leq c=\dim S_c.$\TextB{}
-Apply the result to $A^t\in\Fbb^{n,m}\Rightarrow\dim S_r^t=\dim S_c=c\leq r=\dim S_r=\dim S_c^t.\hfill\square$\par
+\BulletPoint \,\hspace{1pt}\textsc{Column Rank Equals Row Rank}\quad (Using the notation and result above)\TextB{}
+For each $A_{j,\cdot}\in S_r,\;A_{j,\cdot}=(CR)_{j,\cdot}=C_{j,1}R=C_{j,1}R_{1,\cdot}+\dots+C_{j,c}R_{c,\cdot}$\TextB{}
+For each $A_{\cdot,k}\in S_c,\;A_{\cdot,k}=(CR)_{\cdot,k}=R_{1,k}C_{\cdot,1}+\dots+R_{c,k}C_{\cdot,c}=(CR)_{\cdot,k}.$\TextB{}
+$\Rightarrow\Spn(A_{1,\cdot},\dots,A_{n,\cdot})=S_r=\Spn(R_{1,\cdot},\dots,R_{c,\cdot})\Rightarrow\dim S_r=r\leq c=\dim S_c.$\TextB{}
+$\Rightarrow\Spn(A_{\cdot,1},\dots,A_{\cdot,m})=S_r=\Spn(C_{\cdot,1},\dots,C_{\cdot,r})\Rightarrow\dim S_c=c\leq r=\dim S_r.$\TextB{}
+\Or Apply the result to $A^t\in\Fbb^{n,m}\Rightarrow\dim S_r^t=\dim S_c=c\leq r=\dim S_r=\dim S_c^t.\hfill\square$\par
 \ProblemEnding\par
 
-\ProblemB{
-	\TextB{Suppose $T\in\Lm(V)$, and $u_1,\dots,u_n$ and $v_1,\dots,v_n$ are bases of \,$V$.}
-	\TextB{Prove that the following are equi.{\normalsize Here $A=\Mt(T)$ means $\Mt\left(T, (u_1,\dots,u_n),(v_1,\dots,v_n)\right)$.}}
+\ProblemBor{{\normalsize 4E 3.C.17, 3.F.32}}{
+	\TextB{Suppose $T\in\Lm(V)$ and $(u_1,\dots,u_n),(v_1,\dots,v_n)$ are bases of \,$V$.}
+	\TextB{Prove that the following are equi.\;\;{\normalsize Here $A=\Mt(T)$ means $\Mt\left(T, (u_1,\dots,u_n),(v_1,\dots,v_n)\right)$.}}
 	(a) \TextB{$T$ is inje.}
 	(b) \TextB{The cols of $\Mt(T)$ are linely inde in $\Fbb^{n,1}$.}
 	(c) \TextB{The cols of $\Mt(T)$ span $\Fbb^{n,1}$.}
 	(d) \TextB{The rows of $\Mt(T)$ span $\Fbb^{1,n}$.}
 	(e) \TextB{The rows of $\Mt(T)$ are linely inde in $\Fbb^{1,n}$.}
-}$T$ is inje $\Longleftrightarrow$ $\dim V=\dim\range T+\dim\null T=\dim\range T$\par\qquad\qquad\qquad\qquad\;\;\,
-$\Longleftrightarrow$ $(Tu_1,\dots,Tu_n)$ is linely inde in $V$, and therefore is a basis of $V$\par\qquad\qquad\qquad\qquad\;\;\,
-$\Longleftrightarrow$ $\left(\Mt(Tu_1),\dots,\Mt(Tu_n)\right)$ is linely inde, as well as $(A_{\cdot,1},\dots,A_{\cdot,n})$\par\qquad\qquad\qquad\qquad\;\;\,
-$\Longleftrightarrow$ $(A_{\cdot,1},\dots,A_{\cdot,n})$ is a basis of $\Fbb^{n,1}$.\par\quad
-$\left(\begin{array}{l}$\,又 $\dim\Spn(A_{\cdot,1},\dots,A_{\cdot,n})=\dim\Spn(A_{1,\cdot},\dots,A_{n,\cdot})=n$\,$\end{array}\right)$\par\qquad\qquad\qquad\qquad\;\;\,
-$\Longleftrightarrow$ $(A_{1,\cdot},\dots,A_{n,\cdot})$ is a basis of $\Fbb^{1,n}.\hfill\square$\par
+}Using \TIPS\;in $2.C$.\vspace{-8pt}\par
+\AlignEq{\quad}{T \text{ is inje } &\Longleftrightarrow\dim V=\dim\range T+\dim\null T=\dim\range T\\
+&\hspace{-18.5pt}\Delta\MathLeftBrace{l}{\Longleftrightarrow(Tu_1,\dots,Tu_n)\text{ is a basis of }V; 又 \dim\range T=\dim\Spn(\Mt(Tu_1),\dots,\Mt(Tu_n))=n\\
+\Longleftrightarrow\left(\Mt(Tu_1),\dots,\Mt(Tu_n)\right)\text{ is a basis of }\Fbb^{n,1},\text{ as well as }(A_{\cdot,1},\dots,A_{\cdot,n})}\\
+&\left(\begin{array}{l}\hspace{-4pt}\text{又} \dim S_c=\dim\Spn(A_{\cdot,1},\dots,A_{\cdot,n})=\dim\Spn(A_{1,\cdot},\dots,A_{n,\cdot})=\dim S_r=n\end{array}\right)\\
+&\Longleftrightarrow(A_{1,\cdot},\dots,A_{n,\cdot})\text{ is a basis of }\Fbb^{1,n}.}\vspace{-25pt}\par$\hfill\square$\par\quad
+Now we show that $(\Delta)$ properly.\par\quad
+$(a)\,\Rightarrow(b):\;$\par\quad\Ha
+Suppose $b_1A_{\cdot,1}+\dots+b_nA_{\cdot,n}=\,${\normalsize$
+\begin{pmatrix}
+	b_1 A_{1,1}+\dots+b_nA_{1,n}\\
+	\vdots\\
+	b_1 A_{n,1}+\dots+b_nA_{n,n}
+\end{pmatrix}$}$\,=0.$ Let $u=b_1u_1+\dots+b_nu_n.$\vspace{6pt}\par\quad\Ha
+Then \vspace{-7.2pt}\AlignEq{}{Tu&=b_1Tu_1+\dots+b_nTu_n\hspace{280pt}\\&=b_1(A_{1,1}v_1+\dots+A_{n,1}v_n)+\dots+b_n(A_{1,n}v_1+\dots+A_{n,n}v_n)\\&=(b_1A_{1,1}+\dots+b_nA_{1,n})v_1+\dots+(b_1A_{n,1}+\dots+b_nA_{n,n})v_n\\&=0v_1+\dots+0v_n=0\\&\Rightarrow b_1=\dots=b_n=0.}\par\quad\Ha
+Thus by (2.39), $(b)$ holds.\vspace{10pt}\par\quad
+$(b)\,\Rightarrow(a):\;$\par\quad\Hb
+Suppose $u=b_1u_1+\dots+b_nu_n=\in\null T.$\par\quad\Hb
+Then $Tu=0=(b_1A_{1,1}+\dots+b_nA_{1,n})v_1+\dots+(b_1A_{n,1}+\dots+b_nA_{n,n})v_n.$\par\quad\Hb
+Thus $b_1A_{1,1}+\dots+b_nA_{1,n}=\dots=b_1A_{n,1}+\dots+b_nA_{n,n}=0.$\vspace{6pt}\par\quad\Hb
+Which is equivalent to {\normalsize$
+	\begin{pmatrix}
+		b_1 A_{1,1}+\dots+b_nA_{1,n}\\
+		\vdots\\
+		b_1 A_{n,1}+\dots+b_nA_{n,n}
+	\end{pmatrix}$}$\,=b_1A_{\cdot,1}+\dots+b_nA_{\cdot,n}=0\Rightarrow b_1=\dots=b_n=0.$\vspace{6pt}\par\quad\Hb
+Thus by (2.39), $(a)$ holds.$\hfill\square$\par
 \ProblemEnding\par
+\pagebreak
 
-\ProblemB{
+\ProblemBor{{\normalsize 4E 3.C.16}}{
 	\TextB{Suppose $A$ is an m-by-n matrix with $A\neq 0$.}
-	\TextB{Prove that the rank of $A$ is $1\Longleftrightarrow\exists\,(c_1,\dots,c_m)\in\Fbb^m$ and $(d_1,\dots,d_n)\in\Fbb^n$}
-	\TextB{such that $A_{j,k}=c_j\cdot d_k$ for every $j=1,\dots,m$ and every $k=1,\dots,n$.}
-}Using the notation in CR Factorization.\par\quad
+	\TextB{Prove that rank $A=1\Longleftrightarrow\exists\,(c_1,\dots,c_m)\in\Fbb^m,(d_1,\dots,d_n)\in\Fbb^n$}
+	\TextB{such that $A_{j,k}=c_j\cdot d_k$ for every $j=1,\dots,m$ and $k=1,\dots,n$.}
+}\par\quad
+Using the notation in CR Factorization.\par\quad
 (a) Suppose $A=\begin{pmatrix}c_1 \\ \vdots \\ c_m \end{pmatrix}\begin{pmatrix} d_1 & \cdots & d_n\end{pmatrix}=\begin{pmatrix} c_1 d_1 & \cdots & c_1 d_n\\ \vdots & \ddots & \vdots \\ c_m d_1 & \cdots & c_m d_n \end{pmatrix}.\,\,\,\,(\,\,\,\exists\,c_j,d_k\in\Fbb,\forall j,k\,)$\par\,\par\quad\Ha
 Then $S_c=\Spn\left(\begin{pmatrix} c_1 d_1 \\ \vdots \\ c_m d_1\end{pmatrix},\begin{pmatrix} c_1 d_2 \\ \vdots \\ c_m d_2\end{pmatrix},\dots,\begin{pmatrix} c_1 d_n \\ \vdots \\ c_m d_n\end{pmatrix}\right)=\Spn\left(\begin{pmatrix} c_1 \\ \vdots \\ c_m\end{pmatrix}\right).$\par\,\par\quad\Ha
-\Or\,\,\,\,$S_r=\Spn\left(\begin{array}{l}\begin{pmatrix} c_1 d_1 & \cdots & c_1 d_n\end{pmatrix},\\ \begin{pmatrix} c_2 d_1 & \cdots & c_2 d_n\end{pmatrix},\\ \qquad\qquad\vdots\\ \begin{pmatrix} c_m d_1 & \cdots & c_m d_n\end{pmatrix}\end{array}\right)=\Spn\left(\begin{pmatrix} d_1 & \dots & d_n\end{pmatrix}\right).$\qquad Hence the rank of $A$ is $1$.\par{\,}\par\quad
-(b) Suppose the rank of $A$ is $\dim S_c=\dim S_r=1$ \par\quad\Hb
+\Or $S_r=\Spn\left(\begin{array}{l}\begin{pmatrix} c_1 d_1 & \cdots & c_1 d_n\end{pmatrix},\\ \begin{pmatrix} c_2 d_1 & \cdots & c_2 d_n\end{pmatrix},\\ \qquad\qquad\vdots\\ \begin{pmatrix} c_m d_1 & \cdots & c_m d_n\end{pmatrix}\end{array}\right)=\Spn\left(\begin{pmatrix} d_1 & \dots & d_n\end{pmatrix}\right).$\quad Hence rank $A=1$.\par{\,}\par\quad\Ha
+\Or Using also the result in [4E 3.51(a)].\par\quad\Ha
+Every col of $A$ is a scalar multi of $C.$ Then rank $A\leq 1$ 又 rank $A\geq 1$ ( $A\neq 0$ ).\vspace{6pt}\par\quad
+(b) By CR Factorization, $\exists\,C=\begin{pmatrix}c_1 \\ \vdots \\ c_m \end{pmatrix}\in\Fbb^{m,1},R=\begin{pmatrix} d_1 & \cdots & d_n\end{pmatrix}\in\Fbb^{1,n}$ such that $A=CR.$\vspace{4pt}\par\quad\Hb
+\Or Not using CR Factorization. Suppose rank $A=\dim S_c=\dim S_r=1$ \par\quad\Hb
 Let $c_j=\displaystyle\frac{A_{j,1}}{A_{1,1}}=\frac{A_{j,2}}{A_{1,2}}=\dots=\frac{A_{j,n}}{A_{1,n}},\qquad d\apostrophe_k=\frac{A_{1,k}}{A_{1,1}}=\frac{A_{2,k}}{A_{2,1}}=\dots=\frac{A_{m,k}}{A_{m,1}}$.\quad$(\,\forall j,k\,)$\par\vspace{6pt}\quad\Hb
-$\Rightarrow A_{j,k}=d\apostrophe_k A_{j,1}=c_j A_{1,k}=c_j d\apostrophe_k A_{1,1}=c_j d_k.$ Letting $d_k=d\apostrophe_k A_{1,1}.\qquad\qquad\qquad\qquad\qquad\hfill\square$
-\par
+$\Rightarrow A_{j,k}=d\apostrophe_k A_{j,1}=c_j A_{1,k}=c_j d\apostrophe_k A_{1,1}=c_j d_k.$ Letting $d_k=d\apostrophe_k A_{1,1}.\hfill\square$\par
 \ProblemEnding\par
 
 \ProblemN{1}{
@@ -1645,9 +1668,7 @@ Thus $T(v_k)=Tv_k,T(u_j)=0\Rightarrow A_{k,k}=1,A_{i,j}$ for each $k\in\{1,\dots
 }\par\quad
 Let $(u_1,\dots,u_m)$ be a basis of $V$. If $A_{1,\cdot}=0,$ then let $v_i=u_i$ for each $i=1,\dots,n,$ we are done.\par\quad
 Otherwise, $\begin{pmatrix} A_{1,1} & \cdots & A_{1,m}\end{pmatrix}\neq 0$, choose one $A_{1,k}\neq 0$.\par\quad
-Let $v_1=\displaystyle\frac{u_k}{A_{1,k}}$;\qquad$v_j=u_{j-1}-A_{1,j-1}v_1$\quad for $j=2,\dots,k$;\par\quad\qquad\qquad\qquad\quad\,\,\,\,
-$v_i=u_i-A_{1,i} v_1$\,\quad\qquad for $i=k+1,\dots,n.\hfill\square$
-\par
+Let $v_1=\displaystyle\frac{u_k}{A_{1,k}};$ \vspace{-15pt}\AlignEq{}{v_j&=u_{j-1}-A_{1,j-1}v_1\;\;\text{ for }j=2,\dots,k;\hspace{150pt}\\v_i&=u_i-A_{1,i} v_1\qquad\;\text{ for }i=k+1,\dots,n.}\vspace{-20pt}\par$\hfill\square$\par
 \ProblemEnding\par
 
 \ProblemN{6}{
@@ -1663,33 +1684,52 @@ Let $w_1=Tv_1-w_2-\dots-w_m.$ Extend it to $B_W$ the basis of $W$.\par\quad\Hb
 Let $v_1=u_1,v_i=u_1+u_i.$ Extend it to $B_V$ the basis of $V$.$\,\,\hfill\square$\par
 \ProblemEnding\par
 
-\ProblemN{12}{
-	\TextNL{Give an example of 2-by-2 mtcs $A$ and $B$ such that $AB\neq BA$.}\vspace{6pt}
-}$\begin{pmatrix} 1 & 0\\ 0 & -1\end{pmatrix}\begin{pmatrix}
-0 & 1\\ 1 & 0\end{pmatrix}=\begin{pmatrix} 0 & 1\\ -1 & 0\end{pmatrix};$\qquad
-$\begin{pmatrix} 0 & 1\\ 1 & 0\end{pmatrix}\begin{pmatrix}
-1 & 0\\ 0 & -1\end{pmatrix}=\begin{pmatrix} 0 & -1\\ 1 & 0\end{pmatrix}.$\vspace{6pt}\par
+%\ProblemN{12}{
+%	\TextNL{Give an example of 2-by-2 mtcs $A$ and $B$ such that $AB\neq BA$.}\vspace{6pt}
+%}$\begin{pmatrix} 1 & 0\\ 0 & -1\end{pmatrix}\begin{pmatrix}
+%0 & 1\\ 1 & 0\end{pmatrix}=\begin{pmatrix} 0 & 1\\ -1 & 0\end{pmatrix};$\qquad
+%$\begin{pmatrix} 0 & 1\\ 1 & 0\end{pmatrix}\begin{pmatrix}
+%1 & 0\\ 0 & -1\end{pmatrix}=\begin{pmatrix} 0 & -1\\ 1 & 0\end{pmatrix}.$\vspace{6pt}\par
+%\ProblemEnding\par
+
+\ProblemB{
+	\TextB{Prove that the commutativity does not hold in $\Fbb^{m,n}.$}
+}\par\quad
+Suppose $\dim V=n,\dim W=m$ and the commutativity holds in $\Fbb^{n,m}.$\par\quad
+Then $\forall T\in\Lm(V,W),S\in\Lm(W,V),\Mt(TS)=\Mt(T)\Mt(S)=\Mt(S)\Mt(T)=\Mt(ST).$\par\quad
+Hence $ST=TS.$ Which in general, does not hold. ( See 3.D )$\hfill\square$\par
+\ProblemEnding\par
+
+\ProblemB{
+	\TextB{Suppose $p$ is a poly of $n$ variables in $\Fbb$. Prove that $\Mt\left(p(T_1,\dots,T_n)\right)=p\left(\Mt(T_1),\dots,\Mt(T_n)\right).$}
+	\TextB{\large Where the linear maps $T_1,\dots,T_n$ are such that $p(T_1,\dots,T_n)$ makes sense. See [5.B.16,17,20].}
+}\par\quad
+Suppose the poly $p$ is defined by $p(x_1,\dots,x_n)=\displaystyle\sum\limits_{k_1,\dots,k_n}\alpha_{k_1,\dots,k_n}\prod\limits_{i=1}^n x_i^{k_i}.$\par\quad
+Then $\displaystyle\Mt\left(p(T_1,\dots,T_n)\right)=\sum\limits_{k_1,\dots,k_n}\alpha_{k_1,\dots,k_n}\prod\limits_{i=1}^n T_i^{k_i}=\sum\limits_{k_1,\dots,k_n}\alpha_{k_1,\dots,k_n}\Mt\left(\prod\limits_{i=1}^n T_i^{k_i}\right).$\par\quad
+Note that $\Mt(T^x S^y)=\Mt(T)^x\Mt(S)^y$. Hence $\displaystyle\Mt\left(p(T_1,\dots,T_n)\right)=\sum\limits_{k_1,\dots,k_n}\alpha_{k_1,\dots,k_n}\Mt(T)^{k_1}\Mt\left(\prod\limits_{i=2}^n T_i^{k_i}\right).$\par\quad
+And for any $k\geq 1,$ $\displaystyle\Mt\left(p(T_1,\dots,T_n)\right)=\sum\limits_{k_1,\dots,k_n}\alpha_{k_1,\dots,k_n}\left(\prod\limits_{i=1}^k\Mt(T)^{k_i}\right)\Mt\left(\prod\limits_{i=k+1}^n T_i^{k_i}\right).$\par\quad
+Hence by mathematical induction, we conclude that $\displaystyle\sum\limits_{k_1,\dots,k_n}\alpha_{k_1,\dots,k_n}\Mt\left(\prod\limits_{i=1}^n T_i^{k_i}\right)=\sum\limits_{k_1,\dots,k_n}\alpha_{k_1,\dots,k_n}\prod\limits_{i=1}^n \Mt(T_i^{k_i}).$
 \ProblemEnding\par
 
 \ProblemN{13}{
-	\TextNL{Prove that the distr property holds for matrix add and matrix multi.}
+	\TextNL{Prove that the distr holds for matrix add and matrix multi.}
 	\TextNL{In other words, suppose $A, B, C, D, E$ and $F$ are matrices}
 	\TextNL{whose sizes are such that $A(B + C)$ and $(D + E)F$ make sense.}
-	\TextNL{Explain why $AB + AC$ and $DF + EF$ both make sense and prove that.}
+	\TextNL{Explain why $AB + AC$ and $DF + EF$ both make sense and prove the distr.}
 }Using [3.36], [3.43].\par\quad
-(a) Left distr:\quad Suppose $A\in\Fbb^{m,n}$ and $B,C\in\Fbb^{n,p}.$\par\quad\Ha
-Because $[A(B+C)]_{j,k}=\sum\limits_{r=1}^n A_{j,r}(B+C)_{r,k}=\sum\limits_{r=1}^n (A_{j,r}B_{r,k}+A_{j,r}C_{r,k}).$\par\quad\Ha
-Hence we conclude that $A(B+C)=AB+AC.$\par\vspace{6pt}\quad\Ha
-\Or Let $(e_1,\dots,e_M)$ be the standard basis of $\Fbb^M$, where $M=\max\{m,n,p\}.$\par\quad\Ha
-Suppose $T\in\Lm(\Fbb^n,\Fbb^m)$ such that $Te_k=\sum\limits_{j=1}^m A_{j,k}e_j$ for each $k=1,\dots,n$. Then $\Mt(T)=A.$\par\quad\Ha
-Similarly, define $S,R$ such that $\Mt(S)=B,\Mt(R)=C.$\par\quad\Ha
+For left distr. Suppose $A\in\Fbb^{m,n}$ and $B,C\in\Fbb^{n,p}.$\par\quad
+Because $[A(B+C)]_{j,k}=\sum\limits_{r=1}^n A_{j,r}(B+C)_{r,k}=\sum\limits_{r=1}^n (A_{j,r}B_{r,k}+A_{j,r}C_{r,k}).$\par\quad
+Hence we conclude that $A(B+C)=AB+AC.$ Similarly, $(D+E)F=DF+EF.\hfill\square$\par\vspace{6pt}\quad
+\Or Let $(e_1,\dots,e_m)$ be the standard basis of $\Fbb^m$, $(f_1,\dots,f_n)$ be the standard basis of $\Fbb^n.$\par\quad
+Suppose $T\in\Lm(\Fbb^n,\Fbb^m)$ such that $Tf_k=\sum\limits_{j=1}^m A_{j,k}e_j$ for each $k=1,\dots,n$. Then $\Mt(T)=A.$\par\quad
+Similarly, define $S,R$ such that $\Mt(S)=B,\Mt(R)=C.$\par\quad
 Thus $T(S+R)=TS+TR$ $\left\vert\begin{array}{l}$
 $\Rightarrow\Mt\left(T(S+R)\right)=\Mt(TS+TR)\\ $
 $\Rightarrow\Mt(T)\left[\Mt(S)+\Mt(R)\right]=\Mt(T)\Mt(S)+\Mt(T)\Mt(R)\\ $
 $\Rightarrow A(B+C)=AB+AC.\end{array}\right.$\par\quad
-(b) Right distr: Similarly. $\left\vert\begin{array}{l}$
-\,\,\,\,Suppose $\Mt(T)=D,\Mt(S)=E,\Mt(R)=F.\\ $\quad
-Then $(T+S)R=TR+SR\\ \Rightarrow\Mt\left((T+S)R\right)=\Mt(TR)+\Mt(SR)\\ \Rightarrow\left[\Mt(T)+\Mt(S)\right]\Mt(R)=\Mt(T)\Mt(R)+\Mt(S)\Mt(R)\\ \Rightarrow(D+E)F=DF+EF.\hfill\square\end{array}\right.$\par
+Similar arguments will prove the right distr.\vspace{10pt}\par\quad
+\Or $A(B+C)=\Mt(T(S+R))\overset{[3.9]}{=}\Mt(TS+TR)=AB+AC.$\par\qquad\;\,
+$(D+E)F=\Mt((T+S)R)\overset{[3.9]}{=}\Mt(TR+SR)=DF+EF.\hfill\square$\par
 \ProblemEnding\par
 
 \ProblemN{14}{
@@ -1699,14 +1739,13 @@ Then $(T+S)R=TR+SR\\ \Rightarrow\Mt\left((T+S)R\right)=\Mt(TR)+\Mt(SR)\\ \Righta
 }\par\quad
 Because $[(AB)C]_{j,k}=(AB)_{j,\cdot}C_{\cdot,k}=\sum\limits_{s=1}^n(A_{j,s}B_{s,\cdot})C_{\cdot,k}=\sum\limits_{s=1}^n A_{j,s}(B_{s,\cdot}C_{\cdot,k})=\sum\limits_{s=1}^n A_{j,s}(BC)_{s,k}=A(BC)_{j,k}$\par\quad
 Hence we conclude that $(AB)C=A(BC).$\par\vspace{6pt}\quad
-\Or Suppose $A\in\Fbb^{m,n},B\in\Fbb^{n,p},C\in\Fbb^{p,s}$.\par\quad
-Let $(e_1,\dots,e_M)$ be the standard basis of $\Fbb^M$, where $M=\max\{m,n,p,s\}.$\par\quad
-Suppose $T\in\Lm(\Fbb^n,\Fbb^m)$ such that $Te_k=\sum\limits_{j=1}^m A_{j,k}e_j$ for each $k=1,\dots,n$. Then $\Mt(T)=A.$\par\quad
-Similarly, define $S,R$ such that $\Mt(S)=B,\Mt(R)=C.$\par\quad
-Hence $(TS)R=T(SR)\Rightarrow \Mt\left((TS)R\right)=\Mt\left(T(SR)\right)$\par\qquad\qquad\qquad\qquad\qquad\quad
-$\Rightarrow\left[\Mt(T)\Mt(S)\right]\Mt(R)=\Mt(T)\left[\Mt(S)\Mt(R)\right]$\par\qquad\qquad\qquad\qquad\qquad\quad
-$\Rightarrow (AB)C=A(BC).\hfill\square$
-\par
+\Or Suppose $A\in\Fbb^{m,n},B\in\Fbb^{n,p},C\in\Fbb^{p,q}$.\par\quad
+Let $(e_1,\dots,e_m)$ be the standard basis of $\Fbb^m$, $(f_1,\dots,f_n)$ be the standard basis of $\Fbb^n.$\par\quad
+Suppose $T\in\Lm(\Fbb^n,\Fbb^m)$ such that $Tf_k=\sum\limits_{j=1}^m A_{j,k}e_j$ for each $k=1,\dots,n$. Then $\Mt(T)=A.$\par\quad
+Similarly, define $S,R$ such that $\Mt(S)=B,\Mt(R)=C.$\vspace{4pt}\par\quad
+Hence \vspace{-8pt}\AlignEq{}{(TS)R=T(SR)&\Rightarrow \Mt((TS)R)=\Mt(T(SR))\hspace{200pt}\\&\Rightarrow\left[\Mt(T)\Mt(S)\right]\Mt(R)=\Mt(T)\left[\Mt(S)\Mt(R)\right]\\&\Rightarrow (AB)C=A(BC).}
+\vspace{4pt}\par\quad
+\Or $(AB)C=\Mt(T(SR))\overset{[3.9]}{=}\Mt(TSR)\overset{[3.9]}{=}\Mt((TS)R)=A(BC).\hfill\square$\vspace{8pt}\par
 \ProblemEnding\par
 
 \ProblemN{15}{
@@ -1715,7 +1754,7 @@ $\Rightarrow (AB)C=A(BC).\hfill\square$
 	\TextNL{$($which is defined to mean AAA$)$ is
 $\sum\limits_{p=1}^n \sum\limits_{r=1}^n A_{j,p}A_{p,r}A_{r,k}$.\vspace{6pt}}
 }\AlignEq{}{(AAA)_{j,k} &= (AA)_{j,\cdot}A_{\cdot,k}=\sum\limits_{p=1}^n (A_{j,p}A_{p,\cdot})A_{\cdot,k}=\sum\limits_{p=1}^n \sum\limits_{r=1}^n A_{j,p}A_{p,r}A_{r,k}.\\
-\textup{\Or}\,\,\,\,(AAA)_{j,k} &=\sum\limits_{r=1}^n(AA)_{j,r}A_{r,k} =\sum\limits_{r=1}^n(\sum\limits_{p=1}^n A_{j,p}A_{p,r})A_{r,k}\\&=\sum\limits_{r=1}^n(A_{j,1}A_{1,r}A_{r,k}+\dots+A_{j,n}A_{n,r}A_{r,k})\\&=A_{j,1}\sum\limits_{r=1}^n A_{1,r}A_{r,k}+\dots+A_{j,n}\sum\limits_{r=1}^n A_{n,r}A_{r,k}=\sum\limits_{p=1}^n \sum\limits_{r=1}^n A_{j,p}A_{p,r}A_{r,k}.\hfill\square}\par
+\textup{\Or}\,\,\,\,(AAA)_{j,k} &=\sum\limits_{r=1}^n(AA)_{j,r}A_{r,k} =\sum\limits_{r=1}^n(\sum\limits_{p=1}^n A_{j,p}A_{p,r})A_{r,k}\\&=\sum\limits_{r=1}^n\left[A_{j,1}(A_{1,r}A_{r,k})+\dots+A_{j,n}(A_{n,r}A_{r,k})\right]\\&=A_{j,1}\sum\limits_{r=1}^n A_{1,r}A_{r,k}+\dots+A_{j,n}\sum\limits_{r=1}^n A_{n,r}A_{r,k}=\sum\limits_{p=1}^n \sum\limits_{r=1}^n A_{j,p}A_{p,r}A_{r,k}.\hfill\square}\par
 \ProblemEnding\par
 \ChapterEnding
 
@@ -2404,7 +2443,7 @@ Then $\forall u\in U,Tu=S\circ\pi(u)=S(0+U)=0\Rightarrow U\subseteq\null T.\hfil
 
 \ProblemNnosolus{20}{
 	\TextNL{Define $\Gamma:\Lm(V/U,W)\rightarrow\Lm(V,W)$ by $\Gamma(S)=S\circ\pi$ $\left(\,= \pi\apostrophe (S)\right)$.}
-	\dbsp(a) \TextNL{Prove that $\Gamma$ is linear: {\large\timesnr By [3.9] distr properties and [3.6].}}
+	\dbsp(a) \TextNL{Prove that $\Gamma$ is linear: {\large\timesnr By [3.9] distr and [3.6].}}
 	\dbsp(b) \hspace{-0.5pt}\TextNL{Prove that $\Gamma$ is inje:}
 	\vspace{3pt}\dbsp\Hb\hspace{0.1pt}\TextNL{{\large $\Gamma(S)=0=S\circ\pi\Longleftrightarrow\forall v\in V,S\left(\pi(v)\right)=0\Longleftrightarrow\forall v+U\in V/U,S(v+U)=0\Longleftrightarrow S=0.$}}
 	\hspace{1pt}\dbsp(c) \hspace{0.5pt}\TextNL{Prove that $\range\Gamma\,(=\range \pi \apostrophe\,)=\left\{T\in\Lm(V,W):U\subseteq\null T\right\}$: {\normalsize\timesnr By Problem (18).$\hfill\square$}}
