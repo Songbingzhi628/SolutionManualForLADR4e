@@ -753,9 +753,9 @@ Hence $m\geq\dim\Spn(v_1+w,\dots,v_m+w)\geq m-1.\hfill\square$\par
 \Or 用比较系数法. {\Large\vspace{4pt}Denote the coefficient of $x^i$ in $p\in\PoF{}$ by $\xi_i(p).$}\par\quad
 {\Large\vspace{4pt}Suppose $L=a_m p_m(x)+\dots+a_1 p_1(x)+a_0p_0(x)=0\cdot x^m+\dots+0\cdot x+0\cdot 1=R,\forall x\in\Fbb.$}\par\quad
 {\Large\vspace{4pt}We use induction on $m$ to show that $a_m=\dots=a_0=0.$}\par\quad
-(i) {\Large\vspace{4pt}$k=m,$ \;$\xi_{m}(L)=a_{m}\xi_{m}(p_m)=\xi_{m}(R)=0$ 又 $\deg p_m=m,\xi_{m}(p_m)\neq 0\Rightarrow a_m=0.$}\par\quad\Hi
+(i) {\Large\vspace{4pt}$k=m,$ \;$\xi_{m}(L)=a_{m}\xi_{m}(p_m)=\xi_{m}(R)=0$ 又 $\deg p_m=m,\;\xi_{m}(p_m)\neq 0\Rightarrow a_m=0.$}\par\quad\Hi
 {\Large\vspace{8pt}Now $L=a_{m-1}p_{m-1}(x)+\dots+a_0p_0(x).$}\par\quad\Endi
-(ii) {\Large\vspace{4pt}$1\leq k\leq m,$ \;$\xi_{k}(L)=a_{k}\xi_{k}(p_k)=\xi_{k}(R)=0$ 又 $\deg p_k=k,\xi_{k}(p_k)\neq 0\Rightarrow a_k=0.$}\par\quad\Hii
+(ii) {\Large\vspace{4pt}$1\leq k\leq m,$ \;$\xi_{k}(L)=a_{k}\xi_{k}(p_k)=\xi_{k}(R)=0$ 又 $\deg p_k=k,\;\xi_{k}(p_k)\neq 0\Rightarrow a_k=0.$}\par\quad\Hii
 {\Large Now $L=a_{k-1}p_{k-1}(x)+\dots+a_0p_0(x).\hfill\square$}\par
 \ProblemEnding\par
 
@@ -905,25 +905,38 @@ Notice that $(v_1,\dots,v_n)$ is a spanning list of $\Spn(v_1,\dots,v_n)$ of len
 \ProblemEnding\par
 
 \ProblemN{15}{
-	\TextNL{Suppose $V$ is finite-dim and $\dim V=n\leq 1.$}
-	\TextNL{Prove that $\exists$ one-dim subsps $V_1,\dots,V_m$ of $V$ such that $V=V_1\oplus \dots\oplus V_n.$}
+	\TextNL{Suppose $V$ is finite-dim and $\dim V=n\geq 1.$}
+	\TextNL{Prove that $\exists$ one-dim subsps $V_1,\dots,V_n$ of $V$ such that $V=V_1\oplus \dots\oplus V_n.$}
 }\par\quad
-
-\par
-\ProblemB{
+Suppose $(v_1,\dots,n)$ is a basis of $V.$ Define $V_i$ by $V_i=\Spn(v_i)$ for each $i\in\{1,\dots,n\}.$\par\quad
+Then $\forall v\in V,\exists\,!\,a_i\in\Fbb,v=a_1 v_1+\dots+a_n v_n\Rightarrow\exists\,!\,u_i\in V_i,v=u_1+\dots+u_n.$ Thus $V=V_1\oplus\dots\oplus V_n.\hfill\square$\par
+\ProblemBnosolus{
 	\Corollary\TextB{}
 	\TextB{Suppose $W$ is finite-dim, $\dim W=m$ and $w\in W\backslash\{0\}.$}
 	\TextB{Prove that there exists a basis $(w_1,\dots,w_m)$ of $W$ such that $w=w_1+\dots+w_m.$}
-}\par\quad
-
-\par
+}[Proof]\par\quad
+By Problem (15), $\exists$ one-dim subsps $W_1,\dots,W_m$ of $W$ such that $W=W_1\oplus\dots\oplus W_m.$\par\quad
+Note that $\dim W_i=1\Rightarrow\forall x_i\in W_i,\exists\,!\,c_i\in\Fbb,x_i=c_i w_i.$ And $(w_1,\dots,w_m)$ is a basis of $W.$\par\quad
+Suppose $w=x_1+\dots+x_n,$ where each $x_i=c_i w_i\in W_i.$ Then $(x_1,\dots,x_m)$ is also a basis of $W.\hfill\square$\par
 \ProblemEnding\par
 
 \ProblemBnosolus{
-	\NewTheorem\TextB{}
-	\TextB{}
-	[Proof]\TextB{}
-}
+	\NewTheorem \,\,\,\TextB{Suppose $V$ is finite-dim with $\dim V=n$ and $U$ is a subsp of \,$V$ with $U\neq V.$}
+	\qquad\qquad\qquad\quad\hspace{1pt}\TextB{Prove that $\exists\,B_V=(v_1,\dots,v_n)$ such that each $v_k\not\in U.$}
+}\TextB{\vspace{0pt}}
+Note that $U\neq V\Rightarrow n\geq 1.$ We will construct $B_V$ via the following process.\TextB{}
+{\timesbfx Step 1.} $\exists\,v_1\in V\backslash U\Rightarrow v_1\neq 0.$ If $\Spn(v_1)=V$ then we stop.\TextB{}
+{\timesbfx Step k.} Suppose $(v_1,\dots,v_{k-1})$ is linely inde in $V,$ each of which belongs to $V\backslash U.$\TextB{}\quad\qquad\;
+Note that $\Spn(v_1,\dots,v_{k-1})\neq V.$ And if $\Spn(v_1,\dots,v_{k-1})\cup U=V,$ then by (1.C.12),\TextB{}\quad\qquad\;
+( because $\Spn(v_1,\dots,v_{k-1})\not\subseteq U,$ ) $U\subseteq \Spn(v_1,\dots,v_{k-1})\Rightarrow\Spn(v_1,\dots,v_{k-1})=V.$\TextB{}\quad\qquad\;
+Hence because $\Spn(v_1,\dots,v_{k-1})\neq V,$ it must be case that $\Spn(v_1,\dots,v_{k-1})\cup U\neq V.$\TextB{}\quad\qquad\;
+Thus $\exists\,v_k\in V\backslash U$ such that $v_k\not\in\Spn(v_1,\dots,v_{k-1}).$\TextB{}\quad\qquad\;
+By (2.A.11), $(v_1,\dots,v_k)$ is linely inde in $V$. If $\Spn(v_1,\dots,v_k)=V,$ then we stop.\TextB{}
+Because $V$ is finite-dim, this process will stop after $n$ steps.$\hfill\square$\vspace{8pt}\TextB{}
+\Or If $U=\{0\}$ then we are done. Suppose $\dim U\geq 1.$\TextB{}
+Let $(u_1,\dots,u_m)$ be a basis of $U,$ extend to a basis $(u_1,\dots,u_n)$ of $V.$\TextB{}
+Then let $B_V=(u_1-u_k,\dots,u_m-u_k,u_{m+1},\dots,u_k,\dots,u_n).\hfill\square$\par
+\ProblemEnding\par
 \ChapterEnding
 
 \pagebreak
@@ -3500,13 +3513,13 @@ $\Rightarrow Tv_1=c_1 v_1, $又 $v_1=v\in V$ is arbitrary $\Rightarrow T=\lambda
 (a) Suppose $\lambda$ is an eigval of $T$ with an eigvec $v.$\par\quad\Ha
 $(\,$ If $\dim V=1,$ then $U=\{0\}$ and we are done. $\,)$\par\quad\Ha
 Extend $v_1=v$ to a basis of $V$ as $(v_1,v_2\dots,v_n).$\par\quad\Ha
-{\timesbf Step 1} $\,$If $\,\exists\,w_1\in\Spn(v_2,\dots,v_n)$ such that $0\neq Tw_1\in\Spn(v_1)$,\par\qquad\Ha\qquad
+{\timesbfx Step 1.} $\,$If $\,\exists\,w_1\in\Spn(v_2,\dots,v_n)$ such that $0\neq Tw_1\in\Spn(v_1)$,\par\qquad\Ha\qquad
 then extend $w_1=\alpha_{1,1}$ to a basis of $\Spn(v_2,\dots,v_n)$ as $(\alpha_{1,1},\dots,\alpha_{1,n-1}).$\par\qquad\qquad\quad\, Otherwise, we stop at step $1.$\par\quad\Ha
 %{\timesbf Step 2} $\,$If $\,\exists\,w_2\in\Spn(\alpha_{1,2},\dots,\alpha_{1,n-1})$ such that $0\neq Tw_2\in\Spn(v_1,w_1),$\par\qquad\qquad\quad\,
 %then extend $w_2=\alpha_{2,1}$ to a basis of $\Spn(\alpha_{1,2},\dots,\alpha_{1,n-1})$ as $(\alpha_{2,1},\dots,\alpha_{2,n-2}).$\par\qquad\qquad\quad\,
 %Otherwise, we stop at step $2.$\par\quad\Ha
 $\quad\vdots$\par\quad\Ha
-{\timesbf Step k} $\,$If $\,\exists\,w_k\in\Spn(\alpha_{k-1,2},\dots,\alpha_{k-1,n-k+1})$ such that $0\neq Tw_k\in\Spn(v_1,w_1,\dots,w_{k-1}),$\par\qquad\qquad\quad\,
+{\timesbfx Step k.} $\,$If $\,\exists\,w_k\in\Spn(\alpha_{k-1,2},\dots,\alpha_{k-1,n-k+1})$ such that $0\neq Tw_k\in\Spn(v_1,w_1,\dots,w_{k-1}),$\par\qquad\qquad\quad\,
 then extend $w_k=\alpha_{k,1}$ to a basis of $\Spn(\alpha_{k-1,2},\dots,\alpha_{k-1,n-k+1})$ as $(\alpha_{k,1},\dots,\alpha_{k,n-k}).$\par\qquad\qquad\quad\,
 Otherwise, we stop at step $k.$\par\quad\Ha
 $\quad\vdots$\par\quad\Ha
