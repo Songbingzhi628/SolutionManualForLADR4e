@@ -111,6 +111,7 @@
 \def\Solution{{\timesbfx\large S\footnotesize{OLUTION:}}\,\,\,}
 \def\NOTE{\timesnr\large N{\footnotesize OTE}}
 \def\NOTEFOR{{\timesnr\large N{\footnotesize OTE} F{\footnotesize OR}}}
+\def\NEWTHEOREM{{\timesnr\large N{\footnotesize EW} T{\footnotesize HEOREM}}}
 \def\Notice{{\timesnr\large N{\footnotesize OTICE}}}
 \def\COROLLARY{{\timesnr\large C{\footnotesize OROLLARY}}}
 \def\Tips{{\timesbfx\large T{\footnotesize IPS:}}}
@@ -211,10 +212,19 @@
 \vspace{-25pt}
 }
 
-\newcommand{\ChapterDecl}[3]{{\huge\timesbfxx\hypertarget{#1}{#2}}#3\vspace{5pt}}
+\newcommand{\ChapterDecl}[3]{{\huge\timesbfxx\hypertarget{#1}{#2}}{#3}{\vspace{5pt}}}
+\newcommand\hLk[2]{\hyperlink{#1}{#2}}
+\newcommand\Lch[2]{\hLk{Ch#1}{#2}}
+\newcommand\TXT[1]{\textup{#1}}
 
-\centerline{\Large 简介}\vspace{4pt}\par
-{\normalsize 这是我个人用于复习的笔记，一本习题补注。由于我个人的复习特点，我把许多对我个人而言没什么复习价值的习题作了省略。为什么我没有用中文？因为我将来要学习的绝大多数数学课本都是全英的，国内目前的专业翻译速度慢、不全面，况且对于专业学习者来说，直接使用英文不会造成任何困扰，并且我不愿意花费额外的时间去翻译，所以我用英文。但我讨厌英文单词的冗长性，这会让我复习起来很不爽，所以我对许多常用词汇适当地作了简写。这份习题补注的内容范围和标识说明，我已经在\href{run:./README}{README}中写得很清楚，不再赘述。这份笔记尚处于缓慢的编撰进度中。}\par
+\def\nLineDB{\vspace{-18pt}\par}   % If you want the debug version.
+%\def\nLineDB{}                     % Otherwise.
+\newcommand{\orMode}[2]{#1#2} % If you want the debug version.
+%\newcommand{\orMode}[2]{#1}   % If you want the pdf version.
+%\newcommand{\orMode}[2]{#2}   % If you want the print version.
+
+\orMode{\centerline{\Large 简介}\vspace{4pt}\par
+{\normalsize 这是我个人用于复习的笔记，一本习题补注。由于我个人的复习特点，我把许多对我个人而言没什么复习价值的习题作了省略。为什么我没有用中文？因为我将来要学习的绝大多数数学课本都是全英的，国内目前的专业翻译速度慢、不全面，况且对于专业学习者来说，直接使用英文不会造成任何困扰，并且我不愿意花费额外的时间去翻译，所以我用英文。但我讨厌英文单词的冗长性，这会让我复习起来很不爽，所以我对许多常用词汇适当地作了简写。这份笔记的内容范围和标识说明，我已经在\href{run:./README}{README}中写得很清楚，不再赘述。这份笔记尚处于缓慢的编撰进度中。}\par
 
 
 \begin{center}
@@ -222,15 +232,16 @@
 Goto\vspace{8pt}\par
 
 % To see this cleaner, type Ctrl+- a few times.
-\begin{tabular}{ c c c c c c c c c c }
+\begin{tabular}{ c c c c c | c c c c c }
 \hline
-                 1  &                  2  &                  3  &  \hyperlink{Ch4}{4} &                  5  &                  6  &              7      &                  8  &                  9  &                  10\\\hline
-                {A} & \hyperlink{Ch2A}{A} & \hyperlink{Ch3A}{A} &                 {/} & \hyperlink{Ch5A}{A} & \hyperlink{Ch6A}{A} & \hyperlink{Ch7A}{A} & \hyperlink{Ch8A}{A} & \hyperlink{Ch9A}{A} & \hyperlink{Ch10A}{A}\\
-\hyperlink{Ch1B}{B} & \hyperlink{Ch2B}{B} & \hyperlink{Ch3B}{B} &                 {/} & \hyperlink{Ch5B}{B} & \hyperlink{Ch6B}{B} & \hyperlink{Ch7B}{B} & \hyperlink{Ch8B}{B} & \hyperlink{Ch9B}{B} & \hyperlink{Ch10B}{B}\\
-\hyperlink{Ch1C}{C} & \hyperlink{Ch2C}{C} & \hyperlink{Ch3C}{C} &                 {/} & \hyperlink{Ch5C}{C} & \hyperlink{Ch6C}{C} & \hyperlink{Ch7C}{C} & \hyperlink{Ch8C}{C} &                 {/} &                  {/}\\
-                {/} &                 {/} & \hyperlink{Ch3D}{D} &                 {/} &                 {/} & \hyperlink{Ch6D}{D} & \hyperlink{Ch7D}{D} & \hyperlink{Ch8D}{D} &                 {/} &                  {/}\\
-                {/} &                 {/} & \hyperlink{Ch3E}{E} &                 {/} & \hyperlink{Ch5E}{E*}&                 {/} &                 {/} &                 {/} &                 {/} &                  {/}\\
-                {/} &                 {/} & \hyperlink{Ch3F}{F} &                 {/} &                 {/} &                 {/} & \hyperlink{Ch7F}{F*}&                 {/} &                 {/} &                  {/}\\
+         1  &          2  &          3  &  \Lch{4}{4} &          5                         &          6  &          7    &          8  &          9  &          10\\\hline
+        {A} & \Lch{2A}{A} & \Lch{3A}{A} &         {/} & \Lch{5A}{A}                        & \Lch{6A}{A} & \Lch{7A}{A}   & \Lch{8A}{A} & \Lch{9A}{A} & \Lch{10A}{A}\\
+\Lch{1B}{B} & \Lch{2B}{B} & \Lch{3B}{B} &         {/} & \Lch{5BI}{\,$\TXT{B}^\TXT{I}$}     & \Lch{6B}{B} & \Lch{7B}{B}   & \Lch{8B}{B} & \Lch{9B}{B} & \Lch{10B}{B}\\
+        {/} &         {/} &         {/}&          {/} & \Lch{5BII}{\;\,$\TXT{B}^\TXT{II}$} &         {/} &         {/}   &         {/} &         {/} &          {/}\\
+\Lch{1C}{C} & \Lch{2C}{C} & \Lch{3C}{C} &         {/} & \Lch{5C}{C}                        & \Lch{6C}{C} & \Lch{7C}{C}   & \Lch{8C}{C} &         {/} &          {/}\\
+        {/} &         {/} & \Lch{3D}{D} &         {/} &         {/}                        & \Lch{6D}{D} & \Lch{7D}{D}   & \Lch{8D}{D} &         {/} &          {/}\\
+        {/} &         {/} & \Lch{3E}{E} &         {/} & \Lch{5E}{\;E*}                     &         {/} &         {/}   &         {/} &         {/} &          {/}\\
+        {/} &         {/} & \Lch{3F}{F} &         {/} &         {/}                        &         {/} & \Lch{7F}{\;F*}&         {/} &         {/} &          {/}\\
 \hline
 \end{tabular}
 
@@ -269,7 +280,7 @@ char poly&		characteristic polynomial\\\hline
 \end{center}
 
 \clearpage
-
+}{}
 \ChapterDecl{Ch1B}{1$\cdot$B}
 
 \ProblemN{1}{
@@ -321,19 +332,21 @@ By Assoc: $(a+\infty)+(-\infty)\neq a+\left(\infty+(-\infty)\right)$.\par\quad
 \ProblemEnding\par
 \ChapterEnding
 \pagebreak
-\ChapterDecl{Ch1C}{1$\cdot$C}
 
-\ProblemN{7}{
+\ChapterDecl{Ch1C}{1$\cdot$C}{}\orMode{\qquad\hLk{1C7}{7}\;\;\hLk{1C8}{8}\;\;\hLk{1C9}{9}\;\;\hLk{1C11}{11}\;\;\hLk{1C12}{12}\;\;\hLk{1C13}{13}\;\;\hLk{1C15}{15}\;\;\hLk{1C16}{16}\;\;\hLk{1C17}{17}\;\;\hLk{1C18}{18}\;\;\hLk{1C21}{21}\;\;\hLk{1C22}{22}\;\;\hLk{1C23}{23}\;\;\hLk{1C24}{24}}{\nLineDB\qquad[1]: 7, 8, 9, 15, 16, 17, 18, 11; [2]: 12, 13; [3]:21, 23, 22, 24.}
+
+
+\ProblemN{\hypertarget{1C7}{7}}{
 	\TextN{Give a nontrivial example of $U\subseteq\Rbb^2,$}
 	\TextN{$U$ is closed under taking add invs and under add, but $U$ is not a subsp of $\Rbb^2.$}
 }Let $U=\Zbb^2,(\Zbb^*)^2$, $(\Qbb^*)^2,\Qbb^2\backslash\left\{0\right\}$, or $\Rbb^2\backslash\left\{0\right\}$.\vspace{6pt}\par
-\ProblemN{8}{
+\ProblemN{\hypertarget{1C8}{8}}{
 	\TextN{Give a nontrivial example of $U\subseteq\Rbb^2,$}
 	\TextN{$U$ is closed under scalar multi, but $U$ is not a subsp of $\Rbb^2$.}
 }Let $U=\left\{(x,y)\in\Rbb^2:x=0\vee y=0\right\}.$\par
 \ProblemEnding\par
 
-\ProblemN{9}{
+\ProblemN{\hypertarget{1C9}{9}}{
 	\TextN{A function $f:\Rbb\rightarrow\Rbb$ is called periodic if $\,\exists\,p\in\Nbp,f(x)=f(x+p)$ for all $x\in\Rbb.$}
 	\TextN{Is the set of periodic functions from $\Rbb$ to $\Rbb$ a subsp of $\Rbb^\Rbb$ ? Explain.}
 }Denote the set by $S$.\par\quad
@@ -350,13 +363,13 @@ $\MathRightBrace{r}{
 \ProblemEnding\par\vspace{10pt}
 
 \BulletPoint \,\hspace{1pt}{\timessl\Large Suppose $U,W,V_1,V_2,V_3$ are subsps of $V.$}\par
-\Onumber{15}\,\, \centerline{\large\timesnr$U+U\ni u+w\in U.$\qquad\qquad\!}$\hfill\square$\par
-\Onumber{16}\,\, \centerline{\large\timesnr$U+W\ni u+w=w+u\in W+U.$}$\hfill\square$\par
-\Onumber{17}\,\, \centerline{\large\timesnr$(V_1+V_2)+V_3\ni(v_1+v_2)+v_3=v_1+(v_2+v_3)\in V_1+(V_2+V_3).$}$\hfill\square$\par
+\Onumber{\hypertarget{1C15}{15}}\,\, \centerline{\large\timesnr$U+U\ni u+w\in U.$\qquad\qquad\!}$\hfill\square$\par
+\Onumber{\hypertarget{1C16}{16}}\,\, \centerline{\large\timesnr$U+W\ni u+w=w+u\in W+U.$}$\hfill\square$\par
+\Onumber{\hypertarget{1C17}{17}}\,\, \centerline{\large\timesnr$(V_1+V_2)+V_3\ni(v_1+v_2)+v_3=v_1+(v_2+v_3)\in V_1+(V_2+V_3).$}$\hfill\square$\par
 \ProblemEnding\par
 
 
-\ProblemN{18}{
+\ProblemN{\hypertarget{1C18}{18}}{
 	\TextNL{Does the add on the subsps of $V$ have an add identity? Which subsps have add invs?}
 }\par\quad
 (a) Suppose $\Omega$ is the additive identity.\par\quad\Ha
@@ -365,7 +378,7 @@ For any subsp $U$ of $V$. $\Omega\subseteq U+\Omega=U\Rightarrow\Omega\subseteq 
 Note that $U+W\supseteq U,W\Rightarrow \Omega\supseteq U,W$. Thus $U=W=\Omega=\{0\}.\hfill\square$\par
 \ProblemEnding\par
 
-\ProblemN{11}{
+\ProblemN{\hypertarget{1C11}{11}}{
 	\TextNL{Prove that the intersection of every collection of subsps of $V$ is a subsp of $V$.}
 }Suppose $\left\{U_{\alpha}\right\}_{\alpha\in\Gamma}$ is a collection of subsps of $V$; here $\Gamma$ is an arbitrary index set.\par\quad
 We show that $\bigcap_{\alpha\in\Gamma}U_\alpha,$ which equals the set of vecs that are in $U_\alpha$ for each $\alpha\in\Gamma$, is a subsp of $V$.\par\vspace{6pt}\,
@@ -377,7 +390,7 @@ $\end{array}$\par\vspace{6pt}\quad
 Thus $\bigcap_{\alpha\in\Gamma}U_\alpha$ is nonempty subset of $V$ that is closed under add and scalar multi.$\hfill\square$\par
 \ProblemEnding\par
 
-\ProblemN{12}{
+\ProblemN{\hypertarget{1C12}{12}}{
 	\TextNL{Suppose $U,W$ are subsps of \,$V.$ Prove that $U\cup W$ is a subsp of \,$V\Longleftrightarrow U\subseteq W$ or $W\subseteq U$.}
 }\par\quad
 (a) Suppose $U\subseteq W$. Then $U\cup W=W$ is a subsp of \,$V$.\par\quad
@@ -390,7 +403,7 @@ $}\Rightarrow U\cup W=U$ or $W.$ Contradicts!\par\vspace{6pt}\quad\Hb
 Thus $U\subseteq W$ and $U\supseteq W.\hfill\square$\par
 \ProblemEnding\par
 
-\ProblemN{13}{
+\ProblemN{\hypertarget{1C13}{13}}{
 	\TextNL{\dbsp Prove that the union of three subsps of \,$V$ is a subsp of \,$V$}
 	\TextNL{\dbsp if and only if one of the subsps contains the other two.}
 	{\timessl\normalsize\dbsp This exercise is not true if we replace {\timesbf F} with a field containing only two elements.}\par\quad
@@ -403,20 +416,18 @@ By distinct we notice that $A\cup B\cup C=(A\cup B)\cup(B\cup C)=(A\cup C)\cup(B
 Also note that, if $U\cup W=V$ is a vecsp, then in general $U$ and $W$ are not subsps of $V.$\par\quad\Hb
 Hence this literal trick is invalid.\par\quad\Hb
 (I) \dbsp If any $U_j$ is contained in the union of the other two, say $U_1\subseteq U_2\cup U_3,$ then $\mathcal{U}=U_2\cup U_3.$\par\quad\Hb\HI
-\dbsp By applying Problem (12) we conclude that one $U_j$ contains the other two. Thus we are done.
-\par\quad\Hb\EndI
-(II) \dbsp Assume that no $U_j$ is contained in the union of the other two,\par\quad\Hb\HII\hspace{46pt} and no $U_j$ contains the union of the other two.\par\quad\Hb\HII
-\dbsp Say $U_1\not\subseteq U_2\cup U_3$ and $U_1\not\supseteq U_2\cup U_3.$
-\par\quad\Hb\HII
-$\exists\,u\in U_1\wedge u\not\in U_2\cup U_3;\,\,\,v\in U_2\cup U_3\wedge v\not\in U_1.$ Let $W=\left\{v+\lambda u:\lambda\in\Fbb\right\}\subseteq\mathcal{U}.$\par\quad\Hb\HII
-Note that $W\cap U_1=\varnothing,$ for if $v+\lambda u\in U_1$ then $v+\lambda u-\lambda u=v\in U_1$ while $v\not\in U_1.$\par\quad\Hb\HII
-又 $W\subseteq U_1\cup U_2\cup U_3.$ Thus $W\subseteq U_2\cup U_3.$\par\quad\Hb\HII
-$\forall v+\lambda u\in W,\,\exists\,i\in\{2,3\},v+\lambda u\in U_i.$\par\quad\Hb\HII
-Because $U_2,U_3$ are subsps and hence have at least one element.\par\quad\Hb\HII
-If $U_2=U_3,$ then $\mathcal{U}=U_1\cup U_2$ and by Problem (12) we are done.\par\quad\Hb\HII
-Otherwise, $\,\exists\,\lambda,\mu\in\Fbb$ with $\lambda\neq\mu$ such that $v+\lambda u,v+\mu u\in U_i$ for some $i\in\{2,3\}.$\par\quad\Hb\HII
-Then $u\in U_i$ while $u\not\in U_2\cup U_3.$ Contradicts.\large$\hfill\square$\par
-\ProblemEnding\par
+\dbsp By applying Problem (12) we conclude that one $U_j$ contains the other two. Thus we are done.\vspace{6pt}\par\quad\Hb\EndI
+(II) \dbsp{\Large\vspace{6pt}Assume that no $U_j$ is contained in the union of the other two,}\par\quad\Hb\HII\hspace{56pt}{\Large\vspace{6pt}and no $U_j$ contains the union of the other two.}\par\quad\Hb\HII
+\dbsp{\Large\vspace{6pt}Say $U_1\not\subseteq U_2\cup U_3$ and $U_1\not\supseteq U_2\cup U_3.$}\par\quad\Hb\HII
+{\Large\vspace{6pt}$\exists\,u\in U_1\wedge u\not\in U_2\cup U_3;\;v\in U_2\cup U_3\wedge v\not\in U_1.$ Let $W=\left\{v+\lambda u:\lambda\in\Fbb\right\}\subseteq\mathcal{U}.$}\par\quad\Hb\HII
+{\Large\vspace{6pt}Note that $W\cap U_1=\varnothing,$ for if $v+\lambda u\in U_1$ then $v+\lambda u-\lambda u=v\in U_1$.}\par\quad\Hb\HII
+{\Large\vspace{6pt}又 $W\subseteq U_1\cup U_2\cup U_3.$ Thus $W\subseteq U_2\cup U_3.$}\par\quad\Hb\HII
+{\Large\vspace{6pt}$\forall v+\lambda u\in W,\,\exists\,i\in\{2,3\},v+\lambda u\in U_i.$}\par\quad\Hb\HII
+{\Large\vspace{6pt}Because $U_2,U_3$ are subsps and hence have at least one element.}\par\quad\Hb\HII
+{\Large\vspace{6pt}If $U_2=U_3,$ then $\mathcal{U}=U_1\cup U_2$ and by Problem (12) we are done.}\par\quad\Hb\HII
+{\Large\vspace{6pt}Otherwise, $\exists$ distinct $\lambda,\mu\in\Fbb,v+\lambda u,v+\mu u\in U_i$ for some $i\in\{2,3\}.$}\par\quad\Hb\HII
+{\Large\vspace{6pt}Then $u\in U_i$ while $u\not\in U_2\cup U_3.$ Contradicts.\large$\hfill\square$}\par
+\ProblemEnding\vspace{20pt}\par
 
 %{\small $\bullet$} {\timessl\Large 
 %Suppose $U=\left\{(x,-x,2x)\in\Fbb^3:x\in\Fbb\right\}$ and $W=\left\{(x,x,2x)\in\Fbb^3:x\in\Fbb\right\}$.}\par\,\,
@@ -444,23 +455,23 @@ Then $u\in U_i$ while $u\not\in U_2\cup U_3.$ Contradicts.\large$\hfill\square$\
 Let T denote $\left\{(x,x,y,z)\in\Fbb^4:x,y,z\in\Fbb\right\}$. By def, $U+W\subseteq T.$\par\quad
 And $T\ni(x,x,y,z)\Rightarrow(0,0,y-x,y-x)+(x,x,x,-y+x+z)\in U+W$. Hence $T\subseteq U+W.\hfill\square$\par
 \ProblemEnding\par
+\pagebreak
 
-\ProblemN{21}{
+\ProblemN{\hypertarget{1C21}{21}}{
 	\TextNL{Suppose $U=\left\{(x,y,x+y,x-y,2x)\in\Fbb^5:x,y\in\Fbb\right\}$. Find a $W$ such that $\Fbb^5=U\oplus W$.}
 }\par\quad
 Let $W=\left\{(0,0,z,w,u)\in\Fbb^5:z,w,u\in\Fbb\right\}$. Then $U\cap W=\{0\}$.\par\quad
 And $\Fbb^5\ni(x,y,z,w,u)\Rightarrow(x,y,x+y,x-y,2x)+(0,0,z-x-y,w-x-y,u-2x)\in U+W.\hfill\square$\par
 \ProblemEnding\par
 
-\ProblemN{23}{
-	\TextNL{Give an example of vecsps $V_1,V_2,U$ such that $V_1\oplus U=V_2\oplus U$, but $V_1\neq V_2$.}
+\ProblemN{\hypertarget{1C23}{23}}{
+	\TextNL{Give an example of vecsps $V_1,V_2,U$ such that $V_1\oplus U=V_2\oplus U$, but $V_1\neq V_2$.\vspace{6pt}}
 }$V=\Fbb^2$,  $U=\left\{(x,x)\in\Fbb^2:x\in\Fbb\right\}$, $V_1=\left\{(x,0)\in\Fbb^2:x\in\Fbb\right\}$, $V_2=\left\{(0,x)\in\Fbb^2:x\in\Fbb\right\}$.\par
 \ProblemEnding\par
 
-\ProblemN{22}{
+\ProblemN{\hypertarget{1C22}{22}}{
 	\TextNL{Suppose $U=\left\{(x,y,x+y,x-y,2x)\in\Fbb^5:x,y\in\Fbb\right\}$.}
-	\TextNL{Find three subsps $W_1,W_2,W_3$ of $\Fbb^5$, none of which equals $\{0\}$,}
-	\TextNL{such that $\Fbb^5 = U\oplus W_1\oplus W_2\oplus W_3 $.}
+	\TextNL{Find subsps $W_1,W_2,W_3$ of $\Fbb^5$, none of which equals $\{0\}$, such that $\Fbb^5 = U\oplus W_1\oplus W_2\oplus W_3 $.}
 }\par\quad
 $(1)$ Let $W_1=\left\{(0,0,z,0,0)\in\Fbb^5:z\in\Fbb\right\}$. Then $W_1\cap U=\{0\}.$\par\qquad\,\,
 Let $U_1=U\oplus W_1$. Then $U_1=\left\{(x,y,z,x-y,2x)\in\Fbb^5:x,y,z\in\Fbb\right\}$. ( Check it! )\par\quad
@@ -471,19 +482,18 @@ Let $U_3=U_2\oplus W_3$. Then $U_3=\left\{(x,y,z,w,u)\in\Fbb^5:x,y,z,w,u\in\Fbb\
 Thus $\Fbb^5=\left((U\oplus W_1)\oplus W_2\right)\oplus W_3.\hfill\square$\par
 \ProblemEnding\par
 
-\ProblemN{24}{
-	\TextNL{Let $V_E=\left\{\,f\in\Rbb^{\Rbb}:f(x)=f(-x)\right\},V_O=\left\{\,f\in\Rbb^{\Rbb}:-f(x)=f(-x)\right\}.$}
-	\TextNL{Show that $V_E\oplus V_O=\Rbb^\Rbb$.}
+\ProblemN{\hypertarget{1C24}{24}}{
+	\TextNL{Let $V_E=\left\{\,f\in\Rbb^{\Rbb}:\text{f is even}\right\},V_O=\left\{\,f\in\Rbb^{\Rbb}:\text{f is odd}\right\}.$ Show that $V_E\oplus V_O=\Rbb^\Rbb$.}
 }\par\quad
-(a) { $V_E\cap V_O=\left\{\,f\in\Rbb^{\Rbb}:f(x)=f(-x)=-f(-x)\right\}=\{0\}.$}\par\vspace{6pt}\quad
+(a) { $V_E\cap V_O=\left\{\,f\in\Rbb^{\Rbb}:f(x)=f(-x)=-f(-x)\right\}=\{0\}.$}\par\vspace{12pt}\quad
 (b){$\MathRightBrace{r}{f_e\in V_E\Longleftrightarrow f_e(x)=f_e(-x)\Longleftarrow$  let $f_e(x)=\displaystyle\frac{g(x)+g(-x)}{2}\vspace{4pt}\\ f_o\in V_O\Longleftrightarrow f_o(x)=-f_o(-x)\Longleftarrow$ let $f_o(x)=\displaystyle\frac{g(x)-g(-x)}{2}}\Rightarrow \forall g\in\Rbb^\Rbb,g(x)=f_e(x)+f_o(x).\hfill\square$}\vspace{6pt}\par
 \ProblemEnding\par
 \ChapterEnding
 
-\vfill
-\ChapterDecl{Ch2A}{2$\cdot$A}
-$\\[10pt] $
-\ProblemN{2}{
+\ChapterDecl{Ch2A}{2$\cdot$A}{}\orMode{\qquad\hLk{2A1}{1}\;\;\hLk{2A2}{2}\;\;\hLk{2A6}{6}\;\;\hLk{2A10}{10}\;\;\hLk{2A11}{11}\;\;\hLk{2A14}{14}\;\;\hLk{2A16}{16}\;\;\hLk{2A17}{17}\;\;\hLk{2A4e314}{4E 3,14}}{\qquad[1]: 2; [2]: 1, 6, (4E 3, 14), 10; [3]: 11, 14, 16, 17.}
+
+
+\ProblemN{\hypertarget{2A2}{2}}{
 	(a) \TextN{[P]\hspace{17pt}{\; A list $(v)$ of length $1$ in $V$ is linely inde $\Longleftrightarrow v\neq 0.$} \hfill[Q]}
 	(b) \TextN{[P]{\; A list $(v,w)$ of length $2$ in $V$ is linely inde $\Longleftrightarrow\forall\lambda,\mu\in\Fbb,v\neq \lambda w,w\neq \mu v.$} \hfill[Q]}
 }\par\quad
@@ -501,7 +511,7 @@ $Q\overset{2}{\Rightarrow} P:$ no scalar multi $\Rightarrow$ if $av+bw=0,$ then 
 \vspace{20pt}
 \clearpage
 
-\ProblemN{1}{
+\ProblemN{\hypertarget{2A1}{1}}{
 	\TextN{Prove that [P] $(v_1,v_2,v_3,v_4)$ spans $V\Longleftrightarrow(v_1-v_2,v_2-v_3,v_3-v_4,v_4)$ also spans V [Q].}
 }\par\quad
 Notice that $V=\Spn(v_1,\dots,v_n)\Longleftrightarrow\forall v\in V,\,\exists\,a_1,\dots,a_n\in\Fbb,v=a_1v_1+\dots+a_nv_n.$\par\quad
@@ -511,7 +521,7 @@ Now we can let $b_i=\sum_{r=1}^i a_r$ if we are to prove $Q$ with $P$ already as
 or let $a_i=b_i-b_{i-1}$ with $b_{-1}=0,$ if we are to prove $P$ with $Q$ already assumed.$\hfill\square$\par
 \ProblemEnding\par
 
-\ProblemN{6}{
+\ProblemN{\hypertarget{2A6}{6}}{
 	\TextN{Prove that [P] $(v_1,v_2,v_3,v_4)$ is linely inde} \TextN{\hspace{37pt}$\Longleftrightarrow$ [Q] $(v_1-v_2,v_2-v_3,v_3-v_4,v_4)$ is linely inde.}
 }\vspace{0pt}\AlignEq{}{\qquad\qquad\qquad P\Rightarrow Q:\;&a_1(v_1-v_2)+a_2(v_2-v_3)+a_3(v_3-v_4)+a_4 v_4=0\hspace{154pt}\\\Rightarrow\;&a_1 v_1+(a_2-a_1)v_2+(a_3-a_2)v_3+(a_4-a_3)v_4=0\\\Rightarrow&\;a_1=a_2-a_1=a_3-a_2=a_4-a_3=0}\par\quad
 \vspace{-10pt}
@@ -528,7 +538,7 @@ or let $a_i=b_i-b_{i-1}$ with $b_{-1}=0,$ if we are to prove $P$ with $Q$ alread
 %\ProblemEnding\par
 
 \ProblemB{
-	\TextB{Suppose $(v_1,\dots,v_m)$ is a list of vecs in $V$. For $k\in\{1,\dots,m\}$, let $w_k=v_1+\dots+v_k$.}
+	\hypertarget{2A4e314}{}\TextB{Suppose $(v_1,\dots,v_m)$ is a list of vecs in $V$. For $k\in\{1,\dots,m\}$, let $w_k=v_1+\dots+v_k$.}
 	(a) \TextB{Show that $\Spn(v_1,\dots,v_m)=\Spn(w_1,\dots,w_m)$.}
 	(b) \TextB{Show that [P] $(v_1,\dots,v_m)$ is linely inde $\Longleftrightarrow$ $(w_1,\dots,w_m)$ is linely inde [Q].}
 }\par\quad
@@ -545,7 +555,7 @@ By [2.21](b), a list of length $(m-1)$ spans $W,$ then by [2.23],\par\quad\Hb
 $(w_1,\dots,w_m)$ linely dep $\Rightarrow(v_1,\dots,v_m)$ linely dep. Conversely it is true as well.$\hfill\square$\par
 \ProblemEnding\par
 
-\ProblemN{10}{
+\ProblemN{\hypertarget{2A10}{10}}{
 	\TextNL{Suppose $(v_1,\dots,v_m)$ is linely inde in $V$ and $w\in V$.}
 	\TextNL{Prove that if $(v_1+w,\dots,v_m+w)$ is linely depe, then $w\in\Spn(v_1,\dots,v_m)$.}
 }\par\quad
@@ -561,13 +571,13 @@ Where $\lambda=1-(a_1+\dots+a_{j-1}).$ Note that $\lambda\neq 0,$ for if not, $v
 Now $w=\lambda^{-1}(a_1 v_1+\dots+a_{j-1}v_{j-1}-v_j)\Rightarrow w\in\Spn(v_1,\dots,v_m).\hfill\square$\vspace{-6pt}\par
 \ProblemEnding\par
 
-\ProblemN{11}{
+\ProblemN{\hypertarget{2A11}{11}}{
 	\TextNL{Suppose $(v_1,\dots,v_m)$ is linely inde in $V$ and $w\in V$.}
 	\TextNL{Show that [P] $(v_1,\dots,v_m,w)$ is linely inde $\Longleftrightarrow w\not\in\Spn(v_1,\dots,v_m)$ [Q].\vspace{8pt}}
 }\hspace{-7pt}$\begin{array}{l}{}^\neg Q\Rightarrow{}^\neg P:$ Suppose $w\in\Spn(v_1,\dots,v_m)$. Then $(v_1,\dots,v_m,w)$ is linely depe.$\\{}^\neg P\Rightarrow{}^\neg Q:$ Suppose $(v_1,\dots,v_m,w)$ is linely dep. Then by [2.21] $w\in\Spn(v_1,\dots,v_m).\end{array}\hfill\square$\par
 \ProblemEnding\par
 
-\ProblemN{14}{
+\ProblemN{\hypertarget{2A14}{14}}{
 	\TextNL{Prove that [P] $V$ is infinite-dim $\Longleftrightarrow[Q]\left|\hspace{-6pt}\begin{array}{l}$ there is a sequence $(v_1,v_2,\dots)$ in $V$ such that$\\[-8pt]$ $(v_1,\dots,v_m)$ is linely inde for each $m\in\Nbp.\end{array}\right.$}
 }\par\quad
 $P\Rightarrow Q:\;$ Suppose $V$ is infinite-dim, so that no list spans $V$.\par\quad\hspace{44pt}
@@ -589,7 +599,7 @@ Hence no list spans $V$. Thus $V$ is infinite-dim.$\hfill\square$\par
 %Suppose $\Fbb^\infty$ is finite-dim and $\Spn(e_1,\dots,e_m)=V$. But $\exists\,e_{m+1}\not\in\Spn(e_1,\dots,e_m)$. Contradicts. $\hfill\square$\par
 %\ProblemEnding\par
 
-\ProblemN{16}{
+\ProblemN{\hypertarget{2A16}{16}}{
 	\TextNL{Prove that the vecsp of all continuous functions in $\Rbb^{[0,1]}$ is infinite-dim.}
 }Denote the vecsp by $U$.\par\quad
 %Note that for each $m\in\Nbp$, $(1,x,\dots,x^m)$ is linely inde in $\PoR{}$.\par\quad
@@ -602,7 +612,7 @@ Then for any $m$, $f_1\left(\displaystyle\frac{1}{m}\right)=\dots=f_m\left(\disp
 Hence $f_{m+1}\not\in\Spn(f_1,\dots,f_m)$. Thus by Problem (14), $U$ is infinite-dim.\par
 \ProblemEnding\par
 
-\ProblemN{17}{
+\ProblemN{\hypertarget{2A17}{17}}{
 	\TextNL{Suppose $p_0,p_1,\dots,p_m\in\PoF{m}$ such that $p_k(2)=0$ for each $k\in\{0,\dots,m\}$.}
 	\TextNL{Prove that $(p_0,p_1,\dots,p_m)$ is not linely inde in $\PoF{m}$.}
 }\par\quad
@@ -618,9 +628,10 @@ thus by [2.23] trivially, $(p_0,p_1,\dots,p_m)$ spans $\PoF{m}$. Contradicts.$\h
 \ProblemEnding\par
 \ChapterEnding
 
-\ChapterDecl{Ch2B}{2$\cdot$B}
+\ChapterDecl{Ch2B}{2$\cdot$B}{}\orMode{\qquad\hLk{2B1}{1}\;\;\hLk{2B7}{7}\;\;\hLk{2B8}{8}\;\;\hLk{2B4e5}{4E 5,}\;\;\hLk{2B4e9}{\!9}}{\qquad[1]: 7, 1, (4E 9,5), 8.}
 
-\ProblemN{7}{
+
+\ProblemN{\hypertarget{2B7}{7}}{
 	\TextN{Prove or give a counterexample: If $v_1,v_2,v_3,v_4$ is a basis of \,$V$ and $U$ is a subsp of \,$V$}
 	\TextN{such that $v_1,v_2\in U$ and $v_3\not\in U$ and $v_4\not\in U$, then $(v_1,v_2)$ is a basis of U.}
 }A counterexample:\par\quad
@@ -633,7 +644,7 @@ $“\complement_V U \cap \{0\}”$ is supposed to be a subsp $W$ such that $V=U\
 But if we let $u\in U\backslash\{0\}$ and $w\in W\backslash\{0\}$, then $\MathRightBrace{l}{w\in\complement_V U \cap \{0\}\\ u\pm w\in\complement_V U \cap \{0\} }\Rightarrow u\in\complement_V U \cap \{0\}.$ Contradicts.\vspace{4pt}\TextB{}
 To fix this, {\Large denote the set $\left\{W_1,W_2\dots\right\}$ by $\mathcal{S}_V U$,} {\small where for each $W_i,V=U\oplus W_i$. See also in (1.C.23).}\par\ProblemEnding\par
 
-\ProblemN{1}{
+\ProblemN{\hypertarget{2B1}{1}}{
 	\TextN{Find all vecsps that have exactly one basis.}
 }The trivial vecsp $\{0\}$ will do. Indeed, the only basis of $\{0\}$ is the empty list.\par\quad
 Now consider a field containing only the add identity $0$ and the multi identity $1$,\par\quad
@@ -655,7 +666,7 @@ By {\timessc some theories or facts} given in the course of Elementary Abstract 
 %\ProblemEnding\par
 
 \ProblemB{
-	\TextB{Suppose $(v_1,\dots,v_m)$ is a list of vecs in $V$. For $k\in\{1,\dots,m\}$, let $w_k=v_1+\dots+v_k.$}
+	\hypertarget{2B4e9}{}\TextB{Suppose $(v_1,\dots,v_m)$ is a list of vecs in $V$. For $k\in\{1,\dots,m\}$, let $w_k=v_1+\dots+v_k.$}
 	\TextB{Show that [P] $(v_1,\dots,v_m)$ is a basis of $V\Longleftrightarrow$ [Q] $(w_1,\dots,w_m)$ is a basis of $V.$}
 }\Notice\;that $(u_1,\dots,u_n)$ is a basis of $U$ $\Longleftrightarrow\forall u\in U,\,\exists\,!\,a_i\in\Fbb,u=a_1 u_1+\dots+a_n u_n.$\par\quad
 $P\Rightarrow Q:\;\forall v\in V,\,\exists\,!\,a_i\in\Fbb,\;v=a_1 v_1+\dots+a_m v_m\Rightarrow v=b_1 w_1+\dots+b_m v_m,\,\exists\,!\,b_1=a_1,b_k=\sum\limits_{j=1}^k(-1)^{k-j}a_j.$\vspace{-4pt}\par\quad
@@ -663,14 +674,14 @@ $Q\Rightarrow P:\;\forall v\in V,\,\exists\,!\,b_i\in\Fbb,\;v=b_1w_1+\dots+b_mw_
 \ProblemEnding\par
 
 \ProblemB{
-	\TextB{Suppose $V$ is finite-dim and $U$, $W$ are subsps of \,$V$ such that $V=U+W$.}
+	\hypertarget{2B4e5}{}\TextB{Suppose $V$ is finite-dim and $U$, $W$ are subsps of \,$V$ such that $V=U+W$.}
 	\TextB{Prove that there exists a basis of \,$V$ consisting of vecs in $U\cup W$.}
 }Let $(u_1,\dots,u_m)$ and $(w_1,\dots,w_n)$ be bases of $U$ and $W$ respectively.\par\quad
 Then $V=\Spn(u_1,\dots,u_m)+\Spn(w_1,\dots,w_n)=\Spn(u_1,\dots,u_m,w_1,\dots,w_n)$.\par\quad
 Hence, by [2.31], we get a basis of \,$V$ consisting of vecs in $U$ or $W.\hfill\square$\par
 \ProblemEnding\par
 
-\ProblemN{8}{
+\ProblemN{\hypertarget{2B8}{8}}{
 	\TextN{Suppose $U$ and $W$ are subsps of \,$V$ such that $V=U\oplus W$.}
 	\TextN{Suppose $(u_1,\dots,u_m)$ is a basis of $U$ and $(w_1,\dots,w_n)$ is a basis of $W$.}
 	\TextN{Prove that $(u_1,\dots,u_m,w_1,\dots,w_n)$ is a basis of \,$V$.}
@@ -697,9 +708,10 @@ The key point is, how can we guarantee that such a $“$list$”$ exists?\par
 \ProblemEnding\par
 \ChapterEnding
 
-\ChapterDecl{Ch2C}{2$\cdot$C}
+\ChapterDecl{Ch2C}{2$\cdot$C}{}\orMode{\qquad\hLk{2C1}{1}\;\;\hLk{2C7}{7}\;\;\hLk{2C9}{9}\;\;\hLk{2C10}{10}\;\;\hLk{2C14}{14,\,16}\;\;\hLk{2C15}{15}\;\;\hLk{2C17}{17}\;\;\hLk{2C4e10}{4E 10,}\;\;\hLk{2C4e14}{14,}\;\;\hLk{2C4e15}{15,}\;\;\hLk{2C4e16}{16}}{\nLineDB\qquad[1]: 1, 9, 10; [2]: (4E 10); [3]: 7, (4E 14, 15, 16); [4]: 14, 17; [5]: 15.}
 
-\ProblemNnosolus{1}{
+
+\ProblemNnosolus{\hypertarget{2C1}{1}}{
 	( \COROLLARY\;for [2.38,39] )\TextN{}
 	\vspace{-6pt}\TextN{Suppose $U$ is a subsp of \,$V$ such that $\dim V=\dim U$. Then $V=U$.}
 }
@@ -727,7 +739,7 @@ The key point is, how can we guarantee that such a $“$list$”$ exists?\par
 %\ProblemEnding\par
 
 
-\ProblemN{9}{
+\ProblemN{\hypertarget{2C9}{9}}{
 		\TextN{Suppose $(v_1,\dots,v_m)$ is linely inde in $V$ and $w\in V$.}
 		\TextN{Prove that $\dim\Spn(v_1+w,\dots,v_m+w)\geq m-1$.}
 }Using the result of Problem (10) and (11) in 2.A.\par\quad
@@ -737,7 +749,7 @@ $(v_1,\dots,v_m)$ linely inde $\Rightarrow$ $(v_1,v_2-v_1,\dots,v_m-v_1)$ linely
 Hence $m\geq\dim\Spn(v_1+w,\dots,v_m+w)\geq m-1.\hfill\square$\par
 \ProblemEnding\par
 
-\ProblemN{10}{
+\ProblemN{\hypertarget{2C10}{10}}{
 	\TextNL{Suppose $m$ is a positive integer and $p_0,p_1,\dots,p_m\in\PoF{}$ are such that}
 	\TextNL{each $p_k$ has degree $k$. Prove that $(p_0,p_1,\dots,p_m)$ is a basis of $\PoF{m}$.}
 }\par\quad
@@ -759,7 +771,7 @@ Hence $m\geq\dim\Spn(v_1+w,\dots,v_m+w)\geq m-1.\hfill\square$\par
 {\Large Now $L=a_{k-1}p_{k-1}(x)+\dots+a_0p_0(x).\hfill\square$}\par
 \ProblemEnding\par
 
-\ProblemBnoor{({\normalsize 4E 2.C.10})}{
+\ProblemBnoor{(\hypertarget{2C4e10}{\normalsize 4E 2.C.10})}{
 	\TextB{Suppose $m$ is a positive integer. For $0\leq k\leq m$, let $p_k(x)=x^k(1-x)^{m-k}$.}
 	\TextB{Show that $(p_0,\dots,p_m)$ is a basis of $\PoF{}$.}
 	\TextB{\small The basis in this exercise leads to what are called Bernstein polynomials. You can do a web search to learn how}\hspace{0.5pt}
@@ -791,7 +803,7 @@ Since $S(m)\Rightarrow S(m+2)$ for all $m\in\Nbp.$ We have $\MathLeftBrace{l}{S(
 Hence $S(m)$ holds for all $m\in\Nbp.\hfill\square$\par
 \ProblemEnding\par
 
-\ProblemN{7}{
+\ProblemN{\hypertarget{2C7}{7}}{
 	(a) \TextN{Let $U=\left\{p\in\PoF{4}:p(2)=p(5)=p(6)\right\}$. Find a basis of $U$.}
 	(b) \TextN{Extend the basis in $(a)$ to a basis of $\PoF{4}$.}
 	(c) \TextN{Find a subsp $W$ of $\PoF{4}$ such that $\PoF{4}=U\oplus W$.}
@@ -822,14 +834,14 @@ And $\dim(V_2\cap V_3)=\dim V_2+\dim V_3-\dim(V_2+V_3).$\par
 %\AlignEq{}{\dim(V_1\cap V_2\cap V_3)=\,&\dim V_1+\dim V_2+\dim V_3-\frac{\dim(V_2+V_3)+\dim(V_1+V_3)+\dim(V_1+V_2)}{3}\\\,&-\displaystyle\frac{\dim(V_1+(V_2\cap V_3))+\dim(V_2+(V_1\cap V_3))+\dim(V_3+(V_1\cap V_2))}{3}.}\par
 \ProblemEnding\par
 
-\ProblemBnoor{({\normalsize 4E 2.C.14})}{
+\ProblemBnoor{\hypertarget{2C4e14}{({\normalsize 4E 2.C.14})}}{
 	\TextB{Suppose V is a 10-dim vecsp and $V_1,V_2,V_3$ are subsps of \,$V$ with}
 	\TextB{$\dim V_1 = \dim V_2 = \dim V_3 = 7$. Prove that $V_1\cap V_2\cap V_3\neq\{0\}$.}
 }%{\normalsize$\MathRightBrace{l}{\dim V_1+\dim V_2 > \dim V\geq\dim V-\dim(V_1\cap V_2)\Rightarrow V_1\cap V_2\neq\{0\}\\\dim V_2+\dim V_3 > \dim V\geq\dim V-\dim(V_1\cap V_2)\Rightarrow V_2\cap V_3\neq\{0\}\\\dim V_1+\dim V_3 > \dim V\geq\dim V-\dim(V_1\cap V_2)\Rightarrow V_1\cap V_3\neq\{0\}}\Rightarrow V_1\cap V_2\cap V_3\neq\{0\}.\hfill\square$}\par\vspace{6pt}
 By \TIPS, $\dim(V_1\cap V_2\cap V_3)\geq\dim V_1+\dim V_2+\dim V_3-2\dim V>0.\hfill\square$\par
 \ProblemEnding\par
 
-\ProblemBnoor{({\normalsize 4E 2.C.15})}{
+\ProblemBnoor{\hypertarget{2C4e15}{({\normalsize 4E 2.C.15})}}{
 	\TextB{Suppose $V$ is finite-dim and $V_1,V_2,V_3$ are subsps of $V$ with}
 	\TextB{$\dim V_1+\dim V_2+\dim V_3 > 2\dim V$. Prove that $V_1\cap V_2\cap V_3\neq\{0\}$.}
 }%{\normalsize $\MathRightBrace{l}{\dim V_1+\dim V_2 > 2\dim V-\dim V_3\geq\dim V\Rightarrow V_1\cap V_2\neq\{0\}\\\dim V_2+\dim V_3 > 2\dim V-\dim V_1\geq\dim V\Rightarrow V_2\cap V_3\neq\{0\}\\\dim V_1+\dim V_3 > 2\dim V-\dim V_2\geq\dim V\Rightarrow V_1\cap V_3\neq\{0\}}\Rightarrow V_1\cap V_2\cap V_3\neq\{0\}.\hfill\square$}\par\vspace{6pt}
@@ -845,7 +857,7 @@ By \TIPS, $\dim(V_1\cap V_2\cap V_3)>2\dim V-\dim(V_2+V_3)-\dim(V_1+(V_2\cap V_3
 %{But if $\dim V_i\geq\left\lfloor{\frac{\dim V}{2}}\right\rfloor+2,$ then $s$.}\par
 %\ProblemEnding\par
 
-\ProblemBnoor{({\normalsize 4E 2.C.16})\TextB{}}{
+\ProblemBnoor{\hypertarget{2C4e16}{({\normalsize 4E 2.C.16})}\TextB{}}{
 	\TextB{Suppose $V$ is finite-dim and $U$ is a subsp of \,$V$ with $U\neq V$. Let $n=\dim V,m=\dim U$.}
 	\TextB{Prove that there exist $(n-m)$ subsps of \,$V$, say $U_1,\dots,U_{n-m}$, each of dimension $(n-1)$,}
 	\TextB{such that $\bigcap\limits_{i=1}^{n-m}U_i=U$.}
@@ -863,7 +875,7 @@ $}\Rightarrow\dim U_i=6-1,\,\,i=\underbrace{1,2,3}_{6-3=3}.$}
 \hfill {$\square$}\vspace{6pt}
 \ProblemEnding\par
 
-\ProblemN{14}{
+\ProblemN{\hypertarget{2C14}{14}}{
 	\TextNL{Suppose that $V_1,\dots,V_m$ are finite-dim subsps of \,$V$.}
 	\TextNL{Prove that $V_1+\dots+V_m$ is finite-dim and $\dim(V_1+\dots+V_m)\leq\dim V_1+\dots+\dim V_m$.}
 }\par\quad
@@ -878,7 +890,7 @@ $\Longleftrightarrow\dim\Spn(\mathcal{E}_1\cup\dots\cup\mathcal{E}_m)=\card\math
 $\Longleftrightarrow\dim(V_1+\dots+V_m)=\dim V_1+\dots+\dim V_m.\hfill\square$\par
 \ProblemEnding\par
 
-\ProblemN{17}{
+\ProblemN{\hypertarget{2C17}{17}}{
 	\TextNL{Suppose $V_1,V_2,V_3$ are subsps of a finite-dim vecsp, then}
 	\TextNL{{\large$\dim(V_1+V_2+V_3)=\dim V_1+\dim V_2+\dim V_3$\par\rightline{$-\dim(V_1\cap V_2)-\dim(V_1\cap V_3)-\dim(V_2\cap V_3)+\dim(V_1\cap V_2\cap V_3)$.\qquad}}}
 	\TextNL{Explain why you might think and prove the formula above or give a counterexample.}
@@ -904,7 +916,7 @@ For example, $X=\left\{(x,0)\in\Rbb^2:x\in\Rbb\right\},Y=\left\{(0,y)\in\Rbb^2:y
 Notice that $(v_1,\dots,v_n)$ is a spanning list of $\Spn(v_1,\dots,v_n)$ of length $n=\dim\Spn(v_1,\dots,v_n).\hfill\square$\par
 \ProblemEnding\par
 
-\ProblemN{15}{
+\ProblemN{\hypertarget{2C15}{15}}{
 	\TextNL{Suppose $V$ is finite-dim and $\dim V=n\geq 1.$}
 	\TextNL{Prove that $\exists$ one-dim subsps $V_1,\dots,V_n$ of $V$ such that $V=V_1\oplus \dots\oplus V_n.$}
 }\par\quad
@@ -1053,20 +1065,19 @@ Thus $(T_{x,1},\dots,T_{x,m})$ is a linely inde list in $\Lm(V,W)$ for any $x$ a
 
 \ProblemN{13}{
 	\TextNL{Suppose $(v_1,\dots,v_m)$ is linely depe in $V$ and $W\neq\{0\}$.}
-	\TextNL{Prove that there exists a list $w_1,\dots,w_m\in W$}
-	\TextNL{such that $\not\exists\,T\in\Lm(V, W),Tv_k=w_k,\forall k = 1,\dots,m$.}
+	\TextNL{Prove that $\exists\,w_1,\dots,w_m\in W,\not\exists\,T\in\Lm(V, W)$ such that $Tv_k=w_k,\forall k = 1,\dots,m$.}
 }\par\quad
 We prove by contradiction. By linear dependence lemma, $\,\,\exists\,\,j\in\{1,\dots,m\}$ such that $v_j\in\Spn(v_1,\dots,v_{j-1})$.\par\quad
 Fix $j$. Let $w_j\neq 0$, while $w_1=\dots=w_{j-1}=w_{j+1}=w_m=0.$\par\quad
 Define $T$ by $Tv_k=w_k$ for all $k$. Suppose $a_1 v_1+\dots+a_m v_m=0$ ( where $a_j\neq 0$ ).\par\quad
-Then $T(a_1 v_1+\dots+a_m v_m)=0=a_1 w_1+\dots+a_m w_m=a_j w_j$ while $a_j\neq 0$ and $w_j\neq 0.$ Contradicts.$\hfill\square$\par\vspace{6pt}\quad
+Then $T(a_1 v_1+\dots+a_m v_m)=0=a_1 w_1+\dots+a_m w_m=a_j w_j$ while $a_j\neq 0$ and $w_j\neq 0.$ Contradicts.$\hfill\square$\par\vspace{12pt}\quad
 \Or {\Large\vspace{6pt}\,\dbsp We prove the contrapositive:}\par\qquad\quad
-{\Large\vspace{6pt}\dbsp Suppose for any list $(w_1,\dots,w_m)\in W,\,\exists\,T\in\Lm(V,W),Tv_k=w_k$  for each $w_k.$}\par\qquad\quad
-{\Large\vspace{6pt}\dbsp (We need to) Prove that $(v_1,\dots,v_n)$ is linely inde.}\par\quad
+{\Large\vspace{6pt}\dbsp Suppose $\forall w_1,\dots,w_m\in W,\,\exists\,T\in\Lm(V,W),Tv_k=w_k$  for each $w_k.$}\par\qquad\quad
+{\Large\vspace{12pt}\dbsp (We need to) Prove that $(v_1,\dots,v_n)$ is linely inde.}\par\quad
 {\Large\vspace{6pt}Suppose $\,\exists\,a_i\in\Fbb,a_1 v_1+\dots+a_n v_n=0.$ Choose a nonzero $w\in W.$}\par\quad
 {\Large\vspace{10pt}By assumption, for the list $(\overline{a_1}w,\dots,\overline{a_m}w),$ $\,\exists\,T\in\Lm(V,W),Tv_k=\overline{a_k}w$ for each $v_k.$}\par\quad
 {\Large\vspace{10pt}Now we have $\displaystyle 0=T(\sum\limits_{k=1}^m a_k v_k)=\sum\limits_{k=1}^m a_k Tv_k=\sum\limits_{k=1}^m a_k\overline{a_k}w=(\sum\limits_{k=1}^m \left|a_k\right|^2)w.$}\par\quad
-{\Large Then $\sum_{k=1}^m\left|a_k\right|^2=0\Rightarrow a_k=0$ for each $k.$ This contradicts the linely dep of $(v_1,\dots,v_n).\hfill\square$}\par
+{\Large Then $\sum_{k=1}^m\left|a_k\right|^2=0\Rightarrow a_k=0$ for each $k.$  $(v_1,\dots,v_n).\hfill\square$}\par
 \ProblemEnding\par
 
 \ProblemBor{3.D.16}{
@@ -1084,10 +1095,10 @@ $\MathRightBrace{l}{$
 Now we prove the assumption by contradiction. Suppose $(v,Tv)$ is linely inde for every $v\in V\backslash\{0\}$.\par\quad
 Fix one $v$. Extend to $(v,Tv,u_1,\dots,u_n)$ a basis of $V$.\par\quad
 Define $S\in\Lm(V)$ by $S(av+bTv+c_1 u_1+\dots+c_n u_n)=bv\Rightarrow S(Tv)=v=T(Sv)=0.$ Contradicts.$\hfill\square$\par\vspace{6pt}\quad
-\Or \,\dbsp Let $(v_1,\dots,v_m)$ be a basis of $V.$\par\qquad\quad
-\dbsp Define $\varphi\in\Lm(V,\Fbb)$ by $\varphi(v_1)=\cdots=\varphi(v_m)=1.$ Let $\lambda=\varphi(Tv_1)\in\Fbb.$\par\qquad\quad
-\dbsp For any $v\in V,$ define $S_v\in\Lm(V)$ by $S_v u=\varphi(u)v.$\par\qquad\quad
-Then $Tv=T(\varphi(v_1)v)=T(S_v v_1)=S_v(Tv_1)=\varphi(Tv_1)v=\lambda v.\hfill\square$\par
+\Or \;{\Large\vspace{6pt}Let $(v_1,\dots,v_m)$ be a basis of $V.$}\par\qquad\quad
+{\Large\vspace{6pt}Define $\varphi\in\Lm(V,\Fbb)$ by $\varphi(v_1)=\cdots=\varphi(v_m)=1.$ Let $\lambda=\varphi(Tv_1)\in\Fbb.$}\par\qquad\quad
+\dbsp{\Large\vspace{6pt}For any $v\in V,$ define $S_v\in\Lm(V)$ by $S_v u=\varphi(u)v.$}\par\qquad\quad
+{\Large\vspace{6pt}Then $Tv=T(\varphi(v_1)v)=T(S_v v_1)=S_v(Tv_1)=\varphi(Tv_1)v=\lambda v.\hfill\square$}\par
 \ProblemEnding\par
 
 \ProblemB{
@@ -1524,9 +1535,10 @@ $\Rightarrow w\in\Spn(Tv_1,\dots,Tv_n)\Rightarrow\range T\subseteq\Spn(Tv_1,\dot
 \ProblemEnding\par
 \ChapterEnding
 \vspace{18pt}
-\ChapterDecl{Ch3C}{3$\cdot$C}
 
+\ChapterDecl{Ch3C}{3$\cdot$C}{}\orMode{\qquad\hLk{3C1}{1}\;\;\hLk{3C3}{3}\;\;\hLk{3C4}{4}\;\;\hLk{3C5}{5}\;\;\hLk{3C6}{6}\;\;\hLk{3C9}{9}\;\;\hLk{3C10}{10}\;\;\hLk{3C11}{11}\;\;\hLk{3C12}{12}\;\;\hLk{3C13}{13}\;\;\hLk{3C14}{14}\;\;\hLk{3C15}{15}\;\;\hLk{3C4e16}{16}\;\;\hLk{3C4e17}{17}}{\nLineDB\qquad[2]: 10, 9, 11; [3]: (4E 17); [4]: (4E 16), 1; [5]: 3, 4, 5, 6; [6]: 13, 14, 15, 12.}
 \vspace{10pt}
+
 \BulletPoint \,\NoteForSmall{[3.47]}\,\, $LHS=(AC)_{j,k}$=$\sum\limits_{r=1}^n A_{j,r}C_{r,k}=\sum\limits_{r=1}^n (A_{j,\cdot})_{1,r}(C_{\cdot,k})_{r,1}=(A_{j,\cdot}C_{\cdot,k})_{1,1}=A_{j,\cdot}C_{\cdot,k}=RHS$.\par
 \ProblemEnding\par
 
@@ -1549,7 +1561,7 @@ $\Rightarrow w\in\Spn(Tv_1,\dots,Tv_n)\Rightarrow\range T\subseteq\Spn(Tv_1,\dot
 \BulletPoint \,\NoteForSmall{[3.49]} \AlignEq{}{&\because[(AC)_{\cdot,k}]_{j,1}=(AC)_{j,k}=\sum\limits_{r=1}^n A_{j,r}C_{r,k}=\sum\limits_{r=1}^n A_{j,r}(C_{\cdot,k})_{r,1}=(AC_{\cdot,k})_{j,1}\\&\therefore(AC)_{\cdot,k}=A_{\cdot,\cdot}C_{\cdot,k}=AC_{\cdot,k}}\vspace{-10pt}\par
 \ProblemEnding\par
 
-\BulletPoint \,\Exercise{10} \AlignEq{}{&\because[(AC)_{j,\cdot}]_{1,k}=(AC)_{j,k}=\sum\limits_{r=1}^n A_{j,r}C_{r,k}=\sum\limits_{r=1}^n (A_{j,\cdot})_{1,r}C_{r,k}=(A_{j,\cdot}C)_{1,k}\\
+\BulletPoint \,\Exercise{\hypertarget{3C10}{10}} \AlignEq{}{&\because[(AC)_{j,\cdot}]_{1,k}=(AC)_{j,k}=\sum\limits_{r=1}^n A_{j,r}C_{r,k}=\sum\limits_{r=1}^n (A_{j,\cdot})_{1,r}C_{r,k}=(A_{j,\cdot}C)_{1,k}\\
 &\therefore(AC)_{j,\cdot}=A_{j,\cdot}C_{\cdot,\cdot}=A_{j,\cdot}C.}\vspace{-10pt}\par
 \ProblemEnding\par
 
@@ -1568,11 +1580,11 @@ $\Rightarrow w\in\Spn(Tv_1,\dots,Tv_n)\Rightarrow\range T\subseteq\Spn(Tv_1,\dot
 %	{$P_{2,\cdot}=\begin{pmatrix} 3 & 4\end{pmatrix}\begin{pmatrix} 5 & 6 & 7 \\ 8 & 9 & 10\end{pmatrix}=3\begin{pmatrix} 5 & 6 & 7\end{pmatrix}+4\begin{pmatrix}8 & 9 & 10\end{pmatrix}=\begin{pmatrix} 47 & 54 & 61\end{pmatrix}$;}\par
 \ProblemEnding\par
 
-\BulletPoint \,\NoteForSmall{[3.52]}\quad $A\in\Fbb^{m,n},c\in\Fbb^{n,1}\Rightarrow Ac\in\Fbb^{m,1}$\par\quad
+\BulletPoint \,\NoteForSmall{\hypertarget{3C9}{}[3.52]}\quad $A\in\Fbb^{m,n},c\in\Fbb^{n,1}\Rightarrow Ac\in\Fbb^{m,1}$\par\quad
 $\because(Ac)_{j,1}=\sum\limits_{r=1}^n A_{j,r}c_{r,1}=[\sum\limits_{r=1}^n(A_{\cdot,r}c_{r,1})]_{j,1}=(c_1 A_{\cdot,1}+\dots+c_n A_{\cdot,n})_{j,1}$\par\quad
 $\therefore\,Ac=A_{\cdot,\cdot}c_{\cdot,1}=\sum\limits_{r=1}^n A_{\cdot,r}c_{r,1}=c_1 A_{\cdot,1}+\dots+c_n A_{\cdot,n}$\quad \Or By $(Ac)_{\cdot,1}=Ac_{\cdot,1}$ Using (a) above.\par
 \ProblemEnding\par
-\BulletPoint \,\Exercise{11}\qquad\,\,\,\, $a\in\Fbb^{1,n},C\in\Fbb^{n,p}\Rightarrow aC\in\Fbb^{1,p}$\par\quad
+\BulletPoint \,\Exercise{\hypertarget{3C11}{11}}\qquad\,\,\,\, $a\in\Fbb^{1,n},C\in\Fbb^{n,p}\Rightarrow aC\in\Fbb^{1,p}$\par\quad
 $\because(aC)_{1,k}=\sum\limits_{r=1}^n a_{1,r}C_{r,k}=[\sum\limits_{r=1}^n a_{1,r}(C_{r,\cdot})]_{1,k}=(a_1 C_{1,\cdot}+\dots+a_n C_{n,\cdot})_{1,k}$\par\quad
 $\therefore\,aC=a_{1,\cdot}C_{\cdot,\cdot}=\sum\limits_{r=1}^n a_{1,r}C_{r,\cdot}=a_1 C_{1,\cdot}+\dots+a_n C_{n,\cdot}$\quad \Or By $(aC)_{1,\cdot}=a_{1,\cdot}C$. Using (b) above.
 \vspace{-4pt}\par
@@ -1608,7 +1620,7 @@ $\Rightarrow\Spn(A_{\cdot,1},\dots,A_{\cdot,m})=S_r=\Spn(C_{\cdot,1},\dots,C_{\c
 \Or Apply the result to $A^t\in\Fbb^{n,m}\Rightarrow\dim S_r^t=\dim S_c=c\leq r=\dim S_r=\dim S_c^t.\hfill\square$\par
 \ProblemEnding\par
 
-\ProblemBor{{\normalsize 4E 3.C.17, 3.F.32}}{
+\ProblemBor{\hypertarget{3C4e17}{\normalsize 4E 3.C.17, 3.F.32}}{
 	\TextB{Suppose $T\in\Lm(V)$ and $(u_1,\dots,u_n),(v_1,\dots,v_n)$ are bases of \,$V$.}
 	\TextB{Prove that the following are equi.\;\;{\normalsize Here $A=\Mt(T)$ means $\Mt\left(T, (u_1,\dots,u_n),(v_1,\dots,v_n)\right)$.}}
 	(a) \TextB{$T$ is inje.}
@@ -1646,7 +1658,7 @@ Thus by (2.39), $(a)$ holds.$\hfill\square$\par
 \ProblemEnding\par
 \pagebreak
 
-\ProblemBor{{\normalsize 4E 3.C.16}}{
+\ProblemBor{\hypertarget{3C4e16}{\normalsize 4E 3.C.16}}{
 	\TextB{Suppose $A$ is an m-by-n matrix with $A\neq 0$.}
 	\TextB{Prove that rank $A=1\Longleftrightarrow\exists\,(c_1,\dots,c_m)\in\Fbb^m,(d_1,\dots,d_n)\in\Fbb^n$}
 	\TextB{such that $A_{j,k}=c_j\cdot d_k$ for every $j=1,\dots,m$ and $k=1,\dots,n$.}
@@ -1663,7 +1675,7 @@ Then $S_c=\Spn\left(\begin{pmatrix} c_1 d_1 \\ \vdots \\ c_m d_1\end{pmatrix},\b
 {\Large\vspace{6pt}$\Rightarrow A_{j,k}=d\apostrophe_k A_{j,1}=c_j A_{1,k}=c_j d\apostrophe_k A_{1,1}=c_j d_k.$ Letting $d_k=d\apostrophe_k A_{1,1}.\hfill\square$}\par
 \ProblemEnding\vspace{10pt}\par
 
-\ProblemN{1}{
+\ProblemN{\hypertarget{3C1}{1}}{
 	\TextN{Suppose $T\in\Lm(V, W)$. Show that with resp to each choice of bases of \,$V$ and $W$,}
 	\TextN{the matrix of $T$ has at least $\dim\range T$ nonzero entries.}
 }\par\quad
@@ -1681,7 +1693,7 @@ $\Rightarrow\dim\range T=\dim\Spn(Tv_{p+1},\dots,Tv_n)\leq\dim\range T-1.$ Contr
 \ProblemEnding\par
 \pagebreak
 
-\ProblemN{3}{
+\ProblemN{\hypertarget{3C3}{3}}{
 	\TextN{Suppose $V$ and $W$ are finite-dim and $T\in\Lm(V, W)$. Prove that $\exists\,B_V,B_W$ such that}
 	\TextN{[ letting $A=\Mt(T,B_V,B_W)$ ] $A_{k,k}=1,A_{i,j}=0$, where $1\leq k\leq \dim\range T, i\neq j$.}
 }\par\quad
@@ -1689,13 +1701,13 @@ Let $R=(Tv_1,\dots,Tv_n)$ be a basis of $\range T$, extend to  $B_W=(Tv_1,\dots,
 Let $\mathcal{K}_R=\Spn(v_1,\dots,v_n)$. And let $(u_1,\dots,u_m)$ be a basis of $\null T$. Then $B_V=(v_1,\dots,v_n,u_1,\dots,u_m).\hfill\square$\par
 \ProblemEnding\par
 
-\ProblemN{4}{
+\ProblemN{\hypertarget{3C4}{4}}{
 	\TextN{Suppose $B_V=(v_1,\dots,v_m)$ and $W$ is finite-dim. Suppose $T\in\Lm(V, W)$.\vspace{2pt}}
 	\TextN{Prove that $\exists\,B_W=(w_1,\dots,w_n),\;\;\Mt(T,B_V,B_W)^t_{\cdot,1}=\begin{pmatrix}1&0&\cdots&0\end{pmatrix}$ or $\begin{pmatrix}0&\cdots&0\end{pmatrix}$.\vspace{4pt}}
 }If $Tv_1=0$, then we are done. If not then extend $(Tv_1).\hfill\square$\par
 \ProblemEnding\par
 
-\ProblemN{5}{
+\ProblemN{\hypertarget{3C5}{5}}{
 	\TextN{Suppose $B_W=(w_1,\dots,w_n)$ and $V$ is finite-dim. Suppose $T\in\Lm(V, W)$.\vspace{2pt}}
 	\TextN{Prove that $\exists\,B_V=(v_1,\dots,v_m),\;\;\Mt(T,B_V,B_W)_{1,\cdot}=\begin{pmatrix}0&\cdots&0\end{pmatrix}$ or $\begin{pmatrix}1&0&\cdots&0\end{pmatrix}$.}
 }\par\quad
@@ -1710,7 +1722,7 @@ And $Tv_1=T\left(\displaystyle\frac{u_k}{A_{1,k}}\right)=\displaystyle\frac{1}{A
 \vspace{-6pt}\par$\hfill\square$\vspace{-10pt}\par
 \ProblemEnding\par
 
-\ProblemN{6}{
+\ProblemN{\hypertarget{3C6}{6}}{
 	\TextN{Suppose $V$ and $W$ are finite-dim and $T\in\Lm(V, W)$.}
 	\TextN{Prove that $\dim\range T = 1\Longleftrightarrow\exists\,B_V,B_W,$ all entries of $A=\Mt(T,B_V,B_W)$ equal $1$.}
 }\par\quad
@@ -1721,8 +1733,8 @@ Let $(u_2,\dots,u_n)$ be a basis of $\null T.$ Extend it to a basis of $V$ as $(
 Let $w_1=Tv_1-w_2-\dots-w_m.$ Extend to a basis of $W$ and we have $B_W$.\par\quad\Hb
 Let $v_1=u_1,v_i=u_1+u_i.$ Extend to a basis of $V$ and we have $B_V.\hfill\square$\vspace{10pt}\par\quad\Hb
 \Or Suppose $\range T$ has a basis $(w)$.\par\quad\Hb
-By (2.C.???), $\exists\,B_W=(w_1,\dots,w_m)$ such that $w=w_1+\dots+w_m.$\par\quad\Hb
-By (2.C.???), $\exists$ a basis $(u_1,\dots,u_n)$ of $V$ such that $u_k\not\in\null T.$\par\quad\Hb
+By (2.C.15 [\COROLLARY]), $\exists\,B_W=(w_1,\dots,w_m)$ such that $w=w_1+\dots+w_m.$\par\quad\Hb
+By (2.C [\NEWTHEOREM]), $\exists$ a basis $(u_1,\dots,u_n)$ of $V$ such that each $u_k\not\in\null T.$\par\quad\Hb
 $\forall k\in\{1,\dots,n\},Tu_k\in\range T=\Spn(w)\Rightarrow Tu_k=\lambda_k w,\,\exists\,\lambda_k\in\Fbb\backslash\{0\}.$\par\quad\Hb
 Let $v_k=\lambda_k^{-1}u_k\neq 0\Rightarrow B_V=(v_1,\dots,v_n).$ Hence for each $v_k,Tv_k=w=w_1+\dots+w_m.\hfill\square$\par
 \ProblemEnding\par
@@ -1748,7 +1760,7 @@ Then $\displaystyle\Mt\left(p(T_1,\dots,T_n)\right)=\Mt\left(\sum\limits_{k_1,\d
 %Hence by induction, we conclude that $\displaystyle\sum\limits_{k_1,\dots,k_n}\alpha_{k_1,\dots,k_n}\Mt\left(\prod\limits_{i=1}^n T_i^{k_i}\right)=\sum\limits_{k_1,\dots,k_n}\alpha_{k_1,\dots,k_n}\prod\limits_{i=1}^n \Mt(T_i^{k_i}).\hfill\square$\vspace{6pt}\par
 \ProblemEnding\par
 
-\ProblemN{13}{
+\ProblemN{\hypertarget{3C13}{13}}{
 	\TextNL{Prove that the distr holds for matrix add and matrix multi.}
 }\par\quad
 Suppose $A, B, C$ are matrices such that $A(B + C)$ make sense, we prove the left distr.\par\quad
@@ -1759,7 +1771,7 @@ $A(B+C)=\Mt(T(S+R))\overset{[3.9]}{=}\Mt(TS+TR)=AB+AC.$\par\quad
 \Or $T(S+R)=TS+TR\Rightarrow\Mt\left(T(S+R)\right)=\Mt(TS+TR)\Rightarrow A(B+C)=AB+AC.\hfill\square$\par
 \ProblemEnding\par
 
-\ProblemN{14}{
+\ProblemN{\hypertarget{3C14}{14}}{
 	\TextNL{Prove that matrix multi is associ.}
 }\par\quad
 Suppose $A,B,C$ are matrices such that $(AB)C$ makes sense, we prove that $(AB)C=A(BC).$\vspace{4pt}\par\quad
@@ -1770,14 +1782,14 @@ $(AB)C=\Mt(T(SR))\overset{[3.9]}{=}\Mt(TSR)\overset{[3.9]}{=}\Mt((TS)R)=A(BC).$\
 \Or $(TS)R=T(SR)\Rightarrow\Mt((TS)R)=\Mt(T(SR))\Rightarrow (AB)C=A(BC).\hfill\square$\par
 \ProblemEnding\par
 
-\ProblemN{15}{
+\ProblemN{\hypertarget{3C15}{15}}{
 	\TextNL{Suppose $A\in\Fbb^{n,n}$ and $1\leq j, k\leq n$. Define $A^3$ by $AAA.$ Show that $(A^3)_{j,k}=\sum\limits_{p=1}^n \sum\limits_{r=1}^n A_{j,p}A_{p,r}A_{r,k}$.\vspace{6pt}}
 }\vspace{-9pt}\AlignEq{}{(AAA)_{j,k} &= (AA)_{j,\cdot}A_{\cdot,k}=\sum\limits_{p=1}^n (A_{j,p}A_{p,\cdot})A_{\cdot,k}=\sum\limits_{p=1}^n \sum\limits_{r=1}^n A_{j,p}A_{p,r}A_{r,k}.\hspace{120pt}\\
 \textup{\Or}\,\,\,\,(AAA)_{j,k} &=\sum\limits_{r=1}^n(AA)_{j,r}A_{r,k} =\sum\limits_{r=1}^n(\sum\limits_{p=1}^n A_{j,p}A_{p,r})A_{r,k}\\&=\sum\limits_{r=1}^n\left[A_{j,1}(A_{1,r}A_{r,k})+\dots+A_{j,n}(A_{n,r}A_{r,k})\right]\\&=A_{j,1}\sum\limits_{r=1}^n A_{1,r}A_{r,k}+\dots+A_{j,n}\sum\limits_{r=1}^n A_{n,r}A_{r,k}=\sum\limits_{p=1}^n \sum\limits_{r=1}^n A_{j,p}A_{p,r}A_{r,k}.\hfill\square}\par
 \ProblemEnding\par
 
 \ProblemB{
-	\TextB{Prove that the commutativity does not hold in $\Fbb^{m,n}.$}
+	\hypertarget{3C12}{}\TextB{Prove that the commutativity does not hold in $\Fbb^{m,n}.$}
 }Suppose $\dim V=n,\dim W=m$ and the commutativity holds in $\Fbb^{n,m}.$\par\qquad\qquad\quad
 $\forall T\in\Lm(V,W),S\in\Lm(W,V),\Mt(TS)=\Mt(T)\Mt(S)=\Mt(S)\Mt(T)=\Mt(ST).$\par\qquad\qquad\quad
 Hence $ST=TS.$ Which in general is not true. ( See 3.D )$\hfill\square$\par
@@ -1812,23 +1824,26 @@ Consider the basis $B_V'=(v\apostrophe_1,\dots,v\apostrophe_j,\dots,v\apostrophe
 where $v\apostrophe_j=v_k,\,\,v_k\apostrophe=v_j$ and $v\apostrophe_i=v_i$ for all $i\in\{1,\dots,m\}\backslash\{j,k\}.$\par\quad
 Remember that $\Mt(T,B_V')=\Mt(T,B_V)=A.$\par\quad
 Hence $T(v\apostrophe_k)=A_{1,k}v\apostrophe_1+\dots+A_{k,k}v\apostrophe_k+\dots+A_{m,k}v\apostrophe_m=A_{k,k}v\apostrophe_k=A_{k,k}v_j,$ while $T(v\apostrophe_k)=T(v_j)=A_{j,j}v_j.$\par\quad
-Thus $A_{k,k}=A_{j,j}.\hfill\square$\par
+Thus $A_{k,k}=A_{j,j}.\hfill\square$\vspace{10pt}\par\quad
+\Or ??? ( There must be another solution using theorems and facts given in 3.D )\par
 \ProblemEnding\par
 \ChapterEnding
 \pagebreak
 
-\ChapterDecl{Ch3D}{3$\cdot$D}
+\ChapterDecl{Ch3D}{3$\cdot$D}{}
+\orMode{\qquad\hLk{3D1}{1}\;\;\hLk{3D2}{2}\;\;\hLk{3D3}{3}\;\;\hLk{3D4}{4}\;\;\hLk{3D5}{5}\;\;\hLk{3D6}{6}\;\;\hLk{3D8}{8}\;\;\hLk{3D9}{9}\;\;\hLk{3D10}{10}\;\;\hLk{3D11}{11}\;\;\hLk{3D12}{12}\;\;\hLk{3D13}{13}\;\;\hLk{3D15}{15}\;\;\hLk{3D16}{16}\;\;\hLk{3D17}{17}\;\;\hLk{3D18}{18}\;\;\hLk{3D19}{19}\;\;\hLk{3D4e1}{4E 1,}\;\;\hLk{3D4e3}{3,}\;\;\hLk{3D4e10}{10,}\;\;\hLk{3D4e15}{15,}\;\;\hLk{3D4e17}{17,}\;\;\hLk{3D4e20}{20,}\;\;\hLk{3D4e22}{22,}\;\;\hLk{3D4e23}{23,}\;\;\hLk{3D4e24}{24}}
+{$\\[-30pt]$\normalsize\vspace{-4pt}\nLineDB\qquad\qquad[1]: (4E 3, 15, 22, 1), 1, 2, 3; [2]: 4, 5, 6, 8; [3]: 9, 10, 11, 12, 13, 15, (4E 24);{\large\par\qquad\quad\;\;\hspace{1pt}}[4]: (4E 10); [5]: (4E 17); [6]: 17, (4E 23); [7]: 16, 18, (4E 20), 19.\vspace{4pt}}
 
 \vspace{6pt}
 \ProblemBnosolus{
-	\TextB{Suppose $V$ is finite-dim and $T\in\Lm(V)$.}
+	\hypertarget{3D4e3}{}\TextB{Suppose $V$ is finite-dim and $T\in\Lm(V)$.}
 }$\MathRightBrace{l}{$
 	$(Tv_1,\dots,Tv_n)$ is a basis of \,$V$ for some basis $(v_1,\dots,v_n)$ of \,$V$ $\Longleftrightarrow$ $T$ is surj$\\ $ $(Tv_1,\dots,Tv_n)$ is a basis of \,$V$ for every basis $(v_1,\dots,v_n)$ of \,$V$ $\Longleftrightarrow$ $T$ is inje
 	$}\Longleftrightarrow$ $T$ is inv.\vspace{6pt}\par
 \ProblemEnding\par
 
 \ProblemB{
-	\TextB{Suppose $T\in\Lm(V),v_1,\dots,v_m\in V$ such that $V=\Spn(Tv_1,\dots,Tv_m)$.}
+	\hypertarget{3D4e15}{}\TextB{Suppose $T\in\Lm(V),v_1,\dots,v_m\in V$ such that $V=\Spn(Tv_1,\dots,Tv_m)$.}
 	\TextB{Prove that $V=\Spn(v_1,\dots,v_m)$.}
 }\par\quad
 Because $V=\Spn(Tv_1,\dots,Tv_m)\Rightarrow T$ is surj, 又 $V$ is finite-dim $\Rightarrow T$ is inv $\Rightarrow$ $T^{-1}$ is inv.\par\quad
@@ -1837,7 +1852,7 @@ $\forall v\in V,\,\,\exists\,a_i\in\Fbb, v=a_1 Tv_1+\dots+a_n Tv_n\Rightarrow T^
 Then $(v_{\alpha_1},\dots,v_{\alpha_m})$ is linely inde of length $m$, therefore is a basis of $V$, contained in the list $(v_1,\dots,v_m).\hfill\square$\par
 \ProblemEnding\par
 
-\ProblemBor{10.A.1}{
+\ProblemBor{\hypertarget{3D4e22}{10.A.1}}{
 	\TextB{Suppose $T\in\Lm(V),B_V=(v_1,\dots,v_n).$ Prove that $\Mt(T, B_V)$ is inv $\Longleftrightarrow T$ is inv.}
 }Notice that $\Mt$ is an iso of $\Lm(V)$ onto $\Fbb^{n,n}$.\par\quad
 (a) \,$T^{-1}T=TT^{-1}=I$\,\small$\Rightarrow\Mt(T^{-1})\Mt(T)=\Mt(T)\Mt(T^{-1})=I\Rightarrow\Mt(T^{-1})=\Mt(T)^{-1}.$\large\par\quad
@@ -1847,14 +1862,14 @@ $\Rightarrow\Mt^{-1}\Mt(TS)=\Mt^{-1}\Mt(ST)=I$\large$\,=\,TS=ST\Rightarrow S=T^{
 \ProblemEnding\par
 
 \ProblemB{
-	\vspace{2pt}\TextB{Suppose $T\in\Lm(V, W)$ is inv. Show that $T^{-1}$ is inv and $(T^{-1})^{-1}=T$.\vspace{8pt}}
+	\hypertarget{3D4e1}{}\vspace{2pt}\TextB{Suppose $T\in\Lm(V, W)$ is inv. Show that $T^{-1}$ is inv and $(T^{-1})^{-1}=T$.\vspace{8pt}}
 }$\MathRightBrace{l}{
 	TT^{-1}=(T^{-1})^{-1}T^{-1}=I\in\Lm(V)\\
 	T^{-1}T=T^{-1}(T^{-1})^{-1}=I\in\Lm(W)
 }\Rightarrow T=(T^{-1})^{-1}$, by the uniqnes of inverse$.\hfill\square$\vspace{5pt}\par
 \ProblemEnding\par
 
-\ProblemN{1}{
+\ProblemN{\hypertarget{3D1}{1}}{
 	\TextN{Suppose $T\in\Lm(U,V),S\in\Lm(V,W)$ are inv. Prove that $ST$ is inv and $(ST)^{-1} = T^{-1}S^{-1}$.\vspace{8pt}}
 }$\MathRightBrace{l}{
 	(ST)(T^{-1}S^{-1})=STT^{-1}S^{-1}=I\in\Lm(W)\\
@@ -1862,7 +1877,7 @@ $\Rightarrow\Mt^{-1}\Mt(TS)=\Mt^{-1}\Mt(ST)=I$\large$\,=\,TS=ST\Rightarrow S=T^{
 }\Rightarrow (ST)^{-1} = T^{-1}S^{-1}$, by the uniqnes of inverse$.\hfill\square$\vspace{5pt}\par
 \ProblemEnding\par
 
-\ProblemN{2}{
+\ProblemN{\hypertarget{3D2}{2}}{
 	\TextN{Suppose $V$ is finite-dim and $\dim V > 1$.}
 	\TextN{Prove that the set of non-inv operators on $V$ is not a subsp of $\Lm(V)$.}
 }Denote the set by $U.$\par\quad
@@ -1872,7 +1887,7 @@ $S(a_1 v_1+\dots+a_n v_n)=a_1 v_1,T(a_1 v_1+\dots+a_n v_n)=a_2 v_1+\dots+a_n v_n
 \par
 \ProblemEnding\par
 
-\ProblemN{3}{
+\ProblemN{\hypertarget{3D3}{3}}{
 	\TextN{Suppose $V$ is finite-dim, $U$ is a subsp of \,$V$, and $S\in\Lm(U, V)$.}
 	\TextN{Prove that $\exists$ inv $T\in\Lm(V),Tu = Su,\forall u\in U$ $\Longleftrightarrow$ $S$ is inje.{\large $[$ Compare this with (3.A.11). $]$}}
 }\par\quad
@@ -1882,7 +1897,7 @@ Extend these to bases of $V$ as $(u_1,\dots,u_m,v_1,\dots,v_n)$ and $(Su_1,\dots
 Define $T\in\Lm(V)$ by $T(u_i)=Su_i;\,\,\,Tv_j=w_j,$ for each $i\in\{1,\dots,m\},j\in\{1,\dots,n\}.\hfill\square$\par
 \ProblemEnding\par
 
-\ProblemN{4}{
+\ProblemN{\hypertarget{3D4}{4}}{
 	\TextN{Suppose that $W$ is finite-dim and $S, T\in\Lm(V, W)$.}
 	\TextN{Prove that $\null S = \null T${\normalsize $(\,= U\,)$} $\Longleftrightarrow$ $S = ET,\,\,\exists$ inv $E\in\Lm(W)$.}
 }\par\quad
@@ -1895,7 +1910,7 @@ Conversely, \;$S=ET\Rightarrow\null S=\null ET.$\par\quad
 Then $v\in\null ET\Longleftrightarrow ET(v)=0\Longleftrightarrow Tv=0\Longleftrightarrow v\in\null T$. Hence $\null ET=\null T=\null S.\hfill\square$\par
 \ProblemEnding\par
 
-\ProblemN{5}{
+\ProblemN{\hypertarget{3D5}{5}}{
 	\TextN{Suppose that $V$ is finite-dim and $S, T\in\Lm(V, W)$.}
 	\TextN{Prove that $\range S = \range T${\normalsize $(\,= R\,)$} $\Longleftrightarrow$ $S = TE,\,\,\exists$ inv $E\in\Lm(V)$.}
 }\par\quad
@@ -1908,7 +1923,7 @@ Conversely, \;$S=TE\Rightarrow\range S=\range TE$.\par\quad
 Then $w\in\range S\Longleftrightarrow \exists\,v\in V,Sv=TE(v)=T(E(v))=w\in \range T$. Hence $\range S=\range T.\hfill\square$\par
 \ProblemEnding\par
 
-\ProblemN{6}{
+\ProblemN{\hypertarget{3D6}{6}}{
 	\TextN{Suppose $V$ and $W$ are finite-dim and $S, T\in\Lm(V, W)$.}
 	\TextN{Prove that  $S=E_2 T E_1,\,\exists$ inv $ E_1\in\Lm(V), E_2\in\Lm(W)$ $\Longleftrightarrow$ $\dim\null S = \dim\null T=n$.}
 }\par\quad
@@ -1925,7 +1940,7 @@ $v\in\null E_2 TE_1\Longleftrightarrow E_2 TE_1(v)=0\Longleftrightarrow TE_1(v)=
 又 By (3.B.22.\COROLLARY), $E$ is inv $\Rightarrow\dim\null TE_1=\dim\null T=\dim\null S.\hfill\square$\par
 \ProblemEnding\par
 
-\ProblemN{8}{
+\ProblemN{\hypertarget{3D8}{8}}{
 	\TextN{Suppose $V$ is finite-dim and $T: V\rightarrow W$ is a {\timessc surj} linear map of $V$ onto $W$.}
 	\TextN{Prove that there is a subsp $U$ of $V$ such that $T|_U$ is an iso of $U$ onto $W$.}\hspace{1pt}
 	%\TextN{{\normalsize $T|_U$ is the function whose domain is $U$, with $T|_U$ defined by $T|_U (u) = Tu$ for every $u\in U$.}}
@@ -1938,7 +1953,7 @@ $U\cap \null T=\{0\}=\null T|_U,\range T=\left\{Tu:u\in U\right\}=\range T|_U.\h
 \ProblemEnding\par
 \pagebreak
 
-\ProblemN{9}{
+\ProblemN{\hypertarget{3D9}{9}}{
 	\TextN{Suppose $V$ is finite-dim and $S, T\in\Lm(V)$. Prove that
 $ST$ is inv $\Longleftrightarrow$ $S$ and $T$ are inv.}
 }\par\quad
@@ -1950,7 +1965,7 @@ $\forall v\in V,v=(ST)Rv=S(TRv)\in\range S}\Rightarrow T$ is inje, $S$ is surj. 
 \Or Because by Problem (23) in 3.B, $\dim V=\dim\range ST\leq\min\left\{\range T,\range S\right\}$.$\hfill\square$\par
 \ProblemEnding\par
 
-\ProblemN{10}{
+\ProblemN{\hypertarget{3D10}{10}}{
 	\TextN{Suppose $V$ is finite-dim and $S,T\in\Lm(V).$ Prove that $ST=I\Longleftrightarrow TS=I.$}
 }\par\quad
 Suppose $ST=I$. $\MathRightBrace{l}{Tv=0\Rightarrow v=STv=0\\ v\in V\Rightarrow v=S(Tv)\in\range S}\Rightarrow T$ is inje, $S$ is surj. While $V$ is finite-dim.\par\vspace{6pt}\quad
@@ -1960,15 +1975,15 @@ $S\left((TS)v\right)=ST(Sv)=Sv\Rightarrow (TS)v=v\Rightarrow S$ is inv.\par\quad
 Reversing the roles of $S$ and $T$, we conclude that $TS=I\Rightarrow ST=I.\hfill\square$\par
 \ProblemEnding\par
 
-\ProblemN{11}{
+\ProblemN{\hypertarget{3D11}{11}}{
 	\TextNL{Suppose $V$ is finite-dim, $S, T, U\in\Lm(V)$ and $STU = I$. Show that $T$ is inv and $T^{-1} = US$.}
 }Using Problem (9) and (10). {\timessl\normalsize This result can fail without the hypothesis that $V$ is finite-dim.}\par\quad
 $(ST)U=U(ST)=(US)T=T(US)=S(TU)=(TU)S=I.$\par\quad
 $\Rightarrow U^{-1}=ST,\qquad\qquad T^{-1}=US,\qquad\qquad S^{-1}=TU.\hfill\square$\par
-\Example\,\,\,$V=\Rbb^\infty,S(a_1,a_2,\dots)=(a_2,\dots);\;T(a_1,\dots)=(0,a_1,\dots);\;U=I\Rightarrow STU=I$ but $T^{-1}$ is not inv.\par
+\hypertarget{3D12}{}\Example\,\,\,$V=\Rbb^\infty,S(a_1,a_2,\dots)=(a_2,\dots);\;T(a_1,\dots)=(0,a_1,\dots);\;U=I\Rightarrow STU=I$ but $T^{-1}$ is not inv.\par
 \ProblemEnding\par
 
-\ProblemN{13}{
+\ProblemN{\hypertarget{3D13}{13}}{
 	\TextNL{Suppose $V$ is finite-dim, $R, S, T\in\Lm(V)$ are such that $RST$ is surj. Prove that $S$ is inje.}
 }By Problem (1) and (9), Notice that $V$ is finite-dim. Then $RST$ is inv.\vspace{4pt}\par\quad
 Let $X=(RST)^{-1}\,\left|\hspace{-4pt}\begin{array}{l}$ $Tv=0\Rightarrow v=X(RSTv)=0\Rightarrow T$ is inje.$\\ $
@@ -1976,7 +1991,7 @@ $\forall v\in V,v=(RST)Xv\in\range R\Rightarrow R$ is surj.$\\\end{array}\right\
 \Or $(RST)^{-1}=\left((RS)T\right)^{-1}=T^{-1}(RS)^{-1}=T^{-1}S^{-1}R^{-1}.\hfill\square$\par
 \ProblemEnding\par
 
-\ProblemN{15}{
+\ProblemN{\hypertarget{3D15}{15}}{
 	\TextNL{Prove that every linear map from $\Fbb^{n,1}$ to $\Fbb^{m,1}$ is given by a matrix multi.}
 	\TextNL{In other words, prove that if $T\in\Lm(\Fbb^{n,1},\Fbb^{m,1})$, then $\,\exists\,A\in\Fbb^{m,n},Tx = Ax,\,\forall x\in\Fbb^{n,1}$.}
 }\par\quad
@@ -1986,7 +2001,7 @@ $\forall k=1,\dots,n,$ suppose $T(E_{k})=A_{1,k}R_1+\dots+A_{m,k}R_m,\exists\,A_
 Hence $Tx=\Mt(Tx,B_2)=\Mt(T,B_1,B_2)\Mt(x,B_1)=Ax,$ by [3.65].$\hfill\square$\par
 \ProblemEnding\par
 
-\ProblemBor{10.A.2}{
+\ProblemBor{\hypertarget{3D4e24}{10.A.2}}{
 	\TextNL{Suppose $A,B\in\Fbb^{n,n}$. Prove that $AB = I\Longleftrightarrow BA=I$.}
 }Using Problem (10) and (15).\par\quad
 Define $T,S\in\Lm(\Fbb^{n,1},\Fbb^{n,1})$ by $Tx=Ax,Sx=Bx$ for all $x\in\Fbb^{n,1}$. Then $\Mt(T)=A,\Mt(S)=B.$\par\quad
@@ -2016,7 +2031,7 @@ Hence by [2.42] and [3.61], we conclude that $B$ is a basis of $\Lm(V,W)$ and th
 \ProblemEnding\par
 
 \ProblemB{
-	\TextB{Suppose $V,W$ are finite-dim, $U$ is a subsp of $V$. Let $\mathcal{E} = \left\{T\in\Lm(V, W): U\subseteq\null T\right\}$.}
+	\hypertarget{3D4e10}{}\TextB{Suppose $V,W$ are finite-dim, $U$ is a subsp of $V$. Let $\mathcal{E} = \left\{T\in\Lm(V, W): U\subseteq\null T\right\}$.}
 	(a) \TextB{Show that $\mathcal{E}$ is a subsp of $\Lm(V, W)$.}
 	(b) \TextB{Find a formula for $\dim \mathcal{E}$ in terms of $\dim V$, $\dim W$ and $\dim U$.}\hspace{0.3pt}
 	\TextB{{\normalsize Hint: Define $\Phi:\Lm(V, W)\rightarrow \Lm(U, W)$ by $\Phi(T) = T|_U$ . What is $\null\Phi$? What is $\range\Phi$?}}
@@ -2037,7 +2052,7 @@ Then $\dim\mathcal{E}=\dim\Lm(V,W)-\dim R-\dim(R\cap\mathcal{E})=(\dim V-\dim U)
 \ProblemEnding\par\vspace{10pt}
 
 \ProblemBc{
-	\TextB{Suppose $V$ is finite-dim and $S\in\Lm(V)$. Define $A\in \Lm\left(\Lm(V)\right)$ by $\mathcal{A}(T) = ST,\forall T\in\Lm(V)$.}
+	\hypertarget{3D4e17}{}\TextB{Suppose $V$ is finite-dim and $S\in\Lm(V)$. Define $A\in \Lm\left(\Lm(V)\right)$ by $\mathcal{A}(T) = ST,\forall T\in\Lm(V)$.}
 	(a) \TextB{Show that $\dim\null \mathcal{A} = (\dim V)(\dim \null S)$.}
 	(b) \TextB{Show that $\dim\range \mathcal{A} = (\dim V)(\dim \range S)$.}
 }\par\quad
@@ -2096,7 +2111,7 @@ Thus $\null\mathcal{B}\,=\,\Spn${\normalsize$\begin{pmatrix} \underset{,}{R_{m+1
 Hence (a) $\dim\null\mathcal{B}=n\times(n-m);$\par\hspace{266pt} (b) $\dim\range\mathcal{B}=n\times m.\hfill\square$\par
 \ProblemEnding\par
 
-\ProblemN{17}{
+\ProblemN{\hypertarget{3D17}{17}}{
 	\TextNL{Suppose $V$ is finite-dim. Show that the only two-sided ideals of $\Lm(V)$ are $\{0\}$ and $\Lm(V)$.}
 	\TextNL{{\large A subsp $\mathcal{E}$ of $\Lm(V)$ is called a two-sided ideal of $\Lm(V)$ if $TE\in\mathcal{E},ET\in\mathcal{E},\,\,\forall E\in\mathcal{E},T\in\Lm(V)$.\vspace{-2pt}}}
 }
@@ -2105,7 +2120,7 @@ Then {\Large$\forall E_{i,j}\in\mathcal{E},\,(\,\forall x,y=1,\dots,n\,),$} by a
 Again, {\Large$E_{y,x\apostrophe},E_{y\apostrophe,x}\in\mathcal{E}$} for all $x\apostrophe,y\apostrophe,x,y=1,\dots,n.$ Thus $\mathcal{E}=\Lm(V).\hfill\square$\par
 \ProblemEnding\par
 
-\ProblemBor{10.A.4}{
+\ProblemBor{\hypertarget{3D4e23}{10.A.4}}{
 	\TextB{Suppose that $(\beta_1,\dots,\beta_n)$ and $(\alpha_1,\dots,\alpha_n)$ are bases of \,$V$.}
 	\TextB{Let $T\in\Lm(V)$ be such that $T\alpha_k = \beta_k,\forall k.$ Prove that $\Mt(T,\alpha\rightarrow\alpha)=\Mt(I,\beta\rightarrow\alpha)$}
 	\TextB{\large For ease of notation, let $\Mt(T,\alpha\rightarrow\beta)=\Mt\left(T,(\alpha_1,\dots,\alpha_n),(\beta_1,\dots,\beta_n)\right),\,\,\,\Mt\left(T,\alpha\rightarrow\alpha\right)=\Mt\left(T,(\alpha_1,\dots,\alpha_n)\right).$}
@@ -2123,7 +2138,7 @@ $u_k=Iu_k=B_{1,k}\alpha_1+\dots+B_{n,k}\alpha_n,\,\,\forall \,\,k\in\{1,\dots,n\
 \ProblemEnding\par
 \pagebreak
 
-\ProblemN{16}{
+\ProblemN{\hypertarget{3D16}{16}}{
 	\TextNL{Suppose $V$ is finite-dim and $S\in\Lm(V)$.}
 	\TextNL{Prove that $\exists\,\lambda\in\Fbb,S=\lambda I\Longleftrightarrow$ $ST=TS$ for every $T\in\Lm(V)$.}
 }Using the notation and result in $(\circ)$.\par\quad
@@ -2141,7 +2156,7 @@ Hence $w_i=\lambda v_i\Rightarrow\Mt(S)\,=\,${\small$\begin{pmatrix}
 \end{pmatrix}$}$\,=\,\Mt\left(\lambda I,(v_1,\dots,v_n)\right)\Rightarrow S=\Mt^{-1}\left(\Mt(\lambda I)\right)=\lambda I.\hfill\square$\par
 \ProblemEnding\par
 
-\ProblemN{18}{
+\ProblemN{\hypertarget{3D18}{18}}{
 	\TextNL{Show that $V$ and $\Lm(\Fbb, V)$ are iso vecsps.}
 }\par\quad
 Define $\Psi\in\Lm${\Large(}$V,\Lm(\Fbb, V)${\Large)} by $\Psi(v)=\Psi_v;$ where $\Psi_v\in\Lm(\Fbb, V)$ and $\Psi_v(\lambda)=\lambda v.$\par\quad
@@ -2154,7 +2169,7 @@ Define $\Psi\in\Lm${\Large(}$V,\Lm(\Fbb, V)${\Large)} by $\Psi(v)=\Psi_v;$ where
 \ProblemEnding\par
 
 \ProblemB{
-	\TextB{Suppose $q\in\PoR{}$. Prove that $\exists\,p\in\PoR{},q(x) = (x^2 + x)p\apostrophe\apostrophe(x) + 2xp\apostrophe(x) + p(3),\forall x\in\Rbb.$}
+	\hypertarget{3D4e20}{}\TextB{Suppose $q\in\PoR{}$. Prove that $\exists\,p\in\PoR{},q(x) = (x^2 + x)p\apostrophe\apostrophe(x) + 2xp\apostrophe(x) + p(3),\forall x\in\Rbb.$}
 }\par\quad
 Note that $\deg[(x^2 + x)p\apostrophe\apostrophe(x) + 2xp\apostrophe(x) + p(3)]=\deg p.$\par\quad
 Define $T_n:\PoR{n}\rightarrow\PoR{n}$ by $T_n(p)=(x^2 + x)p\apostrophe\apostrophe(x) + 2xp\apostrophe(x) + p(3).$ Then $T_n\in\Lm\left(\PoR{n}\right)$.\par\quad
@@ -2163,7 +2178,7 @@ $\forall q\in\PoR{},$ if $q=0,$ let $m=0;$ if $q\neq 0,$ let $m=\deg q,$ we have
 Hence $\exists\,p\in\PoR{m}, q(x)=T_m(p)=(x^2 + x)p\apostrophe\apostrophe(x) + 2xp\apostrophe(x) + p(3)$ for all $x\in\Rbb.\hfill\square$\par
 \ProblemEnding\par
 
-\ProblemN{19}{
+\ProblemN{\hypertarget{3D19}{19}}{
 	\TextNL{Suppose $T\in\Lm(\PoR{})$ is inje. $\deg Tp\leq\deg p$ for every nonzero $p\in\PoR{}$.}
 	(a) \TextNL{Prove that $T$ is surj.}
 	(b) \TextNL{Prove that for every nonzero $p$, $\deg Tp=\deg p$.}
@@ -3637,7 +3652,7 @@ Thus $T/(\null T)$ is inje.$\hfill\square$\par
 
 \ChapterDecl{Ch5BI}{5.B: I}{
 	\quad{\LARGE[}
-	{\Large\timessl See {\timesbf 5.B: II} below.}
+	{\Large\timessl See \hLk{Ch5BII}{5.B: II} below.}
 	{\LARGE ]}
 }\large\vspace{5pt}
 
@@ -4419,6 +4434,9 @@ By assumption, $T|_{\null q(T)}$ has an invar subsp of dim $2.\hfill\square$\par
 \ChapterEnding
 
 \ChapterDecl{Ch5C}{5.C} % 10h
+
+XXXX
+
 
 \par
 \ProblemEnding\par
