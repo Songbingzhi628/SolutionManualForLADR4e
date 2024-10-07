@@ -7,9 +7,9 @@
 \usepackage{fontspec}
 \usepackage{unicode-math}
 \usepackage{ulem}
+\usepackage{color}
 \usepackage{tabularx}
 \usepackage[left=1cm,right=1cm,top=1cm,bottom=0cm]{geometry}
-
 
 \hypersetup{colorlinks=true,linkcolor=blue,urlcolor=cyan}
 
@@ -62,10 +62,10 @@
 %  8 {题目内容}\par\IndentN
 % 19 {题目内容}\par\IndentNL
 % EXAMPLE: {text}\par\IndentE
-\def\IndentB{\,\,\,}
-\def\IndentN{\hspace{8.5pt}}
+\def\IndentB{{\large\Blind{\BulletPoint }}}
+\def\IndentN{\hspace{8.7pt}}
 \def\IndentNL{\hspace{16pt}}
-\def\IndentE{\qquad\qquad\,\,}
+\def\IndentE{{\large\Blind{\Example}}}
 
 % 用于对齐(a)(b)(c)(d)
 %(a) {text} \par\quad\Ha
@@ -80,11 +80,10 @@
 %(d) {text} \par\quad\Hd
 %... \par\quad\Ha
 %{text} \par\quad
-\def\Habc{\quad\hspace{8pt}}
-\def\Ha{\quad\hspace{8pt}}
-\def\Hb{\quad\hspace{8.7pt}}
-\def\Hc{\quad\hspace{7.6pt}}
-\def\Hd{\quad\hspace{9.5pt}}
+\def\Ha{{\large\Blind{(a) }}}
+\def\Hb{{\large\Blind{(b) }}}
+\def\Hc{{\large\Blind{(c) }}}
+\def\Hd{{\large\Blind{(d) }}}
 
 % 用于对齐(i)(ii)(iii)
 %(i) {text} \par\quad\Hi
@@ -129,6 +128,7 @@
 \def\dbsp{\bullet}
 \def\dbsp{} % 方便调试段落缩进
 
+\newcommand{\Blind}[1]{\textcolor{white}{#1}}
 \newcommand{\PfEnd}[1][-18pt]{{\large\vspace{#1}\par\hfill$\square$\par}}
 \newcommand{\SepLine}{{\vspace{-5pt}\par\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\vspace{5pt}}
 
@@ -159,13 +159,14 @@
 \newcommand{\Corollary}{{\tgbfx\large C{\footnotesize OROLLARY}:}}
 
 
+
 \newcommand{\ExampleX}[1]{
-	{\tgbfx E\footnotesize{XAMPLE:}} #1\vspace{-16pt}\par
+	\Example #1\vspace{-16pt}\par
 	\Solution
 }
 
 \newcommand{\ExampleXnosolus}[1]{
-	{\tgbfx E\footnotesize{XAMPLE:}} #1\vspace{-16pt}\par
+	\Example #1\vspace{-16pt}\par
 }
 
 \newcommand{\ProblemN}[2]{
@@ -184,7 +185,7 @@
 
 
 \newcommand{\ProblemBnosolus}[1]{
-	\BulletPoint #1\vspace{-16pt}\par
+	\BulletPoint\,\hspace{1pt}#1\vspace{-16pt}\par
 }
 
 \newcommand{\ProblemBc}[1]{
@@ -279,6 +280,7 @@ char poly&		characteristic polynomial\\\hline
 
 \clearpage
 }{}
+
 \ChDecl{Ch1B}{1$\cdot$B}
 
 \ProblemN{1}{
@@ -310,7 +312,7 @@ Using [1.31]. $0v = 0$ for all $v\in V$ $\Longleftrightarrow (1+(-1))v=1\cdot v+
 
 \ProblemN{6}{
 	\TextN{Let $\infty$ and $-\infty$ denote two distinct objects, neither of which is in $\Rbb$.}
-	\TextN{Define an add and scalar multi on $\Rbb\cup\left\{\infty, -\infty\right\}$ as you could guess.}\hspace{0.7pt}
+	\TextN{Define an add and scalar multi on $\Rbb\cup\left\{\infty, -\infty\right\}$ as you could guess.}
 	\TextN{The operations of real numbers is as usual. While for $t\in\Rbb$  define\vspace{6pt}}\hspace{-80pt}
 	\TextN{\large\centerline{
 		$t\infty=\MathLeftBrace{l}{
@@ -505,7 +507,6 @@ $Q\overset{2}{\Rightarrow} P:$ no scalar multi $\Rightarrow$ if $av+bw=0,$ then 
 \par\vspace{4pt}\quad\Hb
 \Comment\,\,\, (1) with (3) and (2) with (4) will do as well.\PfEnd
 \SepLine\par
-\vspace{20pt}
 \clearpage
 
 \ProblemN{\hypertarget{2A1}{1}}{
@@ -522,7 +523,7 @@ or let $a_i=b_i-b_{i-1}$ with $b_{-1}=0,$ if we are to prove $P$ with $Q$ alread
 	\TextN{Prove that [P] $(v_1,v_2,v_3,v_4)$ is linely inde} \TextN{\hspace{37pt}$\Longleftrightarrow$ [Q] $(v_1-v_2,v_2-v_3,v_3-v_4,v_4)$ is linely inde.}
 }\vspace{0pt}\AlignEq{}{\qquad\qquad\qquad P\Rightarrow Q:\;&a_1(v_1-v_2)+a_2(v_2-v_3)+a_3(v_3-v_4)+a_4 v_4=0\hspace{154pt}\\\Rightarrow\;&a_1 v_1+(a_2-a_1)v_2+(a_3-a_2)v_3+(a_4-a_3)v_4=0\\\Rightarrow&\;a_1=a_2-a_1=a_3-a_2=a_4-a_3=0}\par\quad
 \vspace{-10pt}
-\AlignEq{}{\qquad\qquad\qquad Q\Rightarrow P:\;&a_1 v_1+a_2 v_2+a_3 v_3+a_4 v_4=0\\\Rightarrow\;&a_1(v_1-v_2)+(a_1+a_2)(v_2-v_3)+(a_1+a_2+a_3)(v_3-v_4)+(a_1+\dots+a_4)v_4=0\\\Rightarrow\;&a_1=a_1+a_2=a_1+a_2+a_3=a_1+\dots+a_4=0.}\PfEnd[-20pt]
+\AlignEq{}{\qquad\qquad\qquad Q\Rightarrow P:\;&a_1 v_1+a_2 v_2+a_3 v_3+a_4 v_4=0\\\Rightarrow\;&a_1(v_1-v_2)+(a_1+a_2)(v_2-v_3)+(a_1+a_2+a_3)(v_3-v_4)+(a_1+\dots+a_4)v_4=0\\\Rightarrow\;&a_1=a_1+a_2=a_1+a_2+a_3=a_1+\dots+a_4=0.}\PfEnd[-30pt]
 \SepLine\par
 %
 %\ProblemN{7}{
@@ -879,10 +880,10 @@ Choose a basis $ \mathcal{E}_i$ of $V_i\Rightarrow V_1+\dots+V_m=\Spn( \mathcal{
 Then $\dim(V_1+\dots+V_m)=\dim\Spn( \mathcal{E}_1\cup\cdots\cup \mathcal{E}_m)$.\par\quad
 又 $\dim\Spn(\mathcal{E}_1\cup\cdots\cup\mathcal{E}_m)\leq\card( \mathcal{E}_1\cup\cdots\cup \mathcal{E}_m)\leq\card \mathcal{E}_1+\cdots+\card \mathcal{E}_m$.\par\quad
 Thus $\dim(V_1+\dots+V_m)\leq \dim V_1+\dots+\dim V_m.\hfill\square$\vspace{6pt}\par\quad
-\Comment \,\,\,{\tgsl\Large$\dim(V_1+\dots+V_m)=\dim V_1+\dots+\dim V_m\Longleftrightarrow V_1+\dots+V_m$ is a direct sum.}\par\qquad\qquad\qquad
-For each $i$, $(V_1+\dots+V_i)\cap V_{i+1}=\{0\}\Longleftrightarrow V_1+\dots+V_m$ is a direct sum\par\qquad\qquad\;\;
-又 $\Longleftrightarrow(\mathcal{E}_1\cap\dots\cap\mathcal{E}_{k-1})\cap\mathcal{E}_k=\varnothing$ for each $i$ 又 $\dim\Spn(\mathcal{E}_1\cup\dots\cup\mathcal{E}_m)=\card(\mathcal{E}_1\cup\dots\cup\mathcal{E}_m)$\par\qquad\qquad\qquad
-$\Longleftrightarrow\dim\Spn(\mathcal{E}_1\cup\dots\cup\mathcal{E}_m)=\card\mathcal{E}_1+\dots+\card\mathcal{E}_m$\par\qquad\qquad\qquad
+\Comment \,\,\,{\tgsl\Large$\dim(V_1+\dots+V_m)=\dim V_1+\dots+\dim V_m\Longleftrightarrow V_1+\dots+V_m$ is a direct sum.}\par\quad\Blind{\Comment\,\,}
+For each $i$, $(V_1+\dots+V_i)\cap V_{i+1}=\{0\}\Longleftrightarrow V_1+\dots+V_m$ is a direct sum\par\quad\Blind{\Comment\,\,}
+$\Longleftrightarrow(\mathcal{E}_1\cap\dots\cap\mathcal{E}_{k-1})\cap\mathcal{E}_k=\varnothing$ for each $i$ 又 $\dim\Spn(\mathcal{E}_1\cup\dots\cup\mathcal{E}_m)=\card(\mathcal{E}_1\cup\dots\cup\mathcal{E}_m)$\par\quad\Blind{\Comment\,\,}
+$\Longleftrightarrow\dim\Spn(\mathcal{E}_1\cup\dots\cup\mathcal{E}_m)=\card\mathcal{E}_1+\dots+\card\mathcal{E}_m$\par\quad\Blind{\Comment\,\,}
 $\Longleftrightarrow\dim(V_1+\dots+V_m)=\dim V_1+\dots+\dim V_m.\hfill\square$\par
 \SepLine\par
 
@@ -934,11 +935,11 @@ Suppose $w=x_1+\dots+x_n,$ where each $x_i=c_i w_i\in W_i.$ Then $(x_1,\dots,x_m
 }\TextB{\vspace{0pt}}
 Note that $U\neq V\Rightarrow n\geq 1.$ We will construct $B_V$ via the following process.\TextB{}
 {\tgbfx Step 1.} $\exists\,v_1\in V\backslash U\Rightarrow v_1\neq 0.$ If $\Spn(v_1)=V$ then we stop.\TextB{}
-{\tgbfx Step k.} Suppose $(v_1,\dots,v_{k-1})$ is linely inde in $V,$ each of which belongs to $V\backslash U.$\TextB{}\quad\qquad\;
-Note that $\Spn(v_1,\dots,v_{k-1})\neq V.$ And if $\Spn(v_1,\dots,v_{k-1})\cup U=V,$ then by (1.C.12),\TextB{}\quad\qquad\;
-( because $\Spn(v_1,\dots,v_{k-1})\not\subseteq U,$ ) $U\subseteq \Spn(v_1,\dots,v_{k-1})\Rightarrow\Spn(v_1,\dots,v_{k-1})=V.$\TextB{}\quad\qquad\;
-Hence because $\Spn(v_1,\dots,v_{k-1})\neq V,$ it must be case that $\Spn(v_1,\dots,v_{k-1})\cup U\neq V.$\TextB{}\quad\qquad\;
-Thus $\exists\,v_k\in V\backslash U$ such that $v_k\not\in\Spn(v_1,\dots,v_{k-1}).$\TextB{}\quad\qquad\;
+{\tgbfx Step k.} Suppose $(v_1,\dots,v_{k-1})$ is linely inde in $V,$ each of which belongs to $V\backslash U.$\TextB{}\Blind{{\tgbfx Step k. }}
+Note that $\Spn(v_1,\dots,v_{k-1})\neq V.$ And if $\Spn(v_1,\dots,v_{k-1})\cup U=V,$ then by (1.C.12),\TextB{}\Blind{{\tgbfx Step k. }}
+( because $\Spn(v_1,\dots,v_{k-1})\not\subseteq U,$ ) $U\subseteq \Spn(v_1,\dots,v_{k-1})\Rightarrow\Spn(v_1,\dots,v_{k-1})=V.$\TextB{}\Blind{{\tgbfx Step k. }}
+Hence because $\Spn(v_1,\dots,v_{k-1})\neq V,$ it must be case that $\Spn(v_1,\dots,v_{k-1})\cup U\neq V.$\TextB{}\Blind{{\tgbfx Step k. }}
+Thus $\exists\,v_k\in V\backslash U$ such that $v_k\not\in\Spn(v_1,\dots,v_{k-1}).$\TextB{}\Blind{{\tgbfx Step k. }}
 By (2.A.11), $(v_1,\dots,v_k)$ is linely inde in $V$. If $\Spn(v_1,\dots,v_k)=V,$ then we stop.\TextB{}
 Because $V$ is finite-dim, this process will stop after $n$ steps.$\hfill\square$\vspace{8pt}\TextB{}
 \Or If $U=\{0\}$ then we are done. Suppose $\dim U\geq 1.$\TextB{}
@@ -964,9 +965,9 @@ $}\Longleftrightarrow T(v+\lambda u)=Tv+\lambda Tu$.}\par\vspace{6pt}
 	\TextN{\centerline{ $T(x_1,\dots,x_n)=(A_{1,1}x_1+\dots+A_{1,n}x_n,\cdots,A_{m,1}x_1+\dots+A_{m,n}x_n)$}}
 	\TextN{for any $(x_1,\dots,x_n)\in\Fbb^n.$}
 }\par\quad
-Let $T(1,0,0,\dots,0,0)=(A_{1,1},\dots,A_{m,1}),$\qquad Note that $(1,0,\dots,0,0),\cdots,(0,0,\dots,0,1)$ is a basis of $\Fbb^n$.\par\quad\quad\,\,\,
-$T(0,1,0,\dots,0,0)=(A_{1,2},\dots,A_{m,2}),$\qquad Then by [3.5], we are done.\PfEnd\qquad\qquad\quad\quad\,\,
-$\vdots$\par\quad\quad\,\,\,
+Let $T(1,0,0,\dots,0,0)=(A_{1,1},\dots,A_{m,1}),$\qquad Note that $(1,0,\dots,0,0),\cdots,(0,0,\dots,0,1)$ is a basis of $\Fbb^n$.\par\quad\Blind{Let}
+$T(0,1,0,\dots,0,0)=(A_{1,2},\dots,A_{m,2}),$\qquad Then by [3.5], we are done.\PfEnd\Blind{Let $T(1,0,0,\dots$}
+$\vdots$\par\quad\Blind{Let}
 $T(0,0,0,\dots,0,1)=(A_{1,n},\dots,A_{m,n}).$\par
 \SepLine\par
 
@@ -1039,8 +1040,8 @@ Let $(v_1,\dots,v_n)$ be a basis of $V$. Let $(w_1,\dots,w_m)$ be linely inde in
 Define $T_{x,y}\in\Lm(V,W)$ by $T_{x,y}(v_z)=\delta_{zy} w_y$, $\forall x\in\{1,\dots,n\},y\in\{1,\dots,m\}$, where $\delta_{zy}=\MathLeftBrace{l}{
 0,\quad z\neq y,\\
 1,\quad z=y.}$\par\quad
-Suppose $a_1 T_{x,1}+\dots+a_m T_{x,m}=0$. Then $(a_1 T_{x,1}+\dots+a_m T_{x,m})(v_x)=0=a_1 w_1+\dots+a_m w_m.$\par\quad
-$\Rightarrow a_1=\dots=a_m=0.$ 又 $m$ arbitrary.\par\quad
+Suppose $a_1 T_{x,1}+\dots+a_m T_{x,m}=0$.\par\quad
+Then $(a_1 T_{x,1}+\dots+a_m T_{x,m})(v_x)=0=a_1 w_1+\dots+a_m w_m\Rightarrow a_1=\dots=a_m=0.$ 又 $m$ arbitrary.\par\quad
 Thus $(T_{x,1},\dots,T_{x,m})$ is a linely inde list in $\Lm(V,W)$ for any $x$ and length $m$. Hence by (2.A.14).\PfEnd
 \SepLine\par
 
@@ -1052,8 +1053,8 @@ We prove by contradiction. By linear dependence lemma, $\,\,\exists\,\,j\in\{1,\
 Fix $j$. Let $w_j\neq 0$, while $w_1=\dots=w_{j-1}=w_{j+1}=w_m=0.$\par\quad
 Define $T$ by $Tv_k=w_k$ for all $k$. Suppose $a_1 v_1+\dots+a_m v_m=0$ ( where $a_j\neq 0$ ).\par\quad
 Then $T(a_1 v_1+\dots+a_m v_m)=0=a_1 w_1+\dots+a_m w_m=a_j w_j$ while $a_j\neq 0$ and $w_j\neq 0.$ Contradicts.\PfEnd\vspace{12pt}\quad
-\Or {\Large\vspace{6pt}\,\dbsp We prove the contrapositive:}\par\qquad\quad
-{\Large\vspace{6pt}\dbsp Suppose $\forall w_1,\dots,w_m\in W,\,\exists\,T\in\Lm(V,W),Tv_k=w_k$  for each $w_k.$}\par\qquad\quad
+\Or {\Large\vspace{6pt}\,\dbsp We prove the contrapositive:}\par\quad\Blind{\Or}
+{\Large\vspace{6pt}\dbsp Suppose $\forall w_1,\dots,w_m\in W,\,\exists\,T\in\Lm(V,W),Tv_k=w_k$  for each $w_k.$}\par\quad\Blind{\Or}
 {\Large\vspace{12pt}\dbsp (We need to) Prove that $(v_1,\dots,v_n)$ is linely inde.}\par\quad
 {\Large\vspace{6pt}Suppose $\,\exists\,a_i\in\Fbb,a_1 v_1+\dots+a_n v_n=0.$ Choose a nonzero $w\in W.$}\par\quad
 {\Large\vspace{10pt}By assumption, for the list $(\overline{a_1}w,\dots,\overline{a_m}w),$ $\,\exists\,T\in\Lm(V,W),Tv_k=\overline{a_k}w$ for each $v_k.$}\par\quad
@@ -1076,10 +1077,10 @@ $\MathRightBrace{l}{$
 Now we prove the assumption by contradiction. Suppose $(v,Tv)$ is linely inde for every $v\in V\backslash\{0\}$.\par\quad
 Fix one $v$. Extend to $(v,Tv,u_1,\dots,u_n)$ a basis of $V$.\par\quad
 Define $S\in\Lm(V)$ by $S(av+bTv+c_1 u_1+\dots+c_n u_n)=bv\Rightarrow S(Tv)=v=T(Sv)=0.$ Contradicts.\PfEnd\vspace{6pt}\quad
-\Or \;{\Large\vspace{6pt}Let $(v_1,\dots,v_m)$ be a basis of $V.$}\par\qquad\quad
-{\Large\vspace{6pt}Define $\varphi\in\Lm(V,\Fbb)$ by $\varphi(v_1)=\cdots=\varphi(v_m)=1.$ Let $\lambda=\varphi(Tv_1)\in\Fbb.$}\par\qquad\quad
-\dbsp{\Large\vspace{6pt}For any $v\in V,$ define $S_v\in\Lm(V)$ by $S_v u=\varphi(u)v.$}\par\qquad\quad
-{\Large\vspace{6pt}Then $Tv=T(\varphi(v_1)v)=T(S_v v_1)=S_v(Tv_1)=\varphi(Tv_1)v=\lambda v.\hfill\square$}\par
+\Or \;{\Large\vspace{6pt}Let $(v_1,\dots,v_m)$ be a basis of $V.$}\par\quad\Blind{\Or }
+{\Large\vspace{6pt}Define $\varphi\in\Lm(V,\Fbb)$ by $\varphi(v_1)=\cdots=\varphi(v_m)=1.$ Let $\lambda=\varphi(Tv_1)\in\Fbb.$}\par\quad\Blind{\Or }
+\dbsp{\Large\vspace{6pt}For any $v\in V,$ define $S_v\in\Lm(V)$ by $S_v u=\varphi(u)v.$}\par\quad\Blind{\Or }
+{\Large\vspace{6pt}Then $Tv=T\left(\varphi(v_1)v\right)=T(S_v v_1)=S_v(Tv_1)=\varphi(Tv_1)v=\lambda v.\hfill\square$}\par
 \SepLine\par
 
 \ProblemB{
@@ -1093,7 +1094,7 @@ Define $S\in\Lm(V)$ by $S(av+bTv+c_1 u_1+\dots+c_n u_n)=bv\Rightarrow S(Tv)=v=T(
 {\Large\vspace{6pt}Define $R_{x,y}\in\Lm(V)$ by $R_{x,y}(v_x)=v_y, R_{x,y}(v_z)=0\,(\,z\neq x\,)$. Then for any $x,y\in\Nbp,$}\par\quad
 {\Large\vspace{6pt}$(R_{k,y}S)(v_i)=a_k v_y\Rightarrow\left((R_{k,y}S)\circ R_{x,i}\right)(v_x)=a_k v_y,\,\,\,\left((R_{k,y}S)\circ R_{x,i}\right)(v_z)=0\,(\,z\neq x\,)$.}\par\quad
 {\Large\vspace{6pt}Thus $R_{k,y}SR_{x,i}=a_k R_{x,y}$. Denote by $T_{x,y}$.}\par\quad
-{\Large\vspace{6pt}Getting $(\displaystyle\frac{1}{a_k}T_{1,1}+\dots+\frac{1}{a_k}T_{n,n})v_j=v_j\Rightarrow${$\sum\limits_{r=1}^n \displaystyle\frac{1}{a_k}T_{r,r}=I.$}}\par\quad
+{\Large\vspace{6pt}Getting $\left(\displaystyle\frac{1}{a_k}T_{1,1}+\dots+\frac{1}{a_k}T_{n,n}\right)v_j=v_j\Rightarrow${$\sum\limits_{r=1}^n \displaystyle\frac{1}{a_k}T_{r,r}=I.$}}\par\quad
 {\Large\vspace{6pt}又 By assumption, $T_{x,y}\in\mathcal{E}\Rightarrow I\in\mathcal{E}.$}\par\quad
 {\Large\vspace{6pt}Hence for any $T\in\Lm(V),I\circ T=T\circ I=T\in\mathcal{E}\Rightarrow \mathcal{E}=\Lm(V).\hfill\square$}\par\large
 \SepLine\par
@@ -1157,7 +1158,8 @@ Let $(v_1,\dots,v_n)$ be a basis of $V$, $(w_1,\dots,w_m)$ be linely inde in $W$
 $\MathRightMid{l}{$
 Define $T_1\in\Lm(V,W)$ as $T_1:\,\,\,\,v_1\mapsto 0,$\qquad$v_2\mapsto w_2,$\qquad$v_i\mapsto w_i$.$\\$
 Define $T_2\in\Lm(V,W)$ as $T_2:\,\,\,\,v_1\mapsto w_1,$ \quad\,$v_2\mapsto 0,$\,\,\,\qquad$v_i\mapsto w_i$,\qquad $i=3,\dots,n.}$ Thus $T_1+T_2\not\in U.\hfill\square\\[10pt]$
-\Comment \,\,\,If $\dim V=0,$ then $V=\{0\}=\Spn(\,)$. $\forall\,\,T\in\Lm(V,W), T$ is inje. Hence $U=\varnothing$.\par\qquad\qquad\quad\,If $\dim V=1,$ then $V=\Spn(v_0).$ Thus $U=\Spn(T_0),$ where $T_0 v_0=0.$\par
+\Comment \,\,\,If $\dim V=0,$ then $V=\{0\}=\Spn(\,)$. $\forall\,\,T\in\Lm(V,W), T$ is inje. Hence $U=\varnothing$.\par\Blind{\Comment\,\,}
+If $\dim V=1,$ then $V=\Spn(v_0).$ Thus $U=\Spn(T_0),$ where $T_0 v_0=0.$\par
 \SepLine\par
 
 \ProblemN{8}{
@@ -1169,7 +1171,8 @@ Let $(v_1,\dots,v_n)$ be linely inde in $V$, $(w_1,\dots,w_m)$ be a basis of $W$
 Define $T_1\in\Lm(V,W)$ as $T_1:\,\,\,\,v_1\mapsto 0,$\qquad$v_2\mapsto w_2,$\qquad$v_j\mapsto w_j,$\qquad$v_{m+i}\mapsto 0.$\par\quad
 Define $T_2\in\Lm(V,W)$ as $T_2:\,\,\,\,v_1\mapsto w_1,$\,\,\,\quad$v_2\mapsto 0,$\,\,\,\qquad$v_j\mapsto w_j,$\qquad$v_{m+i}\mapsto 0.$\par\quad
 ( For each $j=2,\dots,m;\,\,i=1,\dots,n-m$, if $V$ is finite, otherwise let $i\in\Nbp.$ ) Thus $T_1+T_2\not\in U.\hfill\square\\[10pt]$
-\Comment \,\,\,If $\dim W=0,$ then $W=\{0\}=\Spn(\,)$. $\forall\,\,T\in\Lm(V,W), T$ is surj. Hence $U=\varnothing.$\par\qquad\qquad\quad\,If $\dim W=1,$ then $W=\Spn(v_0).$ Thus $U=\Spn(T_0),$ where $T_0 v_0=0.$\par
+\Comment \,\,\,If $\dim W=0,$ then $W=\{0\}=\Spn(\,)$. $\forall\,\,T\in\Lm(V,W), T$ is surj. Hence $U=\varnothing.$\par\Blind{\Comment\,\,}
+If $\dim W=1,$ then $W=\Spn(v_0).$ Thus $U=\Spn(T_0),$ where $T_0 v_0=0.$\par
 \SepLine\par
 \pagebreak
 
@@ -1241,8 +1244,8 @@ Let $(w_1,\dots,w_p)$ be a basis of $W$. Note that $\dim W=p\geq n=\dim V-\dim U
 Define $T\in\Lm(V,W)$ by $T(a_1 v_1+\dots+a_n v_n+b_1 u_1+\dots+b_m u_m)=a_1 w_1+\dots+a_n w_n.\hfill\square$\par
 \SepLine\par
 
-\BulletPoint \,\hspace{1pt}\Tips \,\,\,Suppose $T\in\Lm(V,W)$ and $R=(Tv_1,\dots,Tv_n)$ is linely inde in $\range T$.\TextB{}\hspace{30pt}
-\large ( Let $\dim\range T=n$, if $\range T$ is finite, otherwise let $n\in\Nbp.$ )\TextB{}\hspace{30pt}
+\BulletPoint \,\hspace{1pt}\Tips \,\,\,Suppose $T\in\Lm(V,W)$ and $R=(Tv_1,\dots,Tv_n)$ is linely inde in $\range T$.\TextB{}\Blind{\Tips\,\,\,}
+\large ( Let $\dim\range T=n$, if $\range T$ is finite, otherwise let $n\in\Nbp.$ )\TextB{}\Blind{\Tips\,\,\,}
 {By (3.A.4), $L=(v_1,\dots,v_n)$ is linely inde in $V$.\vspace{4pt}}\par
 \BulletPoint \,\hspace{1pt}\NewNotation\TextB{}
 Denote $\mathcal{K}_R$ by $\Spn L$, if $\range T$ is finite-dim, otherwise, denote it by a vecsp in $\mathcal{S}_V\null T$.\TextB{}
@@ -1357,11 +1360,11 @@ Define $E\in\Lm(W)$ by $E(Sv_i)=Tv_i,\,\,\,Eu=0;$\,\,\, for each $i=1\,\dots,n$ 
 Hence $\forall v\in V,\,\,(\,\exists\,!\,a_i\in\Fbb,u\in\null S\,),\,Tv=a_1 Tv_1+\dots+a_n Tv_n=E(a_1 Sv_1+\dots+a_n Sv_n)\Rightarrow T=ES.$\PfEnd[-6pt]\quad
 \Or Extend $R$ to a basis $(Sv_1,\dots,Sv_n,w_1,\dots,w_m)$ of $W.$\par\quad
 Define $E\in\Lm(W)$ by $E(Sv_k)=Tv_k,\,\,\,Ew_j=0.$\par\quad
-Because $\forall\,v\in V,\,\exists\,a_i\in\Fbb,Sv=a_1 Sv_1+\dots+a_n Sv_n$\par
-\centerline{$\Rightarrow S\left(v-(a_1 v_1+\dots+a_n v_n)\right)=0$\qquad\qquad\qquad\qquad\qquad}\par
-\centerline{$\Rightarrow v-(a_1 v_1+\dots+a_n v_n)\in\null S$\qquad\qquad\qquad\qquad\quad\,\,\,}\par
-\centerline{$\Rightarrow v-(a_1 v_1+\dots+a_n v_n)\in\null T.$\qquad\qquad\qquad\qquad\quad\,\,}\par
-\centerline{$\Rightarrow T\left(v-(a_1 v_1+\dots+a_n v_n)\right)=0$\qquad\qquad\qquad\qquad\qquad}\par\quad
+Because $\forall\,v\in V,\,\exists\,a_i\in\Fbb,Sv=a_1 Sv_1+\dots+a_n Sv_n$\par\quad
+\Blind{Because $\forall\,v\in V,\,\exists\,a_i\in\,$}$\Rightarrow S\left(v-(a_1 v_1+\dots+a_n v_n)\right)=0$\par\quad
+\Blind{Because $\forall\,v\in V,\,\exists\,a_i\in\,$}$\Rightarrow v-(a_1 v_1+\dots+a_n v_n)\in\null S$\par\quad
+\Blind{Because $\forall\,v\in V,\,\exists\,a_i\in\,$}$\Rightarrow v-(a_1 v_1+\dots+a_n v_n)\in\null T$\par\quad
+\Blind{Because $\forall\,v\in V,\,\exists\,a_i\in\,$}$\Rightarrow T\left(v-(a_1 v_1+\dots+a_n v_n)\right)=0.$\par\quad
 Thus $Tv=a_1 v_1+\dots+a_n v_n.$ Hence $E(Sv)=a_1 E(Sv_1)+\dots+a_n E(Sv_n)=a_1 Tv_1+\dots+a_n Tv_n=Tv.\hfill\square$\par
 \SepLine\par
 
@@ -1387,7 +1390,7 @@ $\MathRightBrace{l}{$
 Then $\,\exists\,u\in V,v=Pu,Pv=0\Rightarrow v=Pu=P^2 u=Pv=0.$ Hence $\null P\cap\range P=\{0\}.\,$\par\quad\hspace{18pt}
 (b) Note that $v=Pv+(v-Pv)$ and $P^2 v=Pv$ for all $v\in V.$\par\quad\Hb\hspace{18pt}
 Then $P(v-Pv)=0\Rightarrow v-Pv\in\null P.$ Hence $V=\range P+\null P.\hfill\square$\par
-\SepLine\par
+\SepLine\vspace{4pt}\par
 
 \ProblemN{26}{
 	\TextNL{Prove that the differentiation map $D\in\PoR{}$ is surj.}
@@ -1409,7 +1412,7 @@ Then $P(v-Pv)=0\Rightarrow v-Pv\in\null P.$ Hence $V=\range P+\null P.\hfill\squ
 \SepLine\par
 
 \ProblemN{27}{
-	\TextNL{Suppose $p\in\PoR{}$. Prove that $\,\exists\,q\in\PoR{}$ such that $5q\apostrophe\apostrophe + 3q\apostrophe = p$.\vspace{6pt}}
+	\TextNL{Suppose $p\in\PoR{}$. Prove that $\,\exists\,q\in\PoR{}$ such that $5q\apostrophe\apostrophe + 3q\apostrophe = p$.}
 }\par\quad
 Define $B\in\Lm(\PoR{})$ by $B=5D^2+3D\Rightarrow B(q)=5q\apostrophe\apostrophe+3q\apostrophe$.\par\quad
 Note that $\deg B x^n=n-1.$ Similar to Problem (26), we conclude that $B$ is surj.\PfEnd
@@ -1465,7 +1468,7 @@ While $w_2=Tv_2=\lambda Sv_2=2\lambda w_2\Rightarrow \lambda=\frac{1}{2}$. Contr
 		$\varphi = 0$.}
 }Using notations in (4E 3.A.16).\par\quad
 {\Large\vspace{4pt}Suppose $\varphi\neq 0\Rightarrow\exists\,i,j\in\{1,\dots,n\},\,\varphi(R_{i,j})\neq 0$.}\par\quad
-{\Large\vspace{4pt}Because $R_{i,j}=R_{x,j}\circ R_{i,x},\,\,\forall x=1,\dots,n$}\par\qquad\,
+{\Large\vspace{4pt}Because $R_{i,j}=R_{x,j}\circ R_{i,x},\,\,\forall x=1,\dots,n$}\par\quad\Blind{{\Large Bec\!}}
 {\Large\vspace{4pt}$\Rightarrow\varphi(R_{i,j})=\varphi(R_{x,j})\cdot\varphi(R_{i,x})\neq 0\Rightarrow\varphi(R_{x,j})\neq 0$ and $\varphi(R_{i,x})\neq 0.$}\par\quad
 {\Large\vspace{4pt}Again, because $R_{i,x}=R_{y,x}\circ R_{i,y},\,\,\forall y=1,\dots,n.$ Thus $\varphi(R_{y,x})\neq 0$ for any $x,y=1,\dots,n.$}\par\quad
 {\Large\vspace{4pt}Let $l\neq i,k\neq j$ and then $\varphi(R_{l,k}\circ R_{i,j})=\varphi(0)=0=\varphi(R_{l,k})\cdot\varphi(R_{i,j})$}\par\quad
@@ -2177,8 +2180,8 @@ While $\deg s=\deg Ts=\deg Tr<\deg r$. Contradicts. Hence $\forall p\in\Po_{n+1}
 \ChDecl{Ch3E}{3$\cdot$E}{}
 
 \ProblemNnosolus{1}{
-	\TextN{A function $T:V\rightarrow W$ is linear $\Longleftrightarrow$ $T$ is a subspace of $V\times W.$\vspace{-10pt}}
-}\SepLine\vspace{6pt}\par
+	\TextN{A function $T:V\rightarrow W$ is linear $\Longleftrightarrow$ $T$ is a subspace of $V\times W.$\vspace{-6pt}}
+}\SepLine\par
 
 \ProblemN{2}{
 	\TextN{Suppose $V_1\times\dots\times V_m$ is finite-dim. Prove that each $V_j$ is finite-dim.}
@@ -2250,7 +2253,7 @@ Thus $\pm(v-x)\in U\cap W \Rightarrow\MathLeftBrace{l}{u_1=(x-v)+w_1\in W\Righta
 \ProblemBnosolus{
 	\TextB{Let $U=\left\{(x,y,z)\in\Rbb^3:2x+3y+5z=0\right\}.$ Suppose $A\subseteq\Rbb^3$.}
 	\TextB{Prove that $A$ is a translate of $U\Longleftrightarrow\exists\,c\in\Rbb,A=\left\{(x,y,z)\in\Rbb^3:2x+3y+5z=c\right\}.$}
-	\TextB{[Do it in your mind.]\vspace{-10pt}}
+	\TextB{[Do it in your mind.]\vspace{-6pt}}
 }\SepLine\par
 
 \ProblemB{
