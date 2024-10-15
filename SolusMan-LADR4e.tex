@@ -23,9 +23,10 @@
 \setmathfont{TeXGyrePagellaMath-Regular}
 \setmathfont[range={\mathcal,\Longleftrightarrow,\Longrightarrow,\Longleftarrow,\Rightarrow,\Leftarrow,\Leftrightarrow}]{LatinModernMath-Regular}
 \setmathfont[range={\backslash}]{MathJax_Size1-Regular.otf}
-\setmathfont[range=\mathbb]{TeXGyreSchola-Regular}
+\setmathfont[range={\mathbb}]{TeXGyreSchola-Regular}
 \setmathfont[range={\complement}]{TeXGyrePagella-Bold}
 \setmathfont[range=\mathfrak]{TeXGyrePagella-Regular}
+\setmathfont[range={\tilde}]{DejaVuMathTeXGyre.ttf}
 
 
 \newfontfamily{\tgnr}{TeXGyrePagella-Regular}
@@ -60,7 +61,7 @@
 \def\IndentB{\Blind{\BulletPoint }}
 \def\IndentN{\hspace{8.7pt}}
 \def\IndentNL{\hspace{16pt}}
-\def\IndentE{{\large\Blind{{\BulletPoint} \Example\,\,\,}}}
+\def\IndentE{{\large\Blind{{\BulletPoint} {\Example}\,\,\,}}}
 
 % 用于对齐(a)(b)(c)(d)
 %(a) {text} \par\quad\Ha
@@ -115,39 +116,46 @@
 \newcommand{\MathLeftrightPare}			[2]{\hMath[0pt]{#1}{\left(}{\right)}{#2}}
 
 \newcommand{\hText}[4][-4pt]{\hMath[#1]{c}{#2}{#3}{#4}}
-\newcommand{\Par}[2][-5pt]{\text{\forbra\envFontB(\hspace{1pt}}#2\text{\hspace{1pt}\forbra\envFontB)}}%{\hText[-4pt]{}{}{$\hspace{-1pt}{\envFontB$\hText[#1]{\left(}{\right)}{${\envFont$#2$}$}$}$}}
+\newcommand{\Par}[2][-5pt]{{\text{\forbra\envFontB(\hspace{1pt}}}#2{\text{\hspace{1pt}\forbra\envFontB)}}}%{\hText[-4pt]{}{}{$\hspace{-1pt}{\envFontB$\hText[#1]{\left(}{\right)}{${\envFont$#2$}$}$}$}}
 \newcommand{\Mid}[2][-3pt]{\hText[#1]{\left|}{\right|}{#2}}%{\hText[-2pt]{}{}{$\hspace{-1pt}{\envFontB$\hText[#1]{\left|}{\right|}{${\envFont$#2$}$}$}$}}
-\newcommand{\Bra}[2][-5pt]{\text{\forbra\envFont{\{}}#2\text{\forbra\envFont\}}}%{\hText[-4pt]{}{}{$\hspace{-1pt}{\envFontB$\hText[#1]{\left\{}{\right\}}{${\envFont$#2$}$}$}$}}
+\newcommand{\Bra}[2][-5pt]{{\text{\forbra\envFont{\{}}}#2{\text{\forbra\envFont\}}}}%{\hText[-4pt]{}{}{$\hspace{-1pt}{\envFontB$\hText[#1]{\left\{}{\right\}}{${\envFont$#2$}$}$}$}}
 \newcommand{\SmallPar}[1]{\text{(}#1\text{)}}
-\newcommand{\BigPar}[1]{\text{\envFont\forbra(\hspace{1pt}}#1\text{\hspace{1pt}\envFont\forbra)}}
-\newcommand{\XPar}[1]{\text{\envFont\forbrax(\hspace{1pt}}#1\text{\hspace{1pt}\envFont\forbrax)}}
-\newcommand{\Sbra}[1]{\text{\envFont\forbra[\hspace{1pt}}#1\text{\envFont\forbra\hspace{1pt}]}}
-\newcommand{\XSbra}[1]{\text{\envFont\forbrax[}#1\text{\envFont\forbrax]}}
+\newcommand{\BigPar}[1]{{\text{\envFont\forbra(\hspace{1pt}}}#1{\text{\hspace{1pt}\envFont\forbra)}}}
+\newcommand{\XPar}[1]{{\text{\envFont\forbrax(\hspace{1pt}}}#1{\text{\hspace{1pt}\envFont\forbrax)}}}
+\newcommand{\Sbra}[1]{{\text{\envFont\forbra[\hspace{1pt}}}#1{\text{\envFont\forbra\hspace{1pt}]}}}
+\newcommand{\XSbra}[1]{{\text{\envFont\forbrax[}}#1{\text{\envFont\forbrax]}}}
 \newcommand{\zeroSubs}[1][\Bra]{{#1{0}}}
 
 \newcommand{\ExampleX}[2][\Solution]{
-	{\BulletPoint} \Example\,\,\,#2\envFontDefault\vspace{-16pt}\par
+	{\BulletPoint} {\Example}\,\,\,{#2}\envFontDefault\vspace{-16pt}\par
 	#1
 }
 \newcommand{\ProblemN}[3][\Solution]{
-	\Onumber{#2} #3\envFontDefault\vspace{-16pt}\par
+	{\Onumber{#2}} {#3}\envFontDefault\vspace{-16pt}\par
+	#1
+}
+\newcommandx{\ProblemNor}[5][1=\Solution,4=\Sbra]{
+	{\Onumber{#2}} {\dbsp#4{\OR({\normalsize#3})}}{#5}\envFontDefault\vspace{-16pt}\par
+	#1
+}
+\newcommand{\ProblemNnoor}[4][\Solution]{
+	{\Onumber{#2}} \dbsp({\small#3}){#4}\envFontDefault\vspace{-16pt}\par
 	#1
 }
 \newcommand{\ProblemB}[2][\Solution]{
-	\BulletPoint #2\envFontDefault\vspace{-16pt}\par
+	{\BulletPoint}{#2}\envFontDefault\vspace{-16pt}\par
 	#1
 }
 \newcommand{\ProblemBc}[2][\Solution]{
-	$\circ$#2\envFontDefault\vspace{-16pt}\par
+	{$\circ$}{#2}\envFontDefault\vspace{-16pt}\par
 	#1
 }
-\newcommand{\ProblemBnoor}[3][\Solution]{
-	\BulletPoint {\normalsize#2}#3\envFontDefault\vspace{-16pt}\par
+\newcommandx{\ProblemBnoor}[4][1=\Solution,3=\Par]{
+	{\BulletPoint} \dbsp#3{{\small#2}}{#4}\envFontDefault\vspace{-16pt}\par
 	#1
 }
 \newcommand{\ProblemBor}[3][\Solution]{
-	\BulletPoint \dbsp\OR({\normalsize#2})
-	#3\envFontDefault\vspace{-16pt}\par
+	{\BulletPoint} {\dbsp\OR({\normalsize#2})}{#3}\envFontDefault\vspace{-16pt}\par
 	#1
 }
 \newcommand{\AlignEq}[2]{
@@ -423,8 +431,8 @@ Thus $U\subseteq W$ and $U\supseteq W.$\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{1C13}{13}}{
-	\TextNL{\dbsp Prove that the union of three subsps of \,$V$ is a subsp of \,$V$}
-	\TextNL{\dbsp if and only if one of the subsps contains the other two.}
+	\TextNL{Prove that the union of three subsps of \,$V$ is a subsp of \,$V$}
+	\TextNL{if and only if one of the subsps contains the other two.}
 	{\tgsl\normalsize\dbsp This exercise is not true if we replace $\Fbb$ with a field containing only two elements.}\par\quad
 }\par\quad
 Suppose $U_1,U_2,U_3$ are subsps of $V$. Denote $U_1\cup U_2\cup U_3$ by $\mathcal{U}.$\par\quad
@@ -434,13 +442,13 @@ Suppose $U_1,U_2,U_3$ are subsps of $V$. Denote $U_1\cup U_2\cup U_3$ by $\mathc
 Distinctively notice that $A\cup B\cup C=\Par{A\cup B}\cup\Par{B\cup C}=\Par{A\cup C}\cup\Par{B\cup C}=\Par{A\cup B}\cup\Par{A\cup C}.$\par\quad\Hb
 Also note that, if $U\cup W=V$ is a vecsp, then in general $U$ and $W$ are not subsps of $V.$\par\quad\Hb
 Hence this literal trick is invalid.\par\quad\Hb
-(I) \dbsp If any $U_j$ is contained in the union of the other two, say $U_1\subseteq U_2\cup U_3,$ then $\mathcal{U}=U_2\cup U_3.$\par\quad\Hb\HI
-\dbsp By applying Problem (12) we conclude that one $U_j$ contains the other two. Thus we are done.\vspace{6pt}\par\quad\Hb\EndI
+(I) {\dbsp}If any $U_j$ is contained in the union of the other two, say $U_1\subseteq U_2\cup U_3,$ then $\mathcal{U}=U_2\cup U_3.$\par\quad\Hb\HI
+{\dbsp}By applying Problem (12) we conclude that one $U_j$ contains the other two. Thus we are done.\vspace{6pt}\par\quad\Hb\EndI
 (II) \envFontLarge\dbsp{\Large\vspace{6pt}Assume that no $U_j$ is contained in the union of the other two,}\par\quad\Hb\HII\hspace{56pt}{\Large\vspace{6pt}and no $U_j$ contains the union of the other two.}\par\quad\Hb\HII
 \dbsp{\Large\vspace{6pt}Say $U_1\not\subseteq U_2\cup U_3$ and $U_1\not\supseteq U_2\cup U_3.$}\par\quad\Hb\HII
-{\Large\vspace{6pt}$\exists\,u\in U_1\wedge u\not\in U_2\cup U_3;\;v\in U_2\cup U_3\wedge v\not\in U_1.$ Let $W=\Bra{v+\lambda u:\lambda\in\Fbb}\,\subseteq\mathcal{U}.$}\par\quad\Hb\HII
-{\Large\vspace{6pt}Note that $W\cap U_1=\emptyset,$ for if $v+\lambda u\in U_1$ then $v+\lambda u-\lambda u=v\in U_1$.}\par\quad\Hb\HII
-{\Large\vspace{6pt}又 $W\subseteq U_1\cup U_2\cup U_3.$ Thus $W\subseteq U_2\cup U_3.$}\par\quad\Hb\HII
+{\dbsp}{\Large\vspace{6pt}$\exists\,u\in U_1\wedge u\not\in U_2\cup U_3;\;v\in U_2\cup U_3\wedge v\not\in U_1.$ Let $W=\Bra{v+\lambda u:\lambda\in\Fbb}\,\subseteq\mathcal{U}.$}\par\quad\Hb\HII
+{\dbsp}{\Large\vspace{6pt}Note that $W\cap U_1=\emptyset,$ for if $v+\lambda u\in U_1$ then $v+\lambda u-\lambda u=v\in U_1$.}\par\quad\Hb\HII
+{\dbsp}{\Large\vspace{6pt}又 $W\subseteq U_1\cup U_2\cup U_3.$ Thus $W\subseteq U_2\cup U_3.$}\par\quad\Hb\HII
 {\Large\vspace{6pt}$\forall v+\lambda u\in W,\exists\,i\in\Bra{2,3},v+\lambda u\in U_i.$}\par\quad\Hb\HII
 {\Large\vspace{6pt}Because $U_2,U_3$ are subsps and hence have at least one element.}\par\quad\Hb\HII
 {\Large\vspace{6pt}If $U_2=U_3,$ then $\mathcal{U}=U_1\cup U_2$ and by Problem (12) we are done.}\par\quad\Hb\HII
@@ -449,8 +457,8 @@ Hence this literal trick is invalid.\par\quad\Hb
 \SepLine
 
 \vfill\ExampleX[]{
-	\TextE{Suppose $U=\Bra{\Par{x,x,y,y}\in\Fbb^4:x,y\in\Fbb},W=\Bra{\Par{x,x,x,y}\in\Fbb^4:x,y\in\Fbb}.$\vspace{3pt}}
-	\TextE{Prove that $U+W=\Bra{\Par{x,x,y,z}\in\Fbb^4:x,y,z\in\Fbb}$.\vspace{3pt}}
+	\TextE{Suppose $U=\Bra{\Par{x,x,y,y}\in\Fbb^4},W=\Bra{\Par{x,x,x,y}\in\Fbb^4}.$\vspace{3pt}}
+	\TextE{Prove that $U+W=\Bra{\Par{x,x,y,z}\in\Fbb^4}$.\vspace{3pt}}
 }\par\quad
 Let T denote $\Bra{\Par{x,x,y,z}\in\Fbb^4:x,y,z\in\Fbb}$. By def, $U+W\subseteq T.$\par\quad
 And $T\ni\Par{x,x,y,z}\Rightarrow\Par{0,0,y-x,y-x}+\Par{x,x,x,-y+x+z}\in U+W$. Hence $T\subseteq U+W.$\PfEnd
@@ -458,19 +466,19 @@ And $T\ni\Par{x,x,y,z}\Rightarrow\Par{0,0,y-x,y-x}+\Par{x,x,x,-y+x+z}\in U+W$. H
 \pagebreak
 
 \ProblemN{\hypertarget{1C21}{21}}{
-	\TextNL{Suppose $U=\Bra{\Par{x,y,x+y,x-y,2x}\in\Fbb^5:x,y\in\Fbb}$. Find a $W$ such that $\Fbb^5=U\oplus W$.}
+	\TextNL{Suppose $U=\Bra{\Par{x,y,x+y,x-y,2x}\in\Fbb^5}$. Find a $W$ such that $\Fbb^5=U\oplus W$.}
 }\par\quad
-Let $W=\Bra{\Par{0,0,z,w,u}\in\Fbb^5:z,w,u\in\Fbb}$. Then $U\cap W=\zeroSubs$.\par\quad
+Let $W=\Bra{\Par{0,0,z,w,u}\in\Fbb^5}$. Then $U\cap W=\zeroSubs$.\par\quad
 And $\Fbb^5\ni\Par{x,y,z,w,u}\Rightarrow\Par{x,y,x+y,x-y,2x}+\Par{0,0,z-x-y,w-x-y,u-2x}\in U+W.$\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{1C23}{23}}{
-	\TextNL{Give an example of vecsps $V_1,V_2,U$ such that $V_1\oplus U=V_2\oplus U$, but $V_1\neq V_2$.}
+	\TextNL{Give an example of vecsps $V_1,V_2,U$ such that $V_1\oplus U=V_2\oplus U$, but $V_1\neq V_2$.\vspace{3pt}}
 }$V=\Fbb^2$,  $U=\Bra{\Par{x,x}\in\Fbb^2}$, $V_1=\Bra{\Par{x,0}\in\Fbb^2}$, $V_2=\Bra{\Par{0,x}\in\Fbb^2}$.\par
 \SepLine
 
 \ProblemN{\hypertarget{1C22}{22}}{
-	\TextNL{Suppose $U=\Bra{\Par{x,y,x+y,x-y,2x}\in\Fbb^5:x,y\in\Fbb}$.}
+	\TextNL{Suppose $U=\Bra{\Par{x,y,x+y,x-y,2x}\in\Fbb^5}$.}
 	\TextNL{Find nonzero subsps $W_1,W_2,W_3$ of $\,\Fbb^5$ such that $\Fbb^5 = U\oplus W_1\oplus W_2\oplus W_3 $.}
 }\par\quad
 (1) Let $W_1=\Bra{\Par{0,0,z,0,0}\in\Fbb^5}\Rightarrow W_1\cap U=\zeroSubs.$ Now $U\oplus W_1=\Bra{\Par{x,y,z,x-y,2x}\in\Fbb^5}=U_1$.\par\quad
@@ -483,7 +491,10 @@ Thus $\Fbb^5=\BigPar{\Par{U\oplus W_1}\oplus W_2}\oplus W_3.$\PfEnd
 	\TextNL{Let $V_E=\Bra{\,f\in\Rbb^{\Rbb}:\text{f is even}},V_O=\Bra{\,f\in\Rbb^{\Rbb}:\text{f is odd}}.$ Show that $V_E\oplus V_O=\Rbb^{\Rbb}.$}
 }\par\quad
 (a) {$V_E\cap V_O=\Bra{\,f\in\Rbb^{\Rbb}:f\Par{x}=f\Par{-x}=-f\Par{-x}}=\zeroSubs.$}\par\vspace{12pt}\quad
-(b) \hspace{-10pt}{$\MathRightBrace{r}{f_e\in V_E\Longleftrightarrow f_e\Par{x}=f_e\Par{-x}\Longleftarrow$  let $f_e\Par{x}=\displaystyle\frac{g\Par{x}+g\Par{-x}}{2}\vspace{4pt}\\ f_o\in V_O\Longleftrightarrow f_o\Par{x}=-f_o\Par{-x}\Longleftarrow$ let $f_o\Par{x}=\displaystyle\frac{g\Par{x}-g\Par{-x}}{2}}\Rightarrow \forall g\in\Rbb^\Rbb,g\Par{x}=f_e\Par{x}+f_o\Par{x}.$}\PfEnd
+(b) $\MathRightBrace{l}{$
+	Let $f_e\Par{x}=\displaystyle\frac{g\Par{x}+g\Par{-x}}{2}\Longrightarrow f_e\in V_E\vspace{4pt}\\$
+	Let $f_o\Par{x}=\displaystyle\frac{g\Par{x}-g\Par{-x}}{2}\Longrightarrow f_o\in V_O
+	}\Rightarrow\forall g\in\Rbb^\Rbb,g\Par{x}=f_e\Par{x}+f_o\Par{x}.$\PfEnd
 \SepLine
 \ChEnd
 
@@ -721,11 +732,11 @@ Hence $m\geqslant\dim\Span{v_1+w,\dots,v_m+w}\geq m-1.$\PfEnd
 {\Large Now $L=a_{k-1}p_{k-1}\Par{x}+\dots+a_0p_0\Par{x}.$}\vspace{6pt}\PfEnd
 \SepLine
 
-\ProblemB{
-	({\normalsize\hypertarget{2C4e10}4E 2.C.10}) \TextB{Suppose $m$ is a positive integer. For $0\leqslant k\leqslant m$, let $p_k\Par{x}=x^k\Par{1-x}^{m-k}$.}
+\ProblemBnoor{\hypertarget{2C4e10}4E 2.C.10}{
+	\TextB{Suppose $m$ is a positive integer. For $0\leqslant k\leqslant m$, let $p_k\Par{x}=x^k\Par{1-x}^{m-k}$.}
 	\TextB{Show that $\Par{p_0,\dots,p_m}$ is a basis of $\PoF{}$.}
-	\TextB{\large The basis in this exercise leads to what are called Bernstein polynomials. You can do a web search to learn how}
-	\TextB{\large Bernstein polynomials are used to approximate continuous functions on $[0, 1]$.}
+	\TextB{{\large The basis in this exercise leads to what are called Bernstein polynomials. You can do a web search to learn how}}
+	\TextB{{\large Bernstein polynomials are used to approximate continuous functions on $[0, 1]$.}}
 }Using mathematical induction.\par\quad
 (i) \dbsp{\Large$k=0,1,2$, $p_m\Par{x}=x^m,\,\,\,p_{m-1}\Par{x}=x^{m-1}-x^m,\,\,\,p_{m-2}\Par{x}=x^{m-2}+x^m-2x^{m-1}.$\par}\quad\Endi
 (ii) \dbsp{\Large$k\geqslant 2.$ {\large Suppose for} $p_{m-k}\Par{x},\exists\,!\,a_i\in\Fbb,$ $x^{m-k}=p_{m-k}\Par{x}+a_m x^m+\dots+a_{m-k+1}x^{m-k+1}.$\par}\quad\Hii
@@ -800,8 +811,8 @@ And $\Dim\Par{V_2\cap V_3}=\dim V_2+\dim V_3-\Dim\Par{V_2+V_3}.$\par
 %{But if $\dim V_i\geqslant\left\lfloor{\frac{\dim V}{2}}\right\rfloor+2,$ then $s$.}\par
 %\SepLine
 
-\ProblemB{
-	\hypertarget{2C4e16}{({\normalsize 4E 2.C.16})}\TextB{}
+\ProblemBnoor{\hypertarget{2C4e16}{4E 2.C.16}}{
+	\TextB{}
 	\TextB{Suppose $V$ is finite-dim and $U$ is a subsp of \,$V$ with $U\neq V$. Let $n=\dim V,m=\dim U$.}
 	\TextB{Prove that $\exists\,\Par{n-m}$ subsps  $U_1,\dots,U_{n-m}$, each of dim $\Par{n-1}$, such that $\bigcap\limits_{i=1}^{n-m}U_i=U$.}
 }\par\quad
@@ -880,8 +891,8 @@ Extend $\Par{w}$ to a basis $\Par{w,w_1,\dots,w_{m-1}}$ of $W.$ Let $w_m=w-w_1-\
 \SepLine
 
 \ProblemB[]{
-	\NewTheorem \,\,\,\TextB{Suppose $V$ is finite-dim with $\dim V=n$ and $U$ is a subsp of \,$V$ with $U\neq V.$}
-	\qquad\qquad\qquad\quad\hspace{1pt}\TextB{Prove that $\exists\,B_V=\Par{v_1,\dots,v_n}$ such that each $v_k\not\in U.$}
+	{\NewTheorem \,\,\,}\TextB{Suppose $V$ is finite-dim with $\dim V=n$ and $U$ is a subsp of \,$V$ with $U\neq V.$}
+	\Blind{\NewTheorem\,\,\,}\TextB{Prove that $\exists\,B_V=\Par{v_1,\dots,v_n}$ such that each $v_k\not\in U.$}
 }\TextB{\vspace{0pt}}
 Note that $U\neq V\Rightarrow n\geqslant 1.$ We will construct $B_V$ via the following process.\TextB{}
 {\tgbfx Step 1.} $\exists\,v_1\in V\backslash U\Rightarrow v_1\neq 0.$ If $\Span{v_1}=V$ then we stop.\TextB{}
@@ -985,10 +996,11 @@ Where we let $B_U=\Par{u_1,\dots,u_n},B_V=\Par{u_1,\dots,u_n,\dots,u_m}.$\PfEnd
 	\TextNL{Suppose nonzero $V$ is finite-dim and $W$ is infinite-dim. Prove that $\Lm{V,W}$ is infinite-dim.}
 }\par\quad
 Let $\Par{v_1,\dots,v_n}$ be a basis of $V$. Let $\Par{w_1,\dots,w_m}$ be linely inde in $W$ for any $m\in\Nbp$.\par\quad
-Define $T_{x,y}\in\Lm{V,W}$ by $T_{x,y}\Par{v_z}=\delta_{zy} w_y$, $\forall x\in\!\Bra{1,\dots,n},y\in\!\Bra{1,\dots,m}$, where $\delta_{zy}=\MathLeftBrace{l}{
-0,\quad z\neq y,\\
-1,\quad z=y.}$\par\quad
-Suppose $a_1 T_{x,1}+\dots+a_m T_{x,m}=0$.\par\quad
+Define $T_{x,y}:V\rightarrow W$ by $T_{x,y}\Par{v_z}=\delta_{z,x} w_y$, $\forall x\in\!\Bra{1,\dots,n},y\in\!\Bra{1,\dots,m}$, where $\delta_{z,x}=\MathLeftBrace{l}{
+0,\quad z\neq x,\\
+1,\quad z=x.}$\par\quad
+$\forall v=\sum_{i=1}^n a_iv_i,\;u=\sum_{i=1}^n b_iv_i,\;\lambda\in\Fbb,T_{x,y}\Par{v+\lambda u}=\Par{a_x+\lambda b_x}v_y=T_{x,y}\Par{v}+\lambda T_{x,y}\Par{u}.$\par\quad
+Linearity checked. Now suppose $a_1 T_{x,1}+\dots+a_m T_{x,m}=0$.\par\quad
 Then $\Par{a_1 T_{x,1}+\dots+a_m T_{x,m}}\Par{v_x}=0=a_1 w_1+\dots+a_m w_m\Rightarrow a_1=\dots=a_m=0.$ 又 $m$ arbitrary.\par\quad
 Thus $\Par{T_{x,1},\dots,T_{x,m}}$ is a linely inde list in $\Lm{V,W}$ for any $x$ and length $m$. Hence by (2.A.14).\PfEnd
 \SepLine
@@ -1001,23 +1013,23 @@ We prove by contradiction. By linear dependence lemma, $\exists\,j\in\!\Bra{1,\d
 Fix $j$. Let $w_j\neq 0$, while $w_1=\dots=w_{j-1}=w_{j+1}=w_m=0.$\par\quad
 Define $T$ by $Tv_k=w_k$ for all $k$. Suppose $a_1 v_1+\dots+a_m v_m=0$ ( where $a_j\neq 0$ ).\par\quad
 Then $T\BigPar{a_1 v_1+\dots+a_m v_m}=0=a_1 w_1+\dots+a_m w_m=a_j w_j$ while $a_j\neq 0$ and $w_j\neq 0.$ Contradicts.\PfEnd\vspace{12pt}\quad
-\Or \envFontLarge{\Large\vspace{6pt}\,\dbsp We prove the contrapositive:}\par\quad\Blind{\Or}
-{\Large\vspace{6pt}\dbsp Suppose $\forall w_1,\dots,w_m\in W,\exists\,T\in\Lm{V,W},Tv_k=w_k$  for each $w_k.$}\par\quad\Blind{\Or}
-{\Large\vspace{12pt}\dbsp \BigPar{We need to} Prove that $\Par{v_1,\dots,v_n}$ is linely inde.}\par\quad
-{\Large\vspace{6pt}Suppose $\exists\,a_i\in\Fbb,a_1 v_1+\dots+a_n v_n=0.$ Choose a nonzero $w\in W.$}\par\quad
+\Or \;{We prove the contrapositive:}\par\quad
+\Blind{\Or \;}\envFontLarge{\Large\vspace{6pt}Suppose $\forall w_1,\dots,w_m\in W,\exists\,T\in\Lm{V,W},Tv_k=w_k$  for each $w_k.$}\par\quad
+\Blind{\Or \;}{\vspace{6pt}\BigPar{We need to} \Large Prove that $\Par{v_1,\dots,v_n}$ is linely inde.}\par\quad
+{\Large\vspace{6pt}Suppose $\exists\,a_i\in\Fbb,a_1 v_1+\dots+a_n v_n=0.$ Choose one $w\in W\backslash\envFontDefault\zeroSubs.$}\par\quad
 {\Large\vspace{10pt}By assumption, for the list $\BigPar{\overline{a_1}w,\dots,\overline{a_m}w},\exists\,T\in\Lm{V,W},Tv_k=\overline{a_k}w$ for each $v_k.$}\par\quad
 {\Large\vspace{10pt}Now we have $\displaystyle 0=T\XPar{\sum\limits_{k=1}^m a_k v_k}=\sum\limits_{k=1}^m a_k Tv_k=\sum\limits_{k=1}^m a_k\overline{a_k}w=\XPar{\sum\limits_{k=1}^m \left|a_k\right|{^2}}w.$}\par\quad
 {\Large Then $\sum_{k=1}^m\left|a_k\right|^2=0\Rightarrow a_k=0$ for each $k.$ Hence $\Par{v_1,\dots,v_n}$ is linely inde.}\PfEnd
 \SepLine\pagebreak
 
 \ProblemBor{3.D.16}{
-	\TextB{Suppose $V$ is finite-dim and $T\in\Lm{V}$ such that $\forall S\in\Lm{V},ST=TS$.}
+	\TextB{Suppose $V$ is finite-dim. $T\in\Lm{V}$ is such that $\forall S\in\Lm{V},ST=TS$.}
 	\TextB{Prove that $\exists\,\lambda\in\Fbb,T=\lambda I$.}
 }\par\quad
 If $V=\zeroSubs,$ then we are done. Now suppose $V\neq\zeroSubs.$\par\quad
 Assume that $\Par{v,Tv}$ is linely depe for every $v\in V$, then by (2.A.2.(b)), $Tv=\lambda_v v$ for some $\lambda_v\in\Fbb.$\par\quad
 To prove that $\lambda_v$ is independent of $v$\par\quad
-( in other words, for any two distinct $v,w$ in $V\backslash\zeroSubs$, we have $\lambda_v\neq\lambda_w$ ), we discuss in two cases:\vspace{4pt}\par\hspace{1pt}
+\XPar{ in other words, for any two distinct $v,w$ in $V\backslash\zeroSubs$, we have $\lambda_v\neq\lambda_w$ }, we discuss in two cases:\vspace{4pt}\par\hspace{1pt}
 $\MathRightBrace{l}{$
 	$\Par{-}$ If $\Par{v,w}$ is linely inde, $\lambda_{v+w}\Par{v+w}=T\Par{v+w}=Tv+Tw=a_v v+a_w w\\ $\qquad\qquad\qquad\qquad\qquad\qquad\qquad $\Rightarrow \Par{\lambda_{v+w}-\lambda_v}v+\Par{\lambda_{v+w}-\lambda_w}w=0\\ $
 	$\Par{=}$ Otherwise, suppose $w=cv$, $a_w w=Tw=cTv=ca_v v=a_v w\Rightarrow\Par{a_w-a_v}w$
@@ -1025,32 +1037,39 @@ $\MathRightBrace{l}{$
 Now we prove the assumption by contradiction. Suppose $\Par{v,Tv}$ is linely inde for every $v\in V\backslash\zeroSubs$.\par\quad
 Fix one $v$. Extend to $\Par{v,Tv,u_1,\dots,u_n}$ a basis of $V$.\par\quad
 Define $S\in\Lm{V}$ by $S\Par{av+bTv+c_1 u_1+\dots+c_n u_n}=bv\Rightarrow S\Par{Tv}=v=T\Par{Sv}=0.$ Contradicts.\PfEnd\vspace{6pt}\quad
-\Or \;{\Large\vspace{6pt}Let $\Par{v_1,\dots,v_m}$ be a basis of $V.$}\par\quad\Blind{\Or }
-{\Large\vspace{6pt}Define $\varphi\in\Lm{V,\Fbb}$ by $\varphi\Par{v_1}=\cdots=\varphi\Par{v_m}=1.$ Let $\lambda=\varphi\Par{Tv_1}\in\Fbb.$}\par\quad\Blind{\Or }
-\dbsp{\Large\vspace{6pt}For any $v\in V,$ define $S_v\in\Lm{V}$ by $S_v u=\varphi\Par{u}v.$}\par\quad\Blind{\Or }
-{\Large\vspace{6pt}Then $Tv=T\Par{\varphi\Par{v_1}v}=T\Par{S_v v_1}=S_v\Par{Tv_1}=\varphi\Par{Tv_1}v=\lambda v.$}\PfEnd
+\Or \;{\vspace{6pt}Let $\Par{v_1,\dots,v_m}$ be a basis of $V.$}\par\quad
+\Blind{\Or \;}\envFontLarge{\Large\vspace{6pt}Define {\Large$\varphi\in\Lm{V,\Fbb}$} by $\varphi\Par{v_1}=\cdots=\varphi\Par{v_m}=1.$ Let $\lambda=\varphi\Par{Tv_1}\in\Fbb.$}\par\quad
+\Blind{\Or \;}{\Large\vspace{6pt}For any $v\in V,$ define $S_v\in\Lm{V}$ by $S_v u=\varphi\Par{u}v.$}\par\quad
+\Blind{\Or \;}{\Large\vspace{6pt}Then $Tv=T\Par{\varphi\Par{v_1}v}=T\Par{S_v v_1}=S_v\Par{Tv_1}=\varphi\Par{Tv_1}v=\lambda v.$}\PfEnd\vspace{10pt}\quad
+\Or \;{\envFontDefault For each {$k\in\Bra{1,\dots,n}$}, define $S_k\in\Lm{V}$ by $S_kv_j=\MathLeftBrace{l}{v_k,\,j=k,\\0,\;\,j\neq k.}$ \Or $S_kv_j=\delta_{j,k}v_k$}\par\quad
+\Blind{\Or \;}{\vspace{6pt}Note that {\Large$S_k\XPar{\sum_{i=1}^n a_i v_i}=a_k v_k$}. Then {\Large$S_kv=v\Longleftrightarrow\exists\,!\,a_k\in\Fbb,v=a_kv_k$}.}\par\quad
+\Blind{\Or \;}{\vspace{6pt}Hence {\Large$S_k\Par{Tv_k}=T\Par{S_kv_k}=Tv_k\Rightarrow Tv_k=a_k v_k$}.}\par\quad
+\Blind{\Or \;}{\vspace{6pt}Define {\Large$\envFontSmall[\small]A^{\Par{j,k}}\in\Lm{V}$} by {\Large$\envFontSmall[\small]A^{\Par{j,k}}v_j=v_k,A^{\Par{j,k}}v_k=v_j,A^{\Par{j,k}}v_x=0,x\neq j,k$}.}\par\quad
+\Blind{\Or \;}{\vspace{6pt}Then {$\envFontSmall[\small]A^{\Par{j,k}}Tv_j=TA^{\Par{j,k}}v_j=Tv_k=a_kv_k$} and {$\envFontSmall[\small]A^{\Par{j,k}}Tv_j=A^{\Par{j,k}}a_jv_j=a_jA^{\Par{j,k}}v_j=a_jv_k.$}}\par\quad
+\Blind{\Or \;}{Hence $a_k=a_j.$ Thus $a_k$ is independent of $v_k.$}\PfEnd
 \SepLine
 
-\ProblemB{
-	({\normalsize 4E 3.A.16})\TextB{}
+%\ProblemB[]{
+%	\Tips\,\,\,\TextB{Define $\delta_{j,k}=\MathLeftBrace{l}{0,\quad j\neq k,\\1,\quad j=k.}\MathLeftMid{l}{$
+%		$S_k$ defined above can be rewritten by $S_kv_j=\delta_{j,k}v_k.$ $\\$
+%		$R_{x,y}$ defined below can be rewritten by $R_{x,y}v_z=\delta_{z,x}v_y.$ $}$}
+%}\SepLine
+
+\ProblemBnoor{4E 3.A.16}{
+	\TextB{}
 	\TextB{Suppose $V$ is finite-dim. Show that the only two-sided ideals of $\Lm{V}$ are $\zeroSubs$ and $\Lm{V}$.}
 	\TextB{{\large\envFontDefault A subsp $\mathcal{E}$ of $\Lm{V}$ is called a two-sided ideal of $\Lm{V}$ if $TE\in\mathcal{E},ET\in\mathcal{E},\,\,\forall E\in\mathcal{E},T\in\Lm{V}$.}}
-}\par\quad
-{\Large\vspace{6pt}Let $\Par{v_1,\dots,v_n}$ be a basis of $V$. If $\mathcal{E}=0$, then we are done.}\par\quad
-{\Large\vspace{6pt}Suppose $\mathcal{E}\neq 0$ and $\mathcal{E}$ is a two-sided ideal of $\Lm{V}$. Let $S\in\mathcal{E}\backslash\zeroSubs$.}\par\quad
-{\Large\vspace{6pt}Suppose $Sv_i\neq 0$ and $Sv_i=a_1 v_1+\dots+a_n v_n$, where $a_k\neq 0$.}\par\quad
-{\Large\vspace{6pt}Define $R_{x,y}\in\Lm{V}$ by $R_{x,y}\Par{v_x}=v_y, R_{x,y}\Par{v_z}=0\,\Par{\,z\neq x\,}$. Then for any $x,y\in\Nbp,$}\par\quad
-{\Large\vspace{6pt}$\Par{R_{k,y}S}\Par{v_i}=a_k v_y\Rightarrow\BigPar{\Par{R_{k,y}S}\circ R_{x,i}}\Par{v_x}=a_k v_y,\,\,\,\BigPar{\Par{R_{k,y}S}\circ R_{x,i}}\Par{v_z}=0\,\Par{\,z\neq x\,}$.}\par\quad
-{\Large\vspace{6pt}Thus $R_{k,y}SR_{x,i}=a_k R_{x,y}$. Denote by $T_{x,y}$.}\par\quad
-{\Large\vspace{6pt}Getting $\Par{\displaystyle\frac{1}{a_k}T_{1,1}+\dots+\frac{1}{a_k}T_{n,n}}v_j=v_j.$ So that {$\displaystyle\sum\limits_{r=1}^n \frac{1}{a_k}T_{r,r}=I.$}}\par\quad
-{\Large\vspace{6pt}又 By assumption, $T_{x,y}\in\mathcal{E}\Rightarrow I\in\mathcal{E}.$}\par\quad
-{\Large\vspace{6pt}Hence for any $T\in\Lm{V},I\circ T=T\circ I=T\in\mathcal{E}\Rightarrow \mathcal{E}=\Lm{V}.$}\large\PfEnd
-\SepLine
+}{Let $\Par{v_1,\dots,v_n}$ be a basis of $V$. If $\mathcal{E}=0$, then we are done.}\par\quad
+{\vspace{3pt}Suppose $\mathcal{E}\neq 0$ and $\mathcal{E}$ is a two-sided ideal of $\Lm{V}$. Let $S\in\mathcal{E}\backslash\envFontDefault\zeroSubs$.}\par\quad
+{\vspace{3pt}Suppose $Sv_i\neq 0$ and $Sv_i=a_1 v_1+\dots+a_n v_n$, where $a_k\neq 0$.}\par\quad
+\envFontLarge{\vspace{6pt}Define $R_{x,y}\in\Lm{V}$ by {\Large$R_{x,y}\Par{v_x}=v_y, R_{x,y}\Par{v_z}=0\,\Par{\,z\neq x\,}$}. \Or {\Large$R_{x,y}v_z=\delta_{z,x}v_y$}.}\par\quad
+{\vspace{6pt}Then {\Large$\BigPar{R_{1,1}+\dots+R_{n,n}}v_j=v_j\Rightarrow\sum_{r=1}^n R_{r,r}=I$}. Assume that {\Large each $R_{x,y}\in\mathcal{E}$}.}\par\quad
+{\vspace{6pt}Hence {\Large$\forall T\in\Lm{V},I\circ T=T\circ I=T\in\mathcal{E}\Rightarrow \mathcal{E}=\Lm{V}$}. Now we prove the assumption.}\par\quad
+{\vspace{6pt}Notice that {\Large$\forall x,y\in\Nbp,\;\Par{R_{k,y}S}\Par{v_i}=a_k v_y\Rightarrow\BigPar{\Par{R_{k,y}S}\circ R_{x,i}}\Par{v_z}=\delta_{z,x}\Par{a_k v_y}$}.}\par\quad
+{Thus \;{\Large$R_{k,y}SR_{x,i}=a_k R_{x,y}$}. \;Now {\Large$S\in\mathcal{E}\Rightarrow R_{k,y}S\in\mathcal{E}\Rightarrow \displaystyle\frac{1}{a_k}\XPar{R_{k,y}SR_{x,i}}=R_{x,y}\in\mathcal{E}$}.}\PfEnd
+\SepLine[-2pt]
+\ChEnd\pagebreak
 
-
-
-\ChEnd
-\pagebreak
 \ChDecl{Ch3B}{3$\cdot$B}{}\orMode{\hLk{3B3}{3}\;\;\hLk{3B7}{7}\;\;\hLk{3B8}{8}\;\;\hLk{3B9}{9}\;\;\hLk{3B10}{10}\;\;\hLk{3B11}{11}\;\;\hLk{3B12}{12}\;\;\hLk{3B16}{16}\;\;\hLk{3B17}{17}\;\;\hLk{3B18}{18}\;\;\hLk{3B19}{19}\;\;\hLk{3B20}{20}\;\;\hLk{3B21}{21}\;\;\hLk{3B22}{22}\;\;\hLk{3B23}{23}\;\;\hLk{3B24}{24}\;\;\hLk{3B25}{25}\;\;\hLk{3B26}{26}\;\;\hLk{3B27}{27}\;\;\hLk{3B28}{28}\;\;\hLk{3B29}{29}\;\;\hLk{3B30}{30}\;\;\hLk{3B31}{31}$\\[-4pt]$\hLk{3B4e24}{4E: 24,}\;\;\hLk{3B27}{27,}\;\;\hLk{3B4e31}{31,}\;\;\hLk{3B4e32}{32,}\;\;\hLk{3B4e33}{33}}[-40pt]{[1]: (4E 33), 3, 7, 8; [2]: 11, 9, 10, 16, 17, 18, (4E 21); [3]: 12, (4E 31); [4]: (4E 27), 20, 24, 25;$\\$[5]: 22, 23, (4E 24); [6]: 26, 27, 28; [7]: 29, 30, 31, (4E 32).}
 
 \vspace{10pt}
@@ -1162,8 +1181,8 @@ Let $B_U=\Par{u_1,\dots,u_m},B_V=\Par{u_1,\dots,u_m,v_1,\dots,v_n},B_W=\Par{w_1,
 Define $T\in\Lm{V,W}$ by $T\Par{a_1 v_1+\dots+a_n v_n+b_1 u_1+\dots+b_m u_m}=a_1 w_1+\dots+a_n w_n.$\PfEnd
 \SepLine
 
-\ProblemB{
-	\hypertarget{3B4e21}{}({\normalsize 4E 3.B.21})\TextB{}
+\ProblemBnoor{\hypertarget{3B4e21}{4E 3.B.21}}{
+	\TextB{}
 	\TextB{Suppose $V$ is finite-dim, $T\in\Lm{V,W}$, $U$ is a subsp of \,$W$. Let $\mathcal{K}_U=\Bra{v\in V: Tv\in U}$.}
 	\TextB{Prove that $\mathcal{K}_U$ is a subsp of \,$V$ and $\dim\mathcal{K}_U=\dim\null T +\Dim\Par{U\cap\range T}$.}
 }\par\quad
@@ -1225,22 +1244,19 @@ Always notice that $\mathcal{S}_V\Span{v_1,\dots,v_n}=\Bra{U_1,\cdots,\null T,\c
 	\TextB{Prove that if $\dim X + \dim Y = \dim V$, then $\exists\,T\in\Lm{V,W},\null T = X,\range T = Y$.}
 }\par\quad
 Suppose $\dim X + \dim Y = \dim V$. Let $B_X=\Par{u_1,\dots,u_n},B_Y=\Par{w_1,\dots,w_m},B_V=\Par{u_1,\dots,u_n,v_1,\dots,v_m}.$\vspace{4pt}\par\quad
-Define $T\in\Lm{V,W}$ by $T\Par{v_i}=w_i,T\Par{u_j}=0.$\vspace{4pt}\par\quad
+Define $T\in\Lm{V,W}$ by $T{v_i}=w_i,T{u_j}=0.$
 Notice that $\forall v\in V,\exists\,!\,a_i,b_j\in\Fbb,v=\sum_{i=1}^m a_i v_i+\sum_{i=1}^n b_i u_i.$\vspace{4pt}\par\quad
 $v\in\null T\Longleftrightarrow Tv=0\Longleftrightarrow a_1=\dots=a_m=0\Longleftrightarrow v\in X.$\par\quad
 $Y\ni w=a_1 w_1+\dots+a_m w_m=a_1 Tv_1+\dots+a_m Tv_m\in\range T.$\par\quad
-\Or $\range T=\Span{Tv_1,\dots,Tv_m,Tu_1,\dots,Tu_n}=\Span{Tv_1,\dots,Tv_m}=\Span{w_1,\dots,w_m}=Y.$\PfEnd
+\Or $\range T=\Span{Tv_1,\dots,Tv_m,Tu_1,\dots,Tu_n}=\Span{Tv_1,\dots,Tv_m}=\Span{w_1,\dots,w_m}=Y.$\PfEnd 
 \SepLine\pagebreak
 
 \ProblemBor{5.B.4}{
-	\hypertarget{3B4e27}{}\TextB{Suppose $P\in\Lm{V}$ and $P^2 = P$. Prove that $V=\null P\oplus\range P$.}
+	\hypertarget{3B4e27}{}\TextB{Suppose $P\in\Lm{V}$ and $P^2 = P$. Prove that $V=\null P\oplus\range P$.\vspace{-3pt}}
 }\par\quad
-(a) Suppose $v\in\null P\cap\range P.\, $\par\quad\Ha
-Then $\exists\,u\in V,v=Pu,Pv=0\Rightarrow v=Pu=P^2 u=Pv=0.$ Hence $\null P\cap\range P=\zeroSubs.\,$\par\quad
-(b) Note that $v=Pv+\Par{v-Pv}$ and $P^2 v=Pv$ for all $v\in V.$\par\quad\Hb
-Then $P\Par{v-Pv}=0\Rightarrow v-Pv\in\null P.$ Hence $V=\range P+\null P.$\PfEnd\vspace{8pt}\quad
-\Or [{\tgsl Only in Finite-dim}]\par\quad
-Let $\Par{P^2 v_1,\dots,P^2 v_n}$ be a basis of $\range P^2$. Then $\Par{Pv_1,\dots,Pv_n}$ is linely inde in $V$.\par\quad
+(a) If $v\in\null P\cap\range P\Rightarrow Pv=0$ and $\exists\,u\in V,v=Pu.$ Then $v=Pu=P^2 u=Pv=0.$\par\quad
+(b) Note that $\forall v\in V,v=Pv+\Par{v-Pv}$ and $P\Par{v-Pv}=0\Rightarrow v-Pv\in\null P.$\PfEnd\vspace{4pt}\quad
+\Or [{\tgsl Only in Finite-dim}] Let $\Par{P^2 v_1,\dots,P^2 v_n}$ be a basis of $\range P^2$. Then $\Par{Pv_1,\dots,Pv_n}$ is linely inde.\par\quad
 Let $\mathcal{K}=\Span{Pv_1,\dots,Pv_n}\Rightarrow V=\mathcal{K}\oplus\null P^2.$ While $\mathcal{K}=\range P=\range P^2;\,\,\,\null P=\null P^2.$\PfEnd
 \SepLine
 
@@ -1248,18 +1264,22 @@ Let $\mathcal{K}=\Span{Pv_1,\dots,Pv_n}\Rightarrow V=\mathcal{K}\oplus\null P^2.
 \ProblemN{\hypertarget{3B20}{20}}{
 	\TextNL{Suppose $W$ is finite-dim. Prove that $T\in\Lm{V,W}$ is inje $\Longleftrightarrow\exists\,S\in\Lm{W,V},\,\,ST=I_V$.}
 }\par\quad
-(a) Suppose $\exists\,S\in\Lm{W,V},\,\,ST=I$. Then if $Tv=0\Rightarrow ST\Par{v}=0=v.$\par\quad
-(b) Suppose $T$ is inje. Let $R=B_{\range T}=\Par{Tv_1,\dots,Tv_n}$.\par\quad\Hb
-Then $\mathcal{K}_R\oplus\null T=V$. And let $U\oplus\range T=W$.\par\quad\Hb
-Define $S\in\Lm{W,V}$ by $S\Par{Tv_i}=v_i$ and $Su=0,$ where $i\in\!\Bra{1,\dots,n},u\in U.$ Thus $ST=I.$\PfEnd
+(a) Suppose $\exists\,S\in\Lm{W,V},\,\,ST=I$. Then if $Tv=0\Rightarrow ST\Par{v}=0=v.$ \Or $\null T\subseteq\null ST=\zeroSubs.$\par\quad
+(b) Suppose $T$ is inje. Let $R=B_{\range T}=\Par{Tv_1,\dots,Tv_n}$. Then $\mathcal{K}_R\oplus\null T=V$. Let $U\oplus\range T=W$.\par\quad\Hb
+Define $S\in\Lm{W,V}$ by $S\Par{Tv_i}=v_i$ and $Su=0,$ where $i\in\!\Bra{1,\dots,n},u\in U.$ Thus $ST=I.$\par\vspace{3pt}\quad\Hb
+\Or Define $S\in\Lm{\range T,V}$ by $Sw=T^{-1}w,$ {\tgsl where $T^{-1}$ is the inv of $T\in\Lm{V,\range T}.$}\par\quad\Hb
+Then extend it to $S\in\Lm{W,V}$ by (3.A.11). Now $\forall v\in V,STv=T^{-1}Tv=v.$\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{3B21}{21}}{
 	\TextNL{Suppose $W$ is finite-dim. Prove that $T\in\Lm{V,W}$ is surj $\Longleftrightarrow\exists\,S\in\Lm{W,V},\,\,TS=I_W$.}
 }\par\quad
 (a) Suppose $\exists\,S\in\Lm{W,V},\,\,TS=I$. Then $\forall\,w\in W,TS\Par{w}=w\in\range T\Rightarrow \range T=W.$\par\quad
-(b) Suppose $T$ is surj. Let $R=B_{\range T}=B_{W}=\Par{Tv_1,\dots,Tv_n}$\par\quad\Hb
-Then $\mathcal{K}_R\oplus\null T=V.$ Define $S\in\Lm{W,V}$ by $S\Par{Tv_i}=v_i.$ Then $TS=I.$\PfEnd
+(b) Suppose $T$ is surj. Let $R=B_{\range T}=B_{W}=\Par{Tv_1,\dots,Tv_n}.$ Then $\mathcal{K}_R\oplus\null T=V.$\par\quad\Hb
+Define $S\in\Lm{W,V}$ by $S\Par{Tv_i}=v_i.$ Then $TS=I.$\par\vspace{3pt}\quad\Hb
+\Or By Problem (12), $\exists$ subsp $U$ of $V,V=U\oplus\null T,\range T=\Bra{Tu:u\in U}$.\par\quad\Hb
+Note that $T\mid_U:U\rightarrow W$ is an iso. Define $S=\Par{T\mid_U}{^{-1}},$ where $\Par{T\mid_U}{^{-1}}:W\rightarrow U.$\par\quad\Hb
+Then $TS=T\circ\Par{T\mid_U}{^{-1}}=T\mid_U\circ\Par{T\mid_U}{^{-1}}.$\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{3B24}{24}}{
@@ -1282,8 +1302,8 @@ Thus $Tv=a_1 v_1+\dots+a_n v_n.$ Hence $E\Par{Sv}=a_1 E\Par{Sv_1}+\dots+a_n E\Pa
 }\par\quad
 Suppose $\exists\,E\in\Lm{V}$ such that $S = TE$. Then $\range S=\range TE\subseteq\range T.$\par\quad
 Suppose $\range S\subseteq\range T$. Let $\Par{v_1,\dots,v_m}$ be a basis of $V$.\par\quad
-Because $\range S\subseteq\range T\Rightarrow Sv_i\in\range T$ for each $i$. Suppose $u_i\in V$ for each $i$ such that $Tu_i=Sv_i$.\par\quad
-Thus defining $E\in\Lm{V}$ by $Ev_i=u_i$ for each $i$ $\Rightarrow S=TE.$\PfEnd
+Note that for each $i,\;Sv_i\in\range T$. Suppose $u_i\in V$ such that $Tu_i=Sv_i$.\par\quad
+Thus defining $E\in\Lm{V}$ by $Ev_i=u_i$ for each $i$ $\Rightarrow S=TE.$\PfEnd\vspace{-2pt}
 \SepLine
 \pagebreak
 
@@ -1411,7 +1431,7 @@ While $w_2=Tv_2=\lambda Sv_2=2\lambda w_2\Rightarrow \lambda=\frac{1}{2}$. Contr
 {{\Large\vspace{4pt}$\Rightarrow\varphi\Par{R_{l,k}}=0$ or $\varphi\Par{R_{i,j}}=0.$} Contradicts.\PfEnd}\par\vspace{10pt}\quad
 \envFontDefault\Or {Note that by (4E 3.A.16), $\exists\,S,T\in\Lm{V},ST-TS\neq 0.$}\par\quad
 {Then $\varphi\Par{ST-TS}=\varphi\Par{S}\varphi\Par{T}-\varphi\Par{T}\varphi\Par{S}=0\Rightarrow ST-TS\in\null\varphi\neq\zeroSubs.$}\par\quad
-{Thus $\forall\,E\in\null\varphi,T\in\Lm{V},\varphi\Par{ET}=\varphi\Par{TE}=0\Rightarrow ET,TE\in\null\varphi.$}\par\quad
+{Note that $\forall\,E\in\null\varphi,T\in\Lm{V},\varphi\Par{ET}=\varphi\Par{TE}=0\Rightarrow ET,TE\in\null\varphi.$}\par\quad
 {Hence $\null\varphi$ is a nonzero two-sided ideal of $\Lm{V}.$}\PfEnd
 \SepLine
 \ChEnd
@@ -1437,8 +1457,8 @@ While $w_2=Tv_2=\lambda Sv_2=2\lambda w_2\Rightarrow \lambda=\frac{1}{2}$. Contr
 &=\begin{pmatrix} 1\times 5+2\times 8 & 1\times 6+2\times 9 & 1\times 7+2\times 10\\ 3\times 5+4\times 8 & 3\times 6+4\times 9 & 3\times 7+4\times 10\end{pmatrix}=\begin{pmatrix} 21 & 24 & 27 \\ 47 & 54 & 61\end{pmatrix}}\vspace{4pt}\par
 \SepLine
 
-\ProblemB[]{
-	[{\normalsize 4E 3.51}] \TextB{Suppose $C\in\Fbb^{m,c},R\in\Fbb^{c,p}$.}
+\ProblemBnoor[]{4E 3.51}[\Sbra]{
+	\TextB{Suppose $C\in\Fbb^{m,c},R\in\Fbb^{c,p}$.}
 	(a) \TextB{\large\tgnr\envFontDefault For $k=1,\dots,p,$\quad $\Par{CR}_{\cdot,k}=CR_{\cdot,k}=C_{\cdot,\cdot}R_{\cdot,k}=\sum\limits_{r=1}^c C_{\cdot,r}R_{r,k}=R_{1,k}C_{\cdot,1}+\dots+R_{c,k}C_{\cdot,c}$\vspace{3pt}}
 	\Ha\TextB{\large Which means that each cols $CR$ is a linear combination of the cols of $C.$\vspace{6pt}}
 	(b) \TextB{\large\tgnr\envFontDefault For $j=1,\dots,m,$\quad $\Par{CR}_{j,\cdot}=C_{j,\cdot}R=C_{j,\cdot}R_{\cdot,\cdot}=\sum\limits_{r=1}^c C_{j,r}R_{r,\cdot}=C_{j,1}R_{1,\cdot}+\dots+C_{j,c}R_{c,\cdot}$\vspace{3pt}}
@@ -1485,8 +1505,8 @@ $\Rightarrow\Span{A_{\cdot,1},\dots,A_{\cdot,m}}=S_r=\Span{C_{\cdot,1},\dots,C_{
 \SepLine
 
 
-\ProblemB{
-	({\normalsize\hypertarget{3C4e17}4E 3.C.17, \OR 3.F.32}) \TextB{Suppose $T\in\Lm{V}$ and $\Par{u_1,\dots,u_n},\Par{v_1,\dots,v_n}$ are bases of \,$V$.}
+\ProblemBnoor{\hypertarget{3C4e17}4E 3.C.17, \OR 3.F.32}[\Sbra]{
+	\TextB{Suppose $T\in\Lm{V}$ and $\Par{u_1,\dots,u_n},\Par{v_1,\dots,v_n}$ are bases of \,$V$.}
 	\TextB{Prove that the following are equi.\;\;{\normalsize\envFontSmall Here $A=\Mt{T}$ means $\Mt[\BigPar]{T, \Par{u_1,\dots,u_n},\Par{v_1,\dots,v_n}}$.}}
 	(a) \TextB{$T$ is inje.}
 	(b) \TextB{The cols of $\Mt{T}$ are linely inde in $\Fbb^{n,1}$.}
@@ -1522,9 +1542,9 @@ Which is equivalent to {\;\normalsize$
 Thus by (2.39), $(a)$ holds.\PfEnd
 \SepLine
 \pagebreak
-\large
-\ProblemB{
-	({\normalsize\hypertarget{3C4e16}4E 3.C.16, \OR 3.E.11}) \TextB{Suppose $A$ is an m-by-n matrix with $A\neq 0$.}
+
+\ProblemBnoor{\hypertarget{3C4e16}4E 3.C.16, \OR 3.E.11}[\Sbra]{
+	\TextB{Suppose $A$ is an m-by-n matrix with $A\neq 0$.}
 	\TextB{Prove that rank $A=1\Longleftrightarrow\exists\,\Par{c_1,\dots,c_m}\in\Fbb^m,\Par{d_1,\dots,d_n}\in\Fbb^n$}
 	\TextB{such that $A_{j,k}=c_j\cdot d_k$ for every $j=1,\dots,m$ and $k=1,\dots,n$.}
 }\par\quad
@@ -1673,8 +1693,8 @@ $\forall T\in\Lm{V,W},S\in\Lm{W,V},\Mt{TS}=\Mt{T}\Mt{S}=\Mt{S}\Mt{T}=\Mt{ST}.$\p
 Hence $ST=TS.$ Which in general is not true. ( See 3.D )\PfEnd
 \SepLine
 
-\ProblemB{
-	({\normalsize\hypertarget{3D4e19}{}10.A.3, \OR 4E 3.D.19}) \TextB{Suppose $V$ is finite-dim and $T\in\Lm{V}$.}
+\ProblemBnoor{\hypertarget{3D4e19}{}10.A.3, \OR 4E 3.D.19}[\Sbra]{
+	\TextB{Suppose $V$ is finite-dim and $T\in\Lm{V}$.}
 	\TextB{Prove that $\forall B_V\neq B_V',\;\Mt{T,B_V}=\Mt{T,B'_V}\Longleftrightarrow T=\lambda\Mt{I},\exists\,\lambda\in\Fbb.$}
 }[ Compare with the first solution of (3.D.16) in 3.A ]\par\quad
 Suppose $T=\lambda I$ for some $\lambda\in\Fbb.$ Then $T=\lambda\Mt{I}.$\vspace{10pt}\par\quad
@@ -1886,7 +1906,7 @@ Thus $AB=I\Leftrightarrow A\Par{Bx}=x\Longleftrightarrow T\Par{Sx}=x\Leftrightar
 \SepLine[10pt]
 
 \BulletPoint \,\hspace{1pt}\NoteFor{[3.60]}\;\;Suppose $B_V=\Par{v_1,\dots,v_n},\;B_W=\Par{w_1,\dots,w_m}$.\TextB{\vspace{10pt}}
-{Define $E_{i,j}\in\Lm{V,W}$ by $E_{i,j}\Par{v_x}=\delta_{ix} w_j;\quad\delta_{ix}=\MathLeftBrace{l}{0,\quad i\neq x\\1,\quad i=x}\quad$} \Corollary\,\,\, \envFontLarge{\Large$E_{l,k}E_{i,j}=\delta_{jl}E_{i,k}.$}\TextB{}
+{Define $E_{i,j}\in\Lm{V,W}$ by $E_{i,j}\Par{v_x}=\delta_{i,x} w_j;$\quad See (3.A.12).\quad} \Corollary\,\,\, \envFontLarge{\Large$E_{l,k}E_{i,j}=\delta_{j,l}E_{i,k}.$}\TextB{}
 {\Large Denote \envFontLarge$\Mt{E_{i,j}}$ by $\mathcal{E}^{\envFontSmall[\scriptsize]\Par{j,i}}.$ And $\BigPar{\mathcal{E}^{\envFontSmall[\scriptsize]\Par{j,i}}}_{l,k}=\MathLeftBrace{l}{0,\quad i\neq k\,\vee\,j\neq l\\1,\quad i=k\,\wedge\,j=l}$}\TextB{\vspace{6pt}}
 \envFontLarge{\Large Because $\Lm{V,W}$ and $\Fbb^{m,n}$ are iso. And $T=\Mneg\Mt{T};\;\;E_{i,j}=\Mneg\mathcal{E}^{\envFontSmall[\scriptsize]\Par{j,i}}$.}\TextB{}
 Hence $\forall T\in\Lm{V,W},\,\exists\,!\,A_{i,j}\in\Fbb\;\XPar{\;\forall i\in\!\Bra{1,\dots,m},j\in\!\Bra{1,\dots,n}\;},\Mt{T}=A\,=\,${\normalsize$\begin{pmatrix} A_{1,1} & \cdots & A_{1,n}\\ \vdots & \ddots & \vdots\\ A_{m,1} & \cdots & A_{m,n}\end{pmatrix}$}.\par\quad
@@ -1931,8 +1951,8 @@ Then $\dim\mathcal{E}=\dim\Lm{V,W}-\dim R-\Dim\Par{R\cap\mathcal{E}}=\Par{\dim V
 
 \ProblemBc{
 	\hypertarget{3D4e17}{}\TextB{Suppose $V$ is finite-dim and $S\in\Lm{V}$. Define $\mathcal{A}\in \Lm[\BigPar]{\Lm{V}}$ by $\mathcal{A}\Par{T} = ST$.}
-	(a) \TextB{Show that $\dim\null \mathcal{A} = \Par{\dim V}\Par{\dim \null S}$.}
-	(b) \TextB{Show that $\dim\range \mathcal{A} = \Par{\dim V}\Par{\dim \range S}$.}
+	\dbsp(a) \TextB{Show that $\dim\null \mathcal{A} = \Par{\dim V}\Par{\dim \null S}$.}
+	\dbsp(b) \TextB{Show that $\dim\range \mathcal{A} = \Par{\dim V}\Par{\dim \range S}$.}
 }\par\quad
 (a) \envFontLarge{\Large\vspace{3pt}$\forall T\in\Lm{V},$ $ST=0\Longleftrightarrow \range T\subseteq\null S.$}\par\quad\Ha
 {\Large\vspace{6pt}Thus $\null\mathcal{A}=\Bra{T\in\Lm{V}:\range T\subseteq\null S}=\Lm{V,\null S}.$}\par\quad
@@ -1940,9 +1960,9 @@ Then $\dim\mathcal{E}=\dim\Lm{V,W}-\dim R-\Dim\Par{R\cap\mathcal{E}}=\Par{\dim V
 {\Large\vspace{20pt}Thus $\range\mathcal{A}=\Bra{R\in\Lm{V}:\range R\subseteq\range S}=\Lm{V,\range S}.$}\envFontDefault\PfEnd\quad
 \Or Using \NOTEFOR\;[3.60].\vspace{6pt}\par\quad\envFontLarge
 Let $B_{\range S}=\Par{\underbrace{w_1,\dots,w_m}_{Sv_i=w_i}},B_{\mathcal{K}}=\Par{v_1,\dots,v_m}; \Par{w_1,\dots,w_n},\Par{v_1,\dots,v_n}$ are bases of $V.$\vspace{20pt}\par\quad
-{\Large\vspace{-30pt} Define $E_{i,j}\in\Lm{V}$ by $E_{i,j}\Par{v_x}=\delta_{ix} w_i$.}\par\quad
+{\Large\vspace{-30pt} Define $E_{i,j}\in\Lm{V}$ by $E_{i,j}\Par{v_x}=\delta_{i,x} w_i$.}\par\quad
 {\Large\vspace{6pt}Thus $S=E_{1,1}+\dots+E_{m,m};\quad\Mt[\BigPar]{S,\Par{v_1,\dots,v_n},\Par{w_1,\dots,w_n}}\,=\,${\normalsize$\begin{pmatrix} \mathbb{1} & 0 & \cdots & 0 & 0 & \cdots & 0\\ 0 & \mathbb{1} & \cdots & 0 & 0 & \cdots & 0\\ \vdots & \vdots & \ddots & \vdots & \vdots & \ddots & \vdots\\ 0 & 0 & \cdots & \mathbb{1} & 0 & \cdots & 0\\ 0 & 0 & \cdots & 0 & 0 & \cdots & 0\\ \vdots & \vdots & \ddots & \vdots & \vdots & \ddots & \vdots\\ 0 & 0 & \cdots & 0 & 0 & \cdots & 0\end{pmatrix}.$}}\vspace{-30pt}\par\quad
-{\Large\vspace{6pt}Define $R_{i,j}\in\Lm{V}$ by $R_{i,j}\Par{w_x}=\delta_{ix} v_i$.}\par\quad
+{\Large\vspace{6pt}Define $R_{i,j}\in\Lm{V}$ by $R_{i,j}\Par{w_x}=\delta_{i,x} v_i$.}\par\quad
 {\Large\vspace{-10pt}Let $E_{j,k}R_{i,j}=Q_{i,k},\quad R_{j,k}E_{i,j}=G_{i,k}.$}\par\quad
 %\hspace{313pt}\\[-40pt]&
 {\Large\AlignEq{}{\text{Because }\forall T\in\Lm{V},\;\,\exists\;!\;A_{i,j}\in&\Fbb,\;\;\;T\,=\,{\normalsize\begin{pmatrix}
@@ -2002,7 +2022,7 @@ Again, {\Large$E_{y,x\apostrophe},E_{y\apostrophe,x}\in\mathcal{E}$} for all $x\
 \ProblemBor{\hypertarget{3D4e23}{10.A.4}}{
 	\TextB{Suppose that $\Par{\beta_1,\dots,\beta_n}$ and $\Par{\alpha_1,\dots,\alpha_n}$ are bases of \,$V$.}
 	\TextB{Let $T\in\Lm{V}$ be such that $T\alpha_k = \beta_k,\forall k.$ Prove that $\Mt{T,\alpha\rightarrow\alpha}=\Mt{I,\beta\rightarrow\alpha}$}
-	\TextB{\large\envFontDefault For ease of notation, let $\Mt[\BigPar]{T,\alpha\rightarrow\beta}=\Mt[\BigPar]{T,\Par{\alpha_1,\dots,\alpha_n},\Par{\beta_1,\dots,\beta_n}},\,\,\,\Mt[\BigPar]{T,\alpha\rightarrow\alpha}=\Mt[\BigPar]{T,\Par{\alpha_1,\dots,\alpha_n}}.$}
+	\TextB{{\large\envFontDefault For ease of notation, let $\Mt[\BigPar]{T,\alpha\rightarrow\beta}=\Mt[\BigPar]{T,\Par{\alpha_1,\dots,\alpha_n},\Par{\beta_1,\dots,\beta_n}},\,\,\,\Mt[\BigPar]{T,\alpha\rightarrow\alpha}=\Mt[\BigPar]{T,\Par{\alpha_1,\dots,\alpha_n}}.$}}
 }\par\quad
 Denote $\Mt{T,\alpha\rightarrow\alpha}$ by $A$ and $\Mt{I,\beta\rightarrow\alpha}$ by $B.$\par\quad
 $\forall k\in\!\Bra{1,\dots,n},Iu_k=u_k=B_{1,k}\alpha_1+\dots+B_{n,k}\alpha_n=Tv_k=A_{1,k}\alpha_1+\dots+A_{n,k}\alpha_n\Rightarrow A=B.$\PfEnd\vspace{6pt}\quad
@@ -2298,8 +2318,8 @@ $\forall v\in V,\exists\,!\,a_i\in\Fbb,v+U=a_1v_1+\dots+a_mv_m+U\Rightarrow\exis
 $S\Par{u,a_1v_1+\dots+a_mv_m+U}=u+T\Par{a_1v_1+\dots+a_mv_m+U}=v.$ Hence $S$ is surj.\PfEnd
 \SepLine
 
-\ProblemB{
-	({\normalsize 4E 3.E.14}) \TextB{Suppose $V=U\oplus W$, $\Par{w_1,\dots,w_m}$ is a basis of $W$.}
+\ProblemBnoor{4E 3.E.14}{
+	\TextB{Suppose $V=U\oplus W$, $\Par{w_1,\dots,w_m}$ is a basis of $W$.}
 	\TextB{Prove that $\Par{w_1+U,\dots,w_m+U}$ is a basis of $V/U$.}
 }\par\quad
 Note that $\forall v\in V,\exists\,!\,u\in U,w\in W,v=u+w.$ 又 $\exists\,!\,c_i\in\Fbb,w=\sum_{i=1}^m c_i w_i\Rightarrow v=\sum_{i=1}^m c_i w_i+u$.\par\quad
@@ -2371,8 +2391,8 @@ Let $\vartheta=0=a_1\varphi\Par{v_1}+\dots+a_m\varphi\Par{v_m}.$ Then $\vartheta
 Let $v=0=a_1 v_1+\dots+a_m v_m.$ Then $\varphi\Par{v}=a_1\varphi\Par{v_1}+\dots+a_m\varphi\Par{v_m}=0 \Rightarrow a_1=\dots=a_m=0.$\PfEnd
 \SepLine\pagebreak
 
-\ProblemB{
-	({\normalsize\hypertarget{3F4e5}{4E 3.F.5}}) \TextB{Suppose $T \in \Lm{V,W}$ and $\Par{w_1 , \dots , w_m}$ is a basis of $\range T$.\vspace{3pt}}
+\ProblemBnoor{\hypertarget{3F4e5}{4E 3.F.5}}{
+	\TextB{Suppose $T \in \Lm{V,W}$ and $\Par{w_1 , \dots , w_m}$ is a basis of $\range T$.\vspace{3pt}}
 	\TextB{Hence $\forall v \in V,\,Tv=\varphi_1\Par{v}w_1+\dots+\varphi_m\Par{v}w_m,\,\,\exists\,!\,\varphi_1 \Par{v}, \dots , \varphi_m\Par{v},$\vspace{3pt}}
 	\TextB{thus defining functions $\varphi_1, \dots , \varphi_m$ from $V$ to $\Fbb$. Show that each $\varphi_{i} \in V\apostrophe.$}
 }\par\quad
@@ -2383,8 +2403,8 @@ Let $\Par{\psi_1, \dots, \psi_m}$ be the dual basis of $\range T$. Then $\BigPar
 Thus letting $\varphi_{i}=\psi_{i}\circ T.$\PfEnd
 \SepLine
 
-\ProblemB{
-	({\normalsize\hypertarget{3F4e6}{4E 3.F.6}}) \TextB{Suppose $\varphi,\beta\in V\apostrophe$. Prove that $\null \varphi\subseteq\null\beta\Longleftrightarrow\beta=c\varphi$. $\exists\,c\in\Fbb.$}
+\ProblemBnoor{\hypertarget{3F4e6}{4E 3.F.6}}{
+	\TextB{Suppose $\varphi,\beta\in V\apostrophe$. Prove that $\null \varphi\subseteq\null\beta\Longleftrightarrow\beta=c\varphi$. $\exists\,c\in\Fbb.$}
 }Using (3.B.29, 30)\par\quad
 (a) Suppose $\null \varphi \subseteq\null\beta$. Choose a $u \not\in\null\beta$. $V=\null\beta\oplus\Bra{au:a \in\Fbb}.$\par\quad\Ha
 If $\null\varphi=\null \beta$, then let $c=\frac{\beta\Par{u}}{\varphi\Par{u}}$, we are done.\par\quad\Ha
@@ -2408,8 +2428,8 @@ $\,\,$ Define $\varphi:\,\Par{V_1\times\dots\times V_m}\apostrophe\rightarrow V\
 $}\Rightarrow\psi=\varphi^{-1}.\,$\PfEnd
 \SepLine
 
-\ProblemB[]{
-	({\normalsize\hypertarget{3F4e8}{4E 3.F.8}}) \TextB{Suppose $\Par{v_1,\dots,v_{n}}$ is a basis of $V$ and $\Par{\varphi_1,\dots,\varphi_{n}}$ is the dual basis of $V\apostrophe$.}
+\ProblemBnoor[]{\hypertarget{3F4e8}{4E 3.F.8}}{
+	\TextB{Suppose $\Par{v_1,\dots,v_{n}}$ is a basis of $V$ and $\Par{\varphi_1,\dots,\varphi_{n}}$ is the dual basis of $V\apostrophe$.}
 	\TextNL{$\MathRightBrace{l}{$
 Define $\Gamma:V\rightarrow\Fbb^n$ by
 $\Gamma\Par{v}=\Par{\varphi_1\Par{v},\dots,\varphi_{n}\Par{v}}$.
@@ -2993,7 +3013,8 @@ Thus $\lambda=0$ is an eigval of $ST$ and $TS$ with the same eigvec $v$.\par\qua
 Otherwise, $Tv\neq 0,$ then $\lambda$ is an eigval of $TS.$ Reversing the roles of $T$ and $S.$\PfEnd
 \SepLine
 
-\ProblemBnoor{({\normalsize 2E Ch5.20})\TextB{}}{
+\ProblemBnoor{{2E Ch5.20}}{
+	\TextB{}
 	\TextB{Suppose $T\in\Lm{V}$ has $\dim V$ distinct eigvals and $S\in\Lm{V}$ has the same eigvecs}
 	\TextB{( but might not with the same eigvals ). Prove that $ST=TS.$}
 }\par\quad
@@ -3060,8 +3081,8 @@ Define $T\in\Lm{V}$ by $T\Par{a_1 u_1+\dots+a_m u_m+b_1 w_1+\dots+b_n w_n}=b_1 w
 
 \ProblemB{
 	\TextB{Suppose $\Fbb=\Rbb,$ $T\in\Lm{V}$.}
-	(a) \TextB{{\large\envFontDefault\tgnr({\normalsize O{\footnotesize R (9.11)}})} $\lambda\in\Rbb.$ Prove that $\lambda$ is an eigval of $T$ $\Longleftrightarrow$ $\lambda$ is an eigval of $T_{\Cbb}.$}
-	(b) \TextB{{\tgnr\large({\normalsize O{\footnotesize R Problem (16)}})} $\lambda\in\Cbb.$ Prove that $\lambda$ is an eigval of $T_{\Cbb}$ $\Longleftrightarrow$ $\overline \lambda$ is an eigval of $T_{\Cbb}.$}
+	(a) \Sbra{{\normalsize\Or (9.11)}} \TextB{$\lambda\in\Rbb.$ Prove that $\lambda$ is an eigval of $T$ $\Longleftrightarrow$ $\lambda$ is an eigval of $T_{\Cbb}.$}
+	(b) \Sbra{{\normalsize\Or Problem (16)}} \TextB{$\lambda\in\Cbb.$ Prove that $\lambda$ is an eigval of $T_{\Cbb}$ $\Longleftrightarrow$ $\overline \lambda$ is an eigval of $T_{\Cbb}.$}
 }\par\quad
 (a) Suppose $v\in V$ is an eigvec correspd to the eigval $\lambda.$\par\quad\Ha
 Then $Tv=\lambda v\Rightarrow T_{\Cbb}\Par{v+\i 0}=Tv+\i T0=\lambda v.$\par\quad\Ha
@@ -3647,7 +3668,7 @@ Suppose $p,q\in M_T^0$ are of the smallest degree. Then $\Par{p-q}\Par{T}=0.$ �
 Hence $p-q=0,$ for if not, $\exists\,!\,c\in\Fbb,c\Par{p-q}\in M_T^0$. Contradicts.\PfEnd
 \SepLine
 
-\ProblemBnoor{({\normalsize 4E 5.31, 4E 5.B.25 and 26})}{
+\ProblemBnoor{4E 5.31, 4E 5.B.25 and 26}{
 	\TextB{\large\quad mini poly of restriction operator and mini poly of quotient operator}
 	\TextB{Suppose $V$ is finite-dim, $T\in \Lm{V}$, and $U$ is an invar subsp of \,$V$ under $T$.}
 	\TextB{Let $\,p\,$ be the mini poly of $T.$}
@@ -3670,7 +3691,7 @@ Hence $\forall v\in V, \Par{rs}\Par{T}v=0\Rightarrow \Par{rs}\Par{T}=0.$\PfEnd\q
 (d) By [8.49], immediately.\PfEnd
 \SepLine
 
-\ProblemBnoor{({\normalsize 4E 5.B.27})}{
+\ProblemBnoor{4E 5.B.27}{
 	\TextB{Suppose $\Fbb=\Rbb,$ $V$ is finite-dim, and $T\in \Lm{V}$.}
 	\TextB{Prove that the mini poly $\,p\,$ of $T_{\Cbb}$ equals the mini poly $\,q\,$ of $T$.}
 }\par\quad
@@ -3678,7 +3699,7 @@ Hence $\forall v\in V, \Par{rs}\Par{T}v=0\Rightarrow \Par{rs}\Par{T}=0.$\PfEnd\q
 (b) $q\Par{T}=0\Rightarrow \forall u+\i v\in V_{\Cbb},q\Par{T_{\Cbb}}\Par{u+\i v}=q\Par{T}u+\i q\Par{T}v=0\Rightarrow q$ is a poly multi of $p.$\PfEnd
 \SepLine
 
-\ProblemBnoor{({\normalsize 4E 5.B.28})}{
+\ProblemBnoor{4E 5.B.28}{
 	\TextB{Suppose $V$ is finite-dim and $T\in \Lm{V}$.}
 	\TextB{Prove that the mini poly $\,p\,$ of $T\apostrophe \in\Lm{V\apostrophe}$ equals the mini poly $\,q\,$ of $T$.}
 }\par\quad
@@ -3686,7 +3707,7 @@ Hence $\forall v\in V, \Par{rs}\Par{T}v=0\Rightarrow \Par{rs}\Par{T}=0.$\PfEnd\q
 (b) $q\Par{T}=0\Rightarrow \forall \varphi\in V\apostrophe,\varphi\circ\BigPar{q\Par{T}}=q\Par{T\apostrophe}\varphi=0\Rightarrow q\Par{T}=0,q$ is a poly multi of $p.$\PfEnd
 \SepLine
 
-\ProblemBnoor{(4E 5.32)}{
+\ProblemBnoor{4E 5.32}{
 	\TextB{Suppose $T\in\Lm{V}$ and $\,p\,$ is the mini poly.}
 	\TextB{Prove that $T$ is not inje $\Longleftrightarrow$ the const term of $\,p\,$ is $0.$}
 }\par\quad
@@ -3697,7 +3718,8 @@ Hence $0=p\Par{T}=Tq\Par{T}\Rightarrow T$ is not inje.\par\quad
 Conversely, suppose $\Par{T-0I}$ is not inje, then $0$ is a zero of $p$, so that the const term is $0$.\PfEnd
 \SepLine
 
-\ProblemBnoor{({\normalsize 4E 5.B.22})\TextB{}}{
+\ProblemBnoor{4E 5.B.22}{
+	\TextB{}
 	\TextB{Suppose $V$ is finite-dim, $T\in \Lm{V}$. Prove that $T$ is inv $\Longleftrightarrow I\in\Span{T, T^2, \dots , T^{\dim V}}.$}
 }Denote the mini poly by $p,$ where for all $z\in\Fbb,p\Par{z}=a_0 +a_1 z+\dots+z^m.$\par\quad
 Notice that $V$ is finite-dim. $T$ is inv $\Longleftrightarrow T$ is inje $\Longleftrightarrow$ $p\Par{0}\neq 0$.\par\quad
@@ -3712,7 +3734,7 @@ $\forall u\in U,Tu\in U\Rightarrow \forall u\in U,Iu,Tu,T\Par{Tu},\dots,T^m u\in
 \par
 \SepLine
 
-\ProblemBnoor{({\normalsize 4E 5.B.10, 5.B.23})}{
+\ProblemBnoor{4E 5.B.10, 5.B.23}{
 	\TextB{Suppose $V$ is finite-dim, $T\in \Lm{V}$ and $\,p\,$ is the mini poly with degree $\,m.$ Suppose $v\in V.$}
 	(a) \TextB{Prove that $\,\,\Span{v,Tv,\dots,T^{m-1}v}=\Span{v,Tv,\dots,T^{j-1} v}$ for some $j\leqslant m.$}
 	(b) \TextB{Prove that $\,\,\Span{v,Tv,\dots,T^{m-1}v}=\Span{v, Tv, \dots , T^{m-1} v,\dots,T^n v}.$}
@@ -3727,7 +3749,7 @@ Thus $U_0=\Span{v,Tv,\dots,T^{j-1} v,\dots,T^n v}$ for all $n\geqslant j-1.$ Let
 By (a), $U=U_0=\Span{v,Tv,\dots,T^{j-1},\dots,T^{m-1},\dots,T^n}$ for all $n\geqslant m-1.$\PfEnd
 \SepLine
 
-\ProblemBnoor{({\normalsize 4E 5.B.21})}{
+\ProblemBnoor{4E 5.B.21}{
 	\TextB{Suppose $V$ is finite-dim and $T\in \Lm{V}$.}
 	\TextB{Prove that the mini poly $\,p\,$ has degree at most $1 + \dim \range T$.}
 	\TextB{\large If $\dim \range T < \dim V - 1$, then this result gives a better upper bound for the degree of mini poly.}
@@ -3760,7 +3782,7 @@ Hence $\mathcal{E}$ and $\PoF{m-1}$ are iso. 又 $\dim\PoF{m-1}=m=\dim U.
 $\PfEnd
 \SepLine
 
-\ProblemBnoor{({\normalsize 4E 5.B.13})}{
+\ProblemBnoor{4E 5.B.13}{
 	\TextB{Suppose $T\in \Lm{V}$ and $q \in \PoF{}$ is defined by}
 	\TextB{\centerline{$q\Par{z}=a_0 +a_1 z+\dots+a_n z^n,$ where $a_n\neq 0,$ for all $z\in\Fbb.$}}
 	\TextB{Denote the mini poly of $T$ by $\,p\,$ defined by}
@@ -3788,7 +3810,7 @@ And $f\Par{T}=s\Par{T}+b_{n+1}\Par{k_0+k_1 T+\dots+k_{m-1}T^{m-1}}$\par\quad\Hii
 $\Rightarrow f\Par{T}=\Par{d_0+k_0}+\Par{d_1+k_1}z+\dots+\Par{d_{m-1}+k_{m-1}}z^{m-1}=h\Par{T},$ thus defining $h.$\PfEnd
 \SepLine
 
-\ProblemBnoor{({\normalsize 4E 5.B.14})}{
+\ProblemBnoor{4E 5.B.14}{
 	\TextB{Suppose $V$ is finite-dim, $T\in \Lm{V}$ has mini poly $\,p\,$}
 	\TextB{\centerline{defined by $p\Par{z}=a_0 + a_1 z + \dots + a_{m-1} z^{m-1}+z^m,$ $a_0\neq 0.$}}
 	\TextB{Find the mini poly of $T^{-1}$.}
@@ -3816,15 +3838,17 @@ While $\deg f<\deg p.$ Contradicts.\PfEnd
 \TextB{we can {\tgsc give an alternative proof of [5.13]}}.
 \SepLine
 
-\BulletPoint \,\hspace{1pt}\NOTICE ( See also 4E 5.B.20,24 )\TextB{}
-\vspace{2pt}\TextB{\tgnr Suppose $\alpha_1,\dots,\alpha_n$ are all the distinct eigvals of $T,$}
-\vspace{2pt}\TextB{\tgnr and therefore are all the distinct zeros of the mini poly.}
-\vspace{2pt}\TextB{\tgnr Also, the mini poly of $T$ is a poly multi of, but not equal to, $\Par{z-\alpha_1}\cdots\Par{z-\alpha_n}$.}
-\vspace{2pt}\TextB{\tgnr If we define $q$ by $q\Par{z}=\Par{z-\alpha_1}^{\dim V-\Par{n-1}}\cdots\Par{z-\alpha_n}^{\dim V-\Par{n-1}},$}
-\vspace{2pt}\TextB{\tgnr then $q$ is a poly multi of the char poly ( see [8.34] and [8.26] )}
-\vspace{2pt}\TextB{\tgnr ( Because $\dim V>n$ and $n-1>0,\,\,\,n\Sbra{\dim V-\Par{n-1}}>\dim V$. )}
-\vspace{2pt}\TextB{\tgnr The char poly has the form $\Par{z-\alpha_1}^{\gamma_1}\cdots\Par{z-\alpha_n}^{\gamma_n},$ where $\gamma_1+\dots+\gamma_n=\dim V.$}
-{\Large The mini poly has the form $\Par{z-\alpha_1}^{\delta_1}\cdots\Par{z-\alpha_n}^{\delta_n},$ where $0\leqslant \delta_1+\dots+\delta_n\leqslant \dim V.$}\par
+\ProblemB[]{
+	\NOTICE \BigPar{ See also 4E 5.B.20,24 }\TextB{}
+	\TextB{\tgnr Suppose $\alpha_1,\dots,\alpha_n$ are all the distinct eigvals of $T,$\vspace{2pt}}
+	\TextB{\tgnr and therefore are all the distinct zeros of the mini poly.\vspace{2pt}}
+	\TextB{\tgnr Also, the mini poly of $T$ is a poly multi of, but not equal to, $\Par{z-\alpha_1}\cdots\Par{z-\alpha_n}$.\vspace{2pt}}
+	\TextB{\tgnr If we define $q$ by $q\Par{z}=\Par{z-\alpha_1}^{\dim V-\Par{n-1}}\cdots\Par{z-\alpha_n}^{\dim V-\Par{n-1}},$\vspace{2pt}}
+	\TextB{\tgnr then $q$ is a poly multi of the char poly ( see [8.34] and [8.26] )\vspace{2pt}}
+	\TextB{\tgnr ( Because $\dim V>n$ and $n-1>0,\,\,\,n\Sbra{\dim V-\Par{n-1}}>\dim V$. )\vspace{2pt}}
+	\TextB{\tgnr The char poly has the form $\Par{z-\alpha_1}^{\gamma_1}\cdots\Par{z-\alpha_n}^{\gamma_n},$ where $\gamma_1+\dots+\gamma_n=\dim V.$\vspace{2pt}}
+	\TextB{The mini poly has the form $\Par{z-\alpha_1}{^{\delta_1}}\cdots\Par{z-\alpha_n}{^{\delta_n}},$ where $0\leqslant \delta_1+\dots+\delta_n\leqslant \dim V.$}
+}
 \SepLine
 
 \ProblemN{10}{
@@ -3869,8 +3893,7 @@ Hence $0=\Par{T - 2I}\Par{T - 3I}\Par{T - 4I}v=\Par{\lambda-2}\Par{\lambda-3}\Pa
 \Or Because $\Par{T-2I}\Par{T-3I}\Par{T-4I}=0$ is not inje. By \TIPS.\PfEnd
 \SepLine
 
-\ProblemN{7}{
-	{\,\normalsize ( See 5.A.22 )}
+\ProblemNnoor{7}{See 5.A.22}{
 	\TextN{Suppose $T\in\Lm{V}$. Prove that $9$ is an eigval of $T^2$ $\Longleftrightarrow$ $3$ or $-3$ is an eigval of $T$.}
 }\par\quad
 (a) Suppose $9$ is an eigval of $T^2.$ 
@@ -3894,7 +3917,7 @@ $\MathRightBrace{l}{
 Hence $V=\null\Par{I-T}\Rightarrow\range\Par{I-T}=\zeroSubs.$ Thus $I-T=0\in\Lm{V}\Rightarrow T=I.$\PfEnd
 \SepLine
 
-\ProblemBnoor{({\normalsize 4E 5.A.32})}{
+\ProblemBnoor{4E 5.A.32}{
 	\TextB{Suppose $T\in\Lm{V}$ has no eigvals and $T^4 = I$. Prove that $T^2=-I$.}
 }\par\quad
 Because $T^4-I=\Par{T^2-I}\Par{T^2+I}=0$ is not inje $\Rightarrow \Par{T^2-I}$ or $\Par{T^2+I}$ is not inje.\par\quad
@@ -3911,8 +3934,7 @@ $\MathRightBrace{l}{
 Hence $V=\null\Par{I+T^2}\Rightarrow\range\Par{I+T^2}=\zeroSubs.$ Thus $I+T^2=0\in\Lm{V}\Rightarrow T^2=-I.$\PfEnd
 \SepLine
 
-\ProblemN{8}{
-	({\normalsize \OR 4E 5.A.31})
+\ProblemNor{8}{4E 5.A.31}{
 	\TextN{Give an example of $T\in\Lm{\Rbb^2}$ such that $T^4=-I$.}
 }\par\quad
 $\displaystyle T^4+1=\Par{T^2+\i I}\Par{T^2-\i I}=\Par{T+\i^{1/2}I}\Par{T-\i^{1/2}I}\Par{T-\Par{-\i}^{1/2}I}\Par{T+\Par{-\i}^{1/2}I}.$\par\quad
@@ -3937,7 +3959,8 @@ $\Par{\begin{array}{l}$ Using \small$\begin{pmatrix}
 \end{pmatrix}.$\large $\end{array}}$\par
 \SepLine
 
-\ProblemBnoor{({\normalsize 4E 5.B.12} See also at 5.A.9)\TextB{}}{
+\ProblemBnoor{4E 5.B.12 See also at 5.A.9}{
+	\TextB{}
 	\TextB{Define $T\in\Lm{\Fbb^n}$ by $T\Par{x_1 , x_2 , x_3 , \dots , x_n } = \Par{x_1 , 2x_2 , 3x_3 , \dots , nx_n }$. Find
 the mini poly.}
 }\par\quad
@@ -3957,8 +3980,9 @@ Because $n$ and $0$ are all eigvals of $T$, 又 For all $e_k,T e_k=e_1+\dots+e_n
 Hence $T^2 e_k=n\Par{T e_k}\Rightarrow T^2=n T\Rightarrow T^2-n T=T\Par{T-n}.$ Thus $z\Par{z-n}$ is the mini poly of $T.$\PfEnd
 \SepLine
 
-\ProblemBnoor{({\normalsize 4E 5.B.8})\TextB{}}{
-	\TextB{Suppose $T\in\Lm{\Rbb^2}$ is the operator of counterclockwise rotation by the angel $\theta$, where $\theta\in\Rbb^+$.}
+\ProblemBnoor{4E 5.B.8}{
+	\TextB{}
+	\TextB{Suppose $T\in\Lm{\Rbb^2}$ is the operator of counterclockwise rotation by $\theta$, where $\theta\in\Rbb^+$.}
 	\TextB{Find the mini poly of $T$.}
 }\par\quad
 If $\theta=\pi+2k\pi,$ then $T\Par{w,z}=\Par{-w,-z},T^2=I$ and the mini poly is $z+1.$\par\quad
@@ -3977,7 +4001,7 @@ Hence $p\Par{T}=T^2-2\cos\theta\, T+I=0$ and $z^2-2\cos\theta\, z+1$ is the mini
 Hence the mini poly is $z\pm 1$ or $z^2-2\cos\theta\,z+1.$\PfEnd
 \SepLine
 
-\ProblemBnoor{({\normalsize 4E 5.B.11})}{
+\ProblemBnoor{4E 5.B.11}{
 	\TextB{Suppose $V$ is a two-dim vecsp, $T\in\Lm{V}$, and the matrix of $T$}
 	\TextB{with resp to some basis of \,$V$ is {\large$\begin{pmatrix} a & c\\ b & d\end{pmatrix}.$}}
 	(a) \TextB{Show that $T^2 - \Par{a + d}T + \Par{ad - bc}I = 0.$}
@@ -4007,7 +4031,8 @@ Hence $\forall p\in\PoF{},$\vspace{-23.5pt}\par\quad
 \AlignEq{}{\quad p(TS)&=a_0 (TS)^0+a_1 (TS)+\dots+a_m (TS)^m\\&=a_0 [S^{-1}(ST)^0 S]+a_1 [S^{-1}(ST)S]+\dots+a_m [S^{-1}(ST)^m S]\\&=S^{-1}[a_0 (ST)^0+a_1 (ST)+\dots+a_m (ST)^m]S\\&=S^{-1}p(ST)S.}\PfEnd
 \SepLine
 
-\ProblemBnoor{({\normalsize 4E 5.B.7})\TextB{}}{
+\ProblemBnoor{4E 5.B.7}{
+	\TextB{}
 	(a) \TextB{Give an example of $S, T\in\Lm{\Fbb^2}$ such that}
 	\Ha\TextB{the mini poly of
 $ST$ does not equal the mini poly of $TS$.}
@@ -4043,8 +4068,8 @@ Because $q\Par{T}v=\BigPar{p\Par{T}-\alpha I}v=q\Par{\lambda}v=\BigPar{p\Par{\la
 Hence $q\Par{T}$ is not inje $\Rightarrow \BigPar{p\Par{T}-\alpha I}$ is not inje.\PfEnd
 \SepLine
 
-\ProblemN{12}{
-	(\OR {\normalsize 4E.5.B.6}) \TextNL{Give an example of an operator on $\Rbb^2$}
+\ProblemNor{12}{4E.5.B.6}{
+	\TextNL{Give an example of an operator on $\Rbb^2$}
 	\TextNL{that shows the result above does not hold if $\Cbb$ is replaced with $\Rbb$.}
 }\par\quad
 Define $T\in\Lm{\Rbb^2}$ by $T\Par{w,z}=\Par{-z,w}.$\par\quad
@@ -4053,7 +4078,7 @@ Define $p$ by $p\Par{z}=z^2.$ Then $p\Par{T}=T^2=-I.$ Thus $p\Par{T}$ has eigval
 While $\nexists\,\lambda\in\Rbb$ such that $-1=p\Par{\lambda}=\lambda^2.$\PfEnd
 \SepLine
 
-\ProblemBnoor{({\normalsize4E 5.B.17})}{
+\ProblemBnoor{4E 5.B.17}{
 	\TextB{Suppose $V$ is finite-dim, $T\in \Lm{V},\lambda\in\Fbb$, and $\,p\,$ is the mini poly of $T$.}
 	\TextB{Show that the mini poly of $\Par{T - \lambda I}$ is the poly $q$ defined by $q\Par{z} = p\Par{z + \lambda}.$}
 }\par\quad
@@ -4067,7 +4092,7 @@ $m$ is the smallest such that $T^m\in\Span{I,T,\dots,T^{m-1}}.$\par\quad
 Thus $n=m.$ 又 $q$ is monic. By the uniqnes of mini poly.\PfEnd
 \SepLine
 
-\ProblemBnoor{({\normalsize4E 5.B.18})}{
+\ProblemBnoor{4E 5.B.18}{
 	\TextB{Suppose $V$ is finite-dim, $T\in \Lm{V},\lambda\in\Fbb\backslash\zeroSubs$, and $\,p\,$ is the mini poly of $T$.}
 	\TextB{Show that the mini poly of $\lambda T$ is the poly q defined by $q\Par{z} = \lambda^{\deg p} p\Par{\frac{z}{\lambda}}$.}
 }\par\quad
@@ -4080,8 +4105,8 @@ $m$ is the smallest such that $T^m\in\Span{I,T,\dots,T^{m-1}}.$\par\quad
 Thus $n=m.$ 又 $q$ is monic. By the uniqnes of mini poly.\PfEnd
 \SepLine
 
-\ProblemN{18}{
-	({\normalsize \OR 4E 5.B.15}) \TextNL{Suppose $V$ is a finite-dim complex vecsp with $\dim V > 0$ and $T\in\Lm{V}$.}
+\ProblemNor{18}{4E 5.B.15}{
+	\TextNL{Suppose $V$ is a finite-dim complex vecsp with $\dim V > 0$ and $T\in\Lm{V}$.}
 	\TextNL{Define $f:\Cbb\rightarrow\Rbb$ by $f\Par{\lambda} = \dim \range\Par{T-\lambda I}$.}
 	\TextNL{Prove that $f$ is not a continuous function.}
 }Note that $V$ is finite-dim.\par\quad
@@ -4091,7 +4116,7 @@ And $\lambda_n$ is not an eigval of $T$ for each $n\Rightarrow\dim\range\Par{T-\
 Thus $f\Par{\lambda_0}\neq \lim\limits_{n\rightarrow\infty}f\Par{\lambda_n}.$\PfEnd
 \SepLine
 
-\ProblemBnoor{({\normalsize 4E 5.B.9})}{
+\ProblemBnoor{4E 5.B.9}{
 	\TextB{Suppose $T\in\Lm{V}$ is such that with resp to some basis of \,$V$,}
 	\TextB{all entries of the matrix of $T$ are rational numbers.}
 	\TextB{Explain why all coefficients of the mini poly of $T$ are rational numbers.}
@@ -4112,7 +4137,7 @@ Hence we get a system of $n^2$ linear equations in $m$ unknowns $c_0,c_1,\dots,c
 We conclude that $c_0,c_1,\dots,c_{m-1}\in\Qbb.$\PfEnd
 \SepLine
 
-\ProblemBnoor{{\normalsize \OR (4E 5.B.16), \OR (8.C.18})}{
+\ProblemBnoor{\OR (4E 5.B.16), \OR (8.C.18)}[\Sbra]{
 	\TextB{Suppose $a_0 ,\dots, a_{n-1}\in\Fbb.$ Let $T$ be the operator on $\Fbb^n$ such that\vspace{2pt}}
 	\TextB{$\Mt{T}=\,${\normalsize$\begin{pmatrix}
 	0 &   &        &  &   & -a_0     \\
@@ -4170,7 +4195,7 @@ Our induction hypothesis now implies that $T\mid_{\range\Par{T^2 + bT + cI}}$ ha
 By mathematical induction.\PfEnd
 \SepLine
 
-\ProblemBnoor{({\normalsize 2E Ch5.24})}{
+\ProblemBnoor{2E Ch5.24}{
 	\TextB{Suppose $\Fbb=\Rbb,T\in\Lm{V}$ has no eigvals.} \TextB{Prove that every invar subsp of \,$V$ under $T$ is even-dim.}
 }\par\quad
 Suppose $U$ is such a subsp. Then $T\mid_U\in\Lm{U}.$
@@ -4178,7 +4203,7 @@ We prove by contradiction.\par\quad
 If $\dim U$ is odd, then $T\mid_U$ has an eigval and so is $T,$ so that $\exists$ invar subsp of $1$ dim, contradicts.\PfEnd
 \SepLine
 
-\ProblemBnoor{({\normalsize4E 5.B.29})}{
+\ProblemBnoor{4E 5.B.29}{
 	\TextB{Show that every operator on a finite-dim vecsp of dim $\geq 2$ has a $2$-dim invar subsp.}
 }\par\quad
 Using induction on $\dim V.$\par\quad
@@ -4193,16 +4218,15 @@ By assumption, $T\mid_{\null q\Par{T}}$ has an invar subsp of dim $2.$\PfEnd
 \ChEnd
 
 % 6h
-\ChDecl{Ch5BII}{5.B: II}
+\ChDecl{Ch5BII}{5.B: II}{}
 
-
-\ProblemBnoor{({\normalsize4E 5.C.1})}{
+\ProblemBnoor{4E 5.C.1}{
 	\TextB{Prove or give a counterexample:}
 	\TextB{If $T\in \Lm{V}$ and $T^2$ has an upper-trig matrix, then $T$ has an upper-trig matrix.}
 }\par
 \SepLine
 
-\ProblemBnoor{({\normalsize4E 5.C.2})}{
+\ProblemBnoor{4E 5.C.2}{
 	\TextB{Suppose $A$ and $B$ are upper-trig matrices of the same size,}
 	\TextB{with $\alpha_1 , \dots , \alpha_n$ on the diag of $A$ and $\beta_1 , \dots , \beta_n$ on the diag of $B$.}
 	(a) \TextB{Show that $A + B$ is an upper-trig matrix with $\alpha_1 + \beta_1 , \dots , \alpha_n + \beta_n$ on the diag.}
@@ -4210,7 +4234,8 @@ By assumption, $T\mid_{\null q\Par{T}}$ has an invar subsp of dim $2.$\PfEnd
 }\par
 \SepLine
 
-\ProblemBnoor{({\normalsize4E 5.C.3})\TextB{}}{
+\ProblemBnoor{4E 5.C.3}{
+	\TextB{}
 	\TextB{Suppose $T\in \Lm{V}$ is inv and $B=\Par{v_1 , \dots , v_n}$ is a basis of \,$V$ such that}
 	\TextB{$\Mt{T,B}=A$ is upper trig, with $\lambda_1 , \dots , \lambda_n$ on the diag.}
 	\TextB{Show that the matrix of $\Mt{T^{-1},B}=A^{-1}$ is also upper trig, with
@@ -4218,8 +4243,8 @@ By assumption, $T\mid_{\null q\Par{T}}$ has an invar subsp of dim $2.$\PfEnd
 }\par
 \SepLine
 
-\ProblemN{9}{
-	({\normalsize4E 5.C.7})\TextN{}
+\ProblemNnoor{9}{4E 5.C.7}{
+	\TextN{}
 	\TextN{Suppose $V$ is finite-dim, $T\in \Lm{V}$, and $v \in V$.}
 	(a) \TextN{Prove that $\exists\,!$ monic poly $p_v$ of smallest degree such that $p_v \Par{T}v = 0$.}
 	(b) \TextN{Prove that the mini poly of $T$ is a poly multi of $p_v$.}
@@ -4227,15 +4252,15 @@ By assumption, $T\mid_{\null q\Par{T}}$ has an invar subsp of dim $2.$\PfEnd
 \SepLine
 
 
-\ProblemN{14}{
-	({\normalsize \OR 4E 5.C.4})\TextNL{ Give an operator $T$ such that with resp to some basis,}
+\ProblemNor{14}{4E 5.C.4}{
+	\TextNL{ Give an operator $T$ such that with resp to some basis,}
 	\TextNL{$\Mt{T}_{k,k}=0$ for each $k$, while $T$ is inv.}
 }
 \par
 \SepLine
 
-\ProblemN{15}{
-	({\normalsize \OR 4E 5.C.5})\TextNL{ Give an operator $T$ such that with resp to some basis,}
+\ProblemNor{15}{4E 5.C.5}{
+	\TextNL{Give an operator $T$ such that with resp to some basis,}
 	\TextNL{$\Mt{T}_{k,k}\neq 0$ for each $k$, while $T$ is not inv.}
 }\par
 
@@ -4250,7 +4275,7 @@ By assumption, $T\mid_{\null q\Par{T}}$ has an invar subsp of dim $2.$\PfEnd
 }\par
 \SepLine
 
-\ProblemBnoor{({\normalsize 4E 5.C.8})}{
+\ProblemBnoor{4E 5.C.8}{
 	\TextB{Suppose $V$ is finite-dim, $T\in \Lm{V}$, and $\exists\,v \in V\backslash\zeroSubs$ such that $T^2 v + 2Tv = -2v$.}
 	(a) \TextB{Prove that if $\Fbb=\Rbb,$ then $\nexists$ a basis of \,$V$ with resp to which $T$ has an upper-trig matrix.}
 	(b) \TextB{Prove that if $\Fbb=\Cbb$ and $A$ is an upper-trig matrix that equals the matrix of $T$}
@@ -4258,7 +4283,7 @@ By assumption, $T\mid_{\null q\Par{T}}$ has an invar subsp of dim $2.$\PfEnd
 }\par
 \SepLine
 
-\ProblemBnoor{({\normalsize 4E 5.C.9})}{
+\ProblemBnoor{4E 5.C.9}{
 	\TextB{Suppose $B\in\Fbb^{n,n}$ with complex entries.}
 	\TextB{Prove that $\exists$ inv $A\in\Fbb^{n,n}$ with complex entries such that $A^{-1} BA$ is an upper-trig matrix.}
 }\par
@@ -4266,7 +4291,7 @@ By assumption, $T\mid_{\null q\Par{T}}$ has an invar subsp of dim $2.$\PfEnd
 \par
 \SepLine
 
-\ProblemBnoor{({\normalsize 4E 5.C.10})}{
+\ProblemBnoor{4E 5.C.10}{
 	\TextB{Suppose $T\in \Lm{V}$ and $\Par{v_1,\dots,v_n}$ is a basis of \,$V$.}
 	\TextB{Show that the following are equi.}
 	(a) \TextB{The matrix of $T$ with resp to $\Par{v_1,\dots,v_n}$ is lower trig.}
@@ -4275,13 +4300,14 @@ By assumption, $T\mid_{\null q\Par{T}}$ has an invar subsp of dim $2.$\PfEnd
 }\par
 \SepLine
 
-\ProblemBnoor{({\normalsize 4E 5.C.11})}{
+\ProblemBnoor{4E 5.C.11}{
 	\TextB{Suppose $\Fbb=\Cbb$ and $V$ is finite-dim.}
 	\TextB{Prove that if $T\in \Lm{V}$, then $T$ has a lower-trig matrix with resp to some basis.}
 }\par
 \SepLine
 
-\ProblemBnoor{({\normalsize 4E 5.C.12})\TextB{}}{
+\ProblemBnoor{4E 5.C.12}{
+	\TextB{}
 	\TextB{Suppose $V$ is finite-dim, $T\in \Lm{V}$ has an upper-trig matrix with resp to some basis,}
 	\TextB{and $U$ is a subsp of \,$V$ that is invar under $T$.}
 	(a) \TextB{Prove that $T\mid_U$ has an upper-trig matrix with resp to some basis of $U$.}
@@ -4292,7 +4318,7 @@ By assumption, $T\mid_{\null q\Par{T}}$ has an invar subsp of dim $2.$\PfEnd
 \par
 \SepLine
 
-\ProblemBnoor{({\normalsize 4E 5.C.13})}{
+\ProblemBnoor{4E 5.C.13}{
 	\TextB{Suppose $V$ is finite-dim, $T\in \Lm{V}$. Suppose $U$ is an invar subsp of \,$V$ under $T$}
 	\TextB{such that $T\mid_U$ has an upper-trig matrix and also $T/U$ has an upper-trig matrix.}
 	\TextB{Prove that $T$ has an upper-trig matrix.}
@@ -4302,7 +4328,7 @@ By assumption, $T\mid_{\null q\Par{T}}$ has an invar subsp of dim $2.$\PfEnd
 \par
 \SepLine
 
-\ProblemBnoor{({\normalsize 4E 5.C.14})}{
+\ProblemBnoor{4E 5.C.14}{
 	\TextB{Suppose $V$ is finite-dim and $T\in \Lm{V}$.}
 	\TextB{Prove that $T$ has an upper-trig matrix $\Longleftrightarrow$ $T\apostrophe$ has an upper-trig matrix.}
 }\par
