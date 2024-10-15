@@ -100,9 +100,10 @@
 % 用于对齐(I)(II)(III)
 \def\EndI{}
 \def\EndII{}
+\def\EndIII{}
 \def\HI{\Blind{(I) }}
 \def\HII{\Blind{(II) }}
-\def\HIII{}
+\def\HIII{\Blind{(III) }}
 %}
 
 %{ 关于文本环境
@@ -907,13 +908,61 @@ Because $V$ is finite-dim, this process will stop after $n$ steps.\PfEnd\vspace{
 Let $\Par{u_1,\dots,u_m}$ be a basis of $U,$ extend to a basis $\Par{u_1,\dots,u_n}$ of $V.$\TextB{}
 Then let $B_V=\Par{u_1-u_k,\dots,u_m-u_k,u_{m+1},\dots,u_k,\dots,u_n}.$\PfEnd
 \SepLine
-\ChEnd
-
+\ChEnd\vspace{10pt}
 \pagebreak
 
 \ChDecl{Ch3A}{3$\cdot$A}
 
-\vspace{12pt}
+\vspace{8pt}
+
+\ProblemBnoor{4E 1.B.7}{
+	\TextB{Suppose $V\neq\varnothing$ and $W$ is a vecsp. Let $W^V=\Bra{f:V\rightarrow W}.$}
+	(a) \TextB{Define a natural add and scalar multi on $W^V.$}
+	(b) \TextB{Prove that $W^V$ is a vecsp with these definitions.}
+}\par\quad
+(a) $W^V\ni f+g: x\rightarrow f\Par{x}+g\Par{y};$ where $f\Par{x}+g\Par{y}$ is the vec add on $W.$\par\quad\Ha
+$W^V\ni\lambda f: x\rightarrow\lambda f\Par{x};$ where $\lambda f\Par{x}$ is the scalar multi on $W.$\par\quad
+(b) Commutativity: $\Par{f+g}\Par{x}=f\Par{x}+g\Par{x}=g\Par{x}+f\Par{x}=\Par{g+f}\Par{x}.$\par\quad\Hb
+Associativity: $\BigPar{\Par{f+g}+h}\Par{x}=\BigPar{\Par{f}\Par{x}+\Par{g}\Par{x}}+\Par{h}\Par{x}$\par\quad\Hb
+\Blind{Associativity: $\BigPar{\Par{f+g}+h}\Par{x}$} $=\Par{f}\Par{x}+\BigPar{\Par{g}\Par{x}+\Par{h}\Par{x}}=\BigPar{f+\Par{g+h}}\Par{x}.$\par\quad\Hb
+Additive Identity: $\Par{f+0}\Par{x}=f\Par{x}+0\Par{x}=f\Par{x}+0=f\Par{x}.$\par\quad\Hb
+Additive Inverse: $\Par{f+g}\Par{x}={f}\Par{x}+g\Par{x}=f\Par{x}+\BigPar{-f\Par{x}}=0=0\Par{x}.$\par\quad\Hb
+Distributive Properties:\par\quad\Hb
+$\BigPar{a\Par{f+g}}\Par{x}=a\Par{f+g}\Par{x}=a\BigPar{f\Par{x}+g\Par{x}}$\par\quad\Hb
+\Blind{$\BigPar{a\Par{f+g}}\Par{x}=a\Par{f+g}\Par{x}$} $=a\,f\Par{x}+ag\Par{x}=\Par{a\,f}\Par{x}+\Par{ag}\Par{x}=\Par{a\,f+ag}\Par{x}.$\par\quad\Hb
+Similarly, $\BigPar{\Par{a+b}f}\Par{x}=\Par{a\,f+b\,f}\Par{x}.$\par\quad\Hb
+So far, we have used the same properties in $W.$\par\quad\Hb
+Which means that {\tgsc if $W^V$ is a vecsp, then $W$ must be a vecsp.}\par\quad\Hb
+Multiplication Identity: $\Par{1f}\Par{x}=1f\Par{x}=f\Par{x}.$ \BigPar{ \NOTICE that the smallest $\Fbb$ is $\Bra{0,1}.$ }\PfEnd
+\SepLine
+
+\ProblemB{
+	\TextB{Suppose $T\in\Lm{V,W}.$ Prove that $Tv\neq 0\Rightarrow v\neq 0.$}
+}Assume that $v=0.$ Then $Tv=T\Par{0}=T\Par{0\cdot 0}=0\cdot T\Par{0}=0.$\par
+\Blind{\Solution} \Or $T\Par{0}=T\Par{0+0}=T\Par{0}+T\Par{0}\Rightarrow T\Par{0}=0.$ Contradicts.\PfEnd
+\SepLine
+
+\ProblemB{
+	\TextB{Given the fact that $\Lm{V,W}$ is a vecsp. Prove or give a counterexample: $V,W$ are vecsps.}
+	\TextB{\envFontDefault\large We can guarantee that $\zeroSubs\subseteq\Lm{V,W},\zeroSubs\subseteq V,\zeroSubs\subseteq W.$}
+	\TextB{\envFontDefault\large And by [3.2], the additivity and homogeneity imply that $V$ is closed under add and scalar multi.}
+	\TextB{\envFontDefault\large\BigPar{ We cannot even guarantee that $W^V$ is a vecsp. }}
+}\par\quad
+(I) If $W^V=\zeroSubs.$ Then $\Lm{V,W}=\zeroSubs.$\par\quad\HI
+And $W=\zeroSubs,$ for if not, $\exists\,w\in W\backslash\zeroSubs,$ define a map $f$ by $f\Par{x}=w,\forall x\in V.$\par\quad\EndI
+(II) If $W^V$ is a nonzero vecsp. Then $W$ is a vecsp.\par\quad\HII
+(a) If $\Lm{V,W}=\zeroSubs,$ then we cannot guarantee that $V$ is a vecsp.\par\quad\HII\Ha
+Example: \par\quad\HII
+(b) If not, then $\exists\;T\in\Lm{V,W},\,T\neq 0.$ Which means $\exists\,v\in V,Tv\neq 0\Rightarrow v\neq 0.$\par\quad\HII\Hb
+Then both $W$ and $V$ have a nonzero element.\par\quad\HII\Hb
+(i) If $\exists\,$ inje $T\in\Lm{V,W},$ then $T\Par{u+v}=\Par{v+u}\Rightarrow u+v=v+u.$ etc. Hence $V$ is a vecsp.\par\quad\HII\Ha\Endi
+(ii) If not, then we cannot guarantee that $V$ is a vecsp.\par\quad\HII\Hb\Hii
+Example: \par\quad\EndII
+(III) If $W^V$ is not a vecsp, then $W$ is not a vecsp.\par\quad\HIII
+Example: \par\quad
+
+\PfEnd
+\SepLine
 
 \BulletPoint \hspace{1pt}\,\Tips\,\,\, {\tgsl$T:V\rightarrow W$ is linear $\Longleftrightarrow\MathLeftrightMid{l}{\hspace{-4pt}$
 (一) $\forall v,u\in V,T\Par{v+u}=Tv+Tu;\\\hspace{-4pt} $
@@ -941,10 +990,7 @@ Let $T\Par{1,0,0,\dots,0,0}=\Par{A_{1,1},\dots,A_{m,1}},$\quad Note that $\Par{1
 
 \ProblemN[]{5}{
 	\TextN{Because $\Lm{V,W}=\Bra{T:V\rightarrow W\;\mid\;T\text{ is linear}}$ is a subsp of $W^V,$ $\Lm{V,W}$ is a vecsp.}
-}\par
-\Comment \,\,\,There is no guarantee that $W$ is a vecsp. \BigPar{ although the minimal vecsp $\zeroSubs\subseteq W$ }\par
-\Blind{\Comment\,\,\,}Is it guaranteed that $V$ is a vecsp? In other words,\par
-\Blind{\Comment\,\,\,}if $V$ is closed under add and scalar multi, then why, or why not, is $V$ a vecsp? \colorbox{yellow}{TODO}\par
+}
 \SepLine
 
 \ProblemN{7}{
@@ -1474,25 +1520,27 @@ While $w_2=Tv_2=\lambda Sv_2=2\lambda w_2\Rightarrow \lambda=\frac{1}{2}$. Contr
 \SepLine
 
 \ProblemB{
-	\textsc{Column-Row Factorization}\quad(CR Factorization)\vspace{3pt}\TextB{}
-\TextB{Suppose $A\in\Fbb^{m,n},A\neq 0.$ \;Let \;\;$\MathLeftMid{l}{S_c=\Span{A_{\cdot,1},\dots,A_{\cdot,n}}\subseteq\Fbb^{m,1},\dim S_c=c.\\S_r=\Span{A_{1,\cdot},\dots,A_{m,\cdot}}\subseteq\Fbb^{1,n},\dim S_r=r.}$\vspace{5pt}}
-\TextB{Prove that $A=CR,\exists\,C\in\Fbb^{m,c},R\in\Fbb^{c,n}.$\vspace{6pt}}
-}Notice that $A\neq 0\Rightarrow c,r\geqslant 1.$\par\quad
-Let $\Par{C_{\cdot,1},\dots,C_{\cdot,c}}$ be a basis of $S_c$, forming $C\in\Fbb^{m,c}$.\par\quad
-\Or {\normalsize\envFontSmall Let $\Par{R_{1,\cdot},\dots,R_{r,\cdot}}$ be a basis of $S_r,$ forming $R\in\Fbb^{c,n}$.}\par\quad
-Then for any $k,\;A_{\cdot,k}=R_{1,k}C_{\cdot,1}+\dots+R_{c,k}C_{\cdot,c}=\Par{CR}_{\cdot,k},\exists\,!\,R_{1,k},\dots,R_{c,k}\in\Fbb,$ forming $R\in\Fbb^{c,n}.$\par\quad
-\Or {\normalsize\envFontSmall For any $k,\;A_{j,\cdot}=C_{j,1}R_{1,\cdot}+\dots+C_{j,c}R_{c,\cdot}=\Par{CR}_{j,\cdot},\exists\,!\,C_{j,1},\dots,C_{j,c}\in\Fbb,$ forming $C\in\Fbb^{m,c}.$}\par\quad
-Now we have $A=CR.$ TODO\PfEnd
+	\textsc{Column-Row Factorization}\;\;(CR Factorization)\;\vspace{3pt}
+	\TextB{Suppose $A\in\Fbb^{m,n},A\neq 0.$\vspace{3pt}}
+	(a) \TextB{Let $S_c=\Span{A_{\cdot,1},\dots,A_{\cdot,n}}\subseteq\Fbb^{m,1},\dim S_c=c,\text{ the col rank}.$\vspace{3pt}}
+	\Ha\TextB{Prove that $\exists\,C\in\Fbb^{m,c},R\in\Fbb^{c,n},A=CR.$\vspace{5pt}}
+	(b) \TextB{Let $S_r=\Span{A_{1,\cdot},\dots,A_{m,\cdot}}\subseteq\Fbb^{1,n},\dim S_r=r,\text{ the row rank}.$\vspace{3pt}}
+	\Hb\TextB{Prove that $\exists\,C\in\Fbb^{m,r},R\in\Fbb^{r,n},A=CR.$}
+}Notice that $A\neq 0\Rightarrow c,r\geqslant 1.$\vspace{2pt}\par\quad
+(a) Let $\Par{C_{\cdot,1},\dots,C_{\cdot,c}}$ be a basis of $S_c$, forming $C\in\Fbb^{m,c}$. Then $\forall k\in\Bra{1,\dots,n},$\vspace{2pt}\par\quad\Ha
+$A_{\cdot,k}=R_{1,k}C_{\cdot,1}+\dots+R_{c,k}C_{\cdot,c}=\Par{CR}_{\cdot,k},\exists\,!\,R_{1,k},\dots,R_{c,k}\in\Fbb,$ forming $R\in\Fbb^{c,n}.$ Thus $A=CR.$\vspace{4pt}\par\quad
+(b) Let $\Par{R_{1,\cdot},\dots,R_{r,\cdot}}$ be a basis of $S_r,$ forming $R\in\Fbb^{r,n}$. Then $\forall j\in\Bra{1,\dots,m},$\vspace{2pt}\par\quad\Hb
+$A_{j,\cdot}=C_{j,1}R_{1,\cdot}+\dots+C_{j,r}R_{r,\cdot}=\Par{CR}_{j,\cdot},\exists\,!\,C_{j,1},\dots,C_{j,r}\in\Fbb,$ forming $C\in\Fbb^{m,r}.$ Thus $A=CR.$\PfEnd\vspace{4pt}
 \Example\par\quad
 $A\,=\,$ {\normalsize$\begin{pmatrix} 10 & 7 & 4 & 1 \\ 26 & 19 & 12 & 5\\ 46 & 33 & 20 & 7\end{pmatrix}$
 {$\overset{\Par{1}}{=}$}
 $\begin{pmatrix} 1 & 0\\ 0 & 1\\ 2 & 1\end{pmatrix}\begin{pmatrix} 10 & 7 & 4 & 1\\ 26 & 19 & 12 & 5\end{pmatrix}$
 {$\overset{\Par{2}}{=}$}
 $\begin{pmatrix} 7 & 4\\ 19 & 12\\ 33 & 20\end{pmatrix}\begin{pmatrix} 2 & -1\\ 1 & 0\\ 0 & 1\\ -1 & 2\end{pmatrix}$}\par\quad
-(I) {\normalsize$\begin{pmatrix} 46 & 33 & 20 & 7 \end{pmatrix}=2\begin{pmatrix} 10 & 7 & 4 & 1\end{pmatrix}+\begin{pmatrix} 26 & 19 & 12 & 5\end{pmatrix}$}.
-%{\small$\begin{pmatrix} 46 & 33 & 20 & 7 \end{pmatrix}$} can be uniquely written as a linear combination of $A_{1,\cdot},A_{2,\cdot}$.\par\quad
-Hence $\dim S_r=2$. Let $\Par{A_{1,\cdot},A_{2,\cdot}}$ be the basis.\par\vspace{6pt}\quad\EndI
-(II) {\normalsize$\begin{pmatrix} 10\\ 26\\ 46\end{pmatrix}=2\begin{pmatrix} 7\\ 19\\ 33\end{pmatrix}-\begin{pmatrix} 4\\ 12\\ 20\end{pmatrix}; \quad \begin{pmatrix} 1\\ 5\\ 7\end{pmatrix}=2\begin{pmatrix} 4\\ 12\\ 20\end{pmatrix}-\begin{pmatrix} 7\\ 19\\ 33\end{pmatrix}$}. Hence $\dim S_c=2.$ Let $\Par{A_{\cdot,2},A_{\cdot,3}}$ be the basis.\vspace{6pt}\par
+(I) {\normalsize$\begin{pmatrix} 46 & 33 & 20 & 7 \end{pmatrix}=2\begin{pmatrix} 10 & 7 & 4 & 1\end{pmatrix}+\begin{pmatrix} 26 & 19 & 12 & 5\end{pmatrix}$}.\par\quad\HI
+{\small$\begin{pmatrix} 46 & 33 & 20 & 7 \end{pmatrix}$} can be uniquely written as a linear combination of $\Par{A_{1,\cdot},A_{2,\cdot}}$.\par\quad\HI
+Hence $\dim S_r=2$. $\Par{A_{1,\cdot},A_{2,\cdot}}$ is a basis.\par\vspace{6pt}\quad\EndI
+(II) {\normalsize$\begin{pmatrix} 10\\ 26\\ 46\end{pmatrix}=2\begin{pmatrix} 7\\ 19\\ 33\end{pmatrix}-\begin{pmatrix} 4\\ 12\\ 20\end{pmatrix}; \quad \begin{pmatrix} 1\\ 5\\ 7\end{pmatrix}=2\begin{pmatrix} 4\\ 12\\ 20\end{pmatrix}-\begin{pmatrix} 7\\ 19\\ 33\end{pmatrix}$}. \;Hence $\dim S_c=2.$ $\Par{A_{\cdot,2},A_{\cdot,3}}$ is a basis.\vspace{6pt}\par
 \SepLine
 \pagebreak
 
@@ -1502,8 +1550,7 @@ For each $A_{\cdot,k}\in S_c,\;A_{\cdot,k}=\Par{CR}_{\cdot,k}=R_{1,k}C_{\cdot,1}
 $\Rightarrow\Span{A_{1,\cdot},\dots,A_{n,\cdot}}=S_r=\Span{R_{1,\cdot},\dots,R_{c,\cdot}}\Rightarrow\dim S_r=r\leqslant c=\dim S_c.$\TextB{}
 $\Rightarrow\Span{A_{\cdot,1},\dots,A_{\cdot,m}}=S_r=\Span{C_{\cdot,1},\dots,C_{\cdot,r}}\Rightarrow\dim S_c=c\leqslant r=\dim S_r.$\TextB{}
 \Or Apply the result to $A^t\in\Fbb^{n,m}\Rightarrow\dim S_r^t=\dim S_c=c\leqslant r=\dim S_r=\dim S_c^t.$\PfEnd
-\SepLine
-
+\SepLine[10pt]
 
 \ProblemBnoor{\hypertarget{3C4e17}4E 3.C.17, \OR 3.F.32}[\Sbra]{
 	\TextB{Suppose $T\in\Lm{V}$ and $\Par{u_1,\dots,u_n},\Par{v_1,\dots,v_n}$ are bases of \,$V$.}
@@ -1518,8 +1565,8 @@ $\Rightarrow\Span{A_{\cdot,1},\dots,A_{\cdot,m}}=S_r=\Span{C_{\cdot,1},\dots,C_{
 &\hspace{-18.5pt}\Delta\MathLeftBrace{l}{\Longleftrightarrow\Par{Tu_1,\dots,Tu_n}\text{ is a basis of }V; 又 \dim\range T=\dim\Span{\Mt{Tu_1},\dots,\Mt{Tu_n}}=n\\
 \Longleftrightarrow\Par{\Mt{Tu_1},\dots,\Mt{Tu_n}}\text{ is a basis of }\Fbb^{n,1},\text{ as well as }\Par{A_{\cdot,1},\dots,A_{\cdot,n}}}\\
 &\left[\begin{array}{l}\hspace{-4pt}\text{又} \dim S_c=\dim\Span{A_{\cdot,1},\dots,A_{\cdot,n}}=\dim\Span{A_{1,\cdot},\dots,A_{n,\cdot}}=\dim S_r=n\end{array}\right]\\
-&\Longleftrightarrow\Par{A_{1,\cdot},\dots,A_{n,\cdot}}\text{ is a basis of }\Fbb^{1,n}.}\vspace{-25pt}\par\PfEnd\vspace{18pt}\par\quad
-\large Now we show that $\Par{\Delta}$ properly.\vspace{5pt}\par\quad
+&\Longleftrightarrow\Par{A_{1,\cdot},\dots,A_{n,\cdot}}\text{ is a basis of }\Fbb^{1,n}.}\vspace{-6pt}\par\PfEnd\vspace{8pt}\par\quad
+\large Now we show $\Par{\Delta}$ properly, that is $T$ is inje $\Longleftrightarrow$ The cols of $\Mt{T}$ are linely inde.\vspace{5pt}\par\quad
 $(a)\,\Rightarrow(b):\;$\vspace{-10pt}\par\quad\Ha
 Suppose $\;b_1A_{\cdot,1}+\dots+b_nA_{\cdot,n}=\,${\normalsize$
 \begin{pmatrix}
@@ -1533,7 +1580,7 @@ $(b)\,\Rightarrow(a):\;$\par\quad\Hb
 Suppose $\;u=b_1u_1+\dots+b_nu_n\in\null T.$\par\quad\Hb
 Then $\;Tu=0=\Par{b_1A_{1,1}+\dots+b_nA_{1,n}}v_1+\dots+\Par{b_1A_{n,1}+\dots+b_nA_{n,n}}v_n.$\par\quad\Hb
 Thus $\;b_1A_{1,1}+\dots+b_nA_{1,n}=\dots=b_1A_{n,1}+\dots+b_nA_{n,n}=0.$\vspace{6pt}\par\quad\Hb
-Which is equivalent to {\;\normalsize$
+Which is equi to {\;\normalsize$
 	\begin{pmatrix}
 		b_1 A_{1,1}+\dots+b_nA_{1,n}\\
 		\vdots\\
@@ -1551,11 +1598,11 @@ Thus by (2.39), $(a)$ holds.\PfEnd
 Using the notation in CR Factorization.\par\quad
 (a) Suppose $A=\begin{pmatrix}c_1 \\ \vdots \\ c_m \end{pmatrix}\begin{pmatrix} d_1 & \cdots & d_n\end{pmatrix}=\begin{pmatrix} c_1 d_1 & \cdots & c_1 d_n\\ \vdots & \ddots & \vdots \\ c_m d_1 & \cdots & c_m d_n \end{pmatrix}.\,\,\,\,\Par{\,\,\exists\,c_j,d_k\in\Fbb,\forall j,k\,}$\par\,\par\quad\Ha
 Then $S_c=\MathLeftrightBrace{c}{\begin{pmatrix} c_1 d_1 \\ \vdots \\ c_m d_1\end{pmatrix},\begin{pmatrix} c_1 d_2 \\ \vdots \\ c_m d_2\end{pmatrix},\dots,\begin{pmatrix} c_1 d_n \\ \vdots \\ c_m d_n\end{pmatrix}}=\Spn\MathLeftrightBrace{c}{\begin{pmatrix} c_1 \\ \vdots \\ c_m\end{pmatrix}}.$\par\,\par\quad\Ha
-\Or $S_r=\Spn\MathLeftrightBrace{c}{\begin{pmatrix} c_1 d_1 & \cdots & c_1 d_n\end{pmatrix},\\ \begin{pmatrix} c_2 d_1 & \cdots & c_2 d_n\end{pmatrix},\\ \qquad\qquad\vdots\\ \begin{pmatrix} c_m d_1 & \cdots & c_m d_n\end{pmatrix}}=\Spn\MathLeftrightBrace{c}{\begin{pmatrix} d_1 & \dots & d_n\end{pmatrix}}.$\quad Hence rank $A=1$.\par{\,}\par\quad\Ha
+\Or $S_r=\Spn\MathLeftrightBrace{c}{\begin{pmatrix} c_1 d_1 & \cdots & c_1 d_n\end{pmatrix},\\ \begin{pmatrix} c_2 d_1 & \cdots & c_2 d_n\end{pmatrix},\\ \qquad\qquad\vdots\\ \begin{pmatrix} c_m d_1 & \cdots & c_m d_n\end{pmatrix}}=\Spn\MathLeftrightBrace{c}{\begin{pmatrix} d_1 & \dots & d_n\end{pmatrix}}.$\quad Hence rank $A=1$.\vspace{12pt}\par\quad\Ha
 \Or {\Large\vspace{6pt}Using also the result in [4E 3.51(a)].}\par\quad\Ha
 {\Large\vspace{6pt}Every col of $A$ is a scalar multi of $C.$ Then rank $A\leqslant 1$ 又 rank $A\geqslant 1$ ( $A\neq 0$ ).}\vspace{6pt}\par\quad
-(b) By CR Factorization, $\exists\,C=\begin{pmatrix}c_1 \\ \vdots \\ c_m \end{pmatrix}\in\Fbb^{m,1},R=\begin{pmatrix} d_1 & \cdots & d_n\end{pmatrix}\in\Fbb^{1,n}$ such that $A=CR.$\vspace{4pt}\par\quad\Hb
-\Or Not using CR Factorization. Suppose rank $A=\dim S_c=\dim S_r=1.$\vspace{4pt}\par\quad\Hb
+(b) By CR Factorization, $\exists\,C=\begin{pmatrix}c_1 \\ \vdots \\ c_m \end{pmatrix}\in\Fbb^{m,1},R=\begin{pmatrix} d_1 & \cdots & d_n\end{pmatrix}\in\Fbb^{1,n}$ such that $A=CR.$\vspace{8pt}\par\quad\Hb
+\Or Not using CR Factorization. Suppose rank $A=\dim S_c=\dim S_r=1.$\vspace{8pt}\par\quad\Hb
 {\Large\vspace{6pt}Let $c_j=\displaystyle\frac{A_{j,1}}{A_{1,1}}=\frac{A_{j,2}}{A_{1,2}}=\dots=\frac{A_{j,n}}{A_{1,n}},\qquad d\apostrophe_k=\frac{A_{1,k}}{A_{1,1}}=\frac{A_{2,k}}{A_{2,1}}=\dots=\frac{A_{m,k}}{A_{m,1}}$.\quad$\Par{\,\forall j,k\,}$}\par\vspace{6pt}\quad\Hb
 {\Large\vspace{6pt}$\Rightarrow A_{j,k}=d\apostrophe_k A_{j,1}=c_j A_{1,k}=c_j d\apostrophe_k A_{1,1}=c_j d_k.$ Letting $d_k=d\apostrophe_k A_{1,1}.$}\PfEnd
 \SepLine[10pt]
