@@ -2368,7 +2368,7 @@ $v_1+U=v_2+U\Longleftrightarrow\Par{v_1-v_2}\in U\Longleftrightarrow S\BigPar{\P
 {\vspace{2pt}For any $W\in\mathcal{S}_V U,$ because $V=U\oplus W,\;\forall v\in V,\exists\,!\,u_v\in U,w_v\in W$ such that $v=u_v+w_v.$}\TextB{}
 {\vspace{2pt}Define $T\in\Lm{V,W}$ by $T\Par{v}=w_v.$ Hence $\null T=U,\,\,\range T=W.$}\TextB{}
 {\vspace{2pt}Then $\tilde{T}\in\Lm{V/\null T,W}$ is defined by $\tilde{T}\Par{v+U}=Tv=w_v.$}\TextB{}
-{\vspace{2pt}Now $\pi\circ\tilde{T}=I_{V/U},\;\tilde{T}\circ\pi=I_{W}=T\mid_W$ Hence $\tilde{T}$ is an iso.}\par
+{Now $\pi\circ\tilde{T}=I_{V/U},\;\tilde{T}\circ\pi=I_{W}=T\mid_W$ Hence $\tilde{T}$ is an iso.}\par
 \SepLine
 
 \ProblemN{12}{
@@ -2536,8 +2536,8 @@ Hence $\varphi\in U^0+W^0.$\vspace{4pt}\par\quad
 	(a) \TextB{Suppose $\Bra{V_{\alpha_i}}{_{\alpha_i\in\Gamma}}$ is a collection of subsets of \,$V$. Then $\XPar{\bigcap_{\alpha_i\in\Gamma}V_{\alpha_i}}{^0}=\sum_{\alpha_i\in\Gamma}\BigPar{V^0_{\alpha_i}}.$\vspace{4pt}}
 	(b) \TextB{Suppose $\Bra{V_{\alpha_i}}{_{\alpha_i\in\Gamma}}$ is a collection of subsps of \,$V$. Then $\XPar{\sum_{\alpha_i\in\Gamma}V_{\alpha_i}}{^0}=\bigcap_{\alpha_i\in\Gamma}\BigPar{V^0_{\alpha_i}}.$\vspace{8pt}}
 	(c) \TextB{Suppose $V=U\oplus W.$ Then $V\apostrophe=U^0\oplus W^0.$ And $U_V^\apostrophe=W^0,\;W_V^\apostrophe=U^0.$\vspace{4pt}}
-	\Hc\TextB{\envFontDefault\large\tgnr Where $U_V^\apostrophe=\Bra{\varphi\in V\apostrophe:\varphi=\varphi\circ i^-}.$ And $i^-\in\Lm{V,U}$ is defined by $i^-\Par{u_v+w_v}=u_v.$}
-}\SepLine[2pt]
+	\Hc\TextB{\envFontDefault\large\tgnr Where $U_V^\apostrophe=\Bra{\varphi\in V\apostrophe:\varphi=\varphi\circ \iota}.$ And $\iota\in\Lm{V,U}$ is defined by $\iota\Par{u_v+w_v}=u_v.$\vspace{-2pt}}
+}\SepLine
 
 \ProblemBnoor{\hypertarget{3F4e23}{4E 3.F.23}}{
 	\TextB{Suppose $\varphi_1,\dots,\varphi_m\in V\apostrophe$. Prove that the following sets are the same.\vspace{2pt}}
@@ -2554,14 +2554,15 @@ And $0\in\Span{\varphi_i},0\in\Par{\null\varphi_i}{^0}.$ Hence $\Span{\varphi_i}
 \Or [{\tgsl Only in Finite-dim}] Suppose $\varphi\in V\apostrophe.$ Note that $\Dim\Par{\null\varphi}{^0}=\dim\range\varphi=\dim\Span{\varphi}.$\par\quad
 And because $\forall c\in\Fbb,v\in\null\varphi,c\varphi\Par{v}=0\Rightarrow\Span{\varphi}\subseteq\Par{\null\varphi}{^0}.$ Similarly.\PfEnd\vspace{6pt}
 \Corollary \,\,\,\ProblemN[]{\hypertarget{3F30}{30}}{
-	\TextNL{Suppose $V$ is finite-dim and $\varphi_1,\dots,\varphi_m$ is a linely inde list in $V\apostrophe.$}
-	\Blind{\Corollary \,\,\,}\TextNL{Then $\Dim\BigPar{\Par{\null \varphi_1}\cap\dots\cap\Par{\null \varphi_m}}=\Par{\dim V}-m$.}\vspace{-4pt}
+	\TextNL{\tgnr\large\envFontDefault Suppose $V$ is finite-dim and $\varphi_1,\dots,\varphi_m$ is a linely inde list in $V\apostrophe.$}
+	\Blind{\Corollary \,\,\,} \TextNL{\tgnr\large\envFontDefault Then $\Dim\BigPar{\Par{\null \varphi_1}\cap\dots\cap\Par{\null \varphi_m}}=\Par{\dim V}-m$.}\vspace{-5pt}
 }
-\SepLine\pagebreak
+\SepLine
 
 \ProblemN{\hypertarget{3F25}{25}}{
 	\TextNL{Suppose $U$ is a subsp of $V$. Explain why $U=\Bra{v\in V:\varphi\Par{v}=0,\forall\varphi\in U^0}.$}
-}Note that $U=\Bra{v\in V:v\in U}$ is a subsp of $V$; And $v\in U\Longleftrightarrow\varphi\Par{v}=0,\forall\varphi\in U^0.$\PfEnd
+}Note that $U=\Bra{v\in V:v\in U}$ is a subsp of $V$; And $v\in U\Longleftrightarrow\varphi\Par{v}=0,\forall\varphi\in U^0.$\PfEnd\vspace{-3pt}
+\SepLine
 \Corollary \,\,\,$U^0=\Bra{v\in V:\varphi\Par{v}=0,\forall\varphi\in U^0}{^0}.$\vspace{-2pt}\par
 {\Comment \,\,\,}{
 	$\Bra{v\in V:\varphi\Par{v}=0,\forall\varphi\in U^0}=\BigPar{\Par{\null\varphi_1}\cap\cdots\cap\Par{\null\varphi_m}\cap\cdots},$ where $\varphi_k\in U^0$,\par
@@ -2575,26 +2576,24 @@ Suppose $U=\Bra{v\in V:\varphi\Par{v}=0,\forall\varphi\in\Omega},$ {\tgsl\normal
 %=\Bra{\varphi\in V\apostrophe:\varphi\Par{v}=0,\forall v\in \Bra{v\in V:\varphi\Par{v}=0,\forall\varphi\in\Omega}}
 Then $U^0=\Bra{v\in V:\varphi\Par{v}=0,\forall\varphi\in\Omega}{^0}$. 又 $U^0=\Bra{v\in V:\varphi\Par{v}=0,\forall\varphi\in U^0}{^0}.$\par\quad
 Immediately by the \COROLLARY\;in Problem (20,21), we may conclude that $\Omega=U^0$.\PfEnd\vspace{6pt}\quad
-\Or\par\quad
-(a) Suppose $\varphi\in\Omega.$ Then $\forall v\in U,\varphi\Par{v}=0\Rightarrow\varphi\in U^0.$ Hence $\Omega\subseteq U^0.$\par\quad
-(b) 
-Let $W$ be such that $V=U\oplus W.$ For ease of notation, let $W^0=U^{\varnothing},\Omega=\Omega^+.$\par\quad\Hb
-By the \COROLLARY\;in Problem (22, 23), $V\apostrophe=U^0\oplus W^0.$\par\quad\Hb
-Let $\Omega^-$ be such that $V\apostrophe=\Omega^+\oplus\Omega^-.$ Let $\Delta$ be such that $U^0=\Omega\oplus\Delta.$\par\quad\Hb
-Now $V\apostrophe=\Omega^+\oplus\Omega^-=U^0\oplus U^{\varnothing}=\Omega\oplus\Delta\oplus U^{\varnothing}.$ Assume that $\Omega^-\neq\Delta\oplus U^{\varnothing}.$\par\quad\Hb
-{\normalsize\tgsl In other words, suppose $\psi\in V\apostrophe$ sends all the vecs that, all $\psi\in\Omega$ send to zero in common, to zero, prove that $\psi\in\Omega$.}\par\quad\Hb
-Let $\null_C\Omega=U.$ \NOTICE that $0\neq\varphi\in U^{\varnothing}\Longleftrightarrow\varphi\not\in U^0\Longleftrightarrow \null_C\Omega\not\subseteq\null\varphi$\par\quad\Hb
-$\Rightarrow\varphi\not\in\Omega^+\Longleftrightarrow0\neq\varphi\in \Omega^-.$\par\quad\Hb
-Thus $U^{\varnothing}\subseteq \Omega^-.$ Let $\Theta$ be such that $\Omega^-=U^{\varnothing}\oplus\Theta.$ Hence $U^{\varnothing}\oplus\Theta\neq U^{\varnothing}\oplus\Delta\Longrightarrow\Theta\neq\Delta.$\par\quad\Hb
-Which means that both $\Theta$ and $\Delta$ are not $\zeroSubs.$ \colorbox{yellow}{TODO} Prove that $\Theta=\delta.$
-
-
-\PfEnd\vspace{6pt}\quad
+%\Or\par\quad
+%(a) Suppose $\varphi\in\Omega.$ Then $\forall v\in U,\varphi\Par{v}=0\Rightarrow\varphi\in U^0.$ Hence $\Omega\subseteq U^0.$\par\quad
+%(b) 
+%Let $W$ be such that $V=U\oplus W.$ For ease of notation, let $W^0=U^{\varnothing},\Omega=\Omega^+.$\par\quad\Hb
+%By the \COROLLARY\;in Problem (22, 23), $V\apostrophe=U^0\oplus W^0.$\par\quad\Hb
+%Let $\Omega^-$ be such that $V\apostrophe=\Omega^+\oplus\Omega^-.$ Let $\Delta$ be such that $U^0=\Omega\oplus\Delta.$\par\quad\Hb
+%Now $V\apostrophe=\Omega^+\oplus\Omega^-=U^0\oplus U^{\varnothing}=\Omega\oplus\Delta\oplus U^{\varnothing}.$ Assume that $\Omega^-\neq\Delta\oplus U^{\varnothing}.$\par\quad\Hb
+%{\normalsize\tgsl In other words, suppose $\psi\in V\apostrophe$ sends all the vecs that, all $\psi\in\Omega$ send to zero in common, to zero, prove that $\psi\in\Omega$.}\par\quad\Hb
+%Let $\null_C\Omega=U.$ \NOTICE that $0\neq\varphi\in U^{\varnothing}\Longleftrightarrow\varphi\not\in U^0\Longleftrightarrow \null_C\Omega\not\subseteq\null\varphi$\par\quad\Hb
+%$\Rightarrow\varphi\not\in\Omega^+\Longleftrightarrow0\neq\varphi\in \Omega^-.$\par\quad\Hb
+%Thus $U^{\varnothing}\subseteq \Omega^-.$ Let $\Theta$ be such that $\Omega^-=U^{\varnothing}\oplus\Theta.$ Hence $U^{\varnothing}\oplus\Theta\neq U^{\varnothing}\oplus\Delta\Longrightarrow\Theta\neq\Delta.$\par\quad\Hb
+%Which means that both $\Theta$ and $\Delta$ are not $\zeroSubs.$ \colorbox{yellow}{TODO} Prove that $\Theta=\delta.$
+%
+%
+%\PfEnd\vspace{6pt}\quad
 \Or [{\tgsl Only in Finite-dim}] Let $\Par{\varphi_1,\dots,\varphi_m}$ be a basis of $\Omega.$ Then by def, $U\subseteq\Par{\null\varphi_1}\cap\cdots\cap\Par{\null\varphi_m}.$\par\quad
-Suppose $\varphi\in\Omega.$ Then $\exists\,!\,a_i\in\Fbb,\varphi=a_1\varphi_1+\dots+a_m\varphi_m.$\par\quad
-And $\forall v\in\Par{\null\varphi_1}\cap\cdots\cap\Par{\null\varphi_m},\varphi\Par{v}=a_1\varphi_1\Par{v}+\dots+a_m\varphi_m\Par{v}=0.$\par\quad
-Hence $v\in U\Rightarrow\Par{\null\varphi_1}\cap\cdots\cap\Par{\null\varphi_m}\subseteq U.$ Now $U=\Par{\null\varphi_1}\cap\cdots\cap\Par{\null\varphi_m}.$\par\quad
-Thus by the \COROLLARY\;in Problem (23), $U^0=\BigPar{\Par{\null\varphi_1}\cap\cdots\cap\Par{\null\varphi_m}}{^0}=\Span{\varphi_1,\dots,\varphi_m}=\Omega.$\par
+$\forall\varphi\in\Omega,\exists\,!\,a_i\in\Fbb,\varphi=a_1\varphi_1+\dots+a_m\varphi_m\Rightarrow\forall v\in\Par{\null\varphi_1}\cap\cdots\cap\Par{\null\varphi_m},\varphi\Par{v}=0\Rightarrow v\in U.$\par\quad
+Hence $\Par{\null\varphi_1}\cap\cdots\cap\Par{\null\varphi_m}=U.$ 又 $\Span{\varphi_1,\dots,\varphi_m}=\Omega.$ By Problem (23), we are done.\PfEnd\vspace{6pt}
 \Corollary \,\,\,For every subsp $\Omega$ of $V\apostrophe,\;\exists\,!\,$subsp $U$ of $V$ such that $\Omega=U^0.$\par
 \SepLine
 
@@ -2614,14 +2613,31 @@ Thus by the \COROLLARY\;in Problem (23), $U^0=\BigPar{\Par{\null\varphi_1}\cap\c
 	\ProblemN[]{\hypertarget{3F29}{29}}{
 		\TextNL{Prove that $\range T\apostrophe=\Span{\varphi_1,\dots,\varphi_m}\Longleftrightarrow\null T=\Par{\null\varphi_1}\cap\cdots\cap\Par{\null\varphi_m}.$}}
 	\TextB{\vspace{-4pt}}
-}\par\quad
-Using [3.107], [3.109], Problem (23) and the \COROLLARY\;in Problem (20, 21).\par\quad
+}Using [3.107], [3.109], Problem (23) and the \COROLLARY\;in Problem (20, 21).\par\quad
 (28) $\Par{\range T}{^0}=\null T\apostrophe=\Span{\psi_1,\dots,\psi_m}=\BigPar{\Par{\null\psi_1}\cap\cdots\cap\Par{\null\psi_m}}{^0}.$\par\quad
-(29) $\Par{\null T}{^0}=\range T\apostrophe=\Span{\varphi_1,\dots,\varphi_m}=\BigPar{\Par{\null\varphi_1}\cap\cdots\cap\Par{\null\varphi_m}}{^0}.$\PfEnd\vspace{2pt}\quad
- \Or Using Problem (26).\par
+(29) $\Par{\null T}{^0}=\range T\apostrophe=\Span{\varphi_1,\dots,\varphi_m}=\BigPar{\Par{\null\varphi_1}\cap\cdots\cap\Par{\null\varphi_m}}{^0}.$\PfEnd
 \SepLine
 
-\pagebreak
+\ProblemN[]{\hypertarget{3F13}{13}}{
+	\TextNL{Define $T:\Rbb^3\rightarrow$$\Rbb^2$ by $T\Par{x,y,z}=\Par{4x+5y+6z,7x+8y+9z}$.\vspace{3pt}}
+	\TextNL{Let $\Par{\varphi_1,\varphi_2},\Par{\psi_1,\psi_2,\psi_3}$ denote the dual basis of the standard basis of $\Rbb^2$ and $\Rbb^3$.\vspace{4pt}}
+	(a) \TextNL{Describe the linear functionals $T\apostrophe\Par{\varphi_1},T\apostrophe\Par{\varphi_2}\in\Lm{\Rbb^3,\Rbb}$\vspace{3pt}}
+	\Ha\TextNL{{\large\tgnr\envFontDefault For any $\Par{x,y,z}\in\Rbb^3$, $\BigPar{T\apostrophe\Par{\varphi_1}}\Par{x,y,z}=4x+5y+6z, \BigPar{T\apostrophe\Par{\varphi_2}}\Par{x,y,z}=7x+8y+9z$.}\vspace{8pt}}
+	(b) \TextNL{Write $T\apostrophe\Par{\varphi_1}$ and $T\apostrophe\Par{\varphi_2}$ as linear combinations of $\psi_1,\psi_2,\psi_3$.\vspace{2pt}}
+	\Hb\TextNL{{\large\tgnr\envFontDefault$T\apostrophe\Par{\varphi_1}=4\psi_1+5\psi_2+6\psi_3,\,\,T\apostrophe\Par{\varphi_2}=7\psi_1+8\psi_2+9\psi_3.$}\vspace{8pt}}
+	(c) \TextNL{What is $\null T\apostrophe$? What is $\range T\apostrophe$?}
+	\Hc\TextNL{\large\tgnr\envFontDefault}
+	\Hc\TextNL{\large\tgnr\envFontDefault}
+	\Hc\TextNL{\large\tgnr\envFontDefault\PfEnd}
+}\SepLine
+
+\ProblemN[]{\hypertarget{3F14}{14}}{
+	\TextNL{Define $T:\PoR{}\rightarrow\PoR{}$ by $\Par{Tp}\Par{x}=x^2 p\Par{x}+p\apostrophe\apostrophe\Par{x}$ for each $x\in\Rbb.$\vspace{4pt}}
+	(a) \TextNL{Suppose $\varphi\in\PoR{}\apostrophe$ is defined by $\varphi\Par{p}=p\apostrophe\Par{4}$. Describe $T\apostrophe\Par{\varphi}\in\PoR{}\apostrophe$.\vspace{4pt}}
+	\Ha\TextNL{\large\envFontDefault$\BigPar{T\apostrophe\Par{\varphi}}\Par{p}=\Sbra{x^2p\Par{x}+p\apostrophe\apostrophe\Par{x}}\apostrophe\Par{4}=\Sbra{2xp\Par{x}+x^2p\apostrophe\Par{x}+p\apostrophe\apostrophe\apostrophe\Par{x}}\Par{4}=8p\Par{4}+16p\apostrophe\Par{4}+p\apostrophe\apostrophe\apostrophe\Par{4}$.\vspace{8pt}}
+	(b) \TextNL{Suppose $\varphi\in\PoR{}\apostrophe$ is defined by $\varphi\Par{p}=\int_0^1 p\Par{x}\d x$. Evaluate $\BigPar{T\apostrophe\Par{\varphi}}\Par{x^3}$.\vspace{4pt}}
+	\Hb\TextNL{\large\envFontDefault $\BigPar{T\apostrophe\Par{\varphi}}\Par{x^3}=\int_0^1\Par{x^5+6x}\d x=\int_0^1\XPar{\frac{1}{6}x^6+3x^2}\apostrophe\d x=\frac{19}{6}.$\PfEnd}
+}\SepLine\pagebreak
 
 \ProblemBnoor{\hypertarget{3F4e6}{4E 3.F.6}}{
 	\TextB{Suppose $\varphi,\beta\in V\apostrophe$. Prove that $\null \varphi\subseteq\null\beta\Longleftrightarrow\beta=c\varphi,\exists\,c\in\Fbb.$}
@@ -2666,7 +2682,7 @@ $[Q]\Rightarrow[P]:\;$ Define $E\in\Lm{\Fbb}$ by $E\Par{x}=cx.$ Then $\forall v\
 	\TextB{Hence $\forall v \in V,\,Tv=\varphi_1\Par{v}w_1+\dots+\varphi_m\Par{v}w_m,\,\,\exists\,!\,\varphi_1 \Par{v}, \dots , \varphi_m\Par{v},$\vspace{3pt}}
 	\TextB{thus defining $\varphi_i:V\rightarrow\Fbb$ for each $i\in\Bra{1,\dots,m}.$ Show that each $\varphi_{i}\in V\apostrophe.$}
 }\vspace{-6pt}\par\quad
-\AlignEq{}{\forall u,v\in V,\lambda\in\Fbb,\,&T\Par{u+\lambda v}=\textstyle\sum_{i=1}^m\varphi_i\Par{u+\lambda v}w_i\\[-3pt]=\,&T{u}+\lambda T{v}=\XPar{\textstyle\sum_{i=1}^m\varphi_i\Par{u}w_i}+\lambda\XPar{\textstyle\sum_{i=1}^m\varphi_i\Par{v}w_i}=\textstyle\sum_{i=1}^m\BigPar{\varphi_i\Par{u}+\lambda\varphi_i\Par{v}}w_i.\hspace{6pt}}\PfEnd\vspace{3pt}\quad
+\AlignEq{}{\forall u,v\in V,\lambda\in\Fbb,\,&T\Par{u+\lambda v}=\textstyle\sum_{i=1}^m\varphi_i\Par{u+\lambda v}w_i\\[-3pt]=\,&T{u}+\lambda T{v}=\XPar{\textstyle\sum_{i=1}^m\varphi_i\Par{u}w_i}+\lambda\XPar{\textstyle\sum_{i=1}^m\varphi_i\Par{v}w_i}=\textstyle\sum_{i=1}^m\BigPar{\varphi_i\Par{u}+\lambda\varphi_i\Par{v}}w_i.\hspace{6pt}}\PfEnd\vspace{0pt}\quad
 \Or For each $w_{i},\exists\,v_{i} \in V,\,Tv_{i}=w_{i},$
 then $\Par{v_1,\dots, v_m}$ is linely inde.\par\quad
 Now we have $Tv=a_1Tv_1+\dots+a_mTv_m,\,\forall v \in V,$ $\exists\,!\,a_{i}\in\Fbb.$ Let $B_{\envFontSmall[\scriptsize]\Par{\range T}\apostrophe}=\Par{\psi_1, \dots, \psi_m}$.\par\quad
@@ -2674,7 +2690,13 @@ Then $\BigPar{T\apostrophe\Par{\psi_{i}}}\Par{v}=\psi_{i}\circ T\Par{v}=a_i.$ Wh
 Thus for each $i\in\Bra{1,\dots,m},\varphi_i=\psi_i\circ T=T\apostrophe\Par{\psi_i}\in V\apostrophe.$\PfEnd
 \SepLine
 
-\pagebreak
+\ProblemN[]{\hypertarget{3F9}{9}}{
+	\TextN{Let $B_V=\Par{v_1,\dots,v_n},\,B_{V\apostrophe}=\Par{\varphi_1,\cdots,\varphi_n}$. Then $\forall\psi\in V\apostrophe,\psi=\psi\Par{v_1}\varphi_1+\dots+\psi\Par{v_n}\varphi_n.$}
+	%\Corollary \,\,\,{\tgsl For other $B_V'=\Par{u_1,\dots,u_n},B_{V\apostrophe}'=\Par{\rho_1,\dots,\rho_n},\forall\psi\in V\apostrophe,\psi=\psi\Par{u_1}\rho_1+\dots+\psi\Par{u_n}\rho_n.$}\TextB{}
+}\par\quad
+$\psi\Par{v}=\psi\XPar{\sum_{i=1}^n a_i v_i}=\sum_{i=1}^n a_i\psi\Par{v_i}=\sum_{i=1}^n\psi\Par{v_{i}}\varphi_i\Par{v}=\Sbra{\psi\Par{v_1}\varphi_1+\dots+\psi\Par{v_n}\varphi_n}\Par{v}.$\vspace{2pt}\par\quad
+\Or $\Sbra{\psi\Par{v_1}\varphi_1+\dots+\psi\Par{v_n}\varphi_n}\XPar{\sum_{i=1}^n a_i v_i}=\psi\Par{v_1}\varphi_1\XPar{\sum_{i=1}^n a_i v_i}+\dots+\psi\Par{v_n}\varphi_n\XPar{\sum_{i=1}^n a_i v_i}.$\PfEnd
+\SepLine\pagebreak
 
 \ProblemN{\hypertarget{3F4e24}{}\hypertarget{3F6}{6}}{
 	\TextN{Define \,$\Gamma: V\apostrophe\rightarrow\Fbb^m\,$ by $\,\Gamma\Par{\varphi}=\BigPar{\varphi\Par{v_1},\dots,\varphi\Par{v_m}},$ where $v_1,\dots,v_m\in V$.}
@@ -2690,7 +2712,7 @@ Now $a_1 v_1+\dots+a_m v_m=0\Rightarrow 0=\varphi_{i}\Par{a_1 v_1+\dots+a_m v_m}
 Suppose $\Par{v_1,\dots,v_m}$ is linely inde. Let $U=\Span{\varphi_1,\dots,\varphi_m},B_{U\apostrophe}=\Par{\varphi_1,\dots,\varphi_m}.$\par\quad\Hb
 Thus $\forall\Par{a_1,\dots,a_m}\in\Fbb^m,\exists\,!\,\varphi=a_1\varphi_1+\dots+a_m\varphi_m.$\par\quad\Hb
 Let $W$ be such that $V=U\oplus W.$ Now $\forall v\in V,\exists\,!\,u_v\in U,w_v\in W,v=u_v+w_v.$\par\quad\Hb
-Define $i\in\Lm{V,U}$ by $i\Par{v}=u_v.$ So that $\Gamma\Par{\varphi\circ i}=\Par{a_1,\dots,a_m}.$\PfEnd\vspace{8pt}\quad
+Define $\iota\in\Lm{V,U}$ by $\iota\Par{v}=u_v.$ So that $\Gamma\Par{\varphi\circ i-}=\Par{a_1,\dots,a_m}.$\PfEnd\vspace{8pt}\quad
 \Or Let $\Par{e_1,\dots,e_m}$ be the standard basis of $\Fbb^m$ and let $\Par{\psi_1,\dots,\psi_m}$ be the correspd dual basis.\par\quad
 Define $\Psi:\Fbb^m\rightarrow\Par{\Fbb^m}\apostrophe$ by $\Psi\Par{e_k}=\psi_k.$ Then $\Psi$ is an iso.\par\quad
 Define $T\in\Lm{\Fbb^m,V}$ by $Te_k=v_k.$ Now $T\Par{x_1,\dots,x_m}=T\Par{x_1e_1+\dots+x_me_m}=x_1v_1+\dots+x_mv_m.$\par\quad
@@ -2778,14 +2800,14 @@ Surj: $\varPhi\in\Par{V/U}\apostrophe\Rightarrow\forall u\in U,\varPhi\Par{u+U}=
 \SepLine\pagebreak
 
 \ProblemB{
-	\TextB{Suppose $V=U\oplus W$. Define $i:V\rightarrow U$ by $i\Par{u+w}=u.$ Thus $i\apostrophe\in\Lm{U\apostrophe,V\apostrophe}.$\vspace{2pt}}
-	(a) \TextB{Show that $\null i\apostrophe=U_U^0=\zeroSubs${\tgnr\large\envFontDefault:\;\;$\null i\apostrophe=\Par{\range i}{^0_U}=U_U^0=\zeroSubs.$}\vspace{2pt}}
-	(b) \TextB{Prove that $\range i\apostrophe=W_V^0${\tgnr\large\envFontDefault:\;\;$\range i\apostrophe=\BigPar{\null i}{^0_V}=W_V^0.$}\vspace{2pt}}
-	(c) \TextB{Prove that $\tilde{i\apostrophe}$ is an iso from $\envFontSmall U\apostrophe/\zeroSubs$ onto $W^0${\tgnr\large\envFontDefault:\;\;By (a), (b) and [3.91](d).}}
+	\TextB{Suppose $V=U\oplus W$. Define $\iota:V\rightarrow U$ by $\iota\Par{u+w}=u.$ Thus $\iota\apostrophe\in\Lm{U\apostrophe,V\apostrophe}.$\vspace{2pt}}
+	(a) \TextB{Show that $\null \iota\apostrophe=U_U^0=\zeroSubs${\tgnr\large\envFontDefault:\;\;$\null\iota\apostrophe=\Par{\range\iota}{^0_U}=U_U^0=\zeroSubs.$}\vspace{2pt}}
+	(b) \TextB{Prove that $\range\iota\apostrophe=W_V^0${\tgnr\large\envFontDefault:\;\;$\range\iota\apostrophe=\BigPar{\null\iota}{^0_V}=W_V^0.$}\vspace{2pt}}
+	(c) \TextB{Prove that $\tilde{\iota\apostrophe}$ is an iso from $\envFontSmall U\apostrophe/\zeroSubs$ onto $W^0${\tgnr\large\envFontDefault:\;\;By (a), (b) and [3.91](d).}}
 }\par\quad
-(a) $i\apostrophe\Par{\psi}=\psi\circ i=0\Longleftrightarrow U\subseteq\null\psi.$\par\quad
-(b) Note that $W=\null\Par{i}\subseteq\null\Par{\psi\circ i}.$ Then $\psi\circ i\in W^0\Rightarrow\range i\apostrophe\in W^0.$\par\quad\Hb
-Suppose $\varphi\in W^0.$ Because $\null i=W\subseteq\null\varphi.$ By \TIPS in (3.B), $\varphi=\varphi\circ i=i\apostrophe\Par{\varphi}.$\PfEnd
+(a) $\iota\apostrophe\Par{\psi}=\psi\circ\iota=0\Longleftrightarrow U\subseteq\null\psi.$\par\quad
+(b) Note that $W=\null\Par{\iota}\subseteq\null\Par{\psi\circ\iota}.$ Then $\psi\circ\iota\in W^0\Rightarrow\range\iota\apostrophe\in W^0.$\par\quad\Hb
+Suppose $\varphi\in W^0.$ Because $\null\iota=W\subseteq\null\varphi.$ By \TIPS in (3.B), $\varphi=\varphi\circ\iota=\iota\apostrophe\Par{\varphi}.$\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{3F36}{36}}{
@@ -2802,10 +2824,10 @@ Suppose $\varphi\in W^0.$ Because $\null i=W\subseteq\null\varphi.$ By \TIPS in 
 	\TextB{Suppose $T\in\Lm{V,W}.$ Prove that $\range T\apostrophe=\BigPar{\null T}{^0}.$\hfill[{\tgsc\large Another proof of \tgnr\tgbfx[3.109](b)}]}
 }\par\quad
 Suppose $\varPhi\in\BigPar{\null T}{^0}.$ Because by (3.B.12), $T\mid_U:U\rightarrow\range T$ is an iso; $V=U\oplus\null T.$\par\quad
-And $\forall v\in V,\exists\,!\,u_v\in U,w_v\in\null T,v=u_v+w_v.$ Define $i\in\Lm{V,U}$ by $i\Par{v}=u_v.$\vspace{4pt}\par\quad
+And $\forall v\in V,\exists\,!\,u_v\in U,w_v\in\null T,v=u_v+w_v.$ Define $\iota\in\Lm{V,U}$ by $\iota\Par{v}=u_v.$\vspace{4pt}\par\quad
 Let $\psi=\varPhi\circ\BigPar{T\mid_{\range T}^{-1}}.$ Then $T\apostrophe\Par{\psi}=\psi\circ T=\varPhi\circ\BigPar{T^{-1}\mid_{\range T}\circ T\mid_V}.$\vspace{2pt}\par\quad
-Where $T^{-1}\mid_{\range T}:\range T\rightarrow U;\;\;T:V\rightarrow\range T.$ Note that $T^{-1}\mid_{\range T}\circ T\mid_V=i.$\vspace{2pt}\par\quad
-By \TIPS in (3.B), $\varPhi=\varPhi\circ i.$ Thus $T\apostrophe\Par{\psi}=\psi\circ T=\varPhi\circ{i}=\varPhi.$\PfEnd
+Where $T^{-1}\mid_{\range T}:\range T\rightarrow U;\;\;T:V\rightarrow\range T.$ Note that $T^{-1}\mid_{\range T}\circ T\mid_V=\iota.$\vspace{2pt}\par\quad
+By \TIPS in (3.B), $\varPhi=\varPhi\circ \iota.$ Thus $T\apostrophe\Par{\psi}=\psi\circ T=\varPhi\circ{\iota}=\varPhi.$\PfEnd
 \SepLine
 
 \ProblemB[]{
@@ -2898,32 +2920,6 @@ Hence $T\apostrophe\apostrophe\Par{\Lambda v}=\BigPar{\Lambda\Par{Tv}}\Rightarro
 又 Because $V$ is finite-dim. $\dim V=\dim V\apostrophe=\dim V\apostrophe\apostrophe$. Hence $\Lambda$ is an iso.$\,$\PfEnd
 \SepLine\pagebreak
 
-\ProblemN{\hypertarget{3F9}{9}}{
-	\TextN{Suppose $B_V=\Par{v_1,\dots,v_n},\,B_{V\apostrophe}=\Par{\varphi_1,\cdots,\varphi_n}$.}
-	\TextN{Prove that $\forall \psi \in V\apostrophe,\psi=\psi\Par{v_1}\varphi_1+\dots+\psi\Par{v_n}\varphi_n.$}
-	\Corollary \,\,\,For $B_V'=\Par{u_1,\dots,u_n},B_{V\apostrophe}'=\Par{\rho_1,\dots,\rho_n},\forall\psi\in V\apostrophe,\psi=\psi\Par{u_1}\rho_1+\dots+\psi\Par{u_n}\rho_n.$\TextB{}
-}\par\quad
-$\psi\Par{v}=\psi\XPar{\sum_{i=1}^n a_i v_i}=\sum_{i=1}^n a_i\psi\Par{v_i}=\sum_{i=1}^n\psi\Par{v_{i}}\varphi_i\Par{v}=\Sbra{\psi\Par{v_1}\varphi_1+\dots+\psi\Par{v_n}\varphi_n}\Par{v}.$\vspace{2pt}\par\quad
-\Or $\Sbra{\psi\Par{v_1}\varphi_1+\dots+\psi\Par{v_n}\varphi_n}\XPar{\sum_{i=1}^n a_i v_i}=\psi\Par{v_1}\varphi_1\XPar{\sum_{i=1}^n a_i v_i}+\dots+\psi\Par{v_n}\varphi_n\XPar{\sum_{i=1}^n a_i v_i}.$\PfEnd
-\SepLine
-
-\ProblemN[]{\hypertarget{3F13}{13}}{
-	\TextNL{Define $T:\Rbb^3\rightarrow$$\Rbb^2$ by $T\Par{x,y,z}=\Par{4x+5y+6z,7x+8y+9z}$.\vspace{3pt}}
-	\TextNL{Let $\Par{\varphi_1,\varphi_2},\Par{\psi_1,\psi_2,\psi_3}$ denote the dual basis of the standard basis of $\Rbb^2$ and $\Rbb^3$.\vspace{4pt}}
-	(a) \TextNL{Describe the linear functionals $T\apostrophe\Par{\varphi_1},T\apostrophe\Par{\varphi_2}\in\Lm{\Rbb^3,\Rbb}$\vspace{3pt}}
-	\Ha\TextNL{{\large\tgnr\envFontDefault For any $\Par{x,y,z}\in\Rbb^3$, $\BigPar{T\apostrophe\Par{\varphi_1}}\Par{x,y,z}=4x+5y+6z, \BigPar{T\apostrophe\Par{\varphi_2}}\Par{x,y,z}=7x+8y+9z$.}\vspace{8pt}}
-	(b) \TextNL{Write $T\apostrophe\Par{\varphi_1}$ and $T\apostrophe\Par{\varphi_2}$ as linear combinations of $\psi_1,\psi_2,\psi_3$.\vspace{2pt}}
-	\Hb\TextNL{{\large\tgnr\envFontDefault$T\apostrophe\Par{\varphi_1}=4\psi_1+5\psi_2+6\psi_3,\,\,T\apostrophe\Par{\varphi_2}=7\psi_1+8\psi_2+9\psi_3.$}\PfEnd}
-}\SepLine
-
-\ProblemN[]{\hypertarget{3F14}{14}}{
-	\TextNL{Define $T:\PoR{}\rightarrow\PoR{}$ by $\Par{Tp}\Par{x}=x^2 p\Par{x}+p\apostrophe\apostrophe\Par{x}$ for each $x\in\Rbb.$\vspace{4pt}}
-	(a) \TextNL{Suppose $\varphi\in\PoR{}\apostrophe$ is defined by $\varphi\Par{p}=p\apostrophe\Par{4}$. Describe $T\apostrophe\Par{\varphi}\in\PoR{}\apostrophe$.\vspace{4pt}}
-	\Ha\TextNL{\large\envFontDefault$\BigPar{T\apostrophe\Par{\varphi}}\Par{p}=\Sbra{x^2p\Par{x}+p\apostrophe\apostrophe\Par{x}}\apostrophe\Par{4}=\Sbra{2xp\Par{x}+x^2p\apostrophe\Par{x}+p\apostrophe\apostrophe\apostrophe\Par{x}}\Par{4}=8p\Par{4}+16p\apostrophe\Par{4}+p\apostrophe\apostrophe\apostrophe\Par{4}$.\vspace{8pt}}
-	(b) \TextNL{Suppose $\varphi\in\PoR{}\apostrophe$ is defined by $\varphi\Par{p}=\int_0^1 p\Par{x}\d x$. Evaluate $\BigPar{T\apostrophe\Par{\varphi}}\Par{x^3}$.\vspace{4pt}}
-	\Hb\TextNL{\large\envFontDefault $\BigPar{T\apostrophe\Par{\varphi}}\Par{x^3}=\int_0^1\Par{x^5+6x}\d x=\int_0^1\XPar{\frac{1}{6}x^6+3x^2}\apostrophe\d x=\frac{19}{6}.$\PfEnd}
-}\SepLine
-
 \ProblemN{\hypertarget{3F33}{33}}{
 	\TextNL{Suppose $A\in\Fbb^{m,n}$. Define $T:A\rightarrow A^t$. Prove that $T$ is an iso of $\Fbb^{m,n}$ onto $\Fbb^{n,m}$}
 }By [3.111], $T$ is linear. Note that $\Par{A^t}{^t}=A$.\par
@@ -2935,11 +2931,11 @@ $\psi\Par{v}=\psi\XPar{\sum_{i=1}^n a_i v_i}=\sum_{i=1}^n a_i\psi\Par{v_i}=\sum_
 	\TextNL{Let $B_\alpha=\Par{\alpha_1,\dots,\alpha_m},B_{\alpha}\apostrophe=\Par{\varphi_1,\dots,\varphi_m},\;B_\beta=\Par{v_1,\dots,v_m},B_{\beta}\apostrophe=\Par{\psi_1,\dots,\psi_m}.$}
 	\TextNL{Prove that $\forall T\in\Lm{V},T$ is inv $\Longleftrightarrow$ the rows of $A=\Mt[\BigPar]{T,B_\alpha,B_\beta}$ form a basis of $\Fbb^{1,n}$.}
 }\par\quad
-Note that $T$ is inveritlbe $\Longleftrightarrow$ $T\apostrophe$ is inv. And Let $B=A^t=\Mt{T\apostrophe,B_{\beta}\apostrophe,B_{\alpha}\apostrophe}.$\par\quad
+Note that $T$ is inveritlbe $\Longleftrightarrow$ $T\apostrophe$ is inv. And $A^t=\Mt{T\apostrophe,B_{\beta}\apostrophe,B_{\alpha}\apostrophe}.$\par\quad
 (a) Suppose $T$ is inv, so is $T\apostrophe$. Because $\BigPar{T\apostrophe\Par{\varphi_1},\dots,T\apostrophe\Par{\varphi_m}}$ is linely inde.\par\quad\Ha
-\NOTICE that $T\apostrophe\Par{\varphi_i}=B_{1,i}\psi_1+\dots+B_{m,i}\psi_m.$\par\quad\Ha
-Thus the cols of $B$, namely the rows of $A$, are linely inde.\par\quad
-(b) Suppose the rows of $A$ are linely inde, so are the cols of $B$.\colorbox{yellow}{TODO}\par\quad\Hb
+\NOTICE that $T\apostrophe\Par{\varphi_i}=A^t_{1,i}\psi_1+\dots+A^t_{m,i}\psi_m.$ By the \Par{$\Delta$} part in (4E 3.C.17),\par\quad\Ha
+the cols of $A^t$, namely the rows of $A$, are linely inde.\par\quad
+(b) Suppose the rows of $A$ are linely inde, so are the cols of $A^t$. \NOTICE that $A^t$ has $\dim V\apostrophe$ cols.\par\quad\Hb
 Then $B_{\range T\apostrophe}=B_{V\apostrophe}=\BigPar{T\apostrophe\Par{\varphi_1},\dots,T\apostrophe\Par{\varphi_m}}.$ Thus $T\apostrophe$ is surj. Hence $T\apostrophe$ is inv, so is $T.$\PfEnd
 \SepLine\ChEnd
 
