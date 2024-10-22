@@ -118,7 +118,7 @@
 
 \newcommand{\hText}[4][-4pt]{\hMath[#1]{c}{#2}{#3}{#4}}
 \newcommand{\Par}[2][1pt]{{\text{\forbra\envFontB(\hspace{#1}}}#2{\text{\hspace{#1}\forbra\envFontB)}}}%{\hText[-4pt]{}{}{$\hspace{-1pt}{\envFontB$\hText[#1]{\left(}{\right)}{${\envFont$#2$}$}$}$}}
-\newcommand{\Mid}[2][-3pt]{\hText[#1]{\left|}{\right|}{#2}}%{\hText[-2pt]{}{}{$\hspace{-1pt}{\envFontB$\hText[#1]{\left|}{\right|}{${\envFont$#2$}$}$}$}}
+\newcommand{\Mid}[2][-3pt]{{\text{\envFontA|}}#2{\text{\envFontA|}}}%{\hText[-2pt]{}{}{$\hspace{-1pt}{\envFontB$\hText[#1]{\left|}{\right|}{${\envFont$#2$}$}$}$}}
 \newcommand{\Bra}[2][-5pt]{{\text{\forbra\envFont{\{}}}#2{\text{\forbra\envFont\}}}}%{\hText[-4pt]{}{}{$\hspace{-1pt}{\envFontB$\hText[#1]{\left\{}{\right\}}{${\envFont$#2$}$}$}$}}
 \newcommand{\SmallPar}[1]{\text{(}#1\text{)}}
 \newcommand{\BigPar}[1]{{\text{\envFont\forbra(\hspace{1pt}}}#1{\text{\hspace{1pt}\envFont\forbra)}}}
@@ -2449,7 +2449,7 @@ And $\forall v\in V,\exists\,!\,a_i\in\Fbb,v+U=a_1v_1+\dots+a_mv_m+U$\par\quad\H
 \SepLine
 \ChEnd
 
-\vfill\ChDecl{Ch3F}{3$\cdot$F}{}\orMode{\hLk{3F4}{4}\;\;\hLk{3F5}{5}\;\;\hLk{3F6}{6}\;\;\hLk{3F7}{7}\;\;\hLk{3F8}{8}\;\;\hLk{3F9}{9}\;\;\hLk{3F12}{12}\;\;\hLk{3F13}{13}\;\;\hLk{3F14}{14}\;\;\hLk{3F15}{15}\;\;\hLk{3F16}{16}\;\;\hLk{3F17}{17}\;\;\hLk{3F18}{18}\;\;\hLk{3F19}{19}\;\;\hLk{3F20}{20}\;\;\hLk{3F21}{21}\;\;\hLk{3F22}{22}\;\;\hLk{3F23}{23}\;\;\hLk{3F24}{24}\;\;\hLk{3F25}{25}\;\;\hLk{3F26}{26}\;\;$\\[-4pt]$\hLk{3F28}{28}\;\;\hLk{3F29}{29}\;\;\hLk{3F30}{30}\;\;\hLk{3F31}{31}\;\;\hLk{3F33}{33}\;\;\hLk{3F34}{34}\;\;\hLk{3F35}{35}\;\;\hLk{3F36}{36}\;\;\hLk{3F37}{37}\;\;\mid\;\;\hLk{3F4e5}{4E: 5,}\;\;\hLk{3F4e6}{6,}\;\;\hLk{3F4e8}{8,}\;\;\hLk{3F4e17}{17,}\;\;\hLk{3F4e23}{23,}\;\;\hLk{3F4e24}{24,}\;\;\hLk{3F4e25}{25}}[-40pt]{[2] ; [3] ; [4] ; [5]; [6] ; [7] .}
+\vfill\ChDecl{Ch3F}{3$\cdot$F}{}\orMode{\hLk{3F4}{4}\;\;\hLk{3F5}{5}\;\;\hLk{3F6}{6}\;\;\hLk{3F7}{7}\;\;\hLk{3F8}{8}\;\;\hLk{3F9}{9}\;\;\hLk{3F12}{12}\;\;\hLk{3F13}{13}\;\;\hLk{3F15}{15}\;\;\hLk{3F16}{16}\;\;\hLk{3F17}{17}\;\;\hLk{3F18}{18}\;\;\hLk{3F19}{19}\;\;\hLk{3F20}{20}\;\;\hLk{3F21}{21}\;\;\hLk{3F22}{22}\;\;\hLk{3F23}{23}\;\;\hLk{3F24}{24}\;\;\hLk{3F25}{25}\;\;\hLk{3F26}{26}\;\;$\\[-4pt]$\hLk{3F28}{28}\;\;\hLk{3F29}{29}\;\;\hLk{3F30}{30}\;\;\hLk{3F31}{31}\;\;\hLk{3F33}{33}\;\;\hLk{3F34}{34}\;\;\hLk{3F35}{35}\;\;\hLk{3F36}{36}\;\;\hLk{3F37}{37}\;\;\mid\;\;\hLk{3F4e5}{4E: 5,}\;\;\hLk{3F4e6}{6,}\;\;\hLk{3F4e8}{8,}\;\;\hLk{3F4e17}{17,}\;\;\hLk{3F4e23}{23,}\;\;\hLk{3F4e24}{24,}\;\;\hLk{3F4e25}{25}}[-40pt]{[1]: 20, 21; [2]: 22, 23, (4E 23); [3]: 31, 25, 26; [4]: 28, 29, 9, 13; [5]: 24, 37, 4, 17, 18, 19;$\\$[6]: 36, (4E 17), 15, 12; [7]: 16, (4E 6); [8]: 33, 32, 5, (4E 8), (4E 5); [9]: 6, (4E 25); [10]: 35, 7, 34.}
 \vspace{4pt}
 
 \ProblemN{\hypertarget{3F20}{20}, \hypertarget{3F21}{21}}{
@@ -2599,7 +2599,7 @@ $\range T=\Span{w_1,\dots,w_m}\Longleftrightarrow\range T=\Par{\null\psi_{m+1}}\
 
 \ProblemN{\hypertarget{3F9}{9}}{
 	\TextN{Let $B_V=\Par{v_1,\dots,v_n},\,B_{V\apostrophe}=\Par{\varphi_1,\cdots,\varphi_n}$. Then $\forall\psi\in V\apostrophe,\psi=\psi\Par{v_1}\varphi_1+\dots+\psi\Par{v_n}\varphi_n.$}
-	%\Corollary \,\,\,{\tgsl For other $B_V'=\Par{u_1,\dots,u_n},B_{V\apostrophe}'=\Par{\rho_1,\dots,\rho_n},\forall\psi\in V\apostrophe,\psi=\psi\Par{u_1}\rho_1+\dots+\psi\Par{u_n}\rho_n.$}\TextB{}
+	\Corollary \,\,\,{\tgsl For other $B_V'=\Par{u_1,\dots,u_n},B_{V\apostrophe}'=\Par{\rho_1,\dots,\rho_n},\forall\psi\in V\apostrophe,\psi=\psi\Par{u_1}\rho_1+\dots+\psi\Par{u_n}\rho_n.$}\TextB{}
 }\par\quad
 $\psi\Par{v}=\psi\XPar{\sum_{i=1}^n a_i v_i}=\sum_{i=1}^n a_i\psi\Par{v_i}=\sum_{i=1}^n\psi\Par{v_{i}}\varphi_i\Par{v}=\Sbra{\psi\Par{v_1}\varphi_1+\dots+\psi\Par{v_n}\varphi_n}\Par{v}.$\vspace{2pt}\par\quad
 \Or $\Sbra{\psi\Par{v_1}\varphi_1+\dots+\psi\Par{v_n}\varphi_n}\XPar{\sum_{i=1}^n a_i v_i}=\psi\Par{v_1}\varphi_1\XPar{\sum_{i=1}^n a_i v_i}+\dots+\psi\Par{v_n}\varphi_n\XPar{\sum_{i=1}^n a_i v_i}.$\PfEnd
@@ -2612,24 +2612,30 @@ $\psi\Par{v}=\psi\XPar{\sum_{i=1}^n a_i v_i}=\sum_{i=1}^n a_i\psi\Par{v_i}=\sum_
 	\Ha\TextNL{{\large\tgnr\envFontDefault For any $\Par{x,y,z}\in\Rbb^3$, $\BigPar{T\apostrophe\Par{\varphi_1}}\Par{x,y,z}=4x+5y+6z, \BigPar{T\apostrophe\Par{\varphi_2}}\Par{x,y,z}=7x+8y+9z$.}\vspace{8pt}}
 	(b) \TextNL{Write $T\apostrophe\Par{\varphi_1}$ and $T\apostrophe\Par{\varphi_2}$ as linear combinations of $\psi_1,\psi_2,\psi_3$.\vspace{2pt}}
 	\Hb\TextNL{{\large\tgnr\envFontDefault$T\apostrophe\Par{\varphi_1}=4\psi_1+5\psi_2+6\psi_3,\,\,T\apostrophe\Par{\varphi_2}=7\psi_1+8\psi_2+9\psi_3.$}\vspace{8pt}}
-	(c) \TextNL{What is $\null T\apostrophe$? What is $\range T\apostrophe$?\colorbox{yellow}{TODO}\vspace{4pt}}
-	\Hc\TextNL{\large\tgnr\envFontDefault $T\Par{x,y,z}=0\Longleftrightarrow\MathLeftBrace{l}{4x+5y+6z=0\\7x+8y+9z=0}\Longleftrightarrow \MathLeftBrace{l}{x+y+z=0\\y=2z=0}\Longleftrightarrow\Par{x,y,z}\in\Span{e_1-2e_2+e_3}.$\vspace{2pt}}
-	\Hc\TextNL{\large\tgnr\envFontDefault Where $\Par{e_1,e_2,e_3}$ is standard basis of $\Rbb^3.$}
-	\Hc\TextNL{\large\tgnr\envFontDefault Let $\Par{e_1-2e_2+e_3,e_2,e_3}$ be a basis, with the correspd dual basis $\Par{\varepsilon_1,\varepsilon_2,\varepsilon_3}$.}
-	\Hc\TextNL{\large\tgnr\envFontDefault Thus $\Span{e_1-2e_2+e_3}=\null T\Rightarrow \Span{e_1-2e_2+e_3}{^0}=\Span{\varepsilon_2,\varepsilon_3}=\range T\apostrophe.$\PfEnd}
-	\Hc\TextNL{\large\tgnr\envFontDefault Note that $\varepsilon_k=\varepsilon_k\Par{e_1}\psi_1+\varepsilon_k\Par{e_2}\psi_2+\varepsilon_k\Par{e_3}\psi_3.$ Then $\varepsilon_1=$}
-	\Hc\TextNL{\large\tgnr\envFontDefault }
-	\Hc\TextNL{\large\tgnr\envFontDefault }
-	\Hc\TextNL{\large\tgnr\envFontDefault }
-}\SepLine
+	(c) \TextNL{What is $\null T\apostrophe$? What is $\range T\apostrophe$?}
+}\TextNL{\vspace{4pt}}
+\Hc $T\Par{x,y,z}=0\Longleftrightarrow\MathLeftBrace{l}{4x+5y+6z=0\\7x+8y+9z=0}\Longleftrightarrow \MathLeftBrace{l}{x+y+z=0\\y=2z=0}\Longleftrightarrow\Par{x,y,z}\in\Span{e_1-2e_2+e_3}.$\vspace{3pt}\TextNL{}
+\Hc Where $\Par{e_1,e_2,e_3}$ is standard basis of $\Rbb^3.$\vspace{1.5pt}\TextNL{}
+\Hc Let $\Par{e_1-2e_2+e_3,-2e_2,e_3}$ be a basis, with the correspd dual basis $\Par{\varepsilon_1,\varepsilon_2,\varepsilon_3}$.\vspace{1.5pt}\TextNL{}
+\Hc Thus $\Span{e_1-2e_2+e_3}=\null T\Rightarrow \Span{e_1-2e_2+e_3}{^0}=\Span{\varepsilon_2,\varepsilon_3}=\range T\apostrophe.$\vspace{1.5pt}\TextNL{}
+\Hc Note that $\varepsilon_k=\varepsilon_k\Par{e_1}\psi_1+\varepsilon_k\Par{e_2}\psi_2+\varepsilon_k\Par{e_3}\psi_3.$\vspace{1.5pt}\TextNL{}
+\Hc And $\MathLeftMid{l}{\varepsilon_2\Par{e_2}=-\frac{1}{2},\varepsilon_2\Par{e_1}=\varepsilon_2\Par{e_1-2e_2+e_3}+\varepsilon_2\Par{2e_2}-\varepsilon_2\Par{e_3}=1,\\[1.5pt]\varepsilon_3\Par{e_2}=0,\varepsilon_3\Par{e_3}=\varepsilon_3\Par{e_1-2e_2+e_3}+\varepsilon_3\Par{2e_2}-\varepsilon_3\Par{e_3}=-1.}$\vspace{1.5pt}\TextNL{}
+\Hc Hence $\varepsilon_2=\psi_1-\frac{1}{2}\psi_2,\;\varepsilon_3=-\psi_1+\psi_3.$ Now $\range T\apostrophe=\Span{\psi_1-\frac{1}{2}\psi_2,-\psi_1+\psi_3}.$\vspace{4.5pt}\TextNL{}
+\Hc\Or $\range T\apostrophe=\Span{T\apostrophe\Par{\varphi_1},T\apostrophe\Par{\varphi_2}}=\Span{4\psi_1+5\psi_2+6\psi_3,7\psi_1+8\psi_2+9\psi_3}.$\vspace{7.5pt}\TextNL{}
+\Hc Suppose $T\apostrophe\Par{x\varphi_1+y\varphi_2}=\Par{4x+7y}\varphi_1+\Par{5x+8y}\varphi_2+\Par{6x+9y}\varphi_3=0.$\TextNL{}
+\Hc Then $x+y=4x+7y=x=y=0.$ Hence $\null T\apostrophe=\zeroSubs.$\vspace{4.5pt}\TextNL{}
+\Hc\Or $\null T=\Span{e_1-2e_2+e_3}\Rightarrow V=\Span{-2e_2,e_3}\oplus\null T.$\vspace{1.5pt}\TextNL{}
+\Hc$\Rightarrow \range T=\Bra{Tx:x\in\Span{-2e_2,e_3}}=\Span{T\Par{-2e_2},T\Par{e_3}}$\vspace{1.5pt}\TextNL{}
+\Hc$=\Span{-10f_1-16f_2,6f_1+9f_2}=\Span{f_1,f_2}=\Rbb^2.$ Now $\null T\apostrophe=\Par{\range T}{^0}=\zeroSubs.$\PfEnd\vspace{-2pt}
+\SepLine\pagebreak
 
-\ProblemN[]{\hypertarget{3F14}{14}}{
-	\TextNL{Define $T:\PoR{}\rightarrow\PoR{}$ by $\Par{Tp}\Par{x}=x^2 p\Par{x}+p\apostrophe\apostrophe\Par{x}$ for each $x\in\Rbb.$\vspace{4pt}}
-	(a) \TextNL{Suppose $\varphi\in\PoR{}\apostrophe$ is defined by $\varphi\Par{p}=p\apostrophe\Par{4}$. Describe $T\apostrophe\Par{\varphi}\in\PoR{}\apostrophe$.\vspace{4pt}}
-	\Ha\TextNL{\large\envFontDefault$\BigPar{T\apostrophe\Par{\varphi}}\Par{p}=\Sbra{x^2p\Par{x}+p\apostrophe\apostrophe\Par{x}}\apostrophe\Par{4}=\Sbra{2xp\Par{x}+x^2p\apostrophe\Par{x}+p\apostrophe\apostrophe\apostrophe\Par{x}}\Par{4}=8p\Par{4}+16p\apostrophe\Par{4}+p\apostrophe\apostrophe\apostrophe\Par{4}$.\vspace{8pt}}
-	(b) \TextNL{Suppose $\varphi\in\PoR{}\apostrophe$ is defined by $\varphi\Par{p}=\int_0^1 p\Par{x}\d x$. Evaluate $\BigPar{T\apostrophe\Par{\varphi}}\Par{x^3}$.\vspace{4pt}}
-	\Hb\TextNL{\large\envFontDefault $\BigPar{T\apostrophe\Par{\varphi}}\Par{x^3}=\int_0^1\Par{x^5+6x}\d x=\int_0^1\XPar{\frac{1}{6}x^6+3x^2}\apostrophe\d x=\frac{19}{6}.$\PfEnd}
-}\SepLine
+%\ProblemN[]{\hypertarget{3F14}{14}}{
+%	\TextNL{Define $T:\PoR{}\rightarrow\PoR{}$ by $\Par{Tp}\Par{x}=x^2 p\Par{x}+p\apostrophe\apostrophe\Par{x}$ for each $x\in\Rbb.$\vspace{4pt}}
+%	(a) \TextNL{Suppose $\varphi\in\PoR{}\apostrophe$ is defined by $\varphi\Par{p}=p\apostrophe\Par{4}$. Describe $T\apostrophe\Par{\varphi}\in\PoR{}\apostrophe$.\vspace{4pt}}
+%	\Ha\TextNL{\large\envFontDefault$\BigPar{T\apostrophe\Par{\varphi}}\Par{p}=\Sbra{x^2p\Par{x}+p\apostrophe\apostrophe\Par{x}}\apostrophe\Par{4}=\Sbra{2xp\Par{x}+x^2p\apostrophe\Par{x}+p\apostrophe\apostrophe\apostrophe\Par{x}}\Par{4}=8p\Par{4}+16p\apostrophe\Par{4}+p\apostrophe\apostrophe\apostrophe\Par{4}$.\vspace{8pt}}
+%	(b) \TextNL{Suppose $\varphi\in\PoR{}\apostrophe$ is defined by $\varphi\Par{p}=\int_0^1 p\Par{x}\d x$. Evaluate $\BigPar{T\apostrophe\Par{\varphi}}\Par{x^3}$.\vspace{4pt}}
+%	\Hb\TextNL{\large\envFontDefault $\BigPar{T\apostrophe\Par{\varphi}}\Par{x^3}=\int_0^1\Par{x^5+6x}\d x=\int_0^1\XPar{\frac{1}{6}x^6+3x^2}\apostrophe\d x=\frac{19}{6}.$\PfEnd}
+%}\SepLine
 
 \pagebreak
 
@@ -2969,7 +2975,7 @@ Hence $T\apostrophe\apostrophe\Par{\Lambda v}=\BigPar{\Lambda\Par{Tv}}\Rightarro
 
 \ChEnd\pagebreak
 
-\ChDecl{Ch4}{4}
+\ChDecl{Ch4}{4}{}\orMode{\hLk{4O2}{2}\;\;\hLk{4O3}{3}\;\;\hLk{4O4}{4}\;\;\hLk{4O5}{5}\;\;\hLk{4O6}{6}\;\;\hLk{4O7}{7}\;\;\hLk{4O8}{8}\;\;\hLk{4O9}{9}\;\;\hLk{4O10}{10}\;\;\hLk{4O11}{11}\;\;|\;\;\hLk{4O4e}{4E: 2,}\;\;\hLk{4O4e3}{3,}\;\;\hLk{4O4e13}{13}}{[1]: ; [2]: ; [3]: ; [4]: ; [5]: .}
 
 \BulletPoint \,\hspace{1pt}\NoteFor{[4.8]} {\tgsl division algorithm for polynomials}\TextB{}
 {\tgsl\normalsize Suppose $p, s\in\PoF{}$, with $s\neq 0$. Then $\exists\,!\,q, r\in\PoF{}$ such that $p = sq + r$ and $\deg r < \deg s$.} \Largesl{Another Proof:}\TextB{}
@@ -3005,60 +3011,74 @@ $t\in \Par{0, 1}$, then $\Mid{q\Par{t\beta}}\leqslant\left|1 + a_k t^k\beta^k\ri
 Now letting $t=1/\Par{2c}$, we get $\Mid{q\Par{t\beta}}<1$. Contradicts. Hence $p\Par{\zeta} = 0$, as desired.\PfEnd
 \SepLine
 
-\ProblemB{
-	\TextB{Prove that if $w,z\in\Cbb,$ then $\left||w|-|z|\right|\leqslant\left|w-z\right|$.}
-}\vspace{-8pt}\AlignEq{}{
-\left|w-z\right|^2&=(w-z)(\overline{w}-\overline{z})\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\\
-&=|w|^2+|z|^2-(w\overline{z}+\overline{w}z)\\
-&=|w|^2+|z|^2-(\overline{\overline{w}z}+\overline{w}z)\\
-&=|w|^2+|z|^2-2Re(\overline{w}z)\\
-&\geq|w|^2+|z|^2-2|\overline{w}z|\\
-&=|w|^2+|z|^2-2|w||z|=\left|\left|w\right|-\left|z\right|\right|^2.}\PfEnd
-{\tgsl\footnotesize Geometric interpretation: The length of each side of a triangle is greater than or equal to the difference of the lengths of the two other sides.}\par
-\SepLine
+\ProblemBnoor{\hypertarget{4O4e2}{4E 4 2}}{
+	\TextB{Prove that if $w,z\in\Cbb,$ then $\Mid{|w|-|z|}\leqslant|w-z|$.}
+}\par\quad
+\vspace{-6pt}\AlignEq{}{
+	\Mid{w-z}{^2}&=\Par{w-z}\Par{\overline{w}-\overline{z}}\hspace{380pt}\\
+	&=|w|^2+|z|^2-\Par{w\overline{z}+\overline{w}z}\\
+	&=|w|^2+|z|^2-\BigPar{\overline{\overline{w}z}+\overline{w}z}\\
+	&=|w|^2+|z|^2-2Re\Par{\overline{w}z}\\
+	&\geqslant|w|^2+|z|^2-2\Mid{\overline{w}z}\\
+	&=|w|^2+|z|^2-2|w||z|=\Mid{|w|-|z|}{^2}.}\par
+\vspace{-130pt}\hspace{200pt}$\hMath{l}{\left|}{\right.}{$\;\Or $\MathRightBrace{l}{
+	|w|=|w-z+z|\leqslant|w-z|+|z|\Rightarrow |w|-|z|\leqslant|w-z|\\
+	|z|=|z-w+w|\leqslant|z-w|+|w|\Rightarrow |z|-|w|\leqslant|w-z|}\Rightarrow\square\\
+	\;\\\;\text{\tgsl\normalsize Geometric interpretation: The length of each side of a triangle}\\
+	\;\text{\tgsl\normalsize is greater than or equal to the difference of the lengths of the two other sides.}\\\;}$\par\vspace{30pt}
+\SepLine\pagebreak
 
-\ProblemB{
+\ProblemBnoor{\hypertarget{4O4e3}{4E 4 3}}{
 	\TextB{Suppose $V$ is on $\Cbb$ and $\varphi\in V\apostrophe$. Define $σ:V\rightarrow\Rbb$ by $\sigma\Par{v} = \mathfrak{Re}\,\varphi\Par{v}$ for each $v\in V$.}
 	\TextB{Show that $\varphi\Par{v}=\sigma\Par{v}-\i\sigma\Par{\i v}$ for all $v\in V$.}
-}\par\quad
-Notice that \,$\varphi\Par{v}=\mathfrak{Re}\,\varphi\Par{v}+\i\,\mathfrak{Im}\,\varphi\Par{v}=\sigma\Par{v}+\i\,\mathfrak{Im}\,\varphi\Par{v}.$\par\quad
-又 $\mathfrak{Re}\,\varphi\Par{\i\, v}=\mathfrak{Re}\BigPar{\i\,\varphi\Par{v}}=-\mathfrak{Im}\,\varphi\Par{v}=\sigma\Par{\i\,v}.$\par\quad
-Hence $\varphi\Par{v}=\sigma\Par{v}-\i\,\sigma\Par{\i\,v}.$\PfEnd
-\par
+}Notice that \,$\varphi\Par{v}=\mathfrak{Re}\,\varphi\Par{v}+\i\,\mathfrak{Im}\,\varphi\Par{v}=\sigma\Par{v}+\i\,\mathfrak{Im}\,\varphi\Par{v}.$\par
+\Blind{\Solution} 又 $\mathfrak{Re}\,\varphi\Par{\i\, v}=\mathfrak{Re}\BigPar{\i\,\varphi\Par{v}}=-\mathfrak{Im}\,\varphi\Par{v}=\sigma\Par{\i\,v}.$ Hence $\varphi\Par{v}=\sigma\Par{v}-\i\,\sigma\Par{\i\,v}.$\PfEnd
 \SepLine
 
-\ProblemN{2}{
+\ProblemN{\hypertarget{4O2}{2}}{
 	\TextN{Suppose $m\in\Nbp$. Is the set $U=\zeroSubs\cup\Bra{p\in\PoF{}:\deg p = m}$ a subsp of $\PoF{}$?}
-}\par\quad
-$x^m,x^m+x^{m-1}\in U$ \,\,but\,\, $\deg\Sbra{\Par{x^m+x^{m-1}}-\Par{x^m}}\neq m\Rightarrow \Par{x^m+x^{m-1}}-\Par{x^m}\not\in U.$\par\quad
-Hence $U$ is not closed under add, and therefore is not a subsp. \PfEnd
+}$x^m,x^m+x^{m-1}\in U$ \,\,but\,\, $\deg\Sbra{\Par{x^m+x^{m-1}}-\Par{x^m}}\neq m\Rightarrow \Par{x^m+x^{m-1}}-\Par{x^m}\not\in U.$\PfEnd
 \SepLine
 
-\ProblemN{3}{
-	\TextN{Suppose $m\in\Nbp$. Is the set $U=\zeroSubs\cup\Bra{p\in\PoF{}:2\mid\deg p}$ a subsp of $\PoF{}$?}
-}\par\quad
-$x^2,x^2+x\in U$ \,\,but\,\, $\deg\Sbra{\Par{x^2+x}-\Par{x^2}}$ is odd and hence $\Par{x^2+x}-\Par{x^2}\not\in U.$\par\quad
-Thus $U$ is not closed under add, and therefore is not a subsp. \PfEnd
+\ProblemN{\hypertarget{4O3}{3}}{
+	\TextN{Suppose $m\in\Nbp$. Is the set $U=\zeroSubs\cup\Bra{p\in\PoF{}:2\;\mid\,\deg p}$ a subsp of $\PoF{}$?}
+}$x^2,x^2+x\in U$ \,\,but\,\, $\deg\Sbra{\Par{x^2+x}-\Par{x^2}}$ is odd and hence $\Par{x^2+x}-\Par{x^2}\not\in U.$\PfEnd
 \SepLine
 
-%\ProblemN{4}{
-%	\TextN{Suppose that $\,m\,$ and $\,n\,$ are positive integers with $m\leqslant n$, and suppose $\lambda_1,\dots,\lambda_m\in\Fbb.$}
-%	\TextN{Prove that $\exists\,p\in\PoF{}$ such that $\deg p = n$, the zeros of $\,p\,$ are $\lambda_1,\dots,\lambda_m.$}
-%}Let p(z)=(z-\lambda_1)^{n-(m-1)}(z-\lambda_2)\cdots(z-\lambda_m).$\PfEnd
-%\SepLine
-
-\ProblemN{5}{
-	\TextN{Suppose that $m\in\Nbb,z_1,\dots,z_{m+1}$ are distinct elements of $\Fbb,$ and $w_1,\dots,w_{m+1}\in\Fbb.$}
-	\TextN{Prove that $\exists\,!\,p\in\PoF{m}$ such that $p\Par{z_k}=w_k$ for each $k = 1,\dots, m+1$.}
-}\par\quad
-Define $T:\PoF{m}\rightarrow\Fbb^{m+1}$ by $Tq=\BigPar{q\Par{z_1},\dots,q\Par{z_m},q\Par{z_{m+1}}}.$ As can be easily checked, $T$ is linear.\par\quad
-We need to show that $T$ is surj, so that such $p$ exists; and that $T$ is inje, so that such $p$ is unique.\par\quad
-$Tq=0\Longleftrightarrow q\Par{z_1}=\dots=q\Par{z_m}=q\Par{z_{m+1}}=0$\par\qquad\qquad
-$\,\Longleftrightarrow$ $q=0\in\PoF{m}$, for if not, $q$ of deg $m$ has at least $m+1$ distinct roots. Contradicts [4.12].\par\quad
-$\dim\range T=\dim\PoF{m}-\dim\null T=m+1=\dim\Fbb^{m+1}.$ 又 $\range T\subseteq\Fbb^{m+1}.$ Hence $T$ is surj.\PfEnd
+\ProblemN{\hypertarget{4O4}{4}}{
+	\TextN{Suppose $m,n\in\Nbp$ with $m\leqslant n,\;\lambda_1,\dots,\lambda_m\in\Fbb.$}
+	\TextN{Prove that $\exists\,p\in\PoF{},\deg p = n,$ the zeros of $\,p\,$ are $\lambda_1,\dots,\lambda_m.$\vspace{3pt}}
+}Let $p\Par{z}=\Par{z-\lambda_1}^{{\envFontSmall[\scriptsize]n-\Par{m-1}}}\Par{z-\lambda_2}\cdots\Par{z-\lambda_m}.$\PfEnd
 \SepLine
 
-\ProblemN{6}{
+\ProblemBnoor[]{\Tips \,\,\,}[]{
+	\TextB{\tgsl\large\envFontDefault Suppose $z_1,\dots,z_{m+1}$ are distinct in $\Fbb,$ and $p\in\PoF{m}$ is such that $p\Par{z_1}=\cdots=p\Par{z_{m+1}}=0.$}
+	\Blind{\Tips \,\,\,} \TextB{\tgsl\large\envFontDefault Then $p=0,$ for if not $p$ has $\Par{m+1}$ distinct zeros while $\deg p\leqslant m,$ contradicts [4.12].\vspace{-4pt}}
+}\SepLine
+
+\ProblemN{\hypertarget{4O5}{5}}{
+	\TextN{Suppose $m\in\Nbb,$ and $z_1,\dots,z_{m+1}$ are distinct in $\Fbb,$ and $w_1,\dots,w_{m+1}\in\Fbb.$}
+	\TextN{Prove that $\exists\,!\,p\in\PoF{m},p\Par{z_k}=w_k$ for each $k\in\Bra{1,\dots, m+1}.$}
+}\par\quad
+Define $T:\PoF{m}\rightarrow\Fbb^{m+1}$ by $Tq=\BigPar{q\Par{z_1},\dots,q\Par{z_m},q\Par{z_{m+1}}}.$ Moreover, $T$ is linear.\par\quad
+We now show that $T$ is surj, so that such $p$ exists;\; and that $T$ is inje, so that such $p$ is unique.\par\quad
+Inje: $Tq=0\Longleftrightarrow q\Par{z_1}=\dots=q\Par{z_m}=q\Par{z_{m+1}}=0\Longleftrightarrow q=0.$\par\quad
+Surj: $\dim\range T=\dim\PoF{m}-\dim\null T=m+1=\dim\Fbb^{m+1}$ 又$\range T\subseteq\Fbb^{m+1}\Rightarrow T$ is surj.\PfEnd\vspace{3pt}
+\Comment\par\quad
+Let $p_0=1,p_k\Par{z}=\prod_{i=1}^{k}\Par{z-z_i}=\Par{z-z_1}\cdots\Par{z-z_k}$ for each $k\in\Bra{1,\dots,m}.$\par\quad
+Then by (2.C.10), $\Par{p_0,\dots,p_{m+1}}$ is a basis of $\PoF{m}.$ Let $\Par{e_1,\dots,e_{m+1}}$ be the standard basis of $\Fbb^{m+1}.$\par\quad
+\NOTICE that $Tp_0=\Par{1,\dots,1},Tp_{\kappa}=\XPar{\prod_{i=1}^{\kappa-1}\Par{z_1-z_1},\dots,\underbrace{\prod_{i=1}^{\kappa-1}\Par{z_{j}-z_i}}_{\envFontSmall[\scriptsize]j^{th}\text{ entry}},\dots,\prod_{i=1}^{\kappa-1}\Par{z_{m+1}-z_i}}.$\par\quad
+$\Mt[\BigPar]{T,\Par{p_0,\dots,p_m},\Par{e_1,\dots,e_{m+1}}}=\,${\normalsize$\begin{pmatrix}
+	1 & 0 & 0 & \cdots & 0\\
+	1 & A_{2,2} & 0 & \cdots & 0\\
+	1 & A_{3,2} & A_{3,3} & \cdots & 0\\
+	\vdots & \vdots & \vdots & \ddots & \vdots\\
+	1 & A_{m+1,2} & A_{m+1,3} & \cdots & 0
+\end{pmatrix}$}, where $A_{j+1,k+1}=\prod_{i=1}^k\Par{z_{j+1}-z_i}$ for $j\geqslant k.$\par
+
+\SepLine
+
+\ProblemN{\hypertarget{4O6}{6}}{
 	\TextN{Suppose $p\in\PoC{m}$ has degree $\,m\,$. Prove that}
 	\TextN{$\,p\,$ has $\,m\,$ distinct zeros $\Longleftrightarrow$ $\,p\,$ and its derivative $p\apostrophe$ have no zeros in common.}
 }\par\quad
@@ -3072,7 +3092,7 @@ Let $\lambda$ be a zero of $p,$ then write $p\Par{z}=\Par{z-\lambda}^n q\Par{z},
 $p\apostrophe\Par{z}=\Par{z-\lambda}^n q\apostrophe\Par{z}+n\Par{z-\lambda}^{n-1}q\Par{z}\Rightarrow p\apostrophe\Par{\lambda}=0,$ $\lambda$ is a common root of $p\apostrophe$ and $p.$\PfEnd
 \SepLine
 
-\ProblemN{7}{
+\ProblemN{\hypertarget{4O7}{7}}{
 	\TextN{Prove that every $p\in\PoR{}$ of odd degree has a zero.}
 }\par\quad
 Using the notation and proof of [4.17]. $\deg p=2M+m$ is odd $\Rightarrow m$ is odd. Hence $\lambda_1$ exists.\PfEnd\vspace{6pt}\quad
@@ -3084,7 +3104,7 @@ Thus $p\Par{x}$ is continuous, and $\lim\limits_{x\rightarrow -\infty}p\Par{x}=-
 Hence we conclude that $p$ has at least one real zero.\PfEnd
 \SepLine
 
-\ProblemN{8}{
+\ProblemN{\hypertarget{4O8}{8}}{
 	\TextN{For $p\in\PoR{}$, define $Tp:\Rbb\rightarrow\Rbb\,$ by $\Par{Tp}\Par{x}=\,${\large\envFontDefault$\MathLeftBrace{l}{\displaystyle\frac{p\Par{x}-p\Par{3}}{x-3}\,\,$ if $x\neq 3,\\ p\apostrophe\Par{3}\qquad\quad$ if $x=3}$} for all $x\in\Rbb.$}
 	\TextN{Show that $Tp\in\PoR{}$ for all $p\in\PoR{}$ and that $T:\PoR{}\rightarrow\PoR{}$ is a linear map.}
 }\par\quad
@@ -3098,7 +3118,7 @@ Notice that $\MathLeftBrace{l}{\Par{p+\lambda q}\Par{x}-\Par{p+\lambda q}\Par{3}
 Thus $T\Par{p+\lambda q}\Par{x}=\BigPar{T\Par{p}+\lambda T\Par{q}}\Par{x}$ for all $x\in\Rbb.$\PfEnd
 \SepLine
 
-\ProblemN{9}{
+\ProblemN{\hypertarget{4O9}{9}}{
 	\TextN{Suppose $p\in\PoC{}$. Define $q:\Cbb\rightarrow\Cbb\,$ by $q\Par{z} = p\Par{z}\overline{p\Par{\overline z}}$. Prove that $q\in\PoR{}$.}
 }\par\quad
 $p\Par{z}=a_n z^n+\dots+a_1 z+a_0\Rightarrow p\Par{\overline z}=a_n \overline z^n+\dots+a_1 \overline z+a_0\Rightarrow \overline{p\Par{\overline z}}=\overline{a_n}z^n+\dots+\overline{a_1}z+\overline{a_0}.$\par\quad
@@ -3106,7 +3126,7 @@ Note that $q\Par{z}=p\Par{z}\overline{p\Par{\overline z}}=\overline{p\Par{\overl
 Hence letting $q\Par{z}=c_m x^m+\dots+c_1 x+c_0\,\,\Rightarrow\,\,\overline{c_k}=c_k$, $c_k\in\Rbb\,$ for each $k.$\PfEnd
 \SepLine
 
-\ProblemN{10}{
+\ProblemN{\hypertarget{4O10}{10}}{
 	\TextNL{Suppose $m\in\Nbb$ and $p\in\PoC{m}$ such that $p\Par{x_k}\in\Rbb$ for each $x_k$,}
 	\TextNL{where $x_0,x_1,\dots,x_m\in\Rbb$ are distinct. Prove that $p\in\PoR{}$.}
 }\par\quad
@@ -3119,7 +3139,7 @@ Notice that $q\Par{x_k}=1\cdot p\Par{x_k}\Rightarrow \Par{q-p}\Par{x_k}=0$ for e
 Then $\Par{q-p}$ has $\Par{m+1}$ distinct zeros, while $\Par{q-p}\in\PoC{m}$. Hence by [4.12], $q-p=0\Rightarrow p=q.$\PfEnd
 \SepLine
 
-\ProblemN{11}{
+\ProblemN{\hypertarget{4O11}{11}}{
 	\TextNL{Suppose $p\in\PoF{}$ with $p\neq 0$. Let $U=\Bra{pq:q\in\PoF{}}$.}
 	(a) \TextNL{Show that $\dim\PoF{}/U = \deg p$.}
 	(b) \TextNL{Find a basis of $\PoF{}/U$.}
@@ -3145,7 +3165,7 @@ Finally, by [3.91(d)], $\PoF{}/\null R$, namely $\PoF{}/U$, and $\range R$, name
 (b) $\Par{1+U,x+U,\dots,x^{\deg p-1}+U}$ can be a basis of $\PoF{}/U.$\PfEnd
 \SepLine
 
-\ProblemB{
+\ProblemBnoor{\hypertarget{4O4e13}{4E 4 13}}{
 	\TextB{Suppose nonconst $p,q\in\PoC{}$ have no zeros in common. Let $m = \deg p$, $n = \deg q$.}
 	\vspace{3pt}\TextB{Use {\tgnr\large(a)$-$(c)} below to prove that $\exists\,!\,r\in\PoC{n-1},s\in\PoC{m-1}$ such that $rp + sq = 1.$}
 	\vspace{2pt}(a) \TextB{Define $T:\PoC{n-1}\times\PoC{m-1}\rightarrow\PoC{m+n-1}$ by $T\Par{r, s} = rp + sq.$}
