@@ -2935,17 +2935,23 @@ Define $\Phi:\Fbb^m\rightarrow\Par{\Fbb^m}\apostrophe$ by $\Phi=\Psi\circ\Gamma.
 \SepLine
 
 \ProblemN{\hypertarget{3F35}{35}}{
-	\TextNL{Prove that $\BigPar{\PoF{}}\apostrophe$ and $\Fbb^{\infty}$ are iso.}
+	\TextNL{Let $\Fbb^\infty=\Bra{\Par{a_1,\cdots,a_n,\!\underbrace{\,0,\cdots\,}_\text{all zero}\!}\in\Fbb^\infty:\exists\,!\,n\in\Nbp}.$ Prove that $\BigPar{\PoF{}}\apostrophe$ and $\Fbb^{\infty}$ are iso.}
 }\par\quad
 {Define $\def\envFont{\small}\theta\in\Lm[\XPar]{\envFontDefault\BigPar{\PoF{}}\apostrophe,\Fbb^{\infty}\def\envFont{\small}}$ by $\theta\Par{\varphi}=\def\envFont{\small}\XPar{\envFontDefault\varphi\BigPar{1},\varphi\BigPar{z},\cdots,\varphi\BigPar{z^n},\cdots\def\envFont{\small}}.$}\vspace{3pt}\par\quad
 {Inje: $\theta\Par{\varphi}=0\Rightarrow \forall z^k$ in the basis $\BigPar{1,z,\dots,z^n}$ of $\PoF{n}\,\BigPar{\,\forall n\,},\,\varphi\Par{z^k}=0\Rightarrow\varphi=0.$}\par\quad
 {\Blind{Inje:} \Sbra{ \NOTICE that $\forall p\in\PoR{},\exists\,!\,a_i\in\Fbb,m=\deg p,\;p=a_0z+a_1z+\dots+a_{m}z^{m}\in\PoF{m}.$ }}\vspace{3pt}\par\quad
-{Surj: $\forall \BigPar{a_k}{_{k=1}^\infty}\in\Fbb^\infty,$ let $\psi$ be such that $\forall k,\psi\BigPar{z^k}=a_k$ and thus $\theta\Par{\psi}=\BigPar{a_k}{_{k=1}^\infty}.$}\PfEnd
+{Surj: $\forall \BigPar{a_k}{_{k=1}^\infty}\in\Fbb^\infty,$ let $\psi$ be such that $\forall k,\psi\BigPar{z^k}=a_k$ and thus $\theta\Par{\psi}=\BigPar{a_k}{_{k=1}^\infty}.$}\PfEnd\vspace{6pt}\quad
+\Or Using Problem (7). \par\quad
+\par\quad
+\par\quad
+\par\quad
+\par\quad
+\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{3F7}{7}}{
-	\TextN{Show that the dual basis of $\Par{1, x,\dots,x_m}$ of $\PoR{m}$ is $\Par{\varphi_0,\varphi_1,\dots,\varphi_m}$, where {\large\envFontDefault $\varphi_k=\displaystyle\frac{p^{\envFontSmall[\scriptsize]\Par{k}}\Par{0}}{k!}$.}\vspace{3pt}}
-	\TextN{{\large\envFontDefault Here $p{^{\envFontSmall[\scriptsize]\Par[0pt]{k}}}$ denotes the $k^{th}$ derivative of $p$, with the understanding that the $0^{th}$ derivative of $p$ is $p$.}}
+	\TextN{Show that the dual basis of $\Par{1, x,\dots,x_m}$ of $\PoR{m}$ is $\Par{\varphi_0,\varphi_1,\dots,\varphi_m}$, where {\large\envFontDefault $\varphi_k\Par{p}=\displaystyle\frac{p^{\envFontSmall[\scriptsize]\Par{k}}\Par{0}}{k!}$.}\vspace{2pt}}
+	\TextN{{\large\envFontDefault Here $p{^{\envFontSmall[\scriptsize]\Par[0pt]{k}}}$ denotes the $k^{th}$ derivative of $p$, with the understanding that the $0^{th}$ derivative of $p$ is $p$.}\vspace{2pt}}
 }\par\quad
 $\forall j,k\in\Nbb$, $\,\,\Par{x^{j}}^{\Par{k}}=\left\{\begin{array}{l}j\Par{j-1}\dots\Par{j-k+1}\cdot x^{\envFontSmall[\scriptsize]\Par{j-k}}\,,\quad j \geq k.\\j\Par{j-1}\dots\Par{j-j+1}=j!\hfill j=k.\\0,\hfill j \leqslant k.\end{array}\right|$\;\; Then \,\,$\Par{x^{j}}{^{\envFontSmall[\scriptsize]\Par{k}}}\Par{0}=\MathLeftBrace{l}{0\,\,\,,\,\hspace{5.2pt}j\neq k. \\ k!\,\,,\hspace{6pt}j=k.}$\PfEnd\vspace{12pt}\quad
 \Or \;Because $\forall j,k\in\Bra{1,\dots,m}$ such that $j\neq k,$ 
@@ -3048,12 +3054,13 @@ Now letting $t=1/\Par{2c}$, we get $\Mid{q\Par{t\beta}}<1$. Contradicts. Hence $
 \ProblemN{\hypertarget{4O4}{4}}{
 	\TextN{Suppose $m,n\in\Nbp$ with $m\leqslant n,\;\lambda_1,\dots,\lambda_m\in\Fbb.$}
 	\TextN{Prove that $\exists\,p\in\PoF{},\deg p = n,$ the zeros of $\,p\,$ are $\lambda_1,\dots,\lambda_m.$\vspace{3pt}}
-}Let $p\Par{z}=\Par{z-\lambda_1}^{{\envFontSmall[\scriptsize]n-\Par{m-1}}}\Par{z-\lambda_2}\cdots\Par{z-\lambda_m}.$\PfEnd
+}Let $p\Par{z}=\Par{z-\lambda_1}^{{\envFontSmall[\scriptsize]n-\Par{m-1}}}\Par{z-\lambda_2}\cdots\Par{z-\lambda_m}.$\PfEnd\vspace{-3pt}
 \SepLine
 
 \ProblemBnoor[]{\Tips \,\,\,}[]{
 	\TextB{\tgsl\large\envFontDefault Suppose $z_1,\dots,z_{m+1}$ are distinct in $\Fbb,$ and $p\in\PoF{m}$ is such that $p\Par{z_1}=\cdots=p\Par{z_{m+1}}=0.$}
-	\Blind{\Tips \,\,\,} \TextB{\tgsl\large\envFontDefault Then $p=0,$ for if not $p$ has $\Par{m+1}$ distinct zeros while $\deg p\leqslant m,$ contradicts [4.12].\vspace{-4pt}}
+	\Blind{\Tips \,\,\,} \TextB{\tgsl\large\envFontDefault Then $p=0,$ for if not $p$ has $\Par{m+1}$ distinct zeros while $\deg p\leqslant m,$ contradicts [4.12].}
+	\TextB{The contrapositive of [4.12]. \OR $p$ has $m$ distinct zeros $\Rightarrow\deg p\geqslant m.$\vspace{-4pt}}
 }\SepLine
 
 \ProblemN{\hypertarget{4O5}{5}}{
@@ -3066,7 +3073,7 @@ Inje: $Tq=0\Longleftrightarrow q\Par{z_1}=\dots=q\Par{z_m}=q\Par{z_{m+1}}=0\Long
 Surj: $\dim\range T=\dim\PoF{m}-\dim\null T=m+1=\dim\Fbb^{m+1}$ 又$\range T\subseteq\Fbb^{m+1}\Rightarrow T$ is surj.\PfEnd\vspace{3pt}
 \Comment\par\quad
 Let $p_0=1,p_k\Par{z}=\prod_{i=1}^{k}\Par{z-z_i}=\Par{z-z_1}\cdots\Par{z-z_k}$ for each $k\in\Bra{1,\dots,m}.$\par\quad
-Then by (2.C.10), $\Par{p_0,\dots,p_{m+1}}$ is a basis of $\PoF{m}.$ Let $\Par{e_1,\dots,e_{m+1}}$ be the standard basis of $\Fbb^{m+1}.$\par\quad
+Let $q_{j}=p_{j-1}$ for each $j\in\Bra{1,\dots,m+1}.$ Then by (2.C.10), $\Par{q_1,\dots,q_m}$ is a basis of $\PoF{m}.$ Let $\Par{e_1,\dots,e_{m+1}}$ be the standard basis of $\Fbb^{m+1}.$\par\quad
 \NOTICE that $Tp_0=\Par{1,\dots,1},Tp_{\kappa}=\XPar{\prod_{i=1}^{\kappa-1}\Par{z_1-z_1},\dots,\underbrace{\prod_{i=1}^{\kappa-1}\Par{z_{j}-z_i}}_{\envFontSmall[\scriptsize]j^{th}\text{ entry}},\dots,\prod_{i=1}^{\kappa-1}\Par{z_{m+1}-z_i}}.$\par\quad
 $\Mt[\BigPar]{T,\Par{p_0,\dots,p_m},\Par{e_1,\dots,e_{m+1}}}=\,${\normalsize$\begin{pmatrix}
 	1 & 0 & 0 & \cdots & 0\\
@@ -3074,9 +3081,9 @@ $\Mt[\BigPar]{T,\Par{p_0,\dots,p_m},\Par{e_1,\dots,e_{m+1}}}=\,${\normalsize$\be
 	1 & A_{3,2} & A_{3,3} & \cdots & 0\\
 	\vdots & \vdots & \vdots & \ddots & \vdots\\
 	1 & A_{m+1,2} & A_{m+1,3} & \cdots & 0
-\end{pmatrix}$}, where $A_{j+1,k+1}=\prod_{i=1}^k\Par{z_{j+1}-z_i}$ for $j\geqslant k.$\par
+\end{pmatrix}$}, where $A_{j,\kappa}=\prod_{i=1}^{\kappa-1}\Par{z_j-z_i}$ for $j\geqslant k\geqslant 1.$\par
 
-\SepLine
+\SepLine\pagebreak
 
 \ProblemN{\hypertarget{4O6}{6}}{
 	\TextN{Suppose $p\in\PoC{m}$ has degree $\,m\,$. Prove that}
@@ -3116,27 +3123,29 @@ Now we show that $T$ is linear:\par\quad
 $\forall p,q\in\PoR{},\lambda\in\Rbb,T\Par{p+\lambda q}\Par{x}=\,${\normalsize\envFontSmall$\MathLeftBrace{l}{\displaystyle\frac{\Par{p+\lambda q}\Par{x}-\Par{p+\lambda q}\Par{3}}{x-3}\,\,$ if $x\neq 3,\\ \Par{p+\lambda q}\apostrophe\Par{3}\qquad\qquad\qquad\,\,\,$ if $x=3}$} for all $x\in\Rbb.$\par\quad
 Notice that $\MathLeftBrace{l}{\Par{p+\lambda q}\Par{x}-\Par{p+\lambda q}\Par{3}=\BigPar{p\Par{x}-p\Par{3}}+\Par{\lambda q\Par{x}-\lambda q\Par{3}}.\\ \Par{p+\lambda q}\apostrophe\Par{3}=p\apostrophe\Par{3}+\lambda q\apostrophe\Par{3}.}$\par\vspace{3pt}\quad
 Thus $T\Par{p+\lambda q}\Par{x}=\BigPar{T\Par{p}+\lambda T\Par{q}}\Par{x}$ for all $x\in\Rbb.$\PfEnd
-\SepLine
+\SepLine\pagebreak
 
 \ProblemN{\hypertarget{4O9}{9}}{
 	\TextN{Suppose $p\in\PoC{}$. Define $q:\Cbb\rightarrow\Cbb\,$ by $q\Par{z} = p\Par{z}\overline{p\Par{\overline z}}$. Prove that $q\in\PoR{}$.}
 }\par\quad
-$p\Par{z}=a_n z^n+\dots+a_1 z+a_0\Rightarrow p\Par{\overline z}=a_n \overline z^n+\dots+a_1 \overline z+a_0\Rightarrow \overline{p\Par{\overline z}}=\overline{a_n}z^n+\dots+\overline{a_1}z+\overline{a_0}.$\par\quad
-Note that $q\Par{z}=p\Par{z}\overline{p\Par{\overline z}}=\overline{p\Par{\overline z}}p\Par{z}=\overline{p\Par{\overline z}\overline{p\Par{\overline{\overline z}}}}=\overline{q\Par{\overline z}}.$\par\quad
-Hence letting $q\Par{z}=c_m x^m+\dots+c_1 x+c_0\,\,\Rightarrow\,\,\overline{c_k}=c_k$, $c_k\in\Rbb\,$ for each $k.$\PfEnd
+\NOTICE that by [4.5], $\overline z{^n}=\overline{z^n}.$\par\quad
+Suppose $q\Par{z}=a_n z^n+\dots+a_1 z+a_0\Rightarrow q\Par{\overline z}=a_n \overline z{^n}+\dots+a_1 \overline z+a_0\Rightarrow \overline{q\Par{\overline z}}=\overline{a_n}z^n+\dots+\overline{a_1}z+\overline{a_0}.$\vspace{8pt}\par\quad
+Note that $q\Par{z}=p\Par{z}\overline{p\Par{\overline z}}=\overline{p\Par{\overline z}}p\Par{z}=\overline{p\Par{\overline z}\overline{\overline{p\Par{\overline z}}}}=\overline{q\Par{\overline z}}.$ Hence for each $a_k,\overline{a_k}=a_k\Rightarrow a_k\in\Rbb.$\PfEnd\vspace{14pt}\quad
+\Or Suppose $p\Par{z}=a_m z^m+\dots+a_1z+a_0.$ Now $\overline{p\Par{\overline z}}=\overline{a_m} z^m+\dots+\overline{a_1}z+\overline{a_0}.$\vspace{4pt}\par\quad
+\NOTICE that $q\Par{z}=p\Par{z}\overline{p\Par{\overline z}}=\sum_{k=0}^2m\XPar{\sum_{i+j=k}a_i\overline{a_j}}z^k.$\vspace{4pt}\par\quad
+\NOTICE that by [4.5], $z-\overline z=2\Par{\mathfrak{Im}\,z}\Rightarrow z=\overline z+2\Par{\mathfrak{Im}\,z}.$ So that $z=\overline z\Longleftrightarrow\mathfrak{Im}\,z=0\Longleftrightarrow z\in\Rbb.$\vspace{4pt}\par\quad
+Now for each $k\in\Bra{0,\dots,2m},\overline{\sum_{i+j=k}a_i\overline{a_j}}=\sum_{i+j=k}\overline{a_i\overline{a_j}}=\sum_{i+j=k}{a_j}\overline{a_i}=\sum_{i+j=k}a_i\overline{a_j}\in\Rbb.$\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{4O10}{10}}{
-	\TextNL{Suppose $m\in\Nbb$ and $p\in\PoC{m}$ such that $p\Par{x_k}\in\Rbb$ for each $x_k$,}
-	\TextNL{where $x_0,x_1,\dots,x_m\in\Rbb$ are distinct. Prove that $p\in\PoR{}$.}
+	\TextNL{Suppose $m\in\Nbb,p\in\PoC{m}$ is such that $p\Par{x_k}\in\Rbb$ for each of distinct $x_0,x_1,\dots,x_m\in\Rbb.$}
+	\TextNL{Prove that $p\in\PoR{}$.}
 }\par\quad
-Let $p\Par{x_k}=y_k$ for each $k$.
-By Problem (5), $\exists\,!\,q\in\PoR{m}$ such that $q\Par{x_k}=y_k.$ Hence $p=q.$\PfEnd\quad
+By \TIPS and Problem (5), $\exists\,!\,q\in\PoR{m}$ such that $q\Par{x_k}=p\Par{x_k}.$ Hence $p=q.$\PfEnd\vspace{6pt}\quad
 \Or Using the Lagrange Interpolating Polynomial.\par\vspace{6pt}\quad
-Define $q\Par{x}=\displaystyle\sum\limits_{j=0}^m\frac{\Par{x-x_0}\Par{x-x_1}\cdots\Par{x-x_{j-1}}\Par{x-x_{j+1}}\cdots\Par{x-x_m}}{\Par{x_j-x_0}\Par{x_j-x_1}\cdots\Par{x_j-x_{j-1}}\Par{x_j-x_{j+1}}\cdots\Par{x_j-x_m}}p\Par{x_j}.$\par\vspace{6pt}\quad
-又 For each $j$, $x_j,p\Par{x_j}\in\Rbb\Rightarrow q\in\PoR{m}\subseteq\PoC{m}.$\par\quad
-Notice that $q\Par{x_k}=1\cdot p\Par{x_k}\Rightarrow \Par{q-p}\Par{x_k}=0$ for each $k\in\Bra{0,1,\dots,m}.$\par\quad
-Then $\Par{q-p}$ has $\Par{m+1}$ distinct zeros, while $\Par{q-p}\in\PoC{m}$. Hence by [4.12], $q-p=0\Rightarrow p=q.$\PfEnd
+Define $q\Par{x}=\displaystyle\sum\limits_{j=0}^m\frac{\Par{x-x_0}\Par{x-x_1}\cdots\Par{x-x_{j-1}}\Par{x-x_{j+1}}\cdots\Par{x-x_m}}{\Par{x_j-x_0}\Par{x_j-x_1}\cdots\Par{x_j-x_{j-1}}\Par{x_j-x_{j+1}}\cdots\Par{x_j-x_m}}p\Par{x_j}.$\par\vspace{4pt}\quad
+又 Each $x_j,\,p\Par{x_j}\in\Rbb\Rightarrow q\in\PoR{m}.$ Notice that $q\Par{x_k}=1\cdot p\Par{x_k}\Rightarrow \Par{q-p}\Par{x_k}=0$ for each $x_k.$\par\quad
+Then $\Par{q-p}$ has $\Par{m+1}$ zeros, while $\Par{q-p}\in\PoC{m}$. By \TIPS, $q-p=0\Rightarrow p=q\in\PoR{}.$\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{4O11}{11}}{
@@ -3166,21 +3175,22 @@ Finally, by [3.91(d)], $\PoF{}/\null R$, namely $\PoF{}/U$, and $\range R$, name
 \SepLine
 
 \ProblemBnoor{\hypertarget{4O4e13}{4E 4 13}}{
-	\TextB{Suppose nonconst $p,q\in\PoC{}$ have no zeros in common. Let $m = \deg p$, $n = \deg q$.}
-	\vspace{3pt}\TextB{Use {\tgnr\large(a)$-$(c)} below to prove that $\exists\,!\,r\in\PoC{n-1},s\in\PoC{m-1}$ such that $rp + sq = 1.$}
-	\vspace{2pt}(a) \TextB{Define $T:\PoC{n-1}\times\PoC{m-1}\rightarrow\PoC{m+n-1}$ by $T\Par{r, s} = rp + sq.$}
-	\vspace{3pt}\hspace{-0.5pt}\Ha\TextB{Show that the linear map T is inje.}
-	\vspace{3pt}(b) \TextB{Show that the linear map $T$ in {\tgnr\large(a)} is surj.}
-	\vspace{3pt}(c) \TextB{Use {\tgnr\large(b)} to conclude that $\exists\,!\,r\in\PoC{n-1},s\in\PoC{m-1}$ such that $rp + sq = 1.$}
+	\TextB{Suppose nonconst $p,q\in\PoC{}$ have no zeros in common. Let $m = \deg p$, $n = \deg q$.\vspace{3pt}}
+	\TextB{Define $T:\PoC{n-1}\times\PoC{m-1}\rightarrow\PoC{m+n-1}$ by $T\Par{r, s} = rp + sq.$ Prove that $T$ is an iso.\vspace{3pt}}
+	\Corollary \,\,\,\TextB{$\exists\,!\,r\in\PoC{n-1},s\in\PoC{m-1}$ such that $rp + sq = 1.$}
 }\par\quad
-(a) $T$ is linear because $\forall\,r_1,r_2\in\PoC{n-1},s_1,s_2\in\PoC{m-1},\lambda\in\Fbb,$\par\quad\Ha
-$T\BigPar{\Par{r_1,s_1}+\lambda\Par{r_2,s_2}}=T\Par{r_1+\lambda r_2,s_1+\lambda s_2}=\Par{r_1+\lambda r_2}p+\Par{s_1+\lambda s_2}q=T\Par{r_1,s_1}+\lambda T\Par{r_2,s_2}.$\par\vspace{6pt}\quad\Ha
-Suppose $T\Par{r,s}=rp+sq=0.$ Notice that $p,q$ have no zeros in common.\par\quad\Ha
-Then $r=s=0,$ for if not, write $\displaystyle\frac{q\Par{z}}{r\Par{z}}=\frac{p\Par{z}}{s\Par{z}},$ while for any zero $\lambda$ of $q$, $\displaystyle\frac{q\Par{\lambda}{r\Par{z}}}=0\neq\frac{p\Par{\lambda}{s\Par{z}}}.$\PfEnd\vspace{6pt}\quad
-(b) $\Dim\Par{\PoC{n-1}\times\PoC{m-1}}=\dim\PoC{n-1}+\dim\PoC{m-1}=n+m=\dim\PoC{m+n-1}.$\par\quad\Hb
-又 $T$ is inje. Hence $\dim\range T=\Dim\Par{\PoC{n-1}\times\PoC{m-1}}-\dim\null T=\dim\PoC{m+n-1}.$\par\quad\Hb
-Thus $\range T=\PoC{m+n-1}\Rightarrow T$ is surj, and therefore is an iso.\par\quad
-(c) Immediately.\PfEnd
+$T$ is linear because $\forall\,r_1,r_2\in\PoC{n-1},s_1,s_2\in\PoC{m-1},\lambda\in\Fbb,$\par\quad
+$T\BigPar{\Par{r_1,s_1}+\lambda\Par{r_2,s_2}}=T\Par{r_1+\lambda r_2,s_1+\lambda s_2}=\Par{r_1+\lambda r_2}p+\Par{s_1+\lambda s_2}q=T\Par{r_1,s_1}+\lambda T\Par{r_2,s_2}.$\par\vspace{6pt}\quad
+Let $\lambda_1,\dots,\lambda_M$ and $\mu_1,\dots,\mu_N$ be the distinct zeros of $p$ and $q$ respectively. \NOTICE that $M\leqslant m,N\leqslant n.$\par\quad
+Note that $p,q$ are nonconst $\Rightarrow M,N\geqslant 1.$ Now $p\Par{\mu_i},q\Par{\lambda_j}\neq 0$ for each $\mu_i$ and $\lambda_j.$\par\quad
+Suppose $T\Par{r,s}=rp+sq=0.$ Then for each $\mu_i,r\Par{\mu_i}p\Par{\mu_i}+s\Par{\mu_i}q\Par{\mu_i}=r\Par{\mu_i}p\Par{\mu_i}=0\Rightarrow r\Par{\mu_i}=0.$\par\quad
+Now $r$ has at least $N$ distinct zeros $\Bra{\mu_1,\dots,\mu_N}$ while $\deg r\leqslant n-1.$\par\quad
+Similarly, $s$ has at least $M$ distinct zeros $\Bra{\lambda_1,\dots,\lambda_M}$ while $\deg s\leqslant m-1.$\par\quad
+If $m=M$ and $n=N.$ Then by \TIPS, $r,s=0.$\par\quad
+If $m\neq M$ or $n\neq 0.$ Because $rp+sq=0.$ Let $K\geqslant\max\Bra{m-M,n-N}.$\par\quad
+Choose distinct $\gamma_0,\gamma_1,\dots,\gamma_K\in\Cbb$ such that each $\gamma_k\not\in\Bra{\lambda_1,\dots,\lambda_M,\mu_1,\dots,\mu_N}$\vspace{3pt}\par\quad
+$\Rightarrow\Par{rp}\Par{\gamma_k}+\Par{sq}\Par{\gamma_k}=0\Rightarrow\displaystyle\frac{r\Par{\gamma_k}}{q\Par{\gamma_k}}=-\frac{s\Par{\gamma_k}}{p\Par{\gamma_k}}=0\Rightarrow r\Par{\gamma_k}=s\Par{\gamma_k}=0.$ By \TIPS, $r=s=0.$\vspace{6pt}\par\quad
+Hence $T$ is inje. And $\Dim\BigPar{\PoC{n-1}\times\PoC{m-1}}=\dim\PoC{m+n-1}\Rightarrow T$ is surj. Thus $T$ is an iso.\PfEnd
 \SepLine
 \ChEnd
 
