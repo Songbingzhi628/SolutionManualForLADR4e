@@ -124,7 +124,7 @@
 \newcommand{\aMid}[2][1pt]{\Mid[#1][\envFontLarge\envFontA]{#2}}
 \newcommand{\aXMid}[2][1pt]{\Mid[#1][\envFontHuge\envFont]{#2}}
 \newcommand{\Bra}[2][-5pt]{{\text{\forbra\envFont{\{}}}#2{\text{\forbra\envFont\}}}}%{\hText[-4pt]{}{}{$\hspace{-1pt}{\envFontB$\hText[#1]{\left\{}{\right\}}{${\envFont$#2$}$}$}$}}
-\newcommand{\SmallPar}[1]{\text{(}#1\text{)}}
+\newcommand{\SmallPar}[2][0pt]{{\envFontSmall[\scriptsize]\Par[#1]{#2}}}
 \newcommand{\BigPar}[1]{{\text{\envFont\forbra(\hspace{1pt}}}#1{\text{\hspace{1pt}\envFont\forbra)}}}
 \newcommand{\XPar}[1]{{\text{\envFont\forbrax(\hspace{1pt}}}#1{\text{\hspace{1pt}\envFont\forbrax)}}}
 \newcommand{\Sbra}[1]{{\text{\envFont\forbra[\hspace{1pt}}}#1{\text{\envFont\forbra\hspace{1pt}]}}}
@@ -1983,8 +1983,8 @@ Thus $AB=I\Leftrightarrow A\Par{Bx}=x\Longleftrightarrow T\Par{Sx}=x\Leftrightar
 
 \BulletPoint \,\hspace{1pt}\NoteFor{[3.60]}\;\;Suppose $B_V=\Par{v_1,\dots,v_n},\;B_W=\Par{w_1,\dots,w_m}$.\TextB{\vspace{10pt}}
 {Define $E_{i,j}\in\Lm{V,W}$ by $E_{i,j}\Par{v_x}=\delta_{i,x} w_j;$\quad See (3.A.12).\quad} \Corollary\,\,\, \envFontLarge{\Large$E_{l,k}E_{i,j}=\delta_{j,l}E_{i,k}.$}\TextB{}
-{\Large Denote \envFontLarge$\Mt{E_{i,j}}$ by $\mathcal{E}^{\envFontSmall[\scriptsize]\Par{j,i}}.$ And $\BigPar{\mathcal{E}^{\envFontSmall[\scriptsize]\Par{j,i}}}_{l,k}=\MathLeftBrace{l}{0,\quad i\neq k\,\vee\,j\neq l\\1,\quad i=k\,\wedge\,j=l}$}\TextB{\vspace{6pt}}
-\envFontLarge{\Large Because $\Lm{V,W}$ and $\Fbb^{m,n}$ are iso. And $T=\Mneg\Mt{T};\;\;E_{i,j}=\Mneg\mathcal{E}^{\envFontSmall[\scriptsize]\Par{j,i}}$.}\TextB{}
+{\Large Denote \envFontLarge$\Mt{E_{i,j}}$ by $\mathcal{E}^{\SmallPar[1pt]{j,i}}.$ And $\BigPar{\mathcal{E}^{\SmallPar[1pt]{j,i}}}_{l,k}=\MathLeftBrace{l}{0,\quad i\neq k\,\vee\,j\neq l\\1,\quad i=k\,\wedge\,j=l}$}\TextB{\vspace{6pt}}
+\envFontLarge{\Large Because $\Lm{V,W}$ and $\Fbb^{m,n}$ are iso. And $T=\Mneg\Mt{T};\;\;E_{i,j}=\Mneg\mathcal{E}^{\SmallPar[1pt]{j,i}}$.}\TextB{}
 Hence $\forall T\in\Lm{V,W},\,\exists\,!\,A_{i,j}\in\Fbb\;\XPar{\;\forall i\in\!\Bra{1,\dots,m},j\in\!\Bra{1,\dots,n}\;},\Mt{T}=A\,=\,${\normalsize$\begin{pmatrix} A_{1,1} & \cdots & A_{1,n}\\ \vdots & \ddots & \vdots\\ A_{m,1} & \cdots & A_{m,n}\end{pmatrix}$}.\par\quad
 Thus $A\,=\,${\normalsize$\envFontSmall[\scriptsize]\begin{pmatrix}
 		A_{1,1}\mathcal{E}^{\Par{1,1}}+&
@@ -2675,7 +2675,7 @@ Define $\xi:U^0\rightarrow\Par{V/U}\apostrophe$ by $\xi\Par{\varphi}=\tilde{\var
 We show that $\xi$ is inje and surj.\par\quad
 Inje: $\xi\Par{\varphi}=0=\tilde{\varphi}\Rightarrow\forall v\in V\,\BigPar{\,\forall v+U\in V/U\,},\tilde{\varphi}\Par{v+U}=\varphi\Par{v}=0\Rightarrow\varphi=0.$\par\quad
 Surj: $\varPhi\in\Par{V/U}\apostrophe\Rightarrow\forall u\in U,\varPhi\Par{u+U}=\varPhi\Par{0+U}=0\Rightarrow U\subseteq\null\Par{\varPhi\circ\pi}\Rightarrow\xi\Par{\varPhi\circ\pi}=\varPhi.$\PfEnd\vspace{4pt}\quad
-\Or Define $\nu:\Par{V/U}\apostrophe\rightarrow U^0$ by $\nu\Par{\varPhi}=\varPhi\circ\pi.$ Now $\nu\circ\xi=I_{U^0},\;\xi\circ\nu=I_{\envFontSmall[\scriptsize]\Par{V/U}\apostrophe}\Rightarrow\xi=\nu^{-1}.$\PfEnd\vspace{-2pt}
+\Or Define $\nu:\Par{V/U}\apostrophe\rightarrow U^0$ by $\nu\Par{\varPhi}=\varPhi\circ\pi.$ Now $\nu\circ\xi=I_{U^0},\;\xi\circ\nu=I_{\SmallPar[1pt]{V/U}\apostrophe}\Rightarrow\xi=\nu^{-1}.$\PfEnd\vspace{-2pt}
 \SepLine
 
 \ProblemN{\hypertarget{3F4}{4}}{
@@ -2886,7 +2886,7 @@ $\MathRightBrace{l}{$
 \AlignEq{}{\forall u,v\in V,\lambda\in\Fbb,\,&T\Par{u+\lambda v}=\textstyle\sum_{i=1}^m\varphi_i\Par{u+\lambda v}w_i\\[-3pt]=\,&T{u}+\lambda T{v}=\XPar{\textstyle\sum_{i=1}^m\varphi_i\Par{u}w_i}+\lambda\XPar{\textstyle\sum_{i=1}^m\varphi_i\Par{v}w_i}=\textstyle\sum_{i=1}^m\BigPar{\varphi_i\Par{u}+\lambda\varphi_i\Par{v}}w_i.\hspace{6pt}}\PfEnd\vspace{0pt}\quad
 \Or For each $w_{i},\exists\,v_{i} \in V,\,Tv_{i}=w_{i},$
 then $\Par{v_1,\dots, v_m}$ is linely inde.\par\quad
-Now we have $Tv=a_1Tv_1+\dots+a_mTv_m,\,\forall v \in V,$ $\exists\,!\,a_{i}\in\Fbb.$ Let $B_{\envFontSmall[\scriptsize]\Par{\range T}\apostrophe}=\Par{\psi_1, \dots, \psi_m}$.\par\quad
+Now we have $Tv=a_1Tv_1+\dots+a_mTv_m,\,\forall v \in V,$ $\exists\,!\,a_{i}\in\Fbb.$ Let $B_{\SmallPar[1pt]{\range T}\apostrophe}=\Par{\psi_1, \dots, \psi_m}$.\par\quad
 Then $\BigPar{T\apostrophe\Par{\psi_{i}}}\Par{v}=\psi_{i}\circ T\Par{v}=a_i.$ Where $T:V\rightarrow\range T;\;\;T\apostrophe:\Par{\range T}\apostrophe\rightarrow V\apostrophe.$\par\quad
 Thus for each $i\in\Bra{1,\dots,m},\varphi_i=\psi_i\circ T=T\apostrophe\Par{\psi_i}\in V\apostrophe.$\PfEnd\vspace{-3pt}
 \SepLine\pagebreak
@@ -2941,30 +2941,26 @@ Define $\Phi:\Fbb^m\rightarrow\Par{\Fbb^m}\apostrophe$ by $\Phi=\Psi\circ\Gamma.
 \SepLine
 
 \ProblemN{\hypertarget{3F35}{35}}{
-	\TextNL{Let $\Fbb^\infty=\Bra{\Par{a_1,\cdots,a_n,\!\underbrace{\,0,\cdots\,}_\text{all zero}\!}\in\Fbb^\infty:\exists\,!\,n\in\Nbp}.$ Prove that $\BigPar{\PoF{}}\apostrophe$ and $\Fbb^{\infty}$ are iso.}
+	\TextNL{Prove that $\BigPar{\PoF{}}\apostrophe$ and $\Fbb^{\infty}$ are iso.}
 }\par\quad
 {Define $\def\envFont{\small}\theta\in\Lm[\XPar]{\envFontDefault\BigPar{\PoF{}}\apostrophe,\Fbb^{\infty}\def\envFont{\small}}$ by $\theta\Par{\varphi}=\def\envFont{\small}\XPar{\envFontDefault\varphi\BigPar{1},\varphi\BigPar{z},\cdots,\varphi\BigPar{z^n},\cdots\def\envFont{\small}}.$}\vspace{3pt}\par\quad
 {Inje: $\theta\Par{\varphi}=0\Rightarrow \forall z^k$ in the basis $\BigPar{1,z,\dots,z^n}$ of $\PoF{n}\,\BigPar{\,\forall n\,},\,\varphi\Par{z^k}=0\Rightarrow\varphi=0.$}\par\quad
 {\Blind{Inje:} \Sbra{ \NOTICE that $\forall p\in\PoR{},\exists\,!\,a_i\in\Fbb,m=\deg p,\;p=a_0z+a_1z+\dots+a_{m}z^{m}\in\PoF{m}.$ }}\vspace{3pt}\par\quad
-{Surj: $\forall \BigPar{a_k}{_{k=1}^\infty}\in\Fbb^\infty,$ let $\psi$ be such that $\forall k,\psi\BigPar{z^k}=a_k$ and thus $\theta\Par{\psi}=\BigPar{a_k}{_{k=1}^\infty}.$}\PfEnd\vspace{6pt}\quad
-\Or Using Problem (7). \par\quad
-\par\quad
-\par\quad
-\par\quad
-\par\quad
-\PfEnd
+{Surj: $\forall \BigPar{a_k}{_{k=1}^\infty}\in\Fbb^\infty,$ let $\psi$ be such that $\forall k,\psi\BigPar{z^k}=a_k$ and thus $\theta\Par{\psi}=\BigPar{a_k}{_{k=1}^\infty}.$}\PfEnd\vspace{6pt}
+\Comment \,\,\,\NOTICE that $\PoF{}$ and $\Fbb^\infty$ are not iso, so are $\PoF{}$ and $\BigPar{\PoF{}}\apostrophe$\par
+\Blind{\Comment \,\,\,}But if we let $\Fbb^\infty=\Bra{\Par{a_1,\cdots,a_n,\underbrace{0,\cdots,0,\cdots}_\text{all zero}\!}\in\Fbb^\infty\;\text{\envFontHuge\envFontA\mid}\;\exists\,!\,n\in\Nbp}.$ Then $\PoF{}$ and $\Fbb^\infty$ are iso.\par\vspace{10pt}
 \SepLine
 
 \ProblemN{\hypertarget{3F7}{7}}{
-	\TextN{Show that the dual basis of $\Par{1, x,\dots,x_m}$ of $\PoR{m}$ is $\Par{\varphi_0,\varphi_1,\dots,\varphi_m}$, where {\large\envFontDefault $\varphi_k\Par{p}=\displaystyle\frac{p^{\envFontSmall[\scriptsize]\Par{k}}\Par{0}}{k!}$.}\vspace{2pt}}
-	\TextN{{\large\envFontDefault Here $p{^{\envFontSmall[\scriptsize]\Par[0pt]{k}}}$ denotes the $k^{th}$ derivative of $p$, with the understanding that the $0^{th}$ derivative of $p$ is $p$.}\vspace{2pt}}
+	\TextN{Show that the dual basis of $\Par{1, x,\dots,x^m}$ of $\PoR{m}$ is $\Par{\varphi_0,\varphi_1,\dots,\varphi_m}$, where {\large\envFontDefault $\varphi_k\Par{p}=\displaystyle\frac{p^{\SmallPar{k}}\Par{0}}{k!}$.}\vspace{2pt}}
+	\TextN{{\large\envFontDefault Here $p{^{\SmallPar{k}}}$ denotes the $k^{th}$ derivative of $p$, with the understanding that the $0^{th}$ derivative of $p$ is $p$.}\vspace{2pt}}
 }\par\quad
-$\forall j,k\in\Nbb$, $\,\,\Par{x^{j}}^{\Par{k}}=\left\{\begin{array}{l}j\Par{j-1}\dots\Par{j-k+1}\cdot x^{\envFontSmall[\scriptsize]\Par{j-k}}\,,\quad j \geq k.\\j\Par{j-1}\dots\Par{j-j+1}=j!\hfill j=k.\\0,\hfill j \leqslant k.\end{array}\right|$\;\; Then \,\,$\Par{x^{j}}{^{\envFontSmall[\scriptsize]\Par{k}}}\Par{0}=\MathLeftBrace{l}{0\,\,\,,\,\hspace{5.2pt}j\neq k. \\ k!\,\,,\hspace{6pt}j=k.}$\PfEnd\vspace{12pt}\quad
+$\forall j,k\in\Nbb$, $\,\,\Par{x^{j}}^{\Par{k}}=\left\{\begin{array}{l}j\Par{j-1}\dots\Par{j-k+1}\cdot x^{\SmallPar{j-k}}\,,\quad j \geq k.\\j\Par{j-1}\dots\Par{j-j+1}=j!\hfill j=k.\\0,\hfill j \leqslant k.\end{array}\right|$\;\; Then \,\,$\Par{x^{j}}{^{\SmallPar{k}}}\Par{0}=\MathLeftBrace{l}{0\,\,\,,\,\hspace{5.2pt}j\neq k. \\ k!\,\,,\hspace{6pt}j=k.}$\PfEnd\vspace{12pt}\quad
 \Or \;Because $\forall j,k\in\Bra{1,\dots,m}$ such that $j\neq k,$ 
-$\varphi_k\BigPar{x^j}=\envFontSmall[\footnotesize]\frac{\Par{x^j}^{\envFontSmall[\tiny]\Par[0pt]{k}}\Par{0}}{k!}=\frac{0}{k!}=0;\;\varphi_k\BigPar{x^k}=\frac{\Par{x^k}^{\envFontSmall[\scriptsize]\Par[0pt]{k}}\Par{0}}{k!}=1.$\par\quad
-Thus $\envFontSmall[\scriptsize]\frac{p^{\Par[0pt]{k}}\Par{0}}{k!}$ act exactly the same as $\varphi_k$ on the same basis $\Par{1,\dots,x^m},$ hence is just another def of $\varphi_k$.\PfEnd\vspace{4pt}
+$\varphi_k\BigPar{x^j}=\envFontSmall[\footnotesize]\frac{\Par{x^j}^{\SmallPar{k}}\Par{0}}{k!}=\frac{0}{k!}=0;\;\varphi_k\BigPar{x^k}=\frac{\Par{x^k}^{\SmallPar{k}}\Par{0}}{k!}=1.$\par\quad
+Thus $\envFontSmall[\scriptsize]\frac{p^{\Par[0pt]{k}}\Par{0}}{k!}$ act exactly the same as $\varphi_k$ on the same basis $\Par{1,\dots,x^m},$ hence is just another def of $\varphi_k$.\PfEnd\vspace{8pt}
 \Example \,\,\,\hypertarget{3F8}{}{\tgnr\large\envFontDefault Suppose $m\in\Nbp$. By [2.C.10], $B$ $=\BigPar{1,x-5,\dots,\Par{x-5}{^m}}$ is a basis of $\PoR{m}$.}\par
-\Blind{\Example \,\,\,}{\tgnr\large\envFontDefault Let $\varphi_k=\displaystyle\frac{p^{\envFontSmall[\scriptsize]\Par{k}}\Par{5}}{k!}$ for each $k=0,1,\dots,m$. Then $\Par{\varphi_0,\varphi_1,\dots,\varphi_m}$ is the dual basis of $B$.}\par
+\Blind{\Example \,\,\,}{\tgnr\large\envFontDefault Let $\varphi_k=\displaystyle\frac{p^{\SmallPar{k}}\Par{5}}{k!}$ for each $k=0,1,\dots,m$. Then $\Par{\varphi_0,\varphi_1,\dots,\varphi_m}$ is the dual basis of $B$.}\par
 \SepLine
 
 \ProblemN{\hypertarget{3F34}{34}}{
@@ -2973,14 +2969,14 @@ Thus $\envFontSmall[\scriptsize]\frac{p^{\Par[0pt]{k}}\Par{0}}{k!}$ act exactly 
 	\TextNL{In other words, $V\apostrophe\apostrophe=\Lm{V\apostrophe,\Fbb}$. Define $\Lambda:V\rightarrow V\apostrophe\apostrophe$ by $\Par{\Lambda v}\Par{\varphi} = \varphi\Par{v}$.\vspace{2pt}}
 	(a) \TextNL{Show that $\Lambda$ is a linear map from $V$ to $V\apostrophe\apostrophe$.\vspace{2pt}}
 	(b) \TextNL{Show that if $T\in\Lm{V}$, then $T\apostrophe\apostrophe\circ\Lambda=\Lambda\circ T$, where $T\apostrophe\apostrophe=\Par{T\apostrophe}\apostrophe$.\vspace{2pt}}
-	(c) \TextNL{Show that if $V$ is finite-dim, then $\Lambda$ is an iso from $V$ onto $V\apostrophe\apostrophe$.\vspace{2pt}}
+	(c) \TextNL{Show that if $V$ is finite-dim, then {\tgsc $\Lambda$ is an iso from V onto V\hspace{1pt}$\apostrophe\apostrophe$}.\vspace{2pt}}
 	\TextNL{\normalsize Suppose $V$ is finite-dim. Then $V$ and $V\apostrophe$ are iso, and finding an iso from $V$ onto $V\apostrophe$ generally requires choosing\vspace{-2pt}}
 	\TextNL{\normalsize a basis of $V$. In contrast, the iso $\Lambda$ from $V$ onto $V\apostrophe\apostrophe$ does not require a choice of basis and thus is considered more natural.}
 }\par\quad
 (a) $\forall\varphi\in V\apostrophe,v,w\in V,a\in\Fbb,\BigPar{\Lambda\Par{v+a w}}\Par{\varphi}=\varphi\Par{v+aw}=\varphi\Par{v}+a\varphi\Par{w}=\Par{\Lambda v}\Par{\varphi}+a\Par{\Lambda w}\Par{\varphi}$.\par\quad\Ha
 Thus $\Lambda\Par{v+aw}=\Lambda v+a\Lambda w$. Hence $\Lambda$ is linear.\vspace{4pt}\par\quad
 (b) \vspace{-6pt} \AlignEq{}{\BigPar{T\apostrophe\apostrophe\Par{\Lambda v}}\Par{\varphi}=\BigPar{\Par{\Lambda v}\circ{T\apostrophe}}\Par{\varphi}&=\Par{\Lambda v}\BigPar{T\apostrophe\Par{\varphi}}\hspace{216pt}\\[-4pt]&=\BigPar{T\apostrophe\Par{\varphi}}\Par{v}=\Par{\varphi\circ T}\Par{v}=\varphi\Par{Tv}=\BigPar{\Lambda\Par{Tv}}\Par{\varphi}.}\par\quad\Hb
-Hence $T\apostrophe\apostrophe\Par{\Lambda v}=\BigPar{\Lambda\Par{Tv}}\Rightarrow T\apostrophe\apostrophe\circ\Lambda=\Lambda\circ T$.\par\quad
+Hence $T\apostrophe\apostrophe\Par{\Lambda v}=\BigPar{\Lambda\Par{Tv}}\Rightarrow T\apostrophe\apostrophe\circ\Lambda=\Lambda\circ T$.\vspace{4pt}\par\quad
 (c) Suppose $\Lambda v=0$. Then $\forall\varphi\in V\apostrophe,\Par{\Lambda v}\Par{\varphi}=\varphi\Par{v}=0\Rightarrow v=0$. Thus $\Lambda$ is inje.\par\quad\Hc
 又 Because $V$ is finite-dim. $\dim V=\dim V\apostrophe=\dim V\apostrophe\apostrophe$. Hence $\Lambda$ is an iso.$\,$\PfEnd
 \SepLine
@@ -2996,8 +2992,8 @@ Hence $T\apostrophe\apostrophe\Par{\Lambda v}=\BigPar{\Lambda\Par{Tv}}\Rightarro
 	\Blind{\Tips \,\,\,} \TextB{\tgsl\large\envFontDefault Then by the contrapositive of [4.12], 又 $\deg p=m,$ we conclude that $m<0.$ Hence $p=0.$}
 }\TextB{}
 \Or We show that if $p$ has at least $m$ distinct zeros, then either $p=0$ or $\deg p\geqslant m.$\TextB{}
-If $p=0$ then we are done. Now suppose $p$ has exactly $n$ distinct zeros $\lambda_1,\dots,\lambda_n.$\TextB{}
-Then $\exists\,!\,\alpha_i\geqslant 1,q\in\PoF{},$ and $q\neq 0,$ such that $p\Par{z}=\Sbra{\Par{z-\lambda_1}{^{\alpha_1}}\cdots\Par{z-\lambda_n}{^{\alpha_n}}}q\Par{z}.$\PfEnd\vspace{2pt}
+If $p=0$ then we are done. If not, then suppose $p$ has exactly $n$ distinct zeros $\lambda_1,\dots,\lambda_n.$\TextB{}
+Because $\exists\,!\,\alpha_i\geqslant 1,q\in\PoF{},$ and $q\neq 0,$ such that $p\Par{z}=\Sbra{\Par{z-\lambda_1}{^{\alpha_1}}\cdots\Par{z-\lambda_n}{^{\alpha_n}}}q\Par{z}.$\PfEnd\vspace{2pt}
 
 \ProblemBnoor[]{\Comment\,\,\,}[]{
 	\TextB{\large\envFontDefault\NOTICE that by [4.17], some term of the poly factorization might not in the form $\Par{x-\lambda_k}{^{\alpha_k}}.$\vspace{-6pt}}
@@ -3212,33 +3208,54 @@ $T$ is linear because $\forall\,r_1,r_2\in\PoC{n-1},s_1,s_2\in\PoC{m-1},\lambda\
 $T\BigPar{\Par{r_1,s_1}+\lambda\Par{r_2,s_2}}=T\Par{r_1+\lambda r_2,s_1+\lambda s_2}=\Par{r_1+\lambda r_2}p+\Par{s_1+\lambda s_2}q=T\Par{r_1,s_1}+\lambda T\Par{r_2,s_2}.$\par\vspace{6pt}\quad
 Let $\lambda_1,\dots,\lambda_M$ and $\mu_1,\dots,\mu_N$ be the distinct zeros of $p$ and $q$ respectively. \NOTICE that $M\leqslant m,N\leqslant n.$\vspace{2pt}\par\quad
 Note that the contrapositive of [4.13], $M=0\Longleftrightarrow m=0\Rightarrow s=0\Longleftrightarrow r=0 \Leftarrow n=0\Longleftrightarrow N=0.$\vspace{2pt}\par\quad
-Now suppose $M\geqslant 1.$ We show that $s=0.$ Showing $r=0$ is almost the same by supposing $N\geqslant 1.$\vspace{2pt}\par\quad
+Now suppose $M,N\geqslant 1.$ We show that $s=0.$ Showing $r=0$ is almost the same.\vspace{2pt}\par\quad
 Write $p\Par{z}=a\Par{z-\lambda_1}{^{\alpha_1}}\cdots\Par{z-\lambda_M}{^{\alpha_M}}.$ \BigPar{ $\exists\,!\,\alpha_j\geqslant 1,a\in\Fbb.$ } Let $\max\!\Bra{\alpha_1,\dots,\alpha_M}=A.$\vspace{2pt}\par\quad
 For each $D\in\Bra{0,1,\dots,A-1},$ let $I_{D,\alpha}=\Bra{{\gamma_{D,1}},\dots,{\gamma_{D,J}}}$ be such that each $\alpha_{\gamma_{D,j}}\geqslant D+1.$\vspace{2pt}\par\quad
-Note that $I_{A-1,\alpha}\subseteq \cdots\subseteq I_{0,\alpha}=\Bra{1,\dots,M}.$ Because $rp+sq=0\Rightarrow\Par{rp+sq}{^{\envFontSmall[\scriptsize]\Par[0pt]{k}}}=0$ for all $k\in\Nbp.$\vspace{2pt}\par\quad
-We use induction by $D$ to show that $s{^{\envFontSmall[\scriptsize]\Par[0pt]{D}}}\Par{\lambda_{\gamma_{D,j}}}=0$ for each $D\in\Bra{1,\dots,A-1}.$\vspace{2pt}\par\quad
-(i) $D=0.$ $\Par{rp+sq}\Par{\lambda_{\gamma_{0,j}}}=\Par{rp}\Par{\lambda_{\gamma_{0,j}}}=0\Rightarrow r\Par{\lambda_{\gamma_{0,j}}}=0.$\vspace{2pt}\par\quad\Hi
-$D=1.$ $\Par{rp+sq}\apostrophe\Par{\lambda_{\gamma_{1,j}}}=\Par{r\apostrophe p+rp\apostrophe}\Par{\lambda_{\gamma_{1,j}}}+\Par{s\apostrophe q+sq\apostrophe}\Par{\lambda_{\gamma_{1,j}}}=\Par{s\apostrophe q}\Par{\lambda_{\gamma_{1,j}}}=0\Rightarrow s\apostrophe\Par{\lambda_{\gamma_{1,j}}}=0.$\vspace{2pt}\par\quad\Endi
-(ii) $2\leqslant D\leqslant A-1.$ Assume that $\;s{^{\envFontSmall[\scriptsize]\Par[0pt]{d}}}\Par{\lambda_{\gamma_{d,j}}}=0$ for each $d\in\Bra{1,\dots,D-1}$ and $j.$\vspace{2pt}\par\quad\Hii
-Note that $\Par{rp+sq}{^{\envFontSmall[\scriptsize]\Par[0pt]{D-1}}}\Par{\lambda_{\gamma_{D-1,j}}}=\XPar{s{^{\envFontSmall[\scriptsize]\Par[0pt]{D-1}}}q}\Par{\lambda_{\gamma_{D-1,j}}}=0.$\vspace{2pt}\par\quad\Hii $\Par{rp+sq}{^{\envFontSmall[\scriptsize]\Par[0pt]{D}}}\Par{\lambda_{\gamma_{D,j}}}=\XPar{\Par{rp+sq}{^{\envFontSmall[\scriptsize]\Par[0pt]{D-1}}}}\apostrophe\Par{\lambda_{\gamma_{D,j}}}=0.$\colorbox{yellow}{TODO}\vspace{2pt}\par\quad\Hii
-\vspace{2pt}\par\quad\Hii
-\vspace{2pt}\par\quad\Hii
-Thus $s{^{\envFontSmall[\scriptsize]\Par[0pt]{d}}}\Par{\lambda_{\gamma_{d,j}}}=0$ for each $d\in\Bra{1,\dots,D}$ and $j.$ Hence holds for all $D\in\Bra{2,\dots,A-1}.$\vspace{6pt}\par\quad
-\NOTICE that $\forall k=\Bra{0,\dots,A-2},s{^{\envFontSmall[\scriptsize]\Par[0pt]{k}}}$ and $s{^{\envFontSmall[\scriptsize]\Par[0pt]{k+1}}}$ have zeros $\Bra{\lambda_{\gamma_{k+1,1}},\dots,\lambda_{\gamma_{k+1,J}}}$ in common.\vspace{2pt}\par\quad
-Now $\forall D\in\Bra{1,A-1},s=s{^{\envFontSmall[\scriptsize]\Par[0pt]{0}}},\dots,s{^{\envFontSmall[\scriptsize]\Par[0pt]{D}}}$ have zeros $\Bra{\lambda_{\gamma_{D,1}},\dots,\lambda_{\gamma_{D,J}}}$ in common.\vspace{2pt}\par\quad
-Thus $\forall D\in\Bra{0,A-1},\;s\Par{z}$ is divisible by $\XPar{\Par{z-\lambda_{\gamma_{D,1}}}{^{\alpha_{\gamma_{D,1}}}}\cdots\Par{z-\lambda_{\gamma_{D,J}}}{^{\alpha_{\gamma_{D,J}}}}}$ $s\Par{z}.$\vspace{2pt}\par\quad
-Hence we write $s\Par{z}=\Par{z-\lambda_1}{^{\alpha_1}}\cdots\Par{z-\lambda_M}{^{\alpha_M}}$ while $\deg s\leqslant m-1<m=\alpha_1+\dots+\alpha_M.$\vspace{2pt}\par\quad
+Note that $I_{A-1,\alpha}\subseteq \cdots\subseteq I_{0,\alpha}=\Bra{1,\dots,M}.$ Because $rp+sq=0\Rightarrow\Par{rp+sq}{^{\SmallPar{k}}}=0$ for all $k\in\Nbp.$\vspace{2pt}\par\quad
+We use induction by $D$ to show that $s{^{\SmallPar{D}}}\Par{\lambda_{\gamma_{D,j}}}=0$ for each $D\in\Bra{0,\dots,A-1}.$\vspace{2pt}\par\quad
+\NOTICE that $p{^{\SmallPar{D}}}\Par{\lambda_\gamma}=0$ for each $D\in\Bra{0,\dots,A-1}$ and each $\lambda_\gamma\in I_{D,\alpha}.$\hfill{$\Par{\Delta}$}\vspace{2pt}\par\quad
+(i) $D=0.$ $\Par{rp+sq}\Par{\lambda_{\gamma_{0,j}}}=\Par{sq}\Par{\lambda_{\gamma_{0,j}}}=s\Par{\lambda_{\gamma_{0,j}}}=0.$\vspace{2pt}\par\quad\Hi
+$D=1.$ $\Par{rp+sq}\apostrophe\Par{\lambda_{\gamma_{1,j}}}=\Par{r\apostrophe p+rp\apostrophe}\Par{\lambda_{\gamma_{1,j}}}+\Par{s\apostrophe q+sq\apostrophe}\Par{\lambda_{\gamma_{1,j}}}=\Par{s\apostrophe q}\Par{\lambda_{\gamma_{1,j}}}=s\apostrophe\Par{\lambda_{\gamma_{1,j}}}=0.$\vspace{4pt}\par\quad\Endi
+(ii) $2\leqslant D\leqslant A-1.$ Assume that $\;s{^{\SmallPar{d}}}\Par{\lambda_{\gamma_{d,j}}}=0$ for each $d\in\Bra{1,\dots,D-1}$ and each $\lambda_{\gamma_{d,j}}\in I_{d,\alpha}.$\vspace{2pt}\par\quad\Hii
+\XPar{ Because $\forall p,q\in\PoF{},k\in\Nbp,\Par{pq}{^{\SmallPar{k}}}=\mathC_{k}^k p{^{\SmallPar{k}}}q{^{\SmallPar{0}}}+\dots+\mathC_{k}^j p{^{\SmallPar{j}}}q{^{\SmallPar{k-j}}}+\dots+\mathC_{k}^0 p{^{\SmallPar{0}}}q{^{\SmallPar{k}}}.$ }\hfill{$\Par{\Delta}$}\vspace{4pt}\par\quad\Hii
+Now $\Sbra{rp+sq}{^{\SmallPar{D}}}\Par{\lambda_{\gamma_{D,j}}}=\Sbra{\mathC_{D}^D r{^{\SmallPar{D}}}p{^{\SmallPar{0}}}+\dots+\mathC_{D}^d r{^{\SmallPar{d}}}p{^{\SmallPar{D-d}}}+\dots+\mathC_{D}^0 r{^{\SmallPar{0}}}p{^{\SmallPar{D}}}}\Par{\lambda_{\gamma_{D,j}}}$\vspace{4pt}\par\quad\Hii
+\Blind{Now} $\Blind{\Sbra{rp+sq}{^{\SmallPar{D}}}\Par{\lambda_{\gamma_{D,j}}}=}+\Sbra{\mathC_{D}^D s{^{\SmallPar{D}}}q{^{\SmallPar{0}}}+\dots+\mathC_{D}^d s{^{\SmallPar{d}}}q{^{\SmallPar{D-d}}}+\dots+\mathC_{D}^0 s{^{\SmallPar{0}}}q{^{\SmallPar{D}}}}\Par{\lambda_{\gamma_{D,j}}}$\vspace{4pt}\par\quad\Hii
+\Blind{Now} $\Blind{\Sbra{rp+sq}{^{\SmallPar{D}}}\Par{\lambda_{\gamma_{D,j}}}}=\Sbra{\mathC_{D}^D s{^{\SmallPar{D}}}q{^{\SmallPar{0}}}}\Par{\lambda_{\gamma_{D,j}}}.$\; Where each $\lambda_{\gamma_{D,j}}\in I_{D,\alpha}\subseteq I_{D-1,\alpha}.$\vspace{4pt}\par\quad\Hii
+Hence $s{^{\SmallPar{D}}}\Par{\lambda_{\gamma_{D,j}}}=0.$ The assumption holds for all $D\in\Bra{0,\dots,A-1}.$\vspace{6pt}\par\quad
+\NOTICE that $\forall k=\Bra{0,\dots,A-2},s{^{\SmallPar{k}}}$ and $s{^{\SmallPar{k+1}}}$ have zeros $\Bra{\lambda_{\gamma_{k+1,1}},\dots,\lambda_{\gamma_{k+1,J}}}$ in common.\vspace{2pt}\par\quad
+Now $\forall D\in\Bra{1,A-1},s=s{^{\SmallPar{0}}},\dots,s{^{\SmallPar{D}}}$ have zeros $\Bra{\lambda_{\gamma_{D,1}},\dots,\lambda_{\gamma_{D,J}}}$ in common.\vspace{2pt}\par\quad
+Thus $\forall D\in\Bra{0,A-1},\;s\Par{z}$ is divisible by $\Par{z-\lambda_{\gamma_{D,1}}}{^{\alpha_{\gamma_{D,1}}}}\cdots\Par{z-\lambda_{\gamma_{D,J}}}{^{\alpha_{\gamma_{D,J}}}}.$\vspace{2pt}\par\quad
+Hence we write $s\Par{z}=\XPar{\Par{z-\lambda_1}{^{\alpha_1}}\cdots\Par{z-\lambda_M}{^{\alpha_M}}}\,s_0\Par{z},$ while $\deg s\leqslant m-1<m=\alpha_1+\dots+\alpha_M.$\vspace{2pt}\par\quad
 Thus by \TIPS, $s=0.$ Following the same pattern, we conclude that $r=0.$\vspace{2pt}\par\quad
 Hence $T$ is inje. And $\Dim\BigPar{\PoC{n-1}\times\PoC{m-1}}=\dim\PoC{m+n-1}\Rightarrow T$ is surj. Thus $T$ is an iso.\PfEnd
+\SepLine\pagebreak
+\Comment\,\,\, We now prove the statement that marked by $\Par{\Delta}$ above.\vspace{6pt}\par
+\ProblemN{L1:}{
+	\TextB{Prove that $\forall p,q\in\PoF{},k\in\Nbp,\Par{pq}{^{\SmallPar{k}}}=\mathC_{k}^k p{^{\SmallPar{k}}}q{^{\SmallPar{0}}}+\dots+\mathC_{k}^j p{^{\SmallPar{j}}}q{^{\SmallPar{k-j}}}+\dots+\mathC_{k}^0 p{^{\SmallPar{0}}}q{^{\SmallPar{k}}}.$}
+}\par\quad
+We use induction by $k\in\Nbp.$\par\quad
+(i) $k=1.$ $\Par{pq}{^{\SmallPar{1}}}=pq=C_{1}^1 p{^{\SmallPar{1}}}q{^{\SmallPar{0}}}+C_{1}^0 p{^{\SmallPar{0}}}q{^{\SmallPar{1}}}.$\par\quad\Endi
+(ii) $k\geqslant 2.$ Assume that for $\Par{pq}{^{\SmallPar{k-1}}}=\mathC_{k-1}^{k-1} p{^{\SmallPar{k-1}}}q{^{\SmallPar{0}}}+\dots+\mathC_{k-1}^j p{^{\SmallPar{j}}}q{^{\SmallPar{k-1-j}}}+\dots+\mathC_{k-1}^0 p{^{\SmallPar{0}}}q{^{\SmallPar{k-1}}}.$\vspace{4pt}\par\quad\Hii
+Now $\Par{pq}{^{\SmallPar{k}}}=\BigPar{\Par{pq}{^{\SmallPar{k-1}}}}\apostrophe=\XPar{\sum_{j=0}^{k-1}\mathC_{k-1}^{j} p{^{\SmallPar{j}}}q{^{\SmallPar{k-j-1}}}}\apostrophe=\sum_{j=0}^{k-1}\XSbra{\mathC_{k-1}^{j} \XPar{p{^{\SmallPar{j+1}}}q{^{\SmallPar{k-j-1}}}+p{^{\SmallPar{j}}}q{^{\SmallPar{k-j}}}}}.$\vspace{4pt}\par\quad\Hii
+\Blind{Now} $\Blind{\Par{pq}{^{\SmallPar{k}}}\!}=\XSbra{\mathC_{k-1}^{0}\XPar{ \uwave{p{^{\SmallPar{1}}}q{^{\SmallPar{k-1}}}}+\boxed{p{^{\SmallPar{0}}}q{^{\SmallPar{k}}}}}}+\XSbra{\mathC_{k-1}^1\XPar{p{^{\SmallPar{2}}}q{^{\SmallPar{k-2}}}+\uwave{p{^{\SmallPar{1}}}q{^{\SmallPar{k-1}}}}}}$\vspace{6pt}\par\quad\Hii
+\Blind{Now} $\Blind{\Par{pq}{^{\SmallPar{k}}}=}+\dots+\XSbra{\mathC_{k-1}^{j-2}\XPar{ \uline{p{^{\SmallPar{j-1}}}q{^{\SmallPar{k-j+1}}}}+p{^{\SmallPar{j-2}}}q{^{\SmallPar{k-j+2}}}}}+\XSbra{\mathC_{k-1}^{j-1}\XPar{ \uuline{p{^{\SmallPar{j}}}q{^{\SmallPar{k-j}}}}+\uline{p{^{\SmallPar{j-1}}}q{^{\SmallPar{k-j+1}}}}}}$\vspace{4pt}\par\quad\Hii
+\Blind{Now} $\Blind{\Par{pq}{^{\SmallPar{k}}}=}+\XSbra{\mathC_{k-1}^{j}\XPar{ \uwave{p{^{\SmallPar{j+1}}}q{^{\SmallPar{k-j-1}}}}+\uuline{ p{^{\SmallPar{j}}}q{^{\SmallPar{k-j}}}}}}+\XSbra{\mathC_{k-1}^{j+1}\XPar{p{^{\SmallPar{j+2}}}q{^{\SmallPar{k-j-2}}}+\uwave{p{^{\SmallPar{j+1}}}q{^{\SmallPar{k-j-1}}}}}}$\vspace{4pt}\par\quad\Hii
+\Blind{Now} $\Blind{\Par{pq}{^{\SmallPar{k}}}=}+\dots+\XSbra{\mathC_{k-1}^{k-2}\XPar{ \uline{p{^{\SmallPar{k-1}}}q{^{\SmallPar{1}}}}+p{^{\SmallPar{k-2}}}q{^{\SmallPar{2}}}}}+\XSbra{\mathC_{k-1}^{k-1}\XPar{ \boxed{p{^{\SmallPar{k}}}q{^{\SmallPar{0}}}}+\uline{p{^{\SmallPar{k-1}}}q{^{\SmallPar{1}}}}}}.$\vspace{4pt}\par\quad\Hii
+Hence $\Par{pq}{^{\SmallPar{k}}}=\mathC_{k}^0{p{^{\SmallPar{0}}}q{^{\SmallPar{k}}}}+\dots+\XSbra{\mathC_{k-1}^{j}+\mathC_{k-1}^{j-1}}\BigPar{p{^{\SmallPar{j}}}q{^{\SmallPar{k-j}}}}+\dots+\mathC_{k}^{k}{p{^{\SmallPar{k}}}q{^{\SmallPar{0}}}}.$\PfEnd
 \SepLine
 
-%I
-%H
-%J
-
-%\OrbikenB
-
-\ChEnd\pagebreak
+\ProblemN{L2:}{
+	\TextB{Suppose $p\Par{z}=\Par{z-\lambda}{^\alpha}q\Par{z}$ and $\alpha\in\Nbp.$ Prove that ${p{^{\SmallPar{\alpha-1}}}}\Par{\lambda}=0.$}
+}\par\quad
+Suppose $p\in\PoF{}.$ Write $p\Par{z}=\Par{z-\lambda}{^A}q\Par{z},$ where $A\in\Nbp,q\Par{\lambda}\neq 0.$\vspace{2pt}\par\quad
+We use induction to show that for all $\alpha\in\Bra{1,\dots,A},{p{^{\SmallPar{\alpha-1}}}}\Par{\lambda}=0.$\vspace{2pt}\par\quad
+(i) $\alpha=1.$ $p{^{\SmallPar{0}}}\Par{\lambda}=0.$\par\quad\Endi
+(ii) $2\leqslant\alpha\leqslant A.$ Assume that $p{^{\SmallPar{a-2}}}\Par{\lambda}=0$ for all $a\in\Bra{1,\dots,\alpha}.$\par\quad\Hii
+\NOTICE that $p\Par{z}=\Par{z-\lambda}{^{\alpha-1}}q_{\alpha-1}\Par{z}=\Par{z-\lambda}{^{\alpha}}q_{\alpha}\Par{z},$ where $q_{\alpha}\Par{z}=\Par{z-\lambda}q_{\alpha-1}\Par{z}.$\vspace{2pt}\par\quad\Hii
+Because $p{^{\SmallPar{\alpha-1}}}\Par{z}=\XSbra{\mathC_{\alpha-1}^{\alpha-1}\Par{z-\lambda}{^{0}}q_{\alpha-1}\Par{z}+\dots+\mathC_{\alpha-1}^{k}\Par{z-\lambda}{^{\alpha-1-k}}q_{\alpha-1-k}\Par{z}$\vspace{2pt}\par\quad\Hii
+\Blind{Because} $\Blind{p{^{\SmallPar{\alpha-1}}}\Par{z}=}+\dots+\mathC_{\alpha-1}^{0}\Par{z-\lambda}{^{\alpha-1}}q_{\alpha-1}{^{\SmallPar{\alpha-1}}}\Par{z}}.$ Now $p{^{\SmallPar{\alpha-1}}}\Par{\lambda}=\mathC_{\alpha-1}^{\alpha-1}q_{\alpha-1}\Par{\lambda}=0.$\PfEnd
+\SepLine
+\ChEnd
 
 \ChDecl{Ch5A}{5.A}
 
