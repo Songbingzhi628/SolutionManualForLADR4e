@@ -140,11 +140,11 @@
 	#1
 }
 \newcommandx{\ProblemNor}[5][1=\Solution,4=\Sbra]{
-	{\Onumber{#2}} {\dbsp#4{\OR({\normalsize#3})}}{#5}\envFontDefault\vspace{-16pt}\par
+	{\Onumber{#2}} \;{\dbsp#4{\OR({\normalsize#3})}}{#5}\envFontDefault\vspace{-16pt}\par
 	#1
 }
-\newcommand{\ProblemNnoor}[5][\Solution]{
-	{\Onumber{#2}} \dbsp#4{\small#3}{#5}\envFontDefault\vspace{-16pt}\par
+\newcommandx{\ProblemNnoor}[5][1=\Solution,4=\Sbra]{
+	{\Onumber{#2}} \;{\dbsp#4{\small#3}}{#5}\envFontDefault\vspace{-16pt}\par
 	#1
 }
 \newcommand{\ProblemB}[2][\Solution]{
@@ -247,9 +247,9 @@
 % If you want the debug version.
 	%{\qquad$#1{$#3$}$}\vspace{#4}\par{\qquad$#2{$#5$}$}
 % If you want the pdf version.
-	%{\qquad$#1{$#3$}$}
+	{\qquad$#1{$#3$}$}
 % If you want the print version.
-	{\qquad$#2{$#5$}$}
+	%{\qquad$#2{$#5$}$}
 }}
 %}
 
@@ -1935,7 +1935,7 @@ Suppose $ST$ is inv. Let $R=\Par{ST}{^{-1}}\Rightarrow R\Par{ST}=\Par{ST}R=I$.\p
 $\MathRightBrace{l}{$
 $Tv=0\Rightarrow v=R\Par{ST}v=RS\Par{Tv}=0\\ $
 $\forall v\in V,v=\Par{ST}Rv=S\Par{TRv}\in\range S}\Rightarrow T$ is inje, $S$ is surj. While $V$ is finite-dim.\PfEnd\vspace{6pt}\par\quad
-\Or Because by Problem (23) in 3.B, $\dim V=\dim\range ST\leqslant\min\!\Bra{\range T,\range S}$.\PfEnd
+\Or Because by (3.B.23), $\dim V=\dim\range ST\leqslant\min\!\Bra{\range T,\range S}$.\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{3D10}{10}}{
@@ -2983,7 +2983,7 @@ Hence $T\apostrophe\apostrophe\Par{\Lambda v}=\BigPar{\Lambda\Par{Tv}}\Rightarro
 
 \ChEnd\pagebreak
 
-\ChDecl{Ch4}{4}{}\orMode{\hLk{4O2}{2}\;\;\hLk{4O3}{3}\;\;\hLk{4O4}{4}\;\;\hLk{4O5}{5}\;\;\hLk{4O6}{6}\;\;\hLk{4O7}{7}\;\;\hLk{4O8}{8}\;\;\hLk{4O9}{9}\;\;\hLk{4O10}{10}\;\;\hLk{4O11}{11}\;\;|\;\;\hLk{4O4e}{4E: 2,}\;\;\hLk{4O4e3}{3,}\;\;\hLk{4O4e13}{13}}{[2]: (4E 2), (4E 3), 4, 5, 2; [3]: 3, 6, 7, 9; [4]: 8, 11; [5]: 10, (4E 13).}
+\ChDecl{Ch4}{4}{}\orMode{\hLk{4O2}{2}\;\;\hLk{4O3}{3}\;\;\hLk{4O4}{4}\;\;\hLk{4O5}{5}\;\;\hLk{4O6}{6}\;\;\hLk{4O7}{7}\;\;\hLk{4O8}{8}\;\;\hLk{4O9}{9}\;\;\hLk{4O10}{10}\;\;\hLk{4O11}{11}\;\;|\;\;\hLk{4O4e2}{4E: 2,}\;\;\hLk{4O4e3}{3,}\;\;\hLk{4O4e13}{13}}{[2]: (4E 2), (4E 3), 4, 5, 2; [3]: 3, 6, 7, 9; [4]: 8, 11; [5]: 10, (4E 13).}
 
 \vspace{3pt}
 
@@ -3071,7 +3071,7 @@ Now letting $t=1/\Par{2c}$, we get $\aMid{q\Par{t\beta}}<1$. Contradicts. Hence 
 }\par\quad
 Define $T:\PoF{m}\rightarrow\Fbb^{m+1}$ by $Tq=\BigPar{q\Par{z_1},\dots,q\Par{z_m},q\Par{z_{m+1}}}.$ Moreover, $T$ is linear.\vspace{4pt}\par\quad
 We now show that $T$ is surj, so that such $p$ exists;\; and that $T$ is inje, so that such $p$ is unique.\vspace{1pt}\par\quad
-Inje: $Tq=0\Longleftrightarrow q\Par{z_1}=\dots=q\Par{z_m}=q\Par{z_{m+1}}=0\Longleftrightarrow q=0.$\vspace{1pt}\par\quad
+Inje: $Tq=0\Longleftrightarrow q\Par{z_1}=\dots=q\Par{z_m}=q\Par{z_{m+1}}=0\Longleftrightarrow q=0,$ by \TIPS.\vspace{1pt}\par\quad
 Surj: $\dim\range T=\dim\PoF{m}-\dim\null T=m+1=\dim\Fbb^{m+1}$ 又$\range T\subseteq\Fbb^{m+1}\Rightarrow T$ is surj.\PfEnd\vspace{8pt}\quad
 \Or Let $p_1=1,p_k\Par{z}=\prod_{i=1}^{k-1}\Par{z-z_i}=\Par{z-z_1}\cdots\Par{z-z_{k-1}}$ for each $k\in\Bra{2,\dots,m+1}.$\vspace{2pt}\par\quad
 By (2.C.10), $B_p=\Par{p_1,\dots,p_{m+1}}$ is a basis of $\PoF{m}.$ Let $B_e=\Par{e_1,\dots,e_{m+1}}$ be the std basis of $\Fbb^{m+1}.$\vspace{4pt}\par\quad
@@ -3257,17 +3257,16 @@ Because $p{^{\SmallPar{\alpha-1}}}\Par{z}=\XSbra{\mathC_{\alpha-1}^{\alpha-1}\Pa
 \SepLine
 \ChEnd
 
-\ChDecl{Ch5A}{5.A}
+\ChDecl{Ch5A}{5.A}{}\orMode{\hLk{5A1}{1}\;\;\hLk{5A2}{2}\;\;\hLk{5A3}{3}\;\;\hLk{5A4}{4}\;\;\hLk{5A5}{5}\;\;\hLk{5A6}{6}\;\;\hLk{5A7}{7}\;\;\hLk{5A8}{8}\;\;\hLk{5A9}{9}\;\;\hLk{5A10}{10}\;\;\hLk{5A11}{11}\;\;\hLk{5A12}{12}\;\;\hLk{5A13}{13}\;\;\hLk{5A14}{14}\;\;\hLk{5A15}{15}\;\;\hLk{5A16}{16}\;\;\hLk{5A17}{17}\;\;\hLk{5A18}{18}\;\;\hLk{5A19}{19}\;\;\hLk{5A20}{2}\;\;\hLk{5A21}\;\;\hLk{5A22}{22}\;\;\hLk{5A23}{23}\;\;\hLk{5A24}{24}\;\;\hLk{5A25}{25}\;\;\hLk{5A26}{26}\;\;\hLk{5A27}{27}\;\;\hLk{5A28}{28}$\\[-4pt]$\hLk{5A29}{29}\;\;\hLk{5A30}{30}\;\;\hLk{5A31}{31}\;\;\hLk{5A32}{32}\;\;\hLk{5A33}{33}\;\;\hLk{5A34}{34}\;\;\hLk{5A35}{35}\;\;\hLk{5A36}{36}\;\;|\;\;\hLk{5A2e20}{2E: Ch5.20}\;\;|\;\;\hLk{5A4e8}{4E 8,}\;\;\hLk{5A4e11}{11,}\;\;\hLk{5A4e15}{15,}\;\;\hLk{5A4e16}{16,}\;\;\hLk{5A4e17}{17,}\;\;\hLk{5A4e36}{36,}\;\;\hLk{5A4e37}{37,}\;\;\hLk{5A4e38}{38,}\;\;\hLk{5A4e39}{39}}[-40pt]{[1]: ; [2]: ; [3]: ; [4]: ;$\\$[5]: ; [6]: ; [7]: ; [8]: ; [9]: ; [10]: ; [11]: .}
 
-[1]: 31; [2]: 1, 2, 3, 15, 21; [3]: 23, (2E Ch5.20), (4E.5.A.37), 4, 5; [4]: 6, (4E.5.A.17, 18) \OR 16, (4E.5.A.15);\par
-[5]: 7, 8, (4E.5.A.8), 22, 9, 10; [6]: 11, 12, 14, 30, 13, (4E.5.A.11); [7]: 17, (4E.5.A.16), 18; [8]: 19, 20, 24;\par
-[9]: 24', 25, 26, 27, 28; [10]: (4E.5.A.39), 29; [11]: 32, (4E.5.A.35), (4E.5.A.38) \OR 35, 36; [12] 32, 34. \par
-$\\ $
-\BulletPoint \,\hspace{1pt}\NoteFor{[5.6]}\TextB{}
+\vspace{10pt}
+%[1]: 31; [2]: 1, 2, 3, 15, 21; [3]: 23, (2E Ch5.20), (4E 37), 4, 5; [4]: 6, (4E 17, 18) \OR 16, (4E 15); [5]: 7, 8, (4E 8), 22, 9, 10; [6]: 11, 12, 14, 30, 13, (4E 11); [7]: 17, (4E 16), 18; [8]: 19, 20, 24; [9]: 25, 26, 27, 28; [10]: (4E 39), 29; [11]: 32, (4E 35), (4E 38) \OR 35, 36; [12] 32, 34.
+
+\BulletPoint \,\hspace{1pt}\NoteForSmall{[5.6]}\TextB{}
 More generally, suppose we do not know whether $V$ is finite-dim. We show that $(a)\Longleftrightarrow(b).$\TextB{}
 Suppose (a) $\lambda$ is an eigval of $T$ with an eigvec $v.$ Then $\Par{T-\lambda I}v=0.$\TextB{}
 Hence we get (b), $\Par{T-\lambda I}$ is not inje. And then (d), $\Par{T-\lambda I}$ is not inv.\TextB{}
-But $\Par{d}\Rightarrow(b)$ fails ( because $S$ is not inv $\Longleftrightarrow S$ is not inje {\tgsl or} $S$ is not surj ).\par
+But $\Par{d}\Rightarrow(b)$ fails, because $S$ is not inv $\Longleftrightarrow S$ is not inje \OR $S$ is not surj.\par
 \SepLine
 
 %\BulletPoint \,\hspace{1pt}\NoteFor{[5.10]} {\normalsize linely inde eigvecs}\TextB{}
@@ -3281,17 +3280,27 @@ But $\Par{d}\Rightarrow(b)$ fails ( because $S$ is not inv $\Longleftrightarrow 
 %Contradicts the minimality of $m.$\PfEnd
 %\SepLine
 
-\ProblemN{31}{
-	\TextNL{Suppose $V$ is finite-dim and $v_1,\dots,v_m \in V$. Prove that $\Par{v_1,\dots,v_m}$ is linely inde}
-	\TextNL{$\Longleftrightarrow\exists\,T\in\Lm{V},$ $v_1,\dots,v_m$ are eigvecs of $T$ correspd to distinct eigvals.}
-}\par\quad
-Suppose $\Par{v_1,\dots,v_m}$ is linely inde, extend it to a basis of $V$ as $\Par{v_1,\dots,v_m,\dots,v_n}$.\par\quad
-Define $T\in\Lm{V}$ by $Tv_k=kv_k$ for each $k\in\Bra{1,\dots,m,\dots,n}.$ Conversely by [5.10].\PfEnd
+
+\BulletPoint \,\hspace{1pt}\Tips \,\,\,For $T_1,\dots,T_m\in\Lm{V}$:\TextB{}
+(a) Suppose $T_1,\dots,T_m$ are all inje. Then $\Par{T_1\circ\cdots\circ T_m}$ is inje.\TextB{}
+(b) Suppose $\Par{T_1\circ\cdots\circ T_m}$ is not inje. Then at least one of $T_1,\dots,T_m$ is not inje.\TextB{}
+(c) At least one of $T_1,\dots,T_m$ is not inje $\nRightarrow$ $\Par{T_1\circ\cdots\circ T_m}$ is not inje.\TextB{}\Hc
+\Example\,\, On infinite-dim only. Let $V=\Fbb^\infty.$\TextB{}\Hc
+$\MathRightBrace{l}{$ Let $S$ be the backward shift \Par{ surj but not inje }$\\$ Let $T$ be the \,\,\,\,forward shift \Par{ inje but not surj }$}\Rightarrow$ Then $ST=I.$\PfEnd
 \SepLine
 
-\ProblemN[]{1}{
+\ProblemN{\hypertarget{5A31}{31}}{
+	\TextNL{Suppose $V$ is finite-dim, and $v_1,\dots,v_m \in V$.}
+	\TextNL{Prove that $\Par{v_1,\dots,v_m}$ is linely inde}
+	\TextNL{\Blind{Prove that} $\Longleftrightarrow\exists\,T\in\Lm{V},$ $v_1,\dots,v_m$ are eigvecs of $T$ correspd to distinct eigvals.\vspace{-6pt}}
+}\par\quad
+Suppose $\Par{v_1,\dots,v_m}$ is linely inde. Let $B_V=\Par{v_1,\dots,v_m,\dots,v_n}.$\par\quad
+Define $T\in\Lm{V}$ by $Tv_k=k\cdot v_k$ for each $k\in\Bra{1,\dots,m,\dots,n}.$ Conversely by [5.10].\PfEnd
+\SepLine
+
+\ProblemN[]{\hypertarget{5A1}{1}}{
 	\TextN{Suppose $T\in\Lm{V}$ and $U$ is a subsp of \,$V$.}
-	(a) \TextN{{If $U\subseteq\null T$, then $U$ is invar under $T$.} {\large\envFontDefault$\forall u\in U\subseteq\null T,Tu=0\in U.$\PfEnd}}
+	(a) \TextN{{If $U\subseteq\null T$, then $U$ is invar under $T$.} {\large\envFontDefault$\forall u\in U\subseteq\null T,Tu=0\in U.$\PfEnd}\vspace{4pt}}
 	(b) \TextN{{If $\range T\subseteq U$, then $U$ is invar under $T$.} {\large\envFontDefault$\forall u\in U,Tu\in\range T\subseteq U.$\PfEnd}}
 }\par
 \SepLine
@@ -3300,48 +3309,45 @@ Define $T\in\Lm{V}$ by $Tv_k=kv_k$ for each $k\in\Bra{1,\dots,m,\dots,n}.$ Conve
 	\TextB{Suppose $S,T\in\Lm{V}$ are such that $ST=TS.$ }
 	(a) \TextB{Prove that $\null\Par{T-\lambda I}$ is invar under $S$ for any $\lambda\in\Fbb$.}
 	(b) \TextB{Prove that $\range\Par{T-\lambda I}$ is invar under $S$ for any $\lambda\in\Fbb$.}
-}Note that $ST=TS\Rightarrow \Par{T-\lambda I}S=S\Par{T-\lambda I}.$\par\quad
-(a) Suppose $v\in\null\Par{T-\lambda I},$ then $\Par{T-\lambda I}\Par{Sv}=S\Par{T-\lambda I}v=S\Par{0}=0.$\par\quad\Ha
-Hence $Sv\in\null\Par{T-\lambda I}$ and therefore $\null\Par{T-\lambda I}$ is invar under $S.$\par\quad
-(b) Suppose $v\in\range\Par{T-\lambda I},$ therefore $\exists\,u\in V,\Par{T-\lambda I}u=v.$\par\quad\Hb
-Then $ Sv=S\Par{T-\lambda I}u=\Par{T-\lambda I}\Par{Su}\in\range\Par{T-\lambda I}.$\par\qquad\,
-Hence $Sv\in\range\Par{T-\lambda I}$ and therefore $\range\Par{T-\lambda I}$ is invar under $S.$\PfEnd
+}\par\quad
+Note that $ST=TS\Rightarrow \Par{T-\lambda I}S=S\Par{T-\lambda I}.$\par\quad
+(a) $\Par{T-\lambda I}\Par{v}=0\Rightarrow\Par{T-\lambda I}\Par{Sv}=\BigPar{S\Par{T-\lambda I}}\Par{v}=0.$\par\quad
+(b) $\Par{T-\lambda I}\Par{u}=v\in\range\Par{T-\lambda I}\Rightarrow Sv=\BigPar{S\Par{T-\lambda I}}\Par{u}=\Par{T-\lambda I}\Par{Su}\in\range\Par{T-\lambda I}.$\PfEnd
 \SepLine
 
 \ProblemB[]{
-	\TextB{Suppose $S,T\in\Lm{V}$ are such that $ST=TS.$}
-	\Onumber{2}\, \TextB{Show that $W=\null T$ is invar under $S$.\quad\large$\forall u\in W,Tu=0\Rightarrow STu=0=TSu\Rightarrow Su\in W.$\PfEnd}
-	\Onumber{3}\, \TextB{Show that $U=\range T$ is invar under $S$.\,\,\,\large$\forall w\in U,\exists\,v\in V,Tv=w, TSv=STv=Sw\in U.$\PfEnd}
+	\TextB{Suppose $S,T\in\Lm{V}$ are such that $ST=TS.$\vspace{4pt}}
+	\Onumber{\hypertarget{5A2}{2}}\, \TextB{Show that $W=\null T$ is invar under $S$.\quad\large$\forall u\in W,Tu=0\Rightarrow STu=0=TSu\Rightarrow Su\in W.$\PfEnd\vspace{3pt}}
+	\Onumber{\hypertarget{5A3}{3}}\, \TextB{Show that $U=\range T$ is invar under $S$.\,\,\,\large$\forall w\in U,\exists\,v\in V,Tv=w, TSv=STv=Sw\in U.$\PfEnd}
 }
 \SepLine
 
-\ProblemN{15}{
-	\TextNL{Suppose $T\in\Lm{V}$. Suppose $S\in\Lm{V}$ is inv.}
-	(a) \TextNL{Prove that $T$ and $S^{-1}TS$ have the same eigvals.}
+\ProblemN{\hypertarget{5A15}{15}}{
+	\TextNL{Suppose $T\in\Lm{V}$. Suppose $S\in\Lm{V}$ is inv.\vspace{4pt}}
+	(a) \TextNL{Prove that $T$ and $S^{-1}TS$ have the same eigvals.\vspace{3pt}}
 	(b) \TextNL{What is the relationship between the eigvecs of $T$ and the eigvecs of $S^{-1}TS$?}
 }\par\quad
-Suppose $\lambda$ is an eigval of $T$ with an eigvec $v$.\par\quad Then $S^{-1}TS\Par{S^{-1}v}=S^{-1}Tv=S^{-1}\Par{\lambda v}=\lambda S^{-1}v.$\par\quad
-Thus $\lambda$ is also an eigval of $S^{-1}TS$ with an eigvec $S^{-1}v$.\par\vspace{6pt}\quad
-Suppose $\lambda$ is an eigval of $S^{-1}TS$ with an eigvec $v.$\par\quad Then $S\Par{S^{-1}TS}v=TSv=\lambda Sv.$\par\quad
-Thus $\lambda$ is also an eigval of $T$ with an eigvec $Sv.$\PfEnd\vspace{6pt}\quad
-\Or Note that $S\Par{S^{-1}TS}S^{-1}=T.$ Hence every eigval of $S^{-1}TS$ is an eigval of $S\Par{S^{-1}TS}S^{-1}=T.$\par\quad
-{\normalsize And every eigvec $v$ of $S^{-1}TS$ is $S^{-1}v,$ every eigvec $u$ of $T$ is $Su.$}\PfEnd
-\par
+(a) $\lambda$ is an eigval of $T$ with an eigvec $v\Rightarrow S^{-1}TS\Par{\uline{S^{-1}v}}=S^{-1}Tv=S^{-1}\Par{\lambda v}=\uline{\lambda S^{-1}v}.$\par\vspace{2pt}\quad\Ha
+$\lambda$ is an eigval of $S^{-1}TS$ with an eigvec $v\Rightarrow S\Par{S^{-1}TS}v=T\uline{Sv}=\uline{\lambda Sv}.$\vspace{2pt}\par\quad\Ha
+\Or Note that $S\Par{S^{-1}TS}S^{-1}=T.$ Hence every eigval of $S^{-1}TS$ is an eigval of $S\Par{S^{-1}TS}S^{-1}=T.$\vspace{5pt}\par\quad\Ha
+\Or $Tv=\lambda v\Longleftrightarrow\Par{TS}\Par{u}=\lambda Su\Longleftrightarrow\Par{S^{-1}TS}\Par{u}=\lambda u.$ Where $v=Su.$\vspace{2pt}\par\quad\Ha
+\Blind{\Or}$\Par{S^{-1}TS}\Par{u}=\lambda u\Longleftrightarrow\Par{S^{-1}T}\Par{v}=\lambda S^{-1}v\Longleftrightarrow Tv=\lambda v.$ Where $u=S^{-1}v.$\vspace{4pt}\par\quad
+(b) Because $\lambda$ is an eigval of $T\Longleftrightarrow \lambda$ is an eigval of $S^{-1}TS.$\par\quad\Hb
+\BigPar{ See [5.36]. } Now $E\Par{\lambda,T}=\Bra{Su:u\in E\Par{\lambda,S^{-1}TS}};\;E\Par{\lambda,S^{-1}TS}=\Bra{S^{-1}v:v\in E\Par{\lambda,T}}.$\PfEnd
 \SepLine
 
-\ProblemN{21}{
+\ProblemN{\hypertarget{5A21}{21}}{
 	\TextNL{Suppose $T\in\Lm{V}$ is inv.}
 	(a) \TextNL{Suppose $\lambda\in\Fbb$ with $\lambda\neq 0$. Prove that $\lambda$ is an eigval of $T$ $\Longleftrightarrow$ $\frac{1}{\lambda}$ is an eigval of $T^{-1}$.}
 	(b) \TextNL{Prove that $T$ and $T^{-1}$ have the same eigvecs.}
 }\par\quad
-(a) Suppose $\lambda$ is an eigval of $T$ with an eigvec $v.$\par\quad\Ha
-Then $T^{-1}Tv=\lambda T^{-1}v=v\Rightarrow T^{-1}v=\frac{1}{\lambda}v.$ Hence $\frac{1}{\lambda}$ is an eigval of $T^{-1}.$\par\quad
-(b) Suppose $\frac{1}{\lambda}$ is an eigval of $T^{-1}$ with an eigvec $v.$\par\quad\Hb
-Then $TT^{-1}v=v=\frac{1}{\lambda}Tv\Rightarrow Tv=\lambda v.$ Hence $\lambda$ is an eigval of $T.$\par\quad\Hb
-\Or Note that $\Par{T^{-1}}{^{-1}}=T$ and $1/\Par{\frac{1}{\lambda}}=\lambda.$\PfEnd
+(a) $Tv=\lambda v\Longleftrightarrow v=\lambda T^{-1}v\Longleftrightarrow \lambda^{-1}v=T^{-1}v.$ Where $v\neq 0.$\vspace{2pt}\par\quad
+(b) Note that $T$ is inv. Hence $0$ is not an eigval of $T$ and $T^{-1}.$\par\quad\Hb
+Now by (a), $v$ is an eigvec of $T\Longleftrightarrow v$ is an eigvec of $T^{-1}.$\PfEnd
 \SepLine
+\pagebreak
 
-\ProblemN{23}{
+\ProblemN{\hypertarget{5A23}{23}}{
 	\TextNL{Suppose $S, T\in\Lm{V}$. Prove that $ST$ and $TS$\, have the same eigvals.}
 }\par\quad
 Suppose $\lambda$ is an eigval of $ST$ with an eigvec $v.$ Then $T\Par{STv}=\lambda Tv=TS\Par{Tv}.$\par\quad
@@ -3350,17 +3356,17 @@ Thus $\lambda=0$ is an eigval of $ST$ and $TS$ with the same eigvec $v$.\par\qua
 Otherwise, $Tv\neq 0,$ then $\lambda$ is an eigval of $TS.$ Reversing the roles of $T$ and $S.$\PfEnd
 \SepLine
 
-\ProblemBnoor{{2E Ch5.20}}{
+\ProblemBnoor{\hypertarget{5A2e20}{2E Ch5.20}}{
 	\TextB{}
-	\TextB{Suppose $T\in\Lm{V}$ has $\dim V$ distinct eigvals and $S\in\Lm{V}$ has the same eigvecs}
-	\TextB{( but might not with the same eigvals ). Prove that $ST=TS.$}
+	\TextB{Suppose $T\in\Lm{V}$ has $\,\dim V\,$ distinct eigvals and $S\in\Lm{V}$ has the same eigvecs}
+	\TextB{\Par{ but might not with the same eigvals }. Prove that $ST=TS.$}
 }\par\quad
 Let $n=\dim V.$ For each $j\in\Bra{1,\dots,n},$ let $v_j$ be an eigvec with eigval $\lambda_j$ of $T$ and $\alpha_j$ of $S$.\par\quad
 Then $\Par{v_1,\dots,v_n}$ is a basis of $V.$ Because $\Par{ST}v_j=\alpha_j\lambda_j v_j=\Par{TS}v_j$ for each $j.$ Hence $ST=TS.$\PfEnd
 \SepLine
 
 
-\ProblemB{
+\ProblemBnoor{\hypertarget{5A4e37}{4E 5.A.37}}{
 	\TextB{Suppose $V$ is finite-dim and $T\in\Lm{V}$.}
 	\TextB{Define $\mathcal{A}\in\Lm[\BigPar]{\Lm{V}}$ by $\mathcal{A}\Par{S} = TS$ for each $S\in\Lm{V}$.}
 	\TextB{Prove that the set of eigvals of $T$ equals the set of eigvals of $\mathcal{A}$.}
@@ -3383,11 +3389,11 @@ Then $\Par{T-\lambda I}Sv_1=0=\Par{T-\lambda I}Sv_k=0.$\par\quad\Ha
 Hence $\Par{T-\lambda I}S=0\Rightarrow TS=\lambda S$ while $S\neq 0.$ Thus $\lambda$ is also an eigval of $\mathcal{A}.$\par\quad
 (b) Suppose $\lambda$ is an eigval of $\mathcal{A}$ with an eigvec $S.$ Then $\Par{T-\lambda I}S=0$ while $S\neq 0.$\par\quad\Hb
 Hence $\Par{T-\lambda I}$ is not inje. Thus $\lambda$ is also an eigval of $T.$\PfEnd
-\Comment\,\,\, {\normalsize\envFontSmall Define $\mathcal{B}\in\Lm[BigPar]{\Lm{V}}$ by $\mathcal{B}\Par{S}=ST,$ $\forall S\in\Lm{V}.$
+\Comment\,\,\, {\normalsize\envFontSmall Define $\mathcal{B}\in\Lm[\BigPar]{\Lm{V}}$ by $\mathcal{B}\Par{S}=ST,$ $\forall S\in\Lm{V}.$
 Then the eigvals of $\mathcal{B}$ are not the eigvals of $T.$}\par
 \SepLine
 
-\ProblemN{4}{
+\ProblemN{\hypertarget{5A4}{4}}{
 	\TextN{Suppose $T\in\Lm{V}$ and $V_1,\dots,V_m$ are invar subsps of \,$V$ under $T$.}
 	\TextN{Prove that $V_1+\dots+V_m$ is invar under $T$.}
 }For each $i=1,\dots,m$, $\forall v_i\in V_i,Tv_i\in V_i$\par\quad
@@ -3403,7 +3409,7 @@ Hence $\forall v=v_1+\dots+v_m\in V_1+\dots+V_m,Tv=Tv_1+\dots+Tv_m\in V_1+\dots+
 %Thus $\bigcap_{\alpha\in\Gamma}V_\alpha$ is invar under $T.$\PfEnd
 %\SepLine
 
-\ProblemN{6}{
+\ProblemN{\hypertarget{5A6}{6}}{
 	\TextN{Prove or give a counterexample:}
 	\TextN{If \,$V$ is finite-dim and $U$ is a subsp of \,$V$ that is invar under every operator on $V$,}
 	\TextN{then $U = \zeroSubs$ or $U = V$.}
@@ -3418,8 +3424,8 @@ Define $T\in\Lm{V}$ by $T\Par{a_1 u_1+\dots+a_m u_m+b_1 w_1+\dots+b_n w_n}=b_1 w
 
 \ProblemB{
 	\TextB{Suppose $\Fbb=\Rbb,$ $T\in\Lm{V}$.}
-	(a) \Sbra{{\normalsize\Or (9.11)}} \TextB{$\lambda\in\Rbb.$ Prove that $\lambda$ is an eigval of $T$ $\Longleftrightarrow$ $\lambda$ is an eigval of $T_{\Cbb}.$}
-	(b) \Sbra{{\normalsize\Or Problem (16)}} \TextB{$\lambda\in\Cbb.$ Prove that $\lambda$ is an eigval of $T_{\Cbb}$ $\Longleftrightarrow$ $\overline \lambda$ is an eigval of $T_{\Cbb}.$}
+	(a) \hypertarget{5A4e17}{}\Sbra{{\normalsize\OR (9.11)}} \TextB{$\lambda\in\Rbb.$ Prove that $\lambda$ is an eigval of $T$ $\Longleftrightarrow$ $\lambda$ is an eigval of $T_{\Cbb}.$}
+	(b) \hypertarget{5A16}{}\Sbra{{\normalsize\OR \Onumber{16}\,}} \TextB{$\lambda\in\Cbb.$ Prove that $\lambda$ is an eigval of $T_{\Cbb}$ $\Longleftrightarrow$ $\overline \lambda$ is an eigval of $T_{\Cbb}.$}
 }\par\quad
 (a) Suppose $v\in V$ is an eigvec correspd to the eigval $\lambda.$\par\quad\Ha
 Then $Tv=\lambda v\Rightarrow T_{\Cbb}\Par{v+\i 0}=Tv+\i T0=\lambda v.$\par\quad\Ha
@@ -3436,7 +3442,7 @@ Hence $\overline\lambda$ is an eigval of $T_{\Cbb}.$
 To prove the other direction, notice that $\overline{\Par{\overline\lambda}}=\lambda.$\PfEnd
 \SepLine
 
-\ProblemB{
+\ProblemBnoor{\hypertarget{5A4e15}{4E 5.A.15}}{
 	\TextB{Suppose $V$ is finite-dim, $T\in\Lm{V}$, and $\lambda\in\Fbb.$}
 	\TextB{Show that $\lambda$ is an eigval of $T$ $\Longleftrightarrow$ $\lambda$ is an eigval of the dual operator $T\apostrophe\in\Lm{V\apostrophe}$.}
 }\par\quad
@@ -3451,7 +3457,7 @@ Hence $\lambda$ is an eigval of $T.$\PfEnd
 \SepLine
 
 
-\ProblemN{7}{
+\ProblemN{\hypertarget{5A7}{7}}{
 	\TextN{Suppose $T\in\Lm{\Rbb^2}$ is defined by $T\Par{x, y} = \Par{-3y, x}$. Find the eigvals of $T$.}
 }\par\quad
 Suppose $\lambda\in\Rbb$ and $\Par{x,y}\in\Rbb^2\backslash\zeroSubs$ such that $T\Par{x,y}=\Par{-3y,x}=\lambda \Par{x,y}.$ Then $-3y=\lambda x$ \,{\small and}\, $x=\lambda y.$\par\quad
@@ -3459,7 +3465,7 @@ Thus $-3y=\lambda^2 y\Rightarrow \lambda^2=-3,$ ignoring the possibility of $y=0
 Hence the set of solution for this equation is $\emptyset,$ and therefore $T$ has no eigvals in $\Rbb.$\PfEnd
 \SepLine
 
-\ProblemN{8}{
+\ProblemN{\hypertarget{5A8}{8}}{
 	\TextN{Define $T\in\Lm{\Fbb^2}$ by $T\Par{w, z} = \Par{z, w}$. Find all eigvals and eigvecs of $T$.}
 }\par\quad
 Suppose $\lambda\in\Fbb$ and $\Par{w,z}\in\Fbb^2$ such that $T\Par{w,z}=\Par{z,w}=\lambda\Par{w,z}.$ Then $z=\lambda w$ \,{\small and}\, $ w=\lambda z.$\par\quad
@@ -3469,21 +3475,22 @@ Thus the set of all eigvecs is $\Bra{\Par{z,-z},\Par{z,z}:z\in\Fbb\,\wedge\,z\ne
 \par
 \SepLine
 
-\ProblemB{
-	\TextB{Suppose $P\in\Lm{V}$ is such that $P^2 = P$.}
+\ProblemBnoor{{5.B.4} \OR \hypertarget{5A4e8}{4E 5.A.8}}{
+	\TextB{Suppose $P\in\Lm{V}$ and $P^2 = P$.}
 	\TextB{Prove that if $\lambda$ is an eigval of $P$, then $\lambda = 0$ or $\lambda = 1$.}
-}( See also at (3.B), just below Problem (25), where (5.B.4) was answered. )\par\quad
+}\Sbra{ See also at (3.B), where (5.B.4) was answered. }\par\quad
 Suppose $\lambda$ is an eigval with an eigvec $v.$ Then $P\Par{Pv}=Pv\Rightarrow\lambda^2 v=\lambda v.$ Thus $\lambda=1$ or $0.$\PfEnd
 \SepLine
-\large
-\ProblemN{22}{
-	\TextNL{Suppose $T\in\Lm{V}$ and $\exists$ nonzero vecs $u,w$ in $V$ such that $Tu = 3w$ \,{\normalsize and}\, $Tw = 3u$.}
+
+\ProblemN{\hypertarget{5A22}{22}}{
+	\TextNL{Suppose $T\in\Lm{V}$ and $\exists$ nonzero vecs $u,w$ in $V$ such that $Tu = 3w,\;Tw = 3u$.}
 	\TextNL{Prove that $3$ or $-3$ is an eigval of $T$.}
-}{\Comment\,\,\, \small$Tu=3w,Tw=3u\Rightarrow T\Par{Tu}=9u\Rightarrow T^2$ has an eigval $9.$}\par\quad
-$Tu=3w,Tw=3u\Rightarrow T\Par{u+w}=3\Par{u+w},T\Par{u-w}=3\Par{w-u}=-3\Par{u-w}.$\PfEnd
+}\par\quad
+$T\Par{u+w}=3\Par{u+w},\;T\Par{u-w}=3\Par{w-u}=-3\Par{u-w}.$ Note that $u-w$ or $u+w$ is nonzero.\par\quad
+\Or $T\Par{Tu}=9u\Rightarrow T^2-9=\Par{T-3I}\Par{T+3I}$ is not injective $\Rightarrow 3$ or $-3$ is an eigval.\PfEnd
 \SepLine
 
-\ProblemN{9}{
+\ProblemN{\hypertarget{5A9}{9}}{
 	\TextN{Define $T\in\Lm{\Fbb^3}$ by $T\Par{z_1,z_2,z_3}=\Par{2z_2, 0,5z_3}$.}
 	\TextN{Find all eigvals and eigvecs of $T$.}
 }\par\quad
@@ -3495,7 +3502,7 @@ For $\lambda\neq 0,$\, $z_2=0=z_1,$ and $z_3$ can be arbitrary ( $z_3\neq 0$ ), 
 The set of all eigvecs is $\Bra{\Par{0,0,z},\Par{z,0,0}:z\in\Fbb\,\wedge\,z\neq 0}.$\PfEnd
 \SepLine
 
-\ProblemN{10}{
+\ProblemN{\hypertarget{5A10}{10}}{
 	\TextNL{Define $T\in\Lm{\Fbb^n}$ by $T\Par{x_1,x_2,x_3,\dots,x_n}=\Par{x_1,2 x_2,3 x_3,\dots,n x_n}$}
 	(a) \TextNL{Find all eigvals and eigvecs of $T.$}
 	(b) \TextNL{Find all invar subsps of \,$V$ under $T.$}
@@ -3508,7 +3515,7 @@ And $\Bra{\Par{0,\dots,0,x_\lambda,0,\dots,0}\in\Fbb^n:\lambda=1,\dots,n,\,\,x_\
 Hence by Problem (4), every sum of $V_1,\dots,V_n$ is a invar subsp of $V$ under $T.$\PfEnd
 \SepLine
 
-\ProblemN{11}{
+\ProblemN{\hypertarget{5A11}{11}}{
 	\TextNL{Define $T:\PoR{}\rightarrow\PoR{}$ by $Tp = p\apostrophe$. Find all eigvals and eigvecs of $T$.}
 }\par\quad
 Note that in general, $\deg p\apostrophe<\deg p$ ( $\deg 0=-\infty$ ).\par\quad
@@ -3518,7 +3525,7 @@ Therefore $\deg \lambda p=-\infty=\deg p\Rightarrow p$ is a nonzero const poly.\
 Hence the set of all eigvecs is $\Bra{C:C\in\Rbb\wedge\,C\neq 0}=\PoR{0}\backslash\zeroSubs.$\PfEnd
 \SepLine
 
-\ProblemN{12}{
+\ProblemN{\hypertarget{5A12}{12}}{
 	\TextNL{Define $T\in\Lm[\BigPar]{\PoR{4}}$ by $\Par{Tp}\Par{x} = xp\apostrophe\Par{x}$ for all $x\in\Rbb.$}
 	\TextNL{Find all eigvals and eigvecs of $T$.}
 }\par\quad
@@ -3529,14 +3536,14 @@ Similar to Problem (10), $0,1,\dots,n$ are eigvals of $T.$\par\quad
 The set of all eigvecs of $T$ is $\Bra{cx^\lambda:\lambda=0,1,\dots,n,\,\,c\in\Fbb\wedge\,c\neq 0}.$\PfEnd
 \SepLine
 
-\ProblemN{30}{
+\ProblemN{\hypertarget{5A30}{30}}{
 	\TextNL{Suppose $T\in\Lm{\Rbb^3}$ and $-4,5,\sqrt{7}$ are eigvals of $T$.}
 	\TextNL{Prove that $\exists\,x\in\Rbb^3$ such that $Tx - 9x = \Par{-4, 5, \sqrt{7}}$.}
 }Because $9$ is not an eigval. Hence $\Par{T-9I}$ is surj.\PfEnd
 \SepLine
 
 
-\ProblemN{14}{
+\ProblemN{\hypertarget{5A14}{14}}{
 	\TextNL{Suppose $V = U\oplus W$, where $U$ and $W$ are nonzero subsps of \,$V$.}
 	\TextNL{Define $P\in\Lm{V}$ by $P\Par{u + w} = u$ \,for each $u\in U$ and each $w\in W$.}
 	\TextNL{Find all eigvals and eigvecs of $P$.}
@@ -3547,8 +3554,7 @@ Thus if $\lambda=1,$ then $w=0;$\,\, if $\lambda=0,$ then $u=0.$\par\quad
 Hence the eigvals of $P$ are $0$ and $1$, the set of all eigvecs in $P$ is $U\cup W.$\PfEnd
 \SepLine
 
-
-\ProblemN{13}{
+\ProblemN{\hypertarget{5A13}{13}}{
 	\TextNL{Suppose $V$ is finite-dim, $T\in\Lm{V},$ and $\lambda\in\Fbb.$}
 	\TextNL{Prove that $\exists\,\alpha\in\Fbb,\left|\alpha-\lambda\right|<\frac{1}{1000}$ and $\Par{T-\alpha I}$ is inv.}
 }\par\quad
@@ -3557,7 +3563,7 @@ Note that each $T\in\Lm{V}$ has at most $\dim V$ distinct eigvals.\par\quad
 Hence $\exists\,k=1,\dots,\dim V+1$ such that $\alpha_k$ is not an eigval of $T$ and therefore $\Par{T-\alpha_k I}$ is inv.\PfEnd
 \SepLine
 
-\ProblemB{
+\ProblemBnoor{4E 5.A.11}{
 	\TextB{Suppose $V$ is finite-dim, $T\in\Lm{V}$, and $\lambda\in\Fbb.$}
 	\TextB{Prove that $\exists\,\delta > 0$ such that $\Par{T-\alpha I}$ is inv for all $\alpha\in\Fbb$ such that $0 < \left|\alpha-\lambda\right| < \delta$.}
 }\par\quad
@@ -3566,7 +3572,7 @@ Let $\delta>0$ be such that, for each eigval $\lambda_k,$ $\lambda_k\not\in\Par{
 So that for all $\alpha\in\Fbb$ such that $0<\left|\alpha-\lambda\right|<\delta,\Par{T-\alpha I}$ is not inje.\PfEnd
 \SepLine
 
-\ProblemN{17}{
+\ProblemN{\hypertarget{5A17}{17}}{
 	\TextNL{Give an example of an operator on $\Rbb^4$ that has no ( real ) eigvals.}
 }Where $\Par{e_1,e_2,e_3,e_4}$ is the standard basis of $\Rbb^4.$\par\quad
 Define $T\in\Lm{\Rbb^4}$ by $\Mt[\BigPar]{T,\Par{e_1,e_2,e_3,e_4}}=${\footnotesize$\begin{pmatrix}
@@ -3597,7 +3603,7 @@ Otherwise, $xy=0\Rightarrow x=y=0,$ for if $x\neq 0,$ then $\lambda=0\Rightarrow
 Similarly, $y=z=w=0.$ Then we fail. Thus $T$ has no eigvals.\PfEnd
 \SepLine
 
-\ProblemB{
+\ProblemBnoor{\hypertarget{5A4e16}{4E 5.A.16}}{
 	\TextB{Suppose $\Par{v_1,\dots,v_n}$ is a basis of \,$V$ and $T\in\Lm{V},\Mt[\BigPar]{T,\Par{v_1,\dots,v_n}}=A.$}
 	\TextB{Prove that if $\lambda$ is an eigval of $T$, then $\left|\lambda\right|\leqslant n \max\!\Bra{\aMid{A_{j,k}}:1\leqslant j, k\leqslant n}.$}
 }\par\quad
@@ -3611,7 +3617,7 @@ Now we show that if $\left|\lambda\right|\neq n\max\!\Bra{\aMid{A_{j,k}}:1\leqsl
 \par
 \SepLine
 
-\ProblemN{18}{
+\ProblemN{\hypertarget{5A18}{18}}{
 	\TextNL{Show that the forward shift operator $T\in\Lm{\Fbb^\infty}$}
 	\TextNL{defined by $T\Par{z_1,z_2,\dots} = \Par{0, z_1,z_2,\dots}$ has no eigvals.}
 }\par\quad
@@ -3625,7 +3631,7 @@ Hence $T$ has no eigvals.\PfEnd
 \par
 \SepLine
 
-\ProblemN{19}{
+\ProblemN{\hypertarget{5A19}{19}}{
 	\TextNL{Suppose $n\in\Nbp$. Define $T\in\Lm{\Fbb^n}$ by}
 	\TextNL{\centerline{$T\Par{x_1,\dots,x_n}=\Par{x_1+\dots+x_n,\dots,x_1+\dots+x_n}.$\quad\qquad}}
 	\TextNL{In other words, the entries of $\Mt{T}$ with resp to the standard basis are all \,$1$'s.}
@@ -3640,7 +3646,7 @@ Hence $0,n$ are eigvecs of $T.$\par\quad
 And the set of all eigvecs of $T$ is $\Bra{\Par{x_1,\dots,x_n}\in\Fbb^n:x_1+\dots+x_n=0\vee x_1=\dots=x_n}.$\PfEnd
 \SepLine
 
-\ProblemN{20}{
+\ProblemN{\hypertarget{5A20}{20}}{
 	\TextNL{Define the backward shift operator $S\in\Lm{\Fbb^\infty}$ by $S\Par{z_1,z_2,z_3,\dots} = \Par{z_2,z_3,\dots}$.}
 	(a) \TextNL{Show that every element of $\Fbb$ is an eigval of $S$.}
 	(b) \TextNL{Find all eigvecs of $S$.}
@@ -3656,7 +3662,7 @@ Hence (a) each element of $\lambda\in\Fbb$ is an eigval of $T.$\par\quad
 And (b) the set of all eigvecs of $T$ is $\Bra{\Par{z_1,\lambda z_1,\lambda^2 z_1,\dots,\lambda^k z_1,\dots}\in\Fbb^\infty:\lambda\in\Fbb,z_1\neq 0}$\PfEnd
 \SepLine
 
-\ProblemN{24}{
+\ProblemN{\hypertarget{5A24}{24}}{
 	\TextNL{Suppose $A\in\Fbb^{n,n}.$ Define $T\in\Lm{\Fbb^n}$ by $Tx = Ax$,}
 	\TextNL{where elements of $\Fbb^n$ are thought of as $n$-by-$1$ col vecs.}
 	(a) \TextNL{Suppose the sum of the entries in each row of $A$ equals $1$.}
@@ -3713,32 +3719,32 @@ y_1 & \cdots & y_n
 \end{pmatrix}$}$\,\in\Fbb^n:y_1+\dots+y_n=0}.$ Hence $\Par{T-I}$ is not surj.\PfEnd
 \SepLine
 
-\ProblemN{25}{
+\ProblemN{\hypertarget{5A25}{25}}{
 	\TextNL{Suppose $T\in\Lm{V}$ and $u, w$ are eigvecs of $T$ such that $u + w$ is also an eigvec of $T$.}
 	\TextNL{Prove that $u$ and $w$ are eigvecs of $T$ correspd to the same eigval.}
 }\par\quad
 Suppose $\lambda_1,\lambda_2,\lambda_0$ are eigvals of $T$ correspd to $u,w,u+w$ respectively.\par\quad
 Then $T\Par{u+w}=\lambda_0\Par{u+w}=Tu+Tw=\lambda_1 u+\lambda_2 w\Rightarrow \Par{\lambda_0-\lambda_1}u=\Par{\lambda_2-\lambda_0}w.$\par\quad
-Notice that $u,w,u+w$ are nonzero.\par\quad
-If $\Par{u,w}$ is linely depe, then let $w=cu,$ therefore\par\qquad\qquad\qquad
-$\lambda_2 cu=Tw=cTu=\lambda_1 cu$ \qquad\qquad\qquad\qquad\qquad\quad $\Rightarrow\lambda_2=\lambda_1.$\par\qquad\qquad\qquad
-$\lambda_0\Par{u+w}=T\Par{u+w}=\lambda_1 u+\lambda_1 cu=\lambda_1\Par{u+w}$\quad$\,\Rightarrow\lambda_0=\lambda_1.$\par\quad
-Otherwise, $\lambda_0-\lambda_1=\lambda_2-\lambda_0=0\,\Rightarrow\lambda_1=\lambda_2=\lambda_0.$\PfEnd
+Note that $u,w,u+w$ are nonzero. If $\Par{u,w}$ is linely depe, then let $w=cu,$ therefore\par\quad
+$\Par[0pt]{-}\;\lambda_2 cu=Tw=cTu=\lambda_1 cu\Rightarrow\lambda_2=\lambda_1.$\par\quad
+$\Par[0pt]{=}\;\lambda_0\Par{u+w}=T\Par{u+w}=\lambda_1 u+\lambda_1 cu=\lambda_1\Par{u+w}\Rightarrow\lambda_0=\lambda_1.$\par\quad
+Otherwise, $\Par{u,w}$ is linely inde. Then $\lambda_0-\lambda_1=\lambda_2-\lambda_0=0\,\Rightarrow\lambda_1=\lambda_2=\lambda_0.$\PfEnd\quad
+\Or Assume that $\lambda_1\neq \lambda_2.$ Then $\Par{u,w}$ is linely inde. Thus $\lambda_0-\lambda_1=\lambda_0-\lambda_2.$ Contradicts.\PfEnd
 \SepLine
 
-\ProblemN{26}{
-	\TextNL{Suppose $T\in\Lm{V}$ is such that every nonzero vec in $V$ is an eigvec of $T$.}
+\ProblemN{\hypertarget{5A26}{26}}{
+	\TextNL{Suppose $T\in\Lm{V}$ is such that every nonzero vec in $V$ is an eigvec of \,$T$.}
 	\TextNL{Prove that $T$ is a scalar multi of the identity operator.}
 }\par\quad
 Because $\forall v\in V,\exists\,!\,\lambda_v\in\Fbb,Tv=\lambda_v v.$ For any two distinct nonzero vecs $v,w\in V,$\par\quad
-$T\Par{v+w}=\lambda_{v+w}\Par{v+w}=Tv+Tw=\lambda_v v+\lambda_w w\Rightarrow\Par{\lambda_{v+w}-\lambda_v}v=\Par{\lambda_w-\lambda_{v+w}}w.$\par\quad
-If $\Par{v,w}$ is linely inde, then let $w=cv,$ therefore\par\qquad\qquad\qquad
-$\lambda_v cv=cTv=Tw=\lambda_w w$\qquad\qquad\qquad\qquad\qquad\quad$\Rightarrow\lambda_w=\lambda_v.$\par\qquad\qquad\qquad
-$\lambda_{v+w}\Par{v+w}=T\Par{v+w}=Tv+Tw=\lambda_v\Par{v+cv}$ $\,\Rightarrow \lambda_{v+w}=\lambda_v.$\par\quad
-Otherwise, $\lambda_v=\lambda_{v+w}=\lambda_w.$\PfEnd
+$T\Par{v+w}=\lambda_{v+w}\Par{v+w}=Tv+Tw=\lambda_v v+\lambda_w w\Rightarrow\Par{\lambda_{v+w}-\lambda_v}v=\Par{\lambda_w-\lambda_{v+w}}w.$\PfEnd\vspace{4pt}\quad
+\Or If $\dim V=0$ or $1.$ We are done.\par\quad
+Suppose $\dim V\geqslant 2.$ For any two nonzero vecs $u,v\in V,u,v$ are eigvecs.\par\quad
+If $u+v\neq 0,$ then $u+v$ is also an eigvec. Otherwise, $u+v=0,$ then $Tu=-Tv=\lambda u=-\lambda v.$\par\quad
+Thus by Problem (25), $\forall u,v\in V,Tu=\lambda u,Tv=\lambda v\Rightarrow\forall v\in V,Tv=\lambda v.$\PfEnd
 \SepLine
 
-\ProblemN{27, 28}{
+\ProblemN{\hypertarget{5A27}{27}, \hypertarget{5A28}{28}}{
 	\TextNL{Suppose $V$ is finite-dim and $k\in\Bra{1, \dots , \dim V - 1}$.}\qquad
 	\TextNL{Suppose $T\in\Lm{V}$ is such that every subsp of \,$V$ of dim $k$ is invar under $T$.}\qquad
 	\TextNL{Prove that $T$ is a scalar multi of the identity operator.}
@@ -3758,7 +3764,7 @@ hence for $Tv_1=c_1 v_1+\dots+c_{i-1}v_{i-1}+c_{i+1}v_{i+1}+\dots+c_n v_n\in U_i
 $\Rightarrow Tv_1=c_1 v_1, $又 $v_1=v\in V$ is arbitrary $\Rightarrow T=\lambda I$ for some $\lambda.$\PfEnd
 \SepLine
 
-\ProblemB{
+\ProblemBnoor{\hypertarget{5A4e39}{4E 5.A.39}}{
 	\TextB{Suppose $V$ is finite-dim and $T\in\Lm{V}$. Prove that}
 	\TextB{$T$ has an eigval $\Longleftrightarrow\exists\,$ an invar subsp $U$ of \,$V$ under $T$ such that $\dim U=\dim V - 1$.}
 }\par
@@ -3795,7 +3801,7 @@ otherwise, $T\mid_U:U\rightarrow U$ is not surj ( $\Rightarrow$ not inje ), supp
 then $\exists\,u\in U\backslash\zeroSubs,Tu=0,$ we are done.\PfEnd
 \SepLine
 
-\ProblemN{29}{
+\ProblemN{\hypertarget{5A29}{29}}{
 	\TextNL{Suppose $T\in\Lm{V}$ and $\range T$ is finite-dim.}
 	\TextNL{Prove that $T$ has at most $1 + \dim\range T$ distinct eigvals.}
 }\par\quad
@@ -3808,7 +3814,7 @@ And for $\lambda_A=0,$ there is a linely inde list  of length at most $\Par{m-1}
 Hence, by [2.23], $m\leqslant \dim\range T+1.$\PfEnd
 \SepLine
 
-\ProblemN{32}{
+\ProblemN{\hypertarget{5A32}{32}}{
 	\TextNL{Suppose that $\lambda_1,\dots,\lambda_n$ are distinct real numbers.}
 	\TextNL{Prove that $\Par{e^{\lambda_1}x,\dots,e^{\lambda_n}x}$ is linely inde in $\Rbb^{\Rbb}$.}
 	\TextNL{{\tgbf\large H{\small INT}:} Let $V=\Span{e^{\lambda_1}x,\dots,e^{\lambda_n}x}$, and define an operator $D\in\Lm{V}$ by $Df = f\apostrophe$.}
@@ -3819,8 +3825,8 @@ Thus $\lambda_1,\dots,\lambda_n$ are distinct eigvals of $D.$ By [5.10], $\Par{e
 \SepLine
 
 \ProblemB{
-	\TextB{Suppose $\lambda_1,\dots,\lambda_n$ are distinct positive numbers.}
-	\TextB{Prove that $\Par{\cos\Par{\lambda_1 x},\dots,\cos\Par{\lambda_n x}}$ is linely inde in $\Rbb^{\Rbb}.$}
+	\hypertarget{5A4e36}{}\TextB{Suppose $\lambda_1,\dots,\lambda_n$ are distinct positive numbers.}
+	\TextB{Prove that $\BigPar{\cos\Par{\lambda_1 x},\dots,\cos\Par{\lambda_n x}}$ is linely inde in $\Rbb^{\Rbb}.$}
 }\par\quad
 Let $V=\Span{\cos\Par{\lambda_1 x},\dots,\cos\Par{\lambda_n x}}.$ Define $D\in\Lm{V}$ by $Df=f\apostrophe.$\par\quad
 Then because $D\Par{\cos\Par{\lambda_k x}}=-\lambda_k\sin\Par{\lambda_k x}.$ 又 $D\Par{\sin\Par{\lambda_k x}}=\lambda_k\cos\Par{\lambda_k x}.$\par\quad
@@ -3832,13 +3838,13 @@ And then $\Par{\cos\Par{\lambda_1 x},\dots,\cos\Par{\lambda_n x}}$ is linely ind
 \SepLine
 
 \ProblemB{
-	\TextB{Suppose $V$ is finite-dim, $T\in\Lm{V}$, and $U$ is a subsp of \,$V$ invar under $T$.}
+	\hypertarget{5A4e38}{}\TextB{Suppose $V$ is finite-dim, $T\in\Lm{V}$, and $U$ is a subsp of \,$V$ invar under $T$.}
 	\TextB{The quotient operator $T/U\in\Lm{V/U}$ is defined by}
 	\TextB{\centerline{$\Par{T/U}\Par{v + U} = Tv + U$ for each $v\in V$.}}
 	(a) \TextB{Show that the definition of $T/U$ makes sense}
 	\Ha\TextB{( which requires using the condition that $U$ is invar under $T$ )}
 	\Ha\TextB{and show that $T/U$ is an operator on $V/U$.}
-	(b) {\normalsize (O{\footnotesize R} Problem 35)} \TextB{ Show that each eigval of $T/U$ is an eigval of $T$.}
+	(b) \Sbra{{\normalsize\OR \Onumber{\hypertarget{5A35}{35}}\,}} \TextB{Show that each eigval of $T/U$ is an eigval of $T$.}
 }\par\quad
 (a) Suppose $v+U=w+U\,\Par{\,\Longleftrightarrow v-w\in U\,}.$\par\quad\Ha
 Then because $U$ is invar under $T,$ $T\Par{v-w}\in U\Longleftrightarrow Tv+U=Tw+U.$\par\quad\Ha
@@ -3854,7 +3860,7 @@ Note that $v-w\neq 0\,\Par{$ for if not, $v\in U\Rightarrow v+U=0+U$ is not an e
 \par
 \SepLine
 
-\ProblemN{36}{
+\ProblemN{\hypertarget{5A36}{36}}{
 	\TextNL{Prove or give a counterexample:}
 	\TextNL{The result of {\large(b)} in Exercise 35 is still true if $V$ is infinite-dim.}
 }A counterexample:\par\quad
@@ -3865,14 +3871,14 @@ $\Rightarrow 0$ is an eigval of $T/U$ but is not an eigval of $T$.\par\quad
 ( $\null T=\zeroSubs,$ for if not, $\exists\,f\in V\backslash\zeroSubs,\Par{Tf}\Par{x}=e^{x}f\Par{x}=0,\forall x\in\Rbb\Rightarrow f=0,$ contradicts. )\PfEnd
 \SepLine
 
-\ProblemN{33}{
+\ProblemN{\hypertarget{5A33}{33}}{
 	\TextNL{Suppose $T\in\Lm{V}.$ Prove that $T/\Par{\range T}=0.$}
 }\par\quad
 $\forall v+\range T\in V/\range T,v+\range T\in\null\Par{T/\Par{\range T}}$\par\quad
 $\Rightarrow\null\Par{T/\Par{\range T}}=V/\range T\Rightarrow T/\Par{\range T}$ is a zero map.\PfEnd
 \SepLine
 
-\ProblemN{34}{
+\ProblemN{\hypertarget{5A34}{34}}{
 	\TextNL{Suppose $T\in\Lm{V}.$ Prove that $T/\Par{\null T}$ is inje $\Longleftrightarrow$ $\Par{\null T}\cap\Par{\range T}=\zeroSubs.$}
 }\par\quad
 (a) Suppose $T/\Par{\null T}$ is inje.\par\quad\Ha
@@ -3907,12 +3913,13 @@ $\lceil$注：[8.40]\qquad\, \OR (4E 5.22)\qquad ——\,mini poly;\par\qquad\qq
 [8.49]\qquad\, \OR (4E 5.27)\qquad ——\,eigvals are the zeros of the mini poly;\par\qquad\qquad\qquad\quad\,\,\,\,
 [8.46]\qquad\, \OR (4E 5.29)\qquad ——\,$q\Par{T} = 0$ $\Leftrightarrow$ $q$ is a poly multi of the mini poly.$\rfloor$
 }\par\large
-$ \\ $
-[1]: (4E.5.A.33), 13; [2]: (4E.5.B.25, 26, 27, 28, 22); [3]: 6, (4E.5.B.10, 23, 21), 19; [4]: (4E 5.B.13, 14);\par
-[5]: (4E.5.B.20, 24), 10; [6]: 1, 2, 7, 3, (4E.5.A.32); [7]: 8, (4E 5.B.12, 3, 8); [8]: (4E.5.B.11), 5, (4E.5.B.7);\par
-[9]: 11, 12, (4E.5.B.17, 18); [10]: 18 \OR (4E.5.B.15), (4E.5.B.9), (4E.5.B.16); [11]: (2E Ch5.24), (4E.5.B.29).\par
-$\\ $
-\ProblemB{
+
+
+\orMode{\hLk{5BI1}{1}\;\;\hLk{5BI2}{2}\;\;\hLk{5BI3}{3}\;\;\hLk{5BI5}{5}\;\;\hLk{5BI6}{6}\;\;\hLk{5BI7}{7}\;\;\hLk{5BI8}{8}\;\;\hLk{5BI10}{10}\;\;\hLk{5BI11}{11}\;\;\hLk{5BI12}{12}\;\;\hLk{5BI13}{13}\;\;\hLk{5BI18}{18}\;\;\hLk{5BI19}{19}\;\;|\;\;\hLk{5BI2e24}{2E Ch5.24}$\\[-4pt]$\hLk{5A4e32}{4E: 5.A.32,}\;\;\hLk{5A4e33}{5.A.33;}\;\;\hLk{5BI4e3}{3,}\;\;\hLk{5BI4e7}{7,}\;\;\hLk{5BI4e8}{8,}\;\;\hLk{5BI4e9}{9,}\;\;\hLk{5BI4e10}{10,}\;\;\hLk{5BI4e11}{11,}\;\;\hLk{5BI4e12}{12,}\;\;\hLk{5BI4e13}{13,}\;\;\hLk{5BI4e14}{14,}\;\;\hLk{5BI4e15}{15,}$\\[-4pt]$\Blind{4E: }\hLk{5BI4e16}{16,}\;\;\hLk{5BI4e17}{17,}\;\;\hLk{5BI4e18}{18,}\;\;\hLk{5BI4e20}{20,}\;\;\hLk{5BI4e21}{21,}\;\;\hLk{5BI4e22}{22,}\;\;\hLk{5BI4e23}{23,}\;\;\hLk{5BI4e24}{24,}\;\;\hLk{5BI4e25}{25,}\;\;\hLk{5BI4e26}{26,}\;\;\hLk{5BI4e27}{27,}\;\;\hLk{5BI4e28}{28,}\;\;\hLk{5BI4e29}{29.}}[-40pt]{[1]: ; [2]: ; [3]: ; [4]: ; [5]: ; [6]: ; [7]: ; [8]: ; [9]: ; [10]: ; [11]: ; [12]: ; [13]: .}
+
+%[1]: (4E 5.A.33), 13; [2]: (4E 25, 26, 27, 28, 22); [3]: 6, (4E 10, 23, 21), 19; [4]: (4E 13, 14); [5]: (4E 20, 24), 10; [6]: 1, 2, 7, 3, (4E 5.A.32); [7]: 8, (4E 12, 3, 8); [8]: (4E 11), 5, (4E 7); [9]: 11, 12, (4E 17, 18); [10]: 18 \OR (4E 15), (4E 9), (4E 16); [11]: (2E Ch5.24), (4E 29).
+
+\ProblemBnoor{\hypertarget{5A4e33}{4E 5.A.33}}{
 	\TextB{Suppose $T\in\Lm{V}$ and $\,m\,$ is a positive integer.}
 	(a) \TextB{Prove that $T$ is inje $\Longleftrightarrow$ $T^m$ is inje.}
 	(b) \TextB{Prove that $T$ is surj $\Longleftrightarrow$ $T^m$ is surj.}
@@ -3946,21 +3953,13 @@ Suppose $p\in\PoC{}$ is a nonzero poly. Then $\deg Tp=\deg p+1,$ and thus $Tp\ne
 Hence $T$ has no eigvals.\par
 \SepLine
 
-\ProblemN{13}{
+\ProblemN{\hypertarget{5BI13}{13}}{
 	\TextNL{Suppose $V$ is a complex vecsp and $T\in\Lm{V}$ has no eigvals.}
 	\TextNL{Prove that every subsp of \,$V$ invar under $T$ is either $\zeroSubs$ or infinite-dim.}
 }Suppose $U$ is a finite-dim nonzero invar subsp on $\Cbb.$ Then by [5.21], $T\mid_U$ has an eigval.\PfEnd
 \SepLine
 
-\BulletPoint \,\hspace{1pt}\Tips\,\, For $T_1,\dots,T_m\in\Lm{V}$:\TextB{}
-(a) Suppose $T_1,\dots,T_m$ are all inje. Then $\Par{T_1\circ\cdots\circ T_m}$ is inje.\TextB{}
-(b) Suppose $\Par{T_1\circ\cdots\circ T_m}$ is not inje. Then at least one of $T_1,\dots,T_m$ is not inje.\TextB{}
-(c) At least one of $T_1,\dots,T_m$ is not inje $\nRightarrow$ $\Par{T_1\circ\cdots\circ T_m}$ is not inje.\TextB{}\Hc
-\Example\,\, On infinite-dim only. Let $V=\Fbb^\infty.$\TextB{}\Hc
-$\MathRightBrace{l}{$ Let $S$ be the backward shift ( surj but not inje )$\\$ Let $T$ be the \,\,\,\,forward shift ( inje but not surj )$}\Rightarrow$ Then $ST=I.$\PfEnd
-\SepLine
-
-\ProblemN{16}{
+\ProblemN{\hypertarget{5BI16}{16}}{
 	\TextNL{Suppose $0\neq v\in V.$ Define $S\in\Lm[\BigPar]{\PoC{\dim V},V}$ by $S\Par{p}=p\Par{T}v.$ Prove $[$ 5.21 $].$}
 }\par\quad
 Because $\dim\PoC{\dim V}=\dim V+1.$ Then $S$ is not inje. Hence $\exists\,0\neq p\in\PoC{\dim V},p\Par{T}v=0.$\par\quad
@@ -3969,7 +3968,7 @@ Thus at least one of $\Par{T-\lambda_j I}$ is not inje ( because $p\Par{T}$ is n
 \SepLine
 
 
-\ProblemN{17}{
+\ProblemN{\hypertarget{5BI17}{17}}{
 	\TextNL{Suppose $0\neq v\in V.$ Define $S\in\Lm[\BigPar]{\PoC{\Par{\dim V}{^2}},\Lm{V}}$ by $S\Par{p}=p\Par{T}.$ Prove [5.21].}
 }\par\quad
 Because $\dim\PoC{\Par{\dim V}^2}=\Par{\dim V}^2+1.$ Then $S$ is not inje. Hence $\exists\,0\neq p\in\PoC{\Par{\dim V}^2},p\Par{T}=0.$\par\quad
@@ -4005,8 +4004,8 @@ Suppose $p,q\in M_T^0$ are of the smallest degree. Then $\Par{p-q}\Par{T}=0.$ �
 Hence $p-q=0,$ for if not, $\exists\,!\,c\in\Fbb,c\Par{p-q}\in M_T^0$. Contradicts.\PfEnd
 \SepLine
 
-\ProblemBnoor{4E 5.31, 4E 5.B.25 and 26}{
-	\TextB{\large\quad mini poly of restriction operator and mini poly of quotient operator}
+\ProblemBnoor{4E 5.31, \hypertarget{5BI4e25}{4E 5.B.25} and \hypertarget{5BI4e26}{26}}{
+	\TextB{\large\; mini poly of restriction operator and mini poly of quotient operator}
 	\TextB{Suppose $V$ is finite-dim, $T\in \Lm{V}$, and $U$ is an invar subsp of \,$V$ under $T$.}
 	\TextB{Let $\,p\,$ be the mini poly of $T.$}
 	(a) \TextB{Prove that $\,p\,$ is a poly multi of the mini poly of $T\mid_U$.}
@@ -4028,7 +4027,7 @@ Hence $\forall v\in V, \Par{rs}\Par{T}v=0\Rightarrow \Par{rs}\Par{T}=0.$\PfEnd\q
 (d) By [8.49], immediately.\PfEnd
 \SepLine
 
-\ProblemBnoor{4E 5.B.27}{
+\ProblemBnoor{\hypertarget{5BI4e27}{4E 5.B.27}}{
 	\TextB{Suppose $\Fbb=\Rbb,$ $V$ is finite-dim, and $T\in \Lm{V}$.}
 	\TextB{Prove that the mini poly $\,p\,$ of $T_{\Cbb}$ equals the mini poly $\,q\,$ of $T$.}
 }\par\quad
@@ -4036,7 +4035,7 @@ Hence $\forall v\in V, \Par{rs}\Par{T}v=0\Rightarrow \Par{rs}\Par{T}=0.$\PfEnd\q
 (b) $q\Par{T}=0\Rightarrow \forall u+\i v\in V_{\Cbb},q\Par{T_{\Cbb}}\Par{u+\i v}=q\Par{T}u+\i q\Par{T}v=0\Rightarrow q$ is a poly multi of $p.$\PfEnd
 \SepLine
 
-\ProblemBnoor{4E 5.B.28}{
+\ProblemBnoor{\hypertarget{5BI4e28}{4E 5.B.28}}{
 	\TextB{Suppose $V$ is finite-dim and $T\in \Lm{V}$.}
 	\TextB{Prove that the mini poly $\,p\,$ of $T\apostrophe \in\Lm{V\apostrophe}$ equals the mini poly $\,q\,$ of $T$.}
 }\par\quad
@@ -4055,7 +4054,7 @@ Hence $0=p\Par{T}=Tq\Par{T}\Rightarrow T$ is not inje.\par\quad
 Conversely, suppose $\Par{T-0I}$ is not inje, then $0$ is a zero of $p$, so that the const term is $0$.\PfEnd
 \SepLine
 
-\ProblemBnoor{4E 5.B.22}{
+\ProblemBnoor{\hypertarget{5BI4e22}{4E 5.B.22}}{
 	\TextB{}
 	\TextB{Suppose $V$ is finite-dim, $T\in \Lm{V}$. Prove that $T$ is inv $\Longleftrightarrow I\in\Span{T, T^2, \dots , T^{\dim V}}.$}
 }Denote the mini poly by $p,$ where for all $z\in\Fbb,p\Par{z}=a_0 +a_1 z+\dots+z^m.$\par\quad
@@ -4063,7 +4062,7 @@ Notice that $V$ is finite-dim. $T$ is inv $\Longleftrightarrow T$ is inje $\Long
 Hence $p\Par{T}=0=a_0 I+a_1 T+\dots+T^m,$ where $a_0\neq 0$ and $m\leqslant\dim V.$\PfEnd
 \SepLine
 
-\ProblemN{6}{
+\ProblemN{\hypertarget{5BI6}{6}}{
 	\TextN{Suppose $T\in\Lm{V}$ and $U$ is a subsp of $V$ invar under $T$.}
 	\TextN{Prove that $U$ is invar under $p\Par{T}$ for every poly $p\in\PoF{}$.}
 }\par\quad
@@ -4071,7 +4070,7 @@ $\forall u\in U,Tu\in U\Rightarrow \forall u\in U,Iu,Tu,T\Par{Tu},\dots,T^m u\in
 \par
 \SepLine
 
-\ProblemBnoor{4E 5.B.10, 5.B.23}{
+\ProblemBnoor{\hypertarget{5BI4e10}{4E 5.B.10}, \hypertarget{5BI4e23}{23}}{
 	\TextB{Suppose $V$ is finite-dim, $T\in \Lm{V}$ and $\,p\,$ is the mini poly with degree $\,m.$ Suppose $v\in V.$}
 	(a) \TextB{Prove that $\,\,\Span{v,Tv,\dots,T^{m-1}v}=\Span{v,Tv,\dots,T^{j-1} v}$ for some $j\leqslant m.$}
 	(b) \TextB{Prove that $\,\,\Span{v,Tv,\dots,T^{m-1}v}=\Span{v, Tv, \dots , T^{m-1} v,\dots,T^n v}.$}
@@ -4086,7 +4085,7 @@ Thus $U_0=\Span{v,Tv,\dots,T^{j-1} v,\dots,T^n v}$ for all $n\geqslant j-1.$ Let
 By (a), $U=U_0=\Span{v,Tv,\dots,T^{j-1},\dots,T^{m-1},\dots,T^n}$ for all $n\geqslant m-1.$\PfEnd
 \SepLine
 
-\ProblemBnoor{4E 5.B.21}{
+\ProblemBnoor{\hypertarget{5BI4e21}{4E 5.B.21}}{
 	\TextB{Suppose $V$ is finite-dim and $T\in \Lm{V}$.}
 	\TextB{Prove that the mini poly $\,p\,$ has degree at most $1 + \dim \range T$.}
 	\TextB{\large If $\dim \range T < \dim V - 1$, then this result gives a better upper bound for the degree of mini poly.}
@@ -4097,7 +4096,7 @@ Let $W=\range q\Par{T}=\range T.$ $\exists$ monic $s\in\PoF{}$ of smallest degre
 Hence $sq$ is the mini poly ( see \NOTEFOR [8.40] ) and $\deg\Par{sq}=\deg s+\deg q\leqslant\dim\range T+1.$\PfEnd
 \SepLine
 
-\ProblemN{19}{
+\ProblemN{\hypertarget{5BI19}{19}}{
 	\TextNL{Suppose $V$ is finite-dim and $T\in \Lm{V}$. Let $\mathcal{E} =\Bra{q\Par{T}: q \in \PoF{}}$.}
 	\TextNL{Prove that $\dim \mathcal{E}$ equals the degree of the mini poly of $T$.}
 }\par\quad
@@ -4119,7 +4118,7 @@ Hence $\mathcal{E}$ and $\PoF{m-1}$ are iso. 又 $\dim\PoF{m-1}=m=\dim U.
 $\PfEnd
 \SepLine
 
-\ProblemBnoor{4E 5.B.13}{
+\ProblemBnoor{\hypertarget{5BI4e13}{4E 5.B.13}}{
 	\TextB{Suppose $T\in \Lm{V}$ and $q \in \PoF{}$ is defined by}
 	\TextB{\centerline{$q\Par{z}=a_0 +a_1 z+\dots+a_n z^n,$ where $a_n\neq 0,$ for all $z\in\Fbb.$}}
 	\TextB{Denote the mini poly of $T$ by $\,p\,$ defined by}
@@ -4147,7 +4146,7 @@ And $f\Par{T}=s\Par{T}+b_{n+1}\Par{k_0+k_1 T+\dots+k_{m-1}T^{m-1}}$\par\quad\Hii
 $\Rightarrow f\Par{T}=\Par{d_0+k_0}+\Par{d_1+k_1}z+\dots+\Par{d_{m-1}+k_{m-1}}z^{m-1}=h\Par{T},$ thus defining $h.$\PfEnd
 \SepLine
 
-\ProblemBnoor{4E 5.B.14}{
+\ProblemBnoor{\hypertarget{5BI4e14}{4E 5.B.14}}{
 	\TextB{Suppose $V$ is finite-dim, $T\in \Lm{V}$ has mini poly $\,p\,$}
 	\TextB{\centerline{defined by $p\Par{z}=a_0 + a_1 z + \dots + a_{m-1} z^{m-1}+z^m,$ $a_0\neq 0.$}}
 	\TextB{Find the mini poly of $T^{-1}$.}
@@ -4165,18 +4164,18 @@ Thus $f$ defined by $\displaystyle f\Par{z}=z^k+\frac{b_1}{b_0} z^{k-1}+\dots+\f
 While $\deg f<\deg p.$ Contradicts.\PfEnd
 \SepLine
 
-\BulletPoint \,\hspace{1pt}\NoteFor{[8.49]}\TextB{}
+\BulletPoint \,\hspace{1pt}\NoteForSmall{[8.49]}\TextB{}
 \TextB{Suppose $V$ is a finite-dim complex vecsp and $T\in\Lm{V}.$}
 \TextB{By [4.14], the mini poly has the form $\Par{z -\lambda_1 } \cdots \Par{z - \lambda_m}$,}
 {\tgsl\large where $\lambda_1,\dots,\lambda_m$ is a list of all eigvals of $T$, {\tgsc possibly with repetitions}.}\par
 \BulletPoint \,\hspace{1pt}\Comment\TextB{}
 \TextB{A nonzero poly has at most as many distinct zeros as its degree ( see [4.12] ).}
 \TextB{Thus by the upper bound for the deg of mini poly given in \NOTEFOR [8.40], and by [8.49,]}
-\TextB{we can {\tgsc give an alternative proof of [5.13]}}.
+\TextB{we can {\tgsc give an alternative proof of [5.13]}.}
 \SepLine
 
 \ProblemB[]{
-	\NOTICE \BigPar{ See also 4E 5.B.20,24 }\TextB{}
+	\NOTICE \BigPar{\hypertarget{5BI4e20}{}\hypertarget{5BI4e24}{} See also 4E 5.B.20,24 }\TextB{}
 	\TextB{\tgnr Suppose $\alpha_1,\dots,\alpha_n$ are all the distinct eigvals of $T,$\vspace{2pt}}
 	\TextB{\tgnr and therefore are all the distinct zeros of the mini poly.\vspace{2pt}}
 	\TextB{\tgnr Also, the mini poly of $T$ is a poly multi of, but not equal to, $\Par{z-\alpha_1}\cdots\Par{z-\alpha_n}$.\vspace{2pt}}
@@ -4188,7 +4187,7 @@ While $\deg f<\deg p.$ Contradicts.\PfEnd
 }
 \SepLine
 
-\ProblemN{10}{
+\ProblemN{\hypertarget{5BI10}{10}}{
 	\TextNL{Suppose $T\in\Lm{V},\lambda$ is an eigval of $T$ with an eigvec $v.$}
 	\TextNL{Prove that for any $p\in\PoF{},p\Par{T}v=p\Par{\lambda}v.$}
 }\par\quad
@@ -4211,7 +4210,7 @@ $=q_1\Par{\lambda}\Par{q_2\Par{\lambda}\Par{\dots\Par{q_m\Par{\lambda}v}\dots}}$
 $=\Par{\lambda-\lambda_1}^{\alpha_1}\cdots\Par{\lambda-\lambda_m}^{\alpha_m}v.$\PfEnd
 \SepLine
 
-\ProblemN{1}{
+\ProblemN{\hypertarget{5BI1}{1}}{
 	\TextN{Suppose $T\in\Lm{V}$ and $\exists\,n\in\Nbp$ such that $T^n=0.$}
 	\TextN{Prove that $\Par{I-T}$ is inv and $\Par{I-T}{^{-1}}=I+T+\dots+T^{n-1}.$}
 }\par\quad
@@ -4221,7 +4220,7 @@ $\MathRightBrace{l}{
 \Par{1+T+\dots+T^{n-1}}\Par{I-T}=I-T^n=I}\Rightarrow$ $\Par{I-T}{^{-1}}=1+T+\dots+T^{n-1}.$\PfEnd
 \SepLine
 
-\ProblemN{2}{
+\ProblemN{\hypertarget{5BI2}{2}}{
 	\TextN{Suppose $T\in\Lm{V}$ and $\Par{T - 2I}\Par{T - 3I}\Par{T - 4I} = 0$.}
 	\TextN{Suppose $\lambda$ is an eigval of $T$. Prove that $\lambda = 2$ or $\lambda = 3$ or $\lambda = 4$.}
 }\par\quad
@@ -4230,7 +4229,7 @@ Hence $0=\Par{T - 2I}\Par{T - 3I}\Par{T - 4I}v=\Par{\lambda-2}\Par{\lambda-3}\Pa
 \Or Because $\Par{T-2I}\Par{T-3I}\Par{T-4I}=0$ is not inje. By \TIPS.\PfEnd
 \SepLine
 
-\ProblemNnoor{7}{See 5.A.22}{
+\ProblemNnoor{\hypertarget{5BI7}{7}}{See \hLk{5A22}{5.A.22}}{
 	\TextN{Suppose $T\in\Lm{V}$. Prove that $9$ is an eigval of $T^2$ $\Longleftrightarrow$ $3$ or $-3$ is an eigval of $T$.}
 }\par\quad
 (a) Suppose $9$ is an eigval of $T^2.$ 
@@ -4240,7 +4239,7 @@ Then $\Par{T^2-9I}v=\Par{T-3I}\Par{T+3I}v=0$ for some $v.$ By \TIPS.\par\Ha\quad
 \par
 \SepLine
 
-\ProblemN{3}{
+\ProblemN{\hypertarget{5BI3}{3}}{
 	\TextN{Suppose $T\in\Lm{V},T^2=I$ and $-1$ is not an eigval of $T.$ Prove that $T=I.$}
 }\par\quad
 $T^2-I=\Par{T+I}\Par{T-I}$ is not inje, 又 $-1$ is not an eigval of $T$ $\Rightarrow$ By \TIPS.\PfEnd\vspace{6pt}\quad
@@ -4254,7 +4253,7 @@ $\MathRightBrace{l}{
 Hence $V=\null\Par{I-T}\Rightarrow\range\Par{I-T}=\zeroSubs.$ Thus $I-T=0\in\Lm{V}\Rightarrow T=I.$\PfEnd
 \SepLine
 
-\ProblemBnoor{4E 5.A.32}{
+\ProblemBnoor{\hypertarget{5A4e32}{4E 5.A.32}}{
 	\TextB{Suppose $T\in\Lm{V}$ has no eigvals and $T^4 = I$. Prove that $T^2=-I$.}
 }\par\quad
 Because $T^4-I=\Par{T^2-I}\Par{T^2+I}=0$ is not inje $\Rightarrow \Par{T^2-I}$ or $\Par{T^2+I}$ is not inje.\par\quad
@@ -4271,7 +4270,7 @@ $\MathRightBrace{l}{
 Hence $V=\null\Par{I+T^2}\Rightarrow\range\Par{I+T^2}=\zeroSubs.$ Thus $I+T^2=0\in\Lm{V}\Rightarrow T^2=-I.$\PfEnd
 \SepLine
 
-\ProblemNor{8}{4E 5.A.31}{
+\ProblemNor{\hypertarget{5BI8}{8}}{4E 5.A.31}{
 	\TextN{Give an example of $T\in\Lm{\Rbb^2}$ such that $T^4=-I$.}
 }\par\quad
 $\displaystyle T^4+1=\Par{T^2+\i I}\Par{T^2-\i I}=\Par{T+\i^{1/2}I}\Par{T-\i^{1/2}I}\Par{T-\Par{-\i}^{1/2}I}\Par{T+\Par{-\i}^{1/2}I}.$\par\quad
@@ -4296,7 +4295,7 @@ $\Par{\begin{array}{l}$ Using \small$\begin{pmatrix}
 \end{pmatrix}.$\large $\end{array}}$\par
 \SepLine
 
-\ProblemBnoor{4E 5.B.12 See also at 5.A.9}{
+\ProblemBnoor{\hypertarget{5BI4e12}{4E 5.B.12}. See also at \hLk{5A9}{5.A.9}}{
 	\TextB{}
 	\TextB{Define $T\in\Lm{\Fbb^n}$ by $T\Par{x_1 , x_2 , x_3 , \dots , x_n } = \Par{x_1 , 2x_2 , 3x_3 , \dots , nx_n }$. Find
 the mini poly.}
@@ -4310,14 +4309,14 @@ where $\Par{e_1,\dots,e_n}$ is the standard basis. Thus $\forall v\in\Fbb^n,q\Pa
 \SepLine
 
 \ProblemB{
-	\TextB{Suppose $n\in\Nbp$. Define $T\in\Lm{\Fbb^n}$ by $T\Par{x_1,\dots,x_n}=\Par{x_1+\dots+x_n,\dots,x_1+\dots+x_n}.$}
-	[ {\tgsl See also at }(5.A.19) ] \TextB{Find the mini poly of $T$.}\par
+	\hypertarget{5BI4e3}{}\TextB{Suppose $n\in\Nbp$. Define $T\in\Lm{\Fbb^n}$ by $T\Par{x_1,\dots,x_n}=\Par{x_1+\dots+x_n,\dots,x_1+\dots+x_n}.$}
+	[ {\tgsl See also at }(\hLk{5A19}{5.A.19}) ] \TextB{Find the mini poly of $T$.}\par
 }\par\quad
 Because $n$ and $0$ are all eigvals of $T$, 又 For all $e_k,T e_k=e_1+\dots+e_n;\quad T^2 e_k=n \Par{e_1+\dots+e_n}.$\par\quad
 Hence $T^2 e_k=n\Par{T e_k}\Rightarrow T^2=n T\Rightarrow T^2-n T=T\Par{T-n}.$ Thus $z\Par{z-n}$ is the mini poly of $T.$\PfEnd
 \SepLine
 
-\ProblemBnoor{4E 5.B.8}{
+\ProblemBnoor{\hypertarget{5BI4e8}{4E 5.B.8}}{
 	\TextB{}
 	\TextB{Suppose $T\in\Lm{\Rbb^2}$ is the operator of counterclockwise rotation by $\theta$, where $\theta\in\Rbb^+$.}
 	\TextB{Find the mini poly of $T$.}
@@ -4338,15 +4337,13 @@ Hence $p\Par{T}=T^2-2\cos\theta\, T+I=0$ and $z^2-2\cos\theta\, z+1$ is the mini
 Hence the mini poly is $z\pm 1$ or $z^2-2\cos\theta\,z+1.$\PfEnd
 \SepLine
 
-\ProblemBnoor{4E 5.B.11}{
+\ProblemBnoor{\hypertarget{5BI4e11}{4E 5.B.11}}{
 	\TextB{Suppose $V$ is a two-dim vecsp, $T\in\Lm{V}$, and the matrix of $T$}
 	\TextB{with resp to some basis of \,$V$ is {\large$\begin{pmatrix} a & c\\ b & d\end{pmatrix}.$}}
 	(a) \TextB{Show that $T^2 - \Par{a + d}T + \Par{ad - bc}I = 0.$}
 	(b) \TextB{Show that the mini poly of $T$ equals}
 	\TextB{\large\envFontDefault\centerline{$\MathLeftBrace{l}{z-a\qquad\qquad\qquad\qquad\qquad$ if $b=c=0$ and $a=d$,$\\ z^2-\Par{a+d}z+\Par{ad-bc}\quad$ \,\,otherwise.$}$}}
-}
-\par
-
+}\par\quad
 (a) Suppose the basis is $\Par{v,w}$. Because $\MathLeftBrace{l}{\displaystyle Tv=av+bw\Rightarrow \Par{T-aI}v=bw,$ then apply $\Par{T-dI}$ to both sides. $\\ Tw=cv+dw\Rightarrow \Par{T-dI}w=cv,$ then apply $\Par{T-aI}$ to both sides. $}$\par\vspace{6pt}\quad\Ha
 Hence $\Par{T-aI}\Par{T-dI}=bc I\Rightarrow T^2 - \Par{a + d}T + \Par{ad - bc}I = 0.$\par\quad
 (b) If $b=c=0$ and $a=d.$ Then $\Mt{T}=${\small$\begin{pmatrix}a & 0\\ 0 & a\end{pmatrix}$}$=a\Mt{I}$. Thus $T=aI.$ Hence the mini poly is $z-a.$\par\quad\Hb
@@ -4357,18 +4354,21 @@ Now we prove that $T\not\in\Span{I},$ so that then the mini poly of $T$ has exac
 (II) Suppose at most one of $b,c$ is not $0.$ If $b=0,$ then $Tw\not\in\Span{w};$ If $c=0,$ then $Tv\not\in\Span{v}.$\PfEnd
 \SepLine
 
-\ProblemN{5}{
+\ProblemN{\hypertarget{5BI5}{5}}{
 	\TextN{Suppose $S,T\in\Lm{V},S$ is inv, and $p\in\PoF{}$. Prove that $p\Par{TS} = S^{-1} p\Par{ST}S.$}
 }\par\quad
 We prove $\Par{TS}^m=S^{-1}\Par{ST}^m S$ for each $m\in\Nbb\,$ by induction.\par\quad
 (i) $m=0,1.$ $TS^0=I=S^{-1}\Par{ST}{^0}S;\,\,\,TS=S^{-1}\Par{ST}S.$\par\quad\Endi
 (ii) $m>1.$ Assume that $\Par{TS}^m=S^{-1}\Par{ST}^m S.$\par\quad\Hii\qquad\quad\hspace{-1.5pt}
 Then $\Par{TS}^{m+1}=\Par{TS}^m\Par{TS}=S^{-1}\Par{ST}^m STS=S^{-1}\Par{ST}^{m+1} S.$\par\quad
-Hence $\forall p\in\PoF{},$\vspace{-23.5pt}\par\quad
-\AlignEq{}{\quad p(TS)&=a_0 (TS)^0+a_1 (TS)+\dots+a_m (TS)^m\\&=a_0 [S^{-1}(ST)^0 S]+a_1 [S^{-1}(ST)S]+\dots+a_m [S^{-1}(ST)^m S]\\&=S^{-1}[a_0 (ST)^0+a_1 (ST)+\dots+a_m (ST)^m]S\\&=S^{-1}p(ST)S.}\PfEnd
+Hence $\forall p\in\PoF{},$\vspace{-24.5pt}\par\quad
+\AlignEq{}{
+	p(TS)&=a_0 (TS)^0+a_1 (TS)+\dots+a_m (TS)^m\\
+	&=a_0 [S^{-1}(ST)^0 S]+a_1 [S^{-1}(ST)S]+\dots+a_m [S^{-1}(ST)^m S]\hspace{-20pt}\\
+	&=S^{-1}[a_0 (ST)^0+a_1 (ST)+\dots+a_m (ST)^m]S\\&=S^{-1}p(ST)S.}\PfEnd
 \SepLine
 
-\ProblemBnoor{4E 5.B.7}{
+\ProblemBnoor{\hypertarget{5BI4e7}{4E 5.B.7}}{
 	\TextB{}
 	(a) \TextB{Give an example of $S, T\in\Lm{\Fbb^2}$ such that}
 	\Ha\TextB{the mini poly of
@@ -4392,7 +4392,7 @@ $}\Rightarrow p=q.$\par\vspace{6pt}\quad\Hb
 Reversing the roles of $S$ and $T$, we conclude that if $T$ is inv, then $p=q$ as well.\PfEnd
 \SepLine
 
-\ProblemN{11}{
+\ProblemN{\hypertarget{5BI11}{11}}{
 	\TextNL{Suppose $\Fbb = \Cbb,$ $T\in\Lm{V}, p\in\PoC{}$, and $\alpha\in\Cbb.$}
 	\TextNL{Prove that $\alpha$ is an eigval of $p\Par{T}$ $\Longleftrightarrow$ $\alpha = p\Par{\lambda}$ for some eigval $\lambda$ of $T$.}
 }\par\quad
@@ -4405,7 +4405,7 @@ Because $q\Par{T}v=\BigPar{p\Par{T}-\alpha I}v=q\Par{\lambda}v=\BigPar{p\Par{\la
 Hence $q\Par{T}$ is not inje $\Rightarrow \BigPar{p\Par{T}-\alpha I}$ is not inje.\PfEnd
 \SepLine
 
-\ProblemNor{12}{4E.5.B.6}{
+\ProblemNor{\hypertarget{5BI12}{12}}{4E.5.B.6}{
 	\TextNL{Give an example of an operator on $\Rbb^2$}
 	\TextNL{that shows the result above does not hold if $\Cbb$ is replaced with $\Rbb$.}
 }\par\quad
@@ -4415,7 +4415,7 @@ Define $p$ by $p\Par{z}=z^2.$ Then $p\Par{T}=T^2=-I.$ Thus $p\Par{T}$ has eigval
 While $\nexists\,\lambda\in\Rbb$ such that $-1=p\Par{\lambda}=\lambda^2.$\PfEnd
 \SepLine
 
-\ProblemBnoor{4E 5.B.17}{
+\ProblemBnoor{\hypertarget{5BI4e17}{4E 5.B.17}}{
 	\TextB{Suppose $V$ is finite-dim, $T\in \Lm{V},\lambda\in\Fbb$, and $\,p\,$ is the mini poly of $T$.}
 	\TextB{Show that the mini poly of $\Par{T - \lambda I}$ is the poly $q$ defined by $q\Par{z} = p\Par{z + \lambda}.$}
 }\par\quad
@@ -4429,7 +4429,7 @@ $m$ is the smallest such that $T^m\in\Span{I,T,\dots,T^{m-1}}.$\par\quad
 Thus $n=m.$ 又 $q$ is monic. By the uniqnes of mini poly.\PfEnd
 \SepLine
 
-\ProblemBnoor{4E 5.B.18}{
+\ProblemBnoor{\hypertarget{5BI4e18}{4E 5.B.18}}{
 	\TextB{Suppose $V$ is finite-dim, $T\in \Lm{V},\lambda\in\Fbb\backslash\zeroSubs$, and $\,p\,$ is the mini poly of $T$.}
 	\TextB{Show that the mini poly of $\lambda T$ is the poly q defined by $q\Par{z} = \lambda^{\deg p} p\Par{\frac{z}{\lambda}}$.}
 }\par\quad
@@ -4442,7 +4442,7 @@ $m$ is the smallest such that $T^m\in\Span{I,T,\dots,T^{m-1}}.$\par\quad
 Thus $n=m.$ 又 $q$ is monic. By the uniqnes of mini poly.\PfEnd
 \SepLine
 
-\ProblemNor{18}{4E 5.B.15}{
+\ProblemNor{\hypertarget{5BI18}{18}}{\hypertarget{5BI4e15}{4E 5.B.15}}{
 	\TextNL{Suppose $V$ is a finite-dim complex vecsp with $\dim V > 0$ and $T\in\Lm{V}$.}
 	\TextNL{Define $f:\Cbb\rightarrow\Rbb$ by $f\Par{\lambda} = \dim \range\Par{T-\lambda I}$.}
 	\TextNL{Prove that $f$ is not a continuous function.}
@@ -4453,7 +4453,7 @@ And $\lambda_n$ is not an eigval of $T$ for each $n\Rightarrow\dim\range\Par{T-\
 Thus $f\Par{\lambda_0}\neq \lim\limits_{n\rightarrow\infty}f\Par{\lambda_n}.$\PfEnd
 \SepLine
 
-\ProblemBnoor{4E 5.B.9}{
+\ProblemBnoor{\hypertarget{5BI4e9}{4E 5.B.9}}{
 	\TextB{Suppose $T\in\Lm{V}$ is such that with resp to some basis of \,$V$,}
 	\TextB{all entries of the matrix of $T$ are rational numbers.}
 	\TextB{Explain why all coefficients of the mini poly of $T$ are rational numbers.}
@@ -4474,7 +4474,7 @@ Hence we get a system of $n^2$ linear equations in $m$ unknowns $c_0,c_1,\dots,c
 We conclude that $c_0,c_1,\dots,c_{m-1}\in\Qbb.$\PfEnd
 \SepLine
 
-\ProblemBnoor{\OR (4E 5.B.16), \OR (8.C.18)}[\Sbra]{
+\ProblemBnoor{\OR (\hypertarget{5BI4e16}{4E 5.B.16}), \OR (8.C.18)}[\Sbra]{
 	\TextB{Suppose $a_0 ,\dots, a_{n-1}\in\Fbb.$ Let $T$ be the operator on $\Fbb^n$ such that\vspace{2pt}}
 	\TextB{$\Mt{T}=\,${\normalsize$\begin{pmatrix}
 	0 &   &        &  &   & -a_0     \\
@@ -4532,7 +4532,7 @@ Our induction hypothesis now implies that $T\mid_{\range\Par{T^2 + bT + cI}}$ ha
 By mathematical induction.\PfEnd
 \SepLine
 
-\ProblemBnoor{2E Ch5.24}{
+\ProblemBnoor{\hypertarget{5BI2e24}{2E Ch5.24}}{
 	\TextB{Suppose $\Fbb=\Rbb,T\in\Lm{V}$ has no eigvals.} \TextB{Prove that every invar subsp of \,$V$ under $T$ is even-dim.}
 }\par\quad
 Suppose $U$ is such a subsp. Then $T\mid_U\in\Lm{U}.$
@@ -4540,7 +4540,7 @@ We prove by contradiction.\par\quad
 If $\dim U$ is odd, then $T\mid_U$ has an eigval and so is $T,$ so that $\exists$ invar subsp of $1$ dim, contradicts.\PfEnd
 \SepLine
 
-\ProblemBnoor{4E 5.B.29}{
+\ProblemBnoor{\hypertarget{5BI4e29}{4E 5.B.29}}{
 	\TextB{Show that every operator on a finite-dim vecsp of dim $\geq 2$ has a $2$-dim invar subsp.}
 }\par\quad
 Using induction on $\dim V.$\par\quad
@@ -4555,15 +4555,15 @@ By assumption, $T\mid_{\null q\Par{T}}$ has an invar subsp of dim $2.$\PfEnd
 \ChEnd
 
 % 6h
-\ChDecl{Ch5BII}{5.B: II}{}
+\ChDecl{Ch5BII}{5.B: II}{}\orMode{\hLk{5BII9}{9}\;\;\hLk{5BII14}{14}\;\;\hLk{5BII15}{15}\;\;\hLk{5BII20}{20}\;\;|\;\;\hLk{5BII4e1}{4E: 1,}\;\;\hLk{5BII4e2}{2,}\;\;\hLk{5BII4e3}{3,}\;\;\hLk{5BII4e4}{4,}\;\;\hLk{5BII4e5}{5,}\;\;\hLk{5BII4e6}{6,}\;\;\hLk{5BII4e7}{7,}\;\;\hLk{5BII4e8}{8,}\;\;\hLk{5BII4e9}{9,}\;\;\hLk{5BII4e10}{10}\;\;\hLk{5BII4e11}{11,}\;\;\hLk{5BII4e12}{12,}\;\;\hLk{5BII4e13}{13,}\;\;\hLk{5BII4e14}{14}}{[1]: ; [2]: ; [3]: .}
 
-\ProblemBnoor{4E 5.C.1}{
+\ProblemBnoor{\hypertarget{5BII4e1}{4E 5.C.1}}{
 	\TextB{Prove or give a counterexample:}
 	\TextB{If $T\in \Lm{V}$ and $T^2$ has an upper-trig matrix, then $T$ has an upper-trig matrix.}
 }\par
 \SepLine
 
-\ProblemBnoor{4E 5.C.2}{
+\ProblemBnoor{\hypertarget{5BII4e2}{4E 5.C.2}}{
 	\TextB{Suppose $A$ and $B$ are upper-trig matrices of the same size,}
 	\TextB{with $\alpha_1 , \dots , \alpha_n$ on the diag of $A$ and $\beta_1 , \dots , \beta_n$ on the diag of $B$.}
 	(a) \TextB{Show that $A + B$ is an upper-trig matrix with $\alpha_1 + \beta_1 , \dots , \alpha_n + \beta_n$ on the diag.}
@@ -4571,7 +4571,7 @@ By assumption, $T\mid_{\null q\Par{T}}$ has an invar subsp of dim $2.$\PfEnd
 }\par
 \SepLine
 
-\ProblemBnoor{4E 5.C.3}{
+\ProblemBnoor{\hypertarget{5BII4e3}{4E 5.C.3}}{
 	\TextB{}
 	\TextB{Suppose $T\in \Lm{V}$ is inv and $B=\Par{v_1 , \dots , v_n}$ is a basis of \,$V$ such that}
 	\TextB{$\Mt{T,B}=A$ is upper trig, with $\lambda_1 , \dots , \lambda_n$ on the diag.}
@@ -4580,23 +4580,22 @@ By assumption, $T\mid_{\null q\Par{T}}$ has an invar subsp of dim $2.$\PfEnd
 }\par
 \SepLine
 
-\ProblemNnoor{9}{4E 5.C.7}{
-	\TextN{}
+\ProblemNnoor{\hypertarget{5BII9}{9}}{\hypertarget{5BII4e7}{4E 5.C.7}}{
 	\TextN{Suppose $V$ is finite-dim, $T\in \Lm{V}$, and $v \in V$.}
 	(a) \TextN{Prove that $\exists\,!$ monic poly $p_v$ of smallest degree such that $p_v \Par{T}v = 0$.}
 	(b) \TextN{Prove that the mini poly of $T$ is a poly multi of $p_v$.}
-}\par
+}
 \SepLine
 
 
-\ProblemNor{14}{4E 5.C.4}{
+\ProblemNor{\hypertarget{5BII14}{14}}{\hypertarget{5BII4e4}{4E 5.C.4}}{
 	\TextNL{ Give an operator $T$ such that with resp to some basis,}
 	\TextNL{$\Mt{T}_{k,k}=0$ for each $k$, while $T$ is inv.}
 }
 \par
 \SepLine
 
-\ProblemNor{15}{4E 5.C.5}{
+\ProblemNor{\hypertarget{5BII15}{15}}{\hypertarget{5BII4e5}{4E 5.C.5}}{
 	\TextNL{Give an operator $T$ such that with resp to some basis,}
 	\TextNL{$\Mt{T}_{k,k}\neq 0$ for each $k$, while $T$ is not inv.}
 }\par
@@ -4605,14 +4604,14 @@ By assumption, $T\mid_{\null q\Par{T}}$ has an invar subsp of dim $2.$\PfEnd
 \par
 \SepLine
 
-\ProblemN{20}{
-	({\normalsize \OR 4E 5.C.6})\TextNL{}
+\ProblemNor{\hypertarget{5BII20}{20}}{\normalsize \OR \hypertarget{5BII4e6}{4E 5.C.6}}{
+	\TextNL{}
 	\TextNL{Suppose $\Fbb=\Cbb,$ $V$ is finite-dim, and $T\in\Lm{V}$.}
 	\TextNL{Prove that if $k\in\Bra{1,\dots,\dim V},$ then \,$V$ has a $k$ dim subsp invar under $T$.}
 }\par
 \SepLine
 
-\ProblemBnoor{4E 5.C.8}{
+\ProblemBnoor{\hypertarget{5BII4e8}{4E 5.C.8}}{
 	\TextB{Suppose $V$ is finite-dim, $T\in \Lm{V}$, and $\exists\,v \in V\backslash\zeroSubs$ such that $T^2 v + 2Tv = -2v$.}
 	(a) \TextB{Prove that if $\Fbb=\Rbb,$ then $\nexists$ a basis of \,$V$ with resp to which $T$ has an upper-trig matrix.}
 	(b) \TextB{Prove that if $\Fbb=\Cbb$ and $A$ is an upper-trig matrix that equals the matrix of $T$}
@@ -4620,7 +4619,7 @@ By assumption, $T\mid_{\null q\Par{T}}$ has an invar subsp of dim $2.$\PfEnd
 }\par
 \SepLine
 
-\ProblemBnoor{4E 5.C.9}{
+\ProblemBnoor{\hypertarget{5BII4e9}{4E 5.C.9}}{
 	\TextB{Suppose $B\in\Fbb^{n,n}$ with complex entries.}
 	\TextB{Prove that $\exists$ inv $A\in\Fbb^{n,n}$ with complex entries such that $A^{-1} BA$ is an upper-trig matrix.}
 }\par
@@ -4628,7 +4627,7 @@ By assumption, $T\mid_{\null q\Par{T}}$ has an invar subsp of dim $2.$\PfEnd
 \par
 \SepLine
 
-\ProblemBnoor{4E 5.C.10}{
+\ProblemBnoor{\hypertarget{5BII4e10}{4E 5.C.10}}{
 	\TextB{Suppose $T\in \Lm{V}$ and $\Par{v_1,\dots,v_n}$ is a basis of \,$V$.}
 	\TextB{Show that the following are equi.}
 	(a) \TextB{The matrix of $T$ with resp to $\Par{v_1,\dots,v_n}$ is lower trig.}
@@ -4637,13 +4636,13 @@ By assumption, $T\mid_{\null q\Par{T}}$ has an invar subsp of dim $2.$\PfEnd
 }\par
 \SepLine
 
-\ProblemBnoor{4E 5.C.11}{
+\ProblemBnoor{\hypertarget{5BII4e11}{4E 5.C.11}}{
 	\TextB{Suppose $\Fbb=\Cbb$ and $V$ is finite-dim.}
 	\TextB{Prove that if $T\in \Lm{V}$, then $T$ has a lower-trig matrix with resp to some basis.}
 }\par
 \SepLine
 
-\ProblemBnoor{4E 5.C.12}{
+\ProblemBnoor{\hypertarget{5BII4e12}{4E 5.C.12}}{
 	\TextB{}
 	\TextB{Suppose $V$ is finite-dim, $T\in \Lm{V}$ has an upper-trig matrix with resp to some basis,}
 	\TextB{and $U$ is a subsp of \,$V$ that is invar under $T$.}
@@ -4655,7 +4654,7 @@ By assumption, $T\mid_{\null q\Par{T}}$ has an invar subsp of dim $2.$\PfEnd
 \par
 \SepLine
 
-\ProblemBnoor{4E 5.C.13}{
+\ProblemBnoor{\hypertarget{5BII4e13}{4E 5.C.13}}{
 	\TextB{Suppose $V$ is finite-dim, $T\in \Lm{V}$. Suppose $U$ is an invar subsp of \,$V$ under $T$}
 	\TextB{such that $T\mid_U$ has an upper-trig matrix and also $T/U$ has an upper-trig matrix.}
 	\TextB{Prove that $T$ has an upper-trig matrix.}
@@ -4665,7 +4664,7 @@ By assumption, $T\mid_{\null q\Par{T}}$ has an invar subsp of dim $2.$\PfEnd
 \par
 \SepLine
 
-\ProblemBnoor{4E 5.C.14}{
+\ProblemBnoor{\hypertarget{5BII4e14}{4E 5.C.14}}{
 	\TextB{Suppose $V$ is finite-dim and $T\in \Lm{V}$.}
 	\TextB{Prove that $T$ has an upper-trig matrix $\Longleftrightarrow$ $T\apostrophe$ has an upper-trig matrix.}
 }\par
@@ -4685,7 +4684,8 @@ XXXX
 \SepLine
 
 \ChEnd
-\ChDecl{Ch5E}{5.E* (4E)} % 0.5h/4h
+\ChDecl{Ch5E}{5.E* (4E)}{}\orMode{\hLk{5E1}{1}\;\;\hLk{5E2}{2}\;\;\hLk{5E3}{3}\;\;\hLk{5E4}{4}\;\;\hLk{5E5}{5}\;\;\hLk{5E6}{6}\;\;\hLk{5E7}{7}\;\;\hLk{5E8}{8}\;\;\hLk{5E9}{9}\;\;\hLk{5E10}{10}}{}
+% 0.5h/4h
 
 \ProblemN{1}{
 	\TextN{Give an example of two commuting operators $S, T\in\Fbb^4$ such that}
