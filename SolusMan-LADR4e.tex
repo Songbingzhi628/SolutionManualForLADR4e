@@ -204,6 +204,7 @@
 \def\mathC{C}
 \def\apostrophe{\prime}
 \def\BulletPoint{{\small\bullet}}
+\def\BulletPointX{\BulletPoint \,\hspace{1pt}}
 \def\bullpt{{\tiny\bullet}}
 
 \def\OR{{\large O{\footnotesize R} }}
@@ -403,7 +404,7 @@ $\MathRightBrace{r}{
 	2[\text{\tgbf{I}}]-[\text{\tgbf{II}}]:\qquad\qquad\hspace{-1pt} \cos x=\cos\Par{x+p}}\Rightarrow$ Let $x=0,$\;\,$ p=\displaystyle\frac{m\pi}{\sqrt{2}}=2k\pi.$\; Contradicts.\PfEnd\vspace{10pt}\par
 \SepLine[10pt]
 
-\BulletPoint \,\hspace{1pt}\Largesl{Suppose $U,W,V_1,V_2,V_3$ are subsps of $V.$}\par
+\BulletPointX\Largesl{Suppose $U,W,V_1,V_2,V_3$ are subsps of $V.$}\par
 \Onumber{\hypertarget{1C15}{15}} \centerline{\large\tgnr$U+U\ni u+w\in U.$\qquad\qquad\!}\PfEnd
 \Onumber{\hypertarget{1C16}{16}} \centerline{\large\tgnr$U+W\ni u+w=w+u\in W+U.$}\PfEnd
 \Onumber{\hypertarget{1C17}{17}} \centerline{\large\tgnr\envFontDefault$\Par{V_1+V_2}+V_3\ni\Par{v_1+v_2}+v_3=v_1+\Par{v_2+v_3}\in V_1+\Par{V_2+V_3}.$}\PfEnd
@@ -652,7 +653,7 @@ Let $V=\Rbb^4$ and $e_j$ be the $j^\text{th}$ standard basis.\par\quad
 Let $v_1=e_1,v_2=e_2,v_3=e_3+e_4,v_4=e_4.$ Then $\Par{v_1,\dots,v_4}$ is a basis of $\Rbb^4.$\par\quad
 Let $U=\Span{e_1,e_2,e_3}=\Span{v_1,v_2,v_3-v_4}.$ Then $v_3\not\in U$ and $\Par{v_1,v_2}$ is not a basis of $U.$\PfEnd\SepLine
 
-\BulletPoint \,\hspace{1pt}\NoteForSmall{\Large $“\complement_V U \cap \zeroSubs”$}\TextB{}
+\BulletPointX\NoteForSmall{\Large $“\complement_V U \cap \zeroSubs”$}\TextB{}
 $“\complement_V U \cap \zeroSubs”$ is supposed to be a subsp $W$ such that $V=U\oplus W$.\TextB{}
 But if we let $u\in U\backslash\zeroSubs$ and $w\in W\backslash\zeroSubs$, then $\MathRightBrace{l}{w\in\complement_V U \cap \zeroSubs\\ u\pm w\in\complement_V U \cap \zeroSubs }\Rightarrow u\in\complement_V U \cap \zeroSubs.$ Contradicts.\vspace{4pt}\TextB{}
 To fix this, {\Large\envFontLarge denote the set $\Bra{W_1,W_2\dots}$ by $\mathcal{S}_V U$,} {\small where for each $W_i,V=U\oplus W_i$. See also in (1.C.23).}\par\SepLine
@@ -704,7 +705,7 @@ $\Rightarrow \Par{a_1 u_1+\dots+a_m u_m}=-\Par{b_1 w_1+\dots+b_n w_n}\in U\cap W
 %$\Rightarrow$ By the uniqnes of $c_i$ and [2.29], $\Par{v_1,\dots,v_n}$ is a basis of $V_\Cbb.$\PfEnd
 %\SepLine
 
-\BulletPoint \,\hspace{1pt}\NoteFor{\tgsl linely inde sequence and [2.34]}\TextB{}
+\BulletPointX\NoteFor{\tgsl linely inde sequence and [2.34]}\TextB{}
 $“V=\Span{v_1,\dots,v_n,\dots}”$ is an invalid expression.\TextB{}
 If we allow using $“$infinite list$”$, then we must guarantee that $\Par{v_1,\dots,v_n,\dots}$ is a spanning $“$list$”$\TextB{}
 such that for all $v\in V$, there exists a smallest positive integer $n$ such that $v=a_1 v_1+\dots+a_n v_n$,\TextB{}
@@ -805,7 +806,7 @@ Then $\hMath[0pt]{r}{\left|}{\right\}}{
 (c) Let $W=\Span{z,z^2}=\Bra{az+bz^2:a,b\in\Fbb}$, so that $\PoF{4}=U\oplus W.$\PfEnd
 \SepLine
 
-\BulletPoint \,\hspace{1pt}\Tips\vspace{-30pt}\TextB{}
+\BulletPointX\Tips\vspace{-30pt}\TextB{}
 $$\Par{1}\;\Dim\Par{V_1\cap V_2\cap V_3}=\dim V_1+\dim V_2+\dim V_3-\Dim\Par{V_2+V_3}-\Dim\BigPar{V_1+\Par{V_2\cap V_3}}.\vspace{-46pt}$$\TextB{}
 $$\Par{2}\;\Dim\Par{V_1\cap V_2\cap V_3}=\dim V_1+\dim V_2+\dim V_3-\Dim\Par{V_1+V_3}-\Dim\BigPar{V_2+\Par{V_1\cap V_3}}.\vspace{-46pt}$$\TextB{}
 $$\Par{3}\;\Dim\Par{V_1\cap V_2\cap V_3}=\dim V_1+\dim V_2+\dim V_3-\Dim\Par{V_1+V_2}-\Dim\BigPar{V_3+\Par{V_1\cap V_2}}.\vspace{-6pt}$$\TextB{}
@@ -824,7 +825,7 @@ And $\Dim\Par{V_2\cap V_3}=\dim V_2+\dim V_3-\Dim\Par{V_2+V_3}.$\par
 (b) By \TIPS, $\Dim\Par{V_1\cap V_2\cap V_3}>2\dim V-\Dim\Par{V_2+V_3}-\Dim\Par{V_1+\Par{V_2\cap V_3}}\geq 0.$\PfEnd
 \SepLine
 
-%\BulletPoint \,\hspace{1pt}\Comment\TextB{}
+%\BulletPointX\Comment\TextB{}
 %{Suppose $V_1,\dots,V_m$ are subsets of $V$, with each $\left|V_i\right|>\frac{\left|V\right|}{2},$ and $V_j\cap V_k\neq\emptyset$ for each $j\neq k.$}\TextB{}
 %{We can give an example such that $\bigcap\limits_{i=1}^m V_i=\emptyset:\;m=3,V=\Bra{1,2,4},V_1=\Bra{1,2},V_2=\Bra{2,4},V_3=\Bra{4,1}.$}\TextB{}
 %{Suppose $V_1,\dots,V_m$ are subsps of $V$, with each $\dim V_i=\left\lceil{\frac{\dim V}{2}}\right\rceil,$ and $V_j\cap V_k\neq\zeroSubs$ for each $j\neq k.$}\TextB{}
@@ -881,7 +882,7 @@ Because $\Par{V_1+V_2}+V_3=V_1+\Par{V_2+V_3}=\Par{V_1+V_3}+V_2$.\par\quad
 Notice that in general, $\Par{X+Y}\cap Z\neq X\cap Z+Y\cap Z$.\par\quad
 For example, $X=\Bra{\Par{x,0}\in\Rbb^2:x\in\Rbb},Y=\Bra{\Par{0,y}\in\Rbb^2:y\in\Rbb},Z=\Bra{\Par{z,z}\in\Rbb^2:z\in\Rbb}$.\par
 {\,}\par
-\BulletPoint \,\Corollary \,\,\,\Largesl{Suppose $V_1,V_2$ and $V_3$ are finite-dim vecsps, then} {\small $\displaystyle\frac{\Par{1}+\Par{2}+\Par{3}}{3}:$
+\BulletPointX\Corollary \,\,\,\Largesl{Suppose $V_1,V_2$ and $V_3$ are finite-dim vecsps, then} {\small $\displaystyle\frac{\Par{1}+\Par{2}+\Par{3}}{3}:$
 }\par
 \AlignEq{\IndentB\,}{\Dim\Par{V_1+V_2+V_3}=\dim &\,V_1+\dim V_2+\dim V_3\\&-\displaystyle\frac{\Dim\Par{V_1\cap V_2}+\Dim\Par{V_1\cap V_3}+\Dim\Par{V_2\cap V_3}}{3}\\&-\displaystyle\frac{\Dim\BigPar{\Par{V_1+V_2}\cap V_3}+\Dim\BigPar{\Par{V_1+V_3}\cap V_2}+\Dim\BigPar{\Par{V_2+V_3}\cap V_1}}{3}.}\TextB{}
 {\tgsl The formula above may seem strange because the right side does not look like an integer.\PfEnd}\par
@@ -935,11 +936,11 @@ Then let $B_V=\Par{u_1-u_k,\dots,u_m-u_k,u_{m+1},\dots,u_k,\dots,u_n}.$\PfEnd
 
 \vspace{8pt}
 
-\BulletPoint \hspace{1pt}\,\Tips\,\,\, {\tgsl$T:V\rightarrow W$ is linear $\Longleftrightarrow\MathLeftrightMid{l}{\hspace{-4pt}$
+\BulletPointX\Tips\,\,\, {\tgsl$T:V\rightarrow W$ is linear $\Longleftrightarrow\MathLeftrightMid{l}{\hspace{-4pt}$
 		(一) $\forall v,u\in V,T\Par{v+u}=Tv+Tu;\\\hspace{-4pt} $
 		(二) $\forall v,u\in V,\lambda\in\Fbb,T\Par{\lambda v}=\lambda\Par{Tv}.$
 		$}\Longleftrightarrow T\Par{v+\lambda u}=Tv+\lambda Tu$.}\par\vspace{6pt}
-\Blind{\BulletPoint \hspace{1pt}\,\Tips\,\,\,} $T\in\Lm{V,W}\Longleftrightarrow T\in\Lm{V,\range T}.$ And $\Bra{T\in\Lm{V,W}:\range T\subseteq U}=\Lm{V,U}.$\par
+\Blind{\BulletPointX\Tips\,\,\,} $T\in\Lm{V,W}\Longleftrightarrow T\in\Lm{V,\range T}.$ And $\Bra{T\in\Lm{V,W}:\range T\subseteq U}=\Lm{V,U}.$\par
 \SepLine
 
 \ProblemB{
@@ -1283,7 +1284,7 @@ By [2.34] \BigPar{ note that $V$ can be infinite-dim }, $\exists$ subsp $U$ of $
 $\forall v\in V,\exists\,!\,w\in\null T,u\in U, v=w+u.$ Then $Tv=T\Par{w+u}=Tu\in\Bra{Tu:u\in U}.$\PfEnd
 \SepLine
 
-\BulletPoint \,\hspace{1pt}\NewNotation\TextB{}
+\BulletPointX\NewNotation\TextB{}
 Suppose $T\in\Lm{V,W}$ and $R=\Par{Tv_1,\dots,Tv_n}$ is linely inde in $\range T$.\TextB{}
 Where $n=\dim\range T$ if finite-dim, otherwise $n\in\Nbp.$\TextB{}
 By (3.A.4), $L=\Par{v_1,\dots,v_n}$ is linely inde in $V$.\TextB{}
@@ -1295,7 +1296,7 @@ Note that if $\range T$ is finite-dim, then $\mathcal{K}_R=\range T$ for any bas
 	that $\forall Tv\in\range T,\exists\,!\,n\in\Nbp,Tv\in\Span{Tv_1,\dots,Tv_n},$ where $\Par{Tv_k}_{k=1}^\infty$ is linely inde.\TextB{\vspace{2pt}}
 	So that $\range T\subseteq\Spn\uwave{\Par{Tv_1,\cdots,Tv_n,\cdots}}.$ This would be invalid, as we have shown before.\TextB{\vspace{2pt}}
 }
-\BulletPoint \,\hspace{1pt}\NewTheorem\,\,\,{\Large$\mathcal{K}_R\in\mathcal{S}_V\null T.$} \qquad\Comment\,\,\,$\null T\in\mathcal{S}_V \mathcal{K}_R$.\TextB{}
+\BulletPointX\NewTheorem\,\,\,{\Large$\mathcal{K}_R\in\mathcal{S}_V\null T.$} \qquad\Comment\,\,\,$\null T\in\mathcal{S}_V \mathcal{K}_R$.\TextB{}
 Suppose $\range T$ is finite-dim. Otherwise, we are done immediately.\par\vspace{6pt}\TextB{}
 (a) $T\BigPar{\sum_{i=1}^n a_i v_i}=0\Rightarrow \sum_{i=1}^n a_i Tv_i=0\Rightarrow a_1=\dots=a_n=0\Rightarrow\mathcal{K}_R\cap\null T=\zeroSubs.$\par\vspace{6pt}\TextB{}
 (b) $\forall v\in V, Tv=\sum_{i=1}^n a_i Tv_i\Rightarrow Tv-\sum_{i=1}^n a_i Tv_i=T\Par{v-\sum_{i=1}^n a_i v_i}=0$\par\vspace{6pt}\TextB{}
@@ -1443,7 +1444,8 @@ $\Rightarrow \left\lfloor\displaystyle\frac{n}{2}\right\rfloor+1\leqslant\displa
 \SepLine
 
 \ProblemN{\hypertarget{3B26}{26}}{
-	\TextNL{Prove that the differentiation map $D\in\PoR{}$ is surj.}
+	\TextNL{Suppose $D\in\Lm[\BigPar]{\PoR{},\PoR{}}$ such that $\forall p\in\PoR{},\Deg\Par{Dp}=\Par{\!\deg p}-1.$}
+	\TextNL{Prove that $D\in\PoR{}$ is surj.}
 }\par\quad
 {\Large[{\tgsl Informal Proof}]}\quad$\left|\begin{array}{l}$Note that $\deg Dx^n=n-1$. Because $\Span{Dx,Dx^2,\dots}\subseteq\range D.\\$\!又 By (2.C.10), $\Span{Dx,Dx^2,\dots}=\Span{1,x,\dots}=\PoR{}.$ $\end{array}\right.$\par\quad
 {\Large[{\tgsl Proper Proof}]\par}\quad
@@ -1522,10 +1524,10 @@ While $w_2=Tv_2=\lambda Sv_2=2\lambda w_2\Rightarrow \lambda=\frac{1}{2}$. Contr
 \ChDecl{Ch3C}{3$\cdot$C}{}\orMode{\hLk{3C1}{1}\;\;\hLk{3C3}{3}\;\;\hLk{3C4}{4}\;\;\hLk{3C5}{5}\;\;\hLk{3C6}{6}\;\;\hLk{3C9}{9}\;\;\hLk{3C10}{10}\;\;\hLk{3C11}{11}\;\;\hLk{3C12}{12}\;\;\hLk{3C13}{13}\;\;\hLk{3C14}{14}\;\;\hLk{3C15}{15}\;\;|\;\;\hLk{3C4e16}{4E: 16,}\;\;\hLk{3C4e17}{17}}{[2]: (4E 17); [3]: (4E 16), 1; [4]: 3, 4, 5, 6; [7]: 10, 9, 11, 13, 14; [8]: 15, 12.}
 \vspace{10pt}
 
-\BulletPoint \,\NoteForSmall{[3.47]}\,\, $LHS=\Par{AC}_{j,k}$=$\sum\limits_{r=1}^n A_{j,r}C_{r,k}=\sum\limits_{r=1}^n \Par{A_{j,\cdot}}_{1,r}\Par{C_{\cdot,k}}_{r,1}=\Par{A_{j,\cdot}C_{\cdot,k}}_{1,1}=A_{j,\cdot}C_{\cdot,k}=RHS$.\par
+\BulletPointX\NoteForSmall{[3.47]}\,\, $LHS=\Par{AC}_{j,k}$=$\sum\limits_{r=1}^n A_{j,r}C_{r,k}=\sum\limits_{r=1}^n \Par{A_{j,\cdot}}_{1,r}\Par{C_{\cdot,k}}_{r,1}=\Par{A_{j,\cdot}C_{\cdot,k}}_{1,1}=A_{j,\cdot}C_{\cdot,k}=RHS$.\par
 \SepLine
 
-\BulletPoint \,\NoteForSmall{[3.48]}\vspace{-5pt}\par\quad
+\BulletPointX\NoteForSmall{[3.48]}\vspace{-5pt}\par\quad
 \AlignEq{}{\begin{pmatrix}
   1 & 2 \\
   3 & 4
@@ -1580,7 +1582,7 @@ Hence $\dim S_r=2$. $\Par{A_{1,\cdot},A_{2,\cdot}}$ is a basis.\par\vspace{6pt}\
 \SepLine
 \pagebreak
 
-\BulletPoint \,\hspace{1pt}\textsc{Column Rank Equals Row Rank}\quad (Using the notation and result above)\TextB{}
+\BulletPointX\textsc{Column Rank Equals Row Rank}\quad (Using the notation and result above)\TextB{}
 For each $A_{j,\cdot}\in S_r,\;A_{j,\cdot}=\Par{CR}_{j,\cdot}=C_{j,1}R=C_{j,1}R_{1,\cdot}+\dots+C_{j,c}R_{c,\cdot}$\TextB{}
 For each $A_{\cdot,k}\in S_c,\;A_{\cdot,k}=\Par{CR}_{\cdot,k}=R_{1,k}C_{\cdot,1}+\dots+R_{c,k}C_{\cdot,c}=\Par{CR}_{\cdot,k}.$\TextB{}
 $\Rightarrow\Span{A_{1,\cdot},\dots,A_{n,\cdot}}=S_r=\Span{R_{1,\cdot},\dots,R_{c,\cdot}}\Rightarrow\dim S_r=r\leqslant c=\dim S_c.$\TextB{}
@@ -1712,19 +1714,19 @@ Let $v_k=\lambda_k^{-1}u_k\neq 0\Rightarrow B_V=\Par{v_1,\dots,v_n}.$ Hence for 
 %\SepLine
 \pagebreak
 
-\BulletPoint \,\NoteForSmall{[3.49]} \vspace{-8pt}\AlignEq{}{&\textstyle\because[\Par{AC}_{\cdot,k}]_{j,1}=\Par{AC}_{j,k}=\sum_{r=1}^n A_{j,r}C_{r,k}=\sum_{r=1}^n A_{j,r}\Par{C_{\cdot,k}}_{r,1}=\Par{AC_{\cdot,k}}_{j,1}\hspace{-50pt}\\&\therefore\Par{AC}_{\cdot,k}=A_{\cdot,\cdot}C_{\cdot,k}=AC_{\cdot,k}}\PfEnd[-25pt]
+\BulletPointX\NoteForSmall{[3.49]} \vspace{-8pt}\AlignEq{}{&\textstyle\because[\Par{AC}_{\cdot,k}]_{j,1}=\Par{AC}_{j,k}=\sum_{r=1}^n A_{j,r}C_{r,k}=\sum_{r=1}^n A_{j,r}\Par{C_{\cdot,k}}_{r,1}=\Par{AC_{\cdot,k}}_{j,1}\hspace{-50pt}\\&\therefore\Par{AC}_{\cdot,k}=A_{\cdot,\cdot}C_{\cdot,k}=AC_{\cdot,k}}\PfEnd[-25pt]
 \SepLine
 
-\BulletPoint \,\Exercise{\hypertarget{3C10}{10}} \vspace{-8pt}\AlignEq{}{&\textstyle\because[\Par{AC}_{j,\cdot}]_{1,k}=\Par{AC}_{j,k}=\sum_{r=1}^n A_{j,r}C_{r,k}=\sum_{r=1}^n \Par{A_{j,\cdot}}_{1,r}C_{r,k}=\Par{A_{j,\cdot}C}_{1,k}\\
+\BulletPointX\Exercise{\hypertarget{3C10}{10}} \vspace{-8pt}\AlignEq{}{&\textstyle\because[\Par{AC}_{j,\cdot}]_{1,k}=\Par{AC}_{j,k}=\sum_{r=1}^n A_{j,r}C_{r,k}=\sum_{r=1}^n \Par{A_{j,\cdot}}_{1,r}C_{r,k}=\Par{A_{j,\cdot}C}_{1,k}\\
 	&\therefore\Par{AC}_{j,\cdot}=A_{j,\cdot}C_{\cdot,\cdot}=A_{j,\cdot}C.}\PfEnd[-26pt]
 \SepLine
 
-\BulletPoint \,\NoteForSmall{\hypertarget{3C9}{}[3.52]}\quad $A\in\Fbb^{m,n},c\in\Fbb^{n,1}\Rightarrow Ac\in\Fbb^{m,1}$\vspace{2pt}\par\quad
+\BulletPointX\NoteForSmall{\hypertarget{3C9}{}[3.52]}\quad $A\in\Fbb^{m,n},c\in\Fbb^{n,1}\Rightarrow Ac\in\Fbb^{m,1}$\vspace{2pt}\par\quad
 $\because\Par{Ac}_{j,1}=\sum_{r=1}^n A_{j,r}c_{r,1}=\BigPar{\sum_{r=1}^n\Par{A_{\cdot,r}c_{r,1}}}{_{j,1}}=\Par{c_1 A_{\cdot,1}+\dots+c_n A_{\cdot,n}}_{j,1}$\vspace{3pt}\par\quad
 $\therefore\,Ac=A_{\cdot,\cdot}c_{\cdot,1}=\sum_{r=1}^n A_{\cdot,r}c_{r,1}=c_1 A_{\cdot,1}+\dots+c_n A_{\cdot,n}$\quad \Or By $\Par{Ac}_{\cdot,1}=Ac_{\cdot,1}$ Using (a) above.\PfEnd
 \SepLine
 
-\BulletPoint \,\Exercise{\hypertarget{3C11}{11}}\quad$a\in\Fbb^{1,n},C\in\Fbb^{n,p}\Rightarrow aC\in\Fbb^{1,p}$\vspace{2pt}\par\quad
+\BulletPointX\Exercise{\hypertarget{3C11}{11}}\quad$a\in\Fbb^{1,n},C\in\Fbb^{n,p}\Rightarrow aC\in\Fbb^{1,p}$\vspace{2pt}\par\quad
 $\because\Par{aC}_{1,k}=\sum_{r=1}^n a_{1,r}C_{r,k}=\BigPar{\sum_{r=1}^n a_{1,r}\Par{C_{r,\cdot}}}{_{1,k}}=\Par{a_1 C_{1,\cdot}+\dots+a_n C_{n,\cdot}}_{1,k}$\vspace{3pt}\par\quad
 $\therefore\,aC=a_{1,\cdot}C_{\cdot,\cdot}=\sum_{r=1}^n a_{1,r}C_{r,\cdot}=a_1 C_{1,\cdot}+\dots+a_n C_{n,\cdot}$\quad \Or By $\Par{aC}_{1,\cdot}=a_{1,\cdot}C$. Using (b) above.\PfEnd
 \SepLine
@@ -1988,7 +1990,7 @@ Define $T,S\in\Lm{\Fbb^{n,1},\Fbb^{n,1}}$ by $Tx=Ax,Sx=Bx$ for all $x\in\Fbb^{n,
 Thus $AB=I\Leftrightarrow A\Par{Bx}=x\Longleftrightarrow T\Par{Sx}=x\Leftrightarrow TS=I\Longleftrightarrow ST=I\Longleftrightarrow \Mt{S}\Mt{T}=BA=I.$\PfEnd
 \SepLine[10pt]
 
-\BulletPoint \,\hspace{1pt}\NoteFor{[3.60]}\;\;Suppose $B_V=\Par{v_1,\dots,v_n},\;B_W=\Par{w_1,\dots,w_m}$.\TextB{\vspace{10pt}}
+\BulletPointX\NoteFor{[3.60]}\;\;Suppose $B_V=\Par{v_1,\dots,v_n},\;B_W=\Par{w_1,\dots,w_m}$.\TextB{\vspace{10pt}}
 {Define $E_{i,j}\in\Lm{V,W}$ by $E_{i,j}\Par{v_x}=\delta_{i,x} w_j;$\quad See (3.A.12).\quad} \Corollary\,\,\, \envFontLarge{\Large$E_{l,k}E_{i,j}=\delta_{j,l}E_{i,k}.$}\TextB{}
 {\Large Denote \envFontLarge$\Mt{E_{i,j}}$ by $\mathcal{E}^{\SmallPar[1pt]{j,i}}.$ And $\BigPar{\mathcal{E}^{\SmallPar[1pt]{j,i}}}_{l,k}=\MathLeftBrace{l}{0,\quad i\neq k\,\vee\,j\neq l\\1,\quad i=k\,\wedge\,j=l}$}\TextB{\vspace{6pt}}
 \envFontLarge{\Large Because $\Lm{V,W}$ and $\Fbb^{m,n}$ are iso. And $T=\Mneg\Mt{T};\;\;E_{i,j}=\Mneg\mathcal{E}^{\SmallPar[1pt]{j,i}}$.}\TextB{}
@@ -2070,7 +2072,7 @@ Thus $\null \mathcal{A}\,=\,\Spn${\normalsize$\begin{pmatrix} \underset{,}{R_{1,
 Hence (a) $\dim\null \mathcal{A}=n\times\Par{n-m};$\quad (b) $\dim\range \mathcal{A}=n\times m.$\PfEnd
 \SepLine\pagebreak
 
-\BulletPoint \,\hspace{1pt}\Comment\,\,\, {\Large\vspace{6pt}Define $\mathcal{B}\in\Lm[\BigPar]{\Lm{V}}$ by $\mathcal{B}\Par{T}=TS.$ Similarly to Problem ($\circ$),}\par\quad
+\BulletPointX\Comment\,\,\, {\Large\vspace{6pt}Define $\mathcal{B}\in\Lm[\BigPar]{\Lm{V}}$ by $\mathcal{B}\Par{T}=TS.$ Similarly to Problem ($\circ$),}\par\quad
 (a) \envFontLarge{\Large\vspace{3pt}$\forall T\in\Lm{V},TS=0\Longleftrightarrow\range S\subseteq\null T.$}\par\quad\Ha
 {\Large\vspace{6pt}Thus $\null\mathcal{B}=\Bra{T\in\Lm{V}:\range S\subseteq\null T}=\Bra{T\in\Lm{V}:T\mid_{\range S}=0}.$}\par\quad
 (b) {\Large\vspace{3pt}$\forall R\in\Lm{V},\null S\subseteq\null R\Longleftrightarrow\exists\,T\in\Lm{V},R=TS,$ by (3.B.24).}\par\quad\Hb
@@ -2378,7 +2380,7 @@ $v_1+U=v_2+U\Longleftrightarrow\Par{v_1-v_2}\in U\Longleftrightarrow S\BigPar{\P
 	{Suppose $U$ is a subsp of $V.$ If $U=\zeroSubs,$ then $v+U=v+\zeroSubs=\Bra{v},V/U=V/\zeroSubs=\Bra{\Bra{v}:v\in V}.$}\TextB{}
 }\SepLine
 
-\BulletPoint \,\hspace{1pt}\NoteFor{[3.88, 3.90, 3.91]} {\vspace{2pt}Suppose $W\in\mathcal{S}_V U.$ Then $V/U$ and $W$ are iso.}\TextB{}
+\BulletPointX\NoteFor{[3.88, 3.90, 3.91]} {\vspace{2pt}Suppose $W\in\mathcal{S}_V U.$ Then $V/U$ and $W$ are iso.}\TextB{}
 {\vspace{2pt}For any $W\in\mathcal{S}_V U,$ because $V=U\oplus W,\;\forall v\in V,\exists\,!\,u_v\in U,w_v\in W$ such that $v=u_v+w_v.$}\TextB{}
 {\vspace{2pt}Define $T\in\Lm{V,W}$ by $T\Par{v}=w_v.$ Hence $\null T=U,\,\,\range T=W.$}\TextB{}
 {\vspace{2pt}Then $\tilde{T}\in\Lm{V/\null T,W}$ is defined by $\tilde{T}\Par{v+U}=Tv=w_v.$}\TextB{}
@@ -3006,27 +3008,27 @@ Because $\exists\,!\,\alpha_i\geqslant 1,q\in\PoF{},$ and $q\neq 0,$ such that $
 	\TextB{\large\envFontDefault\NOTICE that by [4.17], some term of the poly factorization might not in the form $\Par{x-\lambda_k}{^{\alpha_k}}.$\vspace{-6pt}}
 }\SepLine
 
-\BulletPoint \,\hspace{1pt}\NoteFor{[4.7]} {\tgsl the uniqness of coeffs of polys} \hfill[{\tgsc Another proof}]\TextB{\vspace{2pt}}
+\BulletPointX\NoteFor{[4.7]} {\tgsl the uniqness of coeffs of polys} \hfill[{\tgsc Another proof}]\TextB{\vspace{2pt}}
 If a poly had two different sets of coeffs, then
 subtracting the two representations\TextB{}
 would give a poly with some nonzero coeffs but infinitely many zeros. By \TIPS.\PfEnd\vspace{-3pt}
 \SepLine
 
-\BulletPoint \,\hspace{1pt}\NoteFor{[4.8]} {\tgsl division algorithm for polys} \hfill[{\tgsc Another proof}]\TextB{\vspace{4pt}}
+\BulletPointX\NoteFor{[4.8]} {\tgsl division algorithm for polys} \hfill[{\tgsc Another proof}]\TextB{\vspace{4pt}}
 Suppose $\deg p\geqslant \deg s$. Then $\XPar{\underbrace{1, z,\dots, z^{\deg s-1}}_{\text{of\,length}\,\deg s},\underbrace{s,zs,\cdots,z^{\deg p-\deg s}s}_{\text{of\,length}\,\Par{\deg p-\deg s+1}}}$ is a basis of $\PoF{\deg p}.$\TextB{}
 Because $q\in\PoF{},\exists\,!\,a_i,b_j\in\Fbb,$\TextB{}
 $q=a_0+a_1 z+\dots+a_{\deg s-1}z^{\deg s-1}+ b_0 s+b_1 zs +\dots+ b_{\deg p-\deg s}z^{\deg p-\deg s}s$\TextB{}
 $=\underbrace{a_0+a_1 z+\dots+a_{\deg s-1}z^{\deg s-1}}_{r}+s\underbrace{\XPar{b_0+b_1 z +\dots+ b_{\deg p-\deg s}z^{\deg p-\deg s}}}_{q}.$ Note that $r,q$ are unique.\PfEnd[-16pt]
 \SepLine
 
-\BulletPoint \,\hspace{1pt}\NoteFor{[4.11]}\;\;{\tgsl each zero of a poly corresponds to a degree-one factor;}\hfill[{\tgsc Another proof}]\TextB{\vspace{2pt}}
+\BulletPointX\NoteFor{[4.11]}\;\;{\tgsl each zero of a poly corresponds to a degree-one factor;}\hfill[{\tgsc Another proof}]\TextB{\vspace{2pt}}
 First suppose $p\Par{\lambda}=0.$ Write $p\Par{z}=a_0+a_1 z+\dots+a_m z^m,\exists\,!\,a_0,a_1,\dots,a_m\in\Fbb$ for all $z\in\Fbb.$\vspace{2pt}\TextB{}
 Then $p\Par{z}=p\Par{z}-p\Par{\lambda}=a_1\Par{z-\lambda}+\dots+a_m\Par{z^m-\lambda^m}$ for all $z\in\Fbb.$\vspace{2pt}\TextB{}
 Hence $\forall k\in\Bra{1,\dots,m},z^k-\lambda^k=\Par{z-\lambda}\Par{ z^{k-1}\lambda^0+ z^{k-2}\lambda^1+\dots+z^{k-\Par{j+1}}\lambda^j+\dots+z\lambda^{k-2}+z^0\lambda^{k-1}}.$\vspace{4pt}\TextB{}
 Thus $p\Par{z}=\sum_{j=1}^m a_j \Par{z-\lambda}\sum_{i=1}^k \lambda^{i-1}z^{k-i}=\Par{z-\lambda}\sum_{j=1}^m a_j\sum_{i=1}^k \lambda^{i-1}z^{k-i}=\Par{z-\lambda}q\Par{z}.$\PfEnd
 \SepLine
 
-\BulletPoint \,\hspace{1pt}\NoteFor{[4.13]}\;\;{\tgsl Every nonconst poly with complex coefficients has a zero in $\Cbb$.} \vspace{2pt}\hfill[{\tgsc Another proof}]\TextB{}
+\BulletPointX\NoteFor{[4.13]}\;\;{\tgsl Every nonconst poly with complex coefficients has a zero in $\Cbb$.} \vspace{2pt}\hfill[{\tgsc Another proof}]\TextB{}
 For any $w\in\Cbb,k\in\Nbp,$ by polar coordinates, $\exists\,r\geqslant 0,\theta\in\Rbb,r\Par{\cos\theta + \i \sin\theta} = w$.\vspace{2pt}\TextB{}
 By De Moivre' theorem, $w^k=\Sbra{r\Par{\cos\theta +\i\sin \theta}}{^k}=r^k\Par{\cos k\theta + \i \sin k\theta}$.\vspace{2pt}\TextB{}
 Hence $\BigPar{r^{1/k}\Par{\cos\frac{\theta}{k} +\i\sin\frac{\theta}{k}}}{^k}=w$. Thus every complex number has a {\tgsl $k^{th}$ root}.\vspace{6pt}\TextB{}
@@ -3264,19 +3266,19 @@ Because $p{^{\SmallPar{\alpha-1}}}\Par{z}=\XSbra{\mathC_{\alpha-1}^{\alpha-1}\Pa
 \SepLine
 \ChEnd
 
-\ChDecl{Ch5A}{5.A}{}\orMode{\hLk{5A1}{1}\;\;\hLk{5A2}{2}\;\;\hLk{5A3}{3}\;\;\hLk{5A4}{4}\;\;\hLk{5A5}{5}\;\;\hLk{5A6}{6}\;\;\hLk{5A7}{7}\;\;\hLk{5A8}{8}\;\;\hLk{5A9}{9}\;\;\hLk{5A10}{10}\;\;\hLk{5A11}{11}\;\;\hLk{5A12}{12}\;\;\hLk{5A13}{13}\;\;\hLk{5A14}{14}\;\;\hLk{5A15}{15}\;\;\hLk{5A16}{16}\;\;\hLk{5A17}{17}\;\;\hLk{5A18}{18}\;\;\hLk{5A19}{19}\;\;\hLk{5A20}{2}\;\;\hLk{5A21}\;\;\hLk{5A22}{22}\;\;\hLk{5A23}{23}\;\;\hLk{5A24}{24}\;\;\hLk{5A25}{25}\;\;\hLk{5A26}{26}\;\;\hLk{5A27}{27}\;\;\hLk{5A28}{28}$\\[-4pt]$\hLk{5A29}{29}\;\;\hLk{5A30}{30}\;\;\hLk{5A31}{31}\;\;\hLk{5A32}{32}\;\;\hLk{5A33}{33}\;\;\hLk{5A34}{34}\;\;\hLk{5A35}{35}\;\;\hLk{5A36}{36}\;\;|\;\;\hLk{5A2e20}{2E: Ch5.20}\;\;|\;\;\hLk{5A4e8}{4E 8,}\;\;\hLk{5A4e11}{11,}\;\;\hLk{5A4e15}{15,}\;\;\hLk{5A4e16}{16,}\;\;\hLk{5A4e17}{17,}\;\;\hLk{5A4e36}{36,}\;\;\hLk{5A4e37}{37,}\;\;\hLk{5A4e38}{38,}\;\;\hLk{5A4e39}{39}}[-40pt]{[1]: ; [2]: ; [3]: ; [4]: ;$\\$[5]: ; [6]: ; [7]: ; [8]: ; [9]: ; [10]: ; [11]: .}
+\ChDecl{Ch5A}{5.A}{}\orMode{\hLk{5A1}{1}\;\;\hLk{5A2}{2}\;\;\hLk{5A3}{3}\;\;\hLk{5A4}{4}\;\;\hLk{5A5}{5}\;\;\hLk{5A6}{6}\;\;\hLk{5A7}{7}\;\;\hLk{5A8}{8}\;\;\hLk{5A9}{9}\;\;\hLk{5A10}{10}\;\;\hLk{5A11}{11}\;\;\hLk{5A12}{12}\;\;\hLk{5A13}{13}\;\;\hLk{5A14}{14}\;\;\hLk{5A15}{15}\;\;\hLk{5A16}{16}\;\;\hLk{5A17}{17}\;\;\hLk{5A18}{18}\;\;\hLk{5A19}{19}\;\;\hLk{5A20}{20}\;\;\hLk{5A21}\;\;\hLk{5A22}{22}\;\;\hLk{5A23}{23}\;\;\hLk{5A24}{24}\;\;\hLk{5A25}{25}\;\;\hLk{5A26}{26}\;\;\hLk{5A27}{27}\;\;\hLk{5A28}{28}$\\[-4pt]$\hLk{5A29}{29}\;\;\hLk{5A30}{30}\;\;\hLk{5A31}{31}\;\;\hLk{5A32}{32}\;\;\hLk{5A33}{33}\;\;\hLk{5A34}{34}\;\;\hLk{5A35}{35}\;\;\hLk{5A36}{36}\;\;|\;\;\hLk{5A2e20}{2E: Ch5.20}\;\;|\;\;\hLk{5A4e8}{4E 8,}\;\;\hLk{5A4e11}{11,}\;\;\hLk{5A4e15}{15,}\;\;\hLk{5A4e16}{16,}\;\;\hLk{5A4e17}{17,}\;\;\hLk{5A4e36}{36,}\;\;\hLk{5A4e37}{37,}\;\;\hLk{5A4e38}{38,}\;\;\hLk{5A4e39}{39}}[-40pt]{[1]: ; [2]: ; [3]: ; [4]: ;$\\$[5]: ; [6]: ; [7]: ; [8]: ; [9]: ; [10]: ; [11]: .}
 
 \vspace{10pt}
 %[1]: 31; [2]: 1, 2, 3, 15, 21; [3]: 23, (2E Ch5.20), (4E 37), 4, 5; [4]: 6, (4E 17, 18) \OR 16, (4E 15); [5]: 7, 8, (4E 8), 22, 9, 10; [6]: 11, 12, 14, 30, 13, (4E 11); [7]: 17, (4E 16), 18; [8]: 19, 20, 24; [9]: 25, 26, 27, 28; [10]: (4E 39), 29; [11]: 32, (4E 35), (4E 38) \OR 35, 36; [12] 32, 34.
 
-\BulletPoint \,\hspace{1pt}\NoteForSmall{[5.6]}\TextB{}
+\BulletPointX\NoteForSmall{[5.6]}\TextB{}
 More generally, suppose we do not know whether $V$ is finite-dim. We show that $(a)\Longleftrightarrow(b).$\TextB{}
 Suppose (a) $\lambda$ is an eigval of $T$ with an eigvec $v.$ Then $\Par{T-\lambda I}v=0.$\TextB{}
 Hence we get (b), $\Par{T-\lambda I}$ is not inje. And then (d), $\Par{T-\lambda I}$ is not inv.\TextB{}
 But $\Par{d}\Rightarrow(b)$ fails, because $S$ is not inv $\Longleftrightarrow S$ is not inje \OR $S$ is not surj.\par
 \SepLine
 
-%\BulletPoint \,\hspace{1pt}\NoteFor{[5.10]} {\normalsize linely inde eigvecs}\TextB{}
+%\BulletPointX\NoteFor{[5.10]} {\normalsize linely inde eigvecs}\TextB{}
 %\TextB{Suppose $T\in\Lm{V}.$ Prove that every list of eigvecs of $T$ correspd to distinct eigvals is linely inde.}
 %\Solution \Or Another Proof.\TextB{}
 %Suppose the desired result is false. Then ( $m\neq 1$ because eigvecs are nonzero )\TextB{}
@@ -3288,7 +3290,7 @@ But $\Par{d}\Rightarrow(b)$ fails, because $S$ is not inv $\Longleftrightarrow S
 %\SepLine
 
 
-\BulletPoint \,\hspace{1pt}\Tips \,\,\,For $T_1,\dots,T_m\in\Lm{V}$:\TextB{}
+\BulletPointX\Tips \,\,\,For $T_1,\dots,T_m\in\Lm{V}$:\TextB{}
 (a) Suppose $T_1,\dots,T_m$ are all inje. Then $\Par{T_1\circ\cdots\circ T_m}$ is inje.\TextB{}
 (b) Suppose $\Par{T_1\circ\cdots\circ T_m}$ is not inje. Then at least one of $T_1,\dots,T_m$ is not inje.\TextB{}
 (c) At least one of $T_1,\dots,T_m$ is not inje $\nRightarrow$ $\Par{T_1\circ\cdots\circ T_m}$ is not inje.\TextB{}\Hc
@@ -3625,17 +3627,13 @@ Now we show that if $\left|\lambda\right|\neq n\max\!\Bra{\aMid{A_{j,k}}:1\leqsl
 \SepLine
 
 \ProblemN{\hypertarget{5A18}{18}}{
-	\TextNL{Show that the forward shift operator $T\in\Lm{\Fbb^\infty}$}
-	\TextNL{defined by $T\Par{z_1,z_2,\dots} = \Par{0, z_1,z_2,\dots}$ has no eigvals.}
+	\TextNL{Define the forward shift operator $T\in\Lm{\Fbb^\infty}$ by $T\Par{z_1,z_2,\dots} = \Par{0, z_1,z_2,\dots}.$}
+	\TextNL{Show that $T$ has no eigvals.}
 }\par\quad
 Suppose $\lambda$ is an eigval of $T$ with an eigvec $\Par{z_1,z_2,\dots}.$\par\quad
-Then $T\Par{z_1,z_2,\dots}=\Par{\lambda z_1,\lambda z_2,\dots}=\Par{0,z_1,z_2,\dots}.$\par\quad
-Thus $\lambda z_1=0,\lambda z_2=z_1,\dots,\lambda z_k=z_{k-1},\dots$\,.\par\quad
-Let $\lambda=0,$ then $\lambda z_2=z_1=0=\lambda z_k=z_{k-1},$ therefore $\Par{z_1,z_2,\dots}=0$ is not an eigvec.\par\quad
-Suppose $\lambda\neq 0$. Then $\lambda z_1=0\Rightarrow z_1=0\Rightarrow z_2=0=z_k$ for all $k\in\Nbp.$\par\quad
-And then $\Par{z_1,z_2,\dots}=0$ is not an eigvec.
-Hence $T$ has no eigvals.\PfEnd
-\par
+Then $T\Par{z_1,z_2,\dots}=\Par{\lambda z_1,\lambda z_2,\dots}=\Par{0,z_1,z_2,\dots}.$ Thus $\lambda z_1=0,\lambda z_k=z_{k-1}.$\par\quad
+If $\lambda=0,$ then $\lambda z_2=z_1=0=\dots=z_k\Rightarrow\Par{z_1,z_2,\dots}=0\Longrightarrow0$ is not an eigval.\par\quad
+If $\lambda\neq 0,$ then $\lambda z_1=0\Rightarrow z_1=\dots=z_k=0\Longrightarrow\lambda$ is not an eigval. Now no $\lambda\in\Fbb$ is an eigval.\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{5A19}{19}}{
@@ -3654,19 +3652,14 @@ And the set of all eigvecs of $T$ is $\Bra{\Par{x_1,\dots,x_n}\in\Fbb^n:x_1+\dot
 \SepLine
 
 \ProblemN{\hypertarget{5A20}{20}}{
-	\TextNL{Define the backward shift operator $S\in\Lm{\Fbb^\infty}$ by $S\Par{z_1,z_2,z_3,\dots} = \Par{z_2,z_3,\dots}$.}
-	(a) \TextNL{Show that every element of $\Fbb$ is an eigval of $S$.}
-	(b) \TextNL{Find all eigvecs of $S$.}
+	\TextNL{Define the backward shift operator $S\in\Lm{\Fbb^\infty}$ by $S\Par{z_1,z_2,z_3,\dots} = \Par{z_2,z_3,\dots}.$\vspace{4pt}}
+	(a) \TextNL{Show that every element of $\Fbb$ is an eigval of $S;\;\;$ {\tgnr\large(b)} Find all eigvecs of $S$.}
 }\par\quad
 Suppose $\lambda$ is an eigval of $S$ with an eigvec $\Par{z_1,z_2,\dots}.$\par\quad
-Then $S\Par{z_1,z_2,z_3\dots}=\Par{\lambda z_1,\lambda z_2,\dots}=\Par{z_2,z_3,\dots}.$\par\quad
-Thus $\lambda z_1=z_2,\lambda z_2=z_3,\dots,\lambda z_k=z_{k+1},\dots$\,.\par\quad
-For $\lambda=0,$ $\lambda z_1=z_2=0=\lambda z_2=z_3=\dots=z_k$ for all $k.$\par\quad
-While $z_1$ can be arbitrary, so that $\Par{z_1,0,\dots}$ is an eigvec with $z_1\neq 0.$\par\quad
-For $\lambda\neq 0,$ $\lambda^k z_1=\lambda^{k-1} z_2=\dots=\lambda z_k=z_{k+1}$ for all $k.$\par\quad
-Then $\Par{z_1,\lambda z_1,\lambda^2 z_1,\dots,\lambda^k z_1,\dots}$ is an eigvec with $z_1\neq 0.$\par\quad
-Hence (a) each element of $\lambda\in\Fbb$ is an eigval of $T.$\par\quad
-And (b) the set of all eigvecs of $T$ is $\Bra{\Par{z_1,\lambda z_1,\lambda^2 z_1,\dots,\lambda^k z_1,\dots}\in\Fbb^\infty:\lambda\in\Fbb,z_1\neq 0}$\PfEnd
+Then $S\Par{z_1,z_2,\dots}=\Par{\lambda z_1,\lambda z_2,\dots}=\Par{z_2,z_3,\dots}.$ Thus for each $k\in\Nbp,\lambda z_k=z_{k+1}.$\par\quad
+If $\lambda=0,$ then $\lambda z_1=z_2=\dots=z_k=0$ for all $k,$ while $z_1$ can be nonzero. Thus $0$ is an eigval.\par\quad
+If $\lambda\neq 0,$ then $\lambda^k z_1=\lambda^{k-1} z_2=\dots=\lambda z_k=z_{k+1},$ let $z_1\neq 0\Longrightarrow\Par{1,\lambda,\lambda^2,\dots,\lambda^k,\dots}$ is an eigvec.\par\quad
+Now each $\lambda\in\Fbb$ is an eigval of $T,$ with the correspd eigvecs in $\Span[\BigPar]{\Par{1,\lambda,\lambda^2,\dots,\lambda^k,\dots}}.$\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{5A24}{24}}{
@@ -3937,7 +3930,7 @@ Suppose $T$ is inje. Then $T^m v=T^{m-1}v=\cdots=T^2 v=Tv=v=0.$\par\quad
 Suppose $T$ is surj. Then $\forall u\in V,\exists\,v_1,\dots,v_m\in V, T\Par{v_1}=T^2v_2=\cdots=T^m v_m=u.$\PfEnd
 \SepLine
 
-\BulletPoint \,\hspace{1pt}\NoteFor{[5.17]}\TextB{}
+\BulletPointX\NoteFor{[5.17]}\TextB{}
 \TextB{Suppose $T\in\Lm{V},p\in\PoF{}$. Prove that $\null p\Par{T}$ and $\range p\Par{T}$ are invar under $T$.}
 \Solution Using the commutativity in [5.10].\par\quad
 (a) Suppose $u\in\null p\Par{T}$. Then $p\Par{T}u = 0$.\par\quad\Ha
@@ -3946,7 +3939,7 @@ Thus $p\Par{T}\Par{Tu} = \BigPar{p\Par{T} T}u \Par{Tp\Par{T}}u=T\BigPar{p\Par{T}
 Thus $Tu = T\BigPar{p\Par{T}v} = p\Par{T}\Par{Tv}\in\range p\Par{T}.$\PfEnd
 \SepLine
 
-\BulletPoint \,\hspace{1pt}\NoteFor{[5.21]} \TextB{\large Every operator on a finite-dim nonzero complex vecsp has an eigval.}
+\BulletPointX\NoteFor{[5.21]} \TextB{\large Every operator on a finite-dim nonzero complex vecsp has an eigval.}
 Suppose $V$ is a finite-dim complex vecsp of dim $n > 0$ and $T\in\Lm{V}$.\TextB{}
 Choose a nonzero $v\in V$. $\Par{v,Tv,T^2 v,\dots,T^n v}$ of length $n+1$ is linely depe.\TextB{}
 Suppose $a_0 I+a_1 T+\dots+a_n T^n=0.$ Then $\exists\,a_j\neq 0.$\TextB{}
@@ -3954,7 +3947,7 @@ Suppose $a_0 I+a_1 T+\dots+a_n T^n=0.$ Then $\exists\,a_j\neq 0.$\TextB{}
 Because $\exists\,\lambda \in \Cbb$ such that $p\Par{\lambda} = 0\Rightarrow\exists\,q \in\PoC{},p\Par{z} = \Par{z-\lambda}q\Par{z},\forall z \in\Cbb.$\TextB{}
 Thus $0 = p\Par{T}v = \Par{T -\lambda I}\BigPar{q\Par{T}v}$. By the minimality of $\deg p$ and $\deg q<\deg p$, $q\Par{T}v \neq 0$.\TextB{}
 Then $\Par{T-\lambda I}$ is not inje. Thus $\lambda$ is an eigval of $T$ with eigvec $q\Par{T}v$.\par
-\BulletPoint \,\hspace{1pt}\Example\,\,\, \TextB{\large an operator on a complex vecsp with no eigvals}
+\BulletPointX\Example\,\,\, \TextB{\large an operator on a complex vecsp with no eigvals}
 Define $T\in\Lm[\BigPar]{\PoC{}}$ by $\Par{Tp}\Par{z} = zp\Par{z}$.\TextB{}
 Suppose $p\in\PoC{}$ is a nonzero poly. Then $\deg Tp=\deg p+1,$ and thus $Tp\neq\lambda p,\,\forall\lambda\in\Cbb.$\TextB{}
 Hence $T$ has no eigvals.\par
@@ -3984,7 +3977,7 @@ Thus $\Par{T-\lambda_1 I}\cdots\Par{T-\lambda_m I}=0\Rightarrow\exists\,j,\Par{T
 \Comment\,\,\, $\exists$ monic $q\in\null S\neq \zeroSubs$ of smallest degree, $S\Par{q}=q\Par{T}=0,$ then $q$ is the {\tgsl mini poly.}\par
 \SepLine
 
-\BulletPoint \,\hspace{1pt}\NoteFor{[8.40]} \TextB{\large def for mini poly }
+\BulletPointX\NoteFor{[8.40]} \TextB{\large def for mini poly }
 %{\Large M{\normalsize INIMAL} P{\normalsize OLYNOMIAL}: E{\normalsize XISTENCE}, U{\normalsize NIQUENESS}, D{\normalsize EGREE}}\qquad (Definition For Mini Poly)\par\,\,
 \TextB{Suppose $V$ is finite-dim and $T\in\Lm{V}$.}
 \TextB{Suppose $M_T^0=\Bra{p_j}{_{j\in\Gamma}}$ is the set of all monic poly that give 0 whenever $T$ is applied.}
@@ -4171,11 +4164,11 @@ Thus $f$ defined by $\displaystyle f\Par{z}=z^k+\frac{b_1}{b_0} z^{k-1}+\dots+\f
 While $\deg f<\deg p.$ Contradicts.\PfEnd
 \SepLine
 
-\BulletPoint \,\hspace{1pt}\NoteForSmall{[8.49]}\TextB{}
+\BulletPointX\NoteForSmall{[8.49]}\TextB{}
 \TextB{Suppose $V$ is a finite-dim complex vecsp and $T\in\Lm{V}.$}
 \TextB{By [4.14], the mini poly has the form $\Par{z -\lambda_1 } \cdots \Par{z - \lambda_m}$,}
 {\tgsl\large where $\lambda_1,\dots,\lambda_m$ is a list of all eigvals of $T$, {\tgsc possibly with repetitions}.}\par
-\BulletPoint \,\hspace{1pt}\Comment\TextB{}
+\BulletPointX\Comment\TextB{}
 \TextB{A nonzero poly has at most as many distinct zeros as its degree ( see [4.12] ).}
 \TextB{Thus by the upper bound for the deg of mini poly given in \NOTEFOR [8.40], and by [8.49,]}
 \TextB{we can {\tgsc give an alternative proof of [5.13]}.}
@@ -4500,7 +4493,7 @@ $T^n e_1=\cdots=T^{n-k}e_{1+k}=\cdots=T e_n=-a_0 e_1-a_1 e_2-a_2 e_3-\dots-a_{n-
 $=\Par{-a_0 I-a_1 T-a_2 T^2-\dots-a_{n-1}T^{n-1}}e_1.$ Thus $p\Par{T}e_1=0=p\Par{T}e_j$ for each $e_j=T^{j-1}e_1.$\PfEnd
 \SepLine
 
-\BulletPoint \,\hspace{1pt}{\Large\textsc{Eigenvalues On Odd-Dimensional Real Vector Spaces}}\par
+\BulletPointX{\Large\textsc{Eigenvalues On Odd-Dimensional Real Vector Spaces}}\par
 \ProblemB{
 	\textsc{Even-Dimensional Null Space}\TextB{}
 	\TextB{Suppose $\Fbb=\Rbb,$ $V$ is finite-dim, $T\in\Lm{V}$ and $b, c\in\Rbb$ with $b^2 < 4c$.}
