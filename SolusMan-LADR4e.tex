@@ -2374,15 +2374,17 @@ $v_1+U=v_2+U\Longleftrightarrow\Par{v_1-v_2}\in U\Longleftrightarrow S\BigPar{\P
 }\SepLine\pagebreak
 
 \ProblemBnoor[]{\NoteForSmall{[3.79, 3.83]}}[]{
-	\TextB{}
-	{Suppose $U$ is a subsp of $V.$ If $U=\zeroSubs,$ then $v+U=v+\zeroSubs=\Bra{v},V\mySlash U=V\mySlash \zeroSubs=\Bra{\Bra{v}:v\in V}.$}\TextB{}
+	{If $U=\zeroSubs,$ then $v+U=v+\zeroSubs=\Bra{v},V\mySlash U=V\mySlash \zeroSubs=\Bra{\Bra{v}:v\in V}.$}\TextB{}
 }\SepLine
 
 \BulletPointX\NoteFor{[3.88, 3.90, 3.91]} {\vspace{2pt}Suppose $W\in\mathcal{S}_V U.$ Then $V\mySlash U$ and $W$ are iso.}\TextB{}
 {\vspace{2pt}For any $W\in\mathcal{S}_V U,$ because $V=U\oplus W,\;\forall v\in V,\exists\,!\,u_v\in U,w_v\in W$ such that $v=u_v+w_v.$}\TextB{}
 {\vspace{2pt}Define $T\in\Lm{V,W}$ by $T\Par{v}=w_v.$ Hence $\null T=U,\,\,\range T=W.$}\TextB{}
 {\vspace{2pt}Then $\tilde{T}\in\Lm{V\mySlash \null T,W}$ is defined by $\tilde{T}\Par{v+U}=Tv=w_v.$}\TextB{}
-{Now $\pi\circ\tilde{T}=I_{V\mySlash U},\;\tilde{T}\circ\pi=I_{W}=T\mid_W$ Hence $\tilde{T}$ is an iso of $V\mySlash U$ onto $W.$}\par
+{\vspace{2pt}Now $\pi\circ\tilde{T}=I_{V\mySlash U},\;\tilde{T}\circ\pi=I_{W}=T\mid_W$ Hence $\tilde{T}$ is an iso of $V\mySlash U$ onto $W.$}\TextB{}
+{\vspace{2pt}\Comment \,\,\,Note that $v=u_v+w_v=\Par{u_v-u'}+\Par{w_v'+u'},$ where $w_v'\not\in W\Longleftrightarrow u'\neq 0.$}\TextB{}
+{\vspace{2pt}Define $S\in\Lm{V\mySlash U,V}$ by $S\Par{v+U}=v.$ Let $E=S\circ\pi.$ Then $\range E\oplus U=V,$ and $\null E=U.$}\TextB{}
+Thus $\forall w\in\range S,S\Par{w+U}=w.$ Which is a big difference from $T$ defined above.
 \SepLine
 
 \ProblemN{12}{
@@ -2404,24 +2406,22 @@ Surj: $\forall v\in V,\exists\,!\,u\in U,w\in W,v=u+w\Rightarrow S\Par{u,w+U}=u+
 
 \ProblemBnoor{4E 3.E.14}{
 	\TextB{Suppose $V=U\oplus W$, $\Par{w_1,\dots,w_m}$ is a basis of $W$.}
-	\TextB{Prove that $\Par{w_1+U,\dots,w_m+U}$ is a basis of $V\mySlash U$.}
-}\par\quad
-Note that $\forall v\in V,\exists\,!\,u\in U,w\in W,v=u+w.$ 又 $\exists\,!\,c_i\in\Fbb,w=\sum_{i=1}^m c_i w_i\Rightarrow v=\sum_{i=1}^m c_i w_i+u$.\vspace{2pt}\par\quad
-Hence $\forall v+U\in V\mySlash U,\exists\,!\,c_i\in\Fbb,v+U=\sum_{i=1}^m c_i w_i+U=c_1\Par{w_1+U}+\dots+c_m\Par{w_m+U}.$\PfEnd
+	\TextB{Prove that $\Par{w_1+U,\dots,w_m+U}$ is a basis of $V\mySlash U$.\vspace{2pt}}
+}$\forall v\in V,\exists\,!\,u\in U,w\in W,v=u+w.$ 又 $\exists\,!\,c_i\in\Fbb,w=\sum_{i=1}^m c_i w_i\Rightarrow v=\sum_{i=1}^m c_i w_i+u$.\vspace{2pt}\par
+\Blind{\Solution} Hence $\forall v+U\in V\mySlash U,\exists\,!\,c_i\in\Fbb,v+U=\sum_{i=1}^m c_i w_i+U.$\PfEnd
 \SepLine
 
 \ProblemN{13}{
 	\TextNL{Suppose $\Par{v_1+U,\dots,v_m+U}$ is a basis of \,$V\mySlash U$ and $\Par{u_1,\dots,u_n}$ is a basis of $U$.}
 	\TextNL{Prove that $\Par{v_1,\dots,v_m,u_1,\dots,u_n}$ is a basis of \,$V$.}
 }Notice that $\Par{v_1,\dots,v_m}$ is linely inde.\par\quad
-By Problem (12), $U$ and $V\mySlash U$ are finite-dim $\Rightarrow U\times\Par{V\mySlash U}$ is finite-dim, so is $V$.\par\quad
-$\dim V=\Dim\BigPar{U\times\Par{V\mySlash U}}=\dim U+\dim V\mySlash U=m+n.$\par\quad
-又 Each $v_i\not\in U\Rightarrow\Par{v_1,\dots,v_m,u_1,\dots,u_n}$ is linely inde.\PfEnd\vspace{8pt}\quad
-\Or Note that $\forall v\in V,\exists\,!\,a_i\in\Fbb,v+U=\sum_{i=1}^m a_i v_i+U\Rightarrow\exists\,!\,b_i\in\Fbb,v-\sum_{i=1}^m a_i v_i=\sum_{i=1}^m b_i u_i\in U$\vspace{4pt}\par\quad
-\Blind{\Or Note that} $\Rightarrow \forall v\in V,\exists\,!\,a_i,b_j\in\Fbb,v=\sum_{i=1}^m a_i v_i+\sum_{j=1}^m b_j u_j.$\PfEnd\vspace{8pt}\quad
-\Or Note that $\sum_{i=1}^m a_i v_i\in U\Longleftrightarrow\XPar{\sum_{i=1}^m a_i v_i}+U=0+U\Longleftrightarrow a_1=\dots=a_m=0.$\vspace{4pt}\par\quad
+By Problem (12), $U$ and $V\mySlash U$ are finite-dim $\Longrightarrow U\times\Par{V\mySlash U}$ is finite-dim, so is $V$.\par\quad
+$\dim V=\Dim\BigPar{U\times\Par{V\mySlash U}}=m+n.$ 又 Each $v_i=S\Par{v_i+U},$ where we define $S\Par{v+U}=v.$\par\quad
+Note that $\sum_{i=1}^m a_i v_i\in U\Longleftrightarrow\XPar{\sum_{i=1}^m a_i v_i}+U=0+U\Longleftrightarrow a_1=\dots=a_m=0.$\vspace{4pt}\par\quad
 Hence $\Span{v_1,\dots,v_m}\cap U=\zeroSubs$
-$\Rightarrow\Span{v_1,\dots,v_m}\oplus U=V.$ By (2.B.8), we are done.\PfEnd
+$\Rightarrow\Span{v_1,\dots,v_m}\oplus U=V.$ By (2.B.8), we are done.\PfEnd\vspace{8pt}\quad
+\Or Note that $\forall v\in V,\exists\,!\,a_i\in\Fbb,v+U=\sum_{i=1}^m a_i v_i+U\Rightarrow\exists\,!\,b_i\in\Fbb,v-\sum_{i=1}^m a_i v_i=\sum_{i=1}^m b_i u_i\in U$\vspace{4pt}\par\quad
+\Blind{\Or Note that} $\Rightarrow \forall v\in V,\exists\,!\,a_i,b_j\in\Fbb,v=\sum_{i=1}^m a_i v_i+\sum_{j=1}^m b_j u_j.$\PfEnd
 \SepLine
 
 \ProblemN{15}{
@@ -3297,25 +3297,9 @@ $\MathRightBrace{l}{$ Let $S$ be the backward shift \Par{ surj but not inje }$\\
 \SepLine
 
 \ProblemB{
-	\Tips \,\,\,\TextB{Suppose $T\in\Lm{V}$ and $U$ is finite-dim such that $T\mid_U\in\Lm{U}$ is inv.}
-	\Blind{\Tips \,\,\,}\TextB{Then $\exists$ invar subsp $W$ of $V$ under $T$ such that $V=U\oplus W.$}
-}\par\quad
-\colorbox{yellow}{TODO}\par\quad
-\par\quad
-\par\quad
-\Or [{\tgsl Only in Finite-dim}]\par\quad
-Let $B_U=\Par{u_1,\dots,u_m}.$ Extend to $B_V=\Par{u_1,\dots,u_m,v_1,\dots,v_n}.$\par\quad
-If each $Tv_k\in\Span{v_1,\dots,v_n}.$ Then we are done.\par\quad
-Otherwise, suppose $\Bra{\alpha_1,\dots,\alpha_A}$ is such that for each $\alpha_i,Tv_{\alpha_i}\not\in\Span{v_1,\dots,v_n},$\par\quad
-\Blind{Otherwise,} and that for each $k\not\in\Bra{\alpha_1,\dots,\alpha_A},Tv_k\in\Span{u_1,\dots,u_m}.$\par\quad
-Let $T\mid_U=S,\;\Mt{S^{-1}}=A.$ Now each $S^{-1}u_k=A_{1,k}u_1+\dots+A_{m,k}u_m.$\par\quad
-Now for each $\alpha_i,$ suppose $Tv_{\alpha_i}=a_{1,i}u_1+\dots+a_{m,i}u_m+b_{1,i}v_1+\dots+b_{n,i}v_n.$\vspace{2pt}\par\quad
-Then $T\XPar{v_{\alpha_i}-\underbrace{\sum_{j=1}^{m}\sum_{k=1}^{m}a_{k,i}A_{j,k}u_j}_{\text{Denote it by }w_{i}}}=b_{1,i}v_1+\dots+b_{n,i}v_n.$\vspace{2pt}\par\quad
-Thus for each $\alpha_i,\;\exists\,!\,w_i\in\Span{u_1,\dots,u_m},\;\BigPar{v_{\alpha_i}-w_i}\in\Span{v_1,\dots,v_n}.$\par\quad
-Now for each $k\in\Bra{1,\dots,n},$ if $k\in\Bra{\alpha_1,\dots,\alpha_A},$ then let $v_{\alpha_i}'=v_{\alpha_i}-w_i;\;$ if not, then let $v_k'=v_k.$\par\quad
-Hence let $B_V'=\Bra{u_1,\dots,u_m,v_1',\dots,v_n'}.$ Thus $W=\Span{v_1',\dots,v_n'}$ is invar under $T.$\PfEnd\vspace{6pt}\quad
-\Or Define $S\in\Lm{V\mySlash U,V}$ by $S\Par{v+U}=v.$ Then $\null S=\zeroSubs\Rightarrow\dim\range S=\dim V\mySlash U.$\par\quad
-$B_{\range S}=\BigPar{S\Par{v_1+U},\dots,S\Par{v_n+U}}.$\par\quad
+	\TextB{Suppose $V$ is finite-dim, $T\in\Lm{V},$ and $U$ is an invar subsp of $\,V$ under $T.$}
+	\TextB{Prove that there exists an invar subsp $W$ such that $V=U\oplus W.$}
+}\par\quad\PfEnd
 \SepLine\pagebreak
 
 \ProblemN[]{\hypertarget{5A1}{1}}{
@@ -3550,18 +3534,18 @@ Now we show that if $\left|\lambda\right|\neq n\max\!\Bra{\aMid{A_{j,k}}:1\leqsl
 \SepLine\pagebreak
 
 \ProblemBnoor{\hypertarget{5A4e15}{4E 5.A.15}}{
-	\TextB{Suppose $V$ is finite-dim, $T\in\Lm{V}$, and $\lambda\in\Fbb.$}
+	\TextB{Suppose $T\in\Lm{V}$, and $\lambda\in\Fbb.$}
 	\TextB{Show that $\lambda$ is an eigval of $T$ $\Longleftrightarrow$ $\lambda$ is an eigval of the dual operator $T\apostrophe\in\Lm{V\apostrophe}$.}
 }\par\quad
 (a) Suppose $\lambda$ is an eigval of $T$ with an eigvec $v.$\par\quad\Ha
-Let $U$ be invar under $T$ and $V=\Span{v}\oplus U$ \Par{ by \TIPS }. Define $\psi\in V\apostrophe$ by $\psi\Par{cv+u}=c.$\vspace{2pt}\par\quad\Ha
+Let $U$ be invar under $T$ and $V=\Span{v}\oplus U$ \Sbra{ by (4E 5.A.39) }.\par\quad\Ha
+Define $\psi\in V\apostrophe$ by $\psi\Par{cv+u}=c.$\vspace{2pt}\par\quad\Ha
 Now $\Sbra{T\apostrophe\Par{\psi}}\Par{cv+u}=\psi\BigPar{cv+Tu}=\lambda cv=\lambda\psi\Par{cv+u}.$ Hence $T\apostrophe\Par{\psi}=\lambda\psi.$\vspace{4pt}\par\quad
 (b) Suppose $\lambda$ is an eigval $T\apostrophe$ with an eigvec $\psi.$ Then $T\apostrophe\Par{\psi}=\psi\circ T=\lambda\psi.$\par\quad\Hb
-Note that $\psi\neq 0,\psi\Par{Tv}=\lambda\psi\Par{v}$ Thus $\exists\,v\in V\backslash\zeroSubs,Tv=\frac{\psi\Par{Tv}}{\psi\Par{v}}v=\lambda v.$\PfEnd\vspace{6pt}\quad
-\Or Using [3.69], [3.108, 110], [3.101] and (3.F.12).\par\quad
-$\lambda$ is an eigval of $T\Longleftrightarrow\Par{T-\lambda I_V}$ is not inj\par\quad
-\Blind{$\lambda$ is an eigval of $T$} $\Longleftrightarrow\Par{T-\lambda I_V}\apostrophe=T\apostrophe-\lambda I_{V\apostrophe}$ is not surj\par\quad
-\Blind{$\lambda$ is an eigval of $T$} $\Longleftrightarrow T\apostrophe-\lambda I_{V\apostrophe}$ is not inje $\Longleftrightarrow\lambda$ is an eigval of $T\apostrophe.$\PfEnd
+Note that $\psi\neq 0,\psi\Par{Tv}=\lambda\psi\Par{v}$ Thus $\exists\,v\in V\backslash\zeroSubs,Tv=\frac{\psi\Par{Tv}}{\psi\Par{v}}v=\lambda v.$\PfEnd\vspace{8pt}\quad
+\Or [{\tgsl Only in Finite-dim }] Using [5.6], (4E 3.F.17), [3.101] and (3.F.12).\par\quad
+$\lambda$ is an eigval of $T\Longleftrightarrow\Par{T-\lambda I_V}$ is not inv\par\quad
+\Blind{$\lambda$ is an eigval of $T$} $\Longleftrightarrow\Par{T-\lambda I_V}\apostrophe=T\apostrophe-\lambda I_{V\apostrophe}$ is not inv $\Longleftrightarrow\lambda$ is an eigval of $T\apostrophe.$\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{5A24}{24}}{
@@ -3734,8 +3718,8 @@ $\Rightarrow Tv_1=c_1 v_1, $又 $v_1=v\in V$ is arbitrary $\Rightarrow T=\lambda
 }\par\quad
 (a) Suppose $\lambda$ is an eigval of $T$ with an eigvec $v.$ \Par{ If $\dim V=1,$ then $U=\zeroSubs$ and we are done. }\par\quad\Ha
 Extend $v_1=v$ to $B_V=\Par{v_1,v_2\dots,v_n}.$\par\quad\Ha
-{\tgbfx Step 1.} If $\exists\,w_1\in\Span{v_2,\dots,v_n}$ such that $0\neq Tw_1\in\Span{v_1}$,\par\quad\Ha
-\Blind{{\tgbfx Step 1.}} then extend $w_1=\alpha_{1,1}$ to a basis of $\Span{v_2,\dots,v_n}$ as $\Par{\alpha_{1,1},\dots,\alpha_{1,n-1}}.$\par\quad\Ha
+{\tgbfx Step 1.} If $\exists\,w_1\in\Span{v_2,\dots,v_n}$ such that $0\neq Tw_1\in\Span{v_1}.$\par\quad\Ha
+\Blind{{\tgbfx Step 1.}} Then extend $w_1=\alpha_{1,1}$ to a basis of $\Span{v_2,\dots,v_n}$ as $\Par{\alpha_{1,1},\dots,\alpha_{1,n-1}}.$\par\quad\Ha
 \Blind{{\tgbfx Step 1.}} Otherwise, we stop at step $1.$\par\quad\Ha
 %{\tgbf Step 2} $\,$If $\,\exists\,w_2\in\Span{\alpha_{1,2},\dots,\alpha_{1,n-1}}$ such that $0\neq Tw_2\in\Span{v_1,w_1},$\par\qquad\qquad\quad\,
 %then extend $w_2=\alpha_{2,1}$ to a basis of $\Span{\alpha_{1,2},\dots,\alpha_{1,n-1}}$ as $\Par{\alpha_{2,1},\dots,\alpha_{2,n-2}}.$\par\qquad\qquad\quad\,
@@ -3747,7 +3731,12 @@ Finally, we stop at step $m,$ thus we get $\Par{v_1,w_1,\dots,w_{m-1}}$ and $\Pa
 $\range T\mid_{\Span{w_1,\dots,w_{m-1}}}=\Span{v_1,w_1,\dots,w_{m-2}}\Rightarrow\dim\null T\mid_{\Span{w_1,\dots,w_{m-1}}}=0,$\par\quad\Ha
 $\underbrace{\Span{v_1,w_1,\dots,w_{m-1}}}_{\dim m}$ and $\underbrace{\Span{\alpha_{m-1,2},\dots,\alpha_{m-1,n-m+1}}}_{\dim \Par{n-m}}$ are invar under $T.$\par\quad\Ha
 Let $U=\Span{\alpha_{m-1,2},\dots,\alpha_{m-1,n-m+1}}\oplus\Span{v_1,w_1,\dots,w_{m-2}}$ and we are done.\PfEnd\quad\Ha
-\Comment\;$\Span{v_2,\dots,v_n},\BigPar{\Span{\alpha_{m-1,2},\dots,\alpha_{m-1,n-m+1}}\oplus\Span{w_1,\dots,w_{m-1}}}\in\mathcal{S}_V \Span{v_1}.$\par\vspace{6pt}\quad
+\Comment \,\,\,Both $\Span{v_2,\dots,v_n}$ and $U\oplus\Span{w_{m-1}}$ are in $\mathcal{S}_V \Span{v_1}.$\par\vspace{6pt}\quad\Ha
+\Or Note that $\dim\null\Par{T-\lambda I}\geqslant 1.$ And $\dim\range\Par{T-\lambda I}\leqslant\dim V-1.$\par\quad\Ha
+Let $B_{\range\SmallPar{T-\lambda I}}=\Par{w_1,\dots,w_m},\;B_V=\Par{w_1,\dots,w_m,u_1,\dots,u_n}.$\par\quad\Ha
+If $m=\dim V-1.$ \Sbra{ $\Longleftrightarrow n=0.$ } Then $\range\Par{T-\lambda I}$ is an invar subsp of dim $\dim V-1.$\par\quad\Ha
+Otherwise, choose $k\in\Bra{1,\dots,n}$ and then let $U=\Span{w_1,\dots,w_m,u_1,\dots,u_{k-1},u_{k+1},\dots,u_n}.$\par\quad\Ha
+By Problem (1)(b), $U$ is invar under $\Par{T-\lambda I}.$ Now $u\in U\Rightarrow \Par{T-\lambda I}\Par{u}\in U\Rightarrow Tu\in U.$\par\vspace{6pt}\quad
 (b) Suppose $U$ is an invar subsp under $T$ of dim $m=\dim V-1.$ \Par{ If $m=0,$ then we are done. }\par\quad\Hb
 Let $B_U=\Par{u_1,\dots,u_m},B_V=\Par{u_0,u_1,\dots,u_m}.$ We discuss in cases:\par\quad\Hb
 For $Tu_0\in U,$ then $\range T=U$ so that $T$ is not surj $\Longleftrightarrow \null T\neq\zeroSubs\Longleftrightarrow$ $0$ is an eigval of $T.$\par\quad\Hb
@@ -3757,7 +3746,8 @@ For $Tu_0\not\in U,$ then $Tu_0=a_0 u_0+a_1 u_1+\dots+a_mu_m.$\par\quad\Hb
 otherwise, $T\mid_U:U\rightarrow U$ is not surj ( $\Rightarrow$ not inje ), suppose $\range T\mid_U\neq\zeroSubs$\par\qquad\qquad\qquad\qquad\quad
 ( Suppose $\range T\mid_U=\zeroSubs$. If $\dim U=0$ then we are done.\par
 \rightline{Otherwise $\exists\,u\in U\backslash\zeroSubs,Tu=0$ and we are done. )\qquad\qquad}\par\qquad\qquad\qquad\quad\Hb
-then $\exists\,u\in U\backslash\zeroSubs,Tu=0,$ we are done.\PfEnd
+then $\exists\,u\in U\backslash\zeroSubs,Tu=0,$ we are done.\PfEnd\vspace{4pt}\quad
+\Or Consider $T\mySlash U\in\Lm{V\mySlash U}.$ Because $\dim V\mySlash U=1.$ $\exists\,\lambda\in\Fbb,T\mySlash U=\lambda I.$ By Problem (35).\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{5A29}{29}}{
