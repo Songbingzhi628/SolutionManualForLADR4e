@@ -2373,18 +2373,22 @@ $v_1+U=v_2+U\Longleftrightarrow\Par{v_1-v_2}\in U\Longleftrightarrow S\BigPar{\P
 	(c) \TextNL{$\range\Gamma=\Bra{T\in\Lm{V,W}:U\subseteq\null T}$: {\normalsize\tgnr By Problem (18).\PfEnd}\vspace{-3pt}}
 }\SepLine\pagebreak
 
-\ProblemBnoor[]{\NoteForSmall{[3.79, 3.83]}}[]{
-	{If $U=\zeroSubs,$ then $v+U=v+\zeroSubs=\Bra{v},V\mySlash U=V\mySlash \zeroSubs=\Bra{\Bra{v}:v\in V}.$}\TextB{}
-}\SepLine
+%\ProblemBnoor[]{\NoteForSmall{[3.79, 3.83]}}[]{
+%	{If $U=\zeroSubs,$ then $v+U=v+\zeroSubs=\Bra{v},V\mySlash U=V\mySlash \zeroSubs=\Bra{\Bra{v}:v\in V}.$}\TextB{}
+%}\SepLine
 
 \BulletPointX\NoteFor{[3.88, 3.90, 3.91]} {\vspace{2pt}Suppose $W\in\mathcal{S}_V U.$ Then $V\mySlash U$ and $W$ are iso.}\TextB{}
 {\vspace{2pt}For any $W\in\mathcal{S}_V U,$ because $V=U\oplus W,\;\forall v\in V,\exists\,!\,u_v\in U,w_v\in W$ such that $v=u_v+w_v.$}\TextB{}
-{\vspace{2pt}Define $T\in\Lm{V,W}$ by $T\Par{v}=w_v.$ Hence $\null T=U,\,\,\range T=W.$}\TextB{}
+{\vspace{2pt}Define $T\in\Lm{V,W}$ by $T\Par{v}=w_v.$ Hence $\null T=U,\;\range T=W,\;\range T\oplus\null T=V.$}\TextB{}
 {\vspace{2pt}Then $\tilde{T}\in\Lm{V\mySlash \null T,W}$ is defined by $\tilde{T}\Par{v+U}=Tv=w_v.$}\TextB{}
-{\vspace{2pt}Now $\pi\circ\tilde{T}=I_{V\mySlash U},\;\tilde{T}\circ\pi=I_{W}=T\mid_W$ Hence $\tilde{T}$ is an iso of $V\mySlash U$ onto $W.$}\TextB{}
-{\vspace{2pt}\Comment \,\,\,Note that $v=u_v+w_v=\Par{u_v-u'}+\Par{w_v'+u'},$ where $w_v'\not\in W\Longleftrightarrow u'\neq 0.$}\TextB{}
-{\vspace{2pt}Define $S\in\Lm{V\mySlash U,V}$ by $S\Par{v+U}=v.$ Let $E=S\circ\pi.$ Then $\range E\oplus U=V,$ and $\null E=U.$}\TextB{}
-Thus $\forall w\in\range S,S\Par{w+U}=w.$ Which is a big difference from $T$ defined above.
+{\vspace{2pt}Now $\pi\circ\tilde{T}=I_{V\mySlash U},\;\tilde{T}\circ\pi=I_{W}=T\mid_W$ Hence $\tilde{T}$ is an iso of $V\mySlash U$ onto $W.$}\par
+{\vspace{2pt}\BulletPointX\Comment \,\,\,Note that $v=u_v+w_v=\Par{u_v-u'}+\Par{w_v'+u'},$ where $w_v'\not\in W\Longleftrightarrow u'\neq 0.$}\TextB{}
+{\vspace{2pt}Define $S\in\Lm{V\mySlash U,V}$ by $S\Par{v+U}=v.$ Hence $\null S=\zeroSubs,\;\range S\in\mathcal{S}_V U,\;\range S\oplus U=V.$}\TextB{}
+{\vspace{2pt}Let $E=S\circ\pi.$ Now $\null E=\null\pi=U.$ Because $\pi$ is surj 又 $\range\Par{S\circ\pi}\subseteq\range S.$ $\range E=\range S.$}\TextB{}
+{\vspace{2pt}Then $\range E\oplus\null E=V.$ \NOTICE that $E:V\rightarrow\range S$ is a pure {\tgsl eraser}. Now we explain why:}\TextB{}
+{\vspace{2pt}\Example \,\,\,Suppose $B_V=\Par{v_1,v_2,v_3},U=\Span{v_1}.$ Then it is uniquely fixed that $\range S=\Span{v_2,v_3}.$}\TextB{}
+{\vspace{2pt}While we might have $\range T=\Span{v_2-2v_1,v_3}=W,$ depending on the choice of $W.$}\TextB{}
+{Now $E:v_2\mapsto v_2;\;\;v_2-2v_1\mapsto v_2.$ While $T:v_2\mapsto v_2-2v_1;\;\;v_2-2v_1\mapsto v_2-2v_1.$}
 \SepLine
 
 \ProblemN{12}{
@@ -2395,13 +2399,11 @@ Note that $\forall v\in V,\exists\,!\,a_i\in\Fbb,v+U=\sum_{i=1}^n a_i\Par{v_i+U}
 $\Rightarrow\Par{v-a_1 v_1-\dots-a_n v_n}\in U\Rightarrow\exists\,!\,u\in U,v=\sum_{i=1}^n a_i v_i+u.$\vspace{2pt}\par\quad
 Thus define $\varphi\in\Lm[\BigPar]{V,U\times\Par{V\mySlash U}}$ by $\varphi\Par{v}=\Par{u, \,v+U},$\vspace{3pt}\par\quad
 \Blind{Thus de}and $\psi\in\Lm[\BigPar]{U\times\Par{V\mySlash U},V}$ by $\psi\Par{u,v+U}=v+u,$ where $\exists\,!\,a_i\in\Fbb,v=\sum_{i=1}^n a_i v_i+U.$\PfEnd\vspace{8pt}\quad
-\Or [{\tgsl $V\mySlash U,U$ and $V$ can be infinite-dim}]\vspace{2pt}\par\quad
-Let $W$ be such that $V=U\oplus W.$ Thus $\forall v\in V,\exists\,!\,u_v\in U,w_v\in W,v=u_v+w_v.$\vspace{2pt}\par\quad
-Define $\tilde{T}\in\Lm{V\mySlash U,W}$ by $\tilde{T}\Par{v+U}=v=w_v\in W.$ Notice that $v+U=w_v+U.$\vspace{2pt}\par\quad
-Define $S\in\Lm[\BigPar]{U\times\Par{V\mySlash U},V}$ by $S\Par{u,v+U}=u+\tilde{T}\Par{v+U}.$\vspace{2pt}\par\quad
-Inje: $S\Par{u,v+U}=u+\tilde{T}\Par{v+U}=0\Rightarrow\pi\BigPar{S\Par{u,v+U}}=v+U=0\Rightarrow u=-\tilde{T}\Par{v+U}=0.$\vspace{2pt}\par\quad
-Surj: $\forall v\in V,\exists\,!\,u\in U,w\in W,v=u+w\Rightarrow S\Par{u,w+U}=u+\tilde{T}\Par{w+U}=v.$\vspace{4pt}\par\quad
-\Or Define $R\in\Lm[\BigPar]{V,U\times\Par{V\mySlash U}}$ by $R\Par{v}=\BigPar{u_v,\Par{w_v+U}}.$ Now $R\circ S=I_{\envFontSmall[\scriptsize]U\times\Par{V\mySlash U}},\;S\circ R=I_V.$\PfEnd
+\Or [{\tgsl $V\mySlash U,U$ and $V$ can be infinite-dim}] Define $S\in\Lm{V\mySlash U,V}$ by $S\Par{v+U}=v.$\vspace{2pt}\par\quad
+By the \NOTEFOR\;[3.88,3.90,3.91], $\range S\oplus U=V.$ Thus $\forall v\in V,\exists\,!\,u\in U,w\in\range S,v=u+w.$\vspace{2pt}\par\quad
+Define $T\in\Lm[\BigPar]{U\times\Par{V\mySlash U},V}$ by $T\Par{u,v+U}=u+S\Par{v+U}=u+w=v.$ Then $T$ is surj.\vspace{2pt}\par\quad
+And $T\Par{u,v+U}=u+S\Par{v+U}=0\Longrightarrow\pi\BigPar{T\Par{u,v+U}}=v+U=0,$ and $u=-S\Par{v+U}=0.$\vspace{4pt}\par\quad
+\Or Define $R\in\Lm[\BigPar]{V,U\times\Par{V\mySlash U}}$ by $R\Par{v}=\BigPar{u,\Par{w+U}}.$ Now $R\circ T=I_{\envFontSmall[\scriptsize]U\times\Par{V\mySlash U}},\;T\circ R=I_V.$\PfEnd
 \SepLine
 
 \ProblemBnoor{4E 3.E.14}{
@@ -3298,8 +3300,34 @@ $\MathRightBrace{l}{$ Let $S$ be the backward shift \Par{ surj but not inje }$\\
 
 \ProblemB{
 	\TextB{Suppose $V$ is finite-dim, $T\in\Lm{V},$ and $U$ is an invar subsp of $\,V$ under $T.$}
-	\TextB{Prove that there exists an invar subsp $W$ such that $V=U\oplus W.$}
-}\par\quad\PfEnd
+	\TextB{Prove that there exists an invar subsp $W$ of dimension $\dim V-dim U.$}
+}\par\quad
+Using the \NOTEFOR\;[3.88,90,91]. Define the eraser $S.$ Now $V=\range S\oplus U.$\par\quad
+Define $E_1$ by $E_1\Par{u+w}=u.$ Define $E_2$ by $E_2\Par{u+w}=w.$ \BigPar{ $E_2=S\circ\pi.$ }\vspace{2pt}\par\quad
+Note that $T-TE_1=T\Par{I-E_1}=TE_2.$ And $\null TE_2=\null T\oplus U,\;\range T=\range TE_2\oplus U.$\par\quad
+Because $\dim\null TE_2\geqslant\dim U\Rightarrow\dim\range TE_2\leqslant\dim V-\dim U.$\par\quad
+Let $B_U=\Par{u_1,\dots,u_n},\;B_{\range TE_2}=\Par{v_1,\dots,v_m}\Rightarrow B_V=\Par{v_1,\dots,v_m,u_1,\dots,u_n,\dots,u_p}.$\par\quad
+Let $X=\Span{v_1,\dots,v_m,u_{\alpha_1},\dots,u_{\alpha_{p-\dim U}}}.$ Where $\alpha_1,\dots,\alpha_{p-\dim U}\in\Bra{1,\dots,p}$ are distinct.\vspace{2pt}\par\quad
+Then $\dim X=\dim V-\dim U.$ \Sbra{ $\range TE_2\subseteq$ } $X$ is invar under $TE_2,$ by Problem (1)(b).\vspace{2pt}\par\quad
+We have $x\in X\Rightarrow TE_2\Par{x}\in X\Rightarrow T{x}-TE_1\Par{x}\in X\Rightarrow Tx\in X.$ Hence $X$ is invar under $T.$\PfEnd\quad
+\BigPar{ Note that $E_1\Par{x}\in\Span{u_{\beta_1},\dots,u_{\beta_{t}}},$ where $\beta_1,\dots,\beta_t\in\Bra{\alpha_1,\dots,\alpha_{p-\dim U}}$ and each $u_{\beta_i}\in U.$ }\par\quad
+\Comment \,\,\,Conversely, by reversing the roles of $U$ and $W,$ we conclude that it is true as well.\vspace{6pt}\par\quad
+\Or Let $B_U=\Par{u_1,\dots,u_m}.$ Extend to $B_V=\Par{u_1,\dots,u_m,u_{m+1},\dots,u_n}.$\par\quad
+{\tgbfx Step 1.} If $\exists\,w_1\in\Span{u_{m+1},\dots,u_n}$ such that $0\neq Tw_1\in U.$\par\quad
+\Blind{{\tgbfx Step 1.}} Then extend $w_1=\alpha_{1,m+1}$ to a basis of $\Span{u_{m+1},\dots,u_n}$ as $\Par{\alpha_{1,m+1},\dots,\alpha_{1,n}}.$\par\quad
+\Blind{{\tgbfx Step 1.}} Otherwise, we stop at step 1.\par\quad
+{\tgbfx Step 2.} If $\exists\,w_2\in\Span{\alpha_{1,m+2},\dots,\alpha_{1,n}}$ such that $0\neq Tw_2\in U\oplus\Span{w_1}.$\par\quad
+\Blind{{\tgbfx Step 2.}} Then extend $w_2=\alpha_{2,m+2}$ to a basis of $\Span{\alpha_{1,m+2},\dots,\alpha_{1,n}}$ as $\Par{\alpha_{2,m+2},\dots,\alpha_{2,n}}.$\par\quad
+\Blind{{\tgbfx Step 2.}} Otherwise, we stop at step 2.\par\quad
+{\tgbfx Step k.} If $\exists\,w_k\in\Span{a_{k-1,m+k},\dots,\alpha_{k-1,n}}$ such that $0\neq Tw_k\in U\oplus\Span{w_1,\dots,w_{k-1}}.$\par\quad
+\Blind{{\tgbfx Step k.}} Then extend $w_k=\alpha_{k,m+k}$ to a basis of $\Span{a_{k-1,m+k},\dots,\alpha_{k-1,n}}$ as $\Par{\alpha_{k,m+k},\dots,\alpha_{k,n}}.$\par\quad
+\Blind{{\tgbfx Step k.}} Otherwise, we stop at step $k.$\vspace{4pt}\par\quad
+Finally, we stop at step $s,$ thus we get $\Par{u_1,\dots,u_m,w_1,\dots,w_{s-1}}$ and $\Par{\alpha_{s-1,m+s},\dots,\alpha_{s-1,n}}.$\par\quad
+Now $X=\Span{\underbrace{u_1,\dots,u_m,w_1,\dots,w_{s-1}}_{\text{of length }\SmallPar{s-1+m}}}$ and $Y=\Span{\underbrace{\alpha_{s-1,m+s},\dots,\alpha_{s-1,n}}_{\text{of length }\SmallPar{n-m-s+1}}}$ are invar under $T.$\vspace{4pt}\par\quad
+\colorbox{yellow}{THIS MAY FAIL. TODO: FIND ANOTHER ALGORITHEM.}
+%If $U$ is such that $T\mid_U\in\Lm{U}$ is inv. Then by [5.30], $T\mid_X\in\Lm{X}$ is inv.\par\quad
+%又 For each $t\in\Bra{1,\dots,s-1},\Span{u_1,\dots,u_m,w_1,\dots,w_{t}}$ is invar.\par\quad
+%Let $W=\Span{u_1,\dots,u_m,w_1,\dots,w_{s-1-}}\oplus\Span{\alpha_{s-1,m+s},\dots,\alpha_{s-1,n}}$\PfEnd
 \SepLine\pagebreak
 
 \ProblemN[]{\hypertarget{5A1}{1}}{
@@ -3511,18 +3539,33 @@ Suppose $\lambda$ is an eigval of $T$ with an eigvec $\Par{x,y,z,w}.$ Then we ge
 This set of linear equations has no solutions.\par\quad
 \Sbra{ You can type it on \url{https://zh.numberempire.com/equationsolver.php} to check. }\large\par\vspace{6pt}\quad
 \Or Define $T\in\Lm{\Rbb^4}$ by $T\Par{x_1,x_2,x_3,x_4}=\Par{-x_2,x_1,-x_4,x_3}.$\par\quad
-Suppose $\lambda$ is an eigval of $T$ with an eigvec $\Par{x,y,z,w}.$\par\quad
+Suppose $\lambda$ is an eigval of $T$ with an eigvec $\Par{x,y,z,w}.$\vspace{-3pt}\par\quad
 Then $T\Par{x,y,z,w}=\Par{\lambda x,\lambda y,\lambda z,\lambda w}=\Par{-y,x,-w,z}$ {\normalsize $\Longrightarrow\MathLeftBrace{l}{
 		-y=\lambda x,x=\lambda y\Longrightarrow-xy=\lambda^2 xy\\
-		-w=\lambda z,z=\lambda w\Longrightarrow-zw=\lambda^2 zw}$}\par\quad
+		-w=\lambda z,z=\lambda w\Longrightarrow-zw=\lambda^2 zw}$}\vspace{-3pt}\par\quad
 If $xy\neq 0$ or $zw\neq 0,$ then $\lambda^2=-1,$ we fail.\par\quad
 Otherwise, $xy=0\Rightarrow x=y=0,$ for if $x\neq 0,$ then $\lambda=0\Rightarrow x=0,$ contradicts.\par\quad
 Similarly, $y=z=w=0.$ Then we fail. Thus $T$ has no eigvals.\PfEnd
 \SepLine
 
+\ProblemBnoor{\hypertarget{5A4e15}{4E 5.A.15}}{
+	\TextB{Suppose $T\in\Lm{V}$, and $\lambda\in\Fbb.$}
+	\TextB{Show that $\lambda$ is an eigval of $T$ $\Longleftrightarrow$ $\lambda$ is an eigval of the dual operator $T\apostrophe\in\Lm{V\apostrophe}$.}
+}\par\quad
+(a) Suppose $\lambda$ is an eigval of $T$ with an eigvec $v.$\par\quad\Ha
+Let $U$ be invar such that $V=\Span{v}\oplus U$ \Sbra{ by (4E 5.A.39) }.\par\quad\Ha
+Define $\psi\in V\apostrophe$ by $\psi\Par{cv+u}=c.$\vspace{2pt}\par\quad\Ha
+Now $\Sbra{T\apostrophe\Par{\psi}}\Par{cv+u}=\psi\BigPar{cv+Tu}=\lambda cv=\lambda\psi\Par{cv+u}.$ Hence $T\apostrophe\Par{\psi}=\lambda\psi.$\vspace{4pt}\par\quad
+(b) Suppose $\lambda$ is an eigval $T\apostrophe$ with an eigvec $\psi.$ Then $T\apostrophe\Par{\psi}=\psi\circ T=\lambda\psi.$\par\quad\Hb
+Note that $\psi\neq 0,\psi\Par{Tv}=\lambda\psi\Par{v}$ Thus $\exists\,v\in V\backslash\zeroSubs,Tv=\frac{\psi\Par{Tv}}{\psi\Par{v}}v=\lambda v.$\PfEnd\vspace{8pt}\quad
+\Or [{\tgsl Only in Finite-dim }] Using [5.6], (4E 3.F.17), [3.101] and (3.F.12).\par\quad
+$\lambda$ is an eigval of $T\Longleftrightarrow\Par{T-\lambda I_V}$ is not inv\par\quad
+\Blind{$\lambda$ is an eigval of $T$} $\Longleftrightarrow\Par{T-\lambda I_V}\apostrophe=T\apostrophe-\lambda I_{V\apostrophe}$ is not inv $\Longleftrightarrow\lambda$ is an eigval of $T\apostrophe.$\PfEnd
+\SepLine\pagebreak
+
 \ProblemBnoor{\hypertarget{5A4e16}{4E 5.A.16}}{
 	\TextB{Suppose $\Par{v_1,\dots,v_n}$ is a basis of \,$V$ and $T\in\Lm{V},\Mt[\BigPar]{T,\Par{v_1,\dots,v_n}}=A.$}
-	\TextB{Prove that if $\lambda$ is an eigval of $T$, then $\left|\lambda\right|\leqslant n \max\!\Bra{\aMid{A_{j,k}}:1\leqslant j, k\leqslant n}.$}
+	\TextB{Prove that if $\lambda$ is an eigval of $T$, then $\aMid{\lambda}\leqslant n \max\!\Bra{\aMid{A_{j,k}}:1\leqslant j, k\leqslant n}.$}
 }\par\quad
 First we show that $\left|\lambda\right|=n\max\!\Bra{\aMid{A_{j,k}}:1\leqslant j, k\leqslant n}$ for some cases.\par\quad
 Consider $A=\,${\small$\begin{pmatrix}
@@ -3531,21 +3574,6 @@ Consider $A=\,${\small$\begin{pmatrix}
 		k & \cdots & k
 	\end{pmatrix}.$} Then $nk$ is an eigval of $T$ with an eigvec $v_1+\dots+v_n.$\par\quad
 Now we show that if $\left|\lambda\right|\neq n\max\!\Bra{\aMid{A_{j,k}}:1\leqslant j, k\leqslant n},$ then $\left|\lambda\right|<n\max\!\Bra{\aMid{A_{j,k}}:1\leqslant j, k\leqslant n}.$\par\quad
-\SepLine\pagebreak
-
-\ProblemBnoor{\hypertarget{5A4e15}{4E 5.A.15}}{
-	\TextB{Suppose $T\in\Lm{V}$, and $\lambda\in\Fbb.$}
-	\TextB{Show that $\lambda$ is an eigval of $T$ $\Longleftrightarrow$ $\lambda$ is an eigval of the dual operator $T\apostrophe\in\Lm{V\apostrophe}$.}
-}\par\quad
-(a) Suppose $\lambda$ is an eigval of $T$ with an eigvec $v.$\par\quad\Ha
-Let $U$ be invar under $T$ and $V=\Span{v}\oplus U$ \Sbra{ by (4E 5.A.39) }.\par\quad\Ha
-Define $\psi\in V\apostrophe$ by $\psi\Par{cv+u}=c.$\vspace{2pt}\par\quad\Ha
-Now $\Sbra{T\apostrophe\Par{\psi}}\Par{cv+u}=\psi\BigPar{cv+Tu}=\lambda cv=\lambda\psi\Par{cv+u}.$ Hence $T\apostrophe\Par{\psi}=\lambda\psi.$\vspace{4pt}\par\quad
-(b) Suppose $\lambda$ is an eigval $T\apostrophe$ with an eigvec $\psi.$ Then $T\apostrophe\Par{\psi}=\psi\circ T=\lambda\psi.$\par\quad\Hb
-Note that $\psi\neq 0,\psi\Par{Tv}=\lambda\psi\Par{v}$ Thus $\exists\,v\in V\backslash\zeroSubs,Tv=\frac{\psi\Par{Tv}}{\psi\Par{v}}v=\lambda v.$\PfEnd\vspace{8pt}\quad
-\Or [{\tgsl Only in Finite-dim }] Using [5.6], (4E 3.F.17), [3.101] and (3.F.12).\par\quad
-$\lambda$ is an eigval of $T\Longleftrightarrow\Par{T-\lambda I_V}$ is not inv\par\quad
-\Blind{$\lambda$ is an eigval of $T$} $\Longleftrightarrow\Par{T-\lambda I_V}\apostrophe=T\apostrophe-\lambda I_{V\apostrophe}$ is not inv $\Longleftrightarrow\lambda$ is an eigval of $T\apostrophe.$\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{5A24}{24}}{
@@ -3566,11 +3594,11 @@ Thus $\range\Par{T-I}\subseteq\envFontLarge\Bra{\envFontDefault\,${\normalsize$\
 \Or Let $\Par{e_1,\dots,e_n}$ be the standard basis of $\Fbb^{n,1}.$ Define $\psi\in\BigPar{\Fbb^{n,1}}\apostrophe$ by $\psi\Par{e_k}=1.$\vspace{2pt}\par\quad\Hb
 Thus $\BigPar{\psi\circ\Par{T-I}}\Par{e_k}=\psi\XPar{\BigPar{\sum_{j=1}^n A_{j,k}e_j}-e_k}=\BigPar{\sum_{j=1}^n A_{j,k}}-1=0.$\vspace{2pt}\par\quad\Hb
 Which means that $\psi\circ\Par{T-I}=0.$ 又 $\psi\neq 0.$ Hence $\Par{T-I}$ is not inje.\PfEnd\vspace{10pt}\quad\Hb
-\Or Define $S\in\Lm{\Fbb^{n,1}}$ by $Sx=A^tx.$ Because the rows of $A^t$ are the cols of $A.$\vspace{2pt}\par\quad\Hb
+\Or Define $S\in\Lm{\Fbb^{n,1}}$ by $Sx=A^tx.$ Because the rows of $A^t$ are the cols of $A.$\par\quad\Hb
 Now by (a), $1$ is an eigval of $S.$ Let $\Par{\varphi_1,\dots,\varphi_n}$ be the dual basis of $\Par{e_1,\dots,e_n}.$\vspace{2pt}\par\quad\Hb
 Define $\Phi\in\Lm[\XPar]{\Fbb^{n,1},\BigPar{\Fbb^{1,n}}\apostrophe}$ by $\Phi\Par{e_k}=\varphi_k.$ Note that $\Mt{T\apostrophe}=A^t.$\vspace{2pt}\par\quad\Hb
 Now $\BigPar{\Phi^{-1}T\apostrophe\Phi}\Par{e_k}=\BigPar{\Phi^{-1}T\apostrophe}\Par{\varphi_k}=\Phi^{-1}\BigPar{\sum_{j=1}^n A_{k,j}\varphi_j}=\sum_{j=1}^n A_{k,j}e_j=A^t e_k=Se_k.$\vspace{3pt}\par\quad\Hb
-Thus $1$ is an eigval of $\Phi^{-1}T\apostrophe\Phi=S,$ so of $T\apostrophe,$ \Sbra{ by Problem (15) }, so of $T,$ \Sbra{ by (4E 5.A.15) }.\PfEnd
+Thus $1$ is an eigval of $S=\Phi^{-1}T\apostrophe\Phi,$ so of $T\apostrophe,$ \Sbra{ by Problem (15) }, so of $T,$ \Sbra{ by (4E 5.A.15) }.\PfEnd
 \SepLine\pagebreak
 
 \ProblemB{
@@ -3579,16 +3607,24 @@ Thus $1$ is an eigval of $\Phi^{-1}T\apostrophe\Phi=S,$ so of $T\apostrophe,$ \S
 	(b) \TextB{Suppose the sum of the entries in each row of $A$ equals $1$. Prove that $1$ is an eigval of $T$.}
 }\par\quad
 Suppose $\lambda$ is an eigval with an eigvec $x.$ Then {\normalsize$\begin{pmatrix} \sum_{r=1}^n x_r A_{r,1} &\cdots & \sum_{r=1}^n x_r A_{r,n}\end{pmatrix}$}${}=\lambda${\normalsize$\begin{pmatrix} x_1 & \cdots & x_n\end{pmatrix}$}.\vspace{4pt}\par\quad
-(a) Suppose $\sum_{r=1}^n A_{r,C}=1$ for each $C\in\Bra{1,\dots,n}.$ Thus if $x_1=\dots=x_n,$ then $\lambda=1,$ an eigval of $T.$\vspace{4pt}\par\quad
+(a) Suppose $\sum_{r=1}^n A_{r,C}=1$ for each $C\in\Bra{1,\dots,n}.$\par\quad\Ha
+Thus if $x_1=\dots=x_n,$ then $\lambda=1,$ hence is an eigval of $T.$\vspace{4pt}\par\quad
 (b) Suppose $\sum_{c=1}^n A_{R,c}=1$ for each $R\in\Bra{1,\dots,n}.$\vspace{2pt}\par\quad\Hb
 Thus $\sum_{c=1}^n \BigPar{xA}_{\cdot,c}=\sum_{c=1}^n\BigPar{A_{c,1}+\dots+A_{c,n}}x_c=\sum_{c=1}^n x_c=\lambda\BigPar{x_1+\dots+x_n}.$\vspace{2pt}\par\quad\Hb
 Hence $\lambda=1,$ for all $x$ such that $\sum_{r=1}^n x_{1,r}\neq 0.$\PfEnd\vspace{6pt}\quad\Hb
-\Or Prove that $\Par{T-I}$ is not inv, so that we can conclude $\lambda=1$ is an eigval.\par\quad\Hb
+\Or We show that $\Par{T-I}$ is not inv, so that $\lambda=1$ is an eigval.\par\quad\Hb
 Because $\Par{T-I}x=x\BigPar{A-\Mt{I}}={}${\normalsize$\begin{pmatrix} \sum_{c=1}^n x_c A_{c,1}-x_1 &\cdots & \sum_{c=1}^n x_c A_{c,n}-x_n\end{pmatrix}$}${}={}${\normalsize$\begin{pmatrix} y_1 & \cdots & y_n\end{pmatrix}$}.\vspace{2pt}\par\quad\Hb
 Then $y_1+\dots+y_n=\sum_{c=1}^n\sum_{r=1}^n\Par{x_r A_{r,c}-x_c}=\sum_{r=1}^n x_r\sum_{c=1}^n A_{r,c}-\sum_{c=1}^n x_c=0.$\par\vspace{4pt}\quad\Hb
-Thus $\range\Par{T-I}\subseteq\Bra{\,${\small$\begin{pmatrix}
-			y_1 & \cdots & y_n
-		\end{pmatrix}$}$\,\in\Fbb^n:y_1+\dots+y_n=0}.$ Hence $\Par{T-I}$ is not surj.\PfEnd
+Thus $\range\Par{T-I}\subseteq\Bra{\,${\small$\begin{pmatrix}y_1 & \cdots & y_n\end{pmatrix}$}$\,\in\Fbb^{1,n}:y_1+\dots+y_n=0}.$ Hence $\Par{T-I}$ is not surj.\PfEnd\vspace{6pt}\quad\Hb
+\Or Let $\Par{e_1,\dots,e_n}$ be the standard basis of $\Fbb^{1,n}.$ Define $\psi\in\Par{\Fbb^{n,1}}\apostrophe$ by $\psi\Par{e_k}=1.$\vspace{2pt}\par\quad\Hb
+Because $Te_k=e_k A=\begin{pmatrix}A_{k,1}&\cdots&A_{k,n}\end{pmatrix}=\sum_{i=1}^n A_{k,i}e_i.$ \Corollary \,\,\,$\Mt{T}=A^t.$\vspace{3pt}\par\quad\Hb
+$\BigPar{\psi\circ\Par{T-I}}\Par{e_k}=\BigPar{\sum_{i=1}^n A_{k,i}}-1=0.$ Then $\psi\circ\Par{T-I}=0.$ 又 $\psi\neq 0.$ $\Par{T-I}$ is not inje.\PfEnd\vspace{8pt}\quad\Hb
+\Or Define $S\in\Lm{\Fbb^{1,n}}$ by $Sx=xA^t.$ Because the rows of $A$ are the cols of $A^t.$\par\quad\Hb
+Now by (a), $1$ is an eigval of $S.$ Let $\Par{\varphi_1,\dots,\varphi_n}$ be the dual basis of $\Par{e_1,\dots,e_n}.$\vspace{2pt}\par\quad\Hb
+Define $\Phi\in\Lm[\XPar]{\Fbb^{1,n},\BigPar{\Fbb^{1,n}}\apostrophe}$ by $\Phi\Par{e_k}=\varphi_k.$ Because $\Sbra{T\apostrophe\Par{\varphi_k}}\Par{e_j}=\varphi_k\BigPar{\sum_{i=1}^n A_{j,i}e_i}=A_{j,k}.$\par\quad\Hb
+By (3.F.9), $T\apostrophe\Par{\varphi_k}=\sum_{j=1}^n A_{j,k}\varphi_j.$ \Corollary \,\,\,$\Mt{T\apostrophe}=A=\Mt{T}{^t}.$\vspace{3pt}\par\quad\Hb
+Now $\BigPar{\Phi^{-1}T\apostrophe\Phi}\Par{e_k}=\BigPar{\Phi^{-1}T\apostrophe}\Par{\varphi_k}=\Phi^{-1}\BigPar{\sum_{j=1}^n A_{j,k}\varphi_j}=\sum_{j=1}^n A_{j,k}e_j=e_k A^t=Se_k.$\vspace{3pt}\par\quad\Hb
+Thus $1$ is an eigval of $S=\Phi^{-1}T\apostrophe\Phi,$ so of $T\apostrophe,$ \Sbra{ by Problem (15) }, so of $T,$ \Sbra{ by (4E 5.A.15) }.\PfEnd
 \SepLine
 
 \ProblemB{
@@ -3609,9 +3645,7 @@ To prove the other direction, notice that $\overline{{\overline\lambda}}=\lambda
 \Or Suppose $\lambda=a+\i b$ is an eigval of $T_{\Cbb}$ with an eigvec $v+\i u.$\par\quad\Hb
 Because $T_{\Cbb}\Par{v+\i u}=\lambda\Par{v+\i u}=\Par{av-bu}+\i\Par{au+bv}=Tv+\i Tu\Longrightarrow Tv=av-bu,Tu=au+bv.$\par\quad\Hb
 Now $T_{\Cbb}\Par{\overline{v+\i u}}=Tv-\i Tu=\Par{av-bu}-\i\Par{au+bv}=\Par{a-\i b}\Par{v-\i u}=\overline\lambda\Par{\overline{v-\i u}}.$ Similarly.\PfEnd
-\SepLine
-
-\pagebreak
+\SepLine\pagebreak
 
 \ProblemN{\hypertarget{5A21}{21}}{
 	\TextNL{Suppose $T\in\Lm{V}$ is inv.}
@@ -3629,7 +3663,7 @@ Now $T_{\Cbb}\Par{\overline{v+\i u}}=Tv-\i Tu=\Par{av-bu}-\i\Par{au+bv}=\Par{a-\
 \SepLine
 
 \ProblemN{\hypertarget{5A23}{23}}{
-	\TextNL{Suppose $S, T\in\Lm{V}$. Prove that $ST$ and $TS$\, have the same eigvals.\vspace{4pt}}
+	\TextNL{Suppose $S, T\in\Lm{V}$. Prove that $ST$ and $TS$\, have the same eigvals.\vspace{2pt}}
 }Suppose $\lambda$ is an eigval of $ST$ with an eigvec $v.$ Then $T\Par{STv}=\lambda Tv=TS\Par{Tv}.$\par
 \Blind{\Solution} If $Tv=0$ \Par{ while $v\neq 0$ }, then $T$ is not inje $\Rightarrow\Par{TS-0I}$ and $\Par{ST-0I}$ are not inje.\par
 \Blind{\Solution} Thus $\lambda=0$ is an eigval of $ST$ and $TS$ with the same eigvec $v.$\par
@@ -3639,9 +3673,8 @@ Now $T_{\Cbb}\Par{\overline{v+\i u}}=Tv-\i Tu=\Par{av-bu}-\i\Par{au+bv}=\Par{a-\
 \ProblemBnoor{\hypertarget{5A2e20}{2E 20}}{
 	\TextB{Suppose $T\in\Lm{V}$ has $\dim V$ distinct eigvals and $S\in\Lm{V}$ has the same eigvecs}
 	\TextB{\Par{ but might not with the same eigvals }. Prove that $ST=TS.$}
-}\par\quad
-Let $n=\dim V.$ For each $j\in\Bra{1,\dots,n},$ let $v_j$ be an eigvec with eigval $\lambda_j$ of $T$ and $\alpha_j$ of $S$.\par\quad
-Then $\Par{v_1,\dots,v_n}$ is a basis of $V.$ Because $\Par{ST}v_j=\alpha_j\lambda_j v_j=\Par{TS}v_j$ for each $j.$ Hence $ST=TS.$\PfEnd
+}Let $n=\dim V.$ For each $j\in\Bra{1,\dots,n},$ let $v_j$ be an eigvec with eigval $\lambda_j$ of $T$ and $\alpha_j$ of $S$.\par
+\Blind{\Solution} Then $B_V=\Par{v_1,\dots,v_n}.$ Because $\Par{ST}v_j=\alpha_j\lambda_j v_j=\Par{TS}v_j$ for each $j.$ Hence $ST=TS.$\PfEnd
 \SepLine
 
 \ProblemBnoor{\hypertarget{5A4e37}{4E 5.A.37}}{
@@ -3649,45 +3682,33 @@ Then $\Par{v_1,\dots,v_n}$ is a basis of $V.$ Because $\Par{ST}v_j=\alpha_j\lamb
 	\TextB{Define $\mathcal{A}\in\Lm[\BigPar]{\Lm{V}}$ by $\mathcal{A}\Par{S} = TS$ for each $S\in\Lm{V}$.}
 	\TextB{Prove that the set of eigvals of \,$T$ equals the set of eigvals of $\mathcal{A}$.}
 }\par\quad
-(a) Suppose $v_1,\dots,v_m$ are all the linely inde eigvecs of $T$\par\quad\Ha
-with correspd eigvals $\lambda_1,\dots,\lambda_m,$ possibly with repetitions. Extend to $B_V=\Par{v_1,\dots,v_m,\dots,v_n}.$\par\quad\Ha
-Note that for each $k\in\Bra{1,\dots,m},\Span{v_k}\subseteq\null\Par{T-\lambda_k I}.$\par\quad\Ha
-Define $S_k\in\Lm{V}$ by $S_k\Par{v_j}=v_k$ for each $j\in\Bra{1,\dots,n}$,\par\quad\Ha\qquad\,
-so that $\range S_k=\Span{v_k}$ for each $k\in\!\Bra{1,\dots,m}$, then $\mathcal{A}\Par{S_k}=TS_k=\lambda_k S_k.$\par\quad\Ha
-Thus the eigvals of $T$ are eigvals of $\mathcal{A}.$\par\quad
-(b) Suppose $\lambda_1,\dots,\lambda_m$ are all the eigvals of $\mathcal{A}$ with correspd eigvecs $S_1,\dots,S_m.$\par\quad\Hb
-Then for each $k\in\Bra{1,\dots,m},$ $\exists\,v\in V,0\neq u=S_k\Par{v}\in V\Rightarrow Tu=\Par{TS_k} v=\Par{\lambda_k S_k} v=\lambda_k u.$\par\quad\Hb
-Thus the eigvals of $\mathcal{A}$ are eigvals of $T.$\PfEnd\vspace{2pt}\quad
-\Or \par\quad
-(a) Suppose $\lambda$ is an eigval of $T$ with an eigvec $v.$ Let $v_1=v$ and extend to $B_V=\Par{v_1,\dots,v_m}.$\par\quad\Ha
-Define $S\in\Lm{V}$ by $Sv_1=v_1,\,\,Sv_k=0$ for $k\geqslant 2.$ Then $\Par{T-\lambda I}Sv_1=0=\Par{T-\lambda I}Sv_k=0.$\par\quad\Ha
-Hence $\Par{T-\lambda I}S=0\Rightarrow TS=\lambda S$ while $S\neq 0.$\par\quad
-(b) Suppose $\lambda$ is an eigval of $\mathcal{A}$ with an eigvec $S.$ Then $\Par{T-\lambda I}S=0$ while $S\neq 0.$\par\quad\Hb
-Note that $\zeroSubs\subsetneq\range S\subseteq\null\Par{T-\lambda I}.$ Thus $\Par{T-\lambda I}$ is not inje.\PfEnd\vspace{4pt}
-\Comment\,\,\, {If $\mathcal{A}\Par{S}=ST,\forall S\in\Lm{V}.$ Then the eigvals of $\mathcal{A}$ are not the eigvals of $T.$}
-\SepLine\pagebreak
+(a) Suppose $\lambda$ is an eigval of $T$ with an eigvec $v=v_1.$ Let $B_V=\Par{v_1,\dots,v_m,\dots,v_n}.$\par\quad\Ha
+Note that $\Span{v}\subseteq\null\Par{T-\lambda I}.$ Define $S\in\Lm{V}$ by $S\Par{v_j}=v$ for each $j\in\Bra{1,\dots,n}.$\par\quad\Ha
+\Or Define $S\in\Lm{V}$ by $Sv_1=v_1,\,\,Sv_j=0$ for $j\geqslant 2.$ Then $\Par{T-\lambda I}Sv_1=0=\Par{T-\lambda I}Sv_k=0.$\par\quad\Ha
+Then $\Par{T-\lambda I}S=0.$ Thus $\mathcal{A}\Par{S}=TS=\lambda S$ while $S\neq 0.$ Hence $\lambda$ is an eigval of $\mathcal{A}.$\vspace{4pt}\par\quad
+(b) Suppose $\lambda$ is an eigval of $\mathcal{A}$ with an eigvec $S.$\par\quad\Hb
+Then $\exists\,v\in V,0\neq u=S\Par{v}\in V\Rightarrow Tu=\Par{TS} v=\Par{\lambda S} v=\lambda u.$ Thus $\lambda$ is an eigval $T.$\par\quad\Hb
+\Or Because $TS-\lambda S=\Par{T-\lambda I}S=0\Rightarrow\zeroSubs\subsetneq\range S\subseteq\null\Par{T-\lambda I}.$ $\Par{T-\lambda I}$ is not inje.\PfEnd\vspace{4pt}
+\Comment \,\,\,{If $\mathcal{A}\Par{S}=ST,\forall S\in\Lm{V}.$ Then the eigvals of $\mathcal{A}$ are not the eigvals of $T.$}
+\SepLine
 
 \ProblemN{\hypertarget{5A25}{25}}{
 	\TextNL{Suppose $T\in\Lm{V}$ and $u, w$ are eigvecs of $T$ such that $u + w$ is also an eigvec of $T$.}
-	\TextNL{Prove that $u$ and $w$ are eigvecs of $T$ correspd to the same eigval.}
-}\par\quad
-Suppose $\lambda_1,\lambda_2,\lambda_0$ are eigvals of $T$ correspd to $u,w,u+w$ respectively.\par\quad
-Then $T\Par{u+w}=\lambda_0\Par{u+w}=Tu+Tw=\lambda_1 u+\lambda_2 w\Rightarrow \Par{\lambda_0-\lambda_1}u=\Par{\lambda_2-\lambda_0}w.$\par\quad
-Note that $u,w,u+w$ are nonzero. If $\Par{u,w}$ is linely depe, then let $w=cu,$ therefore\par\quad
-$\Par[0pt]{-}\;\lambda_2 cu=Tw=cTu=\lambda_1 cu\Rightarrow\lambda_2=\lambda_1.$\par\quad
-$\Par[0pt]{=}\;\lambda_0\Par{u+w}=T\Par{u+w}=\lambda_1 u+\lambda_1 cu=\lambda_1\Par{u+w}\Rightarrow\lambda_0=\lambda_1.$\par\quad
-Otherwise, $\Par{u,w}$ is linely inde. Then $\lambda_0-\lambda_1=\lambda_2-\lambda_0=0\,\Rightarrow\lambda_1=\lambda_2=\lambda_0.$\PfEnd\quad
-\Or Assume that $\lambda_1\neq \lambda_2.$ Then $\Par{u,w}$ is linely inde. Thus $\lambda_0-\lambda_1=\lambda_0-\lambda_2.$ Contradicts.\PfEnd
+	\TextNL{Prove that $u$ and $w$ correspd to the same eigval.}
+}Suppose $\lambda_1,\lambda_2,\lambda_0$ are eigvals of $T$ with eigvecs to $u,w,u+w$ respectively.\par
+\Blind{\Solution} Then $T\Par{u+w}=\lambda_0\Par{u+w}=Tu+Tw=\lambda_1 u+\lambda_2 w\Rightarrow \Par{\lambda_0-\lambda_1}u=\Par{\lambda_2-\lambda_0}w.$\par
+\Blind{\Solution} If $\Par{u,w}$ is linely depe, then let $w=cu,$ therefore $\lambda_2 cu=Tw=cTu=\lambda_1 cu\Rightarrow\lambda_2=\lambda_1.$\par
+\Blind{\Solution} Otherwise, $\Par{u,w}$ is linely inde. Then $\lambda_0-\lambda_1=\lambda_2-\lambda_0=0\,\Rightarrow\lambda_1=\lambda_2=\lambda_0.$\PfEnd
+\Blind{\Solution} \Or Assume that $\lambda_1\neq \lambda_2.$ Then $\Par{u,w}$ is linely inde. Thus $\lambda_0-\lambda_1=\lambda_0-\lambda_2.$ Contradicts.\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{5A26}{26}}{
 	\TextNL{Suppose $T\in\Lm{V}$ is such that every nonzero vec in $V$ is an eigvec of \,$T$.}
 	\TextNL{Prove that $T$ is a scalar multi of the identity operator.}
-}\par\quad
+}If $\dim V=0,1$ then we are done. Suppose $\dim V\geqslant 2.$\par\quad
 Because $\forall v\in V,\exists\,!\,\lambda_v\in\Fbb,Tv=\lambda_v v.$ For any two distinct nonzero vecs $v,w\in V,$\par\quad
 $T\Par{v+w}=\lambda_{v+w}\Par{v+w}=Tv+Tw=\lambda_v v+\lambda_w w\Rightarrow\Par{\lambda_{v+w}-\lambda_v}v=\Par{\lambda_w-\lambda_{v+w}}w.$\PfEnd\vspace{4pt}\quad
-\Or If $\dim V=0$ or $1.$ We are done.\par\quad
-Suppose $\dim V\geqslant 2.$ For any two nonzero vecs $u,v\in V,u,v$ are eigvecs.\par\quad
+\Or For any two nonzero vecs $u,v\in V,u,v$ are eigvecs.\par\quad
 If $u+v\neq 0,$ then $u+v$ is also an eigvec. Otherwise, $u+v=0,$ then $Tu=-Tv=\lambda u=-\lambda v.$\par\quad
 Thus by Problem (25), $\forall u,v\in V,Tu=\lambda u,Tv=\lambda v\Rightarrow\forall v\in V,Tv=\lambda v.$\PfEnd
 \SepLine
@@ -3696,83 +3717,48 @@ Thus by Problem (25), $\forall u,v\in V,Tu=\lambda u,Tv=\lambda v\Rightarrow\for
 	\TextNL{Suppose $V$ is finite-dim and $k\in\Bra{1, \dots , \dim V - 1}$.}\qquad
 	\TextNL{Suppose $T\in\Lm{V}$ is such that every subsp of \,$V$ of dim $k$ is invar under $T$.}\qquad
 	\TextNL{Prove that $T$ is a scalar multi of the identity operator.}
-}We prove the contrapositive:\par\quad
-{\tgsl Suppose $T$ is not a scalar multi of $I$. Prove that $\exists$ an invar subsp $U$ of $V$ under $T$ such that $\dim U=k$.}\par\quad
+}If $\dim V\leqslant 1$ then we are done. Suppose $\dim V\geqslant 2.$\par\quad
+We prove the contrapositive: {\tgsl If $T$ is not a scalar multi of $I$. Then $\exists$ subsp $U$ of dim $k$ not invar under $T.$}\par\quad
 By Problem (26), $\exists\,v\in V$ and $v\neq 0$ such that $v$ is not an eigvec of $T.$\par\quad
-Thus $\Par{v,Tv}$ is linely inde. Extend to a basis of $V$ as $\Par{v,Tv,u_1,\dots,u_n}.$\par\quad
-Let $U=\Span{v,u_1,\dots,u_{k-1}}\Rightarrow U$ is not an invar subsp of $V$ under $T.$\par\quad
-\Or Suppose $0\neq v=v_1\in V$ and extend to a basis of $V$ as $\Par{v_1,\dots,v_n}.$\par\quad
-Suppose $Tv_1=c_1 v_1+\dots+c_n v_n,\exists\,!\,c_i\in\Fbb.$\par\quad
-Consider a $k\,$-$\,\dim$ subsp $U=\Span{v_1,v_{\alpha_1},\dots,v_{\alpha_{k-1}}},$\par\qquad\qquad\,\,
-where $\alpha_j\in\Bra{2,\dots,n}$ for each $j$, and $\alpha_1,\dots,\alpha_{k-1}$ are distinct.\par\quad
-Because every subsp such $U$ is invar.\par\quad
-Thus $Tv_1=c_1 v_1+\dots+c_n v_n\in U\Rightarrow c_2=\dots=c_n=0,$\par\quad
-for if not, for each $c_i\neq 0,$ choose $U_i$ such that $\alpha_j\in\Bra{\overbrace{2,\dots,i-1,i+1,\dots,n}^{\text{length}\,\envFontSmall\Par{n-2}}}$ for each $j$,\par\quad
-hence for $Tv_1=c_1 v_1+\dots+c_{i-1}v_{i-1}+c_{i+1}v_{i+1}+\dots+c_n v_n\in U_i,$ we conclude that $c_i=0.$\par\quad
-$\Rightarrow Tv_1=c_1 v_1, $又 $v_1=v\in V$ is arbitrary $\Rightarrow T=\lambda I$ for some $\lambda.$\PfEnd
-\SepLine\pagebreak
-
-\ProblemBnoor{\hypertarget{5A4e39}{4E 5.A.39}}{
-	\TextB{Suppose $V$ is finite-dim and $T\in\Lm{V}$.}
-	\TextB{Prove that $T$ has an eigval $\Longleftrightarrow\exists\,$ an invar subsp $U$ under $T$ of dimension $\dim V - 1$.}
-}\par\quad
-(a) Suppose $\lambda$ is an eigval of $T$ with an eigvec $v.$ \Par{ If $\dim V=1,$ then $U=\zeroSubs$ and we are done. }\par\quad\Ha
-Extend $v_1=v$ to $B_V=\Par{v_1,v_2\dots,v_n}.$\par\quad\Ha
-{\tgbfx Step 1.} If $\exists\,w_1\in\Span{v_2,\dots,v_n}$ such that $0\neq Tw_1\in\Span{v_1}.$\par\quad\Ha
-\Blind{{\tgbfx Step 1.}} Then extend $w_1=\alpha_{1,1}$ to a basis of $\Span{v_2,\dots,v_n}$ as $\Par{\alpha_{1,1},\dots,\alpha_{1,n-1}}.$\par\quad\Ha
-\Blind{{\tgbfx Step 1.}} Otherwise, we stop at step $1.$\par\quad\Ha
-%{\tgbf Step 2} $\,$If $\,\exists\,w_2\in\Span{\alpha_{1,2},\dots,\alpha_{1,n-1}}$ such that $0\neq Tw_2\in\Span{v_1,w_1},$\par\qquad\qquad\quad\,
-%then extend $w_2=\alpha_{2,1}$ to a basis of $\Span{\alpha_{1,2},\dots,\alpha_{1,n-1}}$ as $\Par{\alpha_{2,1},\dots,\alpha_{2,n-2}}.$\par\qquad\qquad\quad\,
-%Otherwise, we stop at step $2.$\par\quad\Ha
-{\tgbfx Step k.} If $\exists\,w_k\in\Span{\alpha_{k-1,2},\dots,\alpha_{k-1,n-k+1}}$ such that $0\neq Tw_k\in\Span{v_1,w_1,\dots,w_{k-1}},$\par\quad\Ha
-\Blind{{\tgbfx Step k.}} then extend $w_k=\alpha_{k,1}$ to a basis of $\Span{\alpha_{k-1,2},\dots,\alpha_{k-1,n-k+1}}$ as $\Par{\alpha_{k,1},\dots,\alpha_{k,n-k}}.$\par\quad\Ha
-\Blind{{\tgbfx Step 1.}} Otherwise, we stop at step $k.$\par\vspace{4pt}\quad\Ha
-Finally, we stop at step $m,$ thus we get $\Par{v_1,w_1,\dots,w_{m-1}}$ and $\Par{\alpha_{m-1,2},\dots,\alpha_{m-1,n-m+1}},$\par\quad\Ha
-$\range T\mid_{\Span{w_1,\dots,w_{m-1}}}=\Span{v_1,w_1,\dots,w_{m-2}}\Rightarrow\dim\null T\mid_{\Span{w_1,\dots,w_{m-1}}}=0,$\par\quad\Ha
-$\underbrace{\Span{v_1,w_1,\dots,w_{m-1}}}_{\dim m}$ and $\underbrace{\Span{\alpha_{m-1,2},\dots,\alpha_{m-1,n-m+1}}}_{\dim \Par{n-m}}$ are invar under $T.$\par\quad\Ha
-Let $U=\Span{\alpha_{m-1,2},\dots,\alpha_{m-1,n-m+1}}\oplus\Span{v_1,w_1,\dots,w_{m-2}}$ and we are done.\PfEnd\quad\Ha
-\Comment \,\,\,Both $\Span{v_2,\dots,v_n}$ and $U\oplus\Span{w_{m-1}}$ are in $\mathcal{S}_V \Span{v_1}.$\par\vspace{6pt}\quad\Ha
-\Or Note that $\dim\null\Par{T-\lambda I}\geqslant 1.$ And $\dim\range\Par{T-\lambda I}\leqslant\dim V-1.$\par\quad\Ha
-Let $B_{\range\SmallPar{T-\lambda I}}=\Par{w_1,\dots,w_m},\;B_V=\Par{w_1,\dots,w_m,u_1,\dots,u_n}.$\par\quad\Ha
-If $m=\dim V-1.$ \Sbra{ $\Longleftrightarrow n=0.$ } Then $\range\Par{T-\lambda I}$ is an invar subsp of dim $\dim V-1.$\par\quad\Ha
-Otherwise, choose $k\in\Bra{1,\dots,n}$ and then let $U=\Span{w_1,\dots,w_m,u_1,\dots,u_{k-1},u_{k+1},\dots,u_n}.$\par\quad\Ha
-By Problem (1)(b), $U$ is invar under $\Par{T-\lambda I}.$ Now $u\in U\Rightarrow \Par{T-\lambda I}\Par{u}\in U\Rightarrow Tu\in U.$\par\vspace{6pt}\quad
-(b) Suppose $U$ is an invar subsp under $T$ of dim $m=\dim V-1.$ \Par{ If $m=0,$ then we are done. }\par\quad\Hb
-Let $B_U=\Par{u_1,\dots,u_m},B_V=\Par{u_0,u_1,\dots,u_m}.$ We discuss in cases:\par\quad\Hb
-For $Tu_0\in U,$ then $\range T=U$ so that $T$ is not surj $\Longleftrightarrow \null T\neq\zeroSubs\Longleftrightarrow$ $0$ is an eigval of $T.$\par\quad\Hb
-For $Tu_0\not\in U,$ then $Tu_0=a_0 u_0+a_1 u_1+\dots+a_mu_m.$\par\quad\Hb
-(1) If $Tu_0\in\Span{u_0},$ then we are done.\par\quad\Hb
-(2) Otherwise, if $\range T\mid_U=U,$ then $Tu_0=a_0 u_0$ and we are done;\par\qquad\qquad\qquad\quad\Hb
-otherwise, $T\mid_U:U\rightarrow U$ is not surj ( $\Rightarrow$ not inje ), suppose $\range T\mid_U\neq\zeroSubs$\par\qquad\qquad\qquad\qquad\quad
-( Suppose $\range T\mid_U=\zeroSubs$. If $\dim U=0$ then we are done.\par
-\rightline{Otherwise $\exists\,u\in U\backslash\zeroSubs,Tu=0$ and we are done. )\qquad\qquad}\par\qquad\qquad\qquad\quad\Hb
-then $\exists\,u\in U\backslash\zeroSubs,Tu=0,$ we are done.\PfEnd\vspace{4pt}\quad
-\Or Consider $T\mySlash U\in\Lm{V\mySlash U}.$ Because $\dim V\mySlash U=1.$ $\exists\,\lambda\in\Fbb,T\mySlash U=\lambda I.$ By Problem (35).\PfEnd
+Thus $\Par{v,Tv}$ is linely inde. Extend to $B_V=\Par{v,Tv,u_1,\dots,u_n}.$\par\quad
+Let $U=\Span{v,u_1,\dots,u_{k-1}}\Rightarrow U$ is not an invar subsp of $V$ under $T.$\PfEnd\vspace{4pt}\quad
+\Or Suppose $0\neq v=v_1\in V$ and extend to $B_V=\Par{v_1,\dots,v_n}.$\par\quad
+Suppose $Tv_1=c_1 v_1+\dots+c_n v_n,\exists\,!\,c_i\in\Fbb.$ Consider a $k$\hspace{1pt}-\hspace{1pt}$\dim$ subsp $U=\Span{v_1,v_{\alpha_1},\dots,v_{\alpha_{k-1}}}.$\par\quad
+Where $\alpha_j\in\Bra{2,\dots,n}$ for each $j$, and $\alpha_1,\dots,\alpha_{k-1}$ are distinct. Because every subsp such $U$ is invar.\par\quad
+Thus $Tv_1=c_1 v_1+\dots+c_n v_n\in U\Longrightarrow c_2=\dots=c_n=0.$\vspace{-10pt}\par\quad
+For if not, suppose $c_i\neq 0,$ let $W=\Span{v_1,v_{\beta_1},\dots,v_{\beta_{k-1}}},$ where each $\beta_j\in\Bra{\overbrace{2,\dots,i-1,i+1,\dots,n}^{\text{of length }\SmallPar{n-2}\;\geqslant\;k\,-\,1}}.$\par\quad
+Hence $Tv_1=c_1 v_1.$ Because $v_1=v\in V$ is arbitrary. We conclude that $T=\lambda I$ for some $\lambda\in\Fbb.$\PfEnd\vspace{4pt}\quad
+\Or For each $k\in\Bra{1,\dots,\dim V-1},$ define $P\Par{k}:$ if every subsp of dim $k$ is invar, then $T=\lambda I.$\par\quad
+(i) If every subsp of dim $1$ is invar, then by Problem (26), $T=\lambda I.$ Thus $P\Par{1}$ holds.\par\quad\Endi
+(ii) Assume that $P\Par{k}$ holds for $k\in\Bra{1,\dots,\dim V-1}.$ And every subsp of dim $k+1$ is invar.\par\quad\Hii
+Let $U$ be a subsp of dim $k.$ If $\dim U=\dim V-1$ then extend $B_U$ to $B_V$ and we are done.\par\quad\Hii
+Suppose $\dim U\in\Bra{1,\dots,\dim V-2}.$ Choose two linely inde vecs $v,w\not\in U.$\par\quad\Hii
+Because $U\oplus\Span{v}$ and $U\oplus\Span{w}$ of dim $k+1$ are invar.\par\quad\Hii
+Suppose $u\in U.$ Let $Tu=a_1u_1+bv=a_2u_2+cw,\exists\,!\,u_1,u_2\in U,a_1,a_2,b,c\in\Fbb.$\par\quad\Hii
+Now $a_1u_1-a_2u_2=cw-bv\in U\cap\Span{v}=\zeroSubs\Rightarrow b=c=0.$ Thus $Tu\in U.$\par\quad\Hii
+Because $P\Par{k}$ holds, we conclude that $T=\lambda I.$ Thus $P\Par{k+1}$ holds.\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{5A29}{29}}{
 	\TextNL{Suppose $T\in\Lm{V}$ and $\range T$ is finite-dim.}
 	\TextNL{Prove that $T$ has at most $1 + \dim\range T$ distinct eigvals.}
-}\par\quad
-Let $\lambda_1,\dots,\lambda_m$ be the distinct eigvals of $T$ with correspd eigves $v_1,\dots,v_m.$\par\quad
-\BigPar{ Because $\range T$ is finite-dim. The correspd eigvals are finite. }\par\quad
-Then $\Par{v_1,\dots,v_m}$ linely inde $\Longrightarrow\Par{\lambda_1 v_1,\dots,\lambda_m v_m}$ linely inde, if each $\lambda_k\neq 0.$\par\quad
-Otherwise, $\exists\,!\,\lambda_k=0.$ Now $\Par{\lambda_1v_1,\dots,\lambda_{k-1}v_{k-1},\lambda_{k+1}v_{k+1},\dots,\lambda_mv_m}$ is linely inde.\par\quad
-Hence, by [2.23], $m-1\leqslant\dim\range T.$\PfEnd
+}Let $\lambda_1,\dots,\lambda_m$ be the distinct eigvals of $T$ with correspd eigves $v_1,\dots,v_m.$\par
+\Blind{\Solution} \BigPar{ Because $\range T$ is finite-dim. The correspd eigvals are finite. }\par
+\Blind{\Solution} Then $\Par{v_1,\dots,v_m}$ linely inde $\Longrightarrow\Par{\lambda_1 v_1,\dots,\lambda_m v_m}$ linely inde, if each $\lambda_k\neq 0.$\par
+\Blind{\Solution} Otherwise, $\exists\,!\,\lambda_k=0.$ Now $\Par{\lambda_1v_1,\dots,\lambda_{k-1}v_{k-1},\lambda_{k+1}v_{k+1},\dots,\lambda_mv_m}$ is linely inde.\par
+\Blind{\Solution} Hence, by [2.23], $m-1\leqslant\dim\range T.$\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{5A30}{30}}{
 	\TextNL{Suppose $T\in\Lm{\Rbb^3}$ and $-4,5,\sqrt{7}$ are eigvals. Prove that $\exists\,x,Tx - 9x = \Par{-4, 5, \sqrt{7}}$.}
-}$T$ has $\dim\Rbb^3$ eigvals not including $9\Rightarrow\Par{T-9I}$ is surj. $x=\Par{T-9I}{^{-1}}\Par{-4,5,\sqrt{7}}.$\PfEnd
+}$T$ has $\dim\Rbb^3$ eigvals not including $9\Rightarrow\Par{T-9I}$ is inv. $x=\Par{T-9I}{^{-1}}\Par{-4,5,\sqrt{7}}.$\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{5A31}{31}}{
-	\TextNL{Suppose $V$ is finite-dim, and $v_1,\dots,v_m \in V$.}
-	\TextNL{Prove that $\Par{v_1,\dots,v_m}$ is linely inde}
-	\TextNL{\Blind{Prove that} $\Longleftrightarrow\exists\,T\in\Lm{V},$ $v_1,\dots,v_m$ are eigvecs of $T$ correspd to distinct eigvals.\vspace{-6pt}}
-}\par\quad
-Suppose $\Par{v_1,\dots,v_m}$ is linely inde. Let $B_V=\Par{v_1,\dots,v_m,\dots,v_n}.$\par\quad
-Define $T\in\Lm{V}$ by $Tv_k=k\cdot v_k$ for each $k\in\Bra{1,\dots,m,\dots,n}.$ Conversely by [5.10].\PfEnd\vspace{-4pt}
+	\TextNL{Suppose $V$ is finite-dim, and $v_1,\dots,v_m \in V$. Prove that}
+	\TextNL{$\Par{v_1,\dots,v_m}$ is linely inde $\Longleftrightarrow v_1,\dots,v_m$ are eigvecs of some $T$ correspd to distinct eigvals.}
+}Suppose $\Par{v_1,\dots,v_m}$ is linely inde. Let $B_V=\Par{v_1,\dots,v_m,\dots,v_n}.$\par
+\Blind{\Solution} Define $T\in\Lm{V}$ by $Tv_k=k\cdot v_k$ for each $k\in\Bra{1,\dots,m,\dots,n}.$ Conversely by [5.10].\PfEnd\vspace{-4pt}
 \SepLine
 
 \ProblemB{
@@ -3788,7 +3774,7 @@ Define $T\in\Lm{V}$ by $Tv_k=k\cdot v_k$ for each $k\in\Bra{1,\dots,m,\dots,n}.$
 	\TextB{}
 }\par\quad
 (a) Define $V$ and $D\in\Lm{V}$ as in H{\small INT}. Then because for each $k, D\Par{e^{\lambda_k x}}=\lambda_k e^{\lambda_k x}.$\par\quad\Ha
-Thus $\lambda_1,\dots,\lambda_n$ are distinct eigvals of $D.$ By [5.10], $\Par{e^{\lambda_1x},\dots,e^{\lambda_nx}}$ is linely inde in $\Rbb^{\Rbb}.$\PfEnd\vspace{4pt}\quad
+Thus $\lambda_1,\dots,\lambda_n$ are distinct eigvals of $D.$ By [5.10], $\Par{e^{\lambda_1x},\dots,e^{\lambda_nx}}$ is linely inde in $\Rbb^{\Rbb}.$\PfEnd\vspace{2pt}\quad
 (b) Let $V=\Span[\BigPar]{\cos\Par{\lambda_1 x},\dots,\cos\Par{\lambda_n x}}.$ Define $D\in\Lm{V}$ by $Df=f\apostrophe.$\par\quad\Hb
 Then because $D\BigPar{\cos\Par{\lambda_k x}}=-\lambda_k\sin\Par{\lambda_k x}.$ 又 $D\BigPar{\sin\Par{\lambda_k x}}=\lambda_k\cos\Par{\lambda_k x}.$\par\quad\Hb
 Thus $D^2\BigPar{\cos\Par{\lambda_k x}}=-\lambda_k^2\cos\Par{\lambda_k x}.$\par\quad\Hb
@@ -3798,36 +3784,35 @@ And then $\BigPar{\cos\Par{\lambda_1 x},\dots,\cos\Par{\lambda_n x}}$ is linely 
 \SepLine
 
 \ProblemN{\hypertarget{5A33}{33}}{
-	\TextNL{Suppose $T\in\Lm{V}.$ Prove that $T\mySlash \Par{\range T}=0.$}
+	\TextNL{Suppose $T\in\Lm{V}.$ Prove that $T\mySlash \Par{\range T}=0.$\vspace{2pt}}
 }$v+\range T\in V\mySlash \range T\Longrightarrow v+\range T\in\null\BigPar{T\mySlash \Par{\range T}}.$ Hence $T\mySlash \Par{\range T}=0.$\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{5A34}{34}}{
-	\TextNL{Suppose $T\in\Lm{V}.$ Prove that $T\mySlash \Par{\null T}$ is inje $\Longleftrightarrow\Par{\null T}\bigcap\Par{\range T}=\zeroSubs.$}
-}\par\quad
-\NOTICE that $\BigPar{T\mySlash \Par{\null T}}\Par{u+\null T}=Tu+\null T=0\Longleftrightarrow Tu\in\Par{\null T}\bigcap\Par{\range T}.$\par\quad
-Now $T\mySlash \Par{\null T}$ is inje $\Longleftrightarrow u+\null T=0\Longleftrightarrow Tu=0 \Longleftrightarrow\Par{\null T}\bigcap\Par{\range T}=\zeroSubs.$\PfEnd
+	\TextNL{Suppose $T\in\Lm{V}.$ Prove that $T\mySlash \Par{\null T}$ is inje $\Longleftrightarrow\Par{\null T}\bigcap\Par{\range T}=\zeroSubs.$\vspace{2pt}}
+}\NOTICE that $\BigPar{T\mySlash \Par{\null T}}\Par{u+\null T}=Tu+\null T=0\Longleftrightarrow Tu\in\Par{\null T}\bigcap\Par{\range T}.$\par
+\Blind{\Solution} Now $T\mySlash \Par{\null T}$ is inje $\Longleftrightarrow u+\null T=0\Longleftrightarrow Tu=0 \Longleftrightarrow\Par{\null T}\bigcap\Par{\range T}=\zeroSubs.$\PfEnd
 \SepLine
 
 \ProblemB{
-	\hypertarget{5A4e38}{}\TextB{Suppose $V$ is finite-dim, $T\in\Lm{V}$, and $U$ is a subsp of \,$V$ invar under $T$.}
-	\TextB{The quotient operator $T\mySlash U\in\Lm{V\mySlash U}$ is defined by}
-	\TextB{\centerline{$\Par{T\mySlash U}\Par{v + U} = Tv + U$ for each $v\in V$.}}
-	(a) \TextB{Show that the definition of $T\mySlash U$ makes sense}
-	\Ha\TextB{( which requires using the condition that $U$ is invar under $T$ )}
-	\Ha\TextB{and show that $T\mySlash U$ is an operator on $V\mySlash U$.}
+	\hypertarget{5A4e38}{}\TextB{Suppose $V$ is finite-dim, $T\in\Lm{V}$, and $U$ is an invar subsp of \,$V$ under $T$.}
+	\TextB{Define $T\mySlash U:V\mySlash U\rightarrow V\mySlash U$ by $\Par{T\mySlash U}\Par{v + U} = Tv + U$ for each $v\in V$.}
+	(a) \TextB{Show that $T\mySlash U$ is well-defined and is linear. {\large Requires that $U$ is invar under $T.$}}
 	(b) \Sbra{{\normalsize\OR \Onumber{\hypertarget{5A35}{35}}\,}} \TextB{Show that each eigval of $T\mySlash U$ is an eigval of $T$.}
 }\par\quad
 (a) $v+U=w+U\Longleftrightarrow v-w\in U\Longrightarrow T\Par{v-w}\in U\Longleftrightarrow Tv+U=Tw+U.$\par\quad\Ha
-Hence the definition of $T\mySlash U$ makes sense. Now we show that $T\mySlash U$ is linear.\par\quad\Ha
+Hence $T\mySlash U$ is well-defined. Now we show that $T\mySlash U$ is linear.\par\quad\Ha
 $\Par{T\mySlash U}\BigPar{\Par{v+U}+\lambda\Par{w+U}}=T\Par{v+\lambda w}+U=\Par{T\mySlash U}\Par{v+U}+\lambda\Par{T\mySlash U}\Par{w}.$ Checked.\vspace{4pt}\par\quad
-(b) Suppose $\lambda$ is an eigval of $T\mySlash U$ with an eigvec $v+U.$\par\quad\Hb
-Then $\Par{T\mySlash U}\Par{v+U}=\lambda\Par{v+U}=Tv+U=\lambda v+U\Rightarrow \Par{T-\lambda I}v\in U.$\par\quad\Hb
-If $\Par{T-\lambda I}v=0\Rightarrow Tv=\lambda v,$ then we are done.\par\quad\Hb
-Otherwise, then $\Par{T\mid_U-\lambda I}:U\rightarrow U$ is inv,\par\qquad\qquad\quad\Hb\,\,\,
-hence $\exists\,!\,w\in U,\Par{T\mid_U-\lambda I}\Par{w}=\Par{T-\lambda I} v\Rightarrow T\Par{v-w}=\lambda \Par{v-w}.$\par\quad\Hb
-Note that $v-w\neq 0\,\Par{$ for if not, $v\in U\Rightarrow v+U=0+U$ is not an eigvec $}.$\colorbox{yellow}{TODO}\PfEnd\quad\Hb
-\par
+(b) Suppose $\lambda$ is an eigval of $T\mySlash U$ with an eigvec $v+U.$ Then $Tv+U=\lambda v+U\Rightarrow \Par{T-\lambda I}v=u\in U.$\par\quad\Hb
+If $u=0\Rightarrow Tv=\lambda v,$ then we are done. Otherwise, we discuss in two cases.\par\quad\Hb
+If $\Par{T-\lambda I}\mid_U$ is inv. Then $\exists\,!\,w\in U,\Par{T-\lambda I}\Par{w}=u=\Par{T-\lambda I} v\Rightarrow T\Par{v+w}=\lambda\Par{v+w}.$\par\quad\Hb
+Note that $v+w\neq 0,$ for if not, $v\in U\Rightarrow v+U=0,$ contradicts. Thus $\lambda$ is an eigval of $T.$\par\quad\Hb
+If $\Par{T-\lambda I}\mid_U$ is not inv. Then because $V$ is finite-dim, $\Par{T-\lambda I}\mid_U$ is not inje,\par\quad\Hb
+so that $\exists\,w\in\null\Par{T-\lambda I}\mid_U,w\neq 0,\Par{T-\lambda I}w=0\Rightarrow Tw=\lambda w.$
+\PfEnd\vspace{6pt}\quad\Hb
+\Or Let $B_U=\Par{u_1,\dots,u_m}.$ Then $\BigPar{\Par{T-\lambda I}v,\Par{T-\lambda I}u_1,\dots,\Par{T-\lambda I}u_m}$ is linely inde in $U.$\par\quad\Hb
+So that $a_0\Par{T-\lambda I}v+a_1\Par{T-\lambda I}u_1+\dots+a_m\Par{T-\lambda I}u_m=0,\exists\,a_0,a_1,\dots,a_m\in\Fbb$ with some $a_i\neq 0.$\par\quad\Hb
+Let $w=a_0v+a_1u_1+\dots+a_mu_m\Longrightarrow Tw=\lambda w.$ Note that $w\neq 0,$ for if not, $a_0v\in U,$ each $a_i=0.$\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{5A36}{36}}{
@@ -3838,6 +3823,40 @@ And a subsp $U=\Bra{\,f\in\Rbb^{\Rbb}:\exists\,!\,m\in\Nbp,f\in\Span{e^x,\dots,e
 Define $T\in\Lm{V}$ by $Tf=e^x f.$ Then $\range T=U$ is invar under $T.$\par\quad
 Consider $\Par{T\mySlash U}\Par{1+U}=e^x+U=0\Longrightarrow 0$ is an eigval of $T\mySlash U$ but is not an eigval of $T$.\par\quad
 \Sbra{ $\null T=\zeroSubs,$ for if not, $\exists\,f\in V\backslash\zeroSubs,\Par{Tf}\Par{x}=e^{x}f\Par{x}=0,\forall x\in\Rbb\Rightarrow f=0,$ contradicts. }\PfEnd
+\SepLine
+
+\ProblemBnoor{\hypertarget{5A4e39}{4E 5.A.39}}{
+	\TextB{Suppose $V$ is finite-dim and $T\in\Lm{V}$.}
+	\TextB{Prove that $T$ has an eigval $\Longleftrightarrow\exists\,$ an invar subsp $U$ under $T$ of dimension $\dim V - 1$.}
+}\par\quad
+(a) Suppose $\lambda$ is an eigval of $T$ with an eigvec $v.$ \Par{ If $\dim V=1,$ then $U=\zeroSubs$ and we are done. }\par\quad\Ha
+Extend $v_1=v$ to $B_V=\Par{v_1,v_2\dots,v_n}.$\par\quad\Ha
+{\tgbfx Step 1.} If $\exists\,w_1\in\Span{v_2,\dots,v_n}$ such that $0\neq Tw_1\in\Span{v_1}.$\par\quad\Ha
+\Blind{{\tgbfx Step 1.}} Then extend $w_1=\alpha_{1,2}$ to a basis of $\Span{v_2,\dots,v_n}$ as $\Par{\alpha_{1,2},\dots,\alpha_{1,n}}.$\par\quad\Ha
+\Blind{{\tgbfx Step 1.}} Otherwise, we stop at step $1.$\par\quad\Ha
+{\tgbfx Step 2.} If $\exists\,w_2\in\Span{\alpha_{1,3},\dots,\alpha_{1,n}}$ such that $0\neq Tw_2\in\Span{v_1,w_1}.$\par\quad\Ha
+\Blind{{\tgbfx Step 2.}} Then extend $w_2=\alpha_{2,3}$ to a basis of $\Span{\alpha_{1,3},\dots,\alpha_{1,n}}$ as $\Par{\alpha_{2,3},\dots,\alpha_{2,n}}.$\par\quad\Ha
+\Blind{{\tgbfx Step 2.}} Otherwise, we stop at step $2.$\par\quad\Ha
+{\tgbfx Step k.} If $\exists\,w_k\in\Span{\alpha_{k-1,k+1},\dots,\alpha_{k-1,n}}$ such that $0\neq Tw_k\in\Span{v_1,w_1,\dots,w_{k-1}},$\par\quad\Ha
+\Blind{{\tgbfx Step k.}} Then extend $w_k=\alpha_{k,k+1}$ to a basis of $\Span{\alpha_{k-1,k+1},\dots,\alpha_{k-1,n}}$ as $\Par{\alpha_{k,k+1},\dots,\alpha_{k,n}}.$\par\quad\Ha
+\Blind{{\tgbfx Step 1.}} Otherwise, we stop at step $k.$\par\vspace{4pt}\quad\Ha
+Finally, we stop at step $m,$ thus we get $\Par{v_1,w_1,\dots,w_{m-1}}$ and $\Par{\alpha_{m-1,m},\dots,\alpha_{m-1,n}},$\par\quad\Ha
+$\range T\envFontLarge\mid\envFontDefault_{\Span{w_1,\dots,w_{m-1}}}=\Span{v_1,w_1,\dots,w_{m-2}}\Rightarrow\dim\null T\envFontLarge\mid\envFontDefault_{\Span{w_1,\dots,w_{m-1}}}=0,$\par\quad\Ha
+$\underbrace{\Span{v_1,w_1,\dots,w_{m-1}}}_{\dim m}$ and $\underbrace{\Span{\alpha_{m-1,m},\dots,\alpha_{m-1,n}}}_{\dim \Par{n-m}}$ are invar under $T.$\par\quad\Ha
+Let $U=\Span{\alpha_{m-1,m},\dots,\alpha_{m-1,n}}\oplus\Span{v_1,w_1,\dots,w_{m-2}}$ and we are done.\PfEnd\quad\Ha
+\Comment \,\,\,Both $\Span{v_2,\dots,v_n}$ and $U\oplus\Span{w_{m-1}}$ are in $\mathcal{S}_V \Span{v_1}.$\par\vspace{6pt}\quad\Ha
+\Or Note that $\dim\null\Par{T-\lambda I}\geqslant 1.$ And $\dim\range\Par{T-\lambda I}\leqslant\dim V-1.$\par\quad\Ha
+Let $B_{\range\SmallPar{T-\lambda I}}=\Par{w_1,\dots,w_m},\;B_V=\Par{w_1,\dots,w_m,u_1,\dots,u_n}.$\par\quad\Ha
+If $m=\dim V-1.$ \Sbra{ $\Longleftrightarrow n=0.$ } Then $\range\Par{T-\lambda I}$ is an invar subsp of dim $\dim V-1.$\par\quad\Ha
+Otherwise, choose $k\in\Bra{1,\dots,n}$ and then let $U=\Span{w_1,\dots,w_m,u_1,\dots,u_{k-1},u_{k+1},\dots,u_n}.$\par\quad\Ha
+By Problem (1)(b), $U$ is invar under $\Par{T-\lambda I}.$ Now $u\in U\Rightarrow \Par{T-\lambda I}\Par{u}\in U\Rightarrow Tu\in U.$\par\vspace{6pt}\quad
+(b) Suppose $U$ is an invar subsp under $T$ of dim $m=\dim V-1.$ \Par{ If $m=0,$ then we are done. }\par\quad\Hb
+Let $B_U=\Par{u_1,\dots,u_m},B_V=\Par{u_0,u_1,\dots,u_m}.$ We discuss in cases:\par\quad\Hb
+(I) If $Tu_0\in U,$ then $\range T=U$ so that $T$ is not surj $\Longleftrightarrow \null T\neq\zeroSubs\Longleftrightarrow$ $0$ is an eigval of $T.$\par\quad\Hb\EndI
+(II) If $Tu_0\not\in U,$ then $Tu_0=a_0 u_0+a_1 u_1+\dots+a_mu_m.$\par\quad\Hb\EndII
+If $\range T\mid_U=U\Longleftrightarrow a_1=\dots=a_m=0\Longleftrightarrow Tu_0\in\Span{u_0}$ then we are done.\par\quad\Hb\EndII
+Otherwise, $T\mid_U:U\rightarrow U$ is not surj, so is not inje. Thus $0$ is an eigval of $T\mid_U$, so of $T.$\PfEnd\vspace{4pt}\quad\Hb
+\Or Consider $T\mySlash U\in\Lm{V\mySlash U}.$ Because $\dim V\mySlash U=1.$ $\exists\,\lambda\in\Fbb,T\mySlash U=\lambda I.$ By Problem (35).\PfEnd
 \SepLine
 \ChEnd\pagebreak
 
