@@ -233,8 +233,8 @@
 
 \def\ChEnd{\rightline{\Largebfx{E{\small NDED}}}\par\vspace{6pt}}
 \newcommand{\PfEnd}[1][-18pt]{{\large\vspace{#1}\par\hfill$\square$\par}}
-\newcommand{\SepLine}[1][0pt]{{\vspace{-5pt}\par
-		\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\vspace{5pt}\vspace{#1}\par}
+\newcommandx{\SepLine}[2][1=0pt,2={}]{{\vspace{-5pt}\par
+		#2\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\vspace{5pt}\vspace{#1}\par}
 \newcommand{\ChDecl}[3]{{\huge\tgbfxx\hypertarget{#1}{#2}}{#3}{\vspace{5pt}}}
 \newcommand\hLk[2]{\hyperlink{#1}{#2}}
 \newcommand\Lch[2]{\hLk{Ch#1}{#2}}
@@ -251,9 +251,9 @@
 % If you want the debug version.
 	%{\qquad$#1{$#3$}$}\vspace{#4}\par{\qquad$#2{$#5$}$}
 % If you want the pdf version.
-	{\qquad$#1{$#3$}$}
+	%{\qquad$#1{$#3$}$}
 % If you want the print version.
-	%{\qquad$#2{$#5$}$}
+	{\qquad$#2{$#5$}$}
 }}
 %}
 
@@ -3267,10 +3267,7 @@ Because $p{^{\SmallPar{\alpha-1}}}\Par{z}=\XSbra{\mathC_{\alpha-1}^{\alpha-1}\Pa
 \SepLine
 \ChEnd
 
-\ChDecl{Ch5A}{5.A}{}\orMode{\hLk{5A1}{1}\;\;\hLk{5A2}{2}\;\;\hLk{5A3}{3}\;\;\hLk{5A4}{4}\;\;\hLk{5A5}{5}\;\;\hLk{5A6}{6}\;\;\hLk{5A7}{7}\;\;\hLk{5A8}{8}\;\;\hLk{5A9}{9}\;\;\hLk{5A10}{10}\;\;\hLk{5A11}{11}\;\;\hLk{5A12}{12}\;\;\hLk{5A13}{13}\;\;\hLk{5A14}{14}\;\;\hLk{5A15}{15}\;\;\hLk{5A16}{16}\;\;\hLk{5A17}{17}\;\;\hLk{5A18}{18}\;\;\hLk{5A19}{19}\;\;\hLk{5A20}{20}\;\;\hLk{5A21}\;\;\hLk{5A22}{22}\;\;\hLk{5A23}{23}\;\;\hLk{5A24}{24}\;\;\hLk{5A25}{25}\;\;\hLk{5A26}{26}\;\;\hLk{5A27}{27}\;\;\hLk{5A28}{28}$\\[-4pt]$\hLk{5A29}{29}\;\;\hLk{5A30}{30}\;\;\hLk{5A31}{31}\;\;\hLk{5A32}{32}\;\;\hLk{5A33}{33}\;\;\hLk{5A34}{34}\;\;\hLk{5A35}{35}\;\;\hLk{5A36}{36}\;\;|\;\;\hLk{5A2e20}{2E: Ch5.20}\;\;|\;\;\hLk{5A4e8}{4E: 8,}\;\;\hLk{5A4e11}{11,}\;\;\hLk{5A4e15}{15,}\;\;\hLk{5A4e16}{16,}\;\;\hLk{5A4e17}{17,}\;\;\hLk{5A4e36}{36,}\;\;\hLk{5A4e37}{37,}\;\;\hLk{5A4e38}{38,}\;\;\hLk{5A4e39}{39}}[-40pt]{[1]: ; [2]: ; [3]: ; [4]: ;$\\$[5]: ; [6]: ; [7]: ; [8]: ; [9]: ; [10]: ; [11]: .}
-
-\vspace{10pt}
-%[1]: 31; [2]: 1, 2, 3, 15, 21; [3]: 23, (2E Ch5.20), (4E 37), 4, 5; [4]: 6, (4E 17, 18) \OR 16, (4E 15); [5]: 7, 8, (4E 8), 22, 9, 10; [6]: 11, 12, 14, 30, 13, (4E 11); [7]: 17, (4E 16), 18; [8]: 19, 20, 24; [9]: 25, 26, 27, 28; [10]: (4E 39), 29; [11]: 32, (4E 35), (4E 38) \OR 35, 36; [12] 32, 34.
+\ChDecl{Ch5A}{5.A}{}\orMode{\hLk{5A1}{1}\;\;\hLk{5A2}{2}\;\;\hLk{5A3}{3}\;\;\hLk{5A4}{4}\;\;\hLk{5A5}{5}\;\;\hLk{5A6}{6}\;\;\hLk{5A7}{7}\;\;\hLk{5A8}{8}\;\;\hLk{5A9}{9}\;\;\hLk{5A10}{10}\;\;\hLk{5A11}{11}\;\;\hLk{5A12}{12}\;\;\hLk{5A13}{13}\;\;\hLk{5A14}{14}\;\;\hLk{5A15}{15}\;\;\hLk{5A16}{16}\;\;\hLk{5A17}{17}\;\;\hLk{5A18}{18}\;\;\hLk{5A19}{19}\;\;\hLk{5A20}{20}\;\;\hLk{5A21}\;\;\hLk{5A22}{22}\;\;\hLk{5A23}{23}\;\;\hLk{5A24}{24}\;\;\hLk{5A25}{25}\;\;\hLk{5A26}{26}\;\;\hLk{5A27}{27}\;\;\hLk{5A28}{28}$\\[-4pt]$\hLk{5A29}{29}\;\;\hLk{5A30}{30}\;\;\hLk{5A31}{31}\;\;\hLk{5A32}{32}\;\;\hLk{5A33}{33}\;\;\hLk{5A34}{34}\;\;\hLk{5A35}{35}\;\;\hLk{5A36}{36}\;\;|\;\;\hLk{5A2e20}{2E: Ch5.20}\;\;|\;\;\hLk{5A4e8}{4E: 8,}\;\;\hLk{5A4e11}{11,}\;\;\hLk{5A4e15}{15,}\;\;\hLk{5A4e16}{16,}\;\;\hLk{5A4e17}{17,}\;\;\hLk{5A4e36}{36,}\;\;\hLk{5A4e37}{37,}\;\;\hLk{5A4e38}{38,}\;\;\hLk{5A4e39}{39}}[-40pt]{[3]: 1, 2, 3, 4, 5, 6, 7, 8; [4]: 9, 10, 18, 19, 20; [5]: 11, 12, 13, (4E 11), (4E 8), 14;$\\$[6]: 15, 17, (4E 16); [7]: (4E 15), 24; [8]: (4E 17), 16; [9]: 21, 22, 23, (2E 20), (4E 37), 25;$\\$[10]: 26, 27, 28, 29, 30; [11]: 31, 32, (4E 36), 33, 34, 35; [12]: 36, (4E 39).}
 
 \BulletPointX\NoteForSmall{[5.6]}\TextB{}
 More generally, suppose we do not know whether $V$ is finite-dim. We show that $(a)\Longleftrightarrow(b).$\TextB{}
@@ -3349,7 +3346,7 @@ Define the statement $P\Par{k}:$ if $v_1+\dots+v_k\in U,$ then each $v_j\in U.$ 
 Then $Tv=\lambda_1v_1+\dots+\lambda_k v_k\in U\Longrightarrow Tv-\lambda_k v=\Par{\lambda_1-\lambda_k}v_1+\dots+\Par{\lambda_{k-1}-\lambda_k}v_{k-1}\in U.$\par\quad\Hii
 For each $j\in\Bra{1,\dots,k-1},\lambda_j-\lambda_{k}\neq 0\Rightarrow\Par{\lambda_j-\lambda_k}v_j=v_j'$ is an eigvec of $T$ correspd $\lambda_j.$\par\quad\Hii
 By assumption, each $v_j'\in U.$ Thus $v_1,\dots,v_{k-1}\in U.$ So that $v_k=v-v_1-\dots-v_{k-1}\in U.$\PfEnd
-\SepLine
+\SepLine[0pt][\Blind{\BulletPointX} ]
 
 \ProblemB{
 	\TipsN{2}\,\,\TextB{If $\dim V=m.$ Prove that $U=\Par{U\cap E_1}\oplus\cdots\oplus\Par{U\cap E_m},$ where $E_k=\Span{v_k}.$}
@@ -3358,7 +3355,7 @@ Because $V=E_1\oplus\cdots\oplus E_m.$ $\forall u\in U,\exists\,!\,e_j\in E_j,u=
 If $e_j\neq 0,$ then $e_j$ is an eigvec correspd $\lambda_j.$ Otherwise $e_j=0\in U.$ By (\TIPS 1), each nonzero $e_j\in U.$\par\quad
 Thus $u\in\Par{U\cap E_1}+\dots+\Par{U\cap E_m}=U.$ Because each $\Par{U\cap E_j}\subseteq E_j.$\par\quad
 For each $k\in\Bra{2,\dots,n},\;\BigPar{\Par{U\cap E_1}+\dots+\Par{U\cap E_{k-1}}}\bigcap\Par{U\cap E_k}\subseteq\Par{E_1+\dots+E_{k-1}}\cap E_k=\zeroSubs.$\PfEnd
-\SepLine
+\SepLine[0pt][\Blind{\BulletPointX} ]
 
 \ProblemB{
 	\TipsN{3}\,\,\TextB{Suppose $W$ is a nonzero invar subsp of \,$V$ under $T.$ If $\dim V=m\geqslant 1.$}
@@ -3396,7 +3393,7 @@ Note that $ST=TS\Rightarrow \Par{T-\lambda I}S=S\Par{T-\lambda I}.$\par\quad
 \ProblemN[]{2}{
 	\TextB{Show that $W=\null T$ is invar under $S$.\quad\large$\forall u\in W,Tu=0\Rightarrow STu=0=TSu\Rightarrow Su\in W.$\PfEnd\vspace{3pt}}
 }
-\ProblemN[]{2}{
+\ProblemN[]{3}{
 	\TextB{Show that $U=\range T$ is invar under $S$.\,\,\,\large$\forall w\in U,\exists\,v\in V,Tv=w, TSv=STv=Sw\in U.$\PfEnd}
 }
 \SepLine
@@ -3763,13 +3760,12 @@ Thus by Problem (25), $\forall u,v\in V,Tu=\lambda u,Tv=\lambda v\Rightarrow\for
 We prove the contrapositive: {\tgsl If $T$ is not a scalar multi of $I$. Then $\exists$ subsp $U$ of dim $k$ not invar under $T.$}\par\quad
 By Problem (26), $\exists\,v\in V$ and $v\neq 0$ such that $v$ is not an eigvec of $T.$\par\quad
 Thus $\Par{v,Tv}$ is linely inde. Extend to $B_V=\Par{v,Tv,u_1,\dots,u_n}.$\par\quad
-Let $U=\Span{v,u_1,\dots,u_{k-1}}\Rightarrow U$ is not an invar subsp of $V$ under $T.$\PfEnd\vspace{4pt}\quad
-\Or Suppose $0\neq v=v_1\in V$ and extend to $B_V=\Par{v_1,\dots,v_n}.$\par\quad
-Suppose $Tv_1=c_1 v_1+\dots+c_n v_n,\exists\,!\,c_i\in\Fbb.$ Consider a $k$\hspace{1pt}-\hspace{1pt}$\dim$ subsp $U=\Span{v_1,v_{\alpha_1},\dots,v_{\alpha_{k-1}}}.$\par\quad
-Where $\alpha_j\in\Bra{2,\dots,n}$ for each $j$, and $\alpha_1,\dots,\alpha_{k-1}$ are distinct. Because every subsp such $U$ is invar.\par\quad
-Thus $Tv_1=c_1 v_1+\dots+c_n v_n\in U\Longrightarrow c_2=\dots=c_n=0.$\vspace{-10pt}\par\quad
-For if not, suppose $c_i\neq 0,$ let $W=\Span{v_1,v_{\beta_1},\dots,v_{\beta_{k-1}}},$ where each $\beta_j\in\Bra{\overbrace{2,\dots,i-1,i+1,\dots,n}^{\text{of length }\SmallPar{n-2}\;\geqslant\;k\,-\,1}}.$\par\quad
-Hence $Tv_1=c_1 v_1.$ Because $v_1=v\in V$ is arbitrary. We conclude that $T=\lambda I$ for some $\lambda\in\Fbb.$\PfEnd\vspace{4pt}\quad
+Let $U=\Span{v,u_1,\dots,u_{k-1}}\Rightarrow U$ is not an invar subsp of $V$ under $T.$\PfEnd\vspace{6pt}\quad
+\Or Suppose $0\neq v=v_1\in V.$ Extend to $B_V=\Par{v_1,\dots,v_n}.$ Suppose $Tv_1=c_1 v_1+\dots+c_n v_n,\exists\,!\,c_i\in\Fbb.$\par\quad
+Consider a $k$\hspace{1pt}-\hspace{1pt}$\dim$ subsp $U=\Span{v_1,v_{\alpha_1},\dots,v_{\alpha_{k-1}}}.$ Where $\alpha_1,\dots,\alpha_{k-1}\in\Bra{2,\dots,n}$ are distinct.\par\quad
+Because every subsp such $U$ is invar. $Tv_1=c_1 v_1+\dots+c_n v_n\in U\Longrightarrow c_2=\dots=c_n=0.$\vspace{0pt}\par\quad
+For if not, $\exists\,c_i\neq 0,$ let $W=\Span{v_1,v_{\beta_1},\dots,v_{\beta_{k-1}}},$ where each $\beta_j\in\Bra{{2,\dots,i-1,i+1,\dots,n}}.$\par\quad
+Hence $Tv_1=c_1 v_1.$ Because $v_1=v\in V$ is arbitrary. We conclude that $T=\lambda I$ for some $\lambda\in\Fbb.$\PfEnd\vspace{6pt}\quad
 \Or For each $k\in\Bra{1,\dots,\dim V-1},$ define $P\Par{k}:$ if every subsp of dim $k$ is invar, then $T=\lambda I.$\par\quad
 (i) If every subsp of dim $1$ is invar, then by Problem (26), $T=\lambda I.$ Thus $P\Par{1}$ holds.\par\quad\Endi
 (ii) Assume that $P\Par{k}$ holds for $k\in\Bra{1,\dots,\dim V-1}.$ And every subsp of dim $k+1$ is invar.\par\quad\Hii
@@ -3784,11 +3780,12 @@ Because $P\Par{k}$ holds, we conclude that $T=\lambda I.$ Thus $P\Par{k+1}$ hold
 \ProblemN{\hypertarget{5A29}{29}}{
 	\TextNL{Suppose $T\in\Lm{V}$ and $\range T$ is finite-dim.}
 	\TextNL{Prove that $T$ has at most $1 + \dim\range T$ distinct eigvals.}
-}Let $\lambda_1,\dots,\lambda_m$ be the distinct eigvals of $T$ with correspd eigves $v_1,\dots,v_m.$\par
-\Blind{\Solution} \BigPar{ Because $\range T$ is finite-dim. The correspd eigvals are finite. }\par
-\Blind{\Solution} Then $\Par{v_1,\dots,v_m}$ linely inde $\Longrightarrow\Par{\lambda_1 v_1,\dots,\lambda_m v_m}$ linely inde, if each $\lambda_k\neq 0.$\par
-\Blind{\Solution} Otherwise, $\exists\,!\,\lambda_k=0.$ Now $\Par{\lambda_1v_1,\dots,\lambda_{k-1}v_{k-1},\lambda_{k+1}v_{k+1},\dots,\lambda_mv_m}$ is linely inde.\par
-\Blind{\Solution} Hence, by [2.23], $m-1\leqslant\dim\range T.$\PfEnd
+}\par\quad
+Let $\lambda_1,\dots,\lambda_m$ be the distinct eigvals of $T$ with correspd eigves $v_1,\dots,v_m.$\par\quad%\Blind{\Solution}
+\BigPar{ Because $\range T$ is finite-dim. The correspd eigvals are finite. }\par\quad
+Then $\Par{v_1,\dots,v_m}$ linely inde $\Longrightarrow\Par{\lambda_1 v_1,\dots,\lambda_m v_m}$ linely inde, if each $\lambda_k\neq 0.$\par\quad
+Otherwise, $\exists\,!\,\lambda_k=0.$ Now $\Par{\lambda_1v_1,\dots,\lambda_{k-1}v_{k-1},\lambda_{k+1}v_{k+1},\dots,\lambda_mv_m}$ is linely inde.\par\quad
+Hence, by [2.23], $m-1\leqslant\dim\range T.$\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{5A30}{30}}{
