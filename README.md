@@ -9,7 +9,7 @@
 
 ### **SourceCode**文件夹
 
-这个文件夹包含*.ttf*和*.otf*字体文件、*.tex*源代码、引用的*.png*图片。这些文件用于生成**SolusMan-LADR4e.pdf**。主要就是，用**TeXstudio**, **Texmaker**或者其他*IDE*，亦或者编译器，编译**SolusMan-LADR4e.tex**，输出*PDF*。
+这个文件夹包含ttf和otf字体文件、tex源代码、引用的png图片。这些文件用于生成**SolusMan-LADR4e.pdf**。主要就是，用**TeXstudio**, **Texmaker**或者其他IDE，亦或者编译器，编译**SolusMan-LADR4e.tex**，输出PDF。
 
 ### **SolusMan-LADR4e.pdf**
 
