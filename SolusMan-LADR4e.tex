@@ -497,14 +497,16 @@ And $T\ni\Par{x,x,y,z}\Rightarrow\Par{0,0,y-x,y-x}+\Par{x,x,x,-y+x+z}\in U+W$. H
 }\par\quad
 Because the subset $V_1$ of vecsp $V_2$ is closed under add and scalar multi, $V_1$ is a subspace of $V_2.$\par\quad
 Suppose $W$ is such that $V_2=V_1\oplus W.$ Now $V_2\oplus U=\Par{V_1\oplus W}\oplus U=\Par{V_1\oplus U}\oplus W=V_1\oplus U.$\par\quad
-If $W\neq\zeroSubs,$ then $V_1\oplus U\subsetneq\Par{V_1\oplus U}\oplus W$, contradicts. Hence $W=\zeroSubs,V_1=V_2.$\PfEnd
+If $W\neq\zeroSubs,$ then $V_1\oplus U\subsetneq\Par{V_1\oplus U}\oplus W$, contradicts. Hence $W=\zeroSubs,V_1=V_2.$\PfEnd\quad
+\Or 
 \SepLine
 
 \ProblemB{
 	\TextB{Suppose $V_1,V_2,U_1,U_2$ are vecsps, $V_1\oplus U_1=V_2\oplus U_2,\;V_1\subseteq V_2,\;U_2\subseteq U_1.$}
 	\TextB{Prove or give a counterexample\hspace{1pt}$:$ $V_1=V_2,\;U_1=U_2.$}
-}A counterexample:\par\quad
-Let $V=\Fbb^2,\;V_1=\Bra{\Par{x,0}\in\Fbb^2},\;U_1=\Bra{\Par{0,x}\in\Fbb^2},\;V_2=\Bra{\Par{x,y}\in\Fbb^2},\;U_2=\zeroSubs.$\par\quad
+}A counterexample: \Sbra{ Using notations in Chapter 2. }\par\vspace{-36pt}\quad
+\hspace{360pt}\includegraphics[width=2.4cm,height=1.2cm,scale=0.22]{./diagram1.png}\vspace{-4pt}\par\quad
+Let $V=\Fbb^3,B_V=\Par{e_1,e_2,e_3},\;V_1=\Span{e_1},\;U_1=\Span{e_2,e_3},\;V_2=\Span{e_1,e_2},\;U_2=\Span{e_3}.$\par\quad
 Now $V_1\subseteq V_2,\;U_2\subseteq U_1$ and $V_1\oplus U_1=V_2\oplus U_2.$ But $V_1\neq V_2,\;U_1\neq U_2.$\PfEnd
 \SepLine
 
@@ -4320,7 +4322,7 @@ If $\theta=2k\pi,$ then $T=I$ and the mini poly is $z-1.$\par\quad
 Otherwise $\Par{v,Tv}$ is linely inde. Then $\Span{v,Tv}=\Rbb^2.$ Note that $\nexists\,b\in\Fbb,T-bI=0.$\par\quad
 \par\vspace{24pt}\quad
 Because\vspace{-40pt}\par\quad
-\hspace{45pt}\includegraphics[width=4.4cm,height=3.2cm,scale=0.22]{./diagram.png}\par\vspace{-70pt}\quad
+\hspace{45pt}\includegraphics[width=4.4cm,height=3.2cm,scale=0.22]{./diagram2.png}\par\vspace{-70pt}\quad
 \hspace{200pt}{$\MathLeftMid{l}{Tv=\displaystyle\frac{\left|\overset{\rightarrow}{v}\right|}{2L}\Par{T^2 v+v}\Rightarrow T=\frac{\left|\overset{\rightarrow}{v}\right|}{2L}\Par{T^2+I}\\\vspace{8pt}\displaystyle L=\left|\overset{\rightarrow}{v}\right|\cos\theta\Rightarrow\frac{\left|\overset{\rightarrow}{v}\right|}{2L}=\frac{1}{2\cos\theta}}$}\par\vspace{-105pt}\quad
 Thus suppose the mini poly $p$ is defined by $p\Par{z}=z^2+bz+c$ for all $z\in\Rbb.$\vspace{90pt}\par\quad
 Hence $p\Par{T}=T^2-2\cos\theta\, T+I=0$ and $z^2-2\cos\theta\;z+1$ is the mini poly of $T.$\PfEnd\vspace{6pt}\quad
