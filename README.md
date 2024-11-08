@@ -24,7 +24,7 @@
 
 ### **LADR2eSolutions（By Axler）.pdf**
 
-这个文件与我无关，也不受这里**LICENSE**的限制，我仅仅是从<https://epdf.tips/queue/linear-algebra-done-right-solutions-manual.html>（还有很多网站可以下载，搜索关键词*'linear algebra done right solutions manual'*就行）上下载过来改了文件名又传到这里。
+这个文件与我无关，也不受这里**LICENSE**的限制，我仅仅是从<https://epdf.tips/queue/linear-algebra-done-right-solutions-manual.html>（还有很多网站可以下载，搜索关键词'*linear algebra done right solutions manual*'就行）上下载过来改了文件名又传到这里。
 
 ### **LADR4eSolutions经典最全（By Axler？）.pdf**
 
