@@ -36,10 +36,6 @@
 > 
 > - ······
 
-### **LADR4e中文版（By 吴俊达 何阳）.pdf**
-
-这个文件与我无关，也不受这里**LICENSE**的限制，我仅仅是从<https://github.com/OliverWu515/LADR4e-PDF>那里下载过来改了下文件名又传到这里，这份文件受<https://github.com/OliverWu515/LADR4e-PDF>下**LICENSE**的限制。
-
 ### **MyConfigures**
 
 这是我个人编写LaTeX代码时使用的**TeXstudio**配置。
