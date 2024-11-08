@@ -3,6 +3,8 @@
 我上传这些资料，旨在和广大学习者自由交流讨论。
 严禁任何人，以任何名义，妨碍任何人，自由复制、下载、转发、修改，我在此上传的所有资料，至少包括我编撰的“SolusMan-LADR4e.tex/pdf”。
 
+===
+
 ### - 关于库中文件的说明：
 
 ##### **SourceCode**文件夹
@@ -21,8 +23,6 @@
 
 - 使用者如遇问题，可邮件<13012057210@163.com>和我交流.
 
----
-
 ##### **LADR4eSolutions经典最全（By Axler）.pdf**
 
 所见即所得，我认为这本的答案最经典，解法和思想最贴合原书。
@@ -32,19 +32,13 @@
 > 第4章14题第(a)问，
 > ······
 
----
-
 ##### **LADR4e中文版（By 吴俊达 何阳）.pdf**
 
 这个文件与我无关，也不受这里**LICENSE**的限制，我仅仅是从<https://github.com/OliverWu515/LADR4e-PDF>那里下载过来改了下文件名又传到这里，这份文件受<https://github.com/OliverWu515/LADR4e-PDF>下**LICENSE**的限制。
 
----
-
 ##### **MyConfigures**
 
 这是我个人编写LaTeX代码时使用的**TeXstudio**配置。
-
----
 
 ##### 「附：如何配置LaTex」 Trisquel/Ubuntu系统Terminal下
 
