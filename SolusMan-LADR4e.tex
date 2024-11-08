@@ -334,17 +334,16 @@ Suppose $a\neq 0,\exists\,a^{-1}\in\Fbb,a^{-1}a=1,$ hence $v=1\cdot v=\Par{a^{-1
 \ProblemN{3}{
 	\TextN{Suppose $v, w\in V$. Explain why $\exists\,!\,x\in V,v + 3x = w$.
 }}\par\quad
-\;\hspace{1pt}[{\tgsl Existns}] Let $x=\displaystyle\frac{1}{3}\Par{w-v}$.\par\quad
+\;\hspace{1pt}[{\tgsl Existns}] Let $x=\displaystyle\frac{1}{3}\Par{w-v}.$\vspace{2pt}\par\quad
 [{\tgsl Uniqnes}] Suppose $v+3x_1=w,$(I)$\,\,v+3x_2=w\,$(II). Then (I) $-$ (II) $: 3\Par{x_1-x_2}=0\Rightarrow x_1=x_2.$\vspace{4pt}\PfEnd\quad
 \Or \quad$v + 3x = w \quad\Leftrightarrow\quad 3x = w − v\quad \Leftrightarrow\quad x = \frac{1}{3} \Par{w − v}.$\PfEnd
 \SepLine
 
-\ProblemN{5}{
+\ProblemN[]{5}{
 	\TextN{Show that in the def of a vecsp, the add inv condition can be replaced by [1.29].}
-	\TextN{\large{\tgsc Hint:} Suppose $V$ satisfies all conds in the def, except we've replaced the add inv cond with [1.29].}
-	\TextN{\large Prove that the add inv is true.}
-}\par\quad
-Using [1.31]. $0v = 0$ for all $v\in V$ $\Longleftrightarrow \Par{1+\Par{-1}}v=1\cdot v+\Par{-1}v=v+\Par{-v}=0.$\PfEnd
+	\TextN{\large{\tgsc Hint\tgbf:} Suppose $V$ satisfies all conds in the def, except we've replaced the add inv cond with [1.29].}
+	\TextN{\large\Blind{{\tgsc Hint\tgbf:}} Prove that the add inv is true.}
+}\Blind{\IndentN} Using [1.31]. $0v = 0$ for all $v\in V$ $\Longleftrightarrow \Par{1+\Par{-1}}v=1\cdot v+\Par{-1}v=v+\Par{-v}=0.$\PfEnd
 \SepLine
 
 \ProblemN{6}{
@@ -381,13 +380,13 @@ By Assoc: $\Par{a+\infty}+\Par{-\infty}\neq a+\Par{\infty+\Par{-\infty}}$.\par\q
 
 
 \ProblemN{\hypertarget{1C7}{7}}{
-	\TextN{Give a nontrivial $U\subseteq\Rbb^2,$}
+	\TextN{Give a nonempty $U\subseteq\Rbb^2,$}
 	\TextN{$U$ is closed under taking add invs and under add, but is not a subsp of $\Rbb^2.$}
 }\BigPar{ $0\in U;\;v\in U\Rightarrow -v\in U.$ }
 Let $U=\Bra{0,1}{^2},\Zbb^2,\Qbb^2.$\SepLine
 
 \ProblemN{\hypertarget{1C8}{8}}{
-	\TextN{Give a nontrivial $U\subseteq\Rbb^2,$ $U$ is closed under scalar multi, but is not a subsp of $\Rbb^2$.}
+	\TextN{Give a nonempty $U\subseteq\Rbb^2,$ $U$ is closed under scalar multi, but is not a subsp of $\Rbb^2$.}
 }Let $U=\Bra{\Par{x,y}\in\Rbb^2:x=0\vee y=0}.$\par
 \SepLine
 
@@ -464,24 +463,21 @@ Hence this literal trick is invalid.\par\quad\Hb
 (II) \envFontLarge\dbsp{\Large\vspace{6pt}Assume that no $U_j$ is contained in the union of the other two,}\par\quad\Hb\HII\hspace{56pt}{\Large\vspace{6pt}and no $U_j$ contains the union of the other two.}\par\quad\Hb\HII
 \dbsp{\Large\vspace{6pt}Say $U_1\not\subseteq U_2\cup U_3$ and $U_1\not\supseteq U_2\cup U_3.$}\par\quad\Hb\HII
 {\dbsp}{\Large\vspace{6pt}$\exists\,u\in U_1\wedge u\not\in U_2\cup U_3;\;v\in U_2\cup U_3\wedge v\not\in U_1.$ Let $W=\Bra{v+\lambda u:\lambda\in\Fbb}\,\subseteq\mathcal{U}.$}\par\quad\Hb\HII
-{\dbsp}{\Large\vspace{6pt}Note that $W\cap U_1=\emptyset,$ for if $v+\lambda u\in U_1$ then $v+\lambda u-\lambda u=v\in U_1$.}\par\quad\Hb\HII
-{\dbsp}{\Large\vspace{6pt}又 $W\subseteq U_1\cup U_2\cup U_3.$ Thus $W\subseteq U_2\cup U_3.$}\par\quad\Hb\HII
-{\Large\vspace{6pt}$\forall v+\lambda u\in W,\exists\,i\in\Bra{2,3},v+\lambda u\in U_i.$}\par\quad\Hb\HII
-{\Large\vspace{6pt}Because $U_2,U_3$ are subsps and hence have at least one element \Par{ zero }.}\par\quad\Hb\HII
-{\Large\vspace{6pt}If $U_2=U_3,$ then $\mathcal{U}=U_1\cup U_2$ and by Problem (12) we are done.}\par\quad\Hb\HII
-{\Large\vspace{6pt}\Par{ Note that at least one of $U_2,U_3$ is not $\zeroSubs,$ for if not, $U_1\supseteq U_2\cup U_3.$ }}\par\quad\Hb\HII
-{\Large\vspace{6pt}Otherwise, $\exists$ distinct $\lambda,\mu\in\Fbb,v+\lambda u,v+\mu u\in U_i$ for some $i\in\Bra{2,3}.$ ($\Delta$)}\par\quad\Hb\HII
-%{\Large\vspace{6pt}}\par\quad\Hb\HII
-{\Large\vspace{6pt}Then $u\in U_i$ while $u\not\in U_2\cup U_3.$ Contradicts.}\par\quad\envFontDefault
-\Example \,\,\,Let $\Fbb=\Zbb_2$. \colorbox{yellow}{TODO}\par\quad
-\PfEnd
-\SepLine\pagebreak
+{\dbsp}{\Large\vspace{6pt}Note that $W\cap U_1=\emptyset,$ for if any $v+\lambda u\in W\cap U_1$ then $v+\lambda u-\lambda u=v\in U_1$.}\par\quad\Hb\HII
+{\dbsp}{\Large\vspace{6pt}Now $W\subseteq U_1\cup U_2\cup U_3\Rightarrow W\subseteq U_2\cup U_3.$ $\forall v+\lambda u\in W,v+\lambda u\in U_i,i=2,3.$}\par\quad\Hb\HII
+{\Large\vspace{6pt}If $U_2\subseteq U_3$ or $U_2\supseteq U_3,$ then $\mathcal{U}=U_1\cup U_i,i=2,3.$} {By Problem (12) we are done.}\par\quad\Hb\HII
+{\Large\vspace{6pt}Otherwise, {\large\envFontDefault both $U_2,U_3\neq\zeroSubs.$} Because \tgsl$W\subseteq U_2\cup U_3$ has at least three elements.}\par\quad\Hb\HII
+{\Large\vspace{6pt}There must be some $U_i$ that contains at least two elements of $W.$}\par\quad\Hb\HII
+{\Large\vspace{6pt}$\exists$ distinct $\lambda_1,\lambda_2\in\Fbb,v+\lambda_1 u,v+\lambda_2 u\in U_i,i\in\Bra{2,3}.$}\par\quad\Hb\HII
+{\Large Then $u\in U_i$ while $u\not\in U_2\cup U_3.$ Contradicts.}\envFontDefault\PfEnd\vspace{10pt}\quad
+\Example \,\,\,Let $\Fbb=\Zbb_2,\;B_V=\Par{v_1,\dots,v_5}.$  Then the proof {\tgsl above} will not work.
+\SepLine
 
 \ExampleX[]{
 	\TextE{Suppose $U=\Bra{\Par{x,x,y,y}\in\Fbb^4},W=\Bra{\Par{x,x,x,y}\in\Fbb^4}.$\vspace{3pt}}
 	\TextE{Prove that $U+W=\Bra{\Par{x,x,y,z}\in\Fbb^4}$.\vspace{3pt}}
-}\par\quad
-Let T denote $\Bra{\Par{x,x,y,z}\in\Fbb^4:x,y,z\in\Fbb}$. By def, $U+W\subseteq T.$\par\quad
+}\TextB{}
+Let T denote $\Bra{\Par{x,x,y,z}\in\Fbb^4:x,y,z\in\Fbb}$. By def, $U+W\subseteq T.$\TextB{}
 And $T\ni\Par{x,x,y,z}\Rightarrow\Par{0,0,y-x,y-x}+\Par{x,x,x,-y+x+z}\in U+W$. Hence $T\subseteq U+W.$\PfEnd
 \SepLine
 
@@ -497,12 +493,19 @@ And $T\ni\Par{x,x,y,z}\Rightarrow\Par{0,0,y-x,y-x}+\Par{x,x,x,-y+x+z}\in U+W$. H
 \SepLine
 
 \ProblemB{
-	\Tips \,\,\,\TextB{Suppose $V_1\subseteq V_2$ in Exercise {\tgnr(23)}. Prove or give a counterexample: $V_1=V_2.$}
+	\Tips \,\,\,\TextB{Suppose $V_1\subseteq V_2$ in Exercise {\tgnr(23)}. Prove or give a counterexample\hspace{1pt}$:$ $V_1=V_2.$}
 }\par\quad
 Because the subset $V_1$ of vecsp $V_2$ is closed under add and scalar multi, $V_1$ is a subspace of $V_2.$\par\quad
 Suppose $W$ is such that $V_2=V_1\oplus W.$ Now $V_2\oplus U=\Par{V_1\oplus W}\oplus U=\Par{V_1\oplus U}\oplus W=V_1\oplus U.$\par\quad
-If $W\neq\zeroSubs,$ then $V_1\oplus U\subsetneq\Par{V_1\oplus U}\oplus W$, contradicts. Hence $W=\zeroSubs,V_1=V_2.$\PfEnd\vspace{4pt}
-Suppose $V_1\oplus U_1=V_2\oplus U_2,V_1\subseteq V_2,U_2\subseteq U_1.$ Prove or give a counterexample: $V_1=V_2.$
+If $W\neq\zeroSubs,$ then $V_1\oplus U\subsetneq\Par{V_1\oplus U}\oplus W$, contradicts. Hence $W=\zeroSubs,V_1=V_2.$\PfEnd
+\SepLine
+
+\ProblemB{
+	\TextB{Suppose $V_1,V_2,U_1,U_2$ are vecsps, $V_1\oplus U_1=V_2\oplus U_2,\;V_1\subseteq V_2,\;U_2\subseteq U_1.$}
+	\TextB{Prove or give a counterexample\hspace{1pt}$:$ $V_1=V_2,\;U_1=U_2.$}
+}\colorbox{yellow}{TODO}\par\quad
+\par\quad
+\par\quad
 \SepLine
 
 %\ProblemN{\hypertarget{1C22}{22}}{
@@ -519,8 +522,8 @@ Suppose $V_1\oplus U_1=V_2\oplus U_2,V_1\subseteq V_2,U_2\subseteq U_1.$ Prove o
 	\TextNL{Let $V_E=\Bra{\,f\in\Rbb^{\Rbb}:\text{f is even}},V_O=\Bra{\,f\in\Rbb^{\Rbb}:\text{f is odd}}.$ Show that $V_E\oplus V_O=\Rbb^{\Rbb}.$\vspace{4pt}}
 }(a) {$V_E\cap V_O=\Bra{\,f\in\Rbb^{\Rbb}:f\Par{x}=f\Par{-x}=-f\Par{-x}}=\zeroSubs.$}\par\vspace{8pt}
 \Blind{\Solution} (b) $\hMath{l}{\left|}{\right\}}{$
-	Let $f_e\Par{x}=\frac{1}{2}\BigPar{g\Par{x}+g\Par{-x}}\Longrightarrow f_e\in V_E\vspace{4pt}\\$
-	Let $f_o\Par{x}=\frac{1}{2}\BigPar{g\Par{x}-g\Par{-x}}\Longrightarrow f_o\in V_O
+	Let $f_e\Par{x}=\displaystyle\frac{1}{2}\Sbra{g\Par{x}+g\Par{-x}}\Longrightarrow f_e\in V_E\vspace{4pt}\\$
+	Let $f_o\Par{x}=\displaystyle\frac{1}{2}\Sbra{g\Par{x}-g\Par{-x}}\Longrightarrow f_o\in V_O
 	}\Rightarrow\forall g\in\Rbb^\Rbb,g\Par{x}=f_e\Par{x}+f_o\Par{x}.$\PfEnd
 \SepLine
 \ChEnd
@@ -567,9 +570,9 @@ Now we can let $b_i=\sum_{r=1}^i a_r$ if we are to prove $Q$ with $P$ already as
 }\par\quad
 (a) {\tgsc\normalsize let} $a_k=\sum\limits_{j=1}^k b_j\Leftarrow\;a_1 v_1+\dots+a_m v_m=b_1 w_1+\dots+b_m w_m\;\Rightarrow$ {\tgsc\normalsize let} $b_1=a_1,\;b_k=a_k-\sum\limits_{j=1}^{k-1}b_j=\sum\limits_{j=1}^k \Par{-1}^{k-j}a_j.$\vspace{10pt}\par\quad
 (b) \vspace{-13.5pt}\AlignEq{}{\qquad
-	P\Rightarrow Q:\;\;&b_1 w_1+\dots+b_m w_m=0=a_1 v_1+\dots+a_m v_m,\text{\;where\;}0=a_k=\sum\limits_{j=1}^k b_k.\hspace{95pt}
+	P\Rightarrow Q:\;\;&b_1 w_1+\dots+b_m w_m=0=a_1 v_1+\dots+a_m v_m,\text{\;where\;}0=a_k=\textstyle\sum\limits_{j=1}^k b_k.\hspace{95pt}
 }\par\vspace{-10pt}\quad\Hb
-\AlignEq{}{\qquad\quad Q\Rightarrow P:\;\;&a_1 v_1+\dots+a_m v_m=0=b_1 w_1+\dots+b_m w_m=0, \text{\;where\;} 0=b_1=a_1,\;0=b_k=\sum\limits_{j=1}^k (-1)^{k-j}a_j}\par\quad\Hb
+\AlignEq{}{\qquad\quad Q\Rightarrow P:\;\;&a_1 v_1+\dots+a_m v_m=0=b_1 w_1+\dots+b_m w_m=0, \text{\;where\;} 0=b_1=a_1,\;0=b_k=\textstyle\sum\limits_{j=1}^k (-1)^{k-j}a_j}\par\quad\Hb
 \Or  Because $W=\Span{v_1,\dots,v_m}=\Span{w_1,\dots,w_m}.$\par\quad\Hb
 By [2.21](b), a list of length $\Par{m-1}$ spans $W,$ then by [2.23],\par\quad\Hb
 $\Par{w_1,\dots,w_m}$ linely dep $\Rightarrow\Par{v_1,\dots,v_m}$ linely dep. Conversely it is true as well.\PfEnd
@@ -620,7 +623,7 @@ Hence no list spans $V$. Thus $V$ is infinite-dim.\PfEnd
 \ProblemN{\hypertarget{2A16}{16}}{
 	\TextNL{Prove that the vecsp of all continuous functions in $\Rbb^{[0,1]}$ is infinite-dim.}
 }Denote the vecsp by $U$.\par\quad
-Choose an $m\in\Nbp.$ Suppose $a_0,\dots,a_m\in\Rbb$ are such that $a_0+a_1 x+\dots+a_m x^m=0,\,\forall x\in[0,1].$\par\quad
+Choose an $m\in\Nbp.$ Suppose $a_0,\dots,a_m\in\Rbb$ are such that $a_0+a_1 x+\dots+a_m x^m=0,\,\forall x\in\Sbra{0,1}.$\par\quad
 Then the poly has infinitely many roots and hence $a_0=\dots=a_m=0$.\par\quad
 Thus $\Par{1,x,\dots,x^m}$ is linely inde in $\Rbb^{[0,1]}.$ Similar to [2.16], $U$ is infinite-dim.\PfEnd\vspace{10pt}\quad
 \Or Note that for $a_n=\displaystyle\frac{1}{n},\,\,\,\,\,a_1<a_2<\dots<a_m,\,\,\,\forall m\in\Nbp$.\par\quad
@@ -641,7 +644,7 @@ Hence $\Par{p_0,p_1,\dots,p_m}$ is linely depe in $\PoF{m}$.\par\quad
 For if not, because $\Par{1,z,\dots,z^m}$ of length $\Par{m+1}$ spans $\PoF{m}$,\par\qquad\qquad\quad\,\,
 thus by [2.23] trivially, $\Par{p_0,p_1,\dots,p_m}$ spans $\PoF{m}$. Contradicts.\PfEnd\vspace{10pt}\par\quad
 \Or Note that $\PoF{m}=\Span{\underbrace{\;1,\;z,\;\dots,\;z^m\;}_{\text{of length }\Par{m+1}}}.$ $\Par{p_0,p_1,\dots,p_m,z}$ of length $\Par{m+2}$ is linely dep.\vspace{3pt}\par\quad
-( See the above ) Now $z\not\in\Span{p_0,p_1,\dots,p_m}$ and hence $\Par{p_0,p_1,\dots,p_m}$ is linely dep.\PfEnd
+\Par{ See the above } Now $z\not\in\Span{p_0,p_1,\dots,p_m}$ and hence $\Par{p_0,p_1,\dots,p_m}$ is linely dep.\PfEnd
 \SepLine
 \ChEnd
 
@@ -649,9 +652,9 @@ thus by [2.23] trivially, $\Par{p_0,p_1,\dots,p_m}$ spans $\PoF{m}$. Contradicts
 \vspace{8pt}
 
 \ProblemN{\hypertarget{2B7}{7}}{
-	\TextN{Prove or give a counterexample: If $\Par{v_1,v_2,v_3,v_4}$ is a basis of \,$V$ and $U$ is a subsp of \,$V$}
+	\TextN{Prove or give a counterexample\hspace{1pt}$:$ If $\Par{v_1,v_2,v_3,v_4}$ is a basis of \,$V$ and $U$ is a subsp of \,$V$}
 	\TextN{such that $v_1,v_2\in U$ and $v_3\not\in U$ and $v_4\not\in U$, then $\Par{v_1,v_2}$ is a basis of U.}
-}A counterexample:\par\quad
+}A counterexample\hspace{1pt}$:$\par\quad
 Let $V=\Rbb^4$ and $e_j$ be the $j^\text{th}$ standard basis.\par\quad
 Let $v_1=e_1,v_2=e_2,v_3=e_3+e_4,v_4=e_4.$ Then $\Par{v_1,\dots,v_4}$ is a basis of $\Rbb^4.$\par\quad
 Let $U=\Span{e_1,e_2,e_3}=\Span{v_1,v_2,v_3-v_4}.$ Then $v_3\not\in U$ and $\Par{v_1,v_2}$ is not a basis of $U.$\PfEnd\SepLine
@@ -684,45 +687,33 @@ $Q\Rightarrow P:\forall v\in V,\exists\,!\,b_i\in\Fbb,\;v=b_1w_1+\dots+b_mw_m\Ri
 \SepLine
 
 \ProblemB{
-	\hypertarget{2B4e5}{}\TextB{Suppose $V$ is finite-dim and $U$, $W$ are subsps of \,$V$ such that $V=U+W$.}
-	\TextB{Let $B_U=\Par{u_1,\dots,u_m},\;B_W=\Par{w_1,\dots,w_n}$. Prove that $\exists\,B_V$ consisting of vecs in $U\cup W$.}
-}\par\quad
-$V=\Span{u_1,\dots,u_m}+\Span{w_1,\dots,w_n}=\Span{u_1,\dots,u_m,w_1,\dots,w_n}$. By [2.31], we get the basis.\PfEnd
+	\hypertarget{2B4e5}{}\TextB{Suppose $U,W$ are finite-dim and $V=U+W.$ Let $B_U=\Par{u_1,\dots,u_m},\;B_W=\Par{w_1,\dots,w_n}.$}
+	\TextB{Prove that $\exists\,B_V$ consisting of vecs in $U\cup W$.}
+}Because $V=\Span{u_1,\dots,u_m}+\Span{w_1,\dots,w_n}=\Span{u_1,\dots,u_m,w_1,\dots,w_n}.$\par
+\Blind{\Solution} By [2.10], $V$ is finite-dim. By [2.31], $B_V=\Par{u_1,\dots,u_m,w_1,\dots,w_n}.$\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{2B8}{8}}{
-	\TextN{Suppose $U$ and $W$ are subsps of \,$V$ such that $V=U\oplus W$.}
-	\TextN{Let $B_U=\Par{u_1,\dots,u_m},\;B_W=\Par{w_1,\dots,w_n}$. Prove that $B_V=\Par{u_1,\dots,u_m,w_1,\dots,w_n}$.}
+	\TextN{Suppose $V=U\oplus W.$ Let $B_U=\Par{u_1,\dots,u_m},\;B_W=\Par{w_1,\dots,w_n}.$}
+	\TextN{Prove that $B_V=\Par{u_1,\dots,u_m,w_1,\dots,w_n}$.}
 }\par\quad
-$\forall v\in V,\exists\,!\,u\in U,w\in W,v=u+w=\Par{a_1 u_1+\dots+a_m u_m}+\Par{b_1 w_1+\dots+b_n w_n},\exists\,!\,a_i,b_i\in\Fbb$\par\quad
-$\Rightarrow \Par{a_1 u_1+\dots+a_m u_m}=-\Par{b_1 w_1+\dots+b_n w_n}\in U\cap W=\zeroSubs\Rightarrow a_1=\dots=a_m=b_1=\dots=b_n=0.$\PfEnd
-\SepLine\ChEnd\pagebreak
-
-%\ProblemBor{9.4}{
-%	\TextB{Show that if $\Par{v_1,\dots,v_n}$ is a basis of \,$V$ (on $\Rbb$),}
-%	\TextB{then $\Par{v_1,\dots,v_n}$ is also a basis of the complexification $V_\Cbb$ (as a complex vecsp).}\hspace{0.5pt}
-%	\TextB{\small See Section 1B (4e) for the definition of the complexification $V_\Cbb$.}
-%}$\forall u+\i v\in V_\Cbb,\,\exists\,!\,u,v\in V,a_i,b_i\in\Rbb,$\par\quad\,
-%$u+\i v=\Par{a_1 v_1+\dots+a_n v_n}+\i(b_1 v_1+\dots+b_n v_n)=(a_1+b_1\i)v_1+\dots+(a_n+b_n\i)v_n$\par
-%$\Rightarrow\,u+\i v=c_1 v_1+\dots+c_n v_n,\,\exists\,!\,c_i=a_i+b_i\i\in\Cbb$ \par
-%$\Rightarrow$ By the uniqnes of $c_i$ and [2.29], $\Par{v_1,\dots,v_n}$ is a basis of $V_\Cbb.$\PfEnd
-%\SepLine
+$\forall v\in V,\exists\,!\,u\in U,w\in W\Rightarrow\exists\,!\,a_i,b_i\in\Fbb,v=u+w=\Par{a_1 u_1+\dots+a_m u_m}+\Par{b_1 w_1+\dots+b_n w_n}.$\PfEnd\quad
+\Or\;$V=\Span{u_1,\dots,u_m}\oplus\Span{w_1,\dots,w_n}=\Span{u_1,\dots,u_m,w_1,\dots,w_n}.$\vspace{2pt}\par\quad
+\Blind{\Or\;}Note that $\sum_{i=1}^ma_iu_i+\sum_{i=1}^nb_iw_i=0\Rightarrow\sum_{i=1}^ma_iu_i=-\sum_{i=1}^nb_iw_i\in U\cap W=\zeroSubs.$\PfEnd
+\SepLine
 
 \BulletPointX\NoteFor{\tgsl linely inde sequence and [2.34]}\TextB{}
 $“V=\Span{v_1,\dots,v_n,\dots}”$ is an invalid expression.\TextB{}
 If we allow using $“$infinite list$”$, then we must guarantee that $\Par{v_1,\dots,v_n,\dots}$ is a spanning $“$list$”$\TextB{}
 such that for all $v\in V$, there exists a smallest positive integer $n$ such that $v=a_1 v_1+\dots+a_n v_n$,\TextB{}
 The key point is, how can we guarantee that such a $“$list$”$ exists?\par
-\SepLine[30pt]
+\SepLine\ChEnd
 
 \ChDecl{Ch2C}{2$\cdot$C}{}\orMode{\hLk{2C1}{1}\;\;\hLk{2C7}{7}\;\;\hLk{2C9}{9}\;\;\hLk{2C10}{10}\;\;\hLk{2C14}{14,\,16}\;\;\hLk{2C15}{15}\;\;\hLk{2C17}{17}\;\;|\;\;\hLk{2C4e10}{4E: 10,}\;\;\hLk{2C4e14}{14,}\;\;\hLk{2C4e15}{15,}\;\;\hLk{2C4e16}{16}}{[1]: 1, 9, 10; [2]: (4E 10); [3]: 7, (4E 14, 15, 16); [4]: 14, 17; [5]: 15.}
 
-\ProblemN[]{\hypertarget{2C1}{1}}{
-	( \COROLLARY\;for [2.38,39] )\TextN{}
-	\vspace{-6pt}\TextN{Suppose $U$ is a subsp of \,$V$ such that $\dim V=\dim U$. Then $V=U$.}
-}
-%\TextN{\tgnr Let $\Par{u_1,\dots,u_m}$ be a basis of $U$. Then $m=\dim U=\dim V.$ 又 $u_i\in V$.}
-%{\Large Then by [2.39], $\Par{u_1,\dots,u_m}$ is also a basis of \,$V$. Thus $V=U$.}\par
+\ProblemNnoor[]{\hypertarget{2C1}{1}}{\COROLLARY\;for [2.38,39]}{
+	\TextN{Suppose $U$ is a subsp of \,$V$ such that $\dim V=\dim U$. Then $V=U$.}
+}\Blind{\IndentN} Let $B_U=\Par{u_1,\dots,u_m}.$ Then $m=\dim V.$ 又 $u_i\in V.$ By [2.39], $B_V=\Par{u_1,\dots,u_m}.$\PfEnd
 \SepLine
 
 
@@ -755,7 +746,7 @@ Hence $m\geqslant\dim\Span{v_1+w,\dots,v_m+w}\geq m-1.$\PfEnd
 (i) {\Large\vspace{4pt}$k=m,$ \;$\xi_{m}\Par{L}=a_{m}\xi_{m}\Par{p_m}=\xi_{m}\Par{R}=0$ 又 $\deg p_m=m,\;\xi_{m}\Par{p_m}\neq 0\Rightarrow a_m=0.$}\par\quad\Hi
 {\Large\vspace{8pt}Now $L=a_{m-1}p_{m-1}\Par{x}+\dots+a_0p_0\Par{x}.$}\par\quad\Endi
 (ii) {\Large\vspace{4pt}$1\leqslant k\leqslant m,$ \;$\xi_{k}\Par{L}=a_{k}\xi_{k}\Par{p_k}=\xi_{k}\Par{R}=0$ 又 $\deg p_k=k,\;\xi_{k}\Par{p_k}\neq 0\Rightarrow a_k=0.$}\par\quad\Hii
-{\Large Now $L=a_{k-1}p_{k-1}\Par{x}+\dots+a_0p_0\Par{x}.$}\vspace{6pt}\PfEnd
+{\Large Now $L=a_{k-1}p_{k-1}\Par{x}+\dots+a_0p_0\Par{x}.$}\PfEnd
 \SepLine
 
 \ProblemBnoor{\hypertarget{2C4e10}4E 2.C.10}{
@@ -960,8 +951,8 @@ Then let $B_V=\Par{u_1-u_k,\dots,u_m-u_k,u_{m+1},\dots,u_k,\dots,u_n}.$\PfEnd
 (a) $W^V\ni f+g: x\rightarrow f\Par{x}+g\Par{y};$ where $f\Par{x}+g\Par{y}$ is the vec add on $W.$\par\quad\Ha
 $W^V\ni\lambda f: x\rightarrow\lambda f\Par{x};$ where $\lambda f\Par{x}$ is the scalar multi on $W.$\par\quad
 (b) Commutativity: $\Par{f+g}\Par{x}=f\Par{x}+g\Par{x}=g\Par{x}+f\Par{x}=\Par{g+f}\Par{x}.$\par\quad\Hb
-Associativity: $\BigPar{\Par{f+g}+h}\Par{x}=\BigPar{\Par{f}\Par{x}+\Par{g}\Par{x}}+\Par{h}\Par{x}$\par\quad\Hb
-\Blind{Associativity: $\BigPar{\Par{f+g}+h}\Par{x}$} $=\Par{f}\Par{x}+\BigPar{\Par{g}\Par{x}+\Par{h}\Par{x}}=\BigPar{f+\Par{g+h}}\Par{x}.$\par\quad\Hb
+Associativity: $\BigPar{\Par{f+g}+h}\Par{x}=\BigPar{{f}\Par{x}+{g}\Par{x}}+{h}\Par{x}$\par\quad\Hb
+\Blind{Associativity: $\BigPar{\Par{f+g}+h}\Par{x}$} $={f}\Par{x}+\BigPar{{g}\Par{x}+{h}\Par{x}}=\BigPar{f+\Par{g+h}}\Par{x}.$\par\quad\Hb
 Additive Identity: $\Par{f+0}\Par{x}=f\Par{x}+0\Par{x}=f\Par{x}+0=f\Par{x}.$\par\quad\Hb
 Additive Inverse: $\Par{f+g}\Par{x}={f}\Par{x}+g\Par{x}=f\Par{x}+\BigPar{-f\Par{x}}=0=0\Par{x}.$\par\quad\Hb
 Distributive Properties:\par\qquad\Hb
@@ -979,7 +970,7 @@ Multiplication Identity: $\Par{1f}\Par{x}=1f\Par{x}=f\Par{x}.$ \BigPar{ \NOTICE 
 \SepLine
 
 \ProblemB{
-	\TextB{Given the fact that $\Lm{V,W}$ is a vecsp. Prove or give a counterexample: $V,W$ are vecsps.}
+	\TextB{Given the fact that $\Lm{V,W}$ is a vecsp. Prove or give a counterexample\hspace{1pt}$:$ $V,W$ are vecsps.}
 	\TextB{\envFontDefault\large We can guarantee that $\zeroSubs\subseteq\Lm{V,W},\zeroSubs\subseteq V,\zeroSubs\subseteq W.$}
 	\TextB{\envFontDefault\large And by [3.2], the additivity and homogeneity imply that $V$ is closed under add and scalar multi.}
 	\TextB{\envFontDefault\large\BigPar{ We cannot even guarantee that $W^V$ is a vecsp. }}
@@ -1308,7 +1299,7 @@ $\Hb\Rightarrow v-\sum_{i=1}^n a_i v_i\in\null T\Rightarrow v=\Par{v-\sum_{i=1}^
 
 \ProblemB{
 	\TextB{Suppose $V$ is finite-dim, $T\in\Lm{V,W},B_{\range T}=\BigPar{Tv_1,\dots,Tv_n},B_V=\BigPar{v_1,\dots,v_n,u_1,\dots,u_m}$.}
-	\TextB{Prove or give a counterexample: $\Par{u_1,\dots,u_m}$ is a basis of $\null T$.}
+	\TextB{Prove or give a counterexample\hspace{1pt}$:$ $\Par{u_1,\dots,u_m}$ is a basis of $\null T$.}
 }A counterexample:\par\quad
 Suppose $\dim V=3, Tv_1=Tv_2=Tv_3=w_1.$ Then $\Span{Tv_1,Tv_2,Tv_3}=\Span{w_1}$.\par\quad
 Extend $\Par{v_i}$ to $\Par{v_1,v_2,v_3}$ for each $i$. But none of $\Par{v_1,v_2},\Par{v_1,v_3},\Par{v_2,v_3}$ is a basis of $\null T.$\PfEnd[-15pt]
@@ -1318,7 +1309,7 @@ Always notice that $\mathcal{S}_V\Span{v_1,\dots,v_n}=\Bra{U_1,\cdots,\null T,\c
 
 %\ProblemB{
 %	\TextB{Suppose $V$ is finite-dim, $T\in\Lm{V,W},\;B_{\null T}=\Par{u_1,\dots,u_m},\;B_V=(u_1,\dots,u_m,v_1,\dots,v_n)$.}
-%	\TextB{Prove or give a counterexample: $\Span{Tv_1,\dots,Tv_n}=\range T$.}
+%	\TextB{Prove or give a counterexample\hspace{1pt}$:$ $\Span{Tv_1,\dots,Tv_n}=\range T$.}
 %}\par\quad
 %$\forall w\in\range T,\,\exists\,v\in V,\,(\,\exists\,!\,a_i,b_i\in\Fbb\,),Tv=T\Par{a_1 v_1+\dots+a_n v_n}=w\in\Span{Tv_1,\dots,Tv_n}\supseteq\range T.$\par
 %\Comment\,\,\, If $T$ is inje, then $\Par{Tv_1,\dots,Tv_n}$ is a basis of $\range T$.\PfEnd
@@ -1651,7 +1642,7 @@ Then $S_c=\MathLeftrightBrace{c}{\begin{pmatrix} c_1 d_1 \\ \vdots \\ c_m d_1\en
 Let $B_{\null T}=\Par{v_1,\dots,v_p},B_{V}=\Par{v_1,\dots,v_n}.$ Let $B_W=\Par{w_1,\dots,w_m}.$ Denote $\Mt{T,B_V,B_W}$ by $A.$\vspace{4pt}\par\quad
 Because at most $p$ of the $v_k$'s can belong to $\null T\Longleftrightarrow$ at least $n-p=q$ of the $v_k$'s do not.\par\quad
 For $v_k\not\in\null T,Tv_k=A_{1,k}w_1+\dots+A_{m,k}w_m\neq 0.$ Thus col $k$ has at least one nonzero entry.\par\quad
-Since there are $n-p=q$ choices of such $k,$ $A$ has at least $q=\dim\range T$ nonzero entries.\PfEnd\vspace{8pt}\par\quad
+Since there are $\Par{n-p}=q$ choices of such $k,$ $A$ has at least $q=\dim\range T$ nonzero entries.\PfEnd\vspace{8pt}\par\quad
 \Or We prove by contradiction.\par\quad
 Suppose $A$ has at most $\Par{\dim\range T-1}$ nonzero entries.\par\quad
 Then by Pigeon Hole Principle, at least one of $A_{\cdot,p+1},\dots,A_{\cdot,n}$ equals $0$.\par\quad
@@ -1717,7 +1708,7 @@ Let $v_k=\lambda_k^{-1}u_k\neq 0\Rightarrow B_V=\Par{v_1,\dots,v_n}.$ Hence for 
 \SepLine
 
 \BulletPointX\Exercise{\hypertarget{3C10}{10}} \vspace{-8pt}\AlignEq{}{&\textstyle\because[\Par{AC}_{j,\cdot}]_{1,k}=\Par{AC}_{j,k}=\sum_{r=1}^n A_{j,r}C_{r,k}=\sum_{r=1}^n \Par{A_{j,\cdot}}_{1,r}C_{r,k}=\Par{A_{j,\cdot}C}_{1,k}\\
-	&\therefore\Par{AC}_{j,\cdot}=A_{j,\cdot}C_{\cdot,\cdot}=A_{j,\cdot}C.}\PfEnd[-26pt]
+	&\therefore\Par{AC}_{j,\cdot}=A_{j,\cdot}C_{\cdot,\cdot}=A_{j,\cdot}C.}\PfEnd[-25pt]
 \SepLine
 
 \BulletPointX\NoteForSmall{\hypertarget{3C9}{}[3.52]}\quad $A\in\Fbb^{m,n},c\in\Fbb^{n,1}\Rightarrow Ac\in\Fbb^{m,1}$\vspace{2pt}\par\quad
@@ -1844,8 +1835,8 @@ $\Rightarrow\Mneg\Mt{TS}=\Mneg\Mt{ST}=I$\large$\,=\,TS=ST\Rightarrow S=T^{-1}.$\
 \ProblemB{
 	\hypertarget{3D4e1}{}\vspace{2pt}\TextB{Suppose $T\in\Lm{V,W}$ is inv. Show that $T^{-1}$ is inv and $\Par{T^{-1}}{^{-1}}=T$.\vspace{4pt}}
 }$\MathRightBrace{l}{
-	TT^{-1}=\Par{T^{-1}}{^{-1}}T^{-1}=I\in\Lm{V}\\
-	T^{-1}T=T^{-1}\Par{T^{-1}}{^{-1}}=I\in\Lm{W}
+	TT^{-1}=I\in\Lm{V}\\
+	T^{-1}T=I\in\Lm{W}
 }\Rightarrow T=\Par{T^{-1}}{^{-1}}$, by the uniqnes of inverse.\PfEnd
 \SepLine
 
@@ -2017,7 +2008,7 @@ Hence by [2.42] and [3.61], we conclude that $B$ is a basis of $\Lm{V,W}$ and th
 	\TextB{Let $\mathcal{E} = \Bra{T\in\Lm{V,W}: U\subseteq\null T}=\Bra{T\in\Lm{V,W}:T\mid_U=0}$.}
 	(a) \TextB{Show that $\mathcal{E}$ is a subsp of $\Lm{V,W}$.}
 	(b) \TextB{Find a formula for $\dim \mathcal{E}$ in terms of $\dim V$, $\dim W$ and $\dim U$.}\hspace{0.3pt}
-	\TextB{\envFontSmall\large{{\tgsc Hint:} Define $\Phi:\Lm{V,W}\rightarrow\Lm{U,W}$ by $\Phi\Par{T} = T\mid_U$ . What is $\null\Phi$? What is $\range\Phi$?}}
+	\TextB{\envFontSmall\large{{\tgsc Hint\tgbf:} Define $\Phi:\Lm{V,W}\rightarrow\Lm{U,W}$ by $\Phi\Par{T} = T\mid_U$ . What is $\null\Phi$? What is $\range\Phi$?}}
 }\par\quad
 (a) \,$\forall S,T\in\mathcal{E},\lambda\in\Fbb,\forall u\in U,Su=\lambda Tu=\Par{S+\lambda T}u=0\Rightarrow\Par{S+\lambda T}\in\mathcal{E}.$\par\quad
 (b) Define $\Phi$ as in the hint.\par\quad\Hb
@@ -2372,10 +2363,10 @@ $v_1+U=v_2+U\Longleftrightarrow\Par{v_1-v_2}\in U\Longleftrightarrow S\BigPar{\P
 \SepLine
 
 \ProblemN[]{\hypertarget{3E20}{20}}{
-	\TextNL{Define $\Gamma:\Lm{V\mySlash U,W}\rightarrow\Lm{V,W}$ by $\Gamma\Par{S}=S\circ\pi.$ Prove that:\vspace{4pt}}
-	(a) \TextNL{$\Gamma$ is linear: {\large\tgnr By [3.9] distr and [3.6].}\vspace{4pt}}
-	(b) \TextNL{$\Gamma$ is inje: {\large\envFontDefault $\Gamma\Par{S}=0=S\circ\pi\Longleftrightarrow\forall v\in V,S\Par{\pi\Par{v}}=0\Longleftrightarrow\forall v+U\in V\mySlash U,S\Par{v+U}=0\Longleftrightarrow S=0.$}\vspace{4pt}}
-	(c) \TextNL{$\range\Gamma=\Bra{T\in\Lm{V,W}:U\subseteq\null T}$: {\normalsize\tgnr By Problem (18).\PfEnd}\vspace{-3pt}}
+	\TextNL{Define $\Gamma:\Lm{V\mySlash U,W}\rightarrow\Lm{V,W}$ by $\Gamma\Par{S}=S\circ\pi.$ Prove that\hspace{1pt}$:$\vspace{4pt}}
+	(a) \TextNL{$\Gamma$ is linear\hspace{1pt}$:$ {\large\tgnr By [3.9] distr and [3.6].}\vspace{4pt}}
+	(b) \TextNL{$\Gamma$ is inje\hspace{1pt}$:$ {\large\envFontDefault $\Gamma\Par{S}=0=S\circ\pi\Longleftrightarrow\forall v\in V,S\Par{\pi\Par{v}}=0\Longleftrightarrow\forall v+U\in V\mySlash U,S\Par{v+U}=0\Longleftrightarrow S=0.$}\vspace{4pt}}
+	(c) \TextNL{$\range\Gamma=\Bra{T\in\Lm{V,W}:U\subseteq\null T}\hspace{1pt}:$ {\normalsize\tgnr By Problem (18).\PfEnd}\vspace{-3pt}}
 }\SepLine\pagebreak
 
 \BulletPointX\NoteFor{[3.88, 3.90, 3.91]} {\vspace{2pt}Suppose $W\in\mathcal{S}_V U.$ Then $V\mySlash U$ and $W$ are iso.}\TextB{}
@@ -2670,9 +2661,9 @@ By Problem (31) and the \COMMENT in Problem (26), $B_U=\Par{v_1,\dots,v_m}\Longl
 
 \ProblemN{\hypertarget{3F37}{37}}{
 	\TextNL{Suppose $U$ is a subsp of $V$ and $\pi$ is the quotient map. Thus $\pi\apostrophe\in\Lm[\BigPar]{\Par{V\mySlash U}\apostrophe,V\apostrophe}$.\vspace{2pt}}
-	(a) \TextNL{Show that $\pi\apostrophe$ is inje{\tgnr\large\envFontDefault:\;\;Because $\pi$ is surj. Use [3.108].}\vspace{2pt}}
-	(b) \TextNL{Show that $\range \pi\apostrophe=U^0${\tgnr\large\envFontDefault:\;\;By {\tgnr[3.109](b)}, $\range\pi\apostrophe=\BigPar{\null\pi}{^0}=U^0.$}\vspace{2pt}}
-	(c) \TextNL{Conclude that $\pi\apostrophe$ is an iso from $\Par{V\mySlash U}\apostrophe$ onto $U^0${\tgnr\large\envFontDefault:\;\;Immediately.}}
+	(a) \TextNL{Show that $\pi\apostrophe$ is inje\hspace{1pt}$:${\tgnr\large\envFontDefault\;\;Because $\pi$ is surj. Use [3.108].}\vspace{2pt}}
+	(b) \TextNL{Show that $\range \pi\apostrophe=U^0$\hspace{1pt}$:${\tgnr\large\envFontDefault\;\;By {\tgnr[3.109](b)}, $\range\pi\apostrophe=\BigPar{\null\pi}{^0}=U^0.$}\vspace{2pt}}
+	(c) \TextNL{Conclude that $\pi\apostrophe$ is an iso from $\Par{V\mySlash U}\apostrophe$ onto $U^0$\hspace{1pt}$:${\tgnr\large\envFontDefault\;\;Immediately.}}
 }\Or Using (3.E.18), also see (3.E.20).\par\quad
 (a) $\pi\apostrophe\Par{\varphi}=0\Longleftrightarrow\forall v\in V\,\BigPar{\,\forall v+U\in V\,},\varphi\BigPar{\pi\Par{v}}=\varphi\Par{v+U}=0\Longleftrightarrow \varphi=0.$\par\quad
 (b) $\psi\in\range\pi\apostrophe\Longleftrightarrow\exists\,\varphi\in \Par{V\mySlash U}\apostrophe,\psi=\varphi\,\circ\,\pi\Longleftrightarrow\null\psi\supseteq U\Longleftrightarrow \psi\in U^0$. Hence $\range\pi\apostrophe=U^0$. \PfEnd \vspace{-2pt}
@@ -2719,9 +2710,9 @@ Define $\varphi\in V\apostrophe$ by $\varphi\Par{u+\lambda s+y}=\lambda.$ Hence 
 
 \ProblemB{
 	\TextB{Suppose $V=U\oplus W$. Define $\iota:V\rightarrow U$ by $\iota\Par{u+w}=u.$ Thus $\iota\apostrophe\in\Lm{U\apostrophe,V\apostrophe}.$\vspace{2pt}}
-	(a) \TextB{Show that $\null \iota\apostrophe=U_U^0=\zeroSubs${\tgnr\large\envFontDefault:\;\;$\null\iota\apostrophe=\Par{\range\iota}{^0_U}=U_U^0=\zeroSubs.$}\vspace{2pt}}
-	(b) \TextB{Prove that $\range\iota\apostrophe=W_V^0${\tgnr\large\envFontDefault:\;\;$\range\iota\apostrophe=\BigPar{\null\iota}{^0_V}=W_V^0.$}\vspace{2pt}}
-	(c) \TextB{Prove that $\tilde{\iota\apostrophe}$ is an iso from $\envFontSmall U\apostrophe\mySlash \zeroSubs$ onto $W^0${\tgnr\large\envFontDefault:\;\;By (a), (b) and [3.91](d).}}
+	(a) \TextB{Show that $\null \iota\apostrophe=U_U^0=\zeroSubs$\hspace{1pt}$:${\tgnr\large\envFontDefault\;\;$\null\iota\apostrophe=\Par{\range\iota}{^0_U}=U_U^0=\zeroSubs.$}\vspace{2pt}}
+	(b) \TextB{Prove that $\range\iota\apostrophe=W_V^0$\hspace{1pt}$:${\tgnr\large\envFontDefault\;\;$\range\iota\apostrophe=\BigPar{\null\iota}{^0_V}=W_V^0.$}\vspace{2pt}}
+	(c) \TextB{Prove that $\tilde{\iota\apostrophe}$ is an iso from $\envFontSmall U\apostrophe\mySlash \zeroSubs$ onto $W^0$\hspace{1pt}$:${\tgnr\large\envFontDefault\;\;By (a), (b) and [3.91](d).}}
 }\par\quad
 (a) $\iota\apostrophe\Par{\psi}=\psi\circ\iota=0\Longleftrightarrow U\subseteq\null\psi.$\par\quad
 (b) Note that $W=\null\Par{\iota}\subseteq\null\Par{\psi\circ\iota}.$ Then $\psi\circ\iota\in W^0\Rightarrow\range\iota\apostrophe\in W^0.$\par\quad\Hb
@@ -2730,9 +2721,9 @@ Suppose $\varphi\in W^0.$ Because $\null\iota=W\subseteq\null\varphi.$ By \TIPS 
 
 \ProblemN{\hypertarget{3F36}{36}}{
 	\TextNL{Suppose $U$ is a subsp of $V$. Define $i:U\rightarrow V$  by $i\Par{u}=u$. Thus $i\apostrophe\in\Lm{V\apostrophe,U\apostrophe}.$\vspace{2pt}}
-	(a) \TextNL{Show that $\null i\apostrophe=U^0${\tgnr\large\envFontDefault:\;\;$\null i\apostrophe=\Par{\range i}{^0}=U^0\Leftarrow\range i=U$.}\vspace{2pt}}
-	(b) \TextNL{Prove that $\range i\apostrophe=U\apostrophe${\tgnr\large\envFontDefault:\;\;$\range i\apostrophe=\Par{\null i}{_U^0}={\zeroSubs}{_U^0}=U\apostrophe$.}\vspace{2pt}}
-	(c) \TextNL{Prove that $\tilde{i\apostrophe}$ is an iso from $V\apostrophe\mySlash U^0$ onto $U\apostrophe${\tgnr\large\envFontDefault:\;\;By (a), (b) and [3.91](d).}\vspace{2pt}}
+	(a) \TextNL{Show that $\null i\apostrophe=U^0$\hspace{1pt}$:${\tgnr\large\envFontDefault\;\;$\null i\apostrophe=\Par{\range i}{^0}=U^0\Leftarrow\range i=U$.}\vspace{2pt}}
+	(b) \TextNL{Prove that $\range i\apostrophe=U\apostrophe$\hspace{1pt}$:${\tgnr\large\envFontDefault\;\;$\range i\apostrophe=\Par{\null i}{_U^0}={\zeroSubs}{_U^0}=U\apostrophe$.}\vspace{2pt}}
+	(c) \TextNL{Prove that $\tilde{i\apostrophe}$ is an iso from $V\apostrophe\mySlash U^0$ onto $U\apostrophe$\hspace{1pt}$:${\tgnr\large\envFontDefault\;\;By (a), (b) and [3.91](d).}\vspace{2pt}}
 }\par\quad
 (a) $\forall\varphi\in V\apostrophe,i\apostrophe\Par{\varphi}=\varphi\circ i=\varphi\mid_U.$ Thus $i\apostrophe\Par{\varphi}=0\Longleftrightarrow\forall u\in U,\varphi\Par{u}=0\Longleftrightarrow\varphi\in U^0.$\par\quad
 (b) Suppose $\psi\in U\apostrophe.$ By (3.A.11), $\exists\,\varphi\in V\apostrophe,\varphi\mid_U=\psi.$ Then $i\apostrophe\Par{\varphi}=\psi.$\PfEnd
@@ -3310,7 +3301,7 @@ But $\Par{d}\Rightarrow(b)$ fails, because $S$ is not inv $\Longleftrightarrow S
 Using the \NOTEFOR\;[3.88,90,91]. Define the eraser $S.$ Now $V=\range S\oplus U.$\par\quad
 Define $E_1$ by $E_1\Par{u+w}=u.$ Define $E_2$ by $E_2\Par{u+w}=w.$ \BigPar{ $E_2=S\circ\pi.$ }\vspace{2pt}\par\quad
 Note that $T-TE_1=T\Par{I-E_1}=TE_2.$ And $\null TE_2=\null T\oplus U,\;\range T=\range TE_2\oplus U.$\par\quad
-Because $\dim\null TE_2\geqslant\dim U\Rightarrow\dim\range TE_2\leqslant\dim V-\dim U.$\par\quad
+Because $\dim\null TE_2\geqslant\dim U\Longleftrightarrow\dim\range TE_2\leqslant\dim V-\dim U.$\par\quad
 Let $B_U=\Par{u_1,\dots,u_n},\;B_{\range TE_2}=\Par{v_1,\dots,v_m}\Rightarrow B_V=\Par{v_1,\dots,v_m,u_1,\dots,u_n,\dots,u_p}.$\par\quad
 Let $X=\Span{v_1,\dots,v_m,u_{\alpha_1},\dots,u_{\alpha_{p-\dim U}}}.$ Where $\alpha_1,\dots,\alpha_{p-\dim U}\in\Bra{1,\dots,p}$ are distinct.\vspace{2pt}\par\quad
 Then $\dim X=\dim V-\dim U.$ \Sbra{ $\range TE_2\subseteq$ } $X$ is invar under $TE_2,$ by Problem (1)(b).\vspace{2pt}\par\quad
@@ -3814,7 +3805,7 @@ Hence, by [2.23], $m-1\leqslant\dim\range T.$\PfEnd
 	\TextB{Suppose $\lambda_1,\dots,\lambda_n\in\Rbb$ are distinct.}
 	(a)\ProblemN[]{\hypertarget{5A32}{32}}{
 		\TextB{Prove that $\Par{e^{\lambda_1x},\dots,e^{\lambda_nx}}$ is linely inde in $\Rbb^{\Rbb}$.}
-		\Ha\Blind{\Onumber{32} } \TextNL{\large{\tgsc H{\small INT}:} Let $V=\Span{e^{\lambda_1x},\dots,e^{\lambda_nx}}.$ Define $D\in\Lm{V}$ by $Df = f\apostrophe$. Find eigvals and eigvecs of $D$.}
+		\Ha\Blind{\Onumber{32} } \TextNL{\large{\tgsc H{\small INT}\tgbf:} Let $V=\Span{e^{\lambda_1x},\dots,e^{\lambda_nx}}.$ Define $D\in\Lm{V}$ by $Df = f\apostrophe$. Find eigvals and eigvecs of $D$.}
 	}
 	\TextB{}
 	(b)\ProblemNnoor[]{\!\!}{4E 36}{
@@ -3865,7 +3856,7 @@ Let $w=a_0v+a_1u_1+\dots+a_mu_m\Longrightarrow Tw=\lambda w.$ Note that $w\neq 0
 \SepLine
 
 \ProblemN{\hypertarget{5A36}{36}}{
-	\TextNL{Prove or give a counterexample: The result in Exercise 35 is still true if \,$V$ is infinite-dim.}
+	\TextNL{Prove or give a counterexample\hspace{1pt}$:$ The result in Exercise 35 is still true if \,$V$ is infinite-dim.}
 }A counterexample:\par\quad
 Consider $V=\Bra{\,f\in\Rbb^{\Rbb}:\exists\,!\,m\in\Nbb,f\in\Span{1,e^x,\dots,e^{mx}}}.$ Note that $V$ is infinite-dim.\par\quad
 And a subsp $U=\Bra{\,f\in\Rbb^{\Rbb}:\exists\,!\,m\in\Nbp,f\in\Span{e^x,\dots,e^{mx}}}.$\par\quad
@@ -4563,7 +4554,7 @@ By assumption, $T\mid_{\null q\Par{T}}$ has an invar subsp of dim $2.$\PfEnd
 \ChDecl{Ch5BII}{5.B: II}{}\orMode{\hLk{5BII9}{9}\;\;\hLk{5BII14}{14}\;\;\hLk{5BII15}{15}\;\;\hLk{5BII20}{20}\;\;|\;\;\hLk{5BII4e1}{4E: 1,}\;\;\hLk{5BII4e2}{2,}\;\;\hLk{5BII4e3}{3,}\;\;\hLk{5BII4e4}{4,}\;\;\hLk{5BII4e5}{5,}\;\;\hLk{5BII4e6}{6,}\;\;\hLk{5BII4e7}{7,}\;\;\hLk{5BII4e8}{8,}\;\;\hLk{5BII4e9}{9,}\;\;\hLk{5BII4e10}{10}\;\;\hLk{5BII4e11}{11,}\;\;\hLk{5BII4e12}{12,}\;\;\hLk{5BII4e13}{13,}\;\;\hLk{5BII4e14}{14}}{[1]: ; [2]: ; [3]: .}
 
 \ProblemBnoor{\hypertarget{5BII4e1}{4E 5.C.1}}{
-	\TextB{Prove or give a counterexample:}
+	\TextB{Prove or give a counterexample\hspace{1pt}$:$}
 	\TextB{If $T\in \Lm{V}$ and $T^2$ has an upper-trig matrix, then $T$ has an upper-trig matrix.}
 }\par
 \SepLine
@@ -4718,7 +4709,7 @@ XXXX
 \SepLine
 
 \ProblemN{4}{
-	\TextN{Prove or give a counterexample:}
+	\TextN{Prove or give a counterexample\hspace{1pt}$:$}
 	\TextN{A diag matrix $A$ and an upper-trig matrix $B$ of the same size commute.}
 }\par
 \SepLine
