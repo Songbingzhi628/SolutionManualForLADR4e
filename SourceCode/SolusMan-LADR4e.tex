@@ -497,8 +497,7 @@ And $T\ni\Par{x,x,y,z}\Rightarrow\Par{0,0,y-x,y-x}+\Par{x,x,x,-y+x+z}\in U+W$. H
 }\par\quad
 Because the subset $V_1$ of vecsp $V_2$ is closed under add and scalar multi, $V_1$ is a subspace of $V_2.$\par\quad
 Suppose $W$ is such that $V_2=V_1\oplus W.$ Now $V_2\oplus U=\Par{V_1\oplus W}\oplus U=\Par{V_1\oplus U}\oplus W=V_1\oplus U.$\par\quad
-If $W\neq\zeroSubs,$ then $V_1\oplus U\subsetneq\Par{V_1\oplus U}\oplus W$, contradicts. Hence $W=\zeroSubs,V_1=V_2.$\PfEnd\quad
-\Or 
+If $W\neq\zeroSubs,$ then $V_1\oplus U\subsetneq\Par{V_1\oplus U}\oplus W$, contradicts. Hence $W=\zeroSubs,V_1=V_2.$\PfEnd
 \SepLine
 
 \ProblemB{
@@ -611,7 +610,7 @@ ${}^\neg P\Rightarrow{}^\neg Q:\;$ Suppose $V$ is finite-dim and $V=\Span{w_1 , 
 Let $\Par{v_1 , v_2 , \dots}$ be a sequence in $V$, then $\Par{v_1,v_2,\dots,v_{m+1}}$ must be linely dep.\par\quad
 \Or $Q\Rightarrow P:\;$ Suppose there is such a sequence.\par\qquad\hspace{54pt}
 Choose an $m$. Suppose a linely inde list $\Par{v_1,\dots,v_m}$ spans $V$.\par\qquad\hspace{54pt}
-( Similar to [2.16] ) Then $\exists\,v_{m+1}\in V\backslash\Span{v_1,\dots,v_m}$.\par\qquad\hspace{54pt}
+\Par{ Similar to [2.16] } Then $\exists\,v_{m+1}\in V\backslash\Span{v_1,\dots,v_m}$.\par\qquad\hspace{54pt}
 Hence no list spans $V$. Thus $V$ is infinite-dim.\PfEnd
 \SepLine
 
@@ -643,8 +642,8 @@ But $\forall a_i\in\Fbb,z\neq a_0 p_0\Par{z}+\dots+a_m p_m\Par{z}$, for if not, 
 Thus $z\not\in\Span{p_0,p_1,\dots,p_m}$.\par\quad
 Then $\Span{p_0,p_1,\dots,p_m}\subsetneq\PoF{m}$ while the list $\Par{p_0,p_1,\dots,p_m}$ has length $\Par{m+1}$.\par\quad
 Hence $\Par{p_0,p_1,\dots,p_m}$ is linely depe in $\PoF{m}$.\par\quad
-For if not, because $\Par{1,z,\dots,z^m}$ of length $\Par{m+1}$ spans $\PoF{m}$,\par\qquad\qquad\quad\,\,
-thus by [2.23] trivially, $\Par{p_0,p_1,\dots,p_m}$ spans $\PoF{m}$. Contradicts.\PfEnd\vspace{10pt}\par\quad
+For if not, then because $\Par{1,z,\dots,z^m}$ of length $\Par{m+1}$ spans $\PoF{m},$\par\quad
+by the steps in [2.23] trivially, $\Par{p_0,p_1,\dots,p_m}$ of length $\Par{m+1}$ spans $\PoF{m}.$ Contradicts.\PfEnd\vspace{10pt}\par\quad
 \Or Note that $\PoF{m}=\Span{\underbrace{\;1,\;z,\;\dots,\;z^m\;}_{\text{of length }\Par{m+1}}}.$ $\Par{p_0,p_1,\dots,p_m,z}$ of length $\Par{m+2}$ is linely dep.\vspace{3pt}\par\quad
 \Par{ See the above } Now $z\not\in\Span{p_0,p_1,\dots,p_m}$ and hence $\Par{p_0,p_1,\dots,p_m}$ is linely dep.\PfEnd
 \SepLine
@@ -2458,7 +2457,7 @@ And $\forall v\in V,\exists\,!\,a_i\in\Fbb,v+U=a_1v_1+\dots+a_mv_m+U$\par\quad\H
 \SepLine
 \ChEnd
 
-\vfill\ChDecl{Ch3F}{3$\cdot$F}{}\orMode{\hLk{3F4}{4}\;\;\hLk{3F5}{5}\;\;\hLk{3F6}{6}\;\;\hLk{3F7}{7}\;\;\hLk{3F8}{8}\;\;\hLk{3F9}{9}\;\;\hLk{3F12}{12}\;\;\hLk{3F13}{13}\;\;\hLk{3F15}{15}\;\;\hLk{3F16}{16}\;\;\hLk{3F17}{17}\;\;\hLk{3F18}{18}\;\;\hLk{3F19}{19}\;\;\hLk{3F20}{20}\;\;\hLk{3F21}{21}\;\;\hLk{3F22}{22}\;\;\hLk{3F23}{23}\;\;\hLk{3F24}{24}\;\;\hLk{3F25}{25}\;\;\hLk{3F26}{26}\;\;$\\[-4pt]$\hLk{3F28}{28}\;\;\hLk{3F29}{29}\;\;\hLk{3F30}{30}\;\;\hLk{3F31}{31}\;\;\hLk{3F33}{33}\;\;\hLk{3F34}{34}\;\;\hLk{3F35}{35}\;\;\hLk{3F36}{36}\;\;\hLk{3F37}{37}\;\;\mid\;\;\hLk{3F4e5}{4E: 5,}\;\;\hLk{3F4e6}{6,}\;\;\hLk{3F4e8}{8,}\;\;\hLk{3F4e17}{17,}\;\;\hLk{3F4e23}{23,}\;\;\hLk{3F4e24}{24,}\;\;\hLk{3F4e25}{25}}[-40pt]{[1]: 20, 21; [2]: 22, 23, (4E 23); [3]: 31, 25, 26; [4]: 28, 29, 9, 13; [5]: 24, 37, 4, 17, 18, 19;$\\$[6]: 36, (4E 17), 15, 12; [7]: 16, (4E 6), 5; [8]: 32, 33, (4E 8), (4E 5); [9]: 6, (4E 25); [10]: 35, 7, 34.}
+\vfill\ChDecl{Ch3F}{3$\cdot$F}{}\orMode{\hLk{3F4}{4}\;\;\hLk{3F5}{5}\;\;\hLk{3F6}{6}\;\;\hLk{3F7}{7}\;\;\hLk{3F8}{8}\;\;\hLk{3F9}{9}\;\;\hLk{3F12}{12}\;\;\hLk{3F13}{13}\;\;\hLk{3F15}{15}\;\;\hLk{3F16}{16}\;\;\hLk{3F17}{17}\;\;\hLk{3F18}{18}\;\;\hLk{3F19}{19}\;\;\hLk{3F20}{20}\;\;\hLk{3F21}{21}\;\;\hLk{3F22}{22}\;\;\hLk{3F23}{23}\;\;\hLk{3F24}{24}\;\;\hLk{3F25}{25}\;\;\hLk{3F26}{26}\;\;$\\[-4pt]$\hLk{3F28}{28}\;\;\hLk{3F29}{29}\;\;\hLk{3F30}{30}\;\;\hLk{3F31}{31}\;\;\hLk{3F32}{32}\;\;\hLk{3F33}{33}\;\;\hLk{3F34}{34}\;\;\hLk{3F35}{35}\;\;\hLk{3F36}{36}\;\;\hLk{3F37}{37}\;\;\mid\;\;\hLk{3F4e5}{4E: 5,}\;\;\hLk{3F4e6}{6,}\;\;\hLk{3F4e8}{8,}\;\;\hLk{3F4e17}{17,}\;\;\hLk{3F4e23}{23,}\;\;\hLk{3F4e24}{24,}\;\;\hLk{3F4e25}{25}}[-40pt]{[1]: 20, 21; [2]: 22, 23, (4E 23), 30; [3]: 31, 25, 26; [4]: 28, 29, 9, 13; [5]: 24, 37, 4, 17, 18, 19;$\\$[6]: 36, (4E 17), 15, 12; [7]: 16, (4E 6), 5; [8]: 32, 33, (4E 8), (4E 5); [9]: 6, (4E 25); [10]: 35, 7, 8, 34.}
 \vspace{4pt}
 
 \ProblemN{\hypertarget{3F20}{20}, \hypertarget{3F21}{21}}{
@@ -3002,7 +3001,7 @@ If $p=0$ then we are done. If not, then suppose $p$ has exactly $n$ distinct zer
 Because $\exists\,!\,\alpha_i\geqslant 1,q\in\PoF{},$ and $q\neq 0,$ such that $p\Par{z}=\Sbra{\Par{z-\lambda_1}{^{\alpha_1}}\cdots\Par{z-\lambda_n}{^{\alpha_n}}}q\Par{z}.$\PfEnd\vspace{2pt}
 
 \ProblemBnoor[]{\Comment\,\,\,}[]{
-	\TextB{\large\envFontDefault\NOTICE that by [4.17], some term of the poly factorization might not in the form $\Par{x-\lambda_k}{^{\alpha_k}}.$\vspace{-6pt}}
+	\TextB{\large\envFontDefault\NOTICE that by [4.17], some term of the poly factorization might not be in the form $\Par{x-\lambda_k}{^{\alpha_k}}.$\vspace{-6pt}}
 }\SepLine
 
 \BulletPointX\NoteFor{[4.7]} {\tgsl the uniqness of coeffs of polys} \hfill[{\tgsc Another proof}]\TextB{\vspace{2pt}}
@@ -3079,11 +3078,11 @@ Define $T:\PoF{m}\rightarrow\Fbb^{m+1}$ by $Tq=\BigPar{q\Par{z_1},\dots,q\Par{z_
 We now show that $T$ is surj, so that such $p$ exists;\; and that $T$ is inje, so that such $p$ is unique.\vspace{1pt}\par\quad
 Inje: $Tq=0\Longleftrightarrow q\Par{z_1}=\dots=q\Par{z_m}=q\Par{z_{m+1}}=0\Longleftrightarrow q=0,$ by \TIPS.\vspace{1pt}\par\quad
 Surj: $\dim\range T=\dim\PoF{m}-\dim\null T=m+1=\dim\Fbb^{m+1}$ 又$\range T\subseteq\Fbb^{m+1}\Rightarrow T$ is surj.\PfEnd\vspace{8pt}\quad
-\Or Let $p_1=1,p_k\Par{z}=\prod_{i=1}^{k-1}\Par{z-z_i}=\Par{z-z_1}\cdots\Par{z-z_{k-1}}$ for each $k\in\Bra{2,\dots,m+1}.$\vspace{2pt}\par\quad
+\Or Let $p_1=1,\;p_k\Par{z}=\prod_{i=1}^{k-1}\Par{z-z_i}=\Par{z-z_1}\cdots\Par{z-z_{k-1}}$ for each $k\in\Bra{2,\dots,m+1}.$\vspace{2pt}\par\quad
 By (2.C.10), $B_p=\Par{p_1,\dots,p_{m+1}}$ is a basis of $\PoF{m}.$ Let $B_e=\Par{e_1,\dots,e_{m+1}}$ be the std basis of $\Fbb^{m+1}.$\vspace{4pt}\par\quad
-\NOTICE that $Tp_1=\Par{1,\dots,1},Tp_k=\XPar{\prod_{i=1}^{k-1}\Par{z_1-z_i},\dots,\underbrace{\prod_{i=1}^{k-1}\Par{z_j-z_i}}_{\envFontSmall[\scriptsize]j^{th}\text{ entry}},\dots,\prod_{i=1}^{k-1}\Par{z_{m+1}-z_i}}.$\vspace{2pt}\par\quad
+\NOTICE that $Tp_1=\Par{1,\dots,1},\;Tp_k=\XPar{\prod_{i=1}^{k-1}\Par{z_1-z_i},\dots,\underbrace{\prod_{i=1}^{k-1}\Par{z_j-z_i}}_{\envFontSmall[\scriptsize]j^{th}\text{ entry}},\dots,\prod_{i=1}^{k-1}\Par{z_{m+1}-z_i}}.$\vspace{2pt}\par\quad
 And that $\prod_{i=1}^{k-1}\Par{z_j-z_i}=0\Longleftrightarrow j\leqslant k-1,$ because $z_1,\dots,z_{m+1}$ are distinct.\vspace{4pt}\par\quad
-Thus $\Mt[\BigPar]{T,B_P,B_E}=\,${\normalsize$\begin{pmatrix}
+Thus $\Mt[\BigPar]{T,B_p,B_e}=\,${\normalsize$\begin{pmatrix}
 	1 & 0 & 0 & \cdots & 0\\
 	1 & A_{2,2} & 0 & \cdots & 0\\
 	1 & A_{3,2} & A_{3,3} & \cdots & 0\\
@@ -3091,7 +3090,7 @@ Thus $\Mt[\BigPar]{T,B_P,B_E}=\,${\normalsize$\begin{pmatrix}
 	1 & A_{m+1,2} & A_{m+1,3} & \cdots & A_{m+1,m+1}
 \end{pmatrix}$}.\vspace{6pt}\par\quad
 Where $A_{j,k}=\prod_{i=1}^{k-1}\Par{z_j-z_i}\neq 0$ for all $j> k-1\geqslant 1.$ The rows of $\Mt{T}$ is linely inde.\vspace{4pt}\par\quad
-By (4E 3.C.17) 又 $\dim\PoF{m}=\dim\Fbb^{m+1};$ \OR By (3.F.32); $T$ is inv.\PfEnd
+By (4E 3.C.17) 又 $\dim\PoF{m}=\dim\Fbb^{m+1};\;$ \OR By (3.F.32); $T$ is inv.\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{4O2}{2}}{
@@ -3114,11 +3113,11 @@ If $m=1,$ then $p\Par{z}=c\Par{z-\lambda_1},$ and $p\apostrophe=c$ has no zeros,
 For each $j\in\Bra{1,\dots,m}$, let $q_j\in\PoF{m-1}$ be such that ${p\Par{z}}={\Par{z-\lambda_j}}q_j\Rightarrow q_j\Par{\lambda_j}\neq 0.$\par\vspace{2pt}\quad\Ha
 Now $p\apostrophe\Par{z}=\Par{z-\lambda_j}q_j\apostrophe\Par{z}+q_j\Par{z}\Rightarrow p\apostrophe\Par{\lambda_j}=q_j\Par{\lambda_j}\neq 0,$ as desired.\par\vspace{6pt}\quad\Ha
 \Or To prove $[P]\Rightarrow[Q],$ we prove ${}^{\neg}[Q]\Rightarrow{}{^\neg}[P]$:\par\quad\Ha
-Suppose $p\Par{z}=\Par{z-\lambda}q\Par{z},\;p\apostrophe\Par{z}=\Par{z-\lambda}r\Par{z}.$\vspace{2pt}\par\quad\Ha
-又 $p\apostrophe\Par{z}=\Par{z-\lambda}q\apostrophe\Par{z}+q\Par{z}.$ Now $p\apostrophe\Par{\lambda}=q\Par{\lambda}=0\Rightarrow p\Par{z}=\Par{z-\lambda}{^2}s\Par{z}.$\vspace{2pt}\par\quad\Ha
+Suppose $p\Par{z}=\Par{z-\lambda}q\Par{z},\;p\apostrophe\Par{z}=\Par{z-\lambda}r\Par{z}.$ 又 $p\apostrophe\Par{z}=\Par{z-\lambda}q\apostrophe\Par{z}+q\Par{z}.$\vspace{2pt}\par\quad\Ha
+Now $p\apostrophe\Par{\lambda}=q\Par{\lambda}=0\Rightarrow q\Par{z}=\Par{z-\lambda}s\Par{z},p\Par{z}=\Par{z-\lambda}{^2}s\Par{z}.$\vspace{2pt}\par\quad\Ha
 Hence $p$ has strictly less than $m$ distinct zeros.\par\vspace{6pt}\quad
 (b) To prove $[Q]\Rightarrow[P]$, we prove ${}^{\neg}[P]\Rightarrow{}{^\neg}[Q]$:\par\quad\Hb
-Because nonzero $p\in\PoF{m},$ we suppose $\lambda_1,\dots,\lambda_M$ are the distinct zeros of $p,$ where $M<m.$\vspace{2pt}\par\quad\Hb
+Because nonzero $p\in\PoF{m},$ we suppose $\lambda_1,\dots,\lambda_M$ are all the distinct zeros of $p,$ where $M<m.$\vspace{2pt}\par\quad\Hb
 By Pigeon Hole Principle, $\exists\,\lambda_k$ such that $p\Par{z}=\Par{z-\lambda_k}{^{2}}q\Par{z}$ for some $q\in\PoF{}.$\vspace{3pt}\par\quad\Hb
 Hence $p\apostrophe\Par{z}=2\Par{z-\lambda_k}q\Par{z}+\Par{z-\lambda_k}{^2}q\apostrophe\Par{z}\Rightarrow p\apostrophe\Par{\lambda_k}=0=p\Par{\lambda_k}.$\PfEnd
 \SepLine
@@ -3127,9 +3126,8 @@ Hence $p\apostrophe\Par{z}=2\Par{z-\lambda_k}q\Par{z}+\Par{z-\lambda_k}{^2}q\apo
 	\TextN{Prove that every $p\in\PoR{}$ of odd degree has a zero.}
 }\par\quad
 Using the notation and proof of [4.17]. $\deg p=2M+m$ is odd $\Rightarrow m$ is odd. Hence $\lambda_1$ exists.\PfEnd\vspace{6pt}\quad
-\Or Using calculus only.\par\quad
-Suppose $p\in\PoF{m},\deg p=m,m$ is odd.\par\quad
-Let $p\Par{x}=a_0+a_1 x+\dots+a_m x^m.$ Then $a_m\neq 0.$ Denote $\aMid{a_m}{^{-1}}a_m$ by $\delta$\par\vspace{3pt}\quad
+\Or Using calculus only. Suppose $p\in\PoF{m},\deg p=m,m$ is odd.\par\quad
+Let $p\Par{x}=a_0+a_1 x+\dots+a_m x^m.$ Then $a_m\neq 0.$ Denote $\aMid{a_m}{^{-1}}a_m$ by $\delta.$\par\vspace{3pt}\quad
 Write $p\Par{x}=x^m\XPar{\displaystyle\frac{a_0}{x^m}+\frac{a_1}{x^{m-1}}+\dots+\frac{a_{m-1}}{x}+a_m}.$\par\vspace{5pt}\quad
 Thus $p\Par{x}$ is continuous, and $\lim\limits_{x\rightarrow -\infty}p\Par{x}=-\delta\infty\,;\quad\lim\limits_{x\rightarrow \infty}p\Par{x}=\delta\infty.$\par\quad
 Hence we conclude that $p$ has at least one real zero.\PfEnd
