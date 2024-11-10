@@ -31,7 +31,7 @@
 ### **LADR4eSolutions经典最全（By Axler？）.pdf**
 
 所见即所得，我认为这本答案中的思路和方法非常经典、非常贴合原书，与*LADR2eSolutions（By Axler）.pdf*的答案风格非常相近，这两本答案都比<https://linearalgebras.com/>上的答案更胜一筹。
-这个文件与我无关，我仅仅是从<https://lew98.github.io>那里下载过来改了下文件名又传到这里；疑似是 Sheldon Axler 教授所作，或者是他的学生所作，亦或者是共同完成，尽管这份文件没有在<https://linear.axler.net>上。
+这个文件与我无关，也不受这里**LICENSE**的限制，我仅仅是从<https://lew98.github.io>那里下载过来改了下文件名又传到这里；疑似是 Sheldon Axler 教授所作，或者是他的学生所作，亦或者是共同完成，尽管这份文件没有在<https://linear.axler.net>上。
 
 > 这份习题答案中，截止目前，我发现的错误有：
 > - 第4章14题第(a)问，
