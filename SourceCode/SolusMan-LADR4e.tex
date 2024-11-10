@@ -734,16 +734,16 @@ Hence $m\geqslant\dim\Span{v_1+w,\dots,v_m+w}\geq m-1.$\PfEnd
 }\par\quad
 {\Large\vspace{4pt}Using mathematical induction on $m$.}\par\quad
 (i) \envFontLarge{\Large\vspace{8pt}For $p_0,\;\deg p_0=0\Rightarrow\Span{p_0}=\Span{1}$.}\par\quad\Endi
-(ii) {\Large\vspace{4pt}Suppose for $i\geqslant 1,\Span{p_0,p_1,\dots,p_i}=\Span{1,x,\dots,x^i}$.}\par\quad\Hi
-{\Large\vspace{4pt}Then $\Span{p_0,p_1,\dots,p_i,p_{i+1}}\subseteq\Span{1,x,\dots,x^i,x^{i+1}}$.}\par\quad\Hi
-又 {\Large\vspace{4pt}$\deg p_{i+1}=i+1,\,\,\,\,p_{i+1}\Par{x}=a_{i+1}x^{i+1}+r_{i+1}\Par{x};\,\,\,\,a_{i+1}\neq 0,\,\,\,\deg r_{i+1}\leqslant i.$}
-\par\vspace{2pt}\quad\Hi
-{\Large\vspace{4pt}$\Rightarrow x^{i+1}=\displaystyle\frac{1}{a_{i+1}}\XPar{p_{i+1}\Par{x}-r_{i+1}\Par{x}}\in\Span{1,x,\dots,x^i,p_{i+1}}=\Span{p_0,p_1,\dots,p_i,p_{i+1}}$.}\par\vspace{2pt}\quad\Hi
+(ii) {\Large\vspace{4pt}Suppose for $i\geqslant 1,\Span{p_0,p_1,\dots,p_i}=\Span{1,x,\dots,x^i}$.}\par\quad\Hii
+{\Large\vspace{4pt}Then $\Span{p_0,p_1,\dots,p_i,p_{i+1}}\subseteq\Span{1,x,\dots,x^i,x^{i+1}}$.}\par\quad\Hii
+{\Large\vspace{4pt}又 $\deg p_{i+1}=i+1,\,\,\,\,p_{i+1}\Par{x}=a_{i+1}x^{i+1}+r_{i+1}\Par{x};\,\,\,\,a_{i+1}\neq 0,\,\,\,\deg r_{i+1}\leqslant i.$}
+\par\vspace{2pt}\quad\Hii
+{\Large\vspace{4pt}$\Rightarrow x^{i+1}=\displaystyle\frac{1}{a_{i+1}}\XPar{p_{i+1}\Par{x}-r_{i+1}\Par{x}}\in\Span{1,x,\dots,x^i,p_{i+1}}=\Span{p_0,p_1,\dots,p_i,p_{i+1}}$.}\par\vspace{2pt}\quad\Hii
 {\Large\vspace{8pt}$\therefore\,\,x^{i+1}\in\Span{p_0,p_1,\dots,p_i,p_{i+1}}\Rightarrow\Span{1,x,\dots,x^i,x^{i+1}}\subseteq\Span{p_0,p_1,\dots,p_i,p_{i+1}}$.}\par\quad
 {\Large\vspace{4pt}Thus $\PoF{m}=\Span{1,x,\dots,x^m}=\Span{p_0,p_1,\dots,p_m}.$}\PfEnd\vspace{12pt}\quad
 \Or 用比较系数法. {\Large\vspace{4pt}Denote the coefficient of $x^i$ in $p\in\PoF{}$ by $\xi_i\Par{p}.$}\par\quad
 {\Large\vspace{4pt}Suppose $L=a_m p_m\Par{x}+\dots+a_1 p_1\Par{x}+a_0p_0\Par{x}=0\cdot x^m+\dots+0\cdot x+0\cdot 1=R,\forall x\in\Fbb.$}\par\quad
-{\Large\vspace{4pt}We use induction on $m$ to show that $a_m=\dots=a_0=0.$}\par\quad
+{\Large\vspace{4pt}We use induction to show that $a_m=\dots=a_0=0.$}\par\quad
 (i) {\Large\vspace{4pt}$k=m,$ \;$\xi_{m}\Par{L}=a_{m}\xi_{m}\Par{p_m}=\xi_{m}\Par{R}=0$ 又 $\deg p_m=m,\;\xi_{m}\Par{p_m}\neq 0\Rightarrow a_m=0.$}\par\quad\Hi
 {\Large\vspace{8pt}Now $L=a_{m-1}p_{m-1}\Par{x}+\dots+a_0p_0\Par{x}.$}\par\quad\Endi
 (ii) {\Large\vspace{4pt}$1\leqslant k\leqslant m,$ \;$\xi_{k}\Par{L}=a_{k}\xi_{k}\Par{p_k}=\xi_{k}\Par{R}=0$ 又 $\deg p_k=k,\;\xi_{k}\Par{p_k}\neq 0\Rightarrow a_k=0.$}\par\quad\Hii
@@ -756,11 +756,12 @@ Hence $m\geqslant\dim\Span{v_1+w,\dots,v_m+w}\geq m-1.$\PfEnd
 	\TextB{{\large The basis in this exercise leads to what are called Bernstein polys. You can do a web search to learn how}}
 	\TextB{{\large Bernstein polys are used to approximate continuous functions on $[0, 1]$.}}
 }Using mathematical induction.\par\quad
-(i) \dbsp{\Large$k=0,1,2$, $p_m\Par{x}=x^m,\,\,\,p_{m-1}\Par{x}=x^{m-1}-x^m,\,\,\,p_{m-2}\Par{x}=x^{m-2}+x^m-2x^{m-1}.$\par}\quad\Endi
-(ii) \dbsp{\Large$k\geqslant 2.$ {\large Suppose for} $p_{m-k}\Par{x},\exists\,!\,a_i\in\Fbb,$ $x^{m-k}=p_{m-k}\Par{x}+a_m x^m+\dots+a_{m-k+1}x^{m-k+1}.$\par}\quad\Hii
-\dbsp{\Large {\large Then for} $p_{m-k-1}\Par{x},\exists\,!\,c_i\in\Fbb,$\par}
-\vspace{-10pt}
-{\Large\AlignEq{}{&x^{m-k-1}=p_{m-k-1}(x)+\mathC_{k+1}^1(-1)^2x^{m-k}+\dots+\mathC_{k+1}^k(-1)^{k+1}x^{m-1}+(-1)^{k-2}x^m\\\Rightarrow \,&c_{m-i}=\mathC_{k+1}^{k+1-i}(-1)^{k-i}.}\vspace{-10pt}\par}\quad\Hi
+Note that \vspace{-8pt} \AlignEq{\hspace{-20pt}}{p_k\Par{x}&=x^k\XPar{\textstyle\sum_{i=1}^{m-k}\mathC_{m-k}^i \Par{-1}{^{i}}x^{i}}\\&=\textstyle\sum_{i=1}^{m-k}\mathC_{m-k}^i \Par{-1}{^{i}}x^{i+k}=\Par{-1}{^0}x^{k} +\textstyle\sum_{i=1}^{m-k-1}\mathC_{m-k}^i \Par{-1}{^{i}}x^{i+k}.}\par\quad
+(i) For $k=m.$ \;$p_m\Par{x}=x^m.$\par\quad\Endi
+(ii) For {\Large$2\leqslant k\leqslant m.$ {\large Suppose for} $p_{k}\Par{x},x^{k}=p_{k}\Par{x}-\sum_{i=1}^{m-k-1}\mathC_{m-k}^i \Par{-1}^{i}x^{i+k}.$\par}\quad\Hii
+{\Large {\large Then for $k-1.\;$}\par}\quad\Hii
+{\Large\par}\vspace{4pt}\quad\Hii
+{\Large$\Rightarrow c_{m-i}=\mathC_{k-1}^{k-1-i}(-1)^{k-1-i}.$\par}\quad\Hii
 {\Large {\large Thus for each} $x^i,\,\exists\,!\,b_i\in\Fbb,x^i=b_m p_m\Par{x}+\dots+b_{m-i}p_{m-i}\Par{x}$\par}\quad\Hii
 {\Large$\Rightarrow\Span{x^m,\dots,x,1}=\Spn\Par{\underbrace{p_m,\dots,p_1,p_0}_\text{Basis}}.$}\large\PfEnd\vspace{10pt}\quad
 \Or For any $m,k\in\Nbp$ such that $k\leqslant m.$ Define $p_{k,m}$ by $p_{k,m}\Par{x}=x^k\Par{1-x}^{m-k}.$\par\quad
