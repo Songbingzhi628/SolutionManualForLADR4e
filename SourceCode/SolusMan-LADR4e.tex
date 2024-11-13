@@ -1,4 +1,7 @@
 \documentclass[a4paper, 11pt, UTF8]{article}
+%\usepackage{background}
+\usepackage{wallpaper}
+
 \usepackage{amssymb,amsmath,amsfonts}
 \usepackage{ctex}
 \usepackage{setspace}
@@ -17,6 +20,9 @@
 \begin{document}
 \begin{large}
 \parindent 0pt
+
+
+%\backgroundsetup{scale=1,angle=0,opacity=0.1,contents={\includegraphics[width=\paperwidth, height=\paperheight, keepaspectratio]{b04.jpg}}}
 
 %{ 关于字体设置
 \setmainfont{TeXGyrePagella-Regular}
@@ -3269,7 +3275,7 @@ Because $p{^{\SmallPar{\alpha-1}}}\Par{z}=\XSbra{\mathC_{\alpha-1}^{\alpha-1}\Pa
 More generally, suppose we do not know whether $V$ is finite-dim. We show that $(a)\Longleftrightarrow(b).$\TextB{}
 Suppose (a) $\lambda$ is an eigval of $T$ with an eigvec $v.$ Then $\Par{T-\lambda I}v=0.$\TextB{}
 Hence we get (b), $\Par{T-\lambda I}$ is not inje. And then (d), $\Par{T-\lambda I}$ is not inv.\TextB{}
-But $\Par{d}\Rightarrow(b)$ fails, because $S$ is not inv $\Longleftrightarrow S$ is not inje \OR $S$ is not surj.\par
+But (d) $\Rightarrow$ (b) fails, because $S$ is not inv $\Longleftrightarrow S$ is not inje \OR $S$ is not surj.\par
 \SepLine
 
 %\BulletPointX\NoteFor{[5.10]} {\normalsize linely inde eigvecs}\TextB{}
@@ -4319,11 +4325,11 @@ Hence $T^2 e_k=n\Par{T e_k}\Rightarrow T^2=n T\Rightarrow T^2-n T=T\Par{T-n}=0.$
 If $\theta=\pi+2k\pi,$ then $T\Par{w,z}=\Par{-w,-z},T^2=I$ and the mini poly is $z+1.$\par\quad
 If $\theta=2k\pi,$ then $T=I$ and the mini poly is $z-1.$\par\quad
 Otherwise $\Par{v,Tv}$ is linely inde. Then $\Span{v,Tv}=\Rbb^2.$ Note that $\nexists\,b\in\Fbb,T-bI=0.$\par\quad
-\par\vspace{24pt}\quad
-Because\vspace{-40pt}\par\quad
-\hspace{45pt}\includegraphics[width=4.4cm,height=3.2cm,scale=0.22]{./diagram2.png}\par\vspace{-70pt}\quad
-\hspace{200pt}{$\MathLeftMid{l}{Tv=\displaystyle\frac{\left|\overset{\rightarrow}{v}\right|}{2L}\Par{T^2 v+v}\Rightarrow T=\frac{\left|\overset{\rightarrow}{v}\right|}{2L}\Par{T^2+I}\\\vspace{8pt}\displaystyle L=\left|\overset{\rightarrow}{v}\right|\cos\theta\Rightarrow\frac{\left|\overset{\rightarrow}{v}\right|}{2L}=\frac{1}{2\cos\theta}}$}\par\vspace{-105pt}\quad
-Thus suppose the mini poly $p$ is defined by $p\Par{z}=z^2+bz+c$ for all $z\in\Rbb.$\vspace{90pt}\par\quad
+\par\vspace{-16pt}\quad
+Thus suppose the mini poly $p$ is defined by $p\Par{z}=z^2+bz+c$ for all $z\in\Rbb.$\par\vspace{20pt}\quad
+Because\vspace{-35pt}\par\quad
+\hspace{50pt}\includegraphics[width=4.4cm,height=3.2cm,scale=0.22]{./diagram2.png}\par\vspace{-70pt}\quad
+\hspace{180pt}{$\MathLeftMid{l}{Tv=\displaystyle\frac{\left|\overset{\rightarrow}{v}\right|}{2L}\Par{T^2 v+v}\Rightarrow T=\frac{\left|\overset{\rightarrow}{v}\right|}{2L}\Par{T^2+I}\\\vspace{8pt}\displaystyle L=\left|\overset{\rightarrow}{v}\right|\cos\theta\Rightarrow\frac{\left|\overset{\rightarrow}{v}\right|}{2L}=\frac{1}{2\cos\theta}}$}\par\quad
 Hence $p\Par{T}=T^2-2\cos\theta\, T+I=0$ and $z^2-2\cos\theta\;z+1$ is the mini poly of $T.$\PfEnd\vspace{6pt}\quad
 \Or Let $\Par{e_1,e_2}$ be the standard basis of $\Rbb^2.$ We use the pattern shown in [8.44].\par\quad
 Because $Te_1=\cos\theta\;e_1+\sin\theta\;e_2,\;T^2e_1=\cos2\theta\;e_1+\sin2\theta\;e_2.$\par\vspace{2pt}\quad
