@@ -139,6 +139,9 @@
 \newcommand{\XSbra}[1]{{\text{\envFont\forbrax[}}#1{\text{\envFont\forbrax]}}}
 \newcommand{\zeroSubs}[1][\Bra]{{#1{0}}}
 
+\newcommand{\Interval}[3]{{\text{\envFont\forbra#1\hspace{1pt}}}#3{\text{\envFont\forbra\hspace{1pt}#2}}}
+\newcommand{\XInterval}[3]{{\text{\envFont\forbrax#1}}#3{\text{\envFont\forbrax#2}}}
+
 \newcommand{\ExampleX}[2][\Solution]{
 	{\BulletPoint} {\Example}\,\,\,{#2}\envFontDefault\vspace{-16pt}\par
 	#1
@@ -350,6 +353,8 @@ Suppose $a\neq 0,\exists\,a^{-1}\in\Fbb,a^{-1}a=1,$ hence $v=1\cdot v=\Par{a^{-1
 	\TextN{\large{\tgsc Hint\tgbf:} Suppose $V$ satisfies all conds in the def, except we've replaced the add inv cond with [1.29].}
 	\TextN{\large\Blind{{\tgsc Hint\tgbf:}} Prove that the add inv is true.}
 }\Blind{\IndentN} Using [1.31]. $0v = 0$ for all $v\in V$ $\Longleftrightarrow \Par{1+\Par{-1}}v=1\cdot v+\Par{-1}v=v+\Par{-v}=0.$\PfEnd
+%\Blind{\IndentN} \Comment \,\,\,Because $\forall v\in V,v+\Par{-1}v=0v=0\Rightarrow\exists\,w=\Par{-1}v\in V,v+w=0.$\par
+%\Blind{\IndentN} \Blind{\Comment \,\,\,}The add inv cond can also be replaced by [1.31].
 \SepLine
 
 \ProblemN{6}{
@@ -557,42 +562,42 @@ $Q\overset{2}{\Rightarrow} P:$ no scalar multi $\Rightarrow$ if $av+bw=0,$ then 
 	\TextN{Prove that [P] $\Par{v_1,v_2,v_3,v_4}$ spans $V\Longleftrightarrow\Par{v_1-v_2,v_2-v_3,v_3-v_4,v_4}$ also spans V [Q].}
 }\par\quad
 Notice that $V=\Span{v_1,\dots,v_n}\Longleftrightarrow\forall v\in V,\exists\,a_1,\dots,a_n\in\Fbb,v=a_1v_1+\dots+a_nv_n.$\par\quad
-Assume that $\forall v\in V,\exists\,a_1,\dots,a_4,b_1,\dots,b_4\in\Fbb,$ ( that is, if $\exists\,a_i,$ then we are to find $b_i,$ vice versa )$\\[-8pt] $
-\AlignEq{}{v&=a_1 v_1+a_2 v_2+a_3 v_3+a_4 v_4\\&=b_1\Par{v_1-v_2}+b_2\Par{v_2-v_3}+b_3\Par{v_3-v_4}+b_4 v_4\\&=b_1 v_1+\Par{b_2-b_1}v_2+\Par{b_3-b_2}v_3+\Par{b_4-b_3}v_4.\\[-25pt]}\par\quad
+Assume that $\forall v\in V,\exists\,a_1,\dots,a_4,b_1,\dots,b_4\in\Fbb,$ ( that is, if $\exists\,a_i,$ then we are to find $b_i,$ vice versa )$\\[-6pt] $
+\AlignEq{}{v&=a_1 v_1+a_2 v_2+a_3 v_3+a_4 v_4\\[-2pt]&=b_1\Par{v_1-v_2}+b_2\Par{v_2-v_3}+b_3\Par{v_3-v_4}+b_4 v_4\\[-2pt]&=b_1 v_1+\Par{b_2-b_1}v_2+\Par{b_3-b_2}v_3+\Par{b_4-b_3}v_4.\hspace{88pt}}\vspace{-3pt}\par\quad
 Now we can let $b_i=\sum_{r=1}^i a_r$ if we are to prove $Q$ with $P$ already assumed;\par\quad
 \Blind{Now we can} or let $a_i=b_i-b_{i-1}$ with $b_{0}=0,$ if we are to prove $P$ with $Q$ already assumed.\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{2A6}{6}}{
-	\TextN{Prove that [P] $\Par{v_1,v_2,v_3,v_4}$ is linely inde} \TextN{\hspace{37pt}$\Longleftrightarrow$ [Q] $\Par{v_1-v_2,v_2-v_3,v_3-v_4,v_4}$ is linely inde.}
-}\vspace{0pt}\AlignEq{}{\qquad\qquad\qquad P\Rightarrow Q:\;&a_1\Par{v_1-v_2}+a_2\Par{v_2-v_3}+a_3\Par{v_3-v_4}+a_4 v_4=0\hspace{154pt}\\\Rightarrow\;&a_1 v_1+\Par{a_2-a_1}v_2+\Par{a_3-a_2}v_3+\Par{a_4-a_3}v_4=0\\\Rightarrow&\;a_1=a_2-a_1=a_3-a_2=a_4-a_3=0}\par\quad
-\vspace{-10pt}
-\AlignEq{}{\qquad\qquad\qquad Q\Rightarrow P:\;&a_1 v_1+a_2 v_2+a_3 v_3+a_4 v_4=0\\\Rightarrow\;&a_1\Par{v_1-v_2}+\Par{a_1+a_2}\Par{v_2-v_3}+\Par{a_1+a_2+a_3}\Par{v_3-v_4}+\Par{a_1+\dots+a_4}v_4=0\\\Rightarrow\;&a_1=a_1+a_2=a_1+a_2+a_3=a_1+\dots+a_4=0.}\PfEnd[-30pt]
+	\TextN{Prove that [P] $\Par{v_1,v_2,v_3,v_4}$ is linely inde}
+	\TextN{\Blind{Prove that} $\Longleftrightarrow\Par{v_1-v_2,v_2-v_3,v_3-v_4,v_4}$ is linely inde. [Q]\vspace{-6pt}}
+}\vspace{10pt}\AlignEq{}{P\Rightarrow Q:\;&a_1\Par{v_1-v_2}+a_2\Par{v_2-v_3}+a_3\Par{v_3-v_4}+a_4 v_4=0\\[-2pt]\Rightarrow\;&a_1 v_1+\Par{a_2-a_1}v_2+\Par{a_3-a_2}v_3+\Par{a_4-a_3}v_4=0\Rightarrow a_1=a_2-a_1=a_3-a_2=a_4-a_3=0\\Q\Rightarrow P:\;&a_1 v_1+a_2 v_2+a_3 v_3+a_4 v_4=0\\[-2pt]\Rightarrow\;&a_1\Par{v_1-v_2}+\Par{a_1+a_2}\Par{v_2-v_3}+\Par{a_1+a_2+a_3}\Par{v_3-v_4}+\Par{a_1+\dots+a_4}v_4=0\\[-2pt]\Rightarrow\;&a_1=a_1+a_2=a_1+a_2+a_3=a_1+\dots+a_4=0.}\PfEnd[-30pt]
 \SepLine
 
 \ProblemB{
 	\hypertarget{2A4e314}{}\TextB{Suppose $\Par{v_1,\dots,v_m}$ is a list of vecs in $V$. For each $k$, let $w_k=v_1+\dots+v_k$.}
-	(a) \TextB{Show that $\Span{v_1,\dots,v_m}=\Span{w_1,\dots,w_m}$.}
+	(a) \TextB{Show that $\Span{v_1,\dots,v_m}=\Span{w_1,\dots,w_m}.$}
 	(b) \TextB{Show that [P] $\Par{v_1,\dots,v_m}$ is linely inde $\Longleftrightarrow$ $\Par{w_1,\dots,w_m}$ is linely inde [Q].}
 }\par\quad
-(a) {\tgsc\normalsize let} $a_k=\sum\limits_{j=1}^k b_j\Leftarrow\;a_1 v_1+\dots+a_m v_m=b_1 w_1+\dots+b_m w_m\;\Rightarrow$ {\tgsc\normalsize let} $b_1=a_1,\;b_k=a_k-\sum\limits_{j=1}^{k-1}b_j=\sum\limits_{j=1}^k \Par{-1}^{k-j}a_j.$\vspace{10pt}\par\quad
-(b) \vspace{-13.5pt}\AlignEq{}{\qquad
-	P\Rightarrow Q:\;\;&b_1 w_1+\dots+b_m w_m=0=a_1 v_1+\dots+a_m v_m,\text{\;where\;}0=a_k=\textstyle\sum\limits_{j=1}^k b_k.\hspace{95pt}
-}\par\vspace{-10pt}\quad\Hb
-\AlignEq{}{\qquad\quad Q\Rightarrow P:\;\;&a_1 v_1+\dots+a_m v_m=0=b_1 w_1+\dots+b_m w_m=0, \text{\;where\;} 0=b_1=a_1,\;0=b_k=\textstyle\sum\limits_{j=1}^k (-1)^{k-j}a_j}\par\quad\Hb
-\Or  Because $W=\Span{v_1,\dots,v_m}=\Span{w_1,\dots,w_m}.$\par\quad\Hb
+(a) Assume $a_1v_1+\dots+a_mv_m=b_1w_1+\dots+b_mw_m=b_1v_1+\dots+b_k\Par{v_1+\dots+v_k}+\dots+b_m\Par{v_1+\dots+v_m}.$\par\quad\Ha
+Then $a_k=b_k+\dots+b_m;\;\;a_{k+1}=b_{k+1}+\dots+b_m\Rightarrow b_k=a_k-a_{k+1};\;b_m=a_m.$ Similar to Problem (1).\vspace{2pt}\par\quad
+(b) $P\Rightarrow Q:\;\;b_1 w_1+\dots+b_m w_m=0=a_1 v_1+\dots+a_m v_m,\text{\;where\;}0=a_k=b_k+\dots+b_m.$\par\quad\Hb
+$Q\Rightarrow P:\;\;a_1 v_1+\dots+a_m v_m=0=b_1 w_1+\dots+b_m w_m=0, \text{\;where\;} 0=b_m=a_m,\;0=b_k=a_k-a_{k+1}.$\vspace{4pt}\par\quad\Hb
+\Or Because $W=\Span{v_1,\dots,v_m}=\Span{w_1,\dots,w_m}.$\par\quad\Hb
 By [2.21](b), a list of length $\Par{m-1}$ spans $W,$ then by [2.23],\par\quad\Hb
-$\Par{w_1,\dots,w_m}$ linely dep $\Rightarrow\Par{v_1,\dots,v_m}$ linely dep. Conversely it is true as well.\PfEnd
+$\Par{w_1,\dots,w_m}$ linely dep $\Longrightarrow\Par{v_1,\dots,v_m}$ linely dep. Conversely it is true as well.\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{2A10}{10}}{
 	\TextNL{Suppose $\Par{v_1,\dots,v_m}$ is linely inde in $V$ and $w\in V$.}
 	\TextNL{Prove that if $\Par{v_1+w,\dots,v_m+w}$ is linely depe, then $w\in\Span{v_1,\dots,v_m}$.}
 }\par\quad
-Suppose $a_1\Par{v_1+w}+\dots+a_m\Par{v_m+w}=0,\exists\,a_i\neq 0\Rightarrow a_1 v_1+\dots+a_m v_m=0=-\Par{a_1+\dots+a_m}w.$\par\quad
+Suppose $a_1\Par{v_1+w}+\dots+a_m\Par{v_m+w}=0,\exists\,a_i\neq 0\Rightarrow a_1 v_1+\dots+a_m v_m=-\Par{a_1+\dots+a_m}w.$\par\quad
 Then $a_1+\dots+a_m\neq 0$, for if not, $a_1 v_1+\dots+a_m v_m=0$ while $a_i\neq 0$ for some $i$, contradicts.%\par\quad Hence $w\in\Span{v_1,\dots,v_m}.$
-\PfEnd\quad
-\Or By contrapositive, $w\not\in\Span{v_1,\dots,v_m},$ similarly.\PfEnd\quad
+\PfEnd\vspace{2pt}\quad
+\Or By contrapositive: Prove that $w\not\in\Span{v_1,\dots,v_m}\Longrightarrow\Par{v_1+w,\dots,v_m+w}$ is linely inde.\par\quad
+Suppose $a_1\Par{v_1+w}+\dots+a_m\Par{v_m+w}=0\Rightarrow a_1v_1+\dots+a_mv_m=-\Par{a_1+\dots+a_m}w.$\par\quad
+Now by assumption, $a_1+\dots+a_m=0.$ Then $a_1v_1+\dots+a_mv_m=0\Rightarrow a_1=\dots=a_m=0.$\PfEnd\vspace{2pt}\quad
 \Or $\exists\,j\in\!\Bra{1,\dots,m},v_j+w\in\Span{v_1+w,\dots,v_{j-1}+w}.$ If $j=1$ then $v_1+w=0$ and we are done.\par\quad
 If $j\geqslant 2,$ then $\exists\,a_i\in\Fbb,v_j+w=a_1\Par{v_1+w}+\dots+a_{j-1}\Par{v_{j-1}+w}\Longleftrightarrow v_j+\lambda w=a_1 v_1+\dots+a_{j-1}v_{j-1}.$\par\quad
 Where $\lambda=1-\Par{a_1+\dots+a_{j-1}}.$ Note that $\lambda\neq 0,$ for if not, $v_j+\lambda w=v_j\in\Span{v_1,\dots,v_{j-1}},$ contradicts.\par\quad
@@ -602,22 +607,21 @@ Now $w=\lambda^{-1}\Par{a_1 v_1+\dots+a_{j-1}v_{j-1}-v_j}\Rightarrow w\in\Span{v
 \ProblemN{\hypertarget{2A11}{11}}{
 	\TextNL{Suppose $\Par{v_1,\dots,v_m}$ is linely inde in $V$ and $w\in V$.}
 	\TextNL{Show that [P] $\Par{v_1,\dots,v_m,w}$ is linely inde $\Longleftrightarrow w\not\in\Span{v_1,\dots,v_m}$ [Q].\vspace{8pt}}
-}\hspace{-7pt}$\begin{array}{l}{}^\neg Q\Rightarrow{}^\neg P:$ Suppose $w\in\Span{v_1,\dots,v_m}$. Then $\Par{v_1,\dots,v_m,w}$ is linely depe.$\\{}^\neg P\Rightarrow{}^\neg Q:$ Suppose $\Par{v_1,\dots,v_m,w}$ is linely dep. Then by [2.21] $w\in\Span{v_1,\dots,v_m}.\end{array}$\PfEnd
+}\hspace{-7pt}$\begin{array}{l}{}^\neg Q\Rightarrow{}^\neg P:$ Suppose $w\in\Span{v_1,\dots,v_m}$. Then $\Par{v_1,\dots,v_m,w}$ is linely depe.$\\{}^\neg P\Rightarrow{}^\neg Q:$ Suppose $\Par{v_1,\dots,v_m,w}$ is linely dep. Then by [2.21](a), $w\in\Span{v_1,\dots,v_m}.\end{array}$\PfEnd[-13pt]\vspace{-4pt}
 \SepLine
 
 \ProblemN{\hypertarget{2A14}{14}}{
 	\TextNL{Prove that [P] $V$ is infinite-dim $\Longleftrightarrow[Q]\left|\hspace{-6pt}\begin{array}{l}$ there is a sequence $\Par{v_1,v_2,\dots}$ in $V$ such that$\\[-8pt]$ $\Par{v_1,\dots,v_m}$ is linely inde for each $m\in\Nbp.\end{array}\right.$}
 }\par\quad
-$P\Rightarrow Q:\;$ Suppose $V$ is infinite-dim, so that no list spans $V$.\par\quad\hspace{44pt}
-{\tgbf Step 1}\;\; Pick a $v_1\neq 0,\Par{v_1}$ linely inde.\par\quad\hspace{44pt}
-{\tgbf Step m}\; Pick a $v_m\not\in\Span{v_1,\dots,v_{m-1}},$ by Problem (10)(b), $\Par{v_1 , ..., v_m}$ is linely inde.\par\quad\hspace{44pt}
-This process recursively defines the desired sequence $\Par{v_1 , v_2 , \dots}.$\par\quad
-${}^\neg P\Rightarrow{}^\neg Q:\;$ Suppose $V$ is finite-dim and $V=\Span{w_1 , ..., w_m}$.\par\quad\hspace{60pt}
-Let $\Par{v_1 , v_2 , \dots}$ be a sequence in $V$, then $\Par{v_1,v_2,\dots,v_{m+1}}$ must be linely dep.\par\quad
-\Or $Q\Rightarrow P:\;$ Suppose there is such a sequence.\par\qquad\hspace{54pt}
-Choose an $m$. Suppose a linely inde list $\Par{v_1,\dots,v_m}$ spans $V$.\par\qquad\hspace{54pt}
-\Par{ Similar to [2.16] } Then $\exists\,v_{m+1}\in V\backslash\Span{v_1,\dots,v_m}$.\par\qquad\hspace{54pt}
-Hence no list spans $V$. Thus $V$ is infinite-dim.\PfEnd
+$P\Rightarrow Q:\;$ Suppose $V$ is infinite-dim, so that no list spans $V$.\par\quad
+\Blind{$P\Rightarrow Q:\;$} {\tgbf Step 1}\;\; Pick a $v_1\neq 0,\Par{v_1}$ linely inde.\par\quad
+\Blind{$P\Rightarrow Q:\;$} {\tgbf Step m}\; Pick a $v_m\not\in\Span{v_1,\dots,v_{m-1}},$ by Problem (11), $\Par{v_1,\dots,v_m}$ is linely inde.\par\quad
+\Blind{$P\Rightarrow Q:\;$} This process recursively defines the desired sequence $\Par{v_1,v_2,\dots}.$\vspace{4pt}\par\quad
+${}^\neg P\Rightarrow{}^\neg Q:\;$ Suppose $V$ is finite-dim and $V=\Span{w_1 , ..., w_m}$.\par\quad
+\Blind{${}^\neg P\Rightarrow{}^\neg Q:\;$} Let $\Par{v_1 , v_2 , \dots}$ be a sequence in $V$, then $\Par{v_1,v_2,\dots,v_{m+1}}$ must be linely dep.\vspace{4pt}\par\quad
+\Or\; $Q\Rightarrow P:\;$ Suppose there is such a sequence.\par\quad
+\Blind{\Or\; $Q\Rightarrow P:\;$} Choose an $m$. Suppose a linely inde list $\Par{v_1,\dots,v_m}$ spans $V$.\par\quad
+\Blind{\Or\; $Q\Rightarrow P:\;$} Similar to [2.16]. $\exists\,v_{m+1}\in V\backslash\Span{v_1,\dots,v_m}.$ Hence no list spans $V.$\PfEnd
 \SepLine
 
 %\ProblemN{15}{
@@ -630,30 +634,30 @@ Hence no list spans $V$. Thus $V$ is infinite-dim.\PfEnd
 \ProblemN{\hypertarget{2A16}{16}}{
 	\TextNL{Prove that the vecsp of all continuous functions in $\Rbb^{[0,1]}$ is infinite-dim.}
 }Denote the vecsp by $U$.\par\quad
-Choose an $m\in\Nbp.$ Suppose $a_0,\dots,a_m\in\Rbb$ are such that $a_0+a_1 x+\dots+a_m x^m=0,\,\forall x\in\Sbra{0,1}.$\par\quad
-Then the poly has infinitely many roots and hence $a_0=\dots=a_m=0$.\par\quad
+Choose one $m\in\Nbp.$ Suppose $a_0,\dots,a_m\in\Rbb$ are such that $p\Par{x}=a_0+a_1 x+\dots+a_m x^m=0,\,\forall x\in\Sbra{0,1}.$\par\quad
+Then $p$ has infinitely many roots and hence each $a_k=0,$ otherwise $\deg p\geqslant 0,$ contradicts [4.12].\par\quad
 Thus $\Par{1,x,\dots,x^m}$ is linely inde in $\Rbb^{[0,1]}.$ Similar to [2.16], $U$ is infinite-dim.\PfEnd\vspace{10pt}\quad
-\Or Note that for $a_n=\displaystyle\frac{1}{n},\,\,\,\,\,a_1<a_2<\dots<a_m,\,\,\,\forall m\in\Nbp$.\par\quad
-Suppose $f_n=\left\{\begin{array}{r}x-{\displaystyle\frac{1}{n}},\,\,\,x\in\XPar{\displaystyle\frac{1}{n},1}\\0\quad\;\;\;,\;\;x\in\XSbra{0,\displaystyle\frac{1}{n}}\end{array}\right|$
-Then for any $m$, $f_1\XPar{\displaystyle\frac{1}{m}}=\dots=f_m\XPar{\displaystyle\frac{1}{m}}$, while $f_{m+1}\XPar{\displaystyle\frac{1}{m}}\neq 0$.\par\vspace{6pt}\quad
-Hence $f_{m+1}\not\in\Span{f_1,\dots,f_m}$. Thus by Problem (14), $U$ is infinite-dim.\PfEnd
+\Or Note that\; $\displaystyle\frac{1}{1}>\frac{1}{2}>\dots>\frac{1}{m},\,\,\,\forall m\in\Nbp.$ Suppose\; $f_m=\left\{\begin{array}{l}
+	\hspace{-4pt}x-{\displaystyle\frac{1}{m}},\;\;x\in\XInterval{(}{]}{\;\displaystyle\frac{1}{m},\;1\;}\\
+	\hspace{-4pt}0,\hfill x\in\XSbra{\;0,\;\displaystyle\frac{1}{m}\;}\end{array}\right.$\vspace{4pt}\par\quad
+Then\; $f_1\XPar{\displaystyle\frac{1}{m}}=\dots=f_m\XPar{\displaystyle\frac{1}{m}}=0\neq f_{m+1}\XPar{\displaystyle\frac{1}{m}}.$ 
+Hence $f_{m+1}\not\in\Span{f_1,\dots,f_m}.$ By Problem (14).\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{2A17}{17}}{
 	\TextNL{Suppose $p_0,p_1,\dots,p_m\in\PoF{m}$ such that $p_k\Par{2}=0$ for each $k\in\!\Bra{0,\dots,m}$.}
 	\TextNL{Prove that $\Par{p_0,p_1,\dots,p_m}$ is not linely inde in $\PoF{m}$.}
 }\par\quad
-Suppose $\Par{p_0,p_1,\dots,p_m}$ is linely inde. Define $p\in\PoF{m}$ by $p\Par{z}=z\,\,\forall z\in\Fbb.$\par\quad
-But $\forall a_i\in\Fbb,z\neq a_0 p_0\Par{z}+\dots+a_m p_m\Par{z}$, for if not, let $z=2$, contradicts.
-Thus $z\not\in\Span{p_0,p_1,\dots,p_m}$.\par\quad
+Suppose $\Par{p_0,p_1,\dots,p_m}$ is linely inde. Define $p\in\PoF{m}$ by $p\Par{z}=z.$\par\quad
+\NOTICE that $\forall a_i\in\Fbb,z\neq a_0 p_0\Par{z}+\dots+a_m p_m\Par{z},$ for if not, let $z=2.$ Thus $z\not\in\Span{p_0,p_1,\dots,p_m}$.\par\quad
 Then $\Span{p_0,p_1,\dots,p_m}\subsetneq\PoF{m}$ while the list $\Par{p_0,p_1,\dots,p_m}$ has length $\Par{m+1}$.\par\quad
 Hence $\Par{p_0,p_1,\dots,p_m}$ is linely depe in $\PoF{m}$.\par\quad
 For if not, then because $\Par{1,z,\dots,z^m}$ of length $\Par{m+1}$ spans $\PoF{m},$\par\quad
 by the steps in [2.23] trivially, $\Par{p_0,p_1,\dots,p_m}$ of length $\Par{m+1}$ spans $\PoF{m}.$ Contradicts.\PfEnd\vspace{10pt}\par\quad
-\Or Note that $\PoF{m}=\Span{\underbrace{\;1,\;z,\;\dots,\;z^m\;}_{\text{of length }\Par{m+1}}}.$ $\Par{p_0,p_1,\dots,p_m,z}$ of length $\Par{m+2}$ is linely dep.\vspace{3pt}\par\quad
-\Par{ See the above } Now $z\not\in\Span{p_0,p_1,\dots,p_m}$ and hence $\Par{p_0,p_1,\dots,p_m}$ is linely dep.\PfEnd
+\Or Note that $\PoF{m}=\Span{\underbrace{\;1,\;z,\;\dots,\;z^m\;}_{\text{of length }\Par{m+1}}}.$ Then $\Par{p_0,p_1,\dots,p_m,z}$ of length $\Par{m+2}$ is linely dep.\vspace{3pt}\par\quad
+As shown above,  $z\not\in\Span{p_0,p_1,\dots,p_m}.$ And hence $\Par{p_0,p_1,\dots,p_m}$ is linely dep.\PfEnd
 \SepLine
-\ChEnd
+\ChEnd\pagebreak
 
 \ChDecl{Ch2B}{2$\cdot$B}{}\orMode{\hLk{2B1}{1}\;\;\hLk{2B7}{7}\;\;\hLk{2B8}{8}\;\;|\;\;\hLk{2B4e5}{4E: 5,}\;\;\hLk{2B4e9}{\!9}}{[1]: 7, 1, (4E 9,5), 8.}
 \vspace{8pt}
@@ -666,9 +670,9 @@ Let $V=\Rbb^4$ and $e_j$ be the $j^\text{th}$ standard basis.\par\quad
 Let $v_1=e_1,v_2=e_2,v_3=e_3+e_4,v_4=e_4.$ Then $\Par{v_1,\dots,v_4}$ is a basis of $\Rbb^4.$\par\quad
 Let $U=\Span{e_1,e_2,e_3}=\Span{v_1,v_2,v_3-v_4}.$ Then $v_3\not\in U$ and $\Par{v_1,v_2}$ is not a basis of $U.$\PfEnd\SepLine
 
-\BulletPointX\NoteForSmall{\Large $“\complement_V U \cap \zeroSubs”$}\TextB{}
-$“\complement_V U \cap \zeroSubs”$ is supposed to be a subsp $W$ such that $V=U\oplus W$.\TextB{}
-But if we let $u\in U\backslash\zeroSubs$ and $w\in W\backslash\zeroSubs$, then $\MathRightBrace{l}{w\in\complement_V U \cap \zeroSubs\\ u\pm w\in\complement_V U \cap \zeroSubs }\Rightarrow u\in\complement_V U \cap \zeroSubs.$ Contradicts.\vspace{4pt}\TextB{}
+\BulletPointX\NoteForSmall{\Large $“\complement_V U \cup \zeroSubs”$}\TextB{}
+$“\complement_V U \cup \zeroSubs”$ is supposed to be a subsp $W$ such that $V=U\oplus W$.\TextB{}
+But if we let $u\in U\backslash\zeroSubs$ and $w\in W\backslash\zeroSubs$, then $\MathRightBrace{l}{w\in\complement_V U \cup \zeroSubs\\ u\pm w\in\complement_V U \cup \zeroSubs }\Rightarrow u\in\complement_V U \cup \zeroSubs.$ Contradicts.\vspace{4pt}\TextB{}
 To fix this, {\Large\envFontLarge denote the set $\Bra{W_1,W_2\dots}$ by $\mathcal{S}_V U$,} {\small where for each $W_i,V=U\oplus W_i$. See also in (1.C.23).}\par\SepLine
 
 \ProblemN{\hypertarget{2B1}{1}}{
@@ -687,10 +691,10 @@ By {\tgsc some theories or facts} given in the course of Elementary Abstract Alg
 
 \ProblemB{
 	\hypertarget{2B4e9}{}\TextB{Suppose $\Par{v_1,\dots,v_m}$ is a list of vecs in $V$. For $k\in\Bra{1,\dots,m}$, let $w_k=v_1+\dots+v_k.$}
-	\TextB{Show that [P] $B_V=\Par{v_1,\dots,v_m}\Longleftrightarrow$ [Q] $B_W=\Par{w_1,\dots,w_m}$.}
+	\TextB{Show that [P] $B_V=\Par{v_1,\dots,v_m}\Longleftrightarrow B_W=\Par{w_1,\dots,w_m}.$ [Q]}
 }\NOTICE that $B_U=\Par{u_1,\dots,u_n}\Longleftrightarrow\forall u\in U,\exists\,!\,a_i\in\Fbb,u=a_1 u_1+\dots+a_n u_n.$\par\quad
-$P\Rightarrow Q:\forall v\in V,\exists\,!\,a_i\in\Fbb,\;v=a_1 v_1+\dots+a_m v_m\Rightarrow v=b_1 w_1+\dots+b_m v_m,\exists\,!\,b_k=\sum_{j=1}^k\Par{-1}^{k-j}a_j.$\par\quad
-$Q\Rightarrow P:\forall v\in V,\exists\,!\,b_i\in\Fbb,\;v=b_1w_1+\dots+b_mw_m\Rightarrow v=a_1v_1+\dots+a_mv_m,\exists\,!\,a_k=\sum_{j=1}^k b_j.$\PfEnd
+$P\Rightarrow Q:\forall v\in V,\exists\,!\,a_i\in\Fbb,\;v=a_1 v_1+\dots+a_m v_m\Rightarrow v=b_1 w_1+\dots+b_m v_m,\exists\,!\,b_k=a_k-a_{k+1},b_m=a_m.$\vspace{2pt}\par\quad
+$Q\Rightarrow P:\forall v\in V,\exists\,!\,b_i\in\Fbb,\;v=b_1w_1+\dots+b_mw_m\Rightarrow v=a_1v_1+\dots+a_mv_m,\exists\,!\,a_k=\sum_{j=k}^m b_j.$\PfEnd
 \SepLine
 
 \ProblemB{
