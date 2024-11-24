@@ -1,0 +1,267 @@
+\documentclass[a4paper, 11pt, UTF8]{article}
+%\usepackage{background}
+\usepackage{wallpaper}
+
+\usepackage{amssymb,amsmath,amsfonts}
+\usepackage{ctex}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{fontspec}
+\usepackage{unicode-math}
+\usepackage{ulem}
+\usepackage{color}
+\usepackage{tabularx}
+\usepackage{xargs}
+\usepackage[left=1cm,right=1cm,top=1cm,bottom=0cm]{geometry}
+
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=cyan}
+
+
+\parindent 0pt
+
+
+%\backgroundsetup{scale=1,angle=0,opacity=0.1,contents={\includegraphics[width=\paperwidth, height=\paperheight, keepaspectratio]{b04.jpg}}}
+
+%{ 关于字体设置
+\setmainfont{TeXGyrePagella-Regular}
+\setmathfont{TeXGyrePagellaMath-Regular}
+\setmathfont[range={\mathcal,\Longleftrightarrow,\Longrightarrow,\Longleftarrow,\Rightarrow,\Leftarrow,\Leftrightarrow}]{LatinModernMath-Regular}
+\setmathfont[range={\backslash}]{MathJax_Size1-Regular.otf}
+\setmathfont[range={\mathbb}]{TeXGyreSchola-Regular}
+\setmathfont[range={\complement}]{TeXGyrePagella-Bold}
+\setmathfont[range=\mathfrak]{TeXGyrePagella-Regular}
+\setmathfont[range={\tilde}]{DejaVuMathTeXGyre.ttf}
+
+
+\newfontfamily{\tgnr}{TeXGyrePagella-Regular}
+\newfontfamily{\tgbf}{TeXGyreSchola-Regular}
+\newfontfamily{\tgbfx}{TeXGyrePagella-Bold}
+\newfontfamily{\tgbfxx}{FreeSerifBold}
+\newfontfamily{\tgsl}{TeXGyrePagella-Italic}
+\newfontfamily{\tgsc}{TeXGyrePagella-BoldItalic}
+\newfontfamily{\forbra}{MathJax_Size1-Regular.otf}
+\newfontfamily{\forbrax}{MathJax_Size2-Regular.otf}
+\newfontfamily{\forslash}{MathJax_Size1-Regular.otf}
+\def\mySlash{\hspace{-1.2pt}\text{\forslash/}}
+
+\newcommand{\Largenr}[1]{{\Large\tgnr#1}}
+\newcommand{\Largesl}[1]{{\Large\tgsl#1}}
+\newcommand{\Largebf}[1]{{\Large\tgbf#1}}
+\newcommand{\Largebfx}[1]{{\Large\tgbfx#1}}
+\newcommand{\Largebfxx}[1]{{\Large\tgbfxx#1}}
+
+\def\envFontHuge{\def\envFontA{\huge}\def\envFont{\LARGE}\def\envFontB{\Large}}
+\def\envFontLarge{\def\envFontA{\LARGE}\def\envFont{\Large}\def\envFontB{\large}}
+\def\envFontDefault{\def\envFontA{\Large}\def\envFont{\large}\def\envFontB{\normalsize}}
+\newcommand{\envFontSmall}[1][\small]{\def\envFontA{\Large}\def\envFont{\normalsize}\def\envFontB{#1}}
+\newcommand{\TextE}[1]{\dbsp\envFontLarge\Largesl{#1}\envFontDefault\par\IndentE}
+\newcommand{\TextN}[1]{\dbsp\envFontLarge\Largesl{#1}\envFontDefault\par\IndentN}
+\newcommand{\TextB}[1]{\dbsp\envFontLarge\Largesl{#1}\envFontDefault\par\IndentB}
+\newcommand{\TextNL}[1]{\dbsp\envFontLarge\Largesl{#1}\envFontDefault\par\IndentNL}
+%}
+
+%{ 关于排版缩进的便捷指令
+%  · {题目内容}\par\IndentB
+%  8 {题目内容}\par\IndentN
+% 19 {题目内容}\par\IndentNL
+% EXAMPLE: {text}\par\IndentE
+\def\IndentB{\Blind{\BulletPoint }}
+\def\IndentN{\hspace{8.7pt}}
+\def\IndentNL{\hspace{16pt}}
+\def\IndentE{{\large\Blind{{\BulletPoint} {\Example}\,\,\,}}}
+
+% 用于对齐(a)(b)(c)(d)
+%(a) {text} \par\quad\Ha
+%... \par\quad\Ha
+%{text} \par\quad
+%(b) {text} \par\quad\Hb
+%... \par\quad\Ha
+%{text} \par\quad
+%(c) {text} \par\quad\Hc
+%... \par\quad\Ha
+%{text} \par\quad
+%(d) {text} \par\quad\Hd
+%... \par\quad\Ha
+%{text} \par\quad
+\def\Ha{{\large\Blind{(a) }}}
+\def\Hb{{\large\Blind{(b) }}}
+\def\Hc{{\large\Blind{(c) }}}
+\def\Hd{{\large\Blind{(d) }}}
+
+% 用于对齐(i)(ii)(iii)
+%(i) {text} \par\quad\Hi
+%... \par\quad\Hi
+%{text} \par\quad\Endi
+%(ii)  {text} \par\quad\Hii
+%... \par\quad\Hii
+%{text} \par\quad\Endii
+%(iii) {text} \par\quad\Hiii
+%... \par\quad\Hiii
+%{\text}\par\quad
+\def\Endi{}
+\def\Endii{}
+\def\Hi{\Blind{(i) }}
+\def\Hii{\Blind{(ii) }}
+\def\Hiii{}
+
+% 用于对齐(I)(II)(III)
+\def\EndI{}
+\def\EndII{}
+\def\EndIII{}
+\def\HI{\Blind{(I) }}
+\def\HII{\Blind{(II) }}
+\def\HIII{\Blind{(III) }}
+%}
+
+%{ 关于文本环境
+\newcommand{\hMath}[5][-4pt]{#3\hspace{#1}\begin{array}{#2}#5\end{array}\hspace{#1}#4}
+\newcommand{\MathLeftBrace}				[2]{\hMath[0pt]{#1}{\left\{}{\right.}{#2}}
+\newcommand{\MathRightBrace}			[2]{\hMath[0pt]{#1}{\left.}{\right\}}{#2}}
+\newcommand{\MathLeftrightBrace}		[2]{\hMath[0pt]{#1}{\left\{}{\right\}}{#2}}
+\newcommand{\MathLeftMid}				[2]{\hMath[0pt]{#1}{\left|}{\right.}{#2}}
+\newcommand{\MathRightMid}				[2]{\hMath[0pt]{#1}{\left.}{\right|}{#2}}
+\newcommand{\MathLeftrightMid}			[2]{\hMath[0pt]{#1}{\left|}{\right|}{#2}}
+\newcommand{\MathLeftrightPare}			[2]{\hMath[0pt]{#1}{\left(}{\right)}{#2}}
+
+\newcommand{\hText}[4][-4pt]{\hMath[#1]{c}{#2}{#3}{#4}}
+\newcommand{\Par}[2][1pt]{{\text{\forbra\envFontB(\hspace{#1}}}#2{\text{\hspace{#1}\forbra\envFontB)}}}%{\hText[-4pt]{}{}{$\hspace{-1pt}{\envFontB$\hText[#1]{\left(}{\right)}{${\envFont$#2$}$}$}$}}
+\newcommandx{\Mid}[3][1=1pt,2=\envFontA]{{\text{#2\mid}}\hspace{#1}{#3}\hspace{#1}{\text{#2\mid}}}%{\hText[-2pt]{}{}{$\hspace{-1pt}{\envFontB$\hText[#1]{\left|}{\right|}{${\envFont$#2$}$}$}$}}
+\newcommand{\cMid}[2][1pt]{\Mid[#1][\envFontLarge\envFontA]{#2}}
+\newcommand{\aMid}[2][1pt]{\Mid[#1][\envFontLarge\envFontA]{#2}}
+\newcommand{\aXMid}[2][1pt]{\Mid[#1][\envFontHuge\envFont]{#2}}
+\newcommand{\Bra}[2][-5pt]{{\text{\forbra\envFont{\{}}}#2{\text{\forbra\envFont\}}}}%{\hText[-4pt]{}{}{$\hspace{-1pt}{\envFontB$\hText[#1]{\left\{}{\right\}}{${\envFont$#2$}$}$}$}}
+\newcommand{\SmallPar}[2][0pt]{{\envFontSmall[\scriptsize]\Par[#1]{#2}}}
+\newcommand{\BigPar}[1]{{\text{\envFont\forbra(\hspace{1pt}}}#1{\text{\hspace{1pt}\envFont\forbra)}}}
+\newcommand{\XPar}[1]{{\text{\envFont\forbrax(\hspace{1pt}}}#1{\text{\hspace{1pt}\envFont\forbrax)}}}
+\newcommand{\Sbra}[1]{{\text{\envFont\forbra[\hspace{1pt}}}#1{\text{\envFont\forbra\hspace{1pt}]}}}
+\newcommand{\XSbra}[1]{{\text{\envFont\forbrax[}}#1{\text{\envFont\forbrax]}}}
+\newcommand{\zeroSubs}[1][\Bra]{{#1{0}}}
+
+\newcommand{\Interval}[3]{{\text{\envFont\forbra#1\hspace{1pt}}}#3{\text{\envFont\forbra\hspace{1pt}#2}}}
+\newcommand{\XInterval}[3]{{\text{\envFont\forbrax#1}}#3{\text{\envFont\forbrax#2}}}
+
+\newcommand{\ExampleX}[2][\Solution]{
+	{\BulletPoint} {\Example}\,\,\,{#2}\envFontDefault\vspace{-16pt}\par
+	#1
+}
+\newcommand{\ProblemN}[3][\Solution]{
+	{\Onumber{#2}} {#3}\envFontDefault\vspace{-16pt}\par
+	#1
+}
+\newcommandx{\ProblemNor}[5][1=\Solution,4=\Sbra]{
+	{\Onumber{#2}} \;{\dbsp#4{\OR({\normalsize#3})}}{#5}\envFontDefault\vspace{-16pt}\par
+	#1
+}
+\newcommandx{\ProblemNnoor}[5][1=\Solution,4=\Sbra]{
+	{\Onumber{#2}} \;{\dbsp#4{\small#3}}{#5}\envFontDefault\vspace{-16pt}\par
+	#1
+}
+\newcommand{\ProblemB}[2][\Solution]{
+	{\BulletPoint}{#2}\envFontDefault\vspace{-16pt}\par
+	#1
+}
+\newcommand{\ProblemBc}[2][\Solution]{
+	{$\circ$}{#2}\envFontDefault\vspace{-16pt}\par
+	#1
+}
+\newcommandx{\ProblemBnoor}[4][1=\Solution,3=\Par]{
+	{\BulletPoint} \dbsp#3{{\small#2}}{#4}\envFontDefault\vspace{-16pt}\par
+	#1
+}
+\newcommand{\ProblemBor}[3][\Solution]{
+	{\BulletPoint} {\dbsp\OR({\normalsize#2})}{#3}\envFontDefault\vspace{-16pt}\par
+	#1
+}
+\newcommand{\AlignEq}[2]{
+	\vspace{-25pt}
+	\begin{align*}
+		#1#2
+	\end{align*}
+	\vspace{-25pt}
+}
+%}
+
+%{ 关于常用标识的便捷指令
+\def\nRightarrow{\Rightarrow\!\!\!\!\!\!\!/\,\,\,\,\,}
+\def\nLeftarrow{\Leftarrow\!\!\!\!\!\!\!/\,\,\,\,\,}
+\def\Nbb{{\mathbb{N}}}
+\def\Zbb{{\mathbb{Z}}}
+\def\Qbb{{\mathbb{Q}}}
+\def\Fbb{{\mathbb{F}}}
+\def\Rbb{{\mathbb{R}}}
+\def\Cbb{{\mathbb{C}}}
+\def\Nbp{{\mathbb{N}^+}}
+\def\mid{\text{\envFontA|}}
+\def\d{{\textup{\tgnr d}}}
+\def\i{{\textup{\tgnr i}}}
+%\def\dim{{\textup{\tgnr dim}}\,}
+\def\Dim{{\textup{\tgnr dim}}}
+\def\Deg{{\textup{\tgnr deg}}}
+\def\range{{\textup{\tgnr range}}\,}
+\def\null{{\textup{\tgnr null}}\,}
+\def\card{{\textup{\tgnr card}}\,}
+\def\Spn{{\textup{\tgnr span}}\,}
+\newcommand{\Span}[2][\Par]{{\textup{\tgnr span}}#1{#2}}
+\newcommand{\Lm}[2][\Par]{\mathcal{L}#1{#2}}
+\newcommand{\Lfm}[2][\Par]{#1{#2\apostrophe}}
+\newcommand{\Mt}[2][\Par]{\mathcal{M}#1{#2}}
+\def\Mneg{\mathcal{M}^{-1}}
+\def\Po{\mathcal{P}}
+\newcommand{\PoF}[2][\Par]{\Po_{#2}#1{\Fbb}}
+\newcommand{\PoR}[2][\Par]{\Po_{#2}#1{\Rbb}}
+\newcommand{\PoC}[2][\Par]{\Po_{#2}#1{\Cbb}}
+\def\mathC{C}
+\def\apostrophe{\prime}
+\def\BulletPoint{{\small\bullet}}
+\def\BulletPointX{\BulletPoint \,\hspace{1pt}}
+\def\bullpt{{\tiny\bullet}}
+
+\def\OR{{\large O{\footnotesize R} }}
+\def\Or{{\large O{\footnotesize R.} }}
+\def\Solution{{\tgbfx\large S\footnotesize{OLUTION:}}\,\,\,}
+\def\NOTE{\tgnr\large N{\footnotesize OTE}}
+\def\NOTEFOR{{\tgnr\large N{\footnotesize OTE} F{\footnotesize OR}}}
+\def\NEWTHEOREM{{\tgnr\large N{\footnotesize EW} T{\footnotesize HEOREM}}}
+\def\NOTICE{{\tgnr\large N{\footnotesize OTICE}\;}}
+\def\COMMENT{{\tgnr\large C{\footnotesize OMMENT}\;}}
+\def\COROLLARY{{\tgnr\large C{\footnotesize OROLLARY}}}
+\def\TIPS{{\tgnr\large T{\footnotesize IPS}\;}}
+\def\Tips{{\tgbfx\large T{\footnotesize IPS}:}}
+\newcommand{\TipsN}[1]{{\tgbfx\large T{\footnotesize IPS {\large#1\,}}:}}
+\newcommand{\Onumber}[1]{\Largebfxx{#1}\hspace{-2pt}}
+\newcommand{\NoteFor}[1]{\Largebfx{N{\small OTE} F{\small OR} #1:}}
+\newcommand{\NoteForSmall}[1]{{\tgbfx\large N{\footnotesize OTE} F{\footnotesize OR} #1:}}
+\newcommand{\NewNotation}{{\tgbfx\large N{\footnotesize EW} N{\footnotesize OTATION}:}}
+\newcommand{\NewTheorem}{{\tgbfx\large N{\footnotesize EW} T{\footnotesize HEOREM}:}}
+\newcommand{\Comment}{{\tgbfx\large C\footnotesize{OMMENT:}}}
+\newcommand{\Example}{{\tgbfx\large E\footnotesize{XAMPLE:}}}
+\newcommand{\Exercise}[1]{{\tgbfx\large E{\footnotesize XERCISE} {#1}\hspace{2pt}:}}
+\newcommand{\Corollary}{{\tgbfx\large C{\footnotesize OROLLARY}:}}
+
+\def\ChEnd{\rightline{\Largebfx{E{\small NDED}}}\par\vspace{6pt}}
+\newcommand{\PfEnd}[1][-18pt]{{\large\vspace{#1}\par\hfill$\square$\par}}
+\newcommandx{\SepLine}[2][1=0pt,2={}]{{\vspace{-5pt}\par
+		#2\tiny \_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_\,\_}\vspace{5pt}\vspace{#1}\par}
+\newcommand{\ChDecl}[3]{{\huge\tgbfxx\hypertarget{#1}{#2}}{#3}{\vspace{5pt}}}
+\newcommand\hLk[2]{\hyperlink{#1}{#2}}
+\newcommand\Lch[2]{\hLk{Ch#1}{#2}}
+\newcommand\TXT[1]{\textup{#1}}
+\newcommand{\Blind}[1]{\textcolor{white}{#1}}
+%}
+
+%\orMode[setup]{pdf version}[space]{print version}
+
+%{ 关于调试、版本切换
+\def\dbsp{\bullet}
+\def\dbsp{} % 方便调试段落缩进
+\newcommandx{\orMode}[5][1=\hMath{l}{}{},2=\hMath{l}{}{},4=-18pt]{{\normalsize
+% If you want the debug version.
+	%{\qquad$#1{$#3$}$}\vspace{#4}\par{\qquad$#2{$#5$}$}
+% If you want the pdf version.
+	{\qquad$#1{$#3$}$}
+% If you want the print version.
+	%{\qquad$#2{$#5$}$}
+}}
+%}
+

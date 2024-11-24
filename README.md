@@ -1,9 +1,9 @@
 # 关于该仓库的声明：
 
 我上传这些资料，旨在和广大学习者自由交流讨论。
-该库文件中，至少包括**SolusMan-LADR4e.pdf**文件和**SourceCode**目录下的所有文件，是在GPL-3.0条款约束下的：严禁任何人，以任何名义，妨碍任何人，自由 复制、下载、转发、修改、发布这些内容。具体见**LICENSE**。
+该库文件中，至少包括**SolusMan-LADR4e.pdf**文件和**SourceCode**目录下的所有文件，是在GPL-3.0条款约束下的：严禁任何人，以任何名义，妨碍任何人，自由 使用、修改、发布这些内容。具体见**LICENSE**。
 
-> 该仓库是GitHub与Gitee双向同步的。
+> 该仓库是GitHub与Gitee双向同步的；这是因为对国人来说，访问Gitee比访问GitHub容易。
 
 ---
 
@@ -11,7 +11,9 @@
 
 ### **SourceCode**文件夹
 
-这个文件夹包含ttf和otf字体文件、tex源代码、引用的png图片。这些文件用于生成**SolusMan-LADR4e.pdf**。主要就是，用**TeXstudio**, **Texmaker**或者其他IDE，亦或者编译器，编译**SolusMan-LADR4e.tex**，输出PDF。
+这个文件夹包含ttf和otf字体文件、tex源代码、引用的png、jpg图片。这些文件用于生成**SolusMan-LADR4e.pdf**。主要就是，用**TeXstudio**, **Texmaker**或者其他IDE，亦或者编译器，编译**SolusMan-LADR4e.tex**，输出PDF。
+
+为了更高的实时编译效率，我将代码架构为 **Settings**（Settings.tex）、**Chxxx**（Ch123.tex、Ch45.tex）、**Main**（SolusMan-LADR4e.tex）。
 
 ### **SolusMan-LADR4e.pdf**
 
@@ -22,7 +24,7 @@
 - 题目标号为实心黑圈的，为第四版。因为要面向以第三版为主要教材的学习者，所以为了避免混淆，故而将题号、甚至章节略去（一些变动过大的章节除外）。
 - 题目顺序会有调换，在每章大标题处会交代清楚。
 
-使用者如遇问题，可邮件<13012057210@163.com>和我交流，或者在这里提出一份Issue。
+欢迎邮件<13012057210@163.com>和我交流，或者在这里提出一份Issue，又或者去 *bilibili* 找一位叫 **H-U_O** 的用户，私信或者在相关动态中评论。
 
 ### **LADR2eSolutions（By Axler）.pdf**
 
@@ -52,5 +54,4 @@
 > 
 > sudo apt install texstudio
 
-即可。
-
+即可。其他系统下，差不多也就 texlive、xetex、中文语言包、texstudio 这些。
