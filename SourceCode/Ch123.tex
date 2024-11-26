@@ -390,118 +390,47 @@ $\forall v\in V,\exists\,!\,u\in U,w\in W\Rightarrow\exists\,!\,a_i,b_i\in\Fbb,v
 $“V=\Span{v_1,\dots,v_n,\dots}”$ is an invalid expression.\TextB{}
 If we allow using $“$infinite list$”$, then we must guarantee that $\Par{v_1,\dots,v_n,\dots}$ is a spanning $“$list$”$\TextB{}
 such that for all $v\in V$, there exists a smallest positive integer $n$ such that $v=a_1 v_1+\dots+a_n v_n$,\TextB{}
-The key point is, how can we guarantee that such a $“$list$”$ exists?\par
+The key point is, how can we guarantee that such a $“$list$”$ exists?\TextB{}
+\colorbox{yellow}{TODO: More details.}\TextB{}
+\TextB{}
 \SepLine\ChEnd
 
-\ChDecl{Ch2C}{2$\cdot$C}{}\orMode{\hLk{2C1}{1}\;\;\hLk{2C7}{7}\;\;\hLk{2C9}{9}\;\;\hLk{2C10}{10}\;\;\hLk{2C14}{14,\,16}\;\;\hLk{2C15}{15}\;\;\hLk{2C17}{17}\;\;|\;\;\hLk{2C4e10}{4E: 10,}\;\;\hLk{2C4e14}{14,}\;\;\hLk{2C4e15}{15,}\;\;\hLk{2C4e16}{16}}{[1]: 1, 9, 10; [2]: (4E 10); [3]: 7, (4E 14, 15, 16); [4]: 14, 17; [5]: 15.}
+\ChDecl{Ch2C}{2$\cdot$C}{}\orMode{\hLk{2C1}{1}\;\;\hLk{2C7}{7}\;\;\hLk{2C9}{9}\;\;\hLk{2C10}{10}\;\;\hLk{2C14}{14,\,16}\;\;\hLk{2C15}{15}\;\;\hLk{2C17}{17}\;\;|\;\;\hLk{2C4e10}{4E: 10,}\;\;\hLk{2C4e14}{14,}\;\;\hLk{2C4e15}{15,}\;\;\hLk{2C4e16}{16}}{[1]: 7, 9, (4E 16); [2]: 10; [3]: (4E 10), 1; [4]: 14, 17; [5]: (4E 14, 15), 15.}
 
-\ProblemNnoor[]{\hypertarget{2C1}{1}}{\COROLLARY\;for [2.38,39]}{
-	\TextN{Suppose $U$ is a subsp of \,$V$ such that $\dim V=\dim U$. Then $V=U$.}
-}\Blind{\IndentN} Let $B_U=\Par{u_1,\dots,u_m}.$ Then $m=\dim V.$ 又 $u_i\in V.$ By [2.39], $B_V=\Par{u_1,\dots,u_m}.$\PfEnd
+\vspace{8pt}
+
+\ProblemN{\hypertarget{2C7}{7}}{
+	(a) \TextN{Let $U=\Bra{p\in\PoF{4}:p\Par{2}=p\Par{5}=p\Par{6}}$. Find a basis of $U$.}
+	(b) \TextN{Extend the basis in {\tgnr(b)} to a basis of $\PoF{4}$.}
+	(c) \TextN{Find a subsp $W$ of $\PoF{4}$ such that $\PoF{4}=U\oplus W$.}
+}
+%Suppose $p\Par{z}=az^4+bz^3+cz^2+dz+e$ such that $p\Par{2}=p\Par{5}=p\Par{6}$.\vspace{4pt}\par\quad
+%Then $\hMath[0pt]{r}{\left|}{\right\}}{
+	%	p\Par{2}=16a+8b+4c+2d+e\,\;\;\Par{\text{I}}\;\;\\
+	%	p\Par{5}=625a+125b+25c+5d+e\;\;\Par{\text{II}}\,\;\\
+	%	p\Par{6}=1296a+216b+36c+6d+e\;\,\Par{\text{III}}
+	%}\Rightarrow\MathLeftBrace{l}{
+	%	\Par{\text{II}}\;-\;\Par{\text{I}}=0\\
+	%	\Par{\text{III}}-\Par{\text{II}}=0\\
+	%	\Par{\text{III}}-\;\Par{\text{I}}=0\\
+	%}$\vspace{4pt}\par\quad
+%{\tgsl You don't have to compute to know that the dimension of the set of solutions is 3.}\par\quad
+\NOTICE that $\not\exists\,p\in\PoF{}$ of deg $1$ and $2,\;p\in U.$ Thus $\dim U\leqslant \dim\PoF{4}-2=3.$\par\quad
+(a) Consider $B=\BigPar{1,\Par{z-2}\Par{z-5}\Par{z-6},z\Par{z-2}\Par{z-5}\Par{z-6}}.$\par\quad\Ha
+Because $a_0+a_3\Par{z-2}\Par{z-5}\Par{z-6}+a_4z\Par{z-2}\Par{z-5}\Par{z-6}=0\Rightarrow a_0=a_3=a_4.$\par\quad\Ha
+The list $B$ is linely inde in $U.$ Now $\dim U\geqslant 3\Rightarrow \dim U=3.$ Thus $B_U=B.$\par\quad
+(b) Extend to a basis of $\PoF{4}$ as $\BigPar{1,z,z^2,\Par{z-2}\Par{z-5}\Par{z-6},z\Par{z-2}\Par{z-5}\Par{z-6}}.$\par\quad
+(c) Let $W=\Span{z,z^2}=\Bra{az+bz^2:a,b\in\Fbb}$, so that $\PoF{4}=U\oplus W.$\PfEnd
 \SepLine
-
 
 \ProblemN{\hypertarget{2C9}{9}}{
 		\TextN{Suppose $\Par{v_1,\dots,v_m}$ is linely inde in $V$ and $w\in V$.}
 		\TextN{Prove that $\dim\Span{v_1+w,\dots,v_m+w}\geq m-1$.}
 }Using the result of Problem (10) and (11) in 2.A.\par\quad
 Note that $v_i-v_1=\Par{v_i+w}-\Par{v_1+w}\in\Span{v_1+w,\dots,v_n+w},$ for each $i=1,\dots,m$.\par\quad
-$\Par{v_1,\dots,v_m}$ linely inde $\Rightarrow$ $\Par{v_1,v_2-v_1,\dots,v_m-v_1}$ linely inde $\Rightarrow$ $\underbrace{\Par{v_2-v_1,_{}\dots,v_m-v_1}}_{\text{of length }\Par{m-1}}$ linely inde.\vspace{-8pt}\par\quad
+$\Par{v_1,\dots,v_m}$ linely inde $\Rightarrow$ $\Par{v_1,v_2-v_1,\dots,v_m-v_1}$ linely inde $\Rightarrow$ $\underbrace{\Par{v_2-v_1,_{}\dots,v_m-v_1}}_{\text{of length }\Par{m-1}}$ linely inde.\vspace{-16pt}\par\quad
 又 $w\not\in\Span{v_1,\dots,v_m}\Rightarrow\Par{v_1+w,\dots,v_m+w}$ is linely inde.\par\quad
 Hence $m\geqslant\dim\Span{v_1+w,\dots,v_m+w}\geq m-1.$\PfEnd
-\SepLine
-
-\ProblemN{\hypertarget{2C10}{10}}{
-	\TextNL{Suppose $m$ is a positive integer and $p_0,p_1,\dots,p_m\in\PoF{}$ are such that}
-	\TextNL{each $p_k$ has degree $k$. Prove that $\Par{p_0,p_1,\dots,p_m}$ is a basis of $\PoF{m}$.}
-}\par\quad
-{\Large\vspace{4pt}Using mathematical induction on $m$.}\par\quad
-(i) \envFontLarge{\Large\vspace{8pt}For $p_0,\;\deg p_0=0\Rightarrow\Span{p_0}=\Span{1}$.}\par\quad\Endi
-(ii) {\Large\vspace{4pt}Suppose for $i\geqslant 1,\Span{p_0,p_1,\dots,p_i}=\Span{1,x,\dots,x^i}$.}\par\quad\Hii
-{\Large\vspace{4pt}Then $\Span{p_0,p_1,\dots,p_i,p_{i+1}}\subseteq\Span{1,x,\dots,x^i,x^{i+1}}$.}\par\quad\Hii
-{\Large\vspace{4pt}又 $\deg p_{i+1}=i+1,\,\,\,\,p_{i+1}\Par{x}=a_{i+1}x^{i+1}+r_{i+1}\Par{x};\,\,\,\,a_{i+1}\neq 0,\,\,\,\deg r_{i+1}\leqslant i.$}
-\par\vspace{2pt}\quad\Hii
-{\Large\vspace{4pt}$\Rightarrow x^{i+1}=\displaystyle\frac{1}{a_{i+1}}\XPar{p_{i+1}\Par{x}-r_{i+1}\Par{x}}\in\Span{1,x,\dots,x^i,p_{i+1}}=\Span{p_0,p_1,\dots,p_i,p_{i+1}}$.}\par\vspace{2pt}\quad\Hii
-{\Large\vspace{8pt}$\therefore\,\,x^{i+1}\in\Span{p_0,p_1,\dots,p_i,p_{i+1}}\Rightarrow\Span{1,x,\dots,x^i,x^{i+1}}\subseteq\Span{p_0,p_1,\dots,p_i,p_{i+1}}$.}\par\quad
-{\Large\vspace{4pt}Thus $\PoF{m}=\Span{1,x,\dots,x^m}=\Span{p_0,p_1,\dots,p_m}.$}\PfEnd\vspace{12pt}\quad
-\Or 用比较系数法. {\Large\vspace{4pt}Denote the coefficient of $x^i$ in $p\in\PoF{}$ by $\xi_i\Par{p}.$}\par\quad
-{\Large\vspace{4pt}Suppose $L=a_m p_m\Par{x}+\dots+a_1 p_1\Par{x}+a_0p_0\Par{x}=0\cdot x^m+\dots+0\cdot x+0\cdot 1=R,\forall x\in\Fbb.$}\par\quad
-{\Large\vspace{4pt}We use induction to show that $a_m=\dots=a_0=0.$}\par\quad
-(i) {\Large\vspace{4pt}$k=m,$ \;$\xi_{m}\Par{L}=a_{m}\xi_{m}\Par{p_m}=\xi_{m}\Par{R}=0$ 又 $\deg p_m=m,\;\xi_{m}\Par{p_m}\neq 0\Rightarrow a_m=0.$}\par\quad\Hi
-{\Large\vspace{8pt}Now $L=a_{m-1}p_{m-1}\Par{x}+\dots+a_0p_0\Par{x}.$}\par\quad\Endi
-(ii) {\Large\vspace{4pt}$1\leqslant k\leqslant m,$ \;$\xi_{k}\Par{L}=a_{k}\xi_{k}\Par{p_k}=\xi_{k}\Par{R}=0$ 又 $\deg p_k=k,\;\xi_{k}\Par{p_k}\neq 0\Rightarrow a_k=0.$}\par\quad\Hii
-{\Large Now $L=a_{k-1}p_{k-1}\Par{x}+\dots+a_0p_0\Par{x}.$}\PfEnd
-\SepLine
-
-\ProblemBnoor{\hypertarget{2C4e10}4E 2.C.10}{
-	\TextB{Suppose $m$ is a positive integer. For $0\leqslant k\leqslant m$, let $p_k\Par{x}=x^k\Par{1-x}^{m-k}$.}
-	\TextB{Show that $\Par{p_0,\dots,p_m}$ is a basis of $\PoF{}$.}
-	\TextB{{\large The basis in this exercise leads to what are called Bernstein polys. You can do a web search to learn how}}
-	\TextB{{\large Bernstein polys are used to approximate continuous functions on $[0, 1]$.}}
-}Using mathematical induction.\par\quad
-Note that \vspace{-8pt} \AlignEq{\hspace{-20pt}}{p_k\Par{x}&=x^k\XPar{\textstyle\sum_{i=1}^{m-k}\mathC_{m-k}^i \Par{-1}{^{i}}x^{i}}\\&=\textstyle\sum_{i=1}^{m-k}\mathC_{m-k}^i \Par{-1}{^{i}}x^{i+k}=\Par{-1}{^0}x^{k} +\textstyle\sum_{i=1}^{m-k-1}\mathC_{m-k}^i \Par{-1}{^{i}}x^{i+k}.}\par\quad
-(i) For $k=m.$ \;$p_m\Par{x}=x^m.$\par\quad\Endi
-(ii) For {\Large$2\leqslant k\leqslant m.$ {\large Suppose for} $p_{k}\Par{x},x^{k}=p_{k}\Par{x}-\sum_{i=1}^{m-k-1}\mathC_{m-k}^i \Par{-1}^{i}x^{i+k}.$\par}\quad\Hii
-{\Large {\large Then for $k-1.\;$}\par}\quad\Hii
-{\Large\par}\vspace{4pt}\quad\Hii
-{\Large$\Rightarrow c_{i}=\mathC_{k-1}^{k-1-i}(-1)^{k-1-i}.$\par}\quad\Hii
-{\Large {\large Thus for each} $x^i,\,\exists\,!\,b_i\in\Fbb,x^i=b_m p_m\Par{x}+\dots+b_{m-i}p_{m-i}\Par{x}$\par}\quad\Hii
-{\Large$\Rightarrow\Span{x^m,\dots,x,1}=\Spn\Par{\underbrace{p_m,\dots,p_1,p_0}_\text{Basis}}.$}\large\PfEnd\vspace{10pt}\quad
-\Or For any $m,k\in\Nbp$ such that $k\leqslant m.$ Define $p_{k,m}$ by $p_{k,m}\Par{x}=x^k\Par{1-x}^{m-k}.$\par\quad
-Define the statement $S\Par{m}$ by $S\Par{m}:\underbrace{\Par{p_{0,m},\dots,p_{m,m}}}_{\dim\PoF{m}=m+1}$ is linely inde ( and therefore is a basis ).\vspace{4pt}\par\quad
-We use induction on to show that $S\Par{m}$ holds for all $m\in\Nbp.$\par\quad
-(i) $m=1.$ Suppose $a_0\Par{1-x}+a_1x=0,\forall x\in\Fbb.$ Then $\MathLeftBrace{l}{x=0\Rightarrow a_0=0;\\x=1\Rightarrow a_1.}$\par\quad\Hi
-$m=2.$ Suppose $a_0\Par{1-x}^2+a_1\Par{1-x}x+a_2x^2,\forall x\in\Fbb.$ Then $\MathLeftBrace{l}{x=0\Rightarrow a_0+a_1=0;\\x=1\Rightarrow a_2=0;\\x=2\Rightarrow a_0+2a_1=0.}$\par\vspace{6pt}\quad\Endi
-(ii) $2\leqslant m.$ Assume that $S\Par{m}$ holds.\par\quad\Hii
-\envFontLarge{\vspace{6pt}Suppose\; $\sum_{k=0}^{m+2}a_kp_{k,m+2}\Par{x}=\sum_{k=0}^{m+2}a_kx^k\Par{1-x}^{m+2-k}=0,\forall x\in\Fbb.$}\par\quad\Hii
-{\vspace{6pt}While {\Large$x=0\Rightarrow a_0=0;\;x=1\Rightarrow a_{m+2}=0.$} Then {\Large$\sum_{k=1}^{m+1}a_kx^k\Par{1-x}^{m+2-k}=0;$}}\par\quad\Hii
-{\vspace{6pt}And note that \Large\AlignEq{}{\\[-45pt]&\textstyle\sum_{k=1}^{m+1}a_kx^k\Par{1-x}^{m+2-k}\\=\,&x\Par{1-x}\textstyle\sum_{k=1}^{m+1}a_kx^{k-1}\Par{1-x}^{m+1-k}\\=\,&x\Par{1-x}\textstyle\sum_{k=0}^{m}a_{k+1}x^{k}\Par{1-x}^{m-k}=x\Par{1-x}\sum_{k=0}^{m}a_{k+1}p_{k,m}\Par{x}.\hspace{-60pt}}}\vspace{10pt}\par\quad\Hii
-\envFontDefault{\vspace{6pt}Hence $x\Par{1-x}\sum_{k=0}^{m}a_{k+1}p_{k,m}\Par{x}=0,\forall x\in\Fbb\Rightarrow \sum_{k=0}^{m}a_{k+1}p_{k,m}\Par{x}=0,\forall x\in\Fbb\backslash\Bra{0,1}.$}\par\quad\Hii
-{\vspace{6pt}Because $\sum_{k=0}^{m}a_{k+1}p_{k,m}\Par{x}$ has infinitely many zeros. We have $\sum_{k=0}^{m}a_{k+1}p_{k,m}\Par{x}=0,\forall x\in\Fbb.$}\par\quad\Hii
-{\vspace{6pt}By assumption, $a_1=\dots=a_m=0,$ while $a_0=a_{m+2}=0,$}\par\quad\Hii
-\Blind{By ass}\vspace{6pt}and also $\;a_{m+1}=0$ \BigPar{ because $\sum_{k=0}^{m}a_{k+1}p_{k,m}\Par{x}=a_{m+1}p_{m,m}\Par{x}=a_{m+1}x^m=0,\forall x\in\Fbb.$ }\par\quad\Hii
-\vspace{6pt}Thus $\Par{p_{0,m+2},\dots,p_{m+2,m+2}}$ is linely inde and $S\Par{m+2}$ holds.\par\quad
-Since $\forall m\in\Nbp,S\Par{m}\Rightarrow S\Par{m+2}.$ We have $\hMath[0pt]{r}{\left|}{\right\}}{\forall k\in\Nbb,S\Par{2k+1}\text{ holds}\\\forall k\in\Nbp,S\Par{2k}\text{ holds}}\Rightarrow S\Par{m}$ holds.\PfEnd
-\SepLine\pagebreak
-
-\ProblemN{\hypertarget{2C7}{7}}{
-	(a) \TextN{Let $U=\Bra{p\in\PoF{4}:p\Par{2}=p\Par{5}=p\Par{6}}$. Find a basis of $U$.}
-	(b) \TextN{Extend the basis in {\tgnr(b)} to a basis of $\PoF{4}$.}
-	(c) \TextN{Find a subsp $W$ of $\PoF{4}$ such that $\PoF{4}=U\oplus W$.}
-}Suppose $p\Par{z}=az^4+bz^3+cz^2+dz+e$ such that $p\Par{2}=p\Par{5}=p\Par{6}$.\vspace{4pt}\par\quad
-Then $\hMath[0pt]{r}{\left|}{\right\}}{
-	p\Par{2}=16a+8b+4c+2d+e\,\;\;\Par{\text{I}}\;\;\\
-	p\Par{5}=625a+125b+25c+5d+e\;\;\Par{\text{II}}\,\;\\
-	p\Par{6}=1296a+216b+36c+6d+e\;\,\Par{\text{III}}
-}\Rightarrow\MathLeftBrace{l}{
-	\Par{\text{II}}\;-\;\Par{\text{I}}=0\\
-	\Par{\text{III}}-\Par{\text{II}}=0\\
-	\Par{\text{III}}-\;\Par{\text{I}}=0\\
-}$\vspace{4pt}\par\quad
-{\tgsl You don't have to compute to know that the dimension of the set of solutions is 3.}\par\quad
-( Because $\not\exists\,p\in\PoF{2}$ with $1\leqslant\deg p\leqslant 2,p\Par{2}=p\Par{5}=p\Par{6}.$ )\par\quad
-(a) A basis: $1,\Par{z-2}\Par{z-5}\Par{z-6},z\Par{z-2}\Par{z-5}\Par{z-6}.$\par\quad
-(b) Extend to a basis of $\PoF{4}$ as $1,z,z^2,\Par{z-2}\Par{z-5}\Par{z-6},z\Par{z-2}\Par{z-5}\Par{z-6}.$\par\quad
-(c) Let $W=\Span{z,z^2}=\Bra{az+bz^2:a,b\in\Fbb}$, so that $\PoF{4}=U\oplus W.$\PfEnd
-\SepLine
-
-\BulletPointX\Tips\vspace{-30pt}\TextB{}
-$$\Par{1}\;\Dim\Par{V_1\cap V_2\cap V_3}=\dim V_1+\dim V_2+\dim V_3-\Dim\Par{V_2+V_3}-\Dim\BigPar{V_1+\Par{V_2\cap V_3}}.\vspace{-46pt}$$\TextB{}
-$$\Par{2}\;\Dim\Par{V_1\cap V_2\cap V_3}=\dim V_1+\dim V_2+\dim V_3-\Dim\Par{V_1+V_3}-\Dim\BigPar{V_2+\Par{V_1\cap V_3}}.\vspace{-46pt}$$\TextB{}
-$$\Par{3}\;\Dim\Par{V_1\cap V_2\cap V_3}=\dim V_1+\dim V_2+\dim V_3-\Dim\Par{V_1+V_2}-\Dim\BigPar{V_3+\Par{V_1\cap V_2}}.\vspace{-6pt}$$\TextB{}
-For (1). Because $\dim \Par{V_1\cap V_2\cap V_3}=\dim V_1+\Dim\Par{V_2\cap V_3}-\Dim\BigPar{V_1+\Par{V_2\cap V_3}}.$\TextB{}
-And $\Dim\Par{V_2\cap V_3}=\dim V_2+\dim V_3-\Dim\Par{V_2+V_3}.$\par
-%Moreover, $\dim(\bigcap\limits_{i=1}^m V_i).$\TextB{}
-%\AlignEq{}{\dim(V_1\cap V_2\cap V_3)=\,&\dim V_1+\dim V_2+\dim V_3-\frac{\dim(V_2+V_3)+\dim(V_1+V_3)+\dim(V_1+V_2)}{3}\\\,&-\displaystyle\frac{\dim(V_1+(V_2\cap V_3))+\dim(V_2+(V_1\cap V_3))+\dim(V_3+(V_1\cap V_2))}{3}.}\par
-\SepLine
-
-\ProblemB{
-	\TextB{Suppose V is a 10-dim vecsp and $V_1,V_2,V_3$ are subsps of \,$V$ with}
-	\hypertarget{2C4e14}{}(a) \TextB{$\dim V_1 = \dim V_2 = \dim V_3 = 7$. Prove that $V_1\cap V_2\cap V_3\neq\zeroSubs$.}
-	\hypertarget{2C4e15}{}(b) \TextB{$\dim V_1+\dim V_2+\dim V_3 > 2\dim V$. Prove that $V_1\cap V_2\cap V_3\neq\zeroSubs$.}
-}\par\quad
-(a) By \TIPS, $\Dim\Par{V_1\cap V_2\cap V_3}\geq\dim V_1+\dim V_2+\dim V_3-2\dim V>0.$\par\quad
-(b) By \TIPS, $\Dim\Par{V_1\cap V_2\cap V_3}>2\dim V-\Dim\Par{V_2+V_3}-\Dim\Par{V_1+\Par{V_2\cap V_3}}\geq 0.$\PfEnd
 \SepLine
 
 \ProblemBnoor{\hypertarget{2C4e16}{4E 2.C.16}}{
@@ -511,16 +440,101 @@ And $\Dim\Par{V_2\cap V_3}=\dim V_2+\dim V_3-\Dim\Par{V_2+V_3}.$\par
 }\par\quad
 Let $\Par{v_1,\dots,v_m}$ be a basis of $U$, extend to a basis of $V$ as $\Par{v_1,\dots,v_m,u_1,\dots,v_{n-m}}$.\par\quad
 Define $U_i=\Span{v_1,\dots,v_m,u_1,\dots,u_{i-1},u_{i+1},\dots,u_{n-m}}$ for each $i$. Then $U\subseteq U_i$ for each $i.$\vspace{4pt}\par\quad
-\vspace{2pt}And because $\forall v\in \bigcap\limits_{i=1}^{n-m}U_i,v=v_0+b_1 u_1+\dots+b_{n-m} u_{n-m}\in U_i\Rightarrow b_i=0 \text{\;for\;each\;} i\Rightarrow v\in U.$\par\quad
-\vspace{8pt}Hence $\bigcap\limits_{i=1}^{n-m}U_i\subseteq U.$\PfEnd
+And because $\forall v\in \bigcap\limits_{i=1}^{n-m}U_i,v=v_0+b_1 u_1+\dots+b_{n-m} u_{n-m}\in U_i\Rightarrow b_i=0 \text{\;for\;each\;} i\Rightarrow v\in U.$\par\quad
+\vspace{6pt}Hence $\bigcap\limits_{i=1}^{n-m}U_i\subseteq U.$\PfEnd
 \Example\,\,\, {Suppose $\dim V=6,\dim U=3$.\par\quad
-$\Par{\overbrace{\underbrace{v_1,v_2,v_3}_\text{Basis of U},v_4,v_5,v_6}^\text{Basis of V}},$ define $\hMath[0pt]{l}{\left|}{\right\}}{$
-$U_1=\Span{v_1,v_2,v_3}\oplus\Span{v_5,v_6}\\ $
-$U_2=\Span{v_1,v_2,v_3}\oplus\Span{v_4,v_6}\\ $
-$U_3=\Span{v_1,v_2,v_3}\oplus\Span{v_4,v_5}$
-$}\Rightarrow\dim U_i=6-1,\,\,i=\underbrace{1,2,3}_{6-3=3}.$}
-\PfEnd\vspace{10pt}
+	$\Par{\overbrace{\underbrace{v_1,v_2,v_3}_\text{Basis of U},v_4,v_5,v_6}^\text{Basis of V}},$ define $\hMath[0pt]{l}{\left|}{\right\}}{$
+		$U_1=\Span{v_1,v_2,v_3}\oplus\Span{v_5,v_6}\\ $
+		$U_2=\Span{v_1,v_2,v_3}\oplus\Span{v_4,v_6}\\ $
+		$U_3=\Span{v_1,v_2,v_3}\oplus\Span{v_4,v_5}$
+		$}\Rightarrow\dim U_i=6-1,\,\,i=\underbrace{1,2,3}_{6-3=3}.$}
+\PfEnd[-10pt]\vspace{-4pt}
+\SepLine\pagebreak
+
+\ProblemN{\hypertarget{2C10}{10}}{
+	\TextNL{Suppose $m\in\Nbp,\;p_0,p_1,\dots,p_m\in\PoF{}$ are such that each $p_k$ has degree $k.$}
+	\TextNL{Prove that $\Par{p_0,p_1,\dots,p_m}$ is a basis of $\PoF{m}$.}
+}{\Large\vspace{4pt}Using mathematical induction on $m$.}\par\quad
+(i) \envFontLarge{\Large\vspace{8pt}$k=0,1.$ \;$\deg p_0=0;\;\deg p_1=1\Rightarrow\Span{p_0,p_1}=\Span{1,x}.$}\par\quad\Endi
+(ii) {\Large\vspace{4pt}$k\in\Bra{1,\dots,m-1}.$ \;Assume that $\Span{p_0,p_1,\dots,p_k}=\Span{1,x,\dots,x^k}.$}\par\quad\Hii
+{\Large\vspace{4pt}Then $\Span{p_0,p_1,\dots,p_k,p_{k+1}}\subseteq\Span{1,x,\dots,x^k,x^{k+1}}$.}\par\quad\Hii
+{\Large\vspace{4pt}又 $\deg p_{k+1}=k+1,\;\;p_{k+1}\Par{x}=a_{k+1}x^{k+1}+r_{k+1}\Par{x};\;\;a_{k+1}\neq 0,\;\;\deg r_{k+1}\leqslant k.$}
+\par\vspace{2pt}\quad\Hii
+{\Large\vspace{4pt}$\Rightarrow x^{k+1}=\displaystyle\frac{1}{a_{k+1}}\XPar{p_{k+1}\Par{x}-r_{k+1}\Par{x}}\in\Span{1,x,\dots,x^k,p_{k+1}}=\Span{p_0,p_1,\dots,p_k,p_{k+1}}$.}\par\vspace{2pt}\quad\Hii
+{\Large\vspace{8pt}$\therefore\,\,x^{k+1}\in\Span{p_0,p_1,\dots,p_k,p_{k+1}}\Rightarrow\Span{1,x,\dots,x^k,x^{k+1}}\subseteq\Span{p_0,p_1,\dots,p_k,p_{k+1}}$.}\par\quad
+{\Large\vspace{4pt}Thus $\PoF{m}=\Span{1,x,\dots,x^m}=\Span{p_0,p_1,\dots,p_m}.$}\PfEnd\vspace{12pt}\quad
+\Or 用比较系数法. {\Large\vspace{4pt}Denote the coefficient of $x^k$ in $p\in\PoF{}$ by $\xi_k\Par{p}.$}\par\quad
+{\Large\vspace{4pt}Suppose $L=a_m p_m\Par{x}+\dots+a_1 p_1\Par{x}+a_0p_0\Par{x}=0\cdot x^m+\dots+0\cdot x+0\cdot 1=R,\forall x\in\Fbb.$}\par\quad
+{\Large\vspace{4pt}We use induction to show that $a_m=\dots=a_0=0.$}\par\quad
+(i) {\Large\vspace{4pt}$k=m,$ \;$\xi_{m}\Par{L}=a_{m}\xi_{m}\Par{p_m}=\xi_{m}\Par{R}=0$ 又 $\deg p_m=m,\;\xi_{m}\Par{p_m}\neq 0\Rightarrow a_m=0.$}\par\quad\Hi
+{\Large\vspace{8pt}Now $L=a_{m-1}p_{m-1}\Par{x}+\dots+a_0p_0\Par{x}.$}\par\quad\Endi
+(ii) {\Large\vspace{4pt}$1\leqslant k\leqslant m,$ \;$\xi_{k}\Par{L}=a_{k}\xi_{k}\Par{p_k}=\xi_{k}\Par{R}=0$ 又 $\deg p_k=k,\;\xi_{k}\Par{p_k}\neq 0\Rightarrow a_k=0.$}\par\quad\Hii
+{\Large Now $L=a_{k-1}p_{k-1}\Par{x}+\dots+a_0p_0\Par{x}.$}\PfEnd
 \SepLine
+
+\ProblemBnoor{\Tips}[]{
+	\TextB{Suppose $m\in\Nbp,\;p_0,p_1,\dots,p_m\in\PoF{m}$ are such that}
+	\Blind{\Tips} \TextB{the lowest term of each $p_k$ is of deg $k.$ Prove that $\Par{p_0,p_1,\dots,p_m}$ is a basis of $\PoF{m}.$}
+}{\Large Using mathematical induction on $m.$\par}\quad
+\envFontLarge{\Large Let each $p_k$ be defined by $p_k\Par{x}=a_{k,k} x^k+\dots+a_{m,k} x^m,$ where $a_{k,k}\neq 0.$\par}\quad
+(i) {\Large$k=0,1.$ \;$p_m\Par{x}=a_{m,m}x^m;\;p_{m-1}\Par{x}=a_{m-1,m-1}x^{m-1}+a_{m,m-1}x^m$\par}\quad\Hii
+{\Large\Blind{$k=0,1.$} $\Rightarrow\Span{x^m,x^{m-1}}=\Span{p_m,p_{m-1}}.$\par}\vspace{6pt}\quad\Endi
+(ii) {\Large$k\in\Bra{1,\dots,m-1}.$ \;Assume that $\Span{x^m,\dots,x^{m-k}}=\Span{p_m,\dots,p_{m-k}}.$}\par\quad\Hii
+{\Large Then $\Span{p_m,\dots,p_{m-\SmallPar{k+1}}}\subseteq\Span{x^m,\dots,x^{m-\SmallPar{k+1}}}.$\par}\quad\Hii
+{\Large 又 $p_{m-\SmallPar{k+1}}$ has the form $a_{m-\SmallPar{k+1},m-\SmallPar{k+1}}x^{m-\SmallPar{k+1}}+r_{m-\SmallPar{k+1}}\Par{x};\;$\par}\quad\Hii
+{\Large\Blind{又} where the lowest term of $r_{m-\SmallPar{k+1}}\in\PoF{m}$ is of deg $\Par{m-k}.$\par}\vspace{6pt}\quad\Hii
+{\Large $\Rightarrow x^{m-\SmallPar{k+1}}=\displaystyle\frac{1}{a_{m-\SmallPar{k+1},m-\SmallPar{k+1}}}\XPar{p_{m-\SmallPar{k+1}}\Par{x}-r_{m-\SmallPar{k+1}}\Par{x}}$\par}\vspace{4pt}\quad\Hii
+{\Large \Blind{$\Rightarrow x^{m-\SmallPar{k+1}}$}${}\in\Span{x^m,\dots,x^{m-k},p_{m-\SmallPar{k+1}}}=\Span{p_m,\dots,p_{m-k},p_{m-\SmallPar{k+1}}}.$\par}\vspace{4pt}\quad\Hii
+{\Large$\therefore\;x^{m-\SmallPar{k+1}}\in\Span{p_m,\dots,p_{m-k},p_{m-\SmallPar{k+1}}}$\par}\quad\Hii
+{\Large \Blind{$\therefore\;$}$\Rightarrow\Span{x^m,\dots,x^{m-k},x^{m-\SmallPar{k+1}}}\subseteq\Span{p_m,\dots,p_{m-k},p_{m-\SmallPar{k+1}}}.$\par}\vspace{6pt}\quad
+{\Large Thus $\PoF{m}=\Span{x^m,\dots,x,1}=\Span{p_m,\dots,p_1,p_0}.$}\PfEnd
+\SepLine
+
+\ProblemBnoor{\hypertarget{2C4e10}4E 2.C.10}{
+	\TextB{Suppose $m$ is a positive integer. For $0\leqslant k\leqslant m$, let $p_k\Par{x}=x^k\Par{1-x}{^{m-k}}$.}
+	\TextB{Show that $\Par{p_0,\dots,p_m}$ is a basis of $\PoF{m}$.}
+	\TextB{{\large The basis in this exercise leads to what are called Bernstein polys. You can do a web search to learn how}}
+	\TextB{{\large Bernstein polys are used to approximate continuous functions on $[0, 1]$.}}
+}\par\quad
+Note that each $p_k\Par{x}={\sum_{j=0}^{m-k}\mathC_{m-k}^j\Par{-1}{^{j}}\cdot x^{j+k}\cdot 1^j}=\underset{\text{of deg k}}{\uline{\Par{-1}{^0}\cdot x^k\cdot 1^0}}+\underset{\text{of deg m; denote it by }q_k\SmallPar{x}}{\uline{\sum_{j=1}^{m-k}\mathC_{m-k}^j\Par{-1}{^{j}}\cdot x^{j+k}\cdot 1^j}}.$\vspace{-12pt}\par\quad
+And, each $q_k\in\Span{x^{k+1},\dots,x^m}.$ Using \TIPS above.\PfEnd\vspace{6pt}\quad
+\Or Using induction.\par\quad
+(i) $k=0,1.$ \;$p_m\Par{x}=x^m;\;p_{m-1}\Par{x}=x^{m-1}-x^m\Longrightarrow x^{m-1}=p_{m-1}\Par{x}+p_m\Par{x}.$\vspace{2pt}\par\quad\Endi
+(ii) $k\in\Bra{2,\dots,m-1}.$ \;Assume that $x^{m-k}=p_{m-k}\Par{x}+a_mx^m+\dots+a_{m-k+1}x^{m-k+1}.$\vspace{2pt}\par\quad\Hii
+Note that $x^{m-k-1}=p_{m-k-1}\Par{x}+\sum_{j=1}^{k+1}\mathC_{k+1}^j\Par{-1}{^{j+1}}x^{j+m-k-1}\Longrightarrow\exists\,!\,c_{m-i}=\mathC_{k+1}^{k+1-i}\Par{-1}{^{k-i}}.$ \Par{$\Delta$}\vspace{2pt}\par\quad
+Thus each $x^k=b_mp_m\Par{x}+\dots+b_{m-k}p_{m-k}\Par{x},\exists\,!\,b_{m-i}\in\Fbb.$ \quad\Sbra{ \Par{$\Delta$} is the core. }\PfEnd\quad
+\Comment \,\,\,Core and context can be inde. Dependence is not a requisite for combination.\vspace{10pt}\par\quad
+\Or For any $m,k\in\Nbp$ such that $k\leqslant m.$ Define $p_{k,m}$ by $p_{k,m}\Par{x}=x^k\Par{1-x}^{m-k}.$\par\quad
+Define the statement $S\Par{m}$ by $S\Par{m}:\Par{p_{0,m},\dots,p_{m,m}}$ is linely inde ( and therefore is a basis ).\par\quad
+We use induction on to show that $S\Par{m}$ holds for all $m\in\Nbp.$\vspace{4pt}\par\quad
+(i) $m=1.$ \;Let $a_0\Par{1-x}+a_1x=0,\forall x\in\Fbb.$ \;Then take $x=1,x=0\Rightarrow a_1=a_0=0.$\par\quad\Hi
+$m=2.$ \;Let $a_0\Par{1-x}^2+a_1\Par{1-x}x+a_2x^2,\forall x\in\Fbb.$ \;Then $\MathLeftBrace{l}{x=0\Rightarrow a_0+a_1=0;\\x=1\Rightarrow a_2=0;\\x=2\Rightarrow a_0+2a_1=0.}$\par\quad\Endi
+(ii) $2\leqslant m.$ \;Assume that $S\Par{m}$ holds.\vspace{2pt}\par\quad\Hii
+\envFontLarge{\vspace{6pt}Suppose\; $\sum_{k=0}^{m+2}a_kp_{k,m+2}\Par{x}=\sum_{k=0}^{m+2}a_kx^k\Par{1-x}^{m+2-k}=0,\forall x\in\Fbb.$}\par\quad\Hii
+{\vspace{6pt}While {\Large$x=0\Rightarrow a_0=0;\;x=1\Rightarrow a_{m+2}=0.$} Then {\Large$\sum_{k=1}^{m+1}a_kx^k\Par{1-x}^{m+2-k}=0;$}}\par\quad\Hii
+{\vspace{6pt}And note that \Large\AlignEq{}{\\[-45pt]&\textstyle\sum_{k=1}^{m+1}a_kx^k\Par{1-x}^{m+2-k}\\={}&x\Par{1-x}\textstyle\sum_{k=1}^{m+1}a_kx^{k-1}\Par{1-x}^{m+1-k}\\={}&x\Par{1-x}\textstyle\sum_{k=0}^{m}a_{k+1}x^{k}\Par{1-x}^{m-k}=x\Par{1-x}\sum_{k=0}^{m}a_{k+1}p_{k,m}\Par{x}.\hspace{-40pt}}}\vspace{4pt}\par\quad\Hii
+\envFontDefault{\vspace{4pt}Hence $x\Par{1-x}\sum_{k=0}^{m}a_{k+1}p_{k,m}\Par{x}=0,\forall x\in\Fbb\Rightarrow \sum_{k=0}^{m}a_{k+1}p_{k,m}\Par{x}=0,\forall x\in\Fbb\backslash\Bra{0,1}.$}\par\quad\Hii
+{\vspace{4pt}Because $\sum_{k=0}^{m}a_{k+1}p_{k,m}\Par{x}$ has infinitely many zeros. We have $\sum_{k=0}^{m}a_{k+1}p_{k,m}\Par{x}=0,\forall x\in\Fbb.$}\par\quad\Hii
+{\vspace{4pt}By assumption, $a_1=\dots=a_m=0,$ while $a_0=a_{m+2}=0,$}\par\quad\Hii
+\Blind{By ass}\vspace{4pt}and also $\;a_{m+1}=0$ \BigPar{ because $\sum_{k=0}^{m}a_{k+1}p_{k,m}\Par{x}=a_{m+1}p_{m,m}\Par{x}=a_{m+1}x^m=0,\forall x\in\Fbb.$ }\par\quad\Hii
+\vspace{6pt}Thus $\Par{p_{0,m+2},\dots,p_{m+2,m+2}}$ is linely inde and $S\Par{m+2}$ holds.\par\quad
+Since $\forall m\in\Nbp,S\Par{m}\Rightarrow S\Par{m+2}.$ We have \;$\hMath[0pt]{r}{\left|}{\right\}}{\forall k\in\Nbb,S\Par{2k+1}\text{ holds}\\\forall k\in\Nbp,S\Par{2k}\text{ holds}}\Rightarrow S\Par{m}$ holds.\PfEnd
+\SepLine
+
+\ProblemNnoor[]{\hypertarget{2C1}{1}}{\COROLLARY\;for [2.38,39]}{
+	\TextN{Suppose $U$ is a subsp of \,$V$ such that $\dim V=\dim U$. Then $V=U.$}
+}\Blind{\IndentN} Let $B_U=\Par{u_1,\dots,u_m}.$ Then $m=\dim V.$ 又 $u_i\in V.$ By [2.39], $B_V=\Par{u_1,\dots,u_m}.$\PfEnd\vspace{-2pt}
+\SepLine[-2pt]
+
+\ProblemBnoor[]{}[]{
+	\TextB{\tgnr\envFontDefault\large Let $v_1,\dots,v_n\in V$ and $\dim\Span{v_1,\dots,v_n}=n.$ Then $\Par{v_1,\dots,v_n}$ is a basis of $\Span{v_1,\dots,v_n}.$}
+	\TextB{\envFontDefault\large Notice that $\Par{v_1,\dots,v_n}$ is a spanning list of $\Span{v_1,\dots,v_n}$ of length $n=\dim\Span{v_1,\dots,v_n}.$\vspace{-2pt}}
+}\SepLine[-2pt]
+
+%\colorbox{yellow}{TODO: More Tips.}
+%\par\quad
+%\par\quad
+%\SepLine
 
 \ProblemN{\hypertarget{2C14}{14}}{
 	\TextNL{Suppose that $V_1,\dots,V_m$ are finite-dim subsps of \,$V$.}
@@ -529,7 +543,7 @@ $}\Rightarrow\dim U_i=6-1,\,\,i=\underbrace{1,2,3}_{6-3=3}.$}
 Choose a basis $ \mathcal{E}_i$ of $V_i\Rightarrow V_1+\dots+V_m=\Span{\mathcal{E}_1\cup\cdots\cup \mathcal{E}_m};\,\,\,\dim V_i=\card \mathcal{E}_i$.\par\quad
 Then $\dim\!\Par{V_1+\dots+V_m}=\dim\Span{\mathcal{E}_1\cup\cdots\cup \mathcal{E}_m}$.\par\quad
 又 $\dim\Span{\mathcal{E}_1\cup\cdots\cup\mathcal{E}_m}\leqslant\card\Par{\mathcal{E}_1\cup\cdots\cup \mathcal{E}_m}\leqslant\card \mathcal{E}_1+\cdots+\card \mathcal{E}_m$.\par\quad
-Thus $\dim\!\Par{V_1+\dots+V_m}\leqslant \dim V_1+\dots+\dim V_m.$\PfEnd\vspace{10pt}
+Thus $\dim\!\Par{V_1+\dots+V_m}\leqslant \dim V_1+\dots+\dim V_m.$\PfEnd\vspace{6pt}
 \Comment \,\,\,{\tgsl\Large$\dim\!\Par{V_1+\dots+V_m}=\dim V_1+\dots+\dim V_m\Longleftrightarrow V_1+\dots+V_m$ is a direct sum.}\par
 \Blind{\Comment\,\,\,}For each $i$, $\Par{V_1+\dots+V_i}\cap V_{i+1}=\zeroSubs\Longleftrightarrow V_1+\dots+V_m$ is a direct sum\par
 \Blind{\Comment\,\,\,}$\Longleftrightarrow\Par{\mathcal{E}_1\cap\dots\cap\mathcal{E}_{k-1}}\cap\mathcal{E}_k=\emptyset$ for each $i$ 又 $\dim\Span{\mathcal{E}_1\cup\dots\cup\mathcal{E}_m}=\card\Par{\mathcal{E}_1\cup\dots\cup\mathcal{E}_m}$\par
@@ -546,41 +560,51 @@ Thus $\dim\!\Par{V_1+\dots+V_m}\leqslant \dim V_1+\dots+\dim V_m.$\PfEnd\vspace{
 Because $\cMid{X+Y}=\cMid{X}+\cMid{Y}-\cMid{X\cap Y};\,\,\,\Par{X\cup Y}\cap Z=\Par{X\cap Z}\cup\Par{Y\cap Z}$.\par\quad
 Now $\cMid{\Par{A\cup B}\cup C}=\cMid{A\cup B}+\cMid{C}-\cMid{\Par{A\cup B}\cap C}.$\par\quad
 And $\cMid{\Par{A\cup B}\cap C}=\cMid{\Par{A\cap C}\cup\Par{B\cap C}}=\cMid{A\cap C}+\cMid{B\cap C}-\cMid{A\cap B\cap C}.$\par\quad
-Hence $\cMid{\Par{A\cup B}\cup C}=\cMid{A}+\cMid{B}+\cMid{C}+\cMid{A\cap B\cap C}-\cMid{A\cap B}-\cMid{A\cap C}-\cMid{B\cap C}.$\par\vspace{12pt}\quad
-Because $\Par{V_1+V_2}+V_3=V_1+\Par{V_2+V_3}=\Par{V_1+V_3}+V_2$.\par\quad
+Hence $\cMid{\Par{A\cup B}\cup C}=\cMid{A}+\cMid{B}+\cMid{C}+\cMid{A\cap B\cap C}-\cMid{A\cap B}-\cMid{A\cap C}-\cMid{B\cap C}.$\par\vspace{4pt}\quad
+Because $\Par{V_1+V_2}+V_3=V_1+\Par{V_2+V_3}=\Par{V_1+V_3}+V_2.$\vspace{-6pt}\par\quad
 \AlignEq{\hspace{10pt}}{\Dim\Par{V_1+V_2+V_3}&=\Dim\Par{V_1+V_2}+\Dim\Par{V_3}-\Dim\BigPar{\Par{V_1+V_2}\cap V_3}\quad(1)\hspace{114pt}\\&=\Dim\Par{V_2+V_3}+\Dim\Par{V_1}-\Dim\BigPar{\Par{V_2+V_3}\cap V_1}\quad(2)\\&=\Dim\Par{V_1+V_3}+\Dim\Par{V_2}-\Dim\BigPar{\Par{V_1+V_3}\cap V_2}\quad(3)}\par\quad
 Notice that in general, $\Par{X+Y}\cap Z\neq X\cap Z+Y\cap Z$.\par\quad
-For example, $X=\Bra{\Par{x,0}\in\Rbb^2:x\in\Rbb},Y=\Bra{\Par{0,y}\in\Rbb^2:y\in\Rbb},Z=\Bra{\Par{z,z}\in\Rbb^2:z\in\Rbb}$.\par
-{\,}\par
+For example, $X=\Bra{\Par{x,0}\in\Rbb^2:x\in\Rbb},Y=\Bra{\Par{0,y}\in\Rbb^2:y\in\Rbb},Z=\Bra{\Par{z,z}\in\Rbb^2:z\in\Rbb}.$\vspace{8pt}\par
 \BulletPointX\Corollary \,\,\,\Largesl{Suppose $V_1,V_2$ and $V_3$ are finite-dim vecsps, then} {\small $\displaystyle\frac{\Par{1}+\Par{2}+\Par{3}}{3}:$
-}\par
+}\vspace{-6pt}\par
 \AlignEq{\IndentB\,}{\Dim\Par{V_1+V_2+V_3}=\dim &\,V_1+\dim V_2+\dim V_3\\&-\displaystyle\frac{\Dim\Par{V_1\cap V_2}+\Dim\Par{V_1\cap V_3}+\Dim\Par{V_2\cap V_3}}{3}\\&-\displaystyle\frac{\Dim\BigPar{\Par{V_1+V_2}\cap V_3}+\Dim\BigPar{\Par{V_1+V_3}\cap V_2}+\Dim\BigPar{\Par{V_2+V_3}\cap V_1}}{3}.}\TextB{}
 {\tgsl The formula above may seem strange because the right side does not look like an integer.\PfEnd}\par
 \SepLine
 
-\hfill\ProblemBnoor[]{\Tips\;}[]{
-	\TextB{\tgnr\envFontDefault\large Suppose $v_1,\dots,v_n\in V,\dim\Span{v_1,\dots,v_n}=n.$ Then $\Par{v_1,\dots,v_n}$ is a basis of $\Span{v_1,\dots,v_n}.$}
-	\Blind{\Tips\;} \TextB{\envFontDefault\large Notice that $\Par{v_1,\dots,v_n}$ is a spanning list of $\Span{v_1,\dots,v_n}$ of length $n=\dim\Span{v_1,\dots,v_n}.$}
-}\SepLine\pagebreak
+\ProblemB[]{
+	\TextB{Suppose V is a 10-dim vecsp and $V_1,V_2,V_3$ are subsps of \,$V$ with}
+	\hypertarget{2C4e14}{}(a) \TextB{$\dim V_1 = \dim V_2 = \dim V_3 = 7$. Prove that $V_1\cap V_2\cap V_3\neq\zeroSubs$.}
+	\Blind{(a)} By \TIPS, $\Dim\Par{V_1\cap V_2\cap V_3}\geq\dim V_1+\dim V_2+\dim V_3\uline{-2\dim V}>0.$\TextB{\vspace{4pt}}
+	\hypertarget{2C4e15}{}(b) \TextB{$\dim V_1+\dim V_2+\dim V_3 > 2\dim V$. Prove that $V_1\cap V_2\cap V_3\neq\zeroSubs$.}
+	\Blind{(b)} By \TIPS, $\Dim\Par{V_1\cap V_2\cap V_3}\uuline{{}>2\dim V}-\Dim\Par{V_2+V_3}-\Dim\Par{V_1+\Par{V_2\cap V_3}}\geq 0.$\PfEnd\vspace{14pt}
+}\SepLine
+
+\BulletPointX\Tips\TextB{}
+Because $\dim \Par{V_1\cap V_2\cap V_3}=\dim V_1+\Dim\Par{V_2\cap V_3}-\Dim\BigPar{V_1+\Par{V_2\cap V_3}}.$\TextB{}
+And $\Dim\Par{V_2\cap V_3}=\dim V_2+\dim V_3-\Dim\Par{V_2+V_3}.$ We have $\Par{1},$ and $\Par{2},\Par{3}$ similarly.\TextB{}
+$\Par{1}\;\Dim\Par{V_1\cap V_2\cap V_3}=\dim V_1+\dim V_2+\dim V_3-\Dim\Par{V_2+V_3}-\Dim\BigPar{V_1+\Par{V_2\cap V_3}}.$\TextB{}
+$\Par{2}\;\Dim\Par{V_1\cap V_2\cap V_3}=\dim V_1+\dim V_2+\dim V_3-\Dim\Par{V_1+V_3}-\Dim\BigPar{V_2+\Par{V_1\cap V_3}}.$\TextB{}
+$\Par{3}\;\Dim\Par{V_1\cap V_2\cap V_3}=\dim V_1+\dim V_2+\dim V_3-\Dim\Par{V_1+V_2}-\Dim\BigPar{V_3+\Par{V_1\cap V_2}}.$
+\SepLine
 
 \ProblemN{\hypertarget{2C15}{15}}{
 	\TextNL{Suppose $V$ is finite-dim and $\dim V=n\geqslant 1.$}
 	\TextNL{Prove that $\exists$ one-dim subsps $V_1,\dots,V_n$ of $V$ such that $V=V_1\oplus \dots\oplus V_n.$}
-}\par\quad
-Suppose $B_V=\Par{v_1,\dots,v_n}.$ Define $V_i$ by $V_i=\Span{v_i}$ for each $i\in\!\Bra{1,\dots,n}.$\par\quad
-Then $\forall v\in V,\exists\,!\,a_i\in\Fbb,v=a_1 v_1+\dots+a_n v_n$\par\quad
-\Blind{Then $\forall v\in\,$}$\Rightarrow\exists\,!\,u_i\in V_i,v=u_1+\dots+u_n\Rightarrow V=V_1\oplus\dots\oplus V_n.$\PfEnd
+}Suppose $B_V=\Par{v_1,\dots,v_n}.$ Define $V_i$ by $V_i=\Span{v_i}$ for each $i\in\!\Bra{1,\dots,n}.$\par
+\Blind{\Solution} Then $\forall v\in V,\exists\,!\,a_i\in\Fbb,v=a_1 v_1+\dots+a_n v_n\Rightarrow\exists\,!\,u_i\in V_i,v=u_1+\dots+u_n$\PfEnd
+%\Blind{\Solution} \Blind{Then $\forall v\in$}\hspace{3pt}
+\SepLine
+
 \ProblemB[]{
-	\Corollary\TextB{}
-	\TextB{Suppose $W$ is finite-dim, $\dim W=m$ and \envFontDefault$w\in W\backslash\zeroSubs.$}
-	\TextB{Prove that $\exists\,B_W=\Par{w_1,\dots,w_m}$ such that $w=w_1+\dots+w_m.$}
-}[Proof]\par\quad
-By Problem (15), $\exists$ one-dim subsps $W_1,\dots,W_m$ of $W$ such that $W=W_1\oplus\dots\oplus W_m.$\par\quad
-Note that $\dim W_i=\dim\Span{w_i}=1\Rightarrow\forall x_i\in W_i,\exists\,!\,c_i\in\Fbb,x_i=c_i w_i.$\par\quad
-Suppose $w=x_1+\dots+x_m,$ where each $x_i=c_i w_i\in W_i.$ Then $\Par{x_1,\dots,x_m}$ is also a basis of $W.$\PfEnd\vspace{6pt}\quad
-\Or Note that $w\neq 0\Rightarrow m\geqslant 1.$ If $m=1$ then let $w_1=w$ and we are done. Suppose $m>1.$\par\quad
-Extend $\Par{w}$ to a basis $\Par{w,w_1,\dots,w_{m-1}}$ of $W.$ Let $w_m=w-w_1-\dots-w_{m-1}.$\par\quad
-又 $\Span{w,w_1,\dots,w_{m-1}}=\Span{w_1,\dots,w_m}.$ Hence $\Par{w_1,\dots,w_m}$ is also a basis of $W.$\PfEnd
+	\Corollary \,\,\,\TextB{Suppose $W$ is finite-dim, $\dim W=m$ and \envFontDefault$w\in W\backslash\zeroSubs.$}
+	\Blind{\Corollary \,\,\,}\TextB{Prove that $\exists\,B_W=\Par{w_1,\dots,w_m}$ such that $w=w_1+\dots+w_m.$\vspace{4pt}}
+By Problem (15), $\exists$ one-dim subsps $W_1,\dots,W_m$ of $W$ such that $W=W_1\oplus\dots\oplus W_m.$\TextB{}
+Note that $\dim W_i=\dim\Span{w_i}=1\Rightarrow\forall x_i\in W_i,\exists\,!\,c_i\in\Fbb,x_i=c_i w_i.$\TextB{}
+Suppose $w=x_1+\dots+x_m,$ where each $x_i=c_i w_i\in W_i.$ Then $\Par{x_1,\dots,x_m}$ is also a basis of $W.$\PfEnd\TextB{\vspace{6pt}}
+\Or Note that $w\neq 0\Rightarrow m\geqslant 1.$ If $m=1$ then let $w_1=w$ and we are done. Suppose $m>1.$\TextB{}
+Extend $\Par{w}$ to a basis $\Par{w,w_1,\dots,w_{m-1}}$ of $W.$ Let $w_m=w-w_1-\dots-w_{m-1}.$\TextB{}
+又 $\Span{w,w_1,\dots,w_{m-1}}=\Span{w_1,\dots,w_m}.$ Hence $\Par{w_1,\dots,w_m}$ is also a basis of $W.$\PfEnd\vspace{14pt}
+}
 \SepLine
 
 \ProblemB[]{
@@ -595,28 +619,27 @@ Note that $U\neq V\Rightarrow n\geqslant 1.$ We will construct $B_V$ via the fol
 \Blind{\tgbfx Step k.} Hence because $\Span{v_1,\dots,v_{k-1}}\neq V,$ it must be case that $\Span{v_1,\dots,v_{k-1}}\cup U\neq V.$\TextB{}
 \Blind{\tgbfx Step k.} Thus $\exists\,v_k\in V\backslash U$ such that $v_k\not\in\Span{v_1,\dots,v_{k-1}}.$\TextB{}
 \Blind{\tgbfx Step k.} By (2.A.11), $\Par{v_1,\dots,v_k}$ is linely inde in $V$. If $\Span{v_1,\dots,v_k}=V,$ then we stop.\TextB{}
-Because $V$ is finite-dim, this process will stop after $n$ steps.\PfEnd\vspace{8pt}\TextB{}
-\Or If $U=\zeroSubs$ then we are done. Suppose $\dim U\geqslant 1.$\TextB{}
-Let $\Par{u_1,\dots,u_m}$ be a basis of $U,$ extend to a basis $\Par{u_1,\dots,u_n}$ of $V.$\TextB{}
+Because $V$ is finite-dim, this process will stop after $n$ steps.\PfEnd\vspace{4pt}\TextB{}
+\Or If $U=\zeroSubs$ then we are done. Let $\dim U\geqslant 1.$\TextB{}
+Let $\Par{u_1,\dots,u_m}$ be a basis of $U.$ Extend to a basis $\Par{u_1,\dots,u_n}$ of $V.$\TextB{}
 Then let $B_V=\Par{u_1-u_k,\dots,u_m-u_k,u_{m+1},\dots,u_k,\dots,u_n}.$\PfEnd
 \SepLine
-\ChEnd\vspace{10pt}
+\ChEnd\pagebreak
 
-\ChDecl{Ch3A}{3$\cdot$A}{}\orMode{\hLk{3A3}{3}\;\;\hLk{3A4}{4}\;\;\hLk{3A5}{5}\;\;\hLk{3A7}{7}\;\;\hLk{3A8}{8}\;\;\hLk{3A10}{10}\;\;\hLk{3A11}{11}\;\;\hLk{3A12}{12}\;\;\hLk{3A13}{13}\;\;|\;\;\hLk{3A4e10}{4E: 10,}\;\;\hLk{3A4e11}{11,}\;\;\hLk{3A4e17}{16}}{[1]: 5; [2]: 3, 4, 7, 8, 9, (4E 10), 10; [3]: 11, 12, 13, (4E 16); [4]: (4E 11).}
+\ChDecl{Ch3A}{3$\cdot$A}{}\orMode{\hLk{3A3}{3}\;\;\hLk{3A4}{4}\;\;\hLk{3A5}{5}\;\;\hLk{3A7}{7}\;\;\hLk{3A8}{8}\;\;\hLk{3A10}{10}\;\;\hLk{3A11}{11}\;\;\hLk{3A12}{12}\;\;\hLk{3A13}{13}\;\;|\;\;\hLk{3A4e10}{4E: 10,}\;\;\hLk{3A4e11}{11,}\;\;\hLk{3A4e17}{17}}{[1]: (4E 1.B.7), 5; [2]: 3, 4, 7, 8, 9, (4E 3.A.10), 10, 11, 12;$\\$[3]: 13, (4E 3.A.17), (4E 3.B.32); [4]: (4E 3.A.11).}
 
-\vspace{8pt}
+\vspace{3pt}
 
-\BulletPointX\Tips\,\,\, {\tgsl$T:V\rightarrow W$ is linear $\Longleftrightarrow\MathLeftrightMid{l}{\hspace{-4pt}$
-		(一) $\forall v,u\in V,T\Par{v+u}=Tv+Tu;\\\hspace{-4pt} $
-		(二) $\forall v,u\in V,\lambda\in\Fbb,T\Par{\lambda v}=\lambda\Par{Tv}.$
-		$}\Longleftrightarrow T\Par{v+\lambda u}=Tv+\lambda Tu$.}\par\vspace{6pt}
-\Blind{\BulletPointX\Tips\,\,\,} $T\in\Lm{V,W}\Longleftrightarrow T\in\Lm{V,\range T}.$ And $\Bra{T\in\Lm{V,W}:\range T\subseteq U}=\Lm{V,U}.$\par
+\BulletPointX\TipsN{1} \,\,\,$T:V\rightarrow W$ is linear $\Longleftrightarrow\MathLeftrightMid{l}{\hspace{-4pt}$
+(一) $\forall v,u\in V,T\Par{v+u}=Tv+Tu;\\\hspace{-4pt} $
+(二) $\forall v,u\in V,\lambda\in\Fbb,T\Par{\lambda v}=\lambda\Par{Tv}.$
+$}\Longleftrightarrow T\Par{v+\lambda u}=Tv+\lambda Tu.$\vspace{-10pt}
 \SepLine
 
-\ProblemB{
-	\TextB{Suppose $T\in\Lm{V,W}.$ Prove that $Tv\neq 0\Rightarrow v\neq 0.$}
-}Assume that $v=0.$ Then $Tv=T\Par{0}=T\Par{0\cdot 0}=0\cdot T\Par{0}=0.$\par
-\Blind{\Solution} \Or $T\Par{0}=T\Par{0+0}=T\Par{0}+T\Par{0}\Rightarrow T\Par{0}=0.$ Contradicts.\PfEnd
+\BulletPointX\TipsN{2} \,\,\,$T\in\Lm{V,W}\Longleftrightarrow T\in\Lm{V,\range T}.$
+\SepLine
+
+\BulletPointX\TipsN{3} \,\,\,If $U$ is a subsp of $W,$ then $\Bra{T\in\Lm{V,W}:\range T\subseteq U}=\Lm{V,U}.$
 \SepLine
 
 \ProblemBnoor{4E 1.B.7}{
@@ -645,30 +668,8 @@ Multiplication Identity: $\Par{1f}\Par{x}=1f\Par{x}=f\Par{x}.$ \BigPar{ \NOTICE 
 }
 \SepLine
 
-\ProblemB{
-	\TextB{Given the fact that $\Lm{V,W}$ is a vecsp. Prove or give a counterexample\hspace{1pt}$:$ $V,W$ are vecsps.}
-	\TextB{\envFontDefault\large We can guarantee that $\zeroSubs\subseteq\Lm{V,W},\zeroSubs\subseteq V,\zeroSubs\subseteq W.$}
-	\TextB{\envFontDefault\large And by [3.2], the additivity and homogeneity imply that $V$ is closed under add and scalar multi.}
-	\TextB{\envFontDefault\large\BigPar{ We cannot even guarantee that $W^V$ is a vecsp. }}
-}\par\quad
-(I) If $W^V=\zeroSubs.$ Then $\Lm{V,W}=\zeroSubs.$\par\quad\HI
-And $W=\zeroSubs,$ for if not, $\exists\,w\in W\backslash\zeroSubs,$ define a map $f$ by $f\Par{x}=w,\forall x\in V.$\par\quad\HI
-And $V$ might not be a vecsp. Example: \par\quad\EndI
-(II) If $W^V$ is a nonzero vecsp. Then $W$ is a vecsp.\par\quad\HII
-(a) If $\Lm{V,W}=\zeroSubs,$ then we cannot guarantee that $V$ is a vecsp.\par\quad\HII\Ha
-Example: \par\quad\HII
-(b) If not, then $\exists\;T\in\Lm{V,W},\,T\neq 0.$ Which means $\exists\,v\in V,Tv\neq 0\Rightarrow v\neq 0.$\par\quad\HII\Hb
-Then both $W$ and $V$ have a nonzero element.\par\quad\HII\Hb
-(i) If $\exists\,$ inje $T\in\Lm{V,W},$ then $T\Par{u+v}=\Par{v+u}\Rightarrow u+v=v+u.$ etc. Hence $V$ is a vecsp.\par\quad\HII\Ha\Endi
-(ii) If not, then we cannot guarantee that $V$ is a vecsp.\par\quad\HII\Hb\Hii
-Example: \par\quad\EndII
-(III) If $W^V$ is not a vecsp, then $W$ is not a vecsp. \par\quad\HIII
-Example: \par\quad
-\colorbox{yellow}{TODO}\PfEnd
-\SepLine\pagebreak
-
 \ProblemN{\hypertarget{3A3}{3}}{
-	\TextN{Suppose $T\in\Lm{\Fbb^n,\Fbb^m}$. Prove that $\exists\,A_{j,k}\in\Fbb\,$such that for any $\Par{x_1,\dots,x_n}\in\Fbb^n$}\hspace{-40pt}
+	\TextN{Suppose $T\in\Lm{\Fbb^n,\Fbb^m}$. Prove that $\exists\,A_{j,k}\in\Fbb\,$such that for any $\Par{x_1,\dots,x_n}\in\Fbb^n,$}\hspace{-40pt}
 	\TextN{\centerline{ $T\Par{x_1,\dots,x_n}=\MathLeftrightPare{l}{
 	A_{1,1}x_1+\dots+A_{1,n}x_n,\\
 	\Blind{A}\!\vdots\Blind{_{1}x_1+}\,\ddots\Blind{+A}\vdots\\
@@ -687,23 +688,21 @@ Let $T\Par{1,0,0,\dots,0,0}=\Par{A_{1,1},\dots,A_{m,1}},$\quad Note that $\Par{1
 \ProblemN{\hypertarget{3A7}{7}}{
 	\TextN{Show that every linear map from a one-dim vecsp to itself is a multi by some scalar.}
 	\TextN{More precisely, prove that if $\dim V = 1$ and $T\in\Lm{V}$, then $\exists\,\lambda\in\Fbb,Tv = \lambda v,\forall v\in V$.}
-}\par\quad
-Let $u$ be a nonzero vec in $V\Rightarrow V=\Span{u}$. Because $Tu\in V\Rightarrow Tu=\lambda u$ for some $\lambda$.\par\quad
-Suppose $v\in V\Rightarrow v=au,\,\exists\,!\,a\in\Fbb$. Then $Tv=T\Par{au}=\lambda au=\lambda v.$\PfEnd
+}Let $u$ be a nonzero vec in $V\Rightarrow V=\Span{u}$. Because $Tu\in V\Rightarrow Tu=\lambda u$ for some $\lambda$.\par
+\Blind{\Solution} Suppose $v\in V\Rightarrow v=au,\,\exists\,!\,a\in\Fbb$. Then $Tv=T\Par{au}=\lambda au=\lambda v.$\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{3A8}{8}}{
 	\TextN{Give a function $\varphi:\Rbb^2\rightarrow\Rbb$ such that $\forall a\in\Rbb,v\in\Rbb^2,\varphi\Par{av} = a\varphi\Par{v}$ but $\varphi$ is not linear.\vspace{4pt}}
-}Define $T\Par{x,y}=\MathLeftBrace{l}{x+y,$\,if $\Par{x,y}\in\Span{3,1},\\ 0,$\qquad otherwise.
-$}$ \Or Define $T\Par{x,y}=\sqrt[3]{\BigPar{x^3+y^3}}.$\PfEnd
+}Define $T\Par{x,y}=\MathLeftBrace{l}{x+y,\;\;\text{if }\Par{x,y}\in\Span{3,1},\\ 0,\hfill\text{otherwise}.
+}$ \quad\Or Define $T\Par{x,y}=\sqrt[3]{\BigPar{x^3+y^3}}.$\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{3A9}{9}}{
 	\TextN{Give a function $\varphi:\Cbb\rightarrow\Cbb$ such that $\forall w,z\in\Cbb,\varphi\Par{w + z} = \varphi\Par{w} + \varphi\Par{z}$}
 	\TextN{but $\varphi$ is not linear. \large(Here $\Cbb$ is thought of as a complex vecsp.)}
-}\par\quad
-Suppose $V_\Cbb$ is the complexification of a vecsp $V$. Suppose $\varphi:V_\Cbb\rightarrow V_\Cbb.$\par\quad
-Define $\varphi\Par{u+\i v}=u=\mathfrak{Re}\Par{u+\i v}$\quad\Or Define $\varphi\Par{u+\i v}=v=\mathfrak{Im}\Par{u+\i v}.$\PfEnd
+}Suppose $V_\Cbb$ is the complexification of a vecsp $V$. Suppose $\varphi:V_\Cbb\rightarrow V_\Cbb.$\par
+\Blind{\Solution} Define $\varphi\Par{u+\i v}=u=\mathfrak{Re}\Par{u+\i v}$\quad\Or Define $\varphi\Par{u+\i v}=v=\mathfrak{Im}\Par{u+\i v}.$\PfEnd
 \SepLine
 
 \ProblemB{
@@ -715,20 +714,20 @@ Because in general, $q\circ \Par{p_1+\lambda p_2}\Par{x}=q\Par{p_1\Par{x}+\lambd
 
 \ProblemN{\hypertarget{3A10}{10}}{
 	\TextNL{Suppose $U$ is a subsp of \,$V$ with $U\neq V$. Suppose $S\in\Lm{U,W}$ with $S\neq 0$}
-	\TextNL{( which means that $\exists\,u\in U,Su\neq 0$ ).\vspace{3pt}}
+	\TextNL{\BigPar{ which means that $\exists\,u\in U,Su\neq 0$ }.\vspace{3pt}}
 	\TextNL{Define $T: V\rightarrow W$ by $Tv=${\large\envFontDefault$\MathLeftBrace{l}{Sv$, if $v\in U,\\ 0$,\Blind{S} if $v\in V\backslash U$.$}$} Prove that $T$ is not a linear map on $V$.}
 }\par\quad
 Suppose $T$ is a linear map. And $v\in V\backslash U,\,\, u\in U$ such that $Su\neq 0$.\par\quad
 Then $v+u\in V\backslash U,$ \BigPar{ for if not, $v=\Par{v+u}-u\in U$ } while $T\Par{v+u}=0=Tv+Tu=0+Su\Rightarrow Su=0.$\par\quad
 Hence we get a contradiction.\PfEnd
-\SepLine\pagebreak
+\SepLine
 
 \ProblemN{\hypertarget{3A11}{11}}{
 	\TextNL{Suppose $U$ is a subsp of \,$V$ and $S\in\Lm{U,W}$.}
 	\TextNL{Prove that $\exists\,T\in\Lm{V,W},Tu = Su,\forall u\in U$. {\large\tgnr\envFontDefault\BigPar{ \Or $\exists\,T\in\Lm{V,W},T\mid_U=S.$ }}}
 	\TextNL{\large In other words, every linear map on a subsp of \,$V$ can be extended to a linear map on the entire $V$.}
 }Suppose $W$ is such that $V=U\oplus W.$ Then $\forall v\in V,\exists\,!\,u_v\in U,w_v\in W,v=u_v+w_v.$\par
-\Blind{\Solution} Define $T\in\Lm{V,W}$ by $T\Par{u_v+w_v}=Su_v.$\PfEnd\vspace{4pt}
+\Blind{\Solution} Define $T\in\Lm{V,W}$ by $T\Par{u_v+w_v}=Su_v.$\PfEnd\vspace{2pt}
 \Blind{\Solution} \Or [{\tgsl Finite-dim Req}]\;Define by $T\XPar{\sum_{i=1}^m a_i u_i}=\sum_{i=1}^n a_i Su_i.$ Let $B_V=\Par{\overbrace{u_1,\dots,u_n}^{B_U},\dots,u_m}.$\PfEnd
 \SepLine
 
@@ -737,9 +736,9 @@ Hence we get a contradiction.\PfEnd
 }\par\quad
 Let $\Par{v_1,\dots,v_n}$ be a basis of $V$. Let $\Par{w_1,\dots,w_m}$ be linely inde in $W$ for any $m\in\Nbp$.\par\quad
 Define $T_{x,y}:V\rightarrow W$ by $T_{x,y}\Par{v_z}=\delta_{z,x} w_y$, $\forall x\in\!\Bra{1,\dots,n},y\in\!\Bra{1,\dots,m}$, where $\delta_{z,x}=\MathLeftBrace{l}{
-0,\quad z\neq x,\\
-1,\quad z=x.}$\vspace{3pt}\par\quad
-$\forall v=\sum_{i=1}^n a_iv_i,\;u=\sum_{i=1}^n b_iv_i,\;\lambda\in\Fbb,T_{x,y}\Par{v+\lambda u}=\Par{a_x+\lambda b_x}v_y=T_{x,y}\Par{v}+\lambda T_{x,y}\Par{u}.$\vspace{3pt}\par\quad
+	0,\quad z\neq x,\\
+	1,\quad z=x.}$\vspace{-5pt}\par\quad
+{\normalsize$\forall v=\sum_{i=1}^n a_iv_i,\;u=\sum_{i=1}^n b_iv_i,\;\lambda\in\Fbb,T_{x,y}\Par{v+\lambda u}=\Par{a_x+\lambda b_x}v_y=T_{x,y}\Par{v}+\lambda T_{x,y}\Par{u}.$}\vspace{2pt}\par\quad
 Linearity checked. Now suppose $a_1 T_{x,1}+\dots+a_m T_{x,m}=0$.\par\quad
 Then $\Par{a_1 T_{x,1}+\dots+a_m T_{x,m}}\Par{v_x}=0=a_1 w_1+\dots+a_m w_m\Rightarrow a_1=\dots=a_m=0.$ 又 $m$ arbitrary.\par\quad
 Thus $\Par{T_{x,1},\dots,T_{x,m}}$ is a linely inde list in $\Lm{V,W}$ for any $x$ and length $m$. Hence by (2.A.14).\PfEnd
@@ -751,9 +750,9 @@ Thus $\Par{T_{x,1},\dots,T_{x,m}}$ is a linely inde list in $\Lm{V,W}$ for any $
 }\par\quad
 We prove by contradiction. By linear dependence lemma, $\exists\,j\in\!\Bra{1,\dots,m},v_j\in\Span{v_1,\dots,v_{j-1}}$.\par\quad
 Fix $j$. Let $w_j\neq 0$, while $w_1=\dots=w_{j-1}=w_{j+1}=w_m=0.$\par\quad
-Define $T$ by $Tv_k=w_k$ for all $k$. Suppose $a_1 v_1+\dots+a_m v_m=0$ ( where $a_j\neq 0$ ).\par\quad
+Define $T$ by $Tv_k=w_k$ for each $k$. Suppose $a_1 v_1+\dots+a_m v_m=0$ ( where $a_j\neq 0$ ).\par\quad
 Then $T\BigPar{a_1 v_1+\dots+a_m v_m}=0=a_1 w_1+\dots+a_m w_m=a_j w_j$ while $a_j\neq 0$ and $w_j\neq 0.$ Contradicts.\PfEnd\vspace{6pt}\quad
-\Or \;{We prove the contrapositive: Suppose $\forall w_1,\dots,w_m\in W,\exists\,T\in\Lm{V,W},Tv_k=w_k$  for each $w_k.$}\par\quad
+\Or We prove the contrapositive: Suppose $\forall w_1,\dots,w_m\in W,\exists\,T\in\Lm{V,W},Tv_k=w_k$  for each $w_k.$\par\quad
 {Now we show that $\Par{v_1,\dots,v_n}$ is linely inde. Suppose {$\exists\,a_i\in\Fbb,a_1 v_1+\dots+a_n v_n=0$}.}\vspace{2pt}\par\quad
 {Choose one $w\in W\backslash\envFontDefault\zeroSubs.$ By assumption, for {$\BigPar{\overline{a_1}w,\dots,\overline{a_m}w},\exists\,T\in\Lm{V,W},Tv_k=\overline{a_k}w$} for each $v_k$.}\vspace{2pt}\par\quad
 {Now we have {$ 0=T\XPar{\sum_{k=1}^m a_k v_k}=\sum_{k=1}^m a_k Tv_k=\sum_{k=1}^m a_k\overline{a_k}w=\XPar{\sum_{k=1}^m \aMid{a_k}{^2}}w$}.}\par\quad
@@ -775,16 +774,17 @@ Then $T\BigPar{a_1 v_1+\dots+a_m v_m}=0=a_1 w_1+\dots+a_m w_m=a_j w_j$ while $a_
 \SepLine
 
 \ProblemBnoor{4E 3.B.32}{
+	\TextB{}
 	\hypertarget{3B4e32}{}\TextB{Suppose $V$ is finite-dim with $n=\dim V > 1$.}
 	\TextB{Show that if $\varphi:\Lm{V}\rightarrow\Fbb$ is linear and $\forall S,T\in\Lm{V},\varphi\Par{ST} = \varphi\Par{S}\cdot\varphi\Par{T}$, then $\varphi = 0$.}
 }\par\quad
-Using notations in (4E 3.A.16). Using the result in \NOTEFOR\;[3.60].\vspace{2pt}\par\quad
+Using notations in (4E 3.A.17). Using the result in \NOTEFOR\;[3.60].\vspace{2pt}\par\quad
 {Suppose $\varphi\neq 0\Rightarrow\exists\,i,j\in\Bra{1,\dots,n},\,\varphi\Par{R_{i,j}}\neq 0$. \envFontLarge Because {\Large\vspace{4pt}$R_{i,j}=R_{x,j}\circ R_{i,x},\,\,\forall x=1,\dots,n$}}\par\quad
 {\Large\vspace{4pt}$\Rightarrow\varphi\Par{R_{i,j}}=\varphi\Par{R_{x,j}}\cdot\varphi\Par{R_{i,x}}\neq 0\Rightarrow\varphi\Par{R_{x,j}}\neq 0$ {\large and} $\varphi\Par{R_{i,x}}\neq 0.$}\par\quad
 {\vspace{4pt}Again, because {\Large$R_{i,x}=R_{y,x}\circ R_{i,y},\,\,\forall y=1,\dots,n.$} \;Thus {\Large$\varphi\Par{R_{y,x}}\neq 0,\;\forall x,y=1,\dots,n$}.}\par\quad
 {Let $k\neq i,j\neq l$ and then {\Large\vspace{4pt}$\varphi\Par{R_{i,j}\circ R_{l,k}}=\varphi\Par{R_{l,k}\circ R_{i,j}}=\varphi\Par{0}=0=\varphi\Par{R_{l,k}}\cdot\varphi\Par{R_{i,j}}$}}\par\quad
 {\vspace{4pt}{\Large$\Rightarrow\varphi\Par{R_{l,k}}=0$} or {\Large$\varphi\Par{R_{i,j}}=0$}. Contradicts.\PfEnd}\par\vspace{10pt}\quad
-\envFontDefault\Or {Note that by (4E 3.A.16), $\exists\,S,T\in\Lm{V},ST-TS\neq 0.$}\par\quad
+\envFontDefault\Or {Note that by (4E 3.A.17), $\exists\,S,T\in\Lm{V},ST-TS\neq 0.$}\par\quad
 {Then $\varphi\Par{ST-TS}=\varphi\Par{S}\varphi\Par{T}-\varphi\Par{T}\varphi\Par{S}=0\Rightarrow ST-TS\in\null\varphi\neq\zeroSubs.$}\par\quad
 {Note that $\forall\,E\in\null\varphi,T\in\Lm{V},\varphi\Par{ET}=\varphi\Par{TE}=0\Rightarrow ET,TE\in\null\varphi.$}\par\quad
 {Hence $\null\varphi$ is a nonzero two-sided ideal of $\Lm{V}.$}\PfEnd
@@ -813,7 +813,37 @@ Define $S\in\Lm{V}$ by $S\Par{av+bTv+c_1 u_1+\dots+c_n u_n}=bv\Rightarrow S\Par{
 \Blind{\Or \;}{\vspace{6pt}Define {\Large$\envFontSmall[\small]A^{\Par{j,k}}\in\Lm{V}$} by {\Large$\envFontSmall[\small]A^{\Par{j,k}}v_j=v_k,A^{\Par{j,k}}v_k=v_j,A^{\Par{j,k}}v_x=0,x\neq j,k$}.}\par\quad
 \Blind{\Or \;}{\vspace{4pt}Then {\Large$\envFontSmall[\small]A^{\Par{j,k}}Tv_j=TA^{\Par{j,k}}v_j=Tv_k=a_kv_k;\;\envFontSmall[\small]A^{\Par{j,k}}Tv_j=A^{\Par{j,k}}a_jv_j=a_jA^{\Par{j,k}}v_j=a_jv_k.$}}\par\quad
 \Blind{\Or \;}{Hence $a_k=a_j.$ Thus $a_k$ is independent of $v_k.$}\PfEnd
-\SepLine\ChEnd
+\SepLine
+
+%\ProblemB{
+	%	\TextB{Suppose $T\in\Lm{V,W}.$ Prove that $Tv\neq 0\Rightarrow v\neq 0.$}
+	%}Assume that $v=0.$ Then $Tv=T\Par{0}=T\Par{0\cdot 0}=0\cdot T\Par{0}=0.$\par
+%\Blind{\Solution} \Or $T\Par{0}=T\Par{0+0}=T\Par{0}+T\Par{0}\Rightarrow T\Par{0}=0.$ Contradicts.\PfEnd
+%\SepLine
+
+%\ProblemB{
+%		\TextB{Given the fact that $\Lm{V,W}$ is a vecsp. Prove or give a counterexample\hspace{1pt}$:$ $V,W$ are vecsps.}
+%		\TextB{\envFontDefault\large We can guarantee that $\zeroSubs\subseteq\Lm{V,W},\zeroSubs\subseteq V,\zeroSubs\subseteq W.$}
+%		\TextB{\envFontDefault\large And by [3.2], the additivity and homogeneity imply that $V$ is closed under add and scalar multi.}
+%		\TextB{\envFontDefault\large\BigPar{ We cannot even guarantee that $W^V$ is a vecsp. }}
+%	}\par\quad
+%(I) If $W^V=\zeroSubs.$ Then $\Lm{V,W}=\zeroSubs.$\par\quad\HI
+%And $W=\zeroSubs,$ for if not, $\exists\,w\in W\backslash\zeroSubs,$ define a map $f$ by $f\Par{x}=w,\forall x\in V.$\par\quad\HI
+%And $V$ might not be a vecsp. Example: \par\quad\EndI
+%(II) If $W^V$ is a nonzero vecsp. Then $W$ is a vecsp.\par\quad\HII
+%(a) If $\Lm{V,W}=\zeroSubs,$ then we cannot guarantee that $V$ is a vecsp.\par\quad\HII\Ha
+%Example: \par\quad\HII
+%(b) If not, then $\exists\;T\in\Lm{V,W},\,T\neq 0.$ Which means $\exists\,v\in V,Tv\neq 0\Rightarrow v\neq 0.$\par\quad\HII\Hb
+%Then both $W$ and $V$ have a nonzero element.\par\quad\HII\Hb
+%(i) If $\exists\,$ inje $T\in\Lm{V,W},$ then $T\Par{u+v}=\Par{v+u}\Rightarrow u+v=v+u.$ etc. Hence $V$ is a vecsp.\par\quad\HII\Ha\Endi
+%(ii) If not, then we cannot guarantee that $V$ is a vecsp.\par\quad\HII\Hb\Hii
+%Example: \par\quad\EndII
+%(III) If $W^V$ is not a vecsp, then $W$ is not a vecsp. \par\quad\HIII
+%Example: \par\quad
+%\colorbox{yellow}{TODO}\PfEnd
+%\SepLine
+
+\ChEnd
 
 %\ProblemB[]{
 %	\Tips\,\,\,\TextB{Define $\delta_{j,k}=\MathLeftBrace{l}{0,\quad j\neq k,\\1,\quad j=k.}\MathLeftMid{l}{$
@@ -1815,9 +1845,9 @@ Define $\Psi\in\Lm[\BigPar]{V,\Lm{\Fbb, V}}$ by $\Psi\Par{v}=\Psi_v;$ where $\Ps
 \ProblemB{
 	\hypertarget{3D4e20}{}\TextB{Suppose $q\in\PoR{}$. Prove that $\exists\,p\in\PoR{},q\Par{x} = \Par{x^2 + x}p\apostrophe\apostrophe\Par{x} + 2xp\apostrophe\Par{x} + p\Par{3}.$}
 }\par\quad
-Note that $\deg\Sbra{\Par{x^2 + x}p\apostrophe\apostrophe\Par{x} + 2xp\apostrophe\Par{x} + p\Par{3}}=\deg p.$\par\quad
+Note that $\Deg\Sbra{\Par{x^2 + x}p\apostrophe\apostrophe\Par{x} + 2xp\apostrophe\Par{x} + p\Par{3}}=\deg p.$\par\quad
 Define $T_n:\PoR{n}\rightarrow\PoR{n}$ by $T_n\Par{p}=\Par{x^2 + x}p\apostrophe\apostrophe\Par{x} + 2xp\apostrophe\Par{x} + p\Par{3}.$ Then $T_n\in\Lm[\BigPar]{\PoR{n}}$.\par\quad
-And note that $T_n\Par{p}=0\Rightarrow\deg\Par{T_n p}=-\infty=\deg p\Rightarrow p=0.$ Thus $T_n$ is inv.\par\quad
+And note that $T_n\Par{p}=0\Rightarrow\Deg\Par{T_n p}=-\infty=\deg p\Rightarrow p=0.$ Thus $T_n$ is inv.\par\quad
 $\forall q\in\PoR{},$ if $q=0,$ let $m=0;$ if $q\neq 0,$ let $m=\deg q,$ we have $q\in\PoR{m}.$\par\quad
 Hence $\exists\,p\in\PoR{m}, q\Par{x}=T_m\Par{p}=\Par{x^2 + x}p\apostrophe\apostrophe\Par{x} + 2xp\apostrophe\Par{x} + p\Par{3}$ for all $x\in\Rbb.$\PfEnd
 \SepLine
