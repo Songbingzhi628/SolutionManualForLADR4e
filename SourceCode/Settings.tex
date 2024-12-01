@@ -183,8 +183,10 @@
 %}
 
 %{ 关于常用标识的便捷指令
-\def\nRightarrow{\Rightarrow\!\!\!\!\!\!\!/\,\,\,\,\,}
-\def\nLeftarrow{\Leftarrow\!\!\!\!\!\!\!/\,\,\,\,\,}
+
+\newcommand{\Frac}[2]{{\displaystyle{\frac{#1}{#2}}}}
+\def\notRightarrow{\Rightarrow\!\!\!\!\!\!\!/\,\,\,\,}%\hspace{-13.5pt}/\hspace{7.5pt}}
+\def\notLeftarrow{\Leftarrow\hspace{-13.5pt}/\hspace{7.5pt}}
 \def\Nbb{{\mathbb{N}}}
 \def\Zbb{{\mathbb{Z}}}
 \def\Qbb{{\mathbb{Q}}}
@@ -192,7 +194,7 @@
 \def\Rbb{{\mathbb{R}}}
 \def\Cbb{{\mathbb{C}}}
 \def\Nbp{{\mathbb{N}^+}}
-\def\mid{\text{\envFontA|}}
+\def\mmid{\text{\envFontA|}}
 \def\d{{\textup{\tgnr d}}}
 \def\i{{\textup{\tgnr i}}}
 %\def\dim{{\textup{\tgnr dim}}\,}
