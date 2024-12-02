@@ -1,6 +1,8 @@
-% Copyright (C) <2024>  <Songbingzhi628>
+% 本文件是 SolusMan-LADR4e 的一部分。
 %
-% This program is free software: you can redistribute it and/or modify
+% Copyright (C) 2024 Songbingzhi628
+%
+% SolusMan-LADR4e is free software: you can redistribute it and/or modify
 % it under the terms of the GNU Affero General Public License as
 % published by the Free Software Foundation, either version 3 of the
 % License, or any later version.
@@ -20,15 +22,24 @@
 \includeonly{Ch123,Ch45}
 
 \begin{document}
+\small
+\centerline{\large 本文件是 SolusMan-LADR4e 的二进制版本。}\par
+Copyright (C) 2024 Songbingzhi628. Email: 13012057210@163.com.\;\;\; Under \href{run:./COPYING}{GNU Affero General Public License.}\par
+SolusMan-LADR4e is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General\par
+Public License as published by the Free Software Foundation, either version 3 of the License, or any later version.\par
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License\par
+for more details. You should have received a copy of the GNU Affero General Public License along with this program. If not, see <https://www.gnu.org/licenses/>.\par
+\SepLine
+
 \begin{large}
 
 {\centerline{\Large 简介}\vspace{4pt}\par
-{\normalsize 这是我个人用于复习的「 {\tgsl Linear Algebra Done Right 4E, by Sheldon Axler} 」笔记，一本习题选答与课文补注。因为使用中文会给我编撰这份笔记带来额外的中英文输入法切换的工作成本，况且对于专业学习者，直接使用英文不会造成任何困扰。但英文词句的冗长性拖慢我复习的效率，所以我对许多常用术语作了简写。这份笔记的内容范围和标识说明，我已经在\href{run:./README.md}{自述}中写得很清楚，不再赘述。这份笔记尚处于缓慢的编撰进度中。}\par\vspace{-6pt}
+{\normalsize 这是我个人用于复习的「 {\tgsl Linear Algebra Done Right 4E, by Sheldon Axler} 」笔记，一本习题选答与课文补注。因为使用中文会给我编撰这份笔记带来额外的中英文输入法切换的工作成本，况且对于专业学习者，直接使用英文不会造成任何困扰。但英文词句的冗长性拖慢我复习的效率，所以我对许多常用术语作了简写。这份笔记的内容范围和标识说明，我已经在\href{run:./README.md}{自述}中写得很清楚，不再赘述。这份笔记尚处于缓慢的编撰进度中。}\par
 
 
 \begin{center}
 
-Goto\vspace{8pt}\par
+{\Large Goto}\vspace{8pt}\par
 
 % To see this cleaner, type Ctrl+- a few times.
 \begin{tabular}{ c c c c c | c c c c c }
@@ -44,38 +55,26 @@ Goto\vspace{8pt}\par
 \hline
 \end{tabular}
 
-\vspace{14pt}
-Abbreviation Table\vspace{8pt}\par
-\begin{tabularx}{0.60\textwidth} { 
+\vspace{24pt}
+{\Large Abbreviation Table}\vspace{8pt}\par
+\!\!\!\!\!\!\!\!\!\!\!\!\!\!\begin{tabularx}{1.1\textwidth} { 
 		| c |
+		| >{\raggedright\arraybackslash}X | c |
 		| >{\raggedright\arraybackslash}X| }
 	\hline
-def&			definition\\
-vec&			vector\\
-vecsp&			vector space\\
-subsp&			subspace\\
-add&			addition/additive\\
-multi&			multiplication/multiplicative/multiple\\
-assoc&			associative/associativity\\
-distr&			distributive properties/property\\
-inv&			inverse\\
-existns&		existence\\
-uniqnes&		uniqueness\\
-linely inde&	linearly independent/independence\\
-linely dep&		linearly dependent/dependence\\
-dim&			dimension(al)\\
-inje&			injective\\
-surj&			surjective\\
-col&			column\\
-with resp&		with respect\\
-standard basis& std basis\\
-iso&			isomorphism/isomorphic\\
-correspd&		correspond(ing)\\
-poly&			polynomial\\
-eigval&			eigenvalue\\
-eigvec&			eigenvector\\
-mini poly&		minimal polynomial\\
-char poly&		characteristic polynomial\\\hline
+def&			definition & vec&			vector\\
+vecsp&			vector space & subsp&			subspace\\
+add&			addition/additive & multi&			multiplication/multiplicative/multiple\\
+assoc&			associative/associativity & distr&			distributive properties/property\\
+inv&			inverse & existns&		existence\\
+uniqnes&		uniqueness & linely inde&	linearly independent/independence\\
+linely dep&		linearly dependent/dependence & dim&			dimension(al)\\
+inje&			injective & surj&			surjective\\
+col&			column & with resp&		with respect\\
+standard basis& std basis & iso&			isomorphism/isomorphic\\
+correspd&		correspond(ing) & poly&			polynomial\\
+eigval&			eigenvalue & eigvec&			eigenvector\\
+mini poly&		minimal polynomial & char poly&		characteristic polynomial\\\hline
 \end{tabularx}
 \end{center}
 
