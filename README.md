@@ -1,10 +1,10 @@
 # 关于该仓库的声明：
 
 我上传这些资料，旨在和广大学习者自由交流讨论。
-该库文件中，至少包括**SolusMan-LADR4e.pdf**文件和**SourceCode**目录下的所有文件，是在**GNU AGPLv3**条款约束下的：严禁任何人，以任何名义，妨碍任何人，自由 使用、修改、复制、上传、发布这些内容。具体见**LICENSE**。
+该库文件中，至少包括**SolusMan-LADR4e.pdf**和**SourceCode**目录下的.png、.jpg文件，是在**GNU FDL v1.3**条款约束下的；至少包括**SourceCode**目录下的**SolusMan-LADR4e.tex**、**Ch123.tex**、**Ch45.tex**、**Settings.tex**和.ggb文件，是在**GNU AGPLv3**条款约束下的：严禁任何人，以任何名义，妨碍任何人，自由 使用、修改、复制、上传、发布这些内容。具体皆见**COPYING**。关于我设此的缘由，见末尾。
 
-##### 该仓库是GitHub与Gitee双向同步的；这是因为对国人来说，访问Gitee比访问GitHub容易。
-##### 关于LICENSE选用：之前用过GPL，所以不能转成GFDL。又考虑到一些人仍然可以通过云端网络内嵌的方式让我提供的东西变得不自由，我使用AGPL；但我必须试图说服我自己，该仓库的（除**LADR2eSolutions（By Axler）.pdf**和**LADR4eSolutions经典最全（By Axler？）.pdf**，这些只能是文档，不受这里LICENSE的约束）文件，要么是源码，要么是二进制程序。例如.ggb文件可视作一个在Geogebra系统中运行并开发的小程序，根据.ggb开发出的.png也算是一个衍生程序，而不是文档；SolusMan-LADR4e.pdf可视作在一个二进制发布，而不是文档。
+> 该仓库是GitHub与Gitee双向同步的；这是因为对国人来说，访问Gitee比访问GitHub容易。
+
 
 ---
 
@@ -14,9 +14,13 @@
 
 这个文件夹包含ttf和otf字体文件、tex源代码、引用的png、jpg图片、.ggb文件。这些文件用于生成**SolusMan-LADR4e.pdf**。主要就是，用**TeXstudio**, **Texmaker**或者其他IDE，亦或者编译器，编译**SolusMan-LADR4e.tex**，输出PDF二进制版本。
 
+> 该目录下的.ttf和.otf字体文件也在类似的GNU条款约束下。
+
 为了更高的实时编译效率，我将代码架构为 **Settings**（Settings.tex）、**Chxxx**（Ch123.tex、Ch45.tex）、**Main**（SolusMan-LADR4e.tex）。
 
 ### **SolusMan-LADR4e.pdf**
+
+##### Licensed under GNU FDL v1.3.
 
 这是我整理的*Linear Algebra Done Right, 4th/3rd E* 的习题答案和课文补注。范围覆盖所有第三版和第四版的课文和习题（除了第一章A节、极少数结合上下文太过显而易见的习题、没有任何日后反复推敲价值的“当堂习题”和方法套路过于雷同的习题）。
 - 习题答案中，有我完全独立思考得出的，有抄 <https://linearalgebras.com/> 的, 有抄 <https://math.stackexchange.com/> 的, 有抄*LADR2eSolutions（By Axler）.pdf*，有抄最新的*LADR4eSolutions经典最全（By Axler？）.pdf*，还有请教别人，乃至请教AI得出来的。
@@ -30,18 +34,20 @@
 
 ### **LADR2eSolutions（By Axler）.pdf**
 
-这个文件与我无关，也不受这里**LICENSE**的限制，我仅仅是从<https://epdf.tips/queue/linear-algebra-done-right-solutions-manual.html>（还有很多网站可以下载，搜索关键词'*linear algebra done right solutions manual*'就行）上下载过来改了文件名又传到这里。内有指明版权，允许修改、概述和分发。
+这个文件与我无关，也不受这里**COPYING**的限制，我仅仅是从<https://epdf.tips/queue/linear-algebra-done-right-solutions-manual.html>（还有很多网站可以下载，搜索关键词'*linear algebra done right solutions manual*'就行）上下载过来改了文件名又传到这里。内有指明版权，允许修改、概述和分发。
 
 ### **LADR4eSolutions经典最全（By Axler？）.pdf**
 
 所见即所得，我认为这本答案中的思路和方法非常经典、非常贴合原书，与*LADR2eSolutions（By Axler）.pdf*的答案风格非常相近，这两本答案都比<https://linearalgebras.com/>上的答案更胜一筹。
-这个文件与我无关，也不受这里**LICENSE**的限制，我仅仅是从<https://lew98.github.io>那里下载过来改了下文件名又传到这里；疑似是 Sheldon Axler 教授所作，或者是他的学生所作，亦或者是共同完成，尽管这份文件没有在<https://linear.axler.net>上。
+这个文件与我无关，也不受这里**COPYING**的限制，我仅仅是从<https://lew98.github.io>那里下载过来改了下文件名又传到这里；疑似是 Sheldon Axler 教授所作，或者是他的学生所作，亦或者是共同完成，尽管这份文件没有在<https://linear.axler.net>上。
 然而里面没有明确版权，默认为**Public Domain**。
 
 > 这份习题答案中，截止目前，我发现的错误有：
 > - 第4章14题第(a)问，
 > 
 > - ······
+
+---
 
 ### **MyConfigures**
 
@@ -58,3 +64,13 @@
 > sudo apt install texstudio
 
 即可。其他系统下，差不多也就 texlive、xetex、中文语言包、texstudio 这些。
+
+---
+
+###### 我为什么要设一个LICENSE（COPYING）？并不是因为我刻意要干涉别人什么，例如干涉别人“盗取”我“著作权”的权利；在这片神奇的土地上，我可没有能力追究这些。而是为了在确保我分享这些资料的同时不会招致针对我的各种形式的控诉，仅此而已。我愿称此为“防御性条款”。
+
+#### 毕竟，我可不想在我拿着我亲手写出来的东西分享到网上并和别人讨论时，被一个不知道哪里冒出来的人指控我盗取了他的东西，并设法让我摊上麻烦。
+
+##### 额外地，我希望每个有能力修改再分发我编撰的资料的人都能遵守/延续这里的条款。我在此不鼓励任何人在修改这些资料后将修改的版本变成闭源、专有的软件/文档，从而阻碍别人自由分享和修改。
+
+> 关于LICENSE选用：之前用过GPL，所以不能全部转成GFDL，只能为**SolusMan-LADR4e.pdf**和**.ggb**文件应用GFDL。又考虑到一些人仍然可以通过云端网络内嵌代码的方式让我提供的东西变得不自由，我使用AGPL。
