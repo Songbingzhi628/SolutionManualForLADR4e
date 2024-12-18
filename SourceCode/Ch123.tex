@@ -291,7 +291,7 @@ Then $a_1+\dots+a_m\neq 0$, for if not, $a_1 v_1+\dots+a_m v_m=0$ while $a_i\neq
 \Or By contrapositive: Prove that $w\not\in\Span{v_1,\dots,v_m}\Longrightarrow\Par{v_1+w,\dots,v_m+w}$ is linely inde.\par\quad
 Suppose $a_1\Par{v_1+w}+\dots+a_m\Par{v_m+w}=0\Rightarrow a_1v_1+\dots+a_mv_m=-\Par{a_1+\dots+a_m}w.$\par\quad
 Now by assumption, $a_1+\dots+a_m=0.$ Then $a_1v_1+\dots+a_mv_m=0\Rightarrow a_1=\dots=a_m=0.$\PfEnd\vspace{2pt}\quad
-\Or $\exists\,j\in\!\Bra{1,\dots,m},v_j+w\in\Span{v_1+w,\dots,v_{j-1}+w}.$ If $j=1$ then $v_1+w=0$ and we are done.\par\quad
+\Or $\exists\,j\in\Bra{1,\dots,m},v_j+w\in\Span{v_1+w,\dots,v_{j-1}+w}.$ If $j=1$ then $v_1+w=0$ and we are done.\par\quad
 If $j\geqslant 2,$ then $\exists\,a_i\in\Fbb,v_j+w=a_1\Par{v_1+w}+\dots+a_{j-1}\Par{v_{j-1}+w}\Longleftrightarrow v_j+\lambda w=a_1 v_1+\dots+a_{j-1}v_{j-1}.$\par\quad
 Where $\lambda=1-\Par{a_1+\dots+a_{j-1}}.$ Note that $\lambda\neq 0,$ for if not, $v_j+\lambda w=v_j\in\Span{v_1,\dots,v_{j-1}},$ contradicts.\par\quad
 Now $w=\lambda^{-1}\Par{a_1 v_1+\dots+a_{j-1}v_{j-1}-v_j}\Rightarrow w\in\Span{v_1,\dots,v_m}.$\PfEnd
@@ -338,7 +338,7 @@ Hence $f_{m+1}\not\in\Span{f_1,\dots,f_m}.$ By Problem (14).\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{2A17}{17}}{
-	\TextNL{Suppose $p_0,p_1,\dots,p_m\in\PoF{m}$ such that $p_k\Par{2}=0$ for each $k\in\!\Bra{0,\dots,m}$.}
+	\TextNL{Suppose $p_0,p_1,\dots,p_m\in\PoF{m}$ such that $p_k\Par{2}=0$ for each $k\in\Bra{0,\dots,m}$.}
 	\TextNL{Prove that $\Par{p_0,p_1,\dots,p_m}$ is not linely inde in $\PoF{m}$.}
 }\par\quad
 Suppose $\Par{p_0,p_1,\dots,p_m}$ is linely inde. Define $p\in\PoF{m}$ by $p\Par{z}=z.$\par\quad
@@ -429,7 +429,7 @@ The key point is, how can we guarantee that such a $“$list$”$ exists?\TextB{
 \ProblemN{\hypertarget{2C15}{15}}{
 	\TextNL{Suppose $V$ is finite-dim and $\dim V=n\geqslant 1.$}
 	\TextNL{Prove that $\exists$ one-dim subsps $V_1,\dots,V_n$ of $V$ such that $V=V_1\oplus \dots\oplus V_n.$}
-}Suppose $B_V=\Par{v_1,\dots,v_n}.$ Define $V_i$ by $V_i=\Span{v_i}$ for each $i\in\!\Bra{1,\dots,n}.$\par
+}Suppose $B_V=\Par{v_1,\dots,v_n}.$ Define $V_i$ by $V_i=\Span{v_i}$ for each $i\in\Bra{1,\dots,n}.$\par
 \Blind{\Solution} Then $\forall v\in V,\exists\,!\,a_i\in\Fbb,v=a_1 v_1+\dots+a_n v_n\Rightarrow\exists\,!\,u_i\in V_i,v=u_1+\dots+u_n$\PfEnd
 %\Blind{\Solution} \Blind{Then $\forall v\in$}\hspace{3pt}
 \SepLine
@@ -782,7 +782,7 @@ while $T\Par{v+u}=0=Tv+Tu=0+Su\Rightarrow Su=0.$ Contradicts.\PfEnd
 	\TextNL{Suppose nonzero $V$ is finite-dim and $W$ is infinite-dim. Prove that $\Lm{V,W}$ is infinite-dim.}
 }Using (2.A.14).\par\quad
 Let $B_V=\Par{v_1,\dots,v_n}$ be a basis of $V.$ Let $\Par{w_1,\dots,w_m}$ be linely inde in $W$ for any $m\in\Nbp.$\par\vspace{-2pt}\quad
-Define $T_{x,y}:V\rightarrow W$ by $T_{x,y}\Par{v_z}=\delta_{z,x} w_y$, $\forall x\in\!\Bra{1,\dots,n},y\in\!\Bra{1,\dots,m}$, where $\delta_{z,x}=\MathLeftBrace{l}{
+Define $T_{x,y}:V\rightarrow W$ by $T_{x,y}\Par{v_z}=\delta_{z,x} w_y$, $\forall x\in\Bra{1,\dots,n},y\in\Bra{1,\dots,m}$, where $\delta_{z,x}=\MathLeftBrace{l}{
 	0,\quad z\neq x,\\
 	1,\quad z=x.}$\vspace{-5pt}\par\quad
 {\normalsize$\forall v=\sum_{i=1}^n a_iv_i,\;u=\sum_{i=1}^n b_iv_i,\;\lambda\in\Fbb,T_{x,y}\Par{v+\lambda u}=\Par{a_x+\lambda b_x}w_y=T_{x,y}\Par{v}+\lambda T_{x,y}\Par{u}.$}\vspace{2pt}\par\quad
@@ -795,7 +795,7 @@ Thus $\Par{T_{x,1},\dots,T_{x,m}}$ is a linely inde list in $\Lm{V,W}$ for any $
 	\TextNL{Suppose $\Par{v_1,\dots,v_m}$ is linely depe in $V$ and $W\neq\zeroSubs$.}
 	\TextNL{Prove that $\exists\,w_1,\dots,w_m\in W,\not\exists\,T\in\Lm{V,W}$ such that $Tv_k=w_k,\forall k = 1,\dots,m$.}
 }\par\quad
-We prove by contradiction. By linear dependence lemma, $\exists\,j\in\!\Bra{1,\dots,m},v_j\in\Span{v_1,\dots,v_{j-1}}$.\par\quad
+We prove by contradiction. By linear dependence lemma, $\exists\,j\in\Bra{1,\dots,m},v_j\in\Span{v_1,\dots,v_{j-1}}$.\par\quad
 Fix $j$. Let $w_j\neq 0$, while $w_1=\dots=w_{j-1}=w_{j+1}=w_m=0.$ Define $T\in\Lm{V,W}$ by $Tv_k=w_k$ for each $k.$\par\quad
 Suppose $a_1 v_1+\dots+a_m v_m=0,$ where $a_j\neq 0.$\par\quad
 Then $T\BigPar{a_1 v_1+\dots+a_m v_m}=0=a_1 w_1+\dots+a_m w_m=a_j w_j$ while $a_j\neq 0$ and $w_j\neq 0.$ Contradicts.\PfEnd\vspace{6pt}\quad
@@ -1091,7 +1091,7 @@ Let $\mathcal{K}=\Span{Pv_1,\dots,Pv_n}\Rightarrow V=\mathcal{K}\oplus\null P^2.
 }\par\quad
 (a) Suppose $\exists\,S\in\Lm{W,V},\,\,ST=I$. Then if $Tv=0\Rightarrow ST\Par{v}=0=v.$ \Or $\null T\subseteq\null ST=\zeroSubs.$\par\quad
 (b) Suppose $T$ is inje. Let $R=B_{\range T}=\Par{Tv_1,\dots,Tv_n}$. Then $\mathcal{K}_R\oplus\null T=V$. Let $U\oplus\range T=W$.\par\quad\Hb
-Define $S\in\Lm{W,V}$ by $S\Par{Tv_i}=v_i$ and $Su=0,$ where $i\in\!\Bra{1,\dots,n},u\in U.$ Thus $ST=I.$\par\vspace{6pt}\quad\Hb
+Define $S\in\Lm{W,V}$ by $S\Par{Tv_i}=v_i$ and $Su=0,$ where $i\in\Bra{1,\dots,n},u\in U.$ Thus $ST=I.$\par\vspace{6pt}\quad\Hb
 \Or Define $S\in\Lm{\range T,V}$ by $Sw=T^{-1}w,$ {\tgsl where $T^{-1}$ is the inv of $T\in\Lm{V,\range T}.$}\par\quad\Hb
 Then extend it to $S\in\Lm{W,V}$ by (3.A.11). Now $\forall v\in V,STv=T^{-1}Tv=v.$\PfEnd
 \SepLine
@@ -1424,8 +1424,8 @@ If $A_{1,\cdot}=0,$ then let $B_V=\Par{u_1,\dots,u_n},$ we are done.\par\quad
 Otherwise, $\begin{pmatrix} A_{1,1} & \cdots & A_{1,m}\end{pmatrix}\neq 0$, choose one $A_{1,k}\neq 0$.\vspace{4pt}\par\quad
 Let $v_1=\Frac{u_k}{A_{1,k}};$ \vspace{-15pt}\AlignEq{}{v_j&=u_{j-1}-A_{1,j-1}v_1\;\;\text{ for }j=2,\dots,k;\hspace{150pt}\\v_i&=u_i-A_{1,i} v_1\qquad\;\text{ for }i=k+1,\dots,n.}\vspace{0pt}\par\quad
 Now because each $u_k\in\Span{v_1,\dots,v_n}\Rightarrow V=\Span{v_1,\dots,v_n},B_V=\Par{v_1,\dots,v_n}.$\vspace{6pt}\par\quad
-And $Tv_1=T\Par{\Frac{u_k}{A_{1,k}}}=\Frac{1}{A_{1,k}}\Par{A_{1,k}w_1+\dots+A_{n,k}w_n}=1w_1+\dots+\Frac{A_{n,k}}{A_{1,k}}w_n.$\par\quad
-\vspace{15pt}\AlignEq{}{\forall j\in\underset{\qquad\quad\overset{\uwave{\quad\qquad\qquad\qquad}}{\quad\;\;i\,\in\,\Bra{k+1,\dots,n}\quad}}{\Bra{2,\dots,k,{k+2,\dots,n+1}}},\;Tv_j=T\Par{u_{j-1}-A_{1,j-1}v_1}=Tu_{j-1}-T\Par{\Frac{A_{1,j-1}u_k}{A_{1,k}}}\hspace{93pt}\\[-6pt]=A_{1,j-1}w_1+\dots+A_{n,j-1}w_n-A_{1,j-1}\Par{1w_1+\dots+\Frac{A_{n,k}}{A_{1,k}}w_n}=0w_1+\dots+\Par{A_{n,j-1}-\Frac{A_{1,j-1}A_{n,k}}{A_{1,k}}}w_n.}\PfEnd\vspace{4pt}\par
+And $Tv_1=T\XPar{\Frac{u_k}{A_{1,k}}}=\Frac{1}{A_{1,k}}\Par{A_{1,k}w_1+\dots+A_{n,k}w_n}=1w_1+\dots+\Frac{A_{n,k}}{A_{1,k}}w_n.$\par\quad
+\vspace{15pt}\AlignEq{}{\forall j\in\underset{\qquad\quad\overset{\uwave{\quad\qquad\qquad\qquad}}{\quad\;\;i\,\in\,\envFontSmall\Bra{k+1,\dots,n}\quad}}{\Bra{2,\dots,k,{k+2,\dots,n+1}}},\;Tv_j=T\Par{u_{j-1}-A_{1,j-1}v_1}=Tu_{j-1}-T\XPar{\Frac{A_{1,j-1}u_k}{A_{1,k}}}\hspace{93pt}\\[-6pt]=A_{1,j-1}w_1+\dots+A_{n,j-1}w_n-A_{1,j-1}\XPar{1w_1+\dots+\Frac{A_{n,k}}{A_{1,k}}w_n}=0w_1+\dots+\XPar{A_{n,j-1}-\Frac{A_{1,j-1}A_{n,k}}{A_{1,k}}}w_n.}\PfEnd\vspace{4pt}\par
 \SepLine
 
 \ProblemN{\hypertarget{3C6}{6}}{
@@ -1439,9 +1439,9 @@ Let $\Par{u_2,\dots,u_n}$ be a basis of $\null T.$ Extend it to a basis of $V$ a
 Let $w_1=Tv_1-w_2-\dots-w_m.$ Extend to a basis of $W$ and we have $B_W$.\par\quad\Hb
 Let $v_1=u_1,v_i=u_1+u_i.$ Extend to a basis of $V$ and we have $B_V.$\PfEnd\vspace{10pt}\quad\Hb
 \Or Suppose $\range T$ has a basis $\Par{w}$.\par\quad\Hb
-By (2.C.15 [\COROLLARY]), $\exists\,B_W=\Par{w_1,\dots,w_m}$ such that $w=w_1+\dots+w_m.$\par\quad\Hb
-By (2.C [\NEWTHEOREM]), $\exists$ a basis $\Par{u_1,\dots,u_n}$ of $V$ such that each $u_k\not\in\null T.$\par\quad\Hb
-$\forall k\in\!\Bra{1,\dots,n},Tu_k\in\range T=\Span{w}\Rightarrow Tu_k=\lambda_k w,\exists\,\lambda_k\in\Fbb\backslash\zeroSubs.$\par\quad\Hb
+By 2.C.15 [\COROLLARY], $\exists\,B_W=\Par{w_1,\dots,w_m}$ such that $w=w_1+\dots+w_m.$\par\quad\Hb
+By 2.C [\NEWTHEOREM], $\exists$ a basis $\Par{u_1,\dots,u_n}$ of $V$ such that each $u_k\not\in\null T.$\par\quad\Hb
+$\forall k\in\Bra{1,\dots,n},Tu_k\in\range T=\Span{w}\Rightarrow Tu_k=\lambda_k w,\exists\,\lambda_k\in\Fbb\backslash\zeroSubs.$\par\quad\Hb
 Let $v_k=\lambda_k^{-1}u_k\neq 0\Rightarrow B_V=\Par{v_1,\dots,v_n}.$ Hence for each $v_k,Tv_k=w=w_1+\dots+w_m.$\PfEnd
 \SepLine
 
@@ -1454,20 +1454,20 @@ Let $v_k=\lambda_k^{-1}u_k\neq 0\Rightarrow B_V=\Par{v_1,\dots,v_n}.$ Hence for 
 %\SepLine
 \pagebreak
 
-\BulletPointX\NoteForSmall{[3.49]} \vspace{-8pt}\AlignEq{}{&\textstyle\because[\Par{AC}_{\cdot,k}]_{j,1}=\Par{AC}_{j,k}=\sum_{r=1}^n A_{j,r}C_{r,k}=\sum_{r=1}^n A_{j,r}\Par{C_{\cdot,k}}_{r,1}=\Par{AC_{\cdot,k}}_{j,1}\hspace{-50pt}\\&\therefore\Par{AC}_{\cdot,k}=A_{\cdot,\cdot}C_{\cdot,k}=AC_{\cdot,k}}\PfEnd[-25pt]
+\BulletPointX\NoteForSmall{[3.49]} \vspace{-8pt}\AlignEq{}{&\textstyle\because\Sbra{\Par{AC}_{\cdot,k}}_{j,1}=\Par{AC}_{j,k}=\sum_{r=1}^n A_{j,r}C_{r,k}=\sum_{r=1}^n A_{j,r}\Par{C_{\cdot,k}}_{r,1}=\Par{AC_{\cdot,k}}_{j,1}\hspace{-50pt}\\&\therefore\Par{AC}_{\cdot,k}=A_{\cdot,\cdot}C_{\cdot,k}=AC_{\cdot,k}}\PfEnd[-25pt]
 \SepLine
 
-\BulletPointX\Exercise{\hypertarget{3C10}{10}} \vspace{-8pt}\AlignEq{}{&\textstyle\because[\Par{AC}_{j,\cdot}]_{1,k}=\Par{AC}_{j,k}=\sum_{r=1}^n A_{j,r}C_{r,k}=\sum_{r=1}^n \Par{A_{j,\cdot}}_{1,r}C_{r,k}=\Par{A_{j,\cdot}C}_{1,k}\\
+\BulletPointX\Exercise{\hypertarget{3C10}{10}} \vspace{-8pt}\AlignEq{}{&\textstyle\because\Sbra{\Par{AC}_{j,\cdot}}_{1,k}=\Par{AC}_{j,k}=\sum_{r=1}^n A_{j,r}C_{r,k}=\sum_{r=1}^n \Par{A_{j,\cdot}}_{1,r}C_{r,k}=\Par{A_{j,\cdot}C}_{1,k}\\
 	&\therefore\Par{AC}_{j,\cdot}=A_{j,\cdot}C_{\cdot,\cdot}=A_{j,\cdot}C.}\PfEnd[-25pt]
 \SepLine
 
 \BulletPointX\NoteForSmall{\hypertarget{3C9}{}[3.52]}\quad $A\in\Fbb^{m,n},c\in\Fbb^{n,1}\Rightarrow Ac\in\Fbb^{m,1}$\vspace{2pt}\par\quad
-$\because\Par{Ac}_{j,1}=\sum_{r=1}^n A_{j,r}c_{r,1}=\BigPar{\sum_{r=1}^n\Par{A_{\cdot,r}c_{r,1}}}{_{j,1}}=\Par{c_1 A_{\cdot,1}+\dots+c_n A_{\cdot,n}}_{j,1}$\vspace{3pt}\par\quad
+$\because\Par{Ac}_{j,1}=\sum_{r=1}^n A_{j,r}c_{r,1}=\Sbra{\sum_{r=1}^n\Par{A_{\cdot,r}c_{r,1}}}{_{j,1}}=\Par{c_1 A_{\cdot,1}+\dots+c_n A_{\cdot,n}}_{j,1}$\vspace{3pt}\par\quad
 $\therefore\,Ac=A_{\cdot,\cdot}c_{\cdot,1}=\sum_{r=1}^n A_{\cdot,r}c_{r,1}=c_1 A_{\cdot,1}+\dots+c_n A_{\cdot,n}$\quad \Or By $\Par{Ac}_{\cdot,1}=Ac_{\cdot,1}$ Using (a) above.\PfEnd
 \SepLine
 
 \BulletPointX\Exercise{\hypertarget{3C11}{11}}\quad$a\in\Fbb^{1,n},C\in\Fbb^{n,p}\Rightarrow aC\in\Fbb^{1,p}$\vspace{2pt}\par\quad
-$\because\Par{aC}_{1,k}=\sum_{r=1}^n a_{1,r}C_{r,k}=\BigPar{\sum_{r=1}^n a_{1,r}\Par{C_{r,\cdot}}}{_{1,k}}=\Par{a_1 C_{1,\cdot}+\dots+a_n C_{n,\cdot}}_{1,k}$\vspace{3pt}\par\quad
+$\because\Par{aC}_{1,k}=\sum_{r=1}^n a_{1,r}C_{r,k}=\Sbra{\sum_{r=1}^n a_{1,r}\Par{C_{r,\cdot}}}{_{1,k}}=\Par{a_1 C_{1,\cdot}+\dots+a_n C_{n,\cdot}}_{1,k}$\vspace{3pt}\par\quad
 $\therefore\,aC=a_{1,\cdot}C_{\cdot,\cdot}=\sum_{r=1}^n a_{1,r}C_{r,\cdot}=a_1 C_{1,\cdot}+\dots+a_n C_{n,\cdot}$\quad \Or By $\Par{aC}_{1,\cdot}=a_{1,\cdot}C$. Using (b) above.\PfEnd
 \SepLine
 
@@ -1486,7 +1486,7 @@ Then $\Mt[\BigPar]{ p\Par{T_1,\dots,T_n}}={\Mt[\XPar]{\sum_{k_1,\dots,k_n}\!\!\a
 	\TextNL{\large\envFontDefault Suppose $A, B, C$ are matrices such that $A\Par{B + C}$ make sense, we prove the left distr.}
 }\par\quad
 Suppose $A\in\Fbb^{m,n}$ and $B,C\in\Fbb^{n,p}.$\par\quad
-Note that $[A\Par{B+C}]_{j,k}=\sum_{r=1}^n A_{j,r}\Par{B+C}_{r,k}=\sum_{r=1}^n \Par{A_{j,r}B_{r,k}+A_{j,r}C_{r,k}}=\Par{AB+AC}_{j,k}.$\PfEnd\vspace{10pt}\quad
+Note that $\Sbra{A\Par{B+C}}_{j,k}=\sum_{r=1}^n A_{j,r}\Par{B+C}_{r,k}=\sum_{r=1}^n \Par{A_{j,r}B_{r,k}+A_{j,r}C_{r,k}}=\Par{AB+AC}_{j,k}.$\PfEnd\vspace{10pt}\quad
 \Or Define $T,S,R$ such that $\Mt{T}=A,\Mt{S}=B,\Mt{R}=C.$\par\quad
 $A\Par{B+C}=\Mt{T\Par{S+R}}\overset{[3.9]}{=}\Mt{TS+TR}=AB+AC.$\par\quad
 Or $T\Par{S+R}=TS+TR\Rightarrow\Mt{T\Par{S+R}}=\Mt{TS+TR}\Rightarrow A\Par{B+C}=AB+AC.$\PfEnd
@@ -1496,7 +1496,7 @@ Or $T\Par{S+R}=TS+TR\Rightarrow\Mt{T\Par{S+R}}=\Mt{TS+TR}\Rightarrow A\Par{B+C}=
 	\TextNL{Prove that matrix multi is associ.}
 	\TextNL{\large\envFontDefault Suppose $A,B,C$ are matrices such that $\Par{AB}C$ makes sense, we prove that $\Par{AB}C=A\Par{BC}.$}
 }\par\quad
-Suppose $A\in\Fbb^{m,n}$ and $B,C\in\Fbb^{n,p}.$ We will show that $LHS=[\Par{AB}C]_{j,k}=[A\Par{BC}]_{j,k}=RHS.$\par\quad
+Suppose $A\in\Fbb^{m,n}$ and $B,C\in\Fbb^{n,p}.$ We will show that $LHS=\Sbra{\Par{AB}C}_{j,k}=\Sbra{A\Par{BC}}_{j,k}=RHS.$\par\quad
 $LHS=\Par{AB}_{j,\cdot}C_{\cdot,k}=\sum_{s=1}^n\Par{A_{j,s}B_{s,\cdot}}C_{\cdot,k}=\sum_{s=1}^n A_{j,s}\Par{B_{s,\cdot}C_{\cdot,k}}=\sum_{s=1}^n A_{j,s}\Par{BC}_{s,k}=RHS.$\PfEnd\vspace{10pt}\quad
 \Or Define $T,S,R$ such that $\Mt{T}=A,\Mt{S}=B,\Mt{R}=C.$\par\quad
 $\Par{AB}C=\Mt{T\Par{SR}}\overset{[3.9]}{=}\Mt{TSR}\overset{[3.9]}{=}\Mt{\Par{TS}R}=A\Par{BC}.$\par\quad
@@ -1521,7 +1521,7 @@ Hence $ST=TS.$ Which in general is not true. ( See 3.D )\PfEnd
 \ProblemBnoor{\hypertarget{3D4e19}{}10.A.3, \OR 4E 3.D.19}[\Sbra]{
 	\TextB{Suppose $V$ is finite-dim and $T\in\Lm{V}$.}
 	\TextB{Prove that $\forall B_V\neq B_V',\;\Mt{T,B_V}=\Mt{T,B'_V}\Longleftrightarrow T=\lambda\Mt{I},\exists\,\lambda\in\Fbb.$}
-}[ Compare with the first solution of (3.D.16) in 3.A ]\par\quad
+}\Sbra{ Compare with the first solution of (3.D.16) in 3.A }\par\quad
 Suppose $T=\lambda I$ for some $\lambda\in\Fbb.$ Then $T=\lambda\Mt{I}.$\vspace{10pt}\par\quad
 Suppose $\forall B_V\neq B_V',\;\Mt{T,B_V}=\Mt{T,B'_V}.$ If $T=0$, then we are done.\vspace{3pt}\par\quad
 Suppose $T\neq 0,$ and $v\in V\backslash\zeroSubs.$ Assume that $\Par{v,Tv}$ is linely inde.\vspace{3pt}\par\quad
@@ -1529,7 +1529,7 @@ Extend $\Par{v,Tv}$ to $B_V=\Par{v,Tv,u_3,\dots,u_n}.$ Let $B=\Mt
 \!\Par{T,B_V}.$\vspace{3pt}\par\quad
 $\Rightarrow Tv=B_{1,1} v+B_{2,1}\Par{Tv}+B_{3,1}u_3+\dots+B_{n,1}u_n\Rightarrow B_{2,1}=1,B_{i,1}=0,\,\forall i\neq 2.$\vspace{3pt}\par\quad
 By assumption, $A=\Mt{T,B_V'}=B,\forall B_V'=\Par{v,w_2,\dots,w_{n}}$. Then $A_{2,1}=1,A_{i,1}=0,\forall i\neq 2.$\vspace{2pt}\par\quad
-$\Rightarrow Tv=w_2,$ which is not true if we let $w_2=u_3,\;w_3=Tv,\;w_j=u_j,\forall j\in\!\Bra{4,\dots,n}.$ Contradicts.\vspace{2pt}\par\quad
+$\Rightarrow Tv=w_2,$ which is not true if we let $w_2=u_3,\;w_3=Tv,\;w_j=u_j,\forall j\in\Bra{4,\dots,n}.$ Contradicts.\vspace{2pt}\par\quad
 Hence $\Par{v,Tv}$ is linely depe $\Rightarrow \forall v\in V,\exists\,\lambda_v\in\Fbb,Tv=\lambda_v v.$\par\quad
 Now we show that $\lambda_v$ is independent of $v$, that is, to show that for all $v\neq w\in V\backslash\zeroSubs[\large],\lambda_v=\lambda_w$.\par\;
 {$\MathRightBrace{l}{
@@ -1537,13 +1537,13 @@ Now we show that $\lambda_v$ is independent of $v$, that is, to show that for al
 	\Par{v,w}$ is linely depe, $w=c v$ $\Rightarrow Tw=\lambda_w w=\lambda_w cv=c\lambda_v v=T\Par{cv}
 }\Rightarrow T=\lambda I,\exists\,\lambda\in\Fbb.$}\PfEnd\vspace{20pt}\quad
 \Or Conversely, denote $\Mt{T,B_V}$ by $A,$ where $B_V=\Par{u_1,\dots,u_m}$ is arbitrary.\vspace{3pt}\par\quad
-Fix one $B_V=\Par{v_1,\dots,v_m}$ and then $\Par{v_1,\dots,\frac{1}{2}v_k,\dots,v_m}$ is also a basis for any given $k\in\!\Bra{1,\dots,m}.$\vspace{3pt}\par\quad
+Fix one $B_V=\Par{v_1,\dots,v_m}$ and then $\Par{v_1,\dots,\frac{1}{2}v_k,\dots,v_m}$ is also a basis for any given $k\in\Bra{1,\dots,m}.$\vspace{3pt}\par\quad
 Fix one $k.$ Now we have $T\!\Par{\frac{1}{2}v_k}=A_{1,k}v_1+\dots+A_{k,k}\Par{\frac{1}{2}v_k}+\dots+A_{m,k}v_m$\vspace{3pt}\par\quad
 $\Rightarrow Tv_k=2A_{1,k}v_1+\dots+A_{k,k}v_k+\dots+2A_{m,k}v_m=A_{1,k}v_1+\dots+A_{k,k}v_k+\dots+A_{m,k}v_m.$\vspace{3pt}\par\quad
-Then $A_{j,k}=2A_{j,k}\Rightarrow A_{j,k}=0$ for all $j\neq k.$ Thus $Tv_k=A_{k,k}v_k,\forall k\in\!\Bra{1,\dots,m}.$\vspace{3pt}\par\quad
+Then $A_{j,k}=2A_{j,k}\Rightarrow A_{j,k}=0$ for all $j\neq k.$ Thus $Tv_k=A_{k,k}v_k,\forall k\in\Bra{1,\dots,m}.$\vspace{3pt}\par\quad
 Now we show that $A_{k,k}=A_{j,j}$ for all $j\neq k.$ Choose $j,k$ such that $j\neq k.$\vspace{3pt}\par\quad
 Consider the basis $B_V'=\Par{v\apostrophe_1,\dots,v\apostrophe_j,\dots,v\apostrophe_k,\dots,v\apostrophe_m},$\vspace{3pt}\par\qquad\qquad\quad\hspace{1pt}
-where $v\apostrophe_j=v_k,\,\,v_k\apostrophe=v_j$ and $v\apostrophe_i=v_i$ for all $i\in\!\Bra{1,\dots,m}\hText{\left\backslash}{\right.}{\!\!}\Bra[-4pt]{j,k}.$\vspace{3pt}\par\quad
+where $v\apostrophe_j=v_k,\,\,v_k\apostrophe=v_j$ and $v\apostrophe_i=v_i$ for all $i\in\Bra{1,\dots,m}\hText{\left\backslash}{\right.}{\!\!}\Bra[-4pt]{j,k}.$\vspace{3pt}\par\quad
 Remember that $\Mt{T,B_V'}=\Mt{T,B_V}=A.$\vspace{3pt}\par\quad
 Hence $T\Par{v\apostrophe_k}=A_{1,k}v\apostrophe_1+\dots+A_{k,k}v\apostrophe_k+\dots+A_{m,k}v\apostrophe_m=A_{k,k}v\apostrophe_k=A_{k,k}v_j,$ while $T\Par{v\apostrophe_k}=T\Par{v_j}=A_{j,j}v_j.$\vspace{3pt}\par\quad
 Thus $A_{k,k}=A_{j,j}.$\PfEnd
@@ -1564,19 +1564,10 @@ Thus $A_{k,k}=A_{j,j}.$\PfEnd
 	$}\Longleftrightarrow$ $T$ is inv.\vspace{6pt}\par
 \SepLine
 
-\ProblemB{
-	\hypertarget{3D4e15}{}\TextB{Suppose $T\in\Lm{V}$ and $V=\Span{Tv_1,\dots,Tv_m}$. Prove that $V=\Span{v_1,\dots,v_m}$.}
-}\par\quad
-Because $V=\Span{Tv_1,\dots,Tv_m}\Rightarrow T$ is surj, 又 $V$ is finite-dim $\Rightarrow T$ is inv $\Rightarrow$ $T^{-1}$ is inv.\par\quad
-$\forall v\in V,\,\exists\,a_i\in\Fbb, v=a_1 Tv_1+\dots+a_m Tv_m\Rightarrow T^{-1}v=a_1 v_1+\dots+a_m v_m\Rightarrow \range T^{-1}\subseteq\Span{v_1,\dots,v_m}.$\vspace{8pt}\par\quad
-\Or Reduce $\Par{Tv_1,\dots,Tv_m}$ to a basis of $V$ as $\Par{Tv_{\alpha_1},\dots,Tv_{\alpha_k}}$, where $k=\dim V$ and $\alpha_i\in\!\Bra{1,\dots,k}$.\par\quad
-Then $\Par{v_{\alpha_1},\dots,v_{\alpha_k}}$ is linely inde of length $k$, hence is a basis of $V$, contained in the list $\Par{v_1,\dots,v_m}.$\PfEnd
-\SepLine
-
 \ProblemBor{\hypertarget{3D4e22}{10.A.1}}{
 	\TextB{Suppose $T\in\Lm{V},B_V=\Par{v_1,\dots,v_n}.$ Prove that $\Mt{T, B_V}$ is inv $\Longleftrightarrow T$ is inv.}
 }Notice that $\mathcal{M}\in\Lm[\BigPar]{\Lm{V},\Fbb^{n,n}}$ is an iso.\par\quad
-(a) \,$T^{-1}T=TT^{-1}=I$\,\small$\Rightarrow\Mt{T^{-1}}\Mt{T}=\Mt{T}\Mt{T^{-1}}=I\Rightarrow\Mt{T^{-1}}=\Mt{T}{^{-1}}.$\large\par\quad
+(a) \,$T^{-1}T=TT^{-1}=I\Rightarrow\Mt{T^{-1}}\Mt{T}=\Mt{T}\Mt{T^{-1}}=I\Rightarrow\Mt{T^{-1}}=\Mt{T}{^{-1}}.$\vspace{2pt}\par\quad
 (b) \,$\Mt{T}\Mt{T}{^{-1}}=\Mt{T}{^{-1}}\Mt{T}=I.\quad\exists\,!\,S\in\Lm{V}$ such that $\Mt{T}{^{-1}}=\Mt{S}$\par\quad
 $\Rightarrow\Mt{T}\Mt{S}=\Mt{S}\Mt{T}=I=\Mt{TS}=\Mt{ST}$\par\quad
 $\Rightarrow\Mneg\Mt{TS}=\Mneg\Mt{ST}=I$\large$\,=\,TS=ST\Rightarrow S=T^{-1}.$\PfEnd
@@ -1598,32 +1589,40 @@ $\Rightarrow\Mneg\Mt{TS}=\Mneg\Mt{ST}=I$\large$\,=\,TS=ST\Rightarrow S=T^{-1}.$\
 }\Rightarrow \Par{ST}{^{-1}} = T^{-1}S^{-1}$, by the uniqnes of inv.\PfEnd
 \SepLine
 
+\ProblemB{
+	\hypertarget{3D4e15}{}\TextB{Suppose $T\in\Lm{V}$ and $V=\Span{Tv_1,\dots,Tv_m}$. Prove that $V=\Span{v_1,\dots,v_m}$.}
+}\par\quad
+Because $V=\Span{Tv_1,\dots,Tv_m}\Rightarrow T$ is surj, 又 $V$ is finite-dim $\Rightarrow T$ is inv $\Rightarrow$ $T^{-1}$ is inv.\par\quad
+$\forall v\in V,\,\exists\,a_i\in\Fbb, v=a_1 Tv_1+\dots+a_m Tv_m\Rightarrow T^{-1}v=a_1 v_1+\dots+a_m v_m\Rightarrow \range T^{-1}\subseteq\Span{v_1,\dots,v_m}.$\vspace{8pt}\par\quad
+\Or Reduce the spanning list $\Par{Tv_1,\dots,Tv_m}$ of $V$ to a basis $\Par{Tv_{\alpha_1},\dots,Tv_{\alpha_k}}$ of $V.$\par\quad
+\Blind{\Or}Where $k=\dim V$ and each $\alpha_i\in\Bra{1,\dots,k}.$ Then by Problem (4E 3),\par\quad
+\Blind{\Or}$\Par{v_{\alpha_1},\dots,v_{\alpha_k}}$ is also a basis of $V$, contained in the list $\Par{v_1,\dots,v_m}.$\PfEnd
+\SepLine
+
 \ProblemN{\hypertarget{3D2}{2}}{
 	\TextN{Suppose $V$ is finite-dim and $\dim V > 1$.}
-	\TextN{Prove that the set of non-inv operators on $V$ is not a subsp of $\Lm{V}$.}
-	\TextN{\large\tgsl The set of inv operators is not either, although multi identity/inv, and commutativity for vec multi holds.}
-}\par\quad
-Denote the set by $U.$ Suppose $\dim V=n>1.$ Let $\Par{v_1,\dots,v_n}$ be a basis of $V$. Define $S,T\in\Lm{V}$ by\par\qquad
-$S\Par{a_1 v_1+\dots+a_n v_n}=a_1 v_1,T\Par{a_1 v_1+\dots+a_n v_n}=a_2 v_1+\dots+a_n v_n$. Hence $S+T=I$ is inv.\PfEnd
-\Comment\,\,\, If $\dim V=1,$ then $U=\zeroSubs$ is a subsp of $\Lm{V}.$\par
-\par
+	\TextN{Prove that the set $U$ of non-inv operators on $V$ is not a subsp of $\Lm{V}$.}
+	\TextN{\large\tgsl The set of inv operators is not either. Although multi identity/inv, and commutativity for vec multi hold.}
+}Let $B_V=\Par{v_1,\dots,v_n}.$ \Sbra{ {\tgsl If $\dim V=1,$ then $U=\zeroSubs$ is a subsp of $\Lm{V}.$} }\par\Blind{\Solution}
+Define $S,T\in\Lm{V}$ by $S\Par{a_1 v_1+\dots+a_n v_n}=a_1 v_1,\;T\Par{a_1 v_1+\dots+a_n v_n}=a_2 v_1+\dots+a_n v_n.$\par\Blind{\Solution}
+Hence $S,T\in U$ while $S+T\not\in U.$\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{3D3}{3}}{
 	\TextN{Suppose $V$ is finite-dim, $U$ is a subsp of \,$V$, and $S\in\Lm{U,V}$.}
-	\TextN{Prove that $\exists$ inv $T\in\Lm{V},Tu = Su,\forall u\in U$ $\Longleftrightarrow$ $S$ is inje.{\large $[$ Compare this with (3.A.11). $]$}}
+	\TextN{Prove that $\exists$ inv $T\in\Lm{V},Tu = Su,\forall u\in U$ $\Longleftrightarrow$ $S$ is inje. {\large\Sbra{ Compare this with (3.A.11). }}}
 }\par\quad
-(a) $Tu = Su$ for every $u\in U$ $\Rightarrow$ $u=T^{-1}Su\Rightarrow S$ is inje. \Or $\null S=\null T\cap U=\zeroSubs\cap U=\zeroSubs.$\par\quad
-(b) Suppose $\Par{u_1,\dots,u_m}$ be a basis of $U$ and $S$ is inje $\Rightarrow\Par{Su_1,\dots,Su_m}$ is linely inde in $V$.\par\quad\Hb
+(a) $\forall u\in U,u=T^{-1}Su\Longrightarrow S$ is inje. \Or $\null S=\null T\cap U=\zeroSubs\cap U=\zeroSubs.$\par\quad
+(b) Let $\Par{u_1,\dots,u_m}$ be a basis of $U.$ Then $S$ inje $\Longrightarrow\Par{Su_1,\dots,Su_m}$ linely inde.\par\quad\Hb
 Extend these to bases of $V$ as $\Par{u_1,\dots,u_m,v_1,\dots,v_n}$ and $\Par{Su_1,\dots,Su_m,w_1,\dots,w_n}$.\par\quad\Hb
-Define $T\in\Lm{V}$ by $T\Par{u_i}=Su_i;\,\,\,Tv_j=w_j,$ for each $i\in\!\Bra{1,\dots,m},j\in\!\Bra{1,\dots,n}.$\PfEnd
+Define $T\in\Lm{V}$ by $T\Par{u_i}=Su_i;\,\,\,Tv_j=w_j,$ for each $i\in\Bra{1,\dots,m},j\in\Bra{1,\dots,n}.$\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{3D4}{4}}{
 	\TextN{Suppose that $W$ is finite-dim and $S, T\in\Lm{V,W}$.}
 	\TextN{Prove that $\null S = \null T${\normalsize ($\,= U\,$)} $\Longleftrightarrow$ $S = ET,\,\exists$ inv $E\in\Lm{W}$.}
 }\par\quad
-Define $E\in\Lm{W}$ by $E\Par{Tv_i}=Sv_i,\,\,\,E\Par{w_j}=x_j$, for each $i\in\!\Bra{1,\dots,m},j\in\!\Bra{1,\dots,n}.$ Where:\par\vspace{6pt}\quad
+Define $E\in\Lm{W}$ by $E\Par{Tv_i}=Sv_i,\,\,\,E\Par{w_j}=x_j$, for each $i\in\Bra{1,\dots,m},j\in\Bra{1,\dots,n}.$ Where:\par\vspace{6pt}\quad
 $\MathLeftrightMid{l}{$
 	Let $B_{\range T}=\Par{Tv_1,\dots,Tv_m}$, extend to $B_W=\Par{Tv_1,\dots,Tv_m,w_1,\dots,w_n}.\\ $
 	Let $\mathcal{K}=\Span{v_1,\dots,v_m}.$ 	又 $\null S=\null T\Longrightarrow V=\mathcal{K}\oplus\null S\Leftrightarrow \mathcal{K}\in\mathcal{S}_V\null S.\\ $ $\Rightarrow\Span{Sv_1,\dots,Sv_m}=\range S$ 又 $\dim\range T=\dim\range S=m.\\ $
@@ -1636,7 +1635,7 @@ Then $v\in\null ET\Longleftrightarrow ET\Par{v}=0\Longleftrightarrow Tv=0\Longle
 	\TextN{Suppose that $V$ is finite-dim and $S, T\in\Lm{V,W}$.}
 	\TextN{Prove that $\range S = \range T${\normalsize (${\,= R\,}$)} $\Longleftrightarrow$ $S = TE,\,\exists$ inv $E\in\Lm{V}$.}
 }\par\quad
-Define $E\in\Lm{V}$ as \;$E:\,\,\, v_i\mapsto r_i\,\,;\quad u_j\mapsto s_j;$\quad for each $i\in\!\Bra{1,\dots,m},j\in\!\Bra{1,\dots,n}.$ Where:\par\vspace{6pt}\quad
+Define $E\in\Lm{V}$ as \;$E:\,\,\, v_i\mapsto r_i\,\,;\quad u_j\mapsto s_j;$\quad for each $i\in\Bra{1,\dots,m},j\in\Bra{1,\dots,n}.$ Where:\par\vspace{6pt}\quad
 $\MathLeftrightMid{l}{$
 	Let $B_R=\Par{Tv_1,\dots,Tv_m};\;B_R'=\Par{Sr_1,\dots,Sr_m}$ such that $\forall\,i,Tv_i=Sr_i.\\ $
 	Let $B_{\null T}=\Par{u_1,\dots,u_n};\;B_{\null S}=\Par{s_1,\dots,s_n}.\\ $
@@ -1649,8 +1648,8 @@ Then $w\in\range S\Longleftrightarrow \exists\,v\in V,Sv=TE\Par{v}=T\BigPar{E\Pa
 	\TextN{Suppose $V$ and $W$ are finite-dim and $S, T\in\Lm{V,W}$.}
 	\TextN{Prove that $S=E_2 T E_1,\exists$ inv $ E_1\in\Lm{V}, E_2\in\Lm{W}$ $\Longleftrightarrow$ $\dim\null S = \dim\null T=n$.}
 }\par\quad
-$\text{Define}\;\,E_1:\,\,\,\,\, v_i\mapsto r_i\,\,;\quad u_j\mapsto s_j;$\quad for each $i\in\!\Bra{1,\dots,m},j\in\!\Bra{1,\dots,n}.$\par\quad
-$\text{Define}\;\,E_2:Tv_i\mapsto Sr_i\,\,;\;\;x_j\mapsto y_j;$\quad for each $i\in\!\Bra{1,\dots,m},j\in\!\Bra{1,\dots,n}.$
+$\text{Define}\;\,E_1:\,\,\,\,\, v_i\mapsto r_i\,\,;\quad u_j\mapsto s_j;$\quad for each $i\in\Bra{1,\dots,m},j\in\Bra{1,\dots,n}.$\par\quad
+$\text{Define}\;\,E_2:Tv_i\mapsto Sr_i\,\,;\;\;x_j\mapsto y_j;$\quad for each $i\in\Bra{1,\dots,m},j\in\Bra{1,\dots,n}.$
 Where:\par\vspace{6pt}\quad
 $\MathLeftrightMid{l}{$
 	Let $B_{\range T}=\Par{Tv_1,\dots,Tv_m};\;B_{\range S}=\Par{Sr_1,\dots,Sr_m}.\\ $
@@ -1734,7 +1733,7 @@ Thus $AB=I\Leftrightarrow A\Par{Bx}=x\Longleftrightarrow T\Par{Sx}=x\Leftrightar
 {Define $E_{i,j}\in\Lm{V,W}$ by $E_{i,j}\Par{v_x}=\delta_{i,x} w_j;$\quad See (3.A.12).\quad} \Corollary\,\,\, \envFontLarge{\Large$E_{l,k}E_{i,j}=\delta_{j,l}E_{i,k}.$}\TextB{}
 {\Large Denote \envFontLarge$\Mt{E_{i,j}}$ by $\mathcal{E}^{\SmallPar[1pt]{j,i}}.$ And $\BigPar{\mathcal{E}^{\SmallPar[1pt]{j,i}}}_{l,k}=\MathLeftBrace{l}{0,\quad i\neq k\,\vee\,j\neq l\\1,\quad i=k\,\wedge\,j=l}$}\TextB{\vspace{6pt}}
 \envFontLarge{\Large Because $\Lm{V,W}$ and $\Fbb^{m,n}$ are iso. And $T=\Mneg\Mt{T};\;\;E_{i,j}=\Mneg\mathcal{E}^{\SmallPar[1pt]{j,i}}$.}\TextB{}
-Hence $\forall T\in\Lm{V,W},\,\exists\,!\,A_{i,j}\in\Fbb\;\XPar{\;\forall i\in\!\Bra{1,\dots,m},j\in\!\Bra{1,\dots,n}\;},\Mt{T}=A\,=\,${\normalsize$\begin{pmatrix} A_{1,1} & \cdots & A_{1,n}\\ \vdots & \ddots & \vdots\\ A_{m,1} & \cdots & A_{m,n}\end{pmatrix}$}.\par\quad
+Hence $\forall T\in\Lm{V,W},\,\exists\,!\,A_{i,j}\in\Fbb\;\XPar{\;\forall i\in\Bra{1,\dots,m},j\in\Bra{1,\dots,n}\;},\Mt{T}=A\,=\,${\normalsize$\begin{pmatrix} A_{1,1} & \cdots & A_{1,n}\\ \vdots & \ddots & \vdots\\ A_{m,1} & \cdots & A_{m,n}\end{pmatrix}$}.\par\quad
 Thus $A\,=\,${\normalsize$\envFontSmall[\scriptsize]\begin{pmatrix}
 		A_{1,1}\mathcal{E}^{\Par{1,1}}+&
 		\cdots &+A_{1,n}\mathcal{E}^{\Par{1,n}}\\[-5pt]
@@ -1769,7 +1768,7 @@ Hence $\range\Phi=\Lm{U,W}$.\par\quad\Hb
 Thus $\dim\null\Phi=\dim\mathcal{E}=\dim\Lm{V,W}-\dim\range\Phi=\Par{\dim V-\dim U}\dim W.$\PfEnd\vspace{10pt}\quad\Hb
 \Or Extend $\Par{u_1,\dots,u_m}$ a basis of $U$ to $\Par{u_1,\dots,u_m,v_1,\dots,v_n}$ a basis of $V$. Let $p=\dim W$.\par\quad\Hb
 ( See \NOTEFOR\;[3.60])\vspace{-12pt}\par\quad\Hb
-$\forall \,T\in\mathcal{E},k\in\!\Bra{1,\dots,m},TE_{k,k}=0\Rightarrow{\normalsize\underbrace{\Spn\begin{Bmatrix} \underset{,}{E_{1,1}}, & \cdots & ,\underset{,}{E_{m,1}},\\ \vdots & \ddots & \,\vdots\\ \overset{,}{E_{1,p}}, & \cdots & ,\overset{,}{E_{m,p}}\end{Bmatrix}}_{\text{Denote\,it\,by\,R}}}\,\cap\,\mathcal{E}=\zeroSubs$.\vspace{-12pt}\par\quad\Hb
+$\forall \,T\in\mathcal{E},k\in\Bra{1,\dots,m},TE_{k,k}=0\Rightarrow{\normalsize\underbrace{\Spn\begin{Bmatrix} \underset{,}{E_{1,1}}, & \cdots & ,\underset{,}{E_{m,1}},\\ \vdots & \ddots & \,\vdots\\ \overset{,}{E_{1,p}}, & \cdots & ,\overset{,}{E_{m,p}}\end{Bmatrix}}_{\text{Denote\,it\,by\,R}}}\,\cap\,\mathcal{E}=\zeroSubs$.\vspace{-12pt}\par\quad\Hb
 又 $W=\Spn${\small$\begin{Bmatrix} \underset{,}{E_{m+1,1}}, & \cdots & ,\underset{,}{E_{n,1}},\\ \vdots & \ddots & \,\vdots\\ \overset{,}{E_{m+1,p}}, & \cdots & ,\overset{,}{E_{n,p}}\end{Bmatrix}$}$\,\subseteq\mathcal{E}$. Where $\Lm{V,W}=R\oplus W\Rightarrow\Lm{V,W}=R+\mathcal{E}.$\par\vspace{6pt}\quad\Hb
 Then $\dim\mathcal{E}=\dim\Lm{V,W}-\dim R-\Dim\Par{R\cap\mathcal{E}}=\Par{\dim V-\dim U}\dim W.$\PfEnd
 \SepLine[10pt]
@@ -1850,12 +1849,12 @@ Again, {\Large$E_{y,x\apostrophe},E_{y\apostrophe,x}\in\mathcal{E}$} for all $x\
 	\TextB{{\large\envFontDefault For ease of notation, let $\Mt[\BigPar]{T,\alpha\rightarrow\beta}=\Mt[\BigPar]{T,\Par{\alpha_1,\dots,\alpha_n},\Par{\beta_1,\dots,\beta_n}},\,\,\,\Mt[\BigPar]{T,\alpha\rightarrow\alpha}=\Mt[\BigPar]{T,\Par{\alpha_1,\dots,\alpha_n}}.$}}
 }\par\quad
 Denote $\Mt{T,\alpha\rightarrow\alpha}$ by $A$ and $\Mt{I,\beta\rightarrow\alpha}$ by $B.$\par\quad
-$\forall k\in\!\Bra{1,\dots,n},Iu_k=u_k=B_{1,k}\alpha_1+\dots+B_{n,k}\alpha_n=Tv_k=A_{1,k}\alpha_1+\dots+A_{n,k}\alpha_n\Rightarrow A=B.$\PfEnd\vspace{6pt}\quad
+$\forall k\in\Bra{1,\dots,n},Iu_k=u_k=B_{1,k}\alpha_1+\dots+B_{n,k}\alpha_n=Tv_k=A_{1,k}\alpha_1+\dots+A_{n,k}\alpha_n\Rightarrow A=B.$\PfEnd\vspace{6pt}\quad
 \Or Note that $\Mt{T,\alpha\rightarrow\beta}=I.$ Hence $\Mt{T,\alpha\rightarrow\alpha}=\Mt{I,\beta\rightarrow\alpha}\underbrace{\Mt{T,\alpha\rightarrow\beta}}_{\envFontSmall=\Mt{I,\,\beta\rightarrow\beta}}=\Mt{I,\beta\rightarrow\alpha}.$\PfEnd\vspace{6pt}\quad
 \Or Note that $\Mt{T,\beta\rightarrow\beta}\Mt{I,\alpha\rightarrow\beta}=\Mt{T,\alpha\rightarrow\beta}=I.$\vspace{4pt}\par\quad
 $\Mt{T,\alpha\rightarrow\alpha}=\Mt{I,\alpha\rightarrow\beta}{^{-1}}\XPar{\,\underbrace{\Mt{T,\beta\rightarrow\beta}\Mt{ I,\alpha\rightarrow\beta}}_{\envFontSmall=\Mt{T,\,\alpha\rightarrow\beta}}\,}=\Mt{I,\beta\rightarrow\alpha}.$\PfEnd\vspace{6pt}\quad
 \Comment\,\,\, Denote $\Mt{T,\beta\rightarrow\beta}$ by $A\apostrophe$.\par\quad
-$u_k=Iu_k=B_{1,k}\alpha_1+\dots+B_{n,k}\alpha_n,\,\,\forall \,\,k\in\!\Bra{1,\dots,n}.$\par\quad
+$u_k=Iu_k=B_{1,k}\alpha_1+\dots+B_{n,k}\alpha_n,\,\,\forall \,\,k\in\Bra{1,\dots,n}.$\par\quad
 又 \,\,\,\,\,$Tu_k=T\Par{B_{1,k}\alpha_1+\dots+B_{n,k}\alpha_n}=B_{1,k}\beta_1+\dots+B_{n,k}\beta_n=A\apostrophe_{1,k}\beta_1+\dots+A\apostrophe_{n,k}\beta_n\Rightarrow A\apostrophe=B$.\par\quad
 \Or $\Mt{T,\beta\rightarrow\beta}=\Mt{T,\alpha\rightarrow\beta}\Mt{I,\beta\rightarrow\alpha}=B.$\par
 \SepLine
@@ -1922,7 +1921,7 @@ Contradicts. Thus $\forall p\in\Po_{n+1}\Par{\Rbb},\deg Tp=\deg p.$\PfEnd
 \ProblemN{\hypertarget{3E2}{2}}{
 	\TextN{Suppose $V_1\times\dots\times V_m$ is finite-dim. Prove that each $V_j$ is finite-dim.}
 }\par\quad
-For any $k\in\!\Bra{1,\dots,m},$ define $p_k:V_1\times\dots\times V_m\rightarrow V_k$ by $p_k\Par{v_1,\dots,v_m}=v_k.$\par\quad
+For any $k\in\Bra{1,\dots,m},$ define $p_k:V_1\times\dots\times V_m\rightarrow V_k$ by $p_k\Par{v_1,\dots,v_m}=v_k.$\par\quad
 Then $p_k$ is a surj linear map. By [3.22], $\range p_k=V_k$ is finite-dim.\PfEnd\vspace{8pt}\par\quad
 \Or Denote $V_1\times\cdots\times V_m$ by $U$. Denote $\zeroSubs\times\cdots\zeroSubs\times V_i\times\zeroSubs\cdots\times\zeroSubs$ by $U_i$.\par\quad
 Let $\Par{v_1,\dots,v_M}$ be a basis of $U$. Note that $\forall u_i\in V_i,\in U_i\subseteq U$, for each $i$.\vspace{4pt}\par\,
@@ -2037,7 +2036,7 @@ Suppose $\lambda v+\Par{1-\lambda}w\in A,\forall v,w\in A,\lambda\in\Fbb.$ Suppo
 Then $0\in A\apostrophe$ and $\,\,\forall x-a,y-a\in A\apostrophe,\;\Par{\,\forall x,y\in A\,},\;\lambda\in\Fbb,$\vspace{3pt}\par\quad
 (I) $\lambda\Par{x-a}=[\lambda x+\Par{1-\lambda}a]-a\in A\apostrophe.$\vspace{3pt}\par\quad\EndI
 (II) $\lambda\Par{x-a}+\Par{1-\lambda}\Par{y-a}=\frac{1}{2}\Par{x-a}+\frac{1}{2}\Par{y-a}=\frac{1}{2}x+\Par{1-\frac{1}{2}}y-a\in A\apostrophe.$\vspace{3pt}\par\quad\HII
-\Or By (I), $2\times[\frac{1}{2}\Par{x-a}+\frac{1}{2}\Par{y-a}]=\Par{x-a}+\Par{y-a}\in A\apostrophe$.\vspace{3pt}\par\quad
+\Or By (I), $2\times\Sbra{\frac{1}{2}\Par{x-a}+\frac{1}{2}\Par{y-a}}=\Par{x-a}+\Par{y-a}\in A\apostrophe$.\vspace{3pt}\par\quad
 Thus $A\apostrophe$ is a subsp of $V$. Hence $a+A\apostrophe=\Bra{\Par{x-a}+a:x\in A}{}=A$ is a translate.\PfEnd\vspace{6pt}\quad
 \Or Suppose $x-a,y-a\in A\apostrophe,\lambda\in\Fbb.$\par\quad
 Note that $x,a\in A\Rightarrow \lambda x+\Par{1-\lambda}a=2x-a\in A.$ Similarly $2y-a\in A.$\vspace{3pt}\par\quad
