@@ -631,8 +631,8 @@ Then $\dim\!\Par{V_1+\dots+V_m}=\dim\Span{\mathcal{E}_1\cup\cdots\cup \mathcal{E
 又 $\dim\Span{\mathcal{E}_1\cup\cdots\cup\mathcal{E}_m}\leqslant\card\Par{\mathcal{E}_1\cup\cdots\cup \mathcal{E}_m}\leqslant\card \mathcal{E}_1+\cdots+\card \mathcal{E}_m$.\par\quad
 Thus $\dim\!\Par{V_1+\dots+V_m}\leqslant \dim V_1+\dots+\dim V_m.$\PfEnd\vspace{6pt}
 \Comment \,\,\,{\tgsl\Large$\dim\!\Par{V_1+\dots+V_m}=\dim V_1+\dots+\dim V_m\Longleftrightarrow V_1+\dots+V_m$ is a direct sum.}\par
-\Blind{\Comment\,\,\,}For each $i$, $\Par{V_1+\dots+V_i}\cap V_{i+1}=\zeroSubs\Longleftrightarrow V_1+\dots+V_m$ is a direct sum\par
-\Blind{\Comment\,\,\,}$\Longleftrightarrow\Par{\mathcal{E}_1\cap\dots\cap\mathcal{E}_{k-1}}\cap\mathcal{E}_k=\emptyset$ for each $i$ 又 $\dim\Span{\mathcal{E}_1\cup\dots\cup\mathcal{E}_m}=\card\Par{\mathcal{E}_1\cup\dots\cup\mathcal{E}_m}$\par
+\Blind{\Comment\,\,\,}For each $k$, $\Par{V_1+\dots+V_k}\cap V_{k+1}=\zeroSubs\Longleftrightarrow V_1+\dots+V_m$ is a direct sum\par
+\Blind{\Comment\,\,\,}$\Longleftrightarrow\Par{\mathcal{E}_1\cap\dots\cap\mathcal{E}_{k-1}}\cap\mathcal{E}_k=\emptyset$ for each $k$ 又 $\dim\Span{\mathcal{E}_1\cup\dots\cup\mathcal{E}_m}=\card\Par{\mathcal{E}_1\cup\dots\cup\mathcal{E}_m}$\par
 \Blind{\Comment\,\,\,}$\Longleftrightarrow\dim\Span{\mathcal{E}_1\cup\dots\cup\mathcal{E}_m}=\card\mathcal{E}_1+\dots+\card\mathcal{E}_m$\par
 \Blind{\Comment\,\,\,}$\Longleftrightarrow\dim\!\Par{V_1+\dots+V_m}=\dim V_1+\dots+\dim V_m.$\PfEnd
 \SepLine
@@ -695,7 +695,7 @@ $}\Longleftrightarrow T\Par{v+\lambda u}=Tv+\lambda Tu.$\vspace{-10pt}
 	(a) \TextB{Define a natural add and scalar multi on $W^V.$}
 	(b) \TextB{Prove that $W^V$ is a vecsp with these definitions.}
 }\par\quad
-(a) $W^V\ni f+g: x\rightarrow f\Par{x}+g\Par{y};$ where $f\Par{x}+g\Par{y}$ is the vec add on $W.$\par\quad\Ha
+(a) $W^V\ni f+g: x\rightarrow f\Par{x}+g\Par{x};$ where $f\Par{x}+g\Par{x}$ is the vec add on $W.$\par\quad\Ha
 $W^V\ni\lambda f: x\rightarrow\lambda f\Par{x};$ where $\lambda f\Par{x}$ is the scalar multi on $W.$\par\quad
 (b) Commutativity: $\Par{f+g}\Par{x}=f\Par{x}+g\Par{x}=g\Par{x}+f\Par{x}=\Par{g+f}\Par{x}.$\par\quad\Hb
 Associativity: $\BigPar{\Par{f+g}+h}\Par{x}=\BigPar{{f}\Par{x}+{g}\Par{x}}+{h}\Par{x}$\par\quad\Hb
@@ -764,10 +764,9 @@ Because in general, $\Sbra{q\circ \Par{p_1+\lambda p_2}}\Par{x}=q\Par{p_1\Par{x}
 	\TextNL{Suppose $U$ is a subsp of \,$V$ with $U\neq V$. Suppose $S\in\Lm{U,W}$ with $S\neq 0$}
 	\TextNL{\BigPar{ which means that $\exists\,u\in U,Su\neq 0$ }. Define $T: V\rightarrow W$ by $Tv=${\large\envFontDefault$\MathLeftBrace{l}{Sv$, if $v\in U,\\ 0$,\Blind{S} if $v\in V\backslash U$.$}$}\vspace{-4pt}}
 	\TextNL{Prove that $T$ is not a linear map on $V$.}
-}\par\quad
-Suppose $T$ is a linear map. And $v\in V\backslash U,\,\, u\in U$ such that $Su\neq 0$.\par\quad
-Then $v+u\in V\backslash U,$ \BigPar{ for if not, $v=\Par{v+u}-u\in U$ } while $T\Par{v+u}=0=Tv+Tu=0+Su\Rightarrow Su=0.$\par\quad
-Hence we get a contradiction.\PfEnd
+}Suppose $T$ is a linear map. And $v\in V\backslash U,\,\, u\in U$ such that $Su\neq 0$.\par\Blind{\Solution}
+Then $v+u\in V\backslash U,$ for if not, $v=\Par{v+u}-u\in U$;\par\Blind{\Solution}
+while $T\Par{v+u}=0=Tv+Tu=0+Su\Rightarrow Su=0.$ Contradicts.\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{3A11}{11}}{
@@ -781,12 +780,12 @@ Hence we get a contradiction.\PfEnd
 
 \ProblemN{\hypertarget{3A12}{12}}{
 	\TextNL{Suppose nonzero $V$ is finite-dim and $W$ is infinite-dim. Prove that $\Lm{V,W}$ is infinite-dim.}
-}\par\quad
-Let $\Par{v_1,\dots,v_n}$ be a basis of $V$. Let $\Par{w_1,\dots,w_m}$ be linely inde in $W$ for any $m\in\Nbp$.\par\quad
+}Using (2.A.14).\par\quad
+Let $B_V=\Par{v_1,\dots,v_n}$ be a basis of $V.$ Let $\Par{w_1,\dots,w_m}$ be linely inde in $W$ for any $m\in\Nbp.$\par\vspace{-2pt}\quad
 Define $T_{x,y}:V\rightarrow W$ by $T_{x,y}\Par{v_z}=\delta_{z,x} w_y$, $\forall x\in\!\Bra{1,\dots,n},y\in\!\Bra{1,\dots,m}$, where $\delta_{z,x}=\MathLeftBrace{l}{
 	0,\quad z\neq x,\\
 	1,\quad z=x.}$\vspace{-5pt}\par\quad
-{\normalsize$\forall v=\sum_{i=1}^n a_iv_i,\;u=\sum_{i=1}^n b_iv_i,\;\lambda\in\Fbb,T_{x,y}\Par{v+\lambda u}=\Par{a_x+\lambda b_x}v_y=T_{x,y}\Par{v}+\lambda T_{x,y}\Par{u}.$}\vspace{2pt}\par\quad
+{\normalsize$\forall v=\sum_{i=1}^n a_iv_i,\;u=\sum_{i=1}^n b_iv_i,\;\lambda\in\Fbb,T_{x,y}\Par{v+\lambda u}=\Par{a_x+\lambda b_x}w_y=T_{x,y}\Par{v}+\lambda T_{x,y}\Par{u}.$}\vspace{2pt}\par\quad
 Linearity checked. Now suppose $a_1 T_{x,1}+\dots+a_m T_{x,m}=0$.\par\quad
 Then $\Par{a_1 T_{x,1}+\dots+a_m T_{x,m}}\Par{v_x}=0=a_1 w_1+\dots+a_m w_m\Rightarrow a_1=\dots=a_m=0.$ 又 $m$ arbitrary.\par\quad
 Thus $\Par{T_{x,1},\dots,T_{x,m}}$ is a linely inde list in $\Lm{V,W}$ for any $x$ and length $m$. Hence by (2.A.14).\PfEnd
@@ -797,14 +796,14 @@ Thus $\Par{T_{x,1},\dots,T_{x,m}}$ is a linely inde list in $\Lm{V,W}$ for any $
 	\TextNL{Prove that $\exists\,w_1,\dots,w_m\in W,\not\exists\,T\in\Lm{V,W}$ such that $Tv_k=w_k,\forall k = 1,\dots,m$.}
 }\par\quad
 We prove by contradiction. By linear dependence lemma, $\exists\,j\in\!\Bra{1,\dots,m},v_j\in\Span{v_1,\dots,v_{j-1}}$.\par\quad
-Fix $j$. Let $w_j\neq 0$, while $w_1=\dots=w_{j-1}=w_{j+1}=w_m=0.$\par\quad
-Define $T$ by $Tv_k=w_k$ for each $k$. Suppose $a_1 v_1+\dots+a_m v_m=0$ ( where $a_j\neq 0$ ).\par\quad
+Fix $j$. Let $w_j\neq 0$, while $w_1=\dots=w_{j-1}=w_{j+1}=w_m=0.$ Define $T\in\Lm{V,W}$ by $Tv_k=w_k$ for each $k.$\par\quad
+Suppose $a_1 v_1+\dots+a_m v_m=0,$ where $a_j\neq 0.$\par\quad
 Then $T\BigPar{a_1 v_1+\dots+a_m v_m}=0=a_1 w_1+\dots+a_m w_m=a_j w_j$ while $a_j\neq 0$ and $w_j\neq 0.$ Contradicts.\PfEnd\vspace{6pt}\quad
 \Or We prove the contrapositive: Suppose $\forall w_1,\dots,w_m\in W,\exists\,T\in\Lm{V,W},Tv_k=w_k$  for each $w_k.$\par\quad
 {Now we show that $\Par{v_1,\dots,v_n}$ is linely inde. Suppose {$\exists\,a_i\in\Fbb,a_1 v_1+\dots+a_n v_n=0$}.}\vspace{2pt}\par\quad
 {Choose one $w\in W\backslash\envFontDefault\zeroSubs.$ By assumption, for {$\BigPar{\overline{a_1}w,\dots,\overline{a_m}w},\exists\,T\in\Lm{V,W},Tv_k=\overline{a_k}w$} for each $v_k$.}\vspace{2pt}\par\quad
 {Now we have {$ 0=T\XPar{\sum_{k=1}^m a_k v_k}=\sum_{k=1}^m a_k Tv_k=\sum_{k=1}^m a_k\overline{a_k}w=\XPar{\sum_{k=1}^m \aMid{a_k}{^2}}w$}.}\par\quad
-{Then {$\sum_{k=1}^m\aMid{a_k}{^2}=0\Rightarrow a_k=0$} for each $k.$ Hence $\Par{v_1,\dots,v_n}$ is linely inde.}\PfEnd
+{Then {$\sum_{k=1}^m\aMid{a_k}{^2}=0\Longrightarrow$ each $a_k=0.$} Hence $\Par{v_1,\dots,v_n}$ is linely inde.}\PfEnd
 \SepLine
 
 \ProblemBnoor{\hypertarget{3A4e17}{4E 3.A.17}}{
@@ -813,8 +812,8 @@ Then $T\BigPar{a_1 v_1+\dots+a_m v_m}=0=a_1 w_1+\dots+a_m w_m=a_j w_j$ while $a_
 	\TextB{{\large\envFontDefault A subsp $\mathcal{E}$ of $\Lm{V}$ is called a two-sided ideal of $\Lm{V}$ if $TE\in\mathcal{E},ET\in\mathcal{E},\,\,\forall E\in\mathcal{E},T\in\Lm{V}$.}}
 }{Let $\Par{v_1,\dots,v_n}$ be a basis of $V$. If $\mathcal{E}=0$, then we are done.}\par\quad
 {Suppose $\mathcal{E}\neq 0$ and $\mathcal{E}$ is a two-sided ideal of $\Lm{V}$. Let $S\in\mathcal{E}\backslash\envFontDefault\zeroSubs$.}\par\quad
-{Suppose $Sv_i\neq 0$ and $Sv_i=a_1 v_1+\dots+a_n v_n$, where $a_k\neq 0$.}\par\quad
-\envFontLarge{\vspace{6pt}Define $R_{x,y}\in\Lm{V}$ by {\Large$R_{x,y}\Par{v_x}=v_y, R_{x,y}\Par{v_z}=0\,\Par{\,z\neq x\,}$}. \Or {\Large$R_{x,y}v_z=\delta_{z,x}v_y$}.}\par\quad
+{Suppose $Sv_i\neq 0$ and $Sv_i=a_1 v_1+\dots+a_n v_n$, where $a_k\neq 0$.}\par\vspace{2pt}\quad
+\envFontLarge{\vspace{4pt}Define $R_{x,y}\in\Lm{V}$ by {\Large$R_{x,y}:\;v_x\mapsto v_y,\;v_z\mapsto 0\,\Par{\,z\neq x\,}$}. \Or {\Large$R_{x,y}v_z=\delta_{z,x}v_y$}.}\par\quad
 {\vspace{6pt}Then {\Large$\BigPar{R_{1,1}+\dots+R_{n,n}}v_j=v_j\Rightarrow\sum_{r=1}^n R_{r,r}=I$}. Assume that {\Large each $R_{x,y}\in\mathcal{E}$}.}\par\quad
 {\vspace{6pt}Hence {\Large$\forall T\in\Lm{V},I\circ T=T\circ I=T\in\mathcal{E}\Rightarrow \mathcal{E}=\Lm{V}$}. Now we prove the assumption.}\par\quad
 {\vspace{6pt}Notice that {\Large$\forall x,y\in\Nbp,\;\Par{R_{k,y}S}\Par{v_i}=a_k v_y\Rightarrow\BigPar{\Par{R_{k,y}S}\circ R_{x,i}}\Par{v_z}=\delta_{z,x}\Par{a_k v_y}$}.}\par\quad
@@ -843,13 +842,13 @@ Using notations in (4E 3.A.17). Using the result in \NOTEFOR\;[3.60].\vspace{2pt
 	\TextB{Prove that $\exists\,\lambda\in\Fbb,T=\lambda I$.}
 }\par\quad
 If $V=\zeroSubs,$ then we are done. Now suppose $V\neq\zeroSubs.$\par\quad
-Assume that $\Par{v,Tv}$ is linely depe for every $v\in V$, then by (2.A.2.(b)), $Tv=\lambda_v v$ for some $\lambda_v\in\Fbb.$\par\quad
+Assume that $\forall v\in V,\Par{v,Tv}$ is linely depe, then by (2.A.2.(b)), $\exists\,\lambda_v\in\Fbb,Tv=\lambda_v v.$\par\quad
 To prove that $\lambda_v$ is independent of $v$, we discuss in two cases:\vspace{4pt}\par\hspace{1pt}
 $\MathRightBrace{l}{$
 	($-$) If $\Par{v,w}$ is linely inde, $\lambda_{v+w}\Par{v+w}=T\Par{v+w}=Tv+Tw=\lambda_v v+\lambda_w w\\ $\qquad\qquad\qquad\qquad\qquad\qquad\qquad $\Rightarrow \Par{\lambda_{v+w}-\lambda_v}v+\Par{\lambda_{v+w}-\lambda_w}w=0\\ $
 	($=$) Otherwise, suppose $w=cv$, $\lambda_w w=Tw=cTv=c\lambda_v v=\lambda_v w\Rightarrow\Par{\lambda_w-\lambda_v}w$
 	$}\Rightarrow \lambda_w=\lambda_v.$\vspace{4pt}\par\quad
-Now we show the assumption. Assume that $\Par{v,Tv}$ is linely inde for some $v$. Let $B_V=\Par{v,Tv,u_1,\dots,u_n}$.\par\quad
+Now we prove the assumption. Assume that $\exists\,v\in V,\Par{v,Tv}$ is linely inde. Let $B_V=\Par{v,Tv,u_1,\dots,u_n}$.\par\quad
 Define $S\in\Lm{V}$ by $S\Par{av+bTv+c_1 u_1+\dots+c_n u_n}=bv\Rightarrow S\Par{Tv}=v=T\Par{Sv}=0.$ Contradicts.\PfEnd\vspace{8pt}\quad
 \Or \;{\vspace{4pt}Let $\Par{v_1,\dots,v_m}$ be a basis of $V.$}\par\quad
 \Blind{\Or \;}\envFontLarge{\Large\vspace{6pt}Define {\Large$\varphi\in\Lm{V,\Fbb}$} by $\varphi\Par{v_1}=\cdots=\varphi\Par{v_m}=1.$ Let $\lambda=\varphi\Par{Tv_1}\in\Fbb.$}\par\quad
