@@ -40,12 +40,11 @@
 \setmainfont{TeXGyrePagella-Regular}
 \setmathfont{TeXGyrePagellaMath-Regular}
 \setmathfont[range={\mathcal,\Longleftrightarrow,\Longrightarrow,\Longleftarrow,\Rightarrow,\Leftarrow,\Leftrightarrow}]{LatinModernMath-Regular}
-\setmathfont[range={\backslash}]{MathJax_Size1-Regular.otf}
+%\setmathfont[range={\backslash}]{TeXGyrePagella-Italic}
 \setmathfont[range={\mathbb}]{TeXGyreSchola-Regular}
 \setmathfont[range={\complement}]{TeXGyrePagella-Bold}
 \setmathfont[range=\mathfrak]{TeXGyrePagella-Regular}
 \setmathfont[range={\tilde}]{DejaVuMathTeXGyre.ttf}
-
 
 \newfontfamily{\tgnr}{TeXGyrePagella-Regular}
 \newfontfamily{\tgbf}{TeXGyreSchola-Regular}
@@ -56,7 +55,8 @@
 \newfontfamily{\forbra}{MathJax_Size1-Regular.otf}
 \newfontfamily{\forbrax}{MathJax_Size2-Regular.otf}
 \newfontfamily{\forslash}{MathJax_Size1-Regular.otf}
-\def\mySlash{\hspace{-1.2pt}\text{\forslash/}}
+\def\XSlash{\hspace{-1.2pt}\text{\forslash/}}
+\newcommand{\Slash}[1][\envFontA]{${#1$/$}$}
 
 \newcommand{\Largenr}[1]{{\Large\tgnr#1}}
 \newcommand{\Largesl}[1]{{\Large\tgsl#1}}
@@ -143,13 +143,14 @@
 \newcommand{\cMid}[2][1pt]{\Mid[#1][\envFontLarge\envFontA]{#2}}
 \newcommand{\aMid}[2][1pt]{\Mid[#1][\envFontLarge\envFontA]{#2}}
 \newcommand{\aXMid}[2][1pt]{\Mid[#1][\envFontHuge\envFont]{#2}}
-\newcommand{\Bra}[2][-5pt]{{\text{\forbra\envFont{\{}}}#2{\text{\forbra\envFont\}}}}%{\hText[-4pt]{}{}{$\hspace{-1pt}{\envFontB$\hText[#1]{\left\{}{\right\}}{${\envFont$#2$}$}$}$}}
+\newcommand{\Bra}[2][\envFont]{{\text{\forbra{#1\{}}}#2{\text{\forbra{#1\}}}}}%{\hText[-4pt]{}{}{$\hspace{-1pt}{\envFontB$\hText[#1]{\left\{}{\right\}}{${\envFont$#2$}$}$}$}}
 \newcommand{\SmallPar}[2][0pt]{{\envFontSmall[\scriptsize]\Par[#1]{#2}}}
 \newcommand{\BigPar}[1]{{\text{\envFont\forbra(\hspace{1pt}}}#1{\text{\hspace{1pt}\envFont\forbra)}}}
 \newcommand{\XPar}[1]{{\text{\envFont\forbrax(\hspace{1pt}}}#1{\text{\hspace{1pt}\envFont\forbrax)}}}
-\newcommand{\Sbra}[1]{{\text{\envFont\forbra[\hspace{1pt}}}#1{\text{\envFont\forbra\hspace{1pt}]}}}
-\newcommand{\XSbra}[1]{{\text{\envFont\forbrax[}}#1{\text{\envFont\forbrax]}}}
-\newcommand{\zeroSubs}[1][\Bra]{{#1{0}}}
+\newcommand{\Sbra}[2][1pt]{{\text{\envFont\forbra[\hspace{#1}}}#2{\text{\envFont\forbra\hspace{#1}]}}}
+\newcommand{\XSbra}[2][0pt]{{\text{\envFont\forbrax[\hspace{#1}}}#2{\text{\envFont\forbrax\hspace{#1}]}}}
+\newcommandx{\zeroSubs}[2][1={},2=\Bra]{{#1#2{0}}}
+\def\emptySet{\varnothing}
 
 \newcommand{\Interval}[3]{{\text{\envFont\forbra#1\hspace{1pt}}}#3{\text{\envFont\forbra\hspace{1pt}#2}}}
 \newcommand{\XInterval}[3]{{\text{\envFont\forbrax#1}}#3{\text{\envFont\forbrax#2}}}
@@ -200,6 +201,7 @@
 \newcommand{\Frac}[2]{{\displaystyle{\frac{#1}{#2}}}}
 \def\notRightarrow{\Rightarrow\!\!\!\!\!\!\!/\,\,\,\,}%\hspace{-13.5pt}/\hspace{7.5pt}}
 \def\notLeftarrow{\Leftarrow\hspace{-13.5pt}/\hspace{7.5pt}}
+\def\notLongrightarrow{\Longrightarrow\!\!\!\!\!\!\!\!/\,\,\,\,\,}
 \def\Nbb{{\mathbb{N}}}
 \def\Zbb{{\mathbb{Z}}}
 \def\Qbb{{\mathbb{Q}}}
@@ -207,6 +209,9 @@
 \def\Rbb{{\mathbb{R}}}
 \def\Cbb{{\mathbb{C}}}
 \def\Nbp{{\mathbb{N}^+}}
+\def\nonzeroFbb{\Fbb${\envFontA$\backslash$}${\def\envFont{\envFontB}\zeroSubs}}
+\newcommandx{\nonzero}[2][1=\envFontA,2=\envFontB]{${#1$\backslash$}${\Bra[#2]{0}}}
+\newcommand{\Backslash}[1][\envFontA]{${#1$\backslash$}$}
 \def\mmid{\text{\envFontA|}}
 \def\d{{\textup{\tgnr d}}}
 \def\i{{\textup{\tgnr i}}}
@@ -241,9 +246,19 @@
 \def\NOTICE{{\tgnr\large N{\footnotesize OTICE}\;}}
 \def\COMMENT{{\tgnr\large C{\footnotesize OMMENT}\;}}
 \def\COROLLARY{{\tgnr\large C{\footnotesize OROLLARY}}}
-\def\TIPS{{\tgnr\large T{\footnotesize IPS}\;}}
+\def\TIPS{{\tgnr\large T{\footnotesize IPS}}}
+\newcommand{\TIPSN}[1]{{\tgnr\large T{\footnotesize IPS {\large(#1)}}}}
 \def\Tips{{\tgbfx\large T{\footnotesize IPS}:}}
 \newcommand{\TipsN}[1]{{\tgbfx\large T{\footnotesize IPS {\large#1\,}}:}}
+\def\IndentTips{{\Blind{\Tips \,\,\,}}}
+\newcommand{\IndentTipsN}[1]{{\Blind{\TipsN{#1}\,\,\,}}}
+\def\IndentComment{{\Blind{\Comment \,\,\,}}}
+\def\IndentCorollary{{\Blind{\Corollary \,\,\,}}}
+\def\IndentSolution{{\Blind{\Solution}}}
+\newcommand{\parSol}[1]{\par#1\IndentSolution{}}
+\def\parCom{\par\IndentComment{}}
+\def\parCor{\par\IndentCorollary{}}
+
 \newcommand{\Onumber}[1]{\Largebfxx{#1}\hspace{-2pt}}
 \newcommand{\NoteFor}[1]{\Largebfx{N{\small OTE} F{\small OR} #1:}}
 \newcommand{\NoteForSmall}[1]{{\tgbfx\large N{\footnotesize OTE} F{\footnotesize OR} #1:}}
