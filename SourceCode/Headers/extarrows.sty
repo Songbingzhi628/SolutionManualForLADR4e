@@ -1,0 +1,50 @@
+% Purpose : Provide some extensible arrows in math mode.
+% Author  : Ky-Anh Huynh
+% License : LGPL
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{extarrows}[2020/03/12 v1.2.0 Some extensible arrows]
+
+\RequirePackage{amsmath}
+
+\def\x@arrow{\DOTSB\Relbar}
+\def\xlongequalsignfill@{\arrowfill@\x@arrow\Relbar\x@arrow}
+
+\providecommand{\xlongequal}[2][]{%
+	\ext@arrow 0099\xlongequalsignfill@{#1}{#2}}
+
+\def\xLongleftrightarrowfill@{%
+  \arrowfill@\Longleftarrow\Relbar\Longrightarrow}
+\providecommand{\xLongleftrightarrow}[2][]{%
+	\ext@arrow 0099\xLongleftrightarrowfill@{#1}{#2}}
+
+\def\xlongleftrightarrowfill@{%
+  \arrowfill@\longleftarrow\relbar\longrightarrow}
+\providecommand{\xlongleftrightarrow}[2][]{%
+	\ext@arrow 0099\xlongleftrightarrowfill@{#1}{#2}}
+
+\def\xLeftrightarrowfill@{\arrowfill@\Leftarrow\Relbar\Rightarrow}
+\providecommand{\xLeftrightarrow}[2][]{%
+	\ext@arrow 0099\xLeftrightarrowfill@{#1}{#2}}
+
+\def\xleftrightarrowfill@{\arrowfill@\leftarrow\relbar\rightarrow}
+\providecommand{\xleftrightarrow}[2][]{%
+	\ext@arrow 0099\xleftrightarrowfill@{#1}{#2}}
+
+\def\xLongleftarrowfill@{\arrowfill@\Longleftarrow\Relbar\Relbar}
+\providecommand{\xLongleftarrow}[2][]{%
+	\ext@arrow 0099\xLongleftarrowfill@{#1}{#2}}
+
+\def\xLongrightarrowfill@{\arrowfill@\Relbar\Relbar\Longrightarrow}
+\providecommand{\xLongrightarrow}[2][]{%
+	\ext@arrow 0099\xLongrightarrowfill@{#1}{#2}}
+
+\def\xlongleftarrowfill@{\arrowfill@\longleftarrow\relbar\relbar}
+\providecommand{\xlongleftarrow}[2][]{%
+	\ext@arrow 0099\xlongleftarrowfill@{#1}{#2}}
+
+\def\xlongrightarrowfill@{\arrowfill@\relbar\relbar\longrightarrow}
+\providecommand{\xlongrightarrow}[2][]{%
+	\ext@arrow 0099\xlongrightarrowfill@{#1}{#2}}
+
+\endinput

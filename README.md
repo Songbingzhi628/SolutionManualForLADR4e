@@ -12,9 +12,9 @@
 
 ### **SourceCode**文件夹
 
-这个文件夹包含ttf和otf字体文件、tex源代码、引用的png、jpg图片、.ggb文件。这些文件用于生成**SolusMan-LADR4e.pdf**。主要就是，用**TeXstudio**, **Texmaker**或者其他IDE，亦或者编译器，编译**SolusMan-LADR4e.tex**，输出PDF二进制版本。
+这个文件夹包含ttf和otf字体文件、tex源代码、调用的sty头文件、引用的png、jpg图片、.ggb文件。这些文件用于生成**SolusMan-LADR4e.pdf**。主要就是，用**TeXstudio**, **Texmaker**或者其他IDE，亦或者编译器，编译**SolusMan-LADR4e.tex**，输出PDF二进制版本。
 
-> 该目录下的.ttf和.otf字体文件也在类似的GNU条款约束下。
+> 该目录下的.ttf和.otf字体文件也在类似的GNU条款约束下。该目录下**Headers**文件夹中**extrarrows.sty**在LGPL条款下。
 
 为了更高的实时编译效率，我将代码架构为 **Settings**（Settings.tex）、**Chxxx**（Ch123.tex、Ch45.tex）、**Main**（SolusMan-LADR4e.tex）。
 
