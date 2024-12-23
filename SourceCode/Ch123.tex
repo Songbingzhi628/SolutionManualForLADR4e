@@ -1313,9 +1313,9 @@ $A_{\cdot,k}=R_{1,k}C_{\cdot,1}+\dots+R_{c,k}C_{\cdot,c}=\BigPar{CR}_{\cdot,k}\;
 $A_{j,\cdot}=C_{j,1}R_{1,\cdot}+\dots+C_{j,r}R_{r,\cdot}=\BigPar{CR}_{j,\cdot}\;,\exists\,!\,C_{j,1},\dots,C_{j,r}\in\Fbb,$ forming $C\in\Fbb^{m,r}.$ Thus $A=CR.$\PfEnd\vspace{4pt}
 \Example\par\quad\hspace{0pt}
 $A\,=\,$ {\normalsize$\begin{pmatrix} 10 &\hspace{-4pt} 7 &\hspace{-4pt} 4 &\hspace{-4pt} 1 \\[-2pt] 26 &\hspace{-4pt} 19 &\hspace{-4pt} 12 &\hspace{-4pt} 5\\[-2pt] 46 &\hspace{-4pt} 33 &\hspace{-4pt} 20 &\hspace{-4pt} 7\end{pmatrix}$
-	{$\overset{\SmallPar{\text{I}}}{=\hspace{-3pt}=}$}
+	{$\xlongequal{\SmallPar{\text{I}}}$}
 	$\begin{pmatrix} 1 &\hspace{-4pt} 0\\[-2pt] 0 &\hspace{-4pt} 1\\[-2pt] 2 &\hspace{-4pt} 1\end{pmatrix}\begin{pmatrix} 10 &\hspace{-4pt} 7 &\hspace{-4pt} 4 &\hspace{-4pt} 1\\[-2pt] 26 &\hspace{-4pt} 19 &\hspace{-4pt} 12 &\hspace{-4pt} 5\end{pmatrix}$
-	{$\overset{\SmallPar{\text{II}}}{=\hspace{-4pt}=\hspace{-4pt}=}$}
+	{$\xlongequal{\SmallPar{\text{II}}}$}
 	$\begin{pmatrix} 7 &\hspace{-4pt} 4\\[-2pt] 19 &\hspace{-4pt} 12\\[-2pt] 33 &\hspace{-4pt} 20\end{pmatrix}\begin{pmatrix} 2 &\hspace{-4pt} -1\\[-2pt] 1 &\hspace{-4pt} 0\\[-2pt] 0 &\hspace{-4pt} 1\\[-2pt] -1 &\hspace{-4pt} 2\end{pmatrix}$}\par\quad
 (I) {\normalsize$\begin{pmatrix} 46 &\hspace{-4pt} 33 &\hspace{-4pt} 20 &\hspace{-4pt} 7 \end{pmatrix}=2\begin{pmatrix} 10 &\hspace{-4pt} 7 &\hspace{-4pt} 4 &\hspace{-4pt} 1\end{pmatrix}+\begin{pmatrix} 26 &\hspace{-4pt} 19 &\hspace{-4pt} 12 &\hspace{-4pt} 5\end{pmatrix}=\begin{pmatrix}2 &\hspace{-4pt} 1\end{pmatrix}\begin{pmatrix} 10 &\hspace{-4pt} 7 &\hspace{-4pt} 4 &\hspace{-4pt} 1\\[-2pt] 26 &\hspace{-4pt} 19 &\hspace{-4pt} 12 &\hspace{-4pt} 5\end{pmatrix}$}, using [4E 3.51(b)].\vspace{3pt}\par\quad\HI
 {\small$\begin{pmatrix} 46 &\hspace{-4pt} 33 &\hspace{-4pt} 20 &\hspace{-4pt} 7 \end{pmatrix}$}${}\in\Span{A_{1,\cdot},A_{2,\cdot}},$ and $\Par{A_{1,\cdot},A_{2,\cdot}}$ is linely inde. Thus $B_{S_r}=\BigPar{A_{1,\cdot},A_{2,\cdot}}.$\par\vspace{6pt}\quad\EndI
@@ -1450,7 +1450,7 @@ Then $\tau$ holds for matrices $\Longleftrightarrow\tau$ holds for linear maps.
 }Suppose $A\in\Fbb^{m,n}$ and $B,C\in\Fbb^{n,p}.$\parSol{}
 Note that $\Sbra{A\Par{B+C}}{_{j,k}}=\sum_{r=1}^n A_{j,r}\Par{B+C}{_{r,k}}=\sum_{r=1}^n \Par{A_{j,r}B_{r,k}+A_{j,r}C_{r,k}}=\Par{AB+AC}{_{j,k}}.$\PfEnd\parSol{\vspace{8pt}}
 \Or Define $T,S,R$ such that $\Mt{T}=A,\Mt{S}=B,\Mt{R}=C.$\parSol{}
-$A\Par{B+C}=\Mt{T\Par{S+R}}\overset{[3.9]}{=\hspace{-3pt}=}\Mt{TS+TR}=AB+AC.$\parSol{}
+$A\Par{B+C}=\Mt{T\Par{S+R}}\xlongequal{[3.9]}\Mt{TS+TR}=AB+AC.$\parSol{}
 Or $T\Par{S+R}=TS+TR\Rightarrow\Mt{T\Par{S+R}}=\Mt{TS+TR}\Rightarrow A\Par{B+C}=AB+AC.$\PfEnd
 \SepLine
 
@@ -1460,7 +1460,7 @@ Or $T\Par{S+R}=TS+TR\Rightarrow\Mt{T\Par{S+R}}=\Mt{TS+TR}\Rightarrow A\Par{B+C}=
 }Suppose $A\in\Fbb^{m,n}$ and $B,C\in\Fbb^{n,p}.$ We show that $LHS=\Sbra{\Par{AB}C}_{j,k}=\Sbra{A\Par{BC}}_{j,k}=RHS.$\parSol{}
 $LHS=\Par{AB}{_{j,\cdot}}C_{\cdot,k}=\sum_{s=1}^n\Par{A_{j,s}B_{s,\cdot}}C_{\cdot,k}=\sum_{s=1}^n A_{j,s}\Par{B_{s,\cdot}C_{\cdot,k}}=\sum_{s=1}^n A_{j,s}\Par{BC}{_{s,k}}=RHS.$\PfEnd\parSol{\vspace{8pt}}
 \Or Define $T,S,R$ such that $\Mt{T}=A,\Mt{S}=B,\Mt{R}=C.$\parSol{}
-$\Par{AB}C=\Mt{T\Par{SR}}\overset{[3.9]}{=\hspace{-3pt}=}\Mt{TSR}\overset{[3.9]}{=\hspace{-3pt}=}\Mt{\Par{TS}R}=A\Par{BC}.$\parSol{}
+$\Par{AB}C=\Mt{T\Par{SR}}\xlongequal{[3.9]}\Mt{TSR}\xlongequal{[3.9]}\Mt{\Par{TS}R}=A\Par{BC}.$\parSol{}
 \Or $\Par{TS}R=T\Par{SR}\Rightarrow\Mt{\Par{TS}R}=\Mt{T\Par{SR}}\Rightarrow \Par{AB}C=A\Par{BC}.$\PfEnd
 \SepLine
 
@@ -2214,7 +2214,7 @@ Hence $\varphi\in U^0+W^0.$ Now $\Par{U\cap W}{^0}\subseteq U^0+W^0.$\PfEnd
 \ProblemBnoor{\hypertarget{3F4e23}{4E 3.F.23}}{
 	\TextB{Suppose $\varphi_1,\dots,\varphi_m\in V\apostrophe$. Prove that the following sets are the same.\vspace{2pt}}
 	(a) \TextB{$\Span{\varphi_1,\dots,\varphi_m}$\vspace{2pt}}
-	(b) \TextB{$\BigPar{\Par{\null \varphi_1}\cap\dots\cap\Par{\null \varphi_m}}{^0}\overset{\text{(c)}}{=\hspace{-2.5pt}=}\Bra{\varphi\in V\apostrophe:\Par{\null\varphi_1}\cap\dots\cap\Par{\null\varphi_m}\subseteq\null\varphi}$\vspace{4pt}}
+	(b) \TextB{$\BigPar{\Par{\null \varphi_1}\cap\dots\cap\Par{\null \varphi_m}}{^0}\xlongequal{\text{(c)}}\Bra{\varphi\in V\apostrophe:\Par{\null\varphi_1}\cap\dots\cap\Par{\null\varphi_m}\subseteq\null\varphi}$\vspace{4pt}}
 }By Problem (17), (c) holds.\vspace{1pt}\par\quad
 By Problem (26) \Sbra[3pt]{{\tgsl May req Finite-dim}} and the {\COROLLARY} in Problem (23),\vspace{2pt}\par\quad\,
 $\MathRightBrace{r}{
@@ -2282,8 +2282,8 @@ Hence $\Par{\null\varphi_1}\cap\cdots\cap\Par{\null\varphi_m}=U.$ 又 $\Span{\va
 \Corollary \,\,\,For every subsp $\Omega$ of $V\apostrophe,\;\exists\,!\,$subsp $U$ of $V$ such that $\Omega=U^0.$\vspace{3pt}\par
 \Comment \,\,\,\Sbra[3pt]{{\tgsl Only in Finite-dim}} \;Using Problem (31) and the {\COROLLARY}(c) in Problem (22, 23).\par\quad
 Let $B_{\Omega}=\Par{\varphi_1,\dots,\varphi_m},B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_m,\dots,\varphi_n},B_V=\Par{v_1,\dots,v_m,\dots,v_n}.$\par\quad
-$V\apostrophe=\Span{\varphi_1,\dots,\varphi_m}\oplus\Span{\varphi_{m+1},\dots,\varphi_n}\overset{\text{(I)}}{=\hspace{-2.5pt}=}\Span{v_{m+1},\dots,v_n}{^0}\oplus\Span{v_1,\dots,v_m}{^0}.$\par\quad
-$\Omega=\Span{\varphi_1,\dots,\varphi_m}\overset{\text{(II)}}{=\hspace{-2.5pt}=}\Span{v_{m+1},\dots,v_n}{^0}=U{^0};\;\Span{\varphi_{m+1},\dots,\varphi_n}\overset{\text{(III)}}{=\hspace{-2.5pt}=}\Span{v_1,\dots,v_m}{^0}.$\par\quad
+$V\apostrophe=\Span{\varphi_1,\dots,\varphi_m}\oplus\Span{\varphi_{m+1},\dots,\varphi_n}\xlongequal{\text{(I)}}\Span{v_{m+1},\dots,v_n}{^0}\oplus\Span{v_1,\dots,v_m}{^0}.$\par\quad
+$\Omega=\Span{\varphi_1,\dots,\varphi_m}\xlongequal{\text{(II)}}\Span{v_{m+1},\dots,v_n}{^0}=U{^0};\;\Span{\varphi_{m+1},\dots,\varphi_n}\xlongequal{\text{(III)}}\Span{v_1,\dots,v_m}{^0}.$\par\quad
 $\Longleftrightarrow U=\Span{v_{m+1},\dots,v_n}=\Par{\null\varphi_1}\cap\cdots\cap\Par{\null\varphi_m}.$ \hfill\Sbra[3pt]{{\normalsize{\tgsc Another proof of [3.106]} \;\Or Problem (24)}}\vspace{6pt}\par\quad
 (I) Using the {\COROLLARY}(c), immediately.\vspace{4pt}\par\quad\EndI
 (II)
