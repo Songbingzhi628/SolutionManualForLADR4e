@@ -26,7 +26,7 @@
 
 ##### Licensed under GNU FDL v1.3.
 
-> 饵词：<font size="2">线性代数应该这样学 答案 线性代数应该这样学 解答 线性代数应该这样学 笔记</font>
+# 饵词：线性代数应该这样学 答案 线性代数应该这样学 解答 线性代数应该这样学 笔记
 
 这是我整理的*Linear Algebra Done Right, 4th/3rd E* 的习题答案和课文补注。范围覆盖所有第三版和第四版的课文和习题（除了第一章A节、极少数结合上下文太过显而易见的习题、没有任何日后反复推敲价值的“当堂习题”和方法套路过于雷同的习题）。
 - 习题答案中，有我完全独立思考得出的，有抄 <https://linearalgebras.com/> 的, 有抄 <https://math.stackexchange.com/> 的, 有抄*LADR2eSolutions（By Axler）.pdf*，有抄最新的*LADR4eSolutions经典最全（By Axler？）.pdf*，还有请教别人，乃至请教AI得出来的。

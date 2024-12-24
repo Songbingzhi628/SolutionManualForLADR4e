@@ -35,12 +35,12 @@ under the terms of the GNU Free Documentation License, Version 1.3
 or any later version published by the Free Software Foundation;
 with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
 A copy of the license is included in the file named "COPYING".
-\SepLine[14pt]
+\SepLine[10pt]
 
 \small
-{\centerline{\Large 简介}\vspace{8pt}\par
+{\centerline{\Large 简介}\vspace{6pt}\par
 {\normalsize 这是我个人用于复习的「 {\tgsc Linear Algebra Done Right 3E/4E, by Sheldon Axler} 」笔记，一本习题选答与课文补注。因为使用中文会给我编撰这份笔记带来额外的中英文输入法切换的工作成本，况且对于专业学习者，直接使用英文不会造成任何困扰。但英文词句的冗长性拖慢我复习的效率，所以我对许多常用术语作了简写。这份笔记的内容范围和标识说明，我已经在\href{run:./README.md}{自述}中写得很清楚，不再赘述。这份笔记尚处于缓慢的编撰进度中。\par\vspace{4pt}
-我目前还没有能力和资格评论原书好坏以及线性代数课程教材选用的问题。但作为原书的学习者，我可以说，这本书作为初学线性代数的第一教材，虽然不需要其他辅助教材，但要求学习者有足够的耐心和毅力：课文一次看不懂就多看几遍，一天看不懂就分三天看；习题一个小时做不出来，隔六个小时再尝试，一天做不出来，就隔天再尝试。我虽然没有学过除此以外的其他任何线性代数教材，但我认为这样钻研原书是值得的。}\par
+我目前还没有能力和资格评论原书好坏以及线性代数课程教材选用的问题。但作为原书的学习者，我可以说，这本书作为初学线性代数的第一教材，虽然不需要其他辅助教材，但要求学习者有足够的耐心和毅力：课文一次看不懂就多看几遍，一天看不懂就分三天看；习题一个小时做不出来，隔六个小时再尝试，一天做不出来，就隔天再尝试。我虽然没有学过除此以外的其他任何线性代数教材，但我认为这样钻研原书是值得的。}\par\vspace{4pt}
 
 \begin{center}
 
@@ -50,13 +50,13 @@ A copy of the license is included in the file named "COPYING".
 \begin{tabular}{ c c c c c | c c c c c }
 \hline
          1  &          2  &          3  &  \Lch{4}{4} &          5                         &          6  &          7    &          8  &          9  &          10\\\hline
-        {A} & \Lch{2A}{A} & \Lch{3A}{A} &         {/} & \Lch{5A}{A}                        & \Lch{6A}{A} & \Lch{7A}{A}   & \Lch{8A}{A} & \Lch{9A}{A} & \Lch{10A}{A}\\
-\Lch{1B}{B} & \Lch{2B}{B} & \Lch{3B}{B} &         {/} & \Lch{5BI}{\,$\TXT{B}^\TXT{I}$}     & \Lch{6B}{B} & \Lch{7B}{B}   & \Lch{8B}{B} & \Lch{9B}{B} & \Lch{10B}{B}\\
-        {/} &         {/} &         {/}&          {/} & \Lch{5BII}{\;\,$\TXT{B}^\TXT{II}$} &         {/} &         {/}   &         {/} &         {/} &          {/}\\
-\Lch{1C}{C} & \Lch{2C}{C} & \Lch{3C}{C} &         {/} & \Lch{5C}{C}                        & \Lch{6C}{C} & \Lch{7C}{C}   & \Lch{8C}{C} &         {/} &          {/}\\
-        {/} &         {/} & \Lch{3D}{D} &         {/} &         {/}                        & \Lch{6D}{D} & \Lch{7D}{D}   & \Lch{8D}{D} &         {/} &          {/}\\
-        {/} &         {/} & \Lch{3E}{E} &         {/} & \Lch{5E}{\;E*}                     &         {/} &         {/}   &         {/} &         {/} &          {/}\\
-        {/} &         {/} & \Lch{3F}{F} &         {/} &         {/}                        &         {/} & \Lch{7F}{\;F*}&         {/} &         {/} &          {/}\\
+        {A} & \Lch{2A}{A} & \Lch{3A}{A} &         {} & \Lch{5A}{A}                        & \Lch{6A}{A} & \Lch{7A}{A}   & \Lch{8A}{A} & \Lch{9A}{A} & \Lch{10A}{A}\\
+\Lch{1B}{B} & \Lch{2B}{B} & \Lch{3B}{B} &         {} & \Lch{5BI}{\,$\TXT{B}^\TXT{I}$}     & \Lch{6B}{B} & \Lch{7B}{B}   & \Lch{8B}{B} & \Lch{9B}{B} & \Lch{10B}{B}\\
+        {} &         {} &         {}&          {} & \Lch{5BII}{\;\,$\TXT{B}^\TXT{II}$} &         {} &         {}   &         {} &         {} &          {}\\
+\Lch{1C}{C} & \Lch{2C}{C} & \Lch{3C}{C} &         {} & \Lch{5C}{C}                        & \Lch{6C}{C} & \Lch{7C}{C}   & \Lch{8C}{C} &         {} &          {}\\
+        {} &         {} & \Lch{3D}{D} &         {} &         {}                        & \Lch{6D}{D} & \Lch{7D}{D}   & \Lch{8D}{D} &         {} &          {}\\
+        {} &         {} & \Lch{3E}{E} &         {} & \Lch{5E}{\;E*}                     &         {} &         {}   &         {} &         {} &          {}\\
+        {} &         {} & \Lch{3F}{F} &         {} &         {}                        &         {} & \Lch{7F}{\;F*}&         {} &         {} &          {}\\
 \hline
 \end{tabular}
 
