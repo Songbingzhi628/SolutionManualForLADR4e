@@ -1123,7 +1123,7 @@ Let $U=\Span{Pv_1,\dots,Pv_n}\Rightarrow V=U\oplus\null P^2.$ \;While $U=\range 
 (b) Suppose $T$ is inje. Let $B_{\range T}=\Par{Tv_1,\dots,Tv_n}.$\par\quad\Hb
 Then $\Span{v_1,\dots,v_n}\oplus\null T=V.$ Let $U\oplus\range T=W$.\par\quad\Hb
 Define $S\in\Lm{W,V}$ by $S\Par{Tv_i}=v_i,Su=0$ for each $v_i$ and all $u\in U.$ Thus $ST=I.$\par\vspace{6pt}\quad\Hb
-\Or Define $S\in\Lm{\range T,V}$ by $Sw=T^{-1}w,$ {\tgsl where $T^{-1}$ is the inv of $T\in\Lm{V,\range T}.$}\par\quad\Hb
+\Or Define $S\in\Lm{\range T,V}$ by $Sw=T^{-1}w,$ {where $T^{-1}$ is the inv of $T\in\Lm{V,\range T}.$}\par\quad\Hb
 Then extend it to $S\in\Lm{W,V}$ by (3.A.11). Now $\forall v\in V,STv=T^{-1}Tv=v.$\PfEnd
 \SepLine
 
@@ -1204,7 +1204,7 @@ Assume that $\dim\range TS\geqslant \left\lfloor\Frac{n}{2}\right\rfloor+1.$ The
 $\min\!\Bra{n-\dim\null T,n-\dim\null S}\geqslant \left\lfloor\Frac{n}{2}\right\rfloor+1\Longrightarrow\max\!\Bra{\!\dim\null T,\dim\null S}\leqslant n-\left\lfloor\Frac{n}{2}\right\rfloor-1.$\par\vspace{2pt}\quad\Hb
 又 $\dim\null ST=n\leqslant\dim\null S+\dim\null T\leqslant 2\XPar{n-\left\lfloor\Frac{n}{2}\right\rfloor-1}\Rightarrow \left\lfloor\Frac{n}{2}\right\rfloor+1\leqslant\Frac{n}{2}$. Contradicts.\PfEnd\vspace{10pt}\quad\Hb
 \Or $\dim\null S=n-\dim\range S\leqslant n-\dim\range TS.$\par\vspace{-4pt}\quad\Hb
-\AlignEq{}{\text{And\,}ST=0&\Rightarrow \dim\range TS\leqslant\dim\range T\leqslant\dim\null S\leqslant n-\dim\range TS\hspace{70pt}\\[-4pt]&\Longrightarrow 2\dim\range TS\leqslant n.\text{ Thus }\dim\range TS\leqslant\Frac{n}{2}\Rightarrow\dim\range TS\leqslant\left\lfloor\Frac{n}{2}\right\rfloor.}\PfEnd\vspace{6pt}
+\AlignEq{}{\text{And\,}ST=0&\Rightarrow \dim\range TS\leqslant\dim\range T\leqslant\dim\null S\leqslant n-\dim\range TS\hspace{70pt}\\[-4pt]&\Longrightarrow 2\dim\range TS\leqslant n.\text{ Thus }\dim\range TS\leqslant\Frac{n}{2}\Rightarrow\dim\range TS\leqslant\left\lfloor\Frac{n}{2}\right\rfloor.}\PfEnd\vspace{6pt}\quad
 \hspace{-2pt}$\hMath{l}{\left.}{\right.}{$(c) Let $B_{\Fbb^5}=\Par{v_1,\dots,v_5}.$ Define $S,T\in\Lm{\Fbb^5}$ by $\\\;}\MathLeftMid{l}{T: \; v_1\mapsto 0, \;\;\, v_2\mapsto 0, \;\;\; v_i\mapsto v_i\;;\\\,S: \; v_1\mapsto v_4, \; v_2\mapsto v_5, \;\; v_i\mapsto 0\;;\;\; i=3,4,5.}$\PfEnd
 \SepLine
 
@@ -1414,6 +1414,7 @@ If $A_{1,\cdot}=0,$ then $B_V=\Par{u_1,\dots,u_n}$ and we are done. Otherwise, s
 Let $v_1=\Frac{u_k}{A_{1,k}},$ so that  $Tv_1=1w_1+\Frac{A_{2,k}}{A_{1,k}}w_2+\dots+\Frac{A_{n,k}}{A_{1,k}}w_n.$\vspace{6pt}\par\quad
 Let $v_j=u_{j-1}-A_{1,j-1}v_1$ for each $j\in\Bra{2,\dots,k}.$ \;Let $v_i=u_i-A_{1,i} v_1$ for $i\in\Bra{k+1,\dots,n}.$\vspace{2pt}\par\quad
 \NOTICE that $Tu_i=A_{1,i}w_1+\dots+A_{n,i}w_n.$ 又 Each $u_i\in\Span{v_1,\dots,v_n}=V.$ Let $B_V=\Par{v_1,\dots,v_n}.$\PfEnd
+%TODO: Using 3F.
 \SepLine
 
 \ProblemN{\hypertarget{3C6}{6}}{
