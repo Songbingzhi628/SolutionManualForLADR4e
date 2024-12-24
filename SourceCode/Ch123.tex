@@ -19,6 +19,8 @@
 
 \ChDecl{Ch1B}{1$\cdot$B}
 
+\vspace{6pt}
+
 \ProblemN{1}{
 	\vspace{2pt}\TextN{Prove that $\forall v\in V,-\Par{-v} = v$.}
 }\vspace{2pt}\par\quad
@@ -81,6 +83,7 @@ By Assoc: $\Par{a+\infty}+\Par{-\infty}\neq a+\Par{\infty+\Par{-\infty}}$.\par\q
 
 \ChDecl{Ch1C}{1$\cdot$C}{}\orMode{\hLk{1C7}{7}\;\;\hLk{1C8}{8}\;\;\hLk{1C9}{9}\;\;\hLk{1C11}{11}\;\;\hLk{1C12}{12}\;\;\hLk{1C13}{13}\;\;\hLk{1C15}{15}\;\;\hLk{1C16}{16}\;\;\hLk{1C17}{17}\;\;\hLk{1C18}{18}\;\;\hLk{1C21}{21}\;\;\hLk{1C22}{22}\;\;\hLk{1C23}{23}\;\;\hLk{1C24}{24}}{[1]: 7, 8, 9, 15, 16, 17, 18, 11; [2]: 12, 13; [3]:21, 23, 22, 24.}
 
+\vspace{6pt}
 
 \ProblemN{\hypertarget{1C7}{7}}{
 	\TextN{Give a nonempty $U\subseteq\Rbb^2,$}
@@ -107,7 +110,7 @@ $[\text{\tgbf{II}}]: \cos x+2\sin\sqrt{2}x=\cos\Par{x+p}+2\sin\BigPar{\sqrt{2}x+
 $\MathRightBrace{r}{
 	[\text{\tgbf{II}}]-[\text{\tgbf{I}}]\,:\;\;\sin\sqrt{2}x=\sin\BigPar{\sqrt{2}x+\sqrt{2}p}\vspace{2pt}\\ 
 	2[\text{\tgbf{I}}]-[\text{\tgbf{II}}]:\qquad\qquad\hspace{-1pt} \cos x=\cos\Par{x+p}}\Rightarrow$ Let $x=0,$\;\,$ p=\Frac{m\pi}{\sqrt{2}}=2k\pi.$\; Contradicts.\PfEnd\vspace{10pt}\par
-\SepLine[10pt]
+\SepLine[6pt]
 
 \BulletPointX\Largesl{Suppose $U,W,V_1,V_2,V_3$ are subsps of $V.$}\par
 \Onumber{\hypertarget{1C15}{15}} \centerline{\large\tgnr$U+U\ni u+w\in U.$\qquad\qquad\!}\PfEnd
@@ -234,6 +237,7 @@ Now $V_1\subseteq V_2,\;U_2\subseteq U_1$ and $V_1\oplus U_1=V_2\oplus U_2.$ But
 
 \vfill\ChDecl{Ch2A}{2$\cdot$A}{}\orMode{\hLk{2A1}{1}\;\;\hLk{2A2}{2}\;\;\hLk{2A6}{6}\;\;\hLk{2A10}{10}\;\;\hLk{2A11}{11}\;\;\hLk{2A14}{14}\;\;\hLk{2A16}{16}\;\;\hLk{2A17}{17}\;\;|\;\;\hLk{2A4e314}{4E: 3,14}}{[1]: 2; [2]: 1, 6, (4E 3, 14), 10; [3]: 11, 14, 16, 17.}
 
+\vspace{6pt}
 
 \ProblemN{\hypertarget{2A2}{2}}{
 	(a) \TextN{[P]\hspace{17pt}{\; A list $\Par{v}$ of length $1$ in $V$ is linely inde $\Longleftrightarrow v\neq 0.$} \hfill[Q]}
@@ -367,6 +371,23 @@ Let $U=\Span{e_1,e_2,e_3}=\Span{v_1,v_2,v_3-v_4}.$ Then $v_3\not\in U$ and $\Par
 But if we let $u\in U\nonzero$ and $w\in W\nonzero$, then $\MathRightBrace{l}{w\in\complement_V U \cup \zeroSubs\\ u\pm w\in\complement_V U \cup \zeroSubs }\Rightarrow u\in\complement_V U \cup \zeroSubs.$ Contradicts.\vspace{4pt}\TextB{}
 To fix this, {\Large\envFontLarge denote the set $\Bra{W_1,W_2,\cdots}$ by $\mathcal{S}_V U$,} {\small where for each $W_i,V=U\oplus W_i$. See also in (1.C.23).}\par\SepLine
 
+\ProblemB[]{
+	\Tips \,\,\,\TextB{Suppose $V$ is finite-dim with $\dim V=n$ and $U$ is a subsp of \,$V$ with $U\neq V.$}
+	\IndentTips\TextB{Prove that $\exists\,B_V=\Par{v_1,\dots,v_n}$ such that each $v_k\not\in U.$}
+}\TextB{\vspace{0pt}}
+Note that $U\neq V\Rightarrow n\geqslant 1.$ We will construct $B_V$ via the following process.\TextB{}
+{\tgbfx Step 1.} $\exists\,v_1\in V\Backslash U\Rightarrow v_1\neq 0.$ If $\Span{v_1}=V$ then we stop.\TextB{}
+{\tgbfx Step k.} Suppose $\Par{v_1,\dots,v_{k-1}}$ is linely inde in $V,$ each of which belongs to $V\Backslash U.$\TextB{}
+\Blind{\tgbfx Step k.} Note that $\Span{v_1,\dots,v_{k-1}}\neq V.$ And if $\Span{v_1,\dots,v_{k-1}}\cup U=V,$ then by (1.C.12),\TextB{}
+\Blind{\tgbfx Step k.} \Sbra{ because $\Span{v_1,\dots,v_{k-1}}\not\subseteq U,$ } $U\subseteq \Span{v_1,\dots,v_{k-1}}\Rightarrow\Span{v_1,\dots,v_{k-1}}=V.$\TextB{}
+\Blind{\tgbfx Step k.} Hence because $\Span{v_1,\dots,v_{k-1}}\neq V,$ it must be case that $\Span{v_1,\dots,v_{k-1}}\cup U\neq V.$\TextB{}
+\Blind{\tgbfx Step k.} Thus $\exists\,v_k\in V\Backslash U$ such that $v_k\not\in\Span{v_1,\dots,v_{k-1}}.$\TextB{}
+\Blind{\tgbfx Step k.} By (2.A.11), $\Par{v_1,\dots,v_k}$ is linely inde in $V$. If $\Span{v_1,\dots,v_k}=V,$ then we stop.\TextB{}
+Because $V$ is finite-dim, this process will stop after $n$ steps.\PfEnd\vspace{4pt}\TextB{}
+\Or Suppose $U\neq\zeroSubs.$ Let $B_U=\Par{u_1,\dots,u_m}.$ Extend to a basis $\Par{u_1,\dots,u_n}$ of $V.$\TextB{}
+\Blind{\Or}Then let $B_V=\Par{u_1-u_k,\dots,u_m-u_k,u_{m+1},\dots,u_k,\dots,u_n}.$\PfEnd
+\SepLine
+
 \ProblemN{\hypertarget{2B1}{1}}{
 	\TextN{Find all vecsps on whatever $\Fbb$ that have exactly one basis.}
 }\par\quad
@@ -390,8 +411,7 @@ $Q\Rightarrow P:\forall v\in V,\exists\,!\,b_i\in\Fbb,\;v=b_1w_1+\dots+b_mw_m\Ri
 \ProblemB{
 	\hypertarget{2B4e5}{}\TextB{Suppose $U,W$ are finite-dim and $V=U+W.$ Let $B_U=\Par{u_1,\dots,u_m},\;B_W=\Par{w_1,\dots,w_n}.$}
 	\TextB{Prove that $\exists\,B_V$ consisting of vecs in $U\cup W$.}
-}\par\quad
-Because $V=\Span{u_1,\dots,u_m}+\Span{w_1,\dots,w_n}=\Span{u_1,\dots,u_m,w_1,\dots,w_n}.$\par\quad
+}Because $V=\Span{u_1,\dots,u_m}+\Span{w_1,\dots,w_n}=\Span{u_1,\dots,u_m,w_1,\dots,w_n}.$\parSol{}
 By [2.31], $B_V$ can be reduced from $\Par{u_1,\dots,u_m,w_1,\dots,w_n}.$\PfEnd
 \SepLine
 
@@ -402,13 +422,14 @@ By [2.31], $B_V$ can be reduced from $\Par{u_1,\dots,u_m,w_1,\dots,w_n}.$\PfEnd
 $\forall v\in V,\exists\,!\,u\in U,w\in W\Rightarrow\exists\,!\,a_i,b_i\in\Fbb,v=u+w=\Par{a_1 u_1+\dots+a_m u_m}+\Par{b_1 w_1+\dots+b_n w_n}.$\PfEnd\quad
 \Or\;$V=\Span{u_1,\dots,u_m}\oplus\Span{w_1,\dots,w_n}=\Span{u_1,\dots,u_m,w_1,\dots,w_n}.$\vspace{2pt}\par\quad
 \Blind{\Or\;}Note that $\sum_{i=1}^ma_iu_i+\sum_{i=1}^nb_iw_i=0\Rightarrow\sum_{i=1}^ma_iu_i=-\sum_{i=1}^nb_iw_i\in U\cap W=\zeroSubs.$\PfEnd
-\SepLine\pagebreak
+\SepLine
 
 \BulletPointX\NoteFor{{\tgsc linely inde sequence and }[2.34]}\;\;$“V=\Span{v_1,\dots,v_n,\dots}”$ is an invalid expression.\TextB{}
 If we allow using $“$infinite list$”$, then we must guarantee that $\Par{v_1,\dots,v_n,\dots}$ is a spanning $“$list$”$\TextB{}
 such that $\forall v\in V,\exists$ smallest $n\in\Nbp,\;v=a_1 v_1+\dots+a_n v_n.$ Moreover, given a list $\Par{w_1,\cdots,w_n,\cdots}$ in $W,$\TextB{}
 we can prove that $\exists\,!\,T\in\Lm{V,W}$ with each $Tv_k=w_k,$ which has less restrictions than [3.5].\TextB{}
-But the key point is, how can we guarantee that such a $“$list$”$ exists. \colorbox{yellow}{TODO: More details.}%\TextB{}
+But the key point is, how can we guarantee that such a $“$list$”$ exists. \colorbox{yellow}{TODO: More details.}
+%\TextB{}
 %\TextB{}
 \SepLine\ChEnd
 
@@ -433,34 +454,14 @@ But the key point is, how can we guarantee that such a $“$list$”$ exists. \c
 Then $\forall v\in V,\exists\,!\,a_i\in\Fbb,v=a_1 v_1+\dots+a_n v_n\Rightarrow\exists\,!\,u_i\in V_i,v=u_1+\dots+u_n$\PfEnd
 \SepLine
 
-\ProblemB[]{
-	\Corollary \,\,\,\TextB{Suppose $W$ is finite-dim, $\dim W=m$ and $w\in W\nonzero.$}
-	\IndentCorollary{}\TextB{Prove that $\exists\,B_W=\Par{w_1,\dots,w_m}$ such that $w=w_1+\dots+w_m.$\vspace{4pt}}
-	By Problem (15), $\exists$ one-dim subsps $W_1,\dots,W_m$ of $W$ such that $W=W_1\oplus\dots\oplus W_m.$\TextB{}
-	Note that $\dim W_i=\dim\Span{w_i}=1\Rightarrow\forall x_i\in W_i,\exists\,!\,c_i\in\Fbb,x_i=c_i w_i.$\TextB{}
-	Suppose $w=x_1+\dots+x_m,$ where each $x_i=c_i w_i\in W_i.$ Then $\Par{x_1,\dots,x_m}$ is also a basis of $W.$\PfEnd\TextB{\vspace{6pt}}
-	\Or Note that $w\neq 0\Rightarrow m\geqslant 1.$ If $m=1$ then let $w_1=w$ and we are done. Suppose $m>1.$\TextB{}
-	Extend $\Par{w}$ to a basis $\Par{w,w_1,\dots,w_{m-1}}$ of $W.$ Let $w_m=w-w_1-\dots-w_{m-1}.$\TextB{}
-	又 $\Span{w,w_1,\dots,w_{m-1}}=\Span{w_1,\dots,w_m}.$ Hence $\Par{w_1,\dots,w_m}$ is also a basis of $W.$\PfEnd\vspace{14pt}
-}
-\SepLine
-
-\ProblemB[]{
-	{\NewTheorem \,\,\,}\TextB{Suppose $V$ is finite-dim with $\dim V=n$ and $U$ is a subsp of \,$V$ with $U\neq V.$}
-	\Blind{\NewTheorem\,\,\,}\TextB{Prove that $\exists\,B_V=\Par{v_1,\dots,v_n}$ such that each $v_k\not\in U.$}
-}\TextB{\vspace{0pt}}
-Note that $U\neq V\Rightarrow n\geqslant 1.$ We will construct $B_V$ via the following process.\TextB{}
-{\tgbfx Step 1.} $\exists\,v_1\in V\Backslash U\Rightarrow v_1\neq 0.$ If $\Span{v_1}=V$ then we stop.\TextB{}
-{\tgbfx Step k.} Suppose $\Par{v_1,\dots,v_{k-1}}$ is linely inde in $V,$ each of which belongs to $V\Backslash U.$\TextB{}
-\Blind{\tgbfx Step k.} Note that $\Span{v_1,\dots,v_{k-1}}\neq V.$ And if $\Span{v_1,\dots,v_{k-1}}\cup U=V,$ then by (1.C.12),\TextB{}
-\Blind{\tgbfx Step k.} ( because $\Span{v_1,\dots,v_{k-1}}\not\subseteq U,$ ) $U\subseteq \Span{v_1,\dots,v_{k-1}}\Rightarrow\Span{v_1,\dots,v_{k-1}}=V.$\TextB{}
-\Blind{\tgbfx Step k.} Hence because $\Span{v_1,\dots,v_{k-1}}\neq V,$ it must be case that $\Span{v_1,\dots,v_{k-1}}\cup U\neq V.$\TextB{}
-\Blind{\tgbfx Step k.} Thus $\exists\,v_k\in V\Backslash U$ such that $v_k\not\in\Span{v_1,\dots,v_{k-1}}.$\TextB{}
-\Blind{\tgbfx Step k.} By (2.A.11), $\Par{v_1,\dots,v_k}$ is linely inde in $V$. If $\Span{v_1,\dots,v_k}=V,$ then we stop.\TextB{}
-Because $V$ is finite-dim, this process will stop after $n$ steps.\PfEnd\vspace{4pt}\TextB{}
-\Or If $U=\zeroSubs$ then we are done. Let $\dim U\geqslant 1.$\TextB{}
-Let $\Par{u_1,\dots,u_m}$ be a basis of $U.$ Extend to a basis $\Par{u_1,\dots,u_n}$ of $V.$\TextB{}
-Then let $B_V=\Par{u_1-u_k,\dots,u_m-u_k,u_{m+1},\dots,u_k,\dots,u_n}.$\PfEnd
+\ProblemBnoor{\NoteForSmall{Problem (15)}}[]{
+	\TextB{}
+	\TextB{Suppose $v\in V\nonzero,$ and $\dim V=n\geqslant 1.$ Prove that $\exists\,B_V=\Par{v_1,\dots,v_n},v=v_1+\dots+v_n.$}
+}If $n=1$ then let $v_1=v$ and we are done. Suppose $n>1.$\parSol{}
+Extend $\Par{v}$ to a basis $\Par{v,v_1,\dots,v_{n-1}}$ of $V.$ Let $v_n=v-v_1-\dots-v_{n-1}.$\parSol{}
+又 $\Span{v,v_1,\dots,v_{n-1}}=\Span{v_1,\dots,v_n}.$ Hence $\Par{v_1,\dots,v_n}$ is also a basis of $V.$\PfEnd\vspace{4pt}
+\Comment \,\,\,Let $B_V=\Par{v_1,\dots,v_n}$ and suppose $v=u_1+\dots+u_n,$ where each $u_i=a_i v_i\in V_i.$\parCom
+But $\Par{u_1,\dots,u_n}$ might not be a basis, because there might be some $u_i=0.$\vspace{-2pt}
 \SepLine\pagebreak
 
 \ProblemN{\hypertarget{2C7}{7}}{
@@ -673,9 +674,9 @@ For example, $X=\Bra{\Par{x,0}\in\Rbb^2:x\in\Rbb},Y=\Bra{\Par{0,y}\in\Rbb^2:y\in
 
 \ChEnd\pagebreak
 
-\ChDecl{Ch3A}{3$\cdot$A}{}\orMode{\hLk{3A3}{3}\;\;\hLk{3A4}{4}\;\;\hLk{3A5}{5}\;\;\hLk{3A7}{7}\;\;\hLk{3A8}{8}\;\;\hLk{3A10}{10}\;\;\hLk{3A11}{11}\;\;\hLk{3A12}{12}\;\;\hLk{3A13}{13}\;\;|\;\;\hLk{3A4e10}{4E:\;\;10}\;\;\hLk{3A4e11}{11}\;\;\hLk{3A4e17}{17}}{[1]: (4E 1.B.7), 5; [2]: 3, 4, 7, 8, 9, (4E 3.A.10), 10, 11, 12;$\\$[3]: 13, (4E 3.A.17), (4E 3.B.32); [4]: (4E 3.A.11).}
+\ChDecl{Ch3A}{3$\cdot$A}{}\orMode{[1]: (4E 1.B.7), 5; [2]: 3, 4, 7, 8, 9, (4E 10), 10, 11, 12; [3]: 13, (4E 17), (4E 3.B.32); [4]: (4E 11).}{\hLk{3A3}{3}\;\;\hLk{3A4}{4}\;\;\hLk{3A5}{5}\;\;\hLk{3A7}{7}\;\;\hLk{3A8}{8}\;\;\hLk{3A10}{10}\;\;\hLk{3A11}{11}\;\;\hLk{3A12}{12}\;\;\hLk{3A13}{13}\;\;|\;\;\hLk{3A4e10}{4E:\;\;10}\;\;\hLk{3A4e11}{11}\;\;\hLk{3A4e17}{17}}
 
-\vspace{3pt}
+\vspace{8pt}
 
 \BulletPointX\TipsN{1} \,\,\,$T:V\rightarrow W$ is linear $\Longleftrightarrow\MathLeftrightMid{l}{\hspace{-4pt}$
 (一) $\forall v,u\in V,T\Par{v+u}=Tv+Tu;\\\hspace{-4pt} $
@@ -1413,8 +1414,8 @@ Let $\Par{u_1,\dots,u_n}$ be a basis of $V$. Denote $\Mt[\BigPar]{T,\Par{u_1,\do
 If $A_{1,\cdot}=0,$ then $B_V=\Par{u_1,\dots,u_n}$ and we are done. Otherwise, suppose $A_{1,k}\neq 0.$\vspace{2pt}\par\quad
 Let $v_1=\Frac{u_k}{A_{1,k}},$ so that  $Tv_1=1w_1+\Frac{A_{2,k}}{A_{1,k}}w_2+\dots+\Frac{A_{n,k}}{A_{1,k}}w_n.$\vspace{6pt}\par\quad
 Let $v_j=u_{j-1}-A_{1,j-1}v_1$ for each $j\in\Bra{2,\dots,k}.$ \;Let $v_i=u_i-A_{1,i} v_1$ for $i\in\Bra{k+1,\dots,n}.$\vspace{2pt}\par\quad
-\NOTICE that $Tu_i=A_{1,i}w_1+\dots+A_{n,i}w_n.$ 又 Each $u_i\in\Span{v_1,\dots,v_n}=V.$ Let $B_V=\Par{v_1,\dots,v_n}.$\PfEnd
-%TODO: Using 3F.
+\NOTICE that $Tu_i=A_{1,i}w_1+\dots+A_{n,i}w_n.$ 又 Each $u_i\in\Span{v_1,\dots,v_n}=V.$ Let $B_V=\Par{v_1,\dots,v_n}.$\PfEnd%\vspace{6pt}\quad
+%TODO\Or Using notation and results in (3.F).
 \SepLine
 
 \ProblemN{\hypertarget{3C6}{6}}{
@@ -1427,10 +1428,10 @@ Then $Tv_i=w_1+\dots+w_m$ for all $i=1,\dots,n$. Because $w_1,\dots,w_n$ is line
 Let $B_{\null T}=\Par{u_2,\dots,u_n}.$ Extend to a basis $\Par{u_1,u_2,\dots,u_n}$ of $V.$\par\quad\Hb
 Let $w_1=Tv_1-w_2-\dots-w_m.$ Extend to $B_W.$ \;Let $v_1=u_1,v_i=u_1+u_i.$ Extend to $B_V.$\PfEnd\vspace{6pt}\quad\Hb
 \Or Suppose $\range T$ has a basis $\Par{w}$.\par\quad\Hb
-By (2.C.15 \COROLLARY), $\exists\,B_W=\Par{w_1,\dots,w_m}$ such that $w=w_1+\dots+w_m.$\par\quad\Hb
-By (2.C \NEWTHEOREM), $\exists$ a basis $\Par{u_1,\dots,u_n}$ of $V$ such that each $u_k\not\in\null T.$\par\quad\Hb
-$\forall k\in\Bra{1,\dots,n},Tu_k\in\range T=\Span{w}\Rightarrow Tu_k=\lambda_k w,\exists\,\lambda_k\in\nonzeroFbb.$\par\quad\Hb
-Let $v_k=\lambda_k^{-1}u_k\neq 0\Rightarrow B_V=\Par{v_1,\dots,v_n}.$ Hence for each $v_k,Tv_k=w=w_1+\dots+w_m.$\PfEnd
+By \Sbra{2.C {\NOTEFOR} (15)}, $\exists\,B_W=\Par{w_1,\dots,w_m}$ such that $w=w_1+\dots+w_m.$\par\quad\Hb
+By (2.C {\TIPS}), $\exists$ a basis $\Par{u_1,\dots,u_n}$ of $V$ such that each $u_k\not\in\null T.$\par\quad\Hb
+Now each $Tu_k\in\range T=\Span{w}\Rightarrow Tu_k=\lambda_k w,\exists\,\lambda_k\in\nonzeroFbb.$\par\quad\Hb
+Let $v_k=\lambda_k^{-1}u_k\neq 0,$ so that each $Tv_k=w=w_1+\dots+w_m.$ Thus $B_V=\Par{v_1,\dots,v_n}$ will do.\PfEnd
 \SepLine
 
 \ProblemB{
@@ -1466,17 +1467,16 @@ $\Par{AB}C=\Mt{T\Par{SR}}\xlongequal{[3.9]}\Mt{TSR}\xlongequal{[3.9]}\Mt{\Par{TS
 \SepLine
 
 \ProblemN{\hypertarget{3C15}{15}}{
-	\TextNL{Suppose $A\in\Fbb^{n,n},j,k\in\Bra{1,\dots,n}$. Show that $\Par{A^3}_{j,k}=\sum_{p=1}^n \sum_{r=1}^n A_{j,p}A_{p,r}A_{r,k}$.\vspace{6pt}}
+	\TextNL{Suppose $A\in\Fbb^{n,n},j,k\in\Bra{1,\dots,n}$. Show that $\BigPar{A^3}_{j,k}=\sum_{p=1}^n \sum_{r=1}^n A_{j,p}A_{p,r}A_{r,k}$.\vspace{6pt}}
 }\vspace{-6pt}\AlignEq{}{\BigPar{AAA}_{j,k} &= \BigPar{AA}_{j,\cdot}\hspace{1pt}A_{\cdot,k}=\textstyle\sum_{p=1}^n \BigPar{A_{j,p}A_{p,\cdot}}A_{\cdot,k}=\textstyle\sum_{p=1}^n \sum_{r=1}^n A_{j,p}A_{p,r}A_{r,k}.\hspace{60pt}\\
-	\text{\Or}\;\;\BigPar{AAA}_{j,k} &=\textstyle\sum_{r=1}^n\BigPar{AA}_{j,r}A_{r,k} =\textstyle\sum_{r=1}^n\XPar{\sum_{p=1}^n A_{j,p}A_{p,r}}\hspace{1pt}A_{r,k}\\&=\textstyle\sum_{r=1}^n\left[A_{j,1}\BigPar{A_{1,r}A_{r,k}}+\dots+A_{j,n}\BigPar{A_{n,r}A_{r,k}}\right]\\&=\textstyle A_{j,1}\sum_{r=1}^n A_{1,r}A_{r,k}+\dots+A_{j,n}\textstyle\sum_{r=1}^n A_{n,r}A_{r,k}=\textstyle\sum_{p=1}^n \sum_{r=1}^n A_{j,p}A_{p,r}A_{r,k}.}\PfEnd[-25pt]
-\Comment \,\,\,
+	\text{\Or}\;\;\BigPar{AAA}_{j,k} &=\textstyle\sum_{r=1}^n\BigPar{AA}_{j,r}A_{r,k} =\textstyle\sum_{r=1}^n\XPar{\sum_{p=1}^n A_{j,p}A_{p,r}}\hspace{1pt}A_{r,k}\\&=\uline{\textstyle\sum_{r=1}^n\left[A_{j,1}\BigPar{A_{1,r}A_{r,k}}+\dots+A_{j,n}\BigPar{A_{n,r}A_{r,k}}\right]}\\&=\textstyle A_{j,1}\sum_{r=1}^n A_{1,r}A_{r,k}+\dots+A_{j,n}\textstyle\sum_{r=1}^n A_{n,r}A_{r,k}=\textstyle\sum_{p=1}^n \sum_{r=1}^n A_{j,p}A_{p,r}A_{r,k}.}\PfEnd[-25pt]
 \SepLine
 
 \ProblemB{
 	\hypertarget{3C12}{}\TextB{Prove that the commutativity does not hold in $\Fbb^{m,n}.$}
 }Suppose $\dim V=n,\dim W=m$ and the commutativity holds in $\Fbb^{n,m}.$\parSol{}
 $\forall T\in\Lm{V,W},S\in\Lm{W,V},\Mt{TS}=\Mt{T}\Mt{S}=\Mt{S}\Mt{T}=\Mt{ST}.$\parSol{}
-Hence $ST=TS.$ Which in general is not true.\PfEnd
+Hence $ST=TS.$ Which in general does not hold.\PfEnd
 \SepLine
 
 %\ProblemN{12}{
@@ -1809,7 +1809,7 @@ Hence $w_i=\lambda v_i\Rightarrow\Mt{S}=\Mt[\BigPar]{\lambda I,\Par{v_1,\dots,v_
 \ProblemBnoor{\hypertarget{3D4e19}{}10.A.3, \OR 4E 3.D.19}{
 	\TextB{Suppose $V$ is finite-dim and $T\in\Lm{V}$.}
 	\TextB{Prove that $\forall B_V\neq B_V',\;\Mt{T,B_V}=\Mt{T,B'_V}\Longrightarrow T=\lambda{I},\exists\,\lambda\in\Fbb.$}
-}\Sbra{ Compare with the first solution of (3.D.16) in 3.A }\par\quad
+}\Sbra{ Compare with the first solution of (3.D.16) in (3.A) }\par\quad
 Suppose $\forall B_V\neq B_V',\;\Mt{T,B_V}=\Mt{T,B'_V}.$ If $T=0$, then we are done.\vspace{3pt}\par\quad
 Suppose $T\neq 0,$ and $v\in V\nonzero.$ Assume that $\Par{v,Tv}$ is linely inde.\vspace{3pt}\par\quad
 Extend $\Par{v,Tv}$ to $B_V=\Par{v,Tv,u_3,\dots,u_n}.$ Let $B=\Mt
@@ -1833,8 +1833,8 @@ Consider the basis $B_V'=\Par{v\apostrophe_1,\dots,v\apostrophe_j,\dots,v\apostr
 where $v\apostrophe_j=v_k,\,\,v_k\apostrophe=v_j$ and $v\apostrophe_i=v_i$ for all $i\in\Bra{1,\dots,m}\Backslash[\LARGE]\Bra{\,j,k}.$\vspace{3pt}\par\quad
 Remember that $\Mt{T,B_V'}=\Mt{T,B_V}=A.$\vspace{3pt}\par\quad
 Hence $T\Par{v\apostrophe_k}=A_{1,k}v\apostrophe_1+\dots+A_{k,k}v\apostrophe_k+\dots+A_{m,k}v\apostrophe_m=A_{k,k}v\apostrophe_k=A_{k,k}v_j,$ while $T\Par{v\apostrophe_k}=T\Par{v_j}=A_{j,j}v_j.$\vspace{3pt}\par\quad
-Thus $A_{k,k}=A_{j,j}.$\PfEnd
-%\vspace{10pt}\quad\Or ??? ( There must be another solution using theorems and facts given in 3.D )\par
+Thus $A_{k,k}=A_{j,j}.$\PfEnd\vspace{10pt}\quad
+\Or ??? \Sbra{ There must be another solution using theorems and facts given in (3.D). }\par
 \SepLine\pagebreak
 
 \ProblemN{\hypertarget{3D18}{18}}{
