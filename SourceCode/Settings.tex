@@ -69,10 +69,11 @@
 \def\envFontLarge{\def\envFontA{\LARGE}\def\envFont{\Large}\def\envFontB{\large}}
 \def\envFontDefault{\def\envFontA{\Large}\def\envFont{\large}\def\envFontB{\normalsize}}
 \newcommand{\envFontSmall}[1][\small]{\def\envFontA{\Large}\def\envFont{\normalsize}\def\envFontB{#1}}
-\newcommand{\TextE}[1]{\dbsp\envFontLarge\Largesl{#1}\envFontDefault\par\IndentE}
-\newcommand{\TextN}[1]{\dbsp\envFontLarge\Largesl{#1}\envFontDefault\par\IndentN}
-\newcommand{\TextB}[1]{\dbsp\envFontLarge\Largesl{#1}\envFontDefault\par\IndentB}
-\newcommand{\TextNL}[1]{\dbsp\envFontLarge\Largesl{#1}\envFontDefault\par\IndentNL}
+\newcommand{\TextE}[1]{\envFontLarge\Largesl{#1}\envFontDefault\par\IndentE}
+\newcommand{\TextN}[1]{\envFontLarge\Largesl{#1}\envFontDefault\par\IndentN}
+\newcommand{\TextB}[1]{\envFontLarge\Largesl{#1}\envFontDefault\par\IndentB}
+\newcommand{\Text}[1]{\envFontLarge\Largesl{#1}\envFontDefault\par{\,\!}}
+\newcommand{\TextNL}[1]{\envFontLarge\Largesl{#1}\envFontDefault\par\IndentNL}
 %}
 
 %{ 关于排版缩进的便捷指令
