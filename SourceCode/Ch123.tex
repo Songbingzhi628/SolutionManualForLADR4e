@@ -790,7 +790,7 @@ while $T\Par{v+u}=0=Tv+Tu=0+Su\Rightarrow Su=0.$ Contradicts.\PfEnd
 \ProblemN{\hypertarget{3A11}{11}}{
 	\TextNL{Suppose $U$ is a subsp of \,$V$ and $S\in\Lm{U,W}$.}
 	\TextNL{Prove that $\exists\,T\in\Lm{V,W},Tu = Su,\forall u\in U$. {\large\tgnr\envFontDefault\BigPar{ \Or $\exists\,T\in\Lm{V,W},T\mmid_U=S.$ }}}
-	\TextNL{\large In other words, every linear map on a subsp of \,$V$ can be extended to a linear map on the entire $V$.}
+	\TextNL{\large In other words, every linear map on a subsp of \,$V$ can be {\tgsc extended} to a linear map on the entire $V$.}
 }Suppose $W$ is such that $V=U\oplus W.$ Then $\forall v\in V,\exists\,!\,u_v\in U,w_v\in W,v=u_v+w_v.$\parSol{}
 Define $T\in\Lm{V,W}$ by $T\Par{u_v+w_v}=Su_v.$\PfEnd\parSol{\vspace{2pt}}
 \Or \Sbra[3pt]{{\tgsl Finite-dim Req}} \;Define by $T\XPar{\sum_{i=1}^m a_i u_i}=\sum_{i=1}^n a_i Su_i.$ Let $B_V=\Par{\overbrace{u_1,\dots,u_n}^{B_U},\dots,u_m}.$\PfEnd
@@ -953,10 +953,9 @@ If $\dim W=1,$ then $W=\Span{w_0}.$ Thus $U=\Span{T_0},$ where each $T_0v_i=0\Ri
 
 \ProblemN{\hypertarget{3B10}{10}} {
 	\TextNL{Suppose $\Span{v_1,\dots,v_n}=V$. Show that $\Span{Tv_1,\dots,Tv_n}=\range T$.}
-}\par\quad
-(a) $\range T=\Bra{Tv:v\in V}=\Bra{Tv:v\in\Span{v_1,\dots,v_n}}\Rightarrow Tv_1,\dots,Tv_n\in\range T\Rightarrow$ By [2.7].\par\quad\Ha
-\Or $\Span{Tv_1,\dots,Tv_n}\ni a_1 Tv_1+\dots+a_n Tv_n=T\Par{a_1 v_1+\dots+a_n v_n}\in\range T.$\par\quad
-(b) $\forall\,w\in\range T,\exists\,v\in V,w=Tv.\,\Par{\exists\,a_i\in\Fbb,v=a_1 v_1+\dots+a_n v_n}\Rightarrow w=a_1 Tv_1+\dots+a_n Tv_n.$\PfEnd
+}(a) $\range T=\Bra{Tv:v\in\Span{v_1,\dots,v_n}}\Rightarrow Tv_1,\dots,Tv_n\in\range T.$ By [2.7].\parSol{\Ha}
+\Or $\Span{Tv_1,\dots,Tv_n}\ni a_1 Tv_1+\dots+a_n Tv_n=T\Par{a_1 v_1+\dots+a_n v_n}\in\range T.$\parSol{}
+(b) $\forall w\in\range T,w=Tv,\exists\,v\in V\Rightarrow\exists\,a_i\in\Fbb,v=\sum_{i=1}^na_i v_i,w=a_1 Tv_1+\dots+a_n Tv_n.$\PfEnd
 \SepLine
 
 %\ProblemN{\hypertarget{3B11}{11}}{
@@ -966,9 +965,11 @@ If $\dim W=1,$ then $W=\Span{w_0}.$ Thus $U=\Span{T_0},$ where each $T_0v_i=0\Ri
 
 \ProblemN[]{\hypertarget{3B11}{11}}{
 	\TextNL{Suppose $S_1,\dots,S_n\in\Lm{V}$ and $S=S_1S_2\cdots S_n$ makes sense. \large\tgnr Then using induction\hspace{1pt}$:$\vspace{2pt}}
-	(a) \TextNL{$\range S_1\supseteq\range\Par{S_1S_2}\supseteq\cdots\supseteq\range\Par{S};$\vspace{2pt}}
-	(b) \TextNL{$\null S_n\subseteq \null\Par{S_{n-1}S_n}\subseteq\cdots\subseteq\null\Par{S}.$\vspace{2pt}}
-	\Corollary \,\,\,(1) $S$ surj $\Longrightarrow$ each $S_k$ surj; \; (2) $S$ inje $\Longleftrightarrow$ each $S_k$ inje.\TextNL{\vspace{-4pt}}
+	(a) $\range S_1\supseteq\range\Par{S_1S_2}\supseteq\cdots\supseteq\range\Par{S};$ \; {\tgnr\large(b)} $\null S_n\subseteq \null\Par{S_{n-1}S_n}\subseteq\cdots\subseteq\null\Par{S}.$\par\vspace{2pt}
+	\BulletPointX Define $X_p=\Bra{T\in\Lm{V}:p\Par{T}\text{ holds}};\;P_p:X_p$ is closed under vec multi;\;$Q_p:X_p$ is a group.\TextB{}
+	(1) $S$ surj $\Longleftrightarrow$ each $S_k$ surj. \;$P_{surj}$ holds. \; (2) $S$ inje $\Longleftrightarrow$ each $S_k$ inje. \;$P_{inje}$ holds.\TextB{}
+	(3) $P_{inv}$ and $Q_{inv}$ hold. $Q_{p}$ in (1) and (2) holds $\Longleftrightarrow V$ is finite-dim.\TextB{}
+	(4) $P_{inje\;or\;surj}$ holds $\Longleftrightarrow V$ is finite-dim $\Longleftrightarrow Q_{inje\;or\;surj}$ holds.\TextB{\vspace{-4pt}}
 }\SepLine
 
 \ProblemB{
@@ -1420,13 +1421,12 @@ Thus there are at most $\Par{n-1}$ nonzero vecs in $Tv_{1},\dots,Tv_n.$\par\quad
 \ProblemN{\hypertarget{3C5}{5}}{
 	\TextN{Suppose $B_W=\Par{w_1,\dots,w_n}$ and $V$ is finite-dim. Suppose $T\in\Lm{V,W}$.\vspace{2pt}}
 	\TextN{Prove that $\exists\,B_V=\Par{v_1,\dots,v_m},\;\Mt[\BigPar]{T,B_V,B_W}_{1,\cdot}=\begin{pmatrix}0&\cdots&0\end{pmatrix}$ or $\begin{pmatrix}1&0&\cdots&0\end{pmatrix}$.}
-}\par\quad
+}See also in (3.F).\par\quad
 Let $\Par{u_1,\dots,u_n}$ be a basis of $V$. Denote $\Mt[\BigPar]{T,\Par{u_1,\dots,u_n},B_W}$ by $A.$\par\quad
 If $A_{1,\cdot}=0,$ then $B_V=\Par{u_1,\dots,u_n}$ and we are done. Otherwise, suppose $A_{1,k}\neq 0.$\vspace{2pt}\par\quad
 Let $v_1=\Frac{u_k}{A_{1,k}},$ so that  $Tv_1=1w_1+\Frac{A_{2,k}}{A_{1,k}}w_2+\dots+\Frac{A_{n,k}}{A_{1,k}}w_n.$\vspace{6pt}\par\quad
 Let $v_j=u_{j-1}-A_{1,j-1}v_1$ for each $j\in\Bra{2,\dots,k}.$ \;Let $v_i=u_i-A_{1,i} v_1$ for $i\in\Bra{k+1,\dots,n}.$\vspace{2pt}\par\quad
-\NOTICE that $Tu_i=A_{1,i}w_1+\dots+A_{n,i}w_n.$ 又 Each $u_i\in\Span{v_1,\dots,v_n}=V.$ Let $B_V=\Par{v_1,\dots,v_n}.$\PfEnd%\vspace{6pt}\quad
-%TODO\Or Using notation and results in (3.F).
+\NOTICE that $Tu_i=A_{1,i}w_1+\dots+A_{n,i}w_n.$ 又 Each $u_i\in\Span{v_1,\dots,v_n}=V.$ Let $B_V=\Par{v_1,\dots,v_n}.$\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{3C6}{6}}{
@@ -1502,49 +1502,7 @@ Hence $ST=TS.$ Which in general does not hold.\PfEnd
 \ChDecl{Ch3D}{3$\cdot$D}{}
 \orMode{\hLk{3D1}{1}\;\;\hLk{3D2}{2}\;\;\hLk{3D3}{3}\;\;\hLk{3D4}{4}\;\;\hLk{3D5}{5}\;\;\hLk{3D6}{6}\;\;\hLk{3D8}{8}\;\;\hLk{3D9}{9}\;\;\hLk{3D10}{10}\;\;\hLk{3D11}{11}\;\;\hLk{3D12}{12}\;\;\hLk{3D13}{13}\;\;\hLk{3D15}{15}\;\;\hLk{3D16}{16}\;\;\hLk{3D17}{17}\;\;\hLk{3D18}{18}\;\;\hLk{3D19}{19}\;\;|\;\;\hLk{3D4e1}{4E:\;\;1}\;\;\hLk{3D4e3}{3}\;\;\hLk{3D4e10}{10}\;\;\hLk{3D4e15}{15}\;\;\hLk{3D4e17}{17}\;\;\hLk{3D4e19}{19}\;\;\hLk{3D4e20}{20}\;\;\hLk{3D4e22}{22}\;\;\hLk{3D4e23}{23}\;\;\hLk{3D4e24}{24}}[-28pt]{[1]: (4E 3, 15, 22, 1), 1, 2, 3; [2]: 4, 5, 6, 8; [3]: 9, 10, 11, 12, 13, 15, (4E 24);$\\$[4]: (4E 10); [5]: (4E 17); [6]: 17, (4E 23); [7]: 16, 18, (4E 20), 19. [上页]: (4E 19).}
 
-\vspace{6pt}
-
-\ProblemBnoor[]{4E 3}{
-	\hypertarget{3D4e3}{}\TextB{Suppose $V$ is finite-dim and $T\in\Lm{V}$.}
-}$\MathRightBrace{l}{$
-	$\Par{Tv_1,\dots,Tv_n}$ is a basis of \,$V$ for some basis $\Par{v_1,\dots,v_n}$ of \,$V$ $\Longleftrightarrow$ $T$ is surj$\\ $ $\Par{Tv_1,\dots,Tv_n}$ is a basis of \,$V$ for every basis $\Par{v_1,\dots,v_n}$ of \,$V$ $\Longleftrightarrow$ $T$ is inje
-	$}\Longleftrightarrow$ $T$ is inv.\vspace{6pt}\par
-\SepLine
-
-\ProblemBnoor{4E 22, \OR \hypertarget{3D4e22}{10.A.1}}{
-	\TextB{Suppose $T\in\Lm{V}.$ Prove that $\Mt{T,B_V}$ is inv $\Longleftrightarrow T$ itself is inv.}
-}Notice that $\mathcal{M}:T\mapsto\Mt{T,B_V}$ is an iso. And that $\Mt{T}\Mt{S}=\Mt{TS}.$\vspace{2pt}\par\quad
-(a) $T^{-1}T=TT^{-1}=I\Rightarrow\Mt{T^{-1}}\Mt{T}=\Mt{I}=\Mt{T}\Mt{T^{-1}}\Rightarrow\Mt{T^{-1}}=\Mt{T}{^{-1}}.$\vspace{2pt}\par\quad
-(b) $\Mt{T}\Mt{T}{^{-1}}=\Mt{T}{^{-1}}\Mt{T}=I,\;\exists\,!\,S\in\Lm{V}$ such that $\Mt{T}{^{-1}}=\Mt{S}$\par\quad\Hb
-$\Rightarrow\Mt{TS}=\Mt{T}\Mt{S}=I=\Mt{S}\Mt{T}=\Mt{ST}$\par\quad\Hb
-$\Rightarrow\Mneg\Mt{TS}=\Mneg\Mt{ST}=I$\large$\,=\,TS=ST\Rightarrow S=T^{-1}.$\PfEnd
-\SepLine
-
-\ProblemBnoor{4E 1}{
-	\hypertarget{3D4e1}{}\vspace{2pt}\TextB{Suppose $T\in\Lm{V,W}$ is inv. Show that $T^{-1}$ is inv and $\Par{T^{-1}}{^{-1}}=T$.\vspace{4pt}}
-}$\MathRightBrace{l}{
-	TT^{-1}=I\in\Lm{V}\\
-	T^{-1}T=I\in\Lm{W}
-}\Rightarrow T=\Par{T^{-1}}{^{-1}}$, by the uniqnes of inverse.\PfEnd
-\SepLine
-
-\ProblemN{\hypertarget{3D1}{1}}{
-	\TextN{Suppose $T\in\Lm{U,V},S\in\Lm{V,W}$ are inv. Prove that $ST$ is inv and $\Par{ST}{^{-1}} = T^{-1}S^{-1}$.\vspace{8pt}}
-}$\MathRightBrace{l}{
-	\Par{ST}\Par{T^{-1}S^{-1}}=STT^{-1}S^{-1}=I\in\Lm{W}\\
-	\Par{T^{-1}S^{-1}}\Par{ST}=T^{-1}S^{-1}ST=I\in\Lm{V}
-}\Rightarrow \Par{ST}{^{-1}} = T^{-1}S^{-1}$, by the uniqnes of inv.\PfEnd
-\SepLine
-
-\ProblemBnoor{4E 15}{
-	\hypertarget{3D4e15}{}\TextB{Suppose $T\in\Lm{V}$ and $V=\Span{Tv_1,\dots,Tv_m}$. Prove that $V=\Span{v_1,\dots,v_m}$.}
-}\par\quad
-Because $V=\Span{Tv_1,\dots,Tv_m}\Rightarrow T$ is surj, 又 $V$ is finite-dim $\Rightarrow T$ is inv $\Rightarrow$ $T^{-1}$ is inv.\par\quad
-$\forall v\in V,\,\exists\,a_i\in\Fbb, v=a_1 Tv_1+\dots+a_m Tv_m\Rightarrow T^{-1}v=a_1 v_1+\dots+a_m v_m\Rightarrow \range T^{-1}\subseteq\Span{v_1,\dots,v_m}.$\vspace{8pt}\par\quad
-\Or Reduce the spanning list $\Par{Tv_1,\dots,Tv_m}$ of $V$ to a basis $\Par{Tv_{\alpha_1},\dots,Tv_{\alpha_k}}$ of $V.$\par\quad
-\Blind{\Or}Where $k=\dim V$ and each $\alpha_i\in\Bra{1,\dots,k}.$ Then by Problem (4E 3),\par\quad
-\Blind{\Or}$\Par{v_{\alpha_1},\dots,v_{\alpha_k}}$ is also a basis of $V$, contained in the list $\Par{v_1,\dots,v_m}.$\PfEnd
-\SepLine
+\vspace{8pt}
 
 \ProblemN{\hypertarget{3D2}{2}}{
 	\TextN{Suppose $V$ is finite-dim and $\dim V > 1$.}
@@ -1560,13 +1518,13 @@ Hence $S,T\in U$ while $S+T\not\in U.$\PfEnd
 	\TextN{Prove that $\exists$ inv $T\in\Lm{V},Tu = Su,\forall u\in U$ $\Longleftrightarrow$ $S$ is inje. {\large\Sbra{ Compare this with (3.A.11). }}}\vspace{2pt}
 }(a) $\forall u\in U,u=T^{-1}Su\Rightarrow T^{-1}S=I\in\Lm{U}\Longrightarrow S$ is inje, by (3.B.20).\parSol{\Ha}
 \Or $\null S=\null T\mmid_U=\null T\cap U=\zeroSubs.$\parSol{\vspace{4pt}}
-(b) Let $\Par{u_1,\dots,u_m}$ be a basis of $U.$ Then $S$ inje $\Longrightarrow\Par{Su_1,\dots,Su_m}$ linely inde.\parSol{\Hb}
+(b) Let $B_U=\Par{u_1,\dots,u_m}.$ Then $S$ inje $\Longrightarrow\Par{Su_1,\dots,Su_m}$ linely inde.\parSol{\Hb}
 Extend these to bases of $V$ as $\Par{u_1,\dots,u_m,v_1,\dots,v_n}$ and $\Par{Su_1,\dots,Su_m,w_1,\dots,w_n}$.\parSol{\Hb}
 Define $T\in\Lm{V}$ by $T\Par{u_i}=Su_i;\,\,\,Tv_j=w_j,$ for each $i\in\Bra{1,\dots,m},j\in\Bra{1,\dots,n}.$\PfEnd
 \SepLine
 
 \ProblemB[]{
-	\TextB{Suppose $S,T\in\Lm{V,W}.$ \envFontDefault\large\hfill \Sbra{ For Problem (4) and (5), see the \COROLLARY in (3.B.24, 25). }}
+	\TextB{Suppose $S,T\in\Lm{V,W}.$ \envFontDefault\large\hfill \Sbra{ For Problem (4) and (5), see the {\COROLLARY} in (3.B.24, 25). }}
 }
 %\ProblemN[]{\hypertarget{3D4}{4}}{
 %	\TextN{Suppose $\null S = \null T${\normalsize\envFontSmall\Par{$\,= U\,$}}. Then $S = ET,\,\exists$ inv $E\in\Lm{W}$.}
@@ -1591,7 +1549,7 @@ $\text{Define}\;\,E_2:Tv_i\mapsto Sr_i\,\,;\;\;x_j\mapsto y_j;$\quad for each $i
 Where:\parSol{\vspace{6pt}}
 $\MathLeftrightMid{l}{$
 	Let $B_{\range T}=\Par{Tv_1,\dots,Tv_m};\;B_{\range S}=\Par{Sr_1,\dots,Sr_m}.\\ $
-	Extend to $B_W=\Par{Tv_1,\dots,Tv_m,x_1,\dots,x_p};\;B_W'=\Par{Sr_1,\dots,Sr_m,y_1,\dots,y_p}.\\ $
+	Let $B_W=\Par{Tv_1,\dots,Tv_m,x_1,\dots,x_p};\;B_W'=\Par{Sr_1,\dots,Sr_m,y_1,\dots,y_p}.\\ $
 	Let $B_{\null T}=\Par{u_1,\dots,u_n};\;B_{\null S}=\Par{s_1,\dots,s_n}.\\ $
 	Thus $B_V=\Par{v_1,\dots,v_m,u_1,\dots,u_n};\;B_V'=\Par{r_1,\dots,r_m,s_1,\dots,s_n}.}\hMath{c}{}{}{\therefore E_1,E_2$ are inv$ \\ $and $S=E_2 TE_1.}$\PfEnd
 \SepLine[0pt][\Blind{\BulletPointX} ]
@@ -1614,62 +1572,82 @@ Then $\dim U=\dim W.$ Thus $T\mmid_U$ is an iso of $U$ onto $W.$\PfEnd\parSol{\v
 \Or By (3.B.12), there is a subsp $U$ of $V$ such that\parSol{}
 $U\cap \null T=\zeroSubs=\null T\mmid_U,\;W=\range T=\Bra{Tu:u\in U}=\range T\mmid_U.$\PfEnd\vspace{4pt}
 \Comment \,\,\,See (3.B.12), (4E 3.B.21), (3.B \TIPS).\vspace{-2pt}
+\SepLine\pagebreak
+
+\BulletPointX\NoteForSmall{[3.69]}\;\;Suppose $V,W$ are finite-dim, $T\in\Lm{V,W}.$\TextB{}
+And $\dim W=\dim V=\dim\range T+\dim\null T.$ Then $T$ is inv $\Longleftrightarrow T$ is inje $\Longleftrightarrow T$ is surj.
 \SepLine
 
-\ProblemN{\hypertarget{3D9}{9}}{
-	\TextN{Suppose $V$ is finite-dim and $S, T\in\Lm{V}$. Prove that
-$ST$ is inv $\Longleftrightarrow$ $S$ and $T$ are inv.\vspace{2pt}}
-}Suppose $S,T$ are inv. Then $\Par{ST}\Par{T^{-1}S^{-1}}=\Par{T^{-1}S^{-1}}\Par{ST}=I.$ Hence $ST$ is inv.\parSol{}
-Suppose $ST$ is inv. Let $R=\Par{ST}{^{-1}}\Rightarrow R\Par{ST}=\Par{ST}R=I$.\parSol{\vspace{4pt}}
-$\MathRightBrace{l}{$
-$Tv=0\Rightarrow v=R\Par{ST}v=RS\Par{Tv}=0\\ $
-$\forall v\in V,v=\Par{ST}Rv=S\Par{TRv}\in\range S}\Rightarrow T$ is inje, $S$ is surj. While $V$ is finite-dim.\parSol{\vspace{6pt}}
-\Or By (3.B.23), $\dim V=\dim\range ST\leqslant\min\!\Bra{\range T,\range S}.$\PfEnd
+\ProblemNnoor{\hypertarget{3D9}{9}}{\OR \hypertarget{3D1}{1}}{
+	\TextN{Suppose $U,V,W$ are iso and finite-dim, $S\in\Lm{V,W},T\in\Lm{U,V}.$}
+	\TextN{Prove that $ST$ is inv $\Longleftrightarrow S,T$ are inv.}
+	\Comment \,\,\,If any two of $U,V,W$ are not iso or finite-dim, then $S,T$ are inv $\Longrightarrow ST$ is inv.\TextN{}
+	%\Corollary \,\,\,Suppose $T$ is inv. Let $S=T^{-1}\Rightarrow ST=I_U.$ Then $I_U$ inv $\Rightarrow T^{-1}$ inv.
+}Suppose $S,T$ are inv. Then $\Par{ST}\Par{T^{-1}S^{-1}}=I_W,\Par{T^{-1}S^{-1}}\Par{ST}=I_U.$ Hence $ST$ is inv.\parSol{}
+Suppose $ST$ is inv. Let $R=\Par{ST}{^{-1}}\Rightarrow R\Par{ST}=I_U,\Par{ST}R=I_W.$\parSol{\vspace{4pt}}
+\!\!\!$\MathRightMid{l}{Tv=0\Rightarrow v=R\Par{ST}v=RS\Par{Tv}=0.\\\forall v\in V,v=\Par{ST}Rv=S\Par{TRv}\in\range S.}\hMath{l}{\left.}{\right.}{$
+$T$ is inje, $S$ is surj.$\\$
+又 $\dim U=\dim V=\dim W.}$\parSol{\vspace{6pt}}
+\Or By (3.B.23), $\dim W=\dim\range ST\leqslant\min\!\Bra{\range S,\range T}\Rightarrow S,T$ are surj.\PfEnd
 \SepLine
+
+\ProblemN{\hypertarget{3D13}{13}}{
+	\TextNL{Suppose $U,V,W,X$ are iso and finite-dim, $R\in\Lm{W,X}, S\in\Lm{V,W}, T\in\Lm{U,V}.$}
+	\TextNL{Suppose $RST$ is surj. Prove that $S$ is inje.}
+}Using Problem (9). Notice that $U,X$ are finite-dim, so that $RST$ is inv.\vspace{4pt}\par\quad
+Let $X=\Par{RST}{^{-1}}\,\left|\hspace{-4pt}\begin{array}{l}$ $Tv=0\Rightarrow v=X\Par{RSTv}=0\Rightarrow T$ is inje.$\\ $
+	$\forall v\in V,v=\Par{RST}Xv\in\range R\Rightarrow R$ is surj.$\\\end{array}\right\}\Rightarrow S=R^{-1}\Par{RST}T^{-1}.$\PfEnd\vspace{8pt}\quad
+\Or $\Par{RST}{^{-1}}=\BigPar{\Par{RS}T}{^{-1}}=T^{-1}\Par{RS}{^{-1}}=T^{-1}S^{-1}R^{-1}.$\PfEnd
+\SepLine
+
+%\ProblemN{\hypertarget{3D1}{1}}{
+%	\TextN{Suppose $T\in\Lm{U,V},S\in\Lm{V,W}$ are inv. Prove that $ST$ is inv and $\Par{ST}{^{-1}} = T^{-1}S^{-1}$.\vspace{8pt}}
+%}$\MathRightBrace{l}{\Par{ST}\Par{T^{-1}S^{-1}}=STT^{-1}S^{-1}=I\in\Lm{W}\\\Par{T^{-1}S^{-1}}\Par{ST}=T^{-1}S^{-1}ST=I\in\Lm{V}}\Rightarrow \Par{ST}{^{-1}} = T^{-1}S^{-1}$, by the uniqnes of inv.\PfEnd
+%\SepLine
 
 \ProblemN{\hypertarget{3D10}{10}}{
 	\TextN{Suppose $V$ is finite-dim and $S,T\in\Lm{V}.$ Prove that $ST=I\Longleftrightarrow TS=I.$}
 }(a) Suppose $ST=I.$\parSol{\Ha}
-By (3.B 20,21)(a), $ST=I\Rightarrow T$ is inje and $S$ is surj. 又 $V$ is finite-dim. $S,T$ are inv.\parSol{\Ha}
+By (3.B 20, 21)(a), $ST=I\Rightarrow T$ is inje and $S$ is surj. 又 $V$ is finite-dim. $S,T$ are inv.\parSol{\Ha}
 \Or {\normalsize By Problem (9), $V$ is finite-dim and $ST=I$ is inv $\Rightarrow$ $S,T$ are inv.}\parSol{\vspace{4pt}\Ha}
 Then $\forall v\in V,S\BigPar{\Par{TS}v}=ST\Par{Sv}=Sv\Rightarrow \Par{TS}v=v\Rightarrow TS=I.$\parSol{\Ha}
 \Or {\normalsize$S^{-1}=T$ 又 $S=S\Rightarrow TS=S^{-1}S=I$.}\parSol{\vspace{4pt}}
 (b) Reversing the roles of $S$ and $T$, we conclude that $TS=I\Rightarrow ST=I.$\PfEnd
-\SepLine\pagebreak
+\SepLine
 
 \ProblemN{\hypertarget{3D11}{11}}{
 	\TextNL{Suppose $V$ is finite-dim, $S, T, U\in\Lm{V}$ and $STU = I$. Show that $T$ is inv and $T^{-1} = US$.}
-}\par\quad
-Using Problem (9) and (10). {\tgsl\normalsize This result can fail without the hypothesis that $V$ is finite-dim.}\par\quad
-$\Par{ST}U=U\Par{ST}=\Par{US}T=I\Rightarrow T^{-1}=US.$\par\quad
+}Using Problem (9) and (10). {\tgsl\normalsize This result can fail without the hypothesis that $V$ is finite-dim.}\parSol{}
+$\Par{ST}U=U\Par{ST}=\Par{US}T=I\Rightarrow T^{-1}=US.$\parSol{}
 \Or $\Par{ST}U=S\Par{TU}=I\Rightarrow U,S$ are inv $\Rightarrow TU=S^{-1}.$ 又 $U^{-1}=U^{-1}\Rightarrow T=S^{-1}U^{-1}.$\PfEnd\vspace{2pt}
-\hypertarget{3D12}{}\Example\,\,\,$V=\Rbb^\infty,S\Par{a_1,a_2,\dots}=\Par{a_2,\dots};\;T\Par{a_1,\dots}=\Par{0,a_1,\dots};\;U=I\Rightarrow STU=I$ but $T$ is not inv.\par
+\hypertarget{3D12}{}\Example\,\,\,$V=\Rbb^\infty,S\Par{a_1,a_2,\dots}=\Par{a_2,\dots};\;T\Par{a_1,\dots}=\Par{0,a_1,\dots};\;U=I\Rightarrow STU=I$ but $T$ is not inv.
 \SepLine
 
-\ProblemN{\hypertarget{3D13}{13}}{
-	\TextNL{Suppose $V$ is finite-dim, $R, S, T\in\Lm{V}$ are such that $RST$ is surj. Prove that $S$ is inje.}
-}\par\quad
-By Problem (1) and (9), Notice that $V$ is finite-dim. Then $RST$ is inv.\vspace{4pt}\par\quad
-Let $X=\Par{RST}{^{-1}}\,\left|\hspace{-4pt}\begin{array}{l}$ $Tv=0\Rightarrow v=X\Par{RSTv}=0\Rightarrow T$ is inje.$\\ $
-$\forall v\in V,v=\Par{RST}Xv\in\range R\Rightarrow R$ is surj.$\\\end{array}\right\}\Rightarrow S=R^{-1}\Par{RST}T^{-1}$ is inv.\PfEnd\vspace{8pt}\quad
-\Or $\Par{RST}{^{-1}}=\BigPar{\Par{RS}T}{^{-1}}=T^{-1}\Par{RS}{^{-1}}=T^{-1}S^{-1}R^{-1}.$\PfEnd
+{\normalsize\envFontSmall$\MathRightMid{l}{\!\!\!$\BulletPointX\hypertarget{3D4e3}{\Par{4E 3}} $T\in\Lm{V}\\$\quad\;$V$ is finite-dim$}\MathRightBrace{l}{$
+$\!\!\!\Par{Tv_1,\dots,Tv_n}$ is a basis of $V$ for some basis $\Par{v_1,\dots,v_n}$ of $V$ $\Longleftrightarrow$ $T$ is surj$\\[-2pt]$ $\!\!\!\Par{Tv_1,\dots,Tv_n}$ is a basis of $V$ for every basis $\Par{v_1,\dots,v_n}$ of $V$ $\Longleftrightarrow$ $T$ is inje$}\Longleftrightarrow T$ is inv.\vspace{6pt}}
 \SepLine
+
+\ProblemBnoor{4E 15}{
+	\hypertarget{3D4e15}{}\TextB{Suppose $T\in\Lm{V}$ and $V=\Span{Tv_1,\dots,Tv_m}$. Prove that $V=\Span{v_1,\dots,v_m}$.}
+}Because $V=\Span{Tv_1,\dots,Tv_m}\Rightarrow T$ is surj, and therefore is inv $\Rightarrow$ $T^{-1}$ is inv.\parSol{}
+$\forall v\in V,\exists\,a_i\in\Fbb, v=\sum_{i=1}^ma_i Tv_i\Rightarrow T^{-1}v=\sum_{i=1}^ma_i v_i\Rightarrow \range T^{-1}\subseteq\Span{v_1,\dots,v_m}.$\vspace{6pt}\parSol{}
+\Or Reduce the spanning list $\Par{Tv_1,\dots,Tv_m}$ of $V$ to a basis $\Par{Tv_{\alpha_1},\dots,Tv_{\alpha_k}}$ of $V.$\parSol{}
+\Blind{\Or}Where $k=\dim V$ and each $\alpha_i\in\Bra{1,\dots,k}.$ Then by Problem (4E 3),\parSol{}
+\Blind{\Or}$\Par{v_{\alpha_1},\dots,v_{\alpha_k}}$ is also a basis of $V$, contained in the list $\Par{v_1,\dots,v_m}.$\PfEnd
+\SepLine\pagebreak
 
 \ProblemN{\hypertarget{3D15}{15}}{
 	\TextNL{Prove that every linear map from $\Fbb^{n,1}$ to $\Fbb^{m,1}$ is given by a matrix multi.}
 	\TextNL{In other words, prove that if $T\in\Lm{\Fbb^{n,1},\Fbb^{m,1}}$, then $\exists\,A\in\Fbb^{m,n},Tx = Ax,\,\forall x\in\Fbb^{n,1}$.}
-}\par\quad
-Let $B_1=\Par{E_1,\dots,E_n},B_2=\Par{R_1,\dots,R_m}$ be the std bases of $\Fbb^{n,1}$ and $\Fbb^{m,1}$.\vspace{-12pt}\par\quad
-$\forall k=1,\dots,n,$ suppose $T\Par{E_{k}}=A_{1,k}R_1+\dots+A_{m,k}R_m,\exists\,A_{j,k}\in\Fbb$, forming $A\,=\,${\normalsize$\begin{pmatrix} A_{1,1} &\hspace{-6pt} \cdots &\hspace{-6pt} A_{1,n}\\[-4pt] \vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots\\[-4pt] A_{m,1} &\hspace{-6pt} \cdots &\hspace{-6pt} A_{m,n}\end{pmatrix}.$}\par{\vspace{-6pt}}\quad
-\Or Let $A=\Mt{T,B_1,B_2}$. Note that $\Mt{x,B_1}=x,\Mt{y,B_2}=y.$\par\quad
+}Let $B_1=\Par{E_1,\dots,E_n},B_2=\Par{R_1,\dots,R_m}$ be the std bases of $\Fbb^{n,1}$ and $\Fbb^{m,1}$.\vspace{-12pt}\parSol{}
+$\forall k=1,\dots,n,$ suppose $T\Par{E_{k}}=A_{1,k}R_1+\dots+A_{m,k}R_m,\exists\,A_{j,k}\in\Fbb$, forming $A\,=\,${\normalsize$\begin{pmatrix} A_{1,1} &\hspace{-6pt} \cdots &\hspace{-6pt} A_{1,n}\\[-4pt] \vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots\\[-4pt] A_{m,1} &\hspace{-6pt} \cdots &\hspace{-6pt} A_{m,n}\end{pmatrix}.$}\parSol{\vspace{-6pt}}
+\Or Let $A=\Mt{T,B_1,B_2}$. Note that $\Mt{x,B_1}=x,\Mt{Tx,B_2}=Tx.$\parSol{}
 Hence $Tx=\Mt{Tx,B_2}=\Mt{T,B_1,B_2}\Mt{x,B_1}=Ax,$ by [3.65].\PfEnd
 \SepLine
 
-\ProblemBnoor{4E 24, \OR \hypertarget{3D4e24}{10.A.2}}{
-	\TextNL{Suppose $A,B\in\Fbb^{n,n}$. Prove that $AB = I\Longleftrightarrow BA=I$.}
-}Using Problem (10) and (15).\vspace{2pt}\par\quad
-Define $T,S\in\Lm{\Fbb^{n,1},\Fbb^{n,1}}$ by $Tx=Ax,Sx=Bx$ for all $x\in\Fbb^{n,1}$. Then $\Mt{T}=A,\Mt{S}=B.$\par\quad
-Thus $AB=I\Leftrightarrow A\Par{Bx}=x\Longleftrightarrow T\Par{Sx}=x\Leftrightarrow TS=I\Longleftrightarrow ST=I\Longleftrightarrow \Mt{S}\Mt{T}=BA=I.$\PfEnd
+\BulletPointX\NoteForSmall{[3.62]}\;\;$\Mt{v}=\Mt[\BigPar]{I,\Par{v},B_V}.$\par\vspace{2pt}
+\BulletPointX\NoteForSmall{[3.65]}\;\;$\Mt{Tv}=\Mt[\BigPar]{I,\Par{Tv},B_W}=\Mt{T,B_V,B_W}\Mt[\BigPar]{I,\Par{v},B_V}=\Mt[\BigPar]{T,\Par{v},B_W}.$\TextB{\vspace{2pt}}
+\Blind{\NoteForSmall{[3.65]}}\;\;Note that if $v=0,$ then $\Par{v}=\Par{\,}=B_{\Span[\SmallPar]{\,}}\,;\;$ similar for $Tv=0.$\vspace{-2pt}
 \SepLine
 
 \ProblemBnoor{4E 23, \OR \hypertarget{3D4e23}{10.A.4}}{
@@ -1686,6 +1664,27 @@ $\Mt{T,\alpha\rightarrow\alpha}=\Mt{I,\alpha\rightarrow\beta}{^{-1}}\XPar{\,\und
 $u_k=Iu_k=B_{1,k}\alpha_1+\dots+B_{n,k}\alpha_n,\,\,\forall \,\,k\in\Bra{1,\dots,n}.$\par\quad
 又 \,\,\,\,\,$Tu_k=T\Par{B_{1,k}\alpha_1+\dots+B_{n,k}\alpha_n}=B_{1,k}\beta_1+\dots+B_{n,k}\beta_n=A\apostrophe_{1,k}\beta_1+\dots+A\apostrophe_{n,k}\beta_n\Rightarrow A\apostrophe=B$.\par\quad
 \Or $\Mt{T,\beta\rightarrow\beta}=\Mt{T,\alpha\rightarrow\beta}\Mt{I,\beta\rightarrow\alpha}=B.$\par
+\SepLine
+
+\BulletPointX\Tips \,\,\,When using $\Mneg,$ you must first declare $\mathcal{M}:\Lm{V,W}\mapsto\Fbb^{m,n}$ or $\mathcal{M}:v\mapsto\Fbb^{n,1}.$ So that\TextB{}
+\IndentTips{}$\Mneg\Par{AC}=\Mneg\Par{A}\Mneg\Par{C},\Mneg\Par{Ax}=\Mneg\Par{A}\Mneg\Par{x}.$\TextB{}
+\IndentTips{}Where $\Mneg\Par{A},\Mneg\Par{x}$ are well-defined.
+\SepLine
+
+\ProblemBnoor{4E 22, \OR \hypertarget{3D4e22}{10.A.1}}{
+	\TextB{Suppose $T\in\Lm{V}.$ Prove that $\Mt{T,B_V}$ is inv $\Longleftrightarrow T$ itself is inv.}
+}Notice that $\mathcal{M}:T\mapsto\Mt{T,B_V}$ is an iso. And that $\Mt{T}\Mt{S}=\Mt{TS}.$\vspace{2pt}\par\quad
+(a) $T^{-1}T=TT^{-1}=I\Rightarrow\Mt{T^{-1}}\Mt{T}=\Mt{I}=\Mt{T}\Mt{T^{-1}}\Rightarrow\Mt{T^{-1}}=\Mt{T}{^{-1}}.$\vspace{2pt}\par\quad
+(b) $\Mt{T}\Mt{T}{^{-1}}=\Mt{T}{^{-1}}\Mt{T}=I,\;\exists\,!\,S\in\Lm{V}$ such that $\Mt{T}{^{-1}}=\Mt{S}$\par\quad\Hb
+$\Rightarrow\Mt{TS}=\Mt{T}\Mt{S}=I=\Mt{S}\Mt{T}=\Mt{ST}$\par\quad\Hb
+$\Rightarrow\Mneg\Mt{TS}=\Mneg\Mt{ST}=I$\large$\,=\,TS=ST\Rightarrow S=T^{-1}.$\PfEnd
+\SepLine
+
+\ProblemBnoor{4E 24, \OR \hypertarget{3D4e24}{10.A.2}}{
+	\TextNL{Suppose $A,B\in\Fbb^{n,n}$. Prove that $AB = I\Longleftrightarrow BA=I.$\hfill\small\envFontSmall\Sbra{Using Problem (10, 15).}}
+}Define $T,S\in\Lm{\Fbb^{n,1}}$ by $Tx=Ax,Sx=Bx$ for all $x\in\Fbb^{n,1}.$ Now $\Mt{T}=A,\Mt{S}=B.$\parSol{}
+$AB=I\Leftrightarrow A\Par{Bx}=x\Longleftrightarrow T\Par{Sx}=x\Leftrightarrow TS=I\Longleftrightarrow ST=I\Longleftrightarrow \Mt{S}\Mt{T}=BA=I.$\parSol{}
+\Or Because $\mathcal{M}:\Lm{\Fbb^{n,1},\Fbb^{n,1}}\rightarrow\Fbb^{n,n}$ is an iso. $\Mneg\Par{AB}=TS=ST=\Mneg\Par{BA}=I.$\PfEnd
 \SepLine\pagebreak
 
 \BulletPointX\NoteFor{[3.60]}\;\;Suppose $B_V=\Par{v_1,\dots,v_n},\;B_W=\Par{w_1,\dots,w_m}$.\TextB{\vspace{2pt}}
