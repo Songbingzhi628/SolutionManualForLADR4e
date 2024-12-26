@@ -1247,34 +1247,33 @@ So that $\exists\,!\,a_i\in\Rbb,p=\sum_{i=1}^{m+1}a_ip_i\Rightarrow\exists\,q=\s
 {$\Rightarrow x^{n+1}=D\Sbra{\uline{a_{n+1}^{-1}\Par{x^{n+2}-a_n p_n-\dots-a_1 p_1-a_0 p_0}}}.$ Thus defining $p_{n+1},$ so that $Dp_{n+1}=x^{n+1}.$}\par\vspace{4pt}\quad
 {Now we have $\Par{p_k}{_{k=0}^\infty}$ by recursion.}\PfEnd
 \SepLine
-\ChEnd
+\ChEnd\pagebreak
 
-\ChDecl{Ch3C}{3$\cdot$C}{}\orMode{\hLk{3C1}{1}\;\;\hLk{3C3}{3}\;\;\hLk{3C4}{4}\;\;\hLk{3C5}{5}\;\;\hLk{3C6}{6}\;\;\hLk{3C9}{9}\;\;\hLk{3C10}{10}\;\;\hLk{3C11}{11}\;\;\hLk{3C12}{12}\;\;\hLk{3C13}{13}\;\;\hLk{3C14}{14}\;\;\hLk{3C15}{15}\;\;|\;\;\hLk{3C4e16}{4E:\;\;16}\;\;\hLk{3C4e17}{17}}{[1]: 10, 9, 11; [2]: (4E 16); [3]: (4E 17), 1, 3, 4; [4]: 5, 6, 13; [5]: 14, 15, 12.}
+\ChDecl{Ch3C}{3$\cdot$C}{}\orMode{\hLk{3C1}{1}\;\;\hLk{3C3}{3}\;\;\hLk{3C4}{4}\;\;\hLk{3C5}{5}\;\;\hLk{3C6}{6}\;\;\hLk{3C9}{9}\;\;\hLk{3C10}{10}\;\;\hLk{3C11}{11}\;\;\hLk{3C12}{12}\;\;\hLk{3C13}{13}\;\;\hLk{3C14}{14}\;\;\hLk{3C15}{15}\;\;|\;\;\hLk{3C4e16}{4E:\;\;16}\;\;\hLk{3C4e17}{17}}{[1]: 10, 9, 11; [2]: (4E 16, 17); [3]: 1, 3, 4, 5, 6; [4]: 13, 14, 15, 12.}
 \vspace{8pt}
 
-\BulletPointX\NoteForSmall{[3.47]}\,\, $\BigPar{AC}{_{j,k}}=\sum_{r=1}^n A_{j,r}C_{r,k}=\sum_{r=1}^n \BigPar{A_{j,\cdot}}_{1,r}\BigPar{C_{\cdot,k}}_{r,1}=\BigPar{A_{j,\cdot}C_{\cdot,k}}_{1,1}=A_{j,\cdot}C_{\cdot,k}.$\par
-\SepLine
 
-\BulletPointX\NoteForSmall{[3.48]}\vspace{-16pt}\par\quad
-\AlignEq{}{\hspace{20pt}\underbrace{\begin{pmatrix}
-  1 & 2 \\
-  3 & 4
-\end{pmatrix}}_{A}\underbrace{\begin{pmatrix}
-  5 & 6 & 7 \\
-  8 & 9 & 10
-\end{pmatrix}}_{B}&=\begin{pmatrix}
-  \begin{pmatrix} 1 & 2\end{pmatrix}\begin{pmatrix} 5 \\ 8\end{pmatrix} & \begin{pmatrix} 1 & 2\end{pmatrix}\begin{pmatrix} 6 \\ 9\end{pmatrix} & \begin{pmatrix} 1 & 2\end{pmatrix}\begin{pmatrix} 7 \\ 10\end{pmatrix} \\
-  \begin{pmatrix} 3 & 4\end{pmatrix}\begin{pmatrix} 5 \\ 8\end{pmatrix} & \begin{pmatrix} 3 & 4\end{pmatrix}\begin{pmatrix} 6 \\ 9\end{pmatrix} & \begin{pmatrix} 3 & 4\end{pmatrix}\begin{pmatrix} 7 \\ 10\end{pmatrix}
-\end{pmatrix}
+%\BulletPointX\NoteForSmall{[3.48]}\vspace{-16pt}\par\quad
+%\AlignEq{}{\hspace{20pt}\underbrace{\begin{pmatrix}
+%  1 & 2 \\
+%  3 & 4
+%\end{pmatrix}}_{A}\underbrace{\begin{pmatrix}
+%  5 & 6 & 7 \\
+%  8 & 9 & 10
+%\end{pmatrix}}_{B}&=\begin{pmatrix}
+%  \begin{pmatrix} 1 & 2\end{pmatrix}\begin{pmatrix} 5 \\ 8\end{pmatrix} & \begin{pmatrix} 1 & 2\end{pmatrix}\begin{pmatrix} 6 \\ 9\end{pmatrix} & \begin{pmatrix} 1 & 2\end{pmatrix}\begin{pmatrix} 7 \\ 10\end{pmatrix} \\
+%  \begin{pmatrix} 3 & 4\end{pmatrix}\begin{pmatrix} 5 \\ 8\end{pmatrix} & \begin{pmatrix} 3 & 4\end{pmatrix}\begin{pmatrix} 6 \\ 9\end{pmatrix} & \begin{pmatrix} 3 & 4\end{pmatrix}\begin{pmatrix} 7 \\ 10\end{pmatrix}
+
+%\end{pmatrix}
 %\\
 %&=\begin{pmatrix} 1\times 5+2\times 8 & 1\times 6+2\times 9 & 1\times 7+2\times 10\\ 3\times 5+4\times 8 & 3\times 6+4\times 9 & 3\times 7+4\times 10\end{pmatrix}
-=\begin{pmatrix} 21 & 24 & 27 \\ 47 & 54 & 61\end{pmatrix}
-}\vspace{4pt}\par
-\SepLine\pagebreak
 
-\BulletPointX\NoteForSmall{[3.49]} $\XSbra{\BigPar{AC}_{\cdot,k}}_{j,1}=\BigPar{AC}_{j,k}=\sum_{r=1}^n A_{j,r}C_{r,k}=\sum_{r=1}^n A_{j,r}\BigPar{C_{\cdot,k}}_{r,1}=\BigPar{AC_{\cdot,k}}_{j,1}$\PfEnd
-\SepLine
+%=\begin{pmatrix} 21 & 24 & 27 \\ 47 & 54 & 61\end{pmatrix}
+%}\vspace{4pt}\par
+%\SepLine
 
+\BulletPointX\NoteForSmall{[3.47]}\,\, $\BigPar{AC}{_{j,k}}=\sum_{r=1}^n A_{j,r}C_{r,k}=\sum_{r=1}^n \BigPar{A_{j,\cdot}}_{1,r}\BigPar{C_{\cdot,k}}_{r,1}=\BigPar{A_{j,\cdot}C_{\cdot,k}}_{1,1}=A_{j,\cdot}C_{\cdot,k}.$\PfEnd\vspace{6pt}
+\BulletPointX\NoteForSmall{[3.49]} $\XSbra{\BigPar{AC}_{\cdot,k}}_{j,1}=\BigPar{AC}_{j,k}=\sum_{r=1}^n A_{j,r}C_{r,k}=\sum_{r=1}^n A_{j,r}\BigPar{C_{\cdot,k}}_{r,1}=\BigPar{AC_{\cdot,k}}_{j,1}$\PfEnd\vspace{6pt}
 \BulletPointX\Exercise{\hypertarget{3C10}{10}} $\XSbra{\BigPar{AC}_{j,\cdot}}_{1,k}=\BigPar{AC}_{j,k}=\sum_{r=1}^n A_{j,r}C_{r,k}=\sum_{r=1}^n \BigPar{A_{j,\cdot}}_{1,r}C_{r,k}=\BigPar{A_{j,\cdot}C}_{1,k}$\PfEnd
 \SepLine
 
@@ -1311,9 +1310,8 @@ $\BigPar{AB}{_{1,\cdot}}=A_{1,\cdot}B=\begin{pmatrix} 1 &\hspace{-4pt} 2\end{pma
 (a) Let $\BigPar{C_{\cdot,1},\dots,C_{\cdot,c}}$ be a basis of $S_c$, forming $C\in\Fbb^{m,c}$. Then $\forall k\in\Bra{1,\dots,n},$\vspace{2pt}\par\quad\Ha
 $A_{\cdot,k}=R_{1,k}C_{\cdot,1}+\dots+R_{c,k}C_{\cdot,c}=\BigPar{CR}_{\cdot,k}\;,\exists\,!\,R_{1,k},\dots,R_{c,k}\in\Fbb,$ forming $R\in\Fbb^{c,n}.$ Thus $A=CR.$\vspace{4pt}\par\quad
 (b) Let $\BigPar{R_{1,\cdot},\dots,R_{r,\cdot}}$ be a basis of $S_r,$ forming $R\in\Fbb^{r,n}$. Then $\forall j\in\Bra{1,\dots,m},$\vspace{2pt}\par\quad\Hb
-$A_{j,\cdot}=C_{j,1}R_{1,\cdot}+\dots+C_{j,r}R_{r,\cdot}=\BigPar{CR}_{j,\cdot}\;,\exists\,!\,C_{j,1},\dots,C_{j,r}\in\Fbb,$ forming $C\in\Fbb^{m,r}.$ Thus $A=CR.$\PfEnd\vspace{4pt}
-\Example\par\quad\hspace{0pt}
-$A\,=\,$ {\normalsize$\begin{pmatrix} 10 &\hspace{-4pt} 7 &\hspace{-4pt} 4 &\hspace{-4pt} 1 \\[-2pt] 26 &\hspace{-4pt} 19 &\hspace{-4pt} 12 &\hspace{-4pt} 5\\[-2pt] 46 &\hspace{-4pt} 33 &\hspace{-4pt} 20 &\hspace{-4pt} 7\end{pmatrix}$
+$A_{j,\cdot}=C_{j,1}R_{1,\cdot}+\dots+C_{j,r}R_{r,\cdot}=\BigPar{CR}_{j,\cdot}\;,\exists\,!\,C_{j,1},\dots,C_{j,r}\in\Fbb,$ forming $C\in\Fbb^{m,r}.$ Thus $A=CR.$\PfEnd\vspace{6pt}
+\Example \,\,\,$A\,=\,$ {\normalsize$\begin{pmatrix} 10 &\hspace{-4pt} 7 &\hspace{-4pt} 4 &\hspace{-4pt} 1 \\[-2pt] 26 &\hspace{-4pt} 19 &\hspace{-4pt} 12 &\hspace{-4pt} 5\\[-2pt] 46 &\hspace{-4pt} 33 &\hspace{-4pt} 20 &\hspace{-4pt} 7\end{pmatrix}$
 	{$\xlongequal{\SmallPar{\text{I}}}$}
 	$\begin{pmatrix} 1 &\hspace{-4pt} 0\\[-2pt] 0 &\hspace{-4pt} 1\\[-2pt] 2 &\hspace{-4pt} 1\end{pmatrix}\begin{pmatrix} 10 &\hspace{-4pt} 7 &\hspace{-4pt} 4 &\hspace{-4pt} 1\\[-2pt] 26 &\hspace{-4pt} 19 &\hspace{-4pt} 12 &\hspace{-4pt} 5\end{pmatrix}$
 	{$\xlongequal{\SmallPar{\text{II}}}$}
@@ -1354,7 +1352,7 @@ $P\Rightarrow Q:$\,\;Because $\dim S_c=\dim S_r=1.$\vspace{4pt}\parSol{}
 \Blind{$P\Rightarrow Q:$\,\;}{$\Rightarrow A_{j,k}=d\apostrophe_k A_{j,1}=c_j A_{1,k}=c_j d\apostrophe_k A_{1,1}=c_j d_k,$ where $d_k=d\apostrophe_k A_{1,1}.$}\PfEnd
 \SepLine
 
-\ProblemBnoor{\hypertarget{3C4e17}{4E 3.C.17}, \OR 3.F.32}[\Sbra]{
+\ProblemBnoor{\hypertarget{3C4e17}{4E 17}, \OR 3.F.32}[\Sbra]{
 	\TextB{Suppose $T\in\Lm{V}$ and $\Par{u_1,\dots,u_n},\Par{v_1,\dots,v_n}$ are bases of \,$V$.}
 	\TextB{Prove that the following are equi.\;\;{\large\envFontDefault Here $A=\Mt{T}=\Mt[\BigPar]{T, \Par{u_1,\dots,u_n},\Par{v_1,\dots,v_n}}$.}\vspace{2pt}}
 	\TextB{{\tgnr\large(a)} $T$ is inje$;$ \; {\tgnr\large(b)} $\BigPar{A_{\cdot,1},\dots,A_{\cdot,n}}$ is a basis of \,$\Fbb^{n,1};$ \; {\tgnr\large(c)} $\BigPar{A_{1,\cdot},\dots,A_{n,\cdot}}$ is a basis of \,$\Fbb^{1,n}.$\vspace{3pt}}
