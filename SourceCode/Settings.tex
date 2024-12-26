@@ -139,13 +139,13 @@
 \newcommand{\MathLeftrightMid}			[2]{\hMath[0pt]{#1}{\left|}{\right|}{#2}}
 \newcommand{\MathLeftrightPare}			[2]{\hMath[0pt]{#1}{\left(}{\right)}{#2}}
 
-\newcommand{\hText}[4][-4pt]{\hMath[#1]{c}{#2}{#3}{#4}}
-\newcommand{\Par}[2][1pt]{{\text{\forbra\envFontB(\hspace{#1}}}#2{\text{\hspace{#1}\forbra\envFontB)}}}%{\hText[-4pt]{}{}{$\hspace{-1pt}{\envFontB$\hText[#1]{\left(}{\right)}{${\envFont$#2$}$}$}$}}
-\newcommandx{\Mid}[3][1=1pt,2=\envFontA]{{\text{#2\mid}}\hspace{#1}{#3}\hspace{#1}{\text{#2\mid}}}%{\hText[-2pt]{}{}{$\hspace{-1pt}{\envFontB$\hText[#1]{\left|}{\right|}{${\envFont$#2$}$}$}$}}
+\newcommand{\hText}[2][-4pt]{\hMath[#1]{l}{\left.}{\right.}{#2}}
+\newcommand{\Par}[2][1pt]{{\text{\forbra\envFontB(\hspace{#1}}}#2{\text{\hspace{#1}\forbra\envFontB)}}}
+\newcommandx{\Mid}[3][1=1pt,2=\envFontA]{{\text{#2\mid}}\hspace{#1}{#3}\hspace{#1}{\text{#2\mid}}}
 \newcommand{\cMid}[2][1pt]{\Mid[#1][\envFontLarge\envFontA]{#2}}
 \newcommand{\aMid}[2][1pt]{\Mid[#1][\envFontLarge\envFontA]{#2}}
 \newcommand{\aXMid}[2][1pt]{\Mid[#1][\envFontHuge\envFont]{#2}}
-\newcommand{\Bra}[2][\envFont]{{\text{\forbra{#1\{}}}#2{\text{\forbra{#1\}}}}}%{\hText[-4pt]{}{}{$\hspace{-1pt}{\envFontB$\hText[#1]{\left\{}{\right\}}{${\envFont$#2$}$}$}$}}
+\newcommand{\Bra}[2][\envFont]{{\text{\forbra{#1\{}}}#2{\text{\forbra{#1\}}}}}
 \newcommand{\SmallPar}[2][0pt]{{\envFontSmall[\scriptsize]\Par[#1]{#2}}}
 \newcommand{\BigPar}[1]{{\text{\envFont\forbra(\hspace{1pt}}}#1{\text{\hspace{1pt}\envFont\forbra)}}}
 \newcommand{\XPar}[1]{{\text{\envFont\forbrax(\hspace{1pt}}}#1{\text{\hspace{1pt}\envFont\forbrax)}}}
