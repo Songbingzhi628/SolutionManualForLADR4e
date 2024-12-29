@@ -23,23 +23,20 @@
 
 \ProblemN{1}{
 	\vspace{2pt}\TextN{Prove that $\forall v\in V,-\Par{-v} = v$.}
-}\vspace{2pt}\par\quad
-{$\MathRightBrace{r}{\,-\Par{-v}+\Par{-v}=0\\$ $v+\Par{-v}=0}\Rightarrow$ By the uniqnes of add inv, we are done.}\vspace{6pt}\par\quad
-\Or $-\Par{-v}=\Par{-1}\BigPar{\Par{-1}v}=\BigPar{\Par{-1}\Par{-1}}v=1\cdot v=v.$\PfEnd
+}$-\Par{-v}=\Par{-1}\BigPar{\Par{-1}v}=\BigPar{\Par{-1}\Par{-1}}v=1\cdot v=v.$\parSol{\vspace{4pt}}
+\Or Because $-\Par{-v}+\Par{-v}=0$ 又 $v+\Par{-v}=0.$ Now by the uniqnes of add inv.\PfEnd
 \SepLine
 
 \ProblemN{2}{
 	\TextN{Suppose $a\in\Fbb,v\in V$, and $av = 0$. Prove that $a = 0$ or $v = 0$.}
-}\par\quad
-Suppose $a\neq 0,\exists\,a^{-1}\in\Fbb,a^{-1}a=1,$ hence $v=1\cdot v=\Par{a^{-1}a}v=a^{-1}\Par{av}=a^{-1}\cdot 0=0.$\PfEnd
+}Suppose $a\neq 0,\exists\,a^{-1}\in\Fbb,a^{-1}a=1,$ hence $v=1\cdot v=\Par{a^{-1}a}v=a^{-1}\Par{av}=a^{-1}\cdot 0=0.$\PfEnd
 \SepLine
 
 \ProblemN{3}{
-	\TextN{Suppose $v, w\in V$. Explain why $\exists\,!\,x\in V,v + 3x = w$.
-}}\par\quad
-\;\hspace{1pt}\Sbra[2pt]{{\tgsl Existns}} \;Let $x=\Frac{1}{3}\Par{w-v}.$\vspace{2pt}\par\quad
-\Sbra[2pt]{{\tgsl Uniqnes}} \;Suppose $v+3x_1=w,$(I)$\,\,v+3x_2=w\,$(II). Then (I) $-$ (II) $: 3\Par{x_1-x_2}=0\Rightarrow x_1=x_2.$\vspace{4pt}\PfEnd\quad
-\Or \quad$v + 3x = w \quad\Leftrightarrow\quad 3x = w − v\quad \Leftrightarrow\quad x = \frac{1}{3} \Par{w − v}.$\PfEnd
+	\TextN{Suppose $v, w\in V$. Explain why $\exists\,!\,x\in V,v + 3x = w.$}
+}$v + 3x = w \quad\Leftrightarrow\quad 3x = w − v\quad \Leftrightarrow\quad x = \frac{1}{3} \Par{w − v}.$\PfEnd\vspace{4pt}\quad
+\Or \hspace{1pt}\;{\Existns} \;Let $x=\Frac{1}{3}\Par{w-v}.$\vspace{2pt}\par\quad
+\Blind{\Or}{\Uniqnes} \;If $v+3x_1=w,$(I)$\,\,v+3x_2=w\,$(II). Then (I) $-$ (II) $: 3\Par{x_1-x_2}=0\Rightarrow x_1=x_2.$\PfEnd
 \SepLine
 
 \ProblemN[]{5}{
@@ -68,22 +65,25 @@ Suppose $a\neq 0,\exists\,a^{-1}\in\Fbb,a^{-1}a=1,$ hence $v=1\cdot v=\Par{a^{-1
 \quad\TextN{\envFontDefault\EndI\large\tgnr(II) $t + \Par{-\infty} = \Par{-\infty} + t = \Par{-\infty} + \Par{-\infty} = -∞,$}
 \quad\TextN{\envFontDefault\EndII\large\tgnr(III) $\infty + \Par{-\infty} = \Par{-\infty} + \infty = 0$.\vspace{8pt}}
 \TextN{With these operations of add and scalar multi, is $\Rbb\cup\Bra{\infty, -\infty}$ a vecsp over $\Rbb$? Explain.}
-}\par\quad
-Not a vecpsp, since the add and scalar mult is not assoc and distr.\par\quad
-By Assoc: $\Par{a+\infty}+\Par{-\infty}\neq a+\Par{\infty+\Par{-\infty}}$.\par\quad
+}Not a vecpsp, since the add and scalar mult is not assoc and distr.\parSol{}
+By Assoc: $\Par{a+\infty}+\Par{-\infty}\neq a+\Par{\infty+\Par{-\infty}}.$\parSol{}
 \Or By Distr: $\infty=\Par{2+\Par{-1}}\infty\neq 2\infty+\Par{-\infty}=\infty+\Par{-\infty}=0.$\PfEnd
 \SepLine
 
 \ProblemBnoor[]{\Tips}[]{
 	\TextB{\;About the Field $\Fbb:$ Many choices.}
-	\TextB{\Example \,\,\,$\Fbb=\Zbb_m=\Bra{K_0,K_1,\dots,K_{m-1}},\forall m-1\in\Nbp.$ \envFontDefault\large\tgnr\BigPar{ See Euler's Theorem. }}
+	\TextB{\Example \,\,\,$\Fbb=\Zbb_m=\Bra{K_0,K_1,\dots,K_{m-1}},\forall m-1\in\Nbp.$ \envFontDefault\large\tgnr\Sbra{ Using Euler's Theorem. }}
 }\SepLine
 \ChEnd
-\pagebreak
 
 \ChDecl{Ch1C}{1$\cdot$C}{}\orMode{\hLk{1C7}{7}\;\;\hLk{1C8}{8}\;\;\hLk{1C9}{9}\;\;\hLk{1C11}{11}\;\;\hLk{1C12}{12}\;\;\hLk{1C13}{13}\;\;\hLk{1C15}{15}\;\;\hLk{1C16}{16}\;\;\hLk{1C17}{17}\;\;\hLk{1C18}{18}\;\;\hLk{1C21}{21}\;\;\hLk{1C23}{23}\;\;\hLk{1C24}{24}}{[1]: 7, 8, 9, 15, 16, 17, 18, 11; [2]: 12, 13, 21; [3]: 23, 24.}
 
 \vspace{6pt}
+
+\BulletPointX\NoteForSmall{[1.45]}\;\;If $\Fbb=\Bra{0,1}.$ Prove that if $U+W$ is a direct sum, then $U\cap W=\zeroSubs.$\TextB{}
+Because $\forall v\in U\cap W,\exists\,!\,\Par{u,w}\in U\times W,v=u+w.$\TextB{}
+If $U\cap W\neq\zeroSubs,$ then $\Par{u,w}$ can be $\Par{v,0}$ or $\Par{0,v},$ contradicts the uniqnes.\PfEnd\vspace{-2pt}
+\SepLine
 
 \ProblemN{\hypertarget{1C7}{7}}{
 	\TextN{Give a nonempty $U\subseteq\Rbb^2,$}
@@ -113,7 +113,8 @@ $\MathRightBrace{r}{
 \SepLine[6pt]
 
 \BulletPointX\Largesl{Suppose $U,W,V_1,V_2,V_3$ are subsps of $V.$}\par
-\Onumber{\hypertarget{1C15}{15}}\quad{$U+U\ni u+w\in U.$} \quad \Onumber{\hypertarget{1C16}{16}}\quad{$U+W\ni u+w=w+u\in W+U.$}\PfEnd
+\Onumber{\hypertarget{1C15}{15}}\quad{$U+U\ni u+w\in U.$}\PfEnd
+\Onumber{\hypertarget{1C16}{16}}\quad{$U+W\ni u+w=w+u\in W+U.$}\PfEnd
 \Onumber{\hypertarget{1C17}{17}}\quad{$\Par{V_1+V_2}+V_3\ni\Par{v_1+v_2}+v_3=v_1+\Par{v_2+v_3}\in V_1+\Par{V_2+V_3}.$}\PfEnd
 \BulletPointX{ \quad}{$\Par{U+W}_{\Cbb}\ni \Par{u_1+w_1}+\i\Par{u_2+w_2}=\Par{u_1+\i u_2}+\Par{w_1+\i w_2}\in U_\Cbb+W_\Cbb.$}\PfEnd
 \SepLine
@@ -129,7 +130,8 @@ Note that $U+W\supseteq U,W\Rightarrow \Omega\supseteq U,W$. Thus $U=W=\Omega=\z
 
 \ProblemN{\hypertarget{1C11}{11}}{
 	\TextNL{Prove that the intersection of every collection of subsps of $V$ is a subsp of $V$.}
-}Suppose $\Bra{U_{\alpha}}{_{\alpha\in\Gamma}}$ is a collection of subsps of $V$; here $\Gamma$ is an arbitrary index set.\vspace{4pt}\par\quad
+}\par\quad
+Suppose $\Bra{U_{\alpha}}{_{\alpha\in\Gamma}}$ is a collection of subsps of $V$; here $\Gamma$ is an arbitrary index set.\vspace{4pt}\par\quad
 We show that $\bigcap_{\alpha\in\Gamma}U_\alpha,$ which equals the set of vecs that are in $U_\alpha$ for each $\alpha\in\Gamma$, is a subsp of $V$.\par\vspace{6pt}\,
 $\begin{array}{l}$
 (一) $0\in\bigcap_{\alpha\in\Gamma}U_\alpha.$ Nonempty.$\\ $
@@ -230,7 +232,11 @@ Now $V_1\subseteq V_2,\;U_2\subseteq U_1$ and $V_1\oplus U_1=V_2\oplus U_2.$ But
 (b) $\hMath{l}{\left|}{\right\}}{$
 	Let $f_e\Par{x}=\Frac{1}{2}\Sbra{g\Par{x}+g\Par{-x}}\Longrightarrow f_e\in V_E\vspace{4pt}\\$
 	Let $f_o\Par{x}=\Frac{1}{2}\Sbra{g\Par{x}-g\Par{-x}}\Longrightarrow f_o\in V_O
-	}\Rightarrow\forall g\in\Rbb^\Rbb,g\Par{x}=f_e\Par{x}+f_o\Par{x}.$\PfEnd
+	}\Rightarrow\forall g\in\Rbb^\Rbb,g\Par{x}=f_e\Par{x}+f_o\Par{x}.$\PfEnd\vspace{4pt}
+\SepLine
+
+\BulletPointX\Tips \,\,\,Suppose $U,W\subseteq V.$ And $U,W,V$ are vecsps $\Rightarrow U,W$ are subsps of $V.$\TextB{}
+\IndentTips{}Then $U+W$ is also a subsp of $V.$ Because $\forall u\in U,w\in U,u+w\in V$ since $u,w\in V.$
 \SepLine
 \ChEnd
 
@@ -692,6 +698,11 @@ $w+\i x\in\range\Par{T_\Cbb}\Longleftrightarrow w,x\in\range T\Longleftrightarro
 	\TextB{Suppose $V$ is on $\Rbb,$ and $S,T\in\Lm{V,W}.$ Prove that $\Par{S+\lambda T}{_\Cbb}=S_\Cbb+\lambda T_\Cbb.$}
 }$\Par{S+\lambda T}{_\Cbb}\Par{u+\i v}=\Par{S+\lambda T}\Par{u}+\i\Par{S+\lambda T}\Par{v}$\parSol{}
 $=Su+\i Sv+\lambda\Par{Tu+\i Tv}=\Par{S_\Cbb+\lambda T_\Cbb}\Par{u+\i v}.$\PfEnd
+\SepLine
+
+\ProblemB{
+	\TextB{Suppose $U,V,W$ are on $\Rbb,$ $S\in\Lm{V,W},T\in\Lm{U,V}.$ Prove that $\Par{ST}{_\Cbb}=S_\Cbb T_\Cbb.$}
+}$\forall u+\i x\in U_\Cbb,\Par{ST}{_\Cbb}\Par{u+\i x}=STu+\i STx=S_\Cbb\Par{Tu+\i Tx}=\Par{S_\Cbb T_\Cbb}\Par{u+\i x}.$\PfEnd
 \SepLine
 
 %\BulletPointX\TipsN{3} \,\,\,Several error-prone ways of defining $T\in\Lm{V,W}.$\TextB{}
