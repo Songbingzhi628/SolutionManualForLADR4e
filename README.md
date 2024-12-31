@@ -4,8 +4,7 @@
 
 # 关于该仓库的声明：
 
-我上传这些资料，旨在和广大学习者自由交流讨论。
-该库文件中，至少包括**SolusMan-LADR4e.pdf**和**SourceCode**目录下的.png、.jpg、.ggb文件，和**SolusMan-LADR4e.tex**、**Ch123.tex**、**Ch45.tex**、**Settings.tex**，是在**CC BY NC SA**条款约束下的，仅允许非商业用途的修改、复制、转发、衍生等，并且需要为副本/衍生作品使用与原作相同的协议（传染性）。这是因为原作LADR4e是在**CC BY NC**下发布的。所以其衍生作品允许（哪怕是一点点）商用是非法的，其许可证也是无效的。
+我上传这些资料，旨在和广大学习者自由交流讨论。该库文件中：至少包括**SolusMan-LADR4e.pdf**和**SourceCode**目录下的**.png、.jpg、.ggb**文件，除去‘by-nc-sa.png’，都是在**CC0**协议下的。至少包括**SourceCode**目录下的**SolusMan-LADR4e.tex**、**Ch123.tex**、**Ch45.tex**、**Settings.tex**，是在**CC BY NC SA**条款约束下的，仅允许非商业用途的修改、复制、转发、衍生等，并且需要为副本/衍生作品使用与原作相同的协议（传染性）。这是因为原作LADR4e是在**CC BY NC**下发布的。所以其衍生作品允许（哪怕是一点点）商用是非法的，其许可证也是无效的。
 
 > 该仓库的许可证曾在24年12月30日有过一次大变更。此次变更之前的版本对用户的(A)GPLv3/GFDL的授权，因为违背了被衍生作品即原作LADR4e的NonCommerical条款，所以在可商用性方面是无效的。
 > 
@@ -90,7 +89,7 @@
 
 # About this repo:
 
-The purpose of me uploading these materials, is to communicate with as many learners, teachers, scholars, etc. as possible. The files in this repo, at least containing **SolusMan-LADR4e.pdf** and .png, .jpg, .gbb files under the **SourceCode** directory, are all licensed under **GNU FDLv1.3**; files at least containing **SolusMan-LADR4e.tex**, **Ch123.tex**, **Ch45.tex**, **Settings.tex** in the **SourceCode** directory, are licensed under **CC BY NC SA**.
+The purpose of me uploading these materials, is to communicate with as many learners, teachers, scholars, etc. as possible. The files in this repo, at least containing **SolusMan-LADR4e.pdf** and **.png, .jpg, .gbb** files under the **SourceCode** directory, except for `by-nc-sa.png', are all licensed under **CC0**; files at least containing **SolusMan-LADR4e.tex**, **Ch123.tex**, **Ch45.tex**, **Settings.tex** in the **SourceCode** directory, are licensed under **CC BY NC SA**.
 
 You are free to (re)distribute, modify, or copy any part or whole of those files, as long as in non-commerical use, and as long as you release your Derivative Work under the same License. See **LICENSE** for more details.
 
