@@ -37,7 +37,7 @@ Hence $\forall k\in\Bra{1,\dots,m},z^k-\lambda^k=\Par{z-\lambda}\Par{ z^{k-1}\la
 Thus $p\Par{z}=\sum_{j=1}^m a_j \Par{z-\lambda}\sum_{i=1}^k \lambda^{i-1}z^{k-i}=\Par{z-\lambda}\sum_{j=1}^m a_j\sum_{i=1}^k \lambda^{i-1}z^{k-i}=\Par{z-\lambda}q\Par{z}.$\PfEnd
 \SepLine
 
-\BulletPointX\NoteFor{[4.13]}\;\;{\tgsl Every nonconst poly with complex coefficients has a zero in $\Cbb$.} \vspace{2pt}\hfill[{\tgsc Another proof}]\TextB{}
+\BulletPointX\NoteFor{[4.13]}\;\;{\tgsl Every nonconst poly with complex coeffs has a zero in $\Cbb$.} \vspace{2pt}\hfill[{\tgsc Another proof}]\TextB{}
 For any $w\in\Cbb,k\in\Nbp,$ by polar coordinates, $\exists\,r\geqslant 0,\theta\in\Rbb,r\Par{\cos\theta + \i \sin\theta} = w$.\vspace{2pt}\TextB{}
 By De Moivre' theorem, $w^k=\Sbra{r\Par{\cos\theta +\i\sin \theta}}{^k}=r^k\Par{\cos k\theta + \i \sin k\theta}$.\vspace{2pt}\TextB{}
 Hence $\BigPar{r^{1/k}\Par{\cos\frac{\theta}{k} +\i\sin\frac{\theta}{k}}}{^k}=w$. Thus every complex number has a {\tgsl $k^{th}$ root}.\vspace{6pt}\TextB{}
@@ -466,7 +466,7 @@ The set of all eigvecs is $\Bra{\Par{0,0,w},\Par{w,0,0}:w\neq 0}.$\PfEnd
 Then $Tx=\lambda v=\Par{x_1,2 x_2,3 x_3,\dots,n x_n}=\Par{\lambda x_1,\lambda x_2,\lambda x_3,\dots,\lambda x_n}.$\par\quad\Ha
 Hence $1,\dots,n$ of length $\dim\Fbb^n$ are all the eigvals.\par\quad\Ha
 And $\Bra{\Par{0,\dots,0,x_k,0,\dots,0}\in\Fbb^n:x_k\neq 0,k=1,\dots,n}$ is the set of all eigvecs.\par\quad
-(b) Let $\Par{e_1,\dots,e_n}$ be the standard basis of $\Fbb^n.$ Let $V_{\!k}=\Span{e_k}.$ Then $V_{\!1},\dots,V_{\!n}$ are invar under $T.$\par\quad\Hb
+(b) Let $\Par{e_1,\dots,e_n}$ be the std basis of $\Fbb^n.$ Let $V_{\!k}=\Span{e_k}.$ Then $V_{\!1},\dots,V_{\!n}$ are invar under $T.$\par\quad\Hb
 Hence by \TIPSN{3}, every sum of $V_{\!1},\dots,V_{\!n}$ is a invar subsp of $V$ under $T.$\PfEnd
 \SepLine
 
@@ -481,7 +481,7 @@ If $\lambda\neq 0,$ then $\lambda z_1=0\Rightarrow z_1=\dots=z_k=0\Longrightarro
 
 \ProblemN{\hypertarget{5A19}{19}}{
 	\TextNL{Suppose $n\in\Nbp$. Define $T\in\Lm{\Fbb^n}$ by $T\Par{x_1,\dots,x_n}=\Par{x_1+\dots+x_n,\dots,x_1+\dots+x_n}.$}
-	\TextNL{In other words, the entries of $\Mt{T}$ with resp to the standard basis are all \,$1$'s.}
+	\TextNL{In other words, the entries of $\Mt{T}$ with resp to the std basis are all \,$1$'s.}
 	\TextNL{Find all eigvals and eigvecs of $T.$}
 }\par\quad
 Suppose $\lambda$ is an eigval of $T$ with an eigvec $\Par{x_1,\dots,x_n}.$\par\quad
@@ -578,7 +578,7 @@ $\lambda$ is an eigval of $S^{-1}TS$ with an eigvec $v\Rightarrow S\Par{S^{-1}TS
 \ProblemN{\hypertarget{5A17}{17}}{
 	\TextNL{Give an example of an operator on $\Rbb^4$ that has no real eigvals.}
 }\par\quad
-Let $\Par{e_1,e_2,e_3,e_4}$ be the standard basis of $\Rbb^4.$\vspace{-6pt}\par\quad
+Let $\Par{e_1,e_2,e_3,e_4}$ be the std basis of $\Rbb^4.$\vspace{-6pt}\par\quad
 Define $T\in\Lm{\Rbb^4}$ by $\Mt[\BigPar]{T,\Par{e_1,e_2,e_3,e_4}}={}${\normalsize$\begin{pmatrix}
 		1 & 1 & 1 & 1\\
 		-1 & 1 & -1 & -1\\
@@ -644,7 +644,7 @@ Hence $\lambda=1$ for all $x\in\Fbb^{n,1}$ such that $\sum_{c=1}^n x_{c,1}\neq 0
 Because $\Par{T-I}x=\Par{A-I}x={}${\small$\begin{pmatrix} \sum_{r=1}^n A_{1,r}x_r-x_1\\ \vdots\\ \sum_{r=1}^n A_{n,r}x_r-x_n\end{pmatrix}=\begin{pmatrix} y_1\\ \vdots\\ y_n\end{pmatrix}$}.\vspace{4pt}\par\quad\Hb
 Then $y_1+\dots+y_n=\sum_{r=1}^n\sum_{c=1}^n \Par{A_{r,c}x_c-x_r}=\sum_{c=1}^n x_c\sum_{r=1}^n A_{r,c}-\sum_{r=1}^n x_r=0.$\par\vspace{6pt}\quad\Hb
 Thus $\range\Par{T-I}\subseteq\envFontLarge\Bra{\envFontDefault\,${\normalsize$\begin{pmatrix}	y_1 & \cdots & y_n\end{pmatrix}$}${^t}\in\Fbb^{n,1}:y_1+\dots+y_n=0\envFontLarge}.$ Hence $\Par{T-I}$ is not surj.\PfEnd\vspace{10pt}\quad\Hb
-\Or Let $\Par{e_1,\dots,e_n}$ be the standard basis of $\Fbb^{n,1}.$ Define $\psi\in\BigPar{\Fbb^{n,1}}\apostrophe$ by $\psi\Par{e_k}=1.$\vspace{2pt}\par\quad\Hb
+\Or Let $\Par{e_1,\dots,e_n}$ be the std basis of $\Fbb^{n,1}.$ Define $\psi\in\BigPar{\Fbb^{n,1}}\apostrophe$ by $\psi\Par{e_k}=1.$\vspace{2pt}\par\quad\Hb
 Thus $\BigPar{\psi\circ\Par{T-I}}\Par{e_k}=\psi\XPar{\BigPar{\sum_{j=1}^n A_{j,k}e_j}-e_k}=\BigPar{\sum_{j=1}^n A_{j,k}}-1=0.$\vspace{2pt}\par\quad\Hb
 Which means that $\psi\circ\Par{T-I}=0.$ 又 $\psi\neq 0.$ Hence $\Par{T-I}$ is not inje.\PfEnd\vspace{10pt}\quad\Hb
 \Or Define $S\in\Lm{\Fbb^{n,1}}$ by $Sx=A^tx.$ Because the rows of $A^t$ are the cols of $A.$\par\quad\Hb
@@ -669,7 +669,7 @@ Hence $\lambda=1,$ for all $x$ such that $\sum_{r=1}^n x_{1,r}\neq 0.$\PfEnd\vsp
 Because $\Par{T-I}x=x\BigPar{A-\Mt{I}}={}${\normalsize$\begin{pmatrix} \sum_{c=1}^n x_c A_{c,1}-x_1 &\cdots & \sum_{c=1}^n x_c A_{c,n}-x_n\end{pmatrix}$}${}={}${\normalsize$\begin{pmatrix} y_1 & \cdots & y_n\end{pmatrix}$}.\vspace{2pt}\par\quad\Hb
 Then $y_1+\dots+y_n=\sum_{c=1}^n\sum_{r=1}^n\Par{x_r A_{r,c}-x_c}=\sum_{r=1}^n x_r\sum_{c=1}^n A_{r,c}-\sum_{c=1}^n x_c=0.$\par\vspace{4pt}\quad\Hb
 Thus $\range\Par{T-I}\subseteq\Bra{\,${\small$\begin{pmatrix}y_1 & \cdots & y_n\end{pmatrix}$}$\,\in\Fbb^{1,n}:y_1+\dots+y_n=0}.$ Hence $\Par{T-I}$ is not surj.\PfEnd\vspace{6pt}\quad\Hb
-\Or Let $\Par{e_1,\dots,e_n}$ be the standard basis of $\Fbb^{1,n}.$ Define $\psi\in\Par{\Fbb^{n,1}}\apostrophe$ by $\psi\Par{e_k}=1.$\vspace{2pt}\par\quad\Hb
+\Or Let $\Par{e_1,\dots,e_n}$ be the std basis of $\Fbb^{1,n}.$ Define $\psi\in\Par{\Fbb^{n,1}}\apostrophe$ by $\psi\Par{e_k}=1.$\vspace{2pt}\par\quad\Hb
 Because $Te_k=e_k A=\begin{pmatrix}A_{k,1}&\cdots&A_{k,n}\end{pmatrix}=\sum_{i=1}^n A_{k,i}e_i.$ \Corollary \,\,\,$\Mt{T}=A^t.$\vspace{3pt}\par\quad\Hb
 $\BigPar{\psi\circ\Par{T-I}}\Par{e_k}=\BigPar{\sum_{i=1}^n A_{k,i}}-1=0.$ Then $\psi\circ\Par{T-I}=0.$ 又 $\psi\neq 0.$ $\Par{T-I}$ is not inje.\PfEnd\vspace{8pt}\quad\Hb
 \Or Define $S\in\Lm{\Fbb^{1,n}}$ by $Sx=xA^t.$ Because the rows of $A$ are the cols of $A^t.$\par\quad\Hb
@@ -1337,7 +1337,7 @@ Because\vspace{-35pt}\par\quad
 \hspace{50pt}\includegraphics[width=4.4cm,height=3.2cm,scale=0.22]{diagram2.png}\par\vspace{-70pt}\quad
 \hspace{180pt}{$\MathLeftMid{l}{Tv=\Frac{\left|\overset{\rightarrow}{v}\right|}{2L}\Par{T^2 v+v}\Rightarrow T=\Frac{\left|\overset{\rightarrow}{v}\right|}{2L}\Par{T^2+I}\\\vspace{8pt} L=\left|\overset{\rightarrow}{v}\right|\cos\theta\Rightarrow\Frac{\left|\overset{\rightarrow}{v}\right|}{2L}=\Frac{1}{2\cos\theta}}$}\par\quad
 Hence $p\Par{T}=T^2-2\cos\theta\, T+I=0$ and $z^2-2\cos\theta\;z+1$ is the mini poly of $T.$\PfEnd\vspace{6pt}\quad
-\Or Let $\Par{e_1,e_2}$ be the standard basis of $\Rbb^2.$ We use the pattern shown in [8.44].\par\quad
+\Or Let $\Par{e_1,e_2}$ be the std basis of $\Rbb^2.$ We use the pattern shown in [8.44].\par\quad
 Because $Te_1=\cos\theta\;e_1+\sin\theta\;e_2,\;T^2e_1=\cos2\theta\;e_1+\sin2\theta\;e_2.$\par\vspace{2pt}\quad
 Thus \;$ce_1+bTe_1=-T^2 e_1\Longleftrightarrow{}${\small$\begin{pmatrix}
 	1 & \cos\theta\\
@@ -1465,7 +1465,7 @@ Thus $f\Par{\lambda_0}\neq \lim\limits_{n\rightarrow\infty}f\Par{\lambda_n}.$\Pf
 \ProblemBnoor{\hypertarget{5BI4e9}{4E 5.B.9}}{
 	\TextB{Suppose $T\in\Lm{V}$ is such that with resp to some basis of $V$,}
 	\TextB{all entries of the matrix of $T$ are rational numbers.}
-	\TextB{Explain why all coefficients of the mini poly of $T$ are rational numbers.}
+	\TextB{Explain why all coeffs of the mini poly of $T$ are rational numbers.}
 }\par\quad
 Let $\Par{v_1,\dots,v_n}$ denote the basis such that $\Mt[\BigPar]{T,\Par{v_1,\dots,v_n}}_{j,k}=A_{j,k}\in\Qbb$ for all $j,k=1,\dots,n$.\par\quad
 Denote $\Mt[\BigPar]{v_j,\Par{v_1,\dots,v_n}}$ by $x_j$ for each $v_j.$\par\quad
@@ -1491,7 +1491,7 @@ We conclude that $c_0,c_1,\dots,c_{m-1}\in\Qbb.$\PfEnd
 	  & 1 & \ddots &  &   & \vdots   \\
 	  &   & \ddots &  & 0 & -a_{n-2} \\
 	0 &   &        &  & 1 & -a_{n-1}
-\end{pmatrix} $}, with resp to the standard basis $\Par{e_1,\dots,e_n}$.\vspace{4pt}}
+\end{pmatrix} $}, with resp to the std basis $\Par{e_1,\dots,e_n}$.\vspace{4pt}}
 	\TextB{Show that the mini poly of $T$ is $\,p\,$ defined by $p\Par{z}=a_0 + a_1 z + \dots + a_{n-1} z^{n-1} + z^n$.}
 	\vspace{-2pt}\TextB{\small $\Mt{T}$ is called the {\tgsc companion matrix} of the poly above. This exercise shows that every monic poly is the mini poly of some operator.}
 	\vspace{-2pt}\TextB{\small Hence a formula or an algorithm that could produce exact eigvals for each operator on each $\Fbb^n$ could then produce exact zeros for}
