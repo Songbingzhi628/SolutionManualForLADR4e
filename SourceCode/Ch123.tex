@@ -97,10 +97,10 @@ $\MathRightBrace{r}{
 	2[\text{\tgbf{I}}]-[\text{\tgbf{II}}]:\qquad\qquad\hspace{-1pt} \cos x=\cos\Par{x+p}}\Rightarrow$ Let $x=0,$\;\,$ p=\Frac{m\pi}{\sqrt{2}}=2k\pi.$\; Contradicts.\PfEnd\vspace{4pt}\par
 \SepLine[6pt]
 
-\BulletPointX\Largesl{Suppose $U,W,V_1,V_2,V_3$ are subsps of $V.$}\par
+\BulletPointX\Largesl{Suppose $U,W,V_{\!1},V_{\!2},V_{\!3}$ are subsps of $V.$}\par
 \Onumber{\hypertarget{1C15}{15}}\quad{$U+U\ni u+w\in U.$}\PfEnd
 \Onumber{\hypertarget{1C16}{16}}\quad{$U+W\ni u+w=w+u\in W+U.$}\PfEnd
-\Onumber{\hypertarget{1C17}{17}}\quad{$\Par{V_1+V_2}+V_3\ni\Par{v_1+v_2}+v_3=v_1+\Par{v_2+v_3}\in V_1+\Par{V_2+V_3}.$}\PfEnd
+\Onumber{\hypertarget{1C17}{17}}\quad{$\Par{V_{\!1}+V_{\!2}}+V_{\!3}\ni\Par{v_1+v_2}+v_3=v_1+\Par{v_2+v_3}\in V_{\!1}+\Par{V_{\!2}+V_{\!3}}.$}\PfEnd
 \BulletPointX{ \quad}{$\Par{U+W}_{\Cbb}\ni \Par{u_1+w_1}+\i\Par{u_2+w_2}=\Par{u_1+\i u_2}+\Par{w_1+\i w_2}\in U_\Cbb+W_\Cbb.$}\PfEnd
 \SepLine
 
@@ -155,7 +155,7 @@ Hence this literal trick is invalid.\par\quad\Hb
 (II) \envFontLarge\dbsp{Assume that no $U_j$ is contained in the union of the other two,}\par\quad\Hb\HII
 \Blind{Assume }{\vspace{6pt}and no $U_j$ contains the union of the other two. Say $U_1\not\subseteq U_2\cup U_3$ and $U_1\not\supseteq U_2\cup U_3.$}\par\quad\Hb\HII
 {\dbsp}{\Large\vspace{6pt}$\exists\,u\in U_1\wedge u\not\in U_2\cup U_3;\;v\in U_2\cup U_3\wedge v\not\in U_1.$ Let $W=\Bra{v+\lambda u:\lambda\in\Fbb}\,\subseteq\mathcal{U}.$}\par\quad\Hb\HII
-{\dbsp}{\Large\vspace{6pt}Note that $W\cap U_1=\emptyset,$ for if any $v+\lambda u\in W\cap U_1$ then $v+\lambda u-\lambda u=v\in U_1$.}\par\quad\Hb\HII
+{\dbsp}{\Large\vspace{6pt}Note that $W\cap U_1=\emptySet,$ for if any $v+\lambda u\in W\cap U_1$ then $v+\lambda u-\lambda u=v\in U_1$.}\par\quad\Hb\HII
 {\dbsp}{\Large\vspace{6pt}Now $W\subseteq U_1\cup U_2\cup U_3\Rightarrow W\subseteq U_2\cup U_3.$ $\forall v+\lambda u\in W,v+\lambda u\in U_i,i=2,3.$}\par\quad\Hb\HII
 {\Large\vspace{6pt}If $U_2\subseteq U_3$ or $U_2\supseteq U_3,$ then $\mathcal{U}=U_1\cup U_i,i=2,3.$} {By Problem (12) we are done.}\par\quad\Hb\HII
 {\Large\vspace{6pt}Otherwise, {\large\envFontDefault both $U_2,U_3\neq\zeroSubs.$} Because \tgsl$W\subseteq U_2\cup U_3$ has at least three elements.}\par\quad\Hb\HII
@@ -180,25 +180,25 @@ And $\Fbb^5\ni\Par{x,y,z,w,u}\Rightarrow\Par{x,y,x+y,x-y,2x}+\Par{0,0,z-x-y,w-x-
 \SepLine
 
 \ProblemN{\hypertarget{1C23}{23}}{
-	\TextNL{Give an example of vecsps $V_1,V_2,U$ such that $V_1\oplus U=V_2\oplus U$, but $V_1\neq V_2$.\vspace{3pt}}
-}$V=\Fbb^2$,  $U=\Bra{\Par{x,x}\in\Fbb^2}$, $V_1=\Bra{\Par{x,0}\in\Fbb^2}$, $V_2=\Bra{\Par{0,x}\in\Fbb^2}$.\par
+	\TextNL{Give an example of vecsps $V_{\!1},V_{\!2},U$ such that $V_{\!1}\oplus U=V_{\!2}\oplus U$, but $V_{\!1}\neq V_{\!2}$.\vspace{3pt}}
+}$V=\Fbb^2$,  $U=\Bra{\Par{x,x}\in\Fbb^2}$, $V_{\!1}=\Bra{\Par{x,0}\in\Fbb^2}$, $V_{\!2}=\Bra{\Par{0,x}\in\Fbb^2}$.\par
 \SepLine
 
 \ProblemB{
-	\Tips \,\,\,\TextB{Suppose $V_1\subseteq V_2$ in Exercise {\tgnr(23)}. Prove or give a counterexample\hspace{1pt}$:$ $V_1=V_2.$}
+	\Tips \,\,\,\TextB{Suppose $V_{\!1}\subseteq V_{\!2}$ in Exercise {\tgnr(23)}. Prove or give a counterexample\hspace{1pt}$:$ $V_{\!1}=V_{\!2}.$}
 }\par\quad
-Because the subset $V_1$ of vecsp $V_2$ is closed under add and scalar multi, $V_1$ is a subspace of $V_2.$\par\quad
-Suppose $W$ is such that $V_2=V_1\oplus W.$ Now $V_2\oplus U=\Par{V_1\oplus W}\oplus U=\Par{V_1\oplus U}\oplus W=V_1\oplus U.$\par\quad
-If $W\neq\zeroSubs,$ then $V_1\oplus U\subsetneq\Par{V_1\oplus U}\oplus W$, contradicts. Hence $W=\zeroSubs,V_1=V_2.$\PfEnd
+Because the subset $V_{\!1}$ of vecsp $V_{\!2}$ is closed under add and scalar multi, $V_{\!1}$ is a subspace of $V_{\!2}.$\par\quad
+Suppose $W$ is such that $V_{\!2}=V_{\!1}\oplus W.$ Now $V_{\!2}\oplus U=\Par{V_{\!1}\oplus W}\oplus U=\Par{V_{\!1}\oplus U}\oplus W=V_{\!1}\oplus U.$\par\quad
+If $W\neq\zeroSubs,$ then $V_{\!1}\oplus U\subsetneq\Par{V_{\!1}\oplus U}\oplus W$, contradicts. Hence $W=\zeroSubs,V_{\!1}=V_{\!2}.$\PfEnd
 \SepLine
 
 \ProblemB{
-	\TextB{Suppose $V_1,V_2,U_1,U_2$ are vecsps, $V_1\oplus U_1=V_2\oplus U_2,\;V_1\subseteq V_2,\;U_2\subseteq U_1.$}
-	\TextB{Prove or give a counterexample\hspace{1pt}$:$ $V_1=V_2,\;U_1=U_2.$}
+	\TextB{Suppose $V_{\!1},V_{\!2},U_1,U_2$ are vecsps, $V_{\!1}\oplus U_1=V_{\!2}\oplus U_2,\;V_{\!1}\subseteq V_{\!2},\;U_2\subseteq U_1.$}
+	\TextB{Prove or give a counterexample\hspace{1pt}$:$ $V_{\!1}=V_{\!2},\;U_1=U_2.$}
 }A counterexample: \Sbra{ Using notations in Chapter 2. }\par\vspace{-36pt}\quad
 \hspace{360pt}\includegraphics[width=2.4cm,height=1.2cm,scale=0.22]{diagram1.png}\vspace{-4pt}\par\quad
-Let $V=\Fbb^3,B_V=\Par{e_1,e_2,e_3},\;V_1=\Span{e_1},\;U_1=\Span{e_2,e_3},\;V_2=\Span{e_1,e_2},\;U_2=\Span{e_3}.$\par\quad
-Now $V_1\subseteq V_2,\;U_2\subseteq U_1$ and $V_1\oplus U_1=V_2\oplus U_2.$ But $V_1\neq V_2,\;U_1\neq U_2.$\PfEnd
+Let $V=\Fbb^3,B_V=\Par{e_1,e_2,e_3},\;V_{\!1}=\Span{e_1},\;U_1=\Span{e_2,e_3},\;V_{\!2}=\Span{e_1,e_2},\;U_2=\Span{e_3}.$\par\quad
+Now $V_{\!1}\subseteq V_{\!2},\;U_2\subseteq U_1$ and $V_{\!1}\oplus U_1=V_{\!2}\oplus U_2.$ But $V_{\!1}\neq V_{\!2},\;U_1\neq U_2.$\PfEnd
 \SepLine
 
 %\ProblemN{\hypertarget{1C22}{22}}{
@@ -432,9 +432,9 @@ But the key point is, how can we guarantee that such a $“$list$”$ exists. \c
 
 \ProblemN{\hypertarget{2C15}{15}}{
 	\TextNL{Suppose $V$ is finite-dim and $\dim V=n\geqslant 1.$}
-	\TextNL{Prove that $\exists$ one-dim subsps $V_1,\dots,V_n$ of $V$ such that $V=V_1\oplus \dots\oplus V_n.$}
-}Suppose $B_V=\Par{v_1,\dots,v_n}.$ Define $V_i$ by $V_i=\Span{v_i}$ for each $i\in\Bra{1,\dots,n}.$\parSol{}
-Then $\forall v\in V,\exists\,!\,a_i\in\Fbb,v=a_1 v_1+\dots+a_n v_n\Rightarrow\exists\,!\,u_i\in V_i,v=u_1+\dots+u_n$\PfEnd
+	\TextNL{Prove that $\exists$ one-dim subsps $V_{\!1},\dots,V_{\!n}$ of $V$ such that $V=V_{\!1}\oplus \dots\oplus V_{\!n}.$}
+}Suppose $B_V=\Par{v_1,\dots,v_n}.$ Define $V_{\!i}$ by $V_{\!i}=\Span{v_i}$ for each $i\in\Bra{1,\dots,n}.$\parSol{}
+Then $\forall v\in V,\exists\,!\,a_i\in\Fbb,v=a_1 v_1+\dots+a_n v_n\Rightarrow\exists\,!\,u_i\in V_{\!i},v=u_1+\dots+u_n$\PfEnd
 \SepLine
 
 \ProblemBnoor{\NoteForSmall{Problem (15)}}[]{
@@ -443,7 +443,7 @@ Then $\forall v\in V,\exists\,!\,a_i\in\Fbb,v=a_1 v_1+\dots+a_n v_n\Rightarrow\e
 }If $n=1$ then let $v_1=v$ and we are done. Suppose $n>1.$\parSol{}
 Extend $\Par{v}$ to a basis $\Par{v,v_1,\dots,v_{n-1}}$ of $V.$ Let $v_n=v-v_1-\dots-v_{n-1}.$\parSol{}
 又 $\Span{v,v_1,\dots,v_{n-1}}=\Span{v_1,\dots,v_n}.$ Hence $\Par{v_1,\dots,v_n}$ is also a basis of $V.$\PfEnd\vspace{4pt}
-\Comment \,\,\,Let $B_V=\Par{v_1,\dots,v_n}$ and suppose $v=u_1+\dots+u_n,$ where each $u_i=a_i v_i\in V_i.$\parCom
+\Comment \,\,\,Let $B_V=\Par{v_1,\dots,v_n}$ and suppose $v=u_1+\dots+u_n,$ where each $u_i=a_i v_i\in V_{\!i}.$\parCom
 But $\Par{u_1,\dots,u_n}$ might not be a basis, because there might be some $u_i=0.$\vspace{-2pt}
 \SepLine\pagebreak
 
@@ -475,7 +475,7 @@ But $\Par{u_1,\dots,u_n}$ might not be a basis, because there might be some $u_i
 %{\tgsl You don't have to compute to know that the dimension of the set of solutions is 3.}
 \par\quad
 \NOTICE that $\not\exists\,p\in\PoF{}$ of deg $1$ and $2,$ while $p\in U.$ Thus $\dim U\leqslant \dim\PoF{4}-2=3.$\par\vspace{2pt}\quad
-(a) Consider $B=\XPar{1,\Par{z-2}\Par{z-5}\Par{z-6},z\Par{z-2}\Par{z-5}\Par{z-6}}.$\par\quad\Ha
+(a) Consider $B=\envFontLarge\BigPar{\envFontDefault1,\Par{z-2}\Par{z-5}\Par{z-6},z\Par{z-2}\Par{z-5}\Par{z-6}\envFontLarge}.$\par\quad\Ha
 Let $a_0+a_3\Par{z-2}\Par{z-5}\Par{z-6}+a_4z\Par{z-2}\Par{z-5}\Par{z-6}=0\Rightarrow a_0=a_3=a_4=0.$\par\quad\Ha
 Thus the list $B$ is linely inde in $U.$ Now $\dim U\geqslant 3\Rightarrow \dim U=3.$ Thus $B_U=B.$\par\vspace{2pt}\quad
 (b) Extend to a basis of $\PoF{4}$ as $\BigPar{1,z,z^2,\Par{z-2}\Par{z-5}\Par{z-6},z\Par{z-2}\Par{z-5}\Par{z-6}}.$\par\quad
@@ -484,20 +484,20 @@ Thus the list $B$ is linely inde in $U.$ Now $\dim U\geqslant 3\Rightarrow \dim 
 
 \ProblemN{\hypertarget{2C9}{9}}{
 	\TextN{Suppose $\Par{v_1,\dots,v_m}$ is linely inde in $V$ and $w\in V$.}
-	\TextN{Prove that $\dim\Span{v_1+w,\dots,v_m+w}\geq m-1$.}
+	\TextN{Prove that $\dim\Span[\BigPar]{v_1+w,\dots,v_m+w}\geq m-1$.}
 }Using the result of (2.A.10, 11).\par\quad
 Note that $v_i-v_1=\Par{v_i+w}-\Par{v_1+w}\in\Span{v_1+w,\dots,v_n+w},$ for each $i=1,\dots,m$.\par\quad
-$\Par{v_1,\dots,v_m}$ linely inde $\Rightarrow$ $\Par{v_1,v_2-v_1,\dots,v_m-v_1}$ linely inde $\Rightarrow$ $\underbrace{\Par{v_2-v_1,_{}\dots,v_m-v_1}}_{\text{of length }\Par{m-1}}$ linely inde.\vspace{-10pt}\par\quad
-又 If $w\not\in\Span{v_1,\dots,v_m}.$ Then $\Par{v_1+w,\dots,v_m+w}$ is linely inde.\par\quad
-Hence $m\geqslant\dim\Span{v_1+w,\dots,v_m+w}\geq m-1.$\PfEnd
+$\Par{v_1,\dots,v_m}$ linely inde $\Rightarrow$ $\BigPar{v_1,v_2-v_1,\dots,v_m-v_1}$ linely inde $\Rightarrow$ $\underbrace{\BigPar{v_2-v_1,_{}\dots,v_m-v_1}}_{\text{of length }\Par{m-1}}$ linely inde.\vspace{-15pt}\par\quad
+又 If $w\not\in\Span{v_1,\dots,v_m}.$ Then $\BigPar{v_1+w,\dots,v_m+w}$ is linely inde.\par\quad
+Hence $m\geqslant\dim\Span[\BigPar]{v_1+w,\dots,v_m+w}\geq m-1.$\PfEnd
 \SepLine
 
 \ProblemBnoor{\hypertarget{2C4e16}{4E 16}}{
 	\TextB{Suppose $V$ is finite-dim, $U$ is a subsp of $V$ with $U\neq V$. Let $n=\dim V,m=\dim U$.}
 	\TextB{Prove that $\exists\,\Par{n-m}$ subsps  $U_1,\dots,U_{n-m}$, each of dim $\Par{n-1}$, such that $\bigcap\limits_{i=1}^{n-m}U_i=U$.}
-}Let $B_U=\Par{v_1,\dots,v_m},\;B_V=\Par{v_1,\dots,v_m,u_1,\dots,v_{n-m}}$.\parSol{}
+}Let $B_U=\Par{v_1,\dots,v_m},\;B_V=\BigPar{v_1,\dots,v_m,u_1,\dots,v_{n-m}}$.\parSol{}
 Define $U_i=\Span[\BigPar]{v_1,\dots,v_m,u_1,\dots,u_{i-1},u_{i+1},\dots,u_{n-m}}$ for each $i$. Then $U\subseteq U_i$ for each $i.$\vspace{4pt}\parSol{}
-And because $\forall v\in \bigcap\limits_{i=1}^{n-m}U_i,v=v_0+b_1 u_1+\dots+b_{n-m} u_{n-m}\in U_i\Rightarrow b_i=0 \text{\;for\;each\;} i\Rightarrow v\in U.$\vspace{-4pt}\parSol{}
+And because $\forall v\in \bigcap\limits_{i=1}^{n-m}U_i,v=v_0+b_1 u_1+\dots+b_{n-m} u_{n-m}\in U_i\Rightarrow$ each $b_i=0\Rightarrow v\in U.$\vspace{-4pt}\parSol{}
 Hence $\bigcap\limits_{i=1}^{n-m}U_i\subseteq U.$\PfEnd
 %\vspace{10pt}
 %\Example\,\,\, {Suppose $\dim V=6,\dim U=3$.\par\vspace{2pt}\quad
@@ -509,38 +509,40 @@ Hence $\bigcap\limits_{i=1}^{n-m}U_i\subseteq U.$\PfEnd
 %\PfEnd[-10pt]\vspace{-4pt}
 \SepLine
 
-\BulletPointX\NoteForSmall{Problem 10} \,\,\,Each nonconst $p\in\Span{1,z,\dots,z^m},\exists$ smallest $m\in\Nbp,$ which is $\deg p.$\TextB{}
-(a) If $p_0,p_1,\dots,p_m$ are such that each\TextB{}
-\Ha $p_k=a_{0,k}+a_{1,k}z+\dots+a_{k,k}z^k,$ with $a_k\neq 0.$\TextB{\vspace{-15pt}}
-\Ha Then $\Mt[\XPar]{\xi,\Par{p_0,p_1,\dots,p_m},\Par{1,z,\dots,z^m}}={}${\small$\begin{pmatrix}
+\BulletPointX\NoteForSmall{Problem 10} \,\,\,For each nonconst $p\in\Span{1,z,\dots,z^m},\;\exists$ smallest $m\in\Nbp,$ which is $\deg p.$\TextB{}
+(a) If $p_0,p_1,\dots,p_m$ are such that all $a_{k,k}\neq 0,$ and\TextB{}
+\Hb $p_0=a_{0,0},\,$ each $p_k=a_{0,k}+a_{1,k}z+\dots+a_{k,k}z^k.$\TextB{\vspace{-18pt}}
+\Ha Then the upper-trig $\Mt[\envFontLarge\BigPar]{\envFontDefault I,\Par{p_0,p_1,\dots,p_m},\Par{1,z,\dots,z^m}\envFontLarge}={}${\small$\begin{pmatrix}
 		a_{0,0} & a_{0,1} & \cdots & a_{0,m}\\
 		0       & a_{1,1} & \cdots & a_{1,m}\\
 		\vdots  & \vdots  & \ddots & \vdots\\
 		0       & 0       & \cdots & a_{m,m}
-	\end{pmatrix}$}, which is upper-trig.\TextB{\vspace{-8pt}}
-(b) If $p_0,p_1,\dots,p_m$ are such that each\TextB{}
-\Hb $p_k=a_{k,k}x^k+\dots+a_{m,k}x^m,$ with $a_{k,k}\neq 0.$\TextB{\vspace{-15pt}}
-\Hb Then $\Mt[\XPar]{\xi,\Par{p_0,p_1,\dots,p_m},\Par{1,z,\dots,z^m}}={}${\small$\begin{pmatrix}
+	\end{pmatrix}$}.\TextB{\vspace{-8pt}}
+(b) If $p_0,p_1,\dots,p_m$ are such that all $a_{k,k}\neq 0,$ and\TextB{}
+\Hb $p_0=a_{0,0}+\dots+a_{m,0}x^m,\,$ each $p_k=a_{k,k}x^k+\dots+a_{m,k}x^m.$\TextB{\vspace{-18pt}}
+\Hb Then the lower-trig \;$\Mt[\envFontLarge\BigPar]{\envFontDefault I,\Par{p_0,p_1,\dots,p_m},\Par{1,z,\dots,z^m}\envFontLarge}={}${\small$\begin{pmatrix}
 		a_{0,0} & 0       & \cdots & 0\\
 		a_{1,0} & a_{1,1} & \cdots & 0\\
 		\vdots  & \vdots  & \ddots & \vdots\\
 		a_{m,0} & a_{m,1} & \cdots & a_{m,m}
-	\end{pmatrix}$}, which is lower-trig.\vspace{8pt}
-\SepLine
+	\end{pmatrix}$}.\TextB{\vspace{-12pt}}
+\Comment \,\,\,Define $\xi_k\Par{p}$ by the coeff of $z^k$ in $p\in\PoF{m}.$\parCom\IndentB{}
+Then $\Mt[\envFontLarge\BigPar]{\envFontDefault\xi_k,\Par{1,z,\dots,z^m},\Par{1}\envFontLarge}=\mathcal{E}^{\SmallPar[1pt]{1,k}}\in\Fbb^{1,m+1}.$\vspace{-2pt}
+\SepLine\pagebreak
 
 \ProblemN{\hypertarget{2C10}{10}}{
 	\TextNL{Suppose $m\in\Nbp,\;p_0,p_1,\dots,p_m\in\PoF{}$ are such that each $p_k$ has degree $k.$}
 	\TextNL{Prove that $\Par{p_0,p_1,\dots,p_m}$ is a basis of $\PoF{m}$.}
 }{Using mathematical induction on $m$.}\par\quad
-(i) {$k=0,1.$ \;$\deg p_0=0;\;\deg p_1=1\Rightarrow\Span[\BigPar]{p_0,p_1}=\Span[\BigPar]{1,x}.$}\par\vspace{2pt}\quad\Endi
-(ii) {$k\in\Bra{1,\dots,m-1}.$ \;Assume that $\Span[\BigPar]{p_0,p_1,\dots,p_k}=\Span[\BigPar]{1,x,\dots,x^k}.$}\par\quad\Hii
+(i) {$k=1.$ \;$\deg p_0=0;\;\deg p_1=1\Rightarrow\Span[\BigPar]{p_0,p_1}=\Span[\BigPar]{1,x}.$}\par\vspace{2pt}\quad\Endi
+(ii) {$1\leqslant k\leqslant m-1.$ \;Assume that $\Span[\BigPar]{p_0,p_1,\dots,p_k}=\Span[\BigPar]{1,x,\dots,x^k}.$}\par\quad\Hii
 {Then $\Span[\BigPar]{p_0,p_1,\dots,p_k,p_{k+1}}\subseteq\Span[\BigPar]{1,x,\dots,x^k,x^{k+1}}$.}\par\vspace{2pt}\quad\Hii
 {又 $\deg p_{k+1}=k+1,\;\;p_{k+1}\Par{x}=a_{k+1}x^{k+1}+r_{k+1}\Par{x};\;\;a_{k+1}\neq 0,\;\;\deg r_{k+1}\leqslant k.$}
 \par\vspace{2pt}\quad\Hii
 {$\Rightarrow x^{k+1}=\Frac{1}{a_{k+1}}\XPar{p_{k+1}\Par{x}-r_{k+1}\Par{x}}\in\Span[\BigPar]{1,x,\dots,x^k,p_{k+1}}=\Span[\BigPar]{p_0,p_1,\dots,p_k,p_{k+1}}$.}\par\vspace{2pt}\quad\Hii
 {$\therefore\,\,x^{k+1}\in\Span[\BigPar]{p_0,p_1,\dots,p_k,p_{k+1}}\Rightarrow\Span[\BigPar]{1,x,\dots,x^k,x^{k+1}}\subseteq\Span[\BigPar]{p_0,p_1,\dots,p_k,p_{k+1}}$.}\par\vspace{2pt}\quad
 {Thus $\PoF{m}=\Span[\BigPar]{1,x,\dots,x^m}=\Span[\BigPar]{p_0,p_1,\dots,p_m}.$}\envFontDefault\PfEnd\vspace{8pt}\quad
-\Or 用比较系数法. {Denote the coefficient of $x^k$ in $p\in\PoF{}$ by $\xi_k\Par{p}.$}\par\quad
+\Or 用比较系数法. {Denote the coeff of $x^k$ in $p\in\PoF{}$ by $\xi_k\Par{p}.$}\par\quad
 {Suppose $L=a_m p_m\Par{x}+\dots+a_1 p_1\Par{x}+a_0p_0\Par{x}=0\cdot x^m+\dots+0\cdot x+0\cdot 1=R,\forall x\in\Fbb.$}\par\quad
 {We show that $a_m=\dots=a_0=0$ via the following process. So that $\Par{p_0,p_1,\dots,p_m}$ is linely inde.}\vspace{2pt}\par\quad
 {\tgbfx Step 1.} {For $k=m,$ \;$\xi_{m}\Par{L}=a_{m}\xi_{m}\Par{p_m}=\xi_{m}\Par{R}=0$ 又 $\deg p_m=m,\;\xi_{m}\Par{p_m}\neq 0\Rightarrow a_m=0.$}\par\quad
@@ -555,8 +557,8 @@ Hence $\bigcap\limits_{i=1}^{n-m}U_i\subseteq U.$\PfEnd
 	\Blind{\Tips} \TextB{the lowest term of each $p_k$ is of deg $k.$ Prove that $\Par{p_0,p_1,\dots,p_m}$ is a basis of $\PoF{m}.$}
 }{Using mathematical induction on $m.$\par}\quad
 {Let each $p_k$ be defined by $p_k\Par{x}=a_{k,k} x^k+\dots+a_{m,k} x^m,$ where $a_{k,k}\neq 0.$\par}\quad
-(i) {$k=0,1.$ \;$p_m\Par{x}=a_{m,m}x^m;\;p_{m-1}\Par{x}=a_{m-1,m-1}x^{m-1}+a_{m,m-1}x^m\Longrightarrow\Span[\BigPar]{x^m,x^{m-1}}=\Span[\BigPar]{p_m,p_{m-1}}.$\par}\vspace{2pt}\quad\Endi
-(ii) {$k\in\Bra{1,\dots,m-1}.$ \;Assume that $\Span[\BigPar]{x^m,\dots,x^{m-k}}=\Span[\BigPar]{p_m,\dots,p_{m-k}}.$}\par\quad\Hii
+(i) {$k=1.$ \;$p_m\Par{x}=a_{m,m}x^m;\;p_{m-1}\Par{x}=a_{m-1,m-1}x^{m-1}+a_{m,m-1}x^m\Longrightarrow\Span[\BigPar]{x^m,x^{m-1}}=\Span[\BigPar]{p_m,p_{m-1}}.$\par}\vspace{2pt}\quad\Endi
+(ii) {$1\leqslant k\leqslant m-1.$ \;Assume that $\Span[\BigPar]{x^m,\dots,x^{m-k}}=\Span[\BigPar]{p_m,\dots,p_{m-k}}.$}\par\quad\Hii
 {Then $\Span[\BigPar]{p_m,\dots,p_{m-\SmallPar{k+1}}}\subseteq\Span[\BigPar]{x^m,\dots,x^{m-\SmallPar{k+1}}}.$\par}\quad\Hii
 {又 $p_{m-\SmallPar{k+1}}$ has the form $a_{m-\SmallPar{k+1},m-\SmallPar{k+1}}x^{m-\SmallPar{k+1}}+r_{m-\SmallPar{k+1}}\Par{x};\;$\par}\quad\Hii
 {\Blind{又} where the lowest term of $r_{m-\SmallPar{k+1}}\in\PoF{m}$ is of deg $\Par{m-k}.$\par}\vspace{6pt}\quad\Hii
@@ -565,7 +567,7 @@ Hence $\bigcap\limits_{i=1}^{n-m}U_i\subseteq U.$\PfEnd
 {$\therefore\;x^{m-\SmallPar{k+1}}\in\Span[\BigPar]{p_m,\dots,p_{m-k},p_{m-\SmallPar{k+1}}}$\par}\vspace{3pt}\quad\Hii
 {\Blind{$\therefore\;$}$\Rightarrow\Span[\BigPar]{x^m,\dots,x^{m-k},x^{m-\SmallPar{k+1}}}\subseteq\Span[\BigPar]{p_m,\dots,p_{m-k},p_{m-\SmallPar{k+1}}}.$\par}\vspace{3pt}\quad
 {Thus $\PoF{m}=\Span[\BigPar]{x^m,\dots,x,1}=\Span[\BigPar]{p_m,\dots,p_1,p_0}.$}\PfEnd\vspace{8pt}\quad
-\Or 用比较系数法. {Denote the coefficient of $x^k$ in $p\in\PoF{}$ by $\xi_k\Par{p}.$}\par\quad
+\Or 用比较系数法. {Denote the coeff of $x^k$ in $p\in\PoF{}$ by $\xi_k\Par{p}.$}\par\quad
 {Suppose $L=a_m p_m\Par{x}+\dots+a_1 p_1\Par{x}+a_0p_0\Par{x}=0\cdot x^m+\dots+0\cdot x+0\cdot 1=R,\forall x\in\Fbb.$}\par\quad
 {We show that $a_m=\dots=a_0=0$ via the following process. So that $\Par{p_0,p_1,\dots,p_m}$ is linely inde.}\vspace{2pt}\par\quad
 {\tgbfx Step 1.} {For $k=0,$ \;$\xi_{0}\Par{L}=a_{0}\xi_{0}\Par{p_0}=\xi_{0}\Par{R}=0$ 又 $\deg p_0=0,\;\xi_{0}\Par{p_0}\neq 0\Rightarrow a_0=0.$}\par\quad
@@ -615,8 +617,8 @@ Since $\forall m\in\Nbp,S\Par{m}\Rightarrow S\Par{m+2}.$ We have \;$\hMath[0pt]{
 \SepLine
 
 \ProblemN{\hypertarget{2C17}{17}}{
-	\TextNL{Suppose $V_1,V_2,V_3$ are subsps of a finite-dim vecsp, then}
-	\TextNL{{\large\envFontDefault$\Dim\Par{V_1+V_2+V_3}=\dim V_1+\dim V_2+\dim V_3$\par\rightline{$-\Dim\Par{V_1\cap V_2}-\Dim\Par{V_1\cap V_3}-\Dim\Par{V_2\cap V_3}+\Dim\Par{V_1\cap V_2\cap V_3}$.\qquad}}}
+	\TextNL{Suppose $V_{\!1},V_{\!2},V_{\!3}$ are subsps of a finite-dim vecsp, then}
+	\TextNL{{\large\envFontDefault$\Dim\Par{V_{\!1}+V_{\!2}+V_{\!3}}=\dim V_{\!1}+\dim V_{\!2}+\dim V_{\!3}$\par\rightline{$-\Dim\Par{V_{\!1}\cap V_{\!2}}-\Dim\Par{V_{\!1}\cap V_{\!3}}-\Dim\Par{V_{\!2}\cap V_{\!3}}+\Dim\Par{V_{\!1}\cap V_{\!2}\cap V_{\!3}}$.\qquad}}}
 	\TextNL{Explain why you might think and prove the formula above or give a counterexample.}
 }\par\quad
 \Sbra[3pt]{{\tgsl Similar to}} \;Given three sets $A,B$ and $C$.\par\quad
@@ -624,37 +626,37 @@ Because $\cMid{X+Y}=\cMid{X}+\cMid{Y}-\cMid{X\cap Y};\,\,\,\Par{X\cup Y}\cap Z=\
 Now $\cMid{\Par{A\cup B}\cup C}=\cMid{A\cup B}+\cMid{C}-\cMid{\Par{A\cup B}\cap C}.$\par\quad
 And $\cMid{\Par{A\cup B}\cap C}=\cMid{\Par{A\cap C}\cup\Par{B\cap C}}=\cMid{A\cap C}+\cMid{B\cap C}-\cMid{A\cap B\cap C}.$\par\quad
 Hence $\cMid{\Par{A\cup B}\cup C}=\cMid{A}+\cMid{B}+\cMid{C}+\cMid{A\cap B\cap C}-\cMid{A\cap B}-\cMid{A\cap C}-\cMid{B\cap C}.$\par\vspace{4pt}\quad
-Because $\Par{V_1+V_2}+V_3=V_1+\Par{V_2+V_3}=\Par{V_1+V_3}+V_2.$\vspace{-6pt}\par\quad
-\AlignEq{\hspace{10pt}}{\Dim\Par{V_1+V_2+V_3}&=\Dim\Par{V_1+V_2}+\Dim\Par{V_3}-\Dim\BigPar{\Par{V_1+V_2}\cap V_3}\quad(1)\hspace{114pt}\\&=\Dim\Par{V_2+V_3}+\Dim\Par{V_1}-\Dim\BigPar{\Par{V_2+V_3}\cap V_1}\quad(2)\\&=\Dim\Par{V_1+V_3}+\Dim\Par{V_2}-\Dim\BigPar{\Par{V_1+V_3}\cap V_2}\quad(3)}\par\quad
+Because $\Par{V_{\!1}+V_{\!2}}+V_{\!3}=V_{\!1}+\Par{V_{\!2}+V_{\!3}}=\Par{V_{\!1}+V_{\!3}}+V_{\!2}.$\vspace{-6pt}\par\quad
+\AlignEq{\hspace{10pt}}{\Dim\Par{V_{\!1}+V_{\!2}+V_{\!3}}&=\Dim\Par{V_{\!1}+V_{\!2}}+\Dim\Par{V_{\!3}}-\Dim\BigPar{\Par{V_{\!1}+V_{\!2}}\cap V_{\!3}}\quad(1)\hspace{114pt}\\&=\Dim\Par{V_{\!2}+V_{\!3}}+\Dim\Par{V_{\!1}}-\Dim\BigPar{\Par{V_{\!2}+V_{\!3}}\cap V_{\!1}}\quad(2)\\&=\Dim\Par{V_{\!1}+V_{\!3}}+\Dim\Par{V_{\!2}}-\Dim\BigPar{\Par{V_{\!1}+V_{\!3}}\cap V_{\!2}}\quad(3)}\par\quad
 Notice that in general, $\Par{X+Y}\cap Z\neq X\cap Z+Y\cap Z$.\par\quad
 For example, $X=\Bra{\Par{x,0}\in\Rbb^2:x\in\Rbb},Y=\Bra{\Par{0,y}\in\Rbb^2:y\in\Rbb},Z=\Bra{\Par{z,z}\in\Rbb^2:z\in\Rbb}.$\vspace{8pt}\par
-\BulletPointX\Corollary \,\,\,\Largesl{Suppose $V_1,V_2$ and $V_3$ are finite-dim vecsps, then} {\small $\Frac{\Par{1}+\Par{2}+\Par{3}}{3}:$
+\BulletPointX\Corollary \,\,\,\Largesl{Suppose $V_{\!1},V_{\!2}$ and $V_{\!3}$ are finite-dim vecsps, then} {\small $\Frac{\Par{1}+\Par{2}+\Par{3}}{3}:$
 }\vspace{-6pt}\par
-\AlignEq{\IndentB\,}{\Dim\Par{V_1+V_2+V_3}=\dim &\,V_1+\dim V_2+\dim V_3\\&-\Frac{\Dim\Par{V_1\cap V_2}+\Dim\Par{V_1\cap V_3}+\Dim\Par{V_2\cap V_3}}{3}\\&-\Frac{\Dim\BigPar{\Par{V_1+V_2}\cap V_3}+\Dim\BigPar{\Par{V_1+V_3}\cap V_2}+\Dim\BigPar{\Par{V_2+V_3}\cap V_1}}{3}.}
+\AlignEq{\IndentB\,}{\Dim\Par{V_{\!1}+V_{\!2}+V_{\!3}}=\dim &\,V_{\!1}+\dim V_{\!2}+\dim V_{\!3}\\&-\Frac{\Dim\Par{V_{\!1}\cap V_{\!2}}+\Dim\Par{V_{\!1}\cap V_{\!3}}+\Dim\Par{V_{\!2}\cap V_{\!3}}}{3}\\&-\Frac{\Dim\BigPar{\Par{V_{\!1}+V_{\!2}}\cap V_{\!3}}+\Dim\BigPar{\Par{V_{\!1}+V_{\!3}}\cap V_{\!2}}+\Dim\BigPar{\Par{V_{\!2}+V_{\!3}}\cap V_{\!1}}}{3}.}
 \SepLine
 
-\BulletPointX\Tips \,\,\,Because $\dim \Par{V_1\cap V_2\cap V_3}=\dim V_1+\Dim\Par{V_2\cap V_3}-\Dim\BigPar{V_1+\Par{V_2\cap V_3}}.$\TextB{}
-\IndentTips{}And $\Dim\Par{V_2\cap V_3}=\dim V_2+\dim V_3-\Dim\Par{V_2+V_3}.$ We have $\Par{1},$ and $\Par{2},\Par{3}$ similarly.\TextB{}
-\IndentTips{}$\Par{1}\;\Dim\Par{V_1\cap V_2\cap V_3}=\dim V_1+\dim V_2+\dim V_3-\Dim\Par{V_2+V_3}-\Dim\BigPar{V_1+\Par{V_2\cap V_3}}.$\TextB{}
-\IndentTips{}$\Par{2}\;\Dim\Par{V_1\cap V_2\cap V_3}=\dim V_1+\dim V_2+\dim V_3-\Dim\Par{V_1+V_3}-\Dim\BigPar{V_2+\Par{V_1\cap V_3}}.$\TextB{}
-\IndentTips{}$\Par{3}\;\Dim\Par{V_1\cap V_2\cap V_3}=\dim V_1+\dim V_2+\dim V_3-\Dim\Par{V_1+V_2}-\Dim\BigPar{V_3+\Par{V_1\cap V_2}}.$
+\BulletPointX\Tips \,\,\,Because $\dim \Par{V_{\!1}\cap V_{\!2}\cap V_{\!3}}=\dim V_{\!1}+\Dim\Par{V_{\!2}\cap V_{\!3}}-\Dim\BigPar{V_{\!1}+\Par{V_{\!2}\cap V_{\!3}}}.$\TextB{}
+\IndentTips{}And $\Dim\Par{V_{\!2}\cap V_{\!3}}=\dim V_{\!2}+\dim V_{\!3}-\Dim\Par{V_{\!2}+V_{\!3}}.$ We have $\Par{1},$ and $\Par{2},\Par{3}$ similarly.\TextB{}
+\IndentTips{}$\Par{1}\;\Dim\Par{V_{\!1}\cap V_{\!2}\cap V_{\!3}}=\dim V_{\!1}+\dim V_{\!2}+\dim V_{\!3}-\Dim\Par{V_{\!2}+V_{\!3}}-\Dim\BigPar{V_{\!1}+\Par{V_{\!2}\cap V_{\!3}}}.$\TextB{}
+\IndentTips{}$\Par{2}\;\Dim\Par{V_{\!1}\cap V_{\!2}\cap V_{\!3}}=\dim V_{\!1}+\dim V_{\!2}+\dim V_{\!3}-\Dim\Par{V_{\!1}+V_{\!3}}-\Dim\BigPar{V_{\!2}+\Par{V_{\!1}\cap V_{\!3}}}.$\TextB{}
+\IndentTips{}$\Par{3}\;\Dim\Par{V_{\!1}\cap V_{\!2}\cap V_{\!3}}=\dim V_{\!1}+\dim V_{\!2}+\dim V_{\!3}-\Dim\Par{V_{\!1}+V_{\!2}}-\Dim\BigPar{V_{\!3}+\Par{V_{\!1}\cap V_{\!2}}}.$
 \SepLine
 
 \ProblemB[]{
-	\TextB{Suppose V is a 10-dim vecsp and $V_1,V_2,V_3$ are subsps of $V$ with}
-	\hypertarget{2C4e14}{}(a) \TextB{$\dim V_1 = \dim V_2 = \dim V_3 = 7$. Prove that $V_1\cap V_2\cap V_3\neq\zeroSubs$.}
-	\Blind{(a)} By {\TIPS}, $\Dim\Par{V_1\cap V_2\cap V_3}\geq\dim V_1+\dim V_2+\dim V_3\uline{{}-2\dim V}>0.$\TextB{\vspace{4pt}}
-	\hypertarget{2C4e15}{}(b) \TextB{$\dim V_1+\dim V_2+\dim V_3 > 2\dim V$. Prove that $V_1\cap V_2\cap V_3\neq\zeroSubs$.}
-	\Blind{(b)} By {\TIPS}, $\Dim\Par{V_1\cap V_2\cap V_3}\uuline{{}>2\dim V}-\Dim\Par{V_2+V_3}-\Dim\Par{V_1+\Par{V_2\cap V_3}}\geq 0.$\PfEnd\vspace{14pt}
+	\TextB{Suppose V is a 10-dim vecsp and $V_{\!1},V_{\!2},V_{\!3}$ are subsps of $V$ with}
+	\hypertarget{2C4e14}{}(a) \TextB{$\dim V_{\!1} = \dim V_{\!2} = \dim V_{\!3} = 7$. Prove that $V_{\!1}\cap V_{\!2}\cap V_{\!3}\neq\zeroSubs$.}
+	\Blind{(a)} By {\TIPS}, $\Dim\Par{V_{\!1}\cap V_{\!2}\cap V_{\!3}}\geq\dim V_{\!1}+\dim V_{\!2}+\dim V_{\!3}\uline{{}-2\dim V}>0.$\TextB{\vspace{4pt}}
+	\hypertarget{2C4e15}{}(b) \TextB{$\dim V_{\!1}+\dim V_{\!2}+\dim V_{\!3} > 2\dim V$. Prove that $V_{\!1}\cap V_{\!2}\cap V_{\!3}\neq\zeroSubs$.}
+	\Blind{(b)} By {\TIPS}, $\Dim\Par{V_{\!1}\cap V_{\!2}\cap V_{\!3}}\uuline{{}>2\dim V}-\Dim\Par{V_{\!2}+V_{\!3}}-\Dim\Par{V_{\!1}+\Par{V_{\!2}\cap V_{\!3}}}\geq 0.$\PfEnd\vspace{14pt}
 }\SepLine
 
 \ProblemN{\hypertarget{2C14}{14}}{
-	\TextNL{Suppose $V_1,\dots,V_m$ are finite-dim. Prove that $\dim\!\Par{V_1+\dots+V_m}\leqslant\dim V_1+\dots+\dim V_m$.}
-}Choose a basis $\mathcal{E}_i$ of $V_i\Rightarrow V_1+\dots+V_m=\Span[\BigPar]{\mathcal{E}_1\cup\cdots\cup \mathcal{E}_m};\,\,\,\dim V_i=\card \mathcal{E}_i.$\par\quad
-Now $\dim\!\Par{V_1+\dots+V_m}=\dim\Span[\BigPar]{\mathcal{E}_1\cup\cdots\cup \mathcal{E}_m}\leqslant\card\hspace{-1pt}\BigPar{\mathcal{E}_1\cup\cdots\cup \mathcal{E}_m}\leqslant\card \mathcal{E}_1+\cdots+\card \mathcal{E}_m.$\par\vspace{6pt}
-\Corollary \,\,\,$V_1+\dots+V_m$ is direct $\Longleftrightarrow$ For each $k,$ $\BigPar{V_1+\dots+V_k}\cap V_{k+1}=\zeroSubs,\BigPar{\mathcal{E}_1\cap\dots\cap\mathcal{E}_{k-1}}\cap\mathcal{E}_k=\emptyset$\parCor
+	\TextNL{Suppose $V_{\!1},\dots,V_{\!m}$ are finite-dim. Prove that $\dim\!\Par{V_{\!1}+\dots+V_{\!m}}\leqslant\dim V_{\!1}+\dots+\dim V_{\!m}$.}
+}Choose a basis $\mathcal{E}_i$ of $V_{\!i}\Rightarrow V_{\!1}+\dots+V_{\!m}=\Span[\BigPar]{\mathcal{E}_1\cup\cdots\cup \mathcal{E}_m};\,\,\,\dim V_{\!i}=\card \mathcal{E}_i.$\par\quad
+Now $\dim\!\Par{V_{\!1}+\dots+V_{\!m}}=\dim\Span[\BigPar]{\mathcal{E}_1\cup\cdots\cup \mathcal{E}_m}\leqslant\card\hspace{-1pt}\BigPar{\mathcal{E}_1\cup\cdots\cup \mathcal{E}_m}\leqslant\card \mathcal{E}_1+\cdots+\card \mathcal{E}_m.$\par\vspace{6pt}
+\Corollary \,\,\,$V_{\!1}+\dots+V_{\!m}$ is direct $\Longleftrightarrow$ For each $k,$ $\BigPar{V_{\!1}+\dots+V_{\!k}}\cap V_{k+1}=\zeroSubs,\BigPar{\mathcal{E}_1\cap\dots\cap\mathcal{E}_{k-1}}\cap\mathcal{E}_k=\emptySet$\parCor
 $\Longleftrightarrow\dim\Span[\BigPar]{\mathcal{E}_1\cup\dots\cup\mathcal{E}_m}=\card\hspace{-1pt}\BigPar{\mathcal{E}_1\cup\dots\cup\mathcal{E}_m}=\card\mathcal{E}_1+\dots+\card\mathcal{E}_m$\parCor
-$\Longleftrightarrow \dim\!\Par{V_1+\dots+V_m}=\dim V_1+\dots+\dim V_m.$\PfEnd
+$\Longleftrightarrow \dim\!\Par{V_{\!1}+\dots+V_{\!m}}=\dim V_{\!1}+\dots+\dim V_{\!m}.$\PfEnd
 \SepLine
 
 \ChEnd
@@ -928,7 +930,7 @@ Let $\Par{v_1,\dots,v_n}$ be a basis of $V$, $\Par{w_1,\dots,w_m}$ be linely ind
 $\MathRightMid{l}{$
 Define $T_1\in\Lm{V,W}$ as $T_1:\,\,\,\,v_1\mapsto 0,$\qquad$v_2\mapsto w_2,$\qquad$v_i\mapsto w_i$.$\\$
 Define $T_2\in\Lm{V,W}$ as $T_2:\,\,\,\,v_1\mapsto w_1,$ \quad\,$v_2\mapsto 0,$\,\,\,\qquad$v_i\mapsto w_i$,\quad $i=3,\dots,n.}$ Thus $T_1+T_2\not\in U.$\PfEnd[-23pt]\vspace{10pt}
-\Comment \,\,\,If $\dim V=0,$ then $V=\zeroSubs=\Span{\,}$. $\forall\,T\in\Lm{V,W}, T$ is inje. Hence $U=\emptyset$.\parCom
+\Comment \,\,\,If $\dim V=0,$ then $V=\zeroSubs=\Span{\,}$. $\forall\,T\in\Lm{V,W}, T$ is inje. Hence $U=\emptySet$.\parCom
 If $\dim V=1,$ then $V=\Span{v_0}.$ Thus $U=\Span{T_0},$ where $\forall v\in V,T_0 v=0\Rightarrow T_0=0.$\par
 \SepLine
 
@@ -940,7 +942,7 @@ Let $\Par{v_1,\dots,v_n}$ be linely inde in $V$, $\Par{w_1,\dots,w_m}$ be a basi
 Define $T_1\in\Lm{V,W}$ as $T_1:\,\,\,\,v_1\mapsto 0,$\qquad$v_2\mapsto w_2,$\qquad$v_j\mapsto w_j,$\qquad$v_{m+i}\mapsto 0.$\par\quad
 Define $T_2\in\Lm{V,W}$ as $T_2:\,\,\,\,v_1\mapsto w_1,$\,\,\,\quad$v_2\mapsto 0,$\,\,\,\qquad$v_j\mapsto w_j,$\qquad$v_{m+i}\mapsto 0.$\par\quad
 \BigPar{ For each $j=2,\dots,m;\,\,i=1,\dots,n-m$, if $V$ is finite, otherwise let $i\in\Nbp.$ } Thus $T_1+T_2\not\in U.$\PfEnd\vspace{2pt}
-\Comment \,\,\,If $\dim W=0,$ then $W=\zeroSubs=\Span{\,}$. $\forall\,T\in\Lm{V,W}, T$ is surj. Hence $U=\emptyset.$\parCom
+\Comment \,\,\,If $\dim W=0,$ then $W=\zeroSubs=\Span{\,}$. $\forall\,T\in\Lm{V,W}, T$ is surj. Hence $U=\emptySet.$\parCom
 If $\dim W=1,$ then $W=\Span{w_0}.$ Thus $U=\Span{T_0},$ where each $T_0v_i=0\Rightarrow T_0=0.$\SepLine
 
 \ProblemN{\hypertarget{3B9}{9}}{
@@ -1928,20 +1930,20 @@ Now $T\Par{v\apostrophe{\hspace{-3pt}_k}}=A_{1,k}v\apostrophe{\hspace{-3pt}_1}+\
 }\SepLine
 
 \ProblemN{\hypertarget{3E2}{2}}{
-	\TextN{Suppose $V_1\times\dots\times V_m$ is finite-dim. Prove that each $V_j$ is finite-dim.}
+	\TextN{Suppose $V_{\!1}\times\dots\times V_{\!m}$ is finite-dim. Prove that each $V_{\!j}$ is finite-dim.}
 }\par\quad
-For any $k\in\Bra{1,\dots,m},$ define $S_k\in\Lm{V_1\times\dots\times V_m,V_k}$ by $S_k\Par{v_1,\dots,v_m}=v_k.$\par\quad
-Then $S_k$ is linear map. By [3.22], $\range S_k=V_k$ is finite-dim.\PfEnd\vspace{6pt}\par\quad
-\Or Denote $V_1\times\cdots\times V_m$ by $U$. Denote $\zeroSubs\times\cdots\zeroSubs\times V_i\times\zeroSubs\cdots\times\zeroSubs$ by $U_i$.\par\quad
-We show that each $U_i$ is iso to $V_i.$ Then $U$ is finite-dim $\Longrightarrow$ its subsp $U_i$ is  finite-dim, so is $V_i.$\par\vspace{2pt}\quad
+For any $k\in\Bra{1,\dots,m},$ define $S_k\in\Lm{V_{\!1}\times\dots\times V_{\!m},V_{\!k}}$ by $S_k\Par{v_1,\dots,v_m}=v_k.$\par\quad
+Then $S_k$ is linear map. By [3.22], $\range S_k=V_{\!k}$ is finite-dim.\PfEnd\vspace{6pt}\par\quad
+\Or Denote $V_{\!1}\times\cdots\times V_{\!m}$ by $U$. Denote $\zeroSubs\times\cdots\zeroSubs\times V_{\!i}\times\zeroSubs\cdots\times\zeroSubs$ by $U_i$.\par\quad
+We show that each $U_i$ is iso to $V_{\!i}.$ Then $U$ is finite-dim $\Longrightarrow$ its subsp $U_i$ is  finite-dim, so is $V_{\!i}.$\par\vspace{2pt}\quad
 Let $B_U=\Par{v_1,\dots,v_M}\;\hMath{l}{\left|}{\right\}}{$
-Define $R_i\in\Lm{V_i,U_i}$ by $R_i\Par{u_i}=\Par{0,\dots,0,u_i,0,\dots,0}\\ $
-Define $S_i\in\Lm{U,V_i}$ by $S_i\Par{u_1,\dots,u_i,\dots,u_m}=u_i$
-$}\Rightarrow\MathLeftBrace{l}{R_iS_j\mmid_{U_j}=\delta_{i,j}I_{U_j},\\S_iR_j=\delta_{i,j}I_{V_j}.}$\PfEnd
+Define $R_i\in\Lm{V_{\!i},U_i}$ by $R_i\Par{u_i}=\Par{0,\dots,0,u_i,0,\dots,0}\\ $
+Define $S_i\in\Lm{U,V_{\!i}}$ by $S_i\Par{u_1,\dots,u_i,\dots,u_m}=u_i$
+$}\Rightarrow\MathLeftBrace{l}{R_iS_j\mmid_{U_j}=\delta_{i,j}I_{U_j},\\S_iR_j=\delta_{i,j}I_{V_{\!j}}.}$\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{3E4}{4}}{
-	\TextN{Prove that $\Lm{V_1\times\cdots\times V_m,W}$ and $\Lm{V_1,W}\times\cdots\times\Lm{V_m,W}$ are iso.}
+	\TextN{Prove that $\Lm{V_{\!1}\times\cdots\times V_{\!m},W}$ and $\Lm{V_{\!1},W}\times\cdots\times\Lm{V_{\!m},W}$ are iso.}
 }Using notation in Problem (2): $R_i:u_i\mapsto\Par{0,\dots,u_i,\dots,0};\;S_i:\Par{u_1,\dots,u_m}\mapsto u_i.$\par\quad
 Note that $T\Par{u_1,\dots,u_m}=T\Par{u_1,0,\dots,0}+\dots+T\Par{0,\dots,u_m}.$\par{\hspace{0pt}}
 $\MathRightBrace{l}{$
@@ -1967,27 +1969,7 @@ Define $T:\Par{v_1,\dots,v_m}\rightarrow\varphi$, where $\varphi:\Par{a_1,\dots,
 For each $k,$ let $a_k=1,a_j=0$ for all $j\neq k.$ Then each $v_k=0\Rightarrow\Par{v_1,\dots,v_m}=0.$ Thus $T$ is inje.\par\vspace{2pt}\quad
 (b) Suppose $\psi\in\Lm{\Fbb^m,V}.$ Let $\Par{e_1,\dots,e_m}$ be the std basis of $\Fbb^m$. Then $\forall\Par{b_1,\dots,b_n}\in\Fbb^m$,\vspace{3pt}\par\quad\Hb
 $\XSbra{T\envFontLarge\BigPar{\envFontDefault\psi\Par{e_1},\dots,\psi\Par{e_m}\envFontLarge}\envFontDefault}\Par{b_1,\dots,b_m}=b_1\psi\Par{e_1}+\dots+b_m\psi\Par{e_m}=\psi\BigPar{b_1 e_1+\dots+b_m e_m}=\psi\Par{b_1,\dots,b_m}$.\vspace{3pt}\par\quad\Hb
-Thus $T\Par{\psi\Par{e_1},\dots,\psi\Par{e_m}}=\psi$. Hence $T$ is surj.\PfEnd
-\SepLine
-
-%\ProblemBnoor[]{\hypertarget{3E4e7}{4E 7}}{
-	%	Let $U=\Bra{\Par{x,y,z}\in\Rbb^3:2x+3y+5z=0}.$ Suppose $A\subseteq\Rbb^3$.\TextB{}
-	%	Then $A$ is a translate of $U\Longleftrightarrow\exists\,c\in\Rbb,A=\Bra{\Par{x,y,z}\in\Rbb^3:2x+3y+5z=c}.$\TextB{\vspace{-6pt}}
-	%}\SepLine
-
-\ProblemBnoor{\hypertarget{3E4e8}{4E 8}}{
-	\TextB{Suppose $T\in\Lm{V,W},w\in\range T.$ Prove that $\Bra{u\in V:Tu=w}=w+\null T.$}
-}{\def\mK{\mathcal{K}_w}Let $\mK=\Bra{u\in V:Tu=w}.$ \Sbra{ Not a vecsp. } \;Suppose $u\in\mK.$\parSol{}
-	$\forall u+u_0\in u+\null T\;\BigPar{\,\forall u_0\in\null T\,},\;u+u_0\in\mK.$ Hence $u+\null T\subseteq\mK.$\parSol{}
-	$\forall u\apostrophe\in\mK,\;u\apostrophe-u\in\null T\Rightarrow u\apostrophe=u+\Par{u\apostrophe-u}\in u+\null T.$ Hence $\mK\subseteq u+\null T.$\PfEnd}
-\SepLine
-
-
-\ProblemN{\hypertarget{3E7}{7}}{
-	\TextN{Suppose $v,x\in V,$ and $U,W$ are subsps of $V.$ Prove that $v+U=x+W\Rightarrow U=W$.}
-}(a) $\forall u_1\in U,\exists\,w_1\in W,v+u_1=x+w_1.$ Let $u_1=0,$ then $v=x+w_1'\Rightarrow v-x\in W$.\parSol{}
-(b) $\forall w_2\in W,\exists\,u_2\in U,v+u_2=x+w_2.$ Let $w_2=0$, then $x=v+u_2'\Rightarrow x-v\in U$.\parSol{\vspace{2pt}}
-Thus $\pm\Par{v-x}\in U\cap W \Rightarrow\MathLeftrightBrace{l}{u_1=\Par{x-v}+w_1\in W\Rightarrow U\subseteq W\\w_2=\Par{v-x}+u_2\in U\Rightarrow W\subseteq U}\Rightarrow U=W.$\PfEnd
+Thus $T\BigPar{\psi\Par{e_1},\dots,\psi\Par{e_m}}=\psi$. Hence $T$ is surj.\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{3E3}{3}}{
@@ -2005,47 +1987,77 @@ $\MathRightBrace{l}{$
 %$\MathRightBrace{l}{$
 	%	Define $T\in\Lm{U_1\times U_2,U_1+U_2}$ by $T\BigPar{\Par{x_1,x_2,\cdots},\Par{y_1,y_2,\cdots}}=\Par{x_1,y_1,x_2,y_2,\cdots}\\$
 	%	Define $S\in\Lm{U_1+U_2,U_1\times U_2}$ by $S\Par{z_1,z_2,z_3,z_4,\cdots}=\BigPar{\Par{z_1,z_3,\cdots},\Par{z_2,z_4,\cdots}}}\Rightarrow S=T^{-1}.$\PfEnd
+\SepLine\pagebreak
+
+\BulletPointX\NoteForSmall{[3.79, 3.83]}\;\;If $U=\zeroSubs,$ then $v+U=v+\zeroSubs=\Bra{v},\;V\XSlash U=V\XSlash\zeroSubs=\Bra{\Bra[\envFontB]{v}:v\in V}.$\TextB{}
+\Blind{\NoteForSmall{[3.79, 3.83]}\;\;}If $U=\emptySet,$ then $v+U=v+\emptySet=\emptySet,\;V\XSlash U=V\XSlash\emptySet=\Bra{\emptySet}.$\vspace{-2pt}
+\SepLine
+
+\BulletPointX\Comment \,\,\,If $U$ is merely a subset of $V,$ then [3.85, 3.86] do not hold, and $V\XSlash U$ is not a vecsp.\TextB{}
+Because $\BigPar{\Par{v-w}+u}\in U$ or $u-u\apostrophe\in U$ needs that $U$ is closed under add.\TextB{}
+And because $\Par{v-\hat{v}}+\Par{w-\hat{w}}\in U$ and $\lambda\Par{v-\hat{v}}\in U$ assume that $U$ is a subsp.\vspace{-2pt}
+\SepLine
+
+\BulletPointX\NoteForSmall{[3.85]}\;\;\TextB{$v+U=w+U\Longleftrightarrow v\in w+U,\;w\in v+U$}
+\Blind{\NoteForSmall{[3.85]}\;\;}{\Large\envFontLarge$\Blind{v+U=w+U}\Longleftrightarrow v-w\in U\Longleftrightarrow \Par{v+U}\cap\Par{w+U}\neq\emptySet.$}\vspace{-4pt}
+\SepLine
+
+%\ProblemBnoor[]{\hypertarget{3E4e7}{4E 7}}{
+	%	Let $U=\Bra{\Par{x,y,z}\in\Rbb^3:2x+3y+5z=0}.$ Suppose $A\subseteq\Rbb^3$.\TextB{}
+	%	Then $A$ is a translate of $U\Longleftrightarrow\exists\,c\in\Rbb,A=\Bra{\Par{x,y,z}\in\Rbb^3:2x+3y+5z=c}.$\TextB{\vspace{-6pt}}
+	%}\SepLine
+
+\ProblemBnoor{\hypertarget{3E4e8}{4E 8}}{
+	\TextB{Suppose $T\in\Lm{V,W},w\in\range T.$ Prove that $\Bra{u\in V:Tu=w}=u+\null T.$}
+}{\def\mK{\mathcal{K}_u}Let $\mK=\Bra{u\in V:Tu=w}.$ \Sbra{ Not a vecsp.\hspace{1pt}} \;Suppose $u\in\mK.$ Then $u+\null T\subseteq\mK.$\parSol{}
+And $\forall u\apostrophe\in\mK,\;u\apostrophe-u\in\null T\Rightarrow u\apostrophe\in u+\null T.$ Now $\mK\subseteq u+\null T.$\PfEnd}
+\SepLine
+
+
+\ProblemN{\hypertarget{3E7}{7}}{
+	\TextN{Suppose $v,x\in V,$ and $U,W$ are subsps of $V.$ Prove that $v+U=x+W\Rightarrow U=W$.}
+}(a) $\forall u_1\in U,\exists\,w_1\in W,v+u_1=x+w_1.$ Let $u_1=0,$ then $v=x+w_1'\Rightarrow v-x\in W$.\parSol{}
+(b) $\forall w_2\in W,\exists\,u_2\in U,v+u_2=x+w_2.$ Let $w_2=0$, then $x=v+u_2'\Rightarrow x-v\in U$.\parSol{\vspace{2pt}}
+Now $x+U=v+U=x+W=v+W.$ Thus $\Bra{v+u:u\in U}=\Bra{v+w:w\in W}\Rightarrow U=W.$\parSol{\vspace{4pt}}
+\Or $\pm\Par{v-x}\in U\cap W \Rightarrow\MathLeftrightBrace{l}{u_1=\Par{x-v}+w_1\in W\Rightarrow U\subseteq W\\w_2=\Par{v-x}+u_2\in U\Rightarrow W\subseteq U}\Rightarrow U=W.$\PfEnd[-14pt]
 \SepLine
 
 \ProblemN{\hypertarget{3E8}{8}}{
 	\TextN{Suppose $A$ is a nonempty subset of $V$.}
 	\TextN{Prove that $A$ is a translate of some subsp of $V$ $\Longleftrightarrow\lambda v+\Par{1-\lambda}w\in A\,\,,\forall v,w\in A,\lambda\in\Fbb.$}
 }\par\quad
-Suppose $A=a+U.$ Then $\forall v,w\in A,\lambda\in\Fbb,\lambda\Par{a+u_1}+\Par{1-\lambda}\Par{a+u_2}=a+\BigPar{\lambda\Par{u_1-u_2}+u_2}\in A$.\vspace{2pt}\par\quad
-Suppose $\lambda v+\Par{1-\lambda}w\in A,\forall v,w\in A,\lambda\in\Fbb.$ Suppose $a\in A$ and let $A\apostrophe=\Bra{x-a:x\in A}$.\vspace{2pt}\par\quad
-Then $0\in A\apostrophe$ and $\,\,\forall x-a,y-a\in A\apostrophe,\;\Par{\,\forall x,y\in A\,},\;\lambda\in\Fbb,$\vspace{2pt}\par\quad
-(I) $\lambda\Par{x-a}=[\lambda x+\Par{1-\lambda}a]-a\in A\apostrophe.$\vspace{2pt}\par\quad\EndI
-(II) $\lambda\Par{x-a}+\Par{1-\lambda}\Par{y-a}=\frac{1}{2}\Par{x-a}+\frac{1}{2}\Par{y-a}=\frac{1}{2}x+\Par{1-\frac{1}{2}}y-a\in A\apostrophe.$\vspace{3pt}\par\quad\HII
-\Or By (I), $2\times\Sbra{\frac{1}{2}\Par{x-a}+\frac{1}{2}\Par{y-a}}=\Par{x-a}+\Par{y-a}\in A\apostrophe$.\vspace{3pt}\par\quad
-Thus $A\apostrophe$ is a subsp of $V$. Hence $a+A\apostrophe=\Bra{\Par{x-a}+a:x\in A}{}=A$ is a translate.\PfEnd\vspace{4pt}\quad
-\Or Suppose $x-a,y-a\in A\apostrophe,\lambda\in\Fbb.$\par\quad
-Note that $x,a\in A\Rightarrow \lambda x+\Par{1-\lambda}a=2x-a\in A.$ Similarly $2y-a\in A.$\vspace{2pt}\par\quad
-(I) $\Par{x-\frac{1}{2}a} + \Par{y-\frac{1}{2}a}=x+y-a\in A\Rightarrow x+y-2a=\Par{x-a}+\Par{y-a}\in A\apostrophe.$\vspace{2pt}\par\quad\EndI
-(II) $\lambda\Par{x-a}=\BigPar{\lambda x+\Par{1-\lambda}a}-a\in A\apostrophe.$\par\vspace{2pt}\quad
-Thus $-x+A$ is a subsp of $V$. Hence $A=x+\Par{-x+A}$ is a translate of the subsp $\Par{-x + A}$.\PfEnd
+(a) Suppose $A=a+U.$ Then $\lambda\Par{a+u_1}+\Par{1-\lambda}\Par{a+u_2}=a+\BigPar{\lambda\Par{u_1-u_2}+u_2}\in A.$\vspace{2pt}\par\quad
+(b) Suppose $\lambda v+\Par{1-\lambda}w\in A,\forall v,w\in A,\lambda\in\Fbb.$ \;Suppose \uline{$a\in A$} and let $A\apostrophe=\Bra{x-a:x\in A}.$\par\Hb\quad
+Then $0\in A\apostrophe$ and $\forall\Par{v-a},\Par{w-a}\in A\apostrophe,\lambda\in\Fbb,$\par\vspace{4pt}\Hb\quad
+(I) $\lambda\Par{v-a}=\Sbra{\lambda v+\Par{1-\lambda}a}-a\in A\apostrophe.$\par\vspace{2pt}\Hb\quad
+(II) Because $\lambda\Par{v-a}+\Par{1-\lambda}\Par{w-a}=\Sbra{\lambda v+\Par{1-\lambda}w}-a\in A\apostrophe.$\par\Hb\quad\HII
+Let $\lambda=\frac{1}{2}$ here and use (I) above by $\lambda=2,$ we have $\Par{v-a}+\Par{w-a}\in A\apostrophe.$\vspace{4pt}\par\Hb\quad\HII
+\Or Note that $v,a\in A\Rightarrow\lambda v+\Par{1-\lambda}a=2v-a\in A.$ Similarly $2w-a\in A.$\par\Hb\quad\HII
+Now $\Par{v-\frac{1}{2}a} + \Par{w-\frac{1}{2}a}=v+w-a\in A\Rightarrow v+w-2a=\Par{v-a}+\Par{w-a}\in A\apostrophe.$\vspace{4pt}\par\Hb\quad
+Thus $A\apostrophe=-a+A$ is a subsp of $V.$ Hence $a+A\apostrophe=a+\Bra{x-a:x\in A}=A$ is a translate.\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{3E9}{9}}{
-	\TextN{Suppose $A_1=v+U_1$ and $A_2=w+U_2$ for some $v,w\in V$ and some subsps $U_1,U_2$ of $V$.}
-	\TextN{Prove that $A_1\cap A_2$ is either a translate of some subsp of $V$ or is $\emptyset$.}
-}\par\quad
-$\forall v+u_1,w+u_2\in A_1\cap A_2\neq\emptyset,\lambda\in\Fbb,\lambda\Par{v+u_1}+\Par{1-\lambda}\Par{w+u_2}\in A_1\cap A_2.$ By Problem (8).\PfEnd\vspace{6pt}\quad
-\Or Let $A_1=v+U_1,A_2=w+U_2.$ Suppose $x\in \Par{v+U_1}\cap \Par{w+U_2}\neq\emptyset.$\par\quad
-Then $\exists\,u_1\in U_1,x=v+u_1\Rightarrow x-v\in U_1,\;\exists\,u_2\in U_2,x=w+u_2\Rightarrow x-w\in U_2$.\par\quad
-Now $A_1=v+U_1=x+U_1,A_2=w+U_2=x+U_2.$ By Problem (7), $U_1=U_2,A_1=A_2.$\PfEnd\vspace{2pt}\quad
-\Or We show that $A_1\cap A_2=x+\Par{U_1\cap U_2}.$ (a) $x+\Par{U_1\cap U_2}\subseteq A_1\cap A_2.$\par\quad
-(b) $y=x+u_1=x+u_2\in A_1\cap A_2\Rightarrow u_1=u_2\in U_1\cap U_2\Rightarrow y\in x+\Par{U_1\cap U_2}.$\PfEnd
-\SepLine
+	\TextN{Suppose $A=v+U$ and $B=x+W$ for some $v,x\in V$ and some subsps $U,W$ of $V$.}
+	\TextN{Prove that $A\cap B$ is either a translate of some subsp of $V$ or is $\emptySet$.}
+}$\forall v+u,x+w\in A\cap B\neq\emptySet,\lambda\in\Fbb,\lambda\Par{v+u}+\Par{1-\lambda}\Par{x+w}\in A\cap B.$ By Problem (8).\PfEnd\parSol{}
+\Or Let $A=v+U,\;B=x+W.$ \;Suppose $\alpha\in\Par{v+U}\cap\Par{x+W}\neq\emptySet.$\parSol{}
+Then $\alpha-v\in U\Rightarrow \alpha+U=v+U=A,$ and $\alpha-x\in W\Rightarrow \alpha+W=x+W=B.$\parSol{}
+We show that $A\cap B=\alpha+\Par{U\cap W}.$ Note that $\alpha+\Par{U\cap W}\subseteq A\cap B.$\parSol{}
+And $\forall \beta=\alpha+u=\alpha+w\in A\cap B\Rightarrow u=w\in U\cap W\Rightarrow \beta\in\alpha+\Par{U\cap W}.$\PfEnd
+\SepLine\pagebreak
 
 \ProblemN{\hypertarget{3E10}{10}}{
-	\TextNL{Prove that the intersection of any collection of translates of subsps is either a translate or $\emptyset.$}
-}Suppose $\Bra{A_{\alpha}}{_{\alpha\in\Gamma}}$ is a collection of translates of subsps of $V$, where $\Gamma$ is an index set.\vspace{2pt}\par\quad
-$\forall x,y\in\bigcap_{\alpha\in\Gamma}A_{\alpha}\neq\emptyset,\lambda\in\Fbb,\lambda x+\Par{1-\lambda}y\in A_{\alpha}$ for each $\alpha.$ By Problem (8).\PfEnd\vspace{6pt}\quad
-\Or Let each $A_\alpha=w_\alpha+V_\alpha.$ Suppose $x\in\bigcap_{\alpha\in\Gamma}\Par{w_\alpha+V_\alpha}\neq\emptyset.$ Then $x=w_\alpha+v_\alpha\in A_\alpha$ for each  $\alpha.$\par\quad
-And each $\Par{x-w_\alpha}\in V_\alpha\Longrightarrow A_\alpha=w_\alpha+V_\alpha=x+V_\alpha.$ By Problem (7).\PfEnd\vspace{2pt}\quad
-\Or We show that $\bigcap_{\alpha\in\Gamma}A_\alpha=\bigcap_{\alpha\in\Gamma}\Par{x+V_\alpha}=x+\bigcap_{\alpha\in\Gamma}V_\alpha.$\par\quad
-$y\in\bigcap_{\alpha\in\Gamma}A_\alpha\Longleftrightarrow$ for each $\alpha,\;y=x+v_\alpha\in A_\alpha\Longleftrightarrow$ each $v_\alpha=y-x\in\bigcap_{\alpha\in\Gamma}V_\alpha\Longleftrightarrow y\in x+\bigcap_{\alpha\in\Gamma}V_\alpha.$\PfEnd
-\SepLine\pagebreak
+	\TextNL{Prove that the intersection of any collection of translates of subsps}
+	\TextNL{is either a translate of some subsps or $\emptySet.$}
+}Suppose $\Bra{A_{\alpha}}{_{\alpha\in\Gamma}}$ is a collection of translates of subsps of $V$, where $\Gamma$ is an index set.\vspace{2pt}\parSol{}
+$\forall x,y\in\bigcap_{\alpha\in\Gamma}A_{\alpha}\neq\emptySet,\lambda\in\Fbb,\lambda x+\Par{1-\lambda}y\in A_{\alpha}$ for each $\alpha.$ By Problem (8).\PfEnd\parSol{\vspace{6pt}}
+\Or Let each $A_\alpha=w_\alpha+V_{\!\alpha}.$ Suppose $x\in\bigcap_{\alpha\in\Gamma}\Par{w_\alpha+V_{\!\alpha}}\neq\emptySet.$\parSol{}
+Then $x-w_\alpha\in V_{\!\alpha}\Longrightarrow x+V_{\!\alpha}=w_\alpha+V_{\!\alpha}=A_\alpha,$ for each $\alpha.$\parSol{}
+We show that $\bigcap_{\alpha\in\Gamma}A_\alpha=\bigcap_{\alpha\in\Gamma}\Par{x+V_{\!\alpha}}=x+\bigcap_{\alpha\in\Gamma}V_{\!\alpha}.$\parSol{}
+$y\in\bigcap_{\alpha\in\Gamma}A_\alpha\Longleftrightarrow$ for each $\alpha,\;y=x+v_\alpha\in A_\alpha$\parSol{}
+$\Blind{y\in\bigcap_{\alpha\in\Gamma}A_\alpha}\Longleftrightarrow$ each $v_\alpha=y-x\in\bigcap_{\alpha\in\Gamma}V_{\!\alpha}\Longleftrightarrow y\in x+\bigcap_{\alpha\in\Gamma}V_{\!\alpha}.$\PfEnd
+\SepLine
 
 \ProblemN{\hypertarget{3E11}{11}}{
 	\TextNL{Suppose $A=\Bra{\lambda_1 v_1+\dots+\lambda_m v_m:\sum_{i=1}^m \lambda_i=1}$, where each $v_i\in V,\lambda_i\in\Fbb.$\vspace{2pt}}
@@ -2059,7 +2071,7 @@ $\forall w\in A,\;w=\sum_{i=1}^m \lambda_i v_i=\sum_{i=1}^m \lambda_i\Par{v+u_i}
 \Or \vspace{2pt}Let $v=\lambda_1 v_1+\dots+\lambda_m v_m\in A$. To show that $v\in B$, use induction on $m$ by $k$.\par\quad\Hb
 (i) \vspace{2pt}$k=1,v=\lambda_1 v_1\Rightarrow \lambda_1=1.$ 又 $v_1\in B.$ Hence $v\in B$.\par\quad\Hb\Hi
 \vspace{6pt}$k=2,v=\lambda_1 v_1+\lambda_2 v_2\Rightarrow\lambda_2=1-\lambda_1.$ 又 $v_1,v_2\in B.$ By Problem (8), $v\in B$.\par\quad\Hb\Endi
-(ii) \vspace{6pt}$2\leqslant k\leqslant m,$ we assume that $v=\lambda_1 v_1+\dots+\lambda_k v_k\in A\subseteq B.\;\XPar{\forall\lambda_i$ such that $\sum_{i=1}^k\lambda_i=1}$\par\quad\Hb\Hii
+(ii) \vspace{6pt}$2\leqslant k<m.$ Assume that $v=\lambda_1 v_1+\dots+\lambda_k v_k\in A\subseteq B.\;\XPar{\forall\lambda_i$ such that $\sum_{i=1}^k\lambda_i=1}$\par\quad\Hb\Hii
 \vspace{6pt}For $u=\mu_1 v_1+\dots+\mu_k v_k+\mu_{k+1} v_{k+1}\in A.\,\,\forall i=1,\dots,k,\,\exists\,\mu_i\neq 1,$ fix one such $i$ by $\iota$.\par\quad\Hb\Hii
 \vspace{6pt}Then $\sum_{i=1}^{k+1}\mu_i-\mu_\iota=1-\mu_\iota\Rightarrow\XPar{\sum_{i=1}^{k+1}\Frac{\mu_i}{1-\mu_\iota}}-\Frac{\mu_\iota}{1-\mu_\iota}=1.$\par\quad\Hb\Hii
 \vspace{6pt}Let $w=\underbrace{\Frac{\mu_1}{1-\mu_\iota}v_1+\dots+\Frac{\mu_{\iota-1}}{1-\mu_\iota}v_{\iota-1}+\Frac{\mu_{\iota+1}}{1-\mu_\iota}v_{\iota+1}+\dots+\Frac{\mu_{k+1}}{1-\mu_\iota}v_{k+1}}_{k\,terms}.$\par\quad\Hb\Hii
@@ -2068,44 +2080,7 @@ $\forall w\in A,\;w=\sum_{i=1}^m \lambda_i v_i=\sum_{i=1}^m \lambda_i\Par{v+u_i}
 (c) If $m=1,$ then let $A=v_1+\zeroSubs$ and we are done.\par\quad\Hc
 Fix one $k\in\Bra{1,\dots,m}.$ Given $\lambda_1,\dots,\lambda_{k-1},\lambda_{k+1},\dots,\lambda_m\in\Fbb.$ Let $\lambda_k=1-\lambda_1-\dots-\lambda_{k-1}-\lambda_{k+1}-\dots-\lambda_m$\par\quad\Hc
 $\Longrightarrow\lambda_1 v_1+\dots+{\lambda_k v_k}+\dots+\lambda_m v_m=v_k+\sum_{i=1}^m\lambda_i\Par{v_i-v_k}.$ \;$A=v_k+\Span{v_1-v_k,\dots,v_m-v_k}.$\PfEnd
-\SepLine
-
-\BulletPointX\NoteForSmall{[3.79, 3.83]}\;\;If $U=\zeroSubs,$ then $v+U=v+\zeroSubs=\Bra{v},\;V\XSlash U=V\XSlash\zeroSubs=\Bra{\Bra{v}:v\in V}.$\par\vspace{3pt}
-\BulletPointX\NoteFor{[3.88, 3.90, 3.91]}\;\;{Suppose $W\in\mathcal{S}_V U.$ Then $V\XSlash U$ is iso to $W.$}\TextB{}
-{Because $\forall v\in V,\exists\,!\,u_v\in U,w_v\in W,v=u_v+w_v.$ Define $T\in\Lm{V}$ by $T\Par{v}=w_v.$}\TextB{}
-{Hence $\null T=U,\;\range T=W,\;\range T\oplus\null T=V.$}\TextB{}
-{Then $\tilde{T}\in\Lm{V\XSlash \null T,V}$ is defined by $\tilde{T}\Par{v+U}=\tilde{T}\Par{w_v'+U}=Tw_v'=w_v.$ \Sbra{See {\TIPS} below}}\TextB{}
-{Now $\pi\circ\tilde{T}=I_{V\XSlash U},\;\tilde{T}\circ\pi\mmid_W=I_{W}=T\mmid_W.$ \;Hence $\tilde{T}$ is an iso of $V\XSlash U$ onto $W.$}\par\vspace{2pt}
-\BulletPointX\Tips \,\,\,{Suppose $U$ is a subsp of $V.$ Define $S\in\Lm{V\XSlash U,V}$ by $S\Par{v+U}=v.$}\TextB{}
-{Then $\range S$ is the {\tgsl purest} in $\mathcal{S}_V U.$ Now $\null S=\zeroSubs,\;U\oplus\range S=V.$}\TextB{}
-{Let $E=S\circ\pi.$ Because $S$ is inje and $\pi$ is surj, $\null E=\null\pi=U,\;\range E=\range S.$}\TextB{}
-{Then $\range E\oplus\null E=V.$ \;\NOTICE that $E:V\rightarrow W$ is the {\tgsl purest eraser}. Now we explain why:}\TextB{\vspace{2pt}}
-{{\Example}\,\,\,\,Let $V=\Fbb^2,B_U=\Par{e_1},B_W=\Par{e_2-e_1}\Rightarrow U\oplus W=V.$}\TextE{}
-{Notice that $T\Par{e_2-e_1}=\Par{e_2-e_1},$ while $\Par{e_2-e_1}+U=e_2+U,$ but}\TextE{}
-{because $e_2=v_1+\Par{e_2-e_1},$ now still, $\tilde{T}\BigPar{\Par{e_2-e_1}+U}=e_2-e_1=Te_2.$}\TextE{}
-{In contrast, $S\BigPar{\Par{e_2-e_1}+U}=S\Par{e_2+U}=e_2,\;E\Par{e_2-e_1}=e_2.$}\TextE{}
-{And $\range E=\range S=\Span{e_2}$ is the {\tgsl purest} in $\mathcal{S}_V U.$}
 \SepLine\pagebreak
-
-\ProblemN{\hypertarget{3E12}{12}}{
-	\TextNL{Suppose $U$ is a subsp of $V.$ Prove that is $V$ is iso to $U\times\Par{V\XSlash U}$.}
-}\Sbra[3pt]{{\tgsl Req $V\XSlash U$ Finite-dim}} \;Let $B_{V\XSlash U}=\BigPar{v_1+U,\dots,v_n+U}.$\parSol{}
-Note that $\forall v\in V,\exists\,!\,a_i\in\Fbb,v+U=\sum_{i=1}^n a_i\Par{v_i+U}=\XPar{\sum_{i=1}^n a_i v_i}+U$\vspace{2pt}\parSol{}
-$\Rightarrow\Par{v-a_1 v_1-\dots-a_n v_n}\in U\Rightarrow\exists\,!\,u\in U,v=\sum_{i=1}^n a_i v_i+u.$\vspace{2pt}\parSol{}
-Thus define $\varphi\in\Lm[\BigPar]{V,U\times\Par{V\XSlash U}}$ by $\varphi\Par{v}=\Par{u, \,v+U},$\vspace{3pt}\parSol{}
-and $\psi\in\Lm[\BigPar]{U\times\Par{V\XSlash U},V}$ by $\psi\Par{u,v+U}=v+u,$ where $\exists\,!\,a_i\in\Fbb,v=\sum_{i=1}^n a_i v_i+U.$\PfEnd\vspace{6pt}\quad
-\Or Define $S\in\Lm{V\XSlash U,V}$ by $S\Par{v+U}=v.$\vspace{2pt}\par\quad
-By {\NOTEFOR} [3.88, 90, 91], $\range S\oplus U=V.$ Thus $\forall v\in V,\exists\,!\,u\in U,w\in\range S,v=u+w.$\vspace{2pt}\par\quad
-Define $T\in\Lm[\BigPar]{U\times\Par{V\XSlash U},V}$ by $T\Par{u,v+U}=u+S\Par{v+U}=u+w=v.$ Then $T$ is surj.\vspace{2pt}\par\quad
-And $T\Par{u,v+U}=u+S\Par{v+U}=0\Longrightarrow\pi\BigPar{T\Par{u,v+U}}=v+U=0,$ and $u=-S\Par{v+U}=0.$\vspace{4pt}\par\quad
-\Or Define $R\in\Lm[\BigPar]{V,U\times\Par{V\XSlash U}}$ by $R\Par{v}=\BigPar{u,\Par{w+U}}.$ Now $R\circ T=I_{\envFontSmall[\scriptsize]U\times\Par{V\XSlash U}},\;T\circ R=I_V.$\PfEnd
-\SepLine
-
-\ProblemBnoor{\hypertarget{3E4e14}{4E 14}}{
-	\TextB{Suppose $V=U\oplus W,\;B_W=\Par{w_1,\dots,w_m}.$ Prove that $B_{V\XSlash U}=\BigPar{w_1+U,\dots,w_m+U}.$\vspace{2pt}}
-}$\forall v\in V,\exists\,!\,u\in U,w\in W,v=u+w.$ 又 $\exists\,!\,c_i\in\Fbb,w=\sum_{i=1}^m c_i w_i\Rightarrow v=\sum_{i=1}^m c_i w_i+u$.\vspace{2pt}\parSol{}
-Hence $\forall v+U\in V\XSlash U,\exists\,!\,c_i\in\Fbb,v+U=\sum_{i=1}^m c_i w_i+U.$\PfEnd
-\SepLine
 
 \ProblemN{\hypertarget{3E14}{14}}{
 	\TextNL{Suppose $U=\Bra{\Par{x_1,x_2,\cdots}\in\Fbb^{\infty}:x_k\neq 0\text{\;for\;only\;finitely\;many}\;k}$.}
@@ -2127,11 +2102,49 @@ Similarly, let $m\in\Nbp$ and $a_1\Par{e_1+U}+\dots+a_m\Par{e_m+U}=0\Rightarrow 
 Suppose $L$ is the largest such that $u\Sbra{L}\neq 0.$ And $l$ is such that $2^{ml}> L.$\vspace{6pt}\par\quad
 Then $\forall k\in\Bra{1,\dots,m},u\Sbra{2^{ml}+2^k}=\XPar{\sum_{r=1}^m a_re_r}\Sbra{2^k}=a_1+\dots+a_k=0.$\vspace{6pt}\par\quad
 Thus $a_1=\dots=a_m=0$ and $\Par{e_1,\dots,e_m}$ is linely inde. Similarly.\PfEnd
+\SepLine
+
+\BulletPointX\NoteFor{[3.88, 3.90, 3.91]}\;\;{Suppose $W\in\mathcal{S}_V U.$ Then $V\XSlash U$ is iso to $W.$}\TextB{}
+{Because $\forall v\in V,\exists\,!\,u_v\in U,w_v\in W,v=u_v+w_v.$ \uline{Define $T\in\Lm{V}$ by $T\Par{v}=w_v.$}}\TextB{}
+{Hence $\null T=U,\;\range T=W,\;\range T\oplus\null T=V.$}\TextB{}
+{Then $\tilde{T}\in\Lm{V\XSlash \null T,V}$ is defined by $\tilde{T}\Par{v+U}=\tilde{T}\Par{w_v'+U}=Tw_v'=w_v.$ \Sbra{See {\TIPS} below}}\TextB{}
+{Now $\pi\circ\tilde{T}=I_{V\XSlash U},\;\tilde{T}\circ\pi\mmid_W=I_{W}=T\mmid_W.$ \;Hence $\tilde{T}$ is an iso of $V\XSlash U$ onto $W.$}\par\vspace{2pt}
+\BulletPointX\Tips \,\,\,{Suppose $U$ is a subsp of $V.$ \uline{Define $S\in\Lm{V\XSlash U,V}$ by $S\Par{v+U}=v.$}}\TextB{}
+{Then $\range S$ is the {\tgsl purest} in $\mathcal{S}_V U.$ Now $\null S=\zeroSubs,\;U\oplus\range S=V.$}\TextB{}
+{\uline{Let $E=S\circ\pi.$} Because $S$ is inje and $\pi$ is surj, $\null E=\null\pi=U,\;\range E=\range S.$}\TextB{}
+{Then $\range E\oplus\null E=V.$ \;\NOTICE that $E:V\rightarrow W$ is the {\tgsl purest eraser}. Now we explain why:}\TextB{\vspace{2pt}}
+{{\Example}\,\,\,\,Let $V=\Fbb^2,B_U=\Par{e_1},B_W=\Par{e_2-e_1}\Rightarrow U\oplus W=V.$}\TextE{}
+{Notice that $T\Par{e_2-e_1}=\Par{e_2-e_1},$ while $\Par{e_2-e_1}+U=e_2+U,$ but}\TextE{}
+{because $e_2=v_1+\Par{e_2-e_1},$ now still, $\tilde{T}\BigPar{\Par{e_2-e_1}+U}=e_2-e_1=Te_2.$}\TextE{}
+{In contrast, $S\BigPar{\Par{e_2-e_1}+U}=S\Par{e_2+U}=e_2,\;E\Par{e_2-e_1}=e_2.$}\TextE{}
+{And $\range E=\range S=\Span{e_2}$ is the {\tgsl purest} in $\mathcal{S}_V U.$}
 \SepLine\pagebreak
+
+\ProblemN{\hypertarget{3E12}{12}}{
+	\TextNL{Suppose $U$ is a subsp of $V.$ Prove that is $V$ is iso to $U\times\Par{V\XSlash U}$.}
+}\par\quad
+\Sbra[3pt]{{\tgsl Req $V\XSlash U$ Finite-dim}} \;Let $B_{V\XSlash U}=\BigPar{v_1+U,\dots,v_n+U}.$\par\quad
+Note that $\forall v\in V,\exists\,!\,a_i\in\Fbb,v+U=\sum_{i=1}^n a_i\BigPar{v_i+U}=\XPar{\sum_{i=1}^n a_i v_i}+U$\vspace{2pt}\par\quad
+$\Rightarrow\BigPar{v-a_1 v_1-\dots-a_n v_n}\in U\Rightarrow\exists\,!\,u\in U,v=\sum_{i=1}^n a_i v_i+u.$\vspace{2pt}\par\quad
+Thus define \;$\varphi\in\Lm[\BigPar]{V,U\times\Par{V\XSlash U}}$\; and \;$\psi\in\Lm[\BigPar]{U\times\Par{V\XSlash U},V}$\par\quad
+\Blind{Thus defi}by \;$\varphi\Par{v}=\Par{u,\;v+U}$ \qquad and \;$\psi\Par{u,\;v+U}=v+u.$ \quad Then $\psi=\varphi^{-1}.$\PfEnd\vspace{8pt}\quad
+\Or Define $S\in\Lm{V\XSlash U,V}$ by $S\Par{v+U}=v.$\vspace{2pt}\par\quad
+By {\NOTEFOR} [3.88, 90, 91], $\range S\oplus U=V.$ Thus $\forall v\in V,\exists\,!\,u\in U,w\in\range S,v=u+w.$\vspace{2pt}\par\quad
+Define $T\in\Lm[\BigPar]{U\times\Par{V\XSlash U},V}$ by $T\Par{u,v+U}=u+S\Par{v+U}=u+w=v.$ Then $T$ is surj.\vspace{2pt}\par\quad
+And $T\Par{u,v+U}=u+S\Par{v+U}=0\Longrightarrow\pi\BigPar{T\Par{u,v+U}}=v+U=0,$ and $u=-S\Par{v+U}=0.$\vspace{4pt}\par\quad
+\Or Define $R\in\Lm[\BigPar]{V,U\times\Par{V\XSlash U}}$ by $R\Par{v}=\BigPar{u,\Par{w+U}}.$ Now $R\circ T=I_{\envFontSmall[\scriptsize]U\times\Par{V\XSlash U}},\;T\circ R=I_V.$\PfEnd
+\SepLine
+
+\ProblemBnoor{\hypertarget{3E4e14}{4E 14}}{
+	\TextB{Suppose $V=U\oplus W,\;B_W=\Par{w_1,\dots,w_m}.$ Prove that $B_{V\XSlash U}=\BigPar{w_1+U,\dots,w_m+U}.$\vspace{2pt}}
+}$\forall v\in V,\exists\,!\,u\in U,w\in W,v=u+w.$ 又 $\exists\,!\,c_i\in\Fbb,w=\sum_{i=1}^m c_i w_i\Rightarrow v=\sum_{i=1}^m c_i w_i+u$.\vspace{2pt}\parSol{}
+Hence $\forall v+U\in V\XSlash U,\exists\,!\,c_i\in\Fbb,v+U=\sum_{i=1}^m c_i w_i+U.$\PfEnd
+\SepLine
 
 \ProblemN{\hypertarget{3E13}{13}}{
 	\TextNL{Prove that $B_{V\XSlash U}=\BigPar{v_1+U,\dots,v_m+U},B_U=\Par{u_1,\dots,u_n}\Rightarrow B_V=\BigPar{v_1,\dots,v_m,u_1,\dots,u_n}.$\vspace{2pt}}
-}Note that $\forall v\in V,\exists\,!\,a_i\in\Fbb,v+U=\sum_{i=1}^m a_i v_i+U\Rightarrow\exists\,!\,b_i\in\Fbb,v-\sum_{i=1}^m a_i v_i=\sum_{i=1}^m b_i u_i\in U$\parSol{}
+}\par\quad
+Note that $\forall v\in V,\exists\,!\,a_i\in\Fbb,v+U=\sum_{i=1}^m a_i v_i+U\Rightarrow\exists\,!\,b_i\in\Fbb,v-\sum_{i=1}^m a_i v_i=\sum_{i=1}^m b_i u_i\in U$\par\quad
 \Blind{Note that} $\Rightarrow \forall v\in V,\exists\,!\,a_i,b_j\in\Fbb,v=\sum_{i=1}^m a_i v_i+\sum_{j=1}^m b_j u_j.$\PfEnd\vspace{4pt}\quad
 \Or Note that $B=\Par{v_1,\dots,v_m}$ is linely inde. Now we show that $\Spn B\cap U=\zeroSubs.$\par\quad
 $v\in\Spn B\cap U\Longleftrightarrow v+U=\sum_{i=1}^ma_i\Par{v_i+U}=0+U\Longleftrightarrow a_1=\dots=a_m=0\Longleftrightarrow v=0.$\par\quad
@@ -2157,7 +2170,7 @@ Define $\varphi\in\Lm{V,\Fbb}$ by $\varphi\Par{v_0}=1,\varphi\Par{u}=0,$ where $
 \Or Let $B_{V\XSlash U}=\Par{w+U}.$ Then $\forall v\in V,\exists\,!\,a\in\Fbb,v+U=aw+U.$\parSol{}
 Define $\varphi:{V\rightarrow\Fbb}$ by $\varphi\Par{v}=a.$ Then $\varphi\Par{v_1+\lambda v_2}=a_1+\lambda a_2=\varphi\Par{v_1}+\lambda\varphi\Par{v_2}.$\parSol{}
 Now $u\in U\Longleftrightarrow u+U=0w+U\Longleftrightarrow\varphi\Par{u}=0.$\PfEnd
-\SepLine
+\SepLine\pagebreak
 
 \ProblemN{\hypertarget{3E17}{17}}{
 	\TextNL{Suppose $V\XSlash U$ is finite-dim, $W$ is a subsp of $V$.}
@@ -2176,12 +2189,13 @@ And $\forall v\in V,\exists\,!\,a_i\in\Fbb,v+U=a_1v_1+\dots+a_mv_m+U\Rightarrow\
 \ProblemN{\hypertarget{3E18}{18}}{
 	\TextNL{Suppose $T\in\Lm{V,W}$ and $U$ is a subsp of $V.$ Let $\pi:V\rightarrow V\XSlash U$ be the quotient map.}
 	\TextNL{Prove that $\exists\,S\in\Lm{V\XSlash U,W},T=S\circ\pi\Longleftrightarrow U\subseteq\null T$.}
-}Suppose $\exists\,S\in\Lm{V\XSlash U,W},T=S\circ\pi.$ Then $U=\null\pi\subseteq\null\Par{S\circ\pi}=\null T.$\par\quad
-Suppose $U=\null\pi\subseteq\null T.$ By ({3.B.24}), we are done. \;\Or Define $S:\Par{v+U}\mapsto Tv.$\par\quad
+}\par\quad
+(a) Suppose $\exists\,S\in\Lm{V\XSlash U,W},T=S\circ\pi.$ Then $U=\null\pi\subseteq\null\Par{S\circ\pi}=\null T.$\par\quad
+(b) Suppose $U=\null\pi\subseteq\null T.$ By ({3.B.24}), we are done. \;\Or Define $S:\Par{v+U}\mapsto Tv.$\par\Hb\quad
 $v_1+U=v_2+U\Longleftrightarrow v_1-v_2\in\null T\Longleftrightarrow Tv_1=Tv_2.$ Thus $S$ is well-defined. Hence $S\circ\pi=T.$\PfEnd\vspace{2pt}
 \hypertarget{3E20}{}\Corollary \,\,\,Define $\Gamma:S\mapsto S\circ\pi.$ Then  $\Gamma$ is inje, $\range\Gamma=\Bra{T\in\Lm{V,W}:U\subseteq\null T}.$
 \SepLine
-\ChEnd\pagebreak
+\ChEnd
 
 \vfill\ChDecl{Ch3F}{3$\cdot$F}{}\orMode{\hLk{3F4}{4}\;\;\hLk{3F5}{5}\;\;\hLk{3F6}{6}\;\;\hLk{3F7}{7}\;\;\hLk{3F8}{8}\;\;\hLk{3F9}{9}\;\;\hLk{3F12}{12}\;\;\hLk{3F13}{13}\;\;\hLk{3F15}{15}\;\;\hLk{3F16}{16}\;\;\hLk{3F17}{17}\;\;\hLk{3F18}{18}\;\;\hLk{3F19}{19}\;\;\hLk{3F20}{20}\;\;\hLk{3F21}{21}\;\;\hLk{3F22}{22}\;\;\hLk{3F23}{23}\;\;\hLk{3F24}{24}\;\;\hLk{3F25}{25}\;\;\hLk{3F26}{26}\;\;$\\[-4pt]$\hLk{3F28}{28}\;\;\hLk{3F29}{29}\;\;\hLk{3F30}{30}\;\;\hLk{3F31}{31}\;\;\hLk{3F32}{32}\;\;\hLk{3F33}{33}\;\;\hLk{3F34}{34}\;\;\hLk{3F35}{35}\;\;\hLk{3F36}{36}\;\;\hLk{3F37}{37}\;\;\mmid\;\;\hLk{3F4e5}{4E:\;\;5}\;\;\hLk{3F4e6}{6}\;\;\hLk{3F4e8}{8}\;\;\hLk{3F4e17}{17}\;\;\hLk{3F4e23}{23}\;\;\hLk{3F4e24}{24}\;\;\hLk{3F4e25}{25}}[-40pt]{[1]: 20, 21; [2]: 22, 23, (4E 23), 30; [3]: 31, 25, 26; [4]: 28, 29, 9, 13; [5]: 24, 37, 4, 17, 18, 19;$\\$[6]: 36, (4E 17), 15, 12; [7]: 16, (4E 6), 5; [8]: 32, 33, (4E 8), (4E 5); [9]: 6, (4E 25); [10]: 35, 7, 8, 34.}
 \vspace{4pt}
@@ -2220,8 +2234,8 @@ Hence $\varphi\in U^0+W^0.$ Now $\Par{U\cap W}{^0}\subseteq U^0+W^0.$\PfEnd
 
 \ProblemBnoor[]{\Corollary}[]{
 	\TextB{}
-	(a) \TextB{Suppose $\Bra{V_{\alpha_i}}{_{\alpha_i\in\Gamma}}$ is a collection of subsets of $V$. Then $\XPar{\bigcap_{\alpha_i\in\Gamma}V_{\alpha_i}}{^0}=\sum_{\alpha_i\in\Gamma}\BigPar{V^0_{\alpha_i}}.$\vspace{4pt}}
-	(b) \TextB{Suppose $\Bra{V_{\alpha_i}}{_{\alpha_i\in\Gamma}}$ is a collection of subsps of $V$. Then $\XPar{\sum_{\alpha_i\in\Gamma}V_{\alpha_i}}{^0}=\bigcap_{\alpha_i\in\Gamma}\BigPar{V^0_{\alpha_i}}.$\vspace{8pt}}
+	(a) \TextB{Suppose $\Bra{V_{\!\alpha_i}}{_{\alpha_i\in\Gamma}}$ is a collection of subsets of $V$. Then $\XPar{\bigcap_{\alpha_i\in\Gamma}V_{\!\alpha_i}}{^0}=\sum_{\alpha_i\in\Gamma}\BigPar{V^0_{\!\alpha_i}}.$\vspace{4pt}}
+	(b) \TextB{Suppose $\Bra{V_{\!\alpha_i}}{_{\alpha_i\in\Gamma}}$ is a collection of subsps of $V$. Then $\XPar{\sum_{\alpha_i\in\Gamma}V_{\!\alpha_i}}{^0}=\bigcap_{\alpha_i\in\Gamma}\BigPar{V^0_{\!\alpha_i}}.$\vspace{8pt}}
 	(c) \TextB{Suppose $V=U\oplus W.$ Then $V\apostrophe=U^0\oplus W^0.$ And $U_V^\apostrophe=W^0,\;W_V^\apostrophe=U^0.$\vspace{4pt}}
 	\Hc\TextB{\envFontDefault\large\tgnr Where $U_V^\apostrophe=\Bra{\varphi\in V\apostrophe:\varphi=\varphi\circ \iota}.$ And $\iota\in\Lm{V,U}$ is defined by $\iota\Par{u_v+w_v}=u_v.$\vspace{-2pt}}
 }\SepLine
@@ -2552,11 +2566,11 @@ $[Q]\Rightarrow[P]:\;$ Define $E\in\Lm{\Fbb}$ by $E\Par{x}=cx.$ Then $\forall v\
 \SepLine
 
 \ProblemN[]{\hypertarget{3F5}{5}}{
-	\TextN{Prove that $\Par{V_1\times\dots\times V_m}\apostrophe$ and $V\apostrophe_1 \times\dots\times V\apostrophe_m$ are iso.\hfill\Sbra[3pt]{{\large\tgnr Using notations in (3.E.2).}}}\vspace{4pt}
+	\TextN{Prove that $\Par{V_{\!1}\times\dots\times V_{\!m}}\apostrophe$ and $V\apostrophe_1 \times\dots\times V\apostrophe_m$ are iso.\hfill\Sbra[3pt]{{\large\tgnr Using notations in (3.E.2).}}}\vspace{4pt}
 }
 $\MathRightBrace{l}{$
-	Define $\varphi:\,\Par{V_1\times\dots\times V_m}\apostrophe\rightarrow V\apostrophe_1\times\dots\times V\apostrophe_m\\\qquad$ by $\varphi\Par{T}=\Par{T\circ R_1,\dots,T\circ R_m}=\Par{R\apostrophe_1\Par{T},\dots,R\apostrophe_m\Par{T}}.\\$
-	Define $\psi: V\apostrophe_1\times\dots\times V\apostrophe_m\rightarrow \Par{V_1\times\dots\times V_m}\apostrophe \\\qquad$ by $\psi\Par{T_1,\dots,T_m}=T_1S_1+\dots+T_mS_m=S\apostrophe_1\Par{T_1}+\dots+S\apostrophe_m\Par{T_m}.$
+	Define $\varphi:\,\Par{V_{\!1}\times\dots\times V_{\!m}}\apostrophe\rightarrow V\apostrophe_1\times\dots\times V\apostrophe_m\\\qquad$ by $\varphi\Par{T}=\Par{T\circ R_1,\dots,T\circ R_m}=\Par{R\apostrophe_1\Par{T},\dots,R\apostrophe_m\Par{T}}.\\$
+	Define $\psi: V\apostrophe_1\times\dots\times V\apostrophe_m\rightarrow \Par{V_{\!1}\times\dots\times V_{\!m}}\apostrophe \\\qquad$ by $\psi\Par{T_1,\dots,T_m}=T_1S_1+\dots+T_mS_m=S\apostrophe_1\Par{T_1}+\dots+S\apostrophe_m\Par{T_m}.$
 	$}\Rightarrow\psi=\varphi^{-1}.$\PfEnd
 \SepLine
 
