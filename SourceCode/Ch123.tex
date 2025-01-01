@@ -101,7 +101,7 @@ $\MathRightBrace{r}{
 \Onumber{\hypertarget{1C15}{15}}\quad{$U+U\ni u+w\in U.$}\PfEnd
 \Onumber{\hypertarget{1C16}{16}}\quad{$U+W\ni u+w=w+u\in W+U.$}\PfEnd
 \Onumber{\hypertarget{1C17}{17}}\quad{$\Par{V_{\!1}+V_{\!2}}+V_{\!3}\ni\Par{v_1+v_2}+v_3=v_1+\Par{v_2+v_3}\in V_{\!1}+\Par{V_{\!2}+V_{\!3}}.$}\PfEnd
-\BulletPointX{ \quad}{$\Par{U+W}_{\Cbb}\ni \Par{u_1+w_1}+\i\Par{u_2+w_2}=\Par{u_1+\i u_2}+\Par{w_1+\i w_2}\in U_\Cbb+W_\Cbb.$}\PfEnd
+\BulletPointX{ \quad}{$\Par{U+W}_{\Cbb}\ni \Par{u_1+w_1}+\i\Par{u_2+w_2}=\Par{u_1+\i u_2}+\Par{w_1+\i w_2}\in U_\Cbb+W_{\!\Cbb}.$}\PfEnd
 \SepLine
 
 
@@ -393,28 +393,31 @@ $Q\Rightarrow P:\forall v\in V,\exists\,!\,b_i\in\Fbb,\;v=b_1w_1+\dots+b_mw_m\Ri
 
 \ProblemBnoor{\hypertarget{2B4e5}{4E 5}}{
 	\TextB{Suppose $U,W$ are finite-dim, $V=U+W,\;B_U=\Par{u_1,\dots,u_m},\;B_W=\Par{w_1,\dots,w_n}.$}
-	\TextB{Prove that $\exists\,B_V$ consisting of vecs in $U\cup W$.}
-}Because $V=\Span{u_1,\dots,u_m}+\Span{w_1,\dots,w_n}=\Span{u_1,\dots,u_m,w_1,\dots,w_n}.$\parSol{}
-By [2.31], $B_V$ can be reduced from $\Par{u_1,\dots,u_m,w_1,\dots,w_n}.$\PfEnd
+	\TextB{Prove that $\exists\,B_V$ consisting of vecs in $U\cup W$.\vspace{-4pt}}
+}$V=\Span{u_1,\dots,u_m}+\Span{w_1,\dots,w_n}=\Span[\BigPar]{\overbrace{u_1,\dots,u_m,w_1,\dots,w_n}^{\text{Reduce}}}.$ By [2.31].\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{2B8}{8}}{
 	\TextN{Suppose $V=U\oplus W,\;B_U=\Par{u_1,\dots,u_m},\;B_W=\Par{w_1,\dots,w_n}.$}
 	\TextN{Prove that $B_V=\BigPar{u_1,\dots,u_m,w_1,\dots,w_n}$.}
-}$\forall v\in V,\exists\,!\,u\in U,w\in W\Rightarrow\exists\,!\,a_i,b_i\in\Fbb,v=u+w=\Par{a_1 u_1+\dots+a_m u_m}+\Par{b_1 w_1+\dots+b_n w_n}.$\parSol{}
-\Or\;$V=\Span{u_1,\dots,u_m}\oplus\Span{w_1,\dots,w_n}=\Span{u_1,\dots,u_m,w_1,\dots,w_n}.$\parSol{\vspace{2pt}}
+}$\forall v\in V,\exists\,!\,u\in U,w\in W\Rightarrow\exists\,!\,a_i,b_i\in\Fbb,v=u+w=\sum_{i=1}^ma_iu_i+\sum_{i=1}^nb_iw_i.$\parSol{}
+\Or\;$V=\Span{u_1,\dots,u_m}\oplus\Span{w_1,\dots,w_n}=\Span[\BigPar]{u_1,\dots,u_m,w_1,\dots,w_n}.$\parSol{\vspace{2pt}}
 \Blind{\Or\;}Note that $\sum_{i=1}^ma_iu_i+\sum_{i=1}^nb_iw_i=0\Rightarrow\sum_{i=1}^ma_iu_i=-\sum_{i=1}^nb_iw_i\in U\cap W=\zeroSubs.$\PfEnd
 \SepLine
 
-\ProblemBnoor{\hypertarget{2B4e}{9.A.2,3 \OR 4E 11}}{
+\ProblemBnoor[]{\hypertarget{2B4e}{9.A.3,4 \OR 4E 11}}{
 	\TextB{Suppose $V$ is on $\Rbb,$ and $v_1,\dots,v_n\in V.$ Let $B=\Par{v_1,\dots,v_n}.$\vspace{2pt}}
-	(a) \TextB{Show that [P] $B$ is linely inde in $V$ $\Longleftrightarrow B$ is linely inde in $V_\Cbb.$ [Q]}
-	(b) \TextB{Show that [P] $B$ spans $V$ $\Longleftrightarrow B$ spans $V_\Cbb.$ [Q]\vspace{2pt}}
-}(a) Note that each $v_k\in V_\Cbb.$ Thus $P\Rightarrow Q.$ \;And ${}^\neg P\Rightarrow{}^\neg Q:$ \;$\exists\,v_j=a_{j-1}v_{j-1}+\dots+a_1v_1\in V_\Cbb.$\parSol{}
-(b) $P\Rightarrow Q:$ \;$\forall u+\i v\in V_\Cbb,u,v\in V\Rightarrow\exists\,a_i,b_i\in\Rbb,u=\sum_{i=1}^na_iv_i,v=\sum_{i=1}^nb_iv_i$\parSol{\Hb}
-\Blind{$P\Rightarrow Q:$ \;}$\Rightarrow\exists\,a_i+\i b_i\in\Cbb,u+\i v=\sum_{i=1}^n\Par{a_i+\i b_i}v_i.$\parSol{\Hb}
-${}^\neg P\Rightarrow{}^\neg Q:$ \;$\exists\,u+\i v\in V_\Cbb,u+\i v\not\in\Span B\Rightarrow u$ or $v\not\in\Span B.$ Note that $u,v\in V.$
-\PfEnd
+	(a) \TextB{Show that [P] $B$ is linely inde in $V$ $\Longleftrightarrow B$ is linely inde in $V_{\!\Cbb}.$ [Q]}
+	(b) \TextB{Show that [P] $B$ spans $V$ $\Longleftrightarrow B$ spans $V_{\!\Cbb}.$ [Q]\vspace{2pt}}
+}{\envFontSmall\normalsize\par\quad
+(a) $P\Rightarrow Q:$ \;Note that each $v_k\in V_{\!\Cbb}.$ \;\; $Q\Rightarrow P:$ \;If $\lambda_k\in\Rbb$ with $\lambda_1v_1+\dots+\lambda_nv_n=0,$ then each $\mathfrak{Re}\,\lambda_k=\lambda_k=0.$\par\quad
+\Blind{(a)} ${}^\neg P\Rightarrow{}^\neg Q:$ \;$\exists\,v_j=a_{j-1}v_{j-1}+\dots+a_1v_1\in V_{\!\Cbb}.$\par\quad
+\Blind{(a)} ${}^\neg Q\Rightarrow{}^\neg P:$ \;$\exists\,v_j=\lambda_{j-1}v_{j-1}+\dots+\lambda_1v_1\Rightarrow v_j=\Par{\mathfrak{Re}\,\lambda_{j-1}}v_{j-1}+\dots+\Par{\mathfrak{Re}\,\lambda_1}v_1\in V.$\par\vspace{3pt}\quad
+(b) $P\Rightarrow Q:$ \;$\forall u+\i v\in V_{\!\Cbb},\;u,v\in V\Rightarrow\exists\,a_i,b_i\in\Rbb,u+\i v=\sum_{i=1}^n\Par{a_i+\i b_i}v_i.$\par\quad
+\Blind{(b)} $Q\Rightarrow P:$ \;$\forall v\in V,\exists\,\!\,a_i+\i b_i\in\Cbb,\;v+\i 0=\envFontDefault\BigPar{\!\sum_{i=1}^na_iv_i}+\i\,\BigPar{\!\sum_{i=1}^nb_iv_i}\envFontSmall\Rightarrow v\in\Span{v_1,\dots,v_m}.$\par\quad
+\Blind{(b)} ${}^\neg Q\Rightarrow{}^\neg P:$ \;$\exists\,v\in V,v\not\in\Span{B}\Rightarrow v+\i 0\not\in\Span{B}$ while $v+\i 0\in V_{\!\Cbb}.$\par\quad
+\Blind{(b)} ${}^\neg Q\Rightarrow{}^\neg P:$ \;$\exists\,u+\i v\in V_{\!\Cbb},u+\i v\not\in\Span B\Rightarrow u$ or $v\not\in\Span B.$ Note that $u,v\in V.$
+}\PfEnd\vspace{-4pt}
 \SepLine
 
 \BulletPointX\NoteFor{{\tgsc linely inde sequence and }[2.34]}\;\;$“V=\Span{v_1,\dots,v_n,\dots}”$ is an invalid expression.\TextB{}
@@ -424,11 +427,11 @@ we can prove that $\exists\,!\,T\in\Lm{V,W}$ with each $Tv_k=w_k,$ which has les
 But the key point is, how can we guarantee that such a $“$list$”$ exists. \colorbox{yellow}{TODO: More details.}
 %\TextB{}
 %\TextB{}
-\SepLine\ChEnd
+\SepLine\ChEnd\vspace{-4pt}
 
 \vfill\ChDecl{Ch2C}{2$\cdot$C}{}\orMode{\hLk{2C1}{1}\;\;\hLk{2C7}{7}\;\;\hLk{2C9}{9}\;\;\hLk{2C10}{10}\;\;\hLk{2C14}{14,16}\;\;\hLk{2C15}{15}\;\;\hLk{2C17}{17}\;\;|\;\;\hLk{2C4e10}{4E:\;\;10}\;\;\hLk{2C4e14}{14,15}\;\;\hLk{2C4e16}{16}}{[1]: 15; [2]: 1, 7, 9, (4E 16); [3]: 10; [4]: (4E 10); [5]: 17, (4E 14, 15), 14, 16.}
 
-\vspace{8pt}
+\vspace{4pt}
 
 \ProblemN{\hypertarget{2C15}{15}}{
 	\TextNL{Suppose $V$ is finite-dim and $\dim V=n\geqslant 1.$}
@@ -618,16 +621,18 @@ Since $\forall m\in\Nbp,S\Par{m}\Rightarrow S\Par{m+2}.$ We have \;$\hMath[0pt]{
 
 \ProblemN{\hypertarget{2C17}{17}}{
 	\TextNL{Suppose $V_{\!1},V_{\!2},V_{\!3}$ are subsps of a finite-dim vecsp, then}
-	\TextNL{{\large\envFontDefault$\Dim\Par{V_{\!1}+V_{\!2}+V_{\!3}}=\dim V_{\!1}+\dim V_{\!2}+\dim V_{\!3}$\par\rightline{$-\Dim\Par{V_{\!1}\cap V_{\!2}}-\Dim\Par{V_{\!1}\cap V_{\!3}}-\Dim\Par{V_{\!2}\cap V_{\!3}}+\Dim\Par{V_{\!1}\cap V_{\!2}\cap V_{\!3}}$.\qquad}}}
+	\TextNL{{\large\envFontDefault$\Dim\Par{V_{\!1}+V_{\!2}+V_{\!3}}=\dim V_{\!1}+\dim V_{\!2}+\dim V_{\!3}$\par\rightline{${}-\Dim\Par{V_{\!1}\cap V_{\!2}}-\Dim\Par{V_{\!1}\cap V_{\!3}}-\Dim\Par{V_{\!2}\cap V_{\!3}}+\Dim\Par{V_{\!1}\cap V_{\!2}\cap V_{\!3}}$.\qquad}}}
 	\TextNL{Explain why you might think and prove the formula above or give a counterexample.}
 }\par\quad
 \Sbra[3pt]{{\tgsl Similar to}} \;Given three sets $A,B$ and $C$.\par\quad
-Because $\cMid{X+Y}=\cMid{X}+\cMid{Y}-\cMid{X\cap Y};\,\,\,\Par{X\cup Y}\cap Z=\Par{X\cap Z}\cup\Par{Y\cap Z}$.\par\quad
-Now $\cMid{\Par{A\cup B}\cup C}=\cMid{A\cup B}+\cMid{C}-\cMid{\Par{A\cup B}\cap C}.$\par\quad
-And $\cMid{\Par{A\cup B}\cap C}=\cMid{\Par{A\cap C}\cup\Par{B\cap C}}=\cMid{A\cap C}+\cMid{B\cap C}-\cMid{A\cap B\cap C}.$\par\quad
-Hence $\cMid{\Par{A\cup B}\cup C}=\cMid{A}+\cMid{B}+\cMid{C}+\cMid{A\cap B\cap C}-\cMid{A\cap B}-\cMid{A\cap C}-\cMid{B\cap C}.$\par\vspace{4pt}\quad
-Because $\Par{V_{\!1}+V_{\!2}}+V_{\!3}=V_{\!1}+\Par{V_{\!2}+V_{\!3}}=\Par{V_{\!1}+V_{\!3}}+V_{\!2}.$\vspace{-6pt}\par\quad
-\AlignEq{\hspace{10pt}}{\Dim\Par{V_{\!1}+V_{\!2}+V_{\!3}}&=\Dim\Par{V_{\!1}+V_{\!2}}+\Dim\Par{V_{\!3}}-\Dim\BigPar{\Par{V_{\!1}+V_{\!2}}\cap V_{\!3}}\quad(1)\hspace{114pt}\\&=\Dim\Par{V_{\!2}+V_{\!3}}+\Dim\Par{V_{\!1}}-\Dim\BigPar{\Par{V_{\!2}+V_{\!3}}\cap V_{\!1}}\quad(2)\\&=\Dim\Par{V_{\!1}+V_{\!3}}+\Dim\Par{V_{\!2}}-\Dim\BigPar{\Par{V_{\!1}+V_{\!3}}\cap V_{\!2}}\quad(3)}\par\quad
+Because \;\;$\cMid{X\cup Y}=\cMid{X}+\cMid{Y}-\cMid{X\cap Y};\,\,\,\Par{X\cup Y}\cap Z=\Par{X\cap Z}\cup\Par{Y\cap Z}$.\par\quad
+Now \qquad$\cMid{\Par{A\cup B}\cup C}=\cMid{A\cup B}+\cMid{C}-\cMid{\Par{A\cup B}\cap C}.$\par\quad
+And \qquad\,$\cMid{\Par{A\cup B}\cap C}=\cMid{\Par{A\cap C}\cup\Par{B\cap C}}=\cMid{A\cap C}+\cMid{B\cap C}-\cMid{A\cap B\cap C}.$\par\quad
+Hence \quad\;$\cMid{\Par{A\cup B}\cup C}=\cMid{A}+\cMid{B}+\cMid{C}+\cMid{A\cap B\cap C}-\cMid{A\cap B}-\cMid{A\cap C}-\cMid{B\cap C}.$\par\vspace{4pt}\quad
+Note that $\Par{V_{\!1}+V_{\!2}}+V_{\!3}=V_{\!1}+\Par{V_{\!2}+V_{\!3}}=\Par{V_{\!1}+V_{\!3}}+V_{\!2}.$\par\quad
+$\Dim\Par{V_{\!1}+V_{\!2}+V_{\!3}}=\Dim\Par{V_{\!1}+V_{\!2}}+\Dim\Par{V_{\!3}}-\Dim\BigPar{\Par{V_{\!1}+V_{\!2}}\cap V_{\!3}}\quad(1)\hspace{114pt}$\par\quad
+$\Blind{\Dim\Par{V_{\!1}+V_{\!2}+V_{\!3}}}=\Dim\Par{V_{\!2}+V_{\!3}}+\Dim\Par{V_{\!1}}-\Dim\BigPar{\Par{V_{\!2}+V_{\!3}}\cap V_{\!1}}\quad(2)$\par\quad
+$\Blind{\Dim\Par{V_{\!1}+V_{\!2}+V_{\!3}}}=\Dim\Par{V_{\!1}+V_{\!3}}+\Dim\Par{V_{\!2}}-\Dim\BigPar{\Par{V_{\!1}+V_{\!3}}\cap V_{\!2}}\quad(3).$\par\vspace{2pt}\quad
 Notice that in general, $\Par{X+Y}\cap Z\neq X\cap Z+Y\cap Z$.\par\quad
 For example, $X=\Bra{\Par{x,0}\in\Rbb^2:x\in\Rbb},Y=\Bra{\Par{0,y}\in\Rbb^2:y\in\Rbb},Z=\Bra{\Par{z,z}\in\Rbb^2:z\in\Rbb}.$\vspace{8pt}\par
 \BulletPointX\Corollary \,\,\,\Largesl{Suppose $V_{\!1},V_{\!2}$ and $V_{\!3}$ are finite-dim vecsps, then} {\small $\Frac{\Par{1}+\Par{2}+\Par{3}}{3}:$
@@ -673,23 +678,23 @@ $}\Longleftrightarrow T\Par{v+\lambda u}=Tv+\lambda Tu.$\vspace{-10pt}
 
 \ProblemBnoor{\hypertarget{3B4e33}{9.A.2,6 \OR 4E 3.B.33}}{
 	\TextB{Suppose that $V,W$ are on $\Rbb,$ and $T\in\Lm{V,W}.$ Show that}
-	{\tgnr\large(a)} $T_\Cbb\in\Lm{V_\Cbb,W_\Cbb}.$ \;{\tgnr\large(b)} $\null\Par{T_\Cbb}=\BigPar{\null T}{_\Cbb},\range\Par{T_\Cbb}=\BigPar{\range T}{_\Cbb}.$ \;{\tgnr\large(c)} $T_{\Cbb}$ is inv $\Longleftrightarrow T$ is inv.\TextB{}
-}{\normalsize\envFontSmall(a) $T_\Cbb\BigPar{\Par{u_1+\i v_1}+\Par{x+\i y}\Par{u_2+\i v_2}}=T\Par{u_1+xu_2-yv_2}+\i T\Par{v_1+xv_2+yu_2}$\parSol{\Ha}
-$=T_\Cbb\Par{u_1+\i v_1}+\Par{x+\i y}T_\Cbb\Par{u_2+\i v_2}.$\parSol{}
-(b) $u+\i v\in\null\Par{T_\Cbb}\Longleftrightarrow u,v\in\null T\Longleftrightarrow u+\i v\in\BigPar{\null T}{_\Cbb}.$\parSol{\Hb}
-$w+\i x\in\range\Par{T_\Cbb}\Longleftrightarrow w,x\in\range T\Longleftrightarrow w+\i x\in\BigPar{\range T}{_\Cbb}.$\parSol{}
-(c) $\forall w,x\in W,\exists\,!\,u,v\in V,T_\Cbb\Par{u+\i v}=w+\i x\Longleftrightarrow Tu=w,Tv=x.$ \Or By (b).}\large\PfEnd
+	{\tgnr\large(a)} $T_{\!\Cbb}\in\Lm{V_{\!\Cbb},W_{\!\Cbb}}.$ \;{\tgnr\large(b)} $\null\Par{T_{\!\Cbb}}=\BigPar{\null T}{_\Cbb},\range\Par{T_{\!\Cbb}}=\BigPar{\range T}{_\Cbb}.$ \;{\tgnr\large(c)} $T_{\!\Cbb}$ is inv $\Longleftrightarrow T$ is inv.\TextB{}
+}{\normalsize\envFontSmall(a) $T_{\!\Cbb}\BigPar{\Par{u_1+\i v_1}+\Par{x+\i y}\Par{u_2+\i v_2}}=T\Par{u_1+xu_2-yv_2}+\i T\Par{v_1+xv_2+yu_2}$\parSol{\Ha}
+$=T_{\!\Cbb}\Par{u_1+\i v_1}+\Par{x+\i y}T_{\!\Cbb}\Par{u_2+\i v_2}.$\parSol{}
+(b) $u+\i v\in\null\Par{T_{\!\Cbb}}\Longleftrightarrow u,v\in\null T\Longleftrightarrow u+\i v\in\BigPar{\null T}{_\Cbb}.$\parSol{\Hb}
+$w+\i x\in\range\Par{T_{\!\Cbb}}\Longleftrightarrow w,x\in\range T\Longleftrightarrow w+\i x\in\BigPar{\range T}{_\Cbb}.$\parSol{}
+(c) $\forall w,x\in W,\exists\,!\,u,v\in V,T_{\!\Cbb}\Par{u+\i v}=w+\i x\Longleftrightarrow Tu=w,Tv=x.$ \Or By (b).}\large\PfEnd
 \SepLine
 
 \ProblemBnoor{9.A.5}{
-	\TextB{Suppose $V$ is on $\Rbb,$ and $S,T\in\Lm{V,W}.$ Prove that $\Par{S+\lambda T}{_\Cbb}=S_\Cbb+\lambda T_\Cbb.$}
+	\TextB{Suppose $V$ is on $\Rbb,$ and $S,T\in\Lm{V,W}.$ Prove that $\Par{S+\lambda T}{_\Cbb}=S_\Cbb+\lambda T_{\!\Cbb}.$}
 }$\Par{S+\lambda T}{_\Cbb}\Par{u+\i v}=\Par{S+\lambda T}\Par{u}+\i\Par{S+\lambda T}\Par{v}$\parSol{}
-$=Su+\i Sv+\lambda\Par{Tu+\i Tv}=\Par{S_\Cbb+\lambda T_\Cbb}\Par{u+\i v}.$\PfEnd
+$=Su+\i Sv+\lambda\Par{Tu+\i Tv}=\Par{S_\Cbb+\lambda T_{\!\Cbb}}\Par{u+\i v}.$\PfEnd
 \SepLine
 
 \ProblemB{
-	\TextB{Suppose $U,V,W$ are on $\Rbb,$ $S\in\Lm{V,W},T\in\Lm{U,V}.$ Prove that $\Par{ST}{_\Cbb}=S_\Cbb T_\Cbb.$}
-}$\forall u+\i x\in U_\Cbb,\Par{ST}{_\Cbb}\Par{u+\i x}=STu+\i STx=S_\Cbb\Par{Tu+\i Tx}=\Par{S_\Cbb T_\Cbb}\Par{u+\i x}.$\PfEnd
+	\TextB{Suppose $U,V,W$ are on $\Rbb,$ $S\in\Lm{V,W},T\in\Lm{U,V}.$ Prove that $\Par{ST}{_\Cbb}=S_\Cbb T_{\!\Cbb}.$}
+}$\forall u+\i x\in U_{\Cbb},\Par{ST}{_\Cbb}\Par{u+\i x}=STu+\i STx=S_\Cbb\Par{Tu+\i Tx}=\Par{S_\Cbb T_{\!\Cbb}}\Par{u+\i x}.$\PfEnd
 \SepLine
 
 %\BulletPointX\TipsN{3} \,\,\,Several error-prone ways of defining $T\in\Lm{V,W}.$\TextB{}
@@ -1305,19 +1310,24 @@ Let $U=\Span{Pv_1,\dots,Pv_n}\Rightarrow V=U\oplus\null P^2.$ \;While $U=\range 
 }\vspace{4pt}\par
 \SepLine
 
-\BulletPointX\NoteForSmall{[3.47]}\,\, $\BigPar{AC}{_{j,k}}=\sum_{r=1}^n A_{j,r}C_{r,k}=\sum_{r=1}^n \BigPar{A_{j,\cdot}}_{1,r}\BigPar{C_{\cdot,k}}_{r,1}=\BigPar{A_{j,\cdot}C_{\cdot,k}}_{1,1}=A_{j,\cdot}C_{\cdot,k}.$\PfEnd\vspace{6pt}
-\BulletPointX\NoteForSmall{[3.49]} $\XSbra{\BigPar{AC}_{\cdot,k}}_{j,1}=\BigPar{AC}_{j,k}=\sum_{r=1}^n A_{j,r}C_{r,k}=\sum_{r=1}^n A_{j,r}\BigPar{C_{\cdot,k}}_{r,1}=\BigPar{AC_{\cdot,k}}_{j,1}$\PfEnd\vspace{6pt}
-\BulletPointX\Exercise{\hypertarget{3C10}{10}} $\XSbra{\BigPar{AC}_{j,\cdot}}_{1,k}=\BigPar{AC}_{j,k}=\sum_{r=1}^n A_{j,r}C_{r,k}=\sum_{r=1}^n \BigPar{A_{j,\cdot}}_{1,r}C_{r,k}=\BigPar{A_{j,\cdot}C}_{1,k}$\PfEnd
+\BulletPointX\NoteForSmall{[3.47]}\,\, $\BigPar{AC}{_{j,k}}=\sum_{r=1}^n A_{j,r}C_{r,k}=\sum_{r=1}^n \BigPar{A_{j,\cdot}}_{1,r}\BigPar{C_{\cdot,k}}_{r,1}=\BigPar{A_{j,\cdot}C_{\cdot,k}}_{1,1}=A_{j,\cdot}C_{\cdot,k}$\PfEnd\vspace{6pt}
+\BulletPointX\NoteForSmall{[3.49]} $\envFontLarge\Sbra{\envFontDefault\BigPar{AC}_{\cdot,k}\envFontLarge}_{j,1}=\BigPar{AC}_{j,k}=\sum_{r=1}^n A_{j,r}C_{r,k}=\sum_{r=1}^n A_{j,r}\BigPar{C_{\cdot,k}}_{r,1}=\BigPar{AC_{\cdot,k}}_{j,1}$\PfEnd\vspace{6pt}
+\BulletPointX\Exercise{\hypertarget{3C10}{10}}\qquad\hspace{5pt}$\envFontLarge\Sbra{\envFontDefault\BigPar{AC}_{j,\cdot}\envFontLarge}_{1,k}=\BigPar{AC}_{j,k}=\sum_{r=1}^n A_{j,r}C_{r,k}=\sum_{r=1}^n \BigPar{A_{j,\cdot}}_{1,r}C_{r,k}=\BigPar{A_{j,\cdot}C}_{1,k}$\PfEnd\vspace{6pt}
+\Comment \,\,\,For [3.49], let $B_U=\Par{u_1,\dots,u_p},B_V=\Par{v_1,\dots,v_n},B_W=\Par{w_1,\dots,w_m}.$\vspace{2pt}\parCom
+And $C=\Mt{T,B_U,B_V}\in\Fbb^{n,p},A=\Mt{S,B_V,B_W}\in\Fbb^{m,n}.$\vspace{2pt}\parCom
+Then $\Mt{Tu_k,B_V}=C_{\cdot,k}\Rightarrow\Mt[\BigPar]{S\Par{Tu_k},B_W}=AC_{\cdot,k},$ 又 $\Mt[\envFontLarge\BigPar]{\envFontDefault\Par{ST}\Par{u_k},B_W\envFontLarge}=\Par{AC}{_{\cdot,k}}$\PfEnd
 \SepLine
 
 \BulletPointX\NoteForSmall{\hypertarget{3C9}{}[3.52]}\quad $A\in\Fbb^{m,n},c\in\Fbb^{n,1}\Rightarrow Ac\in\Fbb^{m,1}$\vspace{2pt}\par\quad
-$\because\BigPar{Ac}_{j,1}=\sum_{r=1}^n A_{j,r}c_{r,1}=\XSbra{\sum_{r=1}^n\BigPar{A_{\cdot,r}c_{r,1}}}{_{j,1}}=\BigPar{c_1 A_{\cdot,1}+\dots+c_n A_{\cdot,n}}_{j,1}$\vspace{3pt}\par\quad
-$\therefore\,Ac=A_{\cdot,\cdot}c_{\cdot,1}=\sum_{r=1}^n A_{\cdot,r}c_{r,1}=c_1 A_{\cdot,1}+\dots+c_n A_{\cdot,n}$\quad \Or By $\BigPar{Ac}_{\cdot,1}=Ac_{\cdot,1}$ Using [4E 3.51(a)].\PfEnd
+$\because\BigPar{Ac}_{j,1}=\sum_{r=1}^n A_{j,r}c_{r,1}=\envFontLarge\Sbra{\envFontDefault\sum_{r=1}^n\BigPar{A_{\cdot,r}c_{r,1}}\envFontLarge}_{j,1}=\BigPar{c_1 A_{\cdot,1}+\dots+c_n A_{\cdot,n}}_{j,1}$\vspace{3pt}\par\quad
+$\therefore\,Ac=A_{\cdot,\cdot}c_{\cdot,1}=\sum_{r=1}^n A_{\cdot,r}c_{r,1}=c_1 A_{\cdot,1}+\dots+c_n A_{\cdot,n}$\quad \Or By $\BigPar{Ac}{_{\cdot,1}}=Ac_{\cdot,1}$ Using [4E 3.51(a)].\PfEnd\vspace{6pt}\quad
+\Or Let $B_V=\Par{v_1,\dots,v_n},c=\Mt{v,B_V},A=\Mt{T,B_V,B_W}.$\par\vspace{-6pt}\quad
+\Blind{\Or}$Ac=\Mt{Tv,B_W}=\Mt[\BigPar]{T\Par{c_1v_1+\dots+c_nv_n},B_W}=c_1{\small\begin{pmatrix}A_{1,1}\\[-2pt]\vdots\\[-6pt]A_{m,1}\end{pmatrix}}+\dots+c_n{\small\begin{pmatrix}A_{1,n}\\[-2pt]\vdots\\[-6pt]A_{m,n}\end{pmatrix}}.$\PfEnd
 \SepLine
 
 \BulletPointX\Exercise{\hypertarget{3C11}{11}}\quad$a\in\Fbb^{1,n},C\in\Fbb^{n,p}\Rightarrow aC\in\Fbb^{1,p}$\vspace{2pt}\par\quad
-$\because\BigPar{aC}_{1,k}=\sum_{r=1}^n a_{1,r}C_{r,k}=\XSbra{\sum_{r=1}^n a_{1,r}\BigPar{C_{r,\cdot}}}{_{1,k}}=\BigPar{a_1 C_{1,\cdot}+\dots+a_n C_{n,\cdot}}_{1,k}$\vspace{3pt}\par\quad
-$\therefore\,aC=a_{1,\cdot}C_{\cdot,\cdot}=\sum_{r=1}^n a_{1,r}C_{r,\cdot}=a_1 C_{1,\cdot}+\dots+a_n C_{n,\cdot}$\quad \Or By $\BigPar{aC}_{1,\cdot}=a_{1,\cdot}C$. Using [4E 3.51(b)].\PfEnd
+$\because\BigPar{aC}_{1,k}=\sum_{r=1}^n a_{1,r}C_{r,k}=\envFontLarge\Sbra{\envFontDefault\sum_{r=1}^n a_{1,r}\BigPar{C_{r,\cdot}}\envFontLarge}_{1,k}=\BigPar{a_1 C_{1,\cdot}+\dots+a_n C_{n,\cdot}}_{1,k}$\vspace{3pt}\par\quad
+$\therefore\,aC=a_{1,\cdot}C_{\cdot,\cdot}=\sum_{r=1}^n a_{1,r}C_{r,\cdot}=a_1 C_{1,\cdot}+\dots+a_n C_{n,\cdot}$\quad \Or By $\BigPar{aC}{_{1,\cdot}}=a_{1,\cdot}C$. Using [4E 3.51(b)].\PfEnd
 \SepLine
 
 \ProblemBnoor[]{4E 3.51}[\Sbra]{
@@ -1358,7 +1368,7 @@ $A_{j,\cdot}=C_{j,1}R_{1,\cdot}+\dots+C_{j,r}R_{r,\cdot}=\BigPar{CR}_{j,\cdot}\;
 For each $A_{j,\cdot}\in S_r,\;A_{j,\cdot}=\BigPar{CR}{_{j,\cdot}}=C_{j,\cdot}R=C_{j,1}R_{1,\cdot}+\dots+C_{j,c}R_{c,\cdot}$\TextB{}
 For each $A_{\cdot,k}\in S_c,\;A_{\cdot,k}=\BigPar{CR}{_{\cdot,k}}=CR_{\cdot,k}=R_{1,k}C_{\cdot,1}+\dots+R_{c,k}C_{\cdot,c}$\TextB{}
 $\Rightarrow\Span[\BigPar]{A_{1,\cdot},\dots,A_{n,\cdot}}=S_r=\Span[\BigPar]{R_{1,\cdot},\dots,R_{c,\cdot}}\Rightarrow\dim S_r=r\leqslant c=\dim S_c.$\TextB{}
-$\Rightarrow\Span[\BigPar]{A_{\cdot,1},\dots,A_{\cdot,m}}=S_r=\Span[\BigPar]{C_{\cdot,1},\dots,C_{\cdot,r}}\Rightarrow\dim S_c=c\leqslant r=\dim S_r.$\TextB{}
+$\Rightarrow\Span[\BigPar]{A_{\cdot,1},\dots,A_{\cdot,m}}=S_c=\Span[\BigPar]{C_{\cdot,1},\dots,C_{\cdot,r}}\Rightarrow\dim S_c=c\leqslant r=\dim S_r.$\TextB{}
 \Or Apply the result to $A^t\in\Fbb^{n,m}\Rightarrow\dim S_r^t=\dim S_c=c\leqslant r=\dim S_r=\dim S_c^t.$\PfEnd
 \SepLine
 
@@ -1438,7 +1448,7 @@ Thus there are at most $\Par{n-1}$ nonzero vecs in $Tv_{1},\dots,Tv_n.$\par\quad
 \ProblemN{\hypertarget{3C5}{5}}{
 	\TextN{Suppose $B_W=\Par{w_1,\dots,w_n}$ and $V$ is finite-dim. Suppose $T\in\Lm{V,W}$.\vspace{2pt}}
 	\TextN{Prove that $\exists\,B_V=\Par{v_1,\dots,v_m},\;\Mt[\BigPar]{T,B_V,B_W}_{1,\cdot}=\begin{pmatrix}0&\cdots&0\end{pmatrix}$ or $\begin{pmatrix}1&0&\cdots&0\end{pmatrix}$.}
-}See also in (3.F).\par\quad
+}See also in (3.F).\par\quad%TODO
 Let $\Par{u_1,\dots,u_n}$ be a basis of $V$. Denote $\Mt[\BigPar]{T,\Par{u_1,\dots,u_n},B_W}$ by $A.$\par\quad
 If $A_{1,\cdot}=0,$ then $B_V=\Par{u_1,\dots,u_n}$ and we are done. Otherwise, suppose $A_{1,k}\neq 0.$\vspace{2pt}\par\quad
 Let $v_1=\Frac{u_k}{A_{1,k}},$ so that  $Tv_1=1w_1+\Frac{A_{2,k}}{A_{1,k}}w_2+\dots+\Frac{A_{n,k}}{A_{1,k}}w_n.$\vspace{6pt}\par\quad
