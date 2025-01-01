@@ -70,6 +70,10 @@ Because $\forall v\in U\cap W,\exists\,!\,\Par{u,w}\in U\times W,v=u+w.$\TextB{}
 If $U\cap W\neq\zeroSubs,$ then $\Par{u,w}$ can be $\Par{v,0}$ or $\Par{0,v},$ contradicts the uniqnes.\PfEnd\vspace{-2pt}
 \SepLine
 
+\BulletPointX\Tips \,\,\,Suppose $U,W\subseteq V.$ And $U,W,V$ are vecsps $\Rightarrow U,W$ are subsps of $V.$\TextB{}
+\IndentTips{}Then $U+W$ is also a subsp of $V.$ Because $\forall u\in U,w\in U,u+w\in V$ since $u,w\in V.$
+\SepLine
+
 \ProblemN{\hypertarget{1C7}{7}}{
 	\TextN{Give a nonempty $U\subseteq\Rbb^2,$}
 	\TextN{$U$ is closed under taking add invs and under add, but is not a subsp of $\Rbb^2.$}
@@ -95,11 +99,10 @@ $[\text{\tgbf{II}}]: \cos x+2\sin\sqrt{2}x=\cos\Par{x+p}+2\envFontLarge\sin\BigP
 $\MathRightBrace{r}{
 	[\text{\tgbf{II}}]-[\text{\tgbf{I}}]\,:\;\;\sin\sqrt{2}x=\sin{\envFontLarge\BigPar{\sqrt{2}x+\sqrt{2}p}}\vspace{2pt}\\ 
 	2[\text{\tgbf{I}}]-[\text{\tgbf{II}}]:\qquad\qquad\hspace{-1pt} \cos x=\cos\Par{x+p}}\Rightarrow$ Let $x=0,$\;\,$ p=\Frac{m\pi}{\sqrt{2}}=2k\pi.$\; Contradicts.\PfEnd\vspace{4pt}\par
-\SepLine[6pt]
+\SepLine
 
 \BulletPointX\Largesl{Suppose $U,W,V_{\!1},V_{\!2},V_{\!3}$ are subsps of $V.$}\par
-\Onumber{\hypertarget{1C15}{15}}\quad{$U+U\ni u+w\in U.$}\PfEnd
-\Onumber{\hypertarget{1C16}{16}}\quad{$U+W\ni u+w=w+u\in W+U.$}\PfEnd
+\Onumber{\hypertarget{1C15}{15}}\quad{$U+U\ni u+w\in U.$} \qquad \Onumber{\hypertarget{1C16}{16}}\quad{$U+W\ni u+w=w+u\in W+U.$}\PfEnd
 \Onumber{\hypertarget{1C17}{17}}\quad{$\Par{V_{\!1}+V_{\!2}}+V_{\!3}\ni\Par{v_1+v_2}+v_3=v_1+\Par{v_2+v_3}\in V_{\!1}+\Par{V_{\!2}+V_{\!3}}.$}\PfEnd
 \BulletPointX{ \quad}{$\Par{U+W}_{\Cbb}\ni \Par{u_1+w_1}+\i\Par{u_2+w_2}=\Par{u_1+\i u_2}+\Par{w_1+\i w_2}\in U_\Cbb+W_{\!\Cbb}.$}\PfEnd
 \SepLine
@@ -115,9 +118,8 @@ Note that $U+W\supseteq U,W\Rightarrow \Omega\supseteq U,W$. Thus $U=W=\Omega=\z
 
 \ProblemN{\hypertarget{1C11}{11}}{
 	\TextNL{Prove that the intersection of every collection of subsps of $V$ is a subsp of $V$.}
-}\par\quad
-Suppose $\Bra{U_{\alpha}}{_{\alpha\in\Gamma}}$ is a collection of subsps of $V$; here $\Gamma$ is an arbitrary index set.\vspace{4pt}\par\quad
-We show that $\bigcap_{\alpha\in\Gamma}U_\alpha,$ which equals the set of vecs that are in $U_\alpha$ for each $\alpha\in\Gamma$, is a subsp of $V$.\par\vspace{6pt}\,
+}Suppose $\Bra{U_{\alpha}}{_{\alpha\in\Gamma}}$ is a collection of subsps of $V$; here $\Gamma$ is an index set.\vspace{2pt}\par\quad
+We show that $\bigcap_{\alpha\in\Gamma}U_\alpha,$ which equals the set of vecs that are in $U_\alpha$ for each $\alpha\in\Gamma$, is a subsp of $V$.\par\vspace{4pt}\,
 $\begin{array}{l}$
 (一) $0\in\bigcap_{\alpha\in\Gamma}U_\alpha.$ Nonempty.$\\ $
 (二) $u,v\in\bigcap_{\alpha\in\Gamma}U_\alpha\Rightarrow u+v\in U_\alpha,\,\,\forall\alpha\in\Gamma\Rightarrow u+v\in\bigcap_{\alpha\in\Gamma}U_\alpha$. Closed under add.$\\ $
@@ -219,10 +221,6 @@ Now $V_{\!1}\subseteq V_{\!2},\;U_2\subseteq U_1$ and $V_{\!1}\oplus U_1=V_{\!2}
 	Let $f_o\Par{x}=\Frac{1}{2}\Sbra{g\Par{x}-g\Par{-x}}\Longrightarrow f_o\in V_O
 	}\Rightarrow\forall g\in\Rbb^\Rbb,g\Par{x}=f_e\Par{x}+f_o\Par{x}.$\PfEnd\vspace{4pt}
 \SepLine
-
-\BulletPointX\Tips \,\,\,Suppose $U,W\subseteq V.$ And $U,W,V$ are vecsps $\Rightarrow U,W$ are subsps of $V.$\TextB{}
-\IndentTips{}Then $U+W$ is also a subsp of $V.$ Because $\forall u\in U,w\in U,u+w\in V$ since $u,w\in V.$
-\SepLine
 \ChEnd
 
 \vfill\ChDecl{Ch2A}{2$\cdot$A}{}\orMode{\hLk{2A1}{1}\;\;\hLk{2A2}{2}\;\;\hLk{2A6}{6}\;\;\hLk{2A10}{10}\;\;\hLk{2A11}{11}\;\;\hLk{2A14}{14}\;\;\hLk{2A16}{16}\;\;\hLk{2A17}{17}\;\;|\;\;\hLk{2A4e314}{4E: 3,14}}{[1]: 2; [2]: 1, 6, (4E 3, 14), 10; [3]: 11, 14, 16, 17.}
@@ -246,7 +244,7 @@ $Q\overset{2}{\Rightarrow} P:$ no scalar multi $\Rightarrow$ if $av+bw=0,$ then 
 \SepLine\pagebreak
 
 \ProblemN{\hypertarget{2A1}{1}}{
-	\TextN{Prove that [P] $\Par{v_1,v_2,v_3,v_4}$ spans $V\Longleftrightarrow\Par{v_1-v_2,v_2-v_3,v_3-v_4,v_4}$ also spans V [Q].}
+	\TextN{Prove that [P] $\Par{v_1,v_2,v_3,v_4}$ spans $V\Longleftrightarrow\BigPar{v_1-v_2,v_2-v_3,v_3-v_4,v_4}$ also spans V [Q].}
 }\par\quad
 Notice that $V=\Span{v_1,\dots,v_n}\Longleftrightarrow\forall v\in V,\exists\,a_1,\dots,a_n\in\Fbb,v=a_1v_1+\dots+a_nv_n.$\par\quad
 Assume that $\forall v\in V,\exists\,a_1,\dots,a_4,b_1,\dots,b_4\in\Fbb,$ \BigPar{ that is, if $\exists\,a_i,$ then we are to find $b_i,$ vice versa }$\\[-6pt] $
@@ -257,7 +255,7 @@ Now we can let $b_i=\sum_{r=1}^i a_r$ if we are to prove $Q$ with $P$ already as
 
 \ProblemN{\hypertarget{2A6}{6}}{
 	\TextN{Prove that [P] $\Par{v_1,v_2,v_3,v_4}$ is linely inde}
-	\TextN{\Blind{Prove that} $\Longleftrightarrow\Par{v_1-v_2,v_2-v_3,v_3-v_4,v_4}$ is linely inde. [Q]\vspace{-6pt}}
+	\TextN{\Blind{Prove that} $\Longleftrightarrow\BigPar{v_1-v_2,v_2-v_3,v_3-v_4,v_4}$ is linely inde. [Q]\vspace{-6pt}}
 }\vspace{10pt}\AlignEq{}{P\Rightarrow Q:\;&a_1\Par{v_1-v_2}+a_2\Par{v_2-v_3}+a_3\Par{v_3-v_4}+a_4 v_4=0\\[-2pt]\Rightarrow\;&a_1 v_1+\Par{a_2-a_1}v_2+\Par{a_3-a_2}v_3+\Par{a_4-a_3}v_4=0\Rightarrow a_1=a_2-a_1=a_3-a_2=a_4-a_3=0\\Q\Rightarrow P:\;&a_1 v_1+a_2 v_2+a_3 v_3+a_4 v_4=0\\[-2pt]\Rightarrow\;&a_1\Par{v_1-v_2}+\Par{a_1+a_2}\Par{v_2-v_3}+\Par{a_1+a_2+a_3}\Par{v_3-v_4}+\Par{a_1+\dots+a_4}v_4=0\\[-2pt]\Rightarrow\;&a_1=a_1+a_2=a_1+a_2+a_3=a_1+\dots+a_4=0.}\PfEnd[-30pt]
 \SepLine
 
@@ -345,14 +343,13 @@ As shown above,  $z\not\in\Span{p_0,p_1,\dots,p_m}.$ And hence by [2.21](a), $\P
 \ProblemN{\hypertarget{2B7}{7}}{
 	\TextN{Prove or give a counterexample\hspace{1pt}$:$ If $\Par{v_1,v_2,v_3,v_4}$ is a basis of $V$ and $U$ is a subsp of $V$}
 	\TextN{such that $v_1,v_2\in U$ and $v_3\not\in U$ and $v_4\not\in U$, then $\Par{v_1,v_2}$ is a basis of U.}
-}A counterexample\hspace{1pt}$:$\par\quad
-Let $V=\Rbb^4$ and $e_j$ be the $j^\text{th}$ std basis.\par\quad
+}A counterexample\hspace{1pt}: Let $V=\Rbb^4$ and $B_V=\Par{e_1,e_2,e_3,e_4}$ be std basis.\par\quad
 Let $v_1=e_1,v_2=e_2,v_3=e_3+e_4,v_4=e_4.$ Then $\Par{v_1,\dots,v_4}$ is a basis of $\Rbb^4.$\par\quad
 Let $U=\Span{e_1,e_2,e_3}=\Span{v_1,v_2,v_3-v_4}.$ Then $v_3\not\in U$ and $\Par{v_1,v_2}$ is not a basis of $U.$\PfEnd\SepLine
 
 \BulletPointX\NoteForSmall{\Large $“\complement_V U \cup \zeroSubs”$}\;\;$“\complement_V U \cup \zeroSubs”$ is supposed to be a subsp $W$ such that $V=U\oplus W$.\TextB{\vspace{4pt}}
 But if we let $u\in U\nonzero$ and $w\in W\nonzero$, then $\MathRightBrace{l}{w\in\complement_V U \cup \zeroSubs\\ u\pm w\in\complement_V U \cup \zeroSubs }\Rightarrow u\in\complement_V U \cup \zeroSubs.$ Contradicts.\vspace{4pt}\TextB{}
-To fix this, {\Large\envFontLarge denote the set $\Bra{W_1,W_2,\cdots}$ by $\mathcal{S}_V U$,} {\small where for each $W_i,V=U\oplus W_i$. See also in (1.C.23).}\par\SepLine
+To fix this, {\Large\envFontLarge denote the set $\Bra{W_1,W_2,\cdots}$ by $\mathcal{S}_V U$,} {\small where for each $W_i,V=U\oplus W_i$.} {\normalsize See also in (1.C.23).}\par\SepLine
 
 \ProblemB[]{
 	\Tips \,\,\,\TextB{Suppose $V$ is finite-dim with $\dim V=n$ and $U$ is a subsp of $V$ with $U\neq V.$}
@@ -375,7 +372,7 @@ Because $V$ is finite-dim, this process will stop after $n$ steps.\PfEnd\vspace{
 	\TextN{Find all vecsps on whatever $\Fbb$ that have exactly one basis.}
 }The trivial vecsp $\zeroSubs$ will do. Indeed, the only basis of $\zeroSubs$ is the empty list $\Par{\,}$.\parSol{}
 Now consider a field containing only the add identity $0$ and the multi identity $1$,\parSol{}
-and $1+1=0.$ Hence the vecsp $\Bra{0,1}$ will do, the list $\Par{1}$ is the unique basis.\parSol{}
+and $1+1=0.$ Then the list $\Par{1}$ is the unique basis. Now the vecsp $\Bra{0,1}$ will do.\parSol{}
 \Comment \,\,\,All vecsp on such $\Fbb$ of dim $1$ will do.\parSol{}
 And more generally, consider $\Fbb=\Zbb_m,\forall m-1\in\Nbp.$ For each $s,t\in\Bra{1,\dots,m},$\parSol{}
 $\Fbb=\Span{K_s}=\Span{K_t}.$ More than one basis. So are $\Qbb,\Rbb,\Cbb$ and all vecsps on such $\Fbb.$\parSol{}
@@ -385,11 +382,11 @@ Consider other $\Fbb.$ Note that this $\Fbb$ contains at least and strictly more
 \ProblemBnoor{\hypertarget{2B4e9}{4E 9}}{
 	\TextB{Suppose $\Par{v_1,\dots,v_m}$ is a list of vecs in $V$. For $k\in\Bra{1,\dots,m}$, let $w_k=v_1+\dots+v_k.$}
 	\TextB{Show that [P] $B_V=\Par{v_1,\dots,v_m}\Longleftrightarrow B_W=\Par{w_1,\dots,w_m}.$ [Q]}
-}\par\quad
-\NOTICE that $B_U=\Par{u_1,\dots,u_n}\Longleftrightarrow\forall u\in U,\exists\,!\,a_i\in\Fbb,u=a_1 u_1+\dots+a_n u_n.$\par\quad
-$P\Rightarrow Q:\forall v\in V,\exists\,!\,a_i\in\Fbb,\;v=a_1 v_1+\dots+a_m v_m\Rightarrow v=b_1 w_1+\dots+b_m v_m,\exists\,!\,b_k=a_k-a_{k+1},b_m=a_m.$\vspace{2pt}\par\quad
-$Q\Rightarrow P:\forall v\in V,\exists\,!\,b_i\in\Fbb,\;v=b_1w_1+\dots+b_mw_m\Rightarrow v=a_1v_1+\dots+a_mv_m,\exists\,!\,a_k=\sum_{j=k}^m b_j.$\PfEnd
-\SepLine
+}\NOTICE that $B_U=\Par{u_1,\dots,u_n}\Longleftrightarrow\forall u\in U,\exists\,!\,a_i\in\Fbb,u=a_1 u_1+\dots+a_n u_n.$\par\quad
+$P\Rightarrow Q:\forall v\in V,\exists\,!\,a_i\in\Fbb,\;v=a_1 v_1+\dots+a_m v_m\Rightarrow v=b_1 w_1+\dots+b_m w_m,\exists\,!\,b_k=a_k-a_{k+1},b_m=a_m.$\vspace{2pt}\par\quad
+$Q\Rightarrow P:\forall v\in V,\exists\,!\,b_i\in\Fbb,\;v=b_1w_1+\dots+b_mw_m\Rightarrow v=a_1v_1+\dots+a_mv_m,\exists\,!\,a_k=\sum_{j=k}^m b_j.$\PfEnd\vspace{2pt}\quad
+\Comment \,\,\,See also ??? in (3.F).\vspace{-2pt}%TODO
+\SepLine\pagebreak
 
 \ProblemBnoor{\hypertarget{2B4e5}{4E 5}}{
 	\TextB{Suppose $U,W$ are finite-dim, $V=U+W,\;B_U=\Par{u_1,\dots,u_m},\;B_W=\Par{w_1,\dots,w_n}.$}
@@ -481,7 +478,7 @@ But $\Par{u_1,\dots,u_n}$ might not be a basis, because there might be some $u_i
 (a) Consider $B=\envFontLarge\BigPar{\envFontDefault1,\Par{z-2}\Par{z-5}\Par{z-6},z\Par{z-2}\Par{z-5}\Par{z-6}\envFontLarge}.$\par\quad\Ha
 Let $a_0+a_3\Par{z-2}\Par{z-5}\Par{z-6}+a_4z\Par{z-2}\Par{z-5}\Par{z-6}=0\Rightarrow a_0=a_3=a_4=0.$\par\quad\Ha
 Thus the list $B$ is linely inde in $U.$ Now $\dim U\geqslant 3\Rightarrow \dim U=3.$ Thus $B_U=B.$\par\vspace{2pt}\quad
-(b) Extend to a basis of $\PoF{4}$ as $\BigPar{1,z,z^2,\Par{z-2}\Par{z-5}\Par{z-6},z\Par{z-2}\Par{z-5}\Par{z-6}}.$\par\quad
+(b) Extend to a basis of $\PoF{4}$ as $\envFontLarge\BigPar{\envFontDefault 1,z,z^2,\Par{z-2}\Par{z-5}\Par{z-6},z\Par{z-2}\Par{z-5}\Par{z-6}\envFontLarge}.$\par\quad
 (c) Let $W=\Span{z,z^2}=\Bra{az+bz^2:a,b\in\Fbb}$, so that $\PoF{4}=U\oplus W.$\PfEnd
 \SepLine
 
@@ -564,9 +561,9 @@ Then $\Mt[\envFontLarge\BigPar]{\envFontDefault\xi_k,\Par{1,z,\dots,z^m},\Par{1}
 (ii) {$1\leqslant k\leqslant m-1.$ \;Assume that $\Span[\BigPar]{x^m,\dots,x^{m-k}}=\Span[\BigPar]{p_m,\dots,p_{m-k}}.$}\par\quad\Hii
 {Then $\Span[\BigPar]{p_m,\dots,p_{m-\SmallPar{k+1}}}\subseteq\Span[\BigPar]{x^m,\dots,x^{m-\SmallPar{k+1}}}.$\par}\quad\Hii
 {又 $p_{m-\SmallPar{k+1}}$ has the form $a_{m-\SmallPar{k+1},m-\SmallPar{k+1}}x^{m-\SmallPar{k+1}}+r_{m-\SmallPar{k+1}}\Par{x};\;$\par}\quad\Hii
-{\Blind{又} where the lowest term of $r_{m-\SmallPar{k+1}}\in\PoF{m}$ is of deg $\Par{m-k}.$\par}\vspace{6pt}\quad\Hii
-{$\Rightarrow x^{m-\SmallPar{k+1}}=\Frac{1}{a_{m-\SmallPar{k+1},m-\SmallPar{k+1}}}\XPar{p_{m-\SmallPar{k+1}}\Par{x}-r_{m-\SmallPar{k+1}}\Par{x}}\in\Span[\BigPar]{x^m,\dots,x^{m-k},p_{m-\SmallPar{k+1}}}$\par}\vspace{-12pt}\quad\Hii
-{\Blind{$\Rightarrow x^{m-\SmallPar{k+1}}=\Frac{1}{a_{m-\SmallPar{k+1},m-\SmallPar{k+1}}}\XPar{p_{m-\SmallPar{k+1}}\Par{x}-r_{m-\SmallPar{k+1}}\Par{x}}$}${}=\Span[\BigPar]{p_m,\dots,p_{m-k},p_{m-\SmallPar{k+1}}}.$\par}\vspace{-14pt}\quad\Hii
+{\Blind{又} where the lowest term of $r_{m-\SmallPar{k+1}}\in\PoF{m}$ is of deg $\Par{m-k}.$\par}\vspace{24pt}\quad\Hii
+{\Blind{$\Rightarrow x^{m-\SmallPar{k+1}}=\Frac{}{a_{m-\SmallPar{k+1},m-\SmallPar{k+1}}}\XPar{p_{m-\SmallPar{k+1}}\Par{x}-r_{m-\SmallPar{k+1}}\Par{x}}$}${}=\Span[\BigPar]{p_m,\dots,p_{m-k},p_{m-\SmallPar{k+1}}}.$\par}\vspace{-50pt}\quad\Hii
+{$\Rightarrow x^{m-\SmallPar{k+1}}=\Frac{1}{a_{m-\SmallPar{k+1},m-\SmallPar{k+1}}}\XPar{p_{m-\SmallPar{k+1}}\Par{x}-r_{m-\SmallPar{k+1}}\Par{x}}\in\Span[\BigPar]{x^m,\dots,x^{m-k},p_{m-\SmallPar{k+1}}}$\par}\vspace{4pt}\quad\Hii
 {$\therefore\;x^{m-\SmallPar{k+1}}\in\Span[\BigPar]{p_m,\dots,p_{m-k},p_{m-\SmallPar{k+1}}}$\par}\vspace{3pt}\quad\Hii
 {\Blind{$\therefore\;$}$\Rightarrow\Span[\BigPar]{x^m,\dots,x^{m-k},x^{m-\SmallPar{k+1}}}\subseteq\Span[\BigPar]{p_m,\dots,p_{m-k},p_{m-\SmallPar{k+1}}}.$\par}\vspace{3pt}\quad
 {Thus $\PoF{m}=\Span[\BigPar]{x^m,\dots,x,1}=\Span[\BigPar]{p_m,\dots,p_1,p_0}.$}\PfEnd\vspace{8pt}\quad
@@ -596,7 +593,8 @@ So $z^0$ doesn't make sense at all.
 Note that each $p_k\Par{x}={\sum_{j=0}^{m-k}\mathC_{m-k}^j\Par{-1}{^{j}}\cdot x^{j+k}\cdot 1^j}=\underset{\text{of deg k}}{\uline{\Par{-1}{^0}\cdot x^k\cdot 1^0}}+\underset{\text{of deg m; denote it by }q_k\SmallPar{x}}{\uline{\sum_{j=1}^{m-k}\mathC_{m-k}^j\Par{-1}{^{j}}\cdot x^{j+k}\cdot 1^j}}.$\vspace{-12pt}\par\quad
 And, each $q_k\in\Span{x^{k+1},\dots,x^m}.$ Using {\TIPS} above.\PfEnd\vspace{6pt}\quad
 \Or Similar to the {\TIPS} above. We will recursively prove that each $x^{m-k}\in\Span{p_m,\dots,p_{m-k}}.$\par\quad
-(i) $k=0,1.$ \;$p_m\Par{x}=x^m;\;p_{m-1}\Par{x}=x^{m-1}-x^m\Longrightarrow x^{m-1}.$ Now $x^m\in\Span{p_m},x^{m-1}\in\Span{p_{m-1},p_m}.$\vspace{2pt}\par\quad\Endi
+(i) $k=0.$ \;$p_m\Par{x}=x^m\in\Span{p_m};$\par\quad\Hi
+$k=1.$ \;$p_{m-1}\Par{x}=x^{m-1}-x^m\Rightarrow x^{m-1}=p_m\Par{x}+p_{m-1}\Par{x}\in\Span{p_{m-1},p_m}.$\vspace{2pt}\par\quad\Endi
 (ii) $k\in\Bra{1,\dots,m-1}.$ \;Suppose for each $k\in\Bra{0,\dots,k},$ we have $x^{m-k}\in\Span[\BigPar]{p_{m-k},\dots,p_m},\exists\,!\,a_m\in\Fbb.$\vspace{2pt}\par\quad\Hii
 Note that $x^{m-\SmallPar{k+1}}=p_{m-\SmallPar{k+1}}\Par{x}+\sum_{j=1}^{k+1}\mathC_{k+1}^j\Par{-1}{^{j+1}}x^{m-\SmallPar{k+1}+j}\in\Span[\BigPar]{p_{m-\SmallPar{k+1}},x^{m-k},\dots,x^{m}}.$\vspace{2pt}\par\quad\Hii
 Thus $x^{m-\SmallPar{k+1}}\in\Span[\BigPar]{p_{m-\SmallPar{k+1}},p_{m-k},\dots,p_m}.$\PfEnd\quad
@@ -657,11 +655,11 @@ For example, $X=\Bra{\Par{x,0}\in\Rbb^2:x\in\Rbb},Y=\Bra{\Par{0,y}\in\Rbb^2:y\in
 
 \ProblemN{\hypertarget{2C14}{14}}{
 	\TextNL{Suppose $V_{\!1},\dots,V_{\!m}$ are finite-dim. Prove that $\dim\!\Par{V_{\!1}+\dots+V_{\!m}}\leqslant\dim V_{\!1}+\dots+\dim V_{\!m}$.}
-}Choose a basis $\mathcal{E}_i$ of $V_{\!i}\Rightarrow V_{\!1}+\dots+V_{\!m}=\Span[\BigPar]{\mathcal{E}_1\cup\cdots\cup \mathcal{E}_m};\,\,\,\dim V_{\!i}=\card \mathcal{E}_i.$\par\quad
-Now $\dim\!\Par{V_{\!1}+\dots+V_{\!m}}=\dim\Span[\BigPar]{\mathcal{E}_1\cup\cdots\cup \mathcal{E}_m}\leqslant\card\hspace{-1pt}\BigPar{\mathcal{E}_1\cup\cdots\cup \mathcal{E}_m}\leqslant\card \mathcal{E}_1+\cdots+\card \mathcal{E}_m.$\par\vspace{6pt}
-\Corollary \,\,\,$V_{\!1}+\dots+V_{\!m}$ is direct $\Longleftrightarrow$ For each $k,$ $\BigPar{V_{\!1}+\dots+V_{\!k}}\cap V_{k+1}=\zeroSubs,\BigPar{\mathcal{E}_1\cap\dots\cap\mathcal{E}_{k-1}}\cap\mathcal{E}_k=\emptySet$\parCor
+}For each $V_i,$ let $B_{V_i}=\mathcal{E}_i.$ Then $V_{\!1}+\dots+V_{\!m}=\Span[\BigPar]{\mathcal{E}_1\cup\cdots\cup \mathcal{E}_m};\,\,\,\dim V_{\!i}=\card \mathcal{E}_i.$\par\quad
+Now $\dim\!\Par{V_{\!1}+\dots+V_{\!m}}=\dim\Span[\BigPar]{\mathcal{E}_1\cup\cdots\cup \mathcal{E}_m}\leqslant\card\hspace{-1pt}\BigPar{\mathcal{E}_1\cup\cdots\cup \mathcal{E}_m}\leqslant\card \mathcal{E}_1+\cdots+\card \mathcal{E}_m.$\par\vspace{4pt}
+\hypertarget{2C16}{}\Corollary \,\,\,$V_{\!1}+\dots+V_{\!m}$ is direct $\Longleftrightarrow$ For each $k,$ $\BigPar{V_{\!1}\oplus\dots\oplus V_{\!k}}\cap V_{k+1}=\zeroSubs,\BigPar{\mathcal{E}_1\cap\dots\cap\mathcal{E}_{k-1}}\cap\mathcal{E}_k=\emptySet$\parCor
 $\Longleftrightarrow\dim\Span[\BigPar]{\mathcal{E}_1\cup\dots\cup\mathcal{E}_m}=\card\hspace{-1pt}\BigPar{\mathcal{E}_1\cup\dots\cup\mathcal{E}_m}=\card\mathcal{E}_1+\dots+\card\mathcal{E}_m$\parCor
-$\Longleftrightarrow \dim\!\Par{V_{\!1}+\dots+V_{\!m}}=\dim V_{\!1}+\dots+\dim V_{\!m}.$\PfEnd
+$\Longleftrightarrow \dim\!\Par{V_{\!1}\oplus\dots\oplus V_{\!m}}=\dim V_{\!1}+\dots+\dim V_{\!m}.$\PfEnd
 \SepLine
 
 \ChEnd
