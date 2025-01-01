@@ -319,7 +319,7 @@ Thus $\Par{1,x,\dots,x^m}$ is linely inde in $\Rbb^{[0,1]}.$ Similar to [2.16], 
 	\hspace{-4pt}x-{\Frac{1}{m}},\;\;x\in\XInterval{(}{]}{\;\Frac{1}{m},\;1\;}\\
 	\hspace{-4pt}0,\hfill x\in\XSbra{\;0,\;\Frac{1}{m}\;}\end{array}\right.$\vspace{4pt}\par\quad
 Then\; $f_1\XPar{\Frac{1}{m}}=\dots=f_m\XPar{\Frac{1}{m}}=0\neq f_{m+1}\XPar{\Frac{1}{m}}.$ 
-Hence $f_{m+1}\not\in\Span{f_1,\dots,f_m}.$ By Problem (14).\PfEnd
+\;Hence $f_{m+1}\not\in\Span{f_1,\dots,f_m}.$ By Problem (14).\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{2A17}{17}}{
@@ -349,7 +349,7 @@ Let $U=\Span{e_1,e_2,e_3}=\Span{v_1,v_2,v_3-v_4}.$ Then $v_3\not\in U$ and $\Par
 
 \BulletPointX\NoteForSmall{\Large $“\complement_V U \cup \zeroSubs”$}\;\;$“\complement_V U \cup \zeroSubs”$ is supposed to be a subsp $W$ such that $V=U\oplus W$.\TextB{\vspace{4pt}}
 But if we let $u\in U\nonzero$ and $w\in W\nonzero$, then $\MathRightBrace{l}{w\in\complement_V U \cup \zeroSubs\\ u\pm w\in\complement_V U \cup \zeroSubs }\Rightarrow u\in\complement_V U \cup \zeroSubs.$ Contradicts.\vspace{4pt}\TextB{}
-To fix this, {\Large\envFontLarge denote the set $\Bra{W_1,W_2,\cdots}$ by $\mathcal{S}_V U$,} {\small where for each $W_i,V=U\oplus W_i$.} {\normalsize See also in (1.C.23).}\par\SepLine
+To fix this, {\Large\envFontLarge denote the set $\Bra{W_{\hspace{-1pt}1},W_{\hspace{-1pt}2},\cdots}$ by $\mathcal{S}_{\!V} U$,} {\small where for each $W_{\!i}\,,\,V=U\oplus W_{\!i}$\,.} {\normalsize See also in (1.C.23).}\par\SepLine
 
 \ProblemB[]{
 	\Tips \,\,\,\TextB{Suppose $V$ is finite-dim with $\dim V=n$ and $U$ is a subsp of $V$ with $U\neq V.$}
@@ -581,40 +581,49 @@ Then $\Mt[\envFontLarge\BigPar]{\envFontDefault\xi_k,\Par{1,z,\dots,z^m},\Par{1}
 If $\deg p=0,$ then $p\Par{z}=a_0\neq 0,$ but \uline{not literally $a_0z^0,$} by which if $p$ is defined, then it comes to $0^0.$\TextB{}
 To make it clear, we \uline{specify that {\tgsl in} $\PoF{},$ $a_0z^0=a_0,$ where $z^0$ appears just for notational convenience.}\TextB{}
 Because by definition, the term $a_0z^0$ in a poly only represents the const term of the poly, which is $a_0.$\TextB{}
-So $z^0$ doesn't make sense at all.
+For convenicence, we assume that $z^0=1$ in formula deduction and poly def. Absolutely without $0^0.$
 \SepLine
 
 \ProblemBnoor{\hypertarget{2C4e10}4E 10}{
 	\TextB{Suppose $m$ is a positive integer. For $0\leqslant k\leqslant m$, let $p_k\Par{x}=x^k\Par{1-x}{^{m-k}}$.}
-	\TextB{Show that $\Par{p_0,\dots,p_m}$ is a basis of $\PoF{m}$.\vspace{4pt}}
+	\TextB{Show that $\Par{p_0,\dots,p_m}$ is a basis of $\PoF{m}$.\vspace{0pt}}
 	%\TextB{{\large The basis in this exercise leads to what are called Bernstein polys. You can do a web search to learn how}}
 	%\TextB{{\large Bernstein polys are used to approximate continuous functions on $[0, 1]$.}}
-}$\MathLeftrightPare{l}{${\tgsl We may see that $0$ is not a zero of $p_0,$ and that $p_m\Par{x}=x^m,$}$\\${\tgsl by the expansion below, and by the {\NOTEFOR} [2.11] above.}$}$\vspace{6pt}\par\quad
+}{\tgsl We may see $p_0=1$ and $p_m\Par{x}=x^m,$ from the expansion below, by the {\NOTEFOR} [2.11] above.}\vspace{4pt}\par\quad
 Note that each $p_k\Par{x}={\sum_{j=0}^{m-k}\mathC_{m-k}^j\Par{-1}{^{j}}\cdot x^{j+k}\cdot 1^j}=\underset{\text{of deg k}}{\uline{\Par{-1}{^0}\cdot x^k\cdot 1^0}}+\underset{\text{of deg m; denote it by }q_k\SmallPar{x}}{\uline{\sum_{j=1}^{m-k}\mathC_{m-k}^j\Par{-1}{^{j}}\cdot x^{j+k}\cdot 1^j}}.$\vspace{-12pt}\par\quad
 And, each $q_k\in\Span{x^{k+1},\dots,x^m}.$ Using {\TIPS} above.\PfEnd\vspace{6pt}\quad
 \Or Similar to the {\TIPS} above. We will recursively prove that each $x^{m-k}\in\Span{p_m,\dots,p_{m-k}}.$\par\quad
-(i) $k=0.$ \;$p_m\Par{x}=x^m\in\Span{p_m};$\par\quad\Hi
-$k=1.$ \;$p_{m-1}\Par{x}=x^{m-1}-x^m\Rightarrow x^{m-1}=p_m\Par{x}+p_{m-1}\Par{x}\in\Span{p_{m-1},p_m}.$\vspace{2pt}\par\quad\Endi
+(i) $k=1.$ \;$p_m\Par{x}=x^m\in\Span{p_m};$ \;\; $p_{m-1}\Par{x}=x^{m-1}-x^m\Rightarrow x^{m-1}\in\Span{p_{m-1},p_m}.$\vspace{2pt}\par\quad\Endi
 (ii) $k\in\Bra{1,\dots,m-1}.$ \;Suppose for each $k\in\Bra{0,\dots,k},$ we have $x^{m-k}\in\Span[\BigPar]{p_{m-k},\dots,p_m},\exists\,!\,a_m\in\Fbb.$\vspace{2pt}\par\quad\Hii
 Note that $x^{m-\SmallPar{k+1}}=p_{m-\SmallPar{k+1}}\Par{x}+\sum_{j=1}^{k+1}\mathC_{k+1}^j\Par{-1}{^{j+1}}x^{m-\SmallPar{k+1}+j}\in\Span[\BigPar]{p_{m-\SmallPar{k+1}},x^{m-k},\dots,x^{m}}.$\vspace{2pt}\par\quad\Hii
-Thus $x^{m-\SmallPar{k+1}}\in\Span[\BigPar]{p_{m-\SmallPar{k+1}},p_{m-k},\dots,p_m}.$\PfEnd\quad
+Thus $x^{m-\SmallPar{k+1}}\in\Span[\BigPar]{p_{m-\SmallPar{k+1}},p_{m-k},\dots,p_m}.$\PfEnd\vspace{2pt}\quad
 \Comment \,\,\,The base step and the inductive step can be independent.\vspace{10pt}\par\quad
 \Or For any $m,k\in\Nbp$ such that $k\leqslant m.$ Define $p_{k,m}$ by $p_{k,m}\Par{x}=x^k\Par{1-x}{^{m-k}}.$\par\quad
 Define the statement $S\Par{m}$ by $S\Par{m}:\Par{p_{0,m},\dots,p_{m,m}}$ is linely inde \BigPar{ and therefore is a basis }.\par\quad
-We use induction on to show that $S\Par{m}$ holds for all $m\in\Nbp.$\vspace{4pt}\par\quad
-(i) $m=1.$ \;Let $a_0\Par{1-x}+a_1x=0,\forall x\in\Fbb.$ \;Then take $x=1,x=0\Rightarrow a_1=a_0=0.$\par\quad\Hi
-$m=2.$ \;Let $a_0\Par{1-x}{^2}+a_1\Par{1-x}x+a_2x^2,\forall x\in\Fbb.$ \;Then $\MathLeftBrace{l}{x=0\Rightarrow a_0+a_1=0;\\x=1\Rightarrow a_2=0;\\x=2\Rightarrow a_0+2a_1=0.}$\par\quad\Endi
-(ii) $2\leqslant m.$ \;Assume that $S\Par{m}$ holds.\vspace{2pt}\par\quad\Hii
-Suppose $\sum_{k=0}^{m+2}a_kp_{k,m+2}\Par{x}=\sum_{k=0}^{m+2}a_k\Sbra{x^k\Par{1-x}{^{m+2-k}}}=0,\forall x\in\Fbb.$\vspace{4pt}\par\quad\Hii
-\envFontLarge{\vspace{6pt}Now $a_0\Par{1-x}{^{m+2}}+\sum_{k=1}^{m+1}a_kx^k\Par{1-x}{^{m+2-k}}+a_{m+2}x^{m+2}=0,\forall x\in\Fbb.$}\par\quad\Hii
-{\vspace{6pt}While {\Large\uline{$x=0\Rightarrow a_0=0;\;x=1\Rightarrow a_{m+2}=0.$}} Then {\Large$\sum_{k=1}^{m+1}a_kx^k\Par{1-x}{^{m+2-k}}=0;$}}\par\quad\Hii
-{\vspace{6pt}And note that \Large\AlignEq{}{\\[-45pt]&\textstyle\sum_{k=1}^{m+1}a_kx^k\Par{1-x}{^{m+2-k}}\\={}&x\Par{1-x}\textstyle\sum_{k=1}^{m+1}a_kx^{k-1}\Par{1-x}{^{m+1-k}}\\={}&x\Par{1-x}\textstyle\sum_{k=0}^{m}a_{k+1}x^{k}\Par{1-x}{^{m-k}}=x\Par{1-x}\sum_{k=0}^{m}a_{k+1}p_{k,m}\Par{x}.\hspace{-40pt}}}\vspace{4pt}\par\quad\Hii
-\envFontDefault{\vspace{4pt}Hence $x\Par{1-x}\sum_{k=0}^{m}a_{k+1}p_{k,m}\Par{x}=0,\forall x\in\Fbb\Rightarrow \sum_{k=0}^{m}a_{k+1}p_{k,m}\Par{x}=0,\forall x\in\Fbb\Backslash{\def\envFont{\envFontB}\Bra{\,0,1}}.$}\par\quad\Hii
-{\vspace{4pt}Because $\sum_{k=0}^{m}a_{k+1}p_{k,m}\Par{x}$ has infinitely many zeros. We have $\sum_{k=0}^{m}a_{k+1}p_{k,m}\Par{x}=0,\forall x\in\Fbb.$}\par\quad\Hii
-{\vspace{4pt}By assumption, $a_1=\dots=a_m=a_{m+1}=0,$ while $a_0=a_{m+2}=0,$}\par\quad\Hii
-%\Blind{By ass}\vspace{4pt}and also $\;a_{m+1}=0$ \BigPar{ because $\sum_{k=0}^{m}a_{k+1}p_{k,m}\Par{x}=a_{m+1}p_{m,m}\Par{x}=a_{m+1}x^m=0,\forall x\in\Fbb.$ }\par\quad\Hii
-\vspace{6pt}Thus $\Par{p_{0,m+2},\dots,p_{m+2,m+2}}$ is linely inde and $S\Par{m+2}$ holds.\par\quad
-Since $\forall m\in\Nbp,S\Par{m}\Rightarrow S\Par{m+2}.$ We have \;$\hMath[0pt]{r}{\left|}{\right\}}{\forall k\in\Nbb,S\Par{2k+1}\text{ holds}\\\forall k\in\Nbp,S\Par{2k}\text{ holds}}\Rightarrow S\Par{m}$ holds.\PfEnd
+We use induction on to show that $S\Par{m}$ holds for all $m\in\Nbp.$\vspace{2pt}\par\quad
+(i) $m=0.$ \;$p_{0,0}=1,$ and $ap_{0,0}=0\Rightarrow a=0.$\par\quad\Hi
+$m=1.$ \;Let $a_0\Par{1-x}+a_1x=0,\forall x\in\Fbb.$ \;Then take $x=1,x=0\Rightarrow a_1=a_0=0.$\par\vspace{4pt}\quad
+%$m=2.$ \;Let $a_0\Par{1-x}{^2}+a_1\Par{1-x}x+a_2x^2=0,\forall x\in\Fbb.$ \;Then $\small\MathLeftBrace{l}{\!\!x=0\Rightarrow a_0+a_1=0;\\\!\!x=1\Rightarrow a_2=0;\\\!\!x=2\Rightarrow a_0+2a_1=0.}$\par\vspace{0pt}\quad\Endi
+(ii) $1\leqslant m.$ \;Assume that $S\Par{m}$ and $S\Par{m-1}$ holds. Now we show that $S\Par{m+1}$ holds.\vspace{2pt}\par\quad\Hii
+Suppose $\sum_{k=0}^{m+1}a_kp_{k,m+1}\Par{x}=\sum_{k=0}^{m+1}a_k\Sbra{x^k\Par{1-x}{^{m+1-k}}}=0,\forall x\in\Fbb.$\vspace{6pt}\par\quad\Hii
+\envFontLarge{Now $a_0\Par{1-x}{^{m+1}}+\sum_{k=1}^{m}a_kx^k\Par{1-x}{^{m+1-k}}+a_{m+1}x^{m+1}=0,\forall x\in\Fbb.$}\par\vspace{2pt}\quad\Hii
+While $x=0\Rightarrow a_0=0;$ \;and $x=1\Rightarrow a_{m+1}=0.$\par\vspace{2pt}\quad\Hii
+Then $0=\sum_{k=1}^{m}a_kx^k\Par{1-x}{^{m+1-k}}$\par\vspace{4pt}\quad\Hii
+\Blind{Then $0$}${}=x\Par{1-x}\sum_{k=1}^{m}a_kx^{k-1}\Par{1-x}{^{m-k}},$ {\normalsize note that} {\small\envFontSmall[\small]$ m-k=\Par{m-1}-\Par{k-1}$}\par\vspace{4pt}\quad\Hii
+\Blind{Then $0$}${}=x\Par{1-x}\textstyle\sum_{k=0}^{m-1}a_{k+1}x^{k}\Par{1-x}{^{m-1-k}}=x\Par{1-x}\sum_{k=0}^{m-1}a_{k+1}p_{k,m-1}\Par{x}.$\par\vspace{6pt}\quad\Hii
+\envFontDefault{\vspace{4pt}Hence \;$\sum_{k=0}^{m-1}a_{k+1}p_{k,m-1}\Par{x}=0,\forall x\in\Fbb\Backslash{\def\envFont{\envFontB}\Bra{\,0,1}}.$ Which has infinitely many zeros.}\par\quad\Hii
+Moreover, \;$\sum_{k=0}^{m-1}a_{k+1}p_{k,m-1}\Par{x}=0.$ By assumption, $a_1=\dots=a_{m-1}=a_{m}=0.$\par\quad\Hii
+Thus $\Par{p_{0,m+1},\dots,p_{m+1,m+1}}$ is linely inde and $S\Par{m+1}$ holds.\PfEnd
+\SepLine
+
+\ProblemN{\hypertarget{2C14}{14}}{
+	\TextNL{Suppose $V_{\!1},\dots,V_{\!m}$ are finite-dim. Prove that $\dim\!\Par{V_{\!1}+\dots+V_{\!m}}\leqslant\dim V_{\!1}+\dots+\dim V_{\!m}$.}
+}For each $V_{\!i},$ let $B_{V_{\!i}}=\mathcal{E}_i.$ Then $V_{\!1}+\dots+V_{\!m}=\Span[\BigPar]{\mathcal{E}_1\cup\cdots\cup \mathcal{E}_m};\,\,\,\dim V_{\!i}=\card \mathcal{E}_i.$\par\quad
+Now $\dim\!\Par{V_{\!1}+\dots+V_{\!m}}=\dim\Span[\BigPar]{\mathcal{E}_1\cup\cdots\cup \mathcal{E}_m}\leqslant\card\hspace{-1pt}\BigPar{\mathcal{E}_1\cup\cdots\cup \mathcal{E}_m}\leqslant\card \mathcal{E}_1+\cdots+\card \mathcal{E}_m.$\par\vspace{2pt}
+\hypertarget{2C16}{}\Corollary \,\,\,$V_{\!1}+\dots+V_{\!m}$ is direct\parCor
+$\Longleftrightarrow$ For each $k,$ $\BigPar{V_{\!1}\oplus\dots\oplus V_{\!k}}\cap V_{k+1}=\zeroSubs,\BigPar{\mathcal{E}_1\cap\dots\cap\mathcal{E}_{k-1}}\cap\mathcal{E}_k=\emptySet$\parCor
+$\Longleftrightarrow\dim\Span[\BigPar]{\mathcal{E}_1\cup\dots\cup\mathcal{E}_m}=\card\hspace{-1pt}\BigPar{\mathcal{E}_1\cup\dots\cup\mathcal{E}_m}=\card\mathcal{E}_1+\dots+\card\mathcal{E}_m$\parCor
+$\Longleftrightarrow \dim\!\Par{V_{\!1}\oplus\dots\oplus V_{\!m}}=\dim V_{\!1}+\dots+\dim V_{\!m}.$\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{2C17}{17}}{
@@ -622,7 +631,7 @@ Since $\forall m\in\Nbp,S\Par{m}\Rightarrow S\Par{m+2}.$ We have \;$\hMath[0pt]{
 	\TextNL{{\large\envFontDefault$\Dim\Par{V_{\!1}+V_{\!2}+V_{\!3}}=\dim V_{\!1}+\dim V_{\!2}+\dim V_{\!3}$\par\rightline{${}-\Dim\Par{V_{\!1}\cap V_{\!2}}-\Dim\Par{V_{\!1}\cap V_{\!3}}-\Dim\Par{V_{\!2}\cap V_{\!3}}+\Dim\Par{V_{\!1}\cap V_{\!2}\cap V_{\!3}}$.\qquad}}}
 	\TextNL{Explain why you might think and prove the formula above or give a counterexample.}
 }\par\quad
-\Sbra[3pt]{{\tgsl Similar to}} \;Given three sets $A,B$ and $C$.\par\quad
+\!\Sbra[3pt]{{\tgsl Similar to}} \;Given three sets $A,B$ and $C$.\par\quad
 Because \;\;$\cMid{X\cup Y}=\cMid{X}+\cMid{Y}-\cMid{X\cap Y};\,\,\,\Par{X\cup Y}\cap Z=\Par{X\cap Z}\cup\Par{Y\cap Z}$.\par\quad
 Now \qquad$\cMid{\Par{A\cup B}\cup C}=\cMid{A\cup B}+\cMid{C}-\cMid{\Par{A\cup B}\cap C}.$\par\quad
 And \qquad\,$\cMid{\Par{A\cup B}\cap C}=\cMid{\Par{A\cap C}\cup\Par{B\cap C}}=\cMid{A\cap C}+\cMid{B\cap C}-\cMid{A\cap B\cap C}.$\par\quad
@@ -632,7 +641,9 @@ $\Dim\Par{V_{\!1}+V_{\!2}+V_{\!3}}=\Dim\Par{V_{\!1}+V_{\!2}}+\Dim\Par{V_{\!3}}-\
 $\Blind{\Dim\Par{V_{\!1}+V_{\!2}+V_{\!3}}}=\Dim\Par{V_{\!2}+V_{\!3}}+\Dim\Par{V_{\!1}}-\Dim\BigPar{\Par{V_{\!2}+V_{\!3}}\cap V_{\!1}}\quad(2)$\par\quad
 $\Blind{\Dim\Par{V_{\!1}+V_{\!2}+V_{\!3}}}=\Dim\Par{V_{\!1}+V_{\!3}}+\Dim\Par{V_{\!2}}-\Dim\BigPar{\Par{V_{\!1}+V_{\!3}}\cap V_{\!2}}\quad(3).$\par\vspace{2pt}\quad
 Notice that in general, $\Par{X+Y}\cap Z\neq X\cap Z+Y\cap Z$.\par\quad
-For example, $X=\Bra{\Par{x,0}\in\Rbb^2:x\in\Rbb},Y=\Bra{\Par{0,y}\in\Rbb^2:y\in\Rbb},Z=\Bra{\Par{z,z}\in\Rbb^2:z\in\Rbb}.$\vspace{8pt}\par
+For example, $X=\Bra{\Par{x,0}\in\Rbb^2:x\in\Rbb},Y=\Bra{\Par{0,y}\in\Rbb^2:y\in\Rbb},Z=\Bra{\Par{z,z}\in\Rbb^2:z\in\Rbb}.$\par\vspace{2pt}\quad
+\Comment \,\,\,If $X\subseteq Y,$ then $\Par{X+Y}\cap Z=Y\cap Z;$ \;$\Dim\Par{X+Y+Z}=\Dim\Par{Y}+\Dim\Par{Z}-\Dim\Par{Y\cap Z},$\parCom\quad
+and the wrong formual above holds. Similar for $Y\subseteq Z,X\subseteq Z,$ and $X,Y\subseteq Z.$\par\vspace{8pt}
 \BulletPointX\Corollary \,\,\,\Largesl{Suppose $V_{\!1},V_{\!2}$ and $V_{\!3}$ are finite-dim vecsps, then} {\small $\Frac{\Par{1}+\Par{2}+\Par{3}}{3}:$
 }\vspace{-6pt}\par
 \AlignEq{\IndentB\,}{\Dim\Par{V_{\!1}+V_{\!2}+V_{\!3}}=\dim &\,V_{\!1}+\dim V_{\!2}+\dim V_{\!3}\\&-\Frac{\Dim\Par{V_{\!1}\cap V_{\!2}}+\Dim\Par{V_{\!1}\cap V_{\!3}}+\Dim\Par{V_{\!2}\cap V_{\!3}}}{3}\\&-\Frac{\Dim\BigPar{\Par{V_{\!1}+V_{\!2}}\cap V_{\!3}}+\Dim\BigPar{\Par{V_{\!1}+V_{\!3}}\cap V_{\!2}}+\Dim\BigPar{\Par{V_{\!2}+V_{\!3}}\cap V_{\!1}}}{3}.}
@@ -646,23 +657,13 @@ For example, $X=\Bra{\Par{x,0}\in\Rbb^2:x\in\Rbb},Y=\Bra{\Par{0,y}\in\Rbb^2:y\in
 \SepLine
 
 \ProblemB[]{
-	\TextB{Suppose V is a 10-dim vecsp and $V_{\!1},V_{\!2},V_{\!3}$ are subsps of $V$ with}
-	\hypertarget{2C4e14}{}(a) \TextB{$\dim V_{\!1} = \dim V_{\!2} = \dim V_{\!3} = 7$. Prove that $V_{\!1}\cap V_{\!2}\cap V_{\!3}\neq\zeroSubs$.}
+	\TextB{Suppose $V_{\!1},V_{\!2},V_{\!3}$ are subsps of $V$ with}
+	\hypertarget{2C4e14}{}(a) \TextB{$\dim V=10,\;\dim V_{\!1} = \dim V_{\!2} = \dim V_{\!3} = 7$. Prove that $V_{\!1}\cap V_{\!2}\cap V_{\!3}\neq\zeroSubs$.}
 	\Blind{(a)} By {\TIPS}, $\Dim\Par{V_{\!1}\cap V_{\!2}\cap V_{\!3}}\geq\dim V_{\!1}+\dim V_{\!2}+\dim V_{\!3}\uline{{}-2\dim V}>0.$\TextB{\vspace{4pt}}
 	\hypertarget{2C4e15}{}(b) \TextB{$\dim V_{\!1}+\dim V_{\!2}+\dim V_{\!3} > 2\dim V$. Prove that $V_{\!1}\cap V_{\!2}\cap V_{\!3}\neq\zeroSubs$.}
 	\Blind{(b)} By {\TIPS}, $\Dim\Par{V_{\!1}\cap V_{\!2}\cap V_{\!3}}\uuline{{}>2\dim V}-\Dim\Par{V_{\!2}+V_{\!3}}-\Dim\Par{V_{\!1}+\Par{V_{\!2}\cap V_{\!3}}}\geq 0.$\PfEnd\vspace{14pt}
 }\SepLine
-
-\ProblemN{\hypertarget{2C14}{14}}{
-	\TextNL{Suppose $V_{\!1},\dots,V_{\!m}$ are finite-dim. Prove that $\dim\!\Par{V_{\!1}+\dots+V_{\!m}}\leqslant\dim V_{\!1}+\dots+\dim V_{\!m}$.}
-}For each $V_i,$ let $B_{V_i}=\mathcal{E}_i.$ Then $V_{\!1}+\dots+V_{\!m}=\Span[\BigPar]{\mathcal{E}_1\cup\cdots\cup \mathcal{E}_m};\,\,\,\dim V_{\!i}=\card \mathcal{E}_i.$\par\quad
-Now $\dim\!\Par{V_{\!1}+\dots+V_{\!m}}=\dim\Span[\BigPar]{\mathcal{E}_1\cup\cdots\cup \mathcal{E}_m}\leqslant\card\hspace{-1pt}\BigPar{\mathcal{E}_1\cup\cdots\cup \mathcal{E}_m}\leqslant\card \mathcal{E}_1+\cdots+\card \mathcal{E}_m.$\par\vspace{4pt}
-\hypertarget{2C16}{}\Corollary \,\,\,$V_{\!1}+\dots+V_{\!m}$ is direct $\Longleftrightarrow$ For each $k,$ $\BigPar{V_{\!1}\oplus\dots\oplus V_{\!k}}\cap V_{k+1}=\zeroSubs,\BigPar{\mathcal{E}_1\cap\dots\cap\mathcal{E}_{k-1}}\cap\mathcal{E}_k=\emptySet$\parCor
-$\Longleftrightarrow\dim\Span[\BigPar]{\mathcal{E}_1\cup\dots\cup\mathcal{E}_m}=\card\hspace{-1pt}\BigPar{\mathcal{E}_1\cup\dots\cup\mathcal{E}_m}=\card\mathcal{E}_1+\dots+\card\mathcal{E}_m$\parCor
-$\Longleftrightarrow \dim\!\Par{V_{\!1}\oplus\dots\oplus V_{\!m}}=\dim V_{\!1}+\dots+\dim V_{\!m}.$\PfEnd
-\SepLine
-
-\ChEnd
+\ChEnd\pagebreak
 
 \vfill\ChDecl{Ch3A}{3$\cdot$A}{}\orMode{\hLk{3A3}{3}\;\;\hLk{3A4}{4}\;\;\hLk{3A5}{5}\;\;\hLk{3A7}{7}\;\;\hLk{3A8}{8}\;\;\hLk{3A10}{10}\;\;\hLk{3A11}{11}\;\;\hLk{3A12}{12}\;\;\hLk{3A13}{13}\;\;|\;\;\hLk{3A4e10}{4E:\;\;10}\;\;\hLk{3A4e11}{11}\;\;\hLk{3A4e17}{17}}{[1]: \BigPar{4E 3.B.33(a)}, (4E 1.B.7); [2]: 5, 3, 4, 7, 8, 9, (4E 10), 10; [3]: 11, 12, 13, (4E 17); [4]: (4E 3.B.32), (4E 11).}
 
@@ -677,7 +678,7 @@ $}\Longleftrightarrow T\Par{v+\lambda u}=Tv+\lambda Tu.$\vspace{-10pt}
 \ProblemBnoor{\hypertarget{3B4e33}{9.A.2,6 \OR 4E 3.B.33}}{
 	\TextB{Suppose that $V,W$ are on $\Rbb,$ and $T\in\Lm{V,W}.$ Show that}
 	{\tgnr\large(a)} $T_{\!\Cbb}\in\Lm{V_{\!\Cbb},W_{\!\Cbb}}.$ \;{\tgnr\large(b)} $\null\Par{T_{\!\Cbb}}=\BigPar{\null T}{_\Cbb},\range\Par{T_{\!\Cbb}}=\BigPar{\range T}{_\Cbb}.$ \;{\tgnr\large(c)} $T_{\!\Cbb}$ is inv $\Longleftrightarrow T$ is inv.\TextB{}
-}{\normalsize\envFontSmall(a) $T_{\!\Cbb}\BigPar{\Par{u_1+\i v_1}+\Par{x+\i y}\Par{u_2+\i v_2}}=T\Par{u_1+xu_2-yv_2}+\i T\Par{v_1+xv_2+yu_2}$\parSol{\Ha}
+}{(a) $T_{\!\Cbb}\BigPar{\Par{u_1+\i v_1}+\Par{x+\i y}\Par{u_2+\i v_2}}=T\Par{u_1+xu_2-yv_2}+\i T\Par{v_1+xv_2+yu_2}$\parSol{\Ha}
 $=T_{\!\Cbb}\Par{u_1+\i v_1}+\Par{x+\i y}T_{\!\Cbb}\Par{u_2+\i v_2}.$\parSol{}
 (b) $u+\i v\in\null\Par{T_{\!\Cbb}}\Longleftrightarrow u,v\in\null T\Longleftrightarrow u+\i v\in\BigPar{\null T}{_\Cbb}.$\parSol{\Hb}
 $w+\i x\in\range\Par{T_{\!\Cbb}}\Longleftrightarrow w,x\in\range T\Longleftrightarrow w+\i x\in\BigPar{\range T}{_\Cbb}.$\parSol{}
@@ -702,8 +703,8 @@ $=Su+\i Sv+\lambda\Par{Tu+\i Tv}=\Par{S_\Cbb+\lambda T_{\!\Cbb}}\Par{u+\i v}.$\P
 
 \ProblemB[]{
 	\NoteForSmall{Restriction}\;\;\TextB{$U$ is a subsp of $V.$}
-	(a) \TextB{$\forall S,T\in\Lm{V,W},\lambda\in\Fbb,\BigPar{T+\lambda S}\mmid_U=T\mmid_U+\lambda S\mmid_U.$\vspace{2pt}}
-	(b) \TextB{$\forall S\in\Lm{W,X},T\in\Lm{V,W},\BigPar{ST}\mmid_U=ST\mmid_U.$}
+	(a) \TextB{$\forall S,T\in\Lm{V,W},\lambda\in\Fbb,\left.\Par{T+\lambda S}\right|{_U}=T\mmid_U+\lambda S\mmid_U.$\vspace{2pt}}
+	(b) \TextB{$\forall S\in\Lm{W,X},T\in\Lm{V,W},\left.\Par{ST}\right|{_U}=ST\mmid_U.$}
 }
 \SepLine
 
@@ -733,7 +734,7 @@ Multiplication Identity: $\Par{1f}\Par{x}=1f\Par{x}=f\Par{x}.$ \BigPar{ \NOTICE 
 \SepLine
 
 \ProblemN[]{\hypertarget{3A5}{5}}{
-	\TextN{Because $\Lm{V,W}=\Bra{T:V\rightarrow W\;\mmid\;T\text{ is linear}}$ is a subsp of $W^V,$ $\Lm{V,W}$ is a vecsp.}
+	\TextN{Because $\Lm{V,W}=\Bra{T:V\rightarrow W\;{\envFontHuge\envFontA\mmid}\;T\text{ is linear}}$ is a subsp of $W^V,$ $\Lm{V,W}$ is a vecsp.}
 }\SepLine
 
 \ProblemN{\hypertarget{3A3}{3}}{
@@ -1039,20 +1040,29 @@ Thus $\forall Tv\in\range T,\exists\,!\,Tx\in\range T\mmid_X,Ty\in\range T\mmid_
 }By [2.34] \BigPar{ note that $V$ can be infinite-dim }, $\exists$ subsp $U$ of $V$ such that $V=U\oplus\null T$.\parSol{}
 $\forall v\in V,\exists\,!\,w\in\null T,u\in U, v=w+u.$ Then $Tv=T\Par{w+u}=Tu\in\Bra{Tu:u\in U}.$\PfEnd\vspace{6pt}
 \Corollary \,\,\,{\Large\tgsl\envFontLarge[P] \quad{$T\mmid_U:U\rightarrow\range T$ is an iso $\Longleftrightarrow U\oplus\null T=V.$}\quad [Q]}\vspace{2pt}\parCor
-We have shown $Q\Rightarrow P.$ Now we show that ${}^\neg Q\Rightarrow{}^\neg P$ to complete the proof.\parCor
-Because $U\oplus\null T\subsetneq V.$ We show $\range T\neq\range T\mmid_U$ by contradiction.\parCor
+We have shown $Q\Rightarrow P.$ Now we show that $P\Rightarrow Q$ to complete the proof.\parCor
+$\forall v\in V,Tv\in\range T=\range T\mmid_U\Rightarrow \exists\,!\,u\in U,Tv=Tu\Rightarrow v-u\in\null T.$\parCor Thus $v=\Par{v-u}+u\in U+\null T.$ 又 $u\in U\cap\null T\Longleftrightarrow T\mmid_U\Par{u}=0\Longleftrightarrow u=0.$\PfEnd\vspace{4pt}\parCor
+\Or ${}^\neg Q\Rightarrow{}^\neg P:$ \;Because $U\oplus\null T\subsetneq V.$ We show $\range T\neq\range T\mmid_U$ by contradiction.\parCor
 Let $X\oplus\Par{U\oplus\null T}=V.$ Now $\range T=\range T\mmid_X\oplus\range T\mmid_U.$ And $X$ is nonzero.\parCor
 Assume that $\range T=\range T\mmid_U.$ Then $\range T\mmid_X=\zeroSubs.$ While $T\mmid_X$ is inje. Contradicts.\parCor
-\Or $\range T\mmid_X\subseteq\range T\mmid_U\Rightarrow \forall x\in X,Tx\in\range T\mmid_U,\exists\,u\in U,Tu=Tx\Rightarrow x=0.$\PfEnd
+\Or $\range T\mmid_X\subseteq\range T\mmid_U\Rightarrow \forall x\in X,Tx\in\range T\mmid_U,\exists\,u\in U,Tu=Tx\Rightarrow x=0.$\vspace{4pt}\parCor
+Also, ${}^\neg P\Rightarrow{}^\neg Q:$ \;(a) $\range T\mmid_U\subsetneq\range T;\;$ {\OR} (b) $U\cap\null T\neq\zeroSubs.$\parCor
+For (a), $\exists\,x\in V\Backslash U,Tx\neq 0\Longleftrightarrow x\not\in\null T.$ Thus $U+\null T\subsetneq V.$ For (b), immediately.\PfEnd\vspace{4pt}
+\Comment \,\,\,If $T\mmid_U:U\rightarrow\range T$ is an iso. Let $R\oplus U=V.$ Then $R$ might not be $\null T.$\parCom
+\Or Extend $B_U$ to $B_V=\Par{u_1,\dots,u_n,r_1,\dots,r_m},$ then $\Par{r_1,\dots,r_m}$ might not be a $B_{\null T}.$\vspace{-2pt}
 \SepLine
 
-\BulletPointX\TipsN{3}\,\,\,{Suppose $T\in\Lm{V,W}$ and $U$ is a subsp such that $V=U\oplus\null T.$}\TextB{}
-Now $\forall v\in V,\exists\,!\,u_v\in U,w_v\in\null T,v=u_v+w_v.$ Define $i\in\Lm{V,U}$ by $i\Par{v}=u_v.$\TextB{}
-\uline{Then $T=T\circ i.$} Because $\forall v\in V,T\Par{v}=T\Par{u_v+w_v}=T\Par{u_v}=T\BigPar{i\Par{v}}=\Par{T\circ i}\Par{v}.$\par
+%\BulletPointX\Comment \,\,\,Extend $B_U=\Par{u_1,\dots,u_n}$ to $B_V=\Par{u_1,\dots,u_n,v_1,\dots,v_m}.$\parCom\IndentB{}
+%Then $\null T$ might not equal to $\Span{v_1,\dots,v_m}.$\par
+%\SepLine
+
+\BulletPointX\TipsN{3}\,\,\,{Suppose $T\in\Lm{V,W}$ and $U$ is a subsp such that $V=U\oplus\null T.$ Let $\null T=X\oplus Y.$}\TextB{}
+Now $\forall v\in V,\exists\,!\,u_v\in U,\Par{x_v,y_v}\in X\times Y,v=u_v+x_v+y_v.$ Define $i\in\Lm{V,U}$ by $i\Par{v}=u_v+x_v.$\TextB{}
+\uline{Then $T=T\circ i.$} Because $\forall v\in V,T\Par{v}=T\Par{u_v+x_v+y_v}=T\Par{u_v}=T\Par{u_v+x_v}=T\BigPar{i\Par{v}}=\Par{T\circ i}\Par{v}.$\par
 \SepLine
 
 \BulletPointX\TipsN{4}\,\,\,Suppose $T\in\Lm{V,W},T\neq 0.$ Let $B_{\range T}=\Par{Tv_1,\dots,Tv_n}.$\TextB{}
-By (3.A.4), $R=\Par{v_1,\dots,v_n}$ is linely inde in $V.$ Let $\Spn R=U.$ We will prove that $U\oplus\null T=V.$\TextB{\vspace{6pt}}
+By (3.A.4), $R=\Par{v_1,\dots,v_n}$ is linely inde in $V.$ Let $\Spn R=U.$ We will prove that $U\oplus\null T=V.$\TextB{\vspace{4pt}}
 (a) $T{\envFontLarge\BigPar{\sum_{i=1}^n a_i v_i}}=0\Longrightarrow \sum_{i=1}^n a_i Tv_i=0\Rightarrow a_1=\dots=a_n=0\Longrightarrow U\cap\null T=\zeroSubs.$\TextB{\vspace{6pt}}
 (b) $\forall v\in V, Tv=\sum_{i=1}^n a_i Tv_i\Longrightarrow T\envFontLarge\BigPar{v-\sum_{i=1}^n a_i v_i}=0$\TextB{\vspace{4pt}}\Hb
 $\Rightarrow v-\sum_{i=1}^n a_i v_i\in\null T\Longrightarrow v=\envFontLarge\BigPar{v-\sum_{i=1}^n a_i v_i}+\BigPar{\sum_{i=1}^n a_i v_i}\Rightarrow U+\null T=V.$\TextB{\vspace{4pt}}\Hb
@@ -1061,28 +1071,25 @@ $\Rightarrow v-\sum_{i=1}^n a_i v_i\in\null T\Longrightarrow v=\envFontLarge\Big
 Because $\range T=\range T\mmid_U=\Span{Tv_1,\dots,Tv_n},$ 又 $T$ is inje.
 \SepLine
 
-%\BulletPointX\TipsN{6}\,\,\,Extend $B_U=\Par{u_i}{_{i=1}^n}$ to $B_V=\Par{u_1,\dots,u_n,v_1,\dots,v_m}.$ Then $\null T$ might not equal to $\Span{v_1,\dots,v_m}.$\par
+%\ProblemB{
+%	\TextB{Suppose $V$ is finite-dim, $T\in\Lm{V,W},B_{\range T}=\BigPar{Tv_1,\dots,Tv_n},B_V=\BigPar{v_1,\dots,v_n,u_1,\dots,u_m}$.\vspace{3pt}}
+%	\TextB{Prove or give a counterexample\hspace{1pt}$:$ $\Par{u_1,\dots,u_m}$ is a basis of $\null T$.}
+%}{{\tgsl Always notice that $\mathcal{S}_{\!V}\Span{v_1,\dots,v_n}=\Bra{U_1,\cdots,\null T,\cdots,U_n,\cdots}.$}}\par\quad
+%A counterexample: Let $\dim V=3, Tv_1=Tv_2=Tv_3=w_1.$ Then $\Span{Tv_1,Tv_2,Tv_3}=\Span{w_1}$.\par\quad
+%Extend $\Par{v_i}$ to $\Par{v_1,v_2,v_3}$ for each $i$. But none of $\Par{v_1,v_2},\Par{v_1,v_3},\Par{v_2,v_3}$ is a basis of $\null T.$\PfEnd
 %\SepLine
-
-\ProblemB{
-	\TextB{Suppose $V$ is finite-dim, $T\in\Lm{V,W},B_{\range T}=\BigPar{Tv_1,\dots,Tv_n},B_V=\BigPar{v_1,\dots,v_n,u_1,\dots,u_m}$.\vspace{3pt}}
-	\TextB{Prove or give a counterexample\hspace{1pt}$:$ $\Par{u_1,\dots,u_m}$ is a basis of $\null T$.}
-}{{\tgsl Always notice that $\mathcal{S}_V\Span{v_1,\dots,v_n}=\Bra{U_1,\cdots,\null T,\cdots,U_n,\cdots}.$}}\par\quad
-A counterexample: Let $\dim V=3, Tv_1=Tv_2=Tv_3=w_1.$ Then $\Span{Tv_1,Tv_2,Tv_3}=\Span{w_1}$.\par\quad
-Extend $\Par{v_i}$ to $\Par{v_1,v_2,v_3}$ for each $i$. But none of $\Par{v_1,v_2},\Par{v_1,v_3},\Par{v_2,v_3}$ is a basis of $\null T.$\PfEnd
-\SepLine
 
 \ProblemBnoor{\hypertarget{3B4e21}{4E 21}}{
 	\TextB{Suppose $V$ is finite-dim, $T\in\Lm{V,W},$ $Y$ is a subsp of $W$. Let $\Bra{v\in V: Tv\in Y}.$\vspace{1.5pt}}
 	(a) \TextB{Prove that $\Bra{v\in V: Tv\in Y}$ is a subsp of $V.$\vspace{1.5pt}}
 	(b) \TextB{Prove that $\Dim\Bra{v\in V: Tv\in Y}=\dim\null T +\Dim\BigPar{Y\cap\range T}.$}
-}Let $\mathcal{K}_Y=\Bra{v\in V: Tv\in Y}.$\par\quad
-(a) $\forall u,w\in\mathcal{K}_Y,\Sbra{\,Tu,Tw\in Y\,},\lambda\in\Fbb,T\Par{u+\lambda w}=Tu+\lambda Tw\in Y\Longrightarrow \mathcal{K}_Y$ is a subsp of $V$.\par{\vspace{2pt}}\quad
-(b) Define the range-restricted map $R$ of $T$ as $Rv=Tv$ for all $v\in\mathcal{K}_Y.$\par\quad{\Hb}
-Obviously $R=T\mmid_{\mathcal{K}_Y}:\mathcal{K}_Y\rightarrow Y$ is linear. Now $\range R=Y\cap \range T.$\par\quad{\Hb}
-And $v\in\null T\Longleftrightarrow Tv=0\in Y\Longleftrightarrow Rv=0\in\range T\Longleftrightarrow v\in\null R.$ By [3.22].\PfEnd\vspace{4pt}
-\Comment \,\,\,Now $\Span{v_1,\dots,v_m}\oplus\null T=\mathcal{K}_Y.$ {Where $B_{Y\,\cap\,\range T}=\Par{Tv_1,\dots,Tv_m}.$}\vspace{0pt}\parCom
-In particular, $\dim\mathcal{K}_{\range T}=\dim\null T+\dim\range T\Longrightarrow\mathcal{K}_{\range T}=V.$
+}Let $\mathcal{K}_{\!Y}=\Bra{v\in V: Tv\in Y}.$\par\quad
+(a) $\forall u,w\in\mathcal{K}_{\!Y},\Sbra{\,Tu,Tw\in Y\,},\lambda\in\Fbb,T\Par{u+\lambda w}=Tu+\lambda Tw\in Y\Longrightarrow \mathcal{K}_{\!Y}$ is a subsp of $V$.\par{\vspace{2pt}}\quad
+(b) Define the range-restricted map $R$ of $T$ by $R=T\mmid_{\mathcal{K}_{\!Y}}.$\par\quad{\Hb}
+Obviously $R:\mathcal{K}_{\!Y}\rightarrow Y$ is linear. Now $\range R=Y\cap \range T.$\par\quad{\Hb}
+And $v\in\null T\Longleftrightarrow Tv=0\in Y\Longleftrightarrow Rv=0\in\range T\Longleftrightarrow v\in\null R.$ By [3.22].\PfEnd\vspace{2pt}
+\Comment \,\,\,Now $\Span{v_1,\dots,v_m}\oplus\null T=\mathcal{K}_{\!Y}.$ {Where $B_{Y\,\cap\,\range T}=\Par{Tv_1,\dots,Tv_m}.$}\vspace{0pt}\parCom
+In particular, $\dim\mathcal{K}_{\!\range T}=\dim\null T+\dim\range T\Longrightarrow\mathcal{K}_{\!\range T}=V.$
 \SepLine
 
 \ProblemN{\hypertarget{3B28}{28}}{
@@ -1096,8 +1103,8 @@ Linearity: $\forall v,w\in V\,\Sbra{\exists\,!\,a_i,b_i\in\Fbb},\lambda\in\Fbb,\
 
 \ProblemN{\hypertarget{3B29}{29}}{
 	\TextNL{Suppose $\varphi\in\Lm{V,\Fbb}.$ Suppose $\varphi\Par{u}\neq 0.$ Prove that $V = \null\varphi\oplus\Bra{au :a\in\Fbb}.$}\vspace{2pt}
-}Let $B_{\range\varphi}=\Par{\varphi\Par{u}}.$ Then by \TIPSN{4}, $\Span{u}\oplus\null\varphi=V.$\PfEnd\parSol{\vspace{6pt}}
-\Or (a) $v=cu\in\null\varphi\cap\Span{u}\Rightarrow c\varphi\Par{u}=0\Rightarrow v=0.$ Now $\null\varphi\cap\Span{u}=\zeroSubs.$\parSol{\vspace{5pt}}
+}Let $B_{\range\varphi}=\Par{\varphi\Par{u}}.$ Then by \TIPSN{4}, $\Span{u}\oplus\null\varphi=V.$\PfEnd\vspace{6pt}\quad
+\Or (a) $v=cu\in\null\varphi\cap\Span{u}\Rightarrow c\varphi\Par{u}=0\Rightarrow v=0.$ Now $\null\varphi\cap\Span{u}=\zeroSubs.$\par\vspace{5pt}\quad
 \Blind{\Or}(b) $\forall\,v\in V,v=\underbrace{\left({v-\Frac{\varphi\Par{v}}{\varphi\Par{u}}u}\right)}_{\in\,\null\varphi}+\,{{\Frac{\varphi\Par{v}}{\varphi\Par{u}}u}}\Longrightarrow V=\null\varphi+\Span{u}.$\PfEnd
 \SepLine
 
@@ -1120,8 +1127,7 @@ Now $\varphi_1\Par{v}=a\varphi_1\Par{u},\,\,\,\varphi_2\Par{v}=a\varphi_2\Par{u}
 \ProblemBnoor{\hypertarget{3B4e31}{4E 31}}{
 	\TextB{Suppose $V$ is finite-dim, $X$ is a subsp of $V$, and $Y$ is a finite-dim subsp of $W$.}
 	\TextB{Prove that if $\dim X + \dim Y = \dim V$, then $\exists\,T\in\Lm{V,W},\null T = X,\range T = Y$.}
-}\par\quad
-Let $V=U\oplus X,B_U=\Par{v_1,\dots,v_m},B_Y=\Par{w_1,\dots,w_m}.$\par\quad
+}Let $V=U\oplus X,B_U=\Par{v_1,\dots,v_m},B_Y=\Par{w_1,\dots,w_m}.$\par\quad
 Define $T\in\Lm{V,W}$ by $T{v_i}=w_i,Tx=0$ for each $v_i$ and all $x\in X.$\par\quad
 Because $\forall v\in V,\exists\,!\,a_i\in\Fbb,x\in X,v=\sum_{i=1}^m a_i v_i+x.$\par\quad
 Now $v\in\null T\Longleftrightarrow Tv=a_1w_1+\dots+a_mw_m=0\Longleftrightarrow v=x\in X.$ \;Hence $\null T=X.$\par\quad
@@ -1129,7 +1135,7 @@ And $Y\ni w=a_1 w_1+\dots+a_m w_m=a_1 Tv_1+\dots+a_m Tv_m\in\range T.$ \;Hence $
 \Or \NOTICE that $V=U\oplus\null T.$ By the {\COROLLARY} in Problem (12), $\range T=\range T\mmid_U.$\par\quad
 {\Blind{\Or}}又 $\dim\range T\mmid_U=\dim U=\dim Y;\;\range T\subseteq Y.$\par\quad
 \Or Let $B_X=\Par{x_1,\dots,x_n}.$ Now $\range T=\Span[\BigPar]{Tv_1,\dots,Tv_m,Tx_1,\dots,Tx_n}=\Span{w_1,\dots,w_m}=Y.$\PfEnd
-\SepLine
+\SepLine\pagebreak
 
 \ProblemN{\hypertarget{3B20}{}\hypertarget{3B21}{20, 21}}{
 	(a) \Text{Prove that if $ST=I\in\Lm{V},$ then $T$ is inje and $S$ is surj.}
@@ -1166,7 +1172,7 @@ Because (a) \uline{$\range T\mmid_{\null ST}=\range T\cap\null S=\null S\mmid_{\
 %(a) $Tu\in\range T\mmid_{\null ST}\Longleftrightarrow S\Par{Tu}=0\Longleftrightarrow Tu\in\null S\cap\range T=\null S\mmid_{\range T}.$\par\quad
 %(b) $u\in\null T\mmid_{\null ST}=\null T\cap\null ST\Longleftrightarrow Tu=0\Longleftrightarrow u\in\null T.$\PfEnd\vspace{6pt}\quad
 \Or \NOTICE that \uline{$u\in\null ST\Longleftrightarrow S\Par{Tu}=0\Longleftrightarrow Tu\in\null S.$}\parSol{}
-\Blind{\Or}Thus \uline{$\null ST=\Bra{u\in U:Tu\in\null S}=\mathcal{K}_{\null S\,\cap\,\range T}=\null ST.$}\parSol{}
+\Blind{\Or}Thus \uline{$\null ST=\Bra{u\in U:Tu\in\null S}=\mathcal{K}_{\!\null S\;\cap\;\range T}=\null ST.$}\parSol{}
 \Blind{\Or}By Problem (4E 21), $\dim\null ST=\dim\null T+\Dim\BigPar{\null S\cap\range T}.$\PfEnd\vspace{4pt}
 \Corollary \,\,\,(1) $T$ surj $\Rightarrow\dim\null ST=\dim\null S+\dim\null T.$\parCor
 (2) $T$ inv $\Rightarrow\dim\null ST=\dim\null S,\;\null ST=\null T.$\parCor
@@ -2017,7 +2023,7 @@ And because $\Par{v-\hat{v}}+\Par{w-\hat{w}}\in U$ and $\lambda\Par{v-\hat{v}}\i
 
 \ProblemBnoor{\hypertarget{3E4e8}{4E 8}}{
 	\TextB{Suppose $T\in\Lm{V,W},w\in\range T.$ Prove that $\Bra{u\in V:Tu=w}=u+\null T.$}
-}{\def\mK{\mathcal{K}_u}Let $\mK=\Bra{u\in V:Tu=w}.$ \Sbra{ Not a vecsp.\hspace{1pt}} \;Suppose $u\in\mK.$ Then $u+\null T\subseteq\mK.$\parSol{}
+}{\def\mK{\mathcal{K}_{\!u}}Let $\mK=\Bra{u\in V:Tu=w}.$ \Sbra{ Not a vecsp.\hspace{1pt}} \;Suppose $u\in\mK.$ Then $u+\null T\subseteq\mK.$\parSol{}
 And $\forall u\apostrophe\in\mK,\;u\apostrophe-u\in\null T\Rightarrow u\apostrophe\in u+\null T.$ Now $\mK\subseteq u+\null T.$\PfEnd}
 \SepLine
 
@@ -2086,7 +2092,7 @@ $\forall w\in A,\;w=\sum_{i=1}^m \lambda_i v_i=\sum_{i=1}^m \lambda_i\Par{v+u_i}
 \vspace{6pt}Let $\lambda_i=\Frac{\mu_i}{1-\mu_\iota}$ for $i=1,\dots,\iota-1;$ \,$\lambda_j=\Frac{\mu_{j+1}}{1-\mu_\iota}$ for $j=\iota,\dots,k$. Then,\par\quad\Hb\Hii
 \vspace{6pt}$\MathRightBrace{r}{\sum_{i=1}^k\lambda_i=1\Rightarrow w\in B\\ v_\iota\in B\Rightarrow u\apostrophe=\lambda w+\Par{1-\lambda}v_\iota\in B}\Rightarrow$ Let $\lambda=1-\mu_\iota$. Thus $u\apostrophe=u\in B\Rightarrow A\subseteq B.$\PfEnd\vspace{8pt}\quad
 (c) If $m=1,$ then let $A=v_1+\zeroSubs$ and we are done.\par\quad\Hc
-Fix one $k\in\Bra{1,\dots,m}.$ Given $\lambda_1,\dots,\lambda_{k-1},\lambda_{k+1},\dots,\lambda_m\in\Fbb.$ Let $\lambda_k=1-\lambda_1-\dots-\lambda_{k-1}-\lambda_{k+1}-\dots-\lambda_m$\par\quad\Hc
+Fix one $k\in\Bra{1,\dots,m}.$ For $\lambda_1,\dots,\lambda_{k-1},\lambda_{k+1},\dots,\lambda_m\in\Fbb.$ Let $\lambda_k=1-\lambda_1-\dots-\lambda_{k-1}-\lambda_{k+1}-\dots-\lambda_m$\par\quad\Hc
 $\Longrightarrow\lambda_1 v_1+\dots+{\lambda_k v_k}+\dots+\lambda_m v_m=v_k+\sum_{i=1}^m\lambda_i\Par{v_i-v_k}.$ \;$A=v_k+\Span{v_1-v_k,\dots,v_m-v_k}.$\PfEnd
 \SepLine\pagebreak
 
@@ -2112,20 +2118,20 @@ Then $\forall k\in\Bra{1,\dots,m},u\Sbra{2^{ml}+2^k}=\XPar{\sum_{r=1}^m a_re_r}\
 Thus $a_1=\dots=a_m=0$ and $\Par{e_1,\dots,e_m}$ is linely inde. Similarly.\PfEnd
 \SepLine
 
-\BulletPointX\NoteFor{[3.88, 3.90, 3.91]}\;\;{Suppose $W\in\mathcal{S}_V U.$ Then $V\XSlash U$ is iso to $W.$}\TextB{}
+\BulletPointX\NoteFor{[3.88, 3.90, 3.91]}\;\;{Suppose $W\in\mathcal{S}_{\!V} U.$ Then $V\XSlash U$ is iso to $W.$}\TextB{}
 {Because $\forall v\in V,\exists\,!\,u_v\in U,w_v\in W,v=u_v+w_v.$ \uline{Define $T\in\Lm{V}$ by $T\Par{v}=w_v.$}}\TextB{}
 {Hence $\null T=U,\;\range T=W,\;\range T\oplus\null T=V.$}\TextB{}
 {Then $\tilde{T}\in\Lm{V\XSlash \null T,V}$ is defined by $\tilde{T}\Par{v+U}=\tilde{T}\Par{w_v'+U}=Tw_v'=w_v.$ \Sbra{See {\TIPS} below}}\TextB{}
 {Now $\pi\circ\tilde{T}=I_{V\XSlash U},\;\tilde{T}\circ\pi\mmid_W=I_{W}=T\mmid_W.$ \;Hence $\tilde{T}$ is an iso of $V\XSlash U$ onto $W.$}\par\vspace{2pt}
 \BulletPointX\Tips \,\,\,{Suppose $U$ is a subsp of $V.$ \uline{Define $S\in\Lm{V\XSlash U,V}$ by $S\Par{v+U}=v.$}}\TextB{}
-{Then $\range S$ is the {\tgsl purest} in $\mathcal{S}_V U.$ Now $\null S=\zeroSubs,\;U\oplus\range S=V.$}\TextB{}
+{Then $\range S$ is the {\tgsl purest} in $\mathcal{S}_{\!V} U.$ Now $\null S=\zeroSubs,\;U\oplus\range S=V.$}\TextB{}
 {\uline{Let $E=S\circ\pi.$} Because $S$ is inje and $\pi$ is surj, $\null E=\null\pi=U,\;\range E=\range S.$}\TextB{}
 {Then $\range E\oplus\null E=V.$ \;\NOTICE that $E:V\rightarrow W$ is the {\tgsl purest eraser}. Now we explain why:}\TextB{\vspace{2pt}}
 {{\Example}\,\,\,\,Let $V=\Fbb^2,B_U=\Par{e_1},B_W=\Par{e_2-e_1}\Rightarrow U\oplus W=V.$}\TextE{}
 {Notice that $T\Par{e_2-e_1}=\Par{e_2-e_1},$ while $\Par{e_2-e_1}+U=e_2+U,$ but}\TextE{}
 {because $e_2=v_1+\Par{e_2-e_1},$ now still, $\tilde{T}\BigPar{\Par{e_2-e_1}+U}=e_2-e_1=Te_2.$}\TextE{}
 {In contrast, $S\BigPar{\Par{e_2-e_1}+U}=S\Par{e_2+U}=e_2,\;E\Par{e_2-e_1}=e_2.$}\TextE{}
-{And $\range E=\range S=\Span{e_2}$ is the {\tgsl purest} in $\mathcal{S}_V U.$}
+{And $\range E=\range S=\Span{e_2}$ is the {\tgsl purest} in $\mathcal{S}_{\!V} U.$}
 \SepLine\pagebreak
 
 \ProblemN{\hypertarget{3E12}{12}}{
@@ -2183,7 +2189,7 @@ Now $u\in U\Longleftrightarrow u+U=0w+U\Longleftrightarrow\varphi\Par{u}=0.$\PfE
 \ProblemN{\hypertarget{3E17}{17}}{
 	\TextNL{Suppose $V\XSlash U$ is finite-dim, $W$ is a subsp of $V$.}
 	(a) \TextNL{Show that if $V=U+W$, then $\dim W\geqslant\dim V\XSlash U$.}
-	(b) \TextNL{Show that $\exists\,W\in\mathcal{S}_V U,\dim W=\dim V\XSlash U.$}
+	(b) \TextNL{Show that $\exists\,W\in\mathcal{S}_{\!V} U,\dim W=\dim V\XSlash U.$}
 }Let $B_W=\Par{w_1,\dots,w_n}.$\par\quad
 (a) $\forall v\in V,\exists\,u\in U,w\in W,\;v=u+w\Longrightarrow v+U=w+U=\Par{a_1w_1+\dots+a_nw_n}+U,\exists\,!\,a_i\in\Fbb.$\par\quad\Ha
 Then $V\XSlash U\subseteq\Span[\BigPar]{w_1+U,\dots,w_n+U}.$ Hence $\dim V\XSlash U\leqslant\dim\Span[\BigPar]{w_1+U,\dots,w_n+U}.$\par\vspace{4pt}\quad
@@ -2483,7 +2489,7 @@ Suppose $\varphi\in W^0.$ Because $\null\iota=W\subseteq\null\varphi.$ By \Sbra{
 }\par\quad
 Suppose $\varPhi\in\BigPar{\null T}{^0}.$ Because by (3.B.12), $T\mmid_U:U\rightarrow\range T$ is an iso; $V=U\oplus\null T.$\par\quad
 And $\forall v\in V,\exists\,!\,u_v\in U,w_v\in\null T,v=u_v+w_v.$ Define $\iota\in\Lm{V,U}$ by $\iota\Par{v}=u_v.$\vspace{4pt}\par\quad
-Let $\psi=\varPhi\circ\BigPar{T\mmid_{\range T}^{-1}}.$ Then $T\apostrophe\Par{\psi}=\psi\circ T=\varPhi\circ\BigPar{T^{-1}\mmid_{\range T}\circ T\mmid_V}.$\vspace{2pt}\par\quad
+Let $\psi=\varPhi\circ\BigPar{T^{-1}\mmid_{\range T}}.$ Then $T\apostrophe\Par{\psi}=\psi\circ T=\varPhi\circ\BigPar{T^{-1}\mmid_{\range T}\circ T\mmid_V}.$\vspace{2pt}\par\quad
 Where $T^{-1}\mmid_{\range T}:\range T\rightarrow U;\;\;T:V\rightarrow\range T.$ Note that $T^{-1}\mmid_{\range T}\circ T\mmid_V=\iota.$\vspace{2pt}\par\quad
 By \Sbra{3.B \TIPSN{3}}, $\varPhi=\varPhi\circ \iota.$ Thus $T\apostrophe\Par{\psi}=\psi\circ T=\varPhi\circ{\iota}=\varPhi.$\PfEnd
 \SepLine
