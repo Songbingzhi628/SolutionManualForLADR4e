@@ -40,7 +40,7 @@ Thus $p\Par{z}=\sum_{j=1}^m a_j \Par{z-\lambda}\sum_{i=1}^k \lambda^{i-1}z^{k-i}
 \BulletPointX\NoteFor{[4.13]}\;\;{\tgsl Every nonconst poly with complex coeffs has a zero in $\Cbb$.} \vspace{2pt}\hfill[{\tgsc Another proof}]\TextB{}
 For any $w\in\Cbb,k\in\Nbp,$ by polar coordinates, $\exists\,r\geqslant 0,\theta\in\Rbb,r\Par{\cos\theta + \i \sin\theta} = w$.\vspace{2pt}\TextB{}
 By De Moivre' theorem, $w^k=\Sbra{r\Par{\cos\theta +\i\sin \theta}}{^k}=r^k\Par{\cos k\theta + \i \sin k\theta}$.\vspace{2pt}\TextB{}
-Hence $\BigPar{r^{1/k}\Par{\cos\frac{\theta}{k} +\i\sin\frac{\theta}{k}}}{^k}=w$. Thus every complex number has a {\tgsl $k^{th}$ root}.\vspace{6pt}\TextB{}
+Hence $\BigPar{r^{1/k}\Par{\cos\frac{\;\theta\;}{k} +\i\sin\frac{\;\theta\;}{k}}}{^k}=w$. Thus every complex number has a {\tgsl $k^{th}$ root}.\vspace{6pt}\TextB{}
 Suppose a nonconst $p\in\PoC{}$ with highest-order nonzero term $c_m z_m.$\vspace{3pt}\TextB{}
 Then $\aMid{p\Par{z}}\rightarrow\infty$ as $\aMid{z}\rightarrow\infty$ \XPar{ because $\Frac{\aMid{p\Par{z}}}{\aMid{z_m}}\rightarrow\aMid{c_m}$ as $\aMid{z}\rightarrow\infty$ }.\vspace{3pt}\TextB{}
 \vspace{3pt}Thus the continuous function $z\rightarrow\aMid{p\Par{z}}$ has a global minimum at some point $\zeta\in\Cbb.$\TextB{}
@@ -526,9 +526,9 @@ By Problem (15), $0,1,\dots,n$ are the eigvals of $T$. The set of all eigvecs is
 	\TextB{Suppose $V$ is finite-dim, $T\in\Lm{V},\lambda\in\Fbb.$}
 }
 \ProblemN{\hypertarget{5A13}{13}}{
-	 \TextB{Prove that $\forall\lambda\in\Fbb,\exists\,\alpha\in\Fbb,\left|\alpha-\lambda\right|<\frac{1}{1000},\Par{T-\alpha I}$ is inv.}
+	 \TextB{Prove that $\forall\lambda\in\Fbb,\exists\,\alpha\in\Fbb,\left|\alpha-\lambda\right|<\frac{1}{\;1000\;},\Par{T-\alpha I}$ is inv.}
 }\par\quad
-Let $\alpha_k\in\Fbb$ be such that $\aMid{\alpha_k-\lambda}=\frac{1}{1000+k}$ for each $k=1,\dots,\dim V+1.$\par\vspace{2pt}\quad
+Let $\alpha_k\in\Fbb$ be such that $\aMid{\alpha_k-\lambda}=\frac{1}{\;1000+k\;}$ for each $k=1,\dots,\dim V+1.$\par\vspace{2pt}\quad
 Note that each $T\in\Lm{V}$ has at most $\dim V$ distinct eigvals.\par\quad
 Hence $\exists\,k=1,\dots,\dim V+1$ such that $\alpha_k$ is not an eigval of $T$ and therefore $\Par{T-\alpha_k I}$ is inv.\PfEnd
 \SepLine[0pt][\Blind{\BulletPointX} ]
@@ -894,8 +894,8 @@ Extend $v_1=v$ to $B_V=\Par{v_1,v_2\dots,v_n}.$\par\quad\Ha
 \Blind{{\tgbfx Step k.}} Then extend $w_k=\alpha_{k,k+1}$ to a basis of $\Span{\alpha_{k-1,k+1},\dots,\alpha_{k-1,n}}$ as $\Par{\alpha_{k,k+1},\dots,\alpha_{k,n}}.$\par\quad\Ha
 \Blind{{\tgbfx Step 1.}} Otherwise, we stop at step $k.$\par\vspace{4pt}\quad\Ha
 Finally, we stop at step $m,$ thus we get $\Par{v_1,w_1,\dots,w_{m-1}}$ and $\Par{\alpha_{m-1,m},\dots,\alpha_{m-1,n}},$\par\quad\Ha
-$\range T\envFontLarge\mmid\envFontDefault_{\Span{w_1,\dots,w_{m-1}}}=\Span{v_1,w_1,\dots,w_{m-2}}\Rightarrow\dim\null T\envFontLarge\mmid\envFontDefault_{\Span{w_1,\dots,w_{m-1}}}=0,$\par\quad\Ha
-$\underbrace{\Span{v_1,w_1,\dots,w_{m-1}}}_{\dim m}$ and $\underbrace{\Span{\alpha_{m-1,m},\dots,\alpha_{m-1,n}}}_{\dim \Par{n-m}}$ are invar under $T.$\par\quad\Ha
+$\range T\envFontLarge\mmid\envFontDefault{_{\Span[\SmallPar]{w_1,\dots,w_{m-1}}}}=\Span{v_1,w_1,\dots,w_{m-2}}\Rightarrow\dim\null T\envFontLarge\mmid\envFontDefault{_{\Span[\SmallPar]{w_1,\dots,w_{m-1}}}}=0,$\par\quad\Ha
+$\underbrace{\Span{v_1,w_1,\dots,w_{m-1}}}_{\dim m}$ and $\underbrace{\Span{\alpha_{m-1,m},\dots,\alpha_{m-1,n}}}_{\dim \SmallPar{n-m}}$ are invar under $T.$\par\quad\Ha
 Let $U=\Span{\alpha_{m-1,m},\dots,\alpha_{m-1,n}}\oplus\Span{v_1,w_1,\dots,w_{m-2}}$ and we are done.\PfEnd\quad\Ha
 \Comment \,\,\,Both $\Span{v_2,\dots,v_n}$ and $U\oplus\Span{w_{m-1}}$ are in $\mathcal{S}_V \Span{v_1}.$\parCom\quad\Ha
 {\tgsl If $T\mmid_U$ is inv, then by the similar algorithm, we can extend $U$ to an invar subsp.}\par\vspace{6pt}\quad\Ha
@@ -1270,7 +1270,7 @@ Then $\Par{T-3I}\Par{T+3I}v=\Par{\lambda-3}\Par{\lambda+3}v=0\Rightarrow\lambda=
 	\TextN{Suppose $T\in\Lm{V},T^2=I$ and $-1$ is not an eigval of $T.$ Prove that $T=I.$}
 }\par\quad
 $T^2-I=\Par{T+I}\Par{T-I}$ is not inje, 又 $-1$ is not an eigval of $T$ $\Longrightarrow$ By {\TIPS}.\PfEnd\vspace{6pt}\quad
-\Or Note that $\forall v\in V,v=[\frac{1}{2}\Par{I-T}v]+[\frac{1}{2}\Par{I+T}v].$\vspace{2pt}\par\quad
+\Or Note that $\forall v\in V,v=[\frac{\;1\;}{2}\Par{I-T}v]+[\frac{\;1\;}{2}\Par{I+T}v].$\vspace{2pt}\par\quad
 $\hMath[-3pt]{l}{\left.}{\right\}}{
 \Par{I+T}\BigPar{\Par{I-T}v}=0\Longrightarrow \Par{I-T}v\in\null\Par{I+T}\\
 \Par{I-T}\BigPar{\Par{I+T}v}=0\Longrightarrow\Par{I+T}v\in\null\Par{I-T}}\Rightarrow V=\null\Par{I+T}+\null\Par{I-T}.$\par\vspace{6pt}\quad
@@ -1285,7 +1285,7 @@ Because $T^4-I=\Par{T^2-I}\Par{T^2+I}=0$ is not inje $\Rightarrow \Par{T^2-I}$ o
 又 $T$ has no eigvals $\Rightarrow$ $\Par{T^2-I}=\Par{T-I}\Par{T+I}$ is inje. Hence $T^2+I=0\in\Lm{V},$ for if not,\par\quad
 $\exists\,v\in V,\Par{T^2+I}v\neq 0$ while $\Par{T^2-I}\BigPar{\Par{T^2+I}v}=0$ but $\Par{T^2-I}$ is inje. Contradicts.\par\quad
 \Or $\forall v\in V,0=\Par{T^2-I}\Par{T^2+I}v\Longleftrightarrow 0=\Par{T^2+I}v.$ Hence $T^2+I=0.$\PfEnd\vspace{6pt}\quad
-\Or Note that $\forall v\in V,v=\Sbra{\frac{1}{2}\Par{I-T^2}v}+\Sbra{\frac{1}{2}\Par{I+T^2}v}.$\vspace{2pt}\par\quad
+\Or Note that $\forall v\in V,v=\Sbra{\frac{\;1\;}{2}\Par{I-T^2}v}+\Sbra{\frac{\;1\;}{2}\Par{I+T^2}v}.$\vspace{2pt}\par\quad
 $\hMath[-3pt]{l}{\left.}{\right\}}{
 \Par{I+T^2}\BigPar{\Par{I-T^2}v}=0\Longrightarrow\Par{I-T^2}v\in\null\Par{I+T^2}\\
 \Par{I-T^2}\BigPar{\Par{I+T^2}v}=0\Longrightarrow\Par{I+T^2}v\in\null\Par{I-T^2}}\Rightarrow V=\null\Par{I+T^2}+\null\Par{I-T^2}.$\par\vspace{6pt}\quad
