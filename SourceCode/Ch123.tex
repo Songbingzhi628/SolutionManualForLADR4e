@@ -198,7 +198,7 @@ If $W\neq\zeroSubs,$ then $V_{\!1}\oplus U\subsetneq\Par{V_{\!1}\oplus U}\oplus 
 	\TextB{Suppose $V_{\!1},V_{\!2},U_1,U_2$ are vecsps, $V_{\!1}\oplus U_1=V_{\!2}\oplus U_2,\;V_{\!1}\subseteq V_{\!2},\;U_2\subseteq U_1.$}
 	\TextB{Prove or give a counterexample\hspace{1pt}$:$ $V_{\!1}=V_{\!2},\;U_1=U_2.$}
 }A counterexample: \Sbra{ Using notations in Chapter 2. }\par\vspace{-36pt}\quad
-\hspace{360pt}\includegraphics[width=2.4cm,height=1.2cm,scale=0.22]{diagram1.png}\vspace{-4pt}\par\quad
+\hspace{360pt}\includegraphics[width=2.4cm,height=1.2cm,scale=0.22]{diagram1C-1.png}\vspace{-4pt}\par\quad
 Let $V=\Fbb^3,B_V=\Par{e_1,e_2,e_3},\;V_{\!1}=\Span{e_1},\;U_1=\Span{e_2,e_3},\;V_{\!2}=\Span{e_1,e_2},\;U_2=\Span{e_3}.$\par\quad
 Now $V_{\!1}\subseteq V_{\!2},\;U_2\subseteq U_1$ and $V_{\!1}\oplus U_1=V_{\!2}\oplus U_2.$ But $V_{\!1}\neq V_{\!2},\;U_1\neq U_2.$\PfEnd
 \SepLine
@@ -217,7 +217,7 @@ Now $V_{\!1}\subseteq V_{\!2},\;U_2\subseteq U_1$ and $V_{\!1}\oplus U_1=V_{\!2}
 	\TextNL{Let $V_{\!E}=\Bra{\,f\in\Rbb^{\Rbb}:\text{f is even}},V_{\!O}=\Bra{\,f\in\Rbb^{\Rbb}:\text{f is odd}}.$ Show that $V_{\!E}\oplus V_{\!O}=\Rbb^{\Rbb}.$\vspace{4pt}}
 }(a) {$V_{\!E}\cap V_{\!O}=\Bra{\,f\in\Rbb^{\Rbb}:f\Par{x}=f\Par{-x}=-f\Par{-x}}=\zeroSubs.$}\parSol{\vspace{8pt}}
 (b) $\hMath{l}{\left|}{\right\}}{$
-	Let \;$f_e\Par{x}=\Frac{\;1\;}{2}\XSbra{g\Par{x}+g\Par{-x}}\Longrightarrow f_e\in V_{\!E}\vspace{4pt}\\$
+	Let \;$f_e\Par{x}=\Frac{\;1\;}{2}\Sbra{g\Par{x}+g\Par{-x}}\Longrightarrow f_e\in V_{\!E}\vspace{4pt}\\$
 	Let \;$f_o\Par{x}=\Frac{\;1\;}{2}\XSbra{g\Par{x}-g\Par{-x}}\Longrightarrow f_o\in V_{\!O}
 	}\Rightarrow\forall g\in\Rbb^\Rbb,\;g\Par{x}=f_e\Par{x}+f_o\Par{x}.$\PfEnd\vspace{4pt}
 \SepLine
@@ -1017,20 +1017,22 @@ Define $T\in\Lm{V,W}$ by $T\Par{a_1 v_1+\dots+a_n v_n+b_1 u_1+\dots+b_m u_m}=a_1
 \SepLine\pagebreak
 
 \ProblemB[]{
-	\TipsN{1}\,\,\,\TextB{Suppose $U$ is a subsp of $V.$ Then $\forall T\in\Lm{V,W},U\cap\null T=\null T\mmid_U.$\vspace{2pt}}
+	\TipsN{1}\,\,\,\TextB{Suppose $U$ is a subsp of $V.$ Then $\forall T\in\Lm{V,W},U\cap\null T=\null T\mmid_U.$\vspace{0pt}}
 }%Note that $U\cap\null T\subseteq\null T\mmid_U.$ On the other hand, suppose $u\in\null T\mmid_U\subseteq U.$\parSol{}
 %Then $T\mmid_U\Par{u}=0$ makes sense and equals $Tu.$ Now $Tu=0\Rightarrow u\in\null T.$\PfEnd
 
 \ProblemB{
-	\TipsN{2}\,\,\,\TextB{Suppose $T\in\Lm{V,W}$ and $T\mmid_U:U\rightarrow\range T$ is inje and surj. Let $U=X+Y.$\vspace{3pt}}
-	{\IndentTipsN{2}}(a) \TextB{Show that $\range T=\range T\mmid_X+\range T\mmid_Y.$\vspace{3pt}}
-	{\IndentTipsN{2}}(b) \TextB{Show that if $X\cap Y=\zeroSubs,$ then $\range T\mmid_X\cap\range T\mmid_Y=\zeroSubs.$\vspace{2pt}}
-}(a) Because $\forall v\in V,\exists\,!\,u\in U,u_0\in\null T\Rightarrow\exists\,x\in X,y\in Y,v=\Par{x+y}+u_0.$\parSol{\Ha}
-Now $Tv=Tx+Ty\Rightarrow\range T=\range T\mmid_X+\range T\mmid_Y.$\parSol{\vspace{2pt}}
-(b) Assume that for some $v\in V,$ there exist two distinct pairs $\Par{x_1,y_1},\Par{x_2,y_2}$ in $X\times Y$\parSol{\Hb}
-such that $Tv=Tx_1+Ty_1=Tx_2+Ty_2.$ Because $\forall v\in X\oplus Y,\exists\,!\,\Par{x,y}\in X\times Y,v=x+y.$\parSol{\Hb}
-Now $T\Par{x_1+y_1}=T\Par{x_2+y_2}\Longrightarrow x_1+y_1=x_2+y_2\Longrightarrow x_1=x_2,y_1=y_2.$ Contradicts.\parSol{\Hb}
-Thus $\forall Tv\in\range T,\exists\,!\,Tx\in\range T\mmid_X,Ty\in\range T\mmid_Y,Tv=Tx+Ty.$\PfEnd
+	\TipsN{2}\,\,\,\TextB{Suppose $T\in\Lm{V,W}$ and $T\mmid_U$ is inje. Let $V=M+N,\;U=X+Y.$\vspace{0pt}}
+	{\IndentTipsN{2}}\TextB{Then $\range T=\range T\mmid_M+\range T\mmid_N=\range T\mmid_X+\range T\mmid_Y.$\vspace{1pt}}
+	{\IndentTipsN{2}}(a) \TextB{Show that if $U=X\oplus Y,$ then $\range T=\range T\mmid_X\oplus\range T\mmid_Y.$\vspace{1pt}}
+	{\IndentTipsN{2}}(b) \TextB{Give an example such that $V=M\oplus N,\;\range T\neq\range T\mmid_M\oplus\range T\mmid_N.$}
+}Assume that for some $v\in V,$ there exist two distinct pairs $\Par{x_1,y_1},\Par{x_2,y_2}$ in $X\times Y$\parSol{}
+such that $Tv=Tx_1+Ty_1=Tx_2+Ty_2.$ Because $\forall v\in X\oplus Y,\exists\,!\,\Par{x,y}\in X\times Y,v=x+y.$\parSol{}
+Now $T\Par{x_1+y_1}=T\Par{x_2+y_2}\Longrightarrow x_1+y_1=x_2+y_2\Longrightarrow x_1=x_2,y_1=y_2.$ Contradicts.\parSol{}
+Thus $\forall Tv\in\range T,\exists\,!\,Tx\in\range T\mmid_X,Ty\in\range T\mmid_Y,Tv=Tx+Ty.$\PfEnd\vspace{2pt}
+\Example\,\,\,Let $B_V=\Par{v_1,v_2,v_3},B_W=\Par{w_1,w_2},\;T:v_1\mapsto 0,\;v_2\mapsto w_1,\;v_3\mapsto w_2.$\par
+\Blind{\Example \,\,\,}Let $B_M=\Par{v_1-v_2,v_3},B_N=\Par{v_2}.$ Then $\range T\mmid_M=\Span{w_1,w_2},\range T\mmid_N=\Span{w_1}$\par
+\Comment \,\,\,Also $\null T\mmid_M=\null T\mmid_N=\zeroSubs.$ Hence $\null T\neq\null T\mmid_M\oplus\null T\mmid_N.$
 \SepLine
 
 \ProblemN{\hypertarget{3B12}{12}}{
@@ -1064,8 +1066,7 @@ Now $\forall v\in V,\exists\,!\,u_v\in U,\Par{x_v,y_v}\in X\times Y,v=u_v+x_v+y_
 \BulletPointX\TipsN{4}\,\,\,Suppose $T\in\Lm{V,W},T\neq 0.$ Let $B_{\range T}=\Par{Tv_1,\dots,Tv_n}.$\TextB{}
 By (3.A.4), $R=\Par{v_1,\dots,v_n}$ is linely inde in $V.$ Let $\Spn R=U.$ We will prove that $U\oplus\null T=V.$\TextB{\vspace{4pt}}
 (a) $T{\envFontLarge\BigPar{\sum_{i=1}^n a_i v_i}}=0\Longrightarrow \sum_{i=1}^n a_i Tv_i=0\Rightarrow a_1=\dots=a_n=0\Longrightarrow U\cap\null T=\zeroSubs.$\TextB{\vspace{6pt}}
-(b) $\forall v\in V, Tv=\sum_{i=1}^n a_i Tv_i\Longrightarrow T\envFontLarge\BigPar{v-\sum_{i=1}^n a_i v_i}=0$\TextB{\vspace{4pt}}\Hb
-$\Rightarrow v-\sum_{i=1}^n a_i v_i\in\null T\Longrightarrow v=\envFontLarge\BigPar{v-\sum_{i=1}^n a_i v_i}+\BigPar{\sum_{i=1}^n a_i v_i}\Rightarrow U+\null T=V.$\TextB{\vspace{4pt}}\Hb
+(b) $Tv=\sum_{i=1}^n a_i Tv_i\Rightarrow v-\sum_{i=1}^n a_i v_i\in\null T\Longrightarrow v=\envFontLarge\BigPar{v-\sum_{i=1}^n a_i v_i}+\BigPar{\sum_{i=1}^n a_i v_i}\Rightarrow U+\null T=V.$\TextB{\vspace{4pt}}\Hb
 \Or $\range T=\Bra{Tu:u\in U}=\range T\mmid_U.$ Then by the {\COROLLARY} in Problem (12).\PfEnd\vspace{2pt}
 \Corollary \,\,\,Conversely, if $U\oplus\null T=V$ and $B_U=\Par{v_1,\dots,v_n},$ then $B_{\range T}=\Par{Tv_1,\dots,Tv_n}.$\parCor
 Because $\range T=\range T\mmid_U=\Span{Tv_1,\dots,Tv_n},$ 又 $T$ is inje.
@@ -1201,12 +1202,38 @@ $\dim\range ST\leqslant \dim\range T$
 \ProblemN{\hypertarget{3B24}{24}}{
 	\TextNL{Suppose $S, T\in\Lm{V,W},$ and $\null S\subseteq\null T.$ Prove that $\exists\,E\in\Lm{W},T=ES$.}
 }\par\quad
-Define $E:\range S\rightarrow W$ by \uline{$E\Par{Sv}=Tv$} for all $Sv.$ Extend $E\in\Lm[\BigPar]{\range S,W}$ to $E\in\Lm{W}.$\par\quad
-{\normalsize\envFontSmall We check the linearity: $E\Par{Sv+\lambda Su}=E\BigPar{S\Par{v+\lambda u}}=T\Par{v+\lambda u}=Tv+\lambda Tu=E\Par{Sv}+\lambda E\Par{Su}.$}\PfEnd\vspace{6pt}\quad
-\Or Let \uline{$V=U\oplus\null S\Rightarrow S\mmid_{U}:U\rightarrow\range S$ is an iso.} Extend $T\BigPar{S\mmid_{U}}{^{-1}}$ to $E\in\Lm{W}.$\PfEnd\vspace{2pt}\quad
-\Comment \,\,\,Let $\Delta\oplus\null S=\null T,U_{\Delta}\oplus\Par{\Delta\oplus\null S}=V=U_{\Delta}\oplus\null T.$ \;Let $U=U_{\Delta}\oplus \Delta.$\parCom\quad
-So that $\BigPar{S\mmid_U}{^{-1}}:\range S\rightarrow \Delta\oplus U_{\Delta},\;T:U_{\Delta}\oplus\null T\rightarrow\range T.$\parCom\quad
-But $T\BigPar{S\mmid_{U}}{^{-1}}=T\mmid_{U_{\Delta}}\BigPar{S\mmid_{U}}{^{-1}}$ might not be inje, because $\range S\mmid_{\Delta}\subseteq\null T\BigPar{S\mmid_{U}}{^{-1}}.$\par\vspace{2pt}\quad
+Define $E:\range S\rightarrow W$ by \uline{$E:Sv\mapsto Tv.$} \,Extend $E\in\Lm[\BigPar]{\range S,W}$ to $E\in\Lm{W}.$\PfEnd\vspace{2pt}\quad
+\Or Let \uline{$V=U\oplus\null S\Rightarrow S\mmid_{U}:U\rightarrow\range S$ is an iso.} \,Extend $T\BigPar{S\mmid_{U}}{^{-1}}$ to $E\in\Lm{W}.$\PfEnd\vspace{2pt}\quad
+%\!$\hText{$Let \uline{$V=U\oplus\null S$}$\\$
+%	\uline{$\Rightarrow S\mmid_{U}:U\rightarrow\range S$ is an iso.}$\\$
+%	Extend $T\BigPar{S\mmid_{U}}{^{-1}}$ to $E\in\Lm{W}.}\hspace{-10pt}\small\left.\begin{tikzcd}
+%	{\range T} & V \\[4pt] & {\range S}
+%	\arrow["T", from=1-2, to=1-1]
+%	\arrow["S"', from=1-2, to=2-2]
+%	\arrow["E", from=2-2, to=1-1]
+%\end{tikzcd}\right|
+%%%%
+%\begin{tikzcd}
+%{U_{\Delta}\oplus\Delta} \\ {\range S} & {\range T\mmid_{U_{\Delta}}}
+%\arrow["S", no head, from=1-1, to=2-1]
+%\arrow["T"', from=1-1, to=2-2]
+%\arrow["{\SmallPar{\def\envFontA{\normalsize}S\mmid_U}{^{-1}}}", no head, from=2-1, to=1-1]
+%\arrow["E", from=2-1, to=2-2]\end{tikzcd}
+%%%%
+%\large\hText{$
+%	\Or Define $E:\range S\rightarrow W$ by \uline{$E:Sv\mapsto Tv.$}$\\$
+%	Extend $E\in\Lm[\BigPar]{\range S,W}$ to $E\in\Lm{W}.$
+%$}$\PfEnd\vspace{6pt}\quad
+\Comment \,\,\,Let $\Delta\oplus\null S=\null T,\;U_{\Delta}\oplus\Par{\Delta\oplus\null S}=V=U_{\Delta}\oplus\null T.$ \;Redefine $U=U_{\Delta}\oplus \Delta.$\par\vspace{2pt}\quad
+%\Or Let $U_{\Delta}\oplus\null T\mmid_U=U.$ Let $\Delta=\null T\mmid_U.$ Then $U_{\Delta}\oplus\null T=V,\;\Delta\oplus\null S=\null T.$\parCom\quad
+$\hText{$\includegraphics[width=80pt]{diagram3B-2}$}\hText{$
+	\Blind{$\range S\xlongleftarrow{S}{}$}$U_{\Delta}\xlongrightarrow{T}\range T\\[-7pt]$
+	$\range S\xlongleftarrow{S}\oplus\\[-6pt]$
+	\Blind{$\range S\xlongleftarrow{S}{}$}$\Delta\xlongrightarrow{T}\zeroSubs}\MathLeftMid{l}{$
+	Because $\Delta=\null T\mmid_U=\null T\cap\range\BigPar{S\mmid_U}{^{-1}}.\\$
+	Thus \,$E=T\BigPar{S\mmid_{U}}{^{-1}}$ is not inje $\Longleftrightarrow\Delta\neq\zeroSubs.\\$
+	In other words, $\range S\mmid_\Delta=\null E,\\$
+	while $E\mmid_{\def\envFontA{\normalsize}\range S\mmid_{U_\Delta}}:\range S\mmid_{U_\Delta}\rightarrow\range T$ is an iso.$}$\par\vspace{6pt}\quad
 \Corollary \,\,\,If $\null S=\null T.$ Then $\Delta=\zeroSubs,U_{\Delta}=U.$\parCor\quad
 By (3.D.3), we can extend inje $T\BigPar{S\mmid_{U}}{^{-1}}\in\Lm[\BigPar]{\range S,W}$ to inv $E\in\Lm{W}.$\vspace{6pt}\par\quad
 \Or \Sbra[3pt]{{\tgsl Req $\range S$ Finite-dim}} \;Let $B_{\range S}=\Par{Sv_1,\dots,Sv_n}$. Then \uline{$V=\Span{v_1,\dots,v_n}\oplus\null S$.}\par\quad
@@ -1222,7 +1249,7 @@ Now $V=U\oplus\null T=U\oplus\null S\Rightarrow B_{\range S}=\BigPar{Sv_1,\dots,
 	\TextNL{Suppose $S, T\in\Lm{V,W},$ and $\range T\subseteq\range S.$ Prove that $\exists\,E\in\Lm{V},T = SE$.}
 }\par\quad
 Let $V=U\oplus\null S\Rightarrow S\mmid_U:U\rightarrow\range S$ is an iso. Because $\Par{S\mmid_U}{^{-1}}:\underset{\supseteq\,\range T}{\uline{\range S}}\rightarrow U.$\par\vspace{-10pt}\quad
-\uline{Define $E=\Par{S\mmid_U}{^{-1}}T\in\Lm{V,U}.$} Then write $E\in\Lm{V}.$\PfEnd\vspace{4pt}\quad
+\uline{Define $E=\Par{S\mmid_U}{^{-1}}T=\Par{S\mmid_U}{^{-1}}\Big|{_{\range T}}T\in\Lm{V,U}\subseteq\Lm{V}.$}\PfEnd\vspace{4pt}\quad
 \Comment \,\,\,Let $U_1=U.$ Let $U_2\oplus\null T=V.$ Then $T\mmid_{U_2}:U_2\rightarrow\range T$ is an iso.\par\quad
 Note that $\range T\subsetneq\range S$ $\Longleftrightarrow T\mmid_{U_2}:U_2\rightarrow\range S$ \Sbra{ also $E\mmid_{U_2}:U_2\rightarrow U_1$\hspace{1pt}} is inje but not surj\par\quad
 \Blind{Note that $\range T\subsetneq\range S$}{ }$\Longleftrightarrow U_2$ is not iso to $\range S,$ so is $U_2$ to $U_1;\;$ $\underset{\text{By (3.D }\textsc{Tips}\text{)}}{\uline{\text{also }\null T\text{ to }\null S.}}$\par\vspace{-6pt}\quad
