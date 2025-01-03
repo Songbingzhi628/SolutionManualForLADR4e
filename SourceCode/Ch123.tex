@@ -1489,11 +1489,10 @@ $P\Rightarrow Q:$\,\;Because $\dim S_c=\dim S_r=1.$\vspace{4pt}\par\quad
 	\TextB{Prove that the following are equi.\;\;{\large\envFontDefault Here $A=\Mt{T}=\Mt[\BigPar]{T, \Par{u_1,\dots,u_n},\Par{v_1,\dots,v_n}}$.}\vspace{2pt}}
 	\TextB{{\tgnr\large(a)} $T$ is inje$;$ \; {\tgnr\large(b)} $\BigPar{A_{\cdot,1},\cdots,A_{\cdot,n}}$ is a basis of \,$\Fbb^{n,1};$ \; {\tgnr\large(c)} $\BigPar{A_{1,\cdot},\cdots,A_{n,\cdot}}$ is a basis of \,$\Fbb^{1,n}.$\vspace{3pt}}
 }$T$ is inje $\Longleftrightarrow\dim V=\dim\range T=n$\parSol{}
-\Blind{$T$ is inje} $\Longleftrightarrow B_V=\Par{Tu_1,\dots,Tu_n}\overset{\Delta}{\Longleftrightarrow}B_{\Fbb^{n,1}}=\BigPar{A_{\cdot,1},\cdots,A_{\cdot,n}}\xLongleftrightarrow[\text{[2.42]}]{\rank} B_{\Fbb^{1,n}}=\BigPar{A_{1,\cdot},\cdots,A_{n,\cdot}}.$\parSol{\vspace{2pt}}
-\Comment \,\,\,$T\apostrophe$ is inv $\Longleftrightarrow B_{V\apostrophe}=\BigPar{T\apostrophe\Par{\psi_1},\dots,T\apostrophe\Par{\psi_n}}\overset{\Delta}{\Longleftrightarrow}B_{\Fbb^{n,1}}=\envFontLarge\BigPar{\envFontDefault\Par{A^t}{_{\cdot,1}},\cdots,\Par{A^t}{_{\cdot,n}}\envFontLarge}.$\vspace{2pt}\parSol{\IndentComment}
-\Or Because each $A_{j,\cdot}=\fT\fC_j{\fT\Par{A}}.$ By [2.39], $B_{\Fbb^{1,n}}=\BigPar{A_{1,\cdot},\cdots,A_{n,\cdot}}.$\PfEnd\vspace{8pt}\quad
-Now we show $\Delta:$ [$P$] $B_V=\Par{Tu_1,\dots,Tu_n}\Longleftrightarrow B_{\Fbb^{n,1}}=\BigPar{A_{\cdot,1},\cdots,A_{\cdot,n}}.$ [$Q$]\par\quad
-Note that $\mathcal{M}\!:\,Tu_k\rightarrow A_{\cdot,k}$ is an iso of $V$ onto $\Fbb^{1,n}.$\PfEnd\vspace{2pt}\quad
+\Blind{$T$ is inje} $\Longleftrightarrow B_V=\Par{Tu_1,\dots,Tu_n}\overset{\Delta}{\Longleftrightarrow}B_{\Fbb^{n,1}}=\BigPar{A_{\cdot,1},\cdots,A_{\cdot,n}}\xLongleftrightarrow[\text{[2.42]}]{\rank} B_{\Fbb^{1,n}}=\BigPar{A_{1,\cdot},\cdots,A_{n,\cdot}}.$\par\vspace{2pt}\quad
+\Comment \,\,\,$T\apostrophe$ is inv $\Longleftrightarrow B_{V\apostrophe}=\BigPar{T\apostrophe\Par{\psi_1},\dots,T\apostrophe\Par{\psi_n}}$\parCom\quad
+\Blind{$T\apostrophe$ is inv }$\overset{\Delta}{\Longleftrightarrow}B_{\Fbb^{n,1}}={\envFontLarge\BigPar{\envFontDefault\Par{A^t}{_{\cdot,1}},\cdots,\Par{A^t}{_{\cdot,n}}\envFontLarge}}\xLongleftrightarrow{\text{[2.39]}} B_{\Fbb^{1,n}}=\XPar{\BigPar{\Par{A^t}{_{\cdot,1}}}{^t},\cdots,\BigPar{\Par{A^t}{_{\cdot,n}}}{^t}}.$\par\vspace{4pt}\quad
+Note that $\mathcal{M}\!:\,Tu_k\rightarrow A_{\cdot,k}$ is an iso of $V$ onto $\Fbb^{1,n}.$ Hence $\Delta$ holds.\PfEnd\vspace{4pt}\quad
 \Or Using {\TIPS} below. We show [$P$] $\Par{Tu_1,\dots,Tu_n}$ linely inde $\Longleftrightarrow\BigPar{A_{\cdot,1},\dots,A_{\cdot,n}}$ linely inde. [$Q$]\par\quad
 $P\Rightarrow Q:$\,\;Suppose $\;b_1A_{\cdot,1}+\dots+b_nA_{\cdot,n}=0.$ \;Let $u=b_1u_1+\dots+b_nu_n.$\par\quad
 \Blind{$Q\Rightarrow P:$\,\;}Then $Tu=\BigPar{b_1A_{1,1}+\dots+b_nA_{1,n}}v_1+\dots+\BigPar{b_1A_{n,1}+\dots+b_nA_{n,n}}v_n=0v_1+\dots+0v_n.$\par\quad
@@ -1577,7 +1576,7 @@ Then $\tau$ holds for matrices $\Longleftrightarrow\tau$ holds for linear maps.
 }Suppose $A\in\Fbb^{m,n}$ and $B,C\in\Fbb^{n,p}.$\parSol{}
 Note that $\Sbra{A\Par{B+C}}{_{j,k}}=\sum_{r=1}^n A_{j,r}\Par{B+C}{_{r,k}}=\sum_{r=1}^n \Par{A_{j,r}B_{r,k}+A_{j,r}C_{r,k}}=\Par{AB+AC}{_{j,k}}.$\PfEnd\parSol{\vspace{6pt}}
 \Or Define $T,S,R$ such that $\Mt{T}=A,\Mt{S}=B,\Mt{R}=C.$\parSol{}
-$A\Par{B+C}=\Mt{T\Par{S+R}}\xlongequal{[3.9]}\Mt{TS+TR}=AB+AC.$\parSol{}
+$A\Par{B+C}=\Mt{T\Par{S+R}}\xlongequal{\text{[3.9]}}\Mt{TS+TR}=AB+AC.$\parSol{}
 Or $T\Par{S+R}=TS+TR\Rightarrow\Mt{T\Par{S+R}}=\Mt{TS+TR}\Rightarrow A\Par{B+C}=AB+AC.$\PfEnd
 \SepLine
 
@@ -1587,7 +1586,7 @@ Or $T\Par{S+R}=TS+TR\Rightarrow\Mt{T\Par{S+R}}=\Mt{TS+TR}\Rightarrow A\Par{B+C}=
 }Suppose $A\in\Fbb^{m,n}$ and $B,C\in\Fbb^{n,p}.$ We show that $LHS=\Sbra{\Par{AB}C}_{j,k}=\Sbra{A\Par{BC}}_{j,k}=RHS.$\parSol{}
 $LHS=\Par{AB}{_{j,\cdot}}C_{\cdot,k}=\sum_{s=1}^n\Par{A_{j,s}B_{s,\cdot}}C_{\cdot,k}=\sum_{s=1}^n A_{j,s}\Par{B_{s,\cdot}C_{\cdot,k}}=\sum_{s=1}^n A_{j,s}\Par{BC}{_{s,k}}=RHS.$\PfEnd\parSol{\vspace{6pt}}
 \Or Define $T,S,R$ such that $\Mt{T}=A,\Mt{S}=B,\Mt{R}=C.$\parSol{}
-$\Par{AB}C=\Mt{T\Par{SR}}\xlongequal{[3.9]}\Mt{TSR}\xlongequal{[3.9]}\Mt{\Par{TS}R}=A\Par{BC}.$\parSol{}
+$\Par{AB}C=\Mt{T\Par{SR}}\xlongequal{\text{[3.9]}}\Mt{TSR}\xlongequal{\text{[3.9]}}\Mt{\Par{TS}R}=A\Par{BC}.$\parSol{}
 \Or $\Par{TS}R=T\Par{SR}\Rightarrow\Mt{\Par{TS}R}=\Mt{T\Par{SR}}\Rightarrow \Par{AB}C=A\Par{BC}.$\PfEnd
 \SepLine
 
