@@ -1824,29 +1824,29 @@ Hence $Tx=\Mt{Tx,B_2}=\Mt{T,B_1,B_2}\Mt{x,B_1}=Ax,$ by [3.65].\PfEnd
 
 \ProblemBnoor{4E 23, \OR \hypertarget{3D4e23}{10.A.4}}{
 	\TextB{Suppose that $\Par{\beta_1,\dots,\beta_n}$ and $\Par{\alpha_1,\dots,\alpha_n}$ are bases of $V$.}
-	\TextB{Let $T\in\Lm{V}$ be such that $T\alpha_k = \beta_k,\forall k.$ Prove that $\Mt{T,\alpha\rightarrow\alpha}=\Mt{I,\beta\rightarrow\alpha}$}
+	\TextB{Let $T\in\Lm{V}$ be such that each $T\alpha_k = \beta_k.$ Prove that $\Mt{T,\alpha\rightarrow\alpha}=\Mt{I,\beta\rightarrow\alpha}.$}
 	\TextB{{\large\envFontDefault For ease of notation, let $\Mt[\BigPar]{T,\alpha\rightarrow\beta}=\Mt[\BigPar]{T,\Par{\alpha_1,\dots,\alpha_n},\Par{\beta_1,\dots,\beta_n}}.$}}
 }\par\quad
 Denote $\Mt{T,\alpha\rightarrow\alpha}$ by $A$ and $\Mt{I,\beta\rightarrow\alpha}$ by $B.$\par\quad
-$\forall k\in\Bra{1,\dots,n},Iu_k=u_k=B_{1,k}\alpha_1+\dots+B_{n,k}\alpha_n=Tv_k=A_{1,k}\alpha_1+\dots+A_{n,k}\alpha_n\Rightarrow A=B.$\PfEnd\vspace{6pt}\quad
-\Or Note that $\Mt{T,\alpha\rightarrow\beta}=I.$ Hence $\Mt{T,\alpha\rightarrow\alpha}=\Mt{I,\beta\rightarrow\alpha}\underbrace{\Mt{T,\alpha\rightarrow\beta}}_{\envFontSmall=\Mt{I,\,\beta\rightarrow\beta}}=\Mt{I,\beta\rightarrow\alpha}.$\PfEnd\vspace{-8pt}\quad
+$\forall k\in\Bra{1,\dots,n},I\beta_k=\beta_k=B_{1,k}\alpha_1+\dots+B_{n,k}\alpha_n=Tv_k=A_{1,k}\alpha_1+\dots+A_{n,k}\alpha_n\Rightarrow A=B.$\PfEnd\vspace{6pt}\quad
+\Or Note that $\Mt{T,\alpha\rightarrow\beta}=I.$ Hence $\Mt{T,\alpha\rightarrow\alpha}=\Mt{I,\beta\rightarrow\alpha}\underbrace{\Mt{T,\alpha\rightarrow\beta}}_{\envFontSmall=\;\Mt{I,\,\beta\rightarrow\beta}}=\Mt{I,\beta\rightarrow\alpha}.$\PfEnd\vspace{-8pt}\quad
 \Or Note that $\Mt{T,\beta\rightarrow\beta}\Mt{I,\alpha\rightarrow\beta}=\Mt{T,\alpha\rightarrow\beta}=I.$\vspace{2pt}\par\quad
 $\Mt{T,\alpha\rightarrow\alpha}=\Mt{I,\alpha\rightarrow\beta}{^{-1}}\XPar{\,\underbrace{\Mt{T,\beta\rightarrow\beta}\Mt{ I,\alpha\rightarrow\beta}}_{\envFontSmall=\Mt{T,\,\alpha\rightarrow\beta}}\,}=\Mt{I,\beta\rightarrow\alpha}.$\PfEnd\vspace{-4pt}\quad
 \Comment\,\,\, Let $A\apostrophe=\Mt{T,\beta\rightarrow\beta}.$\par\quad
-$u_k=Iu_k=B_{1,k}\alpha_1+\dots+B_{n,k}\alpha_n,\,\,\forall \,\,k\in\Bra{1,\dots,n}.$\par\quad
-又 \,\,\,\,\,$Tu_k=T\Par{B_{1,k}\alpha_1+\dots+B_{n,k}\alpha_n}=B_{1,k}\beta_1+\dots+B_{n,k}\beta_n=A\apostrophe_{1,k}\beta_1+\dots+A\apostrophe_{n,k}\beta_n\Rightarrow A\apostrophe=B$.\par\quad
+$\beta_k=I\beta_k=B_{1,k}\alpha_1+\dots+B_{n,k}\alpha_n,\,\,\forall \,\,k\in\Bra{1,\dots,n}.$\par\quad
+又 \,\,\,\,\,$T\beta_k=T\Par{B_{1,k}\alpha_1+\dots+B_{n,k}\alpha_n}=A'_{1,k}\beta_1+\dots+A'_{n,k}\beta_n\Rightarrow A\apostrophe=B$.\par\quad
 \Or $\Mt{T,\beta\rightarrow\beta}=\Mt{T,\alpha\rightarrow\beta}\Mt{I,\beta\rightarrow\alpha}=B.$\par
 \SepLine
 
 \BulletPointX\Tips \,\,\,When using $\Mneg,$ you must first declare bases and the purpose for using $\Mneg.$\TextB{}
-\IndentTips{}That is, to declare $B_U,B_V,B_W,\;\mathcal{M}:\Lm{V,W}\mapsto\Fbb^{m,n},$ or $\mathcal{M}:v\mapsto\Fbb^{n,1}.$\TextB{}
+\IndentTips{}That is, to declare $B_U,B_V,B_W,\;\mathcal{M}\!:\Lm{V,W}\mapsto\Fbb^{m,n},$ or $\mathcal{M}\!:v\mapsto\Fbb^{n,1}.$\TextB{}
 \IndentTips{}So that $\Mneg\Par{AC,B_U,B_W}=\Mneg\Par{A,B_V,B_W}\Mneg\Par{C,B_U,B_V};$\TextB{}
 \IndentTips{}Or $\Mneg\Par{Ax,B_W}=\Mneg\Par{A,B_V,B_W}\Mneg\Par{x,B_V}.$ Where everything is well-defined.
 \SepLine
 
 \ProblemBnoor{4E 22, \OR \hypertarget{3D4e22}{10.A.1}}{
 	\TextB{Suppose $T\in\Lm{V}.$ Prove that $\Mt{T,B_V}$ is inv $\Longleftrightarrow T$ itself is inv.}
-}Notice that $\mathcal{M}:T\mapsto\Mt{T,B_V}$ is an iso. And that $\Mt{T}\Mt{S}=\Mt{TS}.$\vspace{2pt}\par\quad
+}Notice that $\mathcal{M}\!:T\mapsto\Mt{T,B_V}$ is an iso. And that $\Mt{T}\Mt{S}=\Mt{TS}.$\vspace{2pt}\par\quad
 (a) $T^{-1}T=TT^{-1}=I\Rightarrow\Mt{T^{-1}}\Mt{T}=\Mt{I}=\Mt{T}\Mt{T^{-1}}\Rightarrow\Mt{T^{-1}}=\Mt{T}{^{-1}}.$\vspace{2pt}\par\quad
 (b) $\Mt{T}\Mt{T}{^{-1}}=\Mt{T}{^{-1}}\Mt{T}=I,\;\exists\,!\,S\in\Lm{V}$ such that $\Mt{T}{^{-1}}=\Mt{S}$\par\quad\Hb
 $\Rightarrow\Mt{TS}=\Mt{T}\Mt{S}=I=\Mt{S}\Mt{T}=\Mt{ST}$\par\quad\Hb
@@ -1857,13 +1857,13 @@ $\Rightarrow\Mneg\Mt{TS}=\Mneg\Mt{ST}=I$\large$\,=\,TS=ST\Rightarrow S=T^{-1}.$\
 	\TextNL{Suppose $A,B\in\Fbb^{n,n}$. Prove that $AB = I\Longleftrightarrow BA=I.$\hfill\small\envFontSmall\Sbra{Using Problem (10, 15).}}
 }Define $T,S\in\Lm{\Fbb^{n,1}}$ by $Tx=Ax,Sx=Bx$ for all $x\in\Fbb^{n,1}.$ Now $\Mt{T}=A,\Mt{S}=B.$\parSol{}
 $AB=I\Leftrightarrow A\Par{Bx}=x\Longleftrightarrow T\Par{Sx}=x\Leftrightarrow TS=I\Longleftrightarrow ST=I\Longleftrightarrow \Mt{S}\Mt{T}=BA=I.$\parSol{}
-\Or Because $\mathcal{M}:\Lm{\Fbb^{n,1},\Fbb^{n,1}}\rightarrow\Fbb^{n,n}$ is an iso. $\Mneg\Par{AB}=TS=ST=\Mneg\Par{BA}=I.$\PfEnd
+\Or Because $\mathcal{M}\!:\Lm{\Fbb^{n,1},\Fbb^{n,1}}\rightarrow\Fbb^{n,n}$ is an iso. $\Mneg\Par{AB}=TS=ST=\Mneg\Par{BA}=I.$\PfEnd
 \SepLine\pagebreak
 
 \BulletPointX\NoteFor{[3.60]}\;\;Suppose $B_V=\Par{v_1,\dots,v_n},\;B_W=\Par{w_1,\dots,w_m}$.\TextB{\vspace{2pt}}
 {Define $E_{i,j}\in\Lm{V,W}$ by $E_{i,j}\Par{v_x}=\delta_{i,x} w_j.$} \quad\Corollary\,\,\, \envFontLarge{\Large$E_{l,k}E_{i,j}=\delta_{j,l}E_{i,k}.$}\TextB{}
 {\Large Denote \envFontLarge$\Mt{E_{i,j}}$ by $\mathcal{E}^{\SmallPar[1pt]{j,i}}.$} And $\BigPar{\mathcal{E}^{\SmallPar[1pt]{j,i}}}_{l,k}=\MathLeftBrace{l}{1,\;\;\text{if }\Par[3pt]{i,j}=\Par[3pt]{l,k};\\0,\hfill\text{otherwise.}}$\TextB{\vspace{4pt}}
-{\NOTICE that $\mathcal{M}:\Lm{V,W}\rightarrow\Fbb^{m,n}$ is an iso. And $E_{i,j}=\Mneg\mathcal{E}^{\SmallPar[1pt]{j,i}}$.}\TextB{\vspace{4pt}}
+{\NOTICE that $\mathcal{M}\!:\Lm{V,W}\rightarrow\Fbb^{m,n}$ is an iso. And $E_{i,j}=\Mneg\mathcal{E}^{\SmallPar[1pt]{j,i}}$.}\TextB{\vspace{4pt}}
 %Hence $\forall T\in\Lm{V,W},\exists\,!\,A\in\Fbb^{m,n},\Mt{T}=A.$\TextB{}
 Thus $A={}${\normalsize$\envFontSmall[\scriptsize]\begin{pmatrix}
 A_{1,1}\mathcal{E}^{\Par{1,1}}\;\;+&\hspace{-6pt}
@@ -1999,8 +1999,8 @@ Now $\exists\,p\in\PoR{n}, q\Par{x}=T_n\Par{p}=\Par{x^2 + x}p\apostrophe\apostro
 }(a) $T$ is inje $\Longleftrightarrow\forall n\in\Nbp,T\mmid_{\PoR[\SmallPar]{n}}\in\Lm[\BigPar]{\PoR{n}}$ is inje, so is inv $\Longleftrightarrow T$ is surj.\par\quad
 (b) Using mathematical induction.\par\quad
 (i) $\deg p=-\infty\geqslant\deg Tp\Longleftrightarrow p=0=Tp.$ And $\deg p=0\geqslant\deg Tp\Longleftrightarrow p=C\neq 0.$\par\vspace{2pt}\quad\Endi
-(ii) Assume $\forall s\in\PoR{n},\deg s=\deg Ts.$ We show $\forall p\in\Po_{n+1}\Par{\Rbb},\deg Tp=\deg p$ by contradiction.\par\quad\Hii
-Suppose $\exists\,r\in\PoR{n+1},\;\deg Tr\leqslant n<n+1=\deg r.$ Then by (a), $\exists\,s\in\Po_{n}\Par{\Rbb},\;T\Par{s}=\Par{Tr}.$\par\quad\Hii
+(ii) Assume $\forall s\in\PoR{n},\deg s=\deg Ts.$ We show $\forall p\in\PoR{n+1},\deg Tp=\deg p$ by contradiction.\par\quad\Hii
+Suppose $\exists\,r\in\PoR{n+1},\;\deg Tr\leqslant n<n+1=\deg r.$ Then by (a), $\exists\,s\in\PoR{n},\;T\Par{s}=\Par{Tr}.$\par\quad\Hii
 又 $T$ is inje $\Rightarrow s=r.$ While $\deg s=\deg Ts=\deg Tr<\deg r.$ Contradicts.\PfEnd
 \SepLine
 
