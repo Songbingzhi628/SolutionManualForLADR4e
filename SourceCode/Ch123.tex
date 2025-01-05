@@ -407,9 +407,9 @@ $Q\Rightarrow P:\forall v\in V,\exists\,!\,b_i\in\Fbb,\;v=b_1w_1+\dots+b_mw_m\Ri
 	(a) \TextB{Show that [P] $B$ is linely inde in $V$ $\Longleftrightarrow B$ is linely inde in $V_{\!\Cbb}.$ [Q]}
 	(b) \TextB{Show that [P] $B$ spans $V$ $\Longleftrightarrow B$ spans $V_{\!\Cbb}.$ [Q]\vspace{2pt}}
 }{\envFontSmall\normalsize\par\quad
-(a) $P\Rightarrow Q:$ \;Note that each $v_k\in V_{\!\Cbb}.$ \;\; $Q\Rightarrow P:$ \;If $\lambda_k\in\Rbb$ with $\lambda_1v_1+\dots+\lambda_nv_n=0,$ then each $\mathfrak{Re}\,\lambda_k=\lambda_k=0.$\par\quad
+(a) $P\Rightarrow Q:$ \;Note that each $v_k\in V_{\!\Cbb}.$ \;\; $Q\Rightarrow P:$ \;If $\lambda_k\in\Rbb$ with $\lambda_1v_1+\dots+\lambda_nv_n=0,$ then each $\Real\lambda_k=\lambda_k=0.$\par\quad
 \Blind{(a)} ${}^\neg P\Rightarrow{}^\neg Q:$ \;$\exists\,v_j=a_{j-1}v_{j-1}+\dots+a_1v_1\in V_{\!\Cbb}.$\par\quad
-\Blind{(a)} ${}^\neg Q\Rightarrow{}^\neg P:$ \;$\exists\,v_j=\lambda_{j-1}v_{j-1}+\dots+\lambda_1v_1\Rightarrow v_j=\Par{\mathfrak{Re}\,\lambda_{j-1}}v_{j-1}+\dots+\Par{\mathfrak{Re}\,\lambda_1}v_1\in V.$\par\vspace{3pt}\quad
+\Blind{(a)} ${}^\neg Q\Rightarrow{}^\neg P:$ \;$\exists\,v_j=\lambda_{j-1}v_{j-1}+\dots+\lambda_1v_1\Rightarrow v_j=\Par{\Real\lambda_{j-1}}v_{j-1}+\dots+\Par{\Real\lambda_1}v_1\in V.$\par\vspace{3pt}\quad
 (b) $P\Rightarrow Q:$ \;$\forall u+\i v\in V_{\!\Cbb},\;u,v\in V\Rightarrow\exists\,a_i,b_i\in\Rbb,u+\i v=\sum_{i=1}^n\Par{a_i+\i b_i}v_i.$\par\quad
 \Blind{(b)} $Q\Rightarrow P:$ \;$\forall v\in V,\exists\,\!\,a_i+\i b_i\in\Cbb,\;v+\i 0=\envFontDefault\BigPar{\!\sum_{i=1}^na_iv_i}+\i\,\BigPar{\!\sum_{i=1}^nb_iv_i}\envFontSmall\Rightarrow v\in\Span{v_1,\dots,v_m}.$\par\quad
 \Blind{(b)} ${}^\neg Q\Rightarrow{}^\neg P:$ \;$\exists\,v\in V,v\not\in\Span{B}\Rightarrow v+\i 0\not\in\Span{B}$ while $v+\i 0\in V_{\!\Cbb}.$\par\quad
@@ -770,7 +770,7 @@ Suppose $v\in V\Rightarrow v=au,\,\exists\,!\,a\in\Fbb$. Then $Tv=T\Par{au}=\lam
 
 \ProblemN{\hypertarget{3A9}{9}}{
 	\TextN{Give a map $\varphi:\Cbb\rightarrow\Cbb$ such that $\forall w,z\in\Cbb,\varphi\Par{w + z} = \varphi\Par{w} + \varphi\Par{z}$ but $\varphi$ is not linear.}
-}Define $\varphi\Par{u+\i v}=u=\mathfrak{Re}\Par{u+\i v}$\quad\Or Define $\varphi\Par{u+\i v}=v=\mathfrak{Im}\Par{u+\i v}.$\PfEnd
+}Define $\varphi\Par{u+\i v}=u=\REAL\Par{u+\i v}$\quad\Or Define $\varphi\Par{u+\i v}=v=\IMAGINARY\Par{u+\i v}.$\PfEnd
 \SepLine
 
 \ProblemB{
@@ -1341,10 +1341,10 @@ So that $\exists\,!\,a_i\in\Rbb,p=\sum_{i=1}^{m+1}a_ip_i\Rightarrow\exists\,q=\s
 \SepLine
 \ChEnd\pagebreak
 
-\vfill\ChDecl{Ch3C}{3$\cdot$C}{}\orMode{\hLk{3C1}{1}\;\;\hLk{3C3}{3}\;\;\hLk{3C4}{4}\;\;\hLk{3C5}{5}\;\;\hLk{3C6}{6}\;\;\hLk{3C9}{9}\;\;\hLk{3C10}{10}\;\;\hLk{3C11}{11}\;\;\hLk{3C12}{12}\;\;\hLk{3C13}{13}\;\;\hLk{3C14}{14}\;\;\hLk{3C15}{15}\;\;|\;\;\hLk{3C4e16}{4E:\;\;16}\;\;\hLk{3C4e17}{17}}{[1]: 10, 9, 11; [2]: (4E 16, 17); [3]: 1, 3, 4, 5, 6; [4]: 13, 14, 15, 12.}
+\vfill\ChDecl{Ch3C}{3$\cdot$C}{}\orMode{\hLk{3C1}{1}\;\;\hLk{3C3}{3}\;\;\hLk{3C4}{4}\;\;\hLk{3C5}{5}\;\;\hLk{3C6}{6}\;\;\hLk{3C9}{9}\;\;\hLk{3C10}{10}\;\;\hLk{3C11}{11}\;\;\hLk{3C13}{13}\;\;|\;\;\hLk{3C4e16}{4E:\;\;16}\;\;\hLk{3C4e17}{17}}{[1]: 10, 9, 11; [2]: (4E 16); [3]: (4E 17); [4]: 13, 1, 6; [5]: 3, 4, 5.}
 \vspace{8pt}
 
-\def\fT{\mathcal{T}}\def\fC{\mathcal{C}}\def\fR{\mathcal{R}}\def\fP{\mathcal{P}}
+\def\fT{\mathcal{T}}\def\fC{\mathcal{C}}\def\fR{\mathcal{R}}\def\fP{\mathcal{E}}
 
 \BulletPointX\NoteForSmall{Transpose}\;\;{\normalsize\envFontSmall\Sbra{\hypertarget{3F33}{3.F.33}}}\;Define $\fT:A\rightarrow A^t.$ By [3.111], $\fT$ is linear. Because $\Par{A^t}{^t}=A.$ \TextB{}
 $\fT^2=I,\,\fT=\fT^{-1}\Rightarrow \fT$ is an iso of $\Fbb^{m,n}$ onto $\Fbb^{n,m}.$ \;Define $\fC_k:A\rightarrow A_{\cdot,k},\;\fR_j:A\rightarrow A_{j,\cdot},\;\fP_{j,k}:A\rightarrow A_{j,k}.$\TextB{}
@@ -1484,27 +1484,102 @@ $P\Rightarrow Q:$\,\;Because $\dim S_c=\dim S_r=1.$\vspace{4pt}\par\quad
 %(b) Suppose the rows of $A$ are linely inde, so are the cols of $A^t$. \NOTICE that $A^t$ has $\dim V\apostrophe$ cols.
 %Then $B_{\range T\apostrophe}=B_{V\apostrophe}=\BigPar{T\apostrophe\Par{\varphi_1},\dots,T\apostrophe\Par{\varphi_m}}.$ Thus $T\apostrophe$ is surj. Hence $T\apostrophe$ is inv, so is $T.$\par
 
-\ProblemBnoor{\hypertarget{3C4e17}{4E 17}, \OR 3.F.32}[\Sbra]{
-	\TextB{Suppose $T\in\Lm{V}$ and $\Par{u_1,\dots,u_n},\Par{v_1,\dots,v_n}$ are bases of $V$.}
-	\TextB{Prove that the following are equi.\;\;{\large\envFontDefault Here $A=\Mt{T}=\Mt[\BigPar]{T, \Par{u_1,\dots,u_n},\Par{v_1,\dots,v_n}}$.}\vspace{2pt}}
-	\TextB{{\tgnr\large(a)} $T$ is inje$;$ \; {\tgnr\large(b)} $\BigPar{A_{\cdot,1},\cdots,A_{\cdot,n}}$ is a basis of \,$\Fbb^{n,1};$ \; {\tgnr\large(c)} $\BigPar{A_{1,\cdot},\cdots,A_{n,\cdot}}$ is a basis of \,$\Fbb^{1,n}.$\vspace{3pt}}
-}$T$ is inje $\Longleftrightarrow\dim V=\dim\range T=n$\parSol{}
-\Blind{$T$ is inje} $\Longleftrightarrow B_V=\Par{Tu_1,\dots,Tu_n}\overset{\Delta}{\Longleftrightarrow}B_{\Fbb^{n,1}}=\BigPar{A_{\cdot,1},\cdots,A_{\cdot,n}}\xLongleftrightarrow[\text{[2.42]}]{\rank} B_{\Fbb^{1,n}}=\BigPar{A_{1,\cdot},\cdots,A_{n,\cdot}}.$\par\vspace{2pt}\quad
-\Comment \,\,\,$T\apostrophe$ is inv $\Longleftrightarrow B_{V\apostrophe}=\BigPar{T\apostrophe\Par{\psi_1},\dots,T\apostrophe\Par{\psi_n}}$\parCom\quad
-\Blind{$T\apostrophe$ is inv }$\overset{\Delta}{\Longleftrightarrow}B_{\Fbb^{n,1}}={\envFontLarge\BigPar{\envFontDefault\Par{A^t}{_{\cdot,1}},\cdots,\Par{A^t}{_{\cdot,n}}\envFontLarge}}\xLongleftrightarrow{\text{[2.39]}} B_{\Fbb^{1,n}}=\XPar{\BigPar{\Par{A^t}{_{\cdot,1}}}{^t},\cdots,\BigPar{\Par{A^t}{_{\cdot,n}}}{^t}}.$\par\vspace{4pt}\quad
-Note that $\mathcal{M}\!:\,Tu_k\rightarrow A_{\cdot,k}$ is an iso of $V$ onto $\Fbb^{1,n}.$ Hence $\Delta$ holds.\PfEnd\vspace{4pt}\quad
-\Or Using {\TIPS} below. We show [$P$] $\Par{Tu_1,\dots,Tu_n}$ linely inde $\Longleftrightarrow\BigPar{A_{\cdot,1},\dots,A_{\cdot,n}}$ linely inde. [$Q$]\par\quad
-$P\Rightarrow Q:$\,\;Suppose $\;b_1A_{\cdot,1}+\dots+b_nA_{\cdot,n}=0.$ \;Let $u=b_1u_1+\dots+b_nu_n.$\par\quad
-\Blind{$Q\Rightarrow P:$\,\;}Then $Tu=\BigPar{b_1A_{1,1}+\dots+b_nA_{1,n}}v_1+\dots+\BigPar{b_1A_{n,1}+\dots+b_nA_{n,n}}v_n=0v_1+\dots+0v_n.$\par\quad
-\Blind{$Q\Rightarrow P:$\,\;}Now $b_1Tu_1+\dots+b_nTu_n=0.$ Then each $b_k=0.$ Thus $\BigPar{A_{\cdot,1},\dots,A_{\cdot,n}}$ is linely inde.\vspace{4pt}\par\quad
-$Q\Rightarrow P:$\,\;Because $b_1Tu_1+\dots+b_nTu_n=0\Rightarrow b_1A_{1,1}+\dots+b_nA_{1,n}=\dots=b_1A_{n,1}+\dots+b_nA_{n,n}=0.$\par\quad
-\Blind{$Q\Rightarrow P:$\,\;}Which is equi to $b_1A_{\cdot,1}+\dots+b_nA_{\cdot,n}=0.$ \;Thus each $b_k=0\Rightarrow\null T=\zeroSubs.$\PfEnd\vspace{4pt}
-\BulletPointX\Tips \,\,\,$b_1Tu_1+\dots+b_nTu_n=b_1\BigPar{A_{1,1}v_1+\dots+A_{n,1}v_n}+\dots+b_n\BigPar{A_{1,n}v_1+\dots+A_{n,n}v_n}$\TextB{\vspace{2pt}}
-\IndentTips{}$\Blind{b_1Tu_1+\dots+b_nTu_n}=\BigPar{b_1A_{1,1}+\dots+b_nA_{1,n}}v_1+\dots+\BigPar{b_1A_{n,1}+\dots+b_nA_{n,n}}v_n.$\TextB{\vspace{4pt}}
-\IndentTips{}And \;$b_1A_{\cdot,1}+\dots+b_nA_{\cdot,n}=b_1{\normalsize\begin{pmatrix}A_{1,1}\\[-4pt]\vdots\\[-4pt]A_{n,1}\end{pmatrix}}+\dots+b_n{\normalsize\begin{pmatrix}A_{1,n}\\[-4pt]\vdots\\[-4pt]A_{n,n}\end{pmatrix}}{}={}\normalsize\begin{pmatrix}
-b_1 A_{1,1}+\dots+b_nA_{1,n}\\[-4pt]\vdots\\[-4pt]
-b_1A_{n,1}+\dots+b_nA_{n,n}\end{pmatrix}$.\vspace{10pt}
+\ProblemB{
+	\TipsN{1}\,\,\,\TextB{Suppose $T\in\Lm{V,W},\;B_V=\Par{v_1,\dots,v_n},B_W=\Par{w_1,\dots,w_m}.$\vspace{-1pt}}
+	\IndentTipsN{1}{\tgsl Let $L=\BigPar{Tv_{\alpha_1},\dots,Tv_{\alpha_k}},\;M=\BigPar{A_{\cdot,\alpha_1},\cdots,A_{\cdot,\alpha_k}},$ where each $\alpha_i\in\Bra{1,\dots,n}.$}\TextB{\vspace{1pt}}
+	\IndentTipsN{1}(a) \TextB{Show that [P] $L$ is linely inde $\Longleftrightarrow M$ is linely inde. [Q]\vspace{2pt}}
+	\IndentTipsN{1}(b) \TextB{Show that [P] $\Spn L=W\Longleftrightarrow\Spn M=\Fbb^{m,1}.$ [Q]\hfill\large\envFontDefault\Sbra{ Let $A=\Mt{T,B_V,B_W}.$\hspace{1pt}}}
+}\par\quad
+(a) Note that $\mathcal{M}\!:\,Tv_k\rightarrow A_{\cdot,k}$ is an iso of $W$ onto $\Fbb^{m,1}.$ \quad (b) Reduce $L$ to $B_W',\;M$ to $B_{\Fbb^{m,1}}.$ Similarly.\PfEnd\vspace{4pt}\quad
+\Or\;$c_1Tv_{\alpha_1}+\dots+c_kTv_{\alpha_k}=c_1\BigPar{A_{1,{\alpha_1}}w_1+\dots+A_{m,{\alpha_1}}w_m}+\dots+c_k\BigPar{A_{1,{\alpha_k}}w_1+\dots+A_{m,{\alpha_k}}w_m}$\par\vspace{2pt}\quad
+\Blind{\Or\;}$\Blind{c_1Tv_{\alpha_1}+\dots+c_kTv_{\alpha_k}}=\BigPar{c_1A_{1,{\alpha_1}}+\dots+c_kA_{1,{\alpha_k}}}w_1+\dots+\BigPar{c_1A_{m,{\alpha_1}}+\dots+c_kA_{m,{\alpha_k}}}w_m.$\par\vspace{4pt}\quad
+\Blind{\Or\;}And \;$c_1A_{\cdot,{\alpha_1}}+\dots+c_kA_{\cdot,{\alpha_k}}=c_1{\normalsize\begin{pmatrix}A_{1,{\alpha_1}}\\[-4pt]\vdots\\[-10pt]A_{m,{\alpha_1}}\end{pmatrix}}+\dots+c_k{\normalsize\begin{pmatrix}A_{1,{\alpha_k}}\\[-4pt]\vdots\\[-10pt]A_{m,{\alpha_k}}\end{pmatrix}}{}={}\normalsize\begin{pmatrix}c_1 A_{1,{\alpha_1}}+\dots+c_kA_{1,{\alpha_k}}\\[-4pt]\vdots\\[-4pt]c_1A_{m,{\alpha_1}}+\dots+c_kA_{m,{\alpha_k}}\end{pmatrix}$.\par\vspace{6pt}\quad
+(a) $P\Rightarrow Q:$\,\;Suppose $\;c_1A_{\cdot,{\alpha_1}}+\dots+c_kA_{\cdot,{\alpha_k}}=0.$ \;Let $v=c_1v_{\alpha_1}+\dots+c_kv_{\alpha_k}.$\par\quad\Ha
+\Blind{$Q\Rightarrow P:$\,\;}Then $Tv=\BigPar{c_1A_{1,{\alpha_1}}+\dots+c_kA_{1,{\alpha_k}}}w_1+\dots+\BigPar{c_1A_{m,{\alpha_1}}+\dots+c_kA_{m,{\alpha_k}}}w_m=0w_1+\dots+0w_m.$\par\quad\Ha
+\Blind{$Q\Rightarrow P:$\,\;}Now $c_1Tv_{\alpha_1}+\dots+c_kTv_{\alpha_k}=0.$ Then each $c_i=0\Rightarrow M$ linely inde.\vspace{4pt}\par\quad\Ha
+$Q\Rightarrow P:$\,\;Because $c_1Tv_{\alpha_1}+\dots+c_kTv_{\alpha_k}=0.$ For each $i\in\Bra{1,\dots,m},\;c_1A_{i,{\alpha_1}}+\dots+c_kA_{i,{\alpha_k}}=0.$\par\quad\Ha
+\Blind{$Q\Rightarrow P:$\,\;}Which is equi to $c_1A_{\cdot,{\alpha_1}}+\dots+c_kA_{\cdot,{\alpha_k}}=0.$ \;Thus each $c_i=0\Rightarrow L$ linely inde.\par\vspace{4pt}\quad\Ha
+\Or\;$\exists\,A_{\cdot,{\alpha_j}}=c_1A_{\cdot,{\alpha_1}}+\dots+c_{j-1}A_{\cdot,{\alpha_{j-1}}}$\par\quad\Ha
+\Blind{\Or\;}$\Longleftrightarrow$ For each $i\in\Bra{1,\dots,m},\;A_{i,{\alpha_j}}=c_1A_{i,{\alpha_1}}+\dots+c_{j-1}A_{i,{\alpha_{j-1}}}$\par\quad\Ha
+\Blind{\Or\;}$\Longleftrightarrow Tv_{\alpha_j}=A_{1,{\alpha_j}}w_1+\dots+A_{m,{\alpha_j}}w_m$\par\vspace{2pt}\quad\Ha
+\Blind{\Or\;}$\Blind{\Longleftrightarrow Tv_{\alpha_j}}=\BigPar{c_1A_{1,{\alpha_1}}+\dots+c_{j-1}A_{1,{\alpha_{j-1}}}}w_1+\dots+\BigPar{c_1A_{m,{\alpha_1}}+\dots+c_{j-1}A_{m,{\alpha_{j-1}}}}w_m$\par\vspace{2pt}\quad\Ha
+%\Blind{\Or}$\Blind{\Longleftrightarrow Tv_{\alpha_j}}=c_1\BigPar{A_{1,\alpha_1}w_1+\dots+A_{m,\alpha_1}w_m}+\dots+c_{j-1}\BigPar{A_{1,\alpha_{j-1}}w_1+\dots+A_{m,\alpha_{j-1}w_m}}$\par\quad\Ha
+\Blind{\Or\;}$\Longleftrightarrow\exists\,Tv_{\alpha_j}=c_1Tv_{\alpha_1}+\dots+c_{j-1}Tv_{\alpha_{j-1}}.$\par\vspace{6pt}\quad
+(b) Note that each $\Mt{Tv_{\alpha_i}}=A_{\cdot,\alpha_i}$\par\quad\Hb
+$P\Rightarrow Q:$\,\;Suppose each $w_i=Iw_i=J_{1,i}Tv_{\alpha_1}+\dots+J_{k,i}Tv_{\alpha_k}.$\par\quad\Hb
+%Then fix one $J=\Mt{I,B_W,L}\in\Fbb^{k,m}.$
+\Blind{$Q\Rightarrow P:$\,\;}$\forall a\in\Fbb^{m,1},\exists\,w=a_1w_1+\dots+a_mw_m\in W,\;a=\Mt{w,B_W}.$\par\quad\Hb
+\Blind{$Q\Rightarrow P:$\,\;}Because $w=a_1\BigPar{J_{1,1}Tv_{\alpha_1}+\dots+J_{k,1}Tv_{\alpha_k}}+\dots+a_m\BigPar{J_{1,m}Tv_{\alpha_1}+\dots+J_{k,m}Tv_{\alpha_k}}$\par\vspace{2pt}\quad\Hb
+\Blind{$Q\Rightarrow P:$\,\;Because} $\Blind{w}=\BigPar{a_1J_{1,1}+\dots+a_mJ_{1,m}}Tv_{\alpha_1}+\dots+\BigPar{a_1J_{k,1}+\dots+a_mJ_{k,m}}Tv_{\alpha_k}.$\par\vspace{2pt}\quad\Hb
+\Blind{$Q\Rightarrow P:$\,\;}Apply $\mathcal{M}$ to both sides, $a=c_1A_{\cdot,\alpha_1}+\dots+c_kA_{\cdot,\alpha_k},$ where each $c_i=a_1J_{i,1}+\dots+a_mJ_{i,m}.$\par\vspace{6pt}\quad\Hb
+$Q\Rightarrow P:$\,\;$\forall w\in W,\exists\,a=c_1A_{\cdot,{\alpha_1}}+\dots+c_kA_{\cdot,\alpha_k}\in\Fbb^{m,1},\;\Mt{w,B_W}=a.$\par\quad\Hb
+\Blind{$Q\Rightarrow P:$\,\;}$\Rightarrow w=\BigPar{c_1A_{1,{\alpha_1}}+\dots+c_kA_{1,{\alpha_k}}}w_1+\dots+\BigPar{c_1A_{m,{\alpha_1}}+\dots+c_kA_{m,{\alpha_k}}}w_m=c_1Tv_{\alpha_1}+\dots+c_kTv_{\alpha_k}.$\vspace{6pt}\par\quad\Hb
+${}{^\neg}Q\Rightarrow{}{^\neg}P:$\,\;$\exists\,w\in W,\exists\,a\in\Fbb^{m,1},\Mt{w,B_W}=a,$ but $\nexists\,c_i\in\Fbb,a=c_1A_{\cdot,\alpha_1}+\dots+c_kA_{\cdot,\alpha_k}.$\par\quad\Hb
+\Blind{${}{^\neg}Q\Rightarrow{}{^\neg}P:$\,\;}$\Rightarrow\nexists\,c_i\in\Fbb,\;w=c_1Tv_{\alpha_1}+\dots+c_kTv_{\alpha_k}.$\PfEnd\vspace{6pt}
+\Corollary \,\,\,Let $L=\BigPar{Tv_1,\dots,Tv_n},\;M=\BigPar{A_{\cdot,1},\cdots,A_{\cdot,n}}.$\parCor
+Then (a*) By \Sbra{3.B.9, \TIPSN{4}}, $T$ is inje $\Longleftrightarrow L$ is linely inde, so is $M$.\parCor
+And (b*) $T$ is surj $\Longleftrightarrow\Spn L=W\Longleftrightarrow\Spn M=\Fbb^{m,1}.$\parCor
+\hypertarget{3C4e17}{\Corollary \,\,\,}$B_{\Fbb^{n,1}}=\BigPar{A_{\cdot,1},\cdots,A_{\cdot,n}}\Longleftrightarrow T$ is inje and surj $\Longleftrightarrow B_{\Fbb^{1,n}}=\BigPar{A_{\cdot,1},\cdots,A_{\cdot,n}}.$\parCor
+\Comment \,\,\,If $T$ is inv. Then by (a*, c) or (b*, d), we have another proof of \COROLLARY.\parCor\IndentComment
+\hypertarget{3F32}{\Or }If $m=n.$ Then by [3.118] and one of (a*, b*, c, d). Yet another proof.\parCor
+(c) $T$ surj $\Longleftrightarrow T\apostrophe$ inje $\Longleftrightarrow\BigPar{T\apostrophe\Par{\psi_1},\dots,T\apostrophe\Par{\psi_m}}$ linely inde\parCor\Hc
+\Blind{$T$ surj }$\xLongleftrightarrow{\text{(a)}}{\envFontLarge\BigPar{{\envFontDefault\Par{A^t}{_{\cdot,1}},\cdots,\Par{A^t}{_{\cdot,m}}}}}$ linely inde in $\Fbb^{n,1},$ so is $\BigPar{A_{1,\cdot},\cdots,A_{m,\cdot}}$ in $\Fbb^{1,n}.$\vspace{6pt}\parCor
+(d) $T$ inje $\Longleftrightarrow T\apostrophe$ surj $\Longleftrightarrow V\apostrophe=\Span[\BigPar]{T\apostrophe\Par{\psi_1},\dots,T\apostrophe\Par{\psi_m}}$\parCor\Hd
+\Blind{$T$ inje }$\xLongleftrightarrow{\text{(b)}}\Fbb^{n,1}=\Span[\envFontLarge\BigPar]{{\envFontDefault\Par{A^t}{_{\cdot,1}},\cdots,\Par{A^t}{_{\cdot,m}}}}\Longleftrightarrow\Fbb^{1,n}=\Span[\envFontLarge\BigPar]{A_{1,\cdot},\cdots,A_{m,\cdot}}.$
 \SepLine
+
+\ProblemB{
+	\TipsN{2}\,\,\,\TextB{Suppose $p$ is a poly of $\,n\,$ variables in $\Fbb.$}
+	\IndentTipsN{2}\TextB{Prove that $\Mt[\BigPar]{p\Par{T_1,\dots,T_n}}=p\BigPar{\Mt{T_1},\dots,\Mt{T_n}}.$}
+	\IndentTipsN{2}\TextB{\large\envFontDefault Where the linear maps $T_1,\dots,T_n$ are such that $p\Par{T_1,\dots,T_n}$ makes sense. \tgnr See [5.16,17,20].}
+}Suppose the poly $p$ is defined by $p\Par{x_1,\dots,x_n}=\sum_{k_1,\dots,k_n}\!\!\alpha_{k_1,\dots,k_n}\prod_{i=1}^n x_i^{k_i}.$\parSol{\vspace{4pt}}
+Note that $\Mt{T^x S^y}=\Mt{T}{^x}\Mt{S}{^y};\;\Mt{T^x+S^y}=\Mt{T}{^x}+\Mt{S}{^y}.$\parSol{\vspace{4pt}}
+Then $\Mt[\BigPar]{ p\Par{T_1,\dots,T_n}}={\Mt[\XPar]{\sum_{k_1,\dots,k_n}\!\!\alpha_{k_1,\dots,k_n}\prod_{i=1}^n T_i^{k_i}}}$\parSol{\vspace{4pt}}
+\Blind{Then $\Mt[\BigPar]{ p\Par{T_1,\dots,T_n}}$} $={\sum_{k_1,\dots,k_n}\!\!\alpha_{k_1,\dots,k_n}\prod_{i=1}^n\Mt[\BigPar]{T_i^{k_i}}}={p\XPar{\Mt{T_1},\dots,\Mt{T_n}}}.$\PfEnd\vspace{2pt}
+\BulletPointX\Corollary \,\,\,Suppose $\tau$ is an algebraic property.\parCor{\IndentB}
+Then $\tau$ holds for matrices $\Longleftrightarrow\tau$ holds for linear maps.
+\SepLine
+
+\ProblemN{\hypertarget{3C13}{13}}{
+	\TextNL{Prove that the distr holds for matrix add and matrix multi.}
+	\TextNL{\large\envFontDefault Suppose $A, B, C$ are matrices such that $A\Par{B + C}$ make sense, we prove the left distr.}
+}Suppose $A\in\Fbb^{m,n}$ and $B,C\in\Fbb^{n,p}.$\parSol{}
+Note that ${\envFontLarge\Sbra{{\envFontDefault A\BigPar{B+C}}}}{_{j,k}}=\sum_{r=1}^n A_{j,r}\BigPar{B+C}{_{r,k}}=\sum_{r=1}^n \BigPar{A_{j,r}B_{r,k}+A_{j,r}C_{r,k}}=\BigPar{AB+AC}{_{j,k}}.$\parSol{\vspace{6pt}}
+\Or Define $T,S,R$ such that $\Mt{T}=A,\Mt{S}=B,\Mt{R}=C.$\parSol{}
+$A\Par{B+C}=\Mt{T\Par{S+R}}\xlongequal{\text{[3.9]}}\Mt{TS+TR}=AB+AC.$\parSol{}
+Or $T\Par{S+R}=TS+TR\Rightarrow\Mt{T\Par{S+R}}=\Mt{TS+TR}\Rightarrow A\Par{B+C}=AB+AC.$\PfEnd
+\SepLine
+
+%\ProblemN{\hypertarget{3C14}{14}}{
+	%	\TextNL{Prove that matrix multi is associ.}
+	%	\TextNL{\large\envFontDefault Suppose $A,B,C$ are matrices such that $\Par{AB}C$ makes sense, we prove that $\Par{AB}C=A\Par{BC}.$}
+	%}Suppose $A\in\Fbb^{m,n}$ and $B,C\in\Fbb^{n,p}.$ We show that $LHS=\Sbra{\Par{AB}C}_{j,k}=\Sbra{A\Par{BC}}_{j,k}=RHS.$\parSol{}
+%$LHS=\BigPar{AB}{_{j,\cdot}}C_{\cdot,k}=\sum_{s=1}^n\BigPar{A_{j,s}B_{s,\cdot}}C_{\cdot,k}=\sum_{s=1}^n A_{j,s}\BigPar{B_{s,\cdot}C_{\cdot,k}}=\sum_{s=1}^n A_{j,s}\BigPar{BC}{_{s,k}}=RHS.$\PfEnd\parSol{\vspace{6pt}}
+%\Or Define $T,S,R$ such that $\Mt{T}=A,\Mt{S}=B,\Mt{R}=C.$\parSol{}
+%$\Par{AB}C=\Mt{T\Par{SR}}\xlongequal{\text{[3.9]}}\Mt{TSR}\xlongequal{\text{[3.9]}}\Mt{\Par{TS}R}=A\Par{BC}.$\parSol{}
+%\Or $\Par{TS}R=T\Par{SR}\Rightarrow\Mt{\Par{TS}R}=\Mt{T\Par{SR}}\Rightarrow \Par{AB}C=A\Par{BC}.$\PfEnd
+%\SepLine
+
+%\ProblemN{\hypertarget{3C15}{15}}{
+	%	\TextNL{Suppose $A\in\Fbb^{n,n},j,k\in\Bra{1,\dots,n}$. Show that $\BigPar{A^3}_{j,k}=\sum_{p=1}^n \sum_{r=1}^n A_{j,p}A_{p,r}A_{r,k}$.\vspace{6pt}}
+	%}\vspace{-6pt}\AlignEq{}{\BigPar{AAA}_{j,k} &= \BigPar{AA}_{j,\cdot}\hspace{1pt}A_{\cdot,k}=\textstyle\sum_{p=1}^n \BigPar{A_{j,p}A_{p,\cdot}}A_{\cdot,k}=\textstyle\sum_{p=1}^n \sum_{r=1}^n A_{j,p}A_{p,r}A_{r,k}.\hspace{60pt}\\
+	%	\text{\Or}\;\;\BigPar{AAA}_{j,k} &=\textstyle\sum_{r=1}^n\BigPar{AA}_{j,r}A_{r,k} =\textstyle\sum_{r=1}^n\XPar{\sum_{p=1}^n A_{j,p}A_{p,r}}\hspace{1pt}A_{r,k}\\&=\uline{\textstyle\sum_{r=1}^n\left[A_{j,1}\BigPar{A_{1,r}A_{r,k}}+\dots+A_{j,n}\BigPar{A_{n,r}A_{r,k}}\right]}\\&=\textstyle A_{j,1}\sum_{r=1}^n A_{1,r}A_{r,k}+\dots+A_{j,n}\textstyle\sum_{r=1}^n A_{n,r}A_{r,k}=\textstyle\sum_{p=1}^n \sum_{r=1}^n A_{j,p}A_{p,r}A_{r,k}.}\PfEnd[-25pt]
+%\SepLine
+
+%\ProblemB{
+	%	\hypertarget{3C12}{}\TextB{Prove that the commutativity does not hold in $\Fbb^{m,n}.$}
+	%}Suppose $\dim V=n,\dim W=m$ and the commutativity holds in $\Fbb^{n,m}.$\parSol{}
+%$\forall T\in\Lm{V,W},S\in\Lm{W,V},\Mt{TS}=\Mt{T}\Mt{S}=\Mt{S}\Mt{T}=\Mt{ST}.$\parSol{}
+%Hence $ST=TS.$ Which in general does not hold.\PfEnd
+%\SepLine
+
+%\ProblemN{12}{
+	%	\TextNL{Give an example of 2-by-2 matrices $A$ and $B$ such that $AB\neq BA$.}\vspace{6pt}
+	%}$\begin{pmatrix} 1 & 0\\ 0 & -1\end{pmatrix}\begin{pmatrix}
+	%0 & 1\\ 1 & 0\end{pmatrix}=\begin{pmatrix} 0 & 1\\ -1 & 0\end{pmatrix};$\qquad
+%$\begin{pmatrix} 0 & 1\\ 1 & 0\end{pmatrix}\begin{pmatrix}
+	%1 & 0\\ 0 & -1\end{pmatrix}=\begin{pmatrix} 0 & -1\\ 1 & 0\end{pmatrix}.$\vspace{6pt}\par
+%\SepLine
 
 \ProblemN{\hypertarget{3C1}{1}}{
 	\TextN{Suppose $T\in\Lm{V,W}.$ Show that for each pair of $B_V$ and $B_W,$}
@@ -1518,6 +1593,21 @@ Thus there are at most $\Par{n-1}$ nonzero vecs in $Tv_{1},\dots,Tv_n.$\par\quad
 又 $\range T=\Span{Tv_{1},\dots,Tv_n}\Rightarrow\dim\range T=\dim\Span{Tv_{1},\dots,Tv_n}\leqslant n-1.$ Contradicts.\PfEnd
 \SepLine
 
+\ProblemN{\hypertarget{3C6}{6}}{
+	\TextN{Suppose $V$ and $W$ are finite-dim and $T\in\Lm{V,W}$.}
+	\TextN{Prove that $\dim\range T = 1\Longleftrightarrow\exists\,B_V,B_W,$ all entries of $A=\Mt[\BigPar]{T,B_V,B_W}$ equal $1$.}
+}\par\quad
+(a) Suppose $B_V=\Par{v_1,\dots,v_n},B_W=\Par{w_1,\dots,w_m}$ are the bases such that all entries of $A$ equal $1$.\par\quad\Ha
+Then $Tv_i=w_1+\dots+w_m$ for all $i=1,\dots,n$. Because $w_1,\dots,w_n$ is linely inde, $w_1+\dots+w_n\neq 0.$\vspace{4pt}\par\quad
+(b) Suppose $\dim\range T=1$. Then $\dim\null T=\dim V-1$.\par\quad\Hb
+Let $B_{\null T}=\Par{u_2,\dots,u_n}.$ Extend to a basis $\Par{u_1,u_2,\dots,u_n}$ of $V.$\par\quad\Hb
+Let $w_1=Tv_1-w_2-\dots-w_m.$ Extend to $B_W.$ \;Let $v_1=u_1,v_i=u_1+u_i.$ Extend to $B_V.$\PfEnd\vspace{6pt}\quad\Hb
+\Or Suppose $B_{\range T}=\Par{w}.$ \,By \Sbra{2.C {\NOTEFOR} (15)}, $\exists\,B_W=\Par{w_1,\dots,w_m},\;w=w_1+\dots+w_m.$\par\quad\Hb
+By \Sbra{2.C {\TIPS}}, $\exists$ a basis $\Par{u_1,\dots,u_n}$ of $V$ such that each $u_k\not\in\null T.$\par\quad\Hb
+Now each $Tu_k\in\range T=\Span{w}\Rightarrow Tu_k=\lambda_k w,\exists\,\lambda_k\in\nonzeroFbb.$\par\quad\Hb
+Let $v_k=\lambda_k^{-1}u_k\neq 0,$ so that each $Tv_k=w=w_1+\dots+w_m.$ Thus $B_V=\Par{v_1,\dots,v_n}$ will do.\PfEnd
+\SepLine\pagebreak
+
 \ProblemN{\hypertarget{3C3}{3}}{
 	\TextN{Suppose $V$ and $W$ are finite-dim and $T\in\Lm{V,W}$. Prove that $\exists\,B_V,B_W$ such that}
 	\TextN{[ letting $A=\Mt{T,B_V,B_W}$ ] $A_{k,k}=1,A_{i,j}=0$, where $1\leqslant k\leqslant \dim\range T, i\neq j$.\vspace{2pt}}
@@ -1529,87 +1619,21 @@ Thus there are at most $\Par{n-1}$ nonzero vecs in $Tv_{1},\dots,Tv_n.$\par\quad
 	\TextN{Suppose $B_V=\Par{v_1,\dots,v_m}$ and $W$ is finite-dim. Suppose $T\in\Lm{V,W}$.\vspace{2pt}}
 	\TextN{Prove that $\exists\,B_W=\Par{w_1,\dots,w_n},\;\Mt[\BigPar]{T,B_V,B_W}{_{\cdot,1}}={\normalsize\begin{pmatrix}1&0&\cdots&0\end{pmatrix}}{^t}$ or ${\normalsize\begin{pmatrix}0&\cdots&0\end{pmatrix}}{^t}$.\vspace{2pt}}
 }If $Tv_1=0$, then we are done. If not then extend $\Par{Tv_1}$ to $B_W.$\PfEnd
-\SepLine\pagebreak
+\SepLine
 
 \ProblemN{\hypertarget{3C5}{5}}{
 	\TextN{Suppose $B_W=\Par{w_1,\dots,w_n}$ and $V$ is finite-dim. Suppose $T\in\Lm{V,W}$.\vspace{2pt}}
 	\TextN{Prove that $\exists\,B_V=\Par{v_1,\dots,v_m},\;\Mt[\BigPar]{T,B_V,B_W}{_{1,\cdot}}=\normalsize\begin{pmatrix}0&\cdots&0\end{pmatrix}$ or $\normalsize\begin{pmatrix}1&0&\cdots&0\end{pmatrix}$.}
-}See also in (3.F).\par\quad%TODO
+}\par\quad
 Let $\Par{u_1,\dots,u_n}$ be a basis of $V$. Denote $\Mt[\BigPar]{T,\Par{u_1,\dots,u_n},B_W}$ by $A.$\par\quad
 If $A_{1,\cdot}=0,$ then $B_V=\Par{u_1,\dots,u_n}$ and we are done. Otherwise, suppose $A_{1,k}\neq 0.$\vspace{2pt}\par\quad
 Let $v_1=\Frac{u_k}{A_{1,k}},$ so that  $Tv_1=1w_1+\Frac{A_{2,k}}{A_{1,k}}w_2+\dots+\Frac{A_{n,k}}{A_{1,k}}w_n.$\vspace{6pt}\par\quad
 Let $v_j=u_{j-1}-A_{1,j-1}v_1$ for each $j\in\Bra{2,\dots,k}.$ \;Let $v_i=u_i-A_{1,i} v_1$ for $i\in\Bra{k+1,\dots,n}.$\vspace{2pt}\par\quad
-\NOTICE that $Tu_i=A_{1,i}w_1+\dots+A_{n,i}w_n.$ 又 Each $u_i\in\Span{v_1,\dots,v_n}=V.$ Let $B_V=\Par{v_1,\dots,v_n}.$\PfEnd
+\NOTICE that $Tu_i=A_{1,i}w_1+\dots+A_{n,i}w_n.$ 又 Each $u_i\in\Span{v_1,\dots,v_n}=V.$ Let $B_V=\Par{v_1,\dots,v_n}.$\PfEnd\vspace{4pt}\quad
+\Or Using Problem (4). Let $B_{W\apostrophe}$ be the $B_V.$\par\quad
+Now $\exists\,B_{V\apostrophe}$ such that $\Mt{T\apostrophe,B_{W\apostrophe}\,,B_{V\apostrophe}}{_{\cdot,1}}={\small\begin{pmatrix}1&0&\cdots&0\end{pmatrix}}{^t}$ or ${\small\begin{pmatrix}0&\cdots&0\end{pmatrix}}{^t}.$\par\quad
+Which is equiv to $\exists\,B_V$ \Sbra{Using (3.F.31)} such that $\Mt{T,B_V,B_W}{_{1,\cdot}}={\small\begin{pmatrix}1&0&\cdots&0\end{pmatrix}}$ or ${\small\begin{pmatrix}0&\cdots&0\end{pmatrix}}.$\PfEnd
 \SepLine
-
-\ProblemN{\hypertarget{3C6}{6}}{
-	\TextN{Suppose $V$ and $W$ are finite-dim and $T\in\Lm{V,W}$.}
-	\TextN{Prove that $\dim\range T = 1\Longleftrightarrow\exists\,B_V,B_W,$ all entries of $A=\Mt[\BigPar]{T,B_V,B_W}$ equal $1$.}
-}\par\quad
-(a) Suppose $B_V=\Par{v_1,\dots,v_n},B_W=\Par{w_1,\dots,w_m}$ are the bases such that all entries of $A$ equal $1$.\par\quad\Ha
-Then $Tv_i=w_1+\dots+w_m$ for all $i=1,\dots,n$. Because $w_1,\dots,w_n$ is linely inde, $w_1+\dots+w_n\neq 0.$\vspace{4pt}\par\quad
-(b) Suppose $\dim\range T=1$. Then $\dim\null T=\dim V-1$.\par\quad\Hb
-Let $B_{\null T}=\Par{u_2,\dots,u_n}.$ Extend to a basis $\Par{u_1,u_2,\dots,u_n}$ of $V.$\par\quad\Hb
-Let $w_1=Tv_1-w_2-\dots-w_m.$ Extend to $B_W.$ \;Let $v_1=u_1,v_i=u_1+u_i.$ Extend to $B_V.$\PfEnd\vspace{6pt}\quad\Hb
-\Or Suppose $\range T$ has a basis $\Par{w}$.\par\quad\Hb
-By \Sbra{2.C {\NOTEFOR} (15)}, $\exists\,B_W=\Par{w_1,\dots,w_m}$ such that $w=w_1+\dots+w_m.$\par\quad\Hb
-By \Sbra{2.C {\TIPS}}, $\exists$ a basis $\Par{u_1,\dots,u_n}$ of $V$ such that each $u_k\not\in\null T.$\par\quad\Hb
-Now each $Tu_k\in\range T=\Span{w}\Rightarrow Tu_k=\lambda_k w,\exists\,\lambda_k\in\nonzeroFbb.$\par\quad\Hb
-Let $v_k=\lambda_k^{-1}u_k\neq 0,$ so that each $Tv_k=w=w_1+\dots+w_m.$ Thus $B_V=\Par{v_1,\dots,v_n}$ will do.\PfEnd
-\SepLine
-
-\ProblemB{
-	\Tips \,\,\,\TextB{Suppose $p$ is a poly of $\,n\,$ variables in $\Fbb.$}
-	\IndentTips\TextB{Prove that $\Mt[\BigPar]{p\Par{T_1,\dots,T_n}}=p\BigPar{\Mt{T_1},\dots,\Mt{T_n}}.$}
-	\IndentTips\TextB{\large\envFontDefault Where the linear maps $T_1,\dots,T_n$ are such that $p\Par{T_1,\dots,T_n}$ makes sense. \tgnr See [5.16,17,20].}
-}Suppose the poly $p$ is defined by $p\Par{x_1,\dots,x_n}=\sum_{k_1,\dots,k_n}\!\!\alpha_{k_1,\dots,k_n}\prod_{i=1}^n x_i^{k_i}.$\parSol{\vspace{4pt}}
-Note that $\Mt{T^x S^y}=\Mt{T}{^x}\Mt{S}{^y};\;\Mt{T^x+S^y}=\Mt{T}{^x}+\Mt{S}{^y}.$\parSol{\vspace{4pt}}
-Then $\Mt[\BigPar]{ p\Par{T_1,\dots,T_n}}={\Mt[\XPar]{\sum_{k_1,\dots,k_n}\!\!\alpha_{k_1,\dots,k_n}\prod_{i=1}^n T_i^{k_i}}}$\parSol{\vspace{4pt}}
-\Blind{Then $\Mt[\BigPar]{ p\Par{T_1,\dots,T_n}}$} $={\sum_{k_1,\dots,k_n}\!\!\alpha_{k_1,\dots,k_n}\prod_{i=1}^n\Mt[\BigPar]{T_i^{k_i}}}={p\XPar{\Mt{T_1},\dots,\Mt{T_n}}}.$\PfEnd\vspace{2pt}
-\BulletPointX\Corollary \,\,\,Suppose $\tau$ is an algebraic property.\parCor{\IndentB}
-Then $\tau$ holds for matrices $\Longleftrightarrow\tau$ holds for linear maps.
-\SepLine
-
-\ProblemN{\hypertarget{3C13}{13}}{
-	\TextNL{Prove that the distr holds for matrix add and matrix multi.}
-	\TextNL{\large\envFontDefault Suppose $A, B, C$ are matrices such that $A\Par{B + C}$ make sense, we prove the left distr.}
-}Suppose $A\in\Fbb^{m,n}$ and $B,C\in\Fbb^{n,p}.$\parSol{}
-Note that $\Sbra{A\Par{B+C}}{_{j,k}}=\sum_{r=1}^n A_{j,r}\Par{B+C}{_{r,k}}=\sum_{r=1}^n \Par{A_{j,r}B_{r,k}+A_{j,r}C_{r,k}}=\Par{AB+AC}{_{j,k}}.$\PfEnd\parSol{\vspace{6pt}}
-\Or Define $T,S,R$ such that $\Mt{T}=A,\Mt{S}=B,\Mt{R}=C.$\parSol{}
-$A\Par{B+C}=\Mt{T\Par{S+R}}\xlongequal{\text{[3.9]}}\Mt{TS+TR}=AB+AC.$\parSol{}
-Or $T\Par{S+R}=TS+TR\Rightarrow\Mt{T\Par{S+R}}=\Mt{TS+TR}\Rightarrow A\Par{B+C}=AB+AC.$\PfEnd
-\SepLine
-
-\ProblemN{\hypertarget{3C14}{14}}{
-	\TextNL{Prove that matrix multi is associ.}
-	\TextNL{\large\envFontDefault Suppose $A,B,C$ are matrices such that $\Par{AB}C$ makes sense, we prove that $\Par{AB}C=A\Par{BC}.$}
-}Suppose $A\in\Fbb^{m,n}$ and $B,C\in\Fbb^{n,p}.$ We show that $LHS=\Sbra{\Par{AB}C}_{j,k}=\Sbra{A\Par{BC}}_{j,k}=RHS.$\parSol{}
-$LHS=\Par{AB}{_{j,\cdot}}C_{\cdot,k}=\sum_{s=1}^n\Par{A_{j,s}B_{s,\cdot}}C_{\cdot,k}=\sum_{s=1}^n A_{j,s}\Par{B_{s,\cdot}C_{\cdot,k}}=\sum_{s=1}^n A_{j,s}\Par{BC}{_{s,k}}=RHS.$\PfEnd\parSol{\vspace{6pt}}
-\Or Define $T,S,R$ such that $\Mt{T}=A,\Mt{S}=B,\Mt{R}=C.$\parSol{}
-$\Par{AB}C=\Mt{T\Par{SR}}\xlongequal{\text{[3.9]}}\Mt{TSR}\xlongequal{\text{[3.9]}}\Mt{\Par{TS}R}=A\Par{BC}.$\parSol{}
-\Or $\Par{TS}R=T\Par{SR}\Rightarrow\Mt{\Par{TS}R}=\Mt{T\Par{SR}}\Rightarrow \Par{AB}C=A\Par{BC}.$\PfEnd
-\SepLine
-
-\ProblemN{\hypertarget{3C15}{15}}{
-	\TextNL{Suppose $A\in\Fbb^{n,n},j,k\in\Bra{1,\dots,n}$. Show that $\BigPar{A^3}_{j,k}=\sum_{p=1}^n \sum_{r=1}^n A_{j,p}A_{p,r}A_{r,k}$.\vspace{6pt}}
-}\vspace{-6pt}\AlignEq{}{\BigPar{AAA}_{j,k} &= \BigPar{AA}_{j,\cdot}\hspace{1pt}A_{\cdot,k}=\textstyle\sum_{p=1}^n \BigPar{A_{j,p}A_{p,\cdot}}A_{\cdot,k}=\textstyle\sum_{p=1}^n \sum_{r=1}^n A_{j,p}A_{p,r}A_{r,k}.\hspace{60pt}\\
-	\text{\Or}\;\;\BigPar{AAA}_{j,k} &=\textstyle\sum_{r=1}^n\BigPar{AA}_{j,r}A_{r,k} =\textstyle\sum_{r=1}^n\XPar{\sum_{p=1}^n A_{j,p}A_{p,r}}\hspace{1pt}A_{r,k}\\&=\uline{\textstyle\sum_{r=1}^n\left[A_{j,1}\BigPar{A_{1,r}A_{r,k}}+\dots+A_{j,n}\BigPar{A_{n,r}A_{r,k}}\right]}\\&=\textstyle A_{j,1}\sum_{r=1}^n A_{1,r}A_{r,k}+\dots+A_{j,n}\textstyle\sum_{r=1}^n A_{n,r}A_{r,k}=\textstyle\sum_{p=1}^n \sum_{r=1}^n A_{j,p}A_{p,r}A_{r,k}.}\PfEnd[-25pt]
-\SepLine
-
-\ProblemB{
-	\hypertarget{3C12}{}\TextB{Prove that the commutativity does not hold in $\Fbb^{m,n}.$}
-}Suppose $\dim V=n,\dim W=m$ and the commutativity holds in $\Fbb^{n,m}.$\parSol{}
-$\forall T\in\Lm{V,W},S\in\Lm{W,V},\Mt{TS}=\Mt{T}\Mt{S}=\Mt{S}\Mt{T}=\Mt{ST}.$\parSol{}
-Hence $ST=TS.$ Which in general does not hold.\PfEnd
-\SepLine
-
-%\ProblemN{12}{
-%	\TextNL{Give an example of 2-by-2 matrices $A$ and $B$ such that $AB\neq BA$.}\vspace{6pt}
-%}$\begin{pmatrix} 1 & 0\\ 0 & -1\end{pmatrix}\begin{pmatrix}
-%0 & 1\\ 1 & 0\end{pmatrix}=\begin{pmatrix} 0 & 1\\ -1 & 0\end{pmatrix};$\qquad
-%$\begin{pmatrix} 0 & 1\\ 1 & 0\end{pmatrix}\begin{pmatrix}
-%1 & 0\\ 0 & -1\end{pmatrix}=\begin{pmatrix} 0 & -1\\ 1 & 0\end{pmatrix}.$\vspace{6pt}\par
-%\SepLine
 \ChEnd
 
 \vfill\ChDecl{Ch3D}{3$\cdot$D}{}
