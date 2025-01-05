@@ -20,7 +20,7 @@
 \ProblemN{3}{
 	\TextN{Suppose $v, w\in V$. Explain why $\exists\,!\,x\in V,v + 3x = w.$}
 }$v + 3x = w \quad\Leftrightarrow\quad 3x = w − v\quad \Leftrightarrow\quad x = \frac{\;1\;}{3} \Par{w − v}.$\PfEnd\vspace{4pt}\quad
-\Or \hspace{1pt}\;{\Existns} \;Let $x=\Frac{1}{3}\Par{w-v}.$\vspace{2pt}\par\quad
+\Or \hspace{1pt}\;{\Existns} \;Let $x=\Frac{\;1\;}{3}\Par{w-v}.$\vspace{2pt}\par\quad
 \Blind{\Or}{\Uniqnes} \;If $v+3x_1=w,$(I)$\,\,v+3x_2=w\,$(II). Then (I) $-$ (II) $: 3\Par{x_1-x_2}=0\Rightarrow x_1=x_2.$\PfEnd
 \SepLine
 
@@ -621,7 +621,7 @@ Thus $\Par{p_{0,m+1},\dots,p_{m+1,m+1}}$ is linely inde and $S\Par{m+1}$ holds.\
 }For each $V_{\!i},$ let $B_{V_{\!i}}=\mathcal{E}_i.$ Then $V_{\!1}+\dots+V_{\!m}=\Span[\BigPar]{\mathcal{E}_1\cup\cdots\cup \mathcal{E}_m};\,\,\,\dim V_{\!i}=\card \mathcal{E}_i.$\par\quad
 Now $\dim\!\Par{V_{\!1}+\dots+V_{\!m}}=\dim\Span[\BigPar]{\mathcal{E}_1\cup\cdots\cup \mathcal{E}_m}\leqslant\card\hspace{-1pt}\BigPar{\mathcal{E}_1\cup\cdots\cup \mathcal{E}_m}\leqslant\card \mathcal{E}_1+\cdots+\card \mathcal{E}_m.$\par\vspace{2pt}
 \hypertarget{2C16}{}\Corollary \,\,\,$V_{\!1}+\dots+V_{\!m}$ is direct\parCor
-$\Longleftrightarrow$ For each $k,$ $\BigPar{V_{\!1}\oplus\dots\oplus V_{\!k}}\cap V_{k+1}=\zeroSubs,\BigPar{\mathcal{E}_1\cap\dots\cap\mathcal{E}_{k-1}}\cap\mathcal{E}_k=\emptySet$\parCor
+$\Longleftrightarrow$ For each $k\in\Bra{1,\dots,m-1},$ $\BigPar{V_{\!1}\oplus\dots\oplus V_{\!k}}\cap V_{k+1}=\zeroSubs,\BigPar{\mathcal{E}_1\cap\dots\cap\mathcal{E}_{k-1}}\cap\mathcal{E}_k=\emptySet$\parCor
 $\Longleftrightarrow\dim\Span[\BigPar]{\mathcal{E}_1\cup\dots\cup\mathcal{E}_m}=\card\hspace{-1pt}\BigPar{\mathcal{E}_1\cup\dots\cup\mathcal{E}_m}=\card\mathcal{E}_1+\dots+\card\mathcal{E}_m$\parCor
 $\Longleftrightarrow \dim\!\Par{V_{\!1}\oplus\dots\oplus V_{\!m}}=\dim V_{\!1}+\dots+\dim V_{\!m}.$\PfEnd
 \SepLine
@@ -640,12 +640,14 @@ Note that $\Par{V_{\!1}+V_{\!2}}+V_{\!3}=V_{\!1}+\Par{V_{\!2}+V_{\!3}}=\Par{V_{\
 $\Dim\Par{V_{\!1}+V_{\!2}+V_{\!3}}=\Dim\Par{V_{\!1}+V_{\!2}}+\Dim\Par{V_{\!3}}-\Dim\BigPar{\Par{V_{\!1}+V_{\!2}}\cap V_{\!3}}\quad(1)\hspace{114pt}$\par\quad
 $\Blind{\Dim\Par{V_{\!1}+V_{\!2}+V_{\!3}}}=\Dim\Par{V_{\!2}+V_{\!3}}+\Dim\Par{V_{\!1}}-\Dim\BigPar{\Par{V_{\!2}+V_{\!3}}\cap V_{\!1}}\quad(2)$\par\quad
 $\Blind{\Dim\Par{V_{\!1}+V_{\!2}+V_{\!3}}}=\Dim\Par{V_{\!1}+V_{\!3}}+\Dim\Par{V_{\!2}}-\Dim\BigPar{\Par{V_{\!1}+V_{\!3}}\cap V_{\!2}}\quad(3).$\par\vspace{2pt}\quad
-Notice that in general, $\Par{X+Y}\cap Z\neq X\cap Z+Y\cap Z$.\par\quad
+Notice that in general, $\Par{X+Y}\cap Z\neq X\cap Z+Y\cap Z.$\par\quad
 For example, $X=\Bra{\Par{x,0}\in\Rbb^2:x\in\Rbb},Y=\Bra{\Par{0,y}\in\Rbb^2:y\in\Rbb},Z=\Bra{\Par{z,z}\in\Rbb^2:z\in\Rbb}.$\par\vspace{2pt}\quad
 \Comment \,\,\,If $X\subseteq Y,$ then $\Par{X+Y}\cap Z=Y\cap Z;$ \;$\Dim\Par{X+Y+Z}=\Dim\Par{Y}+\Dim\Par{Z}-\Dim\Par{Y\cap Z},$\parCom\quad
-and the wrong formual above holds. Similar for $Y\subseteq Z,X\subseteq Z,$ and $X,Y\subseteq Z.$\par\vspace{8pt}
-\BulletPointX\Corollary \,\,\,\Largesl{Suppose $V_{\!1},V_{\!2}$ and $V_{\!3}$ are finite-dim vecsps, then} {\small $\Frac{\Par{1}+\Par{2}+\Par{3}}{3}:$
-}\vspace{-6pt}\par
+and the wrong formual holds. Similar for $Y\subseteq Z,X\subseteq Z,$ and $X,Y\subseteq Z.$\par\vspace{4pt}\quad
+However, $\Par{X+Y}\cap Z\supseteq\Par{X\cap Z}+\Par{Y\cap Z}$ holds. Because $\forall v\in\Par{X\cap Z}+\Par{Y\cap Z},$\par\quad
+$\exists\,u=x_1=z_1\in X\cap Z,w=y_2=z_2\in Y\cap Z,\;v=u+w=x_1+y_2=z_1+z_2\in\Par{X+Y}\cap Z.$\par\vspace{2pt}\quad
+\Comment \,\,\,$\Dim\BigPar{\Par{X+Y}\cap Z}\geqslant\Dim\Par{X\cap Z}+\Dim\Par{Y\cap Z}-\Dim\Par{X\cap Y\cap Z}.$\par\vspace{8pt}
+\BulletPointX\Corollary \,\,\,\Largesl{Suppose $V_{\!1},V_{\!2},V_{\!3}$ are finite-dim, then} {\small $\Frac{\Par{1}+\Par{2}+\Par{3}}{3}$}:\vspace{-4pt}\par
 \AlignEq{\IndentB\,}{\Dim\Par{V_{\!1}+V_{\!2}+V_{\!3}}=\dim &\,V_{\!1}+\dim V_{\!2}+\dim V_{\!3}\\&-\Frac{\Dim\Par{V_{\!1}\cap V_{\!2}}+\Dim\Par{V_{\!1}\cap V_{\!3}}+\Dim\Par{V_{\!2}\cap V_{\!3}}}{3}\\&-\Frac{\Dim\BigPar{\Par{V_{\!1}+V_{\!2}}\cap V_{\!3}}+\Dim\BigPar{\Par{V_{\!1}+V_{\!3}}\cap V_{\!2}}+\Dim\BigPar{\Par{V_{\!2}+V_{\!3}}\cap V_{\!1}}}{3}.}
 \SepLine
 
@@ -1675,7 +1677,7 @@ Define $T\in\Lm{V,W}$ by $T\Par{u_i}=Su_i;\,\,\,Tv_j=w_j,$ for each $u_i$ and $v
 
 \ProblemN{\hypertarget{3D8}{8}}{
 	\TextN{Suppose $T\in\Lm{V,W}$ is {\tgsc surj}. Prove that $\exists$ subsp $U$ of $V,$ \;$T\mmid_U:U\rightarrow W$ is an iso.}
-}\Sbra[3pt]{{\tgsl Req $\range T$ Finite-dim}} \;Let $B_{\range T}=B_W=\Par{Tv_1,\dots,Tv_m},B_U=\Par{v_1,\dots,v_m}.$\PfEnd\parSol{\vspace{2pt}}
+}\!\Sbra[3pt]{{\tgsl Req $\range T$ Finite-dim}} \;Let $B_{\range T}=B_W=\Par{Tv_1,\dots,Tv_m},B_U=\Par{v_1,\dots,v_m}.$\PfEnd\parSol{\vspace{2pt}}
 \Or By (3.B.12). Note that $\range T=W.$\PfEnd
 %\vspace{4pt}\Comment \,\,\,See (3.B.12), (4E 3.B.21), (3.B \TIPS).\vspace{-2pt}
 \SepLine
@@ -2243,7 +2245,7 @@ Thus $a_1=\dots=a_m=0$ and $\Par{e_1,\dots,e_m}$ is linely inde. Similarly.\PfEn
 \ProblemN{\hypertarget{3E12}{12}}{
 	\TextNL{Suppose $U$ is a subsp of $V.$ Prove that is $V$ is iso to $U\times\Par{V\XSlash U}$.}
 }\par\quad
-\Sbra[3pt]{{\tgsl Req $V\XSlash U$ Finite-dim}} \;Let $B_{V\XSlash U}=\BigPar{v_1+U,\dots,v_n+U}.$\par\quad
+\!\Sbra[3pt]{{\tgsl Req $V\XSlash U$ Finite-dim}} \;Let $B_{V\XSlash U}=\BigPar{v_1+U,\dots,v_n+U}.$\par\quad
 Note that $\forall v\in V,\exists\,!\,a_i\in\Fbb,v+U=\sum_{i=1}^n a_i\BigPar{v_i+U}=\XPar{\sum_{i=1}^n a_i v_i}+U$\vspace{2pt}\par\quad
 $\Rightarrow\BigPar{v-a_1 v_1-\dots-a_n v_n}\in U\Rightarrow\exists\,!\,u\in U,v=\sum_{i=1}^n a_i v_i+u.$\vspace{2pt}\par\quad
 Thus define \;$\varphi\in\Lm[\BigPar]{V,U\times\Par{V\XSlash U}}$\; and \;$\psi\in\Lm[\BigPar]{U\times\Par{V\XSlash U},V}$\par\quad
@@ -2268,7 +2270,7 @@ Note that $\forall v\in V,\exists\,!\,a_i\in\Fbb,v+U=\sum_{i=1}^m a_i v_i+U\Righ
 \Blind{Note that} $\Rightarrow \forall v\in V,\exists\,!\,a_i,b_j\in\Fbb,v=\sum_{i=1}^m a_i v_i+\sum_{j=1}^m b_j u_j.$\PfEnd\vspace{4pt}\quad
 \Or Note that $B=\Par{v_1,\dots,v_m}$ is linely inde. Now we show that $\Spn B\cap U=\zeroSubs.$\par\quad
 $v\in\Spn B\cap U\Longleftrightarrow v+U=\sum_{i=1}^ma_i\Par{v_i+U}=0+U\Longleftrightarrow a_1=\dots=a_m=0\Longleftrightarrow v=0.$\par\quad
-Then by Problem (12) and (3.76), $\dim V=\Dim\BigPar{U\times\Par{V\XSlash U}}=n+m.$\par\quad
+Then by Problem (12) and [3.76], $\dim V=\Dim\BigPar{U\times\Par{V\XSlash U}}=n+m.$\par\quad
 While $\Dim\Sbra{\Span{v_1,\dots,v_m}\oplus U}=m+n$ and $\Sbra{\Span{v_1,\dots,v_m}\oplus U}\subseteq V.$ \;Hence by ({2.B.8}).\PfEnd
 \SepLine
 
@@ -2343,7 +2345,7 @@ Suppose $W^0\subseteq U^0.$ Then $\forall\varphi\in W^0,v\in A_U,\varphi\Par{v}=
 }\vspace{2pt}\par\quad
 (a) $\MathRightBrace{r}{U\cap W\subseteq U\\U\cap W\subseteq W}\Rightarrow\hspace{-6pt}\MathRightBrace{r}{\Par{U\cap W}{^0}\supseteq U^0 \\ \Par{U\cap W}{^0}\supseteq W^0}\Rightarrow\Par{U\cap W}{^0}\supseteq U^0+W^0\;\Sbra{\supseteq U^0\cap W^0=\Par{U+W}{^0}.\,}$\par\vspace{4pt}\quad\Ha
 \Or Suppose $\varphi=\psi+\beta\in U^0+W^0.$ Then $\forall v\in U\cap W$, $\varphi\Par{v}=\Par{\psi+\beta}\Par{v}=0\Rightarrow\varphi\in\Par{U\cap W}{^0}.$\vspace{4pt}\par\quad
-(b) \Sbra[3pt]{{\tgsl Only in Finite-dim; Req $U,W$ are subsps}} \;Using Problem (22).\par\quad\Hb
+(b) \!\Sbra[3pt]{{\tgsl Only in Finite-dim; Req $U,W$ are subsps}} \;Using Problem (22).\par\quad\Hb
 $\Dim\Par{U^0+W^0}=\dim U^0+\dim W^0-\Dim\Par{U^0\cap W^0}$\par\quad\Hb
 $\Blind{\Dim\Par{U^0+W^0}}=2\dim V-\dim U-\dim W-\BigPar{\dim V-\Dim\Par{U+W}}=\dim V-\Dim\Par{U\cap W}.$\par\vspace{4pt}\quad\Hb
 \Or Suppose $\varphi\in\Par{U\cap W}{^0}.$ Let $X,Y$ be such that $V=U\oplus X=W\oplus Y.$\par\quad\Hb
@@ -2613,7 +2615,7 @@ By \Sbra{3.B \TIPSN{3}}, $\varPhi=\varPhi\circ \iota.$ Thus $T\apostrophe\Par{\p
 }\par\quad
 Suppose $T=0.$ Then $\forall\varphi\in W\apostrophe,T\apostrophe\Par{\varphi}=\varphi\circ T=0.$ Hence $T\apostrophe=0.$\par\quad
 Suppose $T\apostrophe=0.$ Then $\null T\apostrophe=W\apostrophe=\Par{\range T}{^0},$  by [3.107](a).\par\quad
-\Sbra[3pt]{{\tgsl$W$ can be infinite-dim}} \;By Problem (25),\par\qquad
+\!\Sbra[3pt]{{\tgsl$W$ can be infinite-dim}} \;By Problem (25),\par\qquad
 $\range T=\Bra{w\in W:\varphi\Par{w}=0,\forall\varphi\in\Par{\range T}{^0}}=\Bra{w\in W:\varphi\Par{w}=0,\forall\varphi\in W\apostrophe}.$\par\quad
 Now we prove that if $\forall\varphi\in W\apostrophe,\varphi\Par{w}=0,$ then $w=0.$ So that $\range T=\zeroSubs$ and we are done.\par\quad
 Assume that $w\neq 0.$ Then let $U$ be such that $W=U\oplus\Span{w}.$\par\quad
