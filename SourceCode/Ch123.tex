@@ -1512,9 +1512,9 @@ $P\Rightarrow Q:$\,\;Suppose each $w_i=Iw_i=J_{1,i}Tv_{\alpha_1}+\dots+J_{k,i}Tv
 \Blind{$Q\Rightarrow P:$\,\;}Because $w=a_1\BigPar{J_{1,1}Tv_{\alpha_1}+\dots+J_{k,1}Tv_{\alpha_k}}+\dots+a_m\BigPar{J_{1,m}Tv_{\alpha_1}+\dots+J_{k,m}Tv_{\alpha_k}}$\par\vspace{2pt}\quad\Hb
 \Blind{$Q\Rightarrow P:$\,\;Because} $\Blind{w}=\BigPar{a_1J_{1,1}+\dots+a_mJ_{1,m}}Tv_{\alpha_1}+\dots+\BigPar{a_1J_{k,1}+\dots+a_mJ_{k,m}}Tv_{\alpha_k}.$\par\vspace{2pt}\quad\Hb
 \Blind{$Q\Rightarrow P:$\,\;}Apply $\mathcal{M}$ to both sides, $a=c_1A_{\cdot,\alpha_1}+\dots+c_kA_{\cdot,\alpha_k},$ where each $c_i=a_1J_{i,1}+\dots+a_mJ_{i,m}.$\par\vspace{6pt}\quad\Hb
-$Q\Rightarrow P:$\,\;$\forall w\in W,\exists\,a=c_1A_{\cdot,{\alpha_1}}+\dots+c_kA_{\cdot,\alpha_k}\in\Fbb^{m,1},\;\Mt{w,B_W}=a.$\par\quad\Hb
+$Q\Rightarrow P:$\,\;$\forall w\in W,\exists\,a=c_1A_{\cdot,{\alpha_1}}+\dots+c_kA_{\cdot,\alpha_k}\in\Fbb^{m,1},\;\Mt{w,B_W}=a$\par\quad\Hb
 \Blind{$Q\Rightarrow P:$\,\;}$\Rightarrow w=\BigPar{c_1A_{1,{\alpha_1}}+\dots+c_kA_{1,{\alpha_k}}}w_1+\dots+\BigPar{c_1A_{m,{\alpha_1}}+\dots+c_kA_{m,{\alpha_k}}}w_m=c_1Tv_{\alpha_1}+\dots+c_kTv_{\alpha_k}.$\vspace{6pt}\par\quad\Hb
-${}{^\neg}Q\Rightarrow{}{^\neg}P:$\,\;$\exists\,w\in W,\exists\,a\in\Fbb^{m,1},\Mt{w,B_W}=a,$ but $\nexists\,c_i\in\Fbb,a=c_1A_{\cdot,\alpha_1}+\dots+c_kA_{\cdot,\alpha_k}.$\par\quad\Hb
+${}{^\neg}Q\Rightarrow{}{^\neg}P:$\,\;$\exists\,w\in W,\exists\,a\in\Fbb^{m,1},\Mt{w,B_W}=a,$ but $\nexists\,c_i\in\Fbb,a=c_1A_{\cdot,\alpha_1}+\dots+c_kA_{\cdot,\alpha_k}$\par\quad\Hb
 \Blind{${}{^\neg}Q\Rightarrow{}{^\neg}P:$\,\;}$\Rightarrow\nexists\,c_i\in\Fbb,\;w=c_1Tv_{\alpha_1}+\dots+c_kTv_{\alpha_k}.$\PfEnd\vspace{6pt}
 \Corollary \,\,\,Let $L=\BigPar{Tv_1,\dots,Tv_n},\;M=\BigPar{A_{\cdot,1},\cdots,A_{\cdot,n}}.$\parCor
 Then (a*) By \Sbra{3.B.9, \TIPSN{4}}, $T$ is inje $\Longleftrightarrow L$ is linely inde, so is $M$.\parCor
@@ -1534,11 +1534,11 @@ And (b*) $T$ is surj $\Longleftrightarrow\Spn L=W\Longleftrightarrow\Spn M=\Fbb^
 	\IndentTipsN{2}\TextB{\large\envFontDefault Where the linear maps $T_1,\dots,T_n$ are such that $p\Par{T_1,\dots,T_n}$ makes sense. \tgnr See [5.16,17,20].}
 }Suppose the poly $p$ is defined by $p\Par{x_1,\dots,x_n}=\sum_{k_1,\dots,k_n}\!\!\alpha_{k_1,\dots,k_n}\prod_{i=1}^n x_i^{k_i}.$\parSol{\vspace{4pt}}
 Note that $\Mt{T^x S^y}=\Mt{T}{^x}\Mt{S}{^y};\;\Mt{T^x+S^y}=\Mt{T}{^x}+\Mt{S}{^y}.$\parSol{\vspace{4pt}}
-Then $\Mt[\BigPar]{ p\Par{T_1,\dots,T_n}}={\Mt[\XPar]{\sum_{k_1,\dots,k_n}\!\!\alpha_{k_1,\dots,k_n}\prod_{i=1}^n T_i^{k_i}}}$\parSol{\vspace{4pt}}
-\Blind{Then $\Mt[\BigPar]{ p\Par{T_1,\dots,T_n}}$} $={\sum_{k_1,\dots,k_n}\!\!\alpha_{k_1,\dots,k_n}\prod_{i=1}^n\Mt[\BigPar]{T_i^{k_i}}}={p\XPar{\Mt{T_1},\dots,\Mt{T_n}}}.$\PfEnd\vspace{2pt}
-\BulletPointX\Corollary \,\,\,Suppose $\tau$ is an algebraic property.\parCor{\IndentB}
-Then $\tau$ holds for matrices $\Longleftrightarrow\tau$ holds for linear maps.
-\SepLine
+Then $\Mt[\BigPar]{ p\Par{T_1,\dots,T_n}}={\Mt[\envFontLarge\BigPar]{{\envFontDefault\sum_{k_1,\dots,k_n}\!\!\alpha_{k_1,\dots,k_n}\prod_{i=1}^n T_i^{k_i}}}}$\parSol{\vspace{4pt}}
+\Blind{Then $\Mt[\BigPar]{ p\Par{T_1,\dots,T_n}}$} $={\sum_{k_1,\dots,k_n}\!\!\alpha_{k_1,\dots,k_n}\prod_{i=1}^n\Mt[\BigPar]{T_i^{k_i}}}={p\envFontLarge\BigPar{{\envFontDefault\Mt{T_1},\dots,\Mt{T_n}}}}.$\PfEnd\vspace{2pt}
+\BulletPointX\Corollary \,\,\,Suppose $\tau$ is an algebraic property. Then $\tau$ holds for linear maps $\Longleftrightarrow \tau$ holds for matrices.\parCor{\IndentB}
+Each $\alpha_k\in\Bra{1,\dots,n}.$ Now $p\Par{T_1,\dots,T_n}=p\Par{T_{\alpha_1},\dots,T_{\alpha_n}}$\vspace{1pt}\parCor{\IndentB}
+\Blind{Each $\alpha_k\in\Bra{1,\dots,n}.$\hspace{10pt}}$\Longleftrightarrow p\envFontLarge\BigPar{{\envFontDefault\Mt{T_1},\dots,\Mt{T_n}}}=p\BigPar{{\envFontDefault\Mt{T_{\alpha_1}},\dots,\Mt{T_{\alpha_n}}}}.$\SepLine
 
 \ProblemN{\hypertarget{3C13}{13}}{
 	\TextNL{Prove that the distr holds for matrix add and matrix multi.}
@@ -1547,7 +1547,7 @@ Then $\tau$ holds for matrices $\Longleftrightarrow\tau$ holds for linear maps.
 Note that ${\envFontLarge\Sbra{{\envFontDefault A\BigPar{B+C}}}}{_{j,k}}=\sum_{r=1}^n A_{j,r}\BigPar{B+C}{_{r,k}}=\sum_{r=1}^n \BigPar{A_{j,r}B_{r,k}+A_{j,r}C_{r,k}}=\BigPar{AB+AC}{_{j,k}}.$\parSol{\vspace{6pt}}
 \Or Define $T,S,R$ such that $\Mt{T}=A,\Mt{S}=B,\Mt{R}=C.$\parSol{}
 $A\Par{B+C}=\Mt{T\Par{S+R}}\xlongequal{\text{[3.9]}}\Mt{TS+TR}=AB+AC.$\parSol{}
-Or $T\Par{S+R}=TS+TR\Rightarrow\Mt{T\Par{S+R}}=\Mt{TS+TR}\Rightarrow A\Par{B+C}=AB+AC.$\PfEnd
+\Or $T\Par{S+R}=TS+TR\Rightarrow\Mt{T\Par{S+R}}=\Mt{TS+TR}\Rightarrow A\Par{B+C}=AB+AC.$\PfEnd
 \SepLine
 
 %\ProblemN{\hypertarget{3C14}{14}}{
@@ -1601,7 +1601,7 @@ Thus there are at most $\Par{n-1}$ nonzero vecs in $Tv_{1},\dots,Tv_n.$\par\quad
 Then $Tv_i=w_1+\dots+w_m$ for all $i=1,\dots,n$. Because $w_1,\dots,w_n$ is linely inde, $w_1+\dots+w_n\neq 0.$\vspace{4pt}\par\quad
 (b) Suppose $\dim\range T=1$. Then $\dim\null T=\dim V-1$.\par\quad\Hb
 Let $B_{\null T}=\Par{u_2,\dots,u_n}.$ Extend to a basis $\Par{u_1,u_2,\dots,u_n}$ of $V.$\par\quad\Hb
-Let $w_1=Tv_1-w_2-\dots-w_m.$ Extend to $B_W.$ \;Let $v_1=u_1,v_i=u_1+u_i.$ Extend to $B_V.$\PfEnd\vspace{6pt}\quad\Hb
+Let $w_1=Tv_1-w_2-\dots-w_m.$ Extend to $B_W.$ \;Let \,$v_1=u_1,\;v_i=u_1+u_i.$ \,Extend to $B_V.$\PfEnd\vspace{6pt}\quad\Hb
 \Or Suppose $B_{\range T}=\Par{w}.$ \,By \Sbra{2.C {\NOTEFOR} (15)}, $\exists\,B_W=\Par{w_1,\dots,w_m},\;w=w_1+\dots+w_m.$\par\quad\Hb
 By \Sbra{2.C {\TIPS}}, $\exists$ a basis $\Par{u_1,\dots,u_n}$ of $V$ such that each $u_k\not\in\null T.$\par\quad\Hb
 Now each $Tu_k\in\range T=\Span{w}\Rightarrow Tu_k=\lambda_k w,\exists\,\lambda_k\in\nonzeroFbb.$\par\quad\Hb
