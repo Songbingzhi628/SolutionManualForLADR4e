@@ -42,7 +42,7 @@
 \newfontfamily{\forbra}{MathJax_Size1-Regular.otf}
 \newfontfamily{\forbrax}{MathJax_Size2-Regular.otf}
 \newfontfamily{\forslash}{MathJax_Size1-Regular.otf}
-\def\XSlash{\hspace{-1.2pt}\text{\forslash/}}
+\newcommand{\XSlash}[1][-1.2pt]{\hspace{#1}\text{\forslash/}}
 \newcommand{\Slash}[1][\envFontA]{${#1$/$}$}
 
 \newcommand{\Largenr}[1]{{\Large\tgnr#1}}
@@ -133,6 +133,7 @@
 \newcommand{\aXMid}[2][1pt]{\Mid[#1][\envFontHuge\envFont]{#2}}
 \newcommand{\Bra}[2][\envFont]{{\text{\forbra{#1\{}}}#2{\text{\forbra{#1\}}}}}
 \newcommand{\SmallPar}[2][0pt]{{\envFontSmall[\scriptsize]\Par[#1]{#2}}}
+\newcommand{\TinyPar}[2][0pt]{(\hspace{#1}#2\hspace{#1})}
 \newcommand{\BigPar}[1]{{\text{\envFont\forbra(\hspace{1pt}}}#1{\text{\hspace{1pt}\envFont\forbra)}}}
 \newcommand{\XPar}[1]{{\text{\envFont\forbrax(\hspace{1pt}}}#1{\text{\hspace{1pt}\envFont\forbrax)}}}
 \newcommand{\Sbra}[2][1pt]{{\text{\envFont\forbra[\hspace{#1}}}#2{\text{\envFont\forbra\hspace{#1}]}}}

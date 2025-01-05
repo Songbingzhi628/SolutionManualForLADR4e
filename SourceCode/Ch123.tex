@@ -2188,41 +2188,42 @@ $\Blind{y\in\bigcap_{\alpha\in\Gamma}A_\alpha}\Longleftrightarrow$ each $v_\alph
 	(c) \TextNL{Prove that $A$ is a translate of some subsp of $V$ of dim less than $m.$}
 }\par\quad
 (a) By Problem (8), $\forall u, w\in A,\lambda\in\Fbb,\lambda u+\Par{1-\lambda}w=\XPar{\lambda\sum_{i=1}^m a_i+\Par{1-\lambda}\sum_{i=1}^m b_i}v_i\in A.$\PfEnd\vspace{8pt}\quad
-(b) Suppose $B=v+U,$ where $v\in V$ and $U$ is a subsp of $V.$ Let each $v_k=v+u_k\in B,\exists\,!\,u_k\in U.$\par\quad\Hb
-$\forall w\in A,\;w=\sum_{i=1}^m \lambda_i v_i=\sum_{i=1}^m \lambda_i\Par{v+u_i}=\sum_{i=1}^m \lambda_i v+\sum_{i=1}^m \lambda_i u_i=v+\sum_{i=1}^m \lambda_i u_i\in v+U=B.$\PfEnd\vspace{8pt}\quad\Hb 
+(b) Suppose $B=v+U,$ where $v\in V$ and $U$ is a subsp of $V.$ \uline{Let each $v_k=v+u_k\in B,\exists\,!\,u_k\in U.$}\par\quad\Hb
+$\forall w\in A,\;w=\sum_{i=1}^m \lambda_i v_i=\sum_{i=1}^m \lambda_i\Par{v+u_i}=\uline{\sum_{i=1}^m \lambda_i v}+\sum_{i=1}^m \lambda_i u_i=v+\sum_{i=1}^m \lambda_i u_i\in v+U=B.$\PfEnd\vspace{8pt}\quad\Hb 
 \Or \vspace{2pt}Let $v=\lambda_1 v_1+\dots+\lambda_m v_m\in A$. To show that $v\in B$, use induction on $m$ by $k$.\par\quad\Hb
 (i) \vspace{2pt}$k=1,v=\lambda_1 v_1\Rightarrow \lambda_1=1.$ 又 $v_1\in B.$ Hence $v\in B$.\par\quad\Hb\Hi
 \vspace{6pt}$k=2,v=\lambda_1 v_1+\lambda_2 v_2\Rightarrow\lambda_2=1-\lambda_1.$ 又 $v_1,v_2\in B.$ By Problem (8), $v\in B$.\par\quad\Hb\Endi
 (ii) \vspace{6pt}$2\leqslant k<m.$ Assume that $v=\lambda_1 v_1+\dots+\lambda_k v_k\in A\subseteq B.\;\XPar{\forall\lambda_i$ such that $\sum_{i=1}^k\lambda_i=1}$\par\quad\Hb\Hii
-\vspace{6pt}For $u=\mu_1 v_1+\dots+\mu_k v_k+\mu_{k+1} v_{k+1}\in A.\,\,\forall i=1,\dots,k,\,\exists\,\mu_i\neq 1,$ fix one such $i$ by $\iota$.\par\quad\Hb\Hii
-\vspace{6pt}Then $\sum_{i=1}^{k+1}\mu_i-\mu_\iota=1-\mu_\iota\Rightarrow\XPar{\sum_{i=1}^{k+1}\Frac{\mu_i}{1-\mu_\iota}}-\Frac{\mu_\iota}{1-\mu_\iota}=1.$\par\quad\Hb\Hii
-\vspace{6pt}Let $w=\underbrace{\Frac{\mu_1}{1-\mu_\iota}v_1+\dots+\Frac{\mu_{\iota-1}}{1-\mu_\iota}v_{\iota-1}+\Frac{\mu_{\iota+1}}{1-\mu_\iota}v_{\iota+1}+\dots+\Frac{\mu_{k+1}}{1-\mu_\iota}v_{k+1}}_{k\,terms}.$\par\quad\Hb\Hii
-\vspace{6pt}Let $\lambda_i=\Frac{\mu_i}{1-\mu_\iota}$ for $i=1,\dots,\iota-1;$ \,$\lambda_j=\Frac{\mu_{j+1}}{1-\mu_\iota}$ for $j=\iota,\dots,k$. Then,\par\quad\Hb\Hii
+\vspace{6pt}For $u=\mu_1 v_1+\dots+\mu_k v_k+\mu_{k+1} v_{k+1}\in A.$ \;Fix one $\mu_\iota\neq 1.$\par\quad\Hb\Hii
+\vspace{6pt}Then \;$\sum_{i=1}^{k+1}\mu_i-\mu_\iota=1-\mu_\iota\Longrightarrow\XPar{\sum_{i=1}^{k+1}\Frac{\mu_i}{1-\mu_\iota}}-\Frac{\mu_\iota}{1-\mu_\iota}=1.$\par\quad\Hb\Hii
+\vspace{6pt}Let \,$w=\underbrace{\Frac{\mu_1}{1-\mu_\iota}v_1+\dots+\Frac{\mu_{\iota-1}}{1-\mu_\iota}v_{\iota-1}+\Frac{\mu_{\iota+1}}{1-\mu_\iota}v_{\iota+1}+\dots+\Frac{\mu_{k+1}}{1-\mu_\iota}v_{k+1}}_{k\,terms}.$\par\quad\Hb\Hii
+\vspace{6pt}Let \,$\lambda_i=\Frac{\mu_i}{1-\mu_\iota}$ for $i\in\Bra{1,\dots,\iota-1};$ \;$\lambda_j=\Frac{\mu_{j+1}}{1-\mu_\iota}$ for $j\in\Bra{\iota,\dots,k}.$ \;Then,\par\quad\Hb\Hii
 \vspace{6pt}$\MathRightBrace{r}{\sum_{i=1}^k\lambda_i=1\Rightarrow w\in B\\ v_\iota\in B\Rightarrow u\apostrophe=\lambda w+\Par{1-\lambda}v_\iota\in B}\Rightarrow$ Let $\lambda=1-\mu_\iota$. Thus $u\apostrophe=u\in B\Rightarrow A\subseteq B.$\PfEnd\vspace{8pt}\quad
-(c) If $m=1,$ then let $A=v_1+\zeroSubs$ and we are done.\par\quad\Hc
-Fix one $k\in\Bra{1,\dots,m}.$ For $\lambda_1,\dots,\lambda_{k-1},\lambda_{k+1},\dots,\lambda_m\in\Fbb.$ Let $\lambda_k=1-\lambda_1-\dots-\lambda_{k-1}-\lambda_{k+1}-\dots-\lambda_m$\par\quad\Hc
-$\Longrightarrow\lambda_1 v_1+\dots+{\lambda_k v_k}+\dots+\lambda_m v_m=v_k+\sum_{i=1}^m\lambda_i\Par{v_i-v_k}.$ \;$A=v_k+\Span{v_1-v_k,\dots,v_m-v_k}.$\PfEnd
+(c) If $m=1,$ then let $A=v_1+\zeroSubs$ and we are done. \;Now suppose $m\geqslant 2.$ Fix one $k\in\Bra{1,\dots,m}.$\par\quad\Hc
+$A\ni \lambda_1v_1+\dots+\lambda_{k-1}v_{k-1}+\BigPar{1-\lambda_1-\dots-\lambda_{k-1}-\lambda_{k+1}-\dots-\lambda_m}v_k+\lambda_{k+1}v_{k+1}+\dots+\lambda_m v_m$\par\quad\Hc
+$\Blind{A}=v_k+\lambda_1\Par{v_1-v_k}+\dots+\lambda_{k-1}\Par{v_{k-1}-v_k}+\lambda_{k+1}\Par{v_{k+1}-v_k}+\dots+\lambda_m\Par{v_m-v_k}$\par\quad\Hc
+$\Blind{A}\in v_k+\Span{v_1-v_k,\dots,v_m-v_k}.$\PfEnd
 \SepLine\pagebreak
 
 \ProblemN{\hypertarget{3E14}{14}}{
 	\TextNL{Suppose $U=\Bra{\Par{x_1,x_2,\cdots}\in\Fbb^{\infty}:x_k\neq 0\text{\;for\;only\;finitely\;many}\;k}$.}
-	(a) \TextNL{Show that $U$ is a subsp of $\Fbb^{\infty}$. [Do it in your mind]}
-	(b) \TextNL{Prove that $\Fbb^{\infty}\XSlash U$ is infinite-dim.}
-}For ease of notation, denote the $p^\text{th}$ term of $u=\Par{x_1,\cdots,x_p,\cdots}\in\Fbb^{\infty}$ by $u\Sbra{p}$.\vspace{6pt}\par\quad
-For each $r\in\Nbp,$ let $\;e_r\Sbra{p}=\hMath[0pt]{l}{\left\{}{\right|}{1\,,\Par{p-1}\equiv 0\,\BigPar{\text{mod}\,r}\\0\,,\text{otherwise}}$ \;\;simply $e_r=\BigPar{1,\underbrace{\;0,\;\,\cdots,\;\,0\,}_{\SmallPar{p-1}\,\,times},1,\underbrace{\;0,\;\,\cdots,\;\,0\,}_{\SmallPar{p-1}\,\,times},1,\cdots}.$\vspace{6pt}\par\quad
-Choose one $m\in\Nbp$. Let $a_1\Par{e_1+U}+\dots+a_m\Par{e_m+U}=0+U\Rightarrow\exists\,u\in U,a_1 e_1+\dots+a_m e_m=u$.\vspace{4pt}\par\quad
-Suppose $u=\Par{x_1,\cdots,x_L,{0,\cdots}},$ where $L$ is the largest such that $u[L]\neq 0.$\vspace{4pt}\par\quad
-Let $s\in\Nbp$ be such that $h=s\cdot m!+1> L$\, and \,$e_1\Sbra{h}=\cdots=e_m\Sbra{h}=1.$\vspace{6pt}\par\quad
-Note that by definition, \;$e_r\Sbra{s\cdot m!+1+p}=e_r\Sbra{p+1}=1\Longleftrightarrow p\equiv 0\,\Par{\,\text{mod}\,r\,}\Longleftrightarrow r\,\mmid\,p.$\vspace{6pt}\par\quad
-Now for any $p\in\Bra{1,\dots,m},\;u\Sbra{h+p}=\XPar{\sum_{r=1}^m a_r e_r}\Sbra{p+1}=\sum_{k=1}^{\tau\SmallPar{p}}a_{p_k}=0$\hfill(${\Delta}$)\vspace{6pt}\par\quad
-where $1=p_1\leqslant\cdots\leqslant p_{\tau\SmallPar{p}}=p$ are all the distinct factors of $p.$\vspace{4pt}\par\quad
-Let $q=p_{\tau\SmallPar{p}-1}$. Notice that $\tau\Par{q}=\tau\Par{p}-1$ and $q_k=p_k,\forall k\in\Bra{1,\dots,\tau\Par{q}}$.\par\vspace{6pt}\quad
-Again by ($\Delta$), $\XPar{\sum_{r=1}^m a_r e_r}\Sbra{h+q}=\sum_{k=1}^{\tau\SmallPar{p}-1}a_{p_k}=0.$ Thus $a_{p_{\tau\SmallPar{p}}}=a_p=0$ for any $p\in\Bra{1,\dots,m}$.\vspace{8pt}\par\quad
-Hence $\forall m\in\Nbp,\Par{e_1,\dots,e_m}$ is linely inde in $\Fbb^{\infty},$ so is $\Par{e_1+U,\dots,e_m+U}$ in $\Fbb^{\infty}\XSlash U$. By (2.A.14).\PfEnd\vspace{14pt}\quad
+	(a) \TextNL{Show that $U$ is a subsp of $\Fbb^{\infty}$. \large\envFontDefault\Sbra{Do it in your mind}}
+	(b) \TextNL{Prove that $\Fbb^{\infty}\XSlash[-3pt]U$ is infinite-dim.}
+}For ease of notation, denote the $p^\text{th}$ term of $u=\Par{x_1,\cdots,x_p,\cdots}\in\Fbb^{\infty}$ by $u\Sbra{p}$.\vspace{2pt}\par\quad
+For each $r\in\Nbp,$ let $\;e_r\Sbra{k}=\hMath[0pt]{l}{\left\{}{\right|}{1\,,\;\Par{k-1}\equiv 0\,\BigPar{\text{mod}\,r}\\0\,,\;\text{otherwise}}$ \;simply \,$e_r=\BigPar{1,\underbrace{0,\cdots,0}_{\SmallPar{r-1}},1,\underbrace{0,\cdots,0}_{\SmallPar{r-1}},1,\cdots}.$\vspace{6pt}\par\quad
+For $m\in\Nbp.$ Let $a_1\Par{e_1+U}+\dots+a_m\Par{e_m+U}=0+U\Rightarrow\exists\,u\in U,a_1 e_1+\dots+a_m e_m=u$.\vspace{2pt}\par\quad
+Suppose $u=\Par{x_1,\cdots,x_L,{0,\cdots}},$ where $L$ is the largest such that $u\Sbra{L}\neq 0.$\vspace{2pt}\par\quad
+Let $s\in\Nbp$ be such that $h=s\cdot m!+1> L,$ \,and \,$e_1\Sbra{h}=\cdots=e_m\Sbra{h}=1.$\vspace{2pt}\par\quad
+\NOTICE that for any $p,r\in\Bra{1,\dots,m},$ \;$e_r\Sbra{s\cdot m!+1+p}=e_r\Sbra{p+1}=1\Longleftrightarrow p\equiv 0\,\Par{\,\text{mod}\,r\,}\Longleftrightarrow r\,\mmid\,p.$\par\vspace{2pt}\quad
+Let \,$1=p_1\leqslant\cdots\leqslant p_{\tau\TinyPar{p}}=p$\, be the distinct factors of $p.$ Moreover, $r\,\mmid\,p\Longleftrightarrow r=p_k$ for some $k.$\par\vspace{2pt}\quad
+Now $u\Sbra{h+p}=0=\XPar{\sum_{r=1}^m a_r e_r}\Sbra{p+1}=\sum_{k=1}^{\tau\TinyPar{p}}a_{p_k}.$\par\vspace{0pt}\quad
+Let $q=p_{\tau\TinyPar{p}-1}$. Then $\tau\Par{q}=\tau\Par{p}-1,$ and each $q_k=p_k.$ Again, $\XPar{\sum_{r=1}^m a_r e_r}\Sbra{h+q}=0=\sum_{k=1}^{\tau\TinyPar{p}-1}a_{p_k}.$\par\vspace{4pt}\quad
+Thus $a_{p_{\tau\TinyPar{p}}}=a_p=0$ for all $p\in\Bra{1,\dots,m}\Rightarrow\Par{e_1,\dots,e_m}$ is linely inde in $\Fbb^{\infty}.$\vspace{2pt}\par\quad
+So is $\Par{e_1+U,\dots,e_m+U}$ in $\Fbb^{\infty}\XSlash[-2.5pt]U.$ Because $m$ is arbitrary. By (2.A.14).\PfEnd\vspace{10pt}\quad
 \Or For each $r\in\Nbp,$ let $\;e_r\Sbra{p}=\hMath[0pt]{l}{\left\{}{\right.}{1\,,\text{if }2^r\,\mmid\,p\\0\,,\text{otherwise}}.$\vspace{4pt}\par\quad
 Similarly, let $m\in\Nbp$ and $a_1\Par{e_1+U}+\dots+a_m\Par{e_m+U}=0\Rightarrow a_1e_1+\dots+a_me_m=u\in U.$\vspace{4pt}\par\quad
 Suppose $L$ is the largest such that $u\Sbra{L}\neq 0.$ And $l$ is such that $2^{ml}> L.$\vspace{6pt}\par\quad
-Then $\forall k\in\Bra{1,\dots,m},u\Sbra{2^{ml}+2^k}=\XPar{\sum_{r=1}^m a_re_r}\Sbra{2^k}=a_1+\dots+a_k=0.$\vspace{6pt}\par\quad
+Then for each $k\in\Bra{1,\dots,m},\;u\Sbra{2^{ml}+2^k}=0=\XPar{\sum_{r=1}^m a_re_r}\Sbra{2^k}=a_1+\dots+a_k.$\vspace{6pt}\par\quad
 Thus $a_1=\dots=a_m=0$ and $\Par{e_1,\dots,e_m}$ is linely inde. Similarly.\PfEnd
 \SepLine
 
