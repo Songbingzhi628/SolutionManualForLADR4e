@@ -6,12 +6,12 @@
 \vspace{3pt}
 
 \ProblemBnoor[]{\Tips \,\,\,}[]{
-	\TextB{\tgsl\large\envFontDefault Suppose $p\in\PoF{},\deg p\leqslant m$ and $p$ has at least $\Par{m+1}$ distinct zeros.}
+	\TextB{\tgsl\large\envFontDefault Suppose $p\in\PoFi,\deg p\leqslant m$ and $p$ has at least $\Par{m+1}$ distinct zeros.}
 	\Blind{\Tips \,\,\,} \TextB{\tgsl\large\envFontDefault Then by the contrapositive of [4.12], 又 $\deg p=m,$ we conclude that $m<0.$ Hence $p=0.$}
 }\TextB{}
 \Or We show that if $p$ has at least $m$ distinct zeros, then either $p=0$ or $\deg p\geqslant m.$\TextB{}
 If $p=0$ then we are done. If not, then suppose $p$ has exactly $n$ distinct zeros $\lambda_1,\dots,\lambda_n.$\TextB{}
-Because $\exists\,!\,\alpha_i\geqslant 1,q\in\PoF{},$ and $q\neq 0,$ such that $p\Par{z}=\Sbra{\Par{z-\lambda_1}{^{\alpha_1}}\cdots\Par{z-\lambda_n}{^{\alpha_n}}}q\Par{z}.$\PfEnd\vspace{2pt}
+Because $\exists\,!\,\alpha_i\geqslant 1,q\in\PoFi,$ and $q\neq 0,$ such that $p\Par{z}=\Sbra{\Par{z-\lambda_1}{^{\alpha_1}}\cdots\Par{z-\lambda_n}{^{\alpha_n}}}q\Par{z}.$\PfEnd\vspace{2pt}
 
 \ProblemBnoor[]{\Comment\,\,\,}[]{
 	\TextB{\large\envFontDefault\NOTICE that by [4.17], some term of the poly factorization might not be in the form $\Par{x-\lambda_k}{^{\alpha_k}}.$\vspace{-6pt}}
@@ -25,7 +25,7 @@ would give a poly with some nonzero coeffs but infinitely many zeros. By {\TIPS}
 
 \BulletPointX\NoteFor{[4.8]} {\tgsl division algorithm for polys} \hfill[{\tgsc Another proof}]\TextB{\vspace{4pt}}
 Suppose $\deg p\geqslant \deg s$. Then $\XPar{\underbrace{1, z,\dots, z^{\deg s-1}}_{\text{of\,length}\,\deg s},\underbrace{s,zs,\cdots,z^{\deg p-\deg s}s}_{\text{of\,length}\,\Par{\deg p-\deg s+1}}}$ is a basis of $\PoF{\deg p}.$\TextB{}
-Because $q\in\PoF{},\exists\,!\,a_i,b_j\in\Fbb,$\TextB{}
+Because $q\in\PoFi,\exists\,!\,a_i,b_j\in\Fbb,$\TextB{}
 $q=a_0+a_1 z+\dots+a_{\deg s-1}z^{\deg s-1}+ b_0 s+b_1 zs +\dots+ b_{\deg p-\deg s}z^{\deg p-\deg s}s$\TextB{}
 $=\underbrace{a_0+a_1 z+\dots+a_{\deg s-1}z^{\deg s-1}}_{r}+s\underbrace{\XPar{b_0+b_1 z +\dots+ b_{\deg p-\deg s}z^{\deg p-\deg s}}}_{q}.$ Note that $r,q$ are unique.\PfEnd[-16pt]
 \SepLine
@@ -41,10 +41,10 @@ Thus $p\Par{z}=\sum_{j=1}^m a_j \Par{z-\lambda}\sum_{i=1}^k \lambda^{i-1}z^{k-i}
 For any $w\in\Cbb,k\in\Nbp,$ by polar coordinates, $\exists\,r\geqslant 0,\theta\in\Rbb,r\Par{\cos\theta + \i \sin\theta} = w$.\vspace{2pt}\TextB{}
 By De Moivre' theorem, $w^k=\Sbra{r\Par{\cos\theta +\i\sin \theta}}{^k}=r^k\Par{\cos k\theta + \i \sin k\theta}$.\vspace{2pt}\TextB{}
 Hence $\BigPar{r^{1/k}\Par{\cos\frac{\;\theta\;}{k} +\i\sin\frac{\;\theta\;}{k}}}{^k}=w$. Thus every complex number has a {\tgsl $k^{th}$ root}.\vspace{6pt}\TextB{}
-Suppose a nonconst $p\in\PoC{}$ with highest-order nonzero term $c_m z_m.$\vspace{3pt}\TextB{}
+Suppose a nonconst $p\in\PoCi$ with highest-order nonzero term $c_m z_m.$\vspace{3pt}\TextB{}
 Then $\aMid{p\Par{z}}\rightarrow\infty$ as $\aMid{z}\rightarrow\infty$ \XPar{ because $\Frac{\aMid{p\Par{z}}}{\aMid{z_m}}\rightarrow\aMid{c_m}$ as $\aMid{z}\rightarrow\infty$ }.\vspace{3pt}\TextB{}
 \vspace{3pt}Thus the continuous function $z\rightarrow\aMid{p\Par{z}}$ has a global minimum at some point $\zeta\in\Cbb.$\TextB{}
-\vspace{3pt}To show that $p\Par{\zeta} = 0$, assume $p\Par{\zeta}\neq 0$. Define $q\in\PoC{}$ by $q\Par{z}=\Frac{p\Par{z+\zeta}}{p\Par{\zeta}}.$\TextB{}
+\vspace{3pt}To show that $p\Par{\zeta} = 0$, assume $p\Par{\zeta}\neq 0$. Define $q\in\PoCi$ by $q\Par{z}=\Frac{p\Par{z+\zeta}}{p\Par{\zeta}}.$\TextB{}
 \vspace{3pt}The function $z\rightarrow\aMid{q\Par{z}}$ has a global minimum value of $1$ at $z = 0$.\TextB{}
 \vspace{3pt}Write $q\Par{z} = 1 + a_k z^k + \dots + a_m z^m$, where $k\in\Nbp$ is the smallest such that $a_k\neq 0$.\TextB{}
 \vspace{3pt}Let $\beta\in\Cbb$ be such that $\beta^k=-\Frac{1}{a_k}$.\TextB{}
@@ -79,7 +79,7 @@ Now letting $t=1/\Par{2c}$, we get $\aMid{q\Par{t\beta}}<1$. Contradicts. Hence 
 
 \ProblemN{\hypertarget{4O4}{4}}{
 	\TextN{Suppose $m,n\in\Nbp$ with $m\leqslant n,\;\lambda_1,\dots,\lambda_m\in\Fbb.$}
-	\TextN{Prove that $\exists\,p\in\PoF{},\deg p = n,$ the zeros of $\,p\,$ are $\lambda_1,\dots,\lambda_m.$\vspace{3pt}}
+	\TextN{Prove that $\exists\,p\in\PoFi,\deg p = n,$ the zeros of $\,p\,$ are $\lambda_1,\dots,\lambda_m.$\vspace{3pt}}
 }Let $p\Par{z}=\Par{z-\lambda_1}^{{\envFontSmall[\scriptsize]n-\Par{m-1}}}\Par{z-\lambda_2}\cdots\Par{z-\lambda_m}.$\PfEnd
 \SepLine
 
@@ -107,12 +107,12 @@ By (4E 3.C.17) 又 $\dim\PoF{m}=\dim\Fbb^{m+1};\;$ \OR By (3.F.32); $T$ is inv.\
 \SepLine
 
 \ProblemN{\hypertarget{4O2}{2}}{
-	\TextN{Suppose $m\in\Nbp$. Is the set $U=\zeroSubs\cup\Bra{p\in\PoF{}:\deg p = m}$ a subsp of $\PoF{}$?}
+	\TextN{Suppose $m\in\Nbp$. Is the set $U=\zeroSubs\cup\Bra{p\in\PoFi:\deg p = m}$ a subsp of $\PoFi$?}
 }$x^m,x^m+x^{m-1}\in U$ \,\,but\,\, $\Deg\Sbra{\Par{x^m+x^{m-1}}-\Par{x^m}}\neq m\Rightarrow \Par{x^m+x^{m-1}}-\Par{x^m}\not\in U.$\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{4O3}{3}}{
-	\TextN{Suppose $m\in\Nbp$. Is the set $U=\zeroSubs\cup\Bra{p\in\PoF{}:2\;\mmid\,\deg p}$ a subsp of $\PoF{}$?}
+	\TextN{Suppose $m\in\Nbp$. Is the set $U=\zeroSubs\cup\Bra{p\in\PoFi:2\;\mmid\,\deg p}$ a subsp of $\PoFi$?}
 }$x^2,x^2+x\in U$ \,\,but\,\, $\Deg\Sbra{\Par{x^2+x}-\Par{x^2}}$ is odd and hence $\Par{x^2+x}-\Par{x^2}\not\in U.$\PfEnd
 \SepLine
 
@@ -131,12 +131,12 @@ Now $p\apostrophe\Par{\lambda}=q\Par{\lambda}=0\Rightarrow q\Par{z}=\Par{z-\lamb
 Hence $p$ has strictly less than $m$ distinct zeros.\par\vspace{6pt}\quad
 (b) To prove $[Q]\Rightarrow[P]$, we prove ${}^{\neg}[P]\Rightarrow{}{^\neg}[Q]$:\par\quad\Hb
 Because nonzero $p\in\PoF{m},$ we suppose $\lambda_1,\dots,\lambda_M$ are all the distinct zeros of $p,$ where $M<m.$\vspace{2pt}\par\quad\Hb
-By Pigeon Hole Principle, $\exists\,\lambda_k$ such that $p\Par{z}=\Par{z-\lambda_k}{^{2}}q\Par{z}$ for some $q\in\PoF{}.$\vspace{3pt}\par\quad\Hb
+By Pigeon Hole Principle, $\exists\,\lambda_k$ such that $p\Par{z}=\Par{z-\lambda_k}{^{2}}q\Par{z}$ for some $q\in\PoFi.$\vspace{3pt}\par\quad\Hb
 Hence $p\apostrophe\Par{z}=2\Par{z-\lambda_k}q\Par{z}+\Par{z-\lambda_k}{^2}q\apostrophe\Par{z}\Rightarrow p\apostrophe\Par{\lambda_k}=0=p\Par{\lambda_k}.$\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{4O7}{7}}{
-	\TextN{Prove that every $p\in\PoR{}$ of odd degree has a zero.}
+	\TextN{Prove that every $p\in\PoRi$ of odd degree has a zero.}
 }\par\quad
 Using the notation and proof of [4.17]. $\deg p=2M+m$ is odd $\Rightarrow m$ is odd. Hence $\lambda_1$ exists.\PfEnd\vspace{6pt}\quad
 \Or Using calculus only. Suppose $p\in\PoF{m},\deg p=m,m$ is odd.\par\quad
@@ -147,7 +147,7 @@ Hence we conclude that $p$ has at least one real zero.\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{4O9}{9}}{
-	\TextN{Suppose $p\in\PoC{}$. Define $q:\Cbb\rightarrow\Cbb\,$ by $q\Par{z} = p\Par{z}\overline{p\Par{\overline z}}$. Prove that $q\in\PoR{}$.}
+	\TextN{Suppose $p\in\PoCi$. Define $q:\Cbb\rightarrow\Cbb\,$ by $q\Par{z} = p\Par{z}\overline{p\Par{\overline z}}$. Prove that $q\in\PoRi$.}
 }\par\quad
 \NOTICE that by [4.5], $\overline z{^n}=\overline{z^n}.$\par\quad
 Suppose $q\Par{z}=a_n z^n+\dots+a_1 z+a_0\Rightarrow q\Par{\overline z}=a_n \overline z{^n}+\dots+a_1 \overline z+a_0\Rightarrow \overline{q\Par{\overline z}}=\overline{a_n}z^n+\dots+\overline{a_1}z+\overline{a_0}.$\vspace{8pt}\par\quad
@@ -159,65 +159,65 @@ Now for each $k\in\Bra{0,\dots,2m},\overline{\sum_{i+j=k}a_i\overline{a_j}}=\sum
 \SepLine\pagebreak
 
 \ProblemN{\hypertarget{4O8}{8}}{
-	\TextN{For $p\in\PoR{}$, define $Tp:\Rbb\rightarrow\Rbb\,$ by $\Par{Tp}\Par{x}=\,${\large\envFontDefault$\MathLeftBrace{l}{
+	\TextN{For $p\in\PoRi$, define $Tp:\Rbb\rightarrow\Rbb\,$ by $\Par{Tp}\Par{x}=\,${\large\envFontDefault$\MathLeftBrace{l}{
 		\Frac{p\Par{x}-p\Par{3}}{x-3}\;$ if $x\neq 3,\\[4pt]
 		p\apostrophe\Par{3}$\hfill if $x=3.
 	}$}\vspace{6pt}}
-	\TextN{Show that {\tgnr(a)} $Tp\in\PoR{}$ for all $p\in\PoR{}$ and that {\tgnr(b)} $T:\PoR{}\rightarrow\PoR{}$ is linear.}
+	\TextN{Show that {\tgnr(a)} $Tp\in\PoRi$ for all $p\in\PoRi$ and that {\tgnr(b)} $T:\PoRi\rightarrow\PoRi$ is linear.}
 }\vspace{2pt}\par\quad
 (a) For $x\neq 3,T\Par{x^n}=\Frac{x^n-3^n}{x-3}=\sum_{i=1}^n 3^{i-1}x^{n-i}.$ For $x=3,T\Par{x^n}=3^{n-1}\cdot n.$\vspace{6pt}\par\quad\Ha
 Note that if $x=3,$ then $\sum_{i=1}^n 3^{i-1}x^{n-i}=\sum_{i=1}^n 3^{n-1}=3^{n-1}\cdot n.$\vspace{2pt}\par\quad\Ha
-Hence $T\Par{x^n}=\sum_{i=1}^n 3^{i-1}x^{n-i}\Rightarrow T\Par{x^n}\in\PoR{}.$\par\vspace{6pt}\quad
-(b) Now we show that $T$ is linear: $\forall p,q\in\PoR{},\lambda\in\Rbb,$\vspace{6pt}\par\quad\Hb
+Hence $T\Par{x^n}=\sum_{i=1}^n 3^{i-1}x^{n-i}\Rightarrow T\Par{x^n}\in\PoRi.$\par\vspace{6pt}\quad
+(b) Now we show that $T$ is linear: $\forall p,q\in\PoRi,\lambda\in\Rbb,$\vspace{6pt}\par\quad\Hb
 $T\Par{p+\lambda q}\Par{x}=\,${\normalsize\envFontSmall$\hMath{l}{\left\{}{\right|}{
 		\Frac{\Par{p+\lambda q}\Par{x}-\Par{p+\lambda q}\Par{3}}{x-3},\;$ if $x\neq 3,\\
 		\Par{p+\lambda q}\apostrophe\Par{3},$ \hfill if $x=3\Blind{.}
 	}$}$\;=\Sbra{T\Par{p}+\lambda T\Par{q}}\Par{x}$ for all $x\in\Rbb.$\PfEnd\vspace{16pt}\quad
-\Or (a) Note that $\exists\,!\,q\in\PoR{},p\Par{x}-p\Par{3}=\Par{x-3}q\Par{z}\Rightarrow q\Par{x}=\Frac{p\Par{x}-p\Par{3}}{x-3}.$\vspace{4pt}\par\quad\Ha
+\Or (a) Note that $\exists\,!\,q\in\PoRi,p\Par{x}-p\Par{3}=\Par{x-3}q\Par{z}\Rightarrow q\Par{x}=\Frac{p\Par{x}-p\Par{3}}{x-3}.$\vspace{4pt}\par\quad\Ha
 \Blind{\Or} $p\apostrophe\Par{x}=\BigPar{p\Par{x}-p\Par{3}}\apostrophe=\BigPar{\Par{x-3}q\Par{x}}\apostrophe=q\Par{x}+\Par{x-3}q\apostrophe\Par{x}.$\vspace{2pt}\par\quad\Ha
-\Blind{\Or} Hence $p\apostrophe\Par{3}=q\Par{3}.$ Now $Tp=q\in\PoR{}.$\vspace{6pt}\par\quad
-\Blind{\Or} (b) $\forall p_1,p_2\in\PoR{},\lambda\in\Rbb,\exists\,!\,q_1,q_2\in\PoR{},$\vspace{2pt}\par\quad\Hb
+\Blind{\Or} Hence $p\apostrophe\Par{3}=q\Par{3}.$ Now $Tp=q\in\PoRi.$\vspace{6pt}\par\quad
+\Blind{\Or} (b) $\forall p_1,p_2\in\PoRi,\lambda\in\Rbb,\exists\,!\,q_1,q_2\in\PoRi,$\vspace{2pt}\par\quad\Hb
 \Blind{\Or} $p_1\Par{x}-p_1\Par{3}=\Par{x-3} q_1\Par{x}$ and $p_2\Par{x}-p_2\Par{3}=\Par{x-3} q_2\Par{x}.$\vspace{2pt}\par\quad\Hb
 \Blind{\Or} By (a), $Tp_1=q_1,Tp_2=q_2.$ Note that $\Par{p_1+\lambda p_2}\Par{x}-\Par{p_1+\lambda p_2}\Par{3}=\Par{x-3}\Par{q_1+\lambda q_2}\Par{x}.$\vspace{2pt}\par\quad\Hb
 \Blind{\Or} Hence by the uniqnes of $q_1+\lambda q_2$ for $p_1+\lambda p_2,$ we must have $T\Par{p_1+\lambda p_2}=q_1+\lambda q_2.$\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{4O11}{11}}{
-	\TextNL{Suppose $p\in\PoF{}$ with $p\neq 0$. Let $U=\Bra{pq:q\in\PoF{}}$.}
-	(a) \TextNL{Show that $\dim\PoF{}\XSlash U = \deg p$.}
-	(b) \TextNL{Find a basis of $\PoF{}\XSlash U$.}
+	\TextNL{Suppose $p\in\PoFi$ with $p\neq 0$. Let $U=\Bra{pq:q\in\PoFi}$.}
+	(a) \TextNL{Show that $\dim\PoFi\XSlash U = \deg p$.}
+	(b) \TextNL{Find a basis of $\PoFi\XSlash U$.}
 }\NOTICE that $pq\neq p\circ q,$ see (4E 3.A.10).\par\quad
-$U$ is a subsp of $\PoF{}$ because $\forall s_1,s_2\in\PoF{},\lambda\in\Fbb,ps_1+\lambda ps_2=p\Par{s_1+\lambda s_2}\in U.$\par\vspace{3pt}\quad
-If $\deg p=0,$ then $U=\PoF{},\PoF{}\XSlash U=\Bra{0},$ with the unique basis $\Par{}.$ Suppose $\deg p\geqslant 1.$\par\vspace{6pt}\quad
-(a) By [4.8], $\forall s\in\PoF{},\exists\,!\,r\in\PoF{\deg p-1},q\in\PoF{}\,\Sbra{\,\exists\,!\,pq\in U\,},s=\Par{p}q+\Par{r}.$\vspace{2.5pt}\par\quad\Ha
-Thus $\PoF{}=U\oplus\PoF{\deg p-1}.$ By the \NOTEFOR\;[3.91] in (3.E), $\PoF{}\XSlash U$ and $\PoF{\deg p-1}$ are iso.\par\vspace{4.5pt}\quad\Ha
-\Or Define $R:\PoF{}\rightarrow\PoF{\deg p-1}$ by $R\Par{s}=r$ for all $s\in\PoF.$ We show that $R$ is linear.\vspace{2pt}\par\quad\Ha
-$\forall s_1,s_2\in\PoF{},\lambda\in\Fbb,\exists\,!\,r_1,r_2\in\PoF{\deg p-1},q_1,q_2\in\PoF{},s_1=\Par{p}q_1+\Par{r_1};\;s_2=\Par{p}q_2+\Par{r_2}.$\vspace{2pt}\par\quad\Ha
-又 $\exists\,!\,r\in\PoF{\deg p-1},q\in\PoF{},\Par{s_1+\lambda s_2}=\Par{p}q+\Par{r}=\Par{p}\Par{q_1+\lambda q_2}+\Par{r_1+\lambda r_2}.$\vspace{2pt}\par\quad\Ha
+$U$ is a subsp of $\PoFi$ because $\forall s_1,s_2\in\PoFi,\lambda\in\Fbb,ps_1+\lambda ps_2=p\Par{s_1+\lambda s_2}\in U.$\par\vspace{3pt}\quad
+If $\deg p=0,$ then $U=\PoFi,\PoFi\XSlash U=\Bra{0},$ with the unique basis $\Par{}.$ Suppose $\deg p\geqslant 1.$\par\vspace{6pt}\quad
+(a) By [4.8], $\forall s\in\PoFi,\exists\,!\,r\in\PoF{\deg p-1},q\in\PoFi\,\Sbra{\,\exists\,!\,pq\in U\,},s=\Par{p}q+\Par{r}.$\vspace{2.5pt}\par\quad\Ha
+Thus $\PoFi=U\oplus\PoF{\deg p-1}.$ By the \NOTEFOR\;[3.91] in (3.E), $\PoFi\XSlash U$ and $\PoF{\deg p-1}$ are iso.\par\vspace{4.5pt}\quad\Ha
+\Or Define $R:\PoFi\rightarrow\PoF{\deg p-1}$ by $R\Par{s}=r$ for all $s\in\PoF.$ We show that $R$ is linear.\vspace{2pt}\par\quad\Ha
+$\forall s_1,s_2\in\PoFi,\lambda\in\Fbb,\exists\,!\,r_1,r_2\in\PoF{\deg p-1},q_1,q_2\in\PoFi,s_1=\Par{p}q_1+\Par{r_1};\;s_2=\Par{p}q_2+\Par{r_2}.$\vspace{2pt}\par\quad\Ha
+又 $\exists\,!\,r\in\PoF{\deg p-1},q\in\PoFi,\Par{s_1+\lambda s_2}=\Par{p}q+\Par{r}=\Par{p}\Par{q_1+\lambda q_2}+\Par{r_1+\lambda r_2}.$\vspace{2pt}\par\quad\Ha
 Note that $r_1,r_2\in\PoF{\deg p-1}\Rightarrow r_1+\lambda r_2\in\PoF{\deg p-1}.$\vspace{2pt}\par\quad\Ha
 \OR Note that $\Deg\Par{r_1+\lambda r_2}\leqslant\max\!\Bra{\deg r_1,\Deg\Par{\lambda r_2}}\leqslant\max\!\Bra{\deg r_1,\deg r_2}<\deg p.$\vspace{2pt}\par\quad\Hb
 By the uniqnes part of [4.8], $s=s_1+\lambda s_2;\;r=r_1+\lambda r_2.$
 Thus $R\Par{s_1+\lambda s_2}=R\Par{s_1}+\lambda R\Par{s_2}.$\vspace{6pt}\par\quad\Ha
-Because $Rs=0\Longleftrightarrow s=pq,\exists\,!\,q\in\PoF{}\Longleftrightarrow s\in U.$ And $\forall r\in\PoF{\deg p-1},Rr=r.$\vspace{2pt}\par\quad\Ha
+Because $Rs=0\Longleftrightarrow s=pq,\exists\,!\,q\in\PoFi\Longleftrightarrow s\in U.$ And $\forall r\in\PoF{\deg p-1},Rr=r.$\vspace{2pt}\par\quad\Ha
 Now $\null R=U,\;\range R=\PoF{\deg p-1}.$\vspace{3pt}\par\quad\Ha
-Hence $\tilde{R}:\PoF{}\XSlash U\rightarrow\PoF{\deg p-1}$ is defined by $\tilde{R}\Par{s+U}=Rs.$ By [3.91(d)], $\tilde{R}$ is an iso.\par\vspace{6pt}\quad
+Hence $\tilde{R}:\PoFi\XSlash U\rightarrow\PoF{\deg p-1}$ is defined by $\tilde{R}\Par{s+U}=Rs.$ By [3.91(d)], $\tilde{R}$ is an iso.\par\vspace{6pt}\quad
 (b) For each $k\in\Bra{0,1,\dots,\deg p-1},\tilde{R}\Par{z^k+U}=R\Par{z^k}=z^k\Rightarrow \tilde{R}{^{-1}}\Par{z^k}=z^k+U.$\par\quad\Hb
-Thus $\Par{1+U,z+U,\dots,z^{\deg p-1}+U}$ can be a basis of $\PoF{}\XSlash U.$\PfEnd
+Thus $\Par{1+U,z+U,\dots,z^{\deg p-1}+U}$ can be a basis of $\PoFi\XSlash U.$\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{4O10}{10}}{
 	\TextNL{Suppose $m\in\Nbb,p\in\PoC{m}$ is such that $p\Par{x_k}\in\Rbb$ for each of distinct $x_0,x_1,\dots,x_m\in\Rbb.$}
-	\TextNL{Prove that $p\in\PoR{}$.}
+	\TextNL{Prove that $p\in\PoRi$.}
 }\par\quad
 By {\TIPS} and Problem (5), $\exists\,!\,q\in\PoR{m}$ such that $q\Par{x_k}=p\Par{x_k}.$ Hence $p=q.$\PfEnd\vspace{6pt}\quad
 \Or Using the Lagrange Interpolating Polynomial.\par\vspace{6pt}\quad
 Define $q\Par{x}=\displaystyle\sum\limits_{j=0}^m\frac{\Par{x-x_0}\Par{x-x_1}\cdots\Par{x-x_{j-1}}\Par{x-x_{j+1}}\cdots\Par{x-x_m}}{\Par{x_j-x_0}\Par{x_j-x_1}\cdots\Par{x_j-x_{j-1}}\Par{x_j-x_{j+1}}\cdots\Par{x_j-x_m}}p\Par{x_j}.$\par\vspace{4pt}\quad
 又 Each $x_j,\,p\Par{x_j}\in\Rbb\Rightarrow q\in\PoR{m}.$ Notice that $q\Par{x_k}=1\cdot p\Par{x_k}\Rightarrow \Par{q-p}\Par{x_k}=0$ for each $x_k.$\par\quad
-Then $\Par{q-p}$ has $\Par{m+1}$ zeros, while $\Par{q-p}\in\PoC{m}$. By {\TIPS}, $q-p=0\Rightarrow p=q\in\PoR{}.$\PfEnd
+Then $\Par{q-p}$ has $\Par{m+1}$ zeros, while $\Par{q-p}\in\PoC{m}$. By {\TIPS}, $q-p=0\Rightarrow p=q\in\PoRi.$\PfEnd
 \SepLine
 
 \ProblemBnoor{\hypertarget{4O4e13}{4E 4 13}}{
-	\TextB{Suppose nonconst $p,q\in\PoC{}$ have no zeros in common. Let $m = \deg p$, $n = \deg q$.\vspace{3pt}}
+	\TextB{Suppose nonconst $p,q\in\PoCi$ have no zeros in common. Let $m = \deg p$, $n = \deg q$.\vspace{3pt}}
 	\TextB{Define $T:\PoC{n-1}\times\PoC{m-1}\rightarrow\PoC{m+n-1}$ by $T\Par{r, s} = rp + sq.$ Prove that $T$ is an iso.\vspace{3pt}}
 	\Corollary \,\,\,\TextB{$\exists\,!\,r\in\PoC{n-1},s\in\PoC{m-1}$ such that $rp + sq = 1.$}
 }\par\quad
@@ -234,7 +234,7 @@ We use induction by $D$ to show that $s{^{\SmallPar{D}}}\Par{\lambda_{\gamma_{D,
 (i) $D=0.$ $\Par{rp+sq}\Par{\lambda_{\gamma_{0,j}}}=\Par{sq}\Par{\lambda_{\gamma_{0,j}}}=s\Par{\lambda_{\gamma_{0,j}}}=0.$\vspace{2pt}\par\quad\Hi
 $D=1.$ $\Par{rp+sq}\apostrophe\Par{\lambda_{\gamma_{1,j}}}=\Par{r\apostrophe p+rp\apostrophe}\Par{\lambda_{\gamma_{1,j}}}+\Par{s\apostrophe q+sq\apostrophe}\Par{\lambda_{\gamma_{1,j}}}=\Par{s\apostrophe q}\Par{\lambda_{\gamma_{1,j}}}=s\apostrophe\Par{\lambda_{\gamma_{1,j}}}=0.$\vspace{4pt}\par\quad\Endi
 (ii) $2\leqslant D\leqslant A-1.$ Assume that $\;s{^{\SmallPar{d}}}\Par{\lambda_{\gamma_{d,j}}}=0$ for each $d\in\Bra{1,\dots,D-1}$ and each $\lambda_{\gamma_{d,j}}\in I_{d,\alpha}.$\vspace{2pt}\par\quad\Hii
-\XPar{ Because $\forall p,q\in\PoF{},k\in\Nbp,\Par{pq}{^{\SmallPar{k}}}=\mathC_{k}^k p{^{\SmallPar{k}}}q{^{\SmallPar{0}}}+\dots+\mathC_{k}^j p{^{\SmallPar{j}}}q{^{\SmallPar{k-j}}}+\dots+\mathC_{k}^0 p{^{\SmallPar{0}}}q{^{\SmallPar{k}}}.$ }\hfill{$\Par{\Delta}$}\vspace{4pt}\par\quad\Hii
+\XPar{ Because $\forall p,q\in\PoFi,k\in\Nbp,\Par{pq}{^{\SmallPar{k}}}=\mathC_{k}^k p{^{\SmallPar{k}}}q{^{\SmallPar{0}}}+\dots+\mathC_{k}^j p{^{\SmallPar{j}}}q{^{\SmallPar{k-j}}}+\dots+\mathC_{k}^0 p{^{\SmallPar{0}}}q{^{\SmallPar{k}}}.$ }\hfill{$\Par{\Delta}$}\vspace{4pt}\par\quad\Hii
 Now $\Sbra{rp+sq}{^{\SmallPar{D}}}\Par{\lambda_{\gamma_{D,j}}}=\Sbra{\mathC_{D}^D r{^{\SmallPar{D}}}p{^{\SmallPar{0}}}+\dots+\mathC_{D}^d r{^{\SmallPar{d}}}p{^{\SmallPar{D-d}}}+\dots+\mathC_{D}^0 r{^{\SmallPar{0}}}p{^{\SmallPar{D}}}}\Par{\lambda_{\gamma_{D,j}}}$\vspace{4pt}\par\quad\Hii
 \Blind{Now} $\Blind{\Sbra{rp+sq}{^{\SmallPar{D}}}\Par{\lambda_{\gamma_{D,j}}}=}+\Sbra{\mathC_{D}^D s{^{\SmallPar{D}}}q{^{\SmallPar{0}}}+\dots+\mathC_{D}^d s{^{\SmallPar{d}}}q{^{\SmallPar{D-d}}}+\dots+\mathC_{D}^0 s{^{\SmallPar{0}}}q{^{\SmallPar{D}}}}\Par{\lambda_{\gamma_{D,j}}}$\vspace{4pt}\par\quad\Hii
 \Blind{Now} $\Blind{\Sbra{rp+sq}{^{\SmallPar{D}}}\Par{\lambda_{\gamma_{D,j}}}}=\Sbra{\mathC_{D}^D s{^{\SmallPar{D}}}q{^{\SmallPar{0}}}}\Par{\lambda_{\gamma_{D,j}}}.$\; Where each $\lambda_{\gamma_{D,j}}\in I_{D,\alpha}\subseteq I_{D-1,\alpha}.$\vspace{4pt}\par\quad\Hii
@@ -248,7 +248,7 @@ Hence $T$ is inje. And $\Dim\BigPar{\PoC{n-1}\times\PoC{m-1}}=\dim\PoC{m+n-1}\Ri
 \SepLine\pagebreak
 \Comment\,\,\, We now prove the statement that marked by $\Par{\Delta}$ above.\vspace{6pt}\par
 \ProblemN{L1:}{
-	\TextB{Prove that $\forall p,q\in\PoF{},k\in\Nbp,\Par{pq}{^{\SmallPar{k}}}=\mathC_{k}^k p{^{\SmallPar{k}}}q{^{\SmallPar{0}}}+\dots+\mathC_{k}^j p{^{\SmallPar{j}}}q{^{\SmallPar{k-j}}}+\dots+\mathC_{k}^0 p{^{\SmallPar{0}}}q{^{\SmallPar{k}}}.$}
+	\TextB{Prove that $\forall p,q\in\PoFi,k\in\Nbp,\Par{pq}{^{\SmallPar{k}}}=\mathC_{k}^k p{^{\SmallPar{k}}}q{^{\SmallPar{0}}}+\dots+\mathC_{k}^j p{^{\SmallPar{j}}}q{^{\SmallPar{k-j}}}+\dots+\mathC_{k}^0 p{^{\SmallPar{0}}}q{^{\SmallPar{k}}}.$}
 }\par\quad
 We use induction by $k\in\Nbp.$\par\quad
 (i) $k=1.$ $\Par{pq}{^{\SmallPar{1}}}=pq=C_{1}^1 p{^{\SmallPar{1}}}q{^{\SmallPar{0}}}+C_{1}^0 p{^{\SmallPar{0}}}q{^{\SmallPar{1}}}.$\par\quad\Endi
@@ -264,7 +264,7 @@ Hence $\Par{pq}{^{\SmallPar{k}}}=\mathC_{k}^0{p{^{\SmallPar{0}}}q{^{\SmallPar{k}
 \ProblemN{L2:}{
 	\TextB{Suppose $p\Par{z}=\Par{z-\lambda}{^\alpha}q\Par{z}$ and $\alpha\in\Nbp.$ Prove that ${p{^{\SmallPar{\alpha-1}}}}\Par{\lambda}=0.$}
 }\par\quad
-Suppose $p\in\PoF{}.$ Write $p\Par{z}=\Par{z-\lambda}{^A}q\Par{z},$ where $A\in\Nbp,q\Par{\lambda}\neq 0.$\vspace{2pt}\par\quad
+Suppose $p\in\PoFi.$ Write $p\Par{z}=\Par{z-\lambda}{^A}q\Par{z},$ where $A\in\Nbp,q\Par{\lambda}\neq 0.$\vspace{2pt}\par\quad
 We use induction to show that for all $\alpha\in\Bra{1,\dots,A},{p{^{\SmallPar{\alpha-1}}}}\Par{\lambda}=0.$\vspace{2pt}\par\quad
 (i) $\alpha=1.$ $p{^{\SmallPar{0}}}\Par{\lambda}=0.$\par\quad\Endi
 (ii) $2\leqslant\alpha\leqslant A.$ Assume that $p{^{\SmallPar{a-2}}}\Par{\lambda}=0$ for all $a\in\Bra{1,\dots,\alpha}.$\par\quad\Hii
@@ -505,9 +505,9 @@ Now each $\lambda\in\Fbb$ is an eigval of $T,$ with the correspd eigvecs in $\Sp
 \SepLine\pagebreak
 
 \ProblemN{\hypertarget{5A11}{11}}{
-	\TextNL{Define $T:\PoR{}\rightarrow\PoR{}$ by $Tp = p\apostrophe$. Find all eigvals and eigvecs.}
+	\TextNL{Define $T:\PoRi\rightarrow\PoRi$ by $Tp = p\apostrophe$. Find all eigvals and eigvecs.}
 }\par\quad
-Note that $\forall p\in\PoR{}\nonzero,\deg p\apostrophe<\deg p.$ And $\deg 0=-\infty.$ Suppose $\lambda$ is an eigval with an eigvec $p.$\par\quad
+Note that $\forall p\in\PoRi\nonzero,\deg p\apostrophe<\deg p.$ And $\deg 0=-\infty.$ Suppose $\lambda$ is an eigval with an eigvec $p.$\par\quad
 Assume that $\lambda\neq 0.$ Then $\deg\lambda p>\deg p\apostrophe$ while $\lambda p=p\apostrophe.$ Contradicts. Thus $\lambda=0.$\par\quad
 Therefore $\deg \lambda p=-\infty=\deg p\apostrophe\Rightarrow p\in\PoR{0}.$ Hence the eigvecs are all the nonzero consts.\PfEnd
 \SepLine
@@ -952,7 +952,7 @@ Suppose $T$ is surj. Then $\forall u\in V,\exists\,v_1,\dots,v_m\in V, T\Par{v_1
 \SepLine
 
 \BulletPointX\NoteFor{[5.17]}\TextB{}
-\TextB{Suppose $T\in\Lm{V},p\in\PoF{}$. Prove that $\null p\Par{T}$ and $\range p\Par{T}$ are invar under $T$.}
+\TextB{Suppose $T\in\Lm{V},p\in\PoFi$. Prove that $\null p\Par{T}$ and $\range p\Par{T}$ are invar under $T$.}
 \Solution Using the commutativity in [5.10].\par\quad
 (a) Suppose $u\in\null p\Par{T}$. Then $p\Par{T}u = 0$.\par\quad\Ha
 Thus $p\Par{T}\Par{Tu} = \BigPar{p\Par{T} T}u \Par{Tp\Par{T}}u=T\BigPar{p\Par{T}u} = 0$. Hence $Tu\in\null p\Par{T}.$\PfEnd\quad
@@ -965,12 +965,12 @@ Suppose $V$ is a finite-dim complex vecsp of dim $n > 0$ and $T\in\Lm{V}$.\TextB
 Choose a nonzero $v\in V$. $\Par{v,Tv,T^2 v,\dots,T^n v}$ of length $n+1$ is linely depe.\TextB{}
 Suppose $a_0 I+a_1 T+\dots+a_n T^n=0.$ Then $\exists\,a_j\neq 0.$\TextB{}
 {\tgsl Thus $\exists$ nonconst $\,p\,$ of smallest degree ( $\deg p>0$ ) such that $p\Par{T}v = 0$.}\TextB{}
-Because $\exists\,\lambda \in \Cbb$ such that $p\Par{\lambda} = 0\Rightarrow\exists\,q \in\PoC{},p\Par{z} = \Par{z-\lambda}q\Par{z},\forall z \in\Cbb.$\TextB{}
+Because $\exists\,\lambda \in \Cbb$ such that $p\Par{\lambda} = 0\Rightarrow\exists\,q \in\PoCi,p\Par{z} = \Par{z-\lambda}q\Par{z},\forall z \in\Cbb.$\TextB{}
 Thus $0 = p\Par{T}v = \Par{T -\lambda I}\BigPar{q\Par{T}v}$. By the minimality of $\deg p$ and $\deg q<\deg p$, $q\Par{T}v \neq 0$.\TextB{}
 Then $\Par{T-\lambda I}$ is not inje. Thus $\lambda$ is an eigval of $T$ with eigvec $q\Par{T}v$.\par
 \BulletPointX\Example\,\,\, \TextB{\large an operator on a complex vecsp with no eigvals}
-Define $T\in\Lm[\BigPar]{\PoC{}}$ by $\Par{Tp}\Par{z} = zp\Par{z}$.\TextB{}
-Suppose $p\in\PoC{}$ is a nonzero poly. Then $\deg Tp=\deg p+1,$ and thus $Tp\neq\lambda p,\,\forall\lambda\in\Cbb.$\TextB{}
+Define $T\in\Lm[\BigPar]{\PoCi}$ by $\Par{Tp}\Par{z} = zp\Par{z}$.\TextB{}
+Suppose $p\in\PoCi$ is a nonzero poly. Then $\deg Tp=\deg p+1,$ and thus $Tp\neq\lambda p,\,\forall\lambda\in\Cbb.$\TextB{}
 Hence $T$ has no eigvals.\par
 \SepLine
 
@@ -1085,7 +1085,7 @@ Hence $p\Par{T}=0=a_0 I+a_1 T+\dots+T^m,$ where $a_0\neq 0$ and $m\leqslant\dim 
 
 \ProblemN{\hypertarget{5BI6}{6}}{
 	\TextN{Suppose $T\in\Lm{V}$ and $U$ is a subsp of $V$ invar under $T$.}
-	\TextN{Prove that $U$ is invar under $p\Par{T}$ for every poly $p\in\PoF{}$.}
+	\TextN{Prove that $U$ is invar under $p\Par{T}$ for every poly $p\in\PoFi$.}
 }\par\quad
 $\forall u\in U,Tu\in U\Rightarrow Iu,Tu,T\Par{Tu},\dots,T^m u\in U\Longrightarrow\forall a_k\in\Fbb,\Par{a_0 I+a_1 T+\dots+a_m T^m}u\in U.$\PfEnd
 \par
@@ -1113,18 +1113,18 @@ By (a), $U=U_0=\Span{v,Tv,\dots,T^{j-1},\dots,T^{m-1},\dots,T^n}$ for all $n\geq
 }\par\quad
 If $T$ is inje, then $\range T=V$ and we are done. Now choose $0\neq v\in\null T,$ then $Tv+0\cdot v=0.$\par\quad
 $1$ is the smallest positive integer such that $T^1 v\in\Span{v,\dots,T^0 v}.$ Define $q$ by $q\Par{z}=z\Rightarrow q\Par{T}v=0.$\par\quad
-Let $W=\range q\Par{T}=\range T.$ $\exists$ monic $s\in\PoF{}$ of smallest degree ( $\deg s\leqslant\dim W$ ), $s\Par{T\mmid_W}=0.$\par\quad
+Let $W=\range q\Par{T}=\range T.$ $\exists$ monic $s\in\PoFi$ of smallest degree ( $\deg s\leqslant\dim W$ ), $s\Par{T\mmid_W}=0.$\par\quad
 Hence $sq$ is the mini poly ( see \NOTEFOR [8.40] ) and $\Deg\Par{sq}=\deg s+\deg q\leqslant\dim\range T+1.$\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{5BI19}{19}}{
-	\TextNL{Suppose $V$ is finite-dim, $\dim V>1,T\in\Lm{V}.$ Prove that $\Bra{\,p\Par{T}:p\in\PoF{}}\neq\Lm{V}.$\vspace{2pt}}
-}If $\forall S\in\Lm{V},\exists\,p\in\PoF{},S=p\Par{T}.$ Then by [5.20], $\forall S_1,S_2\in\Lm{V},S_1S_2=S_2S_1.$\parSol{}
+	\TextNL{Suppose $V$ is finite-dim, $\dim V>1,T\in\Lm{V}.$ Prove that $\Bra{\,p\Par{T}:p\in\PoFi}\neq\Lm{V}.$\vspace{2pt}}
+}If $\forall S\in\Lm{V},\exists\,p\in\PoFi,S=p\Par{T}.$ Then by [5.20], $\forall S_1,S_2\in\Lm{V},S_1S_2=S_2S_1.$\parSol{}
 Note that $\dim\geqslant 2.$ By (3.A.14), $\exists\,S_1,S_2\in\Lm{V},S_1S_2\neq S_2S_1.$ Contradicts.\PfEnd
 \SepLine
 
 \ProblemB{
-	\hypertarget{5BI4e19}{}\TextB{Suppose $V$ is finite-dim and $T\in \Lm{V}$. Let $\mathcal{E} =\Bra{q\Par{T}: q \in \PoF{}}$.}
+	\hypertarget{5BI4e19}{}\TextB{Suppose $V$ is finite-dim and $T\in \Lm{V}$. Let $\mathcal{E} =\Bra{q\Par{T}: q \in \PoFi}$.}
 	\TextB{Prove that $\dim \mathcal{E}$ equals the degree of the mini poly of $T$.}
 }\par\quad
 Because the list $\Par{I,T,\dots,T^{\Par{\dim V}^2}}$ of length $\dim\Lm{V}+1$ is linely depe in $\dim\Lm{V}.$\par\quad
@@ -1146,11 +1146,11 @@ $\PfEnd
 \SepLine
 
 \ProblemBnoor{\hypertarget{5BI4e13}{4E 5.B.13}}{
-	\TextB{Suppose $T\in \Lm{V}$ and $q \in \PoF{}$ is defined by}
+	\TextB{Suppose $T\in \Lm{V}$ and $q \in \PoFi$ is defined by}
 	\TextB{\centerline{$q\Par{z}=a_0 +a_1 z+\dots+a_n z^n,$ where $a_n\neq 0,$ for all $z\in\Fbb.$}}
 	\TextB{Denote the mini poly of $T$ by $\,p\,$ defined by}
 	\TextB{\centerline{$p\Par{z}=c_0+c_1 z+\dots+c_{m-1}z^{m-1}+z^m$ for all $z\in\Fbb.$}}
-	\TextB{Prove that $\exists\,!\,r \in \PoF{}$ such that $q\Par{T} = r\Par{T},\deg r<\deg p.$}
+	\TextB{Prove that $\exists\,!\,r \in \PoFi$ such that $q\Par{T} = r\Par{T},\deg r<\deg p.$}
 }\par\quad
 If $\deg q<\deg p,$ then we are done.\par\quad
 If $\deg q=\deg p,$ notice that $p\Par{T}=0=c_0 I+c_1 T+\dots+c_{m-1}T^{m-1}+T^m$\par\qquad\qquad\qquad\qquad\qquad\qquad\quad\,\,
@@ -1161,7 +1161,7 @@ hence $r\Par{T}=0,\deg r<m$ and we are done.\par\quad
 Now suppose $\deg q\geqslant\deg p.$ We use induction on $\deg q.$\par\quad
 (i) $\deg q=\deg p,$ then the desired result is true, as shown above.\par\quad\Endi
 (ii) $\deg q>\deg p,$ assume that the desired result is true for $\deg q=n.$\par\quad\Hii
-Suppose $f\in\PoF{}$ such that $f\Par{z}=b_0 +b_1 z+\dots+b_n z^n+b_{n+1}z^{n+1}.$\par\quad\Hii
+Suppose $f\in\PoFi$ such that $f\Par{z}=b_0 +b_1 z+\dots+b_n z^n+b_{n+1}z^{n+1}.$\par\quad\Hii
 Apply the assumption to $g$ defined by $g\Par{z}=b_0 +b_1 z+\dots+b_n z^n,$
 \par\quad\Hii\qquad\qquad\qquad\quad getting $s$ defined by $s\Par{z}=d_0+d_1 z+\dots+d_{m-1} z^{m-1}.$\par\quad\Hii
 Thus $g\Par{T}=s\Par{T}\Rightarrow f\Par{T}=g\Par{T}+b_{n+1}T^{n+1}=s\Par{T}+b_{n+1}T^{n+1}.$\par\quad\Hii
@@ -1216,11 +1216,11 @@ we can {\tgsc give an alternative proof of [5.13]}.
 
 \ProblemN{\hypertarget{5BI10}{10}}{
 	\TextNL{Suppose $T\in\Lm{V},\lambda$ is an eigval of $T$ with an eigvec $v.$}
-	\TextNL{Prove that for any $p\in\PoF{},p\Par{T}v=p\Par{\lambda}v.$}
+	\TextNL{Prove that for any $p\in\PoFi,p\Par{T}v=p\Par{\lambda}v.$}
 }\par\quad
 Suppose $p$ is defined by $p\Par{z}=a_0+a_1 z+\dots+a_m z^m$ for all $z\in\Fbb.$ Because for any $n\in\Nbp,T^n v=\lambda^n v.$\par\quad
 Thus $p\Par{T}v=a_0 v+a_1 Tv+\dots+a_m T^m v=a_0 v+a_1 \lambda v+\dots+a_m \lambda^m v=p\Par{\lambda}v.$\PfEnd
-\Comment\,\,\, For any $p\in\PoF{}$ such that $p\Par{z}=\Par{z-\lambda_1}^{\alpha_1}\cdots\Par{z-\lambda_m}^{\alpha_m},$ the result is true as well.\par\quad
+\Comment\,\,\, For any $p\in\PoFi$ such that $p\Par{z}=\Par{z-\lambda_1}^{\alpha_1}\cdots\Par{z-\lambda_m}^{\alpha_m},$ the result is true as well.\par\quad
 Now we prove that $\Par{T-\lambda_1 I}^{\alpha_1}\cdots\Par{T-\lambda_m I}^{\alpha_m}v=\Par{\lambda-\lambda_1}^{\alpha_1}\cdots\Par{\lambda-\lambda_m}^{\alpha_m}v.$\par\quad
 Define $q_i$ by $q_i\Par{z}=\Par{z-\lambda_i}^{\alpha_i}$ for all $z\in\Fbb.$\par\quad
 Because $\Par{a+b}^n=a^n+\mathC_n^1 a^{n-1}b+\dots+\mathC_n^k a^{n-k}b^k+\dots+\mathC_n^nb^n.$\par\quad
@@ -1250,7 +1250,7 @@ $=\Par{\lambda-\lambda_1}^{\alpha_1}\cdots\Par{\lambda-\lambda_m}^{\alpha_m}v.$\
 	\TextN{Suppose $T\in\Lm{V}$ and $\Par{T - 2I}\Par{T - 3I}\Par{T - 4I} = 0$.}
 	\TextN{Suppose $\lambda$ is an eigval of $T$. Prove that $\lambda = 2$ or $\lambda = 3$ or $\lambda = 4$.}
 }\par\quad
-Suppose $v$ is an eigvec correspd to $\lambda.$ Then for any $p\in\PoF{},p\Par{T}v=p\Par{\lambda}v.$\par\quad
+Suppose $v$ is an eigvec correspd to $\lambda.$ Then for any $p\in\PoFi,p\Par{T}v=p\Par{\lambda}v.$\par\quad
 Hence $0=\Par{T - 2I}\Par{T - 3I}\Par{T - 4I}v=\Par{\lambda-2}\Par{\lambda-3}\Par{\lambda-4}v$ while $v\neq 0\Rightarrow\lambda = 2,3$ or $4.$\PfEnd\vspace{2pt}
 \Comment \,\,\,Note that $\Par{T-2I}\Par{T-3I}\Par{T-4I}=0$ is not inje, so that $2,3,4$ are eigvals of $T.$\parCom
 But it doesn't mean that all the eigvals of $T$ are exactly $2,3,4.$
@@ -1370,13 +1370,13 @@ Now we prove that $T\not\in\Span{I},$ so that then the mini poly of $T$ has exac
 \SepLine
 
 \ProblemB{
-	\TextB{Suppose $S,T\in\Lm{V},S$ is inv, and $p\in\PoF{}$. Prove that $Sp\Par{TS}=p\Par{ST}S.$}
+	\TextB{Suppose $S,T\in\Lm{V},S$ is inv, and $p\in\PoFi$. Prove that $Sp\Par{TS}=p\Par{ST}S.$}
 }\par\quad
 We prove $S\Par{TS}{^m}=\Par{ST}{^m} S$ for each $m\in\Nbb\,$ by induction.\par\quad
 (i) If $m=0,1.$ Then $S\Par{TS}{^0}=I=\Par{ST}{^0}S;\;S\Par{TS}{^1}=\Par{ST}S.$\par\quad\Endi
 (ii) If $m>1.$ Assume that $S\Par{TS}{^m}=\Par{ST}{^m} S.$\par\quad\Hii
 Then $S\Par{TS}{^{m+1}}=S\Par{TS}{^m}\Par{TS}=\Par{ST}{^m} STS=\Par{ST}{^{m+1}}S.$\par\quad
-Hence $\forall p\in\PoF{},Sp\Par{TS}=\sum_{k=1}^ma_kS\Par{TS}{^k}=\sum_{k=1}^ma_kp\Par{ST}{^k}S=\Sbra{\sum_{k=1}^ma_k\Par{TS}{^k}}S.$\PfEnd\vspace{2pt}
+Hence $\forall p\in\PoFi,Sp\Par{TS}=\sum_{k=1}^ma_kS\Par{TS}{^k}=\sum_{k=1}^ma_kp\Par{ST}{^k}S=\Sbra{\sum_{k=1}^ma_k\Par{TS}{^k}}S.$\PfEnd\vspace{2pt}
 \Comment \,\,\,$p\Par{TS} = S^{-1} p\Par{ST}S,\;p\Par{ST} = Sp\Par{TS}S^{-1}.$\par
 \Corollary \,\,\,\ProblemN[]{\hypertarget{5BI5}{5}}{
 	Because $S$ is inv, $T\in\Lm{V}$ is arbitrary $\Longleftrightarrow R=ST$ is arbitrary.\TextN{}
@@ -1402,7 +1402,7 @@ Reversing the roles of $S$ and $T$, we conclude that if $T$ is inv, then $p=q$ a
 \SepLine
 
 \ProblemN{\hypertarget{5BI11}{11}}{
-	\TextNL{Suppose $\Fbb = \Cbb,$ $T\in\Lm{V}, p\in\PoC{}$, and $\alpha\in\Cbb.$}
+	\TextNL{Suppose $\Fbb = \Cbb,$ $T\in\Lm{V}, p\in\PoCi$, and $\alpha\in\Cbb.$}
 	\TextNL{Prove that $\alpha$ is an eigval of $p\Par{T}$ $\Longleftrightarrow$ $\alpha = p\Par{\lambda}$ for some eigval $\lambda$ of $T$.}
 }\par\quad
 (a) Suppose $\alpha$ is an eigval of $p\Par{T}\Leftrightarrow \BigPar{p\Par{T}-\alpha I}$ is not inje.\par\quad\Ha
@@ -1531,7 +1531,7 @@ Thus the assumption was incorrect. Hence $R=\null\Par{T^2+bT+cI}=U$ has even dim
 (ii) Suppose $n\geqslant 3.$ Assume that every operator, on odd-dim vecsps of dim less than $n,$ has an eigval.\par\quad\Hii
 If $p$ is a poly multi of $\Par{x - \lambda}$ for some $\lambda\in\Rbb,$ then by [8.49] $\lambda$ is an eigval of $T$ and we are done.\par\quad\Hii
 Now suppose $b, c\in\Rbb$ such that $b^2 < 4c$ and $p$ is a poly multi of $x^2 + bx + c$ (see [4.17]).\par\quad\Hii
-Then $\exists\,q\in\PoR{}$ such that $p\Par{x} = q\Par{x}\Par{x^2 + bx + c}$ for all $x\in\Rbb.$\par\quad\Hii
+Then $\exists\,q\in\PoRi$ such that $p\Par{x} = q\Par{x}\Par{x^2 + bx + c}$ for all $x\in\Rbb.$\par\quad\Hii
 Now $0 = p\Par{T} = \BigPar{q\Par{T}}\Par{T^2 + bT + cI},$ which means that $q\Par{T}\mmid_{\range\Par{T^2+bT+cI}}=0.$\par\quad\Hii
 Because $\deg q < \deg p$ and $p$ is the mini poly of $T$, hence $\range\Par{T^2 + bT + cI}\neq V$.\par\quad\Hii
 又 $\dim V$ is odd and $\dim\null\Par{T^2 +bT+cI}$ is even ( by our previous result ).\par\quad\Hii
@@ -1714,7 +1714,7 @@ XXXX
 \SepLine
 
 \ProblemN{3}{
-	\TextN{Suppose $S, T\in\Lm{V}$ are such that $ST = TS$. Suppose $p\in\PoF{}$.}
+	\TextN{Suppose $S, T\in\Lm{V}$ are such that $ST = TS$. Suppose $p\in\PoFi$.}
 	(a) \TextN{Prove that $\null p\Par{S}$ is invar under $T$.}
 	(b) \TextN{Prove that $\range p\Par{S}$ is invar under $T$.}
 	\TextN{See \NOTEFOR [5.17] for the special case $S = T$.}

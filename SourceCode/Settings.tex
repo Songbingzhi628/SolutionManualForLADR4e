@@ -203,7 +203,7 @@
 \def\Nbp{{\mathbb{N}^+}}
 \def\nonzeroFbb{\Fbb${\envFontA$\backslash$}${\def\envFont{\envFontB}\zeroSubs}}
 \newcommandx{\nonzero}[2][1=\envFontA,2=\envFontB]{${#1$\backslash$}${\Bra[#2]{0}}}
-\newcommand{\Backslash}[1][\envFontA]{${#1$\backslash$}$}
+\newcommand{\Backslash}[1][\big]{#1\backslash}
 \def\mmid{\text{\envFontA|}}
 \def\d{{\textup{\tgnr d}}}
 \def\i{{\textup{\tgnr i}}}
@@ -224,9 +224,12 @@
 \newcommand{\Mt}[2][\Par]{\mathcal{M}#1{#2}}
 \def\Mneg{\mathcal{M}^{-1}}
 \def\Po{{\mathcal{P}}}
-\newcommand{\PoF}[2][\Par]{\Po_{\!{#2}}#1{\Fbb}}
-\newcommand{\PoR}[2][\Par]{\Po_{\!{#2}}#1{\Rbb}}
-\newcommand{\PoC}[2][\Par]{\Po_{\!{#2}}#1{\Cbb}}
+\newcommand{\PoF}[2][\Par]{\Po_{\!\!{#2}}#1{\Fbb}}
+\newcommand{\PoR}[2][\Par]{\Po_{\!\!{#2}}#1{\Rbb}}
+\newcommand{\PoC}[2][\Par]{\Po_{\!\!{#2}}#1{\Cbb}}
+\def\PoFi{\PoF{\,}}
+\def\PoRi{\PoR{\,}}
+\def\PoCi{\PoC{\,}}
 \def\mathC{C}
 \def\apostrophe{\prime}
 \def\BulletPoint{{\small\bullet}}
