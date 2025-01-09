@@ -49,6 +49,7 @@
 然而里面没有明确版权，默认为**Public Domain**。
 
 > 这份习题答案中，截止目前，我发现的错误有：
+> - 第3章F节22提(b)问，
 > - 第4章14题(a)问，
 > 
 > - ······
@@ -143,6 +144,7 @@ What I must say, is that this file, is absolutely in no relation with me, in any
 There is no copyright notice, so I suppose it is **Public Domain**. If it has, I assume that I have the perimission to copy, abridge any part of the document.
 
 > Up to now, I find that there are some wrong answers in this manual:
+> - Chapter 3 Section F Exercise 22 (b),
 > - Chapter 4 Exercise 14 (a),
 > 
 > - ······
