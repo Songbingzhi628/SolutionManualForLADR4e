@@ -919,7 +919,7 @@ Then both $W$ and $V$ have a nonzero element.\par\quad\HII\Hb
 %		$R_{x,y}$ defined below can be rewritten by $R_{x,y}v_z=\delta_{z,x}v_y.$ $}$}
 %}\SepLine
 
-\vfill\ChDecl{Ch3B}{3$\cdot$B}{}\orMode{\hLk{3B3}{3}\;\;\hLk{3B7}{7}\;\;\hLk{3B8}{8}\;\;\hLk{3B9}{9}\;\;\hLk{3B10}{10}\;\;\hLk{3B11}{11}\;\;\hLk{3B12}{12}\;\;\hLk{3B16}{16}\;\;\hLk{3B17}{17}\;\;\hLk{3B18}{18}\;\;\hLk{3B19}{19}\;\;\hLk{3B20}{20}\;\;\hLk{3B21}{21}\;\;\hLk{3B22}{22}\;\;\hLk{3B23}{23}\;\;\hLk{3B24}{24}\;\;\hLk{3B25}{25}\;\;\hLk{3B26}{26}\;\;\hLk{3B28}{28}\;\;\hLk{3B29}{29}\;\;\hLk{3B30}{30}\;\;|\;\;\hLk{3B4e21}{4E:\;\;21}\;\;\hLk{3B4e24}{24}\;\;\hLk{3B4e27}{27}\;\;\hLk{3B4e31}{31}\;\;\hLk{3B4e32}{32}\;\;\hLk{3B4e33}{33}}[-40pt]{[1]: 3, 7, 8; [2]: 9, 10, 11, 16, 17, 18, 19; [3]: 12; [4]: (4E 31), (4E 21), 22, 23; [5]: 20, 21, 24;$\\$[6]: 25, (4E 27); [7]: (4E 24), 26, 28, (4E 3.F.5); [8]: 29, 30, (4E 3.F.6); [前一页]: (4E 33); [前四页]: (4E 32).}
+\vfill\ChDecl{Ch3B}{3$\cdot$B}{}\orMode{\hLk{3B3}{3}\;\;\hLk{3B7}{7}\;\;\hLk{3B8}{8}\;\;\hLk{3B9}{9}\;\;\hLk{3B10}{10}\;\;\hLk{3B11}{11}\;\;\hLk{3B12}{12}\;\;\hLk{3B16}{16}\;\;\hLk{3B17}{17}\;\;\hLk{3B18}{18}\;\;\hLk{3B19}{19}\;\;\hLk{3B20}{20}\;\;\hLk{3B21}{21}\;\;\hLk{3B22}{22}\;\;\hLk{3B23}{23}\;\;\hLk{3B24}{24}\;\;\hLk{3B25}{25}\;\;\hLk{3B26}{26}\;\;\hLk{3B28}{28}\;\;\hLk{3B29}{29}\;\;\hLk{3B30}{30}\;\;|\;\;\hLk{3B4e21}{4E:\;\;21}\;\;\hLk{3B4e24}{24}\;\;\hLk{3B4e27}{27}\;\;\hLk{3B4e31}{31}\;\;\hLk{3B4e32}{32}\;\;\hLk{3B4e33}{33}}[-40pt]{[1]: 3, 7, 8; [2]: 9, 10, 11, 16, 17, 18, 19; [3]: 12; [4]: (4E 27), (4E 21), (4E 31), 22; [5]: 23, (4E 24), 26;$\\$[6]: 20, 21, 24; [7]: 25, 28, (4E 3.F.5); [8]: 29, 30, (4E 3.F.6); [前一页]: (4E 33); [前四页]: (4E 32).}
 
 %\ProblemN{2}{
 %	\TextN{Suppose $S,T\in\Lm{V}$ are such that $\range S\subseteq\null T$. Prove that $(ST)^2=0$.}
@@ -1088,16 +1088,19 @@ Because $\range T=\range T\mmid_U=\Span{Tv_1,\dots,Tv_n},$ 又 $T$ is inje.
 %Extend $\Par{v_i}$ to $\Par{v_1,v_2,v_3}$ for each $i$. But none of $\Par{v_1,v_2},\Par{v_1,v_3},\Par{v_2,v_3}$ is a basis of $\null T.$\PfEnd
 %\SepLine
 
-\ProblemBnoor{\hypertarget{3B4e31}{4E 31}}{
-	\TextB{Suppose $V$ is finite-dim, $X$ is a subsp of $V$, and $Y$ is a finite-dim subsp of $W$.}
-	\TextB{Prove that if $\dim X + \dim Y = \dim V$, then $\exists\,T\in\Lm{V,W},\null T = X,\range T = Y$.}
-}Let $V=U\oplus X,B_U=\Par{v_1,\dots,v_m}.$ \,Then $\forall v\in V,\exists\,!\,a_i\in\Fbb,x\in X,\;v=\sum_{i=1}^m a_i v_i+x.$\parSol{}
-Let $B_Y=\Par{w_1,\dots,w_m}.$ Define $T\in\Lm{V,W}$ by $T{v_i}=w_i,Tx=0$ for each $v_i$ and all $x\in X.$\parSol{}
-Now $v\in\null T\Longleftrightarrow Tv=a_1w_1+\dots+a_mw_m=0\Longleftrightarrow v=x\in X.$ \;Hence $\null T=X.$\parSol{}
-And $Y\ni w=a_1 w_1+\dots+a_m w_m=a_1 Tv_1+\dots+a_m Tv_m\in\range T.$ \;Hence $\range T=Y.$\parSol{}
-\Or \NOTICE that $V=U\oplus\null T.$ By the {\COROLLARY} in Problem (12), $\range T=\range T\mmid_U.$\parSol{}
-{\Blind{\Or}}又 $\dim\range T\mmid_U=\dim U=\dim Y;\;\range T\subseteq Y.$\par\quad
-\Or Let $B_X=\Par{x_1,\dots,x_n}.$ Now $\range T=\Span[\BigPar]{Tv_1,\dots,Tv_m,Tx_1,\dots,Tx_n}=\Span{w_1,\dots,w_m}=Y.$\PfEnd
+\ProblemBnoor{\hypertarget{3B4e27}{4E 27}, \OR 5.B.4}[\Sbra]{
+	\TextB{Suppose $P\in\Lm{V}$ and $P^2 = P$. Prove that $V=\null P\oplus\range P$.\vspace{0pt}}
+}(a) If $v\in\null P\cap\range P\Rightarrow Pv=0,$ and $\exists\,u\in V,v=Pu.$ Then $v=Pu=P^2 u=Pv=0.$\parSol{}
+(b) Note that $\forall v\in V,v=Pv+\Par{v-Pv}$ and $P\Par{v-Pv}=0\Rightarrow v-Pv\in\null P.$\parSol{\Hb}
+\Or Because $\dim V=\dim\null P+\dim\range P=\Dim\BigPar{\null P\oplus\range P}.$\PfEnd{\vspace{4pt}}\quad
+\Or \Sbra[3pt]{{\tgsl Only in Finite-dim}} \;Let $B_{\range P^2}=\Par{P^2 v_1,\dots,P^2 v_n}.$ Then $\Par{Pv_1,\dots,Pv_n}$ is linely inde.\par\quad
+Let $U=\Span{Pv_1,\dots,Pv_n}\Rightarrow V=U\oplus\null P^2.$ \;While $U=\range P=\range P^2;\;\;\null P=\null P^2.$\PfEnd
+\SepLine
+
+\ProblemB{
+	\TextB{Suppose $T\in\Lm{V},v\in V,$ and $n\in\Nbp$ such that $T^{n-1}v\neq 0,\;T^nv=0.$\qquad\large\envFontDefault\tgnr\Sbra{See [5.16]}}
+	\TextB{Prove that $\BigPar{v,Tv,\dots,T^{n-1}v}$ is linely inde.}
+}$a_0v+a_1Tv+\dots+a_{n-1}T^{n-1}v=0\Rightarrow a_0T^{n-1}v=0\Rightarrow a_0=0.$ \,Similar for $a_1,\dots,a_{n-1}.$\PfEnd
 \SepLine
 
 \ProblemBnoor{\hypertarget{3B4e21}{4E 21}}{
@@ -1110,6 +1113,18 @@ And $Y\ni w=a_1 w_1+\dots+a_m w_m=a_1 Tv_1+\dots+a_m Tv_m\in\range T.$ \;Hence $
 And $v\in\null T\Longleftrightarrow Tv=0\in Y\Longleftrightarrow Rv=0\in\range T\Longleftrightarrow v\in\null R.$ By [3.22].\PfEnd\vspace{2pt}
 \Comment \,\,\,Now $\Span{v_1,\dots,v_m}\oplus\null T=\mathcal{K}_{\!Y}.$ {Where $B_{Y\,\cap\,\range T}=\Par{Tv_1,\dots,Tv_m}.$}\vspace{0pt}\parCom
 In particular, $\dim\mathcal{K}_{\!\range T}=\dim\null T+\dim\range T\Longrightarrow\mathcal{K}_{\!\range T}=V.$
+\SepLine
+
+\ProblemBnoor{\hypertarget{3B4e31}{4E 31}}{
+	\TextB{Suppose $V$ is finite-dim, $X$ is a subsp of $V$, and $Y$ is a finite-dim subsp of $W$.}
+	\TextB{Prove that if $\dim X + \dim Y = \dim V$, then $\exists\,T\in\Lm{V,W},\null T = X,\range T = Y$.}
+}Let $V=U\oplus X,B_U=\Par{v_1,\dots,v_m}.$ \,Then $\forall v\in V,\exists\,!\,a_i\in\Fbb,x\in X,\;v=\sum_{i=1}^m a_i v_i+x.$\parSol{}
+Let $B_Y=\Par{w_1,\dots,w_m}.$ Define $T\in\Lm{V,W}$ by $T{v_i}=w_i,Tx=0$ for each $v_i$ and all $x\in X.$\parSol{}
+Now $v\in\null T\Longleftrightarrow Tv=a_1w_1+\dots+a_mw_m=0\Longleftrightarrow v=x\in X.$ \;Hence $\null T=X.$\parSol{}
+And $Y\ni w=a_1 w_1+\dots+a_m w_m=a_1 Tv_1+\dots+a_m Tv_m\in\range T.$ \;Hence $\range T=Y.$\parSol{}
+\Or \NOTICE that $V=U\oplus\null T.$ By Problem (12), $\range T=\range T\mmid_U.$\parSol{}
+{\Blind{\Or}}又 $\dim\range T\mmid_U=\dim U=\dim Y;\;\range T\subseteq Y.$\par\quad
+\Or Let $B_X=\Par{x_1,\dots,x_n}.$ Now $\range T=\Span[\BigPar]{Tv_1,\dots,Tv_m,Tx_1,\dots,Tx_n}=\Span{w_1,\dots,w_m}=Y.$\PfEnd
 \SepLine
 
 %\ProblemN{\hypertarget{3B31}{31}}{
@@ -1136,7 +1151,7 @@ Because (a) \uline{$\range T\mmid_{\null ST}=\range T\cap\null S=\null S\mmid_{\
 %(a) $Tu\in\range T\mmid_{\null ST}\Longleftrightarrow S\Par{Tu}=0\Longleftrightarrow Tu\in\null S\cap\range T=\null S\mmid_{\range T}.$\par\quad
 %(b) $u\in\null T\mmid_{\null ST}=\null T\cap\null ST\Longleftrightarrow Tu=0\Longleftrightarrow u\in\null T.$\PfEnd\vspace{6pt}\quad
 \Or \NOTICE that \uline{$u\in\null ST\Longleftrightarrow S\Par{Tu}=0\Longleftrightarrow Tu\in\null S.$}\parSol{}
-\Blind{\Or}Thus \uline{$\null ST=\Bra{u\in U:Tu\in\null S}=\mathcal{K}_{\!\null S\;\cap\;\range T}=\null ST.$}\parSol{}
+\Blind{\Or}Thus \uline{$\Bra{u\in U:Tu\in\null S}=\mathcal{K}_{\!\null S\;\cap\;\range T}=\null ST.$}\parSol{}
 \Blind{\Or}By Problem (4E 21), $\dim\null ST=\dim\null T+\Dim\BigPar{\null S\cap\range T}.$\PfEnd\vspace{4pt}
 \Corollary \,\,\,(1) $T$ surj $\Rightarrow\dim\null ST=\dim\null S+\dim\null T.$\parCor
 (2) $T$ inv $\Rightarrow\dim\null ST=\dim\null S,\;\null ST=\null T.$\parCor
@@ -1144,8 +1159,9 @@ Because (a) \uline{$\range T\mmid_{\null ST}=\range T\cap\null S=\null S\mmid_{\
 \SepLine
 
 \ProblemN{\hypertarget{3B23}{23}}{
-	\TextNL{Suppose $U,V$ are finite-dim, $S\in\Lm{V,W},T\in\Lm{U,V}$.}
-	\TextNL{Prove that $\dim\range ST\leqslant\min\!\Bra{\dim \range S, \dim\range T}$.\vspace{2pt}}
+	\TextNL{Suppose $V$ is finite-dim, $S\in\Lm{V,W},T\in\Lm{U,V}$.}
+	\TextNL{Prove that $\dim\range ST\leqslant\min\!\Bra{\dim \range S, \dim\range T}$.}
+	\Comment \,\,\,If $\dim V=\dim U.$ Then $\dim\null ST\geqslant\max\!\Bra{\dim\null S,\dim\null T}.$\TextNL{}\vspace{2pt}
 }\NOTICE that \uline{$\range ST=\Bra{Sv:v\in\range T}=\range S\mmid_{\range T}.$}\parSol{}
 Let $\range ST=\Span[\BigPar]{Su_1,\dots,Su_{\dim\range T}},$ where $B_{\range T}=\BigPar{u_1,\dots,u_{\dim\range T}}.$\parSol{}
 $\dim\range ST\leqslant \dim\range T$
@@ -1153,24 +1169,58 @@ $\dim\range ST\leqslant \dim\range T$
 \Or \uline{$\dim\range ST=\dim\range S\mmid_{\range T}=\dim\range T-\dim\null S\mmid_{\range T}$}${}\leqslant \range T.$\PfEnd\parSol{}
 \Comment \,\,\,$\dim\range ST=\dim U-\dim\null ST=\dim \range T\mmid_{U}-\dim\range T\mmid_{\null ST}.$\par\vspace{4pt}
 \Corollary \,\,\,(1) $S\mmid_{\range T}$ inje $\Longleftrightarrow\dim\range ST=\dim\range T.$\parCor
-(2) Let $X\oplus\null S=V.$ Then $X\subseteq\range T\Longleftrightarrow\range ST=\range S.$\parCor
-\Blind{(2)} And $T$ is surj $\Rightarrow\range ST=\range S.$\vspace{-3pt}
+(2) Let $X\oplus\null S=V.$ Then $X\subseteq\range T\Longleftrightarrow\range ST=\range S.$\vspace{-2pt}\parCor
+\Blind{(2)} And $T$ is surj $\Rightarrow\range ST=\range S.$
 \SepLine
 
+\ProblemB{
+	%(a) \TextB{Suppose $\dim V = 5,$ and $ST = 0$ where $S,T\in\Lm{V}$. Prove that $\dim\range TS\leqslant 2.$\vspace{2pt}}
+	\hypertarget{3B4e24}{}(a) \TextB{Suppose $\dim V=n,$ \,$ST=0$ where $S,T\in\Lm{V}.$ Prove that $\dim\range TS\leqslant\Big\lfloor${\LARGE$\frac{\,n\,}{2}$}$\Big\rfloor.$}
+	(b) \TextB{Give an example of such $S, T$ with $n=5$ and $\dim\range TS = 2$.\vspace{1pt}}
+}Note that $\dim\range TS\leqslant\min\!\envFontLarge\Bra{\!\dim\range T,\dim\range S}.$ We prove by contradiction.\par\vspace{1pt}\quad
+%(a) $\dim\range TS\leqslant\min\!\Bra{\overbrace{\dim \range S}^{5\,-\,\dim\null T}, \overbrace{\dim\range T}^{5\,-\,\dim\null S}}.$\par\quad\Ha
+%We show that $\dim\range TS\leqslant 2$ by contradiction. Assume that $\dim\range TS\geqslant 3$.\par\quad\Ha
+%Then $\min\!\Bra{5-\dim\null T,5-\dim\null S}\geq 3\Rightarrow\max\!\Bra{\dim\null T,\dim\null S}\leqslant 2$.\par\quad\Ha
+%又 $\dim\null ST=5\leqslant\dim\null S+\dim\null T\leqslant 4.$ Contradicts.\vspace{6pt}\par\quad\Ha
+%\Or $\MathRightBrace{l}{\dim\null S=5-\dim\range S\\ \dim\range TS\leqslant\dim\range S}\Rightarrow\dim\null S\leqslant 5-\dim\range TS.$\par\vspace{2pt}\quad\Ha
+%And $ST=0\Rightarrow\range T\subseteq\null S\Rightarrow\dim\range TS\leqslant\dim\range T\leqslant\dim\null S.$\PfEnd\vspace{6pt}\quad
+Assume that $\dim\range TS\geqslant \Big\lfloor${\Large$\frac{\,n\,}{2}$}$\Big\rfloor+1.$ \,Then $\min\!\envFontLarge\Bra{n-\dim\null T,n-\dim\null S}\envFontDefault\geqslant \Big\lfloor${\Large$\frac{\,n\,}{2}$}$\Big\rfloor+1$\vspace{1pt}\par\quad
+又 $\dim\null ST=n\leqslant\dim\null S+\dim\null T\;\Big|\hspace{-0.7pt}\Rightarrow\max\!\envFontLarge\Bra{\!\dim\null T,\dim\null S}\envFontDefault\leqslant \Big\lceil${\Large$\frac{\,n\,}{2}$}$\Big\rceil-1.$\par\vspace{1pt}\quad
+Thus \;$n\leqslant 2\envFontLarge\BigPar{\envFontDefault \Big\lceil${\Large$\frac{\,n\,}{2}$}$\Big\rceil-1\envFontLarge}\envFontDefault\Rightarrow{}${\Large$\frac{\,n\,}{2}$}${}\leqslant\Big\lceil${\Large$\frac{\,n\,}{2}$}$\Big\rceil-1$. \;Contradicts.\PfEnd\vspace{4pt}\quad
+\Or $\dim\null S=n-\dim\range S\leqslant n-\dim\range TS.$ \;又 $ST=0\Rightarrow\range T\subseteq\null S.$\par\quad
+$\dim\range TS\leqslant\dim\range T\leqslant\dim\null S\leqslant n-\dim\range TS.$ \;Thus \;$2\dim\range TS\leqslant n.$\PfEnd\vspace{5pt}\quad
+\Or Because $\dim\range TS\leqslant\Big\lfloor${\Large$\frac{\,n\,}{2}$}$\Big\rfloor,$ and $\Big\lfloor${\Large$\frac{\,n\,}{2}$}$\Big\rfloor+\Big\lceil${\Large$\frac{\,n\,}{2}$}$\Big\rceil=n.$\par\vspace{1pt}\quad
+We show that $\dim\null TS\geqslant\Big\lceil${\Large$\frac{\,n\,}{2}$}$\Big\rceil.$ Note that $\dim\null S+\dim\null T\geqslant n.$\par\quad
+$\dim\null S+\dim\null T\mmid_{\range S}=\dim\null TS.$ \;If $\dim\null S\geqslant\Big\lceil${\Large$\frac{\,n\,}{2}$}$\Big\rceil.$ Then we are done.\par\vspace{1pt}\quad
+Otherwise, $\dim\null S\leqslant\Big\lceil${\Large$\frac{\,n\,}{2}$}$\Big\rceil-1\Rightarrow\dim\null T\geqslant n-\dim\null S\geqslant n-\Big\lceil${\Large$\frac{\,n\,}{2}$}$\Big\rceil+1=\Big\lfloor${\Large$\frac{\,n\,}{2}$}$\Big\rfloor+1\geqslant\Big\lceil${\Large$\frac{\,n\,}{2}$}$\Big\rceil.$\par\vspace{2pt}\quad
+Thus $\dim\null TS\geqslant\max\!\Bra{\dim\null S,\dim\null T}=\Big\lceil${\Large$\frac{\,n\,}{2}$}$\Big\rceil.$\PfEnd\vspace{4pt}\quad
+\Example \,\,\,Define $T: \; v_1\mapsto 0, \;\;\, v_2\mapsto 0, \;\;\; v_i\mapsto v_i\;;$ \;\; $S: \; v_1\mapsto v_4, \; v_2\mapsto v_5, \;\; v_i\mapsto 0\;;\;\; i=3,4,5.$\par\vspace{-2pt}
+\SepLine
 
-\BulletPointX\TipsN{5}\,\,\,Suppose $S\in\Lm{U,V}$ is surj. Define $\mathcal{B}\in\Lm[\BigPar]{\Lm{V,W},\Lm{U,W}}$ by $\mathcal{B}\Par{T}=TS.$\TextB{}
-\IndentTipsN{5}Then $\mathcal{B}$ is inje. Because {$\mathcal{B}\Par{T}=TS=0\Longleftrightarrow T\mmid_{\range S}=0.$ \;\Or $\range TS=\range T=\zeroSubs.$}\vspace{-3pt}
-%	\IndentTipsN{5}(b) Suppose $S\in\Lm{V,W}$ is inje. Define $\mathcal{A}\in\Lm[\BigPar]{\Lm{U,V},\Lm{U,W}}$ by $\mathcal{A}\Par{T}=ST.$\TextB{}
-%	\IndentTipsN{5}{\Hb}Then $\mathcal{A}$ is surj. Because $\range\mathcal{F}=\forall R\in\Lm{U,W}.$\TextB{}
+\ProblemN{\hypertarget{3B26}{26}}{
+	\TextNL{Suppose $D\in\Lm[\BigPar]{\PoRi}$ and $\forall p,\Deg\BigPar{Dp}=\Par{\!\deg p}-1.$ \;Prove that $D\in\PoRi$ is surj.\vspace{2pt}}
+}\!\Sbra{ $D$ might not be $D:p\mapsto p\apostrophe.$\hspace{1pt}} \;\NOTICE that the following proof is wrong:\parSol{}
+Because $\Span{Dx,Dx^2,Dx^3,\cdots}\subseteq\range D,$ and $\deg Dx^n=n-1.$\parSol{}
+又 By (2.C.10), $\Span{Dx,Dx^2,Dx^3,\cdots}=\Span{1,x,x^2,\cdots}=\PoRi.$\par\vspace{4pt}\quad
+\uline{Let $D\Par{C}=0,Dx^k=p_k$} of deg $\Par{k-1},$ for all $C\in\Rbb=\PoR{0}$ and for each $k\in\Nbp.$\par\quad
+Because $B_{\PoR[\SmallPar]{m}}=\Par{p_1,\dots,p_m,p_{m+1}}.$ And for all $p\in\PoRi,\exists\,!\,m=\deg p\in\Nbp.$\par\quad
+So that $\exists\,!\,a_i\in\Rbb,p=\sum_{i=1}^{m+1}a_ip_i\Rightarrow\exists\,q=\sum_{i=1}^{m+1}a_{i}x^{i},Dq=p.$\PfEnd\vspace{6pt}\quad
+{\Or We will \uline{recursively define a sequence of polys $\Par{p_k}{_{k=0}^\infty}$ where $Dp_0=1,Dp_k=x^k$} for each $k\in\Nbp.$}\par\vspace{2pt}\quad
+{\normalsize\envFontSmall So that $\forall p=\sum_{k=0}^{\deg p}a_k x^k\in\PoRi,Dq=p,\exists\,q={\sum_{k=0}^{\deg p}a_k p_k}.$}\par\vspace{4pt}\quad
+(i) {Because $\deg Dx=\Par{\!\deg x}-1=0,Dx=C\in\nonzeroFbb.$ Let $p_0=C^{-1}x\Rightarrow Dp_0=C^{-1}Dx=1.$}\vspace{2pt}\par\quad\Endi
+(ii) {Suppose we have defined $Dp_0=1,Dp_k=x^k$ for each $k\in\Bra{1,\dots,n}.$ Because $\deg D\Par{x^{n+2}}=n+1.$}\vspace{2pt}\par\quad\Hii
+{Let {\;$D\Par{x^{n+2}}=a_{n+1}x^{n+1}+a_n x^n+\dots+a_1 x+a_0,$} with $a_{n+1}\neq 0.$}\vspace{2pt}\par\quad\Hii
+{Then {\;$a_{n+1}^{-1}D\BigPar{x^{n+2}}=x^{n+1}+a_{n+1}^{-1}\BigPar{a_n Dp_n+\dots+a_1 Dp_1 +a_0 Dp_0}$}}\vspace{2pt}\par\quad\Hii
+{$\Rightarrow x^{n+1}=D\XSbra{\uline{a_{n+1}^{-1}\Par{x^{n+2}-a_n p_n-\dots-a_1 p_1-a_0 p_0}}}.$ Thus defining $p_{n+1},$ so that $Dp_{n+1}=x^{n+1}.$}\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{3B20}{}\hypertarget{3B21}{20, 21}}{
 	(a) \Text{Prove that if $ST=I\in\Lm{V},$ then $T$ is inje and $S$ is surj.}
 	\Blind{\Onumber{20, 21} }(b) \Text{Suppose $T\in\Lm{V,W}.$ Prove that if $T$ is inje, then $\exists\,S\in\Lm{W,V},\;ST=I$.}
-	\Blind{\Onumber{20, 21} }(c) \Text{Suppose $S\in\Lm{W,V}.$ Prove that if $S$ is surj, then $\exists\,T\in\Lm{V,W},\;ST=I.$}
+	\Blind{\Onumber{20, 21} }(c) \Text{Suppose $S\in\Lm{W,V}.$ Prove that if $S$ is surj, then $\exists\,T\in\Lm{V,W},\;ST=I.$\vspace{2pt}}
 }\par\quad
 (a) $Tv=0\Rightarrow S\Par{Tv}=0=v.$ \Or $\null T\subseteq\null ST=\zeroSubs.$\par\quad\Ha
-$\forall v\in V,ST\Par{v}=v\in\range S.$ \;\Or $V=\range ST\subseteq\range S.$\par\vspace{4pt}\quad
+$\forall v\in V,ST\Par{v}=v\in\range S.$ \;\Or $V=\range ST\subseteq\range S.$\par\vspace{2pt}\quad
 (b) Define $S\in\Lm{\range T,V}$ by $Sw=T^{-1}w,$ {where $T^{-1}$ is the inv of $T\in\Lm{V,\range T}.$}\par\quad\Hb
 Then extend to $S\in\Lm{W,V}$ by (3.A.11). Now $\forall v\in V,STv=T^{-1}Tv=v.$\par\vspace{4pt}\quad\Hb
 \Or \Sbra[3pt]{{\tgsl Req $V$ Finite-dim}} \;Let $B_{\range T}=\Par{Tv_1,\dots,Tv_n}\Rightarrow B_V=\Par{v_1,\dots,v_n}.$ Let $U\oplus\range T=W$.\par\quad\Hb
@@ -1181,6 +1231,12 @@ Then $ST=S\circ\BigPar{S\mmid_U}{^{-1}}=S\mmid_U\circ\BigPar{S\mmid_U}{^{-1}}=I_
 \Or \Sbra[3pt]{{\tgsl Req $V$ Finite-dim}} \;Let $B_{\range S}=B_{V}=\Par{Sw_1,\dots,Sw_n}\Rightarrow\Span{w_1,\dots,w_n}\oplus\null S=W.$\par\quad\Hc
 Define $T\in\Lm{V,W}$ by $T\Par{Sw_i}=w_i.$ Now $ST\BigPar{a_1Sw_1+\dots+a_nSw_n}=\Par{a_1Sw_1+\dots+a_nSw_n}.$\PfEnd\vspace{4pt}
 \Corollary \,\,\,For (b), if $T$ is inje and $\exists\,S,\;ST=I,$ then by (a), this $S$ is surj. Similar for (c).
+\SepLine
+
+\BulletPointX\TipsN{5}\,\,\,Suppose $S\in\Lm{U,V}$ is surj. Define $\mathcal{B}\in\Lm[\BigPar]{\Lm{V,W},\Lm{U,W}}$ by $\mathcal{B}\Par{T}=TS.$\TextB{}
+\IndentTipsN{5}Then $\mathcal{B}$ is inje. Because {$\mathcal{B}\Par{T}=TS=0\Longleftrightarrow T\mmid_{\range S}=0.$ \;\Or $\range TS=\range T=\zeroSubs.$}\vspace{-3pt}
+%	\IndentTipsN{5}(b) Suppose $S\in\Lm{V,W}$ is inje. Define $\mathcal{A}\in\Lm[\BigPar]{\Lm{U,V},\Lm{U,W}}$ by $\mathcal{A}\Par{T}=ST.$\TextB{}
+%	\IndentTipsN{5}{\Hb}Then $\mathcal{A}$ is surj. Because $\range\mathcal{F}=\forall R\in\Lm{U,W}.$\TextB{}
 \SepLine
 
 \ProblemN{\hypertarget{3B24}{24}}{
@@ -1231,7 +1287,7 @@ Hence $\forall v\in V,\,\,$\uline{$\BigPar{\exists\,!\,a_i\in\Fbb,u\in\null S\su
 Redefine $E\in\Lm{W}$ by $E\Par{Tv_i}=Sv_i,\;E\Par{w_j}=x_j,$ for each $Tv_i$ and $w_j.$ Where:\par\quad
 Let $B_{\range T}=\Par{Tv_1,\dots,Tv_m},B_W=\Par{Tv_1,\dots,Tv_m,w_1,\dots,w_n},B_U=\Par{v_1,\dots,v_m}.$\par\quad
 Now $V=U\oplus\null T=U\oplus\null S\Rightarrow B_{\range S}=\BigPar{Sv_1,\dots,Sv_m}.$ Let $B_W'=\Par{Sv_1,\dots,Sv_m,x_1,\dots,x_n}.$\PfEnd 
-\SepLine
+\SepLine\pagebreak
 
 \ProblemN{\hypertarget{3B25}{25}}{
 	\TextNL{Suppose $S, T\in\Lm{V,W},$ and $\range T\subseteq\range S.$ Prove that $\exists\,E\in\Lm{V},T = SE$.}
@@ -1279,59 +1335,6 @@ Note that $\Par{u_1,\dots,u_n}$ is linely inde. Let $X=\Span{x_1,\dots,x_q}\oplu
 Now $E\mmid_X$ is inje, but cannot be re-extend to inv $E\in\Lm{V}$ without loss of functionality.\par\vspace{4pt}\quad
 \Corollary \,\,\,\Sbra[3pt]{{\tgsl Req $V$ Finite-dim}} \;If $\range T=\range S,$ then $\dim\null T=\dim\null S=p.$\parCor\quad
 Redefine $E$ by $Ev_i=u_i,\;Ex_j=y_j$ for each $v_i$ and $x_j.$ Then $E\in\Lm{V}$ is inv.\PfEnd
-\SepLine
-
-\ProblemBnoor{\hypertarget{3B4e27}{4E 27}, \OR 5.B.4}[\Sbra]{
-	\TextB{Suppose $P\in\Lm{V}$ and $P^2 = P$. Prove that $V=\null P\oplus\range P$.\vspace{0pt}}
-}(a) If $v\in\null P\cap\range P\Rightarrow Pv=0,$ and $\exists\,u\in V,v=Pu.$ Then $v=Pu=P^2 u=Pv=0.$\parSol{}
-(b) Note that $\forall v\in V,v=Pv+\Par{v-Pv}$ and $P\Par{v-Pv}=0\Rightarrow v-Pv\in\null P.$\parSol{\Hb}
-\Or Because $\dim V=\dim\null P+\dim\range P=\Dim\BigPar{\null P\oplus\range P}.$\PfEnd{\vspace{4pt}}\quad
-\Or \Sbra[3pt]{{\tgsl Only in Finite-dim}} \;Let $B_{\range P^2}=\Par{P^2 v_1,\dots,P^2 v_n}.$ Then $\Par{Pv_1,\dots,Pv_n}$ is linely inde.\par\quad
-Let $U=\Span{Pv_1,\dots,Pv_n}\Rightarrow V=U\oplus\null P^2.$ \;While $U=\range P=\range P^2;\;\;\null P=\null P^2.$\PfEnd
-\SepLine
-
-\ProblemB{
-	\TextB{Suppose $T\in\Lm{V},v\in V,$ and $n\in\Nbp$ such that $T^{n-1}v\neq 0,\;T^nv=0.$\qquad\large\envFontDefault\tgnr\Sbra{See [5.16]}}
-	\TextB{Prove that $\BigPar{v,Tv,\dots,T^{n-1}v}$ is linely inde.}
-}$a_0v+a_1Tv+\dots+a_{n-1}T^{n-1}v=0\Rightarrow a_0T^{n-1}v=0\Rightarrow a_0=0.$ \,Similar for $a_1,\dots,a_{n-1}.$\PfEnd
-\SepLine
-
-\pagebreak
-
-\ProblemB{
-	%(a) \TextB{Suppose $\dim V = 5,$ and $ST = 0$ where $S,T\in\Lm{V}$. Prove that $\dim\range TS\leqslant 2.$\vspace{2pt}}
-	\hypertarget{3B4e24}{}(a) \TextB{Suppose $\dim V=n,$ \,$ST=0$ where $S,T\in\Lm{V}.$ Prove that $\dim\range TS\leqslant\left\lfloor\Frac{\;n\;}{2}\right\rfloor.$}
-	(b) \TextB{Give an example of such $S, T$ with $n=5$ and $\dim\range TS = 2$.\vspace{2pt}}
-}Note that $\dim\range TS\leqslant\min\!\envFontLarge\Bra{\!\dim\range T,\dim\range S}.$ We prove by contradiction.\par\vspace{2pt}\quad
-%(a) $\dim\range TS\leqslant\min\!\Bra{\overbrace{\dim \range S}^{5\,-\,\dim\null T}, \overbrace{\dim\range T}^{5\,-\,\dim\null S}}.$\par\quad\Ha
-%We show that $\dim\range TS\leqslant 2$ by contradiction. Assume that $\dim\range TS\geqslant 3$.\par\quad\Ha
-%Then $\min\!\Bra{5-\dim\null T,5-\dim\null S}\geq 3\Rightarrow\max\!\Bra{\dim\null T,\dim\null S}\leqslant 2$.\par\quad\Ha
-%又 $\dim\null ST=5\leqslant\dim\null S+\dim\null T\leqslant 4.$ Contradicts.\vspace{6pt}\par\quad\Ha
-%\Or $\MathRightBrace{l}{\dim\null S=5-\dim\range S\\ \dim\range TS\leqslant\dim\range S}\Rightarrow\dim\null S\leqslant 5-\dim\range TS.$\par\vspace{2pt}\quad\Ha
-%And $ST=0\Rightarrow\range T\subseteq\null S\Rightarrow\dim\range TS\leqslant\dim\range T\leqslant\dim\null S.$\PfEnd\vspace{6pt}\quad
-Assume that $\dim\range TS\geqslant \Big\lfloor${\Large$\frac{\,n\,}{2}$}$\Big\rfloor+1.$ \;Then \;$\min\!\envFontLarge\Bra{n-\dim\null T,n-\dim\null S}\envFontDefault\geqslant \Big\lfloor${\Large$\frac{\,n\,}{2}$}$\Big\rfloor+1$\vspace{2pt}\par\quad
-又 $\dim\null ST=n\leqslant\dim\null S+\dim\null T\;\Big|\hspace{-0.7pt}\Rightarrow\max\!\envFontLarge\Bra{\!\dim\null T,\dim\null S}\envFontDefault\leqslant n-\Big\lfloor${\Large$\frac{\,n\,}{2}$}$\Big\rfloor-1.$\par\vspace{2pt}\quad
-Thus \;$n\leqslant 2\envFontLarge\BigPar{\envFontDefault n-\Big\lfloor${\Large$\frac{\,n\,}{2}$}$\Big\rfloor-1\envFontLarge}\envFontDefault\Rightarrow \Big\lfloor${\Large$\frac{\,n\,}{2}$}$\Big\rfloor+1\leqslant{}${\Large$\frac{\,n\,}{2}$}. \;Contradicts.\PfEnd\vspace{6pt}\quad
-\Or $\dim\null S=n-\dim\range S\leqslant n-\dim\range TS.$ \;又 $ST=0\Rightarrow\range T\subseteq\null S.$\par\quad
-$\dim\range TS\leqslant\dim\range T\leqslant\dim\null S\leqslant n-\dim\range TS.$ \;Thus \;$2\dim\range TS\leqslant n.$\PfEnd\vspace{8pt}\quad
-$\hspace{-2pt}\hText{$\Example \,\,\,Let $B_V=\Par{v_1,\dots,v_5}.$ \;Define$\\[-2pt]\;}\hText{T: \; v_1\mapsto 0, \;\;\, v_2\mapsto 0, \;\;\; v_i\mapsto v_i\;;\\[-2pt]\hspace{1pt}S: \; v_1\mapsto v_4, \; v_2\mapsto v_5, \;\; v_i\mapsto 0\;;\;\; i=3,4,5.}$\vspace{6pt}
-\SepLine
-
-\ProblemN{\hypertarget{3B26}{26}}{
-	\TextNL{Suppose $D\in\Lm[\BigPar]{\PoRi}$ and $\forall p,\Deg\BigPar{Dp}=\Par{\!\deg p}-1.$ \;Prove that $D\in\PoRi$ is surj.\vspace{2pt}}
-}\!\Sbra{ $D$ might not be $D:p\mapsto p\apostrophe.$\hspace{1pt}} \;\NOTICE that the following proof is wrong:\parSol{}
-Because $\Span{Dx,Dx^2,Dx^3,\cdots}\subseteq\range D,$ and $\deg Dx^n=n-1.$\parSol{}
-又 By (2.C.10), $\Span{Dx,Dx^2,Dx^3,\cdots}=\Span{1,x,x^2,\cdots}=\PoRi.$\par\vspace{4pt}\quad
-\uline{Let $D\Par{C}=0,Dx^k=p_k$} of deg $\Par{k-1},$ for all $C\in\Rbb=\PoR{0}$ and for each $k\in\Nbp.$\par\quad
-Because $B_{\PoR[\SmallPar]{m}}=\Par{p_1,\dots,p_m,p_{m+1}}.$ And for all $p\in\PoRi,\exists\,!\,m=\deg p\in\Nbp.$\par\quad
-So that $\exists\,!\,a_i\in\Rbb,p=\sum_{i=1}^{m+1}a_ip_i\Rightarrow\exists\,q=\sum_{i=1}^{m+1}a_{i}x^{i},Dq=p.$\PfEnd\vspace{6pt}\quad
-{\Or We will \uline{recursively define a sequence of polys $\Par{p_k}{_{k=0}^\infty}$ where $Dp_0=1,Dp_k=x^k$} for each $k\in\Nbp.$}\par\vspace{2pt}\quad
-{\normalsize\envFontSmall So that $\forall p=\sum_{k=0}^{\deg p}a_k x^k\in\PoRi,Dq=p,\exists\,q={\sum_{k=0}^{\deg p}a_k p_k}.$}\par\vspace{4pt}\quad
-(i) {Because $\deg Dx=\Par{\!\deg x}-1=0,Dx=C\in\nonzeroFbb.$ Let $p_0=C^{-1}x\Rightarrow Dp_0=C^{-1}Dx=1.$}\vspace{2pt}\par\quad\Endi
-(ii) {Suppose we have defined $Dp_0=1,Dp_k=x^k$ for each $k\in\Bra{1,\dots,n}.$ Because $\deg D\Par{x^{n+2}}=n+1.$}\vspace{2pt}\par\quad\Hii
-{Let {\;$D\Par{x^{n+2}}=a_{n+1}x^{n+1}+a_n x^n+\dots+a_1 x+a_0,$} with $a_{n+1}\neq 0.$}\vspace{2pt}\par\quad\Hii
-{Then {\;$a_{n+1}^{-1}D\BigPar{x^{n+2}}=x^{n+1}+a_{n+1}^{-1}\BigPar{a_n Dp_n+\dots+a_1 Dp_1 +a_0 Dp_0}$}}\vspace{2pt}\par\quad\Hii
-{$\Rightarrow x^{n+1}=D\XSbra{\uline{a_{n+1}^{-1}\Par{x^{n+2}-a_n p_n-\dots-a_1 p_1-a_0 p_0}}}.$ Thus defining $p_{n+1},$ so that $Dp_{n+1}=x^{n+1}.$}\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{3B28}{28}}{
