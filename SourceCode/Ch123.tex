@@ -2402,63 +2402,60 @@ Thus $a_1=\dots=a_m=0$ and $\Par{e_1,\dots,e_m}$ is linely inde. Similarly.\PfEn
 %\def\OrbikenI
 {
 \ProblemN{\hypertarget{3F4}{4}}{
-	\TextN{Suppose $U$ is a subsp of $V$ and $U \neq V$. Prove that $\exists\,\varphi \in V\apostrophe\nonzero,\varphi\Par{u}=0$ for all $u\in U.$\vspace{1pt}}
+	\TextN{Suppose $U$ is a subsp of $V$ and $U \neq V$. Prove that $\exists\,\varphi \in V\apostrophe\nonzero[\huge],\varphi\Par{u}=0$ for all $u\in U.$\vspace{1pt}}
 }Let $X\oplus U=V\Rightarrow X\neq\zeroSubs.$ Suppose $s\in X\nonzero.$ Let $Y\oplus\Span{s}=X.$\parSol{}
 Define $\varphi\in V\apostrophe$ by $\varphi\Par{u+\lambda s+y}=\lambda.$ Hence $\varphi\neq 0$ and $\varphi\Par{u}=0$ for all $u\in U.$\PfEnd\parSol{\vspace{4pt}}
 \Or \Sbra[3pt]{{\tgsl Req $V$ Finite-dim}} \;By [3.106], $\dim U^0=\dim V-\dim U>0.$\parSol{}
 \Blind{\Or }\Or Let $B_U=\Par{u_1,\dots,u_m},B_V=\Par{u_1,\dots,u_m,v_1\dots,v_n}$ with $n\geqslant 1.$\parSol{}
 \Blind{\Or}Let $B_{V\apostrophe}=\Par{\psi_1,\dots,\psi_m,\varphi_1,\dots,\varphi_n}.$ Then each $\varphi\in\Span{\varphi_1,\dots,\varphi_n}$ will do.\PfEnd\vspace{4pt}
+\Corollary \,\,\,(1) $U\neq V\Rightarrow U^0\neq\zeroSubs.$ \; (2) $U^0=\zeroSubs\Rightarrow U=V.$\par
 \Comment \,\,\,{\tgsc\large Another proof of \tgbfx[3.108]}: $T$ is surj $\Longleftrightarrow T\apostrophe$ is inje.\parCom
-(a) Suppose $T\apostrophe$ is inje. Note that $T\apostrophe\Par{\psi}=0\Rightarrow \psi=0.$\parCom\Ha
-Then $\nexists\,\psi\in W\apostrophe\nonzero[\LARGE],\BigPar{T\apostrophe\Par{\psi}}\Par{v}=\psi\Par{Tv}=0$ for all $v\in V.$\parCom\Ha
-Thus if we assume that $\range T\neq W$ then contradicts. Hence $\range T=W.$\parCom
-(b) Suppose $T$ is surj. Then $\Par{\range T}{^0}=\zeroSubs=\null T\apostrophe.$\PfEnd
+(a) Suppose $T\apostrophe$ is inje. \NOTICE that $\psi\neq 0\Longleftrightarrow T\apostrophe\Par{\psi}\neq 0\Longleftrightarrow\psi\not\in\Par{\range T}{^0}.$\parCom
+(b) $T$ is surj $\Rightarrow\Par{\range T}{^0}=\zeroSubs=\null T\apostrophe.$\PfEnd
 \SepLine
 
 \ProblemB[]{
-	\TextB{Suppose $V$ is a vecsp and $U$ is a subsp of $V.$}
+	\TextB{Suppose $V$ is a vecsp and $U$ is a subsp of $V.$\vspace{2pt}}
 	\ProblemN[]{}{}
-	\ProblemN[]{\hypertarget{3F17}{17}}{
-		\TextNL{\tgnr$U^0=\Bra{\varphi\in V\apostrophe:U\subseteq null\varphi}$. Noticing $\varphi\in V\apostrophe$, $U\subseteq\null \varphi\Longleftrightarrow\forall u\in U,\varphi\Par{u}=0$.\vspace{5pt}}}
 	\ProblemN[]{\hypertarget{3F18}{18}}{
 		\TextNL{$U^0=V\apostrophe\Longleftrightarrow\forall\varphi\in V\apostrophe, U\subseteq\null \varphi\,\Longleftrightarrow U=\zeroSubs$. \Sbra[3pt]{{\envFontDefault\large Which means $\zeroSubs{^0_V}=V\apostrophe.$}}\vspace{4pt}}
-		\TextNL{\envFontDefault\large\tgnr\Or $U^0=V\apostrophe\Longleftrightarrow\dim U^0=\dim V\apostrophe=\dim V\Longleftrightarrow\dim U=0\Longleftrightarrow U=\zeroSubs.$}\vspace{5pt}}
+%		\TextNL{\envFontDefault\large\tgnr\Or $U^0=V\apostrophe\Longleftrightarrow\dim U^0=\dim V\Longleftrightarrow\dim U=0.$}\vspace{5pt}
+	}
 	\ProblemN[]{\hypertarget{3F19}{19}}{
-		\TextNL{\tgnr $U^0_V=\zeroSubs=V^0_V\Longleftrightarrow U=V$. {\normalsize\tgnr By the inverse and contrapositive of Problem (4). \Or By [3.106].}}}
+		\TextNL{\tgnr $U^0_V=\zeroSubs=V^0_V\Longleftrightarrow U=V$. {\normalsize\tgnr By the inverse and contrapositive of Problem (4).}}}
 	\TextB{\vspace{-4pt}}
 }\SepLine
+
+\BulletPointX\NoteForSmall{[3.102]}\;\;For $U=\emptySet,\;U^0$ is undefined. If $U^0$ is in the context, then certainly $U$ is nonempty.
+\SepLine
 
 \ProblemN{\hypertarget{3F25}{25}}{
 	\TextNL{Suppose $U$ is a subsp of $V$. Explain why $U=\Bra{v\in V:\varphi\Par{v}=0,\forall\varphi\in U^0}.$}
 }Note that $U=\Bra{v\in V:v\in U}$ is a subsp. Now we show $\forall\varphi\in U^0,\varphi\Par{v}=0\Rightarrow v\in U.$\parSol{}
 Assume that $v\in V\Backslash U.$ Then let $\Span{v}\oplus U\oplus X=V.$ $\exists\,\psi\in V\apostrophe,\null\psi=U\oplus X.$\parSol{}
 又 $\psi\in U^0\Rightarrow\psi\Par{v}=0.$ Contradicts. \;Hence $v\in U\Longleftrightarrow\forall\varphi\in U^0,\varphi\Par{v}=0.$\PfEnd\vspace{2pt}
-\Comment \,\,\,$W\subseteq X=\Bra{v\in V:\varphi\Par{v}=0,\forall\varphi\in W^0},$ the {\tgsc promotion} of the subset $W$ of $V.$
+\Comment \,\,\,$W\subseteq X=\Bra{v\in V:\varphi\Par{v}=0,\forall\varphi\in W^0},$ the {\tgsc promotion} of the subset $W$ of $V.$\parCom
+The promotion of every nonempty subset of $V$ is a subsp of $V.$
 \SepLine
 
 \ProblemN{\hypertarget{3F20}{20}}{
-	\TextNL{Suppose $U$ and $W$ are subsets of $V$. Prove that $U\subseteq W\Rightarrow W^0\subseteq U^0$.}
+	\TextNL{Suppose $U,W$ are nonempty subsets of $V$. Prove that $U\subseteq W\Rightarrow W^0\subseteq U^0.$}
 }$\forall\varphi\in W^0,u\in U\subseteq W,\varphi\Par{u}=0\Rightarrow\varphi\in U^0.$ Thus $W^0\subseteq U^0.$\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{3F21}{21}}{
-	\TextNL{Suppose $U$ and $W$ are subsps of $V$. Prove that $U\subseteq W\Leftarrow W^0\subseteq U^0$.}
-}\Sbra[3pt]{{\tgsl Req $U,W$ Subsp}} \;Using Problem (25). $v\in U\Rightarrow\forall\varphi\in W^0\subseteq U^0,\varphi\Par{v}=0\Rightarrow v\in W.$\PfEnd\vspace{2pt}
-\Comment \,\,\,For (b), $\varphi\in W^0\Longleftrightarrow{}$\uline{$\null\varphi\supseteq W\Rightarrow\null\varphi\supseteq U$}${}\Longleftrightarrow\varphi\in U^0.$ But cannot conclude $W\supseteq U.$
-\Comment \,\,\,This result is not true if $U$ {\tgsc and} $W$ are merely subsets.\par
-\Example \,\,\,Let $U=\Bra{\Par{x,x+1}\in\Rbb^2},W=\Bra{\Par{x,\sqrt{x}}\in\Rbb^2}.$\par
-\Blind{\Example \,\,\,}Then the promotion $X,Y=\Rbb^2,$ and $X^0=Y^0,$ but $U\neq W.$\par
-\Comment \,\,\,True if $W$ is a subsp. Because the promotion of every subset of $W$ is a subsp of $W.$\parCom
-(1) If $U$ is merely a subset and $W$ is a subsp. Promote $U$ to $X,$ let $W=Y.$\parCom
-\Blind{(1)} Then $Y^0=W^0\subseteq U^0=X^0\Rightarrow Y=W\supseteq X\supseteq U.$\parCom
-(2) If $W$ is merely a subset and $U$ is a subsp. Promote $W$ to $Y,$ let $U=X.$\parCom
-\Blind{(2)} \Example \,\,\,Let $W=\Bra{\Par{1,0}}\cup\Bra{\Par{0,1}},U=\Bra{\Par{x,0}\in\Rbb^2}.$\parCom
-\Blind{(2) \Example \,\,\,}Then $Y=\Rbb^2.$ And $Y^0=\zeroSubs\subseteq U^0.$ But $U\not\subseteq W.$
+	\TextNL{Suppose $U,W$ are subsps of $V$. Prove that $W^0\subseteq U^0\Rightarrow U\subseteq W.$}
+}Using Problem (25). Now $v\in U\Rightarrow\forall\varphi\in W^0\subseteq U^0,\varphi\Par{v}=0\Rightarrow v\in W.$\PfEnd\vspace{2pt}
+\Comment \,\,\,$\varphi\in W^0\Longleftrightarrow{}$\uline{$\null\varphi\supseteq W\Rightarrow\null\varphi\supseteq U$}${}\Longleftrightarrow\varphi\in U^0.$ But cannot conclude $W\supseteq U.$\par
+\Comment \,\,\,(1) If $U$ is merely a subset and $W$ is a subsp. Promote $U$ as $X,$ let $W=Y.$\parCom
+\Blind{(1)} Then $Y^0=W^0\subseteq U^0=X^0\Rightarrow Y=W\supseteq X\supseteq U.$ Still true.\parCom
+(2) If $W$ is merely a subset and $U$ is a subsp. Promote $W$ as $Y,$ let $U=X.$ For example,\parCom
+\Blind{(2)} Let $W=\Bra{\Par{1,0},\Par{0,1}}\not\supseteq U=\Bra{\Par{x,0}\in\Rbb^2}.$ Then $Y=\Rbb^2\supseteq X=U,\;Y^0=\zeroSubs\subseteq X^0.$
 \SepLine
 
-\BulletPointX\Corollary \,\,\,If $U$ is a subset and $W$ is a subsp. Then $U\subseteq W\Longleftrightarrow W^0\subseteq U^0.$\parCor{\IndentB}
-If $U,W$ are subsps. Then $U=W\Longleftrightarrow W^0=U^0.$
-\SepLine
+%\BulletPointX\Corollary \,\,\,If $U$ is a subset and $W$ is a subsp. Then $U\subseteq W\Longleftrightarrow W^0\subseteq U^0.$\parCor{\IndentB}
+%If $U,W$ are subsps. Then $U=W\Longleftrightarrow W^0=U^0.$
+%\SepLine
 
 \ProblemN{\hypertarget{3F22}{22}}{
 	\TextNL{Suppose $U$ and $W$ are subsps of $V$. Prove that $\BigPar{U+W}{^0}=U^0\cap W^0$.}
@@ -2487,13 +2484,14 @@ Now $0\neq x\in S_V I\Rightarrow\exists\,!\,\Par{u_v,i_u,w_v,i_w}\in S_V U\times
 $x=u_v+i_u=w_v+i_w.$ Define $\varphi\in U^0,\beta\in W^0$ by $\varphi:u_v\mapsto 1,u\mapsto 0,$ and $\beta:i_u\mapsto 1,i\mapsto 0,$\par\quad
 for all $u\in\Pure V\XSlash\Span{u_v}$ and $i\in\Pure V\XSlash\Span{i_u}.$ \OR Define $\psi\in W^0,\gamma\in U^0,$ similarly.\par\quad
 Then $\varphi=\varphi+\beta=\psi+\gamma\in U^0+W^0.$\PfEnd
-\Comment \,\,\,If $U$ or $W$ is merely a subset. By Problem (25), promote $U\cap W$ as $I,$ $U$ as $X,$ and $W$ as $Y.$\parCom
-Now we show that $X\cap Y=I.$ So that $\BigPar{U\cap W}{^0}=I^0=\BigPar{X\cap Y}{^0}=X^0+Y^0=U^0+W^0.$
+\Comment \,\,\,Not true if $U$ or $W$ is merely a subset. Promote $U\cap W$ as $I,$ \,$U$ as $X,$ \,and $W$ as $Y.$\par
+%Now we show that $X\cap Y=I.$ So that $\BigPar{U\cap W}{^0}=I^0=\BigPar{X\cap Y}{^0}=X^0+Y^0=U^0+W^0.$\parCom
+\Example \,\,\,Let $U=\Bra{\Par{x,x+1}\in\Rbb^2},W=\Rbb^2.$ Then $U\cap W=I=U\neq\Rbb^2=X\cap Y.$
 \SepLine
 
-\BulletPointX\Corollary \,\,\,(1) $\BigPar{U\cap W}{^0}=U^0+W^0\supseteq U^0\cap W^0=\BigPar{U+W}{^0}.$\vspace{2pt}\parCor{\IndentB}
-(2) ${\envFontLarge\BigPar{{\envFontDefault\bigcap_{\alpha_i\in\Gamma}V_{\!\alpha_i}}}}{^0}=\sum_{\alpha_i\in\Gamma}\BigPar{V^0_{\!\alpha_i}},\;\;{\envFontLarge\BigPar{{\envFontDefault\sum_{\alpha_i\in\Gamma}V_{\!\alpha_i}}}}{^0}=\bigcap_{\alpha_i\in\Gamma}\BigPar{V^0_{\!\alpha_i}}.$
-\SepLine
+%\BulletPointX\Corollary \,\,\,(1) $\BigPar{U\cap W}{^0}=U^0+W^0\supseteq U^0\cap W^0=\BigPar{U+W}{^0}.$\vspace{2pt}\parCor{\IndentB}
+%(2) ${\envFontLarge\BigPar{{\envFontDefault\bigcap_{\alpha_i\in\Gamma}V_{\!\alpha_i}}}}{^0}=\sum_{\alpha_i\in\Gamma}\BigPar{V^0_{\!\alpha_i}},\;\;{\envFontLarge\BigPar{{\envFontDefault\sum_{\alpha_i\in\Gamma}V_{\!\alpha_i}}}}{^0}=\bigcap_{\alpha_i\in\Gamma}\BigPar{V^0_{\!\alpha_i}}.$
+%\SepLine
 
 \ProblemB{
 	\TipsN{1}\,\,\,(a) \TextB{Prove that $V=U\oplus W\Longleftrightarrow V\apostrophe=U^0\oplus W^0.$\vspace{1pt}}
@@ -2507,16 +2505,14 @@ Now we show that $X\cap Y=I.$ So that $\BigPar{U\cap W}{^0}=I^0=\BigPar{X\cap Y}
 \ProblemN{\hypertarget{3F31}{31}}{
 	\TextNL{Suppose $U$ is a subsp of $V.$ \;Let $B_{U_V\upapostrophe}=\Par{\varphi_1,\dots,\varphi_n}.$ Show that the correspd $B_U$ exists.}
 }Let each \uline{$\null\varphi_i\oplus\Span{u_i}=V$} with $\varphi_i\Par{u_i}=1.$\parSol{}
-Now $a_1u_1+\dots+a_nu_n=0\Rightarrow$ \uline{Each $a_i=\varphi_i\Par{a_1u_1+\dots+a_nu_n}=0,$ by def of dual basis.}\PfEnd
-\Comment \,\,\,Cannot extend $B_U$ freely.\par
-\Example \,\,\,Let $B_V=\Par{e_1,e_2-e_1}.$ Let the correspd  $B_{V\apostrophe}=\Par{\varphi_1,\varphi_2}.$ Let $U_V\upapostrophe=\Span{\varphi_1}.$\par
-\Blind{\Example \,\,\,}Then we get $e_1.$ Extend to $B_V'=\Par{e_1,e_2}.$ Then the correspd $B_{V\apostrophe}$ is not $\Par{\varphi_1,\varphi_2,\varphi_3}.$
+Now $a_1u_1+\dots+a_nu_n=0\Rightarrow$ \uline{Each $a_i=\varphi_i\Par{a_1u_1+\dots+a_nu_n}=0,$ by def of dual basis.}\PfEnd\vspace{2pt}
+\Example \,\,\,Cannot extend $B_U$ freely. Let $B_V=\Par{e_1,e_2-e_1}.$ Let the correspd  $B_{V\apostrophe}=\Par{\varphi_1,\varphi_2}.$\par
+\Blind{\Example \,\,\,}Let $U_V\upapostrophe=\Span{\varphi_1}.$ Then extend to $B_U=\Par{e_1}$ to $B_V'=\Par{e_1,e_2}.$ The correspd $B_{V\apostrophe}'\neq B_{V\apostrophe}.$
 \SepLine
 }
 
 %\def\OrbikenII
 {
-\pagebreak
 \BulletPointX\TipsN{2}\,\,\,Suppose $\varphi_1,\dots,\varphi_m\in V\apostrophe.$ Let $\null_I=\Par{\null\varphi_1}\cap\dots\cap\Par{\null\varphi_m}.$\TextB{}
 \IndentTipsN{2}Suppose $\Omega$ is a subsp of $V\apostrophe.$ Let $\null_C=\Bra{v\in V:\varphi\Par{v}=0,\forall\varphi\in\Omega}.$\TextB{}
 \IndentTipsN{2}If $\Omega=\Span{\varphi_1,\dots,\varphi_m}.$ Then $\null_I=\null_C.$\TextB{}
@@ -2553,7 +2549,7 @@ Thus $\Omega=\Span{\varphi_1}+\dots+\Span{\varphi_m}=\BigPar{\null\varphi_1}{^0}
 \ProblemN{24}{
 	\TextNL{Suppose $V$ is finite-dim and $U$ is a subsp of $V$.}
 	\TextNL{Prove, using the pattern of [3.104], that $\dim U+\dim U^0=\dim V$.}
-}Let $B_{\Omega}=B_{U^0}=\Par{\varphi_1,\dots,\varphi_m},B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_m,\dots,\varphi_n}.$\parSol{}
+}Let $B_{U^0}=\Par{\varphi_1,\dots,\varphi_m},B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_m,\dots,\varphi_n}.$ Let $B_{W^0}=\Par{\varphi_{m+1},\dots,\varphi_n}.$\parSol{}
 And let the correspd (I) $B_U=\Par{v_{m+1},\dots,v_n},$ \; (II) $B_W=\Par{v_1,\dots,v_m}.$\parSol{}
 %$V\apostrophe=\Span{\varphi_1,\dots,\varphi_m}\oplus\Span{\varphi_{m+1},\dots,\varphi_n}=\Span{v_{m+1},\dots,v_n}{^0}\oplus\Span{v_1,\dots,v_m}{^0}.$\par\quad
 %$\Span{\varphi_1,\dots,\varphi_m}=\Span{v_{m+1},\dots,v_n}{^0}=U{^0};\;\Span{\varphi_{m+1},\dots,\varphi_n}=\Span{v_1,\dots,v_m}{^0}=W^0.$\parSol{}
