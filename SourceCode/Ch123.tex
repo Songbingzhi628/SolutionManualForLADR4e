@@ -2390,49 +2390,110 @@ Thus $a_1=\dots=a_m=0$ and $\Par{e_1,\dots,e_m}$ is linely inde. Similarly.\PfEn
 \SepLine
 \ChEnd
 
-\vfill\ChDecl{Ch3F}{3$\cdot$F}{}\orMode{\hLk{3F4}{4}\;\;\hLk{3F5}{5}\;\;\hLk{3F6}{6}\;\;\hLk{3F7}{7}\;\;\hLk{3F8}{8}\;\;\hLk{3F9}{9}\;\;\hLk{3F12}{12}\;\;\hLk{3F13}{13}\;\;\hLk{3F15}{15}\;\;\hLk{3F16}{16}\;\;\hLk{3F17}{17}\;\;\hLk{3F18}{18}\;\;\hLk{3F19}{19}\;\;\hLk{3F20}{20}\;\;\hLk{3F21}{21}\;\;\hLk{3F22}{22}\;\;\hLk{3F23}{23}\;\;\hLk{3F24}{24}\;\;\hLk{3F25}{25}\;\;\hLk{3F26}{26}\;\;$\\[-4pt]$\hLk{3F28}{28}\;\;\hLk{3F29}{29}\;\;\hLk{3F30}{30}\;\;\hLk{3F31}{31}\;\;\hLk{3F32}{32}\;\;\hLk{3F33}{33}\;\;\hLk{3F34}{34}\;\;\hLk{3F35}{35}\;\;\hLk{3F36}{36}\;\;\hLk{3F37}{37}\;\;\mmid\;\;\hLk{3F4e5}{4E:\;\;5}\;\;\hLk{3F4e6}{6}\;\;\hLk{3F4e8}{8}\;\;\hLk{3F4e17}{17}\;\;\hLk{3F4e23}{23}\;\;\hLk{3F4e24}{24}\;\;\hLk{3F4e25}{25}}[-40pt]{[1]: 20, 21; [2]: 22, 23, (4E 23), 30; [3]: 31, 25, 26; [4]: 28, 29, 9, 13; [5]: 24, 37, 4, 17, 18, 19;$\\$[6]: 36, (4E 17), 15, 12; [7]: 16, (4E 6), 5; [8]: 32, 33, (4E 8), (4E 5); [9]: 6, (4E 25); [10]: 35, 7, 8, 34.}
+\pagebreak
+\ChDecl{Ch3F}{3$\cdot$F}{}\orMode{\hLk{3F4}{4}\;\;\hLk{3F5}{5}\;\;\hLk{3F6}{6}\;\;\hLk{3F7}{7}\;\;\hLk{3F8}{8}\;\;\hLk{3F9}{9}\;\;\hLk{3F12}{12}\;\;\hLk{3F13}{13}\;\;\hLk{3F15}{15}\;\;\hLk{3F16}{16}\;\;\hLk{3F17}{17}\;\;\hLk{3F18}{18}\;\;\hLk{3F19}{19}\;\;\hLk{3F20}{20}\;\;\hLk{3F21}{21}\;\;\hLk{3F22}{22}\;\;\hLk{3F23}{23}\;\;\hLk{3F24}{24}\;\;\hLk{3F25}{25}\;\;\hLk{3F26}{26}\;\;$\\[-4pt]$\hLk{3F28}{28}\;\;\hLk{3F29}{29}\;\;\hLk{3F30}{30}\;\;\hLk{3F31}{31}\;\;\hLk{3F32}{32}\;\;\hLk{3F33}{33}\;\;\hLk{3F34}{34}\;\;\hLk{3F35}{35}\;\;\hLk{3F36}{36}\;\;\hLk{3F37}{37}\;\;\mmid\;\;\hLk{3F4e5}{4E:\;\;5}\;\;\hLk{3F4e6}{6}\;\;\hLk{3F4e8}{8}\;\;\hLk{3F4e17}{17}\;\;\hLk{3F4e23}{23}\;\;\hLk{3F4e24}{24}\;\;\hLk{3F4e25}{25}}[-40pt]{[1]: 20, 21; [2]: 22, 23, (4E 23), 30; [3]: 31, 25, 26; [4]: 28, 29, 9, 13; [5]: 24, 37, 4, 17, 18, 19;$\\$[6]: 36, (4E 17), 15, 12; [7]: 16, (4E 6), 5; [8]: 32, 33, (4E 8), (4E 5); [9]: 6, (4E 25); [10]: 35, 7, 8, 34.}
 \vspace{4pt}
 
-\ProblemN{\hypertarget{3F20}{20}, \hypertarget{3F21}{21}}{
-	\TextNL{Suppose $U$ and $W$ are subsets of $V$. Prove that $U\subseteq W \Longleftrightarrow W^0\subseteq U^0$.}
-}\par\quad
-(a) Suppose $U\subseteq W.$ Then $\forall\varphi\in W^0,u\in U\subseteq W,\varphi\Par{u}=0\Rightarrow\varphi\in U^0.$ Thus $W^0\subseteq U^0.$\par\quad
-(b) Suppose $W^0\subseteq U^0.$ Then $\varphi\in W^0\Rightarrow\varphi\in U^0.$ Hence $\null\varphi\supseteq W\Rightarrow\null\varphi\supseteq U$.  Thus $W\supseteq U.$\vspace{4pt}\par\quad\Hb
-\Or \Sbra[3pt]{{\tgsl Req $U$ Subsp}} \;By Problem (25). Let $U=\Bra{v\in V:\varphi\Par{v}=0,\forall\varphi\in U^0}.$\par\quad\Hb
-Suppose $W^0\subseteq U^0.$ Then $\forall\varphi\in W^0,v\in A_U,\varphi\Par{v}=0\Rightarrow v\in A_W.$ Thus $A_U\subseteq A_W.$\PfEnd
-\Corollary \,\,\,{\Large $W^0=U^0\Longleftrightarrow U=W$.}\par
-\SepLine\pagebreak
+%\BulletPointX\NoteForSmall{(3.B.29) and [3.96]}\;\;For any $\varphi\in V\apostrophe.$ Let $\null\varphi\oplus\Span{u}=V.$\TextB{}
+%Extend $u$ to $B_V=\Par{v,u_1,\dots,u_n}.$ Then there might be some $u_k\not\in\null\varphi.$\parCom
+%For $B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_{n+1}}\Rightarrow B_V=\Par{v_1,\dots,v_{n+1}}.$
+%\SepLine
+
+%\def\OrbikenI
+{
+\ProblemN{\hypertarget{3F4}{4}}{
+	\TextN{Suppose $U$ is a subsp of $V$ and $U \neq V$. Prove that $\exists\,\varphi \in V\apostrophe\nonzero,\varphi\Par{u}=0$ for all $u\in U.$\vspace{1pt}}
+}Let $X\oplus U=V\Rightarrow X\neq\zeroSubs.$ Suppose $s\in X\nonzero.$ Let $Y\oplus\Span{s}=X.$\parSol{}
+Define $\varphi\in V\apostrophe$ by $\varphi\Par{u+\lambda s+y}=\lambda.$ Hence $\varphi\neq 0$ and $\varphi\Par{u}=0$ for all $u\in U.$\PfEnd\parSol{\vspace{4pt}}
+\Or \Sbra[3pt]{{\tgsl Req $V$ Finite-dim}} \;By [3.106], $\dim U^0=\dim V-\dim U>0.$\parSol{}
+\Blind{\Or }\Or Let $B_U=\Par{u_1,\dots,u_m},B_V=\Par{u_1,\dots,u_m,v_1\dots,v_n}$ with $n\geqslant 1.$\parSol{}
+\Blind{\Or}Let $B_{V\apostrophe}=\Par{\psi_1,\dots,\psi_m,\varphi_1,\dots,\varphi_n}.$ Then each $\varphi\in\Span{\varphi_1,\dots,\varphi_n}$ will do.\PfEnd\vspace{4pt}
+\Comment \,\,\,{\tgsc\large Another proof of \tgbfx[3.108]}: $T$ is surj $\Longleftrightarrow T\apostrophe$ is inje.\parCom
+(a) Suppose $T\apostrophe$ is inje. Note that $T\apostrophe\Par{\psi}=0\Rightarrow \psi=0.$\parCom\Ha
+Then $\nexists\,\psi\in W\apostrophe\nonzero[\LARGE],\BigPar{T\apostrophe\Par{\psi}}\Par{v}=\psi\Par{Tv}=0$ for all $v\in V.$\parCom\Ha
+Thus if we assume that $\range T\neq W$ then contradicts. Hence $\range T=W.$\parCom
+(b) Suppose $T$ is surj. Then $\Par{\range T}{^0}=\zeroSubs=\null T\apostrophe.$\PfEnd
+\SepLine
+
+\ProblemB[]{
+	\TextB{Suppose $V$ is a vecsp and $U$ is a subsp of $V.$}
+	\ProblemN[]{}{}
+	\ProblemN[]{\hypertarget{3F17}{17}}{
+		\TextNL{\tgnr$U^0=\Bra{\varphi\in V\apostrophe:U\subseteq null\varphi}$. Noticing $\varphi\in V\apostrophe$, $U\subseteq\null \varphi\Longleftrightarrow\forall u\in U,\varphi\Par{u}=0$.\vspace{5pt}}}
+	\ProblemN[]{\hypertarget{3F18}{18}}{
+		\TextNL{$U^0=V\apostrophe\Longleftrightarrow\forall\varphi\in V\apostrophe, U\subseteq\null \varphi\,\Longleftrightarrow U=\zeroSubs$. \Sbra[3pt]{{\envFontDefault\large Which means $\zeroSubs{^0_V}=V\apostrophe.$}}\vspace{4pt}}
+		\TextNL{\envFontDefault\large\tgnr\Or $U^0=V\apostrophe\Longleftrightarrow\dim U^0=\dim V\apostrophe=\dim V\Longleftrightarrow\dim U=0\Longleftrightarrow U=\zeroSubs.$}\vspace{5pt}}
+	\ProblemN[]{\hypertarget{3F19}{19}}{
+		\TextNL{\tgnr $U^0_V=\zeroSubs=V^0_V\Longleftrightarrow U=V$. {\normalsize\tgnr By the inverse and contrapositive of Problem (4). \Or By [3.106].}}}
+	\TextB{\vspace{-4pt}}
+}\SepLine
+
+\ProblemN{\hypertarget{3F25}{25}}{
+	\TextNL{Suppose $U$ is a subsp of $V$. Explain why $U=\Bra{v\in V:\varphi\Par{v}=0,\forall\varphi\in U^0}.$}
+}Note that $U=\Bra{v\in V:v\in U}$ is a subsp. Now we show $\forall\varphi\in U^0,\varphi\Par{v}=0\Rightarrow v\in U.$\parSol{}
+Assume that $v\in V\Backslash U.$ Then let $\Span{v}\oplus U\oplus X=V.$ $\exists\,\psi\in V\apostrophe,\null\psi=U\oplus X.$\parSol{}
+又 $\psi\in U^0\Rightarrow\psi\Par{v}=0.$ Contradicts. \;Hence $v\in U\Longleftrightarrow\forall\varphi\in U^0,\varphi\Par{v}=0.$\PfEnd\vspace{2pt}
+\Comment \,\,\,$W\subseteq X=\Bra{v\in V:\varphi\Par{v}=0,\forall\varphi\in W^0},$ the {\tgsc promotion} of the subset $W$ of $V.$
+\SepLine
+
+\ProblemN{\hypertarget{3F20}{20}}{
+	\TextNL{Suppose $U$ and $W$ are subsets of $V$. Prove that $U\subseteq W\Rightarrow W^0\subseteq U^0$.}
+}$\forall\varphi\in W^0,u\in U\subseteq W,\varphi\Par{u}=0\Rightarrow\varphi\in U^0.$ Thus $W^0\subseteq U^0.$\PfEnd
+\SepLine
+
+\ProblemN{\hypertarget{3F21}{21}}{
+	\TextNL{Suppose $U$ and $W$ are subsps of $V$. Prove that $U\subseteq W\Leftarrow W^0\subseteq U^0$.}
+}\Sbra[3pt]{{\tgsl Req $U,W$ Subsp}} \;Using Problem (25). $v\in U\Rightarrow\forall\varphi\in W^0\subseteq U^0,\varphi\Par{v}=0\Rightarrow v\in W.$\PfEnd\vspace{2pt}
+\Comment \,\,\,For (b), $\varphi\in W^0\Longleftrightarrow{}$\uline{$\null\varphi\supseteq W\Rightarrow\null\varphi\supseteq U$}${}\Longleftrightarrow\varphi\in U^0.$ But cannot conclude $W\supseteq U.$
+\Comment \,\,\,This result is not true if $U$ {\tgsc and} $W$ are merely subsets.\par
+\Example \,\,\,Let $U=\Bra{\Par{x,x+1}\in\Rbb^2},W=\Bra{\Par{x,\sqrt{x}}\in\Rbb^2}.$\par
+\Blind{\Example \,\,\,}Then the promotion $X,Y=\Rbb^2,$ and $X^0=Y^0,$ but $U\neq W.$\par
+\Comment \,\,\,True if $W$ is a subsp. Because the promotion of every subset of $W$ is a subsp of $W.$\parCom
+(1) If $U$ is merely a subset and $W$ is a subsp. Promote $U$ to $X,$ let $W=Y.$\parCom
+\Blind{(1)} Then $Y^0=W^0\subseteq U^0=X^0\Rightarrow Y=W\supseteq X\supseteq U.$\parCom
+(2) If $W$ is merely a subset and $U$ is a subsp. Promote $W$ to $Y,$ let $U=X.$\parCom
+\Blind{(2)} \Example \,\,\,Let $W=\Bra{\Par{1,0}}\cup\Bra{\Par{0,1}},U=\Bra{\Par{x,0}\in\Rbb^2}.$\parCom
+\Blind{(2) \Example \,\,\,}Then $Y=\Rbb^2.$ And $Y^0=\zeroSubs\subseteq U^0.$ But $U\not\subseteq W.$
+\SepLine
+
+\BulletPointX\Corollary \,\,\,If $U$ is a subset and $W$ is a subsp. Then $U\subseteq W\Longleftrightarrow W^0\subseteq U^0.$\parCor{\IndentB}
+If $U,W$ are subsps. Then $U=W\Longleftrightarrow W^0=U^0.$
+\SepLine
 
 \ProblemN{\hypertarget{3F22}{22}}{
 	\TextNL{Suppose $U$ and $W$ are subsps of $V$. Prove that $\BigPar{U+W}{^0}=U^0\cap W^0$.}
-}\vspace{2pt}\par\quad
-$\hText{$
+}\vspace{-14pt}\parSol{}
+\!\!\!$\hText{$
 	(a) $\varphi\in\BigPar{U+W}{^0}\Rightarrow\forall u\in U,w\in W,\\$
-	\Ha$\varphi\Par{u}=\varphi\Par{w}=0\Rightarrow\varphi\in U^0\cap W^0.}\;\;\hMath{l}{\left|\;}{\;\right\}}{U\subseteq U+W\Rightarrow\BigPar{U+W}{^0}\subseteq U^0\\W\subseteq U+W\Rightarrow\BigPar{U+W}{^0}\subseteq W^0}$\vspace{4pt}\par\quad
+	\Ha$\varphi\Par{u}=\varphi\Par{w}=0\Rightarrow\varphi\in U^0\cap W^0.}\;\;\hMath{l}{\left|\;}{\;\right.}{U\subseteq U+W\Rightarrow\BigPar{U+W}{^0}\subseteq U^0\\W\subseteq U+W\Rightarrow\BigPar{U+W}{^0}\subseteq W^0}$\vspace{4pt}\parSol{}
 (b) $\varphi\in U^0\cap W^0\subseteq V\apostrophe\Rightarrow\forall u\in U,w\in W,\varphi\Par{u+w}=0\Rightarrow\varphi\in \BigPar{U+W}{^0}.$\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{3F23}{23}}{
-	\TextNL{Suppose $U$ and $W$ are subsets of $V$. Prove that $\BigPar{U\cap W}{^0}=U^0+W^0$.}
+	\TextNL{Suppose $U$ and $W$ are subsps of $V$. Prove that $\BigPar{U\cap W}{^0}=U^0+W^0$.}
 }\vspace{2pt}\par\quad
-$\hText{$
+\!\!\!$\hText{$
 	(a) $\varphi=\psi+\beta\in U^0+W^0\Rightarrow\forall v\in U\cap W,\\$
 	\Ha $\varphi\Par{v}=\Par{\psi+\beta}\Par{v}=0\Rightarrow\varphi\in\BigPar{U\cap W}{^0}.
-}\;\;\hMath{l}{\left|\;}{\;\right\}}{$
+}\;\;\hMath{l}{\left|\;}{\right.}{$
 	\!\Or\;$U\cap W\subseteq U\Rightarrow\BigPar{U\cap W}{^0}\supseteq U^0\\$
 	\!\Blind{\Or\;}$U\cap W\subseteq W\Rightarrow\BigPar{U\cap W}{^0}\supseteq W^0}$\vspace{6pt}\par\quad
 (b) \!\Sbra[3pt]{{\tgsl Only in Finite-dim; Req $U,W$ Subsps}} \;Using Problem (22).\par\vspace{2pt}\quad\Hb
 $\Dim\BigPar{U^0+W^0}=\dim U^0+\dim W^0-\Dim\BigPar{U^0\cap W^0}$\par\quad\Hb
-$\Blind{\Dim\BigPar{U^0+W^0}}=2\dim V-\dim U-\dim W-\BigPar{\!\dim V-\Dim\Par{U+W}}=\dim V-\Dim\Par{U\cap W}.$\par\vspace{6pt}\quad\Hb
-\Or \Sbra[3pt]{{\tgsl Req $U,W$ Subsps}} \;Let $I=U\cap W.$ Using \TIPSN{3}.\par\vspace{-18pt}\quad\Hb
-\!$\hText{$Now $S_V I=S_V U\oplus S_U I=S_V W\oplus S_W I.\\$Suppose $\varphi\in\Par{U\cap W}{^0}=I^0.$ Then $\varphi\in U^0$ or $W^0.\\\;}\qquad\hText{$\includegraphics[width=80pt]{diagram3F-1}$\\\;\\\;}\hText{$Replace $S_V$ with $\complement_V\\$and $\oplus$ with $\cup.$ Still true$\\$if merely subsets.$\\\;\\\;}$\PfEnd[-50pt]\vspace{-4pt}
+$\Blind{\Dim\BigPar{U^0+W^0}}=2\dim V-\dim U-\dim W-\BigPar{\!\dim V-\Dim\Par{U+W}}=\dim V-\Dim\Par{U\cap W}.$\par\vspace{6pt}\quad
+\Or \Sbra[3pt]{{\tgsl Req $U,W$ Subsps}} \;Let $I=U\cap W.$ Using \Sbra{3E \TIPSN{3}}.\par\vspace{-10pt}\quad
+\!$\hText{$Now $S_V I=S_V U\oplus S_U I=S_V W\oplus S_W I.$ For $\varphi\in\Par{U\cap W}{^0}=I^0.\\$Let $\Span{x}=\Pure V\XSlash\null\varphi.$ If $x=0$ then we are done.$\\\;\\\;}\qquad\hText{$\includegraphics[width=80pt]{diagram3F-1}$\\\;\\\;}$\par\vspace{-42pt}\quad
+Now $0\neq x\in S_V I\Rightarrow\exists\,!\,\Par{u_v,i_u,w_v,i_w}\in S_V U\times S_U I\times S_V W\times S_W I,$\par\quad
+$x=u_v+i_u=w_v+i_w.$ Define $\varphi\in U^0,\beta\in W^0$ by $\varphi:u_v\mapsto 1,u\mapsto 0,$ and $\beta:i_u\mapsto 1,i\mapsto 0,$\par\quad
+for all $u\in\Pure V\XSlash\Span{u_v}$ and $i\in\Pure V\XSlash\Span{i_u}.$ \OR Define $\psi\in W^0,\gamma\in U^0,$ similarly.\par\quad
+Then $\varphi=\varphi+\beta=\psi+\gamma\in U^0+W^0.$\PfEnd
+\Comment \,\,\,If $U$ or $W$ is merely a subset. By Problem (25), promote $U\cap W$ as $I,$ $U$ as $X,$ and $W$ as $Y.$\parCom
+Now we show that $X\cap Y=I.$ So that $\BigPar{U\cap W}{^0}=I^0=\BigPar{X\cap Y}{^0}=X^0+Y^0=U^0+W^0.$
 \SepLine
 
-\ProblemBnoor[]{\Corollary}[]{
-	\;\;$\BigPar{U\cap W}{^0}=U^0+W^0\supseteq U^0\cap W^0=\BigPar{U+W}{^0}.$\TextB{\vspace{1pt}}
-	(a) Suppose $\Bra{V_{\!\alpha_i}}{_{\alpha_i\in\Gamma}}$ is a collection of \uline{subsets} of $V$. Then ${\envFontLarge\BigPar{{\envFontDefault\bigcap_{\alpha_i\in\Gamma}V_{\!\alpha_i}}}}{^0}=\sum_{\alpha_i\in\Gamma}\BigPar{V^0_{\!\alpha_i}}.$\TextB{\vspace{2pt}}
-	(b) Suppose $\Bra{V_{\!\alpha_i}}{_{\alpha_i\in\Gamma}}$ is a collection of \uline{subsps} of $V$. Then ${\envFontLarge\BigPar{{\envFontDefault\sum_{\alpha_i\in\Gamma}V_{\!\alpha_i}}}}{^0}=\bigcap_{\alpha_i\in\Gamma}\BigPar{V^0_{\!\alpha_i}}.$\TextB{\vspace{-2pt}}
-}\SepLine
+\BulletPointX\Corollary \,\,\,(1) $\BigPar{U\cap W}{^0}=U^0+W^0\supseteq U^0\cap W^0=\BigPar{U+W}{^0}.$\vspace{2pt}\parCor{\IndentB}
+(2) ${\envFontLarge\BigPar{{\envFontDefault\bigcap_{\alpha_i\in\Gamma}V_{\!\alpha_i}}}}{^0}=\sum_{\alpha_i\in\Gamma}\BigPar{V^0_{\!\alpha_i}},\;\;{\envFontLarge\BigPar{{\envFontDefault\sum_{\alpha_i\in\Gamma}V_{\!\alpha_i}}}}{^0}=\bigcap_{\alpha_i\in\Gamma}\BigPar{V^0_{\!\alpha_i}}.$
+\SepLine
 
 \ProblemB{
 	\TipsN{1}\,\,\,(a) \TextB{Prove that $V=U\oplus W\Longleftrightarrow V\apostrophe=U^0\oplus W^0.$\vspace{1pt}}
@@ -2443,94 +2504,68 @@ $\Blind{\Dim\BigPar{U^0+W^0}}=2\dim V-\dim U-\dim W-\BigPar{\!\dim V-\Dim\Par{U+
 (b)  \NOTICE that by \Sbra{3.B \TIPSN{3}}, \;$\varphi\in W^0\Longleftrightarrow W\subseteq\null\varphi\Longleftrightarrow\varphi=\varphi\circ\iota.$\PfEnd
 \SepLine
 
-\ProblemBnoor{\hypertarget{3F4e23}{4E 23}}{
-	\TextB{Suppose $\varphi_1,\dots,\varphi_m\in V\apostrophe$. Prove that the following sets are the same.\vspace{2pt}}
-	(a) \TextB{$\Span{\varphi_1,\dots,\varphi_m};$ \;\; {\tgnr\large(b)} $\BigPar{\Par{\null \varphi_1}\cap\dots\cap\Par{\null \varphi_m}}{^0}.$\vspace{2pt}}
-	\Comment \,\,\,$\Span{\varphi_1,\dots,\varphi_m}=\Bra{\varphi\in V\apostrophe:\Par{\null\varphi_1}\cap\dots\cap\Par{\null\varphi_m}\subseteq\null\varphi}.$\TextB{}
-}\par\quad
-For each $\varphi_k=0,$ $\Span{\varphi_k}=\zeroSubs=\BigPar{\null\varphi_k}{^0}.$\par\quad
-For each $\varphi_k\neq 0.$ Using (3.B.29) and {\TIPSN{1}}. $\exists\,v_k\in V,\varphi\Par{v_k}\neq 0.$ Now $\null\varphi_k\oplus\Span{v_k}=V.$\par\quad
-Then $\BigPar{\null\varphi_k}{^0}=\BigPar{\Span{v_k}}{_V\upapostrophe}=\Bra{\varphi\in V\apostrophe:\varphi=\varphi\circ\iota}=\Span{\varphi_k},$ where $\iota:cv_k+u_0\rightarrow cv_k.$\par\quad
-Thus $\Span{\varphi_1,\dots,\varphi_m}=\Span{\varphi_1}+\dots+\Span{\varphi_m}$\par\quad
-\Blind{Thus $\Span{\varphi_1,\dots,\varphi_m}$}${}=\BigPar{\null\varphi_1}{^0}+\dots+\BigPar{\null\varphi_m}{^0}=\BigPar{\Par{\null \varphi_1}\cap\dots\cap\Par{\null \varphi_m}}{^0}.$\PfEnd\vspace{4pt}\quad
-By Problem (26) \Sbra[3pt]{{\tgsl May req Finite-dim}}.\vspace{2pt}\par\quad\,
-$\MathRightBrace{r}{
-	\BigPar{\Par{\null\varphi_1}\cap\dots\cap\Par{\null\varphi_m}}{^0}=\Par{\null\varphi_1}{^0}+\dots+\Par{\null\varphi_m}{^0}\\
-	\Span{\varphi_i}=\Bra{v\in V:\forall\psi\in\Span{\varphi_i},\psi\Par{v}=0}{^0}=\Par{\null\varphi_i}{^0}}\Rightarrow$ (a) $=$ (b).\PfEnd\vspace{10pt}\quad
-\Or By Problem (4E 6), for each $\varphi_i$, we have\par\quad
-$\forall c\in\nonzeroFbb,\psi=c\varphi_i\in\Span{\varphi_i}\Longleftrightarrow\null\psi=\null\varphi_i\Longleftrightarrow\psi\in\Par{\null\psi}{^0}=\Par{\null\varphi_i}{^0}.$\par\quad
-And $0\in\Span{\varphi_i},0\in\Par{\null\varphi_i}{^0}.$ Hence $\Span{\varphi_i}=\Par{\null\varphi_i}{^0}.$ Similarly.\PfEnd\vspace{6pt}\quad
-\Or \Sbra[3pt]{{\tgsl Only in Finite-dim}} \;Suppose $\varphi\in V\apostrophe.$ Note that $\Dim\Par{\null\varphi}{^0}=\dim\range\varphi=\dim\Span{\varphi}.$\par\quad
-And because $\forall c\in\Fbb,v\in\null\varphi,c\varphi\Par{v}=0\Rightarrow\Span{\varphi}\subseteq\Par{\null\varphi}{^0}.$ Similarly.\PfEnd\vspace{2pt}
-\Corollary \,\,\,\ProblemN[]{\hypertarget{3F30}{30}}{
-	\TextNL{\tgnr\large\envFontDefault Suppose $V$ is finite-dim and $\varphi_1,\dots,\varphi_m$ is a linely inde list in $V\apostrophe.$}
-	\Blind{\Corollary \,\,\,} \TextNL{\tgnr\large\envFontDefault Then $\Dim\BigPar{\Par{\null \varphi_1}\cap\dots\cap\Par{\null \varphi_m}}=\Par{\!\dim V}-m$.}\vspace{-5pt}
-}\SepLine
-
 \ProblemN{\hypertarget{3F31}{31}}{
-	\TextNL{Suppose $V$ is finite-dim and $B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_n}$. Show that the correspd $B_V$ exists.}
-}\par\quad
-Using (3.B.29). Let $\varphi_i\Par{u_i}=1.$ Then each \uline{$\null\varphi_i\oplus\Span{u_i}=V.$}\par\quad
-Now $a_1u_1+\dots+a_nu_n=0\Rightarrow$ \uline{Each $a_i=\varphi_i\Par{a_1u_1+\dots+a_nu_n}=0.$}\par\quad
-Thus $B_V=\Par{u_1,\dots,u_n}$ with $\varphi_i\Par{u_x}=\delta_{i,x}.$\PfEnd\vspace{6pt}\quad
-\Or Using Problem (30). Define each $\Gamma_{\!k}=\Bra{1,\dots,n}\Backslash[\Big]\Bra{k}$ and $U_k=\bigcap_{j\in\Gamma_{\!k}}\null\varphi_j.$ Then $\dim U_k=1.$\par\vspace{2pt}\quad
-\Sbra{Cannot use (4E 2.C.16) here.} Thus each $U_k=\Span{u_k},\exists\,u_k\in V\nonzero.$\vspace{2pt}\par\quad
-又 Each $U_k\cap\null\varphi_k=\Par{\null\varphi_1}\cap\dots\cap\Par{\null\varphi_n}=\zeroSubs.$\par\quad
-Then if $\varphi_k\Par{u_k}=0\Rightarrow u_k\in\null\varphi_k$ while $u_k\in U_k\Rightarrow u_k=0,$ contradicts. Thus $\varphi_k\Par{u_k}\neq 0.$\par\quad
-\Or Because each $\dim\null\varphi_k=n-1.$ Each $\null\varphi_k\oplus U_k=V.$ Thus $\varphi_k\Par{u_k}\neq 0.$\par\quad
-Let $v_k=\BigPar{\varphi_k\Par{u_k}}{^{-1}}u_k\Rightarrow\varphi_k\Par{v_k}=1.$ Similarly.\PfEnd
+	\TextNL{Suppose $U$ is a subsp of $V.$ \;Let $B_{U_V\upapostrophe}=\Par{\varphi_1,\dots,\varphi_n}.$ Show that the correspd $B_U$ exists.}
+}Let each \uline{$\null\varphi_i\oplus\Span{u_i}=V$} with $\varphi_i\Par{u_i}=1.$\parSol{}
+Now $a_1u_1+\dots+a_nu_n=0\Rightarrow$ \uline{Each $a_i=\varphi_i\Par{a_1u_1+\dots+a_nu_n}=0,$ by def of dual basis.}\PfEnd
+\Comment \,\,\,Cannot extend $B_U$ freely.\par
+\Example \,\,\,Let $B_V=\Par{e_1,e_2-e_1}.$ Let the correspd  $B_{V\apostrophe}=\Par{\varphi_1,\varphi_2}.$ Let $U_V\upapostrophe=\Span{\varphi_1}.$\par
+\Blind{\Example \,\,\,}Then we get $e_1.$ Extend to $B_V'=\Par{e_1,e_2}.$ Then the correspd $B_{V\apostrophe}$ is not $\Par{\varphi_1,\varphi_2,\varphi_3}.$
+\SepLine
+}
+
+%\def\OrbikenII
+{
+\pagebreak
+\BulletPointX\TipsN{2}\,\,\,Suppose $\varphi_1,\dots,\varphi_m\in V\apostrophe.$ Let $\null_I=\Par{\null\varphi_1}\cap\dots\cap\Par{\null\varphi_m}.$\TextB{}
+\IndentTipsN{2}Suppose $\Omega$ is a subsp of $V\apostrophe.$ Let $\null_C=\Bra{v\in V:\varphi\Par{v}=0,\forall\varphi\in\Omega}.$\TextB{}
+\IndentTipsN{2}If $\Omega=\Span{\varphi_1,\dots,\varphi_m}.$ Then $\null_I=\null_C.$\TextB{}
+\IndentTipsN{2}Because $v\in\null_I\Longleftrightarrow$ each $\varphi_i\Par{v}=0\Longleftrightarrow\forall\varphi\in\Omega,\varphi_i\Par{v}=0\Longleftrightarrow v\in\null_C.$\TextB{}
+\Comment \,\,\,If $\Omega$ is infinite-dim. Then $\null_I=\bigcap_{\varphi\,\in\,\Omega}\null\varphi=\null_C.$
 \SepLine
 
-\ProblemN{\hypertarget{3F25}{25}}{
-	\TextNL{Suppose $U$ is a subsp of $V$. Explain why $U=\Bra{v\in V:\varphi\Par{v}=0,\forall\varphi\in U^0}.$}
-}Note that $U=\Bra{v\in V:v\in U}$ is a subsp of $V$; And $v\in U\Longleftrightarrow\varphi\Par{v}=0,\forall\varphi\in U^0.$\PfEnd
-\Corollary \,\,\,$U^0=\Bra{v\in V:\varphi\Par{v}=0,\forall\varphi\in U^0}{^0}.$\vspace{-2pt}\par
-{\Comment \,\,\,}{
-	$\Bra{v\in V:\varphi\Par{v}=0,\forall\varphi\in U^0}=\BigPar{\Par{\null\varphi_1}\cap\cdots\cap\Par{\null\varphi_m}\cap\cdots},$ where $\varphi_k\in U^0$,\parCom
-	always remains a subsp, whether the subset $U$ is a subsp or not.\par
-}\SepLine
+\ProblemB{
+	\TipsN{3}\,\,\,\TextB{Let $\Omega=\Span{\varphi_1,\dots,\varphi_m}\subseteq V\apostrophe.$ Prove that {\tgnr\large(a)} $\Omega=\BigPar{\null_I}{^0};\;$ {\tgnr\large(b)} $\Omega=\BigPar{\null_C}{^0}.$}
+}{\normalsize\hfill Here (a) is {\normalsize\envFontSmall\Sbra{\hypertarget{3F4e23}{4E 23}}}, (b) is Problem \hypertarget{3F26}{(26)}.}\par\quad
+(a) For each $\varphi_k=0,$ $\Span{\varphi_k}=\zeroSubs=\BigPar{\null\varphi_k}{^0}.$\par\quad\Ha
+For each $\varphi_k\neq 0.$ Using (3.B.29) and {\TIPSN{1}}. Let $\varphi\Par{v_k}\neq 0\Rightarrow\null\varphi_k\oplus\Span{v_k}=V.$\par\quad\Ha
+Then $\BigPar{\null\varphi_k}{^0}=\BigPar{\Span{v_k}}{_V\upapostrophe}=\Bra{\varphi\in V\apostrophe:\varphi=\varphi\circ\iota}=\Span{\varphi_k},$ where $\iota:cv_k+u_0\rightarrow cv_k.$\par\quad\Ha
+Thus $\Omega=\Span{\varphi_1}+\dots+\Span{\varphi_m}=\BigPar{\null\varphi_1}{^0}+\dots+\BigPar{\null\varphi_m}{^0}$\par\quad\Ha
+\Blind{Thus $\Omega=\Span{\varphi_1}+\dots+\Span{\varphi_m}$}${}=\BigPar{\Par{\null \varphi_1}\cap\dots\cap\Par{\null \varphi_m}}{^0}=\BigPar{\null_I}{^0}.$\PfEnd\vspace{4pt}\quad\Ha
+\Or $\Dim\Par{\null\varphi}{^0}={}$\uline{$\dim\range\varphi=\dim\Span{\varphi}$}. 又 $\Span{\varphi}\subseteq\Par{\null\varphi}{^0}.$ \Or By Problem (26).\PfEnd\vspace{4pt}\quad\Ha
+\Or $c\in\nonzeroFbb\Longleftrightarrow\null\Par{c\varphi_i}=\null\varphi_i\Longleftrightarrow{c\varphi_i}\in\BigPar{\null\Par{c\varphi_i}}{^0}=\Par{\null\varphi_i}{^0}.$\par\quad\Ha
+\Blind{\Or}And $0\in\Span{\varphi_i},0\in\Par{\null\varphi_i}{^0}.$ Hence $\Span{\varphi_i}=\Par{\null\varphi_i}{^0}.$\PfEnd\vspace{4pt}\quad
+(b) $\forall\varphi\in\Omega,\null_C\subseteq\null\varphi\Rightarrow\varphi\in\BigPar{\null_C}{^0}.$ Hence $\Omega=\BigPar{\null_I}{^0}\subseteq\BigPar{\null_C}{^0}.$ \;\Or By {\TIPSN{2}}.\PfEnd
+\SepLine
 
-\ProblemN{\hypertarget{3F26}{26}}{
-	\TextNL{Suppose $\Omega$ is a subsp of $V\apostrophe$. Prove that $\Omega=\Bra{v\in V:\varphi\Par{v}=0,\forall\varphi\in\Omega}{^0}.$}
-}\par\quad
-Suppose $U=\Bra{v\in V:\varphi\Par{v}=0,\forall\varphi\in\Omega},$ {\tgsl\normalsize which is the set of vecs that each $\varphi\in\Omega$ sends to zero in common}.\par\quad
-%=\Bra{\varphi\in V\apostrophe:\varphi\Par{v}=0,\forall v\in \Bra{v\in V:\varphi\Par{v}=0,\forall\varphi\in\Omega}}
-Then $U^0=\Bra{v\in V:\varphi\Par{v}=0,\forall\varphi\in\Omega}{^0}$. 又 $U^0=\Bra{v\in V:\varphi\Par{v}=0,\forall\varphi\in U^0}{^0}.$\par\quad
-Immediately by the {\COROLLARY} in Problem (20,21), we may conclude that $\Omega=U^0$.\PfEnd\vspace{6pt}\quad
-%\Or\par\quad
-%(a) Suppose $\varphi\in\Omega.$ Then $\forall v\in U,\varphi\Par{v}=0\Rightarrow\varphi\in U^0.$ Hence $\Omega\subseteq U^0.$\par\quad
-%(b) 
-%Let $W$ be such that $V=U\oplus W.$ For ease of notation, let $W^0=U^{\varnothing},\Omega=\Omega^+.$\par\quad\Hb
-%By the {\COROLLARY} in Problem (22, 23), $V\apostrophe=U^0\oplus W^0.$\par\quad\Hb
-%Let $\Omega^-$ be such that $V\apostrophe=\Omega^+\oplus\Omega^-.$ Let $\Delta$ be such that $U^0=\Omega\oplus\Delta.$\par\quad\Hb
-%Now $V\apostrophe=\Omega^+\oplus\Omega^-=U^0\oplus U^{\varnothing}=\Omega\oplus\Delta\oplus U^{\varnothing}.$ Assume that $\Omega^-\neq\Delta\oplus U^{\varnothing}.$\par\quad\Hb
-%{\normalsize\tgsl In other words, suppose $\psi\in V\apostrophe$ sends all the vecs that, all $\psi\in\Omega$ send to zero in common, to zero, prove that $\psi\in\Omega$.}\par\quad\Hb
-%Let $\null_C\Omega=U.$ \NOTICE that $0\neq\varphi\in U^{\varnothing}\Longleftrightarrow\varphi\not\in U^0\Longleftrightarrow \null_C\Omega\not\subseteq\null\varphi$\par\quad\Hb
-%$\Rightarrow\varphi\not\in\Omega^+\Longleftrightarrow0\neq\varphi\in \Omega^-.$\par\quad\Hb
-%Thus $U^{\varnothing}\subseteq \Omega^-.$ Let $\Theta$ be such that $\Omega^-=U^{\varnothing}\oplus\Theta.$ Hence $U^{\varnothing}\oplus\Theta\neq U^{\varnothing}\oplus\Delta\Longrightarrow\Theta\neq\Delta.$\par\quad\Hb
-%Which means that both $\Theta$ and $\Delta$ are not $\zeroSubs.$ \colorbox{yellow}{TODO} Prove that $\Theta=\delta.$
-%
-%
-%\PfEnd\vspace{6pt}\quad
-\Or \Sbra[3pt]{{\tgsl Req $\Omega$ finite-dim}} \;Let $\Par{\varphi_1,\dots,\varphi_m}$ be a basis of $\Omega.$ Then by def, $U\subseteq\Par{\null\varphi_1}\cap\cdots\cap\Par{\null\varphi_m}.$\par\quad
-$\forall\varphi\in\Omega,\exists\,!\,a_i\in\Fbb,\varphi=a_1\varphi_1+\dots+a_m\varphi_m\Rightarrow\forall v\in\Par{\null\varphi_1}\cap\cdots\cap\Par{\null\varphi_m},\varphi\Par{v}=0\Rightarrow v\in U.$\par\quad
-Hence $\Par{\null\varphi_1}\cap\cdots\cap\Par{\null\varphi_m}=U.$ 又 $\Span{\varphi_1,\dots,\varphi_m}=\Omega.$ By Problem (23), we are done.\PfEnd\vspace{6pt}
-\Corollary \,\,\,For every subsp $\Omega$ of $V\apostrophe,\;\exists\,!\,$subsp $U$ of $V$ such that $\Omega=U^0.$\vspace{3pt}\par
-\Comment \,\,\,\Sbra[3pt]{{\tgsl Only in Finite-dim}} \;Using Problem (31) and the {\COROLLARY}(c) in Problem (22, 23).\par\quad
-Let $B_{\Omega}=\Par{\varphi_1,\dots,\varphi_m},B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_m,\dots,\varphi_n},B_V=\Par{v_1,\dots,v_m,\dots,v_n}.$\par\quad
-$V\apostrophe=\Span{\varphi_1,\dots,\varphi_m}\oplus\Span{\varphi_{m+1},\dots,\varphi_n}\xlongequal{\text{(I)}}\Span{v_{m+1},\dots,v_n}{^0}\oplus\Span{v_1,\dots,v_m}{^0}.$\par\quad
-$\Omega=\Span{\varphi_1,\dots,\varphi_m}\xlongequal{\text{(II)}}\Span{v_{m+1},\dots,v_n}{^0}=U{^0};\;\Span{\varphi_{m+1},\dots,\varphi_n}\xlongequal{\text{(III)}}\Span{v_1,\dots,v_m}{^0}.$\par\quad
-$\Longleftrightarrow U=\Span{v_{m+1},\dots,v_n}=\Par{\null\varphi_1}\cap\cdots\cap\Par{\null\varphi_m}.$ \hfill\Sbra[3pt]{{\normalsize{\tgsc Another proof of [3.106]} \;\Or Problem (24)}}\vspace{6pt}\par\quad
-(I) Using the {\COROLLARY}(c), immediately.\vspace{4pt}\par\quad\EndI
-(II)
-%Suppose for each $\varphi_k,$ let $\mathcal{K}_k$ be such that $V=\mathcal{K}_k\oplus\null\varphi_k.$ By (3.B.29), this $\mathcal{K}_k$ can be $\Span{v_k}.$\par\quad\HII
-%Then ${\mathcal{K}_1}+\dots+{\mathcal{K}_k}=\Span{v_1,\dots,v_k}.$\par\quad\HII
-\NOTICE that each $\null\varphi_k=\Span{v_1,\dots,v_{k-1},v_{k+1},\dots,v_n}=U_k;\;\dim U_k=\dim V-1.$\par\quad\HII
-By (4E 2.C.16), $U=\Par{\null\varphi_1}\cap\cdots\cap\Par{\null\varphi_m}=\bigcap\limits_{k=1}^m U_k=\Span{v_{m+1},\dots,v_n}.$\par\quad\HII
-Hence $\Span{v_{m+1},\dots,v_n}{^0}=U^0=\Omega=\Span{\varphi_1,\dots,\varphi_m}.$\vspace{6pt}\par\quad\EndII
-(III) \NOTICE that $V\apostrophe=\Omega\oplus\Span{\varphi_{m+1},\dots,\varphi_n}=U^0\oplus\Span{v_1,\dots,v_m}{^0}.$\par\quad\HIII
-And that $\Span{\varphi_{m+1},\dots,\varphi_n}\subseteq\Span{v_1,\dots,v_m}{^0}.$\par\quad\HIII
-By \Sbra{1.C \TIPSN{2}}, $\Span{\varphi_{m+1},\dots,\varphi_n}=\Span{v_1,\dots,v_m}{^0}.$\par\quad\HIII
+%For notational convienence of understanding, let $\null_C=\Bra{v\in V:\varphi\Par{v}=0,\forall\varphi\in\Omega}.$\par\quad
+%又 $\null_C=\Bra{v\in V:\varphi\Par{v}=0,\forall\varphi\in\BigPar{\null_C}{^0}}.$\par\quad
+%$\forall\varphi\in\Omega,\null_C\subseteq\null\varphi\Rightarrow\varphi\in\BigPar{\null_C}{^0}.$ Hence $\Omega\subseteq\BigPar{\null_C}{^0}.$\par\quad
+%Assume that $\Omega\subsetneq\BigPar{\null_C}{^0}.$ Suppose $\psi\in\BigPar{\null_C}{^0}\Backslash\Omega.$\par\quad
+%Let $\null\psi\oplus\Span{w}=V.$ Then suppose $\varphi\in\Omega\nonzero\subseteq\BigPar{\null_C}{^0}.$\par\quad
+%Let $\null\varphi\oplus\Span{v}=V.$ Then let $\Theta\oplus\null_C=\null\psi,\;\Delta\oplus\null_C=\null\varphi.$\par\quad
+%Thus $V=\Theta\oplus\null_C\oplus\Span{w}=\Delta\oplus\null_C\oplus\Span{v}.$ Now we show that $\psi\in\Omega.$\par\quad
+%\PfEnd\vspace{6pt}
+
+\BulletPointX\NoteForSmall{Problem (26)}\;\;For every subsp $\Omega$ of $V\apostrophe,\;\exists\,!\,$subsp $U$ of $V$ such that $\Omega=U^0.$
+\SepLine
+
+\ProblemN{24}{
+	\TextNL{Suppose $V$ is finite-dim and $U$ is a subsp of $V$.}
+	\TextNL{Prove, using the pattern of [3.104], that $\dim U+\dim U^0=\dim V$.}
+}Let $B_{\Omega}=B_{U^0}=\Par{\varphi_1,\dots,\varphi_m},B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_m,\dots,\varphi_n}.$\parSol{}
+And let the correspd (I) $B_U=\Par{v_{m+1},\dots,v_n},$ \; (II) $B_W=\Par{v_1,\dots,v_m}.$\parSol{}
+%$V\apostrophe=\Span{\varphi_1,\dots,\varphi_m}\oplus\Span{\varphi_{m+1},\dots,\varphi_n}=\Span{v_{m+1},\dots,v_n}{^0}\oplus\Span{v_1,\dots,v_m}{^0}.$\par\quad
+%$\Span{\varphi_1,\dots,\varphi_m}=\Span{v_{m+1},\dots,v_n}{^0}=U{^0};\;\Span{\varphi_{m+1},\dots,\varphi_n}=\Span{v_1,\dots,v_m}{^0}=W^0.$\parSol{}
+(I)
+%Suppose for each $\varphi_k,$ let $\mathcal{K}_k$ be such that $V=\mathcal{K}_k\oplus\null\varphi_k.$ By (3.B.29), this $\mathcal{K}_k$ can be $\Span{v_k}.$\parSol{\HI}
+%Then ${\mathcal{K}_1}+\dots+{\mathcal{K}_k}=\Span{v_1,\dots,v_k}.$\parSol{\HI}
+\NOTICE that each $\null\varphi_k=\Span{v_1,\dots,v_{k-1},v_{k+1},\dots,v_n}=U_k;\;\dim U_k=\dim V-1.$\parSol{\HI}
+By (4E 2.C.16), $U=\Par{\null\varphi_1}\cap\cdots\cap\Par{\null\varphi_m}=\bigcap_{k=1}^m U_k=\Span{v_{m+1},\dots,v_n}.$\parSol{\HI}
+Hence $\Span{v_{m+1},\dots,v_n}{^0}=U^0=\Omega=\Span{\varphi_1,\dots,\varphi_m}.$\vspace{4pt}\parSol{\EndI}
+(II) \NOTICE that $V\apostrophe=\Omega\oplus\Span{\varphi_{m+1},\dots,\varphi_n}=U^0\oplus\Span{v_1,\dots,v_m}{^0}.$\parSol{\HII}
+And that $\Span{\varphi_{m+1},\dots,\varphi_n}\subseteq\Span{v_1,\dots,v_m}{^0}.$\parSol{\HII}
+By \Sbra{1.C \TIPSN{2}} \OR (2.C.1), $\Span{\varphi_{m+1},\dots,\varphi_n}=\Span{v_1,\dots,v_m}{^0}.$\parSol{\HII}
 \Or Similar to (II), let $\Omega=\Span{\varphi_{m+1},\dots,\varphi_n},$ immediately.\PfEnd
 \SepLine
 
@@ -2551,7 +2586,10 @@ $\null T=\Span{v_1,\dots,v_m}\Longleftrightarrow\null T=\Par{\null\varphi_{m+1}}
 $\range T=\Span{w_1,\dots,w_m}\Longleftrightarrow\range T=\Par{\null\psi_{m+1}}\cap\cdots\cap\Par{\null\psi_n}\Longleftrightarrow\null T\apostrophe=\Span{\psi_{m+1},\dots,\psi_n}.$\par\quad
 ——Where $B_W=\Par{w_1,\dots,w_m,\dots,w_n}\Longleftrightarrow B_{W\apostrophe}=\Par{\psi_1,\dots,\psi_m,\dots,\psi_n}.$\par
 \SepLine
+}
 
+%\def\OrbikenIII
+{
 \ProblemN{\hypertarget{3F9}{9}}{
 	\TextN{Let $B_V=\Par{v_1,\dots,v_n},\,B_{V\apostrophe}=\Par{\varphi_1,\cdots,\varphi_n}$. Then $\forall\psi\in V\apostrophe,\psi=\psi\Par{v_1}\varphi_1+\dots+\psi\Par{v_n}\varphi_n.$}
 	\Corollary \,\,\,{\tgsl For other $B_V'=\Par{u_1,\dots,u_n},B_{V\apostrophe}'=\Par{\rho_1,\dots,\rho_n},\forall\psi\in V\apostrophe,\psi=\psi\Par{u_1}\rho_1+\dots+\psi\Par{u_n}\rho_n.$}\TextB{}
@@ -2591,19 +2629,14 @@ $\psi\Par{v}=\psi\XPar{\sum_{i=1}^n a_i v_i}=\sum_{i=1}^n a_i\psi\Par{v_i}=\sum_
 %	(b) \TextNL{Suppose $\varphi\in\PoRi\apostrophe$ is defined by $\varphi\Par{p}=\int_0^1 p\Par{x}\d x$. Evaluate $\BigPar{T\apostrophe\Par{\varphi}}\Par{x^3}$.\vspace{4pt}}
 %	\Hb\TextNL{\large\envFontDefault $\BigPar{T\apostrophe\Par{\varphi}}\Par{x^3}=\int_0^1\Par{x^5+6x}\d x=\int_0^1\XPar{\frac{1}{6}x^6+3x^2}\apostrophe\d x=\frac{19}{6}.$\PfEnd}
 %}\SepLine
+}
 
-\ProblemN{\hypertarget{3F24}{24}}{
-	\TextNL{Suppose $V$ is finite-dim and $U$ is a subsp of $V$.}
-	\TextNL{Prove, using the pattern of [3.104], that $\dim U+\dim U^0=\dim V$.}
-}\par\quad
-By Problem (31) and the \COMMENT in Problem (26), $B_U=\Par{v_1,\dots,v_m}\Longleftrightarrow B_{U^0}=\Par{\varphi_{m+1},\dots,\varphi_{n}}.$
-%\PfEnd\vspace{2pt}\quad
+%\def\OrbikenIV
+{
 %\Or Let $B_U=\Par{u_1,\dots,u_m},\,B_V=\Par{u_1,\dots,u_m,\dots,u_n},\,B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_m,\dots,\varphi_n}$.\par\quad
 %We show that ${U^0}=\Span{\varphi_{m+1},\dots,\varphi_n}.$ So that $\dim U^0=n-m=\dim V-\dim U.$\par\quad
 %$\forall\varphi\in U^0,\exists\,a_i\in\Fbb,\varphi=\sum_{i=1}^m a_i\varphi_i+\sum_{i=m+1}^n a_i\varphi_i$ 又 $\forall i\in\Bra{1,\dots,m},\varphi\Par{u_i}=0\Rightarrow a_i=0.$\par\quad
 %Then $\varphi\in\Span{\varphi_{m+1},\dots,\varphi_n}$. Thus $\Span{\varphi_{m+1},\dots,\varphi_n}\supseteq U^0.$ 又 Each $\varphi_i\in U^0.$
-\PfEnd
-\SepLine
 
 \ProblemN{\hypertarget{3F37}{37}}{
 	\TextNL{Suppose $U$ is a subsp of $V$ and $\pi$ is the quotient map. Thus $\pi\apostrophe\in\Lm[\BigPar]{\Par{V\XSlash U}\apostrophe,V\apostrophe}$.\vspace{2pt}}
@@ -2625,35 +2658,14 @@ Surj: $\varPhi\in\Par{V\XSlash U}\apostrophe\Rightarrow\forall u\in U,\varPhi\Pa
 \Or Define $\nu:\Par{V\XSlash U}\apostrophe\rightarrow U^0$ by $\nu\Par{\varPhi}=\varPhi\circ\pi.$ Now $\nu\circ\xi=I_{U^0},\;\xi\circ\nu=I_{\SmallPar[1pt]{V\XSlash U}\apostrophe}\Rightarrow\xi=\nu^{-1}.$\PfEnd\vspace{-2pt}
 \SepLine
 
-\ProblemN{\hypertarget{3F4}{4}}{
-	\TextN{Suppose $U$ is a subsp of $V$ and $U \neq V$. Prove that $\underbrace{\hText{\exists\,\varphi \in V\apostrophe\nonzero,\varphi\Par{u}=0\text{ for all }u\in U.}}_{\envFontSmall\Longleftrightarrow\;U_V^0\;\neq\;\zeroSubs.}$\vspace{-8pt}}
-}\par\quad
-Let $X$ be such that $V=U\oplus X.$ Then $X\neq\zeroSubs.$ Suppose $s\in X$ and $x\neq 0.$\par\quad
-Let $Y$ be such that $X=\Span{s}\oplus Y.$ Now $V=U\oplus\BigPar{\Span{s}\oplus Y}.$\par\quad
-Define $\varphi\in V\apostrophe$ by $\varphi\Par{u+\lambda s+y}=\lambda.$ Hence $\varphi\neq 0$ and $\varphi\Par{u}=0$ for all $u\in U.$\PfEnd\vspace{6pt}\quad
-\Or \Sbra[3pt]{{\tgsl Req $V$ Finite-dim}} \;By [3.106], $\dim U^0=\dim V-\dim U>0.$ Then $U^0\neq\zeroSubs.$\par\quad
-\Blind{\Or }\Or Let $B_V=\Par{\underbrace{u_1, \dots,u_m}_{B_U}, v_1, \dots, v_n}$ with $n\geqslant 1$. Let $B_{V\apostrophe}=\Par{\psi_1,\dots,\psi_m,\varphi_1,\dots,\varphi_n}.$ Let $\varphi=\varphi_i$.\vspace{4pt}\par\quad
-\Blind{\Or }\Blind{\Or }\Or Define $\varphi\in V\apostrophe$ by $\varphi\Par{u_1}=\dots=\varphi\Par{u_m}=0$ and $\varphi\Par{v_1}=\dots=\varphi\Par{v_n}=1.$\PfEnd\vspace{8pt}
-\Comment \,\,\,{\tgsc\large Another proof of \tgbfx[3.108]}: $T$ is surj $\Longleftrightarrow T\apostrophe$ is inje.\parCom
-(a) Suppose $T\apostrophe$ is inje. Note that $T\apostrophe\Par{\psi}=0\Rightarrow \psi=0.$\parCom\Ha
-Then $\nexists\,\psi\in W\apostrophe\nonzero,\BigPar{T\apostrophe\Par{\psi}}\Par{v}=\psi\Par{Tv}=0$ for all $w\in\range T\,\BigPar{\,\forall v\in V\,}.$\parCom\Ha
-Thus if we assume that $\range T\neq W$ then contradicts. Hence $\range T=W.$\parCom
-(b) Suppose $T$ is surj. Then $\Par{\range T}{^0}=W_W^0=\zeroSubs=\null T\apostrophe.$\PfEnd
-\SepLine
+}
 
-\ProblemB[]{
-	\TextB{Suppose $V$ is a vecsp and $U$ is a subsp of $V.$}
-	\ProblemN[]{}{}
-	\ProblemN[]{\hypertarget{3F17}{17}}{
-		\TextNL{\tgnr$U^0=\Bra{\varphi\in V\apostrophe:U\subseteq null\varphi}$. Noticing $\varphi\in V\apostrophe$, $U\subseteq\null \varphi\Longleftrightarrow\forall u\in U,\varphi\Par{u}=0$.\vspace{5pt}}}
-	\ProblemN[]{\hypertarget{3F18}{18}}{
-		\TextNL{$U^0=V\apostrophe\Longleftrightarrow\forall\varphi\in V\apostrophe, U\subseteq\null \varphi\,\Longleftrightarrow U=\zeroSubs$. \Sbra[3pt]{{\envFontDefault\large Which means $\zeroSubs{^0_V}=V\apostrophe.$}}\vspace{4pt}}
-		\TextNL{\envFontDefault\large\tgnr\Or $U^0=V\apostrophe\Longleftrightarrow\dim U^0=\dim V\apostrophe=\dim V\Longleftrightarrow\dim U=0\Longleftrightarrow U=\zeroSubs.$}\vspace{5pt}}
-	\ProblemN[]{\hypertarget{3F19}{19}}{
-		\TextNL{\tgnr $U^0_V=\zeroSubs=V^0_V\Longleftrightarrow U=V$. {\normalsize\tgnr By the inverse and contrapositive of Problem (4). \Or By [3.106].}}}
-	\TextB{\vspace{-4pt}}
-}\SepLine
+%\def\OrbikenV
+{
+}
 
+%\def\OrbikenVI
+{
 \ProblemB{
 	\TextB{Suppose $V=U\oplus W$. Define $\iota:V\rightarrow U$ by $\iota\Par{u+w}=u.$ Thus $\iota\apostrophe\in\Lm{U\apostrophe,V\apostrophe}.$\vspace{2pt}}
 	(a) \TextB{Show that $\null \iota\apostrophe=U_U^0=\zeroSubs$\hspace{1pt}$:${\tgnr\large\envFontDefault\;\;$\null\iota\apostrophe=\Par{\range\iota}{^0_U}=U_U^0=\zeroSubs.$}\vspace{2pt}}
@@ -2684,7 +2696,10 @@ Let $\psi=\varPhi\circ\BigPar{T^{-1}\mmid_{\range T}}.$ Then $T\apostrophe\Par{\
 Where $T^{-1}\mmid_{\range T}:\range T\rightarrow U;\;\;T:V\rightarrow\range T.$ Note that $T^{-1}\mmid_{\range T}\circ T\mmid_V=\iota.$\vspace{2pt}\par\quad
 By \Sbra{3.B \TIPSN{3}}, $\varPhi=\varPhi\circ \iota.$ Thus $T\apostrophe\Par{\psi}=\psi\circ T=\varPhi\circ{\iota}=\varPhi.$\PfEnd
 \SepLine
+}
 
+%\def\OrbikenVII
+{
 \ProblemB[]{
 	\hypertarget{3F4e17}{}\TextB{Suppose $T\in\Lm{V,W}.$ {\large Using [3.108], [3.110].}\vspace{4pt}}
 	\TextB{Now $T$ is inv $\Longleftrightarrow${$\envFontDefault\large\MathLeftrightMid{c}{
@@ -2747,7 +2762,10 @@ $\forall\psi\in \null\mathcal{T},\Sbra{T\apostrophe\Par{\psi}}\Par{v}=\psi\Par{T
 $\forall k\in\Bra{1,\dots,m},\Sbra{T\apostrophe\Par{\psi_k}}\Par{v}=\psi_k\BigPar{Tv}=\psi_k\Par{a_1w_1+\dots+a_mw_m}=a_k=\varphi_k\Par{v}=\Sbra{\mathcal{T}\Par{\psi}}\Par{v}.$\PfEnd\vspace{4pt}
 \Comment \,\,\,This is another proof of [3.109(a)]: $\dim\range T=\dim\range T\apostrophe.$\par
 \SepLine
+}
 
+%\def\OrbikenVIII
+{
 \ProblemN[]{\hypertarget{3F5}{5}}{
 	\TextN{Prove that $\Par{V_{\!1}\times\dots\times V_{\!m}}\apostrophe$ and $V\apostrophe_1 \times\dots\times V\apostrophe_m$ are iso.\hfill\Sbra[3pt]{{\large\tgnr Using notations in (3.E.2).}}}\vspace{4pt}
 }
@@ -2767,8 +2785,11 @@ $\MathRightBrace{l}{$
 			$\Lambda\Par{a_1,\dots,a_{n}}=a_1v_1+\dots+a_{n}v_{n}$.
 			$}\Rightarrow \Lambda=\Gamma^{-1}.$}
 }\vspace{6pt}
-\SepLine\pagebreak
+\SepLine
+}
 
+%\def\OrbikenIX
+{
 \ProblemN{\hypertarget{3F4e24}{}\hypertarget{3F6}{6}}{
 	\TextN{Define \,$\Gamma: V\apostrophe\rightarrow\Fbb^m\,$ by $\,\Gamma\Par{\varphi}=\BigPar{\varphi\Par{v_1},\dots,\varphi\Par{v_m}},$ where $v_1,\dots,v_m\in V$.}
 	(a) \TextN{Show that $\Span{v_1,\dots,v_m}=V\,\Longleftrightarrow \Gamma$ is inje.}
@@ -2828,7 +2849,10 @@ Define $\Phi:\Fbb^m\rightarrow\Par{\Fbb^m}\apostrophe$ by $\Phi=\Psi\circ\Gamma.
 \Comment \,\,\,\NOTICE that $\PoFi$ is not iso to $\Fbb^\infty,$ so is $\PoFi$ to $\BigPar{\PoFi}\apostrophe$\parCom
 But if we let $\Fbb^\infty=\Bra{\Par{a_1,\cdots,a_n,\underbrace{0,\cdots,0,\cdots}_\text{all zero}\!}\in\Fbb^\infty\;\text{\envFontHuge\envFontA\mmid}\;\exists\,!\,n\in\Nbp}.$ Then $\PoFi$ is iso to $\Fbb^\infty.$\par\vspace{10pt}
 \SepLine
+}
 
+%\def\OrbikenX
+{
 \ProblemN{\hypertarget{3F7}{7}}{
 	\TextN{Show that the dual basis of $\Par{1, x,\dots,x^m}$ of $\PoR{m}$ is $\Par{\varphi_0,\varphi_1,\dots,\varphi_m}$, where {\large\envFontDefault $\varphi_k\Par{p}=\Frac{p^{\SmallPar{k}}\Par{0}}{k!}$.}\vspace{2pt}}
 	\TextN{{\large\envFontDefault Here $p{^{\SmallPar{k}}}$ denotes the $k^{th}$ derivative of $p$, with the understanding that the $0^{th}$ derivative of $p$ is $p$.}\vspace{2pt}}
@@ -2840,7 +2864,10 @@ Thus $\envFontSmall[\scriptsize]\frac{p^{\Par[0pt]{k}}\Par{0}}{k!}$ act exactly 
 \Example \,\,\,\hypertarget{3F8}{}{\tgnr\large\envFontDefault Suppose $m\in\Nbp$. By [2.C.10], $B$ $=\BigPar{1,x-5,\dots,\Par{x-5}{^m}}$ is a basis of $\PoR{m}$.}\par
 \Blind{\Example \,\,\,}{\tgnr\large\envFontDefault Let $\varphi_k=\Frac{p^{\SmallPar{k}}\Par{5}}{k!}$ for each $k=0,1,\dots,m$. Then $\Par{\varphi_0,\varphi_1,\dots,\varphi_m}$ is the dual basis of $B$.}\par
 \SepLine
+}
 
+%\def\OrbikenXI
+{
 \ProblemN{\hypertarget{3F34}{34}}{
 	\TextNL{The double dual space of $V$, denoted by $V\apostrophe\apostrophe$, is defined to be the dual space
 		of $V\apostrophe$.}
@@ -2858,6 +2885,15 @@ Hence $T\apostrophe\apostrophe\Par{\Lambda v}=\BigPar{\Lambda\Par{Tv}}\Rightarro
 (c) Suppose $\Lambda v=0$. Then $\forall\varphi\in V\apostrophe,\Par{\Lambda v}\Par{\varphi}=\varphi\Par{v}=0\Rightarrow v=0$. Thus $\Lambda$ is inje.\par\quad\Hc
 又 Because $V$ is finite-dim. $\dim V=\dim V\apostrophe=\dim V\apostrophe\apostrophe$. Hence $\Lambda$ is an iso.$\,$\PfEnd
 \SepLine
+}
+
+%\OrbikenI
+%\OrbikenII
+%\OrbikenIII
+%\OrbikenIV
+%\OrbikenV
+%\OrbikenVI
+%\OrbikenVII
 
 \ChEnd\pagebreak
 
