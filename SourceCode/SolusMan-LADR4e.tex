@@ -22,16 +22,16 @@ reusers give credit to the creator. It allows reusers to distribute, remix, adap
 build upon the material in any medium or format, for noncommercial purposes only.$\\$
 If others modify or adapt the material, they must license the modified material under$\\$
 identical terms. {\tgsl All images except for `by-nc-sa.png' in this manual are licensed under CC0.}$}$\par\vspace{10pt}
-\SepLine[10pt]
+\SepLine[6pt]
 
-\small
+\footnotesize
 {\centerline{\Large 简介}\vspace{6pt}\par
-{\normalsize 这是我个人用于复习的「 {\tgsc Linear Algebra Done Right 3E/4E, by Sheldon Axler} 」笔记，一本习题选答与课文补注。因为使用中文会给我编撰这份笔记带来额外的中英文输入法切换的工作成本，况且对于专业学习者，直接使用英文不会造成任何困扰。但英文词句的冗长性拖慢我复习的效率，所以我对许多常用术语作了简写。这份笔记的内容范围和标识说明，我已经在\href{run:./README.md}{自述}中写得很清楚，不再赘述。这份笔记尚处于缓慢的编撰进度中。\par\vspace{4pt}
-我目前还没有能力和资格评论原书好坏以及线性代数课程教材选用的问题。但作为原书的学习者，我可以说，这本书作为初学线性代数的第一教材，虽然不需要其他辅助教材，但要求学习者有足够的耐心和毅力：课文一次看不懂就多看几遍，一天看不懂就分三天看；习题一个小时做不出来，隔六个小时再尝试，一天做不出来，就隔天再尝试。我虽然没有学过除此以外的其他任何线性代数教材，但我认为这样钻研原书是值得的。}\par\vspace{4pt}
+{\small 这是我个人用于复习的「 {\tgsc Linear Algebra Done Right 3E/4E, by Sheldon Axler} 」笔记，一本习题选答与课文补注。因为使用中文会给我编撰这份笔记带来额外的中英文输入法切换的工作成本，况且对于专业学习者，直接使用英文不会造成任何困扰。但英文词句的冗长性拖慢我复习的效率，所以我对许多常用术语作了简写。这份笔记的内容范围和标识说明，我已经在\href{run:./README.md}{自述}中写得很清楚，不再赘述。这份笔记尚处于缓慢的编撰进度中。\par\vspace{4pt}
+我目前还没有能力和资格评论原书好坏以及线性代数课程教材选用的问题。但作为原书的学习者，我可以说，这本书作为初学线性代数的第一教材，虽然不需要其他辅助教材，但要求学习者有足够的耐心和毅力：课文一次看不懂就多看几遍，一天看不懂就分三天看；习题一个小时做不出来，隔六个小时再尝试，一天做不出来，就隔天再尝试。我虽然没有学过除此以外的其他任何线性代数教材，但我认为这样钻研原书是值得的。}\par
 
 \begin{center}
 
-\textsc{\Large Goto}\vspace{8pt}\par
+\textsc{\large Goto}\vspace{4pt}\par
 
 % To see this cleaner, type Ctrl+- a few times.
 \begin{tabular}{ | c c c c c | c c c c c | }
@@ -47,28 +47,36 @@ identical terms. {\tgsl All images except for `by-nc-sa.png' in this manual are 
 \hline
 \end{tabular}
 
-\vspace{24pt}
-{\Large A{\normalsize BBREVIATION} T{\normalsize ABLE}}\vspace{8pt}\par
-\begin{tabularx}{0.95\textwidth}{
-		| c |
-		| >{\raggedright\arraybackslash}X | c |
-		| >{\raggedright\arraybackslash}X| }
+\vspace{14pt}
+{\large A{\footnotesize BBREVIATION} T{\footnotesize ABLE}}\vspace{8pt}\par
+\begin{tabularx}{1.00\textwidth}{
+		  r |
+		| >{\raggedright\arraybackslash}X | r |
+		| >{\raggedright\arraybackslash}X | r |
+		| >{\raggedright\arraybackslash}X }
 	\hline
-def&			definition & vec&			vector\\
-vecsp&			vector space & subsp&			subspace\\
-add&			addition/additive & multi&			multiplication/multiplicative/multiple\\
-assoc&			associative/associativity & distr&			distributive properties/property\\
-inv&			inverse & existns&		existence\\
-uniqnes&		uniqueness & linely inde&	linearly independent/independence\\
-linely dep&		linearly dependent/dependence & dim&			dimension(al)\\
-coeff& coefficient & degree& deg\\
-req& require(d)/requiring & $B_V$ & basis of $V$\\
-inje&			injective & surj&			surjective\\
-col&			column & with resp&		with respect\\
-standard basis& std basis & iso&			isomorphism/isomorphic\\
-correspd&		correspond(ing) & poly&			polynomial\\
-eigval&			eigenvalue & eigvec&			eigenvector\\
-mini poly&		minimal polynomial & char poly&		characteristic polynomial\\\hline
+sup&			suppose							& asm&			assum(e)(ption)						& showt&			show that\\
+provet&			prove that						& exe&			exercise							& beca&				because\\
+ele&			element(s)						& arb&			arbitrary							& shat&				such that\\
+stam&			statement						& ctrapos&		constrapositive						& ctradic&			contradict(s)(ion)\\
+def&			definition						& closd&		closed under						& sp&				space\\
+val&			value							& len&			length								& exa&				example\\
+min&			mini(mal(ity))(mum)				& max&			maxi(mal(ity))(mum)					& add&				addi(tion)(tive)\\
+multi&			multipl(e)(icati-on/ve)	& assoc&		associa(tive)(tivity)				& distr&			distributive propert(ies)(ty)\\
+commu&			commut(es)(ing)(ativity)		& -ec&			-ec(t)(tor)(tion)(tive)				& inv&				inver(se)(tib-le/ility)\\
+id&				identity						& existns&		existence							& uniqnes&			uniqueness\\
+findim&			finite-dimensional				& fini&			finite								& linely inde&		linearly independen(t)(ce)\\
+linely dep&	linearly dependen(t)(ce)			& std basis&	standard basis						& disti&			distinct\\
+dim&			dimension(al)					& poly&			polynomial							& coeff&			coefficient\\
+deg&			degree							& deri&			derivative(s)						& diff&				differentia(l)(ting)(tion)\\
+req&			require(s)(d)/requiring			& $B_V$&		basis of $V$						& inje&				injective\\
+surj&			surjective						& col&			column								& ent&				entr(y)(ies)\\
+with resp&		with respect					& iso&			isomorph(ism)(ic)					& tspose&			transpose\\
+tslate&			translate						& correspd&		correspond(ing)						& invar&			invariant\\
+invard&			invariant under					& invarsp&		invariant subspace					& eig-&				eigen-\\
+ch&				characteristic					& diag&			diagonal(iza-ble/ility/tion)		& trig&				triangular\\
+G disk(s)&		Gershgorin disk(s)				& &\\
+\hline
 \end{tabularx}
 \end{center}
 
@@ -78,7 +86,7 @@ mini poly&		minimal polynomial & char poly&		characteristic polynomial\\\hline
 \begin{large}
 
 \include{Ch123}
-%\include{Ch45}
+\include{Ch45}
 
 \end{large}
 \end{document}
