@@ -26,7 +26,7 @@ identical terms. {\tgsl All images except for `by-nc-sa.png' in this manual are 
 
 \footnotesize
 {\centerline{\Large 简介}\vspace{6pt}\par
-{\small 这是我个人用于复习的「 {\tgsc Linear Algebra Done Right 3E/4E, by Sheldon Axler} 」笔记，一本习题选答与课文补注。因为使用中文会给我编撰这份笔记带来额外的中英文输入法切换的工作成本，况且对于专业学习者，直接使用英文不会造成任何困扰。但英文词句的冗长性拖慢我复习的效率，所以我对许多常用术语作了简写。这份笔记的内容范围和标识说明，我已经在\href{run:./README.md}{自述}中写得很清楚，不再赘述。这份笔记尚处于缓慢的编撰进度中。\par\vspace{4pt}
+{\small 这是我个人用于复习的「 {\tgsc Linear Algebra Done Right 3E/4E, by Sheldon Axler} 」笔记，一本习题选答与课文补注。因为使用中文会给我编撰这份笔记带来额外的中英文输入法切换的工作成本，况且对于专业学习者，直接使用英文不会造成任何困扰。但英文词句的冗长性拖慢我编撰/复习的效率，所以我对许多常用术语作了简写。这份笔记的内容范围和标识说明，我已经在\href{run:./README.md}{自述}中写得很清楚，不再赘述。这份笔记尚处于缓慢的编撰进度中。\par\vspace{4pt}
 我目前还没有能力和资格评论原书好坏以及线性代数课程教材选用的问题。但作为原书的学习者，我可以说，这本书作为初学线性代数的第一教材，虽然不需要其他辅助教材，但要求学习者有足够的耐心和毅力：课文一次看不懂就多看几遍，一天看不懂就分三天看；习题一个小时做不出来，隔六个小时再尝试，一天做不出来，就隔天再尝试。我虽然没有学过除此以外的其他任何线性代数教材，但我认为这样钻研原书是值得的。}\par
 
 \begin{center}
@@ -34,16 +34,13 @@ identical terms. {\tgsl All images except for `by-nc-sa.png' in this manual are 
 \textsc{\large Goto}\vspace{4pt}\par
 
 % To see this cleaner, type Ctrl+- a few times.
-\begin{tabular}{ | c c c c c | c c c c c | }
+\begin{tabular}{ | c | c c c c c c || c | c c c c c c | }
 \hline
-         1  &          2  &          3  &  \Lch{4}{4} &          5                         &          6  &          7    &          8  &          9  &          10\\\hline
-        {A} & \Lch{2A}{A} & \Lch{3A}{A} &         {} & \Lch{5A}{A}                        & \Lch{6A}{A} & \Lch{7A}{A}   & \Lch{8A}{A} & \Lch{9A}{A} & \Lch{10A}{A}\\
-\Lch{1B}{B} & \Lch{2B}{B} & \Lch{3B}{B} &         {} & \Lch{5BI}{\,$\TXT{B}^\TXT{I}$}     & \Lch{6B}{B} & \Lch{7B}{B}   & \Lch{8B}{B} & \Lch{9B}{B} & \Lch{10B}{B}\\
-        {} &         {} &         {}&          {} & \Lch{5BII}{\;\,$\TXT{B}^\TXT{II}$} &         {} &         {}   &         {} &         {} &          {}\\
-\Lch{1C}{C} & \Lch{2C}{C} & \Lch{3C}{C} &         {} & \Lch{5C}{C}                        & \Lch{6C}{C} & \Lch{7C}{C}   & \Lch{8C}{C} &         {} &          {}\\
-        {} &         {} & \Lch{3D}{D} &         {} &         {}                        & \Lch{6D}{D} & \Lch{7D}{D}   & \Lch{8D}{D} &         {} &          {}\\
-        {} &         {} & \Lch{3E}{E} &         {} & \Lch{5E}{\;E*}                     &         {} &         {}   &         {} &         {} &          {}\\
-        {} &         {} & \Lch{3F}{F} &         {} &         {}                        &         {} & \Lch{7F}{\;F*}&         {} &         {} &          {}\\
+1 & A				& \Lch{1B}{B}		& \Lch{1C}{C}	&				&				&				& 6 & \Lch{6A}{A}	& \Lch{6B}{B}	& \Lch{6C}{C}	& \Lch{6D}{D}	&		&				\\
+2 & \Lch{2A}{A}		& \Lch{2B}{B}		& \Lch{2C}{C}	&				&				&				& 7 & \Lch{7A}{A}	& \Lch{7B}{B}	& \Lch{7C}{C}	& \Lch{7D}{D}	&		& \Lch{7F}{\;F*}\\
+3 & \Lch{3A}{A}		& \Lch{3B}{B}		& \Lch{3C}{C}	& \Lch{3D}{D}	& \Lch{3E}{E}	& \Lch{3F}{F}	& 8 & \Lch{8A}{A}	& \Lch{8B}{B}	& \Lch{8C}{C}	& \Lch{8D}{D}	&		&				\\
+4 &					&					&				&				&				&				& 9 & \Lch{9A}{A}	& \Lch{9B}{B}	&				&				&		&				\\
+5 & \Lch{5A}{A}		& \Lch{5BI}{\;$\TXT{B}^\TXT{I}$} & \Lch{5BII}{\;\,$\TXT{B}^\TXT{II}$} & \Lch{5C}{C} & \Lch{5E}{\;E*} & & 10 & \Lch{10A}{A} & \Lch{10B}{B} & & & & \\
 \hline
 \end{tabular}
 
@@ -55,28 +52,31 @@ identical terms. {\tgsl All images except for `by-nc-sa.png' in this manual are 
 		| >{\raggedright\arraybackslash}X | r |
 		| >{\raggedright\arraybackslash}X }
 	\hline
-sup&			suppose						& asm&			assum(e)(ption)				& shat&			show that\\
-provt&			prove that					& exe&			exercise					& becs&			because\\
+sups&			suppose						& asum&			assum(e)(ption)				& \\
+solus&			solution					& exe&			exercise					& becs&			because\\
 ele&			element(s)					& arb&			arbitrary					& suth&			such that\\
-othws&			otherwise					& notat&		notation(al)				& solus&		solution\\
+othws&			otherwise					& notat&		notation(al)				& cond&			condition\\
+uniq&			unique						& exis&			exist(s)(ing)				& rev&			revers(e(s))(ed)(ing)\\
 exa&			example						& simlr&		similar(ly)					& algo&			algorithm\\
+induc&			induct(ion)(ive)			& optor&		operator					& recurly&		recursively\\
+seq&			sequence					& req&			require(s)(d)/requiring		& corres&		correspond(s)(ing)\\
+hypo&			hypothesis					& std&			standard					& -ec&			-ec(t)(tor)(tion)(tive)\\
 div&			div(ide)(ision)				& conveni&		convenience					& restr&		restrict(ion)(ive)(ing)\\
 stam&			statement					& ctrapos&		constrapositive				& ctradic&		contradict(s)(ion)\\
+dep&			dependen(t)(ce)				& liney&		linear(ly)					& linity&		linearity\\
 def&			definition					& closd&		closed under				& sp&			space\\
 val&			value						& len&			length						& disti&		distinct\\
 min&			mini(mal(ity))(mum)			& max&			maxi(mal(ity))(mum)			& add&			addi(tion)(tive)\\
 multi&			multipl(e)(icati-on/ve)		& assoc&		associa(tive)(tivity)		& distr&		distributive propert(ies)(ty)\\
-commu&			commut(es)(ing)(ativity)	& -ec&			-ec(t)(tor)(tion)(tive)		& inv&			inver(se)(tib-le/ility)\\
+commu&			commut(es)(ing)(ativity)	& homo&			homogeneity					& inv&			inver(se)(tib-le/ility)\\
 id&				identity					& existns&		existence					& uniqnes&		uniqueness\\
 finide&			finite-dimensional			& fini&			finite						& infily&		infinitely\\
-linely inde&	linearly independen(t)(ce)	& linely dep&	linearly dependen(t)(ce)	& std basis&	standard basis\\
+bss&			basis						& bses&			bases						& $B_V$&		basis of $V$\\
 dim&			dimension(al)				& poly&			polynomial					& coeff&		coefficient\\
 deg&			degree						& deri&			derivative(s)				& diff&			differentia(l)(ting)(tion)\\
-req&			require(s)(d)/requiring		& $B_V$&		basis of $V$				& inje&			injective\\
-surj&			surjective					& col&			column						& ent&			entr(y)(ies)\\
-with resp&		with respect				& corres&		correspond(ing)				& iso&			isomorph(ism)(ic)\\
-optor&			operator\\
-quotient&		quot						& tspose&		transpose					& tslate&		translate\\
+inje&			injectiv(e)(ity)			& surj&			surjectiv(e)(ity)			& iso&			isomorph(ism)(ic)\\
+col&			column						& ent&			entr(y)(ies)				& wrto&			with respect to\\
+quotient&		quot						& trspose&		transpose					& trslate&		translate\\
 invar&			invariant					& invard&		invariant under				& invarsp&		invariant subspace\\
 eig-&			eigen-						& ch&			characteristic				& diag&			diagonal(iza-ble/ility/tion)\\
 trig&			triangular					& G disk(s)&	Gershgorin disk(s)			& &\\
