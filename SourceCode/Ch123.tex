@@ -423,7 +423,7 @@ $Q\Rightarrow P:\forall v\in V,\exists\,!\,b_i\in\Fbb,\;v=b_1w_1+\dots+b_mw_m\Ri
 }\PfEnd\vspace{-4pt}
 \SepLine
 
-\BulletPointX\NoteFor{{\tgsc liney indep sequence and }[2.34]}\;\;$“V=\Span{v_1,\dots,v_n,\dots}”$ is an invalid expression.\TextB{}
+\BulletPointX\NoteFor{{\tgsc liney indep sequence and }[2.34]}\;\;$“V=\Span{v_1,\dots,v_n,\dots}”$ is an invalid expr.\TextB{}
 If we allow using $“$infini list$”$, then we must assure that $\Par{v_1,\dots,v_n,\dots}$ is a spanning $“$list$”$\TextB{}
 suth $\forall v\in V,\exists$ smallest $n\in\Nbp,\;v=a_1 v_1+\dots+a_n v_n.$ Moreover, given a list $\Par{w_1,\cdots,w_n,\cdots}$ in $W,$\TextB{}
 we can prove $\exists\,!\,T\in\Lm{V,W}$ with each $Tv_k=w_k,$ which has less restr than [3.5].\TextB{}
@@ -602,7 +602,7 @@ And, each $q_k\in\Span{x^{k+1},\dots,x^m}.$ Using {\TIPS} above.\PfEnd\vspace{6p
 (ii) $k\in\Bra{1,\dots,m-1}.$ \;Sups for each $k\in\Bra{0,\dots,k},$ we have $x^{m-k}\in\Span[\BigPar]{p_{m-k},\dots,p_m},\exists\,!\,a_m\in\Fbb.$\vspace{2pt}\par\quad\Hii
 Note that $x^{m-\SmallPar{k+1}}=p_{m-\SmallPar{k+1}}\Par{x}+\sum_{j=1}^{k+1}\mathC_{k+1}^j\Par{-1}{^{j+1}}x^{m-\SmallPar{k+1}+j}\in\Span[\BigPar]{p_{m-\SmallPar{k+1}},x^{m-k},\dots,x^{m}}.$\vspace{2pt}\par\quad\Hii
 Thus $x^{m-\SmallPar{k+1}}\in\Span[\BigPar]{p_{m-\SmallPar{k+1}},p_{m-k},\dots,p_m}.$\PfEnd\vspace{2pt}\quad
-\Comment \,\,\,The base step and the induc step can be independent.\vspace{10pt}\par\quad
+\Comment \,\,\,The base step and the induc step can be indep.\vspace{10pt}\par\quad
 \Or For any $m,k\in\Nbp$ suth $k\leqslant m.$ Define $p_{k,m}$ by $p_{k,m}\Par{x}=x^k\Par{1-x}{^{m-k}}.$\par\quad
 Define the stam $S\Par{m}$ by $S\Par{m}:\Par{p_{0,m},\dots,p_{m,m}}$ is liney indep \BigPar{ and therefore is a bss }.\par\quad
 We use induc on to show $S\Par{m}$ holds for all $m\in\Nbp.$\vspace{2pt}\par\quad
@@ -866,7 +866,7 @@ Sups $\varphi\neq 0\Rightarrow\exists\,i,j\in\Bra{1,\dots,n},\,\varphi\Par{R_{i,
 	\TextB{Prove $\exists\,\lambda\in\Fbb,T=\lambda I$.}
 }If $V=\zeroSubs,$ then done. Now sups $V\neq\zeroSubs.$\par\quad
 Asum $\forall v\in V,\Par{v,Tv}$ is linely depe, then by (2.A.2.(b)), $\exists\,\lambda_v\in\Fbb,Tv=\lambda_v v.$\par\quad
-To prove $\lambda_v$ is independent of $v$, we discuss in two cases:\vspace{4pt}\par\hspace{1pt}
+To prove $\lambda_v$ is indep of $v$, we discuss in two cases:\vspace{4pt}\par\hspace{1pt}
 $\MathRightBrace{l}{$
 	($-$) If $\Par{v,w}$ is liney indep, $\lambda_{v+w}\Par{v+w}=T\Par{v+w}=Tv+Tw=\lambda_v v+\lambda_w w\\ $\qquad\qquad\qquad\qquad\qquad\qquad\qquad $\Rightarrow \Par{\lambda_{v+w}-\lambda_v}v+\Par{\lambda_{v+w}-\lambda_w}w=0\\ $
 	($=$) Othws, sups $w=cv$, $\lambda_w w=Tw=cTv=c\lambda_v v=\lambda_v w\Rightarrow\Par{\lambda_w-\lambda_v}w$
@@ -2036,18 +2036,18 @@ Now $\exists\,p\in\PoR{n}, q\Par{x}=T_n\Par{p}=\Par{x^2 + x}p\apostrophe\apostro
 
 \ProblemN{\hypertarget{3D19}{19}}{
 	\TextNL{Sups $T\in\Lm[\BigPar]{\PoRi}$ is inje. And $\deg Tp\leqslant\deg p$ for every nonzero $p\in\PoRi$.}
-	(a) \TextNL{Prove $T$ is surj;\quad {\large\tgnr(b)} Prove for every nonzero $p$, $\deg Tp=\deg p$.}
-}(a) $T$ is inje $\Longleftrightarrow\forall n\in\Nbp,T\mmid_{\PoR[\SmallPar]{n}}\in\Lm[\BigPar]{\PoR{n}}$ is inje, so is inv $\Longleftrightarrow T$ is surj.\par\quad
-(b) Using induc.\par\quad
-(i) $\deg p=-\infty\geqslant\deg Tp\Longleftrightarrow p=0=Tp.$ And $\deg p=0\geqslant\deg Tp\Longleftrightarrow p=C\neq 0.$\par\vspace{2pt}\quad\Endi
-(ii) Asum $\forall s\in\PoR{n},\deg s=\deg Ts.$ We show $\forall p\in\PoR{n+1},\deg Tp=\deg p$ by ctradic.\par\quad\Hii
-Sups $\exists\,r\in\PoR{n+1},\;\deg Tr\leqslant n<n+1=\deg r.$ Then by (a), $\exists\,s\in\PoR{n},\;T\Par{s}=\Par{Tr}.$\par\quad\Hii
+	(a) \TextNL{Prove $T$ is surj. \quad {\large\tgnr(b)} Prove for every nonzero $p$, $\deg Tp=\deg p$.}
+}(a) $T$ is inje $\Longleftrightarrow\forall n\in\Nbp,T\mmid_{\PoR[\SmallPar]{n}}\in\Lm[\BigPar]{\PoR{n}}$ is inje, so is inv $\Longleftrightarrow T$ is surj.\parSol{}
+(b) Using induc.\parSol{\Hb}
+(i) $\deg p=-\infty\geqslant\deg Tp\Longleftrightarrow p=0=Tp.$ And $\deg p=0\geqslant\deg Tp\Longleftrightarrow p=C\neq 0.$\parSol{\vspace{2pt}\Endi\Hb}
+(ii) Asum $\forall s\in\PoR{n},\deg s=\deg Ts.$ We show $\forall p\in\PoR{n+1},\deg Tp=\deg p$ by ctradic.\parSol{\Hii\Hb}
+Sups $\exists\,r\in\PoR{n+1},\;\deg Tr\leqslant n<n+1=\deg r.$ \,By (a), $\exists\,s\in\PoR{n},\;T\Par{s}=\Par{Tr}.$\parSol{\Hii\Hb}
 又 $T$ is inje $\Rightarrow s=r.$ While $\deg s=\deg Ts=\deg Tr<\deg r.$ Ctradic.\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{3D16}{16}}{
 	\TextNL{Sups $V$ is finide and $S\in\Lm{V}$ suth $\forall T\in\Lm{V},ST=TS$. Prove $\exists\,\lambda\in\Fbb,S=\lambda I$.}
-}If $S=0$, done. Now sups $S\neq 0.$\hfill\Sbra{Using nota in Exe (4E 17). See also in (3.A).}\par\quad
+}If $S=0$, done. Now sups $S\neq 0.${\normalsize\envFontSmall\hfill\Sbra{{\tgsl Using nota in Exe (4E 17). See also in (3.A).}}}\par\quad
 {\vspace{2pt}Let {$S=E_{1,1}+\dots+E_{m,m}\Rightarrow \Mt{S,B_U}=\Mt{I,B_{\range S},B_U}.$} Note that $R_{k,1}:w_x\mapsto\delta_{k,x}v_1.$}\par\quad
 {\vspace{2pt}Then $\forall k\in\Bra{1,\dots,n},$ {\Large\envFontLarge$0\neq SR_{k,1}=R_{k,1}S.$} Hence $\dim\null S=0,\;\dim\range S=m=n.$}\par\quad
 {\vspace{2pt}\NOTICE that {\Large\envFontLarge$G_{i,j}=R_{i,j}S=SR_{i,j}=Q_{i,j}$}. Where $G_{i,j}:v_x\mapsto\delta_{i,x}v_j;\;Q_{i,j}:w_x\mapsto\delta_{i,x}w_j.$}\par\quad
@@ -2058,7 +2058,7 @@ Thus each $w_j=\lambda v_j\Longrightarrow\Mt{S,B_U}=\Mt{\lambda I}.$\PfEnd
 \SepLine
 
 \ProblemBnoor{\hypertarget{3D4e19}{}10.A.3, \OR 4E 19}{
-	\TextB{Sups $V$ is finide and $T\in\Lm{V}$.\large\envFontDefault\hfill\Sbra{See also in (3.A).}}
+	\TextB{Sups $V$ is finide and $T\in\Lm{V}$.\normalsize\envFontSmall\hfill\Sbra{See also in (3.A).}}
 	\TextB{Prove $\forall B_V\neq B_V',\;\Mt[\BigPar]{T,B_V}=\Mt[\BigPar]{T,B'_V}\Longrightarrow T=\lambda{I},\exists\,\lambda\in\Fbb.$}
 }Sups $\forall B_V\neq B_V',\;\Mt{T,B_V}=\Mt{T,B'_V}.$ If $T=0$, then done.\vspace{1pt}\parSol{}
 Sups $T\neq 0,$ and $v\in V\nonzero.$ Asum $\Par{v,Tv}$ is liney indep.\vspace{1pt}\parSol{}
@@ -2067,7 +2067,7 @@ $\Rightarrow Tv=B_{1,1} v+B_{2,1}\Par{Tv}+B_{3,1}u_3+\dots+B_{n,1}u_n\Rightarrow
 By asum, $A=\Mt{T,B_V'}=B,\forall B_V'=\Par{v,w_2,\dots,w_{n}}$. Then $A_{2,1}=1,A_{i,1}=0,\forall i\neq 2.$\parSol{}
 $\Rightarrow Tv=w_2,$ which is not true if $w_2=u_3,\;w_3=Tv,\;w_j=u_j,\forall j\in\Bra{4,\dots,n}.$ Ctradic.\parSol{}
 Hence $\Par{v,Tv}$ is linely depe $\Rightarrow \forall v\in V,\exists\,\lambda_v\in\Fbb,Tv=\lambda_v v.$\parSol{}
-Now we show $\lambda_v$ is independent of $v$, that is, for all disti $v,w\in V\nonzero,\lambda_v=\lambda_w.$\parSol{}
+Now we show $\lambda_v$ is indep of $v$, that is, for all disti $v,w\in V\nonzero,\lambda_v=\lambda_w.$\parSol{}
 \!\!\!\!$\MathRightBrace{l}{
 		\Par{v,w}$ liney indep $\Rightarrow T\Par{v+w}=\lambda_{v+w}\Par{v+w}=\lambda_v v+\lambda_w w=Tv+Tw\\
 		\Par{v,w}$ linely depe, $w=c v$ $\Rightarrow Tw=\lambda_w w=\lambda_w cv=c\lambda_v v=T\Par{cv}
@@ -2096,7 +2096,7 @@ Now $T\Par{v\apostrophe{\hspace{-3pt}_k}}=A_{1,k}v\apostrophe{\hspace{-3pt}_1}+\
 }\par\quad
 For any $k\in\Bra{1,\dots,m},$ define $S_k\in\Lm{V_{\!1}\times\dots\times V_{\!m},V_{\!k}}$ by $S_k\Par{v_1,\dots,v_m}=v_k.$\par\quad
 Then $S_k$ is liney map. By [3.22], $\range S_k=V_{\!k}$ is finide.\PfEnd\vspace{6pt}\par\quad
-\Or Denote $V_{\!1}\times\cdots\times V_{\!m}$ by $U$. Denote $\zeroSubs\times\cdots\zeroSubs\times V_{\!i}\times\zeroSubs\cdots\times\zeroSubs$ by $U_i$.\par\quad
+\Or Denote $V_{\!1}\times\cdots\times V_{\!m}$ by $U$. Denote $\zeroSubs\times\cdots\times\zeroSubs\times V_{\!i}\times\zeroSubs\cdots\times\zeroSubs$ by $U_i$.\par\quad
 We show each $U_i$ is iso to $V_{\!i}.$ Then $U$ is finide $\Longrightarrow$ its subsp $U_i$ is  finide, so is $V_{\!i}.$\par\vspace{2pt}\quad
 Let $B_U=\Par{v_1,\dots,v_M}\;\hMath{l}{\left|}{\right\}}{$
 Define $R_i\in\Lm{V_{\!i},U_i}$ by $R_i\Par{u_i}=\Par{0,\dots,0,u_i,0,\dots,0}\\ $
@@ -2246,10 +2246,10 @@ $\Blind{A}=v_k+\lambda_1\Par{v_1-v_k}+\dots+\lambda_{k-1}\Par{v_{k-1}-v_k}+\lamb
 $\Blind{A}\in v_k+\Span{v_1-v_k,\dots,v_m-v_k}.$\PfEnd
 \SepLine\pagebreak
 
-\BulletPointX\NoteFor{[3.88, 3.90, 3.91]}\;\;{Sups $W\in\mathcal{S}_{\!V} U.$ Then $V\XSlash U$ is iso to $W.$}\TextB{}
+\BulletPointX\NoteFor{[3.88, 3.90, 3.91]}\;\;{Sups $W\in\mathcal{S}_{\!V} U.$ Then $V\XSlash U$ is iso to $W.$\quad\envFontSmall\normalsize\Sbra{\,Conversely not true.\,}}\TextB{}
 {Becs $\forall v\in V,\exists\,!\,u_v\in U,w_v\in W,v=u_v+w_v.$ \uline{Define $T\in\Lm{V}$ by $T\Par{v}=w_v.$}}\TextB{}
 {Hence $\null T=U,\;\range T=W,\;\range T\oplus\null T=V.$}\TextB{}
-{Then $\tilde{T}\in\Lm{V\XSlash \null T,V}$ is defined by $\tilde{T}\Par{v+U}=\tilde{T}\Par{w_v'+U}=Tw_v'=w_v.$ \Sbra{See {\TIPSN{1}} below}}\TextB{}
+{Then $\tilde{T}\in\Lm{V\XSlash \null T,V}$ is defined by $\tilde{T}\Par{v+U}=\tilde{T}\Par{w_v'+U}=Tw_v'=w_v.$ \envFontSmall\normalsize\Sbra{\tgsl See {\TIPSN{1}} below}}\TextB{}
 {Now $\pi\circ\tilde{T}=I_{V\XSlash U},\;\tilde{T}\circ\pi\mmid_W=I_{W}=T\mmid_W.$ \;Hence $\tilde{T}$ is iso of $V\XSlash U$ onto $W.$}\par\vspace{2pt}
 \BulletPointX\TipsN{1}\,\,\,{Sups $U$ is a subsp of $V.$ \uline{Define $S\in\Lm{V\XSlash U,V}$ by $S\Par{v+U}=v.$}}\TextB{}
 {Then $\range S$ is the {\tgsl purest} in $\mathcal{S}_{\!V} U.$ Now $\null S=\zeroSubs,\;U\oplus\range S=V.$}\TextB{}
@@ -2305,8 +2305,8 @@ Becs $\Dim\Sbra{\Span{v_1,\dots,v_m}\oplus U}=m+n=\dim V.$ \;Now by (2.B.8).\PfE
 	\TipsN{2}\,\,\,\TextB{Sups $U,W$ are subsps of $V.$ Let $I=U\cap W.$ Prove $V=U+W\Longleftrightarrow V\XSlash I=U\XSlash I\oplus W\XSlash I.$}
 }(a) Sups $U+W.$ Then $\forall x\in V\XSlash I,\exists\,v\in V,\Par{u_v,w_v}\in U\times W,x=v+I=\Par{u_v+w_v}+I.$\parSol{\Ha}
 Note that $U\XSlash I,W\XSlash I\subseteq V\XSlash I.$ Thus $V\XSlash I=U\XSlash I+W\XSlash I.$\parSol{\Ha}
-$\forall x\in\Par{U\XSlash I}\,${\Large$\cap$}$\,\Par{W\XSlash I},\exists\,u+I\in U\XSlash I,w+I\in W\XSlash I,x=u+I=w+I\Rightarrow u-w\in I=U\cap W$\parSol{\Ha}
-$\Rightarrow\exists\,w'\in I,u=w+w'\in U\cap W\Rightarrow x=u+I=0+I.$ Thus $\Par{U\XSlash I}\,${\Large$\cap$}$\,\Par{W\XSlash I}=\zeroSubs.$\parSol{\vspace{2pt}}
+$\forall x\in\Par{U\XSlash I}\,${\Large$\cap$}$\,\Par{W\XSlash I},x=u+I=w+I\Rightarrow{}$\uline{$u-w\in I=U\cap W$}\parSol{\Ha}
+\uline{$\Rightarrow\exists\,w'\in I,u=w+w'\in U\cap W$}${}\Rightarrow x=u+I=0+I.$ Thus $\Par{U\XSlash I}\,${\Large$\cap$}$\,\Par{W\XSlash I}=\zeroSubs.$\parSol{\vspace{2pt}}
 (b) Sups $V\XSlash I=U\XSlash I\oplus W\XSlash I.$ Then $\forall v\in V,v+I=\Par{u+I}+\Par{w+I}$\parSol{\Hb}
 $\Rightarrow v-u-w\in I=U\cap W\Rightarrow\exists\,x\in U\cap W,v=u+w+x\in U+W.$\PfEnd
 \SepLine
@@ -2327,8 +2327,8 @@ $\Rightarrow v-u-w\in I=U\cap W\Rightarrow\exists\,x\in U\cap W,v=u+w+x\in U+W.$
 
 \ProblemN{\hypertarget{3E16}{16}}{
 	\TextNL{Sups $\dim V\XSlash U=1$. Prove $\exists\,\varphi\in\Lm{V,\Fbb},\null\varphi=U.$}
-}Sups $V_0\oplus U=V.$ Then $V_0$ is iso to $V\XSlash U.$ $\dim V_0=1.$\parSol{}
-Define $\varphi\in\Lm{V,\Fbb}$ by $\varphi\Par{v_0}=1,\varphi\Par{u}=0,$ where $v_0\in V_0,u\in U.$\PfEnd\parSol{\vspace{4pt}}
+}Sups $V_{\!0}\oplus U=V.$ Then $V_{\!0}$ is iso to $V\XSlash U.$ $\dim V_{\!0}=1.$\parSol{}
+Define $\varphi\in\Lm{V,\Fbb}$ by $\varphi\Par{v_0}=1,\varphi\Par{u}=0,$ where $v_0\in V_{\!0},u\in U.$\PfEnd\parSol{\vspace{4pt}}
 \Or Let $B_{V\XSlash U}=\Par{w+U}.$ Then $\forall v\in V,\exists\,!\,a\in\Fbb,v+U=aw+U.$\parSol{}
 Define $\varphi:{V\rightarrow\Fbb}$ by $\varphi\Par{v}=a.$ Then $\varphi\Par{v_1+\lambda v_2}=a_1+\lambda a_2=\varphi\Par{v_1}+\lambda\varphi\Par{v_2}.$\parSol{}
 Now $u\in U\Longleftrightarrow u+U=0w+U\Longleftrightarrow\varphi\Par{u}=0.$\PfEnd

@@ -24,68 +24,319 @@ If others modify or adapt the material, they must license the modified material 
 identical terms. {\tgsl All images except for `by-nc-sa.png' in this manual are licensed under CC0.}$}$\par\vspace{10pt}
 \SepLine[6pt]
 
-\footnotesize
-{\centerline{\Large 简介}\vspace{6pt}\par
-{\small 这是我个人用于复习的「 {\tgsc Linear Algebra Done Right 3E/4E, by Sheldon Axler} 」笔记，一本习题选答与课文补注。因为使用中文会给我编撰这份笔记带来额外的中英文输入法切换的工作成本，况且对于专业学习者，直接使用英文不会造成任何困扰。但英文词句的冗长性拖慢我编撰/复习的效率，所以我对许多常用术语作了简写。这份笔记的内容范围和标识说明，我已经在\href{run:./README.md}{自述}中写得很清楚，不再赘述。这份笔记尚处于缓慢的编撰进度中。\par\vspace{4pt}
-我目前还没有能力和资格评论原书好坏以及线性代数课程教材选用的问题。但作为原书的学习者，我可以说，这本书作为初学线性代数的第一教材，虽然不需要其他辅助教材，但要求学习者有足够的耐心和毅力：课文一次看不懂就多看几遍，一天看不懂就分三天看；习题一个小时做不出来，隔六个小时再尝试，一天做不出来，就隔天再尝试。我虽然没有学过除此以外的其他任何线性代数教材，但我认为这样钻研原书是值得的。}\par
+\centerline{\Large 简介}\vspace{6pt}\par
+{\footnotesize 这是我个人用于复习的「 {\tgsc Linear Algebra Done Right 3E/4E, by Sheldon Axler} 」笔记，一本习题选答与课文补注。范围覆盖所有第三版和第四版的课文和习题（除了第一章A节、极少数结合上下文太过显而易见的习题。没有任何日后反复推敲价值的当堂习题和方法套路过于雷同的习题）。这份笔记尚处于缓慢的编撰进度中。\par\vspace{4pt}
+{\footnotesize 习题答案中，有我完全独立思考得出的，有抄 \textcolor{blue}{https://linearalgebras.com/} 的, 有抄 \textcolor{blue}{https://math.stackexchange.com/} 的, 有抄 \textcolor{blue}{LADR2eSolutions（By Axler）.pdf } ，有抄最新的 \textcolor{blue}{LADR4eSolutions经典最全（By Axler？）.pdf} ，还有请教别人，乃至请教AI得出来的。\par
+{\scriptsize 这些文档的许可证件，除 \textcolor{blue}{LADR4eSolutions经典最全（By Axler？）.pdf} 找不到/没有指明外，都允许复制/引用。}\par\vspace{4pt}
+课文补注中，除了我独立思考总结出的易错误区和技巧、难点之外，还（因为我想要兼容那些使用LADR第三版纸质书的读者，包括我在内）把LADR4e中对课文定理等等的修改也（作了简化和提炼）摘录上去。\par\vspace{4pt}
+题目标为正常数字{\tgbfxx N}的，为第三版某章某节第{\tgbfxx N}题（有个别题是第四版又删去的，这里，或直接摘录，或合并简化，仍然作保留；还有个别题是第四版增添条件、设问的，也一并写在第{\tgbfxx N}题下）。题目标为\!\!‘$\bullet$’\!\!的，为第四版。因为要面向以第三版为主要教材的学习者，所以为了避免混淆，故而将题号（部分题目的实心黑点后有标注具体第四版的数字标号）、甚至章节略去（一些变动过大的章节除外）。题目顺序会有调换，在每章大标题处会交代清楚。除了原书第四版新加入的章节外，均使用原书第三版的索引。这也许对第四版的使用者很不友好，我在此欢迎有心人士将我的作品修改后在同样的\textbf{CC BY NC SA}条款下作为\textbf{衍生作品}发布。\par\vspace{4pt}
+因为使用中文会给我编撰这份笔记带来额外的中英文输入法切换的工作成本，况且对于专业学习者，直接使用英文不会造成任何困扰。但英文词句的冗长性拖慢我编撰/复习的效率，所以我对许多常用术语作了简写。}\par\vspace{-14pt}
+\begin{flushright}
+\begin{tabular}{r r}
+	\tgbf{Email:}&\tgbf{13012057210@163.com}\\
+	\tgbf{Bilibili:}&\tgbf{H-U\_O}\\
+	\tgbf{Gitee/GitHub:}&\tgbf{Songbingzhi628}\\
+\end{tabular}
+\end{flushright}
+}\par\vspace{0pt}
+\centerline{\Large 作者序}\vspace{6pt}\par
+{\small 我目前还没有能力和资格评论原书好坏以及线性代数课程教材选用的问题。但作为原书的学习者，我可以说：\par\vspace{2pt}
+相较于（其他课程的）其他教材，以LADR作为\textbf{自学读本}的\textbf{精学}计划，往往在执行中出现一次又一次的时间误判/超时，比如我最开始计划$40\times 8$h完成LADR的精学，差不多是一天（$8$h）完成一节，还有额外的复习时间。但在实际学习中，（刨去笔记的功夫）完成到一半时，发现已经耗费了约$35\times 8$h，于是我不得不重新估计LADR精学所需的总时间为$70\times 8$h。这一点对于有学时/学期限制/应试要求的线性代数初学者来说很不安全。更主观地讲，这是因为LADR更像是一本参考手册，而不是一本细致入微的自学读本；如果把LADR作为初学线性代数第一教材和自学读本来学习，会面临不小的困难。\par\vspace{4pt}
+以上或许能劝退相当一部分打算入门的线性代数初学者。S.Axler说这本书作为第二遍学习线性代数的教材更合适。我认为理由就是，在校的科班生第二遍学习线性代数时，也已经学习过了离散数学、抽象代数、数论、数学分析等课程，这些知识储备统统会化作一个叫“mathematical maturity”的东西，让他们面对LADR的课文和习题不再少见多怪、茫然无措。据此，我进一步认为，对于完全的初学者，想要完成LADR的精学，要么有很好的天赋，要么有与之相匹配的“mathematical maturity”，再要么，拿出足够的耐心和毅力。幸运的是，在坚持学习LADR的过程中，这三样会一同增益。就我个人来说：课文一次看不懂，就多看几遍，一天看不懂，就分三天看；习题一个小时做不出来，就隔六个小时再尝试，一天做不出来，就隔天再尝试。这确实让我收获了独特的学习体验和能力，我迄今也无法在别处得到，因此我很珍视LADR，我愿意为此编撰一份电子辅助书并免费公开于网络中。这本身并不花费什么，因为实际的时间开销包括了很多不相干的额外项目：初学\LaTeX、调整代码架构、了解许可证选用，诸如此类的各种波折，也不乏戏剧性。\par\vspace{4pt}
+}
+\par\vspace{24pt}
 
-\begin{center}
+\centerline{\textsc{\large Goto}}\par\vspace{8pt}
 
-\textsc{\large Goto}\vspace{4pt}\par
-
+\small
 % To see this cleaner, type Ctrl+- a few times.
+\centerline{
 \begin{tabular}{ | c | c c c c c c || c | c c c c c c | }
 \hline
-1 & A				& \Lch{1B}{B}		& \Lch{1C}{C}	&				&				&				& 6 & \Lch{6A}{A}	& \Lch{6B}{B}	& \Lch{6C}{C}	& \Lch{6D}{D}	&		&				\\
+1 & 				& \Lch{1B}{B}		& \Lch{1C}{C}	&				&				&				& 6 & \Lch{6A}{A}	& \Lch{6B}{B}	& \Lch{6C}{C}	& \Lch{6D}{D}	&		&				\\
 2 & \Lch{2A}{A}		& \Lch{2B}{B}		& \Lch{2C}{C}	&				&				&				& 7 & \Lch{7A}{A}	& \Lch{7B}{B}	& \Lch{7C}{C}	& \Lch{7D}{D}	&		& \Lch{7F}{\;F*}\\
 3 & \Lch{3A}{A}		& \Lch{3B}{B}		& \Lch{3C}{C}	& \Lch{3D}{D}	& \Lch{3E}{E}	& \Lch{3F}{F}	& 8 & \Lch{8A}{A}	& \Lch{8B}{B}	& \Lch{8C}{C}	& \Lch{8D}{D}	&		&				\\
 4 &					&					&				&				&				&				& 9 & \Lch{9A}{A}	& \Lch{9B}{B}	&				&				&		&				\\
 5 & \Lch{5A}{A}		& \Lch{5BI}{\;$\TXT{B}^\TXT{I}$} & \Lch{5BII}{\;\,$\TXT{B}^\TXT{II}$} & \Lch{5C}{C} & \Lch{5E}{\;E*} & & 10 & \Lch{10A}{A} & \Lch{10B}{B} & & & & \\
 \hline
 \end{tabular}
+}
+\pagebreak
 
-\vspace{14pt}
-{\large A{\footnotesize BBREVIATION} T{\footnotesize ABLE}}\vspace{8pt}\par
-\begin{tabularx}{1.00\textwidth}{
-		  r |
-		| >{\raggedright\arraybackslash}X | r |
-		| >{\raggedright\arraybackslash}X | r |
-		| >{\raggedright\arraybackslash}X }
+\footnotesize
+\def\formGap{$\\\;\\$}
+\centerline{{\Large A{\small BBREVIATION} T{\small ABLE}}}\vspace{14pt}\par
+$\hMath{c}{\left.}{\right.}{$
+	{\tgbf\normalsize A}$\\$
+\begin{tabularx}{0.25\textwidth}{
+		| r |
+		| >{\raggedright\arraybackslash}X | }
 	\hline
-sups&			suppose						& asum&			assum(e)(ption)				& \\
-solus&			solution					& exe&			exercise					& becs&			because\\
-ele&			element(s)					& arb&			arbitrary					& suth&			such that\\
-othws&			otherwise					& notat&		notation(al)				& cond&			condition\\
-uniq&			unique						& exis&			exist(s)(ing)				& rev&			revers(e(s))(ed)(ing)\\
-exa&			example						& simlr&		similar(ly)					& algo&			algorithm\\
-induc&			induct(ion)(ive)			& optor&		operator					& recurly&		recursively\\
-seq&			sequence					& req&			require(s)(d)/requiring		& corres&		correspond(s)(ing)\\
-hypo&			hypothesis					& std&			standard					& -ec&			-ec(t)(tor)(tion)(tive)\\
-div&			div(ide)(ision)				& conveni&		convenience					& restr&		restrict(ion)(ive)(ing)\\
-stam&			statement					& ctrapos&		constrapositive				& ctradic&		contradict(s)(ion)\\
-dep&			dependen(t)(ce)				& liney&		linear(ly)					& linity&		linearity\\
-def&			definition					& closd&		closed under				& sp&			space\\
-val&			value						& len&			length						& disti&		distinct\\
-min&			mini(mal(ity))(mum)			& max&			maxi(mal(ity))(mum)			& add&			addi(tion)(tive)\\
-multi&			multipl(e)(icati-on/ve)		& assoc&		associa(tive)(tivity)		& distr&		distributive propert(ies)(ty)\\
-commu&			commut(es)(ing)(ativity)	& homo&			homogeneity					& inv&			inver(se)(tib-le/ility)\\
-id&				identity					& existns&		existence					& uniqnes&		uniqueness\\
-finide&			finite-dimensional			& fini&			finite						& infily&		infinitely\\
-bss&			basis						& bses&			bases						& $B_V$&		basis of $V$\\
-dim&			dimension(al)				& poly&			polynomial					& coeff&		coefficient\\
-deg&			degree						& deri&			derivative(s)				& diff&			differentia(l)(ting)(tion)\\
-inje&			injectiv(e)(ity)			& surj&			surjectiv(e)(ity)			& iso&			isomorph(ism)(ic)\\
-col&			column						& ent&			entr(y)(ies)				& wrto&			with respect to\\
-quotient&		quot						& trspose&		transpose					& trslate&		translate\\
-invar&			invariant					& invard&		invariant under				& invarsp&		invariant subspace\\
-eig-&			eigen-						& ch&			characteristic				& diag&			diagonal(iza-ble/ility/tion)\\
-trig&			triangular					& G disk(s)&	Gershgorin disk(s)			& &\\
-\hline
-\end{tabularx}
-\end{center}
-
+	add&			addi(tion)(tive)				\\
+	algo&			algorithm						\\
+	arb&			arbitrary						\\
+	assoc&			associa(tive)(tivity)			\\
+	asum&			assum(e)(ption)					\\
+	\hline
+\end{tabularx}\formGap
+	{\tgbf\normalsize B}$\\$
+\begin{tabularx}{0.2\textwidth}{
+		| r |
+		| >{\raggedright\arraybackslash}X | }
+	\hline
+	becs&			because							\\
+	bss&			basis							\\
+	bses&			bases							\\
+	$B_V$&			basis of $V$					\\
+	\hline
+\end{tabularx}\formGap
+	{\tgbf\normalsize C}$\\$
+\begin{tabularx}{0.3\textwidth}{
+		| r |
+		| >{\raggedright\arraybackslash}X | }
+	\hline
+	ch&				characteristic					\\
+	closd&			closed under					\\
+	commu&			commut(es)(ing)(ativity)		\\
+	cond&			condition						\\
+	coeff&			coefficient						\\
+	col&			column							\\
+	conveni&		convenience						\\
+	corres&			correspond(s)(ing)				\\
+	ctradic&		contradict(s)(ion)				\\
+	ctrapos&		constrapositive					\\
+	\hline
+\end{tabularx}\formGap
+	{\tgbf\normalsize D}$\\$
+\begin{tabularx}{0.28\textwidth}{
+		| r |
+		| >{\raggedright\arraybackslash}X | }
+	\hline
+	def&			definition						\\
+	deg&			degree							\\
+	dep&			dependen(t)(ce)					\\
+	deri&			derivative(s)					\\
+	diag&			diagonal(iza-ble/ility/tion)	\\
+	diff&			differentia(l)(ting)(tion)		\\
+	dim&			dimension(al)					\\
+	disti&			distinct						\\
+	distr&			distributive propert(ies)(ty)	\\
+	div&			div(ide)(ision)					\\
+	\hline
+\end{tabularx}\formGap
+	{\tgbf\normalsize E}$\\$
+\begin{tabularx}{0.28\textwidth}{
+		| r |
+		| >{\raggedright\arraybackslash}X | }
+	\hline
+	-ec&			-ec(t)(tor)(tion)(tive)		\\
+	eig-&			eigen-						\\
+	ele&			element(s)					\\
+	ent&			entr(y)(ies)				\\
+	exa&			example						\\
+	exe&			exercise					\\
+	exis&			exist(s)(ing)				\\
+	existns&		existence					\\
+	expr&			expression					\\
+	\hline
+\end{tabularx}\formGap
+$}\hMath{c}{\left.}{\right.}{$
+	{\tgbf\normalsize F}$\\$
+\begin{tabularx}{0.25\textwidth}{
+		| r |
+		| >{\raggedright\arraybackslash}X | }
+	\hline
+	factoriz&		factorizaion				\\
+	fini&			finite						\\
+	finide&			finite-dimensional			\\
+	\hline
+\end{tabularx}\formGap
+	{\tgbf\normalsize G}$\\$
+\begin{tabularx}{0.2\textwidth}{
+		| r |
+		| >{\raggedright\arraybackslash}X | }
+	\hline
+	G disk(s)&		Gershgorin disk(s)			\\
+	\hline
+\end{tabularx}\formGap
+	{\tgbf\normalsize H}$\\$
+\begin{tabularx}{0.2\textwidth}{
+		| r |
+		| >{\raggedright\arraybackslash}X | }
+	\hline
+	homo&			homogeneity					\\
+	hypo&			hypothesis					\\
+	\hline
+\end{tabularx}\formGap
+	{\tgbf\normalsize I}$\\$
+\begin{tabularx}{0.25\textwidth}{
+		| r |
+		| >{\raggedright\arraybackslash}X | }
+	\hline
+	induc&			induct(ion)(ive)			\\
+	id&				identity					\\
+	infily&			infinitely					\\
+	invar&			invariant					\\
+	invard&			invariant under				\\
+	invarsp&		invariant subspace			\\
+	inje&			injectiv(e)(ity)			\\
+	inv&			inver(se)(tib-le/ility)		\\
+	iso&			isomorph(ism)(ic)			\\
+	\hline
+\end{tabularx}\formGap
+	{\tgbf\normalsize J}$\\$
+\begin{tabularx}{0.2\textwidth}{
+		| r |
+		| >{\raggedright\arraybackslash}X | }
+	\hline
+%	\hline
+\end{tabularx}\formGap
+{\tgbf\normalsize K}$\\$
+\begin{tabularx}{0.2\textwidth}{
+		| r |
+		| >{\raggedright\arraybackslash}X | }
+	\hline
+%	\hline
+\end{tabularx}\formGap
+	{\tgbf\normalsize L}$\\$
+\begin{tabularx}{0.2\textwidth}{
+		| r |
+		| >{\raggedright\arraybackslash}X | }
+	\hline
+	liney&			linear(ly)				\\
+	linity&			linearity				\\
+	len&			length					\\
+	\hline
+\end{tabularx}\formGap
+	{\tgbf\normalsize M}$\\$
+\begin{tabularx}{0.28\textwidth}{
+		| r |
+		| >{\raggedright\arraybackslash}X | }
+	\hline
+	max&			maxi(mal(ity))(mum)\\
+	min&			mini(mal(ity))(mum)\\
+	multi&			multipl(e)(icati-on/ve)\\
+	\hline
+\end{tabularx}\formGap
+	{\tgbf\normalsize N}$\\$
+\begin{tabularx}{0.2\textwidth}{
+		| r |
+		| >{\raggedright\arraybackslash}X | }
+	\hline
+	notat&			notation(al)				\\
+	\hline
+\end{tabularx}\formGap
+	{\tgbf\normalsize O}$\\$
+\begin{tabularx}{0.2\textwidth}{
+		| r |
+		| >{\raggedright\arraybackslash}X | }
+	\hline
+	optor&			operator					\\
+	othws&			otherwise					\\
+	\hline
+\end{tabularx}\formGap
+$}\hMath{c}{\left.}{\right.}{$
+	{\tgbf\normalsize P}$\\$
+\begin{tabularx}{0.2\textwidth}{
+		| r |
+		| >{\raggedright\arraybackslash}X | }
+	\hline
+	poly&			polynomial					\\
+	\hline
+\end{tabularx}\formGap
+	{\tgbf\normalsize Q}$\\$
+\begin{tabularx}{0.2\textwidth}{
+		| r |
+		| >{\raggedright\arraybackslash}X | }
+	\hline
+	quotient&		quot						\\
+	\hline
+\end{tabularx}\formGap
+	{\tgbf\normalsize R}$\\$
+\begin{tabularx}{0.3\textwidth}{
+		| r |
+		| >{\raggedright\arraybackslash}X | }
+	\hline
+	recurly&		recursively					\\
+	rev&			revers(e(s))(ed)(ing)		\\
+	restr&			restrict(ion)(ive)(ing)		\\
+	req&			require(s)(d)/requiring		\\
+	\hline
+\end{tabularx}\formGap
+	{\tgbf\normalsize S}$\\$
+\begin{tabularx}{0.2\textwidth}{
+		| r |
+		| >{\raggedright\arraybackslash}X | }
+	\hline
+	seq&			sequence					\\
+	simlr&			similar(ly)					\\
+	solus&			solution					\\
+	sp&				space						\\
+	stam&			statement					\\
+	std&			standard					\\
+	sups&			suppose						\\
+	surj&			surjectiv(e)(ity)			\\
+	suth&			such that					\\
+	\hline
+\end{tabularx}\formGap
+	{\tgbf\normalsize T}$\\$
+\begin{tabularx}{0.2\textwidth}{
+		| r |
+		| >{\raggedright\arraybackslash}X | }
+	\hline
+	trig&			triangular\\
+	trslate&		translate\\
+	trspose&		transpose\\
+	\hline
+\end{tabularx}\formGap
+	{\tgbf\normalsize U}$\\$
+\begin{tabularx}{0.2\textwidth}{
+		| r |
+		| >{\raggedright\arraybackslash}X | }
+	\hline
+	uniq&			unique\\
+	uniqnes&		uniqueness\\
+	\hline
+\end{tabularx}\formGap
+	{\tgbf\normalsize V}$\\$
+\begin{tabularx}{0.2\textwidth}{
+		| r |
+		| >{\raggedright\arraybackslash}X | }
+	\hline
+	val&			value\\
+	\hline
+\end{tabularx}\formGap
+	{\tgbf\normalsize W}$\\$
+\begin{tabularx}{0.2\textwidth}{
+		| r |
+		| >{\raggedright\arraybackslash}X | }
+	\hline
+	wrto&			with respect to\\
+	\hline
+\end{tabularx}\formGap
+	{\tgbf\normalsize X}$\\$
+\begin{tabularx}{0.2\textwidth}{
+		| r |
+		| >{\raggedright\arraybackslash}X | }
+	\hline
+%	\hline
+\end{tabularx}\formGap
+	{\tgbf\normalsize Y}$\\$
+\begin{tabularx}{0.2\textwidth}{
+		| r |
+		| >{\raggedright\arraybackslash}X | }
+	\hline
+%	\hline
+\end{tabularx}\formGap
+	{\tgbf\normalsize Z}$\\$
+\begin{tabularx}{0.2\textwidth}{
+		| r |
+		| >{\raggedright\arraybackslash}X | }
+	\hline
+%	\hline
+\end{tabularx}\formGap
+$}$
 \clearpage
-}{}
 
 \begin{large}
 
