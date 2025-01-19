@@ -6,11 +6,11 @@
 \vspace{3pt}
 
 \ProblemBnoor[]{\Tips \,\,\,}[]{
-	\TextB{\tgsl\large\envFontDefault Sups $p\in\PoFi,\deg p\leqslant m$ and $p$ has at least $\Par{m+1}$ disti zeros.}
+	\TextB{\tgsl\large\envFontDefault Supp $p\in\PoFi,\deg p\leqslant m$ and $p$ has at least $\Par{m+1}$ disti zeros.}
 	\Blind{\Tips \,\,\,} \TextB{\tgsl\large\envFontDefault Then by the ctrapos of [4.12], 又 $\deg p=m,$ we conclude that $m<0.$ Hence $p=0.$}
 }\TextB{}
 \Or We show if $p$ has at least $m$ disti zeros, then either $p=0$ or $\deg p\geqslant m.$\TextB{}
-If $p=0$ then done. If not, then sups $p$ has exactly $n$ disti zeros $\lambda_1,\dots,\lambda_n.$\TextB{}
+If $p=0$ then done. If not, then supp $p$ has exactly $n$ disti zeros $\lambda_1,\dots,\lambda_n.$\TextB{}
 Becs $\exists\,!\,\alpha_i\geqslant 1,q\in\PoFi,$ and $q\neq 0,$ suth $p\Par{z}=\Sbra{\Par{z-\lambda_1}{^{\alpha_1}}\cdots\Par{z-\lambda_n}{^{\alpha_n}}}q\Par{z}.$\PfEnd\vspace{2pt}
 
 \ProblemBnoor[]{\Comment\,\,\,}[]{
@@ -24,14 +24,14 @@ would give a poly with some nonzero coeffs but infily many zeros. By {\TIPS}.\Pf
 \SepLine
 
 \BulletPointX\NoteFor{[4.8]} {\tgsl div algo for polys} \hfill[{\tgsc Another proof}]\TextB{\vspace{4pt}}
-Sups $\deg p\geqslant \deg s$. Then $\XPar{\underbrace{1, z,\dots, z^{\deg s-1}}_{\text{of\,len}\,\deg s},\underbrace{s,zs,\cdots,z^{\deg p-\deg s}s}_{\text{of\,len}\,\Par{\deg p-\deg s+1}}}$ is a bss of $\PoF{\deg p}.$\TextB{}
+Supp $\deg p\geqslant \deg s$. Then $\XPar{\underbrace{1, z,\dots, z^{\deg s-1}}_{\text{of\,len}\,\deg s},\underbrace{s,zs,\cdots,z^{\deg p-\deg s}s}_{\text{of\,len}\,\Par{\deg p-\deg s+1}}}$ is a bss of $\PoF{\deg p}.$\TextB{}
 Becs $q\in\PoFi,\exists\,!\,a_i,b_j\in\Fbb,$\TextB{}
 $q=a_0+a_1 z+\dots+a_{\deg s-1}z^{\deg s-1}+ b_0 s+b_1 zs +\dots+ b_{\deg p-\deg s}z^{\deg p-\deg s}s$\TextB{}
 $=\underbrace{a_0+a_1 z+\dots+a_{\deg s-1}z^{\deg s-1}}_{r}+s\underbrace{\XPar{b_0+b_1 z +\dots+ b_{\deg p-\deg s}z^{\deg p-\deg s}}}_{q}.$ Note that $r,q$ are uniq.\PfEnd[-16pt]
 \SepLine
 
 \BulletPointX\NoteFor{[4.11]}\;\;{\tgsl each zero of a poly corres to a deg-one factor;}\hfill[{\tgsc Another proof}]\TextB{\vspace{2pt}}
-First sups $p\Par{\lambda}=0.$ Write $p\Par{z}=a_0+a_1 z+\dots+a_m z^m,\exists\,!\,a_0,a_1,\dots,a_m\in\Fbb$ for all $z\in\Fbb.$\vspace{2pt}\TextB{}
+First supp $p\Par{\lambda}=0.$ Write $p\Par{z}=a_0+a_1 z+\dots+a_m z^m,\exists\,!\,a_0,a_1,\dots,a_m\in\Fbb$ for all $z\in\Fbb.$\vspace{2pt}\TextB{}
 Then $p\Par{z}=p\Par{z}-p\Par{\lambda}=a_1\Par{z-\lambda}+\dots+a_m\Par{z^m-\lambda^m}$ for all $z\in\Fbb.$\vspace{2pt}\TextB{}
 Hence $\forall k\in\Bra{1,\dots,m},z^k-\lambda^k=\Par{z-\lambda}\Par{ z^{k-1}\lambda^0+ z^{k-2}\lambda^1+\dots+z^{k-\Par{j+1}}\lambda^j+\dots+z\lambda^{k-2}+z^0\lambda^{k-1}}.$\vspace{4pt}\TextB{}
 Thus $p\Par{z}=\sum_{j=1}^m a_j \Par{z-\lambda}\sum_{i=1}^k \lambda^{i-1}z^{k-i}=\Par{z-\lambda}\sum_{j=1}^m a_j\sum_{i=1}^k \lambda^{i-1}z^{k-i}=\Par{z-\lambda}q\Par{z}.$\PfEnd
@@ -41,7 +41,7 @@ Thus $p\Par{z}=\sum_{j=1}^m a_j \Par{z-\lambda}\sum_{i=1}^k \lambda^{i-1}z^{k-i}
 For any $w\in\Cbb,k\in\Nbp,$ by polar coordinates, $\exists\,r\geqslant 0,\theta\in\Rbb,r\Par{\cos\theta + \i \sin\theta} = w$.\vspace{2pt}\TextB{}
 By De Moivre' theorem, $w^k=\Sbra{r\Par{\cos\theta +\i\sin \theta}}{^k}=r^k\Par{\cos k\theta + \i \sin k\theta}$.\vspace{2pt}\TextB{}
 Hence $\BigPar{r^{1/k}\Par{\cos\frac{\;\theta\;}{k} +\i\sin\frac{\;\theta\;}{k}}}{^k}=w$. Thus every complex number has a {\tgsl $k^{th}$ root}.\vspace{6pt}\TextB{}
-Sups a nonconst $p\in\PoCi$ with highest-order nonzero term $c_m z_m.$\vspace{3pt}\TextB{}
+Supp a nonconst $p\in\PoCi$ with highest-order nonzero term $c_m z_m.$\vspace{3pt}\TextB{}
 Then $\aMid{p\Par{z}}\rightarrow\infty$ as $\aMid{z}\rightarrow\infty$ \XPar{ becs $\Frac{\aMid{p\Par{z}}}{\aMid{z_m}}\rightarrow\aMid{c_m}$ as $\aMid{z}\rightarrow\infty$ }.\vspace{3pt}\TextB{}
 \vspace{3pt}Thus the continuous function $z\rightarrow\aMid{p\Par{z}}$ has a global min at some point $\zeta\in\Cbb.$\TextB{}
 \vspace{3pt}To show $p\Par{\zeta} = 0$, asum $p\Par{\zeta}\neq 0$. Define $q\in\PoCi$ by $q\Par{z}=\Frac{p\Par{z+\zeta}}{p\Par{\zeta}}.$\TextB{}
@@ -71,20 +71,20 @@ Now letting $t=1/\Par{2c}$, we get $\aMid{q\Par{t\beta}}<1$. Ctradic. Hence $p\P
 \SepLine
 
 \ProblemBnoor{\hypertarget{4O4e3}{4E 4.3}}{
-	\TextB{Sups $\Fbb=\Cbb,\varphi\in V\apostrophe.$ Define $σ:V\rightarrow\Rbb$ by $\sigma\Par{v} = \Real\varphi\Par{v}$ for each $v\in V.$\vspace{4pt}}
+	\TextB{Supp $\Fbb=\Cbb,\varphi\in V\apostrophe.$ Define $σ:V\rightarrow\Rbb$ by $\sigma\Par{v} = \Real\varphi\Par{v}$ for each $v\in V.$\vspace{4pt}}
 	\TextB{Show $\varphi\Par{v}=\sigma\Par{v}-\i\sigma\Par{\i v}$ for all $v\in V.$\vspace{2pt}}
 }Notice that \,$\varphi\Par{v}=\Real\varphi\Par{v}+\i\,\IMAGINARY\,\varphi\Par{v}=\sigma\Par{v}+\i\,\IMAGINARY\,\varphi\Par{v}.$\parSol{}
 又 $\Real\varphi\Par{\i\, v}=\REAL\BigPar{\i\,\varphi\Par{v}}=-\IMAGINARY\,\varphi\Par{v}=\sigma\Par{\i\,v}.$ Hence $\varphi\Par{v}=\sigma\Par{v}-\i\,\sigma\Par{\i\,v}.$\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{4O4}{4}}{
-	\TextN{Sups $m,n\in\Nbp$ with $m\leqslant n,\;\lambda_1,\dots,\lambda_m\in\Fbb.$}
+	\TextN{Supp $m,n\in\Nbp$ with $m\leqslant n,\;\lambda_1,\dots,\lambda_m\in\Fbb.$}
 	\TextN{Prove $\exists\,p\in\PoFi,\deg p = n,$ the zeros of $\,p\,$ are $\lambda_1,\dots,\lambda_m.$\vspace{3pt}}
 }Let $p\Par{z}=\Par{z-\lambda_1}^{{\envFontSmall[\scriptsize]n-\Par{m-1}}}\Par{z-\lambda_2}\cdots\Par{z-\lambda_m}.$\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{4O5}{5}}{
-	\TextN{Sups $m\in\Nbb,$ and $z_1,\dots,z_{m+1}$ are disti in $\Fbb,$ and $w_1,\dots,w_{m+1}\in\Fbb.$}
+	\TextN{Supp $m\in\Nbb,$ and $z_1,\dots,z_{m+1}$ are disti in $\Fbb,$ and $w_1,\dots,w_{m+1}\in\Fbb.$}
 	\TextN{Prove $\exists\,!\,p\in\PoF{m},p\Par{z_k}=w_k$ for each $k\in\Bra{1,\dots, m+1}.$}
 }\par\quad
 Define $T\in\Lm[\BigPar]{\PoF{m},\Fbb^{m+1}}$ by $Tq=\BigPar{q\Par{z_1},\dots,q\Par{z_m},q\Par{z_{m+1}}}.$\vspace{4pt}\par\quad
@@ -107,30 +107,30 @@ By (4E 3.C.17) 又 $\dim\PoF{m}=\dim\Fbb^{m+1};\;$ \OR By (3.F.32); $T$ is inv.\
 \SepLine
 
 \ProblemN{\hypertarget{4O2}{2}}{
-	\TextN{Sups $m\in\Nbp$. Is the set $U=\zeroSubs\cup\Bra{p\in\PoFi:\deg p = m}$ a subsp of $\PoFi$?}
+	\TextN{Supp $m\in\Nbp$. Is the set $U=\zeroSubs\cup\Bra{p\in\PoFi:\deg p = m}$ a subsp of $\PoFi$?}
 }$x^m,x^m+x^{m-1}\in U$ \,\,but\,\, $\Deg\Sbra{\Par{x^m+x^{m-1}}-\Par{x^m}}\neq m\Rightarrow \Par{x^m+x^{m-1}}-\Par{x^m}\not\in U.$\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{4O3}{3}}{
-	\TextN{Sups $m\in\Nbp$. Is the set $U=\zeroSubs\cup\Bra{p\in\PoFi:2\;\mmid\,\deg p}$ a subsp of $\PoFi$?}
+	\TextN{Supp $m\in\Nbp$. Is the set $U=\zeroSubs\cup\Bra{p\in\PoFi:2\;\mmid\,\deg p}$ a subsp of $\PoFi$?}
 }$x^2,x^2+x\in U$ \,\,but\,\, $\Deg\Sbra{\Par{x^2+x}-\Par{x^2}}$ is odd and hence $\Par{x^2+x}-\Par{x^2}\not\in U.$\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{4O6}{6}}{
-	\TextN{Sups nonzero $p\in\PoF{m}$ has deg $m.$ Prove}
+	\TextN{Supp nonzero $p\in\PoF{m}$ has deg $m.$ Prove}
 	\TextN{[P] $p$ has $m$ disti zeros $\Longleftrightarrow p$ and its deri $p\apostrophe$ have no common zeros [Q].}
 }\par\quad
-(a) Sups $p$ has $m$ disti zeros. And $\deg p=m.$ By [4.14], $\exists\,!\,c,\lambda_i\in\Rbb,p\Par{z}=c\Par{z-\lambda_1}\cdots\Par{z-\lambda_m}.$\par\vspace{2pt}\quad\Ha
+(a) Supp $p$ has $m$ disti zeros. And $\deg p=m.$ By [4.14], $\exists\,!\,c,\lambda_i\in\Rbb,p\Par{z}=c\Par{z-\lambda_1}\cdots\Par{z-\lambda_m}.$\par\vspace{2pt}\quad\Ha
 If $m=0,$ then $p=c\neq 0\Rightarrow p$ has no zeros, and $p\apostrophe=0,$ done.\par\quad\Ha
 If $m=1,$ then $p\Par{z}=c\Par{z-\lambda_1},$ and $p\apostrophe=c$ has no zeros, done.\par\vspace{2pt}\quad\Ha
 For each $j\in\Bra{1,\dots,m}$, let $q_j\in\PoF{m-1}$ be suth ${p\Par{z}}={\Par{z-\lambda_j}}q_j\Rightarrow q_j\Par{\lambda_j}\neq 0.$\par\vspace{2pt}\quad\Ha
 Now $p\apostrophe\Par{z}=\Par{z-\lambda_j}q_j\apostrophe\Par{z}+q_j\Par{z}\Rightarrow p\apostrophe\Par{\lambda_j}=q_j\Par{\lambda_j}\neq 0,$ as desired.\par\vspace{6pt}\quad\Ha
 \Or We show ${}^{\neg}Q\Rightarrow{}{^\neg}P$:\par\quad\Ha
-Sups $p\Par{z}=\Par{z-\lambda}q\Par{z},\;p\apostrophe\Par{z}=\Par{z-\lambda}r\Par{z}.$ 又 $p\apostrophe\Par{z}=\Par{z-\lambda}q\apostrophe\Par{z}+q\Par{z}.$\vspace{2pt}\par\quad\Ha
+Supp $p\Par{z}=\Par{z-\lambda}q\Par{z},\;p\apostrophe\Par{z}=\Par{z-\lambda}r\Par{z}.$ 又 $p\apostrophe\Par{z}=\Par{z-\lambda}q\apostrophe\Par{z}+q\Par{z}.$\vspace{2pt}\par\quad\Ha
 Now $p\apostrophe\Par{\lambda}=q\Par{\lambda}=0\Rightarrow q\Par{z}=\Par{z-\lambda}s\Par{z},p\Par{z}=\Par{z-\lambda}{^2}s\Par{z}.$\vspace{2pt}\par\quad\Ha
 Hence $p$ has strictly less than $m$ disti zeros.\par\vspace{6pt}\quad
 (b) We prove ${}^{\neg}P\Rightarrow{}{^\neg}Q$:\par\quad\Hb
-Becs nonzero $p\in\PoF{m},$ we sups $\lambda_1,\dots,\lambda_M$ are all the disti zeros of $p,$ where $M<m.$\vspace{2pt}\par\quad\Hb
+Becs nonzero $p\in\PoF{m},$ we supp $\lambda_1,\dots,\lambda_M$ are all the disti zeros of $p,$ where $M<m.$\vspace{2pt}\par\quad\Hb
 By Pigeon Hole Principle, $\exists\,\lambda_k$ suth $p\Par{z}=\Par{z-\lambda_k}{^{2}}q\Par{z}$ for some $q\in\PoFi.$\vspace{3pt}\par\quad\Hb
 Hence $p\apostrophe\Par{z}=2\Par{z-\lambda_k}q\Par{z}+\Par{z-\lambda_k}{^2}q\apostrophe\Par{z}\Rightarrow p\apostrophe\Par{\lambda_k}=0=p\Par{\lambda_k}.$\PfEnd
 \SepLine
@@ -139,7 +139,7 @@ Hence $p\apostrophe\Par{z}=2\Par{z-\lambda_k}q\Par{z}+\Par{z-\lambda_k}{^2}q\apo
 	\TextN{Prove every $p\in\PoRi$ of odd deg has a zero.}
 }\par\quad
 Using the nota and proof of [4.17]. $\deg p=2M+m$ is odd $\Rightarrow m$ is odd. Hence $\lambda_1$ exis.\PfEnd\vspace{6pt}\quad
-\Or Using calculus only. Sups $p\in\PoF{m},\deg p=m,m$ is odd.\par\quad
+\Or Using calculus only. Supp $p\in\PoF{m},\deg p=m,m$ is odd.\par\quad
 Let $p\Par{x}=a_0+a_1 x+\dots+a_m x^m.$ Then $a_m\neq 0.$ Denote $\aMid{a_m}{^{-1}}a_m$ by $\delta.$\par\vspace{3pt}\quad
 Write $p\Par{x}=x^m\XPar{\Frac{a_0}{x^m}+\Frac{a_1}{x^{m-1}}+\dots+\Frac{a_{m-1}}{x}+a_m}.$\par\vspace{5pt}\quad
 Thus $p\Par{x}$ is continuous, and $\lim\limits_{x\rightarrow -\infty}p\Par{x}=-\delta\infty\,;\quad\lim\limits_{x\rightarrow \infty}p\Par{x}=\delta\infty.$\par\quad
@@ -147,12 +147,12 @@ Hence we conclude that $p$ has at least one real zero.\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{4O9}{9}}{
-	\TextN{Sups $p\in\PoCi$. Define $q:\Cbb\rightarrow\Cbb\,$ by $q\Par{z} = p\Par{z}\overline{p\Par{\overline z}}$. Prove $q\in\PoRi$.}
+	\TextN{Supp $p\in\PoCi$. Define $q:\Cbb\rightarrow\Cbb\,$ by $q\Par{z} = p\Par{z}\overline{p\Par{\overline z}}$. Prove $q\in\PoRi$.}
 }\par\quad
 \NOTICE that by [4.5], $\overline z{^n}=\overline{z^n}.$\par\quad
-Sups $q\Par{z}=a_n z^n+\dots+a_1 z+a_0\Rightarrow q\Par{\overline z}=a_n \overline z{^n}+\dots+a_1 \overline z+a_0\Rightarrow \overline{q\Par{\overline z}}=\overline{a_n}z^n+\dots+\overline{a_1}z+\overline{a_0}.$\vspace{8pt}\par\quad
+Supp $q\Par{z}=a_n z^n+\dots+a_1 z+a_0\Rightarrow q\Par{\overline z}=a_n \overline z{^n}+\dots+a_1 \overline z+a_0\Rightarrow \overline{q\Par{\overline z}}=\overline{a_n}z^n+\dots+\overline{a_1}z+\overline{a_0}.$\vspace{8pt}\par\quad
 Note that $q\Par{z}=p\Par{z}\overline{p\Par{\overline z}}=\overline{p\Par{\overline z}}p\Par{z}=\overline{p\Par{\overline z}\overline{\overline{p\Par{\overline z}}}}=\overline{q\Par{\overline z}}.$ Hence for each $a_k,\overline{a_k}=a_k\Rightarrow a_k\in\Rbb.$\PfEnd\vspace{14pt}\quad
-\Or Sups $p\Par{z}=a_m z^m+\dots+a_1z+a_0.$ Now $\overline{p\Par{\overline z}}=\overline{a_m} z^m+\dots+\overline{a_1}z+\overline{a_0}.$\vspace{4pt}\par\quad
+\Or Supp $p\Par{z}=a_m z^m+\dots+a_1z+a_0.$ Now $\overline{p\Par{\overline z}}=\overline{a_m} z^m+\dots+\overline{a_1}z+\overline{a_0}.$\vspace{4pt}\par\quad
 \NOTICE that $q\Par{z}=p\Par{z}\overline{p\Par{\overline z}}=\sum_{k=0}^2m\XPar{\sum_{i+j=k}a_i\overline{a_j}}z^k.$\vspace{4pt}\par\quad
 \NOTICE that by [4.5], $z-\overline z=2\Par{\IMAGINARY\,z}\Rightarrow z=\overline z+2\Par{\IMAGINARY\,z}.$ So that $z=\overline z\Longleftrightarrow\IMAGINARY\,z=0\Longleftrightarrow z\in\Rbb.$\vspace{4pt}\par\quad
 Now for each $k\in\Bra{0,\dots,2m},\overline{\sum_{i+j=k}a_i\overline{a_j}}=\sum_{i+j=k}\overline{a_i\overline{a_j}}=\sum_{i+j=k}{a_j}\overline{a_i}=\sum_{i+j=k}a_i\overline{a_j}\in\Rbb.$\PfEnd
@@ -183,12 +183,12 @@ $T\Par{p+\lambda q}\Par{x}=\,${\FontSmall$\hMath{l}{\left\{}{\right|}{
 \SepLine
 
 \ProblemN{\hypertarget{4O11}{11}}{
-	\TextNL{Sups $p\in\PoFi$ with $p\neq 0$. Let $U=\Bra{pq:q\in\PoFi}$.}
+	\TextNL{Supp $p\in\PoFi$ with $p\neq 0$. Let $U=\Bra{pq:q\in\PoFi}$.}
 	(a) \TextNL{Show $\dim\PoFi\XSlash U = \deg p$.}
 	(b) \TextNL{Find a bss of $\PoFi\XSlash U$.}
 }\NOTICE that $pq\neq p\circ q,$ see (4E 3.A.10).\par\quad
 $U$ is a subsp of $\PoFi$ becs $\forall s_1,s_2\in\PoFi,\lambda\in\Fbb,ps_1+\lambda ps_2=p\Par{s_1+\lambda s_2}\in U.$\par\vspace{3pt}\quad
-If $\deg p=0,$ then $U=\PoFi,\PoFi\XSlash U=\Bra{0},$ with the uniq bss $\Par{}.$ Sups $\deg p\geqslant 1.$\par\vspace{6pt}\quad
+If $\deg p=0,$ then $U=\PoFi,\PoFi\XSlash U=\Bra{0},$ with the uniq bss $\Par{}.$ Supp $\deg p\geqslant 1.$\par\vspace{6pt}\quad
 (a) By [4.8], $\forall s\in\PoFi,\exists\,!\,r\in\PoF{\deg p-1},q\in\PoFi\,\Sbra{\,\exists\,!\,pq\in U\,},s=\Par{p}q+\Par{r}.$\vspace{2.5pt}\par\quad\Ha
 Thus $\PoFi=U\oplus\PoF{\deg p-1}.$ By the \NOTEFOR\;[3.91] in (3.E), $\PoFi\XSlash U$ and $\PoF{\deg p-1}$ are iso.\par\vspace{4.5pt}\quad\Ha
 \Or Define $R:\PoFi\rightarrow\PoF{\deg p-1}$ by $R\Par{s}=r$ for all $s\in\PoF.$ We show $R$ is liney.\vspace{2pt}\par\quad\Ha
@@ -206,7 +206,7 @@ Thus $\Par{1+U,z+U,\dots,z^{\deg p-1}+U}$ can be a bss of $\PoFi\XSlash U.$\PfEn
 \SepLine
 
 \ProblemN{\hypertarget{4O10}{10}}{
-	\TextNL{Sups $m\in\Nbb,p\in\PoC{m}$ is suth $p\Par{x_k}\in\Rbb$ for each of disti $x_0,x_1,\dots,x_m\in\Rbb.$}
+	\TextNL{Supp $m\in\Nbb,p\in\PoC{m}$ is suth $p\Par{x_k}\in\Rbb$ for each of disti $x_0,x_1,\dots,x_m\in\Rbb.$}
 	\TextNL{Prove $p\in\PoRi$.}
 }\par\quad
 By {\TIPS} and Exe (5), $\exists\,!\,q\in\PoR{m}$ suth $q\Par{x_k}=p\Par{x_k}.$ Hence $p=q.$\PfEnd\vspace{6pt}\quad
@@ -217,7 +217,7 @@ Then $\Par{q-p}$ has $\Par{m+1}$ zeros, while $\Par{q-p}\in\PoC{m}$. By {\TIPS},
 \SepLine
 
 \ProblemBnoor{\hypertarget{4O4e13}{4E 4 13}}{
-	\TextB{Sups nonconst $p,q\in\PoCi$ have no common zeros. Let $m = \deg p$, $n = \deg q$.\vspace{3pt}}
+	\TextB{Supp nonconst $p,q\in\PoCi$ have no common zeros. Let $m = \deg p$, $n = \deg q$.\vspace{3pt}}
 	\TextB{Define $T:\PoC{n-1}\times\PoC{m-1}\rightarrow\PoC{m+n-1}$ by $T\Par{r, s} = rp + sq.$ Prove $T$ is iso.\vspace{3pt}}
 	\Corollary \,\,\,\TextB{$\exists\,!\,r\in\PoC{n-1},s\in\PoC{m-1}$ suth $rp + sq = 1.$}
 }\par\quad
@@ -225,7 +225,7 @@ $T$ is liney becs $\forall\,r_1,r_2\in\PoC{n-1},s_1,s_2\in\PoC{m-1},\lambda\in\F
 $T\BigPar{\Par{r_1,s_1}+\lambda\Par{r_2,s_2}}=T\Par{r_1+\lambda r_2,s_1+\lambda s_2}=\Par{r_1+\lambda r_2}p+\Par{s_1+\lambda s_2}q=T\Par{r_1,s_1}+\lambda T\Par{r_2,s_2}.$\par\vspace{6pt}\quad
 Let $\lambda_1,\dots,\lambda_M$ and $\mu_1,\dots,\mu_N$ be the disti zeros of $p$ and $q$ respectly. \NOTICE that $M\leqslant m,N\leqslant n.$\vspace{2pt}\par\quad
 Note that the ctrapos of [4.13], $M=0\Longleftrightarrow m=0\Rightarrow s=0\Longleftrightarrow r=0 \Leftarrow n=0\Longleftrightarrow N=0.$\vspace{2pt}\par\quad
-Now sups $M,N\geqslant 1.$ We show $s=0.$ Showing $r=0$ is almost the same.\vspace{2pt}\par\quad
+Now supp $M,N\geqslant 1.$ We show $s=0.$ Showing $r=0$ is almost the same.\vspace{2pt}\par\quad
 Write $p\Par{z}=a\Par{z-\lambda_1}{^{\alpha_1}}\cdots\Par{z-\lambda_M}{^{\alpha_M}}.$ \BigPar{ $\exists\,!\,\alpha_j\geqslant 1,a\in\Fbb.$ } Let $\max\!\Bra{\alpha_1,\dots,\alpha_M}=A.$\vspace{2pt}\par\quad
 For each $D\in\Bra{0,1,\dots,A-1},$ let $I_{D,\alpha}=\Bra{{\gamma_{D,1}},\dots,{\gamma_{D,J}}}$ be suth each $\alpha_{\gamma_{D,j}}\geqslant D+1.$\vspace{2pt}\par\quad
 Note that $I_{A-1,\alpha}\subseteq \cdots\subseteq I_{0,\alpha}=\Bra{1,\dots,M}.$ Becs $rp+sq=0\Rightarrow\Par{rp+sq}{^{\SmallPar{k}}}=0$ for all $k\in\Nbp.$\vspace{2pt}\par\quad
@@ -246,7 +246,7 @@ Hence we write $s\Par{z}=\XPar{\Par{z-\lambda_1}{^{\alpha_1}}\cdots\Par{z-\lambd
 Thus by {\TIPS}, $s=0.$ Following the same pattern, we conclude that $r=0.$\vspace{2pt}\par\quad
 Hence $T$ is inje. And $\Dim\BigPar{\PoC{n-1}\times\PoC{m-1}}=\dim\PoC{m+n-1}\Rightarrow T$ is surj. Thus $T$ is iso.\PfEnd
 \SepLine\pagebreak
-\Comment\,\,\, We now prove the stam that marked by $\Par{\Delta}$ above.\vspace{6pt}\par
+\Comment\,\,\, We now prove the stmt that marked by $\Par{\Delta}$ above.\vspace{6pt}\par
 \ProblemN{L1:}{
 	\TextB{Prove $\forall p,q\in\PoFi,k\in\Nbp,\Par{pq}{^{\SmallPar{k}}}=\mathC_{k}^k p{^{\SmallPar{k}}}q{^{\SmallPar{0}}}+\dots+\mathC_{k}^j p{^{\SmallPar{j}}}q{^{\SmallPar{k-j}}}+\dots+\mathC_{k}^0 p{^{\SmallPar{0}}}q{^{\SmallPar{k}}}.$}
 }\par\quad
@@ -262,9 +262,9 @@ Hence $\Par{pq}{^{\SmallPar{k}}}=\mathC_{k}^0{p{^{\SmallPar{0}}}q{^{\SmallPar{k}
 \SepLine
 
 \ProblemN{L2:}{
-	\TextB{Sups $p\Par{z}=\Par{z-\lambda}{^\alpha}q\Par{z}$ and $\alpha\in\Nbp.$ Prove ${p{^{\SmallPar{\alpha-1}}}}\Par{\lambda}=0.$}
+	\TextB{Supp $p\Par{z}=\Par{z-\lambda}{^\alpha}q\Par{z}$ and $\alpha\in\Nbp.$ Prove ${p{^{\SmallPar{\alpha-1}}}}\Par{\lambda}=0.$}
 }\par\quad
-Sups $p\in\PoFi.$ Write $p\Par{z}=\Par{z-\lambda}{^A}q\Par{z},$ where $A\in\Nbp,q\Par{\lambda}\neq 0.$\vspace{2pt}\par\quad
+Supp $p\in\PoFi.$ Write $p\Par{z}=\Par{z-\lambda}{^A}q\Par{z},$ where $A\in\Nbp,q\Par{\lambda}\neq 0.$\vspace{2pt}\par\quad
 We use induc to show for all $\alpha\in\Bra{1,\dots,A},{p{^{\SmallPar{\alpha-1}}}}\Par{\lambda}=0.$\vspace{2pt}\par\quad
 (i) $\alpha=1.$ $p{^{\SmallPar{0}}}\Par{\lambda}=0.$\par\quad\Endi
 (ii) $2\leqslant\alpha\leqslant A.$ Asum $p{^{\SmallPar{a-2}}}\Par{\lambda}=0$ for all $a\in\Bra{1,\dots,\alpha}.$\par\quad\Hii
@@ -278,18 +278,18 @@ Becs $p{^{\SmallPar{\alpha-1}}}\Par{z}=\XSbra{\mathC_{\alpha-1}^{\alpha-1}\Par{z
 
 \vfill
 \BulletPointX\NoteForSmall{[5.6]}\TextB{}
-More generally, sups we do not know whether $V$ is finide. We show $(a)\Longleftrightarrow(b).$\TextB{}
-Sups (a) $\lambda$ is an eigval of $T$ with an eigvec $v.$ Then $\Par{T-\lambda I}v=0.$\TextB{}
+More generally, supp we do not know whether $V$ is finide. We show $(a)\Longleftrightarrow(b).$\TextB{}
+Supp (a) $\lambda$ is an eigval of $T$ with an eigvec $v.$ Then $\Par{T-\lambda I}v=0.$\TextB{}
 Hence we get (b), $\Par{T-\lambda I}$ is not inje. And then (d), $\Par{T-\lambda I}$ is not inv.\TextB{}
 But (d) $\Rightarrow$ (b) fails, becs $S$ is not inv $\Longleftrightarrow S$ is not inje \OR $S$ is not surj.\par
 \SepLine
 
 %\BulletPointX\NoteFor{[5.10]} {\normalsize liney indep eigvecs}\TextB{}
-%\TextB{Sups $T\in\Lm{V}.$ Prove every list of eigvecs of $T$ corres to disti eigvals is liney indep.}
+%\TextB{Supp $T\in\Lm{V}.$ Prove every list of eigvecs of $T$ corres to disti eigvals is liney indep.}
 %\Solution \Or Another Proof.\TextB{}
-%Sups the desired result is false. Then ( $m\neq 1$ becs eigvecs are nonzero )\TextB{}
+%Supp the desired result is false. Then ( $m\neq 1$ becs eigvecs are nonzero )\TextB{}
 %$\,\exists$ smallest $m>1$ so that $\,\exists\,\Par{v_1,\dots,v_m}$ linely depe eigvecs of $T$ corres to disti eigvals $\lambda_1,\dots,\lambda_m$ of $T.$\TextB{}
-%Sups $a_1 v_1+\dots+a_{m-1}v_{m-1}+a_m v_m=0.$ Then $a_j\neq 0$ for each $j$. ( becs the min of $m$) \TextB{}
+%Supp $a_1 v_1+\dots+a_{m-1}v_{m-1}+a_m v_m=0.$ Then $a_j\neq 0$ for each $j$. ( becs the min of $m$) \TextB{}
 %Apply $T - \lambda_m I$ to both sides, now we get $a_1 (\lambda_1 - \lambda_m )v_1 + \dots + a_{m-1}(\lambda_{m-1} - \lambda_m )v_{m-1} = 0.$\TextB{}
 %Thus $(v_1 ,\dots, v_{m-1})$ of len $(m-1)$ is linely depe eigvecs corres to disti eigvals.\TextB{}
 %Ctradic the min of $m.$\PfEnd
@@ -297,18 +297,18 @@ But (d) $\Rightarrow$ (b) fails, becs $S$ is not inv $\Longleftrightarrow S$ is 
 
 
 \BulletPointX\Tips \,\,\,For $T_1,\dots,T_m\in\Lm{V}$:\TextB{\vspace{-2pt}}
-(a) Sups $T_1,\dots,T_m$ are all inje. Then $\Par{T_1\circ\cdots\circ T_m}$ is inje.\TextB{}
-(b) Sups $\Par{T_1\circ\cdots\circ T_m}$ is not inje. Then at least one of $T_1,\dots,T_m$ is not inje.\TextB{}
+(a) Supp $T_1,\dots,T_m$ are all inje. Then $\Par{T_1\circ\cdots\circ T_m}$ is inje.\TextB{}
+(b) Supp $\Par{T_1\circ\cdots\circ T_m}$ is not inje. Then at least one of $T_1,\dots,T_m$ is not inje.\TextB{}
 (c) At least one of $T_1,\dots,T_m$ is not inje $\nRightarrow$ $\Par{T_1\circ\cdots\circ T_m}$ is not inje.\TextB{}
 \Hc\Example\,\, In infinide only. Let $V=\Fbb^\infty.$\TextE{}
 \;\;\,$\MathRightBrace{l}{$ Let $S$ be the backward shift \Par{ surj but not inje }$\\$ Let $T$ be the \,\,\,\,forward shift \Par{ inje but not surj }$}\Rightarrow$ Then $ST=I.$\PfEnd
 \SepLine\pagebreak
 
-\BulletPointX\NoteForSmall{[5.2]}\,\,\,Sups $T\in\Lm{V}.$ Then $U$ is invarsp of $V$ under $T\Longleftrightarrow\range T\mmid_U\subseteq U.$
+\BulletPointX\NoteForSmall{[5.2]}\,\,\,Supp $T\in\Lm{V}.$ Then $U$ is invarsp of $V$ under $T\Longleftrightarrow\range T\mmid_U\subseteq U.$
 \SepLine
 
 \ProblemB{
-	\TextB{Sups $V$ is finide, $T\in\Lm{V},$ and $U$ is invarsp of $\,V$ under $T.$}
+	\TextB{Supp $V$ is finide, $T\in\Lm{V},$ and $U$ is invarsp of $\,V$ under $T.$}
 	\TextB{Prove there exis invarsp $W$ of dimension $\dim V-dim U.$}
 }\par\quad
 Using the \NOTEFOR\;[3.88,90,91]. Define the eraser $S.$ Now $V=\range S\oplus U.$\par\quad
@@ -341,16 +341,16 @@ We have $x\in X\Rightarrow TE_2\Par{x}\in X\Rightarrow T{x}-TE_1\Par{x}\in X\Rig
 \SepLine
 
 \ProblemB[]{
-	\TextB{Sups $T\in\Lm{V}$ and $U$ is invarsp of $V$ under $T.$}
-	\TextB{Sups $\lambda_1,\dots,\lambda_m$ are the disti eigvals of $T$ corres eigvecs $v_1,\dots,v_m.$}
+	\TextB{Supp $T\in\Lm{V}$ and $U$ is invarsp of $V$ under $T.$}
+	\TextB{Supp $\lambda_1,\dots,\lambda_m$ are the disti eigvals of $T$ corres eigvecs $v_1,\dots,v_m.$}
 }
 \ProblemB{
 	\TipsN{1}\,\,\TextB{Prove $v_1+\dots+v_m\in U\Longleftrightarrow$ each $v_k\in U.$}
 }\par\quad
-Sups each $v_k\in U.$ Then becs $U$ is a subsp, $v_1+\dots+v_m\in U.$\par\quad
-Define the stam $P\Par{k}:$ if $v_1+\dots+v_k\in U,$ then each $v_j\in U.$ We use induc on $m.$\par\quad
+Supp each $v_k\in U.$ Then becs $U$ is a subsp, $v_1+\dots+v_m\in U.$\par\quad
+Define the stmt $P\Par{k}:$ if $v_1+\dots+v_k\in U,$ then each $v_j\in U.$ We use induc on $m.$\par\quad
 (i) For $k=1,$ $v_1\in U.$\par\quad\Endi
-(ii) For $2\leqslant k\leqslant m.$ Asum $P\Par{k-1}$ holds. Sups $v=v_1+\dots+v_k\in U.$\par\quad\Hii
+(ii) For $2\leqslant k\leqslant m.$ Asum $P\Par{k-1}$ holds. Supp $v=v_1+\dots+v_k\in U.$\par\quad\Hii
 Then $Tv=\lambda_1v_1+\dots+\lambda_k v_k\in U\Longrightarrow Tv-\lambda_k v=\Par{\lambda_1-\lambda_k}v_1+\dots+\Par{\lambda_{k-1}-\lambda_k}v_{k-1}\in U.$\par\quad\Hii
 For each $j\in\Bra{1,\dots,k-1},\lambda_j-\lambda_{k}\neq 0\Rightarrow\Par{\lambda_j-\lambda_k}v_j=v_j'$ is an eigvec of $T$ corres $\lambda_j.$\par\quad\Hii
 By asum, each $v_j'\in U.$ Thus $v_1,\dots,v_{k-1}\in U.$ So that $v_k=v-v_1-\dots-v_{k-1}\in U.$\PfEnd
@@ -366,7 +366,7 @@ For each $k\in\Bra{2,\dots,n},\;\BigPar{\Par{U\cap E_1}+\dots+\Par{U\cap E_{k-1}
 \SepLine[0pt][\Blind{\BulletPointX} ]
 
 \ProblemB{
-	\TipsN{3}\,\,\TextB{Sups $W$ is a nonzero invarsp of $V$ under $T.$ If $\dim V=m\geqslant 1.$}
+	\TipsN{3}\,\,\TextB{Supp $W$ is a nonzero invarsp of $V$ under $T.$ If $\dim V=m\geqslant 1.$}
 	\Blind{\TipsN{3}\,\,}\TextB{Prove $W=\Span{v_{\alpha_1},\dots,v_{\alpha_A}}$ for some disti $\alpha_1,\dots,\alpha_A\in\Bra{1,\dots,m}.$}
 }\par\quad
 Each $\Span{v_{\alpha_1},\dots,v_{\alpha_A}}$ is invard $T.$\par\quad
@@ -379,14 +379,14 @@ Thus $U=\Par{U\cap E_1}\oplus\cdots\oplus\Par{U\cap E_m}=E_{\alpha_1}\oplus\cdot
 \pagebreak
 
 \ProblemN[]{\hypertarget{5A1}{1}}{
-	\TextN{Sups $T\in\Lm{V}$ and $U$ is a subsp of $V$.}
+	\TextN{Supp $T\in\Lm{V}$ and $U$ is a subsp of $V$.}
 	(a) \TextN{{If $U\subseteq\null T$, then $U$ is invard $T$.} {\FontNorm$\forall u\in U\subseteq\null T,Tu=0\in U.$\PfEnd}\vspace{4pt}}
 	(b) \TextN{{If $\range T\subseteq U$, then $U$ is invard $T$.} {\FontNorm$\forall u\in U,Tu\in\range T\subseteq U.$\PfEnd}}
 }\par
 \SepLine
 
 \ProblemB{
-	\TextB{Sups $S,T\in\Lm{V}$ are suth $ST=TS.$ }
+	\TextB{Supp $S,T\in\Lm{V}$ are suth $ST=TS.$ }
 	(a) \TextB{Prove $\null\Par{T-\lambda I}$ is invard $S$ for any $\lambda\in\Fbb$.}
 	(b) \TextB{Prove $\range\Par{T-\lambda I}$ is invard $S$ for any $\lambda\in\Fbb$.}
 }\par\quad
@@ -396,7 +396,7 @@ Note that $ST=TS\Rightarrow \Par{T-\lambda I}S=S\Par{T-\lambda I}.$\par\quad
 \SepLine
 
 \ProblemB[]{
-	\TextB{Sups $S,T\in\Lm{V}$ are suth $ST=TS.$\vspace{4pt}}
+	\TextB{Supp $S,T\in\Lm{V}$ are suth $ST=TS.$\vspace{4pt}}
 }
 \ProblemN[]{2}{
 	\TextB{Show $W=\null T$ is invard $S$.\quad\large$\forall u\in W,Tu=0\Rightarrow STu=0=TSu\Rightarrow Su\in W.$\PfEnd\vspace{3pt}}
@@ -407,7 +407,7 @@ Note that $ST=TS\Rightarrow \Par{T-\lambda I}S=S\Par{T-\lambda I}.$\par\quad
 \SepLine
 
 \ProblemB[]{
-	\TextB{Sups $T\in\Lm{V}$ and $V_{\!1},\dots,V_{\!m}$ are invarsps of $V$ under $T$.}
+	\TextB{Supp $T\in\Lm{V}$ and $V_{\!1},\dots,V_{\!m}$ are invarsps of $V$ under $T$.}
 }
 \ProblemN[]{\hypertarget{5A4}{4}}{
 	$\forall v_i\in V_{\!i},Tv_i\in V_{\!i}\Rightarrow\forall v=v_1+\dots+v_m\in V_{\!1}+\dots+V_{\!m},Tv=Tv_1+\dots+Tv_m\in V_{\!1}+\dots+V_{\!m}.$\PfEnd\TextN{\vspace{4pt}}
@@ -419,31 +419,31 @@ Note that $ST=TS\Rightarrow \Par{T-\lambda I}S=S\Par{T-\lambda I}.$\par\quad
 \SepLine
 
 \ProblemN{\hypertarget{5A6}{6}}{
-	\TextN{Sups $U$ is invarsp of $V$ under each $T\in\Lm{V}.$ Show $U = \zeroSubs$ or $U = V$.\vspace{4pt}}
-}If $V=\zeroSubs.$ Then done. Sups $V\neq\zeroSubs.$ We show the ctrapos:\parSol{}
-{\tgsl Sups $U\neq\zeroSubs$ and $U\neq V.$ Prove $\exists\,T\in\Lm{V}$ suth $U$ is not invard $T$.}\parSol{}
+	\TextN{Supp $U$ is invarsp of $V$ under each $T\in\Lm{V}.$ Show $U = \zeroSubs$ or $U = V$.\vspace{4pt}}
+}If $V=\zeroSubs.$ Then done. Supp $V\neq\zeroSubs.$ We show the ctrapos:\parSol{}
+{\tgsl Supp $U\neq\zeroSubs$ and $U\neq V.$ Prove $\exists\,T\in\Lm{V}$ suth $U$ is not invard $T$.}\parSol{}
 Let $W$ be suth $V=U\oplus W.$ Define $T\in\Lm{V}$ by $T\Par{u+w}=w.$\PfEnd
 \SepLine
 
-\BulletPointX\Tips\,\,\, {Sups $T\in\Lm{\Rbb^2}$ is the counterclockwise rotation by the angle $\theta\in\Rbb.$}\par\quad
+\BulletPointX\Tips\,\,\, {Supp $T\in\Lm{\Rbb^2}$ is the counterclockwise rotation by the angle $\theta\in\Rbb.$}\par\quad
 {Define $\mathcal{C}\in\Lm{\Rbb^2,\Cbb}$ by $\mathcal{C}\Par{a,b}=a+\i b=r\Par{\cos\alpha+\i\sin\alpha}\Rightarrow a=r\cos\alpha,b=r\sin\alpha,$ where $r=a^2+b^2.$}\par\quad
 {Then $\Par{\cos\theta+\i\sin\theta}\Par{a+\i b}=r\BigPar{\cos\!\Par{\alpha+\theta}+\i\sin\!\Par{\alpha+\theta}}=\mathcal{C}^{-1}T\Par{a,b}.$}\par\quad
 {Hence $T\Par{a,b}=\BigPar{a\cos\theta-b\sin\theta,a\sin\theta+b\cos\theta}.$ Now $\Mt{T}=\;${\normalsize$\begin{pmatrix}
 			\cos\theta & -\sin\theta\\
 			\sin\theta & \Blind{-}\cos\theta
 		\end{pmatrix}$}.}\vspace{6pt}\par\quad
-\Example \,\,\,\OR\ProblemN[]{\hypertarget{5A7}{7}}{ Sups $T\in\Lm{\Rbb^2}$ is defined by $T\Par{x, y} = \Par{-3y, x}.$ Find all eigvals of $T$.\TextN{\vspace{4pt}}}\quad
+\Example \,\,\,\OR\ProblemN[]{\hypertarget{5A7}{7}}{ Supp $T\in\Lm{\Rbb^2}$ is defined by $T\Par{x, y} = \Par{-3y, x}.$ Find all eigvals of $T$.\TextN{\vspace{4pt}}}\quad
 \NOTICE that $\Mt{T}=\;${\normalsize$\begin{pmatrix}
 		\cos90^\circ & -3\sin90^\circ\\
 		\sin90^\circ & \Blind{-}\cos90^\circ
 	\end{pmatrix}$}. By [5.8](a), we conclude that $T$ has no eigvals.\vspace{4pt}\par\quad
-\Or Sups $\lambda$ is an eigval with an eigvec $\Par{x,y}.$ Then $\Par{\lambda x,\lambda y}=\Par{-3y,x}\Rightarrow-3y=\lambda^2 y\Rightarrow \lambda^2=-3.$\par\quad
+\Or Supp $\lambda$ is an eigval with an eigvec $\Par{x,y}.$ Then $\Par{\lambda x,\lambda y}=\Par{-3y,x}\Rightarrow-3y=\lambda^2 y\Rightarrow \lambda^2=-3.$\par\quad
 \Blind{\Or}\Sbra{ Ignoring the possibility of $y=0,$ becs $x=0\Longleftrightarrow y=0.$ }\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{5A8}{8}}{
 	\TextN{Define $T\in\Lm{\Fbb^2}$ by $T\Par{w, z} = \Par{z, w}$. Find all eigvals and eigvecs.\vspace{4pt}}
-}Sups $\lambda$ is an eigval with an eigvec $\Par{w,z}.$ Then $z=\lambda w$ \,{\small and}\, $ w=\lambda z.$\parSol{}
+}Supp $\lambda$ is an eigval with an eigvec $\Par{w,z}.$ Then $z=\lambda w$ \,{\small and}\, $ w=\lambda z.$\parSol{}
 Thus $z=\lambda^2 z\Rightarrow \lambda^2=1,$ ignoring the possibility of $z=0$ \Par{ $z=0\Longleftrightarrow w=0$ }.\parSol{}
 Hence $\lambda_1=-1$ and $\lambda_2=1$ are all the eigvals of $T.$ And $T\Par{z,z}=\Par{z,z},T\Par{z,-z}=\Par{-z,z}.$\parSol{}
 又 $\dim\Fbb^2=2.$ Thus the set of all eigvecs is $\Bra{\Par{z,z},\Par{z,-z}:z\neq 0}.$\PfEnd
@@ -451,7 +451,7 @@ Hence $\lambda_1=-1$ and $\lambda_2=1$ are all the eigvals of $T.$ And $T\Par{z,
 
 \ProblemN{\hypertarget{5A9}{9}}{
 	\TextN{Define $T\in\Lm{\Fbb^3}$ by $T\Par{z_1,z_2,z_3}=\Par{2z_2, 0,5z_3}$. Find all eigvals and eigvecs.\vspace{4pt}}
-}Sups $\lambda$ is an eigval with an eigvec $\Par{z_1,z_2,z_3}.$\parSol{}
+}Supp $\lambda$ is an eigval with an eigvec $\Par{z_1,z_2,z_3}.$\parSol{}
 Then $\Par{2z_2, 0,5z_3}=\lambda\Par{z_1,z_2,z_3}.$ We discuss in two cases:\parSol{}
 For $\lambda=0,$\, $z_2=z_3=0$ and $z_1$ can be arb \Par{ $z_1\neq 0$ }.\parSol{}
 For $\lambda\neq 0,$\, $z_2=0=z_1,$ and $z_3$ can be arb \Par{ $z_3\neq 0$ }, then $\lambda=5$.\parSol{}
@@ -462,7 +462,7 @@ The set of all eigvecs is $\Bra{\Par{0,0,w},\Par{w,0,0}:w\neq 0}.$\PfEnd
 	\TextNL{Define $T\in\Lm{\Fbb^n}$ by $T\Par{x_1,x_2,x_3,\dots,x_n}=\Par{x_1,2 x_2,3 x_3,\dots,n x_n}$\vspace{4pt}}
 	(a) \TextNL{Find all eigvals and eigvecs;\;\; {\tgnr\large(b)} Find all invarsps of $V$ under $T.$}
 }\par\quad
-(a) Sups $x=\Par{x_1,x_2,x_3,\dots,x_n}$ is an eigvec with an eigval $\lambda.$\par\quad\Ha
+(a) Supp $x=\Par{x_1,x_2,x_3,\dots,x_n}$ is an eigvec with an eigval $\lambda.$\par\quad\Ha
 Then $Tx=\lambda v=\Par{x_1,2 x_2,3 x_3,\dots,n x_n}=\Par{\lambda x_1,\lambda x_2,\lambda x_3,\dots,\lambda x_n}.$\par\quad\Ha
 Hence $1,\dots,n$ of len $\dim\Fbb^n$ are all the eigvals.\par\quad\Ha
 And $\Bra{\Par{0,\dots,0,x_k,0,\dots,0}\in\Fbb^n:x_k\neq 0,k=1,\dots,n}$ is the set of all eigvecs.\par\quad
@@ -472,18 +472,18 @@ Hence by \TIPSN{3}, every sum of $V_{\!1},\dots,V_{\!n}$ is a invarsp of $V$ und
 
 \ProblemN{\hypertarget{5A18}{18}}{
 	\TextNL{Define $T\in\Lm{\Fbb^\infty}$ by $T\Par{z_1,z_2,\dots} = \Par{0, z_1,z_2,\dots}.$ Show $T$ has no eigvals.}
-}Sups $\lambda$ is an eigval of $T$ with an eigvec $\Par{z_1,z_2,\dots}.$\parSol{}
+}Supp $\lambda$ is an eigval of $T$ with an eigvec $\Par{z_1,z_2,\dots}.$\parSol{}
 Then $T\Par{z_1,z_2,\dots}=\Par{\lambda z_1,\lambda z_2,\dots}=\Par{0,z_1,z_2,\dots}.$ Thus $\lambda z_1=0,\lambda z_k=z_{k-1}.$\parSol{}
 If $\lambda=0,$ then $\lambda z_2=z_1=0=\dots=z_k\Rightarrow\Par{z_1,z_2,\dots}=0\Longrightarrow0$ is not an eigval.\parSol{}
 If $\lambda\neq 0,$ then $\lambda z_1=0\Rightarrow z_1=\dots=z_k=0\Longrightarrow\lambda$ is not an eigval. Now no $\lambda\in\Fbb$ is an eigval.\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{5A19}{19}}{
-	\TextNL{Sups $n\in\Nbp$. Define $T\in\Lm{\Fbb^n}$ by $T\Par{x_1,\dots,x_n}=\Par{x_1+\dots+x_n,\dots,x_1+\dots+x_n}.$}
+	\TextNL{Supp $n\in\Nbp$. Define $T\in\Lm{\Fbb^n}$ by $T\Par{x_1,\dots,x_n}=\Par{x_1+\dots+x_n,\dots,x_1+\dots+x_n}.$}
 	\TextNL{In other words, the ent of $\Mt{T}$ wrto the std bss are all \,$1$'s.}
 	\TextNL{Find all eigvals and eigvecs of $T.$}
 }\par\quad
-Sups $\lambda$ is an eigval of $T$ with an eigvec $\Par{x_1,\dots,x_n}.$\par\quad
+Supp $\lambda$ is an eigval of $T$ with an eigvec $\Par{x_1,\dots,x_n}.$\par\quad
 Then $T\Par{x_1,\dots,x_n}=\Par{\lambda x_1,\dots,\lambda x_n}=\Par{x_1+\dots+x_n,\dots,x_1+\dots+x_n}.$\par\quad
 Thus $\lambda x_1=\dots=\lambda x_n=x_1+\dots+x_n.$\par\quad
 $\hMath[0pt]{r}{\left.}{\right\}}{$
@@ -494,9 +494,9 @@ And the set of all eigvecs of $T$ is $\Bra{\Par{x_1,\dots,x_n}\in\Fbb^n\nonzero:
 
 \ProblemN{\hypertarget{5A20}{20}}{
 	\TextNL{Define $S\in\Lm{\Fbb^\infty}$ by $S\Par{z_1,z_2,z_3,\dots} = \Par{z_2,z_3,\dots}.$\vspace{4pt}}
-	(a) \TextNL{Show every ele of $\Fbb$ is an eigval of $S;\;\;$ {\tgnr\large(b)} Find all eigvecs of $S$.}
+	(a) \TextNL{Show every elem of $\Fbb$ is an eigval of $S;\;\;$ {\tgnr\large(b)} Find all eigvecs of $S$.}
 }\par\quad
-Sups $\lambda$ is an eigval of $S$ with an eigvec $\Par{z_1,z_2,\dots}.$\par\quad
+Supp $\lambda$ is an eigval of $S$ with an eigvec $\Par{z_1,z_2,\dots}.$\par\quad
 Then $S\Par{z_1,z_2,\dots}=\Par{\lambda z_1,\lambda z_2,\dots}=\Par{z_2,z_3,\dots}.$ Thus for each $k\in\Nbp,\lambda z_k=z_{k+1}.$\par\quad
 If $\lambda=0,$ then $\lambda z_1=z_2=\dots=z_k=0$ for all $k,$ while $z_1$ can be nonzero. Thus $0$ is an eigval.\par\quad
 If $\lambda\neq 0,$ then $\lambda^k z_1=\lambda^{k-1} z_2=\dots=\lambda z_k=z_{k+1},$ let $z_1\neq 0\Longrightarrow\Par{1,\lambda,\lambda^2,\dots,\lambda^k,\dots}$ is an eigvec.\par\quad
@@ -506,7 +506,7 @@ Now each $\lambda\in\Fbb$ is an eigval of $T,$ with corres eigvecs in $\Span[\Bi
 \ProblemN{\hypertarget{5A11}{11}}{
 	\TextNL{Define $T:\PoRi\rightarrow\PoRi$ by $Tp = p\apostrophe$. Find all eigvals and eigvecs.}
 }\par\quad
-Note that $\forall p\in\PoRi\nonzero,\deg p\apostrophe<\deg p.$ And $\deg 0=-\infty.$ Sups $\lambda$ is an eigval with an eigvec $p.$\par\quad
+Note that $\forall p\in\PoRi\nonzero,\deg p\apostrophe<\deg p.$ And $\deg 0=-\infty.$ Supp $\lambda$ is an eigval with an eigvec $p.$\par\quad
 Asum $\lambda\neq 0.$ Then $\deg\lambda p>\deg p\apostrophe$ while $\lambda p=p\apostrophe.$ Ctradic. Thus $\lambda=0.$\par\quad
 Therefore $\deg \lambda p=-\infty=\deg p\apostrophe\Rightarrow p\in\PoR{0}.$ Hence the eigvecs are all the nonzero consts.\PfEnd
 \SepLine
@@ -514,7 +514,7 @@ Therefore $\deg \lambda p=-\infty=\deg p\apostrophe\Rightarrow p\in\PoR{0}.$ Hen
 \ProblemN{\hypertarget{5A12}{12}}{
 	\TextNL{Define $T\in\Lm[\BigPar]{\PoR{n}}$ by $\Par{Tp}\Par{x} = xp\apostrophe\Par{x}$ for all $x\in\Rbb.$ Find all eigvals and eigvecs.}
 }\par\quad
-Sups $\lambda$ is an eigval of $T$ with an eigvec $p$, then $\Par{Tp}\Par{x}=xp\apostrophe\Par{x}=\lambda p\Par{x}.$\par\quad
+Supp $\lambda$ is an eigval of $T$ with an eigvec $p$, then $\Par{Tp}\Par{x}=xp\apostrophe\Par{x}=\lambda p\Par{x}.$\par\quad
 Let $p=a_0+a_1 x+\dots+a_n x^n.$ Then $xp\apostrophe\Par{x}=a_1 x+2a_2 x^2+\dots+n a_n x^n=\lambda a_0+\lambda a_1 x+\lambda a_2 x^2+\dots+\lambda a_n x^n.$\par\quad
 Define $S\in\Lm{\Fbb^{n+1},\PoR{n}}$ by $S\Par{a_0,a_1,\dots,a_n}=a_0+a_1x+\dots+a_nx^n.$\par\quad
 Then $\Par{S^{-1}TS}\Par{a_0,a_1,\dots,a_n}=\Par{0\cdot a_0,1\cdot a_1,2\cdot a_2,\dots,n\cdot a_n}.$ Thus $0,1,\dots,n$ are the eigvals of $S^{-1}TS.$\par\quad
@@ -522,7 +522,7 @@ By Exe (15), $0,1,\dots,n$ are the eigvals of $T$. The set of all eigvecs is $\B
 \SepLine
 
 \ProblemB[]{
-	\TextB{Sups $V$ is finide, $T\in\Lm{V},\lambda\in\Fbb.$}
+	\TextB{Supp $V$ is finide, $T\in\Lm{V},\lambda\in\Fbb.$}
 }
 \ProblemN{\hypertarget{5A13}{13}}{
 	 \TextB{Prove $\forall\lambda\in\Fbb,\exists\,\alpha\in\Fbb,\left|\alpha-\lambda\right|<\frac{1}{\;1000\;},\Par{T-\alpha I}$ is inv.}
@@ -536,7 +536,7 @@ Hence $\exists\,k=1,\dots,\dim V+1$ suth $\alpha_k$ is not an eigval of $T$ and 
 	\TextB{Prove $\exists\,\delta > 0$ suth $\Par{T-\alpha I}$ is inv for all $\alpha\in\Fbb$ suth $0 < \aMid{\alpha-\lambda} < \delta$.}
 }\par\quad
 If $T$ has no eigvals, then $\Par{T-\alpha I}$ is inje for all $\alpha\in\Fbb$ and done.\par\quad
-Sups $\lambda_1,\dots,\lambda_m$ are all the disti eigvals of $T.$\par\quad
+Supp $\lambda_1,\dots,\lambda_m$ are all the disti eigvals of $T.$\par\quad
 Let $\delta>0$ be suth, for each eigval $\lambda_k,$ $\lambda_k\not\in\Par{\lambda-\delta,\lambda}\cup \Par{\lambda,\lambda+\delta}.$\par\quad
 So that for all $\alpha\in\Fbb$ suth $0<\aMid{\alpha-\lambda}<\delta,\Par{T-\alpha I}$ is not inje.\PfEnd\vspace{4pt}\quad
 \Or Let $\delta=\min\!\Bra{\aMid{\lambda-\lambda_k}:k\in\envFontSmall\Bra{1,\dots,m}\envFontDefault,\lambda_k\neq\lambda}.$\par\quad
@@ -544,16 +544,16 @@ Then $\delta>0$ and each $\lambda_k\neq\alpha$ \Sbra{ $\Longleftrightarrow\Par{T
 \SepLine
 
 \ProblemBnoor{\hypertarget{5A4e8}{}{5.B.4} \,\OR\, 4E 3.B.27}{
-	\TextB{Sups $\lambda$ is an eigval of $P\in\Lm{V},P^2 = P.$ Prove $\lambda = 0$ or $\lambda = 1$.}
-}Sups $\lambda$ is an eigval with an eigvec $v.$ Then $P\Par{Pv}=Pv\Rightarrow\lambda^2 v=\lambda v.$ Thus $\lambda=1$ or $0.$\PfEnd
+	\TextB{Supp $\lambda$ is an eigval of $P\in\Lm{V},P^2 = P.$ Prove $\lambda = 0$ or $\lambda = 1$.}
+}Supp $\lambda$ is an eigval with an eigvec $v.$ Then $P\Par{Pv}=Pv\Rightarrow\lambda^2 v=\lambda v.$ Thus $\lambda=1$ or $0.$\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{5A14}{14}}{
-	\TextNL{Sups $V = U\oplus W$, where $U$ and $W$ are nonzero subsps of $V$.}
+	\TextNL{Supp $V = U\oplus W$, where $U$ and $W$ are nonzero subsps of $V$.}
 	\TextNL{Define $P\in\Lm{V}$ by $P\Par{u + w} = u$ \,for each $u\in U$ and each $w\in W$.}
 	\TextNL{Find all eigvals and eigvecs of $P$.}
 }\par\quad
-Sups $\lambda$ is an eigval of $P$ with an eigvec $\Par{u+w}.$\par\quad
+Supp $\lambda$ is an eigval of $P$ with an eigvec $\Par{u+w}.$\par\quad
 Then $P\Par{u+w}=u=\lambda u+\lambda w\Rightarrow\Par{\lambda-1}u+\lambda w=0.$\par\quad
 \Or Note that $P\mmid_{\range P}=I\mmid_{\range P}\Longleftrightarrow P^2=P.$ By (4E 5.A.8), $1$ and $0$ are the eigvals.\par\quad
 By [1.44], $\Par{\lambda-1}u=\lambda w=0,$ hence $\lambda=0\Longleftrightarrow u=0,$ and $\lambda=1\Longleftrightarrow w=0.$\par\quad
@@ -561,7 +561,7 @@ Thus $Pu=u,Pw=0.$ Hence the eigvals are $0$ and $1$, the set of all eigvecs of $
 \SepLine\pagebreak
 
 \ProblemN{\hypertarget{5A15}{15}}{
-	\TextNL{Sups $T\in\Lm{V}$. Sups $S\in\Lm{V}$ is inv.\vspace{4pt}}
+	\TextNL{Supp $T\in\Lm{V}$. Supp $S\in\Lm{V}$ is inv.\vspace{4pt}}
 	(a) \TextNL{Prove $T$ and $S^{-1}TS$ have the same eigvals.\vspace{3pt}}
 	(b) \TextNL{What is the relationship between the eigvecs of $T$ and the eigvecs of $S^{-1}TS$?}
 }\par\quad
@@ -584,7 +584,7 @@ Define $T\in\Lm{\Rbb^4}$ by $\Mt[\BigPar]{T,\Par{e_1,e_2,e_3,e_4}}={}${\normalsi
 		3 & 8 & 11 & 5\\
 		3 & -8 & -11 & 5
 	\end{pmatrix}.$}\vspace{-12pt}\par\quad
-Sups $\lambda$ is an eigval of $T$ with an eigvec $\Par{x,y,z,w}.$ Then we get \;{\normalsize$\MathLeftBrace{l}{
+Supp $\lambda$ is an eigval of $T$ with an eigvec $\Par{x,y,z,w}.$ Then we get \;{\normalsize$\MathLeftBrace{l}{
 		\Par{1-\lambda}x+y+z+w=0,\\
 		-x+\Par{1-\lambda}y-z-w=0,\\
 		3x+8y+\Par{11-\lambda}z+5w=0,\\
@@ -592,7 +592,7 @@ Sups $\lambda$ is an eigval of $T$ with an eigvec $\Par{x,y,z,w}.$ Then we get \
 This set of liney equations has no solutions.\par\quad
 \Sbra{ You can type it on \url{https://zh.numberempire.com/equationsolver.php} to check. }\large\par\vspace{6pt}\quad
 \Or Define $T\in\Lm{\Rbb^4}$ by $T\Par{x_1,x_2,x_3,x_4}=\Par{-x_2,x_1,-x_4,x_3}.$\par\quad
-Sups $\lambda$ is an eigval of $T$ with an eigvec $\Par{x,y,z,w}.$\vspace{-3pt}\par\quad
+Supp $\lambda$ is an eigval of $T$ with an eigvec $\Par{x,y,z,w}.$\vspace{-3pt}\par\quad
 Then $T\Par{x,y,z,w}=\Par{\lambda x,\lambda y,\lambda z,\lambda w}=\Par{-y,x,-w,z}$ { $\Longrightarrow\MathLeftBrace{l}{
 		-y=\lambda x,x=\lambda y\Longrightarrow-xy=\lambda^2 xy\\
 		-w=\lambda z,z=\lambda w\Longrightarrow-zw=\lambda^2 zw}$}\vspace{-3pt}\par\quad
@@ -602,10 +602,10 @@ Simlr, $y=z=w=0.$ Then we fail. Thus $T$ has no eigvals.\PfEnd
 \SepLine
 
 \ProblemBnoor{\hypertarget{5A4e16}{4E 5.A.16}}{
-	\TextB{Sups $B_V=\Par{v_1,\dots,v_n},T\in\Lm{V},\Mt[\BigPar]{T,\Par{v_1,\dots,v_n}}=A.$}
+	\TextB{Supp $B_V=\Par{v_1,\dots,v_n},T\in\Lm{V},\Mt[\BigPar]{T,\Par{v_1,\dots,v_n}}=A.$}
 	\TextB{Prove if $\lambda$ is an eigval of $T$, then $\aMid{\lambda}\leqslant n \max\!\Bra{\aMid{A_{j,k}}:1\leqslant j, k\leqslant n}.$}
 }\par\quad
-Sups $v$ is an eigval of $T$ corres to $\lambda.$ Let $v=c_1v_1+\dots+c_nv_n.$\vspace{2pt}\par\quad
+Supp $v$ is an eigval of $T$ corres to $\lambda.$ Let $v=c_1v_1+\dots+c_nv_n.$\vspace{2pt}\par\quad
 Becs $\lambda c_1v_1+\dots+\lambda c_nv_n=c_1Tv_1+\dots+c_nTv_n=\sum_{k}^nc_k\BigPar{\sum_{j}^n A_{j,k}v_j}.$\vspace{3pt}\par\quad
 We have $\lambda c_j=\sum_{k=1}^n c_kA_{j,k}\Longrightarrow\aMid{\lambda}\aMid{c_j}=\sum_{k=1}^n\aMid{c_k}\aMid{A_{j,k}}$ for each $j\in\Bra{1,\dots,n}$\vspace{4pt}\par\quad
 Let $\aMid{c_{\j}}=\max\!\Bra{\aMid{c_1},\dots,\aMid{c_n}}.$ Note that $\aMid{c_{\j}}\neq 0,$ for if not, $c_1=\dots=c_n=0\Rightarrow v=0,$ ctradic.\vspace{6pt}\par\quad
@@ -614,14 +614,14 @@ Thus $\aMid{\lambda}\aMid{c_{\j}}=\sum_{k=1}^n\aMid{c_k}\aMid{A_{{\j},k}}\Longri
 \SepLine\pagebreak
 
 \ProblemBnoor{\hypertarget{5A4e15}{4E 5.A.15}}{
-	\TextB{Sups $T\in\Lm{V}$, and $\lambda\in\Fbb.$}
+	\TextB{Supp $T\in\Lm{V}$, and $\lambda\in\Fbb.$}
 	\TextB{Show $\lambda$ is an eigval of $T$ $\Longleftrightarrow$ $\lambda$ is an eigval of the dual optor $T\apostrophe\in\Lm{V\apostrophe}$.}
 }\par\quad
-(a) Sups $\lambda$ is an eigval of $T$ with an eigvec $v.$\par\quad\Ha
+(a) Supp $\lambda$ is an eigval of $T$ with an eigvec $v.$\par\quad\Ha
 Let $U$ be invar suth $V=\Span{v}\oplus U$ \Sbra{ by (4E 5.A.39) }.\par\quad\Ha
 Define $\psi\in V\apostrophe$ by $\psi\Par{cv+u}=c.$\vspace{2pt}\par\quad\Ha
 Now $\Sbra{T\apostrophe\Par{\psi}}\Par{cv+u}=\psi\BigPar{cv+Tu}=\lambda cv=\lambda\psi\Par{cv+u}.$ Hence $T\apostrophe\Par{\psi}=\lambda\psi.$\vspace{4pt}\par\quad
-(b) Sups $\lambda$ is an eigval $T\apostrophe$ with an eigvec $\psi.$ Then $T\apostrophe\Par{\psi}=\psi\circ T=\lambda\psi.$\par\quad\Hb
+(b) Supp $\lambda$ is an eigval $T\apostrophe$ with an eigvec $\psi.$ Then $T\apostrophe\Par{\psi}=\psi\circ T=\lambda\psi.$\par\quad\Hb
 Note that $\psi\neq 0,\psi\Par{Tv}=\lambda\psi\Par{v}$ Thus $\exists\,v\in V\nonzero,Tv=\frac{\psi\Par{Tv}}{\psi\Par{v}}v=\lambda v.$\PfEnd\vspace{8pt}\quad
 \Or [{\tgsl Only in Finide }] Using [5.6], (4E 3.F.17), [3.101] and (3.F.12).\par\quad
 $\lambda$ is an eigval of $T\Longleftrightarrow\Par{T-\lambda I_V}$ is not inv\par\quad
@@ -629,14 +629,14 @@ $\lambda$ is an eigval of $T\Longleftrightarrow\Par{T-\lambda I_V}$ is not inv\p
 \SepLine
 
 \ProblemN{\hypertarget{5A24}{24}}{
-	\TextNL{Sups $A\in\Fbb^{n,n}.$ Define $T\in\Lm{\Fbb^{n,1}}$ by $Tx = Ax$.}
-	(a) \TextNL{Sups the sum of the ent in each row of $A$ equals $1$. Prove $1$ is an eigval of $T$.}
-	(b) \TextNL{Sups the sum of the ent in each col of $A$ equals $1$. Prove $1$ is an eigval of $T$.}
+	\TextNL{Supp $A\in\Fbb^{n,n}.$ Define $T\in\Lm{\Fbb^{n,1}}$ by $Tx = Ax$.}
+	(a) \TextNL{Supp the sum of the ent in each row of $A$ equals $1$. Prove $1$ is an eigval of $T$.}
+	(b) \TextNL{Supp the sum of the ent in each col of $A$ equals $1$. Prove $1$ is an eigval of $T$.}
 }\vspace{-8pt}\par\quad
-Sups $\lambda$ is an eigval of $T$ with an eigvec $x.$ Then $Tx=Ax={}${\normalsize$\begin{pmatrix} \sum_{k=1}^n A_{1,k}x_k\\ \vdots\\ \sum_{k=1}^n A_{n,k}x_k\end{pmatrix}$}${}=\lambda ${\normalsize$\begin{pmatrix} x_1\\ \vdots\\ x_n\end{pmatrix}$}.\vspace{-6pt}\par\quad
-(a) Sups $\sum_{r=1}^n A_{R,c}=1$ for each $R\in\Bra{1,\dots,n}.$\par\quad\Ha
+Supp $\lambda$ is an eigval of $T$ with an eigvec $x.$ Then $Tx=Ax={}${\normalsize$\begin{pmatrix} \sum_{k=1}^n A_{1,k}x_k\\ \vdots\\ \sum_{k=1}^n A_{n,k}x_k\end{pmatrix}$}${}=\lambda ${\normalsize$\begin{pmatrix} x_1\\ \vdots\\ x_n\end{pmatrix}$}.\vspace{-6pt}\par\quad
+(a) Supp $\sum_{r=1}^n A_{R,c}=1$ for each $R\in\Bra{1,\dots,n}.$\par\quad\Ha
 Then if we let $x_1=\dots=x_n,$ then $\lambda=1,$ and hence is an eigval of $T.$\par\vspace{10pt}\quad
-(b) Sups $\sum_{r=1}^n A_{r,C}=1$ for each $C\in\Bra{1,\dots,n}.$\vspace{4pt}\par\quad\Hb
+(b) Supp $\sum_{r=1}^n A_{r,C}=1$ for each $C\in\Bra{1,\dots,n}.$\vspace{4pt}\par\quad\Hb
 Then $\sum_{r=1}^n \BigPar{Ax}_{r,\cdot}=\sum_{r=1}^n \BigPar{Ax}_{r,1}=\sum_{c=1}^n\BigPar{A_{1,c}+\dots+A_{n,c}}x_c=\sum_{c=1}^n x_c=\lambda\BigPar{x_1+\dots+x_n}.$\vspace{4pt}\par\quad\Hb
 Hence $\lambda=1$ for all $x\in\Fbb^{n,1}$ suth $\sum_{c=1}^n x_{c,1}\neq 0.$\PfEnd\vspace{10pt}\quad\Hb
 \Or We show $\Par{T-I}$ is not inv, so that $\lambda=1$ is an eigval.\vspace{2pt}\par\quad\Hb
@@ -654,14 +654,14 @@ Thus $1$ is an eigval of $S=\Phi^{-1}T\apostrophe\Phi,$ so of $T\apostrophe,$ \S
 \SepLine\pagebreak
 
 \ProblemB{
-	\TextB{Sups $A\in\Fbb^{n,n}.$ Define $T\in\Lm{\Fbb^{1,n}}$ by $Tx = xA.$}
-	(a) \TextB{Sups the sum of the ent in each col of $A$ equals $1$. Prove $1$ is an eigval of $T$.}
-	(b) \TextB{Sups the sum of the ent in each row of $A$ equals $1$. Prove $1$ is an eigval of $T$.}
+	\TextB{Supp $A\in\Fbb^{n,n}.$ Define $T\in\Lm{\Fbb^{1,n}}$ by $Tx = xA.$}
+	(a) \TextB{Supp the sum of the ent in each col of $A$ equals $1$. Prove $1$ is an eigval of $T$.}
+	(b) \TextB{Supp the sum of the ent in each row of $A$ equals $1$. Prove $1$ is an eigval of $T$.}
 }\par\quad
-Sups $\lambda$ is an eigval with an eigvec $x.$ Then {\normalsize$\begin{pmatrix} \sum_{r=1}^n x_r A_{r,1} &\cdots & \sum_{r=1}^n x_r A_{r,n}\end{pmatrix}$}${}=\lambda${\normalsize$\begin{pmatrix} x_1 & \cdots & x_n\end{pmatrix}$}.\vspace{4pt}\par\quad
-(a) Sups $\sum_{r=1}^n A_{r,C}=1$ for each $C\in\Bra{1,\dots,n}.$\par\quad\Ha
+Supp $\lambda$ is an eigval with an eigvec $x.$ Then {\normalsize$\begin{pmatrix} \sum_{r=1}^n x_r A_{r,1} &\cdots & \sum_{r=1}^n x_r A_{r,n}\end{pmatrix}$}${}=\lambda${\normalsize$\begin{pmatrix} x_1 & \cdots & x_n\end{pmatrix}$}.\vspace{4pt}\par\quad
+(a) Supp $\sum_{r=1}^n A_{r,C}=1$ for each $C\in\Bra{1,\dots,n}.$\par\quad\Ha
 Thus if $x_1=\dots=x_n,$ then $\lambda=1,$ hence is an eigval of $T.$\vspace{4pt}\par\quad
-(b) Sups $\sum_{c=1}^n A_{R,c}=1$ for each $R\in\Bra{1,\dots,n}.$\vspace{2pt}\par\quad\Hb
+(b) Supp $\sum_{c=1}^n A_{R,c}=1$ for each $R\in\Bra{1,\dots,n}.$\vspace{2pt}\par\quad\Hb
 Thus $\sum_{c=1}^n \BigPar{xA}_{\cdot,c}=\sum_{c=1}^n\BigPar{A_{c,1}+\dots+A_{c,n}}x_c=\sum_{c=1}^n x_c=\lambda\BigPar{x_1+\dots+x_n}.$\vspace{2pt}\par\quad\Hb
 Hence $\lambda=1,$ for all $x$ suth $\sum_{r=1}^n x_{1,r}\neq 0.$\PfEnd\vspace{6pt}\quad\Hb
 \Or We show $\Par{T-I}$ is not inv, so that $\lambda=1$ is an eigval.\par\quad\Hb
@@ -680,74 +680,74 @@ Thus $1$ is an eigval of $S=\Phi^{-1}T\apostrophe\Phi,$ so of $T\apostrophe,$ \S
 \SepLine
 
 \ProblemB{
-	\TextB{Sups $\Fbb=\Rbb,$ $T\in\Lm{V}$.}
+	\TextB{Supp $\Fbb=\Rbb,$ $T\in\Lm{V}$.}
 	(a) \hypertarget{5A4e17}{}\Sbra{{\normalsize\OR (9.11)}} \TextB{$\lambda\in\Rbb.$ Prove $\lambda$ is an eigval of $T$ $\Longleftrightarrow$ $\lambda$ is an eigval of $T_{\!\Cbb}.$}
 	(b) \hypertarget{5A16}{}\Sbra{{\normalsize\OR \Onumber{16} \;\OR [9.16]\,}} \TextB{$\lambda\in\Cbb.$ Prove $\lambda$ is an eigval of $T_{\!\Cbb}$ $\Longleftrightarrow$ $\overline \lambda$ is an eigval of $T_{\!\Cbb}.$}
 }\par\quad
-(a) Sups $\lambda$ is an eigval of $T$ with an eigvec $v.$\par\quad\Ha
+(a) Supp $\lambda$ is an eigval of $T$ with an eigvec $v.$\par\quad\Ha
 Then $Tv=\lambda v\Longrightarrow T_{\!\Cbb}\Par{v+\i 0}=Tv+\i T0=\lambda v.$ Thus $\lambda$ is an eigval of $T_{\!\Cbb}.$\vspace{2pt}\par\quad\Ha
-Sups $\lambda$ is an eigval of $T_{\!\Cbb}$ with an eigvec $v+\i u.$\par\quad\Ha
+Supp $\lambda$ is an eigval of $T_{\!\Cbb}$ with an eigvec $v+\i u.$\par\quad\Ha
 Then $T_{\!\Cbb}\Par{v+\i u}=\lambda v+\i \lambda u\Longrightarrow Tv=\lambda v,Tu=\lambda u.$ Thus $\lambda$ is an eigval of $T.$\par\quad\Ha
 \BigPar{ Note that $v+\i u$ is nonzero $\Longleftrightarrow$ at least one of $v,u$ is nonzero }.\vspace{4pt}\par\quad
-(b) Sups $\lambda$ is an eigval of $T_{\!\Cbb}$ with an eigvec $v+\i u.$ Then $T_{\!\Cbb}\Par{v+\i u}=Tv+\i Tu=\lambda\Par{v+\i u}.$\vspace{2pt}\par\quad\Hb
+(b) Supp $\lambda$ is an eigval of $T_{\!\Cbb}$ with an eigvec $v+\i u.$ Then $T_{\!\Cbb}\Par{v+\i u}=Tv+\i Tu=\lambda\Par{v+\i u}.$\vspace{2pt}\par\quad\Hb
 Note that $\overline{T_{\!\Cbb}\Par{v+\i u}}=\overline{Tv+\i Tu}=Tv-\i Tu=T_{\!\Cbb}\Par{v-\i u}=T_{\!\Cbb}\Par{\overline{v+\i u}}.$\vspace{2pt}\par\quad\Hb
 And that $\overline{\lambda\Par{v+\i u}}=\overline\lambda v-\i\overline\lambda u=\overline\lambda\Par{v-\i u}=\overline\lambda\Par{\overline{v+\i u}}.$\par\quad\Hb
 Hence $\overline\lambda$ is an eigval of $T_{\!\Cbb}.$
 To prove the other direction, notice that $\overline{{\overline\lambda}}=\lambda.$\PfEnd\vspace{4pt}\quad\Hb
-\Or Sups $\lambda=a+\i b$ is an eigval of $T_{\!\Cbb}$ with an eigvec $v+\i u.$\par\quad\Hb
+\Or Supp $\lambda=a+\i b$ is an eigval of $T_{\!\Cbb}$ with an eigvec $v+\i u.$\par\quad\Hb
 Becs $T_{\!\Cbb}\Par{v+\i u}=\lambda\Par{v+\i u}=\Par{av-bu}+\i\Par{au+bv}=Tv+\i Tu\Longrightarrow Tv=av-bu,Tu=au+bv.$\par\quad\Hb
 Now $T_{\!\Cbb}\Par{\overline{v+\i u}}=Tv-\i Tu=\Par{av-bu}-\i\Par{au+bv}=\Par{a-\i b}\Par{v-\i u}=\overline\lambda\Par{\overline{v-\i u}}.$ Simlr.\PfEnd
 \SepLine\pagebreak
 
 \ProblemN{\hypertarget{5A21}{21}}{
-	\TextNL{Sups $T\in\Lm{V}$ is inv.}
-	(a) \TextNL{Sups $\lambda\in\Fbb$ with $\lambda\neq 0$. Prove $\lambda$ is an eigval of $T$ $\Longleftrightarrow\lambda^{-1}$ is an eigval of $T^{-1}$.}
+	\TextNL{Supp $T\in\Lm{V}$ is inv.}
+	(a) \TextNL{Supp $\lambda\in\Fbb$ with $\lambda\neq 0$. Prove $\lambda$ is an eigval of $T$ $\Longleftrightarrow\lambda^{-1}$ is an eigval of $T^{-1}$.}
 	(b) \TextNL{Prove $T$ and $T^{-1}$ have the same eigvecs.}
 }(a) $Tv=\lambda v\Longleftrightarrow v=\lambda T^{-1}v\Longleftrightarrow \lambda^{-1}v=T^{-1}v.$ Where $v\neq 0.$\parSol{\vspace{2pt}}
 (b) \NOTICE that $T$ is inv $\Longrightarrow0$ is not an eigval of $T$ or $T^{-1}.$ By (a), immediately.\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{5A22}{22}}{
-	\TextNL{Sups $T\in\Lm{V}$ and $\exists$ nonzero vecs $u,w$ in $V$ suth $Tu = 3w,\;Tw = 3u$.}
+	\TextNL{Supp $T\in\Lm{V}$ and $\exists$ nonzero vecs $u,w$ in $V$ suth $Tu = 3w,\;Tw = 3u$.}
 	\TextNL{Prove $3$ or $-3$ is an eigval of $T$.}
 }$T\Par{u+w}=3\Par{u+w},\;T\Par{u-w}=3\Par{w-u}=-3\Par{u-w}.$ Note that $u-w\neq 0$ or $u+w\neq 0.$\parSol{}
 \Or $T\Par{Tu}=9u\Rightarrow T^2-9=\Par{T-3I}\Par{T+3I}$ is not injective $\Rightarrow 3$ or $-3$ is an eigval.\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{5A23}{23}}{
-	\TextNL{Sups $S, T\in\Lm{V}$. Prove $ST$ and $TS$\, have the same eigvals.\vspace{2pt}}
-}Sups $\lambda$ is an eigval of $ST$ with an eigvec $v.$ Then $T\Par{STv}=\lambda Tv=TS\Par{Tv}.$\parSol{}
+	\TextNL{Supp $S, T\in\Lm{V}$. Prove $ST$ and $TS$\, have the same eigvals.\vspace{2pt}}
+}Supp $\lambda$ is an eigval of $ST$ with an eigvec $v.$ Then $T\Par{STv}=\lambda Tv=TS\Par{Tv}.$\parSol{}
 If $Tv=0$ \Par{ while $v\neq 0$ }, then $T$ is not inje $\Rightarrow\Par{TS-0I}$ and $\Par{ST-0I}$ are not inje.\parSol{}
 Thus $\lambda=0$ is an eigval of $ST$ and $TS$ with the same eigvec $v.$\parSol{}
 Othws, $Tv\neq 0,$ then $\lambda$ is an eigval of $TS.$ Reversing the roles of $T$ and $S.$\PfEnd
 \SepLine
 
 \ProblemBnoor{\hypertarget{5A2e20}{2E 20}}{
-	\TextB{Sups $T\in\Lm{V}$ has $\dim V$ disti eigvals and $S\in\Lm{V}$ has the same eigvecs}
+	\TextB{Supp $T\in\Lm{V}$ has $\dim V$ disti eigvals and $S\in\Lm{V}$ has the same eigvecs}
 	\TextB{\Par{ but might not with the same eigvals }. Prove $ST=TS.$}
 }Let $n=\dim V.$ For each $j\in\Bra{1,\dots,n},$ let $v_j$ be an eigvec with eigval $\lambda_j$ of $T$ and $\alpha_j$ of $S$.\parSol{}
 Then $B_V=\Par{v_1,\dots,v_n}.$ Becs $\Par{ST}v_j=\alpha_j\lambda_j v_j=\Par{TS}v_j$ for each $j.$ Hence $ST=TS.$\PfEnd
 \SepLine
 
 \ProblemBnoor{\hypertarget{5A4e37}{4E 5.A.37}}{
-	\TextB{Sups $V$ is finide and $T\in\Lm{V}$.}
+	\TextB{Supp $V$ is finide and $T\in\Lm{V}$.}
 	\TextB{Define $\mathcal{A}\in\Lm[\BigPar]{\Lm{V}}$ by $\mathcal{A}\Par{S} = TS$ for each $S\in\Lm{V}$.}
 	\TextB{Prove the set of eigvals of \,$T$ equals the set of eigvals of $\mathcal{A}$.}
 }\par\quad
-(a) Sups $\lambda$ is an eigval of $T$ with an eigvec $v=v_1.$ Let $B_V=\Par{v_1,\dots,v_m,\dots,v_n}.$\par\quad\Ha
+(a) Supp $\lambda$ is an eigval of $T$ with an eigvec $v=v_1.$ Let $B_V=\Par{v_1,\dots,v_m,\dots,v_n}.$\par\quad\Ha
 Note that $\Span{v}\subseteq\null\Par{T-\lambda I}.$ Define $S\in\Lm{V}$ by $S\Par{v_j}=v$ for each $j\in\Bra{1,\dots,n}.$\par\quad\Ha
 \Or Define $S\in\Lm{V}$ by $Sv_1=v_1,\,\,Sv_j=0$ for $j\geqslant 2.$ Then $\Par{T-\lambda I}Sv_1=0=\Par{T-\lambda I}Sv_k=0.$\par\quad\Ha
 Then $\Par{T-\lambda I}S=0.$ Thus $\mathcal{A}\Par{S}=TS=\lambda S$ while $S\neq 0.$ Hence $\lambda$ is an eigval of $\mathcal{A}.$\vspace{4pt}\par\quad
-(b) Sups $\lambda$ is an eigval of $\mathcal{A}$ with an eigvec $S.$\par\quad\Hb
+(b) Supp $\lambda$ is an eigval of $\mathcal{A}$ with an eigvec $S.$\par\quad\Hb
 Then $\exists\,v\in V,0\neq u=S\Par{v}\in V\Rightarrow Tu=\Par{TS} v=\Par{\lambda S} v=\lambda u.$ Thus $\lambda$ is an eigval $T.$\par\quad\Hb
 \Or Becs $TS-\lambda S=\Par{T-\lambda I}S=0\Rightarrow\zeroSubs\subsetneq\range S\subseteq\null\Par{T-\lambda I}.$ $\Par{T-\lambda I}$ is not inje.\PfEnd\vspace{4pt}
 \Comment \,\,\,{If $\mathcal{A}\Par{S}=ST,\forall S\in\Lm{V}.$ Then the eigvals of $\mathcal{A}$ are not the eigvals of $T.$}
 \SepLine
 
 \ProblemN{\hypertarget{5A25}{25}}{
-	\TextNL{Sups $T\in\Lm{V}$ and $u, w$ are eigvecs of $T$ suth $u + w$ is also an eigvec of $T$.}
+	\TextNL{Supp $T\in\Lm{V}$ and $u, w$ are eigvecs of $T$ suth $u + w$ is also an eigvec of $T$.}
 	\TextNL{Prove $u$ and $w$ corres to the same eigval.}
-}Sups $\lambda_1,\lambda_2,\lambda_0$ are eigvals of $T$ with eigvecs to $u,w,u+w$ respectly.\parSol{}
+}Supp $\lambda_1,\lambda_2,\lambda_0$ are eigvals of $T$ with eigvecs to $u,w,u+w$ respectly.\parSol{}
 Then $T\Par{u+w}=\lambda_0\Par{u+w}=Tu+Tw=\lambda_1 u+\lambda_2 w\Rightarrow \Par{\lambda_0-\lambda_1}u=\Par{\lambda_2-\lambda_0}w.$\parSol{}
 If $\Par{u,w}$ is linely depe, then let $w=cu,$ therefore $\lambda_2 cu=Tw=cTu=\lambda_1 cu\Rightarrow\lambda_2=\lambda_1.$\parSol{}
 Othws, $\Par{u,w}$ is liney indep. Then $\lambda_0-\lambda_1=\lambda_2-\lambda_0=0\,\Rightarrow\lambda_1=\lambda_2=\lambda_0.$\PfEnd\parSol{}
@@ -755,9 +755,9 @@ Othws, $\Par{u,w}$ is liney indep. Then $\lambda_0-\lambda_1=\lambda_2-\lambda_0
 \SepLine
 
 \ProblemN{\hypertarget{5A26}{26}}{
-	\TextNL{Sups $T\in\Lm{V}$ is suth every nonzero vec in $V$ is an eigvec of \,$T$.}
+	\TextNL{Supp $T\in\Lm{V}$ is suth every nonzero vec in $V$ is an eigvec of \,$T$.}
 	\TextNL{Prove $T$ is a scalar multi of the id optor.}
-}If $\dim V=0,1$ then done. Sups $\dim V\geqslant 2.$\par\quad
+}If $\dim V=0,1$ then done. Supp $\dim V\geqslant 2.$\par\quad
 Becs $\forall v\in V,\exists\,!\,\lambda_v\in\Fbb,Tv=\lambda_v v.$ For any two disti nonzero vecs $v,w\in V,$\par\quad
 $T\Par{v+w}=\lambda_{v+w}\Par{v+w}=Tv+Tw=\lambda_v v+\lambda_w w\Rightarrow\Par{\lambda_{v+w}-\lambda_v}v=\Par{\lambda_w-\lambda_{v+w}}w.$\PfEnd\vspace{4pt}\quad
 \Or For any two nonzero vecs $u,v\in V,u,v$ are eigvecs.\par\quad
@@ -766,15 +766,15 @@ Thus by Exe (25), $\forall u,v\in V,Tu=\lambda u,Tv=\lambda v\Rightarrow\forall 
 \SepLine
 
 \ProblemN{\hypertarget{5A27}{27}, \hypertarget{5A28}{28}}{
-	\TextNL{Sups $V$ is finide and $k\in\Bra{1, \dots , \dim V - 1}$.}\qquad
-	\TextNL{Sups $T\in\Lm{V}$ is suth every subsp of $V$ of dim $k$ is invard $T$.}\qquad
+	\TextNL{Supp $V$ is finide and $k\in\Bra{1, \dots , \dim V - 1}$.}\qquad
+	\TextNL{Supp $T\in\Lm{V}$ is suth every subsp of $V$ of dim $k$ is invard $T$.}\qquad
 	\TextNL{Prove $T$ is a scalar multi of the id optor.}
-}If $\dim V\leqslant 1$ then done. Sups $\dim V\geqslant 2.$\par\quad
+}If $\dim V\leqslant 1$ then done. Supp $\dim V\geqslant 2.$\par\quad
 We prove the ctrapos: {\tgsl If $T$ is not a scalar multi of $I$. Then $\exists$ subsp $U$ of dim $k$ not invard $T.$}\par\quad
 By Exe (26), $\exists\,v\in V$ and $v\neq 0$ suth $v$ is not an eigvec of $T.$\par\quad
 Thus $\Par{v,Tv}$ is liney indep. Extend to $B_V=\Par{v,Tv,u_1,\dots,u_n}.$\par\quad
 Let $U=\Span{v,u_1,\dots,u_{k-1}}\Rightarrow U$ is not invarsp of $V$ under $T.$\PfEnd\vspace{6pt}\quad
-\Or Sups $0\neq v=v_1\in V.$ Extend to $B_V=\Par{v_1,\dots,v_n}.$ Sups $Tv_1=c_1 v_1+\dots+c_n v_n,\exists\,!\,c_i\in\Fbb.$\par\quad
+\Or Supp $0\neq v=v_1\in V.$ Extend to $B_V=\Par{v_1,\dots,v_n}.$ Supp $Tv_1=c_1 v_1+\dots+c_n v_n,\exists\,!\,c_i\in\Fbb.$\par\quad
 Consider a $k$\hspace{1pt}-\hspace{1pt}$\dim$ subsp $U=\Span{v_1,v_{\alpha_1},\dots,v_{\alpha_{k-1}}}.$ Where $\alpha_1,\dots,\alpha_{k-1}\in\Bra{2,\dots,n}$ are disti.\par\quad
 Becs every subsp such $U$ is invar. $Tv_1=c_1 v_1+\dots+c_n v_n\in U\Longrightarrow c_2=\dots=c_n=0.$\vspace{0pt}\par\quad
 For if not, $\exists\,c_i\neq 0,$ let $W=\Span{v_1,v_{\beta_1},\dots,v_{\beta_{k-1}}},$ where each $\beta_j\in\Bra{{2,\dots,i-1,i+1,\dots,n}}.$\par\quad
@@ -783,15 +783,15 @@ Hence $Tv_1=c_1 v_1.$ Becs $v_1=v\in V$ is arb. We conclude that $T=\lambda I$ f
 (i) If every subsp of dim $1$ is invar, then by Exe (26), $T=\lambda I.$ Thus $P\Par{1}$ holds.\par\quad\Endi
 (ii) Asum $P\Par{k}$ holds for $k\in\Bra{1,\dots,\dim V-1}.$ And every subsp of dim $k+1$ is invar.\par\quad\Hii
 Let $U$ be a subsp of dim $k.$ If $\dim U=\dim V-1$ then extend $B_U$ to $B_V$ and done.\par\quad\Hii
-Sups $\dim U\in\Bra{1,\dots,\dim V-2}.$ Choose two liney indep vecs $v,w\not\in U.$\par\quad\Hii
+Supp $\dim U\in\Bra{1,\dots,\dim V-2}.$ Choose two liney indep vecs $v,w\not\in U.$\par\quad\Hii
 Becs $U\oplus\Span{v}$ and $U\oplus\Span{w}$ of dim $k+1$ are invar.\par\quad\Hii
-Sups $u\in U.$ Let $Tu=a_1u_1+bv=a_2u_2+cw,\exists\,!\,u_1,u_2\in U,a_1,a_2,b,c\in\Fbb.$\par\quad\Hii
+Supp $u\in U.$ Let $Tu=a_1u_1+bv=a_2u_2+cw,\exists\,!\,u_1,u_2\in U,a_1,a_2,b,c\in\Fbb.$\par\quad\Hii
 Now $a_1u_1-a_2u_2=cw-bv\in U\cap\Span{v}=\zeroSubs\Rightarrow b=c=0.$ Thus $Tu\in U.$\par\quad\Hii
 Becs $P\Par{k}$ holds, we conclude that $T=\lambda I.$ Thus $P\Par{k+1}$ holds.\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{5A29}{29}}{
-	\TextNL{Sups $T\in\Lm{V}$ and $\range T$ is finide.}
+	\TextNL{Supp $T\in\Lm{V}$ and $\range T$ is finide.}
 	\TextNL{Prove $T$ has at most $1 + \dim\range T$ disti eigvals.}
 }\par\quad
 Let $\lambda_1,\dots,\lambda_m$ be the disti eigvals of $T$ with corres eigvecs $v_1,\dots,v_m.$\par\quad
@@ -802,19 +802,19 @@ Hence, by [2.23], $m-1\leqslant\dim\range T.$\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{5A30}{30}}{
-	\TextNL{Sups $T\in\Lm{\Rbb^3}$ and $-4,5,\sqrt{7}$ are eigvals. Prove $\exists\,x,Tx - 9x = \Par{-4, 5, \sqrt{7}}$.}
+	\TextNL{Supp $T\in\Lm{\Rbb^3}$ and $-4,5,\sqrt{7}$ are eigvals. Prove $\exists\,x,Tx - 9x = \Par{-4, 5, \sqrt{7}}$.}
 }$T$ has $\dim\Rbb^3$ eigvals not including $9\Rightarrow\Par{T-9I}$ is inv. $x=\Par{T-9I}{^{-1}}\Par{-4,5,\sqrt{7}}.$\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{5A31}{31}}{
-	\TextNL{Sups $V$ is finide, and $v_1,\dots,v_m \in V$. Prove}
+	\TextNL{Supp $V$ is finide, and $v_1,\dots,v_m \in V$. Prove}
 	\TextNL{$\Par{v_1,\dots,v_m}$ is liney indep $\Longleftrightarrow v_1,\dots,v_m$ are eigvecs of some $T$ corres to disti eigvals.}
-}Sups $\Par{v_1,\dots,v_m}$ is liney indep. Let $B_V=\Par{v_1,\dots,v_m,\dots,v_n}.$\parSol{}
+}Supp $\Par{v_1,\dots,v_m}$ is liney indep. Let $B_V=\Par{v_1,\dots,v_m,\dots,v_n}.$\parSol{}
 Define $T\in\Lm{V}$ by $Tv_k=k\cdot v_k$ for each $k\in\Bra{1,\dots,m,\dots,n}.$ Conversely by [5.10].\PfEnd\vspace{-4pt}
 \SepLine
 
 \ProblemB{
-	\TextB{Sups $\lambda_1,\dots,\lambda_n\in\Rbb$ are disti.}
+	\TextB{Supp $\lambda_1,\dots,\lambda_n\in\Rbb$ are disti.}
 	(a)\ProblemN[]{\hypertarget{5A32}{32}}{
 		\TextB{Prove $\Par{e^{\lambda_1x},\dots,e^{\lambda_nx}}$ is liney indep in $\Rbb^{\Rbb}$.}
 		\Ha\Blind{\Onumber{32} } \TextNL{\large{\tgsc H{\small INT}\tgbf:} Let $V=\Span{e^{\lambda_1x},\dots,e^{\lambda_nx}}.$ Define $D\in\Lm{V}$ by $Df = f\apostrophe$. Find eigvals and eigvecs of $D$.}
@@ -836,18 +836,18 @@ And then $\BigPar{\cos\!\Par{\lambda_1 x},\dots,\cos\!\Par{\lambda_n x}}$ is lin
 \SepLine
 
 \ProblemN{\hypertarget{5A33}{33}}{
-	\TextNL{Sups $T\in\Lm{V}.$ Prove $T\XSlash \Par{\range T}=0.$\vspace{2pt}}
+	\TextNL{Supp $T\in\Lm{V}.$ Prove $T\XSlash \Par{\range T}=0.$\vspace{2pt}}
 }$v+\range T\in V\XSlash \range T\Longrightarrow v+\range T\in\null\BigPar{T\XSlash \Par{\range T}}.$ Hence $T\XSlash \Par{\range T}=0.$\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{5A34}{34}}{
-	\TextNL{Sups $T\in\Lm{V}.$ Prove $T\XSlash \Par{\null T}$ is inje $\Longleftrightarrow\Par{\null T}\bigcap\Par{\range T}=\zeroSubs.$\vspace{2pt}}
+	\TextNL{Supp $T\in\Lm{V}.$ Prove $T\XSlash \Par{\null T}$ is inje $\Longleftrightarrow\Par{\null T}\bigcap\Par{\range T}=\zeroSubs.$\vspace{2pt}}
 }\NOTICE that $\BigPar{T\XSlash \Par{\null T}}\Par{u+\null T}=Tu+\null T=0\Longleftrightarrow Tu\in\Par{\null T}\bigcap\Par{\range T}.$\parSol{}
 Now $T\XSlash \Par{\null T}$ is inje $\Longleftrightarrow u+\null T=0\Longleftrightarrow Tu=0 \Longleftrightarrow\Par{\null T}\bigcap\Par{\range T}=\zeroSubs.$\PfEnd
 \SepLine
 
 \ProblemB{
-	\hypertarget{5A4e38}{}\TextB{Sups $V$ is finide, $T\in\Lm{V}$, and $U$ is invarsp of $V$ under $T$.}
+	\hypertarget{5A4e38}{}\TextB{Supp $V$ is finide, $T\in\Lm{V}$, and $U$ is invarsp of $V$ under $T$.}
 	\TextB{Define $T\XSlash U:V\XSlash U\rightarrow V\XSlash U$ by $\Par{T\XSlash U}\Par{v + U} = Tv + U$ for each $v\in V$.}
 	(a) \TextB{Show $T\XSlash U$ is well-defined and is liney. {\large Req $U$ invard $T.$}}
 	(b) \Sbra{{\normalsize\OR \Onumber{\hypertarget{5A35}{35}}\,}} \TextB{Show each eigval of $T\XSlash U$ is an eigval of $T$.}
@@ -855,7 +855,7 @@ Now $T\XSlash \Par{\null T}$ is inje $\Longleftrightarrow u+\null T=0\Longleftri
 (a) $v+U=w+U\Longleftrightarrow v-w\in U\Longrightarrow T\Par{v-w}\in U\Longleftrightarrow Tv+U=Tw+U.$\par\quad\Ha
 Hence $T\XSlash U$ is well-defined. Now we show $T\XSlash U$ is liney.\par\quad\Ha
 $\Par{T\XSlash U}\BigPar{\Par{v+U}+\lambda\Par{w+U}}=T\Par{v+\lambda w}+U=\Par{T\XSlash U}\Par{v+U}+\lambda\Par{T\XSlash U}\Par{w}.$ Checked.\vspace{4pt}\par\quad
-(b) Sups $\lambda$ is an eigval of $T\XSlash U$ with an eigvec $v+U.$ Then $Tv+U=\lambda v+U\Rightarrow \Par{T-\lambda I}v=u\in U.$\par\quad\Hb
+(b) Supp $\lambda$ is an eigval of $T\XSlash U$ with an eigvec $v+U.$ Then $Tv+U=\lambda v+U\Rightarrow \Par{T-\lambda I}v=u\in U.$\par\quad\Hb
 If $u=0\Rightarrow Tv=\lambda v,$ then done. Othws, we discuss in two cases.\par\quad\Hb
 If $\Par{T-\lambda I}\mmid_U$ is inv. Then $\exists\,!\,w\in U,\Par{T-\lambda I}\Par{w}=u=\Par{T-\lambda I} v\Rightarrow T\Par{v+w}=\lambda\Par{v+w}.$\par\quad\Hb
 Note that $v+w\neq 0,$ for if not, $v\in U\Rightarrow v+U=0,$ ctradic. Thus $\lambda$ is an eigval of $T.$\par\quad\Hb
@@ -878,10 +878,10 @@ Consider $\Par{T\XSlash U}\Par{1+U}=e^x+U=0\Longrightarrow 0$ is an eigval of $T
 \SepLine
 
 \ProblemBnoor{\hypertarget{5A4e39}{4E 5.A.39}}{
-	\TextB{Sups $V$ is finide and $T\in\Lm{V}$.}
+	\TextB{Supp $V$ is finide and $T\in\Lm{V}$.}
 	\TextB{Prove $T$ has an eigval $\Longleftrightarrow\exists\,$ invarsp $U$ under $T$ of dimension $\dim V - 1$.}
 }\par\quad
-(a) Sups $\lambda$ is an eigval of $T$ with an eigvec $v.$ \Par{ If $\dim V=1,$ then $U=\zeroSubs$ and done. }\par\quad\Ha
+(a) Supp $\lambda$ is an eigval of $T$ with an eigvec $v.$ \Par{ If $\dim V=1,$ then $U=\zeroSubs$ and done. }\par\quad\Ha
 Extend $v_1=v$ to $B_V=\Par{v_1,v_2\dots,v_n}.$\par\quad\Ha
 {\tgbfx Step 1.} If $\exists\,w_1\in\Span{v_2,\dots,v_n}$ suth $0\neq Tw_1\in\Span{v_1}.$\par\quad\Ha
 \Blind{{\tgbfx Step 1.}} Then extend $w_1=\alpha_{1,2}$ to a bss of $\Span{v_2,\dots,v_n}$ as $\Par{\alpha_{1,2},\dots,\alpha_{1,n}}.$\par\quad\Ha
@@ -903,7 +903,7 @@ Let $B_{\range\SmallPar{T-\lambda I}}=\Par{w_1,\dots,w_m},\;B_V=\Par{w_1,\dots,w
 If $m=\dim V-1.$ \Sbra{ $\Longleftrightarrow n=0.$ } Then $\range\Par{T-\lambda I}$ is invarsp of dim $\dim V-1.$\par\quad\Ha
 Othws, choose $k\in\Bra{1,\dots,n}$ and then let $U=\Span{w_1,\dots,w_m,u_1,\dots,u_{k-1},u_{k+1},\dots,u_n}.$\par\quad\Ha
 By Exe (1)(b), $U$ is invard $\Par{T-\lambda I}.$ Now $u\in U\Rightarrow \Par{T-\lambda I}\Par{u}\in U\Rightarrow Tu\in U.$\par\vspace{6pt}\quad
-(b) Sups $U$ is invarsp under $T$ of dim $m=\dim V-1.$ \Par{ If $m=0,$ then done. }\par\quad\Hb
+(b) Supp $U$ is invarsp under $T$ of dim $m=\dim V-1.$ \Par{ If $m=0,$ then done. }\par\quad\Hb
 Let $B_U=\Par{u_1,\dots,u_m},B_V=\Par{u_0,u_1,\dots,u_m}.$ We discuss in cases:\par\quad\Hb
 (I) If $Tu_0\in U,$ then $\range T=U$ so that $T$ is not surj $\Longleftrightarrow \null T\neq\zeroSubs\Longleftrightarrow$ $0$ is an eigval of $T.$\par\quad\Hb\EndI
 (II) If $Tu_0\not\in U,$ then $Tu_0=a_0 u_0+a_1 u_1+\dots+a_mu_m.$\par\quad\Hb\EndII
@@ -940,47 +940,47 @@ $\lceil$注：[8.40]\qquad\, \OR (4E 5.22)\qquad ——\,min poly;\par\qquad\qqu
 %[1]: (4E 5.A.33), 13; [2]: (4E 25, 26, 27, 28, 22); [3]: 6, (4E 10, 23, 21), 19; [4]: (4E 13, 14); [5]: (4E 20, 24), 10; [6]: 1, 2, 7, 3, (4E 5.A.32); [7]: 8, (4E 12, 3, 8); [8]: (4E 11), 5, (4E 7); [9]: 11, 12, (4E 17, 18); [10]: 18 \OR (4E 15), (4E 9), (4E 16); [11]: (2E Ch5.24), (4E 29).
 
 \ProblemBnoor{\hypertarget{5A4e33}{4E 5.A.33}}{
-	\TextB{Sups $T\in\Lm{V}$ and $\,m\,$ is a positive integer.}
+	\TextB{Supp $T\in\Lm{V}$ and $\,m\,$ is a positive integer.}
 	(a) \TextB{Prove $T$ is inje $\Longleftrightarrow$ $T^m$ is inje.}
 	(b) \TextB{Prove $T$ is surj $\Longleftrightarrow$ $T^m$ is surj.}
 }\par\quad
-(a) Sups $T^m$ is inje. Then $Tv=0\Rightarrow T^{m-1} Tv=T^m v=0\Rightarrow v=0.$\par\quad\Ha
-Sups $T$ is inje. Then $T^m v=T^{m-1}v=\cdots=T^2 v=Tv=v=0.$\par\vspace{4pt}\quad
-(b) Sups $T^m$ is surj. $\forall u\in V,\exists\,v\in V,T^m v=u=Tw,$ let $w=T^{m-1}v.$\par\quad\Hb
-Sups $T$ is surj. Then $\forall u\in V,\exists\,v_1,\dots,v_m\in V, T\Par{v_1}=T^2v_2=\cdots=T^m v_m=u.$\PfEnd
+(a) Supp $T^m$ is inje. Then $Tv=0\Rightarrow T^{m-1} Tv=T^m v=0\Rightarrow v=0.$\par\quad\Ha
+Supp $T$ is inje. Then $T^m v=T^{m-1}v=\cdots=T^2 v=Tv=v=0.$\par\vspace{4pt}\quad
+(b) Supp $T^m$ is surj. $\forall u\in V,\exists\,v\in V,T^m v=u=Tw,$ let $w=T^{m-1}v.$\par\quad\Hb
+Supp $T$ is surj. Then $\forall u\in V,\exists\,v_1,\dots,v_m\in V, T\Par{v_1}=T^2v_2=\cdots=T^m v_m=u.$\PfEnd
 \SepLine
 
 \BulletPointX\NoteFor{[5.17]}\TextB{}
-\TextB{Sups $T\in\Lm{V},p\in\PoFi$. Prove $\null p\Par{T}$ and $\range p\Par{T}$ are invard $T$.}
+\TextB{Supp $T\in\Lm{V},p\in\PoFi$. Prove $\null p\Par{T}$ and $\range p\Par{T}$ are invard $T$.}
 \Solution Using the commu in [5.10].\par\quad
-(a) Sups $u\in\null p\Par{T}$. Then $p\Par{T}u = 0$.\par\quad\Ha
+(a) Supp $u\in\null p\Par{T}$. Then $p\Par{T}u = 0$.\par\quad\Ha
 Thus $p\Par{T}\Par{Tu} = \BigPar{p\Par{T} T}u \Par{Tp\Par{T}}u=T\BigPar{p\Par{T}u} = 0$. Hence $Tu\in\null p\Par{T}.$\PfEnd\quad
-(b) Sups $u\in\range p\Par{T}$. Then $\exists\,v\in V$ suth $u = p\Par{T}v$.\par\quad\Hb
+(b) Supp $u\in\range p\Par{T}$. Then $\exists\,v\in V$ suth $u = p\Par{T}v$.\par\quad\Hb
 Thus $Tu = T\BigPar{p\Par{T}v} = p\Par{T}\Par{Tv}\in\range p\Par{T}.$\PfEnd
 \SepLine
 
 \BulletPointX\NoteFor{[5.21]} \TextB{\large Every optor on a finide nonzero complex vecsp has an eigval.}
-Sups $V$ is a finide complex vecsp of dim $n > 0$ and $T\in\Lm{V}$.\TextB{}
+Supp $V$ is a finide complex vecsp of dim $n > 0$ and $T\in\Lm{V}$.\TextB{}
 Choose a nonzero $v\in V$. $\Par{v,Tv,T^2 v,\dots,T^n v}$ of len $n+1$ is linely depe.\TextB{}
-Sups $a_0 I+a_1 T+\dots+a_n T^n=0.$ Then $\exists\,a_j\neq 0.$\TextB{}
+Supp $a_0 I+a_1 T+\dots+a_n T^n=0.$ Then $\exists\,a_j\neq 0.$\TextB{}
 {\tgsl Thus $\exists$ nonconst $\,p\,$ of smallest deg ( $\deg p>0$ ) suth $p\Par{T}v = 0$.}\TextB{}
 Becs $\exists\,\lambda \in \Cbb$ suth $p\Par{\lambda} = 0\Rightarrow\exists\,q \in\PoCi,p\Par{z} = \Par{z-\lambda}q\Par{z},\forall z \in\Cbb.$\TextB{}
 Thus $0 = p\Par{T}v = \Par{T -\lambda I}\BigPar{q\Par{T}v}$. By the min of $\deg p$ and $\deg q<\deg p$, $q\Par{T}v \neq 0$.\TextB{}
 Then $\Par{T-\lambda I}$ is not inje. Thus $\lambda$ is an eigval of $T$ with eigvec $q\Par{T}v$.\par
 \BulletPointX\Example\,\,\, \TextB{\large an optor on a complex vecsp with no eigvals}
 Define $T\in\Lm[\BigPar]{\PoCi}$ by $\Par{Tp}\Par{z} = zp\Par{z}$.\TextB{}
-Sups $p\in\PoCi$ is a nonzero poly. Then $\deg Tp=\deg p+1,$ and thus $Tp\neq\lambda p,\,\forall\lambda\in\Cbb.$\TextB{}
+Supp $p\in\PoCi$ is a nonzero poly. Then $\deg Tp=\deg p+1,$ and thus $Tp\neq\lambda p,\,\forall\lambda\in\Cbb.$\TextB{}
 Hence $T$ has no eigvals.\par
 \SepLine
 
 \ProblemN{\hypertarget{5BI13}{13}}{
-	\TextNL{Sups $V$ is a complex vecsp and $T\in\Lm{V}$ has no eigvals.}
+	\TextNL{Supp $V$ is a complex vecsp and $T\in\Lm{V}$ has no eigvals.}
 	\TextNL{Prove every subsp of $V$ invard $T$ is either $\zeroSubs$ or infinide.}
-}Sups $U$ is a finide nonzero invarsp on $\Cbb.$ Then by [5.21], $T\mmid_U$ has an eigval.\PfEnd
+}Supp $U$ is a finide nonzero invarsp on $\Cbb.$ Then by [5.21], $T\mmid_U$ has an eigval.\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{5BI16}{16}}{
-	\TextNL{Sups $0\neq v\in V.$ Define $S\in\Lm[\BigPar]{\PoC{\dim V},V}$ by $S\Par{p}=p\Par{T}v.$ Prove $[$ 5.21 $].$}
+	\TextNL{Supp $0\neq v\in V.$ Define $S\in\Lm[\BigPar]{\PoC{\dim V},V}$ by $S\Par{p}=p\Par{T}v.$ Prove $[$ 5.21 $].$}
 }\par\quad
 Becs $\dim\PoC{\dim V}=\dim V+1.$ Then $S$ is not inje. Hence $\exists\,0\neq p\in\PoC{\dim V},p\Par{T}v=0.$\par\quad
 Using [4.14], write $p\Par{z}=c\Par{z-\lambda_1}\cdots\Par{z-\lambda_m}.$ Apply $T$ to both sides: $p\Par{T}=c\Par{T-\lambda_1 I}\cdots\Par{T-\lambda_m I}.$\par\quad
@@ -989,7 +989,7 @@ Thus at least one of $\Par{T-\lambda_j I}$ is not inje ( becs $p\Par{T}$ is not 
 
 
 \ProblemN{\hypertarget{5BI17}{17}}{
-	\TextNL{Sups $0\neq v\in V.$ Define $S\in\Lm[\BigPar]{\PoC{\SmallPar{\dim V}{^2}},\Lm{V}}$ by $S\Par{p}=p\Par{T}.$ Prove [5.21].}
+	\TextNL{Supp $0\neq v\in V.$ Define $S\in\Lm[\BigPar]{\PoC{\SmallPar{\dim V}{^2}},\Lm{V}}$ by $S\Par{p}=p\Par{T}.$ Prove [5.21].}
 }\par\quad
 Becs $\dim\PoC{\SmallPar{\dim V}{^2}}=\Par{\dim V}{^2}+1.$ Then $S$ is not inje.\par\quad
 Hence $\exists\,p\in\PoC{\SmallPar{\dim V}{^2}}\nonzero,0=S\Par{p}=p\Par{T}=c\Par{T-\lambda_1 I}\cdots\Par{T-\lambda_m I},$ where $c\neq 0.$\par\quad
@@ -999,13 +999,13 @@ Thus $\Par{T-\lambda_1 I}\cdots\Par{T-\lambda_m I}=0\Longrightarrow\exists\,j,\P
 
 \BulletPointX\NoteFor{[8.40]} \TextB{\large def for min poly }
 %{\Large M{\normalsize INIMAL} P{\normalsize OLYNOMIAL}: E{\normalsize XISTENCE}, U{\normalsize NIQUENESS}, D{\normalsize EGREE}}\qquad (Definition For Mini Poly)\par\,\,
-\TextB{Sups $V$ is finide and $T\in\Lm{V}$.}
-\TextB{Sups $M_T^0=\Bra{p_j}{_{j\in\Gamma}}$ is the set of all monic poly that give 0 whenever $T$ is applied.}
+\TextB{Supp $V$ is finide and $T\in\Lm{V}$.}
+\TextB{Supp $M_T^0=\Bra{p_j}{_{j\in\Gamma}}$ is the set of all monic poly that give 0 whenever $T$ is applied.}
 \TextB{Prove $\exists\,!\,p_k\in M_T^0,\deg p_k=\min\!${\FontNorm$\Bra{\deg p_j}{_{j\in\Gamma}}$}$\leqslant\dim V$.}
 \Solution\Or Another Proof :\par\quad
 {\Large[} {\tgsl\large Existns Part} {\Large]}\quad We use induc on $\dim V.$\par\quad
 (i) If $\dim V = 0$, then $I=0\in\Lm{V}$ and let $p=1$, done.\par\quad\Endi
-(ii) Sups $\dim V\geqslant 1.$\par\quad\Hii
+(ii) Supp $\dim V\geqslant 1.$\par\quad\Hii
 {\tgsl Asum $\dim V > 0$ and that the desired result is true for all optors on all vecsps of smaller dim.}\par\quad\Hii
 Let $u\in V,u\neq 0$. The list $\Par{u, Tu, \dots, T^{\dim V} u}$ of len $\Par{1 + \dim V}$ is linely depe.\par\quad\Hii
 Then $\exists\,!\,T^m$ of smallest deg suth $T^m u\in\Span{u, Tu, \dots, T^{m-1} u}$.\par\quad\Hii
@@ -1020,13 +1020,13 @@ By {\tgsl asum}, $\exists\,s\in M_T^0$ of smallest deg ( and $\deg s\leqslant\di
 Hence $\forall v\in V,\BigPar{\Par{sq}\Par{T}}\Par{v} = s\Par{T}\BigPar{q\Par{T}v} = 0.$\par\quad\Hii
 Thus $sq\in M_T^0$ and $\deg sq\leqslant \dim V$.\par\vspace{5pt}\quad
 {\Large[} {\tgsl\large Uniqnes Part} {\Large]}\par\quad
-Sups $p,q\in M_T^0$ are of the smallest deg. Then $\Par{p-q}\Par{T}=0.$ 又 $\Deg\Par{p-q}=m<${\FontSmall$\min\!\Bra{\deg p_j}{_{j\in\Gamma}}$}.\par\quad
+Supp $p,q\in M_T^0$ are of the smallest deg. Then $\Par{p-q}\Par{T}=0.$ 又 $\Deg\Par{p-q}=m<${\FontSmall$\min\!\Bra{\deg p_j}{_{j\in\Gamma}}$}.\par\quad
 Hence $p-q=0,$ for if not, $\exists\,!\,c\in\Fbb,c\Par{p-q}\in M_T^0$. Ctradic.\PfEnd
 \SepLine
 
 \ProblemBnoor{4E 5.31, \hypertarget{5BI4e25}{4E 5.B.25} and \hypertarget{5BI4e26}{26}}{
 	\TextB{\large\; min poly of restr optor and min poly of quot optor}
-	\TextB{Sups $V$ is finide, $T\in \Lm{V}$, and $U$ is invarsp of $V$ under $T$.}
+	\TextB{Supp $V$ is finide, $T\in \Lm{V}$, and $U$ is invarsp of $V$ under $T$.}
 	\TextB{Let $\,p\,$ be the min poly of $T.$}
 	(a) \TextB{Prove $\,p\,$ is a poly multi of the min poly of $T\mmid_U$.}
 	(b) \TextB{Prove $\,p\,$ is a poly multi of the min poly of $T\XSlash U$.}
@@ -1037,7 +1037,7 @@ Hence $p-q=0,$ for if not, $\exists\,!\,c\in\Fbb,c\Par{p-q}\in M_T^0$. Ctradic.\
 }\par\quad
 (a) $p\Par{T}=0\Rightarrow\forall u\in U,p\Par{T}u=0\Rightarrow p\Par{T\mmid_U}=0\Rightarrow$ By [8.46].\PfEnd\quad
 (b) $p\Par{T}=0\Rightarrow\forall v\in V,p\Par{T}v=0\Rightarrow p\Par{T\XSlash U}\Par{v+U}=p\Par{T}v+U=0.$\PfEnd\quad
-(c) Sups $r$ is the min poly of $T\mmid_U,s$ is the min poly of $T\XSlash U.$\par\quad\Hc
+(c) Supp $r$ is the min poly of $T\mmid_U,s$ is the min poly of $T\XSlash U.$\par\quad\Hc
 Becs $\forall v\in V,s\Par{T\XSlash U}\Par{v+U}=s\Par{T}v+U=0.$
 So that $\forall v\in V$ but $v\not\in U,s\Par{T}v\in U.$\par\quad\Hc
 又 $\forall u\in U,r\Par{T\mmid_U}u=r\Par{T}u=0.$\par\quad\Hc
@@ -1048,7 +1048,7 @@ Hence $\forall v\in V, \Par{rs}\Par{T}v=0\Rightarrow \Par{rs}\Par{T}=0.$\PfEnd\q
 \SepLine
 
 \ProblemBnoor{\hypertarget{5BI4e27}{4E 5.B.27}}{
-	\TextB{Sups $\Fbb=\Rbb,$ $V$ is finide, and $T\in \Lm{V}$.}
+	\TextB{Supp $\Fbb=\Rbb,$ $V$ is finide, and $T\in \Lm{V}$.}
 	\TextB{Prove the min poly $\,p\,$ of $T_{\!\Cbb}$ equals the min poly $\,q\,$ of $T$.}
 }\par\quad
 (a) $\forall u+\i 0\in V_{\!\Cbb},p\Par{T_{\!\Cbb}}\Par{u}=p\Par{T}u=0\Rightarrow\forall u\in V,p\Par{T}u=0\Rightarrow p$ is a poly multi of $q.$\par\quad
@@ -1056,7 +1056,7 @@ Hence $\forall v\in V, \Par{rs}\Par{T}v=0\Rightarrow \Par{rs}\Par{T}=0.$\PfEnd\q
 \SepLine
 
 \ProblemBnoor{\hypertarget{5BI4e28}{4E 5.B.28}}{
-	\TextB{Sups $V$ is finide and $T\in \Lm{V}$.}
+	\TextB{Supp $V$ is finide and $T\in \Lm{V}$.}
 	\TextB{Prove the min poly $\,p\,$ of $T\apostrophe \in\Lm{V\apostrophe}$ equals the min poly $\,q\,$ of $T$.}
 }\par\quad
 (a) $\forall \varphi\in V\apostrophe,p\Par{T\apostrophe}\varphi=\varphi\circ \BigPar{p\Par{T}}=0\Rightarrow\forall\varphi\in V\apostrophe,p\Par{T}\in\null\varphi\Rightarrow p\Par{T}=0,p$ is a poly multi of $q.$\par\quad
@@ -1064,26 +1064,26 @@ Hence $\forall v\in V, \Par{rs}\Par{T}v=0\Rightarrow \Par{rs}\Par{T}=0.$\PfEnd\q
 \SepLine
 
 \ProblemBnoor{4E 5.32}{
-	\TextB{Sups $T\in\Lm{V}$ and $\,p\,$ is the min poly.}
+	\TextB{Supp $T\in\Lm{V}$ and $\,p\,$ is the min poly.}
 	\TextB{Prove $T$ is not inje $\Longleftrightarrow$ the const term of $\,p\,$ is $0.$}
 }\par\quad
 $T$ is not inje $\Longleftrightarrow 0$ is an eigval of $T$ $\Longleftrightarrow 0$ is a zero of $p \Longleftrightarrow$ the const term of $p$ is $0.$\PfEnd\vspace{5pt}\quad
 \Or Becs $p\Par{0}=\Par{z-0}\Par{z-\lambda_1}\cdots\Par{z-\lambda_m}=0\Rightarrow T\Par{T-\lambda_1 I}\cdots\Par{T-\lambda_m I}=0$\par\quad
 又 $p$ is the min poly $\Rightarrow q$ define by $q\Par{z}=\Par{z-\lambda_1}\cdots\Par{z-\lambda_m}$ is suth $q\Par{T}\neq 0.$\par\quad
 Hence $0=p\Par{T}=Tq\Par{T}\Rightarrow T$ is not inje.\par\quad
-Conversely, sups $\Par{T-0I}$ is not inje, then $0$ is a zero of $p$, so that the const term is $0$.\PfEnd
+Conversely, supp $\Par{T-0I}$ is not inje, then $0$ is a zero of $p$, so that the const term is $0$.\PfEnd
 \SepLine
 
 \ProblemBnoor{\hypertarget{5BI4e22}{4E 5.B.22}}{
 	\TextB{}
-	\TextB{Sups $V$ is finide, $T\in \Lm{V}$. Prove $T$ is inv $\Longleftrightarrow I\in\Span{T, T^2, \dots , T^{\dim V}}.$}
+	\TextB{Supp $V$ is finide, $T\in \Lm{V}$. Prove $T$ is inv $\Longleftrightarrow I\in\Span{T, T^2, \dots , T^{\dim V}}.$}
 }Denote the min poly by $p,$ where for all $z\in\Fbb,p\Par{z}=a_0 +a_1 z+\dots+z^m.$\par\quad
 Notice that $V$ is finide. $T$ is inv $\Longleftrightarrow T$ is inje $\Longleftrightarrow$ $p\Par{0}\neq 0$.\par\quad
 Hence $p\Par{T}=0=a_0 I+a_1 T+\dots+T^m,$ where $a_0\neq 0$ and $m\leqslant\dim V.$\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{5BI6}{6}}{
-	\TextN{Sups $T\in\Lm{V}$ and $U$ is a subsp of $V$ invard $T$.}
+	\TextN{Supp $T\in\Lm{V}$ and $U$ is a subsp of $V$ invard $T$.}
 	\TextN{Prove $U$ is invard $p\Par{T}$ for every poly $p\in\PoFi$.}
 }\par\quad
 $\forall u\in U,Tu\in U\Rightarrow Iu,Tu,T\Par{Tu},\dots,T^m u\in U\Longrightarrow\forall a_k\in\Fbb,\Par{a_0 I+a_1 T+\dots+a_m T^m}u\in U.$\PfEnd
@@ -1091,13 +1091,13 @@ $\forall u\in U,Tu\in U\Rightarrow Iu,Tu,T\Par{Tu},\dots,T^m u\in U\Longrightarr
 \SepLine
 
 \ProblemBnoor{\hypertarget{5BI4e10}{4E 5.B.10}, \hypertarget{5BI4e23}{23}}{
-	\TextB{Sups $V$ is finide, $T\in \Lm{V}$ and $\,p\,$ is the min poly with deg $\,m.$ Sups $v\in V.$}
+	\TextB{Supp $V$ is finide, $T\in \Lm{V}$ and $\,p\,$ is the min poly with deg $\,m.$ Supp $v\in V.$}
 	(a) \TextB{Prove $\,\,\Span{v,Tv,\dots,T^{m-1}v}=\Span{v,Tv,\dots,T^{j-1} v}$ for some $j\leqslant m.$}
 	(b) \TextB{Prove $\,\,\Span{v,Tv,\dots,T^{m-1}v}=\Span{v, Tv, \dots , T^{m-1} v,\dots,T^n v}.$}
 }\par\quad
 \Comment\,\,\, By \NOTEFOR [8.40], $j$ has an upper bound $m-1,$ $m$ has an upper bound $\dim V.$\par\quad
-Write $p\Par{z}=a_0 +a_1 z+\dots+z^m \,\,\Par{\,m\leqslant \dim V\,}.$ If $v=0,$ then done. Sups $v\neq 0.$\par\quad
-(a) Sups $j\in\Nbp$ is the smallest suth $T^j v\in\Span{v,Tv,\dots,T^{j-1}v}=U_0.$ Then $j\leqslant m.$\par\quad\Ha
+Write $p\Par{z}=a_0 +a_1 z+\dots+z^m \,\,\Par{\,m\leqslant \dim V\,}.$ If $v=0,$ then done. Supp $v\neq 0.$\par\quad
+(a) Supp $j\in\Nbp$ is the smallest suth $T^j v\in\Span{v,Tv,\dots,T^{j-1}v}=U_0.$ Then $j\leqslant m.$\par\quad\Ha
 Write $T^j v=c_0 v+c_1 Tv+\dots+c_{j-1}T^{j-1}v.$ And becs $T\Par{T^k v}=T^{k+1}\in U_0.$ $U_0$ is invard $T.$\par\quad\Ha
 By Exe (6), $\forall k\in\Nbb,\,\,\,T^{j+k}v=T^k\Par{T^j v}\in U_0.$\par\quad\Ha
 Thus $U_0=\Span{v,Tv,\dots,T^{j-1} v,\dots,T^n v}$ for all $n\geqslant j-1.$ Let $n=m-1$ and done.\par\quad
@@ -1106,7 +1106,7 @@ By (a), $U=U_0=\Span{v,Tv,\dots,T^{j-1},\dots,T^{m-1},\dots,T^n}$ for all $n\geq
 \SepLine
 
 \ProblemBnoor{\hypertarget{5BI4e21}{4E 5.B.21}}{
-	\TextB{Sups $V$ is finide and $T\in \Lm{V}$.}
+	\TextB{Supp $V$ is finide and $T\in \Lm{V}$.}
 	\TextB{Prove the min poly $\,p\,$ has deg at most $1 + \dim \range T$.}
 	\TextB{\large If $\dim \range T < \dim V - 1$, then this result gives a better upper bound for the deg of min poly.}
 }\par\quad
@@ -1117,17 +1117,17 @@ Hence $sq$ is the min poly ( see \NOTEFOR [8.40] ) and $\Deg\Par{sq}=\deg s+\deg
 \SepLine
 
 \ProblemN{\hypertarget{5BI19}{19}}{
-	\TextNL{Sups $V$ is finide, $\dim V>1,T\in\Lm{V}.$ Prove $\Bra{\,p\Par{T}:p\in\PoFi}\neq\Lm{V}.$\vspace{2pt}}
+	\TextNL{Supp $V$ is finide, $\dim V>1,T\in\Lm{V}.$ Prove $\Bra{\,p\Par{T}:p\in\PoFi}\neq\Lm{V}.$\vspace{2pt}}
 }If $\forall S\in\Lm{V},\exists\,p\in\PoFi,S=p\Par{T}.$ Then by [5.20], $\forall S_1,S_2\in\Lm{V},S_1S_2=S_2S_1.$\parSol{}
 Note that $\dim\geqslant 2.$ By (3.A.14), $\exists\,S_1,S_2\in\Lm{V},S_1S_2\neq S_2S_1.$ Ctradic.\PfEnd
 \SepLine
 
 \ProblemB{
-	\hypertarget{5BI4e19}{}\TextB{Sups $V$ is finide and $T\in \Lm{V}$. Let $\mathcal{E} =\Bra{q\Par{T}: q \in \PoFi}$.}
+	\hypertarget{5BI4e19}{}\TextB{Supp $V$ is finide and $T\in \Lm{V}$. Let $\mathcal{E} =\Bra{q\Par{T}: q \in \PoFi}$.}
 	\TextB{Prove $\dim \mathcal{E}$ equals the deg of the min poly of $T$.}
 }\par\quad
 Becs the list $\Par{I,T,\dots,T^{\Par{\dim V}^2}}$ of len $\dim\Lm{V}+1$ is linely depe in $\dim\Lm{V}.$\par\quad
-Sups $m\in\Nbp$ is the smallest suth $T^m=a_0 I+\dots+a_{m-1}T^{m-1}.$\par\quad
+Supp $m\in\Nbp$ is the smallest suth $T^m=a_0 I+\dots+a_{m-1}T^{m-1}.$\par\quad
 Then $q$ defined by $q\Par{z}=z^m-a_{m-1}z^{m-1}-\dots-a_0$ is the min poly ( see [8.40] ).\par\quad
 For any $k\in\Nbp,\,\,T^{m+k}=T^k\Par{T^m}\in\Span{I,T,\dots,T^{m-1}}=U.$\par\quad
 %( Using induc. (i) $k=0,T^{m+k}=T^m\in U$;\par\qquad\qquad\qquad\qquad\,
@@ -1137,7 +1137,7 @@ Hence $\Span{I,T,\dots,T^{\Par{\dim V}^2}}=\Span{I,T,\dots,T^{\Par{\dim V}^2-1}}
 Note that by the min of $m,$ $\Par{I,T,\dots,T^{m-1}}$ is liney indep.\par\quad
 Thus $\dim U=m=\dim\Span{I,T,\dots,T^{\Par{\dim V}^2-1}}=\dim\Span{I,T,\dots,T^n}$ for all $m<n\in\Nbp.$\par\vspace{6pt}\quad
 Define $\varphi\in\Lm[\BigPar]{\PoF{m-1},\mathcal{E}}$ by $\varphi\Par{p}=p\Par{T}.$\par\quad
-(a) Sups $p\Par{T}=0.$ 又 $\deg p\leqslant m-1$ $\Rightarrow p=0.$ Then $\varphi$ is inje.\par\quad
+(a) Supp $p\Par{T}=0.$ 又 $\deg p\leqslant m-1$ $\Rightarrow p=0.$ Then $\varphi$ is inje.\par\quad
 (b) $\forall S=a_0 I+a_1 T+\dots+a_{m-1}T^{m-1}\in\mathcal{E},$ define $p\in\PoF{m-1}$ by\par\quad\Hb
 $p\Par{z}=a_0+a_1 z+\dots+a_{m-1}z^{m-1}\Rightarrow\varphi\Par{p}=S.$ Then $\varphi$ is surj.\par\quad
 Hence $\mathcal{E}$ and $\PoF{m-1}$ are iso. 又 $\dim\PoF{m-1}=m=\dim U.
@@ -1145,7 +1145,7 @@ $\PfEnd
 \SepLine
 
 \ProblemBnoor{\hypertarget{5BI4e13}{4E 5.B.13}}{
-	\TextB{Sups $T\in \Lm{V}$ and $q \in \PoFi$ is defined by}
+	\TextB{Supp $T\in \Lm{V}$ and $q \in \PoFi$ is defined by}
 	\TextB{\centerline{$q\Par{z}=a_0 +a_1 z+\dots+a_n z^n,$ where $a_n\neq 0,$ for all $z\in\Fbb.$}}
 	\TextB{Denote the min poly of $T$ by $\,p\,$ defined by}
 	\TextB{\centerline{$p\Par{z}=c_0+c_1 z+\dots+c_{m-1}z^{m-1}+z^m$ for all $z\in\Fbb.$}}
@@ -1157,10 +1157,10 @@ $\Rightarrow T^m=-c_0 I-c_1 T-\dots-c_{m-1}T^{m-1},$\par\qquad\qquad\qquad\quad\
 define $r$ by $r\Par{z}=q\Par{z}+\Sbra{-a_m z^m+a_m\Par{-c_0-c_1 z-\dots-c_{m-1}z^{m-1}}}$\par\qquad\qquad\qquad\qquad\qquad\qquad\qquad\,\,
 $=\Par{a_0-a_m c_0}+\Par{a_1-a_m c_1}z+\dots+\Par{a_{m-1}-a_m c_{m-1}}z^{m-1},$\par\qquad\qquad\qquad\quad\,\,\,\,
 hence $r\Par{T}=0,\deg r<m$ and done.\par\quad
-Now sups $\deg q\geqslant\deg p.$ We use induc on $\deg q.$\par\quad
+Now supp $\deg q\geqslant\deg p.$ We use induc on $\deg q.$\par\quad
 (i) $\deg q=\deg p,$ then the desired result is true, as shown above.\par\quad\Endi
 (ii) $\deg q>\deg p,$ asum the desired result is true for $\deg q=n.$\par\quad\Hii
-Sups $f\in\PoFi$ suth $f\Par{z}=b_0 +b_1 z+\dots+b_n z^n+b_{n+1}z^{n+1}.$\par\quad\Hii
+Supp $f\in\PoFi$ suth $f\Par{z}=b_0 +b_1 z+\dots+b_n z^n+b_{n+1}z^{n+1}.$\par\quad\Hii
 Apply the asum to $g$ defined by $g\Par{z}=b_0 +b_1 z+\dots+b_n z^n,$
 \par\quad\Hii\qquad\qquad\qquad\quad getting $s$ defined by $s\Par{z}=d_0+d_1 z+\dots+d_{m-1} z^{m-1}.$\par\quad\Hii
 Thus $g\Par{T}=s\Par{T}\Rightarrow f\Par{T}=g\Par{T}+b_{n+1}T^{n+1}=s\Par{T}+b_{n+1}T^{n+1}.$\par\quad\Hii
@@ -1173,7 +1173,7 @@ $\Rightarrow f\Par{T}=\Par{d_0+k_0}+\Par{d_1+k_1}z+\dots+\Par{d_{m-1}+k_{m-1}}z^
 \SepLine
 
 \ProblemBnoor{\hypertarget{5BI4e14}{4E 5.B.14}}{
-	\TextB{Sups $V$ is finide, $T\in \Lm{V}$ has min poly $\,p\,$}
+	\TextB{Supp $V$ is finide, $T\in \Lm{V}$ has min poly $\,p\,$}
 	\TextB{\centerline{defined by $p\Par{z}=a_0 + a_1 z + \dots + a_{m-1} z^{m-1}+z^m,$ $a_0\neq 0.$}}
 	\TextB{Find the min poly of $T^{-1}$.}
 }\par\quad
@@ -1183,7 +1183,7 @@ $a_0\Par{T^{-1}}^m+a_1\Par{T^{-1}}^{m-1}+\dots+a_{m-1}T^{-1}+I=0.$\par\quad
 Define $q$ by $q\Par{z}=z^m+\Frac{a_1}{a_0} z^{m-1}+\dots+\Frac{a_{m-1}}{a_0}z+\Frac{1}{a_0}$ for all $z\in\Fbb.$\par\vspace{6pt}\quad
 We now show $\Par{T^{-1}}^k\not\in\Span{I,T^{-1},\dots,\Par{T^{-1}}^{k-1}}$\par\qquad\qquad\qquad\,\,\,
 for every $k\in\Bra{1,\dots,m-1}$ by ctradic, so that $q$ is exactly the min poly of $T^{-1}.$\par\quad
-Sups $\Par{T^{-1}}^k\in\Span{I,T^{-1},\dots,\Par{T^{-1}}^{k-1}}.$\par\quad
+Supp $\Par{T^{-1}}^k\in\Span{I,T^{-1},\dots,\Par{T^{-1}}^{k-1}}.$\par\quad
 Then let $\Par{T^{-1}}^k=b_0 I+b_1 T^{-1}+\dots+b_{k-1}T^{k-1}.$ Apply $T^k$ to both sides,\par\qquad\qquad
  getting $I=b_0 T^k+b_1 T^{k-1}+\dots+b_{k-1}T,$ hence $T^k\in\Span{I,T,\dots,T^{k-1}}.$\par\vspace{6pt}\quad
 Thus $f$ defined by $f\Par{z}=z^k+\Frac{b_1}{b_0} z^{k-1}+\dots+\Frac{b_{k-1}}{b_0} z-\Frac{1}{b_0}$ is a poly multi of $p$.\par\quad
@@ -1191,7 +1191,7 @@ While $\deg f<\deg p.$ Ctradic.\PfEnd
 \SepLine
 
 \BulletPointX\NoteForSmall{[8.49]}\TextB{}
-\TextB{Sups $V$ is a finide complex vecsp and $T\in\Lm{V}.$}
+\TextB{Supp $V$ is a finide complex vecsp and $T\in\Lm{V}.$}
 \TextB{By [4.14], the min poly has the form $\Par{z -\lambda_1 } \cdots \Par{z - \lambda_m}$,}
 {\tgsl\large where $\lambda_1,\dots,\lambda_m$ are all the eigvals of $T$, {\tgsc possibly with repetitions}.}\par
 \BulletPointX\Comment\TextB{}
@@ -1202,7 +1202,7 @@ we can {\tgsc give an alternative proof of [5.13]}.
 
 \ProblemB[]{
 	\NOTICE \BigPar{\hypertarget{5BI4e20}{}\hypertarget{5BI4e24}{} See also 4E 5.B.20,24 }\TextB{}
-	\TextB{\tgnr Sups $\alpha_1,\dots,\alpha_n$ are all the disti eigvals of $T,$\vspace{2pt}}
+	\TextB{\tgnr Supp $\alpha_1,\dots,\alpha_n$ are all the disti eigvals of $T,$\vspace{2pt}}
 	\TextB{\tgnr and therefore are all the disti zeros of the min poly.\vspace{2pt}}
 	\TextB{\tgnr Also, the min poly of $T$ is a poly multi of, but not equal to, $\Par{z-\alpha_1}\cdots\Par{z-\alpha_n}$.\vspace{2pt}}
 	\TextB{\tgnr If we define $q$ by $q\Par{z}=\Par{z-\alpha_1}^{\dim V-\Par{n-1}}\cdots\Par{z-\alpha_n}^{\dim V-\Par{n-1}},$\vspace{2pt}}
@@ -1214,10 +1214,10 @@ we can {\tgsc give an alternative proof of [5.13]}.
 \SepLine
 
 \ProblemN{\hypertarget{5BI10}{10}}{
-	\TextNL{Sups $T\in\Lm{V},\lambda$ is an eigval of $T$ with an eigvec $v.$}
+	\TextNL{Supp $T\in\Lm{V},\lambda$ is an eigval of $T$ with an eigvec $v.$}
 	\TextNL{Prove for any $p\in\PoFi,p\Par{T}v=p\Par{\lambda}v.$}
 }\par\quad
-Sups $p$ is defined by $p\Par{z}=a_0+a_1 z+\dots+a_m z^m$ for all $z\in\Fbb.$ Becs for any $n\in\Nbp,T^n v=\lambda^n v.$\par\quad
+Supp $p$ is defined by $p\Par{z}=a_0+a_1 z+\dots+a_m z^m$ for all $z\in\Fbb.$ Becs for any $n\in\Nbp,T^n v=\lambda^n v.$\par\quad
 Thus $p\Par{T}v=a_0 v+a_1 Tv+\dots+a_m T^m v=a_0 v+a_1 \lambda v+\dots+a_m \lambda^m v=p\Par{\lambda}v.$\PfEnd
 \Comment\,\,\, For any $p\in\PoFi$ suth $p\Par{z}=\Par{z-\lambda_1}^{\alpha_1}\cdots\Par{z-\lambda_m}^{\alpha_m},$ the result is true as well.\par\quad
 Now we prove that $\Par{T-\lambda_1 I}^{\alpha_1}\cdots\Par{T-\lambda_m I}^{\alpha_m}v=\Par{\lambda-\lambda_1}^{\alpha_1}\cdots\Par{\lambda-\lambda_m}^{\alpha_m}v.$\par\quad
@@ -1237,7 +1237,7 @@ $=\Par{\lambda-\lambda_1}^{\alpha_1}\cdots\Par{\lambda-\lambda_m}^{\alpha_m}v.$\
 \SepLine\pagebreak
 
 \ProblemN{\hypertarget{5BI1}{1}}{
-	\TextN{Sups $T\in\Lm{V}$ and $\exists\,n\in\Nbp$ suth $T^n=0.$}
+	\TextN{Supp $T\in\Lm{V}$ and $\exists\,n\in\Nbp$ suth $T^n=0.$}
 	\TextN{Prove $\Par{I-T}$ is inv and $\Par{I-T}{^{-1}}=I+T+\dots+T^{n-1}.$}
 }Note that $1-x^n=\Par{1-x}\Par{1+x+\dots+x^{n-1}}.$\parSol{}
 \!\!\!$\MathRightBrace{l}{
@@ -1246,27 +1246,27 @@ $=\Par{\lambda-\lambda_1}^{\alpha_1}\cdots\Par{\lambda-\lambda_m}^{\alpha_m}v.$\
 \SepLine
 
 \ProblemN{\hypertarget{5BI2}{2}}{
-	\TextN{Sups $T\in\Lm{V}$ and $\Par{T - 2I}\Par{T - 3I}\Par{T - 4I} = 0$.}
-	\TextN{Sups $\lambda$ is an eigval of $T$. Prove $\lambda = 2$ or $\lambda = 3$ or $\lambda = 4$.}
+	\TextN{Supp $T\in\Lm{V}$ and $\Par{T - 2I}\Par{T - 3I}\Par{T - 4I} = 0$.}
+	\TextN{Supp $\lambda$ is an eigval of $T$. Prove $\lambda = 2$ or $\lambda = 3$ or $\lambda = 4$.}
 }\par\quad
-Sups $v$ is an eigvec corres to $\lambda.$ Then for any $p\in\PoFi,p\Par{T}v=p\Par{\lambda}v.$\par\quad
+Supp $v$ is an eigvec corres to $\lambda.$ Then for any $p\in\PoFi,p\Par{T}v=p\Par{\lambda}v.$\par\quad
 Hence $0=\Par{T - 2I}\Par{T - 3I}\Par{T - 4I}v=\Par{\lambda-2}\Par{\lambda-3}\Par{\lambda-4}v$ while $v\neq 0\Rightarrow\lambda = 2,3$ or $4.$\PfEnd\vspace{2pt}
 \Comment \,\,\,Note that $\Par{T-2I}\Par{T-3I}\Par{T-4I}=0$ is not inje, so that $2,3,4$ are eigvals of $T.$\parCom
 But it doesn't mean that all the eigvals of $T$ are exactly $2,3,4.$
 \SepLine
 
 \ProblemNnoor{\hypertarget{5BI7}{7}}{See \hLk{5A22}{5.A.22}}{
-	\TextN{Sups $T\in\Lm{V}$. Prove $9$ is an eigval of $T^2$ $\Longleftrightarrow$ $3$ or $-3$ is an eigval of $T$.}
+	\TextN{Supp $T\in\Lm{V}$. Prove $9$ is an eigval of $T^2$ $\Longleftrightarrow$ $3$ or $-3$ is an eigval of $T$.}
 }\par\quad
-(a) Sups $\lambda$ is an eigval of $T$ with an eigvec $v.$\par\quad\Ha
+(a) Supp $\lambda$ is an eigval of $T$ with an eigvec $v.$\par\quad\Ha
 Then $\Par{T-3I}\Par{T+3I}v=\Par{\lambda-3}\Par{\lambda+3}v=0\Rightarrow\lambda=\pm 3.$\par\quad
-(b) Sups $3$ or $-3$ is an eigval of $T$ with an eigvec $v.$ Then $Tv=\pm 3v\Rightarrow T^2 v=T\Par{Tv}=9v$\PfEnd\vspace{4pt}\quad
+(b) Supp $3$ or $-3$ is an eigval of $T$ with an eigvec $v.$ Then $Tv=\pm 3v\Rightarrow T^2 v=T\Par{Tv}=9v$\PfEnd\vspace{4pt}\quad
 \Or $9$ is an eigval of $T^2\Longleftrightarrow\Par{T^2-9I}=\Par{T-3I}\Par{T+3I}$ is not inje $\Longleftrightarrow\pm 3$ is an eigval.\PfEnd
 \par
 \SepLine
 
 \ProblemN{\hypertarget{5BI3}{3}}{
-	\TextN{Sups $T\in\Lm{V},T^2=I$ and $-1$ is not an eigval of $T.$ Prove $T=I.$}
+	\TextN{Supp $T\in\Lm{V},T^2=I$ and $-1$ is not an eigval of $T.$ Prove $T=I.$}
 }\par\quad
 $T^2-I=\Par{T+I}\Par{T-I}$ is not inje, 又 $-1$ is not an eigval of $T$ $\Longrightarrow$ By {\TIPS}.\PfEnd\vspace{6pt}\quad
 \Or Note that $\forall v\in V,v=[\frac{\;1\;}{2}\Par{I-T}v]+[\frac{\;1\;}{2}\Par{I+T}v].$\vspace{2pt}\par\quad
@@ -1278,7 +1278,7 @@ Hence $V=\null\Par{I-T}\Rightarrow\range\Par{I-T}=\zeroSubs.$ Thus $I-T=0\in\Lm{
 \SepLine
 
 \ProblemBnoor{\hypertarget{5A4e32}{4E 5.A.32}}{
-	\TextB{Sups $T\in\Lm{V}$ has no eigvals and $T^4 = I$. Prove $T^2=-I$.}
+	\TextB{Supp $T\in\Lm{V}$ has no eigvals and $T^4 = I$. Prove $T^2=-I$.}
 }\par\quad
 Becs $T^4-I=\Par{T^2-I}\Par{T^2+I}=0$ is not inje $\Rightarrow \Par{T^2-I}$ or $\Par{T^2+I}$ is not inje.\par\quad
 又 $T$ has no eigvals $\Rightarrow$ $\Par{T^2-I}=\Par{T-I}\Par{T+I}$ is inje. Hence $T^2+I=0\in\Lm{V},$ for if not,\par\quad
@@ -1331,7 +1331,7 @@ If $\theta=\pi+2k\pi,$ then $T\Par{w,z}=\Par{-w,-z},T^2=I$ and the min poly is $
 If $\theta=2k\pi,$ then $T=I$ and the min poly is $z-1.$\par\quad
 Othws $\Par{v,Tv}$ is liney indep. Then $\Span{v,Tv}=\Rbb^2.$ Note that $\nexists\,b\in\Fbb,T-bI=0.$\par\quad
 \par\vspace{-16pt}\quad
-Thus sups the min poly $p$ is defined by $p\Par{z}=z^2+bz+c$ for all $z\in\Rbb.$\par\vspace{20pt}\quad
+Thus supp the min poly $p$ is defined by $p\Par{z}=z^2+bz+c$ for all $z\in\Rbb.$\par\vspace{20pt}\quad
 Becs\vspace{-35pt}\par\quad
 \hspace{50pt}\includegraphics[width=4.4cm,height=3.2cm,scale=0.22]{diagram5BI-1.png}\par\vspace{-70pt}\quad
 \hspace{180pt}{$\MathLeftMid{l}{Tv=\Frac{\left|\overset{\rightarrow}{v}\right|}{2L}\Par{T^2 v+v}\Rightarrow T=\Frac{\left|\overset{\rightarrow}{v}\right|}{2L}\Par{T^2+I}\\\vspace{8pt} L=\left|\overset{\rightarrow}{v}\right|\cos\theta\Rightarrow\Frac{\left|\overset{\rightarrow}{v}\right|}{2L}=\Frac{1}{2\cos\theta}}$}\par\quad
@@ -1352,24 +1352,24 @@ Thus \;$ce_1+bTe_1=-T^2 e_1\Longleftrightarrow{}${\small$\begin{pmatrix}
 \SepLine\pagebreak
 
 \ProblemBnoor{\hypertarget{5BI4e11}{4E 5.B.11}}{
-	\TextB{Sups $V$ is a two-dim vecsp, $T\in\Lm{V}$, and the matrix of $T$}
+	\TextB{Supp $V$ is a two-dim vecsp, $T\in\Lm{V}$, and the matrix of $T$}
 	\TextB{wrto some $B_V$ is {\large$\begin{pmatrix} a & c\\ b & d\end{pmatrix}.$}}
 	(a) \TextB{Show $T^2 - \Par{a + d}T + \Par{ad - bc}I = 0.$}
 	(b) \TextB{Show the min poly of $T$ equals}
 	\TextB{\FontNorm\centerline{$\MathLeftBrace{l}{z-a\qquad\qquad\qquad\qquad\qquad$ if $b=c=0$ and $a=d$,$\\ z^2-\Par{a+d}z+\Par{ad-bc}\quad$ \,\,othws.$}$}}
 }\par\quad
-(a) Sups the bss is $\Par{v,w}$. Becs $\MathLeftBrace{l}{Tv=av+bw\Rightarrow\Par{T-aI}v=bw,$ then apply $\Par{T-dI}$ to both sides. $\\ Tw=cv+dw\Rightarrow \Par{T-dI}w=cv,$ then apply $\Par{T-aI}$ to both sides. $}$\par\vspace{6pt}\quad\Ha
+(a) Supp the bss is $\Par{v,w}$. Becs $\MathLeftBrace{l}{Tv=av+bw\Rightarrow\Par{T-aI}v=bw,$ then apply $\Par{T-dI}$ to both sides. $\\ Tw=cv+dw\Rightarrow \Par{T-dI}w=cv,$ then apply $\Par{T-aI}$ to both sides. $}$\par\vspace{6pt}\quad\Ha
 Hence $\Par{T-aI}\Par{T-dI}=bc I\Rightarrow T^2 - \Par{a + d}T + \Par{ad - bc}I = 0.$\par\quad
 (b) If $b=c=0$ and $a=d.$ Then $\Mt{T}=${\small$\begin{pmatrix}a & 0\\ 0 & a\end{pmatrix}$}$=a\Mt{I}$. Thus $T=aI.$ Hence the min poly is $z-a.$\par\quad\Hb
 Othws, by (a), $z^2-\Par{a+d}z+\Par{ad-bc}$ is a poly multi of the min poly.\par\quad\Hb
 Now we prove that $T\not\in\Span{I},$ so that then the min poly of $T$ has exactly deg $2.$\par\quad\Hb
 ( At least one of the asum of (I),(II) below is true. )\par\quad\Hb
-(I) Sups $a=d,$ then $Tv=av+bw\not\in\Span{v},Tw=cv+aw\not\in\Span{w}.$\par\qquad
-(II) Sups at most one of $b,c$ is not $0.$ If $b=0,$ then $Tw\not\in\Span{w};$ If $c=0,$ then $Tv\not\in\Span{v}.$\PfEnd
+(I) Supp $a=d,$ then $Tv=av+bw\not\in\Span{v},Tw=cv+aw\not\in\Span{w}.$\par\qquad
+(II) Supp at most one of $b,c$ is not $0.$ If $b=0,$ then $Tw\not\in\Span{w};$ If $c=0,$ then $Tv\not\in\Span{v}.$\PfEnd
 \SepLine
 
 \ProblemB{
-	\TextB{Sups $S,T\in\Lm{V},S$ is inv, and $p\in\PoFi$. Prove $Sp\Par{TS}=p\Par{ST}S.$}
+	\TextB{Supp $S,T\in\Lm{V},S$ is inv, and $p\in\PoFi$. Prove $Sp\Par{TS}=p\Par{ST}S.$}
 }\par\quad
 We prove $S\Par{TS}{^m}=\Par{ST}{^m} S$ for each $m\in\Nbb\,$ by induc.\par\quad
 (i) If $m=0,1.$ Then $S\Par{TS}{^0}=I=\Par{ST}{^0}S;\;S\Par{TS}{^1}=\Par{ST}S.$\par\quad\Endi
@@ -1383,7 +1383,7 @@ Hence $\forall p\in\PoFi,Sp\Par{TS}=\sum_{k=1}^ma_kS\Par{TS}{^k}=\sum_{k=1}^ma_k
 }\SepLine
 
 \ProblemBnoor{\hypertarget{5BI4e7}{4E 5.B.7}}{
-	\TextB{Sups $S, T\in\Lm{V}.$ Let $p,q$ be the min polys of $ST,TS$ respectly.}
+	\TextB{Supp $S, T\in\Lm{V}.$ Let $p,q$ be the min polys of $ST,TS$ respectly.}
 	(a) \TextB{If $V=\Fbb^2.$ Give an exa suth $p\neq q;$ \;{\large\tgnr(b)} If $S$ or $T$ is inv. Prove $p=q.$}
 }\par\quad
 (a) %Let $V=\Fbb^{\infty},$ $S\in\Lm{\Fbb^\infty}$ is the forward shift optor, $T\in\Lm{\Fbb^\infty}$ is the backward shift optor.\par\quad\Ha
@@ -1392,7 +1392,7 @@ Hence $\forall p\in\PoFi,Sp\Par{TS}=\sum_{k=1}^ma_kS\Par{TS}{^k}=\sum_{k=1}^ma_k
 Define $S$ by $S\Par{x,y}=\Par{x,x}.$ Define $T$ by $T\Par{x,y}=\Par{0,y}.$\par\quad\Ha
 Then $ST\Par{x,y}=0,\,\,TS\Par{x,y}=\Par{0,x}$ for all $\Par{x,y}\in\Fbb^2.$ Thus $ST=0\neq TS$ and $\Par{TS}^2=0.$\par\quad\Ha
 Hence the min poly of $ST$ does not equal to the min poly of $TS.$\par\quad
-(b) Sups $S$ is inv. Becs $p,q$ are monic.\par\quad\Hb
+(b) Supp $S$ is inv. Becs $p,q$ are monic.\par\quad\Hb
 $\MathRightBrace{l}{$
 $p\Par{ST}=0=S p\Par{TS}S^{-1}\Rightarrow p\Par{TS}=0,p$ is a poly multi of $q\\ $
 $q\Par{TS}=0=S^{-1} q\Par{ST}S\Rightarrow q\Par{ST}=0,q$ is a poly multi of $p$
@@ -1401,13 +1401,13 @@ Reversing the roles of $S$ and $T$, we conclude that if $T$ is inv, then $p=q$ a
 \SepLine
 
 \ProblemN{\hypertarget{5BI11}{11}}{
-	\TextNL{Sups $\Fbb = \Cbb,$ $T\in\Lm{V}, p\in\PoCi$, and $\alpha\in\Cbb.$}
+	\TextNL{Supp $\Fbb = \Cbb,$ $T\in\Lm{V}, p\in\PoCi$, and $\alpha\in\Cbb.$}
 	\TextNL{Prove $\alpha$ is an eigval of $p\Par{T}$ $\Longleftrightarrow$ $\alpha = p\Par{\lambda}$ for some eigval $\lambda$ of $T$.}
 }\par\quad
-(a) Sups $\alpha$ is an eigval of $p\Par{T}\Leftrightarrow \BigPar{p\Par{T}-\alpha I}$ is not inje.\par\quad\Ha
+(a) Supp $\alpha$ is an eigval of $p\Par{T}\Leftrightarrow \BigPar{p\Par{T}-\alpha I}$ is not inje.\par\quad\Ha
 Write $p\Par{z}-\alpha=c\Par{z-\lambda_1}\cdots\Par{z-\lambda_m}\Rightarrow p\Par{T}-\alpha I=c\Par{T-\lambda_1 I}\cdots\Par{T-\lambda_m I}.$\par\quad\Ha
 By {\TIPS}, $\exists\,\Par{T-\lambda_j I}$ not inje. Thus $p\Par{\lambda_j}-\alpha=0.$\par\quad
-(b) Sups $\alpha=p\Par{\lambda}$ and $\lambda$ is an eigval of $T$ with an eigvec $v.$ Then $p\Par{T}v=p\Par{\lambda}v=\alpha v.$\PfEnd\vspace{3pt}\quad\Hb
+(b) Supp $\alpha=p\Par{\lambda}$ and $\lambda$ is an eigval of $T$ with an eigvec $v.$ Then $p\Par{T}v=p\Par{\lambda}v=\alpha v.$\PfEnd\vspace{3pt}\quad\Hb
 \Or Define $q$ by $q\Par{z}=p\Par{z}-\alpha.$ $\lambda$ is a zero of $q.$\par\quad\Hb
 Becs $q\Par{T}v=\BigPar{p\Par{T}-\alpha I}v=q\Par{\lambda}v=\BigPar{p\Par{\lambda}-\alpha}v=0.$\par\quad\Hb
 Hence $q\Par{T}$ is not inje $\Rightarrow \BigPar{p\Par{T}-\alpha I}$ is not inje.\PfEnd
@@ -1424,11 +1424,11 @@ While $\nexists\,\lambda\in\Rbb$ suth $-1=p\Par{\lambda}=\lambda^2.$\PfEnd
 \SepLine
 
 \ProblemBnoor{\hypertarget{5BI4e17}{4E 5.B.17}}{
-	\TextB{Sups $V$ is finide, $T\in \Lm{V},\lambda\in\Fbb$, and $\,p\,$ is the min poly of $T$.}
+	\TextB{Supp $V$ is finide, $T\in \Lm{V},\lambda\in\Fbb$, and $\,p\,$ is the min poly of $T$.}
 	\TextB{Show the min poly of $\Par{T - \lambda I}$ is the poly $q$ defined by $q\Par{z} = p\Par{z + \lambda}.$}
 }\par\quad
 $q\Par{T-\lambda I}=0\Rightarrow q$ is poly multi of the min poly of $\Par{T-\lambda I}.$\par\quad
-Sups the deg of the min poly of $\Par{T-\lambda I}$ is $n,$ and the deg of the min poly of $T$ is $m.$\par\quad
+Supp the deg of the min poly of $\Par{T-\lambda I}$ is $n,$ and the deg of the min poly of $T$ is $m.$\par\quad
 %Write $q(z)=p(z+\lambda)=a_0+a_1(z+\lambda)+\dots+a_{m-1}(z+\lambda)^{m-1}+(z+\lambda)^m.$\par\quad
 By definition of min poly,\par\quad
 $n$ is the smallest suth $\Par{T-\lambda I}^n\in\Span{I,\Par{T-\lambda I},\dots,\Par{T-\lambda I}^{n-1}};$\par\quad
@@ -1438,11 +1438,11 @@ Thus $n=m.$ 又 $q$ is monic. By the uniqnes of min poly.\PfEnd
 \SepLine
 
 \ProblemBnoor{\hypertarget{5BI4e18}{4E 5.B.18}}{
-	\TextB{Sups $V$ is finide, $T\in \Lm{V},\lambda\in\nonzeroFbb$, and $\,p\,$ is the min poly of $T$.}
+	\TextB{Supp $V$ is finide, $T\in \Lm{V},\lambda\in\nonzeroFbb$, and $\,p\,$ is the min poly of $T$.}
 	\TextB{Show the min poly of $\lambda T$ is the poly q defined by $q\Par{z} = \lambda^{\deg p} p\Par{\frac{z}{\lambda}}$.}
 }\par\quad
 $q\Par{\lambda T}=\lambda^{\deg p}p\Par{T}=0\Rightarrow q$ is a poly multi of the min poly of $\lambda T.$\par\quad
-Sups the deg of the min poly of $\lambda T$ is $n,$ and the deg of the min poly of $T$ is $m.$\par\quad
+Supp the deg of the min poly of $\lambda T$ is $n,$ and the deg of the min poly of $T$ is $m.$\par\quad
 By definition of min poly,\par\quad
 $n$ is the smallest suth $\Par{\lambda T}^n\in\Span{\lambda I,\lambda T,\dots,\Par{\lambda T}^{n-1}};$\par\quad
 $m$ is the smallest suth $T^m\in\Span{I,T,\dots,T^{m-1}}.$\par\quad
@@ -1451,24 +1451,24 @@ Thus $n=m.$ 又 $q$ is monic. By the uniqnes of min poly.\PfEnd
 \SepLine
 
 \ProblemNor{\hypertarget{5BI18}{18}}{\hypertarget{5BI4e15}{4E 5.B.15}}{
-	\TextNL{Sups $V$ is a finide complex vecsp with $\dim V > 0$ and $T\in\Lm{V}$.}
+	\TextNL{Supp $V$ is a finide complex vecsp with $\dim V > 0$ and $T\in\Lm{V}$.}
 	\TextNL{Define $f:\Cbb\rightarrow\Rbb$ by $f\Par{\lambda} = \dim \range\Par{T-\lambda I}$.}
 	\TextNL{Prove $f$ is not a continuous function.}
 }Note that $V$ is finide.\par\quad
 Let $\lambda_0$ be an eigval of $T.$ Then $\Par{T-\lambda_0 I}$ is not surj. Hence $\dim\range\Par{T-\lambda_0 I}<\dim V.$\par\quad
-Becs $T$ has finily many eigvals. There exis a sequence of number $\Bra{\lambda_n}$ suth $\lim\limits_{n\rightarrow\infty}\lambda_n=\lambda_0$.\par\quad
+Becs $T$ has finily many eigvals. There exis a seq of number $\Bra{\lambda_n}$ suth $\lim\limits_{n\rightarrow\infty}\lambda_n=\lambda_0$.\par\quad
 And $\lambda_n$ is not an eigval of $T$ for each $n\Rightarrow\dim\range\Par{T-\lambda_n I}=\dim V\neq \dim\range\Par{T-\lambda_0 I}.$\par\quad
 Thus $f\Par{\lambda_0}\neq \lim\limits_{n\rightarrow\infty}f\Par{\lambda_n}.$\PfEnd
 \SepLine
 
 \ProblemBnoor{\hypertarget{5BI4e9}{4E 5.B.9}}{
-	\TextB{Sups $T\in\Lm{V}$ is suth wrto some bss of $V$,}
+	\TextB{Supp $T\in\Lm{V}$ is suth wrto some bss of $V$,}
 	\TextB{all ent of the matrix of $T$ are rational numbers.}
 	\TextB{Explain why all coeffs of the min poly of $T$ are rational numbers.}
 }\par\quad
 Let $\Par{v_1,\dots,v_n}$ denote the bss suth $\Mt[\BigPar]{T,\Par{v_1,\dots,v_n}}_{j,k}=A_{j,k}\in\Qbb$ for all $j,k=1,\dots,n$.\par\quad
 Denote $\Mt[\BigPar]{v_j,\Par{v_1,\dots,v_n}}$ by $x_j$ for each $v_j.$\par\quad
-Sups $p$ is the min poly of $T$ and $p\Par{z}=z^m+\dots+c_1 z+c_0.$ Now we show each $c_j\in\Qbb.$\par\quad
+Supp $p$ is the min poly of $T$ and $p\Par{z}=z^m+\dots+c_1 z+c_0.$ Now we show each $c_j\in\Qbb.$\par\quad
 Note that $\forall s\in\Nbp,\Mt{T^s}=\Mt{T}^s=A^s\in\Qbb^{n,n}$ and $T^s v_k=A^s_{1,k} v_1+\dots+A^s_{n,k}v_n$ for all $k\in\Bra{1,\dots,n}.$\par\vspace{6pt}\quad
 Thus $\MathLeftBrace{l}{
 \Mt{p\Par{T}v_1}=\Par{A^m+\dots+c_1 A+c_0 I}x_1=\sum\limits_{j=1}^n\Par{A^m+\dots+c_1 A+c_0 I}_{j,1}x_j=0;\\ \qquad\qquad\vdots \\
@@ -1483,7 +1483,7 @@ We conclude that $c_0,c_1,\dots,c_{m-1}\in\Qbb.$\PfEnd
 \SepLine
 
 \ProblemBnoor{\OR (\hypertarget{5BI4e16}{4E 5.B.16}), \OR (8.C.18)}[\Sbra]{
-	\TextB{Sups $a_0 ,\dots, a_{n-1}\in\Fbb.$ Let $T$ be the optor on $\Fbb^n$ suth\vspace{2pt}}
+	\TextB{Supp $a_0 ,\dots, a_{n-1}\in\Fbb.$ Let $T$ be the optor on $\Fbb^n$ suth\vspace{2pt}}
 	\TextB{$\Mt{T}=\,${\normalsize$\begin{pmatrix}
 	0 &   &        &  &   & -a_0     \\
 	1 & 0 &        &  &   & -a_1     \\
@@ -1504,11 +1504,11 @@ $=\Par{-a_0 I-a_1 T-a_2 T^2-\dots-a_{n-1}T^{n-1}}e_1.$ Thus $p\Par{T}e_1=0=p\Par
 \BulletPointX{\Large\textsc{Eigenvalues On Odd-Dimensional Real Vector Spaces}}\par
 \ProblemB{
 	\textsc{Even-Dimensional Null Space}\TextB{}
-	\TextB{Sups $\Fbb=\Rbb,$ $V$ is finide, $T\in\Lm{V}$ and $b, c\in\Rbb$ with $b^2 < 4c$.}
+	\TextB{Supp $\Fbb=\Rbb,$ $V$ is finide, $T\in\Lm{V}$ and $b, c\in\Rbb$ with $b^2 < 4c$.}
 	\TextB{Prove $\dim\null\Par{T^2 + bT + cI}$ is an even number.}
 }\par\quad
 Denote $\null\Par{T^2 + bT + cI}$ by $R.$ Then $T\mmid_R+bT\mmid_R+cI_R=\Par{T+bT+cI}\mmid_R=0\in\Lm{R}.$\par\quad
-Sups $\lambda$ is an eigval of $T_R$ with an eigvec $v\in R.$\par\quad
+Supp $\lambda$ is an eigval of $T_R$ with an eigvec $v\in R.$\par\quad
 Then $0=\Par{T\mmid_R^2+bT\mmid_R+cI_R}\Par{v}=\Par{\lambda^2+\lambda b+c}v=\BigPar{\Par{\lambda+b}^2+c-\Frac{b^2}{4}}v.$\par\quad
 Becs $c-\Frac{b^2}{4}>0$ and we have $v=0.$ Thus $T_R$ has no eigvals.\par\quad
 Let $U$ be invarsp of $R$ that has the largest, even dim among all invarsps.\par\quad
@@ -1522,14 +1522,14 @@ Thus the asum was incorrect. Hence $R=\null\Par{T^2+bT+cI}=U$ has even dim.\PfEn
 
 \ProblemB{
 	\textsc{Operators On Odd-Dimensional Vector Spaces Have Eigenvalues}\TextB{}
-	(a) \TextB{Sups $\Fbb=\Cbb.$ \tgnr\large Then by [5.21], done.}
-	(b) \TextB{Sups $\Fbb=\Rbb,$ $V$ is finide, and $\dim V=n$ is an odd number.}
+	(a) \TextB{Supp $\Fbb=\Cbb.$ \tgnr\large Then by [5.21], done.}
+	(b) \TextB{Supp $\Fbb=\Rbb,$ $V$ is finide, and $\dim V=n$ is an odd number.}
 	\Hb\TextB{Let $T\in\Lm{V}$ and the min poly is $\,p\,$. Prove $T$ has an eigval.}
 }\par\quad
 (i) If $n=1,$ then done.\par\quad\Endi
-(ii) Sups $n\geqslant 3.$ Asum every optor, on odd-dim vecsps of dim less than $n,$ has an eigval.\par\quad\Hii
+(ii) Supp $n\geqslant 3.$ Asum every optor, on odd-dim vecsps of dim less than $n,$ has an eigval.\par\quad\Hii
 If $p$ is a poly multi of $\Par{x - \lambda}$ for some $\lambda\in\Rbb,$ then by [8.49] $\lambda$ is an eigval of $T$ and done.\par\quad\Hii
-Now sups $b, c\in\Rbb$ suth $b^2 < 4c$ and $p$ is a poly multi of $x^2 + bx + c$ (see [4.17]).\par\quad\Hii
+Now supp $b, c\in\Rbb$ suth $b^2 < 4c$ and $p$ is a poly multi of $x^2 + bx + c$ (see [4.17]).\par\quad\Hii
 Then $\exists\,q\in\PoRi$ suth $p\Par{x} = q\Par{x}\Par{x^2 + bx + c}$ for all $x\in\Rbb.$\par\quad\Hii
 Now $0 = p\Par{T} = \BigPar{q\Par{T}}\Par{T^2 + bT + cI},$ which means that $q\Par{T}\mmid_{\range\Par{T^2+bT+cI}}=0.$\par\quad\Hii
 Becs $\deg q < \deg p$ and $p$ is the min poly of $T$, hence $\range\Par{T^2 + bT + cI}\neq V$.\par\quad\Hii
@@ -1541,9 +1541,9 @@ By induc.\PfEnd
 \SepLine
 
 \ProblemBnoor{\hypertarget{5BI2e24}{2E Ch5.24}}{
-	\TextB{Sups $\Fbb=\Rbb,T\in\Lm{V}$ has no eigvals.} \TextB{Prove every invarsp of $V$ under $T$ is even-dim.}
+	\TextB{Supp $\Fbb=\Rbb,T\in\Lm{V}$ has no eigvals.} \TextB{Prove every invarsp of $V$ under $T$ is even-dim.}
 }\par\quad
-Sups $U$ is such a subsp. Then $T\mmid_U\in\Lm{U}.$
+Supp $U$ is such a subsp. Then $T\mmid_U\in\Lm{U}.$
 We prove by ctradic.\par\quad
 If $\dim U$ is odd, then $T\mmid_U$ has an eigval and so is $T,$ so that $\exists$ invarsp of $1$ dim, ctradic.\PfEnd
 \SepLine
@@ -1554,7 +1554,7 @@ If $\dim U$ is odd, then $T\mmid_U$ has an eigval and so is $T,$ so that $\exist
 Using induc on $\dim V.$\par\quad
 (i) $\dim V=2,$ done.\par\quad\Endi
 (ii) $\dim V>2.$ Asum the desired result is true for vecsp of smaller dim.\par\quad\Hii
-Sups $p$ is the min poly of deg $m$ and $p\Par{z}=\Par{z-\lambda_1}\cdots\Par{z-\lambda_m}.$\par\quad\Hii
+Supp $p$ is the min poly of deg $m$ and $p\Par{z}=\Par{z-\lambda_1}\cdots\Par{z-\lambda_m}.$\par\quad\Hii
 If $\,T=\lambda I\,\Par{\,\Leftrightarrow m=1\,\vee\,m=-\infty\,},$ then done. ( $m\neq 0$ becs $\dim V\neq 0.$ )\par\quad\Hii
 Now define a $q$ by $q\Par{z}=\Par{z-\lambda_1}\Par{z-\lambda_2}$.\par\quad\Hii
 By asum, $T\mmid_{\null q\Par{T}}$ has invarsp of dim $2.$\PfEnd
@@ -1572,7 +1572,7 @@ By asum, $T\mmid_{\null q\Par{T}}$ has invarsp of dim $2.$\PfEnd
 \SepLine
 
 \ProblemBnoor{\hypertarget{5BII4e2}{4E 5.C.2}}{
-	\TextB{Sups $A$ and $B$ are upper-trig matrices of the same size,}
+	\TextB{Supp $A$ and $B$ are upper-trig matrices of the same size,}
 	\TextB{with $\alpha_1 , \dots , \alpha_n$ on the diag of $A$ and $\beta_1 , \dots , \beta_n$ on the diag of $B$.}
 	(a) \TextB{Show $A + B$ is an upper-trig matrix with $\alpha_1 + \beta_1 , \dots , \alpha_n + \beta_n$ on the diag.}
 	(b) \TextB{Show $AB$ is an upper-trig matrix with $\alpha_1 \beta_1 , \dots , \alpha_n \beta_n$ on the diag.}
@@ -1581,7 +1581,7 @@ By asum, $T\mmid_{\null q\Par{T}}$ has invarsp of dim $2.$\PfEnd
 
 \ProblemBnoor{\hypertarget{5BII4e3}{4E 5.C.3}}{
 	\TextB{}
-	\TextB{Sups $T\in \Lm{V}$ is inv and $B=\Par{v_1 , \dots , v_n}$ is a bss of $V$ suth}
+	\TextB{Supp $T\in \Lm{V}$ is inv and $B=\Par{v_1 , \dots , v_n}$ is a bss of $V$ suth}
 	\TextB{$\Mt{T,B}=A$ is upper trig, with $\lambda_1 , \dots , \lambda_n$ on the diag.}
 	\TextB{Show the matrix of $\Mt{T^{-1},B}=A^{-1}$ is also upper trig, with
 {\normalsize$\Frac{1}{\lambda_1},\dots,\Frac{1}{\lambda_n}$} on the diag.}
@@ -1589,7 +1589,7 @@ By asum, $T\mmid_{\null q\Par{T}}$ has invarsp of dim $2.$\PfEnd
 \SepLine
 
 \ProblemNnoor{\hypertarget{5BII9}{9}}{\hypertarget{5BII4e7}{4E 5.C.7}}{
-	\TextN{Sups $V$ is finide, $T\in \Lm{V}$, and $v \in V$.}
+	\TextN{Supp $V$ is finide, $T\in \Lm{V}$, and $v \in V$.}
 	(a) \TextN{Prove $\exists\,!$ monic poly $p_v$ of smallest deg suth $p_v \Par{T}v = 0$.}
 	(b) \TextN{Prove the min poly of $T$ is a poly multi of $p_v$.}
 }
@@ -1614,13 +1614,13 @@ By asum, $T\mmid_{\null q\Par{T}}$ has invarsp of dim $2.$\PfEnd
 
 \ProblemNor{\hypertarget{5BII20}{20}}{\normalsize \OR \hypertarget{5BII4e6}{4E 5.C.6}}{
 	\TextNL{}
-	\TextNL{Sups $\Fbb=\Cbb,$ $V$ is finide, and $T\in\Lm{V}$.}
+	\TextNL{Supp $\Fbb=\Cbb,$ $V$ is finide, and $T\in\Lm{V}$.}
 	\TextNL{Prove if $k\in\Bra{1,\dots,\dim V},$ then $V$ has a $k$ dim subsp invard $T$.}
 }\par
 \SepLine
 
 \ProblemBnoor{\hypertarget{5BII4e8}{4E 5.C.8}}{
-	\TextB{Sups $V$ is finide, $T\in \Lm{V}$, and $\exists\,v \in V\nonzero$ suth $T^2 v + 2Tv = -2v$.}
+	\TextB{Supp $V$ is finide, $T\in \Lm{V}$, and $\exists\,v \in V\nonzero$ suth $T^2 v + 2Tv = -2v$.}
 	(a) \TextB{Prove if $\Fbb=\Rbb,$ then $\nexists$ a bss of $V$ wrto which $T$ has an upper-trig matrix.}
 	(b) \TextB{Prove if $\Fbb=\Cbb$ and $A$ is an upper-trig matrix that equals the matrix of $T$}
 	\Hb\TextB{wrto some bss of $V$, then $-1 + \i$ or $-1 - \i$ appears on the diag of $A$.}
@@ -1628,7 +1628,7 @@ By asum, $T\mmid_{\null q\Par{T}}$ has invarsp of dim $2.$\PfEnd
 \SepLine
 
 \ProblemBnoor{\hypertarget{5BII4e9}{4E 5.C.9}}{
-	\TextB{Sups $B\in\Fbb^{n,n}$ with complex ent.}
+	\TextB{Supp $B\in\Fbb^{n,n}$ with complex ent.}
 	\TextB{Prove $\exists$ inv $A\in\Fbb^{n,n}$ with complex ent suth $A^{-1} BA$ is an upper-trig matrix.}
 }\par
 
@@ -1636,7 +1636,7 @@ By asum, $T\mmid_{\null q\Par{T}}$ has invarsp of dim $2.$\PfEnd
 \SepLine
 
 \ProblemBnoor{\hypertarget{5BII4e10}{4E 5.C.10}}{
-	\TextB{Sups $T\in \Lm{V}$ and $\Par{v_1,\dots,v_n}$ is a bss of $V$.}
+	\TextB{Supp $T\in \Lm{V}$ and $\Par{v_1,\dots,v_n}$ is a bss of $V$.}
 	\TextB{Show the following are equi.}
 	(a) \TextB{The matrix of $T$ wrto $\Par{v_1,\dots,v_n}$ is lower trig.}
 	(b) \TextB{$\Span{v_k,\dots,v_n}$ is invard $T$ for each $k=1,\dots,n$.}
@@ -1645,14 +1645,14 @@ By asum, $T\mmid_{\null q\Par{T}}$ has invarsp of dim $2.$\PfEnd
 \SepLine
 
 \ProblemBnoor{\hypertarget{5BII4e11}{4E 5.C.11}}{
-	\TextB{Sups $\Fbb=\Cbb$ and $V$ is finide.}
+	\TextB{Supp $\Fbb=\Cbb$ and $V$ is finide.}
 	\TextB{Prove if $T\in \Lm{V}$, then $T$ has a lower-trig matrix wrto some bss.}
 }\par
 \SepLine
 
 \ProblemBnoor{\hypertarget{5BII4e12}{4E 5.C.12}}{
 	\TextB{}
-	\TextB{Sups $V$ is finide, $T\in \Lm{V}$ has an upper-trig matrix wrto some bss,}
+	\TextB{Supp $V$ is finide, $T\in \Lm{V}$ has an upper-trig matrix wrto some bss,}
 	\TextB{and $U$ is a subsp of $V$ that is invard $T$.}
 	(a) \TextB{Prove $T\mmid_U$ has an upper-trig matrix wrto some bss of $U$.}
 	(b) \TextB{Prove $T\XSlash U$ has an upper-trig matrix wrto some bss of $V\XSlash U$.}
@@ -1663,7 +1663,7 @@ By asum, $T\mmid_{\null q\Par{T}}$ has invarsp of dim $2.$\PfEnd
 \SepLine
 
 \ProblemBnoor{\hypertarget{5BII4e13}{4E 5.C.13}}{
-	\TextB{Sups $V$ is finide, $T\in \Lm{V}$. Sups $U$ is invarsp of $V$ under $T$}
+	\TextB{Supp $V$ is finide, $T\in \Lm{V}$. Supp $U$ is invarsp of $V$ under $T$}
 	\TextB{suth $T\mmid_U,T\XSlash U$ have upper-trig matrix.}
 	\TextB{Prove $T$ has upper-trig matrix.}
 }\par
@@ -1673,7 +1673,7 @@ By asum, $T\mmid_{\null q\Par{T}}$ has invarsp of dim $2.$\PfEnd
 \SepLine
 
 \ProblemBnoor{\hypertarget{5BII4e14}{4E 5.C.14}}{
-	\TextB{Sups $V$ is finide and $T\in \Lm{V}$.}
+	\TextB{Supp $V$ is finide and $T\in \Lm{V}$.}
 	\TextB{Prove $T$ has upper-trig matrix $\Longleftrightarrow$ $T\apostrophe$ has upper-trig matrix.}
 }\par
 
@@ -1703,16 +1703,16 @@ XXXX
 \SepLine
 
 \ProblemN{2}{
-	\TextN{Sups $\mathcal{E}$ is a subset of $\Lm{V}$ and every ele of $\mathcal{E}$ is diag.}
+	\TextN{Supp $\mathcal{E}$ is a subset of $\Lm{V}$ and every elem of $\mathcal{E}$ is diag.}
 	\TextN{Prove $\exists$ a bss of $V$ wrto which}
-	\TextN{every ele of $\mathcal{E}$ has a diag matrix $\Longleftrightarrow$ every pair of ele of $\mathcal{E}$ commu.}
-	\TextN{{\normalsize This exercise extends [5.76], which considers the case in which $\mathcal{E}$ contains only two ele.}}\hspace{0.5pt}
-	\TextN{{\normalsize For this exercise, $\mathcal{E}$ may contain any number of ele, and $\mathcal{E}$ may even be an infini set.}}
+	\TextN{every elem of $\mathcal{E}$ has a diag matrix $\Longleftrightarrow$ every pair of elems of $\mathcal{E}$ commu.}
+	\TextN{{\normalsize This exercise extends [5.76], which considers the case in which $\mathcal{E}$ contains only two elems.}}\hspace{0.5pt}
+	\TextN{{\normalsize For this exercise, $\mathcal{E}$ may contain any number of elems, and $\mathcal{E}$ may even be an infini set.}}
 }\par
 \SepLine
 
 \ProblemN{3}{
-	\TextN{Sups $S, T\in\Lm{V}$ are suth $ST = TS$. Sups $p\in\PoFi$.}
+	\TextN{Supp $S, T\in\Lm{V}$ are suth $ST = TS$. Supp $p\in\PoFi$.}
 	(a) \TextN{Prove $\null p\Par{S}$ is invard $T$. \;\; {\tgnr\large(b)} Prove $\range p\Par{S}$ is invard $T$.}
 	\TextN{See \NOTEFOR [5.17] for the special case $S = T$.}
 }\par
@@ -1729,29 +1729,29 @@ XXXX
 \SepLine
 
 \ProblemN{6}{
-	\TextN{Sups $V$ is a finide complex vecsp and $S, T\in\Lm{V}$ commu.}
+	\TextN{Supp $V$ is a finide complex vecsp and $S, T\in\Lm{V}$ commu.}
 	\TextN{Prove $\exists\,\alpha,\lambda\in\Cbb$ suth $\range\Par{S -\alpha I} + \range\Par{T -\lambda I}\neq V$.}
 }\par
 \SepLine
 
 \ProblemN{7}{
-	\TextN{Sups $V$ is a complex vecsp, $S\in\Lm{V}$ is diag, and $T$ commu with $S$.}
+	\TextN{Supp $V$ is a complex vecsp, $S\in\Lm{V}$ is diag, and $T$ commu with $S$.}
 	\TextN{Prove $\exists$ bss $B$ of $V$ suth $S$ has a diag matrix wrto $B$}
 	\TextN{and T has upper-trig matrix wrto $B$.}
 }\par
 \SepLine
 
 \ProblemN{8}{
-	\TextN{Sups $m = 3$ in [5.72] and $D_x , D_y$ are the commu partial diff optors on $\Po_3\Par{\Rbb^2}$ from [5.72].}
+	\TextN{Supp $m = 3$ in [5.72] and $D_x , D_y$ are the commu partial diff optors on $\Po_3\Par{\Rbb^2}$ from [5.72].}
 	\TextN{Find a bss of $\Po_3\Par{\Rbb^2}$ wrto which $D_x$ and $D_y$ each have upper-trig matrix.}
 }\par
 \SepLine
 
 \ProblemN{9}{
-	\TextN{Sups $V$ is a finide nonzero complex vecsp.}
-	\TextN{Sups that $\mathcal{E}\subseteq\Lm{V}$ is suth $S$ and $T$ commu for all $S, T\in\mathcal{E}$.}
-	(a) \TextN{Prove $\exists$ eigvec $v\in V$ for every ele of $\mathcal{E}$.}
-	(b) \TextN{Prove $\exists$ a bss of $V$ wrto which every ele of $\mathcal{E}$ has upper-trig matrix.}
+	\TextN{Supp $V$ is a finide nonzero complex vecsp.}
+	\TextN{Supp that $\mathcal{E}\subseteq\Lm{V}$ is suth $S$ and $T$ commu for all $S, T\in\mathcal{E}$.}
+	(a) \TextN{Prove $\exists$ eigvec $v\in V$ for every elem of $\mathcal{E}$.}
+	(b) \TextN{Prove $\exists$ a bss of $V$ wrto which every elem of $\mathcal{E}$ has upper-trig matrix.}
 }\par
 \SepLine
 
