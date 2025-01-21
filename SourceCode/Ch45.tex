@@ -219,7 +219,7 @@ Then $\Par{q-p}$ has $\Par{m+1}$ zeros, while $\Par{q-p}\in\PoC{m}$. By {\TIPS},
 \ProblemBnoor{\hypertarget{4O4e13}{4E 4 13}}{
 	\TextB{Supp nonconst $p,q\in\PoCi$ have no common zeros. Let $m = \deg p$, $n = \deg q$.\vspace{3pt}}
 	\TextB{Define $T:\PoC{n-1}\times\PoC{m-1}\rightarrow\PoC{m+n-1}$ by $T\Par{r, s} = rp + sq.$ Prove $T$ is iso.\vspace{3pt}}
-	\Corollary \,\,\,\TextB{$\exists\,!\,r\in\PoC{n-1},s\in\PoC{m-1}$ suth $rp + sq = 1.$}
+	\ACoro \TextB{$\exists\,!\,r\in\PoC{n-1},s\in\PoC{m-1}$ suth $rp + sq = 1.$}
 }\par\quad
 $T$ is liney becs $\forall\,r_1,r_2\in\PoC{n-1},s_1,s_2\in\PoC{m-1},\lambda\in\Fbb,$\par\quad
 $T\BigPar{\Par{r_1,s_1}+\lambda\Par{r_2,s_2}}=T\Par{r_1+\lambda r_2,s_1+\lambda s_2}=\Par{r_1+\lambda r_2}p+\Par{s_1+\lambda s_2}q=T\Par{r_1,s_1}+\lambda T\Par{r_2,s_2}.$\par\vspace{6pt}\quad
@@ -320,7 +320,7 @@ Let $X=\Span{v_1,\dots,v_m,u_{\alpha_1},\dots,u_{\alpha_{p-\dim U}}}.$ Where $\a
 Then $\dim X=\dim V-\dim U.$ \Sbra{ $\range TE_2\subseteq$ } $X$ is invard $TE_2,$ by Exe (1)(b).\vspace{2pt}\par\quad
 We have $x\in X\Rightarrow TE_2\Par{x}\in X\Rightarrow T{x}-TE_1\Par{x}\in X\Rightarrow Tx\in X.$ Hence $X$ is invard $T.$\PfEnd\quad
 \BigPar{ Note that $E_1\Par{x}\in\Span{u_{\beta_1},\dots,u_{\beta_{t}}},$ where $\beta_1,\dots,\beta_t\in\Bra{\alpha_1,\dots,\alpha_{p-\dim U}}$ and each $u_{\beta_i}\in U.$ }\par\quad
-\Comment \,\,\,Conversely, by rev the roles of $U$ and $W,$ we conclude that it is true as well.
+\AComm Conversely, by rev the roles of $U$ and $W,$ we conclude that it is true as well.
 %\vspace{6pt}\par\quad
 %\Or Let $B_U=\Par{u_1,\dots,u_m}.$ Extend to $B_V=\Par{u_1,\dots,u_m,u_{m+1},\dots,u_n}.$\par\quad
 %{\tgbfx Step 1.} If $\exists\,w_1\in\Span{u_{m+1},\dots,u_n}$ suth $0\neq Tw_1\in U.$\par\quad
@@ -669,12 +669,12 @@ Becs $\Par{T-I}x=x\BigPar{A-\Mt{I}}={}${\normalsize$\begin{pmatrix} \sum_{c=1}^n
 Then $y_1+\dots+y_n=\sum_{c=1}^n\sum_{r=1}^n\Par{x_r A_{r,c}-x_c}=\sum_{r=1}^n x_r\sum_{c=1}^n A_{r,c}-\sum_{c=1}^n x_c=0.$\par\vspace{4pt}\quad\Hb
 Thus $\range\Par{T-I}\subseteq\Bra{\,${\small$\begin{pmatrix}y_1 & \cdots & y_n\end{pmatrix}$}$\,\in\Fbb^{1,n}:y_1+\dots+y_n=0}.$ Hence $\Par{T-I}$ is not surj.\PfEnd\vspace{6pt}\quad\Hb
 \Or Let $\Par{e_1,\dots,e_n}$ be the std bss of $\Fbb^{1,n}.$ Define $\psi\in\Par{\Fbb^{n,1}}\apostrophe$ by $\psi\Par{e_k}=1.$\vspace{2pt}\par\quad\Hb
-Becs $Te_k=e_k A=\begin{pmatrix}A_{k,1}&\cdots&A_{k,n}\end{pmatrix}=\sum_{i=1}^n A_{k,i}e_i.$ \Corollary \,\,\,$\Mt{T}=A^t.$\vspace{3pt}\par\quad\Hb
+Becs $Te_k=e_k A=\begin{pmatrix}A_{k,1}&\cdots&A_{k,n}\end{pmatrix}=\sum_{i=1}^n A_{k,i}e_i.$ \ACoro $\Mt{T}=A^t.$\vspace{3pt}\par\quad\Hb
 $\BigPar{\psi\circ\Par{T-I}}\Par{e_k}=\BigPar{\sum_{i=1}^n A_{k,i}}-1=0.$ Then $\psi\circ\Par{T-I}=0.$ 又 $\psi\neq 0.$ $\Par{T-I}$ is not inje.\PfEnd\vspace{8pt}\quad\Hb
 \Or Define $S\in\Lm{\Fbb^{1,n}}$ by $Sx=xA^t.$ Becs the rows of $A$ are the cols of $A^t.$\par\quad\Hb
 Now by (a), $1$ is an eigval of $S.$ Let $\Par{\varphi_1,\dots,\varphi_n}$ be the dual bss of $\Par{e_1,\dots,e_n}.$\vspace{2pt}\par\quad\Hb
 Define $\Phi\in\Lm[\XPar]{\Fbb^{1,n},\BigPar{\Fbb^{1,n}}\apostrophe}$ by $\Phi\Par{e_k}=\varphi_k.$ Becs $\Sbra{T\apostrophe\Par{\varphi_k}}\Par{e_j}=\varphi_k\BigPar{\sum_{i=1}^n A_{j,i}e_i}=A_{j,k}.$\par\quad\Hb
-By (3.F.9), $T\apostrophe\Par{\varphi_k}=\sum_{j=1}^n A_{j,k}\varphi_j.$ \Corollary \,\,\,$\Mt{T\apostrophe}=A=\Mt{T}{^t}.$\colorbox{yellow}{FIXME: $\Mt{T}e_k=A^te_k=e_kA$}\vspace{3pt}\par\quad\Hb
+By (3.F.9), $T\apostrophe\Par{\varphi_k}=\sum_{j=1}^n A_{j,k}\varphi_j.$ \ACoro $\Mt{T\apostrophe}=A=\Mt{T}{^t}.$\colorbox{yellow}{FIXME: $\Mt{T}e_k=A^te_k=e_kA$}\vspace{3pt}\par\quad\Hb
 Now $\BigPar{\Phi^{-1}T\apostrophe\Phi}\Par{e_k}=\BigPar{\Phi^{-1}T\apostrophe}\Par{\varphi_k}=\Phi^{-1}\BigPar{\sum_{j=1}^n A_{j,k}\varphi_j}=\sum_{j=1}^n A_{j,k}e_j=e_k A^t=Se_k.$\vspace{3pt}\par\quad\Hb
 Thus $1$ is an eigval of $S=\Phi^{-1}T\apostrophe\Phi,$ so of $T\apostrophe,$ \Sbra{ by Exe (15) }, so of $T,$ \Sbra{ by (4E 5.A.15) }.\PfEnd
 \SepLine
@@ -704,7 +704,7 @@ Now $T_{\!\Cbb}\Par{\overline{v+\i u}}=Tv-\i Tu=\Par{av-bu}-\i\Par{au+bv}=\Par{a
 	(a) \TextNL{Supp $\lambda\in\Fbb$ with $\lambda\neq 0$. Prove $\lambda$ is an eigval of $T$ $\Longleftrightarrow\lambda^{-1}$ is an eigval of $T^{-1}$.}
 	(b) \TextNL{Prove $T$ and $T^{-1}$ have the same eigvecs.}
 }(a) $Tv=\lambda v\Longleftrightarrow v=\lambda T^{-1}v\Longleftrightarrow \lambda^{-1}v=T^{-1}v.$ Where $v\neq 0.$\parSol{\vspace{2pt}}
-(b) \NOTICE that $T$ is inv $\Longrightarrow0$ is not an eigval of $T$ or $T^{-1}.$ By (a), immediately.\PfEnd
+(b) \NOTICE that $T$ is inv $\Longrightarrow0$ is not an eigval of $T$ or $T^{-1}.$ By (a), immed.\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{5A22}{22}}{
@@ -741,7 +741,7 @@ Then $\Par{T-\lambda I}S=0.$ Thus $\mathcal{A}\Par{S}=TS=\lambda S$ while $S\neq
 (b) Supp $\lambda$ is an eigval of $\mathcal{A}$ with an eigvec $S.$\par\quad\Hb
 Then $\exists\,v\in V,0\neq u=S\Par{v}\in V\Rightarrow Tu=\Par{TS} v=\Par{\lambda S} v=\lambda u.$ Thus $\lambda$ is an eigval $T.$\par\quad\Hb
 \Or Becs $TS-\lambda S=\Par{T-\lambda I}S=0\Rightarrow\zeroSubs\subsetneq\range S\subseteq\null\Par{T-\lambda I}.$ $\Par{T-\lambda I}$ is not inje.\PfEnd\vspace{4pt}
-\Comment \,\,\,{If $\mathcal{A}\Par{S}=ST,\forall S\in\Lm{V}.$ Then the eigvals of $\mathcal{A}$ are not the eigvals of $T.$}
+\AComm {If $\mathcal{A}\Par{S}=ST,\forall S\in\Lm{V}.$ Then the eigvals of $\mathcal{A}$ are not the eigvals of $T.$}
 \SepLine
 
 \ProblemN{\hypertarget{5A25}{25}}{
@@ -896,7 +896,7 @@ Finally, we stop at step $m,$ thus we get $\Par{v_1,w_1,\dots,w_{m-1}}$ and $\Pa
 $\range T\envFontLarge\mmid\envFontDefault{_{\Span[\SmallPar]{w_1,\dots,w_{m-1}}}}=\Span{v_1,w_1,\dots,w_{m-2}}\Rightarrow\dim\null T\envFontLarge\mmid\envFontDefault{_{\Span[\SmallPar]{w_1,\dots,w_{m-1}}}}=0,$\par\quad\Ha
 $\underbrace{\Span{v_1,w_1,\dots,w_{m-1}}}_{\dim m}$ and $\underbrace{\Span{\alpha_{m-1,m},\dots,\alpha_{m-1,n}}}_{\dim \SmallPar{n-m}}$ are invard $T.$\par\quad\Ha
 Let $U=\Span{\alpha_{m-1,m},\dots,\alpha_{m-1,n}}\oplus\Span{v_1,w_1,\dots,w_{m-2}}$ and done.\PfEnd\quad\Ha
-\Comment \,\,\,Both $\Span{v_2,\dots,v_n}$ and $U\oplus\Span{w_{m-1}}$ are in $\mathcal{S}_V \Span{v_1}.$\parCom\quad\Ha
+\AComm Both $\Span{v_2,\dots,v_n}$ and $U\oplus\Span{w_{m-1}}$ are in $\mathcal{S}_V \Span{v_1}.$\parCom\quad\Ha
 {\tgsl If $T\mmid_U$ is inv, then by the simlr algo, we can extend $U$ to invarsp.}\par\vspace{6pt}\quad\Ha
 \Or Note that $\dim\null\Par{T-\lambda I}\geqslant 1.$ And $\dim\range\Par{T-\lambda I}\leqslant\dim V-1.$\par\quad\Ha
 Let $B_{\range\SmallPar{T-\lambda I}}=\Par{w_1,\dots,w_m},\;B_V=\Par{w_1,\dots,w_m,u_1,\dots,u_n}.$\par\quad\Ha
@@ -1044,7 +1044,7 @@ So that $\forall v\in V$ but $v\not\in U,s\Par{T}v\in U.$\par\quad\Hc
 Thus $\forall v\in V$ but $v\not\in U,\Par{rs}\Par{T}v=r\BigPar{s\Par{T}v}=0.$\par\quad\Hc
 And $\forall u\in U,\Par{rs}\Par{T}u=r\BigPar{s\Par{T}u}=0$ ( becs $s\Par{T}u=s\Par{T\mmid_U}u\in U$ ).\par\quad\Hc
 Hence $\forall v\in V, \Par{rs}\Par{T}v=0\Rightarrow \Par{rs}\Par{T}=0.$\PfEnd\quad
-(d) By [8.49], immediately.\PfEnd
+(d) By [8.49], immed.\PfEnd
 \SepLine
 
 \ProblemBnoor{\hypertarget{5BI4e27}{4E 5.B.27}}{
@@ -1251,7 +1251,7 @@ $=\Par{\lambda-\lambda_1}^{\alpha_1}\cdots\Par{\lambda-\lambda_m}^{\alpha_m}v.$\
 }\par\quad
 Supp $v$ is an eigvec corres to $\lambda.$ Then for any $p\in\PoFi,p\Par{T}v=p\Par{\lambda}v.$\par\quad
 Hence $0=\Par{T - 2I}\Par{T - 3I}\Par{T - 4I}v=\Par{\lambda-2}\Par{\lambda-3}\Par{\lambda-4}v$ while $v\neq 0\Rightarrow\lambda = 2,3$ or $4.$\PfEnd\vspace{2pt}
-\Comment \,\,\,Note that $\Par{T-2I}\Par{T-3I}\Par{T-4I}=0$ is not inje, so that $2,3,4$ are eigvals of $T.$\parCom
+\AComm Note that $\Par{T-2I}\Par{T-3I}\Par{T-4I}=0$ is not inje, so that $2,3,4$ are eigvals of $T.$\parCom
 But it doesn't mean that all the eigvals of $T$ are exactly $2,3,4.$
 \SepLine
 
@@ -1376,8 +1376,8 @@ We prove $S\Par{TS}{^m}=\Par{ST}{^m} S$ for each $m\in\Nbb\,$ by induc.\par\quad
 (ii) If $m>1.$ Asum $S\Par{TS}{^m}=\Par{ST}{^m} S.$\par\quad\Hii
 Then $S\Par{TS}{^{m+1}}=S\Par{TS}{^m}\Par{TS}=\Par{ST}{^m} STS=\Par{ST}{^{m+1}}S.$\par\quad
 Hence $\forall p\in\PoFi,Sp\Par{TS}=\sum_{k=1}^ma_kS\Par{TS}{^k}=\sum_{k=1}^ma_kp\Par{ST}{^k}S=\Sbra{\sum_{k=1}^ma_k\Par{TS}{^k}}S.$\PfEnd\vspace{2pt}
-\Comment \,\,\,$p\Par{TS} = S^{-1} p\Par{ST}S,\;p\Par{ST} = Sp\Par{TS}S^{-1}.$\par
-\Corollary \,\,\,\ProblemN[]{\hypertarget{5BI5}{5}}{
+\AComm $p\Par{TS} = S^{-1} p\Par{ST}S,\;p\Par{ST} = Sp\Par{TS}S^{-1}.$\par
+\ACoro \ProblemN[]{\hypertarget{5BI5}{5}}{
 	Becs $S$ is inv, $T\in\Lm{V}$ is arb $\Longleftrightarrow R=ST$ is arb.\TextN{}
 	{\IndentCorollary} Hence $\forall R\in\Lm{V},$ inv $S\in\Lm{V},p\Par{S^{-1}RS}=S^{-1}p\Par{R}S.$\TextN{\vspace{-4pt}}
 }\SepLine
