@@ -1247,14 +1247,6 @@ Define $T\in\Lm{V,W}$ by $T\Par{Sw_i}=w_i.$ Now $ST\BigPar{a_1Sw_1+\dots+a_nSw_n
 	\arrow["inv"'{pos=0.4}, from=1-2, to=2-2]
 	\arrow["surj\;E\!\!"{pos=0.4}, from=2-2, to=1-1]
 \end{tikzcd}\right|
-%%%%
-%\begin{tikzcd}
-%{U_{\Delta}\oplus\Delta} \\ {\range S} & {\range T\mmid_{U_{\Delta}}}
-%\arrow["S", no head, from=1-1, to=2-1]
-%\arrow["T"', from=1-1, to=2-2]
-%\arrow["{\SmallPar{\def\envFontA{\normalsize}S\mmid_U}{^{-1}}}", no head, from=2-1, to=1-1]
-%\arrow["E", from=2-1, to=2-2]\end{tikzcd}
-%%%%
 \large\hText{$
 	\Or Define $E:\range S\rightarrow W$ by \uline{$E:Sv\mapsto Tv.$}$\\$
 	Extend $E\in\Lm[\BigPar]{\range S,W}$ to $E\in\Lm{W}.$
@@ -1274,8 +1266,8 @@ Define $E_1\mmid_{U_{\Delta}}=I\mmid_{U_{\Delta}},$ and $E_2=T\BigPar{S\mmid_{U_
 \ACoro If $\null S=\null T.$ Then $\Delta=\zeroSubs,U_{\Delta}=U.$\parCor\quad
 By (3.D.3), we can extend inje $T\BigPar{S\mmid_{U}}{^{-1}}\in\Lm[\BigPar]{\range S,W}$ to inv $E\in\Lm{W}.$\vspace{6pt}\par\quad
 \Or \Sbra[3pt]{{\tgsl Req $\range S$ Finide}} \;Let $B_{\range S}=\Par{Sv_1,\dots,Sv_n}$. Then \uline{$V=\Span{v_1,\dots,v_n}\oplus\null S$.}\par\quad
-Let $U\oplus\range S=W.$ Define $E\in\Lm{W}$ by $E\Par{Sv_i}=Tv_i,\;Eu=0$ for all $u\in U$ and each $v_i.$\par\quad
-Hence $\forall v\in V,\,\,$\uline{$\BigPar{\exists\,!\,a_i\in\Fbb,u\in\null S\subseteq\null T\,},\,Tv=a_1 Tv_1+\dots+a_n Tv_n$}${}=E\Par{a_1 Sv_1+\dots+a_n Sv_n}.$\PfEnd\vspace{6pt}\quad
+Define $E\in\Lm{\range S,W}$ by $E\Par{Sv_i}=Tv_i.$ \;Extend to $E\in\Lm{W}.$\par\quad
+Hence $\forall v=\sum_{i=1}^na_iv_i+u\in V,\,\,$\uline{$\BigPar{\exists\,!\,u\in\null S\subseteq\null T\,},\,Tv=\sum_{i=1}^na_iTv_i+0$}${}=E\BigPar{\sum_{i=1}^na_iSv_i+0}.$\PfEnd\vspace{6pt}\quad
 \ACoro \Sbra[3pt]{{\tgsl Req $W$ Finide}} \;Supp $\null S=\null T.$ We show $\exists$ inv $E\in\Lm{W},T=ES.$\par\quad
 Redefine $E\in\Lm{W}$ by $E\Par{Tv_i}=Sv_i,\;E\Par{w_j}=x_j,$ for each $Tv_i$ and $w_j.$ Where:\par\quad
 Let $B_{\range T}=\Par{Tv_1,\dots,Tv_m},B_W=\Par{Tv_1,\dots,Tv_m,w_1,\dots,w_n},B_U=\Par{v_1,\dots,v_m}.$\par\quad
@@ -1289,11 +1281,11 @@ Let $V=U\oplus\null S\Rightarrow S\mmid_U:U\rightarrow\range S$ is iso. Becs $\P
 \uline{Define $E=\BigPar{S\mmid_U}{^{-1}}T=\BigPar{S\mmid_U}{^{-1}}\Big|{_{\range T}}T\in\Lm{V,U}\subseteq\Lm{V}.$}\PfEnd\vspace{10pt}\quad
 \!\!\!$\hText{$
 	\AComm Let $U_1=U.$ Let $U_2\oplus\null T=V=U_1\oplus\null S.\\$
-	Let $U_{1\Delta}=\range\BigPar{S\mmid_{U_1}}\Big|{_{\range T}}\subseteq U_1=\Delta\oplus U_{1\Delta}.\\$
+	Let $U_{1\Delta}=\range\BigPar{S\mmid_{U_1}}{^{-1}}\Big|{_{\range T}}\subseteq U_1=\Delta\oplus U_{1\Delta}.\\$
 	\Or Let $U_{1\Delta}=\range E\mmid_{U_2}.$ \,Let $\Delta\oplus\range E\mmid_{U_2}=U_1.\\$
-	Thus $U_1\oplus\null S=U_{1\Delta}\oplus{}$\uline{$\Par{\Delta\oplus\null S}$}${}=U_2\oplus{}$\uline{$\null T$}$.\\[-7pt]$
-	\Blind{Thus $U_1\oplus\null S=U_{1\Delta}\oplus{}$}$\qquad|\qquad\qquad\qquad\qquad|\\[-19pt]$
-	\Blind{Thus $U_1\oplus\null S=U_{1\Delta}\oplus{}$}$\qquad\hspace{1pt}\underset{\text{iso, \;by (3.D }\textsc{Tips).}}{\uline{\;\qquad\qquad\qquad\qquad\hspace{-0.5pt}}}$
+	Thus $U_1\oplus\null S=U_{1\Delta}\oplus{}$\uline{$\Par{\Delta\oplus\null S}$}${}=U_2\oplus{}$\uline{$\null T$}$.\\[-10pt]$
+	\Blind{Thus $U_1\oplus\null S=U_{1\Delta}\oplus{}$}$\qquad\text{\tiny|}\qquad\qquad\qquad\qquad\text{\tiny|}\\[-20pt]$
+	$\hspace{164.2pt}\underset{\text{iso, \;if finide.}}{\uline{\;\qquad\qquad\qquad\qquad\hspace{-2pt}}}$
 $}\quad\hText{$
 	$U_1\xlongrightarrow[S]{inv}\range S\\[-8pt]$
 	$\;\text{\small|\:|}\qquad\qquad\text{\small|\:|}\\[-6pt]$
@@ -1303,16 +1295,6 @@ $}\quad\hText{$
 	$\,\;\uparrow\qquad\qquad\qquad\qquad\quad|\\[-19pt]$
 	$\,\;\,\underset{inv\;\;E\def\envFontA{\normalsize}\mmid_{U_2}}{{\uline{\qquad\qquad\qquad\qquad\qquad\!\!}}}$
 $}$\par\vspace{4pt}\quad
-%\hspace{-20pt}{\small\begin{tikzcd}
-%		{\range T} \\[4pt] {U_2} & {U_{1\Delta}}\\[-6pt]
-%		\arrow["inv\;S"', from=2-2, to=1-1]
-%		\arrow["T"'{pos=0.35}, from=2-1, to=1-1]
-%		\arrow["inv"{pos=0.35}, from=2-1, to=1-1]
-%		\arrow["inv\;E"'{pos=0.4}, from=2-1, to=2-2]
-%\end{tikzcd}}
-%Note that $\range T\subsetneq\range S$ $\Longleftrightarrow T\mmid_{U_2}:U_2\rightarrow\range S$ \Sbra{ also $E\mmid_{U_2}:U_2\rightarrow U_1$\hspace{1pt}} is inje but not surj\par\quad
-%\Blind{Note that $\range T\subsetneq\range S$}{ }$\Longleftrightarrow U_2$ is not iso to $\range S,$ so is $U_2$ to $U_1;\;$ $\underset{\text{By (3.D }\textsc{Tips}\text{)}}{\uline{\text{also }\null T\text{ to }\null S.}}$\par\vspace{-6pt}\quad
-%Let $U_1=\range E\mmid_{U_2}\oplus\Delta.$ 又 $\range E\mmid_{U_2}$ is iso to $U_2.$\par\quad
 If $\Delta\neq\zeroSubs,$ asum $\exists$ inv $E\in\Lm{V}$ re-extended from $E\mmid_{U_2}$ still satisfying $T=SE,$\par\quad
 then let $\Delta\xlongrightarrow{E^{-1}}\Theta;\;\null S\xlongrightarrow{E^{-1}}\null T_\Theta.$ Now $\Theta\oplus\null T_\Theta=\null T.$\par\quad
 Then $\Theta\xlongrightarrow{E}\Delta\neq\zeroSubs,$ while $\null S\cap\Delta=\zeroSubs.$ \;Thus $T\mmid_\Theta=SE\mmid_\Theta\neq 0,$ ctradic.\par\vspace{4pt}\quad
@@ -1331,19 +1313,16 @@ Redefine $E$ by $Ev_i=u_i,\;Ex_j=y_j$ for each $v_i$ and $x_j.$ Then $E\in\Lm{V}
 \SepLine
 
 \ProblemN{\hypertarget{3B28}{28}}{
-	\TextNL{Supp $T\in\Lm{V,W}.$ Let $B_{\range T}=\Par{w_1,\dots,w_m}.$\vspace{4pt}}
+	\TextNL{Supp $T\in\Lm{V,W}.$ Let $\Par{Tv_1,\dots,Tv_m}$ be a bss of $\range T$ and each $w_i=Tv_i.$}
 	(a) \TextNL{Prove $\exists\,\varphi_1,\dots,\varphi_m\in\Lm{V,\Fbb}$ suth $\forall v\in V,Tv=\varphi_1\Par{v}w_1+\dots+\varphi_m\Par{v}w_m$.\vspace{2pt}}
 	(b) {\FontSmall\Sbra{4E 3.F.5}} \TextNL{$\forall v\in V,\exists\,!\,\varphi_i\Par{v}\in\Fbb,Tv=\varphi_1\Par{v}w_1+\dots+\varphi_m\Par{v}w_m.$\vspace{1pt}}
-	\Blind{(b) {\FontSmall\Sbra{4E 3.F.5}}} \TextNL{Thus defining each $\varphi_i:V\rightarrow\Fbb.$ Show each $\varphi_i\in\Lm{V,\Fbb}.$}
-}(a) Using \TIPSN{4}. Let each $w_i=Tv_i.$ \;Then $\Par{v_1,\dots,v_m}$ is liney indep.\parSol{\Ha}
-And $\Span{v_1,\dots,v_m}\oplus\null T=V.$ Now $\forall v\in V,\exists\,!\,a_i\in\Fbb,u\in\null T,\;v=\sum_{i=1}^m a_i v_i+u.$\parSol{\Ha}
+	\Blind{(b) {\FontSmall\Sbra{4E 3.F.5}}} \TextNL{Thus defining each $\varphi_i:V\rightarrow\Fbb.$ \;Show each $\varphi_i\in\Lm{V,\Fbb}.$}
+}(a) $\Span{v_1,\dots,v_m}\oplus\null T=V\Rightarrow\forall v\in V,\exists\,!\,a_i\in\Fbb,u\in\null T,\;v=\sum_{i=1}^m a_i v_i+u.$\parSol{\Ha}
 Define $\varphi_i\in\Lm{V,\Fbb}$ by $\varphi_i\Par{v_j}=\delta_{i,j},\;\varphi_i\Par{u}=0$ for all $u\in\null T.$\parSol{\Ha}
 Linity: $\forall v,w\in V\,\Sbra{\exists\,!\,a_i,b_i\in\Fbb},\lambda\in\Fbb,\varphi_i\Par{v+\lambda w}=a_i+\lambda b_i=\varphi\Par{v}+\lambda\varphi\Par{w}.$\PfEnd\parSol{\vspace{4pt}}
 (b) $\sum_{i=1}^m\varphi_i\Par{u+\lambda v}w_i=T\Par{u+\lambda v}=Tu+\lambda Tv={\envFontLarge\BigPar{{\envFontDefault\sum_{i=1}^m\varphi_i\Par{u}w_i}}}+\lambda{\envFontLarge\BigPar{{\envFontDefault\sum_{i=1}^m\varphi_i\Par{v}w_i}}}.$\PfEnd\vspace{4pt}\parSol{\Hb}
-\Or Using (3.F). Let each $w_i=Tv_i\Rightarrow\Par{v_1,\dots,v_m}$ is liney indep.\parSol{\Hb}
-Now $\forall v\in V,\exists\,!\,a_i\in\Fbb,Tv=a_1Tv_1+\dots+a_mTv_m.$ Let $B_{\SmallPar[1pt]{\range T}\apostrophe}=\Par{\psi_1, \dots, \psi_m}$.\parSol{\Hb}
-Then $\Sbra{T\apostrophe\Par{\psi_{i}}}\Par{v}=\BigPar{\psi_{i}\circ T}\Par{v}=a_i.$ \,Where $T:V\rightarrow\range T;\;\;T\apostrophe:\Par{\range T}\apostrophe\rightarrow V\apostrophe.$\parSol{\Hb}
-Thus each $\varphi_i=\psi_i\circ T=T\apostrophe\Par{\psi_i}\in V\apostrophe.$\PfEnd
+\Or $\forall v\in V,\exists\,!\,a_i\in\Fbb,Tv=a_1Tv_1+\dots+a_mTv_m.$ Let $B_{\SmallPar[1pt]{\range T}\apostrophe}=\Par{\psi_1, \dots, \psi_m}$.\parSol{\Hb}
+Then $\Sbra{T\apostrophe\Par{\psi_{i}}}\Par{v}=\BigPar{\psi_{i}\circ T}\Par{v}=a_i.$ \,Thus each $\varphi_i=\psi_i\circ T=T\apostrophe\Par{\psi_i}\in V\apostrophe.$\PfEnd
 \SepLine\pagebreak
 
 \ProblemN{\hypertarget{3B29}{29}}{
@@ -2086,7 +2065,7 @@ Now $T\Par{v\apostrophe{\hspace{-3pt}_k}}=A_{1,k}v\apostrophe{\hspace{-3pt}_1}+\
 \SepLine
 \ChEnd\pagebreak
 
-\ChDecl{Ch3E}{3$\cdot$E}{}\orMode{\hLk{3E1}{1}\;\;\hLk{3E2}{2}\;\;\hLk{3E3}{3}\;\;\hLk{3E4}{4}\;\;\hLk{3E5}{5}\;\;\hLk{3E6}{6}\;\;\hLk{3E7}{7}\;\;\hLk{3E8}{8}\;\;\hLk{3E9}{9}\;\;\hLk{3E10}{10}\;\;\hLk{3E11}{11}\;\;\hLk{3E12}{12}\;\;\hLk{3E13}{13}\;\;\hLk{3E14}{14}\;\;\hLk{3E15}{15}\;\;\hLk{3E16}{16}\;\;\hLk{3E17}{17}\;\;\hLk{3E18}{18}\;\;\hLk{3E20}{20}\;\;\mmid\;\;\hLk{3E4e8}{4E:\;\;8}\;\;\hLk{3E4e14}{14}}[-40pt]{[1]: 1, 2, 4, 5, 6, 3; [2]: (4E 8), 7, 8, 9; [3]: 10, 11, 18, 20; [4]: 12, (4E 14), 13; [5]: 15, 16, 17; [6]: 14.}
+\ChDecl{Ch3E}{3$\cdot$E}{}\orMode{\hLk{3E1}{1}\;\;\hLk{3E2}{2}\;\;\hLk{3E3}{3}\;\;\hLk{3E4}{4}\;\;\hLk{3E5}{5}\;\;\hLk{3E6}{6}\;\;\hLk{3E7}{7}\;\;\hLk{3E8}{8}\;\;\hLk{3E9}{9}\;\;\hLk{3E10}{10}\;\;\hLk{3E11}{11}\;\;\hLk{3E12}{12}\;\;\hLk{3E13}{13}\;\;\hLk{3E14}{14}\;\;\hLk{3E15}{15}\;\;\hLk{3E16}{16}\;\;\hLk{3E17}{17}\;\;\hLk{3E18}{18}\;\;\hLk{3E20}{20}\;\;\mmid\;\;\hLk{3E4e8}{4E:\;\;8}\;\;\hLk{3E4e14}{14}}[-40pt]{[1]: 1, 2, 4, 5, 6, 3; [2]: (4E 8), 7, 8, 9; [3]: 10, 11, 18, 20; [4]: 17, 12, 13; [5]: (4E 14); [6]: 15, 16, 14.}
 \vspace{6pt}
 
 \ProblemN[]{\hypertarget{3E1}{1}}{
@@ -2274,6 +2253,13 @@ $v_1+U=v_2+U\Longleftrightarrow v_1-v_2\in\null T\Longleftrightarrow Tv_1=Tv_2.$
 {And $\range E=\range S=\Span{e_2}$ is the {\tgsl purest} in $\mathcal{S}_{\!V} U.$}
 \SepLine
 
+\ProblemN{\hypertarget{3E17}{17}}{
+	\TextNL{Supp $V\XSlash U$ is finide. Supp $W$ is finide and $V=U+W.$ Show $\dim W\geqslant\dim V\XSlash U$.}
+}Let $Y\oplus\Par{U\cap W}=W.$ Then by \Sbra{1.C \TIPSN{4}}, $V=U\oplus Y.$ Note that $V\XSlash U$ and $Y$ are iso.\PfEnd\parSol{\vspace{2pt}}
+\Or Let $B_W=\Par{w_1,\dots,w_n}.$ Then $V=U+\Span{w_1,\dots,w_n}.$\parSol{}
+$\forall v\in V,\exists\,u\in U,\;v=u+\Par{a_1w_1+\dots+a_nw_n}\Rightarrow v+U=\Par{a_1w_1+\dots+a_nw_n}+U.$\PfEnd
+\SepLine
+
 \ProblemN{\hypertarget{3E12}{12}}{
 	\TextNL{Supp $U$ is a subsp of $V.$ Prove is $V$ is iso to $U\times\Par{V\XSlash U}$.}
 }\par\quad
@@ -2289,12 +2275,6 @@ And $T\Par{u,v+U}=u+S\Par{v+U}=0\Longrightarrow\pi\BigPar{T\Par{u,v+U}}=v+U=0,$ 
 \Or Define $R\in\Lm[\BigPar]{V,U\times\Par{V\XSlash U}}$ by $R\Par{v}=\BigPar{u,\Par{w+U}}.$ Now $R\circ T=I_{U\times\SmallPar{V\XSlash U}},\;T\circ R=I_V.$\PfEnd
 \SepLine
 
-\ProblemBnoor{\hypertarget{3E4e14}{4E 14}}{
-	\TextB{Supp $V=U\oplus W,\;B_W=\Par{w_1,\dots,w_m}.$ Prove $B_{V\XSlash U}=\BigPar{w_1+U,\dots,w_m+U}.$\vspace{2pt}}
-}$\forall v\in V,\exists\,!\,u\in U,w\in W,v=u+w.$ 又 $\exists\,!\,c_i\in\Fbb,w=\sum_{i=1}^m c_i w_i\Rightarrow v=\sum_{i=1}^m c_i w_i+u$.\vspace{2pt}\parSol{}
-Hence $\forall v+U\in V\XSlash U,\exists\,!\,c_i\in\Fbb,v+U=\sum_{i=1}^m c_i w_i+U.$\PfEnd
-\SepLine
-
 \ProblemN{\hypertarget{3E13}{13}}{
 	\TextNL{Prove $B_{V\XSlash U}=\BigPar{v_1+U,\dots,v_m+U},B_U=\Par{u_1,\dots,u_n}\Rightarrow B_V=\BigPar{v_1,\dots,v_m,u_1,\dots,u_n}.$\vspace{2pt}}
 }$\forall v\in V,\exists\,!\,a_i\in\Fbb,v+U=\sum_{i=1}^m a_i v_i+U\Rightarrow\exists\,!\,b_i\in\Fbb,v-\sum_{i=1}^m a_i v_i=\sum_{i=1}^n b_i u_i\in U$\parSol{\vspace{1pt}}
@@ -2304,13 +2284,18 @@ $\Rightarrow \forall v\in V,\exists\,!\,a_i,b_j\in\Fbb,v=\sum_{i=1}^m a_i v_i+\s
 \Or Note that $B=\Par{v_1,\dots,v_m}$ is liney indep, and $\Sbra{\Span{v_1,\dots,v_m}+U}\subseteq V.$\parSol{}
 $v\in\Spn B\cap U\Longleftrightarrow v+U=\sum_{i=1}^ma_i\Par{v_i+U}=0+U\Longleftrightarrow v=0.$ \,Hence $\Spn B\cap U=\zeroSubs.$\parSol{}
 Becs $\Dim\Sbra{\Span{v_1,\dots,v_m}\oplus U}=m+n=\dim V.$ \;Now by (2.B.8).\PfEnd
-\SepLine\pagebreak
+\SepLine
+
+\ProblemBnoor{\hypertarget{3E4e14}{4E 14}}{
+	\TextB{Supp $V=U\oplus W,\;B_W=\Par{w_1,\dots,w_m}.$ Prove $B_{V\XSlash U}=\BigPar{w_1+U,\dots,w_m+U}.$\vspace{2pt}}
+}$\forall v\in V,\exists\,!\,u\in U,w\in W,v=u+w.$ 又 $\exists\,!\,c_i\in\Fbb,w=\sum_{i=1}^m c_i w_i\Rightarrow v=\sum_{i=1}^m c_i w_i+u$.\vspace{2pt}\parSol{}
+Hence $\forall v+U\in V\XSlash U,\exists\,!\,c_i\in\Fbb,v+U=\sum_{i=1}^m c_i w_i+U.$\PfEnd
+\SepLine
 
 \BulletPointX\NoteForSmall{Exe (13) and (4E 14)}\;\;Let $U\oplus W=V.$ Define $S\Par{w+U}=w.$ \;\Sbra{ See also \TIPSN{1}. }\TextB{}
 (a) Let $B_W=\Par{w_1,\dots,w_m}\Rightarrow B_{V\XSlash U}=\BigPar{w_1+U,\dots,w_m+U}.$ Then $S\Par{w_k+U}$ might not equal $w_k.$\TextB{}
 (b) Let $B_{V\XSlash U}=\BigPar{w_1+U,\dots,w_m+U},$ then let $B_W=\Par{w_1,\dots,w_m}.$ Now each $S\Par{w_k+U}=w_k.$\def\Pure{{\textup{\tgnr Pure}}\,}\par\vspace{2pt}
-\BulletPointX\NewNotation\;$\Pure V\XSlash U=W\Longleftrightarrow V=U\oplus W,\;W=\range S.$\par
-\BulletPointX\NewTheorem\;The uniqnes of $\Pure V\XSlash U$ follows from $\range S.$
+\BulletPointX\NewNotation\;$\Pure V\XSlash U=W\Longleftrightarrow V=U\oplus W,\;W=\range S.$ {\FontSmall\tgsl The uniqnes of $\Pure V\XSlash U$ follows from $\range S.$}
 \SepLine
 
 \ProblemB{
@@ -2319,7 +2304,7 @@ Becs $\Dim\Sbra{\Span{v_1,\dots,v_m}\oplus U}=m+n=\dim V.$ \;Now by (2.B.8).\PfE
 }(a) Supp $U+W.$ Then $\forall x\in V\XSlash I,\exists\,v\in V,\Par{u_v,w_v}\in U\times W,x=v+I=\Par{u_v+w_v}+I.$\parSol{\Ha}
 Note that $U\XSlash I,W\XSlash I\subseteq V\XSlash I.$ Thus $V\XSlash I=U\XSlash I+W\XSlash I.$\parSol{\Ha}
 $\forall x\in\Par{U\XSlash I}\,${\Large$\cap$}$\,\Par{W\XSlash I},x=u+I=w+I\Rightarrow{}$\uline{$u-w\in I=U\cap W$}\parSol{\Ha}
-\uline{$\Rightarrow\exists\,w'\in I,u=w+w'\in U\cap W$}${}\Rightarrow x=u+I=0+I.$ Thus $\Par{U\XSlash I}\,${\Large$\cap$}$\,\Par{W\XSlash I}=\zeroSubs.$\parSol{\vspace{2pt}}
+\uline{$\Rightarrow\exists\,w'\in I,u=w+w'\in U\cap W$}${}\Rightarrow x=u+I=0+I.$ Thus $\Par{U\XSlash I}\,${\Large$\cap$}$\,\Par{W\XSlash I}=\zeroSubs.$\parSol{\vspace{3pt}}
 (b) Supp $V\XSlash I=U\XSlash I\oplus W\XSlash I.$ Then $\forall v\in V,v+I=\Par{u+I}+\Par{w+I}$\parSol{\Hb}
 $\Rightarrow v-u-w\in I=U\cap W\Rightarrow\exists\,x\in U\cap W,v=u+w+x\in U+W.$\PfEnd
 \SepLine
@@ -2331,6 +2316,19 @@ $\Rightarrow v-u-w\in I=U\cap W\Rightarrow\exists\,x\in U\cap W,v=u+w+x\in U+W.$
 }$\forall v_i\in S_V I,v_i=v_u+u,\exists\,!\,v_u\in S_V U,u\in U\Rightarrow\exists\,!\,u_i\in S_U I,i\in I,v_i=v_u+u_i+i.$\parSol{}
 又 $v_i\in\Pure V\XSlash I.$ Hence $i=0,$ and $v_i\in S_V U\oplus S_U I.$ Now becs $S_V U,U\subseteq S_V I.$\PfEnd
 \SepLine
+
+\ProblemB{
+	\TipsN{4}\,\,\,\TextB{Supp $T\in\Lm{V,W}$ is inv, $V=M\oplus N,\range T\mmid_M=X,\range T\mmid_N=Y.$}
+	\IndentTipsN{4}\TextB{Then $W=\range T=X\oplus Y.$ Show $\Pure V\XSlash M=N\Longleftrightarrow\Pure W\XSlash X=Y.$}
+}Define $S_1:V\XSlash M\rightarrow V$ and $S_2:W\XSlash X\rightarrow W$ by $S_1:v+M\mapsto v$ and $S_2:w+X\mapsto w.$\parSol{}
+Now $v=v_m+v_n\Longleftrightarrow Tv=Tv_m+Tv_n.$ We show $S_1\Par{v+M}=v_n\Longleftrightarrow S_2\Par{Tv+X}=Tv_n.$\parSol{}
+(a) Let $S_2\Par{Tv_n+X}=Tv_n'.$ Then $Tv_n-Tv_n'\in X\Longleftrightarrow v_n-v_n'=v_m'\in M,v=v_n'+\Par{v_m'+v_m}.$\parSol{}
+(b) Let $S_1\Par{v_n+M}=v_n'.$ Then $v_n-v_n'\in M\Longleftrightarrow Tv_n-Tv_n'=Tv_m'\in X,Tv=Tv_n'+\Par{Tv_m'+Tv_m}.$\parSol{}
+Hence by def, $\Pure V\XSlash M=\range S_1=N\Longleftrightarrow\Pure W\XSlash X=\range S_2=Y.$\PfEnd
+\SepLine
+
+\BulletPointX\NewNotation\;\;Suppose $T\in\Lm{V,W}.$ Define $T\XSlash{^U_X}\in\Lm[\BigPar]{V\XSlash U,W\XSlash X}$ by ${T\XSlash{^U_X}}\Par{v+U}=Tv+X.$
+\SepLine\pagebreak
 
 \ProblemN{\hypertarget{3E15}{15}}{
 	\TextNL{Supp $\varphi\in\Lm[\Par]{V,\Fbb}\nonzero.$ Prove $\dim V\XSlash \Par{\null\varphi}=1$.}
@@ -2346,15 +2344,6 @@ Define $\varphi\in\Lm{V,\Fbb}$ by $\varphi\Par{v_0}=1,\varphi\Par{u}=0,$ where $
 Define $\varphi:{V\rightarrow\Fbb}$ by $\varphi\Par{v}=a.$ Then $\varphi\Par{v_1+\lambda v_2}=a_1+\lambda a_2=\varphi\Par{v_1}+\lambda\varphi\Par{v_2}.$\parSol{}
 Now $u\in U\Longleftrightarrow u+U=0w+U\Longleftrightarrow\varphi\Par{u}=0.$\PfEnd
 \SepLine
-
-\ProblemN{\hypertarget{3E17}{17}}{
-	\TextNL{Supp $V\XSlash U$ is finide. Supp $W$ is finide and $V=U+W.$ Show $\dim W\geqslant\dim V\XSlash U$.}
-%	(b) \TextNL{Show $\exists\,W\in\mathcal{S}_{\!V} U,\dim W=\dim V\XSlash U.$}
-}{\FontSmall\Sbra{{\tgsl See also {\NOTEFOR} [3.88, 90, 91].}}}\par\quad
-Let $Y\oplus\Par{U\cap W}=W.$ Then by \Sbra{1.C \TIPSN{4}}, $V=U\oplus Y.$ Note that $V\XSlash U$ and $Y$ are iso.\PfEnd\vspace{2pt}\quad
-\Or Let $B_W=\Par{w_1,\dots,w_n}.$ Then $V=U+\Span{w_1,\dots,w_n}.$\par\quad
-$\forall v\in V,\exists\,u\in U,\;v=u+\Par{a_1w_1+\dots+a_nw_n}\Rightarrow v+U=\Par{a_1w_1+\dots+a_nw_n}+U.$\PfEnd
-\SepLine\pagebreak
 
 \ProblemN{\hypertarget{3E14}{14}}{
 	\TextNL{Supp $U=\Bra{\Par{x_1,x_2,\cdots}\in\Fbb^{\infty}:x_k\neq 0\text{\;for\;only\;finily\;many}\;k}$.\vspace{2pt}}
