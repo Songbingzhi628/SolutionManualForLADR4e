@@ -56,8 +56,8 @@ By Assoc: $\Par{a+\infty}+\Par{-\infty}\neq a+\Par{\infty+\Par{-\infty}}.$\parSo
 \SepLine
 
 \ProblemBnoor[]{\Tips}[]{
-	\TextB{\;About the Field $\Fbb:$ Many choices.}
-	\TextB{\Example \,\,\,$\Fbb=\Zbb_m=\Bra{K_0,K_1,\dots,K_{m-1}},\forall m-1\in\Nbp.$ \FontNorm\tgnr\Sbra{ Using Euler's Theorem. }}
+	\TextB{\;About the Field $\Fbb:$ Many choices.\;\;\FontNorm\Sbra[3pt]{{\tgsl Req Multi Inv Uniq}}\vspace{2pt}}
+	\TextB{\AExa $\Fbb=\Zbb_m=\Bra{K_0,K_1,\dots,K_{m-1}},\forall m-1\in\Nbp$ suth $\Par{m-1}$ is a prime.}
 }\SepLine
 \ChEnd
 
@@ -171,7 +171,7 @@ Hence this literal trick is invalid.\par\quad\Hb
 {\Large\vspace{6pt}There must be some $U_i$ that contains at least two elems of $W.$}\par\quad\Hb\HII
 {\Large\vspace{6pt}$\exists$ disti $\lambda_1,\lambda_2\in\Fbb,v+\lambda_1 u,v+\lambda_2 u\in U_i,i\in\Bra{2,3}.$}\par\quad\Hb\HII
 {\Large Then $u\in U_i$ while $u\not\in U_2\cup U_3.$ Ctradic.}\FontNorm\PfEnd\vspace{6pt}\quad
-\uline{\Example \,\,\,Let $\Fbb=\Zbb_2.$} $U_1=\Bra{u,0},U_2=\Bra{v,0},U_3=\Bra{v+u,0}.$ While $\mathcal{U}=\Bra{0,u,v,v+u}$ is a subsp.
+\uline{\AExa Let $\Fbb=\Zbb_2.$} $U_1=\Bra{u,0},U_2=\Bra{v,0},U_3=\Bra{v+u,0}.$ While $\mathcal{U}=\Bra{0,u,v,v+u}$ is a subsp.
 \SepLine\pagebreak
 
 \ProblemB{
@@ -504,7 +504,7 @@ Define $U_i=\Span[\BigPar]{v_1,\dots,v_m,u_1,\dots,u_{i-1},u_{i+1},\dots,u_{n-m}
 And becs $\forall v\in \bigcap\limits_{i=1}^{n-m}U_i,v=v_0+b_1 u_1+\dots+b_{n-m} u_{n-m}\in U_i\Rightarrow$ each $b_i=0\Rightarrow v\in U.$\vspace{-4pt}\parSol{}
 Hence $\bigcap\limits_{i=1}^{n-m}U_i\subseteq U.$\PfEnd
 %\vspace{10pt}
-%\Example\,\,\, {Supp $\dim V=6,\dim U=3$.\par\vspace{2pt}\quad
+%\AExa {Supp $\dim V=6,\dim U=3$.\par\vspace{2pt}\quad
 %	$\Par{\overbrace{\underbrace{v_1,v_2,v_3}_\text{Bss of U},v_4,v_5,v_6}^\text{Bss of V}},$ define $\hMath[0pt]{l}{\left|}{\right\}}{$
 %		$U_1=\Span{v_1,v_2,v_3}\oplus\Span{v_5,v_6}\\ $
 %		$U_2=\Span{v_1,v_2,v_3}\oplus\Span{v_4,v_6}\\ $
@@ -726,12 +726,12 @@ Assoc: $\BigPar{\Par{f+g}+h}\Par{x}=\BigPar{{f}\Par{x}+{g}\Par{x}}+{h}\Par{x}$\p
 \Blind{Assoc: $\BigPar{\Par{f+g}+h}\Par{x}$} $={f}\Par{x}+\BigPar{{g}\Par{x}+{h}\Par{x}}=\BigPar{f+\Par{g+h}}\Par{x}.$\par\quad\Hb
 Add Id: $\Par{f+0}\Par{x}=f\Par{x}+0\Par{x}=f\Par{x}+0=f\Par{x}.$\par\quad\Hb
 Add Inv: $\Par{f+g}\Par{x}={f}\Par{x}+g\Par{x}=f\Par{x}+\BigPar{-f\Par{x}}=0=0\Par{x}.$\par\quad\Hb
+Multi Id: $\Par{1f}\Par{x}=1f\Par{x}=f\Par{x}.$ \BigPar{ \NOTICE that the smallest $\Fbb$ is $\Bra{0,1}.$ }\par\quad\Hb
 Distr: $\BigPar{a\Par{f+g}}\Par{x}=a\Par{f+g}\Par{x}=a\BigPar{f\Par{x}+g\Par{x}}$\par\quad\Hb
-\Blind{Distr: $\BigPar{a\Par{f+g}}\Par{x}=a\Par{f+g}\Par{x}$} $=a\,f\Par{x}+ag\Par{x}=\Par{a\,f}\Par{x}+\Par{ag}\Par{x}=\Par{a\,f+ag}\Par{x}.$\par\qquad\Hb
-Simlr, $\BigPar{\Par{a+b}f}\Par{x}=\Par{a\,f+b\,f}\Par{x}.$\par\quad\Hb
+\Blind{Distr: $\BigPar{a\Par{f+g}}\Par{x}=a\Par{f+g}\Par{x}$} $=a\,f\Par{x}+ag\Par{x}=\Par{a\,f}\Par{x}+\Par{ag}\Par{x}=\Par{a\,f+ag}\Par{x}.$\par\quad\Hb
+\Blind{Distr: }Simlr, $\BigPar{\Par{a+b}f}\Par{x}=\Par{a\,f+b\,f}\Par{x}.$\par\quad\Hb
 So far, we have used the same properties in $W.$\par\quad\Hb
-Which means that {\tgsc if $W^V$ is a vecsp, then $W$ must be a vecsp.}\par\quad\Hb
-Multi Id: $\Par{1f}\Par{x}=1f\Par{x}=f\Par{x}.$ \BigPar{ \NOTICE that the smallest $\Fbb$ is $\Bra{0,1}.$ }\PfEnd
+Which means that {\tgsc if $W^V$ is a vecsp, then $W$ must be a vecsp.}\PfEnd
 \SepLine\pagebreak
 
 \BulletPointX\TipsN{2} \,\,\,$T\in\Lm{V,W}\Longleftrightarrow T\in\Lm{V,\range T}\Longleftrightarrow T\in\Lm{V,U},$ if $\range T$ is a subsp of $U.$\TextB{}
@@ -783,7 +783,7 @@ Supp $v\in V\Rightarrow v=au,\,\exists\,!\,a\in\Fbb$. Then $Tv=T\Par{au}=\lambda
 }{\tgsc Composition and product are not the same in $\PoFi.$}\par\quad
 \NOTICE that $\Par{p\circ q}\Par{x}=p\BigPar{q\Par{x}},$ while $\Par{pq}\Par{x}=p\Par{x}q\Par{x}=q\Par{x}p\Par{x}.$\par\quad
 Becs in general, $\Sbra{q\circ \Par{p_1+\lambda p_2}}\Par{x}=q\BigPar{p_1\Par{x}+\lambda p_2\Par{x}}\neq \Par{qp_1}\Par{x}+\lambda \Par{qp_2}\Par{x}.$\par\quad
-\Example \,\,\,Let $q$ be defined by $q\Par{x}=x^2,$ then $q\circ\BigPar{1+\Par{-1}}=0\neq q\Par{1}+q\Par{-1}=2.$\PfEnd
+\AExa Let $q$ be defined by $q\Par{x}=x^2,$ then $q\circ\BigPar{1+\Par{-1}}=0\neq q\Par{1}+q\Par{-1}=2.$\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{3A10}{10}}{
@@ -892,17 +892,19 @@ Define $S\in\Lm{V}$ by $S\Par{av+bTv+c_1 u_1+\dots+c_n u_n}=bv\Rightarrow S\Par{
 		\TextB{\FontNorm We can assure that $\zeroSubs\subseteq\Lm{V,W},\zeroSubs\subseteq V,\zeroSubs\subseteq W.$}
 		\TextB{\FontNorm And by [3.2], the add and homo imply that $V$ is closd add and scalar multi.}
 		\TextB{\FontNorm\BigPar{ $W^V$ might not be a vecsp. }}
-}\colorbox{yellow}{TODO: Too tricky to be answered by AI.}\par\quad
+}\par\quad
 (I) If $W^V=\zeroSubs.$ Then $\Lm{V,W}=\zeroSubs.$\par\quad\HI
 And $W=\zeroSubs,$ for if not, $\exists\,w\in W\nonzero,$ define a map $f$ by $f\Par{x}=w,\forall x\in V.$\par\quad\HI
-And $V$ might not be a vecsp. Example: ??? \par\quad\EndI
-(II) If $W^V$ is a nonzero vecsp. Then $W$ is a vecsp.\par\quad\HII
-(a) If $\Lm{V,W}=\zeroSubs,$ then we cannot guarantee that $V$ is a vecsp. Example: ???\par\quad\HII
-(b) If not, then $\exists\;T\in\Lm{V,W},\,T\neq 0.$ Which means $\exists\,v\in V,Tv\neq 0\Rightarrow v\neq 0.$\par\quad\HII\Hb
+And $V$ might not be a vecsp. \AExa Let $V=\Rbb,$ but with the scalar multi defined by $a\odot v=0.$\par\quad\EndI
+(II) If $W^V$ is a nonzero vecsp $\Longleftrightarrow W$ is a nonzero vecsp.\par\quad\HII
+(a) If $\Lm{V,W}=\zeroSubs,$ then by Exa (I), $V$ might not be vecsp.\par\quad\HII
+(b) If not, then $\exists\;T\in\Lm{V,W},\,T\neq 0.$ Which means $\exists\,v\in V,Tv\neq 0\Rightarrow v\neq 0.$\colorbox{yellow}{TODO}\par\quad\HII\Hb
 Then both $W$ and $V$ have a nonzero elem.\par\quad\HII\Hb
 (i) If $\exists$ inje $T\in\Lm{V,W},$ then $T\Par{u+v}=T\Par{v+u}\Rightarrow u+v=v+u.$ etc. Hence $V$ is a vecsp.\par\quad\HII\Ha\Endi
 (ii) If not, then we cannot guarantee that $V$ is a vecsp. Exa: ???\par\quad\EndII
-(III) If $W^V$ is not a vecsp, then $W$ is not a vecsp. Exa: ???\PfEnd
+(III) If $W^V$ is not a vecsp $\Longleftrightarrow W$ is not a vecsp.\par\quad\HIII
+(a) If $\Lm{V,W}=\zeroSubs,$ then by Exa (I), $V$ might not be vecsp.\par\quad\HIII
+(b) If not.\PfEnd
 \SepLine
 \ChEnd
 
@@ -1025,14 +1027,14 @@ Define $T\in\Lm{V,W}$ by $T\Par{a_1 v_1+\dots+a_n v_n+b_1 u_1+\dots+b_m u_m}=a_1
 \ProblemB{
 	\TipsN{2}\,\,\,\TextB{Supp $T\in\Lm{V,W}$ and $T\mmid_U$ is inje. Let $V=M+N,\;U=X+Y.$\vspace{0pt}}
 	{\IndentTipsN{2}}\TextB{Then $\range T=\range T\mmid_M+\range T\mmid_N=\range T\mmid_X+\range T\mmid_Y.$\vspace{1pt}}
-	{\IndentTipsN{2}}(a) \TextB{Show if $U=X\oplus Y,$ then $\range T=\range T\mmid_X\oplus\range T\mmid_Y.$\vspace{1pt}}
+	{\IndentTipsN{2}}(a) \TextB{Show $U=X\oplus Y\Longleftrightarrow\range T=\range T\mmid_X\oplus\range T\mmid_Y.$\vspace{1pt}}
 	{\IndentTipsN{2}}(b) \TextB{Give an exa suth $V=M\oplus N,\;\range T\neq\range T\mmid_M\oplus\range T\mmid_N.$}
-}Asum for some $v\in V,$ there exis two disti pairs $\Par{x_1,y_1},\Par{x_2,y_2}$ in $X\times Y$\parSol{}
+}Supp $U=X\oplus Y.$ Asum for some $v\in V,$ there exis two disti pairs $\Par{x_1,y_1},\Par{x_2,y_2}$ in $X\times Y$\parSol{}
 suth $Tv=Tx_1+Ty_1=Tx_2+Ty_2.$ Becs $\forall v\in X\oplus Y,\exists\,!\,\Par{x,y}\in X\times Y,v=x+y.$\parSol{}
 Now $T\Par{x_1+y_1}=T\Par{x_2+y_2}\Longrightarrow x_1+y_1=x_2+y_2\Longrightarrow x_1=x_2,y_1=y_2.$ Ctradic.\parSol{}
-Thus $\forall Tv\in\range T,\exists\,!\,Tx\in\range T\mmid_X,Ty\in\range T\mmid_Y,Tv=Tx+Ty.$\PfEnd\vspace{2pt}
-\Example\,\,\,Let $B_V=\Par{v_1,v_2,v_3},B_W=\Par{w_1,w_2},\;T:v_1\mapsto 0,\;v_2\mapsto w_1,\;v_3\mapsto w_2.$\par
-\Blind{\Example \,\,\,}Let $B_M=\Par{v_1-v_2,v_3},B_N=\Par{v_2}.$ Then $\range T\mmid_M=\Span{w_1,w_2},\range T\mmid_N=\Span{w_1}$\par\vspace{2pt}
+Thus $\forall Tv\in\range T,\exists\,!\,Tx\in\range T\mmid_X,Ty\in\range T\mmid_Y,Tv=Tx+Ty.$ Convly, becs $T$ is inje.\PfEnd\vspace{2pt}
+\AExa Let $B_V=\Par{v_1,v_2,v_3},B_W=\Par{w_1,w_2},\;T:v_1\mapsto 0,\;v_2\mapsto w_1,\;v_3\mapsto w_2.$\parExa
+Let $B_M=\Par{v_1-v_2,v_3},B_N=\Par{v_2}.$ Then $\range T\mmid_M=\Span{w_1,w_2},\range T\mmid_N=\Span{w_1}$\par\vspace{2pt}
 \AComm Also $\null T\mmid_M=\null T\mmid_N=\zeroSubs.$ Hence $\null T\neq\null T\mmid_M\oplus\null T\mmid_N.$
 \SepLine
 
@@ -1069,7 +1071,7 @@ By (3.A.4), $R=\Par{v_1,\dots,v_n}$ is liney indep in $V.$ Let $\Spn R=U.$ We wi
 (a) $T{\envFontLarge\BigPar{\sum_{i=1}^n a_i v_i}}=0\Longleftrightarrow\sum_{i=1}^n a_i Tv_i=0\Longleftrightarrow a_1=\dots=a_n=0.$ Thus $U\cap\null T=\zeroSubs.$\TextB{\vspace{4pt}}
 (b) $Tv=\sum_{i=1}^n a_i Tv_i\Longleftrightarrow v-\sum_{i=1}^n a_i v_i\in\null T\Longleftrightarrow v=\envFontLarge\BigPar{v-\sum_{i=1}^n a_i v_i}+\BigPar{\sum_{i=1}^n a_i v_i}.$\par\vspace{2pt}\IndentB{}\Hb{}
 Thus $U+\null T=V.$ \;\Or $\range T=\Bra{Tu:u\in U}=\range T\mmid_U.$ Using Exe (12).\PfEnd\vspace{2pt}
-\ACoro Conversely, if $U\oplus\null T=V$ and $B_U=\Par{v_1,\dots,v_n},$ then $B_{\range T}=\Par{Tv_1,\dots,Tv_n}.$\parCor
+\ACoro Convly, if $U\oplus\null T=V$ and $B_U=\Par{v_1,\dots,v_n},$ then $B_{\range T}=\Par{Tv_1,\dots,Tv_n}.$\parCor
 Becs $\range T=\range T\mmid_U=\Span{Tv_1,\dots,Tv_n},$ 又 $T$ is inje.
 \SepLine
 
@@ -1187,7 +1189,7 @@ We show $\dim\null TS\geqslant\Big\lceil${\Large$\frac{\,n\,}{2}$}$\Big\rceil.$ 
 $\dim\null S+\dim\null T\mmid_{\range S}=\dim\null TS.$ \;If $\dim\null S\geqslant\Big\lceil${\Large$\frac{\,n\,}{2}$}$\Big\rceil.$ Then done.\par\vspace{1pt}\quad
 Othws, $\dim\null S\leqslant\Big\lceil${\Large$\frac{\,n\,}{2}$}$\Big\rceil-1\Rightarrow\dim\null T\geqslant n-\dim\null S\geqslant n-\Big\lceil${\Large$\frac{\,n\,}{2}$}$\Big\rceil+1=\Big\lfloor${\Large$\frac{\,n\,}{2}$}$\Big\rfloor+1\geqslant\Big\lceil${\Large$\frac{\,n\,}{2}$}$\Big\rceil.$\par\vspace{2pt}\quad
 Thus $\dim\null TS\geqslant\max\!\Bra{\dim\null S,\dim\null T}=\Big\lceil${\Large$\frac{\,n\,}{2}$}$\Big\rceil.$\PfEnd\vspace{4pt}\quad
-\Example \,\,\,Define $T: \; v_1\mapsto 0, \;\;\, v_2\mapsto 0, \;\;\; v_i\mapsto v_i\;;$ \;\; $S: \; v_1\mapsto v_4, \; v_2\mapsto v_5, \;\; v_i\mapsto 0\;;\;\; i=3,4,5.$\par\vspace{-2pt}
+\AExa Define $T: \; v_1\mapsto 0, \;\;\, v_2\mapsto 0, \;\;\; v_i\mapsto v_i\;;$ \;\; $S: \; v_1\mapsto v_4, \; v_2\mapsto v_5, \;\; v_i\mapsto 0\;;\;\; i=3,4,5.$\par\vspace{-2pt}
 \SepLine
 
 \ProblemN{\hypertarget{3B26}{26}}{
@@ -1339,7 +1341,7 @@ $\varphi\Par{u}\neq 0\Longleftrightarrow V=\null\varphi\oplus\Span{u}\Longleftri
 \hspace{-5pt}$\hText{$
 	Note that $\forall v\in V,\exists\,!\,u_0\in\eta,\;a_v\in\Fbb,v=u_0+a_vu\\$
 	$\Rightarrow\varphi\Par{u_0+a_vu}=a_v\varphi\Par{u},\;\beta\Par{u_0+a_vu}=a_v\beta\Par{u}.}\;\MathLeftMid{l}{$Let $c={}${\Large\envFontSmall$\frac{\varphi\Par{u}}{\beta\Par{u}}$}${}\in\nonzeroFbb.}$\PfEnd%\vspace{6pt}
-%\AComm Conversely, if $\varphi=c\beta,\exists\,c\in\nonzeroFbb.$ \,Then $\null\beta=\null\Par{c\varphi}=\null\varphi.$\parCom
+%\AComm Convly, if $\varphi=c\beta,\exists\,c\in\nonzeroFbb.$ \,Then $\null\beta=\null\Par{c\varphi}=\null\varphi.$\parCom
 %Note that $c\varphi=E\circ\varphi,$ where $E\in\Lm{\Fbb}:x\rightarrow cx,$ and $E$ is inv.
 \SepLine
 
@@ -1439,7 +1441,7 @@ By {\NOTEFOR} Transpose, $\BigPar{AC}{_{j,\cdot}}=\envFontLarge\Sbra{\BigPar{\en
 	%\Ha\TextB{\large Which means that each cols $CR$ is a liney combination of the cols of $C.$\vspace{6pt}}
 	(b) For $j=1,\dots,m,$\quad $\BigPar{CR}{_{j,\cdot}}=C_{j,\cdot}R=C_{j,\cdot}R_{\cdot,\cdot}=\sum_{r=1}^c C_{j,r}R_{r,\cdot}=C_{j,1}R_{1,\cdot}+\dots+C_{j,c}R_{c,\cdot}$\TextB{\vspace{2pt}}
 	%\Hb\TextB{\large Which means that each rows $CR$ is a liney combination of the rows of $R.$}
-}\BulletPointX\Example \,\,\,$m=2,c=2,p=3.$\TextB{\vspace{2pt}}
+}\BulletPointX\AExa $m=2,c=2,p=3.$\TextB{\vspace{2pt}}
 %$\BigPar{AB}_{\cdot,1}=AB_{\cdot, 1}=\begin{pmatrix} 1 &\hspace{-4pt} 2\\[-2pt] 3 &\hspace{-4pt} 4\end{pmatrix}\begin{pmatrix} 5 \\[-2pt] 8\end{pmatrix}=5\begin{pmatrix}1\\[-2pt]3\end{pmatrix}+8\begin{pmatrix}2\\[-2pt]4\end{pmatrix}=\begin{pmatrix} 21\\[-2pt] 47\end{pmatrix}$;\TextB{}
 $\BigPar{AB}{_{\cdot,2}}=AB_{\cdot, 2}=\begin{pmatrix} 1 &\hspace{-4pt} 2\\[-2pt] 3 &\hspace{-4pt} 4\end{pmatrix}\begin{pmatrix} 6 \\[-2pt] 9\end{pmatrix}=A_{\cdot,1}B_{1,2}+A_{\cdot,2}B_{2,2}=6\begin{pmatrix}1\\[-2pt]3\end{pmatrix}+9\begin{pmatrix}2\\[-2pt]4\end{pmatrix}=\begin{pmatrix} 24\\[-2pt] 54\end{pmatrix}$;\TextB{\vspace{2pt}}
 %$\BigPar{AB}_{\cdot,3}=AB_{\cdot, 3}=\begin{pmatrix} 1 &\hspace{-4pt} 2\\[-2pt] 3 &\hspace{-4pt} 4\end{pmatrix}\begin{pmatrix} 7 \\[-2pt] 10\end{pmatrix}=7\begin{pmatrix}1\\[-2pt]3\end{pmatrix}+10\begin{pmatrix}2\\[-2pt]4\end{pmatrix}=\begin{pmatrix} 27\\[-2pt] 61\end{pmatrix}$;\TextB{}
@@ -1457,7 +1459,7 @@ $\BigPar{AB}{_{1,\cdot}}=A_{1,\cdot}B=\begin{pmatrix} 1 &\hspace{-4pt} 2\end{pma
 $A_{\cdot,k}=R_{1,k}C_{\cdot,1}+\dots+R_{c,k}C_{\cdot,c}=\BigPar{CR}{_{\cdot,k}}\;,\exists\,!\,R_{1,k},\cdots,R_{c,k}\in\Fbb,$ forming $R\in\Fbb^{c,n}.$ Thus $A=CR.$\vspace{4pt}\par\quad
 (b) Reduce to bss $B_R=\BigPar{R_{1,\cdot},\cdots,R_{r,\cdot}},$ forming $R\in\Fbb^{r,n}$. Then $\forall j\in\Bra{1,\dots,m},$\vspace{2pt}\par\quad\Hb
 $A_{j,\cdot}=C_{j,1}R_{1,\cdot}+\dots+C_{j,r}R_{r,\cdot}=\BigPar{CR}{_{j,\cdot}}\;,\exists\,!\,C_{j,1},\dots,C_{j,r}\in\Fbb,$ forming $C\in\Fbb^{m,r}.$ Thus $A=CR.$\PfEnd\vspace{6pt}
-\Example \,\,\,$A\,=\,$ {\normalsize$\begin{pmatrix} 10 &\hspace{-4pt} 7 &\hspace{-4pt} 4 &\hspace{-4pt} 1 \\[-2pt] 26 &\hspace{-4pt} 19 &\hspace{-4pt} 12 &\hspace{-4pt} 5\\[-2pt] 46 &\hspace{-4pt} 33 &\hspace{-4pt} 20 &\hspace{-4pt} 7\end{pmatrix}$
+\AExa $A\,=\,$ {\normalsize$\begin{pmatrix} 10 &\hspace{-4pt} 7 &\hspace{-4pt} 4 &\hspace{-4pt} 1 \\[-2pt] 26 &\hspace{-4pt} 19 &\hspace{-4pt} 12 &\hspace{-4pt} 5\\[-2pt] 46 &\hspace{-4pt} 33 &\hspace{-4pt} 20 &\hspace{-4pt} 7\end{pmatrix}$
 	{$\xlongequal{\SmallPar{\text{I}}}$}
 	$\begin{pmatrix} 1 &\hspace{-4pt} 0\\[-2pt] 0 &\hspace{-4pt} 1\\[-2pt] 2 &\hspace{-4pt} 1\end{pmatrix}\begin{pmatrix} 10 &\hspace{-4pt} 7 &\hspace{-4pt} 4 &\hspace{-4pt} 1\\[-2pt] 26 &\hspace{-4pt} 19 &\hspace{-4pt} 12 &\hspace{-4pt} 5\end{pmatrix}$
 	{$\xlongequal{\SmallPar{\text{II}}}$}
@@ -1738,7 +1740,7 @@ Define $\Psi\in\Lm[\BigPar]{V,\Lm{\Fbb, V}}$ by $\Psi\Par{v}=\Psi_{\!v};$ \;wher
 %	Let $B_R=\Par{Tv_1,\dots,Tv_m};\;B_R'=\Par{Sr_1,\dots,Sr_m}$ suth $\forall\,i,Tv_i=Sr_i.\\ $
 %	Let $B_{\null T}=\Par{u_1,\dots,u_n};\;B_{\null S}=\Par{s_1,\dots,s_n}.\\ $
 %	Thus $B_V=\Par{v_1,\dots,v_m,u_1,\dots,u_n};\;B_V'=\Par{r_1,\dots,r_m,s_1,\dots,s_n}.}$\,$\therefore\;E$ is inv and $S=TE$.\par\vspace{6pt}\quad
-%Conversely, \;$S=TE\Rightarrow\range S=\range TE$.\par\quad
+%Convly, \;$S=TE\Rightarrow\range S=\range TE$.\par\quad
 %Then $w\in\range S\Longleftrightarrow \exists\,v\in V,Sv=TE\Par{v}=T\BigPar{E\Par{v}}=w\in \range T$. Hence $\range S=\range T.$\PfEnd
 
 \ProblemN{\hypertarget{3D6}{6}}{
@@ -1812,7 +1814,7 @@ Then $\forall v\in V,S\BigPar{\Par{TS}v}=ST\Par{Sv}=Sv\Rightarrow \Par{TS}v=v\Ri
 }Using Exe (9) and (10). {\tgsl\normalsize This result can fail without the hypo that $V$ is finide.}\parSol{}
 $\Par{ST}U=U\Par{ST}=\Par{US}T=I\Rightarrow T^{-1}=US.$\parSol{}
 \Or $\Par{ST}U=S\Par{TU}=I\Rightarrow U,S$ are inv $\Rightarrow TU=S^{-1}.$ 又 $U^{-1}=U^{-1}\Rightarrow T=S^{-1}U^{-1}.$\PfEnd\vspace{2pt}
-\hypertarget{3D12}{}\Example\,\,\,$V=\Rbb^\infty,S\Par{a_1,a_2,\dots}=\Par{a_2,\dots};\;T\Par{a_1,\dots}=\Par{0,a_1,\dots};\;U=I\Rightarrow STU=I$ but $T$ is not inv.
+\hypertarget{3D12}{}\AExa $V=\Rbb^\infty,S\Par{a_1,a_2,\dots}=\Par{a_2,\dots};\;T\Par{a_1,\dots}=\Par{0,a_1,\dots};\;U=I\Rightarrow STU=I$ but $T$ is not inv.
 \SepLine
 
 {\FontSmall$\MathRightMid{l}{\!\!\!$\BulletPointX\hypertarget{3D4e3}{\Par{4E 3}} $\envFontSmall[\footnotesize]T\in\Lm{V}\\$\hfill$V$ is finide$}\MathRightBrace{l}{$
@@ -2117,7 +2119,7 @@ Thus $T\BigPar{\psi\Par{e_1},\dots,\psi\Par{e_m}}=\psi$. Hence $T$ is surj.\PfEn
 \ProblemN{\hypertarget{3E3}{3}}{
 	\TextN{Give an exa of a vecsp $V$ and its two subsps $U_1,U_2$ suth}
 	\TextN{$U_1\times U_2$ and $U_1+U_2$ are iso but $U_1+U_2$ is not a direct sum.\FontNorm\hfill\Sbra{$V$ must be infinide.}}
-}{\NOTE} {\tgsl that at least one of $U_1,U_2$ must be infinide.\;\; And at least one must be finide??}\par\quad
+}{\NOTE} {\tgsl that at least one of $U_1,U_2$ must be infinide.\;\; Both can be infinide. \Sbra{Req Other Courses.}}\par\quad
 %\colorbox{yellow}{TODO}\par\quad
 %\par\quad
 Let $V=\Fbb^\infty=U_1,\;U_2=\Bra{\Par{x,0,\cdots}\in\Fbb^\infty:x\in\Fbb}.$ Then $V=U_1+U_2$ is not a direct sum.\par{\hspace{0pt}}
@@ -2131,21 +2133,29 @@ $\MathRightBrace{l}{$
 	%	Define $S\in\Lm{U_1+U_2,U_1\times U_2}$ by $S\Par{z_1,z_2,z_3,z_4,\cdots}=\BigPar{\Par{z_1,z_3,\cdots},\Par{z_2,z_4,\cdots}}}\Rightarrow S=T^{-1}.$\PfEnd
 \SepLine
 
-\BulletPointX\NoteForSmall{[3.79, 3.83]}\;\;If $U=\zeroSubs,$ then $v+U=v+\zeroSubs=\Bra{v},\;V\XSlash U=V\XSlash\zeroSubs=\Bra{\Bra[\envFontB]{v}:v\in V}.$\TextB{}
-\Blind{\NoteForSmall{[3.79, 3.83]}\;\;}If $U=V,$ then $v+V=0+V,\;V\XSlash V=\Bra{v+V:v\in V}=\zeroSubs.$\TextB{}
-\Blind{\NoteForSmall{[3.79, 3.83]}\;\;}If $U=\emptySet,$ then $v+U=v+\emptySet=\emptySet,\;V\XSlash U=V\XSlash\emptySet=\Bra{\emptySet}.$\vspace{-2pt}
-\SepLine\pagebreak
-
-\BulletPointX\AComm If $U$ is merely a subset of $V,$ then [3.85, 3.86] do not hold, and $V\XSlash U$ is not a vecsp.\parCom{\IndentB}
-Becs $\BigPar{\Par{v-w}+u}\in U$ or $u-u\apostrophe\in U$ needs that $U$ is closd add.\parCom{\IndentB}
-And becs $\Par{v-\hat{v}}+\Par{w-\hat{w}}\in U$ and $\lambda\Par{v-\hat{v}}\in U$ asum $U$ is a subsp.\vspace{4pt}\parCom{\IndentB}
-\uline{If $U$ is a vecsp but not a subsp of $V,$ then everything will be all right.}\parCom{\IndentB}
-If $U$ is a vecsp and $U\cap V=\zeroSubs,$ then $v+U=w+U\Rightarrow v=w.$\parCom{\IndentB}
-Supp $V\XSlash U$ is a vecsp. Then certainly $U$ is a vecsp.
+\BulletPointX\NoteForSmall{[3.79], def of {\tgsc v + U}}\;\;Given $v+U,$ $v$ is already uniqly determined, as a sort of precond.\TextB{}
+Even though $v+U=v'+U,$ where $v'$ is {\tgsl purer} than $v.$
+%While becs $\pi$ is not inje, $\forall x\in V\XSlash U,\exists\,v_1,v_2,\cdots\in V,x=\pi\Par{v_k}.$\TextB{}
+%Which is the reason we use $v+U\in V\XSlash U$ instead of $x\in V\XSlash U.$
 \SepLine
 
 \BulletPointX\NoteForSmall{[3.85]}\;\;\TextB{$v+U=w+U\Longleftrightarrow v\in w+U,\;w\in v+U$}
-\Blind{\NoteForSmall{[3.85]}\;\;}{\FontLarge$\Blind{v+U=w+U}\Longleftrightarrow v-w\in U\Longleftrightarrow \Par{v+U}\cap\Par{w+U}\neq\emptySet.$}\vspace{-4pt}
+\Blind{\NoteForSmall{[3.85]}\;\;}{\FontLarge$\Blind{v+U=w+U}\Longleftrightarrow v-w\in U\Longleftrightarrow \Par{v+U}\cap\Par{w+U}\neq\emptySet.$}
+\SepLine
+
+\BulletPointX\NoteForSmall{[3.79, 3.83]}\;\;If $v\in U,$ then $v+U=0+U=\Bra{u:u\in U}=U.$ Now $U=0\in V\XSlash U.$\TextB{}
+\Blind{\NoteForSmall{[3.79, 3.83]}\;\;}If $U=\zeroSubs,$ then $v+U=v+\zeroSubs=\Bra{v},\;V\XSlash U=V\XSlash\zeroSubs=\Bra{\Bra[\envFontB]{v}:v\in V}.$\TextB{}
+\Blind{\NoteForSmall{[3.79, 3.83]}\;\;}If $V\subseteq U,$ then $u+V=0+V=V,\;U\XSlash V=\Bra{u+V:u\in U}=\zeroSubs=\Bra{V}.$\TextB{}
+\Blind{\NoteForSmall{[3.79, 3.83]}\;\;}If $U=\emptySet,$ then $v+U=v+\emptySet=\emptySet,\;V\XSlash U=V\XSlash\emptySet=\Bra{\emptySet}.$\TextB{\vspace{2pt}}
+If $U$ is merely a subset of $V,$ then [3.85, 3.86] do not hold, and $V\XSlash U$ is not a vecsp.\TextB{}
+%Becs $\BigPar{\Par{v-w}+u}\in U$ or $u-u\apostrophe\in U$ needs that $U$ is closd add.\TextB{}
+%And becs $\Par{v-\hat{v}}+\Par{w-\hat{w}}\in U$ and $\lambda\Par{v-\hat{v}}\in U$ asum $U$ is a subsp.\vspace{2pt}\TextB{}
+\uline{If $U$ is a vecsp but not a subsp of $V,$ while $U,V$ are subsps of some vecsp, then everything's alright.}\TextB{}
+If $U$ and $V$ are subsps of some vecsp, and $U\cap V=\zeroSubs,$ then $v_1+U=v_2+U\in V\XSlash U\Rightarrow v_1=v_2\in V.$\TextB{}
+Supp $V\XSlash U$ is a vecsp. Then certainly $U$ is a vecsp.\TextB{\vspace{2pt}}
+\AComm Supp $U,V$ are subsps and $U$ is not a subsp of $V.$ Then $V\XSlash U=\Par{V+U}\XSlash U.$\TextB{}
+Supp $v+U\in V\XSlash U.$ Then $v\in V$, or possibly $v\in V+U$ as well. To avoid this ambiguity,\TextB{}
+you have to specify the precond, what subsp that $v$ belongs to.
 \SepLine
 
 %\ProblemBnoor[]{\hypertarget{3E4e7}{4E 7}}{
@@ -2155,17 +2165,17 @@ Supp $V\XSlash U$ is a vecsp. Then certainly $U$ is a vecsp.
 
 \ProblemBnoor{\hypertarget{3E4e8}{4E 8}}{
 	\TextB{Supp $T\in\Lm{V,W},w\in\range T.$ Prove $\Bra{v\in V:Tv=w}=u+\null T.$}
-}{\def\mK{\mathcal{K}_{\!u}}Let $\mK=\Bra{v\in V:Tv=w}.$ \Sbra{ Not a vecsp.\hspace{1pt}} \;Supp $u\in\mK.$ Then $u+\null T\subseteq\mK.$\parSol{}
+}{\def\mK{\mathcal{K}_{\!w}}Let $\mK=\Bra{v\in V:Tv=w}.$ \Sbra{ Not a vecsp.\hspace{1pt}} \;Supp $u\in\mK.$ Then $u+\null T\subseteq\mK.$\parSol{}
 And $\forall u\apostrophe\in\mK,\;u\apostrophe-u\in\null T\Rightarrow u\apostrophe\in u+\null T.$ Now $\mK\subseteq u+\null T.$\PfEnd}
 \SepLine
 
 
 \ProblemN{\hypertarget{3E7}{7}}{
-	\TextN{Supp $v,x\in V,$ and $U,W$ are subsps of $V.$ Prove $v+U=x+W\Rightarrow U=W$.}
-}(a) $v\in v+U=x+W\Rightarrow\exists\,w_v\in W,v=x+w_v\Rightarrow v-x\in W.$\parSol{}
-(b) $x\in x+W=v+U\Rightarrow\exists\,u_x\in U,x=v+u_x\Rightarrow x-v\in U.$\parSol{\vspace{2pt}}
-Now $x+U=v+U=x+W=v+W.$ Thus $\Bra{v+u:u\in U}=\Bra{v+w:w\in W}\Rightarrow U=W.$\parSol{\vspace{4pt}}
-\Or $\pm\Par{v-x}\in U\cap W \Rightarrow\MathLeftrightBrace{l}{u_1=\Par{x-v}+w_1\in W\Rightarrow U\subseteq W\\w_2=\Par{v-x}+u_2\in U\Rightarrow W\subseteq U}\Rightarrow U=W.$\PfEnd[-14pt]
+	\TextN{Supp $\alpha,\beta\in V,$ and $U,W$ are subsps of $V.$ Prove $\alpha+U=\beta+W\Rightarrow U=W$.}
+}(a) $\alpha\in\alpha+U=\beta+W\Rightarrow\exists\,w\in W,\alpha=\beta+w\Rightarrow\alpha-\beta\in W.$\parSol{}
+(b) $\beta\in\beta+W=\alpha+U\Rightarrow\exists\,u\in U,\beta=\alpha+u\Rightarrow\beta-\alpha\in U.$\parSol{}
+Now $\beta+U=\alpha+U=\beta+W=\alpha+W.$ Thus $\Bra{\alpha+u:u\in U}=\Bra{\alpha+w:w\in W}\Rightarrow U=W.$\parSol{\vspace{2pt}}
+\Or $\pm\Par{\alpha-\beta}\in U\cap W \Rightarrow\MathLeftrightBrace{l}{U\ni u=\Par{\beta-\alpha}+w\in W\Rightarrow U\subseteq W\\W\ni w=\Par{\alpha-\beta}+u\in U\Rightarrow W\subseteq U}\Rightarrow U=W.$\PfEnd[-14pt]
 \SepLine
 
 \ProblemN{\hypertarget{3E8}{8}}{
@@ -2174,7 +2184,7 @@ Now $x+U=v+U=x+W=v+W.$ Thus $\Bra{v+u:u\in U}=\Bra{v+w:w\in W}\Rightarrow U=W.$\
 }\par\quad
 (a) Supp $A=a+U.$ Then $\lambda\Par{a+u_1}+\Par{1-\lambda}\Par{a+u_2}=a+\BigPar{\lambda\Par{u_1-u_2}+u_2}\in A.$\vspace{2pt}\par\quad
 (b) Supp $\lambda v+\Par{1-\lambda}w\in A,\forall v,w\in A,\lambda\in\Fbb.$ \;Supp \uline{$a\in A$} and let $A\apostrophe=\Bra{x-a:x\in A}.$\par\Hb\quad
-Then $0\in A\apostrophe$ and $\forall\Par{v-a},\Par{w-a}\in A\apostrophe,\lambda\in\Fbb,$\par\vspace{4pt}\Hb\quad
+Then $0\in A\apostrophe$ and $\forall\Par{v-a},\Par{w-a}\in A\apostrophe,\lambda\in\Fbb,$\par\vspace{0pt}\Hb\quad
 (I) $\lambda\Par{v-a}=\Sbra{\lambda v+\Par{1-\lambda}a}-a\in A\apostrophe.$\par\vspace{2pt}\Hb\quad
 (II) Becs $\lambda\Par{v-a}+\Par{1-\lambda}\Par{w-a}=\Sbra{\lambda v+\Par{1-\lambda}w}-a\in A\apostrophe.$\par\Hb\quad\HII
 Let $\lambda=\frac{\;1\;}{2}$ here and use (I) above by $\lambda=2,$ we have $\Par{v-a}+\Par{w-a}\in A\apostrophe.$\vspace{4pt}\par\Hb\quad\HII
@@ -2184,14 +2194,14 @@ Thus $A\apostrophe=-a+A$ is a subsp of $V.$ Hence $a+A\apostrophe=a+\Bra{x-a:x\i
 \SepLine
 
 \ProblemN{\hypertarget{3E9}{9}}{
-	\TextN{Supp $A=v+U$ and $B=x+W$ for some $v,x\in V$ and some subsps $U,W$ of $V$.}
+	\TextN{Supp $A=\alpha+U$ and $B=\beta+W$ for some $\alpha,\beta\in V$ and some subsps $U,W$ of $V$.}
 	\TextN{Prove $A\cap B$ is either a trslate of some subsp of $V$ or is $\emptySet$.}
-}$\forall v+u,x+w\in A\cap B\neq\emptySet,\lambda\in\Fbb,\lambda\Par{v+u}+\Par{1-\lambda}\Par{x+w}\in A\cap B.$ By Exe (8).\PfEnd\parSol{}
-\Or Let $A=v+U,\;B=x+W.$ \;Supp $\alpha\in\Par{v+U}\cap\Par{x+W}\neq\emptySet.$\parSol{}
-Then $\alpha-v\in U\Rightarrow \alpha+U=v+U=A,$ and $\alpha-x\in W\Rightarrow \alpha+W=x+W=B.$\parSol{}
-We show $A\cap B=\alpha+\Par{U\cap W}.$ Note that $\alpha+\Par{U\cap W}\subseteq A\cap B.$\parSol{}
-And $\forall \beta=\alpha+u=\alpha+w\in A\cap B\Rightarrow u=w\in U\cap W\Rightarrow \beta\in\alpha+\Par{U\cap W}.$\PfEnd
-\SepLine\pagebreak
+}$\forall\alpha+u,\beta+w\in A\cap B\neq\emptySet,\lambda\in\Fbb,\lambda\Par{\alpha+u}+\Par{1-\lambda}\Par{\beta+w}\in A\cap B.$ By Exe (8).\PfEnd\parSol{}
+\Or Let $A=\alpha+U,\;B=\beta+W.$ \;Supp $v\in\Par{\alpha+U}\cap\Par{\beta+W}\neq\emptySet.$\parSol{}
+Then $v-\alpha\in U\Rightarrow v+U=\alpha+U=A,$ and similr $v+W=\beta+W=B.$\parSol{}
+We show $A\cap B=v+\Par{U\cap W}.$ Note that $v+\Par{U\cap W}\subseteq A\cap B.$\parSol{}
+And $\forall w=v+u=v+w\in A\cap B\Rightarrow u=w\in U\cap W\Rightarrow w\in v+\Par{U\cap W}.$\PfEnd
+\SepLine
 
 \ProblemN{\hypertarget{3E10}{10}}{
 	\TextNL{Prove the intersec of any collec of trslates of subsps is either a trslate of some subsps or $\emptySet.$}
@@ -2233,24 +2243,25 @@ $\Blind{A}\in v_k+\Span{v_1-v_k,\dots,v_m-v_k}.$\PfEnd
 }(a) Supp $\exists\,S\in\Lm{V\XSlash U,W},T=S\circ\pi.$ Then $U=\null\pi\subseteq\null\Par{S\circ\pi}=\null T.$\parSol{}
 (b) Supp $U=\null\pi\subseteq\null T.$ By ({3.B.24}), done. \;\Or Define $S:\Par{v+U}\mapsto Tv.$\parSol{\Hb}
 $v_1+U=v_2+U\Longleftrightarrow v_1-v_2\in\null T\Longleftrightarrow Tv_1=Tv_2.$ Thus $S$ is well-defined. Hence $S\circ\pi=T.$\parSol{\vspace{2pt}}
-\hypertarget{3E20}{}\ACoro Define $\Gamma:S\mapsto S\circ\pi.$ Then  $\Gamma$ is inje, $\range\Gamma=\Bra{T\in\Lm{V,W}:U\subseteq\null T}.$\PfEnd
+\hypertarget{3E20}{}\ACoro Define $\Gamma:S\mapsto S\circ\pi.$ Then  $\Gamma$ is inje, $\range\Gamma=\Bra{T\in\Lm{V,W}:U\subseteq\null T}.$\PfEnd\vspace{2pt}
+\AComm The map $S:V\XSlash U\rightarrow V$ defined by $S\Par{v+U}=v$ is not well-defined, unless $U=\zeroSubs\subseteq I_V.$
 \SepLine
-\pagebreak
 
-\BulletPointX\NoteFor{[3.88, 3.90, 3.91]}\;\;{Supp $W\in\mathcal{S}_{\!V} U.$ Then $V\XSlash U$ is iso to $W.$\quad\FontSmall\Sbra{\,Conversely not true.\,}}\TextB{}
+\BulletPointX\NoteFor{[3.88, 3.90, 3.91]}\;\;{Supp $W\in\mathcal{S}_{\!V} U.$ Then $V\XSlash U$ is iso to $W.$\quad\FontSmall\Sbra{\,Convly not true.\,}}\TextB{}
 {Becs $\forall v\in V,\exists\,!\,u_v\in U,w_v\in W,v=u_v+w_v.$ \uline{Define $T\in\Lm{V}$ by $T\Par{v}=w_v.$}}\TextB{}
 {Hence $\null T=U,\;\range T=W,\;\range T\oplus\null T=V.$}\TextB{}
-{Then $\tilde{T}\in\Lm{V\XSlash \null T,V}$ is defined by $\tilde{T}\Par{v+U}=\tilde{T}\Par{w_v'+U}=Tw_v'=w_v.$ \FontSmall\Sbra{\tgsl See {\TIPSN{1}} below}}\TextB{}
+{Then $\tilde{T}\in\Lm{V\XSlash \null T,V}$ is defined by $\tilde{T}\Par{v+U}=\tilde{T}\Par{w_v'+U}=Tw_v'=w_v.$ \FontSmall\Sbra{\tgsl See Exa below}}\TextB{}
 {Now $\pi\circ\tilde{T}=I_{V\XSlash U},\;\tilde{T}\circ\pi\mmid_W=I_{W}=T\mmid_W.$ \;Hence $\tilde{T}$ is iso of $V\XSlash U$ onto $W.$}\par\vspace{2pt}
-\BulletPointX\TipsN{1}\,\,\,{Supp $U$ is a subsp of $V.$ \uline{Define $S\in\Lm{V\XSlash U,V}$ by $S\Par{v+U}=v.$}}\TextB{}
-{Then $\range S$ is the {\tgsl purest} in $\mathcal{S}_{\!V} U.$ Now $\null S=\zeroSubs,\;U\oplus\range S=V.$}\TextB{}
-{\uline{Let $E=S\circ\pi.$} Becs $S$ is inje and $\pi$ is surj, $\null E=\null\pi=U,\;\range E=\range S.$}\TextB{}
-{Then $\range E\oplus\null E=V.$ \;\NOTICE that $E:V\rightarrow W$ is the {\tgsl purest eraser}. Now we explain why:}\TextB{\vspace{2pt}}
-{{\Example}\,\,\,\,Let $V=\Fbb^2,B_U=\Par{e_1},B_W=\Par{e_2-e_1}\Rightarrow U\oplus W=V.$}\TextE{}
-{Notice that $T\Par{e_2-e_1}=\Par{e_2-e_1},$ while $\Par{e_2-e_1}+U=e_2+U,$ but}\TextE{}
-{becs $e_2=e_1+\Par{e_2-e_1},$ now still, $\tilde{T}\BigPar{\Par{e_2-e_1}+U}=e_2-e_1=Te_2.$}\TextE{}
-{In contrast, $S\BigPar{\Par{e_2-e_1}+U}=S\Par{e_2+U}=e_2,\;E\Par{e_2-e_1}=e_2.$}\TextE{}
-{And $\range E=\range S=\Span{e_2}$ is the {\tgsl purest} in $\mathcal{S}_{\!V} U.$}
+%\BulletPointX\TipsN{1}\,\,\,{Supp $U$ is a subsp of $V.$ \uline{Define $S\in\Lm{V\XSlash U,V}$ by $S\Par{v+U}=v.$}}\TextB{}
+%{Then $\range S$ is the {\tgsl purest} in $\mathcal{S}_{\!V} U.$ Now $\null S=\zeroSubs,\;U\oplus\range S=V.$}\TextB{}
+%{\uline{Let $E=S\circ\pi.$} Becs $S$ is inje and $\pi$ is surj, $\null E=\null\pi=U,\;\range E=\range S.$}\TextB{}
+%{Then $\range E\oplus\null E=V.$ \;\NOTICE that $E:V\rightarrow W$ is the {\tgsl purest eraser}. Now we explain why:}\TextB{\vspace{2pt}}
+\BulletPointX\AExa Let $V=\Fbb^2,B_U=\Par{e_1},B_W=\Par{e_2-e_1}\Rightarrow U\oplus W=V.$\TextE{}
+Although $\Par{e_2-e_1}+U=e_2+U,$ $\tilde{T}\Par{e_2+U}=T\Par{e_2}=e_2-e_1.$ Becs $e_2=e_1+\Par{e_2-e_1}\in U\oplus W.$
+%{Notice that $T\Par{e_2-e_1}=\Par{e_2-e_1},$ while $\Par{e_2-e_1}+U=e_2+U,$ but}\TextE{}
+%{becs $e_2=e_1+\Par{e_2-e_1},$ now still, $\tilde{T}\BigPar{\Par{e_2-e_1}+U}=e_2-e_1=Te_2.$}\TextE{}
+%{In contrast, $S\BigPar{\Par{e_2-e_1}+U}=S\Par{e_2+U}=e_2,\;E\Par{e_2-e_1}=e_2.$}\TextE{}
+%{And $\range E=\range S=\Span{e_2}$ is the {\tgsl purest} in $\mathcal{S}_{\!V} U.$}
 \SepLine
 
 \ProblemN{\hypertarget{3E17}{17}}{
@@ -2266,13 +2277,16 @@ $\forall v\in V,\exists\,u\in U,\;v=u+\Par{a_1w_1+\dots+a_nw_n}\Rightarrow v+U=\
 \!\Sbra[3pt]{{\tgsl Req $V\XSlash U$ Finide}} \;Let $B_{V\XSlash U}=\BigPar{v_1+U,\dots,v_n+U}.$\par\quad
 Note that $\forall v\in V,\exists\,!\,a_i\in\Fbb,v+U=\sum_{i=1}^n a_i\BigPar{v_i+U}=\XPar{\sum_{i=1}^n a_i v_i}+U$\vspace{2pt}\par\quad
 $\Rightarrow\BigPar{v-a_1 v_1-\dots-a_n v_n}\in U\Rightarrow\exists\,!\,u\in U,v=\sum_{i=1}^n a_i v_i+u.$\vspace{2pt}\par\quad
-Thus define \;$\varphi\in\Lm[\BigPar]{V,U\times\Par{V\XSlash U}}$\; and \;$\psi\in\Lm[\BigPar]{U\times\Par{V\XSlash U},V}$\par\quad
-\Blind{Thus defi}by \;$\varphi\Par{v}=\Par{u,\;v+U}$ \qquad and \;$\psi\Par{u,\;v+U}=v+u.$ \quad Then $\psi=\varphi^{-1}.$\PfEnd\vspace{8pt}\quad
-\Or Define $S\in\Lm{V\XSlash U,V}$ by $S\Par{v+U}=v.$\vspace{2pt}\par\quad
-By {\NOTEFOR} [3.88, 90, 91], $\range S\oplus U=V.$ Thus $\forall v\in V,\exists\,!\,u\in U,w\in\range S,\;v=u+w.$\vspace{2pt}\par\quad
-Define $T\in\Lm[\BigPar]{U\times\Par{V\XSlash U},V}$ by $T\Par{u,v+U}=u+S\Par{v+U}=u+w=v.$ Then $T$ is surj.\vspace{2pt}\par\quad
-And $T\Par{u,v+U}=u+S\Par{v+U}=0\Longrightarrow\pi\BigPar{T\Par{u,v+U}}=v+U=0,$ and $u=-S\Par{v+U}=0.$\vspace{4pt}\par\quad
-\Or Define $R\in\Lm[\BigPar]{V,U\times\Par{V\XSlash U}}$ by $R\Par{v}=\BigPar{u,\Par{w+U}}.$ Now $R\circ T=I_{U\times\SmallPar{V\XSlash U}},\;T\circ R=I_V.$\PfEnd
+Thus define \;$\varphi\in\Lm[\BigPar]{V,U\times\Par{V\XSlash U}}$\quad\;\hspace{1.4pt}and \;$\psi\in\Lm[\BigPar]{U\times\Par{V\XSlash U},V}$\par\quad
+\Blind{Thus defi}by \;$\varphi\Par{v}=\BigPar{u,\;\sum_{i=1}^nv_i+U},$ and \;$\psi\Par{u,\;v+U}=\sum_{i=1}^nv_i+u.$ \quad Then $\psi=\varphi^{-1}.$\PfEnd\vspace{8pt}\quad
+\Or Let $W\oplus U=V.$ Define $Tv=u_v,Sv=w_v\Rightarrow\tilde{T}\in\Lm{V\XSlash W,U},\tilde{S}\in\Lm{V\XSlash U,W}$ are iso.\par\quad
+Define $\psi\Par{u,v+U}=u+\tilde{S}\Par{v+U}=u+w_v.$ Define $\varphi\Par{v}=\BigPar{\tilde{T}\Par{v},v+U}.$\par\quad
+\!\!\!$\MathRightBrace{l}{\Par{\psi\circ\varphi}\Par{u_v+w_v}=\psi\Par{u_v,w_v+U}=u_v+w_v\\\Par{\varphi\circ\psi}\Par{u,v+U}=\varphi\Par{u+w_v}=\Par{u,w_v+U}}\Rightarrow\psi=\varphi^{-1}.$ \; \OR Becs $\psi$ or $\varphi$ is inje and surj.\PfEnd
+%\Or Define $S\in\Lm{V\XSlash U,V}$ by $S\Par{v+U}=v.$\vspace{2pt}\par\quad
+%By {\NOTEFOR} [3.88, 90, 91], $\range S\oplus U=V.$ Thus $\forall v\in V,\exists\,!\,u\in U,w\in\range S,\;v=u+w.$\vspace{2pt}\par\quad
+%Define $T\in\Lm[\BigPar]{U\times\Par{V\XSlash U},V}$ by $T\Par{u,v+U}=u+S\Par{v+U}=u+w=v.$ Then $T$ is surj.\vspace{2pt}\par\quad
+%And $T\Par{u,v+U}=u+S\Par{v+U}=0\Longrightarrow\pi\BigPar{T\Par{u,v+U}}=v+U=0,$ and $u=-S\Par{v+U}=0.$\vspace{4pt}\par\quad
+%\Or Define $R\in\Lm[\BigPar]{V,U\times\Par{V\XSlash U}}$ by $R\Par{v}=\BigPar{u,\Par{w+U}}.$ Now $R\circ T=I_{U\times\SmallPar{V\XSlash U}},\;T\circ R=I_V.$\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{3E13}{13}}{
@@ -2292,43 +2306,13 @@ Becs $\Dim\Sbra{\Span{v_1,\dots,v_m}\oplus U}=m+n=\dim V.$ \;Now by (2.B.8).\PfE
 Hence $\forall v+U\in V\XSlash U,\exists\,!\,c_i\in\Fbb,v+U=\sum_{i=1}^m c_i w_i+U.$\PfEnd
 \SepLine
 
-\BulletPointX\NoteForSmall{Exe (13) and (4E 14)}\;\;Let $U\oplus W=V.$ Define $S\Par{w+U}=w.$ \;\Sbra{ See also \TIPSN{1}. }\TextB{}
-(a) Let $B_W=\Par{w_1,\dots,w_m}\Rightarrow B_{V\XSlash U}=\BigPar{w_1+U,\dots,w_m+U}.$ Then $S\Par{w_k+U}$ might not equal $w_k.$\TextB{}
-(b) Let $B_{V\XSlash U}=\BigPar{w_1+U,\dots,w_m+U},$ then let $B_W=\Par{w_1,\dots,w_m}.$ Now each $S\Par{w_k+U}=w_k.$\def\Pure{{\textup{\tgnr Pure}}\,}\par\vspace{2pt}
-\BulletPointX\NewNotation\;$\Pure V\XSlash U=W\Longleftrightarrow V=U\oplus W,\;W=\range S.$ {\FontSmall\tgsl The uniqnes of $\Pure V\XSlash U$ follows from $\range S.$}
-\SepLine
+%\BulletPointX\NoteForSmall{Exe (13) and (4E 14)}\;\;Let $U\oplus W=V.$ Define $S\Par{w+U}=w.$ \;\Sbra{ See also \TIPSN{1}. }\TextB{}
+%(a) Let $B_W=\Par{w_1,\dots,w_m}\Rightarrow B_{V\XSlash U}=\BigPar{w_1+U,\dots,w_m+U}.$ Then $S\Par{w_k+U}$ might not equal $w_k.$\TextB{}
+%(b) Let $B_{V\XSlash U}=\BigPar{w_1+U,\dots,w_m+U},$ then let $B_W=\Par{w_1,\dots,w_m}.$ Now each $S\Par{w_k+U}=w_k.$
+\def\Pure{{\textup{\tgnr Pure}}\,}
+%\par\vspace{2pt} \BulletPointX\NewNotation\;$\Pure V\XSlash U=W\Longleftrightarrow V=U\oplus W,\;W=\range S.$ {\FontSmall\tgsl The uniqnes of $\Pure V\XSlash U$ follows from $\range S.$}
+%\SepLine
 
-\ProblemB{
-	\TipsN{2}\,\,\,\TextB{Supp $U,W$ are subsps of $V.$ Let $I=U\cap W.$}
-	\IndentTipsN{2}\TextB{Prove $V=U+W\Longleftrightarrow V\XSlash I=U\XSlash I\oplus W\XSlash I.$}
-}(a) Supp $U+W.$ Then $\forall x\in V\XSlash I,\exists\,v\in V,\Par{u_v,w_v}\in U\times W,x=v+I=\Par{u_v+w_v}+I.$\parSol{\Ha}
-Note that $U\XSlash I,W\XSlash I\subseteq V\XSlash I.$ Thus $V\XSlash I=U\XSlash I+W\XSlash I.$\parSol{\Ha}
-$\forall x\in\Par{U\XSlash I}\,${\Large$\cap$}$\,\Par{W\XSlash I},x=u+I=w+I\Rightarrow{}$\uline{$u-w\in I=U\cap W$}\parSol{\Ha}
-\uline{$\Rightarrow\exists\,w'\in I,u=w+w'\in U\cap W$}${}\Rightarrow x=u+I=0+I.$ Thus $\Par{U\XSlash I}\,${\Large$\cap$}$\,\Par{W\XSlash I}=\zeroSubs.$\parSol{\vspace{3pt}}
-(b) Supp $V\XSlash I=U\XSlash I\oplus W\XSlash I.$ Then $\forall v\in V,v+I=\Par{u+I}+\Par{w+I}$\parSol{\Hb}
-$\Rightarrow v-u-w\in I=U\cap W\Rightarrow\exists\,x\in U\cap W,v=u+w+x\in U+W.$\PfEnd
-\SepLine
-
-\ProblemB{
-	\TipsN{3}\,\,\,\TextB{Supp $I$ is a subsp of $U.$ Supp $U$ is a subsp of $V.$}
-	\IndentTipsN{3}\TextB{Let $V=S_V I\oplus I=S_V U\oplus U.$ \;Let $U=S_U I\oplus I.$ \;Then $V=S_V U\oplus S_U I\oplus I.$\vspace{2pt}}
-	\IndentTipsN{3}\TextB{Supp $S_V I=\Pure V\XSlash I,$ simlr for $S_V U,S_U I.$ \;Prove $S_V I=S_V U\oplus S_U I.$}
-}$\forall v_i\in S_V I,v_i=v_u+u,\exists\,!\,v_u\in S_V U,u\in U\Rightarrow\exists\,!\,u_i\in S_U I,i\in I,v_i=v_u+u_i+i.$\parSol{}
-又 $v_i\in\Pure V\XSlash I.$ Hence $i=0,$ and $v_i\in S_V U\oplus S_U I.$ Now becs $S_V U,U\subseteq S_V I.$\PfEnd
-\SepLine
-
-\ProblemB{
-	\TipsN{4}\,\,\,\TextB{Supp $T\in\Lm{V,W}$ is inv, $V=M\oplus N,\range T\mmid_M=X,\range T\mmid_N=Y.$}
-	\IndentTipsN{4}\TextB{Then $W=\range T=X\oplus Y.$ Show $\Pure V\XSlash M=N\Longleftrightarrow\Pure W\XSlash X=Y.$}
-}Define $S_1:V\XSlash M\rightarrow V$ and $S_2:W\XSlash X\rightarrow W$ by $S_1:v+M\mapsto v$ and $S_2:w+X\mapsto w.$\parSol{}
-Now $v=v_m+v_n\Longleftrightarrow Tv=Tv_m+Tv_n.$ We show $S_1\Par{v+M}=v_n\Longleftrightarrow S_2\Par{Tv+X}=Tv_n.$\parSol{}
-(a) Let $S_2\Par{Tv_n+X}=Tv_n'.$ Then $Tv_n-Tv_n'\in X\Longleftrightarrow v_n-v_n'=v_m'\in M,v=v_n'+\Par{v_m'+v_m}.$\parSol{}
-(b) Let $S_1\Par{v_n+M}=v_n'.$ Then $v_n-v_n'\in M\Longleftrightarrow Tv_n-Tv_n'=Tv_m'\in X,Tv=Tv_n'+\Par{Tv_m'+Tv_m}.$\parSol{}
-Hence by def, $\Pure V\XSlash M=\range S_1=N\Longleftrightarrow\Pure W\XSlash X=\range S_2=Y.$\PfEnd
-\SepLine
-
-\BulletPointX\NewNotation\;\;Suppose $T\in\Lm{V,W}.$ Define $T\XSlash{^U_X}\in\Lm[\BigPar]{V\XSlash U,W\XSlash X}$ by ${T\XSlash{^U_X}}\Par{v+U}=Tv+X.$
-\SepLine\pagebreak
 
 \ProblemN{\hypertarget{3E15}{15}}{
 	\TextNL{Supp $\varphi\in\Lm[\Par]{V,\Fbb}\nonzero.$ Prove $\dim V\XSlash \Par{\null\varphi}=1$.}
@@ -2338,12 +2322,66 @@ Hence by def, $\Pure V\XSlash M=\range S_1=N\Longleftrightarrow\Pure W\XSlash X=
 
 \ProblemN{\hypertarget{3E16}{16}}{
 	\TextNL{Supp $\dim V\XSlash U=1$. Prove $\exists\,\varphi\in\Lm{V,\Fbb},\null\varphi=U.$}
-}Supp $V_{\!0}\oplus U=V.$ Then $V_{\!0}$ is iso to $V\XSlash U.$ $\dim V_{\!0}=1.$\parSol{}
+}Supp $V_{\!0}\oplus U=V.$ Then $V_{\!0}$ is iso to $V\XSlash U,\;\dim V_{\!0}=1.$\parSol{}
 Define $\varphi\in\Lm{V,\Fbb}$ by $\varphi\Par{v_0}=1,\varphi\Par{u}=0,$ where $v_0\in V_{\!0},u\in U.$\PfEnd\parSol{\vspace{4pt}}
 \Or Let $B_{V\XSlash U}=\Par{w+U}.$ Then $\forall v\in V,\exists\,!\,a\in\Fbb,v+U=aw+U.$\parSol{}
 Define $\varphi:{V\rightarrow\Fbb}$ by $\varphi\Par{v}=a.$ Then $\varphi\Par{v_1+\lambda v_2}=a_1+\lambda a_2=\varphi\Par{v_1}+\lambda\varphi\Par{v_2}.$\parSol{}
 Now $u\in U\Longleftrightarrow u+U=0w+U\Longleftrightarrow\varphi\Par{u}=0.$\PfEnd
 \SepLine
+
+\ProblemB{
+	\TipsN{1}\,\,\,\TextB{Supp $U,W$ are subsps of $V.$ Let $I=U\cap W.$}
+	\IndentTipsN{1}\TextB{Prove $V=U+W\Longleftrightarrow V\XSlash I=U\XSlash I\oplus W\XSlash I.$}
+}(a) Supp $U+W.$ Then $\forall x\in V\XSlash I,\exists\,v\in V,\Par{u_v,w_v}\in U\times W,x=v+I=\Par{u_v+w_v}+I.$\parSol{\Ha}
+Note that $U\XSlash I,W\XSlash I\subseteq V\XSlash I.$ Thus $V\XSlash I=U\XSlash I+W\XSlash I.$\parSol{\Ha}
+$\forall x\in\Par{U\XSlash I}\,${\Large$\cap$}$\,\Par{W\XSlash I},x=u+I=w+I\Rightarrow{}$\uline{$u-w\in I=U\cap W$}\parSol{\Ha}
+\uline{$\Rightarrow\exists\,w'\in I,u=w+w'\in U\cap W$}${}\Rightarrow x=u+I=0+I.$ Thus $\Par{U\XSlash I}\,${\Large$\cap$}$\,\Par{W\XSlash I}=\zeroSubs.$\parSol{\vspace{3pt}}
+(b) Supp $V\XSlash I=U\XSlash I\oplus W\XSlash I.$ Then $\forall v\in V,v+I=\Par{u+I}+\Par{w+I}$\parSol{\Hb}
+$\Rightarrow v-u-w\in I=U\cap W\Rightarrow\exists\,x\in U\cap W,v=u+w+x\in U+W.$\PfEnd
+\SepLine
+
+%\ProblemB{
+%	\TipsN{3}\,\,\,\TextB{Supp $I$ is a subsp of $U.$ Supp $U$ is a subsp of $V.$}
+%	\IndentTipsN{3}\TextB{Let $V=S_V I\oplus I=S_V U\oplus U.$ \;Let $U=S_U I\oplus I.$ \;Then $V=S_V U\oplus S_U I\oplus I.$\vspace{2pt}}
+%	\IndentTipsN{3}\TextB{Supp $S_V I=\Pure V\XSlash I,$ simlr for $S_V U,S_U I.$ \;Prove $S_V I=S_V U\oplus S_U I.$}
+%}$\forall v_i\in S_V I,v_i=v_u+u,\exists\,!\,v_u\in S_V U,u\in U\Rightarrow\exists\,!\,u_i\in S_U I,i\in I,v_i=v_u+u_i+i.$\parSol{}
+%又 $v_i\in\Pure V\XSlash I.$ Hence $i=0,$ and $v_i\in S_V U\oplus S_U I.$ Now becs $S_V U,U\subseteq S_V I.$\PfEnd
+%\SepLine
+
+%\ProblemB{
+%	\TipsN{4}\,\,\,\TextB{Supp $T\in\Lm{V,W}$ is inv, $V=M\oplus N,\range T\mmid_M=X,\range T\mmid_N=Y.$}
+%	\IndentTipsN{4}\TextB{Then $W=\range T=X\oplus Y.$ Show $\Pure V\XSlash M=N\Longleftrightarrow\Pure W\XSlash X=Y.$}
+%}Define $S_1:V\XSlash M\rightarrow V$ and $S_2:W\XSlash X\rightarrow W$ by $S_1:v+M\mapsto v$ and $S_2:w+X\mapsto w.$\parSol{}
+%Now $v=v_m+v_n\Longleftrightarrow Tv=Tv_m+Tv_n.$ We show $S_1\Par{v+M}=v_n\Longleftrightarrow S_2\Par{Tv+X}=Tv_n.$\parSol{}
+%(a) Let $S_2\Par{Tv_n+X}=Tv_n'.$ Then $Tv_n-Tv_n'\in X\Longleftrightarrow v_n-v_n'=v_m'\in M,v=v_n'+\Par{v_m'+v_m}.$\parSol{}
+%(b) Let $S_1\Par{v_n+M}=v_n'.$ Then $v_n-v_n'\in M\Longleftrightarrow Tv_n-Tv_n'=Tv_m'\in X,Tv=Tv_n'+\Par{Tv_m'+Tv_m}.$\parSol{}
+%Hence by def, $\Pure V\XSlash M=\range S_1=N\Longleftrightarrow\Pure W\XSlash X=\range S_2=Y.$\PfEnd
+%\SepLine
+
+\newcommandx{\LmQxx}[3][2=U,3=X]{#1\XSlash{^{#2}_{\!#3}}}
+
+\ProblemB{
+	Supp $T\in\Lm{V,W},$ and $U,V$ are subsps of some vecsp, and $X,W$ are subsps of some vecsp.\TextB{}
+	\TextB{Define $\LmQxx{T}:V\XSlash U\rightarrow W\XSlash X$ by $\LmQxx{T}\Par{v+U}=Tv+X.$\vspace{2pt}}
+	(a) \TextB{Prove $\LmQxx{T}$ is well-defined $\Longleftrightarrow\range T\mmid_U$ is a subsp of $X.$\vspace{2pt}}
+	Now supp $\LmQxx{T}$ is well-defined.\;Define $\pi_U\in\Lm{V,V\XSlash U}$ by $\pi:v\mapsto v+U.$ Similr for $\pi_X.$\TextB{}
+	Then $\LmQxx{T}\circ\pi_U=\pi_X\circ T.$ \;Define $\xi_V\in\Lm[\BigPar]{V\XSlash\zeroSubs,V}$ by $\xi_V:v+\zeroSubs\mapsto v.$ Similr for $\xi_W.$\TextB{\vspace{3pt}}
+	(b) \TextB{$\range \LmQxx{T}={}${$\range\BigPar{\LmQxx{T}\circ\pi_U}=\range\Par{\pi_X\circ T}$}${}=\Par{\range T}\XSlash X.$\vspace{3pt}}
+	(c) \TextB{Prove $\LmQxx{T}$ is surj $\Longleftrightarrow W\subseteq\range T+X.$\vspace{4pt}}
+	(d) \TextB{Show $\null\LmQxx{T}[0][\!X]=\BigPar{\range\xi_V\text{\large\Big|}{_{\null\LmQxx{T}[0][\!X]}}}\XSlash U.$ \; {\FontSmall Where $\LmQxx{T}[0][\!X]\BigPar{v+\zeroSubs[\def\envFont{\small}]}=Tv+X.$}\vspace{2pt}}
+	(e) \TextB{$\LmQxx{T}$ is inje $\Longleftrightarrow\range\xi_V\text{\large\Big|}{_{\null\LmQxx{T}[0][\!X]}}\subseteq U.$}
+}\par\quad
+(a) If $v+U=w+U\Longleftrightarrow v-w\in U\Rightarrow Tv-Tw\in X\Longleftrightarrow Tv+X=Tw+X.$\par\quad\Ha
+Then $\forall u\in U,Tu\in X\Rightarrow\range T\mmid_U\subseteq X.$ \,Convly true as well.\vspace{2pt}\par\quad
+(c) Supp $\LmQxx{T}$ is surj. $\forall w\in W,w+X\in W\XSlash X$\par\quad\Hc
+$\Rightarrow\exists\,Tv+X=w+X\Rightarrow w-Tv\in X\Rightarrow w\in\range T+X.$ \,Hence $W\subseteq\range T+X.$\vspace{2pt}\par\quad\Hc
+Convly, $W\subseteq\range T+X\Rightarrow\Par{\range T}\XSlash X=\Par{\range T+X}\XSlash X\supseteq W\XSlash X.$\vspace{4pt}\par\quad
+(d) $v+U\in\null\LmQxx{T}\Longleftrightarrow Tv\in X\Longleftrightarrow v+\zeroSubs\in\null\LmQxx{T}[0][\!X]\Longleftrightarrow v+U\in\BigPar{\range\xi_V\text{\large\Big|}{_{\null\LmQxx{T}}}}\XSlash U.$\PfEnd\vspace{4pt}
+\BulletPointX\AComm Supp $T\in\Lm{V}.$ Define $T\XSlash U\in\Lm{V\XSlash U}$ by $T\XSlash U=\LmQxx{T}[U][U].$ Then\TextB{}
+(a) $T\XSlash U$ is well-defined $\Longleftrightarrow \range T\mmid_U$ is a subsp of $U\Longleftrightarrow U$ is invard $T.$\TextB{}
+(b) $\range T\XSlash U=\range\BigPar{T\XSlash U\circ\pi}=\range\Par{\pi\circ T}=\Par{\range T}\XSlash U.$\;\;(c) $T\XSlash U$ surj $\Longleftrightarrow V\subseteq\range T+U.$\TextB{}
+(d) $\null T\XSlash U=\BigPar{\range\xi\text{\large\Big|}{_{\null\LmQxx{T}[0][\!U]}}}\XSlash U.$\;\;(e) $T\XSlash U$ inje $\Longleftrightarrow\range\xi\text{\large\Big|}{_{\null\LmQxx{T}[0][\!U]}}\subseteq U.$
+\SepLine\pagebreak
 
 \ProblemN{\hypertarget{3E14}{14}}{
 	\TextNL{Supp $U=\Bra{\Par{x_1,x_2,\cdots}\in\Fbb^{\infty}:x_k\neq 0\text{\;for\;only\;finily\;many}\;k}$.\vspace{2pt}}
@@ -2463,7 +2501,7 @@ for all $u\in\Pure V\XSlash\Span{u_v}$ and $i\in\Pure V\XSlash\Span{i_u}.$ \OR D
 Then $\varphi=\varphi+\beta=\psi+\gamma\in U^0+W^0.$\PfEnd
 \AComm Not true if $U$ or $W$ is merely a subset. Promote $U\cap W$ as $I,$ \,$U$ as $X,$ \,and $W$ as $Y.$\par
 %Now we show $X\cap Y=I.$ So that $\BigPar{U\cap W}{^0}=I^0=\BigPar{X\cap Y}{^0}=X^0+Y^0=U^0+W^0.$\parCom
-\Example \,\,\,Let $U=\Bra{\Par{x,x+1}\in\Rbb^2},W=\Rbb^2.$ Then $U\cap W=I=U\neq\Rbb^2=X\cap Y.$
+\AExa Let $U=\Bra{\Par{x,x+1}\in\Rbb^2},W=\Rbb^2.$ Then $U\cap W=I=U\neq\Rbb^2=X\cap Y.$
 \SepLine
 
 %\BulletPointX\ACoro (1) $\BigPar{U\cap W}{^0}=U^0+W^0\supseteq U^0\cap W^0=\BigPar{U+W}{^0}.$\vspace{2pt}\parCor{\IndentB}
@@ -2483,8 +2521,8 @@ Then $\varphi=\varphi+\beta=\psi+\gamma\in U^0+W^0.$\PfEnd
 	\TextNL{Supp $U$ is a subsp of $V.$ \;Let $B_{U_V\upapostrophe}=\Par{\varphi_1,\dots,\varphi_n}.$ Show corres $B_U$ exis.}
 }Let each \uline{$\null\varphi_i\oplus\Span{u_i}=V$} with $\varphi_i\Par{u_i}=1.$\parSol{}
 Now $a_1u_1+\dots+a_nu_n=0\Rightarrow$ \uline{Each $a_i=\varphi_i\Par{a_1u_1+\dots+a_nu_n}=0,$ by def of dual bss.}\PfEnd\vspace{2pt}
-\Example \,\,\,Cannot extend $B_U$ freely. Let $B_V=\Par{e_1,e_2-e_1}.$ Let corres  $B_{V\apostrophe}=\Par{\varphi_1,\varphi_2}.$\par
-\Blind{\Example \,\,\,}Let $U_V\upapostrophe=\Span{\varphi_1}.$ Then extend to $B_U=\Par{e_1}$ to $B_V'=\Par{e_1,e_2}.$ Corres $B_{V\apostrophe}'\neq B_{V\apostrophe}.$
+\AExa Cannot extend $B_U$ freely. Let $B_V=\Par{e_1,e_2-e_1}.$ Let corres  $B_{V\apostrophe}=\Par{\varphi_1,\varphi_2}.$\parExa
+Let $U_V\upapostrophe=\Span{\varphi_1}.$ Then extend to $B_U=\Par{e_1}$ to $B_V'=\Par{e_1,e_2}.$ Corres $B_{V\apostrophe}'\neq B_{V\apostrophe}.$
 \SepLine
 }
 
@@ -2834,8 +2872,8 @@ $\forall j,k\in\Nbb$, $\,\,\Par{x^{j}}{^{\SmallPar{k}}}=\left\{\begin{array}{l}j
 \Or \;Becs $\forall j,k\in\Bra{1,\dots,m}$ suth $j\neq k,$ 
 $\varphi_k\BigPar{x^j}=\envFontSmall[\footnotesize]\frac{\Par{x^j}{^{\SmallPar{k}}}\Par{0}}{k!}=\frac{0}{k!}=0;\;\varphi_k\BigPar{x^k}=\frac{\Par{x^k}{^{\SmallPar{k}}}\Par{0}}{k!}=1.$\par\quad
 Thus $\envFontSmall[\scriptsize]\frac{p^{\Par[0pt]{k}}\Par{0}}{k!}$ act exactly the same as $\varphi_k$ on the same bss $\Par{1,\dots,x^m},$ hence is just another def of $\varphi_k$.\PfEnd\vspace{8pt}
-\Example \,\,\,\hypertarget{3F8}{}{\tgnr\FontNorm Supp $m\in\Nbp$. By [2.C.10], $B$ $=\BigPar{1,x-5,\dots,\Par{x-5}{^m}}$ is a bss of $\PoR{m}$.}\par
-\Blind{\Example \,\,\,}{\tgnr\FontNorm Let $\varphi_k=\Frac{p^{\SmallPar{k}}\Par{5}}{k!}$ for each $k=0,1,\dots,m$. Then $\Par{\varphi_0,\varphi_1,\dots,\varphi_m}$ is the dual bss of $B$.}\par
+\AExa\hypertarget{3F8}{}{\tgnr\FontNorm Supp $m\in\Nbp$. By [2.C.10], $B$ $=\BigPar{1,x-5,\dots,\Par{x-5}{^m}}$ is a bss of $\PoR{m}$.}\parExa
+{\tgnr\FontNorm Let $\varphi_k=\Frac{p^{\SmallPar{k}}\Par{5}}{k!}$ for each $k=0,1,\dots,m$. Then $\Par{\varphi_0,\varphi_1,\dots,\varphi_m}$ is the dual bss of $B$.}\par
 \SepLine
 }
 

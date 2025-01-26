@@ -73,25 +73,18 @@
 \def\IndentB{\Blind{\BulletPoint }}
 \def\IndentN{\hspace{8.7pt}}
 \def\IndentNL{\hspace{16pt}}
-\def\IndentE{{\large\Blind{{\BulletPoint} {\Example}\,\,\,}}}
+\def\IndentE{\Blind{\BulletPointX\Example \,\,}}
 
 % 用于对齐(a)(b)(c)(d)
 %(a) {text} \par\quad\Ha
-%... \par\quad\Ha
-%{text} \par\quad
-%(b) {text} \par\quad\Hb
-%... \par\quad\Ha
-%{text} \par\quad
-%(c) {text} \par\quad\Hc
-%... \par\quad\Ha
-%{text} \par\quad
-%(d) {text} \par\quad\Hd
 %... \par\quad\Ha
 %{text} \par\quad
 \def\Ha{{\large\Blind{(a) }}}
 \def\Hb{{\large\Blind{(b) }}}
 \def\Hc{{\large\Blind{(c) }}}
 \def\Hd{{\large\Blind{(d) }}}
+\def\He{{\large\Blind{(e) }}}
+\def\Hf{{\large\Blind{(f) }}}
 
 % 用于对齐(i)(ii)(iii)
 %(i) {text} \par\quad\Hi
@@ -263,6 +256,7 @@
 \def\parCom{\par\IndentComment{}}
 \def\parCor{\par\IndentCorollary{}}
 \def\parNot{\par\IndentNote{}}
+\def\parExa{\par\Blind{\AExa}{}}
 \def\Existns{\Sbra[2pt]{{\tgsl Existns}}}
 \def\Uniqnes{\Sbra[2pt]{{\tgsl Uniqnes}}}
 
@@ -278,6 +272,7 @@
 \newcommand{\Note}{{\tgbfx\large N{\footnotesize OTE}:}}
 \newcommand{\AComm}{\Comment \,\,\,}
 \newcommand{\ACoro}{\Corollary \,\,\,}
+\newcommand{\AExa}{\Example \,\,\,}
 
 
 \def\ChEnd{\rightline{\Largebfx{E{\small NDED}}}\par\vspace{6pt}}
