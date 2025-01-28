@@ -2413,21 +2413,20 @@ For $u_x\in U_X,$ if $u_x+W=0,$ then $u_x\in U_X\cap W\Rightarrow u_x+X\in\Par{U
 	\TextB{Define $\LmQxx{T}:V\XSlash U\rightarrow W\XSlash X$ by $\LmQxx{T}\Par{v+U}=Tv+X.$\vspace{2pt}}
 	(a) \TextB{Prove $\LmQxx{T}$ is well-defined $\Longleftrightarrow{}${\FontNorm$\BigPar{\range T\mmid_{U\,\cap\,V}}\XSlash X=\zeroSubs$}${}\Longleftrightarrow\range T\mmid_{U\,\cap\,V}$ is a subsp of $X.$\vspace{3pt}}
 	Supp $\LmQxx{T}$ is well-defined, and thus is liney. \;Define $\pi_U\in\Lm{V,V\XSlash U},\pi_X\in\Lm{W,W\XSlash X}.$\TextB{}
-	Then $\LmQxx{T}\circ\pi_U=\pi_X\circ T.$ \;Define $\xi_V\in\Lm[\BigPar]{V\XSlash\zeroSubs,V}$ by $\xi_V:v+\zeroSubs\mapsto v.$ Similr for $\xi_W.$\TextB{\vspace{3pt}}
+	Then $\LmQxx{T}\circ\pi_U=\pi_X\circ T.$ \;Define $\LmQxx{T}[]\in\Lm{V,W\XSlash X}$ by $\LmQxx{T}[]\Par{v}=Tv+X.$\TextB{\vspace{3pt}}
 	(b) \TextB{$\range \LmQxx{T}={}${$\range\BigPar{\LmQxx{T}\circ\pi_U}=\range\Par{\pi_X\circ T}$}${}=\Par{\range T}\XSlash X.$\vspace{3pt}}
 	(c) \TextB{Prove $\LmQxx{T}$ is surj $\Longleftrightarrow W\subseteq\range T+X.$\vspace{4pt}}
-	(d) \TextB{Show $\null\LmQxx{T}=\BigPar{\range\xi_V\text{\large\Big|}{_{\null\LmQxx{T}[0][\!X]}}}\XSlash U.$ \; {\FontSmall Where $\LmQxx{T}[0][\!X]\BigPar{v+\zeroSubs[\def\envFont{\small}]}=Tv+X.$}\vspace{2pt}}
-	(e) \TextB{$\LmQxx{T}$ is inje $\Longleftrightarrow\range\xi_V\text{\large\Big|}{_{\null\LmQxx{T}[0][\!X]}}\subseteq U.$\vspace{4pt}}
+	(d) \TextB{Show $\null\LmQxx{T}=\BigPar{\null\LmQxx{T}[]}\XSlash U.$\;\;{\tgnr\large(e)} $\LmQxx{T}$ is inje $\Longleftrightarrow\null\LmQxx{T}[]\subseteq U.$\vspace{4pt}}
 }(a) For $v,w\in V.$ If $v+U=w+U\Longleftrightarrow v-w\in U\Rightarrow Tv-Tw\in X\Longleftrightarrow Tv+X=Tw+X.$\parSol{\Ha}
 Then $\forall u\in V\cap U,Tu\in X\Rightarrow\range T\mmid_{U\,\cap\,V}\subseteq X.$ \,Convly true as well.\vspace{2pt}\parSol{}
 (c) Supp $\LmQxx{T}$ is surj. $\forall w\in W,w+X\in W\XSlash X$\parSol{\Hc}
 $\Rightarrow\exists\,Tv+X=w+X\Rightarrow w-Tv\in X\Rightarrow w\in\range T+X.$ \,Hence $W\subseteq\range T+X.$\vspace{2pt}\parSol{\Hc}
 Convly, $W\subseteq\range T+X\Rightarrow\Par{\range T}\XSlash X=\Par{\range T+X}\XSlash X\supseteq W\XSlash X.$\vspace{4pt}\parSol{}
-(d) $v+U\in\null\LmQxx{T}\Longleftrightarrow Tv\in X\Longleftrightarrow v+\zeroSubs\in\null\LmQxx{T}[0][\!X]\Longleftrightarrow v+U\in\BigPar{\range\xi_V\text{\large\Big|}{_{\null\LmQxx{T}}}}\XSlash U.$\PfEnd\vspace{4pt}
+(d) $v+U\in\null\LmQxx{T}\Longleftrightarrow Tv\in X\Longleftrightarrow v\in\null\LmQxx{T}[]\Longleftrightarrow v+U\in\BigPar{\null\LmQxx{T}[]}\XSlash U.$\PfEnd\vspace{4pt}
 \BulletPointX\AComm Supp $T\in\Lm{V}.$ Define $T\XSlash U\in\Lm{V\XSlash U}$ by $T\XSlash U=\LmQxx{T}[U][U].$ Then\TextB{}
 (a) $T\XSlash U$ is well-defined $\Longleftrightarrow \range T\mmid_{U\,\cap\,V}$ is a subsp of $U\Longleftrightarrow U\cap V$ is invard $T.$\TextB{}
 (b) $\range T\XSlash U=\range\BigPar{T\XSlash U\circ\pi}=\range\Par{\pi\circ T}=\Par{\range T}\XSlash U.$\;\;(c) $T\XSlash U$ surj $\Longleftrightarrow V\subseteq\range T+U.$\TextB{}
-(d) $\null T\XSlash U=\BigPar{\range\xi\text{\large\Big|}{_{\null\LmQxx{T}[0][\!U]}}}\XSlash U.$\;\;(e) $T\XSlash U$ inje $\Longleftrightarrow\range\xi\text{\large\Big|}{_{\null\LmQxx{T}[0][\!U]}}\subseteq U.$
+(d) $\null T\XSlash U=\BigPar{\null\LmQxx{T}[][U]}\XSlash U.$\;\;(e) $T\XSlash U$ inje $\Longleftrightarrow\null\LmQxx{T}[][U]\subseteq U.$
 \SepLine
 
 \ProblemB{
