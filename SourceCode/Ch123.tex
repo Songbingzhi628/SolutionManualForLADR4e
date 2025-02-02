@@ -391,11 +391,8 @@ Consider other $\Fbb.$ Note that this $\Fbb$ contains at least and strictly more
 	\TextB{Show [P] $B_V=\Par{v_1,\dots,v_m}\Longleftrightarrow B_V=\Par{w_1,\dots,w_m}.$ [Q]}
 }\NOTICE that $B_U=\Par{u_1,\dots,u_n}\Longleftrightarrow\forall u\in U,\exists\,!\,a_i\in\Fbb,u=a_1 u_1+\dots+a_n u_n.$\par\quad
 $P\Rightarrow Q:\forall v\in V,\exists\,!\,a_i\in\Fbb,\;v=a_1 v_1+\dots+a_m v_m\Rightarrow v=b_1 w_1+\dots+b_m w_m,\exists\,!\,b_k=a_k-a_{k+1},b_m=a_m.$\vspace{2pt}\par\quad
-$Q\Rightarrow P:\forall v\in V,\exists\,!\,b_i\in\Fbb,\;v=b_1w_1+\dots+b_mw_m\Rightarrow v=a_1v_1+\dots+a_mv_m,\exists\,!\,a_k=\sum_{j=k}^m b_j.$\PfEnd
-%\AComm \Or Using (4E 3.C 17). Let $\mathcal{V}=\Par{v_1,\dots,v_m},\mathcal{W}=\Par{w_1,\dots,w_m}.$\parCom
-%Let $T=I\mmid_{\Spn\mathcal{W}}\in\Lm{\Spn\mathcal{W},\Spn\mathcal{V}}$ and $A=\Mt{T,\mathcal{W},\mathcal{V}}.$\par\quad
-%$P\Rightarrow Q:\;\Par{A_{\cdot,1},\dots,A_{\cdot,m}}$ is liney indep and spans $\Fbb^{m,1}\Longleftrightarrow\Par{Iw_1,\dots,Iw_m}$ is liney indep and spans $V.$\par\quad
-%$Q\Rightarrow P:$ \;Simlr.
+$Q\Rightarrow P:\forall v\in V,\exists\,!\,b_i\in\Fbb,\;v=b_1w_1+\dots+b_mw_m\Rightarrow v=a_1v_1+\dots+a_mv_m,\exists\,!\,a_k=\sum_{j=k}^m b_j.$\PfEnd\vspace{3pt}
+\AComm \Or Using \Sbra{3.C {\NOTEFOR} [3.30, 32](a)}.
 \SepLine
 
 \ProblemBnoor{\hypertarget{2B4e5}{4E 5}}{
@@ -1373,17 +1370,24 @@ Now $\exists\,E\in\Lm{\Fbb},\varphi=E\circ\beta\Longleftrightarrow\exists\,c=E\P
 \vfill\ChDecl{Ch3C}{3$\cdot$C}{}\orMode{\hLk{3C1}{1}\;\;\hLk{3C3}{3}\;\;\hLk{3C4}{4}\;\;\hLk{3C5}{5}\;\;\hLk{3C6}{6}\;\;\hLk{3C9}{9}\;\;\hLk{3C10}{10}\;\;\hLk{3C11}{11}\;\;\hLk{3C13}{13}\;\;|\;\;\hLk{3C4e16}{4E:\;\;16}\;\;\hLk{3C4e17}{17}}{[1]: 10, 9, 11; [2]: (4E 16); [3]: (4E 17); [4]: 13, 1, 6; [5]: 3, 4, 5.}
 \vspace{8pt}
 
-\BulletPointX\NoteForSmall{[3.30, 32]}\;\;{\tgsl matrix of equations}\TextB{}
-Let the lists $L_{\alpha}=\Par{\alpha_1,\dots,\alpha_n},L_{\beta}=\Par{\beta_1,\dots,\beta_m}$ be in a vecsp $V.$\TextB{}
-Supp each $\alpha_k=A_{1,k}\beta_1+\dots+A_{m,k}\beta_m.$ Forming $A\in\Fbb^{m,n},$ which is the matrix of equations.\TextB{}
-Then ${\normalsize\begin{pmatrix}\beta_1 &\hspace{-6pt} \cdots &\hspace{-6pt} \beta_m\end{pmatrix}\begin{pmatrix}
+\BulletPointX\NoteForSmall{[3.30, 32]}\;\;{\tgsl matrix of span}\TextB{}
+Supp $L_{\alpha}=\Par{\alpha_1,\dots,\alpha_n}$ and $L_{\beta}=\Par{\beta_1,\dots,\beta_m}$ are in a vecsp $V.$\TextB{}
+Let each $\alpha_k=A_{1,k}\beta_1+\dots+A_{m,k}\beta_m,$ forming $A=\Mt{\Spn L_\beta\supseteq L_{\alpha}}\in\Fbb^{m,n}.$\TextB{\vspace{3pt}}
+Which is {\tgsl the matrix of span}. \;Then ${\normalsize\begin{pmatrix}\beta_1 &\hspace{-6pt} \cdots &\hspace{-6pt} \beta_m\end{pmatrix}\begin{pmatrix}
 	A_{1,1} &\hspace{-6pt} \cdots &\hspace{-6pt} A_{1,n}\\[-4pt]
 	\vdots	&\hspace{-6pt} \ddots &\hspace{-6pt} \vdots \\[-4pt]
 	A_{m,1} &\hspace{-6pt} \cdots &\hspace{-6pt} A_{m,n}
-\end{pmatrix}}={\normalsize\begin{pmatrix}\alpha_1 &\hspace{-6pt} \cdots &\hspace{-6pt} \alpha_n\end{pmatrix}}.$\TextB{\vspace{4pt}}
-(a) Supp $m=n.$ If $\Par{A_{\cdot,1},\dots,A_{\cdot,n}}$ is liney indep. Then $L_{\alpha}$ liney indep $\Longleftrightarrow L_{\beta}$ liney indep.\TextB{}
-(b) Supp $m\geqslant n.$ If $L_{\beta}$ liney indep. Then $\Par{A_{\cdot,1},\dots,A_{\cdot,n}}$ liney indep $\Longleftrightarrow L_{\alpha}$ liney indep.\TextB{}
-(c) Supp $m<n.$ Then $L_{\alpha}$ is liney dep.
+\end{pmatrix}}={\normalsize\begin{pmatrix}\alpha_1 &\hspace{-6pt} \cdots &\hspace{-6pt} \alpha_n\end{pmatrix}}.$\TextB{\vspace{6pt}}
+(a) Supp $m=n.$ If $\Par{A_{\cdot,1},\dots,A_{\cdot,n}}$ is a bss of $\Fbb^{n,1}.$ We show $L_{\alpha}$ liney indep $\Longleftrightarrow L_{\beta}$ liney indep.\TextB{}
+\Ha ($\Leftarrow$) Immed. ($\Rightarrow$) Asum $L_{\beta}$ is liney dep and $\beta_j=c_1\beta_1+\dots+c_{j-1}\beta_{j-1}.$ By ctradic.\PfEnd\vspace{2pt}\TextB{}
+(b) Supp $m\geqslant n.$ If $L_{\beta}$ liney indep. We show $\Par{A_{\cdot,1},\dots,A_{\cdot,n}}$ liney indep $\Longleftrightarrow L_{\alpha}$ liney indep.\TextB{}
+\Hb ($\Rightarrow$) Immed. ($\Leftarrow$) By ctradic.\PfEnd\TextB{}
+\Hb\AComm $\Mt{\Spn L_{\beta}\supseteq L_\alpha}=\Mt{I,L_{\alpha},L_{\beta}}\Longleftrightarrow L_{\alpha},L_{\beta}$ liney indep $\Rightarrow\Par{A_{\cdot,1},\dots,A_{\cdot,n}}$ liney indep.\parCom{\Hb\IndentB}
+Where $I$ is the id optor retr to $\Spn L_{\alpha}\subseteq\Spn L_{\beta}.$
+\vspace{3pt}\TextB{}
+(c) Supp $m<n.$ Then $\Par{A_{\cdot,1},\dots,A_{\cdot,n}}$ is liney dep, so is $L_{\alpha}.$\TextB{\vspace{5pt}}
+Supp $T\in\Lm{V,W}$ and $B_V=\Par{v_1,\dots,v_m},B_W=\Par{w_1,\dots,w_n}.$\TextB{}
+Then $\Mt{T,B_V\hspace{1pt},B_W}=\Mt[\BigPar]{\Spn B_W\supseteq\Par{Tv_1,\dots,Tv_m}}.$ \; \AComm See also (4E 3.D.23).
 \SepLine
 
 \pagebreak
@@ -1396,7 +1400,7 @@ $\fT^2=I,\,\fT=\fT^{-1}\Rightarrow \fT$ is iso of $\Fbb^{m,n}$ onto $\Fbb^{n,m}.
 %	\!\!Thus in general, $\fC_k\fT\neq \fT\fC_k,\;\fR_j\fT\neq \fT\fR_j,$ \,and $\fP_{j,k}\fT\neq \fT\fP_{j,k},}$\TextB{\vspace{6pt}}
 %But $\Par{A_{2,\cdot}}{^t}=\Par{A^t}{_{\cdot,2}}.$ \;
 Now we show (a) \uline{$\fT\fR_j=\fC_j\fT,$} \,(b) \uline{$\fT\fC_k=\fR_k\fT,$} \,and (c) \uline{$\fT\fP_{j,k}=\fP_{k,j}\fT.$}\TextB{\vspace{2pt}}
-So that furthermore, $\fT\fC_k\fT=\fR_k,\;\fT\fR_j\fT=\fC_j,$ \,and $\fT\fP_{j,k}\fT=\fP_{k,j}.$\TextB{\vspace{4pt}}
+So that $\fT\fC_k\fT=\fR_k,\;\fT\fR_j\fT=\fC_j,$ \,and $\fT\fP_{j,k}\fT=\fP_{k,j}.$\TextB{\vspace{4pt}}
 Let $A={}{\normalsize\begin{pmatrix}A_{1,1} &\hspace{-6pt} \cdots &\hspace{-6pt} A_{1,n}\\[-4pt] \vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots\\[-4pt] A_{m,1} &\hspace{-6pt} \cdots &\hspace{-6pt} A_{m,n}\end{pmatrix}}\Rightarrow A^t={}{\normalsize\begin{pmatrix}A_{1,1} &\hspace{-6pt} \cdots &\hspace{-6pt} A_{m,1}\\[-4pt] \vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots\\[-4pt] A_{1,n} &\hspace{-6pt} \cdots &\hspace{-6pt} A_{m,n}\end{pmatrix}}.$ \;$\MathLeftMid{l}{\!\!$
 Note that $\Par{A_{j,k}}{^t}=A_{j,k}=\Par{A^t}_{k,j}.$ Thus (c) holds.$\\$
 \!\!And $\Par{A_{\cdot,k}}{^t}={}{\small\begin{pmatrix}A_{1,k} &\hspace{-6pt} \cdots &\hspace{-6pt}A_{m,k}\end{pmatrix}}{}={}{\small\begin{pmatrix}A^t_{k,1} &\hspace{-6pt} \cdots &\hspace{-6pt}A^t_{k,m}\end{pmatrix}}{}=\Par{A^t}{_{k,\cdot}}\\$
@@ -1440,7 +1444,7 @@ Then $\Mt{Tu_k,B_V}=C_{\cdot,k}\Rightarrow\Mt[\BigPar]{S\Par{Tu_k},B_W}=AC_{\cdo
 By {\NOTEFOR} Transpose, $\BigPar{AC}{_{j,\cdot}}=\envFontLarge\Sbra{\BigPar{\envFontDefault\BigPar{AC}{^t}\envFontLarge}{_{\cdot,j}}}{^t}=\BigPar{C^t\Par{A^t}{_{\cdot,j}}}{^t}=\BigPar{\Par{A^t}{_{\cdot,j}}}{^t}C=A_{j,\cdot}C$\PfEnd
 \SepLine
 
-\BulletPointX\NoteForSmall{\hypertarget{3C9}{}[3.52]}\;\;$A\in\Fbb^{m,n},c\in\Fbb^{n,1}\Rightarrow Ac\in\Fbb^{m,1}.$\hfill By [4E 3.51(a)], $\BigPar{Ac}{_{\cdot,1}}=c_1A_{\cdot,1}+\dots+c_nA_{\cdot,n}.$\;\;\!\,\PfEnd\vspace{4pt}\quad
+\BulletPointX\NoteForSmall{\hypertarget{3C9}{}[3.52]}\;\;$A\in\Fbb^{m,n},c\in\Fbb^{n,1}\Rightarrow Ac\in\Fbb^{m,1}.$\hfill By \Sbra{4E 3.51(a)}, $\BigPar{Ac}{_{\cdot,1}}=c_1A_{\cdot,1}+\dots+c_nA_{\cdot,n}.$\;\;\!\,\PfEnd\vspace{4pt}\quad
 \Or $\because\;\BigPar{Ac}{_{j,1}}=\sum_{r=1}^n A_{j,r}c_{r,1}=\envFontLarge\Sbra{\envFontDefault\sum_{r=1}^n\BigPar{A_{\cdot,r}c_{r,1}}\envFontLarge}_{j,1}=\BigPar{c_1 A_{\cdot,1}+\dots+c_n A_{\cdot,n}}_{j,1}$\vspace{1pt}\par\quad
 \Blind{\Or}$\therefore\;\,Ac=A_{\cdot,\cdot}c_{\cdot,1}=\sum_{r=1}^n A_{\cdot,r}c_{r,1}=c_1 A_{\cdot,1}+\dots+c_n A_{\cdot,n}$\;\;\Or $\BigPar{Ac}{_{j,1}}=\BigPar{Ac}{_{j,\cdot}}=A_{j,\cdot}c\in\Fbb.$\PfEnd\vspace{2pt}\quad
 %$={}{\small\begin{pmatrix}A_{j,1}&\hspace{-6pt}\cdots&\hspace{-6pt}A_{j,n}\end{pmatrix}\begin{pmatrix}c_1\\[-4pt]\vdots\\[-6pt]c_n\end{pmatrix}}.$\PfEnd\vspace{-2pt}\quad
@@ -1448,7 +1452,7 @@ By {\NOTEFOR} Transpose, $\BigPar{AC}{_{j,\cdot}}=\envFontLarge\Sbra{\BigPar{\en
 %$c_1{\small\begin{pmatrix}A_{1,1}\\[-4pt]\vdots\\[-4pt]A_{m,1}\end{pmatrix}}+\dots+c_n{\small\begin{pmatrix}A_{1,n}\\[-4pt]\vdots\\[-4pt]A_{m,n}\end{pmatrix}}.$\PfEnd
 \SepLine
 
-\BulletPointX\Exercise{\hypertarget{3C11}{11}}\;\;$a\in\Fbb^{1,n},C\in\Fbb^{n,p}\Rightarrow aC\in\Fbb^{1,p}.$\hfill By [4E 3.51(b)], $\BigPar{aC}{_{1,\cdot}}=a_1C_{1,\cdot}+\dots+a_nC_{n,\cdot}.$\;\;\!\,\PfEnd\vspace{4pt}\quad
+\BulletPointX\Exercise{\hypertarget{3C11}{11}}\;\;$a\in\Fbb^{1,n},C\in\Fbb^{n,p}\Rightarrow aC\in\Fbb^{1,p}.$\hfill By \Sbra{4E 3.51(b)}, $\BigPar{aC}{_{1,\cdot}}=a_1C_{1,\cdot}+\dots+a_nC_{n,\cdot}.$\;\;\!\,\PfEnd\vspace{4pt}\quad
 \Or $\because\;\BigPar{aC}{_{1,k}}=\sum_{r=1}^n a_{1,r}C_{r,k}=\envFontLarge\Sbra{\envFontDefault\sum_{r=1}^n a_{1,r}\BigPar{C_{r,\cdot}}\envFontLarge}_{1,k}=\BigPar{a_1 C_{1,\cdot}+\dots+a_n C_{n,\cdot}}_{1,k}$\vspace{2pt}\par\quad
 \Blind{\Or}$\therefore\;\,aC=a_{1,\cdot}C_{\cdot,\cdot}=\sum_{r=1}^n a_{1,r}C_{r,\cdot}=a_1 C_{1,\cdot}+\dots+a_n C_{n,\cdot}$\;\;\Or $\BigPar{aC}{_{1,k}}=\BigPar{aC}{_{\cdot,k}}=aC_{\cdot,k}\in\Fbb.$\PfEnd\vspace{4pt}\quad
 %$={\small\begin{pmatrix}a_1&\hspace{-6pt}\cdots&\hspace{-6pt}a_n\end{pmatrix}\begin{pmatrix}C_{1,k}\\[-4pt]\vdots\\[-4pt]C_{n,k}\end{pmatrix}}.$\PfEnd\vspace{-2pt}\quad
