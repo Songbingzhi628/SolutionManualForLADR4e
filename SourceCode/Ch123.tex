@@ -391,8 +391,11 @@ Consider other $\Fbb.$ Note that this $\Fbb$ contains at least and strictly more
 	\TextB{Show [P] $B_V=\Par{v_1,\dots,v_m}\Longleftrightarrow B_V=\Par{w_1,\dots,w_m}.$ [Q]}
 }\NOTICE that $B_U=\Par{u_1,\dots,u_n}\Longleftrightarrow\forall u\in U,\exists\,!\,a_i\in\Fbb,u=a_1 u_1+\dots+a_n u_n.$\par\quad
 $P\Rightarrow Q:\forall v\in V,\exists\,!\,a_i\in\Fbb,\;v=a_1 v_1+\dots+a_m v_m\Rightarrow v=b_1 w_1+\dots+b_m w_m,\exists\,!\,b_k=a_k-a_{k+1},b_m=a_m.$\vspace{2pt}\par\quad
-$Q\Rightarrow P:\forall v\in V,\exists\,!\,b_i\in\Fbb,\;v=b_1w_1+\dots+b_mw_m\Rightarrow v=a_1v_1+\dots+a_mv_m,\exists\,!\,a_k=\sum_{j=k}^m b_j.$\PfEnd\vspace{2pt}\quad
-\AComm \Or Using (4E 3.C 17).\vspace{-2pt}
+$Q\Rightarrow P:\forall v\in V,\exists\,!\,b_i\in\Fbb,\;v=b_1w_1+\dots+b_mw_m\Rightarrow v=a_1v_1+\dots+a_mv_m,\exists\,!\,a_k=\sum_{j=k}^m b_j.$\PfEnd
+%\AComm \Or Using (4E 3.C 17). Let $\mathcal{V}=\Par{v_1,\dots,v_m},\mathcal{W}=\Par{w_1,\dots,w_m}.$\parCom
+%Let $T=I\mmid_{\Spn\mathcal{W}}\in\Lm{\Spn\mathcal{W},\Spn\mathcal{V}}$ and $A=\Mt{T,\mathcal{W},\mathcal{V}}.$\par\quad
+%$P\Rightarrow Q:\;\Par{A_{\cdot,1},\dots,A_{\cdot,m}}$ is liney indep and spans $\Fbb^{m,1}\Longleftrightarrow\Par{Iw_1,\dots,Iw_m}$ is liney indep and spans $V.$\par\quad
+%$Q\Rightarrow P:$ \;Simlr.
 \SepLine
 
 \ProblemBnoor{\hypertarget{2B4e5}{4E 5}}{
@@ -881,7 +884,7 @@ Define $S\in\Lm{V}$ by $S\Par{av+bTv+c_1 u_1+\dots+c_n u_n}=bv\Rightarrow S\Par{
 \Blind{\Or \;}{\vspace{6pt}Note that {\Large$S_k\XPar{\sum_{i=1}^n a_i v_i}=a_k v_k$}. Then {\Large$S_kv=v\Longleftrightarrow\exists\,!\,a_k\in\Fbb,v=a_kv_k$}.}\par\quad
 \Blind{\Or \;}{\vspace{6pt}Hence {\Large$S_k\Par{Tv_k}=T\Par{S_kv_k}=Tv_k\Rightarrow Tv_k=a_k v_k$}.}\par\quad
 \Blind{\Or \;}{\vspace{6pt}Define {\Large$A^{\SmallPar[1.5pt]{j,k}}\in\Lm{V}$} by {\Large$A^{\SmallPar[1.5pt]{j,k}}v_j=v_k,\;A^{\SmallPar[1.5pt]{j,k}}v_k=v_j,\;A^{\SmallPar[1.5pt]{j,k}}v_x=0,x\neq j,k$}.}\par\quad
-\Blind{\Or \;}{\vspace{4pt}\hspace{-2.7pt}$\hText{$Then$\\[6pt]\;}$ {\Large$\hMath{r}{\left|\;\;}{\;\right\}}{A^{\SmallPar[1.5pt]{j,k}}Tv_j=TA^{\SmallPar[1.5pt]{j,k}}v_j=Tv_k=a_kv_k\\A^{\SmallPar[1.5pt]{j,k}}Tv_j=A^{\SmallPar[1.5pt]{j,k}}a_jv_j=a_jA^{\SmallPar[1.5pt]{j,k}}v_j=a_jv_k}\Rightarrow a_k=a_j.$}} {Hence $a_k$ is inde of $v_k.$}\PfEnd
+\Blind{\Or \;}{\vspace{4pt}\hspace{-2.7pt}$\hText{$Then$\\[6pt]\;}$ {\Large$\hMath{r}{\left|\;\;}{\;\right\}}{A^{\SmallPar[1.5pt]{j,k}}Tv_j=TA^{\SmallPar[1.5pt]{j,k}}v_j=Tv_k=a_kv_k\\A^{\SmallPar[1.5pt]{j,k}}Tv_j=A^{\SmallPar[1.5pt]{j,k}}a_jv_j=a_jA^{\SmallPar[1.5pt]{j,k}}v_j=a_jv_k}\Rightarrow a_k=a_j.$}} {Hence $a_k$ is indep of $v_k.$}\PfEnd
 \SepLine
 
 \ProblemB{
@@ -1365,11 +1368,25 @@ $\exists\,u\apostrophe\in\null \varphi\Backslash[\Big]\null \beta,\,\exists\,u\n
 Now $\exists\,E\in\Lm{\Fbb},\varphi=E\circ\beta\Longleftrightarrow\exists\,c=E\Par{1}\in\Fbb,\varphi=c\beta.$ \Sbra{ $E$ is inv $\Longleftrightarrow E\Par{1}\neq 0\Longleftrightarrow c\neq 0.$ }\PfEnd
 \SepLine
 
-\ChEnd\pagebreak
+\ChEnd
 
 \vfill\ChDecl{Ch3C}{3$\cdot$C}{}\orMode{\hLk{3C1}{1}\;\;\hLk{3C3}{3}\;\;\hLk{3C4}{4}\;\;\hLk{3C5}{5}\;\;\hLk{3C6}{6}\;\;\hLk{3C9}{9}\;\;\hLk{3C10}{10}\;\;\hLk{3C11}{11}\;\;\hLk{3C13}{13}\;\;|\;\;\hLk{3C4e16}{4E:\;\;16}\;\;\hLk{3C4e17}{17}}{[1]: 10, 9, 11; [2]: (4E 16); [3]: (4E 17); [4]: 13, 1, 6; [5]: 3, 4, 5.}
 \vspace{8pt}
 
+\BulletPointX\NoteForSmall{[3.30, 32]}\;\;{\tgsl matrix of equations}\TextB{}
+Let the lists $L_{\alpha}=\Par{\alpha_1,\dots,\alpha_n},L_{\beta}=\Par{\beta_1,\dots,\beta_m}$ be in a vecsp $V.$\TextB{}
+Supp each $\alpha_k=A_{1,k}\beta_1+\dots+A_{m,k}\beta_m.$ Forming $A\in\Fbb^{m,n},$ which is the matrix of equations.\TextB{}
+Then ${\normalsize\begin{pmatrix}\beta_1 &\hspace{-6pt} \cdots &\hspace{-6pt} \beta_m\end{pmatrix}\begin{pmatrix}
+	A_{1,1} &\hspace{-6pt} \cdots &\hspace{-6pt} A_{1,n}\\[-4pt]
+	\vdots	&\hspace{-6pt} \ddots &\hspace{-6pt} \vdots \\[-4pt]
+	A_{m,1} &\hspace{-6pt} \cdots &\hspace{-6pt} A_{m,n}
+\end{pmatrix}}={\normalsize\begin{pmatrix}\alpha_1 &\hspace{-6pt} \cdots &\hspace{-6pt} \alpha_n\end{pmatrix}}.$\TextB{\vspace{4pt}}
+(a) Supp $m=n.$ If $\Par{A_{\cdot,1},\dots,A_{\cdot,n}}$ is liney indep. Then $L_{\alpha}$ liney indep $\Longleftrightarrow L_{\beta}$ liney indep.\TextB{}
+(b) Supp $m\geqslant n.$ If $L_{\beta}$ liney indep. Then $\Par{A_{\cdot,1},\dots,A_{\cdot,n}}$ liney indep $\Longleftrightarrow L_{\alpha}$ liney indep.\TextB{}
+(c) Supp $m<n.$ Then $L_{\alpha}$ is liney dep.
+\SepLine
+
+\pagebreak
 \def\fT{\mathcal{T}}\def\fC{\mathcal{C}}\def\fR{\mathcal{R}}\def\fP{\mathcal{E}}
 
 \BulletPointX\NoteForSmall{Trspose}\;\;{\FontSmall\Sbra{\hypertarget{3F33}{3.F.33}}}\;Define $\fT:A\rightarrow A^t.$ By [3.111], $\fT$ is liney. Becs $\Par{A^t}{^t}=A.$ \TextB{}
@@ -1512,17 +1529,17 @@ $P\Rightarrow Q:$\,\;Becs $\dim S_c=\dim S_r=1.$\vspace{4pt}\par\quad
 
 \ProblemB{
 	\TipsN{1}\,\,\,\TextB{Supp $T\in\Lm{V,W},\;B_V=\Par{v_1,\dots,v_n},B_W=\Par{w_1,\dots,w_m}.$\vspace{-1pt}}
-	\IndentTipsN{1}{\tgsl Let $L=\BigPar{Tv_{\alpha_1},\dots,Tv_{\alpha_k}},\;M=\BigPar{A_{\cdot,\alpha_1},\cdots,A_{\cdot,\alpha_k}},$ where each $\alpha_i\in\Bra{1,\dots,n}.$}\TextB{\vspace{1pt}}
-	\IndentTipsN{1}(a) \TextB{Show [P] $L$ is liney indep $\Longleftrightarrow M$ is liney indep. [Q]\vspace{2pt}}
-	\IndentTipsN{1}(b) \TextB{Show [P] $\Spn L=W\Longleftrightarrow\Spn M=\Fbb^{m,1}.$ [Q]\hfill\FontNorm\Sbra{ Let $A=\Mt{T,B_V,B_W}.$\hspace{1pt}}}
+	\IndentTipsN{1}{\tgsl Let $L=\BigPar{Tv_{\alpha_1},\dots,Tv_{\alpha_k}},\;L_{\mathcal{M}}=\BigPar{A_{\cdot,\alpha_1},\cdots,A_{\cdot,\alpha_k}},$ where each $\alpha_i\in\Bra{1,\dots,n}.$}\TextB{\vspace{1pt}}
+	\IndentTipsN{1}(a) \TextB{Show [P] $L$ is liney indep $\Longleftrightarrow L_{\mathcal{M}}$ is liney indep. [Q]\vspace{2pt}}
+	\IndentTipsN{1}(b) \TextB{Show [P] $\Spn L=W\Longleftrightarrow\Spn L_{\mathcal{M}}=\Fbb^{m,1}.$ [Q]\hfill\FontNorm\Sbra{ Let $A=\Mt{T,B_V,B_W}.$\hspace{1pt}}}
 }\par\quad
-(a) Note that $\mathcal{M}\!:\,Tv_k\rightarrow A_{\cdot,k}$ is iso of $W$ onto $\Fbb^{m,1}.$ \quad (b) Reduce $L$ to $B_W',\;M$ to $B_{\Fbb^{m,1}}.$ Simlr.\PfEnd\vspace{4pt}\quad
+(a) Note that $\mathcal{M}\!:\,Tv_k\rightarrow A_{\cdot,k}$ is iso of $W$ onto $\Fbb^{m,1}.$ \quad (b) Reduce $L$ to $B_W',$ and $L_{\mathcal{M}}$ to $B_{\Fbb^{m,1}}.$ Simlr.\PfEnd\vspace{4pt}\quad
 \Or\;$c_1Tv_{\alpha_1}+\dots+c_kTv_{\alpha_k}=c_1\BigPar{A_{1,{\alpha_1}}w_1+\dots+A_{m,{\alpha_1}}w_m}+\dots+c_k\BigPar{A_{1,{\alpha_k}}w_1+\dots+A_{m,{\alpha_k}}w_m}$\par\vspace{2pt}\quad
 \Blind{\Or\;}$\Blind{c_1Tv_{\alpha_1}+\dots+c_kTv_{\alpha_k}}=\BigPar{c_1A_{1,{\alpha_1}}+\dots+c_kA_{1,{\alpha_k}}}w_1+\dots+\BigPar{c_1A_{m,{\alpha_1}}+\dots+c_kA_{m,{\alpha_k}}}w_m.$\par\vspace{4pt}\quad
 \Blind{\Or\;}And \;$c_1A_{\cdot,{\alpha_1}}+\dots+c_kA_{\cdot,{\alpha_k}}=c_1{\normalsize\begin{pmatrix}A_{1,{\alpha_1}}\\[-4pt]\vdots\\[-10pt]A_{m,{\alpha_1}}\end{pmatrix}}+\dots+c_k{\normalsize\begin{pmatrix}A_{1,{\alpha_k}}\\[-4pt]\vdots\\[-10pt]A_{m,{\alpha_k}}\end{pmatrix}}{}={}\normalsize\begin{pmatrix}c_1 A_{1,{\alpha_1}}+\dots+c_kA_{1,{\alpha_k}}\\[-4pt]\vdots\\[-4pt]c_1A_{m,{\alpha_1}}+\dots+c_kA_{m,{\alpha_k}}\end{pmatrix}$.\par\vspace{6pt}\quad
 (a) $P\Rightarrow Q:$\,\;Supp $\;c_1A_{\cdot,{\alpha_1}}+\dots+c_kA_{\cdot,{\alpha_k}}=0.$ \;Let $v=c_1v_{\alpha_1}+\dots+c_kv_{\alpha_k}.$\par\quad\Ha
 \Blind{$Q\Rightarrow P:$\,\;}Then $Tv=\BigPar{c_1A_{1,{\alpha_1}}+\dots+c_kA_{1,{\alpha_k}}}w_1+\dots+\BigPar{c_1A_{m,{\alpha_1}}+\dots+c_kA_{m,{\alpha_k}}}w_m=0w_1+\dots+0w_m.$\par\quad\Ha
-\Blind{$Q\Rightarrow P:$\,\;}Now $c_1Tv_{\alpha_1}+\dots+c_kTv_{\alpha_k}=0.$ Then each $c_i=0\Rightarrow M$ liney indep.\vspace{4pt}\par\quad\Ha
+\Blind{$Q\Rightarrow P:$\,\;}Now $c_1Tv_{\alpha_1}+\dots+c_kTv_{\alpha_k}=0.$ Then each $c_i=0\Rightarrow L_{\mathcal{M}}$ liney indep.\vspace{4pt}\par\quad\Ha
 $Q\Rightarrow P:$\,\;Becs $c_1Tv_{\alpha_1}+\dots+c_kTv_{\alpha_k}=0.$ For each $i\in\Bra{1,\dots,m},\;c_1A_{i,{\alpha_1}}+\dots+c_kA_{i,{\alpha_k}}=0.$\par\quad\Ha
 \Blind{$Q\Rightarrow P:$\,\;}Which is equi to $c_1A_{\cdot,{\alpha_1}}+\dots+c_kA_{\cdot,{\alpha_k}}=0.$ \;Thus each $c_i=0\Rightarrow L$ liney indep.\par\vspace{4pt}\quad\Ha
 \Or\;$\exists\,A_{\cdot,{\alpha_j}}=c_1A_{\cdot,{\alpha_1}}+\dots+c_{j-1}A_{\cdot,{\alpha_{j-1}}}$\par\quad\Ha
@@ -1542,9 +1559,9 @@ $Q\Rightarrow P:$\,\;$\forall w\in W,\exists\,a=c_1A_{\cdot,{\alpha_1}}+\dots+c_
 \Blind{$Q\Rightarrow P:$\,\;}$\Rightarrow w=\BigPar{c_1A_{1,{\alpha_1}}+\dots+c_kA_{1,{\alpha_k}}}w_1+\dots+\BigPar{c_1A_{m,{\alpha_1}}+\dots+c_kA_{m,{\alpha_k}}}w_m=c_1Tv_{\alpha_1}+\dots+c_kTv_{\alpha_k}.$\vspace{6pt}\par\quad\Hb
 ${}{^\neg}Q\Rightarrow{}{^\neg}P:$\,\;$\exists\,w\in W,\exists\,a\in\Fbb^{m,1},\Mt{w,B_W}=a,$ but $\nexists\,\Par{c_1,\dots,c_k}\in\Fbb^k,a=c_1A_{\cdot,\alpha_1}+\dots+c_kA_{\cdot,\alpha_k}$\par\quad\Hb
 \Blind{${}{^\neg}Q\Rightarrow{}{^\neg}P:$\,\;}$\Rightarrow\nexists\,\Par{c_1,\dots,c_k}\in\Fbb^k,\;w=c_1Tv_{\alpha_1}+\dots+c_kTv_{\alpha_k}.$ For if not, ctradic.\PfEnd\vspace{6pt}
-\Note \,\,\,Let $L=\BigPar{Tv_1,\dots,Tv_n},\;M=\BigPar{A_{\cdot,1},\cdots,A_{\cdot,n}}.$\parNot
-Then (a*) By \Sbra{3.B.9, \TIPSN{4}}, $T$ is inje $\Longleftrightarrow L$ is liney indep, so is $M$.\parNot
-And (b*) $T$ is surj $\Longleftrightarrow\Spn L=W\Longleftrightarrow\Spn M=\Fbb^{m,1}.$\parNot
+\Note \,\,\,Let $L=\BigPar{Tv_1,\dots,Tv_n},\;L_{\mathcal{M}}=\BigPar{A_{\cdot,1},\cdots,A_{\cdot,n}}.$\parNot
+Then (a*) By \Sbra{3.B.9, \TIPSN{4}}, $T$ is inje $\Longleftrightarrow L$ is liney indep, so is $L_{\mathcal{M}}$.\parNot
+And (b*) $T$ is surj $\Longleftrightarrow\Spn L=W\Longleftrightarrow\Spn L_{\mathcal{M}}=\Fbb^{m,1}.$\parNot
 \hypertarget{3C4e17}{\ACoro }$B_{\Fbb^{n,1}}=\BigPar{A_{\cdot,1},\cdots,A_{\cdot,n}}\Longleftrightarrow T$ is inje and surj $\Longleftrightarrow B_{\Fbb^{1,n}}=\BigPar{A_{\cdot,1},\cdots,A_{\cdot,n}}.$\parNot
 \AComm If $T$ is inv. Then by (a*, c) or (b*, d), we have another proof of \COROLLARY.\parNot\IndentComment
 \hypertarget{3F32}{\Or }If $m=n.$ Then by [3.118] and one of (a*, b*, c, d). Yet another proof.\parNot
@@ -1832,8 +1849,8 @@ $\forall v\in V,\exists\,a_i\in\Fbb, v=\sum_{i=1}^ma_i Tv_i\Rightarrow T^{-1}v=\
 \ProblemN{\hypertarget{3D15}{15}}{
 	\TextNL{Prove every liney map from $\Fbb^{n,1}$ to $\Fbb^{m,1}$ is given by a matrix multi.}
 	\TextNL{In other words, prove if $T\in\Lm{\Fbb^{n,1},\Fbb^{m,1}}$, then $\exists\,A\in\Fbb^{m,n},Tx = Ax,\,\forall x\in\Fbb^{n,1}$.}
-}Let $B_1=\Par{E_1,\dots,E_n},B_2=\Par{R_1,\dots,R_m}$ be std bses of $\Fbb^{n,1},\Fbb^{m,1}$.\vspace{-12pt}\parSol{}
-$\forall k=1,\dots,n,\;T\Par{E_{k}}=A_{1,k}R_1+\dots+A_{m,k}R_m,\exists\,A_{j,k}\in\Fbb$, forming $A\,=\,${\normalsize$\begin{pmatrix} A_{1,1} &\hspace{-6pt} \cdots &\hspace{-6pt} A_{1,n}\\[-4pt] \vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots\\[-4pt] A_{m,1} &\hspace{-6pt} \cdots &\hspace{-6pt} A_{m,n}\end{pmatrix}.$}\parSol{\vspace{-6pt}}
+}Let $B_1=\Par{E_1,\dots,E_n},B_2=\Par{R_1,\dots,R_m}$ be std bses of $\Fbb^{n,1},\Fbb^{m,1}$.\parSol{}
+$\forall k=1,\dots,n,\;T\Par{E_{k}}=A_{1,k}R_1+\dots+A_{m,k}R_m,\exists\,A_{j,k}\in\Fbb$, forming $A.$\parSol{} %$A\,=\,${\normalsize$\begin{pmatrix} A_{1,1} &\hspace{-6pt} \cdots &\hspace{-6pt} A_{1,n}\\[-4pt] \vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots\\[-4pt] A_{m,1} &\hspace{-6pt} \cdots &\hspace{-6pt} A_{m,n}\end{pmatrix}.$}\parSol{\vspace{-6pt}}
 \Or Let $A=\Mt{T,B_1,B_2}$. Note that $\Mt{x,B_1}=x,\Mt{Tx,B_2}=Tx.$\parSol{}
 Hence $Tx=\Mt{Tx,B_2}=\Mt{T,B_1,B_2}\Mt{x,B_1}=Ax,$ by [3.65].\PfEnd
 \SepLine
@@ -1866,12 +1883,13 @@ $\beta_k=I\beta_k=B_{1,k}\alpha_1+\dots+B_{n,k}\alpha_n,\,\,\forall \,\,k\in\Bra
 \SepLine
 
 \ProblemBnoor{4E 22, \OR \hypertarget{3D4e22}{10.A.1}}{
-	\TextB{Supp $T\in\Lm{V}.$ Prove $\Mt{T,B_V}$ is inv $\Longleftrightarrow T$ itself is inv.}
-}Notice that $\mathcal{M}\!:T\mapsto\Mt{T,B_V}$ is iso. And that $\Mt{T}\Mt{S}=\Mt{TS}.$\vspace{2pt}\par\quad
+	\TextB{Supp $T\in\Lm{V}.$ Prove $\Mt{T,\alpha\rightarrow\beta}$ is inv $\Longleftrightarrow T$ itself is inv.}
+}Notice that $\mathcal{M}\!:T\mapsto\Mt{T,\alpha\rightarrow\beta}$ is iso. And that $\Mt{T}\Mt{S}=\Mt{TS}.$\vspace{2pt}\par\quad
 (a) $T^{-1}T=TT^{-1}=I\Rightarrow\Mt{T^{-1}}\Mt{T}=\Mt{I}=\Mt{T}\Mt{T^{-1}}\Rightarrow\Mt{T^{-1}}=\Mt{T}{^{-1}}.$\vspace{2pt}\par\quad
 (b) $\Mt{T}\Mt{T}{^{-1}}=\Mt{T}{^{-1}}\Mt{T}=I,\;\exists\,!\,S\in\Lm{V}$ suth $\Mt{T}{^{-1}}=\Mt{S}$\par\quad\Hb
 $\Rightarrow\Mt{TS}=\Mt{T}\Mt{S}=I=\Mt{S}\Mt{T}=\Mt{ST}$\par\quad\Hb
-$\Rightarrow\Mneg\Mt{TS}=\Mneg\Mt{ST}=I$\large$\,=\,TS=ST\Rightarrow S=T^{-1}.$\PfEnd
+$\Rightarrow\Mneg\Mt{TS}=\Mneg\Mt{ST}=I$\large$\,=\,TS=ST\Rightarrow S=T^{-1}.$\PfEnd\vspace{2pt}
+\ACoro Supp $A\in\Fbb^{n,n}.$ Then $A$ is inv $\Longleftrightarrow\exists$ inv $T\in\Lm{\Fbb^n}$ suth $\Mt[\BigPar]{T,\Par{e_1,\dots,e_n},\Par{f_1,\dots,f_n}}=A.$
 \SepLine
 
 \ProblemBnoor{4E 24, \OR \hypertarget{3D4e24}{10.A.2}}{
