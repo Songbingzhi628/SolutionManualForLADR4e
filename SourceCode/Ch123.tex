@@ -2240,7 +2240,7 @@ Thus $A\apostrophe=-a+A$ is a subsp of $V.$ Hence $a+A\apostrophe=a+\Bra{x-a:x\i
 \Or Let $A=\alpha+U,\;B=\beta+W.$ \;Supp $v\in\Par{\alpha+U}\cap\Par{\beta+W}\neq\emptySet.$\parSol{}
 Then $v-\alpha\in U\Rightarrow v+U=\alpha+U=A,$ and simlr $v+W=\beta+W=B.$\parSol{}
 We show $A\cap B=v+\Par{U\cap W}.$ Note that $v+\Par{U\cap W}\subseteq A\cap B.$\parSol{}
-And $\forall w=v+u=v+w\in A\cap B\Rightarrow u=w\in U\cap W\Rightarrow w\in v+\Par{U\cap W}.$\PfEnd
+And $\forall\gamma=v+u=v+w\in A\cap B\Rightarrow u=w\in U\cap W\Rightarrow\gamma\in v+\Par{U\cap W}.$\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{3E10}{10}}{
@@ -2485,40 +2485,33 @@ Inje: Each $f\Par{x_k}=0\Rightarrow f+U=0.$ \;Let $S=T\circ\pi\Rightarrow\tilde{
 %\def\OrbikenI
 {
 \ProblemN{\hypertarget{3F4}{4}}{
-	\TextN{Supp $U$ is a subsp of $V$ and $U \neq V$. Prove $\exists\,\varphi \in V\apostrophe\nonzero[\huge],\varphi\Par{u}=0$ for all $u\in U.$\vspace{1pt}}
+	\TextN{Supp $U$ is a subsp of $V\neq U.$ Prove $U^0\neq\zeroSubs.$\vspace{1pt}}
 }Let $X\oplus U=V\Rightarrow X\neq\zeroSubs.$ Supp $s\in X\nonzero.$ Let $Y\oplus\Span{s}=X.$\parSol{}
 Define $\varphi\in V\apostrophe$ by $\varphi\Par{u+\lambda s+y}=\lambda.$ Hence $\varphi\neq 0$ and $\varphi\Par{u}=0$ for all $u\in U.$\PfEnd\parSol{\vspace{4pt}}
 \Or \Sbra[3pt]{{\tgsl Req $V$ Finide}} \;By [3.106], $\dim U^0=\dim V-\dim U>0.$\parSol{}
 \Blind{\Or }\Or Let $B_U=\Par{u_1,\dots,u_m},B_V=\Par{u_1,\dots,u_m,v_1\dots,v_n}$ with $n\geqslant 1.$\parSol{}
-\Blind{\Or}Let $B_{V\apostrophe}=\Par{\psi_1,\dots,\psi_m,\varphi_1,\dots,\varphi_n}.$ Then each $\varphi\in\Span{\varphi_1,\dots,\varphi_n}$ will do.\PfEnd\vspace{4pt}
-\ACoro (1) $U\neq V\Rightarrow U^0\neq\zeroSubs.$ \; (2) $U^0=\zeroSubs\Rightarrow U=V.$\par
+\Blind{\Or}Let $B_{V\apostrophe}=\Par{\psi_1,\dots,\psi_m,\varphi_1,\dots,\varphi_n}.$ Then each $\varphi\in\Span{\varphi_1,\dots,\varphi_n}$ will do.\PfEnd\vspace{8pt}
+\ACoro \ProblemN[]{\hypertarget{3F18}{18}}{
+	\TextNL{$\zeroSubs{^0_V}=V\apostrophe$. \Sbra[3pt]{{\FontNorm Which means $U^0=V\apostrophe\Longleftrightarrow U=\zeroSubs.$}}\vspace{4pt}}}
+\IndentCorollary\ProblemN[]{\hypertarget{3F19}{19}}{
+	\TextNL{\tgnr $U^0=\zeroSubs=V^0\Longleftrightarrow U=V$. {\normalsize\tgnr By the inv and ctrapos of Exe (4).}\vspace{4pt}}
+}\par
 \AComm {\tgsc\large Another proof of \tgbfx[3.108]}: $T$ is surj $\Longleftrightarrow T\apostrophe$ is inje.\parCom
 (a) Supp $T\apostrophe$ is inje. \NOTICE that $\psi\neq 0\Longleftrightarrow T\apostrophe\Par{\psi}\neq 0\Longleftrightarrow\psi\not\in\Par{\range T}{^0}.$\parCom
 (b) $T$ is surj $\Rightarrow\Par{\range T}{^0}=\zeroSubs=\null T\apostrophe.$\PfEnd
 \SepLine
-
-\ProblemB[]{
-	\TextB{Supp $V$ is a vecsp and $U$ is a subsp of $V.$\vspace{2pt}}
-	\ProblemN[]{}{}
-	\ProblemN[]{\hypertarget{3F18}{18}}{
-		\TextNL{$U^0=V\apostrophe\Longleftrightarrow\forall\varphi\in V\apostrophe, U\subseteq\null \varphi\,\Longleftrightarrow U=\zeroSubs$. \Sbra[3pt]{{\FontNorm Which means $\zeroSubs{^0_V}=V\apostrophe.$}}\vspace{4pt}}
-%		\TextNL{\FontNorm\tgnr\Or $U^0=V\apostrophe\Longleftrightarrow\dim U^0=\dim V\Longleftrightarrow\dim U=0.$}\vspace{5pt}
-	}
-	\ProblemN[]{\hypertarget{3F19}{19}}{
-		\TextNL{\tgnr $U^0_V=\zeroSubs=V^0_V\Longleftrightarrow U=V$. {\normalsize\tgnr By the inverse and ctrapos of Exe (4).}}}
-	\TextB{\vspace{-4pt}}
-}\SepLine
 
 \BulletPointX\NoteForSmall{[3.102]}\;\;For $U=\emptySet,\;U^0$ is undefined. If $U^0$ is in the context, then certainly $U$ is nonempty.
 \SepLine
 
 \ProblemN{\hypertarget{3F25}{25}}{
 	\TextNL{Supp $U$ is a subsp of $V$. Explain why $U=\Bra{v\in V:\varphi\Par{v}=0,\forall\varphi\in U^0}.$}
-}Note that $U=\Bra{v\in V:v\in U}$ is a subsp. Now we show $\forall\varphi\in U^0,\varphi\Par{v}=0\Rightarrow v\in U.$\parSol{}
-Asum $v\in V\Backslash U.$ Then let $\Span{v}\oplus U\oplus X=V.$ $\exists\,\psi\in V\apostrophe,\null\psi=U\oplus X.$\parSol{}
-又 $\psi\in U^0\Rightarrow\psi\Par{v}=0.$ Ctradic. \;Hence $v\in U\Longleftrightarrow\forall\varphi\in U^0,\varphi\Par{v}=0.$\PfEnd\vspace{2pt}
+}We show $\forall\varphi\in U^0,\varphi\Par{v}=0\Rightarrow v\in U$ by ctradic. Asum $v\in V\Backslash U.$\parSol{}
+Then let $\Span{v}\oplus U\oplus X=V.$ $\exists\,\psi\in V\apostrophe,\null\psi=U\oplus X.$ 
+又 $\psi\in U^0\Rightarrow\psi\Par{v}=0.$\PfEnd\vspace{2pt}
 \AComm $W\subseteq X=\Bra{v\in V:\varphi\Par{v}=0,\forall\varphi\in W^0},$ the {\tgsc promotion} of the subset $W$ of $V.$\parCom
-The promotion of every nonempty subset of $V$ is a subsp of $V.$
+The promotion of every nonempty subset of $V$ is a subsp of $V.$\parCom
+Now we show $\Spn W=X.$ $\forall w\in\Spn W,$
 \SepLine
 
 \ProblemB{
@@ -2564,8 +2557,22 @@ The promotion of every nonempty subset of $V$ is a subsp of $V.$
 	\!\Or\;$U\cap W\subseteq U\Rightarrow\BigPar{U\cap W}{^0}\supseteq U^0\\$
 	\!\Blind{\Or\;}$U\cap W\subseteq W\Rightarrow\BigPar{U\cap W}{^0}\supseteq W^0}$\vspace{6pt}\par\quad
 (b) \!\Sbra[3pt]{{\tgsl Only in Finide; Req $U,W$ Subsps}} \;By Exe (22), $\Dim\BigPar{U^0+W^0}=\dim U^0+\dim W^0-\Dim\BigPar{U^0\cap W^0}$\par\vspace{0pt}\quad\Hb
-$=2\dim V-\dim U-\dim W-\BigPar{\!\dim V-\Dim\Par{U+W}}=\dim V-\Dim\Par{U\cap W}.$\PfEnd\vspace{4pt}
-%\Or \Sbra[3pt]{{\tgsl Req $U,W$ Subsps}} \;Let $I=U\cap W.$ Using \Sbra{3E \TIPSN{3}}.\par\vspace{-10pt}\quad
+$=2\dim V-\dim U-\dim W-\BigPar{\!\dim V-\Dim\Par{U+W}}=\dim V-\Dim\Par{U\cap W}.$\PfEnd\vspace{4pt}\quad\Hb
+\Or \Sbra[3pt]{{\tgsl Req $U,W$ Subsps}} \;Let $I=U\cap W.$ We show $\Par{U\cap W}{^0}\subseteq U^0+W^0.$\par\quad\Hb
+Define $\chi\in\Lm{V\XSlash I,V\XSlash U\times V\XSlash W}$ by $\chi:v+I\mapsto\Par{v+U,v+W}.$\par\quad\Hb
+Well-defined: $v_1+I=v_2+I\in V\XSlash I\Longleftrightarrow v_1-v_2\in I$\par\quad\Hb
+\Blind{Well-defined:} $\Longleftrightarrow v_1-v_2\in U$ and $v_1-v_2\in W\Rightarrow\Par{v_1+U,v_1+W}=\Par{v_2+U,v_2+W}.$\vspace{2pt}\par\quad\Hb
+Inje: $\Par{v+U,v+W}=0\Longleftrightarrow v\in U\cap W=I\Longleftrightarrow v+I=0.$\par\quad\Hb
+Surj: $\forall v\in V$ suth $\Par{v+U,v+W}\in V\XSlash U\times V\XSlash W,$ becs $\emptySet\neq\Par{v+U}\cap\Par{v+W}=v+I\in V\XSlash I.$\par\quad\Hb
+Hence $\chi\apostrophe\in\Lm[\BigPar]{\Par{{V\XSlash U}\times{V\XSlash W}}\apostrophe,\Par{V\XSlash I}\apostrophe}$ is iso. Now we try finding an iso of $U^0\times W^0$ onto $\Par{U\cap W}{^0}.$\par\quad\Hb
+By Exe (4E 8), supp $\xi:\Par{V\XSlash U}\apostrophe\times\Par{V\XSlash W}\apostrophe\rightarrow\Par{{V\XSlash U}\times{V\XSlash W}}\apostrophe$ is iso.\par\quad\Hb
+By (c) in Exe (37), supp $\Lambda_1:U^0\times W^0\rightarrow\Par{V\XSlash U}\apostrophe\times\Par{V\XSlash W}\apostrophe$ and $\Lambda_2:\Par{V\XSlash I}\apostrophe\rightarrow\Par{U\cap W}{^0}$ are isos.\par\quad\Hb
+Hence $\Par{\Lambda_2\circ\chi\apostrophe\circ\xi\circ\Lambda_1}:U^0\times W^0\rightarrow\Par{U\cap W}{^0}$ is iso. \;Now we see how it works:\par\quad\Hb
+$\forall\Par{\varphi_U,\varphi_W}\in U^0\times W^0,\;\null\pi_U\subseteq\null\varphi_U\Rightarrow\exists\,\psi_U\in\Par{V\XSlash U}\apostrophe,\;\psi_U\circ\pi_U=\varphi_U,$ simlr for $\varphi_W,$\par\quad\Hb
+thus $\Lambda_1:\Par{\varphi_U,\varphi_W}\mapsto\Par{\psi_U,\psi_W}.$ Then $\xi:\Par{\psi_U,\psi_W}\mapsto\Par{\psi_US_U+\psi_WS_W},$ \Sbra{ See notas in (3.E.2). }\vspace{2pt}\par\quad\Hb
+Now $\Par{\psi_US_U+\psi_WS_W}\mathop{\longmapsto}\limits^{\chi\apostrophe}\Par{\psi_US_U+\psi_WS_W}\circ\chi\mathop{\longmapsto}\limits^{\Lambda_2}\Par{\psi_US_U+\psi_WS_W}\circ\chi\circ\pi_I,$\par\quad\Hb
+which sends $v$ to $\psi_U\Par{v+U}+\psi_W\Par{v+W}=\Par{\varphi_U+\varphi_W}\Par{v},$ which is $\varphi_U+\varphi_W.$\par\quad\Hb
+Thus $\Par{\Lambda_2\circ\chi\apostrophe\circ\xi\circ\Lambda_1}$ is the surj $\Lambda:U^0\times W^0\rightarrow U^0+W^0$ defined in [3.77].\PfEnd\vspace{3pt}
 %\!$\hText{$Now $S_V I=S_V U\oplus S_U I=S_V W\oplus S_W I.$ For $\varphi\in\Par{U\cap W}{^0}=I^0.\\$Let $\Span{x}=\Pure V\XSlash\null\varphi.$ If $x=0$ then done.$\\\;\\\;}\qquad\hText{$\includegraphics[width=80pt]{diagram3F-1}$\\\;\\\;}$\par\vspace{-42pt}\quad
 %Now $0\neq x\in S_V I\Rightarrow\exists\,!\,\Par{u_v,i_u,w_v,i_w}\in S_V U\times S_U I\times S_V W\times S_W I,$\par\quad
 %$x=u_v+i_u=w_v+i_w.$ Define $\varphi\in U^0,\beta\in W^0$ by $\varphi:u_v\mapsto 1,u\mapsto 0,$ and $\beta:i_u\mapsto 1,i\mapsto 0,$\par\quad
@@ -2579,7 +2586,7 @@ $=2\dim V-\dim U-\dim W-\BigPar{\!\dim V-\Dim\Par{U+W}}=\dim V-\Dim\Par{U\cap W}
 %\BulletPointX\ACoro (1) $\BigPar{U\cap W}{^0}=U^0+W^0\supseteq U^0\cap W^0=\BigPar{U+W}{^0}.$\vspace{2pt}\parCor{\IndentB}
 %(2) ${\envFontLarge\BigPar{{\envFontDefault\bigcap_{\alpha_i\in\Gamma}V_{\!\alpha_i}}}}{^0}=\sum_{\alpha_i\in\Gamma}\BigPar{V^0_{\!\alpha_i}},\;\;{\envFontLarge\BigPar{{\envFontDefault\sum_{\alpha_i\in\Gamma}V_{\!\alpha_i}}}}{^0}=\bigcap_{\alpha_i\in\Gamma}\BigPar{V^0_{\!\alpha_i}}.$
 %\SepLine
-
+\pagebreak
 \ProblemB{
 	\TipsN{1}\,\,\,(a) \TextB{Prove $V=U\oplus W\Longleftrightarrow V\apostrophe=U^0\oplus W^0.$\vspace{1pt}}
 	\IndentTipsN{1}(b) \TextB{Supp $U\oplus W=V.$ Prove $U^0=\Bra{\varphi\in V\apostrophe:\varphi=\varphi\circ\iota},$}
@@ -2597,7 +2604,6 @@ Now $a_1u_1+\dots+a_nu_n=0\Rightarrow$ \uline{Each $a_i=\varphi_i\Par{a_1u_1+\do
 Let $U_V\upapostrophe=\Span{\varphi_1}.$ Then extend to $B_U=\Par{e_1}$ to $B_V'=\Par{e_1,e_2}.$ Corres $B_{V\apostrophe}'\neq B_{V\apostrophe}.$
 \SepLine
 }
-\pagebreak
 %\def\OrbikenII
 {
 \BulletPointX\TipsN{2}\,\,\,Supp $\varphi_1,\dots,\varphi_m\in V\apostrophe.$ Let $\null_I=\Par{\null\varphi_1}\cap\dots\cap\Par{\null\varphi_m}.$\TextB{}
