@@ -1237,14 +1237,14 @@ Define $T\in\Lm{V,W}$ by $T\Par{Sw_i}=w_i.$ Now $ST\BigPar{a_1Sw_1+\dots+a_nSw_n
 \SepLine
 
 \ProblemN{\hypertarget{3B24}{24}}{
-	\TextNL{Supp $S, T\in\Lm{V,W},$ and $\null S\subseteq\null T.$ Prove $\exists\,E\in\Lm{W},T=ES$.}
+	\TextNL{Supp {\FontNorm $S\in\Lm{V,M},T\in\Lm{V,W},$} and $\null S\subseteq\null T.$ Prove $\exists\,E\in\Lm{M,W},T=ES$.}
 }\par\quad
 %Define $E:\range S\rightarrow W$ by \uline{$E:Sv\mapsto Tv.$} \,Extend $E\in\Lm[\BigPar]{\range S,W}$ to $E\in\Lm{W}.$\PfEnd\vspace{2pt}\quad
 %\Or Let \uline{$V=U\oplus\null S\Rightarrow S\mmid_{U}:U\rightarrow\range S$ is iso.} \,Extend $T\BigPar{S\mmid_{U}}{^{-1}}$ to $E\in\Lm{W}.$\PfEnd\vspace{2pt}\quad
 \!\!\!$\hText{$
 	Let \uline{$V=U\oplus\null S$}$\\$
 	\uline{$\Rightarrow S\mmid_{U}:U\rightarrow\range S$ is iso.}$\\$
-	Extend $T\BigPar{S\mmid_{U}}{^{-1}}$ to $E\in\Lm{W}.}\hspace{-20pt}\small\left.\begin{tikzcd}
+	Extend $T\BigPar{S\mmid_{U}}{^{-1}}$ to $E\in\Lm{M,W}.}\hspace{-20pt}\small\left.\begin{tikzcd}
 	{\range T} & U \\[4pt] & {\range S}
 	\arrow["\;surj\;T"', from=1-2, to=1-1]
 	\arrow["S"{pos=0.4}, from=1-2, to=2-2]
@@ -1252,8 +1252,8 @@ Define $T\in\Lm{V,W}$ by $T\Par{Sw_i}=w_i.$ Now $ST\BigPar{a_1Sw_1+\dots+a_nSw_n
 	\arrow["surj\;E\!\!"{pos=0.4}, from=2-2, to=1-1]
 \end{tikzcd}\right|
 \large\hText{$
-	\Or Define $E:\range S\rightarrow W$ by \uline{$E:Sv\mapsto Tv.$}$\\$
-	Extend $E\in\Lm[\BigPar]{\range S,W}$ to $E\in\Lm{W}.$
+	\Or Define $E:\range S\rightarrow W$ by \uuline{$E:Sv\mapsto Tv.$}$\\$
+	Extend $E\in\Lm[\BigPar]{\range S,W}$ to $E\in\Lm{M,W}.$
 $}$\PfEnd\vspace{6pt}\quad
 \AComm Let $\Delta\oplus\null S=\null T,\;U_{\Delta}\oplus\Par{\Delta\oplus\null S}=V=U_{\Delta}\oplus\null T.$ \;Redefine $U=U_{\Delta}\oplus \Delta.$\par\vspace{2pt}\quad
 %\Or Let $U_{\Delta}\oplus\null T\mmid_U=U.$ Let $\Delta=\null T\mmid_U.$ Then $U_{\Delta}\oplus\null T=V,\;\Delta\oplus\null S=\null T.$\parCom\quad
@@ -1268,51 +1268,47 @@ $\hText{$\includegraphics[width=88pt]{diagram3B-2}$}\hText{$
 \AComm Let $E_1\in\Lm{U_{\Delta}\oplus\null T,U_{\Delta}},$ and $E_2$ be an iso of $\range S\mmid_{U_{\Delta}}$ onto $\range T.$\parCom\quad
 Define $E_1\mmid_{U_{\Delta}}=I\mmid_{U_{\Delta}},$ and $E_2=T\BigPar{S\mmid_{U_{\Delta}}}{^{-1}}.$ \;Then $T=E_2SE_1.$\par\vspace{4pt}\quad
 \ACoro If $\null S=\null T.$ Then $\Delta=\zeroSubs,U_{\Delta}=U.$ \Sbra[3pt]{{\tgsl Req $W$ Finide}} \;By (3.D.3),\parCor\quad
-we can extend inje $T\BigPar{S\mmid_{U}}{^{-1}}\in\Lm[\BigPar]{\range S,W}$ to inv $E\in\Lm{W}.$\vspace{6pt}\par\quad
+we can extend inje $T\BigPar{S\mmid_{U}}{^{-1}}\in\Lm[\BigPar]{\range S,W}$ to inv $E\in\Lm{M,W}.$\vspace{6pt}\par\quad
 \Or \Sbra[3pt]{{\tgsl Req $\range S$ Finide}} \;Let $B_{\range S}=\Par{Sv_1,\dots,Sv_n}$. Then \uline{$V=\Span{v_1,\dots,v_n}\oplus\null S$.}\par\quad
-Define $E\in\Lm{\range S,W}$ by $E\Par{Sv_i}=Tv_i.$ \;Extend to $E\in\Lm{W}.$\par\quad
+Define $E\in\Lm{\range S,W}$ by $E\Par{Sv_i}=Tv_i.$ \;Extend to $E\in\Lm{M,W}.$\par\quad
 Hence $\forall v=\sum_{i=1}^na_iv_i+u\in V,\,\,$\uline{$\BigPar{\exists\,!\,u\in\null S\subseteq\null T\,},\,Tv=\sum_{i=1}^na_iTv_i+0$}${}=E\BigPar{\sum_{i=1}^na_iSv_i+0}.$\PfEnd\vspace{6pt}\quad
-\ACoro \Sbra[3pt]{{\tgsl Req $W$ Finide}} \;Supp $\null S=\null T.$ We show $\exists$ inv $E\in\Lm{W},T=ES.$\par\quad
-Redefine $E\in\Lm{W}$ by $E\Par{Tv_i}=Sv_i,\;E\Par{w_j}=x_j,$ for each $Tv_i$ and $w_j.$ Where:\par\quad
+\ACoro \Sbra[3pt]{{\tgsl Req $W$ Finide}} \;Supp $\null S=\null T.$ We show $\exists$ inv $E\in\Lm{M,W},T=ES.$\par\quad
+Redefine $E\in\Lm{M,W}$ by $E\Par{Tv_i}=Sv_i,\;E\Par{w_j}=x_j,$ for each $Tv_i$ and $w_j.$ Where:\par\quad
 Let $B_{\range T}=\Par{Tv_1,\dots,Tv_m},B_W=\Par{Tv_1,\dots,Tv_m,w_1,\dots,w_n},B_U=\Par{v_1,\dots,v_m}.$\par\quad
-Now $V=U\oplus\null T=U\oplus\null S\Rightarrow B_{\range S}=\BigPar{Sv_1,\dots,Sv_m}.$ Let $B_W'=\Par{Sv_1,\dots,Sv_m,x_1,\dots,x_n}.$\PfEnd 
+Now $V=U\oplus\null T=U\oplus\null S\Rightarrow B_{\range S}=\BigPar{Sv_1,\dots,Sv_m}.$ Let $B_M=\Par{Sv_1,\dots,Sv_m,x_1,\dots,x_n}.$\PfEnd 
 \SepLine\pagebreak
 
 \ProblemN{\hypertarget{3B25}{25}}{
-	\TextNL{Supp $S, T\in\Lm{V,W},$ and $\range T\subseteq\range S.$ Prove $\exists\,E\in\Lm{V},T = SE$.}
+	\TextNL{Supp {\FontNorm$S\in\Lm{Y,W},T\in\Lm{V,W},$} and $\range T\subseteq\range S.$ Prove $\exists\,E\in\Lm{V,Y},T = SE$.}
 }\par\quad
-Let $V=U\oplus\null S\Rightarrow S\mmid_U:U\rightarrow\range S$ is iso. Becs $\Par{S\mmid_U}{^{-1}}:\underset{\supseteq\,\range T}{\uline{\range S}}\rightarrow U.$\par\vspace{-12pt}\quad
-\uline{Define $E=\BigPar{S\mmid_U}{^{-1}}T=\BigPar{S\mmid_U}{^{-1}}\Big|{_{\range T}}T\in\Lm{V,U}\subseteq\Lm{V}.$}\PfEnd\vspace{10pt}\quad
-\!\!\!$\hText{$
-	\AComm Let $U_1=U.$ Let $U_2\oplus\null T=V=U_1\oplus\null S.\\$
+Let $Y=U\oplus\null S$\vspace{-4pt}\par\quad
+$\Rightarrow S\mmid_U:U\rightarrow\range S$ is iso. Becs $\Par{S\mmid_U}{^{-1}}:\overset{\range T\:\subseteq}{{\range S}}\rightarrow U.$\par\quad
+\uline{Define $E=\BigPar{S\mmid_U}{^{-1}}T=\BigPar{S\mmid_U}{^{-1}}\Big|{_{\range T}}T\in\Lm{V,U}\subseteq\Lm{V,Y}.$}\PfEnd\vspace{-20pt}\quad
+\!\!\!$\hText{\\[6pt]$
+	\AComm Let $U_1=U.$ Let $U_2\oplus\null T=V.\\$
 	Let $U_{1\Delta}=\range\BigPar{S\mmid_{U_1}}{^{-1}}\Big|{_{\range T}}\subseteq U_1=\Delta\oplus U_{1\Delta}.\\$
-	\Or Let $U_{1\Delta}=\range E\mmid_{U_2}.$ \,Let $\Delta\oplus\range E\mmid_{U_2}=U_1.\\$
-	Thus $U_1\oplus\null S=U_{1\Delta}\oplus{}$\uline{$\Par{\Delta\oplus\null S}$}${}=U_2\oplus{}$\uline{$\null T$}$.\\[-10pt]$
-	\Blind{Thus $U_1\oplus\null S=U_{1\Delta}\oplus{}$}$\qquad\text{\tiny|}\qquad\qquad\qquad\qquad\text{\tiny|}\\[-20pt]$
-	$\hspace{164.2pt}\underset{\text{iso, \;if finide.}}{\uline{\;\qquad\qquad\qquad\qquad\hspace{-2pt}}}$
-$}\quad\hText{$
-	$U_1\xlongrightarrow[S]{inv}\range S\\[-8pt]$
-	$\;\text{\small|\:|}\qquad\qquad\text{\small|\:|}\\[-6pt]$
-	$\;\Delta\,\xlongrightarrow[S]{inv}\range S\mmid_{\Delta}\\[-8pt]$
-	$\;\oplus\qquad\quad\;\;\oplus\\[-6pt]$
-	$\,U_{1\Delta}\xlongrightarrow[S]{inv}\range T\xlongleftarrow[T]{inv}U_2\\[-8pt]$
-	$\,\;\uparrow\qquad\qquad\qquad\qquad\quad|\\[-19pt]$
-	$\,\;\,\underset{inv\;\;E\def\envFontA{\normalsize}\mmid_{U_2}}{{\uline{\qquad\qquad\qquad\qquad\qquad\!\!}}}$
-$}$\par\vspace{4pt}\quad
+	\Or Let $U_{1\Delta}=\range E\mmid_{U_2}.$ \,Let $\Delta\oplus\range E\mmid_{U_2}=U_1.$
+%	Thus $U_1\oplus\null S=U_{1\Delta}\oplus{}$\uline{$\Par{\Delta\oplus\null S}$}${}=U_2\oplus{}$\uline{$\null T$}$.\\[-10pt]$
+%	\Blind{Thus $U_1\oplus\null S=U_{1\Delta}\oplus{}$}$\qquad\text{\tiny|}\qquad\qquad\qquad\qquad\text{\tiny|}\\[-20pt]$
+%	$\hspace{164.2pt}\underset{\text{iso, \;if finide.}}{\uline{\;\qquad\qquad\qquad\qquad\hspace{-2pt}}}$
+$}\qquad\qquad\qquad\quad$\FontSmall$\hText{U_1\xlongrightarrow[S]{inv}\range S\\[-8pt]\;\text{\small|\:|}\qquad\qquad\text{\small|\:|}\\[-6pt]\;\Delta\,\xlongrightarrow[S]{inv}\range S\mmid_{\Delta}\\[-8pt]\;\oplus\qquad\quad\;\;\oplus\\[-6pt]\,U_{1\Delta}\xlongrightarrow[S]{inv}\range T\xlongleftarrow[T]{inv}U_2\\[-8pt]\,\;\uparrow\qquad\qquad\qquad\qquad\quad|\\[-19pt]\,\;\,\underset{inv\;\;E\def\envFontA{\normalsize}\mmid_{U_2}}{{\uline{\qquad\qquad\qquad\qquad\qquad\!\!}}}}$\FontNorm\par\vspace{2pt}\quad
 %\ACoro If $\Delta=\zeroSubs,$ then $U_1=U_{1\Delta}\Rightarrow\range S=\range T.$ 又 $\null S,\null T$ are iso.\par\quad
 %By (3.D.3), we can re-extend inje $E\mmid_{U_2}\in\Lm[\BigPar]{U_2,U_1\oplus\null S}$ to inv $E\in\Lm[\BigPar]{U_2\oplus\null T,U_1\oplus\null S}.$\par\vspace{4pt}\quad
 %Thus we have $\Delta\neq\zeroSubs\Longleftrightarrow E\mmid_{U_2}\in\Lm{U_2,V}$ cannot be re-extended to inv $E\in\Lm{V}$ freely.
-\ANote $\null S=\null T\Rightarrow \range S,\range T$ iso. While $\range S=\range T\notRightarrow\null S,\null T$ iso.\parNot\quad
-Counterexa: Forward shift optor on $\Fbb^{\infty}$ and backward shift optor on $\Bra{\Par{0,x_1,x_2,\cdots}\in\Fbb^{\infty}}.$\par\vspace{8pt}\quad
-\Sbra[3pt]{{\tgsl Req $\range T$ Finide}} \;Let $B_{\range T}=\Par{Tv_1,\dots,Tv_n}.$ Then \uline{$V=\Span{v_1,\dots,v_n}\oplus\null T.$}\par\quad
+\Sbra[3pt]{{\tgsl Req $\range T$ Finide}} \;Let $B_{\range T}=\Par{Tv_1,\dots,Tv_n}.$ Now $B_{U_2}=\Par{v_1,\dots,v_n}.$\par\quad
 \uline{Let $S\Par{u_i}=Tv_i$ for each $Tv_i.$} \;Define $E$ by $Ev_i=u_i,Ex=0$ for all $x\in\null T$ and each $v_i.$\PfEnd\vspace{4pt}\quad
 \AComm \Sbra[3pt]{{\tgsl Req $V$ Finide}} \;Note that $\dim U_2\leqslant\dim U_1\Longrightarrow\dim\null T=p\geqslant q=\dim\null S.$\parCom\quad
 Let $B_{\null T}=\Par{x_1,\dots,x_p},B_{\null S}=\Par{y_1,\dots,y_q}.$ Redefine $E:v_i\mapsto u_i,\;x_k\mapsto y_k,\;x_j\mapsto 0,$\parCom\quad
-for each $i\in\Bra{1,\dots,\dim U_2},k\in\Bra{1,\dots,\dim\null S},j\in\Bra{\dim\null S+1,\dots,\dim\null T}.$\parCom\quad
+for each $i\in\Bra{1,\dots,\dim U_2},k\in\Bra{1,\dots,\dim\null S}=K,j\in\Bra{1,\dots,\dim\null T}\Backslash[\Big]K.$\parCom\quad
 Note that $\Par{u_1,\dots,u_n}$ is liney indep. Let $X=\Span{x_1,\dots,x_q}\oplus\Span{v_1,\dots,v_n}.$\parCom\quad
-Now $E\mmid_X$ is inje, but cannot be re-extend to inv $E\in\Lm{V}$ without loss of functionality.\par\vspace{4pt}\quad
+Now $E\mmid_X$ is inje, but cannot be re-extend to inv $E\in\Lm{V,Y}$ suth $T=SE.$\par\vspace{4pt}\quad
 \ACoro \Sbra[3pt]{{\tgsl Req $V$ Finide}} \;If $\range T=\range S,$ then $\dim\null T=\dim\null S=p.$\parCor\quad
-Redefine $E$ by $Ev_i=u_i,\;Ex_j=y_j$ for each $v_i$ and $x_j.$ Then $E\in\Lm{V}$ is inv.\PfEnd
+Redefine $E$ by $Ev_i=u_i,\;Ex_j=y_j$ for each $v_i$ and $x_j.$ Then $E\in\Lm{V,Y}$ is inv.\PfEnd
+\SepLine
+
+\BulletPointX\AComm Supp $S,T\in\Lm{V,W}.$ Then $\range S=\range T\notRightarrow\null S,\null T$ iso.\TextB{}
+\AExa Forward shift optor on $\Fbb^{\infty}$ and backward shift optor on $\Bra{\Par{0,x_1,x_2,\cdots}\in\Fbb^{\infty}}.$\TextB{\vspace{2pt}}
+While $\null S=\null T\Longleftrightarrow E:Sv\mapsto Tv$ and $E^{-1}:Tv\mapsto Sv$ well-defined $\Rightarrow \range S,\range T$ iso.
 \SepLine
 
 \ProblemN{\hypertarget{3B28}{28}}{
