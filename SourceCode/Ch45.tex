@@ -251,7 +251,7 @@ Hence $T$ is inje. And $\Dim\BigPar{\PoC{n-1}\times\PoC{m-1}}=\dim\PoC{m+n-1}\Ri
 	\TextB{Prove $\forall p,q\in\PoFi,k\in\Nbp,\Par{pq}{^{\SmallPar{k}}}=\mathC_{k}^k p{^{\SmallPar{k}}}q{^{\SmallPar{0}}}+\dots+\mathC_{k}^j p{^{\SmallPar{j}}}q{^{\SmallPar{k-j}}}+\dots+\mathC_{k}^0 p{^{\SmallPar{0}}}q{^{\SmallPar{k}}}.$}
 }\par\quad
 We use induc by $k\in\Nbp.$\par\quad
-(i) $k=1.$ $\Par{pq}{^{\SmallPar{1}}}=pq=C_{1}^1 p{^{\SmallPar{1}}}q{^{\SmallPar{0}}}+C_{1}^0 p{^{\SmallPar{0}}}q{^{\SmallPar{1}}}.$\par\quad\Endi
+(i) $k=1.$ $\Par{pq}{^{\SmallPar{1}}}=\Par{pq}\apostrophe=C_{1}^1 p{^{\SmallPar{1}}}q{^{\SmallPar{0}}}+C_{1}^0 p{^{\SmallPar{0}}}q{^{\SmallPar{1}}}.$\par\quad\Endi
 (ii) $k\geqslant 2.$ Asum for $\Par{pq}{^{\SmallPar{k-1}}}=\mathC_{k-1}^{k-1} p{^{\SmallPar{k-1}}}q{^{\SmallPar{0}}}+\dots+\mathC_{k-1}^j p{^{\SmallPar{j}}}q{^{\SmallPar{k-1-j}}}+\dots+\mathC_{k-1}^0 p{^{\SmallPar{0}}}q{^{\SmallPar{k-1}}}.$\vspace{4pt}\par\quad\Hii
 Now $\Par{pq}{^{\SmallPar{k}}}=\BigPar{\Par{pq}{^{\SmallPar{k-1}}}}\apostrophe=\XPar{\sum_{j=0}^{k-1}\mathC_{k-1}^{j} p{^{\SmallPar{j}}}q{^{\SmallPar{k-j-1}}}}\apostrophe=\sum_{j=0}^{k-1}\XSbra{\mathC_{k-1}^{j} \XPar{p{^{\SmallPar{j+1}}}q{^{\SmallPar{k-j-1}}}+p{^{\SmallPar{j}}}q{^{\SmallPar{k-j}}}}}.$\vspace{4pt}\par\quad\Hii
 \Blind{Now} $\Blind{\Par{pq}{^{\SmallPar{k}}}\!}=\XSbra{\mathC_{k-1}^{0}\XPar{ \uwave{p{^{\SmallPar{1}}}q{^{\SmallPar{k-1}}}}+\boxed{p{^{\SmallPar{0}}}q{^{\SmallPar{k}}}}}}+\XSbra{\mathC_{k-1}^1\XPar{p{^{\SmallPar{2}}}q{^{\SmallPar{k-2}}}+\uwave{p{^{\SmallPar{1}}}q{^{\SmallPar{k-1}}}}}}$\vspace{6pt}\par\quad\Hii
@@ -267,8 +267,8 @@ Hence $\Par{pq}{^{\SmallPar{k}}}=\mathC_{k}^0{p{^{\SmallPar{0}}}q{^{\SmallPar{k}
 Supp $p\in\PoFi.$ Write $p\Par{z}=\Par{z-\lambda}{^A}q\Par{z},$ where $A\in\Nbp,q\Par{\lambda}\neq 0.$\vspace{2pt}\par\quad
 We use induc to show for all $\alpha\in\Bra{1,\dots,A},{p{^{\SmallPar{\alpha-1}}}}\Par{\lambda}=0.$\vspace{2pt}\par\quad
 (i) $\alpha=1.$ $p{^{\SmallPar{0}}}\Par{\lambda}=0.$\par\quad\Endi
-(ii) $2\leqslant\alpha\leqslant A.$ Asum $p{^{\SmallPar{a-2}}}\Par{\lambda}=0$ for all $a\in\Bra{1,\dots,\alpha}.$\par\quad\Hii
-\NOTICE that $p\Par{z}=\Par{z-\lambda}{^{\alpha-1}}q_{\alpha-1}\Par{z}=\Par{z-\lambda}{^{\alpha}}q_{\alpha}\Par{z},$ where $q_{\alpha}\Par{z}=\Par{z-\lambda}q_{\alpha-1}\Par{z}.$\vspace{2pt}\par\quad\Hii
+(ii) $2\leqslant\alpha\leqslant A.$ Asum $p{^{\SmallPar{a-2}}}\Par{\lambda}=0$ for all $a\in\Bra{2,\dots,\alpha}.$\par\quad\Hii
+\NOTICE that $p\Par{z}=\Par{z-\lambda}{^{\alpha-1}}q_{\alpha-1}\Par{z}=\Par{z-\lambda}{^{\alpha}}q_{\alpha}\Par{z},$ where $q_{\alpha-1}\Par{z}=\Par{z-\lambda}q_{\alpha}\Par{z}.$\vspace{2pt}\par\quad\Hii
 Becs $p{^{\SmallPar{\alpha-1}}}\Par{z}=\XSbra{\mathC_{\alpha-1}^{\alpha-1}\Par{z-\lambda}{^{0}}q_{\alpha-1}\Par{z}+\dots+\mathC_{\alpha-1}^{k}\Par{z-\lambda}{^{\alpha-1-k}}q_{\alpha-1-k}\Par{z}$\vspace{2pt}\par\quad\Hii
 \Blind{Becs} $\Blind{p{^{\SmallPar{\alpha-1}}}\Par{z}=}+\dots+\mathC_{\alpha-1}^{0}\Par{z-\lambda}{^{\alpha-1}}q_{\alpha-1}{^{\SmallPar{\alpha-1}}}\Par{z}}.$ Now $p{^{\SmallPar{\alpha-1}}}\Par{\lambda}=\mathC_{\alpha-1}^{\alpha-1}q_{\alpha-1}\Par{\lambda}=0.$\PfEnd
 \SepLine
