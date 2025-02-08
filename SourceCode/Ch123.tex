@@ -2397,10 +2397,10 @@ Then $\dim U\XSlash W=\dim U-\Dim\Par{U\cap W}=1\neq 0\dim X-\Dim\Par{X\cap Y}=\
 \ProblemB{
 	\TipsN{2}\,\,\,\TextB{Supp $U,W$ are subsps of $V.$ Let $I=U\cap W.$}
 	\IndentTipsN{2}\TextB{Prove $V=U+W\Longleftrightarrow V\XSlash I=U\XSlash I\oplus W\XSlash I.$}
-}(a) Supp $U+W.$ Then $\forall x\in V\XSlash I,\exists\,v\in V,\Par{u_v,w_v}\in U\times W,x=v+I=\Par{u_v+w_v}+I.$\parSol{\Ha}
+}(a) Supp $V=U+W.$ Then $\forall v+I\in V\XSlash I,\exists\,\Par{u_v,w_v}\in U\times W,\;v+I=\Par{u_v+w_v}+I.$\parSol{\Ha}
 Note that $U\XSlash I,W\XSlash I\subseteq V\XSlash I.$ Thus $V\XSlash I=U\XSlash I+W\XSlash I.$\parSol{\Ha}
-$\forall x\in\Par{U\XSlash I}\,${\Large$\cap$}$\,\Par{W\XSlash I},x=u+I=w+I\Rightarrow{}$\uline{$u-w\in I=U\cap W$}\parSol{\Ha}
-\uline{$\Rightarrow\exists\,w'\in I,u=w+w'\in U\cap W$}${}\Rightarrow x=u+I=0+I.$ Thus $\Par{U\XSlash I}\,${\Large$\cap$}$\,\Par{W\XSlash I}=\zeroSubs.$\parSol{\vspace{3pt}}
+$\forall u+I=w+I\in\Par{U\XSlash I}\,${\Large$\cap$}$\,\Par{W\XSlash I},\;$\uline{$u-w\in I=U\cap W$}\parSol{\Ha}
+\uline{$\Rightarrow\exists\,w'\in I,u=w+w'\in U\cap W$}${}\Rightarrow u+I=0+I=w+I.$ Thus $\Par{U\XSlash I}\,${\Large$\cap$}$\,\Par{W\XSlash I}=\zeroSubs.$\parSol{\vspace{3pt}}
 (b) Supp $V\XSlash I=U\XSlash I\oplus W\XSlash I.$ Then $\forall v\in V,v+I=\Par{u+I}+\Par{w+I}$\parSol{\Hb}
 $\Rightarrow v-u-w\in I=U\cap W\Rightarrow\exists\,x\in U\cap W,v=u+w+x\in U+W.$\PfEnd
 \SepLine
@@ -2440,7 +2440,7 @@ For $u_x\in U_X,\;u_x+W=0\Longleftrightarrow u_x\in U_X\cap W\Longleftrightarrow
 %\SepLine
 
 \ProblemB{
-	Supp $T\in\Lm{V,W},$ and $U,V$ are subsps of some vecsp, and $X,W$ are subsps of some vecsp.\TextB{}
+	Supp $T\in\Lm{V,W},$ and $U,V$ are subsps of some vecsp, and $X,W$ are subsps of some vecsp.\TextB{\vspace{2pt}}
 	\TextB{Define $\LmQxx{T}:V\XSlash U\rightarrow W\XSlash X$ by $\LmQxx{T}\Par{v+U}=Tv+X.$\vspace{2pt}}
 	(a) \TextB{Prove $\LmQxx{T}$ is well-defined $\Longleftrightarrow{}${\FontNorm$\BigPar{\range T\mmid_{U\,\cap\,V}}\XSlash X=\zeroSubs$}${}\Longleftrightarrow\range T\mmid_{U\,\cap\,V}$ is a subsp of $X.$\vspace{3pt}}
 	Supp $\LmQxx{T}$ is well-defined, and thus is liney. \;Define $\pi_U\in\Lm{V,V\XSlash U},\pi_X\in\Lm{W,W\XSlash X}.$\TextB{}
@@ -2523,7 +2523,7 @@ Now we show $\Spn W=X.$ $\forall w\in\Spn W,$
 \ProblemN{\hypertarget{3F21}{21}}{
 	\TextNL{Supp $U,W$ are subsps of $V$. Prove $W^0\subseteq U^0\Rightarrow U\subseteq W.$}
 }Using Exe (25). Now $v\in U\Rightarrow\forall\varphi\in W^0\subseteq U^0,\varphi\Par{v}=0\Rightarrow v\in W.$\PfEnd\vspace{2pt}
-\AComm $\varphi\in W^0\Longleftrightarrow{}$\uline{$\null\varphi\supseteq W\Rightarrow\null\varphi\supseteq U$}${}\Longleftrightarrow\varphi\in U^0.$ But cannot conclude $W\supseteq U.$\par
+\ANote $\varphi\in W^0\Longleftrightarrow{}$\uline{$\null\varphi\supseteq W\Rightarrow\null\varphi\supseteq U$}${}\Longleftrightarrow\varphi\in U^0.$ But cannot conclude $W\supseteq U.$\vspace{2pt}\par
 \AComm (1) If $U$ is merely a subset and $W$ is a subsp. Promote $U$ as $X,$ let $W=Y.$\parCom
 \Blind{(1)} Then $Y^0=W^0\subseteq U^0=X^0\Rightarrow Y=W\supseteq X\supseteq U.$ Still true.\parCom
 (2) If $W$ is merely a subset and $U$ is a subsp. Promote $W$ as $Y,$ let $U=X.$ For exa,\parCom
@@ -2545,7 +2545,7 @@ Now we show $\Spn W=X.$ $\forall w\in\Spn W,$
 
 \ProblemN{\hypertarget{3F23}{23}}{
 	\TextNL{Supp $U$ and $W$ are subsps of $V$. Prove $\BigPar{U\cap W}{^0}=U^0+W^0$.}
-}\vspace{2pt}\par\quad
+}\vspace{3pt}\par\quad
 \!\!\!$\hText{$
 	(a) $\varphi=\psi+\beta\in U^0+W^0\Rightarrow\forall v\in U\cap W,\\$
 	\Ha $\varphi\Par{v}=\Par{\psi+\beta}\Par{v}=0\Rightarrow\varphi\in\BigPar{U\cap W}{^0}.
@@ -2583,31 +2583,59 @@ Thus $\Par{\Lambda_2\circ\chi\apostrophe\circ\xi\circ\Lambda_1}$ is the surj $\L
 %(2) ${\envFontLarge\BigPar{{\envFontDefault\bigcap_{\alpha_i\in\Gamma}V_{\!\alpha_i}}}}{^0}=\sum_{\alpha_i\in\Gamma}\BigPar{V^0_{\!\alpha_i}},\;\;{\envFontLarge\BigPar{{\envFontDefault\sum_{\alpha_i\in\Gamma}V_{\!\alpha_i}}}}{^0}=\bigcap_{\alpha_i\in\Gamma}\BigPar{V^0_{\!\alpha_i}}.$
 %\SepLine
 \pagebreak
+
 \ProblemB{
-	\TipsN{1}\,\,\,(a) \TextB{Prove $V=U\oplus W\Longleftrightarrow V\apostrophe=U^0\oplus W^0.$\vspace{1pt}}
-	\IndentTipsN{1}(b) \TextB{Supp $U\oplus W=V.$ Prove $U^0=\Bra{\varphi\in V\apostrophe:\varphi=\varphi\circ\iota},$}
-	\IndentTipsN{1}\Hb where $\iota\in\Lm{V,W}:u_v+w_v\rightarrow w_v$.\;\;\;\NewNotation\;\;Denote $W^0$ by $U_V\upapostrophe,$ and $U^0$ by $W_V\upapostrophe.$\TextB{}
-}(a) $U\cap W=\zeroSubs\Longleftrightarrow \BigPar{U\cap W}{^0}=\zeroSubs{_V^0}=V\apostrophe=U^0+W^0.$\parSol{\vspace{1pt}}
-\Ha$V=U+W\Longleftrightarrow\BigPar{U+W}{^0}=V_V^0=\zeroSubs=U^0\cap W^0.$\parSol{\vspace{2pt}}
-(b) $\varphi\in U^0\Longleftrightarrow U\subseteq\null\varphi\Longleftrightarrow\varphi=\varphi\circ\iota,$ by \Sbra{3.B \TIPSN{3}}.\PfEnd
+	\TipsN{1}\,\,\,\TextB{Prove $V=U\oplus W\Longleftrightarrow V\apostrophe=U^0\oplus W^0.$}
+}$U\cap W=\zeroSubs\Longleftrightarrow \BigPar{U\cap W}{^0}=\zeroSubs{_V^0}=V\apostrophe=U^0+W^0.$\parSol{\vspace{1pt}}
+$V=U+W\Longleftrightarrow\BigPar{U+W}{^0}=V_V^0=\zeroSubs=U^0\cap W^0.$\PfEnd
+\SepLine
+
+\ProblemB{
+	\TextB{Supp $V=U\oplus W.$ Prove $U^0=\Bra{\varphi\in V\apostrophe:\varphi=\varphi\circ\iota},$ \FontNorm where $\iota\in\Lm{V,W}:u_v+w_v\rightarrow w_v$.}
+%	\NewNotation\;\;Denote $W^0$ by $U_V\upapostrophe,$ and $U^0$ by $W_V\upapostrophe.$\TextB{}
+}$\varphi\in U^0\Longleftrightarrow U\subseteq\null\varphi\Longleftrightarrow\varphi=\varphi\circ\iota,$ by \Sbra{3.B \TIPSN{3}}.\PfEnd\vspace{3pt}
+\ANote The nota $W_V\upapostrophe=\Bra{\varphi\in V\apostrophe:\varphi=\varphi\circ\iota}=U^0$ is not well-defined \Sbra{without a bss}.\parNot
+Simply becs $W_V\upapostrophe$ have no info about the given $U.$ Here is an informal explanation:\parNot
+Each liney map $T\in\Lm{V,W}$ that vanishes on a given nontrivial $U$ has its '$P$'\parNot
+\Par{ though not uniq } suth '$U\oplus P=V$' with $T:P\mapsto\range T$ being surj.\parNot
+Hence $\forall W\in\mathcal{S}_V U,\,U^0=W_{V}'.$ But given nontrivial '$P$', the corres '$U$' is not uniq.\parNot
+Fix one $W_V\upapostrophe,$ then $U^0$ is not uniq, with each $U_k$ not equal to each other while each $U_k^0=W_V\upapostrophe.$\par\vspace{3pt}
+\AExa Let $B_V=\Par{e_1,e_2}.$ Let $B_U=\Par{e_1},B_X=\Par{e_2-e_1},B_Y=\Par{e_2}.$\parExa
+Then $\iota_X:ae_1+b\Par{e_2-e_1}\mapsto b\Par{e_2-e_1},\;\;\iota_Y:ae_1+be_2\mapsto be_2.$ Now $X_V\upapostrophe=Y_V\upapostrophe=U^0.$\parExa
+(1) For $V=U\oplus X,$ let $B_{U_V'}=\Par{\varphi}$ with $\varphi:e_1\mapsto 1,\;e_2-e_1\mapsto 0\Rightarrow e_2\mapsto 1.$\parExa
+(2) For $V=U\oplus Y,$ let $B_{U_V'}=\Par{\psi}$ with $\psi:e_1\mapsto 1,e_2\mapsto 0.$\parExa
+Thus $X^0=U_V\upapostrophe$ while $Y^0=U_V\upapostrophe\Rightarrow X^0=Y^0\Rightarrow X=Y,$ ctradic.\parExa
+To fix this, we must have a bss of $V\apostrophe$ as precond, which we'll see in the {\NOTE} for Exa (31).\par\vspace{3pt}
+\ANote {\tgsl Supp $U$ is a subsp of $V.$ Then finding the corres subsp in $V\apostrophe$ firstly req another 'half' $W\in\mathcal{S}_V U,$}\vspace{-2pt}\parNot
+{\tgsl while finding the corres subsp of $V$ for a subsp of $V\apostrophe$ must have the another 'half' asumed as precond.}
 \SepLine
 
 \ProblemN{\hypertarget{3F31}{31}}{
-	\TextNL{Supp $U$ is a subsp of $V.$ \;Let $B_{U_V\upapostrophe}=\Par{\varphi_1,\dots,\varphi_n}.$ Show corres $B_U$ exis.}
-}Let each \uline{$\null\varphi_i\oplus\Span{u_i}=V$} with $\varphi_i\Par{u_i}=1.$\parSol{}
-Now $a_1u_1+\dots+a_nu_n=0\Rightarrow$ \uline{Each $a_i=\varphi_i\Par{a_1u_1+\dots+a_nu_n}=0,$ by def of dual bss.}\PfEnd\vspace{2pt}
-\AExa Cannot extend $B_U$ freely. Let $B_V=\Par{e_1,e_2-e_1}.$ Let corres  $B_{V\apostrophe}=\Par{\varphi_1,\varphi_2}.$\parExa
-Let $U_V\upapostrophe=\Span{\varphi_1}.$ Then extend to $B_U=\Par{e_1}$ to $B_V'=\Par{e_1,e_2}.$ Corres $B_{V\apostrophe}'\neq B_{V\apostrophe}.$
+	\TextNL{Supp $V$ is finide and $B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_n}.$ Show $\exists\,!\,B_V$ whose dual bss is the $B_{V\apostrophe}$.}
+}For each $k\in\Bra{1,\dots,n},$ let $\Gamma_k=\Bra{1,\dots,n}\Backslash[\Big]\Bra{k}.$ Let each $U_k=\bigcap_{j\in\Gamma}\null\varphi_j.$\parSol{}
+By Exe (4E 23), $V\apostrophe=\Span{\varphi_1,\dots,\varphi_n}=\BigPar{\null\varphi_1\cap\cdots\cap\null\varphi_n}{^0}\Rightarrow U_k\cap\varphi_k=\zeroSubs.$\parSol{}
+Thus $\forall x_k\in U_k\nonzero,\;x_k\not\in\null\varphi_k$ while $x_k\in\null\varphi_j$ for all $j\in\Gamma.$\parSol{}
+Fix one $x_k$ and let $v_k=\Sbra{\varphi_k\Par{x_k}}{^{-1}}x_k\Rightarrow\varphi_k\Par{v_k}=1,\,\varphi_j\Par{v_k}=0$ for all $j\neq k.$\parSol{}
+Simply for each $v_k,$ \,$\varphi_j\Par{v_k}=\delta_{j,k}$ for all $j\Longleftrightarrow$ for each $\varphi_j,$ $\varphi_j\Par{v_k}=\delta_{j,k}$ for all $k.$\parSol{}
+又 $a_1v_1+\dots+a_nv_n=0\Rightarrow$ each $\varphi_k\Par{0}=a_k.$\vspace{2pt}\parSol{}
+Now we prove the uniqnes part. Supp the dual bss of $B_V'=\Par{u_1,\dots,u_n}$ is the $B_{V\apostrophe}.$\parSol{}
+For each $k,$ we have $\varphi_j\Par{v_k}=\varphi_j\Par{u_k}$ for all $k\Rightarrow v_k-u_k\in\bigcap\null\varphi_j=\zeroSubs.$\PfEnd
+\SepLine
+
+\BulletPointX\NoteForSmall{Exe (31)}\;\;Supp $V$ is finide, and $\Omega$ is a subsp of $V\apostrophe$ with $B_{\Omega}=\Par{\varphi_1,\dots,\varphi_m}.$\TextB{}
+The '$W$' is not clear when we are to find suth $W_V\apostrophe=\Omega,$ becs the another 'half' is undefined.\TextB{}
+Extend to $B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_n}.$ By Exe (31), $\exists\,!\,$corres $B_V=\Par{v_1,\dots,v_n}.$\TextB{}
+Let $B_U=\Par{v_{m+1},\dots,v_n},B_W=\Par{v_1,\dots,v_m}.$ \,Thus we found the $W$ suth $\Omega=W_V\upapostrophe,$\TextB{}
+which is well-defined with $B_V$ as precond.
 \SepLine
 }
 %\def\OrbikenII
 {
 \BulletPointX\TipsN{2}\,\,\,Supp $\varphi_1,\dots,\varphi_m\in V\apostrophe.$ Let $\null_I=\Par{\null\varphi_1}\cap\dots\cap\Par{\null\varphi_m}.$\TextB{}
 \IndentTipsN{2}Supp $\Omega$ is a subsp of $V\apostrophe.$ Let $\null_C=\Bra{v\in V:\varphi\Par{v}=0,\forall\varphi\in\Omega}.$\TextB{}
-\IndentTipsN{2}If $\Omega=\Span{\varphi_1,\dots,\varphi_m}.$ Then $\null_I=\null_C.$\TextB{}
-\IndentTipsN{2}Becs $v\in\null_I\Longleftrightarrow$ each $\varphi_i\Par{v}=0\Longleftrightarrow\forall\varphi\in\Omega,\varphi_i\Par{v}=0\Longleftrightarrow v\in\null_C.$\TextB{}
-\AComm If $\Omega$ is infinide. Then $\null_I=\bigcap_{\varphi\,\in\,\Omega}\null\varphi=\null_C.$
-\SepLine
+(1) If $\Omega$ is infinide. Then $\bigcap_{\varphi\,\in\,\Omega}\null\varphi=\null_C.$ \;(2) If $\Omega=\Span{\varphi_1,\dots,\varphi_m}.$ Then $\null_I=\null_C.$\TextB{}
+(1) By def. \;(2) Becs $v\in\null_I\Longleftrightarrow$ each $\varphi_k\Par{v}=0\Longleftrightarrow\forall\varphi=\sum_{i=1}^na_i\varphi_i\in\Omega,\varphi\Par{v}=0\Longleftrightarrow v\in\null_C.$
+\SepLine\pagebreak
 
 \ProblemB{
 	\TipsN{3}\,\,\,\TextB{Let $\Omega=\Span{\varphi_1,\dots,\varphi_m}\subseteq V\apostrophe.$ Prove {\tgnr\large(a)} $\Omega=\BigPar{\null_I}{^0};\;$ {\tgnr\large(b)} $\Omega=\BigPar{\null_C}{^0}.$}
@@ -2632,9 +2660,9 @@ Thus $\Omega=\Span{\varphi_1}+\dots+\Span{\varphi_m}=\BigPar{\null\varphi_1}{^0}
 %Thus $V=\Theta\oplus\null_C\oplus\Span{w}=\Delta\oplus\null_C\oplus\Span{v}.$ Now we show $\psi\in\Omega.$\par\quad
 %\PfEnd\vspace{6pt}
 
-\BulletPointX\NoteForSmall{Exe (26)}\;\;For every subsp $\Omega$ of $V\apostrophe,\;\exists\,!\,$subsp $U$ of $V$ suth $\Omega=U^0.$
+\BulletPointX\NoteForSmall{Exe (26)}\;\;Supp $V$ is finide. For every subsp $\Omega$ of $V\apostrophe,\;\exists\,!\,$subsp $U$ of $V$ suth $\Omega=U^0.$
 \SepLine
-\pagebreak
+
 \ProblemN{24}{
 	\TextNL{Supp $V$ is finide and $U$ is a subsp of $V$.}
 	\TextNL{Prove, using the pattern of [3.104], that $\dim U+\dim U^0=\dim V$.}
@@ -2730,9 +2758,11 @@ $\psi\Par{v}=\psi\XPar{\sum_{i=1}^n a_i v_i}=\sum_{i=1}^n a_i\psi\Par{v_i}=\sum_
 	(c) \TextNL{Conclude that $\pi\apostrophe$ is iso from $\Par{V\XSlash U}\apostrophe$ onto $U^0$\hspace{1pt}$:${\tgnr\FontNorm\;\;Immed.}}
 }\Or Using (3.E.18), also see (3.E.20).\par\quad
 (a) $\pi\apostrophe\Par{\varphi}=0\Longleftrightarrow\forall v\in V\,\BigPar{\,\forall v+U\in V\,},\varphi\BigPar{\pi\Par{v}}=\varphi\Par{v+U}=0\Longleftrightarrow \varphi=0.$\par\quad
-(b) $\psi\in\range\pi\apostrophe\Longleftrightarrow\exists\,\varphi\in \Par{V\XSlash U}\apostrophe,\psi=\varphi\,\circ\,\pi\Longleftrightarrow\null\psi\supseteq U\Longleftrightarrow \psi\in U^0$. Hence $\range\pi\apostrophe=U^0$. \PfEnd \vspace{-2pt}
-\SepLine[-2pt]
+(b) $\psi\in\range\pi\apostrophe\Longleftrightarrow\exists\,\varphi\in \Par{V\XSlash U}\apostrophe,\psi=\varphi\,\circ\,\pi\Longleftrightarrow\null\psi\supseteq U\Longleftrightarrow \psi\in U^0$. Hence $\range\pi\apostrophe=U^0$.\PfEnd
+\SepLine
+
 \pagebreak
+
 \ProblemB{
 	\TextB{Supp $U$ is a subsp of $V.$ Prove $\Par{V\XSlash U}\apostrophe$ is iso to $U^0.$ \hfill\Sbra[3pt]{{\large\tgsc Another proof of \tgbfx[3.106]}}}
 }\par\quad
