@@ -500,7 +500,7 @@ Hence $m\geqslant\dim\Span[\BigPar]{v_1+w,\dots,v_m+w}\geq m-1.$\PfEnd
 \ProblemBnoor{\hypertarget{2C4e16}{4E 16}}{
 	\TextB{Supp $V$ is finide, $U$ is a subsp of $V$ with $U\neq V$. Let $n=\dim V,m=\dim U$.}
 	\TextB{Prove $\exists\,\Par{n-m}$ subsps  $U_1,\dots,U_{n-m}$, each of dim $\Par{n-1}$, suth $\bigcap\limits_{i=1}^{n-m}U_i=U$.}
-}Let $B_U=\Par{v_1,\dots,v_m},\;B_V=\BigPar{v_1,\dots,v_m,u_1,\dots,v_{n-m}}$.\parSol{}
+}Let $B_U=\Par{v_1,\dots,v_m},\;B_V=\BigPar{v_1,\dots,v_m,u_1,\dots,u_{n-m}}$.\parSol{}
 Define $U_i=\Span[\BigPar]{v_1,\dots,v_m,u_1,\dots,u_{i-1},u_{i+1},\dots,u_{n-m}}$ for each $i$. Then $U\subseteq U_i$ for each $i.$\vspace{4pt}\parSol{}
 And becs $\forall v\in \bigcap\limits_{i=1}^{n-m}U_i,v=v_0+b_1 u_1+\dots+b_{n-m} u_{n-m}\in U_i\Rightarrow$ each $b_i=0\Rightarrow v\in U.$\vspace{-4pt}\parSol{}
 Hence $\bigcap\limits_{i=1}^{n-m}U_i\subseteq U.$\PfEnd
@@ -1530,9 +1530,9 @@ $P\Rightarrow Q:$\,\;Becs $\dim S_c=\dim S_r=1.$\vspace{4pt}\par\quad
 	\TipsN{1}\,\,\,\TextB{Supp $T\in\Lm{V,W},\;B_V=\Par{v_1,\dots,v_n},B_W=\Par{w_1,\dots,w_m}.$\vspace{-1pt}}
 	\IndentTipsN{1}{\tgsl Let $L=\BigPar{Tv_{\alpha_1},\dots,Tv_{\alpha_k}},\;L_{\mathcal{M}}=\BigPar{A_{\cdot,\alpha_1},\cdots,A_{\cdot,\alpha_k}},$ where each $\alpha_i\in\Bra{1,\dots,n}.$}\TextB{\vspace{1pt}}
 	\IndentTipsN{1}(a) \TextB{Show [P] $L$ is liney indep $\Longleftrightarrow L_{\mathcal{M}}$ is liney indep. [Q]\vspace{2pt}}
-	\IndentTipsN{1}(b) \TextB{Show [P] $\Spn L=W\Longleftrightarrow\Spn L_{\mathcal{M}}=\Fbb^{m,1}.$ [Q]\hfill\FontNorm\Sbra{ Let $A=\Mt{T,B_V,B_W}.$\hspace{1pt}}}
-}\par\quad
-(a) Note that $\mathcal{M}\!:\,Tv_k\rightarrow A_{\cdot,k}$ is iso of $W$ onto $\Fbb^{m,1}.$ \quad (b) Reduce $L$ to $B_W',$ and $L_{\mathcal{M}}$ to $B_{\Fbb^{m,1}}.$ Simlr.\PfEnd\vspace{4pt}\quad
+	\IndentTipsN{1}(b) \TextB{Show [P] $\Spn L=W\Longleftrightarrow\Spn L_{\mathcal{M}}=\Fbb^{m,1}.$ [Q]\hfill\FontNorm\Sbra{ Let $A=\Mt{T,B_V,B_W}.$\hspace{1pt}}\vspace{3pt}}
+}(a) Note that $\mathcal{M}\!:\,Tv_k\rightarrow A_{\cdot,k}$ is iso. of $\Spn L$ onto $\Spn L_{\mathcal{M}}.$ By (3.B.9).\parSol{}
+(b) Reduce to liney indep lists. By (a) and (2.39).\PfEnd\vspace{4pt}\quad
 \Or\;$c_1Tv_{\alpha_1}+\dots+c_kTv_{\alpha_k}=c_1\BigPar{A_{1,{\alpha_1}}w_1+\dots+A_{m,{\alpha_1}}w_m}+\dots+c_k\BigPar{A_{1,{\alpha_k}}w_1+\dots+A_{m,{\alpha_k}}w_m}$\par\vspace{2pt}\quad
 \Blind{\Or\;}$\Blind{c_1Tv_{\alpha_1}+\dots+c_kTv_{\alpha_k}}=\BigPar{c_1A_{1,{\alpha_1}}+\dots+c_kA_{1,{\alpha_k}}}w_1+\dots+\BigPar{c_1A_{m,{\alpha_1}}+\dots+c_kA_{m,{\alpha_k}}}w_m.$\par\vspace{4pt}\quad
 \Blind{\Or\;}And \;$c_1A_{\cdot,{\alpha_1}}+\dots+c_kA_{\cdot,{\alpha_k}}=c_1{\normalsize\begin{pmatrix}A_{1,{\alpha_1}}\\[-4pt]\vdots\\[-10pt]A_{m,{\alpha_1}}\end{pmatrix}}+\dots+c_k{\normalsize\begin{pmatrix}A_{1,{\alpha_k}}\\[-4pt]\vdots\\[-10pt]A_{m,{\alpha_k}}\end{pmatrix}}{}={}\normalsize\begin{pmatrix}c_1 A_{1,{\alpha_1}}+\dots+c_kA_{1,{\alpha_k}}\\[-4pt]\vdots\\[-4pt]c_1A_{m,{\alpha_1}}+\dots+c_kA_{m,{\alpha_k}}\end{pmatrix}$.\par\vspace{6pt}\quad
@@ -1565,7 +1565,7 @@ And (b*) $T$ is surj $\Longleftrightarrow\Spn L=W\Longleftrightarrow\Spn L_{\mat
 \AComm If $T$ is inv. Then by (a*, c) or (b*, d), we have another proof of \COROLLARY.\parNot\IndentComment
 \hypertarget{3F32}{\Or }If $m=n.$ Then by [3.118] and one of (a*, b*, c, d). Yet another proof.\parNot
 (c) $T$ surj $\Longleftrightarrow T\apostrophe$ inje $\Longleftrightarrow\BigPar{T\apostrophe\Par{\psi_1},\dots,T\apostrophe\Par{\psi_m}}$ liney indep\parNot\Hc
-\Blind{$T$ surj }$\xLongleftrightarrow{\text{(a)}}{\envFontLarge\BigPar{{\envFontDefault\Par{A^t}{_{\cdot,1}},\cdots,\Par{A^t}{_{\cdot,m}}}}}$ liney indep in $\Fbb^{n,1},$ so is $\BigPar{A_{1,\cdot},\cdots,A_{m,\cdot}}$ in $\Fbb^{1,n}.$\vspace{6pt}\parNot
+\Blind{$T$ surj }$\xLongleftrightarrow{\text{(a)}}{\envFontLarge\BigPar{{\envFontDefault\Par{A^t}{_{\cdot,1}},\cdots,\Par{A^t}{_{\cdot,m}}}}}$ liney indep in $\Fbb^{n,1},$ so is $\BigPar{A_{1,\cdot},\cdots,A_{m,\cdot}}$ in $\Fbb^{1,n}.$\vspace{4pt}\parNot
 (d) $T$ inje $\Longleftrightarrow T\apostrophe$ surj $\Longleftrightarrow V\apostrophe=\Span[\BigPar]{T\apostrophe\Par{\psi_1},\dots,T\apostrophe\Par{\psi_m}}$\parNot\Hd
 \Blind{$T$ inje }$\xLongleftrightarrow{\text{(b)}}\Fbb^{n,1}=\Span[\envFontLarge\BigPar]{{\envFontDefault\Par{A^t}{_{\cdot,1}},\cdots,\Par{A^t}{_{\cdot,m}}}}\Longleftrightarrow\Fbb^{1,n}=\Span[\envFontLarge\BigPar]{A_{1,\cdot},\cdots,A_{m,\cdot}}.$
 \SepLine
@@ -2473,10 +2473,10 @@ Inje: Each $f\Par{x_k}=0\Rightarrow f+U=0.$ \;Let $S=T\circ\pi\Rightarrow\tilde{
 \ChDecl{Ch3F}{3$\cdot$F}{}\orMode{\hLk{3F4}{4}\;\;\hLk{3F5}{5}\;\;\hLk{3F6}{6}\;\;\hLk{3F7}{7}\;\;\hLk{3F8}{8}\;\;\hLk{3F9}{9}\;\;\hLk{3F12}{12}\;\;\hLk{3F13}{13}\;\;\hLk{3F15}{15}\;\;\hLk{3F16}{16}\;\;\hLk{3F17}{17}\;\;\hLk{3F18}{18}\;\;\hLk{3F19}{19}\;\;\hLk{3F20}{20}\;\;\hLk{3F21}{21}\;\;\hLk{3F22}{22}\;\;\hLk{3F23}{23}\;\;\hLk{3F24}{24}\;\;\hLk{3F25}{25}\;\;\hLk{3F26}{26}\;\;$\\[-4pt]$\hLk{3F28}{28}\;\;\hLk{3F29}{29}\;\;\hLk{3F30}{30}\;\;\hLk{3F31}{31}\;\;\hLk{3F32}{32}\;\;\hLk{3F33}{33}\;\;\hLk{3F34}{34}\;\;\hLk{3F35}{35}\;\;\hLk{3F36}{36}\;\;\hLk{3F37}{37}\;\;\mmid\;\;\hLk{3F4e5}{4E:\;\;5}\;\;\hLk{3F4e6}{6}\;\;\hLk{3F4e8}{8}\;\;\hLk{3F4e17}{17}\;\;\hLk{3F4e23}{23}\;\;\hLk{3F4e24}{24}\;\;\hLk{3F4e25}{25}}[-40pt]{[1]: 20, 21; [2]: 22, 23, (4E 23), 30; [3]: 31, 25, 26; [4]: 28, 29, 9, 13; [5]: 24, 37, 4, 17, 18, 19;$\\$[6]: 36, (4E 17), 15, 12; [7]: 16, (4E 6), 5; [8]: 32, 33, (4E 8), (4E 5); [9]: 6, (4E 25); [10]: 35, 7, 8, 34.}
 \vspace{4pt}
 
-%\BulletPointX\NoteForSmall{(3.B.29) and [3.96]}\;\;For any $\varphi\in V\apostrophe.$ Let $\null\varphi\oplus\Span{u}=V.$\TextB{}
-%Extend $u$ to $B_V=\Par{v,u_1,\dots,u_n}.$ Then there might be some $u_k\not\in\null\varphi.$\parCom
-%For $B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_{n+1}}\Rightarrow B_V=\Par{v_1,\dots,v_{n+1}}.$
-%\SepLine
+\BulletPointX\NoteForSmall{Exe (1)}\;\;Every liney functional is either surj or is a zero map.\TextB{}
+Which means, for $\varphi\in V\apostrophe,$ $\varphi=0\Longleftrightarrow\dim\Span{\varphi}=0\Longleftrightarrow\dim\range\varphi=0.$\TextB{}
+And $\varphi\neq 0\Longleftrightarrow\dim\Span{\varphi}=1\Longleftrightarrow\dim\range\varphi=1.$ Thus $\dim\Span{\varphi}=\dim\range\varphi.$
+\SepLine
 
 %\def\OrbikenI
 {
@@ -2508,12 +2508,12 @@ Then let $\Span{v}\oplus U\oplus X=V.$ $\exists\,\psi\in V\apostrophe,\null\psi=
 \AComm $W\subseteq X=\Bra{v\in V:\varphi\Par{v}=0,\forall\varphi\in W^0},$ the {\tgsc promotion} of the subset $W$ of $V.$\parCom
 The promotion of every nonempty subset of $V$ is a subsp of $V.$\parCom
 Now we show $\Spn W=X.$ $\forall w\in\Spn W,$
-\SepLine
+\SepLine\pagebreak
 
 \ProblemB{
 	\TextB{Supp $U,W$ are subsps of $V.$ Prove the promotion of $U\cup W$ is $U+W.$}
-}$\Par{U\cup W}{^0}=\BigPar{\varphi\in V\apostrophe:\varphi\Par{u}=\varphi\Par{w}=\varphi\Par{u+w}=0,\forall u\in U,w\in W}=\Par{U+W}{^0}.$\PfEnd
-\SepLine\pagebreak
+}$\Par{U\cup W}{^0}=\Bra{\varphi\in V\apostrophe:\varphi\Par{u}=\varphi\Par{w}=\varphi\Par{u+w}=0,\forall u\in U,w\in W}=\Par{U+W}{^0}.$\PfEnd
+\SepLine
 
 \ProblemN{\hypertarget{3F20}{20}}{
 	\TextNL{Supp $U,W$ are nonempty subsets of $V$. Prove $U\subseteq W\Rightarrow W^0\subseteq U^0.$}
@@ -2632,23 +2632,42 @@ which is well-defined with $B_V$ as precond.
 %\def\OrbikenII
 {
 \BulletPointX\TipsN{2}\,\,\,Supp $\varphi_1,\dots,\varphi_m\in V\apostrophe.$ Let $\null_I=\Par{\null\varphi_1}\cap\dots\cap\Par{\null\varphi_m}.$\TextB{}
-\IndentTipsN{2}Supp $\Omega$ is a subsp of $V\apostrophe.$ Let $\null_C=\Bra{v\in V:\varphi\Par{v}=0,\forall\varphi\in\Omega}.$\TextB{}
-(1) If $\Omega$ is infinide. Then $\bigcap_{\varphi\,\in\,\Omega}\null\varphi=\null_C.$ \;(2) If $\Omega=\Span{\varphi_1,\dots,\varphi_m}.$ Then $\null_I=\null_C.$\TextB{}
-(1) By def. \;(2) Becs $v\in\null_I\Longleftrightarrow$ each $\varphi_k\Par{v}=0\Longleftrightarrow\forall\varphi=\sum_{i=1}^na_i\varphi_i\in\Omega,\varphi\Par{v}=0\Longleftrightarrow v\in\null_C.$
+\IndentTipsN{2}Supp $\Omega$ is a subsp of $V\apostrophe.$ Let $\null_C=\Bra{v\in V:\varphi\Par{v}=0,\forall\varphi\in\Omega}.$\TextB{\vspace{2pt}}
+(1) If $\Omega$ is infinide. Then by def, $\bigcap_{\varphi\,\in\,\Omega}\null\varphi=\null_C.$\TextB{\vspace{1pt}}
+(2) If $\Omega=\Span{\varphi_1,\dots,\varphi_m}.$ Then $v\in\null_I\Longleftrightarrow$ each $\varphi_k\Par{v}=0$\TextB{}
+\Blind{(2) If $\Omega=\Span{\varphi_1,\dots,\varphi_m}.$ Then $v\in\null_I$}${}\Longleftrightarrow\forall\varphi=\sum_{i=1}^na_i\varphi_i\in\Omega,\varphi\Par{v}=0\Longleftrightarrow v\in\null_C.$
 \SepLine\pagebreak
 
-\ProblemB{
-	\TipsN{3}\,\,\,\TextB{Let $\Omega=\Span{\varphi_1,\dots,\varphi_m}\subseteq V\apostrophe.$ Prove {\tgnr\large(a)} $\Omega=\BigPar{\null_I}{^0};\;$ {\tgnr\large(b)} $\Omega=\BigPar{\null_C}{^0}.$}
-}{\normalsize\hfill Here (a) is {\FontSmall\Sbra{\hypertarget{3F4e23}{4E 23}}}, (b) is Exe \hypertarget{3F26}{(26)}.}\par\quad
-(a) For each $\varphi_k=0,$ $\Span{\varphi_k}=\zeroSubs=\BigPar{\null\varphi_k}{^0}.$\par\quad\Ha
-For each $\varphi_k\neq 0.$ Using (3.B.29) and {\TIPSN{1}}. Let $\varphi\Par{v_k}\neq 0\Rightarrow\null\varphi_k\oplus\Span{v_k}=V.$\par\quad\Ha
-Then $\BigPar{\null\varphi_k}{^0}=\BigPar{\Span{v_k}}{_V\upapostrophe}=\Bra{\varphi\in V\apostrophe:\varphi=\varphi\circ\iota}=\Span{\varphi_k},$ where $\iota:cv_k+u_0\rightarrow cv_k.$\par\quad\Ha
-Thus $\Omega=\Span{\varphi_1}+\dots+\Span{\varphi_m}=\BigPar{\null\varphi_1}{^0}+\dots+\BigPar{\null\varphi_m}{^0}$\par\quad\Ha
-\Blind{Thus $\Omega=\Span{\varphi_1}+\dots+\Span{\varphi_m}$}${}=\BigPar{\Par{\null \varphi_1}\cap\dots\cap\Par{\null \varphi_m}}{^0}=\BigPar{\null_I}{^0}.$\PfEnd\vspace{4pt}\quad\Ha
-\Or $\Dim\Par{\null\varphi}{^0}={}$\uline{$\dim\range\varphi=\dim\Span{\varphi}$}. 又 $\Span{\varphi}\subseteq\Par{\null\varphi}{^0}.$ \Or By Exe (26).\PfEnd\vspace{4pt}\quad\Ha
-\Or $c\in\nonzeroFbb\Longleftrightarrow\null\Par{c\varphi_i}=\null\varphi_i\Longleftrightarrow{c\varphi_i}\in\BigPar{\null\Par{c\varphi_i}}{^0}=\Par{\null\varphi_i}{^0}.$\par\quad\Ha
-\Blind{\Or}And $0\in\Span{\varphi_i},0\in\Par{\null\varphi_i}{^0}.$ Hence $\Span{\varphi_i}=\Par{\null\varphi_i}{^0}.$\PfEnd\vspace{4pt}\quad
-(b) $\forall\varphi\in\Omega,\null_C\subseteq\null\varphi\Rightarrow\varphi\in\BigPar{\null_C}{^0}.$ Hence $\Omega=\BigPar{\null_I}{^0}\subseteq\BigPar{\null_C}{^0}.$ \;\Or By {\TIPSN{2}}.\PfEnd
+\ProblemBnoor{4E 23}{
+	\TextB{Supp $V$ is finide, $\Omega=\Span{\varphi_1,\dots,\varphi_m}\subseteq V\apostrophe.$ Prove $\Omega=\BigPar{\null\varphi_1\cap\cdots\cap\null\varphi_m}{^0}.$}
+}Becs each $\Span{\varphi_k}\subseteq\Par{\null\varphi_k}{^0}.$ By {\NOTEFOR} Exe (4E 23) and Exe (23), Immed.\PfEnd\parSol{\vspace{4pt}}
+\Or Reduce to $B_{\Omega}=\Par{\beta_1,\dots,\beta_p}.$ We show $\Omega=\Par{\null\beta_1\cap\cdots\cap\null\beta_p}{^0}.$ Then by (L1), done.\parSol{}
+Let $B_{V\apostrophe}=\Par{\beta_1,\dots,\beta_p,\gamma_1,\dots,\gamma_q}.$ By Exe (31), let $B_V=\Par{v_1,\dots,v_p,u_1,\dots,u_q}.$\parSol{}
+Define each $\Gamma_k=\Bra{1,\dots,p}\Backslash[\Big]\Bra{k}.$ Then $\null\beta_k=\Spn\Bra{v_j}{_{j\in\Gamma_k}}\oplus\Span{u_1,\dots,u_q}.$\parSol{}
+Now $\null\beta_1\cap\cdots\cap\null\beta_p=\Span{u_1,\dots,u_q}.$ Simlr to (4E 2.C.16).\parSol{}
+\SepLine
+
+\ProblemN{L1}{
+	\TextLN{Supp each $\varphi_i,\beta_j\in\Lm{V,W}.$ Supp $\Span{\varphi_1,\dots,\varphi_m}=\Span{\beta_1,\dots,\beta_n}.$}
+	\TextLN{Prove $\null\varphi_1\cap\dots\cap\null\varphi_m=\null\beta_1\cap\dots\cap\null\beta_n.$\vspace{2pt}}
+}Denote $\null\psi_a\cap\cdots\cap\null\psi_b$ by $\bigcap_a^b\null\psi_I.$ \;Supp $n<m,$ othws rev the roles.\parSol{}
+Supp $\varphi_j=c_1\varphi_1+\dots+c_{j-1}\varphi_{j-1}.$\parSol{\vspace{2pt}}
+Let $N_j\oplus\bigcap_1^{j-1}\null\varphi_I=\null\varphi_j.$ Now $\bigcap_1^j\null\varphi_I=\bigcap_1^{j-1}\null\varphi_I\cap\BigPar{\null\varphi_j}=\bigcap_1^{j-1}\null\varphi_I.$\parSol{\vspace{2pt}}
+Thus $\bigcap_1^m\null\varphi_I=\Sbra{\bigcap_1^{j-1}\null\varphi_I}\cap\Sbra{\bigcap_{j+1}^m\null\varphi_I}.$ \;Hence $\bigcap_1^n\null\beta_I=\bigcap_{1}^m\null\varphi_I.$
+\SepLine
+
+%For each $\varphi_k=0,$ $\Span{\varphi_k}=\zeroSubs=\BigPar{\null\varphi_k}{^0}.$\par\quad\Ha
+%For each $\varphi_k\neq 0.$ Using (3.B.29) and {\TIPSN{1}}. Let $\varphi\Par{v_k}\neq 0\Rightarrow\null\varphi_k\oplus\Span{v_k}=V.$\par\quad\Ha
+%Then $\BigPar{\null\varphi_k}{^0}=\BigPar{\Span{v_k}}{_V\upapostrophe}=\Bra{\varphi\in V\apostrophe:\varphi=\varphi\circ\iota}=\Span{\varphi_k},$ where $\iota:cv_k+u_0\rightarrow cv_k.$\par\quad\Ha
+%Thus $\Omega=\Span{\varphi_1}+\dots+\Span{\varphi_m}=\BigPar{\null\varphi_1}{^0}+\dots+\BigPar{\null\varphi_m}{^0}$\par\quad\Ha
+%\Blind{Thus $\Omega=\Span{\varphi_1}+\dots+\Span{\varphi_m}$}${}=\BigPar{\Par{\null \varphi_1}\cap\dots\cap\Par{\null \varphi_m}}{^0}=\BigPar{\null_I}{^0}.$\PfEnd\vspace{4pt}\quad\Ha
+
+\ProblemN{\hypertarget{3F26}{26}}{
+	\TextB{Supp $V$ is finide, $\Omega$ is a subsp of $V\apostrophe.$ Prove $\Omega=\Bra{v\in V:\varphi\Par{v}=0\text{ for every }\varphi\in\Omega}{^0}.$}
+}Let $B_{\Omega}=\Par{\varphi_1,\dots,\varphi_m}.$ By {\TIPSN{2}} and Exe (4E 23).\PfEnd
+\AComm This Exe may not be true if $V$ is infinide.\par
+\ACoro Supp $V$ is finide. For every subsp $\Omega$ of $V\apostrophe,\;\exists\,!\,$subsp $U$ of $V$ suth $\Omega=U^0.$\vspace{-2pt}\parCor
+{\FontSmall\tgsl This form of $\Omega$ does not depend on a bss and thus is considered more general.}\vspace{-2pt}\par
 \SepLine
 
 %For nota convienence of understanding, let $\null_C=\Bra{v\in V:\varphi\Par{v}=0,\forall\varphi\in\Omega}.$\par\quad
@@ -2660,13 +2679,14 @@ Thus $\Omega=\Span{\varphi_1}+\dots+\Span{\varphi_m}=\BigPar{\null\varphi_1}{^0}
 %Thus $V=\Theta\oplus\null_C\oplus\Span{w}=\Delta\oplus\null_C\oplus\Span{v}.$ Now we show $\psi\in\Omega.$\par\quad
 %\PfEnd\vspace{6pt}
 
-\BulletPointX\NoteForSmall{Exe (26)}\;\;Supp $V$ is finide. For every subsp $\Omega$ of $V\apostrophe,\;\exists\,!\,$subsp $U$ of $V$ suth $\Omega=U^0.$
-\SepLine
 
 \ProblemN{24}{
 	\TextNL{Supp $V$ is finide and $U$ is a subsp of $V$.}
 	\TextNL{Prove, using the pattern of [3.104], that $\dim U+\dim U^0=\dim V$.}
-}Let $B_{U^0}=\Par{\varphi_1,\dots,\varphi_m},B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_m,\dots,\varphi_n}.$ Let $B_{W^0}=\Par{\varphi_{m+1},\dots,\varphi_n}.$\parSol{}
+}Let $B_U=\Par{u_1,\dots,u_m},B_V=\Par{u_1,\dots,u_m,v_1,\dots,v_n},B_{V\apostrophe}=\Par{\psi_1,\dots,\psi_m,\varphi_1,\dots,\dots\varphi_n}.$\parSol{}
+Supp $\psi=\sum_{i=1}^ma_i\psi_i+\sum_{j=1}^nb_j\varphi_j\in U^0\Rightarrow$ each $\psi\Par{u_k}=a_k=0.$ Thus $U^0\subseteq\Span{\varphi_1,\dots,\varphi_n}.$\PfEnd\parSol{\vspace{4pt}}
+Let $B_{U^0}=\Par{\varphi_1,\dots,\varphi_m},B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_n}\Rightarrow B_V=\Par{v_1,\dots,v_n}.$\parSol{}
+We show $B_U=\Par{v_{m+1},\dots,v_n}.$ Let $B_{W^0}=\Par{\varphi_{m+1},\dots,\varphi_n}.$\parSol{}
 And let corres (I) $B_U=\Par{v_{m+1},\dots,v_n},$ \; (II) $B_W=\Par{v_1,\dots,v_m}.$\parSol{}
 %$V\apostrophe=\Span{\varphi_1,\dots,\varphi_m}\oplus\Span{\varphi_{m+1},\dots,\varphi_n}=\Span{v_{m+1},\dots,v_n}{^0}\oplus\Span{v_1,\dots,v_m}{^0}.$\par\quad
 %$\Span{\varphi_1,\dots,\varphi_m}=\Span{v_{m+1},\dots,v_n}{^0}=U{^0};\;\Span{\varphi_{m+1},\dots,\varphi_n}=\Span{v_1,\dots,v_m}{^0}=W^0.$\parSol{}
@@ -2682,23 +2702,23 @@ By \Sbra{1.C \TIPSN{2}} \OR (2.C.1), $\Span{\varphi_{m+1},\dots,\varphi_n}=\Span
 \Or Simlr to (II), let $\Omega=\Span{\varphi_{m+1},\dots,\varphi_n},$ immed.\PfEnd
 \SepLine
 
-\ProblemB{
-	\TextB{Supp $T\in\Lm{V,W},\varphi_k\in V\apostrophe,\psi_k\in W\apostrophe.$}
-	\ProblemN[]{}{}
-	\ProblemN[]{\hypertarget{3F28}{28}}{
-		\TextNL{Prove $\null T\apostrophe=\Span{\psi_1,\dots,\psi_m}\Longleftrightarrow\range T=\Par{\null\psi_1}\cap\cdots\cap\Par{\null\psi_m}.$}}
-	\ProblemN[]{\hypertarget{3F29}{29}}{
-		\TextNL{Prove $\range T\apostrophe=\Span{\varphi_1,\dots,\varphi_m}\Longleftrightarrow\null T=\Par{\null\varphi_1}\cap\cdots\cap\Par{\null\varphi_m}.$}}
-	\TextB{\vspace{-4pt}}
-}Using [3.107], [3.109], Exe (23) and the {\COROLLARY} in Exe (20, 21).\par\quad
-(28) $\Par{\range T}{^0}=\null T\apostrophe=\Span{\psi_1,\dots,\psi_m}=\BigPar{\Par{\null\psi_1}\cap\cdots\cap\Par{\null\psi_m}}{^0}.$\par\quad
-(29) $\Par{\null T}{^0}=\range T\apostrophe=\Span{\varphi_1,\dots,\varphi_m}=\BigPar{\Par{\null\varphi_1}\cap\cdots\cap\Par{\null\varphi_m}}{^0}.$\PfEnd\vspace{6pt}
-\Corollary\,\,\,Using the \COMMENT in Exe (26).\par\quad
-$\null T=\Span{v_1,\dots,v_m}\Longleftrightarrow\null T=\Par{\null\varphi_{m+1}}\cap\cdots\cap\Par{\null\varphi_n}\Longleftrightarrow\range T\apostrophe=\Span{\varphi_{m+1},\dots,\varphi_n}.$\par\quad
-——Where $B_V=\Par{v_1,\dots,v_m,\dots,v_n}\Longleftrightarrow B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_m,\dots,\varphi_n}.$\vspace{3pt}\par\quad
-$\range T=\Span{w_1,\dots,w_m}\Longleftrightarrow\range T=\Par{\null\psi_{m+1}}\cap\cdots\cap\Par{\null\psi_n}\Longleftrightarrow\null T\apostrophe=\Span{\psi_{m+1},\dots,\psi_n}.$\par\quad
-——Where $B_W=\Par{w_1,\dots,w_m,\dots,w_n}\Longleftrightarrow B_{W\apostrophe}=\Par{\psi_1,\dots,\psi_m,\dots,\psi_n}.$\par
-\SepLine
+%\ProblemB{
+%	\TextB{Supp $T\in\Lm{V,W},\varphi_k\in V\apostrophe,\psi_k\in W\apostrophe.$}
+%	\ProblemN[]{}{}
+%	\ProblemN[]{\hypertarget{3F28}{28}}{
+%		\TextNL{Prove $\null T\apostrophe=\Span{\psi_1,\dots,\psi_m}\Longleftrightarrow\range T=\Par{\null\psi_1}\cap\cdots\cap\Par{\null\psi_m}.$}}
+%	\ProblemN[]{\hypertarget{3F29}{29}}{
+%		\TextNL{Prove $\range T\apostrophe=\Span{\varphi_1,\dots,\varphi_m}\Longleftrightarrow\null T=\Par{\null\varphi_1}\cap\cdots\cap\Par{\null\varphi_m}.$}}
+%	\TextB{\vspace{-4pt}}
+%}Using [3.107], [3.109], Exe (23) and the {\COROLLARY} in Exe (20, 21).\par\quad
+%(28) $\Par{\range T}{^0}=\null T\apostrophe=\Span{\psi_1,\dots,\psi_m}=\BigPar{\Par{\null\psi_1}\cap\cdots\cap\Par{\null\psi_m}}{^0}.$\par\quad
+%(29) $\Par{\null T}{^0}=\range T\apostrophe=\Span{\varphi_1,\dots,\varphi_m}=\BigPar{\Par{\null\varphi_1}\cap\cdots\cap\Par{\null\varphi_m}}{^0}.$\PfEnd\vspace{6pt}
+%\Corollary\,\,\,Using the \COMMENT in Exe (26).\par\quad
+%$\null T=\Span{v_1,\dots,v_m}\Longleftrightarrow\null T=\Par{\null\varphi_{m+1}}\cap\cdots\cap\Par{\null\varphi_n}\Longleftrightarrow\range T\apostrophe=\Span{\varphi_{m+1},\dots,\varphi_n}.$\par\quad
+%——Where $B_V=\Par{v_1,\dots,v_m,\dots,v_n}\Longleftrightarrow B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_m,\dots,\varphi_n}.$\vspace{3pt}\par\quad
+%$\range T=\Span{w_1,\dots,w_m}\Longleftrightarrow\range T=\Par{\null\psi_{m+1}}\cap\cdots\cap\Par{\null\psi_n}\Longleftrightarrow\null T\apostrophe=\Span{\psi_{m+1},\dots,\psi_n}.$\par\quad
+%——Where $B_W=\Par{w_1,\dots,w_m,\dots,w_n}\Longleftrightarrow B_{W\apostrophe}=\Par{\psi_1,\dots,\psi_m,\dots,\psi_n}.$\par
+%\SepLine
 }
 \pagebreak
 %\def\OrbikenIII
@@ -2881,12 +2901,13 @@ $\forall k\in\Bra{1,\dots,m},\Sbra{T\apostrophe\Par{\psi_k}}\Par{v}=\psi_k\BigPa
 
 %\def\OrbikenVIII
 {
+\newcommand{\dualVn}[1]{V_{\!#1\;\,}\upapostrophe}
+\def\dualVm{V_{\!m\,}\upapostrophe}
 \ProblemN[]{\hypertarget{3F5}{5}}{
-	\TextN{Prove $\Par{V_{\!1}\times\dots\times V_{\!m}}\apostrophe$ and $V\apostrophe_1 \times\dots\times V\apostrophe_m$ are iso.\hfill\Sbra[3pt]{{\large\tgnr Using notas in (3.E.2).}}}\vspace{4pt}
-}
-$\MathRightBrace{l}{$
-	Define $\varphi:\,\Par{V_{\!1}\times\dots\times V_{\!m}}\apostrophe\rightarrow V\apostrophe_1\times\dots\times V\apostrophe_m\\\qquad$ by $\varphi\Par{T}=\Par{T\circ R_1,\dots,T\circ R_m}=\Par{R\apostrophe_1\Par{T},\dots,R\apostrophe_m\Par{T}}.\\$
-	Define $\psi: V\apostrophe_1\times\dots\times V\apostrophe_m\rightarrow \Par{V_{\!1}\times\dots\times V_{\!m}}\apostrophe \\\qquad$ by $\psi\Par{T_1,\dots,T_m}=T_1S_1+\dots+T_mS_m=S\apostrophe_1\Par{T_1}+\dots+S\apostrophe_m\Par{T_m}.$
+	\TextN{Prove $\BigPar{V_{\!1}\times\dots\times V_{\!m}}\apostrophe$ and $\dualVn{1}\times\dots\times\dualVm$ are iso.\hfill\Sbra[3pt]{{\large\tgnr Using notas in (3.E.2).}}}\vspace{4pt}
+}\:$\MathRightBrace{l}{$
+	Define $\varphi:\Par{V_{\!1}\times\dots\times V_{\!m}}\apostrophe\rightarrow \dualVn{1}\times\dots\times \dualVm\\\qquad$ by $\varphi\Par{T}=\Par{T\circ R_1,\dots,T\circ R_m}=\Par{R\apostrophe_1\Par{T},\dots,R\apostrophe_m\Par{T}}.\\$
+	Define $\psi:\dualVn{1}\times\dots\times \dualVm\rightarrow\Par{V_{\!1}\times\dots\times V_{\!m}}\apostrophe\\\qquad$ by $\psi\Par{T_1,\dots,T_m}=T_1S_1+\dots+T_mS_m=S\apostrophe_1\Par{T_1}+\dots+S\apostrophe_m\Par{T_m}.$
 	$}\Rightarrow\psi=\varphi^{-1}.$\PfEnd
 \SepLine
 
