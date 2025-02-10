@@ -2983,7 +2983,7 @@ Define $\Phi:\Fbb^m\rightarrow\Par{\Fbb^m}\apostrophe$ by $\Phi=\Psi\circ\Gamma.
 \NOTICE that $\forall p\in\PoRi,\exists\,!\,c_i\in\Fbb,m=\deg p,\;p\Par{z}=c_0+c_1z+\dots+c_{m}z^{m}\in\PoF{m}.$\vspace{1pt}\parSol{}
 Inje: $\theta\Par{\varphi}=0\Rightarrow\forall p\in\PoFi{},\varphi\Par{p}=c_0\varphi\Par{1}+c_1\varphi\Par{z}+\dots+c_m\varphi\Par{z^m}=0.$\vspace{1pt}\parSol{}
 Surj: Define $\psi_x\Par{p}=x_0c_0+\dots+x_mc_m$ for any $x=\Par{x_0,x_1,\cdots}\in\Fbb^\infty.$ Now each $\psi\BigPar{z^k}=x_k.$\parSol{}
-\Blind{Surj:} $\forall p,q\in\PoFi{},$ supp $\deg p=m\geqslant n=\deg q,$ \Sbra{{\tgsl which is why we do not write $p+\lambda q.$}}\parSol{}
+\Blind{Surj:} $\forall p,q\in\PoFi{},$ supp $\deg p=m\geqslant n=\deg q,$ \Sbra{{\tgsl which is why we do not write $\Par{p+\lambda q}.$}}\parSol{}
 \Blind{Surj:} $\psi_x\Par{p+q}=x_0\Par{a_0+b_0}+x_n\Par{a_n+b_n}+x_{n+1}a_{n+1}+\dots+x_ma_m=\psi_x\Par{p}+\psi_x\Par{q}.$\PfEnd\vspace{4pt}
 \AComm $\PoFi$ is not iso to $\Fbb^\infty,$ so is $\PoFi$ to $\BigPar{\PoFi}\apostrophe.$ But $\PoFi$ is iso to $\Fbb^\Nbb,$ {\tgsl which the '$U$' in (3.E.14).}
 \SepLine
@@ -2994,13 +2994,10 @@ Surj: Define $\psi_x\Par{p}=x_0c_0+\dots+x_mc_m$ for any $x=\Par{x_0,x_1,\cdots}
 \ProblemN{\hypertarget{3F7}{7}}{
 	\TextN{Show the dual bss of $\Par{1, x,\dots,x^m}$ of $\PoR{m}$ is $\Par{\varphi_0,\varphi_1,\dots,\varphi_m}$, where {\FontNorm $\varphi_k\Par{p}=\Frac{p^{\SmallPar{k}}\Par{0}}{k!}$.}\vspace{-2pt}}
 	\TextN{{\FontNorm Here $p{^{\SmallPar{k}}}$ denotes the $k^{th}$ deri of $p$, with the understanding that the $0^{th}$ deri of $p$ is $p$.}\vspace{-2pt}}
-}\par\quad
-$\forall j,k\in\Nbb$, $\,\,\Par{x^{j}}{^{\SmallPar{k}}}=\left\{\begin{array}{l}j\Par{j-1}\dots\Par{j-k+1}\cdot x^{\SmallPar{j-k}}\,,\quad j \geq k.\\j\Par{j-1}\dots\Par{j-j+1}=j!\hfill j=k.\\0,\hfill j \leqslant k.\end{array}\right|$\;\; Then \,\,$\Par{x^{j}}{^{\SmallPar{k}}}\Par{0}=\MathLeftBrace{l}{0\,\,\,,\,\hspace{5.2pt}j\neq k. \\ k!\,\,,\hspace{6pt}j=k.}$\PfEnd\vspace{12pt}\quad
-\Or \;Becs $\forall j,k\in\Bra{1,\dots,m}$ suth $j\neq k,$ 
-$\varphi_k\BigPar{x^j}={}${\Large\envFontSmall[\footnotesize]$\frac{\Par[0pt]{x^j}{^{\SmallPar[0pt]{k}}}\Par[0pt]{0}}{k!}$}${}={}${\Large$\frac{\;0\;}{k!}$}${}=0;\;\varphi_k\BigPar{x^k}={}${\Large\envFontSmall[\footnotesize]$\frac{\Par[0pt]{x^k}{^{\SmallPar[0pt]{k}}}\Par[0pt]{0}}{k!}$}${}=1.$\par\quad
-Thus {\Large$\envFontSmall[\footnotesize]\frac{p^{\SmallPar[0pt]{k}}\Par[0pt]{0}}{k!}$} act exactly the same as $\varphi_k$ on the same bss $\Par{1,\dots,x^m},$ hence is just another def of $\varphi_k$.\PfEnd\vspace{8pt}
-\AExa\hypertarget{3F8}{}{\tgnr\FontNorm Supp $m\in\Nbp$. By [2.C.10], $B$ $=\BigPar{1,x-5,\dots,\Par{x-5}{^m}}$ is a bss of $\PoR{m}$.}\parExa
-{\tgnr\FontNorm Let $\varphi_k=\Frac{p^{\SmallPar{k}}\Par{5}}{k!}$ for each $k=0,1,\dots,m$. Then $\Par{\varphi_0,\varphi_1,\dots,\varphi_m}$ is the dual bss of $B$.}\par
+}{\tgsl The uniqnes of dual bss is guaranteed by [3.5].}\vspace{2pt}\par\quad
+For $j,k\in\Nbb,\:\Par{x^{j}}{^{\SmallPar{k}}}=\left\{\begin{array}{l}j\Par{j-1}\dots\Par{j-k+1}\cdot x^{\SmallPar{j-k}}\,,\quad j \geq k.\\j\Par{j-1}\dots\Par{j-j+1}=j!\hfill j=k.\\0,\hfill j \leqslant k.\end{array}\right|\hspace{4pt}\Rightarrow\Par{x^{j}}{^{\SmallPar{k}}}\Par{0}=\MathLeftBrace{l}{0\,\,\,,\,\hspace{5.2pt}j\neq k. \\ k!\,\,,\hspace{6pt}j=k.}$\PfEnd\vspace{8pt}
+%{\Large$\envFontSmall[\footnotesize]\frac{p^{\SmallPar[0pt]{k}}\Par[0pt]{0}}{k!}$}
+\AExa\hypertarget{3F8}{}By [2.C.10], $B_m=\BigPar{1,7x-5,\dots,\Par{7x-5}{^m}}$ is a bss of $\PoR{m}$. Let each $\varphi_k={}${\Large\envFontSmall[\footnotesize]$\frac{p^{\SmallPar{k}}\Par{5\text{\large/}\hspace{0.5pt}7}}{7\hspace{1pt}\cdot\,k!}$}.\par\vspace{2pt}
 \SepLine
 }
 
@@ -3013,8 +3010,8 @@ Thus {\Large$\envFontSmall[\footnotesize]\frac{p^{\SmallPar[0pt]{k}}\Par[0pt]{0}
 	(a) \TextNL{Show $\Lambda$ is a liney map from $V$ to $V\apostrophe\apostrophe$.\vspace{2pt}}
 	(b) \TextNL{Show if $T\in\Lm{V}$, then $T\apostrophe\apostrophe\circ\Lambda=\Lambda\circ T$, where $T\apostrophe\apostrophe=\Par{T\apostrophe}\apostrophe$.\vspace{2pt}}
 	(c) \TextNL{Show if $V$ is finide, then {\tgsc $\Lambda$ is iso from $V$ onto $V$\hspace{1pt}$\apostrophe\apostrophe$}.\vspace{2pt}}
-	\TextNL{\normalsize Supp $V$ is finide. Then $V$ and $V\apostrophe$ are iso, and finding iso from $V$ onto $V\apostrophe$ generally requires choosing\vspace{-2pt}}
-	\TextNL{\normalsize a bss of $V$. In contrast, the iso $\Lambda$ from $V$ onto $V\apostrophe\apostrophe$ does not require a choice of bss and thus is considered more natural.}
+	\TextNL{\normalsize Supp $V$ is finide. Then $V$ and $V\apostrophe$ are iso, and finding iso from $V$ onto $V\apostrophe$ generally req choosing\vspace{-3pt}}
+	\TextNL{\normalsize a bss of $V$. In contrast, the iso $\Lambda$ from $V$ onto $V\apostrophe\apostrophe$ does not req a choice of bss and thus is considered more natural.}
 }\par\quad
 (a) $\forall\varphi\in V\apostrophe,v,w\in V,a\in\Fbb,\BigPar{\Lambda\Par{v+a w}}\Par{\varphi}=\varphi\Par{v+aw}=\varphi\Par{v}+a\varphi\Par{w}=\Par{\Lambda v}\Par{\varphi}+a\Par{\Lambda w}\Par{\varphi}$.\par\quad\Ha
 Thus $\Lambda\Par{v+aw}=\Lambda v+a\Lambda w$. Hence $\Lambda$ is liney.\vspace{4pt}\par\quad
