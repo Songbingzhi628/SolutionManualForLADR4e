@@ -2605,7 +2605,7 @@ Then $\iota_X:ae_1+b\Par{e_2-e_1}\mapsto b\Par{e_2-e_1},\;\;\iota_Y:ae_1+be_2\ma
 (1) For $V=U\oplus X,$ let $B_{U_V'}=\Par{\varphi}$ with $\varphi:e_1\mapsto 1,\;e_2-e_1\mapsto 0\Rightarrow e_2\mapsto 1.$\parExa
 (2) For $V=U\oplus Y,$ let $B_{U_V'}=\Par{\psi}$ with $\psi:e_1\mapsto 1,e_2\mapsto 0.$\parExa
 Thus $X^0=U_V\upapostrophe$ while $Y^0=U_V\upapostrophe\Rightarrow X^0=Y^0\Rightarrow X=Y,$ ctradic.\parExa
-To fix this, we must have a bss of $V\apostrophe$ as precond, which we'll see in the {\NOTE} for Exa (31).\par\vspace{3pt}
+To fix this, we must have a bss of $V\apostrophe$ as precond, which we'll see in the {\NOTEFOR} Exa (31).\par\vspace{3pt}
 \ANote {\tgsl Supp $U$ is a subsp of $V.$ Then finding the corres subsp in $V\apostrophe$ firstly req another 'half' $W\in\mathcal{S}_V U,$}\vspace{-2pt}\parNot
 {\tgsl while finding the corres subsp of $V$ for a subsp of $V\apostrophe$ must have the another 'half' asumed as precond.}
 \SepLine
@@ -2645,14 +2645,17 @@ which is well-defined with $B_V$ as precond.
 Let $B_{V\apostrophe}=\Par{\beta_1,\dots,\beta_p,\gamma_1,\dots,\gamma_q}.$ By Exe (31), let $B_V=\Par{v_1,\dots,v_p,u_1,\dots,u_q}.$\parSol{}
 Define each $\Gamma_k=\Bra{1,\dots,p}\Backslash[\Big]\Bra{k}.$ Then $\null\beta_k=\Spn\Bra{v_j}{_{j\in\Gamma_k}}\oplus\Span{u_1,\dots,u_q}.$\parSol{}
 Now $\null\beta_1\cap\cdots\cap\null\beta_p=\Span{u_1,\dots,u_q}.$ Simlr to (4E 2.C.16).\parSol{}
+Supp $\varphi=\sum_{i=1}^pa_i\beta_i+\sum_{j=1}^qb_j\gamma_j\in\Span{u_1,\dots,u_q}{^0}.$ Then each $\varphi\Par{u_k}=0=b_k$\parSol{}
+Thus $\Span{u_1,\dots,u_q}{^0}\subseteq\Span{\beta_1,\dots,\beta_p}=\Omega.$\PfEnd
 \SepLine
 
 \ProblemN{L1}{
 	\TextLN{Supp each $\varphi_i,\beta_j\in\Lm{V,W}.$ Supp $\Span{\varphi_1,\dots,\varphi_m}=\Span{\beta_1,\dots,\beta_n}.$}
-	\TextLN{Prove $\null\varphi_1\cap\dots\cap\null\varphi_m=\null\beta_1\cap\dots\cap\null\beta_n.$\vspace{2pt}}
-}Denote $\null\psi_a\cap\cdots\cap\null\psi_b$ by $\bigcap_a^b\null\psi_I.$ \;Supp $n<m,$ othws rev the roles.\parSol{}
-Supp $\varphi_j=c_1\varphi_1+\dots+c_{j-1}\varphi_{j-1}.$\parSol{\vspace{2pt}}
-Let $N_j\oplus\bigcap_1^{j-1}\null\varphi_I=\null\varphi_j.$ Now $\bigcap_1^j\null\varphi_I=\bigcap_1^{j-1}\null\varphi_I\cap\BigPar{\null\varphi_j}=\bigcap_1^{j-1}\null\varphi_I.$\parSol{\vspace{2pt}}
+	\TextLN{Prove $\null\varphi_1\cap\dots\cap\null\varphi_m=\null\beta_1\cap\dots\cap\null\beta_n.$\vspace{1pt}}
+}Denote $\null\psi_a\cap\cdots\cap\null\psi_b$ by $\bigcap_a^b\null\psi_I.$ Becs each $\beta_k\in\Span{\varphi_1,\dots,\varphi_m}.$\parSol{}
+$\forall v\in\bigcap_1^m\null\varphi_I,\beta_k\Par{v}=0.$ Thus $\bigcap_1^m\null\varphi_I\subseteq\bigcap_1^n\null\beta_I.$ \;Rev the roles and done.\PfEnd\vspace{2pt}
+\ANote Supp $\varphi_j=c_1\varphi_1+\dots+c_{j-1}\varphi_{j-1}.$\parNot{\vspace{2pt}}
+Let $N_j\oplus\bigcap_1^{j-1}\null\varphi_I=\null\varphi_j.$ Now $\bigcap_1^j\null\varphi_I=\bigcap_1^{j-1}\null\varphi_I\cap\BigPar{\null\varphi_j}=\bigcap_1^{j-1}\null\varphi_I.$\parNot{\vspace{2pt}}
 Thus $\bigcap_1^m\null\varphi_I=\Sbra{\bigcap_1^{j-1}\null\varphi_I}\cap\Sbra{\bigcap_{j+1}^m\null\varphi_I}.$ \;Hence $\bigcap_1^n\null\beta_I=\bigcap_{1}^m\null\varphi_I.$
 \SepLine
 
@@ -2664,8 +2667,11 @@ Thus $\bigcap_1^m\null\varphi_I=\Sbra{\bigcap_1^{j-1}\null\varphi_I}\cap\Sbra{\b
 
 \ProblemN{\hypertarget{3F26}{26}}{
 	\TextB{Supp $V$ is finide, $\Omega$ is a subsp of $V\apostrophe.$ Prove $\Omega=\Bra{v\in V:\varphi\Par{v}=0\text{ for every }\varphi\in\Omega}{^0}.$}
-}Let $B_{\Omega}=\Par{\varphi_1,\dots,\varphi_m}.$ By {\TIPSN{2}} and Exe (4E 23).\PfEnd
-\AComm This Exe may not be true if $V$ is infinide.\par
+}Let $B_{\Omega}=\Par{\varphi_1,\dots,\varphi_m}.$ By {\TIPSN{2}} and Exe (4E 23).\PfEnd\vspace{1pt}
+\AExa Denote $\Bra{v\in V:\varphi\Par{v}=0\text{ for every }\varphi\in\Omega}$ by $\Omega_{\perp}.$ Then immed, $\Omega\subseteq\Par{\Omega_{\perp}}{^0}.$\parExa
+Let $V=\Bra{\Par{x_1,x_2,\cdots}\in\Fbb^{\infty}:x_k\neq 0\text{ for only finily many }k}.$ Then $V\apostrophe=\Par{\Fbb^{\infty}}\apostrophe.$\parExa
+Let $\Omega=\Bra[\envFontA]{\varphi\in\Span{\varphi_{\alpha_1},\dots,\varphi_{\alpha_m}}:\exists\:m,\alpha_k\in\Nbp}\subsetneq V\apostrophe.$\parExa
+Then $\Omega_{\perp}=\zeroSubs\Rightarrow\Par{\Omega_{\perp}}{^0}=V\apostrophe.$ Forming a counterexa for $\Omega\supseteq\Par{\Omega_{\perp}}{^0}.$\par\vspace{2pt}
 \ACoro Supp $V$ is finide. For every subsp $\Omega$ of $V\apostrophe,\;\exists\,!\,$subsp $U$ of $V$ suth $\Omega=U^0.$\vspace{-2pt}\parCor
 {\FontSmall\tgsl This form of $\Omega$ does not depend on a bss and thus is considered more general.}\vspace{-2pt}\par
 \SepLine
@@ -2680,26 +2686,27 @@ Thus $\bigcap_1^m\null\varphi_I=\Sbra{\bigcap_1^{j-1}\null\varphi_I}\cap\Sbra{\b
 %\PfEnd\vspace{6pt}
 
 
-\ProblemN{24}{
-	\TextNL{Supp $V$ is finide and $U$ is a subsp of $V$.}
-	\TextNL{Prove, using the pattern of [3.104], that $\dim U+\dim U^0=\dim V$.}
-}Let $B_U=\Par{u_1,\dots,u_m},B_V=\Par{u_1,\dots,u_m,v_1,\dots,v_n},B_{V\apostrophe}=\Par{\psi_1,\dots,\psi_m,\varphi_1,\dots,\dots\varphi_n}.$\parSol{}
-Supp $\psi=\sum_{i=1}^ma_i\psi_i+\sum_{j=1}^nb_j\varphi_j\in U^0\Rightarrow$ each $\psi\Par{u_k}=a_k=0.$ Thus $U^0\subseteq\Span{\varphi_1,\dots,\varphi_n}.$\PfEnd\parSol{\vspace{4pt}}
-Let $B_{U^0}=\Par{\varphi_1,\dots,\varphi_m},B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_n}\Rightarrow B_V=\Par{v_1,\dots,v_n}.$\parSol{}
-We show $B_U=\Par{v_{m+1},\dots,v_n}.$ Let $B_{W^0}=\Par{\varphi_{m+1},\dots,\varphi_n}.$\parSol{}
-And let corres (I) $B_U=\Par{v_{m+1},\dots,v_n},$ \; (II) $B_W=\Par{v_1,\dots,v_m}.$\parSol{}
-%$V\apostrophe=\Span{\varphi_1,\dots,\varphi_m}\oplus\Span{\varphi_{m+1},\dots,\varphi_n}=\Span{v_{m+1},\dots,v_n}{^0}\oplus\Span{v_1,\dots,v_m}{^0}.$\par\quad
-%$\Span{\varphi_1,\dots,\varphi_m}=\Span{v_{m+1},\dots,v_n}{^0}=U{^0};\;\Span{\varphi_{m+1},\dots,\varphi_n}=\Span{v_1,\dots,v_m}{^0}=W^0.$\parSol{}
-(I)
-%Supp for each $\varphi_k,$ let $\mathcal{K}_k$ be suth $V=\mathcal{K}_k\oplus\null\varphi_k.$ By (3.B.29), this $\mathcal{K}_k$ can be $\Span{v_k}.$\parSol{\HI}
-%Then ${\mathcal{K}_1}+\dots+{\mathcal{K}_k}=\Span{v_1,\dots,v_k}.$\parSol{\HI}
-\NOTICE that each $\null\varphi_k=\Span{v_1,\dots,v_{k-1},v_{k+1},\dots,v_n}=U_k;\;\dim U_k=\dim V-1.$\parSol{\HI}
-By (4E 2.C.16), $U=\Par{\null\varphi_1}\cap\cdots\cap\Par{\null\varphi_m}=\bigcap_{k=1}^m U_k=\Span{v_{m+1},\dots,v_n}.$\parSol{\HI}
-Hence $\Span{v_{m+1},\dots,v_n}{^0}=U^0=\Omega=\Span{\varphi_1,\dots,\varphi_m}.$\vspace{4pt}\parSol{\EndI}
-(II) \NOTICE that $V\apostrophe=\Omega\oplus\Span{\varphi_{m+1},\dots,\varphi_n}=U^0\oplus\Span{v_1,\dots,v_m}{^0}.$\parSol{\HII}
-And that $\Span{\varphi_{m+1},\dots,\varphi_n}\subseteq\Span{v_1,\dots,v_m}{^0}.$\parSol{\HII}
-By \Sbra{1.C \TIPSN{2}} \OR (2.C.1), $\Span{\varphi_{m+1},\dots,\varphi_n}=\Span{v_1,\dots,v_m}{^0}.$\parSol{\HII}
-\Or Simlr to (II), let $\Omega=\Span{\varphi_{m+1},\dots,\varphi_n},$ immed.\PfEnd
+%\ProblemN{24}{
+%	\TextNL{Supp $V$ is finide and $U$ is a subsp of $V$.}
+%	\TextNL{Prove, using the pattern of [3.104], that $\dim U+\dim U^0=\dim V$.}
+%}Let $B_U=\Par{u_1,\dots,u_m},B_V=\Par{u_1,\dots,u_m,v_1,\dots,v_n},B_{V\apostrophe}=\Par{\psi_1,\dots,\psi_m,\varphi_1,\dots,\dots\varphi_n}.$\parSol{}
+%Supp $\psi=\sum_{i=1}^ma_i\psi_i+\sum_{j=1}^nb_j\varphi_j\in U^0\Rightarrow$ each $\psi\Par{u_k}=a_k=0.$ Thus $U^0\subseteq\Span{\varphi_1,\dots,\varphi_n}.$\PfEnd
+%\SepLine
+
+\BulletPointX\TipsN{3}\,\,\,Let $B_{U^0}=\Par{\varphi_1,\dots,\varphi_m},B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_n}\Rightarrow B_V=\Par{v_1,\dots,v_n}.$\TextB{}
+We show $B_U=\Par{v_{m+1},\dots,v_n}.$ Let $B_{W^0}=\Par{\varphi_{m+1},\dots,\varphi_n}.$\TextB{}
+And let corres (I) $B_U=\Par{v_{m+1},\dots,v_n},$ \; (II) $B_W=\Par{v_1,\dots,v_m}.$\TextB{}
+%$V\apostrophe=\Span{\varphi_1,\dots,\varphi_m}\oplus\Span{\varphi_{m+1},\dots,\varphi_n}=\Span{v_{m+1},\dots,v_n}{^0}\oplus\Span{v_1,\dots,v_m}{^0}.$\TextB{}
+%$\Span{\varphi_1,\dots,\varphi_m}=\Span{v_{m+1},\dots,v_n}{^0}=U{^0};\;\Span{\varphi_{m+1},\dots,\varphi_n}=\Span{v_1,\dots,v_m}{^0}=W^0.$\TextB{}
+%Supp for each $\varphi_k,$ let $\mathcal{K}_k$ be suth $V=\mathcal{K}_k\oplus\null\varphi_k.$ By (3.B.29), this $\mathcal{K}_k$ can be $\Span{v_k}.$\TextB{}\HI
+%Then ${\mathcal{K}_1}+\dots+{\mathcal{K}_k}=\Span{v_1,\dots,v_k}.$\TextB{}\HI
+(I) \NOTICE that each $\null\varphi_k=\Span{v_1,\dots,v_{k-1},v_{k+1},\dots,v_n}=U_k;\;\dim U_k=\dim V-1.$\TextB{}
+\HI By (4E 2.C.16), $U=\Par{\null\varphi_1}\cap\cdots\cap\Par{\null\varphi_m}=\bigcap_{k=1}^m U_k=\Span{v_{m+1},\dots,v_n}.$\TextB{}
+\HI Hence $\Span{v_{m+1},\dots,v_n}{^0}=U^0=\Omega=\Span{\varphi_1,\dots,\varphi_m}.$\vspace{2pt}\TextB{}
+\EndI (II) \NOTICE that $V\apostrophe=\Omega\oplus\Span{\varphi_{m+1},\dots,\varphi_n}=U^0\oplus\Span{v_1,\dots,v_m}{^0}.$\TextB{}
+\HII And that $\Span{\varphi_{m+1},\dots,\varphi_n}\subseteq\Span{v_1,\dots,v_m}{^0}.$\TextB{}
+\HII By \Sbra{1.C \TIPSN{2}} \OR (2.C.1), $\Span{\varphi_{m+1},\dots,\varphi_n}=\Span{v_1,\dots,v_m}{^0}.$\TextB{}
+\HII \Or Simlr to (II), let $\Omega=\Span{\varphi_{m+1},\dots,\varphi_n},$ immed.\PfEnd
 \SepLine
 
 %\ProblemB{
