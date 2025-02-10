@@ -2274,7 +2274,7 @@ $\Blind{A}\in v_k+\Span{v_1-v_k,\dots,v_m-v_k}.$\PfEnd
 \SepLine\pagebreak
 
 \ProblemN{\hypertarget{3E14}{14}}{
-	\TextNL{Supp $U=\Bra{\Par{x_1,x_2,\cdots}\in\Fbb^{\infty}:x_k\neq 0\text{\;for\;only\;finily\;many}\;k}$.\vspace{2pt}}
+	\TextNL{Supp $U=\Bra{\Par{x_1,x_2,\cdots}\in\Fbb^{\infty}:x_k\neq 0\text{\;for\;only\;finily\;many}\;k}.$\quad\FontSmall Denote it by $\Fbb^\Nbb.$\vspace{2pt}}
 	(a) \TextNL{Show $U$ is a subsp of $\Fbb^{\infty}$. {\FontNorm\Sbra{Do it in your mind}} \;\; {\tgnr\large(b)} Prove $\Fbb^{\infty}\XSlash[-3pt]U$ is infinide.}
 }For ease of nota, denote the $p^\text{th}$ term of $u=\Par{x_1,\cdots,x_p,\cdots}\in\Fbb^{\infty}$ by $u\Sbra{p}$.\vspace{2pt}\par\quad
 For each $r\in\Nbp,$ let $\;e_r\Sbra{k}=\hMath[0pt]{l}{\left\{}{\right|}{1\,,\;\Par{k-1}\equiv 0\,\BigPar{\text{mod}\,r}\\0\,,\;\text{othws}}$ \;simply \,$e_r=\BigPar{1,\underbrace{0,\cdots,0}_{\SmallPar{r-1}},1,\underbrace{0,\cdots,0}_{\SmallPar{r-1}},1,\cdots}.$\vspace{6pt}\par\quad
@@ -2631,11 +2631,11 @@ which is well-defined with $B_V$ as precond.
 }
 %\def\OrbikenII
 {
-\BulletPointX\TipsN{2}\,\,\,Supp $\varphi_1,\dots,\varphi_m\in V\apostrophe.$ Let $\null_I=\Par{\null\varphi_1}\cap\dots\cap\Par{\null\varphi_m}.$\TextB{}
-\IndentTipsN{2}Supp $\Omega$ is a subsp of $V\apostrophe.$ Let $\null_C=\Bra{v\in V:\varphi\Par{v}=0,\forall\varphi\in\Omega}.$\TextB{\vspace{2pt}}
-(1) If $\Omega$ is infinide. Then by def, $\bigcap_{\varphi\,\in\,\Omega}\null\varphi=\null_C.$\TextB{\vspace{1pt}}
-(2) If $\Omega=\Span{\varphi_1,\dots,\varphi_m}.$ Then $v\in\null_I\Longleftrightarrow$ each $\varphi_k\Par{v}=0$\TextB{}
-\Blind{(2) If $\Omega=\Span{\varphi_1,\dots,\varphi_m}.$ Then $v\in\null_I$}${}\Longleftrightarrow\forall\varphi=\sum_{i=1}^na_i\varphi_i\in\Omega,\varphi\Par{v}=0\Longleftrightarrow v\in\null_C.$
+\BulletPointX\TipsN{2}\,\,\,Supp $\varphi_1,\dots,\varphi_m\in V\apostrophe.$ Denote $\null\psi_a\cap\cdots\cap\null\varphi_b$ by $\bigcap_a^b\null\varphi_I.$\TextB{}
+\IndentTipsN{2}Supp $\Omega$ is a subsp of $V\apostrophe.$ Denote $\Bra{v\in V:\varphi\Par{v}=0,\forall\varphi\in\Omega}$ by $C^0\,\Omega.$\TextB{\vspace{2pt}}
+(1) If $\Omega$ is infinide. Then by def, $\bigcap_{\in\,\Omega}\null\varphi=C^0\,\Omega.$\TextB{\vspace{1pt}}
+(2) If $\Omega=\Span{\varphi_1,\dots,\varphi_m}.$ Then $v\in\bigcap_1^m\null\varphi_I\Longleftrightarrow$ each $\varphi_k\Par{v}=0$\TextB{}
+\Blind{(2) If $\Omega=\Span{\varphi_1,\dots,\varphi_m}.$ Then $v\in\bigcap_1^m\null\varphi_I$}${}\Longleftrightarrow\forall\varphi=\sum_{i=1}^na_i\varphi_i\in\Omega,\varphi\Par{v}=0\Longleftrightarrow v\in C^0\,\Omega.$
 \SepLine\pagebreak
 
 \ProblemBnoor{4E 23}{
@@ -2652,39 +2652,35 @@ Thus $\Span{u_1,\dots,u_q}{^0}\subseteq\Span{\beta_1,\dots,\beta_p}=\Omega.$\PfE
 \ProblemN{L1}{
 	\TextLN{Supp each $\varphi_i,\beta_j\in\Lm{V,W}.$ Supp $\Span{\varphi_1,\dots,\varphi_m}=\Span{\beta_1,\dots,\beta_n}.$}
 	\TextLN{Prove $\null\varphi_1\cap\dots\cap\null\varphi_m=\null\beta_1\cap\dots\cap\null\beta_n.$\vspace{1pt}}
-}Denote $\null\psi_a\cap\cdots\cap\null\psi_b$ by $\bigcap_a^b\null\psi_I.$ Becs each $\beta_k\in\Span{\varphi_1,\dots,\varphi_m}.$\parSol{}
+}Becs each $\beta_k\in\Span{\varphi_1,\dots,\varphi_m}.$\parSol{}
 $\forall v\in\bigcap_1^m\null\varphi_I,\beta_k\Par{v}=0.$ Thus $\bigcap_1^m\null\varphi_I\subseteq\bigcap_1^n\null\beta_I.$ \;Rev the roles and done.\PfEnd\vspace{2pt}
 \ANote Supp $\varphi_j=c_1\varphi_1+\dots+c_{j-1}\varphi_{j-1}.$\parNot{\vspace{2pt}}
 Let $N_j\oplus\bigcap_1^{j-1}\null\varphi_I=\null\varphi_j.$ Now $\bigcap_1^j\null\varphi_I=\bigcap_1^{j-1}\null\varphi_I\cap\BigPar{\null\varphi_j}=\bigcap_1^{j-1}\null\varphi_I.$\parNot{\vspace{2pt}}
 Thus $\bigcap_1^m\null\varphi_I=\Sbra{\bigcap_1^{j-1}\null\varphi_I}\cap\Sbra{\bigcap_{j+1}^m\null\varphi_I}.$ \;Hence $\bigcap_1^n\null\beta_I=\bigcap_{1}^m\null\varphi_I.$
 \SepLine
 
-%For each $\varphi_k=0,$ $\Span{\varphi_k}=\zeroSubs=\BigPar{\null\varphi_k}{^0}.$\par\quad\Ha
-%For each $\varphi_k\neq 0.$ Using (3.B.29) and {\TIPSN{1}}. Let $\varphi\Par{v_k}\neq 0\Rightarrow\null\varphi_k\oplus\Span{v_k}=V.$\par\quad\Ha
-%Then $\BigPar{\null\varphi_k}{^0}=\BigPar{\Span{v_k}}{_V\upapostrophe}=\Bra{\varphi\in V\apostrophe:\varphi=\varphi\circ\iota}=\Span{\varphi_k},$ where $\iota:cv_k+u_0\rightarrow cv_k.$\par\quad\Ha
-%Thus $\Omega=\Span{\varphi_1}+\dots+\Span{\varphi_m}=\BigPar{\null\varphi_1}{^0}+\dots+\BigPar{\null\varphi_m}{^0}$\par\quad\Ha
-%\Blind{Thus $\Omega=\Span{\varphi_1}+\dots+\Span{\varphi_m}$}${}=\BigPar{\Par{\null \varphi_1}\cap\dots\cap\Par{\null \varphi_m}}{^0}=\BigPar{\null_I}{^0}.$\PfEnd\vspace{4pt}\quad\Ha
-
 \ProblemN{\hypertarget{3F26}{26}}{
-	\TextB{Supp $V$ is finide, $\Omega$ is a subsp of $V\apostrophe.$ Prove $\Omega=\Bra{v\in V:\varphi\Par{v}=0\text{ for every }\varphi\in\Omega}{^0}.$}
+	\TextB{Supp $V$ is finide, $\Omega$ is a subsp of $V\apostrophe.$ Prove $\Omega=\BigPar{C^0\,\Omega}{^0}.$}
 }Let $B_{\Omega}=\Par{\varphi_1,\dots,\varphi_m}.$ By {\TIPSN{2}} and Exe (4E 23).\PfEnd\vspace{1pt}
-\AExa Denote $\Bra{v\in V:\varphi\Par{v}=0\text{ for every }\varphi\in\Omega}$ by $\Omega_{\perp}.$ Then immed, $\Omega\subseteq\Par{\Omega_{\perp}}{^0}.$\parExa
+\AExa Immed, $\Omega\subseteq\Par{C^0\,\Omega}{^0}.$ Now we give a counterexa for $\Omega\supseteq\Par{C^0\,\Omega}{^0}.$\parExa
 Let $V=\Bra{\Par{x_1,x_2,\cdots}\in\Fbb^{\infty}:x_k\neq 0\text{ for only finily many }k}.$ Then $V\apostrophe=\Par{\Fbb^{\infty}}\apostrophe.$\parExa
-Let $\Omega=\Bra[\envFontA]{\varphi\in\Span{\varphi_{\alpha_1},\dots,\varphi_{\alpha_m}}:\exists\:m,\alpha_k\in\Nbp}\subsetneq V\apostrophe.$\parExa
-Then $\Omega_{\perp}=\zeroSubs\Rightarrow\Par{\Omega_{\perp}}{^0}=V\apostrophe.$ Forming a counterexa for $\Omega\supseteq\Par{\Omega_{\perp}}{^0}.$\par\vspace{2pt}
-\ACoro Supp $V$ is finide. For every subsp $\Omega$ of $V\apostrophe,\;\exists\,!\,$subsp $U$ of $V$ suth $\Omega=U^0.$\vspace{-2pt}\parCor
-{\FontSmall\tgsl This form of $\Omega$ does not depend on a bss and thus is considered more general.}\vspace{-2pt}\par
+Let $\Omega=\Bra[\envFontA]{\varphi\in\Span{\varphi_{\alpha_1},\dots,\varphi_{\alpha_m}}:\exists\:m,\alpha_k\in\Nbp}\subsetneq V\apostrophe.$ Then $C^0\,\Omega=\zeroSubs\Rightarrow\Par{C^0\,\Omega}{^0}=V\apostrophe.$\par\vspace{2pt}
+\ACoro (1) $C^0\,\Span{\varphi_1,\dots,\varphi_m}=\null\varphi_1\cap\cdots\cap\null\varphi_m.$\parCor
+(2) Supp $V$ is finide. For every subsp $\Omega$ of $V\apostrophe,\;\exists\,!\,$subsp $U$ of $V$ suth $\Omega=U^0.$\vspace{-2pt}\parCor
+\Blind{(2)} {\FontSmall\tgsl This form of $\Omega$ does not depend on a bss and thus is considered more general.}\vspace{-2pt}\par
 \SepLine
 
-%For nota convienence of understanding, let $\null_C=\Bra{v\in V:\varphi\Par{v}=0,\forall\varphi\in\Omega}.$\par\quad
-%又 $\null_C=\Bra{v\in V:\varphi\Par{v}=0,\forall\varphi\in\BigPar{\null_C}{^0}}.$\par\quad
-%$\forall\varphi\in\Omega,\null_C\subseteq\null\varphi\Rightarrow\varphi\in\BigPar{\null_C}{^0}.$ Hence $\Omega\subseteq\BigPar{\null_C}{^0}.$\par\quad
-%Asum $\Omega\subsetneq\BigPar{\null_C}{^0}.$ Supp $\psi\in\BigPar{\null_C}{^0}\Backslash\Omega.$\par\quad
-%Let $\null\psi\oplus\Span{w}=V.$ Then supp $\varphi\in\Omega\nonzero\subseteq\BigPar{\null_C}{^0}.$\par\quad
-%Let $\null\varphi\oplus\Span{v}=V.$ Then let $\Theta\oplus\null_C=\null\psi,\;\Delta\oplus\null_C=\null\varphi.$\par\quad
-%Thus $V=\Theta\oplus\null_C\oplus\Span{w}=\Delta\oplus\null_C\oplus\Span{v}.$ Now we show $\psi\in\Omega.$\par\quad
-%\PfEnd\vspace{6pt}
+\ProblemB{
+	\TextB{Supp $\Span{\varphi_1,\dots,\varphi_m}\subseteq V\apostrophe.$ Let each $U_k\oplus\null\varphi_k=V.$}
+	\TextB{Prove or give a counterexa\hspace{1pt}$:$ $\Par{U_1+\dots+U_m}\oplus\BigPar{\null\varphi_1\cap\cdots\cap\null\varphi_m}=V.$}
+}Let $V=\Rbb^2.$ Define $\varphi_1=\varphi_2:\Par{x,y}\mapsto x.$ Let $B_{U_1}=\Par{e_1},B_{U_2}=\Par{e_1+e_2}\Rightarrow U_1+U_2=V.$\parSol{}
+\Or Let $B_{V\apostrophe}=\Par{\varphi_1,\varphi_2}$ be corres to the std bss. Let $B_{U_1}=B_{U_2}=\Par{e_1+e_2}\Rightarrow U_1+U_2\subsetneq V.$\PfEnd
+\SepLine
 
+\ProblemB{
+	\TextB{}
+}\PfEnd
+\SepLine
 
 %\ProblemN{24}{
 %	\TextNL{Supp $V$ is finide and $U$ is a subsp of $V$.}
@@ -2693,6 +2689,7 @@ Then $\Omega_{\perp}=\zeroSubs\Rightarrow\Par{\Omega_{\perp}}{^0}=V\apostrophe.$
 %Supp $\psi=\sum_{i=1}^ma_i\psi_i+\sum_{j=1}^nb_j\varphi_j\in U^0\Rightarrow$ each $\psi\Par{u_k}=a_k=0.$ Thus $U^0\subseteq\Span{\varphi_1,\dots,\varphi_n}.$\PfEnd
 %\SepLine
 
+\pagebreak
 \BulletPointX\TipsN{3}\,\,\,Let $B_{U^0}=\Par{\varphi_1,\dots,\varphi_m},B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_n}\Rightarrow B_V=\Par{v_1,\dots,v_n}.$\TextB{}
 We show $B_U=\Par{v_{m+1},\dots,v_n}.$ Let $B_{W^0}=\Par{\varphi_{m+1},\dots,\varphi_n}.$\TextB{}
 And let corres (I) $B_U=\Par{v_{m+1},\dots,v_n},$ \; (II) $B_W=\Par{v_1,\dots,v_m}.$\TextB{}
@@ -2732,10 +2729,8 @@ And let corres (I) $B_U=\Par{v_{m+1},\dots,v_n},$ \; (II) $B_W=\Par{v_1,\dots,v_
 {
 \ProblemN{\hypertarget{3F9}{9}}{
 	\TextN{Let $B_V=\Par{v_1,\dots,v_n},\,B_{V\apostrophe}=\Par{\varphi_1,\cdots,\varphi_n}$. Then $\forall\psi\in V\apostrophe,\psi=\psi\Par{v_1}\varphi_1+\dots+\psi\Par{v_n}\varphi_n.$}
-	\ACoro {\tgsl For other $B_V'=\Par{u_1,\dots,u_n},B_{V\apostrophe}'=\Par{\rho_1,\dots,\rho_n},\forall\psi\in V\apostrophe,\psi=\psi\Par{u_1}\rho_1+\dots+\psi\Par{u_n}\rho_n.$}\TextB{}
-}\par\quad
-$\psi\Par{v}=\psi\XPar{\sum_{i=1}^n a_i v_i}=\sum_{i=1}^n a_i\psi\Par{v_i}=\sum_{i=1}^n\psi\Par{v_{i}}\varphi_i\Par{v}=\Sbra{\psi\Par{v_1}\varphi_1+\dots+\psi\Par{v_n}\varphi_n}\Par{v}.$\vspace{2pt}\par\quad
-\Or $\Sbra{\psi\Par{v_1}\varphi_1+\dots+\psi\Par{v_n}\varphi_n}\XPar{\sum_{i=1}^n a_i v_i}=\psi\Par{v_1}\varphi_1\XPar{\sum_{i=1}^n a_i v_i}+\dots+\psi\Par{v_n}\varphi_n\XPar{\sum_{i=1}^n a_i v_i}.$\PfEnd
+	\ANote {\tgsl For other $B_V'=\Par{u_1,\dots,u_n},B_{V\apostrophe}'=\Par{\rho_1,\dots,\rho_n},\forall\psi\in V\apostrophe,\psi=\psi\Par{u_1}\rho_1+\dots+\psi\Par{u_n}\rho_n.$}\TextB{}\vspace{2pt}
+}$\psi\Par{v}=\psi\XPar{\sum_{i=1}^n a_i v_i}=\sum_{i=1}^n a_i\psi\Par{v_i}=\sum_{i=1}^n\psi\Par{v_{i}}\varphi_i\Par{v}=\Sbra{\psi\Par{v_1}\varphi_1+\dots+\psi\Par{v_n}\varphi_n}\Par{v}.$\PfEnd
 \SepLine
 
 \ProblemN[]{\hypertarget{3F13}{13}}{
@@ -2947,7 +2942,7 @@ Now $a_1 v_1+\dots+a_m v_m=0\Rightarrow 0=\varphi_{i}\Par{a_1 v_1+\dots+a_m v_m}
 Supp $\Par{v_1,\dots,v_m}$ is liney indep. Let $U=\Span{\varphi_1,\dots,\varphi_m},B_{U\apostrophe}=\Par{\varphi_1,\dots,\varphi_m}.$\par\quad\Hb
 Thus $\forall\Par{a_1,\dots,a_m}\in\Fbb^m,\exists\,!\,\varphi=a_1\varphi_1+\dots+a_m\varphi_m.$\par\quad\Hb
 Let $W$ be suth $V=U\oplus W.$ Now $\forall v\in V,\exists\,!\,u_v\in U,w_v\in W,v=u_v+w_v.$\par\quad\Hb
-Define $\iota\in\Lm{V,U}$ by $\iota\Par{v}=u_v.$ So that $\Gamma\Par{\varphi\circ i-}=\Par{a_1,\dots,a_m}.$\PfEnd\vspace{8pt}\quad
+Define $\iota\in\Lm{V,U}$ by $\iota\Par{v}=u_v.$ So that $\Gamma\Par{\varphi\circ i}=\Par{a_1,\dots,a_m}.$\PfEnd\vspace{8pt}\quad
 \Or Let $\Par{e_1,\dots,e_m}$ be std bss of $\Fbb^m$ and let $\Par{\psi_1,\dots,\psi_m}$ be corres dual bss.\par\quad
 Define $\Psi:\Fbb^m\rightarrow\Par{\Fbb^m}\apostrophe$ by $\Psi\Par{e_k}=\psi_k.$ Then $\Psi$ is iso.\par\quad
 Define $T\in\Lm{\Fbb^m,V}$ by $Te_k=v_k.$ Now $T\Par{x_1,\dots,x_m}=T\Par{x_1e_1+\dots+x_me_m}=x_1v_1+\dots+x_mv_m.$\par\quad
@@ -2984,13 +2979,13 @@ Define $\Phi:\Fbb^m\rightarrow\Par{\Fbb^m}\apostrophe$ by $\Phi=\Psi\circ\Gamma.
 
 \ProblemN{\hypertarget{3F35}{35}}{
 	\TextNL{Prove $\BigPar{\PoFi}\apostrophe$ is iso to $\Fbb^{\infty}.$}
-}\par\quad
-{Define $\def\envFont{\small}\theta\in\Lm[\XPar]{\envFontDefault\BigPar{\PoFi}\apostrophe,\Fbb^{\infty}\def\envFont{\small}}$ by $\theta\Par{\varphi}=\def\envFont{\small}\XPar{\envFontDefault\varphi\BigPar{1},\varphi\BigPar{z},\cdots,\varphi\BigPar{z^n},\cdots\def\envFont{\small}}.$}\vspace{3pt}\par\quad
-{Inje: $\theta\Par{\varphi}=0\Rightarrow \forall z^k$ in the bss $\BigPar{1,z,\dots,z^n}$ of $\PoF{n}\,\BigPar{\,\forall n\,},\,\varphi\Par{z^k}=0\Rightarrow\varphi=0.$}\par\quad
-{\Blind{Inje:} \Sbra{ \NOTICE that $\forall p\in\PoRi,\exists\,!\,a_i\in\Fbb,m=\deg p,\;p=a_0z+a_1z+\dots+a_{m}z^{m}\in\PoF{m}.$ }}\vspace{3pt}\par\quad
-{Surj: $\forall \BigPar{a_k}{_{k=1}^\infty}\in\Fbb^\infty,$ let $\psi$ be suth $\forall k,\psi\BigPar{z^k}=a_k$ \Sbra{ by [3.5] } and thus $\theta\Par{\psi}=\BigPar{a_k}{_{k=1}^\infty}.$}\PfEnd\vspace{6pt}
-\AComm \NOTICE that $\PoFi$ is not iso to $\Fbb^\infty,$ so is $\PoFi$ to $\BigPar{\PoFi}\apostrophe$\parCom
-But if we let $\Fbb^\infty=\Bra{\Par{a_1,\cdots,a_n,\underbrace{0,\cdots,0,\cdots}_\text{all zero}\!}\in\Fbb^\infty\;\text{\envFontHuge\envFontA\mmid}\;\exists\,!\,n\in\Nbp}.$ Then $\PoFi$ is iso to $\Fbb^\infty.$\par\vspace{10pt}
+}Define $\theta\in\Lm[\Sbra]{\BigPar{\PoFi}\apostrophe,\Fbb^{\infty}}$ by $\theta\Par{\varphi}=\BigPar{\varphi\Par{1},\varphi\Par{z},\cdots,\varphi\Par{z^m},\cdots}.$\parSol{}
+\NOTICE that $\forall p\in\PoRi,\exists\,!\,c_i\in\Fbb,m=\deg p,\;p\Par{z}=c_0+c_1z+\dots+c_{m}z^{m}\in\PoF{m}.$\vspace{1pt}\parSol{}
+Inje: $\theta\Par{\varphi}=0\Rightarrow\forall p\in\PoFi{},\varphi\Par{p}=c_0\varphi\Par{1}+c_1\varphi\Par{z}+\dots+c_m\varphi\Par{z^m}=0.$\vspace{1pt}\parSol{}
+Surj: Define $\psi_x\Par{p}=x_0c_0+\dots+x_mc_m$ for any $x=\Par{x_0,x_1,\cdots}\in\Fbb^\infty.$ Now each $\psi\BigPar{z^k}=x_k.$\parSol{}
+\Blind{Surj:} $\forall p,q\in\PoFi{},$ supp $\deg p=m\geqslant n=\deg q,$ \Sbra{{\tgsl which is why we do not write $p+\lambda q.$}}\parSol{}
+\Blind{Surj:} $\psi_x\Par{p+q}=x_0\Par{a_0+b_0}+x_n\Par{a_n+b_n}+x_{n+1}a_{n+1}+\dots+x_ma_m=\psi_x\Par{p}+\psi_x\Par{q}.$\PfEnd\vspace{4pt}
+\AComm $\PoFi$ is not iso to $\Fbb^\infty,$ so is $\PoFi$ to $\BigPar{\PoFi}\apostrophe.$ But $\PoFi$ is iso to $\Fbb^\Nbb,$ {\tgsl which the '$U$' in (3.E.14).}
 \SepLine
 }
 
@@ -3002,8 +2997,8 @@ But if we let $\Fbb^\infty=\Bra{\Par{a_1,\cdots,a_n,\underbrace{0,\cdots,0,\cdot
 }\par\quad
 $\forall j,k\in\Nbb$, $\,\,\Par{x^{j}}{^{\SmallPar{k}}}=\left\{\begin{array}{l}j\Par{j-1}\dots\Par{j-k+1}\cdot x^{\SmallPar{j-k}}\,,\quad j \geq k.\\j\Par{j-1}\dots\Par{j-j+1}=j!\hfill j=k.\\0,\hfill j \leqslant k.\end{array}\right|$\;\; Then \,\,$\Par{x^{j}}{^{\SmallPar{k}}}\Par{0}=\MathLeftBrace{l}{0\,\,\,,\,\hspace{5.2pt}j\neq k. \\ k!\,\,,\hspace{6pt}j=k.}$\PfEnd\vspace{12pt}\quad
 \Or \;Becs $\forall j,k\in\Bra{1,\dots,m}$ suth $j\neq k,$ 
-$\varphi_k\BigPar{x^j}=\envFontSmall[\footnotesize]\frac{\Par{x^j}{^{\SmallPar{k}}}\Par{0}}{k!}=\frac{0}{k!}=0;\;\varphi_k\BigPar{x^k}=\frac{\Par{x^k}{^{\SmallPar{k}}}\Par{0}}{k!}=1.$\par\quad
-Thus $\envFontSmall[\scriptsize]\frac{p^{\Par[0pt]{k}}\Par{0}}{k!}$ act exactly the same as $\varphi_k$ on the same bss $\Par{1,\dots,x^m},$ hence is just another def of $\varphi_k$.\PfEnd\vspace{8pt}
+$\varphi_k\BigPar{x^j}={}${\Large\envFontSmall[\footnotesize]$\frac{\Par[0pt]{x^j}{^{\SmallPar[0pt]{k}}}\Par[0pt]{0}}{k!}$}${}={}${\Large$\frac{\;0\;}{k!}$}${}=0;\;\varphi_k\BigPar{x^k}={}${\Large\envFontSmall[\footnotesize]$\frac{\Par[0pt]{x^k}{^{\SmallPar[0pt]{k}}}\Par[0pt]{0}}{k!}$}${}=1.$\par\quad
+Thus {\Large$\envFontSmall[\footnotesize]\frac{p^{\SmallPar[0pt]{k}}\Par[0pt]{0}}{k!}$} act exactly the same as $\varphi_k$ on the same bss $\Par{1,\dots,x^m},$ hence is just another def of $\varphi_k$.\PfEnd\vspace{8pt}
 \AExa\hypertarget{3F8}{}{\tgnr\FontNorm Supp $m\in\Nbp$. By [2.C.10], $B$ $=\BigPar{1,x-5,\dots,\Par{x-5}{^m}}$ is a bss of $\PoR{m}$.}\parExa
 {\tgnr\FontNorm Let $\varphi_k=\Frac{p^{\SmallPar{k}}\Par{5}}{k!}$ for each $k=0,1,\dots,m$. Then $\Par{\varphi_0,\varphi_1,\dots,\varphi_m}$ is the dual bss of $B$.}\par
 \SepLine
