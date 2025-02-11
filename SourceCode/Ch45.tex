@@ -288,10 +288,10 @@ But (d) $\Rightarrow$ (b) fails, becs $S$ is not inv $\Longleftrightarrow S$ is 
 %\TextB{Supp $T\in\Lm{V}.$ Prove every list of eigvecs of $T$ corres to disti eigvals is liney indep.}
 %\Solution \Or Another Proof.\TextB{}
 %Supp the desired result is false. Then ( $m\neq 1$ becs eigvecs are nonzero )\TextB{}
-%$\,\exists$ smallest $m>1$ so that $\,\exists\,\Par{v_1,\dots,v_m}$ linely depe eigvecs of $T$ corres to disti eigvals $\lambda_1,\dots,\lambda_m$ of $T.$\TextB{}
+%$\,\exists$ smallest $m>1$ so that $\,\exists\,\Par{v_1,\dots,v_m}$ linely dep eigvecs of $T$ corres to disti eigvals $\lambda_1,\dots,\lambda_m$ of $T.$\TextB{}
 %Supp $a_1 v_1+\dots+a_{m-1}v_{m-1}+a_m v_m=0.$ Then $a_j\neq 0$ for each $j$. ( becs the min of $m$) \TextB{}
 %Apply $T - \lambda_m I$ to both sides, now we get $a_1 (\lambda_1 - \lambda_m )v_1 + \dots + a_{m-1}(\lambda_{m-1} - \lambda_m )v_{m-1} = 0.$\TextB{}
-%Thus $(v_1 ,\dots, v_{m-1})$ of len $(m-1)$ is linely depe eigvecs corres to disti eigvals.\TextB{}
+%Thus $(v_1 ,\dots, v_{m-1})$ of len $(m-1)$ is linely dep eigvecs corres to disti eigvals.\TextB{}
 %Ctradic the min of $m.$\PfEnd
 %\SepLine
 
@@ -749,7 +749,7 @@ Then $\exists\,v\in V,0\neq u=S\Par{v}\in V\Rightarrow Tu=\Par{TS} v=\Par{\lambd
 	\TextNL{Prove $u$ and $w$ corres to the same eigval.}
 }Supp $\lambda_1,\lambda_2,\lambda_0$ are eigvals of $T$ with eigvecs to $u,w,u+w$ respectly.\parSol{}
 Then $T\Par{u+w}=\lambda_0\Par{u+w}=Tu+Tw=\lambda_1 u+\lambda_2 w\Rightarrow \Par{\lambda_0-\lambda_1}u=\Par{\lambda_2-\lambda_0}w.$\parSol{}
-If $\Par{u,w}$ is linely depe, then let $w=cu,$ therefore $\lambda_2 cu=Tw=cTu=\lambda_1 cu\Rightarrow\lambda_2=\lambda_1.$\parSol{}
+If $\Par{u,w}$ is linely dep, then let $w=cu,$ therefore $\lambda_2 cu=Tw=cTu=\lambda_1 cu\Rightarrow\lambda_2=\lambda_1.$\parSol{}
 Othws, $\Par{u,w}$ is liney indep. Then $\lambda_0-\lambda_1=\lambda_2-\lambda_0=0\,\Rightarrow\lambda_1=\lambda_2=\lambda_0.$\PfEnd\parSol{}
 \Or Asum $\lambda_1\neq \lambda_2.$ Then $\Par{u,w}$ is liney indep. Thus $\lambda_0-\lambda_1=\lambda_0-\lambda_2.$ Ctradic.\PfEnd
 \SepLine
@@ -961,7 +961,7 @@ Thus $Tu = T\BigPar{p\Par{T}v} = p\Par{T}\Par{Tv}\in\range p\Par{T}.$\PfEnd
 
 \BulletPointX\NoteFor{[5.21]} \TextB{\large Every optor on a finide nonzero complex vecsp has an eigval.}
 Supp $V$ is a finide complex vecsp of dim $n > 0$ and $T\in\Lm{V}$.\TextB{}
-Choose a nonzero $v\in V$. $\Par{v,Tv,T^2 v,\dots,T^n v}$ of len $n+1$ is linely depe.\TextB{}
+Choose a nonzero $v\in V$. $\Par{v,Tv,T^2 v,\dots,T^n v}$ of len $n+1$ is linely dep.\TextB{}
 Supp $a_0 I+a_1 T+\dots+a_n T^n=0.$ Then $\exists\,a_j\neq 0.$\TextB{}
 {\tgsl Thus $\exists$ nonconst $\,p\,$ of smallest deg ( $\deg p>0$ ) suth $p\Par{T}v = 0$.}\TextB{}
 Becs $\exists\,\lambda \in \Cbb$ suth $p\Par{\lambda} = 0\Rightarrow\exists\,q \in\PoCi,p\Par{z} = \Par{z-\lambda}q\Par{z},\forall z \in\Cbb.$\TextB{}
@@ -1007,7 +1007,7 @@ Thus $\Par{T-\lambda_1 I}\cdots\Par{T-\lambda_m I}=0\Longrightarrow\exists\,j,\P
 (i) If $\dim V = 0$, then $I=0\in\Lm{V}$ and let $p=1$, done.\par\quad\Endi
 (ii) Supp $\dim V\geqslant 1.$\par\quad\Hii
 {\tgsl Asum $\dim V > 0$ and that the desired result is true for all optors on all vecsps of smaller dim.}\par\quad\Hii
-Let $u\in V,u\neq 0$. The list $\Par{u, Tu, \dots, T^{\dim V} u}$ of len $\Par{1 + \dim V}$ is linely depe.\par\quad\Hii
+Let $u\in V,u\neq 0$. The list $\Par{u, Tu, \dots, T^{\dim V} u}$ of len $\Par{1 + \dim V}$ is linely dep.\par\quad\Hii
 Then $\exists\,!\,T^m$ of smallest deg suth $T^m u\in\Span{u, Tu, \dots, T^{m-1} u}$.\par\quad\Hii
 Thus $\exists\,c_j\in\Fbb,c_0 u + c_1 Tu +\dots + c_{m-1} T^{m-1} u + T^m u = 0$.\par\quad\Hii
 Define $q$ by
@@ -1126,7 +1126,7 @@ Note that $\dim\geqslant 2.$ By (3.A.14), $\exists\,S_1,S_2\in\Lm{V},S_1S_2\neq 
 	\hypertarget{5BI4e19}{}\TextB{Supp $V$ is finide and $T\in \Lm{V}$. Let $\mathcal{E} =\Bra{q\Par{T}: q \in \PoFi}$.}
 	\TextB{Prove $\dim \mathcal{E}$ equals the deg of the min poly of $T$.}
 }\par\quad
-Becs the list $\Par{I,T,\dots,T^{\Par{\dim V}^2}}$ of len $\dim\Lm{V}+1$ is linely depe in $\dim\Lm{V}.$\par\quad
+Becs the list $\Par{I,T,\dots,T^{\Par{\dim V}^2}}$ of len $\dim\Lm{V}+1$ is linely dep in $\dim\Lm{V}.$\par\quad
 Supp $m\in\Nbp$ is the smallest suth $T^m=a_0 I+\dots+a_{m-1}T^{m-1}.$\par\quad
 Then $q$ defined by $q\Par{z}=z^m-a_{m-1}z^{m-1}-\dots-a_0$ is the min poly ( see [8.40] ).\par\quad
 For any $k\in\Nbp,\,\,T^{m+k}=T^k\Par{T^m}\in\Span{I,T,\dots,T^{m-1}}=U.$\par\quad

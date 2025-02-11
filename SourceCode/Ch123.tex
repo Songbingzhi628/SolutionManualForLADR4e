@@ -285,7 +285,7 @@ ${}^\neg Q\Rightarrow{}^\neg P:$ scalar multi $\Rightarrow$ if $av+bw=0,$ then $
 
 \ProblemN{\hypertarget{2A10}{10}}{
 	\TextNL{Supp $\Par{v_1,\dots,v_m}$ is liney indep in $V$ and $w\in V$.}
-	\TextNL{Prove if $\BigPar{v_1+w,\dots,v_m+w}$ is linely depe, then $w\in\Span{v_1,\dots,v_m}$.}
+	\TextNL{Prove if $\BigPar{v_1+w,\dots,v_m+w}$ is linely dep, then $w\in\Span{v_1,\dots,v_m}$.}
 }\par\quad
 Note that $a_1\Par{v_1+w}+\dots+a_m\Par{v_m+w}=0\Rightarrow a_1 v_1+\dots+a_m v_m=-\Par{a_1+\dots+a_m}w.$\par\quad
 Then $a_1+\dots+a_m\neq 0$, for if not, $a_1 v_1+\dots+a_m v_m=0$ while $a_i\neq 0$ for some $i$, ctradic.\par\quad
@@ -340,7 +340,7 @@ Then\; $f_1\XPar{${\Large$\frac{\;1\;}{m}$}$}=\dots=f_m\XPar{${\Large$\frac{\;1\
 Supp $\Par{p_0,p_1,\dots,p_m}$ is liney indep. Define $p\in\PoF{m}$ by $p\Par{z}=z.$\par\quad
 \NOTICE that $\forall a_i\in\Fbb,z\neq a_0 p_0\Par{z}+\dots+a_m p_m\Par{z},$ for if not, let $z=2.$ Thus $z\not\in\Span{p_0,p_1,\dots,p_m}$.\par\quad
 Then $\Span{p_0,p_1,\dots,p_m}\subsetneq\PoF{m}$ while the list $\Par{p_0,p_1,\dots,p_m}$ has len $\Par{m+1}$.\par\quad
-Hence $\Par{p_0,p_1,\dots,p_m}$ is linely depe. For if not, then becs $\Par{1,z,\dots,z^m}$ of len $\Par{m+1}$ spans $\PoF{m},$\par\quad
+Hence $\Par{p_0,p_1,\dots,p_m}$ is linely dep. For if not, then becs $\Par{1,z,\dots,z^m}$ of len $\Par{m+1}$ spans $\PoF{m},$\par\quad
 by the steps in [2.23] trivially, $\Par{p_0,p_1,\dots,p_m}$ of len $\Par{m+1}$ spans $\PoF{m}.$ Ctradic.\PfEnd\vspace{6pt}\par\quad
 \Or Note that $\PoF{m}=\Span{\underbrace{\;1,\;z,\;\dots,\;z^m\;}_{\text{of len }\SmallPar{m+1}}}.$ Then $\Par{p_0,p_1,\dots,p_m,z}$ of len $\Par{m+2}$ is liney dep.\vspace{2pt}\par\quad
 As shown above,  $z\not\in\Span{p_0,p_1,\dots,p_m}.$ And hence by [2.21](a), $\Par{p_0,p_1,\dots,p_m}$ is liney dep.\PfEnd
@@ -820,10 +820,10 @@ Thus $\Par{T_{x,1},\dots,T_{x,m}}$ is a liney indep list in $\Lm{V,W}$ for any $
 \SepLine
 
 \ProblemN{\hypertarget{3A13}{13}}{
-	\TextNL{Supp $\Par{v_1,\dots,v_m}$ is linely depe in $V$ and $W\neq\zeroSubs$.}
+	\TextNL{Supp $\Par{v_1,\dots,v_m}$ is linely dep in $V$ and $W\neq\zeroSubs$.}
 	\TextNL{Prove $\exists\,w_1,\dots,w_m\in W,\not\exists\,T\in\Lm{V,W}$ suth $Tv_k=w_k,\forall k = 1,\dots,m$.}
 }\par\quad
-We prove by ctradic. By liney dependence lemma, $\exists\,j\in\Bra{1,\dots,m},v_j\in\Span{v_1,\dots,v_{j-1}}$.\par\quad
+We prove by ctradic. By liney dep lemma, $\exists\,j\in\Bra{1,\dots,m},v_j\in\Span{v_1,\dots,v_{j-1}}$.\par\quad
 Supp $a_1 v_1+\dots+a_m v_m=0,$ where $a_j\neq 0.$ \;Now let $w_j\neq 0$, while $w_1=\dots=w_{j-1}=w_{j+1}=w_m=0.$\par\quad
 Define $T\in\Lm{V,W}$ by $Tv_k=w_k$ for each $k.$ Then $T\BigPar{a_1 v_1+\dots+a_m v_m}=0=a_1 w_1+\dots+a_m w_m.$\par\quad
 And \,$0=a_j w_j$ while $a_j\neq 0$ and $w_j\neq 0.$ Ctradic.\PfEnd\vspace{6pt}\quad
@@ -865,7 +865,7 @@ Supp $\varphi\neq 0\Rightarrow\exists\,i,j\in\Bra{1,\dots,n},\,\varphi\Par{R_{i,
 \ProblemB{
 	\hypertarget{3A4e11}{}\TextB{Supp $V$ is finide, $T\in\Lm{V}$ is suth $\forall S\in\Lm{V},ST=TS$. Prove $\exists\,\lambda\in\Fbb,T=\lambda I$.}
 }If $V=\zeroSubs,$ then done. Now supp $V\neq\zeroSubs.$\par\quad
-Asum $\forall v\in V,\Par{v,Tv}$ is linely depe, then by (2.A.2.(b)), $\exists\,\lambda_v\in\Fbb,Tv=\lambda_v v.$\par\quad
+Asum $\forall v\in V,\Par{v,Tv}$ is linely dep, then by (2.A.2.(b)), $\exists\,\lambda_v\in\Fbb,Tv=\lambda_v v.$\par\quad
 To prove $\lambda_v$ is indep of $v$, we discuss in two cases:\vspace{4pt}\par\hspace{1pt}
 $\MathRightBrace{l}{$
 	($-$) If $\Par{v,w}$ is liney indep, $\lambda_{v+w}\Par{v+w}=T\Par{v+w}=Tv+Tw=\lambda_v v+\lambda_w w\\ $\qquad\qquad\qquad\qquad\qquad\qquad\qquad $\Rightarrow \Par{\lambda_{v+w}-\lambda_v}v+\Par{\lambda_{v+w}-\lambda_w}w=0\\ $
@@ -916,7 +916,7 @@ Then both $W$ and $V$ have a nonzero elem.\par\quad\HII\Hb
 %		$R_{x,y}$ defined below can be rewritten by $R_{x,y}v_z=\delta_{z,x}v_y.$ $}$}
 %}\SepLine
 
-\vfill\ChDecl{Ch3B}{3$\cdot$B}{}\orMode{\hLk{3B3}{3}\;\;\hLk{3B7}{7}\;\;\hLk{3B8}{8}\;\;\hLk{3B9}{9}\;\;\hLk{3B10}{10}\;\;\hLk{3B11}{11}\;\;\hLk{3B12}{12}\;\;\hLk{3B16}{16}\;\;\hLk{3B17}{17}\;\;\hLk{3B18}{18}\;\;\hLk{3B19}{19}\;\;\hLk{3B20}{20}\;\;\hLk{3B21}{21}\;\;\hLk{3B22}{22}\;\;\hLk{3B23}{23}\;\;\hLk{3B24}{24}\;\;\hLk{3B25}{25}\;\;\hLk{3B26}{26}\;\;\hLk{3B28}{28}\;\;\hLk{3B29}{29}\;\;\hLk{3B30}{30}\;\;|\;\;\hLk{3B4e21}{4E:\;\;21}\;\;\hLk{3B4e24}{24}\;\;\hLk{3B4e27}{27}\;\;\hLk{3B4e31}{31}\;\;\hLk{3B4e32}{32}\;\;\hLk{3B4e33}{33}}[-40pt]{[1]: 3, 7, 8; [2]: 9, 10, 11, 16, 17, 18, 19; [3]: 12; [4]: (4E 27), (4E 21), (4E 31), 22; [5]: 23, (4E 24), 26;$\\$[6]: 20, 21, 24; [7]: 25, 28, (4E 3.F.5); [8]: 29, 30, (4E 3.F.6); [前一页]: (4E 33); [前四页]: (4E 32).}
+\vfill\ChDecl{Ch3B}{3$\cdot$B}{}\orMode{\hLk{3B3}{3}\;\;\hLk{3B7}{7}\;\;\hLk{3B8}{8}\;\;\hLk{3B9}{9}\;\;\hLk{3B10}{10}\;\;\hLk{3B11}{11}\;\;\hLk{3B12}{12}\;\;\hLk{3B16}{16}\;\;\hLk{3B17}{17}\;\;\hLk{3B18}{18}\;\;\hLk{3B19}{19}\;\;\hLk{3B20}{20}\;\;\hLk{3B21}{21}\;\;\hLk{3B22}{22}\;\;\hLk{3B23}{23}\;\;\hLk{3B24}{24}\;\;\hLk{3B25}{25}\;\;\hLk{3B26}{26}\;\;\hLk{3B28}{28}\;\;\hLk{3B29}{29}\;\;\hLk{3B30}{30}\;\;|\;\;\hLk{3B4e21}{4E:\;\;21}\;\;\hLk{3B4e24}{24}\;\;\hLk{3B4e27}{27}\;\;\hLk{3B4e31}{31}\;\;\hLk{3B4e32}{32}\;\;\hLk{3B4e33}{33}}[-40pt]{[1]: 3, 7, 8; [2]: 9, 10, 11, 16, 17, 18, 19; [3]: 12; [4]: (4E 27), (4E 21), (4E 31), 22; [5]: 23, (4E 24), 26;$\\$[6]: 20, 21, 24; [7]: 25, 28, (4E 3.F.5), 29; [8]: 30, (4E 3.F.6); [前一页]: (4E 33); [前四页]: (4E 32).}
 
 %\ProblemN{2}{
 %	\TextN{Supp $S,T\in\Lm{V}$ are suth $\range S\subseteq\null T$. Prove $(ST)^2=0$.}
@@ -1362,7 +1362,7 @@ Now $\exists\,E\in\Lm{\Fbb},\varphi=E\circ\beta\Longleftrightarrow\exists\,c=E\P
 
 \ChEnd
 
-\vfill\ChDecl{Ch3C}{3$\cdot$C}{}\orMode{\hLk{3C1}{1}\;\;\hLk{3C3}{3}\;\;\hLk{3C4}{4}\;\;\hLk{3C5}{5}\;\;\hLk{3C6}{6}\;\;\hLk{3C9}{9}\;\;\hLk{3C10}{10}\;\;\hLk{3C11}{11}\;\;\hLk{3C13}{13}\;\;|\;\;\hLk{3C4e16}{4E:\;\;16}\;\;\hLk{3C4e17}{17}}{[1]: 10, 9, 11; [2]: (4E 16); [3]: (4E 17); [4]: 13, 1, 6; [5]: 3, 4, 5.}
+\vfill\ChDecl{Ch3C}{3$\cdot$C}{}\orMode{\hLk{3C1}{1}\;\;\hLk{3C3}{3}\;\;\hLk{3C4}{4}\;\;\hLk{3C5}{5}\;\;\hLk{3C6}{6}\;\;\hLk{3C9}{9}\;\;\hLk{3C10}{10}\;\;\hLk{3C11}{11}\;\;\hLk{3C13}{13}\;\;|\;\;\hLk{3C4e16}{4E:\;\;16}\;\;\hLk{3C4e17}{17}}{[2]: 10, 9, 11; [3]: (4E 16); [4]: (4E 17); [5]: 13, 1, 6; [6]: 3, 4, 5.}
 \vspace{8pt}
 
 \BulletPointX\NoteFor{[3.30, 32]}\;\;{\tgsl matrix of span}\TextB{}
@@ -2063,11 +2063,11 @@ Extend $\Par{v,Tv}$ to $B_V=\Par{v,Tv,u_3,\dots,u_n}.$ Let $B=\Mt{T,B_V}.$\vspac
 $\Rightarrow Tv=B_{1,1} v+B_{2,1}\Par{Tv}+B_{3,1}u_3+\dots+B_{n,1}u_n\Rightarrow B_{2,1}=1,B_{i,1}=0,\,\forall i\neq 2.$\vspace{1pt}\parSol{}
 By asum, $A=\Mt{T,B_V'}=B,\forall B_V'=\Par{v,w_2,\dots,w_{n}}$. Then $A_{2,1}=1,A_{i,1}=0,\forall i\neq 2.$\parSol{}
 $\Rightarrow Tv=w_2,$ which is not true if $w_2=u_3,\;w_3=Tv,\;w_j=u_j,\forall j\in\Bra{4,\dots,n}.$ Ctradic.\parSol{}
-Hence $\Par{v,Tv}$ is linely depe $\Rightarrow \forall v\in V,\exists\,\lambda_v\in\Fbb,Tv=\lambda_v v.$\parSol{}
+Hence $\Par{v,Tv}$ is linely dep $\Rightarrow \forall v\in V,\exists\,\lambda_v\in\Fbb,Tv=\lambda_v v.$\parSol{}
 Now we show $\lambda_v$ is indep of $v$, that is, for all disti $v,w\in V\nonzero,\lambda_v=\lambda_w.$\parSol{}
 \!\!\!\!$\MathRightBrace{l}{
 		\Par{v,w}$ liney indep $\Rightarrow T\Par{v+w}=\lambda_{v+w}\Par{v+w}=\lambda_v v+\lambda_w w=Tv+Tw\\
-		\Par{v,w}$ linely depe, $w=c v$ $\Rightarrow Tw=\lambda_w w=\lambda_w cv=c\lambda_v v=T\Par{cv}
+		\Par{v,w}$ linely dep, $w=c v$ $\Rightarrow Tw=\lambda_w w=\lambda_w cv=c\lambda_v v=T\Par{cv}
 	}\Rightarrow T=\lambda I.$\PfEnd\vspace{10pt}\quad
 \Or Let $A=\Mt{T,B_V},$ where $B_V=\Par{u_1,\dots,u_m}$ is arb.\vspace{1pt}\par\quad
 Fix one $B_V=\Par{v_1,\dots,v_m}$ and then $\Par{v_1,\dots,\frac{\;1\;}{2}v_k,\dots,v_m}$ is also a bss for any given $k\in\Bra{1,\dots,m}.$\vspace{1pt}\par\quad
@@ -2095,7 +2095,7 @@ Now $T\Par{v\apostrophe{\hspace{-3pt}_k}}=A_{1,k}v\apostrophe{\hspace{-3pt}_1}+\
 
 \ChEnd\pagebreak
 
-\ChDecl{Ch3E}{3$\cdot$E}{}\orMode{\hLk{3E1}{1}\;\;\hLk{3E2}{2}\;\;\hLk{3E3}{3}\;\;\hLk{3E4}{4}\;\;\hLk{3E5}{5}\;\;\hLk{3E6}{6}\;\;\hLk{3E7}{7}\;\;\hLk{3E8}{8}\;\;\hLk{3E9}{9}\;\;\hLk{3E10}{10}\;\;\hLk{3E11}{11}\;\;\hLk{3E12}{12}\;\;\hLk{3E13}{13}\;\;\hLk{3E14}{14}\;\;\hLk{3E15}{15}\;\;\hLk{3E16}{16}\;\;\hLk{3E17}{17}\;\;\hLk{3E18}{18}\;\;\hLk{3E20}{20}\;\;\mmid\;\;\hLk{3E4e8}{4E:\;\;8}\;\;\hLk{3E4e14}{14}}[-40pt]{[1]: 1, 2, 4, 5, 6, 3; [2]: (4E 8), 7, 8, 9; [3]: 10, 11, 18, 20; [4]: 17, 12, 13; [5]: (4E 14); [6]: 15, 16, 14.}
+\ChDecl{Ch3E}{3$\cdot$E}{}\orMode{\hLk{3E1}{1}\;\;\hLk{3E2}{2}\;\;\hLk{3E3}{3}\;\;\hLk{3E4}{4}\;\;\hLk{3E5}{5}\;\;\hLk{3E6}{6}\;\;\hLk{3E7}{7}\;\;\hLk{3E8}{8}\;\;\hLk{3E9}{9}\;\;\hLk{3E10}{10}\;\;\hLk{3E11}{11}\;\;\hLk{3E12}{12}\;\;\hLk{3E13}{13}\;\;\hLk{3E14}{14}\;\;\hLk{3E15}{15}\;\;\hLk{3E16}{16}\;\;\hLk{3E17}{17}\;\;\hLk{3E18}{18}\;\;\hLk{3E20}{20}\;\;\mmid\;\;\hLk{3E4e8}{4E:\;\;8}\;\;\hLk{3E4e14}{14}}[-40pt]{[1]: 1, 2, 4, 5, 6, 3; [2]: (4E 8), 7, 8; [3]: 9, 10, 11; [4]: 14, 18, 20, 17; [5]: 12, 13, (4E 14), 15, 16.}
 \vspace{6pt}
 
 \ProblemN[]{\hypertarget{3E1}{1}}{
@@ -2470,7 +2470,7 @@ Inje: Each $f\Par{x_k}=0\Rightarrow f+U=0.$ \;Let $S=T\circ\pi\Rightarrow\tilde{
 
 \ChEnd
 \vfill
-\ChDecl{Ch3F}{3$\cdot$F}{}\orMode{\hLk{3F4}{4}\;\;\hLk{3F5}{5}\;\;\hLk{3F6}{6}\;\;\hLk{3F7}{7}\;\;\hLk{3F8}{8}\;\;\hLk{3F9}{9}\;\;\hLk{3F12}{12}\;\;\hLk{3F13}{13}\;\;\hLk{3F15}{15}\;\;\hLk{3F16}{16}\;\;\hLk{3F17}{17}\;\;\hLk{3F18}{18}\;\;\hLk{3F19}{19}\;\;\hLk{3F20}{20}\;\;\hLk{3F21}{21}\;\;\hLk{3F22}{22}\;\;\hLk{3F23}{23}\;\;\hLk{3F24}{24}\;\;\hLk{3F25}{25}\;\;\hLk{3F26}{26}\;\;$\\[-4pt]$\hLk{3F28}{28}\;\;\hLk{3F29}{29}\;\;\hLk{3F30}{30}\;\;\hLk{3F31}{31}\;\;\hLk{3F32}{32}\;\;\hLk{3F33}{33}\;\;\hLk{3F34}{34}\;\;\hLk{3F35}{35}\;\;\hLk{3F36}{36}\;\;\hLk{3F37}{37}\;\;\mmid\;\;\hLk{3F4e5}{4E:\;\;5}\;\;\hLk{3F4e6}{6}\;\;\hLk{3F4e8}{8}\;\;\hLk{3F4e17}{17}\;\;\hLk{3F4e23}{23}\;\;\hLk{3F4e24}{24}\;\;\hLk{3F4e25}{25}}[-40pt]{[1]: 20, 21; [2]: 22, 23, (4E 23), 30; [3]: 31, 25, 26; [4]: 28, 29, 9, 13; [5]: 24, 37, 4, 17, 18, 19;$\\$[6]: 36, (4E 17), 15, 12; [7]: 16, (4E 6), 5; [8]: 32, 33, (4E 8), (4E 5); [9]: 6, (4E 25); [10]: 35, 7, 8, 34.}
+\ChDecl{Ch3F}{3$\cdot$F}{}\orMode{\hLk{3F4}{4}\;\;\hLk{3F5}{5}\;\;\hLk{3F6}{6}\;\;\hLk{3F7}{7}\;\;\hLk{3F8}{8}\;\;\hLk{3F9}{9}\;\;\hLk{3F12}{12}\;\;\hLk{3F13}{13}\;\;\hLk{3F15}{15}\;\;\hLk{3F16}{16}\;\;\hLk{3F18}{18}\;\;\hLk{3F19}{19}\;\;\hLk{3F20}{20}\;\;\hLk{3F21}{21}\;\;\hLk{3F22}{22}\;\;\hLk{3F23}{23}\;\;\hLk{3F24}{24}\;\;\hLk{3F25}{25}\;\;\hLk{3F26}{26}\;\;$\\[-4pt]$\hLk{3F28}{28}\;\;\hLk{3F29}{29}\;\;\hLk{3F31}{31}\;\;\hLk{3F32}{32}\;\;\hLk{3F33}{33}\;\;\hLk{3F34}{34}\;\;\hLk{3F35}{35}\;\;\hLk{3F36}{36}\;\;\hLk{3F37}{37}\;\;\mmid\;\;\hLk{3F4e5}{4E:\;\;5}\;\;\hLk{3F4e6}{6}\;\;\hLk{3F4e8}{8}\;\;\hLk{3F4e17}{17}\;\;\hLk{3F4e23}{23}\;\;\hLk{3F4e24}{24}\;\;\hLk{3F4e25}{25}}[-40pt]{[1]: 20, 21; [2]: 22, 23, (4E 23), 30; [3]: 31, 25, 26; [4]: 28, 29, 9, 13; [5]: 24, 37, 4, 17, 18, 19;$\\$[6]: 36, (4E 17), 15, 12; [7]: 16, (4E 6), 5; [8]: 32, 33, (4E 8), (4E 5); [9]: 6, (4E 25); [10]: 35, 7, 8, 34.}
 \vspace{4pt}
 
 \BulletPointX\NoteForSmall{Exe (1)}\;\;Every liney functional is either surj or is a zero map.\TextB{}
@@ -2486,19 +2486,21 @@ And $\varphi\neq 0\Longleftrightarrow\dim\Span{\varphi}=1\Longleftrightarrow\dim
 Define $\varphi\in V\apostrophe$ by $\varphi\Par{u+\lambda s+y}=\lambda.$ Hence $\varphi\neq 0$ and $\varphi\Par{u}=0$ for all $u\in U.$\PfEnd\parSol{\vspace{4pt}}
 \Or \Sbra[3pt]{{\tgsl Req $V$ Finide}} \;By [3.106], $\dim U^0=\dim V-\dim U>0.$\parSol{}
 \Blind{\Or }\Or Let $B_U=\Par{u_1,\dots,u_m},B_V=\Par{u_1,\dots,u_m,v_1\dots,v_n}$ with $n\geqslant 1.$\parSol{}
-\Blind{\Or}Let $B_{V\apostrophe}=\Par{\psi_1,\dots,\psi_m,\varphi_1,\dots,\varphi_n}.$ Then each $\varphi\in\Span{\varphi_1,\dots,\varphi_n}$ will do.\PfEnd\vspace{8pt}
-\ACoro \ProblemN[]{\hypertarget{3F18}{18}}{
-	\TextNL{$\zeroSubs{^0_V}=V\apostrophe$. \Sbra[3pt]{{\FontNorm Which means $U^0=V\apostrophe\Longleftrightarrow U=\zeroSubs.$}}\vspace{4pt}}}
-\IndentCorollary\ProblemN[]{\hypertarget{3F19}{19}}{
-	\TextNL{\tgnr $U^0=\zeroSubs=V^0\Longleftrightarrow U=V$. {\normalsize\tgnr By the inv and ctrapos of Exe (4).}\vspace{4pt}}
+\Blind{\Or}Let $B_{V\apostrophe}=\Par{\psi_1,\dots,\psi_m,\varphi_1,\dots,\varphi_n}.$ Then each $\varphi\in\Span{\varphi_1,\dots,\varphi_n}$ will do.\PfEnd\vspace{4pt}
+\ACoro \ProblemN[]{\hypertarget{3F19}{19}}{
+	\TextNL{\tgnr $U^0=\zeroSubs=V^0\Longleftrightarrow U=V$. {\normalsize\tgnr By the inv and ctrapos of Exe (4).}\vspace{0pt}}
 }\par
 \AComm {\tgsc\large Another proof of \tgbfx[3.108]}: $T$ is surj $\Longleftrightarrow T\apostrophe$ is inje.\parCom
 (a) Supp $T\apostrophe$ is inje. \NOTICE that $\psi\neq 0\Longleftrightarrow T\apostrophe\Par{\psi}\neq 0\Longleftrightarrow\psi\not\in\Par{\range T}{^0}.$\parCom
 (b) $T$ is surj $\Rightarrow\Par{\range T}{^0}=\zeroSubs=\null T\apostrophe.$\PfEnd
 \SepLine
 
-\BulletPointX\NoteForSmall{[3.102]}\;\;For $U=\emptySet,\;U^0$ is undefined. If $U^0$ is in the context, then certainly $U$ is nonempty.
+\BulletPointX\NoteForSmall{[3.102] and Exe (18)}\;\;For $U=\emptySet,\;U^0=\Bra{\varphi\in V\apostrophe:U\subseteq\null\varphi}=V\apostrophe.$ While $\zeroSubs{^0_V}=V\apostrophe.$\TextB{}
+Not a ctradic becs $\emptySet$ is not a subsp. Now $U^0=V\apostrophe$ can be true with $U=\emptySet\neq\zeroSubs.$
 \SepLine
+
+%\ProblemN[]{\hypertarget{3F18}{18}}{
+%	\TextNL{$\zeroSubs{^0_V}=V\apostrophe$. \Sbra[3pt]{{\FontNorm Which means $U^0=V\apostrophe\Longleftrightarrow U=\zeroSubs.$}}\vspace{4pt}}}
 
 \ProblemN{\hypertarget{3F25}{25}}{
 	\TextNL{Supp $U$ is a subsp of $V$. Explain why $U=\Bra{v\in V:\varphi\Par{v}=0,\forall\varphi\in U^0}.$}
@@ -2506,8 +2508,7 @@ Define $\varphi\in V\apostrophe$ by $\varphi\Par{u+\lambda s+y}=\lambda.$ Hence 
 Then let $\Span{v}\oplus U\oplus X=V.$ $\exists\,\psi\in V\apostrophe,\null\psi=U\oplus X.$ 
 又 $\psi\in U^0\Rightarrow\psi\Par{v}=0.$\PfEnd\vspace{2pt}
 \AComm $W\subseteq X=\Bra{v\in V:\varphi\Par{v}=0,\forall\varphi\in W^0},$ the {\tgsc promotion} of the subset $W$ of $V.$\parCom
-The promotion of every nonempty subset of $V$ is a subsp of $V.$\parCom
-Now we show $\Spn W=X.$ $\forall w\in\Spn W,$
+The promotion of every subset of $V$ is the smallest subsp of $V$ containing $W.$
 \SepLine\pagebreak
 
 \ProblemB{
@@ -2516,7 +2517,7 @@ Now we show $\Spn W=X.$ $\forall w\in\Spn W,$
 \SepLine
 
 \ProblemN{\hypertarget{3F20}{20}}{
-	\TextNL{Supp $U,W$ are nonempty subsets of $V$. Prove $U\subseteq W\Rightarrow W^0\subseteq U^0.$}
+	\TextNL{Supp $U,W$ are subsets of $V$. Prove $U\subseteq W\Rightarrow W^0\subseteq U^0.$}
 }$\forall\varphi\in W^0,u\in U\subseteq W,\varphi\Par{u}=0\Rightarrow\varphi\in U^0.$ Thus $W^0\subseteq U^0.$\PfEnd
 \SepLine
 
@@ -2706,23 +2707,23 @@ And let corres (I) $B_U=\Par{v_{m+1},\dots,v_n},$ \; (II) $B_W=\Par{v_1,\dots,v_
 \HII \Or Simlr to (II), let $\Omega=\Span{\varphi_{m+1},\dots,\varphi_n},$ immed.\PfEnd
 \SepLine
 
-%\ProblemB{
-%	\TextB{Supp $T\in\Lm{V,W},\varphi_k\in V\apostrophe,\psi_k\in W\apostrophe.$}
-%	\ProblemN[]{}{}
-%	\ProblemN[]{\hypertarget{3F28}{28}}{
-%		\TextNL{Prove $\null T\apostrophe=\Span{\psi_1,\dots,\psi_m}\Longleftrightarrow\range T=\Par{\null\psi_1}\cap\cdots\cap\Par{\null\psi_m}.$}}
-%	\ProblemN[]{\hypertarget{3F29}{29}}{
-%		\TextNL{Prove $\range T\apostrophe=\Span{\varphi_1,\dots,\varphi_m}\Longleftrightarrow\null T=\Par{\null\varphi_1}\cap\cdots\cap\Par{\null\varphi_m}.$}}
-%	\TextB{\vspace{-4pt}}
-%}Using [3.107], [3.109], Exe (23) and the {\COROLLARY} in Exe (20, 21).\par\quad
-%(28) $\Par{\range T}{^0}=\null T\apostrophe=\Span{\psi_1,\dots,\psi_m}=\BigPar{\Par{\null\psi_1}\cap\cdots\cap\Par{\null\psi_m}}{^0}.$\par\quad
-%(29) $\Par{\null T}{^0}=\range T\apostrophe=\Span{\varphi_1,\dots,\varphi_m}=\BigPar{\Par{\null\varphi_1}\cap\cdots\cap\Par{\null\varphi_m}}{^0}.$\PfEnd\vspace{6pt}
-%\Corollary\,\,\,Using the \COMMENT in Exe (26).\par\quad
-%$\null T=\Span{v_1,\dots,v_m}\Longleftrightarrow\null T=\Par{\null\varphi_{m+1}}\cap\cdots\cap\Par{\null\varphi_n}\Longleftrightarrow\range T\apostrophe=\Span{\varphi_{m+1},\dots,\varphi_n}.$\par\quad
-%——Where $B_V=\Par{v_1,\dots,v_m,\dots,v_n}\Longleftrightarrow B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_m,\dots,\varphi_n}.$\vspace{3pt}\par\quad
-%$\range T=\Span{w_1,\dots,w_m}\Longleftrightarrow\range T=\Par{\null\psi_{m+1}}\cap\cdots\cap\Par{\null\psi_n}\Longleftrightarrow\null T\apostrophe=\Span{\psi_{m+1},\dots,\psi_n}.$\par\quad
-%——Where $B_W=\Par{w_1,\dots,w_m,\dots,w_n}\Longleftrightarrow B_{W\apostrophe}=\Par{\psi_1,\dots,\psi_m,\dots,\psi_n}.$\par
-%\SepLine
+\ProblemB{
+	\TextB{Supp $T\in\Lm{V,W},$ each $\varphi_k\in V\apostrophe,$ and each $\psi_k\in W\apostrophe.$}
+	\ProblemN[]{}{}
+	\ProblemN[]{\hypertarget{3F28}{28}}{
+		\TextNL{Prove $\null T\apostrophe=\Span{\psi_1,\dots,\psi_m}\Longleftrightarrow\range T=\Par{\null\psi_1}\cap\cdots\cap\Par{\null\psi_m}.$}}
+	\ProblemN[]{\hypertarget{3F29}{29}}{
+		\TextNL{Prove $\range T\apostrophe=\Span{\varphi_1,\dots,\varphi_m}\Longleftrightarrow\null T=\Par{\null\varphi_1}\cap\cdots\cap\Par{\null\varphi_m}.$}}
+	\TextB{\vspace{-4pt}}
+}Using [3.107], [3.109], Exe (23) and the {\COROLLARY} in Exe (20, 21).\par\quad
+(28) $\Par{\range T}{^0}=\null T\apostrophe=\Span{\psi_1,\dots,\psi_m}=\BigPar{\Par{\null\psi_1}\cap\cdots\cap\Par{\null\psi_m}}{^0}.$\par\quad
+(29) $\Par{\null T}{^0}=\range T\apostrophe=\Span{\varphi_1,\dots,\varphi_m}=\BigPar{\Par{\null\varphi_1}\cap\cdots\cap\Par{\null\varphi_m}}{^0}.$\PfEnd\vspace{6pt}
+\Corollary\,\,\,Using the \COMMENT in Exe (26).\par\quad
+$\null T=\Span{v_1,\dots,v_m}\Longleftrightarrow\null T=\Par{\null\varphi_{m+1}}\cap\cdots\cap\Par{\null\varphi_n}\Longleftrightarrow\range T\apostrophe=\Span{\varphi_{m+1},\dots,\varphi_n}.$\par\quad
+——Where $B_V=\Par{v_1,\dots,v_m,\dots,v_n}\Longleftrightarrow B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_m,\dots,\varphi_n}.$\vspace{3pt}\par\quad
+$\range T=\Span{w_1,\dots,w_m}\Longleftrightarrow\range T=\Par{\null\psi_{m+1}}\cap\cdots\cap\Par{\null\psi_n}\Longleftrightarrow\null T\apostrophe=\Span{\psi_{m+1},\dots,\psi_n}.$\par\quad
+——Where $B_W=\Par{w_1,\dots,w_m,\dots,w_n}\Longleftrightarrow B_{W\apostrophe}=\Par{\psi_1,\dots,\psi_m,\dots,\psi_n}.$\par
+\SepLine
 }
 \pagebreak
 %\def\OrbikenIII
@@ -2736,25 +2737,24 @@ And let corres (I) $B_U=\Par{v_{m+1},\dots,v_n},$ \; (II) $B_W=\Par{v_1,\dots,v_
 \ProblemN[]{\hypertarget{3F13}{13}}{
 	\TextNL{Define $T:\Rbb^3\!\rightarrow\!\Rbb^2$ by $T\Par{x,y,z}=\Par{4x+5y+6z,7x+8y+9z}$.\vspace{3pt}}
 	\TextNL{Let $\Par{\varphi_1,\varphi_2},\Par{\psi_1,\psi_2,\psi_3}$ denote the dual bss of std bss of $\Rbb^2$ and $\Rbb^3$.\vspace{4pt}}
-	(a) \TextNL{Describe the liney functionals $T\apostrophe\Par{\varphi_1},T\apostrophe\Par{\varphi_2}\in\Lm{\Rbb^3,\Rbb}$\vspace{3pt}}
-	\Ha\TextNL{{\FontNorm\tgnr For any $\Par{x,y,z}\in\Rbb^3$, $\BigPar{T\apostrophe\Par{\varphi_1}}\Par{x,y,z}=4x+5y+6z, \BigPar{T\apostrophe\Par{\varphi_2}}\Par{x,y,z}=7x+8y+9z$.}\vspace{8pt}}
-	(b) \TextNL{Write $T\apostrophe\Par{\varphi_1}$ and $T\apostrophe\Par{\varphi_2}$ as liney combinations of $\psi_1,\psi_2,\psi_3$.\vspace{2pt}}
-	\Hb\TextNL{{\FontNorm\tgnr$T\apostrophe\Par{\varphi_1}=4\psi_1+5\psi_2+6\psi_3,\,\,T\apostrophe\Par{\varphi_2}=7\psi_1+8\psi_2+9\psi_3.$}\vspace{8pt}}
+	(a) \TextNL{Describe the liney functionals $T\apostrophe\Par{\varphi_1},T\apostrophe\Par{\varphi_2}.$}
+	\Ha\TextNL{{\FontNorm\tgnr For any $\Par{x,y,z}\in\Rbb^3$, $\BigPar{T\apostrophe\Par{\varphi_1}}\Par{x,y,z}=4x+5y+6z, \BigPar{T\apostrophe\Par{\varphi_2}}\Par{x,y,z}=7x+8y+9z$.}\vspace{6pt}}
+	(b) \TextNL{Write $T\apostrophe\Par{\varphi_1}$ and $T\apostrophe\Par{\varphi_2}$ as liney combinations of $\psi_1,\psi_2,\psi_3$.}
+	\Hb\TextNL{{\FontNorm\tgnr$T\apostrophe\Par{\varphi_1}=4\psi_1+5\psi_2+6\psi_3,\,\,T\apostrophe\Par{\varphi_2}=7\psi_1+8\psi_2+9\psi_3.$}\vspace{6pt}}
 	(c) \TextNL{What is $\null T\apostrophe$? What is $\range T\apostrophe$?}
 }\TextNL{\vspace{4pt}}
-\Hc $T\Par{x,y,z}=0\Longleftrightarrow\MathLeftBrace{l}{4x+5y+6z=0\\7x+8y+9z=0}\Longleftrightarrow \MathLeftBrace{l}{x+y+z=0\\y=2z=0}\Longleftrightarrow\Par{x,y,z}\in\Span{e_1-2e_2+e_3}.$\vspace{3pt}\TextNL{}
-\Hc Where $\Par{e_1,e_2,e_3}$ is std bss of $\Rbb^3.$\vspace{1.5pt}\TextNL{}
+\Hc $T\Par{x,y,z}=0\Longleftrightarrow\MathLeftBrace{l}{4x+5y+6z=0\\7x+8y+9z=0}\Longleftrightarrow\hMath{l}{\left\{}{\;\right|}{x=z,\\y=-2z.}\,\hText{$Thus $\null T=\Span{e_1-2e_2+e_3},\\$where $\Par{e_1,e_2,e_3}$ is std bss of $\Rbb^3.}$\vspace{4pt}\TextNL{}
 \Hc Let $\Par{e_1-2e_2+e_3,-2e_2,e_3}$ be a bss, with corres dual bss $\Par{\varepsilon_1,\varepsilon_2,\varepsilon_3}$.\vspace{1.5pt}\TextNL{}
 \Hc Thus $\Span{e_1-2e_2+e_3}=\null T\Rightarrow \Span{e_1-2e_2+e_3}{^0}=\Span{\varepsilon_2,\varepsilon_3}=\range T\apostrophe.$\vspace{1.5pt}\TextNL{}
 \Hc Note that $\varepsilon_k=\varepsilon_k\Par{e_1}\psi_1+\varepsilon_k\Par{e_2}\psi_2+\varepsilon_k\Par{e_3}\psi_3.$\vspace{1.5pt}\TextNL{}
 \Hc And $\MathLeftMid{l}{\varepsilon_2\Par{e_2}=-\frac{\;1\;}{2},\varepsilon_2\Par{e_1}=\varepsilon_2\Par{e_1-2e_2+e_3}+\varepsilon_2\Par{2e_2}-\varepsilon_2\Par{e_3}=1,\\[1.5pt]\varepsilon_3\Par{e_2}=0,\varepsilon_3\Par{e_3}=\varepsilon_3\Par{e_1-2e_2+e_3}+\varepsilon_3\Par{2e_2}-\varepsilon_3\Par{e_3}=-1.}$\vspace{1.5pt}\TextNL{}
-\Hc Hence $\varepsilon_2=\psi_1-\frac{\;1\;}{2}\psi_2,\;\varepsilon_3=-\psi_1+\psi_3.$ Now $\range T\apostrophe=\Span{\psi_1-\frac{\;1\;}{2}\psi_2,-\psi_1+\psi_3}.$\vspace{4.5pt}\TextNL{}
-\Hc\Or $\range T\apostrophe=\Span{T\apostrophe\Par{\varphi_1},T\apostrophe\Par{\varphi_2}}=\Span{4\psi_1+5\psi_2+6\psi_3,7\psi_1+8\psi_2+9\psi_3}.$\vspace{7.5pt}\TextNL{}
-\Hc Supp $T\apostrophe\Par{x\varphi_1+y\varphi_2}=\Par{4x+7y}\varphi_1+\Par{5x+8y}\varphi_2+\Par{6x+9y}\varphi_3=0.$\TextNL{}
+\Hc Hence $\varepsilon_2=\psi_1-\frac{\;1\;}{2}\psi_2,\;\varepsilon_3=-\psi_1+\psi_3.$ Now $\range T\apostrophe=\Span{\psi_1-\frac{\;1\;}{2}\psi_2,\:-\psi_1+\psi_3}.$\vspace{4.5pt}\TextNL{}
+\Hc\Or $\range T\apostrophe=\Span[\BigPar]{T\apostrophe\Par{\varphi_1},\,T\apostrophe\Par{\varphi_2}}=\Span{4\psi_1+5\psi_2+6\psi_3,\:7\psi_1+8\psi_2+9\psi_3}.$\vspace{7.5pt}\TextNL{}
+\Hc Supp $T\apostrophe\Par{x\varphi_1+y\varphi_2}=\Par{4x+7y}\psi_1+\Par{5x+8y}\psi_2+\Par{6x+9y}\psi_3=0.$\TextNL{}
 \Hc Then $x+y=4x+7y=x=y=0.$ Hence $\null T\apostrophe=\zeroSubs.$\vspace{4.5pt}\TextNL{}
-\Hc\Or $\null T=\Span{e_1-2e_2+e_3}\Rightarrow V=\Span{-2e_2,e_3}\oplus\null T.$\vspace{1.5pt}\TextNL{}
-\Hc$\Rightarrow \range T=\Bra{Tx:x\in\Span{-2e_2,e_3}}=\Span{T\Par{-2e_2},T\Par{e_3}}$\vspace{1.5pt}\TextNL{}
-\Hc$=\Span{-10f_1-16f_2,6f_1+9f_2}=\Span{f_1,f_2}=\Rbb^2.$ Now $\null T\apostrophe=\Par{\range T}{^0}=\zeroSubs.$\PfEnd\vspace{-2pt}
+\Hc\Or $\null T=\Span{e_1-2e_2+e_3}\Rightarrow V=\Span{\hspace{-2pt}-2e_2,\:e_3}\oplus\null T.$\vspace{1.5pt}\TextNL{}
+\Hc$\Rightarrow \range T=\Bra{Tx:x\in\Span{-2e_2,\:e_3}}=\Span[\BigPar]{T\Par{-2e_2},\,T\Par{e_3}}$\vspace{1.5pt}\TextNL{}
+\Hc$=\Span{-10f_1-16f_2,\:6f_1+9f_2}=\Span{f_1,\,f_2}=\Rbb^2.$ Now $\null T\apostrophe=\Par{\range T}{^0}=\zeroSubs.$\PfEnd\vspace{-2pt}
 \SepLine
 
 %\ProblemN[]{\hypertarget{3F14}{14}}{
@@ -2772,6 +2772,7 @@ And let corres (I) $B_U=\Par{v_{m+1},\dots,v_n},$ \; (II) $B_W=\Par{v_1,\dots,v_
 %We show ${U^0}=\Span{\varphi_{m+1},\dots,\varphi_n}.$ So that $\dim U^0=n-m=\dim V-\dim U.$\par\quad
 %$\forall\varphi\in U^0,\exists\,a_i\in\Fbb,\varphi=\sum_{i=1}^m a_i\varphi_i+\sum_{i=m+1}^n a_i\varphi_i$ 又 $\forall i\in\Bra{1,\dots,m},\varphi\Par{u_i}=0\Rightarrow a_i=0.$\par\quad
 %Then $\varphi\in\Span{\varphi_{m+1},\dots,\varphi_n}$. Thus $\Span{\varphi_{m+1},\dots,\varphi_n}\supseteq U^0.$ 又 Each $\varphi_i\in U^0.$
+\pagebreak
 
 \ProblemN{\hypertarget{3F37}{37}}{
 	\TextNL{Supp $U$ is a subsp of $V$ and $\pi$ is the quot map. Thus $\pi\apostrophe\in\Lm[\BigPar]{\Par{V\XSlash U}\apostrophe,V\apostrophe}$.\vspace{2pt}}
@@ -2783,15 +2784,13 @@ And let corres (I) $B_U=\Par{v_{m+1},\dots,v_n},$ \; (II) $B_W=\Par{v_1,\dots,v_
 (b) $\psi\in\range\pi\apostrophe\Longleftrightarrow\exists\,\varphi\in \Par{V\XSlash U}\apostrophe,\psi=\varphi\,\circ\,\pi\Longleftrightarrow\null\psi\supseteq U\Longleftrightarrow \psi\in U^0$. Hence $\range\pi\apostrophe=U^0$.\PfEnd
 \SepLine
 
-\pagebreak
-
 \ProblemB{
 	\TextB{Supp $U$ is a subsp of $V.$ Prove $\Par{V\XSlash U}\apostrophe$ is iso to $U^0.$ \hfill\Sbra[3pt]{{\large\tgsc Another proof of \tgbfx[3.106]}}}
 }\par\quad
-Define $\xi:U^0\rightarrow\Par{V\XSlash U}\apostrophe$ by $\xi\Par{\varphi}=\tilde{\varphi},$ where $\tilde{\varphi}\in\Par{V\XSlash U}\apostrophe$ is defined by $\tilde{\varphi}\Par{v+U}=\varphi\Par{v}.$\vspace{4pt}\par\quad
+Define $\xi:U^0\rightarrow\Par{V\XSlash U}\apostrophe$ by $\xi\Par{\varphi}=\tilde{\varphi},$ where $\tilde{\varphi}\in\Par{V\XSlash U}\apostrophe$ is defined by $\tilde{\varphi}\Par{v+U}=\varphi\Par{v}.$\vspace{1pt}\par\quad
 We show $\xi$ is inje and surj.\par\quad
 Inje: $\xi\Par{\varphi}=0=\tilde{\varphi}\Rightarrow\forall v\in V\,\BigPar{\,\forall v+U\in V\XSlash U\,},\tilde{\varphi}\Par{v+U}=\varphi\Par{v}=0\Rightarrow\varphi=0.$\par\quad
-Surj: $\varPhi\in\Par{V\XSlash U}\apostrophe\Rightarrow\forall u\in U,\varPhi\Par{u+U}=\varPhi\Par{0+U}=0\Rightarrow U\subseteq\null\Par{\varPhi\circ\pi}\Rightarrow\xi\Par{\varPhi\circ\pi}=\varPhi.$\PfEnd\vspace{4pt}\quad
+Surj: $\varPhi\in\Par{V\XSlash U}\apostrophe\Rightarrow\forall u\in U,\varPhi\Par{u+U}=\varPhi\Par{0+U}=0\Rightarrow U\subseteq\null\Par{\varPhi\circ\pi}\Rightarrow\xi\Par{\varPhi\circ\pi}=\varPhi.$\PfEnd\vspace{2pt}\quad
 \Or Define $\nu:\Par{V\XSlash U}\apostrophe\rightarrow U^0$ by $\nu\Par{\varPhi}=\varPhi\circ\pi.$ Now $\nu\circ\xi=I_{U^0},\;\xi\circ\nu=I_{\SmallPar[1pt]{V\XSlash U}\apostrophe}\Rightarrow\xi=\nu^{-1}.$\PfEnd\vspace{-2pt}
 \SepLine
 
@@ -2808,9 +2807,8 @@ Surj: $\varPhi\in\Par{V\XSlash U}\apostrophe\Rightarrow\forall u\in U,\varPhi\Pa
 	(a) \TextB{Show $\null \iota\apostrophe=U_U^0=\zeroSubs$\hspace{1pt}$:${\tgnr\FontNorm\;\;$\null\iota\apostrophe=\Par{\range\iota}{^0_U}=U_U^0=\zeroSubs.$}\vspace{2pt}}
 	(b) \TextB{Prove $\range\iota\apostrophe=W_V^0$\hspace{1pt}$:${\tgnr\FontNorm\;\;$\range\iota\apostrophe=\BigPar{\null\iota}{^0_V}=W_V^0.$}\vspace{2pt}}
 	(c) \TextB{Prove $\tilde{\iota\apostrophe}$ is iso from $U\apostrophe\XSlash{\envFontDefault\zeroSubs}$ onto $W^0$\hspace{1pt}$:${\tgnr\FontNorm\;\;By (a), (b) and [3.91](d).}}
-}\par\quad
-(a) $\iota\apostrophe\Par{\psi}=\psi\circ\iota=0\Longleftrightarrow U\subseteq\null\psi.$\par\quad
-(b) Note that $W=\null\Par{\iota}\subseteq\null\Par{\psi\circ\iota}.$ Then $\psi\circ\iota\in W^0\Rightarrow\range\iota\apostrophe\in W^0.$\par\quad\Hb
+}(a) $\iota\apostrophe\Par{\psi}=\psi\circ\iota=0\Longleftrightarrow U\subseteq\null\psi.$\parSol{}
+(b) Note that $W=\null\Par{\iota}\subseteq\null\Par{\psi\circ\iota}.$ Then $\psi\circ\iota\in W^0\Rightarrow\range\iota\apostrophe\in W^0.$\parSol{\Hb}
 Supp $\varphi\in W^0.$ Becs $\null\iota=W\subseteq\null\varphi.$ By \Sbra{3.B \TIPSN{3}}, $\varphi=\varphi\circ\iota=\iota\apostrophe\Par{\varphi}.$\PfEnd
 \SepLine
 
@@ -2819,22 +2817,20 @@ Supp $\varphi\in W^0.$ Becs $\null\iota=W\subseteq\null\varphi.$ By \Sbra{3.B \T
 	(a) \TextNL{Show $\null i\apostrophe=U^0$\hspace{1pt}$:${\tgnr\FontNorm\;\;$\null i\apostrophe=\Par{\range i}{^0}=U^0\Leftarrow\range i=U$.}\vspace{2pt}}
 	(b) \TextNL{Prove $\range i\apostrophe=U\apostrophe$\hspace{1pt}$:${\tgnr\FontNorm\;\;$\range i\apostrophe=\Par{\null i}{_U^0}={\zeroSubs}{_U^0}=U\apostrophe$.}\vspace{2pt}}
 	(c) \TextNL{Prove $\tilde{i\apostrophe}$ is iso from $V\apostrophe\XSlash U^0$ onto $U\apostrophe$\hspace{1pt}$:${\tgnr\FontNorm\;\;By (a), (b) and [3.91](d).}\vspace{2pt}}
-}\par\quad
-(a) $\forall\varphi\in V\apostrophe,i\apostrophe\Par{\varphi}=\varphi\circ i=\varphi\mmid_U.$ Thus $i\apostrophe\Par{\varphi}=0\Longleftrightarrow\forall u\in U,\varphi\Par{u}=0\Longleftrightarrow\varphi\in U^0.$\par\quad
+}(a) $\forall\varphi\in V\apostrophe,i\apostrophe\Par{\varphi}=\varphi\circ i=\varphi\mmid_U.$ Thus $i\apostrophe\Par{\varphi}=0\Longleftrightarrow\forall u\in U,\varphi\Par{u}=0\Longleftrightarrow\varphi\in U^0.$\parSol{}
 (b) Supp $\psi\in U\apostrophe.$ By (3.A.11), $\exists\,\varphi\in V\apostrophe,\varphi\mmid_U=\psi.$ Then $i\apostrophe\Par{\varphi}=\psi.$\PfEnd
 \SepLine
 
 \ProblemB{
-	\TextB{Supp $T\in\Lm{V,W}.$ Prove $\range T\apostrophe=\BigPar{\null T}{^0}.$\hfill\Sbra[3pt]{{\tgsc\large Another proof of \tgnr\tgbfx[3.109](b)}}}
-}\par\quad
-Supp $\varPhi\in\BigPar{\null T}{^0}.$ Becs by (3.B.12), $T\mmid_U:U\rightarrow\range T$ is iso; $V=U\oplus\null T.$\par\quad
-And $\forall v\in V,\exists\,!\,u_v\in U,w_v\in\null T,v=u_v+w_v.$ Define $\iota\in\Lm{V,U}$ by $\iota\Par{v}=u_v.$\vspace{4pt}\par\quad
-Let $\psi=\varPhi\circ\BigPar{T^{-1}\mmid_{\range T}}.$ Then $T\apostrophe\Par{\psi}=\psi\circ T=\varPhi\circ\BigPar{T^{-1}\mmid_{\range T}\circ T\mmid_V}.$\vspace{2pt}\par\quad
-Where $T^{-1}\mmid_{\range T}:\range T\rightarrow U;\;\;T:V\rightarrow\range T.$ Note that $T^{-1}\mmid_{\range T}\circ T\mmid_V=\iota.$\vspace{2pt}\par\quad
+	\TextB{Supp $T\in\Lm{V,W}.$ Prove $\range T\apostrophe=\BigPar{\null T}{^0}.$\hfill\Sbra[3pt]{{\tgsc\large Another proof of \tgnr\tgbfx[3.109](b)}}\vspace{2pt}}
+}Supp $\varPhi\in\BigPar{\null T}{^0}.$ Becs by (3.B.12), $T\mmid_U:U\rightarrow\range T$ is iso; $V=U\oplus\null T.$\parSol{}
+And $\forall v\in V,\exists\,!\,u_v\in U,w_v\in\null T,v=u_v+w_v.$ Define $\iota\in\Lm{V,U}$ by $\iota\Par{v}=u_v.$\vspace{4pt}\parSol{}
+Let $\psi=\varPhi\circ\BigPar{T^{-1}\mmid_{\range T}}.$ Then $T\apostrophe\Par{\psi}=\psi\circ T=\varPhi\circ\BigPar{T^{-1}\mmid_{\range T}\circ T\mmid_V}.$\vspace{2pt}\parSol{}
+Where $T^{-1}\mmid_{\range T}:\range T\rightarrow U;\;\;T:V\rightarrow\range T.$ Note that $T^{-1}\mmid_{\range T}\circ T\mmid_V=\iota.$\vspace{2pt}\parSol{}
 By \Sbra{3.B \TIPSN{3}}, $\varPhi=\varPhi\circ \iota.$ Thus $T\apostrophe\Par{\psi}=\psi\circ T=\varPhi\circ{\iota}=\varPhi.$\PfEnd
 \SepLine
 }
-
+\pagebreak
 %\def\OrbikenVII
 {
 \ProblemB[]{
@@ -2844,7 +2840,7 @@ By \Sbra{3.B \TIPSN{3}}, $\varPhi=\varPhi\circ \iota.$ Thus $T\apostrophe\Par{\p
 		\range T=W\Longleftrightarrow\Par{\range T}{^0}=\zeroSubs=\null T\apostrophe
 		}$}${}\Longleftrightarrow T\apostrophe$ is inv.\vspace{4pt}}
 }\SepLine
-\pagebreak
+
 \ProblemN{\hypertarget{3F15}{15}}{
 	\TextNL{Supp $T\in\Lm{V,W}$. Prove $T\apostrophe=0\Longleftrightarrow T=0.$}
 }\par\quad
@@ -2859,7 +2855,7 @@ Define $\psi\in W\apostrophe$ by $\psi\Par{u+\lambda w}=\lambda.$ So that $\psi\
 \SepLine
 
 \ProblemN[]{\hypertarget{3F12}{12}}{
-	\TextNL{{\large\tgnr\NOTICE that $I_{V\apostrophe}:V\apostrophe\rightarrow V\apostrophe.$} Now $\forall\varphi\in V\apostrophe,I_{V\apostrophe}\Par{\varphi}=\varphi=\varphi\circ I_V=I_V\apostrophe\Par{\varphi}.$ Thus $I_{V\apostrophe}=I_V\apostrophe.$}
+	\TextNL{{\large\tgnr Note that $I_{V\apostrophe},I_{V}\upapostrophe:V\apostrophe\rightarrow V\apostrophe.$} \,For $\varphi\in V\apostrophe,\:I_{V\apostrophe}\Par{\varphi}=\varphi=\varphi\circ I_V=I_V\upapostrophe\Par{\varphi}.$ Thus $I_{V\apostrophe}=I_V\upapostrophe.$}
 }\SepLine
 
 \ProblemN{\hypertarget{3F16}{16}}{
@@ -2905,24 +2901,18 @@ $\forall k\in\Bra{1,\dots,m},\Sbra{T\apostrophe\Par{\psi_k}}\Par{v}=\psi_k\BigPa
 {
 \newcommand{\dualVn}[1]{V_{\!#1\;\,}\upapostrophe}
 \def\dualVm{V_{\!m\,}\upapostrophe}
-\ProblemN[]{\hypertarget{3F5}{5}}{
-	\TextN{Prove $\BigPar{V_{\!1}\times\dots\times V_{\!m}}\apostrophe$ and $\dualVn{1}\times\dots\times\dualVm$ are iso.\hfill\Sbra[3pt]{{\large\tgnr Using notas in (3.E.2).}}}\vspace{4pt}
-}\:$\MathRightBrace{l}{$
-	Define $\varphi:\Par{V_{\!1}\times\dots\times V_{\!m}}\apostrophe\rightarrow \dualVn{1}\times\dots\times \dualVm\\\qquad$ by $\varphi\Par{T}=\Par{T\circ R_1,\dots,T\circ R_m}=\Par{R\apostrophe_1\Par{T},\dots,R\apostrophe_m\Par{T}}.\\$
-	Define $\psi:\dualVn{1}\times\dots\times \dualVm\rightarrow\Par{V_{\!1}\times\dots\times V_{\!m}}\apostrophe\\\qquad$ by $\psi\Par{T_1,\dots,T_m}=T_1S_1+\dots+T_mS_m=S\apostrophe_1\Par{T_1}+\dots+S\apostrophe_m\Par{T_m}.$
-	$}\Rightarrow\psi=\varphi^{-1}.$\PfEnd
+\ProblemN{\hypertarget{3F5}{5}}{
+	\TextN{Prove $\BigPar{V_{\!1}\times\dots\times V_{\!m}}\apostrophe$ and $\dualVn{1}\times\dots\times\dualVm$ are iso.\hfill\FontNorm\Sbra[3pt]{{\normalsize\tgnr Using notas in (3.E.2).}}}
+}Define $\chi:\Par{V_{\!1}\times\dots\times V_{\!m}}\apostrophe\rightarrow \dualVn{1}\times\dots\times \dualVm$ by $\chi\Par{T}=\Par{T\circ R_1,\dots,T\circ R_m}=\Par{R\apostrophe_1\Par{T},\dots,R\apostrophe_m\Par{T}}.$\parSol{}
+Define the $\chi^{-1}$ by $\chi^{-1}\Par{T_1,\dots,T_m}=T_1S_1+\dots+T_mS_m=S\apostrophe_1\Par{T_1}+\dots+S\apostrophe_m\Par{T_m}.$\PfEnd
 \SepLine
 
-\ProblemBnoor[]{\hypertarget{3F4e8}{4E 8}}{
-	\TextB{Supp $B_V=\Par{v_1,\dots,v_{n}},\,B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_{n}}$.}
-	\TextNL{$\MathRightBrace{l}{$
-			Define $\Gamma:V\rightarrow\Fbb^n$ by
-			$\Gamma\Par{v}=\Par{\varphi_1\Par{v},\dots,\varphi_{n}\Par{v}}$.
-			$ \\ $
-			Define $\Lambda:\Fbb^n\rightarrow V$  by
-			$\Lambda\Par{a_1,\dots,a_{n}}=a_1v_1+\dots+a_{n}v_{n}$.
-			$}\Rightarrow \Lambda=\Gamma^{-1}.$}
-}\vspace{6pt}
+\ProblemBnoor{\hypertarget{3F4e8}{4E 8}}{
+	\TextB{Supp $B_V=\Par{v_1,\dots,v_{n}},$ with corres $B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_{n}}.$}
+	\TextB{Describe the relation between $v$'s and $\varphi$'s using inv liney maps.}
+}Define $\Gamma:V\rightarrow\Fbb^n$ by $\Gamma\Par{v}=\Par{\varphi_1\Par{v},\dots,\varphi_{n}\Par{v}}.$\parSol{}
+Define $\Lambda:\Fbb^n\rightarrow V$  by
+$\Lambda\Par{a_1,\dots,a_n}=a_1v_1+\dots+a_nv_n.$ \;Now $\Lambda=\Gamma^{-1}.$\PfEnd
 \SepLine
 }
 \pagebreak
