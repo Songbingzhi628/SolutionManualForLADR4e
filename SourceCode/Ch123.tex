@@ -2434,7 +2434,7 @@ Let $\Omega=\Bra[\envFontA]{\varphi\in\Span{\varphi_{\alpha_1},\dots,\varphi_{\a
 
 \ProblemN{\hypertarget{3F24}{24}}{
 	\TextNL{Prove, using the pattern of [3.104], that $\dim U+\dim U^0=\dim V$.}
-}Let $B_U=\Par{u_1,\dots,u_m},B_V=\Par{u_1,\dots,u_m,v_1,\dots,v_n},B_{V\apostrophe}=\Par{\psi_1,\dots,\psi_m,\varphi_1,\dots,\dots\varphi_n}.$\parSol{}
+}Let $B_U=\Par{u_1,\dots,u_m},B_V=\Par{u_1,\dots,u_m,v_1,\dots,v_n},B_{V\apostrophe}=\Par{\psi_1,\dots,\psi_m,\varphi_1,\dots,\varphi_n}.$\parSol{}
 Supp $\psi=\sum_{i=1}^ma_i\psi_i+\sum_{j=1}^nb_j\varphi_j\in U^0\Rightarrow$ each $\psi\Par{u_k}=a_k=0.$ Thus $U^0\subseteq\Span{\varphi_1,\dots,\varphi_n}.$\PfEnd
 \SepLine
 \BulletPointX\TipsN{3}\,\,\,Let $B_{U^0}=\Par{\varphi_1,\dots,\varphi_m},B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_n}\Rightarrow B_V=\Par{v_1,\dots,v_n}.$\TextB{}
@@ -2555,61 +2555,50 @@ Define $\psi\in W\apostrophe$ by $\psi\Par{u+\lambda w}=\lambda\Rightarrow\psi\P
 %$\forall\psi\in \null\mathcal{T},\Sbra{T\apostrophe\Par{\psi}}\Par{v}=\psi\Par{Tv}=\psi\Par{a_1w_1+\dots+a_pw_p}=0=\Sbra{\mathcal{T}\Par{\psi}}\Par{v}.$\par\quad
 %$\forall k\in\Bra{1,\dots,m},\Sbra{T\apostrophe\Par{\psi_k}}\Par{v}=\psi_k\BigPar{Tv}=\psi_k\Par{a_1w_1+\dots+a_mw_m}=a_k=\varphi_k\Par{v}=\Sbra{\mathcal{T}\Par{\psi}}\Par{v}.$\PfEnd\vspace{4pt}
 %\AComm This is another proof of [3.109(a)]: $\dim\range T=\dim\range T\apostrophe.$\par
+\pagebreak
 
 \ProblemBnoor{\hypertarget{3F4e8}{4E 8}}{
 	\TextB{Describe the relation of $B_V=\Par{v_1,\dots,v_{n}}$ and the corres $B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_{n}}$ using isos.}
 }Define $\Gamma:V\rightarrow\Fbb^n$ by $\Gamma\Par{v}=\BigPar{\varphi_1\Par{v},\dots,\varphi_{n}\Par{v}},$ and
 $\Gamma^{-1}\Par{a_1,\dots,a_n}=a_1v_1+\dots+a_nv_n.$\PfEnd
 \SepLine
-\pagebreak
 
 \ProblemN{\hypertarget{3F4e24}{}\hypertarget{3F6}{6}}{
 	\TextN{Define \,$\Gamma: V\apostrophe\rightarrow\Fbb^m\,$ by $\,\Gamma\Par{\varphi}=\BigPar{\varphi\Par{v_1},\dots,\varphi\Par{v_m}},$ where $v_1,\dots,v_m\in V$.}
 	(a) \TextN{Show $\Span{v_1,\dots,v_m}=V\,\Longleftrightarrow \Gamma$ is inje.}
 	(b) \TextN{Show $\Par{v_1,\dots,v_m}$ is liney indep $\Longleftrightarrow \Gamma$ is surj.}
-}\par\quad
-(a) \NOTICE that $\Gamma\Par{\varphi}=0\Longleftrightarrow\varphi\Par{v_1}=\dots=\varphi\Par{v_m}=0\Longleftrightarrow\null\varphi=\Span{v_1,\dots,v_m}.$\par\quad\Ha
-If $\Gamma$ is inje, then $\Gamma\Par{\varphi}=0\Longleftrightarrow V=\null\varphi=\Span{v_1,\dots,v_m}.$\par\quad\Ha
-If $V=\Span{v_1,\dots,v_m},$ then $\Gamma\Par{\varphi}=0\Longleftrightarrow\null\varphi=\Span{v_1,\dots,v_m},$ thus $\Gamma$ is inje.\par\quad
-(b) Supp $\Gamma$ is surj. Then let $\Gamma\Par{\varphi_i}=e_i$ for each $i$, where $\Par{e_1,\dots,e_m}$ is std bss of $\Fbb^m$.\par\quad\Hb
-Then by (3.A.4), $\Par{\varphi_1,\dots,\varphi_m}$ is liney indep.\par\quad\Hb
-Now $a_1 v_1+\dots+a_m v_m=0\Rightarrow 0=\varphi_{i}\Par{a_1 v_1+\dots+a_m v_m}=a_i$ for each $i$.\par\quad\Hb
-Supp $\Par{v_1,\dots,v_m}$ is liney indep. Let $U=\Span{\varphi_1,\dots,\varphi_m},B_{U\apostrophe}=\Par{\varphi_1,\dots,\varphi_m}.$\par\quad\Hb
-Thus $\forall\Par{a_1,\dots,a_m}\in\Fbb^m,\exists\,!\,\varphi=a_1\varphi_1+\dots+a_m\varphi_m.$\par\quad\Hb
-Let $W$ be suth $V=U\oplus W.$ Now $\forall v\in V,\exists\,!\,u_v\in U,w_v\in W,v=u_v+w_v.$\par\quad\Hb
-Define $\iota\in\Lm{V,U}$ by $\iota\Par{v}=u_v.$ So that $\Gamma\Par{\varphi\circ i}=\Par{a_1,\dots,a_m}.$\PfEnd\vspace{8pt}\quad
-\Or Let $\Par{e_1,\dots,e_m}$ be std bss of $\Fbb^m$ and let $\Par{\psi_1,\dots,\psi_m}$ be corres dual bss.\par\quad
-Define $\Psi:\Fbb^m\rightarrow\Par{\Fbb^m}\apostrophe$ by $\Psi\Par{e_k}=\psi_k.$ Then $\Psi$ is iso.\par\quad
+}Let $\Par{e_1,\dots,e_m}$ be the std bss of $\Fbb^m.$\par\quad
+(a) Becs $\Gamma\Par{\varphi}=0\Longleftrightarrow\varphi\Par{v_1}=\dots=\varphi\Par{v_m}=0\Longleftrightarrow\null\varphi=\Span{v_1,\dots,v_m}.$ Immed.\vspace{1pt}\par\quad
+(b) Supp $\Gamma$ is surj. Let each $e_k=\Gamma\Par{\varphi_k}\Rightarrow\varphi_k\Par{v_j}=\delta_{j,k}.$ Now $a_1v_1+\dots+a_mv_m=0\Rightarrow$ each $a_k=\varphi_k\Par{0}.$\vspace{1pt}\par\quad\Hb
+Supp $\Par{v_1,\dots,v_m}$ is liney indep. Let $U=\Span{v_1,\dots,v_m},B_{U\apostrophe}=\Par{\psi_1,\dots,\psi_m}.$ Let $W\oplus U=V.$\par\quad\Hb
+Define $\iota:u_v+w_v\mapsto u_v.$ Each $\psi_k\circ\iota=\varphi_k\in V\apostrophe\Rightarrow\varphi_k\Par{v_j}=\psi_k\Par{v_j}=\delta_{j,k}\Rightarrow$ each $e_k=\Gamma\Par{\varphi_k}.$\PfEnd\vspace{4pt}\quad
+\Or Let $\Par{\psi_1,\dots,\psi_m}$ be dual bss of the std bss of $\Fbb^m.$ Define an iso $\Psi:\Fbb^m\rightarrow\Par{\Fbb^m}\apostrophe$ by $\Psi\Par{e_k}=\psi_k.$\par\quad
 Define $T\in\Lm{\Fbb^m,V}$ by $Te_k=v_k.$ Now $T\Par{x_1,\dots,x_m}=T\Par{x_1e_1+\dots+x_me_m}=x_1v_1+\dots+x_mv_m.$\par\quad
-$\forall\varphi\in V\apostrophe,k\in\Bra{1,\dots,m},\Sbra{T\apostrophe\Par{\varphi}}\Par{e_k}=\varphi\Par{Te_k}=\varphi\Par{v_k}=\Sbra{\varphi\Par{v_1}\circ\psi_1+\dots+\varphi\Par{v_m}\circ\psi_m}\Par{e_k}$\par\quad
-Now $T\apostrophe\Par{\varphi}=\varphi\Par{v_1}\circ\psi_1+\dots+\varphi\Par{v_m}\circ\psi_m=\Psi\BigPar{\varphi\Par{v_1},\dots,\varphi\Par{v_m}}=\Psi\BigPar{\Gamma\Par{\varphi}}.$ Hence $T\apostrophe=\Psi\circ\Gamma.$\par\quad
+$\forall\varphi\in V\apostrophe,k\in\Bra{1,\dots,m},\Sbra{T\apostrophe\Par{\varphi}}\Par{e_k}=\varphi\Par{Te_k}=\varphi\Par{v_k}=\Sbra{\varphi\Par{v_1}\psi_1+\dots+\varphi\Par{v_m}\psi_m}\Par{e_k}$\par\quad
+Now $T\apostrophe\Par{\varphi}=\varphi\Par{v_1}\psi_1+\dots+\varphi\Par{v_m}\psi_m=\Psi\BigPar{\varphi\Par{v_1},\dots,\varphi\Par{v_m}}=\Psi\BigPar{\Gamma\Par{\varphi}}.$ Hence $T\apostrophe=\Psi\circ\Gamma.$\par\quad
 By (3.B.3),
-(a) $\range T=\Span{v_1,\dots,v_m}=V\Longleftrightarrow T\apostrophe=\Psi\circ\Gamma$ inje $\Longleftrightarrow\Gamma$ inje.\par\quad
-\Blind{By (3.B.3),} (b) $\Par{v_1,\dots,v_m}$ is liney indep $\Longleftrightarrow T$ is inje $\Longleftrightarrow T\apostrophe=\Psi\circ\Gamma$ surj $\Longleftrightarrow\Gamma$ surj.\PfEnd
+(a) $\range T=\Span{v_1,\dots,v_m}=V\Longleftrightarrow T\apostrophe$ inje $\Longleftrightarrow\Gamma$ inje.\par\quad
+\Blind{By (3.B.3),} (b) $\Par{v_1,\dots,v_m}$ is liney indep $\Longleftrightarrow T$ is inje $\Longleftrightarrow T\apostrophe$ surj $\Longleftrightarrow\Gamma$ surj.\PfEnd
 \SepLine
 
 \ProblemBnoor{\hypertarget{3F4e25}{4E 25}}{
 	\TextB{Define \,$\Gamma: V\rightarrow\Fbb^m\,$ by $\,\Gamma\Par{v}=\BigPar{\varphi_1\Par{v},\dots,\varphi_m\Par{v}},$ where $\varphi_1,\dots,\varphi_m\in V\apostrophe.$}
 	(c) \TextB{Show $\Span{\varphi_1,\dots,\varphi_m}=V\apostrophe\,\Longleftrightarrow \Gamma$ is inje.}
 	(d) \TextB{Show $\Par{\varphi_1,\dots,\varphi_m}$ is liney indep $\Longleftrightarrow \Gamma$ is surj.}
-}\par\quad
-(c) \NOTICE that $\Gamma\Par{v}=0\Longleftrightarrow\varphi_1\Par{v}=\dots=\varphi_m\Par{v}=0\Longleftrightarrow v\in\Par{\null \varphi_1}\cap\dots\cap\Par{\null\varphi_m}.$\par\quad\Hc
-By Exe (4E 23) and (18), $\Span{\varphi_1,\dots,\varphi_m}=V\apostrophe\Longleftrightarrow\Par{\null \varphi_1}\cap\dots\cap\Par{\null\varphi_m}=\zeroSubs.$\par\quad\Hc
-And $\null\Gamma=\Par{\null \varphi_1}\cap\dots\cap\Par{\null\varphi_m}.$ Hence $\Gamma$ inje $\Longleftrightarrow\null\Gamma=\zeroSubs\Longleftrightarrow\Span{\varphi_1,\dots,\varphi_m}=V\apostrophe.$\par\quad
-(d) Supp $\Par{\varphi_1,\dots,\varphi_m}$ is liney indep. Then by Exe (31), $\Par{v_1,\dots,v_m}$ is liney indep.\par\quad\Hd
-Thus $\forall\Par{a_1,\dots,a_m}\in\Fbb,\exists\,!\,v=\sum_{i=1}^m a_i v_i\in V\Rightarrow\varphi_i\Par{v}=a_i,\Gamma\Par{v}=\Par{a_1,\dots,a_m}.$ Hence $\Gamma$ is surj.\par\quad\Hd
-Supp $\Gamma$ is surj. Let $\Par{e_1,\dots,e_m}$ be std bss of $\Fbb^m$.\par\quad\Hd
-Supp $v_i\in V$ suth $\Gamma\Par{v_i}=\Par{\varphi_1\Par{v_i},\dots,\varphi_m\Par{v_i}}=e_i,$ for each $i.$\par\quad\Hd
-Then $\Par{v_1,\dots,v_m}$ is liney indep. And $\varphi_j\Par{v_k}=\delta_{j,k}.$\par\quad\Hd
-Now $a_1\varphi_1+\dots+a_m\varphi_m=0\Rightarrow 0\Par{v_i}=a_i$ for each $i.$ Hence $\Par{\varphi_1,\dots,\varphi_m}$ is liney indep.\par\quad\Hd
-\Or Let $\Span{v_1,\dots,v_m}=U.$ Then $B_{U\apostrophe}=\Par{\varphi_1\mmid_U,\dots,\varphi_m\mmid_U}.$ Hence $\Par{\varphi_1,\dots,\varphi_m}$ is liney indep.\PfEnd\vspace{8pt}\quad
-\Or Simlr to Exe (6), we get $\Par{e_1,\dots,e_m},\Par{\psi_1,\dots,\psi_m}$ and the iso $\Psi.$\par\quad
-$\forall\Par{x_1,\dots,x_m}\in\Fbb^m,\Gamma\apostrophe\BigPar{\Psi\Par{x_1,\dots,x_m}}=\Gamma\apostrophe\BigPar{\Psi\Par{x_1e_1+\dots+x_me_m}}=\Par{x_1\psi_1+\dots+x_m\psi_m}\circ\Gamma.$\par\quad
-$\forall v\in V,\Sbra{\Gamma\apostrophe\BigPar{\Psi\Par{x_1,\dots,x_m}}}\Par{v}=\Sbra{x_1\psi_1+\dots+x_m\psi_m}\BigPar{\Gamma\Par{v}}=\Sbra{x_1\varphi_1+\dots+x_m\varphi_m}\Par{v}.$\par\quad
-Now $\Gamma\apostrophe\BigPar{\Psi\Par{x_1,\dots,x_m}}=x_1\varphi_1+\dots+x_m\varphi_m.$\par\quad
-Define $\Phi:\Fbb^m\rightarrow\Par{\Fbb^m}\apostrophe$ by $\Phi=\Psi\circ\Gamma.\;\Phi\Par{x_1,\dots,x_m}=x_1\varphi_1+\dots+x_m\varphi_m.$ Thus by (4E 3.B.3),\par\quad
-(c) the inje of $\Phi$ corres to $\Par{\varphi_1,\dots,\varphi_m}$ spanning $V\apostrophe;$\; 又 $\Phi=\Psi\circ\Gamma$ inje $\Longleftrightarrow\Gamma$ inje.\par\quad
-(d) the surj of $\Phi$ corres to $\Par{\varphi_1,\dots,\varphi_m}$ being liney indep;\; 又 $\Phi=\Psi\circ\Gamma$ surj $\Longleftrightarrow\Gamma$ surj.\PfEnd
+}Let $\Par{e_1,\dots,e_m}$ be the std bss of $\Fbb^m.$\par\quad
+(c) Becs $\Gamma\Par{v}=0\Longleftrightarrow\varphi_1\Par{v}=\dots=\varphi_m\Par{v}=0\Longleftrightarrow v\in\Par{\null \varphi_1}\cap\dots\cap\Par{\null\varphi_m}.$\par\quad\Hc
+By Exe (4E 23), $\Span{\varphi_1,\dots,\varphi_m}=V\apostrophe\Longleftrightarrow\null\Gamma=\Par{\null \varphi_1}\cap\dots\cap\Par{\null\varphi_m}=\zeroSubs.$\par\quad
+(d) Supp $\Par{\varphi_1,\dots,\varphi_m}$ is liney indep. \Sbra[3pt]{{\tgsl Req Finide}} \;Extend to $B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_n}.$\par\quad\Hb
+Then by Exe (31), $B_V=\Par{v_1,\dots,v_n}$ and each $\varphi_k\Par{v_j}=\delta_{j,k}\Rightarrow$ each $e_k=\Gamma\Par{\varphi_k}.$\par\quad\Hd
+Supp $\Gamma$ is surj. Let each $e_k=\Gamma\Par{v_k}=\BigPar{\varphi_1\Par{v_k},\dots,\varphi_m\Par{v_k}}.$\par\quad\Hd
+Now $a_1\varphi_1+\dots+a_m\varphi_m=0\Rightarrow$ each $a_k=0\Par{v_k}.$\par\quad\Hd
+\Or Let $U=\Span{v_1,\dots,v_m}.$ Then $B_{U\apostrophe}=\BigPar{\varphi_1\Big|{_U},\dots,\varphi_m\Big|{_U}}\Rightarrow\Par{\varphi_1,\dots,\varphi_m}$ liney indep.\PfEnd\vspace{8pt}\quad
+\Or Let $\Par{\psi_1,\dots,\psi_m}$ be dual bss of the std bss of $\Fbb^m.$ Define an iso $\Psi:\Fbb^m\rightarrow\Par{\Fbb^m}\apostrophe$ by $\Psi\Par{e_k}=\psi_k.$\par\quad
+$\forall\Par{x_1,\dots,x_m}\in\Fbb^m,\Gamma\apostrophe\BigPar{\Psi\Par{x_1,\dots,x_m}}=\Par{x_1\psi_1+\dots+x_m\psi_m}\circ\Gamma.$\par\quad
+$\forall v\in V,\Sbra{\Gamma\apostrophe\BigPar{\Psi\Par{x_1,\dots,x_m}}}\Par{v}=\Sbra{x_1\psi_1+\dots+x_m\psi_m}\BigPar{\varphi_1\Par{v},\dots,\varphi_m\Par{v}}=x_1\varphi_1\Par{v}+\dots+x_m\varphi_m\Par{v}.$\vspace{1pt}\par\quad
+Now $\Gamma\apostrophe\BigPar{\Psi\Par{x_1,\dots,x_m}}=x_1\varphi_1+\dots+x_m\varphi_m.$ Define $\Phi:\Fbb^m\rightarrow V\apostrophe$ by $\Phi=\Gamma\apostrophe\circ\Psi.$ Thus by (3.B.3),\par\quad
+(c) $\Gamma$ inje $\Longleftrightarrow\Gamma\apostrophe$ surj $\Longleftrightarrow\Phi$ surj $\Longleftrightarrow\Par{\varphi_1,\dots,\varphi_m}$ spanning $V\apostrophe.$\par\quad
+(d) $\Gamma$ surj $\Longleftrightarrow\Gamma\apostrophe$ inje $\Longleftrightarrow\Phi$ inje $\Longleftrightarrow\Par{\varphi_1,\dots,\varphi_m}$ being liney indep.\PfEnd
 \SepLine
 
 
@@ -2617,7 +2606,7 @@ Define $\Phi:\Fbb^m\rightarrow\Par{\Fbb^m}\apostrophe$ by $\Phi=\Psi\circ\Gamma.
 	\TextN{Let $B_V=\Par{v_1,\dots,v_n},\,B_{V\apostrophe}=\Par{\varphi_1,\cdots,\varphi_n}$. Then $\forall\psi\in V\apostrophe,\psi=\psi\Par{v_1}\varphi_1+\dots+\psi\Par{v_n}\varphi_n.$}
 	\ANote {\tgsl For other $B_V'=\Par{u_1,\dots,u_n},B_{V\apostrophe}'=\Par{\rho_1,\dots,\rho_n},\forall\psi\in V\apostrophe,\psi=\psi\Par{u_1}\rho_1+\dots+\psi\Par{u_n}\rho_n.$}\TextB{}\vspace{2pt}
 }$\psi\Par{v}=\psi\XPar{\sum_{i=1}^n a_i v_i}=\sum_{i=1}^n a_i\psi\Par{v_i}=\sum_{i=1}^n\psi\Par{v_{i}}\varphi_i\Par{v}=\Sbra{\psi\Par{v_1}\varphi_1+\dots+\psi\Par{v_n}\varphi_n}\Par{v}.$\PfEnd
-\SepLine
+\SepLine\pagebreak
 
 \ProblemN[]{\hypertarget{3F13}{13}}{
 	\TextNL{Define $T:\Rbb^3\!\rightarrow\!\Rbb^2$ by $T\Par{x,y,z}=\Par{4x+5y+6z,7x+8y+9z}$.\vspace{3pt}}
@@ -2646,12 +2635,12 @@ Define $\Phi:\Fbb^m\rightarrow\Par{\Fbb^m}\apostrophe$ by $\Phi=\Psi\circ\Gamma.
 \SepLine
 
 %\ProblemN[]{\hypertarget{3F14}{14}}{
-	%	\TextNL{Define $T:\PoRi\rightarrow\PoRi$ by $\Par{Tp}\Par{x}=x^2 p\Par{x}+p\apostrophe\apostrophe\Par{x}$ for each $x\in\Rbb.$\vspace{4pt}}
-	%	(a) \TextNL{Supp $\varphi\in\PoRi\apostrophe$ is defined by $\varphi\Par{p}=p\apostrophe\Par{4}$. Describe $T\apostrophe\Par{\varphi}\in\PoRi\apostrophe$.\vspace{4pt}}
-	%	\Ha\TextNL{\FontNorm$\BigPar{T\apostrophe\Par{\varphi}}\Par{p}=\Sbra{x^2p\Par{x}+p\apostrophe\apostrophe\Par{x}}\apostrophe\Par{4}=\Sbra{2xp\Par{x}+x^2p\apostrophe\Par{x}+p\apostrophe\apostrophe\apostrophe\Par{x}}\Par{4}=8p\Par{4}+16p\apostrophe\Par{4}+p\apostrophe\apostrophe\apostrophe\Par{4}$.\vspace{8pt}}
-	%	(b) \TextNL{Supp $\varphi\in\PoRi\apostrophe$ is defined by $\varphi\Par{p}=\int_0^1 p\Par{x}\d x$. Evaluate $\BigPar{T\apostrophe\Par{\varphi}}\Par{x^3}$.\vspace{4pt}}
-	%	\Hb\TextNL{\FontNorm $\BigPar{T\apostrophe\Par{\varphi}}\Par{x^3}=\int_0^1\Par{x^5+6x}\d x=\int_0^1\XPar{\frac{1}{6}x^6+3x^2}\apostrophe\d x=\frac{19}{6}.$\PfEnd}
-	%}\SepLine
+%		\TextNL{Define $T:\PoRi\rightarrow\PoRi$ by $\Par{Tp}\Par{x}=x^2 p\Par{x}+p\apostrophe\apostrophe\Par{x}$ for each $x\in\Rbb.$\vspace{4pt}}
+%		(a) \TextNL{Supp $\varphi\in\PoRi\apostrophe$ is defined by $\varphi\Par{p}=p\apostrophe\Par{4}$. Describe $T\apostrophe\Par{\varphi}\in\PoRi\apostrophe$.\vspace{4pt}}
+%		\Ha\TextNL{\FontNorm$\BigPar{T\apostrophe\Par{\varphi}}\Par{p}=\Sbra{x^2p\Par{x}+p\apostrophe\apostrophe\Par{x}}\apostrophe\Par{4}=\Sbra{2xp\Par{x}+x^2p\apostrophe\Par{x}+p\apostrophe\apostrophe\apostrophe\Par{x}}\Par{4}=8p\Par{4}+16p\apostrophe\Par{4}+p\apostrophe\apostrophe\apostrophe\Par{4}$.\vspace{8pt}}
+%		(b) \TextNL{Supp $\varphi\in\PoRi\apostrophe$ is defined by $\varphi\Par{p}=\int_0^1 p\Par{x}\d x$. Evaluate $\BigPar{T\apostrophe\Par{\varphi}}\Par{x^3}$.\vspace{4pt}}
+%		\Hb\TextNL{\FontNorm $\BigPar{T\apostrophe\Par{\varphi}}\Par{x^3}=\int_0^1\Par{x^5+6x}\d x=\int_0^1\XPar{\frac{1}{6}x^6+3x^2}\apostrophe\d x=\frac{19}{6}.$\PfEnd}
+%	}\SepLine
 
 \ChEnd
 
