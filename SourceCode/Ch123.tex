@@ -59,19 +59,11 @@ By Assoc: $\Par{a+\infty}+\Par{-\infty}\neq a+\Par{\infty+\Par{-\infty}}.$\parSo
 	\TextB{\AExa $\Fbb=\Zbb_m=\Bra{K_0,K_1,\dots,K_{m-1}},\forall m-1\in\Nbp$ suth $\Par{m-1}$ is a prime.}
 }\SepLine
 \ChEnd
+\pagebreak
 
 \ChDecl{Ch1C}{1$\cdot$C}{}\orMode{\hLk{1C7}{7}\;\;\hLk{1C8}{8}\;\;\hLk{1C9}{9}\;\;\hLk{1C11}{11}\;\;\hLk{1C12}{12}\;\;\hLk{1C13}{13}\;\;\hLk{1C15}{15}\;\;\hLk{1C16}{16}\;\;\hLk{1C17}{17}\;\;\hLk{1C18}{18}\;\;\hLk{1C21}{21}\;\;\hLk{1C23}{23}\;\;\hLk{1C24}{24}}{[2]: 7, 8, 9, 24, 15, 16, 17, 18; [3]: 11, 12, 13; [4]: 21, 23.}
 
 \vspace{6pt}
-
-\BulletPointX\NoteForSmall{[1.45]}\;\;If $\Fbb=\Bra{0,1}.$ Prove if $U+W$ is a direct sum, then $U\cap W=\zeroSubs.$\TextB{}
-Becs $\forall v\in U\cap W,\exists\,!\,\Par{u,w}\in U\times W,v=u+w.$\TextB{}
-If $U\cap W\neq\zeroSubs,$ then $\Par{u,w}$ can be $\Par{v,0}$ or $\Par{0,v},$ ctradic the uniqnes.\PfEnd\vspace{-2pt}
-\SepLine
-
-\BulletPointX\TipsN{1}\,\,\,Supp $U,W\subseteq V.$ And $U,W,V$ are vecsps $\Rightarrow U,W$ are subsps of $V.$\TextB{}
-\IndentTipsN{1}Then $U+W$ is also a subsp of $V.$ Becs $\forall u\in U,w\in U,u+w\in V$ since $u,w\in V.$
-\SepLine
 
 \ProblemN{\hypertarget{1C7}{7}}{
 	\TextN{Give a nonempty $U\subseteq\Rbb^2,$ $U$ is closd taking add invs and add, but is not a subsp of $\Rbb^2.$}
@@ -81,31 +73,6 @@ Let $\Zbb^2,\Qbb^2.$\SepLine
 \ProblemN{\hypertarget{1C8}{8}}{
 	\TextN{Give a nonempty $U\subseteq\Rbb^2,$ $U$ is closd scalar multi, but is not a subsp of $\Rbb^2$.}
 }Let $U=\Bra{\Par{x,y}\in\Rbb^2:x=0\vee y=0}.$\par
-\SepLine
-
-\ProblemN{\hypertarget{1C9}{9}}{
-	\TextN{A function $f:\Rbb\rightarrow\Rbb$ is called periodic if $\exists\,p\in\Nbp,\;f\Par{x}=f\Par{x+p}$ for all $x\in\Rbb.$}
-	\TextN{Is the set of periodic functions $\Rbb\rightarrow\Rbb$ a subsp of $\Rbb^\Rbb$ ? Explain.}
-}Denote the set by $S$.\par\quad
-Supp $h\Par{x}=\cos x+\sin\!\sqrt{2}x\in S$, since $\cos x,\sin\!\sqrt{2}x\in S$.\par\quad
-Asum $\exists\,p\in\Nbp$ suth $h\Par{x}=h\Par{x+p},\forall x\in\Rbb.$ Let $x=0\Rightarrow h\Par{0}=h\Par{\pm p}=1$.\par\quad
-Thus $1=\cos p+\sin\!\sqrt{2}p=\cos p-\sin\!\sqrt{2}p$\par\quad
-$\Rightarrow\sin\!\sqrt{2}p=0,\,\,\cos p=1\Rightarrow p=2k\pi,k\in\Zbb$, while $p=\Frac{m\pi}{\sqrt{2}},m\in\Zbb$.\par\vspace{-2pt}\quad
-Hence $2k=\Frac{m}{\sqrt{2}}\Rightarrow \sqrt{2}=\Frac{m}{2k}\in\Qbb$. Ctradic!\PfEnd\vspace{10pt}\par\quad
-\Or Becs $\cos x+\sin\!\sqrt{2}x=\cos\!\Par{x+p}+\sin\!\envFontLarge\BigPar{\!\sqrt{2}x+\sqrt{2}p}.$ By diff twice,\par\vspace{2pt}\quad
-\Blind{\Or Becs} $\cos x+2\sin\!\sqrt{2}x=\cos\!\Par{x+p}+2\envFontLarge\sin\!\BigPar{\!\sqrt{2}x+\sqrt{2}p}.$\par\vspace{6pt}\quad
-\!\!\!$\MathRightBrace{r}{
-	\sin\!\sqrt{2}x=\sin\!{\envFontLarge\BigPar{\!\sqrt{2}x+\sqrt{2}p}}\vspace{2pt}\\ 
-	\cos x=\cos\!\Par{x+p}}\Rightarrow$ Let $x=0,$\;\,$ p=\Frac{m\pi}{\sqrt{2}}=2k\pi.$\; Ctradic.\PfEnd\vspace{4pt}\par
-\SepLine
-
-\ProblemN{\hypertarget{1C24}{24}}{
-	\TextNL{Let $V_{\!E}=\Bra{\,f\in\Rbb^{\Rbb}:\text{f is even}},V_{\!O}=\Bra{\,f\in\Rbb^{\Rbb}:\text{f is odd}}.$ Show $V_{\!E}\oplus V_{\!O}=\Rbb^{\Rbb}.$\vspace{4pt}}
-}(a) {$V_{\!E}\cap V_{\!O}=\Bra{\,f\in\Rbb^{\Rbb}:f\Par{x}=f\Par{-x}=-f\Par{-x}}=\zeroSubs.$}\parSol{\vspace{8pt}}
-(b) $\hMath{l}{\left|}{\right\}}{$
-	Let \;$f_e\Par{x}=\Frac{\;1\;}{2}\XSbra{g\Par{x}+g\Par{-x}}\Longrightarrow f_e\in V_{\!E}\vspace{4pt}\\$
-	Let \;$f_o\Par{x}=\Frac{\;1\;}{2}\XSbra{g\Par{x}-g\Par{-x}}\Longrightarrow f_o\in V_{\!O}
-}\Rightarrow\forall g\in\Rbb^\Rbb,\;g\Par{x}=f_e\Par{x}+f_o\Par{x}.$\PfEnd\vspace{4pt}
 \SepLine
 
 \BulletPointX\Largesl{Supp $U,W,V_{\!1},V_{\!2},V_{\!3}$ are subsps of $V.$}\par
@@ -121,57 +88,28 @@ Hence $2k=\Frac{m}{\sqrt{2}}\Rightarrow \sqrt{2}=\Frac{m}{2k}\in\Qbb$. Ctradic!\
 (a) For any subsp $U$ of $V$. $\Omega\subseteq U+\Omega=U\Rightarrow\Omega\subseteq U$. Let $U=\zeroSubs,$ then $\Omega=\zeroSubs.$\par\quad
 (b) Now supp $W$ is an add inv of $U\Rightarrow U+W=\Omega$.\par\quad\Hb
 Note that $U+W\supseteq U,W\Rightarrow \Omega\supseteq U,W$. Thus $U=W=\Omega=\zeroSubs.$\PfEnd
-\SepLine\pagebreak
+\SepLine
 
 \ProblemN{\hypertarget{1C11}{11}}{
 	\TextNL{Prove the intersec of every collec of subsps of $V$ is a subsp of $V$.}
 }Supp $\Bra{U_{\alpha}}{_{\alpha\in\Gamma}}$ is a collec of subsps of $V$; here $\Gamma$ is an index set.\vspace{2pt}\par\quad
 We show $\bigcap_{\alpha\in\Gamma}U_\alpha,$ which equals the set of vecs that are in $U_\alpha$ for each $\alpha\in\Gamma$, is a subsp of $V$.\par\vspace{4pt}\,
 $\begin{array}{l}$
-(一) $0\in\bigcap_{\alpha\in\Gamma}U_\alpha.$ Nonempty.$\\ $
-(二) $u,v\in\bigcap_{\alpha\in\Gamma}U_\alpha\Rightarrow u+v\in U_\alpha,\,\,\forall\alpha\in\Gamma\Rightarrow u+v\in\bigcap_{\alpha\in\Gamma}U_\alpha$. Closd add.$\\ $
-(三) $u\in\bigcap_{\alpha\in\Gamma}U_\alpha,\lambda\in$ {\tgbf F} $\Rightarrow\lambda u\in U_\alpha,\,\,\forall\alpha\in\Gamma\Rightarrow\lambda u\in\bigcap_{\alpha\in\Gamma}U_\alpha$. Closd scalar multi.
-$\end{array}$\par\vspace{6pt}\quad
+	(一) $0\in\bigcap_{\alpha\in\Gamma}U_\alpha.$ Nonempty.$\\ $
+	(二) $u,v\in\bigcap_{\alpha\in\Gamma}U_\alpha\Rightarrow u+v\in U_\alpha,\,\,\forall\alpha\in\Gamma\Rightarrow u+v\in\bigcap_{\alpha\in\Gamma}U_\alpha$. Closd add.$\\ $
+	(三) $u\in\bigcap_{\alpha\in\Gamma}U_\alpha,\lambda\in$ {\tgbf F} $\Rightarrow\lambda u\in U_\alpha,\,\,\forall\alpha\in\Gamma\Rightarrow\lambda u\in\bigcap_{\alpha\in\Gamma}U_\alpha$. Closd scalar multi.
+	$\end{array}$\par\vspace{6pt}\quad
 Thus $\bigcap_{\alpha\in\Gamma}U_\alpha$ is nonempty subset of $V$ that is closd add and scalar multi.\PfEnd
 \SepLine
 
-\ProblemN{\hypertarget{1C12}{12}}{
-	\TextNL{Supp $U,W$ are subsps of $V.$ Prove $U\cup W$ is a subsp of $V\Longleftrightarrow U\subseteq W$ or $W\subseteq U$.}
-}(a) Supp $U\subseteq W$. Then $U\cup W=W$ is a subsp of $V$.\parSol{}
-(b) Supp $U\cup W$ is a subsp of $V$. Asum $U\not\subseteq W,\;U\not\supseteq W$ \BigPar{ $U\cup W\neq U$ and $W$ }.\parSol{\Hb}
-Then $\forall a\in U\wedge a\not\in W,\forall b\in W\wedge b\not\in U,$ we have $a+b\in U\cup W$.\parSol{\vspace{2pt}\Hb}
-\!\!\!$\MathRightMid{l}{$
-$a+b\in U\Rightarrow b=\Par{a+b}+\Par{-a}\in U$, ctradic $\Rightarrow W\subseteq U.\\ $
-$a+b\in W\Rightarrow a=\Par{a+b}+\Par{-b}\in W$, ctradic $\Rightarrow U\subseteq W.}\hText{$
-Ctradic asum.$\\\;}$\PfEnd[-14pt]
+\BulletPointX\NoteForSmall{[1.45]}\;\;If $\Fbb=\Bra{0,1}.$ Prove if $U+W$ is a direct sum, then $U\cap W=\zeroSubs.$\TextB{}
+Becs $\forall v\in U\cap W,\exists\,!\,\Par{u,w}\in U\times W,v=u+w.$\TextB{}
+If $U\cap W\neq\zeroSubs,$ then $\Par{u,w}$ can be $\Par{v,0}$ or $\Par{0,v},$ ctradic the uniqnes.\PfEnd\vspace{-2pt}
 \SepLine
 
-\ProblemN{\hypertarget{1C13}{13}}{
-	\TextNL{Prove the union of three subsps of $V$ is a subsp of $V$}
-	\TextNL{if and only if one of the subsps contains the other two.}
-	\TextNL{\large This exe is not true if we \uline{replace $\Fbb$ with a field containing only two elems.}}
-}\par\quad
-Supp $U_1,U_2,U_3$ are subsps of $V$. Denote $U_1\cup U_2\cup U_3$ by $\mathcal{U}.$\par\quad
-(a) \dbsp Supp that one of the subsps contains the other two.\par\quad\Ha
-\dbsp Then $\mathcal{U}=U_1,U_2$ or $U_3$ is a subsp of $V.$\par\quad
-(b) Supp that $U_1\cup U_2\cup U_3$ is a subsp of $V$.\par\quad\Hb
-Distinctively notice that $A\cup B\cup C=\Par{A\cup B}\cup\Par{B\cup C}=\Par{A\cup C}\cup\Par{B\cup C}=\Par{A\cup B}\cup\Par{A\cup C}.$\par\quad\Hb
-Also note that, if $U\cup W=V$ is a vecsp, then in general $U$ and $W$ are not subsps of $V.$\par\quad\Hb
-Hence this literal trick is invalid.\par\quad\Hb
-(I) {\dbsp}If any $U_j$ is contained in the union of the other two, say $U_1\subseteq U_2\cup U_3,$ then $\mathcal{U}=U_2\cup U_3.$\par\quad\Hb\HI
-{\dbsp}By applying Exe (12) we conclude that one $U_j$ contains the other two. Thus done.\vspace{6pt}\par\quad\Hb\EndI
-(II) \envFontLarge\dbsp{Asum no $U_j$ is contained in the union of the other two,}\par\quad\Hb\HII
-\Blind{Asum }{\vspace{6pt}and no $U_j$ contains the union of the other two. Say $U_1\not\subseteq U_2\cup U_3$ and $U_1\not\supseteq U_2\cup U_3.$}\par\quad\Hb\HII
-{\dbsp}{\Large\vspace{6pt}$\exists\,u\in U_1\wedge u\not\in U_2\cup U_3;\;v\in U_2\cup U_3\wedge v\not\in U_1.$ Let $W=\Bra{v+\lambda u:\lambda\in\Fbb}\,\subseteq\mathcal{U}.$}\par\quad\Hb\HII
-{\dbsp}{\Large\vspace{6pt}Note that $W\cap U_1=\emptySet,$ for if any $v+\lambda u\in W\cap U_1$ then $v+\lambda u-\lambda u=v\in U_1$.}\par\quad\Hb\HII
-{\dbsp}{\Large\vspace{6pt}Now $W\subseteq U_1\cup U_2\cup U_3\Rightarrow W\subseteq U_2\cup U_3.$ $\forall v+\lambda u\in W,v+\lambda u\in U_i,i=2,3.$}\par\quad\Hb\HII
-{\Large\vspace{6pt}If $U_2\subseteq U_3$ or $U_2\supseteq U_3,$ then $\mathcal{U}=U_1\cup U_i,i=2,3.$} {By Exe (12) done.}\par\quad\Hb\HII
-{\Large\vspace{6pt}Othws, {\FontNorm both $U_2,U_3\neq\zeroSubs.$} Becs \tgsl$W\subseteq U_2\cup U_3$ has at least three elems.}\par\quad\Hb\HII
-{\Large\vspace{6pt}There must be some $U_i$ that contains at least two elems of $W.$}\par\quad\Hb\HII
-{\Large\vspace{6pt}$\exists$ disti $\lambda_1,\lambda_2\in\Fbb,v+\lambda_1 u,v+\lambda_2 u\in U_i,i\in\Bra{2,3}.$}\par\quad\Hb\HII
-{\Large Then $u\in U_i$ while $u\not\in U_2\cup U_3.$ Ctradic.}\FontNorm\PfEnd\vspace{6pt}\quad
-\uline{\AExa Let $\Fbb=\Zbb_2.$} $U_1=\Bra{u,0},U_2=\Bra{v,0},U_3=\Bra{v+u,0}.$ While $\mathcal{U}=\Bra{0,u,v,v+u}$ is a subsp.
-\SepLine\pagebreak
+\BulletPointX\TipsN{1}\,\,\,Supp $U,W\subseteq V.$ And $U,W,V$ are vecsps $\Rightarrow U,W$ are subsps of $V.$\TextB{}
+\IndentTipsN{1}Then $U+W$ is also a subsp of $V.$ Becs $\forall u\in U,w\in U,u+w\in V$ since $u,w\in V.$
+\SepLine
 
 \ProblemB{
 	\TextB{Supp $U=\Bra{\Par{x,x,y,y}},W=\Bra{\Par{x,x,x,y}}\subseteq\Fbb^4.$ Prove $U+W=\Bra{\Par{x,x,y,z}}.$\vspace{2pt}}
@@ -183,6 +121,16 @@ And $T\ni\Par{x,x,y,z}\Rightarrow\Par{0,0,y-x,y-x}+\Par{x,x,x,-y+x+z}\in U+W$. H
 	\TextNL{Supp $U=\Bra{\Par{x,y,x+y,x-y,2x}}$. Find a $W$ suth $\Fbb^5=U\oplus W$.}
 }Let $W=\Bra{\Par{0,0,z,w,u}}$. Then $U\cap W=\zeroSubs$.\parSol{}
 And $\Fbb^5\ni\Par{x,y,z,w,u}\Rightarrow\Par{x,y,x+y,x-y,2x}+\Par{0,0,z-x-y,w-x-y,u-2x}\in U+W.$\par
+\SepLine\pagebreak
+
+\ProblemN{\hypertarget{1C22}{22}}{
+		\TextNL{Supp $U=\Bra{\Par{x,y,x+y,x-y,2x}\in\Fbb^5}$.}
+		\TextNL{Find nonzero subsps $W_1,W_2,W_3$ of $\,\Fbb^5$ suth $\Fbb^5 = U\oplus W_1\oplus W_2\oplus W_3 $.}
+	}\par\quad
+(1) Let $W_1=\Bra{\Par{0,0,z,0,0}\in\Fbb^5}\Rightarrow W_1\cap U=\zeroSubs.$ \hfill Now $U\oplus W_1=\Bra{\Par{x,y,z,x-y,2x}\in\Fbb^5}=U_1$.\par\quad
+(2) Let $W_2=\Bra{\Par{0,0,0,w,0}\in\Fbb^5}\Rightarrow W_2\cap U_1=\zeroSubs.$ \hfill Now $U_1\oplus W_2=\Bra{\Par{x,y,z,w,2x}\in\Fbb^5}=U_2$.\par\quad
+(3) Let $W_3=\Bra{\Par{0,0,0,0,u}\in\Fbb^5}\Rightarrow W_3\cap U_2=\zeroSubs.$ \hfill Now $U_2\oplus W_3=\Bra{\Par{x,y,z,w,u}\in\Fbb^5}=U_3$.\par\quad
+Thus $\Fbb^5=\BigPar{\Par{U\oplus W_1}\oplus W_2}\oplus W_3.$\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{1C23}{23}}{
@@ -197,9 +145,8 @@ To fix this, {\FontLarge denote the set $\Bra{W_{\hspace{-1pt}1},W_{\hspace{-1pt
 
 \ProblemB{
 	\TipsN{2}\,\,\,\TextB{Supp $V_{\!1}\subseteq V_{\!2}$ in Exe {\tgnr(23)}. Prove $V_{\!1}=V_{\!2}.$}
-}\par\quad
-Becs the subset $V_{\!1}$ of vecsp $V_{\!2}$ is closd add and scalar multi, $V_{\!1}$ is a subspace of $V_{\!2}.$\par\quad
-Supp $W$ is suth $V_{\!2}=V_{\!1}\oplus W.$ Now $V_{\!2}\oplus U=\Par{V_{\!1}\oplus W}\oplus U=\Par{V_{\!1}\oplus U}\oplus W=V_{\!1}\oplus U.$\par\quad
+}Becs the subset $V_{\!1}$ of vecsp $V_{\!2}$ is closd add and scalar multi, $V_{\!1}$ is a subspace of $V_{\!2}.$\parSol{}
+Supp $W$ is suth $V_{\!2}=V_{\!1}\oplus W.$ Now $V_{\!2}\oplus U=\Par{V_{\!1}\oplus W}\oplus U=\Par{V_{\!1}\oplus U}\oplus W=V_{\!1}\oplus U.$\parSol{}
 If $W\neq\zeroSubs,$ then $V_{\!1}\oplus U\subsetneq\Par{V_{\!1}\oplus U}\oplus W$, ctradic. Hence $W=\zeroSubs,V_{\!1}=V_{\!2}.$\PfEnd
 \SepLine
 
@@ -224,22 +171,43 @@ $U\cap Y=\Delta\neq\zeroSubs\Rightarrow I=U\cap W\supseteq\Delta\Rightarrow I\ca
 Thus $I+\Par{X+Y}=\Par{I\oplus X}\oplus Y=I\oplus\Par{X\oplus Y}.$\parSol{\vspace{2pt}}
 Now we show $V=I+\Par{X+Y}.$ \;$\forall v\in V,v=u+w,\exists\,\Par{u,w}\in U\times W$\parSol{}
 $\Rightarrow\exists\,\Par{i_u,x_u}\in I\times X,\,\Par{i_w,y_w}\in I\times Y,\;v=\Par{i_u+i_w}+x_u+y_w\in I+\Par{X+Y}.$\PfEnd
+\SepLine\pagebreak
+
+\ProblemN{\hypertarget{1C12}{12}}{
+	\TextNL{Supp $U,W$ are subsps of $V.$ Prove $U\cup W$ is a subsp of $V\Longleftrightarrow U\subseteq W$ or $W\subseteq U$.}
+}(a) Supp $U\subseteq W$. Then $U\cup W=W$ is a subsp of $V$.\parSol{}
+(b) Supp $U\cup W$ is a subsp of $V$. Asum $U\not\subseteq W,\;U\not\supseteq W$ \BigPar{ $U\cup W\neq U$ and $W$ }.\parSol{\Hb}
+Then $\forall a\in U\wedge a\not\in W,\forall b\in W\wedge b\not\in U,$ we have $a+b\in U\cup W$.\parSol{\vspace{2pt}\Hb}
+\!\!\!$\MathRightMid{l}{$
+$a+b\in U\Rightarrow b=\Par{a+b}+\Par{-a}\in U$, ctradic $\Rightarrow W\subseteq U.\\ $
+$a+b\in W\Rightarrow a=\Par{a+b}+\Par{-b}\in W$, ctradic $\Rightarrow U\subseteq W.}\hText{$
+Ctradic asum.$\\\;}$\PfEnd[-14pt]
 \SepLine
 
-%\ProblemB{
-%	\TipsN{3}\,\,\,\TextB{Let $V=U+W,\,I=U\cap W,\,U=I\oplus X,W=I\oplus Y.$ Prove $V=I\oplus\Par{X\oplus Y}.$}
-%}Note that $V=\Par{I\oplus X}+\Par{I\oplus Y},$ and $X\cap Y=\zeroSubs.$\parSol{}
-%\SepLine
-
-%\ProblemN{\hypertarget{1C22}{22}}{
-%	\TextNL{Supp $U=\Bra{\Par{x,y,x+y,x-y,2x}\in\Fbb^5}$.}
-%	\TextNL{Find nonzero subsps $W_1,W_2,W_3$ of $\,\Fbb^5$ suth $\Fbb^5 = U\oplus W_1\oplus W_2\oplus W_3 $.}
-%}\par\quad
-%(1) Let $W_1=\Bra{\Par{0,0,z,0,0}\in\Fbb^5}\Rightarrow W_1\cap U=\zeroSubs.$ Now $U\oplus W_1=\Bra{\Par{x,y,z,x-y,2x}\in\Fbb^5}=U_1$.\par\quad
-%(2) Let $W_2=\Bra{\Par{0,0,0,w,0}\in\Fbb^5}\Rightarrow W_2\cap U_1=\zeroSubs.$ Now $U_1\oplus W_2=\Bra{\Par{x,y,z,w,2x}\in\Fbb^5}=U_2$.\par\quad
-%(3) Let $W_3=\Bra{\Par{0,0,0,0,u}\in\Fbb^5}\Rightarrow W_3\cap U_2=\zeroSubs.$ Now $U_2\oplus W_3=\Bra{\Par{x,y,z,w,u}\in\Fbb^5}=U_3$.\par\quad
-%Thus $\Fbb^5=\BigPar{\Par{U\oplus W_1}\oplus W_2}\oplus W_3.$\PfEnd
-%\SepLine
+\ProblemN{\hypertarget{1C13}{13}}{
+	\TextNL{Prove the union of three subsps of $V$ is a subsp of $V$}
+	\TextNL{if and only if one of the subsps contains the other two.}
+	\TextNL{\large This exe is not true if we \uline{replace $\Fbb$ with a field containing only two elems.}}
+}Supp $U_1,U_2,U_3$ are subsps of $V$. Denote $U_1\cup U_2\cup U_3$ by $\mathcal{U}.$\par\quad
+(a) Supp that one of the subsps contains the other two. Then $\mathcal{U}=U_1,U_2$ or $U_3$ is a subsp of $V.$\par\quad
+(b) Supp that $U_1\cup U_2\cup U_3$ is a subsp of $V$.\par\quad\Hb
+Distinctively notice that $A\cup B\cup C=\Par{A\cup B}\cup\Par{B\cup C}=\Par{A\cup C}\cup\Par{B\cup C}=\Par{A\cup B}\cup\Par{A\cup C}.$\par\quad\Hb
+Also note that, if $U\cup W=V$ is a vecsp, then in general $U$ and $W$ are not subsps of $V.$\par\quad\Hb
+Hence this literal trick is invalid.\par\quad\Hb
+(I) {\dbsp}If any $U_j$ is contained in the union of the other two, say $U_1\subseteq U_2\cup U_3,$ then $\mathcal{U}=U_2\cup U_3.$\par\quad\Hb\HI
+{\dbsp}By applying Exe (12) we conclude that one $U_j$ contains the other two. Thus done.\vspace{6pt}\par\quad\Hb\EndI
+(II) \envFontLarge\dbsp{Asum no $U_j$ is contained in the union of the other two,}\par\quad\Hb\HII
+\Blind{Asum }{\vspace{6pt}and no $U_j$ contains the union of the other two. Say $U_1\not\subseteq U_2\cup U_3$ and $U_1\not\supseteq U_2\cup U_3.$}\par\quad\Hb\HII
+{\dbsp}{\Large\vspace{6pt}$\exists\,u\in U_1\wedge u\not\in U_2\cup U_3;\;v\in U_2\cup U_3\wedge v\not\in U_1.$ Let $W=\Bra{v+\lambda u:\lambda\in\Fbb}\,\subseteq\mathcal{U}.$}\par\quad\Hb\HII
+{\dbsp}{\Large\vspace{6pt}Note that $W\cap U_1=\emptySet,$ for if any $v+\lambda u\in W\cap U_1$ then $v+\lambda u-\lambda u=v\in U_1$.}\par\quad\Hb\HII
+{\dbsp}{\Large\vspace{6pt}Now $W\subseteq U_1\cup U_2\cup U_3\Rightarrow W\subseteq U_2\cup U_3.$ $\forall v+\lambda u\in W,v+\lambda u\in U_i,i=2,3.$}\par\quad\Hb\HII
+{\Large\vspace{6pt}If $U_2\subseteq U_3$ or $U_2\supseteq U_3,$ then $\mathcal{U}=U_1\cup U_i,i=2,3.$} {By Exe (12) done.}\par\quad\Hb\HII
+{\Large\vspace{6pt}Othws, {\FontNorm both $U_2,U_3\neq\zeroSubs.$} Becs \tgsl$W\subseteq U_2\cup U_3$ has at least three elems.}\par\quad\Hb\HII
+{\Large\vspace{6pt}There must be some $U_i$ that contains at least two elems of $W.$}\par\quad\Hb\HII
+{\Large\vspace{6pt}$\exists$ disti $\lambda_1,\lambda_2\in\Fbb,v+\lambda_1 u,v+\lambda_2 u\in U_i,i\in\Bra{2,3}.$}\par\quad\Hb\HII
+{\Large Then $u\in U_i$ while $u\not\in U_2\cup U_3.$ Ctradic.}\FontNorm\PfEnd\vspace{6pt}\quad
+\uline{\AExa Let $\Fbb=\Zbb_2.$} $U_1=\Bra{u,0},U_2=\Bra{v,0},U_3=\Bra{v+u,0}.$ While $\mathcal{U}=\Bra{0,u,v,v+u}$ is a subsp.
+\SepLine
 
 \ChEnd\pagebreak
 
@@ -318,33 +286,6 @@ ${}^\neg P\Rightarrow{}^\neg Q:\;$ Supp $V$ is finide and $V=\Span{w_1 , ..., w_
 \Blind{\Or\; $Q\Rightarrow P:\;$} Choose an $m$. Supp a liney indep list $\Par{v_1,\dots,v_m}$ spans $V$.\par\quad
 \Blind{\Or\; $Q\Rightarrow P:\;$} Simlr to [2.16]. $\exists\,v_{m+1}\in V\Backslash\Span{v_1,\dots,v_m}.$ Hence no list spans $V.$\PfEnd
 \SepLine
-
-\ProblemN{\hypertarget{2A16}{16}}{
-	\TextNL{Prove the vecsp of all continuous functions in $\Rbb^{[0,1]}$ is infinide.}
-}Denote the vecsp by $U$.\par\quad
-Choose one $m\in\Nbp.$ Supp $a_0,\dots,a_m\in\Rbb$ are suth $p\Par{x}=a_0+a_1 x+\dots+a_m x^m=0,\,\forall x\in\Sbra{0,1}.$\par\quad
-Then $p$ has infily many roots and hence each $a_k=0,$ othws $\deg p\geqslant 0,$ ctradic [4.12].\par\quad
-Thus $\Par{1,x,\dots,x^m}$ is liney indep in $\Rbb^{[0,1]}.$ Simlr to [2.16], $U$ is infinide.\PfEnd\vspace{8pt}\quad
-\Or Note that\; $\Frac{\;1\;}{1}>\Frac{\;1\;}{2}>\dots>\Frac{\;1\;}{m},\,\,\,\forall m\in\Nbp.$ Supp\; $f_m=\MathLeftBrace{l}{
-	\!x-{}${\Large$\frac{\;1\;}{m}$}$,\;\;x\in\Interval{(}{]}{${\Large$\frac{\;1\;}{m}$}$,\,1\,}\\
-	\!0,\hfill x\in\Sbra{\,0,\,${\Large$\frac{\;1\;}{m}$}$\,}
-}$\vspace{2pt}\par\quad
-Then\; $f_1\XPar{${\Large$\frac{\;1\;}{m}$}$}=\dots=f_m\XPar{${\Large$\frac{\;1\;}{m}$}$}=0\neq f_{m+1}\XPar{${\Large$\frac{\;1\;}{m}$}$}.$ 
-\;Hence $f_{m+1}\not\in\Span{f_1,\dots,f_m}.$ By Exe (14).\PfEnd
-\SepLine
-
-\ProblemN{\hypertarget{2A17}{17}}{
-	\TextNL{Supp $p_0,p_1,\dots,p_m\in\PoF{m}$ suth $p_k\Par{2}=0$ for each $k\in\Bra{0,\dots,m}$.}
-	\TextNL{Prove $\Par{p_0,p_1,\dots,p_m}$ is not liney indep in $\PoF{m}$.}
-}\par\quad
-Supp $\Par{p_0,p_1,\dots,p_m}$ is liney indep. Define $p\in\PoF{m}$ by $p\Par{z}=z.$\par\quad
-\NOTICE that $\forall a_i\in\Fbb,z\neq a_0 p_0\Par{z}+\dots+a_m p_m\Par{z},$ for if not, let $z=2.$ Thus $z\not\in\Span{p_0,p_1,\dots,p_m}$.\par\quad
-Then $\Span{p_0,p_1,\dots,p_m}\subsetneq\PoF{m}$ while the list $\Par{p_0,p_1,\dots,p_m}$ has len $\Par{m+1}$.\par\quad
-Hence $\Par{p_0,p_1,\dots,p_m}$ is linely dep. For if not, then becs $\Par{1,z,\dots,z^m}$ of len $\Par{m+1}$ spans $\PoF{m},$\par\quad
-by the steps in [2.23] trivially, $\Par{p_0,p_1,\dots,p_m}$ of len $\Par{m+1}$ spans $\PoF{m}.$ Ctradic.\PfEnd\vspace{6pt}\par\quad
-\Or Note that $\PoF{m}=\Span{\underbrace{\;1,\;z,\;\dots,\;z^m\;}_{\text{of len }\SmallPar{m+1}}}.$ Then $\Par{p_0,p_1,\dots,p_m,z}$ of len $\Par{m+2}$ is liney dep.\vspace{2pt}\par\quad
-As shown above,  $z\not\in\Span{p_0,p_1,\dots,p_m}.$ And hence by [2.21](a), $\Par{p_0,p_1,\dots,p_m}$ is liney dep.\PfEnd
-\SepLine
 \ChEnd\pagebreak
 
 \ChDecl{Ch2B}{2$\cdot$B}{}\orMode{\hLk{2B1}{1}\;\;\hLk{2B8}{8}\;\;|\;\;\hLk{2B4e5}{4E:\;\;5}\;\;\hLk{2B4e9}{9}\;\;\hLk{2B4e11}{11}}{[1]: 7, 1, (4E 9); [2]: (4E 5), 8, (4E 11).}
@@ -376,15 +317,6 @@ Becs $V$ is finide, this process will stop after $n$ steps.\PfEnd\vspace{4pt}\Te
 \Blind{\Or}Then let $B_V=\Par{u_1-u_k,\dots,u_m-u_k,u_{m+1},\dots,u_k,\dots,u_n}.$\PfEnd
 \SepLine
 
-\ProblemN{\hypertarget{2B1}{1}}{
-	\TextN{Find all vecsps on whatever $\Fbb$ that have exactly one bss.}
-}The trivial vecsp $\zeroSubs$ will do. Indeed, the only bss of $\zeroSubs$ is the empty list $\Par{\,}$.\parSol{}
-Now consider the field $\Bra{0,1}$ containing only the add id and multi id,\parSol{}
-with $1+1=0.$ Then the list $\Par{1}$ is the uniq bss. Now the vecsp $\Bra{0,1}$ will do.\parSol{}
-\AComm All vecsp on such $\Fbb$ of dim $1$ will do.\parSol{}
-Consider other $\Fbb.$ Note that this $\Fbb$ contains at least and strictly more than $0$ and $1.$ Failed.\PfEnd
-\SepLine
-
 \ProblemBnoor{\hypertarget{2B4e9}{4E 9}}{
 	\TextB{Supp $\Par{v_1,\dots,v_m}$ is a list in $V$. For $k\in\Bra{1,\dots,m}$, let $w_k=v_1+\dots+v_k.$}
 	\TextB{Show [P] $B_V=\Par{v_1,\dots,v_m}\Longleftrightarrow B_V=\Par{w_1,\dots,w_m}.$ [Q]}
@@ -406,7 +338,7 @@ $Q\Rightarrow P:\forall v\in V,\exists\,!\,b_i\in\Fbb,\;v=b_1w_1+\dots+b_mw_m\Ri
 }$\forall v\in V,\exists\,!\,u\in U,w\in W\Rightarrow\exists\,!\,a_i,b_i\in\Fbb,v=u+w=\sum_{i=1}^ma_iu_i+\sum_{i=1}^nb_iw_i.$\parSol{}
 \Or\;$V=\Span{u_1,\dots,u_m}\oplus\Span{w_1,\dots,w_n}=\Span[\BigPar]{u_1,\dots,u_m,w_1,\dots,w_n}.$\parSol{\vspace{2pt}}
 \Blind{\Or\;}Note that $\sum_{i=1}^ma_iu_i+\sum_{i=1}^nb_iw_i=0\Rightarrow\sum_{i=1}^ma_iu_i=-\sum_{i=1}^nb_iw_i\in U\cap W=\zeroSubs.$\PfEnd
-\SepLine\pagebreak
+\SepLine
 
 \BulletPointX\NoteFor{{\tgsc liney indep seq and }[2.34]}\;\;$“V=\Span{v_1,\dots,v_n,\dots}”$ is an invalid expr.\TextB{}
 If we allow using $“$infini list$”$, then we must assure that $\Par{v_1,\dots,v_n,\dots}$ is a spanning $“$list$”$\TextB{}
@@ -415,7 +347,7 @@ we can prove $\exists\,!\,T\in\Lm{V,W}$ with each $Tv_k=w_k,$ which has less res
 But the key point is, how can we assure that such a $“$list$”$ exis. \colorbox{yellow}{TODO: More details.}
 %\TextB{}
 %\TextB{}
-\SepLine
+\SepLine\pagebreak
 
 \ProblemBnoor[]{\hypertarget{2B4e}{9.A.3,4 \OR 4E 11}}{
 	\TextB{Supp $V$ is on $\Rbb,$ and $v_1,\dots,v_n\in V.$ Let $B=\Par{v_1,\dots,v_n}.$\vspace{2pt}}
@@ -432,6 +364,15 @@ But the key point is, how can we assure that such a $“$list$”$ exis. \colorb
 }\PfEnd\vspace{-4pt}
 \SepLine
 
+\ProblemN{\hypertarget{2B1}{1}}{
+	\TextN{Find all vecsps on whatever $\Fbb$ that have exactly one bss.}
+}The trivial vecsp $\zeroSubs$ will do. Indeed, the only bss of $\zeroSubs$ is the empty list $\Par{\,}$.\parSol{}
+Now consider the field $\Bra{0,1}$ containing only the add id and multi id,\parSol{}
+with $1+1=0.$ Then the list $\Par{1}$ is the uniq bss. Now the vecsp $\Bra{0,1}$ will do.\parSol{}
+\AComm All vecsp on such $\Fbb$ of dim $1$ will do.\parSol{}
+Consider other $\Fbb.$ Note that this $\Fbb$ contains at least and strictly more than $0$ and $1.$ Failed.\PfEnd
+\SepLine
+
 \ChEnd\vspace{-4pt}
 
 \vfill\ChDecl{Ch2C}{2$\cdot$C}{}\orMode{\hLk{2C1}{1}\;\;\hLk{2C7}{7}\;\;\hLk{2C9}{9}\;\;\hLk{2C10}{10}\;\;\hLk{2C14}{14,16}\;\;\hLk{2C15}{15}\;\;\hLk{2C17}{17}\;\;|\;\;\hLk{2C4e10}{4E:\;\;10}\;\;\hLk{2C4e14}{14,15}\;\;\hLk{2C4e16}{16}}{[1]: 15; [2]: 1, 7, 9, (4E 16); [3]: 10; [4]: (4E 10), 14, 16; [5]: 17, (4E 14, 15).}
@@ -439,7 +380,7 @@ But the key point is, how can we assure that such a $“$list$”$ exis. \colorb
 \vspace{4pt}
 
 \ProblemN{\hypertarget{2C15}{15}}{
-	\TextNL{Supp $\dim V=n\geqslant 1.$ Prove $\exists\,1$-dim subsps $V_{\!1},\dots,V_{\!n}$ suth $V=V_{\!1}\oplus \dots\oplus V_{\!n}.$}
+	\TextNL{Supp $\dim V=n\geqslant 1.$ Prove $\exists\,1$-\hspace{1pt}dim subsps $V_{\!1},\dots,V_{\!n}$ suth $V=V_{\!1}\oplus \dots\oplus V_{\!n}.$}
 }Supp $B_V=\Par{v_1,\dots,v_n}.$ Define $V_{\!i}$ by $V_{\!i}=\Span{v_i}$ for each $i\in\Bra{1,\dots,n}.$\parSol{}
 Then $\forall v\in V,\exists\,!\,a_i\in\Fbb,v=a_1 v_1+\dots+a_n v_n\Rightarrow\exists\,!\,u_i\in V_{\!i},v=u_1+\dots+u_n$\PfEnd
 \SepLine
@@ -451,7 +392,7 @@ Extend $\Par{v}$ to a bss $\Par{v,v_1,\dots,v_{n-1}}$ of $V.$ Let $v_n=v-v_1-\do
 又 $\Span{v,v_1,\dots,v_{n-1}}=\Span{v_1,\dots,v_n}.$ Hence $\Par{v_1,\dots,v_n}$ is also a bss of $V.$\PfEnd\vspace{4pt}
 \AComm Let $B_V=\Par{v_1,\dots,v_n}$ and supp $v=u_1+\dots+u_n,$ where each $u_i=a_i v_i\in V_{\!i}.$\parCom
 But $\Par{u_1,\dots,u_n}$ might not be a bss, becs there might be some $u_i=0.$\vspace{-2pt}
-\SepLine\pagebreak
+\SepLine
 
 \ProblemNnoor[]{\hypertarget{2C1}{1}}{{\COROLLARY} for [2.38,39]}{
 	\TextN{Supp $U$ is a subsp of $V$ suth $\dim V=\dim U$. Then $V=U.$}
@@ -463,31 +404,6 @@ But $\Par{u_1,\dots,u_n}$ might not be a bss, becs there might be some $u_i=0.$\
 	{\tgsl Notice that $\Par{v_1,\dots,v_n}$ is a spanning list of $\Span{v_1,\dots,v_n}$ of len $n=\dim\Span{v_1,\dots,v_n}.$}\TextB{\vspace{-4pt}}
 }\SepLine
 
-\ProblemN{\hypertarget{2C7}{7}}{
-	(a) \TextN{Let $U=\Bra{p\in\PoF{4}:p\Par{2}=p\Par{5}=p\Par{6}}$. Find a bss of $U$.}
-	(b) \TextN{Extend the bss in {\tgnr(b)} to a bss of $\PoF{4}$.}
-	(c) \TextN{Find a subsp $W$ of $\PoF{4}$ suth $\PoF{4}=U\oplus W$.}
-}Using Exe (10).
-%Supp $p\Par{z}=az^4+bz^3+cz^2+dz+e$ suth $p\Par{2}=p\Par{5}=p\Par{6}$.\vspace{4pt}\par\quad
-%Then $\hMath[0pt]{r}{\left|}{\right\}}{
-	%	p\Par{2}=16a+8b+4c+2d+e\,\;\;\Par{\text{I}}\;\;\\
-	%	p\Par{5}=625a+125b+25c+5d+e\;\;\Par{\text{II}}\,\;\\
-	%	p\Par{6}=1296a+216b+36c+6d+e\;\,\Par{\text{III}}
-	%}\Rightarrow\MathLeftBrace{l}{
-	%	\Par{\text{II}}\;-\;\Par{\text{I}}=0\\
-	%	\Par{\text{III}}-\Par{\text{II}}=0\\
-	%	\Par{\text{III}}-\;\Par{\text{I}}=0\\
-	%}$\vspace{4pt}\par\quad
-%{\tgsl You don't have to compute to know that the dimension of the set of solutions is 3.}
-\par\quad
-\NOTICE that $\not\exists\,p\in\PoFi$ of deg $1$ and $2,$ while $p\in U.$ Thus $\dim U\leqslant \dim\PoF{4}-2=3.$\par\vspace{2pt}\quad
-(a) Consider $B=\envFontLarge\BigPar{\envFontDefault1,\Par{z-2}\Par{z-5}\Par{z-6},z\Par{z-2}\Par{z-5}\Par{z-6}\envFontLarge}.$\par\quad\Ha
-Let $a_0+a_3\Par{z-2}\Par{z-5}\Par{z-6}+a_4z\Par{z-2}\Par{z-5}\Par{z-6}=0\Rightarrow a_0=a_3=a_4=0.$\par\quad\Ha
-Thus the list $B$ is liney indep in $U.$ Now $\dim U\geqslant 3\Rightarrow \dim U=3.$ Thus $B_U=B.$\par\vspace{2pt}\quad
-(b) Extend to a bss of $\PoF{4}$ as $\envFontLarge\BigPar{\envFontDefault 1,z,z^2,\Par{z-2}\Par{z-5}\Par{z-6},z\Par{z-2}\Par{z-5}\Par{z-6}\envFontLarge}.$\par\quad
-(c) Let $W=\Span{z,z^2}=\Bra{az+bz^2:a,b\in\Fbb}$, so that $\PoF{4}=U\oplus W.$\PfEnd
-\SepLine
-
 \ProblemN{\hypertarget{2C9}{9}}{
 	\TextN{Supp $\Par{v_1,\dots,v_m}$ is liney indep in $V,w\in V.$ Prove $\dim\Span[\BigPar]{v_1+w,\dots,v_m+w}\geq m-1$.}
 }Using the result of (2.A.10, 11).\par\quad
@@ -495,7 +411,7 @@ Note that $v_i-v_1=\Par{v_i+w}-\Par{v_1+w}\in\Span{v_1+w,\dots,v_n+w},$ for each
 $\Par{v_1,\dots,v_m}$ liney indep $\Rightarrow$ $\BigPar{v_1,v_2-v_1,\dots,v_m-v_1}$ liney indep $\Rightarrow$ $\underbrace{\BigPar{v_2-v_1,_{}\dots,v_m-v_1}}_{\text{of len }\Par{m-1}}$ liney indep.\vspace{-15pt}\par\quad
 又 If $w\not\in\Span{v_1,\dots,v_m}.$ Then $\BigPar{v_1+w,\dots,v_m+w}$ is liney indep.\par\quad
 Hence $m\geqslant\dim\Span[\BigPar]{v_1+w,\dots,v_m+w}\geq m-1.$\PfEnd
-\SepLine
+\SepLine\pagebreak
 
 \ProblemBnoor{\hypertarget{2C4e16}{4E 16}}{
 	\TextB{Supp $V$ is finide, $U$ is a subsp of $V$ with $U\neq V$. Let $n=\dim V,m=\dim U$.}
@@ -512,113 +428,6 @@ Hence $\bigcap\limits_{i=1}^{n-m}U_i\subseteq U.$\PfEnd
 %		$U_3=\Span{v_1,v_2,v_3}\oplus\Span{v_4,v_5}$
 %		$}\Rightarrow\dim U_i=6-1,\,\,i=\underbrace{1,2,3}_{6-3=3}.$}
 %\PfEnd[-10pt]\vspace{-4pt}
-\SepLine
-
-\BulletPointX\NoteForSmall{Exe 10} \,\,\,For each nonconst $p\in\Span{1,z,\dots,z^m},\;\exists$ smallest $m\in\Nbp,$ which is $\deg p.$\TextB{}
-(a) If $p_0,p_1,\dots,p_m$ are suth all $a_{k,k}\neq 0,$ and\TextB{}
-\Hb $p_0=a_{0,0},\,$ each $p_k=a_{0,k}+a_{1,k}z+\dots+a_{k,k}z^k.$\TextB{\vspace{-18pt}}
-\Ha Then the upper-trig $\Mt[\envFontLarge\BigPar]{\envFontDefault I,\Par{p_0,p_1,\dots,p_m},\Par{1,z,\dots,z^m}\envFontLarge}={}${\small$\begin{pmatrix}
-		a_{0,0} & a_{0,1} & \cdots & a_{0,m}\\
-		0       & a_{1,1} & \cdots & a_{1,m}\\
-		\vdots  & \vdots  & \ddots & \vdots\\
-		0       & 0       & \cdots & a_{m,m}
-	\end{pmatrix}$}.\TextB{\vspace{-8pt}}
-(b) If $p_0,p_1,\dots,p_m$ are suth all $a_{k,k}\neq 0,$ and\TextB{}
-\Hb $p_0=a_{0,0}+\dots+a_{m,0}x^m,\,$ each $p_k=a_{k,k}x^k+\dots+a_{m,k}x^m.$\TextB{\vspace{-18pt}}
-\Hb Then the lower-trig \;$\Mt[\envFontLarge\BigPar]{\envFontDefault I,\Par{p_0,p_1,\dots,p_m},\Par{1,z,\dots,z^m}\envFontLarge}={}${\small$\begin{pmatrix}
-		a_{0,0} & 0       & \cdots & 0\\
-		a_{1,0} & a_{1,1} & \cdots & 0\\
-		\vdots  & \vdots  & \ddots & \vdots\\
-		a_{m,0} & a_{m,1} & \cdots & a_{m,m}
-	\end{pmatrix}$}.\TextB{\vspace{-12pt}}
-\AComm Define $\xi_k\Par{p}$ by the coeff of $z^k$ in $p\in\PoF{m}.$\parCom\IndentB{}
-Then $\Mt[\envFontLarge\BigPar]{\envFontDefault\xi_k,\Par{1,z,\dots,z^m},\Par{1}\envFontLarge}=\mathcal{E}^{\SmallPar[1pt]{1,k}}\in\Fbb^{1,m+1}.$\vspace{-2pt}
-\SepLine\pagebreak
-
-\ProblemN{\hypertarget{2C10}{10}}{
-	\TextNL{Supp $m\in\Nbp,\;p_0,p_1,\dots,p_m\in\PoFi$ are suth each $\deg p_k=k.$}
-	\TextNL{Prove $\Par{p_0,p_1,\dots,p_m}$ is a bss of $\PoF{m}$.}
-}{Using induc on $m$.}\par\quad
-(i) {$k=1.$ \;$\deg p_0=0;\;\deg p_1=1\Rightarrow\Span[\BigPar]{p_0,p_1}=\Span[\BigPar]{1,x}.$}\par\vspace{2pt}\quad\Endi
-(ii) {$1\leqslant k\leqslant m-1.$ \;Asum $\Span[\BigPar]{p_0,p_1,\dots,p_k}=\Span[\BigPar]{1,x,\dots,x^k}.$}\par\quad\Hii
-{Then $\Span[\BigPar]{p_0,p_1,\dots,p_k,p_{k+1}}\subseteq\Span[\BigPar]{1,x,\dots,x^k,x^{k+1}}$.}\par\vspace{2pt}\quad\Hii
-{又 $\deg p_{k+1}=k+1,\;\;p_{k+1}\Par{x}=a_{k+1}x^{k+1}+r_{k+1}\Par{x};\;\;a_{k+1}\neq 0,\;\;\deg r_{k+1}\leqslant k.$}
-\par\vspace{2pt}\quad\Hii
-{$\Rightarrow x^{k+1}=\Frac{1}{a_{k+1}}\XPar{p_{k+1}\Par{x}-r_{k+1}\Par{x}}\in\Span[\BigPar]{1,x,\dots,x^k,p_{k+1}}=\Span[\BigPar]{p_0,p_1,\dots,p_k,p_{k+1}}$.}\par\vspace{2pt}\quad\Hii
-{$\therefore\,\,x^{k+1}\in\Span[\BigPar]{p_0,p_1,\dots,p_k,p_{k+1}}\Rightarrow\Span[\BigPar]{1,x,\dots,x^k,x^{k+1}}\subseteq\Span[\BigPar]{p_0,p_1,\dots,p_k,p_{k+1}}$.}\par\vspace{2pt}\quad
-{Thus $\PoF{m}=\Span[\BigPar]{1,x,\dots,x^m}=\Span[\BigPar]{p_0,p_1,\dots,p_m}.$}\FontNorm\PfEnd\vspace{8pt}\quad
-\Or 用比较系数法. {Denote the coeff of $x^k$ in $p\in\PoFi$ by $\xi_k\Par{p}.$}\par\quad
-{Supp $L=a_m p_m\Par{x}+\dots+a_1 p_1\Par{x}+a_0p_0\Par{x}=0\cdot x^m+\dots+0\cdot x+0\cdot 1=R,\forall x\in\Fbb.$}\par\quad
-{We show $a_m=\dots=a_0=0$ via the following process. So that $\Par{p_0,p_1,\dots,p_m}$ is liney indep.}\vspace{2pt}\par\quad
-{\tgbfx Step 1.} {For $k=m,$ \;$\xi_{m}\Par{L}=a_{m}\xi_{m}\Par{p_m}=\xi_{m}\Par{R}=0$ 又 $\deg p_m=m,\;\xi_{m}\Par{p_m}\neq 0\Rightarrow a_m=0.$}\par\quad
-\Blind{{\tgbfx Step 1.}} {Now $L=a_{m-1}p_{m-1}\Par{x}+\dots+a_0p_0\Par{x}.$}\vspace{2pt}\par\quad
-{\tgbfx Step k.} {For $0\leqslant k\leqslant m,$ we have $a_m=\dots=a_{k+1}=0.$}\par\quad
-\Blind{{\tgbfx Step k.}} {Now $\xi_{k}\Par{L}=a_{k}\xi_{k}\Par{p_k}=\xi_{k}\Par{R}=0$ 又 $\deg p_k=k,\;\xi_{k}\Par{p_k}\neq 0\Rightarrow a_k=0.$}\par\quad
-\Blind{{\tgbfx Step k.}} {Now if $k=0,$ then done. Othws, we have $L=a_{k-1}p_{k-1}\Par{x}+\dots+a_0p_0\Par{x}.$}\PfEnd
-\SepLine
-
-\ProblemBnoor{\Tips}[]{
-	\TextB{Supp $m\in\Nbp,\;p_0,p_1,\dots,p_m\in\PoF{m}$ are suth the lowest term of each $p_k$ is of deg $k.$}
-	\Blind{\Tips} \TextB{Prove $\Par{p_0,p_1,\dots,p_m}$ is a bss of $\PoF{m}.$}
-}{Using induc on $m.$\par}\quad
-{Let each $p_k$ be defined by $p_k\Par{x}=a_{k,k} x^k+\dots+a_{m,k} x^m,$ where $a_{k,k}\neq 0.$\par}\quad
-(i) {$k=1.$ \;$p_m\Par{x}=a_{m,m}x^m;\;p_{m-1}\Par{x}=a_{m-1,m-1}x^{m-1}+a_{m,m-1}x^m\Longrightarrow\Span[\BigPar]{x^m,x^{m-1}}=\Span[\BigPar]{p_m,p_{m-1}}.$\par}\vspace{2pt}\quad\Endi
-(ii) {$1\leqslant k\leqslant m-1.$ \;Asum $\Span[\BigPar]{x^m,\dots,x^{m-k}}=\Span[\BigPar]{p_m,\dots,p_{m-k}}.$}\par\quad\Hii
-{Then $\Span[\BigPar]{p_m,\dots,p_{m-\SmallPar{k+1}}}\subseteq\Span[\BigPar]{x^m,\dots,x^{m-\SmallPar{k+1}}}.$\par}\quad\Hii
-{又 $p_{m-\SmallPar{k+1}}$ has the form $a_{m-\SmallPar{k+1},m-\SmallPar{k+1}}x^{m-\SmallPar{k+1}}+r_{m-\SmallPar{k+1}}\Par{x};\;$\par}\quad\Hii
-{\Blind{又} where the lowest term of $r_{m-\SmallPar{k+1}}\in\PoF{m}$ is of deg $\Par{m-k}.$\par}\vspace{24pt}\quad\Hii
-{\Blind{$\Rightarrow x^{m-\SmallPar{k+1}}=\Frac{}{a_{m-\SmallPar{k+1},m-\SmallPar{k+1}}}\XPar{p_{m-\SmallPar{k+1}}\Par{x}-r_{m-\SmallPar{k+1}}\Par{x}}$}${}=\Span[\BigPar]{p_m,\dots,p_{m-k},p_{m-\SmallPar{k+1}}}.$\par}\vspace{-50pt}\quad\Hii
-{$\Rightarrow x^{m-\SmallPar{k+1}}=\Frac{1}{a_{m-\SmallPar{k+1},m-\SmallPar{k+1}}}\XPar{p_{m-\SmallPar{k+1}}\Par{x}-r_{m-\SmallPar{k+1}}\Par{x}}\in\Span[\BigPar]{x^m,\dots,x^{m-k},p_{m-\SmallPar{k+1}}}$\par}\vspace{4pt}\quad\Hii
-{$\therefore\;x^{m-\SmallPar{k+1}}\in\Span[\BigPar]{p_m,\dots,p_{m-k},p_{m-\SmallPar{k+1}}}$\par}\vspace{3pt}\quad\Hii
-{\Blind{$\therefore\;$}$\Rightarrow\Span[\BigPar]{x^m,\dots,x^{m-k},x^{m-\SmallPar{k+1}}}\subseteq\Span[\BigPar]{p_m,\dots,p_{m-k},p_{m-\SmallPar{k+1}}}.$\par}\vspace{3pt}\quad
-{Thus $\PoF{m}=\Span[\BigPar]{x^m,\dots,x,1}=\Span[\BigPar]{p_m,\dots,p_1,p_0}.$}\PfEnd\vspace{8pt}\quad
-\Or 用比较系数法. {Denote the coeff of $x^k$ in $p\in\PoFi$ by $\xi_k\Par{p}.$}\par\quad
-{Supp $L=a_m p_m\Par{x}+\dots+a_1 p_1\Par{x}+a_0p_0\Par{x}=0\cdot x^m+\dots+0\cdot x+0\cdot 1=R,\forall x\in\Fbb.$}\par\quad
-{We show $a_m=\dots=a_0=0$ via the following process. So that $\Par{p_0,p_1,\dots,p_m}$ is liney indep.}\vspace{2pt}\par\quad
-{\tgbfx Step 1.} {For $k=0,$ \;$\xi_{0}\Par{L}=a_{0}\xi_{0}\Par{p_0}=\xi_{0}\Par{R}=0$ 又 $\deg p_0=0,\;\xi_{0}\Par{p_0}\neq 0\Rightarrow a_0=0.$}\par\quad
-\Blind{{\tgbfx Step 1.}} {Now $L=a_1p_1\Par{x}+\dots+a_{m}p_{m}\Par{x}.$}\vspace{2pt}\par\quad
-{\tgbfx Step k.} {For $0\leqslant k\leqslant m,$ we have $a_{k-1}=\dots=a_0=0.$}\par\quad
-\Blind{{\tgbfx Step k.}} {Now $\xi_{k}\Par{L}=a_{k}\xi_{k}\Par{p_k}=\xi_{k}\Par{R}=0$ 又 $\deg p_k=k,\;\xi_{k}\Par{p_k}\neq 0\Rightarrow a_k=0.$}\par\quad
-\Blind{{\tgbfx Step k.}} {Now if $k=m,$ then done. Othws, we have $L=a_{k+1}p_{k+1}\Par{x}+\dots+a_mp_m\Par{x}.$}\PfEnd
-\SepLine
-
-\BulletPointX\NoteForSmall{[2.11]} {\tgsc Good definition for a general term always aviods undefined behaviours.}\TextB{}
-If $\deg p=0,$ then $p\Par{z}=a_0\neq 0,$ but \uline{not literally $a_0z^0,$} by which if $p$ is defined, then it comes to $0^0.$\TextB{}
-To make it clear, we \uline{specify that {\tgsl in} $\PoFi,$ $a_0z^0=a_0,$ where $z^0$ appears just for nota conveni.}\TextB{}
-Becs by def, the term $a_0z^0$ in a poly only represents the const term of the poly, which is $a_0.$\TextB{}
-For conveni, we asum $z^0=1$ in formula deduction and poly def. Absolutely without $0^0.$
-\SepLine
-
-\ProblemBnoor{\hypertarget{2C4e10}4E 10}{
-	\TextB{Supp $m$ is a positive integer. For $0\leqslant k\leqslant m$, let $p_k\Par{x}=x^k\Par{1-x}{^{m-k}}$.}
-	\TextB{Show $\Par{p_0,\dots,p_m}$ is a bss of $\PoF{m}$.\vspace{0pt}}
-	%\TextB{{\large The bss in this exe leads to what are called Bernstein polys. You can do a web search to learn how}}
-	%\TextB{{\large Bernstein polys are used to approximate continuous functions on $[0, 1]$.}}
-}{\tgsl We may see $p_0=1$ and $p_m\Par{x}=x^m,$ from the expansion below, by the {\NOTEFOR} [2.11] above.}\vspace{4pt}\par\quad
-Note that each $p_k\Par{x}={\sum_{j=0}^{m-k}\mathC_{m-k}^j\Par{-1}{^{j}}\cdot x^{j+k}\cdot 1^j}=\underset{\text{of deg k}}{\uline{\Par{-1}{^0}\cdot x^k\cdot 1^0}}+\underset{\text{of deg m; denote it by }q_k\SmallPar{x}}{\uline{\sum_{j=1}^{m-k}\mathC_{m-k}^j\Par{-1}{^{j}}\cdot x^{j+k}\cdot 1^j}}.$\vspace{-12pt}\par\quad
-And, each $q_k\in\Span{x^{k+1},\dots,x^m}.$ Using {\TIPS} above.\PfEnd\vspace{6pt}\quad
-\Or Simlr to the {\TIPS} above. We will recurly prove each $x^{m-k}\in\Span{p_m,\dots,p_{m-k}}.$\par\quad
-(i) $k=1.$ \;$p_m\Par{x}=x^m\in\Span{p_m};$ \;\; $p_{m-1}\Par{x}=x^{m-1}-x^m\Rightarrow x^{m-1}\in\Span{p_{m-1},p_m}.$\vspace{2pt}\par\quad\Endi
-(ii) $k\in\Bra{1,\dots,m-1}.$ \;Supp for each $k\in\Bra{0,\dots,k},$ we have $x^{m-k}\in\Span[\BigPar]{p_{m-k},\dots,p_m},\exists\,!\,a_m\in\Fbb.$\vspace{2pt}\par\quad\Hii
-Note that $x^{m-\SmallPar{k+1}}=p_{m-\SmallPar{k+1}}\Par{x}+\sum_{j=1}^{k+1}\mathC_{k+1}^j\Par{-1}{^{j+1}}x^{m-\SmallPar{k+1}+j}\in\Span[\BigPar]{p_{m-\SmallPar{k+1}},x^{m-k},\dots,x^{m}}.$\vspace{2pt}\par\quad\Hii
-Thus $x^{m-\SmallPar{k+1}}\in\Span[\BigPar]{p_{m-\SmallPar{k+1}},p_{m-k},\dots,p_m}.$\PfEnd\vspace{2pt}\quad
-\AComm The base step and the induc step can be indep.\vspace{10pt}\par\quad
-\Or For any $m,k\in\Nbp$ suth $k\leqslant m.$ Define $p_{k,m}$ by $p_{k,m}\Par{x}=x^k\Par{1-x}{^{m-k}}.$\par\quad
-Define the stmt $S\Par{m}$ by $S\Par{m}:\Par{p_{0,m},\dots,p_{m,m}}$ is liney indep \BigPar{ and therefore is a bss }.\par\quad
-We use induc on to show $S\Par{m}$ holds for all $m\in\Nbp.$\vspace{2pt}\par\quad
-(i) $m=0.$ \;$p_{0,0}=1,$ and $ap_{0,0}=0\Rightarrow a=0.$\par\quad\Hi
-$m=1.$ \;Let $a_0\Par{1-x}+a_1x=0,\forall x\in\Fbb.$ \;Then take $x=1,x=0\Rightarrow a_1=a_0=0.$\par\vspace{4pt}\quad
-%$m=2.$ \;Let $a_0\Par{1-x}{^2}+a_1\Par{1-x}x+a_2x^2=0,\forall x\in\Fbb.$ \;Then $\small\MathLeftBrace{l}{\!\!x=0\Rightarrow a_0+a_1=0;\\\!\!x=1\Rightarrow a_2=0;\\\!\!x=2\Rightarrow a_0+2a_1=0.}$\par\vspace{0pt}\quad\Endi
-(ii) $1\leqslant m.$ \;Asum $S\Par{m}$ and $S\Par{m-1}$ holds. Now we show $S\Par{m+1}$ holds.\vspace{2pt}\par\quad\Hii
-Supp $\sum_{k=0}^{m+1}a_kp_{k,m+1}\Par{x}=\sum_{k=0}^{m+1}a_k\Sbra{x^k\Par{1-x}{^{m+1-k}}}=0,\forall x\in\Fbb.$\vspace{6pt}\par\quad\Hii
-\envFontLarge{Now $a_0\Par{1-x}{^{m+1}}+\sum_{k=1}^{m}a_kx^k\Par{1-x}{^{m+1-k}}+a_{m+1}x^{m+1}=0,\forall x\in\Fbb.$}\par\vspace{2pt}\quad\Hii
-While $x=0\Rightarrow a_0=0;$ \;and $x=1\Rightarrow a_{m+1}=0.$\par\vspace{2pt}\quad\Hii
-Then $0=\sum_{k=1}^{m}a_kx^k\Par{1-x}{^{m+1-k}}$\par\vspace{4pt}\quad\Hii
-\Blind{Then $0$}${}=x\Par{1-x}\sum_{k=1}^{m}a_kx^{k-1}\Par{1-x}{^{m-k}},$ {\normalsize note that} {\small\envFontSmall[\small]$ m-k=\Par{m-1}-\Par{k-1}$}\par\vspace{4pt}\quad\Hii
-\Blind{Then $0$}${}=x\Par{1-x}\textstyle\sum_{k=0}^{m-1}a_{k+1}x^{k}\Par{1-x}{^{m-1-k}}=x\Par{1-x}\sum_{k=0}^{m-1}a_{k+1}p_{k,m-1}\Par{x}.$\par\vspace{6pt}\quad\Hii
-\FontNorm{\vspace{4pt}Hence \;$\sum_{k=0}^{m-1}a_{k+1}p_{k,m-1}\Par{x}=0,\forall x\in\Fbb\Backslash{\def\envFont{\envFontB}\Bra{\,0,1}}.$ Which has infily many zeros.}\par\quad\Hii
-Moreover, \;$\sum_{k=0}^{m-1}a_{k+1}p_{k,m-1}\Par{x}=0.$ By asum, $a_1=\dots=a_{m-1}=a_{m}=0.$\par\quad\Hii
-Thus $\Par{p_{0,m+1},\dots,p_{m+1,m+1}}$ is liney indep and $S\Par{m+1}$ holds.\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{2C14}{14}}{
@@ -653,9 +462,10 @@ However, it's true that $\Par{X+Y}${\Large${}\cap{}$}$Z\supseteq\Par{X\cap Z}+\P
 Becs $\Par{X\cap Z}+\Par{Y\cap Z}\ni v=x+y=z_1+z_2\in\BigPar{X+\Par{Y\cap Z}}${\Large${}\cap{}$}$Z\Rightarrow v\in\Par{X+Y}${\Large${}\cap{}$}$Z.$\par\quad
 Where $\exists\,x=z_1\in X\cap Z,y=z_2\in Y\cap Z.$\par\vspace{2pt}\quad
 \AComm $\Dim\BigPar{\Par{X+Y}\cap Z}\geqslant\Dim\Par{X\cap Z}+\Dim\Par{Y\cap Z}-\Dim\Par{X\cap Y\cap Z}.$\par\vspace{8pt}
-\BulletPointX\ACoro \Largesl{Supp $V_{\!1},V_{\!2},V_{\!3}$ are finide, then}\vspace{-2pt}\TextB{}
-\AlignEq{}{\Dim\Par{V_{\!1}+V_{\!2}+V_{\!3}}=\dim &\,V_{\!1}+\dim V_{\!2}+\dim V_{\!3}\\&-\Frac{\Dim\Par{V_{\!1}\cap V_{\!2}}+\Dim\Par{V_{\!1}\cap V_{\!3}}+\Dim\Par{V_{\!2}\cap V_{\!3}}}{3}\\&-\Frac{\Dim\BigPar{\Par{V_{\!1}+V_{\!2}}\cap V_{\!3}}+\Dim\BigPar{\Par{V_{\!1}+V_{\!3}}\cap V_{\!2}}+\Dim\BigPar{\Par{V_{\!2}+V_{\!3}}\cap V_{\!1}}}{3}.}
-\SepLine
+\BulletPointX\ACoro $\Dim\Par{V_{\!1}+V_{\!2}+V_{\!3}}=\dim V_{\!1}+\dim V_{\!2}+\dim V_{\!3}$\parCor{\IndentB}
+$\Blind{\Dim\Par{V_{\!1}+V_{\!2}+V_{\!3}}}{}-\Sbra{\Dim\Par{V_{\!1}\cap V_{\!2}}+\Dim\Par{V_{\!1}\cap V_{\!3}}+\Dim\Par{V_{\!2}\cap V_{\!3}}}\Big/3$\parCor{\IndentB}
+$\Blind{\Dim\Par{V_{\!1}+V_{\!2}+V_{\!3}}}{}-\Sbra{\Dim\BigPar{\Par{V_{\!1}+V_{\!2}}\cap V_{\!3}}+\Dim\BigPar{\Par{V_{\!1}+V_{\!3}}\cap V_{\!2}}+\Dim\BigPar{\Par{V_{\!2}+V_{\!3}}\cap V_{\!1}}}\Big/3.$
+\SepLine\pagebreak
 
 \BulletPointX\Tips \,\,\,Becs $\dim \Par{V_{\!1}\cap V_{\!2}\cap V_{\!3}}=\dim V_{\!1}+\Dim\Par{V_{\!2}\cap V_{\!3}}-\Dim\BigPar{V_{\!1}+\Par{V_{\!2}\cap V_{\!3}}}.$\TextB{}
 \IndentTips{}And $\Dim\Par{V_{\!2}\cap V_{\!3}}=\dim V_{\!2}+\dim V_{\!3}-\Dim\Par{V_{\!2}+V_{\!3}}.$ We have $\Par{1},$ and $\Par{2},\Par{3}$ simlr.\TextB{}
@@ -676,6 +486,10 @@ Where $\exists\,x=z_1\in X\cap Z,y=z_2\in Y\cap Z.$\par\vspace{2pt}\quad
 \vfill\ChDecl{Ch3A}{3$\cdot$A}{}\orMode{\hLk{3A3}{3}\;\;\hLk{3A4}{4}\;\;\hLk{3A5}{5}\;\;\hLk{3A7}{7}\;\;\hLk{3A8}{8}\;\;\hLk{3A10}{10}\;\;\hLk{3A11}{11}\;\;\hLk{3A12}{12}\;\;\hLk{3A13}{13}\;\;|\;\;\hLk{3A4e10}{4E:\;\;10}\;\;\hLk{3A4e11}{11}\;\;\hLk{3A4e17}{17}}{[1]: \BigPar{4E 3.B.33(a)}, (4E 1.B.7); [2]: 5, 3, 4, 7, 8, 9, (4E 10), 10; [3]: 11, 12, 13, (4E 17); [4]: (4E 3.B.32), (4E 11).}
 
 \vspace{8pt}
+
+\ProblemBnoor[]{\hypertarget{3E1}{3.E.1}}{
+	\TextB{A function $T:V\rightarrow W$ is liney $\Longleftrightarrow$ The graph of $T$ is a subspace of $V\times W.$\vspace{-6pt}}
+}\SepLine
 
 \BulletPointX\TipsN{1} \,\,\,$T:V\rightarrow W$ is liney $\Longleftrightarrow\MathLeftrightMid{l}{\hspace{-4pt}$
 (一) $\forall v,u\in V,T\Par{v+u}=Tv+Tu;\\\hspace{-4pt} $
@@ -1194,40 +1008,22 @@ Thus $\dim\null TS\geqslant\max\!\Bra{\dim\null S,\dim\null T}=\Big\lceil${\Larg
 \AExa Define $T: \; v_1\mapsto 0, \;\;\, v_2\mapsto 0, \;\;\; v_i\mapsto v_i\;;$ \;\; $S: \; v_1\mapsto v_4, \; v_2\mapsto v_5, \;\; v_i\mapsto 0\;;\;\; i=3,4,5.$\par\vspace{-2pt}
 \SepLine
 
-\ProblemN{\hypertarget{3B26}{26}}{
-	\TextNL{Supp $D\in\Lm[\BigPar]{\PoRi}$ and $\forall p,\Deg\BigPar{Dp}=\Par{\!\deg p}-1.$ \;Prove $D\in\PoRi$ is surj.\vspace{2pt}}
-}\!\Sbra{ $D$ might not be $D:p\mapsto p\apostrophe.$\hspace{1pt}} \;\NOTICE that the following proof is wrong:\parSol{}
-Becs $\Span{Dx,Dx^2,Dx^3,\cdots}\subseteq\range D,$ and $\deg Dx^n=n-1.$\parSol{}
-又 By (2.C.10), $\Span{Dx,Dx^2,Dx^3,\cdots}=\Span{1,x,x^2,\cdots}=\PoRi.$\par\vspace{4pt}\quad
-\uline{Let $D\Par{C}=0,Dx^k=p_k$} of deg $\Par{k-1},$ for all $C\in\Rbb=\PoR{0}$ and for each $k\in\Nbp.$\par\quad
-Becs $B_{\PoR[\SmallPar]{m}}=\Par{p_1,\dots,p_m,p_{m+1}}.$ And for all $p\in\PoRi,\exists\,!\,m=\deg p\in\Nbp.$\par\quad
-So that $\exists\,!\,a_i\in\Rbb,p=\sum_{i=1}^{m+1}a_ip_i\Rightarrow\exists\,q=\sum_{i=1}^{m+1}a_{i}x^{i},Dq=p.$\PfEnd\vspace{6pt}\quad
-{\Or We will \uline{recurly define a seq of polys $\Par{p_k}{_{k=0}^\infty}$ where $Dp_0=1,Dp_k=x^k$} for each $k\in\Nbp.$}\par\vspace{2pt}\quad
-{\FontSmall So that $\forall p=\sum_{k=0}^{\deg p}a_k x^k\in\PoRi,Dq=p,\exists\,q={\sum_{k=0}^{\deg p}a_k p_k}.$}\par\vspace{4pt}\quad
-(i) {Becs $\deg Dx=\Par{\!\deg x}-1=0,Dx=C\in\nonzeroFbb.$ Let $p_0=C^{-1}x\Rightarrow Dp_0=C^{-1}Dx=1.$}\vspace{2pt}\par\quad\Endi
-(ii) {Supp we have defined $Dp_0=1,Dp_k=x^k$ for each $k\in\Bra{1,\dots,n}.$ Becs $\deg D\Par{x^{n+2}}=n+1.$}\vspace{2pt}\par\quad\Hii
-{Let {\;$D\Par{x^{n+2}}=a_{n+1}x^{n+1}+a_n x^n+\dots+a_1 x+a_0,$} with $a_{n+1}\neq 0.$}\vspace{2pt}\par\quad\Hii
-{Then {\;$a_{n+1}^{-1}D\BigPar{x^{n+2}}=x^{n+1}+a_{n+1}^{-1}\BigPar{a_n Dp_n+\dots+a_1 Dp_1 +a_0 Dp_0}$}}\vspace{2pt}\par\quad\Hii
-{$\Rightarrow x^{n+1}=D\XSbra{\uline{a_{n+1}^{-1}\Par{x^{n+2}-a_n p_n-\dots-a_1 p_1-a_0 p_0}}}.$ Thus defining $p_{n+1},$ so that $Dp_{n+1}=x^{n+1}.$}\PfEnd
-\SepLine
-
 \ProblemN{\hypertarget{3B20}{}\hypertarget{3B21}{20, 21}}{
 	(a) \Text{Prove if $ST=I\in\Lm{V},$ then $T$ is inje and $S$ is surj.}
-	\Blind{\Onumber{20, 21} }(b) \Text{Supp $T\in\Lm{V,W}.$ Prove if $T$ is inje, then $\exists\,S\in\Lm{W,V},\;ST=I$.}
-	\Blind{\Onumber{20, 21} }(c) \Text{Supp $S\in\Lm{W,V}.$ Prove if $S$ is surj, then $\exists\,T\in\Lm{V,W},\;ST=I.$\vspace{2pt}}
+	\Blind{\Onumber{20, 21} }(b) \Text{Supp $T\in\Lm{V,W}.$ Prove if $T$ is inje, then $\exists$ surj $S\in\Lm{W,V},\;ST=I$.}
+	\Blind{\Onumber{20, 21} }(c) \Text{Supp $S\in\Lm{W,V}.$ Prove if $S$ is surj, then $\exists$ inje $T\in\Lm{V,W},\;ST=I.$\vspace{-6pt}}
 }\par\quad
 (a) $Tv=0\Rightarrow S\Par{Tv}=0=v.$ \Or $\null T\subseteq\null ST=\zeroSubs.$\par\quad\Ha
 $\forall v\in V,ST\Par{v}=v\in\range S.$ \;\Or $V=\range ST\subseteq\range S.$\par\vspace{2pt}\quad
 (b) Define $S\in\Lm{\range T,V}$ by $Sw=T^{-1}w,$ {where $T^{-1}$ is the inv of $T\in\Lm{V,\range T}.$}\par\quad\Hb
-Then extend to $S\in\Lm{W,V}$ by (3.A.11). Now $\forall v\in V,STv=T^{-1}Tv=v.$\par\vspace{4pt}\quad\Hb
+Then extend to $S\in\Lm{W,V}$ by (3.A.11). Now $\forall v\in V,STv=T^{-1}Tv=v.$\par\vspace{3pt}\quad\Hb
 \Or \Sbra[3pt]{{\tgsl Req $V$ Finide}} \;Let $B_{\range T}=\Par{Tv_1,\dots,Tv_n}\Rightarrow B_V=\Par{v_1,\dots,v_n}.$ Let $U\oplus\range T=W$.\par\quad\Hb
 Define $S\in\Lm{W,V}$ by $S\Par{Tv_i}=v_i,Su=0$ for each $v_i$ and all $u\in U.$ Thus $ST=I.$\par\vspace{6pt}\quad
 (c) By Exe (12), $\exists$ subsp $U$ of $W,W=U\oplus\null S,\;\range S=\range S\mmid_U=V.$\par\quad\Hc
 Note that $S\mmid_U:U\rightarrow V$ is iso. Define $T=\BigPar{S\mmid_U}{^{-1}},$ where $\BigPar{S\mmid_U}{^{-1}}:V\rightarrow U.$\par\quad\Hc
 Then $ST=S\circ\BigPar{S\mmid_U}{^{-1}}=S\mmid_U\circ\BigPar{S\mmid_U}{^{-1}}=I_V.$\par\vspace{4pt}\quad\Hc
 \Or \Sbra[3pt]{{\tgsl Req $V$ Finide}} \;Let $B_{\range S}=B_{V}=\Par{Sw_1,\dots,Sw_n}\Rightarrow\Span{w_1,\dots,w_n}\oplus\null S=W.$\par\quad\Hc
-Define $T\in\Lm{V,W}$ by $T\Par{Sw_i}=w_i.$ Now $ST\BigPar{a_1Sw_1+\dots+a_nSw_n}=\Par{a_1Sw_1+\dots+a_nSw_n}.$\PfEnd\vspace{4pt}
-\ACoro For (b), if $T$ is inje and $\exists\,S,\;ST=I,$ then by (a), this $S$ is surj. Simlr for (c).
+Define $T\in\Lm{V,W}$ by $T\Par{Sw_i}=w_i.$ Now $ST\BigPar{a_1Sw_1+\dots+a_nSw_n}=\Par{a_1Sw_1+\dots+a_nSw_n}.$\PfEnd
 \SepLine
 
 \BulletPointX\TipsN{5}\,\,\,Supp $S\in\Lm{U,V}$ is surj. Define $\mathcal{B}\in\Lm[\BigPar]{\Lm{V,W},\Lm{U,W}}$ by $\mathcal{B}\Par{T}=TS.$\TextB{}
@@ -1272,16 +1068,15 @@ we can extend inje $T\BigPar{S\mmid_{U}}{^{-1}}\in\Lm[\BigPar]{\range S,W}$ to i
 \Or \Sbra[3pt]{{\tgsl Req $\range S$ Finide}} \;Let $B_{\range S}=\Par{Sv_1,\dots,Sv_n}$. Then \uline{$V=\Span{v_1,\dots,v_n}\oplus\null S$.}\par\quad
 Define $E\in\Lm{\range S,W}$ by $E\Par{Sv_i}=Tv_i.$ \;Extend to $E\in\Lm{M,W}.$\par\quad
 Hence $\forall v=\sum_{i=1}^na_iv_i+u\in V,\,\,$\uline{$\BigPar{\exists\,!\,u\in\null S\subseteq\null T\,},\,Tv=\sum_{i=1}^na_iTv_i+0$}${}=E\BigPar{\sum_{i=1}^na_iSv_i+0}.$\PfEnd\vspace{6pt}\quad
-\ACoro \Sbra[3pt]{{\tgsl Req $W$ Finide}} \;Supp $\null S=\null T.$ We show $\exists$ inv $E\in\Lm{M,W},T=ES.$\par\quad
+\hypertarget{3D4}{}\ACoro \Sbra[3pt]{{\tgsl Req $W$ Finide}} \;Supp $\null S=\null T.$ We show $\exists$ inv $E\in\Lm{M,W},T=ES.$\par\quad
 Redefine $E\in\Lm{M,W}$ by $E\Par{Tv_i}=Sv_i,\;E\Par{w_j}=x_j,$ for each $Tv_i$ and $w_j.$ Where:\par\quad
 Let $B_{\range T}=\Par{Tv_1,\dots,Tv_m},B_W=\Par{Tv_1,\dots,Tv_m,w_1,\dots,w_n},B_U=\Par{v_1,\dots,v_m}.$\par\quad
 Now $V=U\oplus\null T=U\oplus\null S\Rightarrow B_{\range S}=\BigPar{Sv_1,\dots,Sv_m}.$ Let $B_M=\Par{Sv_1,\dots,Sv_m,x_1,\dots,x_n}.$\PfEnd 
-\SepLine\pagebreak
+\SepLine
 
 \ProblemN{\hypertarget{3B25}{25}}{
 	\TextNL{Supp {\FontNorm$S\in\Lm{Y,W},T\in\Lm{V,W},$} and $\range T\subseteq\range S.$ Prove $\exists\,E\in\Lm{V,Y},T = SE$.}
-}\par\quad
-Let $Y=U\oplus\null S$\vspace{-4pt}\par\quad
+}Let $Y=U\oplus\null S$\vspace{-4pt}\parSol{}
 $\Rightarrow S\mmid_U:U\rightarrow\range S$ is iso. Becs $\Par{S\mmid_U}{^{-1}}:\overset{\range T\:\subseteq}{{\range S}}\rightarrow U.$\par\quad
 \uline{Define $E=\BigPar{S\mmid_U}{^{-1}}T=\BigPar{S\mmid_U}{^{-1}}\Big|{_{\range T}}T\in\Lm{V,U}\subseteq\Lm{V,Y}.$}\PfEnd\vspace{-20pt}\quad
 \!\!\!$\hText{\\[6pt]$
@@ -1302,13 +1097,40 @@ Let $B_{\null T}=\Par{x_1,\dots,x_p},B_{\null S}=\Par{y_1,\dots,y_q}.$ Redefine 
 for each $i\in\Bra{1,\dots,\dim U_2},k\in\Bra{1,\dots,\dim\null S}=K,j\in\Bra{1,\dots,\dim\null T}\Backslash[\Big]K.$\parCom\quad
 Note that $\Par{u_1,\dots,u_n}$ is liney indep. Let $X=\Span{x_1,\dots,x_q}\oplus\Span{v_1,\dots,v_n}.$\parCom\quad
 Now $E\mmid_X$ is inje, but cannot be re-extend to inv $E\in\Lm{V,Y}$ suth $T=SE.$\par\vspace{4pt}\quad
-\ACoro \Sbra[3pt]{{\tgsl Req $V$ Finide}} \;If $\range T=\range S,$ then $\dim\null T=\dim\null S=p.$\parCor\quad
+\hypertarget{3D5}{}\ACoro \Sbra[3pt]{{\tgsl Req $V$ Finide}} \;If $\range T=\range S,$ then $\dim\null T=\dim\null S=p.$\parCor\quad
 Redefine $E$ by $Ev_i=u_i,\;Ex_j=y_j$ for each $v_i$ and $x_j.$ Then $E\in\Lm{V,Y}$ is inv.\PfEnd
 \SepLine
 
 \BulletPointX\AComm Supp $S,T\in\Lm{V,W}.$ Then $\range S=\range T\notRightarrow\null S,\null T$ iso.\TextB{}
 \AExa Forward shift optor on $\Fbb^{\infty}$ and backward shift optor on $\Bra{\Par{0,x_1,x_2,\cdots}\in\Fbb^{\infty}}.$\TextB{\vspace{2pt}}
 While $\null S=\null T\Longleftrightarrow E:Sv\mapsto Tv$ and $E^{-1}:Tv\mapsto Sv$ well-defined $\Rightarrow \range S,\range T$ iso.
+\SepLine
+
+\ProblemB[]{
+	\TextB{Supp $S,T\in\Lm{V,W}.$ %\FontNorm\hfill \Sbra{ For Exe \hypertarget{3D4}{(4)} and \hypertarget{3D5}{(5)}, see the {\COROLLARY} in (3.B.24, 25). }
+	}
+}
+\ProblemN{\hypertarget{3D6}{6}}{
+	\TextN{Supp $V$ and $W$ are finide. $\dim\null S=\dim\null T=n.$}
+	\TextN{Prove $S=E_2 T E_1,\exists$ inv $ E_1\in\Lm{V}, E_2\in\Lm{W}.$}
+}$\text{Define}\;\,E_1:\,\,\,\,\, v_i\mapsto r_i\,\,;\quad u_j\mapsto s_j;$\quad for each $i\in\Bra{1,\dots,m},j\in\Bra{1,\dots,n}.$\parSol{}
+$\text{Define}\;\,E_2:Tv_i\mapsto Sr_i\,\,;\;\;x_j\mapsto y_j;$\quad for each $i\in\Bra{1,\dots,m},j\in\Bra{1,\dots,n}.$
+Where:\parSol{\vspace{2pt}}
+$\MathLeftrightMid{l}{$
+	Let $B_{\range T}=\Par{Tv_1,\dots,Tv_m};\;B_{\range S}=\Par{Sr_1,\dots,Sr_m}.\\ $
+	Let $B_W=\Par{Tv_1,\dots,Tv_m,x_1,\dots,x_p};\;B_W'=\Par{Sr_1,\dots,Sr_m,y_1,\dots,y_p}.\\ $
+	Let $B_{\null T}=\Par{u_1,\dots,u_n};\;B_{\null S}=\Par{s_1,\dots,s_n}.\\ $
+	Thus $B_V=\Par{v_1,\dots,v_m,u_1,\dots,u_n};\;B_V'=\Par{r_1,\dots,r_m,s_1,\dots,s_n}.}\hMath{c}{}{}{\therefore\;E_1,E_2$ are inv$ \\ $and $S=E_2 TE_1.}$\PfEnd
+\SepLine[0pt][\Blind{\BulletPointX} ]
+
+\ProblemB{
+	(a) \TextB{Supp $T=ES$ and $E\in\Lm{W}$ is inv. Prove $\null S=\null T.$\vspace{2pt}}
+	(b) \TextB{Supp $T=SE$ and $E\in\Lm{V}$ is inv. Prove $\range S=\range T.$\vspace{2pt}}
+	(c) \TextB{Supp $T=E_2SE_1$ and $E_1\in\Lm{V},E_2\in\Lm{W}$ are inv.}
+	\Hc\TextB{Prove $\dim\null S=\dim\null T.$}
+}(a) $v\in\null T\Longleftrightarrow Tv=0=E\Par{Sv}\Longleftrightarrow Sv=0\Longleftrightarrow v\in\null S.$\parSol{}
+(b) $w\in\range T\Longleftrightarrow\exists\,v\in V,w=Tv=S\Par{Ev}\Longleftrightarrow w\in\range S.$\parSol{}
+(c) Using Exe (22). $\dim\null E_2SE_1\xlongequal[\text{inv}]{E_2}\dim\null SE_1\xlongequal[\text{inv}]{E_1}\dim\null S=\dim\null T.$\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{3B28}{28}}{
@@ -1326,11 +1148,10 @@ Linity: $\forall v,w\in V\,\Sbra{\exists\,!\,a_i,b_i\in\Fbb},\lambda\in\Fbb,\var
 \SepLine
 
 \ProblemN{\hypertarget{3B29}{29}}{
-	\TextNL{Supp $\varphi\in\Lm{V,\Fbb}.$ Supp $\varphi\Par{u}\neq 0.$ Prove $V = \null\varphi\oplus\Bra{au :a\in\Fbb}.$}\vspace{2pt}
-}Let $B_{\range\varphi}=\BigPar{\varphi\Par{u}}.$ Then by \TIPSN{4}, $\Span{u}\oplus\null\varphi=V.$\PfEnd\vspace{6pt}\quad
-\Or (a) $v=cu\in\null\varphi\cap\Span{u}\Rightarrow c\varphi\Par{u}=0\Rightarrow v=0.$ \;Now $\null\varphi\cap\Span{u}=\zeroSubs.$\par\vspace{5pt}\quad
-\Blind{\Or}(b) $\forall\,v\in V,v=\Bigg(v-{}${\Large\envFontSmall$\frac{\varphi\Par{v}}{\varphi\Par{u}}$}$u\Bigg)+{}${\Large\envFontSmall$\frac{\varphi\Par{v}}{\varphi\Par{u}}$}$u.$ \;Now $V=\null\varphi+\Span{u}.$\PfEnd\vspace{3pt}
-\SepLine\pagebreak
+	\TextNL{Supp $\varphi\in\Lm{V,\Fbb}.$ Supp $\varphi\Par{u}\neq 0.$ Prove $V = \null\varphi\oplus\Bra{au :a\in\Fbb}.$\FontSmall\hfill By \TIPSN{4}, immed.}
+}(a) $v=cu\in\null\varphi\cap\Span{u}\Rightarrow c\varphi\Par{u}=0\Rightarrow v=0.$ \;Now $\null\varphi\cap\Span{u}=\zeroSubs.$\parSol{}
+(b) For $v\in V,$ let $a_v=\varphi\Par{v}.$ Then $v=\Sbra{v-\Par{a_v\big/a_u}u}+\Par{a_v\big/a_u}u\Rightarrow V=\null\varphi+\Span{u}.$\PfEnd\vspace{-3pt}
+\SepLine
 
 \ProblemN{\hypertarget{3B30}{30}}{
 	\TextNL{Supp $\varphi,\beta\in\Lm{V,\Fbb}$ and $\null\varphi=\null\beta=\eta.$ Prove $\exists\,c\in\Fbb,\varphi=c\beta.$}
@@ -1676,12 +1497,92 @@ Let $v_1=\Frac{u_k}{A_{1,k}}\Rightarrow Tv_1=1w_1+\Frac{A_{2,k}}{A_{1,k}}w_2+\do
 \Or Using Exe (4). Let $B_{W\apostrophe}$ be the $B_V.$ Now $\exists\,B_{V\apostrophe}$ suth $\Mt{T\apostrophe,B_{W\apostrophe}\,,B_{V\apostrophe}}{_{\cdot,1}}={\small\begin{pmatrix}1&0&\cdots&0\end{pmatrix}}{^t}$ or ${\small\begin{pmatrix}0&\cdots&0\end{pmatrix}}{^t}.$\par\quad
 Which is equiv to $\exists\,B_V$ \Sbra{Using (3.F.31)} suth $\Mt{T,B_V,B_W}{_{1,\cdot}}={\small\begin{pmatrix}1&0&\cdots&0\end{pmatrix}}$ or ${\small\begin{pmatrix}0&\cdots&0\end{pmatrix}}.$\PfEnd
 \SepLine
-\ChEnd
 
-\vfill\ChDecl{Ch3D}{3$\cdot$D}{}
+\ProblemBnoor{\hypertarget{3D4e19}{}10.A.3, \OR 4E 3.D.19}{
+	\TextB{Supp $V$ is finide and $T\in\Lm{V}$.\FontSmall\hfill\Sbra{See also in (3.A).}}
+	\TextB{Prove $\forall B_V\neq B_V',\;\Mt[\BigPar]{T,B_V}=\Mt[\BigPar]{T,B'_V}\Longrightarrow T=\lambda{I},\exists\,\lambda\in\Fbb.$}
+}Supp $\forall B_V\neq B_V',\;\Mt{T,B_V}=\Mt{T,B'_V}.$ If $T=0$, then done.\vspace{1pt}\parSol{}
+Supp $T\neq 0,$ and $v\in V\nonzero.$ Asum $\Par{v,Tv}$ is liney indep.\vspace{1pt}\parSol{}
+Extend $\Par{v,Tv}$ to $B_V=\Par{v,Tv,u_3,\dots,u_n}.$ Let $B=\Mt{T,B_V}.$\vspace{1pt}\parSol{}
+$\Rightarrow Tv=B_{1,1} v+B_{2,1}\Par{Tv}+B_{3,1}u_3+\dots+B_{n,1}u_n\Rightarrow B_{2,1}=1,B_{i,1}=0,\,\forall i\neq 2.$\vspace{1pt}\parSol{}
+By asum, $A=\Mt{T,B_V'}=B,\forall B_V'=\Par{v,w_2,\dots,w_{n}}$. Then $A_{2,1}=1,A_{i,1}=0,\forall i\neq 2.$\parSol{}
+$\Rightarrow Tv=w_2,$ which is not true if $w_2=u_3,\;w_3=Tv,\;w_j=u_j,\forall j\in\Bra{4,\dots,n}.$ Ctradic.\parSol{}
+Hence $\Par{v,Tv}$ is linely dep $\Rightarrow \forall v\in V,\exists\,\lambda_v\in\Fbb,Tv=\lambda_v v.$\parSol{}
+Now we show $\lambda_v$ is indep of $v$, that is, for all disti $v,w\in V\nonzero,\lambda_v=\lambda_w.$\parSol{}
+\!\!\!\!$\MathRightBrace{l}{
+	\Par{v,w}$ liney indep $\Rightarrow T\Par{v+w}=\lambda_{v+w}\Par{v+w}=\lambda_v v+\lambda_w w=Tv+Tw\\
+	\Par{v,w}$ linely dep, $w=c v$ $\Rightarrow Tw=\lambda_w w=\lambda_w cv=c\lambda_v v=T\Par{cv}
+}\Rightarrow T=\lambda I.$\PfEnd\vspace{10pt}\quad
+\Or Let $A=\Mt{T,B_V},$ where $B_V=\Par{u_1,\dots,u_m}$ is arb.\vspace{1pt}\par\quad
+Fix one $B_V=\Par{v_1,\dots,v_m}$ and then $\Par{v_1,\dots,\frac{\;1\;}{2}v_k,\dots,v_m}$ is also a bss for any given $k\in\Bra{1,\dots,m}.$\vspace{1pt}\par\quad
+Fix one $k.$ Now we have $T\!\Par{\frac{\;1\;}{2}v_k}=A_{1,k}v_1+\dots+A_{k,k}\Par{\frac{\;1\;}{2}v_k}+\dots+A_{m,k}v_m$\vspace{1pt}\par\quad
+$\Rightarrow Tv_k=2A_{1,k}v_1+\dots+A_{k,k}v_k+\dots+2A_{m,k}v_m=A_{1,k}v_1+\dots+A_{k,k}v_k+\dots+A_{m,k}v_m.$\vspace{1pt}\par\quad
+Then $A_{j,k}=2A_{j,k}\Rightarrow A_{j,k}=0$ for all $j\neq k.$ Thus $Tv_k=A_{k,k}v_k,\forall k\in\Bra{1,\dots,m}.$\vspace{1pt}\par\quad
+Now we show $A_{k,k}=A_{j,j}$ for all $j\neq k.$ Choose $j,k$ suth $j\neq k.$\vspace{1pt}\par\quad
+Consider $B_V'=\Par{v\apostrophe{\hspace{-3pt}_1},\dots,v\apostrophe{\hspace{-3pt}_j},\dots,v\apostrophe{\hspace{-3pt}_k},\dots,v\apostrophe_{\hspace{-3pt}_m}},$ where $v\apostrophe{\hspace{-3pt}_j}=v_k,\,\,v\apostrophe{\hspace{-3pt}_k}=v_j$ and $v\apostrophe{\hspace{-3pt}_i}=v_i$ for all $i\in\Bra{1,\dots,m}\Backslash[\Big]\Bra{\,j,k}.$\vspace{1pt}\par\quad
+Now $T\Par{v\apostrophe{\hspace{-3pt}_k}}=A_{1,k}v\apostrophe{\hspace{-3pt}_1}+\dots+A_{k,k}v\apostrophe{\hspace{-3pt}_k}+\dots+A_{m,k}v\apostrophe{\hspace{-3pt}_m}=A_{k,k}v\apostrophe{\hspace{-3pt}_k}=A_{k,k}v_j,$ while $T\Par{v\apostrophe{\hspace{-3pt}_k}}=T\Par{v_j}=A_{j,j}v_j.$\PfEnd
+%\Or ??? \Sbra{ There must be another solution using theorems and facts given in (3.D). }\par
+\SepLine\ChEnd
+
+\pagebreak
+
+\ChDecl{Ch3D}{3$\cdot$D}{}
 \orMode{\hLk{3D1}{1}\;\;\hLk{3D2}{2}\;\;\hLk{3D3}{3}\;\;\hLk{3D4}{4}\;\;\hLk{3D5}{5}\;\;\hLk{3D6}{6}\;\;\hLk{3D8}{8}\;\;\hLk{3D9}{9}\;\;\hLk{3D10}{10}\;\;\hLk{3D11}{11}\;\;\hLk{3D12}{12}\;\;\hLk{3D13}{13}\;\;\hLk{3D15}{15}\;\;\hLk{3D16}{16}\;\;\hLk{3D17}{17}\;\;\hLk{3D18}{18}\;\;\hLk{3D19}{19}\;\;|\;\;\hLk{3D4e3}{4E:\;\;3}\;\;\hLk{3D4e10}{10}\;\;\hLk{3D4e15}{15}\;\;\hLk{3D4e17}{17}\;\;\hLk{3D4e19}{19}\;\;\hLk{3D4e20}{20}\;\;\hLk{3D4e22}{22}\;\;\hLk{3D4e23}{23}\;\;\hLk{3D4e24}{24}}[-28pt]{[1]: 2; [2]: 3, 8, 18, 4, 5, 6; [2]: 9, 1, 13, 10, 11, 12, (4E 3), (4E 15); [3]: 15, (4E 23, 22, 24);$\\$[4]: 17, (4E 10); [5]: (4E 17), (4E 20); [6]: 19, 16, (4E 19).}
 
 \vspace{8pt}
+
+\ProblemBnoor{\hypertarget{3E2}{3.E.2}}{
+	\TextB{Supp $V_{\!1}\times\dots\times V_{\!m}$ is finide. Prove each $V_{\!j}$ is finide.}
+}For any $k\in\Bra{1,\dots,m},$ define $S_k\in\Lm{V_{\!1}\times\dots\times V_{\!m},V_{\!k}}$ by $S_k\Par{v_1,\dots,v_m}=v_k.$\parSol{}
+Then $S_k$ is liney map. By [3.22], $\range S_k=V_{\!k}$ is finide.\PfEnd\vspace{4pt}\parSol{}
+\Or Denote $V_{\!1}\times\cdots\times V_{\!m}$ by $U$. Denote $\zeroSubs\times\cdots\times\zeroSubs\times V_{\!i}\times\zeroSubs\cdots\times\zeroSubs$ by $U_i$.\parSol{}
+We show each $U_i$ is iso to $V_{\!i}.$ Then $U$ is finide $\Longrightarrow$ its subsp $U_i$ is  finide, so is $V_{\!i}.$\parSol{\vspace{2pt}}
+$\!\!\!\MathRightBrace{l}{$
+	Define $R_i\in\Lm{V_{\!i},U_i}$ by $R_i\Par{u_i}=\Par{0,\dots,0,u_i,0,\dots,0}\\ $
+	Define $S_i\in\Lm{U,V_{\!i}}$ by $S_i\Par{u_1,\dots,u_i,\dots,u_m}=u_i$
+	$}\Rightarrow\MathLeftBrace{l}{R_iS_j\mmid_{U_j}=\delta_{i,j}I_{U_j},\\S_iR_j=\delta_{i,j}I_{V_{\!j}}.}$\PfEnd
+\SepLine
+
+\ProblemBnoor{\hypertarget{3E4}{3.E.4}}{
+	\TextB{Prove $\Lm{V_{\!1}\times\cdots\times V_{\!m},W}$ and $\Lm{V_{\!1},W}\times\cdots\times\Lm{V_{\!m},W}$ are iso.}
+}Using nota in (3.E.2): $R_i:u_i\mapsto\Par{0,\dots,u_i,\dots,0};\;S_i:\Par{u_1,\dots,u_m}\mapsto u_i.$\par\quad
+Note that $T\Par{u_1,\dots,u_m}=T\Par{u_1,0,\dots,0}+\dots+T\Par{0,\dots,u_m}.$\par{\hspace{0pt}}
+$\MathRightBrace{l}{$
+	Define $\varphi:T\mapsto\Par{T_1,\dots,T_m}$ by $\varphi\Par{T}=\Par{TR_1,\dots,TR_m}.\\ $
+	Define $\psi:\Par{T_1,\dots,T_m}\mapsto T$ by $\psi\Par{T_1,\dots,T_m}=T_1 S_1+\dots+T_m S_m.$
+	$}\Rightarrow\psi=\varphi^{-1}.$\PfEnd
+\SepLine
+
+\ProblemBnoor{\hypertarget{3E5}{3.E.5}}{
+	\TextB{Prove $\Lm{V,W_1\times\cdots\times W_m}$ and $\Lm{V,W_1}\times\cdots\times\Lm{V,W_m}$ are iso.}
+}Using nota in (3.E.2): $R_i:u_i\mapsto\Par{0,\dots,u_i,\dots,0};\;S_i:\Par{u_1,\dots,u_m}\mapsto u_i.$\par{\hspace{0pt}}
+$\hText{$Note that $T_i:v\mapsto w_i,\\\;T:v\mapsto\Par{w_1,\dots,w_m}.}\hMath{l}{\left|}{\right\}}{$
+	Define $\varphi:T\mapsto \Par{T_1,\dots,T_m}$ by $\varphi\Par{T}=\Par{S_1 T,\dots,S_m T}.\\ $
+	Define $\psi:\Par{T_1,\dots,T_m}\mapsto T$ by $\psi\Par{T_1,\dots,T_m}=R_1T_1+\dots+R_mT_m.$
+	$}\Rightarrow\psi=\varphi^{-1}.$\PfEnd[-8pt]\vspace{-8pt}
+\SepLine
+
+\ProblemN{\hypertarget{3D18}{18}}{
+	\TextNL{Show $V$ and $\Lm{\Fbb, V}$ are iso vecsps.}
+}Define $\Psi\in\Lm[\BigPar]{V,\Lm{\Fbb, V}}$ by $\Psi\Par{v}=\Psi_{\!v};$ \;where $\Psi_{\!v}\in\Lm{\Fbb, V}$ and $\Psi_{\!v}\Par{\lambda}=\lambda v.$\parSol{}
+(a) $\Psi\Par{v}=\Psi_{\!v}=0\Rightarrow \forall \lambda\in\Fbb,\Psi_{\!v}\Par{\lambda}=\lambda v=0\Rightarrow v=0.$ Now $\Psi$ inje.\parSol{}
+(b) $\forall T\in\Lm{\Fbb,V},$ let $v= T\Par{1}\Rightarrow T\Par{\lambda}=\lambda v=\Psi_{\!v}\Par{\lambda},\forall\lambda\in\Fbb\Rightarrow T=\Psi\BigPar{T\Par{1}}\in\range \Psi.$\PfEnd\vspace{4pt}\parSol{}
+\Or Define $\Phi\in\Lm[\BigPar]{\Lm{\Fbb,V}, V}$ by $\Phi\Par{T}=T\Par{1}.$\parSol{}
+(a) Supp $\Phi\Par{T}=0=T\Par{1}=\lambda T\Par{1}=T\Par{\lambda},\forall\lambda\in\Fbb\Rightarrow T=0.$ Now $\Phi$ inje.\parSol{}
+(b) For any $v\in V,$ define $T\in\Lm{\Fbb,V}$ by $T\Par{\lambda}=\lambda v.$ Then $\Phi\Par{T}=T\Par{1}=v\in\range\Phi.$\PfEnd\vspace{2pt}
+\AComm $\Phi=\Psi^{-1}.$ \;{\FontSmall This is a counterexa of the stmt that $\Lm{V,W}$ and $\Lm{W,V}$ are iso if infinde. See (3.F).}
+\SepLine
+
+\ProblemBnoor{\hypertarget{3E6}{3.E.6}}{
+	\TextB{Supp $m\in\Nbp.$ Prove $V^m$ and $\Lm{\Fbb^m,V}$ are iso.}
+}Using (3.D.18) and (3.E.4), immed.\PfEnd\quad
+\Or Define $T:\Par{v_1,\dots,v_m}\rightarrow\varphi$, where $\varphi:\Par{a_1,\dots,a_m}\mapsto a_1 v_1+\dots+a_m v_m.$\par\vspace{2pt}\quad
+(a) Supp $T\Par{v_1,\dots,v_m}=0.$ Then $\forall\Par{a_1,\dots,a_n}\in\Fbb^m$, $\varphi\Par{a_1,\dots,a_m}=a_1 v_1+\dots+a_m v_m=0$\par\quad\Ha
+For each $k,$ let $a_k=1,a_j=0$ for all $j\neq k.$ Then each $v_k=0\Rightarrow\Par{v_1,\dots,v_m}=0.$ Thus $T$ is inje.\par\vspace{2pt}\quad
+(b) Supp $\psi\in\Lm{\Fbb^m,V}.$ Let $\Par{e_1,\dots,e_m}$ be std bss of $\Fbb^m$. Then $\forall\Par{b_1,\dots,b_n}\in\Fbb^m$,\vspace{3pt}\par\quad\Hb
+$\XSbra{T\envFontLarge\BigPar{\envFontDefault\psi\Par{e_1},\dots,\psi\Par{e_m}\envFontLarge}\envFontDefault}\Par{b_1,\dots,b_m}=b_1\psi\Par{e_1}+\dots+b_m\psi\Par{e_m}=\psi\BigPar{b_1 e_1+\dots+b_m e_m}=\psi\Par{b_1,\dots,b_m}$.\vspace{3pt}\par\quad\Hb
+Thus $T\BigPar{\psi\Par{e_1},\dots,\psi\Par{e_m}}=\psi$. Hence $T$ is surj.\PfEnd
+\SepLine
 
 \ProblemN{\hypertarget{3D2}{2}}{
 	\TextN{Supp $\dim V > 1$. Prove the set $U$ of non-inv optors on $V$ is not a subsp of $\Lm{V}$.}
@@ -1701,111 +1602,79 @@ Define $S,T\in\Lm{V}$ by $S\Par{a_1 v_1+\dots+a_n v_n}=a_1 v_1,\;T\Par{a_1 v_1+\
 }$\forall u\in U,\exists\,!\,\Par{w,x_1}\in W\times X,u=w+x_1.$ While $\exists\,!\,\Par{u\apostrophe,x_2}\in U\times X,w=u\apostrophe+x_2.$\parSol{}
 Now $x_1=-x_2,\:u=u\apostrophe.$ Thus $\pi:U\rightarrow W$ defined by $\pi\Par{u}=w,$ \,is inje.\parSol{\vspace{3pt}}
 $\forall w\in W,\exists\,!\,\Par{u,x_1}\in U\times X,w=u+x_1.$ While $\exists\,!\,\Par{w\apostrophe,x_2}\in W\times X,u=w\apostrophe+x_2.$\parSol{}
-Now $x_1=-x_2,\:w=w\apostrophe.$ Thus $\pi:U\rightarrow W$ defined by $\pi\Par{u}=w,$ \,is surj.\PfEnd
+Now $x_1=-x_2,\:w=w\apostrophe.$ Thus $\pi:U\rightarrow W$ defined by $\pi\Par{u}=w,$ \,is surj.\PfEnd\vspace{4pt}
+\AComm Let $V=\Fbb^{\infty}.$ Let $X=\Fbb^{\infty},Y=\Bra{\Par{0,x_1,x_2,\cdots}\in\Fbb^{\infty}}.$ Now $X,Y$ are iso subsps of $V.$\parCom
+But $\nexists$ iso subsps $M,N$ of $V,$ suth $V=M\oplus X=N\oplus Y.$
 \SepLine
 
-\ProblemB[\AExa]{
-	\TextB{Supp $X,Y$ are iso subsp of $V.$}
-	\TextB{Give a counterexa: $\exists$ iso subsps $M,N$ of $V,$ suth $V=M\oplus X=N\oplus Y.$}
-}\!\!Let $V=\Fbb^{\infty}.$ Let $X=\Fbb^{\infty},Y=\Bra{\Par{0,x_1,x_2,\cdots}\in\Fbb^{\infty}}.$ Now $X,Y$ are iso.
+\ProblemBnoor{\hypertarget{3E3}{3.E.3}}{
+	\TextB{Give an exa of a vecsp $V$ and its two subsps $U_1,U_2$ suth}
+	\TextB{$U_1\times U_2$ and $U_1+U_2$ are iso but $U_1+U_2$ is not a direct sum.\FontNorm\hfill\Sbra{$V$ must be infinide.}}
+}{\NOTE} {\tgsl that at least one of $U_1,U_2$ must be infinide.\;\; Both can be infinide. \Sbra{Req Other Courses.}}\par\quad
+%\colorbox{yellow}{TODO}\par\quad
+%\par\quad
+Let $V=\Fbb^\infty=U_1,\;U_2=\Bra{\Par{x,0,\cdots}\in\Fbb^\infty:x\in\Fbb}.$ Then $V=U_1+U_2$ is not a direct sum.\par{\hspace{0pt}}
+$\MathRightBrace{l}{$
+	Define $T\in\Lm{U_1\times U_2,U_1+U_2}$ by $T\BigPar{\Par{x_1,x_2,\cdots},\Par{x,0,\cdots}}=\Par{x,x_1,x_2,\cdots}\\ $
+	Define $S\in\Lm{U_1+U_2,U_1\times U_2}$ by $S\Par{x,x_1,x_2,\cdots}=\BigPar{\Par{x_1,x_2,\cdots},\Par{x,0,\cdots}}$
+	$}\Rightarrow S=T^{-1}.$\PfEnd%\vspace{10pt}\quad
+%\Or Let $V=\Fbb^\infty,U_1=\Bra{\Par{x_i}^\infty_{i=1}\in\Fbb^\infty:\sum_{i=1}^\infty \Par{-1}^{i}x_i=0},U_2=\Bra{\Par{y_1,y_2,\cdots}\in\Fbb^\infty:y_1+y_2+\dots=0}.$\par\quad
+%$\MathRightBrace{l}{$
+	%	Define $T\in\Lm{U_1\times U_2,U_1+U_2}$ by $T\BigPar{\Par{x_1,x_2,\cdots},\Par{y_1,y_2,\cdots}}=\Par{x_1,y_1,x_2,y_2,\cdots}\\$
+	%	Define $S\in\Lm{U_1+U_2,U_1\times U_2}$ by $S\Par{z_1,z_2,z_3,z_4,\cdots}=\BigPar{\Par{z_1,z_3,\cdots},\Par{z_2,z_4,\cdots}}}\Rightarrow S=T^{-1}.$\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{3D3}{3}}{
 	\TextN{Supp $V$ and $W$ are iso and finide, $U$ is a subsp of $V$, and $S\in\Lm{U,W}.$}
 	\TextN{Prove $\exists$ inv $T\in\Lm{V,W},Tu = Su,\forall u\in U$ $\Longleftrightarrow$ $S$ is inje. \hfill{\FontNorm\Sbra{ See also (3.A.11). }}}\vspace{2pt}
-}(a) $\forall u\in U,u=T^{-1}Su\Rightarrow T^{-1}S=I\in\Lm{U}\Longrightarrow S$ is inje, by (3.B.20).\parSol{\Ha}
+}(a) $\forall u\in U,u=T^{-1}Su\Rightarrow T^{-1}S=I\in\Lm{U}.$ Thus by (3.B.20), $S$ is inje.\parSol{\Ha}
 \Or $\null S=\null T\mmid_U=\null T\cap U=\zeroSubs.$\parSol{\vspace{4pt}}
 (b) Let $B_U=\Par{u_1,\dots,u_m}.$ Then $S$ inje $\Rightarrow\Par{Su_1,\dots,Su_m}$ liney indep.\parSol{\Hb}
 Extend to $B_V=\Par{u_1,\dots,u_m,v_1,\dots,v_n},B_W=\Par{Su_1,\dots,Su_m,w_1,\dots,w_n}$.\parSol{\Hb}
-Define $T\in\Lm{V,W}$ by $T\Par{u_i}=Su_i;\,\,\,Tv_j=w_j,$ for each $u_i$ and $v_j.$\PfEnd\vspace{3pt}\parSol{}
-\AExa Supp $V,W$ are infinide. Then this exe is not true.\parExa{\IndentSolution}
-Let $V=W=\Fbb^{\infty}.$ Define $S\Par{x_1,x_2,\cdots}=\Par{0,x_1,x_2,\cdots}.$ Now $S$ is inje.\parExa{\IndentSolution}
-Supp $\exists$ inv $T\in\Lm{V,W}$ suth $T\mmid_V=S.$ Then $T=S$ while $S$ is not surj.\SepLine
+Define $T\in\Lm{V,W}$ by $T\Par{u_i}=Su_i;\,\,\,Tv_j=w_j,$ for each $u_i$ and $v_j.$\PfEnd\vspace{3pt}
+\AExa Supp $V,W$ are infinide. Let $V=W=\Fbb^{\infty}.$ Define $S\Par{x_1,x_2,\cdots}=\Par{0,x_1,x_2,\cdots}.$\parExa
+Now $S$ is inje. Supp $\exists$ inv $T\in\Lm{V,W}$ suth $T\mmid_V=S.$ Then $T=S$ while $S$ is not surj.\SepLine
 
 \ProblemN{\hypertarget{3D8}{8}}{
 	\TextN{Supp $T\in\Lm{V,W}$ is {\tgsc surj}. Prove $\exists$ subsp $U$ of $V,$ \;$T\mmid_U:U\rightarrow W$ is iso.}
-}By (3.B.12). Note that $\range T=W.$ \; \Or \Sbra[3pt]{{\tgsl Req $\range T$ Finide}} \;By \Sbra{3.B \TIPSN{4}}.\PfEnd
-%\vspace{4pt}\AComm See (3.B.12), (4E 3.B.21), (3.B \TIPS).\vspace{-2pt}
+}By (3.B.12). Note that $\range T=W.$ \; \Or \Sbra[3pt]{{\tgsl Req $\range T$ Finide}} \;By \Sbra{3.B \TIPSN{4}}.\PfEnd\vspace{-2pt}
+%\vspace{4pt}\AComm See (3.B.12), (4E 3.B.21), (3.B \TIPS).
 \SepLine
 
-\ProblemN{\hypertarget{3D18}{18}}{
-	\TextNL{Show $V$ and $\Lm{\Fbb, V}$ are iso vecsps.}
-}\par\quad
-Define $\Psi\in\Lm[\BigPar]{V,\Lm{\Fbb, V}}$ by $\Psi\Par{v}=\Psi_{\!v};$ \;where $\Psi_{\!v}\in\Lm{\Fbb, V}$ and $\Psi_{\!v}\Par{\lambda}=\lambda v.$\par\quad
-(a) $\Psi\Par{v}=\Psi_{\!v}=0\Rightarrow \forall \lambda\in\Fbb,\Psi_{\!v}\Par{\lambda}=\lambda v=0\Rightarrow v=0.$ Hence $\Psi$ is inje.\par\quad
-(b) $\forall T\in\Lm{\Fbb,V},$ let $v= T\Par{1}\Rightarrow T\Par{\lambda}=\lambda v=\Psi_{\!v}\Par{\lambda},\forall\lambda\in\Fbb\Rightarrow T=\Psi\BigPar{T\Par{1}}.$ Hence $\Psi$ is surj.\PfEnd\vspace{4pt}\quad
-\Or Define $\Phi\in\Lm[\BigPar]{\Lm{\Fbb,V}, V}$ by $\Phi\Par{T}=T\Par{1}.$\par\quad
-(a) Supp $\Phi\Par{T}=0=T\Par{1}=\lambda T\Par{1}=T\Par{\lambda},\forall\lambda\in\Fbb\Rightarrow T=0.$ Thus $\Phi$ is inje.\par\quad
-(b) For any $v\in V,$ define $T\in\Lm{\Fbb,V}$ by $T\Par{\lambda}=\lambda v.$ Then $\Phi\Par{T}=T\Par{1}=v.$ Thus $\Phi$ is surj.\PfEnd\vspace{2pt}\quad
-\AComm $\Phi=\Psi^{-1}.$ \;{\FontSmall This is a counterexample of the stmt that $\Lm{V,W}$ and $\Lm{W,V}$ are iso. See (3.F).}
-\SepLine
-
-\ProblemB[]{
-	\TextB{Supp $S,T\in\Lm{V,W}.$ \FontNorm\hfill \Sbra{ For Exe \hypertarget{3D4}{(4)} and \hypertarget{3D5}{(5)}, see the {\COROLLARY} in (3.B.24, 25). }}
-}
-%\ProblemN[]{\hypertarget{3D4}{4}}{
-%	\TextN{Supp $\null S = \null T${\FontSmall\Par{$\,= U\,$}}. Then $S = ET,\,\exists$ inv $E\in\Lm{W}$.}
-%}
-%\ProblemN{\hypertarget{3D5}{5}}{
-%	\TextN{Supp $V$ is finide. If $\range S=\range T.$ Then $S=TE,\,\exists$ inv $E\in\Lm{V}$}
-%}See \BigPar{3.B.24 \COROLLARY} and \BigPar{3.B.25 \COROLLARY}.\PfEnd\SepLine[0pt][\Blind{\BulletPointX} ]
-
-%Define $E\in\Lm{V}$ as \;$E:\,\,\, v_i\mapsto r_i\,\,;\quad u_j\mapsto s_j;$\quad for each $i\in\Bra{1,\dots,m},j\in\Bra{1,\dots,n}.$ Where:\par\vspace{6pt}\quad
-%$\MathLeftrightMid{l}{$
-%	Let $B_R=\Par{Tv_1,\dots,Tv_m};\;B_R'=\Par{Sr_1,\dots,Sr_m}$ suth $\forall\,i,Tv_i=Sr_i.\\ $
-%	Let $B_{\null T}=\Par{u_1,\dots,u_n};\;B_{\null S}=\Par{s_1,\dots,s_n}.\\ $
-%	Thus $B_V=\Par{v_1,\dots,v_m,u_1,\dots,u_n};\;B_V'=\Par{r_1,\dots,r_m,s_1,\dots,s_n}.}$\,$\therefore\;E$ is inv and $S=TE$.\par\vspace{6pt}\quad
-%Convly, \;$S=TE\Rightarrow\range S=\range TE$.\par\quad
-%Then $w\in\range S\Longleftrightarrow \exists\,v\in V,Sv=TE\Par{v}=T\BigPar{E\Par{v}}=w\in \range T$. Hence $\range S=\range T.$\PfEnd
-
-\ProblemN{\hypertarget{3D6}{6}}{
-	\TextN{Supp $V$ and $W$ are finide. $\dim\null S=\dim\null T=n.$}
-	\TextN{Prove $S=E_2 T E_1,\exists$ inv $ E_1\in\Lm{V}, E_2\in\Lm{W}.$}
-}$\text{Define}\;\,E_1:\,\,\,\,\, v_i\mapsto r_i\,\,;\quad u_j\mapsto s_j;$\quad for each $i\in\Bra{1,\dots,m},j\in\Bra{1,\dots,n}.$\parSol{}
-$\text{Define}\;\,E_2:Tv_i\mapsto Sr_i\,\,;\;\;x_j\mapsto y_j;$\quad for each $i\in\Bra{1,\dots,m},j\in\Bra{1,\dots,n}.$
-Where:\parSol{\vspace{6pt}}
-$\MathLeftrightMid{l}{$
-	Let $B_{\range T}=\Par{Tv_1,\dots,Tv_m};\;B_{\range S}=\Par{Sr_1,\dots,Sr_m}.\\ $
-	Let $B_W=\Par{Tv_1,\dots,Tv_m,x_1,\dots,x_p};\;B_W'=\Par{Sr_1,\dots,Sr_m,y_1,\dots,y_p}.\\ $
-	Let $B_{\null T}=\Par{u_1,\dots,u_n};\;B_{\null S}=\Par{s_1,\dots,s_n}.\\ $
-	Thus $B_V=\Par{v_1,\dots,v_m,u_1,\dots,u_n};\;B_V'=\Par{r_1,\dots,r_m,s_1,\dots,s_n}.}\hMath{c}{}{}{\therefore\;E_1,E_2$ are inv$ \\ $and $S=E_2 TE_1.}$\PfEnd
-\SepLine[0pt][\Blind{\BulletPointX} ]
-
-\ProblemB{
-	(a) \TextB{Supp $T=ES$ and $E\in\Lm{W}$ is inv. Prove $\null S=\null T.$\vspace{2pt}}
-	(b) \TextB{Supp $T=SE$ and $E\in\Lm{V}$ is inv. Prove $\range S=\range T.$\vspace{2pt}}
-	(c) \TextB{Supp $T=E_2SE_1$ and $E_1\in\Lm{V},E_2\in\Lm{W}$ are inv.}
-	\Hc\TextB{Prove $\dim\null S=\dim\null T.$}
-}(a) $v\in\null T\Longleftrightarrow Tv=0=E\Par{Sv}\Longleftrightarrow Sv=0\Longleftrightarrow v\in\null S.$\parSol{}
-(b) $w\in\range T\Longleftrightarrow\exists\,v\in V,Tv=S\Par{Ev}\Longleftrightarrow\exists\,u\in V,w=Su\Longleftrightarrow w\in\range S.$\parSol{}
-(c) Using (3.B.22). $\dim\null E_2SE_1\xlongequal[\text{inv}]{E_2}\dim\null SE_1\xlongequal[\text{inv}]{E_1}\dim\null S=\dim\null T.$\PfEnd
-\SepLine\pagebreak
-
-\BulletPointX\NoteForSmall{[3.69]}\;\;Supp $V,W$ are finide and iso, $T\in\Lm{V,W}.$ Then $T$ inv $\Longleftrightarrow$ inje $\Longleftrightarrow$ surj.
-\SepLine
-
-%\BulletPointX\NoteForSmall{(3.B.11)}\;\;If $S\in\Lm{V}$ is iso, $T\in\Lm{U,W}$ is iso, where $U,W$ are iso subsps of $V,$ then $ST=S\mmid_{W}T\in\Lm{U,V}$ is merely inje.
+%\BulletPointX\NoteForSmall{[3.69]}\;\;Supp $V,W$ are finide and iso, $T\in\Lm{V,W}.$ Then $T$ inv $\Longleftrightarrow$ inje $\Longleftrightarrow$ surj.
 %\SepLine
+
+\BulletPointX\AComm If $S\in\Lm{V}$ is iso, $T\in\Lm{U,W}$ is iso, and $W\subseteq V,$ then $ST=S\mmid_{W}T$ is merely inje.\vspace{-2pt}
+\SepLine
+
+\ProblemBnoor{4E 15}{
+	\hypertarget{3D4e15}{}\TextB{Supp $T\in\Lm{V}$ and $V=\Span{Tv_1,\dots,Tv_m}$. Prove $V=\Span{v_1,\dots,v_m}$.}
+}Becs $V=\Span{Tv_1,\dots,Tv_m}\Rightarrow T$ surj $\Rightarrow T,T^{-1}$ inv.\parSol{}
+$\forall v\in V,\exists\,a_i\in\Fbb, v=\sum_{i=1}^ma_i Tv_i\Rightarrow T^{-1}v=\sum_{i=1}^ma_i v_i\Rightarrow \range T^{-1}\subseteq\Span{v_1,\dots,v_m}.$\vspace{6pt}\parSol{}
+\Or Reduce the spanning list $\Par{Tv_1,\dots,Tv_m}$ of $V$ to a bss $\Par{Tv_{\alpha_1},\dots,Tv_{\alpha_k}}$ of $V.$\parSol{}
+\Blind{\Or}Where $k=\dim V$ and each $\alpha_i\in\Bra{1,\dots,k}.$ Then by Exe (4E 3),\parSol{}
+\Blind{\Or}$\Par{v_{\alpha_1},\dots,v_{\alpha_k}}$ is also a bss of $V$, contained in the list $\Par{v_1,\dots,v_m}.$\PfEnd
+\SepLine
+\pagebreak
 
 \ProblemNnoor{\hypertarget{3D9}{9}}{\OR \hypertarget{3D1}{1}}{
 	\TextN{Supp $U,V,W$ are iso and finide, $S\in\Lm{V,W},T\in\Lm{U,V}.$}
 	\TextN{Prove $ST$ is inv $\Longleftrightarrow S,T$ are inv.}
-	\AComm If any two of $U,V,W$ are not iso or finide, then $S,T$ are inv $\Longrightarrow ST$ is inv.\TextN{}
-	%\ACoro Supp $T$ is inv. Let $S=T^{-1}\Rightarrow ST=I_U.$ Then $I_U$ inv $\Rightarrow T^{-1}$ inv.
-}Supp $S,T$ are inv. Then $\Par{ST}\Par{T^{-1}S^{-1}}=I_W,\Par{T^{-1}S^{-1}}\Par{ST}=I_U.$ Hence $ST$ is inv.\parSol{}
-Supp $ST$ is inv. Let $R=\Par{ST}{^{-1}}\Rightarrow R\Par{ST}=I_U,\Par{ST}R=I_W.$\parSol{\vspace{4pt}}
+	\ANote Supp one of $U,V,W$ infinide $\Rightarrow$ all infinde. Then $S,T$ inv $\Longrightarrow ST$ inv.\TextN{}
+}Supp $S,T$ inv. Then $\Par{ST}\Par{T^{-1}S^{-1}}=I_W,\Par{T^{-1}S^{-1}}\Par{ST}=I_U.$ Hence $ST$ inv.\parSol{}
+Supp $ST$ inv. Let $R=\Par{ST}{^{-1}}\Rightarrow R\Par{ST}=I_U,\Par{ST}R=I_W.$\parSol{\vspace{4pt}}
 \!\!\!$\MathRightMid{l}{Tv=0\Rightarrow v=R\Par{ST}v=RS\Par{Tv}=0.\\\forall v\in V,v=\Par{ST}Rv=S\Par{TRv}\in\range S.}\hText{$
-$T$ is inje, $S$ is surj.$\\$
+$T$ inje, $S$ surj.$\\$
 又 $\dim U=\dim V=\dim W.}$\parSol{\vspace{6pt}}
-\Or By (3.B.23), $\dim W=\dim\range ST\leqslant\min\!\Bra{\range S,\range T}\Rightarrow S,T$ are surj.\PfEnd
+\Or By (3.B.23), $\dim W=\dim\range ST\leqslant\min\!\Bra{\range S,\range T}\Rightarrow S,T$ surj.\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{3D13}{13}}{
 	\TextNL{Supp $U,V,W,X$ are iso and finide, $R\in\Lm{W,X}, S\in\Lm{V,W}, T\in\Lm{U,V}.$}
 	\TextNL{Supp $RST$ is surj. Prove $S$ is inje.}
-}Using Exe (9). Notice that $U,X$ are finide, so that $RST$ is inv.\vspace{4pt}\par\quad
-Let $X=\Par{RST}{^{-1}}\,\left|\hspace{-4pt}\begin{array}{l}$ $Tv=0\Rightarrow v=X\Par{RSTv}=0\Rightarrow T$ is inje.$\\ $
-	$\forall v\in V,v=\Par{RST}Xv\in\range R\Rightarrow R$ is surj.$\\\end{array}\right\}\Rightarrow S=R^{-1}\Par{RST}T^{-1}.$\PfEnd\vspace{8pt}\quad
+}Using Exe (9). Notice that $U,X$ are finide, so that $RST$ inv.\vspace{4pt}\par\quad
+Let $X=\Par{RST}{^{-1}}\,\left|\hspace{-4pt}\begin{array}{l}$ $Tv=0\Rightarrow v=X\Par{RSTv}=0\Rightarrow T$ inje.$\\ $
+	$\forall v\in V,v=\Par{RST}Xv\in\range R\Rightarrow R$ surj.$\\\end{array}\right\}\Rightarrow S=R^{-1}\Par{RST}T^{-1}.$\PfEnd\vspace{8pt}\quad
 \Or $\Par{RST}{^{-1}}=\BigPar{\Par{RS}T}{^{-1}}=T^{-1}\Par{RS}{^{-1}}=T^{-1}S^{-1}R^{-1}.$\PfEnd
 \SepLine
 
@@ -1816,34 +1685,23 @@ Let $X=\Par{RST}{^{-1}}\,\left|\hspace{-4pt}\begin{array}{l}$ $Tv=0\Rightarrow v
 
 \ProblemN{\hypertarget{3D10}{10}}{
 	\TextN{Supp $V$ is finide and $S,T\in\Lm{V}.$ Prove $ST=I\Longleftrightarrow TS=I.$}
-}(a) Supp $ST=I.$\parSol{\Ha}
-By (3.B 20, 21)(a), $ST=I\Rightarrow T$ is inje and $S$ is surj. 又 $V$ is finide. $S,T$ are inv.\parSol{\Ha}
-\Or {\normalsize By Exe (9), $V$ is finide and $ST=I$ is inv $\Rightarrow$ $S,T$ are inv.}\parSol{\vspace{4pt}\Ha}
-Then $\forall v\in V,S\BigPar{\Par{TS}v}=ST\Par{Sv}=Sv\Rightarrow \Par{TS}v=v\Rightarrow TS=I.$\parSol{\Ha}
-\Or {\normalsize$S^{-1}=T$ 又 $S=S\Rightarrow TS=S^{-1}S=I$.}\parSol{\vspace{4pt}}
-(b) Reversing the roles of $S$ and $T$, we conclude that $TS=I\Rightarrow ST=I.$\PfEnd
+}Supp $ST=I.$ By (3.B 20, 21)(a), $ST=I\Rightarrow T$ inje and $S$ surj. 又 $V$ finide. $S,T$ inv.\parSol{}
+\Or {\FontSmall By Exe (9), $V$ finide and $ST=I$ inv $\Rightarrow$ $S,T$ inv.}\parSol{\vspace{4pt}}
+Then $\forall v\in V,S\BigPar{\Par{TS}v}=ST\Par{Sv}=Sv\Rightarrow \Par{TS}v=v\Rightarrow TS=I.$\parSol{}
+\Or {\FontSmall$S^{-1}=T$ 又 $S=S\Rightarrow TS=S^{-1}S=I$.} \hfill Rev the roles and done.\qquad\Blind{\,\!}\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{3D11}{11}}{
 	\TextNL{Supp $V$ is finide, $S, T, U\in\Lm{V}$ and $STU = I$. Show $T$ is inv and $T^{-1} = US$.}
 }Using Exe (9) and (10). {\tgsl\normalsize This result can fail without the hypo that $V$ is finide.}\parSol{}
 $\Par{ST}U=U\Par{ST}=\Par{US}T=I\Rightarrow T^{-1}=US.$\parSol{}
-\Or $\Par{ST}U=S\Par{TU}=I\Rightarrow U,S$ are inv $\Rightarrow TU=S^{-1}.$ 又 $U^{-1}=U^{-1}\Rightarrow T=S^{-1}U^{-1}.$\PfEnd\vspace{2pt}
+\Or $\Par{ST}U=S\Par{TU}=I\Rightarrow U,S$ inv $\Rightarrow TU=S^{-1}.$ 又 $U^{-1}=U^{-1}\Rightarrow T=S^{-1}U^{-1}.$\PfEnd\vspace{2pt}
 \hypertarget{3D12}{}\AExa $V=\Rbb^\infty,S\Par{a_1,a_2,\dots}=\Par{a_2,\dots};\;T\Par{a_1,\dots}=\Par{0,a_1,\dots};\;U=I\Rightarrow STU=I$ but $T$ is not inv.
 \SepLine
 
-{\FontSmall$\MathRightMid{l}{\!\!\!$\BulletPointX\hypertarget{3D4e3}{\Par{4E 3}} $\envFontSmall[\footnotesize]T\in\Lm{V}\\$\hfill$V$ is finide$}\MathRightBrace{l}{$
-$\!\!\!\Par{Tv_1,\dots,Tv_n}$ is a bss of $V$ for some bss $\Par{v_1,\dots,v_n}$ of $V$ $\Longleftrightarrow$ $T$ is surj$\\[-2pt]$ $\!\!\!\Par{Tv_1,\dots,Tv_n}$ is a bss of $V$ for every bss $\Par{v_1,\dots,v_n}$ of $V$ $\Longleftrightarrow$ $T$ is inje$}\Longleftrightarrow T$ is inv.\vspace{6pt}}
-\SepLine
-
-\ProblemBnoor{4E 15}{
-	\hypertarget{3D4e15}{}\TextB{Supp $T\in\Lm{V}$ and $V=\Span{Tv_1,\dots,Tv_m}$. Prove $V=\Span{v_1,\dots,v_m}$.}
-}Becs $V=\Span{Tv_1,\dots,Tv_m}\Rightarrow T$ is surj, and therefore is inv $\Rightarrow$ $T^{-1}$ is inv.\parSol{}
-$\forall v\in V,\exists\,a_i\in\Fbb, v=\sum_{i=1}^ma_i Tv_i\Rightarrow T^{-1}v=\sum_{i=1}^ma_i v_i\Rightarrow \range T^{-1}\subseteq\Span{v_1,\dots,v_m}.$\vspace{6pt}\parSol{}
-\Or Reduce the spanning list $\Par{Tv_1,\dots,Tv_m}$ of $V$ to a bss $\Par{Tv_{\alpha_1},\dots,Tv_{\alpha_k}}$ of $V.$\parSol{}
-\Blind{\Or}Where $k=\dim V$ and each $\alpha_i\in\Bra{1,\dots,k}.$ Then by Exe (4E 3),\parSol{}
-\Blind{\Or}$\Par{v_{\alpha_1},\dots,v_{\alpha_k}}$ is also a bss of $V$, contained in the list $\Par{v_1,\dots,v_m}.$\PfEnd
-\SepLine\pagebreak
+%{\FontSmall$\MathRightMid{l}{\!\!\!$\BulletPointX\hypertarget{3D4e3}{\Par{4E 3}} $\envFontSmall[\footnotesize]T\in\Lm{V}\\$\hfill$V$ is finide$}\MathRightBrace{l}{$
+%$\!\!\!\Par{Tv_1,\dots,Tv_n}$ is a bss of $V$ for some bss $\Par{v_1,\dots,v_n}$ of $V$ $\Longleftrightarrow$ $T$ is surj$\\[-2pt]$ $\!\!\!\Par{Tv_1,\dots,Tv_n}$ is a bss of $V$ for every bss $\Par{v_1,\dots,v_n}$ of $V$ $\Longleftrightarrow$ $T$ is inje$}\Longleftrightarrow T$ is inv.\vspace{6pt}}
+%\SepLine
 
 \ProblemN{\hypertarget{3D15}{15}}{
 	\TextNL{Prove every liney map from $\Fbb^{n,1}$ to $\Fbb^{m,1}$ is given by a matrix multi.}
@@ -1859,10 +1717,13 @@ Hence $Tx=\Mt{Tx,B_2}=\Mt{T,B_1,B_2}\Mt{x,B_1}=Ax,$ by [3.65].\PfEnd
 \Blind{\NoteForSmall{[3.65]}}\;\;If $v=0,$ then $\Span{v}=\Span{\,},$ we replace $\Par{v}$ by $B=\Par{\,}\,;$ simlr for $Tv=0.$\vspace{-2pt}
 \SepLine
 
+\BulletPointX\NewNotation\;\;{\FontNorm For ease of nota, let $\Mt[\BigPar]{T,\alpha\rightarrow\beta}=\Mt[\BigPar]{T,\Par{\alpha_1,\dots,\alpha_n},\Par{\beta_1,\dots,\beta_n}}.$}
+\SepLine
+\pagebreak
+
 \ProblemBnoor{4E 23, \OR \hypertarget{3D4e23}{10.A.4}}{
 	\TextB{Supp that $\Par{\beta_1,\dots,\beta_n}$ and $\Par{\alpha_1,\dots,\alpha_n}$ are bses of $V$.}
 	\TextB{Let $T\in\Lm{V}$ be suth each $T\alpha_k = \beta_k.$ Prove $\Mt{T,\alpha\rightarrow\alpha}=\Mt{I,\beta\rightarrow\alpha}.$}
-	\TextB{{\FontNorm For ease of nota, let $\Mt[\BigPar]{T,\alpha\rightarrow\beta}=\Mt[\BigPar]{T,\Par{\alpha_1,\dots,\alpha_n},\Par{\beta_1,\dots,\beta_n}}.$}}
 }\par\quad
 Denote $\Mt{T,\alpha\rightarrow\alpha}$ by $A$ and $\Mt{I,\beta\rightarrow\alpha}$ by $B.$\par\quad
 $\forall k\in\Bra{1,\dots,n},I\beta_k=\beta_k=B_{1,k}\alpha_1+\dots+B_{n,k}\alpha_n=T\alpha_k=A_{1,k}\alpha_1+\dots+A_{n,k}\alpha_n\Rightarrow A=B.$\PfEnd\vspace{6pt}\quad
@@ -1896,59 +1757,31 @@ $\Rightarrow\Mneg\Mt{TS}=\Mneg\Mt{ST}=I$\large$\,=\,TS=ST\Rightarrow S=T^{-1}.$\
 }Define $T,S\in\Lm{\Fbb^{n,1}}$ by $Tx=Ax,Sx=Bx$ for all $x\in\Fbb^{n,1}.$ Now $\Mt{T}=A,\Mt{S}=B.$\parSol{}
 $AB=I\Leftrightarrow A\Par{Bx}=x\Longleftrightarrow T\Par{Sx}=x\Leftrightarrow TS=I\Longleftrightarrow ST=I\Longleftrightarrow \Mt{S}\Mt{T}=BA=I.$\parSol{}
 \Or Becs $\mathcal{M}\!:\Lm{\Fbb^{n,1},\Fbb^{n,1}}\rightarrow\Fbb^{n,n}$ is iso. $\Mneg\Par{AB}=TS=ST=\Mneg\Par{BA}=I.$\PfEnd
-\SepLine\pagebreak
+\SepLine
 
 \BulletPointX\NoteFor{[3.60]}\;\;Supp $B_V=\Par{v_1,\dots,v_n},\;B_W=\Par{w_1,\dots,w_m}$.\TextB{\vspace{2pt}}
 {Define $E_{i,j}\in\Lm{V,W}$ by $E_{i,j}\Par{v_x}=\delta_{i,x} w_j.$} \quad\Corollary\,\,\, \envFontLarge{\Large$E_{l,k}E_{i,j}=\delta_{j,l}E_{i,k}.$}\TextB{}
-{\Large Denote \envFontLarge$\Mt{E_{i,j}}$ by $\mathcal{E}^{\SmallPar[1pt]{j,i}}.$} And $\BigPar{\mathcal{E}^{\SmallPar[1pt]{j,i}}}_{l,k}=\MathLeftBrace{l}{1,\;\;\text{if }\Par[3pt]{i,j}=\Par[3pt]{l,k};\\0,\hfill\text{othws.}}$\TextB{\vspace{4pt}}
+{\Large Denote \envFontLarge$\Mt{E_{i,j}}$ by $\mathcal{E}^{\SmallPar[1pt]{j,i}}.$} And $\BigPar{\mathcal{E}^{\SmallPar[1pt]{j,i}}}{_{l,k}}=\MathLeftBrace{l}{1,\;\;\text{if }\Par[3pt]{i,j}=\Par[3pt]{l,k};\\0,\hfill\text{othws.}}$\TextB{\vspace{4pt}}
 {\NOTICE that $\mathcal{M}\!:\Lm{V,W}\rightarrow\Fbb^{m,n}$ is iso. And $E_{i,j}=\Mneg\mathcal{E}^{\SmallPar[1pt]{j,i}}$.}\TextB{\vspace{4pt}}
-%Hence $\forall T\in\Lm{V,W},\exists\,!\,A\in\Fbb^{m,n},\Mt{T}=A.$\TextB{}
-Thus $A={}${\normalsize$\envFontSmall[\scriptsize]\begin{pmatrix}
-A_{1,1}\mathcal{E}^{\Par{1,1}}\;\;+&\hspace{-6pt}
-\cdots &\hspace{-6pt}+\;\;A_{1,n}\mathcal{E}^{\Par{1,n}}\\[-2pt]
-+&\hspace{-6pt}\cdots &\hspace{-6pt}+\\[-4pt]
-\vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots\\[-4pt]
-+&\hspace{-6pt}\cdots &\hspace{-6pt}+\\[-2pt]
-A_{m,1}\mathcal{E}^{\Par{m,1}}\;\;+&\hspace{-6pt}\cdots&\hspace{-6pt}+\;\;A_{m,n}\mathcal{E}^{\Par{m,n}}
-\end{pmatrix} $}$\;\Longleftrightarrow\;${\FontSmall$\begin{pmatrix}
-		A_{1,1}E_{1,1}\;\;+&\hspace{-6pt}\cdots &\hspace{-6pt}+\;\;A_{1,n}E_{n,1}\\[-2pt]
-		+&\hspace{-6pt}\cdots &\hspace{-6pt} +\\[-4pt]
-		\vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots\\[-4pt]
-		+&\hspace{-6pt}\cdots &\hspace{-6pt} +\\[-2pt]
-		A_{m,1}E_{1,m}\;\;+&\hspace{-6pt}\cdots &\hspace{-6pt}+\;\;A_{m,n}E_{n,m}
-	\end{pmatrix}$}$\,=\,T$.\vspace{6pt}\TextB{}
+%Thus $A={}${\normalsize$\envFontSmall[\scriptsize]\begin{pmatrix}
+%A_{1,1}\mathcal{E}^{\Par{1,1}}\;\;+&\hspace{-6pt}
+%\cdots &\hspace{-6pt}+\;\;A_{1,n}\mathcal{E}^{\Par{1,n}}\\[-2pt]
+%+&\hspace{-6pt}\cdots &\hspace{-6pt}+\\[-4pt]
+%\vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots\\[-4pt]
+%+&\hspace{-6pt}\cdots &\hspace{-6pt}+\\[-2pt]
+%A_{m,1}\mathcal{E}^{\Par{m,1}}\;\;+&\hspace{-6pt}\cdots&\hspace{-6pt}+\;\;A_{m,n}\mathcal{E}^{\Par{m,n}}
+%\end{pmatrix} $}$\;\Longleftrightarrow\;${\FontSmall$\begin{pmatrix}
+%		A_{1,1}E_{1,1}\;\;+&\hspace{-6pt}\cdots &\hspace{-6pt}+\;\;A_{1,n}E_{n,1}\\[-2pt]
+%		+&\hspace{-6pt}\cdots &\hspace{-6pt} +\\[-4pt]
+%		\vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots\\[-4pt]
+%		+&\hspace{-6pt}\cdots &\hspace{-6pt} +\\[-2pt]
+%		A_{m,1}E_{1,m}\;\;+&\hspace{-6pt}\cdots &\hspace{-6pt}+\;\;A_{m,n}E_{n,m}
+%	\end{pmatrix}$}$\,=\,T$.\vspace{6pt}\TextB{}
 By [2.42] and [3.61], \;$B_{\Lm[\SmallPar]{V,W}}=${\normalsize${\begin{pmatrix} \underset{\;,}{E_{1,1}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\underset{\!,}{E_{n,1}},\\[-2pt] \vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots\\[-2pt] \overset{\;,}{E_{1,m}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\overset{\!\!\!,}{E_{n,m}}\end{pmatrix}}$}$;\quad B_{\,\Fbb^{m,n}}=${\normalsize$\envFontSmall[\scriptsize]{\begin{pmatrix} \underset{\;,}{\mathcal{E}^{\Par{1,1}}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\underset{\!\!,}{\mathcal{E}^{\Par{1,n}}},\\[-2pt] \vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots\\[-2pt]\overset{\;,}{\mathcal{E}^{\Par{m,1}}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\overset{\!\!\!,}{\mathcal{E}^{\Par{m,n}}}\end{pmatrix}}$}.\par\vspace{6pt}
 \BulletPointX\Tips \,\,\,Let $B_{\range T}=\Par{Tv_1,\dots,Tv_p},B_V=\BigPar{v_1,\dots,v_p,\dots,v_n}.$ Let each $w_k=Tv_k;\;B_W=\BigPar{w_1,\dots,w_p,\dots,w_m}.$\TextB{\vspace{2pt}}\IndentTips{}
 Then $T=E_{1,1}+\dots+E_{p,p},\;\Mt{T,B_V,B_W}=\mathcal{E}^{\SmallPar[1pt]{1,1}}+\dots+\mathcal{E}^{\SmallPar[1pt]{p,p}}.$\vspace{-4pt}
 \SepLine
 
-\ProblemN{\hypertarget{3D17}{17}}{
-	\TextNL{Supp $V$ is finide. Show the only two-sided ideals of $\Lm{V}$ are $\zeroSubs$ and $\Lm{V}$.}
-	\TextNL{{\FontNorm A subsp $\mathcal{E}$ of $\Lm{V}$ is called a two-sided ideal of $\Lm{V}$ if $TE\in\mathcal{E},ET\in\mathcal{E},\,\,\forall E\in\mathcal{E},T\in\Lm{V}$.\vspace{-2pt}}}
-}\Sbra{ See also in (3.A). } \;Using {\NOTEFOR} [3.60].\par\quad
-Let $B_V=\Par{v_1,\dots,v_n}.$ If $\mathcal{E}=0$, then done. Supp $\mathcal{E}\neq 0$ and $\mathcal{E}$ is a two-sided ideal of $\Lm{V}$.\vspace{3pt}\par\quad
-Then {\FontLarge$\forall E_{i,j}\in\mathcal{E},$} by asum, {\FontLarge\vspace{3pt}$\forall x,y\in\Bra{1,\dots,n},E_{j,x}E_{i,j}=E_{i,x}\in\mathcal{E},E_{i,j}E_{y,i}=E_{y,j}\in\mathcal{E}.$}\par\quad
-Again, $\forall x,x\apostrophe,y,y\apostrophe\in\Bra{1,\dots,n},$\;\,{\FontLarge$E_{y,x\apostrophe},E_{y\apostrophe,x}\in\mathcal{E}$}. Thus $\mathcal{E}=\Lm{V}.$\PfEnd
-\SepLine
-
-\ProblemBnoor{4E 10}{
-	\hypertarget{3D4e10}{}\TextB{Supp $V,W$ are finide, $U$ is a subsp of $V$.\vspace{3pt}}
-	\TextB{Let $\mathcal{E} = \Bra{T\in\Lm{V,W}: U\subseteq\null T}=\Bra{T\in\Lm{V,W}:T\mmid_U=0}$.\vspace{2pt}}
-	(a) \TextB{Show $\mathcal{E}$ is a subsp of $\Lm{V,W}$.\vspace{1pt}}
-	(b) \TextB{Find a formula for $\dim \mathcal{E}$ in terms of $\dim V$, $\dim W$ and $\dim U$.\vspace{1pt}}\hspace{0.3pt}
-	\TextB{\envFontSmall\large{{\tgsc Hint\tgbf:} Define $\Phi:\Lm{V,W}\rightarrow\Lm{U,W}$ by $\Phi\Par{T} = T\mmid_U.$ What is $\null\Phi$? What is $\range\Phi$?}}
-}\par\quad
-(a) \,$\forall S,T\in\mathcal{E},\lambda\in\Fbb,\forall u\in U,Su=\lambda Tu=\Par{S+\lambda T}u=0\Rightarrow\Par{S+\lambda T}\in\mathcal{E}.$\par\quad
-(b) Define $\Phi$ as in the hint. $\Phi$ is liney, by \Sbra{3.A {\NOTEFOR} Restriction}.\vspace{2pt}\par\quad\Hb
-$\Phi\Par{T}=0\Longleftrightarrow\forall u\in U,Tu=0\Longleftrightarrow T\in\mathcal{E}.$ Thus $\null\Phi=\mathcal{E}.$\par\quad\Hb
-Extend $S\in\Lm{U,W}$ to $T\in\Lm{V,W}\Rightarrow\Phi\Par{T}=S\in\range\Phi.$ Thus $\range\Phi=\Lm{U,W}.$\vspace{2pt}\par\quad\Hb
-Thus $\dim\null\Phi=\dim\mathcal{E}=\dim\Lm{V,W}-\dim\range\Phi=\Par{\!\dim V-\dim U}\dim W.$\PfEnd\vspace{6pt}\quad\Hb
-\Or Let $B_U=\Par{u_1,\dots,u_m},B_V=\BigPar{u_1,\dots,u_m,v_1,\dots,v_n}.$ Let $p=\dim W$. \Sbra{ See {\NOTEFOR} [3.60]. }\par\vspace{2pt}\quad\Hb
-$\forall \,T\in\mathcal{E},k\in\Bra{1,\dots,m},TE_{k,k}=0\Rightarrow{\normalsize\underbrace{\Spn\!\begin{Bmatrix} \underset{\;,}{E_{1,1}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\underset{\!,}{E_{m,1}},\\[-2pt] \vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \,\vdots\\[-2pt] \overset{\;,}{E_{1,p}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\overset{\!\!,}{E_{m,p}}\end{Bmatrix}}_{\text{Denote\,it\,by\,R}}}\,\cap\,\mathcal{E}=\zeroSubs$.\vspace{-32pt}\par\Hb
-\;\;$\hText{$
-又 $W=\Spn${\small$\begin{Bmatrix} \underset{\;,}{E_{m+1,1}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\underset{\!,}{E_{n,1}},\\[-2pt] \vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \,\vdots\\[-2pt] \overset{\;,}{E_{m+1,p}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\overset{\!\!,}{E_{n,p}}\end{Bmatrix}$}$\,\subseteq\mathcal{E}.\\\;\\\;}\hText{\\[4pt]$ Where $\Lm{V,W}=R\oplus W\Rightarrow\Lm{V,W}=R+\mathcal{E}.\\$
-\hspace{-120pt}Then $\dim\mathcal{E}=\dim\Lm{V,W}-\dim R-\Dim\Par{R\cap\mathcal{E}}=\Par{\!\dim V-\dim U}\dim W.}$\PfEnd[-28pt]
-\SepLine
 \pagebreak
 
 \ProblemBnoor{4E 17}{
@@ -2022,24 +1855,32 @@ $\range\mathcal{B}=\Spn{\small\begin{Bmatrix} \underset{\;,}{G_{1,1}}, &\hspace{
 (b) $\dim\range \mathcal{B}=n\times m.}$\par\PfEnd[-12pt]\vspace{-6pt}
 \SepLine
 
-\ProblemBnoor{\hypertarget{3D4e20}{4E 20}}{
-	\TextB{Supp $q\in\PoRi.$ Prove $\exists\,p\in\PoRi,q\Par{x} = \Par{x^2 + x}p\apostrophe\apostrophe\Par{x} + 2xp\apostrophe\Par{x} + p\Par{3}.$\vspace{1pt}}
-}Note that $\Deg\Sbra{\Par{x^2 + x}p\apostrophe\apostrophe\Par{x} + 2xp\apostrophe\Par{x} + p\Par{3}}=\deg p.$\parSol{}
-Define $T_n\in\Lm[\BigPar]{\PoR{n}}$ by $T_n\Par{p}=\Par{x^2 + x}p\apostrophe\apostrophe\Par{x} + 2xp\apostrophe\Par{x} + p\Par{3}.$\parSol{}
-And note that $T_n\Par{p}=0\Rightarrow\deg T_n\Par{p}=-\infty=\deg p\Rightarrow p=0.$ Thus $T_n$ is inv.\parSol{}
-$\forall q\in\PoRi,$ if $q=0,$ let $n=0;$ if $q\neq 0,$ let $n=\deg q,$ we have $q\in\PoR{n}.$\parSol{}
-Now $\exists\,p\in\PoR{n}, q\Par{x}=T_n\Par{p}=\Par{x^2 + x}p\apostrophe\apostrophe\Par{x} + 2xp\apostrophe\Par{x} + p\Par{3}$ for all $x\in\Rbb.$\PfEnd
+\ProblemN{\hypertarget{3D17}{17}}{
+	\TextNL{Supp $V$ is finide. Show the only two-sided ideals of $\Lm{V}$ are $\zeroSubs$ and $\Lm{V}$.}
+	\TextNL{{\FontNorm A subsp $\mathcal{E}$ of $\Lm{V}$ is called a two-sided ideal of $\Lm{V}$ if $TE\in\mathcal{E},ET\in\mathcal{E},\,\,\forall E\in\mathcal{E},T\in\Lm{V}$.\vspace{-2pt}}}
+}\Sbra{ See also in (3.A). } \;Using {\NOTEFOR} [3.60].\par\quad
+Let $B_V=\Par{v_1,\dots,v_n}.$ If $\mathcal{E}=0$, then done. Supp $\mathcal{E}\neq 0$ and $\mathcal{E}$ is a two-sided ideal of $\Lm{V}$.\vspace{3pt}\par\quad
+Then {\FontLarge$\forall E_{i,j}\in\mathcal{E},$} by asum, {\FontLarge\vspace{3pt}$\forall x,y\in\Bra{1,\dots,n},E_{j,x}E_{i,j}=E_{i,x}\in\mathcal{E},E_{i,j}E_{y,i}=E_{y,j}\in\mathcal{E}.$}\par\quad
+Again, $\forall x,x\apostrophe,y,y\apostrophe\in\Bra{1,\dots,n},$\;\,{\FontLarge$E_{y,x\apostrophe},E_{y\apostrophe,x}\in\mathcal{E}$}. Thus $\mathcal{E}=\Lm{V}.$\PfEnd
 \SepLine
 
-\ProblemN{\hypertarget{3D19}{19}}{
-	\TextNL{Supp $T\in\Lm[\BigPar]{\PoRi}$ is inje. And $\deg Tp\leqslant\deg p$ for every nonzero $p\in\PoRi$.}
-	(a) \TextNL{Prove $T$ is surj. \quad {\large\tgnr(b)} Prove for every nonzero $p$, $\deg Tp=\deg p$.}
-}(a) $T$ is inje $\Longleftrightarrow\forall n\in\Nbp,T\mmid_{\PoR[\SmallPar]{n}}\in\Lm[\BigPar]{\PoR{n}}$ is inje, so is inv $\Longleftrightarrow T$ is surj.\parSol{}
-(b) Using induc.\parSol{\Hb}
-(i) $\deg p=-\infty\geqslant\deg Tp\Longleftrightarrow p=0=Tp.$ And $\deg p=0\geqslant\deg Tp\Longleftrightarrow p=C\neq 0.$\parSol{\vspace{2pt}\Endi\Hb}
-(ii) Asum $\forall s\in\PoR{n},\deg s=\deg Ts.$ We show $\forall p\in\PoR{n+1},\deg Tp=\deg p$ by ctradic.\parSol{\Hii\Hb}
-Supp $\exists\,r\in\PoR{n+1},\;\deg Tr\leqslant n<n+1=\deg r.$ \,By (a), $\exists\,s\in\PoR{n},\;T\Par{s}=\Par{Tr}.$\parSol{\Hii\Hb}
-又 $T$ is inje $\Rightarrow s=r.$ While $\deg s=\deg Ts=\deg Tr<\deg r.$ Ctradic.\PfEnd
+\ProblemBnoor{4E 10}{
+	\hypertarget{3D4e10}{}\TextB{Supp $V,W$ are finide, $U$ is a subsp of $V$.\vspace{3pt}}
+	\TextB{Let $\mathcal{E} = \Bra{T\in\Lm{V,W}: U\subseteq\null T}=\Bra{T\in\Lm{V,W}:T\mmid_U=0}$.\vspace{2pt}}
+	(a) \TextB{Show $\mathcal{E}$ is a subsp of $\Lm{V,W}$.\vspace{1pt}}
+	(b) \TextB{Find a formula for $\dim \mathcal{E}$ in terms of $\dim V$, $\dim W$ and $\dim U$.\vspace{1pt}}\hspace{0.3pt}
+	\TextB{\envFontSmall\large{{\tgsc Hint\tgbf:} Define $\Phi:\Lm{V,W}\rightarrow\Lm{U,W}$ by $\Phi\Par{T} = T\mmid_U.$ What is $\null\Phi$? What is $\range\Phi$?}}
+}\par\quad
+(a) \,$\forall S,T\in\mathcal{E},\lambda\in\Fbb,\forall u\in U,Su=\lambda Tu=\Par{S+\lambda T}u=0\Rightarrow\Par{S+\lambda T}\in\mathcal{E}.$\par\quad
+(b) Define $\Phi$ as in the hint. $\Phi$ is liney, by \Sbra{3.A {\NOTEFOR} Restriction}.\vspace{2pt}\par\quad\Hb
+$\Phi\Par{T}=0\Longleftrightarrow\forall u\in U,Tu=0\Longleftrightarrow T\in\mathcal{E}.$ Thus $\null\Phi=\mathcal{E}.$\par\quad\Hb
+Extend $S\in\Lm{U,W}$ to $T\in\Lm{V,W}\Rightarrow\Phi\Par{T}=S\in\range\Phi.$ Thus $\range\Phi=\Lm{U,W}.$\vspace{2pt}\par\quad\Hb
+Thus $\dim\null\Phi=\dim\mathcal{E}=\dim\Lm{V,W}-\dim\range\Phi=\Par{\!\dim V-\dim U}\dim W.$\PfEnd\vspace{6pt}\quad\Hb
+\Or Let $B_U=\Par{u_1,\dots,u_m},B_V=\BigPar{u_1,\dots,u_m,v_1,\dots,v_n}.$ Let $p=\dim W$. \Sbra{ See {\NOTEFOR} [3.60]. }\par\vspace{2pt}\quad\Hb
+$\forall \,T\in\mathcal{E},k\in\Bra{1,\dots,m},TE_{k,k}=0\Rightarrow{\normalsize\underbrace{\Spn\!\begin{Bmatrix} \underset{\;,}{E_{1,1}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\underset{\!,}{E_{m,1}},\\[-2pt] \vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \,\vdots\\[-2pt] \overset{\;,}{E_{1,p}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\overset{\!\!,}{E_{m,p}}\end{Bmatrix}}_{\text{Denote\,it\,by\,R}}}\,\cap\,\mathcal{E}=\zeroSubs$.\vspace{-32pt}\par\Hb
+\;\;$\hText{$
+	又 $W=\Spn${\small$\begin{Bmatrix} \underset{\;,}{E_{m+1,1}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\underset{\!,}{E_{n,1}},\\[-2pt] \vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \,\vdots\\[-2pt] \overset{\;,}{E_{m+1,p}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\overset{\!\!,}{E_{n,p}}\end{Bmatrix}$}$\,\subseteq\mathcal{E}.\\\;\\\;}\hText{\\[4pt]$ Where $\Lm{V,W}=R\oplus W\Rightarrow\Lm{V,W}=R+\mathcal{E}.\\$
+	\hspace{-120pt}Then $\dim\mathcal{E}=\dim\Lm{V,W}-\dim R-\Dim\Par{R\cap\mathcal{E}}=\Par{\!\dim V-\dim U}\dim W.}$\PfEnd[-28pt]
 \SepLine
 
 \ProblemN{\hypertarget{3D16}{16}}{
@@ -2052,32 +1893,6 @@ For each $w_i,\exists\,!\,a_{k,i}\in\Fbb,w_i=a_{1,i}v_1+\dots+a_{n,i}v_n.$ Where
 Then fix one $i.$ Now for each $j\in\Bra{1,\dots,n},Q_{i,j}\Par{w_i}=w_j=a_{i,i}v_j=G_{i,j}\envFontLarge\BigPar{\sum_{k=1}^na_{k,i} v_k}.$\par\quad
 Let $\lambda=a_{i,i}.$ Hence each $w_j=\lambda v_j.$ Now fix one $j,$ we have $a_{1,1}v_j=\dots=a_{n,n}v_j,$ then all $a_{i,i}$ are equal.\par\quad
 Thus each $w_j=\lambda v_j\Longrightarrow\Mt{S,B_U}=\Mt{\lambda I}.$\PfEnd
-\SepLine
-
-\ProblemBnoor{\hypertarget{3D4e19}{}10.A.3, \OR 4E 19}{
-	\TextB{Supp $V$ is finide and $T\in\Lm{V}$.\FontSmall\hfill\Sbra{See also in (3.A).}}
-	\TextB{Prove $\forall B_V\neq B_V',\;\Mt[\BigPar]{T,B_V}=\Mt[\BigPar]{T,B'_V}\Longrightarrow T=\lambda{I},\exists\,\lambda\in\Fbb.$}
-}Supp $\forall B_V\neq B_V',\;\Mt{T,B_V}=\Mt{T,B'_V}.$ If $T=0$, then done.\vspace{1pt}\parSol{}
-Supp $T\neq 0,$ and $v\in V\nonzero.$ Asum $\Par{v,Tv}$ is liney indep.\vspace{1pt}\parSol{}
-Extend $\Par{v,Tv}$ to $B_V=\Par{v,Tv,u_3,\dots,u_n}.$ Let $B=\Mt{T,B_V}.$\vspace{1pt}\parSol{}
-$\Rightarrow Tv=B_{1,1} v+B_{2,1}\Par{Tv}+B_{3,1}u_3+\dots+B_{n,1}u_n\Rightarrow B_{2,1}=1,B_{i,1}=0,\,\forall i\neq 2.$\vspace{1pt}\parSol{}
-By asum, $A=\Mt{T,B_V'}=B,\forall B_V'=\Par{v,w_2,\dots,w_{n}}$. Then $A_{2,1}=1,A_{i,1}=0,\forall i\neq 2.$\parSol{}
-$\Rightarrow Tv=w_2,$ which is not true if $w_2=u_3,\;w_3=Tv,\;w_j=u_j,\forall j\in\Bra{4,\dots,n}.$ Ctradic.\parSol{}
-Hence $\Par{v,Tv}$ is linely dep $\Rightarrow \forall v\in V,\exists\,\lambda_v\in\Fbb,Tv=\lambda_v v.$\parSol{}
-Now we show $\lambda_v$ is indep of $v$, that is, for all disti $v,w\in V\nonzero,\lambda_v=\lambda_w.$\parSol{}
-\!\!\!\!$\MathRightBrace{l}{
-		\Par{v,w}$ liney indep $\Rightarrow T\Par{v+w}=\lambda_{v+w}\Par{v+w}=\lambda_v v+\lambda_w w=Tv+Tw\\
-		\Par{v,w}$ linely dep, $w=c v$ $\Rightarrow Tw=\lambda_w w=\lambda_w cv=c\lambda_v v=T\Par{cv}
-	}\Rightarrow T=\lambda I.$\PfEnd\vspace{10pt}\quad
-\Or Let $A=\Mt{T,B_V},$ where $B_V=\Par{u_1,\dots,u_m}$ is arb.\vspace{1pt}\par\quad
-Fix one $B_V=\Par{v_1,\dots,v_m}$ and then $\Par{v_1,\dots,\frac{\;1\;}{2}v_k,\dots,v_m}$ is also a bss for any given $k\in\Bra{1,\dots,m}.$\vspace{1pt}\par\quad
-Fix one $k.$ Now we have $T\!\Par{\frac{\;1\;}{2}v_k}=A_{1,k}v_1+\dots+A_{k,k}\Par{\frac{\;1\;}{2}v_k}+\dots+A_{m,k}v_m$\vspace{1pt}\par\quad
-$\Rightarrow Tv_k=2A_{1,k}v_1+\dots+A_{k,k}v_k+\dots+2A_{m,k}v_m=A_{1,k}v_1+\dots+A_{k,k}v_k+\dots+A_{m,k}v_m.$\vspace{1pt}\par\quad
-Then $A_{j,k}=2A_{j,k}\Rightarrow A_{j,k}=0$ for all $j\neq k.$ Thus $Tv_k=A_{k,k}v_k,\forall k\in\Bra{1,\dots,m}.$\vspace{1pt}\par\quad
-Now we show $A_{k,k}=A_{j,j}$ for all $j\neq k.$ Choose $j,k$ suth $j\neq k.$\vspace{1pt}\par\quad
-Consider $B_V'=\Par{v\apostrophe{\hspace{-3pt}_1},\dots,v\apostrophe{\hspace{-3pt}_j},\dots,v\apostrophe{\hspace{-3pt}_k},\dots,v\apostrophe_{\hspace{-3pt}_m}},$ where $v\apostrophe{\hspace{-3pt}_j}=v_k,\,\,v\apostrophe{\hspace{-3pt}_k}=v_j$ and $v\apostrophe{\hspace{-3pt}_i}=v_i$ for all $i\in\Bra{1,\dots,m}\Backslash[\Big]\Bra{\,j,k}.$\vspace{1pt}\par\quad
-Now $T\Par{v\apostrophe{\hspace{-3pt}_k}}=A_{1,k}v\apostrophe{\hspace{-3pt}_1}+\dots+A_{k,k}v\apostrophe{\hspace{-3pt}_k}+\dots+A_{m,k}v\apostrophe{\hspace{-3pt}_m}=A_{k,k}v\apostrophe{\hspace{-3pt}_k}=A_{k,k}v_j,$ while $T\Par{v\apostrophe{\hspace{-3pt}_k}}=T\Par{v_j}=A_{j,j}v_j.$\PfEnd
-%\Or ??? \Sbra{ There must be another solution using theorems and facts given in (3.D). }\par
 \SepLine
 
 %\ProblemB{
@@ -2093,73 +1908,10 @@ Now $T\Par{v\apostrophe{\hspace{-3pt}_k}}=A_{1,k}v\apostrophe{\hspace{-3pt}_1}+\
 %}\colorbox{yellow}{TODO}%TODO: About the maps T: x\mapsto Ax, and T: x\mapsto xA.
 %\SepLine
 
-\ChEnd\pagebreak
+\ChEnd
 
-\ChDecl{Ch3E}{3$\cdot$E}{}\orMode{\hLk{3E1}{1}\;\;\hLk{3E2}{2}\;\;\hLk{3E3}{3}\;\;\hLk{3E4}{4}\;\;\hLk{3E5}{5}\;\;\hLk{3E6}{6}\;\;\hLk{3E7}{7}\;\;\hLk{3E8}{8}\;\;\hLk{3E9}{9}\;\;\hLk{3E10}{10}\;\;\hLk{3E11}{11}\;\;\hLk{3E12}{12}\;\;\hLk{3E13}{13}\;\;\hLk{3E14}{14}\;\;\hLk{3E15}{15}\;\;\hLk{3E16}{16}\;\;\hLk{3E17}{17}\;\;\hLk{3E18}{18}\;\;\hLk{3E20}{20}\;\;\mmid\;\;\hLk{3E4e8}{4E:\;\;8}\;\;\hLk{3E4e14}{14}}[-40pt]{[1]: 1, 2, 4, 5, 6, 3; [2]: (4E 8), 7, 8; [3]: 9, 10, 11; [4]: 14, 18, 20, 17; [5]: 12, 13, (4E 14), 15, 16.}
+\vfill\ChDecl{Ch3E}{3$\cdot$E}{}\orMode{\hLk{3E1}{1}\;\;\hLk{3E2}{2}\;\;\hLk{3E3}{3}\;\;\hLk{3E4}{4}\;\;\hLk{3E5}{5}\;\;\hLk{3E6}{6}\;\;\hLk{3E7}{7}\;\;\hLk{3E8}{8}\;\;\hLk{3E9}{9}\;\;\hLk{3E10}{10}\;\;\hLk{3E11}{11}\;\;\hLk{3E12}{12}\;\;\hLk{3E13}{13}\;\;\hLk{3E14}{14}\;\;\hLk{3E15}{15}\;\;\hLk{3E16}{16}\;\;\hLk{3E17}{17}\;\;\hLk{3E18}{18}\;\;\hLk{3E20}{20}\;\;\mmid\;\;\hLk{3E4e8}{4E:\;\;8}\;\;\hLk{3E4e14}{14}}[-40pt]{[1]: 1, 2, 4, 5, 6, 3; [2]: (4E 8), 7, 8; [3]: 9, 10, 11; [4]: 14, 18, 20, 17; [5]: 12, 13, (4E 14), 15, 16.}
 \vspace{6pt}
-
-\ProblemN[]{\hypertarget{3E1}{1}}{
-	\TextN{A function $T:V\rightarrow W$ is liney $\Longleftrightarrow$ The graph of $T$ is a subspace of $V\times W.$\vspace{-6pt}}
-}\SepLine
-
-\ProblemN{\hypertarget{3E2}{2}}{
-	\TextN{Supp $V_{\!1}\times\dots\times V_{\!m}$ is finide. Prove each $V_{\!j}$ is finide.}
-}For any $k\in\Bra{1,\dots,m},$ define $S_k\in\Lm{V_{\!1}\times\dots\times V_{\!m},V_{\!k}}$ by $S_k\Par{v_1,\dots,v_m}=v_k.$\parSol{}
-Then $S_k$ is liney map. By [3.22], $\range S_k=V_{\!k}$ is finide.\PfEnd\vspace{6pt}\parSol{}
-\Or Denote $V_{\!1}\times\cdots\times V_{\!m}$ by $U$. Denote $\zeroSubs\times\cdots\times\zeroSubs\times V_{\!i}\times\zeroSubs\cdots\times\zeroSubs$ by $U_i$.\parSol{}
-We show each $U_i$ is iso to $V_{\!i}.$ Then $U$ is finide $\Longrightarrow$ its subsp $U_i$ is  finide, so is $V_{\!i}.$\parSol{\vspace{2pt}}
-$\!\!\!\MathRightBrace{l}{$
-Define $R_i\in\Lm{V_{\!i},U_i}$ by $R_i\Par{u_i}=\Par{0,\dots,0,u_i,0,\dots,0}\\ $
-Define $S_i\in\Lm{U,V_{\!i}}$ by $S_i\Par{u_1,\dots,u_i,\dots,u_m}=u_i$
-$}\Rightarrow\MathLeftBrace{l}{R_iS_j\mmid_{U_j}=\delta_{i,j}I_{U_j},\\S_iR_j=\delta_{i,j}I_{V_{\!j}}.}$\PfEnd
-\SepLine
-
-\ProblemN{\hypertarget{3E4}{4}}{
-	\TextN{Prove $\Lm{V_{\!1}\times\cdots\times V_{\!m},W}$ and $\Lm{V_{\!1},W}\times\cdots\times\Lm{V_{\!m},W}$ are iso.}
-}Using nota in Exe (2): $R_i:u_i\mapsto\Par{0,\dots,u_i,\dots,0};\;S_i:\Par{u_1,\dots,u_m}\mapsto u_i.$\par\quad
-Note that $T\Par{u_1,\dots,u_m}=T\Par{u_1,0,\dots,0}+\dots+T\Par{0,\dots,u_m}.$\par{\hspace{0pt}}
-$\MathRightBrace{l}{$
-Define $\varphi:T\mapsto\Par{T_1,\dots,T_m}$ by $\varphi\Par{T}=\Par{TR_1,\dots,TR_m}.\\ $
-Define $\psi:\Par{T_1,\dots,T_m}\mapsto T$ by $\psi\Par{T_1,\dots,T_m}=T_1 S_1+\dots+T_m S_m.$
-$}\Rightarrow\psi=\varphi^{-1}.$\PfEnd
-\SepLine
-
-\ProblemN{\hypertarget{3E5}{5}}{
-	\TextN{Prove $\Lm{V,W_1\times\cdots\times W_m}$ and $\Lm{V,W_1}\times\cdots\times\Lm{V,W_m}$ are iso.}
-}Using nota in Exe (2): $R_i:u_i\mapsto\Par{0,\dots,u_i,\dots,0};\;S_i:\Par{u_1,\dots,u_m}\mapsto u_i.$\par{\hspace{0pt}}
-$\hText{$Note that $T_i:v\mapsto w_i,\\\;T:v\mapsto\Par{w_1,\dots,w_m}.}\hMath{l}{\left|}{\right\}}{$
-Define $\varphi:T\mapsto \Par{T_1,\dots,T_m}$ by $\varphi\Par{T}=\Par{S_1 T,\dots,S_m T}.\\ $
-Define $\psi:\Par{T_1,\dots,T_m}\mapsto T$ by $\psi\Par{T_1,\dots,T_m}=R_1T_1+\dots+R_mT_m.$
-$}\Rightarrow\psi=\varphi^{-1}.$\PfEnd[-8pt]\vspace{-8pt}
-\SepLine
-
-\ProblemN{\hypertarget{3E6}{6}}{
-	\TextN{For $m\in\Nbp,$ define $V^m$ by $\mathop{\underbrace{V\times\cdots\times V}}\limits_{m\,\,times}$. Prove $V^m$ and $\Lm{\Fbb^m,V}$ are iso.}
-}\par\quad
-Define $T:\Par{v_1,\dots,v_m}\rightarrow\varphi$, where $\varphi:\Par{a_1,\dots,a_m}\mapsto v$ is defined by $\varphi\Par{a_1,\dots,a_m}=a_1 v_1+\dots+a_m v_m.$\par\vspace{2pt}\quad
-(a) Supp $T\Par{v_1,\dots,v_m}=0.$ Then $\forall\Par{a_1,\dots,a_n}\in\Fbb^m$, $\varphi\Par{a_1,\dots,a_m}=a_1 v_1+\dots+a_m v_m=0$\par\quad\Ha
-For each $k,$ let $a_k=1,a_j=0$ for all $j\neq k.$ Then each $v_k=0\Rightarrow\Par{v_1,\dots,v_m}=0.$ Thus $T$ is inje.\par\vspace{2pt}\quad
-(b) Supp $\psi\in\Lm{\Fbb^m,V}.$ Let $\Par{e_1,\dots,e_m}$ be std bss of $\Fbb^m$. Then $\forall\Par{b_1,\dots,b_n}\in\Fbb^m$,\vspace{3pt}\par\quad\Hb
-$\XSbra{T\envFontLarge\BigPar{\envFontDefault\psi\Par{e_1},\dots,\psi\Par{e_m}\envFontLarge}\envFontDefault}\Par{b_1,\dots,b_m}=b_1\psi\Par{e_1}+\dots+b_m\psi\Par{e_m}=\psi\BigPar{b_1 e_1+\dots+b_m e_m}=\psi\Par{b_1,\dots,b_m}$.\vspace{3pt}\par\quad\Hb
-Thus $T\BigPar{\psi\Par{e_1},\dots,\psi\Par{e_m}}=\psi$. Hence $T$ is surj.\PfEnd
-\SepLine
-
-\ProblemN{\hypertarget{3E3}{3}}{
-	\TextN{Give an exa of a vecsp $V$ and its two subsps $U_1,U_2$ suth}
-	\TextN{$U_1\times U_2$ and $U_1+U_2$ are iso but $U_1+U_2$ is not a direct sum.\FontNorm\hfill\Sbra{$V$ must be infinide.}}
-}{\NOTE} {\tgsl that at least one of $U_1,U_2$ must be infinide.\;\; Both can be infinide. \Sbra{Req Other Courses.}}\par\quad
-%\colorbox{yellow}{TODO}\par\quad
-%\par\quad
-Let $V=\Fbb^\infty=U_1,\;U_2=\Bra{\Par{x,0,\cdots}\in\Fbb^\infty:x\in\Fbb}.$ Then $V=U_1+U_2$ is not a direct sum.\par{\hspace{0pt}}
-$\MathRightBrace{l}{$
-	Define $T\in\Lm{U_1\times U_2,U_1+U_2}$ by $T\BigPar{\Par{x_1,x_2,\cdots},\Par{x,0,\cdots}}=\Par{x,x_1,x_2,\cdots}\\ $
-	Define $S\in\Lm{U_1+U_2,U_1\times U_2}$ by $S\Par{x,x_1,x_2,\cdots}=\BigPar{\Par{x_1,x_2,\cdots},\Par{x,0,\cdots}}$
-	$}\Rightarrow S=T^{-1}.$\PfEnd%\vspace{10pt}\quad
-%\Or Let $V=\Fbb^\infty,U_1=\Bra{\Par{x_i}^\infty_{i=1}\in\Fbb^\infty:\sum_{i=1}^\infty \Par{-1}^{i}x_i=0},U_2=\Bra{\Par{y_1,y_2,\cdots}\in\Fbb^\infty:y_1+y_2+\dots=0}.$\par\quad
-%$\MathRightBrace{l}{$
-	%	Define $T\in\Lm{U_1\times U_2,U_1+U_2}$ by $T\BigPar{\Par{x_1,x_2,\cdots},\Par{y_1,y_2,\cdots}}=\Par{x_1,y_1,x_2,y_2,\cdots}\\$
-	%	Define $S\in\Lm{U_1+U_2,U_1\times U_2}$ by $S\Par{z_1,z_2,z_3,z_4,\cdots}=\BigPar{\Par{z_1,z_3,\cdots},\Par{z_2,z_4,\cdots}}}\Rightarrow S=T^{-1}.$\PfEnd
-\SepLine
 
 \BulletPointX\NoteForSmall{[3.79], def of {\tgsc v + U}}\;\;Given $v+U,$ $v$ is already uniqly determined, as a sort of precond.\TextB{}
 Even though $v+U=v'+U,$ where $v'$ is {\tgsl purer} than $v.$
@@ -2169,7 +1921,7 @@ Even though $v+U=v'+U,$ where $v'$ is {\tgsl purer} than $v.$
 
 \BulletPointX\NoteForSmall{[3.85]}\;\;\TextB{$v+U=w+U\Longleftrightarrow v\in w+U,\;w\in v+U$}
 \Blind{\NoteForSmall{[3.85]}\;\;}{\FontLarge$\Blind{v+U=w+U}\Longleftrightarrow v-w\in U\Longleftrightarrow \Par{v+U}\cap\Par{w+U}\neq\emptySet.$}
-\SepLine
+\SepLine\pagebreak
 
 \BulletPointX\NoteFor{[3.79, 3.83]}\TextB{}
 If $U$ is merely a subset of $V,$ then [3.85, 86] do not hold $\Rightarrow V\XSlash U$ not a vecsp.\TextB{}
@@ -2273,43 +2025,21 @@ $\Blind{A}=v_k+\lambda_1\Par{v_1-v_k}+\dots+\lambda_{k-1}\Par{v_{k-1}-v_k}+\lamb
 $\Blind{A}\in v_k+\Span{v_1-v_k,\dots,v_m-v_k}.$\PfEnd
 \SepLine\pagebreak
 
-\ProblemN{\hypertarget{3E14}{14}}{
-	\TextNL{Supp $U=\Bra{\Par{x_1,x_2,\cdots}\in\Fbb^{\infty}:x_k\neq 0\text{\;for\;only\;finily\;many}\;k}.$\quad\FontSmall Denote it by $\Fbb^\Nbb.$\vspace{2pt}}
-	(a) \TextNL{Show $U$ is a subsp of $\Fbb^{\infty}$. {\FontNorm\Sbra{Do it in your mind}} \;\; {\tgnr\large(b)} Prove $\Fbb^{\infty}\XSlash[-3pt]U$ is infinide.}
-}For ease of nota, denote the $p^\text{th}$ term of $u=\Par{x_1,\cdots,x_p,\cdots}\in\Fbb^{\infty}$ by $u\Sbra{p}$.\vspace{2pt}\par\quad
-For each $r\in\Nbp,$ let $\;e_r\Sbra{k}=\hMath[0pt]{l}{\left\{}{\right|}{1\,,\;\Par{k-1}\equiv 0\,\BigPar{\text{mod}\,r}\\0\,,\;\text{othws}}$ \;simply \,$e_r=\BigPar{1,\underbrace{0,\cdots,0}_{\SmallPar{r-1}},1,\underbrace{0,\cdots,0}_{\SmallPar{r-1}},1,\cdots}.$\vspace{6pt}\par\quad
-For $m\in\Nbp.$ Let $a_1\Par{e_1+U}+\dots+a_m\Par{e_m+U}=0+U\Rightarrow\exists\,u\in U,a_1 e_1+\dots+a_m e_m=u$.\vspace{2pt}\par\quad
-Supp $u=\Par{x_1,\cdots,x_L,{0,\cdots}},$ where $L$ is the largest suth $u\Sbra{L}\neq 0.$\vspace{2pt}\par\quad
-Let $s\in\Nbp$ be suth $h=s\cdot m!+1> L,$ \,and \,$e_1\Sbra{h}=\cdots=e_m\Sbra{h}=1.$\vspace{2pt}\par\quad
-\NOTICE that for any $p,r\in\Bra{1,\dots,m},$ \;$e_r\Sbra{s\cdot m!+1+p}=e_r\Sbra{p+1}=1\Longleftrightarrow p\equiv 0\,\Par{\,\text{mod}\,r\,}\Longleftrightarrow r\,\mmid\,p.$\par\vspace{2pt}\quad
-Let \,$1=p_1\leqslant\cdots\leqslant p_{\tau\TinyPar{p}}=p$\, be the disti factors of $p.$ Moreover, $r\,\mmid\,p\Longleftrightarrow r=p_k$ for some $k.$\par\vspace{2pt}\quad
-Now $u\Sbra{h+p}=0=\XPar{\sum_{r=1}^m a_r e_r}\Sbra{p+1}=\sum_{k=1}^{\tau\TinyPar{p}}a_{p_k}.$\par\vspace{0pt}\quad
-Let $q=p_{\tau\TinyPar{p}-1}$. Then $\tau\Par{q}=\tau\Par{p}-1,$ and each $q_k=p_k.$ Again, $\XPar{\sum_{r=1}^m a_r e_r}\Sbra{h+q}=0=\sum_{k=1}^{\tau\TinyPar{p}-1}a_{p_k}.$\par\vspace{4pt}\quad
-Thus $a_{p_{\tau\TinyPar{p}}}=a_p=0$ for all $p\in\Bra{1,\dots,m}\Rightarrow\Par{e_1,\dots,e_m}$ is liney indep in $\Fbb^{\infty}.$\vspace{2pt}\par\quad
-So is $\Par{e_1+U,\dots,e_m+U}$ in $\Fbb^{\infty}\XSlash[-2.5pt]U.$ Becs $m$ is arb. By (2.A.14).\PfEnd\vspace{10pt}\quad
-\Or For each $r\in\Nbp,$ let $\;e_r\Sbra{p}=\hMath[0pt]{l}{\left\{}{\right|}{1\,,\text{if }2^r\,\mmid\,p\\0\,,\text{othws}}\hText{$
-	Simlr, let $m\in\Nbp$ and $a_1\Par{e_1+U}+\dots+a_m\Par{e_m+U}=0\\$
-	$\Rightarrow a_1e_1+\dots+a_me_m=u\in U.$
-	$}$\vspace{4pt}\par\quad
-Supp $L$ is the largest suth $u\Sbra{L}\neq 0.$ And $l$ is suth $2^{ml}> L.$ \;Then for each $k\in\Bra{1,\dots,m},$\vspace{6pt}\par\quad
-$u\Sbra{2^{ml}+2^k}=0=\XPar{\sum_{r=1}^m a_re_r}\Sbra{2^k}=a_1+\dots+a_k.$ \,Thus each $a_k=0.$ Simlr.\PfEnd
-\SepLine
-
 \ProblemN{\hypertarget{3E18}{18}}{
 	\TextNL{Supp $T\in\Lm{V,W}$ and $U,V$ are subsps of $\mathcal{V}.$ Let $\pi:V\rightarrow V\XSlash U$ be the quot map.}
 	\TextNL{Prove $\exists\,S\in\Lm{V\XSlash U,W},T=S\circ\pi\Longleftrightarrow U\cap V=\null\pi\subseteq\null T$.}
 }Supp $\null\pi\subseteq\null T.$ By ({3.B.24}), done. \;\Or Define $S:\Par{v+U}\mapsto Tv.$\parSol{}
 $\forall v_1,v_2\in V$ suth $v_1+U=v_2+U\Longleftrightarrow v_1-v_2\in U\cap V\subseteq\null T\Longleftrightarrow Tv_1=Tv_2.$\parSol{}
 Thus $S$ is well-defined. Convly true as well.\PfEnd\vspace{2pt}
-\hypertarget{3E20}{}\ACoro $\Gamma:$ {\FontSmall$\Lm{V\XSlash U,W}\rightarrow\Lm{V,W}$} with $S\mapsto S\circ\pi$ is inje, $\range\Gamma=\Bra{T\in\Lm{V,W}:U\subseteq\null T}.$\par\vspace{2pt}
-\AComm If $T=I_V.$ Then $S:v+U\mapsto v$ is not well-defined, unless $U\cap V=\zeroSubs\subseteq\null I_V.$
+\hypertarget{3E20}{}\ACoro $\Gamma:$ {\FontSmall$\Lm{V\XSlash U,W}\rightarrow\Lm{V,W}$} with $S\mapsto S\circ\pi$ is inje, $\range\Gamma=\Bra{T\in\Lm{V,W}:U\subseteq\null T}.$\par\vspace{0pt}
+\AComm If $T=I_V.$ Then $S:v+U\mapsto v$ is not well-defined, unless $U\cap V=\zeroSubs\subseteq\null I_V.$\vspace{-3pt}
 \SepLine
 
 \BulletPointX\NoteFor{[3.88, 3.90, 3.91]}\;\;{Supp $W\oplus U=V.$ Then $V\XSlash U=W\XSlash U$ is iso to $W.$\quad\FontSmall\Sbra{\,Convly not true.\,}}\TextB{}
 {Becs $\forall v\in V,\exists\,!\,u_v\in U,w_v\in W,v=u_v+w_v.$ \uline{Define $T\in\Lm{V}$ by $T\Par{v}=w_v.$}}\TextB{}
 {Hence $\null T=U,\;\range T=W,\;\range T\oplus\null T=V.$}\TextB{}
 {Then $\tilde{T}\in\Lm{V\XSlash \null T,V}$ is defined by $\tilde{T}\Par{v+U}=\tilde{T}\Par{w_v'+U}=Tw_v'=w_v.$ \FontSmall\Sbra{\tgsl See Exa below}}\TextB{}
-{Now $\pi\circ\tilde{T}=I_{V\XSlash U},\;\tilde{T}\circ\pi\mmid_W=I_{W}=T\mmid_W.$ \;Hence $\tilde{T}$ is iso of $V\XSlash U$ onto $W.$}\par\vspace{2pt}
+{Now $\pi\circ\tilde{T}=I_{V\XSlash U},\;\tilde{T}\circ\pi\mmid_W=I_{W}=T\mmid_W.$ \;Hence $\tilde{T}=\Par{\pi\mmid_W}{^{-1}}$ is iso of $V\XSlash U$ onto $W.$}\par\vspace{2pt}
 %\BulletPointX\TipsN{1}\,\,\,{Supp $U$ is a subsp of $V.$ \uline{Define $S\in\Lm{V\XSlash U,V}$ by $S\Par{v+U}=v.$}}\TextB{}
 %{Then $\range S$ is the {\tgsl purest} in $\mathcal{S}_{\!V} U.$ Now $\null S=\zeroSubs,\;U\oplus\range S=V.$}\TextB{}
 %{\uline{Let $E=S\circ\pi.$} Becs $S$ is inje and $\pi$ is surj, $\null E=\null\pi=U,\;\range E=\range S.$}\TextB{}
@@ -2326,16 +2056,17 @@ Although $\Par{e_2-e_1}+U=e_2+U,$ $\tilde{T}\Par{e_2+U}=T\Par{e_2}=e_2-e_1.$ Bec
 	\TextNL{Supp $V\XSlash U$ is finide. Supp $W$ is finide and $V=U+W.$ Show $\dim W\geqslant\dim V\XSlash U$.}
 }Let $Y\oplus\Par{U\cap W}=W.$ Then by \Sbra{1.C \TIPSN{4}}, $V=U\oplus Y.$ Note that $V\XSlash U$ and $Y$ are iso.\PfEnd\parSol{\vspace{2pt}}
 \Or Let $B_W=\Par{w_1,\dots,w_n}.$ Then $V=U+\Span{w_1,\dots,w_n}.$\parSol{}
-$\forall v\in V,\exists\,u\in U,\;v=u+\Par{a_1w_1+\dots+a_nw_n}\Rightarrow v+U=\Par{a_1w_1+\dots+a_nw_n}+U.$\PfEnd
-\SepLine\pagebreak
+$\forall v\in V,\exists\,u\in U,\;v=u+\Par{a_1w_1+\dots+a_nw_n}\Rightarrow v+U=\Par{a_1w_1+\dots+a_nw_n}+U.$\PfEnd\vspace{2pt}
+\ANote If $\dim W=\dim V\XSlash U.$ Then $B_{V\XSlash U}=\Par{w_1+U,\dots,w_n+U}.$ Supp $v=\sum_{i=1}^na_iw_i\in U\cap W$\parNot
+$\Rightarrow v+U=0=\sum_{i=1}^na_i\Par{w_i+U}\Rightarrow$ each $a_i=0.$ Thus $V=U\oplus W.$
+\SepLine
 
 \ProblemN{\hypertarget{3E12}{12}}{
 	\TextNL{Supp $U$ is a subsp of $V.$ Prove is $V$ is iso to $U\times\Par{V\XSlash U}$.}
 }\par\quad
 \!\Sbra[3pt]{{\tgsl Req $V\XSlash U$ Finide}} \;Let $B_{V\XSlash U}=\BigPar{v_1+U,\dots,v_n+U}.$\par\quad
-Note that $\forall v\in V,\exists\,!\,a_i\in\Fbb,v+U=\sum_{i=1}^n a_i\BigPar{v_i+U}=\XPar{\sum_{i=1}^n a_i v_i}+U$\vspace{2pt}\par\quad
-$\Rightarrow\BigPar{v-a_1 v_1-\dots-a_n v_n}\in U\Rightarrow\exists\,!\,u\in U,v=\sum_{i=1}^n a_i v_i+u.$\vspace{2pt}\par\quad
-Thus define \;$\varphi\in\Lm[\BigPar]{V,U\times\Par{V\XSlash U}}$\quad\;\hspace{1.4pt}and \;$\psi\in\Lm[\BigPar]{U\times\Par{V\XSlash U},V}$\par\vspace{1pt}\quad
+Now $\forall v\in V,\exists\,!\,a_i\in\Fbb,v+U=\sum_{i=1}^n a_iv_i+U\Rightarrow v-\sum_{i=1}^na_iv_i\in U\Rightarrow\exists\,!\,u\in U,v=\sum_{i=1}^n a_i v_i+u.$\vspace{2pt}\par\quad
+Thus define \;$\varphi\in\Lm[\BigPar]{V,U\times\Par{V\XSlash U}}$\quad\;\;\;\,\hspace{0pt}and \;$\psi\in\Lm[\BigPar]{U\times\Par{V\XSlash U},V}$\par\vspace{1pt}\quad
 \Blind{Thus defi}by \;$\varphi\Par{v}=\BigPar{u,\;\sum_{i=1}^na_iv_i+U},$ and \;$\psi\Par{u,\;v+U}=\sum_{i=1}^na_iv_i+u.$ \quad Then $\psi=\varphi^{-1}.$\PfEnd\vspace{8pt}\quad
 \Or Let $W\oplus U=V.$ Define $Tv=u_v,Sv=w_v\Rightarrow\tilde{T}\in\Lm{V\XSlash W,U},\tilde{S}\in\Lm{V\XSlash U,W}$ are iso.\par\quad
 Define $\psi\Par{u,v+U}=u+\tilde{S}\Par{v+U}=u+w_v.$ Define $\varphi\Par{v}=\BigPar{\tilde{T}\Par{v},v+U}.$\par\quad
@@ -2351,8 +2082,7 @@ Define $\psi\Par{u,v+U}=u+\tilde{S}\Par{v+U}=u+w_v.$ Define $\varphi\Par{v}=\Big
 	\TextNL{Prove $B_{V\XSlash U}=\BigPar{v_1+U,\dots,v_m+U},B_U=\Par{u_1,\dots,u_n}\Rightarrow B_V=\BigPar{v_1,\dots,v_m,u_1,\dots,u_n}.$\vspace{4pt}}
 }$\forall v\in V,\exists\,!\,a_i\in\Fbb,v+U=\sum_{i=1}^m a_i v_i+U\Rightarrow\exists\,!\,b_i\in\Fbb,v-\sum_{i=1}^m a_i v_i=\sum_{i=1}^n b_i u_i\in U$\parSol{\vspace{2pt}}
 $\Rightarrow \forall v\in V,\exists\,!\,a_i,b_j\in\Fbb,v=\sum_{i=1}^m a_i v_i+\sum_{j=1}^n b_j u_j.$\PfEnd\parSol{\vspace{6pt}}
-\Or $\sum_{i=1}^m a_i v_i+\sum_{i=1}^n b_i u_i=0\Rightarrow\BigPar{\sum_{i=1}^m a_i v_i+\sum_{i=1}^n b_i u_i}+U=0\Rightarrow \sum_{i=1}^m a_i\Par{v_i+U}=0$\vspace{1pt}\parSol{}
-\Blind{\Or}$\Rightarrow a_1=\dots=a_m=0\Rightarrow\sum_{i=1}^n b_i u_i\Rightarrow b_1=\dots=b_n=0.$ \;又$\dim V=m+n.$\PfEnd\parSol{\vspace{6pt}}
+\Or $\sum_{i=1}^m a_i v_i+\sum_{i=1}^n b_i u_i=0\Rightarrow\sum_{i=1}^m a_i\Par{v_i+U}=0\Rightarrow$ each $a_i=0\Rightarrow$ each $b_i=0.$\PfEnd\parSol{\vspace{6pt}}
 \Or Note that $B=\Par{v_1,\dots,v_m}$ is liney indep, and $\Sbra{\Span{v_1,\dots,v_m}+U}\subseteq V.$\parSol{}
 $v\in\Spn B\cap U\Longleftrightarrow v+U=\sum_{i=1}^ma_i\Par{v_i+U}=0+U\Longleftrightarrow v=0.$ \,Hence $\Spn B\cap U=\zeroSubs.$\parSol{}
 Becs $\Dim\Sbra{\Span{v_1,\dots,v_m}\oplus U}=m+n=\dim V.$ \;Now by (2.B.8).\PfEnd
@@ -2360,8 +2090,9 @@ Becs $\Dim\Sbra{\Span{v_1,\dots,v_m}\oplus U}=m+n=\dim V.$ \;Now by (2.B.8).\PfE
 
 \ProblemBnoor{\hypertarget{3E4e14}{4E 14}}{
 	\TextB{Supp $V=U\oplus W,\;B_W=\Par{w_1,\dots,w_m}.$ Prove $B_{V\XSlash U}=\BigPar{w_1+U,\dots,w_m+U}.$\vspace{4pt}}
-}$\forall v\in V,\exists\,!\,u\in U,w\in W,v=u+w.$ 又 $\exists\,!\,c_i\in\Fbb,w=\sum_{i=1}^m c_i w_i\Rightarrow v=\sum_{i=1}^m c_i w_i+u$.\vspace{2pt}\parSol{}
-Hence $\forall v+U\in V\XSlash U,\exists\,!\,c_i\in\Fbb,v+U=\sum_{i=1}^m c_i w_i+U.$\PfEnd
+}$\forall v\in V,\exists\,!\,u\in U,w\in W,v=u+w.$ 又 $\exists\,!\,c_i\in\Fbb,w=\sum_{i=1}^m c_i w_i\Rightarrow v=\sum_{i=1}^m c_i w_i+u$.\parSol{}
+Hence $\forall v+U\in V\XSlash U,\exists\,!\,c_i\in\Fbb,v+U=\sum_{i=1}^m c_i w_i+U.$\PfEnd\vspace{2pt}\parSol{}
+\Or Becs $\pi\mmid_W:W\rightarrow W\XSlash U$ is inv, and $V\XSlash U=W\XSlash U.$\PfEnd
 \SepLine
 
 %\BulletPointX\NoteForSmall{Exe (13) and (4E 14)}\;\;Let $U\oplus W=V.$ Define $S\Par{w+U}=w.$ \;\Sbra{ See also \TIPSN{1}. }\TextB{}
@@ -2395,8 +2126,7 @@ Then $\dim U\XSlash W=\dim U-\Dim\Par{U\cap W}=1\neq 0\dim X-\Dim\Par{X\cap Y}=\
 \SepLine
 
 \ProblemB{
-	\TipsN{2}\,\,\,\TextB{Supp $U,W$ are subsps of $V.$ Let $I=U\cap W.$}
-	\IndentTipsN{2}\TextB{Prove $V=U+W\Longleftrightarrow V\XSlash I=U\XSlash I\oplus W\XSlash I.$}
+	\TipsN{2}\,\,\,\TextB{Supp $U,W$ are vecsps, $I=U\cap W.$ Prove $V=U+W\Longleftrightarrow V\XSlash I=U\XSlash I\oplus W\XSlash I.$}
 }(a) Supp $V=U+W.$ Then $\forall v+I\in V\XSlash I,\exists\,\Par{u_v,w_v}\in U\times W,\;v+I=\Par{u_v+w_v}+I.$\parSol{\Ha}
 Note that $U\XSlash I,W\XSlash I\subseteq V\XSlash I.$ Thus $V\XSlash I=U\XSlash I+W\XSlash I.$\parSol{\Ha}
 $\forall u+I=w+I\in\Par{U\XSlash I}\,${\Large$\cap$}$\,\Par{W\XSlash I},\;$\uline{$u-w\in I=U\cap W$}\parSol{\Ha}
@@ -2419,7 +2149,7 @@ Then $\forall u_1+X=u_2+X\in U_X\XSlash X,\;u_1-u_2\in X$ 又 $u_1,u_2\in U_X\Ri
 Now $S$ is well-defined. Then $\LmQxx{S}[\SmallPar{W\XSlash X}][W][\Big/]=T$ defined above.\par\quad
 Becs $\range S\mmid_{W\XSlash X\,\cap\,U_X\XSlash X}\subseteq W,$ and $U_X=\range S\Rightarrow U_X\subseteq\range S+W.$ \;Well-defined. Surj.\par\quad
 For $u_x\in U_X,\;u_x+W=0\Longleftrightarrow u_x\in U_X\cap W\Longleftrightarrow u_x+X\in\Par{U_X\cap W}\XSlash X=\null\LmQxx{S}[][W].$ \;Inje.\PfEnd
-\SepLine
+\SepLine\pagebreak
 
 %\ProblemB{
 %	\TipsN{3}\,\,\,\TextB{Supp $I$ is a subsp of $U.$ Supp $U$ is a subsp of $V.$}
@@ -2459,18 +2189,10 @@ Convly, $W\subseteq\range T+X\Rightarrow\Par{\range T}\XSlash X=\Par{\range T+X}
 (b) $\range T\XSlash U=\range\BigPar{T\XSlash U\circ\pi}=\range\Par{\pi\circ T}=\Par{\range T}\XSlash U.$\;\;(c) $T\XSlash U$ surj $\Longleftrightarrow V\subseteq\range T+U.$\TextB{}
 (d) $\null T\XSlash U=\BigPar{\null\LmQxx{T}[][U]}\XSlash U.$\;\;(e) $T\XSlash U$ inje $\Longleftrightarrow\null\LmQxx{T}[][U]\subseteq U.$
 \SepLine
-
-\ProblemB{
-	\TextB{Supp $V=\Rbb^\Rbb$ and $U=\Bra{\hspace{3pt}f\in\Rbb^\Rbb:f\Par{x_1}=\cdots=f\Par{x_m}=0}$ is a subsp of $V,$\vspace{2pt}}
-	\TextB{with each $x_k\in\Rbb.$ \;Prove $\forall W\in\mathcal{S}_V U,\dim W=m.$\hfill{\large\tgsc Hint$:$ }{\FontNorm Find an iso from $V\XSlash U$ onto $\Rbb^m.$}}
-}Define $T\in\Lm{V\XSlash U,\Rbb^m}$ by $T\Par{f+U}=\BigPar{f\Par{x_1},\dots,f\Par{x_m}}.$\parSol{}
-$\forall f_1+U=f_2+U\in V\XSlash U,f_1-f_2\in U\Rightarrow f_1\Par{x_k}=f_2\Par{x_k}.$ Now $T$ is well-defined.\parSol{\vspace{2pt}}
-Inje: Each $f\Par{x_k}=0\Rightarrow f+U=0.$ \;Let $S=T\circ\pi\Rightarrow\tilde{S}=T.$ Then $S$ is surj, so is $T.$\PfEnd
-\SepLine
-
 \ChEnd
-\vfill
-\ChDecl{Ch3F}{3$\cdot$F}{}\orMode{\hLk{3F4}{4}\;\;\hLk{3F5}{5}\;\;\hLk{3F6}{6}\;\;\hLk{3F7}{7}\;\;\hLk{3F8}{8}\;\;\hLk{3F9}{9}\;\;\hLk{3F12}{12}\;\;\hLk{3F13}{13}\;\;\hLk{3F15}{15}\;\;\hLk{3F16}{16}\;\;\hLk{3F18}{18}\;\;\hLk{3F19}{19}\;\;\hLk{3F20}{20}\;\;\hLk{3F21}{21}\;\;\hLk{3F22}{22}\;\;\hLk{3F23}{23}\;\;\hLk{3F24}{24}\;\;\hLk{3F25}{25}\;\;\hLk{3F26}{26}\;\;$\\[-4pt]$\hLk{3F28}{28}\;\;\hLk{3F29}{29}\;\;\hLk{3F31}{31}\;\;\hLk{3F32}{32}\;\;\hLk{3F33}{33}\;\;\hLk{3F34}{34}\;\;\hLk{3F35}{35}\;\;\hLk{3F36}{36}\;\;\hLk{3F37}{37}\;\;\mmid\;\;\hLk{3F4e5}{4E:\;\;5}\;\;\hLk{3F4e6}{6}\;\;\hLk{3F4e8}{8}\;\;\hLk{3F4e17}{17}\;\;\hLk{3F4e23}{23}\;\;\hLk{3F4e24}{24}\;\;\hLk{3F4e25}{25}}[-40pt]{[1]: 20, 21; [2]: 22, 23, (4E 23), 30; [3]: 31, 25, 26; [4]: 28, 29, 9, 13; [5]: 24, 37, 4, 17, 18, 19;$\\$[6]: 36, (4E 17), 15, 12; [7]: 16, (4E 6), 5; [8]: 32, 33, (4E 8), (4E 5); [9]: 6, (4E 25); [10]: 35, 7, 8, 34.}
+
+\pagebreak
+\ChDecl{Ch3F}{3$\cdot$F}{}\orMode{\hLk{3F4}{4}\;\;\hLk{3F6}{6}\;\;\hLk{3F7}{7}\;\;\hLk{3F8}{8}\;\;\hLk{3F9}{9}\;\;\hLk{3F12}{12}\;\;\hLk{3F13}{13}\;\;\hLk{3F15}{15}\;\;\hLk{3F16}{16}\;\;\hLk{3F18}{18}\;\;\hLk{3F19}{19}\;\;\hLk{3F20}{20}\;\;\hLk{3F21}{21}\;\;\hLk{3F22}{22}\;\;\hLk{3F23}{23}\;\;\hLk{3F24}{24}\;\;\hLk{3F25}{25}\;\;\hLk{3F26}{26}\;\;$\\[-4pt]$\hLk{3F28}{28}\;\;\hLk{3F29}{29}\;\;\hLk{3F31}{31}\;\;\hLk{3F32}{32}\;\;\hLk{3F33}{33}\;\;\hLk{3F34}{34}\;\;\hLk{3F35}{35}\;\;\hLk{3F36}{36}\;\;\hLk{3F37}{37}\;\;\mmid\;\;\hLk{3F4e5}{4E:\;\;5}\;\;\hLk{3F4e6}{6}\;\;\hLk{3F4e8}{8}\;\;\hLk{3F4e17}{17}\;\;\hLk{3F4e23}{23}\;\;\hLk{3F4e24}{24}\;\;\hLk{3F4e25}{25}}[-40pt]{[1]: 20, 21; [2]: 22, 23, (4E 23), 30; [3]: 31, 25, 26; [4]: 28, 29, 9, 13; [5]: 24, 37, 4, 17, 18, 19;$\\$[6]: 36, (4E 17), 15, 12; [7]: 16, (4E 6), 5; [8]: 32, 33, (4E 8), (4E 5); [9]: 6, (4E 25); [10]: 35, 7, 8, 34.}
 \vspace{4pt}
 
 \BulletPointX\NoteForSmall{Exe (1)}\;\;Every liney functional is either surj or is a zero map.\TextB{}
@@ -2478,8 +2200,6 @@ Which means, for $\varphi\in V\apostrophe,$ $\varphi=0\Longleftrightarrow\dim\Sp
 And $\varphi\neq 0\Longleftrightarrow\dim\Span{\varphi}=1\Longleftrightarrow\dim\range\varphi=1.$ Thus $\dim\Span{\varphi}=\dim\range\varphi.$
 \SepLine
 
-%\def\OrbikenI
-{
 \ProblemN{\hypertarget{3F4}{4}}{
 	\TextN{Supp $U$ is a subsp of $V\neq U.$ Prove $U^0\neq\zeroSubs.$\vspace{1pt}}
 }Let $X\oplus U=V\Rightarrow X\neq\zeroSubs.$ Supp $s\in X\nonzero.$ Let $Y\oplus\Span{s}=X.$\parSol{}
@@ -2504,16 +2224,21 @@ Not a ctradic becs $\emptySet$ is not a subsp. Now $U^0=V\apostrophe$ can be tru
 
 \ProblemN{\hypertarget{3F25}{25}}{
 	\TextNL{Supp $U$ is a subsp of $V$. Explain why $U=\Bra{v\in V:\varphi\Par{v}=0,\forall\varphi\in U^0}.$}
-}We show $\forall\varphi\in U^0,\varphi\Par{v}=0\Rightarrow v\in U$ by ctradic. Asum $v\in V\Backslash U.$\parSol{}
-Then let $\Span{v}\oplus U\oplus X=V.$ $\exists\,\psi\in V\apostrophe,\null\psi=U\oplus X.$ 
-又 $\psi\in U^0\Rightarrow\psi\Par{v}=0.$\PfEnd\vspace{2pt}
-\AComm $W\subseteq X=\Bra{v\in V:\varphi\Par{v}=0,\forall\varphi\in W^0},$ the {\tgsc promotion} of the subset $W$ of $V.$\parCom
-The promotion of every subset of $V$ is the smallest subsp of $V$ containing $W.$
-\SepLine\pagebreak
+}Asum $\forall\varphi\in U^0,\varphi\Par{v}=0$ while $v\in V\Backslash U.$ Then let $\Span{v}\oplus U\oplus X=V.$\parSol{}
+$\exists\,\varphi\in V\apostrophe,\null\varphi=U\oplus X\Rightarrow\varphi\in U^0.$ 
+又 $\varphi\Par{v}=0\Rightarrow 0\neq v\in\null\varphi\cap\Span{v}.$ Ctradic.\PfEnd\vspace{2pt}
+\AComm $X\subseteq W=\Bra{v\in V:\varphi\Par{v}=0,\forall\varphi\in X^0},$ the {\tgsc promotion} of the subset $X$ of $V.$
+\SepLine
 
 \ProblemB{
 	\TextB{Supp $U,W$ are subsps of $V.$ Prove the promotion of $U\cup W$ is $U+W.$}
 }$\Par{U\cup W}{^0}=\Bra{\varphi\in V\apostrophe:\varphi\Par{u}=\varphi\Par{w}=\varphi\Par{u+w}=0,\forall u\in U,w\in W}=\Par{U+W}{^0}.$\PfEnd
+\SepLine
+
+\ProblemB{
+	\TextB{Supp $X=\Bra{x_1,\dots,x_m}\subsetneq V.$ Prove the promotion of $X$ is $\Span{x_1,\dots,x_m}.$}
+}$X^0=\envFontLarge\Bra{{\envFontDefault\varphi\in V\apostrophe:\varphi\Par{\lambda x_j+\mu x_k}=0,\forall j,k\in\Bra{1,\dots,m},\lambda,\mu\in\Fbb}}=\Span{x_1,\dots,x_m}{^0}.$\PfEnd
+\AComm The promotion of every finite subset $X$ of $V$ is the smallest subsp of $V$ containing $X.$
 \SepLine
 
 \ProblemN{\hypertarget{3F20}{20}}{
@@ -2531,10 +2256,6 @@ The promotion of every subset of $V$ is the smallest subsp of $V$ containing $W.
 \Blind{(2)} Let $W=\Bra{\Par{1,0},\Par{0,1}}\not\supseteq U=\Bra{\Par{x,0}\in\Rbb^2}.$ Then $Y=\Rbb^2\supseteq X=U,\;Y^0=\zeroSubs\subseteq X^0.$
 \SepLine
 
-%\BulletPointX\ACoro If $U$ is a subset and $W$ is a subsp. Then $U\subseteq W\Longleftrightarrow W^0\subseteq U^0.$\parCor{\IndentB}
-%If $U,W$ are subsps. Then $U=W\Longleftrightarrow W^0=U^0.$
-%\SepLine
-
 \ProblemN{\hypertarget{3F22}{22}}{
 	\TextNL{Supp $U$ and $W$ are subsps of $V$. Prove $\BigPar{U+W}{^0}=U^0\cap W^0$.}
 }\vspace{-14pt}\parSol{}
@@ -2543,6 +2264,29 @@ The promotion of every subset of $V$ is the smallest subsp of $V$ containing $W.
 	\Ha$\varphi\Par{u}=\varphi\Par{w}=0\Rightarrow\varphi\in U^0\cap W^0.}\;\;\hMath{l}{\left|\;}{\;\right.}{U\subseteq U+W\Rightarrow\BigPar{U+W}{^0}\subseteq U^0\\W\subseteq U+W\Rightarrow\BigPar{U+W}{^0}\subseteq W^0}$\vspace{4pt}\parSol{}
 (b) $\varphi\in U^0\cap W^0\subseteq V\apostrophe\Rightarrow\forall u\in U,w\in W,\varphi\Par{u+w}=0\Rightarrow\varphi\in \BigPar{U+W}{^0}.$\PfEnd
 \SepLine
+
+\ProblemN{\hypertarget{3F37}{37}}{
+	\TextNL{Supp $U$ is a subsp of $V$ and $\pi$ is the quot map. Thus $\pi\apostrophe\in\Lm[\BigPar]{\Par{V\XSlash U}\apostrophe,V\apostrophe}$.\vspace{2pt}}
+	(a) \TextNL{Show $\pi\apostrophe$ is inje\hspace{1pt}$:${\tgnr\FontNorm\;\;Becs $\pi$ is surj. Use [3.108].}\vspace{2pt}}
+	(b) \TextNL{Show $\range \pi\apostrophe=U^0$\hspace{1pt}$:${\tgnr\FontNorm\;\;By {\tgnr[3.109](b)}, $\range\pi\apostrophe=\BigPar{\null\pi}{^0}=U^0.$}\vspace{2pt}}
+	(c) \TextNL{Conclude that $\pi\apostrophe$ is iso from $\Par{V\XSlash U}\apostrophe$ onto $U^0$\hspace{1pt}$:${\tgnr\FontNorm\;\;Immed.}}
+}(a) \Or $\pi\apostrophe\Par{\varphi}=0\Longleftrightarrow\forall v\in V\,\BigPar{\,\forall v+U\in V\,},\varphi\BigPar{\pi\Par{v}}=\varphi\Par{v+U}=0\Longleftrightarrow \varphi=0.$\parSol{}
+(b) \Or $\psi\in\range\pi\apostrophe\Longleftrightarrow\exists\,\varphi\in \Par{V\XSlash U}\apostrophe,\psi=\varphi\,\circ\,\pi\Longleftrightarrow\null\psi\supseteq U\Longleftrightarrow \psi\in U^0.$\PfEnd
+\SepLine
+
+\ProblemB{
+	\TextB{Supp $U$ is a subsp of $V.$ Prove $\Par{V\XSlash U}\apostrophe$ is iso to $U^0.$ \hfill\Sbra[3pt]{{\large\tgsc Another proof of \tgbfx[3.106]}}}
+}Define $\xi:U^0\rightarrow\Par{V\XSlash U}\apostrophe$ by $\xi\Par{\varphi}=\tilde{\varphi},$ where $\tilde{\varphi}\in\Par{V\XSlash U}\apostrophe$ is defined by $\tilde{\varphi}\Par{v+U}=\varphi\Par{v}.$\vspace{1pt}\parSol{}
+Inje: $\xi\Par{\varphi}=0=\tilde{\varphi}\Rightarrow\forall v\in V\,\BigPar{\,\forall v+U\in V\XSlash U\,},\tilde{\varphi}\Par{v+U}=\varphi\Par{v}=0\Rightarrow\varphi=0.$\parSol{}
+Surj: $\varPhi\in\Par{V\XSlash U}\apostrophe\Rightarrow\forall u\in U,\varPhi\Par{u+U}=\varPhi\Par{0+U}=0\Rightarrow U\subseteq\null\Par{\varPhi\circ\pi}\Rightarrow\xi\Par{\varPhi\circ\pi}=\varPhi.$\vspace{2pt}\parSol{}
+\Or Define $\nu:\Par{V\XSlash U}\apostrophe\rightarrow U^0$ by $\nu\Par{\varPhi}=\varPhi\circ\pi.$ Now $\nu\circ\xi=I_{U^0},\;\xi\circ\nu=I_{\SmallPar[1pt]{V\XSlash U}\apostrophe}\Rightarrow\xi=\nu^{-1}.$\PfEnd\vspace{-2pt}
+\SepLine
+
+%\ProblemN{\hypertarget{3F5}{5}}{
+%	\TextN{Prove $\BigPar{V_{\!1}\times\dots\times V_{\!m}}\apostrophe$ and $\dualVn{1}\times\dots\times\dualVm$ are iso.\hfill\FontNorm\Sbra[3pt]{{\normalsize\tgnr Using notas in (3.E.2).}}}
+%}Define $\chi:\Par{V_{\!1}\times\dots\times V_{\!m}}\apostrophe\rightarrow \dualVn{1}\times\dots\times \dualVm$ by $\chi\Par{T}=\Par{T\circ R_1,\dots,T\circ R_m}=\Par{R\apostrophe_1\Par{T},\dots,R\apostrophe_m\Par{T}}.$\parSol{}
+%Define the $\chi^{-1}$ by $\chi^{-1}\Par{T_1,\dots,T_m}=T_1S_1+\dots+T_mS_m=S\apostrophe_1\Par{T_1}+\dots+S\apostrophe_m\Par{T_m}.$\PfEnd
+%\SepLine
 
 \ProblemN{\hypertarget{3F23}{23}}{
 	\TextNL{Supp $U$ and $W$ are subsps of $V$. Prove $\BigPar{U\cap W}{^0}=U^0+W^0$.}
@@ -2562,7 +2306,7 @@ Well-defined: $v_1+I=v_2+I\in V\XSlash I\Longleftrightarrow v_1-v_2\in I$\par\qu
 Inje: $\Par{v+U,v+W}=0\Longleftrightarrow v\in U\cap W=I\Longleftrightarrow v+I=0.$\par\quad\Hb
 Surj: $\forall v\in V$ suth $\Par{v+U,v+W}\in V\XSlash U\times V\XSlash W,$ becs $\emptySet\neq\Par{v+U}\cap\Par{v+W}=v+I\in V\XSlash I.$\par\quad\Hb
 Hence $\chi\apostrophe\in\Lm[\BigPar]{\Par{{V\XSlash U}\times{V\XSlash W}}\apostrophe,\Par{V\XSlash I}\apostrophe}$ is iso. Now we try finding an iso of $U^0\times W^0$ onto $\Par{U\cap W}{^0}.$\par\quad\Hb
-By Exe (4E 8), supp $\xi:\Par{V\XSlash U}\apostrophe\times\Par{V\XSlash W}\apostrophe\rightarrow\Par{{V\XSlash U}\times{V\XSlash W}}\apostrophe$ is iso.\par\quad\Hb
+By (3.E.4), supp $\xi:\Par{V\XSlash U}\apostrophe\times\Par{V\XSlash W}\apostrophe\rightarrow\Par{{V\XSlash U}\times{V\XSlash W}}\apostrophe$ is iso.\par\quad\Hb
 By (c) in Exe (37), supp $\Lambda_1:U^0\times W^0\rightarrow\Par{V\XSlash U}\apostrophe\times\Par{V\XSlash W}\apostrophe$ and $\Lambda_2:\Par{V\XSlash I}\apostrophe\rightarrow\Par{U\cap W}{^0}$ are isos.\par\quad\Hb
 Hence $\Par{\Lambda_2\circ\chi\apostrophe\circ\xi\circ\Lambda_1}:U^0\times W^0\rightarrow\Par{U\cap W}{^0}$ is iso. \;Now we see how it works:\par\quad\Hb
 $\forall\Par{\varphi_U,\varphi_W}\in U^0\times W^0,\;\null\pi_U\subseteq\null\varphi_U\Rightarrow\exists\,\psi_U\in\Par{V\XSlash U}\apostrophe,\;\psi_U\circ\pi_U=\varphi_U,$ simlr for $\varphi_W,$\par\quad\Hb
@@ -2579,16 +2323,21 @@ Thus $\Par{\Lambda_2\circ\chi\apostrophe\circ\xi\circ\Lambda_1}$ is the surj $\L
 %Now we show $X\cap Y=I.$ So that $\BigPar{U\cap W}{^0}=I^0=\BigPar{X\cap Y}{^0}=X^0+Y^0=U^0+W^0.$\parCom
 \AExa Let $U=\Bra{\Par{x,x+1}\in\Rbb^2},W=\Rbb^2.$ Then $U\cap W=I=U\neq\Rbb^2=X\cap Y.$
 \SepLine
-
-%\BulletPointX\ACoro (1) $\BigPar{U\cap W}{^0}=U^0+W^0\supseteq U^0\cap W^0=\BigPar{U+W}{^0}.$\vspace{2pt}\parCor{\IndentB}
-%(2) ${\envFontLarge\BigPar{{\envFontDefault\bigcap_{\alpha_i\in\Gamma}V_{\!\alpha_i}}}}{^0}=\sum_{\alpha_i\in\Gamma}\BigPar{V^0_{\!\alpha_i}},\;\;{\envFontLarge\BigPar{{\envFontDefault\sum_{\alpha_i\in\Gamma}V_{\!\alpha_i}}}}{^0}=\bigcap_{\alpha_i\in\Gamma}\BigPar{V^0_{\!\alpha_i}}.$
-%\SepLine
 \pagebreak
 
 \ProblemB{
 	\TipsN{1}\,\,\,\TextB{Prove $V=U\oplus W\Longleftrightarrow V\apostrophe=U^0\oplus W^0.$}
 }$U\cap W=\zeroSubs\Longleftrightarrow \BigPar{U\cap W}{^0}=\zeroSubs{_V^0}=V\apostrophe=U^0+W^0.$\parSol{\vspace{1pt}}
 $V=U+W\Longleftrightarrow\BigPar{U+W}{^0}=V_V^0=\zeroSubs=U^0\cap W^0.$\PfEnd
+\SepLine
+
+\ProblemB{
+	\TextB{Supp $V=U\oplus W$. Define $\iota:V\rightarrow U$ by $\iota\Par{u+w}=u.$ Thus $\iota\apostrophe\in\Lm{U\apostrophe,V\apostrophe}.$\vspace{2pt}}
+	(a) \TextB{Show $\null \iota\apostrophe=\zeroSubs$\hspace{1pt}$:${\tgnr\FontNorm\;\;$\null\iota\apostrophe=\Par{\range\iota}{^0_U}=U_U^0=\zeroSubs.$\;\Or $\iota\apostrophe\Par{\psi}=\psi\circ\iota=0\Longleftrightarrow U\subseteq\null\psi.$}\vspace{2pt}}
+	(b) \TextB{Prove $\range\iota\apostrophe=W_V^0$\hspace{1pt}$:${\tgnr\FontNorm\;\;$\range\iota\apostrophe=\BigPar{\null\iota}{^0_V}=W_V^0.$}\vspace{2pt}}
+	(c) \TextB{Prove $\tilde{\iota\apostrophe}$ is iso from $U\apostrophe\XSlash{\envFontDefault\zeroSubs}$ onto $W^0$\hspace{1pt}$:${\tgnr\FontNorm\;\;Immed.}}
+}(b) \Or Note that $W=\null{\iota}\subseteq\null\Par{\psi\circ\iota}.$ Then $\psi\circ\iota\in W^0\Rightarrow\range\iota\apostrophe\in W^0.$\parSol{\Hb}
+\Blind{\Or} Supp $\varphi\in W^0.$ Becs $\null\iota=W\subseteq\null\varphi.$ By \Sbra{3.B \TIPSN{3}}, $\varphi=\varphi\circ\iota=\iota\apostrophe\Par{\varphi}.$\PfEnd
 \SepLine
 
 \ProblemB{
@@ -2600,20 +2349,20 @@ Simply becs $W_V\upapostrophe$ have no info about the given $U.$ Here is an info
 Each liney map $T\in\Lm{V,W}$ that vanishes on a given nontrivial $U$ has its '$P$'\parNot
 \Par{ though not uniq } suth '$U\oplus P=V$' with $T:P\mapsto\range T$ being surj.\parNot
 Hence $\forall W\in\mathcal{S}_V U,\,U^0=W_{V}'.$ But given nontrivial '$P$', the corres '$U$' is not uniq.\parNot
-Fix one $W_V\upapostrophe,$ then $U^0$ is not uniq, with each $U_k$ not equal to each other while each $U_k^0=W_V\upapostrophe.$\par\vspace{3pt}
+Fix one $W_V\upapostrophe,$ then $U^0$ is not uniq, with each $U_k$ not equal to each other while each $U_k^0=W_V\upapostrophe.$\par\vspace{2pt}
 \AExa Let $B_V=\Par{e_1,e_2}.$ Let $B_U=\Par{e_1},B_X=\Par{e_2-e_1},B_Y=\Par{e_2}.$\parExa
 Then $\iota_X:ae_1+b\Par{e_2-e_1}\mapsto b\Par{e_2-e_1},\;\;\iota_Y:ae_1+be_2\mapsto be_2.$ Now $X_V\upapostrophe=Y_V\upapostrophe=U^0.$\parExa
 (1) For $V=U\oplus X,$ let $B_{U_V'}=\Par{\varphi}$ with $\varphi:e_1\mapsto 1,\;e_2-e_1\mapsto 0\Rightarrow e_2\mapsto 1.$\parExa
 (2) For $V=U\oplus Y,$ let $B_{U_V'}=\Par{\psi}$ with $\psi:e_1\mapsto 1,e_2\mapsto 0.$\parExa
 Thus $X^0=U_V\upapostrophe$ while $Y^0=U_V\upapostrophe\Rightarrow X^0=Y^0\Rightarrow X=Y,$ ctradic.\parExa
-To fix this, we must have a bss of $V\apostrophe$ as precond, which we'll see in the {\NOTEFOR} Exa (31).\par\vspace{3pt}
+To fix this, we must have a bss of $V\apostrophe$ as precond, which we'll see in the {\NOTEFOR} Exa (31).\par\vspace{2pt}
 \ANote {\tgsl Supp $U$ is a subsp of $V.$ Then finding the corres subsp in $V\apostrophe$ firstly req another 'half' $W\in\mathcal{S}_V U,$}\vspace{-2pt}\parNot
 {\tgsl while finding the corres subsp of $V$ for a subsp of $V\apostrophe$ must have the another 'half' asumed as precond.}
 \SepLine
 
 \ProblemN{\hypertarget{3F31}{31}}{
 	\TextNL{Supp $V$ is finide and $B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_n}.$ Show $\exists\,!\,B_V$ whose dual bss is the $B_{V\apostrophe}$.}
-}For each $k\in\Bra{1,\dots,n},$ let $\Gamma_k=\Bra{1,\dots,n}\Backslash[\Big]\Bra{k}.$ Let each $U_k=\bigcap_{j\in\Gamma}\null\varphi_j.$\parSol{}
+}For each $k\in\Bra{1,\dots,n},$ let $\Gamma_{\!k}=\Bra{1,\dots,n}\Backslash[\Big]\Bra{k}.$ Let each $U_k=\bigcap_{j\in\Gamma}\null\varphi_j.$\parSol{}
 By Exe (4E 23), $V\apostrophe=\Span{\varphi_1,\dots,\varphi_n}=\BigPar{\null\varphi_1\cap\cdots\cap\null\varphi_n}{^0}\Rightarrow U_k\cap\varphi_k=\zeroSubs.$\parSol{}
 Thus $\forall x_k\in U_k\nonzero,\;x_k\not\in\null\varphi_k$ while $x_k\in\null\varphi_j$ for all $j\in\Gamma.$\parSol{}
 Fix one $x_k$ and let $v_k=\Sbra{\varphi_k\Par{x_k}}{^{-1}}x_k\Rightarrow\varphi_k\Par{v_k}=1,\,\varphi_j\Par{v_k}=0$ for all $j\neq k.$\parSol{}
@@ -2629,22 +2378,20 @@ Extend to $B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_n}.$ By Exe (31), $\exi
 Let $B_U=\Par{v_{m+1},\dots,v_n},B_W=\Par{v_1,\dots,v_m}.$ \,Thus we found the $W$ suth $\Omega=W_V\upapostrophe,$\TextB{}
 which is well-defined with $B_V$ as precond.
 \SepLine
-}
-%\def\OrbikenII
-{
+
 \BulletPointX\TipsN{2}\,\,\,Supp $\varphi_1,\dots,\varphi_m\in V\apostrophe.$ Denote $\null\psi_a\cap\cdots\cap\null\varphi_b$ by $\bigcap_a^b\null\varphi_I.$\TextB{}
 \IndentTipsN{2}Supp $\Omega$ is a subsp of $V\apostrophe.$ Denote $\Bra{v\in V:\varphi\Par{v}=0,\forall\varphi\in\Omega}$ by $C^0\,\Omega.$\TextB{\vspace{2pt}}
 (1) If $\Omega$ is infinide. Then by def, $\bigcap_{\in\,\Omega}\null\varphi=C^0\,\Omega.$\TextB{\vspace{1pt}}
 (2) If $\Omega=\Span{\varphi_1,\dots,\varphi_m}.$ Then $v\in\bigcap_1^m\null\varphi_I\Longleftrightarrow$ each $\varphi_k\Par{v}=0$\TextB{}
 \Blind{(2) If $\Omega=\Span{\varphi_1,\dots,\varphi_m}.$ Then $v\in\bigcap_1^m\null\varphi_I$}${}\Longleftrightarrow\forall\varphi=\sum_{i=1}^na_i\varphi_i\in\Omega,\varphi\Par{v}=0\Longleftrightarrow v\in C^0\,\Omega.$
-\SepLine\pagebreak
+\SepLine
 
 \ProblemBnoor{4E 23}{
 	\TextB{Supp $V$ is finide, $\Omega=\Span{\varphi_1,\dots,\varphi_m}\subseteq V\apostrophe.$ Prove $\Omega=\BigPar{\null\varphi_1\cap\cdots\cap\null\varphi_m}{^0}.$}
-}Becs each $\Span{\varphi_k}\subseteq\Par{\null\varphi_k}{^0}.$ By {\NOTEFOR} Exe (4E 23) and Exe (23), Immed.\PfEnd\parSol{\vspace{4pt}}
+}Becs each $\Span{\varphi_k}\subseteq\Par{\null\varphi_k}{^0}.$ By {\NOTEFOR} Exe (1) and Exe (23), Immed.\PfEnd\parSol{\vspace{4pt}}
 \Or Reduce to $B_{\Omega}=\Par{\beta_1,\dots,\beta_p}.$ We show $\Omega=\Par{\null\beta_1\cap\cdots\cap\null\beta_p}{^0}.$ Then by (L1), done.\parSol{}
 Let $B_{V\apostrophe}=\Par{\beta_1,\dots,\beta_p,\gamma_1,\dots,\gamma_q}.$ By Exe (31), let $B_V=\Par{v_1,\dots,v_p,u_1,\dots,u_q}.$\parSol{}
-Define each $\Gamma_k=\Bra{1,\dots,p}\Backslash[\Big]\Bra{k}.$ Then $\null\beta_k=\Spn\Bra{v_j}{_{j\in\Gamma_k}}\oplus\Span{u_1,\dots,u_q}.$\parSol{}
+Define each $\Gamma_{\!k}=\Bra{1,\dots,p}\Backslash[\Big]\Bra{k}.$ Then $\null\beta_k=\Spn\Bra{v_j}{_{j\,\in\,\Gamma_{\!k}}}\oplus\Span{u_1,\dots,u_q}.$\parSol{}
 Now $\null\beta_1\cap\cdots\cap\null\beta_p=\Span{u_1,\dots,u_q}.$ Simlr to (4E 2.C.16).\parSol{}
 Supp $\varphi=\sum_{i=1}^pa_i\beta_i+\sum_{j=1}^qb_j\gamma_j\in\Span{u_1,\dots,u_q}{^0}.$ Then each $\varphi\Par{u_k}=0=b_k$\parSol{}
 Thus $\Span{u_1,\dots,u_q}{^0}\subseteq\Span{\beta_1,\dots,\beta_p}=\Omega.$\PfEnd
@@ -2689,7 +2436,6 @@ Let $\Omega=\Bra[\envFontA]{\varphi\in\Span{\varphi_{\alpha_1},\dots,\varphi_{\a
 %}Let $B_U=\Par{u_1,\dots,u_m},B_V=\Par{u_1,\dots,u_m,v_1,\dots,v_n},B_{V\apostrophe}=\Par{\psi_1,\dots,\psi_m,\varphi_1,\dots,\dots\varphi_n}.$\parSol{}
 %Supp $\psi=\sum_{i=1}^ma_i\psi_i+\sum_{j=1}^nb_j\varphi_j\in U^0\Rightarrow$ each $\psi\Par{u_k}=a_k=0.$ Thus $U^0\subseteq\Span{\varphi_1,\dots,\varphi_n}.$\PfEnd
 %\SepLine
-
 \pagebreak
 \BulletPointX\TipsN{3}\,\,\,Let $B_{U^0}=\Par{\varphi_1,\dots,\varphi_m},B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_n}\Rightarrow B_V=\Par{v_1,\dots,v_n}.$\TextB{}
 We show $B_U=\Par{v_{m+1},\dots,v_n}.$ Let $B_{W^0}=\Par{\varphi_{m+1},\dots,\varphi_n}.$\TextB{}
@@ -2718,128 +2464,63 @@ And let corres (I) $B_U=\Par{v_{m+1},\dots,v_n},$ \; (II) $B_W=\Par{v_1,\dots,v_
 }Using [3.107], [3.109], Exe (23) and the {\COROLLARY} in Exe (20, 21).\par\quad
 (28) $\Par{\range T}{^0}=\null T\apostrophe=\Span{\psi_1,\dots,\psi_m}=\BigPar{\Par{\null\psi_1}\cap\cdots\cap\Par{\null\psi_m}}{^0}.$\par\quad
 (29) $\Par{\null T}{^0}=\range T\apostrophe=\Span{\varphi_1,\dots,\varphi_m}=\BigPar{\Par{\null\varphi_1}\cap\cdots\cap\Par{\null\varphi_m}}{^0}.$\PfEnd\vspace{6pt}
-\Corollary\,\,\,Using the \COMMENT in Exe (26).\par\quad
-$\null T=\Span{v_1,\dots,v_m}\Longleftrightarrow\null T=\Par{\null\varphi_{m+1}}\cap\cdots\cap\Par{\null\varphi_n}\Longleftrightarrow\range T\apostrophe=\Span{\varphi_{m+1},\dots,\varphi_n}.$\par\quad
+\Corollary\,\,\,Using \TIPSN{3}.\par\quad
+$\null T=\Span{v_1,\dots,v_m}\Longleftrightarrow\null T={\null\varphi_{m+1}}\cap\cdots\cap{\null\varphi_n}\Longleftrightarrow\range T\apostrophe=\Span{\varphi_{m+1},\dots,\varphi_n}.$\par\quad
 ——Where $B_V=\Par{v_1,\dots,v_m,\dots,v_n}\Longleftrightarrow B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_m,\dots,\varphi_n}.$\vspace{3pt}\par\quad
-$\range T=\Span{w_1,\dots,w_m}\Longleftrightarrow\range T=\Par{\null\psi_{m+1}}\cap\cdots\cap\Par{\null\psi_n}\Longleftrightarrow\null T\apostrophe=\Span{\psi_{m+1},\dots,\psi_n}.$\par\quad
+$\range T=\Span{w_1,\dots,w_m}\Longleftrightarrow\range T={\null\psi_{m+1}}\cap\cdots\cap{\null\psi_n}\Longleftrightarrow\null T\apostrophe=\Span{\psi_{m+1},\dots,\psi_n}.$\par\quad
 ——Where $B_W=\Par{w_1,\dots,w_m,\dots,w_n}\Longleftrightarrow B_{W\apostrophe}=\Par{\psi_1,\dots,\psi_m,\dots,\psi_n}.$\par
 \SepLine
-}
-\pagebreak
-%\def\OrbikenIII
-{
-\ProblemN{\hypertarget{3F9}{9}}{
-	\TextN{Let $B_V=\Par{v_1,\dots,v_n},\,B_{V\apostrophe}=\Par{\varphi_1,\cdots,\varphi_n}$. Then $\forall\psi\in V\apostrophe,\psi=\psi\Par{v_1}\varphi_1+\dots+\psi\Par{v_n}\varphi_n.$}
-	\ANote {\tgsl For other $B_V'=\Par{u_1,\dots,u_n},B_{V\apostrophe}'=\Par{\rho_1,\dots,\rho_n},\forall\psi\in V\apostrophe,\psi=\psi\Par{u_1}\rho_1+\dots+\psi\Par{u_n}\rho_n.$}\TextB{}\vspace{2pt}
-}$\psi\Par{v}=\psi\XPar{\sum_{i=1}^n a_i v_i}=\sum_{i=1}^n a_i\psi\Par{v_i}=\sum_{i=1}^n\psi\Par{v_{i}}\varphi_i\Par{v}=\Sbra{\psi\Par{v_1}\varphi_1+\dots+\psi\Par{v_n}\varphi_n}\Par{v}.$\PfEnd
+
+\ProblemN{\hypertarget{3F34}{34}}{
+	\TextNL{The double dual space of $V$, denoted by $V\apostrophe\apostrophe$, is defined to be the dual space
+		of $V\apostrophe$.}
+	\TextNL{In other words, $V\apostrophe\apostrophe=\Lm{V\apostrophe,\Fbb}$. Define $\Lambda:V\rightarrow V\apostrophe\apostrophe$ by $\Par{\Lambda v}\Par{\varphi} = \varphi\Par{v}$.\vspace{2pt}}
+	(a) \TextNL{Show $\Lambda$ is a liney map from $V$ to $V\apostrophe\apostrophe$.\vspace{2pt}}
+	(b) \TextNL{Show if $T\in\Lm{V}$, then $T\apostrophe\apostrophe\circ\Lambda=\Lambda\circ T$, where $T\apostrophe\apostrophe=\Par{T\apostrophe}\apostrophe$.\vspace{2pt}}
+	(c) \TextNL{Show if $V$ is finide, then {\tgsc $\Lambda$ is iso from $V$ onto $V$\hspace{1pt}$\apostrophe\apostrophe$}.\vspace{2pt}}
+	\TextNL{\normalsize Supp $V$ is finide. Then $V$ and $V\apostrophe$ are iso, and finding iso from $V$ onto $V\apostrophe$ generally req choosing\vspace{-3pt}}
+	\TextNL{\normalsize a bss of $V$. In contrast, the iso $\Lambda$ from $V$ onto $V\apostrophe\apostrophe$ does not req a choice of bss and thus is considered more natural.}
+}\par\quad
+(a) $\forall\varphi\in V\apostrophe,v,w\in V,a\in\Fbb,\BigPar{\Lambda\Par{v+a w}}\Par{\varphi}=\varphi\Par{v+aw}=\varphi\Par{v}+a\varphi\Par{w}=\Par{\Lambda v}\Par{\varphi}+a\Par{\Lambda w}\Par{\varphi}$.\par\quad\Ha
+Thus $\Lambda\Par{v+aw}=\Lambda v+a\Lambda w$. Hence $\Lambda$ is liney.\vspace{4pt}\par\quad
+(b) \vspace{-6pt} \AlignEq{}{\BigPar{T\apostrophe\apostrophe\Par{\Lambda v}}\Par{\varphi}=\BigPar{\Par{\Lambda v}\circ{T\apostrophe}}\Par{\varphi}&=\Par{\Lambda v}\BigPar{T\apostrophe\Par{\varphi}}\hspace{216pt}\\[-4pt]&=\BigPar{T\apostrophe\Par{\varphi}}\Par{v}=\Par{\varphi\circ T}\Par{v}=\varphi\Par{Tv}=\BigPar{\Lambda\Par{Tv}}\Par{\varphi}.}\par\quad\Hb
+Hence $T\apostrophe\apostrophe\Par{\Lambda v}=\BigPar{\Lambda\Par{Tv}}\Rightarrow T\apostrophe\apostrophe\circ\Lambda=\Lambda\circ T$.\vspace{4pt}\par\quad
+(c) Supp $\Lambda v=0$. Then $\forall\varphi\in V\apostrophe,\Par{\Lambda v}\Par{\varphi}=\varphi\Par{v}=0\Rightarrow v=0$. Thus $\Lambda$ is inje.\par\quad\Hc
+又 Becs $V$ is finide. $\dim V=\dim V\apostrophe=\dim V\apostrophe\apostrophe.$ Hence $\Lambda$ is iso.\PfEnd\vspace{4pt}\quad\Hc
+\AComm Supp $\Phi\in V\apostrophe\apostrophe$ and $\Phi\neq 0.$ Then $\exists\,\varphi\in V\apostrophe,\:\Phi\Par{\varphi}=1\Rightarrow\null\Phi\oplus\Span{\varphi}=V\apostrophe.$\parCom\quad\Hc
+And $\varphi\neq 0\Rightarrow\exists\,v\in V,\:\varphi\Par{v}=1,\null\varphi\oplus\Span{v}=V.$ Becs $\Lambda$ is surj.\parCom\quad\Hc
+Now $\exists\,x\in V,\forall\psi=c\varphi+\rho\in V\apostrophe,\psi\Par{x}=\Par{\Lambda x}\Par{\psi}=\Phi\Par{\psi}=c.$
 \SepLine
 
-\ProblemN[]{\hypertarget{3F13}{13}}{
-	\TextNL{Define $T:\Rbb^3\!\rightarrow\!\Rbb^2$ by $T\Par{x,y,z}=\Par{4x+5y+6z,7x+8y+9z}$.\vspace{3pt}}
-	\TextNL{Let $\Par{\varphi_1,\varphi_2},\Par{\psi_1,\psi_2,\psi_3}$ denote the dual bss of std bss of $\Rbb^2$ and $\Rbb^3$.\vspace{4pt}}
-	(a) \TextNL{Describe the liney functionals $T\apostrophe\Par{\varphi_1},T\apostrophe\Par{\varphi_2}.$}
-	\Ha\TextNL{{\FontNorm\tgnr For any $\Par{x,y,z}\in\Rbb^3$, $\BigPar{T\apostrophe\Par{\varphi_1}}\Par{x,y,z}=4x+5y+6z, \BigPar{T\apostrophe\Par{\varphi_2}}\Par{x,y,z}=7x+8y+9z$.}\vspace{6pt}}
-	(b) \TextNL{Write $T\apostrophe\Par{\varphi_1}$ and $T\apostrophe\Par{\varphi_2}$ as liney combinations of $\psi_1,\psi_2,\psi_3$.}
-	\Hb\TextNL{{\FontNorm\tgnr$T\apostrophe\Par{\varphi_1}=4\psi_1+5\psi_2+6\psi_3,\,\,T\apostrophe\Par{\varphi_2}=7\psi_1+8\psi_2+9\psi_3.$}\vspace{6pt}}
-	(c) \TextNL{What is $\null T\apostrophe$? What is $\range T\apostrophe$?}
-}\TextNL{\vspace{4pt}}
-\Hc $T\Par{x,y,z}=0\Longleftrightarrow\MathLeftBrace{l}{4x+5y+6z=0\\7x+8y+9z=0}\Longleftrightarrow\hMath{l}{\left\{}{\;\right|}{x=z,\\y=-2z.}\,\hText{$Thus $\null T=\Span{e_1-2e_2+e_3},\\$where $\Par{e_1,e_2,e_3}$ is std bss of $\Rbb^3.}$\vspace{4pt}\TextNL{}
-\Hc Let $\Par{e_1-2e_2+e_3,-2e_2,e_3}$ be a bss, with corres dual bss $\Par{\varepsilon_1,\varepsilon_2,\varepsilon_3}$.\vspace{1.5pt}\TextNL{}
-\Hc Thus $\Span{e_1-2e_2+e_3}=\null T\Rightarrow \Span{e_1-2e_2+e_3}{^0}=\Span{\varepsilon_2,\varepsilon_3}=\range T\apostrophe.$\vspace{1.5pt}\TextNL{}
-\Hc Note that $\varepsilon_k=\varepsilon_k\Par{e_1}\psi_1+\varepsilon_k\Par{e_2}\psi_2+\varepsilon_k\Par{e_3}\psi_3.$\vspace{1.5pt}\TextNL{}
-\Hc And $\MathLeftMid{l}{\varepsilon_2\Par{e_2}=-\frac{\;1\;}{2},\varepsilon_2\Par{e_1}=\varepsilon_2\Par{e_1-2e_2+e_3}+\varepsilon_2\Par{2e_2}-\varepsilon_2\Par{e_3}=1,\\[1.5pt]\varepsilon_3\Par{e_2}=0,\varepsilon_3\Par{e_3}=\varepsilon_3\Par{e_1-2e_2+e_3}+\varepsilon_3\Par{2e_2}-\varepsilon_3\Par{e_3}=-1.}$\vspace{1.5pt}\TextNL{}
-\Hc Hence $\varepsilon_2=\psi_1-\frac{\;1\;}{2}\psi_2,\;\varepsilon_3=-\psi_1+\psi_3.$ Now $\range T\apostrophe=\Span{\psi_1-\frac{\;1\;}{2}\psi_2,\:-\psi_1+\psi_3}.$\vspace{4.5pt}\TextNL{}
-\Hc\Or $\range T\apostrophe=\Span[\BigPar]{T\apostrophe\Par{\varphi_1},\,T\apostrophe\Par{\varphi_2}}=\Span{4\psi_1+5\psi_2+6\psi_3,\:7\psi_1+8\psi_2+9\psi_3}.$\vspace{7.5pt}\TextNL{}
-\Hc Supp $T\apostrophe\Par{x\varphi_1+y\varphi_2}=\Par{4x+7y}\psi_1+\Par{5x+8y}\psi_2+\Par{6x+9y}\psi_3=0.$\TextNL{}
-\Hc Then $x+y=4x+7y=x=y=0.$ Hence $\null T\apostrophe=\zeroSubs.$\vspace{4.5pt}\TextNL{}
-\Hc\Or $\null T=\Span{e_1-2e_2+e_3}\Rightarrow V=\Span{\hspace{-2pt}-2e_2,\:e_3}\oplus\null T.$\vspace{1.5pt}\TextNL{}
-\Hc$\Rightarrow \range T=\Bra{Tx:x\in\Span{-2e_2,\:e_3}}=\Span[\BigPar]{T\Par{-2e_2},\,T\Par{e_3}}$\vspace{1.5pt}\TextNL{}
-\Hc$=\Span{-10f_1-16f_2,\:6f_1+9f_2}=\Span{f_1,\,f_2}=\Rbb^2.$ Now $\null T\apostrophe=\Par{\range T}{^0}=\zeroSubs.$\PfEnd\vspace{-2pt}
-\SepLine
 
-%\ProblemN[]{\hypertarget{3F14}{14}}{
-%	\TextNL{Define $T:\PoRi\rightarrow\PoRi$ by $\Par{Tp}\Par{x}=x^2 p\Par{x}+p\apostrophe\apostrophe\Par{x}$ for each $x\in\Rbb.$\vspace{4pt}}
-%	(a) \TextNL{Supp $\varphi\in\PoRi\apostrophe$ is defined by $\varphi\Par{p}=p\apostrophe\Par{4}$. Describe $T\apostrophe\Par{\varphi}\in\PoRi\apostrophe$.\vspace{4pt}}
-%	\Ha\TextNL{\FontNorm$\BigPar{T\apostrophe\Par{\varphi}}\Par{p}=\Sbra{x^2p\Par{x}+p\apostrophe\apostrophe\Par{x}}\apostrophe\Par{4}=\Sbra{2xp\Par{x}+x^2p\apostrophe\Par{x}+p\apostrophe\apostrophe\apostrophe\Par{x}}\Par{4}=8p\Par{4}+16p\apostrophe\Par{4}+p\apostrophe\apostrophe\apostrophe\Par{4}$.\vspace{8pt}}
-%	(b) \TextNL{Supp $\varphi\in\PoRi\apostrophe$ is defined by $\varphi\Par{p}=\int_0^1 p\Par{x}\d x$. Evaluate $\BigPar{T\apostrophe\Par{\varphi}}\Par{x^3}$.\vspace{4pt}}
-%	\Hb\TextNL{\FontNorm $\BigPar{T\apostrophe\Par{\varphi}}\Par{x^3}=\int_0^1\Par{x^5+6x}\d x=\int_0^1\XPar{\frac{1}{6}x^6+3x^2}\apostrophe\d x=\frac{19}{6}.$\PfEnd}
-%}\SepLine
-}
-
-%\def\OrbikenIV
-{
 %\Or Let $B_U=\Par{u_1,\dots,u_m},\,B_V=\Par{u_1,\dots,u_m,\dots,u_n},\,B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_m,\dots,\varphi_n}$.\par\quad
 %We show ${U^0}=\Span{\varphi_{m+1},\dots,\varphi_n}.$ So that $\dim U^0=n-m=\dim V-\dim U.$\par\quad
 %$\forall\varphi\in U^0,\exists\,a_i\in\Fbb,\varphi=\sum_{i=1}^m a_i\varphi_i+\sum_{i=m+1}^n a_i\varphi_i$ 又 $\forall i\in\Bra{1,\dots,m},\varphi\Par{u_i}=0\Rightarrow a_i=0.$\par\quad
 %Then $\varphi\in\Span{\varphi_{m+1},\dots,\varphi_n}$. Thus $\Span{\varphi_{m+1},\dots,\varphi_n}\supseteq U^0.$ 又 Each $\varphi_i\in U^0.$
 \pagebreak
 
-\ProblemN{\hypertarget{3F37}{37}}{
-	\TextNL{Supp $U$ is a subsp of $V$ and $\pi$ is the quot map. Thus $\pi\apostrophe\in\Lm[\BigPar]{\Par{V\XSlash U}\apostrophe,V\apostrophe}$.\vspace{2pt}}
-	(a) \TextNL{Show $\pi\apostrophe$ is inje\hspace{1pt}$:${\tgnr\FontNorm\;\;Becs $\pi$ is surj. Use [3.108].}\vspace{2pt}}
-	(b) \TextNL{Show $\range \pi\apostrophe=U^0$\hspace{1pt}$:${\tgnr\FontNorm\;\;By {\tgnr[3.109](b)}, $\range\pi\apostrophe=\BigPar{\null\pi}{^0}=U^0.$}\vspace{2pt}}
-	(c) \TextNL{Conclude that $\pi\apostrophe$ is iso from $\Par{V\XSlash U}\apostrophe$ onto $U^0$\hspace{1pt}$:${\tgnr\FontNorm\;\;Immed.}}
-}\Or Using (3.E.18), also see (3.E.20).\par\quad
-(a) $\pi\apostrophe\Par{\varphi}=0\Longleftrightarrow\forall v\in V\,\BigPar{\,\forall v+U\in V\,},\varphi\BigPar{\pi\Par{v}}=\varphi\Par{v+U}=0\Longleftrightarrow \varphi=0.$\par\quad
-(b) $\psi\in\range\pi\apostrophe\Longleftrightarrow\exists\,\varphi\in \Par{V\XSlash U}\apostrophe,\psi=\varphi\,\circ\,\pi\Longleftrightarrow\null\psi\supseteq U\Longleftrightarrow \psi\in U^0$. Hence $\range\pi\apostrophe=U^0$.\PfEnd
-\SepLine
-
-\ProblemB{
-	\TextB{Supp $U$ is a subsp of $V.$ Prove $\Par{V\XSlash U}\apostrophe$ is iso to $U^0.$ \hfill\Sbra[3pt]{{\large\tgsc Another proof of \tgbfx[3.106]}}}
-}\par\quad
-Define $\xi:U^0\rightarrow\Par{V\XSlash U}\apostrophe$ by $\xi\Par{\varphi}=\tilde{\varphi},$ where $\tilde{\varphi}\in\Par{V\XSlash U}\apostrophe$ is defined by $\tilde{\varphi}\Par{v+U}=\varphi\Par{v}.$\vspace{1pt}\par\quad
-We show $\xi$ is inje and surj.\par\quad
-Inje: $\xi\Par{\varphi}=0=\tilde{\varphi}\Rightarrow\forall v\in V\,\BigPar{\,\forall v+U\in V\XSlash U\,},\tilde{\varphi}\Par{v+U}=\varphi\Par{v}=0\Rightarrow\varphi=0.$\par\quad
-Surj: $\varPhi\in\Par{V\XSlash U}\apostrophe\Rightarrow\forall u\in U,\varPhi\Par{u+U}=\varPhi\Par{0+U}=0\Rightarrow U\subseteq\null\Par{\varPhi\circ\pi}\Rightarrow\xi\Par{\varPhi\circ\pi}=\varPhi.$\PfEnd\vspace{2pt}\quad
-\Or Define $\nu:\Par{V\XSlash U}\apostrophe\rightarrow U^0$ by $\nu\Par{\varPhi}=\varPhi\circ\pi.$ Now $\nu\circ\xi=I_{U^0},\;\xi\circ\nu=I_{\SmallPar[1pt]{V\XSlash U}\apostrophe}\Rightarrow\xi=\nu^{-1}.$\PfEnd\vspace{-2pt}
-\SepLine
-
-}
-
-%\def\OrbikenV
-{
-}
-
-%\def\OrbikenVI
-{
-\ProblemB{
-	\TextB{Supp $V=U\oplus W$. Define $\iota:V\rightarrow U$ by $\iota\Par{u+w}=u.$ Thus $\iota\apostrophe\in\Lm{U\apostrophe,V\apostrophe}.$\vspace{2pt}}
-	(a) \TextB{Show $\null \iota\apostrophe=U_U^0=\zeroSubs$\hspace{1pt}$:${\tgnr\FontNorm\;\;$\null\iota\apostrophe=\Par{\range\iota}{^0_U}=U_U^0=\zeroSubs.$}\vspace{2pt}}
-	(b) \TextB{Prove $\range\iota\apostrophe=W_V^0$\hspace{1pt}$:${\tgnr\FontNorm\;\;$\range\iota\apostrophe=\BigPar{\null\iota}{^0_V}=W_V^0.$}\vspace{2pt}}
-	(c) \TextB{Prove $\tilde{\iota\apostrophe}$ is iso from $U\apostrophe\XSlash{\envFontDefault\zeroSubs}$ onto $W^0$\hspace{1pt}$:${\tgnr\FontNorm\;\;By (a), (b) and [3.91](d).}}
-}(a) $\iota\apostrophe\Par{\psi}=\psi\circ\iota=0\Longleftrightarrow U\subseteq\null\psi.$\parSol{}
-(b) Note that $W=\null\Par{\iota}\subseteq\null\Par{\psi\circ\iota}.$ Then $\psi\circ\iota\in W^0\Rightarrow\range\iota\apostrophe\in W^0.$\parSol{\Hb}
-Supp $\varphi\in W^0.$ Becs $\null\iota=W\subseteq\null\varphi.$ By \Sbra{3.B \TIPSN{3}}, $\varphi=\varphi\circ\iota=\iota\apostrophe\Par{\varphi}.$\PfEnd
-\SepLine
-
 \ProblemN{\hypertarget{3F36}{36}}{
 	\TextNL{Supp $U$ is a subsp of $V$. Define $i:U\rightarrow V$  by $i\Par{u}=u$. Thus $i\apostrophe\in\Lm{V\apostrophe,U\apostrophe}.$\vspace{2pt}}
 	(a) \TextNL{Show $\null i\apostrophe=U^0$\hspace{1pt}$:${\tgnr\FontNorm\;\;$\null i\apostrophe=\Par{\range i}{^0}=U^0\Leftarrow\range i=U$.}\vspace{2pt}}
 	(b) \TextNL{Prove $\range i\apostrophe=U\apostrophe$\hspace{1pt}$:${\tgnr\FontNorm\;\;$\range i\apostrophe=\Par{\null i}{_U^0}={\zeroSubs}{_U^0}=U\apostrophe$.}\vspace{2pt}}
-	(c) \TextNL{Prove $\tilde{i\apostrophe}$ is iso from $V\apostrophe\XSlash U^0$ onto $U\apostrophe$\hspace{1pt}$:${\tgnr\FontNorm\;\;By (a), (b) and [3.91](d).}\vspace{2pt}}
-}(a) $\forall\varphi\in V\apostrophe,i\apostrophe\Par{\varphi}=\varphi\circ i=\varphi\mmid_U.$ Thus $i\apostrophe\Par{\varphi}=0\Longleftrightarrow\forall u\in U,\varphi\Par{u}=0\Longleftrightarrow\varphi\in U^0.$\parSol{}
-(b) Supp $\psi\in U\apostrophe.$ By (3.A.11), $\exists\,\varphi\in V\apostrophe,\varphi\mmid_U=\psi.$ Then $i\apostrophe\Par{\varphi}=\psi.$\PfEnd
+	(c) \TextNL{Prove $\tilde{i\apostrophe}$ is iso from $V\apostrophe\XSlash U^0$ onto $U\apostrophe$\hspace{1pt}$:${\tgnr\FontNorm\;\;Immed.}\vspace{1pt}}
+}(a) \Or $\forall\varphi\in V\apostrophe,i\apostrophe\Par{\varphi}=\varphi\circ i=\varphi\mmid_U.$ Thus $i\apostrophe\Par{\varphi}=0\Longleftrightarrow\forall u\in U,\varphi\Par{u}=0\Longleftrightarrow\varphi\in U^0.$\parSol{}
+(b) \Or Supp $\psi\in U\apostrophe.$ By (3.A.11), $\exists\,\varphi\in V\apostrophe,\varphi\mmid_U=\psi.$ Then $i\apostrophe\Par{\varphi}=\psi.$\PfEnd
 \SepLine
 
 \ProblemB{
-	\TextB{Supp $T\in\Lm{V,W}.$ Prove $\range T\apostrophe=\BigPar{\null T}{^0}.$\hfill\Sbra[3pt]{{\tgsc\large Another proof of \tgnr\tgbfx[3.109](b)}}\vspace{2pt}}
-}Supp $\varPhi\in\BigPar{\null T}{^0}.$ Becs by (3.B.12), $T\mmid_U:U\rightarrow\range T$ is iso; $V=U\oplus\null T.$\parSol{}
-And $\forall v\in V,\exists\,!\,u_v\in U,w_v\in\null T,v=u_v+w_v.$ Define $\iota\in\Lm{V,U}$ by $\iota\Par{v}=u_v.$\vspace{4pt}\parSol{}
-Let $\psi=\varPhi\circ\BigPar{T^{-1}\mmid_{\range T}}.$ Then $T\apostrophe\Par{\psi}=\psi\circ T=\varPhi\circ\BigPar{T^{-1}\mmid_{\range T}\circ T\mmid_V}.$\vspace{2pt}\parSol{}
-Where $T^{-1}\mmid_{\range T}:\range T\rightarrow U;\;\;T:V\rightarrow\range T.$ Note that $T^{-1}\mmid_{\range T}\circ T\mmid_V=\iota.$\vspace{2pt}\parSol{}
-By \Sbra{3.B \TIPSN{3}}, $\varPhi=\varPhi\circ \iota.$ Thus $T\apostrophe\Par{\psi}=\psi\circ T=\varPhi\circ{\iota}=\varPhi.$\PfEnd
+	\TextB{Supp $T\in\Lm{V,W}.$ Prove $\range T\apostrophe\supseteq\BigPar{\null T}{^0}.$\hfill\Sbra[3pt]{{\tgsc\large Another proof of \tgnr\tgbfx[3.109](b)}}\vspace{1pt}}
+}Let $V=U\oplus\null T.$ Let $R=\Par{T_U}{^{-1}}\Big|{_{\range T}}.$ Define $\iota\in\Lm{V,U}$ by $\iota\Par{u+w}=u.$\vspace{1pt}\parSol{}
+$\forall\varPhi\in\BigPar{\null T}{^0},$ let $\psi=\varPhi\circ R,$ then $T\apostrophe\Par{\psi}=\psi\circ T=\varPhi\circ\BigPar{R\circ T\mmid_V}=\varPhi\circ\iota=\varPhi\in\range T\apostrophe.$\PfEnd
 \SepLine
-}
-\pagebreak
-%\def\OrbikenVII
-{
-\ProblemB[]{
-	\hypertarget{3F4e17}{}\TextB{Supp $T\in\Lm{V,W}.$ {\large Using [3.108], [3.110].}\vspace{4pt}}
-	\TextB{Now $T$ is inv $\Longleftrightarrow{}${$\envFontDefault\large\MathLeftrightMid{c}{
-		\null T=\zeroSubs\Longleftrightarrow\BigPar{\null T}{^0}=V\apostrophe=\range T\apostrophe\\
-		\range T=W\Longleftrightarrow\Par{\range T}{^0}=\zeroSubs=\null T\apostrophe
-		}$}${}\Longleftrightarrow T\apostrophe$ is inv.\vspace{4pt}}
-}\SepLine
+
+%\ProblemB[]{
+%	\hypertarget{3F4e17}{}\TextB{Supp $T\in\Lm{V,W}.$ {\large Using [3.108], [3.110].}\vspace{4pt}}
+%	\TextB{Now $T$ is inv $\Longleftrightarrow{}${$\envFontDefault\large\MathLeftrightMid{c}{
+%		\null T=\zeroSubs\Longleftrightarrow\BigPar{\null T}{^0}=V\apostrophe=\range T\apostrophe\\
+%		\range T=W\Longleftrightarrow\Par{\range T}{^0}=\zeroSubs=\null T\apostrophe
+%		}$}${}\Longleftrightarrow T\apostrophe$ is inv.\vspace{4pt}}
+%}\SepLine
 
 \ProblemN{\hypertarget{3F15}{15}}{
 	\TextNL{Supp $T\in\Lm{V,W}$. Prove $T\apostrophe=0\Longleftrightarrow T=0.$}
@@ -2854,9 +2535,9 @@ Define $\psi\in W\apostrophe$ by $\psi\Par{u+\lambda w}=\lambda.$ So that $\psi\
 \Or \Sbra[3pt]{{\tgsl Only if $W$ is finide}} \;By [3.106], $\dim \range T=\dim W-\Dim\Par{\range T}{^0}=0.$\PfEnd
 \SepLine
 
-\ProblemN[]{\hypertarget{3F12}{12}}{
-	\TextNL{{\large\tgnr Note that $I_{V\apostrophe},I_{V}\upapostrophe:V\apostrophe\rightarrow V\apostrophe.$} \,For $\varphi\in V\apostrophe,\:I_{V\apostrophe}\Par{\varphi}=\varphi=\varphi\circ I_V=I_V\upapostrophe\Par{\varphi}.$ Thus $I_{V\apostrophe}=I_V\upapostrophe.$}
-}\SepLine
+%\ProblemN[]{\hypertarget{3F12}{12}}{
+%	\TextNL{{\large\tgnr Note that $I_{V}\upapostrophe,I_{V\apostrophe}:V\apostrophe\rightarrow V\apostrophe.$} \,For $\varphi\in V\apostrophe,\:I_{V\apostrophe}\Par{\varphi}=\varphi=\varphi\circ I_V=I_V\upapostrophe\Par{\varphi}.$ Thus $I_{V\apostrophe}=I_V\upapostrophe.$}
+%}\SepLine
 
 \ProblemN{\hypertarget{3F16}{16}}{
 	\TextNL{Supp $V,W$ are finide. Define $\Gamma$ by $\Gamma\Par{T}=T\apostrophe$ for any $T\in\Lm{V,W}$.}
@@ -2895,29 +2576,14 @@ $\forall\psi\in \null\mathcal{T},\Sbra{T\apostrophe\Par{\psi}}\Par{v}=\psi\Par{T
 $\forall k\in\Bra{1,\dots,m},\Sbra{T\apostrophe\Par{\psi_k}}\Par{v}=\psi_k\BigPar{Tv}=\psi_k\Par{a_1w_1+\dots+a_mw_m}=a_k=\varphi_k\Par{v}=\Sbra{\mathcal{T}\Par{\psi}}\Par{v}.$\PfEnd\vspace{4pt}
 \AComm This is another proof of [3.109(a)]: $\dim\range T=\dim\range T\apostrophe.$\par
 \SepLine
-}
-
-%\def\OrbikenVIII
-{
-\newcommand{\dualVn}[1]{V_{\!#1\;\,}\upapostrophe}
-\def\dualVm{V_{\!m\,}\upapostrophe}
-\ProblemN{\hypertarget{3F5}{5}}{
-	\TextN{Prove $\BigPar{V_{\!1}\times\dots\times V_{\!m}}\apostrophe$ and $\dualVn{1}\times\dots\times\dualVm$ are iso.\hfill\FontNorm\Sbra[3pt]{{\normalsize\tgnr Using notas in (3.E.2).}}}
-}Define $\chi:\Par{V_{\!1}\times\dots\times V_{\!m}}\apostrophe\rightarrow \dualVn{1}\times\dots\times \dualVm$ by $\chi\Par{T}=\Par{T\circ R_1,\dots,T\circ R_m}=\Par{R\apostrophe_1\Par{T},\dots,R\apostrophe_m\Par{T}}.$\parSol{}
-Define the $\chi^{-1}$ by $\chi^{-1}\Par{T_1,\dots,T_m}=T_1S_1+\dots+T_mS_m=S\apostrophe_1\Par{T_1}+\dots+S\apostrophe_m\Par{T_m}.$\PfEnd
-\SepLine
 
 \ProblemBnoor{\hypertarget{3F4e8}{4E 8}}{
-	\TextB{Supp $B_V=\Par{v_1,\dots,v_{n}},$ with corres $B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_{n}}.$}
-	\TextB{Describe the relation between $v$'s and $\varphi$'s using inv liney maps.}
-}Define $\Gamma:V\rightarrow\Fbb^n$ by $\Gamma\Par{v}=\Par{\varphi_1\Par{v},\dots,\varphi_{n}\Par{v}}.$\parSol{}
-Define $\Lambda:\Fbb^n\rightarrow V$  by
-$\Lambda\Par{a_1,\dots,a_n}=a_1v_1+\dots+a_nv_n.$ \;Now $\Lambda=\Gamma^{-1}.$\PfEnd
+	\TextB{Describe the relation of $B_V=\Par{v_1,\dots,v_{n}}$ and the corres $B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_{n}}$ using isos.}
+}Define $\Gamma:V\rightarrow\Fbb^n$ by $\Gamma\Par{v}=\BigPar{\varphi_1\Par{v},\dots,\varphi_{n}\Par{v}},$ and
+$\Gamma^{-1}\Par{a_1,\dots,a_n}=a_1v_1+\dots+a_nv_n.$\PfEnd
 \SepLine
-}
 \pagebreak
-%\def\OrbikenIX
-{
+
 \ProblemN{\hypertarget{3F4e24}{}\hypertarget{3F6}{6}}{
 	\TextN{Define \,$\Gamma: V\apostrophe\rightarrow\Fbb^m\,$ by $\,\Gamma\Par{\varphi}=\BigPar{\varphi\Par{v_1},\dots,\varphi\Par{v_m}},$ where $v_1,\dots,v_m\in V$.}
 	(a) \TextN{Show $\Span{v_1,\dots,v_m}=V\,\Longleftrightarrow \Gamma$ is inje.}
@@ -2967,8 +2633,56 @@ Define $\Phi:\Fbb^m\rightarrow\Par{\Fbb^m}\apostrophe$ by $\Phi=\Psi\circ\Gamma.
 (d) the surj of $\Phi$ corres to $\Par{\varphi_1,\dots,\varphi_m}$ being liney indep;\; 又 $\Phi=\Psi\circ\Gamma$ surj $\Longleftrightarrow\Gamma$ surj.\PfEnd
 \SepLine
 
-\ProblemN{\hypertarget{3F35}{35}}{
-	\TextNL{Prove $\BigPar{\PoFi}\apostrophe$ is iso to $\Fbb^{\infty}.$}
+
+\ProblemN{\hypertarget{3F9}{9}}{
+	\TextN{Let $B_V=\Par{v_1,\dots,v_n},\,B_{V\apostrophe}=\Par{\varphi_1,\cdots,\varphi_n}$. Then $\forall\psi\in V\apostrophe,\psi=\psi\Par{v_1}\varphi_1+\dots+\psi\Par{v_n}\varphi_n.$}
+	\ANote {\tgsl For other $B_V'=\Par{u_1,\dots,u_n},B_{V\apostrophe}'=\Par{\rho_1,\dots,\rho_n},\forall\psi\in V\apostrophe,\psi=\psi\Par{u_1}\rho_1+\dots+\psi\Par{u_n}\rho_n.$}\TextB{}\vspace{2pt}
+}$\psi\Par{v}=\psi\XPar{\sum_{i=1}^n a_i v_i}=\sum_{i=1}^n a_i\psi\Par{v_i}=\sum_{i=1}^n\psi\Par{v_{i}}\varphi_i\Par{v}=\Sbra{\psi\Par{v_1}\varphi_1+\dots+\psi\Par{v_n}\varphi_n}\Par{v}.$\PfEnd
+\SepLine
+
+\ProblemN[]{\hypertarget{3F13}{13}}{
+	\TextNL{Define $T:\Rbb^3\!\rightarrow\!\Rbb^2$ by $T\Par{x,y,z}=\Par{4x+5y+6z,7x+8y+9z}$.\vspace{3pt}}
+	\TextNL{Let $\Par{\varphi_1,\varphi_2},\Par{\psi_1,\psi_2,\psi_3}$ denote the dual bss of std bss of $\Rbb^2$ and $\Rbb^3$.\vspace{4pt}}
+	(a) \TextNL{Describe the liney functionals $T\apostrophe\Par{\varphi_1},T\apostrophe\Par{\varphi_2}.$}
+	\Ha\TextNL{{\FontNorm\tgnr For any $\Par{x,y,z}\in\Rbb^3$, $\BigPar{T\apostrophe\Par{\varphi_1}}\Par{x,y,z}=4x+5y+6z, \BigPar{T\apostrophe\Par{\varphi_2}}\Par{x,y,z}=7x+8y+9z$.}\vspace{6pt}}
+	(b) \TextNL{Write $T\apostrophe\Par{\varphi_1}$ and $T\apostrophe\Par{\varphi_2}$ as liney combinations of $\psi_1,\psi_2,\psi_3$.}
+	\Hb\TextNL{{\FontNorm\tgnr$T\apostrophe\Par{\varphi_1}=4\psi_1+5\psi_2+6\psi_3,\,\,T\apostrophe\Par{\varphi_2}=7\psi_1+8\psi_2+9\psi_3.$}\vspace{6pt}}
+	(c) \TextNL{What is $\null T\apostrophe$? What is $\range T\apostrophe$?}
+}\TextNL{\vspace{4pt}}
+\Hc $T\Par{x,y,z}=0\Longleftrightarrow\MathLeftBrace{l}{4x+5y+6z=0\\7x+8y+9z=0}\Longleftrightarrow\hMath{l}{\left\{}{\;\right|}{x=z,\\y=-2z.}\,\hText{$Thus $\null T=\Span{e_1-2e_2+e_3},\\$where $\Par{e_1,e_2,e_3}$ is std bss of $\Rbb^3.}$\vspace{4pt}\TextNL{}
+\Hc Let $\Par{e_1-2e_2+e_3,-2e_2,e_3}$ be a bss, with corres dual bss $\Par{\varepsilon_1,\varepsilon_2,\varepsilon_3}$.\vspace{1.5pt}\TextNL{}
+\Hc Thus $\Span{e_1-2e_2+e_3}=\null T\Rightarrow \Span{e_1-2e_2+e_3}{^0}=\Span{\varepsilon_2,\varepsilon_3}=\range T\apostrophe.$\vspace{1.5pt}\TextNL{}
+\Hc Note that $\varepsilon_k=\varepsilon_k\Par{e_1}\psi_1+\varepsilon_k\Par{e_2}\psi_2+\varepsilon_k\Par{e_3}\psi_3.$\vspace{1.5pt}\TextNL{}
+\Hc And $\MathLeftMid{l}{\varepsilon_2\Par{e_2}=-\frac{\;1\;}{2},\varepsilon_2\Par{e_1}=\varepsilon_2\Par{e_1-2e_2+e_3}+\varepsilon_2\Par{2e_2}-\varepsilon_2\Par{e_3}=1,\\[1.5pt]\varepsilon_3\Par{e_2}=0,\varepsilon_3\Par{e_3}=\varepsilon_3\Par{e_1-2e_2+e_3}+\varepsilon_3\Par{2e_2}-\varepsilon_3\Par{e_3}=-1.}$\vspace{1.5pt}\TextNL{}
+\Hc Hence $\varepsilon_2=\psi_1-\frac{\;1\;}{2}\psi_2,\;\varepsilon_3=-\psi_1+\psi_3.$ Now $\range T\apostrophe=\Span{\psi_1-\frac{\;1\;}{2}\psi_2,\:-\psi_1+\psi_3}.$\vspace{3pt}\TextNL{}
+\Hc\Or $\range T\apostrophe=\Span[\BigPar]{T\apostrophe\Par{\varphi_1},\,T\apostrophe\Par{\varphi_2}}=\Span{4\psi_1+5\psi_2+6\psi_3,\:7\psi_1+8\psi_2+9\psi_3}.$\vspace{6pt}\TextNL{}
+\Hc Supp $T\apostrophe\Par{x\varphi_1+y\varphi_2}=\Par{4x+7y}\psi_1+\Par{5x+8y}\psi_2+\Par{6x+9y}\psi_3=0.$\TextNL{}
+\Hc Then $x+y=4x+7y=x=y=0.$ Hence $\null T\apostrophe=\zeroSubs.$\vspace{3pt}\TextNL{}
+\Hc\Or $\null T=\Span{e_1-2e_2+e_3}\Rightarrow V=\Span{\hspace{-2pt}-2e_2,\:e_3}\oplus\null T.$\vspace{1pt}\TextNL{}
+\Hc$\Rightarrow \range T=\Bra{Tx:x\in\Span{-2e_2,\:e_3}}=\Span[\BigPar]{T\Par{-2e_2},\,T\Par{e_3}}$\vspace{1pt}\TextNL{}
+\Hc$=\Span{-10f_1-16f_2,\:6f_1+9f_2}=\Span{f_1,\,f_2}=\Rbb^2.$ Now $\null T\apostrophe=\Par{\range T}{^0}=\zeroSubs.$\vspace{4pt}\TextNL{}
+\Hc\Or For any $A,B\in\Rbb,$ asum $\Par{x,y,z}$ is suth $A=4x+5y+6z,\,B=7x+8y+9z.$\TextNL{}
+\Hc By computing $x=z+4\big/3\Par{b-a},\;y=-2z+\Par{7a-4b}\XSlash 3,\;z=z.$ \;\; {\tgsl\FontSmall An exa for (4E 3.E.8).}\TextNL{}
+\Hc Hence $\Par{x,y,z}$ exis $\Rightarrow\Par{A,B}\in\range T.$ \,Now $T$ surj $\Rightarrow T\apostrophe$ inje.\PfEnd
+\SepLine
+
+%\ProblemN[]{\hypertarget{3F14}{14}}{
+	%	\TextNL{Define $T:\PoRi\rightarrow\PoRi$ by $\Par{Tp}\Par{x}=x^2 p\Par{x}+p\apostrophe\apostrophe\Par{x}$ for each $x\in\Rbb.$\vspace{4pt}}
+	%	(a) \TextNL{Supp $\varphi\in\PoRi\apostrophe$ is defined by $\varphi\Par{p}=p\apostrophe\Par{4}$. Describe $T\apostrophe\Par{\varphi}\in\PoRi\apostrophe$.\vspace{4pt}}
+	%	\Ha\TextNL{\FontNorm$\BigPar{T\apostrophe\Par{\varphi}}\Par{p}=\Sbra{x^2p\Par{x}+p\apostrophe\apostrophe\Par{x}}\apostrophe\Par{4}=\Sbra{2xp\Par{x}+x^2p\apostrophe\Par{x}+p\apostrophe\apostrophe\apostrophe\Par{x}}\Par{4}=8p\Par{4}+16p\apostrophe\Par{4}+p\apostrophe\apostrophe\apostrophe\Par{4}$.\vspace{8pt}}
+	%	(b) \TextNL{Supp $\varphi\in\PoRi\apostrophe$ is defined by $\varphi\Par{p}=\int_0^1 p\Par{x}\d x$. Evaluate $\BigPar{T\apostrophe\Par{\varphi}}\Par{x^3}$.\vspace{4pt}}
+	%	\Hb\TextNL{\FontNorm $\BigPar{T\apostrophe\Par{\varphi}}\Par{x^3}=\int_0^1\Par{x^5+6x}\d x=\int_0^1\XPar{\frac{1}{6}x^6+3x^2}\apostrophe\d x=\frac{19}{6}.$\PfEnd}
+	%}\SepLine
+
+\ChEnd
+
+
+\vfill\ChDecl{}{\Largebfx{Exes about Number Theory and Sequences in Chapter 3}}
+
+\vspace{4pt}
+
+\ProblemB{
+	\hypertarget{3F35}{}\TextB{Prove $\BigPar{\PoFi}\apostrophe$ is iso to $\Fbb^{\infty}.$}
 }Define $\theta\in\Lm[\Sbra]{\BigPar{\PoFi}\apostrophe,\Fbb^{\infty}}$ by $\theta\Par{\varphi}=\BigPar{\varphi\Par{1},\varphi\Par{z},\cdots,\varphi\Par{z^m},\cdots}.$\parSol{}
 \NOTICE that $\forall p\in\PoRi,\exists\,!\,c_i\in\Fbb,m=\deg p,\;p\Par{z}=c_0+c_1z+\dots+c_{m}z^{m}\in\PoF{m}.$\vspace{1pt}\parSol{}
 Inje: $\theta\Par{\varphi}=0\Rightarrow\forall p\in\PoFi{},\varphi\Par{p}=c_0\varphi\Par{1}+c_1\varphi\Par{z}+\dots+c_m\varphi\Par{z^m}=0.$\vspace{1pt}\parSol{}
@@ -2977,51 +2691,273 @@ Surj: Define $\psi_x\Par{p}=x_0c_0+\dots+x_mc_m$ for any $x=\Par{x_0,x_1,\cdots}
 \Blind{Surj:} $\psi_x\Par{p+q}=x_0\Par{a_0+b_0}+x_n\Par{a_n+b_n}+x_{n+1}a_{n+1}+\dots+x_ma_m=\psi_x\Par{p}+\psi_x\Par{q}.$\PfEnd\vspace{4pt}
 \AComm $\PoFi$ is not iso to $\Fbb^\infty,$ so is $\PoFi$ to $\BigPar{\PoFi}\apostrophe.$ But $\PoFi$ is iso to $\Fbb^\Nbb,$ {\tgsl which the '$U$' in (3.E.14).}
 \SepLine
-}
 
-%\def\OrbikenX
-{
-\ProblemN{\hypertarget{3F7}{7}}{
-	\TextN{Show the dual bss of $\Par{1, x,\dots,x^m}$ of $\PoR{m}$ is $\Par{\varphi_0,\varphi_1,\dots,\varphi_m}$, where {\FontNorm $\varphi_k\Par{p}=\Frac{p^{\SmallPar{k}}\Par{0}}{k!}$.}\vspace{-2pt}}
-	\TextN{{\FontNorm Here $p{^{\SmallPar{k}}}$ denotes the $k^{th}$ deri of $p$, with the understanding that the $0^{th}$ deri of $p$ is $p$.}\vspace{-2pt}}
+\pagebreak
+
+\ProblemB{
+	\hypertarget{3E14}{}\TextB{Supp $U=\Bra{\Par{x_1,x_2,\cdots}\in\Fbb^{\infty}:x_k\neq 0\text{\;for\;only\;finily\;many}\;k}.$\quad\FontSmall Denote it by $\Fbb^\Nbb.$\vspace{2pt}}
+	(a) \TextB{Show $U$ is a subsp of $\Fbb^{\infty}$. {\FontNorm\Sbra{Do it in your mind}} \;\; {\tgnr\large(b)} Prove $\Fbb^{\infty}\XSlash[-3pt]U$ is infinide.}
+}{\tgsl\FontSmall For ease of nota, denote the $p^\text{th}$ term of $u=\Par{x_1,\cdots,x_p,\cdots}\in\Fbb^{\infty}$ by $u\Sbra{p}$.}\vspace{0pt}\par\quad
+For each $r\in\Nbp,$ let $\;e_r\Sbra{k}={}${\FontSmall$\hMath[0pt]{l}{\left\{\hspace{-2pt}}{\right|}{1\,,\;\Par{k-1}\equiv 0\,\BigPar{\text{mod}\,r}\\0\,,\;\text{othws}}$} \;simply \,$e_r=\BigPar{1,\underbrace{0,\cdots,0}_{\SmallPar{r-1}},1,\underbrace{0,\cdots,0}_{\SmallPar{r-1}},1,\cdots}.$\vspace{0pt}\par\quad
+For $m\in\Nbp.$ Let $a_1\Par{e_1+U}+\dots+a_m\Par{e_m+U}=0+U\Rightarrow\exists\,u\in U,a_1 e_1+\dots+a_m e_m=u$.\vspace{0pt}\par\quad
+Supp $u=\Par{x_1,\cdots,x_L,{0,\cdots}},$ where $L$ is the largest suth $u\Sbra{L}\neq 0.$\vspace{1pt}\par\quad
+Let $s\in\Nbp$ be suth $h=s\cdot m!+1> L,$ \,and \,$e_1\Sbra{h}=\cdots=e_m\Sbra{h}=1.$\vspace{1pt}\par\quad
+\NOTICE that for any $p,r\in\Bra{1,\dots,m},$ \;$e_r\Sbra{s\cdot m!+1+p}=e_r\Sbra{p+1}=1\Longleftrightarrow p\equiv 0\,\Par{\,\text{mod}\,r\,}\Longleftrightarrow r\,\Big|\,p.$\par\vspace{1pt}\quad
+Let \,$1=p_1\leqslant\cdots\leqslant p_{\tau\TinyPar{p}}=p$\, be the disti factors of $p.$ Moreover, $r\,\Big|\,p\Longleftrightarrow r=p_k$ for some $k.$\par\vspace{1pt}\quad
+Now $u\Sbra{h+p}=0=\sum_{r=1}^m a_r e_r\Sbra{p+1}=\sum_{k=1}^{\tau\TinyPar{p}}a_{p_k}.$\par\vspace{1pt}\quad
+Let $q=p_{\tau\TinyPar{p}-1}$. Then $\tau\Par{q}=\tau\Par{p}-1,$ and each $q_k=p_k.$ Again, $\sum_{r=1}^m a_r e_r\Sbra{h+q}=0=\sum_{k=1}^{\tau\TinyPar{p}-1}a_{p_k}.$\par\vspace{1pt}\quad
+Thus $a_{p_{\tau\TinyPar{p}}}=a_p=0$ for all $p\in\Bra{1,\dots,m}\Rightarrow\Par{e_1,\dots,e_m}$ is liney indep in $\Fbb^{\infty}.$\PfEnd\vspace{12pt}\quad
+%\vspace{1pt}\par\quad So is $\Par{e_1+U,\dots,e_m+U}$ in $\Fbb^{\infty}\XSlash[-2.5pt]U.$ Becs $m$ is arb. By (2.A.14).
+\Or For each $r\in\Nbp,$ let $\;e_r\Sbra{p}={}${\FontSmall$\hMath[0pt]{l}{\left\{\hspace{-2pt}}{\right|}{1\,,\text{if }2^r\,\Big|\,p\\0\,,\text{othws}}$}$\hText{$
+	Simlr, let $m\in\Nbp$ and $a_1\Par{e_1+U}+\dots+a_m\Par{e_m+U}=0\\$
+	$\Rightarrow a_1e_1+\dots+a_me_m=u\in U.$
+	$}$\vspace{3pt}\par\quad
+Supp $L$ is the largest suth $u\Sbra{L}\neq 0.$ And $l$ is suth $2^{ml}> L.$ \;Then for each $k\in\Bra{1,\dots,m},$\vspace{2pt}\par\quad
+$u\Sbra{2^{ml}+2^k}=0=\sum_{r=1}^m a_re_r\Sbra{2^k}=a_1+\dots+a_k.$ \,Thus each $a_k=0.$ Simlr.\PfEnd
+\SepLine
+\ChEnd
+
+\vfill\ChDecl{}{\Largebfx{Exes about Polys in Chapter 3}}
+
+\vspace{4pt}
+
+\ProblemN{\hypertarget{1C9}{1}}{
+	\TextN{A function $f:\Rbb\rightarrow\Rbb$ is called periodic if $\exists\,p\in\Nbp,\;f\Par{x}=f\Par{x+p}$ for all $x\in\Rbb.$}
+	\TextN{Is the set of periodic functions $\Rbb\rightarrow\Rbb$ a subsp of $\Rbb^\Rbb$ ? Explain.}
+}Denote the set by $S$.\par\quad
+Supp $h\Par{x}=\cos x+\sin\!\sqrt{2}x\in S$, since $\cos x,\sin\!\sqrt{2}x\in S$.\par\quad
+Asum $\exists\,p\in\Nbp$ suth $h\Par{x}=h\Par{x+p},\forall x\in\Rbb.$ Let $x=0\Rightarrow h\Par{0}=h\Par{\pm p}=1$.\par\quad
+Thus $1=\cos p+\sin\!\sqrt{2}p=\cos p-\sin\!\sqrt{2}p$\par\quad
+$\Rightarrow\sin\!\sqrt{2}p=0,\,\,\cos p=1\Rightarrow p=2k\pi,k\in\Zbb$, while $p=\Frac{m\pi}{\sqrt{2}},m\in\Zbb$.\par\vspace{-2pt}\quad
+Hence $2k=\Frac{m}{\sqrt{2}}\Rightarrow \sqrt{2}=\Frac{m}{2k}\in\Qbb$. Ctradic!\PfEnd\vspace{10pt}\par\quad
+\Or Becs $\cos x+\sin\!\sqrt{2}x=\cos\!\Par{x+p}+\sin\!\envFontLarge\BigPar{\!\sqrt{2}x+\sqrt{2}p}.$ By diff twice,\par\vspace{2pt}\quad
+\Blind{\Or Becs} $\cos x+2\sin\!\sqrt{2}x=\cos\!\Par{x+p}+2\envFontLarge\sin\!\BigPar{\!\sqrt{2}x+\sqrt{2}p}.$\par\vspace{6pt}\quad
+\!\!\!$\MathRightBrace{r}{
+	\sin\!\sqrt{2}x=\sin\!{\envFontLarge\BigPar{\!\sqrt{2}x+\sqrt{2}p}}\vspace{2pt}\\ 
+	\cos x=\cos\!\Par{x+p}}\Rightarrow$ Let $x=0,$\;\,$ p=\Frac{m\pi}{\sqrt{2}}=2k\pi.$\; Ctradic.\PfEnd\vspace{4pt}\par
+\SepLine
+
+\ProblemN{\hypertarget{1C24}{2}}{
+	\TextN{Let $V_{\!E}=\Bra{\,f\in\Rbb^{\Rbb}:\text{f is even}},V_{\!O}=\Bra{\,f\in\Rbb^{\Rbb}:\text{f is odd}}.$ Show $V_{\!E}\oplus V_{\!O}=\Rbb^{\Rbb}.$\vspace{4pt}}
+}(a) {$V_{\!E}\cap V_{\!O}=\Bra{\,f\in\Rbb^{\Rbb}:f\Par{x}=f\Par{-x}=-f\Par{-x}}=\zeroSubs.$}\parSol{\vspace{8pt}}
+(b) $\hMath{l}{\left|}{\right\}}{$
+	Let \;$f_e\Par{x}=\Frac{\;1\;}{2}\XSbra{g\Par{x}+g\Par{-x}}\Longrightarrow f_e\in V_{\!E}\vspace{4pt}\\$
+	Let \;$f_o\Par{x}=\Frac{\;1\;}{2}\XSbra{g\Par{x}-g\Par{-x}}\Longrightarrow f_o\in V_{\!O}
+}\Rightarrow\forall g\in\Rbb^\Rbb,\;g\Par{x}=f_e\Par{x}+f_o\Par{x}.$\PfEnd\vspace{4pt}
+\SepLine
+
+\pagebreak
+
+\ProblemN{\hypertarget{2A16}{3}}{
+	\TextN{Prove the vecsp of all continuous functions in $\Rbb^{[0,1]}$ is infinide.}
+}Denote the vecsp by $U$.\par\quad
+Choose one $m\in\Nbp.$ Supp $a_0,\dots,a_m\in\Rbb$ are suth $p\Par{x}=a_0+a_1 x+\dots+a_m x^m=0,\,\forall x\in\Sbra{0,1}.$\par\quad
+Then $p$ has infily many roots and hence each $a_k=0,$ othws $\deg p\geqslant 0,$ ctradic [4.12].\par\quad
+Thus $\Par{1,x,\dots,x^m}$ is liney indep in $\Rbb^{[0,1]}.$ Simlr to [2.16], $U$ is infinide.\PfEnd\vspace{8pt}\quad
+\Or Note that\; $\Frac{\;1\;}{1}>\Frac{\;1\;}{2}>\dots>\Frac{\;1\;}{m},\,\,\,\forall m\in\Nbp.$ Supp\; $f_m=\MathLeftBrace{l}{
+	\!x-{}${\Large$\frac{\;1\;}{m}$}$,\;\;x\in\Interval{(}{]}{${\Large$\frac{\;1\;}{m}$}$,\,1\,}\\
+	\!0,\hfill x\in\Sbra{\,0,\,${\Large$\frac{\;1\;}{m}$}$\,}
+}$\vspace{2pt}\par\quad
+Then\; $f_1\XPar{${\Large$\frac{\;1\;}{m}$}$}=\dots=f_m\XPar{${\Large$\frac{\;1\;}{m}$}$}=0\neq f_{m+1}\XPar{${\Large$\frac{\;1\;}{m}$}$}.$ 
+\;Hence $f_{m+1}\not\in\Span{f_1,\dots,f_m}.$ By (2.A.14).\PfEnd
+\SepLine
+
+\ProblemN{\hypertarget{2A17}{4}}{
+	\TextN{Supp $p_0,p_1,\dots,p_m\in\PoF{m}$ suth $p_k\Par{2}=0$ for each $k\in\Bra{0,\dots,m}$.}
+	\TextN{Prove $\Par{p_0,p_1,\dots,p_m}$ is not liney indep in $\PoF{m}$.}
+}\par\quad
+Supp $\Par{p_0,p_1,\dots,p_m}$ is liney indep. Define $p\in\PoF{m}$ by $p\Par{z}=z.$\par\quad
+\NOTICE that $\forall a_i\in\Fbb,z\neq a_0 p_0\Par{z}+\dots+a_m p_m\Par{z},$ for if not, let $z=2.$ Thus $z\not\in\Span{p_0,p_1,\dots,p_m}$.\par\quad
+Then $\Span{p_0,p_1,\dots,p_m}\subsetneq\PoF{m}$ while the list $\Par{p_0,p_1,\dots,p_m}$ has len $\Par{m+1}$.\par\quad
+Hence $\Par{p_0,p_1,\dots,p_m}$ is linely dep. For if not, then becs $\Par{1,z,\dots,z^m}$ of len $\Par{m+1}$ spans $\PoF{m},$\par\quad
+by the steps in [2.23] trivially, $\Par{p_0,p_1,\dots,p_m}$ of len $\Par{m+1}$ spans $\PoF{m}.$ Ctradic.\PfEnd\vspace{6pt}\par\quad
+\Or Note that $\PoF{m}=\Span{\underbrace{\;1,\;z,\;\dots,\;z^m\;}_{\text{of len }\SmallPar{m+1}}}.$ Then $\Par{p_0,p_1,\dots,p_m,z}$ of len $\Par{m+2}$ is liney dep.\vspace{2pt}\par\quad
+As shown above,  $z\not\in\Span{p_0,p_1,\dots,p_m}.$ And hence by [2.21](a), $\Par{p_0,p_1,\dots,p_m}$ is liney dep.\PfEnd
+\SepLine
+
+\ProblemN{\hypertarget{2C7}{5}}{
+	(a) \TextN{Let $U=\Bra{p\in\PoF{4}:p\Par{2}=p\Par{5}=p\Par{6}}$. Find a bss of $U$.}
+	(b) \TextN{Extend the bss in {\tgnr(a)} to a bss of $\PoF{4}$, and find a $W$ suth $\PoF{4}=U\oplus W$.}
+}Using (2.C.10).
+%Supp $p\Par{z}=az^4+bz^3+cz^2+dz+e$ suth $p\Par{2}=p\Par{5}=p\Par{6}$.\vspace{4pt}\par\quad
+%Then $\hMath[0pt]{r}{\left|}{\right\}}{
+	%	p\Par{2}=16a+8b+4c+2d+e\,\;\;\Par{\text{I}}\;\;\\
+	%	p\Par{5}=625a+125b+25c+5d+e\;\;\Par{\text{II}}\,\;\\
+	%	p\Par{6}=1296a+216b+36c+6d+e\;\,\Par{\text{III}}
+	%}\Rightarrow\MathLeftBrace{l}{
+	%	\Par{\text{II}}\;-\;\Par{\text{I}}=0\\
+	%	\Par{\text{III}}-\Par{\text{II}}=0\\
+	%	\Par{\text{III}}-\;\Par{\text{I}}=0\\
+	%}$\vspace{4pt}\par\quad
+%{\tgsl You don't have to compute to know that the dimension of the set of solutions is 3.}
+\par\quad
+\NOTICE that $\not\exists\,p\in\PoFi$ of deg $1$ and $2,$ while $p\in U.$ Thus $\dim U\leqslant \dim\PoF{4}-2=3.$\par\vspace{2pt}\quad
+(a) Consider $B=\envFontLarge\BigPar{\envFontDefault1,\Par{z-2}\Par{z-5}\Par{z-6},z\Par{z-2}\Par{z-5}\Par{z-6}\envFontLarge}.$\par\quad\Ha
+Let $a_0+a_3\Par{z-2}\Par{z-5}\Par{z-6}+a_4z\Par{z-2}\Par{z-5}\Par{z-6}=0\Rightarrow a_0=a_3=a_4=0.$\par\quad\Ha
+Thus the list $B$ is liney indep in $U.$ Now $\dim U\geqslant 3\Rightarrow \dim U=3.$ Thus $B_U=B.$\par\vspace{2pt}\quad
+(b) Extend to a bss of $\PoF{4}$ as $\envFontLarge\BigPar{\envFontDefault 1,z,z^2,\Par{z-2}\Par{z-5}\Par{z-6},z\Par{z-2}\Par{z-5}\Par{z-6}\envFontLarge}.$\par\quad\Hb
+Let $W=\Span{z,z^2}=\Bra{az+bz^2:a,b\in\Fbb}$, so that $\PoF{4}=U\oplus W.$\PfEnd
+\SepLine
+
+\BulletPointX\NoteForSmall{Exe (6)} \,\,\,For each nonconst $p\in\Span{1,z,\dots,z^m},\;\exists$ smallest $m\in\Nbp,$ which is $\deg p.$\TextB{}
+(a) If $p_0,p_1,\dots,p_m$ are suth all $a_{k,k}\neq 0,$ and\TextB{}
+\Hb $p_0=a_{0,0},\,$ each $p_k=a_{0,k}+a_{1,k}z+\dots+a_{k,k}z^k.$\TextB{\vspace{-18pt}}
+\Ha Then the upper-trig $\Mt[\envFontLarge\BigPar]{\envFontDefault I,\Par{p_0,p_1,\dots,p_m},\Par{1,z,\dots,z^m}\envFontLarge}={}${\small$\begin{pmatrix}
+		a_{0,0} & a_{0,1} & \cdots & a_{0,m}\\
+		0       & a_{1,1} & \cdots & a_{1,m}\\
+		\vdots  & \vdots  & \ddots & \vdots\\
+		0       & 0       & \cdots & a_{m,m}
+	\end{pmatrix}$}.\TextB{\vspace{-8pt}}
+(b) If $p_0,p_1,\dots,p_m$ are suth all $a_{k,k}\neq 0,$ and\TextB{}
+\Hb $p_0=a_{0,0}+\dots+a_{m,0}x^m,\,$ each $p_k=a_{k,k}x^k+\dots+a_{m,k}x^m.$\TextB{\vspace{-18pt}}
+\Hb Then the lower-trig \;$\Mt[\envFontLarge\BigPar]{\envFontDefault I,\Par{p_0,p_1,\dots,p_m},\Par{1,z,\dots,z^m}\envFontLarge}={}${\small$\begin{pmatrix}
+		a_{0,0} & 0       & \cdots & 0\\
+		a_{1,0} & a_{1,1} & \cdots & 0\\
+		\vdots  & \vdots  & \ddots & \vdots\\
+		a_{m,0} & a_{m,1} & \cdots & a_{m,m}
+	\end{pmatrix}$}.\TextB{\vspace{-12pt}}
+\AComm Define $\xi_k\Par{p}$ by the coeff of $z^k$ in $p\in\PoF{m}.$\parCom\IndentB{}
+Then $\Mt[\envFontLarge\BigPar]{\envFontDefault\xi_k,\Par{1,z,\dots,z^m},\Par{1}\envFontLarge}=\mathcal{E}^{\SmallPar[1pt]{1,k}}\in\Fbb^{1,m+1}.$\vspace{-2pt}
+\SepLine\pagebreak
+
+\ProblemN{\hypertarget{2C10}{6}}{
+	\TextN{Supp $m\in\Nbp,\;p_0,p_1,\dots,p_m\in\PoFi$ are suth each $\deg p_k=k.$}
+	\TextN{Prove $\Par{p_0,p_1,\dots,p_m}$ is a bss of $\PoF{m}$.}
+}{Using induc on $m$.}\par\quad
+(i) {$k=1.$ \;$\deg p_0=0;\;\deg p_1=1\Rightarrow\Span[\BigPar]{p_0,p_1}=\Span[\BigPar]{1,x}.$}\par\vspace{2pt}\quad\Endi
+(ii) {$1\leqslant k\leqslant m-1.$ \;Asum $\Span[\BigPar]{p_0,p_1,\dots,p_k}=\Span[\BigPar]{1,x,\dots,x^k}.$}\par\quad\Hii
+{Then $\Span[\BigPar]{p_0,p_1,\dots,p_k,p_{k+1}}\subseteq\Span[\BigPar]{1,x,\dots,x^k,x^{k+1}}$.}\par\vspace{2pt}\quad\Hii
+{又 $\deg p_{k+1}=k+1,\;\;p_{k+1}\Par{x}=a_{k+1}x^{k+1}+r_{k+1}\Par{x};\;\;a_{k+1}\neq 0,\;\;\deg r_{k+1}\leqslant k.$}
+\par\vspace{2pt}\quad\Hii
+{$\Rightarrow x^{k+1}=\Frac{1}{a_{k+1}}\XPar{p_{k+1}\Par{x}-r_{k+1}\Par{x}}\in\Span[\BigPar]{1,x,\dots,x^k,p_{k+1}}=\Span[\BigPar]{p_0,p_1,\dots,p_k,p_{k+1}}$.}\par\vspace{2pt}\quad\Hii
+{$\therefore\,\,x^{k+1}\in\Span[\BigPar]{p_0,p_1,\dots,p_k,p_{k+1}}\Rightarrow\Span[\BigPar]{1,x,\dots,x^k,x^{k+1}}\subseteq\Span[\BigPar]{p_0,p_1,\dots,p_k,p_{k+1}}$.}\par\vspace{2pt}\quad
+{Thus $\PoF{m}=\Span[\BigPar]{1,x,\dots,x^m}=\Span[\BigPar]{p_0,p_1,\dots,p_m}.$}\FontNorm\PfEnd\vspace{8pt}\quad
+\Or By comparing coeffs. {Denote the coeff of $x^k$ in $p\in\PoFi$ by $\xi_k\Par{p}.$}\par\quad
+{Supp $L=a_m p_m\Par{x}+\dots+a_1 p_1\Par{x}+a_0p_0\Par{x}=0\cdot x^m+\dots+0\cdot x+0\cdot 1=R,\forall x\in\Fbb.$}\par\quad
+{We show $a_m=\dots=a_0=0$ via the following process. So that $\Par{p_0,p_1,\dots,p_m}$ is liney indep.}\vspace{2pt}\par\quad
+{\tgbfx Step 1.} {For $k=m,$ \;$\xi_{m}\Par{L}=a_{m}\xi_{m}\Par{p_m}=\xi_{m}\Par{R}=0$ 又 $\deg p_m=m,\;\xi_{m}\Par{p_m}\neq 0\Rightarrow a_m=0.$}\par\quad
+\Blind{{\tgbfx Step 1.}} {Now $L=a_{m-1}p_{m-1}\Par{x}+\dots+a_0p_0\Par{x}.$}\vspace{2pt}\par\quad
+{\tgbfx Step k.} {For $0\leqslant k\leqslant m,$ we have $a_m=\dots=a_{k+1}=0.$}\par\quad
+\Blind{{\tgbfx Step k.}} {Now $\xi_{k}\Par{L}=a_{k}\xi_{k}\Par{p_k}=\xi_{k}\Par{R}=0$ 又 $\deg p_k=k,\;\xi_{k}\Par{p_k}\neq 0\Rightarrow a_k=0.$}\par\quad
+\Blind{{\tgbfx Step k.}} {Now if $k=0,$ then done. Othws, we have $L=a_{k-1}p_{k-1}\Par{x}+\dots+a_0p_0\Par{x}.$}\PfEnd
+\SepLine
+
+\ProblemBnoor{\Tips}[]{
+	\TextB{Supp $m\in\Nbp,\;p_0,p_1,\dots,p_m\in\PoF{m}$ are suth the lowest term of each $p_k$ is of deg $k.$}
+	\Blind{\Tips} \TextB{Prove $\Par{p_0,p_1,\dots,p_m}$ is a bss of $\PoF{m}.$}
+}{Using induc on $m.$\par}\quad
+{Let each $p_k$ be defined by $p_k\Par{x}=a_{k,k} x^k+\dots+a_{m,k} x^m,$ where $a_{k,k}\neq 0.$\par}\quad
+(i) {$k=1.$ \;$p_m\Par{x}=a_{m,m}x^m;\;p_{m-1}\Par{x}=a_{m-1,m-1}x^{m-1}+a_{m,m-1}x^m\Longrightarrow\Span[\BigPar]{x^m,x^{m-1}}=\Span[\BigPar]{p_m,p_{m-1}}.$\par}\vspace{2pt}\quad\Endi
+(ii) {$1\leqslant k\leqslant m-1.$ \;Asum $\Span[\BigPar]{x^m,\dots,x^{m-k}}=\Span[\BigPar]{p_m,\dots,p_{m-k}}.$}\par\quad\Hii
+{Then $\Span[\BigPar]{p_m,\dots,p_{m-\SmallPar{k+1}}}\subseteq\Span[\BigPar]{x^m,\dots,x^{m-\SmallPar{k+1}}}.$\par}\quad\Hii
+{又 $p_{m-\SmallPar{k+1}}$ has the form $a_{m-\SmallPar{k+1},m-\SmallPar{k+1}}x^{m-\SmallPar{k+1}}+r_{m-\SmallPar{k+1}}\Par{x};\;$\par}\quad\Hii
+{\Blind{又} where the lowest term of $r_{m-\SmallPar{k+1}}\in\PoF{m}$ is of deg $\Par{m-k}.$\par}\vspace{24pt}\quad\Hii
+{\Blind{$\Rightarrow x^{m-\SmallPar{k+1}}=\Frac{}{a_{m-\SmallPar{k+1},m-\SmallPar{k+1}}}\XPar{p_{m-\SmallPar{k+1}}\Par{x}-r_{m-\SmallPar{k+1}}\Par{x}}$}${}=\Span[\BigPar]{p_m,\dots,p_{m-k},p_{m-\SmallPar{k+1}}}.$\par}\vspace{-50pt}\quad\Hii
+{$\Rightarrow x^{m-\SmallPar{k+1}}=\Frac{1}{a_{m-\SmallPar{k+1},m-\SmallPar{k+1}}}\XPar{p_{m-\SmallPar{k+1}}\Par{x}-r_{m-\SmallPar{k+1}}\Par{x}}\in\Span[\BigPar]{x^m,\dots,x^{m-k},p_{m-\SmallPar{k+1}}}$\par}\vspace{4pt}\quad\Hii
+{$\therefore\;x^{m-\SmallPar{k+1}}\in\Span[\BigPar]{p_m,\dots,p_{m-k},p_{m-\SmallPar{k+1}}}$\par}\vspace{3pt}\quad\Hii
+{\Blind{$\therefore\;$}$\Rightarrow\Span[\BigPar]{x^m,\dots,x^{m-k},x^{m-\SmallPar{k+1}}}\subseteq\Span[\BigPar]{p_m,\dots,p_{m-k},p_{m-\SmallPar{k+1}}}.$\par}\vspace{3pt}\quad
+{Thus $\PoF{m}=\Span[\BigPar]{x^m,\dots,x,1}=\Span[\BigPar]{p_m,\dots,p_1,p_0}.$}\PfEnd\vspace{8pt}\quad
+\Or By comparing coeffs. {Denote the coeff of $x^k$ in $p\in\PoFi$ by $\xi_k\Par{p}.$}\par\quad
+{Supp $L=a_m p_m\Par{x}+\dots+a_1 p_1\Par{x}+a_0p_0\Par{x}=0\cdot x^m+\dots+0\cdot x+0\cdot 1=R,\forall x\in\Fbb.$}\par\quad
+{We show $a_m=\dots=a_0=0$ via the following process. So that $\Par{p_0,p_1,\dots,p_m}$ is liney indep.}\vspace{2pt}\par\quad
+{\tgbfx Step 1.} {For $k=0,$ \;$\xi_{0}\Par{L}=a_{0}\xi_{0}\Par{p_0}=\xi_{0}\Par{R}=0$ 又 $\deg p_0=0,\;\xi_{0}\Par{p_0}\neq 0\Rightarrow a_0=0.$}\par\quad
+\Blind{{\tgbfx Step 1.}} {Now $L=a_1p_1\Par{x}+\dots+a_{m}p_{m}\Par{x}.$}\vspace{2pt}\par\quad
+{\tgbfx Step k.} {For $0\leqslant k\leqslant m,$ we have $a_{k-1}=\dots=a_0=0.$}\par\quad
+\Blind{{\tgbfx Step k.}} {Now $\xi_{k}\Par{L}=a_{k}\xi_{k}\Par{p_k}=\xi_{k}\Par{R}=0$ 又 $\deg p_k=k,\;\xi_{k}\Par{p_k}\neq 0\Rightarrow a_k=0.$}\par\quad
+\Blind{{\tgbfx Step k.}} {Now if $k=m,$ then done. Othws, we have $L=a_{k+1}p_{k+1}\Par{x}+\dots+a_mp_m\Par{x}.$}\PfEnd
+\SepLine
+
+\BulletPointX\NoteForSmall{[2.11]} {\tgsc Good definition for a general term always aviods undefined behaviours.}\TextB{}
+If $\deg p=0,$ then $p\Par{z}=a_0\neq 0,$ but \uline{not literally $a_0z^0,$} by which if $p$ is defined, then it comes to $0^0.$\TextB{}
+To make it clear, we \uline{specify that {\tgsl in} $\PoFi,$ $a_0z^0=a_0,$ where $z^0$ appears just for nota conveni.}\TextB{}
+Becs by def, the term $a_0z^0$ in a poly only represents the const term of the poly, which is $a_0.$\TextB{}
+For conveni, we asum $z^0=1$ in formula deduction and poly def. Absolutely without $0^0.$
+\SepLine
+
+\ProblemN{\hypertarget{2C4e10}{7}}{
+	\TextN{Supp $m$ is a positive integer. For $0\leqslant k\leqslant m$, let $p_k\Par{x}=x^k\Par{1-x}{^{m-k}}$.}
+	\TextN{Show $\Par{p_0,\dots,p_m}$ is a bss of $\PoF{m}$.\vspace{0pt}}
+	%\TextN{{\large The bss in this exe leads to what are called Bernstein polys. You can do a web search to learn how}}
+	%\TextN{{\large Bernstein polys are used to approximate continuous functions on $[0, 1]$.}}
+}{\tgsl We may see $p_0=1$ and $p_m\Par{x}=x^m,$ from the expansion below, by the {\NOTEFOR} [2.11] above.}\vspace{4pt}\par\quad
+Note that each $p_k\Par{x}={\sum_{j=0}^{m-k}\mathC_{m-k}^j\Par{-1}{^{j}}\cdot x^{j+k}\cdot 1^j}=\underset{\text{of deg k}}{\uline{\Par{-1}{^0}\cdot x^k\cdot 1^0}}+\underset{\text{of deg m; denote it by }q_k\SmallPar{x}}{\uline{\sum_{j=1}^{m-k}\mathC_{m-k}^j\Par{-1}{^{j}}\cdot x^{j+k}\cdot 1^j}}.$\vspace{-12pt}\par\quad
+And, each $q_k\in\Span{x^{k+1},\dots,x^m}.$ Using {\TIPS} above.\PfEnd\vspace{6pt}\quad
+\Or Simlr to the {\TIPS} above. We will recurly prove each $x^{m-k}\in\Span{p_m,\dots,p_{m-k}}.$\par\quad
+(i) $k=1.$ \;$p_m\Par{x}=x^m\in\Span{p_m};$ \;\; $p_{m-1}\Par{x}=x^{m-1}-x^m\Rightarrow x^{m-1}\in\Span{p_{m-1},p_m}.$\vspace{2pt}\par\quad\Endi
+(ii) $k\in\Bra{1,\dots,m-1}.$ \;Supp for each $k\in\Bra{0,\dots,k},$ we have $x^{m-k}\in\Span[\BigPar]{p_{m-k},\dots,p_m},\exists\,!\,a_m\in\Fbb.$\vspace{2pt}\par\quad\Hii
+Note that $x^{m-\SmallPar{k+1}}=p_{m-\SmallPar{k+1}}\Par{x}+\sum_{j=1}^{k+1}\mathC_{k+1}^j\Par{-1}{^{j+1}}x^{m-\SmallPar{k+1}+j}\in\Span[\BigPar]{p_{m-\SmallPar{k+1}},x^{m-k},\dots,x^{m}}.$\vspace{2pt}\par\quad\Hii
+Thus $x^{m-\SmallPar{k+1}}\in\Span[\BigPar]{p_{m-\SmallPar{k+1}},p_{m-k},\dots,p_m}.$\PfEnd\vspace{2pt}\quad
+\AComm The base step and the induc step can be indep.\vspace{10pt}\par\quad
+\Or For any $m,k\in\Nbp$ suth $k\leqslant m.$ Define $p_{k,m}$ by $p_{k,m}\Par{x}=x^k\Par{1-x}{^{m-k}}.$\par\quad
+Define the stmt $S\Par{m}$ by $S\Par{m}:\Par{p_{0,m},\dots,p_{m,m}}$ is liney indep \BigPar{ and therefore is a bss }.\par\quad
+We use induc on to show $S\Par{m}$ holds for all $m\in\Nbp.$\vspace{2pt}\par\quad
+(i) $m=0.$ \;$p_{0,0}=1,$ and $ap_{0,0}=0\Rightarrow a=0.$\par\quad\Hi
+$m=1.$ \;Let $a_0\Par{1-x}+a_1x=0,\forall x\in\Fbb.$ \;Then take $x=1,x=0\Rightarrow a_1=a_0=0.$\par\vspace{4pt}\quad
+%$m=2.$ \;Let $a_0\Par{1-x}{^2}+a_1\Par{1-x}x+a_2x^2=0,\forall x\in\Fbb.$ \;Then $\small\MathLeftBrace{l}{\!\!x=0\Rightarrow a_0+a_1=0;\\\!\!x=1\Rightarrow a_2=0;\\\!\!x=2\Rightarrow a_0+2a_1=0.}$\par\vspace{0pt}\quad\Endi
+(ii) $1\leqslant m.$ \;Asum $S\Par{m}$ and $S\Par{m-1}$ holds. Now we show $S\Par{m+1}$ holds.\vspace{2pt}\par\quad\Hii
+Supp $\sum_{k=0}^{m+1}a_kp_{k,m+1}\Par{x}=\sum_{k=0}^{m+1}a_k\Sbra{x^k\Par{1-x}{^{m+1-k}}}=0,\forall x\in\Fbb.$\vspace{6pt}\par\quad\Hii
+\envFontLarge{Now $a_0\Par{1-x}{^{m+1}}+\sum_{k=1}^{m}a_kx^k\Par{1-x}{^{m+1-k}}+a_{m+1}x^{m+1}=0,\forall x\in\Fbb.$}\par\vspace{2pt}\quad\Hii
+While $x=0\Rightarrow a_0=0;$ \;and $x=1\Rightarrow a_{m+1}=0.$\par\vspace{2pt}\quad\Hii
+Then $0=\sum_{k=1}^{m}a_kx^k\Par{1-x}{^{m+1-k}}$\par\vspace{4pt}\quad\Hii
+\Blind{Then $0$}${}=x\Par{1-x}\sum_{k=1}^{m}a_kx^{k-1}\Par{1-x}{^{m-k}},$ {\normalsize note that} {\small\envFontSmall[\small]$ m-k=\Par{m-1}-\Par{k-1}$}\par\vspace{4pt}\quad\Hii
+\Blind{Then $0$}${}=x\Par{1-x}\textstyle\sum_{k=0}^{m-1}a_{k+1}x^{k}\Par{1-x}{^{m-1-k}}=x\Par{1-x}\sum_{k=0}^{m-1}a_{k+1}p_{k,m-1}\Par{x}.$\par\vspace{6pt}\quad\Hii
+\FontNorm{\vspace{4pt}Hence \;$\sum_{k=0}^{m-1}a_{k+1}p_{k,m-1}\Par{x}=0,\forall x\in\Fbb\Backslash{\def\envFont{\envFontB}\Bra{\,0,1}}.$ Which has infily many zeros.}\par\quad\Hii
+Moreover, \;$\sum_{k=0}^{m-1}a_{k+1}p_{k,m-1}\Par{x}=0.$ By asum, $a_1=\dots=a_{m-1}=a_{m}=0.$\par\quad\Hii
+Thus $\Par{p_{0,m+1},\dots,p_{m+1,m+1}}$ is liney indep and $S\Par{m+1}$ holds.\PfEnd
+\SepLine
+
+\ProblemN{\hypertarget{3D4e20}{8}}{
+	\TextN{Supp $q\in\PoRi.$ Prove $\exists\,p\in\PoRi,q\Par{x} = \Par{x^2 + x}p\apostrophe\apostrophe\Par{x} + 2xp\apostrophe\Par{x} + p\Par{3}.$\vspace{1pt}}
+}Note that $\Deg\Sbra{\Par{x^2 + x}p\apostrophe\apostrophe\Par{x} + 2xp\apostrophe\Par{x} + p\Par{3}}=\deg p.$\parSol{}
+Define $T_n\in\Lm[\BigPar]{\PoR{n}}$ by $T_n\Par{p}=\Par{x^2 + x}p\apostrophe\apostrophe\Par{x} + 2xp\apostrophe\Par{x} + p\Par{3}.$\parSol{}
+And note that $T_n\Par{p}=0\Rightarrow\deg T_n\Par{p}=-\infty=\deg p\Rightarrow p=0.$ Thus $T_n$ is inv.\parSol{}
+$\forall q\in\PoRi,$ if $q=0,$ let $n=0;$ if $q\neq 0,$ let $n=\deg q,$ we have $q\in\PoR{n}.$\parSol{}
+Now $\exists\,p\in\PoR{n}, q\Par{x}=T_n\Par{p}=\Par{x^2 + x}p\apostrophe\apostrophe\Par{x} + 2xp\apostrophe\Par{x} + p\Par{3}$ for all $x\in\Rbb.$\PfEnd
+\SepLine\pagebreak
+
+\ProblemN{\hypertarget{3D19}{9}}{
+	\TextN{Supp $T\in\Lm[\BigPar]{\PoRi}$ is inje. And $\deg Tp\leqslant\deg p$ for every nonzero $p\in\PoRi$.}
+	(a) \TextN{Prove $T$ is surj. \quad {\large\tgnr(b)} Prove for every nonzero $p$, $\deg Tp=\deg p$.}
+}(a) $T$ is inje $\Longleftrightarrow\forall n\in\Nbp,T\mmid_{\PoR[\SmallPar]{n}}\in\Lm[\BigPar]{\PoR{n}}$ is inje, so is inv $\Longleftrightarrow T$ is surj.\parSol{}
+(b) Using induc.\parSol{\Hb}
+(i) $\deg p=-\infty\geqslant\deg Tp\Longleftrightarrow p=0=Tp.$ And $\deg p=0\geqslant\deg Tp\Longleftrightarrow p=C\neq 0.$\parSol{\vspace{2pt}\Endi\Hb}
+(ii) Asum $\forall s\in\PoR{n},\deg s=\deg Ts.$ We show $\forall p\in\PoR{n+1},\deg Tp=\deg p$ by ctradic.\parSol{\Hii\Hb}
+Supp $\exists\,r\in\PoR{n+1},\;\deg Tr\leqslant n<n+1=\deg r.$ \,By (a), $\exists\,s\in\PoR{n},\;T\Par{s}=\Par{Tr}.$\parSol{\Hii\Hb}
+又 $T$ is inje $\Rightarrow s=r.$ While $\deg s=\deg Ts=\deg Tr<\deg r.$ Ctradic.\PfEnd
+\SepLine
+
+\ProblemN{\hypertarget{3B26}{10}}{
+	\TextNL{Supp $D\in\Lm[\BigPar]{\PoRi}$ and $\forall p,\Deg\BigPar{Dp}=\Par{\!\deg p}-1.$ \;Prove $D\in\PoRi$ is surj.\vspace{2pt}}
+}\!\Sbra{ $D$ might not be $D:p\mapsto p\apostrophe.$\hspace{1pt}} \;\NOTICE that the following proof is wrong:\parSol{}
+Becs $\Span{Dx,Dx^2,Dx^3,\cdots}\subseteq\range D,$ and $\deg Dx^n=n-1.$\parSol{}
+又 By (2.C.10), $\Span{Dx,Dx^2,Dx^3,\cdots}=\Span{1,x,x^2,\cdots}=\PoRi.$\par\vspace{4pt}\quad
+\uline{Let $D\Par{C}=0,Dx^k=p_k$} of deg $\Par{k-1},$ for all $C\in\Rbb=\PoR{0}$ and for each $k\in\Nbp.$\par\quad
+Becs $B_{\PoR[\SmallPar]{m}}=\Par{p_1,\dots,p_m,p_{m+1}}.$ And for all $p\in\PoRi,\exists\,!\,m=\deg p\in\Nbp.$\par\quad
+So that $\exists\,!\,a_i\in\Rbb,p=\sum_{i=1}^{m+1}a_ip_i\Rightarrow\exists\,q=\sum_{i=1}^{m+1}a_{i}x^{i},Dq=p.$\PfEnd\vspace{6pt}\quad
+{\Or We will \uline{recurly define a seq of polys $\Par{p_k}{_{k=0}^\infty}$ where $Dp_0=1,Dp_k=x^k$} for each $k\in\Nbp.$}\par\vspace{2pt}\quad
+{\FontSmall So that $\forall p=\sum_{k=0}^{\deg p}a_k x^k\in\PoRi,Dq=p,\exists\,q={\sum_{k=0}^{\deg p}a_k p_k}.$}\par\vspace{4pt}\quad
+(i) {Becs $\deg Dx=\Par{\!\deg x}-1=0,Dx=C\in\nonzeroFbb.$ Let $p_0=C^{-1}x\Rightarrow Dp_0=C^{-1}Dx=1.$}\vspace{2pt}\par\quad\Endi
+(ii) {Supp we have defined $Dp_0=1,Dp_k=x^k$ for each $k\in\Bra{1,\dots,n}.$ Becs $\deg D\Par{x^{n+2}}=n+1.$}\vspace{2pt}\par\quad\Hii
+{Let {\;$D\Par{x^{n+2}}=a_{n+1}x^{n+1}+a_n x^n+\dots+a_1 x+a_0,$} with $a_{n+1}\neq 0.$}\vspace{2pt}\par\quad\Hii
+{Then {\;$a_{n+1}^{-1}D\BigPar{x^{n+2}}=x^{n+1}+a_{n+1}^{-1}\BigPar{a_n Dp_n+\dots+a_1 Dp_1 +a_0 Dp_0}$}}\vspace{2pt}\par\quad\Hii
+{$\Rightarrow x^{n+1}=D\XSbra{\uline{a_{n+1}^{-1}\Par{x^{n+2}-a_n p_n-\dots-a_1 p_1-a_0 p_0}}}.$ Thus defining $p_{n+1},$ so that $Dp_{n+1}=x^{n+1}.$}\PfEnd
+\SepLine
+
+\ProblemN{11}{
+	\TextNL{Supp $V=\Rbb^\Rbb$ and $U=\Bra{\hspace{3pt}f\in\Rbb^\Rbb:f\Par{x_1}=\cdots=f\Par{x_m}=0}$ is a subsp of $V,$\vspace{2pt}}
+	\TextNL{with each $x_k\in\Rbb.$ \;Prove $\forall W\in\mathcal{S}_V U,\dim W=m.$\hfill{\large\tgsc Hint$:$ }{\FontNorm Find an iso from $V\XSlash U$ onto $\Rbb^m.$}}
+}Define $T\in\Lm{V\XSlash U,\Rbb^m}$ by $T\Par{f+U}=\BigPar{f\Par{x_1},\dots,f\Par{x_m}}.$\parSol{}
+$\forall f_1+U=f_2+U\in V\XSlash U,f_1-f_2\in U\Rightarrow f_1\Par{x_k}=f_2\Par{x_k}.$ Now $T$ is well-defined.\parSol{\vspace{2pt}}
+Inje: Each $f\Par{x_k}=0\Rightarrow f+U=0.$ \;Let $S=T\circ\pi\Rightarrow\tilde{S}=T.$ Then $S$ is surj, so is $T.$\PfEnd
+\SepLine
+
+\ProblemN{\hypertarget{3F7}{12}}{
+	\TextNL{Show the dual bss of $\Par{1, x,\dots,x^m}$ of $\PoR{m}$ is $\Par{\varphi_0,\varphi_1,\dots,\varphi_m}$, where {\FontNorm $\varphi_k\Par{p}=\Frac{p^{\SmallPar{k}}\Par{0}}{k!}$.}\vspace{-2pt}}
+	\TextNL{{\FontNorm Here $p{^{\SmallPar{k}}}$ denotes the $k^{th}$ deri of $p$, with the understanding that the $0^{th}$ deri of $p$ is $p$.}\vspace{-2pt}}
 }{\tgsl\normalsize The uniqnes of dual bss is guaranteed by [3.5].}\vspace{2pt}\par\quad
 For $j,k\in\Nbb,\:\Par{x^{j}}{^{\SmallPar{k}}}=\left\{\begin{array}{l}j\Par{j-1}\dots\Par{j-k+1}\cdot x^{\SmallPar{j-k}}\,,\quad j \geq k.\\j\Par{j-1}\dots\Par{j-j+1}=j!\hfill j=k.\\0,\hfill j \leqslant k.\end{array}\right|\hspace{4pt}\Rightarrow\Par{x^{j}}{^{\SmallPar{k}}}\Par{0}=\MathLeftBrace{l}{0\,\,\,,\,\hspace{5.2pt}j\neq k. \\ k!\,\,,\hspace{6pt}j=k.}$\PfEnd\vspace{8pt}
 %{\Large$\envFontSmall[\footnotesize]\frac{p^{\SmallPar[0pt]{k}}\Par[0pt]{0}}{k!}$}
 \AExa\hypertarget{3F8}{}By [2.C.10], $B_m=\BigPar{1,7x-5,\dots,\Par{7x-5}{^m}}$ is a bss of $\PoR{m}$. Let each $\varphi_k={}${\Large\envFontSmall[\footnotesize]$\frac{p^{\SmallPar{k}}\Par{5\text{\large/}\hspace{0.5pt}7}}{7\hspace{1pt}\cdot\,k!}$}.\par\vspace{2pt}
 \SepLine
-}
-
-%\def\OrbikenXI
-{
-\ProblemN{\hypertarget{3F34}{34}}{
-	\TextNL{The double dual space of $V$, denoted by $V\apostrophe\apostrophe$, is defined to be the dual space
-		of $V\apostrophe$.}
-	\TextNL{In other words, $V\apostrophe\apostrophe=\Lm{V\apostrophe,\Fbb}$. Define $\Lambda:V\rightarrow V\apostrophe\apostrophe$ by $\Par{\Lambda v}\Par{\varphi} = \varphi\Par{v}$.\vspace{2pt}}
-	(a) \TextNL{Show $\Lambda$ is a liney map from $V$ to $V\apostrophe\apostrophe$.\vspace{2pt}}
-	(b) \TextNL{Show if $T\in\Lm{V}$, then $T\apostrophe\apostrophe\circ\Lambda=\Lambda\circ T$, where $T\apostrophe\apostrophe=\Par{T\apostrophe}\apostrophe$.\vspace{2pt}}
-	(c) \TextNL{Show if $V$ is finide, then {\tgsc $\Lambda$ is iso from $V$ onto $V$\hspace{1pt}$\apostrophe\apostrophe$}.\vspace{2pt}}
-	\TextNL{\normalsize Supp $V$ is finide. Then $V$ and $V\apostrophe$ are iso, and finding iso from $V$ onto $V\apostrophe$ generally req choosing\vspace{-3pt}}
-	\TextNL{\normalsize a bss of $V$. In contrast, the iso $\Lambda$ from $V$ onto $V\apostrophe\apostrophe$ does not req a choice of bss and thus is considered more natural.}
-}\par\quad
-(a) $\forall\varphi\in V\apostrophe,v,w\in V,a\in\Fbb,\BigPar{\Lambda\Par{v+a w}}\Par{\varphi}=\varphi\Par{v+aw}=\varphi\Par{v}+a\varphi\Par{w}=\Par{\Lambda v}\Par{\varphi}+a\Par{\Lambda w}\Par{\varphi}$.\par\quad\Ha
-Thus $\Lambda\Par{v+aw}=\Lambda v+a\Lambda w$. Hence $\Lambda$ is liney.\vspace{4pt}\par\quad
-(b) \vspace{-6pt} \AlignEq{}{\BigPar{T\apostrophe\apostrophe\Par{\Lambda v}}\Par{\varphi}=\BigPar{\Par{\Lambda v}\circ{T\apostrophe}}\Par{\varphi}&=\Par{\Lambda v}\BigPar{T\apostrophe\Par{\varphi}}\hspace{216pt}\\[-4pt]&=\BigPar{T\apostrophe\Par{\varphi}}\Par{v}=\Par{\varphi\circ T}\Par{v}=\varphi\Par{Tv}=\BigPar{\Lambda\Par{Tv}}\Par{\varphi}.}\par\quad\Hb
-Hence $T\apostrophe\apostrophe\Par{\Lambda v}=\BigPar{\Lambda\Par{Tv}}\Rightarrow T\apostrophe\apostrophe\circ\Lambda=\Lambda\circ T$.\vspace{4pt}\par\quad
-(c) Supp $\Lambda v=0$. Then $\forall\varphi\in V\apostrophe,\Par{\Lambda v}\Par{\varphi}=\varphi\Par{v}=0\Rightarrow v=0$. Thus $\Lambda$ is inje.\par\quad\Hc
-又 Becs $V$ is finide. $\dim V=\dim V\apostrophe=\dim V\apostrophe\apostrophe.$ Hence $\Lambda$ is iso.\PfEnd\vspace{4pt}\quad\Hc
-\AComm Supp $\Phi\in V\apostrophe\apostrophe$ and $\Phi\neq 0.$ Then $\exists\,\varphi\in V\apostrophe,\:\Phi\Par{\varphi}=1\Rightarrow\null\Phi\oplus\Span{\varphi}=V\apostrophe.$\parCom\quad\Hc
-And $\varphi\neq 0\Rightarrow\exists\,v\in V,\:\varphi\Par{v}=1,\null\varphi\oplus\Span{v}=V.$ Becs $\Lambda$ is surj.\parCom\quad\Hc
-Now $\exists\,x\in V,\forall\psi=c\varphi+\rho\in V\apostrophe,\psi\Par{x}=\Par{\Lambda x}\Par{\psi}=\Phi\Par{\psi}=c.$
-\SepLine
-}
-
-%\OrbikenI
-%\OrbikenII
-%\OrbikenIII
-%\OrbikenIV
-%\OrbikenV
-%\OrbikenVI
-%\OrbikenVII
-
-\ChEnd\pagebreak
+\ChEnd
 
