@@ -629,8 +629,8 @@ while $T\Par{v+u}=0=Tv+Tu=0+Su\Rightarrow Su=0.$ Ctradic.\PfEnd
 	\TextNL{Prove $\exists\,T\in\Lm{V,W},Tu = Su,\forall u\in U$. {\FontNorm\tgnr\BigPar{ \Or $\exists\,T\in\Lm{V,W},T\mmid_U=S.$ }}}
 	\TextNL{\large In other words, every liney map on a subsp of $V$ can be {\tgsc extended} to a liney map on the entire $V$.}
 }Supp $W$ is suth $V=U\oplus W.$ Then $\forall v\in V,\exists\,!\,u_v\in U,w_v\in W,v=u_v+w_v.$\parSol{}
-Define $T\in\Lm{V,W}$ by $T\Par{u_v+w_v}=Su_v.$\PfEnd\parSol{\vspace{2pt}}
-\Or \Sbra[3pt]{{\tgsl Finide Req}} \;Define by $T\XPar{\sum_{i=1}^m a_i u_i}=\sum_{i=1}^n a_i Su_i.$ Let $B_V=\Par{\overbrace{u_1,\dots,u_n}^{B_U},\dots,u_m}.$\PfEnd
+Define $T\in\Lm{V,W}$ by $T\Par{u_v+w_v}=Su_v.$\PfEnd\parSol{\vspace{0pt}}
+\Or \Sbra[3pt]{{\tgsl Finide Req}} \;Define by $T\XPar{\!\sum_{i=1}^m a_i u_i\!}=\sum_{i=1}^n a_i Su_i.$ \,Let $B_V=\Par{\overbrace{u_1,\dots,u_n}^{B_U},\dots,u_m}.$\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{3A12}{12}}{
@@ -667,12 +667,13 @@ And \,$0=a_j w_j$ while $a_j\neq 0$ and $w_j\neq 0.$ Ctradic.\PfEnd\vspace{6pt}\
 }{Let $B_V=\Par{v_1,\dots,v_n}.$ If $\mathcal{E}=0$, then done.}\par\quad
 {Supp $\mathcal{E}\neq 0$ and $\mathcal{E}$ is a two-sided ideal of $\Lm{V}$. Let $S\in\mathcal{E}\nonzero$.}\par\quad
 {Supp $Sv_i\neq 0$ and $Sv_i=a_1 v_1+\dots+a_n v_n$, where $a_k\neq 0$.}\par\vspace{2pt}\quad\envFontLarge
-{\vspace{4pt}Define $R_{x,y}\in\Lm{V}$ by {\Large$R_{x,y}:\;v_x\mapsto v_y,\;v_z\mapsto 0\,\Par{\,z\neq x\,}$}. \Or {\Large$R_{x,y}v_z=\delta_{z,x}v_y$}.}\par\quad
-{\vspace{6pt}Then {\Large$\BigPar{R_{1,1}+\dots+R_{n,n}}v_j=v_j\Rightarrow\sum_{r=1}^n R_{r,r}=I$}. Asum {\Large each $R_{x,y}\in\mathcal{E}$}.}\par\quad
-{\vspace{6pt}Hence {\Large$\forall T\in\Lm{V},I\circ T=T\circ I=T\in\mathcal{E}\Rightarrow \mathcal{E}=\Lm{V}$}. Now we prove the asum.}\par\quad
-{\vspace{6pt}Notice that {\Large$\forall x,y\in\Nbp,\;\Par{R_{k,y}S}\Par{v_i}=a_k v_y\Rightarrow\BigPar{\Par{R_{k,y}S}\circ R_{x,i}}\Par{v_z}=\delta_{z,x}\Par{a_k v_y}$}.}\par\quad
-{Thus \;{\Large$R_{k,y}SR_{x,i}=a_k R_{x,y}$}. \;Now {\Large$S\in\mathcal{E}\Rightarrow R_{k,y}S\in\mathcal{E}\Rightarrow R_{x,y}\in\mathcal{E}$}.}\PfEnd\vspace{6pt}
-\AComm Not true if infinide.
+{\vspace{2pt}Define $R_{x,y}\in\Lm{V}$ by {\Large$R_{x,y}:\;v_x\mapsto v_y,\;v_z\mapsto 0\,\Par{\,z\neq x\,}$}. \Or {\Large$R_{x,y}v_z=\delta_{z,x}v_y$}.}\par\quad
+{\vspace{4pt}Then {\Large$\BigPar{R_{1,1}+\dots+R_{n,n}}v_j=v_j\Rightarrow\sum_{r=1}^n R_{r,r}=I$}. Asum {\Large each $R_{x,y}\in\mathcal{E}$}.}\par\quad
+{\vspace{4pt}Hence {\Large$\forall T\in\Lm{V},I\circ T=T\circ I=T\in\mathcal{E}\Rightarrow \mathcal{E}=\Lm{V}$}. Now we prove the asum.}\par\quad
+{\vspace{4pt}Notice that {\Large$\forall x,y\in\Nbp,\;\Par{R_{k,y}S}\Par{v_i}=a_k v_y\Rightarrow\BigPar{\Par{R_{k,y}S}\circ R_{x,i}}\Par{v_z}=\delta_{z,x}\Par{a_k v_y}$}.}\par\quad
+{Thus \;{\Large$R_{k,y}SR_{x,i}=a_k R_{x,y}$}. \;Now {\Large$S\in\mathcal{E}\Rightarrow R_{k,y}S\in\mathcal{E}\Rightarrow R_{x,y}\in\mathcal{E}$}.}\PfEnd\vspace{4pt}
+\AComm Not true if infinide. Consider the subsp $X=\Bra{T\in\Lm{V}:\range T\text{ is finide}}.$\par\quad
+For any $T\in X,\;\forall E\in\Lm{V},\range TE\subseteq\range T;\;\range ET=\Span{Ew_1,\dots,Ew_n}\Rightarrow TE,ET\in X.$
 \SepLine\pagebreak
 
 \ProblemBnoor{\hypertarget{3B4e32}{4E 3.B.32}}{
