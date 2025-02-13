@@ -286,6 +286,19 @@ ${}^\neg P\Rightarrow{}^\neg Q:\;$ Supp $V$ is finide and $V=\Span{w_1 , ..., w_
 \Blind{\Or\; $Q\Rightarrow P:\;$} Choose an $m$. Supp a liney indep list $\Par{v_1,\dots,v_m}$ spans $V$.\par\quad
 \Blind{\Or\; $Q\Rightarrow P:\;$} Simlr to [2.16]. $\exists\,v_{m+1}\in V\Backslash\Span{v_1,\dots,v_m}.$ Hence no list spans $V.$\PfEnd
 \SepLine
+
+\ProblemN{\hypertarget{2A17}{17}}{
+	\TextNL{Supp $p_0,p_1,\dots,p_m\in\PoF{m}$ suth $p_k\Par{2}=0$ for each $k\in\Bra{0,\dots,m}$.}
+	\TextNL{Prove $\Par{p_0,p_1,\dots,p_m}$ is not liney indep in $\PoF{m}$.}
+}\par\quad
+Supp $\Par{p_0,p_1,\dots,p_m}$ is liney indep. Define $p\in\PoF{m}$ by $p\Par{z}=z.$\par\quad
+\NOTICE that $\forall a_i\in\Fbb,z\neq a_0 p_0\Par{z}+\dots+a_m p_m\Par{z},$ for if not, let $z=2.$ Thus $z\not\in\Span{p_0,p_1,\dots,p_m}$.\par\quad
+Then $\Span{p_0,p_1,\dots,p_m}\subsetneq\PoF{m}$ while the list $\Par{p_0,p_1,\dots,p_m}$ has len $\Par{m+1}$.\par\quad
+Hence $\Par{p_0,p_1,\dots,p_m}$ is linely dep. For if not, then becs $\Par{1,z,\dots,z^m}$ of len $\Par{m+1}$ spans $\PoF{m},$\par\quad
+by the steps in [2.23] trivially, $\Par{p_0,p_1,\dots,p_m}$ of len $\Par{m+1}$ spans $\PoF{m}.$ Ctradic.\PfEnd\vspace{6pt}\par\quad
+\Or Note that $\PoF{m}=\Span{\underbrace{\;1,\;z,\;\dots,\;z^m\;}_{\text{of len }\SmallPar{m+1}}}.$ Then $\Par{p_0,p_1,\dots,p_m,z}$ of len $\Par{m+2}$ is liney dep.\vspace{2pt}\par\quad
+As shown above,  $z\not\in\Span{p_0,p_1,\dots,p_m}.$ And hence by [2.21](a), $\Par{p_0,p_1,\dots,p_m}$ is liney dep.\PfEnd
+\SepLine
 \ChEnd\pagebreak
 
 \ChDecl{Ch2B}{2$\cdot$B}{}\orMode{\hLk{2B1}{1}\;\;\hLk{2B8}{8}\;\;|\;\;\hLk{2B4e5}{4E:\;\;5}\;\;\hLk{2B4e9}{9}\;\;\hLk{2B4e11}{11}}{[1]: 7, 1, (4E 9); [2]: (4E 5), 8, (4E 11).}
@@ -2583,12 +2596,26 @@ Now $\Gamma\apostrophe\BigPar{\Psi\Par{x_1,\dots,x_m}}=x_1\varphi_1+\dots+x_m\va
 %		\Hb\TextNL{\FontNorm $\BigPar{T\apostrophe\Par{\varphi}}\Par{x^3}=\int_0^1\Par{x^5+6x}\d x=\int_0^1\XPar{\frac{1}{6}x^6+3x^2}\apostrophe\d x=\frac{19}{6}.$\PfEnd}
 %	}\SepLine
 
-\ChEnd
+\ChEnd\pagebreak
 
 
-\vfill\ChDecl{}{\Largebfx{Exes about Number Theory and Sequences in Chapter 3}}
+\ChDecl{}{\Largebfx{Exes about Sequences and Number Theory before Chapter 4}}
 
 \vspace{4pt}
+
+\ProblemB{
+	{\hypertarget{2A16}{}}\TextB{Prove the vecsp of all continuous functions in $\Rbb^{[0,1]}$ is infinide.}
+}Denote the vecsp by $U$.\par\quad
+Choose one $m\in\Nbp.$ Supp $a_0,\dots,a_m\in\Rbb$ are suth $p\Par{x}=a_0+a_1 x+\dots+a_m x^m=0,\,\forall x\in\Sbra{0,1}.$\par\quad
+Then $p$ has infily many roots and hence each $a_k=0,$ othws $\deg p\geqslant 0,$ ctradic [4.12].\par\quad
+Thus $\Par{1,x,\dots,x^m}$ is liney indep in $\Rbb^{[0,1]}.$ Simlr to [2.16], $U$ is infinide.\PfEnd\vspace{8pt}\quad
+\Or Note that\; $\Frac{\;1\;}{1}>\Frac{\;1\;}{2}>\dots>\Frac{\;1\;}{m},\,\,\,\forall m\in\Nbp.$ Supp\; $f_m=\MathLeftBrace{l}{
+	\!x-{}${\Large$\frac{\;1\;}{m}$}$,\;\;x\in\Interval{(}{]}{${\Large$\frac{\;1\;}{m}$}$,\,1\,}\\
+	\!0,\hfill x\in\Sbra{\,0,\,${\Large$\frac{\;1\;}{m}$}$\,}
+}$\vspace{2pt}\par\quad
+Then\; $f_1\XPar{${\Large$\frac{\;1\;}{m}$}$}=\dots=f_m\XPar{${\Large$\frac{\;1\;}{m}$}$}=0\neq f_{m+1}\XPar{${\Large$\frac{\;1\;}{m}$}$}.$ 
+\;Hence $f_{m+1}\not\in\Span{f_1,\dots,f_m}.$ By (2.A.14).\PfEnd
+\SepLine
 
 \ProblemB{
 	\hypertarget{3F35}{}\TextB{Prove $\BigPar{\PoFi}\apostrophe$ is iso to $\Fbb^{\infty}.$}
@@ -2600,8 +2627,6 @@ Surj: Define $\psi_x\Par{p}=x_0c_0+\dots+x_mc_m$ for any $x=\Par{x_0,x_1,\cdots}
 \Blind{Surj:} $\psi_x\Par{p+q}=x_0\Par{a_0+b_0}+x_n\Par{a_n+b_n}+x_{n+1}a_{n+1}+\dots+x_ma_m=\psi_x\Par{p}+\psi_x\Par{q}.$\PfEnd\vspace{4pt}
 \AComm $\PoFi$ is not iso to $\Fbb^\infty,$ so is $\PoFi$ to $\BigPar{\PoFi}\apostrophe.$ But $\PoFi$ is iso to $\Fbb^\Nbb,$ {\tgsl which the '$U$' in (3.E.14).}
 \SepLine
-
-\pagebreak
 
 \ProblemB{
 	\hypertarget{3E14}{}\TextB{Supp $U=\Bra{\Par{x_1,x_2,\cdots}\in\Fbb^{\infty}:x_k\neq 0\text{\;for\;only\;finily\;many}\;k}.$\quad\FontSmall Denote it by $\Fbb^\Nbb.$\vspace{2pt}}
@@ -2625,14 +2650,15 @@ Supp $L$ is the largest suth $u\Sbra{L}\neq 0.$ And $l$ is suth $2^{ml}> L.$ \;T
 $u\Sbra{2^{ml}+2^k}=0=\sum_{r=1}^m a_re_r\Sbra{2^k}=a_1+\dots+a_k.$ \,Thus each $a_k=0.$ Simlr.\PfEnd
 \SepLine
 \ChEnd
+\pagebreak
 
-\vfill\ChDecl{}{\Largebfx{Exes about Polys in Chapter 3}}
+\ChDecl{}{\Largebfx{Exes about Polys before Chapter 4}}
 
 \vspace{4pt}
 
-\ProblemN{\hypertarget{1C9}{1}}{
-	\TextN{A function $f:\Rbb\rightarrow\Rbb$ is called periodic if $\exists\,p\in\Nbp,\;f\Par{x}=f\Par{x+p}$ for all $x\in\Rbb.$}
-	\TextN{Is the set of periodic functions $\Rbb\rightarrow\Rbb$ a subsp of $\Rbb^\Rbb$ ? Explain.}
+\ProblemB{
+	\hypertarget{1C9}{}\TextB{A function $f:\Rbb\rightarrow\Rbb$ is called periodic if $\exists\,p\in\Nbp,\;f\Par{x}=f\Par{x+p}$ for all $x\in\Rbb.$}
+	\TextB{Is the set of periodic functions $\Rbb\rightarrow\Rbb$ a subsp of $\Rbb^\Rbb$ ? Explain.}
 }Denote the set by $S$.\par\quad
 Supp $h\Par{x}=\cos x+\sin\!\sqrt{2}x\in S$, since $\cos x,\sin\!\sqrt{2}x\in S$.\par\quad
 Asum $\exists\,p\in\Nbp$ suth $h\Par{x}=h\Par{x+p},\forall x\in\Rbb.$ Let $x=0\Rightarrow h\Par{0}=h\Par{\pm p}=1$.\par\quad
@@ -2646,8 +2672,8 @@ Hence $2k=\Frac{m}{\sqrt{2}}\Rightarrow \sqrt{2}=\Frac{m}{2k}\in\Qbb$. Ctradic!\
 	\cos x=\cos\!\Par{x+p}}\Rightarrow$ Let $x=0,$\;\,$ p=\Frac{m\pi}{\sqrt{2}}=2k\pi.$\; Ctradic.\PfEnd\vspace{4pt}\par
 \SepLine
 
-\ProblemN{\hypertarget{1C24}{2}}{
-	\TextN{Let $V_{\!E}=\Bra{\,f\in\Rbb^{\Rbb}:\text{f is even}},V_{\!O}=\Bra{\,f\in\Rbb^{\Rbb}:\text{f is odd}}.$ Show $V_{\!E}\oplus V_{\!O}=\Rbb^{\Rbb}.$\vspace{4pt}}
+\ProblemB{
+	\hypertarget{1C24}{}\TextB{Let $V_{\!E}=\Bra{\,f\in\Rbb^{\Rbb}:\text{f is even}},V_{\!O}=\Bra{\,f\in\Rbb^{\Rbb}:\text{f is odd}}.$ Show $V_{\!E}\oplus V_{\!O}=\Rbb^{\Rbb}.$\vspace{4pt}}
 }(a) {$V_{\!E}\cap V_{\!O}=\Bra{\,f\in\Rbb^{\Rbb}:f\Par{x}=f\Par{-x}=-f\Par{-x}}=\zeroSubs.$}\parSol{\vspace{8pt}}
 (b) $\hMath{l}{\left|}{\right\}}{$
 	Let \;$f_e\Par{x}=\Frac{\;1\;}{2}\XSbra{g\Par{x}+g\Par{-x}}\Longrightarrow f_e\in V_{\!E}\vspace{4pt}\\$
@@ -2655,38 +2681,9 @@ Hence $2k=\Frac{m}{\sqrt{2}}\Rightarrow \sqrt{2}=\Frac{m}{2k}\in\Qbb$. Ctradic!\
 }\Rightarrow\forall g\in\Rbb^\Rbb,\;g\Par{x}=f_e\Par{x}+f_o\Par{x}.$\PfEnd\vspace{4pt}
 \SepLine
 
-\pagebreak
-
-\ProblemN{\hypertarget{2A16}{3}}{
-	\TextN{Prove the vecsp of all continuous functions in $\Rbb^{[0,1]}$ is infinide.}
-}Denote the vecsp by $U$.\par\quad
-Choose one $m\in\Nbp.$ Supp $a_0,\dots,a_m\in\Rbb$ are suth $p\Par{x}=a_0+a_1 x+\dots+a_m x^m=0,\,\forall x\in\Sbra{0,1}.$\par\quad
-Then $p$ has infily many roots and hence each $a_k=0,$ othws $\deg p\geqslant 0,$ ctradic [4.12].\par\quad
-Thus $\Par{1,x,\dots,x^m}$ is liney indep in $\Rbb^{[0,1]}.$ Simlr to [2.16], $U$ is infinide.\PfEnd\vspace{8pt}\quad
-\Or Note that\; $\Frac{\;1\;}{1}>\Frac{\;1\;}{2}>\dots>\Frac{\;1\;}{m},\,\,\,\forall m\in\Nbp.$ Supp\; $f_m=\MathLeftBrace{l}{
-	\!x-{}${\Large$\frac{\;1\;}{m}$}$,\;\;x\in\Interval{(}{]}{${\Large$\frac{\;1\;}{m}$}$,\,1\,}\\
-	\!0,\hfill x\in\Sbra{\,0,\,${\Large$\frac{\;1\;}{m}$}$\,}
-}$\vspace{2pt}\par\quad
-Then\; $f_1\XPar{${\Large$\frac{\;1\;}{m}$}$}=\dots=f_m\XPar{${\Large$\frac{\;1\;}{m}$}$}=0\neq f_{m+1}\XPar{${\Large$\frac{\;1\;}{m}$}$}.$ 
-\;Hence $f_{m+1}\not\in\Span{f_1,\dots,f_m}.$ By (2.A.14).\PfEnd
-\SepLine
-
-\ProblemN{\hypertarget{2A17}{4}}{
-	\TextN{Supp $p_0,p_1,\dots,p_m\in\PoF{m}$ suth $p_k\Par{2}=0$ for each $k\in\Bra{0,\dots,m}$.}
-	\TextN{Prove $\Par{p_0,p_1,\dots,p_m}$ is not liney indep in $\PoF{m}$.}
-}\par\quad
-Supp $\Par{p_0,p_1,\dots,p_m}$ is liney indep. Define $p\in\PoF{m}$ by $p\Par{z}=z.$\par\quad
-\NOTICE that $\forall a_i\in\Fbb,z\neq a_0 p_0\Par{z}+\dots+a_m p_m\Par{z},$ for if not, let $z=2.$ Thus $z\not\in\Span{p_0,p_1,\dots,p_m}$.\par\quad
-Then $\Span{p_0,p_1,\dots,p_m}\subsetneq\PoF{m}$ while the list $\Par{p_0,p_1,\dots,p_m}$ has len $\Par{m+1}$.\par\quad
-Hence $\Par{p_0,p_1,\dots,p_m}$ is linely dep. For if not, then becs $\Par{1,z,\dots,z^m}$ of len $\Par{m+1}$ spans $\PoF{m},$\par\quad
-by the steps in [2.23] trivially, $\Par{p_0,p_1,\dots,p_m}$ of len $\Par{m+1}$ spans $\PoF{m}.$ Ctradic.\PfEnd\vspace{6pt}\par\quad
-\Or Note that $\PoF{m}=\Span{\underbrace{\;1,\;z,\;\dots,\;z^m\;}_{\text{of len }\SmallPar{m+1}}}.$ Then $\Par{p_0,p_1,\dots,p_m,z}$ of len $\Par{m+2}$ is liney dep.\vspace{2pt}\par\quad
-As shown above,  $z\not\in\Span{p_0,p_1,\dots,p_m}.$ And hence by [2.21](a), $\Par{p_0,p_1,\dots,p_m}$ is liney dep.\PfEnd
-\SepLine
-
-\ProblemN{\hypertarget{2C7}{5}}{
-	(a) \TextN{Let $U=\Bra{p\in\PoF{4}:p\Par{2}=p\Par{5}=p\Par{6}}$. Find a bss of $U$.}
-	(b) \TextN{Extend the bss in {\tgnr(a)} to a bss of $\PoF{4}$, and find a $W$ suth $\PoF{4}=U\oplus W$.}
+\ProblemB{
+	\hypertarget{2C7}{}(a) \TextB{Let $U=\Bra{p\in\PoF{4}:p\Par{2}=p\Par{5}=p\Par{6}}$. Find a bss of $U$.}
+	(b) \TextB{Extend the bss in {\tgnr(a)} to a bss of $\PoF{4}$, and find a $W$ suth $\PoF{4}=U\oplus W$.}
 }Using (2.C.10).
 %Supp $p\Par{z}=az^4+bz^3+cz^2+dz+e$ suth $p\Par{2}=p\Par{5}=p\Par{6}$.\vspace{4pt}\par\quad
 %Then $\hMath[0pt]{r}{\left|}{\right\}}{
@@ -2729,9 +2726,9 @@ Let $W=\Span{z,z^2}=\Bra{az+bz^2:a,b\in\Fbb}$, so that $\PoF{4}=U\oplus W.$\PfEn
 Then $\Mt[\envFontLarge\BigPar]{\envFontDefault\xi_k,\Par{1,z,\dots,z^m},\Par{1}\envFontLarge}=\mathcal{E}^{\SmallPar[1pt]{1,k}}\in\Fbb^{1,m+1}.$\vspace{-2pt}
 \SepLine\pagebreak
 
-\ProblemN{\hypertarget{2C10}{6}}{
-	\TextN{Supp $m\in\Nbp,\;p_0,p_1,\dots,p_m\in\PoFi$ are suth each $\deg p_k=k.$}
-	\TextN{Prove $\Par{p_0,p_1,\dots,p_m}$ is a bss of $\PoF{m}$.}
+\ProblemB{
+	\hypertarget{2C10}{}\TextB{Supp $m\in\Nbp,\;p_0,p_1,\dots,p_m\in\PoFi$ are suth each $\deg p_k=k.$}
+	\TextB{Prove $\Par{p_0,p_1,\dots,p_m}$ is a bss of $\PoF{m}$.}
 }{Using induc on $m$.}\par\quad
 (i) {$k=1.$ \;$\deg p_0=0;\;\deg p_1=1\Rightarrow\Span[\BigPar]{p_0,p_1}=\Span[\BigPar]{1,x}.$}\par\vspace{2pt}\quad\Endi
 (ii) {$1\leqslant k\leqslant m-1.$ \;Asum $\Span[\BigPar]{p_0,p_1,\dots,p_k}=\Span[\BigPar]{1,x,\dots,x^k}.$}\par\quad\Hii
@@ -2783,9 +2780,9 @@ Becs by def, the term $a_0z^0$ in a poly only represents the const term of the p
 For conveni, we asum $z^0=1$ in formula deduction and poly def. Absolutely without $0^0.$
 \SepLine
 
-\ProblemN{\hypertarget{2C4e10}{7}}{
-	\TextN{Supp $m$ is a positive integer. For $0\leqslant k\leqslant m$, let $p_k\Par{x}=x^k\Par{1-x}{^{m-k}}$.}
-	\TextN{Show $\Par{p_0,\dots,p_m}$ is a bss of $\PoF{m}$.\vspace{0pt}}
+\ProblemB{
+	\hypertarget{2C4e10}{}\TextB{Supp $m$ is a positive integer. For $0\leqslant k\leqslant m$, let $p_k\Par{x}=x^k\Par{1-x}{^{m-k}}$.}
+	\TextB{Show $\Par{p_0,\dots,p_m}$ is a bss of $\PoF{m}$.\vspace{0pt}}
 	%\TextN{{\large The bss in this exe leads to what are called Bernstein polys. You can do a web search to learn how}}
 	%\TextN{{\large Bernstein polys are used to approximate continuous functions on $[0, 1]$.}}
 }{\tgsl We may see $p_0=1$ and $p_m\Par{x}=x^m,$ from the expansion below, by the {\NOTEFOR} [2.11] above.}\vspace{4pt}\par\quad
@@ -2815,8 +2812,8 @@ Moreover, \;$\sum_{k=0}^{m-1}a_{k+1}p_{k,m-1}\Par{x}=0.$ By asum, $a_1=\dots=a_{
 Thus $\Par{p_{0,m+1},\dots,p_{m+1,m+1}}$ is liney indep and $S\Par{m+1}$ holds.\PfEnd
 \SepLine
 
-\ProblemN{\hypertarget{3D4e20}{8}}{
-	\TextN{Supp $q\in\PoRi.$ Prove $\exists\,p\in\PoRi,q\Par{x} = \Par{x^2 + x}p\apostrophe\apostrophe\Par{x} + 2xp\apostrophe\Par{x} + p\Par{3}.$\vspace{1pt}}
+\ProblemB{
+	\hypertarget{3D4e20}{}\TextB{Supp $q\in\PoRi.$ Prove $\exists\,p\in\PoRi,q\Par{x} = \Par{x^2 + x}p\apostrophe\apostrophe\Par{x} + 2xp\apostrophe\Par{x} + p\Par{3}.$\vspace{1pt}}
 }Note that $\Deg\Sbra{\Par{x^2 + x}p\apostrophe\apostrophe\Par{x} + 2xp\apostrophe\Par{x} + p\Par{3}}=\deg p.$\parSol{}
 Define $T_n\in\Lm[\BigPar]{\PoR{n}}$ by $T_n\Par{p}=\Par{x^2 + x}p\apostrophe\apostrophe\Par{x} + 2xp\apostrophe\Par{x} + p\Par{3}.$\parSol{}
 And note that $T_n\Par{p}=0\Rightarrow\deg T_n\Par{p}=-\infty=\deg p\Rightarrow p=0.$ Thus $T_n$ is inv.\parSol{}
@@ -2824,9 +2821,9 @@ $\forall q\in\PoRi,$ if $q=0,$ let $n=0;$ if $q\neq 0,$ let $n=\deg q,$ we have 
 Now $\exists\,p\in\PoR{n}, q\Par{x}=T_n\Par{p}=\Par{x^2 + x}p\apostrophe\apostrophe\Par{x} + 2xp\apostrophe\Par{x} + p\Par{3}$ for all $x\in\Rbb.$\PfEnd
 \SepLine\pagebreak
 
-\ProblemN{\hypertarget{3D19}{9}}{
-	\TextN{Supp $T\in\Lm[\BigPar]{\PoRi}$ is inje. And $\deg Tp\leqslant\deg p$ for every nonzero $p\in\PoRi$.}
-	(a) \TextN{Prove $T$ is surj. \quad {\large\tgnr(b)} Prove for every nonzero $p$, $\deg Tp=\deg p$.}
+\ProblemB{
+	\hypertarget{3D19}{}\TextB{Supp $T\in\Lm[\BigPar]{\PoRi}$ is inje. And $\deg Tp\leqslant\deg p$ for every nonzero $p\in\PoRi$.}
+	(a) \TextB{Prove $T$ is surj. \quad {\large\tgnr(b)} Prove for every nonzero $p$, $\deg Tp=\deg p$.}
 }(a) $T$ is inje $\Longleftrightarrow\forall n\in\Nbp,T\mmid_{\PoR[\SmallPar]{n}}\in\Lm[\BigPar]{\PoR{n}}$ is inje, so is inv $\Longleftrightarrow T$ is surj.\parSol{}
 (b) Using induc.\parSol{\Hb}
 (i) $\deg p=-\infty\geqslant\deg Tp\Longleftrightarrow p=0=Tp.$ And $\deg p=0\geqslant\deg Tp\Longleftrightarrow p=C\neq 0.$\parSol{\vspace{2pt}\Endi\Hb}
@@ -2835,8 +2832,8 @@ Supp $\exists\,r\in\PoR{n+1},\;\deg Tr\leqslant n<n+1=\deg r.$ \,By (a), $\exist
 又 $T$ is inje $\Rightarrow s=r.$ While $\deg s=\deg Ts=\deg Tr<\deg r.$ Ctradic.\PfEnd
 \SepLine
 
-\ProblemN{\hypertarget{3B26}{10}}{
-	\TextNL{Supp $D\in\Lm[\BigPar]{\PoRi}$ and $\forall p,\Deg\BigPar{Dp}=\Par{\!\deg p}-1.$ \;Prove $D\in\PoRi$ is surj.\vspace{2pt}}
+\ProblemB{
+	\hypertarget{3B26}{}\TextB{Supp $D\in\Lm[\BigPar]{\PoRi}$ and $\forall p,\Deg\BigPar{Dp}=\Par{\!\deg p}-1.$ \;Prove $D\in\PoRi$ is surj.\vspace{2pt}}
 }\!\Sbra{ $D$ might not be $D:p\mapsto p\apostrophe.$\hspace{1pt}} \;\NOTICE that the following proof is wrong:\parSol{}
 Becs $\Span{Dx,Dx^2,Dx^3,\cdots}\subseteq\range D,$ and $\deg Dx^n=n-1.$\parSol{}
 又 By (2.C.10), $\Span{Dx,Dx^2,Dx^3,\cdots}=\Span{1,x,x^2,\cdots}=\PoRi.$\par\vspace{4pt}\quad
@@ -2852,17 +2849,17 @@ So that $\exists\,!\,a_i\in\Rbb,p=\sum_{i=1}^{m+1}a_ip_i\Rightarrow\exists\,q=\s
 {$\Rightarrow x^{n+1}=D\XSbra{\uline{a_{n+1}^{-1}\Par{x^{n+2}-a_n p_n-\dots-a_1 p_1-a_0 p_0}}}.$ Thus defining $p_{n+1},$ so that $Dp_{n+1}=x^{n+1}.$}\PfEnd
 \SepLine
 
-\ProblemN{11}{
-	\TextNL{Supp $V=\Rbb^\Rbb$ and $U=\Bra{\hspace{3pt}f\in\Rbb^\Rbb:f\Par{x_1}=\cdots=f\Par{x_m}=0}$ is a subsp of $V,$\vspace{2pt}}
-	\TextNL{with each $x_k\in\Rbb.$ \;Prove $\forall W\in\mathcal{S}_V U,\dim W=m.$\hfill{\large\tgsc Hint$:$ }{\FontNorm Find an iso from $V\XSlash U$ onto $\Rbb^m.$}}
+\ProblemB{
+	\TextB{Supp $V=\Rbb^\Rbb$ and $U=\Bra{\hspace{3pt}f\in\Rbb^\Rbb:f\Par{x_1}=\cdots=f\Par{x_m}=0}$ is a subsp of $V,$\vspace{2pt}}
+	\TextB{with each $x_k\in\Rbb.$ \;Prove $\forall W\in\mathcal{S}_V U,\dim W=m.$\hfill{\large\tgsc Hint$:$ }{\FontNorm Find an iso from $V\XSlash U$ onto $\Rbb^m.$}}
 }Define $T\in\Lm{V\XSlash U,\Rbb^m}$ by $T\Par{f+U}=\BigPar{f\Par{x_1},\dots,f\Par{x_m}}.$\parSol{}
 $\forall f_1+U=f_2+U\in V\XSlash U,f_1-f_2\in U\Rightarrow f_1\Par{x_k}=f_2\Par{x_k}.$ Now $T$ is well-defined.\parSol{\vspace{2pt}}
 Inje: Each $f\Par{x_k}=0\Rightarrow f+U=0.$ \;Let $S=T\circ\pi\Rightarrow\tilde{S}=T.$ Then $S$ is surj, so is $T.$\PfEnd
 \SepLine
 
-\ProblemN{\hypertarget{3F7}{12}}{
-	\TextNL{Show the dual bss of $\Par{1, x,\dots,x^m}$ of $\PoR{m}$ is $\Par{\varphi_0,\varphi_1,\dots,\varphi_m}$, where {\FontNorm $\varphi_k\Par{p}=\Frac{p^{\SmallPar{k}}\Par{0}}{k!}$.}\vspace{-2pt}}
-	\TextNL{{\FontNorm Here $p{^{\SmallPar{k}}}$ denotes the $k^{th}$ deri of $p$, with the understanding that the $0^{th}$ deri of $p$ is $p$.}\vspace{-2pt}}
+\ProblemB{
+	\hypertarget{3F7}{}\TextB{Show the dual bss of $\Par{1, x,\dots,x^m}$ of $\PoR{m}$ is $\Par{\varphi_0,\varphi_1,\dots,\varphi_m}$, where {\FontNorm $\varphi_k\Par{p}=\Frac{p^{\SmallPar{k}}\Par{0}}{k!}$.}}
+%	\TextB{{\FontNorm Here $p{^{\SmallPar{k}}}$ denotes the $k^{th}$ deri of $p$, with the understanding that the $0^{th}$ deri of $p$ is $p$.}\vspace{-2pt}}
 }{\tgsl\normalsize The uniqnes of dual bss is guaranteed by [3.5].}\vspace{2pt}\par\quad
 For $j,k\in\Nbb,\:\Par{x^{j}}{^{\SmallPar{k}}}=\left\{\begin{array}{l}j\Par{j-1}\dots\Par{j-k+1}\cdot x^{\SmallPar{j-k}}\,,\quad j \geq k.\\j\Par{j-1}\dots\Par{j-j+1}=j!\hfill j=k.\\0,\hfill j \leqslant k.\end{array}\right|\hspace{4pt}\Rightarrow\Par{x^{j}}{^{\SmallPar{k}}}\Par{0}=\MathLeftBrace{l}{0\,\,\,,\,\hspace{5.2pt}j\neq k. \\ k!\,\,,\hspace{6pt}j=k.}$\PfEnd\vspace{8pt}
 %{\Large$\envFontSmall[\footnotesize]\frac{p^{\SmallPar[0pt]{k}}\Par[0pt]{0}}{k!}$}
