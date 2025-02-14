@@ -5,17 +5,12 @@
 
 \vspace{3pt}
 
-\ProblemBnoor[]{\Tips \,\,\,}[]{
-	\TextB{\tgsl\large\envFontDefault Supp $p\in\PoFi,\deg p\leqslant m$ and $p$ has at least $\Par{m+1}$ disti zeros.}
-	\Blind{\Tips \,\,\,} \TextB{\tgsl\large\envFontDefault Then by the ctrapos of [4.12], 又 $\deg p=m,$ we conclude that $m<0.$ Hence $p=0.$}
-}\TextB{}
-\Or We show if $p$ has at least $m$ disti zeros, then either $p=0$ or $\deg p\geqslant m.$\TextB{}
-If $p=0$ then done. If not, then supp $p$ has exactly $n$ disti zeros $\lambda_1,\dots,\lambda_n.$\TextB{}
-Becs $\exists\,!\,\alpha_i\geqslant 1,q\in\PoFi,$ and $q\neq 0,$ suth $p\Par{z}=\Sbra{\Par{z-\lambda_1}{^{\alpha_1}}\cdots\Par{z-\lambda_n}{^{\alpha_n}}}q\Par{z}.$\PfEnd\vspace{2pt}
-
-\ProblemBnoor[]{\Comment\,\,\,}[]{
-	\TextB{\large\envFontDefault\NOTICE that by [4.17], some term of the poly factoriz might not be in the form $\Par{x-\lambda_k}{^{\alpha_k}}.$\vspace{-6pt}}
-}\SepLine
+\BulletPointX\Tips \,\,\,{\tgsl Supp $p\in\PoF{n}$ has at least $n+1$ disti zeros. Then by the ctrapos of [4.12], $\deg p<0\Rightarrow p=0.$}\TextB{}
+\Or We show if $p\in\PoFi{}$ has at least $m$ disti zeros, then either $p=0$ or $\deg p\geqslant m.$\TextB{}
+If $p=0$ then done. If not, then supp $p$ has exactly $m$ disti zeros $\lambda_1,\dots,\lambda_m.$\TextB{}
+Becs $\exists\,!\,\alpha_i\geqslant 1,q\in\PoFi,$ and $q\neq 0,$ suth $p\Par{z}=\Sbra{\Par{z-\lambda_1}{^{\alpha_1}}\cdots\Par{z-\lambda_m}{^{\alpha_m}}}q\Par{z}.$\PfEnd\vspace{2pt}
+\BulletPointX\AComm {\tgsl\NOTICE that by [4.17], some term of the poly factoriz might not be in the form $\Par{x-\lambda_k}{^{\alpha_k}}.$}\vspace{-2pt}
+\SepLine
 
 \BulletPointX\NoteFor{[4.7]} {\tgsl the uniqnes of coeffs of polys} \hfill[{\tgsc Another proof}]\TextB{\vspace{2pt}}
 If a poly had two different sets of coeffs, then
@@ -24,7 +19,7 @@ would give a poly with some nonzero coeffs but infily many zeros. By {\TIPS}.\Pf
 \SepLine
 
 \BulletPointX\NoteFor{[4.8]} {\tgsl div algo for polys} \hfill[{\tgsc Another proof}]\TextB{\vspace{-11pt}}
-Supp $\deg p\geqslant \deg s$. Then $\FontLarge\BigPar{\FontNorm\underbrace{1, z,\dots, z^{\deg s-1}}_{\text{of\,len}\,\deg s},\overbrace{s,zs,\cdots,z^{\deg p-\deg s}s}^{\text{of\,len}\,\SmallPar{\deg p-\deg s+1}}\FontLarge}$ is a bss of $\PoF{\deg p}.$\TextB{\vspace{-7pt}}
+Supp $\deg p\geqslant \deg s$. Then $\FontLarge\BigPar{\FontNorm\underbrace{1, z,\dots, z^{\deg s-1}}_{\text{of\,len}\,\deg s},\overbrace{s,zs,\cdots,z^{\deg p-\deg s}s}^{\text{of\,len}\,\SmallPar{\deg p\,-\,\deg s\,+\,1}}\FontLarge}$ is a bss of $\PoF{\deg p}.$\TextB{\vspace{-7pt}}
 Becs $q\in\PoFi,\exists\,!\,a_i,b_j\in\Fbb,$\TextB{}
 $q=a_0+a_1 z+\dots+a_{\deg s-1}z^{\deg s-1}+ b_0 s+b_1 zs +\dots+ b_{\deg p-\deg s}z^{\deg p-\deg s}s$\TextB{}
 $\Blind{q}=\underbrace{a_0+a_1 z+\dots+a_{\deg s-1}z^{\deg s-1}}_{r}+s\underbrace{\XPar{b_0+b_1 z +\dots+ b_{\deg p-\deg s}z^{\deg p-\deg s}}}_{q}.$ Note that $r,q$ are uniq.\PfEnd[-16pt]
@@ -51,33 +46,14 @@ Thus $p\Par{z}=\sum_{j=1}^m a_j \Par{z-\lambda}\sum_{i=1}^k \lambda^{i-1}z^{k-i}
 %\vspace{4pt}There is a const $c > 1$ so that if
 %$t\in \Par{0, 1}$, then $\aMid{q\Par{t\beta}}\leqslant\aMid{1 + a_k t^k\beta^k}+t^{k+1}c = 1 - t^k \Par{1 - tc}$.\TextB{}
 %Now letting $t=1/\Par{2c}$, we get $\aMid{q\Par{t\beta}}<1$. Ctradic. Hence $p\Par{\zeta} = 0$, as desired.\PfEnd
-%\SepLine\pagebreak
+%\SepLine
 
 \ProblemBnoor{\hypertarget{4O4e2}{4E 2}}{
 	\TextB{Prove if $w,z\in\Cbb,$ then $\aXMid{\aMid{w}-\aMid{z}}\leqslant\aMid{w-z}.$}
-}\par\quad
-\vspace{-6pt}\AlignEq{}{
-	\aMid{w-z}{^2}&=\Par{w-z}\Par{\overline{w}-\overline{z}}\hspace{380pt}\\
-	&=\aMid{w}{^2}+\aMid{z}{^2}-\Par{w\overline{z}+\overline{w}z}\\
-	&=\aMid{w}{^2}+\aMid{z}{^2}-\BigPar{\overline{\overline{w}z}+\overline{w}z}\\
-	&=\aMid{w}{^2}+\aMid{z}{^2}-2Re\Par{\overline{w}z}\\
-	&\geqslant\aMid{w}{^2}+\aMid{z}{^2}-2\aMid{\overline{w}z}\\
-	&=\aMid{w}{^2}+\aMid{z}{^2}-2\aMid{w}\aMid{z}=\aXMid{\aMid{w}-\aMid{z}}{^2}.}\par
-\vspace{-130pt}\hspace{200pt}$\hMath{l}{\left|}{\right.}{$\;\Or \!\!$\MathRightBrace{l}{
-	\aMid{w}=\aMid{w-z+z}\leqslant\aMid{w-z}+\aMid{z}\Rightarrow \aMid{w}-\aMid{z}\leqslant\aMid{w-z}\\
-	\aMid{z}=\aMid{z-w+w}\leqslant\aMid{z-w}+\aMid{w}\Rightarrow \aMid{z}-\aMid{w}\leqslant\aMid{w-z}}\\
-	\;\\\;\text{\tgsl\normalsize Geometric interpretation: The len of each side of a triangle}\\
-	\;\text{\tgsl\normalsize is greater than or equal to the diffce of the lens of the two other sides.}\\\;}$\PfEnd[7pt]\vspace{-2pt}
+}$\aMid{w-z}{^2}=\Par{w-z}\Par{\overline{w}-\overline{z}}=\aMid{w}{^2}+\aMid{z}{^2}-2Re\Par{w\overline{z}}\geqslant\aMid{w}{^2}+\aMid{z}{^2}-2\aMid{w\overline{z}}=\aXMid{\aMid{w}-\aMid{z}}{^2}.$\vspace{2pt}\parSol{}
+\Or $\aMid{w}=\aMid{w-z+z}\leqslant\aMid{w-z}+\aMid{z}\Rightarrow \aMid{w}-\aMid{z}\leqslant\aMid{w-z}.$\parSol{}
+\Blind{\Or}$\aMid{z}=\aMid{z-w+w}\leqslant\aMid{z-w}+\aMid{w}\Rightarrow \aMid{z}-\aMid{w}\leqslant\aMid{w-z}.$\PfEnd
 \SepLine
-
-\ProblemBnoor{\hypertarget{4O4e3}{4E 3}}{
-	\TextB{Supp $\Fbb=\Cbb,\varphi\in V\apostrophe.$ Let $\sigma=\REAL\circ\varphi.$ Show $\varphi\Par{v}=\sigma\Par{v}-\i\sigma\Par{\i v}$ for all $v\in V.$\vspace{2pt}}
-}$\varphi\Par{v}=\sigma\Par{v}+\i\,\IMAGINARY\,\varphi\Par{v}.$ 又 $\Real\varphi\Par{\i\, v}=\REAL\BigPar{\i\,\varphi\Par{v}}=-\IMAGINARY\,\varphi\Par{v}=\sigma\Par{\i\,v}.$\PfEnd
-\SepLine
-
-\ProblemN[]{\hypertarget{4O4}{4}}{
-	For $m,n\in\Nbp$ with $m\leqslant n,\;\lambda_1,\dots,\lambda_m\in\Fbb,$ let $p\Par{z}=\Par{z-\lambda_1}{^{n-\SmallPar{m-1}}}\Par{z-\lambda_2}\cdots\Par{z-\lambda_m}\Rightarrow\deg p=n.$\TextN{}
-}\SepLine\pagebreak
 
 \ProblemN{\hypertarget{4O5}{5}}{
 	\TextN{Supp $m\in\Nbb,$ and $z_1,\dots,z_{m+1}$ are disti in $\Fbb,$ and $w_1,\dots,w_{m+1}\in\Fbb.$}
@@ -89,15 +65,19 @@ Becs $Tq=0\Longleftrightarrow q\Par{z_1}=\dots=q\Par{z_m}=q\Par{z_{m+1}}=0\Longl
 By (2.C.10), $B_p=\Par{p_1,\dots,p_{m+1}}$ is a bss of $\PoF{m}.$ Let $B_e=\Par{e_1,\dots,e_{m+1}}$ be the std bss of $\Fbb^{m+1}.$\vspace{2pt}\par\quad
 Now $Tp_1=\Par{1,\dots,1},\;Tp_k=\XPar{\prod_{i=1}^{k-1}\Par{z_1-z_i},\dots,\prod_{i=1}^{k-1}\Par{z_j-z_i},\dots,\prod_{i=1}^{k-1}\Par{z_{m+1}-z_i}};$\vspace{3pt}\par\quad
 {\normalsize$\begin{pmatrix}
-	1 &\hspace{-6pt} 0 &\hspace{-6pt} 0 &\hspace{-6pt} \cdots &\hspace{-6pt} 0\\[-2pt]
-	1 &\hspace{-6pt} A_{2,2} &\hspace{-6pt} 0 &\hspace{-6pt} \cdots &\hspace{-6pt} 0\\[-2pt]
-	1 &\hspace{-6pt} A_{3,2} &\hspace{-6pt} A_{3,3} &\hspace{-6pt} \cdots &\hspace{-6pt} 0\\[-2pt]
-	\vdots &\hspace{-6pt} \vdots &\hspace{-6pt} \vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots\\[-2pt]
-	1 &\hspace{-6pt} A_{m+1,2} &\hspace{-6pt} A_{m+1,3} &\hspace{-6pt} \cdots &\hspace{-6pt} A_{m+1,m+1}
-\end{pmatrix}$}${}=\Mt[\BigPar]{T,B_p,B_e}.$ Where $A_{j,k}=\prod_{i=1}^{k-1}\Par{z_j-z_i}\neq 0$ for all $j> k-1\geqslant 1.$\vspace{-74pt}\par\quad
+		1 &\hspace{-6pt} 0 &\hspace{-6pt} 0 &\hspace{-6pt} \cdots &\hspace{-6pt} 0\\[-2pt]
+		1 &\hspace{-6pt} A_{2,2} &\hspace{-6pt} 0 &\hspace{-6pt} \cdots &\hspace{-6pt} 0\\[-2pt]
+		1 &\hspace{-6pt} A_{3,2} &\hspace{-6pt} A_{3,3} &\hspace{-6pt} \cdots &\hspace{-6pt} 0\\[-2pt]
+		\vdots &\hspace{-6pt} \vdots &\hspace{-6pt} \vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots\\[-2pt]
+		1 &\hspace{-6pt} A_{m+1,2} &\hspace{-6pt} A_{m+1,3} &\hspace{-6pt} \cdots &\hspace{-6pt} A_{m+1,m+1}
+	\end{pmatrix}$}${}=\Mt[\BigPar]{T,B_p,B_e}.$ Where $A_{j,k}=\prod_{i=1}^{k-1}\Par{z_j-z_i}\neq 0$ for all $j> k-1\geqslant 1.$\vspace{-74pt}\par\quad
 \hfill And $\prod_{i=1}^{k-1}\Par{z_j-z_i}=0 \Longleftrightarrow j\leqslant k-1,$ becs $z_1,\dots,z_{m+1}$ are disti.\Blind{\quad\qquad}\vspace{30pt}\par\quad
 \hfill Now the rows $\Mt{T}$ are liney indep. By (4E 3.C.17) \OR (3.F.32).\Blind{\quad}\PfEnd\vspace{3pt}
 \SepLine
+
+%\ProblemN[]{\hypertarget{4O4}{4}}{
+%	For $m,n\in\Nbp$ with $m\leqslant n,\;\lambda_1,\dots,\lambda_m\in\Fbb,$ let $p\Par{z}=\Par{z-\lambda_1}{^{n-\SmallPar{m-1}}}\Par{z-\lambda_2}\cdots\Par{z-\lambda_m}\Rightarrow\deg p=n.$\TextN{}
+%}\SepLine
 
 %\ProblemN{\hypertarget{4O2}{2}}{
 %	\TextN{Supp $m\in\Nbp$. Is the set $U=\zeroSubs\cup\Bra{p\in\PoFi:\deg p = m}$ a subsp of $\PoFi$?}
@@ -132,14 +112,6 @@ Write $p\Par{x}=x^m\envFontSmall\XPar{${\FontLarge$\frac{a_0}{x^m}$}${}+{}${\Fon
 Then $\lim\limits_{x\rightarrow -\infty}p\Par{x}=-\delta\infty\,;\;\;\lim\limits_{x\rightarrow \infty}p\Par{x}=\delta\infty\Rightarrow p$ has at least one real zero.\PfEnd
 \SepLine
 
-\ProblemN{\hypertarget{4O9}{9}}{
-	\TextN{Supp $p\in\PoCi$. Define $q:\Cbb\rightarrow\Cbb\,$ by $q\Par{z} = p\Par{z}\overline{p\Par{\overline z}}$. Prove $q\in\PoRi$.\vspace{1pt}}
-}By [4.5], $\overline z{^n}=\overline{z^n}.$ \;For any $f\Par{z}=a_nz^n+\dots+a_1z+a_0,\;\overline{f\Par{\overline{z}}}=\overline{a_n}z^n+\dots+\overline{a_1}z+\overline{a_0}.$\parSol{}
-Becs $q\Par{z}=p\Par{z}\overline{p\Par{\overline z}}=\overline{p\Par{\overline z}}p\Par{z}=\overline{q\Par{\overline z}}.$ \;Each $c_k=\overline{c_k}\Rightarrow c_k\in\Rbb.$\PfEnd\vspace{6pt}\parSol{}
-\Or Becs $q\Par{z}=p\Par{z}\overline{p\Par{\overline z}}=\sum_{k=0}^{2n}\XPar{\!\sum_{i+j=k}c_i\overline{c_j}}\,z^k.$ For each $k\in\Bra{0,\dots,2n},$\vspace{0pt}\parSol{}
-$\overline{\sum_{i+j=k}c_i\overline{c_j}}=\sum_{i+j=k}\overline{c_i\overline{c_j}}=\sum_{i+j=k}{c_j}\overline{c_i}=\sum_{i+j=k}c_i\overline{c_j}\in\Rbb.$\PfEnd
-\SepLine\pagebreak
-
 \ProblemN{\hypertarget{4O8}{8}}{
 	\TextN{Supp $p\in\PoRi.$ Define $Tp:\Rbb\rightarrow\Rbb\,$ by $\Par{Tp}\Par{x}={}${\FontNorm$\MathLeftBrace{l}{\Frac{p\Par{x}-p\Par{3}}{x-3}\;$ if $x\neq 3,\\[4pt]p\apostrophe\Par{3}$\hfill if $x=3.}$}\vspace{-10pt}}
 	\TextN{Show {\tgnr\large(a)} $Tp\in\PoRi;$ \, {\tgnr\large(b)} $T\in\Lm[\BigPar]{\PoRi}.$\vspace{0pt}}
@@ -153,97 +125,81 @@ For $x=3,T\Par{x^n}=n3^{n-1}=\sum_{i=1}^n 3^{n-1}=\sum_{i=1}^n 3^{i-1}x^{n-i}.$ 
 \Or (a) Becs $\exists\,!\,q\in\PoRi,p\Par{x}-p\Par{3}=\Par{x-3}q\Par{x}.$ For $x\neq 3,\;q\Par{x}={}${\Large\envFontSmall[\footnotesize]\def\SmallPar{\Par}$\frac{p\SmallPar{x}\,-\,p\SmallPar{3}}{x\,-\,3}$}.\par\quad\Ha
 \Blind{\Or}$p\apostrophe\Par{x}=\BigPar{p\Par{x}-p\Par{3}}\apostrophe=q\Par{x}+\Par{x-3}q\apostrophe\Par{x}.$ For $x=3,\;p\apostrophe\Par{3}=q\Par{3}.$ Now $Tp=q.$\vspace{4pt}\par\quad
 \Blind{\Or}(b) Let $q_k\Par{x}\Par{x-3}=p_k\Par{x}-p_k\Par{3}.$ Now by (a), $Tp_k=q_k.$\par\quad\Hb
-\Blind{\Or}Then $\Par{p_1+\lambda p_2}\Par{x}-\Par{p_1+\lambda p_2}\Par{3}=\Par{x-3}\Par{q_1+\lambda q_2}\Par{x}.$\par\quad\Hb
-\Blind{\Or}By the uniqnes of $q_1+\lambda q_2$, $T\Par{p_1+\lambda p_2}=q_1+\lambda q_2.$\PfEnd
+\Blind{\Or}Then $\Par{p_1+\lambda p_2}\Par{x}-\Par{p_1+\lambda p_2}\Par{3}=\Par{x-3}\Par{q_1+\lambda q_2}\Par{x}.$ \,By the uniqnes of $q_1+\lambda q_2.$\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{4O11}{11}}{
 	\TextNL{Supp $p\in\PoFi$ with $p\neq 0$. Let $U=\Bra{pq:q\in\PoFi}$.\vspace{1pt}}
 	\TextNL{{\tgnr\large(a)} Show $\dim\PoFi\XSlash U = \deg p$; \; {\tgnr\large(b)} Find a bss of $\PoFi\XSlash U$.}
-}\NOTICE that $pq\neq p\circ q,$ see (4E 3.A.10).\par\quad
-$U$ is a subsp of $\PoFi$ becs $\forall s_1,s_2\in\PoFi,\lambda\in\Fbb,ps_1+\lambda ps_2=p\Par{s_1+\lambda s_2}\in U.$\par\vspace{3pt}\quad
-If $\deg p=0,$ then $U=\PoFi,\PoFi\XSlash U=\Bra{0},$ with the uniq bss $\Par{}.$ Supp $\deg p\geqslant 1.$\par\vspace{6pt}\quad
-(a) By [4.8], $\forall s\in\PoFi,\exists\,!\,r\in\PoF{\deg p-1},q\in\PoFi\,\Sbra{\,\exists\,!\,pq\in U\,},s=\Par{p}q+\Par{r}.$\vspace{2.5pt}\par\quad\Ha
-Thus $\PoFi=U\oplus\PoF{\deg p-1}.$ By the \NOTEFOR\;[3.91] in (3.E), $\PoFi\XSlash U$ and $\PoF{\deg p-1}$ are iso.\par\vspace{4.5pt}\quad\Ha
-\Or Define $R:\PoFi\rightarrow\PoF{\deg p-1}$ by $R\Par{s}=r$ for all $s\in\PoF.$ We show $R$ is liney.\vspace{2pt}\par\quad\Ha
-$\forall s_1,s_2\in\PoFi,\lambda\in\Fbb,\exists\,!\,r_1,r_2\in\PoF{\deg p-1},q_1,q_2\in\PoFi,s_1=\Par{p}q_1+\Par{r_1};\;s_2=\Par{p}q_2+\Par{r_2}.$\vspace{2pt}\par\quad\Ha
-又 $\exists\,!\,r\in\PoF{\deg p-1},q\in\PoFi,\Par{s_1+\lambda s_2}=\Par{p}q+\Par{r}=\Par{p}\Par{q_1+\lambda q_2}+\Par{r_1+\lambda r_2}.$\vspace{2pt}\par\quad\Ha
-Note that $r_1,r_2\in\PoF{\deg p-1}\Rightarrow r_1+\lambda r_2\in\PoF{\deg p-1}.$\vspace{2pt}\par\quad\Ha
-\OR Note that $\Deg\Par{r_1+\lambda r_2}\leqslant\max\!\Bra{\deg r_1,\Deg\Par{\lambda r_2}}\leqslant\max\!\Bra{\deg r_1,\deg r_2}<\deg p.$\vspace{2pt}\par\quad\Hb
-By the uniqnes part of [4.8], $s=s_1+\lambda s_2;\;r=r_1+\lambda r_2.$
-Thus $R\Par{s_1+\lambda s_2}=R\Par{s_1}+\lambda R\Par{s_2}.$\vspace{6pt}\par\quad\Ha
-Becs $Rs=0\Longleftrightarrow s=pq,\exists\,!\,q\in\PoFi\Longleftrightarrow s\in U.$ And $\forall r\in\PoF{\deg p-1},Rr=r.$\vspace{2pt}\par\quad\Ha
-Now $\null R=U,\;\range R=\PoF{\deg p-1}.$\vspace{3pt}\par\quad\Ha
-Hence $\tilde{R}:\PoFi\XSlash U\rightarrow\PoF{\deg p-1}$ is defined by $\tilde{R}\Par{s+U}=Rs.$ By [3.91(d)], $\tilde{R}$ is iso.\par\vspace{6pt}\quad
-(b) For each $k\in\Bra{0,1,\dots,\deg p-1},\tilde{R}\Par{z^k+U}=R\Par{z^k}=z^k\Rightarrow \tilde{R}{^{-1}}\Par{z^k}=z^k+U.$\par\quad\Hb
-Thus $\Par{1+U,z+U,\dots,z^{\deg p-1}+U}$ can be a bss of $\PoFi\XSlash U.$\PfEnd
+}{\tgsl Note that $pq\neq p\circ q,$ see (4E 3.A.10).} \;Let $\deg p=m$ as precond.\par\quad
+If $\deg p=0,$ then $U=\PoFi,\PoFi\XSlash U=\Bra{0+U},$ with the uniq bss $\Par{}.$ \;Supp $\deg p\geqslant 1.$\par\vspace{2pt}\quad
+(a) Becs $\forall s\in\PoFi,\exists\,!\,r\in\PoF{m-1},q\in\PoFi\Rightarrow\exists\,!\,pq\in U,\;s=\Par{p}q+\Par{r}\Rightarrow\PoFi=U\oplus\PoF{m-1}.$\vspace{0pt}\par\quad\Ha
+By \Sbra{3.E {\NOTEFOR} [3.88, 90, 91]} \OR Define $R\Par{s}=r\Rightarrow\null R=U,$ and $R$ surj. Immed.\par\vspace{2pt}\quad
+(b) Let $\Par{1,z,\dots,z^{m-1}}$ be a bss of $\PoF{m-1}.$ By (4E 3.E.14) \OR $\tilde{R}{^{-1}}\!:\PoF{m-1}\rightarrow\PoFi{}\XSlash U$, immed.\PfEnd
+\SepLine\pagebreak
+
+\ProblemN{\hypertarget{4O9}{9}}{
+	\TextN{Supp $p\in\PoCi$. Define $q:\Cbb\rightarrow\Cbb\,$ by $q\Par{z} = p\Par{z}\overline{p\Par{\overline z}}$. Prove $q\in\PoRi$.\vspace{1pt}}
+}By [4.5], $\overline z{^n}=\overline{z^n}.$ \;For any $f\Par{z}=a_nz^n+\dots+a_1z+a_0,\;\overline{f\Par{\overline{z}}}=\overline{a_n}z^n+\dots+\overline{a_1}z+\overline{a_0}.$\parSol{}
+Becs $q\Par{z}=p\Par{z}\overline{p\Par{\overline z}}=\overline{p\Par{\overline z}}p\Par{z}=\overline{q\Par{\overline z}}.$ \;Each $c_k=\overline{c_k}\Rightarrow c_k\in\Rbb.$\PfEnd\vspace{6pt}\parSol{}
+\Or Becs $q\Par{z}=p\Par{z}\overline{p\Par{\overline z}}=\sum_{k=0}^{2n}\XPar{\!\sum_{i+j=k}c_i\overline{c_j}}\,z^k.$ For each $k\in\Bra{0,\dots,2n},$\vspace{0pt}\parSol{}
+$\overline{\sum_{i+j=k}c_i\overline{c_j}}=\sum_{i+j=k}\overline{c_i\overline{c_j}}=\sum_{i+j=k}{c_j}\overline{c_i}=\sum_{i+j=k}c_i\overline{c_j}\in\Rbb.$\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{4O10}{10}}{
 	\TextNL{Supp disti $x_0,x_1,\dots,x_m\in\Rbb,$ and $p\in\PoC{m}$ suth each $p\Par{x_k}\in\Rbb.$ Prove $p\in\PoRi$.}
 }By {\TIPS} and Exe (5), $\exists\,!\,q\in\PoR{m}$ suth $q\Par{x_k}=p\Par{x_k}.$ Hence $p=q.$\PfEnd\vspace{11pt}\quad
-\Or Define $q\Par{x}=\sum_{j=0}^m{}${\Large\envFontSmall[\footnotesize]\def\SmallPar{\Par}$\frac{\SmallPar{x\,-\,x_0}\SmallPar{x\,-\,x_1}\cdots\SmallPar{x\,-\,x_{j-1}}\SmallPar{x\,-\,x_{j+1}}\cdots\SmallPar{x\,-\,x_m}}{\SmallPar{x_j\,-\,x_0}\SmallPar{x_j\,-\,x_1}\cdots\SmallPar{x_j\,-\,x_{j-1}}\SmallPar{x_j\,-\,x_{j+1}}\cdots\SmallPar{x_j\,-\,x_m}}$}${\,}p\Par{x_j}.$\par\vspace{4pt}\quad
+\Or Define $q\Par{x}=\sum_{j=0}^m{}${\Large\envFontSmall[\footnotesize]\def\SmallPar{\Par}$\frac{\SmallPar{x\,-\,x_0}\SmallPar{x\,-\,x_1}\,\cdots\,\SmallPar{x\,-\,x_{j-1}}\SmallPar{x\,-\,x_{j+1}}\,\cdots\,\SmallPar{x\,-\,x_m}}{\SmallPar{x_j\,-\,x_0}\SmallPar{x_j\,-\,x_1}\,\cdots\,\SmallPar{x_j\,-\,x_{j-1}}\SmallPar{x_j\,-\,x_{j+1}}\,\cdots\,\SmallPar{x_j\,-\,x_m}}$}${\,}p\Par{x_j}.$\par\vspace{4pt}\quad
 又 Each $x_j,\,p\Par{x_j}\in\Rbb\Rightarrow q\in\PoR{m}.$ \;Becs each $q\Par{x_k}=1\cdot p\Par{x_k}\Rightarrow\Par{q-p}\Par{x_k}=0.$\par\quad
 $\Par{q-p}$ has $\Par{m+1}$ zeros. By {\TIPS}, $q-p=0\Rightarrow p=q\in\PoRi.$\PfEnd
 \SepLine
 
 \ProblemBnoor{\hypertarget{4O4e13}{4E 13}}{
-	\TextB{Supp nonconst $p,q\in\PoCi$ have no common zeros. Let $m = \deg p$, $n = \deg q$.\vspace{3pt}}
-	\TextB{Define $T:\PoC{n-1}\times\PoC{m-1}\rightarrow\PoC{m+n-1}$ by $T\Par{r, s} = rp + sq.$ Prove $T$ is iso.\vspace{3pt}}
+	\TextB{Supp nonconst $p,q\in\PoCi$ have no common zeros. Let $m = \deg p$, $n = \deg q$.\vspace{1pt}}
+	\TextB{Define $T:\PoC{n-1}\times\PoC{m-1}\rightarrow\PoC{m+n-1}$ by $T\Par{r, s} = rp + sq.$ Prove $T$ is inje.\vspace{3pt}}
 	\ACoro \TextB{$\exists\,!\,r\in\PoC{n-1},s\in\PoC{m-1}$ suth $rp + sq = 1.$}
-}\par\quad
-$T$ is liney becs $\forall\,r_1,r_2\in\PoC{n-1},s_1,s_2\in\PoC{m-1},\lambda\in\Fbb,$\par\quad
-$T\BigPar{\Par{r_1,s_1}+\lambda\Par{r_2,s_2}}=T\Par{r_1+\lambda r_2,s_1+\lambda s_2}=\Par{r_1+\lambda r_2}p+\Par{s_1+\lambda s_2}q=T\Par{r_1,s_1}+\lambda T\Par{r_2,s_2}.$\par\vspace{6pt}\quad
-Let $\lambda_1,\dots,\lambda_M$ and $\mu_1,\dots,\mu_N$ be the disti zeros of $p$ and $q$ respectly. \NOTICE that $M\leqslant m,N\leqslant n.$\vspace{2pt}\par\quad
-Note that the ctrapos of [4.13], $M=0\Longleftrightarrow m=0\Rightarrow s=0\Longleftrightarrow r=0 \Leftarrow n=0\Longleftrightarrow N=0.$\vspace{2pt}\par\quad
-Now supp $M,N\geqslant 1.$ We show $s=0.$ Showing $r=0$ is almost the same.\vspace{2pt}\par\quad
+}Immed, $T$ is liney. \;Supp $T\Par{r,s}=rp+sq=0.$\par\quad
+Then $rp=-sq.$ Becs $p,q$ are \uline{coprime} $\Rightarrow p\:\mmid\:s,$ while $\deg s\leqslant m-1\Rightarrow s=0\Rightarrow r=0.$\PfEnd\vspace{6pt}\quad
+\Or Let $\lambda_1,\dots,\lambda_M$ and $\mu_1,\dots,\mu_N$ be the disti zeros of $p$ and $q$ respectly. \NOTICE that $M\leqslant m,N\leqslant n.$\vspace{2pt}\par\quad
+By the ctrapos of [4.13], $M=0\Longleftrightarrow m=0\Rightarrow s=0\Longleftrightarrow r=0 \Leftarrow n=0\Longleftrightarrow N=0.$\vspace{2pt}\par\quad
+Now supp $M,N\geqslant 1.$ We show $s=0.$ \,{\FontSmall Simlr for $r=0.$ \Or $s=0\Rightarrow r=0.$}\vspace{2pt}\par\quad
 Write $p\Par{z}=a\Par{z-\lambda_1}{^{\alpha_1}}\cdots\Par{z-\lambda_M}{^{\alpha_M}}.$ \BigPar{ $\exists\,!\,\alpha_j\geqslant 1,a\in\Fbb.$ } Let $\max\!\Bra{\alpha_1,\dots,\alpha_M}=A.$\vspace{2pt}\par\quad
-For each $D\in\Bra{0,1,\dots,A-1},$ let $I_{D,\alpha}=\Bra{{\gamma_{D,1}},\dots,{\gamma_{D,J}}}$ be suth each $\alpha_{\gamma_{D,j}}\geqslant D+1.$\vspace{2pt}\par\quad
-Note that $I_{A-1,\alpha}\subseteq \cdots\subseteq I_{0,\alpha}=\Bra{1,\dots,M}.$ Becs $rp+sq=0\Rightarrow\Par{rp+sq}{^{\SmallPar{k}}}=0$ for all $k\in\Nbp.$\vspace{2pt}\par\quad
-We use induc by $D$ to show $s{^{\SmallPar{D}}}\Par{\lambda_{\gamma_{D,j}}}=0$ for each $D\in\Bra{0,\dots,A-1}.$\vspace{2pt}\par\quad
-\NOTICE that $p{^{\SmallPar{D}}}\Par{\lambda_\gamma}=0$ for each $D\in\Bra{0,\dots,A-1}$ and each $\lambda_\gamma\in I_{D,\alpha}.$\hfill(L1)\vspace{2pt}\par\quad
-(i) $D=0.$ $\Par{rp+sq}\Par{\lambda_{\gamma_{0,j}}}=\Par{sq}\Par{\lambda_{\gamma_{0,j}}}=s\Par{\lambda_{\gamma_{0,j}}}=0.$\vspace{2pt}\par\quad\Hi
-$D=1.$ $\Par{rp+sq}\apostrophe\Par{\lambda_{\gamma_{1,j}}}=\Par{r\apostrophe p+rp\apostrophe}\Par{\lambda_{\gamma_{1,j}}}+\Par{s\apostrophe q+sq\apostrophe}\Par{\lambda_{\gamma_{1,j}}}=\Par{s\apostrophe q}\Par{\lambda_{\gamma_{1,j}}}=s\apostrophe\Par{\lambda_{\gamma_{1,j}}}=0.$\vspace{4pt}\par\quad\Endi
-(ii) $2\leqslant D\leqslant A-1.$ Asum $\;s{^{\SmallPar{d}}}\Par{\lambda_{\gamma_{d,j}}}=0$ for each $d\in\Bra{1,\dots,D-1}$ and each $\lambda_{\gamma_{d,j}}\in I_{d,\alpha}.$\vspace{2pt}\par\quad\Hii
-\XPar{ Becs $\forall p,q\in\PoFi,k\in\Nbp,\Par{pq}{^{\SmallPar{k}}}=\mathC_{k}^k p{^{\SmallPar{k}}}q{^{\SmallPar{0}}}+\dots+\mathC_{k}^j p{^{\SmallPar{j}}}q{^{\SmallPar{k-j}}}+\dots+\mathC_{k}^0 p{^{\SmallPar{0}}}q{^{\SmallPar{k}}}.$ }\hfill(L2)\vspace{4pt}\par\quad\Hii
-Now $\Sbra{rp+sq}{^{\SmallPar{D}}}\Par{\lambda_{\gamma_{D,j}}}=\Sbra{\mathC_{D}^D r{^{\SmallPar{D}}}p{^{\SmallPar{0}}}+\dots+\mathC_{D}^d r{^{\SmallPar{d}}}p{^{\SmallPar{D-d}}}+\dots+\mathC_{D}^0 r{^{\SmallPar{0}}}p{^{\SmallPar{D}}}}\Par{\lambda_{\gamma_{D,j}}}$\vspace{4pt}\par\quad\Hii
-\Blind{Now} $\Blind{\Sbra{rp+sq}{^{\SmallPar{D}}}\Par{\lambda_{\gamma_{D,j}}}=}+\Sbra{\mathC_{D}^D s{^{\SmallPar{D}}}q{^{\SmallPar{0}}}+\dots+\mathC_{D}^d s{^{\SmallPar{d}}}q{^{\SmallPar{D-d}}}+\dots+\mathC_{D}^0 s{^{\SmallPar{0}}}q{^{\SmallPar{D}}}}\Par{\lambda_{\gamma_{D,j}}}$\vspace{4pt}\par\quad\Hii
-\Blind{Now} $\Blind{\Sbra{rp+sq}{^{\SmallPar{D}}}\Par{\lambda_{\gamma_{D,j}}}}=\Sbra{\mathC_{D}^D s{^{\SmallPar{D}}}q{^{\SmallPar{0}}}}\Par{\lambda_{\gamma_{D,j}}}.$\; Where each $\lambda_{\gamma_{D,j}}\in I_{D,\alpha}\subseteq I_{D-1,\alpha}.$\vspace{4pt}\par\quad\Hii
-Hence $s{^{\SmallPar{D}}}\Par{\lambda_{\gamma_{D,j}}}=0.$ The asum holds for all $D\in\Bra{0,\dots,A-1}.$\vspace{6pt}\par\quad
-\NOTICE that $\forall k=\Bra{0,\dots,A-2},s{^{\SmallPar{k}}}$ and $s{^{\SmallPar{k+1}}}$ have zeros $\Bra{\lambda_{\gamma_{k+1,1}},\dots,\lambda_{\gamma_{k+1,J}}}$ in common.\vspace{2pt}\par\quad
-Now $\forall D\in\Bra{1,A-1},s=s{^{\SmallPar{0}}},\dots,s{^{\SmallPar{D}}}$ have zeros $\Bra{\lambda_{\gamma_{D,1}},\dots,\lambda_{\gamma_{D,J}}}$ in common.\vspace{2pt}\par\quad
-Thus $\forall D\in\Bra{0,A-1},\;s\Par{z}$ is divisible by $\Par{z-\lambda_{\gamma_{D,1}}}{^{\alpha_{\gamma_{D,1}}}}\cdots\Par{z-\lambda_{\gamma_{D,J}}}{^{\alpha_{\gamma_{D,J}}}}.$\vspace{2pt}\par\quad
-Hence we write $s\Par{z}=\XPar{\Par{z-\lambda_1}{^{\alpha_1}}\cdots\Par{z-\lambda_M}{^{\alpha_M}}}\,s_0\Par{z},$ while $\deg s\leqslant m-1<m=\alpha_1+\dots+\alpha_M.$\vspace{2pt}\par\quad
-Thus by {\TIPS}, $s=0.$ Following the same pattern, we conclude that $r=0.$\vspace{2pt}\par\quad
-Hence $T$ is inje. And $\Dim\BigPar{\PoC{n-1}\times\PoC{m-1}}=\dim\PoC{m+n-1}\Rightarrow T$ is surj. Thus $T$ is iso.\PfEnd
-\SepLine
-
-\ProblemN{L1}{
-	\TextB{Supp $p\Par{z}=\Par{z-\lambda}{^\alpha}q\Par{z}$ and $\alpha\in\Nbp.$ Prove ${p{^{\SmallPar{\alpha-1}}}}\Par{\lambda}=0.$}
-}\par\quad
-Supp $p\in\PoFi.$ Write $p\Par{z}=\Par{z-\lambda}{^A}q\Par{z},$ where $A\in\Nbp,q\Par{\lambda}\neq 0.$\vspace{2pt}\par\quad
-We use induc to show for all $\alpha\in\Bra{1,\dots,A},{p{^{\SmallPar{\alpha-1}}}}\Par{\lambda}=0.$\vspace{2pt}\par\quad
-(i) $\alpha=1.$ $p{^{\SmallPar{0}}}\Par{\lambda}=0.$\par\quad\Endi
-(ii) $2\leqslant\alpha\leqslant A.$ Asum $p{^{\SmallPar{a-2}}}\Par{\lambda}=0$ for all $a\in\Bra{2,\dots,\alpha}.$\par\quad\Hii
-\NOTICE that $p\Par{z}=\Par{z-\lambda}{^{\alpha-1}}q_{\alpha-1}\Par{z}=\Par{z-\lambda}{^{\alpha}}q_{\alpha}\Par{z},$ where $q_{\alpha-1}\Par{z}=\Par{z-\lambda}q_{\alpha}\Par{z}.$\vspace{2pt}\par\quad\Hii
-Becs $p{^{\SmallPar{\alpha-1}}}\Par{z}=\XSbra{\mathC_{\alpha-1}^{\alpha-1}\Par{z-\lambda}{^{0}}q_{\alpha-1}\Par{z}+\dots+\mathC_{\alpha-1}^{k}\Par{z-\lambda}{^{\alpha-1-k}}q_{\alpha-1-k}\Par{z}$\vspace{2pt}\par\quad\Hii
-\Blind{Becs} $\Blind{p{^{\SmallPar{\alpha-1}}}\Par{z}={}}{}+\dots+\mathC_{\alpha-1}^{0}\Par{z-\lambda}{^{\alpha-1}}q_{\alpha-1}{^{\SmallPar{\alpha-1}}}\Par{z}}.$ Now $p{^{\SmallPar{\alpha-1}}}\Par{\lambda}=\mathC_{\alpha-1}^{\alpha-1}q_{\alpha-1}\Par{\lambda}=0.$\PfEnd
+For each $D\in\Bra{0,1,\dots,A-1},$ let $I_{>D}=\Bra{{I_{D,1}},\dots,{I_{D,J_D}}}$ be suth each $\alpha\Sbra{I_{D,j}}=\alpha_{I_{D,j}}\geqslant D+1.$\vspace{2pt}\par\quad
+Now $\Bra{M}=I_{>A-1}\subseteq \cdots\subseteq I_{>0}=\Bra{1,\dots,M}.$ Becs $rp+sq=0\Rightarrow\Par{rp+sq}{^{\SmallPar{k}}}=0$ for all $k\in\Nbp.$\vspace{2pt}\par\quad
+We use induc by $D$ to show $s{^{\SmallPar{D}}}\BigPar{\lambda\Sbra{I_{D,j}}}=0$ for each $D\in\Bra{0,\dots,A-1}.$\vspace{2pt}\par\quad
+\NOTICE that $p{^{\SmallPar{D}}}\BigPar{\lambda\Sbra{I_{D,j}}}=0$ for each $D\in\Bra{0,\dots,A-1}$ and each $I_{D,j}\in I_{>D}.$\hfill(L2)\vspace{2pt}\par\quad
+(i) $D=0.$ Each $\Par{rp+sq}\BigPar{\lambda\Sbra{I_{0,j}}}=\Par{sq}\BigPar{\lambda\Sbra{I_{0,j}}}=s\BigPar{\lambda\Sbra{I_{0,j}}}=0.$ Where $q\BigPar{\lambda\Sbra{I_{0,j}}}=0.$\vspace{2pt}\par\quad\Hi
+$D=1.$ Each $\Par{r\apostrophe p+rp\apostrophe}\BigPar{\lambda\Sbra{I_{1,j}}}+\Par{s\apostrophe q+sq\apostrophe}\BigPar{\lambda\Sbra{I_{1,j}}}=\Par{s\apostrophe q}\BigPar{\lambda\Sbra{I_{1,j}}}=s\apostrophe\BigPar{\lambda\Sbra{I_{1,j}}}=0.$\vspace{1pt}\par\quad\Hi
+\Blind{$D=1.$} Where $p\apostrophe\BigPar{\lambda\Sbra{I_{1,j}}}=0,$ and each $I_{1,j}\subseteq I_{0,j}\Rightarrow s\BigPar{\lambda\Sbra{I_{1,j}}}=0.$\vspace{4pt}\par\quad\Endi
+(ii) $2\leqslant D\leqslant A-1.$ Asum $\;s{^{\SmallPar{d}}}\BigPar{\lambda\Sbra{I_{d,j}}}=0$ for each $d\in\Bra{0,1,\dots,D-1}$ and each $\lambda\Sbra{I_{d,j}}\in I_{>d}.$\vspace{2pt}\par\quad\Hii
+Each $\Sbra{rp+sq}{^{\SmallPar{D}}}\BigPar{\lambda\Sbra{I_{D,j}}}=\Sbra{\mathC_{D}^D r{^{\SmallPar{D}}}p{^{\SmallPar{0}}}+\dots+\mathC_{D}^d r{^{\SmallPar{d}}}p{^{\SmallPar{D-d}}}+\dots+\mathC_{D}^0 r{^{\SmallPar{0}}}p{^{\SmallPar{D}}}}\BigPar{\lambda\Sbra{I_{D,j}}}$\hfill(L1)\vspace{4pt}\par\quad\Hii
+\Blind{Each} $\Blind{\Sbra{rp+sq}{^{\SmallPar{D}}}\BigPar{\lambda\Sbra{I_{D,j}}}=}+\Sbra{\mathC_{D}^D s{^{\SmallPar{D}}}q{^{\SmallPar{0}}}+\dots+\mathC_{D}^d s{^{\SmallPar{d}}}q{^{\SmallPar{D-d}}}+\dots+\mathC_{D}^0 s{^{\SmallPar{0}}}q{^{\SmallPar{D}}}}\BigPar{\lambda\Sbra{I_{D,j}}}$\vspace{4pt}\par\quad\Hii
+\Blind{Each} $\Blind{\Sbra{rp+sq}{^{\SmallPar{D}}}\BigPar{\lambda\Sbra{I_{D,j}}}}=\Sbra{\mathC_{D}^D s{^{\SmallPar{D}}}q{^{\SmallPar{0}}}}\BigPar{\lambda\Sbra{I_{D,j}}}.$\; Where each $\lambda\Sbra{I_{D,j}}\in I_{>D}\subseteq I_{D-1,\alpha}.$\vspace{4pt}\par\quad\Hii
+Hence $s{^{\SmallPar{D}}}\BigPar{\lambda\Sbra{I_{D,j}}}=0.$ The asum holds for all $D\in\Bra{0,\dots,A-1}.$\vspace{6pt}\par\quad
+\NOTICE that $\forall k=\Bra{0,\dots,A-2},s{^{\SmallPar{k}}}$ and $s{^{\SmallPar{k+1}}}$ have zeros $\envFontLarge\Bra{{\envFontDefault\lambda\Sbra{I_{k+1,1}},\dots,\lambda\Sbra{I_{k+1,J}}}}$ in common.\vspace{2pt}\par\quad
+Now $\forall D\in\Bra{1,A-1},s=s{^{\SmallPar{0}}},\dots,s{^{\SmallPar{D}}}$ have zeros $\envFontLarge\Bra{{\envFontDefault\lambda\Sbra{I_{D,1}},\dots,\lambda\Sbra{I_{D,J}}}}$ in common.\vspace{2pt}\par\quad
+Thus $\forall D\in\Bra{0,A-1},\;s\Par{z}$ is divisible by $\BigPar{z-\lambda_{I_{D,1}}}{^{\alpha_{I_{D,1}}}}\cdots\BigPar{z-\lambda_{I_{D,J}}}{^{\alpha_{I_{D,J}}}}.$\vspace{2pt}\par\quad
+Hence $s\Par{z}=\Sbra{\Par{z-\lambda_1}{^{\alpha_1}}\cdots\Par{z-\lambda_M}{^{\alpha_M}}}\,s_0\Par{z},$ while $\deg s<m=\alpha_1+\dots+\alpha_M.$ Now by {\TIPS}.\PfEnd
 \SepLine\pagebreak
 
-\ProblemN{L2}{
-	\TextB{Prove $\forall p,q\in\PoFi,k\in\Nbp,\Par{pq}{^{\SmallPar{k}}}=\mathC_{k}^k p{^{\SmallPar{k}}}q{^{\SmallPar{0}}}+\dots+\mathC_{k}^j p{^{\SmallPar{j}}}q{^{\SmallPar{k-j}}}+\dots+\mathC_{k}^0 p{^{\SmallPar{0}}}q{^{\SmallPar{k}}}.$}
-}\par\quad
-We use induc by $k\in\Nbp.$\par\quad
-(i) $k=1.$ $\Par{pq}{^{\SmallPar{1}}}=\Par{pq}\apostrophe=C_{1}^1 p{^{\SmallPar{1}}}q{^{\SmallPar{0}}}+C_{1}^0 p{^{\SmallPar{0}}}q{^{\SmallPar{1}}}.$\par\quad\Endi
-(ii) $k\geqslant 2.$ Asum for $\Par{pq}{^{\SmallPar{k-1}}}=\mathC_{k-1}^{k-1} p{^{\SmallPar{k-1}}}q{^{\SmallPar{0}}}+\dots+\mathC_{k-1}^j p{^{\SmallPar{j}}}q{^{\SmallPar{k-1-j}}}+\dots+\mathC_{k-1}^0 p{^{\SmallPar{0}}}q{^{\SmallPar{k-1}}}.$\vspace{4pt}\par\quad\Hii
-Now $\Par{pq}{^{\SmallPar{k}}}=\BigPar{\Par{pq}{^{\SmallPar{k-1}}}}\apostrophe=\XPar{\sum_{j=0}^{k-1}\mathC_{k-1}^{j} p{^{\SmallPar{j}}}q{^{\SmallPar{k-j-1}}}}\apostrophe=\sum_{j=0}^{k-1}\XSbra{\mathC_{k-1}^{j} \XPar{p{^{\SmallPar{j+1}}}q{^{\SmallPar{k-j-1}}}+p{^{\SmallPar{j}}}q{^{\SmallPar{k-j}}}}}.$\vspace{4pt}\par\quad\Hii
-\Blind{Now} $\Blind{\Par{pq}{^{\SmallPar{k}}}\!}=\XSbra{\mathC_{k-1}^{0}\XPar{ \uwave{p{^{\SmallPar{1}}}q{^{\SmallPar{k-1}}}}+\boxed{p{^{\SmallPar{0}}}q{^{\SmallPar{k}}}}}}+\XSbra{\mathC_{k-1}^1\XPar{p{^{\SmallPar{2}}}q{^{\SmallPar{k-2}}}+\uwave{p{^{\SmallPar{1}}}q{^{\SmallPar{k-1}}}}}}$\vspace{6pt}\par\quad\Hii
-\Blind{Now} $\Blind{\Par{pq}{^{\SmallPar{k}}}=}+\dots+\XSbra{\mathC_{k-1}^{j-2}\XPar{ \uline{p{^{\SmallPar{j-1}}}q{^{\SmallPar{k-j+1}}}}+p{^{\SmallPar{j-2}}}q{^{\SmallPar{k-j+2}}}}}+\XSbra{\mathC_{k-1}^{j-1}\XPar{ \uuline{p{^{\SmallPar{j}}}q{^{\SmallPar{k-j}}}}+\uline{p{^{\SmallPar{j-1}}}q{^{\SmallPar{k-j+1}}}}}}$\vspace{4pt}\par\quad\Hii
-\Blind{Now} $\Blind{\Par{pq}{^{\SmallPar{k}}}=}+\XSbra{\mathC_{k-1}^{j}\XPar{ \uwave{p{^{\SmallPar{j+1}}}q{^{\SmallPar{k-j-1}}}}+\uuline{ p{^{\SmallPar{j}}}q{^{\SmallPar{k-j}}}}}}+\XSbra{\mathC_{k-1}^{j+1}\XPar{p{^{\SmallPar{j+2}}}q{^{\SmallPar{k-j-2}}}+\uwave{p{^{\SmallPar{j+1}}}q{^{\SmallPar{k-j-1}}}}}}$\vspace{4pt}\par\quad\Hii
-\Blind{Now} $\Blind{\Par{pq}{^{\SmallPar{k}}}=}+\dots+\XSbra{\mathC_{k-1}^{k-2}\XPar{ \uline{p{^{\SmallPar{k-1}}}q{^{\SmallPar{1}}}}+p{^{\SmallPar{k-2}}}q{^{\SmallPar{2}}}}}+\XSbra{\mathC_{k-1}^{k-1}\XPar{ \boxed{p{^{\SmallPar{k}}}q{^{\SmallPar{0}}}}+\uline{p{^{\SmallPar{k-1}}}q{^{\SmallPar{1}}}}}}.$\vspace{4pt}\par\quad\Hii
+\ProblemN{L1}{
+	\TextB{Prove $\forall p,q\in\PoFi,k\in\Nbp,\Par{pq}{^{\SmallPar{k}}}=\mathC_{k}^k p{^{\SmallPar{k}}}q{^{\SmallPar{0}}}+\dots+\mathC_{k}^j p{^{\SmallPar{j}}}q{^{\SmallPar{k-j}}}+\dots+\mathC_{k}^0 p{^{\SmallPar{0}}}q{^{\SmallPar{k}}}.$\vspace{2pt}}
+}We use induc by $k\in\Nbp.$ \;(i) $k=1.$ $\Par{pq}{^{\SmallPar{1}}}=\Par{pq}\apostrophe=C_{1}^1 p{^{\SmallPar{1}}}q{^{\SmallPar{0}}}+C_{1}^0 p{^{\SmallPar{0}}}q{^{\SmallPar{1}}}.$ \;(ii) $k\geqslant 2.$\vspace{2pt}\par\quad
+Asum for $\Par{pq}{^{\SmallPar{k-1}}}=\mathC_{k-1}^{k-1} p{^{\SmallPar{k-1}}}q{^{\SmallPar{0}}}+\dots+\mathC_{k-1}^j p{^{\SmallPar{j}}}q{^{\SmallPar{k-1-j}}}+\dots+\mathC_{k-1}^0 p{^{\SmallPar{0}}}q{^{\SmallPar{k-1}}}.$\vspace{4pt}\par\quad
+Now $\Par{pq}{^{\SmallPar{k}}}=\BigPar{\Par{pq}{^{\SmallPar{k-1}}}}\apostrophe=\XPar{\sum_{j=0}^{k-1}\mathC_{k-1}^{j} p{^{\SmallPar{j}}}q{^{\SmallPar{k-j-1}}}}\apostrophe=\sum_{j=0}^{k-1}\XSbra{\mathC_{k-1}^{j} \XPar{p{^{\SmallPar{j+1}}}q{^{\SmallPar{k-j-1}}}+p{^{\SmallPar{j}}}q{^{\SmallPar{k-j}}}}}.$\vspace{4pt}\par\quad
+\Blind{Now} $\Blind{\Par{pq}{^{\SmallPar{k}}}\!}=\XSbra{\mathC_{k-1}^{0}\XPar{ \uwave{p{^{\SmallPar{1}}}q{^{\SmallPar{k-1}}}}+\boxed{p{^{\SmallPar{0}}}q{^{\SmallPar{k}}}}}}+\XSbra{\mathC_{k-1}^1\XPar{p{^{\SmallPar{2}}}q{^{\SmallPar{k-2}}}+\uwave{p{^{\SmallPar{1}}}q{^{\SmallPar{k-1}}}}}}$\vspace{4pt}\par\quad
+\Blind{Now} $\Blind{\Par{pq}{^{\SmallPar{k}}}=}+\dots+\XSbra{\mathC_{k-1}^{j-2}\XPar{ \uline{p{^{\SmallPar{j-1}}}q{^{\SmallPar{k-j+1}}}}+p{^{\SmallPar{j-2}}}q{^{\SmallPar{k-j+2}}}}}+\XSbra{\mathC_{k-1}^{j-1}\XPar{ \uuline{p{^{\SmallPar{j}}}q{^{\SmallPar{k-j}}}}+\uline{p{^{\SmallPar{j-1}}}q{^{\SmallPar{k-j+1}}}}}}$\vspace{4pt}\par\quad
+\Blind{Now} $\Blind{\Par{pq}{^{\SmallPar{k}}}=}+\XSbra{\mathC_{k-1}^{j}\XPar{ \uwave{p{^{\SmallPar{j+1}}}q{^{\SmallPar{k-j-1}}}}+\uuline{ p{^{\SmallPar{j}}}q{^{\SmallPar{k-j}}}}}}+\XSbra{\mathC_{k-1}^{j+1}\XPar{p{^{\SmallPar{j+2}}}q{^{\SmallPar{k-j-2}}}+\uwave{p{^{\SmallPar{j+1}}}q{^{\SmallPar{k-j-1}}}}}}$\vspace{4pt}\par\quad
+\Blind{Now} $\Blind{\Par{pq}{^{\SmallPar{k}}}=}+\dots+\XSbra{\mathC_{k-1}^{k-2}\XPar{ \uline{p{^{\SmallPar{k-1}}}q{^{\SmallPar{1}}}}+p{^{\SmallPar{k-2}}}q{^{\SmallPar{2}}}}}+\XSbra{\mathC_{k-1}^{k-1}\XPar{ \boxed{p{^{\SmallPar{k}}}q{^{\SmallPar{0}}}}+\uline{p{^{\SmallPar{k-1}}}q{^{\SmallPar{1}}}}}}.$\vspace{4pt}\par\quad
 Hence $\Par{pq}{^{\SmallPar{k}}}=\mathC_{k}^0{p{^{\SmallPar{0}}}q{^{\SmallPar{k}}}}+\dots+\XSbra{\mathC_{k-1}^{j}+\mathC_{k-1}^{j-1}}\BigPar{p{^{\SmallPar{j}}}q{^{\SmallPar{k-j}}}}+\dots+\mathC_{k}^{k}{p{^{\SmallPar{k}}}q{^{\SmallPar{0}}}}.$\PfEnd
 \SepLine
+
+\ProblemN{L2}{
+	\TextB{Supp $\alpha\in\Nbp$ suth $p\Par{z}=\Par{z-\lambda}{^\alpha}q\Par{z}.$ Prove ${p{^{\SmallPar{\alpha-1}}}}\Par{\lambda}=0.$}
+}$\Sbra{\Par{z-\lambda}{^\alpha}q\Par{z}}{^{\SmallPar{\alpha-1}}}=\sum_{j=1}^{\alpha-1}\mathC_{\alpha-1}^j\Sbra{\Par{z-\lambda}{^\alpha}}{^j}q^{\SmallPar{\alpha-1-j}}.$ Immed.\PfEnd
+\SepLine
 \ChEnd
+\pagebreak
 
 \vfill\ChDecl{Ch5A}{5.A}{}\orMode{\hLk{5A1}{1}\;\;\hLk{5A2}{2}\;\;\hLk{5A3}{3}\;\;\hLk{5A4}{4}\;\;\hLk{5A5}{5}\;\;\hLk{5A6}{6}\;\;\hLk{5A7}{7}\;\;\hLk{5A8}{8}\;\;\hLk{5A9}{9}\;\;\hLk{5A10}{10}\;\;\hLk{5A11}{11}\;\;\hLk{5A12}{12}\;\;\hLk{5A13}{13}\;\;\hLk{5A14}{14}\;\;\hLk{5A15}{15}\;\;\hLk{5A16}{16}\;\;\hLk{5A17}{17}\;\;\hLk{5A18}{18}\;\;\hLk{5A19}{19}\;\;\hLk{5A20}{20}\;\;\hLk{5A21}{21}\;\;\hLk{5A22}{22}\;\;\hLk{5A23}{23}\;\;\hLk{5A24}{24}\;\;\hLk{5A25}{25}\;\;\hLk{5A26}{26}\;\;\hLk{5A27}{27}\;\;\hLk{5A28}{28}$\\[-4pt]$\hLk{5A29}{29}\;\;\hLk{5A30}{30}\;\;\hLk{5A31}{31}\;\;\hLk{5A32}{32}\;\;\hLk{5A33}{33}\;\;\hLk{5A34}{34}\;\;\hLk{5A35}{35}\;\;\hLk{5A36}{36}\;\;|\;\;\hLk{5A2e20}{2E:\;\;Ch5.20}\;\;|\;\;\hLk{5A4e8}{4E:\;\;8}\;\;\hLk{5A4e11}{11}\;\;\hLk{5A4e15}{15}\;\;\hLk{5A4e16}{16}\;\;\hLk{5A4e17}{17}\;\;\hLk{5A4e36}{36}\;\;\hLk{5A4e37}{37}\;\;\hLk{5A4e38}{38}\;\;\hLk{5A4e39}{39}}[-40pt]{[3]: 1, 2, 3, 4, 5, 6, 7, 8; [4]: 9, 10, 18, 19, 20; [5]: 11, 12, 13, (4E 11), (4E 8), 14;$\\$[6]: 15, 17, (4E 16); [7]: (4E 15), 24; [8]: (4E 17), 16; [9]: 21, 22, 23, (2E 20), (4E 37), 25;$\\$[10]: 26, 27, 28, 29, 30; [11]: 31, 32, (4E 36), 33, 34, 35; [12]: 36, (4E 39).}
 
