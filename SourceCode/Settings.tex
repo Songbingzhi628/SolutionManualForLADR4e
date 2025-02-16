@@ -147,7 +147,7 @@
 \newcommand{\Bra}[2][\envFont]{{\text{\forbra{#1\{}}}#2{\text{\forbra{#1\}}}}}
 \newcommand{\SmallPar}[2][0pt]{{\envFontSmall[\scriptsize]\Par[#1]{#2}}}
 \newcommand{\TinyPar}[2][0pt]{(\hspace{#1}#2\hspace{#1})}
-\newcommand{\BigPar}[1]{{\text{\envFont\forbra(\hspace{1pt}}}#1{\text{\hspace{1pt}\envFont\forbra)}}}
+\newcommand{\BigPar}[2][1pt]{{\text{\envFont\forbra(\hspace{#1}}}#2{\text{\hspace{#1}\envFont\forbra)}}}
 \newcommand{\XPar}[1]{{\text{\envFont\forbrax(\hspace{1pt}}}#1{\text{\hspace{1pt}\envFont\forbrax)}}}
 \newcommand{\Sbra}[2][1pt]{{\text{\envFont\forbra[\hspace{#1}}}#2{\text{\envFont\forbra\hspace{#1}]}}}
 \newcommand{\XSbra}[2][0pt]{{\text{\envFont\forbrax[\hspace{#1}}}#2{\text{\envFont\forbrax\hspace{#1}]}}}
@@ -217,7 +217,7 @@
 
 \newcommand{\Backslash}[1][\big]{#1\backslash}
 \def\nonzeroFbb{\Fbb${\envFontA$\backslash$}${\def\envFont{\envFontB}\zeroSubs}}
-\newcommandx{\nonzero}[2][1=\envFontA,2=\envFontB]{${#1$\backslash$}${\Bra[#2]{0}}}
+\newcommandx{\nonzero}[2][1=\big,2=\envFontB]{\Backslash[#1]{\Bra[#2]{0}}}
 \def\mmid{\text{\envFontA|}}
 \def\d{{\textup{\tgnr d}}}
 \def\i{{\textup{\tgnr i}}}
