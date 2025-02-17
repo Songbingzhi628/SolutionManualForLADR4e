@@ -655,7 +655,7 @@ And \,$0=a_j w_j$ while $a_j\neq 0$ and $w_j\neq 0.$ Ctradic.\PfEnd\vspace{6pt}\
 \Or We prove the ctrapos\hspace{1pt}: \,Supp $\forall w_1,\dots,w_m\in W,\exists\,T\in\Lm{V,W},Tv_k=w_k$  for each $w_k.$\par\quad
 {Now we show $\Par{v_1,\dots,v_n}$ is liney indep. Supp {$\exists\,a_i\in\Fbb,a_1 v_1+\dots+a_n v_n=0$}.}\vspace{2pt}\par\quad
 {Choose one $w\in W\nonzero.$ By asum, for {$\BigPar{\overline{a_1}w,\dots,\overline{a_m}w},\exists\,T\in\Lm{V,W},Tv_k=\overline{a_k}w$} for each $v_k$.}\vspace{2pt}\par\quad
-{Now we have {$ 0=T\envFontLarge\BigPar{{\envFontDefault\sum_{k=1}^m a_k v_k}}=\sum_{k=1}^m a_k Tv_k=\sum_{k=1}^m a_k\overline{a_k}w=\BigPar{{\envFontDefault\sum_{k=1}^m \aMid{a_k}{^2}}}w$}.}\vspace{2pt}\par\quad
+{Now we have {$ 0=T\BigBigPar{{\sum_{k=1}^m a_k v_k}}=\sum_{k=1}^m a_k Tv_k=\sum_{k=1}^m a_k\overline{a_k}w=\BigBigPar{{\sum_{k=1}^m \aMid{a_k}{^2}}}w$}.}\vspace{2pt}\par\quad
 {Then {$\sum_{k=1}^m\aMid{a_k}{^2}=0.$ Thus $a_1=\dots=a_m=0.$} Hence $\Par{v_1,\dots,v_n}$ is liney indep.}\PfEnd
 \SepLine
 
@@ -897,8 +897,8 @@ Now $\forall v\in V,\exists\,!\,u_v\in U,\Par{x_v,y_v}\in X\times Y,v=u_v+x_v+y_
 
 \BulletPointX\TipsN{4}\,\,\,Supp $T\in\Lm{V,W},T\neq 0.$ Let $B_{\range T}=\Par{Tv_1,\dots,Tv_n}.$\TextB{}
 By (3.A.4), $R=\Par{v_1,\dots,v_n}$ is liney indep in $V.$ Let $\Spn R=U.$ We will prove $U\oplus\null T=V.$\TextB{\vspace{2pt}}
-(a) $T{\envFontLarge\BigPar{\sum_{i=1}^n a_i v_i}}=0\Longleftrightarrow\sum_{i=1}^n a_i Tv_i=0\Longleftrightarrow a_1=\dots=a_n=0.$ Thus $U\cap\null T=\zeroSubs.$\TextB{\vspace{4pt}}
-(b) $Tv=\sum_{i=1}^n a_i Tv_i\Longleftrightarrow v-\sum_{i=1}^n a_i v_i\in\null T\Longleftrightarrow v=\envFontLarge\BigPar{v-\sum_{i=1}^n a_i v_i}+\BigPar{\sum_{i=1}^n a_i v_i}.$\par\vspace{2pt}\IndentB{}\Hb{}
+(a) $T{\BigBigPar{\sum_{i=1}^n a_i v_i}}=0\Longleftrightarrow\sum_{i=1}^n a_i Tv_i=0\Longleftrightarrow a_1=\dots=a_n=0.$ Thus $U\cap\null T=\zeroSubs.$\TextB{\vspace{4pt}}
+(b) $Tv=\sum_{i=1}^n a_i Tv_i\Longleftrightarrow v-\sum_{i=1}^n a_i v_i\in\null T\Longleftrightarrow v=\BigBigPar{v-\sum_{i=1}^n a_i v_i}+\BigBigPar{\sum_{i=1}^n a_i v_i}.$\par\vspace{2pt}\IndentB{}\Hb{}
 Thus $U+\null T=V.$ \;\Or $\range T=\Bra{Tu:u\in U}=\range T\mmid_U.$ Using Exe (12).\PfEnd\vspace{2pt}
 \ACoro Convly, if $U\oplus\null T=V$ and $B_U=\Par{v_1,\dots,v_n},$ then $B_{\range T}=\Par{Tv_1,\dots,Tv_n}.$\parCor
 Becs $\range T=\range T\mmid_U=\Span{Tv_1,\dots,Tv_n},$ 又 $T$ is inje.
@@ -1001,16 +1001,16 @@ $\dim\range ST\leqslant \dim\range T$
 	%(a) \TextB{Supp $\dim V = 5,$ and $ST = 0$ where $S,T\in\Lm{V}$. Prove $\dim\range TS\leqslant 2.$\vspace{2pt}}
 	\hypertarget{3B4e24}{}(a) \TextB{Supp $\dim V=n,$ \,$ST=0$ where $S,T\in\Lm{V}.$ Prove $\dim\range TS\leqslant\Big\lfloor${\LARGE$\frac{\,n\,}{2}$}$\Big\rfloor.$}
 	(b) \TextB{Give an exa of such $S, T$ with $n=5$ and $\dim\range TS = 2$.\vspace{1pt}}
-}Note that $\dim\range TS\leqslant\min\!\envFontLarge\Bra{\!\dim\range T,\dim\range S}.$ We prove by ctradic.\par\vspace{1pt}\quad
+}Note that $\dim\range TS\leqslant\min\!\BigBra{\!\dim\range T,\dim\range S}.$ We prove by ctradic.\par\vspace{1pt}\quad
 %(a) $\dim\range TS\leqslant\min\!\Bra{\overbrace{\dim \range S}^{5\,-\,\dim\null T}, \overbrace{\dim\range T}^{5\,-\,\dim\null S}}.$\par\quad\Ha
 %We show $\dim\range TS\leqslant 2$ by ctradic. Asum $\dim\range TS\geqslant 3$.\par\quad\Ha
 %Then $\min\!\Bra{5-\dim\null T,5-\dim\null S}\geq 3\Rightarrow\max\!\Bra{\dim\null T,\dim\null S}\leqslant 2$.\par\quad\Ha
 %又 $\dim\null ST=5\leqslant\dim\null S+\dim\null T\leqslant 4.$ Ctradic.\vspace{6pt}\par\quad\Ha
 %\Or $\MathRightBrace{l}{\dim\null S=5-\dim\range S\\ \dim\range TS\leqslant\dim\range S}\Rightarrow\dim\null S\leqslant 5-\dim\range TS.$\par\vspace{2pt}\quad\Ha
 %And $ST=0\Rightarrow\range T\subseteq\null S\Rightarrow\dim\range TS\leqslant\dim\range T\leqslant\dim\null S.$\PfEnd\vspace{6pt}\quad
-Asum $\dim\range TS\geqslant \Big\lfloor${\Large$\frac{\,n\,}{2}$}$\Big\rfloor+1.$ \,Then $\min\!\envFontLarge\Bra{n-\dim\null T,n-\dim\null S}\envFontDefault\geqslant \Big\lfloor${\Large$\frac{\,n\,}{2}$}$\Big\rfloor+1$\vspace{1pt}\par\quad
-又 $\dim\null ST=n\leqslant\dim\null S+\dim\null T\;\Big|\hspace{-0.7pt}\Rightarrow\max\!\envFontLarge\Bra{\!\dim\null T,\dim\null S}\envFontDefault\leqslant \Big\lceil${\Large$\frac{\,n\,}{2}$}$\Big\rceil-1.$\par\vspace{1pt}\quad
-Thus \;$n\leqslant 2\envFontLarge\BigPar{\envFontDefault \Big\lceil${\Large$\frac{\,n\,}{2}$}$\Big\rceil-1\envFontLarge}\envFontDefault\Rightarrow{}${\Large$\frac{\,n\,}{2}$}${}\leqslant\Big\lceil${\Large$\frac{\,n\,}{2}$}$\Big\rceil-1$. \;Ctradic.\PfEnd\vspace{4pt}\quad
+Asum $\dim\range TS\geqslant \Big\lfloor${\Large$\frac{\,n\,}{2}$}$\Big\rfloor+1.$ \,Then $\min\!\BigBra{n-\dim\null T,n-\dim\null S}\envFontDefault\geqslant \Big\lfloor${\Large$\frac{\,n\,}{2}$}$\Big\rfloor+1$\vspace{1pt}\par\quad
+又 $\dim\null ST=n\leqslant\dim\null S+\dim\null T\;\Big|\hspace{-0.7pt}\Rightarrow\max\!\BigBra{\!\dim\null T,\dim\null S}\envFontDefault\leqslant \Big\lceil${\Large$\frac{\,n\,}{2}$}$\Big\rceil-1.$\par\vspace{1pt}\quad
+Thus \;$n\leqslant 2\BigBigPar{\Big\lceil${\Large$\frac{\,n\,}{2}$}$\Big\rceil-1}\Rightarrow{}${\Large$\frac{\,n\,}{2}$}${}\leqslant\Big\lceil${\Large$\frac{\,n\,}{2}$}$\Big\rceil-1$. \;Ctradic.\PfEnd\vspace{4pt}\quad
 \Or $\dim\null S=n-\dim\range S\leqslant n-\dim\range TS.$ \;又 $ST=0\Rightarrow\range T\subseteq\null S.$\par\quad
 $\dim\range TS\leqslant\dim\range T\leqslant\dim\null S\leqslant n-\dim\range TS.$ \;Thus \;$2\dim\range TS\leqslant n.$\PfEnd\vspace{5pt}\quad
 \Or Becs $\dim\range TS\leqslant\Big\lfloor${\Large$\frac{\,n\,}{2}$}$\Big\rfloor,$ and $\Big\lfloor${\Large$\frac{\,n\,}{2}$}$\Big\rfloor+\Big\lceil${\Large$\frac{\,n\,}{2}$}$\Big\rceil=n.$\par\vspace{1pt}\quad
@@ -1152,7 +1152,7 @@ $\MathLeftrightMid{l}{$
 	(b) {\FontSmall\Sbra{4E 3.F.5}} \TextNL{$\forall v\in V,\exists\,!\,\varphi_i\Par{v}\in\Fbb,Tv=\varphi_1\Par{v}w_1+\dots+\varphi_m\Par{v}w_m.$\vspace{1pt}}
 	\Blind{(b) \hypertarget{3F4e5}{\FontSmall\Sbra{4E 3.F.5}}} \TextNL{Thus defining each $\varphi_i:V\rightarrow\Fbb.$ \;Show each $\varphi_i\in\Lm{V,\Fbb}.$}
 }{\FontSmall\tgsl The answer for (b) with (b) itself is the answer for (a).}\par\quad
-(b) $\sum_{i=1}^m\varphi_i\Par{u+\lambda v}w_i=T\Par{u+\lambda v}=Tu+\lambda Tv={\envFontLarge\BigPar{{\envFontDefault\sum_{i=1}^m\varphi_i\Par{u}w_i}}}+\lambda{\envFontLarge\BigPar{{\envFontDefault\sum_{i=1}^m\varphi_i\Par{v}w_i}}}.$\PfEnd\vspace{4pt}\quad\Hb
+(b) $\sum_{i=1}^m\varphi_i\Par{u+\lambda v}w_i=T\Par{u+\lambda v}=Tu+\lambda Tv={\BigBigPar{{\sum_{i=1}^m\varphi_i\Par{u}w_i}}}+\lambda{\BigBigPar{{\sum_{i=1}^m\varphi_i\Par{v}w_i}}}.$\PfEnd\vspace{4pt}\quad\Hb
 \Or $\forall v\in V,\exists\,!\,a_i\in\Fbb,Tv=a_1Tv_1+\dots+a_mTv_m.$ Let $B_{\SmallPar[1pt]{\range T}\apostrophe}=\Par{\psi_1, \dots, \psi_m}$.\par\quad\Hb
 Then $\Sbra{T\apostrophe\Par{\psi_{i}}}\Par{v}=\BigPar{\psi_{i}\circ T}\Par{v}=a_i.$ \,Thus each $\varphi_i=\psi_i\circ T=T\apostrophe\Par{\psi_i}\in V\apostrophe.$\PfEnd\vspace{4pt}\quad
 (a) $\Span{v_1,\dots,v_m}\oplus\null T=V\Rightarrow\forall v\in V,\exists\,!\,a_i\in\Fbb,u\in\null T,\;v=\sum_{i=1}^m a_i v_i+u.$\par\quad\Ha
@@ -1265,16 +1265,16 @@ Note that $\Par{A_{j,k}}{^t}=A_{j,k}=\Par{A^t}_{k,j}.$ Thus (c) holds.$\\$
 \SepLine
 
 \BulletPointX\NoteForSmall{[3.47]}\,\, $\BigPar{AC}{_{j,k}}=\sum_{r=1}^n A_{j,r}C_{r,k}=\sum_{r=1}^n \BigPar{A_{j,\cdot}}_{1,r}\BigPar{C_{\cdot,k}}_{r,1}=\BigPar{A_{j,\cdot}C_{\cdot,k}}_{1,1}=A_{j,\cdot}C_{\cdot,k}$\PfEnd\vspace{6pt}
-\BulletPointX\NoteForSmall{[3.49]} ${\envFontLarge\Sbra{\envFontDefault\BigPar{AC}_{\cdot,k}\envFontLarge}}_{j,1}=\BigPar{AC}_{j,k}=\sum_{r=1}^n A_{j,r}C_{r,k}=\sum_{r=1}^n A_{j,r}\BigPar{C_{\cdot,k}}_{r,1}=\BigPar{AC_{\cdot,k}}_{j,1}$\PfEnd\vspace{6pt}
-\BulletPointX\Exercise{\hypertarget{3C10}{10}}\qquad\hspace{5pt}${\envFontLarge\Sbra{\envFontDefault\BigPar{AC}_{j,\cdot}\envFontLarge}}_{1,k}=\BigPar{AC}_{j,k}=\sum_{r=1}^n A_{j,r}C_{r,k}=\sum_{r=1}^n \BigPar{A_{j,\cdot}}_{1,r}C_{r,k}=\BigPar{A_{j,\cdot}C}_{1,k}$\PfEnd\vspace{6pt}
+\BulletPointX\NoteForSmall{[3.49]} ${\BigSbra{\BigPar{AC}_{\cdot,k}}}_{j,1}=\BigPar{AC}_{j,k}=\sum_{r=1}^n A_{j,r}C_{r,k}=\sum_{r=1}^n A_{j,r}\BigPar{C_{\cdot,k}}_{r,1}=\BigPar{AC_{\cdot,k}}_{j,1}$\PfEnd\vspace{6pt}
+\BulletPointX\Exercise{\hypertarget{3C10}{10}}\qquad\hspace{5pt}${\BigSbra{\BigPar{AC}_{j,\cdot}}}_{1,k}=\BigPar{AC}_{j,k}=\sum_{r=1}^n A_{j,r}C_{r,k}=\sum_{r=1}^n \BigPar{A_{j,\cdot}}_{1,r}C_{r,k}=\BigPar{A_{j,\cdot}C}_{1,k}$\PfEnd\vspace{6pt}
 \BulletPointX\AComm For [3.49], let $B_U=\Par{u_1,\dots,u_p},B_V=\Par{v_1,\dots,v_n},B_W=\Par{w_1,\dots,w_m}.$\vspace{2pt}\parCom{}\IndentB{}
 And $C=\Mt{T,B_U,B_V}\in\Fbb^{n,p},A=\Mt{S,B_V,B_W}\in\Fbb^{m,n}.$\vspace{1pt}\parCom{}\IndentB{}
-Then $\Mt{Tu_k,B_V}=C_{\cdot,k}\Rightarrow\Mt[\BigPar]{S\Par{Tu_k},B_W}=AC_{\cdot,k}\,,$ \;又 $\Mt[\envFontLarge\BigPar]{\envFontDefault\Par{ST}\Par{u_k},B_W\envFontLarge}=\Par{AC}{_{\cdot,k}}$\PfEnd\vspace{4pt}\parCom{}\IndentB{}
-By {\NOTEFOR} Transpose, $\BigPar{AC}{_{j,\cdot}}=\envFontLarge\Sbra{\BigPar{\envFontDefault\BigPar{AC}{^t}\envFontLarge}{_{\cdot,j}}}{^t}=\BigPar{C^t\Par{A^t}{_{\cdot,j}}}{^t}=\BigPar{\Par{A^t}{_{\cdot,j}}}{^t}C=A_{j,\cdot}C$\PfEnd
+Then $\Mt{Tu_k,B_V}=C_{\cdot,k}\Rightarrow\Mt[\BigPar]{S\Par{Tu_k},B_W}=AC_{\cdot,k}\,,$ \;又 $\Mt[\BigBigPar]{\Par{ST}\Par{u_k},B_W}=\Par{AC}{_{\cdot,k}}$\PfEnd\vspace{4pt}\parCom{}\IndentB{}
+By {\NOTEFOR} Transpose, $\BigPar{AC}{_{j,\cdot}}=\BigSbra{\BigBigPar{\BigPar{AC}{^t}}{_{\cdot,j}}}{^t}=\BigPar{C^t\Par{A^t}{_{\cdot,j}}}{^t}=\BigPar{\Par{A^t}{_{\cdot,j}}}{^t}C=A_{j,\cdot}C$\PfEnd
 \SepLine
 
 \BulletPointX\NoteForSmall{\hypertarget{3C9}{}[3.52]}\;\;$A\in\Fbb^{m,n},c\in\Fbb^{n,1}\Rightarrow Ac\in\Fbb^{m,1}.$\hfill By \Sbra{4E 3.51(a)}, $\BigPar{Ac}{_{\cdot,1}}=c_1A_{\cdot,1}+\dots+c_nA_{\cdot,n}.$\;\;\!\,\PfEnd\vspace{4pt}\quad
-\Or $\because\;\BigPar{Ac}{_{j,1}}=\sum_{r=1}^n A_{j,r}c_{r,1}=\envFontLarge\Sbra{\envFontDefault\sum_{r=1}^n\BigPar{A_{\cdot,r}c_{r,1}}\envFontLarge}_{j,1}=\BigPar{c_1 A_{\cdot,1}+\dots+c_n A_{\cdot,n}}_{j,1}$\vspace{1pt}\par\quad
+\Or $\because\;\BigPar{Ac}{_{j,1}}=\sum_{r=1}^n A_{j,r}c_{r,1}=\BigSbra{\sum_{r=1}^n\BigPar{A_{\cdot,r}c_{r,1}}}_{j,1}=\BigPar{c_1 A_{\cdot,1}+\dots+c_n A_{\cdot,n}}_{j,1}$\vspace{1pt}\par\quad
 \Blind{\Or}$\therefore\;\,Ac=A_{\cdot,\cdot}c_{\cdot,1}=\sum_{r=1}^n A_{\cdot,r}c_{r,1}=c_1 A_{\cdot,1}+\dots+c_n A_{\cdot,n}$\;\;\Or $\BigPar{Ac}{_{j,1}}=\BigPar{Ac}{_{j,\cdot}}=A_{j,\cdot}c\in\Fbb.$\PfEnd\vspace{2pt}\quad
 %$={}{\small\begin{pmatrix}A_{j,1}&\hspace{-6pt}\cdots&\hspace{-6pt}A_{j,n}\end{pmatrix}\begin{pmatrix}c_1\\[-4pt]\vdots\\[-6pt]c_n\end{pmatrix}}.$\PfEnd\vspace{-2pt}\quad
 \Or Let $B_V=\Par{v_1,\dots,v_n}.$ Now $Ac=\Mt{Tv,B_W}=\Mt[\BigPar]{T\Par{c_1v_1+\dots+c_nv_n}}=c_1A_{\cdot,1}+\dots+c_nA_{\cdot,n}.$\PfEnd
@@ -1282,10 +1282,10 @@ By {\NOTEFOR} Transpose, $\BigPar{AC}{_{j,\cdot}}=\envFontLarge\Sbra{\BigPar{\en
 \SepLine
 
 \BulletPointX\Exercise{\hypertarget{3C11}{11}}\;\;$a\in\Fbb^{1,n},C\in\Fbb^{n,p}\Rightarrow aC\in\Fbb^{1,p}.$\hfill By \Sbra{4E 3.51(b)}, $\BigPar{aC}{_{1,\cdot}}=a_1C_{1,\cdot}+\dots+a_nC_{n,\cdot}.$\;\;\!\,\PfEnd\vspace{4pt}\quad
-\Or $\because\;\BigPar{aC}{_{1,k}}=\sum_{r=1}^n a_{1,r}C_{r,k}=\envFontLarge\Sbra{\envFontDefault\sum_{r=1}^n a_{1,r}\BigPar{C_{r,\cdot}}\envFontLarge}_{1,k}=\BigPar{a_1 C_{1,\cdot}+\dots+a_n C_{n,\cdot}}_{1,k}$\vspace{2pt}\par\quad
+\Or $\because\;\BigPar{aC}{_{1,k}}=\sum_{r=1}^n a_{1,r}C_{r,k}=\BigSbra{\sum_{r=1}^n a_{1,r}\BigPar{C_{r,\cdot}}}_{1,k}=\BigPar{a_1 C_{1,\cdot}+\dots+a_n C_{n,\cdot}}_{1,k}$\vspace{2pt}\par\quad
 \Blind{\Or}$\therefore\;\,aC=a_{1,\cdot}C_{\cdot,\cdot}=\sum_{r=1}^n a_{1,r}C_{r,\cdot}=a_1 C_{1,\cdot}+\dots+a_n C_{n,\cdot}$\;\;\Or $\BigPar{aC}{_{1,k}}=\BigPar{aC}{_{\cdot,k}}=aC_{\cdot,k}\in\Fbb.$\PfEnd\vspace{4pt}\quad
 %$={\small\begin{pmatrix}a_1&\hspace{-6pt}\cdots&\hspace{-6pt}a_n\end{pmatrix}\begin{pmatrix}C_{1,k}\\[-4pt]\vdots\\[-4pt]C_{n,k}\end{pmatrix}}.$\PfEnd\vspace{-2pt}\quad
-\Or \;$aC=\envFontLarge\BigPar{\envFontDefault\Par{aC}{^t}\envFontLarge}{^t}=\BigPar{C^ta^t}{^t}=\Sbra{a^t_1\Par{C^t}{_{\cdot,1}}+\dots+a^t_n\Par{C^t}{_{\cdot,n}}}{^t}=a_1C_{1,\cdot}+\dots+a_nC_{n,\cdot}.$\PfEnd
+\Or \;$aC=\BigBigPar{\Par{aC}{^t}}{^t}=\BigPar{C^ta^t}{^t}=\Sbra{a^t_1\Par{C^t}{_{\cdot,1}}+\dots+a^t_n\Par{C^t}{_{\cdot,n}}}{^t}=a_1C_{1,\cdot}+\dots+a_nC_{n,\cdot}.$\PfEnd
 \SepLine
 
 \ProblemBnoor[]{4E 3.51}[\Sbra]{
@@ -1399,9 +1399,9 @@ And (b*) $T$ is surj $\Longleftrightarrow\Spn L=W\Longleftrightarrow\Spn L_{\mat
 \AComm If $T$ is inv. Then by (a*, c) or (b*, d), we have another proof of \COROLLARY.\parNot\IndentComment
 \hypertarget{3F32}{\Or }If $m=n.$ Then by [3.118] and one of (a*, b*, c, d). Yet another proof.\parNot
 (c) $T$ surj $\Longleftrightarrow T\apostrophe$ inje $\Longleftrightarrow\BigPar{T\apostrophe\Par{\psi_1},\dots,T\apostrophe\Par{\psi_m}}$ liney indep\parNot\Hc
-\Blind{$T$ surj }$\xLongleftrightarrow{\text{(a)}}{\envFontLarge\BigPar{{\envFontDefault\Par{A^t}{_{\cdot,1}},\cdots,\Par{A^t}{_{\cdot,m}}}}}$ liney indep in $\Fbb^{n,1},$ so is $\BigPar{A_{1,\cdot},\cdots,A_{m,\cdot}}$ in $\Fbb^{1,n}.$\vspace{4pt}\parNot
+\Blind{$T$ surj }$\xLongleftrightarrow{\text{(a)}}{\BigBigPar{{\Par{A^t}{_{\cdot,1}},\cdots,\Par{A^t}{_{\cdot,m}}}}}$ liney indep in $\Fbb^{n,1},$ so is $\BigPar{A_{1,\cdot},\cdots,A_{m,\cdot}}$ in $\Fbb^{1,n}.$\vspace{4pt}\parNot
 (d) $T$ inje $\Longleftrightarrow T\apostrophe$ surj $\Longleftrightarrow V\apostrophe=\Span[\BigPar]{T\apostrophe\Par{\psi_1},\dots,T\apostrophe\Par{\psi_m}}$\parNot\Hd
-\Blind{$T$ inje }$\xLongleftrightarrow{\text{(b)}}\Fbb^{n,1}=\Span[\envFontLarge\BigPar]{{\envFontDefault\Par{A^t}{_{\cdot,1}},\cdots,\Par{A^t}{_{\cdot,m}}}}\Longleftrightarrow\Fbb^{1,n}=\Span[\envFontLarge\BigPar]{A_{1,\cdot},\cdots,A_{m,\cdot}}.$
+\Blind{$T$ inje }$\xLongleftrightarrow{\text{(b)}}\Fbb^{n,1}=\Span[\BigBigPar]{{\Par{A^t}{_{\cdot,1}},\cdots,\Par{A^t}{_{\cdot,m}}}}\Longleftrightarrow\Fbb^{1,n}=\Span[\BigBigPar]{A_{1,\cdot},\cdots,A_{m,\cdot}}.$
 \SepLine
 
 \ProblemB{
@@ -1409,17 +1409,17 @@ And (b*) $T$ is surj $\Longleftrightarrow\Spn L=W\Longleftrightarrow\Spn L_{\mat
 	\IndentTipsN{2}\TextB{\FontNorm Where the liney maps $T_1,\dots,T_n$ are suth $p\Par{T_1,\dots,T_n}$ makes sense. \tgnr See [5.16,17,20].}
 }Supp the poly $p$ is defined by $p\Par{x_1,\dots,x_n}=\sum_{k_1,\dots,k_n}\!\!\alpha_{k_1,\dots,k_n}\prod_{i=1}^n x_i^{k_i}.$\parSol{\vspace{4pt}}
 Note that $\Mt{T^x S^y}=\Mt{T}{^x}\Mt{S}{^y};\;\Mt{T^x+S^y}=\Mt{T}{^x}+\Mt{S}{^y}.$\parSol{\vspace{4pt}}
-Then $\Mt[\BigPar]{ p\Par{T_1,\dots,T_n}}={\Mt[\envFontLarge\BigPar]{{\envFontDefault\sum_{k_1,\dots,k_n}\!\!\alpha_{k_1,\dots,k_n}\prod_{i=1}^n T_i^{k_i}}}}$\parSol{\vspace{4pt}}
-\Blind{Then $\Mt[\BigPar]{ p\Par{T_1,\dots,T_n}}$} $={\sum_{k_1,\dots,k_n}\!\!\alpha_{k_1,\dots,k_n}\prod_{i=1}^n\Mt[\BigPar]{T_i^{k_i}}}={p\envFontLarge\BigPar{{\envFontDefault\Mt{T_1},\dots,\Mt{T_n}}}}.$\PfEnd\vspace{6pt}
+Then $\Mt[\BigPar]{ p\Par{T_1,\dots,T_n}}={\Mt[\BigBigPar]{{\sum_{k_1,\dots,k_n}\!\!\alpha_{k_1,\dots,k_n}\prod_{i=1}^n T_i^{k_i}}}}$\parSol{\vspace{4pt}}
+\Blind{Then $\Mt[\BigPar]{ p\Par{T_1,\dots,T_n}}$} $={\sum_{k_1,\dots,k_n}\!\!\alpha_{k_1,\dots,k_n}\prod_{i=1}^n\Mt[\BigPar]{T_i^{k_i}}}={p\BigBigPar{{\Mt{T_1},\dots,\Mt{T_n}}}}.$\PfEnd\vspace{6pt}
 \BulletPointX\ACoro Supp $\tau$ is an algebraic property. Then $\tau$ holds for liney maps $\Longleftrightarrow \tau$ holds for matrices.\parCor{\IndentB}
 Supp $\alpha_1,\dots,\alpha_n$ are dist with each $\alpha_k\in\Bra{1,\dots,n}.$\parCor{\IndentB}
-Now $p\Par{T_1,\dots,T_n}=p\Par{T_{\alpha_1},\dots,T_{\alpha_n}}\Longleftrightarrow p\envFontLarge\BigPar{{\envFontDefault\Mt{T_1},\dots,\Mt{T_n}}}=p\BigPar{{\envFontDefault\Mt{T_{\alpha_1}},\dots,\Mt{T_{\alpha_n}}}}.$\SepLine
+Now $p\Par{T_1,\dots,T_n}=p\Par{T_{\alpha_1},\dots,T_{\alpha_n}}\Longleftrightarrow p\BigBigPar{{\Mt{T_1},\dots,\Mt{T_n}}}=p\BigBigPar{{\Mt{T_{\alpha_1}},\dots,\Mt{T_{\alpha_n}}}}.$\SepLine
 
 \ProblemN{\hypertarget{3C13}{13}}{
 	\TextNL{Prove the distr holds for matrix add and matrix multi.}
 	\TextNL{\FontNorm Supp $A, B, C$ are matrices suth $A\Par{B + C}$ make sense, we prove the left distr.}
 }Supp $A\in\Fbb^{m,n}$ and $B,C\in\Fbb^{n,p}.$\parSol{}
-Note that ${\envFontLarge\Sbra{{\envFontDefault A\BigPar{B+C}}}}{_{j,k}}=\sum_{r=1}^n A_{j,r}\BigPar{B+C}{_{r,k}}=\sum_{r=1}^n \BigPar{A_{j,r}B_{r,k}+A_{j,r}C_{r,k}}=\BigPar{AB+AC}{_{j,k}}.$\parSol{\vspace{6pt}}
+Note that ${\BigSbra{{A\BigPar{B+C}}}}{_{j,k}}=\sum_{r=1}^n A_{j,r}\BigPar{B+C}{_{r,k}}=\sum_{r=1}^n \BigPar{A_{j,r}B_{r,k}+A_{j,r}C_{r,k}}=\BigPar{AB+AC}{_{j,k}}.$\parSol{\vspace{6pt}}
 \Or Define $T,S,R$ suth $\Mt{T}=A,\Mt{S}=B,\Mt{R}=C.$\parSol{}
 $A\Par{B+C}=\Mt{T\Par{S+R}}\xlongequal{\text{[3.9]}}\Mt{TS+TR}=AB+AC.$\parSol{}
 \Or $T\Par{S+R}=TS+TR\Rightarrow\Mt{T\Par{S+R}}=\Mt{TS+TR}\Rightarrow A\Par{B+C}=AB+AC.$\PfEnd
@@ -1593,7 +1593,7 @@ $\hText{$Note that $T_i:v\mapsto w_i,\\\;T:v\mapsto\Par{w_1,\dots,w_m}.}\hMath{l
 (a) Supp $T\Par{v_1,\dots,v_m}=0.$ Then $\forall\Par{a_1,\dots,a_n}\in\Fbb^m$, $\varphi\Par{a_1,\dots,a_m}=a_1 v_1+\dots+a_m v_m=0$\par\quad\Ha
 For each $k,$ let $a_k=1,a_j=0$ for all $j\neq k.$ Then each $v_k=0\Rightarrow\Par{v_1,\dots,v_m}=0.$ Thus $T$ is inje.\par\vspace{2pt}\quad
 (b) Supp $\psi\in\Lm{\Fbb^m,V}.$ Let $\Par{e_1,\dots,e_m}$ be std bss of $\Fbb^m$. Then $\forall\Par{b_1,\dots,b_n}\in\Fbb^m$,\vspace{3pt}\par\quad\Hb
-$\XSbra{T\envFontLarge\BigPar{\envFontDefault\psi\Par{e_1},\dots,\psi\Par{e_m}\envFontLarge}\envFontDefault}\Par{b_1,\dots,b_m}=b_1\psi\Par{e_1}+\dots+b_m\psi\Par{e_m}=\psi\BigPar{b_1 e_1+\dots+b_m e_m}=\psi\Par{b_1,\dots,b_m}$.\vspace{3pt}\par\quad\Hb
+$\XSbra{T\BigBigPar{\psi\Par{e_1},\dots,\psi\Par{e_m}}}\Par{b_1,\dots,b_m}=b_1\psi\Par{e_1}+\dots+b_m\psi\Par{e_m}=\psi\BigPar{b_1 e_1+\dots+b_m e_m}=\psi\Par{b_1,\dots,b_m}$.\vspace{3pt}\par\quad\Hb
 Thus $T\BigPar{\psi\Par{e_1},\dots,\psi\Par{e_m}}=\psi$. Hence $T$ is surj.\PfEnd
 \SepLine
 
@@ -1903,7 +1903,7 @@ $\forall \,T\in\mathcal{E},k\in\Bra{1,\dots,m},TE_{k,k}=0\Rightarrow{\normalsize
 {\vspace{2pt}Then $\forall k\in\Bra{1,\dots,n},$ {\FontLarge$0\neq SR_{k,1}=R_{k,1}S.$} Hence $\dim\null S=0,\;\dim\range S=m=n.$}\par\quad
 {\vspace{2pt}\NOTICE that {\FontLarge$G_{i,j}=R_{i,j}S=SR_{i,j}=Q_{i,j}$}. Where $G_{i,j}:v_x\mapsto\delta_{i,x}v_j;\;Q_{i,j}:w_x\mapsto\delta_{i,x}w_j.$}\par\quad
 For each $w_i,\exists\,!\,a_{k,i}\in\Fbb,w_i=a_{1,i}v_1+\dots+a_{n,i}v_n.$ Where $a_{k,i}=\Mt[\BigPar]{I,\Par{w_1,\dots,w_n},\Par{v_1,\dots,v_n}}{_{k,i}}.$\par\quad
-Then fix one $i.$ Now for each $j\in\Bra{1,\dots,n},Q_{i,j}\Par{w_i}=w_j=a_{i,i}v_j=G_{i,j}\envFontLarge\BigPar{\sum_{k=1}^na_{k,i} v_k}.$\par\quad
+Then fix one $i.$ Now for each $j\in\Bra{1,\dots,n},Q_{i,j}\Par{w_i}=w_j=a_{i,i}v_j=G_{i,j}\BigBigPar{\sum_{k=1}^na_{k,i} v_k}.$\par\quad
 Let $\lambda=a_{i,i}.$ Hence each $w_j=\lambda v_j.$ Now fix one $j,$ we have $a_{1,1}v_j=\dots=a_{n,n}v_j,$ then all $a_{i,i}$ are equal.\par\quad
 Thus each $w_j=\lambda v_j\Longrightarrow\Mt{S,B_U}=\Mt{\lambda I}.$\PfEnd
 \SepLine
@@ -2260,7 +2260,7 @@ $\exists\,\varphi\in V\apostrophe,\null\varphi=U\oplus X\Rightarrow\varphi\in U^
 
 \ProblemB{
 	\TextB{Supp $X=\Bra{x_1,\dots,x_m}\subsetneq V.$ Prove the promotion of $X$ is $\Span{x_1,\dots,x_m}.$}
-}$X^0=\envFontLarge\Bra{{\envFontDefault\varphi\in V\apostrophe:\varphi\Par{\lambda x_j+\mu x_k}=0,\forall j,k\in\Bra{1,\dots,m},\lambda,\mu\in\Fbb}}=\Span{x_1,\dots,x_m}{^0}.$\PfEnd
+}$X^0=\BigBra{{\varphi\in V\apostrophe:\varphi\Par{\lambda x_j+\mu x_k}=0,\forall j,k\in\Bra{1,\dots,m},\lambda,\mu\in\Fbb}}=\Span{x_1,\dots,x_m}{^0}.$\PfEnd
 \AComm The promotion of every finite subset $X$ of $V$ is the smallest subsp of $V$ containing $X.$
 \SepLine
 
@@ -2674,10 +2674,10 @@ Asum $\exists\,p\in\Nbp$ suth $h\Par{x}=h\Par{x+p},\forall x\in\Rbb.$ Let $x=0\R
 Thus $1=\cos p+\sin\!\sqrt{2}p=\cos p-\sin\!\sqrt{2}p$\par\quad
 $\Rightarrow\sin\!\sqrt{2}p=0,\,\,\cos p=1\Rightarrow p=2k\pi,k\in\Zbb$, while $p=\Frac{m\pi}{\sqrt{2}},m\in\Zbb$.\par\vspace{-2pt}\quad
 Hence $2k=\Frac{m}{\sqrt{2}}\Rightarrow \sqrt{2}=\Frac{m}{2k}\in\Qbb$. Ctradic!\PfEnd\vspace{10pt}\par\quad
-\Or Becs $\cos x+\sin\!\sqrt{2}x=\cos\!\Par{x+p}+\sin\!\envFontLarge\BigPar{\!\sqrt{2}x+\sqrt{2}p}.$ By diff twice,\par\vspace{2pt}\quad
+\Or Becs $\cos x+\sin\!\sqrt{2}x=\cos\!\Par{x+p}+\sin\!\BigBigPar{\!\sqrt{2}x+\sqrt{2}p}.$ By diff twice,\par\vspace{2pt}\quad
 \Blind{\Or Becs} $\cos x+2\sin\!\sqrt{2}x=\cos\!\Par{x+p}+2\envFontLarge\sin\!\BigPar{\!\sqrt{2}x+\sqrt{2}p}.$\par\vspace{6pt}\quad
 \!\!\!$\MathRightBrace{r}{
-	\sin\!\sqrt{2}x=\sin\!{\envFontLarge\BigPar{\!\sqrt{2}x+\sqrt{2}p}}\vspace{2pt}\\ 
+	\sin\!\sqrt{2}x=\sin\!{\BigBigPar{\!\sqrt{2}x+\sqrt{2}p}}\vspace{2pt}\\ 
 	\cos x=\cos\!\Par{x+p}}\Rightarrow$ Let $x=0,$\;\,$ p=\Frac{m\pi}{\sqrt{2}}=2k\pi.$\; Ctradic.\PfEnd\vspace{4pt}\par
 \SepLine
 
@@ -2707,17 +2707,17 @@ Hence $2k=\Frac{m}{\sqrt{2}}\Rightarrow \sqrt{2}=\Frac{m}{2k}\in\Qbb$. Ctradic!\
 %{\tgsl You don't have to compute to know that the dimension of the set of solutions is 3.}
 \par\quad
 \NOTICE that $\not\exists\,p\in\PoFi$ of deg $1$ and $2,$ while $p\in U.$ Thus $\dim U\leqslant \dim\PoF{4}-2=3.$\par\vspace{2pt}\quad
-(a) Consider $B=\envFontLarge\BigPar{\envFontDefault1,\Par{z-2}\Par{z-5}\Par{z-6},z\Par{z-2}\Par{z-5}\Par{z-6}\envFontLarge}.$\par\quad\Ha
+(a) Consider $B=\BigBigPar{1,\Par{z-2}\Par{z-5}\Par{z-6},z\Par{z-2}\Par{z-5}\Par{z-6}}.$\par\quad\Ha
 Let $a_0+a_3\Par{z-2}\Par{z-5}\Par{z-6}+a_4z\Par{z-2}\Par{z-5}\Par{z-6}=0\Rightarrow a_0=a_3=a_4=0.$\par\quad\Ha
 Thus the list $B$ is liney indep in $U.$ Now $\dim U\geqslant 3\Rightarrow \dim U=3.$ Thus $B_U=B.$\par\vspace{2pt}\quad
-(b) Extend to a bss of $\PoF{4}$ as $\envFontLarge\BigPar{\envFontDefault 1,z,z^2,\Par{z-2}\Par{z-5}\Par{z-6},z\Par{z-2}\Par{z-5}\Par{z-6}\envFontLarge}.$\par\quad\Hb
+(b) Extend to a bss of $\PoF{4}$ as $\BigBigPar{1,z,z^2,\Par{z-2}\Par{z-5}\Par{z-6},z\Par{z-2}\Par{z-5}\Par{z-6}}.$\par\quad\Hb
 Let $W=\Span{z,z^2}=\Bra{az+bz^2:a,b\in\Fbb}$, so that $\PoF{4}=U\oplus W.$\PfEnd
 \SepLine
 
 \BulletPointX\NoteForSmall{Exe (6)} \,\,\,For each nonconst $p\in\Span{1,z,\dots,z^m},\;\exists$ smallest $m\in\Nbp,$ which is $\deg p.$\TextB{}
 (a) If $p_0,p_1,\dots,p_m$ are suth all $a_{k,k}\neq 0,$ and\TextB{}
 \Hb $p_0=a_{0,0},\,$ each $p_k=a_{0,k}+a_{1,k}z+\dots+a_{k,k}z^k.$\TextB{\vspace{-18pt}}
-\Ha Then the upper-trig $\Mt[\envFontLarge\BigPar]{\envFontDefault I,\Par{p_0,p_1,\dots,p_m},\Par{1,z,\dots,z^m}\envFontLarge}={}${\small$\begin{pmatrix}
+\Ha Then the upper-trig $\Mt[\BigBigPar]{I,\Par{p_0,p_1,\dots,p_m},\Par{1,z,\dots,z^m}}={}${\small$\begin{pmatrix}
 		a_{0,0} & a_{0,1} & \cdots & a_{0,m}\\
 		0       & a_{1,1} & \cdots & a_{1,m}\\
 		\vdots  & \vdots  & \ddots & \vdots\\
@@ -2725,14 +2725,14 @@ Let $W=\Span{z,z^2}=\Bra{az+bz^2:a,b\in\Fbb}$, so that $\PoF{4}=U\oplus W.$\PfEn
 	\end{pmatrix}$}.\TextB{\vspace{-8pt}}
 (b) If $p_0,p_1,\dots,p_m$ are suth all $a_{k,k}\neq 0,$ and\TextB{}
 \Hb $p_0=a_{0,0}+\dots+a_{m,0}x^m,\,$ each $p_k=a_{k,k}x^k+\dots+a_{m,k}x^m.$\TextB{\vspace{-18pt}}
-\Hb Then the lower-trig \;$\Mt[\envFontLarge\BigPar]{\envFontDefault I,\Par{p_0,p_1,\dots,p_m},\Par{1,z,\dots,z^m}\envFontLarge}={}${\small$\begin{pmatrix}
+\Hb Then the lower-trig \;$\Mt[\BigBigPar]{I,\Par{p_0,p_1,\dots,p_m},\Par{1,z,\dots,z^m}}={}${\small$\begin{pmatrix}
 		a_{0,0} & 0       & \cdots & 0\\
 		a_{1,0} & a_{1,1} & \cdots & 0\\
 		\vdots  & \vdots  & \ddots & \vdots\\
 		a_{m,0} & a_{m,1} & \cdots & a_{m,m}
 	\end{pmatrix}$}.\TextB{\vspace{-12pt}}
 \AComm Define $\xi_k\Par{p}$ by the coeff of $z^k$ in $p\in\PoF{m}.$\parCom\IndentB{}
-Then $\Mt[\envFontLarge\BigPar]{\envFontDefault\xi_k,\Par{1,z,\dots,z^m},\Par{1}\envFontLarge}=\mathcal{E}^{\SmallPar[1pt]{1,k}}\in\Fbb^{1,m+1}.$\vspace{-2pt}
+Then $\Mt[\BigBigPar]{\xi_k,\Par{1,z,\dots,z^m},\Par{1}}=\mathcal{E}^{\SmallPar[1pt]{1,k}}\in\Fbb^{1,m+1}.$\vspace{-2pt}
 \SepLine\pagebreak
 
 \ProblemB{

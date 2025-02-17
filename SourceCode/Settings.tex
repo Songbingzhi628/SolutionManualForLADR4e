@@ -145,11 +145,14 @@
 \newcommand{\aMid}[2][1pt]{\Mid[#1]{#2}}
 \newcommand{\aXMid}[2][1pt]{\Mid[#1][\Big]{#2}}
 \newcommand{\Bra}[2][\envFont]{{\text{\forbra{#1\{}}}#2{\text{\forbra{#1\}}}}}
+\newcommand{\BigBra}[1]{\Bra[\envFontA]{#1}}
 \newcommand{\SmallPar}[2][0pt]{{\envFontSmall[\scriptsize]\Par[#1]{#2}}}
 \newcommand{\TinyPar}[2][0pt]{(\hspace{#1}#2\hspace{#1})}
 \newcommand{\BigPar}[2][1pt]{{\text{\envFont\forbra(\hspace{#1}}}#2{\text{\hspace{#1}\envFont\forbra)}}}
+\newcommand{\BigBigPar}[2][1pt]{{\text{\envFontA\forbra(\hspace{#1}}}#2{\text{\hspace{#1}\envFontA\forbra)}}}
 \newcommand{\XPar}[1]{{\text{\envFont\forbrax(\hspace{1pt}}}#1{\text{\hspace{1pt}\envFont\forbrax)}}}
 \newcommand{\Sbra}[2][1pt]{{\text{\envFont\forbra[\hspace{#1}}}#2{\text{\envFont\forbra\hspace{#1}]}}}
+\newcommand{\BigSbra}[2][1pt]{{\text{\envFontA\forbra[\hspace{#1}}}#2{\text{\envFontA\forbra\hspace{#1}]}}}
 \newcommand{\XSbra}[2][0pt]{{\text{\envFont\forbrax[\hspace{#1}}}#2{\text{\envFont\forbrax\hspace{#1}]}}}
 \newcommandx{\zeroSubs}[2][1={},2=\Bra]{{#1#2{0}}}
 \def\emptySet{\varnothing}
@@ -158,35 +161,38 @@
 \newcommand{\XInterval}[3]{{\text{\envFont\forbrax#1}}#3{\text{\envFont\forbrax#2}}}
 
 \newcommand{\ExampleX}[2][\Solution]{
-	{\BulletPoint} {\Example}\,\,\,{#2}\envFontDefault\vspace{-16pt}\par
+	\def\Ptarget{{\BulletPoint} \Example \,\,\,}
+	{\BulletPoint} \Example\,\,\,{#2}\envFontDefault\vspace{-16pt}\par
 	#1
 }
 \newcommand{\ProblemN}[3][\Solution]{
+	\def\Ptarget{\Onumber{#2}}
 	{\Onumber{#2}} {#3}\envFontDefault\vspace{-16pt}\par
 	#1
 }
 \newcommandx{\ProblemNor}[5][1=\Solution,4=\Sbra]{
+	\def\Ptarget{{\Onumber{#2}} \;{\dbsp#4{\OR({\normalsize#3})}}}
 	{\Onumber{#2}} \;{\dbsp#4{\OR({\normalsize#3})}}{#5}\envFontDefault\vspace{-16pt}\par
 	#1
 }
 \newcommandx{\ProblemNnoor}[5][1=\Solution,4=\Sbra]{
+	\def\Ptarget{{\Onumber{#2}} \;{\dbsp#4{\small#3}}}
 	{\Onumber{#2}} \;{\dbsp#4{\small#3}}{#5}\envFontDefault\vspace{-16pt}\par
 	#1
 }
 \newcommand{\ProblemB}[2][\Solution]{
+	\def\Ptarget{\BulletPoint}
 	{\BulletPoint}{#2}\envFontDefault\vspace{-16pt}\par
 	#1
 }
-\newcommand{\ProblemBc}[2][\Solution]{
-	{$\circ$}{#2}\envFontDefault\vspace{-16pt}\par
-	#1
-}
 \newcommandx{\ProblemBnoor}[4][1=\Solution,3=\Par]{
-	{\BulletPoint} \dbsp#3{{\small#2}}{#4}\envFontDefault\vspace{-16pt}\par
+	\def\Ptarget{{\BulletPoint} #3{{\small#2}}}
+	{\BulletPoint} #3{{\small#2}}{#4}\envFontDefault\vspace{-16pt}\par
 	#1
 }
 \newcommand{\ProblemBor}[3][\Solution]{
-	{\BulletPoint} {\dbsp\OR({\normalsize#2})}{#3}\envFontDefault\vspace{-16pt}\par
+	\def\Ptarget{{\BulletPoint} {\OR({\normalsize#2})}}
+	{\BulletPoint} {\OR({\normalsize#2})}{#3}\envFontDefault\vspace{-16pt}\par
 	#1
 }
 \newcommand{\AlignEq}[2]{

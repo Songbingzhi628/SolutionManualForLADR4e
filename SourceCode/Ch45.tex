@@ -176,8 +176,8 @@ Each $\Sbra{rp+sq}{^{\SmallPar{D}}}\BigPar{\lambda\Sbra{I_{D,j}}}=\Sbra{\mathC_{
 \Blind{Each} $\Blind{\Sbra{rp+sq}{^{\SmallPar{D}}}\BigPar{\lambda\Sbra{I_{D,j}}}=}+\Sbra{\mathC_{D}^D s{^{\SmallPar{D}}}q{^{\SmallPar{0}}}+\dots+\mathC_{D}^d s{^{\SmallPar{d}}}q{^{\SmallPar{D-d}}}+\dots+\mathC_{D}^0 s{^{\SmallPar{0}}}q{^{\SmallPar{D}}}}\BigPar{\lambda\Sbra{I_{D,j}}}$\vspace{4pt}\par\quad\Hii
 \Blind{Each} $\Blind{\Sbra{rp+sq}{^{\SmallPar{D}}}\BigPar{\lambda\Sbra{I_{D,j}}}}=\Sbra{\mathC_{D}^D s{^{\SmallPar{D}}}q{^{\SmallPar{0}}}}\BigPar{\lambda\Sbra{I_{D,j}}}.$\; Where each $\lambda\Sbra{I_{D,j}}\in I_{>D}\subseteq I_{D-1,\alpha}.$\vspace{4pt}\par\quad\Hii
 Hence $s{^{\SmallPar{D}}}\BigPar{\lambda\Sbra{I_{D,j}}}=0.$ The asum holds for all $D\in\Bra{0,\dots,A-1}.$\vspace{6pt}\par\quad
-\NOTICE that $\forall k=\Bra{0,\dots,A-2},s{^{\SmallPar{k}}}$ and $s{^{\SmallPar{k+1}}}$ have zeros $\envFontLarge\Bra{{\envFontDefault\lambda\Sbra{I_{k+1,1}},\dots,\lambda\Sbra{I_{k+1,\,J_{k+1}}}}}$ in common.\vspace{2pt}\par\quad
-Now $\forall D\in\Bra{1,\dots,A-1},s=s{^{\SmallPar{0}}},\dots,s{^{\SmallPar{D}}}$ have zeros $\envFontLarge\Bra{{\envFontDefault\lambda\Sbra{I_{D,1}},\dots,\lambda\Sbra{I_{D,\,J_D}}}}$ in common.\vspace{2pt}\par\quad
+\NOTICE that $\forall k=\Bra{0,\dots,A-2},s{^{\SmallPar{k}}}$ and $s{^{\SmallPar{k+1}}}$ have zeros $\BigBra{{\lambda\Sbra{I_{k+1,1}},\dots,\lambda\Sbra{I_{k+1,\,J_{k+1}}}}}$ in common.\vspace{2pt}\par\quad
+Now $\forall D\in\Bra{1,\dots,A-1},s=s{^{\SmallPar{0}}},\dots,s{^{\SmallPar{D}}}$ have zeros $\BigBra{{\lambda\Sbra{I_{D,1}},\dots,\lambda\Sbra{I_{D,\,J_D}}}}$ in common.\vspace{2pt}\par\quad
 Thus $s\Par{z}$ is divisible by $\BigPar{z-\lambda\Sbra{I_{D,1}}}{^{\alpha\def\envFont{\scriptsize}\Sbra{I_{D,1}}}}\cdots\BigPar{z-\lambda\Sbra{I_{D,\,J_D}}}{^{\alpha\def\envFont{\scriptsize}\Sbra{I_{D,\,J_D}}}},$ for each $D\in\Bra{0,\dots,A-1}.$\vspace{2pt}\par\quad
 Hence $s\Par{z}=\Sbra{\Par{z-\lambda_1}{^{\alpha_1}}\cdots\Par{z-\lambda_M}{^{\alpha_M}}}\,s_0\Par{z},$ while $\deg s<m=\alpha_1+\dots+\alpha_M.$ Now by {\TIPS}.\PfEnd
 \SepLine\pagebreak
@@ -238,7 +238,7 @@ By asum, each $v_j'\in U.$ Thus $v_1,\dots,v_{k-1}\in U.$ So that $v_k=v-v_1-\do
 \SepLine[0pt][\Blind{\BulletPointX} ]
 
 \ProblemB{
-	\TipsN{2}\,\,\TextB{Supp $\dim V=m\Rightarrow B_V=\Par{v_1,\dots,v_m}.$ Let each $E_k=E\Par{\lambda_k,T}=\Span{v_k}.$}
+	\TipsN{2}\,\,\TextB{Supp $\dim V=m\Rightarrow B_V=\Par{v_1,\dots,v_m}.$ Let each $E_k=\Span{v_k}.$}
 	\IndentTipsN{2}\TextB{Prove $U=\BigPar[0pt]{U\cap E_1}\oplus\cdots\oplus\BigPar[0pt]{U\cap E_m}.$\vspace{-1pt}}
 }Becs $V=E_1\oplus\cdots\oplus E_m\Rightarrow\forall v\in U,\exists\,!\,c_j\in E_j,v=c_1v_1+\dots+c_mv_m.$\parSol{}
 For each $j,$ $c_j\neq 0\Rightarrow c_jv_j$ eigvec corres $\lambda_j.$ Othws $c_jv_j=0\in U.$\parSol{}
@@ -294,7 +294,7 @@ Let $W\oplus U=V.$ Define $T\in\Lm{V}$ by $T\Par{u+w}=w.$\PfEnd
 %\SepLine
 
 \ProblemN{\hypertarget{5A10}{10}}{
-	\TextNL{Define $T\in\Lm{\Fbb^n}$ by $T\Par{x_1,x_2,x_3,\dots,x_n}=\Par{x_1,2 x_2,3 x_3,\dots,n x_n}$}
+	\TextNL{Define $T\in\Lm{\Fbb^n}$ by $T\Par{x_1,x_2,x_3,\dots,x_n}=\BigPar{x_1,2 x_2,3 x_3,\dots,n x_n}.$}
 	(a) \TextNL{Find all eigvals and eigvecs;\;\; {\tgnr\large(b)} Find all invarsps of $V$ under $T.$}
 }Let $\Par{e_1,\dots,e_n}$ be the std bss of $\Fbb^n.$\parSol{}
 (a) The eigvals are $\Bra{1,\dots,n}$ of len $\dim\Fbb^n.$ Let each $E_k=\Span{e_k}.$\parSol{\Ha}
@@ -303,7 +303,7 @@ The set of all eigvecs is $\Par{E_1\cup\cdots\cup E_n}\nonzero[\Big].$\parSol{}
 \SepLine
 
 \ProblemN{\hypertarget{5A18}{18}}{
-	\TextNL{Define $T\in\Lm{\Fbb^\infty}$ by $T\Par{z_1,z_2,\dots} = \Par{0, z_1,z_2,\dots}.$ Show $T$ has no eigvals.}
+	\TextNL{Define $T\in\Lm{\Fbb^\infty}$ by $T\Par{z_1,z_2,\cdots}=\BigPar{0, z_1,z_2,\cdots}.$ Show $T$ has no eigvals.}
 }Supp $z_k\neq 0$ and $T\Par{z_1,z_2,\dots}=\Par{\lambda z_1,\lambda z_2,\dots}=\Par{0,z_1,z_2,\dots}.$ Thus $\lambda z_1=0,\,\lambda z_k=z_{k-1}.$\parSol{}
 ($-$) $\lambda=0\Rightarrow\lambda z_2=z_1=0=\dots=z_k\Rightarrow\Par{z_1,z_2,\dots}=0.$ Not an eigval.\parSol{}
 ($=$) $\lambda\neq 0\Rightarrow\lambda z_1=0\Rightarrow z_1=\dots=z_k=0.$ Not an eigval.\PfEnd
@@ -317,7 +317,7 @@ Then (I) $\lambda=0\Rightarrow x_1+\dots+x_n=0;$ \;(II) $\lambda\neq 0\Rightarro
 \SepLine
 
 \ProblemN{\hypertarget{5A20}{20}}{
-	\TextNL{Define $S\in\Lm{\Fbb^\infty}$ by $S\Par{z_1,z_2,z_3,\dots} = \Par{z_2,z_3,\dots}.$}
+	\TextNL{Define $S\in\Lm{\Fbb^\infty}$ by $S\Par{z_1,z_2,z_3,\cdots} = \Par{z_2,z_3,\cdots}.$}
 	\TextNL{Show every elem of $\Fbb$ is an eigval of $S$, and find all eigvecs of $S$.\vspace{-2pt}}
 }Supp $z_k\neq 0$ and $S\Par{z_1,z_2,\dots}=\Par{\lambda z_1,\lambda z_2,\dots}=\Par{z_2,z_3,\dots}.$ Then each $\lambda z_k=z_{k+1}.$\parSol{}
 (I) $\lambda=0\Rightarrow$ each$z_k=\dots=z_2=\lambda z_1=0.$ Let $z_1\neq0\Rightarrow E\Par{0,S}=\Span{e_1}.$\parSol{}
@@ -408,7 +408,6 @@ Now $E\Par{\lambda,T}=\Bra{Su:u\in E\Par{\lambda,S^{-1}TS}};\;E\Par{\lambda,S^{-
 %\SepLine
 
 \ProblemBnoor{\hypertarget{5A4e15}{4E 15}}{
-	\TextB{Supp $T\in\Lm{V}$, and $\lambda\in\Fbb.$}
 	\TextB{Show $\lambda$ is an eigval of $T$ $\Longleftrightarrow$ $\lambda$ is an eigval of the dual optor $T\apostrophe\in\Lm{V\apostrophe}$.}
 }\Sbra[3pt]{{\tgsl Req Finide}} \;${T-\lambda I_V}$ not inv $\Longleftrightarrow\Par{T-\lambda I_V}\apostrophe=T\apostrophe-\lambda I_{V\apostrophe}$ not inv.\PfEnd\vspace{2pt}\parSol{}
 (a) Supp $\lambda$ is eigval with $v.$ Let $U$ be invar with $U\oplus\Span{v}=V,$ by Exe (4E 39).\parSol{\Ha}
@@ -422,7 +421,7 @@ Define $\psi\in V\apostrophe$ by $\psi\Par{x_1,x_2,\cdots}=x_1.$ Then $\Sbra{T\a
 	(a) \TextNL{Supp $\lambda\in\Fbb$ with $\lambda\neq 0$. Prove $\lambda$ is eigval of $T$ $\Longleftrightarrow\lambda^{-1}$ is eigval of $T^{-1}$.}
 	(b) \TextNL{Prove $T,T^{-1}$ have the same eigvecs.}
 }$Tv=\lambda v\Longleftrightarrow v=\lambda T^{-1}v\Longleftrightarrow \lambda^{-1}v=T^{-1}v.$ Where $v\neq 0.$\PfEnd
-\SepLine
+\SepLine\pagebreak
 
 \ProblemB{
 	\TextB{Supp $\Fbb=\Rbb,$ $T\in\Lm{V}$.}
@@ -508,9 +507,9 @@ $\exists\,!\,\lambda_k=0.$ Now $\Bra{\lambda_jv_j:j\neq k}$ liney indep. By [2.2
 	\TextB{}\vspace{2pt}
 }(a) Let $V=\Span{e^{\lambda_1x},\dots,e^{\lambda_nx}}.$ Define $D\in\Lm{V}$ by $Df=f\apostrophe.$\parSol{\Ha}
 Then becs each $\lambda_k e^{\lambda_k x}=D\Par{e^{\lambda_k x}}.$ Now $\lambda_1,\dots,\lambda_n$ are disti eigvals of $D.$ By [5.10].\PfEnd\vspace{2pt}\parSol{}
-(b) Let $V=\Span[\BigPar]{\cos\!\Par{\lambda_1 x},\dots,\cos\!\Par{\lambda_n x}}.$ Define $Df=f\apostrophe.$\parSol{\Hb}
-Then becs $D\BigPar{\cos\!\Par{\lambda_k x}}=-\lambda_k\sin\!\Par{\lambda_k x}.$ 又 $D\BigPar{\sin\!\Par{\lambda_k x}}=\lambda_k\cos\!\Par{\lambda_k x}.$\parSol{\Hb}
-Thus $D^2\BigPar{\cos\!\Par{\lambda_k x}}=-\lambda_k^2\cos\!\Par{\lambda_k x}.$ Now $-\lambda_1^2,\dots,-\lambda_n^2$ are disti eigvals of $D^2.$ Simlr.\PfEnd
+(b) Let $V=\Span[\BigPar]{\!\cos{\lambda_1 x},\dots,\cos{\lambda_n x}}.$ Define $Df=f\apostrophe.$\parSol{\Hb}
+Then becs $D\BigPar{\!\cos{\lambda_k x}}=-\lambda_k\sin{\lambda_k x}.$ 又 $D\BigPar{\!\sin{\lambda_k x}}=\lambda_k\cos{\lambda_k x}.$\parSol{\Hb}
+Thus $D^2\BigPar{\!\cos{\lambda_k x}}=-\lambda_k^2\cos{\lambda_k x}.$ Now $-\lambda_1^2,\dots,-\lambda_n^2$ are disti eigvals of $D^2.$ Simlr.\PfEnd
 \SepLine
 
 \ProblemN{35}{
@@ -535,54 +534,40 @@ Note that $\Par{T\XSlash U}\Par{1+U}=e^x+U=0.$ While $0$ is not an eigval of $T$
 \SepLine
 
 \ProblemN{\hypertarget{5A24}{24}}{
-	\TextNL{Supp $A\in\Fbb^{n,n}.$ Define $T\in\Lm{\Fbb^{n,1}}$ by $Tx = Ax$.}
-	(a) \TextNL{Supp the sum of the ent in each row of $A$ equals $1$. Prove $1$ is an eigval of $T$.}
-	(b) \TextNL{Supp the sum of the ent in each col of $A$ equals $1$. Prove $1$ is an eigval of $T$.}
-}\vspace{-8pt}\par\quad
-Supp $\lambda$ is an eigval of $T$ with an eigvec $x.$ Then $Tx=Ax={}${\normalsize$\begin{pmatrix} \sum_{k=1}^n A_{1,k}x_k\\ \vdots\\ \sum_{k=1}^n A_{n,k}x_k\end{pmatrix}$}${}=\lambda ${\normalsize$\begin{pmatrix} x_1\\ \vdots\\ x_n\end{pmatrix}$}.\vspace{-6pt}\par\quad
-(a) Supp $\sum_{r=1}^n A_{R,c}=1$ for each $R\in\Bra{1,\dots,n}.$\par\quad\Ha
-Then if we let $x_1=\dots=x_n,$ then $\lambda=1,$ and hence is an eigval of $T.$\par\vspace{10pt}\quad
-(b) Supp $\sum_{r=1}^n A_{r,C}=1$ for each $C\in\Bra{1,\dots,n}.$\vspace{4pt}\par\quad\Hb
-Then $\sum_{r=1}^n \BigPar{Ax}_{r,\cdot}=\sum_{r=1}^n \BigPar{Ax}_{r,1}=\sum_{c=1}^n\BigPar{A_{1,c}+\dots+A_{n,c}}x_c=\sum_{c=1}^n x_c=\lambda\BigPar{x_1+\dots+x_n}.$\vspace{4pt}\par\quad\Hb
-Hence $\lambda=1$ for all $x\in\Fbb^{n,1}$ suth $\sum_{c=1}^n x_{c,1}\neq 0.$\PfEnd\vspace{10pt}\quad\Hb
-\Or We show $\Par{T-I}$ is not inv, so that $\lambda=1$ is an eigval.\vspace{2pt}\par\quad\Hb
-Becs $\Par{T-I}x=\Par{A-I}x={}${\small$\begin{pmatrix} \sum_{r=1}^n A_{1,r}x_r-x_1\\ \vdots\\ \sum_{r=1}^n A_{n,r}x_r-x_n\end{pmatrix}=\begin{pmatrix} y_1\\ \vdots\\ y_n\end{pmatrix}$}.\vspace{4pt}\par\quad\Hb
-Then $y_1+\dots+y_n=\sum_{r=1}^n\sum_{c=1}^n \Par{A_{r,c}x_c-x_r}=\sum_{c=1}^n x_c\sum_{r=1}^n A_{r,c}-\sum_{r=1}^n x_r=0.$\par\vspace{6pt}\quad\Hb
-Thus $\range\Par{T-I}\subseteq\envFontLarge\Bra{\envFontDefault\,${\normalsize$\begin{pmatrix}	y_1 & \cdots & y_n\end{pmatrix}$}${^t}\in\Fbb^{n,1}:y_1+\dots+y_n=0\envFontLarge}.$ Hence $\Par{T-I}$ is not surj.\PfEnd\vspace{10pt}\quad\Hb
-\Or Let $\Par{e_1,\dots,e_n}$ be the std bss of $\Fbb^{n,1}.$ Define $\psi\in\BigPar{\Fbb^{n,1}}\apostrophe$ by $\psi\Par{e_k}=1.$\vspace{2pt}\par\quad\Hb
-Thus $\BigPar{\psi\circ\Par{T-I}}\Par{e_k}=\psi\XPar{\BigPar{\sum_{j=1}^n A_{j,k}e_j}-e_k}=\BigPar{\sum_{j=1}^n A_{j,k}}-1=0.$\vspace{2pt}\par\quad\Hb
-Which means that $\psi\circ\Par{T-I}=0.$ 又 $\psi\neq 0.$ Hence $\Par{T-I}$ is not inje.\PfEnd\vspace{10pt}\quad\Hb
-\Or Define $S\in\Lm{\Fbb^{n,1}}$ by $Sx=A^tx.$ Becs the rows of $A^t$ are the cols of $A.$\par\quad\Hb
-Now by (a), $1$ is an eigval of $S.$ Let $\Par{\varphi_1,\dots,\varphi_n}$ be the dual bss of $\Par{e_1,\dots,e_n}.$\vspace{2pt}\par\quad\Hb
-Define $\Phi\in\Lm[\XPar]{\Fbb^{n,1},\BigPar{\Fbb^{1,n}}\apostrophe}$ by $\Phi\Par{e_k}=\varphi_k.$ Note that $\Mt{T\apostrophe}=A^t.$\vspace{2pt}\par\quad\Hb
-Now $\BigPar{\Phi^{-1}T\apostrophe\Phi}\Par{e_k}=\BigPar{\Phi^{-1}T\apostrophe}\Par{\varphi_k}=\Phi^{-1}\BigPar{\sum_{j=1}^n A_{k,j}\varphi_j}=\sum_{j=1}^n A_{k,j}e_j=A^t e_k=Se_k.$\vspace{3pt}\par\quad\Hb
-Thus $1$ is an eigval of $S=\Phi^{-1}T\apostrophe\Phi,$ so of $T\apostrophe,$ \Sbra{ by Exe (15) }, so of $T,$ \Sbra{ by (4E 5.A.15) }.\PfEnd
+	\TextNL{Supp $A\in\Fbb^{n,n}.$ Define $T\in\Lm{\Fbb^{n,1}}$ by $Tx = Ax$. Prove $1$ is eigval of $T$ if\hspace{2pt}$:$}
+	(a) \TextNL{the sum of the ent in each row of $A$ equals $1$. \, {\tgnr\large(b)} each col of $A.$}
+}Supp $x\neq0$ and $Ax={\BigPar{A_{j,1}x_1+\dots+A_{j,n}x_n}{_{j=1}^n}}=\lambda\Par{x_j}{_{j=1}^n}=\lambda x.$\par\quad
+(a) Supp $A_{R,1}+\dots+A_{R,n}=1.$ Let $x_1=\dots=x_n.$ Immed.\vspace{2pt}\par\quad
+(b) Supp $A_{1,C}+\dots+A_{n,C}=1.$ Then $\BigSbra{\sum_{R=1}^n A_{R,\cdot}}x=\sum_{k=1}^n\BigPar{{A_{1,k}+\dots+A_{n,k}}}x_k.$\par\quad\Hb
+Now each $\Par{Ax}{_{R,1}}=\Par{x}{_{R,1}}=\Par{\lambda x}{_{R,1}}.$ \,Thus for $x$ with $\sum_{k=1}^nx_k\neq 0,$ $\lambda=1$ is the corres eigval.\PfEnd\vspace{4pt}\quad\Hb
+\Or Becs $\Par{T-I}x=\Par{A-I}x=\BigPar{\Par{A_{j,1}x_1+\dots+A_{j,n}x_n}-x_j}{_{j=1}^n}=\Par{y_j}{_{j=1}^n}.$\vspace{1pt}\par\quad\Hb
+Now $y_1+\dots+y_n=\sum_{j=1}^n\sum_{k=1}^n \BigPar{A_{j,k}x_k-x_j}=\sum_{k=1}^n x_k\BigSbra{\sum_{j=1}^n A_{j,k}}-\sum_{j=1}^n x_j=0.$\par\vspace{2pt}\quad\Hb
+Thus $\range\Par{T-I}\subseteq\Bra{\Par{y_1,\dots,y_n}:y_1+\dots+y_n=0}.$ Now $\Par{T-I}$ is not inv.\PfEnd\vspace{5pt}\quad\Hb
+\Or Let $\Par{e_1,\dots,e_n}$ be the std bss of $\Fbb^{n,1}.$ Define $\psi\in\BigPar{\Fbb^{n,1}}\apostrophe$ with each $\psi\Par{e_k}=1.$\vspace{0pt}\par\quad\Hb
+Becs $Ae_k=A_{\cdot,k}=\sum_{j=1}^nA_{j,k}e_j\Rightarrow{\psi\Par{T-I}}{e_k}=\psi\BigBigPar[0pt]{{\sum_{j=1}^n A_{j,k}e_j}-e_k}=\sum_{j=1}^n A_{j,k}-1=0.$\vspace{0pt}\par\quad\Hb
+Thus \,$\psi\Par{T-I}=0\Rightarrow\Par{T-I}$ not inje.\PfEnd\vspace{4pt}\quad\Hb
+\Or Define $S\in\Lm{\Fbb^{n,1}}$ by $Sx=A^tx.$ Becs the rows of $\Mt{S}=A^t$ are the cols of $\Mt{T}=A.$\par\quad\Hb
+Let $\Par{\varphi_1,\dots,\varphi_n}$ be the dual bss of $\Par{e_1,\dots,e_n}.$ Define $\Phi\in\Lm[\Sbra]{\Fbb^{n,1},\BigPar{\Fbb^{1,n}}\apostrophe}$ by $\Phi\Par{e_k}=\varphi_k.$\vspace{1pt}\par\quad\Hb
+Now $\BigPar{\Phi^{-1}T\apostrophe\Phi}{e_k}=\BigPar{\Phi^{-1}T\apostrophe}{\varphi_k}=\Phi^{-1}\BigBigPar[0pt]{\sum_{j=1}^n A_{j,k}^t\varphi_j}=\sum_{j=1}^n A_{j,k}^te_j=A^t e_k=Se_k.$\vspace{1pt}\par\quad\Hb
+Becs by (a), $1$ is eigval of $S=\Phi^{-1}T\apostrophe\Phi.$ So of $T\apostrophe,$ by Exe (15). So of $T,$ by Exe (4E 15).\PfEnd
 \SepLine
 
 \ProblemB{
-	\TextB{Supp $A\in\Fbb^{n,n}.$ Define $T\in\Lm{\Fbb^{1,n}}$ by $Tx = xA.$}
-	(a) \TextB{Supp the sum of the ent in each col of $A$ equals $1$. Prove $1$ is an eigval of $T$.}
-	(b) \TextB{Supp the sum of the ent in each row of $A$ equals $1$. Prove $1$ is an eigval of $T$.}
-}\par\quad
-Supp $\lambda$ is an eigval with an eigvec $x.$ Then {\normalsize$\begin{pmatrix} \sum_{r=1}^n x_r A_{r,1} &\cdots & \sum_{r=1}^n x_r A_{r,n}\end{pmatrix}$}${}=\lambda${\normalsize$\begin{pmatrix} x_1 & \cdots & x_n\end{pmatrix}$}.\vspace{4pt}\par\quad
-(a) Supp $\sum_{r=1}^n A_{r,C}=1$ for each $C\in\Bra{1,\dots,n}.$\par\quad\Ha
-Thus if $x_1=\dots=x_n,$ then $\lambda=1,$ hence is an eigval of $T.$\vspace{4pt}\par\quad
-(b) Supp $\sum_{c=1}^n A_{R,c}=1$ for each $R\in\Bra{1,\dots,n}.$\vspace{2pt}\par\quad\Hb
-Thus $\sum_{c=1}^n \BigPar{xA}_{\cdot,c}=\sum_{c=1}^n\BigPar{A_{c,1}+\dots+A_{c,n}}x_c=\sum_{c=1}^n x_c=\lambda\BigPar{x_1+\dots+x_n}.$\vspace{2pt}\par\quad\Hb
-Hence $\lambda=1,$ for all $x$ suth $\sum_{r=1}^n x_{1,r}\neq 0.$\PfEnd\vspace{6pt}\quad\Hb
-\Or We show $\Par{T-I}$ is not inv, so that $\lambda=1$ is an eigval.\par\quad\Hb
-Becs $\Par{T-I}x=x\BigPar{A-\Mt{I}}={}${\normalsize$\begin{pmatrix} \sum_{c=1}^n x_c A_{c,1}-x_1 &\cdots & \sum_{c=1}^n x_c A_{c,n}-x_n\end{pmatrix}$}${}={}${\normalsize$\begin{pmatrix} y_1 & \cdots & y_n\end{pmatrix}$}.\vspace{2pt}\par\quad\Hb
-Then $y_1+\dots+y_n=\sum_{c=1}^n\sum_{r=1}^n\Par{x_r A_{r,c}-x_c}=\sum_{r=1}^n x_r\sum_{c=1}^n A_{r,c}-\sum_{c=1}^n x_c=0.$\par\vspace{4pt}\quad\Hb
-Thus $\range\Par{T-I}\subseteq\Bra{\,${\small$\begin{pmatrix}y_1 & \cdots & y_n\end{pmatrix}$}$\,\in\Fbb^{1,n}:y_1+\dots+y_n=0}.$ Hence $\Par{T-I}$ is not surj.\PfEnd\vspace{6pt}\quad\Hb
-\Or Let $\Par{e_1,\dots,e_n}$ be the std bss of $\Fbb^{1,n}.$ Define $\psi\in\Par{\Fbb^{n,1}}\apostrophe$ by $\psi\Par{e_k}=1.$\vspace{2pt}\par\quad\Hb
-Becs $Te_k=e_k A=\begin{pmatrix}A_{k,1}&\cdots&A_{k,n}\end{pmatrix}=\sum_{i=1}^n A_{k,i}e_i.$ \ACoro $\Mt{T}=A^t.$\vspace{3pt}\par\quad\Hb
-$\BigPar{\psi\circ\Par{T-I}}\Par{e_k}=\BigPar{\sum_{i=1}^n A_{k,i}}-1=0.$ Then $\psi\circ\Par{T-I}=0.$ 又 $\psi\neq 0.$ $\Par{T-I}$ is not inje.\PfEnd\vspace{8pt}\quad\Hb
-\Or Define $S\in\Lm{\Fbb^{1,n}}$ by $Sx=xA^t.$ Becs the rows of $A$ are the cols of $A^t.$\par\quad\Hb
-Now by (a), $1$ is an eigval of $S.$ Let $\Par{\varphi_1,\dots,\varphi_n}$ be the dual bss of $\Par{e_1,\dots,e_n}.$\vspace{2pt}\par\quad\Hb
-Define $\Phi\in\Lm[\XPar]{\Fbb^{1,n},\BigPar{\Fbb^{1,n}}\apostrophe}$ by $\Phi\Par{e_k}=\varphi_k.$ Becs $\Sbra{T\apostrophe\Par{\varphi_k}}\Par{e_j}=\varphi_k\BigPar{\sum_{i=1}^n A_{j,i}e_i}=A_{j,k}.$\par\quad\Hb
-By (3.F.9), $T\apostrophe\Par{\varphi_k}=\sum_{j=1}^n A_{j,k}\varphi_j.$ \ACoro $\Mt{T\apostrophe}=A=\Mt{T}{^t}.$\colorbox{yellow}{FIXME: $\Mt{T}e_k=A^te_k=e_kA$}\vspace{3pt}\par\quad\Hb
-Now $\BigPar{\Phi^{-1}T\apostrophe\Phi}\Par{e_k}=\BigPar{\Phi^{-1}T\apostrophe}\Par{\varphi_k}=\Phi^{-1}\BigPar{\sum_{j=1}^n A_{j,k}\varphi_j}=\sum_{j=1}^n A_{j,k}e_j=e_k A^t=Se_k.$\vspace{3pt}\par\quad\Hb
-Thus $1$ is an eigval of $S=\Phi^{-1}T\apostrophe\Phi,$ so of $T\apostrophe,$ \Sbra{ by Exe (15) }, so of $T,$ \Sbra{ by (4E 5.A.15) }.\PfEnd
+	\TextB{Supp $A\in\Fbb^{n,n}.$ Define $T\in\Lm{\Fbb^{1,n}}$ by $Tx = xA.$ Prove $1$ is eigval of $T$ if\hspace{2pt}$:$}
+	(a) \TextB{the sum of the ent in each col of $A$ equals $1$. \, {\tgnr\large(b)} each row of $A.$}
+}Supp $x\neq 0$ and $xA=\BigPar{x_1A_{1,k}+\dots+x_nA_{n,k}}{_{k=1}^n}=\lambda\Par{x_k}{_{k=1}^n}=\lambda x.$\par\quad
+(a) Supp $A_{1,C}+\dots+A_{n,C}=1.$ Let $x_1=\dots=x_n.$ Immed.\vspace{2pt}\par\quad
+(b) Supp $A_{R,1}+\dots+A_{R,n}=1.$ Then $\sum_{C=1}^nxA_{\cdot,C}=\sum_{j=1}^n\BigPar{A_{j,1}+\dots+A_{j,n}}x_j.$\vspace{0pt}\par\quad\Hb
+Now each $\Par{xA}{_{1,C}}=\Par{x}{_{1,C}}=\Par{\lambda x}{_{1,C}}.$ \,Thus for $x$ suth $\sum_{k=1}^nx_k\neq 0,$ $\lambda=1$ is the corres eigval.\PfEnd\vspace{4pt}\quad\Hb
+\Or Becs $\Par{T-I}x=x\BigPar{A-{I}}=\BigPar{\Par{x_1 A_{1,k}+\dots+x_nA_{n,k}}-x_k}{_{k=1}^n}=\Par{y_k}{_{k=1}^n}.$\vspace{1pt}\par\quad\Hb
+Now $y_1+\dots+y_n=\sum_{k=1}^n\sum_{j=1}^n\Par{x_j A_{j,k}-x_k}=\sum_{j=1}^n x_j\BigSbra{\sum_{k=1}^n A_{j,k}}-\sum_{k=1}^n x_k=0.$\par\vspace{2pt}\quad\Hb
+Thus $\range\Par{T-I}\subseteq\Bra{\Par{y_1,\dots,y_n}:y_1+\dots+y_n=0}.$ Now $\Par{T-I}$ is not inv.\PfEnd\vspace{5pt}\quad\Hb
+\Or Define $\Par{e_1,\dots,e_n}$ and $\psi\Par{e_k}=1$ simlr in Exe (24). Becs $e_jA=A_{j,\cdot}=\sum_{k=1}^n A_{j,k}e_k.$\par\quad\Hb
+Now ${\psi\Par{T-I}}{e_j}={\sum_{k=1}^n A_{j,k}}-1=0\Rightarrow\psi\circ\Par{T-I}=0.$  Simlr.\PfEnd\vspace{4pt}\quad\Hb
+\Or Define $S\in\Lm{\Fbb^{1,n}}$ by $Sx=xA^t.$ \;\NOTICE that $\Mt{S}\neq A$ and $\Mt{T}\neq A^t.$ \Sbra{{\tgsl Noted by {\tgnr AI}.}}\par\quad\Hb
+Let $\Par{\varphi_1,\dots,\varphi_n}$ be the dual bss. Define $\Phi$ by $\Phi\Par{e_k}=\varphi_k.$\par\quad\Hb
+Becs $\Sbra{T\apostrophe\Par{\varphi_k}}\Par{e_j}=\varphi_k\BigBigPar[0pt]{\sum_{i=1}^n A_{j,i}e_i}=A_{j,k}.$ By (3.F.9), $T\apostrophe\Par{\varphi_k}=\sum_{j=1}^n A_{j,k}\varphi_j.$\vspace{1pt}\par\quad\Hb
+Now $\BigPar{\Phi^{-1}T\apostrophe\Phi}{e_k}=\BigPar{\Phi^{-1}T\apostrophe}{\varphi_k}=\Phi^{-1}\BigBigPar[0pt]{\sum_{j=1}^n A_{j,k}\varphi_j}=\sum_{j=1}^n A_{j,k}e_j=e_k A^t=Se_k.$ \,Simlr.\PfEnd
 \SepLine
 
 %\ProblemN{\hypertarget{5A25}{25}}{
@@ -595,31 +580,25 @@ Thus $1$ is an eigval of $S=\Phi^{-1}T\apostrophe\Phi,$ so of $T\apostrophe,$ \S
 %\SepLine
 
 \ProblemBnoor{\hypertarget{5A4e16}{4E 16}}{
-	\TextB{Supp $B_V=\Par{v_1,\dots,v_n},T\in\Lm{V},\Mt[\BigPar]{T,\Par{v_1,\dots,v_n}}=A.$}
-	\TextB{Prove if $\lambda$ is an eigval of $T$, then $\aMid{\lambda}\leqslant n \max\!\Bra{\aMid{A_{j,k}}:1\leqslant j, k\leqslant n}.$}
-}\par\quad
-Supp $v$ is an eigval of $T$ corres to $\lambda.$ Let $v=c_1v_1+\dots+c_nv_n.$\vspace{2pt}\par\quad
-Becs $\lambda c_1v_1+\dots+\lambda c_nv_n=c_1Tv_1+\dots+c_nTv_n=\sum_{k}^nc_k\BigPar{\sum_{j}^n A_{j,k}v_j}.$\vspace{3pt}\par\quad
-We have $\lambda c_j=\sum_{k=1}^n c_kA_{j,k}\Longrightarrow\aMid{\lambda}\aMid{c_j}=\sum_{k=1}^n\aMid{c_k}\aMid{A_{j,k}}$ for each $j\in\Bra{1,\dots,n}$\vspace{4pt}\par\quad
-Let $\aMid{c_{\j}}=\max\!\Bra{\aMid{c_1},\dots,\aMid{c_n}}.$ Note that $\aMid{c_{\j}}\neq 0,$ for if not, $c_1=\dots=c_n=0\Rightarrow v=0,$ ctradic.\vspace{6pt}\par\quad
-Let $M=\max\!\Bra{\aMid{A_{j,k}}:1\leqslant j,k\leqslant n}.$ Note that for each $j,\;\sum_{k=1}^n\aMid{A_{j,k}}\leqslant\sum_{k=1}^nM=nM.$\vspace{4pt}\par\quad
-Thus $\aMid{\lambda}\aMid{c_{\j}}=\sum_{k=1}^n\aMid{c_k}\aMid{A_{{\j},k}}\Longrightarrow\aMid{\lambda}\leqslant\sum_{k=1}^n\aMid{A_{{\j},k}}\Frac{\aMid{c_k}}{\aMid{c_{\j}}}\leqslant\sum_{k=1}^n\aMid{A_{{\j},k}}\leqslant nM.$\PfEnd\vspace{2pt}
+	\TextB{Supp $B_V=\Par{v_1,\dots,v_n},T\in\Lm{V},$ and $\lambda$ is eigval.}
+	\TextB{Let $A_M$ be the max of all ent of $A=\Mt[\BigPar]{T,B_V}.$ Prove $\aMid{\lambda}\leqslant A_M\cdot\dim V.$}
+}Supp $\lambda$ is eigval with to $v.$ Let $v=c_1v_1+\dots+c_nv_n.$\vspace{1pt}\par\quad
+Becs $\lambda c_1v_1+\dots+\lambda c_nv_n=c_1Tv_1+\dots+c_nTv_n=\sum_{k=1}^nc_k\BigSbra{\sum_{j=1}^n A_{j,k}v_j}=\sum_{j=1}^n\Sbra{\sum_{k=1}^nc_kA_{j,k}}v_j.$\vspace{2pt}\par\quad
+Thus $\lambda c_j=\sum_{k=1}^n c_kA_{j,k}\Rightarrow$ each $\aMid{\lambda}\aMid{c_j}=\sum_{k=1}^n\aMid{c_k}\aXMid{A_{j,k}}.$ Let $\aMid{c_M}=\max\!\Bra{\aMid{c_1},\dots,\aMid{c_n}}.$\vspace{2pt}\par\quad
+Becs $v\neq 0\Rightarrow\aMid{c_M}\neq 0.$ Now $\aMid{\lambda}\aMid{c_M}=\sum_{k=1}^n\aMid{c_k}\aXMid{A_{M,k}}\Rightarrow\aMid{\lambda}\leqslant\sum_{k=1}^n\aMid{A_{M,k}}\leqslant nM.$\PfEnd
 \SepLine
 
-\ProblemN{\hypertarget{5A27}{27}, \hypertarget{5A28}{28}}{
-	\TextNL{Supp $V$ is finide and $k\in\Bra{1, \dots , \dim V - 1}$.}\qquad
-	\TextNL{Supp $T\in\Lm{V}$ is suth every subsp of $V$ of dim $k$ is invard $T$.}\qquad
-	\TextNL{Prove $T$ is a scalar multi of the id optor.}
-}If $\dim V\leqslant 1$ then done. Supp $\dim V\geqslant 2.$\par\quad
-We prove the ctrapos: {\tgsl If $T$ is not a scalar multi of $I$. Then $\exists$ subsp $U$ of dim $k$ not invard $T.$}\par\quad
-By Exe (26), $\exists\,v\in V$ and $v\neq 0$ suth $v$ is not an eigvec of $T.$\par\quad
-Thus $\Par{v,Tv}$ is liney indep. Extend to $B_V=\Par{v,Tv,u_1,\dots,u_n}.$\par\quad
-Let $U=\Span{v,u_1,\dots,u_{k-1}}\Rightarrow U$ is not invarsp of $V$ under $T.$\PfEnd\vspace{6pt}\quad
-\Or Supp $0\neq v=v_1\in V.$ Extend to $B_V=\Par{v_1,\dots,v_n}.$ Supp $Tv_1=c_1 v_1+\dots+c_n v_n,\exists\,!\,c_i\in\Fbb.$\par\quad
+\ProblemN{\hypertarget{5A27}{}\hypertarget{5A28}{}{27, 28}}{
+	\Text{Supp $\dim V>1,\,k\in\Bra{1,\dots,\dim V-1}$.}
+	\Blind{\Blind{\Onumber{27, 28} }}\Text{Supp every subsp dim $k$ is invard a $T\in\Lm{V}.$ \,Prove $T=\lambda I.$\vspace{-6pt}}
+}\par\quad
+We prove the ctrapos. Supp $\exists\,v\in V\nonzero$ not eigvec.\par\quad
+Then $\Par{v,Tv}$ liney indep $\Rightarrow B_V=\Par{v,Tv,u_1,\dots,u_n}.$ Let $U=\Span{v,u_1,\dots,u_{k-1}}.$\PfEnd\vspace{4pt}\quad
+\Or Supp $v=v_1\in V\nonzero\Rightarrow B_V=\Par{v_1,\dots,v_n}.$ Supp $Tv_1=c_1 v_1+\dots+c_n v_n,\exists\,!\,c_i\in\Fbb.$\par\quad
 Consider a $k$\hspace{1pt}-\hspace{1pt}$\dim$ subsp $U=\Span{v_1,v_{\alpha_1},\dots,v_{\alpha_{k-1}}}.$ Where $\alpha_1,\dots,\alpha_{k-1}\in\Bra{2,\dots,n}$ are disti.\par\quad
-Becs every subsp such $U$ is invar. $Tv_1=c_1 v_1+\dots+c_n v_n\in U\Longrightarrow c_2=\dots=c_n=0.$\vspace{0pt}\par\quad
+Becs every such $U$ is invar. $Tv_1=c_1 v_1+\dots+c_n v_n\in U\Rightarrow c_2=\dots=c_n=0.$\vspace{0pt}\par\quad
 For if not, $\exists\,c_i\neq 0,$ let $W=\Span{v_1,v_{\beta_1},\dots,v_{\beta_{k-1}}},$ where each $\beta_j\in\Bra{{2,\dots,i-1,i+1,\dots,n}}.$\par\quad
-Hence $Tv_1=c_1 v_1.$ Becs $v_1=v\in V$ is arb. We conclude that $T=\lambda I$ for some $\lambda\in\Fbb.$\PfEnd\vspace{6pt}\quad
+Thus $Tv_1=c_1 v_1.$\PfEnd\vspace{4pt}\quad
 \Or For each $k\in\Bra{1,\dots,\dim V-1},$ define $P\Par{k}:$ if every subsp of dim $k$ is invar, then $T=\lambda I.$\par\quad
 (i) If every subsp of dim $1$ is invar, then by Exe (26), $T=\lambda I.$ Thus $P\Par{1}$ holds.\par\quad\Endi
 (ii) Asum $P\Par{k}$ holds for $k\in\Bra{1,\dots,\dim V-1}.$ And every subsp of dim $k+1$ is invar.\par\quad\Hii
