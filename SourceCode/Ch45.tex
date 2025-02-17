@@ -213,7 +213,7 @@ Hence $\Par{pq}{^{\SmallPar{k}}}=\mathC_{k}^0{p{^{\SmallPar{0}}}q{^{\SmallPar{k}
 (a) If $T_1,\dots,T_m$ all inje. Then $\Par{T_1\circ\cdots\circ T_m}$ inje. \;Convly true if finide, by (3.D.9).\TextB{}
 (b) The ctrapos of (a): If $\Par{T_1\circ\cdots\circ T_m}$ not inje. Then $\exists$ some $T_k$ not inje.\TextB{}
 (c) \Sbra[3pt]{{\tgsl Req Infinide}} \;$T_k$ not inje $\notRightarrow\Par{T_1\circ\cdots\circ T_m}$ not inje, unless $k=1$.\TextB{}
-\Hc\AExa Forward and backward shift operators on $\Fbb^\infty.$
+\Hc\AExa Forward and backward shift optors on $\Fbb^\infty.$
 \SepLine
 
 \ProblemB{
@@ -346,7 +346,7 @@ Now $S^{-1}TS:\Par{x_0,x_1,\dots,x_n}\mapsto\Par{0x_0,1x_1,2x_2,\dots,nx_n}.$ Si
 }Let each $\aMid{\alpha_k-\lambda}=\frac{1}{\;1000\,+\,k\;},$ where $k\in\Bra{1,\dots,\uline{\dim V+1}}.$ \,Then $\exists\,\alpha_k$ not an eigval.\PfEnd
 \SepLine[0pt][\Blind{\BulletPointX} ]
 
-\ProblemBnoor{4E 5.A.11}{
+\ProblemBnoor{4E 11}{
 	\TextB{Prove $\exists\,\delta > 0$ suth $\Par{T-\alpha I}$ is inv for all $\alpha\in\Fbb$ suth $0 < \aMid{\alpha-\lambda} < \delta$.}
 }If $T$ has no eigvals, then $\Par{T-\alpha I}$ is inje for all $\alpha\in\Fbb,$ done.\parSol{}
 Supp $\lambda_1,\dots,\lambda_m$ are all the disti eigvals of $T.$\parSol{}
@@ -356,14 +356,13 @@ So that for all $\alpha\in\Fbb$ suth $0<\aMid{\alpha-\lambda}<\delta,\Par{T-\alp
 Then $\delta>0$ and each $\lambda_k\neq\alpha$ \Sbra{ $\Longleftrightarrow\Par{T-\alpha I}$ is inv } for all $\alpha\in\Fbb$ suth $0<\aMid{\alpha-\lambda}<\delta.$\PfEnd
 \SepLine
 
-\ProblemBnoor{\hypertarget{5A4e8}{4E 8} {\OR} {5.B.4}}{
+\ProblemBnoor{\hypertarget{5A4e8}{4E 8} {\OR 5.B.4}}{
 	\TextB{Supp $\lambda$ is eigval of $P\in\Lm{V}$ and $P^2=P.$ Prove $\lambda = 0$ or $1$.}
-}Supp $\lambda$ is an eigval with an eigvec $v.$ Then $P\Par{Pv}=Pv\Rightarrow\lambda^2 v=\lambda v.$ Thus $\lambda=1$ or $0.$\PfEnd
+}$v\neq 0,\,Pv=\lambda v=\lambda^2 v=P\Par{Pv}.$ Thus $\lambda=1$ or $0.$\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{5A14}{14}}{
-	\TextNL{Supp $V=U\oplus W$, where $U,W$ nonzero. Define $P\Par{u + w} = u.$}
-	\TextNL{Find all eigvals and eigvecs of $P$.}
+	\TextNL{Supp $V=U\oplus W$, and $U,W$ nonzero. Define $P\Par{u + w} = u.$ Find all eigvals and eigvecs.}
 }Supp $u+w\neq 0$ and $P\Par{u+w}=u=\lambda u+\lambda w\Rightarrow\Par{\lambda-1}u+\lambda w=0.$\parSol{}
 Becs $\Par{\lambda-1}u=\lambda w=0.$ Now $\lambda=0\Longleftrightarrow u=0,$ and $\lambda=1\Longleftrightarrow w=0.$ Thus $Pu=u,Pw=0.$\PfEnd
 \SepLine
@@ -408,28 +407,131 @@ Now $E\Par{\lambda,T}=\Bra{Su:u\in E\Par{\lambda,S^{-1}TS}};\;E\Par{\lambda,S^{-
 %Simlr, $y=z=w=0.$ Then we fail. Thus $T$ has no eigvals.\PfEnd
 %\SepLine
 
-\ProblemBnoor{\hypertarget{5A4e16}{4E 5.A.16}}{
-	\TextB{Supp $B_V=\Par{v_1,\dots,v_n},T\in\Lm{V},\Mt[\BigPar]{T,\Par{v_1,\dots,v_n}}=A.$}
-	\TextB{Prove if $\lambda$ is an eigval of $T$, then $\aMid{\lambda}\leqslant n \max\!\Bra{\aMid{A_{j,k}}:1\leqslant j, k\leqslant n}.$}
-}\par\quad
-Supp $v$ is an eigval of $T$ corres to $\lambda.$ Let $v=c_1v_1+\dots+c_nv_n.$\vspace{2pt}\par\quad
-Becs $\lambda c_1v_1+\dots+\lambda c_nv_n=c_1Tv_1+\dots+c_nTv_n=\sum_{k}^nc_k\BigPar{\sum_{j}^n A_{j,k}v_j}.$\vspace{3pt}\par\quad
-We have $\lambda c_j=\sum_{k=1}^n c_kA_{j,k}\Longrightarrow\aMid{\lambda}\aMid{c_j}=\sum_{k=1}^n\aMid{c_k}\aMid{A_{j,k}}$ for each $j\in\Bra{1,\dots,n}$\vspace{4pt}\par\quad
-Let $\aMid{c_{\j}}=\max\!\Bra{\aMid{c_1},\dots,\aMid{c_n}}.$ Note that $\aMid{c_{\j}}\neq 0,$ for if not, $c_1=\dots=c_n=0\Rightarrow v=0,$ ctradic.\vspace{6pt}\par\quad
-Let $M=\max\!\Bra{\aMid{A_{j,k}}:1\leqslant j,k\leqslant n}.$ Note that for each $j,\;\sum_{k=1}^n\aMid{A_{j,k}}\leqslant\sum_{k=1}^nM=nM.$\vspace{4pt}\par\quad
-Thus $\aMid{\lambda}\aMid{c_{\j}}=\sum_{k=1}^n\aMid{c_k}\aMid{A_{{\j},k}}\Longrightarrow\aMid{\lambda}\leqslant\sum_{k=1}^n\aMid{A_{{\j},k}}\Frac{\aMid{c_k}}{\aMid{c_{\j}}}\leqslant\sum_{k=1}^n\aMid{A_{{\j},k}}\leqslant nM.$\PfEnd\vspace{2pt}
-\SepLine
-\pagebreak
-
 \ProblemBnoor{\hypertarget{5A4e15}{4E 15}}{
 	\TextB{Supp $T\in\Lm{V}$, and $\lambda\in\Fbb.$}
 	\TextB{Show $\lambda$ is an eigval of $T$ $\Longleftrightarrow$ $\lambda$ is an eigval of the dual optor $T\apostrophe\in\Lm{V\apostrophe}$.}
+}\Sbra[3pt]{{\tgsl Req Finide}} \;${T-\lambda I_V}$ not inv $\Longleftrightarrow\Par{T-\lambda I_V}\apostrophe=T\apostrophe-\lambda I_{V\apostrophe}$ not inv.\PfEnd\vspace{2pt}\parSol{}
+(a) Supp $\lambda$ is eigval with $v.$ Let $U$ be invar with $U\oplus\Span{v}=V,$ by Exe (4E 39).\parSol{\Ha}
+Define $\psi\in V\apostrophe$ by $\psi\Par{cv+u}=c.$ Then $\Sbra{T\apostrophe\Par{\psi}}\Par{cv+u}=\psi\BigPar{c\lambda v+Tu}=\lambda c=\lambda\psi\Par{cv+u}.$\vspace{2pt}\parSol{}
+(b) A counterexa: Let $T$ be the forward shift optor on $V=\Fbb^\infty.$ No eigvals for $T,$ by Exe (18).\parSol{\Hb}
+Define $\psi\in V\apostrophe$ by $\psi\Par{x_1,x_2,\cdots}=x_1.$ Then $\Sbra{T\apostrophe\Par{\psi}}\Par{x_1,x_2,\cdots}=\psi\Par{0,x_1,x_2,\cdots}=0.$\PfEnd
+\SepLine
+
+\ProblemN{\hypertarget{5A21}{21}}{
+	\TextNL{Supp $T\in\Lm{V}$ is inv.\;\FontNorm Then $0$ is not eigval of $T$ or $T^{-1}.$}
+	(a) \TextNL{Supp $\lambda\in\Fbb$ with $\lambda\neq 0$. Prove $\lambda$ is eigval of $T$ $\Longleftrightarrow\lambda^{-1}$ is eigval of $T^{-1}$.}
+	(b) \TextNL{Prove $T,T^{-1}$ have the same eigvecs.}
+}$Tv=\lambda v\Longleftrightarrow v=\lambda T^{-1}v\Longleftrightarrow \lambda^{-1}v=T^{-1}v.$ Where $v\neq 0.$\PfEnd
+\SepLine
+
+\ProblemB{
+	\TextB{Supp $\Fbb=\Rbb,$ $T\in\Lm{V}$.}
+	(a) \hypertarget{5A4e17}{}\Sbra{{\normalsize\OR (9.11)}} \TextB{$\lambda\in\Rbb.$ Prove $\lambda$ is an eigval of $T$ $\Longleftrightarrow$ $\lambda$ is an eigval of $T_{\!\Cbb}.$}
+	(b) \hypertarget{5A16}{}\Sbra{{\normalsize\OR \Onumber{16} \;\OR [9.16]\,}} \TextB{$\lambda\in\Cbb.$ Prove $\lambda$ is an eigval of $T_{\!\Cbb}$ $\Longleftrightarrow$ $\overline \lambda$ is an eigval of $T_{\!\Cbb}.$\vspace{1pt}}
+}(a) $Tv=\lambda v\Rightarrow T_{\!\Cbb}\Par{v+\i 0}=\lambda v.$ \, $T_{\!\Cbb}\Par{v+\i u}=\lambda v+\i \lambda u\Rightarrow Tv=\lambda v,Tu=\lambda u.$\parSol{}
+(b) Supp $T_{\!\Cbb}\Par{v+\i u}=Tv+\i Tu=\lambda\Par{v+\i u}.$\vspace{2pt}\parSol{\Hb}
+Becs $\overline{T_{\!\Cbb}\Par{v+\i u}}=\overline{Tv+\i Tu}=Tv-\i Tu=T_{\!\Cbb}\Par{v-\i u}=T_{\!\Cbb}\Par{\overline{v+\i u}}.$\vspace{2pt}\parSol{\Hb}
+And $\overline{\lambda\Par{v+\i u}}=\overline\lambda v-\i\overline\lambda u=\overline\lambda\Par{v-\i u}=\overline\lambda\Par{\overline{v+\i u}}.$\PfEnd\vspace{4pt}\parSol{\Hb}
+\Or Supp $\lambda=a+\i b$ is eigval of $T_{\!\Cbb}$ with $v+\i u.$\parSol{\Hb}
+Becs $T_{\!\Cbb}\Par{v+\i u}=\lambda\Par{v+\i u}=\Par{\uline{av-bu}}+\i\Par{\uwave{{au+bv}_{\,\!}}}=\uline{Tv}+\i\uwave{Tu_{\,\!}}.$\vspace{-4pt}\parSol{\Hb}
+Now $T_{\!\Cbb}\Par{\overline{v+\i u}}=Tv-\i Tu=\Par{av-bu}-\i\Par{au+bv}=\Par{a-\i b}\Par{v-\i u}=\overline\lambda\Par{\overline{v+\i u}}.$\PfEnd
+\SepLine
+
+%\ProblemN{\hypertarget{5A22}{22}}{
+	%	\TextNL{Supp $T\in\Lm{V}$ and $\exists$ nonzero vecs $u,w$ in $V$ suth $Tu = 3w,\;Tw = 3u$.}
+	%	\TextNL{Prove $3$ or $-3$ is an eigval of $T$.}
+	%}$T\Par{u+w}=3\Par{u+w},\;T\Par{u-w}=3\Par{w-u}=-3\Par{u-w}.$ Note that $u-w\neq 0$ or $u+w\neq 0.$\parSol{}
+%\Or $T\Par{Tu}=9u\Rightarrow T^2-9=\Par{T-3I}\Par{T+3I}$ is not injective $\Rightarrow 3$ or $-3$ is an eigval.\PfEnd
+%\SepLine
+
+\ProblemN{\hypertarget{5A23}{23}}{
+	\TextNL{Supp $S, T\in\Lm{V}$. Prove $ST$ and $TS$\, have the same eigvals.}
+}Supp $v\neq 0$ and $STv=\lambda v\Rightarrow T\Par{STv}=\lambda Tv=TS\Par{Tv}.$\parSol{}
+If $Tv=0$, then $T$ not inje, so are $TS,ST.$ An eigval of $TS,ST$ with the same $v.$\parSol{}
+Othws, $\lambda$ is eigval of $TS.$ \,Rev the roles in asum.\PfEnd
+\SepLine
+
+\ProblemBnoor{\hypertarget{5A2e20}{2E 20}}{
+	\TextB{Supp $T\in\Lm{V}$ has $n=\dim V$ disti eigvals and $S\in\Lm{V}$ has the same eigvecs}
+	\TextB{{\FontNorm but might not with the same eigvals.} \;Prove $ST=TS.$}
+}Let each $\lambda_jv_j=Tv_j,\mu_jv_j=Sv_j.$ Where $\mu_1,\dots,\mu_n$ might have repeti.\parSol{}
+Becs $B_V=\Par{v_1,\dots,v_n}.$ Each $\Par{ST}v_j=\mu_j\lambda_j v_j=\Par{TS}v_j\Rightarrow ST=TS.$\PfEnd
+\SepLine
+
+\ProblemBnoor{\hypertarget{5A4e37}{4E 37}}{
+	\TextB{Supp $V$ is finide, $T\in\Lm{V}$.}
+	\TextB{Define $\mathcal{A}\in\Lm[\BigPar]{\Lm{V}}$ by $\mathcal{A}\Par{S} = TS$ for each $S\in\Lm{V}$.}
+	\TextB{Prove the set of eigvals of \,$T$ equals the set of eigvals of $\mathcal{A}$.}
+}(a) For $v\neq 0$ and $Tv=\lambda v.$ Let $v_1=v\Rightarrow B_V=\Par{v_1,\dots,v_n}.$\parSol{\Ha}
+Define $S\in\Lm{V}:v_j\mapsto v,$ \OR $v_j\mapsto\delta_{1,j}v_1.$ Then each $\Par{T-\lambda I}Sv_j=0.$\parSol{\Ha}
+Thus $\Par{T-\lambda I}S=0\Rightarrow\mathcal{A}\Par{S}=TS=\lambda S$ with $S\neq 0.$\vspace{2pt}\parSol{}
+(b) Supp $S\neq 0$ and $TS=\lambda S.$ Then $\exists\,v\in V\Backslash\null S.$ Let $u=Sv\Rightarrow Tu=TSv=\lambda Sv=\lambda u.$\parSol{\Hb}
+\Or $TS-\lambda S=\Par{T-\lambda I}S=0\Rightarrow\zeroSubs\neq\range S\subseteq\null\Par{T-\lambda I}\Rightarrow\Par{T-\lambda I}$ not inje.\PfEnd\vspace{2pt}
+\AComm {If $\mathcal{A}\Par{S}=ST,\forall S\in\Lm{V}.$ Then the eigvals of $\mathcal{A}$ are not the eigvals of $T.$}
+\SepLine
+
+\ProblemN{\hypertarget{5A26}{26}}{
+	\TextNL{Supp $T\in\Lm{V}$ is suth $\forall v\in V,\exists\,!\,\lambda_v\in\Fbb,Tv=\lambda_v v.$ Prove $T=\lambda I.$}
+}Supp $V$ nonzero. Becs $\forall v\in V,\exists\,!\,\lambda_v\in\Fbb,Tv=\lambda_v v.$ For any disti nonzero $v,w\in V,$\parSol{}
+$T\Par{v+w}=\lambda_{v+w}\Par{v+w}=Tv+Tw=\lambda_v v+\lambda_w w\Rightarrow\Par{\lambda_{v+w}-\lambda_v}v=\Par{\lambda_w-\lambda_{v+w}}w.$\PfEnd\vspace{3pt}\parSol{}
+\Or For any nonzero $u,v\in V,u,v$ are eigvecs. If $u+v\neq 0,$ then $u+v$ is also eigvec.\parSol{}
+Othws done. By Exe (25), $\forall u,v\in V,Tu=\lambda u,Tv=\lambda v\Rightarrow\forall v\in V,Tv=\lambda v.$\PfEnd
+\SepLine
+
+\ProblemN{\hypertarget{5A29}{29}}{
+	\TextNL{Supp $T\in\Lm{V},\,\range T$ is finide. Prove $T$ has at most $1 + \dim\range T$ disti eigvals.}
+}Becs $\range T$ finide $\Rightarrow$ not too many. Let $\lambda_1,\dots,\lambda_m$ be the disti eigvals of $T$ with corres $v_1,\dots,v_m.$\parSol{}
+Then $\Par{v_1,\dots,v_m}$ liney indep $\Rightarrow\Par{\lambda_1 v_1,\dots,\lambda_m v_m}$ liney indep, if each $\lambda_k\neq 0.$ \;Othws,\parSol{}
+$\exists\,!\,\lambda_k=0.$ Now $\Bra{\lambda_jv_j:j\neq k}$ liney indep. By [2.23], $m-1\leqslant\dim\range T.$\PfEnd
+\SepLine
+
+%\ProblemN{\hypertarget{5A30}{30}}{
+	%	\TextNL{Supp $T\in\Lm{\Rbb^3}$ and $-4,5,\sqrt{7}$ are eigvals. Prove $\exists\,x,Tx - 9x = \Par{-4, 5, \sqrt{7}}$.}
+	%}$T$ has $\dim\Rbb^3$ eigvals not including $9\Rightarrow\Par{T-9I}$ is inv. $x=\Par{T-9I}{^{-1}}\Par{-4,5,\sqrt{7}}.$\PfEnd
+%\SepLine
+
+%\ProblemN{\hypertarget{5A31}{31}}{
+	%	\TextNL{Supp $V$ is finide, and $v_1,\dots,v_m \in V$. Prove}
+	%	\TextNL{$\Par{v_1,\dots,v_m}$ is liney indep $\Longleftrightarrow v_1,\dots,v_m$ are eigvecs of some $T$ corres to disti eigvals.}
+	%}Supp $\Par{v_1,\dots,v_m}$ is liney indep. Let $B_V=\Par{v_1,\dots,v_m,\dots,v_n}.$\parSol{}
+%Define $T\in\Lm{V}$ by $Tv_k=k\cdot v_k$ for each $k\in\Bra{1,\dots,m,\dots,n}.$ Convly by [5.10].\PfEnd\vspace{-4pt}
+%\SepLine
+
+\pagebreak
+\ProblemB{
+	\TextB{Supp $\lambda_1,\dots,\lambda_n\in\Rbb$ are disti.}
+	(a)\ProblemN[]{\hypertarget{5A32}{32}}{
+		\TextB{Prove $\Par{e^{\lambda_1x},\dots,e^{\lambda_nx}}$ is liney indep in $\Rbb^{\Rbb}$.}}
+	\TextB{}
+	(b)\ProblemNnoor[]{\!\!}{4E 36}{
+		\hypertarget{5A4e36}{}\TextB{Show $\BigPar{\!\cos{\lambda_1 x},\dots,\cos{\lambda_n x}}$ is liney indep in $\Rbb^{\Rbb}.$\vspace{-3pt}}}
+	\TextB{}\vspace{2pt}
+}(a) Let $V=\Span{e^{\lambda_1x},\dots,e^{\lambda_nx}}.$ Define $D\in\Lm{V}$ by $Df=f\apostrophe.$\parSol{\Ha}
+Then becs each $\lambda_k e^{\lambda_k x}=D\Par{e^{\lambda_k x}}.$ Now $\lambda_1,\dots,\lambda_n$ are disti eigvals of $D.$ By [5.10].\PfEnd\vspace{2pt}\parSol{}
+(b) Let $V=\Span[\BigPar]{\cos\!\Par{\lambda_1 x},\dots,\cos\!\Par{\lambda_n x}}.$ Define $Df=f\apostrophe.$\parSol{\Hb}
+Then becs $D\BigPar{\cos\!\Par{\lambda_k x}}=-\lambda_k\sin\!\Par{\lambda_k x}.$ 又 $D\BigPar{\sin\!\Par{\lambda_k x}}=\lambda_k\cos\!\Par{\lambda_k x}.$\parSol{\Hb}
+Thus $D^2\BigPar{\cos\!\Par{\lambda_k x}}=-\lambda_k^2\cos\!\Par{\lambda_k x}.$ Now $-\lambda_1^2,\dots,-\lambda_n^2$ are disti eigvals of $D^2.$ Simlr.\PfEnd
+\SepLine
+
+\ProblemN{35}{
+	\TextNL{Supp $V$ is finide, $T\in\Lm{V}$, and $U$ is invard $T$. Show $\lambda$ is eigval of $T\XSlash U\Rightarrow$ of $T$.}
 }\par\quad
-(a) Supp $\lambda$ is eigval with $v.$ Let $U$ be invar with $U\oplus\Span{v}=V,$ by Exe (4E 39).\par\quad\Ha
-Define $\psi\in V\apostrophe$ by $\psi\Par{cv+u}=c.$ Then $\Sbra{T\apostrophe\Par{\psi}}\Par{cv+u}=\psi\BigPar{c\lambda v+Tu}=\lambda c=\lambda\psi\Par{cv+u}.$\vspace{4pt}\par\quad
-(b) Supp $\lambda$ is eigval $T\apostrophe$ with $\psi.$ Then $T\apostrophe\Par{\psi}=\psi\circ T=\lambda\psi.$\vspace{2pt}\par\quad\Hb
-Note that $\psi\neq 0,\psi\Par{Tv}=\lambda\psi\Par{v}.$ Thus $\exists\,v,\;Tv={}${\Large\envFontSmall[\footnotesize]$\frac{\psi\Par{Tv}}{\psi\Par{v}}$}$\,v=\lambda v.$\PfEnd\vspace{6pt}\quad
-\Or \Sbra[3pt]{{\tgsl Req Finide}} \;${T-\lambda I_V}$ not inv $\Longleftrightarrow\Par{T-\lambda I_V}\apostrophe=T\apostrophe-\lambda I_{V\apostrophe}$ not inv.\PfEnd
+Supp $v+U\neq 0$ and $Tv+U=\lambda v+U\Rightarrow\Par{T-\lambda I}v=u\in U.$ \,If $u=0,$ done. Othws, two cases.\par\quad
+If $\Par{T-\lambda I}\Big|{_U}$ inv. Then $\exists\,!\,w\in U,\Par{T-\lambda I}{w}=u=\Par{T-\lambda I}v$\par\qquad
+$\Rightarrow T\Par{v+w}=\lambda\Par{v+w},$ where $v\neq -w\in U.$ Done.\par\quad
+If $\Par{T-\lambda I}\Big|{_U}$ not inv. Then becs $V$ is finide, $\Par{T-\lambda I}\mmid_U$ is not inje,\par\qquad
+so that $\exists\,w\in\null\Par{T-\lambda I}\Big|{_U}$ with $w\neq 0,$ then $\Par{T-\lambda I}w=0\Rightarrow Tw=\lambda w.$\PfEnd\vspace{4pt}\quad
+\Or Let $B_U=\Par{u_1,\dots,u_m}\Rightarrow\BigPar{Tv-\lambda v,\,Tu_1-\lambda u_1,\cdots,Tu_m-\lambda u_m}$ of len $\Par{m+1}$ liney dep in $U.$\par\quad
+So that $a_0\Par{T-\lambda I}v+a_1\Par{T-\lambda I}u_1+\dots+a_m\Par{T-\lambda I}u_m=0,\exists\,a_k\neq 0.$\par\quad
+Let $w=a_0v+a_1u_1+\dots+a_mu_m\Rightarrow Tw=\lambda w.$ Note that $v\not\in U\Rightarrow w\not\in U\Rightarrow w\neq 0.$\PfEnd
+\SepLine
+
+\ProblemN{\hypertarget{5A36}{36}}{
+	\TextNL{Give a counterexa\hspace{1pt}$:$ The result in Exercise 35 is still true if $V$ is infinide.}
+}Let $V=\Bra{\,f\in\Rbb^{\Rbb}:\exists\,!\,m\in\Nbb,f\in\Span{1,e^x,\dots,e^{mx}}}.$\parSol{}
+Let $U=\Bra{\,f\in\Rbb^{\Rbb}:\exists\,!\,m\in\Nbp,f\in\Span{e^x,\dots,e^{mx}}}.$\parSol{}
+Define $T\in\Lm{V}$ by $Tf=e^x f.$ Then $\range T=U$ invard inje $T$.\parSol{}
+Note that $\Par{T\XSlash U}\Par{1+U}=e^x+U=0.$ While $0$ is not an eigval of $T$.\PfEnd
 \SepLine
 
 \ProblemN{\hypertarget{5A24}{24}}{
@@ -455,7 +557,7 @@ Now by (a), $1$ is an eigval of $S.$ Let $\Par{\varphi_1,\dots,\varphi_n}$ be th
 Define $\Phi\in\Lm[\XPar]{\Fbb^{n,1},\BigPar{\Fbb^{1,n}}\apostrophe}$ by $\Phi\Par{e_k}=\varphi_k.$ Note that $\Mt{T\apostrophe}=A^t.$\vspace{2pt}\par\quad\Hb
 Now $\BigPar{\Phi^{-1}T\apostrophe\Phi}\Par{e_k}=\BigPar{\Phi^{-1}T\apostrophe}\Par{\varphi_k}=\Phi^{-1}\BigPar{\sum_{j=1}^n A_{k,j}\varphi_j}=\sum_{j=1}^n A_{k,j}e_j=A^t e_k=Se_k.$\vspace{3pt}\par\quad\Hb
 Thus $1$ is an eigval of $S=\Phi^{-1}T\apostrophe\Phi,$ so of $T\apostrophe,$ \Sbra{ by Exe (15) }, so of $T,$ \Sbra{ by (4E 5.A.15) }.\PfEnd
-\SepLine\pagebreak
+\SepLine
 
 \ProblemB{
 	\TextB{Supp $A\in\Fbb^{n,n}.$ Define $T\in\Lm{\Fbb^{1,n}}$ by $Tx = xA.$}
@@ -483,70 +585,6 @@ Now $\BigPar{\Phi^{-1}T\apostrophe\Phi}\Par{e_k}=\BigPar{\Phi^{-1}T\apostrophe}\
 Thus $1$ is an eigval of $S=\Phi^{-1}T\apostrophe\Phi,$ so of $T\apostrophe,$ \Sbra{ by Exe (15) }, so of $T,$ \Sbra{ by (4E 5.A.15) }.\PfEnd
 \SepLine
 
-\ProblemB{
-	\TextB{Supp $\Fbb=\Rbb,$ $T\in\Lm{V}$.}
-	(a) \hypertarget{5A4e17}{}\Sbra{{\normalsize\OR (9.11)}} \TextB{$\lambda\in\Rbb.$ Prove $\lambda$ is an eigval of $T$ $\Longleftrightarrow$ $\lambda$ is an eigval of $T_{\!\Cbb}.$}
-	(b) \hypertarget{5A16}{}\Sbra{{\normalsize\OR \Onumber{16} \;\OR [9.16]\,}} \TextB{$\lambda\in\Cbb.$ Prove $\lambda$ is an eigval of $T_{\!\Cbb}$ $\Longleftrightarrow$ $\overline \lambda$ is an eigval of $T_{\!\Cbb}.$}
-}\par\quad
-(a) Supp $\lambda$ is an eigval of $T$ with an eigvec $v.$\par\quad\Ha
-Then $Tv=\lambda v\Longrightarrow T_{\!\Cbb}\Par{v+\i 0}=Tv+\i T0=\lambda v.$ Thus $\lambda$ is an eigval of $T_{\!\Cbb}.$\vspace{2pt}\par\quad\Ha
-Supp $\lambda$ is an eigval of $T_{\!\Cbb}$ with an eigvec $v+\i u.$\par\quad\Ha
-Then $T_{\!\Cbb}\Par{v+\i u}=\lambda v+\i \lambda u\Longrightarrow Tv=\lambda v,Tu=\lambda u.$ Thus $\lambda$ is an eigval of $T.$\par\quad\Ha
-\BigPar{ Note that $v+\i u$ is nonzero $\Longleftrightarrow$ at least one of $v,u$ is nonzero }.\vspace{4pt}\par\quad
-(b) Supp $\lambda$ is an eigval of $T_{\!\Cbb}$ with an eigvec $v+\i u.$ Then $T_{\!\Cbb}\Par{v+\i u}=Tv+\i Tu=\lambda\Par{v+\i u}.$\vspace{2pt}\par\quad\Hb
-Note that $\overline{T_{\!\Cbb}\Par{v+\i u}}=\overline{Tv+\i Tu}=Tv-\i Tu=T_{\!\Cbb}\Par{v-\i u}=T_{\!\Cbb}\Par{\overline{v+\i u}}.$\vspace{2pt}\par\quad\Hb
-And that $\overline{\lambda\Par{v+\i u}}=\overline\lambda v-\i\overline\lambda u=\overline\lambda\Par{v-\i u}=\overline\lambda\Par{\overline{v+\i u}}.$\par\quad\Hb
-Hence $\overline\lambda$ is an eigval of $T_{\!\Cbb}.$
-To prove the other direction, notice that $\overline{{\overline\lambda}}=\lambda.$\PfEnd\vspace{4pt}\quad\Hb
-\Or Supp $\lambda=a+\i b$ is an eigval of $T_{\!\Cbb}$ with an eigvec $v+\i u.$\par\quad\Hb
-Becs $T_{\!\Cbb}\Par{v+\i u}=\lambda\Par{v+\i u}=\Par{av-bu}+\i\Par{au+bv}=Tv+\i Tu\Longrightarrow Tv=av-bu,Tu=au+bv.$\par\quad\Hb
-Now $T_{\!\Cbb}\Par{\overline{v+\i u}}=Tv-\i Tu=\Par{av-bu}-\i\Par{au+bv}=\Par{a-\i b}\Par{v-\i u}=\overline\lambda\Par{\overline{v-\i u}}.$ Simlr.\PfEnd
-\SepLine\pagebreak
-
-\ProblemN{\hypertarget{5A21}{21}}{
-	\TextNL{Supp $T\in\Lm{V}$ is inv.}
-	(a) \TextNL{Supp $\lambda\in\Fbb$ with $\lambda\neq 0$. Prove $\lambda$ is eigval of $T$ $\Longleftrightarrow\lambda^{-1}$ is eigval of $T^{-1}$.}
-	(b) \TextNL{Prove $T,T^{-1}$ have the same eigvecs.}
-}(a) $Tv=\lambda v\Longleftrightarrow v=\lambda T^{-1}v\Longleftrightarrow \lambda^{-1}v=T^{-1}v.$ Where $v\neq 0.$\parSol{}
-(b) Becs $0$ is not an eigval of $T$ or $T^{-1}.$ By (a), immed.\PfEnd
-\SepLine
-
-%\ProblemN{\hypertarget{5A22}{22}}{
-%	\TextNL{Supp $T\in\Lm{V}$ and $\exists$ nonzero vecs $u,w$ in $V$ suth $Tu = 3w,\;Tw = 3u$.}
-%	\TextNL{Prove $3$ or $-3$ is an eigval of $T$.}
-%}$T\Par{u+w}=3\Par{u+w},\;T\Par{u-w}=3\Par{w-u}=-3\Par{u-w}.$ Note that $u-w\neq 0$ or $u+w\neq 0.$\parSol{}
-%\Or $T\Par{Tu}=9u\Rightarrow T^2-9=\Par{T-3I}\Par{T+3I}$ is not injective $\Rightarrow 3$ or $-3$ is an eigval.\PfEnd
-%\SepLine
-
-\ProblemN{\hypertarget{5A23}{23}}{
-	\TextNL{Supp $S, T\in\Lm{V}$. Prove $ST$ and $TS$\, have the same eigvals.}
-}Supp $\lambda$ is eigval of $ST$ with $v.$ Then $T\Par{STv}=\lambda Tv=TS\Par{Tv}.$\parSol{}
-If $Tv=0$, then $T$ not inje $\Rightarrow TS,ST$ not inje. An eigval of $TS,ST$ with the same $v.$\parSol{}
-Othws, $\lambda$ is eigval of $TS.$ \,Rev the roles in asum.\PfEnd
-\SepLine
-
-\ProblemBnoor{\hypertarget{5A2e20}{2E 20}}{
-	\TextB{Supp $T\in\Lm{V}$ has $\dim V$ disti eigvals and $S\in\Lm{V}$ has the same eigvecs}
-	\TextB{{\FontNorm but might not with the same eigvals.} \;Prove $ST=TS.$}
-}Let $n=\dim V.$ For each $j\in\Bra{1,\dots,n},$ let $v_j$ be an eigvec with eigval $\lambda_j$ of $T$ and $\alpha_j$ of $S$.\parSol{}
-Then $B_V=\Par{v_1,\dots,v_n}.$ Becs $\Par{ST}v_j=\alpha_j\lambda_j v_j=\Par{TS}v_j$ for each $j.$ Hence $ST=TS.$\PfEnd
-\SepLine
-
-\ProblemBnoor{\hypertarget{5A4e37}{4E 5.A.37}}{
-	\TextB{Supp $V$ is finide and $T\in\Lm{V}$.}
-	\TextB{Define $\mathcal{A}\in\Lm[\BigPar]{\Lm{V}}$ by $\mathcal{A}\Par{S} = TS$ for each $S\in\Lm{V}$.}
-	\TextB{Prove the set of eigvals of \,$T$ equals the set of eigvals of $\mathcal{A}$.}
-}\par\quad
-(a) Supp $\lambda$ is an eigval of $T$ with an eigvec $v=v_1.$ Let $B_V=\Par{v_1,\dots,v_m,\dots,v_n}.$\par\quad\Ha
-Note that $\Span{v}\subseteq\null\Par{T-\lambda I}.$ Define $S\in\Lm{V}$ by $S\Par{v_j}=v$ for each $j\in\Bra{1,\dots,n}.$\par\quad\Ha
-\Or Define $S\in\Lm{V}$ by $Sv_1=v_1,\,\,Sv_j=0$ for $j\geqslant 2.$ Then $\Par{T-\lambda I}Sv_1=0=\Par{T-\lambda I}Sv_k=0.$\par\quad\Ha
-Then $\Par{T-\lambda I}S=0.$ Thus $\mathcal{A}\Par{S}=TS=\lambda S$ while $S\neq 0.$ Hence $\lambda$ is an eigval of $\mathcal{A}.$\vspace{4pt}\par\quad
-(b) Supp $\lambda$ is an eigval of $\mathcal{A}$ with an eigvec $S.$\par\quad\Hb
-Then $\exists\,v\in V,0\neq u=S\Par{v}\in V\Rightarrow Tu=\Par{TS} v=\Par{\lambda S} v=\lambda u.$ Thus $\lambda$ is an eigval $T.$\par\quad\Hb
-\Or Becs $TS-\lambda S=\Par{T-\lambda I}S=0\Rightarrow\zeroSubs\subsetneq\range S\subseteq\null\Par{T-\lambda I}.$ $\Par{T-\lambda I}$ is not inje.\PfEnd\vspace{4pt}
-\AComm {If $\mathcal{A}\Par{S}=ST,\forall S\in\Lm{V}.$ Then the eigvals of $\mathcal{A}$ are not the eigvals of $T.$}
-\SepLine
-
 %\ProblemN{\hypertarget{5A25}{25}}{
 %	\TextNL{Supp $u,w,$ and $u+w$ are eigvecs of $T\in\Lm{V}.$ Prove the eigvals are the same.}
 %}Supp $\lambda_1,\lambda_2,\lambda_0$ are eigvals of $T$ with eigvecs to $u,w,u+w$ respectly.\parSol{}
@@ -556,12 +594,16 @@ Then $\exists\,v\in V,0\neq u=S\Par{v}\in V\Rightarrow Tu=\Par{TS} v=\Par{\lambd
 %\Or Asum $\lambda_1\neq \lambda_2.$ Then $\Par{u,w}$ is liney indep. Thus $\lambda_0-\lambda_1=\lambda_0-\lambda_2.$ Ctradic.\PfEnd
 %\SepLine
 
-\ProblemN{\hypertarget{5A26}{26}}{
-	\TextNL{Supp $T\in\Lm{V}$ is suth $\forall v\in V,\exists\,!\,\lambda_v\in\Fbb,Tv=\lambda_v v.$ Prove $T=\lambda I.$}
-}Supp $V$ nonzero. Becs $\forall v\in V,\exists\,!\,\lambda_v\in\Fbb,Tv=\lambda_v v.$ For any disti nonzero $v,w\in V,$\parSol{}
-$T\Par{v+w}=\lambda_{v+w}\Par{v+w}=Tv+Tw=\lambda_v v+\lambda_w w\Rightarrow\Par{\lambda_{v+w}-\lambda_v}v=\Par{\lambda_w-\lambda_{v+w}}w.$\PfEnd\vspace{4pt}\parSol{}
-\Or For any nonzero $u,v\in V,u,v$ are eigvecs. If $u+v\neq 0,$ then $u+v$ is also eigvec.\parSol{}
-Othws done. By Exe (25), $\forall u,v\in V,Tu=\lambda u,Tv=\lambda v\Rightarrow\forall v\in V,Tv=\lambda v.$\PfEnd
+\ProblemBnoor{\hypertarget{5A4e16}{4E 16}}{
+	\TextB{Supp $B_V=\Par{v_1,\dots,v_n},T\in\Lm{V},\Mt[\BigPar]{T,\Par{v_1,\dots,v_n}}=A.$}
+	\TextB{Prove if $\lambda$ is an eigval of $T$, then $\aMid{\lambda}\leqslant n \max\!\Bra{\aMid{A_{j,k}}:1\leqslant j, k\leqslant n}.$}
+}\par\quad
+Supp $v$ is an eigval of $T$ corres to $\lambda.$ Let $v=c_1v_1+\dots+c_nv_n.$\vspace{2pt}\par\quad
+Becs $\lambda c_1v_1+\dots+\lambda c_nv_n=c_1Tv_1+\dots+c_nTv_n=\sum_{k}^nc_k\BigPar{\sum_{j}^n A_{j,k}v_j}.$\vspace{3pt}\par\quad
+We have $\lambda c_j=\sum_{k=1}^n c_kA_{j,k}\Longrightarrow\aMid{\lambda}\aMid{c_j}=\sum_{k=1}^n\aMid{c_k}\aMid{A_{j,k}}$ for each $j\in\Bra{1,\dots,n}$\vspace{4pt}\par\quad
+Let $\aMid{c_{\j}}=\max\!\Bra{\aMid{c_1},\dots,\aMid{c_n}}.$ Note that $\aMid{c_{\j}}\neq 0,$ for if not, $c_1=\dots=c_n=0\Rightarrow v=0,$ ctradic.\vspace{6pt}\par\quad
+Let $M=\max\!\Bra{\aMid{A_{j,k}}:1\leqslant j,k\leqslant n}.$ Note that for each $j,\;\sum_{k=1}^n\aMid{A_{j,k}}\leqslant\sum_{k=1}^nM=nM.$\vspace{4pt}\par\quad
+Thus $\aMid{\lambda}\aMid{c_{\j}}=\sum_{k=1}^n\aMid{c_k}\aMid{A_{{\j},k}}\Longrightarrow\aMid{\lambda}\leqslant\sum_{k=1}^n\aMid{A_{{\j},k}}\Frac{\aMid{c_k}}{\aMid{c_{\j}}}\leqslant\sum_{k=1}^n\aMid{A_{{\j},k}}\leqslant nM.$\PfEnd\vspace{2pt}
 \SepLine
 
 \ProblemN{\hypertarget{5A27}{27}, \hypertarget{5A28}{28}}{
@@ -589,93 +631,10 @@ Now $a_1u_1-a_2u_2=cw-bv\in U\cap\Span{v}=\zeroSubs\Rightarrow b=c=0.$ Thus $Tu\
 Becs $P\Par{k}$ holds, we conclude that $T=\lambda I.$ Thus $P\Par{k+1}$ holds.\PfEnd
 \SepLine
 
-\ProblemN{\hypertarget{5A29}{29}}{
-	\TextNL{Supp $T\in\Lm{V},\,\range T$ is finide. Prove $T$ has at most $1 + \dim\range T$ disti eigvals.}
-}Becs $\range T$ finide $\Rightarrow$ not too many. Let $\lambda_1,\dots,\lambda_m$ be the disti eigvals of $T$ with corres $v_1,\dots,v_m.$\parSol{}
-Then $\Par{v_1,\dots,v_m}$ liney indep $\Rightarrow\Par{\lambda_1 v_1,\dots,\lambda_m v_m}$ liney indep, if each $\lambda_k\neq 0.$ \;Othws,\parSol{}
-$\exists\,!\,\lambda_k=0.$ Now $\Bra{\lambda_jv_j:j\neq k}$ liney indep. By [2.23], $m-1\leqslant\dim\range T.$\PfEnd
-\SepLine
-
-%\ProblemN{\hypertarget{5A30}{30}}{
-%	\TextNL{Supp $T\in\Lm{\Rbb^3}$ and $-4,5,\sqrt{7}$ are eigvals. Prove $\exists\,x,Tx - 9x = \Par{-4, 5, \sqrt{7}}$.}
-%}$T$ has $\dim\Rbb^3$ eigvals not including $9\Rightarrow\Par{T-9I}$ is inv. $x=\Par{T-9I}{^{-1}}\Par{-4,5,\sqrt{7}}.$\PfEnd
-%\SepLine
-
-%\ProblemN{\hypertarget{5A31}{31}}{
-%	\TextNL{Supp $V$ is finide, and $v_1,\dots,v_m \in V$. Prove}
-%	\TextNL{$\Par{v_1,\dots,v_m}$ is liney indep $\Longleftrightarrow v_1,\dots,v_m$ are eigvecs of some $T$ corres to disti eigvals.}
-%}Supp $\Par{v_1,\dots,v_m}$ is liney indep. Let $B_V=\Par{v_1,\dots,v_m,\dots,v_n}.$\parSol{}
-%Define $T\in\Lm{V}$ by $Tv_k=k\cdot v_k$ for each $k\in\Bra{1,\dots,m,\dots,n}.$ Convly by [5.10].\PfEnd\vspace{-4pt}
-%\SepLine
-
-\ProblemB{
-	\TextB{Supp $\lambda_1,\dots,\lambda_n\in\Rbb$ are disti.}
-	(a)\ProblemN[]{\hypertarget{5A32}{32}}{
-		\TextB{Prove $\Par{e^{\lambda_1x},\dots,e^{\lambda_nx}}$ is liney indep in $\Rbb^{\Rbb}$.}
-		\Ha\Blind{\Onumber{32} } \TextNL{\large{\tgsc H{\small INT}\tgbf:} Let $V=\Span{e^{\lambda_1x},\dots,e^{\lambda_nx}}.$ Define $D\in\Lm{V}$ by $Df = f\apostrophe$. Find eigvals and eigvecs of $D$.}
-	}
-	\TextB{}
-	(b)\ProblemNnoor[]{\!\!}{4E 36}{
-		\hypertarget{5A4e36}{}\TextB{Show $\BigPar{\cos\!\Par{\lambda_1 x},\dots,\cos\!\Par{\lambda_n x}}$ is liney indep in $\Rbb^{\Rbb}.$\vspace{-4pt}}
-	}
-	\TextB{}
-}\par\quad
-(a) Define $V$ and $D\in\Lm{V}$ as in H{\small INT}. Then becs for each $k, D\Par{e^{\lambda_k x}}=\lambda_k e^{\lambda_k x}.$\par\quad\Ha
-Thus $\lambda_1,\dots,\lambda_n$ are disti eigvals of $D.$ By [5.10], $\Par{e^{\lambda_1x},\dots,e^{\lambda_nx}}$ is liney indep in $\Rbb^{\Rbb}.$\PfEnd\vspace{2pt}\quad
-(b) Let $V=\Span[\BigPar]{\cos\!\Par{\lambda_1 x},\dots,\cos\!\Par{\lambda_n x}}.$ Define $D\in\Lm{V}$ by $Df=f\apostrophe.$\par\quad\Hb
-Then becs $D\BigPar{\cos\!\Par{\lambda_k x}}=-\lambda_k\sin\!\Par{\lambda_k x}.$ 又 $D\BigPar{\sin\!\Par{\lambda_k x}}=\lambda_k\cos\!\Par{\lambda_k x}.$\par\quad\Hb
-Thus $D^2\BigPar{\cos\!\Par{\lambda_k x}}=-\lambda_k^2\cos\!\Par{\lambda_k x}.$\par\quad\Hb
-Notice that $\lambda_1,\dots,\lambda_n$ are disti $\Longrightarrow$ $-\lambda_1^2,\dots,-\lambda_n^2$ are disti. And $\dim V=n.$\par\quad\Hb
-Hence $-\lambda_1^2,\dots,-\lambda_n^2$ are all the eigvals of $D^2$ with corres eigvecs $\cos\!\Par{\lambda_1 x},\dots,\cos\!\Par{\lambda_n x}$.\par\quad\Hb
-And then $\BigPar{\cos\!\Par{\lambda_1 x},\dots,\cos\!\Par{\lambda_n x}}$ is liney indep in $\Rbb^{\Rbb}.$\PfEnd
-\SepLine
-
-\ProblemN{\hypertarget{5A33}{33}}{
-	\TextNL{Supp $T\in\Lm{V}.$ Prove $T\XSlash \Par{\range T}=0.$}
-}$v+\range T\in V\XSlash \range T\Rightarrow v+\range T\in\null\BigPar{T\XSlash \Par{\range T}}.$ Thus $T\XSlash \Par{\range T}=0.$\PfEnd
-\SepLine
-
-\ProblemN{\hypertarget{5A34}{34}}{
-	\TextNL{Supp $T\in\Lm{V}.$ Prove $T\XSlash \Par{\null T}$ is inje $\Longleftrightarrow\Par{\null T}${\LARGE${}\cap{}$}$\Par{\range T}=\zeroSubs.$}
-}\NOTICE that $\BigPar{T\XSlash{\null T}}\Par{u+\null T}=Tu+\null T=0\Longleftrightarrow Tu\in{\null T}${\Large${}\cap{}$}${\range T}.$\parSol{}
-Now $T\XSlash{\null T}$ is inje $\Longleftrightarrow u+\null T=0\Longleftrightarrow Tu=0 \Longleftrightarrow{\null T}${\Large${}\cap{}$}${\range T}=\zeroSubs.$\PfEnd
-\SepLine
-
-\ProblemB{
-	\hypertarget{5A4e38}{}\TextB{Supp $V$ is finide, $T\in\Lm{V}$, and $U$ is invarsp of $V$ under $T$.}
-	\TextB{Define $T\XSlash U:V\XSlash U\rightarrow V\XSlash U$ by $\Par{T\XSlash U}\Par{v + U} = Tv + U$ for each $v\in V$.}
-	(a) \TextB{Show $T\XSlash U$ is well-defined and is liney. {\large Req $U$ invard $T.$}}
-	(b) \Sbra{{\normalsize\OR \Onumber{\hypertarget{5A35}{35}}\,}} \TextB{Show each eigval of $T\XSlash U$ is an eigval of $T$.}
-}\par\quad
-(a) $v+U=w+U\Longleftrightarrow v-w\in U\Longrightarrow T\Par{v-w}\in U\Longleftrightarrow Tv+U=Tw+U.$\par\quad\Ha
-Hence $T\XSlash U$ is well-defined. Now we show $T\XSlash U$ is liney.\par\quad\Ha
-$\Par{T\XSlash U}\BigPar{\Par{v+U}+\lambda\Par{w+U}}=T\Par{v+\lambda w}+U=\Par{T\XSlash U}\Par{v+U}+\lambda\Par{T\XSlash U}\Par{w}.$ Checked.\vspace{4pt}\par\quad
-(b) Supp $\lambda$ is an eigval of $T\XSlash U$ with an eigvec $v+U.$ Then $Tv+U=\lambda v+U\Rightarrow \Par{T-\lambda I}v=u\in U.$\par\quad\Hb
-If $u=0\Rightarrow Tv=\lambda v,$ then done. Othws, we discuss in two cases.\par\quad\Hb
-If $\Par{T-\lambda I}\mmid_U$ is inv. Then $\exists\,!\,w\in U,\Par{T-\lambda I}\Par{w}=u=\Par{T-\lambda I} v\Rightarrow T\Par{v+w}=\lambda\Par{v+w}.$\par\quad\Hb
-Note that $v+w\neq 0,$ for if not, $v\in U\Rightarrow v+U=0,$ ctradic. Thus $\lambda$ is an eigval of $T.$\par\quad\Hb
-If $\Par{T-\lambda I}\mmid_U$ is not inv. Then becs $V$ is finide, $\Par{T-\lambda I}\mmid_U$ is not inje,\par\quad\Hb
-so that $\exists\,w\in\null\Par{T-\lambda I}\mmid_U,w\neq 0,\Par{T-\lambda I}w=0\Rightarrow Tw=\lambda w.$
-\PfEnd\vspace{6pt}\quad\Hb
-\Or Let $B_U=\Par{u_1,\dots,u_m}.$ Then $\BigPar{\Par{T-\lambda I}v,\Par{T-\lambda I}u_1,\dots,\Par{T-\lambda I}u_m}$ is liney indep in $U.$\par\quad\Hb
-So that $a_0\Par{T-\lambda I}v+a_1\Par{T-\lambda I}u_1+\dots+a_m\Par{T-\lambda I}u_m=0,\exists\,a_0,a_1,\dots,a_m\in\Fbb$ with some $a_i\neq 0.$\par\quad\Hb
-Let $w=a_0v+a_1u_1+\dots+a_mu_m\Longrightarrow Tw=\lambda w.$ Note that $w\neq 0,$ for if not, $a_0v\in U,$ each $a_i=0.$\PfEnd
-\SepLine
-
-\ProblemN{\hypertarget{5A36}{36}}{
-	\TextNL{Prove or give a counterexa\hspace{1pt}$:$ The result in Exercise 35 is still true if $V$ is infinide.}
-}A counterexa:\par\quad
-Consider $V=\Bra{\,f\in\Rbb^{\Rbb}:\exists\,!\,m\in\Nbb,f\in\Span{1,e^x,\dots,e^{mx}}}.$ Note that $V$ is infinide.\par\quad
-And a subsp $U=\Bra{\,f\in\Rbb^{\Rbb}:\exists\,!\,m\in\Nbp,f\in\Span{e^x,\dots,e^{mx}}}.$\par\quad
-Define $T\in\Lm{V}$ by $Tf=e^x f.$ Then $\range T=U$ is invard $T.$\par\quad
-Consider $\Par{T\XSlash U}\Par{1+U}=e^x+U=0\Longrightarrow 0$ is an eigval of $T\XSlash U$ but is not an eigval of $T$.\par\quad
-\Sbra{ $\null T=\zeroSubs,$ for if not, $\exists\,f\in V\nonzero,\Par{Tf}\Par{x}=e^{x}f\Par{x}=0,\forall x\in\Rbb\Rightarrow f=0,$ ctradic. }\PfEnd
-\SepLine
-
 \ProblemBnoor{\hypertarget{5A4e39}{4E 39}}{
-	\TextB{Supp $T\in\Lm{V},\dim V=n.$ Prove $T$ has an eigval $\Longleftrightarrow\exists\,U$ invard $T$ of dim $n-1$.}
+	\TextB{Supp $T\in\Lm{V},\dim V=n>1.$ Prove $\exists$ eigval of $T\Longleftrightarrow\exists\,U$ invard $T$ of dim $n-1$.}
 }\par\quad
-(a) Supp $\lambda$ is an eigval of $T$ with an eigvec $v.$ \Par{ If $\dim V=1,$ then $U=\zeroSubs$ and done. }\par\quad\Ha
+(a) Supp $\lambda$ is an eigval of $T$ with an eigvec $v.$\par\quad\Ha
 Extend $v_1=v$ to $B_V=\Par{v_1,v_2\dots,v_n}.$\par\quad\Ha
 {\tgbfx Step 1.} If $\exists\,w_1\in\Span{v_2,\dots,v_n}$ suth $0\neq Tw_1\in\Span{v_1}.$\par\quad\Ha
 \Blind{{\tgbfx Step 1.}} Then extend $w_1=\alpha_{1,2}$ to a bss of $\Span{v_2,\dots,v_n}$ as $\Par{\alpha_{1,2},\dots,\alpha_{1,n}}.$\par\quad\Ha
@@ -987,7 +946,7 @@ While $\deg f<\deg p.$ Ctradic.\PfEnd
 \BulletPointX\NoteForSmall{[8.49]}\TextB{}
 \TextB{Supp $V$ is a finide complex vecsp and $T\in\Lm{V}.$}
 \TextB{By [4.14], the min poly has the form $\Par{z -\lambda_1 } \cdots \Par{z - \lambda_m}$,}
-{\tgsl\large where $\lambda_1,\dots,\lambda_m$ are all the eigvals of $T$, {\tgsc possibly with repetitions}.}\par
+{\tgsl\large where $\lambda_1,\dots,\lambda_m$ are all the eigvals of $T$, {\tgsc possibly with repeti}.}\par
 \BulletPointX\Comment\TextB{}
 \TextB{A nonzero poly has at most as many disti zeros as its deg ( see [4.12] ).}
 \TextB{Thus by the upper bound for the deg of min poly given in \NOTEFOR [8.40], and by [8.49,]}
