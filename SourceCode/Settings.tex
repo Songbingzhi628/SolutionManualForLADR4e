@@ -147,10 +147,10 @@
 \newcommand{\Bra}[2][\envFont]{{\text{\forbra{#1\{}}}#2{\text{\forbra{#1\}}}}}
 \newcommand{\BigBra}[1]{\Bra[\envFontA]{#1}}
 \newcommand{\SmallPar}[2][0pt]{{\envFontSmall[\scriptsize]\Par[#1]{#2}}}
-\newcommand{\TinyPar}[2][0pt]{(\hspace{#1}#2\hspace{#1})}
+\newcommand{\TinyPar}[2][0pt]{(\hspace{#1}{#2}\hspace{#1})}
 \newcommand{\BigPar}[2][1pt]{{\text{\envFont\forbra(\hspace{#1}}}#2{\text{\hspace{#1}\envFont\forbra)}}}
 \newcommand{\BigBigPar}[2][1pt]{{\text{\envFontA\forbra(\hspace{#1}}}#2{\text{\hspace{#1}\envFontA\forbra)}}}
-\newcommand{\XPar}[1]{{\text{\envFont\forbrax(\hspace{1pt}}}#1{\text{\hspace{1pt}\envFont\forbrax)}}}
+\newcommand{\XPar}[2][1pt]{{\text{\envFont\forbrax(\hspace{#1}}}#2{\text{\hspace{#1}\envFont\forbrax)}}}
 \newcommand{\Sbra}[2][1pt]{{\text{\envFont\forbra[\hspace{#1}}}#2{\text{\envFont\forbra\hspace{#1}]}}}
 \newcommand{\BigSbra}[2][1pt]{{\text{\envFontA\forbra[\hspace{#1}}}#2{\text{\envFontA\forbra\hspace{#1}]}}}
 \newcommand{\XSbra}[2][0pt]{{\text{\envFont\forbrax[\hspace{#1}}}#2{\text{\envFont\forbrax\hspace{#1}]}}}
@@ -230,12 +230,18 @@
 
 \def\Dim{{\textup{\tgnr dim}}} % For dim(...)
 \def\Deg{{\textup{\tgnr deg}}} % For deg(...)
-\def\range{{\textup{\tgnr range}}\,}
-\def\null{{\textup{\tgnr null}}\,}
-\def\card{{\textup{\tgnr card}}\,}
-\def\Spn{{\textup{\tgnr span}}\,}
-\def\Real{{\textup{\tgnr Re}}\,} % For  Re x
-\def\Imaginary{{\textup{\tgnr Im}}\,} % For  Im x
+\def\Range{{\textup{\tgnr range}}} % For range(...)
+\def\Null{{\textup{\tgnr null}}} % For null(...)
+\def\Card{{\textup{\tgnr card}}} % For card(...)
+\def\Spn{{\textup{\tgnr span}}} % For span(...)
+\def\range{{\textup{\tgnr range}}\;\!}
+\def\null{{\textup{\tgnr null}}\;\!}
+\def\rangep{{\textup{\tgnr range}}\,}
+\def\nullp{{\textup{\tgnr null}}\,}
+\def\card{{\textup{\tgnr card}}\;\!}
+\def\spn{{\textup{\tgnr span}}\;\!}
+\def\Real{{\textup{\tgnr Re}}\;\!} % For  Re x
+\def\Imaginary{{\textup{\tgnr Im}}\;\!} % For  Im x
 \def\REAL{\textup{\tgnr Re}} % For  Re(...)
 \def\IMAGINARY{\textup{\tgnr Im}} % For Im(...)
 \newcommand{\Span}[2][\Par]{{\textup{\tgnr span}}#1{#2}}
