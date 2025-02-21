@@ -666,20 +666,19 @@ $T$ surj $\Rightarrow\forall u\in V,\exists\,v_1,\dots,v_m\in V,\,T\Par{v_1}=T^2
 \ANote $\exists$ monic $q\in\null S\mmid_W$ of smallest deg, $q\Par{T}=0,$ then $q$ is the {\tgsl min poly.}
 \SepLine
 
-\Anchor{5BIN4e5.22}\ProblemBX{\NoteForSmall{[4E 5.22]}}{
-	\TextB{Supp $V$ finide, $T\in\Lm{V}.$}
-	\TextB{Prove $\exists\,!$ monic $p\in\PoF{\dim V}$ of smallest deg, suth $p\Par{T}=0.$}
-}Using induc on $\dim V.$ (i) $\dim V=0.$ Let $p=1\Rightarrow p\Par{T}=T=0.$\par\quad
-(ii) Asum for each $U$ of smaller dim,
-{\tgsl $\forall S\in\Lm{U},\exists$ monic $s\in\PoF{\dim U}$, suth $s\Par{S}=0.$}\par\quad\Hii
-Let $u\in V\nonzero.$ Then $\BigPar{Iu,Tu,\dots,T^{\dim V}u}$ liney dep\par\quad\Hii
-$\Rightarrow\exists$ smallest $m\in\Nbp$ suth $c_0Iu+c_1Tu+\dots+c_{m-1}T^{m-1}u+T^mu=0.$ Thus define $q\in\PoF{m}.$\par\quad\Hii
-\NOTICE that $q\Par{T}\Par{T^ku}=0\Rightarrow\Span{Iu,Tu,\dots,T^{m-1}u}\subseteq\nullp q\Par{T}.$\par\quad\Hii
-Hence $\dim\nullp q\Par{T}\geqslant m\Longleftrightarrow\dim\rangep q\Par{T}\leqslant\dim V-m.$\par\quad\Hii
-Becs $\rangep q\Par{T}$ invard $T,$ $S=T\Big|{_{\rangep q\SmallPar{T}}}\in\Lm[\BigPar]{\rangep q\Par{T}}.$ Now by asum,\par\quad\Hii
-$\exists$ monic $s\in\PoF{\dim V-m}$, suth $s\Par{S}=0\Rightarrow\Par{sq}\Par{T}=0.$\quad\Sbra{{\tgsl The remaining part is obvious.}}\Blind{\;\;}\PfEnd
-\SepLine
-
+%\Anchor{5BIN4e5.22}\ProblemBX{\NoteForSmall{[4E 5.22]}}{
+%	\TextB{Supp $V$ finide, $T\in\Lm{V}.$}
+%	\TextB{Prove $\exists\,!$ monic $p\in\PoF{\dim V}$ of smallest deg, suth $p\Par{T}=0.$}
+%}Using induc on $\dim V.$ (i) $\dim V=0.$ Let $p=1\Rightarrow p\Par{T}=T=0.$\par\quad
+%(ii) Asum for each $U$ of smaller dim,
+%{\tgsl $\forall S\in\Lm{U},\exists$ monic $s\in\PoF{\dim U}$, suth $s\Par{S}=0.$}\par\quad\Hii
+%Let $u\in V\nonzero.$ Then $\BigPar{Iu,Tu,\dots,T^{\dim V}u}$ liney dep\par\quad\Hii
+%$\Rightarrow\exists$ smallest $m\in\Nbp$ suth $c_0Iu+c_1Tu+\dots+c_{m-1}T^{m-1}u+T^mu=0.$ Thus define $q\in\PoF{m}.$\par\quad\Hii
+%\NOTICE that $q\Par{T}\Par{T^ku}=0\Rightarrow\Span{Iu,Tu,\dots,T^{m-1}u}\subseteq\nullp q\Par{T}.$\par\quad\Hii
+%Hence $\dim\nullp q\Par{T}\geqslant m\Longleftrightarrow\dim\rangep q\Par{T}\leqslant\dim V-m.$\par\quad\Hii
+%Becs $\rangep q\Par{T}$ invard $T,$ $S=T\Big|{_{\rangep q\SmallPar{T}}}\in\Lm[\BigPar]{\rangep q\Par{T}}.$ Now by asum,\par\quad\Hii
+%$\exists$ monic $s\in\PoF{\dim V-m}$, suth $s\Par{S}=0\Rightarrow\Par{sq}\Par{T}=0.$\quad\Sbra{{\tgsl The remaining part is obvious.}}\Blind{\;\;}\PfEnd
+%\SepLine
 
 \Anchor{5BI4e25}\Anchor{5BI4e26}\ProblemBnoor{4E 5.31, 4E 25, 26}{
 	\TextB{\large\; min poly of restr optor and min poly of quot optor}
@@ -692,18 +691,18 @@ $\exists$ monic $s\in\PoF{\dim V-m}$, suth $s\Par{S}=0\Rightarrow\Par{sq}\Par{T}
 (c) Supp $r$ is the min of $T\mmid_U.$ Then $\forall u\in U,\;r\Par{T\mmid_U}u=r\Par{T}u=0.$\parSol{\Hc}
 Supp $s$ is the min of $T\XSlash U.$ Then $\forall v\in V,\;s\Par{T\XSlash U}\Par{v+U}=s\Par{T}v+U=0.$\parSol{\Hc}
 Thus $\forall v\in V,\Par{rs}\Par{T}v=r\Par{T}\BigPar{s\Par{T}v}=0\Rightarrow\Par{rs}\Par{T}=0.$\PfEnd
-\SepLine\pagebreak
+\SepLine
 
 \Anchor{5BI4e27}\ProblemBnoor{4E 27}{
 	\TextB{Supp $\Fbb=\Rbb,$ $V$ is finide, and $T\in \Lm{V}$. Prove the min $p$ of $T_{\!\Cbb}$ is the min $q$ of $T$.}
-}(a) $\forall u+\i 0\in V_{\!\Cbb},p\Par{T_{\!\Cbb}}\Par{u}=p\Par{T}u=0\Rightarrow\forall u\in V,p\Par{T}u=0\Rightarrow p$ is a multi of $q.$\parSol{}
-(b) $q\Par{T}=0\Rightarrow \forall u+\i v\in V_{\!\Cbb},q\Par{T_{\!\Cbb}}\Par{u+\i v}=q\Par{T}u+\i q\Par{T}v=0\Rightarrow q$ is a multi of $p.$\PfEnd
+}(a) $\forall u+\i 0\in V_{\!\Cbb},\,p\Par{T_{\!\Cbb}}\Par{u}=p\Par{T}u=0\Rightarrow\forall u\in V,p\Par{T}u=0\Rightarrow p$ is a multi of $q.$\parSol{}
+(b) $q\Par{T}=0\Rightarrow \forall u+\i v\in V_{\!\Cbb},\,q\Par{T_{\!\Cbb}}\Par{u+\i v}=q\Par{T}u+\i q\Par{T}v=0\Rightarrow q$ is a multi of $p.$\PfEnd
 \SepLine
 
 \Anchor{5BI4e28}\ProblemBnoor{4E 28}{
 	\TextB{Supp $V$ is finide and $T\in \Lm{V}$. Prove the min $p$ of $T\apostrophe$ equals the min $q$ of $T$.}
-}(a) $\forall \varphi\in V\apostrophe,p\Par{T\apostrophe}\Par{\varphi}=\varphi{p\Par{T}}=0\Rightarrow p\Par{T}\in\null\varphi.$ Thus $p\Par{T}=0.$\parSol{}
-(b) $q\Par{T}=0\Rightarrow\forall \varphi\in V\apostrophe,\varphi{q\Par{T}}=q\Par{T\apostrophe}\Par{\varphi}=0.$ Thus $q\Par{T\apostrophe}=0.$\PfEnd
+}(a) $\forall\varphi\in V\apostrophe,\,p\Par{T\apostrophe}\Par{\varphi}=\varphi\BigPar{p\Par{T}}=0\Rightarrow p\Par{T}\in\null\varphi.$ Thus $p\Par{T}=0.$\parSol{}
+(b) $q\Par{T}=0\Rightarrow\forall \varphi\in V\apostrophe,\varphi\BigPar{q\Par{T}}=q\Par{T\apostrophe}\Par{\varphi}=0.$ Thus $q\Par{T\apostrophe}=0.$\PfEnd
 \SepLine
 
 \ProblemBnoor{4E 5.32}[\Sbra]{
@@ -753,59 +752,46 @@ Hence $sq$ is the min poly, and $\Deg\Par{sq}=\deg s+\deg q\leqslant\dim\range T
 	\TextA{Supp $V$ is finide, $\dim V>1,T\in\Lm{V}.$ Prove $\Bra{\,p\Par{T}:p\in\PoFi}\neq\Lm{V}.$}
 }If $\forall S\in\Lm{V},\exists\,p\in\PoFi,S=p\Par{T}.$ Then by [5.20], $\forall S_1,S_2\in\Lm{V},S_1S_2=S_2S_1.$\parSol{}
 Note that $\dim\geqslant 2.$ By (3.A.14), $\exists\,S_1,S_2\in\Lm{V},S_1S_2\neq S_2S_1.$ Ctradic.\PfEnd
-\SepLine\pagebreak
-
-\Anchor{5BI4e19}\ProblemBnoor{4E 19}{
-	\TextA{Supp $V$ is finide and $T\in \Lm{V}$. Let $\mathcal{E} =\Bra{q\Par{T}: q \in \PoFi}$.}
-	\TextA{Prove $\dim \mathcal{E}$ equals the deg of the min poly of $T$.}
-}\par\quad
-Becs the list $\Par{I,T,\dots,T^{\dim V^2}}$ of len $\dim\Lm{V}+1$ is linely dep in $\dim\Lm{V}.$\par\quad
-Supp $m\in\Nbp$ is the smallest suth $T^m=a_0 I+\dots+a_{m-1}T^{m-1}.$\par\quad
-Then $q$ defined by $q\Par{z}=z^m-a_{m-1}z^{m-1}-\dots-a_0$ is the min poly ( see [8.40] ).\par\quad
-For any $k\in\Nbp,\,\,T^{m+k}=T^k\Par{T^m}\in\Span{I,T,\dots,T^{m-1}}=U.$\par\quad
-%( Using induc. (i) $k=0,T^{m+k}=T^m\in U$;\par\qquad\qquad\qquad\qquad\,
-%(ii) $k\geqslant 1,$ asum $T^{m+k-1}\in U,$\par\qquad\qquad\qquad\qquad\qquad\qquad\,\,\,
-%then $T^{m+k}=T(T^{m+k-1})=b_0 T+\dots+b_{m-1}T^m\in U.$ )\par\quad
-Hence $\Span{I,T,\dots,T^{\dim V^2}}=\Span{I,T,\dots,T^{\dim V^2-1}}=U$.\par\quad
-Note that by the min of $m,$ $\Par{I,T,\dots,T^{m-1}}$ is liney indep.\par\quad
-Thus $\dim U=m=\dim\Span{I,T,\dots,T^{\dim V^2-1}}=\dim\Span{I,T,\dots,T^n}$ for all $m<n\in\Nbp.$\par\vspace{2pt}\quad
-Define $\varphi\in\Lm[\BigPar]{\PoF{m-1},\mathcal{E}}$ by $\varphi\Par{p}=p\Par{T}.$\par\quad
-(a) Supp $p\Par{T}=0.$ 又 $\deg p\leqslant m-1$ $\Rightarrow p=0.$ Then $\varphi$ is inje.\par\quad
-(b) $\forall S=a_0 I+a_1 T+\dots+a_{m-1}T^{m-1}\in\mathcal{E},$ define $p\in\PoF{m-1}$ by\par\quad\Hb
-$p\Par{z}=a_0+a_1 z+\dots+a_{m-1}z^{m-1}\Rightarrow\varphi\Par{p}=S.$ Then $\varphi$ is surj.\par\quad
-Hence $\mathcal{E}$ and $\PoF{m-1}$ are iso. 又 $\dim\PoF{m-1}=m=\dim U.
-$\PfEnd
 \SepLine
 
-\Anchor{5BI4e13}\ProblemBnoor{4E 5.B.13}{
-	\TextB{Supp $T\in \Lm{V}$ and $q\Par{z}=a_0 +a_1 z+\dots+a_n z^n.$}
-	\TextB{Denote the min poly of $T$ by $p\Par{z}=c_0+c_1 z+\dots+c_{m-1}z^{m-1}+z^m.$}
-	\TextB{Prove $\exists\,!\,r \in \PoFi$ suth $q\Par{T} = r\Par{T},\deg r<\deg p.$}
-}\par\quad
-If $\deg q<\deg p,$ then done.\par\quad
-If $\deg q=\deg p,$ notice that $p\Par{T}=0=c_0 I+c_1 T+\dots+c_{m-1}T^{m-1}+T^m$\par\qquad\qquad\qquad\qquad\qquad\qquad\quad\,\,
-$\Rightarrow T^m=-c_0 I-c_1 T-\dots-c_{m-1}T^{m-1},$\par\qquad\qquad\qquad\quad\,\,\,\,
-define $r$ by $r\Par{z}=q\Par{z}+\Sbra{-a_m z^m+a_m\Par{-c_0-c_1 z-\dots-c_{m-1}z^{m-1}}}$\par\qquad\qquad\qquad\qquad\qquad\qquad\qquad\,\,
-$=\Par{a_0-a_m c_0}+\Par{a_1-a_m c_1}z+\dots+\Par{a_{m-1}-a_m c_{m-1}}z^{m-1},$\par\qquad\qquad\qquad\quad\,\,\,\,
-hence $r\Par{T}=0,\deg r<m$ and done.\par\quad
-Now supp $\deg q\geqslant\deg p.$ We use induc on $\deg q.$\par\quad
-(i) $\deg q=\deg p,$ then the desired result is true, as shown above.\par\quad\Endi
-(ii) $\deg q>\deg p,$ asum the desired result is true for $\deg q=n.$\par\quad\Hii
-Supp $f\in\PoFi$ suth $f\Par{z}=b_0 +b_1 z+\dots+b_n z^n+b_{n+1}z^{n+1}.$\par\quad\Hii
-Apply the asum to $g$ defined by $g\Par{z}=b_0 +b_1 z+\dots+b_n z^n,$
-\par\quad\Hii\qquad\qquad\qquad\quad getting $s$ defined by $s\Par{z}=d_0+d_1 z+\dots+d_{m-1} z^{m-1}.$\par\quad\Hii
-Thus $g\Par{T}=s\Par{T}\Rightarrow f\Par{T}=g\Par{T}+b_{n+1}T^{n+1}=s\Par{T}+b_{n+1}T^{n+1}.$\par\quad\Hii
-Apply the asum to $t$ defined by $t\Par{z}=z^n,$\par\quad\Hii\qquad\qquad\qquad\quad getting $\delta$ defined by $\delta\Par{z}=c_0\apostrophe +c_1\apostrophe z+\dots+c_{m-1}\apostrophe z^{m-1}.$\par\quad\Hii
-Thus $t\Par{T}=T^n=c_0\apostrophe+c_1\apostrophe z+\dots+c_{m-1}\apostrophe z^{m-1}=\delta\Par{T}.$\par\quad\Hii
-又 $\Span{v,Tv,\dots,T^{m-1}v}$ is invard $T.$\par\quad\Hii
-Hence $\exists\,!\,k_j\in\Fbb,T^{n+1}=T\Par{T^n}=k_0+k_1 z+\dots+k_{m-1}z^{m-1}.$\par\quad\Hii
-And $f\Par{T}=s\Par{T}+b_{n+1}\Par{k_0+k_1 T+\dots+k_{m-1}T^{m-1}}$\par\quad\Hii
-$\Rightarrow f\Par{T}=\Par{d_0+k_0}+\Par{d_1+k_1}z+\dots+\Par{d_{m-1}+k_{m-1}}z^{m-1}=h\Par{T},$ thus defining $h.$\PfEnd
+\Anchor{5BI4e19}\ProblemBnoor{4E 19}{
+	\TextA{Supp $V$ finide, $T\in\Lm{V},$ with the min $p\Par{z}=c_0+c_1z+\dots+c_{m-1}z^{m-1}+z^m.$}
+	\TextA{Let $\mathcal{E} =\Bra{q\Par{T}: q \in \PoFi},$ a subsp of $\Lm{V}.$ Prove $\dim\mathcal{E}=\deg p.$}
+}Becs $T^m=c_0I+c_1T+\dots+c_{m-1}T^{m-1}\Rightarrow U=\Span{I,T,\dots,T^{m-1}}\Rightarrow U$ invard $T$\parSol{}
+$\Rightarrow$ each $T^{m+k}=T^k\Par{T^m}\in U\Rightarrow\mathcal{E}=\Span[\BigPar]{I,T,\dots,T^{\dim\Lm[\SmallPar]{V}-1}}=\Span[\BigPar]{I,T,\dots,T^{m-1}}=U.$\PfEnd\vspace{4pt}\parSol{}
+\Or Define $\Phi\in\Lm[\BigPar]{\PoFi,\Lm{V}}$ by $\Phi\Par{q}=q\Par{T}\Rightarrow\range\Phi=\mathcal{E}.$\parSol{}
+Becs $\Phi\Par{q}=q\Par{T}=0\Longleftrightarrow q$ is a multi of the min $p\Longleftrightarrow q\in\Bra{ps:s\in\PoFi}=\null\Phi.$\parSol{}
+Now by (4.11), $\dim\PoF{}\XSlash\null\Phi=\deg p=m.$ By [3.91](d).\PfEnd
+\SepLine
+
+\Anchor{5BI4e13}\ProblemBnoor{4E 13}{
+	\TextA{Supp $V$ finide, $T\in \Lm{V},$ with the min $p\Par{z}=c_0+c_1 z+\dots+c_{m-1}z^{m-1}+z^m.$}
+	\TextA{Prove if $q\Par{z}=a_0 +a_1 z+\dots+a_n z^n,$ then $\exists\,!\,r\in\PoF{\deg p-1},\,q\Par{T}=r\Par{T}.$}
+}Becs $p\neq 0.$ By the div algo, immed. \Sbra{$r=0$ if $q=p.$}\PfEnd
+%If $\deg q<\deg p,$ then done.\par\quad
+%If $\deg q=\deg p,$ notice that $p\Par{T}=0=c_0 I+c_1 T+\dots+c_{m-1}T^{m-1}+T^m$\par\qquad\qquad\qquad\qquad\qquad\qquad\quad\,\,
+%$\Rightarrow T^m=-c_0 I-c_1 T-\dots-c_{m-1}T^{m-1},$\par\qquad\qquad\qquad\quad\,\,\,\,
+%define $r$ by $r\Par{z}=q\Par{z}+\Sbra{-a_m z^m+a_m\Par{-c_0-c_1 z-\dots-c_{m-1}z^{m-1}}}$\par\qquad\qquad\qquad\qquad\qquad\qquad\qquad\,\,
+%$=\Par{a_0-a_m c_0}+\Par{a_1-a_m c_1}z+\dots+\Par{a_{m-1}-a_m c_{m-1}}z^{m-1},$\par\qquad\qquad\qquad\quad\,\,\,\,
+%hence $r\Par{T}=0,\deg r<m$ and done.\par\quad
+%Now supp $\deg q\geqslant\deg p.$ We use induc on $\deg q.$\par\quad
+%(i) $\deg q=\deg p,$ then the desired result is true, as shown above.\par\quad\Endi
+%(ii) $\deg q>\deg p,$ asum the desired result is true for $\deg q=n.$\par\quad\Hii
+%Supp $f\in\PoFi$ suth $f\Par{z}=b_0 +b_1 z+\dots+b_n z^n+b_{n+1}z^{n+1}.$\par\quad\Hii
+%Apply the asum to $g$ defined by $g\Par{z}=b_0 +b_1 z+\dots+b_n z^n,$
+%\par\quad\Hii\qquad\qquad\qquad\quad getting $s$ defined by $s\Par{z}=d_0+d_1 z+\dots+d_{m-1} z^{m-1}.$\par\quad\Hii
+%Thus $g\Par{T}=s\Par{T}\Rightarrow f\Par{T}=g\Par{T}+b_{n+1}T^{n+1}=s\Par{T}+b_{n+1}T^{n+1}.$\par\quad\Hii
+%Apply the asum to $t$ defined by $t\Par{z}=z^n,$\par\quad\Hii\qquad\qquad\qquad\quad getting $\delta$ defined by $\delta\Par{z}=c_0\apostrophe +c_1\apostrophe z+\dots+c_{m-1}\apostrophe z^{m-1}.$\par\quad\Hii
+%Thus $t\Par{T}=T^n=c_0\apostrophe+c_1\apostrophe z+\dots+c_{m-1}\apostrophe z^{m-1}=\delta\Par{T}.$\par\quad\Hii
+%又 $\Span{v,Tv,\dots,T^{m-1}v}$ is invard $T.$\par\quad\Hii
+%Hence $\exists\,!\,k_j\in\Fbb,T^{n+1}=T\Par{T^n}=k_0+k_1 z+\dots+k_{m-1}z^{m-1}.$\par\quad\Hii
+%And $f\Par{T}=s\Par{T}+b_{n+1}\Par{k_0+k_1 T+\dots+k_{m-1}T^{m-1}}$\par\quad\Hii
+%$\Rightarrow f\Par{T}=\Par{d_0+k_0}+\Par{d_1+k_1}z+\dots+\Par{d_{m-1}+k_{m-1}}z^{m-1}=h\Par{T},$ thus defining $h.$\PfEnd
 \SepLine
 
 \Anchor{5BI4e14}\ProblemBnoor{4E 14}{
-	\TextB{Supp $V$ is finide, $T\in \Lm{V}$ has min $p\Par{z}=a_0 + a_1 z + \dots + a_{m-1} z^{m-1}+z^m.$}
-	\TextB{Find the min poly of $T^{-1}$.}
+	\TextA{Supp $V$ finide, $T\in\Lm{V},$ with the min $p\Par{z}=a_0 + a_1 z + \dots + a_{m-1} z^{m-1}+z^m.$}
+	\TextA{Find the min of $T^{-1}$.}
 }\par\quad
 Notice that $V$ is finide. Then $p\Par{0}=a_0\neq 0\Rightarrow 0$ is not a zero of $p\Rightarrow T-0I=T$ is inv.\par\quad
 Then $p\Par{T}=a_0 I+a_1 T+\dots+T^m=0.$ Apply $T^{-m}$ to both sides,\par\quad
@@ -908,12 +894,12 @@ Let $T=\i^{1/2}I\;$ defined by $\i^{1/2}\Par{x,y}=\XPar{\frac{\sqrt{2}}{2}x-\fra
 \end{pmatrix}$}.\PfEnd\vspace{2pt}
 \SepLine
 
-\Anchor{5BI4e12}\ProblemBnoor{4E 5.B.12}{
-	\TextB{Find the min poly of $T$ defined in \tgnr\Par{\hLk{5A10}{5.A.10}}.}
-}By (5.A.9) and [8.40, 8.49], $1,2,\dots,n$ are all the zeros of the min poly of $T.$\PfEnd
-\SepLine
+%\Anchor{5BI4e12}\ProblemBnoor{4E 12}{
+%	\TextB{Find the min poly of $T$ defined in \tgnr\Par{\hLk{5A10}{5.A.10}}.}
+%}By (5.A.9) and [8.40, 8.49], $1,2,\dots,n$ are all the zeros of the min poly of $T.$\PfEnd
+%\SepLine
 
-\Anchor{5BI4e3}\ProblemBnoor{4E 5.B.3}{
+\Anchor{5BI4e3}\ProblemBnoor{4E 3}{
 	\TextB{Find the min poly of $T$ defined in \tgnr\Par{\hLk{5A19}{5.A.19}}.}\par
 }\par\quad
 If $n=1$ then $1$ is the only eigval of $T,$ and $\Par{z-1}$ is the min poly.\par\quad
@@ -921,7 +907,7 @@ Becs $n$ and $0$ are all the eigvals of $T,$ 又 $\forall k\in\Bra{1,\dots,n},T 
 Hence $T^2 e_k=n\Par{T e_k}\Rightarrow T^2=n T\Rightarrow T^2-n T=T\Par{T-n}=0.$ Thus $\BigPar{z\Par{z-n}}$ is the min poly.\PfEnd
 \SepLine
 
-\Anchor{5BI4e8}\ProblemBnoor{4E 5.B.8}{
+\Anchor{5BI4e8}\ProblemBnoor{4E 8}{
 	\TextB{Find the min poly of $T\in\Lm{\Rbb^2},$ the countclockws rotat optor by $\theta\in\Rbb^+$.}
 }\par\quad
 If $\theta=\pi+2k\pi,$ then $T\Par{w,z}=\Par{-w,-z},T^2=I$ and the min poly is $z+1.$\par\quad
@@ -1047,8 +1033,7 @@ Thus $n=m.$ 又 $q$ is monic. By the uniqnes of min poly.\PfEnd
 \Anchor{5BI18}\Anchor{5BI4e15}\ProblemNnoor{18}{4E 15}{
 	\TextA{Supp $V$ is a finide complex vecsp with $\dim V > 0$ and $T\in\Lm{V}$.}
 	\TextA{Define $f:\Cbb\rightarrow\Rbb$ by $f\Par{\lambda} = \dim \Range\Par{T-\lambda I}$. Prove $f$ is not continuous.}
-}Note that $V$ is finide.\par\quad
-Let $\lambda_0$ be an eigval of $T.$ Then $\Par{T-\lambda_0 I}$ is not surj. Hence $\dim\Range\Par{T-\lambda_0 I}<\dim V.$\par\quad
+}Let $\lambda_0$ be an eigval of $T.$ Then $\Par{T-\lambda_0 I}$ is not surj. Hence $\dim\Range\Par{T-\lambda_0 I}<\dim V.$\par\quad
 Becs $T$ has finily many eigvals. There exis a seq of number $\Bra{\lambda_n}$ suth $\lim\limits_{n\rightarrow\infty}\lambda_n=\lambda_0$.\par\quad
 And $\lambda_n$ is not an eigval of $T$ for each $n\Rightarrow\dim\Range\Par{T-\lambda_n I}=\dim V\neq \dim\Range\Par{T-\lambda_0 I}.$\par\quad
 Thus $f\Par{\lambda_0}\neq \lim\limits_{n\rightarrow\infty}f\Par{\lambda_n}.$\PfEnd
@@ -1094,44 +1079,44 @@ $T^n e_1=\cdots=T^{n-k}e_{1+k}=\cdots=T e_n=-a_0 e_1-a_1 e_2-a_2 e_3-\dots-a_{n-
 $=\Par{-a_0 I-a_1 T-a_2 T^2-\dots-a_{n-1}T^{n-1}}e_1.$ Thus $p\Par{T}e_1=0=p\Par{T}e_j$ for each $e_j=T^{j-1}e_1.$\PfEnd
 \SepLine
 
-\BulletPointX{\Large\textsc{Eigenvalues On Odd-Dimensional Real Vector Spaces}}\par
-\ProblemB{
-	\textsc{Even-Dimensional Null Space}\TextB{}
-	\TextB{Supp $\Fbb=\Rbb,$ $V$ is finide, $T\in\Lm{V}$ and $b, c\in\Rbb$ with $b^2 < 4c$.}
-	\TextB{Prove $\dim\Null\Par{T^2 + bT + cI}$ is an even number.}
-}\par\quad
-Denote $\Null\Par{T^2 + bT + cI}$ by $R.$ Then $T\mmid_R+bT\mmid_R+cI_R=\Par{T+bT+cI}\mmid_R=0\in\Lm{R}.$\par\quad
-Supp $\lambda$ is an eigval of $T_R$ with an eigvec $v\in R.$\par\quad
-Then $0=\Par{T\mmid_R^2+bT\mmid_R+cI_R}\Par{v}=\Par{\lambda^2+\lambda b+c}v=\BigPar{\Par{\lambda+b}^2+c-\Frac{b^2}{4}}v.$\par\quad
-Becs $c-\Frac{b^2}{4}>0$ and we have $v=0.$ Thus $T_R$ has no eigvals.\par\quad
-Let $U$ be invarsp of $R$ that has the largest, even dim among all invarsps.\par\quad
-Asum $U\neq R.$ Then $\exists\,w\in R$ but $w\not\in U.$ Let $W$ be suth $\Par{w,T\mmid_R w}$ is a bss of $W.$\par\quad
-Becs $T\mmid_R^2 w=-bT\mmid_R w-cw\in W.$ Hence $W$ is invarsp of dim $2.$\par\quad
-Thus $\dim \Par{U+W}=\dim U+2-\Dim\Par{U\cap W},$ where $U\cap W=\zeroSubs,$\par\qquad\qquad
-for if not, becs $w\not\in U,T\mmid_R w\in U,$\par\qquad\qquad $U\cap W$ is invard $T\mmid_R$ of one dim ( impossible becs $T\mmid_R$ has no eigvecs ).\par\quad
-Hence $U+W$ is even-dim invarsp under $T\mmid_R$, ctradic the max of $\dim U.$\par\quad
-Thus the asum was incorrect. Hence $R=\Null\Par{T^2+bT+cI}=U$ has even dim.\PfEnd
-\SepLine
-
-\ProblemB{
-	\textsc{Operators On Odd-Dimensional Vector Spaces Have Eigenvalues}\TextB{}
-	(a) \TextB{Supp $\Fbb=\Cbb.$ \tgnr\large Then by [5.21], done.}
-	(b) \TextB{Supp $\Fbb=\Rbb,$ $V$ is finide, and $\dim V=n$ is an odd number.}
-	\Hb\TextB{Let $T\in\Lm{V}$ and the min poly is $\,p\,$. Prove $T$ has an eigval.}
-}\par\quad
-(i) If $n=1,$ then done.\par\quad\Endi
-(ii) Supp $n\geqslant 3.$ Asum every optor, on odd-dim vecsps of dim less than $n,$ has an eigval.\par\quad\Hii
-If $p$ is a poly multi of $\Par{x - \lambda}$ for some $\lambda\in\Rbb,$ then by [8.49] $\lambda$ is an eigval of $T$ and done.\par\quad\Hii
-Now supp $b, c\in\Rbb$ suth $b^2 < 4c$ and $p$ is a poly multi of $x^2 + bx + c$ (see [4.17]).\par\quad\Hii
-Then $\exists\,q\in\PoRi$ suth $p\Par{x} = q\Par{x}\Par{x^2 + bx + c}$ for all $x\in\Rbb.$\par\quad\Hii
-Now $0 = p\Par{T} = \BigPar{q\Par{T}}\Par{T^2 + bT + cI},$ which means that $q\Par{T}\mmid_{\Range\Par{T^2+bT+cI}}=0.$\par\quad\Hii
-Becs $\deg q < \deg p$ and $p$ is the min poly of $T$, hence $\Range\Par{T^2 + bT + cI}\neq V$.\par\quad\Hii
-又 $\dim V$ is odd and $\dim\Null\Par{T^2 +bT+cI}$ is even ( by our previous result ).\par\quad\Hii
-Thus $\dim V - \dim \Null\Par{T^2 + bT + cI}=\dim \Range\Par{T^2 + bT + cI}$ is odd.\par\quad\Hii
-By [5.18], $\Range\Par{T^2 + bT + cI}$ is invarsp of $V$ under $T$ that has odd dim less than $n.$\par\quad\Hii
-Our induc hypo now implies that $T\mmid_{\Range\Par{T^2 + bT + cI}}$ has an eigval.\par\quad
-By induc.\PfEnd
-\SepLine
+%\BulletPointX{\Large\textsc{Eigenvalues On Odd-Dimensional Real Vector Spaces}}\par
+%\ProblemB{
+%	\textsc{Even-Dimensional Null Space}\TextB{}
+%	\TextB{Supp $\Fbb=\Rbb,$ $V$ is finide, $T\in\Lm{V}$ and $b, c\in\Rbb$ with $b^2 < 4c$.}
+%	\TextB{Prove $\dim\Null\Par{T^2 + bT + cI}$ is an even number.}
+%}\par\quad
+%Denote $\Null\Par{T^2 + bT + cI}$ by $R.$ Then $T\mmid_R+bT\mmid_R+cI_R=\Par{T+bT+cI}\mmid_R=0\in\Lm{R}.$\par\quad
+%Supp $\lambda$ is an eigval of $T_R$ with an eigvec $v\in R.$\par\quad
+%Then $0=\Par{T\mmid_R^2+bT\mmid_R+cI_R}\Par{v}=\Par{\lambda^2+\lambda b+c}v=\BigPar{\Par{\lambda+b}^2+c-\Frac{b^2}{4}}v.$\par\quad
+%Becs $c-\Frac{b^2}{4}>0$ and we have $v=0.$ Thus $T_R$ has no eigvals.\par\quad
+%Let $U$ be invarsp of $R$ that has the largest, even dim among all invarsps.\par\quad
+%Asum $U\neq R.$ Then $\exists\,w\in R$ but $w\not\in U.$ Let $W$ be suth $\Par{w,T\mmid_R w}$ is a bss of $W.$\par\quad
+%Becs $T\mmid_R^2 w=-bT\mmid_R w-cw\in W.$ Hence $W$ is invarsp of dim $2.$\par\quad
+%Thus $\dim \Par{U+W}=\dim U+2-\Dim\Par{U\cap W},$ where $U\cap W=\zeroSubs,$\par\qquad\qquad
+%for if not, becs $w\not\in U,T\mmid_R w\in U,$\par\qquad\qquad $U\cap W$ is invard $T\mmid_R$ of one dim ( impossible becs $T\mmid_R$ has no eigvecs ).\par\quad
+%Hence $U+W$ is even-dim invarsp under $T\mmid_R$, ctradic the max of $\dim U.$\par\quad
+%Thus the asum was incorrect. Hence $R=\Null\Par{T^2+bT+cI}=U$ has even dim.\PfEnd
+%\SepLine
+%
+%\ProblemB{
+%	\textsc{Operators On Odd-Dimensional Vector Spaces Have Eigenvalues}\TextB{}
+%	(a) \TextB{Supp $\Fbb=\Cbb.$ \tgnr\large Then by [5.21], done.}
+%	(b) \TextB{Supp $\Fbb=\Rbb,$ $V$ is finide, and $\dim V=n$ is an odd number.}
+%	\Hb\TextB{Let $T\in\Lm{V}$ and the min poly is $\,p\,$. Prove $T$ has an eigval.}
+%}\par\quad
+%(i) If $n=1,$ then done.\par\quad\Endi
+%(ii) Supp $n\geqslant 3.$ Asum every optor, on odd-dim vecsps of dim less than $n,$ has an eigval.\par\quad\Hii
+%If $p$ is a poly multi of $\Par{x - \lambda}$ for some $\lambda\in\Rbb,$ then by [8.49] $\lambda$ is an eigval of $T$ and done.\par\quad\Hii
+%Now supp $b, c\in\Rbb$ suth $b^2 < 4c$ and $p$ is a poly multi of $x^2 + bx + c$ (see [4.17]).\par\quad\Hii
+%Then $\exists\,q\in\PoRi$ suth $p\Par{x} = q\Par{x}\Par{x^2 + bx + c}$ for all $x\in\Rbb.$\par\quad\Hii
+%Now $0 = p\Par{T} = \BigPar{q\Par{T}}\Par{T^2 + bT + cI},$ which means that $q\Par{T}\mmid_{\Range\Par{T^2+bT+cI}}=0.$\par\quad\Hii
+%Becs $\deg q < \deg p$ and $p$ is the min poly of $T$, hence $\Range\Par{T^2 + bT + cI}\neq V$.\par\quad\Hii
+%又 $\dim V$ is odd and $\dim\Null\Par{T^2 +bT+cI}$ is even ( by our previous result ).\par\quad\Hii
+%Thus $\dim V - \dim \Null\Par{T^2 + bT + cI}=\dim \Range\Par{T^2 + bT + cI}$ is odd.\par\quad\Hii
+%By [5.18], $\Range\Par{T^2 + bT + cI}$ is invarsp of $V$ under $T$ that has odd dim less than $n.$\par\quad\Hii
+%Our induc hypo now implies that $T\mmid_{\Range\Par{T^2 + bT + cI}}$ has an eigval.\par\quad
+%By induc.\PfEnd
+%\SepLine
 
 \Anchor{5BI2e24}\ProblemBnoor{{2E 24}}{
 	\TextB{Supp $\Fbb=\Rbb,T\in\Lm{V}$ has no eigvals. Prove every invarsp $U$ is even-dim.}

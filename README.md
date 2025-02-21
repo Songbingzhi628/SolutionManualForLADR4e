@@ -30,7 +30,7 @@
 这是我整理的*Linear Algebra Done Right, 4th/3rd E* 的习题答案和课文补注。范围覆盖所有第三版和第四版的课文和习题（除了第一章A节、极少数结合上下文太过显而易见的习题、没有任何日后反复推敲价值的“当堂习题”和方法套路过于雷同的习题）。
 - 习题答案中，有我完全独立思考得出的，有抄 <https://linearalgebras.com/> 的, 有抄 <https://math.stackexchange.com/> 的, 有抄*LADR2eSolutions（By Axler）.pdf*，有抄最新的*LADR4eSolutions经典最全（By Axler？）.pdf*，还有请教别人，乃至请教AI得出来的。
 > 上面这些文档的许可证件，除 *LADR4eSolutions经典最全（By Axler？）.pdf* 找不到/没有指明外，都允许分发/复制/引用。
-- 课文补注中，除了我独立思考总结出的易错误区和技巧、难点之外，还（因为我想要兼容那些使用LADR第三版纸质书的读者，包括我在内）把LADR4e中对课文定理等等的修改也（作了简化和提炼）摘录上去。
+- 课文补注有我独立思考总结出的易错误区和技巧、难点。
 - 题目标号为正常数字**N**的，为第三版某章某节第**N**题（有个别题是第四版又删去的，这里，或直接摘录，或合并简化，仍然作保留；还有个别题是第四版增添条件、设问的，也一并写在第**N**题下）。
 - 题目标号为实心黑点的，为第四版。因为要面向以第三版为主要教材的学习者，所以为了避免混淆，故而将题号（部分题目的实心黑点后有标注具体第四版的数字标号）、甚至章节略去（一些变动过大的章节除外）。
 - 题目顺序会有调换，在每章大标题处会交代清楚。
@@ -117,7 +117,7 @@ This is my notes and solutions for *Linear Algebra Done Right, 4th/3rd E*. All e
 - The solutions are not all originally written by me. Many of those are copied or abridged from <https://linearalgebras.com/>, <https://math.stackexchange.com/>, *LADR2eSolutions（By Axler）.pdf* , *LADR4eSolutions经典最全（By Axler？）.pdf*. And some of those solutions, are adaptions/implementations of the results of chatting with other people informally, or even with AI.
 > The copyright notices of the documents mentioned above, except for that of *LADR4eSolutions经典最全（By Axler？）.pdf* ( not specified/found ), permit distributing and copying.
 
-- The notes for the textbook include efficient tools, misconceptions, and error-prone points. For the sake of compatibility with the 3rd Edition, I copied/abridged/adapted the new results appeared in the 4th Edition in my notes.
+- The notes for the textbook include efficient tools, misconceptions, and error-prone points.
 - The plain number tags for Exercises are the same in the 3rd Edition. Some Exercises in 3rd Edition are disappeared/modified ( with some conditions or questions added or removed ) in the 4th Edition. I saved them in my manual by copying directly, or merging ( all remain in the original number tags, but may not remain in the original position ).
 - Because **I use indices of the 3rd Edition**, so in order to avoid confusion, the Exercises in bullet point tags are for 4th Edition, ( some of them are modified by me, )  and some of them are followed by number tags in 4th Edition. Except for great changes in whole chapter in 4th Edition.
 - The order of Exercises for each chapter may not be the same with the textbook. I note that clearly after the big chapter title.
