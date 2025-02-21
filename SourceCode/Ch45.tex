@@ -599,23 +599,23 @@ Let $B_{\Range\SmallPar{T\,-\,\lambda I}}=\Par{w_1,\dots,w_m},\,B_V=\Par{w_1,\do
 Becs $U$ invard $\Par{T-\lambda I}.$ Now $u\in U\Rightarrow\Par{T-\lambda I}{u}\in U\Rightarrow Tu\in U.$\vspace{2pt}\parSol{}
 (b) Supp $U$ is invarspd $T$ with $\dim U=\dim V-1\Rightarrow\dim V\XSlash U=1.$ By (3.A.7) and Exe (35).\PfEnd
 \SepLine
-\ChEnd\pagebreak
+\ChEnd
 
-\ChDecl{Ch5BI}{5.B: I}
+\vfill\ChDecl{Ch5BI}{5.B: I}
 
 \vspace{2pt}
 
-\footnotesize
+{\normalsize
 下面，为了照顾原书两版过大的差距，特别将此节分成(I), (II)两部分。考虑到本节4E「本征值与极小多项式」和「奇维度实向量空间的本征值」(相当一部分是从3E的8.C节挪过来的)是对3E「多项式作用于算子」和「本征值的存在性」(也即本节3E前半部分)的极大扩充，这一扩充也大大改变了本节3E后半部分的「上三角矩阵」，故而将4E放在3E前面。\par
 (I)除了覆盖本节4E全部和3E前半部分与之相关的所有习题，还会覆盖上节4E末。\par
 (II)除了覆盖本节3E后半部分「上三角矩阵」，还会覆盖下节4E；并且，下节还会覆盖下下节4E。\par\vspace{2pt}
-\small
-[8.40]\,=\,[4E 5.22]: min poly;\par
-[8.44, 45]\,=\,[4E 5.25, 26]: how to find the min poly;\par
-[8.49]\,=\,[4E 5.27]: eigvals are the zeros of the min poly;\par
-[8.46]\,=\,[4E 5.29]: $q\Par{T} = 0\Longleftrightarrow q$ is a multi of min.\par
-
-\large
+}\vspace{10pt}
+\pagebreak
+%\small
+%[8.40]\,=\,[4E 5.22]: min poly;\par
+%[8.44, 45]\,=\,[4E 5.25, 26]: how to find the min poly;\par
+%[8.49]\,=\,[4E 5.27]: eigvals are the zeros of the min poly;\par
+%[8.46]\,=\,[4E 5.29]: $q\Par{T} = 0\Longleftrightarrow q$ is a multi of min.\par
 
 %\orMode{\hLk{5BI1}{1}\;\;\hLk{5BI2}{2}\;\;\hLk{5BI3}{3}\;\;\hLk{5BI5}{5}\;\;\hLk{5BI6}{6}\;\;\hLk{5BI7}{7}\;\;\hLk{5BI8}{8}\;\;\hLk{5BI10}{10}\;\;\hLk{5BI11}{11}\;\;\hLk{5BI12}{12}\;\;\hLk{5BI13}{13}\;\;\hLk{5BI18}{18}\;\;\hLk{5BI19}{19}\;\;|\;\;\hLk{5BI2e24}{2E:\;\;Ch5.24}$\\[-4pt]$\hLk{5A4e32}{4E:\;\;5.A.32}\;\;\hLk{5A4e33}{5.A.33}\;\;\hLk{5BI4e3}{3}\;\;\hLk{5BI4e7}{7}\;\;\hLk{5BI4e8}{8}\;\;\hLk{5BI4e9}{9}\;\;\hLk{5BI4e10}{10}\;\;\hLk{5BI4e11}{11}\;\;\hLk{5BI4e12}{12}\;\;\hLk{5BI4e13}{13}\;\;\hLk{5BI4e14}{14}\;\;\hLk{5BI4e15}{15}$\\[-4pt]$\Blind{4E:\;\;}\hLk{5BI4e16}{16}\;\;\hLk{5BI4e17}{17}\;\;\hLk{5BI4e18}{18}\;\;\hLk{5BI4e19}{19}\;\;\hLk{5BI4e20}{20}\;\;\hLk{5BI4e21}{21}\;\;\hLk{5BI4e22}{22}\;\;\hLk{5BI4e23}{23}\;\;\hLk{5BI4e24}{24}\;\;\hLk{5BI4e25}{25}\;\;\hLk{5BI4e26}{26}\;\;\hLk{5BI4e27}{27}\;\;\hLk{5BI4e28}{28}\;\;\hLk{5BI4e29}{29}}[-40pt]{[1]: ; [2]: ; [3]: ; [4]: ; [5]: ; [6]: ; [7]: ; [8]: ; [9]: ; [10]: ; [11]: ; [12]: ; [13]: .}
 
@@ -655,49 +655,36 @@ $T$ surj $\Rightarrow\forall u\in V,\exists\,v_1,\dots,v_m\in V,\,T\Par{v_1}=T^2
 \SepLine
 
 \ProblemB[]{
-	\TextB{Supp non0 $v\in V.$ Prove [5.21] using $S$ below.}
+	\TextB{Supp non0 $v\in V.$ Prove [5.21] using the given map below.}
 }
 \Anchor{5BI16}\ProblemN[]{16}{
-	\TextA{Define $S:\PoC{\dim V}\rightarrow V$ by $S\Par{p}=p\Par{T}v.$ \FontNorm Then $S$ not inje $\Rightarrow\exists$ non0 $p\in\null S$.}
+	\TextA{Define $S:\PoC{\dim V}\rightarrow V$ by $S\Par{p}=p\Par{T}v.$ \,\FontNorm Then $S$ not inje $\Rightarrow\exists$ non0 $p\in\null S$.}
 }
 \ProblemN{\Anchor{5BI17}{17}}{
-	\TextA{Define $S:\PoC{\dim V^2}\rightarrow\Lm{V}$ by $S\Par{p}=p\Par{T}.$ \FontNorm Then $S$ not inje $\Rightarrow\exists$ non0 $p\in\null S$.}
+	\TextA{Define $S:\PoC{\dim V^2}\rightarrow\Lm{V}$ by $S\Par{p}=p\Par{T}.$ \,\FontNorm Then $S$ not inje $\Rightarrow\exists$ non0 $p\in\null S$.}
 }Let $p\Par{z}=c\Par{z-\lambda_1}\cdots\Par{z-\lambda_m}\Rightarrow\Par{T-\lambda_1 I}\cdots\Par{T-\lambda_m I}$ not inje.\PfEnd
 \ANote $\exists$ monic $q\in\null S\mmid_W$ of smallest deg, $q\Par{T}=0,$ then $q$ is the {\tgsl min poly.}
 \SepLine
 
-\BulletPointX\NoteFor{[8.40]} \TextB{\large def for min poly }
-%{\Large M{\normalsize INIMAL} P{\normalsize OLYNOMIAL}: E{\normalsize XISTENCE}, U{\normalsize NIQUENESS}, D{\normalsize EGREE}}\qquad (Definition For Mini Poly)\par\,\,
-\TextB{Supp $V$ is finide and $T\in\Lm{V}$.}
-\TextB{Supp $M_T^0=\Bra{p_j}{_{j\in\Gamma}}$ is the set of all monic poly that give 0 whenever $T$ is applied.}
-\TextB{Prove $\exists\,!\,p_k\in M_T^0,\deg p_k=\min\!${\FontNorm$\Bra{\deg p_j}{_{j\in\Gamma}}$}$\leqslant\dim V$.}
-\Solution\Or Another Proof :\par\quad
-{\Large[} {\tgsl\large Existns Part} {\Large]}\quad We use induc on $\dim V.$\par\quad
-(i) If $\dim V = 0$, then $I=0\in\Lm{V}$ and let $p=1$, done.\par\quad\Endi
-(ii) Supp $\dim V\geqslant 1.$\par\quad\Hii
-{\tgsl Asum $\dim V > 0$ and that the desired result is true for all optors on all vecsps of smaller dim.}\par\quad\Hii
-Let $u\in V,u\neq 0$. The list $\Par{u, Tu, \dots, T^{\dim V} u}$ of len $\Par{1 + \dim V}$ is linely dep.\par\quad\Hii
-Then $\exists\,!\,T^m$ of smallest deg suth $T^m u\in\Span{u, Tu, \dots, T^{m-1} u}$.\par\quad\Hii
-Thus $\exists\,c_j\in\Fbb,c_0 u + c_1 Tu +\dots + c_{m-1} T^{m-1} u + T^m u = 0$.\par\quad\Hii
-Define $q$ by
-$q\Par{z} = c_0 + c_1 z + \dots + c_{m-1} z^{m-1} + z^m$.\par\quad\Hii
-Then $0=T^k\BigPar{q\Par{T}u}=q\Par{T}\Par{T^k u},\forall k\in\Bra{1,\dots,m-1}\subseteq\Nbb.$\par\quad\Hii
-Becs $\Par{u, Tu, \dots , T^{m-1} u}$ is liney indep.\par\quad\Hii
-Thus $\dim\nullp q\Par{T} \geq m\Rightarrow\dim \rangep q\Par{T} = \dim V - \dim \nullp q\Par{T} \leqslant \dim V - m$.\par\vspace{5pt}\quad\Hii
-Let $W=\rangep q\Par{T}.$\par\quad\Hii
-By {\tgsl asum}, $\exists\,s\in M_T^0$ of smallest deg ( and $\deg s\leqslant\dim W,$ ) so that $s\Par{T\mmid_W } = 0$.\par\quad\Hii
-Hence $\forall v\in V,\BigPar{\Par{sq}\Par{T}}\Par{v} = s\Par{T}\BigPar{q\Par{T}v} = 0.$\par\quad\Hii
-Thus $sq\in M_T^0$ and $\deg sq\leqslant \dim V$.\par\vspace{5pt}\quad
-{\Large[} {\tgsl\large Uniqnes Part} {\Large]}\par\quad
-Supp $p,q\in M_T^0$ are of the smallest deg. Then $\Par{p-q}\Par{T}=0.$ 又 $\Deg\Par{p-q}=m<${\FontSmall$\min\!\Bra{\deg p_j}{_{j\in\Gamma}}$}.\par\quad
-Hence $p-q=0,$ for if not, $\exists\,!\,c\in\Fbb,c\Par{p-q}\in M_T^0$. Ctradic.\PfEnd
+\Anchor{5BIN4e5.22}\ProblemBX{\NoteForSmall{[4E 5.22]}}{
+	\TextB{Supp $V$ finide, $T\in\Lm{V}.$}
+	\TextB{Prove $\exists\,!$ monic $p\in\PoF{\dim V}$ of smallest deg, suth $p\Par{T}=0.$}
+}Using induc on $\dim V.$ (i) $\dim V=0.$ Let $p=1\Rightarrow p\Par{T}=T=0.$\par\quad
+(ii) Asum for each $U$ of smaller dim,
+{\tgsl $\forall S\in\Lm{U},\exists$ monic $s\in\PoF{\dim U}$, suth $s\Par{S}=0.$}\par\quad\Hii
+Let $u\in V\nonzero.$ Then $\BigPar{Iu,Tu,\dots,T^{\dim V}u}$ liney dep\par\quad\Hii
+$\Rightarrow\exists$ smallest $m\in\Nbp$ suth $c_0Iu+c_1Tu+\dots+c_{m-1}T^{m-1}u+T^mu=0.$ Thus define $q\in\PoF{m}.$\par\quad\Hii
+\NOTICE that $q\Par{T}\Par{T^ku}=0\Rightarrow\Span{Iu,Tu,\dots,T^{m-1}u}\subseteq\nullp q\Par{T}.$\par\quad\Hii
+Hence $\dim\nullp q\Par{T}\geqslant m\Longleftrightarrow\dim\rangep q\Par{T}\leqslant\dim V-m.$\par\quad\Hii
+Becs $\rangep q\Par{T}$ invard $T,$ $S=T\Big|{_{\rangep q\SmallPar{T}}}\in\Lm[\BigPar]{\rangep q\Par{T}}.$ Now by asum,\par\quad\Hii
+$\exists$ monic $s\in\PoF{\dim V-m}$, suth $s\Par{S}=0\Rightarrow\Par{sq}\Par{T}=0.$\quad\Sbra{{\tgsl The remaining part is obvious.}}\Blind{\;\;}\PfEnd
 \SepLine
+
 
 \Anchor{5BI4e25}\Anchor{5BI4e26}\ProblemBnoor{4E 5.31, 4E 25, 26}{
 	\TextB{\large\; min poly of restr optor and min poly of quot optor}
 	\TextB{Supp $V$ is finide, $T\in \Lm{V}$, with $U$ invarsp, and $p$ be min poly.}
-	(a) \TextB{Prove $p$ is a multi of the min of $T\mmid_U$.}
-	(b) \TextB{Prove $p$ is a multi of the min of $T\XSlash U$.}
+	(a) \TextB{Prove $p$ is a multi of the min of $T\mmid_U$. \; {\tgnr\large(b)} of the min of $T\XSlash U$.}
 	(c) \TextB{Prove \Sbra{min poly of $T\mmid_U$}${}\times{}$\Sbra{min poly of $T\XSlash U$} is a poly multi of $p$.}
 	(d) \TextB{Prove the set of eigvals of $T$ is the set of eigvals of $T\mmid_U$ or of $T\XSlash U$.\hfill\FontSmall\tgnr By [8.49], immed.}
 }(a) $p\Par{T}=0\Rightarrow\forall u\in U,p\Par{T}u=0\Rightarrow p\Par{T\mmid_U}=0\Rightarrow$ By [8.46].\parSol{}
@@ -705,7 +692,7 @@ Hence $p-q=0,$ for if not, $\exists\,!\,c\in\Fbb,c\Par{p-q}\in M_T^0$. Ctradic.\
 (c) Supp $r$ is the min of $T\mmid_U.$ Then $\forall u\in U,\;r\Par{T\mmid_U}u=r\Par{T}u=0.$\parSol{\Hc}
 Supp $s$ is the min of $T\XSlash U.$ Then $\forall v\in V,\;s\Par{T\XSlash U}\Par{v+U}=s\Par{T}v+U=0.$\parSol{\Hc}
 Thus $\forall v\in V,\Par{rs}\Par{T}v=r\Par{T}\BigPar{s\Par{T}v}=0\Rightarrow\Par{rs}\Par{T}=0.$\PfEnd
-\SepLine
+\SepLine\pagebreak
 
 \Anchor{5BI4e27}\ProblemBnoor{4E 27}{
 	\TextB{Supp $\Fbb=\Rbb,$ $V$ is finide, and $T\in \Lm{V}$. Prove the min $p$ of $T_{\!\Cbb}$ is the min $q$ of $T$.}
@@ -719,8 +706,8 @@ Thus $\forall v\in V,\Par{rs}\Par{T}v=r\Par{T}\BigPar{s\Par{T}v}=0\Rightarrow\Pa
 (b) $q\Par{T}=0\Rightarrow\forall \varphi\in V\apostrophe,\varphi{q\Par{T}}=q\Par{T\apostrophe}\Par{\varphi}=0.$ Thus $q\Par{T\apostrophe}=0.$\PfEnd
 \SepLine
 
-\ProblemBnoor{4E 5.32}{
-	\TextB{Supp $T\in\Lm{V}$ and $p$ is the min. Prove $T$ is not inje $\Longleftrightarrow$ the const term of $p$ is $0.$}
+\ProblemBnoor{4E 5.32}[\Sbra]{
+	\TextB{Supp $T\in\Lm{V}$ with the min $p.$ Prove $T$ not inje $\Longleftrightarrow$ the const term of $p$ is $0.$}
 }$T$ not inje $\Longleftrightarrow 0$ is eigval of $T$ $\Longleftrightarrow 0$ is zero of $p \Longleftrightarrow 0$ the const term of $p.$\PfEnd\vspace{2pt}\parSol{}
 \Or Supp $p\Par{0}=\Par{z-0}\Par{z-\lambda_1}\cdots\Par{z-\lambda_m}=0\Rightarrow T\Par{T-\lambda_1 I}\cdots\Par{T-\lambda_m I}=0.$\parSol{}
 又 $p$ is the min $\Rightarrow q\Par{T}=\Par{T-\lambda_1}\cdots\Par{T-\lambda_m}\neq 0.$ \,Now $0=p\Par{T}=Tq\Par{T}\Rightarrow T$ not inje.\PfEnd
@@ -753,24 +740,24 @@ By (a), $U=U_0=\Span{v,Tv,\dots,T^{j-1},\dots,T^{m-1},\dots,T^n}$ for all $n\geq
 \SepLine
 
 \Anchor{5BI4e21}\ProblemBnoor{4E 21}{
-	\TextB{Supp $V$ is finide and $T\in\Lm{V}$. Prove the min $p$ has deg at most $1 + \dim \range T$.}
+	\TextB{Supp $V$ finide, $T\in\Lm{V}$. Prove the min $p$ has deg at most $1 + \dim \range T$.}
 	\TextB{\large If $\dim \range T < \dim V - 1$, then this result gives a better upper bound for the deg of min poly.\vspace{-2pt}}
 }\par\quad
 If $T$ inje, then $\range T=V$ and done. Supp non0 $v\in\null T.$ Then $Tv=0.$\par\quad
-$1$ is the smallest positive integer suth $T^1 v\in\Span{v,\dots,T^0 v}.$ Define $q$ by $q\Par{z}=z\Rightarrow q\Par{T}v=0.$\par\quad
-Let $W=\rangep q\Par{T}=\range T.$ $\exists$ monic $s\in\PoFi$ of smallest deg ( $\deg s\leqslant\dim W$ ), $s\Par{T\mmid_W}=0.$\par\quad
-Hence $sq$ is the min poly ( see \NOTEFOR [8.40] ) and $\Deg\Par{sq}=\deg s+\deg q\leqslant\dim\range T+1.$\PfEnd
+$1$ is the smallest positive integer suth $T^1 v\in\Span{v}.$ Define $q\Par{z}=z\Rightarrow q\Par{T}v=0.$\par\quad
+Let $W=\rangep q\Par{T}=\range T.$ $\exists$ monic $s\in\PoF{\dim W}$ of smallest deg, suth $s\Par{T\mmid_W}=0.$\par\quad
+Hence $sq$ is the min poly, and $\Deg\Par{sq}=\deg s+\deg q\leqslant\dim\range T+1.$\PfEnd
 \SepLine
 
 \ProblemN{\Anchor{5BI19}{19}}{
 	\TextA{Supp $V$ is finide, $\dim V>1,T\in\Lm{V}.$ Prove $\Bra{\,p\Par{T}:p\in\PoFi}\neq\Lm{V}.$}
 }If $\forall S\in\Lm{V},\exists\,p\in\PoFi,S=p\Par{T}.$ Then by [5.20], $\forall S_1,S_2\in\Lm{V},S_1S_2=S_2S_1.$\parSol{}
 Note that $\dim\geqslant 2.$ By (3.A.14), $\exists\,S_1,S_2\in\Lm{V},S_1S_2\neq S_2S_1.$ Ctradic.\PfEnd
-\SepLine
+\SepLine\pagebreak
 
-\Anchor{5BI4e19}\ProblemB{
-	\TextB{Supp $V$ is finide and $T\in \Lm{V}$. Let $\mathcal{E} =\Bra{q\Par{T}: q \in \PoFi}$.}
-	\TextB{Prove $\dim \mathcal{E}$ equals the deg of the min poly of $T$.}
+\Anchor{5BI4e19}\ProblemBnoor{4E 19}{
+	\TextA{Supp $V$ is finide and $T\in \Lm{V}$. Let $\mathcal{E} =\Bra{q\Par{T}: q \in \PoFi}$.}
+	\TextA{Prove $\dim \mathcal{E}$ equals the deg of the min poly of $T$.}
 }\par\quad
 Becs the list $\Par{I,T,\dots,T^{\dim V^2}}$ of len $\dim\Lm{V}+1$ is linely dep in $\dim\Lm{V}.$\par\quad
 Supp $m\in\Nbp$ is the smallest suth $T^m=a_0 I+\dots+a_{m-1}T^{m-1}.$\par\quad
@@ -833,40 +820,22 @@ Thus $f$ defined by $f\Par{z}=z^k+\Frac{b_1}{b_0} z^{k-1}+\dots+\Frac{b_{k-1}}{b
 While $\deg f<\deg p.$ Ctradic.\PfEnd
 \SepLine
 
-\BulletPointX\NoteForSmall{[8.49]}\;\;Supp $V$ is a finide complex vecsp, $T\in\Lm{V},$ and $p$ is the min.\TextB{}
-Let $p\Par{z}=\Par{z-\lambda_1}\cdots\Par{z-\lambda_m},$ where $\lambda_1,\dots,\lambda_m$ are all the eigvals of $T$, possibly with repeti.\par
-\AComm {\FontSmall\tgsl A non0 poly has at most as many disti zeros as its deg.}\vspace{-4pt}\parCom
-{\FontSmall\tgsl Thus by the upper bound for the deg of min poly given in {\NOTEFOR} [8.40], and by [8.49],}\vspace{-4pt}\parCom
-{\FontSmall\tgsl we can {\tgsc give an alternative proof of [5.13]}.}\par\Anchor{5BI4e20}\Anchor{5BI4e24}
-\ACoro Supp $\alpha_1,\dots,\alpha_n$ are all the disti eigvals of $T.$\parCor
-\ANote the min of $T$ is a multi of, but not equal to, $\Par{z-\alpha_1}\cdots\Par{z-\alpha_n}.$\parCor
-Let $q\Par{z}=\Par{z-\alpha_1}{^{\dim V-\SmallPar{n-1}}}\cdots\Par{z-\alpha_n}{^{\dim V-\SmallPar{n-1}}}.$ Then $q$ is a multi of the ch.\parCor
-Becs $\dim V>n$ and $n-1\geqslant 0,\,\,\,n\Sbra{\dim V-\Par{n-1}}>\dim V$.\parCor
-Form for ch: $\Par{z-\alpha_1}{^{\gamma_1}}\cdots\Par{z-\alpha_n}{^{\gamma_n}},$ where $\gamma_1+\dots+\gamma_n=\dim V.$\parCor
+\BulletPointX\NoteForSmall{[8.49]}\;\;Supp $\Fbb=\Cbb,$ $V$ is finide, $T\in\Lm{V},$ and $p$ is the min.\TextB{}
+Let $p\Par{z}=\Par{z-\lambda_1}\cdots\Par{z-\lambda_m},$ where $\lambda_1,\dots,\lambda_m$ are all the eigvals of $T$, possibly with repeti.\TextB{}
+\AComm \Sbra[3pt]{{\large\tgsc Another proof of \tgbfx[5.13]}} \;Besc the min poly of $T$ has at most $\dim V$ dist zeros.\PfEnd
+\Anchor{5BI4e20}\Anchor{5BI4e24}\BulletPointX\ACoro Supp $\alpha_1,\dots,\alpha_n$ are all the disti eigvals of $T.$\parCor{\IndentB}
+\ANote the min of $T$ is a multi of, but not equal to, $\Par{z-\alpha_1}\cdots\Par{z-\alpha_n}.$\parCor{\IndentB}
+Let $q\Par{z}=\Par{z-\alpha_1}{^{\dim V-\SmallPar{n-1}}}\cdots\Par{z-\alpha_n}{^{\dim V-\SmallPar{n-1}}}.$ Then $q$ is a multi of the ch.\parCor{\IndentB}
+\!\BigSbra{ Becs $\dim V>n$ and $n-1\geqslant 0,\:\:n\times\Sbra{\dim V-\Par{n-1}}>\dim V$. }\parCor{\IndentB}
+Form for ch: $\Par{z-\alpha_1}{^{\gamma_1}}\cdots\Par{z-\alpha_n}{^{\gamma_n}},$ where $\gamma_1+\dots+\gamma_n=\dim V.$\parCor{\IndentB}
 Form for min: $\Par{z-\alpha_1}{^{\delta_1}}\cdots\Par{z-\alpha_n}{^{\delta_n}},$ where $0\leqslant \delta_1+\dots+\delta_n\leqslant \dim V.$
 \SepLine
 
 \ProblemN{\Anchor{5BI10}{10}}{
-	\TextA{Supp $T\in\Lm{V},\lambda$ is an eigval of $T$ with an eigvec $v.$}
-	\TextA{Prove for any $p\in\PoFi,p\Par{T}v=p\Par{\lambda}v.$}
-}\par\quad
-Supp $p$ is defined by $p\Par{z}=a_0+a_1 z+\dots+a_m z^m$ for all $z\in\Fbb.$ Becs for any $n\in\Nbp,T^n v=\lambda^n v.$\par\quad
-Thus $p\Par{T}v=a_0 v+a_1 Tv+\dots+a_m T^m v=a_0 v+a_1 \lambda v+\dots+a_m \lambda^m v=p\Par{\lambda}v.$\PfEnd
-\AComm For any $p\in\PoFi$ suth $p\Par{z}=\Par{z-\lambda_1}^{\alpha_1}\cdots\Par{z-\lambda_m}^{\alpha_m},$ the result is true as well.\par\quad
-Now we prove that $\Par{T-\lambda_1 I}^{\alpha_1}\cdots\Par{T-\lambda_m I}^{\alpha_m}v=\Par{\lambda-\lambda_1}^{\alpha_1}\cdots\Par{\lambda-\lambda_m}^{\alpha_m}v.$\par\quad
-Define $q_i$ by $q_i\Par{z}=\Par{z-\lambda_i}^{\alpha_i}$ for all $z\in\Fbb.$\par\quad
-Becs $\Par{a+b}^n=a^n+\mathC_n^1 a^{n-1}b+\dots+\mathC_n^k a^{n-k}b^k+\dots+\mathC_n^nb^n.$\par\quad
-Let $a=z,b=\lambda_i,n=\alpha_i,$ so we can write $q_i\Par{z}$ in the form $a_0+a_1 z+\dots+a_m z^m.$\par\quad
-Hence $q_i\Par{T}v=q_i\Par{\lambda}v\Rightarrow\Par{T-\lambda_i I}^{\alpha_i}v=\Par{\lambda-\lambda_i}^{\alpha_i}v.$\par\quad
-Then for each $k\in\Bra{2,\dots,m},\Par{T-\lambda_{k-1}I}^{\alpha_{k-1}}\Par{T-\lambda_k I}^{\alpha_k}v$\par\qquad\qquad\qquad\qquad\qquad\qquad\,
-$=q_{k-1}\Par{T}\Par{q_k\Par{T}v}$\par\qquad\qquad\qquad\qquad\qquad\qquad\,
-$=q_{k-1}\Par{T}\Par{q_k\Par{\lambda}v}$\par\qquad\qquad\qquad\qquad\qquad\qquad\,
-$=q_{k-1}\Par{\lambda}\Par{q_k\Par{\lambda}v}$\par\qquad\qquad\qquad\qquad\qquad\qquad\,
-$=\Par{\lambda-\lambda_{k-1}}^{\alpha_{k-1}}\Par{\lambda-\lambda_k}^{\alpha_k}v.$\par\quad
-So that $\Par{T-\lambda_1 I}^{\alpha_1}\cdots\Par{T-\lambda_m I}^{\alpha_m}v$\par\qquad\quad
-$=q_1\Par{T}\XPar{q_2\Par{T}\XPar{\dots\BigPar{q_m\Par{T}v}\dots}}$\par\qquad\quad
-$=q_1\Par{\lambda}\Par{q_2\Par{\lambda}\Par{\dots\Par{q_m\Par{\lambda}v}\dots}}$\par\qquad\quad
-$=\Par{\lambda-\lambda_1}^{\alpha_1}\cdots\Par{\lambda-\lambda_m}^{\alpha_m}v.$\PfEnd
+	\TextA{Supp $T\in\Lm{V},\lambda$ is eigval of $T$ with $v.$ Prove if $p\in\PoFi,$ then $p\Par{T}v=p\Par{\lambda}v.$}
+}Define $p\Par{z}=a_0+a_1 z+\dots+a_m z^m.$ Becs for each $k\in\Nbp,T^k v=\lambda^k v,$ and $T^0v=v.$\parSol{}
+Now $p\Par{T}v=a_0v+a_1\lambda v+\dots+a_m \lambda^m v=p\Par{\lambda}v.$\PfEnd
+\ACoro $p\Par{T}=c\Par{T-\lambda_1}{^{\alpha_1}}\cdots\Par{T-\lambda_m}{^{\alpha_m}}=c\Par{\lambda-\lambda_1}{^{\alpha_1}}\cdots\Par{\lambda-\lambda_m}{^{\alpha_m}}.$
 \SepLine
 
 \ProblemN{\Anchor{5BI1}{1}}{
