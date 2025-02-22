@@ -273,8 +273,7 @@ Hence $T\Par{a,b}=\BigPar{a\cos\theta-b\sin\theta,\,a\sin\theta+b\cos\theta}.$ N
 		\cos90^\circ & -3\sin90^\circ\\
 		\sin90^\circ & \Blind{-}\cos90^\circ
 	\end{pmatrix}$}. By [5.8](a), we conclude that $T$ has no eigvals.\vspace{4pt}\par\quad
-\Or Supp $\lambda$ is eigval with eigvec $\Par{x,y}.$ Then $\Par{\lambda x,\lambda y}=\Par{-3y,x}\Rightarrow-3y=\lambda^2 y\Rightarrow \lambda^2=-3.$\par\quad
-\Blind{\Or}\Sbra{ Ignoring the possibility of $y=0,$ becs $x=0\Longleftrightarrow y=0.$ }\PfEnd
+\Or Supp $y\neq 0$ with $\Par{\lambda x,\lambda y}=\Par{-3y,x}\Rightarrow-3y=\lambda^2 y\Rightarrow \lambda^2=-3.$ \Sbra{If $y=0,$ then $x=\lambda y=0.$}\PfEnd
 \SepLine
 
 %\ProblemN{\Anchor{5A8}{8}}{
@@ -297,24 +296,28 @@ Hence $T\Par{a,b}=\BigPar{a\cos\theta-b\sin\theta,\,a\sin\theta+b\cos\theta}.$ N
 \ProblemN{\Anchor{5A10}{10}}{
 	\TextA{Define $T\in\Lm{\Fbb^n}$ by $T\Par{x_1,x_2,x_3,\dots,x_n}=\BigPar{x_1,2 x_2,3 x_3,\dots,n x_n}.$}
 	\PrePa\TextA{Find all eigvals and eigvecs;\;\; {\tgnr\large(b)} Find all invarsps of $V$ under $T.$}
-}Let $\Par{e_1,\dots,e_n}$ be the std bss of $\Fbb^n.$\parSol{}
-(a) The eigvals are $\Bra{1,\dots,n}$ of len $\dim\Fbb^n.$ Let each $E_k=\Span{e_k}.$\parSol{\Ha}
-The set of all eigvecs is $\Par{E_1\cup\cdots\cup E_n}\nonzero[\Big].$\parSol{}
-(b) Let each $V_{\!k}=\Span{e_k}\Rightarrow V_{\!k}$ invard $T.$ Then every sum of $V_{\!1},\dots,V_{\!n}$ is invard $T.$\PfEnd
+}Let $\Par{e_1,\dots,e_n}$ be the std bss of $\Fbb^n.$ The eigvals are $\Bra{1,\dots,n}$ of len $\dim\Fbb^n.$\parSol{}
+Let each $E_k=\Span{e_k}.$ The set of all eigvecs is $\Par{E_1\cup\cdots\cup E_n}\nonzero[\Big].$\parSol{}
+By {\TIPSN{3}}, invarsps are precisely  $\Span{e_{k_1},\dots,e_{k_m}}$ for $k_j\in\Bra{1,\dots,n}.$\PfEnd
 \SepLine
 
 \ProblemN{\Anchor{5A18}{18}}{
 	\TextA{Define $T\in\Lm{\Fbb^\infty}$ by $T\Par{z_1,z_2,\cdots}=\BigPar{0, z_1,z_2,\cdots}.$ Show $T$ has no eigvals.}
-}Supp $z_k\neq 0$ and $T\Par{z_1,z_2,\dots}=\Par{\lambda z_1,\lambda z_2,\dots}=\Par{0,z_1,z_2,\dots}.$ Thus $\lambda z_1=0,\,\lambda z_k=z_{k-1}.$\parSol{}
-($-$) $\lambda=0\Rightarrow\lambda z_2=z_1=0=\dots=z_k\Rightarrow\Par{z_1,z_2,\dots}=0.$ Not an eigval.\parSol{}
-($=$) $\lambda\neq 0\Rightarrow\lambda z_1=0\Rightarrow z_1=\dots=z_k=0.$ Not an eigval.\PfEnd
+}Supp $z_k\neq 0$ and $T\Par{z_1,z_2,\cdots}=\Par{\lambda z_1,\lambda z_2,\cdots}=\Par{0,z_1,z_2,\cdots}.$ Thus $\lambda z_1=0,\,\lambda z_k=z_{k-1}.$\parSol{}
+($-$) $\lambda=0\Rightarrow\lambda z_2=z_1=0=\dots=z_k.$ \, ($=$) $\lambda\neq 0\Rightarrow z_1=0\Rightarrow z_2=\dots=z_k=0.$\PfEnd
 \SepLine
 
 \ProblemN{\Anchor{5A19}{19}}{
 	\TextA{Supp $n\in\Nbp$. Define $T\in\Lm{\Fbb^n}$ by $T\Par{x_1,\dots,x_n}=\BigPar{x_1+\dots+x_n,\cdots,x_1+\dots+x_n}.$}
 	\TextA{\FontNorm In other words, the ent of $\Mt{T}$ wrto the std bss are all \,$1$'s.\; \FontLarge Find all eigvals and eigvecs of $T.$\vspace{-2pt}}
 }Supp $x_k\neq 0$ and $T\Par{x_1,\dots,x_n}=\Par{\lambda x_1,\dots,\lambda x_n}=\BigPar{x_1+\dots+x_n,\dots,x_1+\dots+x_n}.$\parSol{}
-Then (I) $\lambda=0\Rightarrow x_1+\dots+x_n=0;$ \;(II) $\lambda\neq 0\Rightarrow x_1=\dots=x_n\Rightarrow\lambda x_k=n x_k.$
+Then (I) $\lambda=0\Rightarrow x_1+\dots+x_n=0.$ \,If $n>1,$ then $\lambda=0$ is eigval; othws not, becs $T=I.$\parSol{}
+\Blind{Then }(II) $\lambda\neq 0\Rightarrow x_1=\dots=x_n\Rightarrow\lambda x_k=n x_k.$ Now $n$ is eigval.\PfEnd\vspace{2pt}\parSol{}
+\Or Becs $\range T=\Bra{\Par{x,\dots,x}\in\Fbb^n}$ of dim $1.$ By Exe (29). Simlr.\PfEnd\parSol{}
+\Or Supp $n>1.$ Becs $\null T=\Bra{\Par{{-x_2-\dots-x_n,x_2,\dots,x_n}}}$ of dim $n-1>0\Rightarrow 0$ is eigval.\parSol{}
+Notice that $n$ is also eigval corres $\Par{x,\dots,x}\neq 0.$ We show $0,n$ are the only eigvals.\parSol{}
+Supp non0 $x\in\Fbb^n$ and $\lambda\in\Fbb$ with $Tx=\lambda x.$ Becs $\range T=\Span[\BigPar]{\Par{1,\dots,1}},\exists\,!\,\alpha\in\range T,$\parSol{}
+$\lambda x=\alpha\Rightarrow$ $x$ corres $\lambda$ and $\alpha$ corres $n$ are liney dep. By the ctrapos of [5.10], $\lambda=n.$\PfEnd
 \SepLine
 
 \ProblemN{\Anchor{5A20}{20}}{
@@ -332,12 +335,13 @@ Asum $\lambda\neq 0.$ Then $\deg\lambda p=\deg p\apostrophe<\deg\lambda p,$ ctra
 Therefore $\deg\lambda p=-\infty=\deg p\apostrophe\Rightarrow p\in\PoR{0}.$\PfEnd
 \SepLine
 
-\ProblemN{\Anchor{5A12}{12}}{
-	\TextA{Define $T\in\Lm[\BigPar]{\PoR{n}}$ by $\Par{Tp}\Par{x} = xp\apostrophe\Par{x}$ for all $x\in\Rbb.$ Find all eigvals and eigvecs.}
-}Supp $p\neq 0$ and $\Par{Tp}\Par{x}=xp\apostrophe\Par{x}=\lambda p\Par{x}.$ Define an iso $S\Par{a_0,a_1,\dots,a_n}=a_0+a_1x+\dots+a_nx^n.$\parSol{}
-Let $p=S\Par{a_0,a_1,\dots,a_n}\Rightarrow xp\apostrophe\Par{x}=S\Par{a_1,2a_2,\dots,na_n}=\Par{\lambda a_0,\lambda a_1,\dots,\lambda a_n}.$\parSol{}
-Now $S^{-1}TS:\Par{x_0,x_1,\dots,x_n}\mapsto\Par{0x_0,1x_1,2x_2,\dots,nx_n}.$ Simlr to Exe (10).\PfEnd
-\SepLine
+%\ProblemN{\Anchor{5A12}{12}}{
+%	\TextA{Define $T\in\Lm[\BigPar]{\PoR{n}}$ by $\Par{Tp}\Par{x} = xp\apostrophe\Par{x}$ for all $x\in\Rbb.$ Find all eigvals and eigvecs.}
+%}Supp $p\neq 0$ and $\Par{Tp}\Par{x}=xp\apostrophe\Par{x}=\lambda p\Par{x}.$ Define an iso $S\Par{a_0,a_1,\dots,a_n}=a_0+a_1x+\dots+a_nx^n.$\parSol{}
+%Let $p=S\Par{a_0,a_1,\dots,a_n}\Rightarrow xp\apostrophe\Par{x}=S\Par{a_1,2a_2,\dots,na_n}=\Par{\lambda a_0,\lambda a_1,\dots,\lambda a_n}.$\parSol{}
+%Now $S^{-1}TS:\Par{x_0,x_1,\dots,x_n}\mapsto\Par{0x_0,1x_1,2x_2,\dots,nx_n}.$ Simlr to Exe (10).\PfEnd
+%\SepLine
+\pagebreak
 
 \ProblemB[]{
 	\TextB{Supp $V$ is finide, $T\in\Lm{V},\lambda\in\Fbb.$}
@@ -739,7 +743,7 @@ Define $q\Par{z}=z\Rightarrow q\Par{T}v=0.$ \Sbra{Simlr to [4E 5.22].} Let $W=\r
 $\exists$ monic $s\in\PoF{\dim W},\,s\Par{T\mmid_W}=0.$ Thus $p=sq$ with $\deg p=\deg s+\deg q\leqslant\dim W+1.$\PfEnd
 \SepLine
 
-\ProblemN{\Anchor{5BI19}{19}}{
+\Anchor{5A4e43}\ProblemN{\Anchor{5BI19}{19}}{
 	\TextA{Supp $V$ is finide, $\dim V>1,T\in\Lm{V}.$ Prove $\Bra{\,p\Par{T}:p\in\PoFi}\neq\Lm{V}.$}
 }If $\forall S\in\Lm{V},\exists\,p\in\PoFi,S=p\Par{T}.$ Then by [5.20], $\forall S_1,S_2\in\Lm{V},S_1S_2=S_2S_1.$\parSol{}
 Note that $\dim V\geqslant 2.$ By (3.A.14), $\exists\,S_1,S_2\in\Lm{V},S_1S_2\neq S_2S_1.$ Ctradic.\PfEnd
@@ -857,8 +861,8 @@ Let $T=\i^{1/2}I\;$ defined by $\i^{1/2}\Par{x,y}=\XPar{\frac{\sqrt{2}}{2}x-\fra
 
 \Anchor{5BI4e3}\ProblemBnoor{4E 3}{
 	\TextB{Find the min poly of $T:\Par{x_1,\dots,x_n}\mapsto\Par{x_1+\dots+x_n,\cdots,x_1+\dots+x_n}.$}
-}If $n=1$ then $T=I\in\Lm{\Fbb}$ with $\Par{z-1}$ as the min. Becs the eigvals of $T$ are $n,0.$\parSol{}
-Each $Te_k=e_1+\dots+e_n;\;T^2 e_k=n \Par{e_1+\dots+e_n}=nTe_k\Rightarrow T^2-nT=T\Par{T-n}=0.$\PfEnd
+}If $n=1$ then $T=I\in\Lm{\Fbb}$ with $\Par{z-1}$ as the min. Supp $n>1.$ Then $T\neq I.$\parSol{}
+Now each $Te_k=e_1+\dots+e_n;\;T^2 e_k=n \Par{e_1+\dots+e_n}=nTe_k\Rightarrow T^2-nT=T\Par{T-n}=0.$\PfEnd
 \SepLine
 
 \Anchor{5BI4e8}\ProblemBnoor{4E 8}{
@@ -895,7 +899,7 @@ Then $Tv=av+bw\not\in\Span{w},$ or $Tw=cv+dw\not\in\Span{w}.$\PfEnd
 }We prove each $S\Par{TS}{^m}=\Par{ST}{^m} S$ by induc.\parSol{}
 (i) $m=0,1.$ $S\Par{TS}{^0}=SI=IS=\Par{ST}{^0}S;\;\,S\Par{TS}{^1}=\Par{ST}{^1}S.$\parSol{\Endi}
 (ii) $m>1.$ $S\Par{TS}{^m}=\Par{ST}{^m} S\Rightarrow S\Par{TS}{^{m+1}}=S\Par{TS}{^m}\Par{TS}=\Par{ST}{^m}\Par{ST}S=\Par{ST}{^{m+1}}S.$\PfEnd\vspace{2pt}
-\AComm $p\Par{TS} = S^{-1} p\Par{ST}S,\;p\Par{ST} = Sp\Par{TS}S^{-1}.$\par\Anchor{5BI5}
+\AComm $p\Par{TS} = S^{-1} p\Par{ST}S,\;p\Par{ST} = Sp\Par{TS}S^{-1}.$\par\Anchor{5BI5}\Anchor{5A4e40}
 \ACoro Becs $S$ is inv, $T\in\Lm{V}$ is arb $\Longleftrightarrow ST=R\in\Lm{V}$ is arb. Hence $p\Par{S^{-1}RS}=S^{-1}p\Par{R}S.$
 \SepLine
 
@@ -1084,8 +1088,8 @@ Now define $q\Par{z}=\Par{z-\lambda_1}\Par{z-\lambda_2}$. By asum, $T\Big|{_{\nu
 \SepLine
 
 \Anchor{5BII20}\Anchor{5BII4e6}\ProblemNor{20}{4E 5.C.6}{
-	\TextA{Supp $\Fbb=\Cbb,$ $V$ is finide, and $k\in\Bra{1,\dots,\dim V}.$}
-	\TextA{Prove $V$ has a $k$\hspace{1pt}-\hspace{1pt}dim subsp invard $T$.}
+	\TextA{Supp $\Fbb=\Cbb,$ $V$ is finide, $T\in\Lm{V},$ and $k\in\Bra{1,\dots,\dim V}.$}
+	\TextA{Prove $V$ has a $k$\hspace{1pt}-\hspace{1pt}dim invarspd $T.$}
 }\par
 \SepLine
 
@@ -1142,64 +1146,67 @@ XXXX
 \SepLine
 
 \ChEnd
-\ChDecl{Ch5E}{5.E* [4E]}{}%\orMode{\hLk{5E1}{1}\;\;\hLk{5E2}{2}\;\;\hLk{5E3}{3}\;\;\hLk{5E4}{4}\;\;\hLk{5E5}{5}\;\;\hLk{5E6}{6}\;\;\hLk{5E7}{7}\;\;\hLk{5E8}{8}\;\;\hLk{5E9}{9}\;\;\hLk{5E10}{10}}{}
-% 0.5h/4h
+\ChDecl{Ch5E}{5.E [4E]}{}%\orMode{\hLk{5E1}{1}\;\;\hLk{5E2}{2}\;\;\hLk{5E3}{3}\;\;\hLk{5E4}{4}\;\;\hLk{5E5}{5}\;\;\hLk{5E6}{6}\;\;\hLk{5E7}{7}\;\;\hLk{5E8}{8}\;\;\hLk{5E9}{9}\;\;\hLk{5E10}{10}}{}
+\vspace{4pt}
 
-\ProblemN{1}{
+\Anchor{5E1}\ProblemN{1}{
 	\TextA{Give commu optors $S,T\in\Fbb^4$ suth $\exists$ invarspd $S$ but not $T$ and $\exists$ invarspd $T$ but not $S$.}
-}
-\par
+}Define $S:\Par{x,y,z,w}\mapsto\Par{y,x,0,0}$ and $T:\Par{x,y,z,w}\mapsto\Par{0,0,w,z}\Rightarrow TS=ST=0.$\parSol{}
+Notice that $S:e_1\mapsto e_2,\;e_3\mapsto 0,$ and $T:e_1\mapsto 0,\;e_3\mapsto e_4.$\parSol{}
+Thus $\Span{e_1}$ invard $T$ but not $S,$ and $\Span{e_3}$ invard $S$ but not $T.$
 \SepLine
 
-\ProblemN{2}{
-	\TextA{Supp $\mathcal{E}$ is a subset of $\Lm{V}$ and every elem of $\mathcal{E}$ is diag.}
-	\TextA{Prove $\exists\,B_V$ suth each elem of $\mathcal{E}$ diag $\Longleftrightarrow$ each pair of elems of $\mathcal{E}$ commu.}
+\Anchor{5E2}\ProblemN{2}{
+	\TextA{Supp $\mathcal{E}\subseteq\Lm{V}$ and every elem of $\mathcal{E}$ diag.}
+	\TextA{Prove $\exists\,B_V$ suth all elem of $\mathcal{E}$ diag $\Longleftrightarrow$ each pair of elems of $\mathcal{E}$ commu.}
 }\par
 \SepLine
 
-\ProblemN{3}{
-	\TextA{Supp $S, T\in\Lm{V}$ are suth $ST = TS$. Supp $p\in\PoFi$.}
-	\PrePa\TextA{Prove $\nullp p\Par{S}$ is invard $T$. \, {\tgnr\large(b)} Prove $\rangep p\Par{S}$ is invard $T$.}
-}\par
+\Anchor{5E3}\ProblemN{3}{
+	\TextA{Supp $S, T\in\Lm{V}$ commu, and $p\in\PoFi$. Prove $\nullp p\Par{S},\rangep p\Par{S}$ invard $T$.}
+}Becs $Tp\Par{S}=p\Par{S}T.$ By (5.A.2,3).\PfEnd
 \SepLine
 
-\ProblemN{4}{
+\Anchor{5E4}\ProblemN{4}{
 	\TextA{Prove or give a countexa\hspace{1pt}$:$ A diag matrix $A$ and up-trig matrix $B$ of the same size commu.}
 }\par
 \SepLine
 
-\ProblemN{5}{
-	\TextA{Prove a pair of optors on a finide vecsp commu $\Longleftrightarrow$ their dual optors commu.}
-}\par
+\Anchor{5E5}\ProblemN{5}{
+	\TextA{Supp $V$ finide. Prove $S,T$ commu $\Longleftrightarrow S\apostrophe,T\apostrophe$ commu.}
+}Supp $ST=TS\Rightarrow T\apostrophe S\apostrophe=\Par{ST}\apostrophe=\Par{TS}\apostrophe=S\apostrophe T\apostrophe.$ Convly, supp $\mathcal{S},\mathcal{T}\in\Lm{V\apostrophe}$ commu.\parSol{}
+By (3.F.16), $\exists\,!\,S,T\in\Lm{V},\mathcal{S}=S\apostrophe,\mathcal{T}=T\apostrophe.$ Then $\Par{TS}\apostrophe=S\apostrophe T\apostrophe=T\apostrophe S\apostrophe=\Par{ST}\apostrophe.$\PfEnd\vspace{2pt}\parSol{}
+\Or Let $A=\Mt{T,B_V},C=\Mt{S,B_V}\Rightarrow A^t=\Mt{T\apostrophe,B_{V\apostrophe}},C^t=\Mt{S\apostrophe,B_{V\apostrophe}}.$\parSol{}
+(a) Given $S,T\in\Lm{V},$ $TS=ST\Longleftrightarrow AC=CA\Longleftrightarrow C^tA^t=A^tC^t\Longleftrightarrow S\apostrophe T\apostrophe=T\apostrophe S\apostrophe.$\parSol{}
+(b) Given $\mathcal{S},\mathcal{T}\in\Lm{V\apostrophe},$ by (3.F.16), $\exists\,!\,S,T\in\Lm{V},\mathcal{S}=S\apostrophe,\mathcal{T}=T\apostrophe.$ By (a).\PfEnd
+%TODO:3.F.16:Construct \Gamma via matrices and bses.
 \SepLine
 
-\ProblemN{6}{
-	\TextA{Supp $V$ is a finide complex vecsp and $S, T\in\Lm{V}$ commu.}
+\Anchor{5E6}\ProblemN{6}{
+	\TextA{Supp $\Fbb=\Cbb,$ $V$ is finide, and $S, T\in\Lm{V}$ commu.}
 	\TextA{Prove $\exists\,\alpha,\lambda\in\Cbb$ suth $\Range\Par{S -\alpha I} + \Range\Par{T -\lambda I}\neq V$.}
 }\par
 \SepLine
 
-\ProblemN{7}{
-	\TextA{Supp $V$ is a complex vecsp, $S\in\Lm{V}$ is diag, and $T$ commu with $S$.}
-	\TextA{Prove $\exists\,B_V$ suth $S$ diag $T$ up-trig.}
+\Anchor{5E7}\ProblemN{7}{
+	\TextA{Supp $\Fbb=\Cbb,$ $S,T\in\Lm{V}$ commu, and $S$ diag. Prove $\exists\,B_V$ suth $S$ diag and $T$ up-trig.}
 }\par
 \SepLine
 
-\ProblemN{8}{
+\Anchor{5E8}\ProblemN{8}{
 	\TextA{Supp $m = 3$ in [5.72] and $D_x , D_y$ are the commu partial diff optors on $\Po_3\Par{\Rbb^2}$ from [5.72].}
 	\TextA{Find a bss of $\Po_3\Par{\Rbb^2}$ suth $D_x$ and $D_y$ each up-trig.}
 }\par
 \SepLine
 
-\ProblemN{9}{
-	\TextA{Supp $V$ is a finide non0 complex vecsp.}
-	\TextA{Supp that $\mathcal{E}\subseteq\Lm{V}$ is suth $S$ and $T$ commu for all $S, T\in\mathcal{E}$.}
+\Anchor{5E9}\ProblemN{9}{
+	\TextA{Supp $\Fbb=\Cbb,$ $V$ finide and non0. Supp $\mathcal{E}\subseteq\Lm{V}$ is suth all $S,T\in\mathcal{E}$ commu.}
 	\PrePa\TextA{Prove $\exists$ eigvec $v\in V$ for every elem of $\mathcal{E}$.}
 	\PrePb\TextA{Prove $\exists$ a bss of $V$ wrto which every elem of $\mathcal{E}$ has up-trig matrix.}
 }\par
 \SepLine
 
-\ProblemN{10}{
+\Anchor{5E10}\ProblemN{10}{
 	\TextA{Give commu optors $S, T$ on a finide real vecsp suth}
 	\TextA{$S + T$ has a eigval that does not equal an eigval of $S$ plus an eigval of $T$}
 	\TextA{and $ST$ has a eigval that does not equal an eigval of $S$ times an eigval of $T$.}
