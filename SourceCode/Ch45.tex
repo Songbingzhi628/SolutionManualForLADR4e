@@ -296,7 +296,7 @@ Hence $T\Par{a,b}=\BigPar{a\cos\theta-b\sin\theta,\,a\sin\theta+b\cos\theta}.$ N
 
 \ProblemN{\Anchor{5A10}{10}}{
 	\TextA{Define $T\in\Lm{\Fbb^n}$ by $T\Par{x_1,x_2,x_3,\dots,x_n}=\BigPar{x_1,2 x_2,3 x_3,\dots,n x_n}.$}
-	(a) \TextA{Find all eigvals and eigvecs;\;\; {\tgnr\large(b)} Find all invarsps of $V$ under $T.$}
+	\PrePa\TextA{Find all eigvals and eigvecs;\;\; {\tgnr\large(b)} Find all invarsps of $V$ under $T.$}
 }Let $\Par{e_1,\dots,e_n}$ be the std bss of $\Fbb^n.$\parSol{}
 (a) The eigvals are $\Bra{1,\dots,n}$ of len $\dim\Fbb^n.$ Let each $E_k=\Span{e_k}.$\parSol{\Ha}
 The set of all eigvecs is $\Par{E_1\cup\cdots\cup E_n}\nonzero[\Big].$\parSol{}
@@ -350,17 +350,17 @@ Now $S^{-1}TS:\Par{x_0,x_1,\dots,x_n}\mapsto\Par{0x_0,1x_1,2x_2,\dots,nx_n}.$ Si
 \Anchor{5A4e11}\ProblemBnoor{4E 11}{
 	\TextB{Prove $\exists\,\delta > 0$ suth $\Par{T-\alpha I}$ is inv for all $\alpha\in\Fbb$ suth $0 < \aMid{\alpha-\lambda} < \delta$.}
 }If $T$ has no eigvals, then $\Par{T-\alpha I}$ is inje for all $\alpha\in\Fbb,$ done.\parSol{}
-Supp $\lambda_1,\dots,\lambda_m$ are all the disti eigvals of $T.$\parSol{}
+Supp $\lambda_1,\dots,\lambda_m$ are all the disti eigvals of $T$ unequal to $\lambda.$\parSol{}
 Let $\delta>0$ be suth, for each eigval $\lambda_k,$ $\lambda_k\not\in\Par{\lambda-\delta,\lambda}\cup \Par{\lambda,\lambda+\delta}.$\parSol{}
-So that for all $\alpha\in\Fbb$ suth $0<\aMid{\alpha-\lambda}<\delta,\Par{T-\alpha I}$ is not inje.\PfEnd\vspace{4pt}\parSol{}
+So that for all $\alpha\in\Fbb$ suth $0<\aMid{\alpha-\lambda}<\delta,\Par{T-\alpha I}$ is inv.\PfEnd\vspace{4pt}\parSol{}
 \Or Let $\delta=\min\!\Bra{\aMid{\lambda-\lambda_k}:k\in\envFontSmall\Bra{1,\dots,m}\envFontDefault,\lambda_k\neq\lambda}.$\parSol{}
 Then $\delta>0$ and each $\lambda_k\neq\alpha$ \Sbra{ $\Longleftrightarrow\Par{T-\alpha I}$ is inv } for all $\alpha\in\Fbb$ suth $0<\aMid{\alpha-\lambda}<\delta.$\PfEnd
 \SepLine
 
 \ProblemN{\Anchor{5A15}{15}}{
 	\TextA{Supp $T\in\Lm{V}$. Supp $S\in\Lm{V}$ is inv.}
-	(a) \TextA{Prove $T$ and $S^{-1}TS$ have the same eigvals.}
-	(b) \TextA{Describe the relationship between the eigvecs of $T$ and the eigvecs of $S^{-1}TS.$}
+	\PrePa\TextA{Prove $T$ and $S^{-1}TS$ have the same eigvals.}
+	\PrePb\TextA{Describe the relationship between the eigvecs of $T$ and the eigvecs of $S^{-1}TS.$}
 }(a) $\lambda$ is an eigval of $T$ with an eigvec $v\Rightarrow S^{-1}TS\Par{\uline{S^{-1}v}}=S^{-1}Tv=S^{-1}\Par{\lambda v}=\uline{\lambda S^{-1}v}.$\parSol{\Ha}
 $\lambda$ is an eigval of $S^{-1}TS$ with an eigvec $v\Rightarrow S\Par{S^{-1}TS}v=T\uline{Sv}=\uline{\lambda Sv}.$\vspace{2pt}\parSol{\Ha}
 \Or Note that $S\Par{S^{-1}TS}S^{-1}=T.$ Every eigval of $S^{-1}TS$ is an eigval of $S\Par{S^{-1}TS}S^{-1}=T.$\vspace{2pt}\parSol{\Ha}
@@ -421,8 +421,8 @@ Now $T_{\!\Cbb}\Par{\overline{v+\i u}}=Tv-\i Tu=\Par{av-bu}-\i\Par{au+bv}=\Par{a
 
 \ProblemN{\Anchor{5A21}{21}}{
 	\TextA{Supp $T\in\Lm{V}$ is inv.\;\FontNorm Then $0$ is not eigval of $T$ or $T^{-1}.$}
-	(a) \TextA{Supp $\lambda\in\Fbb$ with $\lambda\neq 0$. Prove $\lambda$ is eigval of $T$ $\Longleftrightarrow\lambda^{-1}$ is eigval of $T^{-1}$.}
-	(b) \TextA{Prove $T,T^{-1}$ have the same eigvecs.}
+	\PrePa\TextA{Supp $\lambda\in\Fbb$ with $\lambda\neq 0$. Prove $\lambda$ is eigval of $T$ $\Longleftrightarrow\lambda^{-1}$ is eigval of $T^{-1}$.}
+	\PrePb\TextA{Prove $T,T^{-1}$ have the same eigvecs.}
 }$Tv=\lambda v\Longleftrightarrow v=\lambda T^{-1}v\Longleftrightarrow \lambda^{-1}v=T^{-1}v.$ Where $v\neq 0.$\PfEnd
 \SepLine
 
@@ -520,7 +520,7 @@ Thus $D^2\BigPar{\!\cos{\lambda_k x}}=-\lambda_k^2\cos{\lambda_k x}.$ Now $-\lam
 
 \ProblemN{\Anchor{5A24}{24}}{
 	\TextA{Supp $A\in\Fbb^{n,n}.$ Define $T\in\Lm{\Fbb^{n,1}}$ by $Tx = Ax$. Prove $1$ is eigval of $T$ if\hspace{2pt}$:$}
-	(a) \TextA{the sum of the ent in each row of $A$ equals $1$. \, {\tgnr\large(b)} each col of $A.$}
+	\PrePa\TextA{the sum of the ent in each row of $A$ equals $1$. \, {\tgnr\large(b)} each col of $A.$}
 }Supp $x\neq0$ and $Ax={\BigPar{A_{j,1}x_1+\dots+A_{j,n}x_n}{_{j=1}^n}}=\lambda\Par{x_j}{_{j=1}^n}=\lambda x.$\par\quad
 (a) Supp $A_{R,1}+\dots+A_{R,n}=1.$ Let $x_1=\dots=x_n.$ Immed.\vspace{2pt}\par\quad
 (b) Supp $A_{1,C}+\dots+A_{n,C}=1.$ Then $\BigSbra{\sum_{R=1}^n A_{R,\cdot}}x=\sum_{k=1}^n\BigPar{{A_{1,k}+\dots+A_{n,k}}}x_k.$\par\quad\Hb
@@ -539,7 +539,7 @@ Becs by (a), $1$ is eigval of $S=\Phi^{-1}T\apostrophe\Phi.$ So of $T\apostrophe
 
 \Anchor{5A'2}\ProblemB{
 	\TextB{Supp $A\in\Fbb^{n,n}.$ Define $T\in\Lm{\Fbb^{1,n}}$ by $Tx = xA.$ Prove $1$ is eigval of $T$ if\hspace{2pt}$:$}
-	(a) \TextB{the sum of the ent in each col of $A$ equals $1$. \, {\tgnr\large(b)} each row of $A.$}
+	\PrePa\TextB{the sum of the ent in each col of $A$ equals $1$. \, {\tgnr\large(b)} each row of $A.$}
 }Supp $x\neq 0$ and $xA=\BigPar{x_1A_{1,k}+\dots+x_nA_{n,k}}{_{k=1}^n}=\lambda\Par{x_k}{_{k=1}^n}=\lambda x.$\par\quad
 (a) Supp $A_{1,C}+\dots+A_{n,C}=1.$ Let $x_1=\dots=x_n.$ Immed.\vspace{2pt}\par\quad
 (b) Supp $A_{R,1}+\dots+A_{R,n}=1.$ Then $\sum_{C=1}^nxA_{\cdot,C}=\sum_{j=1}^n\BigPar{A_{j,1}+\dots+A_{j,n}}x_j.$\vspace{0pt}\par\quad\Hb
@@ -683,9 +683,9 @@ $T$ surj $\Rightarrow\forall u\in V,\exists\,v_1,\dots,v_m\in V,\,T\Par{v_1}=T^2
 \Anchor{5BI4e25}\Anchor{5BI4e26}\ProblemBnoor{4E 5.31, 4E 25, 26}{
 	\TextB{\large\; min poly of restr optor and min poly of quot optor}
 	\TextB{Supp $V$ is finide, $T\in \Lm{V}$, with $U$ invarsp, and $p$ be min poly.}
-	(a) \TextB{Prove $p$ is a multi of the min of $T\mmid_U$. \; {\tgnr\large(b)} of the min of $T\XSlash U$.}
-	(c) \TextB{Prove \Sbra{min poly of $T\mmid_U$}${}\times{}$\Sbra{min poly of $T\XSlash U$} is a poly multi of $p$.}
-	(d) \TextB{Prove the set of eigvals of $T$ is the set of eigvals of $T\mmid_U$ or of $T\XSlash U$.\hfill\FontSmall\tgnr By [8.49], immed.}
+	\PrePa\TextB{Prove $p$ is a multi of the min of $T\mmid_U$. \; {\tgnr\large(b)} of the min of $T\XSlash U$.}
+	\PrePc\TextB{Prove \Sbra{min poly of $T\mmid_U$}${}\times{}$\Sbra{min poly of $T\XSlash U$} is a poly multi of $p$.}
+	\PrePd\TextB{Prove the set of eigvals of $T$ is the set of eigvals of $T\mmid_U$ or of $T\XSlash U$.\hfill\FontSmall\tgnr By [8.49], immed.}
 }(a) $p\Par{T}=0\Rightarrow\forall u\in U,p\Par{T}u=0\Rightarrow p\Par{T\mmid_U}=0\Rightarrow$ By [8.46].\parSol{}
 (b) $p\Par{T}=0\Rightarrow\forall v\in V,p\Par{T}v=0\Rightarrow p\Par{T\XSlash U}\Par{v+U}=p\Par{T}v+U=0.$\vspace{2pt}\parSol{}
 (c) Supp $r$ is the min of $T\mmid_U.$ Then $\forall u\in U,\;r\Par{T\mmid_U}u=r\Par{T}u=0.$\parSol{\Hc}
@@ -823,7 +823,7 @@ Then $\Range\Par{I\mp T}\subseteq\Null\Par{I\pm T}\Rightarrow V=\Null\Par{I-T}+\
 又 $-1$ is not eigval of $T\Longleftrightarrow\Par{I+T}$ inje $\Longleftrightarrow\Null\Par{I+T}=\zeroSubs\supseteq\Range\Par{I-T}.$\PfEnd
 \SepLine
 
-\Anchor{5A4e32}\ProblemBnoor{4E 5.A.32}{
+\Anchor{5A4e32}\ProblemB{
 	\TextB{Supp $T\in\Lm{V}$ has no eigvals and $T^4 = I$. Prove $T^2=-I$.}
 }Becs $T^4-I=\Par{T^2-I}\Par{T^2+I}=0$ not inje, so is $\Par{T^2-I}$ or $\Par{T^2+I}.$\parSol{}
 又 $T$ has no eigvals $\Rightarrow\Par{T-I},\Par{I+T}$ inje, so is $\Par{T^2-I}.$\parSol{}
@@ -833,7 +833,7 @@ Then $\Range\Par{I\mp T^2}\subseteq\Null\Par{I\pm T^2}\Rightarrow V=\Null\Par{I-
 又 $T$ has no eigvals $\Longleftrightarrow \Par{I-T^2}$ inje $\Longleftrightarrow\Null\Par{I-T^2}=\zeroSubs\supseteq\Range\Par{I+T^2}.$\PfEnd
 \SepLine
 
-\Anchor{5BI8}\Anchor{5A4e31}\ProblemNor{8}{4E 5.A.31}{
+\Anchor{5BI8}\Anchor{5A4e31}\ProblemN{8}{
 	\TextA{Give an exa of $T\in\Lm{\Rbb^2}$ suth $T^4=-I$.}
 }\par\quad
 Define $\i\in\Lm{\Rbb^2}$ by $\i\Par{x,y}=\Par{-y,x}.$ \;Simlr to $\i\in\Lm{\Cbb}$ defined by $\i\Par{x+\i y}=-y+\i x.$\vspace{2pt}\par\quad
@@ -862,78 +862,46 @@ Each $Te_k=e_1+\dots+e_n;\;T^2 e_k=n \Par{e_1+\dots+e_n}=nTe_k\Rightarrow T^2-nT
 \SepLine
 
 \Anchor{5BI4e8}\ProblemBnoor{4E 8}{
-	\TextB{Find the min poly of $T\in\Lm{\Rbb^2},$ the countclockws rotat optor by $\theta\in\Rbb^+$.}
-}\par\quad
-If $\theta=\pi+2k\pi,$ then $T\Par{w,z}=\Par{-w,-z},T^2=I$ and the min poly is $z+1.$\par\quad
-If $\theta=2k\pi,$ then $T=I$ and the min poly is $z-1.$\par\quad
-Othws $\Par{v,Tv}$ is liney indep. Then $\Span{v,Tv}=\Rbb^2.$ Note that $\nexists\,b\in\Fbb,T-bI=0.$\par\quad
-\par\vspace{-16pt}\quad
-Thus supp the min $p\Par{z}=z^2+bz+c.$\par\vspace{20pt}\quad
-Becs\vspace{-35pt}\par\quad
-\hspace{50pt}\includegraphics[width=4.4cm,height=3.2cm,scale=0.22]{diagram5BI-1.png}\par\vspace{-70pt}\quad
-\hspace{180pt}{$\MathLeftMid{l}{Tv=\Frac{\left|\overset{\rightarrow}{v}\right|}{2L}\Par{T^2 v+v}\Rightarrow T=\Frac{\left|\overset{\rightarrow}{v}\right|}{2L}\Par{T^2+I}\\\vspace{8pt} L=\left|\overset{\rightarrow}{v}\right|\cos\theta\Rightarrow\Frac{\left|\overset{\rightarrow}{v}\right|}{2L}=\Frac{1}{2\cos\theta}}$}\par\quad
-Hence $p\Par{T}=T^2-2\cos\theta\, T+I=0$ and $z^2-2\cos\theta\;z+1$ is the min poly of $T.$\PfEnd\vspace{6pt}\quad
-\Or Let $\Par{e_1,e_2}$ be the std bss of $\Rbb^2.$ We use the pattern shown in [8.44].\par\quad
-Becs $Te_1=\cos\theta\;e_1+\sin\theta\;e_2,\;T^2e_1=\cos2\theta\;e_1+\sin2\theta\;e_2.$\par\vspace{2pt}\quad
-Thus \;$ce_1+bTe_1=-T^2 e_1\Longleftrightarrow{}${\small$\begin{pmatrix}
-	1 & \cos\theta\\
-	0 & \sin\theta
-\end{pmatrix}\begin{pmatrix}
-	c \\ b
-\end{pmatrix}$}${}={}${\small$\begin{pmatrix}
--\cos2\theta\\
--\sin2\theta
-\end{pmatrix}$}. Now $\det=\sin\theta\neq 0,c=1,b=2\cos\theta.$\PfEnd\vspace{12pt}\quad
+	\TextB{Find the min $p$ of $T\in\Lm{\Rbb^2},$ the countclockws rotat optor by $\theta\in\Rbb^+$.}
+}If $\theta=2k\pi,$ then $p\Par{z}=z-1.$ If $\theta=\pi+2k\pi,$ then $p\Par{z}=z+1.$\vspace{-20pt}\parSol{}
+\hfill\includegraphics[width=4.4cm,height=3.2cm,scale=0.22]{diagram5BI-1.png}\Blind{\quad}\vspace{-76pt}\parSol{}
+Othws, let $\Span{v,Tv}=\Rbb^2.$ Let $L=x^2+y^2,$ where $v=\Par{x,y}.$\parSol{}
+Supp $p\Par{z}=z^2+bz+c.$ Let $P=L\cos\theta\Rightarrow L\big/2P=1\big/\Par{2\cos\theta}.$\parSol{}
+Then $Tv=\BigPar{L\big/2P}\Par{T^2 v+v}\Rightarrow T=\BigPar{L\big/2P}\Par{T^2+I}.$\parSol{}
+Hence $p\Par{T}=T^2-2\cos\theta\, T+I=0.$\PfEnd\vspace{4pt}\parSol{}
+\Or Let $\Par{e_1,e_2}$ be the std bss of $\Rbb^2.$ Becs $Te_1=\cos\theta\;e_1+\sin\theta\;e_2,\;T^2e_1=\cos2\theta\;e_1+\sin2\theta\;e_2.$\vspace{0pt}\parSol{}
+$ce_1+bTe_1=-T^2 e_1\Longleftrightarrow{}${\small$\begin{pmatrix}1 & \cos\theta\\0 & \sin\theta\end{pmatrix}\begin{pmatrix}c \\ b\end{pmatrix}$}${}={}${\small$\begin{pmatrix}-\cos2\theta\\-\sin2\theta\end{pmatrix}$}. Now $\det=\sin\theta\neq 0,c=1,b=2\cos\theta.$\PfEnd\vspace{10pt}\parSol{}
 \Or $\Mt[\BigPar]{T,\Par{e_1,e_2}}={}${\small$\begin{pmatrix}\Blind{-}\cos\theta & \sin\theta\\-\sin\theta & \cos\theta
-\end{pmatrix}$}. By (4E 11), the min poly is $\Par{z\pm 1}$ or $\Par{z^2-2\cos\theta\,z+1}.$\PfEnd
+\end{pmatrix}$}. By (4E 11), $\Par{z\pm 1}$ or $\Par{z^2-2\cos\theta\,z+1}$ is the min.\PfEnd
 \SepLine
 
 \Anchor{5BI4e11}\ProblemBnoor{4E 11}{
-	\TextB{Supp $V$ is 2\hspace{1pt}-\hspace{1pt}dim, $T\in\Lm{V}$, and $\Mt{T,B_V}={}${\large$\begin{pmatrix} a & c\\ b & d\end{pmatrix}.$}\vspace{-8pt}}
-	(a) \TextB{Show $T^2 - \Par{a + d}T + \Par{ad - bc}I = 0.$}
-	(b) \TextB{Show the min poly of $T$ equals}
-	\TextB{\FontNorm\centerline{$\MathLeftBrace{l}{z-a\qquad\qquad\qquad\qquad\qquad$ if $b=c=0$ and $a=d$,$\\ z^2-\Par{a+d}z+\Par{ad-bc}\quad$ \,\,othws.$}$}}
-}\par\quad
-(a) Supp the bss is $\Par{v,w}$. Becs $\MathLeftBrace{l}{Tv=av+bw\Rightarrow\Par{T-aI}v=bw,$ then apply $\Par{T-dI}$ to both sides. $\\ Tw=cv+dw\Rightarrow \Par{T-dI}w=cv,$ then apply $\Par{T-aI}$ to both sides. $}$\par\vspace{6pt}\quad\Ha
-Hence $\Par{T-aI}\Par{T-dI}=bc I\Rightarrow T^2 - \Par{a + d}T + \Par{ad - bc}I = 0.$\par\quad
-(b) If $b=c=0$ and $a=d.$ Then $\Mt{T}=${\small$\begin{pmatrix}a & 0\\ 0 & a\end{pmatrix}$}$=a\Mt{I}$. Thus $T=aI.$ Hence the min poly is $z-a.$\par\quad\Hb
-Othws, by (a), $z^2-\Par{a+d}z+\Par{ad-bc}$ is a poly multi of the min poly.\par\quad\Hb
-Now we prove that $T\not\in\Span{I},$ so that then the min poly of $T$ has exactly deg $2.$\par\quad\Hb
-( At least one of the asum of (I),(II) below is true. )\par\quad\Hb
-(I) Supp $a=d,$ then $Tv=av+bw\not\in\Span{v},Tw=cv+aw\not\in\Span{w}.$\par\qquad
-(II) Supp at most one of $b,c$ is not $0.$ If $b=0,$ then $Tw\not\in\Span{w};$ If $c=0,$ then $Tv\not\in\Span{v}.$\PfEnd
+	\TextA{Supp $V$ is 2\hspace{1pt}-\hspace{1pt}dim, $T\in\Lm{V}$ with the min $p$, and $\Mt[\BigPar]{T,\Par{v,w}}={}${\large$\begin{pmatrix} a &\hspace{-4pt} c\\[-4pt] b &\hspace{-4pt} d\end{pmatrix}.$}\vspace{-8pt}}
+	\PrePa\TextA{Show $q\Par{z}=z^2-\Par{a+d}z+\Par{ad-bc}$ is a multi of $p.$}
+	\PrePb\TextA{Show if $b=c=0$ and $a=d,$ then $p\Par{z}=z-a;$\;othws $p=q.$}
+}(a) $Tv=av+bw\Rightarrow\Par{T-aI}v=bw\Rightarrow\Par{T-dI}\Par{T-aI}v=bTw-bdw=bcv.$\parSol{\Ha}
+$Tw=cv+dw\Rightarrow \Par{T-dI}w=cv\Rightarrow\Par{T-aI}\Par{T-dI}w=cTv-acv=bcw.$\vspace{4pt}\parSol{}
+(b) If $b=c=0$ and $a=d.$ Then $\Mt{T}=a\Mt{I}\Rightarrow T=aI.$\parSol{\Hb}
+Othws, we show $T\not\in\Span{I},$ so that $\deg p=2=\deg q.$\parSol{\Hb}
+Let (1) $a=d,$ (2) $b=0,$ (3) $c=0.$ Then (1), (2) and (3) cannot be all true.\parSol{\Hb}
+(I) Asum (1) is true, with (2) or (3) not true.\parSol{\Hb\HI}
+Then $Tv=av+bw\not\in\Span{v},$ or $Tw=cv+aw\not\in\Span{w}.$\parSol{\Hb}
+(II) Asum (2) or (3) are true, with (1) not true.\parSol{\Hb\HII}
+Then $Tv=av+bw\not\in\Span{w},$ or $Tw=cv+dw\not\in\Span{w}.$\PfEnd
 \SepLine
 
 \ProblemB{
 	\TextB{Supp $S,T\in\Lm{V},S$ is inv, and $p\in\PoFi$. Prove $Sp\Par{TS}=p\Par{ST}S.$}
-}\par\quad
-We prove $S\Par{TS}{^m}=\Par{ST}{^m} S$ for each $m\in\Nbb\,$ by induc.\par\quad
-(i) If $m=0,1.$ Then $S\Par{TS}{^0}=I=\Par{ST}{^0}S;\;S\Par{TS}{^1}=\Par{ST}S.$\par\quad\Endi
-(ii) If $m>1.$ Asum $S\Par{TS}{^m}=\Par{ST}{^m} S.$\par\quad\Hii
-Then $S\Par{TS}{^{m+1}}=S\Par{TS}{^m}\Par{TS}=\Par{ST}{^m} STS=\Par{ST}{^{m+1}}S.$\par\quad
-Hence $\forall p\in\PoFi,Sp\Par{TS}=\sum_{k=1}^ma_kS\Par{TS}{^k}=\sum_{k=1}^ma_kp\Par{ST}{^k}S=\Sbra{\sum_{k=1}^ma_k\Par{TS}{^k}}S.$\PfEnd\vspace{2pt}
+}We prove each $S\Par{TS}{^m}=\Par{ST}{^m} S$ by induc.\parSol{}
+(i) $m=0,1.$ $S\Par{TS}{^0}=SI=IS=\Par{ST}{^0}S;\;\,S\Par{TS}{^1}=\Par{ST}{^1}S.$\parSol{\Endi}
+(ii) $m>1.$ $S\Par{TS}{^m}=\Par{ST}{^m} S\Rightarrow S\Par{TS}{^{m+1}}=S\Par{TS}{^m}\Par{TS}=\Par{ST}{^m}\Par{ST}S=\Par{ST}{^{m+1}}S.$\PfEnd\vspace{2pt}
 \AComm $p\Par{TS} = S^{-1} p\Par{ST}S,\;p\Par{ST} = Sp\Par{TS}S^{-1}.$\par\Anchor{5BI5}
-\ACoro \ProblemN[]{5}{
-	Becs $S$ is inv, $T\in\Lm{V}$ is arb $\Longleftrightarrow R=ST$ is arb.\TextA{}
-	{\IndentCorollary} Hence $\forall R\in\Lm{V},$ inv $S\in\Lm{V},p\Par{S^{-1}RS}=S^{-1}p\Par{R}S.$\TextA{\vspace{-4pt}}
-}\SepLine
+\ACoro Becs $S$ is inv, $T\in\Lm{V}$ is arb $\Longleftrightarrow ST=R\in\Lm{V}$ is arb. Hence $p\Par{S^{-1}RS}=S^{-1}p\Par{R}S.$
+\SepLine
 
-\Anchor{5BI4e7}\ProblemBnoor{4E 5.B.7}{
-	\TextB{Supp $S, T\in\Lm{V}.$ Let $p,q$ be the min polys of $ST,TS$ respectly.}
-	(a) \TextB{If $V=\Fbb^2.$ Give an exa suth $p\neq q;$ \;{\large\tgnr(b)} If $S$ or $T$ is inv. Prove $p=q.$}
-}\par\quad
-(a) %Let $V=\Fbb^{\infty},$ $S\in\Lm{\Fbb^\infty}$ is the forwd shift optor, $T\in\Lm{\Fbb^\infty}$ is the backwd shift optor.\par\quad\Ha
-%Then $ST(x_1,x_2,x_3,\dots)=(0,x_2,x_3,\dots)\Rightarrow 0,1$ are all the eigvals of $ST,$ $(ST)^2-(ST)=0.$\par\quad\Ha
-%$TS(x_1,x_2,\dots)=(x_1,x_2,\dots)\Rightarrow 1$ is the only eigval of $TS,$ $TS=I.$\par\quad\Ha
-Define $S$ by $S\Par{x,y}=\Par{x,x}.$ Define $T$ by $T\Par{x,y}=\Par{0,y}.$\par\quad\Ha
-Then $ST\Par{x,y}=0,\,\,TS\Par{x,y}=\Par{0,x}$ for all $\Par{x,y}\in\Fbb^2.$ Thus $ST=0\neq TS$ and $\Par{TS}^2=0.$\par\quad\Ha
-Hence the min poly of $ST$ does not equal to the min poly of $TS.$\par\quad
-(b) Supp $S$ is inv. Becs $p,q$ are monic.\par\quad\Hb
-$\MathRightBrace{l}{$
-$p\Par{ST}=0=S p\Par{TS}S^{-1}\Rightarrow p\Par{TS}=0,p$ is a poly multi of $q\\ $
-$q\Par{TS}=0=S^{-1} q\Par{ST}S\Rightarrow q\Par{ST}=0,q$ is a poly multi of $p$
-$}\Rightarrow p=q.$\par\vspace{6pt}\quad\Hb
-Reversing the roles of $S$ and $T$, we conclude that if $T$ is inv, then $p=q$ as well.\PfEnd
+\Anchor{5BI4e7}\ProblemBnoor{4E 7}{
+	\TextB{Supp $S, T\in\Lm{V}$ with the mins $p,q$ respectly. Supp $S$ or $T$ is inv. Prove $p=q.$}
+}$S$ inv $\Rightarrow p\Par{TS}=S^{-1}p\Par{ST}S=0$ and $q\Par{ST}=Sq\Par{TS}S^{-1}=0\Rightarrow p=q.$ Rev the roles.\PfEnd
 \SepLine
 
 \ProblemN{\Anchor{5BI11}{11}}{
@@ -948,50 +916,43 @@ Becs $q\Par{T}v=\BigPar{p\Par{T}-\alpha I}v=q\Par{\lambda}v=\BigPar{p\Par{\lambd
 Hence $q\Par{T}$ is not inje $\Rightarrow \BigPar{p\Par{T}-\alpha I}$ is not inje.\PfEnd
 \SepLine
 
-\Anchor{5BI12}\ProblemNnoor{12}{4E 6}{
+\Anchor{5BI12}\ProblemN{12}{
 	\TextA{Give a $T\in\Lm{\Rbb^2}$ that shows the result above does not hold if $\Cbb$ is replaced with $\Rbb$.}
-}\par\quad
-Define $T\in\Lm{\Rbb^2}$ by $T\Par{w,z}=\Par{-z,w}.$\par\quad
-By Exe (4E 5.B.11), $\Mt[\BigPar]{T,\Par{\Par{1,0},\Par{0,1}}}=\,${\small$\begin{pmatrix}0 & -1\\ 1 & 0\end{pmatrix}$}$\Rightarrow$ the min poly of $T$ is $z^2+1.$\par\quad
-Define $p$ by $p\Par{z}=z^2.$ Then $p\Par{T}=T^2=-I.$ Thus $p\Par{T}$ has eigval $-1.$\par\quad
-While $\nexists\,\lambda\in\Rbb$ suth $-1=p\Par{\lambda}=\lambda^2.$\PfEnd
+}Define $T\Par{w,z}=\Par{-z,w}\Rightarrow$ the min of $T$ is $z^2+1.$ \,Define $p\Par{z}=z^2.$\parSol{}
+Then $p\Par{T}=T^2=-I\Rightarrow p\Par{T}$ has eigval $-1,$ while $\nexists\,\lambda\in\Rbb,\,-1=p\Par{\lambda}=\lambda^2.$\PfEnd
 \SepLine
 
 \Anchor{5BI4e17}\ProblemBnoor{{4E 17}}{
 	\TextA{Supp $V$ finide, $T\in \Lm{V}$ with the min $p,$ and $\lambda\in\Fbb.$}
-	\TextA{Show $q\Par{z}=p\Par{z+\lambda}$ is min of $\Par{T-\lambda I}.$}
-}Let $s$ be min of $\Par{T-\lambda I}.$ Becs $q\Par{T-\lambda I}=p\Par{T}=0\Rightarrow q$ is multi of $s\Rightarrow\deg q=\deg p\geqslant\deg s.$\parSol{}
-Becs $\deg s=n$ is the smallest suth $\Par{T-\lambda I}{^n}\in\Span{I,\Par{T-\lambda I},\dots,\Par{T-\lambda I}{^{n-1}}};$\parSol{}
+	\TextA{Show the min $s$ of $\Par{T-\lambda I}$ is $q\Par{z}=p\Par{z+\lambda}.$}
+}Becs $q\Par{T-\lambda I}=p\Par{T}=0\Rightarrow q$ is multi of $s\Rightarrow\deg q=\deg p\geqslant\deg s.$\parSol{}
+Becs $\deg s=n$ is the smallest suth $\Par{T-\lambda I}{^n}\in\Span[\BigPar]{I,\Par{T-\lambda I},\dots,\Par{T-\lambda I}{^{n-1}}};$\parSol{}
 And $\deg p=m$ is the smallest suth $T^m\in\Span{I,T,\dots,T^{m-1}}.$\parSol{}
 又 $T^k\in\Span{I,T,\dots,T^{k-1}}\Longleftrightarrow\Par{T-\lambda}{^k}\in\Span[\BigPar]{I,\Par{T-\lambda I},\dots,\Par{T-\lambda I}{^{k-1}}}.$\parSol{}
 Thus $\deg s=\deg p.$ By the uniqnes.\PfEnd
 \SepLine
 
 \Anchor{5BI4e18}\ProblemBnoor{{4E 18}}{
-	\TextB{Supp $V$ is finide, $p$ is min of $T\in \Lm{V},\lambda\neq 0.$ Show $q\Par{z} = \lambda^{\deg p} p\BigPar{{z}\big/{\lambda}}$ is min of $\lambda T.$}
-}\par\quad
-$q\Par{\lambda T}=\lambda^{\deg p}p\Par{T}=0\Rightarrow q$ is a poly multi of the min poly of $\lambda T.$\par\quad
-Supp the deg of the min poly of $\lambda T$ is $n,$ and the deg of the min poly of $T$ is $m.$\par\quad
-By definition of min poly,\par\quad
-$n$ is the smallest suth $\Par{\lambda T}^n\in\Span{\lambda I,\lambda T,\dots,\Par{\lambda T}^{n-1}};$\par\quad
-$m$ is the smallest suth $T^m\in\Span{I,T,\dots,T^{m-1}}.$\par\quad
-又 $\Par{\lambda T}^k\in\Span{\lambda I,\lambda T,\dots,\Par{\lambda T}^{k-1}}\Longleftrightarrow T^k\in\Span{I,T\dots,T^{k-1}}.$\par\quad
-Thus $n=m.$ 又 $q$ is monic. By the uniqnes of min poly.\PfEnd
+	\TextA{Supp $V$ is finide, $T\in\Lm{V}$ with the min $p$ of deg $m,$ and $\lambda\neq 0.$}
+	\TextA{Show the min $s$ of $\lambda T$ is $q\Par{z}=\lambda^m p\BigPar{{z}\big/{\lambda}}.$}
+}Becs $q\Par{\lambda T}=\lambda^m p\Par{T}=0\Rightarrow q$ is multi $s\Rightarrow\deg q=\deg p\geqslant\deg s.$\parSol{}
+Becs $\deg s=n$ is the smallest suth $\Par{\lambda T}^n\in\Span[\BigPar]{\lambda I,\lambda T,\dots,\Par{\lambda T}{^{n-1}}};$\parSol{}
+And $\deg p=m$ is the smallest suth $T^m\in\Span{I,T,\dots,T^{m-1}}.$\parSol{}
+又 $\Par{\lambda T}{^k}\in\Span[\BigPar]{\lambda I,\lambda T,\dots,\Par{\lambda T}{^{k-1}}}\Longleftrightarrow T^k\in\Span{I,T\dots,T^{k-1}}.$\parSol{}
+Thus $\deg s=\deg p.$ By the uniqnes.\PfEnd
 \SepLine
 
 \Anchor{5BI18}\Anchor{5BI4e15}\ProblemNnoor{18}{4E 15}{
-	\TextA{Supp $V$ is a finide complex vecsp with $\dim V > 0$ and $T\in\Lm{V}$.}
-	\TextA{Define $f:\Cbb\rightarrow\Rbb$ by $f\Par{\lambda} = \dim \Range\Par{T-\lambda I}$. Prove $f$ is not continuous.}
-}Let $\lambda_0$ be an eigval of $T.$ Then $\Par{T-\lambda_0 I}$ is not surj. Hence $\dim\Range\Par{T-\lambda_0 I}<\dim V.$\par\quad
-Becs $T$ has finily many eigvals. There exis a seq of number $\Bra{\lambda_n}$ suth $\lim\limits_{n\rightarrow\infty}\lambda_n=\lambda_0$.\par\quad
-And $\lambda_n$ is not an eigval of $T$ for each $n\Rightarrow\dim\Range\Par{T-\lambda_n I}=\dim V\neq \dim\Range\Par{T-\lambda_0 I}.$\par\quad
-Thus $f\Par{\lambda_0}\neq \lim\limits_{n\rightarrow\infty}f\Par{\lambda_n}.$\PfEnd
+	\TextA{Supp $\Fbb=\Cbb,$ $V$ finide and non0, $T\in\Lm{V}$.}
+	\TextA{Define $f:\Cbb\rightarrow\Nbb$ by $f\Par{\lambda} = \dim \Range\Par{T-\lambda I}$. Prove $f$ is not continuous.}
+}Let $\lambda_0$ be eigval of $T.$ Then $\Par{T-\lambda_0 I}$ is not surj. Hence $\dim\Range\Par{T-\lambda_0 I}<\dim V.$\parSol{}
+Becs $T$ has finily many eigvals. $\exists$ seq $\Bra{\lambda_n}$ with each $\lambda_n$ not eigval of $T,$ suth $\lim\limits_{n\rightarrow\infty}\lambda_n=\lambda_0$\parSol{}
+Becs each $f\Par{\lambda_n}=\dim\Range\Par{T-\lambda_n I}=\dim V\neq f\Par{\lambda_0}\Rightarrow f\Par{\lambda_0}\neq\lim\limits_{n\rightarrow\infty}\,f\Par{\lambda_n}.$\PfEnd
 \SepLine
 
-\Anchor{5BI4e9}\ProblemBnoor{{4E 5.B.9}}{
-	\TextB{Supp $T\in\Lm{V}$ is suth wrto some bss of $V$,}
-	\TextB{all ent of the matrix of $T$ are rational numbers.}
-	\TextB{Explain why all coeffs of the min poly of $T$ are rational numbers.}
+\Anchor{5BI4e9}\ProblemBnoor{{4E 9}}{
+	\TextA{Supp $T\in\Lm{V}$ with the min $p=c_0+c_1z+\dots+c_{m-1}z^{m-1}+z^m,$}
+	\TextA{and $A=\Mt{T,B_V}$ is suth each $A_{j,k}\in\Qbb.$ Explain why all $c_k\in\Qbb.$}
 }\par\quad
 Let $\Par{v_1,\dots,v_n}$ denote the bss suth $\Mt[\BigPar]{T,\Par{v_1,\dots,v_n}}_{j,k}=A_{j,k}\in\Qbb$ for all $j,k=1,\dots,n$.\par\quad
 Denote $\Mt[\BigPar]{v_j,\Par{v_1,\dots,v_n}}$ by $x_j$ for each $v_j.$\par\quad
@@ -1009,7 +970,7 @@ Hence we get a system of $n^2$ liney equations in $m$ unknowns $c_0,c_1,\dots,c_
 We conclude that $c_0,c_1,\dots,c_{m-1}\in\Qbb.$\PfEnd
 \SepLine
 
-\Anchor{5BI4e16}\ProblemBnoor{\OR (4E 5.B.16), \OR (8.C.18)}[\Sbra]{
+\Anchor{5BI4e16}\ProblemBnoor{4E 16}{
 	\TextB{Supp $a_0 ,\dots, a_{n-1}\in\Fbb.$ Let $T$ be the optor on $\Fbb^n$ suth\vspace{2pt}}
 	\TextB{$\Mt{T}={}${\normalsize$\begin{pmatrix}
 	0 &   &        &  &   & -a_0     \\
@@ -1049,9 +1010,9 @@ $=\Par{-a_0 I-a_1 T-a_2 T^2-\dots-a_{n-1}T^{n-1}}e_1.$ Thus $p\Par{T}e_1=0=p\Par
 %
 %\ProblemB{
 %	\textsc{Operators On Odd-Dimensional Vector Spaces Have Eigenvalues}\TextB{}
-%	(a) \TextB{Supp $\Fbb=\Cbb.$ \tgnr\large Then by [5.21], done.}
-%	(b) \TextB{Supp $\Fbb=\Rbb,$ $V$ is finide, and $\dim V=n$ is an odd number.}
-%	\Hb\TextB{Let $T\in\Lm{V}$ and the min poly is $\,p\,$. Prove $T$ has an eigval.}
+%	\PrePa\TextB{Supp $\Fbb=\Cbb.$ \tgnr\large Then by [5.21], done.}
+%	\PrePb\TextB{Supp $\Fbb=\Rbb,$ $V$ is finide, and $\dim V=n$ is an odd number.}
+%	\Blind{\PrePb}\TextB{Let $T\in\Lm{V}$ and the min poly is $\,p\,$. Prove $T$ has an eigval.}
 %}\par\quad
 %(i) If $n=1,$ then done.\par\quad\Endi
 %(ii) Supp $n\geqslant 3.$ Asum every optor, on odd-dim vecsps of dim less than $n,$ has an eigval.\par\quad\Hii
@@ -1094,8 +1055,8 @@ Now define $q\Par{z}=\Par{z-\lambda_1}\Par{z-\lambda_2}$. By asum, $T\Big|{_{\nu
 \Anchor{5BII4e2}\ProblemBnoor{{4E 5.C.2}}{
 	\TextB{Supp $A$ and $B$ are up-trig matrices of the same size,}
 	\TextB{with $\alpha_1 , \dots , \alpha_n$ on the diag of $A$ and $\beta_1 , \dots , \beta_n$ on the diag of $B$.}
-	(a) \TextB{Show $A + B$ up-trig with $\alpha_1 + \beta_1 , \dots , \alpha_n + \beta_n$ on the diag.}
-	(b) \TextB{Show $AB$ up-trig with $\alpha_1 \beta_1 , \dots , \alpha_n \beta_n$ on the diag.}
+	\PrePa\TextB{Show $A + B$ up-trig with $\alpha_1 + \beta_1 , \dots , \alpha_n + \beta_n$ on the diag.}
+	\PrePb\TextB{Show $AB$ up-trig with $\alpha_1 \beta_1 , \dots , \alpha_n \beta_n$ on the diag.}
 }
 \SepLine
 
@@ -1107,8 +1068,8 @@ Now define $q\Par{z}=\Par{z-\lambda_1}\Par{z-\lambda_2}$. By asum, $T\Big|{_{\nu
 
 \Anchor{5BII9}\Anchor{5BII4e7}\ProblemNnoor{9}{4E 5.C.7}{
 	\TextA{Supp $V$ is finide, and $v \in V$.}
-	(a) \TextA{Prove $\exists\,!$ monic $p_v$ of smallest deg suth $p_v\Par{T}v = 0$.}
-	(b) \TextA{Prove the min poly of $T$ is a poly multi of $p_v$.}
+	\PrePa\TextA{Prove $\exists\,!$ monic $p_v$ of smallest deg suth $p_v\Par{T}v = 0$.}
+	\PrePb\TextA{Prove the min poly of $T$ is a poly multi of $p_v$.}
 }
 \SepLine
 
@@ -1130,8 +1091,8 @@ Now define $q\Par{z}=\Par{z-\lambda_1}\Par{z-\lambda_2}$. By asum, $T\Big|{_{\nu
 
 \Anchor{5BII4e8}\ProblemBnoor{4E 5.C.8}{
 	\TextB{Supp $V$ is finide, and $\exists\,v\in V\nonzero$ suth $T^2 v + 2Tv = -2v$.}
-	(a) \TextB{Supp $\Fbb=\Rbb.$ Prove $\nexists\,B_V$ suth $\Mt{T}$ up-trig.}
-	(b) \TextB{Supp $\Fbb=\Cbb,$ and $\exists\,B_V$ suth $A=\Mt{T}$ up-trig. Prove $-1+\i$ or $-1-\i$ on the diag of $A$.}
+	\PrePa\TextB{Supp $\Fbb=\Rbb.$ Prove $\nexists\,B_V$ suth $\Mt{T}$ up-trig.}
+	\PrePb\TextB{Supp $\Fbb=\Cbb,$ and $\exists\,B_V$ suth $A=\Mt{T}$ up-trig. Prove $-1+\i$ or $-1-\i$ on the diag of $A$.}
 }\par
 \SepLine
 
@@ -1145,7 +1106,7 @@ Now define $q\Par{z}=\Par{z-\lambda_1}\Par{z-\lambda_2}$. By asum, $T\Big|{_{\nu
 
 \Anchor{5BII4e10}\ProblemBnoor{4E 5.C.10}{
 	\TextB{Supp $B_V=\Par{v_1,\dots,v_n}.$ Show the following are equi\hspace{1pt}$:$}
-	(a) \TextB{$\Mt{T,B_V}$ lower trig. \, {\tgnr\large(b)} Each $\Span{v_k,\dots,v_n}$ invard $T.$ \, {\tgnr\large(c)} Each $Tv_k\in\Span{v_k,\dots,v_n}.$}
+	\PrePa\TextB{$\Mt{T,B_V}$ lower trig. \, {\tgnr\large(b)} Each $\Span{v_k,\dots,v_n}$ invard $T.$ \, {\tgnr\large(c)} Each $Tv_k\in\Span{v_k,\dots,v_n}.$}
 }\par
 \SepLine
 
@@ -1156,7 +1117,7 @@ Now define $q\Par{z}=\Par{z-\lambda_1}\Par{z-\lambda_2}$. By asum, $T\Big|{_{\nu
 
 \Anchor{5BII4e12}\ProblemBnoor{4E 5.C.12}{
 	\TextB{Supp $V$ is finide, $U$ invarspd $T,$ and $\Mt{T}$ is up-trig for some $B_V.$}
-	(a) \TextB{Prove $\Mt{T\mmid_U}$ up-trig for some $B_U$. \, {\tgnr\large(b)} Prove $\Mt{T\XSlash U}$ up-trig for some $B_{V\XSlash U}.$}
+	\PrePa\TextB{Prove $\Mt{T\mmid_U}$ up-trig for some $B_U$. \, {\tgnr\large(b)} Prove $\Mt{T\XSlash U}$ up-trig for some $B_{V\XSlash U}.$}
 }
 \SepLine
 
@@ -1198,7 +1159,7 @@ XXXX
 
 \ProblemN{3}{
 	\TextA{Supp $S, T\in\Lm{V}$ are suth $ST = TS$. Supp $p\in\PoFi$.}
-	(a) \TextA{Prove $\nullp p\Par{S}$ is invard $T$. \, {\tgnr\large(b)} Prove $\rangep p\Par{S}$ is invard $T$.}
+	\PrePa\TextA{Prove $\nullp p\Par{S}$ is invard $T$. \, {\tgnr\large(b)} Prove $\rangep p\Par{S}$ is invard $T$.}
 }\par
 \SepLine
 
@@ -1233,8 +1194,8 @@ XXXX
 \ProblemN{9}{
 	\TextA{Supp $V$ is a finide non0 complex vecsp.}
 	\TextA{Supp that $\mathcal{E}\subseteq\Lm{V}$ is suth $S$ and $T$ commu for all $S, T\in\mathcal{E}$.}
-	(a) \TextA{Prove $\exists$ eigvec $v\in V$ for every elem of $\mathcal{E}$.}
-	(b) \TextA{Prove $\exists$ a bss of $V$ wrto which every elem of $\mathcal{E}$ has up-trig matrix.}
+	\PrePa\TextA{Prove $\exists$ eigvec $v\in V$ for every elem of $\mathcal{E}$.}
+	\PrePb\TextA{Prove $\exists$ a bss of $V$ wrto which every elem of $\mathcal{E}$ has up-trig matrix.}
 }\par
 \SepLine
 

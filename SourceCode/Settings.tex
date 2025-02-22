@@ -159,42 +159,56 @@
 \newcommand{\Interval}[3]{{\text{\envFont\forbra#1\hspace{1pt}}}#3{\text{\envFont\forbra\hspace{1pt}#2}}}
 \newcommand{\XInterval}[3]{{\text{\envFont\forbrax#1}}#3{\text{\envFont\forbrax#2}}}
 
+\def\PrePxEnv{\;}
+
+\def\PrePa{{\!\!\PrePxEnv(a)} }
+\def\PrePb{{\!\!\PrePxEnv(b)} }
+\def\PrePc{{\!\!\PrePxEnv(c)} }
+\def\PrePd{{\!\!\PrePxEnv(d)} }
+
 \newcommand{\ProblemX}[3][\Solution]{
 	\def\Ptarget{#2}
 	{#2} {#3}\envFontDefault\vspace{-16pt}\par
 	#1
 }
 \newcommand{\ProblemBX}[3][\Solution]{
+	\def\PrePxEnv{\;}
 	\def\Ptarget{\BulletPointX#2}
 	{\BulletPointX#2} {#3}\envFontDefault\vspace{-16pt}\par
 	#1
 }
 \newcommand{\ProblemN}[3][\Solution]{
+	\def\PrePxEnv{\:}
 	\def\Ptarget{\Onumber{#2}}
 	{\Onumber{#2}} {#3}\envFontDefault\vspace{-16pt}\par
 	#1
 }
 \newcommandx{\ProblemNor}[5][1=\Solution,4=\Sbra]{
+	\def\PrePxEnv{\:}
 	\def\Ptarget{{\Onumber{#2}} \;{#4{\OR({\normalsize#3})}}}
 	{\Onumber{#2}} \;{#4{\OR({\normalsize#3})}}{#5}\envFontDefault\vspace{-16pt}\par
 	#1
 }
 \newcommandx{\ProblemNnoor}[5][1=\Solution,4=\Sbra]{
+	\def\PrePxEnv{\:}
 	\def\Ptarget{{\Onumber{#2}}\;{#4{\small#3}}}
 	{\Onumber{#2}} \;{#4{\small#3}}{#5}\envFontDefault\vspace{-16pt}\par
 	#1
 }
 \newcommand{\ProblemB}[2][\Solution]{
+	\def\PrePxEnv{\;}
 	\def\Ptarget{\BulletPoint}
 	{\BulletPoint}{#2}\envFontDefault\vspace{-16pt}\par
 	#1
 }
 \newcommandx{\ProblemBnoor}[4][1=\Solution,3=\Par]{
+	\def\PrePxEnv{\;}
 	\def\Ptarget{{\BulletPoint}#3{{\small#2}}}
 	{\BulletPoint} #3{{\small#2}}{#4}\envFontDefault\vspace{-16pt}\par
 	#1
 }
 \newcommand{\ProblemBor}[3][\Solution]{
+	\def\PrePxEnv{\;}
 	\def\Ptarget{{\BulletPoint} {\OR({\normalsize#2})}}
 	{\BulletPoint} {\OR({\normalsize#2})}{#3}\envFontDefault\vspace{-16pt}\par
 	#1
