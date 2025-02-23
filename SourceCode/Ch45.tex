@@ -627,8 +627,7 @@ Becs $U$ invard $\Par{T-\lambda I}.$ Now $u\in U\Rightarrow\Par{T-\lambda I}{u}\
 
 \Anchor{5A4e33}\ProblemBnoor{4E 5.A.33}{
 	\TextB{Supp $T\in\Lm{V},m\in\Nbp.$ Prove $T$ inje $\overset{\text{(a)}}{\Longleftrightarrow}T^m$ inje, and $T$ surj $\overset{\text{(b)}}{\Longleftrightarrow}$ $T^m$ surj.}
-}(a) $T^m$ inje $\Rightarrow Tv=0\Rightarrow T^{m-1} Tv=T^m v=0\Rightarrow v=0.$\parSol{\Ha}
-$T$ inje $\Rightarrow T^m v=T^{m-1}v=\cdots=T^2 v=Tv=v=0.$\vspace{2pt}\parSol{}
+}(a) $T^m$ inje $\Rightarrow$ if $Tv=0,$ then $T^{m-1} Tv=T^m v=0\Rightarrow v=0,$ thus $T$ inje. \,Convly immed.\vspace{2pt}\parSol{}
 (b) $T^m$ surj $\Rightarrow\forall u\in V,\exists\,v\in V\Rightarrow\exists\,w=T^{m-1}v,\;T^m v=u=Tw.$\parSol{\Hb}
 $T$ surj $\Rightarrow\forall u\in V,\exists\,v_1,\dots,v_m\in V,\,T\Par{v_1}=T^2v_2=\cdots=T^m v_m=u.$\PfEnd
 \SepLine
@@ -684,29 +683,46 @@ $T$ surj $\Rightarrow\forall u\in V,\exists\,v_1,\dots,v_m\in V,\,T\Par{v_1}=T^2
 %$\exists$ monic $s\in\PoF{\dim V-m}$, suth $s\Par{S}=0\Rightarrow\Par{sq}\Par{T}=0.$\quad\Sbra{{\tgsl The remaining part is obvious.}}\Blind{\;\;}\PfEnd
 %\SepLine
 
+\Anchor{5BIT1}\ProblemBX{\TipsN{1}}{
+	\TextB{Supp $T\in\Lm{V}$ with invarsp $U.$ Prove if $p\in\PoFi,$ then $\pi p\Par{T}=p\Par{T\XSlash U}\pi.$}
+}For each $k\in\Nbb,\:\pi\Par{T^kv}=T^kv+U=\Par{T\XSlash U}{^k}\Par{v+U}.$\PfEnd
+\SepLine
+
+\Anchor{5BIT2}\ProblemBX{\TipsN{2}}{
+	\TextB{Supp $T\in\Lm{V},p\in\PoFi{}.$ Prove $p\Par{T\apostrophe}\varphi=\varphi\circ p\Par{T}.$}
+}Each $\Par{T\apostrophe}{^k}\Par{\varphi}=\Par{T\apostrophe}{^{k-1}}\Par{\varphi\circ T}=\dots=\varphi\circ T^k.$\PfEnd
+\SepLine
+
+\Anchor{5BIT3}\ProblemBX{\TipsN{3}}{
+	\TextB{Supp non0 $p,q\in\PoFi$ are multi of each other. Prove $p=cq$ for a $c\neq0.$}
+}Let $p=rq,q=sp\Rightarrow p=rsp\Rightarrow r\Par{z}s\Par{z}=1$ for all $z$ with $p\Par{z}\neq 0,$ while such $z$ is fini.\parSol{}
+Thus $\Par{rs}\Par{z}=1$ for infily many $z,$ so for all $z.$ Now $\deg rs=1=\deg r+\deg s.$\PfEnd
+\SepLine
+
 \Anchor{5BI4e25}\Anchor{5BI4e26}\ProblemBnoor{4E 5.31, 4E 25, 26}{
-	\TextB{\large\; min poly of restr optor and min poly of quot optor}
-	\TextB{Supp $V$ is finide, $T\in \Lm{V}$, with $U$ invarsp, and $p$ be min poly.}
-	\PrePa\TextB{Prove $p$ is a multi of the min of $T\mmid_U$. \; {\tgnr\large(b)} of the min of $T\XSlash U$.}
-	\PrePc\TextB{Prove \Sbra{min poly of $T\mmid_U$}${}\times{}$\Sbra{min poly of $T\XSlash U$} is a poly multi of $p$.}
-	\PrePd\TextB{Prove the set of eigvals of $T$ is the set of eigvals of $T\mmid_U$ or of $T\XSlash U$.\hfill\FontSmall\tgnr By [8.49], immed.}
-}(a) $p\Par{T}=0\Rightarrow\forall u\in U,p\Par{T}u=0\Rightarrow p\Par{T\mmid_U}=0\Rightarrow$ By [8.46].\parSol{}
-(b) $p\Par{T}=0\Rightarrow\forall v\in V,p\Par{T}v=0\Rightarrow p\Par{T\XSlash U}\Par{v+U}=p\Par{T}v+U=0.$\vspace{2pt}\parSol{}
-(c) Supp $r$ is the min of $T\mmid_U.$ Then $\forall u\in U,\;r\Par{T\mmid_U}u=r\Par{T}u=0.$\parSol{\Hc}
-Supp $s$ is the min of $T\XSlash U.$ Then $\forall v\in V,\;s\Par{T\XSlash U}\Par{v+U}=s\Par{T}v+U=0.$\parSol{\Hc}
-Thus $\forall v\in V,\Par{rs}\Par{T}v=r\Par{T}\BigPar{s\Par{T}v}=0\Rightarrow\Par{rs}\Par{T}=0.$\PfEnd
+%	\TextB{\large\; min poly of restr optor and min poly of quot optor}
+	\TextB{Supp $V$ is finide, $U$ invarspd $T\in\Lm{V},$ with the min $p.$}
+	\TextB{Supp $r$ the min of $T\mmid_U$, and $s$ of $T\XSlash U.$ For $q\in\PoFi{},$ define $Z_q$ as the set of zeros of $q.$}
+	\TextB{Then $Z_p$ is the set of eigvals of $T.$ Simlr for $Z_r,Z_s.$}
+	\PrePa\TextB{Prove $p$ is a multi of $r$ and of $s.$ \, {\tgnr\large(b)} Show $rs$ is multi of $p$. \, {\tgnr\large(c)} Prove $Z_p=Z_r\cup Z_s.$}
+}(a) $p\Par{T}=0\Rightarrow\forall u\in U,p\Par{T}u=0\Rightarrow p\Par{T\mmid_U}=0.$\parSol{\Ha}
+$p\Par{T}=0\Rightarrow\forall v\in V,p\Par{T}v=0\Rightarrow p\Par{T\XSlash U}\Par{v+U}=p\Par{T}v+U=0.$\vspace{2pt}\parSol{}
+(b) $\forall v\in V,\,s\Par{T\XSlash U}\Par{v+U}=s\Par{T}v+U=0\Rightarrow\Par{rs}\Par{T}v=r\Par{T}\BigPar{s\Par{T}v}=0.$\vspace{2pt}\parSol{}
+(c) By (b), $Z_p\subseteq Z_r\cup Z_s.$ Let $ar=p$ and $bs=p.$ Then for $r\Par{\lambda}=0$ or $s\Par{\lambda}=0,$\parSol{\Hc}
+\!\Sbra{which is equiv to $\lambda\in Z_r\cup Z_s,$} then $p\Par{\lambda}=0\Longleftrightarrow\lambda\in Z_p.$\PfEnd
 \SepLine
 
 \Anchor{5BI4e27}\ProblemBnoor{4E 27}{
 	\TextB{Supp $\Fbb=\Rbb,$ $V$ is finide, and $T\in \Lm{V}$. Prove the min $p$ of $T_{\!\Cbb}$ is the min $q$ of $T$.}
-}(a) $\forall u+\i 0\in V_{\!\Cbb},\,p\Par{T_{\!\Cbb}}\Par{u}=p\Par{T}u=0\Rightarrow\forall u\in V,p\Par{T}u=0\Rightarrow p$ is a multi of $q.$\parSol{}
-(b) $q\Par{T}=0\Rightarrow \forall u+\i v\in V_{\!\Cbb},\,q\Par{T_{\!\Cbb}}\Par{u+\i v}=q\Par{T}u+\i q\Par{T}v=0\Rightarrow q$ is a multi of $p.$\PfEnd
+}(a) $\forall u+\i 0\in V_{\!\Cbb},\,p\Par{T_{\!\Cbb}}\Par{u}=p\Par{T}u=0\Rightarrow p\Par{T}=0.$\parSol{}
+(b) $q\Par{T}=0\Rightarrow \forall u+\i v\in V_{\!\Cbb},\,q\Par{T_{\!\Cbb}}\Par{u+\i v}=q\Par{T}u+\i q\Par{T}v=0.$\PfEnd
 \SepLine
 
 \Anchor{5BI4e28}\ProblemBnoor{4E 28}{
 	\TextB{Supp $V$ is finide and $T\in \Lm{V}$. Prove the min $p$ of $T\apostrophe$ equals the min $q$ of $T$.}
-}(a) $\forall\varphi\in V\apostrophe,\,p\Par{T\apostrophe}\Par{\varphi}=\varphi\BigPar{p\Par{T}}=0\Rightarrow p\Par{T}\in\null\varphi.$ Thus $p\Par{T}=0.$\parSol{}
-(b) $q\Par{T}=0\Rightarrow\forall \varphi\in V\apostrophe,\varphi\BigPar{q\Par{T}}=q\Par{T\apostrophe}\Par{\varphi}=0.$ Thus $q\Par{T\apostrophe}=0.$\PfEnd
+}(a) $\forall\varphi\in V\apostrophe,\,p\Par{T\apostrophe}\Par{\varphi}=\varphi\circ p\Par{T}=0\Rightarrow p\Par{T}\in\null\varphi.$ Thus $p\Par{T}=0.$\parSol{}
+(b) $q\Par{T}=0\Rightarrow\forall \varphi\in V\apostrophe,\varphi\BigPar{q\Par{T}}=q\Par{T\apostrophe}\Par{\varphi}=0.$ Thus $q\Par{T\apostrophe}=0.$\PfEnd\vspace{2pt}\parSol{}
+\Or By (3.F.15), for any $s\in\PoFi,\:s\Par{T\apostrophe}=s\Par{T}\apostrophe=0\Longleftrightarrow s\Par{T}=0.$\PfEnd
 \SepLine
 
 \ProblemBnoor{4E 5.32}[\Sbra]{
@@ -718,7 +734,7 @@ Thus $\forall v\in V,\Par{rs}\Par{T}v=r\Par{T}\BigPar{s\Par{T}v}=0\Rightarrow\Pa
 
 \Anchor{5BI4e22}\ProblemBnoor{4E 22}{
 	\TextB{Supp $V$ is finide, $T\in \Lm{V}$. Prove $T$ is inv $\Longleftrightarrow I\in\Span[\BigPar]{T, T^2, \dots , T^{\dim V}}.$}
-}Let $p\Par{z}=a_0 +a_1 z+\dots+z^m$ be the min. Becs $T$ inv $\Longleftrightarrow$ inje $\Longleftrightarrow p\Par{0}=a_0\neq 0.$ By $p\Par{T}=0.$\PfEnd
+}Let $p\Par{z}=a_0 +a_1 z+\dots+z^m$ be the min. Becs $T$ inv $\Longleftrightarrow$ inje $\Longleftrightarrow p\Par{0}=a_0\neq 0.$\PfEnd
 \SepLine
 
 %\ProblemN{\Anchor{5BI6}{6}}{
@@ -738,9 +754,7 @@ Then $U_{j-1}$ is invard $T,$ so is each $U_n=\Span{v,Tv,\dots,T^{j-1} v,\dots,T
 \Anchor{5BI4e21}\ProblemBnoor{4E 21}{
 	\TextB{Supp $V$ finide, $T\in\Lm{V}$. Prove the min $p$ has deg at most $1 + \dim \range T$.}
 	\TextB{\large If $\dim \range T < \dim V - 1$, then this result gives a better upper bound for the deg of min poly.}
-}If $T$ inje, then $\range T=V$ and done. Supp non0 $v\in\null T.$ Then $Tv=0.$\parSol{}
-Define $q\Par{z}=z\Rightarrow q\Par{T}v=0.$ \Sbra{Simlr to [4E 5.22].} Let $W=\rangep q\Par{T}=\range T.$\parSol{}
-$\exists$ monic $s\in\PoF{\dim W},\,s\Par{T\mmid_W}=0.$ Thus $p=sq$ with $\deg p=\deg s+\deg q\leqslant\dim W+1.$\PfEnd
+}Let $q$ be the min of $T\mmid_{\range T}.$ Then $q\Par{T}Tv=0\Rightarrow zq\Par{z}$ of deg $1+\dim\range T$ is multi of $p.$\PfEnd
 \SepLine
 
 \Anchor{5A4e43}\ProblemN{\Anchor{5BI19}{19}}{
@@ -764,9 +778,9 @@ Now by (4.11), $\dim\PoF{}\XSlash\null\Phi=\deg p=m.$ By [3.91](d).\PfEnd
 	\TextA{Prove if $q\Par{z}=a_0 +a_1 z+\dots+a_n z^n,$ then $\exists\,!\,r\in\PoF{\deg p-1},\,q\Par{T}=r\Par{T}.$}
 }Becs $p\neq 0.$ By the div algo, immed. \Sbra{$r=0$ if $q=p.$}\PfEnd\vspace{2pt}\parSol{}
 \Or Becs $T^m=-c_0I-c_1T-\dots-c_{m-1}T^{m-1}.$\parSol{}
-For $\deg q<m=\deg p,$ $q\Par{T}$ itself is the uniq repres for $q\Par{T}.$\parSol{}
+For $\deg q<m=\deg p,\;q\Par{T}$ itself is the uniq repres for $q\Par{T}.$\parSol{}
 Supp $\deg q\geqslant\deg p.$ For each $k\in\Nbb,\exists\,!\,b_{j,k}\in\Fbb,\,T^{m+k}=b_{0,k}I+b_{1,k}T+\dots+b_{m-1,k}T^{m-1}.$\PfEnd
-\SepLine
+\SepLine\pagebreak
 
 \Anchor{5BI4e14}\ProblemBnoor{4E 14}{
 	\TextA{Supp $V$ finide, $T\in\Lm{V},$ with the min $p\Par{z}=a_0 + a_1 z + \dots + a_{m-1} z^{m-1}+z^m,$}
@@ -835,7 +849,7 @@ Thus $\forall v\in V,\,0=\Par{T^2-I}\Par{T^2+I}v\Longleftrightarrow 0=\Par{T^2+I
 \Or Note that $\forall v\in V,\,v=\Par{I-T^2}v\Big/2+\Par{I+T^2}v\Big/2.$ 又 $I-T^4=\Par{I\pm T^2}\Par{I\mp T^2}.$\parSol{}
 Then $\Range\Par{I\mp T^2}\subseteq\Null\Par{I\pm T^2}\Rightarrow V=\Null\Par{I-T^2}+\Null\Par{I-T^2}.$\parSol{}
 又 $T$ has no eigvals $\Longleftrightarrow \Par{I-T^2}$ inje $\Longleftrightarrow\Null\Par{I-T^2}=\zeroSubs\supseteq\Range\Par{I+T^2}.$\PfEnd
-\SepLine
+\SepLine\pagebreak
 
 \Anchor{5BI8}\Anchor{5A4e31}\ProblemN{8}{
 	\TextA{Give an exa of $T\in\Lm{\Rbb^2}$ suth $T^4=-I$.}
@@ -874,9 +888,9 @@ Supp $p\Par{z}=z^2+bz+c.$ Let $P=L\cos\theta\Rightarrow L\big/2P=1\big/\Par{2\co
 Then $Tv=\BigPar{L\big/2P}\Par{T^2 v+v}\Rightarrow T=\BigPar{L\big/2P}\Par{T^2+I}.$\parSol{}
 Hence $p\Par{T}=T^2-2\cos\theta\, T+I=0.$\PfEnd\vspace{4pt}\parSol{}
 \Or Let $\Par{e_1,e_2}$ be the std bss of $\Rbb^2.$ Becs $Te_1=\cos\theta\;e_1+\sin\theta\;e_2,\;T^2e_1=\cos2\theta\;e_1+\sin2\theta\;e_2.$\vspace{0pt}\parSol{}
-$ce_1+bTe_1=-T^2 e_1\Longleftrightarrow{}${\small$\begin{pmatrix}1 & \cos\theta\\0 & \sin\theta\end{pmatrix}\begin{pmatrix}c \\ b\end{pmatrix}$}${}={}${\small$\begin{pmatrix}-\cos2\theta\\-\sin2\theta\end{pmatrix}$}. Now $\det=\sin\theta\neq 0,c=1,b=2\cos\theta.$\PfEnd\vspace{10pt}\parSol{}
-\Or $\Mt[\BigPar]{T,\Par{e_1,e_2}}={}${\small$\begin{pmatrix}\Blind{-}\cos\theta & \sin\theta\\-\sin\theta & \cos\theta
-\end{pmatrix}$}. By (4E 11), $\Par{z\pm 1}$ or $\Par{z^2-2\cos\theta\,z+1}$ is the min.\PfEnd
+$ce_1+bTe_1=-T^2 e_1\Longleftrightarrow{}${\small$\begin{pmatrix}1 & \cos\theta\\0 & \sin\theta\end{pmatrix}\begin{pmatrix}c \\ b\end{pmatrix}$}${}={}${\small$\begin{pmatrix}-\cos2\theta\\-\sin2\theta\end{pmatrix}$}. Now $\det=\sin\theta\neq 0,c=1,b=2\cos\theta.$\PfEnd%\vspace{10pt}\parSol{}
+%\Or $\Mt[\BigPar]{T,\Par{e_1,e_2}}={}${\small$\begin{pmatrix}\Blind{-}\cos\theta & \sin\theta\\-\sin\theta & \cos\theta
+%\end{pmatrix}$}. By (4E 11), $\Par{z\pm 1}$ or $\Par{z^2-2\cos\theta\,z+1}$ is the min.\PfEnd
 \SepLine
 
 \Anchor{5BI4e11}\ProblemBnoor{4E 11}{
@@ -896,8 +910,7 @@ Then $Tv=av+bw\not\in\Span{w},$ or $Tw=cv+dw\not\in\Span{w}.$\PfEnd
 
 \ProblemB{
 	\TextB{Supp $S,T\in\Lm{V},S$ is inv, and $p\in\PoFi$. Prove $Sp\Par{TS}=p\Par{ST}S.$}
-}We prove each $S\Par{TS}{^m}=\Par{ST}{^m} S$ by induc.\parSol{}
-(i) $m=0,1.$ $S\Par{TS}{^0}=SI=IS=\Par{ST}{^0}S;\;\,S\Par{TS}{^1}=\Par{ST}{^1}S.$\parSol{\Endi}
+}We prove each $S\Par{TS}{^m}=\Par{ST}{^m} S$ by induc. (i) $m=0,1.$ Immed.\parSol{}
 (ii) $m>1.$ $S\Par{TS}{^m}=\Par{ST}{^m} S\Rightarrow S\Par{TS}{^{m+1}}=S\Par{TS}{^m}\Par{TS}=\Par{ST}{^m}\Par{ST}S=\Par{ST}{^{m+1}}S.$\PfEnd\vspace{2pt}
 \AComm $p\Par{TS} = S^{-1} p\Par{ST}S,\;p\Par{ST} = Sp\Par{TS}S^{-1}.$\par\Anchor{5BI5}\Anchor{5A4e40}
 \ACoro Becs $S$ is inv, $T\in\Lm{V}$ is arb $\Longleftrightarrow ST=R\in\Lm{V}$ is arb. Hence $p\Par{S^{-1}RS}=S^{-1}p\Par{R}S.$
@@ -974,24 +987,20 @@ Hence we get a system of $n^2$ liney equations in $m$ unknowns $c_0,c_1,\dots,c_
 We conclude that $c_0,c_1,\dots,c_{m-1}\in\Qbb.$\PfEnd
 \SepLine
 
-\Anchor{5BI4e16}\ProblemBnoor{4E 16}{
-	\TextB{Supp $a_0 ,\dots, a_{n-1}\in\Fbb.$ Let $T$ be the optor on $\Fbb^n$ suth\vspace{2pt}}
-	\TextB{$\Mt{T}={}${\normalsize$\begin{pmatrix}
-	0 &   &        &  &   & -a_0     \\
-	1 & 0 &        &  &   & -a_1     \\
-	  & 1 & \ddots &  &   & \vdots   \\
-	  &   & \ddots &  & 0 & -a_{n-2} \\
-	0 &   &        &  & 1 & -a_{n-1}
-\end{pmatrix} $}, wrto the std bss $\Par{e_1,\dots,e_n}$.\vspace{4pt}}
-	\TextB{Show the min poly of $T$ is $\,p\,$ defined by $p\Par{z}=a_0 + a_1 z + \dots + a_{n-1} z^{n-1} + z^n$.}
-	\vspace{-2pt}\TextB{\small $\Mt{T}$ is called the {\tgsc companion matrix} of the poly above. This exercise shows that every monic poly is the min poly of some optor.}
-	\vspace{-2pt}\TextB{\small Hence a formula or an algo that could produce exact eigvals for each optor on each $\Fbb^n$ could then produce exact zeros for}
-	\vspace{-2pt}\TextB{\small each poly  $[$ by 8.36(b) $]$. Thus there is no such formula or algo. However, efficient numeric methods exis for obtaining very good}
-	\TextB{\small approximations for the eigvals of an optor.}
-}Note that $\Par{e_1,Te_1,\dots,T^{n-1}e_1}$ is liney indep. 又 The deg of min poly is at most $n.$\par\quad
-$T^n e_1=\cdots=T^{n-k}e_{1+k}=\cdots=T e_n=-a_0 e_1-a_1 e_2-a_2 e_3-\dots-a_{n-1}e_n$\par
-$=\Par{-a_0 I-a_1 T-a_2 T^2-\dots-a_{n-1}T^{n-1}}e_1.$ Thus $p\Par{T}e_1=0=p\Par{T}e_j$ for each $e_j=T^{j-1}e_1.$\PfEnd
-\SepLine
+%\Anchor{5BI4e16}\ProblemBnoor{4E 16}{
+%	\TextB{Supp $a_0 ,\dots, a_{n-1}\in\Fbb.$ Let $T$ be the optor on $\Fbb^n$ suth\vspace{2pt}}
+%	\TextB{$\Mt{T}={}${\normalsize$\begin{pmatrix}
+%	0 &\hspace{-4pt}   &\hspace{-4pt} &\hspace{-4pt} &\hspace{-4pt} & -a_0\\[-4pt]
+%	1 &\hspace{-4pt} 0 &\hspace{-4pt} &\hspace{-4pt} &\hspace{-4pt} & -a_1\\[-4pt]
+%	  &\hspace{-4pt} 1 &\hspace{-4pt} \ddots &\hspace{-4pt} &\hspace{-4pt} & \vdots\\[-4pt]
+%	  &\hspace{-4pt}   &\hspace{-4pt} \ddots &\hspace{-4pt} &\hspace{-4pt} 0 & -a_{n-2} \\[-4pt]
+%	0 &\hspace{-4pt}   &\hspace{-4pt} &\hspace{-4pt}  &\hspace{-4pt} 1 & -a_{n-1}
+%\end{pmatrix} $}, wrto the std bss $\Par{e_1,\dots,e_n}$.\vspace{4pt}}
+%	\TextB{Show the min poly of $T$ is $\,p\,$ defined by $p\Par{z}=a_0 + a_1 z + \dots + a_{n-1} z^{n-1} + z^n$.}
+%}Note that $\Par{e_1,Te_1,\dots,T^{n-1}e_1}$ is liney indep. 又 The deg of min poly is at most $n.$\par\quad
+%$T^n e_1=\cdots=T^{n-k}e_{1+k}=\cdots=T e_n=-a_0 e_1-a_1 e_2-a_2 e_3-\dots-a_{n-1}e_n$\par
+%$=\Par{-a_0 I-a_1 T-a_2 T^2-\dots-a_{n-1}T^{n-1}}e_1.$ Thus $p\Par{T}e_1=0=p\Par{T}e_j$ for each $e_j=T^{j-1}e_1.$\PfEnd
+%\SepLine
 
 %\BulletPointX{\Large\textsc{Eigenvalues On Odd-Dimensional Real Vector Spaces}}\par
 %\ProblemB{
