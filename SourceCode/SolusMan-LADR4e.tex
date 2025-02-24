@@ -362,6 +362,7 @@ $}$
 
 \newcommand{\BM}[1]{\BmarkGeneral{\thisChapter}{\thisSection}{#1}}
 \newcommand{\BMFE}[1]{\BmarkGeneralFourthEd{\thisChapter}{\thisSection}{#1}}
+\newcommand{\BMFEN}[2][]{\bookmark[level=2,dest=\thisChapter\thisSection4e#2]{#1#2}}
 
 \newcommandx{\BMXStart}[2][2=\thisChapter\thisSection]{\bookmark[level=1,dest=Ch#2]{#1}}
 \newcommand{\BMX}[3][2]{\bookmark[level=#1,dest=\thisChapter\thisSection#2]{#3}}
@@ -410,7 +411,7 @@ $}$
 }
 
 \BmarkI{3}{A}{
-	\BM{3}\BM{4}\BM{5}\BM{6}\BM{7}\BM{8}\BM{10}\BM{11}\BM{12}\BM{13}
+	\BM{3}\BM{4}\BM{5}\BM{7}\BM{8}\BM{9}\BM{10}\BM{11}\BM{12}\BM{13}
 	\BMFE{10}\BMFE{11}\BMFE{17}
 	\BM{'1}\BM{'2}
 	\BMXStart{Tips}\BMX{T1}{1}\BMX{T2}{2}\BMX{T3}{3}
@@ -473,13 +474,16 @@ $}$
 	\BMX[1]{N5.6}{Note For [5.6]}
 }
 
-\BmarkI{5}{BI}[5.B(I)]{
-%	\BM{}\BM{}\BM{}\BM{}\BM{}\BM{}\BM{}
-%	\BMFE{}\BMFE{}\BMFE{}
+\BmarkI{5}{BI}[5.B:I]{
+	\BM{1}\BM{4}\BM{5}\BM{8}\BM{9}\BM{10}\BM{11}\BM{13}\BM{16}\BM{17}\BM{18}\BM{19}
+	\BMFE{3}\BMFE{7}\BMFE{8}\BMFE{9}\BMFE{10}\BMFE{11}\BMFE{13}\BMFE{14}\BMFE{17}\BMFE{18}\BMFE{19}\BMFE{21}\BMFE{22}\BMFE{23}\BMFE{25}\BMFE{26}\BMFE{27}\BMFE{28}\BMFE{29}\BMX[1]{2e24}{2E 24}
+	\BM{'1}
+	\BMXStart{Tips}\BMX{T1}{1}
+	\BMXStart{Notes}\BMX{N5.17}{For [5.17]}\BMX{N5.32}{For [5.32]}
 }
-\BmarkI{5}{BII}[5.B(II)]{
-%	\BM{}\BM{}\BM{}\BM{}\BM{}\BM{}\BM{}
-%	\BMFE{}\BMFE{}\BMFE{}
+\BmarkI{5}{BII}[5.B:II]{
+	\BM{9}\BM{14}\BM{15}\BM{20}
+	\BMXStart{4E:5C}\BMFEN{1}\BMFEN{2}\BMFEN{3}\BMFEN{4}\BMFEN{5}\BMFEN{6}\BMFEN{7}\BMFEN{8}\BMFEN{9}\BMFEN{10}\BMFEN{11}\BMFEN{12}\BMFEN{13}\BMFEN{14}
 }
 
 \BmarkI{5}{C}{
