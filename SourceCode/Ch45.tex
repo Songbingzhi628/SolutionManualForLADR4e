@@ -1057,11 +1057,11 @@ Thus $T^{-1}v_k=\lambda_k^{-1}v_k-\lambda_k^{-1}T^{-1}u_k\in\Span{v_1,\dots,v_k}
 	\PrePa\TextA{Prove $\exists\,!$ monic $p_v$ of smallest deg suth $p_v\Par{T}v = 0$.}
 	\PrePb\TextA{Prove the min poly $p$ of $T$ is a poly multi of $p_v$.}
 }(a) {\Existns} \;If $v=0,$ then let $p_v\Par{z}=1.$ Supp $v\neq0.$ Then $\Par{v,Tv,\dots,T^{\dim V}v}$ liney dep.\parSol{\Ha}
-\Blind{\Existns} \;$\exists$ smallest $m$ suth $-T^mv=c_0v+c_1Tv+\dots+c_{m-1}T^{m-1}v.$ Thus define $p_v.$\vspace{2pt}\parSol{\Ha}
-{\Uniqnes} \;Supp $q_v$ is monic of smallest deg and $q_v\Par{T}v=0.$\parSol{\Ha}
+\Blind{\Existns} \;$\exists$ smallest $m$ suth $-T^mv=c_0v+c_1Tv+\dots+c_{m-1}T^{m-1}v.$ Thus define $p_v.$\parSol{\Ha}
+\Blind{\Existns} \;\Or Let $U=\Span{v,Tv,\dots,T^{m-1}v}$ of dim $m$ invard $T.$ Let $p_v$ be the min of $T\mmid_U.$\vspace{2pt}\parSol{\Ha}
+{\Uniqnes} \;Supp $q_v$ is monic of smallest deg \Sbra{$={}\deg p_v$} and $q_v\Par{T}v=0.$\parSol{\Ha}
 \Blind{\Uniqnes} \;Then $\Par{p_v-q_v}\Par{T}v=0,$ while $\deg p_v=m=\deg q_v\Rightarrow\deg\Par{p_v-q_v}<m.$\vspace{2pt}\parSol{}
-(b) Let $p_vs+r=p$ with $\deg r<\deg p_v.$ Becs $p_v\BigPar{T\mmid_{\nullp p_v\SmallPar{T}}}=0=p\BigPar{T\mmid_{\nullp p_v\SmallPar{T}}}=r\BigPar{T\mmid_{\nullp p_v\SmallPar{T}}}.$\parSol{\Hb}
-By (a), $p_v$ is the min of $T\mmid_{\nullp p_v\SmallPar{T}}.$ Then $r=0,$ by the min of $\deg p_v.$\PfEnd
+(b) \NOTICE that $p_v$ is the min of $T\mmid_{\nullp p_v\SmallPar{T}}.$ (?) Then by [4E 5.31].\PfEnd
 \SepLine
 
 %\Anchor{5BII14}\Anchor{5BII4e4}\ProblemNor{4}{3E 5.B.14}{
@@ -1080,14 +1080,13 @@ By (a), $p_v$ is the min of $T\mmid_{\nullp p_v\SmallPar{T}}.$ Then $r=0,$ by th
 }\SepLine
 
 \Anchor{5BII4e8}\ProblemN{8}{
-	\TextA{Supp $V$ is finide, and $v\in V$ is non0 suth $T^2 v + 2Tv = -2v$.}
+	\TextA{Supp $V$ is finide, and $v\in V$ is non0 suth $q\Par{T}v=0,$ where $q\Par{z}=z^2+2z+2.$}
 	\PrePa\TextA{Supp $\Fbb=\Rbb.$ Prove $\nexists\,B_V$ suth $\Mt{T}$ up-trig.}
 	\PrePb\TextA{Supp $\Fbb=\Cbb,$ and $\exists\,B_V$ suth $A=\Mt{T}$ up-trig. Prove $-1+\i$ or $-1-\i$ on the diag.}
-}%Asum $A=\Mt{T,B_V}$ up-trig.\parSol{}
-%If $Tv=\lambda v.$ Then $\Par{\lambda^2+2\lambda+2}v=0\Rightarrow\lambda=-1+\i$ or $-1-\i$ on $\Fbb.$\parSol{}
-%Othws, the monic $p_v\Par{z}=z^2+2z+2$ is of smallest deg suth $p_v\Par{T}v=0.$\parSol{}
-%Then the min of $T$ is a multi of $p_v,$ which has two zeros $-1\pm\i$ on $\Fbb.$\parSol{}
-%Thus (b) holds, and the ctrapos of (a) holds.\PfEnd\vspace{2pt}\parSol{}
+}Define $p_v$ by Exe (7). Note that $\deg p_v\geqslant 1$ becs $v\neq 0.$ And $q\Par{T\mmid_{\nullp p_v\SmallPar{v}}}=0\Rightarrow q$ is multi of $p_v.$\parSol{}
+(a) Note that $q$ has no liney factors $\Rightarrow \deg p_v\geqslant 2$. Hence by the min of $\deg p_v,$\parSol{\Hb}
+and by (b) in Exe (7), the min of $T$ is multi of $p_v=q.$ By [4E 5.44], done.\parSol{}
+(b) $q\Par{z}=\Par{z+1+\i}\Par{z+1-\i}\Rightarrow -1-\i$ or $-1+\i$ zero of $p_v\Rightarrow$ is eigval $\Rightarrow$ on diag.\PfEnd
 \SepLine
 
 \Anchor{5BII4e9}\ProblemN{9}{
