@@ -610,9 +610,10 @@ Becs $U$ invard $\Par{T-\lambda I}.$ Now $u\in U\Rightarrow\Par{T-\lambda I}{u}\
 \vspace{2pt}
 
 {\normalsize
-下面，为了照顾原书两版过大的差距，特别将此节分成(I), (II)两部分。考虑到本节4E「本征值与极小多项式」和「奇维度实向量空间的本征值」(相当一部分是从3E的8.C节挪过来的)是对3E「多项式作用于算子」和「本征值的存在性」(也即本节3E前半部分)的极大扩充，这一扩充也大大改变了本节3E后半部分的「上三角矩阵」，故而将4E放在3E前面。\par
-(I)除了覆盖本节4E全部和3E前半部分与之相关的所有习题，还会覆盖上节4E末。\par
-(II)除了覆盖本节3E后半部分「上三角矩阵」，还会覆盖下节4E；并且，下节还会覆盖下下节4E。\par\vspace{2pt}
+下面，为了照顾原书两版过大的差距，特别将此节分成(I), (II)两部分。考虑到本节4e「本征值与极小多项式」和「奇维度实向量空间的本征值」(相当一部分是从3e的8.C节挪过来的)是对3e「多项式作用于算子」和「本征值的存在性」(也即本节3e前半部分)的极大扩充，这一扩充也大大改变了本节3e后半部分的「上三角矩阵」，故而将4e放在3e前面。\par
+(I)除了覆盖本节4e全部和3e前半部分与之相关的所有习题，还会覆盖上节4e末。\par\HI
+注意：本节4e和3e的8.C节、9.A节有交集，许多略去的习题和注解可以在3e这两节找到。\par
+(II)除了覆盖本节3e后半部分「上三角矩阵」，还会覆盖下节4e；并且，下节还会覆盖下下节4e。\par\vspace{2pt}
 }\vspace{10pt}
 
 %\small
@@ -625,11 +626,9 @@ Becs $U$ invard $\Par{T-\lambda I}.$ Now $u\in U\Rightarrow\Par{T-\lambda I}{u}\
 
 %[1]: (4E 5.A.33), 13; [2]: (4E 25, 26, 27, 28, 22); [3]: 6, (4E 10, 23, 21), 19; [4]: (4E 13, 14); [5]: (4E 20, 24), 10; [6]: 1, 2, 7, 3, (4E 5.A.32); [7]: 8, (4E 12, 3, 8); [8]: (4E 11), 5, (4E 7); [9]: 11, 12, (4E 17, 18); [10]: 18 \OR (4E 15), (4E 9), (4E 16); [11]: (2E Ch5.24), (4E 29).
 
-\Anchor{5BIN5.17}\ProblemB{
-	\NoteForSmall{[5.17]}\;\;\TextB{Prove $\nullp p\Par{T}$ and $\rangep p\Par{T}$ are invard $T$.}
-}(a) $u\in\nullp p\Par{T}\Longleftrightarrow p\Par{T}u = 0\Rightarrow p\Par{T} Tu=Tp\Par{T}u=0\Longleftrightarrow Tu\in\nullp p\Par{T}.$\parSol{}
-(b) $u\in\rangep p\Par{T}\Rightarrow\exists\,v\in V,\,u=p\Par{T}v\Rightarrow Tu=p\Par{T}Tv\in\rangep p\Par{T}.$\PfEnd
-\SepLine\pagebreak
+\Anchor{5BIN5.17}\ProblemB[]{
+	\NoteForSmall{[5.17]}\;\;\TextB{By [8.20], $\nullp p\Par{T}$ and $\rangep p\Par{T}$ are invard $T$.}
+}\SepLine\pagebreak
 
 \ProblemN{\Anchor{5BI9}{9}}{
 	\TextA{Supp $V$ finide, $T\in\Lm{V},$ and non0 $v\in V.$ Let $p\in\PoFi$ be non0 of smallest deg}
@@ -819,11 +818,11 @@ $p\Par{T}=0\Rightarrow\forall v\in V,p\Par{T}v=0\Rightarrow p\Par{T\XSlash U}\Pa
 \Or By (3.F.15), for any $s\in\PoFi,\:s\Par{T\apostrophe}=s\Par{T}\apostrophe=0\Longleftrightarrow s\Par{T}=0.$\PfEnd
 \SepLine
 
-\Anchor{5BI4e27}\ProblemBnoor{4E 27}{
-	\TextB{Supp $\Fbb=\Rbb,$ $V$ is finide, and $T\in \Lm{V}$. Prove the min $p$ of $T_{\!\Cbb}$ is the min $q$ of $T$.}
-}(a) $\forall u+\i 0\in V_{\!\Cbb},\,p\Par{T_{\!\Cbb}}\Par{u}=p\Par{T}u=0\Rightarrow p\Par{T}=0.$\parSol{}
-(b) $q\Par{T}=0\Rightarrow \forall u+\i v\in V_{\!\Cbb},\,q\Par{T_{\!\Cbb}}\Par{u+\i v}=q\Par{T}u+\i q\Par{T}v=0.$\PfEnd
-\SepLine
+%\Anchor{5BI4e27}\ProblemBnoor{4E 27}{
+%	\TextB{Supp $\Fbb=\Rbb,$ $V$ is finide, and $T\in \Lm{V}$. Prove the min $p$ of $T_{\!\Cbb}$ is the min $q$ of $T$.}
+%}(a) $\forall u+\i 0\in V_{\!\Cbb},\,p\Par{T_{\!\Cbb}}\Par{u}=p\Par{T}u=0\Rightarrow p\Par{T}=0.$\parSol{}
+%(b) $q\Par{T}=0\Rightarrow \forall u+\i v\in V_{\!\Cbb},\,q\Par{T_{\!\Cbb}}\Par{u+\i v}=q\Par{T}u+\i q\Par{T}v=0.$\PfEnd
+%\SepLine
 
 \Anchor{5BIN5.32}\ProblemBnoor{4E 5.32}[\Sbra]{
 	\TextB{Supp $T\in\Lm{V}$ with the min $p.$ Prove $T$ not inje $\Longleftrightarrow$ the const term of $p$ is $0.$}
@@ -896,13 +895,12 @@ $\Rightarrow T^k\Par{T^{-k}}=I=b_0 T^k+b_1 T^{k-1}+\dots+b_{k-1}T.$ Becs $\exist
 %	\TextB{Find the min poly of $T$ defined in \tgnr\Par{\hLk{5A10}{5.A.10}}.}
 %}By (5.A.9) and [8.40, 8.49], $1,2,\dots,n$ are all the zeros of the min poly of $T.$\PfEnd
 %\SepLine
-\pagebreak
 
 \Anchor{5BI4e3}\ProblemBnoor{4E 3}{
 	\TextB{Find the min poly of $T:\Par{x_1,\dots,x_n}\mapsto\Par{x_1+\dots+x_n,\cdots,x_1+\dots+x_n}.$}
 }If $n=1$ then $T=I\in\Lm{\Fbb}$ with $\Par{z-1}$ as the min. Supp $n>1.$ Then $T\neq I.$\parSol{}
 Now each $Te_k=e_1+\dots+e_n;\;T^2 e_k=n \Par{e_1+\dots+e_n}=nTe_k\Rightarrow T^2-nT=T\Par{T-n}=0.$\PfEnd
-\SepLine
+\SepLine\pagebreak
 
 \Anchor{5BI4e8}\ProblemBnoor{4E 8}{
 	\TextB{Find the min $p$ of $T\in\Lm{\Rbb^2},$ the countclockws rotat optor by $\theta\in\Rbb^+$.}
@@ -918,26 +916,23 @@ $ce_1+bTe_1=-T^2 e_1\Longleftrightarrow{}${\small$\begin{pmatrix}1 & \cos\theta\
 %\end{pmatrix}$}. By (4E 11), $\Par{z\pm 1}$ or $\Par{z^2-2\cos\theta\,z+1}$ is the min.\PfEnd
 \SepLine
 
-\Anchor{5BI4e9}\ProblemBnoor{{4E 9}}{
-	\TextA{Supp $T\in\Lm{V}$ with the min $p=c_0+c_1z+\dots+c_{m-1}z^{m-1}+z^m,$}
-	\TextA{and $A=\Mt{T,B_V}$ is suth each $A_{j,k}\in\Qbb.$ Explain why all $c_k\in\Qbb.$}
-}Let $b_0I+b_1A+\dots+b_{m-1}A^{m-1}=-A^m.$ \,A system of $n^2$ liney equations in $m$ unknowns.\parSol{}
-Becs each $\Par{A^i}{_{j,k}}\in\Qbb\Rightarrow b_i\in\Qbb.$ 又 $\Par{c_0,\dots,c_{m-1}}$ is a solus.\PfEnd
-\SepLine
+%\Anchor{5BI4e9}\ProblemBnoor{{4E 9}}{
+%	\TextA{Supp $T\in\Lm{V}$ with the min $p=c_0+c_1z+\dots+c_{m-1}z^{m-1}+z^m,$}
+%	\TextA{and $A=\Mt{T,B_V}$ is suth each $A_{j,k}\in\Qbb.$ Explain why all $c_k\in\Qbb.$}
+%}Let $b_0I+b_1A+\dots+b_{m-1}A^{m-1}=-A^m.$ \,A system of $n^2$ liney equations in $m$ unknowns.\parSol{}
+%Becs each $\Par{A^i}{_{j,k}}\in\Qbb\Rightarrow b_i\in\Qbb.$ 又 $\Par{c_0,\dots,c_{m-1}}$ is a solus.\PfEnd
+%\SepLine
 
 \Anchor{5BI4e11}\ProblemBnoor{4E 11}{
 	\TextA{Supp $V$ is 2\hspace{1pt}-\hspace{1pt}dim, $T\in\Lm{V}$ with the min $p$, and $\Mt[\BigPar]{T,\Par{v,w}}={}${\large$\begin{pmatrix} a &\hspace{-4pt} c\\[-4pt] b &\hspace{-4pt} d\end{pmatrix}.$}\vspace{-8pt}}
 	\PrePa\TextA{Show $q\Par{z}=z^2-\Par{a+d}z+\Par{ad-bc}$ is a multi of $p.$}
 	\PrePb\TextA{Show if $b=c=0$ and $a=d,$ then $p\Par{z}=z-a;$\;othws $p=q.$}
 }(a) $Tv=av+bw\Rightarrow\Par{T-aI}v=bw\Rightarrow\Par{T-dI}\Par{T-aI}v=bTw-bdw=bcv.$\parSol{\Ha}
-$Tw=cv+dw\Rightarrow \Par{T-dI}w=cv\Rightarrow\Par{T-aI}\Par{T-dI}w=cTv-acv=bcw.$\vspace{4pt}\parSol{}
-(b) If $b=c=0$ and $a=d.$ Then $\Mt{T}=a\Mt{I}\Rightarrow T=aI.$\parSol{\Hb}
-Othws, we show $T\not\in\Span{I},$ so that $\deg p=2=\deg q.$\parSol{\Hb}
-Let (1) $a=d,$ (2) $b=0,$ (3) $c=0.$ Then (1), (2) and (3) cannot be all true.\parSol{\Hb}
-(I) Asum (1) is true, with (2) or (3) not true.\parSol{\Hb\HI}
-Then $Tv=av+bw\not\in\Span{v},$ or $Tw=cv+aw\not\in\Span{w}.$\parSol{\Hb}
-(II) Asum (2) or (3) are true, with (1) not true.\parSol{\Hb\HII}
-Then $Tv=av+bw\not\in\Span{w},$ or $Tw=cv+dw\not\in\Span{w}.$\PfEnd
+$Tw=cv+dw\Rightarrow \Par{T-dI}w=cv\Rightarrow\Par{T-aI}\Par{T-dI}w=cTv-acv=bcw.$\vspace{2pt}\parSol{}
+(b) {\vspace{-2pt}\FontSmall If $b=c=0$ and $a=d.$ Then $\Mt{T}=a\Mt{I}\Rightarrow T=aI.$ Othws, we show $T\not\in\Span{I},$}\parSol{\Hb}
+{\vspace{-2pt}\FontSmall so that $\deg p=\dim V.$ Let (1) $a=d,$ (2) $b=0,$ (3) $c=0.$ Then (1), (2) and (3) cannot be all true.}\parSol{\Hb}
+{\vspace{-2pt}\FontSmall(I) Asum (1) is true, with (2) or (3) not true. Then $Tv=av+bw,$ or $Tw=cv+aw\not\in\Span{w}.$}\parSol{\Hb}
+{\vspace{-2pt}\FontSmall(II) Asum (2) or (3) are true, with (1) not true. Then $Tv=av+bw,$ or $Tw=cv+dw.$}\PfEnd
 \SepLine
 
 \Anchor{5BI4e17}\ProblemBnoor{{4E 17}}{
@@ -1010,92 +1005,116 @@ Define $r\Par{z}=s\Par{\lambda z}\Rightarrow r\Par{T}=s\Par{\lambda T}=0\Rightar
 %By induc.\PfEnd
 %\SepLine
 
-\Anchor{5BI2e24}\ProblemBnoor{{2E 24}}{
-	\TextB{Supp $\Fbb=\Rbb,T\in\Lm{V}$ has no eigvals. Prove every invarsp $U$ is even-dim.}
-}Asum $\dim U$ is odd. Then $\exists$ eigval of $T\mmid_U,$ so of $T\Rightarrow\exists$ $1$\hspace{1pt}-\hspace{1pt}dim invarsp, ctradic.\PfEnd
-\SepLine
+%\Anchor{5BI2e24}\ProblemBnoor{{2E 24}}{
+%	\TextB{Supp $\Fbb=\Rbb,T\in\Lm{V}$ has no eigvals. Prove every invarsp $U$ is even-dim.}
+%}Asum $\dim U$ is odd. Then $\exists$ eigval of $T\mmid_U,$ so of $T\Rightarrow\exists$ $1$\hspace{1pt}-\hspace{1pt}dim invarsp, ctradic.\PfEnd
+%\SepLine
 
 \Anchor{5BI4e29}\ProblemBnoor{{4E 29}}{
-	\TextB{Supp $V$ is finide, $\dim V=n\geqslant 2$, $T\in\Lm{V}.$ Show $T$ has a $2$\hspace{1pt}-\hspace{1pt}dim invarsp.}
-}(i) $n=2,$ done.\parSol{\Endi}
-(ii) $n>2.$ Asum the desired result is true for $V$ of smaller dim.\parSol{\Hii}
-Supp $p$ is the min of deg $m$ and $p\Par{z}=\Par{z-\lambda_1}\cdots\Par{z-\lambda_m}.$\parSol{\Hii}
-If $T=\lambda I\Longleftrightarrow p=0$ or $\deg p=1,$ then done. \Sbra{ $m\neq 0$ becs $\dim V\neq 0.$ }\parSol{\Hii}
-Now define $q\Par{z}=\Par{z-\lambda_1}\Par{z-\lambda_2}$. By asum, $T\Big|{_{\nullp q\SmallPar{T}}}$ has invarsp of dim $2.$\PfEnd
+	\TextB{Supp $V$ is finide, $\dim V=n\geqslant 2$, and $T\in\Lm{V}.$ Show $T$ has a $2$\hspace{1pt}-\hspace{1pt}dim invarsp.}
+}See [9.8] for a graceful proof. \Or Let each $V_{\!k}$ be an arb vecsp of dim $k$ with an arb $T_{\!k}\in\Lm{V_{\!k}}.$\par\quad
+Define the stmt $P\Par{k}:$ every optor on a $V_{\!k}$ has invarsp of dim $2.$ (i) $k=2.$ Immed.\par\quad
+(ii) $k\geqslant 2.$ Asum $P\Par{k}$ holds. Let $p$ be the min of $T_{\!k+1}=T.$ Note that $V_{\!k+1}$ non0 $\Rightarrow p$ nonC, $\deg p\geqslant 1.$\par\quad
+(a) If $p\Par{z}=\Par{z-\lambda}q\Par{z},$ then by (4E 5.A.39), $\exists\,U$ invarspd $T$ of dim $k.$\par\quad\Ha
+By asum, the optor $T\mmid_U$ on a $k$\hspace{1pt}-\hspace{1pt}dim vecsp has invarsp of dim $2$, so has $T.$\vspace{2pt}\par\quad
+(b) Othws, $T_{\!k+1}$ has no eigvals $\Rightarrow p$ of deg $\geqslant 1$ has no zeros, thus $\Fbb=\Rbb,$ and $\deg p$ is even.\par\quad\Hb
+Let $p\Par{z}=\Par{z^2+b_1z+c_1}\cdots\Par{z^2+b_mz+c_m}\Rightarrow\exists\,\Par{T^2+b_jT+c_j}$ not inje\par\quad\Hb
+$\Rightarrow\exists\,v\neq 0,\Par{T^2+b_jT+c_j}v=0\Rightarrow T^2v\in\Span{v,Tv},$ invard $T,$ while $\dim\Span{v,Tv}=2.$\PfEnd
 \SepLine
 
 \ChEnd
 
 \pagebreak
 
-\ChDecl{Ch5BII}{5.B: II}{\qquad{\small\textbf{注意\,:}\;与以往不同, 这一节的题号主要使用第四版5.C节}}%\orMode{\hLk{5BII9}{9}\;\;\hLk{5BII14}{14}\;\;\hLk{5BII15}{15}\;\;\hLk{5BII20}{20}\;\;|\;\;\hLk{5BII4e1}{4E: 1,}\;\;\hLk{5BII4e2}{2,}\;\;\hLk{5BII4e3}{3,}\;\;\hLk{5BII4e4}{4,}\;\;\hLk{5BII4e5}{5,}\;\;\hLk{5BII4e6}{6,}\;\;\hLk{5BII4e7}{7,}\;\;\hLk{5BII4e8}{8,}\;\;\hLk{5BII4e9}{9,}\;\;\hLk{5BII4e10}{10}\;\;\hLk{5BII4e11}{11,}\;\;\hLk{5BII4e12}{12,}\;\;\hLk{5BII4e13}{13,}\;\;\hLk{5BII4e14}{14}}{[1]: ; [2]: ; [3]: .}
+\ChDecl{Ch5BII}{5.B: II}{\qquad{\small\textbf{注意\,:}\;这一节的题号主要使用第四版5.C节}}%\orMode{\hLk{5BII9}{9}\;\;\hLk{5BII14}{14}\;\;\hLk{5BII15}{15}\;\;\hLk{5BII20}{20}\;\;|\;\;\hLk{5BII4e1}{4E: 1,}\;\;\hLk{5BII4e2}{2,}\;\;\hLk{5BII4e3}{3,}\;\;\hLk{5BII4e4}{4,}\;\;\hLk{5BII4e5}{5,}\;\;\hLk{5BII4e6}{6,}\;\;\hLk{5BII4e7}{7,}\;\;\hLk{5BII4e8}{8,}\;\;\hLk{5BII4e9}{9,}\;\;\hLk{5BII4e10}{10}\;\;\hLk{5BII4e11}{11,}\;\;\hLk{5BII4e12}{12,}\;\;\hLk{5BII4e13}{13,}\;\;\hLk{5BII4e14}{14}}{[1]: ; [2]: ; [3]: .}
 
-\Anchor{5BII4e1}\ProblemN{1}{
-	\TextA{Supp $T^2$ has up-trig matrix. Give a countexa\hspace{1pt}$:$ $T$ has up-trig matrix.}
-}
-\SepLine
+%\Anchor{5BII4e1}\ProblemN{1}{
+%	\TextA{Supp $T^2$ has up-trig matrix. Give a countexa\hspace{1pt}$:$ $T$ has up-trig matrix.}
+%}Let $\Fbb=\Rbb.$ Define $T\Par{x,y}=\Par{-y,x}.$ Then $T^2=-I.$ While $T$ has no eigval.\PfEnd
+%\SepLine
 
 \Anchor{5BII4e2}\ProblemN{2}{
-	\TextA{Supp $A$ and $B$ are up-trig matrices of the same size,}
+	\TextA{Supp $A$ and $B$ are up-trig \Par{and square} matrices of the same size,}
 	\TextA{with $\alpha_1 , \dots , \alpha_n$ on the diag of $A$ and $\beta_1 , \dots , \beta_n$ on the diag of $B$.}
 	\PrePa\TextA{Show $A + B$ up-trig with $\alpha_1 + \beta_1 , \dots , \alpha_n + \beta_n$ on the diag.}
 	\PrePb\TextA{Show $AB$ up-trig with $\alpha_1 \beta_1 , \dots , \alpha_n \beta_n$ on the diag.}
-}
+}(a) By def, immed. \:(b) Becs $A_{j,k}=B_{j,k}=0$ for $j>k.$ By def, for each $p\in\Bra{1,\dots,n},$\parSol{} $\Par{AB}{_{p,p}}=A_{p,1}B_{1,p}+\dots+A_{p,p-1}B_{p-1,p}+A_{p,p}B_{p,p}+A_{p,p+1}B_{p+1,p}+\dots+A_{p,n}B_{n,p}=A_{p,p}B_{p,p}.$\PfEnd
 \SepLine
 
 \Anchor{5BII4e3}\ProblemN{3}{
 	\TextA{Supp $T$ inv, $B_V=\Par{v_1,\dots,v_n},$ $\Mt{T}=A$ is up-trig,}
 	\TextA{with $\lambda_1,\dots,\lambda_n$ on diag. Show $A^{-1}$ is also up-trig, with $\lambda_1^{-1},\dots,\lambda_n^{-1}$ on diag.}
-}
+}Becs $\lambda_k$ on diag on $A$ $\Longleftrightarrow\lambda_k$ eigval of $T$ $\Longleftrightarrow\lambda_k^{-1}$ eigval of $T^{-1}$ $\Longleftrightarrow\lambda_k^{-1}$ on diag of $A^{-1}.$\PfEnd\vspace{2pt}\par\quad
+\Or Let each $Tv_k=u_k+\lambda_kv_k,$ where $u_k\in\Span{v_1,\dots,v_{k-1}}.$ We use induc on $k.$\par\quad
+(i) $k=1.$ $Tv_1=\lambda_1v_1\Rightarrow T^{-1}v_1=\lambda_1^{-1}v_1\in\Span{v_1},$ invard $T^{-1};$ and $\lambda_1^{-1}$ is the 1st ent on diag.\par\quad\Endi
+(ii) $k\geqslant 2.$ Asum $\Span{v_1,\dots,v_{k-1}}$ invard $T^{-1}.$\par\quad\Hii
+Note that $Tv_k=u_k+\lambda_kv_k\Rightarrow v_k=T^{-1}\Par{c_1v_1+\dots+c_{k-1}v_{k-1}}+\lambda_kT^{-1}v_k.$\par\quad\Hii
+Thus $T^{-1}v_k=\lambda_k^{-1}v_k-\lambda_k^{-1}T^{-1}u_k\in\Span{v_1,\dots,v_k},$ invard $T;$ and $\lambda_{k}^{-1}$ is the $k$-th ent on diag.\PfEnd
 \SepLine
 
 \Anchor{5BII9}\Anchor{5BII4e7}\ProblemNnoor{7}{3E 5.B.9}{
 	\TextA{Supp $V$ is finide, and $v \in V$.}
 	\PrePa\TextA{Prove $\exists\,!$ monic $p_v$ of smallest deg suth $p_v\Par{T}v = 0$.}
-	\PrePb\TextA{Prove the min poly of $T$ is a poly multi of $p_v$.}
-}
+	\PrePb\TextA{Prove the min poly $p$ of $T$ is a poly multi of $p_v$.}
+}(a) {\Existns} \;If $v=0,$ then let $p_v\Par{z}=1.$ Supp $v\neq0.$ Then $\Par{v,Tv,\dots,T^{\dim V}v}$ liney dep.\parSol{\Ha}
+\Blind{\Existns} \;$\exists$ smallest $m$ suth $-T^mv=c_0v+c_1Tv+\dots+c_{m-1}T^{m-1}v.$ Thus define $p_v.$\vspace{2pt}\parSol{\Ha}
+{\Uniqnes} \;Supp $q_v$ is monic of smallest deg and $q_v\Par{T}v=0.$\parSol{\Ha}
+\Blind{\Uniqnes} \;Then $\Par{p_v-q_v}\Par{T}v=0,$ while $\deg p_v=m=\deg q_v\Rightarrow\deg\Par{p_v-q_v}<m.$\vspace{2pt}\parSol{}
+(b) Let $p_vs+r=p$ with $\deg r<\deg p_v.$ Becs $p_v\BigPar{T\mmid_{\nullp p_v\SmallPar{T}}}=0=p\BigPar{T\mmid_{\nullp p_v\SmallPar{T}}}=r\BigPar{T\mmid_{\nullp p_v\SmallPar{T}}}.$\parSol{\Hb}
+By (a), $p_v$ is the min of $T\mmid_{\nullp p_v\SmallPar{T}}.$ Then $r=0,$ by the min of $\deg p_v.$\PfEnd
 \SepLine
 
-\Anchor{5BII14}\Anchor{5BII4e4}\ProblemNor{4}{3E 5.B.14}{
-	\TextA{Give an inv $T$ and a $B_V$ suth each $\Mt{T}{_{k,k}}=0.$}
-}
-\SepLine
+%\Anchor{5BII14}\Anchor{5BII4e4}\ProblemNor{4}{3E 5.B.14}{
+%	\TextA{Give an inv $T$ and a $B_V$ suth each $\Mt{T}{_{k,k}}=0.$}
+%}Define $T\in\Lm{\Rbb^2}:\Par{x,y}\mapsto\Par{y,x}.$
+%\SepLine
+%
+%\Anchor{5BII15}\Anchor{5BII4e5}\ProblemNor{5}{3E 5.B.15}{
+%	\TextA{Give a non-inv $T$ and a $B_V$ suth each $\Mt{T}{_{k,k}}\neq 0.$}
+%}Define $T\in\Lm{\Fbb^2}:\Par{z,w}\mapsto\Par{z+w,z+w}.$
+%\SepLine
 
-\Anchor{5BII15}\Anchor{5BII4e5}\ProblemNor{5}{3E 5.B.15}{
-	\TextA{Give a non-inv $T$ and a $B_V$ suth each $\Mt{T}{_{k,k}}\neq 0.$}
-}
-\SepLine
-
-\Anchor{5BII20}\Anchor{5BII4e6}\ProblemNor{6}{3E 5.B.20}{
+\Anchor{5BII20}\Anchor{5BII4e6}\ProblemNor[]{6}{3E 5.B.20}{
 	\TextA{Supp $\Fbb=\Cbb,$ $V$ is finide, $T\in\Lm{V},$ and $k\in\Bra{1,\dots,\dim V}.$}
-	\TextA{Prove $V$ has a $k$\hspace{1pt}-\hspace{1pt}dim invarspd $T.$}
-}\par
-\SepLine
+	\TextA{Prove $V$ has a $k$\hspace{1pt}-\hspace{1pt}dim invarspd $T.$\hfill\FontNorm\tgnr By [5.27] and [5.26], immed.\vspace{-3pt}}
+}\SepLine
 
 \Anchor{5BII4e8}\ProblemN{8}{
-	\TextA{Supp $V$ is finide, and $\exists\,v\in V\nonzero$ suth $T^2 v + 2Tv = -2v$.}
+	\TextA{Supp $V$ is finide, and $v\in V$ is non0 suth $T^2 v + 2Tv = -2v$.}
 	\PrePa\TextA{Supp $\Fbb=\Rbb.$ Prove $\nexists\,B_V$ suth $\Mt{T}$ up-trig.}
 	\PrePb\TextA{Supp $\Fbb=\Cbb,$ and $\exists\,B_V$ suth $A=\Mt{T}$ up-trig. Prove $-1+\i$ or $-1-\i$ on the diag.}
-}\par
+}%Asum $A=\Mt{T,B_V}$ up-trig.\parSol{}
+%If $Tv=\lambda v.$ Then $\Par{\lambda^2+2\lambda+2}v=0\Rightarrow\lambda=-1+\i$ or $-1-\i$ on $\Fbb.$\parSol{}
+%Othws, the monic $p_v\Par{z}=z^2+2z+2$ is of smallest deg suth $p_v\Par{T}v=0.$\parSol{}
+%Then the min of $T$ is a multi of $p_v,$ which has two zeros $-1\pm\i$ on $\Fbb.$\parSol{}
+%Thus (b) holds, and the ctrapos of (a) holds.\PfEnd\vspace{2pt}\parSol{}
 \SepLine
 
 \Anchor{5BII4e9}\ProblemN{9}{
-	\TextA{Supp $B\in\Fbb^{n,n}$ with complex ent.}
-	\TextA{Prove $\exists$ inv $A\in\Fbb^{n,n}$ with complex ent suth $A^{-1} BA$ is up-trig.}
-}\par
-
-\par
-\SepLine
+	\TextA{Supp $\Fbb=\Cbb,$ $B\in\Fbb^{n,n}.$ Prove $\exists$ inv $A\in\Fbb^{n,n}$ suth $A^{-1} BA$ is up-trig.}
+}Define $T\in\Fbb^n$ with $B=\Mt[\BigPar]{T,\Par{e_1,\dots,e_n}}$ Let $C=\Mt[\BigPar]{T,\Par{f_1,\dots,f_n}}$ be up-trig.\parSol{}
+Let $A=\Mt[\BigPar]{I,\,f\rightarrow e}.$ Then $C=A^{-1}BA.$\PfEnd
+\SepLine\pagebreak
 
 \Anchor{5BII4e10}\ProblemN{10}{
-	\TextA{Supp $B_V=\Par{v_1,\dots,v_n}.$ Show the following are equi\hspace{1pt}$:$}
-	\PrePa\TextA{$\Mt{T,B_V}$ lower trig. \, {\tgnr\large(b)} Each $\Span{v_k,\dots,v_n}$ invard $T.$ \, {\tgnr\large(c)} Each $Tv_k\in\Span{v_k,\dots,v_n}.$}
-}\par
+	\TextA{Supp $B_V=\Par{v_1,\dots,v_n},A=\Mt{T,B_V}.$ Show the following are equiv\hspace{1pt}$:$}
+	\PrePa\TextA{$A$ is low-trig. \:{\tgnr\large(b)} Each $Tv_k\in\Span{v_k,\dots,v_n}.$ \:{\tgnr\large(c)} Each $\Span{v_k,\dots,v_n}$ invard $T.$}
+}By def, (a) and (b) are equiv, and (c) $\Rightarrow$ (b). Now supp (b) holds. For any $k\in\Bra{1,\dots,n}.$\parSol{}
+$Tv_k\in\Span{v_k,\dots,v_n},\,Tv_{k+1}\in\Span{v_{k+1},\dots,v_n},\cdots,\,Tv_{n}\in\Span{v_n}.$ Thus (c) holds.\PfEnd
 \SepLine
 
 \Anchor{5BII4e11}\ProblemN{11}{
 	\TextA{Supp $\Fbb=\Cbb,$ $V$ is finide. Prove $\exists\,B_V$ suth $\Mt{T}$ low-trig.}
-}\par
+}(i) $\dim V=0,1.$ Done. (ii) $\dim V>1.$ Asum the desired result is true for dim ${}<\dim V$.\parSol{}
+Let $\lambda$ be eigval of $T$ by [5.21]. Let $U=\Range\Par{T-\lambda I},$ invard $T$ and of dim ${}<\dim V.$\parSol{}
+Now $T\mmid_U\in\Lm{U},$ by asum, has a $B_U=\Par{u_1,\dots,u_m}$ suth $\Mt{T\mmid_U,B_U}$ low-trig.\parSol{}
+Then each $Tu_j\in\Span{u_j,\dots,u_m}.$ \,Let $B_V=\Par{v_1,\dots,v_n,u_1,\dots,u_m}.$\parSol{}
+Each $\Par{T-\lambda I}v_k\in\Span{u_1,\dots,u_m}\Rightarrow Tv_k=\Par{T-\lambda I}v_k+\lambda v_k\in\Span{v_k,\dots,v_n,u_1,\dots,u_m}.$\PfEnd\vspace{2pt}\parSol{}
+\Or Simlr, using induc on $\dim V.$ Let $v_1$ be eigvec. Let $U=\Span{v_1},$ invard $T.$\parSol{}
+Then $V\Slash U$ invard $T$ of dim $\dim V-1.$ Now $T\XSlash U\in\Lm{V\XSlash U}.$\parSol{}
+By asum, $T\XSlash U$ has a $B_{V\XSlash U}=\Par{v_2+U,\dots,v_n+U}$ suth $\Mt{T\XSlash U}$ low-trig.\parSol{}
+Now for each $j\in\Bra{1,\dots,n},\:\BigPar{T\XSlash U}\Par{v_j+U}=Tv_j+U\in\Span{v_j+U,\dots,v_n+U}.$\parSol{}
+又 By (3.E.13), $B_V=\Par{v_1,\dots,v_n}.$ \,Thus $Tv_j\in\Span{v_j,\dots,v_n}.$\PfEnd
 \SepLine
 
 \Anchor{5BII4e12}\ProblemN{12}{
@@ -1109,22 +1128,17 @@ Now define $q\Par{z}=\Par{z-\lambda_1}\Par{z-\lambda_2}$. By asum, $T\Big|{_{\nu
 }
 \SepLine
 
-\Anchor{5BII4e14}\ProblemN{14}{
-	\TextA{Supp $V$ is finide. Prove $T$ up-trig $\Longleftrightarrow$ $T\apostrophe$ up-trig.}
-}
-\SepLine
+\Anchor{5BII4e14}\ProblemN[]{14}{
+	\TextA{Supp $V$ is finide. Prove $T$ up-trig $\Longleftrightarrow$ $T\apostrophe$ up-trig.\hfill\FontNorm\tgnr By (4E 18) and [4E 5.44], immed.\vspace{-3pt}}
+}\SepLine
+\ChEnd\pagebreak
 
-\ChEnd
-
-\ChDecl{Ch5C}{5.C} % 10h
-
-XXXX
-
-
+\ChDecl{Ch5C}{5.C}{}
 \par
 \SepLine
-
 \ChEnd
+\pagebreak
+
 \ChDecl{Ch5E}{5.E [4E]}{}%\orMode{\hLk{5E1}{1}\;\;\hLk{5E2}{2}\;\;\hLk{5E3}{3}\;\;\hLk{5E4}{4}\;\;\hLk{5E5}{5}\;\;\hLk{5E6}{6}\;\;\hLk{5E7}{7}\;\;\hLk{5E8}{8}\;\;\hLk{5E9}{9}\;\;\hLk{5E10}{10}}{}
 \vspace{4pt}
 
