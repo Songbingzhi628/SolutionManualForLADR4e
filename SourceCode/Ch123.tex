@@ -65,7 +65,7 @@ By Assoc: $\Par{a+\infty}+\Par{-\infty}\neq a+\Par{\infty+\Par{-\infty}}.$\parSo
 
 \vspace{0pt}
 
-\Anchor{1CNE5}\BulletPointX\NoteForSmall{Exe (5)}\;\;$\Cbb=\Rbb\oplus\Span{\i}=\Span{1,\i}$ is true if we let $\Fbb=\Rbb.$\vspace{-4pt}
+\Anchor{1CNE5}\BulletPointX\NoteForSmall{Exe (5)}\;\;$\Cbb=\Rbb\oplus\Span{\i}=\Span{1,\i}$ is true if we let $\Fbb=\Rbb.$ Though strange.\vspace{-4pt}
 \SepLine
 
 \ProblemN{\Anchor{1C7}{7}}{
@@ -361,13 +361,15 @@ $Q\Rightarrow P:\forall v\in V,\exists\,!\,b_i\in\Fbb,\;v=b_1w_1+\dots+b_mw_m\Ri
 	(a) \TextB{Show [P] $B$ is liney indep in $V$ $\Longleftrightarrow B$ is liney indep in $V_{\!\Cbb}.$ [Q]}
 	(b) \TextB{Show [P] $B$ spans $V$ $\Longleftrightarrow B$ spans $V_{\!\Cbb}.$ [Q]\vspace{2pt}}
 }{\FontSmall\par\quad
-(a) $P\Rightarrow Q:$ \;Note that each $v_k\in V_{\!\Cbb}.$ \;\; $Q\Rightarrow P:$ \;If $\lambda_k\in\Rbb$ with $\lambda_1v_1+\dots+\lambda_nv_n=0,$ then each $\Real\lambda_k=\lambda_k=0.$\par\quad
-\Blind{(a)} ${}^\neg P\Rightarrow{}^\neg Q:$ \;$\exists\,v_j=a_{j-1}v_{j-1}+\dots+a_1v_1\in V_{\!\Cbb}.$\par\quad
-\Blind{(a)} ${}^\neg Q\Rightarrow{}^\neg P:$ \;$\exists\,v_j=\lambda_{j-1}v_{j-1}+\dots+\lambda_1v_1\Rightarrow v_j=\Par{\Real\lambda_{j-1}}v_{j-1}+\dots+\Par{\Real\lambda_1}v_1\in V.$\par\vspace{3pt}\quad
-(b) $P\Rightarrow Q:$ \;$\forall u+\i v\in V_{\!\Cbb},\;u,v\in V\Rightarrow\exists\,a_i,b_i\in\Rbb,u+\i v=\sum_{i=1}^n\Par{a_i+\i b_i}v_i.$\par\quad
-\Blind{(b)} $Q\Rightarrow P:$ \;$\forall v\in V,\exists\,\!\,a_i+\i b_i\in\Cbb,\;v+\i 0=\BigBigPar{{\sum_{i=1}^na_iv_i}}+\i\,\BigBigPar{{\sum_{i=1}^nb_iv_i}}\envFontSmall\Rightarrow v\in\Span{v_1,\dots,v_m}.$\par\quad
-\Blind{(b)} ${}^\neg Q\Rightarrow{}^\neg P:$ \;$\exists\,v\in V,v\not\in\Span{B}\Rightarrow v+\i 0\not\in\Span{B}$ while $v+\i 0\in V_{\!\Cbb}.$\par\quad
-\Blind{(b)} ${}^\neg Q\Rightarrow{}^\neg P:$ \;$\exists\,u+\i v\in V_{\!\Cbb},u+\i v\not\in\Span B\Rightarrow u$ or $v\not\in\Span B.$ Note that $u,v\in V.$
+(a) $P\Rightarrow Q:$ \;Note that each $v_k\in V_{\!\Cbb}.$ Supp $\lambda_1v_1+\dots+\lambda_nv_n=0$ with $\Fbb=\Cbb.$\vspace{-1pt}\par\quad\Ha
+\Blind{$P\Rightarrow Q:$ \;}Then $\Par{\Real\lambda_1}v_1+\dots+\Par{\Real\lambda_n}v_n=0\Rightarrow$ each $\Real\lambda_i=0,$ simlr for $\Imaginary\lambda_i.$\par\quad\Ha
+$Q\Rightarrow P:$ \;If $\lambda_k\in\Rbb$ with $\lambda_1v_1+\dots+\lambda_nv_n=0,$ then each $\Real\lambda_k=\lambda_k=0.$\par\quad\Ha
+${}^\neg P\Rightarrow{}^\neg Q:$ \;$\exists\,v_j=a_{j-1}v_{j-1}+\dots+a_1v_1\in V_{\!\Cbb}.$\par\quad\Ha
+${}^\neg Q\Rightarrow{}^\neg P:$ \;$\exists\,v_j=\lambda_{j-1}v_{j-1}+\dots+\lambda_1v_1\in V\Rightarrow v_j=\Par{\Real\lambda_{j-1}}v_{j-1}+\dots+\Par{\Real\lambda_1}v_1\in V.$\par\vspace{3pt}\quad
+(b) $P\Rightarrow Q:$ \;$\forall u+\i v\in V_{\!\Cbb},\;u,v\in V\Rightarrow\exists\,a_i,b_i\in\Rbb,u+\i v=\sum_{i=1}^n\Par{a_i+\i b_i}v_i.$\par\quad\Hb
+$Q\Rightarrow P:$ \;$\forall v\in V,\exists\,\!\,a_i+\i b_i\in\Cbb,\;v+\i 0=\BigBigPar{{\sum_{i=1}^na_iv_i}}+\i\,\BigBigPar{{\sum_{i=1}^nb_iv_i}}\envFontSmall\Rightarrow v\in\Span{v_1,\dots,v_m}.$\par\quad\Hb
+${}^\neg P\Rightarrow{}^\neg Q:$ \;$\exists\,v\in V,\,v\not\in\Spn{B}$ with $\Fbb=\Rbb\Rightarrow v+\i 0\not\in\Spn B$ with $\Fbb=\Cbb.$\par\quad\Hb
+${}^\neg Q\Rightarrow{}^\neg P:$ \;$\exists\,u+\i v\in V_{\!\Cbb},u+\i v\not\in\Spn B\Rightarrow\Par{\Real1}u+\Par{\Real\i}v=u$ or $\Par{\Imaginary1}u+\Par{\Imaginary\i}v=v\not\in\Spn B.$
 }\PfEnd\vspace{-4pt}
 \SepLine
 

@@ -268,12 +268,12 @@ Becs $\Par{\lambda-1}u=\lambda w=0.$ Now $\lambda=0\Longleftrightarrow u=0,$ and
 Define $\mathcal{C}\in\Lm{\Rbb^2,\Cbb}$ by $\mathcal{C}\Par{a,b}=a+\i b=r\Par{\cos\alpha+\i\sin\alpha}\Rightarrow a=r\cos\alpha,b=r\sin\alpha,$ where $r=a^2+b^2.$\par\quad
 Then $\Par{\cos\theta+\i\sin\theta}\Par{a+\i b}=r\BigPar{\cos\!\Par{\alpha+\theta}+\i\sin\!\Par{\alpha+\theta}}=\mathcal{C}^{-1}T\Par{a,b}.$\par\quad
 Hence $T\Par{a,b}=\BigPar{a\cos\theta-b\sin\theta,\,a\sin\theta+b\cos\theta}.$ Now $\Mt{T}={}${\normalsize$\begin{pmatrix}\cos\theta & -\sin\theta\\\sin\theta & \Blind{-}\cos\theta\end{pmatrix}$}.\Anchor{5A7}\vspace{6pt}\par\quad
-\AExa \OR\ProblemN[]{7}{ Supp $T\in\Lm{\Rbb^2}$ is defined by $T\Par{x, y} = \Par{-3y, x}.$ Find all eigvals of $T$.\TextA{\vspace{4pt}}}\quad
+\AExa \OR\ProblemN[]{7}{ Supp $T\in\Lm{\Rbb^2}$ is defined by $T\Par{x, y} = \Par{{-3y, x}}.$ Find all eigvals of $T$.\TextA{\vspace{4pt}}}\quad
 \NOTICE that $\Mt{T}={}${\normalsize$\begin{pmatrix}
 		\cos90^\circ & -3\sin90^\circ\\
 		\sin90^\circ & \Blind{-}\cos90^\circ
 	\end{pmatrix}$}. By [5.8](a), we conclude that $T$ has no eigvals.\vspace{4pt}\par\quad
-\Or Supp $y\neq 0$ with $\Par{\lambda x,\lambda y}=\Par{-3y,x}\Rightarrow-3y=\lambda^2 y\Rightarrow \lambda^2=-3.$ \Sbra{If $y=0,$ then $x=\lambda y=0.$}\PfEnd
+\Or Supp $y\neq 0$ with $\Par{\lambda x,\lambda y}=\Par{{-3y,x}}\Rightarrow-3y=\lambda^2 y\Rightarrow \lambda^2=-3.$ \Sbra{If $y=0,$ then $x=\lambda y=0.$}\PfEnd
 \SepLine
 
 %\ProblemN{\Anchor{5A8}{8}}{
@@ -364,7 +364,7 @@ Then $\delta>0$ and each $\lambda_k\neq\alpha$ \Sbra{ $\Longleftrightarrow\Par{T
 \ProblemN{\Anchor{5A15}{15}}{
 	\TextA{Supp $T\in\Lm{V}$. Supp $S\in\Lm{V}$ is inv.}
 	\PrePa\TextA{Prove $T$ and $S^{-1}TS$ have the same eigvals.}
-	\PrePb\TextA{Describe the relationship between the eigvecs of $T$ and the eigvecs of $S^{-1}TS.$}
+	\PrePb\TextA{Describe the relationship between eigvecs of $T$ and eigvecs of $S^{-1}TS.$}
 }(a) $\lambda$ is an eigval of $T$ with an eigvec $v\Rightarrow S^{-1}TS\Par{\uline{S^{-1}v}}=S^{-1}Tv=S^{-1}\Par{\lambda v}=\uline{\lambda S^{-1}v}.$\parSol{\Ha}
 $\lambda$ is an eigval of $S^{-1}TS$ with an eigvec $v\Rightarrow S\Par{S^{-1}TS}v=T\uline{Sv}=\uline{\lambda Sv}.$\vspace{2pt}\parSol{\Ha}
 \Or Note that $S\Par{S^{-1}TS}S^{-1}=T.$ Every eigval of $S^{-1}TS$ is an eigval of $S\Par{S^{-1}TS}S^{-1}=T.$\vspace{2pt}\parSol{\Ha}
@@ -402,7 +402,7 @@ Now $E\Par{\lambda,T}=\Bra{Su:u\in E\Par{\lambda,S^{-1}TS}};\;E\Par{\lambda,S^{-
 %\SepLine
 
 \Anchor{5A4e15}\ProblemBnoor{4E 15}{
-	\TextB{Show $\lambda$ is an eigval of $T$ $\Longleftrightarrow$ $\lambda$ is an eigval of the dual optor $T\apostrophe\in\Lm{V\apostrophe}$.}
+	\TextB{Show $\lambda$ is eigval of $T$ $\Longleftrightarrow$ $\lambda$ is eigval of the dual optor $T\apostrophe\in\Lm{V\apostrophe}$.}
 }\Sbra[3pt]{{\tgsl Req Finide}} \;${T-\lambda I_V}$ not inv $\Longleftrightarrow\Par{T-\lambda I_V}\apostrophe=T\apostrophe-\lambda I_{V\apostrophe}$ not inv.\PfEnd\vspace{2pt}\parSol{}
 (a) Supp $\lambda$ is eigval with $v.$ Let $U$ be invar with $U\oplus\Span{v}=V,$ by Exe (4E 39).\parSol{\Ha}
 Define $\psi\in V\apostrophe$ by $\psi\Par{cv+u}=c.$ Then $\Sbra{T\apostrophe\Par{\psi}}\Par{cv+u}=\psi\BigPar{c\lambda v+Tu}=\lambda c=\lambda\psi\Par{cv+u}.$\vspace{2pt}\parSol{}
@@ -412,8 +412,8 @@ Define $\psi\in V\apostrophe$ by $\psi\Par{x_1,x_2,\cdots}=x_1.$ Then $\Sbra{T\a
 
 \Anchor{5A4e17}\Anchor{5A16}\ProblemB{
 	\TextB{Supp $\Fbb=\Rbb,$ $T\in\Lm{V}$.}
-	(a) \Sbra{{\normalsize(4E 17) \OR (9.11)}} \TextB{$\lambda\in\Rbb.$ Prove $\lambda$ is an eigval of $T$ $\Longleftrightarrow$ $\lambda$ is an eigval of $T_{\!\Cbb}.$}
-	(b) \Sbra{{\normalsize\Onumber{16} \;\OR [9.16]\,}} \TextB{$\lambda\in\Cbb.$ Prove $\lambda$ is an eigval of $T_{\!\Cbb}$ $\Longleftrightarrow$ $\overline \lambda$ is an eigval of $T_{\!\Cbb}.$\vspace{1pt}}
+	\PrePa\Sbra{{\normalsize(4E 17) \OR [9.11]}} \TextB{$\lambda\in\Rbb.$ Prove $\lambda$ is eigval of $T$ $\Longleftrightarrow$ $\lambda$ is eigval of $T_{\!\Cbb}.$}
+	\PrePb\Sbra{{\normalsize\Onumber{16} \;\OR [9.16]\,}} \TextB{$\lambda\in\Cbb.$ Prove $\lambda$ is eigval of $T_{\!\Cbb}$ $\Longleftrightarrow$ $\overline \lambda$ is eigval of $T_{\!\Cbb}.$\vspace{1pt}}
 }(a) $Tv=\lambda v\Rightarrow T_{\!\Cbb}\Par{v+\i 0}=\lambda v.$ \, $T_{\!\Cbb}\Par{v+\i u}=\lambda v+\i \lambda u\Rightarrow Tv=\lambda v,Tu=\lambda u.$\parSol{}
 (b) Supp $T_{\!\Cbb}\Par{v+\i u}=Tv+\i Tu=\lambda\Par{v+\i u}.$\vspace{2pt}\parSol{\Hb}
 Becs $\overline{T_{\!\Cbb}\Par{v+\i u}}=\overline{Tv+\i Tu}=Tv-\i Tu=T_{\!\Cbb}\Par{v-\i u}=T_{\!\Cbb}\Par{\overline{v+\i u}}.$\vspace{2pt}\parSol{\Hb}
@@ -444,7 +444,7 @@ If $Tv=0$, then $T$ not inje, so are $TS,ST.$ An eigval of $TS,ST$ with the same
 Othws, $\lambda$ is eigval of $TS.$ \,Rev the roles in asum.\PfEnd
 \SepLine
 
-\Anchor{5A2e20}\ProblemBnoor{2E 20}{
+\Anchor{5C6}\Anchor{5A2e20}\ProblemBnoor{2E 20}{
 	\TextB{Supp $T\in\Lm{V}$ has $n=\dim V$ disti eigvals and $S\in\Lm{V}$ has the same eigvecs}
 	\TextB{{\FontNorm but might not with the same eigvals.} \;Prove $ST=TS.$}
 }Let each $\lambda_jv_j=Tv_j,\mu_jv_j=Sv_j.$ Where $\mu_1,\dots,\mu_n$ might have repeti.\parSol{}
@@ -1030,7 +1030,7 @@ $\Rightarrow\exists\,v\neq 0,\Par{T^2+b_jT+c_j}v=0\Rightarrow T^2v\in\Span{v,Tv}
 
 %\Anchor{5BII4e1}\ProblemN{1}{
 %	\TextA{Supp $T^2$ has up-trig matrix. Give a countexa\hspace{1pt}$:$ $T$ has up-trig matrix.}
-%}Let $\Fbb=\Rbb.$ Define $T\Par{x,y}=\Par{-y,x}.$ Then $T^2=-I.$ While $T$ has no eigval.\PfEnd
+%}Let $\Fbb=\Rbb.$ Define $T\Par{x,y}=\Par{{-y,x}}.$ Then $T^2=-I.$ While $T$ has no eigval.\PfEnd
 %\SepLine
 
 \Anchor{5BII4e2}\ProblemN{2}{
@@ -1044,7 +1044,7 @@ $\Rightarrow\exists\,v\neq 0,\Par{T^2+b_jT+c_j}v=0\Rightarrow T^2v\in\Span{v,Tv}
 \Anchor{5BII4e3}\ProblemN{3}{
 	\TextA{Supp $T$ inv, $B_V=\Par{v_1,\dots,v_n},$ $\Mt{T}=A$ is up-trig,}
 	\TextA{with $\lambda_1,\dots,\lambda_n$ on diag. Show $A^{-1}$ is also up-trig, with $\lambda_1^{-1},\dots,\lambda_n^{-1}$ on diag.}
-}Becs $\lambda_k$ on diag on $A$ $\Longleftrightarrow\lambda_k$ eigval of $T$ $\Longleftrightarrow\lambda_k^{-1}$ eigval of $T^{-1}$ $\Longleftrightarrow\lambda_k^{-1}$ on diag of $A^{-1}.$\PfEnd\vspace{2pt}\par\quad
+}Becs $\lambda_k$ on diag of $A$ $\Longleftrightarrow\lambda_k$ eigval of $T$ $\Longleftrightarrow\lambda_k^{-1}$ eigval of $T^{-1}$ $\Longleftrightarrow\lambda_k^{-1}$ on diag of $A^{-1}.$\PfEnd\vspace{2pt}\par\quad
 \Or Let each $Tv_k=u_k+\lambda_kv_k,$ where $u_k\in\Span{v_1,\dots,v_{k-1}}.$ We use induc on $k.$\par\quad
 (i) $k=1.$ $Tv_1=\lambda_1v_1\Rightarrow T^{-1}v_1=\lambda_1^{-1}v_1\in\Span{v_1},$ invard $T^{-1};$ and $\lambda_1^{-1}$ is the 1st ent on diag.\par\quad\Endi
 (ii) $k\geqslant 2.$ Asum $\Span{v_1,\dots,v_{k-1}}$ invard $T^{-1}.$\par\quad\Hii
@@ -1132,9 +1132,111 @@ Now for each $j\in\Bra{1,\dots,n},\:\BigPar{T\XSlash U}\Par{v_j+U}=Tv_j+U\in\Spa
 }\SepLine
 \ChEnd\pagebreak
 
-\ChDecl{Ch5C}{5.C}{}
-\par
+\ChDecl{Ch5C}{5.C \& [4E] 5.D}{}
+
+\Anchor{5C4e1}\ProblemBnoor{4E 1}{
+	\TextA{Supp $\Fbb=\Cbb,$ and $T\in\Lm{V}.$ Show if {\tgnr\large(a)} $T^4=I,$ or if {\tgnr\large(b)} $T^2=T,$ then $T$ diag.}
+}(a) By Exe (4E 14). \Or Prove the ctrapos.\parSol{}
+(b) Supp $T\Par{T-I}=0.$ Then $T$ inje $\Rightarrow\Par{T-I}=0,$ and $\Par{T-I}$ inje $\Rightarrow T=0.$\parSol{\Hb}
+And $T$ not inje $\Rightarrow\Par{T-I}\big|{_{\range T}}=0,$ and $\Par{T-I}$ not inje $\Rightarrow T\mmid_{\Range\SmallPar{T-I}}=0.$\PfEnd
+\AExa \BigPar{$T\in\Lm{\Cbb^2}$ not diag and $T^4=T^2.$}
 \SepLine
+
+%\Anchor{5CT1}\ProblemBX{\TipsN{1}}{
+%	\TextA{For $T\in\Lm{V},\,E\Par{0,T}=\null T.$\vspace{-4pt}}
+%}
+
+\Anchor{5C1}\ProblemN{1}{
+	\TextA{Supp $T\in\Lm{V}$ is diag. Prove $V=\null T\oplus\range T.$}
+}Let $\lambda_1,\dots,\lambda_m$ be the dist non0 eigvals of $T.$ Then $\range T=E\Par{\lambda_1,T}\oplus\cdots\oplus E\Par{\lambda_m,T}.$\parSol{}
+Becs $\null T=E\Par{0,T}.$ If $0$ is eigval, then done. Othws, $E\Par{0,T}=\zeroSubs$ and done.\PfEnd
+\PfEnd
+\Anchor{5C2}\AExa Convly not true. Define the inv $T\in\Lm{\Rbb^2}:\Par{x,y}\mapsto\Par{{-y,x}}.$ No eigvals.
+\SepLine
+
+\Anchor{5C5}\ProblemN{5}{
+	\TextA{Supp $\Fbb=\Cbb,$ $V$ is finide, and $T\in\Lm{V}.$}
+	\TextA{Prove $T$ diag $\Longleftrightarrow V=\Null\Par{T-\lambda I}\oplus\Range\Par{T-\lambda I}$ for all $\lambda\in\Fbb.$}
+}Supp $V=\Null\Par{T-\lambda I}\oplus\Range\Par{T-\lambda I}$ for all $\lambda\in\Fbb.$\parSol{}
+\NOTICE that $S_\lambda=\Par{T-\lambda I}$ is surj for all non-eigval $\lambda.$ %Let $B_V=\Par{S_{\lambda}v_1,\dots,S_{\lambda}v_n}.$\parSol{}
+\parSol{}
+\parSol{}
+Convly, becs $T,I\in\Lm{V}$ diag wrto same $B_V\Rightarrow\Par{T-\lambda I}$ diag.\PfEnd
+\SepLine
+
+\Anchor{5C7}\ProblemN{7}{
+	\TextA{Supp $T\in\Lm{V},A=\Mt{T,B_V}$ is diag. Prove $A$ has $\dim E\Par{\lambda,T}$ $\lambda$'s on diag.}
+}Given $B_V=\Par{v_1,\dots,v_n}.$ Becs $T$ diag. Each $Tv_k=\lambda_jv_k.$ Forming $B_{E\SmallPar{\lambda_j,T}}.$ Immed.\PfEnd
+\SepLine
+
+\Anchor{5C12}\ProblemN{12}{
+	\TextA{Supp $V$ is finide, $R,T\in\Lm{V}$ has same $\dim V$ eigvals $\lambda_1,\dots,\lambda$.}
+	\TextA{Prove $\exists$ inv $S\in\Lm{V}$ suth $R=S^{-1}TS.$}
+}Let $\Par{u_1,\dots,u_n},\Par{v_1,\dots,v_n}$ be the corres eigvecs of $R,T$ respectly, so be the bses of $T$.\parSol{}
+Becs each $Ru_k=\lambda_ku_k,Tv_k=\lambda_kv_k.$ Define each $S\Par{u_k}=v_k.$\PfEnd
+\SepLine
+
+\Anchor{5C4e13}\ProblemBnoor{4E 13}{
+	\TextA{Supp $A,B\in\Fbb^{n,n}$ and $A$ is diag with dist ents on diag. Prove $AB=BA\Longleftrightarrow B$ is diag.}
+}\NOTICE that for any diag $C,$ each $C_{j,k}=0$ for $j\neq k.$\parSol{}
+Becs (I) $A_{j,j}B_{j,k}=A_{j,1}B_{1,k}+\dots+\Sbra{A_{j,j}B_{j,k}}+\dots+A_{j,n}B_{n,k}=\Par{AB}{_{j,k}}.$\parSol{}
+And (II) $B_{j,k}A_{k,k}=B_{j,1}A_{1,k}+\dots+\Sbra{B_{j,k}A_{k,k}}+\dots+B_{j,n}A_{n,k}=\Par{BA}{_{j,k}}.$\parSol{}
+Supp $B$ diag. If $j=k,$ then $\Par{BA}{_{j,k}}=\Par{AB}{_{j,k}},$ othws true as well.\parSol{}
+Supp $AB=BA\Rightarrow A_{j,j}B_{j,k}=A_{k,k}B_{j,k}.$ Asum $B_{j,k}\neq0$ with $j\neq k.$ Then $A_{j,j}=A_{k,k},$ ctradic.\PfEnd
+\SepLine
+
+\Anchor{5C4e14}\ProblemBnoor{4E 14}{
+	\TextA{Supp $\Fbb=\Cbb,$ $k\in\Nbp,$ and $T\in\Lm{V}$ is inv. Prove $T^k$ diag $\Rightarrow T$ diag.}
+}Using Exe (4E 13). Supp $\Mt{T^k,B_V}=A$ diag. Let $B=\Mt{T^{-1},B_V},C=\Mt{T,B_V}.$\parSol{}
+Now $T^kT^{-1}=T^{-1}T^k\Rightarrow AB=BA\Rightarrow T^{-1}$ diag. Then $T^{-1}T=TT^{-1}\Rightarrow BC=CB\Rightarrow T$ diag.\PfEnd
+\AComm Not true if $\Fbb=\Rbb.$ Exa: $T\in\Lm{\Rbb^2}:\Par{x,y}\mapsto\Par{{-y,x}}.$ No eigvals.
+\SepLine
+
+\Anchor{5C4e15}\ProblemBnoor{4E 15}{
+	\TextB{Supp $\Fbb=\Cbb,$ $V$ is finide, $T\in\Lm{V}$ with the min $p.$ Prove the following equiv\hspace{1pt}$:$}
+	\PrePa\TextB{$T$ diag. \, {\tgnr\large(b)} $\nexists\,\lambda\in\Cbb$ suth $p$ is multi of $\Par{z-\lambda}{^2}.$}
+	\PrePc\TextB{$p$ and $p\apostrophe$ have no common zeros. \, {\tgnr\large(d)} $\gcd\Par{p,p\apostrophe}=1.$}
+}\SepLine
+
+\Anchor{3C4e17}\ProblemBnoor{4E 17}{
+	\TextA{Supp $V$ is finide. Prove $\Lm{V}$ has a bss consisting of diag optors.}
+}
+\SepLine
+
+\Anchor{3C4e18}\ProblemBnoor{4E 18}{
+	\TextA{Supp $T\in\Lm{V}$ is diag. Prove if $U$ invarspd $T,$ then $T\XSlash U\in\Lm{V\XSlash U}$ is diag.}
+}\SepLine
+
+\Anchor{3C4e19}\ProblemBnoor{4E 19}{
+	\TextA{Give an exa of $T\in\Lm{V}$ not diag while $T\mmid_U,T\XSlash U$ both diag, where $U$ invarspd $T.$}
+}
+\SepLine
+
+\Anchor{3C4e20}\ProblemBnoor{4E 20}{
+	\TextA{Supp $V$ finide, $T\in\Lm{V}.$ Prove $T$ diag $\Longleftrightarrow T\apostrophe$ diag.}
+}\SepLine
+
+\Anchor{5C16}\ProblemN{16}{
+	\TextA{Define $F_1=1,F_2=2,$ and $F_n=F_{n-1}+F_{n-2}$ for $n\geqslant 3.$}
+	\TextA{Define $T\in\Lm{\Rbb^2}:\Par{x,y}\mapsto\Par{y,x+y}.$\vspace{2pt}}
+	\PrePa\TextA{Show each $T^n\Par{0,1}=\Par{F_n,F_{n+1}}.$\vspace{3pt}}
+	\PrePb\TextA{Find all eigvals of $T.$ \, {\tgnr\large(c)} Find a bss of $\Rbb^2$ consisting of eigvecs of $T.$\vspace{-4pt}}
+	\PrePd\TextA{Show each $F_n={}${\LARGE$\frac{1}{\sqrt{5}\;}$}$\,\bigg[\bigg(\!${\LARGE$\frac{\:1\,+\,\sqrt{5}\:}{2}$}$\!\bigg)\begin{array}{l}\hspace{-5pt}{}_n\\\\\vspace{-18pt}\end{array}\hspace{-8pt}-\bigg(\!${\LARGE$\frac{\:1\,-\,\sqrt{5}\:}{2}$}$\!\bigg)\begin{array}{l}\hspace{-5pt}{}_n\\\\\vspace{-18pt}\end{array}\hspace{-5pt}\bigg].$\vspace{-21pt}}
+	\PrePe\TextA{Show each $F_n$ is the integer that closest to {\LARGE$\frac{1}{\sqrt{5}\;}$}$\,\bigg(\!${\LARGE$\frac{\:1\,+\,\sqrt{5}\:}{2}$}$\!\bigg)\begin{array}{l}\hspace{-5pt}{}_n\\\\\vspace{-18pt}\end{array}\hspace{-8pt}.$}
+}\SepLine
+
+\Anchor{5C4e22}\ProblemBnoor{4E 22}{
+	\TextA{Supp $V$ finide, $T\in\Lm{V},$ $A=\Mt{T,B_V}\in\Fbb^{n,n}.$}
+	\TextA{Prove if each $\aXMid{A_{j,j}}>\sum_{k=1}^n\aXMid{A_{j,k}}-A_{j,j},$ then $T$ is inv.}
+}
+\SepLine
+
+\Anchor{5C4e23}\ProblemBnoor{4E 23}{
+	\TextA{Redefine G disks suth the radius of the $k^\text{th}$ disk is the sum of the absolute vals}
+	\TextA{of the ents in {\tgsc col} $k$, excluding the diag ent. Show [4E 5.67] still holds.}
+}
+\SepLine
+
 \ChEnd
 \pagebreak
 
