@@ -789,7 +789,6 @@ Thus $\Par{rs}\Par{z}=1$ for infily many $z,$ so for all $z.$ Now $\deg rs=1=\de
 
 \Anchor{5BI4e21}\ProblemBnoor{4E 21}{
 	\TextB{Supp $V$ finide, $T\in\Lm{V}$. Prove the min $p$ has deg at most $1 + \dim \range T$.}
-	\TextB{\large If $\dim \range T < \dim V - 1$, then this result gives a better upper bound for the deg of min poly.}
 }Let $q$ be the min of $T\mmid_{\range T}.$ Then $q\Par{T}Tv=0\Rightarrow zq\Par{z}$ of deg $1+\dim\range T$ is multi of $p.$\PfEnd
 \SepLine
 
@@ -817,6 +816,7 @@ $p\Par{T}=0\Rightarrow\forall v\in V,p\Par{T}v=0\Rightarrow p\Par{T\XSlash U}\Pa
 (b) $q\Par{T}=0\Rightarrow\forall \varphi\in V\apostrophe,\varphi\BigPar{q\Par{T}}=q\Par{T\apostrophe}\Par{\varphi}=0.$ Thus $q\Par{T\apostrophe}=0.$\PfEnd\vspace{2pt}\parSol{}
 \Or By (3.F.15), for any $s\in\PoFi,\:s\Par{T\apostrophe}=s\Par{T}\apostrophe=0\Longleftrightarrow s\Par{T}=0.$\PfEnd
 \SepLine
+\pagebreak
 
 %\Anchor{5BI4e27}\ProblemBnoor{4E 27}{
 %	\TextB{Supp $\Fbb=\Rbb,$ $V$ is finide, and $T\in \Lm{V}$. Prove the min $p$ of $T_{\!\Cbb}$ is the min $q$ of $T$.}
@@ -1049,7 +1049,7 @@ $\Rightarrow\exists\,v\neq 0,\Par{T^2+b_jT+c_j}v=0\Rightarrow T^2v\in\Span{v,Tv}
 (i) $k=1.$ $Tv_1=\lambda_1v_1\Rightarrow T^{-1}v_1=\lambda_1^{-1}v_1\in\Span{v_1},$ invard $T^{-1};$ and $\lambda_1^{-1}$ is the 1st ent on diag.\par\quad\Endi
 (ii) $k\geqslant 2.$ Asum $\Span{v_1,\dots,v_{k-1}}$ invard $T^{-1}.$\par\quad\Hii
 Note that $Tv_k=u_k+\lambda_kv_k\Rightarrow v_k=T^{-1}\Par{c_1v_1+\dots+c_{k-1}v_{k-1}}+\lambda_kT^{-1}v_k.$\par\quad\Hii
-Thus $T^{-1}v_k=\lambda_k^{-1}v_k-\lambda_k^{-1}T^{-1}u_k\in\Span{v_1,\dots,v_k},$ invard $T;$ and $\lambda_{k}^{-1}$ is the $k$-th ent on diag.\PfEnd
+Thus $T^{-1}v_k=\lambda_k^{-1}v_k-\lambda_k^{-1}T^{-1}u_k\in\Span{v_1,\dots,v_k},$ invard $T;$ and $\lambda_{k}^{-1}$ is the $k^\text{th}$ ent on diag.\PfEnd
 \SepLine
 
 \Anchor{5BII9}\Anchor{5BII4e7}\ProblemNnoor{7}{3E 5.B.9}{
@@ -1136,16 +1136,6 @@ Now for each $j\in\Bra{1,\dots,n},\:\BigPar{T\XSlash U}\Par{v_j+U}=Tv_j+U\in\Spa
 
 \vspace{4pt}
 
-\Anchor{5C4e1}\ProblemBnoor{4E 1}{
-	\TextA{Supp $\Fbb=\Cbb,$ and $T\in\Lm{V}.$ Show if {\tgnr\large(a)} $T^4=I,$ or if {\tgnr\large(b)} $T^4=T,$ then $T$ diag.}
-}(a) By Exe (4E 14). \Or Prove the ctrapos.\parSol{}
-(b) \PfEnd
-\AExa \BigPar{$T\in\Lm{\Cbb^2}$ not diag and $T^4=T^2.$}
-\SepLine
-
-%\Anchor{5CT1}\ProblemBX{\TipsN{1}}{
-%	\TextA{For $T\in\Lm{V},\,E\Par{0,T}=\null T.$\vspace{-4pt}}
-%}
 
 \Anchor{5C1}\ProblemN{1}{
 	\TextA{Supp $T\in\Lm{V}$ is diag. Prove $V=\null T\oplus\range T.$}
@@ -1208,7 +1198,8 @@ Supp $AB=BA\Rightarrow A_{j,j}B_{j,k}=A_{k,k}B_{j,k}.$ Asum $B_{j,k}\neq0$ with 
 	\TextA{Supp $T\in\Lm{V}$ is diag. Prove if $U$ invarspd $T,$ then $T\XSlash U\in\Lm{V\XSlash U}$ is diag.}
 }Supp the eigvecs of $T$ are $B_V=\Par{v_1,\dots,v_n}$ with corres eigvals $\lambda_1,\dots,\lambda_n.$\parSol{}
 By \Sbra{5.A \TIPSN{3}}, $B_U=\Par{v_{k_1},\dots,v_{k_m}}.$ Let $\Par{v_1,\dots,v_n}=\Par{v_{k_1},\dots,v_{k_m},\dots,v_{k_n}}.$\parSol{}
-Let $B_{V\XSlash U}=\Par{v_{k_{m+1}}+U,\dots,v_{k_n}+U}.$ Becs each $\BigPar{T\XSlash U}\Par{v_{k_{m+j}}+U}=\lambda_{k_{m+j}}\Par{v_{k_{m+j}}+U}.$\PfEnd
+Let $B_{V\XSlash U}=\Par{v_{k_{m+1}}+U,\dots,v_{k_n}+U}.$ Becs each $\BigPar{T\XSlash U}\Par{v_{k_{m+j}}+U}=\lambda_{k_{m+j}}\Par{v_{k_{m+j}}+U}.$\PfEnd\vspace{3pt}\parSol{}
+\Or Becs the min of $T$ is mult of that of $T\XSlash U.$ By [4E 5.62].\PfEnd
 \SepLine
 
 \Anchor{3C4e19}\ProblemBnoor{4E 19}{
@@ -1216,25 +1207,40 @@ Let $B_{V\XSlash U}=\Par{v_{k_{m+1}}+U,\dots,v_{k_n}+U}.$ Becs each $\BigPar{T\X
 }Define $T\in\Lm{\Rbb^3}:\Par{x,y,z}\mapsto\Par{z,x,y}.$ Then $1$ is the only eigval with $\dim E\Par{1,T}=1.$\PfEnd
 \SepLine
 
+\Anchor{3C4e20}\ProblemBnoor{4E 20}{
+	\TextA{Supp $V$ is finide, $T\in\Lm{V}.$ Prove $T$ diag $\Longleftrightarrow T\apostrophe$ diag.}
+}By (4E 5.B.28), $T,T\apostrophe$ have the same min poly. By [4E 5.62].\PfEnd
+%TODO:Iso Diag
+\SepLine
+
 \Anchor{5C16}\ProblemN{16}{
-	\TextA{Define $F_1=1,F_2=2,$ and $F_n=F_{n-1}+F_{n-2}$ for $n\geqslant 3.$}
-	\TextA{Define $T\in\Lm{\Rbb^2}:\Par{x,y}\mapsto\Par{y,x+y}.$\vspace{2pt}}
-	\PrePa\TextA{Show each $T^n\Par{0,1}=\Par{F_n,F_{n+1}}.$\vspace{3pt}}
-	\PrePb\TextA{Find all eigvals and eigvecs of $T.$\vspace{-4pt}}
-	\PrePc\TextA{Show each $F_n={}${\LARGE$\frac{1}{\sqrt{5}\;}$}$\,\bigg[\bigg(\!${\LARGE$\frac{\:1\,+\,\sqrt{5}\:}{2}$}$\!\bigg)\begin{array}{l}\hspace{-5pt}{}_n\\\\\vspace{-18pt}\end{array}\hspace{-8pt}-\bigg(\!${\LARGE$\frac{\:1\,-\,\sqrt{5}\:}{2}$}$\!\bigg)\begin{array}{l}\hspace{-5pt}{}_n\\\\\vspace{-18pt}\end{array}\hspace{-5pt}\bigg].$\vspace{-21pt}}
-	\PrePd\TextA{Show each $F_n$ is the integer that closest to {\LARGE$\frac{1}{\sqrt{5}\;}$}$\,\bigg(\!${\LARGE$\frac{\:1\,+\,\sqrt{5}\:}{2}$}$\!\bigg)\begin{array}{l}\hspace{-5pt}{}_n\\\\\vspace{-18pt}\end{array}\hspace{-8pt}.$}
-}\SepLine
+	\TextA{Define $F_1=1,F_2=2,$ and $F_n=F_{n-1}+F_{n-2}$ for $n\geqslant 3.$\vspace{6pt}}
+	\TextA{Define $T\in\Lm{\Rbb^2}:\Par{x,y}\mapsto\Par{y,x+y}.$ \, (a) Find all eigvals and eigvecs of $T.$\vspace{-6pt}}
+	\PrePb\TextA{Show each $T^n\Par{0,1}=\Par{F_n,F_{n+1}},$ \, (c) and each $F_n={}${\LARGE$\frac{1}{\sqrt{5}\;}$}$\,\bigg[\bigg(\!${\LARGE$\frac{\:1\,+\,\sqrt{5}\:}{2}$}$\!\bigg)\begin{array}{l}\hspace{-5pt}{}_n\\\\\vspace{-18pt}\end{array}\hspace{-8pt}-\bigg(\!${\LARGE$\frac{\:1\,-\,\sqrt{5}\:}{2}$}$\!\bigg)\begin{array}{l}\hspace{-5pt}{}_n\\\\\vspace{-18pt}\end{array}\hspace{-5pt}\bigg].$\vspace{-4pt}}
+%	\PrePd\TextA{Show each $F_n$ is the integer that closest to {\LARGE$\frac{1}{\sqrt{5}\;}$}$\,\bigg(\!${\LARGE$\frac{\:1\,+\,\sqrt{5}\:}{2}$}$\!\bigg)\begin{array}{l}\hspace{-5pt}{}_n\\\\\vspace{-18pt}\end{array}\hspace{-8pt}.$\vspace{-8pt}}
+}(a) Supp $\lambda\Par{x,y}=\Par{y,x+y}$ with $x$ or $y$ non0. Note that $x=0\Longleftrightarrow y=0,$ and $0$ is not eigval.\parSol{\Ha}
+Then $\lambda_1={}${\Large$\frac{\:1\,+\,\sqrt{5}\:}{2}$}, $v_1=\Par{1,\frac{1+\sqrt{5}}{2}};$
+\,and $\lambda_2={}${\Large$\frac{\:1\,-\,\sqrt{5}\:}{2}$}, $v_2=\Par{1,\frac{1-\sqrt{5}}{2}}.$ Becs $\dim\Rbb^2=2.$\vspace{4pt}\parSol{}
+(b) (i) $k=1.$ $T\Par{0,1}=\Par{F_1,F_2}.$ (ii) $k\geqslant1.$\parSol{\Hb}
+Asum $T^k\Par{0,1}=\Par{F_k,F_{k+1}}.$ Then $T^{k+1}\Par{0,1}=\Par{F_{k+1},F_{k}+F_{k+1}}.$\vspace{-3pt}\parSol{}
+(c) Becs $T^n\Par{0,1}=T^n\XSbra{${\Large$\frac{1}{\sqrt{5}\;}$}$\BigPar{v_1-v_2}}={}${\Large$\frac{1}{\sqrt{5}\;}$}$\,\def\envFont{\Large}\XSbra{\bigg(\!${\Large$\frac{\:1\,+\,\sqrt{5}\:}{2}$}$\!\bigg)\begin{array}{l}\hspace{-7pt}{}_n\\\\\vspace{-8pt}\end{array}\hspace{-8pt}v_1-\bigg(\!${\LARGE$\frac{\:1\,-\,\sqrt{5}\:}{2}$}$\!\bigg)\begin{array}{l}\hspace{-7pt}{}_n\\\\\vspace{-8pt}\end{array}\hspace{-8pt}v_2\def\envFont{\Large}}.$ Take the first slot.\PfEnd[-28pt]\vspace{4pt}
+\SepLine
 
 \Anchor{5C4e22}\ProblemBnoor{4E 22}{
 	\TextA{Supp $V$ finide, $T\in\Lm{V},$ $A=\Mt{T,B_V}\in\Fbb^{n,n}.$}
 	\TextA{Prove if each $\aXMid{A_{j,j}}>\sum_{k=1}^n\aXMid{A_{j,k}}-A_{j,j},$ then $T$ is inv.}
-}
+}If $T$ inv $\Rightarrow 0$ is eigval, then $0$ is in G disk for some $j$, now $\aXMid{0-A_{j,j}}\leqslant\sum_{k=1}^n\aXMid{A_{j,k}}-A_{j,j},$ ctradic.\PfEnd
+\AComm If each $\aXMid{A_{k,k}}>\sum_{j=1}^n\aXMid{A_{j,k}}-A_{k,k},$ then becs [5.67] still holds by Exe (4E 23), $T$ is inv.
 \SepLine
 
 \Anchor{5C4e23}\ProblemBnoor{4E 23}{
 	\TextA{Redefine G disks suth the radius of the $k^\text{th}$ disk is the sum of the absolute vals}
 	\TextA{of the ents in {\tgsc col} $k$, excluding the diag ent. Show [4E 5.67] still holds.}
-}
+}Supp $T\in\Lm{V},B_V=\Par{v_1,\dots,v_n},A=\Mt{T,B_V}.$ Simlr to [5.67]. Let $B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_n}.$\vspace{1pt}\parSol{}
+Supp $T\apostrophe\Par{\psi}=\lambda\psi$ with $\psi=c_1\varphi_1+\dots+c_n\varphi_n\neq0\Rightarrow\lambda\psi=\sum_{j=1}^n\BigBigPar{{\sum_{k=1}^nA^t_{j,k}c_kv_j}}=\sum_{j=1}^nc_j\lambda v_j.$\vspace{2pt}\parSol{}
+Let $\aMid{c_j}=\max\!\Bra{\aMid{c_1},\dots,\aMid{c_n}}.$ Now $\lambda c_j=\sum_{k=1}^nA^t_{j,k}c_k\Rightarrow\aXMid{\lambda-A^t_{j,j}}\leqslant\sum_{j\neq k=1}^n\aXMid{A_{k,j}}.$\PfEnd\vspace{6pt}\parSol{}
+\Or Becs $\lambda$ is eigval of $T\Longleftrightarrow$ of $T\apostrophe.$ For $A^t=\Mt{T\apostrophe,B_{V\apostrophe}},$ by [5.67],\vspace{1pt}\parSol{}
+$\lambda\in\BigBra{z\in\Fbb:\aXMid{z-A_{j,j}}\leqslant\sum_{j\neq k=1}^n\aXMid{A^t_{j,k}}=\sum_{j\neq k=1}^n\aXMid{A_{k,j}}}$ for some $j\in\Bra{1,\dots,n}.$\PfEnd
 \SepLine
 
 \ChEnd
@@ -1261,11 +1267,6 @@ Thus $\Span{e_1}$ invard $T$ but not $S,$ and $\Span{e_3}$ invard $S$ but not $T
 }Becs $Tp\Par{S}=p\Par{S}T.$ By (5.A.2,3).\PfEnd
 \SepLine
 
-\Anchor{5E4}\ProblemN{4}{
-	\TextA{Prove or give a countexa\hspace{1pt}$:$ A diag matrix $A$ and up-trig matrix $B$ of the same size commu.}
-}\par
-\SepLine
-
 \Anchor{5E5}\ProblemN{5}{
 	\TextA{Supp $V$ finide. Prove $S,T$ commu $\Longleftrightarrow S\apostrophe,T\apostrophe$ commu.}
 }Supp $ST=TS\Rightarrow T\apostrophe S\apostrophe=\Par{ST}\apostrophe=\Par{TS}\apostrophe=S\apostrophe T\apostrophe.$ Convly, supp $\mathcal{S},\mathcal{T}\in\Lm{V\apostrophe}$ commu.\parSol{}
@@ -1284,12 +1285,6 @@ By (3.F.16), $\exists\,!\,S,T\in\Lm{V},\mathcal{S}=S\apostrophe,\mathcal{T}=T\ap
 
 \Anchor{5E7}\ProblemN{7}{
 	\TextA{Supp $\Fbb=\Cbb,$ $S,T\in\Lm{V}$ commu, and $S$ diag. Prove $\exists\,B_V$ suth $S$ diag and $T$ up-trig.}
-}\par
-\SepLine
-
-\Anchor{5E8}\ProblemN{8}{
-	\TextA{Supp $m = 3$ in [5.72] and $D_x , D_y$ are the commu partial diff optors on $\Po_3\Par{\Rbb^2}$ from [5.72].}
-	\TextA{Find a bss of $\Po_3\Par{\Rbb^2}$ suth $D_x$ and $D_y$ each up-trig.}
 }\par
 \SepLine
 
