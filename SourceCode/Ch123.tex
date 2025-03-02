@@ -59,19 +59,22 @@ By Assoc: $\Par{a+\infty}+\Par{-\infty}\neq a+\Par{\infty+\Par{-\infty}}.$\parSo
 	\TextB{\AExa $\Fbb=\Zbb_m=\Bra{K_0,K_1,\dots,K_{m-1}},\forall m-1\in\Nbp$ suth $\Par{m-1}$ is a prime.}
 }\SepLine
 \ChEnd
-\pagebreak
 
-\ChDecl{Ch1C}{1$\cdot$C}{}%\orMode{\hLk{1C7}{7}\;\;\hLk{1C8}{8}\;\;\hLk{1C9}{9}\;\;\hLk{1C11}{11}\;\;\hLk{1C12}{12}\;\;\hLk{1C13}{13}\;\;\hLk{1C15}{15}\;\;\hLk{1C16}{16}\;\;\hLk{1C17}{17}\;\;\hLk{1C18}{18}\;\;\hLk{1C21}{21}\;\;\hLk{1C23}{23}\;\;\hLk{1C24}{24}}{[2]: 7, 8, 9, 24, 15, 16, 17, 18; [3]: 11, 12, 13; [4]: 21, 23.}
+\vfill\ChDecl{Ch1C}{1$\cdot$C}{}%\orMode{\hLk{1C7}{7}\;\;\hLk{1C8}{8}\;\;\hLk{1C9}{9}\;\;\hLk{1C11}{11}\;\;\hLk{1C12}{12}\;\;\hLk{1C13}{13}\;\;\hLk{1C15}{15}\;\;\hLk{1C16}{16}\;\;\hLk{1C17}{17}\;\;\hLk{1C18}{18}\;\;\hLk{1C21}{21}\;\;\hLk{1C23}{23}\;\;\hLk{1C24}{24}}{[2]: 7, 8, 9, 24, 15, 16, 17, 18; [3]: 11, 12, 13; [4]: 21, 23.}
 
 \vspace{0pt}
 
-\Anchor{1CNE5}\BulletPointX\NoteForSmall{Exe (5)}\;\;$\Cbb=\Rbb\oplus\Span{\i}=\Span{1,\i}$ is true if we let $\Fbb=\Rbb.$ Though strange.\vspace{-4pt}
+\Anchor{1CNE5}\BulletPointX\NoteForSmall{Exe (5)}\;\;$\Cbb=\Rbb\oplus\Bra{c\i:c\in\Rbb}=\Bra{a+b\i:a,b\in\Rbb}$ if we let $\Fbb=\Rbb$ and $\i^2=-1.$\vspace{-4pt}
+\SepLine\pagebreak
+
+\Anchor{1CNE6}\BulletPointX\NoteForSmall{Exe (6)}\;\;Supp $V$ is a vecsp over $\Rbb.$ Then $V$ is not a vecsp over $\Cbb.$ See also (9.A.16,17).\par
+\BulletPointX\AComm Supp $V$ is a vecsp over $\Cbb$ of dim $n.$ Then $V$ is also a vecsp over $\Rbb$ of dim $2n.$\vspace{-4pt}
 \SepLine
 
 \ProblemN{\Anchor{1C7}{7}}{
 	\TextA{Give a nonempty $U\subseteq\Rbb^2,$ $U$ is closd taking add invs and add, but is not a subsp of $\Rbb^2.$}
 }\BigPar{ $0\in U;\;v\in U\Rightarrow -v\in U.$ And operations on $U$ are the same as $\Rbb^2$. }
-Let $\Zbb^2,\Qbb^2.$\vspace{-4pt}
+Let $U=\Zbb^2$ or $\Qbb^2.$\vspace{-4pt}
 \SepLine
 
 \ProblemN{\Anchor{1C8}{8}}{
@@ -793,12 +796,12 @@ If $\dim W=1,$ then $W=\Span{w_0}.$ Thus $U=\Span{T_0},$ where each $T_0v_i=0\Ri
 $T$ surj $\Rightarrow\forall u\in V,\exists\,v_1,\dots,v_m\in V,\,T\Par{v_1}=T^2v_2=\cdots=T^m v_m=u.$\PfEnd
 \SepLine
 
-\Anchor{3B'1}\ProblemB{
+\Anchor{8A5}\ProblemB{
 	\TextB{Supp $T\in\Lm{V},$ $T^{n-1}v\neq 0,\;T^nv=0.$ \,Prove $\BigPar{v,Tv,\dots,T^{n-1}v}$ is liney indep.}
 }$a_0v+a_1Tv+\dots+a_{n-1}T^{n-1}v=0\Rightarrow a_0T^{n-1}v=0\Rightarrow a_0=0.$ \,Simlr for $a_1,\dots,a_{n-1}.$\PfEnd
 \SepLine
 
-\Anchor{3B'2}\ProblemB{
+\Anchor{3B'1}\ProblemB{
 	\TextB{Supp $S,T\in\Lm{V}.$ Prove or give a countexa\hspace{1pt}$:$}
 	\PrePa\TextB{$\null S\subseteq\null T\Rightarrow\range T\subseteq\range S;$ \; {\tgnr\large(b)} $\range T\subseteq\range S\Rightarrow\null S\subseteq\null T.$}
 }Let $B_V=\Par{v_1,v_2,v_3}.$ Countexas:\par{\hspace{0pt}}
@@ -2571,6 +2574,20 @@ Now $\Gamma\apostrophe\BigPar{\Psi\Par{x_1,\dots,x_m}}=x_1\varphi_1+\dots+x_m\va
 \Hc\Or For any $A,B\in\Rbb,$ asum $\Par{x,y,z}$ is suth $A=4x+5y+6z,\,B=7x+8y+9z.$\TextA{}
 \Hc By computing $x=z+4\big/3\Par{b-a},\;y=-2z+\Par{7a-4b}\XSlash 3,\;z=z.$ \;\; {\tgsl\FontSmall An exa for (4E 3.E.8).}\TextA{}
 \Hc Hence $\Par{x,y,z}$ exis $\Rightarrow\Par{A,B}\in\range T.$ \,Now $T$ surj $\Rightarrow T\apostrophe$ inje.\PfEnd
+\SepLine
+
+\Anchor{3FN16}\BulletPointX\NoteForSmall{Exe (16)}\TextB{}
+%\TextA{Supp $V,W$ finide. Prove $\forall\mathcal{T}\in\Lm{W\apostrophe,V\apostrophe},\exists\,!\,T\in\Lm{V,W},T\apostrophe=\mathcal{T}.$}
+Let $B_{\range\mathcal{T}}=\Par{\varphi_1,\dots,\varphi_p}$ with each $\varphi_k=\mathcal{T}\psi_k\Rightarrow\Par{\psi_1,\dots,\psi_p}$ liney indep.\TextB{}
+Let $B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_p,\gamma_1,\dots,\gamma_q}\Rightarrow B_V=\Par{v_1,\dots,v_p,u_1,\dots,u_q}.$\TextB{}
+Let $B_{\null\mathcal{T}}=\Par{\beta_1,\dots,\beta_l}\Rightarrow B_{W\apostrophe}=\Par{\psi_1,\dots,\psi_p,\beta_1,\dots,\beta_r}\Rightarrow B_W=\Par{w_1,\dots,w_p,x_1,\dots,x_r}.$\TextB{}
+Let $A^t=\Mt[\BigPar]{\mathcal{T},B_{W\apostrophe},B_{V\apostrophe}}.$ Then $A^t_{i,j}=0,A^t_{k,k}=1$ for all $i\neq j$ and each $1\leqslant k\leqslant p.$\TextB{}
+Define $T$ with each $Tv_i=w_i$ and each $Tu_j=0.$ Then each $T\apostrophe\Par{\beta_k}=\mathcal{T}\beta_k=0.$\TextB{}
+And each $\Sbra{T\apostrophe\Par{\psi_j}}\Par{v}=\psi_j\Par{a_1w_1+\dots+a_pw_p}=a_j=\varphi_j\Par{v}={\mathcal{T}\psi_j}\Par{v}.$ \;Now by Exe (16).\vspace{4pt}\TextB{}
+\Or Let $B_V=\Par{v_1,\dots,v_n},B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_n},B_W=\Par{w_1,\dots,w_m},B_{W\apostrophe}=\Par{\psi_1,\dots,\psi_m}.$\TextB{}
+Define each $E_{j,k}\in\Lm{V,W}:v_x\mapsto\delta_{j,x}w_k,$ and each $\reflectbox{\textit{E}}{_{k,j}}\in\Lm{W\apostrophe,V\apostrophe}:\psi_x\mapsto\delta_{k,x}\varphi_j.$\TextB{}
+Note that each $E_{j,k}\!\!\upapostrophe\,\,\Par{\psi_x}=\psi_x\circ E_{j,k}=\delta_{k,x}\varphi_j=\reflectbox{\textit{E}}{_{k,j}}\Par{\psi_x}\Rightarrow E_{j,k}\!\!\upapostrophe\,\,=\reflectbox{\textit{E}}{_{k,j}}.$\TextB{}
+By {\NOTEFOR} [3.60], $\forall T\in\Lm{V,W},T=\sum_{j=1}^n\sum_{k=1}^mA_{k,j}E_{j,k}\Rightarrow T\apostrophe=\sum_{j=1}^n\sum_{k=1}^mA_{k,j}\reflectbox{\textit{E}}{_{k,j}}.$
 \SepLine
 
 %\Anchor{3F14}\ProblemN[]{14}{

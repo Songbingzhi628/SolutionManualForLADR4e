@@ -5,7 +5,7 @@
 
 \vspace{3pt}
 
-\Anchor{4OTips}\BulletPointX\Tips \,\,\,{\tgsl Supp $p\in\PoF{n}$ has at least $n+1$ disti zeros. Then by the ctrapos of [4.12], $\deg p<0\Rightarrow p=0.$}\TextB{}
+\Anchor{4OT1}\BulletPointX\TipsN{1}\,\,\,{\tgsl Supp $p\in\PoF{n}$ has at least $n+1$ disti zeros. Then by the ctrapos of [4.12], $\deg p<0\Rightarrow p=0.$}\TextB{}
 \Or We show if $p\in\PoFi{}$ has at least $m$ disti zeros, then either $p=0$ or $\deg p\geqslant m.$\TextB{}
 If $p=0$ then done. If not, then supp $p$ has exactly $m$ disti zeros $\lambda_1,\dots,\lambda_m.$\TextB{}
 Becs $\exists\,!\,\alpha_i\geqslant 1,q\in\PoFi,$ and $q\neq 0,$ suth $p\Par{z}=\Sbra{\Par{z-\lambda_1}{^{\alpha_1}}\cdots\Par{z-\lambda_m}{^{\alpha_m}}}q\Par{z}.$\PfEnd\vspace{2pt}
@@ -198,6 +198,12 @@ Hence $\Par{pq}{^{\SmallPar{k}}}=\mathC_{k}^0{p{^{\SmallPar{0}}}q{^{\SmallPar{k}
 	\TextB{Supp $\alpha\in\Nbp$ suth $p\Par{z}=\Par{z-\lambda}{^\alpha}q\Par{z}.$ Prove ${p{^{\SmallPar{\alpha-1}}}}\Par{\lambda}=0.$}
 }$\Sbra{\Par{z-\lambda}{^\alpha}q\Par{z}}{^{\SmallPar{\alpha-1}}}=\sum_{j=1}^{\alpha-1}\mathC_{\alpha-1}^j\Sbra{\Par{z-\lambda}{^\alpha}}{^j}q^{\SmallPar{\alpha-1-j}}.$ Immed.\PfEnd
 \SepLine
+
+\Anchor{4OT2}\ProblemBX{\TipsN{2}}{
+	\TextB{Supp non0 $p,q\in\PoFi$ are multi of each other. Prove $p=cq$ for a $c\neq0.$}
+}Let $p=rq,q=sp\Rightarrow p=rsp\Rightarrow r\Par{z}s\Par{z}=1$ for all $z$ with $p\Par{z}\neq 0,$ while such $z$ is fini.\parSol{}
+Thus $\Par{rs}\Par{z}=1$ for infily many $z,$ so for all $z.$ Now $\deg rs=1=\deg r+\deg s.$\PfEnd
+\SepLine
 \ChEnd\pagebreak
 
 
@@ -212,7 +218,7 @@ Hence $\Par{pq}{^{\SmallPar{k}}}=\mathC_{k}^0{p{^{\SmallPar{0}}}q{^{\SmallPar{k}
 \Anchor{5A'1}\ProblemB{
 	\TextB{Supp $V$ is finide, $T\in\Lm{V},$ and $U$ is invarsp of $\,V$ under $T.$}
 	\TextB{Prove or give a countexa\hspace{1pt}$:$ there exis invarsp of dimension $\dim V-\dim U.$}
-}\parSol{}
+}Let $V=\Fbb^2,T\in\Lm{V}:\Par{x,y}\mapsto\Par{y,0}.$ Then $U=E\Par{0,T}=\Span{e_1}$ invard $T.$ By [5.41].\PfEnd
 \SepLine
 
 \ProblemB[]{
@@ -473,7 +479,7 @@ Othws done. By Exe (25), $\forall u,v\in V,Tu=\lambda u,Tv=\lambda v\Rightarrow\
 
 \Anchor{5A27}\Anchor{5A28}\ProblemN{27, 28}{
 	\TextA{Supp $\dim V>1,\,k\in\Bra{1,\dots,\dim V-1}$.}
-	\TextA{Supp every subsp dim $k$ is invard a $T\in\Lm{V}.$ \,Prove $T=\lambda I.$}
+	\TextA{Supp every subsp of dim $k$ is invard a $T\in\Lm{V}.$ \,Prove $T=\lambda I.$}
 }We prove the ctrapos. Supp $\exists\,v\in V\nonzero$ not eigvec.\parSol{}
 Then $\Par{v,Tv}$ liney indep $\Rightarrow B_V=\Par{v,Tv,u_1,\dots,u_n}.$ Let $U=\Span{v,u_1,\dots,u_{k-1}}.$\PfEnd\vspace{3pt}\parSol{}
 \Or Supp $v=v_1\in V\nonzero\Rightarrow B_V=\Par{v_1,\dots,v_n}.$ Let $Tv_1=c_1 v_1+\dots+c_n v_n.$\parSol{}
@@ -626,14 +632,27 @@ Becs $U$ invard $\Par{T-\lambda I}.$ Now $u\in U\Rightarrow\Par{T-\lambda I}{u}\
 
 %[1]: (4E 5.A.33), 13; [2]: (4E 25, 26, 27, 28, 22); [3]: 6, (4E 10, 23, 21), 19; [4]: (4E 13, 14); [5]: (4E 20, 24), 10; [6]: 1, 2, 7, 3, (4E 5.A.32); [7]: 8, (4E 12, 3, 8); [8]: (4E 11), 5, (4E 7); [9]: 11, 12, (4E 17, 18); [10]: 18 \OR (4E 15), (4E 9), (4E 16); [11]: (2E Ch5.24), (4E 29).
 
+
 \Anchor{5BIN5.17}\ProblemB[]{
-	\NoteForSmall{[5.17]}\;\;\TextB{By [8.20], $\nullp p\Par{T}$ and $\rangep p\Par{T}$ are invard $T$.}
+	\NoteForSmall{[5.17]}\;\;\TextB{By [8.20], $\nullp p\Par{T}$ and $\rangep p\Par{T}$ are invard $T$.\vspace{-4pt}}
 }\SepLine\pagebreak
 
 \ProblemN{\Anchor{5BI9}{9}}{
 	\TextA{Supp $V$ finide, $T\in\Lm{V},$ and non0 $v\in V.$ Let $p\in\PoFi$ be non0 of smallest deg}
 	\TextA{with $p\Par{T}v=0.$ \,Show every zero of $p$ is eigval of $T.$}
-}Let $p\Par{z}=\Par{z-\lambda}q\Par{z}\Rightarrow p\Par{T}v=\Par{T-\lambda I}q\Par{T}v\Rightarrow T\BigPar{q\Par{T}v}=\lambda q\Par{T}v.$\PfEnd
+}Let $p\Par{z}=\Par{z-\lambda}q\Par{z}\Rightarrow p\Par{T}v=0=\Par{T-\lambda I}q\Par{T}v\Rightarrow T\BigPar{q\Par{T}v}=\lambda q\Par{T}v.$\PfEnd
+\SepLine
+
+\Anchor{8C15}\Anchor{5BII4e7}\Anchor{5BIT1}\ProblemBX{\TipsN{1}}{
+	\TextA{Supp $V$ is finide, and $v \in V$.}
+	\PrePa\TextA{Prove $\exists\,!$ monic $p_v$ of smallest deg suth $p_v\Par{T}v = 0$.}
+	\PrePb\TextA{Prove $p_v$ is the min $q$ of $T\mmid_{\nullp p_v\SmallPar{T}}.$\hfill\tgnr\FontNorm So that the min of $T$ is a multi of $p_v.$}
+}(a) {\Existns} \;If $v=0,$ then let $p_v\Par{z}=1.$ Supp $v\neq0.$ Then $\Par{v,Tv,\dots,T^{\dim V}v}$ liney dep.\parSol{\Ha}
+\Blind{\Existns} \;$\exists$ smallest $m$ suth $-T^mv=c_0v+c_1Tv+\dots+c_{m-1}T^{m-1}v.$ Thus define $p_v.$\vspace{2pt}\parSol{\Ha}
+\Blind{\Existns} \;\Or Let \uline{$U=\Span{v,Tv,\dots,T^{m-1}v}$} of dim $m$ invard $T.$ Let $p_v$ be the min of $T\mmid_U.$\vspace{4pt}\parSol{\Ha}
+{\Uniqnes} \;Supp $q_v$ is monic of smallest deg \Sbra{$={}\deg p_v$} and $q_v\Par{T}v=0.$\parSol{\Ha}
+\Blind{\Uniqnes} \;Then $\Par{p_v-q_v}\Par{T}v=0,$ while $\deg p_v=m=\deg q_v\Rightarrow\deg\Par{p_v-q_v}<m.$\vspace{2pt}\parSol{}
+(b) Becs $p_v\Par{T\mmid_{\nullp p_v\SmallPar{T}}}=0\Rightarrow p_v$ is multi of $q.$ 又 $q\Par{T}v=0\Rightarrow q=p_v,$ by the min of $\deg p_v.$\PfEnd
 \SepLine
 
 \ProblemN{\Anchor{5BI10}{10}}{
@@ -768,18 +787,18 @@ Let $T=\i^{1/2}I\;$ defined by $\i^{1/2}\Par{x,y}=\XPar{\frac{\sqrt{2}}{2}x-\fra
 		%-\sin\SmallPar{\!-\!{\pi}/{4}} & \cos\SmallPar{\!-\!{\pi}/{4}}\end{pmatrix}$}.\PfEnd\vspace{2pt}
 \SepLine
 
+%\Anchor{5BI4e3}\ProblemBnoor{4E 3}{
+%	\TextB{Find the min poly of $T:\Par{x_1,\dots,x_n}\mapsto\Par{x_1+\dots+x_n,\cdots,x_1+\dots+x_n}.$}
+%}If $n=1$ then $T=I\in\Lm{\Fbb}$ with $\Par{z-1}$ as the min. Supp $n>1.$ Then $T\neq I.$\parSol{}
+%Now each $Te_k=e_1+\dots+e_n;\;T^2 e_k=n \Par{e_1+\dots+e_n}=nTe_k\Rightarrow T^2-nT=T\Par{T-n}=0.$\PfEnd
+%\SepLine
+
 \ProblemB{
 	\TextB{Supp $S,T\in\Lm{V},S$ is inv, and $p\in\PoFi$. Prove $Sp\Par{TS}=p\Par{ST}S.$}
 }We prove each $S\Par{TS}{^m}=\Par{ST}{^m} S$ by induc. (i) $m=0,1.$ Immed.\parSol{}
 (ii) $m>1.$ $S\Par{TS}{^m}=\Par{ST}{^m} S\Rightarrow S\Par{TS}{^{m+1}}=S\Par{TS}{^m}\Par{TS}=\Par{ST}{^m}\Par{ST}S=\Par{ST}{^{m+1}}S.$\PfEnd\vspace{2pt}
 \AComm $p\Par{TS} = S^{-1} p\Par{ST}S,\;p\Par{ST} = Sp\Par{TS}S^{-1}.$\par\Anchor{5BI5}\Anchor{5A4e40}
 \ACoro Becs $S$ is inv, $T\in\Lm{V}$ is arb $\Longleftrightarrow ST=R\in\Lm{V}$ is arb. Hence $p\Par{S^{-1}RS}=S^{-1}p\Par{R}S.$
-\SepLine
-
-\Anchor{5BIT1}\ProblemBX{\TipsN{1}}{
-	\TextB{Supp non0 $p,q\in\PoFi$ are multi of each other. Prove $p=cq$ for a $c\neq0.$}
-}Let $p=rq,q=sp\Rightarrow p=rsp\Rightarrow r\Par{z}s\Par{z}=1$ for all $z$ with $p\Par{z}\neq 0,$ while such $z$ is fini.\parSol{}
-Thus $\Par{rs}\Par{z}=1$ for infily many $z,$ so for all $z.$ Now $\deg rs=1=\deg r+\deg s.$\PfEnd
 \SepLine
 
 \Anchor{5BI4e7}\ProblemBnoor{4E 7}{
@@ -814,15 +833,8 @@ $p\Par{T}=0\Rightarrow\forall v\in V,p\Par{T}v=0\Rightarrow p\Par{T\XSlash U}\Pa
 	\TextB{Supp $V$ is finide and $T\in \Lm{V}$. Prove the min $p$ of $T\apostrophe$ equals the min $q$ of $T$.}
 }(a) $\forall\varphi\in V\apostrophe,\,p\Par{T\apostrophe}\Par{\varphi}=\varphi\circ p\Par{T}=0\Rightarrow p\Par{T}\in\null\varphi.$ Thus $p\Par{T}=0.$\parSol{}
 (b) $q\Par{T}=0\Rightarrow\forall \varphi\in V\apostrophe,\varphi\BigPar{q\Par{T}}=q\Par{T\apostrophe}\Par{\varphi}=0.$ Thus $q\Par{T\apostrophe}=0.$\PfEnd\vspace{2pt}\parSol{}
-\Or By (3.F.15), for any $s\in\PoFi,\:s\Par{T\apostrophe}=s\Par{T}\apostrophe=0\Longleftrightarrow s\Par{T}=0.$\PfEnd
+\Or By (3.F.15), for any $s\in\PoFi,\:s\Par{T\apostrophe}=s\Par{T}\apostrophe=0\Longleftrightarrow s\Par{T}=0.$ Simlr.\PfEnd
 \SepLine
-\pagebreak
-
-%\Anchor{5BI4e27}\ProblemBnoor{4E 27}{
-%	\TextB{Supp $\Fbb=\Rbb,$ $V$ is finide, and $T\in \Lm{V}$. Prove the min $p$ of $T_{\!\Cbb}$ is the min $q$ of $T$.}
-%}(a) $\forall u+\i 0\in V_{\!\Cbb},\,p\Par{T_{\!\Cbb}}\Par{u}=p\Par{T}u=0\Rightarrow p\Par{T}=0.$\parSol{}
-%(b) $q\Par{T}=0\Rightarrow \forall u+\i v\in V_{\!\Cbb},\,q\Par{T_{\!\Cbb}}\Par{u+\i v}=q\Par{T}u+\i q\Par{T}v=0.$\PfEnd
-%\SepLine
 
 \Anchor{5BIN5.32}\ProblemBnoor{4E 5.32}[\Sbra]{
 	\TextB{Supp $T\in\Lm{V}$ with the min $p.$ Prove $T$ not inje $\Longleftrightarrow$ the const term of $p$ is $0.$}
@@ -891,16 +903,6 @@ $\Rightarrow T^k\Par{T^{-k}}=I=b_0 T^k+b_1 T^{k-1}+\dots+b_{k-1}T.$ Becs $\exist
 %Form for min: $\Par{z-\alpha_1}{^{\delta_1}}\cdots\Par{z-\alpha_n}{^{\delta_n}},$ where $0\leqslant \delta_1+\dots+\delta_n\leqslant \dim V.$
 %\SepLine
 
-%\Anchor{5BI4e12}\ProblemBnoor{4E 12}{
-%	\TextB{Find the min poly of $T$ defined in \tgnr\Par{\hLk{5A10}{5.A.10}}.}
-%}By (5.A.9) and [8.40, 8.49], $1,2,\dots,n$ are all the zeros of the min poly of $T.$\PfEnd
-%\SepLine
-
-\Anchor{5BI4e3}\ProblemBnoor{4E 3}{
-	\TextB{Find the min poly of $T:\Par{x_1,\dots,x_n}\mapsto\Par{x_1+\dots+x_n,\cdots,x_1+\dots+x_n}.$}
-}If $n=1$ then $T=I\in\Lm{\Fbb}$ with $\Par{z-1}$ as the min. Supp $n>1.$ Then $T\neq I.$\parSol{}
-Now each $Te_k=e_1+\dots+e_n;\;T^2 e_k=n \Par{e_1+\dots+e_n}=nTe_k\Rightarrow T^2-nT=T\Par{T-n}=0.$\PfEnd
-\SepLine\pagebreak
 
 \Anchor{5BI4e8}\ProblemBnoor{4E 8}{
 	\TextB{Find the min $p$ of $T\in\Lm{\Rbb^2},$ the countclockws rotat optor by $\theta\in\Rbb^+$.}
@@ -1033,6 +1035,8 @@ $\Rightarrow\exists\,v\neq 0,\Par{T^2+b_jT+c_j}v=0\Rightarrow T^2v\in\Span{v,Tv}
 %}Let $\Fbb=\Rbb.$ Define $T\Par{x,y}=\Par{{-y,x}}.$ Then $T^2=-I.$ While $T$ has no eigval.\PfEnd
 %\SepLine
 
+\vspace{4pt}
+
 \Anchor{5BII4e2}\ProblemN{2}{
 	\TextA{Supp $A$ and $B$ are up-trig \Par{and square} matrices of the same size,}
 	\TextA{with $\alpha_1 , \dots , \alpha_n$ on the diag of $A$ and $\beta_1 , \dots , \beta_n$ on the diag of $B$.}
@@ -1052,18 +1056,6 @@ Note that $Tv_k=u_k+\lambda_kv_k\Rightarrow v_k=T^{-1}\Par{c_1v_1+\dots+c_{k-1}v
 Thus $T^{-1}v_k=\lambda_k^{-1}v_k-\lambda_k^{-1}T^{-1}u_k\in\Span{v_1,\dots,v_k},$ invard $T;$ and $\lambda_{k}^{-1}$ is the $k^\text{th}$ ent on diag.\PfEnd
 \SepLine
 
-\Anchor{5BII9}\Anchor{5BII4e7}\ProblemNnoor{7}{3E 5.B.9}{
-	\TextA{Supp $V$ is finide, and $v \in V$.}
-	\PrePa\TextA{Prove $\exists\,!$ monic $p_v$ of smallest deg suth $p_v\Par{T}v = 0$.}
-	\PrePb\TextA{Prove the min poly $p$ of $T$ is a poly multi of $p_v$.}
-}(a) {\Existns} \;If $v=0,$ then let $p_v\Par{z}=1.$ Supp $v\neq0.$ Then $\Par{v,Tv,\dots,T^{\dim V}v}$ liney dep.\parSol{\Ha}
-\Blind{\Existns} \;$\exists$ smallest $m$ suth $-T^mv=c_0v+c_1Tv+\dots+c_{m-1}T^{m-1}v.$ Thus define $p_v.$\parSol{\Ha}
-\Blind{\Existns} \;\Or Let $U=\Span{v,Tv,\dots,T^{m-1}v}$ of dim $m$ invard $T.$ Let $p_v$ be the min of $T\mmid_U.$\vspace{2pt}\parSol{\Ha}
-{\Uniqnes} \;Supp $q_v$ is monic of smallest deg \Sbra{$={}\deg p_v$} and $q_v\Par{T}v=0.$\parSol{\Ha}
-\Blind{\Uniqnes} \;Then $\Par{p_v-q_v}\Par{T}v=0,$ while $\deg p_v=m=\deg q_v\Rightarrow\deg\Par{p_v-q_v}<m.$\vspace{2pt}\parSol{}
-(b) \NOTICE that $p_v$ is the min of $T\mmid_{\nullp p_v\SmallPar{T}}.$ (?) Then by [4E 5.31].\PfEnd
-\SepLine
-
 %\Anchor{5BII14}\Anchor{5BII4e4}\ProblemNor{4}{3E 5.B.14}{
 %	\TextA{Give an inv $T$ and a $B_V$ suth each $\Mt{T}{_{k,k}}=0.$}
 %}Define $T\in\Lm{\Rbb^2}:\Par{x,y}\mapsto\Par{y,x}.$
@@ -1074,26 +1066,26 @@ Thus $T^{-1}v_k=\lambda_k^{-1}v_k-\lambda_k^{-1}T^{-1}u_k\in\Span{v_1,\dots,v_k}
 %}Define $T\in\Lm{\Fbb^2}:\Par{z,w}\mapsto\Par{z+w,z+w}.$
 %\SepLine
 
-\Anchor{5BII20}\Anchor{5BII4e6}\ProblemNor[]{6}{3E 5.B.20}{
-	\TextA{Supp $\Fbb=\Cbb,$ $V$ is finide, $T\in\Lm{V},$ and $k\in\Bra{1,\dots,\dim V}.$}
-	\TextA{Prove $V$ has a $k$\hspace{1pt}-\hspace{1pt}dim invarspd $T.$\hfill\FontNorm\tgnr By [5.27] and [5.26], immed.\vspace{-3pt}}
-}\SepLine
+%\Anchor{5BII20}\Anchor{5BII4e6}\ProblemNor[]{6}{3E 5.B.20}{
+%	\TextA{Supp $\Fbb=\Cbb,$ $V$ is finide, $T\in\Lm{V},$ and $k\in\Bra{1,\dots,\dim V}.$}
+%	\TextA{Prove $V$ has a $k$\hspace{1pt}-\hspace{1pt}dim invarspd $T.$\hfill\FontNorm\tgnr By [5.27] and [5.26], immed.\vspace{-3pt}}
+%}\SepLine
 
 \Anchor{5BII4e8}\ProblemN{8}{
 	\TextA{Supp $V$ is finide, and $v\in V$ is non0 suth $q\Par{T}v=0,$ where $q\Par{z}=z^2+2z+2.$}
 	\PrePa\TextA{Supp $\Fbb=\Rbb.$ Prove $\nexists\,B_V$ suth $\Mt{T}$ up-trig.}
 	\PrePb\TextA{Supp $\Fbb=\Cbb,$ and $\exists\,B_V$ suth $A=\Mt{T}$ up-trig. Prove $-1+\i$ or $-1-\i$ on the diag.}
-}Define $p_v$ by Exe (7). Note that $\deg p_v\geqslant 1$ becs $v\neq 0.$ And $q\Par{T\mmid_{\nullp p_v\SmallPar{v}}}=0\Rightarrow q$ is multi of $p_v.$\parSol{}
-(a) Note that $q$ has no liney factors $\Rightarrow \deg p_v\geqslant 2$. Hence by the min of $\deg p_v,$\parSol{\Hb}
-and by (b) in Exe (7), the min of $T$ is multi of $p_v=q.$ By [4E 5.44], done.\parSol{}
+}Define $p_v$ as (4E 3.C.7). Note that $\deg p_v\geqslant 1$ becs $v\neq 0.$ 又 $q\Par{T\mmid_{\nullp p_v\SmallPar{v}}}=0.$\parSol{}
+Now $q$ of deg $2$ is a multi of the min of $T\mmid_{\nullp p_v\SmallPar{v}},$ which is $p_v,$ of which the min of $T$ is a multi.\parSol{}
+(a) Note that $q$ has no $1$\hspace{1pt}-\hspace{1pt}deg factors $\Rightarrow\deg p_v\geqslant 2.$ By [4E 5.44].\parSol{}
 (b) $q\Par{z}=\Par{z+1+\i}\Par{z+1-\i}\Rightarrow -1-\i$ or $-1+\i$ zero of $p_v\Rightarrow$ is eigval $\Rightarrow$ on diag.\PfEnd
 \SepLine
 
 \Anchor{5BII4e9}\ProblemN{9}{
-	\TextA{Supp $\Fbb=\Cbb,$ $B\in\Fbb^{n,n}.$ Prove $\exists$ inv $A\in\Fbb^{n,n}$ suth $A^{-1} BA$ is up-trig.}
-}Define $T\in\Fbb^n$ with $B=\Mt[\BigPar]{T,\Par{e_1,\dots,e_n}}$ Let $C=\Mt[\BigPar]{T,\Par{f_1,\dots,f_n}}$ be up-trig.\parSol{}
+	\TextA{Supp $B\in\Cbb^{n,n}.$ Prove $\exists$ inv $A\in\Cbb^{n,n}$ suth $A^{-1} BA$ is up-trig.}
+}Define $T\in\Cbb^n$ with $B=\Mt[\BigPar]{T,\Par{e_1,\dots,e_n}}.$ Let $C=\Mt[\BigPar]{T,\Par{f_1,\dots,f_n}}$ be up-trig.\parSol{}
 Let $A=\Mt[\BigPar]{I,\,f\rightarrow e}.$ Then $C=A^{-1}BA.$\PfEnd
-\SepLine\pagebreak
+\SepLine
 
 \Anchor{5BII4e10}\ProblemN{10}{
 	\TextA{Supp $B_V=\Par{v_1,\dots,v_n},A=\Mt{T,B_V}.$ Show the following are equiv\hspace{1pt}$:$}
@@ -1102,19 +1094,18 @@ Let $A=\Mt[\BigPar]{I,\,f\rightarrow e}.$ Then $C=A^{-1}BA.$\PfEnd
 $Tv_k\in\Span{v_k,\dots,v_n},\,Tv_{k+1}\in\Span{v_{k+1},\dots,v_n},\cdots,\,Tv_{n}\in\Span{v_n}.$ Thus (c) holds.\PfEnd
 \SepLine
 
-\Anchor{5BII4e11}\ProblemN{11}{
-	\TextA{Supp $\Fbb=\Cbb,$ $V$ is finide. Prove $\exists\,B_V$ suth $\Mt{T}$ low-trig.}
-}(i) $\dim V=0,1.$ Done. (ii) $\dim V>1.$ Asum the desired result is true for dim ${}<\dim V$.\parSol{}
-Let $\lambda$ be eigval of $T$ by [5.21]. Let $U=\Range\Par{T-\lambda I},$ invard $T$ and of dim ${}<\dim V.$\parSol{}
-Now $T\mmid_U\in\Lm{U},$ by asum, has a $B_U=\Par{u_1,\dots,u_m}$ suth $\Mt{T\mmid_U,B_U}$ low-trig.\parSol{}
-Then each $Tu_j\in\Span{u_j,\dots,u_m}.$ \,Let $B_V=\Par{v_1,\dots,v_n,u_1,\dots,u_m}.$\parSol{}
-Each $\Par{T-\lambda I}v_k\in\Span{u_1,\dots,u_m}\Rightarrow Tv_k=\Par{T-\lambda I}v_k+\lambda v_k\in\Span{v_k,\dots,v_n,u_1,\dots,u_m}.$\PfEnd\vspace{2pt}\parSol{}
-\Or Simlr, using induc on $\dim V.$ Let $v_1$ be eigvec. Let $U=\Span{v_1},$ invard $T.$\parSol{}
-Then $V\Slash U$ invard $T$ of dim $\dim V-1.$ Now $T\XSlash U\in\Lm{V\XSlash U}.$\parSol{}
-By asum, $T\XSlash U$ has a $B_{V\XSlash U}=\Par{v_2+U,\dots,v_n+U}$ suth $\Mt{T\XSlash U}$ low-trig.\parSol{}
-Now for each $j\in\Bra{1,\dots,n},\:\BigPar{T\XSlash U}\Par{v_j+U}=Tv_j+U\in\Span{v_j+U,\dots,v_n+U}.$\parSol{}
-又 By (3.E.13), $B_V=\Par{v_1,\dots,v_n}.$ \,Thus $Tv_j\in\Span{v_j,\dots,v_n}.$\PfEnd
+\BulletPointX\TipsN{1}\;\;Supp $B_V=\Par{v_1,\dots,v_n},B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_n},T\in\Lm{V},A=\Mt{T,B_V}.$\TextB{}
+\IndentTipsN{1}(a) $A$ up-trig $\Longleftrightarrow T=\sum_{k=1}^n\sum_{j=1}^kA_{j,k}E_{k,j}\Longleftrightarrow T\apostrophe=\sum_{k=1}^n\sum_{j=1}^kA^t_{k,j}\reflectbox{\textit{E}}{_{j,k}}\Longleftrightarrow A^t$ low-trig.\TextB{}
+\IndentTipsN{1}(b) $A$ low-trig $\Longleftrightarrow T=\sum_{k=1}^n\sum_{j=1}^kA_{k,j}E_{j,k}\Longleftrightarrow T\apostrophe=\sum_{k=1}^n\sum_{j=1}^kA^t_{j,k}\reflectbox{\textit{E}}{_{k,j}}\Longleftrightarrow A^t$ up-trig.
 \SepLine
+
+\Anchor{5BII4e11}\ProblemBX{\TipsN{2}}{
+	\TextA{Supp $\Par{\alpha_1,\dots,\alpha_n},\Par{\beta_1,\dots,\beta_n}$ are bses of $V,$ with each $\alpha_k=\beta_{n-k+1}.$}
+	\TextA{Prove $\Mt{T,\alpha\rightarrow\alpha}$ up-trig $\Longleftrightarrow\Mt{T,\beta\rightarrow\beta}$ low-trig.}
+}For each $k\in\Bra{1,\dots,n},\:T\beta_{n-k+1}=T\alpha_k\in\Span{\alpha_1,\dots,\alpha_k}=\Span{\beta_n,\dots,\beta_{n-k+1}}.$\PfEnd
+\SepLine
+
+\pagebreak
 
 \Anchor{5BII4e12}\ProblemN{12}{
 	\TextA{Supp $V$ is finide, $U$ invarspd $T,$ and $\Mt{T}$ is up-trig for some $B_V.$}
@@ -1127,9 +1118,10 @@ Now for each $j\in\Bra{1,\dots,n},\:\BigPar{T\XSlash U}\Par{v_j+U}=Tv_j+U\in\Spa
 }
 \SepLine
 
-\Anchor{5BII4e14}\ProblemN[]{14}{
-	\TextA{Supp $V$ is finide. Prove $T$ up-trig $\Longleftrightarrow$ $T\apostrophe$ up-trig.\hfill\FontNorm\tgnr By (4E 18) and [4E 5.44], immed.\vspace{-3pt}}
-}\SepLine
+\Anchor{5BII4e14}\ProblemN{14}{
+	\TextA{Supp $V$ is finide. Prove $T$ up-trig $\Longleftrightarrow$ $T\apostrophe$ up-trig.}
+}Immed, by \TIPSN{1} and \TIPSN{2}, \OR by (4E 18) and [4E 5.44].\PfEnd
+\SepLine
 \ChEnd\pagebreak
 
 \ChDecl{Ch5C}{5.C \& [4E] 5.D}{}
@@ -1145,14 +1137,15 @@ Becs $\null T=E\Par{0,T}.$ If $0$ is eigval, then done. Othws, $E\Par{0,T}=\zero
 \Anchor{5C2}\AExa Convly not true. Define the inv $T\in\Lm{\Rbb^2}:\Par{x,y}\mapsto\Par{{-y,x}}.$ No eigvals.
 \SepLine
 
+\Anchor{5C1'}\ProblemB{
+	\TextB{Supp $T\in\Lm{V},V=\null T\oplus\range T,$ $U$ invarspd $T.$ Show $U=\null T\mmid_U\oplus\range T\mmid_U.$}
+}Becs $\null T\mmid_U\cap\range T\mmid_U\subseteq\null T\cap\range T=\zeroSubs.$ By Exe (3).\PfEnd
+\SepLine
+
 \Anchor{5C5}\ProblemN{5}{
-	\TextA{Supp $\Fbb=\Cbb,$ $V$ is finide, and $T\in\Lm{V}.$}
-	\TextA{Prove $T$ diag $\Longleftrightarrow V=\Null\Par{T-\lambda I}\oplus\Range\Par{T-\lambda I}$ for all $\lambda\in\Fbb.$}
-}Supp $V=\Null\Par{T-\lambda I}\oplus\Range\Par{T-\lambda I}$ for all $\lambda\in\Fbb.$\parSol{}
-\NOTICE that $S_\lambda=\Par{T-\lambda I}$ is surj for all non-eigval $\lambda.$ %Let $B_V=\Par{S_{\lambda}v_1,\dots,S_{\lambda}v_n}.$\parSol{}
-\parSol{}
-\parSol{}
-Convly, becs $T,I\in\Lm{V}$ diag wrto same $B_V\Rightarrow\Par{T-\lambda I}$ diag.\PfEnd
+	\TextA{Supp $\Fbb=\Cbb,$ $V$ is finide, and $T\in\Lm{V}$ with dist eigvals $\lambda_1,\dots,\lambda_m.$}
+	\TextA{Supp $V=\null S_j\oplus\range S_j$ for each $S_j=T-\lambda_jI.$ Prove $T$ is diag.}
+}
 \SepLine
 
 \Anchor{5C7}\ProblemN{7}{
@@ -1174,14 +1167,14 @@ Becs (I) $A_{j,j}B_{j,k}=A_{j,1}B_{1,k}+\dots+\Sbra{A_{j,j}B_{j,k}}+\dots+A_{j,n
 And (II) $B_{j,k}A_{k,k}=B_{j,1}A_{1,k}+\dots+\Sbra{B_{j,k}A_{k,k}}+\dots+B_{j,n}A_{n,k}=\Par{BA}{_{j,k}}.$\parSol{}
 Supp $B$ diag. If $j=k,$ then $\Par{BA}{_{j,k}}=\Par{AB}{_{j,k}},$ othws true as well.\parSol{}
 Supp $AB=BA\Rightarrow A_{j,j}B_{j,k}=A_{k,k}B_{j,k}.$ Asum $B_{j,k}\neq0$ with $j\neq k.$ Then $A_{j,j}=A_{k,k},$ ctradic.\PfEnd
-\SepLine\pagebreak
+\SepLine
 
 \Anchor{5C4e14}\ProblemBnoor{4E 14}{
 	\TextA{Supp $\Fbb=\Cbb,$ $k\in\Nbp,$ and $T\in\Lm{V}$ is inv. Prove $T^k$ diag $\Rightarrow T$ diag.}
 }%Using Exe (4E 13). Supp $\Mt{T^k,B_V}=A$ diag. Let $B=\Mt{T^{-1},B_V},C=\Mt{T,B_V}.$\parSol{}
 %Now $T^kT^{-1}=T^{-1}T^k\Rightarrow AB=BA\Rightarrow T^{-1}$ diag. Then $T^{-1}T=TT^{-1}\Rightarrow BC=CB\Rightarrow T$ diag.\PfEnd
 \AExa Not true if $\Fbb=\Rbb.$ Define $T\in\Lm{\Rbb^2}:\Par{x,y}\mapsto\Par{{-y,x}}.$ No eigvals.
-\SepLine
+\SepLine\pagebreak
 
 \Anchor{5C4e15}\ProblemBnoor{4E 15}{
 	\TextB{Supp $\Fbb=\Cbb,$ $V$ is finide, $T\in\Lm{V}$ with the min $p.$ Prove the following equiv\hspace{1pt}$:$}
@@ -1189,12 +1182,12 @@ Supp $AB=BA\Rightarrow A_{j,j}B_{j,k}=A_{k,k}B_{j,k}.$ Asum $B_{j,k}\neq0$ with 
 	\PrePc\TextB{$p$ and $p\apostrophe$ have no common zeros. \, {\tgnr\large(d)} $\gcd\Par{p,p\apostrophe}=1.$}
 }\SepLine
 
-\Anchor{3C4e17}\ProblemBnoor{4E 17}{
+\Anchor{5C4e17}\ProblemBnoor{4E 17}{
 	\TextA{Supp $V$ is finide. Prove $\Lm{V}$ has a bss consisting of diag optors.}
 }Let $B_V=\Par{v_1,\dots,v_n}.$ Define each $E_{j,k}\in\Lm{V}:v_x\mapsto\delta_{j,x}v_k\Rightarrow$ [5.41](c) true.\PfEnd
 \SepLine
 
-\Anchor{3C4e18}\ProblemBnoor{4E 18}{
+\Anchor{5C4e18}\ProblemBnoor{4E 18}{
 	\TextA{Supp $T\in\Lm{V}$ is diag. Prove if $U$ invarspd $T,$ then $T\XSlash U\in\Lm{V\XSlash U}$ is diag.}
 }Supp the eigvecs of $T$ are $B_V=\Par{v_1,\dots,v_n}$ with corres eigvals $\lambda_1,\dots,\lambda_n.$\parSol{}
 By \Sbra{5.A \TIPSN{3}}, $B_U=\Par{v_{k_1},\dots,v_{k_m}}.$ Let $\Par{v_1,\dots,v_n}=\Par{v_{k_1},\dots,v_{k_m},\dots,v_{k_n}}.$\parSol{}
@@ -1202,12 +1195,12 @@ Let $B_{V\XSlash U}=\Par{v_{k_{m+1}}+U,\dots,v_{k_n}+U}.$ Becs each $\BigPar{T\X
 \Or Becs the min of $T$ is mult of that of $T\XSlash U.$ By [4E 5.62].\PfEnd
 \SepLine
 
-\Anchor{3C4e19}\ProblemBnoor{4E 19}{
+\Anchor{5C4e19}\ProblemBnoor{4E 19}{
 	\TextA{Give an exa of $T\in\Lm{V}$ not diag while $T\mmid_U,T\XSlash U$ both diag, where $U$ invarspd $T.$}
 }Define $T\in\Lm{\Rbb^3}:\Par{x,y,z}\mapsto\Par{z,x,y}.$ Then $1$ is the only eigval with $\dim E\Par{1,T}=1.$\PfEnd
 \SepLine
 
-\Anchor{3C4e20}\ProblemBnoor{4E 20}{
+\Anchor{5C4e20}\ProblemBnoor{4E 20}{
 	\TextA{Supp $V$ is finide, $T\in\Lm{V}.$ Prove $T$ diag $\Longleftrightarrow T\apostrophe$ diag.}
 }By (4E 5.B.28), $T,T\apostrophe$ have the same min poly. By [4E 5.62].\PfEnd
 %TODO:Iso Diag
@@ -1244,7 +1237,6 @@ $\lambda\in\BigBra{z\in\Fbb:\aXMid{z-A_{j,j}}\leqslant\sum_{j\neq k=1}^n\aXMid{A
 \SepLine
 
 \ChEnd
-\pagebreak
 
 \ChDecl{Ch5E}{5.E [4E]}{}%\orMode{\hLk{5E1}{1}\;\;\hLk{5E2}{2}\;\;\hLk{5E3}{3}\;\;\hLk{5E4}{4}\;\;\hLk{5E5}{5}\;\;\hLk{5E6}{6}\;\;\hLk{5E7}{7}\;\;\hLk{5E8}{8}\;\;\hLk{5E9}{9}\;\;\hLk{5E10}{10}}{}
 \vspace{4pt}
@@ -1253,18 +1245,44 @@ $\lambda\in\BigBra{z\in\Fbb:\aXMid{z-A_{j,j}}\leqslant\sum_{j\neq k=1}^n\aXMid{A
 	\TextA{Give commu optors $S,T\in\Fbb^4$ suth $\exists$ invarspd $S$ but not $T$ and $\exists$ invarspd $T$ but not $S$.}
 }Define $S:\Par{x,y,z,w}\mapsto\Par{y,x,0,0}$ and $T:\Par{x,y,z,w}\mapsto\Par{0,0,w,z}\Rightarrow TS=ST=0.$\parSol{}
 Notice that $S:e_1\mapsto e_2,\;e_3\mapsto 0,$ and $T:e_1\mapsto 0,\;e_3\mapsto e_4.$\parSol{}
-Thus $\Span{e_1}$ invard $T$ but not $S,$ and $\Span{e_3}$ invard $S$ but not $T.$
-\SepLine
-
-\Anchor{5E2}\ProblemN{2}{
-	\TextA{Supp $\mathcal{E}\subseteq\Lm{V}$ and every elem of $\mathcal{E}$ diag.}
-	\TextA{Prove $\exists\,B_V$ suth all elem of $\mathcal{E}$ diag $\Longleftrightarrow$ each pair of elems of $\mathcal{E}$ commu.}
-}\par
+Thus ${e_1}$ eigvec of $T$ but not of $S,$ and ${e_3}$ eigvec of $S$ but not of $T.$
 \SepLine
 
 \Anchor{5E3}\ProblemN{3}{
 	\TextA{Supp $S, T\in\Lm{V}$ commu, and $p\in\PoFi$. Prove $\nullp p\Par{S},\rangep p\Par{S}$ invard $T$.}
 }Becs $Tp\Par{S}=p\Par{S}T.$ By (5.A.2,3).\PfEnd
+\SepLine
+
+\Anchor{5E2}\ProblemN{2}{
+	\TextA{Supp $\mathcal{E}\subseteq\Lm{V}$ and every elem of $\mathcal{E}$ diag.}
+	\TextA{Prove each pair of elems of $\mathcal{E}$ commu $\Rightarrow\exists\,B_V$ suth all elem of $\mathcal{E}$ diag.}
+}Using induc on $\dim V.$ (i) $\dim V=1.$ Immed. (ii) $\dim V>1.$ Asum it holds for smaller vecsps.\parSol{}
+Supp $S\in\mathcal{E}.$ Let $V=E\Par{\lambda_1,S}\oplus\cdots\oplus E\Par{\lambda_m,S}$ with $m>1.$\parSol{}
+Let each $E_k=E\Par{\lambda_k,S}.$ Becs for all $T\in\mathcal{E},$ each $E_k$ invard $T\Rightarrow T\mmid_{E_k}$ diag.\parSol{}
+Becs each $E_k\neq V.$ By asum, each $T\mmid_{E_k}$ diag and commu $\Rightarrow\exists\,B_{E_k}$ suth all such $T\mmid_{E_k}$ diag.\parSol{}
+Hence each $B_{E_k}$ consists of eigvecs of all $T.$ Forming $B_V.$\PfEnd
+\SepLine
+
+\Anchor{5E7}\ProblemN{7}{
+	\TextA{Supp $\Fbb=\Cbb,$ and $S,T\in\Lm{V}$ commu, $S$ diag. Prove $\exists\,B_V$ suth $S$ diag and $T$ up-trig.}
+}%Using induc on $\dim V.$ (i) Immed. (ii) $\dim V>1.$ Asum it holds for smaller $V.$\parSol{}
+%Let $V=E\Par{\lambda_1,S}\oplus\cdots\oplus E\Par{\lambda_m,S}$ with $B_V=\Par{u_1,\dots,u_n}$ be corres eigvecs. Let $u_1\in E\Par{\lambda_k,S}$ be a eigvec of $T.$ Let $W=\Span{u_2,\dots,u_n}\Rightarrow W\oplus\Span{u_1}=V$\parSol{}
+%Define $P:au_1+w\mapsto w$ and $\hat{R}=PR$ for $R\in\Lm{V}\Rightarrow\hat{S},\hat{T}\in\Lm{W}$ commu, becs $S,T$ commu.\parSol{}
+%Becs $\hat{S}$ diag. By asum, $\exists\,B_W=\Par{v_2,\dots,v_n}$ suth $\hat{S}$ diag and $\hat{T}$ up-trig.\parSol{}
+%Each $Sv_k=a_ku_1+\hat{S}v_k=a_kv_1+\lambda_{\alpha_k}v_k,$ with $a_k=0$ for $k\neq 1$ and $\hat{a}{_k}=0$ for $k=1.$\parSol{}
+%Each $\hat{T}v_k\in\Span{v_2,\dots,v_k}\Rightarrow Tv_k=b_kv_1+\hat{T}v_k\in\Span{v_1,\dots,v_k}.$
+\SepLine
+
+\Anchor{5E9}\ProblemN{9}{
+	\TextA{Supp $\Fbb=\Cbb,$ $V$ finide and non0. Supp $\mathcal{E}\subseteq\Lm{V}$ is suth all $S,T\in\mathcal{E}$ commu.}
+	\PrePa\TextA{Prove $\exists$ eigvec $v\in V$ of all elem of $\mathcal{E}.$ \,{\tgnr\large(b)} $\exists\,B_V$ suth all elem of $\mathcal{E}$ has up-trig matrix.}
+}(a) Using induc on $\dim V.$ (i) Immed. (ii) $\dim V>1.$ Asum it holds for smaller $V.$\parSol{\Ha}
+Supp $S\in\mathcal{E}$ and non0 $E=E\Par{\lambda,S}$ \Sbra{${}\neq V$} invard all $T\in\mathcal{E}.$\parSol{\Ha}
+By asum, $\exists$ eigvec $v\in V$ for all $T\mmid_{E},$ which is common eigvec of $S$ and all $T.$\vspace{2pt}\parSol{}
+(b) Using induc on $\dim V.$ (i) Immed. (ii) $\dim V>1.$ Asum it holds for smaller $V.$\parSol{\Hb}
+Supp $S\in\mathcal{E}.$ Let $v_1$ be eigvec of all elem of $\mathcal{E}.$ Let $W\oplus\Span{v_1}=V,P:av_1+w\mapsto w.$\parSol{\Hb}
+For each $R\in\Lm{V},$ define $\hat{R}\in\Lm{W}$ by $\hat{R}=PR.$ Becs for all $T\in\mathcal{E},$ $\hat{S}\hat{T}=\hat{T}\hat{S}.$\parSol{\Hb}
+By asum, $\exists\,B_W=\Par{v_2,\dots,v_n}$ suth $\hat{S}$ and all $\hat{T}$ has up-trig matrix. Simlr to [5.80].\PfEnd
 \SepLine
 
 \Anchor{5E5}\ProblemN{5}{
@@ -1280,27 +1298,7 @@ By (3.F.16), $\exists\,!\,S,T\in\Lm{V},\mathcal{S}=S\apostrophe,\mathcal{T}=T\ap
 \Anchor{5E6}\ProblemN{6}{
 	\TextA{Supp $\Fbb=\Cbb,$ $V$ is finide, and $S, T\in\Lm{V}$ commu.}
 	\TextA{Prove $\exists\,\alpha,\lambda\in\Cbb$ suth $\Range\Par{S -\alpha I} + \Range\Par{T -\lambda I}\neq V$.}
-}\par
-\SepLine
+}\SepLine
 
-\Anchor{5E7}\ProblemN{7}{
-	\TextA{Supp $\Fbb=\Cbb,$ $S,T\in\Lm{V}$ commu, and $S$ diag. Prove $\exists\,B_V$ suth $S$ diag and $T$ up-trig.}
-}\par
-\SepLine
-
-\Anchor{5E9}\ProblemN{9}{
-	\TextA{Supp $\Fbb=\Cbb,$ $V$ finide and non0. Supp $\mathcal{E}\subseteq\Lm{V}$ is suth all $S,T\in\mathcal{E}$ commu.}
-	\PrePa\TextA{Prove $\exists$ eigvec $v\in V$ for every elem of $\mathcal{E}$.}
-	\PrePb\TextA{Prove $\exists$ a bss of $V$ wrto which every elem of $\mathcal{E}$ has up-trig matrix.}
-}\par
-\SepLine
-
-\Anchor{5E10}\ProblemN{10}{
-	\TextA{Give commu optors $S, T$ on a finide real vecsp suth}
-	\TextA{$S + T$ has a eigval that does not equal an eigval of $S$ plus an eigval of $T$}
-	\TextA{and $ST$ has a eigval that does not equal an eigval of $S$ times an eigval of $T$.}
-}
-\par
-\SepLine
 \ChEnd
 
