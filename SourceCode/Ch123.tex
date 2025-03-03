@@ -2453,22 +2453,21 @@ $\Par{\null T}{^0}=\range T\apostrophe=\Span{\varphi_1,\dots,\varphi_m}=\BigPar{
 \SepLine
 
 \ProblemN{\Anchor{3F34}{34}}{
-	\TextA{The double dual space of $V$, denoted by $V\apostrophe\apostrophe$, is defined to be the dual space
-		of $V\apostrophe$.}
-	\TextA{In other words, $V\apostrophe\apostrophe=\Lm{V\apostrophe,\Fbb}$. Define $\Lambda:V\rightarrow V\apostrophe\apostrophe$ by $\Par{\Lambda v}\Par{\varphi} = \varphi\Par{v}$.\vspace{2pt}}
-	\PrePa\TextA{Show $\Lambda$ is a liney map from $V$ to $V\apostrophe\apostrophe$.\vspace{2pt}}
+%	\TextA{The double dual space of $V$, denoted by $V\apostrophe\apostrophe$, is defined  to be the dual space of $V\apostrophe$.}
+%	\TextA{In other words, $V\apostrophe\apostrophe=\Lm{V\apostrophe,\Fbb}$. Define $\Lambda:V\rightarrow V\apostrophe\apostrophe$ by $\Par{\Lambda v}\Par{\varphi} = \varphi\Par{v}$.\vspace{2pt}}
+	\TextA{Define $\Lambda:V\rightarrow \Fbb^{V\apostrophe}$ by $\Lambda v=\overline{v},$ and $\overline{v}:V\apostrophe\rightarrow\Fbb$ by $\overline{v}\Par{\varphi}=\varphi\Par{v}.$\vspace{2pt}}
+	\PrePa\TextA{Show $\overline{v}\in V\apostrophe\apostrophe$ and $\Lambda\in\Lm{V,V\apostrophe\apostrophe}.$\vspace{2pt}}
 	\PrePb\TextA{Show if $T\in\Lm{V}$, then $T\apostrophe\apostrophe\circ\Lambda=\Lambda\circ T$, where $T\apostrophe\apostrophe=\Par{T\apostrophe}\apostrophe$.\vspace{2pt}}
-	\PrePc\TextA{Show if $V$ is finide, then {\tgsc $\Lambda$ is iso from $V$ onto $V$\hspace{1pt}$\apostrophe\apostrophe$}.\vspace{2pt}}
-	\TextA{\normalsize Supp $V$ is finide. Then $V$ and $V\apostrophe$ are iso, and finding iso from $V$ onto $V\apostrophe$ generally req choosing\vspace{-3pt}}
-	\TextA{\normalsize a bss of $V$. In contrast, the iso $\Lambda$ from $V$ onto $V\apostrophe\apostrophe$ does not req a choice of bss and thus is considered more natural.}
-}(a) $\BigPar{\Lambda\Par{v+a w}}\Par{\varphi}=\varphi\Par{v+aw}=\varphi\Par{v}+a\varphi\Par{w}=\Par{\Lambda v}\Par{\varphi}+a\Par{\Lambda w}\Par{\varphi}$.\parSol{\Ha}
-Thus $\Lambda\Par{v+aw}=\Lambda v+a\Lambda w$. Hence $\Lambda$ is liney.\vspace{2pt}\parSol{}
-(b) $\BigPar{T\apostrophe\apostrophe\Par{\Lambda v}}\Par{\varphi}=\BigPar{\Par{\Lambda v}\circ{T\apostrophe}}\Par{\varphi}=\Par{\Lambda v}\BigPar{T\apostrophe\Par{\varphi}}$\parSol{\Hb}
-$\Blind{\BigPar{T\apostrophe\apostrophe\Par{\Lambda v}}\Par{\varphi}=\BigPar{\Par{\Lambda v}\circ{T\apostrophe}}\Par{\varphi}}{}=\BigPar{T\apostrophe\Par{\varphi}}\Par{v}=\Par{\varphi\circ T}\Par{v}=\varphi\Par{Tv}=\BigPar{\Lambda\Par{Tv}}\Par{\varphi}.$\vspace{4pt}\parSol{}
-(c) $\Lambda v=0\Rightarrow\forall\varphi\in V\apostrophe,\Par{\Lambda v}\Par{\varphi}=\varphi\Par{v}=0\Rightarrow v=0.$ Inje. Now becs $V$ finide.\PfEnd\vspace{4pt}
+	\PrePc\TextA{Show if $V$ is finide, then {\tgsc $\Lambda$ is iso from $V$ onto $V\apostrophe\apostrophe$}.}
+%	\TextA{\normalsize Supp $V$ is finide. Then $V$ and $V\apostrophe$ are iso, and finding iso from $V$ onto $V\apostrophe$ generally req choosing\vspace{-3pt}}
+%	\TextA{\normalsize a bss of $V$. In contrast, the iso $\Lambda$ from $V$ onto $V\apostrophe\apostrophe$ does not req a choice of bss and thus is considered more natural.}
+}(a) $\overline{v}\Par{\varphi+\lambda\psi}=\Par{\varphi+\lambda\psi}\Par{v}=\varphi\Par{v}+\lambda\psi\Par{v}=\overline{v}\Par{\varphi}+\lambda\overline{v}\Par{\psi}.$\parSol{\Ha}
+$\overline{v+\lambda w}\Par{\varphi}=\varphi\Par{v+\lambda w}=\varphi\Par{v}+\lambda\varphi\Par{w}=\overline{v}\Par{\varphi}+\lambda\overline{w}\Par{\varphi}.$\vspace{2pt}\parSol{}
+(b) $\BigPar{T\apostrophe\apostrophe\overline{v}}\Par{\varphi}=\BigPar{\overline{v}\circ{T\apostrophe}}\Par{\varphi}=\overline{v}\BigPar{T\apostrophe\Par{\varphi}}=\BigPar{T\apostrophe\Par{\varphi}}\Par{v}=\Par{\varphi\circ T}\Par{v}=\varphi\Par{Tv}=\overline{Tv}\Par{\varphi}.$\vspace{2pt}\parSol{}
+(c) $\overline{v}=0\Rightarrow\forall\varphi\in V\apostrophe,\overline{v}\Par{\varphi}=\varphi\Par{v}=0\Rightarrow v=0.$ Inje. Now becs $V$ finide.\PfEnd\vspace{2pt}
 \AComm Supp $\Phi\in V\apostrophe\apostrophe$ and $\Phi\neq 0.$ Then $\exists\,\varphi\in V\apostrophe,\:\Phi\Par{\varphi}=1\Rightarrow\null\Phi\oplus\Span{\varphi}=V\apostrophe.$\parCom
 And $\varphi\neq 0\Rightarrow\exists\,v\in V,\:\varphi\Par{v}=1,\null\varphi\oplus\Span{v}=V.$ Becs $\Lambda$ is surj.\parCom
-Now $\exists\,x\in V,\forall\psi=c\varphi+\rho\in V\apostrophe,\psi\Par{x}=\Par{\Lambda x}\Par{\psi}=\Phi\Par{\psi}=c.$
+Now $\exists\,x\in V,\forall\psi=c\varphi+\rho\in V\apostrophe,\psi\Par{x}=\overline{x}\Par{\psi}=\Phi\Par{\psi}=c.$
 \SepLine
 
 \ProblemN{\Anchor{3F36}{36}}{
@@ -2483,21 +2482,32 @@ Now $\exists\,x\in V,\forall\psi=c\varphi+\rho\in V\apostrophe,\psi\Par{x}=\Par{
 \Anchor{3FN3.109b}\ProblemB{
 	\TextB{Supp $T\in\Lm{V,W}.$ Prove $\range T\apostrophe\supseteq\BigPar{\null T}{^0}.$\hfill\Sbra[3pt]{{\tgsc\large Another proof of \tgnr\tgbfx[3.109](b)}}\vspace{1pt}}
 }Let $V=U\oplus\null T.$ Let $R=\Par{T\mmid_U}{^{-1}}\Big|{_{\range T}}.$ Define $\iota\in\Lm{V,U}$ by $\iota\Par{u+w}=u.$\vspace{1pt}\parSol{}
-$\forall\varPhi\in\BigPar{\null T}{^0},$ let $\psi=\varPhi\circ R,$ then $T\apostrophe\Par{\psi}=\psi\circ T=\varPhi\circ\BigPar{R\circ T\mmid_V}=\varPhi\circ\iota=\varPhi\in\range T\apostrophe.$\PfEnd\vspace{3pt}\Anchor{3F4e17}
+$\forall\varPhi\in\BigPar{\null T}{^0},$ let $\psi=\varPhi\circ R,$ then $T\apostrophe\Par{\psi}=\psi\circ T=\varPhi\circ\BigPar{R\circ T\mmid_V}=\varPhi\circ\iota=\varPhi\in\range T\apostrophe.$\PfEnd\vspace{2pt}\Anchor{3F4e17}
 \ACoro [3.108] and [3.110] hold without the hypo of finide. Now $T$ inv $\Longleftrightarrow T\apostrophe$ inv.
 \SepLine
 
 \Anchor{3F12}\ProblemN[]{12}{
 	\TextA{{\large\tgnr Note that $I_{V}\upapostrophe,I_{V\apostrophe}:V\apostrophe\rightarrow V\apostrophe.$} \,For $\varphi\in V\apostrophe,\:I_{V\apostrophe}\Par{\varphi}=\varphi=\varphi\circ I_V=I_V\upapostrophe\Par{\varphi}.$ Thus $I_{V\apostrophe}=I_V\upapostrophe.$}
-}\SepLine\pagebreak
+}\SepLine
 
 \ProblemN{\Anchor{3F15}{15}}{
 	\TextA{Supp $T\in\Lm{V,W}$. Prove $T\apostrophe=0\Rightarrow T=0.$ \hfill\tgnr\FontNorm\ACoro If $V,W$ finide, then $\Gamma:T\mapsto T\apostrophe$ is iso.}
 }Supp $T\apostrophe=0.$ Then $\Par{\range T}{^0}=\null T\apostrophe=W\apostrophe.$\parSol{}
 By Exe (25), $\range T=\Bra{w\in W:\varphi\Par{w}=0,\forall\varphi\in\Par{\range T}{^0}=W\apostrophe}.$\parSol{}
 Asum $w\neq 0$ suth $\forall\varphi\in W\apostrophe,\varphi\Par{w}=0.$ Let $U\oplus\Span{w}=W.$\parSol{}
-Define $\psi\in W\apostrophe$ by $\psi\Par{u+\lambda w}=\lambda\Rightarrow\psi\Par{w}\neq 0.$ Ctradic. Hence $\range T=\zeroSubs.$\PfEnd\vspace{2pt}\parSol{}
-\Or \Sbra[3pt]{{\tgsl Req $W$ Finide}} \;By [3.106], $\dim \range T=\dim W-\Dim\Par{\range T}{^0}=0.$\PfEnd
+Define $\psi\in W\apostrophe$ by $\psi\Par{u+\lambda w}=\lambda\Rightarrow\psi\Par{w}\neq 0.$ Ctradic. Now $\range T=\zeroSubs.$\PfEnd
+\SepLine
+
+\Anchor{3FN16}\BulletPointX\NoteForSmall{Exe (16)}\vspace{-2pt}\TextB{}
+%{\FontSmall Let $B_{\range\mathcal{T}}=\Par{\varphi_1,\dots,\varphi_p}$ with each $\varphi_k=\mathcal{T}\psi_k. $ Let $B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_p,\gamma_1,\dots,\gamma_q}\Rightarrow B_V=\Par{v_1,\dots,v_p,u_1,\dots,u_q}.$}\vspace{-3pt}\TextB{}
+%{\FontSmall Let $B_{\null\mathcal{T}}=\Par{\beta_1,\dots,\beta_l}\Rightarrow B_{W\apostrophe}=\Par{\psi_1,\dots,\psi_p,\beta_1,\dots,\beta_r}\Rightarrow B_W=\Par{w_1,\dots,w_p,x_1,\dots,x_r}.$}\TextB{}
+%Let $A^t=\Mt[\BigPar]{\mathcal{T},B_{W\apostrophe},B_{V\apostrophe}}.$ Then $A^t_{i,j}=0,A^t_{k,k}=1$ for all $i\neq j$ and each $1\leqslant k\leqslant p.$\TextB{}
+%Define $T$ with each $Tv_i=w_i$ and each $Tu_j=0.$ Then each $T\apostrophe\Par{\beta_k}=0=\mathcal{T}\beta_k.$\TextB{}
+%And each $\Sbra{T\apostrophe\Par{\psi_j}}\Par{v}=\psi_j\Par{a_1w_1+\dots+a_pw_p}=a_j=\varphi_j\Par{v}={\mathcal{T}\psi_j}\Par{v}.$ \;Now by Exe (16).\vspace{4pt}\TextB{}
+{\FontSmall Let $B_V=\Par{v_1,\dots,v_n},B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_n},B_W=\Par{w_1,\dots,w_m},B_{W\apostrophe}=\Par{\psi_1,\dots,\psi_m}.$}\TextB{}
+Define each $E_{j,k}\in\Lm{V,W}:v_x\mapsto\delta_{j,x}w_k,$ and each $\reflectbox{\textit{E}}{_{k,j}}\in\Lm{W\apostrophe,V\apostrophe}:\psi_x\mapsto\delta_{k,x}\varphi_j.$\TextB{}
+Note that each $E_{j,k}\!\!\upapostrophe\,\,\Par{\psi_x}=\psi_x\circ E_{j,k}=\delta_{k,x}\varphi_j=\reflectbox{\textit{E}}{_{k,j}}\Par{\psi_x}\Rightarrow E_{j,k}\!\!\upapostrophe\,\,=\reflectbox{\textit{E}}{_{k,j}}.$\vspace{1pt}\TextB{}
+$\Lm{V,W}\ni T=\sum_{j=1}^n\sum_{k=1}^mA_{k,j}E_{j,k}\Longleftrightarrow\mathcal{T}=\sum_{j=1}^n\sum_{k=1}^mA_{k,j}\reflectbox{\textit{E}}{_{k,j}}\in\Lm{W\apostrophe,V\apostrophe}.$ Uniqly by Exe (16).
 \SepLine
 
 \Anchor{3F4e8}\ProblemBnoor{{4E 8}}{
@@ -2542,8 +2552,8 @@ $\forall v\in V,\Sbra{\Gamma\apostrophe\BigPar{\Psi\Par{x_1,\dots,x_m}}}\Par{v}=
 Now $\Gamma\apostrophe\BigPar{\Psi\Par{x_1,\dots,x_m}}=x_1\varphi_1+\dots+x_m\varphi_m.$ Define $\Phi:\Fbb^m\rightarrow V\apostrophe$ by $\Phi=\Gamma\apostrophe\circ\Psi.$ Thus by (3.B.3),\par\quad
 (c) $\Gamma$ inje $\Longleftrightarrow\Gamma\apostrophe$ surj $\Longleftrightarrow\Phi$ surj $\Longleftrightarrow\Par{\varphi_1,\dots,\varphi_m}$ spanning $V\apostrophe.$\par\quad
 (d) $\Gamma$ surj $\Longleftrightarrow\Gamma\apostrophe$ inje $\Longleftrightarrow\Phi$ inje $\Longleftrightarrow\Par{\varphi_1,\dots,\varphi_m}$ being liney indep.\PfEnd
-\SepLine\pagebreak
-
+\SepLine
+\pagebreak
 
 \ProblemN{\Anchor{3F9}{9}}{
 	\TextA{Show $\forall\psi\in V\apostrophe,\psi=\psi\Par{v_1}\varphi_1+\dots+\psi\Par{v_n}\varphi_n,$ where $B_V=\Par{v_1,\dots,v_n},B_{V\apostrophe}=\Par{\varphi_1,\cdots,\varphi_n}.$}
@@ -2574,20 +2584,6 @@ Now $\Gamma\apostrophe\BigPar{\Psi\Par{x_1,\dots,x_m}}=x_1\varphi_1+\dots+x_m\va
 \Hc\Or For any $A,B\in\Rbb,$ asum $\Par{x,y,z}$ is suth $A=4x+5y+6z,\,B=7x+8y+9z.$\TextA{}
 \Hc By computing $x=z+4\big/3\Par{b-a},\;y=-2z+\Par{7a-4b}\XSlash 3,\;z=z.$ \;\; {\tgsl\FontSmall An exa for (4E 3.E.8).}\TextA{}
 \Hc Hence $\Par{x,y,z}$ exis $\Rightarrow\Par{A,B}\in\range T.$ \,Now $T$ surj $\Rightarrow T\apostrophe$ inje.\PfEnd
-\SepLine
-
-\Anchor{3FN16}\BulletPointX\NoteForSmall{Exe (16)}\TextB{}
-%\TextA{Supp $V,W$ finide. Prove $\forall\mathcal{T}\in\Lm{W\apostrophe,V\apostrophe},\exists\,!\,T\in\Lm{V,W},T\apostrophe=\mathcal{T}.$}
-Let $B_{\range\mathcal{T}}=\Par{\varphi_1,\dots,\varphi_p}$ with each $\varphi_k=\mathcal{T}\psi_k\Rightarrow\Par{\psi_1,\dots,\psi_p}$ liney indep.\TextB{}
-Let $B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_p,\gamma_1,\dots,\gamma_q}\Rightarrow B_V=\Par{v_1,\dots,v_p,u_1,\dots,u_q}.$\TextB{}
-Let $B_{\null\mathcal{T}}=\Par{\beta_1,\dots,\beta_l}\Rightarrow B_{W\apostrophe}=\Par{\psi_1,\dots,\psi_p,\beta_1,\dots,\beta_r}\Rightarrow B_W=\Par{w_1,\dots,w_p,x_1,\dots,x_r}.$\TextB{}
-Let $A^t=\Mt[\BigPar]{\mathcal{T},B_{W\apostrophe},B_{V\apostrophe}}.$ Then $A^t_{i,j}=0,A^t_{k,k}=1$ for all $i\neq j$ and each $1\leqslant k\leqslant p.$\TextB{}
-Define $T$ with each $Tv_i=w_i$ and each $Tu_j=0.$ Then each $T\apostrophe\Par{\beta_k}=\mathcal{T}\beta_k=0.$\TextB{}
-And each $\Sbra{T\apostrophe\Par{\psi_j}}\Par{v}=\psi_j\Par{a_1w_1+\dots+a_pw_p}=a_j=\varphi_j\Par{v}={\mathcal{T}\psi_j}\Par{v}.$ \;Now by Exe (16).\vspace{4pt}\TextB{}
-\Or Let $B_V=\Par{v_1,\dots,v_n},B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_n},B_W=\Par{w_1,\dots,w_m},B_{W\apostrophe}=\Par{\psi_1,\dots,\psi_m}.$\TextB{}
-Define each $E_{j,k}\in\Lm{V,W}:v_x\mapsto\delta_{j,x}w_k,$ and each $\reflectbox{\textit{E}}{_{k,j}}\in\Lm{W\apostrophe,V\apostrophe}:\psi_x\mapsto\delta_{k,x}\varphi_j.$\TextB{}
-Note that each $E_{j,k}\!\!\upapostrophe\,\,\Par{\psi_x}=\psi_x\circ E_{j,k}=\delta_{k,x}\varphi_j=\reflectbox{\textit{E}}{_{k,j}}\Par{\psi_x}\Rightarrow E_{j,k}\!\!\upapostrophe\,\,=\reflectbox{\textit{E}}{_{k,j}}.$\TextB{}
-By {\NOTEFOR} [3.60], $\forall T\in\Lm{V,W},T=\sum_{j=1}^n\sum_{k=1}^mA_{k,j}E_{j,k}\Rightarrow T\apostrophe=\sum_{j=1}^n\sum_{k=1}^mA_{k,j}\reflectbox{\textit{E}}{_{k,j}}.$
 \SepLine
 
 %\Anchor{3F14}\ProblemN[]{14}{

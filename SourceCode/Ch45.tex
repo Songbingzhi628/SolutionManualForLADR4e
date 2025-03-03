@@ -218,7 +218,7 @@ Thus $\Par{rs}\Par{z}=1$ for infily many $z,$ so for all $z.$ Now $\deg rs=1=\de
 \Anchor{5A'1}\ProblemB{
 	\TextB{Supp $V$ is finide, $T\in\Lm{V},$ and $U$ is invarsp of $\,V$ under $T.$}
 	\TextB{Prove or give a countexa\hspace{1pt}$:$ there exis invarsp of dimension $\dim V-\dim U.$}
-}Let $V=\Fbb^2,T\in\Lm{V}:\Par{x,y}\mapsto\Par{y,0}.$ Then $U=E\Par{0,T}=\Span{e_1}$ invard $T.$ By [5.41].\PfEnd
+}$T\in\Lm{\Rbb^3}$ with no eigvals will do. By (4E 5.B.29), $T$ has invarsp of dim $2,$ not of dim $1.$\PfEnd
 \SepLine
 
 \ProblemB[]{
@@ -406,7 +406,7 @@ Now $E\Par{\lambda,T}=\Bra{Su:u\in E\Par{\lambda,S^{-1}TS}};\;E\Par{\lambda,S^{-
 %\SepLine
 
 \Anchor{5A4e15}\ProblemBnoor{4E 15}{
-	\TextB{Show $\lambda$ is eigval of $T$ $\Longleftrightarrow$ $\lambda$ is eigval of the dual optor $T\apostrophe\in\Lm{V\apostrophe}$.}
+	\TextB{Show $\lambda$ is eigval of $T$ $\Longleftrightarrow$ of $T\apostrophe.$}
 }\Sbra[3pt]{{\tgsl Req Finide}} \;${T-\lambda I_V}$ not inv $\Longleftrightarrow\Par{T-\lambda I_V}\apostrophe=T\apostrophe-\lambda I_{V\apostrophe}$ not inv.\PfEnd\vspace{2pt}\parSol{}
 (a) Supp $\lambda$ is eigval with $v.$ Let $U$ be invar with $U\oplus\Span{v}=V,$ by Exe (4E 39).\parSol{\Ha}
 Define $\psi\in V\apostrophe$ by $\psi\Par{cv+u}=c.$ Then $\Sbra{T\apostrophe\Par{\psi}}\Par{cv+u}=\psi\BigPar{c\lambda v+Tu}=\lambda c=\lambda\psi\Par{cv+u}.$\vspace{2pt}\parSol{}
@@ -442,8 +442,8 @@ Now $T_{\!\Cbb}\Par{\overline{v+\i u}}=Tv-\i Tu=\Par{av-bu}-\i\Par{au+bv}=\Par{a
 %\SepLine
 
 \ProblemN{\Anchor{5A23}{23}}{
-	\TextA{Supp $V$ is finide, $S, T\in\Lm{V}$. Prove $ST$ and $TS$\, have the same eigvals.}
-}Supp $v\neq 0$ and $STv=\lambda v\Rightarrow T\Par{STv}=\lambda Tv=TS\Par{Tv}.$\parSol{}
+	\TextA{Supp $V$ is finide, and $S, T\in\Lm{V}$. Prove $ST$ and $TS$\, have the same eigvals.}
+}\Sbra{{\tgsl False if infinide. See Exe (18, 20).}} Supp $v\neq 0$ and $STv=\lambda v\Rightarrow T\Par{STv}=\lambda Tv=TS\Par{Tv}.$\parSol{}
 If $Tv=0$, then $T$ not inje, so are $TS,ST.$ Othws, $\lambda$ is eigval of $TS.$ \,Rev the roles in asum.\PfEnd
 \SepLine
 
@@ -463,7 +463,7 @@ Becs each $Ru_k=\lambda_ku_k,Tv_k=\lambda_kv_k.$ Define each $S\Par{u_k}=v_k.$\P
 
 \Anchor{5A4e37}\ProblemBnoor{4E 37}{
 	\TextB{Supp $V$ is finide, $T\in\Lm{V}$. Define $\mathcal{A}\in\Lm[\BigPar]{\Lm{V}}$ by $\mathcal{A}\Par{S} = TS.$}
-	\TextB{Prove the set of eigvals of \,$T$ equals the set of eigvals of $\mathcal{A}$.}
+	\TextB{Prove the set of eigvals of\;$T$ equals the set of eigvals of $\mathcal{A}$.}
 }(a) For $v\neq 0$ and $Tv=\lambda v,$ let $v_1=v\Rightarrow B_V=\Par{v_1,\dots,v_n}.$\parSol{\Ha}
 Define $S\in\Lm{V}:v_j\mapsto v,$ \OR $v_j\mapsto\delta_{1,j}v_1.$ Then each $\Par{T-\lambda I}Sv_j=0.$\parSol{\Ha}
 Thus $\Par{T-\lambda I}S=0\Rightarrow\mathcal{A}\Par{S}=TS=\lambda S$ with $S\neq 0.$\vspace{2pt}\parSol{}
@@ -1184,7 +1184,7 @@ Supp $AB=BA\Rightarrow A_{j,j}B_{j,k}=A_{k,k}B_{j,k}.$ Asum $B_{j,k}\neq0$ with 
 }Supp the eigvecs of $T$ are $B_V=\Par{v_1,\dots,v_n}$ with corres eigvals $\lambda_1,\dots,\lambda_n.$\parSol{}
 By \Sbra{5.A \TIPSN{3}}, $B_U=\Par{v_{k_1},\dots,v_{k_m}}.$ Let $\Par{v_1,\dots,v_n}=\Par{v_{k_1},\dots,v_{k_m},\dots,v_{k_n}}.$\parSol{}
 Let $B_{V\XSlash U}=\Par{v_{k_{m+1}}+U,\dots,v_{k_n}+U}.$ Becs each $\BigPar{T\XSlash U}\Par{v_{k_{m+j}}+U}=\lambda_{k_{m+j}}\Par{v_{k_{m+j}}+U}.$\PfEnd\vspace{3pt}\parSol{}
-\Or Becs the min of $T$ is mult of that of $T\XSlash U.$ By [4E 5.62].\PfEnd
+\Or Becs the min of $T$ is multi of that of $T\XSlash U.$ By [4E 5.62].\PfEnd
 \SepLine
 
 \Anchor{5C4e19}\ProblemBnoor{4E 19}{
@@ -1194,12 +1194,12 @@ Let $B_{V\XSlash U}=\Par{v_{k_{m+1}}+U,\dots,v_{k_n}+U}.$ Becs each $\BigPar{T\X
 
 \Anchor{5C4e20}\ProblemBnoor{4E 20}{
 	\TextA{Supp $V$ is finide, $T\in\Lm{V}.$ Prove $T$ diag $\Longleftrightarrow T\apostrophe$ diag.}
-}By (4E 5.B.28), $T,T\apostrophe$ have the same min poly. By [4E 5.62].\PfEnd
-%TODO:Iso Diag
+}By (4E 5.B.28), $T,T\apostrophe$ have the same min poly. By [4E 5.62].\PfEnd\vspace{2pt}\parSol{}
+\Or By \Sbra{5.B(II) \TIPSN{1}}. Note that low-trig and up-trig $\Longleftrightarrow$ diag.\PfEnd
 \SepLine
 
 \Anchor{5C16}\ProblemN{16}{
-	\TextA{Define $F_1=1,F_2=2,$ and $F_n=F_{n-1}+F_{n-2}$ for $n\geqslant 3.$\vspace{6pt}}
+	\TextA{Define $F_1=1,F_2=2,$ and $F_n=F_{n-1}+F_{n-2}$ \:for $n\geqslant 3.$\vspace{6pt}}
 	\TextA{Define $T\in\Lm{\Rbb^2}:\Par{x,y}\mapsto\Par{y,x+y}.$ \, (a) Find all eigvals and eigvecs of $T.$\vspace{-6pt}}
 	\PrePb\TextA{Show each $T^n\Par{0,1}=\Par{F_n,F_{n+1}},$ \, (c) and each $F_n={}${\LARGE$\frac{1}{\sqrt{5}\;}$}$\,\bigg[\bigg(\!${\LARGE$\frac{\:1\,+\,\sqrt{5}\:}{2}$}$\!\bigg)\begin{array}{l}\hspace{-5pt}{}_n\\\\\vspace{-18pt}\end{array}\hspace{-8pt}-\bigg(\!${\LARGE$\frac{\:1\,-\,\sqrt{5}\:}{2}$}$\!\bigg)\begin{array}{l}\hspace{-5pt}{}_n\\\\\vspace{-18pt}\end{array}\hspace{-5pt}\bigg].$\vspace{-4pt}}
 %	\PrePd\TextA{Show each $F_n$ is the integer that closest to {\LARGE$\frac{1}{\sqrt{5}\;}$}$\,\bigg(\!${\LARGE$\frac{\:1\,+\,\sqrt{5}\:}{2}$}$\!\bigg)\begin{array}{l}\hspace{-5pt}{}_n\\\\\vspace{-18pt}\end{array}\hspace{-8pt}.$\vspace{-8pt}}
@@ -1284,7 +1284,6 @@ By (3.F.16), $\exists\,!\,S,T\in\Lm{V},\mathcal{S}=S\apostrophe,\mathcal{T}=T\ap
 \Or Let $A=\Mt{T,B_V},C=\Mt{S,B_V}\Rightarrow A^t=\Mt{T\apostrophe,B_{V\apostrophe}},C^t=\Mt{S\apostrophe,B_{V\apostrophe}}.$\parSol{}
 (a) Given $S,T\in\Lm{V},$ $TS=ST\Longleftrightarrow AC=CA\Longleftrightarrow C^tA^t=A^tC^t\Longleftrightarrow S\apostrophe T\apostrophe=T\apostrophe S\apostrophe.$\parSol{}
 (b) Given $\mathcal{S},\mathcal{T}\in\Lm{V\apostrophe},$ by (3.F.16), $\exists\,!\,S,T\in\Lm{V},\mathcal{S}=S\apostrophe,\mathcal{T}=T\apostrophe.$ By (a).\PfEnd
-%TODO:3.F.16:Construct \Gamma via matrices and bses.
 \SepLine
 
 \Anchor{5E6}\ProblemN{6}{
