@@ -218,7 +218,10 @@ Thus $\Par{rs}\Par{z}=1$ for infily many $z,$ so for all $z.$ Now $\deg rs=1=\de
 \Anchor{5A'1}\ProblemB{
 	\TextB{Supp $V$ is finide, $T\in\Lm{V},$ and $U$ is invarsp of $\,V$ under $T.$}
 	\TextB{Prove or give a countexa\hspace{1pt}$:$ there exis invarsp of dimension $\dim V-\dim U.$}
-}$T\in\Lm{\Rbb^3}$ with no eigvals will do. By (4E 5.B.29), $T$ has invarsp of dim $2,$ not of dim $1.$\PfEnd
+}If $\dim U$ or $\dim V$ is odd, then $\exists$ eigval of $T$ by [4E 5.34], and $\exists$ invarsp of dim $\dim V-1.$\parSol{}
+\colorbox{yellow}{TODO}
+%\NOTICE that if $\dim V<5,$ then no countexa exists.\parSol{}
+%Let $T\in\Lm{\Rbb^6}$ with no eigvals will do. By (4E 5.B.29), $T$ has invarsp of dim $2,$ not of dim $4.$\PfEnd
 \SepLine
 
 \ProblemB[]{
@@ -1142,9 +1145,13 @@ Becs $\null T=E\Par{0,T}.$ If $0$ is eigval, then done. Othws, $E\Par{0,T}=\zero
 \SepLine
 
 \Anchor{5C5}\ProblemN{5}{
-	\TextA{Supp $\Fbb=\Cbb,$ $V$ is finide, and $T\in\Lm{V}$ with dist eigvals $\lambda_1,\dots,\lambda_m.$}
-	\TextA{Supp $V=\null S_j\oplus\range S_j$ for each $S_j=T-\lambda_jI.$ Prove $T$ is diag.}
-}
+	\TextA{Supp $\Fbb=\Cbb,$ $V$ is finide, and $T\in\Lm{V}.$}
+	\TextA{Supp $V=\Null\Par{T-\lambda I}\oplus\Range\Par{T-\lambda I}$ for all $\lambda\in\Cbb.$ Prove $T$ is diag.}
+}(i) $\dim V=1.$ Immed. (ii) $\dim V>1.$ Asum the result holds for vecsp of smaller dim.\parSol{}
+Becs by (4E 5.A.39), $\exists\,\alpha$ eigval of $T\Rightarrow\exists$ invarsp $U$ of dim $\dim V-1.$\parSol{}
+又 $T\mmid_U\in\Lm{U},$ $V=\Null\Par{T-\lambda I}\oplus\Range\Par{T-\lambda I}.$ Note by Exe (4),\parSol{}
+$\Null\Par{T\mmid_U-\lambda I}\cap\Range\Par{T\mmid_U-\lambda I}=\zeroSubs\Rightarrow U=\Null\Par{T\mmid_U-\lambda I}\oplus\Range\Par{T\mmid_U-\lambda I}.$\parSol{}
+By asum, $T\mmid_U$ is diag wrto $B_U=\Par{v_2,\dots,v_n}.$ Let $v_1$ be an eigvec corres $\alpha\Rightarrow B_V=\Par{v_1,\dots,v_n}.$\PfEnd
 \SepLine
 
 \Anchor{5C7}\ProblemN{7}{
