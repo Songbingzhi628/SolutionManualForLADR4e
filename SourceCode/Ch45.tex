@@ -626,6 +626,20 @@ Let $B_{\Range\SmallPar{T\,-\,\lambda I}}=\Par{w_1,\dots,w_m},\,B_V=\Par{w_1,\do
 Becs $U$ invard $\Par{T-\lambda I}.$ Now $u\in U\Rightarrow\Par{T-\lambda I}{u}\in U\Rightarrow Tu\in U.$\vspace{2pt}\parSol{}
 (b) Supp $U$ is invarspd $T$ with $\dim U=\dim V-1\Rightarrow\dim V\XSlash U=1.$ By (3.A.7) and Exe (35).\PfEnd
 \SepLine
+
+\Anchor{5C16}\ProblemBnoor{3.C.16}{
+	\TextB{Let $\Bra{F_n}$ be the Fibonacci Seq. Define $T\in\Lm{\Rbb^2}:\Par{x,y}\mapsto\Par{y,x+y}.$}
+	(a) \TextB{Find all eigvals and eigvecs. \;{\tgnr\large(b)} Show $T^n\Par{0,1}=\Par{F_n,F_{n+1}}$ and find the formula.}
+	%	{and find the general formula of $F_n.$}
+	%and each $F_n={}${\LARGE$\frac{1}{\sqrt{5}\;}$}$\,\bigg[\bigg(\!${\LARGE$\frac{\:1\,+\,\sqrt{5}\:}{2}$}$\!\bigg)\begin{array}{l}\hspace{-5pt}{}_n\\\\\vspace{-18pt}\end{array}\hspace{-8pt}-\bigg(\!${\LARGE$\frac{\:1\,-\,\sqrt{5}\:}{2}$}$\!\bigg)\begin{array}{l}\hspace{-5pt}{}_n\\\\\vspace{-18pt}\end{array}\hspace{-5pt}\bigg].$\vspace{-4pt}}
+%	\PrePd\TextA{Show each $F_n$ is the integer that closest to {\LARGE$\frac{1}{\sqrt{5}\;}$}$\,\bigg(\!${\LARGE$\frac{\:1\,+\,\sqrt{5}\:}{2}$}$\!\bigg)\begin{array}{l}\hspace{-5pt}{}_n\\\\\vspace{-18pt}\end{array}\hspace{-8pt}.$\vspace{-8pt}}
+}(a) {\FontSmall Supp $\lambda\Par{x,y}=\Par{y,x+y}$ with $x$ or $y$ non0. Note that $x=0\Longleftrightarrow y=0,$ and $0$ is not eigval.}\vspace{1pt}\parSol{\Ha}
+{\FontSmall Then $\lambda_1={}${\large$\frac{\:1\,+\,\sqrt{5}\:}{2}$}, $v_1=\Par{1,\frac{\:1\,+\,\sqrt{5}\:}{2}};$
+\,and $\lambda_2={}${\large$\frac{\:1\,-\,\sqrt{5}\:}{2}$}, $v_2=\Par{1,\frac{\:1\,-\,\sqrt{5}\:}{2}}.$ Becs $\dim\Rbb^2=2.$}\vspace{2pt}\parSol{}
+(b) {\FontSmall $T\Par{0,1}=\Par{F_1,F_2}.$ Asum $T^k\Par{0,1}=\Par{F_k,F_{k+1}}.$ Then $T^{k+1}\Par{0,1}=\Par{F_{k+1},F_{k}+F_{k+1}}.$}\vspace{-6pt}\parSol{\Hb}
+{\FontSmall $T^n\Par{0,1}=T^n\XSbra{${\large$\frac{1}{\sqrt{5}\;}$}$\BigPar{v_1-v_2}}={}${\large$\frac{1}{\sqrt{5}\;}$}$\def\envFont{\Large}\XSbra{\bigg(\!${\large$\frac{\:1\,+\,\sqrt{5}\:}{2}$}$\!\bigg)\begin{array}{l}\hspace{-7pt}{}_n\\\\\vspace{-8pt}\end{array}\hspace{-8pt}v_1-\bigg(\!${\large$\frac{\:1\,-\,\sqrt{5}\:}{2}$}$\!\bigg)\begin{array}{l}\hspace{-7pt}{}_n\\\\\vspace{-8pt}\end{array}\hspace{-8pt}v_2\def\envFont{\Large}}.$ Take the first slot.}\PfEnd[-28pt]\vspace{4pt}
+\SepLine
+
 \ChEnd
 
 \vfill\ChDecl{Ch5BI}{5.B: I}
@@ -633,10 +647,9 @@ Becs $U$ invard $\Par{T-\lambda I}.$ Now $u\in U\Rightarrow\Par{T-\lambda I}{u}\
 \vspace{2pt}
 
 {\normalsize
-下面，为了照顾原书两版过大的差距，特别将此节分成(I), (II)两部分。考虑到本节4e「本征值与极小多项式」和「奇维度实向量空间的本征值」(相当一部分是从3e的8.C节挪过来的)是对3e「多项式作用于算子」和「本征值的存在性」(也即本节3e前半部分)的极大扩充，这一扩充也大大改变了本节3e后半部分的「上三角矩阵」，故而将4e放在3e前面。\par
-(I)除了覆盖本节4e全部和3e前半部分与之相关的所有习题，还会覆盖上节4e末。\par\HI
+(I)覆盖本节4e全部、上节4e末、3e前半部分与之相关的所有习题。\par\HI
 注意：本节4e和3e的8.C节、9.A节有交集，许多略去的习题和注解可以在3e这两节找到。\par
-(II)除了覆盖本节3e后半部分「上三角矩阵」，还会覆盖下节4e；并且，下节还会覆盖下下节4e。\par\vspace{2pt}
+(II)覆盖本节3e后半部分「上三角矩阵」和下节4e；并且，下节还会覆盖下下节4e。\par\vspace{2pt}
 }\vspace{10pt}
 
 %\small
@@ -846,61 +859,10 @@ $p\Par{T}=0\Rightarrow\forall v\in V,p\Par{T}v=0\Rightarrow p\Par{T\XSlash U}\Pa
 \SepLine
 \pagebreak
 
-\Anchor{5BI4e22}\ProblemBnoor{4E 22}{
-	\TextB{Supp $V$ is finide, $T\in \Lm{V}$. Prove $T$ is inv $\Longleftrightarrow I\in\Span[\BigPar]{T, T^2, \dots , T^{\dim V}}.$}
-}Let $p\Par{z}=a_0 +a_1 z+\dots+z^m$ be the min. Becs $T$ inv $\Longleftrightarrow$ inje $\Longleftrightarrow p\Par{0}=a_0\neq 0.$\PfEnd
-\SepLine
-
-\Anchor{5BI4e10}\Anchor{5BI4e23}\ProblemBnoor{4E 10, 23}{
-	\TextA{Supp $V$ is finide, $T\in\Lm{V},$ with the min $p$ of deg $m.$\vspace{1pt}}
-	\TextA{Supp non0 $v\in V.$ Let each $U_k=\Span[\BigPar]{v,Tv,\dots,T^kv}.$\vspace{1pt}}
-	\TextA{Prove $\exists\,j\in\Bra{1,\dots,m},\;U_{j-1}=U_n$ for all $n\geqslant j-1.$}
-}Supp $j$ is the smallest suth $T^j v=a_0v+a_1 Tv+\dots+a_{j-1}T^{j-1}v\in U_{j-1}\Rightarrow j\leqslant m.$\parSol{}
-Then $U_{j-1}$ is invard $T,$ so is each $U_n=\Span{v,Tv,\dots,T^{j-1} v,\dots,T^n v}.$\PfEnd
-%\AComm By {\NOTEFOR} [8.40], $j$ has an upper bound $m-1,$ $m$ has an upper bound $\dim V.$\par\quad
-\SepLine
-
-\Anchor{5BI4e19}\ProblemBnoor{4E 19}{
-	\TextA{Supp $V$ finide, $T\in\Lm{V},$ with the min $p\Par{z}=c_0+c_1z+\dots+c_{m-1}z^{m-1}+z^m.$}
-	\TextA{Let $\mathcal{E} =\Bra{q\Par{T}: q \in \PoFi},$ a subsp of $\Lm{V}.$ Prove $\dim\mathcal{E}=\deg p.$}
-}Becs $T^m=c_0I+c_1T+\dots+c_{m-1}T^{m-1}\Rightarrow U=\Span{I,T,\dots,T^{m-1}}\Rightarrow U$ invard $T$\parSol{}
-$\Rightarrow$ each $T^{m+k}=T^k\Par{T^m}\in U\Rightarrow\mathcal{E}=\Span[\BigPar]{I,T,\dots,T^{\dim\Lm[\SmallPar]{V}-1}}=\Span[\BigPar]{I,T,\dots,T^{m-1}}=U.$\PfEnd\vspace{4pt}\parSol{}
-\Or Define $\Phi\in\Lm[\BigPar]{\PoFi,\Lm{V}}$ by $\Phi\Par{q}=q\Par{T}\Rightarrow\range\Phi=\mathcal{E}.$\parSol{}
-Becs $\Phi\Par{q}=q\Par{T}=0\Longleftrightarrow q$ is a multi of the min $p\Longleftrightarrow q\in\Bra{ps:s\in\PoFi}=\null\Phi.$\parSol{}
-Now by (4.11), $\dim\PoFi\XSlash\null\Phi=\deg p=m.$ By [3.91](d).\PfEnd
-\SepLine
-
-\Anchor{5BI4e13}\ProblemBnoor{4E 13}{
-	\TextA{Supp $V$ finide, $T\in \Lm{V},$ with the min $p\Par{z}=c_0+c_1 z+\dots+c_{m-1}z^{m-1}+z^m.$}
-	\TextA{Prove if $q\Par{z}=a_0 +a_1 z+\dots+a_n z^n,$ then $\exists\,!\,r\in\PoF{\deg p-1},\,q\Par{T}=r\Par{T}.$}
-}Becs $p\neq 0.$ By the div algo, immed. \Sbra{$r=0$ if $q=p.$}\PfEnd\vspace{2pt}\parSol{}
-\Or Becs $T^m=-c_0I-c_1T-\dots-c_{m-1}T^{m-1}.$\parSol{}
-For $\deg q<m=\deg p,\;q\Par{T}$ itself is the uniq repres for $q\Par{T}.$\parSol{}
-Supp $\deg q\geqslant\deg p.$ For each $k\in\Nbb,\exists\,!\,b_{j,k}\in\Fbb,\,T^{m+k}=b_{0,k}I+b_{1,k}T+\dots+b_{m-1,k}T^{m-1}.$\PfEnd
-\SepLine
-
-\Anchor{5BI4e14}\ProblemBnoor{4E 14}{
-	\TextA{Supp $V$ finide, $T\in\Lm{V},$ with the min $p\Par{z}=a_0 + a_1 z + \dots + a_{m-1} z^{m-1}+z^m,$}
-	\TextA{and $a_0\neq 0.$ \,Give a repres of $s,$ the min of $T^{-1}.$}
-}Becs $T^{-m}{p\Par{T}}=a_0T^{-m}+a_1T^{-\SmallPar{m-1}}+\dots+a_{m-1}{T^{-1}}+I=0.$\parSol{}
-Define $q\Par{z}=z^m+{}${\Large$\frac{a_1}{a_0}$}$\,z^{m-1}+\dots+{}${\Large$\frac{a_{m-1}}{a_0}$}$\,z+{}${\Large$\frac{1}{a_0}$}$\Rightarrow q\Par{T}=0.$\parSol{}
-Becs $\deg s\leqslant\deg p,$ while $\Par{T^{-1}}{^{-1}}=T\Rightarrow\deg p\leqslant\deg s.$ By the uniqnes, immed.\PfEnd\vspace{4pt}\parSol{}
-\Or Becs each $T^{-k}\not\in\Span[\BigPar]{I,T^{-1},\dots,T^{-\SmallPar{k-1}}}$ for $k\in\Bra{1,\dots,m-1}.$ Done.\parSol{}
-For if not, supp $T^{-k}=b_0 I+b_1 T^{-1}+\dots+b_{k-1}T^{k-1}$\parSol{}
-$\Rightarrow T^k\Par{T^{-k}}=I=b_0 T^k+b_1 T^{k-1}+\dots+b_{k-1}T.$ Becs $\exists\,b_j\neq 0\Rightarrow T^j\in\Span{I,T,\dots,T^{k-1}}.$\PfEnd
-\SepLine
-
-%\BulletPointX\NoteForSmall{[8.49]}\;\;Supp $\Fbb=\Cbb,$ $V$ is finide, $T\in\Lm{V},$ and $p$ is the min.\TextB{}
-%Let $p\Par{z}=\Par{z-\lambda_1}\cdots\Par{z-\lambda_m},$ where $\lambda_1,\dots,\lambda_m$ are all the eigvals of $T$, possibly with repeti.\TextB{}
-%\AComm \Sbra[3pt]{{\large\tgsc Another proof of \tgbfx[5.13]}} \;Besc the min poly of $T$ has at most $\dim V$ dist zeros.\PfEnd
-%\Anchor{5BI4e20}\Anchor{5BI4e24}\BulletPointX\ACoro Supp $\alpha_1,\dots,\alpha_n$ are all the disti eigvals of $T.$\parCor{\IndentB}
-%\ANote the min of $T$ is a multi of, but not equal to, $\Par{z-\alpha_1}\cdots\Par{z-\alpha_n}.$\parCor{\IndentB}
-%Let $q\Par{z}=\Par{z-\alpha_1}{^{\dim V-\SmallPar{n-1}}}\cdots\Par{z-\alpha_n}{^{\dim V-\SmallPar{n-1}}}.$ Then $q$ is a multi of the ch.\parCor{\IndentB}
-%\!\BigSbra{ Becs $\dim V>n$ and $n-1\geqslant 0,\:\:n\times\Sbra{\dim V-\Par{n-1}}>\dim V$. }\parCor{\IndentB}
-%Form for ch: $\Par{z-\alpha_1}{^{\gamma_1}}\cdots\Par{z-\alpha_n}{^{\gamma_n}},$ where $\gamma_1+\dots+\gamma_n=\dim V.$\parCor{\IndentB}
-%Form for min: $\Par{z-\alpha_1}{^{\delta_1}}\cdots\Par{z-\alpha_n}{^{\delta_n}},$ where $0\leqslant \delta_1+\dots+\delta_n\leqslant \dim V.$
+%\Anchor{5BI4e22}\ProblemBnoor{4E 22}{
+%	\TextB{Supp $V$ is finide, $T\in \Lm{V}$. Prove $T$ is inv $\Longleftrightarrow I\in\Span[\BigPar]{T, T^2, \dots , T^{\dim V}}.$}
+%}Let $p\Par{z}=a_0 +a_1 z+\dots+z^m$ be the min. Becs $T$ inv $\Longleftrightarrow$ inje $\Longleftrightarrow p\Par{0}=a_0\neq 0.$\PfEnd
 %\SepLine
-
 
 \Anchor{5BI4e8}\ProblemBnoor{4E 8}{
 	\TextB{Find the min $p$ of $T\in\Lm{\Rbb^2},$ the countclockws rotat optor by $\theta\in\Rbb^+$.}
@@ -915,14 +877,7 @@ $ce_1+bTe_1=-T^2 e_1\Longleftrightarrow{}${\small$\begin{pmatrix}1 & \cos\theta\
 %\Or $\Mt[\BigPar]{T,\Par{e_1,e_2}}={}${\small$\begin{pmatrix}\Blind{-}\cos\theta & \sin\theta\\-\sin\theta & \cos\theta
 %\end{pmatrix}$}. By (4E 11), $\Par{z\pm 1}$ or $\Par{z^2-2\cos\theta\,z+1}$ is the min.\PfEnd
 \SepLine
-
-%\Anchor{5BI4e9}\ProblemBnoor{{4E 9}}{
-%	\TextA{Supp $T\in\Lm{V}$ with the min $p=c_0+c_1z+\dots+c_{m-1}z^{m-1}+z^m,$}
-%	\TextA{and $A=\Mt{T,B_V}$ is suth each $A_{j,k}\in\Qbb.$ Explain why all $c_k\in\Qbb.$}
-%}Let $b_0I+b_1A+\dots+b_{m-1}A^{m-1}=-A^m.$ \,A system of $n^2$ liney equations in $m$ unknowns.\parSol{}
-%Becs each $\Par{A^i}{_{j,k}}\in\Qbb\Rightarrow b_i\in\Qbb.$ 又 $\Par{c_0,\dots,c_{m-1}}$ is a solus.\PfEnd
-%\SepLine
-
+		
 \Anchor{5BI4e11}\ProblemBnoor{4E 11}{
 	\TextA{Supp $V$ is 2\hspace{1pt}-\hspace{1pt}dim, $T\in\Lm{V}$ with the min $p$, and $\Mt[\BigPar]{T,\Par{v,w}}={}${\large$\begin{pmatrix} a &\hspace{-4pt} c\\[-4pt] b &\hspace{-4pt} d\end{pmatrix}.$}\vspace{-8pt}}
 	\PrePa\TextA{Show $q\Par{z}=z^2-\Par{a+d}z+\Par{ad-bc}$ is a multi of $p.$}
@@ -951,6 +906,44 @@ Define $r\Par{z}=s\Par{\lambda z}\Rightarrow r\Par{T}=s\Par{\lambda T}=0\Rightar
 \Or Becs $\Par{\lambda T}{^k}\in\Span[\BigBigPar]{\lambda I,\lambda T,\dots,\Par{\lambda T}{^{k-1}}}\Longleftrightarrow T^k\in\Span{I,T\dots,T^{k-1}}.$\PfEnd
 \SepLine
 
+\Anchor{5BI4e10}\Anchor{5BI4e23}\ProblemBnoor{4E 10, 23}{
+	\TextA{Supp $V$ is finide, $T\in\Lm{V},$ with the min $p$ of deg $m.$\vspace{1pt}}
+	\TextA{Supp non0 $v\in V.$ Let each $U_k=\Span[\BigPar]{v,Tv,\dots,T^kv}.$\vspace{1pt}}
+	\TextA{Prove $\exists\,j\in\Bra{1,\dots,m},\;U_{j-1}=U_n$ for all $n\geqslant j-1.$}
+}Supp $j$ is the smallest suth $T^j v=a_0v+a_1 Tv+\dots+a_{j-1}T^{j-1}v\in U_{j-1}\Rightarrow j\leqslant m.$\parSol{}
+Then $U_{j-1}$ is invard $T,$ so is each $U_n=\Span{v,Tv,\dots,T^{j-1} v,\dots,T^n v}.$\PfEnd
+%\AComm By {\NOTEFOR} [8.40], $j$ has an upper bound $m-1,$ $m$ has an upper bound $\dim V.$\par\quad
+\SepLine
+
+\Anchor{5BI4e13}\ProblemBnoor{4E 13}{
+	\TextA{Supp $V$ finide, $T\in \Lm{V},$ with the min $p\Par{z}=c_0+c_1 z+\dots+c_{m-1}z^{m-1}+z^m.$}
+	\TextA{Prove if $q\Par{z}=a_0 +a_1 z+\dots+a_n z^n,$ then $\exists\,!\,r\in\PoF{\deg p-1},\,q\Par{T}=r\Par{T}.$}
+}Becs $p\neq 0.$ By the div algo, immed. \Sbra{$r=0$ if $q=p.$}\PfEnd\vspace{2pt}\parSol{}
+\Or Becs $T^m=-c_0I-c_1T-\dots-c_{m-1}T^{m-1}.$ For $\deg q<m=\deg p,$ the repres of $q\Par{T}$ is uniq.\parSol{}
+Supp $\deg q\geqslant\deg p.$ For each $k\in\Nbb,\exists\,!\,b_{j,k}\in\Fbb,\,T^{m+k}=b_{0,k}I+b_{1,k}T+\dots+b_{m-1,k}T^{m-1}.$\PfEnd
+\SepLine
+
+\Anchor{5BI4e14}\ProblemBnoor{4E 14}{
+	\TextA{Supp $V$ finide, $T\in\Lm{V},$ with the min $p\Par{z}=a_0 + a_1 z + \dots + a_{m-1} z^{m-1}+z^m,$}
+	\TextA{and $a_0\neq 0.$ \,Give a repres of $s,$ the min of $T^{-1}.$}
+}Define $q\Par{z}=z^m+{}${\Large$\frac{a_1}{a_0}$}$\,z^{m-1}+\dots+{}${\Large$\frac{a_{m-1}}{a_0}$}$\,z+{}${\Large$\frac{1}{a_0}$}$\Rightarrow q\Par{T^{-1}}=T^{-m}p\Par{T}=0.$\parSol{}
+Becs $\deg s\leqslant\deg q,$ while $\Par{T^{-1}}{^{-1}}=T\Rightarrow\deg q\leqslant\deg s.$\PfEnd\vspace{2pt}\parSol{}
+\Or Becs each $T^{-k}\not\in\Span[\BigPar]{I,T^{-1},\dots,T^{-\SmallPar{k-1}}}$ for $k\in\Bra{1,\dots,m-1}.$ Done.\parSol{}
+For if not, supp $T^{-k}=b_0 I+b_1 T^{-1}+\dots+b_{k-1}T^{k-1}.$ Note that $T$ inv $\Rightarrow\exists\,b_j\neq 0.$\parSol{}
+Now $T^k\Par{T^{-k}}=I=b_0 T^k+b_1 T^{k-1}+\dots+b_{k-1}T\Rightarrow T^j\in\Span{I,T,\dots,T^{k-1}}.$\PfEnd
+\SepLine
+
+%\BulletPointX\NoteForSmall{[8.49]}\;\;Supp $\Fbb=\Cbb,$ $V$ is finide, $T\in\Lm{V},$ and $p$ is the min.\TextB{}
+%Let $p\Par{z}=\Par{z-\lambda_1}\cdots\Par{z-\lambda_m},$ where $\lambda_1,\dots,\lambda_m$ are all the eigvals of $T$, possibly with repeti.\TextB{}
+%\AComm \Sbra[3pt]{{\large\tgsc Another proof of \tgbfx[5.13]}} \;Besc the min poly of $T$ has at most $\dim V$ dist zeros.\PfEnd
+%\Anchor{5BI4e20}\Anchor{5BI4e24}\BulletPointX\ACoro Supp $\alpha_1,\dots,\alpha_n$ are all the disti eigvals of $T.$\parCor{\IndentB}
+%\ANote the min of $T$ is a multi of, but not equal to, $\Par{z-\alpha_1}\cdots\Par{z-\alpha_n}.$\parCor{\IndentB}
+%Let $q\Par{z}=\Par{z-\alpha_1}{^{\dim V-\SmallPar{n-1}}}\cdots\Par{z-\alpha_n}{^{\dim V-\SmallPar{n-1}}}.$ Then $q$ is a multi of the ch.\parCor{\IndentB}
+%\!\BigSbra{ Becs $\dim V>n$ and $n-1\geqslant 0,\:\:n\times\Sbra{\dim V-\Par{n-1}}>\dim V$. }\parCor{\IndentB}
+%Form for ch: $\Par{z-\alpha_1}{^{\gamma_1}}\cdots\Par{z-\alpha_n}{^{\gamma_n}},$ where $\gamma_1+\dots+\gamma_n=\dim V.$\parCor{\IndentB}
+%Form for min: $\Par{z-\alpha_1}{^{\delta_1}}\cdots\Par{z-\alpha_n}{^{\delta_n}},$ where $0\leqslant \delta_1+\dots+\delta_n\leqslant \dim V.$
+%\SepLine
+
 %\Anchor{5BI4e16}\ProblemBnoor{4E 16}{
 %	\TextB{Supp $a_0 ,\dots, a_{n-1}\in\Fbb.$ Let $T$ be the optor on $\Fbb^n$ suth\vspace{2pt}}
 %	\TextB{$\Mt{T}={}${\normalsize$\begin{pmatrix}
@@ -965,6 +958,16 @@ Define $r\Par{z}=s\Par{\lambda z}\Rightarrow r\Par{T}=s\Par{\lambda T}=0\Rightar
 %$T^n e_1=\cdots=T^{n-k}e_{1+k}=\cdots=T e_n=-a_0 e_1-a_1 e_2-a_2 e_3-\dots-a_{n-1}e_n$\par
 %$=\Par{-a_0 I-a_1 T-a_2 T^2-\dots-a_{n-1}T^{n-1}}e_1.$ Thus $p\Par{T}e_1=0=p\Par{T}e_j$ for each $e_j=T^{j-1}e_1.$\PfEnd
 %\SepLine
+
+\Anchor{5BI4e19}\ProblemBnoor{4E 19}{
+	\TextA{Supp $V$ finide, $T\in\Lm{V},$ with the min $p\Par{z}=c_0+c_1z+\dots+c_{m-1}z^{m-1}+z^m.$}
+	\TextA{Let $\mathcal{E} =\Bra{q\Par{T}: q \in \PoFi},$ a subsp of $\Lm{V}.$ Prove $\dim\mathcal{E}=\deg p.$}
+}Becs $T^m=c_0I+c_1T+\dots+c_{m-1}T^{m-1}\Rightarrow U=\Span{I,T,\dots,T^{m-1}}\Rightarrow U$ invard $T$\parSol{}
+$\Rightarrow$ each $T^{m+k}=T^k\Par{T^m}\in U\Rightarrow\mathcal{E}=\Span[\BigPar]{I,T,\dots,T^{\dim\Lm[\SmallPar]{V}-1}}=\Span[\BigPar]{I,T,\dots,T^{m-1}}=U.$\PfEnd\vspace{2pt}\parSol{}
+\Or Define $\Phi\in\Lm[\BigPar]{\PoFi,\Lm{V}}$ by $\Phi\Par{q}=q\Par{T}\Rightarrow\range\Phi=\mathcal{E}.$\parSol{}
+Becs $\Phi\Par{q}=q\Par{T}=0\Longleftrightarrow q$ is a multi of the min $p\Longleftrightarrow q\in\Bra{ps:s\in\PoFi}=\null\Phi.$\parSol{}
+Now by (4.11), $\dim\PoFi\XSlash\null\Phi=\deg p=m.$ By [3.91](d).\PfEnd
+\SepLine
 
 %\BulletPointX{\Large\textsc{Eigenvalues On Odd-Dimensional Real Vector Spaces}}\par
 %\ProblemB{
@@ -1021,19 +1024,9 @@ By asum, the optor $T\mmid_U$ on a $k$\hspace{1pt}-\hspace{1pt}dim vecsp has inv
 Let $p\Par{z}=\Par{z^2+b_1z+c_1}\cdots\Par{z^2+b_mz+c_m}\Rightarrow\exists\,\Par{T^2+b_jT+c_j}$ not inje\par\quad\Hb
 $\Rightarrow\exists\,v\neq 0,\Par{T^2+b_jT+c_j}v=0\Rightarrow T^2v\in\Span{v,Tv},$ invard $T,$ while $\dim\Span{v,Tv}=2.$\PfEnd
 \SepLine
+%\ChEnd\pagebreak
 
-\Anchor{5BIN5.32}\ProblemBnoor{4E 5.32}[\Sbra]{
-	\TextB{Supp $T\in\Lm{V}$ with the min $p.$ Prove $T$ not inje $\Longleftrightarrow$ the const term of $p$ is $0.$}
-	}$T$ not inje $\Longleftrightarrow 0$ is eigval of $T$ $\Longleftrightarrow 0$ is zero of $p \Longleftrightarrow 0$ the const term of $p.$\PfEnd\vspace{2pt}\parSol{}
-\Or Supp $p\Par{0}=\Par{z-0}\Par{z-\lambda_1}\cdots\Par{z-\lambda_m}=0\Rightarrow T\Par{T-\lambda_1 I}\cdots\Par{T-\lambda_m I}=0.$\parSol{}
-又 $p$ is the min $\Rightarrow q\Par{T}=\Par{T-\lambda_1}\cdots\Par{T-\lambda_m}\neq 0.$ \,Now $0=p\Par{T}=Tq\Par{T}\Rightarrow T$ not inje.\PfEnd
-\SepLine
-
-\ChEnd
-
-\pagebreak
-
-\ChDecl{Ch5BII}{5.B: II}{\qquad{\small\textbf{注意\,:}\;这一节的题号主要使用第四版5.C节}}%\orMode{\hLk{5BII9}{9}\;\;\hLk{5BII14}{14}\;\;\hLk{5BII15}{15}\;\;\hLk{5BII20}{20}\;\;|\;\;\hLk{5BII4e1}{4E: 1,}\;\;\hLk{5BII4e2}{2,}\;\;\hLk{5BII4e3}{3,}\;\;\hLk{5BII4e4}{4,}\;\;\hLk{5BII4e5}{5,}\;\;\hLk{5BII4e6}{6,}\;\;\hLk{5BII4e7}{7,}\;\;\hLk{5BII4e8}{8,}\;\;\hLk{5BII4e9}{9,}\;\;\hLk{5BII4e10}{10}\;\;\hLk{5BII4e11}{11,}\;\;\hLk{5BII4e12}{12,}\;\;\hLk{5BII4e13}{13,}\;\;\hLk{5BII4e14}{14}}{[1]: ; [2]: ; [3]: .}
+\vfill\ChDecl{Ch5BII}{5.B: II}{\qquad{\small\textbf{注意\,:}\;这一节的题号主要使用第四版5.C节}}%\orMode{\hLk{5BII9}{9}\;\;\hLk{5BII14}{14}\;\;\hLk{5BII15}{15}\;\;\hLk{5BII20}{20}\;\;|\;\;\hLk{5BII4e1}{4E: 1,}\;\;\hLk{5BII4e2}{2,}\;\;\hLk{5BII4e3}{3,}\;\;\hLk{5BII4e4}{4,}\;\;\hLk{5BII4e5}{5,}\;\;\hLk{5BII4e6}{6,}\;\;\hLk{5BII4e7}{7,}\;\;\hLk{5BII4e8}{8,}\;\;\hLk{5BII4e9}{9,}\;\;\hLk{5BII4e10}{10}\;\;\hLk{5BII4e11}{11,}\;\;\hLk{5BII4e12}{12,}\;\;\hLk{5BII4e13}{13,}\;\;\hLk{5BII4e14}{14}}{[1]: ; [2]: ; [3]: .}
 
 \vspace{4pt}
 
@@ -1054,7 +1047,7 @@ $\Rightarrow\exists\,v\neq 0,\Par{T^2+b_jT+c_j}v=0\Rightarrow T^2v\in\Span{v,Tv}
 (ii) $k\geqslant 2.$ Asum $\Span{v_1,\dots,v_{k-1}}$ invard $T^{-1}.$\par\quad\Hii
 Note that $Tv_k=u_k+\lambda_kv_k\Rightarrow v_k=T^{-1}\Par{c_1v_1+\dots+c_{k-1}v_{k-1}}+\lambda_kT^{-1}v_k.$\par\quad\Hii
 Thus $T^{-1}v_k=\lambda_k^{-1}v_k-\lambda_k^{-1}T^{-1}u_k\in\Span{v_1,\dots,v_k},$ invard $T;$ and $\lambda_{k}^{-1}$ is the $k^\text{th}$ ent on diag.\PfEnd
-\SepLine
+\SepLine\pagebreak
 
 %\Anchor{5BII14}\Anchor{5BII4e4}\ProblemNor{4}{3E 5.B.14}{
 %	\TextA{Give an inv $T$ and a $B_V$ suth each $\Mt{T}{_{k,k}}=0.$}
@@ -1074,7 +1067,7 @@ Thus $T^{-1}v_k=\lambda_k^{-1}v_k-\lambda_k^{-1}T^{-1}u_k\in\Span{v_1,\dots,v_k}
 \Anchor{5BII4e8}\ProblemN{8}{
 	\TextA{Supp $V$ is finide, and $v\in V$ is non0 suth $q\Par{T}v=0,$ where $q\Par{z}=z^2+2z+2.$}
 	\PrePa\TextA{Supp $\Fbb=\Rbb.$ Prove $\nexists\,B_V$ suth $\Mt{T}$ up-trig.}
-	\PrePb\TextA{Supp $\Fbb=\Cbb,$ and $\exists\,B_V$ suth $A=\Mt{T}$ up-trig. Prove $-1+\i$ or $-1-\i$ on the diag.}
+	\PrePb\TextA{Supp $\Fbb=\Cbb,$ and $\exists\,B_V$ suth $A=\Mt{T}$ up-trig. Prove $-1+\i$ or $-1-\i$ on diag.}
 }Define $p_v$ as (4E 3.C.7). Note that $\deg p_v\geqslant 1$ becs $v\neq 0.$ 又 $q\Par{T\mmid_{\nullp p_v\SmallPar{v}}}=0.$\parSol{}
 Now $q$ of deg $2$ is a multi of the min of $T\mmid_{\nullp p_v\SmallPar{v}},$ which is $p_v,$ of which the min of $T$ is a multi.\parSol{}
 (a) Note that $q$ has no $1$\hspace{1pt}-\hspace{1pt}deg factors $\Rightarrow\deg p_v\geqslant 2.$ By [4E 5.44].\parSol{}
@@ -1105,8 +1098,6 @@ $Tv_k\in\Span{v_k,\dots,v_n},\,Tv_{k+1}\in\Span{v_{k+1},\dots,v_n},\cdots,\,Tv_{
 }For each $k\in\Bra{1,\dots,n},\:T\beta_{n-k+1}=T\alpha_k\in\Span{\alpha_1,\dots,\alpha_k}=\Span{\beta_n,\dots,\beta_{n-k+1}}.$\PfEnd
 \SepLine
 
-\pagebreak
-
 \Anchor{5BII4e12}\ProblemN{12}{
 	\TextA{Supp $V$ is finide, $U$ invarspd $T,$ and $\Mt{T}$ is up-trig for some $B_V.$}
 	\PrePa\TextA{Prove $\Mt{T\mmid_U}$ up-trig for some $B_U$. \, {\tgnr\large(b)} Prove $\Mt{T\XSlash U}$ up-trig for some $B_{V\XSlash U}.$}
@@ -1124,7 +1115,8 @@ By (3.E.13), $B_V=\Par{u_1,\dots,u_p,w_1,\dots,w_q}.$ Now each $Tw_j\in\Span{u_1
 	\TextA{Supp $V$ is finide. Prove $T$ up-trig $\Longleftrightarrow$ $T\apostrophe$ up-trig.}
 }Immed, by \TIPSN{1} and \TIPSN{2}, \OR by (4E 18) and [4E 5.44].\PfEnd
 \SepLine
-\ChEnd
+
+\ChEnd\pagebreak
 
 \ChDecl{Ch5C}{5.C \& [4E] 5.D}{}
 
@@ -1151,7 +1143,11 @@ Becs $\null T=E\Par{0,T}.$ If $0$ is eigval, then done. Othws, $E\Par{0,T}=\zero
 Becs by (4E 5.A.39), $\exists\,\alpha$ eigval of $T\Rightarrow\exists$ invarsp $U$ of dim $\dim V-1.$\parSol{}
 又 $T\mmid_U\in\Lm{U},$ $V=\Null\Par{T-\lambda I}\oplus\Range\Par{T-\lambda I}.$ Note by Exe (4),\parSol{}
 $\Null\Par{T\mmid_U-\lambda I}\cap\Range\Par{T\mmid_U-\lambda I}=\zeroSubs\Rightarrow U=\Null\Par{T\mmid_U-\lambda I}\oplus\Range\Par{T\mmid_U-\lambda I}.$\parSol{}
-By asum, $T\mmid_U$ is diag wrto $B_U=\Par{v_2,\dots,v_n}.$ Let $v_1$ be an eigvec corres $\alpha\Rightarrow B_V=\Par{v_1,\dots,v_n}.$\PfEnd
+By asum, $T\mmid_U$ is diag wrto $B_U=\Par{v_2,\dots,v_n}.$ Let $v_1$ be an eigvec corres $\alpha\Rightarrow B_V=\Par{v_1,\dots,v_n}.$\PfEnd\vspace{3pt}\parSol{}
+\Or Supp $T$ not diag. We show $\exists\,\lambda\in\Cbb,\Null\Par{T-\lambda I}\cap\Range\Par{T-\lambda I}\neq\zeroSubs.$\parSol{}
+\parSol{}
+\parSol{}
+\PfEnd
 \SepLine
 
 \Anchor{5C7}\ProblemN{7}{
@@ -1166,19 +1162,18 @@ Becs (I) $A_{j,j}B_{j,k}=A_{j,1}B_{1,k}+\dots+\Sbra{A_{j,j}B_{j,k}}+\dots+A_{j,n
 And (II) $B_{j,k}A_{k,k}=B_{j,1}A_{1,k}+\dots+\Sbra{B_{j,k}A_{k,k}}+\dots+B_{j,n}A_{n,k}=\Par{BA}{_{j,k}}.$\parSol{}
 Supp $B$ diag. If $j=k,$ then $\Par{BA}{_{j,k}}=\Par{AB}{_{j,k}},$ othws true as well.\parSol{}
 Supp $AB=BA\Rightarrow A_{j,j}B_{j,k}=A_{k,k}B_{j,k}.$ Asum $B_{j,k}\neq0$ with $j\neq k.$ Then $A_{j,j}=A_{k,k},$ ctradic.\PfEnd
-\SepLine\pagebreak
+\SepLine
 
 \Anchor{5C4e14}\ProblemBnoor{4E 14}{
 	\TextA{Supp $\Fbb=\Cbb,$ $k\in\Nbp,$ and $T\in\Lm{V}$ is inv. Prove $T^k$ diag $\Rightarrow T$ diag.}
 }%Using Exe (4E 13). Supp $\Mt{T^k,B_V}=A$ diag. Let $B=\Mt{T^{-1},B_V},C=\Mt{T,B_V}.$\parSol{}
 %Now $T^kT^{-1}=T^{-1}T^k\Rightarrow AB=BA\Rightarrow T^{-1}$ diag. Then $T^{-1}T=TT^{-1}\Rightarrow BC=CB\Rightarrow T$ diag.\PfEnd
 \AExa Not true if $\Fbb=\Rbb.$ Define $T\in\Lm{\Rbb^2}:\Par{x,y}\mapsto\Par{{-y,x}}.$ No eigvals.
-\SepLine
+\SepLine\pagebreak
 
-\Anchor{5C4e15}\ProblemBnoor{4E 15}{
-	\TextB{Supp $\Fbb=\Cbb,$ $V$ is finide, $T\in\Lm{V}$ with the min $p.$ Prove the following equiv\hspace{1pt}$:$}
-	\PrePa\TextB{$T$ diag. \, {\tgnr\large(b)} $\nexists\,\lambda\in\Cbb$ suth $p$ is multi of $\Par{z-\lambda}{^2}.$}
-	\PrePc\TextB{$p$ and $p\apostrophe$ have no common zeros. \, {\tgnr\large(d)} $\gcd\Par{p,p\apostrophe}=1.$}
+\Anchor{5C4e15}\ProblemBnoor[]{4E 15}{
+	\TextA{Supp $\Fbb=\Cbb,$ $V$ is finide, $T\in\Lm{V}$ with the min $p.$ Then\hfill\tgnr\FontSmall Using Exe (4.6).}
+	\TextA{$T$ diag $\Longleftrightarrow\nexists\,\Par{z-\lambda}{^2}$ in $p\Longleftrightarrow p,p\apostrophe$ have no common zeros $\Longleftrightarrow\gcd\Par{p,p\apostrophe}=1.$\vspace{-3pt}}
 }\SepLine
 
 \Anchor{5C4e17}\ProblemBnoor{4E 17}{
@@ -1205,19 +1200,6 @@ Let $B_{V\XSlash U}=\Par{v_{k_{m+1}}+U,\dots,v_{k_n}+U}.$ Becs each $\BigPar{T\X
 \Or By \Sbra{5.B(II) \TIPSN{1}}. Note that low-trig and up-trig $\Longleftrightarrow$ diag.\PfEnd
 \SepLine
 
-\Anchor{5C16}\ProblemN{16}{
-	\TextA{Define $F_1=1,F_2=2,$ and $F_n=F_{n-1}+F_{n-2}$ \:for $n\geqslant 3.$\vspace{6pt}}
-	\TextA{Define $T\in\Lm{\Rbb^2}:\Par{x,y}\mapsto\Par{y,x+y}.$ \, (a) Find all eigvals and eigvecs of $T.$\vspace{-6pt}}
-	\PrePb\TextA{Show each $T^n\Par{0,1}=\Par{F_n,F_{n+1}},$ \, (c) and each $F_n={}${\LARGE$\frac{1}{\sqrt{5}\;}$}$\,\bigg[\bigg(\!${\LARGE$\frac{\:1\,+\,\sqrt{5}\:}{2}$}$\!\bigg)\begin{array}{l}\hspace{-5pt}{}_n\\\\\vspace{-18pt}\end{array}\hspace{-8pt}-\bigg(\!${\LARGE$\frac{\:1\,-\,\sqrt{5}\:}{2}$}$\!\bigg)\begin{array}{l}\hspace{-5pt}{}_n\\\\\vspace{-18pt}\end{array}\hspace{-5pt}\bigg].$\vspace{-4pt}}
-%	\PrePd\TextA{Show each $F_n$ is the integer that closest to {\LARGE$\frac{1}{\sqrt{5}\;}$}$\,\bigg(\!${\LARGE$\frac{\:1\,+\,\sqrt{5}\:}{2}$}$\!\bigg)\begin{array}{l}\hspace{-5pt}{}_n\\\\\vspace{-18pt}\end{array}\hspace{-8pt}.$\vspace{-8pt}}
-}(a) Supp $\lambda\Par{x,y}=\Par{y,x+y}$ with $x$ or $y$ non0. Note that $x=0\Longleftrightarrow y=0,$ and $0$ is not eigval.\parSol{\Ha}
-Then $\lambda_1={}${\Large$\frac{\:1\,+\,\sqrt{5}\:}{2}$}, $v_1=\Par{1,\frac{1+\sqrt{5}}{2}};$
-\,and $\lambda_2={}${\Large$\frac{\:1\,-\,\sqrt{5}\:}{2}$}, $v_2=\Par{1,\frac{1-\sqrt{5}}{2}}.$ Becs $\dim\Rbb^2=2.$\vspace{4pt}\parSol{}
-(b) (i) $k=1.$ $T\Par{0,1}=\Par{F_1,F_2}.$ (ii) $k\geqslant1.$\parSol{\Hb}
-Asum $T^k\Par{0,1}=\Par{F_k,F_{k+1}}.$ Then $T^{k+1}\Par{0,1}=\Par{F_{k+1},F_{k}+F_{k+1}}.$\vspace{-3pt}\parSol{}
-(c) Becs $T^n\Par{0,1}=T^n\XSbra{${\Large$\frac{1}{\sqrt{5}\;}$}$\BigPar{v_1-v_2}}={}${\Large$\frac{1}{\sqrt{5}\;}$}$\,\def\envFont{\Large}\XSbra{\bigg(\!${\Large$\frac{\:1\,+\,\sqrt{5}\:}{2}$}$\!\bigg)\begin{array}{l}\hspace{-7pt}{}_n\\\\\vspace{-8pt}\end{array}\hspace{-8pt}v_1-\bigg(\!${\LARGE$\frac{\:1\,-\,\sqrt{5}\:}{2}$}$\!\bigg)\begin{array}{l}\hspace{-7pt}{}_n\\\\\vspace{-8pt}\end{array}\hspace{-8pt}v_2\def\envFont{\Large}}.$ Take the first slot.\PfEnd[-28pt]\vspace{4pt}
-\SepLine
-
 \Anchor{5C4e22}\ProblemBnoor{4E 22}{
 	\TextA{Supp $V$ finide, $T\in\Lm{V},$ $A=\Mt{T,B_V}\in\Fbb^{n,n}.$}
 	\TextA{Prove if each $\aXMid{A_{j,j}}>\sum_{k=1}^n\aXMid{A_{j,k}}-A_{j,j},$ then $T$ is inv.}
@@ -1235,7 +1217,7 @@ Let $\aMid{c_j}=\max\!\Bra{\aMid{c_1},\dots,\aMid{c_n}}.$ Now $\lambda c_j=\sum_
 $\lambda\in\BigBra{z\in\Fbb:\aXMid{z-A_{j,j}}\leqslant\sum_{j\neq k=1}^n\aXMid{A^t_{j,k}}=\sum_{j\neq k=1}^n\aXMid{A_{k,j}}}$ for some $j\in\Bra{1,\dots,n}.$\PfEnd
 \SepLine
 
-\ChEnd
+\ChEnd\pagebreak
 
 \ChDecl{Ch5E}{5.E [4E]}{}%\orMode{\hLk{5E1}{1}\;\;\hLk{5E2}{2}\;\;\hLk{5E3}{3}\;\;\hLk{5E4}{4}\;\;\hLk{5E5}{5}\;\;\hLk{5E6}{6}\;\;\hLk{5E7}{7}\;\;\hLk{5E8}{8}\;\;\hLk{5E9}{9}\;\;\hLk{5E10}{10}}{}
 \vspace{4pt}
