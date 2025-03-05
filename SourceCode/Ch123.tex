@@ -6,9 +6,9 @@
 \vspace{6pt}
 
 \ProblemN{\Anchor{1B1}{1}}{
-	\vspace{2pt}\TextA{Prove $\forall v\in V,-\Par{-v} = v$.}
-}$-\Par{-v}=\Par{-1}\BigPar{\Par{-1}v}=\BigPar{\Par{-1}\Par{-1}}v=1\cdot v=v.$\parSol{\vspace{4pt}}
-\Or Becs $-\Par{-v}+\Par{-v}=0$ 又 $v+\Par{-v}=0.$ Now by the uniqnes of add inv.\PfEnd
+	\vspace{2pt}\TextA{Prove $\forall v\in V,-\Par{{-v}} = v$.}
+}$-\Par{{-v}}=\Par{{-1}}\BigPar{\Par{{-1}}v}=\BigPar{\Par{{-1}}\Par{{-1}}}v=1\cdot v=v.$\parSol{\vspace{4pt}}
+\Or Becs $-\Par{{-v}}+\Par{{-v}}=0$ 又 $v+\Par{{-v}}=0.$ Now by the uniqnes of add inv.\PfEnd
 \SepLine
 
 \ProblemN{\Anchor{1B2}{2}}{
@@ -27,8 +27,8 @@
 	\TextA{Show in the def of a vecsp, the add inv cond can be replaced by [1.29].}
 	\TextA{\large{\tgsc Hint\tgbf:} Supp $V$ satisfies all conds in the def, except we've replaced the add inv cond with [1.29].}
 	\TextA{\large\Blind{{\tgsc Hint\tgbf:}} Prove the add inv is true.}
-}Using [1.31]. $0v=0\Longleftrightarrow\Par{1+\Par{-1}}v=1\cdot v+\Par{-1}v=v+\Par{-v}=0.$\PfEnd
-%\Blind{\IndentN} \AComm Becs $\forall v\in V,v+\Par{-1}v=0v=0\Rightarrow\exists\,w=\Par{-1}v\in V,v+w=0.$\par
+}Using [1.31]. $0v=0\Longleftrightarrow\Sbra{1+\Par{{-1}}}v=1\cdot v+\Par{{-1}}v=v+\Par{{-v}}=0.$\PfEnd
+%\Blind{\IndentN} \AComm Becs $\forall v\in V,v+\Par{{-1}}v=0v=0\Rightarrow\exists\,w=\Par{{-1}}v\in V,v+w=0.$\par
 %\Blind{\IndentN} \IndentComment{}The add inv cond can also be replaced by [1.31].
 \SepLine
 
@@ -41,17 +41,17 @@
 		\,-\infty\,$ if $t<0,\\
 		\quad 0\,$\,\, if $t=0,\\
 		\,\,\,\,\,\infty\,\,\,$if $t>0,}$\qquad\qquad\qquad
-		$t\Par{-\infty}=\MathLeftBrace{l}{
+		$t\Par{{-\infty}}=\MathLeftBrace{l}{
 		\,-\infty\,$ if $t>0,\\
 		\quad 0\,$\,\, if $t=0,\\
 		\,\,\,\,\,\infty\,\,\,$if $t<0,}$}\vspace{10pt}}
 \quad\TextA{\FontNorm\tgnr(I) $t + \infty = \infty + t = \infty + \infty = \infty,$}
-\quad\TextA{\FontNorm\EndI\tgnr(II) $t + \Par{-\infty} = \Par{-\infty} + t = \Par{-\infty} + \Par{-\infty} = -∞,$}
-\quad\TextA{\FontNorm\EndII\tgnr(III) $\infty + \Par{-\infty} = \Par{-\infty} + \infty = 0$.\vspace{8pt}}
+\quad\TextA{\FontNorm\EndI\tgnr(II) $t + \Par{{-\infty}} = \Par{{-\infty}} + t = \Par{{-\infty}} + \Par{{-\infty}} = -\infty,$}
+\quad\TextA{\FontNorm\EndII\tgnr(III) $\infty + \Par{{-\infty}} = \Par{{-\infty}} + \infty = 0$.\vspace{8pt}}
 \TextA{With these operations of add and scalar multi, is $\Rbb\cup\Bra{\infty, -\infty}$ a vecsp over $\Rbb$? Explain.}
 }Not a vecpsp, since the add and scalar mult is not assoc and distr.\parSol{}
-By Assoc: $\Par{a+\infty}+\Par{-\infty}\neq a+\Par{\infty+\Par{-\infty}}.$\parSol{}
-\Or By Distr: $\infty=\Par{2+\Par{-1}}\infty\neq 2\infty+\Par{-\infty}=\infty+\Par{-\infty}=0.$\PfEnd
+By Assoc: $\Par{a+\infty}+\Par{{-\infty}}\neq a+\Par{\infty+\Par{{-\infty}}}.$\parSol{}
+\Or By Distr: $\infty=\Par{2+\Par{{-1}}}\infty\neq 2\infty+\Par{{-\infty}}=\infty+\Par{{-\infty}}=0.$\PfEnd
 \SepLine
 
 \Anchor{1BN1}\ProblemBX[]{\NoteFor{Fields}}{
@@ -188,8 +188,8 @@ $\Rightarrow\exists\,\Par{i_u,x_u}\in I\times X,\,\Par{i_w,y_w}\in I\times Y,\;v
 (b) Supp $U\cup W$ is a subsp of $V$. Asum $U\not\subseteq W,\;U\not\supseteq W$ \BigPar{ $U\cup W\neq U$ and $W$ }.\parSol{\Hb}
 Then $\forall a\in U\wedge a\not\in W,\forall b\in W\wedge b\not\in U,$ we have $a+b\in U\cup W$.\parSol{\vspace{2pt}\Hb}
 \!\!\!$\MathRightMid{l}{$
-$a+b\in U\Rightarrow b=\Par{a+b}+\Par{-a}\in U$, ctradic $\Rightarrow W\subseteq U.\\ $
-$a+b\in W\Rightarrow a=\Par{a+b}+\Par{-b}\in W$, ctradic $\Rightarrow U\subseteq W.}\hText{$
+$a+b\in U\Rightarrow b=\Par{a+b}+\Par{{-a}}\in U$, ctradic $\Rightarrow W\subseteq U.\\ $
+$a+b\in W\Rightarrow a=\Par{a+b}+\Par{{-b}}\in W$, ctradic $\Rightarrow U\subseteq W.}\hText{$
 Ctradic asum.$\\\;}$\PfEnd[-14pt]
 \SepLine
 
@@ -198,23 +198,20 @@ Ctradic asum.$\\\;}$\PfEnd[-14pt]
 	\TextA{if and only if one of the subsps contains the other two.}
 	\TextA{\large This exe is not true if we \uline{replace $\Fbb$ with a field containing only two elems.}}
 }Supp $U_1,U_2,U_3$ are subsps of $V$. Denote $U_1\cup U_2\cup U_3$ by $\mathcal{U}.$\par\quad
-(a) Supp that one of the subsps contains the other two. Then $\mathcal{U}=U_1,U_2$ or $U_3$ is a subsp of $V.$\par\quad
-(b) Supp that $U_1\cup U_2\cup U_3$ is a subsp of $V$.\par\quad\Hb
-Distinctively notice that $A\cup B\cup C=\Par{A\cup B}\cup\Par{B\cup C}=\Par{A\cup C}\cup\Par{B\cup C}=\Par{A\cup B}\cup\Par{A\cup C}.$\par\quad\Hb
-Also note that, if $U\cup W=V$ is a vecsp, then in general $U$ and $W$ are not subsps of $V.$\par\quad\Hb
-Hence this literal trick is invalid.\par\quad\Hb
+(a) Supp one of the subsps contains the other two. Then $\mathcal{U}=U_1,U_2$ or $U_3$ is a subsp of $V.$\par\quad
+(b) Supp $U_1\cup U_2\cup U_3$ is a subsp of $V$. \NOTICE that, $U\cup W=V$ is vecsp $\Rightarrow U,W$ are subsps of $V.$\par\quad\Hb
+Thus the literal trick is invalid: $\Par{A\cup B}\cup\Par{B\cup C}=\Par{A\cup C}\cup\Par{B\cup C}=\Par{A\cup B}\cup\Par{A\cup C}.$\vspace{2pt}\par\quad\Hb
 (I) If any $U_j$ is contained in the union of the other two, say $U_1\subseteq U_2\cup U_3,$ then $\mathcal{U}=U_2\cup U_3.$\par\quad\Hb\HI
-By applying Exe (12) we conclude that one $U_j$ contains the other two. Thus done.\vspace{6pt}\par\quad\Hb\EndI
-(II) \envFontLarge{Asum no $U_j$ is contained in the union of the other two,}\par\quad\Hb\HII
-\Blind{Asum }{\vspace{6pt}and no $U_j$ contains the union of the other two. Say $U_1\not\subseteq U_2\cup U_3$ and $U_1\not\supseteq U_2\cup U_3.$}\par\quad\Hb\HII
-{\Large\vspace{6pt}$\exists\,u\in U_1\wedge u\not\in U_2\cup U_3;\;v\in U_2\cup U_3\wedge v\not\in U_1.$ Let $W=\Bra{v+\lambda u:\lambda\in\Fbb}\,\subseteq\mathcal{U}.$}\par\quad\Hb\HII
-{\Large\vspace{6pt}Note that $W\cap U_1=\emptySet,$ for if any $v+\lambda u\in W\cap U_1$ then $v+\lambda u-\lambda u=v\in U_1$.}\par\quad\Hb\HII
-{\Large\vspace{6pt}Now $W\subseteq U_1\cup U_2\cup U_3\Rightarrow W\subseteq U_2\cup U_3.$ $\forall v+\lambda u\in W,v+\lambda u\in U_i,i=2,3.$}\par\quad\Hb\HII
-{\Large\vspace{6pt}If $U_2\subseteq U_3$ or $U_2\supseteq U_3,$ then $\mathcal{U}=U_1\cup U_i,i=2,3.$} {By Exe (12) done.}\par\quad\Hb\HII
-{\Large\vspace{6pt}Othws, {\FontNorm both $U_2,U_3\neq\zeroSubs.$} Becs \tgsl$W\subseteq U_2\cup U_3$ has at least three elems.}\par\quad\Hb\HII
-{\Large\vspace{6pt}There must be some $U_i$ that contains at least two elems of $W.$}\par\quad\Hb\HII
-{\Large\vspace{6pt}$\exists$ disti $\lambda_1,\lambda_2\in\Fbb,v+\lambda_1 u,v+\lambda_2 u\in U_i,i\in\Bra{2,3}.$}\par\quad\Hb\HII
-{\Large Then $u\in U_i$ while $u\not\in U_2\cup U_3.$ Ctradic.}\FontNorm\PfEnd\vspace{6pt}\quad
+By applying Exe (12) we conclude that one $U_j$ contains the other two. Thus done.\vspace{4pt}\par\quad\Hb\EndI
+(II) \envFontLarge{Asum no one is contained in the union of other two, and no one contains the other two.}\par\quad\Hb\HII
+{\vspace{4pt}Say $U_1\not\subseteq U_2\cup U_3$ and $U_1\not\supseteq U_2\cup U_3.$}\par\quad\Hb
+{\Large\vspace{4pt}$\exists\,u\in U_1\wedge u\not\in U_2\cup U_3;\;v\in U_2\cup U_3\wedge v\not\in U_1.$ Let $W=\Bra{v+\lambda u:\lambda\in\Fbb}\,\subseteq\mathcal{U}.$}\par\quad\Hb
+{\Large\vspace{4pt}Note that $W\cap U_1=\emptySet,$ for if any $v+\lambda u\in W\cap U_1$ then $v+\lambda u-\lambda u=v\in U_1$.}\par\quad\Hb
+{\Large\vspace{4pt}Now $W\subseteq U_1\cup U_2\cup U_3\Rightarrow W\subseteq U_2\cup U_3.$ $\forall v+\lambda u\in W,v+\lambda u\in U_i,i=2,3.$}\par\quad\Hb
+{\Large\vspace{4pt}If $U_2\subseteq U_3$ or $U_2\supseteq U_3,$ then $\mathcal{U}=U_1\cup U_i,i=2,3.$} {By Exe (12) done.}\par\quad\Hb
+{\Large\vspace{4pt}Othws, {\FontNorm both $U_2,U_3\neq\zeroSubs.$} Becs \tgsl$W\subseteq U_2\cup U_3$ has at least three disti elems.}\par\quad\Hb
+{\Large\vspace{4pt}There must be some $U_i$ that contains at least two disti elems of $W.$}\par\quad\Hb
+{\Large$\exists\,\lambda_1\neq\lambda_2,\;v+\lambda_1 u$ \,and \,$v+\lambda_2 u$ \,both in $U_2$ or $U_3\Rightarrow u\in U_2\cap U_3,$ ctradic.}\FontNorm\PfEnd\vspace{8pt}\quad
 \uline{\AExa Let $\Fbb=\Zbb_2.$} $U_1=\Bra{u,0},U_2=\Bra{v,0},U_3=\Bra{v+u,0}.$ While $\mathcal{U}=\Bra{0,u,v,v+u}$ is a subsp.
 \SepLine
 
@@ -359,7 +356,7 @@ $Q\Rightarrow P:\forall v\in V,\exists\,!\,b_i\in\Fbb,\;v=b_1w_1+\dots+b_mw_m\Ri
 \Blind{\Or\;}Note that $\sum_{i=1}^ma_iu_i+\sum_{i=1}^nb_iw_i=0\Rightarrow\sum_{i=1}^ma_iu_i=-\sum_{i=1}^nb_iw_i\in U\cap W=\zeroSubs.$\PfEnd
 \SepLine
 
-\Anchor{9A3}\Anchor{9A4}\Anchor{2B4e11}\ProblemBnoor[]{9.A.3,4 \OR 4E 11}{
+\Anchor{9A3}\Anchor{9A4}\Anchor{2B4e11}\ProblemBnoor{9.A.3,4 \OR 4E 11}{
 	\TextB{Supp $V$ is on $\Rbb,$ and $v_1,\dots,v_n\in V.$ Let $B=\Par{v_1,\dots,v_n}.$\vspace{2pt}}
 	(a) \TextB{Show [P] $B$ is liney indep in $V$ $\Longleftrightarrow B$ is liney indep in $V_{\!\Cbb}.$ [Q]}
 	(b) \TextB{Show [P] $B$ spans $V$ $\Longleftrightarrow B$ spans $V_{\!\Cbb}.$ [Q]\vspace{2pt}}
@@ -424,12 +421,12 @@ But $\Par{u_1,\dots,u_n}$ might not be a bss, becs there might be some $u_i=0.$\
 }\SepLine
 
 \ProblemN{\Anchor{2C9}{9}}{
-	\TextA{Supp $\Par{v_1,\dots,v_m}$ is liney indep in $V,w\in V.$ Prove $\dim\Span[\BigPar]{v_1+w,\dots,v_m+w}\geq m-1$.}
-}Using the result of (2.A.10, 11).\par\quad
+	\TextA{Supp $\Par{v_1,\dots,v_m}$ is liney indep in $V,w\in V.$ Prove $\dim\Span[\BigPar]{v_1+w,\dots,v_m+w}\geqslant m-1$.}
+}Using (2.A.10, 11).\par\quad
 Note that each $v_i-v_1=\Par{v_i+w}-\Par{v_1+w}\in\Span{v_1+w,\dots,v_n+w}.$\par\quad
-$\Par{v_1,\dots,v_m}$ liney indep $\Rightarrow$ $\BigPar{v_1,v_2-v_1,\dots,v_m-v_1}$ liney indep $\Rightarrow$ $\underbrace{\BigPar{v_2-v_1,_{}\dots,v_m-v_1}}_{\text{of len }\Par{m-1}}$ liney indep.\vspace{-15pt}\par\quad
+$\Par{v_1,\dots,v_m}$ liney indep $\Rightarrow$ $\BigPar{v_1,v_2-v_1,\dots,v_m-v_1}$ liney indep $\Rightarrow$ $\underbrace{\BigPar{v_2-v_1,_{}\dots,v_m-v_1}}_{\text{of len }\SmallPar{m-1}}$ liney indep.\vspace{-15pt}\par\quad
 又 If $w\not\in\Span{v_1,\dots,v_m}.$ Then $\BigPar{v_1+w,\dots,v_m+w}$ is liney indep.\par\quad
-Hence $m\geqslant\dim\Span[\BigPar]{v_1+w,\dots,v_m+w}\geq m-1.$\PfEnd
+Hence $m\geqslant\dim\Span[\BigPar]{v_1+w,\dots,v_m+w}\geqslant m-1.$\PfEnd
 \SepLine
 
 \Anchor{2C4e16}\ProblemBnoor{{4E 16}}{
@@ -497,9 +494,9 @@ $\Blind{\Dim\Par{V_{\!1}+V_{\!2}+V_{\!3}}}{}-\Sbra{\Dim\BigPar{\Par{V_{\!1}+V_{\
 \Anchor{2C4e14}\Anchor{2C4e15}\ProblemB[]{
 	\TextB{Supp $V_{\!1},V_{\!2},V_{\!3}$ are subsps of $V$ with}
 	\PrePa\TextB{$\dim V=10,\;\dim V_{\!1} = \dim V_{\!2} = \dim V_{\!3} = 7$. Prove $V_{\!1}\cap V_{\!2}\cap V_{\!3}\neq\zeroSubs$.}
-	\Blind{\PrePa}By {\TIPS}, $\Dim\Par{V_{\!1}\cap V_{\!2}\cap V_{\!3}}\geq\dim V_{\!1}+\dim V_{\!2}+\dim V_{\!3}\uline{{}-2\dim V}>0.$\TextB{\vspace{4pt}}
+	\Blind{\PrePa}By {\TIPS}, $\Dim\Par{V_{\!1}\cap V_{\!2}\cap V_{\!3}}\geqslant\dim V_{\!1}+\dim V_{\!2}+\dim V_{\!3}\uline{{}-2\dim V}>0.$\TextB{\vspace{4pt}}
 	\PrePb\TextB{$\dim V_{\!1}+\dim V_{\!2}+\dim V_{\!3} > 2\dim V$. Prove $V_{\!1}\cap V_{\!2}\cap V_{\!3}\neq\zeroSubs$.}
-	\Blind{\PrePb}By {\TIPS}, $\Dim\Par{V_{\!1}\cap V_{\!2}\cap V_{\!3}}\uuline{{}>2\dim V}-\Dim\Par{V_{\!2}+V_{\!3}}-\Dim\Par{V_{\!1}+\Par{V_{\!2}\cap V_{\!3}}}\geq 0.$\PfEnd\vspace{14pt}
+	\Blind{\PrePb}By {\TIPS}, $\Dim\Par{V_{\!1}\cap V_{\!2}\cap V_{\!3}}\uuline{{}>2\dim V}-\Dim\Par{V_{\!2}+V_{\!3}}-\Dim\Par{V_{\!1}+\Par{V_{\!2}\cap V_{\!3}}}\geqslant 0.$\PfEnd\vspace{14pt}
 }\SepLine
 \ChEnd\pagebreak
 
@@ -578,7 +575,7 @@ Supp $v\in V\Rightarrow v=au,\,\exists\,!\,a\in\Fbb$. Then $Tv=T\Par{au}=\lambda
 }{\tgsc Composition and product are not the same in $\PoFi.$}\par\quad
 \NOTICE that $\Par{p\circ q}\Par{x}=p\BigPar{q\Par{x}},$ while $\Par{pq}\Par{x}=p\Par{x}q\Par{x}=q\Par{x}p\Par{x}.$\par\quad
 Becs in general, $\Sbra{q\circ \Par{p_1+\lambda p_2}}\Par{x}=q\BigPar{p_1\Par{x}+\lambda p_2\Par{x}}\neq \Par{qp_1}\Par{x}+\lambda \Par{qp_2}\Par{x}.$\par\quad
-\AExa Let $q$ be defined by $q\Par{x}=x^2,$ then $q\circ\BigPar{1+\Par{-1}}=0\neq q\Par{1}+q\Par{-1}=2.$\PfEnd
+\AExa Let $q$ be defined by $q\Par{x}=x^2,$ then $q\circ\BigPar{1+\Par{{-1}}}=0\neq q\Par{1}+q\Par{{-1}}=2.$\PfEnd
 \SepLine
 
 \ProblemN{\Anchor{3A10}{10}}{
@@ -668,7 +665,7 @@ $W^V\ni\lambda f: x\rightarrow\lambda f\Par{x};$ where $\lambda f\Par{x}$ is the
 Assoc: $\BigPar{\Par{f+g}+h}\Par{x}=\BigPar{{f}\Par{x}+{g}\Par{x}}+{h}\Par{x}$\par\quad\Hb
 \Blind{Assoc: $\BigPar{\Par{f+g}+h}\Par{x}$} $={f}\Par{x}+\BigPar{{g}\Par{x}+{h}\Par{x}}=\BigPar{f+\Par{g+h}}\Par{x}.$\par\quad\Hb
 Add Id: $\Par{f+0}\Par{x}=f\Par{x}+0\Par{x}=f\Par{x}+0=f\Par{x}.$\par\quad\Hb
-Add Inv: $\Par{f+g}\Par{x}={f}\Par{x}+g\Par{x}=f\Par{x}+\BigPar{-f\Par{x}}=0=0\Par{x}.$\par\quad\Hb
+Add Inv: $\Par{f+g}\Par{x}={f}\Par{x}+g\Par{x}=f\Par{x}+\BigPar{{-f\Par{x}}}=0=0\Par{x}.$\par\quad\Hb
 Multi Id: $\Par{1f}\Par{x}=1f\Par{x}=f\Par{x}.$ \BigPar{ \NOTICE that the smallest $\Fbb$ is $\Bra{0,1}.$ }\par\quad\Hb
 Distr: $\BigPar{a\Par{f+g}}\Par{x}=a\Par{f+g}\Par{x}=a\BigPar{f\Par{x}+g\Par{x}}$\par\quad\Hb
 \Blind{Distr: $\BigPar{a\Par{f+g}}\Par{x}=a\Par{f+g}\Par{x}$} $=a\,f\Par{x}+ag\Par{x}=\Par{a\,f}\Par{x}+\Par{ag}\Par{x}=\Par{a\,f+ag}\Par{x}.$\par\quad\Hb
@@ -728,7 +725,7 @@ Define $S\in\Lm{V}$ by $S\Par{av+bTv+c_1 u_1+\dots+c_n u_n}=bv\Rightarrow S\Par{
 }\SepLine
 
 \Anchor{9A2}\Anchor{9A6}\Anchor{3B4e33}\ProblemBnoor{{9.A.2,6 \OR 4E 3.B.33}}{
-	\TextB{Supp that $V,W$ are on $\Rbb,$ and $T\in\Lm{V,W}.$ Show}
+	\TextB{Supp $V,W$ are on $\Rbb,$ and $T\in\Lm{V,W}.$ Show}
 	{\tgnr\large(a)} $T_{\!\Cbb}\in\Lm{V_{\!\Cbb},W_{\!\Cbb}}.$ \;{\tgnr\large(b)} $\Null\Par{T_{\!\Cbb}}=\BigPar{\null T}{_\Cbb},\Range\Par{T_{\!\Cbb}}=\BigPar{\range T}{_\Cbb}.$ \;{\tgnr\large(c)} $T_{\!\Cbb}$ is inv $\Longleftrightarrow T$ is inv.\TextB{}
 }{(a) $T_{\!\Cbb}\BigPar{\Par{u_1+\i v_1}+\Par{x+\i y}\Par{u_2+\i v_2}}=T\Par{u_1+xu_2-yv_2}+\i T\Par{v_1+xv_2+yu_2}$\parSol{\Ha}
 	$=T_{\!\Cbb}\Par{u_1+\i v_1}+\Par{x+\i y}T_{\!\Cbb}\Par{u_2+\i v_2}.$\parSol{}
@@ -837,7 +834,7 @@ Define $T\in\Lm{V,W}$ by $T\BigPar{a_1 v_1+\dots+a_m v_m+\dots+a_n v_n}=a_1 w_1+
 	\TextA{Prove $\exists\,T\in\Lm{V,W},\,\,\null T = U\Longleftrightarrow\underbrace{\dim U}_m\geqslant\underbrace{\dim V}_{m\,+\,n}-\underbrace{\dim W}_{p}.$}\vspace{-10pt}
 }\par\quad
 (a) Supp $\exists\,T\in\Lm{V,W},\null T=U.$ Then $\dim U+\dim\range T=\dim V\leqslant\dim U+\dim W.$\par\quad
-(b) Let $B_U=\Par{u_1,\dots,u_m},B_V=\Par{u_1,\dots,u_m,v_1,\dots,v_n},B_W=\Par{w_1,\dots,w_p}.$ Supp that $p\geqslant n.$\par\quad\Hb
+(b) Let $B_U=\Par{u_1,\dots,u_m},B_V=\Par{u_1,\dots,u_m,v_1,\dots,v_n},B_W=\Par{w_1,\dots,w_p}.$ Supp $p\geqslant n.$\par\quad\Hb
 Define $T\in\Lm{V,W}$ by $T\Par{a_1 v_1+\dots+a_n v_n+b_1 u_1+\dots+b_m u_m}=a_1 w_1+\dots+a_n w_n.$\PfEnd
 \SepLine\pagebreak
 
@@ -991,7 +988,7 @@ $\dim\range ST\leqslant \dim\range T$
 }Note that $\dim\range TS\leqslant\min\!\BigBra{\!\dim\range T,\dim\range S}.$ We prove by ctradic.\par\vspace{1pt}\quad
 %(a) $\dim\range TS\leqslant\min\!\Bra{\overbrace{\dim \range S}^{5\,-\,\dim\null T}, \overbrace{\dim\range T}^{5\,-\,\dim\null S}}.$\par\quad\Ha
 %We show $\dim\range TS\leqslant 2$ by ctradic. Asum $\dim\range TS\geqslant 3$.\par\quad\Ha
-%Then $\min\!\Bra{5-\dim\null T,5-\dim\null S}\geq 3\Rightarrow\max\!\Bra{\dim\null T,\dim\null S}\leqslant 2$.\par\quad\Ha
+%Then $\min\!\Bra{5-\dim\null T,5-\dim\null S}\geqslant 3\Rightarrow\max\!\Bra{\dim\null T,\dim\null S}\leqslant 2$.\par\quad\Ha
 %又 $\dim\null ST=5\leqslant\dim\null S+\dim\null T\leqslant 4.$ Ctradic.\vspace{6pt}\par\quad\Ha
 %\Or $\MathRightBrace{l}{\dim\null S=5-\dim\range S\\ \dim\range TS\leqslant\dim\range S}\Rightarrow\dim\null S\leqslant 5-\dim\range TS.$\par\vspace{2pt}\quad\Ha
 %And $ST=0\Rightarrow\range T\subseteq\null S\Rightarrow\dim\range TS\leqslant\dim\range T\leqslant\dim\null S.$\PfEnd\vspace{6pt}\quad
@@ -1616,7 +1613,7 @@ $\MathRightBrace{l}{$
 	Define $T\in\Lm{U_1\times U_2,U_1+U_2}$ by $T\BigPar{\Par{x_1,x_2,\cdots},\Par{x,0,\cdots}}=\Par{x,x_1,x_2,\cdots}\\ $
 	Define $S\in\Lm{U_1+U_2,U_1\times U_2}$ by $S\Par{x,x_1,x_2,\cdots}=\BigPar{\Par{x_1,x_2,\cdots},\Par{x,0,\cdots}}$
 	$}\Rightarrow S=T^{-1}.$\PfEnd%\vspace{10pt}\quad
-%\Or Let $V=\Fbb^\infty,U_1=\Bra{\Par{x_i}^\infty_{i=1}\in\Fbb^\infty:\sum_{i=1}^\infty \Par{-1}^{i}x_i=0},U_2=\Bra{\Par{y_1,y_2,\cdots}\in\Fbb^\infty:y_1+y_2+\dots=0}.$\par\quad
+%\Or Let $V=\Fbb^\infty,U_1=\Bra{\Par{x_i}^\infty_{i=1}\in\Fbb^\infty:\sum_{i=1}^\infty \Par{{-1}}^{i}x_i=0},U_2=\Bra{\Par{y_1,y_2,\cdots}\in\Fbb^\infty:y_1+y_2+\dots=0}.$\par\quad
 %$\MathRightBrace{l}{$
 	%	Define $T\in\Lm{U_1\times U_2,U_1+U_2}$ by $T\BigPar{\Par{x_1,x_2,\cdots},\Par{y_1,y_2,\cdots}}=\Par{x_1,y_1,x_2,y_2,\cdots}\\$
 	%	Define $S\in\Lm{U_1+U_2,U_1\times U_2}$ by $S\Par{z_1,z_2,z_3,z_4,\cdots}=\BigPar{\Par{z_1,z_3,\cdots},\Par{z_2,z_4,\cdots}}}\Rightarrow S=T^{-1}.$\PfEnd
@@ -1742,7 +1739,7 @@ $AB=I\Leftrightarrow A\Par{Bx}=x\Longleftrightarrow T\Par{Sx}=x\Leftrightarrow T
 \SepLine
 
 \Anchor{10A4}\Anchor{3D4e23}\ProblemBnoor{4E 23, \OR 10.A.4}{
-	\TextB{Supp that $\Par{\beta_1,\dots,\beta_n}$ and $\Par{\alpha_1,\dots,\alpha_n}$ are bses of $V$.}
+	\TextB{Supp $\Par{\beta_1,\dots,\beta_n}$ and $\Par{\alpha_1,\dots,\alpha_n}$ are bses of $V$.}
 	\TextB{Let $T\in\Lm{V}$ be suth each $T\alpha_k = \beta_k.$ Prove $\Mt{T,\alpha\rightarrow\alpha}=\Mt{I,\beta\rightarrow\alpha}.$}
 }\par\quad
 Denote $\Mt{T,\alpha\rightarrow\alpha}$ by $A$ and $\Mt{I,\beta\rightarrow\alpha}$ by $B.$\par\quad
@@ -2298,15 +2295,15 @@ Surj: $\varPhi\in\Par{V\XSlash U}\apostrophe\Rightarrow\forall u\in U,\varPhi\Pa
 }\;\;\hMath{l}{\left|\;}{\right.}{$
 	\!\Or\;$U\cap W\subseteq U\Rightarrow\BigPar{U\cap W}{^0}\supseteq U^0\\$
 	\!\Blind{\Or\;}$U\cap W\subseteq W\Rightarrow\BigPar{U\cap W}{^0}\supseteq W^0}$\vspace{6pt}\par\quad
-(b) \!\Sbra[3pt]{{\tgsl Only in Finide; Req $U,W$ Subsps}} \;By Exe (22), $\Dim\BigPar{U^0+W^0}=\dim U^0+\dim W^0-\Dim\BigPar{U^0\cap W^0}$\par\vspace{0pt}\quad\Hb
+(b) \!\Sbra[3pt]{{\tgsl Only in Finide}} \;By Exe (22), $\Dim\BigPar{U^0+W^0}=\dim U^0+\dim W^0-\Dim\BigPar{U^0\cap W^0}$\par\vspace{0pt}\quad\Hb
 $=2\dim V-\dim U-\dim W-\BigPar{\!\dim V-\Dim\Par{U+W}}=\dim V-\Dim\Par{U\cap W}.$\PfEnd\vspace{4pt}\quad\Hb
-\Or \Sbra[3pt]{{\tgsl Req $U,W$ Subsps}} \;Let $I=U\cap W.$ We show $\Par{U\cap W}{^0}\subseteq U^0+W^0.$\par\quad\Hb
+\Or Let $I=U\cap W.$ We show $\Par{U\cap W}{^0}\subseteq U^0+W^0.$\par\quad\Hb
 Define $\chi\in\Lm{V\XSlash I,V\XSlash U\times V\XSlash W}$ by $\chi:v+I\mapsto\Par{v+U,v+W}.$\par\quad\Hb
 Well-defined: $v_1+I=v_2+I\in V\XSlash I\Longleftrightarrow v_1-v_2\in I$\par\quad\Hb
 \Blind{Well-defined:} $\Longleftrightarrow v_1-v_2\in U$ and $v_1-v_2\in W\Rightarrow\Par{v_1+U,v_1+W}=\Par{v_2+U,v_2+W}.$\vspace{2pt}\par\quad\Hb
 Inje: $\Par{v+U,v+W}=0\Longleftrightarrow v\in U\cap W=I\Longleftrightarrow v+I=0.$\par\quad\Hb
 Surj: $\forall v\in V$ suth $\Par{v+U,v+W}\in V\XSlash U\times V\XSlash W,$ becs $\emptySet\neq\Par{v+U}\cap\Par{v+W}=v+I\in V\XSlash I.$\par\quad\Hb
-Hence $\chi\apostrophe\in\Lm[\BigPar]{\Par{{V\XSlash U}\times{V\XSlash W}}\apostrophe,\Par{V\XSlash I}\apostrophe}$ is iso. Now we try finding an iso of $U^0\times W^0$ onto $\Par{U\cap W}{^0}.$\par\quad\Hb
+Thus $\chi\apostrophe\in\Lm[\BigPar]{\Par{{V\XSlash U}\times{V\XSlash W}}\apostrophe,\Par{V\XSlash I}\apostrophe}$ is iso. Now we find an iso of $U^0\times W^0$ onto $\Par{U\cap W}{^0}.$\par\quad\Hb
 By (3.E.4), supp $\xi:\Par{V\XSlash U}\apostrophe\times\Par{V\XSlash W}\apostrophe\rightarrow\Par{{V\XSlash U}\times{V\XSlash W}}\apostrophe$ is iso.\par\quad\Hb
 By (c) in Exe (37), supp $\Lambda_1:U^0\times W^0\rightarrow\Par{V\XSlash U}\apostrophe\times\Par{V\XSlash W}\apostrophe$ and $\Lambda_2:\Par{V\XSlash I}\apostrophe\rightarrow\Par{U\cap W}{^0}$ are isos.\par\quad\Hb
 Hence $\Par{\Lambda_2\circ\chi\apostrophe\circ\xi\circ\Lambda_1}:U^0\times W^0\rightarrow\Par{U\cap W}{^0}$ is iso. \;Now we see how it works:\par\quad\Hb
@@ -2579,7 +2576,7 @@ Now $\Gamma\apostrophe\BigPar{\Psi\Par{x_1,\dots,x_m}}=x_1\varphi_1+\dots+x_m\va
 \Hc Supp $T\apostrophe\Par{x\varphi_1+y\varphi_2}=\Par{4x+7y}\psi_1+\Par{5x+8y}\psi_2+\Par{6x+9y}\psi_3=0.$\TextA{}
 \Hc Then $x+y=4x+7y=x=y=0.$ Hence $\null T\apostrophe=\zeroSubs.$\vspace{3pt}\TextA{}
 \Hc\Or $\null T=\Span{e_1-2e_2+e_3}\Rightarrow V=\Span{\hspace{-2pt}-2e_2,\:e_3}\oplus\null T.$\vspace{1pt}\TextA{}
-\Hc$\Rightarrow \range T=\Bra{Tx:x\in\Span{-2e_2,\:e_3}}=\Span[\BigPar]{T\Par{-2e_2},\,T\Par{e_3}}$\vspace{1pt}\TextA{}
+\Hc$\Rightarrow \range T=\Bra{Tx:x\in\Span{-2e_2,\:e_3}}=\Span[\BigPar]{T\Par{{-2e_2}},\,T\Par{e_3}}$\vspace{1pt}\TextA{}
 \Hc$=\Span{-10f_1-16f_2,\:6f_1+9f_2}=\Span{f_1,\,f_2}=\Rbb^2.$ Now $\null T\apostrophe=\Par{\range T}{^0}=\zeroSubs.$\vspace{4pt}\TextA{}
 \Hc\Or For any $A,B\in\Rbb,$ asum $\Par{x,y,z}$ is suth $A=4x+5y+6z,\,B=7x+8y+9z.$\TextA{}
 \Hc By computing $x=z+4\big/3\Par{b-a},\;y=-2z+\Par{7a-4b}\XSlash 3,\;z=z.$ \;\; {\tgsl\FontSmall An exa for (4E 3.E.8).}\TextA{}
@@ -2672,10 +2669,10 @@ Hence $2k=\Frac{m}{\sqrt{2}}\Rightarrow \sqrt{2}=\Frac{m}{2k}\in\Qbb$. Ctradic!\
 
 \Anchor{1C24}\ProblemBnoor{1.C.24}{
 	\TextA{Let $V_{\!E}=\Bra{\,f\in\Rbb^{\Rbb}:\text{f is even}},V_{\!O}=\Bra{\,f\in\Rbb^{\Rbb}:\text{f is odd}}.$ Show $V_{\!E}\oplus V_{\!O}=\Rbb^{\Rbb}.$\vspace{4pt}}
-}(a) {$V_{\!E}\cap V_{\!O}=\Bra{\,f\in\Rbb^{\Rbb}:f\Par{x}=f\Par{-x}=-f\Par{-x}}=\zeroSubs.$}\parSol{\vspace{8pt}}
+}(a) {$V_{\!E}\cap V_{\!O}=\Bra{\,f\in\Rbb^{\Rbb}:f\Par{x}=f\Par{{-x}}=-f\Par{{-x}}}=\zeroSubs.$}\parSol{\vspace{8pt}}
 (b) $\hMath{l}{\left|}{\right\}}{$
-	Let \;$f_e\Par{x}=\Frac{\;1\;}{2}\XSbra{g\Par{x}+g\Par{-x}}\Longrightarrow f_e\in V_{\!E}\vspace{4pt}\\$
-	Let \;$f_o\Par{x}=\Frac{\;1\;}{2}\XSbra{g\Par{x}-g\Par{-x}}\Longrightarrow f_o\in V_{\!O}
+	Let \;$f_e\Par{x}=\Frac{\;1\;}{2}\XSbra{g\Par{x}+g\Par{{-x}}}\Longrightarrow f_e\in V_{\!E}\vspace{4pt}\\$
+	Let \;$f_o\Par{x}=\Frac{\;1\;}{2}\XSbra{g\Par{x}-g\Par{{-x}}}\Longrightarrow f_o\in V_{\!O}
 }\Rightarrow\forall g\in\Rbb^\Rbb,\;g\Par{x}=f_e\Par{x}+f_o\Par{x}.$\PfEnd\vspace{4pt}
 \SepLine
 
@@ -2784,12 +2781,12 @@ For conveni, we asum $z^0=1$ in formula deduction and poly def. Absolutely witho
 	%\TextA{{\large The bss in this exe leads to what are called Bernstein polys. You can do a web search to learn how}}
 	%\TextA{{\large Bernstein polys are used to approximate continuous functions on $[0, 1]$.}}
 }{\tgsl We may see $p_0=1$ and $p_m\Par{x}=x^m,$ from the expansion below, by the {\NOTEFOR} [2.11] above.}\vspace{4pt}\par\quad
-Note that each $p_k\Par{x}={\sum_{j=0}^{m-k}\mathC_{m-k}^j\Par{-1}{^{j}}\cdot x^{j+k}\cdot 1^j}=\underset{\text{of deg k}}{\uline{\Par{-1}{^0}\cdot x^k\cdot 1^0}}+\underset{\text{of deg m; denote it by }q_k\SmallPar{x}}{\uline{\sum_{j=1}^{m-k}\mathC_{m-k}^j\Par{-1}{^{j}}\cdot x^{j+k}\cdot 1^j}}.$\vspace{-12pt}\par\quad
+Note that each $p_k\Par{x}={\sum_{j=0}^{m-k}\mathC_{m-k}^j\Par{{-1}}{^{j}}\cdot x^{j+k}\cdot 1^j}=\underset{\text{of deg k}}{\uline{\Par{{-1}}{^0}\cdot x^k\cdot 1^0}}+\underset{\text{of deg m; denote it by }q_k\SmallPar{x}}{\uline{\sum_{j=1}^{m-k}\mathC_{m-k}^j\Par{{-1}}{^{j}}\cdot x^{j+k}\cdot 1^j}}.$\vspace{-12pt}\par\quad
 And, each $q_k\in\Span{x^{k+1},\dots,x^m}.$ Using {\TIPS} above.\PfEnd\vspace{6pt}\quad
 \Or Simlr to the {\TIPS} above. We will recurly prove each $x^{m-k}\in\Span{p_m,\dots,p_{m-k}}.$\par\quad
 (i) $k=1.$ \;$p_m\Par{x}=x^m\in\Span{p_m};$ \;\; $p_{m-1}\Par{x}=x^{m-1}-x^m\Rightarrow x^{m-1}\in\Span{p_{m-1},p_m}.$\vspace{2pt}\par\quad\Endi
 (ii) $k\in\Bra{1,\dots,m-1}.$ \;Supp for each $j\in\Bra{0,\dots,k},$ we have $x^{m-j}\in\Span[\BigPar]{p_{m-j},\dots,p_m},\exists\,!\,a_m\in\Fbb.$\vspace{2pt}\par\quad\Hii
-Note that $x^{m-\SmallPar{k+1}}=p_{m-\SmallPar{k+1}}\Par{x}+\sum_{j=1}^{k+1}\mathC_{k+1}^j\Par{-1}{^{j+1}}x^{m-\SmallPar{k+1}+j}\in\Span[\BigPar]{p_{m-\SmallPar{k+1}},x^{m-k},\dots,x^{m}}.$\vspace{2pt}\par\quad\Hii
+Note that $x^{m-\SmallPar{k+1}}=p_{m-\SmallPar{k+1}}\Par{x}+\sum_{j=1}^{k+1}\mathC_{k+1}^j\Par{{-1}}{^{j+1}}x^{m-\SmallPar{k+1}+j}\in\Span[\BigPar]{p_{m-\SmallPar{k+1}},x^{m-k},\dots,x^{m}}.$\vspace{2pt}\par\quad\Hii
 Thus $x^{m-\SmallPar{k+1}}\in\Span[\BigPar]{p_{m-\SmallPar{k+1}},p_{m-k},\dots,p_m}.$\PfEnd\vspace{2pt}\quad
 \AComm The base step and the induc step can be indep.\vspace{10pt}\par\quad
 \Or For any $m,k\in\Nbp$ suth $k\leqslant m.$ Define $p_{k,m}$ by $p_{k,m}\Par{x}=x^k\Par{1-x}{^{m-k}}.$\par\quad
@@ -2848,8 +2845,8 @@ So that $\exists\,!\,a_i\in\Rbb,p=\sum_{i=1}^{m+1}a_ip_i\Rightarrow\exists\,q=\s
 \SepLine
 
 \Anchor{3E'2}\ProblemB{
-	\TextB{Supp $V=\Rbb^\Rbb$ and $U=\Bra{\hspace{3pt}f\in\Rbb^\Rbb:f\Par{x_1}=\cdots=f\Par{x_m}=0}$ is a subsp of $V,$\vspace{2pt}}
-	\TextB{with each $x_k\in\Rbb.$ \;Prove $\forall W\in\mathcal{S}_V U,\dim W=m.$\hfill{\large\tgsc Hint$:$ }{\FontNorm Find an iso from $V\XSlash U$ onto $\Rbb^m.$}}
+	\TextB{Supp $V=\Rbb^\Rbb$ with a subsp $U=\Bra{\hspace{3pt}f\in\Rbb^\Rbb:f\Par{x_1}=\cdots=f\Par{x_m}=0},$ where each $x_k\in\Rbb.$\vspace{2pt}}
+	\TextB{Prove if $W\in\mathcal{S}_V U,$ then $\dim W=m.$\hfill{\large\tgsc Hint$:$ }{\FontNorm Find an iso from $V\XSlash U$ onto $\Rbb^m.$}}
 }Define $T\in\Lm{V\XSlash U,\Rbb^m}$ by $T\Par{f+U}=\BigPar{f\Par{x_1},\dots,f\Par{x_m}}.$\parSol{}
 $\forall f_1+U=f_2+U\in V\XSlash U,f_1-f_2\in U\Rightarrow f_1\Par{x_k}=f_2\Par{x_k}.$ Now $T$ is well-defined.\parSol{\vspace{2pt}}
 Inje: Each $f\Par{x_k}=0\Rightarrow f+U=0.$ \;Let $S=T\circ\pi\Rightarrow\tilde{S}=T.$ Then $S$ is surj, so is $T.$\PfEnd
@@ -2859,7 +2856,7 @@ Inje: Each $f\Par{x_k}=0\Rightarrow f+U=0.$ \;Let $S=T\circ\pi\Rightarrow\tilde{
 	\TextA{Show the dual bss of $\Par{1, x,\dots,x^m}$ of $\PoR{m}$ is $\Par{\varphi_0,\varphi_1,\dots,\varphi_m}$, where {\FontNorm $\varphi_k\Par{p}=\Frac{p^{\SmallPar{k}}\Par{0}}{k!}$.}}
 %	\TextB{{\FontNorm Here $p{^{\SmallPar{k}}}$ denotes the $k^{th}$ deri of $p$, with the understanding that the $0^{th}$ deri of $p$ is $p$.}\vspace{-2pt}}
 }{\tgsl\normalsize The uniqnes of dual bss is guaranteed by [3.5].}\vspace{2pt}\par\quad
-For $j,k\in\Nbb,\:\Par{x^{j}}{^{\SmallPar{k}}}=\left\{\begin{array}{l}j\Par{j-1}\dots\Par{j-k+1}\cdot x^{\SmallPar{j-k}}\,,\quad j \geq k.\\j\Par{j-1}\dots\Par{j-j+1}=j!\hfill j=k.\\0,\hfill j \leqslant k.\end{array}\right|\hspace{4pt}\Rightarrow\Par{x^{j}}{^{\SmallPar{k}}}\Par{0}=\MathLeftBrace{l}{0\,\,\,,\,\hspace{5.2pt}j\neq k. \\ k!\,\,,\hspace{6pt}j=k.}$\PfEnd\vspace{8pt}\Anchor{3F8}
+For $j,k\in\Nbb,\:\Par{x^{j}}{^{\SmallPar{k}}}=\left\{\begin{array}{l}j\Par{j-1}\dots\Par{j-k+1}\cdot x^{\SmallPar{j-k}}\,,\quad j \geqslant k.\\j\Par{j-1}\dots\Par{j-j+1}=j!\hfill j=k.\\0,\hfill j \leqslant k.\end{array}\right|\hspace{4pt}\Rightarrow\Par{x^{j}}{^{\SmallPar{k}}}\Par{0}=\MathLeftBrace{l}{0\,\,\,,\,\hspace{5.2pt}j\neq k. \\ k!\,\,,\hspace{6pt}j=k.}$\PfEnd\vspace{8pt}\Anchor{3F8}
 %{\Large$\envFontSmall[\footnotesize]\frac{p^{\SmallPar[0pt]{k}}\Par[0pt]{0}}{k!}$}
 \AExa By [2.C.10], $B_m=\BigPar{1,7x-5,\dots,\Par{7x-5}{^m}}$ is a bss of $\PoR{m}$. Let each $\varphi_k={}${\Large\envFontSmall[\footnotesize]$\frac{p^{\SmallPar{k}}\Par{5\text{\large/}\hspace{0.5pt}7}}{7\hspace{1pt}\cdot\,k!}$}.\par\vspace{2pt}
 \SepLine

@@ -242,9 +242,9 @@ By asum, each $v_j'\in U.$ Thus $v_1,\dots,v_{k-1}\in U.$ So that $v_k=v-v_1-\do
 \Anchor{5AT2}\ProblemBX{\TipsN{2}}{
 	\TextA{Supp $\dim V=m\Rightarrow B_V=\Par{v_1,\dots,v_m}.$ Let each $E_k=\Span{v_k}.$}
 	\TextA{Prove $U=\BigPar[0pt]{U\cap E_1}\oplus\cdots\oplus\BigPar[0pt]{U\cap E_m}.$\vspace{-1pt}}
-}Becs $V=E_1\oplus\cdots\oplus E_m\Rightarrow\forall v\in U,\exists\,!\,c_j\in E_j,v=c_1v_1+\dots+c_mv_m.$\parSol{}
-For each $j,$ $c_j\neq 0\Rightarrow c_jv_j$ eigvec corres $\lambda_j.$ Othws $c_jv_j=0\in U.$\parSol{}
-By \TIPSN{1}, each $c_jv_j\in U.$ Thus $v\in\Par{U\cap E_1}\oplus\dots\oplus\Par{U\cap E_m}=U.$\PfEnd\vspace{2pt}
+}Becs $V=E_1\oplus\cdots\oplus E_m\Rightarrow\forall v\in U,v=c_1v_1+\dots+c_mv_m,$ uniqly.\parSol{}
+$c_j\neq 0\Rightarrow c_jv_j$ eigvec corres $\lambda_j.$ Or \,$c_k=0\Rightarrow c_kv_k=0\in U.$\parSol{}
+By \TIPSN{1}, each $c_jv_j\in U.$ Thus $v\in\Par{U\cap E_1}\oplus\dots\oplus\Par{U\cap E_m}\supseteq U.$\PfEnd\vspace{2pt}
 \ACoro Becs each $\dim E_j=1\Rightarrow\Par{U\cap E_j}=E_j$ or $\zeroSubs.$ Let $E_{k_1},\dots,E_{k_M}$ be all suth each $E_{k_j}=U\cap E_{k_j}.$\par
 \Anchor{5AT3}\BulletPointX\TipsN{3}\,\,\,{\tgsl Supp $U$ is a non0 invarsp of $V$ under $T.$ Let $\dim V=m.$ Then $U=\Span{v_{k_1},\dots,v_{k_M}}.$}
 \SepLine
@@ -287,7 +287,7 @@ Hence $T\Par{a,b}=\BigPar{a\cos\theta-b\sin\theta,\,a\sin\theta+b\cos\theta}.$ \
 %	\TextA{Define $T\in\Lm{\Fbb^2}$ by $T\Par{w, z} = \Par{z, w}$. Find all eigvals and eigvecs.}
 %}Supp $\lambda$ is an eigval with an eigvec $\Par{w,z}.$ Then $z=\lambda w$ \,{\small and}\, $ w=\lambda z.$\parSol{}
 %Thus $z=\lambda^2 z\Rightarrow \lambda^2=1,$ ignoring the possibility of $z=0$ \Par{ $z=0\Longleftrightarrow w=0$ }.\parSol{}
-%Hence $\lambda_1=-1$ and $\lambda_2=1$ are all the eigvals of $T.$ And $T\Par{z,z}=\Par{z,z},T\Par{z,-z}=\Par{-z,z}.$\parSol{}
+%Hence $\lambda_1=-1$ and $\lambda_2=1$ are all the eigvals of $T.$ And $T\Par{z,z}=\Par{z,z},T\Par{z,-z}=\Par{{-z,z}}.$\parSol{}
 %又 $\dim\Fbb^2=2.$ Thus the set of all eigvecs is $\Bra{\Par{z,z},\Par{z,-z}:z\neq 0}.$\PfEnd
 %\SepLine
 %
@@ -398,9 +398,9 @@ Now $E\Par{\lambda,T}=\Bra{Su:u\in E\Par{\lambda,S^{-1}TS}};\;E\Par{\lambda,S^{-
 %		3x-8y-11 z+\Par{5-\lambda}w=0.}$}\vspace{-8pt}\par\quad
 %This set of liney equations has no solutions.\par\quad
 %\Sbra{ You can type it on \url{https://zh.numberempire.com/equationsolver.php} to check. }\large\par\vspace{6pt}\quad
-%\Or Define $T\in\Lm{\Rbb^4}$ by $T\Par{x_1,x_2,x_3,x_4}=\Par{-x_2,x_1,-x_4,x_3}.$\par\quad
+%\Or Define $T\in\Lm{\Rbb^4}$ by $T\Par{x_1,x_2,x_3,x_4}=\Par{{-x_2,x_1,-x_4,x_3}}.$\par\quad
 %Supp $\lambda$ is an eigval of $T$ with an eigvec $\Par{x,y,z,w}.$\vspace{-3pt}\par\quad
-%Then $T\Par{x,y,z,w}=\Par{\lambda x,\lambda y,\lambda z,\lambda w}=\Par{-y,x,-w,z}$ { $\Longrightarrow\MathLeftBrace{l}{
+%Then $T\Par{x,y,z,w}=\Par{\lambda x,\lambda y,\lambda z,\lambda w}=\Par{{-y,x,-w,z}}$ { $\Longrightarrow\MathLeftBrace{l}{
 %		-y=\lambda x,x=\lambda y\Longrightarrow-xy=\lambda^2 xy\\
 %		-w=\lambda z,z=\lambda w\Longrightarrow-zw=\lambda^2 zw}$}\vspace{-3pt}\par\quad
 %If $xy\neq 0$ or $zw\neq 0,$ then $\lambda^2=-1,$ we fail.\par\quad
@@ -517,8 +517,8 @@ $\exists\,!\,\lambda_k=0.$ Now $\Bra{\lambda_jv_j:j\neq k}$ liney indep. By [2.2
 \SepLine
 
 %\ProblemN{\Anchor{5A30}{30}}{
-	%	\TextA{Supp $T\in\Lm{\Rbb^3}$ and $-4,5,\sqrt{7}$ are eigvals. Prove $\exists\,x,Tx - 9x = \Par{-4, 5, \sqrt{7}}$.}
-	%}$T$ has $\dim\Rbb^3$ eigvals not including $9\Rightarrow\Par{T-9I}$ is inv. $x=\Par{T-9I}{^{-1}}\Par{-4,5,\sqrt{7}}.$\PfEnd
+	%	\TextA{Supp $T\in\Lm{\Rbb^3}$ and $-4,5,\sqrt{7}$ are eigvals. Prove $\exists\,x,Tx - 9x = \Par{{-4, 5, \sqrt{7}}}$.}
+	%}$T$ has $\dim\Rbb^3$ eigvals not including $9\Rightarrow\Par{T-9I}$ is inv. $x=\Par{T-9I}{^{-1}}\Par{{-4,5,\sqrt{7}}}.$\PfEnd
 %\SepLine
 
 %\ProblemN{\Anchor{5A31}{31}}{
@@ -701,7 +701,7 @@ Then $\exists\,\Par{T-\lambda_j I}$ not inje. Now $p\Par{\lambda_j}-\alpha=0.$ \
 
 %\Anchor{5BI12}\ProblemN{12}{
 %	\TextA{Give a $T\in\Lm{\Rbb^2}$ that shows the result above does not hold if $\Cbb$ is replaced with $\Rbb$.}
-%}Define $T\Par{w,z}=\Par{-z,w}\Rightarrow$ the min of $T$ is $z^2+1.$ \,Define $p\Par{z}=z^2.$\parSol{}
+%}Define $T\Par{w,z}=\Par{{-z,w}}\Rightarrow$ the min of $T$ is $z^2+1.$ \,Define $p\Par{z}=z^2.$\parSol{}
 %Then $p\Par{T}=T^2=-I\Rightarrow p\Par{T}$ has eigval $-1,$ while $\nexists\,\lambda\in\Rbb,\,-1=p\Par{\lambda}=\lambda^2.$\PfEnd
 %\SepLine
 
@@ -956,7 +956,7 @@ Now $T^k\Par{T^{-k}}=I=b_0 T^k+b_1 T^{k-1}+\dots+b_{k-1}T\Rightarrow T^j\in\Span
 %	\TextB{Show the min poly of $T$ is $\,p\,$ defined by $p\Par{z}=a_0 + a_1 z + \dots + a_{n-1} z^{n-1} + z^n$.}
 %}Note that $\Par{e_1,Te_1,\dots,T^{n-1}e_1}$ is liney indep. 又 The deg of min poly is at most $n.$\par\quad
 %$T^n e_1=\cdots=T^{n-k}e_{1+k}=\cdots=T e_n=-a_0 e_1-a_1 e_2-a_2 e_3-\dots-a_{n-1}e_n$\par
-%$=\Par{-a_0 I-a_1 T-a_2 T^2-\dots-a_{n-1}T^{n-1}}e_1.$ Thus $p\Par{T}e_1=0=p\Par{T}e_j$ for each $e_j=T^{j-1}e_1.$\PfEnd
+%$=\Par{{-a_0 I-a_1 T-a_2 T^2-\dots-a_{n-1}T^{n-1}}}e_1.$ Thus $p\Par{T}e_1=0=p\Par{T}e_j$ for each $e_j=T^{j-1}e_1.$\PfEnd
 %\SepLine
 
 \Anchor{5BI4e19}\ProblemBnoor{4E 19}{
@@ -1152,7 +1152,8 @@ By asum, $T\mmid_U$ is diag wrto $B_U=\Par{v_2,\dots,v_n}.$ Let $v_1$ be an eigv
 
 \Anchor{5C7}\ProblemN{7}{
 	\TextA{Supp $T\in\Lm{V},A=\Mt{T,B_V}$ is diag. Prove $A$ has $\dim E\Par{\lambda,T}$ $\lambda$'s on diag.}
-}Given $B_V=\Par{v_1,\dots,v_n}.$ Becs $T$ diag. Each $Tv_k=\lambda_jv_k.$ Forming $B_{E\SmallPar{\lambda_j,T}}.$ Immed.\PfEnd
+}Given eigvecs $B_V=\Par{v_1,\dots,v_n}.$ Becs $T$ diag. Each $Tv_k=\lambda_jv_k.$ Forming $B_{E\SmallPar{\lambda_j,T}}.$ Immed.\PfEnd%\vspace{2pt}\parSol{}
+%\Or Let $\lambda_1,\dots,\lambda_m$ be the disti non0 eigvals. Supp $d_0$ eigvecs of $B_V$ corres eigval $0\Rightarrow\dim E\Par{0,T}=d_0.$
 \SepLine
 
 \Anchor{5C4e13}\ProblemBnoor{4E 13}{
@@ -1176,6 +1177,13 @@ Supp $AB=BA\Rightarrow A_{j,j}B_{j,k}=A_{k,k}B_{j,k}.$ Asum $B_{j,k}\neq0$ with 
 	\TextA{$T$ diag $\Longleftrightarrow\nexists\,\Par{z-\lambda}{^2}$ in $p\Longleftrightarrow p,p\apostrophe$ have no common zeros $\Longleftrightarrow\gcd\Par{p,p\apostrophe}=1.$\vspace{-3pt}}
 }\SepLine
 
+\Anchor{5C4e16}\ProblemBnoor{4E 16}{
+	\TextB{Supp $T\in\Lm{V}$ diag. Let $\lambda_1,\dots,\lambda_m$ be the disti eigvals of $T.$}
+	\TextB{Prove $U$ invarspd $T\Rightarrow\exists$ subsp $U_k\subseteq E\Par{\lambda_k,T}$ suth $U=U_1\oplus\cdots U_m.$}
+}Let each $U_k=U\cap E\Par{\lambda_k,T}\Rightarrow U_1\oplus\dots\oplus U_m\subseteq U.$\par\quad
+$\forall u\in U,\exists\,!\,v_k\in E\Par{\lambda_j,T},\,u=v_1+\dots+v_m.$ By \Sbra{5.A \TIPSN{1}}, each $v_k\in U_j\Rightarrow u\in U_1\oplus\cdots\oplus U_m.$\PfEnd
+\SepLine
+
 \Anchor{5C4e17}\ProblemBnoor{4E 17}{
 	\TextA{Supp $V$ is finide. Prove $\Lm{V}$ has a bss consisting of diag optors.}
 }Let $B_V=\Par{v_1,\dots,v_n}.$ Define each $E_{j,k}\in\Lm{V}:v_x\mapsto\delta_{j,x}v_k\Rightarrow$ [5.41](c) true.\PfEnd
@@ -1184,8 +1192,8 @@ Supp $AB=BA\Rightarrow A_{j,j}B_{j,k}=A_{k,k}B_{j,k}.$ Asum $B_{j,k}\neq0$ with 
 \Anchor{5C4e18}\ProblemBnoor{4E 18}{
 	\TextA{Supp $T\in\Lm{V}$ is diag. Prove if $U$ invarspd $T,$ then $T\XSlash U\in\Lm{V\XSlash U}$ is diag.}
 }Supp the eigvecs of $T$ are $B_V=\Par{v_1,\dots,v_n}$ with corres eigvals $\lambda_1,\dots,\lambda_n.$\parSol{}
-By \Sbra{5.A \TIPSN{3}}, $B_U=\Par{v_{k_1},\dots,v_{k_m}}.$ Let $\Par{v_1,\dots,v_n}=\Par{v_{k_1},\dots,v_{k_m},\dots,v_{k_n}}.$\parSol{}
-Let $B_{V\XSlash U}=\Par{v_{k_{m+1}}+U,\dots,v_{k_n}+U}.$ Becs each $\BigPar{T\XSlash U}\Par{v_{k_{m+j}}+U}=\lambda_{k_{m+j}}\Par{v_{k_{m+j}}+U}.$\PfEnd\vspace{3pt}\parSol{}
+By \Sbra{5.A \TIPSN{3}}, $B_U=\Par{v_{k_1},\dots,v_{k_m}}.$ Let $\Par{v_{k_1},\dots,v_{k_m},w_{j_1},\dots,w_{j_p}}=\Par{v_1,\dots,v_n}.$\parSol{}
+Let $B_{V\XSlash U}=\Par{w_{j_1}+U,\dots,w_{j_p}+U}.$ Becs each $\BigPar{T\XSlash U}\Par{w_{j_i}+U}=\lambda_{j_i}\Par{w_{j_i}+U}.$\PfEnd\vspace{3pt}\parSol{}
 \Or Becs the min of $T$ is multi of that of $T\XSlash U.$ By [4E 5.62].\PfEnd
 \SepLine
 
@@ -1210,8 +1218,8 @@ Let $B_{V\XSlash U}=\Par{v_{k_{m+1}}+U,\dots,v_{k_n}+U}.$ Becs each $\BigPar{T\X
 \Anchor{5C4e23}\ProblemBnoor{4E 23}{
 	\TextA{Redefine G disks suth the radius of the $k^\text{th}$ disk is the sum of the absolute vals}
 	\TextA{of the ents in {\tgsc col} $k$, excluding the diag ent. Show [4E 5.67] still holds.}
-}Supp $T\in\Lm{V},B_V=\Par{v_1,\dots,v_n},A=\Mt{T,B_V}.$ Simlr to [5.67]. Let $B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_n}.$\vspace{1pt}\parSol{}
-Supp $T\apostrophe\Par{\psi}=\lambda\psi$ with $\psi=c_1\varphi_1+\dots+c_n\varphi_n\neq0\Rightarrow\lambda\psi=\sum_{j=1}^n\BigBigPar{{\sum_{k=1}^nA^t_{j,k}c_kv_j}}=\sum_{j=1}^nc_j\lambda v_j.$\vspace{2pt}\parSol{}
+}Supp $T\in\Lm{V},B_V=\Par{v_1,\dots,v_n},A=\Mt{T,B_V}.$ Simlr to [5.67]. Let $B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_n}.$\vspace{1.5pt}\parSol{}
+Supp $T\apostrophe\Par{\psi}=\lambda\psi$ with $\psi=c_1\varphi_1+\dots+c_n\varphi_n\neq0\Rightarrow\lambda\psi=\sum_{j=1}^n\BigBigPar{{\sum_{k=1}^nA^t_{j,k}c_kv_j}}=\sum_{j=1}^nc_j\lambda v_j.$\vspace{3pt}\parSol{}
 Let $\aMid{c_j}=\max\!\Bra{\aMid{c_1},\dots,\aMid{c_n}}.$ Now $\lambda c_j=\sum_{k=1}^nA^t_{j,k}c_k\Rightarrow\aXMid{\lambda-A^t_{j,j}}\leqslant\sum_{j\neq k=1}^n\aXMid{A_{k,j}}.$\PfEnd\vspace{6pt}\parSol{}
 \Or Becs $\lambda$ is eigval of $T\Longleftrightarrow$ of $T\apostrophe.$ For $A^t=\Mt{T\apostrophe,B_{V\apostrophe}},$ by [5.67],\vspace{1pt}\parSol{}
 $\lambda\in\BigBra{z\in\Fbb:\aXMid{z-A_{j,j}}\leqslant\sum_{j\neq k=1}^n\aXMid{A^t_{j,k}}=\sum_{j\neq k=1}^n\aXMid{A_{k,j}}}$ for some $j\in\Bra{1,\dots,n}.$\PfEnd
