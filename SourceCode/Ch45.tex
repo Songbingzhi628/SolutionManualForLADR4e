@@ -450,7 +450,7 @@ Now $T_{\!\Cbb}\Par{\overline{v+\i u}}=Tv-\i Tu=\Par{av-bu}-\i\Par{au+bv}=\Par{a
 If $Tv=0$, then $T$ not inje, so are $TS,ST.$ Othws, $\lambda$ is eigval of $TS.$ \,Rev the roles in asum.\PfEnd
 \SepLine
 
-\Anchor{5C6}\Anchor{5A2e20}\ProblemBnoor{2E 20}{
+\Anchor{5C6}\ProblemBnoor{5.C.6}{
 	\TextB{Supp $T\in\Lm{V}$ has $n=\dim V$ disti eigvals and $S\in\Lm{V}$ has the same eigvecs}
 	\TextB{{\FontNorm but might not with the same eigvals.} \;Prove $ST=TS.$}
 }Let each $\lambda_jv_j=Tv_j,\mu_jv_j=Sv_j.$ Where $\mu_1,\dots,\mu_n$ might have repeti.\parSol{}
@@ -1026,7 +1026,7 @@ $\Rightarrow\exists\,v\neq 0,\Par{T^2+b_jT+c_j}v=0\Rightarrow T^2v\in\Span{v,Tv}
 \SepLine
 %\ChEnd\pagebreak
 
-\vfill\ChDecl{Ch5BII}{5.B: II}{\qquad{\small\textbf{注意\,:}\;这一节的题号主要使用第四版5.C节}}%\orMode{\hLk{5BII9}{9}\;\;\hLk{5BII14}{14}\;\;\hLk{5BII15}{15}\;\;\hLk{5BII20}{20}\;\;|\;\;\hLk{5BII4e1}{4E: 1,}\;\;\hLk{5BII4e2}{2,}\;\;\hLk{5BII4e3}{3,}\;\;\hLk{5BII4e4}{4,}\;\;\hLk{5BII4e5}{5,}\;\;\hLk{5BII4e6}{6,}\;\;\hLk{5BII4e7}{7,}\;\;\hLk{5BII4e8}{8,}\;\;\hLk{5BII4e9}{9,}\;\;\hLk{5BII4e10}{10}\;\;\hLk{5BII4e11}{11,}\;\;\hLk{5BII4e12}{12,}\;\;\hLk{5BII4e13}{13,}\;\;\hLk{5BII4e14}{14}}{[1]: ; [2]: ; [3]: .}
+\vfill\ChDecl{Ch5BII}{5.B: II}{\qquad{\small\textbf{注意\,:}\;这一节的题号使用第四版5.C节}}%\orMode{\hLk{5BII9}{9}\;\;\hLk{5BII14}{14}\;\;\hLk{5BII15}{15}\;\;\hLk{5BII20}{20}\;\;|\;\;\hLk{5BII4e1}{4E: 1,}\;\;\hLk{5BII4e2}{2,}\;\;\hLk{5BII4e3}{3,}\;\;\hLk{5BII4e4}{4,}\;\;\hLk{5BII4e5}{5,}\;\;\hLk{5BII4e6}{6,}\;\;\hLk{5BII4e7}{7,}\;\;\hLk{5BII4e8}{8,}\;\;\hLk{5BII4e9}{9,}\;\;\hLk{5BII4e10}{10}\;\;\hLk{5BII4e11}{11,}\;\;\hLk{5BII4e12}{12,}\;\;\hLk{5BII4e13}{13,}\;\;\hLk{5BII4e14}{14}}{[1]: ; [2]: ; [3]: .}
 
 \vspace{4pt}
 
@@ -1108,55 +1108,53 @@ $Tv_k\in\Span{v_k,\dots,v_n},\,Tv_{k+1}\in\Span{v_{k+1},\dots,v_n},\cdots,\,Tv_{
 	\TextA{Supp $V$ is finide, $U$ invarspd $T$ suth $T\mmid_U,T\XSlash U$ up-trig. Prove $T$ up-trig.}
 }Let $B_U=\Par{u_1,\dots,u_p},B_{V\XSlash U}=\Par{w_1+U,\dots,w_q+U}$ suth $\Mt{T\mmid_U},\Mt{T\XSlash U}$ up-trig.\parSol{}
 Then each $Tu_k\in\Span{u_1,\dots,u_k}$ and each $Tw_j+U\in\Span{w_1+U,\dots,w_j+U}.$\parSol{}
-By (3.E.13), $B_V=\Par{u_1,\dots,u_p,w_1,\dots,w_q}.$ Now each $Tw_j\in\Span{u_1,\dots,u_p,w_1,\dots,w_j}.$\PfEnd
+By (3.E.13), $B_V=\Par{u_1,\dots,u_p,w_1,\dots,w_q}.$ Now each $Tw_j\in\Span{u_1,\dots,u_p,w_1,\dots,w_j}.$\PfEnd\vspace{2pt}\parSol{}
+\Or By (4E 5.B.25)(b) and [4E 5.44], immed.\PfEnd
 \SepLine
 
 \Anchor{5BII4e14}\ProblemN{14}{
 	\TextA{Supp $V$ is finide. Prove $T$ up-trig $\Longleftrightarrow$ $T\apostrophe$ up-trig.}
-}Immed, by \TIPSN{1} and \TIPSN{2}, \OR by (4E 18) and [4E 5.44].\PfEnd
+}Immed, by \TIPSN{1} and \TIPSN{2}, \OR by (4E 5.B.28) and [4E 5.44].\PfEnd
 \SepLine
 
 \ChEnd\pagebreak
 
-\ChDecl{Ch5C}{5.C \& [4E] 5.D}{}
+\ChDecl{Ch5C}{5.C \& [4E] 5.D}{\qquad{\small\textbf{注意\,:}\;这一节的题号主要使用第四版5.D节}}
 
 \vspace{4pt}
 
 
-\Anchor{5C1}\ProblemN{1}{
+\Anchor{5C1}\Anchor{5C4e3}\ProblemN{3}{
 	\TextA{Supp $T\in\Lm{V}$ is diag. Prove $V=\null T\oplus\range T.$}
-}Let $\lambda_1,\dots,\lambda_m$ be the dist non0 eigvals of $T.$ Then $\range T=E\Par{\lambda_1,T}\oplus\cdots\oplus E\Par{\lambda_m,T}.$\parSol{}
-Becs $\null T=E\Par{0,T}.$ If $0$ is eigval, then done. Othws, $E\Par{0,T}=\zeroSubs$ and done.\PfEnd
-\PfEnd
-\Anchor{5C2}\AExa Convly not true. Define the inv $T\in\Lm{\Rbb^2}:\Par{x,y}\mapsto\Par{{-y,x}}.$ No eigvals.
+}Let $U=E\Par{\lambda_1,T}\oplus\cdots\oplus E\Par{\lambda_m,T},$ where each $\lambda_k\neq 0$ and $B_{E\SmallPar{\lambda_k,T}}=\Par{v_{1,k},\dots,v_{M_k,k}}.$\parSol{}
+Becs $\null T=E\Par{0,T}\Rightarrow$ whether $0$ is eigval or not, $V=U\oplus\null T.$ Now we show $U=\range T.$\parSol{}
+By (3.B.12), $\range T=\Bra{Tu:u\in U}=\BigBra{\sum_{k=1}^m\lambda_k\Par{a_{1,k}v_{1,k}+\dots+a_{M_k,k}v_{M_k,k}}:a_{j,k}\in\Fbb}=U.$\PfEnd\vspace{2pt}
+\AExa Convly not true. Define the inv $T\in\Lm{\Rbb^2}:\Par{x,y}\mapsto\Par{{-y,x}}.$ No eigvals.
 \SepLine
 
-\Anchor{5C1'}\ProblemB{
-	\TextB{Supp $T\in\Lm{V},V=\null T\oplus\range T,$ $U$ invarspd $T.$ Show $U=\null T\mmid_U\oplus\range T\mmid_U.$}
-}Becs $\null T\mmid_U\cap\range T\mmid_U\subseteq\null T\cap\range T=\zeroSubs.$ By Exe (3).\PfEnd
-\SepLine
-
-\Anchor{5C5}\ProblemN{5}{
+\Anchor{5C5}\Anchor{5C4e5}\ProblemN{5}{
 	\TextA{Supp $\Fbb=\Cbb,$ $V$ is finide, and $T\in\Lm{V}.$}
 	\TextA{Supp $V=\Null\Par{T-\lambda I}\oplus\Range\Par{T-\lambda I}$ for all $\lambda\in\Cbb.$ Prove $T$ is diag.}
 }(i) $\dim V=1.$ Immed. (ii) $\dim V>1.$ Asum the result holds for vecsp of smaller dim.\parSol{}
 Becs by (4E 5.A.39), $\exists\,\alpha$ eigval of $T\Rightarrow\exists$ invarsp $U$ of dim $\dim V-1.$\parSol{}
-又 $T\mmid_U\in\Lm{U},$ $V=\Null\Par{T-\lambda I}\oplus\Range\Par{T-\lambda I}.$ Note by Exe (4),\parSol{}
+又 $T\mmid_U\in\Lm{U},$ $V=\Null\Par{T-\lambda I}\oplus\Range\Par{T-\lambda I}.$ Note by Exe (3E 4),\parSol{}
 $\Null\Par{T\mmid_U-\lambda I}\cap\Range\Par{T\mmid_U-\lambda I}=\zeroSubs\Rightarrow U=\Null\Par{T\mmid_U-\lambda I}\oplus\Range\Par{T\mmid_U-\lambda I}.$\parSol{}
-By asum, $T\mmid_U$ is diag wrto $B_U=\Par{v_2,\dots,v_n}.$ Let $v_1$ be an eigvec corres $\alpha\Rightarrow B_V=\Par{v_1,\dots,v_n}.$\PfEnd\vspace{3pt}\parSol{}
-\Or Supp $T$ not diag. We show $\exists\,\lambda\in\Cbb,\Null\Par{T-\lambda I}\cap\Range\Par{T-\lambda I}\neq\zeroSubs.$\parSol{}
-\parSol{}
-\parSol{}
-\PfEnd
+By asum, $T\mmid_U$ is diag wrto $B_U=\Par{v_2,\dots,v_n}.$ Let $v_1$ be an eigvec for $\alpha.$ Forming $B_V$ of eigvecs.\PfEnd\vspace{2pt}\parSol{}
+\Or $\exists$ eigval $\lambda_0\Rightarrow U=\Range\Par{T-\lambda_0I}$ invard $T\Rightarrow U=\Null\Par{T\mmid_U-\lambda I}\oplus\Range\Par{T\mmid_U-\lambda I}.$\parSol{}
+While $V=E\Par{\lambda_0,T}\oplus U\Rightarrow\dim U<\dim V.$ By asum, $T\mmid_U$ is diag wrto $B_U$ of eigvecs. Simlr.\PfEnd\vspace{4pt}\par\quad
+\Or Supp $T$ not diag. We show $\exists\,\lambda\in\Cbb,\,\Null\Par{T-\lambda I}\cap\Range\Par{T-\lambda I}\neq\zeroSubs.$\par\quad
+Let the min of $T$ be $p\Par{z}=\Par{z-\lambda_1}{^{\alpha_1}}\cdots\Par{z-\lambda_m}{^{\alpha_m}},$ where each $\alpha_k\geqslant 1$ and $\exists\,\alpha_j>1.$\par\quad
+Let $q\Par{z}\Par{z-\lambda_j}=p\Par{z}\Rightarrow 0=p\Par{T}=\Par{T-\lambda_j}q\Par{T}\Rightarrow\rangep q\Par{T}\subseteq\Null\Par{T-\lambda_jI}.$\par\quad
+Let $q\Par{z}=\Par{z-\lambda_j}s\Par{z}\Rightarrow\rangep q\Par{T}\subseteq\Range\Par{T-\lambda_jI}.$ \,Note that $q\Par{T}\neq0.$\PfEnd
 \SepLine
 
-\Anchor{5C7}\ProblemN{7}{
-	\TextA{Supp $T\in\Lm{V},A=\Mt{T,B_V}$ is diag. Prove $A$ has $\dim E\Par{\lambda,T}$ $\lambda$'s on diag.}
-}Given eigvecs $B_V=\Par{v_1,\dots,v_n}.$ Becs $T$ diag. Each $Tv_k=\lambda_jv_k.$ Forming $B_{E\SmallPar{\lambda_j,T}}.$ Immed.\PfEnd%\vspace{2pt}\parSol{}
-%\Or Let $\lambda_1,\dots,\lambda_m$ be the disti non0 eigvals. Supp $d_0$ eigvecs of $B_V$ corres eigval $0\Rightarrow\dim E\Par{0,T}=d_0.$
-\SepLine
+%\Anchor{5C7}\Anchor{5C4e2}\ProblemN{2}{
+%	\TextA{Supp $T\in\Lm{V},A=\Mt{T,B_V}$ is diag. Prove $A$ has $\dim E\Par{\lambda,T}$ $\lambda$'s on diag.}
+%}Given eigvecs $B_V=\Par{v_1,\dots,v_n}.$ Becs $T$ diag. Each $Tv_k=\lambda_jv_k.$ Forming $B_{E\SmallPar{\lambda_j,T}}.$ Immed.\PfEnd%%\vspace{2pt}\parSol{}
+%%\Or Let $\lambda_1,\dots,\lambda_m$ be the disti non0 eigvals. Supp $d_0$ eigvecs of $B_V$ corres eigval $0\Rightarrow\dim E\Par{0,T}=d_0.$
+%\SepLine
 
-\Anchor{5C4e13}\ProblemBnoor{4E 13}{
+\Anchor{5C4e13}\ProblemN{13}{
 	\TextA{Supp $A,B\in\Fbb^{n,n}$ and $A$ is diag with {\tgsc dist} ents on diag. Prove $AB=BA\Longleftrightarrow B$ is diag.}
 }\NOTICE that for any diag $C,$ each $C_{j,k}=0$ for $j\neq k.$\parSol{}
 Becs (I) $A_{j,j}B_{j,k}=A_{j,1}B_{1,k}+\dots+\Sbra{A_{j,j}B_{j,k}}+\dots+A_{j,n}B_{n,k}=\Par{AB}{_{j,k}}.$\parSol{}
@@ -1165,31 +1163,33 @@ Supp $B$ diag. If $j=k,$ then $\Par{BA}{_{j,k}}=\Par{AB}{_{j,k}},$ othws true as
 Supp $AB=BA\Rightarrow A_{j,j}B_{j,k}=A_{k,k}B_{j,k}.$ Asum $B_{j,k}\neq0$ with $j\neq k.$ Then $A_{j,j}=A_{k,k},$ ctradic.\PfEnd
 \SepLine
 
-\Anchor{5C4e14}\ProblemBnoor{4E 14}{
+\Anchor{5C4e14}\ProblemN{14}{
 	\TextA{Supp $\Fbb=\Cbb,$ $k\in\Nbp,$ and $T\in\Lm{V}$ is inv. Prove $T^k$ diag $\Rightarrow T$ diag.}
-}%Using Exe (4E 13). Supp $\Mt{T^k,B_V}=A$ diag. Let $B=\Mt{T^{-1},B_V},C=\Mt{T,B_V}.$\parSol{}
-%Now $T^kT^{-1}=T^{-1}T^k\Rightarrow AB=BA\Rightarrow T^{-1}$ diag. Then $T^{-1}T=TT^{-1}\Rightarrow BC=CB\Rightarrow T$ diag.\PfEnd
+}Let the min of $T^k$ be $p\Par{z}=\Par{z-\lambda_1}\cdots\Par{z-\lambda_m}\Rightarrow$ each $\lambda_k$ non0 and disti.\parSol{}
+Becs any non0 $\lambda\in\Cbb$ has $k$ disti $k^{\text{th}}$ roots. Let $\Bra{\mu_{1,j},\dots,\mu_{k,j}}$ be the roots of $z^k=\lambda_j.$\parSol{}
+For $x,y\in\Bra{1,\dots,n},\:x\neq y\Longleftrightarrow \mu_{p,x}^k=\lambda_x\neq\lambda_y=\mu_{q,y}^k$ for each $p,q\in\Bra{1,\dots,k}\Rightarrow\mu_{p,x}\neq\mu_{q,y}.$\parSol{}
+Thus all $\mu$'s are dist. Let $s\Par{z}=\Par{z^k-\lambda_1}\cdots\Par{z^k-\lambda_m}=\prod_{j=1}^m\prod_{i=1}^k\Par{z-\mu_{i,j}}\Rightarrow s\Par{T}=0.$\PfEnd
 \AExa Not true if $\Fbb=\Rbb.$ Define $T\in\Lm{\Rbb^2}:\Par{x,y}\mapsto\Par{{-y,x}}.$ No eigvals.
-\SepLine\pagebreak
+\SepLine
 
-\Anchor{5C4e15}\ProblemBnoor[]{4E 15}{
+\Anchor{5C4e15}\ProblemN[]{15}{
 	\TextA{Supp $\Fbb=\Cbb,$ $V$ is finide, $T\in\Lm{V}$ with the min $p.$ Then\hfill\tgnr\FontSmall Using Exe (4.6).}
 	\TextA{$T$ diag $\Longleftrightarrow\nexists\,\Par{z-\lambda}{^2}$ in $p\Longleftrightarrow p,p\apostrophe$ have no common zeros $\Longleftrightarrow\gcd\Par{p,p\apostrophe}=1.$\vspace{-3pt}}
 }\SepLine
 
-\Anchor{5C4e16}\ProblemBnoor{4E 16}{
+\Anchor{5C4e16}\ProblemN{16}{
 	\TextB{Supp $T\in\Lm{V}$ diag. Let $\lambda_1,\dots,\lambda_m$ be the disti eigvals of $T.$}
 	\TextB{Prove $U$ invarspd $T\Rightarrow\exists$ subsp $U_k\subseteq E\Par{\lambda_k,T}$ suth $U=U_1\oplus\cdots U_m.$}
 }Let each $U_k=U\cap E\Par{\lambda_k,T}\Rightarrow U_1\oplus\dots\oplus U_m\subseteq U.$\par\quad
 $\forall u\in U,\exists\,!\,v_k\in E\Par{\lambda_j,T},\,u=v_1+\dots+v_m.$ By \Sbra{5.A \TIPSN{1}}, each $v_k\in U_j\Rightarrow u\in U_1\oplus\cdots\oplus U_m.$\PfEnd
 \SepLine
 
-\Anchor{5C4e17}\ProblemBnoor{4E 17}{
+\Anchor{5C4e17}\ProblemN{17}{
 	\TextA{Supp $V$ is finide. Prove $\Lm{V}$ has a bss consisting of diag optors.}
 }Let $B_V=\Par{v_1,\dots,v_n}.$ Define each $E_{j,k}\in\Lm{V}:v_x\mapsto\delta_{j,x}v_k\Rightarrow$ [5.41](c) true.\PfEnd
 \SepLine
 
-\Anchor{5C4e18}\ProblemBnoor{4E 18}{
+\Anchor{5C4e18}\ProblemN{18}{
 	\TextA{Supp $T\in\Lm{V}$ is diag. Prove if $U$ invarspd $T,$ then $T\XSlash U\in\Lm{V\XSlash U}$ is diag.}
 }Supp the eigvecs of $T$ are $B_V=\Par{v_1,\dots,v_n}$ with corres eigvals $\lambda_1,\dots,\lambda_n.$\parSol{}
 By \Sbra{5.A \TIPSN{3}}, $B_U=\Par{v_{k_1},\dots,v_{k_m}}.$ Let $\Par{v_{k_1},\dots,v_{k_m},w_{j_1},\dots,w_{j_p}}=\Par{v_1,\dots,v_n}.$\parSol{}
@@ -1197,25 +1197,25 @@ Let $B_{V\XSlash U}=\Par{w_{j_1}+U,\dots,w_{j_p}+U}.$ Becs each $\BigPar{T\XSlas
 \Or Becs the min of $T$ is multi of that of $T\XSlash U.$ By [4E 5.62].\PfEnd
 \SepLine
 
-\Anchor{5C4e19}\ProblemBnoor{4E 19}{
+\Anchor{5C4e19}\ProblemN{19}{
 	\TextA{Give an exa of $T\in\Lm{V}$ not diag while $T\mmid_U,T\XSlash U$ both diag, where $U$ invarspd $T.$}
 }Define $T\in\Lm{\Rbb^3}:\Par{x,y,z}\mapsto\Par{z,x,y}.$ Then $1$ is the only eigval with $\dim E\Par{1,T}=1.$\PfEnd
 \SepLine
 
-\Anchor{5C4e20}\ProblemBnoor{4E 20}{
+\Anchor{5C4e20}\ProblemN{20}{
 	\TextA{Supp $V$ is finide, $T\in\Lm{V}.$ Prove $T$ diag $\Longleftrightarrow T\apostrophe$ diag.}
 }By (4E 5.B.28), $T,T\apostrophe$ have the same min poly. By [4E 5.62].\PfEnd\vspace{2pt}\parSol{}
 \Or By \Sbra{5.B(II) \TIPSN{1}}. Note that low-trig and up-trig $\Longleftrightarrow$ diag.\PfEnd
 \SepLine
 
-\Anchor{5C4e22}\ProblemBnoor{4E 22}{
+\Anchor{5C4e22}\ProblemN{22}{
 	\TextA{Supp $V$ finide, $T\in\Lm{V},$ $A=\Mt{T,B_V}\in\Fbb^{n,n}.$}
-	\TextA{Prove if each $\aXMid{A_{j,j}}>\sum_{k=1}^n\aXMid{A_{j,k}}-A_{j,j},$ then $T$ is inv.}
-}If $T$ inv $\Rightarrow 0$ is eigval, then $0$ is in G disk for some $j$, now $\aXMid{0-A_{j,j}}\leqslant\sum_{k=1}^n\aXMid{A_{j,k}}-A_{j,j},$ ctradic.\PfEnd
+	\TextA{Prove if each $\aXMid{A_{j,j}}>\sum_{k=1}^n\aXMid{A_{j,k}}-A_{j,j},$ then $T$ is inv.\vspace{1pt}}
+}If $T$ inv $\Rightarrow 0$ is eigval, then $0$ is in G disk for some $j$, now $\aXMid{0-A_{j,j}}\leqslant\sum_{k=1}^n\aXMid{A_{j,k}}-A_{j,j},$ ctradic.\PfEnd\vspace{2pt}
 \AComm If each $\aXMid{A_{k,k}}>\sum_{j=1}^n\aXMid{A_{j,k}}-A_{k,k},$ then becs [5.67] still holds by Exe (4E 23), $T$ is inv.
 \SepLine
 
-\Anchor{5C4e23}\ProblemBnoor{4E 23}{
+\Anchor{5C4e23}\ProblemN{23}{
 	\TextA{Redefine G disks suth the radius of the $k^\text{th}$ disk is the sum of the absolute vals}
 	\TextA{of the ents in {\tgsc col} $k$, excluding the diag ent. Show [4E 5.67] still holds.}
 }Supp $T\in\Lm{V},B_V=\Par{v_1,\dots,v_n},A=\Mt{T,B_V}.$ Simlr to [5.67]. Let $B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_n}.$\vspace{1.5pt}\parSol{}
