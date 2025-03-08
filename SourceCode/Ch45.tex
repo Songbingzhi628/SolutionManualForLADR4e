@@ -1175,8 +1175,8 @@ Thus all $\mu$'s are dist. Let $s\Par{z}=\Par{z^k-\lambda_1}\cdots\Par{z^k-\lamb
 \Anchor{5C4e16}\ProblemN{16}{
 	\TextB{Supp $T\in\Lm{V}$ diag. Let $\lambda_1,\dots,\lambda_m$ be the disti eigvals of $T.$}
 	\TextB{Prove $U$ invarspd $T\Rightarrow\exists$ subsp $U_k\subseteq E\Par{\lambda_k,T}$ suth $U=U_1\oplus\cdots U_m.$}
-}Let each $U_k=U\cap E\Par{\lambda_k,T}\Rightarrow U_1\oplus\dots\oplus U_m\subseteq U.$\par\quad
-$\forall u\in U,\exists\,!\,v_k\in E\Par{\lambda_j,T},\,u=v_1+\dots+v_m.$ By \Sbra{5.A \TIPSN{1}}, each $v_k\in U_j\Rightarrow u\in U_1\oplus\cdots\oplus U_m.$\PfEnd
+}Let each $U_k=U\cap E\Par{\lambda_k,T}.$ Becs $\forall u\in U,\exists\,!\,v_k\in E\Par{\lambda_j,T},\,u=v_1+\dots+v_m.$\parSol{}
+Now by \Sbra{5.A \TIPSN{1}}, each $v_k\in U_j\Rightarrow u\in U_1\oplus\cdots\oplus U_m.$\PfEnd
 \SepLine
 
 \Anchor{5C4e17}\ProblemN{17}{
@@ -1220,9 +1220,9 @@ Let $\aMid{c_j}=\max\!\Bra{\aMid{c_1},\dots,\aMid{c_n}}.$ Now $\lambda c_j=\sum_
 $\lambda\in\BigBra{z\in\Fbb:\aXMid{z-A_{j,j}}\leqslant\sum_{j\neq k=1}^n\aXMid{A^t_{j,k}}=\sum_{j\neq k=1}^n\aXMid{A_{k,j}}}$ for some $j\in\Bra{1,\dots,n}.$\PfEnd
 \SepLine
 
-\ChEnd\pagebreak
+\ChEnd
 
-\ChDecl{Ch5E}{5.E [4E]}{}%\orMode{\hLk{5E1}{1}\;\;\hLk{5E2}{2}\;\;\hLk{5E3}{3}\;\;\hLk{5E4}{4}\;\;\hLk{5E5}{5}\;\;\hLk{5E6}{6}\;\;\hLk{5E7}{7}\;\;\hLk{5E8}{8}\;\;\hLk{5E9}{9}\;\;\hLk{5E10}{10}}{}
+\vfill\ChDecl{Ch5E}{5.E [4E]}{}%\orMode{\hLk{5E1}{1}\;\;\hLk{5E2}{2}\;\;\hLk{5E3}{3}\;\;\hLk{5E4}{4}\;\;\hLk{5E5}{5}\;\;\hLk{5E6}{6}\;\;\hLk{5E7}{7}\;\;\hLk{5E8}{8}\;\;\hLk{5E9}{9}\;\;\hLk{5E10}{10}}{}
 \vspace{4pt}
 
 \Anchor{5E1}\ProblemN{1}{
@@ -1235,39 +1235,7 @@ Thus ${e_1}$ eigvec of $T$ but not of $S,$ and ${e_3}$ eigvec of $S$ but not of 
 \Anchor{5E3}\ProblemN{3}{
 	\TextA{Supp $S, T\in\Lm{V}$ commu, and $p\in\PoFi$. Prove $\nullp p\Par{S},\rangep p\Par{S}$ invard $T$.}
 }Becs $Tp\Par{S}=p\Par{S}T.$ By (5.A.2,3).\PfEnd
-\SepLine
-
-\Anchor{5E2}\ProblemN{2}{
-	\TextA{Supp $\mathcal{E}\subseteq\Lm{V}$ and every elem of $\mathcal{E}$ diag.}
-	\TextA{Prove each pair of elems of $\mathcal{E}$ commu $\Rightarrow\exists\,B_V$ suth all elem of $\mathcal{E}$ diag.}
-}Using induc on $\dim V.$ (i) $\dim V=1.$ Immed. (ii) $\dim V>1.$ Asum it holds for smaller vecsps.\parSol{}
-Supp $S\in\mathcal{E}.$ Let $V=E\Par{\lambda_1,S}\oplus\cdots\oplus E\Par{\lambda_m,S}$ with $m>1.$\parSol{}
-Let each $E_k=E\Par{\lambda_k,S}.$ Becs for all $T\in\mathcal{E},$ each $E_k$ invard $T\Rightarrow T\mmid_{E_k}$ diag.\parSol{}
-Becs each $E_k\neq V.$ By asum, each $T\mmid_{E_k}$ diag and commu $\Rightarrow\exists\,B_{E_k}$ suth all such $T\mmid_{E_k}$ diag.\parSol{}
-Hence each $B_{E_k}$ consists of eigvecs of all $T.$ Forming $B_V.$\PfEnd
-\SepLine
-
-\Anchor{5E7}\ProblemN{7}{
-	\TextA{Supp $\Fbb=\Cbb,$ and $S,T\in\Lm{V}$ commu, $S$ diag. Prove $\exists\,B_V$ suth $S$ diag and $T$ up-trig.}
-}%Using induc on $\dim V.$ (i) Immed. (ii) $\dim V>1.$ Asum it holds for smaller $V.$\parSol{}
-%Let $V=E\Par{\lambda_1,S}\oplus\cdots\oplus E\Par{\lambda_m,S}$ with $B_V=\Par{u_1,\dots,u_n}$ be corres eigvecs. Let $u_1\in E\Par{\lambda_k,S}$ be a eigvec of $T.$ Let $W=\Span{u_2,\dots,u_n}\Rightarrow W\oplus\Span{u_1}=V$\parSol{}
-%Define $P:au_1+w\mapsto w$ and $\hat{R}=PR$ for $R\in\Lm{V}\Rightarrow\hat{S},\hat{T}\in\Lm{W}$ commu, becs $S,T$ commu.\parSol{}
-%Becs $\hat{S}$ diag. By asum, $\exists\,B_W=\Par{v_2,\dots,v_n}$ suth $\hat{S}$ diag and $\hat{T}$ up-trig.\parSol{}
-%Each $Sv_k=a_ku_1+\hat{S}v_k=a_kv_1+\lambda_{\alpha_k}v_k,$ with $a_k=0$ for $k\neq 1$ and $\hat{a}{_k}=0$ for $k=1.$\parSol{}
-%Each $\hat{T}v_k\in\Span{v_2,\dots,v_k}\Rightarrow Tv_k=b_kv_1+\hat{T}v_k\in\Span{v_1,\dots,v_k}.$
-\SepLine
-
-\Anchor{5E9}\ProblemN{9}{
-	\TextA{Supp $\Fbb=\Cbb,$ $V$ finide and non0. Supp $\mathcal{E}\subseteq\Lm{V}$ is suth all $S,T\in\mathcal{E}$ commu.}
-	\PrePa\TextA{Prove $\exists$ eigvec $v\in V$ of all elem of $\mathcal{E}.$ \,{\tgnr\large(b)} $\exists\,B_V$ suth all elem of $\mathcal{E}$ has up-trig matrix.}
-}(a) Using induc on $\dim V.$ (i) Immed. (ii) $\dim V>1.$ Asum it holds for smaller $V.$\parSol{\Ha}
-Supp $S\in\mathcal{E}$ and non0 $E=E\Par{\lambda,S}$ \Sbra{${}\neq V$} invard all $T\in\mathcal{E}.$\parSol{\Ha}
-By asum, $\exists$ eigvec $v\in V$ for all $T\mmid_{E},$ which is common eigvec of $S$ and all $T.$\vspace{2pt}\parSol{}
-(b) Using induc on $\dim V.$ (i) Immed. (ii) $\dim V>1.$ Asum it holds for smaller $V.$\parSol{\Hb}
-Supp $S\in\mathcal{E}.$ Let $v_1$ be eigvec of all elem of $\mathcal{E}.$ Let $W\oplus\Span{v_1}=V,P:av_1+w\mapsto w.$\parSol{\Hb}
-For each $R\in\Lm{V},$ define $\hat{R}\in\Lm{W}$ by $\hat{R}=PR.$ Becs for all $T\in\mathcal{E},$ $\hat{S}\hat{T}=\hat{T}\hat{S}.$\parSol{\Hb}
-By asum, $\exists\,B_W=\Par{v_2,\dots,v_n}$ suth $\hat{S}$ and all $\hat{T}$ has up-trig matrix. Simlr to [5.80].\PfEnd
-\SepLine
+\SepLine\pagebreak
 
 \Anchor{5E5}\ProblemN{5}{
 	\TextA{Supp $V$ finide. Prove $S,T$ commu $\Longleftrightarrow S\apostrophe,T\apostrophe$ commu.}
@@ -1281,7 +1249,43 @@ By (3.F.16), $\exists\,!\,S,T\in\Lm{V},\mathcal{S}=S\apostrophe,\mathcal{T}=T\ap
 \Anchor{5E6}\ProblemN{6}{
 	\TextA{Supp $\Fbb=\Cbb,$ $V$ is finide, and $S, T\in\Lm{V}$ commu.}
 	\TextA{Prove $\exists\,\alpha,\lambda\in\Cbb$ suth $\Range\Par{S -\alpha I} + \Range\Par{T -\lambda I}\neq V$.}
-}\SepLine
+}Supp $A,B\in\Fbb^{n,n}$ are matrices of $S,T$ wrto same $B_V=\Par{v_1,\dots,v_n}$ suth $A,B$ commu.\parSol{}
+Let $\alpha=A_{n,n},\,\lambda=B_{n,n}.$ Then $\Range\Par{S-\alpha I},\Range\Par{T-\lambda I}\subseteq\Span{v_1,\dots,v_{n-1}}.$\PfEnd
+\SepLine
+
+\Anchor{5E7}\ProblemN{7}{
+	\TextA{Supp $\Fbb=\Cbb,$ and $S,T\in\Lm{V}$ commu, $S$ diag. Prove $\exists\,B_V$ suth $S$ diag and $T$ up-trig.}
+}Let $\lambda_1,\dots,\lambda_m$ be disti eigvals of $S\Rightarrow V=E\Par{\lambda_1,S}\oplus\cdots\oplus E\Par{\lambda_m,S}.$\parSol{}
+Becs each $E_k=E\Par{\lambda_k,S}$ invard $T.$ Let each $T\mmid_{E_k}$ be up-trig with $B_{E_k}=\Par{v_{1,k},\dots,v_{M_k,k}}.$\parSol{}
+Then $S$ diag while $T$ up-trig with the same $B_V=\Par{v_{1,1},\dots,v_{M_n,n}}.$\PfEnd\vspace{3pt}\parSol{}
+\Or \parSol{}
+\parSol{}
+\parSol{}
+\parSol{}
+\PfEnd
+\SepLine
+
+\Anchor{5E2}\ProblemN{2}{
+	\TextA{Supp $\mathcal{E}\subseteq\Lm{V}$ and every elem of $\mathcal{E}$ diag.}
+	\TextA{Prove each pair of elems of $\mathcal{E}$ commu $\Rightarrow\exists\,B_V$ suth all elem of $\mathcal{E}$ diag.}
+}Using induc on $\dim V.$ (i) $\dim V=1.$ Immed. (ii) $\dim V>1.$ Asum it holds for smaller vecsps.\parSol{}
+Supp $S\in\mathcal{E}.$ Let $V=E\Par{\lambda_1,S}\oplus\cdots\oplus E\Par{\lambda_m,S}$ with $m>1.$\parSol{}
+Let each $E_k=E\Par{\lambda_k,S}.$ Becs for all $T\in\mathcal{E},$ each $E_k$ invard $T\Rightarrow T\mmid_{E_k}$ diag.\parSol{}
+Becs each $E_k\neq V.$ By asum, each $T\mmid_{E_k}$ diag and commu $\Rightarrow\exists\,B_{E_k}$ suth all such $T\mmid_{E_k}$ diag.\parSol{}
+Hence each $B_{E_k}$ consists of eigvecs of all $T.$ Forming $B_V.$\PfEnd
+\SepLine\pagebreak
+
+\Anchor{5E9}\ProblemN{9}{
+	\TextA{Supp $\Fbb=\Cbb,$ $V$ finide and non0. Supp $\mathcal{E}\subseteq\Lm{V}$ is suth all $S,T\in\mathcal{E}$ commu.}
+	\PrePa\TextA{Prove $\exists$ eigvec $v\in V$ of all elem of $\mathcal{E}.$ \,{\tgnr\large(b)} $\exists\,B_V$ suth all elem of $\mathcal{E}$ has up-trig matrix.}
+}(a) Using induc on $\dim V.$ (i) Immed. (ii) $\dim V>1.$ Asum it holds for smaller $V.$\parSol{\Ha}
+Supp $S\in\mathcal{E}$ and non0 $E=E\Par{\lambda,S}$ \Sbra{${}\neq V$} invard all $T\in\mathcal{E}.$\parSol{\Ha}
+By asum, $\exists$ eigvec $v\in V$ for all $T\mmid_{E},$ which is common eigvec of $S$ and all $T.$\vspace{2pt}\parSol{}
+(b) Using induc on $\dim V.$ (i) Immed. (ii) $\dim V>1.$ Asum it holds for smaller $V.$\parSol{\Hb}
+Supp $S\in\mathcal{E}.$ Let $v_1$ be eigvec of all elem of $\mathcal{E}.$ Let $W\oplus\Span{v_1}=V,P:av_1+w\mapsto w.$\parSol{\Hb}
+For each $R\in\Lm{V},$ define $\hat{R}\in\Lm{W}$ by $\hat{R}=PR.$ Becs for all $T\in\mathcal{E},$ $\hat{S}\hat{T}=\hat{T}\hat{S}.$\parSol{\Hb}
+By asum, $\exists\,B_W=\Par{v_2,\dots,v_n}$ suth $\hat{S}$ and all $\hat{T}$ has up-trig matrix. Simlr to [5.80].\PfEnd
+\SepLine
 
 \ChEnd
 
