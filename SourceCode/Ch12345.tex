@@ -748,7 +748,7 @@ Define $S\in\Lm{V}$ by $S\Par{av+bTv+c_1 u_1+\dots+c_n u_n}=bv\Rightarrow S\Par{
 
 \ProblemN{\Anchor{3B7}{7}}{
 	\TextA{Supp $2\leqslant\dim V=n\leqslant m=\dim W$, if $W$ is finide.}
-	\TextA{Show $U=\Bra{\,T\in\Lm{V,W}:\null T\neq\envFontDefault\zeroSubs\envFontLarge}$ is not a subsp of $\Lm{V,W}$.}
+	\TextA{Show $U=\Bra{T\in\Lm{V,W}:T\text{ is not inje}}$ is not a subsp of $\Lm{V,W}$.}
 }{\tgsl The set of all inje $T\in\Lm{V,W}$ is a not subsp either.}\par\quad
 Let $\Par{v_1,\dots,v_n}$ be a bss of $V$, $\Par{w_1,\dots,w_m}$ be liney indep in $W$. \Sbra{ $2\leqslant n\leqslant m.$ }\par\hspace{0pt}
 $\MathRightMid{l}{$
@@ -760,7 +760,7 @@ If $\dim V=1,$ then $V=\Span{v_0}.$ Thus $U=\Span{T_0},$ where $\forall v\in V,T
 
 \ProblemN{\Anchor{3B8}{8}}{
 	\TextA{Supp $2\leqslant\dim W=m\leqslant\dim V$, if $V$ is finide.}
-	\TextA{Show $U=\Bra{\,T\in\Lm{V,W}:\range T\neq W}$ is not a subsp of $\Lm{V,W}$.}
+	\TextA{Show $U=\Bra{T\in\Lm{V,W}:T\text{ is not surj}}$ is not a subsp of $\Lm{V,W}$.}
 }{\tgsl The set of all surj $T\in\Lm{V,W}$ is not a subsp either. \tgsc Using the generalized version of [3.5].}\par\quad
 Let $\Par{v_1,\dots,v_n}$ be liney indep in $V$, $\Par{w_1,\dots,w_m}$ be a bss of $W$. \Sbra{  $n\in\Bra{m,m+1,\dots}$; $2\leqslant m\leqslant n.$ }\par\quad
 Define $T_1\in\Lm{V,W}$ as $T_1:\,\,\,\,v_1\mapsto 0,$\qquad$v_2\mapsto w_2,$\qquad$v_j\mapsto w_j,$\qquad$v_{m+i}\mapsto 0.$\par\quad
@@ -783,7 +783,7 @@ If $\dim W=1,$ then $W=\Span{w_0}.$ Thus $U=\Span{T_0},$ where each $T_0v_i=0\Ri
 
 \ProblemN{11}{
 	\TextB{Supp $S_1,\dots,S_n$ are liney and inje suth $S_1S_2\cdots S_n$ makes sense. Prove $S_1S_2\cdots S_n$ inje.}
-}$S_1S_2\cdots S_nv=0\Rightarrow S_1S_2\cdots S_{n-1}v=0\Rightarrow\cdots\Rightarrow S_1v=0\Rightarrow v=0.$\PfEnd
+}$S_1S_2\cdots S_nv=0\Rightarrow S_2\cdots S_nv=0\Rightarrow\cdots\Rightarrow S_nv=0\Rightarrow v=0.$\PfEnd
 \SepLine
 
 \Anchor{5A4e33}\ProblemBnoor{4E 5.A.33}{
@@ -4100,10 +4100,10 @@ Thus ${e_1}$ eigvec of $T$ but not of $S,$ and ${e_3}$ eigvec of $S$ but not of 
 \Anchor{5E5}\ProblemN{5}{
 	\TextA{Supp $V$ finide. Prove $S,T$ commu $\Longleftrightarrow S\apostrophe,T\apostrophe$ commu.}
 }Supp $ST=TS\Rightarrow T\apostrophe S\apostrophe=\Par{ST}\apostrophe=\Par{TS}\apostrophe=S\apostrophe T\apostrophe.$ Convly, supp $\mathcal{S},\mathcal{T}\in\Lm{V\apostrophe}$ commu.\parSol{}
-By (3.F.16), $\exists\,!\,S,T\in\Lm{V},\mathcal{S}=S\apostrophe,\mathcal{T}=T\apostrophe.$ Then $\Par{TS}\apostrophe=S\apostrophe T\apostrophe=T\apostrophe S\apostrophe=\Par{ST}\apostrophe.$\PfEnd\vspace{2pt}\parSol{}
+By (3.F.16), $\exists\,!\,S,T\in\Lm{V},\;\mathcal{S}=S\apostrophe,\,\mathcal{T}=T\apostrophe.$ Then $\Par{TS}\apostrophe=S\apostrophe T\apostrophe=T\apostrophe S\apostrophe=\Par{ST}\apostrophe.$\PfEnd\vspace{2pt}\parSol{}
 \Or Let $A=\Mt{T,B_V},C=\Mt{S,B_V}\Rightarrow A^t=\Mt{T\apostrophe,B_{V\apostrophe}},C^t=\Mt{S\apostrophe,B_{V\apostrophe}}.$\parSol{}
 (a) Given $S,T\in\Lm{V},$ $TS=ST\Longleftrightarrow AC=CA\Longleftrightarrow C^tA^t=A^tC^t\Longleftrightarrow S\apostrophe T\apostrophe=T\apostrophe S\apostrophe.$\parSol{}
-(b) Given $\mathcal{S},\mathcal{T}\in\Lm{V\apostrophe},$ by (3.F.16), $\exists\,!\,S,T\in\Lm{V},\mathcal{S}=S\apostrophe,\mathcal{T}=T\apostrophe.$ By (a).\PfEnd
+(b) Given $\mathcal{S},\mathcal{T}\in\Lm{V\apostrophe},$ by (3.F.16), $\exists\,!\,S,T\in\Lm{V},\;\mathcal{S}=S\apostrophe,\,\mathcal{T}=T\apostrophe.$ By (a).\PfEnd
 \SepLine
 
 \Anchor{5E6}\ProblemN{6}{
