@@ -72,7 +72,7 @@ Now $Tp_1=\Par{1,\dots,1},\;Tp_k=\XPar{\prod_{i=1}^{k-1}\Par{z_1-z_i},\dots,\pro
 		1 &\hspace{-6pt} A_{m+1,2} &\hspace{-6pt} A_{m+1,3} &\hspace{-6pt} \cdots &\hspace{-6pt} A_{m+1,m+1}
 	\end{pmatrix}$}${}=\Mt[\BigPar]{T,B_p,B_e}.$ Where $A_{j,k}=\prod_{i=1}^{k-1}\Par{z_j-z_i}\neq 0$ for all $j> k-1\geqslant 1.$\vspace{-74pt}\par\quad
 \hfill And $\prod_{i=1}^{k-1}\Par{z_j-z_i}=0 \Longleftrightarrow j\leqslant k-1,$ becs $z_1,\dots,z_{m+1}$ are disti.\Blind{\quad\qquad}\vspace{30pt}\par\quad
-\hfill Now the rows $\Mt{T}$ are liney indep. By (4E 3.C.17) \OR (3.F.32).\Blind{\quad}\PfEnd\vspace{3pt}
+\hfill Now the rows of $\Mt{T}$ liney indep. By (4E 3.C.17) \OR (3.F.32).\Blind{\quad}\PfEnd\vspace{3pt}
 \SepLine
 
 %\Anchor{4O4}\ProblemN[]{{4}}{
@@ -168,7 +168,7 @@ For each $D\in\Bra{0,1,\dots,A-1},$ let $I_{>D}=\Bra{{I_{D,1}},\dots,{I_{D,\,J_D
 Now $\Bra{M}=I_{>A-1}\subseteq \cdots\subseteq I_{>0}=\Bra{1,\dots,M}.$ Becs $rp+sq=0\Rightarrow\Par{rp+sq}{^{\SmallPar{k}}}=0$ for all $k\in\Nbp.$\vspace{2pt}\par\quad
 We use induc by $D$ to show $s{^{\SmallPar{D}}}\BigPar{\lambda\Sbra{I_{D,j}}}=0$ for each $D\in\Bra{0,\dots,A-1}.$\vspace{2pt}\par\quad
 \NOTICE that $p{^{\SmallPar{D}}}\BigPar{\lambda\Sbra{I_{D,j}}}=0$ for each $D\in\Bra{0,\dots,A-1}$ and each $I_{D,j}\in I_{>D}.$\hfill(L2)\vspace{2pt}\par\quad
-(i) $D=0.$ Each $\Par{rp+sq}\BigPar{\lambda\Sbra{I_{0,j}}}=\Par{sq}\BigPar{\lambda\Sbra{I_{0,j}}}=s\BigPar{\lambda\Sbra{I_{0,j}}}=0.$ Where $q\BigPar{\lambda\Sbra{I_{0,j}}}=0.$\vspace{2pt}\par\quad\Hi
+(i) $D=0.$ Each $\Par{rp+sq}\BigPar{\lambda\Sbra{I_{0,j}}}=\Par{sq}\BigPar{\lambda\Sbra{I_{0,j}}}=s\BigPar{\lambda\Sbra{I_{0,j}}}=0.$ Where $q\BigPar{\lambda\Sbra{I_{0,j}}}\neq0.$\vspace{2pt}\par\quad\Hi
 $D=1.$ Each $\Par{r\apostrophe p+rp\apostrophe}\BigPar{\lambda\Sbra{I_{1,j}}}+\Par{s\apostrophe q+sq\apostrophe}\BigPar{\lambda\Sbra{I_{1,j}}}=\Par{s\apostrophe q}\BigPar{\lambda\Sbra{I_{1,j}}}=s\apostrophe\BigPar{\lambda\Sbra{I_{1,j}}}=0.$\vspace{1pt}\par\quad\Hi
 \Blind{$D=1.$} Where $p\apostrophe\BigPar{\lambda\Sbra{I_{1,j}}}=0,$ and each $I_{1,j}\subseteq I_{0,j}\Rightarrow s\BigPar{\lambda\Sbra{I_{1,j}}}=0.$\vspace{4pt}\par\quad\Endi
 (ii) $2\leqslant D\leqslant A-1.$ Asum $\;s{^{\SmallPar{d}}}\BigPar{\lambda\Sbra{I_{d,j}}}=0$ for each $d\in\Bra{0,1,\dots,D-1}$ and each $\lambda\Sbra{I_{d,j}}\in I_{>d}.$\vspace{2pt}\par\quad\Hii
@@ -623,8 +623,9 @@ Note that $\Par{T\XSlash U}\Par{1+U}=e^x+U=0.$ While $0$ is not an eigval of $T$
 	\TextB{Supp $T\in\Lm{V},$ $V$ is finide. Prove $\exists$ eigval of $T$ $\Longleftrightarrow\exists$ invarsp of dim $\dim V-1$.}
 }(a) Supp $\lambda$ is eigval with $v.$ Becs $\dim\Null\Par{T-\lambda I}\geqslant 1\Longleftrightarrow\dim\Range\Par{T-\lambda I}\leqslant\dim V-1=N.$\parSol{\Ha}
 Let $B_{\Range\SmallPar{T\,-\,\lambda I}}=\Par{w_1,\dots,w_m},\,B_V=\Par{w_1,\dots,w_m,u_1,\dots,u_n},\;B_U=\Par{w_1,\dots,w_m,u_1,\dots,u_{N\,-\,m}}.$\vspace{1pt}\parSol{\Ha}
-Becs $U$ invard $\Par{T-\lambda I}.$ Now $u\in U\Rightarrow\Par{T-\lambda I}{u}\in U\Rightarrow Tu\in U.$\vspace{2pt}\parSol{}
-(b) Supp $U$ is invarspd $T$ with $\dim U=\dim V-1\Rightarrow\dim V\XSlash U=1.$ By (3.A.7) and Exe (35).\PfEnd
+Becs $U$ invard $\Par{T-\lambda I}.$ Now $u\in U\Rightarrow\Par{T-\lambda I}{u}\in U\Rightarrow Tu\in U.$\parSol{\Ha}
+\ANote $U$ might not be in $\mathcal{S}_V\Span{v}.$\vspace{3pt}\parSol{}
+(b) Supp $U$ is invarspd $T$ with $\dim U=\dim V-1\Rightarrow\dim V\XSlash U=1.$ By (3.A.7), Exe (35).\PfEnd
 \SepLine
 
 \Anchor{5C16}\ProblemBnoor{3.C.16}{
@@ -639,8 +640,6 @@ Becs $U$ invard $\Par{T-\lambda I}.$ Now $u\in U\Rightarrow\Par{T-\lambda I}{u}\
 (b) {\FontSmall $T\Par{0,1}=\Par{F_1,F_2}.$ Asum $T^k\Par{0,1}=\Par{F_k,F_{k+1}}.$ Then $T^{k+1}\Par{0,1}=\Par{F_{k+1},F_{k}+F_{k+1}}.$}\vspace{-6pt}\parSol{\Hb}
 {\FontSmall $T^n\Par{0,1}=T^n\XSbra{${\large$\frac{1}{\sqrt{5}\;}$}$\BigPar{v_1-v_2}}={}${\large$\frac{1}{\sqrt{5}\;}$}$\def\envFont{\Large}\XSbra{\bigg(\!${\large$\frac{\:1\,+\,\sqrt{5}\:}{2}$}$\!\bigg)\begin{array}{l}\hspace{-7pt}{}_n\\\\\vspace{-8pt}\end{array}\hspace{-8pt}v_1-\bigg(\!${\large$\frac{\:1\,-\,\sqrt{5}\:}{2}$}$\!\bigg)\begin{array}{l}\hspace{-7pt}{}_n\\\\\vspace{-8pt}\end{array}\hspace{-8pt}v_2\def\envFont{\Large}}.$ Take the first slot.}\PfEnd[-28pt]\vspace{4pt}
 \SepLine
-
-\ChEnd
 
 \vfill\ChDecl{Ch5BI}{5.B: I}
 
@@ -873,7 +872,7 @@ Supp $p\Par{z}=z^2+bz+c.$ Let $P=L\cos\theta\Rightarrow L\big/2P=1\big/\Par{2\co
 Then $Tv=\BigPar{L\big/2P}\Par{T^2 v+v}\Rightarrow T=\BigPar{L\big/2P}\Par{T^2+I}.$\parSol{}
 Hence $p\Par{T}=T^2-2\cos\theta\, T+I=0.$\PfEnd\vspace{4pt}\parSol{}
 \Or Let $\Par{e_1,e_2}$ be the std bss of $\Rbb^2.$ Becs $Te_1=\cos\theta\;e_1+\sin\theta\;e_2,\;T^2e_1=\cos2\theta\;e_1+\sin2\theta\;e_2.$\vspace{0pt}\parSol{}
-$ce_1+bTe_1=-T^2 e_1\Longleftrightarrow{}${\small$\begin{pmatrix}1 & \cos\theta\\0 & \sin\theta\end{pmatrix}\begin{pmatrix}c \\ b\end{pmatrix}$}${}={}${\small$\begin{pmatrix}-\cos2\theta\\-\sin2\theta\end{pmatrix}$}. Now $\det=\sin\theta\neq 0,c=1,b=2\cos\theta.$\PfEnd%\vspace{10pt}\parSol{}
+$ce_1+bTe_1=-T^2 e_1\Longleftrightarrow{}${\small$\begin{pmatrix}1 & \cos\theta\\0 & \sin\theta\end{pmatrix}\begin{pmatrix}c \\ b\end{pmatrix}$}${}={}${\small$\begin{pmatrix}-\cos2\theta\\-\sin2\theta\end{pmatrix}$}. Now $\det=\sin\theta\neq 0,\:c=1,\,b=2\cos\theta.$\PfEnd%\vspace{10pt}\parSol{}
 %\Or $\Mt[\BigPar]{T,\Par{e_1,e_2}}={}${\small$\begin{pmatrix}\Blind{-}\cos\theta & \sin\theta\\-\sin\theta & \cos\theta
 %\end{pmatrix}$}. By (4E 11), $\Par{z\pm 1}$ or $\Par{z^2-2\cos\theta\,z+1}$ is the min.\PfEnd
 \SepLine
@@ -1136,12 +1135,8 @@ By (3.B.12), $\range T=\Bra{Tu:u\in U}=\BigBra{\sum_{k=1}^m\lambda_k\Par{a_{1,k}
 	\TextA{Supp $\Fbb=\Cbb,$ $V$ is finide, and $T\in\Lm{V}.$}
 	\TextA{Supp $V=\Null\Par{T-\lambda I}\oplus\Range\Par{T-\lambda I}$ for all $\lambda\in\Cbb.$ Prove $T$ is diag.}
 }(i) $\dim V=1.$ Immed. (ii) $\dim V>1.$ Asum the result holds for vecsp of smaller dim.\parSol{}
-Becs by (4E 5.A.39), $\exists\,\alpha$ eigval of $T\Rightarrow\exists$ invarsp $U$ of dim $\dim V-1.$\parSol{}
-又 $T\mmid_U\in\Lm{U},$ $V=\Null\Par{T-\lambda I}\oplus\Range\Par{T-\lambda I}.$ Note by Exe (3E 4),\parSol{}
-$\Null\Par{T\mmid_U-\lambda I}\cap\Range\Par{T\mmid_U-\lambda I}=\zeroSubs\Rightarrow U=\Null\Par{T\mmid_U-\lambda I}\oplus\Range\Par{T\mmid_U-\lambda I}.$\parSol{}
-By asum, $T\mmid_U$ is diag wrto $B_U=\Par{v_2,\dots,v_n}.$ Let $v_1$ be an eigvec for $\alpha.$ Forming $B_V$ of eigvecs.\PfEnd\vspace{2pt}\parSol{}
-\Or $\exists$ eigval $\lambda_0\Rightarrow U=\Range\Par{T-\lambda_0I}$ invard $T\Rightarrow U=\Null\Par{T\mmid_U-\lambda I}\oplus\Range\Par{T\mmid_U-\lambda I}.$\parSol{}
-While $V=E\Par{\lambda_0,T}\oplus U\Rightarrow\dim U<\dim V.$ By asum, $T\mmid_U$ is diag wrto $B_U$ of eigvecs. Simlr.\PfEnd\vspace{4pt}\par\quad
+$\exists$ eigval $\lambda_0\Rightarrow U=\Range\Par{T-\lambda_0I}$ invard $T\Rightarrow U=\Null\Par{T\mmid_U-\lambda I}\oplus\Range\Par{T\mmid_U-\lambda I}.$\parSol{}
+While $V=E\Par{\lambda_0,T}\oplus U\Rightarrow\dim U<\dim V.$ By asum, $T\mmid_U$ is diag wrto $B_U$ of eigvecs.\PfEnd\vspace{4pt}\par\quad
 \Or Supp $T$ not diag. We show $\exists\,\lambda\in\Cbb,\,\Null\Par{T-\lambda I}\cap\Range\Par{T-\lambda I}\neq\zeroSubs.$\par\quad
 Let the min of $T$ be $p\Par{z}=\Par{z-\lambda_1}{^{\alpha_1}}\cdots\Par{z-\lambda_m}{^{\alpha_m}},$ where each $\alpha_k\geqslant 1$ and $\exists\,\alpha_j>1.$\par\quad
 Let $q\Par{z}\Par{z-\lambda_j}=p\Par{z}\Rightarrow 0=p\Par{T}=\Par{T-\lambda_j}q\Par{T}\Rightarrow\rangep q\Par{T}\subseteq\Null\Par{T-\lambda_jI}.$\par\quad
@@ -1168,7 +1163,7 @@ Supp $AB=BA\Rightarrow A_{j,j}B_{j,k}=A_{k,k}B_{j,k}.$ Asum $B_{j,k}\neq0$ with 
 }Let the min of $T^k$ be $p\Par{z}=\Par{z-\lambda_1}\cdots\Par{z-\lambda_m}\Rightarrow$ each $\lambda_k$ non0 and disti.\parSol{}
 Becs any non0 $\lambda\in\Cbb$ has $k$ disti $k^{\text{th}}$ roots. Let $\Bra{\mu_{1,j},\dots,\mu_{k,j}}$ be the roots of $z^k=\lambda_j.$\parSol{}
 For $x,y\in\Bra{1,\dots,n},\:x\neq y\Longleftrightarrow \mu_{p,x}^k=\lambda_x\neq\lambda_y=\mu_{q,y}^k$ for each $p,q\in\Bra{1,\dots,k}\Rightarrow\mu_{p,x}\neq\mu_{q,y}.$\parSol{}
-Thus all $\mu$'s are dist. Let $s\Par{z}=\Par{z^k-\lambda_1}\cdots\Par{z^k-\lambda_m}=\prod_{j=1}^m\prod_{i=1}^k\Par{z-\mu_{i,j}}\Rightarrow s\Par{T}=0.$\PfEnd
+Thus all $\mu$'s are dist. Let $s\Par{z}=\Par{z^k-\lambda_1}\cdots\Par{z^k-\lambda_m}=\prod_{j=1}^m\prod_{i=1}^k\Par{z-\mu_{i,j}}\Rightarrow s\Par{T}=0.$\PfEnd\vspace{3pt}
 \AExa Not true if $\Fbb=\Rbb.$ Define $T\in\Lm{\Rbb^2}:\Par{x,y}\mapsto\Par{{-y,x}}.$ No eigvals.
 \SepLine
 
@@ -1187,7 +1182,7 @@ $\forall u\in U,\exists\,!\,v_k\in E\Par{\lambda_j,T},\,u=v_1+\dots+v_m.$ By \Sb
 \Anchor{5C4e17}\ProblemN{17}{
 	\TextA{Supp $V$ is finide. Prove $\Lm{V}$ has a bss consisting of diag optors.}
 }Let $B_V=\Par{v_1,\dots,v_n}.$ Define each $E_{j,k}\in\Lm{V}:v_x\mapsto\delta_{j,x}v_k\Rightarrow$ [5.41](c) true.\PfEnd
-\SepLine
+\SepLine\pagebreak
 
 \Anchor{5C4e18}\ProblemN{18}{
 	\TextA{Supp $T\in\Lm{V}$ is diag. Prove if $U$ invarspd $T,$ then $T\XSlash U\in\Lm{V\XSlash U}$ is diag.}
