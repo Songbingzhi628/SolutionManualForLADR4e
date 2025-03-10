@@ -3,7 +3,7 @@
 
 \ChDecl{Ch1B}{1$\cdot$B}{}
 
-\vspace{6pt}
+\vspace{2pt}
 
 \ProblemN{\Anchor{1B1}{1}}{
 	\vspace{2pt}\TextA{Prove $\forall v\in V,-\Par{{-v}} = v$.}
@@ -13,12 +13,12 @@
 
 \ProblemN{\Anchor{1B2}{2}}{
 	\TextA{Supp $a\in\Fbb,v\in V$, and $av = 0$. Prove $a = 0$ or $v = 0$.}
-}Supp $a\neq 0,\exists\,a^{-1}\in\Fbb,a^{-1}a=1,$ hence $v=1\cdot v=\Par{a^{-1}a}v=a^{-1}\Par{av}=a^{-1}\cdot 0=0.$\PfEnd
+}Supp $a\neq 0,\,\exists\,a^{-1}\in\Fbb,\,a^{-1}a=1,$ hence $v=1\cdot v=\Par{a^{-1}a}v=a^{-1}\Par{av}=a^{-1}\cdot 0=0.$\PfEnd
 \SepLine
 
 \ProblemN{\Anchor{1B3}{3}}{
 	\TextA{Supp $v, w\in V$. Explain why $\exists\,!\,x\in V,v + 3x = w.$}
-}$v + 3x = w \quad\Leftrightarrow\quad 3x = w − v\quad \Leftrightarrow\quad x = \frac{\;1\;}{3} \Par{w − v}.$\PfEnd\vspace{4pt}\quad
+}$v + 3x = w \;\Leftrightarrow\; 3x = w − v \;\Leftrightarrow\; x = \frac{\;1\;}{3}\Par{w-v}.$\PfEnd\vspace{4pt}\quad
 \Or \hspace{1pt}\;{\Existns} \;Let $x=\Frac{\;1\;}{3}\Par{w-v}.$\vspace{2pt}\par\quad
 \Blind{\Or}{\Uniqnes} \;If $v+3x_1=w,$(I)$\,\,v+3x_2=w\,$(II). Then (I) $-$ (II) $: 3\Par{x_1-x_2}=0\Rightarrow x_1=x_2.$\PfEnd
 \SepLine
@@ -33,54 +33,46 @@
 \SepLine
 
 \ProblemN{\Anchor{1B6}{6}}{
-	\TextA{Let $\infty$ and $-\infty$ denote two disti objects, neither of which is in $\Rbb$.}
-	\TextA{Define an add and scalar multi on $\Rbb\cup\Bra{\infty, -\infty}$ as you could guess.}
-	\TextA{The operations of real numbers is as usual. While for $t\in\Rbb$  define\vspace{6pt}}\hspace{-80pt}
-	\TextA{\FontNorm\centerline{
-		$t\infty=\MathLeftBrace{l}{
-		\,-\infty\,$ if $t<0,\\
-		\quad 0\,$\,\, if $t=0,\\
-		\,\,\,\,\,\infty\,\,\,$if $t>0,}$\qquad\qquad\qquad
-		$t\Par{{-\infty}}=\MathLeftBrace{l}{
-		\,-\infty\,$ if $t>0,\\
-		\quad 0\,$\,\, if $t=0,\\
-		\,\,\,\,\,\infty\,\,\,$if $t<0,}$}\vspace{10pt}}
-\quad\TextA{\FontNorm\tgnr(I) $t + \infty = \infty + t = \infty + \infty = \infty,$}
-\quad\TextA{\FontNorm\EndI\tgnr(II) $t + \Par{{-\infty}} = \Par{{-\infty}} + t = \Par{{-\infty}} + \Par{{-\infty}} = -\infty,$}
-\quad\TextA{\FontNorm\EndII\tgnr(III) $\infty + \Par{{-\infty}} = \Par{{-\infty}} + \infty = 0$.\vspace{8pt}}
-\TextA{With these operations of add and scalar multi, is $\Rbb\cup\Bra{\infty, -\infty}$ a vecsp over $\Rbb$? Explain.}
-}Not a vecpsp, since the add and scalar mult is not assoc and distr.\parSol{}
+	\TextA{Let $\infty$ and $-\infty$ denote two disti objects that are not in $\Rbb$.}
+	\TextA{Define the natural add and scalar multi on $\Rbb\cup\Bra{\infty, -\infty},$ that is, for each $t\in\Rbb,$\vspace{4pt}}
+	\TextA{\;\FontNorm$t\infty=\hMath{l}{\left\{}{\;\right|}{
+		-\infty\,$ if $t<0,\\
+		\Blind{-}0\,$\,\, if $t=0,\\
+		\hfill\infty\,\,\,$if $t>0,}\,\,\,t\Par{{-\infty}}=\hMath{l}{\left\{}{\;\right|}{
+		-\infty\,$ if $t>0,\\
+		\Blind{-}0\,$\,\, if $t=0,\\
+		\hfill\infty\,\,\,$if $t<0,}$\tgnr$\:\hText{$
+		(a) $t + \infty = \infty + t = \infty + \infty = \infty,\\$
+		(b) $t + \Par{{-\infty}} = \Par{{-\infty}} + t = \Par{{-\infty}} + \Par{{-\infty}} = -\infty,\\$
+		(c) $\infty + \Par{{-\infty}} = \Par{{-\infty}} + \infty = 0.}$\vspace{4pt}}
+	\TextA{Is $\Rbb\cup\Bra{\infty, -\infty}$ a vecsp over $\Rbb$? Explain.}
+}No. Becs the add and scalar multi is not assoc and distr.\parSol{}
 By Assoc: $\Par{a+\infty}+\Par{{-\infty}}\neq a+\Par{\infty+\Par{{-\infty}}}.$\parSol{}
 \Or By Distr: $\infty=\Par{2+\Par{{-1}}}\infty\neq 2\infty+\Par{{-\infty}}=\infty+\Par{{-\infty}}=0.$\PfEnd
 \SepLine
 
 \Anchor{1BN1}\ProblemBX[]{\NoteFor{Fields}}{
 	\TextB{Many choices.\;\;\FontNorm\Sbra[3pt]{{\tgsl Req Multi Inv Uniq}}\vspace{2pt}}
-	\TextB{\AExa $\Fbb=\Zbb_m=\Bra{K_0,K_1,\dots,K_{m-1}},\forall m-1\in\Nbp$ suth $\Par{m-1}$ is a prime.}
+	\TextB{\AExa $\Zbb_m=\Bra{K_0,K_1,\dots,K_{m-1}}$ is a field $\Longleftrightarrow m\in\Nbp$ is a prime.}
 }\SepLine
-\ChEnd
+\ChEnd\pagebreak
 
-\vfill\ChDecl{Ch1C}{1$\cdot$C}{}%\orMode{\hLk{1C7}{7}\;\;\hLk{1C8}{8}\;\;\hLk{1C9}{9}\;\;\hLk{1C11}{11}\;\;\hLk{1C12}{12}\;\;\hLk{1C13}{13}\;\;\hLk{1C15}{15}\;\;\hLk{1C16}{16}\;\;\hLk{1C17}{17}\;\;\hLk{1C18}{18}\;\;\hLk{1C21}{21}\;\;\hLk{1C23}{23}\;\;\hLk{1C24}{24}}{[2]: 7, 8, 9, 24, 15, 16, 17, 18; [3]: 11, 12, 13; [4]: 21, 23.}
+\ChDecl{Ch1C}{1$\cdot$C}{}%\orMode{\hLk{1C7}{7}\;\;\hLk{1C8}{8}\;\;\hLk{1C9}{9}\;\;\hLk{1C11}{11}\;\;\hLk{1C12}{12}\;\;\hLk{1C13}{13}\;\;\hLk{1C15}{15}\;\;\hLk{1C16}{16}\;\;\hLk{1C17}{17}\;\;\hLk{1C18}{18}\;\;\hLk{1C21}{21}\;\;\hLk{1C23}{23}\;\;\hLk{1C24}{24}}{[2]: 7, 8, 9, 24, 15, 16, 17, 18; [3]: 11, 12, 13; [4]: 21, 23.}
 
-\vspace{0pt}
+\vspace{2pt}
 
 \Anchor{1CNE5}\BulletPointX\NoteForSmall{Exe (5)}\;\;$\Cbb=\Rbb\oplus\Bra{c\i:c\in\Rbb}=\Bra{a+b\i:a,b\in\Rbb}$ if we let $\Fbb=\Rbb$ and $\i^2=-1.$\vspace{-4pt}
-\SepLine\pagebreak
+\SepLine
 
 \Anchor{1CNE6}\BulletPointX\NoteForSmall{Exe (6)}\;\;Supp $V$ is a vecsp over $\Rbb.$ Then $V$ is not a vecsp over $\Cbb.$ See also (9.A.16,17).\par
 \BulletPointX\AComm Supp $V$ is a vecsp over $\Cbb$ of dim $n.$ Then $V$ is also a vecsp over $\Rbb$ of dim $2n.$\vspace{-4pt}
 \SepLine
 
-\ProblemN{\Anchor{1C7}{7}}{
-	\TextA{Give a nonempty $U\subseteq\Rbb^2,$ $U$ is closd taking add invs and add, but is not a subsp of $\Rbb^2.$}
-}\BigPar{ $0\in U;\;v\in U\Rightarrow -v\in U.$ And operations on $U$ are the same as $\Rbb^2$. }
-Let $U=\Zbb^2$ or $\Qbb^2.$\vspace{-4pt}
-\SepLine
-
-\ProblemN{\Anchor{1C8}{8}}{
-	\TextA{Give a nonempty $U\subseteq\Rbb^2,$ $U$ is closd scalar multi, but is not a subsp of $\Rbb^2$.}
-}Let $U=\Bra{\Par{x,y}\in\Rbb^2:x=0\vee y=0}.$\par
-\SepLine
+\ProblemN[]{\Anchor{1C7}\Anchor{1C8}{7, 8}}{
+	\TextA{Give a non-trivial $U\subseteq\Rbb^2,$ $U$ is}
+	\PrePa\TextA{closd taking add invs and add, but is not a subsp of $\Rbb^2.$\hfill\tgnr\FontNorm Let $U=\Zbb^2$ or $\Qbb^2,$ with $0\in U.$}
+	\PrePb\TextA{scalar multi, but is not a subsp of $\Rbb^2.$\hfill\tgnr\FontNorm Let $U=\Bra{\Par{x,y}\in\Rbb^2:x=0\vee y=0}.$}
+}\SepLine
 
 \BulletPointX\Largesl{Supp $U,W,V_{\!1},V_{\!2},V_{\!3}$ are subsps of $V.$}\par
 \Anchor{1C15}\Anchor{1C16}\Onumber{15}\quad{$U+U\ni u+w\in U.$} \qquad \Onumber{16}\quad{$U+W\ni u+w=w+u\in W+U.$}\PfEnd
@@ -93,26 +85,22 @@ Let $U=\Zbb^2$ or $\Qbb^2.$\vspace{-4pt}
 \ProblemN{\Anchor{1C18}{18}}{
 	\TextA{Does the add on the subsps of $V$ have an add id? Which subsps have add invs?}
 }Supp $\Omega$ is the uniq add id.\par\quad
-(a) For any subsp $U$ of $V$. $\Omega\subseteq U+\Omega=U\Rightarrow\Omega\subseteq U$. Let $U=\zeroSubs,$ then $\Omega=\zeroSubs.$\par\quad
-(b) Now supp $W$ is an add inv of $U\Rightarrow U+W=\Omega$.\par\quad\Hb
-Note that $U+W\supseteq U,W\Rightarrow \Omega\supseteq U,W$. Thus $U=W=\Omega=\zeroSubs.$\PfEnd
+(a) For any subsp $U$ of $V,$ $\Omega\subseteq U+\Omega=U\Rightarrow\Omega\subseteq U$. Let $U=\zeroSubs,$ then $\Omega=\zeroSubs.$\par\quad
+(b) Supp $U+W=\Omega.$ Becs $U+W\supseteq U,W\Rightarrow \Omega\supseteq U,W\Rightarrow U=W=\Omega=\zeroSubs.$\PfEnd
 \SepLine
 
 \ProblemN{\Anchor{1C11}{11}}{
 	\TextA{Prove the intersec of every collec of subsps of $V$ is a subsp of $V$.}
-}Supp $\Bra{U_{\alpha}}{_{\alpha\in\Gamma}}$ is a collec of subsps of $V$; here $\Gamma$ is an index set.\vspace{2pt}\par\quad
-We show $\bigcap_{\alpha\in\Gamma}U_\alpha,$ which equals the set of vecs in each $U_\alpha,$ is a subsp of $V$.\par\vspace{4pt}\,
-$\begin{array}{l}$
-	(一) $0\in\bigcap_{\alpha\in\Gamma}U_\alpha.$ Nonempty.$\\ $
-	(二) $u,v\in\bigcap_{\alpha\in\Gamma}U_\alpha\Rightarrow u+v\in U_\alpha,\,\,\forall\alpha\in\Gamma\Rightarrow u+v\in\bigcap_{\alpha\in\Gamma}U_\alpha$. Closd add.$\\ $
-	(三) $u\in\bigcap_{\alpha\in\Gamma}U_\alpha,\lambda\in$ {\tgbf F} $\Rightarrow\lambda u\in U_\alpha,\,\,\forall\alpha\in\Gamma\Rightarrow\lambda u\in\bigcap_{\alpha\in\Gamma}U_\alpha$. Closd scalar multi.
-	$\end{array}$\par\vspace{6pt}\quad
+}Supp $\Bra{U_{\alpha}}{_{\alpha\in\Gamma}}$ is a collec of subsps of $V$; here $\Gamma$ is an index set.\vspace{2pt}\parSol{}
+We show $\bigcap_{\alpha\in\Gamma}U_\alpha,$ which equals the set of vecs in each $U_\alpha,$ is a subsp of $V$.\vspace{2pt}\parSol{}
+(a) $0\in\bigcap_{\alpha\in\Gamma}U_\alpha.$ Nonempty.\parSol{}
+(b) $u,v\in\bigcap_{\alpha\in\Gamma}U_\alpha\Rightarrow u+v\in U_\alpha,\,\,\forall\alpha\in\Gamma\Rightarrow u+v\in\bigcap_{\alpha\in\Gamma}U_\alpha$. Closd add.\parSol{}
+(c) $u\in\bigcap_{\alpha\in\Gamma}U_\alpha,\lambda\in\Fbb\Rightarrow\lambda u\in U_\alpha,\,\,\forall\alpha\in\Gamma\Rightarrow\lambda u\in\bigcap_{\alpha\in\Gamma}U_\alpha$. Closd scalar multi.\vspace{4pt}\parSol{}
 Thus $\bigcap_{\alpha\in\Gamma}U_\alpha$ is nonempty subset of $V$ that is closd add and scalar multi.\PfEnd
 \SepLine
 
-\Anchor{1CN1.45}\BulletPointX\NoteForSmall{[1.45]}\;\;If $\Fbb=\Bra{0,1}.$ Prove if $U+W$ is a direct sum, then $U\cap W=\zeroSubs.$\TextB{}
-Becs $\forall v\in U\cap W,\exists\,!\,\Par{u,w}\in U\times W,v=u+w.$\TextB{}
-If $U\cap W\neq\zeroSubs,$ then $\Par{u,w}$ can be $\Par{v,0}$ or $\Par{0,v},$ ctradic the uniqnes.\PfEnd\vspace{-2pt}
+\Anchor{1CN1.45}\BulletPointX\NoteForSmall{[1.45]}\;\;Another proof: Supp $\forall v\in V,\exists\,!\,\Par{u,w}\in U\times W,v=u+w.$\TextB{}
+\Blind{\NoteForSmall{[1.45]}\;\;}Asum non0 $v\in U\cap W.$ Then the $\Par{u,w}=\Par{v,0}$ or $\Par{0,v},$ ctradic the uniqnes.\PfEnd\vspace{-2pt}
 \SepLine
 
 \Anchor{1CT1}\ProblemBX[]{\TipsN{1}}{
@@ -139,7 +127,7 @@ And $\Fbb^5\ni\Par{x,y,z,w,u}\Rightarrow\Par{x,y,x+y,x-y,2x}+\Par{0,0,z-x-y,w-x-
 Let $W_1=\Bra{\Par{0,0,z,0,0}\in\Fbb^5}\Rightarrow W_1\cap U=\zeroSubs.$ \hfill Now $U\oplus W_1=\Bra{\Par{x,y,z,x-y,2x}\in\Fbb^5}=U_1$.\par\quad
 Let $W_2=\Bra{\Par{0,0,0,w,0}\in\Fbb^5}\Rightarrow W_2\cap U_1=\zeroSubs.$ \hfill Now $U_1\oplus W_2=\Bra{\Par{x,y,z,w,2x}\in\Fbb^5}=U_2$.\par\quad
 Let $W_3=\Bra{\Par{0,0,0,0,u}\in\Fbb^5}\Rightarrow W_3\cap U_2=\zeroSubs.$ \hfill Now $U_2\oplus W_3=\Bra{\Par{x,y,z,w,u}\in\Fbb^5}=U_3$.\par\quad
-Thus $\Fbb^5=\BigPar{\Par{U\oplus W_1}\oplus W_2}\oplus W_3.$\PfEnd
+Thus $\Fbb^5=\Sbra{\Par{U\oplus W_1}\oplus W_2}\oplus W_3.$\PfEnd
 \SepLine
 
 \ProblemN{\Anchor{1C23}{23}}{
@@ -149,7 +137,7 @@ Thus $\Fbb^5=\BigPar{\Par{U\oplus W_1}\oplus W_2}\oplus W_3.$\PfEnd
 
 \Anchor{1CNC}\BulletPointX\NoteForSmall{\Large $“\complement_V U \cup \zeroSubs”$}\;\;$“\complement_V U \cup \zeroSubs”$ is supposed to be a subsp $W$ suth $V=U\oplus W$.\TextB{\vspace{3pt}}
 But if we let $u\in U\nonzero$ and $w\in W\nonzero$, then $\MathRightBrace{l}{w\in\complement_V U \cup \zeroSubs\\ u\pm w\in\complement_V U \cup \zeroSubs }\Rightarrow u\in\complement_V U \cup \zeroSubs.$ Ctradic.\vspace{3pt}\TextB{}
-To fix this, {\FontLarge denote the set $\Bra{W_{\hspace{-1pt}1},W_{\hspace{-1pt}2},\cdots}$ by $\mathcal{S}_{\!V} U$,} {\small where each $W_{\!i}\oplus U=V.$} {\normalsize See also in (1.C.23).}
+To fix this, {\FontLarge denote the set $\Bra{W_{\hspace{-1pt}1},W_{\hspace{-1pt}2},\cdots}$ by $\mathcal{S}_{\!V} U$,} {\small where each $W_{\!i}\oplus U=V.$}
 \SepLine
 
 \Anchor{1CT2}\ProblemBX{\TipsN{2}}{
@@ -172,7 +160,13 @@ If $W\neq\zeroSubs,$ then $V_{\!1}\oplus U\subsetneq\Par{V_{\!1}\oplus U}\oplus 
 }\Sbra{ Using notas in Chapter 2. } \;Let $B_X=\Par{e_1},B_U=\Par{e_2-e_1},B_Y=\Par{\,},B_W=\Par{e_2}.$
 \SepLine
 
-\Anchor{1CT3}\ProblemBX{\TipsN{4}}{
+\Anchor{1CT3}\ProblemBX{\TipsN{3}}{
+	\TextA{Supp $V=X\oplus Y,$ and $Z$ is a subsp of $V.$ Show $X\subseteq Z\Rightarrow Z=X\oplus\Par{Y\cap Z}.$}
+}$\forall z\in Z,\exists\,!\,\Par{x,y}\in X\times Y,\,z=x+y.$\parSol{}
+Becs $x\in Z\Rightarrow z-x=y\in Z\Rightarrow z\in X+\Par{Y\cap Z}.$ 又 $X\cap\Par{Y\cap Z}\subseteq X\cap Y.$\PfEnd
+\SepLine
+
+\Anchor{1CT4}\ProblemBX{\TipsN{4}}{
 	\TextA{Let $V=U+W,\;I=U\cap W,\,U=I\oplus X,\,W=I\oplus Y.$ Prove $V=I\oplus\Par{X\oplus Y}.$}
 }We show $X\cap Y=U\cap Y=W\cap X=\zeroSubs$ by ctradic.\parSol{}
 $X\cap Y=\Delta\neq\zeroSubs\Rightarrow I=U\cap W\supseteq\Delta\Rightarrow I\cap X\neq\zeroSubs, I\cap Y\neq\zeroSubs.$\parSol{}
@@ -180,7 +174,7 @@ $U\cap Y=\Delta\neq\zeroSubs\Rightarrow I=U\cap W\supseteq\Delta\Rightarrow I\ca
 Thus $I+\Par{X+Y}=\Par{I\oplus X}\oplus Y=I\oplus\Par{X\oplus Y}.$\parSol{\vspace{2pt}}
 Now we show $V=I+\Par{X+Y}.$ \;$\forall v\in V,v=u+w,\exists\,\Par{u,w}\in U\times W$\parSol{}
 $\Rightarrow\exists\,\Par{i_u,x_u}\in I\times X,\,\Par{i_w,y_w}\in I\times Y,\;v=\Par{i_u+i_w}+x_u+y_w\in I+\Par{X+Y}.$\PfEnd
-\SepLine
+\SepLine\pagebreak
 
 \ProblemN{\Anchor{1C12}{12}}{
 	\TextA{Supp $U,W$ are subsps of $V.$ Prove $U\cup W$ is a subsp of $V\Longleftrightarrow U\subseteq W$ or $W\subseteq U$.}
@@ -194,25 +188,23 @@ Ctradic asum.$\\\;}$\PfEnd[-14pt]
 \SepLine
 
 \ProblemN{\Anchor{1C13}{13}}{
-	\TextA{Prove the union of three subsps of $V$ is a subsp of $V$}
-	\TextA{if and only if one of the subsps contains the other two.}
+	\TextA{Supp $U_1,U_2,U_3$ are subsps of $V,$ and the union $U_1\cup U_2\cup U_3=\mathcal{U}$ is a subsp of $V.$}
+	\TextA{Prove one of the subsps contains the other two.}
 	\TextA{\large This exe is not true if we \uline{replace $\Fbb$ with a field containing only two elems.}}
-}Supp $U_1,U_2,U_3$ are subsps of $V$. Denote $U_1\cup U_2\cup U_3$ by $\mathcal{U}.$\par\quad
-(a) Supp one of the subsps contains the other two. Then $\mathcal{U}=U_1,U_2$ or $U_3$ is a subsp of $V.$\par\quad
-(b) Supp $U_1\cup U_2\cup U_3$ is a subsp of $V$. \NOTICE that, $U\cup W=V$ is vecsp $\Rightarrow U,W$ are subsps of $V.$\par\quad\Hb
-Thus the literal trick is invalid: $\Par{A\cup B}\cup\Par{B\cup C}=\Par{A\cup C}\cup\Par{B\cup C}=\Par{A\cup B}\cup\Par{A\cup C}.$\vspace{2pt}\par\quad\Hb
-(I) If any $U_j$ is contained in the union of the other two, say $U_1\subseteq U_2\cup U_3,$ then $\mathcal{U}=U_2\cup U_3.$\par\quad\Hb\HI
-By applying Exe (12) we conclude that one $U_j$ contains the other two. Thus done.\vspace{4pt}\par\quad\Hb\EndI
-(II) \envFontLarge{Asum no one is contained in the union of other two, and no one contains the other two.}\par\quad\Hb\HII
-{\vspace{4pt}Say $U_1\not\subseteq U_2\cup U_3$ and $U_1\not\supseteq U_2\cup U_3.$}\par\quad\Hb
-{\Large\vspace{4pt}$\exists\,u\in U_1\wedge u\not\in U_2\cup U_3;\;v\in U_2\cup U_3\wedge v\not\in U_1.$ Let $W=\Bra{v+\lambda u:\lambda\in\Fbb}\,\subseteq\mathcal{U}.$}\par\quad\Hb
-{\Large\vspace{4pt}Note that $W\cap U_1=\emptySet,$ for if any $v+\lambda u\in W\cap U_1$ then $v+\lambda u-\lambda u=v\in U_1$.}\par\quad\Hb
-{\Large\vspace{4pt}Now $W\subseteq U_1\cup U_2\cup U_3\Rightarrow W\subseteq U_2\cup U_3.$ $\forall v+\lambda u\in W,v+\lambda u\in U_i,i=2,3.$}\par\quad\Hb
-{\Large\vspace{4pt}If $U_2\subseteq U_3$ or $U_2\supseteq U_3,$ then $\mathcal{U}=U_1\cup U_i,i=2,3.$} {By Exe (12) done.}\par\quad\Hb
-{\Large\vspace{4pt}Othws, {\FontNorm both $U_2,U_3\neq\zeroSubs.$} Becs \tgsl$W\subseteq U_2\cup U_3$ has at least three disti elems.}\par\quad\Hb
-{\Large\vspace{4pt}There must be some $U_i$ that contains at least two disti elems of $W.$}\par\quad\Hb
-{\Large$\exists\,\lambda_1\neq\lambda_2,\;v+\lambda_1 u$ \,and \,$v+\lambda_2 u$ \,both in $U_2$ or $U_3\Rightarrow u\in U_2\cap U_3,$ ctradic.}\FontNorm\PfEnd\vspace{8pt}\quad
-\uline{\AExa Let $\Fbb=\Zbb_2.$} $U_1=\Bra{u,0},U_2=\Bra{v,0},U_3=\Bra{v+u,0}.$ While $\mathcal{U}=\Bra{0,u,v,v+u}$ is a subsp.
+}\uline{\AExa Let $\Fbb=\Zbb_2.$} $U_1=\Bra{u,0},U_2=\Bra{v,0},U_3=\Bra{v+u,0}.$ While $\mathcal{U}=\Bra{0,u,v,v+u}$ is a subsp.\vspace{4pt}\par\quad
+\NOTICE that, $U\cup W=V$ is vecsp $\notRightarrow U,W$ are subsps of $V.$\par\quad
+This trick is invalid: $\Par{A\cup B}\cup\Par{B\cup C}=\Par{A\cup C}\cup\Par{B\cup C}=\Par{A\cup B}\cup\Par{A\cup C}.$\vspace{2pt}\par\quad
+(I) If any $U_j$ is contained in the union of the other two, say $U_1\subseteq U_2\cup U_3,$ then $\mathcal{U}=U_2\cup U_3.$\par\quad\HI
+By applying Exe (12) we conclude that one $U_j$ contains the other two. Thus done.\vspace{2pt}\par\quad\EndI
+(II) \envFontLarge{Asum no one is contained in the union of other two, and no one contains the other two.}\par\quad\HII
+{\vspace{4pt}Say $U_1\not\subseteq U_2\cup U_3$ and $U_1\not\supseteq U_2\cup U_3.$}\par\quad
+{\Large\vspace{4pt}$\exists\,u\in U_1\wedge u\not\in U_2\cup U_3;\;v\in U_2\cup U_3\wedge v\not\in U_1.$ Let $W=\Bra{v+\lambda u:\lambda\in\Fbb}\,\subseteq\mathcal{U}.$}\par\quad
+{\Large\vspace{4pt}Note that $W\cap U_1=\emptySet,$ for if any $v+\lambda u\in W\cap U_1$ then $v+\lambda u-\lambda u=v\in U_1$.}\par\quad
+{\Large\vspace{4pt}Now $W\subseteq U_1\cup U_2\cup U_3\Rightarrow W\subseteq U_2\cup U_3.$ $\forall v+\lambda u\in W,v+\lambda u\in U_i,i=2,3.$}\par\quad
+{\Large\vspace{4pt}If $U_2\subseteq U_3$ or $U_2\supseteq U_3,$ then $\mathcal{U}=U_1\cup U_i,i=2,3.$} {By Exe (12) done.}\par\quad
+{\Large\vspace{4pt}Othws, {\FontNorm both $U_2,U_3\neq\zeroSubs.$} Becs \tgsl$W\subseteq U_2\cup U_3$ has at least three disti elems.}\par\quad
+{\Large\vspace{4pt}There must be some $U_i$ that contains at least two disti elems of $W.$}\par\quad
+{\Large$\exists\,\lambda_1\neq\lambda_2,\;v+\lambda_1 u$ \,and \,$v+\lambda_2 u$ \,both in $U_2$ or $U_3\Rightarrow u\in U_2\cap U_3,$ ctradic.}\FontNorm\PfEnd
 \SepLine
 
 \ChEnd\pagebreak
@@ -476,11 +468,11 @@ For exa, $X=\Bra{\Par{x,0}\in\Rbb^2:x\in\Rbb},Y=\Bra{\Par{0,y}\in\Rbb^2:y\in\Rbb
 and the wrong formual holds. Simlr for $Y\subseteq Z,X\subseteq Z,$ and $X,Y\subseteq Z.$\par\vspace{4pt}\quad
 However, it's true that $\Par{X+Y}${\Large${}\cap{}$}$Z\supseteq\Par{X\cap Z}+\Par{Y\cap Z}=\BigPar{X+\Par{Y\cap Z}}${\Large${}\cap{}$}$Z.$\par\quad
 Becs $\Par{X\cap Z}+\Par{Y\cap Z}\ni v=x+y=z_1+z_2\in\BigPar{X+\Par{Y\cap Z}}${\Large${}\cap{}$}$Z\Rightarrow v\in\Par{X+Y}${\Large${}\cap{}$}$Z.$\par\quad
-Where $\exists\,x=z_1\in X\cap Z,y=z_2\in Y\cap Z.$\par\vspace{2pt}\quad
-\AComm $\Dim\BigPar{\Par{X+Y}\cap Z}\geqslant\Dim\Par{X\cap Z}+\Dim\Par{Y\cap Z}-\Dim\Par{X\cap Y\cap Z}.$\par\vspace{8pt}
-\BulletPointX\ACoro $\Dim\Par{V_{\!1}+V_{\!2}+V_{\!3}}=\dim V_{\!1}+\dim V_{\!2}+\dim V_{\!3}$\parCor{\IndentB}
-$\Blind{\Dim\Par{V_{\!1}+V_{\!2}+V_{\!3}}}{}-\Sbra{\Dim\Par{V_{\!1}\cap V_{\!2}}+\Dim\Par{V_{\!1}\cap V_{\!3}}+\Dim\Par{V_{\!2}\cap V_{\!3}}}\Big/3$\parCor{\IndentB}
-$\Blind{\Dim\Par{V_{\!1}+V_{\!2}+V_{\!3}}}{}-\Sbra{\Dim\BigPar{\Par{V_{\!1}+V_{\!2}}\cap V_{\!3}}+\Dim\BigPar{\Par{V_{\!1}+V_{\!3}}\cap V_{\!2}}+\Dim\BigPar{\Par{V_{\!2}+V_{\!3}}\cap V_{\!1}}}\Big/3.$
+Where $\exists\,x=z_1\in X\cap Z,\:y=z_2\in Y\cap Z.$\par\vspace{2pt}\quad
+\AComm $\Dim\BigPar{\Par{X+Y}\cap Z}\geqslant\Dim\Par{X\cap Z}+\Dim\Par{Y\cap Z}-\Dim\Par{X\cap Y\cap Z}.$%\par\vspace{8pt}
+%\BulletPointX\ACoro $\Dim\Par{V_{\!1}+V_{\!2}+V_{\!3}}=\dim V_{\!1}+\dim V_{\!2}+\dim V_{\!3}$\parCor{\IndentB}
+%$\Blind{\Dim\Par{V_{\!1}+V_{\!2}+V_{\!3}}}{}-\Sbra{\Dim\Par{V_{\!1}\cap V_{\!2}}+\Dim\Par{V_{\!1}\cap V_{\!3}}+\Dim\Par{V_{\!2}\cap V_{\!3}}}\Big/3$\parCor{\IndentB}
+%$\Blind{\Dim\Par{V_{\!1}+V_{\!2}+V_{\!3}}}{}-\Sbra{\Dim\BigPar{\Par{V_{\!1}+V_{\!2}}\cap V_{\!3}}+\Dim\BigPar{\Par{V_{\!1}+V_{\!3}}\cap V_{\!2}}+\Dim\BigPar{\Par{V_{\!2}+V_{\!3}}\cap V_{\!1}}}\Big/3.$
 \SepLine
 
 \ProblemBX[]{\Tips}{
@@ -968,8 +960,8 @@ Becs (a) \uline{$\range T\mmid_{\null ST}=\range T\cap\null S=\null S\mmid_{\ran
 
 \ProblemN{\Anchor{3B23}{23}}{
 	\TextA{Supp $V$ is finide, $S\in\Lm{V,W},T\in\Lm{U,V}$.}
-	\TextA{Prove $\dim\range ST\leqslant\min\!\Bra{\dim \range S, \dim\range T}$.}
-	\AComm If $\dim V=\dim U.$ Then $\dim\null ST\geqslant\max\!\Bra{\dim\null S,\dim\null T}.$\TextA{}\vspace{2pt}
+	\TextA{Prove $\dim\range ST\leqslant\min\!\Bra{{\dim \range S, \dim\range T}}$.}
+	\AComm If $\dim V=\dim U.$ Then $\dim\null ST\geqslant\max\!\Bra{{\dim\null S,\dim\null T}}.$\TextA{}\vspace{2pt}
 }\NOTICE that \uline{$\range ST=\Bra{Sv:v\in\range T}=\range S\mmid_{\range T}.$}\parSol{}
 Let $\range ST=\Span[\BigPar]{Su_1,\dots,Su_{\dim\range T}},$ where $B_{\range T}=\BigPar{u_1,\dots,u_{\dim\range T}}.$\parSol{}
 $\dim\range ST\leqslant \dim\range T$
@@ -988,7 +980,7 @@ $\dim\range ST\leqslant \dim\range T$
 }Note that $\dim\range TS\leqslant\min\!\BigBra{\!\dim\range T,\dim\range S}.$ We prove by ctradic.\par\vspace{1pt}\quad
 %(a) $\dim\range TS\leqslant\min\!\Bra{\overbrace{\dim \range S}^{5\,-\,\dim\null T}, \overbrace{\dim\range T}^{5\,-\,\dim\null S}}.$\par\quad\Ha
 %We show $\dim\range TS\leqslant 2$ by ctradic. Asum $\dim\range TS\geqslant 3$.\par\quad\Ha
-%Then $\min\!\Bra{5-\dim\null T,5-\dim\null S}\geqslant 3\Rightarrow\max\!\Bra{\dim\null T,\dim\null S}\leqslant 2$.\par\quad\Ha
+%Then $\min\!\Bra{5-\dim\null T,5-\dim\null S}\geqslant 3\Rightarrow\max\!\Bra{{\dim\null T,\dim\null S}}\leqslant 2$.\par\quad\Ha
 %又 $\dim\null ST=5\leqslant\dim\null S+\dim\null T\leqslant 4.$ Ctradic.\vspace{6pt}\par\quad\Ha
 %\Or $\MathRightBrace{l}{\dim\null S=5-\dim\range S\\ \dim\range TS\leqslant\dim\range S}\Rightarrow\dim\null S\leqslant 5-\dim\range TS.$\par\vspace{2pt}\quad\Ha
 %And $ST=0\Rightarrow\range T\subseteq\null S\Rightarrow\dim\range TS\leqslant\dim\range T\leqslant\dim\null S.$\PfEnd\vspace{6pt}\quad
@@ -1001,7 +993,7 @@ $\dim\range TS\leqslant\dim\range T\leqslant\dim\null S\leqslant n-\dim\range TS
 We show $\dim\null TS\geqslant\Big\lceil${\Large$\frac{\,n\,}{2}$}$\Big\rceil.$ Note that $\dim\null S+\dim\null T\geqslant n.$\par\quad
 $\dim\null S+\dim\null T\mmid_{\range S}=\dim\null TS.$ \;If $\dim\null S\geqslant\Big\lceil${\Large$\frac{\,n\,}{2}$}$\Big\rceil.$ Then done.\par\vspace{1pt}\quad
 Othws, $\dim\null S\leqslant\Big\lceil${\Large$\frac{\,n\,}{2}$}$\Big\rceil-1\Rightarrow\dim\null T\geqslant n-\dim\null S\geqslant n-\Big\lceil${\Large$\frac{\,n\,}{2}$}$\Big\rceil+1=\Big\lfloor${\Large$\frac{\,n\,}{2}$}$\Big\rfloor+1\geqslant\Big\lceil${\Large$\frac{\,n\,}{2}$}$\Big\rceil.$\par\vspace{2pt}\quad
-Thus $\dim\null TS\geqslant\max\!\Bra{\dim\null S,\dim\null T}=\Big\lceil${\Large$\frac{\,n\,}{2}$}$\Big\rceil.$\PfEnd\vspace{4pt}\quad
+Thus $\dim\null TS\geqslant\max\!\Bra{{\dim\null S,\dim\null T}}=\Big\lceil${\Large$\frac{\,n\,}{2}$}$\Big\rceil.$\PfEnd\vspace{4pt}\quad
 \AExa Define $T: \; v_1\mapsto 0, \;\;\, v_2\mapsto 0, \;\;\; v_i\mapsto v_i\;;$ \;\; $S: \; v_1\mapsto v_4, \; v_2\mapsto v_5, \;\; v_i\mapsto 0\;;\;\; i=3,4,5.$\par\vspace{-2pt}
 \SepLine
 
@@ -2855,12 +2847,12 @@ Inje: Each $f\Par{x_k}=0\Rightarrow f+U=0.$ \;Let $S=T\circ\pi\Rightarrow\tilde{
 \Anchor{3F7}\ProblemBnoor{3.F.7}{
 	\TextA{Show the dual bss of $\Par{1, x,\dots,x^m}$ of $\PoR{m}$ is $\Par{\varphi_0,\varphi_1,\dots,\varphi_m}$, where {\FontNorm $\varphi_k\Par{p}=\Frac{p^{\SmallPar{k}}\Par{0}}{k!}$.}}
 %	\TextB{{\FontNorm Here $p{^{\SmallPar{k}}}$ denotes the $k^{th}$ deri of $p$, with the understanding that the $0^{th}$ deri of $p$ is $p$.}\vspace{-2pt}}
-}{\tgsl\normalsize The uniqnes of dual bss is guaranteed by [3.5].}\vspace{2pt}\par\quad
+}{\tgsl\normalsize The uniqnes of dual bss is guaranteed by [3.5].}\vspace{2pt}\parSol{}
 For $j,k\in\Nbb,\:\Par{x^{j}}{^{\SmallPar{k}}}=\left\{\begin{array}{l}j\Par{j-1}\dots\Par{j-k+1}\cdot x^{\SmallPar{j-k}}\,,\quad j \geqslant k.\\j\Par{j-1}\dots\Par{j-j+1}=j!\hfill j=k.\\0,\hfill j \leqslant k.\end{array}\right|\hspace{4pt}\Rightarrow\Par{x^{j}}{^{\SmallPar{k}}}\Par{0}=\MathLeftBrace{l}{0\,\,\,,\,\hspace{5.2pt}j\neq k. \\ k!\,\,,\hspace{6pt}j=k.}$\PfEnd\vspace{8pt}\Anchor{3F8}
 %{\Large$\envFontSmall[\footnotesize]\frac{p^{\SmallPar[0pt]{k}}\Par[0pt]{0}}{k!}$}
-\AExa By [2.C.10], $B_m=\BigPar{1,7x-5,\dots,\Par{7x-5}{^m}}$ is a bss of $\PoR{m}$. Let each $\varphi_k={}${\Large\envFontSmall[\footnotesize]$\frac{p^{\SmallPar{k}}\Par{5\text{\large/}\hspace{0.5pt}7}}{7\hspace{1pt}\cdot\,k!}$}.\par\vspace{2pt}
+\AExa By [2.C.10], $B_m=\BigBigPar{1,7x-5,\dots,\Par{7x-5}{^m}}$ is a bss of $\PoR{m}$. Let each $\varphi_k={}${\Large\envFontSmall[\footnotesize]$\frac{p^{\SmallPar{k}}\Par{5\text{\large/}\hspace{0.5pt}7}}{7\hspace{1pt}\cdot\,k!}$}.\par\vspace{2pt}
 \SepLine
-\ChEnd
+\ChEnd\pagebreak
 
 \ChDecl{Ch4O}{4}{}%\orMode{\hLk{4O5}{5}\;\;\hLk{4O6}{6}\;\;\hLk{4O7}{7}\;\;\hLk{4O8}{8}\;\;\hLk{4O9}{9}\;\;\hLk{4O10}{10}\;\;\hLk{4O11}{11}\;\;|\;\;\hLk{4O4e2}{4E:\;\;2}\;\;\hLk{4O4e3}{3}\;\;\hLk{4O4e13}{13}}{[1]: (4E 2), 5; [2]: 6, 7, 8, 11; [3]: 9, 10, (4E 13).}
 
@@ -3065,7 +3057,14 @@ Hence $\Par{pq}{^{\SmallPar{k}}}=\mathC_{k}^0{p{^{\SmallPar{0}}}q{^{\SmallPar{k}
 }Let $p=rq,q=sp\Rightarrow p=rsp\Rightarrow r\Par{z}s\Par{z}=1$ for all $z$ with $p\Par{z}\neq 0,$ while such $z$ is fini.\parSol{}
 Thus $\Par{rs}\Par{z}=1$ for infily many $z,$ so for all $z.$ Now $\deg rs=1=\deg r+\deg s.$\PfEnd
 \SepLine
-\ChEnd\pagebreak
+\ChEnd
+
+\vfill
+{\small
+下面第5章中，3e和4e差距过大。我认为是因为4e将原来3e第8章的极小多项式和第2章线性无关最小性和第4章的多项式的原理结合，以极小多项式为工具重写了第5章几个核心定理，并引入一些结论承接读者一些很自然的想法，让第5章的定理和习题更加富有动机和系统性。\par\vspace{2pt}
+我编撰这篇笔记，主要面向3e纸质书的读者。不知为何，也许是字号的原因，我即便拿到4e纸质书也无法像先前用3e纸质书那样投入，于是我只好调换3e的学习顺序来兼顾4e的习题。所以我决定将3e第8章和9.A节提前到第5章后（事实上前章我已经将部分9.A的习题前置了，这是因为4e也将9.A拆分散落到前章中），对应到4e只有第8章前三节。3e第8章和9.A节个别涉及第6、7章的习题，会塞入到第6、7章的笔记中。\par\vspace{8pt}
+}
+\pagebreak
 
 \ChDecl{Ch5A}{5.A}{}%\orMode{\hLk{5A2}{2}\;\;\hLk{5A3}{3}\;\;\hLk{5A6}{6}\;\;\hLk{5A10}{10}\;\;\hLk{5A11}{11}\;\;\hLk{5A12}{12}\;\;\hLk{5A13}{13}\;\;\hLk{5A14}{14}\;\;\hLk{5A15}{15}\;\;\hLk{5A16}{16}\;\;\hLk{5A18}{18}\;\;\hLk{5A19}{19}\;\;\hLk{5A20}{20}\;\;\hLk{5A21}{21}\;\;\hLk{5A23}{23}\;\;\hLk{5A24}{24}\;\;\hLk{5A26}{26}\;\;\hLk{5A27}{27}\;\;\hLk{5A28}{28}$\\[-4pt]$\hLk{5A29}{29}\;\;\hLk{5A32}{32}\;\;\hLk{5A33}{33}\;\;\hLk{5A34}{34}\;\;\hLk{5A35}{35}\;\;\hLk{5A36}{36}\;\;|\;\;\hLk{5A2e20}{2E:\;20}\;\;|\;\;\hLk{5A4e8}{4E:\;\;8}\;\;\hLk{5A4e11}{11}\;\;\hLk{5A4e15}{15}\;\;\hLk{5A4e16}{16}\;\;\hLk{5A4e17}{17}\;\;\hLk{5A4e33}{33}\;\;\hLk{5A4e36}{36}\;\;\hLk{5A4e37}{37}\;\;\hLk{5A4e39}{39}}[-40pt]{[1]: 2, 3, 6; [2]: 7, 10, 18, 19, 20, 11, 12; [3]: 13, (4E 11), (4E 8), 14, 15, (4E 15), 21;$\\$[4]: (4E 17), 16, 23, (2E 20), (4E 37), 26, 29; [5]: 32, (4E 36), 35, 36, 24; [6]: (4E 16), 27, 28, (4E 39).}
 
@@ -3507,7 +3506,7 @@ Becs $U$ invard $\Par{T-\lambda I}.$ Now $u\in U\Rightarrow\Par{T-\lambda I}{u}\
 
 {\normalsize
 (I)覆盖本节4e全部、上节4e末、3e前半部分与之相关的所有习题。\par\HI
-注意：本节4e和3e的8.C节、9.A节有交集，许多略去的习题和注解可以在3e这两节找到。\par
+注意：本节4e和3e的8.C节、9.A节有交集，许多略去的习题和注解可以在那两节3e找到。\par
 (II)覆盖本节3e后半部分「上三角矩阵」和下节4e；并且，下节还会覆盖下下节4e。\par\vspace{2pt}
 }\vspace{10pt}
 
@@ -3606,7 +3605,7 @@ Becs each $f\Par{\lambda_n}=\dim\Range\Par{T-\lambda_n I}=\dim V\neq f\Par{\lamb
 \Anchor{5A4e43}\ProblemN{\Anchor{5BI19}{19}}{
 	\TextA{Supp $V$ is finide, $\dim V>1,T\in\Lm{V}.$ Prove $\Bra{\,p\Par{T}:p\in\PoFi}\neq\Lm{V}.$}
 }If $\forall S\in\Lm{V},\exists\,p\in\PoFi,S=p\Par{T}.$ Then by [5.20], $\forall S_1,S_2\in\Lm{V},S_1S_2=S_2S_1.$\parSol{}
-Note that $\dim V\geqslant 2.$ By (3.A.14), $\exists\,S_1,S_2\in\Lm{V},S_1S_2\neq S_2S_1.$ Ctradic.\PfEnd
+Note that $\dim V\geqslant 2.$ By (3.A.14) \OR (3.D.16 \OR 4E 3.A.11).\PfEnd
 \SepLine
 
 %\Anchor{5BIN4e5.22}\ProblemBX{\NoteForSmall{[4E 5.22]}}{
@@ -3798,7 +3797,7 @@ Now $T^k\Par{T^{-k}}=I=b_0 T^k+b_1 T^{k-1}+\dots+b_{k-1}T\Rightarrow T^j\in\Span
 %\Anchor{5BI4e20}\Anchor{5BI4e24}\BulletPointX\ACoro Supp $\alpha_1,\dots,\alpha_n$ are all the disti eigvals of $T.$\parCor{\IndentB}
 %\ANote the min of $T$ is a multi of, but not equal to, $\Par{z-\alpha_1}\cdots\Par{z-\alpha_n}.$\parCor{\IndentB}
 %Let $q\Par{z}=\Par{z-\alpha_1}{^{\dim V-\SmallPar{n-1}}}\cdots\Par{z-\alpha_n}{^{\dim V-\SmallPar{n-1}}}.$ Then $q$ is a multi of the ch.\parCor{\IndentB}
-%\!\BigSbra{ Becs $\dim V>n$ and $n-1\geqslant 0,\:\:n\times\Sbra{\dim V-\Par{n-1}}>\dim V$. }\parCor{\IndentB}
+%\!\BigSbra{ Becs $\dim V>n$ and $n-1\geqslant 0,\:\:n\times\Sbra{{\dim V-\Par{n-1}}}>\dim V$. }\parCor{\IndentB}
 %Form for ch: $\Par{z-\alpha_1}{^{\gamma_1}}\cdots\Par{z-\alpha_n}{^{\gamma_n}},$ where $\gamma_1+\dots+\gamma_n=\dim V.$\parCor{\IndentB}
 %Form for min: $\Par{z-\alpha_1}{^{\delta_1}}\cdots\Par{z-\alpha_n}{^{\delta_n}},$ where $0\leqslant \delta_1+\dots+\delta_n\leqslant \dim V.$
 %\SepLine
@@ -3991,16 +3990,28 @@ By (3.B.12), $\range T=\Bra{Tu:u\in U}=\BigBra{\sum_{k=1}^m\lambda_k\Par{a_{1,k}
 \AExa Convly not true. Define the inv $T\in\Lm{\Rbb^2}:\Par{x,y}\mapsto\Par{{-y,x}}.$ No eigvals.
 \SepLine
 
+\Anchor{5CL1}\ProblemN{L1}{
+	\TextA{Supp $T\in\Lm{V},\alpha,\beta\in\Fbb$ and $\alpha\neq\beta.$ Prove $\Null\Par{T-\alpha I}\subseteq\Range\Par{T-\beta I}.$}
+}$\forall v\in\Null\Par{T-\alpha I},Tv=\alpha v\Rightarrow\Par{T-\beta I}\Sbra{v\Big/\Par{\alpha-\beta}}=v\in\Range\Par{T-\beta I}.$\PfEnd
+\SepLine
+
 \Anchor{5C5}\Anchor{5C4e5}\ProblemN{5}{
 	\TextA{Supp $\Fbb=\Cbb,$ $V$ is finide, and $T\in\Lm{V}.$}
 	\TextA{Supp $V=\Null\Par{T-\lambda I}\oplus\Range\Par{T-\lambda I}$ for all $\lambda\in\Cbb.$ Prove $T$ is diag.}
-}(i) $\dim V=1.$ Immed. (ii) $\dim V>1.$ Asum the result holds for vecsp of smaller dim.\parSol{}
+}(i) $\dim V=1.$ Immed. (ii) $\dim V>1.$ Asum it holds for vecsps of smaller dim.\parSol{}
 $\exists$ eigval $\lambda_0\Rightarrow U=\Range\Par{T-\lambda_0I}$ invard $T\Rightarrow U=\Null\Par{T\mmid_U-\lambda I}\oplus\Range\Par{T\mmid_U-\lambda I}.$\parSol{}
 While $V=E\Par{\lambda_0,T}\oplus U\Rightarrow\dim U<\dim V.$ By asum, $T\mmid_U$ is diag wrto $B_U$ of eigvecs.\PfEnd\vspace{4pt}\par\quad
 \Or Supp $T$ not diag. We show $\exists\,\lambda\in\Cbb,\,\Null\Par{T-\lambda I}\cap\Range\Par{T-\lambda I}\neq\zeroSubs.$\par\quad
 Let the min of $T$ be $p\Par{z}=\Par{z-\lambda_1}{^{\alpha_1}}\cdots\Par{z-\lambda_m}{^{\alpha_m}},$ where each $\alpha_k\geqslant 1$ and $\exists\,\alpha_j>1.$\par\quad
 Let $q\Par{z}\Par{z-\lambda_j}=p\Par{z}\Rightarrow 0=p\Par{T}=\Par{T-\lambda_j}q\Par{T}\Rightarrow\rangep q\Par{T}\subseteq\Null\Par{T-\lambda_jI}.$\par\quad
-Let $q\Par{z}=\Par{z-\lambda_j}s\Par{z}\Rightarrow\rangep q\Par{T}\subseteq\Range\Par{T-\lambda_jI}.$ \,Note that $q\Par{T}\neq0.$\PfEnd
+Let $q\Par{z}=\Par{z-\lambda_j}s\Par{z}\Rightarrow\rangep q\Par{T}\subseteq\Range\Par{T-\lambda_jI}.$ \,Note that $q\Par{T}\neq0.$\PfEnd\vspace{6pt}\quad
+\Or Let $\lambda_1,\dots,\lambda_m$ be disti eigvals. Now $V=\Null\Par{T-\lambda_kI}\oplus\Range\Par{T-\lambda_kI}$ for each $\lambda_k.$\par\quad
+%By (L1) and \Sbra{1.C \TIPSN{3}}, $\Range\Par{T-\lambda_1I}=\Null\Par{T-\lambda_2I}\oplus\Sbra{\Range\Par{T-\lambda_2I}\cap\Range\Par{T-\lambda_1I}}.$\par\quad
+Asum $V=\Sbra{\bigoplus_{i=1}^j\Null\Par{T-\lambda_j}}\oplus\Sbra{\bigcap_{i=1}^j\Range\Par{T-\lambda_j}}$ for $j\in\Bra{1,\dots,m-1}.$\par\quad
+Becs $\bigcap_{i=1}^j\Range\Par{T-\lambda_iI}\supseteq\Null\Par{T-\lambda_{j+1}I}.$ By (L1) and \Sbra{1.C \TIPSN{3}},\par\quad
+$\bigcap_{i=1}^j\Range\Par{T-\lambda_iI}=\Null\Par{T-\lambda_{j+1}I}\oplus\Sbra{\bigcap_{i=1}^j\Range\Par{T-\lambda_jI}\cap\Range\Par{T-\lambda_{j+1}I}}.$\par\quad
+By induc, $V=\Sbra{\Null\Par{T-\lambda_1I}\oplus\cdots\oplus\Null\Par{T-\lambda_mI}}\oplus\Sbra{\Range\Par{T-\lambda_1I}\cap\cdots\cap\Range\Par{T-\lambda_mI}}.$\par\quad
+Asum $U=\bigcap_{k=1}^m\Range\Par{T-\lambda_kI}\neq\zeroSubs.$ Becs $U$ invard $T.$ Thus $\exists\,\mu=\lambda_j$ eigval of $T\mmid_U.$ Ctradic.\PfEnd
 \SepLine
 
 %\Anchor{5C7}\Anchor{5C4e2}\ProblemN{2}{
@@ -4030,7 +4041,7 @@ Thus all $\mu$'s are dist. Let $s\Par{z}=\Par{z^k-\lambda_1}\cdots\Par{z^k-\lamb
 \Anchor{5C4e15}\ProblemN[]{15}{
 	\TextA{Supp $\Fbb=\Cbb,$ $V$ is finide, $T\in\Lm{V}$ with the min $p.$ Then\hfill\tgnr\FontSmall Using Exe (4.6).}
 	\TextA{$T$ diag $\Longleftrightarrow\nexists\,\Par{z-\lambda}{^2}$ in $p\Longleftrightarrow p,p\apostrophe$ have no common zeros $\Longleftrightarrow\gcd\Par{p,p\apostrophe}=1.$\vspace{-3pt}}
-}\SepLine
+}\SepLine\pagebreak
 
 \Anchor{5C4e16}\ProblemN{16}{
 	\TextB{Supp $T\in\Lm{V}$ diag. Let $\lambda_1,\dots,\lambda_m$ be the disti eigvals of $T.$}
@@ -4042,13 +4053,13 @@ Now by \Sbra{5.A \TIPSN{1}}, each $v_k\in U_j\Rightarrow u\in U_1\oplus\cdots\op
 \Anchor{5C4e17}\ProblemN{17}{
 	\TextA{Supp $V$ is finide. Prove $\Lm{V}$ has a bss consisting of diag optors.}
 }Let $B_V=\Par{v_1,\dots,v_n}.$ Define each $E_{j,k}\in\Lm{V}:v_x\mapsto\delta_{j,x}v_k\Rightarrow$ [5.41](c) true.\PfEnd
-\SepLine\pagebreak
+\SepLine
 
 \Anchor{5C4e18}\ProblemN{18}{
 	\TextA{Supp $T\in\Lm{V}$ is diag. Prove if $U$ invarspd $T,$ then $T\XSlash U\in\Lm{V\XSlash U}$ is diag.}
-}Supp the eigvecs of $T$ are $B_V=\Par{v_1,\dots,v_n}$ with corres eigvals $\lambda_1,\dots,\lambda_n.$\parSol{}
-By \Sbra{5.A \TIPSN{3}}, $B_U=\Par{v_{k_1},\dots,v_{k_m}}.$ Let $\Par{v_{k_1},\dots,v_{k_m},w_{j_1},\dots,w_{j_p}}=\Par{v_1,\dots,v_n}.$\parSol{}
-Let $B_{V\XSlash U}=\Par{w_{j_1}+U,\dots,w_{j_p}+U}.$ Becs each $\BigPar{T\XSlash U}\Par{w_{j_i}+U}=\lambda_{j_i}\Par{w_{j_i}+U}.$\PfEnd\vspace{3pt}\parSol{}
+}By \Sbra{5.A \TIPSN{3}}, $\exists\,B_U=\Par{v_1,\dots,v_m}$ consists of eigvecs of $T.$\parSol{}
+Extend to eigvecs $B_V=\Par{v_1,\dots,v_m,w_1,\dots,w_p}\Rightarrow B_{V\XSlash U}=\Par{w_1+U,\dots,w_p+U}.$\parSol{}
+Becs for each $w_k,\:\exists$ eigval $\lambda$ of $T,\:Tw_k=\lambda w_k\Rightarrow\BigPar{T\XSlash U}\Par{w_k+U}=\lambda w_k+U.$\PfEnd\vspace{3pt}\parSol{}
 \Or Becs the min of $T$ is multi of that of $T\XSlash U.$ By [4E 5.62].\PfEnd
 \SepLine
 
@@ -4079,6 +4090,17 @@ Let $\aMid{c_j}=\max\!\Bra{\aMid{c_1},\dots,\aMid{c_n}}.$ Now $\lambda c_j=\sum_
 \Or Becs $\lambda$ is eigval of $T\Longleftrightarrow$ of $T\apostrophe.$ For $A^t=\Mt{T\apostrophe,B_{V\apostrophe}},$ by [5.67],\vspace{1pt}\parSol{}
 $\lambda\in\BigBra{z\in\Fbb:\aXMid{z-A_{j,j}}\leqslant\sum_{j\neq k=1}^n\aXMid{A^t_{j,k}}=\sum_{j\neq k=1}^n\aXMid{A_{k,j}}}$ for some $j\in\Bra{1,\dots,n}.$\PfEnd
 \SepLine
+
+\Anchor{5C'1}\ProblemB{
+	\TextB{Supp $\Fbb=\Cbb,n\in\Nbp,p\in\PoFi$. Prove $T\in\Lm{V}$ is diag $\Longleftrightarrow\nullp p\Par{T}=\Null\Sbra{p\Par{T}}{^n}.$}
+}(a) Supp $T$ diag. Let $p\Par{z}=\Par{z-\alpha_1}\cdots\Par{z-\alpha_m}.$ We show each $\Null\Par{T-\alpha_kI}{^n}=\Null\Par{T-\alpha_kI}.$\parSol{\Ha}
+Done if $T-\alpha_kI=S$ inje. Supp $S$ not inje. \NOTICE that $\null S\mmid_{\range S}=\null S\cap\range S=\zeroSubs.$\parSol{\Ha}
+By (3.B.22), $\dim\null S^2=\dim\null S\Rightarrow\null S^2=\null S.$ Asum $\null S^j=\null S$ for $j\geqslant 2.$\parSol{\Ha}
+Becs $\dim\Null\Par{S^jS}=\Dim\Par{\null S^j\cap\range S}+\dim\null S.$ By induc.\vspace{3pt}\parSol{}
+(b) Supp $\Null\Par{T-\lambda I}=\Null\Par{T-\lambda I}{^n}$ for all $\lambda\in\Cbb.$ Let $\lambda_1,\dots,\lambda_m$ be disti eigvals of $T.$\parSol{\Hb}
+Define $p\Par{z}=\Par{z-\lambda_1}\cdots\Par{z-\lambda_m}.$ Then $\Sbra{p\Par{T}}{^{\dim V}}=0\Rightarrow p\Par{T}=0\Rightarrow p$ is the min.\PfEnd
+\SepLine
+
 \ChEnd
 \pagebreak
 
