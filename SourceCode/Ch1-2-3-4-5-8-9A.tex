@@ -4043,6 +4043,16 @@ Thus all $\mu$'s are dist. Let $s\Par{z}=\Par{z^k-\lambda_1}\cdots\Par{z^k-\lamb
 	\TextA{$T$ diag $\Longleftrightarrow\nexists\,\Par{z-\lambda}{^2}$ in $p\Longleftrightarrow p,p\apostrophe$ have no common zeros $\Longleftrightarrow\gcd\Par{p,p\apostrophe}=1.$\vspace{-3pt}}
 }\SepLine\pagebreak
 
+\Anchor{5C'1}\ProblemB{
+	\TextB{Supp $\Fbb=\Cbb,n\in\Nbp,p\in\PoFi$. Prove $T\in\Lm{V}$ is diag $\Longleftrightarrow\nullp p\Par{T}=\Null\Sbra{p\Par{T}}{^n}.$}
+}(a) Supp $T$ diag. Let $p\Par{z}=\Par{z-\alpha_1}\cdots\Par{z-\alpha_m}.$ We show each $\Null\Par{T-\alpha_kI}{^n}=\Null\Par{T-\alpha_kI}.$\parSol{\Ha}
+Done if $T-\alpha_kI=S$ inje. Supp $S$ not inje. \NOTICE that $\null S\mmid_{\range S}=\null S\cap\range S=\zeroSubs.$\parSol{\Ha}
+By (3.B.22), $\dim\null S^2=\dim\null S\Rightarrow\null S^2=\null S.$ Asum $\null S^j=\null S$ for $j\geqslant 2.$\parSol{\Ha}
+Becs $\dim\Null\Par{S^jS}=\Dim\Par{\null S^j\cap\range S}+\dim\null S.$ By induc.\vspace{3pt}\parSol{}
+(b) Supp $\Null\Par{T-\lambda I}=\Null\Par{T-\lambda I}{^n}$ for all $\lambda\in\Cbb.$ Let $\lambda_1,\dots,\lambda_m$ be disti eigvals of $T.$\parSol{\Hb}
+Define $p\Par{z}=\Par{z-\lambda_1}\cdots\Par{z-\lambda_m}.$ Then $\Sbra{p\Par{T}}{^{\dim V}}=0\Rightarrow p\Par{T}=0\Rightarrow p$ is the min.\PfEnd
+\SepLine
+
 \Anchor{5C4e16}\ProblemN{16}{
 	\TextB{Supp $T\in\Lm{V}$ diag. Let $\lambda_1,\dots,\lambda_m$ be the disti eigvals of $T.$}
 	\TextB{Prove $U$ invarspd $T\Rightarrow\exists$ subsp $U_k\subseteq E\Par{\lambda_k,T}$ suth $U=U_1\oplus\cdots U_m.$}
@@ -4069,9 +4079,8 @@ Becs for each $w_k,\:\exists$ eigval $\lambda$ of $T,\:Tw_k=\lambda w_k\Rightarr
 \SepLine
 
 \Anchor{5C4e20}\ProblemN{20}{
-	\TextA{Supp $V$ is finide, $T\in\Lm{V}.$ Prove $T$ diag $\Longleftrightarrow T\apostrophe$ diag.}
-}By (4E 5.B.28), $T,T\apostrophe$ have the same min poly. By [4E 5.62].\PfEnd\vspace{2pt}\parSol{}
-\Or By \Sbra{5.B(II) \TIPSN{1}}. Note that low-trig and up-trig $\Longleftrightarrow$ diag.\PfEnd
+	\TextA{Supp $V$ is finide, $T\in\Lm{V}.$ Prove $T$ diag $\Longleftrightarrow T\apostrophe$ diag.\hfill\tgnr\FontNorm By (4E 5.B.28), immed.}
+}By \Sbra{5.B(II) \TIPSN{1}}. Note that low-trig and up-trig are equiv to diag.\PfEnd
 \SepLine
 
 \Anchor{5C4e22}\ProblemN{22}{
@@ -4089,16 +4098,6 @@ Supp $T\apostrophe\Par{\psi}=\lambda\psi$ with $\psi=c_1\varphi_1+\dots+c_n\varp
 Let $\aMid{c_j}=\max\!\Bra{\aMid{c_1},\dots,\aMid{c_n}}.$ Now $\lambda c_j=\sum_{k=1}^nA^t_{j,k}c_k\Rightarrow\aXMid{\lambda-A^t_{j,j}}\leqslant\sum_{j\neq k=1}^n\aXMid{A_{k,j}}.$\PfEnd\vspace{6pt}\parSol{}
 \Or Becs $\lambda$ is eigval of $T\Longleftrightarrow$ of $T\apostrophe.$ For $A^t=\Mt{T\apostrophe,B_{V\apostrophe}},$ by [5.67],\vspace{1pt}\parSol{}
 $\lambda\in\BigBra{z\in\Fbb:\aXMid{z-A_{j,j}}\leqslant\sum_{j\neq k=1}^n\aXMid{A^t_{j,k}}=\sum_{j\neq k=1}^n\aXMid{A_{k,j}}}$ for some $j\in\Bra{1,\dots,n}.$\PfEnd
-\SepLine
-
-\Anchor{5C'1}\ProblemB{
-	\TextB{Supp $\Fbb=\Cbb,n\in\Nbp,p\in\PoFi$. Prove $T\in\Lm{V}$ is diag $\Longleftrightarrow\nullp p\Par{T}=\Null\Sbra{p\Par{T}}{^n}.$}
-}(a) Supp $T$ diag. Let $p\Par{z}=\Par{z-\alpha_1}\cdots\Par{z-\alpha_m}.$ We show each $\Null\Par{T-\alpha_kI}{^n}=\Null\Par{T-\alpha_kI}.$\parSol{\Ha}
-Done if $T-\alpha_kI=S$ inje. Supp $S$ not inje. \NOTICE that $\null S\mmid_{\range S}=\null S\cap\range S=\zeroSubs.$\parSol{\Ha}
-By (3.B.22), $\dim\null S^2=\dim\null S\Rightarrow\null S^2=\null S.$ Asum $\null S^j=\null S$ for $j\geqslant 2.$\parSol{\Ha}
-Becs $\dim\Null\Par{S^jS}=\Dim\Par{\null S^j\cap\range S}+\dim\null S.$ By induc.\vspace{3pt}\parSol{}
-(b) Supp $\Null\Par{T-\lambda I}=\Null\Par{T-\lambda I}{^n}$ for all $\lambda\in\Cbb.$ Let $\lambda_1,\dots,\lambda_m$ be disti eigvals of $T.$\parSol{\Hb}
-Define $p\Par{z}=\Par{z-\lambda_1}\cdots\Par{z-\lambda_m}.$ Then $\Sbra{p\Par{T}}{^{\dim V}}=0\Rightarrow p\Par{T}=0\Rightarrow p$ is the min.\PfEnd
 \SepLine
 
 \ChEnd
@@ -4167,4 +4166,20 @@ Supp $S\in\mathcal{E}.$ Let $v_1$ be eigvec of all elem of $\mathcal{E}.$ Let $W
 For each $R\in\Lm{V},$ define $\hat{R}\in\Lm{W}$ by $\hat{R}=PR.$ Becs for all $T\in\mathcal{E},$ $\hat{S}\hat{T}=\hat{T}\hat{S}.$\parSol{\Hb}
 By asum, $\exists\,B_W=\Par{v_2,\dots,v_n}$ suth $\hat{S}$ and all $\hat{T}$ has up-trig matrix. Simlr to [5.80].\PfEnd
 \SepLine
-\ChEnd\pagebreak
+\ChEnd
+
+\ChDecl{Ch8A}{8.A}{}
+
+\ChEnd
+
+\ChDecl{Ch8B}{8.B}{}
+
+\ChEnd
+
+\ChDecl{Ch8C}{8.C}{}
+
+\ChEnd
+
+\ChDecl{Ch9A}{9.A}{}
+
+\ChEnd
