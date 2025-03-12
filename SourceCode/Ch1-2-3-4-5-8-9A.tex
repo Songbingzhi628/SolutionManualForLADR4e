@@ -55,9 +55,19 @@ By Assoc: $\Par{a+\infty}+\Par{{-\infty}}\neq a+\Par{\infty+\Par{{-\infty}}}.$\p
 	\TextB{Many choices.\;\;\FontNorm\Sbra[3pt]{{\tgsl Req Multi Inv Uniq}}\vspace{2pt}}
 	\TextB{\AExa $\Zbb_m=\Bra{K_0,K_1,\dots,K_{m-1}}$ is a field $\Longleftrightarrow m\in\Nbp$ is a prime.}
 }\SepLine
-\ChEnd\pagebreak
 
-\ChDecl{Ch1C}{1$\cdot$C}{}
+%\ProblemB{
+%	\TextB{Let $\mS$ be the collec of all subsets of $\Fbb.$ Define the add and scalar multi on $\mS$ by}
+%	\TextB{$A+B=\Bra{a+b:a\in A,b\in B},\lambda A=\Bra{\lambda a:a\in A},$ and $A+\emptySet=\emptySet=A,\lambda\emptySet=\emptySet.$}
+%	\TextB{Is $\mS$ a vecsp over $\Fbb$? Which req in [1.19] does $\mS$ not hold ?}
+%}
+%\SepLine
+
+\ChEnd
+
+\pagebreak
+
+\ChDecl{Ch1C}{1$\cdot$C}{\quad{\small\textbf{注意\,:}\;这里我将3.E积空间的定义前置；仅涉及概念。}}
 
 \vspace{2pt}
 
@@ -387,6 +397,11 @@ Becs $V$ is finide, this process will stop after $n$ steps.\PfEnd\vspace{4pt}\Te
 
 \vspace{4pt}
 
+%\ProblemB{
+%	\TextB{Supp $V=\Fbb^{S},$ and $S\neq\emptySet.$ Prove $\dim V=\card S.$}
+%}
+%\SepLine
+
 \ProblemN{\Anchor{2C15}{15}}{
 	\TextA{Supp $\dim V=n\geqslant 1.$ Prove $\exists\,1$-\hspace{1pt}dim subsps $V_{\!1},\dots,V_{\!n}$ suth $V=V_{\!1}\oplus \dots\oplus V_{\!n}.$}
 }Supp $B_V=\Par{v_1,\dots,v_n}.$ Let each $V_{\!i}=\Span{v_i}.$\parSol{}
@@ -449,27 +464,21 @@ $\Longleftrightarrow \dim\!\Par{V_{\!1}\oplus\dots\oplus V_{\!m}}=\dim V_{\!1}+\
 \SepLine\pagebreak
 
 \ProblemN{\Anchor{2C17}{17}}{
-	\TextA{Supp $V_{\!1},V_{\!2},V_{\!3}$ are subsps of a finide vecsp, then}
-	\TextA{{\FontNorm$\Dim\Par{V_{\!1}+V_{\!2}+V_{\!3}}=\dim V_{\!1}+\dim V_{\!2}+\dim V_{\!3}$\par\rightline{${}-\Dim\Par{V_{\!1}\cap V_{\!2}}-\Dim\Par{V_{\!1}\cap V_{\!3}}-\Dim\Par{V_{\!2}\cap V_{\!3}}+\Dim\Par{V_{\!1}\cap V_{\!2}\cap V_{\!3}}$.\qquad}}}
-	\TextA{Explain why you might think and prove the formula above or give a countexa.}
+	\TextA{Supp $V_{\!1},V_{\!2},V_{\!3}$ are subsps of a finide vecsp. Explain and give a countexa\hspace{1pt}$:$}
+	\TextA{{\FontNorm$\Dim\Par{V_{\!1}+V_{\!2}+V_{\!3}}=\dim V_{\!1}+\dim V_{\!2}+\dim V_{\!3}$\par\rightline{${}-\Dim\Par{V_{\!1}\cap V_{\!2}}-\Dim\Par{V_{\!1}\cap V_{\!3}}-\Dim\Par{V_{\!2}\cap V_{\!3}}+\Dim\Par{V_{\!1}\cap V_{\!2}\cap V_{\!3}}$.\qquad}}\vspace{-16pt}}
 }\par\quad
-\!\Sbra[3pt]{{\tgsl Simlr to}} \;Given three sets $A,B$ and $C$.\par\quad
-Becs \;\;$\cMid{X\cup Y}=\cMid{X}+\cMid{Y}-\cMid{X\cap Y};\,\,\,\Par{X\cup Y}\cap Z=\Par{X\cap Z}\cup\Par{Y\cap Z}$.\par\quad
-Now \qquad$\cMid{\Par{A\cup B}\cup C}=\cMid{A\cup B}+\cMid{C}-\cMid{\Par{A\cup B}\cap C}.$\par\quad
-And \qquad\,$\cMid{\Par{A\cup B}\cap C}=\cMid{\Par{A\cap C}\cup\Par{B\cap C}}=\cMid{A\cap C}+\cMid{B\cap C}-\cMid{A\cap B\cap C}.$\par\quad
-Hence \quad\;$\cMid{\Par{A\cup B}\cup C}=\cMid{A}+\cMid{B}+\cMid{C}+\cMid{A\cap B\cap C}-\cMid{A\cap B}-\cMid{A\cap C}-\cMid{B\cap C}.$\par\vspace{4pt}\quad
-Note that $\Par{V_{\!1}+V_{\!2}}+V_{\!3}=V_{\!1}+\Par{V_{\!2}+V_{\!3}}=\Par{V_{\!1}+V_{\!3}}+V_{\!2}.$\par\quad
+(1) $\aXMid{\Par{A\cup B}\cup C}=\cMid{A\cup B}+\cMid{C}-\aXMid{\Par{A\cup B}\cap C}.$\par\quad
+(2) $\aXMid{\Par{A\cup B}\cap C}=\aXMid{\Par{A\cap C}\cup\Par{B\cap C}}=\cMid{A\cap C}+\cMid{B\cap C}-\cMid{A\cap B\cap C}.$\par\quad
+Thus $\aXMid{\Par{A\cup B}\cup C}=\cMid{A}+\cMid{B}+\cMid{C}+\cMid{A\cap B\cap C}-\cMid{A\cap B}-\cMid{A\cap C}-\cMid{B\cap C}.$\par\vspace{4pt}\quad
+Becs $\Par{V_{\!1}+V_{\!2}}+V_{\!3}=V_{\!1}+\Par{V_{\!2}+V_{\!3}}=\Par{V_{\!1}+V_{\!3}}+V_{\!2}.$\par\quad
 $\Dim\Par{V_{\!1}+V_{\!2}+V_{\!3}}=\Dim\Par{V_{\!1}+V_{\!2}}+\Dim\Par{V_{\!3}}-\Dim\BigPar{\Par{V_{\!1}+V_{\!2}}\cap V_{\!3}}\quad(1)\hspace{114pt}$\par\quad
 $\Blind{\Dim\Par{V_{\!1}+V_{\!2}+V_{\!3}}}=\Dim\Par{V_{\!2}+V_{\!3}}+\Dim\Par{V_{\!1}}-\Dim\BigPar{\Par{V_{\!2}+V_{\!3}}\cap V_{\!1}}\quad(2)$\par\quad
 $\Blind{\Dim\Par{V_{\!1}+V_{\!2}+V_{\!3}}}=\Dim\Par{V_{\!1}+V_{\!3}}+\Dim\Par{V_{\!2}}-\Dim\BigPar{\Par{V_{\!1}+V_{\!3}}\cap V_{\!2}}\quad(3).$\par\vspace{3pt}\quad
-Notice that in general, $\Par{X+Y}\cap Z\neq\Par{X\cap Z}+\Par{Y\cap Z}.$\par\quad
-For exa, $X=\Bra{\Par{x,0}\in\Rbb^2:x\in\Rbb},Y=\Bra{\Par{0,y}\in\Rbb^2:y\in\Rbb},Z=\Bra{\Par{z,z}\in\Rbb^2:z\in\Rbb}.$\par\vspace{2pt}\quad
-\AComm If $X\subseteq Y,$ then $\Par{X+Y}\cap Z=Y\cap Z;$ \;$\Dim\Par{X+Y+Z}=\Dim\Par{Y}+\Dim\Par{Z}-\Dim\Par{Y\cap Z},$\parCom\quad
-and the wrong formual holds. Simlr for $Y\subseteq Z,X\subseteq Z,$ and $X,Y\subseteq Z.$\par\vspace{4pt}\quad
-However, it's true that $\Par{X+Y}${\Large${}\cap{}$}$Z\supseteq\Par{X\cap Z}+\Par{Y\cap Z}=\BigPar{X+\Par{Y\cap Z}}${\Large${}\cap{}$}$Z.$\par\quad
-Becs $\Par{X\cap Z}+\Par{Y\cap Z}\ni v=x+y=z_1+z_2\in\BigPar{X+\Par{Y\cap Z}}${\Large${}\cap{}$}$Z\Rightarrow v\in\Par{X+Y}${\Large${}\cap{}$}$Z.$\par\quad
-Where $\exists\,x=z_1\in X\cap Z,\:y=z_2\in Y\cap Z.$\par\vspace{2pt}\quad
-\AComm $\Dim\BigPar{\Par{X+Y}\cap Z}\geqslant\Dim\Par{X\cap Z}+\Dim\Par{Y\cap Z}-\Dim\Par{X\cap Y\cap Z}.$%\par\vspace{8pt}
+Generally, $\Par{X+Y}\cap Z\neq\Par{X\cap Z}+\Par{Y\cap Z}.$ \;\AExa $X=\Bra{\Par{x,0}},Y=\Bra{\Par{0,y}},Z=\Bra{\Par{z,z}}\subseteq\Fbb^2.$\par\vspace{2pt}\quad
+\AComm If $X\subseteq Y,$ then $\Par{X+Y}\cap Z=Y\cap Z;$ \;$\Dim\Par{X+Y+Z}=\dim{Y}+\dim{Z}-\Dim\Par{Y\cap Z},$\parCom\quad
+and the wrong formula holds. Simlr for $Y\subseteq Z,\,X\subseteq Z,$ and $X,Y\subseteq Z.$\par\vspace{4pt}\quad
+\ANote However, it's true that $\Par{X+Y}${\Large${}\cap{}$}$Z\supseteq\Par{X\cap Z}+\Par{Y\cap Z}=\BigPar{X+\Par{Y\cap Z}}${\Large${}\cap{}$}$Z.$\parNot\quad
+Becs $\Par{X\cap Z}+\Par{Y\cap Z}\ni v=x+y=z_1+z_2\in\BigPar{X+\Par{Y\cap Z}}${\Large${}\cap{}$}$Z\Rightarrow v\in\Par{X+Y}${\Large${}\cap{}$}$Z.$\par
 %\BulletPointX\ACoro $\Dim\Par{V_{\!1}+V_{\!2}+V_{\!3}}=\dim V_{\!1}+\dim V_{\!2}+\dim V_{\!3}$\parCor{\IndentB}
 %$\Blind{\Dim\Par{V_{\!1}+V_{\!2}+V_{\!3}}}{}-\Sbra{\Dim\Par{V_{\!1}\cap V_{\!2}}+\Dim\Par{V_{\!1}\cap V_{\!3}}+\Dim\Par{V_{\!2}\cap V_{\!3}}}\Big/3$\parCor{\IndentB}
 %$\Blind{\Dim\Par{V_{\!1}+V_{\!2}+V_{\!3}}}{}-\Sbra{\Dim\BigPar{\Par{V_{\!1}+V_{\!2}}\cap V_{\!3}}+\Dim\BigPar{\Par{V_{\!1}+V_{\!3}}\cap V_{\!2}}+\Dim\BigPar{\Par{V_{\!2}+V_{\!3}}\cap V_{\!1}}}\Big/3.$
@@ -498,14 +507,16 @@ Where $\exists\,x=z_1\in X\cap Z,\:y=z_2\in Y\cap Z.$\par\vspace{2pt}\quad
 Asum $\exists\,\mC\ni X$ not contained in $U+W.$ Then $\Dim\Par{X+U+W}=2k+1-\Dim\BigPar{X\cap\Par{U+W}}.$\parSol{}
 Note that $m=\Dim\BigPar{X\cap\Par{U+W}}\leqslant k-1,$ and $n=\Dim\Par{X\cap U\cap W}\leqslant k-1.$\parSol{}
 {\FontSmall Becs $m=k\Rightarrow X\cap\Par{U+W}=X\Rightarrow X\subseteq U+W;$\,\,\,and $m=k+1\Rightarrow X\cap\Par{U+W}=U+W\Rightarrow\dim X\geqslant k+1.$}\parSol{}
-$X\cap\Par{U+W}\supseteq\Par{X\cap U}+\Par{X\cap W}\Rightarrow m\geqslant2\Par{k-1}-n\geqslant k-1\Rightarrow\Dim\Par{X+U+W}=k+2.$
-\SepLine\ChEnd
+$X\cap\Par{U+W}\supseteq\Par{X\cap U}+\Par{X\cap W}\Rightarrow m\geqslant2\Par{k-1}-n\geqslant k-1\Rightarrow\Dim\Par{X+U+W}=k+2.$\parSol{}
+\colorbox{yellow}{TODO}
+\SepLine
+\ChEnd
 
 \pagebreak
 
-\ChDecl{Ch3A}{3$\cdot$A}{}
+\ChDecl{Ch3A}{3$\cdot$A}{\quad{\small\textbf{注意\,:}\;这里我将3.B的值空间、\!零空间、\!单满射、\!和3.D的可逆性定义前置；仅涉及概念。}}
 
-\vspace{0pt}
+\vspace{4pt}
 
 \Anchor{3AT1}\BulletPointX\TipsN{1} \,\,\,$T:V\rightarrow W$ is liney $\Longleftrightarrow\MathLeftrightMid{l}{\hspace{-4pt}$
 (一) $\forall v,u\in V,T\Par{v+u}=Tv+Tu;\\\hspace{-4pt} $
@@ -522,41 +533,23 @@ $}\Longleftrightarrow T\Par{v+\lambda u}=Tv+\lambda Tu.$\vspace{6pt}\TextB{}
 \Or $T\Par{0}=T\Par{0+0}=T\Par{0}+T\Par{0}\Rightarrow T\Par{0}=0.$ Ctradic.\PfEnd
 \SepLine
 
-\Anchor{3ANR}\ProblemB[]{
-	\NoteForSmall{Restr}\;\;\TextB{$U$ is a subsp of $V.$}
-	\PrePa\TextB{$\forall S,T\in\Lm{V,W},\lambda\in\Fbb,\left.\Par{T+\lambda S}\right|{_U}=T\mmid_U+\lambda S\mmid_U.$\vspace{2pt}}
-	\PrePb\TextB{$\forall S\in\Lm{W,X},T\in\Lm{V,W},\left.\Par{ST}\right|{_U}=ST\mmid_U.$\vspace{-2pt}}
+\Anchor{3AT3}\ProblemBX[]{\TipsN{3}}{
+	$T\in\Lm{V,W}\Longleftrightarrow T\in\Lm{V,\range T}\Longleftrightarrow T\in\Lm{V,U},$ if $\range T$ is a subsp of $U.$\TextA{}
+	\ACoro $\Bra{T\in\Lm{V,W}:\range T\subseteq U}=\Bra{T\in\Lm{V,U}}=\Lm{V,U},$ a subsp of $\Lm{V,W}.$\TextA{\vspace{-2pt}}
 }\SepLine
 
-\ProblemN{\Anchor{3A3}{3}}{
-	\TextA{Supp $T\in\Lm{\Fbb^n,\Fbb^m}$. Prove $\exists\,A_{j,k}\in\Fbb\,$suth for any $\Par{x_1,\dots,x_n}\in\Fbb^n,$}\hspace{-40pt}
-	\TextA{\centerline{ $T\Par{x_1,\dots,x_n}={}$\large$\MathLeftrightPare{l}{\!\!
-	A_{1,1}x_1+\dots+A_{1,n}x_n,\\[-4pt]
-	\!\!\Blind{A}\!\vdots\Blind{_{1}x_1+}\,\ddots\Blind{+A}\vdots\\[-6pt]
-	\!\!A_{m,1}x_1+\dots+A_{m,n}x_n\!\!\!}$}\vspace{-6pt}}
-}\par\quad
-Let $T\Par{1,0,0,\dots,0,0}=\Par{A_{1,1},\dots,A_{m,1}},$\quad Note that $\Par{1,0,\dots,0,0},\cdots,\Par{0,0,\dots,0,1}$ is a bss of $\Fbb^n$.\par\quad
-\Blind{Let }$T\Par{0,1,0,\dots,0,0}=\Par{A_{1,2},\dots,A_{m,2}},$\quad Then by [3.5], done.\PfEnd\vspace{-4pt}
-\Blind{Let $T\Par{1,0,0,\dots}$}\!$\vdots$\par\vspace{-8pt}\quad
-\Blind{Let }$T\Par{0,0,0,\dots,0,1}=\Par{A_{1,n},\dots,A_{m,n}}.$\par
+\ProblemN{\Anchor{3A11}{11}}{
+	\TextA{Supp $U$ is a subsp of $V$ and $S\in\Lm{U,W}$.}
+	\TextA{Prove $\exists\,T\in\Lm{V,W},Tu = Su,\forall u\in U$. {\FontNorm\tgnr\BigPar{ \Or $\exists\,T\in\Lm{V,W},T\mmid_U=S.$ }}}
+	\TextA{\large In other words, every liney map on a subsp of $V$ can be {\tgsc extended} to a liney map on the entire $V$.}
+}Supp $W$ is suth $V=U\oplus W.$ Then $\forall v\in V,\exists\,!\,u_v\in U,w_v\in W,v=u_v+w_v.$\parSol{}
+Define $T\in\Lm{V,W}$ by $T\Par{u_v+w_v}=Su_v.$\PfEnd\parSol{\vspace{0pt}}
+\Or \Sbra[3pt]{{\tgsl Finide Req}} \;Define by $T\BigBigPar{{\sum_{i=1}^m a_i u_i}}=\sum_{i=1}^n a_i Su_i.$ \,Let $B_V=\Par{\overbrace{u_1,\dots,u_n}^{B_U},\dots,u_m}.$\PfEnd
 \SepLine
 
-\ProblemN{\Anchor{3A7}{7}}{
-	\TextA{Supp $\dim V = 1$ and $T\in\Lm{V}.$ Prove $\exists\,\lambda\in\Fbb,Tv = \lambda v,\forall v\in V$.}
-}Let $u$ be a non0 vec in $V\Rightarrow V=\Span{u}$. Becs $Tu\in V\Rightarrow Tu=\lambda u$ for some $\lambda$.\parSol{}
-Supp $v\in V\Rightarrow v=au,\,\exists\,!\,a\in\Fbb$. Then $Tv=T\Par{au}=\lambda au=\lambda v.$\PfEnd
-\SepLine
-
-\ProblemN{\Anchor{3A8}{8}}{
-	\TextA{Give a map $\varphi:\Rbb^2\rightarrow\Rbb$ suth $\forall a\in\Rbb,v\in\Rbb^2,\varphi\Par{av} = a\varphi\Par{v}$ but $\varphi$ is not liney.\vspace{4pt}}
-}Define $T\Par{x,y}=\MathLeftBrace{l}{x+y,\;\;\text{if }\Par{x,y}\in\Span{3,1},\\ 0,\hfill\text{othws}.
-}$ \quad\Or Define $T\Par{x,y}=\sqrt[3]{\BigPar{x^3+y^3}}.$\PfEnd
-\SepLine
-
-\ProblemN{\Anchor{3A9}{9}}{
-	\TextA{Give a map $\varphi:\Cbb\rightarrow\Cbb$ suth $\forall w,z\in\Cbb,\varphi\Par{w + z} = \varphi\Par{w} + \varphi\Par{z}$ but $\varphi$ is not liney.}
-}Define $\varphi\Par{u+\i v}=u=\REAL\Par{u+\i v}$\quad\Or Define $\varphi\Par{u+\i v}=v=\IMAGINARY\Par{u+\i v}.$\PfEnd
-\SepLine
+\Anchor{3ANR}\ProblemB[]{
+	\NoteForSmall{Restr}\;\;$U$ is a subsp of $V.$ (a) $\left.\Par{T+\lambda S}\right|{_U}=T\mmid_U+\lambda S\mmid_U.$ (b) $\left.\Par{ST}\right|{_U}=ST\mmid_U.$\vspace{-2pt}\TextB{}
+}\SepLine
 
 \Anchor{4O4e3}\ProblemBnoor{{4E 4.3}}{
 	\TextB{Supp $\Fbb=\Cbb,\,\varphi\in\Lm{V,\Fbb},\,\sigma=\REAL\circ\varphi.$ \,Show all $\varphi\Par{v}=\sigma\Par{v}-\i\sigma\Par{\i v}.$}
@@ -571,7 +564,42 @@ Supp $v\in V\Rightarrow v=au,\,\exists\,!\,a\in\Fbb$. Then $Tv=T\Par{au}=\lambda
 \Anchor{3A'1}\ProblemB{
 	\TextB{Supp $U,V,W$ are on $\Rbb,$ $S\in\Lm{V,W},T\in\Lm{U,V}.$ Prove $\Par{ST}{_\Cbb}=S_\Cbb T_{\!\Cbb}.$}
 }$\forall u+\i x\in U_{\Cbb},\Par{ST}{_\Cbb}\Par{u+\i x}=STu+\i STx=S_\Cbb\Par{Tu+\i Tx}=\Par{S_\Cbb T_{\!\Cbb}}\Par{u+\i x}.$\PfEnd
-\SepLine\pagebreak
+\SepLine
+
+\Anchor{9A2}\Anchor{9A6}\Anchor{3B4e33}\ProblemBnoor{{9.A.2,6 \OR 4E 3.B.33}}{
+	\TextB{Supp $V,W$ are on $\Rbb,$ and $T\in\Lm{V,W}.$ Show}
+	{\tgnr\large(a)} $T_{\!\Cbb}\in\Lm{V_{\!\Cbb},W_{\!\Cbb}}.$ \;{\tgnr\large(b)} $\Null\Par{T_{\!\Cbb}}=\BigPar{\null T}{_\Cbb},\Range\Par{T_{\!\Cbb}}=\BigPar{\range T}{_\Cbb}.$ \;{\tgnr\large(c)} $T_{\!\Cbb}$ is inv $\Longleftrightarrow T$ is inv.\TextB{}
+}{(a) $T_{\!\Cbb}\BigPar{\Par{u_1+\i v_1}+\Par{x+\i y}\Par{u_2+\i v_2}}=T\Par{u_1+xu_2-yv_2}+\i T\Par{v_1+xv_2+yu_2}$\parSol{\Ha}
+	$=T_{\!\Cbb}\Par{u_1+\i v_1}+\Par{x+\i y}T_{\!\Cbb}\Par{u_2+\i v_2}.$\parSol{}
+	(b) $u+\i v\in\Null\Par{T_{\!\Cbb}}\Longleftrightarrow u,v\in\null T\Longleftrightarrow u+\i v\in\BigPar{\null T}{_\Cbb}.$\parSol{\Hb}
+	$w+\i x\in\Range\Par{T_{\!\Cbb}}\Longleftrightarrow w,x\in\range T\Longleftrightarrow w+\i x\in\BigPar{\range T}{_\Cbb}.$\parSol{}
+	(c) $\forall w,x\in W,\exists\,!\,u,v\in V,T_{\!\Cbb}\Par{u+\i v}=w+\i x\Longleftrightarrow Tu=w,Tv=x.$ \Or By (b).}\large\PfEnd
+\SepLine
+
+\ProblemN{\Anchor{3A7}{7}}{
+	\TextA{Supp $\dim V = 1$ and $T\in\Lm{V}.$ Prove $\exists\,\lambda\in\Fbb,Tv = \lambda v,\forall v\in V$.}
+}Let $u$ be a non0 vec in $V\Rightarrow B_V=\Par{u}$. Becs $Tu\in V\Rightarrow Tu=\lambda u$ for some $\lambda$.\parSol{}
+Supp $v\in V\Rightarrow v=au,\,\exists\,!\,a\in\Fbb$. Then $Tv=T\Par{au}=\lambda au=\lambda v.$\PfEnd
+\SepLine
+
+\ProblemN{\Anchor{3A3}{3}}{
+	\TextA{Supp $T\in\Lm{\Fbb^n,\Fbb^m}.$ Prove $\exists\,A_{j,k}\in\Fbb,\:T\Par{x_1,\dots,x_n}=\Big({{\sum_{i=1}^nA_{1,i}\,x_i,\cdots,\sum_{i=1}^nA_{m,i}\,x_i}}\Big).$\vspace{2pt}}
+}Let $T\Par{1,0,0,\dots,0,0}=\Par{A_{1,1},\dots,A_{m,1}},$\parSol{}
+\Blind{Let }$T\Par{0,1,0,\dots,0,0}=\Par{A_{1,2},\dots,A_{m,2}},$\vspace{-4pt}\parSol{}
+\Blind{Let $T\Par{1,0,0,}$}\!$\vdots$\vspace{-8pt}\parSol{}
+\Blind{Let }$T\Par{0,0,0,\dots,0,1}=\Par{A_{1,n},\dots,A_{m,n}}.$\PfEnd
+\SepLine
+
+\ProblemN{\Anchor{3A8}{8}}{
+	\TextA{Give a map $\varphi:\Rbb^2\rightarrow\Rbb$ suth $\forall a\in\Rbb,v\in\Rbb^2,\varphi\Par{av} = a\varphi\Par{v}$ but $\varphi$ is not liney.\vspace{4pt}}
+}Define $T\Par{x,y}=\MathLeftBrace{l}{x+y,\;\;\text{if }\Par{x,y}\in\Span{3,1},\\ 0,\hfill\text{othws}.
+}$ \quad\Or Define $T\Par{x,y}=\sqrt[3]{\BigPar{x^3+y^3}}.$\PfEnd
+\SepLine
+
+\ProblemN{\Anchor{3A9}{9}}{
+	\TextA{Give a map $\varphi:\Cbb\rightarrow\Cbb$ suth $\forall w,z\in\Cbb,\varphi\Par{w + z} = \varphi\Par{w} + \varphi\Par{z}$ but $\varphi$ is not liney.}
+}Define $\varphi\Par{u+\i v}=u=\REAL\Par{u+\i v}$\quad\Or Define $\varphi\Par{u+\i v}=v=\IMAGINARY\Par{u+\i v}.$\PfEnd
+\SepLine
 
 \Anchor{3A4e10}\ProblemB{
 	\TextB{Prove if $q\in\PoRi$ and $T:\PoRi\rightarrow\PoRi$ is defined by $\underbrace{Tp=q\circ p}_{composition},$ then $T$ is not liney.\vspace{-8pt}}
@@ -589,18 +617,44 @@ Then $v+u\in V\Backslash U,$ for if not, $v=\Par{v+u}-u\in U$;\parSol{}
 while $T\Par{v+u}=0=Tv+Tu=0+Su\Rightarrow Su=0.$ Ctradic.\PfEnd
 \SepLine
 
+\Anchor{3B7}\ProblemBnoor{3.B.7}{
+	\TextA{Supp $2\leqslant\dim V=n\leqslant m=\dim W$, if $W$ is finide.}
+	\TextA{Show $U=\Bra{T\in\Lm{V,W}:T\text{ is not inje}}$ is not a subsp of $\Lm{V,W}$.}
+}{\tgsl The set of all inje $T\in\Lm{V,W}$ is a not subsp either.}\par\quad
+Let $\Par{v_1,\dots,v_n}$ be a bss of $V$, $\Par{w_1,\dots,w_m}$ be liney indep in $W$. \Sbra{ $2\leqslant n\leqslant m.$ }\par\hspace{0pt}
+$\MathRightMid{l}{$
+	Define $T_1\in\Lm{V,W}$ as $T_1:\,\,\,\,v_1\mapsto 0,$\qquad$v_2\mapsto w_2,$\qquad$v_i\mapsto w_i$.$\\$
+	Define $T_2\in\Lm{V,W}$ as $T_2:\,\,\,\,v_1\mapsto w_1,$ \quad\,$v_2\mapsto 0,$\,\,\,\qquad$v_i\mapsto w_i$,\quad $i=3,\dots,n.}$ Thus $T_1+T_2\not\in U.$\PfEnd[-23pt]\vspace{10pt}
+\AComm If $\dim V=0,$ then $V=\zeroSubs=\Span{\,}$. $\forall\,T\in\Lm{V,W}, T$ is inje. Hence $U=\emptySet$.\parCom
+If $\dim V=1,$ then $V=\Span{v_0}.$ Thus $U=\Span{T_0},$ where $\forall v\in V,T_0 v=0\Rightarrow T_0=0.$\par
+\SepLine
+
+\Anchor{3B8}\ProblemBnoor{3.B.8}{
+	\TextA{Supp $2\leqslant\dim W=m\leqslant\dim V$, if $V$ is finide.}
+	\TextA{Show $U=\Bra{T\in\Lm{V,W}:T\text{ is not surj}}$ is not a subsp of $\Lm{V,W}$.}
+}{\tgsl The set of all surj $T\in\Lm{V,W}$ is not a subsp either. \tgsc Using the generalized version of [3.5].}\par\quad
+Let $\Par{v_1,\dots,v_n}$ be liney indep in $V$, $\Par{w_1,\dots,w_m}$ be a bss of $W$. \Sbra{  $n\in\Bra{m,m+1,\dots}$; $2\leqslant m\leqslant n.$ }\par\quad
+Define $T_1\in\Lm{V,W}$ as $T_1:\,\,\,\,v_1\mapsto 0,$\qquad$v_2\mapsto w_2,$\qquad$v_j\mapsto w_j,$\qquad$v_{m+i}\mapsto 0.$\par\quad
+Define $T_2\in\Lm{V,W}$ as $T_2:\,\,\,\,v_1\mapsto w_1,$\,\,\,\quad$v_2\mapsto 0,$\,\,\,\qquad$v_j\mapsto w_j,$\qquad$v_{m+i}\mapsto 0.$\par\quad
+\BigPar{ For each $j=2,\dots,m;\,\,i=1,\dots,n-m$, if $V$ is finide, othws let $i\in\Nbp.$ } Thus $T_1+T_2\not\in U.$\PfEnd\vspace{2pt}
+\AComm If $\dim W=0,$ then $W=\zeroSubs=\Span{\,}$. $\forall\,T\in\Lm{V,W}, T$ is surj. Hence $U=\emptySet.$\parCom
+If $\dim W=1,$ then $W=\Span{w_0}.$ Thus $U=\Span{T_0},$ where each $T_0v_i=0\Rightarrow T_0=0.$\SepLine
+
+%\Anchor{3B'1}\ProblemB{
+%	\TextB{Supp $S,T\in\Lm{V}.$ Prove or give a countexa\hspace{1pt}$:$}
+%	\PrePa\TextB{$\null S\subseteq\null T\Rightarrow\range T\subseteq\range S;$ \; {\tgnr\large(b)} $\range T\subseteq\range S\Rightarrow\null S\subseteq\null T.$}
+%}Let $B_V=\Par{v_1,v_2,v_3}.$ Countexas:\par{\hspace{0pt}}
+%$\hText{$(a) Let $\\\,}\hText{S:v_1\mapsto 0;\;\;v_2\mapsto 0;\;\;v_3\mapsto v_2.\\T:v_1\mapsto 0;\;\;v_2\mapsto 0;\;\;v_3\mapsto v_3.}\MathLeftMid{l}{$
+%	\!\!Then $\null S=\null T,$ but$\\$
+%	\!\!$\range T=\Span{v_3}\nsubseteq\Span{v_2}=\null T.}$\par{\hspace{0pt}}
+%$\hText{$(b) Let $\\\,}\hText{S:v_1\mapsto v_2;\;\;v_2\mapsto v_2;\;\;v_3\mapsto v_2.\\T:v_1\mapsto 0;\;\;v_2\mapsto 0;\;\;v_3\mapsto v_2.}\MathLeftMid{l}{$
+%	\!\!Then $\range T=\range S,$ but$\\$
+%	\!\!$\null S=\Span{v_1-v_2,v_2-v_3,v_3-v_1}\nsubseteq\Span{v_1,v_2}=\null T.}$\par\vspace{8pt}
+%\SepLine
+
 \ProblemN{\Anchor{3A4}{4}}{
 	\TextA{Supp $T\in\Lm{V,W},$ $\Par{Tv_1,\dots,Tv_m}$ liney indep in $W$. Prove $\Par{v_1,\dots,v_m}$ liney indep.}
 }Let $a_1 v_1+\dots+a_m v_m=0\Rightarrow a_1 Tv_1+\dots+a_m Tv_m=0\Rightarrow a_1=\dots=a_m=0.$\PfEnd
-\SepLine
-
-\ProblemN{\Anchor{3A11}{11}}{
-	\TextA{Supp $U$ is a subsp of $V$ and $S\in\Lm{U,W}$.}
-	\TextA{Prove $\exists\,T\in\Lm{V,W},Tu = Su,\forall u\in U$. {\FontNorm\tgnr\BigPar{ \Or $\exists\,T\in\Lm{V,W},T\mmid_U=S.$ }}}
-	\TextA{\large In other words, every liney map on a subsp of $V$ can be {\tgsc extended} to a liney map on the entire $V$.}
-}Supp $W$ is suth $V=U\oplus W.$ Then $\forall v\in V,\exists\,!\,u_v\in U,w_v\in W,v=u_v+w_v.$\parSol{}
-Define $T\in\Lm{V,W}$ by $T\Par{u_v+w_v}=Su_v.$\PfEnd\parSol{\vspace{0pt}}
-\Or \Sbra[3pt]{{\tgsl Finide Req}} \;Define by $T\BigBigPar{{\sum_{i=1}^m a_i u_i}}=\sum_{i=1}^n a_i Su_i.$ \,Let $B_V=\Par{\overbrace{u_1,\dots,u_n}^{B_U},\dots,u_m}.$\PfEnd
 \SepLine
 
 \ProblemN{\Anchor{3A12}{12}}{
@@ -628,7 +682,24 @@ And \,$0=a_j w_j$ while $a_j\neq 0$ and $w_j\neq 0.$ Ctradic.\PfEnd\vspace{4pt}\
 {Choose one $w\in W\nonzero.$ By asum, for {$\BigPar{\overline{a_1}w,\dots,\overline{a_m}w},\exists\,T\in\Lm{V,W},$ each $Tv_k=\overline{a_k}w.$}}\vspace{2pt}\par\quad
 {Now we have {$ 0=T\BigBigPar{{\sum_{k=1}^m a_k v_k}}=\sum_{k=1}^m a_k Tv_k=\sum_{k=1}^m a_k\overline{a_k}w=\BigBigPar{{\sum_{k=1}^m \aMid{a_k}{^2}}}w$}.}\vspace{2pt}\par\quad
 {Then {$\sum_{k=1}^m\aMid{a_k}{^2}=0.$ Thus $a_1=\dots=a_m=0.$} Hence $\Par{v_1,\dots,v_n}$ is liney indep.}\PfEnd
-\SepLine\pagebreak
+\SepLine
+
+\Anchor{3A4e11}\ProblemBnoor{4E 11}{
+	\TextA{Supp $V$ is finide, $T\in\Lm{V}$ is suth $\forall S\in\Lm{V},ST=TS$. Prove $\exists\,\lambda\in\Fbb,T=\lambda I$.}
+}If $V=\zeroSubs,$ then done. Now supp $V\neq\zeroSubs.$\par\quad
+Asum $\forall v\in V,\Par{v,Tv}$ is linely dep, then $\exists\,\lambda_v\in\Fbb,Tv=\lambda_v v.$\par\quad
+To prove $\lambda_v$ is indep of $v$, we discuss in two cases:\vspace{2pt}\par\hspace{1pt}
+$\MathRightBrace{l}{$($-$) If $\Par{v,w}$ is liney indep, $\lambda_{v+w}\Par{v+w}=T\Par{v+w}=Tv+Tw=\lambda_v v+\lambda_w w\\$($=$) Othws, supp $w=cv$, $\lambda_w w=Tw=cTv=c\lambda_v v=\lambda_v w\Rightarrow\Par{\lambda_w-\lambda_v}w}\Rightarrow \lambda_w=\lambda_v.$\vspace{6pt}\par\quad
+Now we prove the asum. Asum $\exists\,v\in V,\Par{v,Tv}$ is liney indep. Let $B_V=\Par{v,Tv,u_1,\dots,u_n}$.\par\quad
+Define $S\in\Lm{V}$ by $S\Par{av+bTv+c_1 u_1+\dots+c_n u_n}=bv\Rightarrow S\Par{Tv}=v=T\Par{Sv}=0.$ Ctradic.\PfEnd\vspace{6pt}\quad
+\Or \;\envFontLarge{\Large\vspace{4pt}Let $B_V=\Par{v_1,\dots,v_m}.$ Define {\Large$\varphi\in\Lm{V,\Fbb}$} by $\varphi\Par{v_1}=\cdots=\varphi\Par{v_m}=1.$}\par\quad
+\Blind{\Or \;}{\Large\vspace{4pt}Supp $v\in V.$ Define $S_v\in\Lm{V}$ by $S_v \Par{u}=\varphi\Par{u}v.$}\par\quad
+\Blind{\Or \;}{\Large Then $Tv=T\Par{\varphi\Par{v_1}v}=T\Par{S_v v_1}=S_v\Par{Tv_1}=\varphi\Par{Tv_1}v=\lambda v.$}\PfEnd\vspace{10pt}\quad
+\Or \;{\vspace{5pt}Define {\Large$S_k\BigBigPar{{\sum_{i=1}^n a_i v_i}}=a_k v_k$}. Then {\Large$S_kv=v\Longleftrightarrow\exists\,!\,a_k\in\Fbb,v=a_kv_k$}.}\par\quad
+\Blind{\Or \;}{\vspace{5pt}Hence {\Large$S_k\Par{Tv_k}=T\Par{S_kv_k}=Tv_k\Rightarrow Tv_k=a_k v_k$}.}\par\quad
+\Blind{\Or \;}{\vspace{3pt}Define {\Large$A^{\SmallPar[1.5pt]{j,k}}\in\Lm{V}$} by {\Large$A^{\SmallPar[1.5pt]{j,k}}v_j=v_k,\;A^{\SmallPar[1.5pt]{j,k}}v_k=v_j,\;A^{\SmallPar[1.5pt]{j,k}}v_x=0,x\neq j,k$}.}\par\quad
+\Blind{\Or \;}{\hspace{-2.7pt}$\hText{$Then$\\[6pt]\;}$ {\Large$\hMath{r}{\left|\;\;}{\;\right\}}{A^{\SmallPar[1.5pt]{j,k}}Tv_j=TA^{\SmallPar[1.5pt]{j,k}}v_j=Tv_k=a_kv_k\\A^{\SmallPar[1.5pt]{j,k}}Tv_j=A^{\SmallPar[1.5pt]{j,k}}a_jv_j=a_jA^{\SmallPar[1.5pt]{j,k}}v_j=a_jv_k}\Rightarrow a_k=a_j.$}} {Hence $a_k$ is indep of $v_k.$}\PfEnd
+\SepLine
 
 \Anchor{3A4e17}\ProblemBnoor{{4E 17}}{
 	\TextB{Supp $V$ is finide. Show all two-sided ideals of $\Lm{V}$ are $\zeroSubs$ and $\Lm{V}$.}
@@ -647,15 +718,15 @@ For any $T\in X,\;\forall E\in\Lm{V},\range TE\subseteq\range T;\;\range ET=\Spa
 \Anchor{3B4e32}\ProblemBnoor{{4E 3.B.32}}{
 	\TextA{Supp $\dim V=n.$ Supp $\varphi:\Lm{V}\rightarrow\Fbb$ is liney.}
 	\TextA{Show if $\forall S,T\in\Lm{V},\varphi\Par{ST} = \varphi\Par{S}\cdot\varphi\Par{T}$, then $\varphi = 0$.}
-}Using notas in (4E 17). Using the result in {\NOTEFOR} [3.60].\parSol{\vspace{2pt}}
+}Using notas in (4E 17) and {\NOTEFOR} [3.60].\parSol{\vspace{2pt}}
 Supp $\varphi\neq 0\Rightarrow\exists\,i,j\in\Bra{1,\dots,n},\,\varphi\Par{R_{i,j}}\neq 0$. \envFontLarge Becs {\Large\vspace{4pt}$R_{i,j}=R_{x,j}\circ R_{i,x},\,\,\forall x=1,\dots,n$}\parSol{}
 {\Large\vspace{4pt}$\Rightarrow\varphi\Par{R_{i,j}}=\varphi\Par{R_{x,j}}\cdot\varphi\Par{R_{i,x}}\neq 0\Rightarrow\varphi\Par{R_{x,j}}\neq 0$ {\large and} $\varphi\Par{R_{i,x}}\neq 0.$}\parSol{}
 {\vspace{4pt}Again, becs {\Large$R_{i,x}=R_{y,x}\circ R_{i,y},\,\,\forall y=1,\dots,n.$} \;Thus {\Large$\varphi\Par{R_{y,x}}\neq 0,\;\forall x,y=1,\dots,n$}.}\parSol{}
 {Let $k\neq i,j\neq l$ and then {\Large\vspace{4pt}$\varphi\Par{R_{i,j}\circ R_{l,k}}=\varphi\Par{R_{l,k}\circ R_{i,j}}=\varphi\Par{0}=0=\varphi\Par{R_{l,k}}\cdot\varphi\Par{R_{i,j}}$}}\parSol{}
 {\vspace{4pt}{\Large$\Rightarrow\varphi\Par{R_{l,k}}=0$} or {\Large$\varphi\Par{R_{i,j}}=0$}. Ctradic.\PfEnd}\parSol{\vspace{4pt}}
-\FontNorm\Or {Note that by (4E 3.A.17), $\exists\,S,T\in\Lm{V},ST-TS\neq 0.$}\parSol{}
-{Then $\varphi\Par{ST-TS}=\varphi\Par{S}\varphi\Par{T}-\varphi\Par{T}\varphi\Par{S}=0\Rightarrow ST-TS\in\null\varphi\neq\zeroSubs.$}\parSol{}
-{Note that $\forall\,E\in\null\varphi,T\in\Lm{V},\varphi\Par{ET}=\varphi\Par{TE}=0\Rightarrow ET,TE\in\null\varphi.$}\PfEnd
+\FontNorm\Or {Becs $\exists\,S,T\in\Lm{V},ST-TS\neq 0.$ While $\varphi\Par{ST-TS}=\varphi\Par{S}\varphi\Par{T}-\varphi\Par{T}\varphi\Par{S}=0.$}\parSol{}
+\Blind{\Or }{Note that $\forall E\in\null\varphi,T\in\Lm{V},\varphi\Par{ET}=\varphi\Par{TE}=0\Rightarrow ET,TE\in\null\varphi.$}\parSol{}
+\Blind{\Or }{Thus $\null\varphi$ is a nonzero two-sided ideal of $\Lm{V}.$ By (4E 17).}\PfEnd
 \SepLine
 
 \Anchor{1B4e7}\ProblemBnoor{4E 1.B.7}{
@@ -700,44 +771,25 @@ Then both $W$ and $V$ have a non0 elem.\par\quad\HII\Hb
 (b) If not.\PfEnd
 \SepLine
 
-\vfill\Anchor{3A4e11}\ProblemB{
-	\TextB{Supp $V$ is finide, $T\in\Lm{V}$ is suth $\forall S\in\Lm{V},ST=TS$. Prove $\exists\,\lambda\in\Fbb,T=\lambda I$.}
-}If $V=\zeroSubs,$ then done. Now supp $V\neq\zeroSubs.$\par\quad
-Asum $\forall v\in V,\Par{v,Tv}$ is linely dep, then $\exists\,\lambda_v\in\Fbb,Tv=\lambda_v v.$\par\quad
-To prove $\lambda_v$ is indep of $v$, we discuss in two cases:\vspace{4pt}\par\hspace{1pt}
-$\MathRightBrace{l}{$
-	($-$) If $\Par{v,w}$ is liney indep, $\lambda_{v+w}\Par{v+w}=T\Par{v+w}=Tv+Tw=\lambda_v v+\lambda_w w\\ $\qquad\qquad\qquad\qquad\qquad\qquad\qquad $\Rightarrow \Par{\lambda_{v+w}-\lambda_v}v+\Par{\lambda_{v+w}-\lambda_w}w=0\\ $
-	($=$) Othws, supp $w=cv$, $\lambda_w w=Tw=cTv=c\lambda_v v=\lambda_v w\Rightarrow\Par{\lambda_w-\lambda_v}w$
-	$}\Rightarrow \lambda_w=\lambda_v.$\vspace{4pt}\par\quad
-Now we prove the asum. Asum $\exists\,v\in V,\Par{v,Tv}$ is liney indep. Let $B_V=\Par{v,Tv,u_1,\dots,u_n}$.\par\quad
-Define $S\in\Lm{V}$ by $S\Par{av+bTv+c_1 u_1+\dots+c_n u_n}=bv\Rightarrow S\Par{Tv}=v=T\Par{Sv}=0.$ Ctradic.\PfEnd\vspace{8pt}\quad
-\Or \;\envFontLarge{\Large\vspace{6pt}Let $B_V=\Par{v_1,\dots,v_m}.$ Define {\Large$\varphi\in\Lm{V,\Fbb}$} by $\varphi\Par{v_1}=\cdots=\varphi\Par{v_m}=1.$}\par\quad
-\Blind{\Or \;}{\Large\vspace{6pt}Supp $v\in V.$ Define $S_v\in\Lm{V}$ by $S_v \Par{u}=\varphi\Par{u}v.$}\par\quad
-\Blind{\Or \;}{\Large\vspace{6pt}Then $Tv=T\Par{\varphi\Par{v_1}v}=T\Par{S_v v_1}=S_v\Par{Tv_1}=\varphi\Par{Tv_1}v=\lambda v.$}\PfEnd\vspace{12pt}\quad
-\Or \;{\vspace{6pt}Define {\Large$S_k\BigBigPar{{\sum_{i=1}^n a_i v_i}}=a_k v_k$}. Then {\Large$S_kv=v\Longleftrightarrow\exists\,!\,a_k\in\Fbb,v=a_kv_k$}.}\par\quad
-\Blind{\Or \;}{\vspace{6pt}Hence {\Large$S_k\Par{Tv_k}=T\Par{S_kv_k}=Tv_k\Rightarrow Tv_k=a_k v_k$}.}\par\quad
-\Blind{\Or \;}{\vspace{6pt}Define {\Large$A^{\SmallPar[1.5pt]{j,k}}\in\Lm{V}$} by {\Large$A^{\SmallPar[1.5pt]{j,k}}v_j=v_k,\;A^{\SmallPar[1.5pt]{j,k}}v_k=v_j,\;A^{\SmallPar[1.5pt]{j,k}}v_x=0,x\neq j,k$}.}\par\quad
-\Blind{\Or \;}{\vspace{4pt}\hspace{-2.7pt}$\hText{$Then$\\[6pt]\;}$ {\Large$\hMath{r}{\left|\;\;}{\;\right\}}{A^{\SmallPar[1.5pt]{j,k}}Tv_j=TA^{\SmallPar[1.5pt]{j,k}}v_j=Tv_k=a_kv_k\\A^{\SmallPar[1.5pt]{j,k}}Tv_j=A^{\SmallPar[1.5pt]{j,k}}a_jv_j=a_jA^{\SmallPar[1.5pt]{j,k}}v_j=a_jv_k}\Rightarrow a_k=a_j.$}} {Hence $a_k$ is indep of $v_k.$}\PfEnd
+\Anchor{3A'3}\ProblemB{
+	\TextB{Supp $S\neq\emptySet,\,C_S=\Bra{\,f\in\Fbb^S:\text{\ensuremath{\exists} finily many \ensuremath{x}, suth \ensuremath{f\Par{x}\neq0}}}.$ Then $C_S$ is a subsp of $\Fbb^S.$\vspace{1pt}}
+	\PrePa\TextB{If $S=\Bra{x_1,\dots,x_n}.$ Find a bss of $\Fbb^S$ and conclude $\Fbb^S=C_S.$\hfill\tgnr\FontNorm{$\Fbb^S$ infinide $\Rightarrow S$ infini.}\vspace{1pt}}
+	\PrePb\TextB{If $S$ has infily many elem. Prove $\Fbb^S$ is infinide.\hfill\tgnr\FontNorm{$\Fbb^S$ finide $\Rightarrow S$ fini.}\vspace{1pt}}
+	\PrePc\TextB{Supp $V$ over $\Fbb$ has a fini spanning list. Prove $\exists$ surj $T\in\Lm{C_V,V}.$}
+}(a) Define each $\,f_i\Par{x_j}=\delta_{i,j}.$ Supp $\,f\in C_S,$ let each $y_k=\,f\Par{x_k}=\BigPar{y_1\,f_1+\dots+y_n\,f_n}\Par{x_k}.$\parSol{\Ha}
+Then $\,f=y_1\,f_1+\dots+y_n\,f_n\in\Span{\,f_1,\dots,f_n}.$ 又 If $\,f=0,$ then each $y_k=0.$\vspace{3pt}\parSol{}
+(b) Let $S=\Bra{x_1,\cdots,x_n,\cdots}.$ Define each $\,f_i\Par{x_j}=\delta_{i,j}\Rightarrow f_i\in C_S.$ 又 $\Par{\,f_1,\cdots,f_n,\cdots}$ liney indep.\parSol{\Hb}
+\ACoro $S$ fini $\Longleftrightarrow\Fbb^S$ finide.\vspace{3pt}\parSol{}
+(c) Define $T:C_V\rightarrow V$ by $T\Par{f}=\sum\,f\Par{x}x.$ Note that $f\Par{x}\neq0$ for finily many $x\in V.$\parSol{\Hc}
+Let $B_V=\Par{x_1,\dots,x_n}.$ For $v\in V,\exists\,!\,a_i,\,v=a_1v_1+\dots+a_nv_n.$\parSol{\Hc}
+Define each $f\Par{x_k}=a_k$ and $f\Par{x}=0$ for $x\not\in B_V.$ Then $T\Par{f}=v.$\PfEnd
 \SepLine
+
+\ChEnd
 
 \pagebreak
 
-\Anchor{3AT3}\ProblemBX[]{\TipsN{3}}{
-	$T\in\Lm{V,W}\Longleftrightarrow T\in\Lm{V,\range T}\Longleftrightarrow T\in\Lm{V,U},$ if $\range T$ is a subsp of $U.$\TextA{}
-	\ACoro $\Bra{T\in\Lm{V,W}:\range T\subseteq U}=\Bra{T\in\Lm{V,U}}=\Lm{V,U},$ a subsp of $\Lm{V,W}.$\TextA{\vspace{-2pt}}
-}\SepLine
-
-\Anchor{9A2}\Anchor{9A6}\Anchor{3B4e33}\ProblemBnoor{{9.A.2,6 \OR 4E 3.B.33}}{
-	\TextB{Supp $V,W$ are on $\Rbb,$ and $T\in\Lm{V,W}.$ Show}
-	{\tgnr\large(a)} $T_{\!\Cbb}\in\Lm{V_{\!\Cbb},W_{\!\Cbb}}.$ \;{\tgnr\large(b)} $\Null\Par{T_{\!\Cbb}}=\BigPar{\null T}{_\Cbb},\Range\Par{T_{\!\Cbb}}=\BigPar{\range T}{_\Cbb}.$ \;{\tgnr\large(c)} $T_{\!\Cbb}$ is inv $\Longleftrightarrow T$ is inv.\TextB{}
-}{(a) $T_{\!\Cbb}\BigPar{\Par{u_1+\i v_1}+\Par{x+\i y}\Par{u_2+\i v_2}}=T\Par{u_1+xu_2-yv_2}+\i T\Par{v_1+xv_2+yu_2}$\parSol{\Ha}
-	$=T_{\!\Cbb}\Par{u_1+\i v_1}+\Par{x+\i y}T_{\!\Cbb}\Par{u_2+\i v_2}.$\parSol{}
-	(b) $u+\i v\in\Null\Par{T_{\!\Cbb}}\Longleftrightarrow u,v\in\null T\Longleftrightarrow u+\i v\in\BigPar{\null T}{_\Cbb}.$\parSol{\Hb}
-	$w+\i x\in\Range\Par{T_{\!\Cbb}}\Longleftrightarrow w,x\in\range T\Longleftrightarrow w+\i x\in\BigPar{\range T}{_\Cbb}.$\parSol{}
-	(c) $\forall w,x\in W,\exists\,!\,u,v\in V,T_{\!\Cbb}\Par{u+\i v}=w+\i x\Longleftrightarrow Tu=w,Tv=x.$ \Or By (b).}\large\PfEnd
-\SepLine
-
-\vfill\ChDecl{Ch3B}{3$\cdot$B}{}
+\ChDecl{Ch3B}{3$\cdot$B}{}
 
 \vspace{4pt}
 
@@ -749,33 +801,10 @@ Define $S\in\Lm{V}$ by $S\Par{av+bTv+c_1 u_1+\dots+c_n u_n}=bv\Rightarrow S\Par{
 \AComm Let $\Par{e_1,\dots,e_m}$ be std bss of $\Fbb^m.$ Then $T{e_k}=v_k.$
 \SepLine
 
-\ProblemN{\Anchor{3B7}{7}}{
-	\TextA{Supp $2\leqslant\dim V=n\leqslant m=\dim W$, if $W$ is finide.}
-	\TextA{Show $U=\Bra{T\in\Lm{V,W}:T\text{ is not inje}}$ is not a subsp of $\Lm{V,W}$.}
-}{\tgsl The set of all inje $T\in\Lm{V,W}$ is a not subsp either.}\par\quad
-Let $\Par{v_1,\dots,v_n}$ be a bss of $V$, $\Par{w_1,\dots,w_m}$ be liney indep in $W$. \Sbra{ $2\leqslant n\leqslant m.$ }\par\hspace{0pt}
-$\MathRightMid{l}{$
-Define $T_1\in\Lm{V,W}$ as $T_1:\,\,\,\,v_1\mapsto 0,$\qquad$v_2\mapsto w_2,$\qquad$v_i\mapsto w_i$.$\\$
-Define $T_2\in\Lm{V,W}$ as $T_2:\,\,\,\,v_1\mapsto w_1,$ \quad\,$v_2\mapsto 0,$\,\,\,\qquad$v_i\mapsto w_i$,\quad $i=3,\dots,n.}$ Thus $T_1+T_2\not\in U.$\PfEnd[-23pt]\vspace{10pt}
-\AComm If $\dim V=0,$ then $V=\zeroSubs=\Span{\,}$. $\forall\,T\in\Lm{V,W}, T$ is inje. Hence $U=\emptySet$.\parCom
-If $\dim V=1,$ then $V=\Span{v_0}.$ Thus $U=\Span{T_0},$ where $\forall v\in V,T_0 v=0\Rightarrow T_0=0.$\par
-\SepLine
-
-\ProblemN{\Anchor{3B8}{8}}{
-	\TextA{Supp $2\leqslant\dim W=m\leqslant\dim V$, if $V$ is finide.}
-	\TextA{Show $U=\Bra{T\in\Lm{V,W}:T\text{ is not surj}}$ is not a subsp of $\Lm{V,W}$.}
-}{\tgsl The set of all surj $T\in\Lm{V,W}$ is not a subsp either. \tgsc Using the generalized version of [3.5].}\par\quad
-Let $\Par{v_1,\dots,v_n}$ be liney indep in $V$, $\Par{w_1,\dots,w_m}$ be a bss of $W$. \Sbra{  $n\in\Bra{m,m+1,\dots}$; $2\leqslant m\leqslant n.$ }\par\quad
-Define $T_1\in\Lm{V,W}$ as $T_1:\,\,\,\,v_1\mapsto 0,$\qquad$v_2\mapsto w_2,$\qquad$v_j\mapsto w_j,$\qquad$v_{m+i}\mapsto 0.$\par\quad
-Define $T_2\in\Lm{V,W}$ as $T_2:\,\,\,\,v_1\mapsto w_1,$\,\,\,\quad$v_2\mapsto 0,$\,\,\,\qquad$v_j\mapsto w_j,$\qquad$v_{m+i}\mapsto 0.$\par\quad
-\BigPar{ For each $j=2,\dots,m;\,\,i=1,\dots,n-m$, if $V$ is finide, othws let $i\in\Nbp.$ } Thus $T_1+T_2\not\in U.$\PfEnd\vspace{2pt}
-\AComm If $\dim W=0,$ then $W=\zeroSubs=\Span{\,}$. $\forall\,T\in\Lm{V,W}, T$ is surj. Hence $U=\emptySet.$\parCom
-If $\dim W=1,$ then $W=\Span{w_0}.$ Thus $U=\Span{T_0},$ where each $T_0v_i=0\Rightarrow T_0=0.$\SepLine
-
 \ProblemN{\Anchor{3B9}{9}}{
 	\TextA{Supp $\Par{v_1,\dots,v_n}$ is liney indep. Prove for any inje $T,\,\Par{Tv_1,\dots,Tv_n}$ is liney indep.}
 }$a_1 Tv_1+\dots+a_n Tv_n=0=T\BigBigPar{{\sum_{i=1}^n a_i v_i}}\Longleftrightarrow \sum_{i=1}^n a_i v_i=0\Longleftrightarrow a_1=\dots=a_n=0.$\PfEnd
-\SepLine\pagebreak
+\SepLine
 
 \ProblemN{\Anchor{3B10}{10}} {
 	\TextA{Supp $\Span{v_1,\dots,v_n}=V$. Show $\Span{Tv_1,\dots,Tv_n}=\range T$.}
@@ -794,23 +823,6 @@ If $\dim W=1,$ then $W=\Span{w_0}.$ Thus $U=\Span{T_0},$ where each $T_0v_i=0\Ri
 }(a) $T^m$ inje $\Rightarrow$ if $Tv=0,$ then $T^{m-1} Tv=T^m v=0\Rightarrow v=0,$ thus $T$ inje. \,Convly immed.\vspace{2pt}\parSol{}
 (b) $T^m$ surj $\Rightarrow\forall u\in V,\exists\,v\in V\Rightarrow\exists\,w=T^{m-1}v,\;T^m v=u=Tw.$\parSol{\Hb}
 $T$ surj $\Rightarrow\forall u\in V,\exists\,v_1,\dots,v_m\in V,\,T\Par{v_1}=T^2v_2=\cdots=T^m v_m=u.$\PfEnd
-\SepLine
-
-\Anchor{8A5}\ProblemB{
-	\TextB{Supp $T\in\Lm{V},$ $T^{n-1}v\neq 0,\;T^nv=0.$ \,Prove $\BigPar{v,Tv,\dots,T^{n-1}v}$ is liney indep.}
-}$a_0v+a_1Tv+\dots+a_{n-1}T^{n-1}v=0\Rightarrow a_0T^{n-1}v=0\Rightarrow a_0=0.$ \,Simlr for $a_1,\dots,a_{n-1}.$\PfEnd
-\SepLine
-
-\Anchor{3B'1}\ProblemB{
-	\TextB{Supp $S,T\in\Lm{V}.$ Prove or give a countexa\hspace{1pt}$:$}
-	\PrePa\TextB{$\null S\subseteq\null T\Rightarrow\range T\subseteq\range S;$ \; {\tgnr\large(b)} $\range T\subseteq\range S\Rightarrow\null S\subseteq\null T.$}
-}Let $B_V=\Par{v_1,v_2,v_3}.$ Countexas:\par{\hspace{0pt}}
-$\hText{$(a) Let $\\\,}\hText{S:v_1\mapsto 0;\;\;v_2\mapsto 0;\;\;v_3\mapsto v_2.\\T:v_1\mapsto 0;\;\;v_2\mapsto 0;\;\;v_3\mapsto v_3.}\MathLeftMid{l}{$
-	\!\!Then $\null S=\null T,$ but$\\$
-	\!\!$\range T=\Span{v_3}\nsubseteq\Span{v_2}=\null T.}$\par{\hspace{0pt}}
-$\hText{$(b) Let $\\\,}\hText{S:v_1\mapsto v_2;\;\;v_2\mapsto v_2;\;\;v_3\mapsto v_2.\\T:v_1\mapsto 0;\;\;v_2\mapsto 0;\;\;v_3\mapsto v_2.}\MathLeftMid{l}{$
-	\!\!Then $\range T=\range S,$ but$\\$
-	\!\!$\null S=\Span{v_1-v_2,v_2-v_3,v_3-v_1}\nsubseteq\Span{v_1,v_2}=\null T.}$\par\vspace{8pt}
 \SepLine
 
 \ProblemN{\Anchor{3B16}{16}}{
@@ -4103,6 +4115,11 @@ By asum, $\exists\,B_W=\Par{v_2,\dots,v_n}$ suth $\hat{S}$ and all $\hat{T}$ has
 \ChEnd
 
 \ChDecl{Ch8A}{8.A}{}
+
+\Anchor{8A5}\ProblemN{5}{
+	\TextA{Supp $T\in\Lm{V},$ $T^{n-1}v\neq 0,\;T^nv=0.$ \,Prove $\BigPar{v,Tv,\dots,T^{n-1}v}$ is liney indep.}
+}$a_0v+a_1Tv+\dots+a_{n-1}T^{n-1}v=0\Rightarrow a_0T^{n-1}v=0\Rightarrow a_0=0.$ \,Simlr for $a_1,\dots,a_{n-1}.$\PfEnd
+\SepLine
 
 \ChEnd
 
