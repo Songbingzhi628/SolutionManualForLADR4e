@@ -301,7 +301,7 @@ Supp $\Par{p_0,p_1,\dots,p_m}$ is liney indep. Define $p\in\PoF{m}$ by $p\Par{z}
 Then $\Span{p_0,p_1,\dots,p_m}\subsetneq\PoF{m}$ while the list $\Par{p_0,p_1,\dots,p_m}$ has len $\Par{m+1}$.\par\quad
 Hence $\Par{p_0,p_1,\dots,p_m}$ is linely dep. For if not, then becs $\Par{1,z,\dots,z^m}$ of len $\Par{m+1}$ spans $\PoF{m},$\par\quad
 by the steps in [2.23] trivially, $\Par{p_0,p_1,\dots,p_m}$ of len $\Par{m+1}$ spans $\PoF{m}.$ Ctradic.\PfEnd\vspace{6pt}\par\quad
-\Or Note that $\PoF{m}=\Span{\underbrace{\;1,\;z,\;\dots,\;z^m\;}_{\text{of len }\SmallPar{m+1}}}.$ Then $\Par{p_0,p_1,\dots,p_m,z}$ of len $\Par{m+2}$ is liney dep.\vspace{2pt}\par\quad
+\Or Becs $\Par{1,z,\dots,z^m}$ of len $\Par{m+1}$ spans $\PoF{m}.$ Then $\Par{p_0,p_1,\dots,p_m,z}$ of len $\Par{m+2}$ is liney dep.\par\quad
 As shown above,  $z\not\in\Span{p_0,p_1,\dots,p_m}.$ And hence by [2.21](a), $\Par{p_0,p_1,\dots,p_m}$ is liney dep.\PfEnd
 \SepLine
 \ChEnd
@@ -314,7 +314,7 @@ As shown above,  $z\not\in\Span{p_0,p_1,\dots,p_m}.$ And hence by [2.21](a), $\P
 If we allow using $“$infini list$”$, then we must assure that $\Par{v_1,\dots,v_n,\dots}$ is a spanning $“$list$”$\TextB{}
 suth $\forall v\in V,\exists$ smallest $n\in\Nbp,\;v=a_1 v_1+\dots+a_n v_n.$ Moreover, given a list $\Par{w_1,\cdots,w_n,\cdots}$ in $W,$\TextB{}
 we can prove $\exists\,!\,T\in\Lm{V,W}$ with each $Tv_k=w_k,$ which has less restr than [3.5].\TextB{}
-But the key point is, how can we assure that such a $“$list$”$ exis ?
+But the key point is, how can we assure that such a $“$list$”$ exis ? \Sbra{{\FontSmall\tgsl See higher courses}}
 \SepLine
 
 \ProblemN{\Anchor{2B1}{1}}{
@@ -771,18 +771,19 @@ Then both $W$ and $V$ have a non0 elem.\par\quad\HII\Hb
 (b) If not.\PfEnd
 \SepLine
 
-\Anchor{3A'3}\ProblemB{
-	\TextB{Supp $S\neq\emptySet,\,C_S=\Bra{\,f\in\Fbb^S:\text{\ensuremath{\exists} finily many \ensuremath{x}, suth \ensuremath{f\Par{x}\neq0}}}.$ Then $C_S$ is a subsp of $\Fbb^S.$\vspace{1pt}}
-	\PrePa\TextB{If $S=\Bra{x_1,\dots,x_n}.$ Find a bss of $\Fbb^S$ and conclude $\Fbb^S=C_S.$\hfill\tgnr\FontNorm{$\Fbb^S$ infinide $\Rightarrow S$ infini.}\vspace{1pt}}
-	\PrePb\TextB{If $S$ has infily many elem. Prove $\Fbb^S$ is infinide.\hfill\tgnr\FontNorm{$\Fbb^S$ finide $\Rightarrow S$ fini.}\vspace{1pt}}
-	\PrePc\TextB{Supp $V$ over $\Fbb$ has a fini spanning list. Prove $\exists$ surj $T\in\Lm{C_V,V}.$}
+\Anchor{3ANFS}\ProblemBX{\NoteFor{$\Fbb^S$}}{
+	\TextB{\vspace{1pt}}
+	\TextB{Supp $S\neq\emptySet,\,C_S=\Bra{\,f\in\Fbb^S:\text{\ensuremath{\exists} finily many \ensuremath{x}, suth \ensuremath{f\Par{x}\neq0}}}.$ Then $C_S$ is a subsp of $\Fbb^S.$\vspace{2pt}}
+	\PrePa\TextB{If $S=\Bra{x_1,\dots,x_n}.$ Find a bss of $\Fbb^S$ and conclude $\Fbb^S=C_S.$\hfill\tgnr\FontNorm{$\Fbb^S$ infinide $\Rightarrow S$ infini.}\vspace{2pt}}
+	\PrePb\TextB{If $S$ has infily many elem. Prove $\Fbb^S$ is infinide.\hfill\tgnr\FontNorm{$\Fbb^S$ finide $\Rightarrow S$ fini.}\vspace{2pt}}
+	\PrePc\TextB{Supp $V$ is on $\Fbb.$ Prove $\exists$ surj $T\in\Lm{C_V,V}.$\vspace{2pt}}
 }(a) Define each $\,f_i\Par{x_j}=\delta_{i,j}.$ Supp $\,f\in C_S,$ let each $y_k=\,f\Par{x_k}=\BigPar{y_1\,f_1+\dots+y_n\,f_n}\Par{x_k}.$\parSol{\Ha}
 Then $\,f=y_1\,f_1+\dots+y_n\,f_n\in\Span{\,f_1,\dots,f_n}.$ 又 If $\,f=0,$ then each $y_k=0.$\vspace{3pt}\parSol{}
 (b) Let $S=\Bra{x_1,\cdots,x_n,\cdots}.$ Define each $\,f_i\Par{x_j}=\delta_{i,j}\Rightarrow f_i\in C_S.$ 又 $\Par{\,f_1,\cdots,f_n,\cdots}$ liney indep.\parSol{\Hb}
 \ACoro $S$ fini $\Longleftrightarrow\Fbb^S$ finide.\vspace{3pt}\parSol{}
 (c) Define $T:C_V\rightarrow V$ by $T\Par{f}=\sum\,f\Par{x}x.$ Note that $f\Par{x}\neq0$ for finily many $x\in V.$\parSol{\Hc}
-Let $B_V=\Par{x_1,\dots,x_n}.$ For $v\in V,\exists\,!\,a_i,\,v=a_1v_1+\dots+a_nv_n.$\parSol{\Hc}
-Define each $f\Par{x_k}=a_k$ and $f\Par{x}=0$ for $x\not\in B_V.$ Then $T\Par{f}=v.$\PfEnd
+\uline{Becs for any $v\in V,\exists$ liney indep $\Par{v_1,\dots,v_n}$ suth $v=a_1v_1+\dots+a_nv_n.$} \Sbra{{\FontSmall\tgsl See higher courses}}\parSol{\Hc}
+Define each $f\Par{v_k}=a_k$ and $f\Par{x}=0$ for $x\not\in\Bra{v_1,\dots,v_n}.$ Then $T\Par{f}=v.$\PfEnd
 \SepLine
 
 \ChEnd
@@ -2618,16 +2619,16 @@ Now $\Gamma\apostrophe\BigPar{\Psi\Par{x_1,\dots,x_m}}=x_1\varphi_1+\dots+x_m\va
 \vspace{4pt}
 
 \Anchor{2A16}\ProblemBnoor{2.A.16}{
-	\TextA{Prove the vecsp of all continuous functions in $\Rbb^{[0,1]}$ is infinide.}
-}Denote the vecsp by $U$.\par\quad
-Choose one $m\in\Nbp.$ Supp $a_0,\dots,a_m\in\Rbb$ are suth $p\Par{x}=a_0+a_1 x+\dots+a_m x^m=0,\,\forall x\in\Sbra{0,1}.$\par\quad
-Then $p$ has infily many roots and hence each $a_k=0,$ othws $\deg p\geqslant 0,$ ctradic [4.12].\par\quad
-Thus $\Par{1,x,\dots,x^m}$ is liney indep in $\Rbb^{[0,1]}.$ Simlr to [2.16], $U$ is infinide.\PfEnd\vspace{8pt}\quad
+	\TextA{Prove the vecsp $U$ of all continuous functions in $\Rbb^{[0,1]}$ is infinide.}
+}By \Sbra{3.A {\NOTEFOR} $\Fbb^S$}, immed.\PfEnd\vspace{2pt}\parSol{}
+\Or Choose $m\in\Nbp.$ Let $p\Par{x}=a_0+a_1 x+\dots+a_m x^m=0\in\Rbb^{[0,1]}.$\parSol{}
+Then $p$ has infily many roots and hence each $a_k=0,$ othws $\deg p\geqslant 0,$ ctradic [4.12].\parSol{}
+Thus $\Par{1,x,\dots,x^m}$ is liney indep in $\Rbb^{[0,1]}.$ Simlr to [2.16], $U$ is infinide.\PfEnd\vspace{8pt}\parSol{}
 \Or Note that\; $\Frac{\;1\;}{1}>\Frac{\;1\;}{2}>\dots>\Frac{\;1\;}{m},\,\,\,\forall m\in\Nbp.$ Supp\; $f_m=\MathLeftBrace{l}{
 	\!x-{}${\Large$\frac{\;1\;}{m}$}$,\;\;x\in\Interval{(}{]}{${\Large$\frac{\;1\;}{m}$}$,\,1\,}\\
 	\!0,\hfill x\in\Sbra{\,0,\,${\Large$\frac{\;1\;}{m}$}$\,}
-}$\vspace{2pt}\par\quad
-Then\; $f_1\XPar{${\Large$\frac{\;1\;}{m}$}$}=\dots=f_m\XPar{${\Large$\frac{\;1\;}{m}$}$}=0\neq f_{m+1}\XPar{${\Large$\frac{\;1\;}{m}$}$}.$ 
+}$\vspace{2pt}\parSol{}
+Then\; $f_1\XPar[0pt]{${\Large$\frac{\;1\;}{m}$}$}=\dots=f_m\XPar[0pt]{${\Large$\frac{\;1\;}{m}$}$}=0\neq f_{m+1}\XPar[0pt]{${\Large$\frac{\;1\;}{m}$}$}.$ 
 \;Hence $f_{m+1}\not\in\Span{f_1,\dots,f_m}.$ By (2.A.14).\PfEnd
 \SepLine
 
@@ -2636,9 +2637,9 @@ Then\; $f_1\XPar{${\Large$\frac{\;1\;}{m}$}$}=\dots=f_m\XPar{${\Large$\frac{\;1\
 }Define $\theta\in\Lm[\Sbra]{\BigPar{\PoFi}\apostrophe,\Fbb^{\infty}}$ by $\theta\Par{\varphi}=\BigPar{\varphi\Par{1},\varphi\Par{z},\cdots,\varphi\Par{z^m},\cdots}.$\parSol{}
 \NOTICE that $\forall p\in\PoRi,\exists\,!\,c_i\in\Fbb,m=\deg p,\;p\Par{z}=c_0+c_1z+\dots+c_{m}z^{m}\in\PoF{m}.$\vspace{1pt}\parSol{}
 Inje: $\theta\Par{\varphi}=0\Rightarrow\forall p\in\PoFi{},\varphi\Par{p}=c_0\varphi\Par{1}+c_1\varphi\Par{z}+\dots+c_m\varphi\Par{z^m}=0.$\vspace{1pt}\parSol{}
-Surj: Define $\psi_x\Par{p}=x_0c_0+\dots+x_mc_m$ for any $x=\Par{x_0,x_1,\cdots}\in\Fbb^\infty.$ Now each $\psi\BigPar{z^k}=x_k.$\parSol{}
+Surj: Define $\psi_x\Par{p}=x_0c_0+\dots+x_mc_m$ for any $x=\Par{x_0,x_1,\cdots}\in\Fbb^\infty.$ Now each $\psi_x\BigPar{z^k}=x_k.$\parSol{}
 \Blind{Surj:} $\forall p,q\in\PoFi{},$ supp $\deg p=m\geqslant n=\deg q,$ \Sbra{{\tgsl which is why we do not write $\Par{p+\lambda q}.$}}\parSol{}
-\Blind{Surj:} $\psi_x\Par{p+q}=x_0\Par{a_0+b_0}+x_n\Par{a_n+b_n}+x_{n+1}a_{n+1}+\dots+x_ma_m=\psi_x\Par{p}+\psi_x\Par{q}.$\PfEnd\vspace{4pt}
+\Blind{Surj:} $\psi_x\Par{\lambda p+\mu q}=\sum_{j=0}^nx_j\Par{\lambda a_j+\mu b_j}+\sum_{k=1}^{m-n}x_{n+k}\lambda a_{n+k}=\lambda\psi_x\Par{p}+\mu\psi_x\Par{q}.$\PfEnd\vspace{4pt}
 \AComm $\PoFi$ is not iso to $\Fbb^\infty,$ so is $\PoFi$ to $\BigPar{\PoFi}\apostrophe.$ But $\PoFi$ is iso to $\Fbb^\Nbb,$ {\tgsl which the '$U$' in (3.E.14).}
 \SepLine
 
@@ -3089,7 +3090,7 @@ Thus $\Par{rs}\Par{z}=1$ for infily many $z,$ so for all $z.$ Now $\deg rs=1=\de
 \vfill
 {\small
 下面第5章中，3e和4e差距过大。我认为是因为4e将原来3e第8章的极小多项式和第2章线性无关最小性和第4章的多项式的原理结合，以极小多项式为工具重写了第5章几个核心定理，并引入一些结论承接读者一些很自然的想法，让第5章的定理和习题更加富有动机和系统性。\par\vspace{2pt}
-我编撰这篇笔记，主要面向3e纸质书的读者。不知为何，也许是字号的原因，我即便拿到4e纸质书也无法像先前用3e纸质书那样投入，于是我只好调换3e的学习顺序来兼顾4e的习题。所以我决定将3e第8章和9.A节提前到第5章后（事实上前章我已经将部分9.A的习题前置了，这是因为4e也将9.A拆分散落到前章中），对应到4e只有第8章前三节。3e第8章和9.A节个别涉及第6、7章的习题，会塞入到第6、7章的笔记中。\par\vspace{8pt}
+我编撰这篇笔记，主要面向3e纸质书的读者。不知为何，也许是字号的原因，我即便拿到4e纸质书也无法像先前用3e纸质书那样投入，于是我只好调换3e的学习顺序来兼顾4e的习题。所以我决定将3e第8章和9.A节提前到第5章后（事实上前章我已经将部分9.A的习题前置了，这是因为4e也将9.A拆分散落到前章中），对应到4e只有第8章前三节。3e第8章和9.A节个别涉及第6、\!7章的习题，会塞入到第6、\!7章的笔记中。\par\vspace{8pt}
 }
 \pagebreak
 
