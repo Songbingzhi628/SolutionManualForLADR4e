@@ -370,8 +370,8 @@ ${}^\neg P\Rightarrow{}^\neg Q:$ \;$\exists\,v_j=a_{j-1}v_{j-1}+\dots+a_1v_1\in 
 ${}^\neg Q\Rightarrow{}^\neg P:$ \;$\exists\,v_j=\lambda_{j-1}v_{j-1}+\dots+\lambda_1v_1\in V\Rightarrow v_j=\Par{\Real\lambda_{j-1}}v_{j-1}+\dots+\Par{\Real\lambda_1}v_1\in V.$\par\vspace{3pt}\quad
 (b) $P\Rightarrow Q:$ \;$\forall u+\i v\in V_{\!\Cbb},\;u,v\in V\Rightarrow\exists\,a_i,b_i\in\Rbb,u+\i v=\sum_{i=1}^n\Par{a_i+\i b_i}v_i.$\par\quad\Hb
 $Q\Rightarrow P:$ \;$\forall v\in V,\exists\,\!\,a_i+\i b_i\in\Cbb,\;v+\i 0=\BigBigPar{{\sum_{i=1}^na_iv_i}}+\i\,\BigBigPar{{\sum_{i=1}^nb_iv_i}}\envFontSmall\Rightarrow v\in\Span{v_1,\dots,v_m}.$\par\quad\Hb
-${}^\neg P\Rightarrow{}^\neg Q:$ \;$\exists\,v\in V,\,v\not\in\Spn{B}$ with $\Fbb=\Rbb\Rightarrow v+\i 0\not\in\Spn B$ with $\Fbb=\Cbb.$\par\quad\Hb
-${}^\neg Q\Rightarrow{}^\neg P:$ \;$\exists\,u+\i v\in V_{\!\Cbb},u+\i v\not\in\Spn B\Rightarrow\Par{\Real1}u+\Par{\Real\i}v=u$ or $\Par{\Imaginary1}u+\Par{\Imaginary\i}v=v\not\in\Spn B.$
+${}^\neg P\Rightarrow{}^\neg Q:$ \;$\exists\,v\in V,\,v\not\in\spn B$ with $\Fbb=\Rbb\Rightarrow v+\i 0\not\in\spn B$ with $\Fbb=\Cbb.$\par\quad\Hb
+${}^\neg Q\Rightarrow{}^\neg P:$ \;$\exists\,u+\i v\in V_{\!\Cbb},u+\i v\not\in\spn B\Rightarrow\Par{\Real1}u+\Par{\Real\i}v=u$ or $\Par{\Imaginary1}u+\Par{\Imaginary\i}v=v\not\in\spn B.$
 }\PfEnd\vspace{-4pt}
 \SepLine
 
@@ -1817,7 +1817,7 @@ For any $T\in\Lm{V},\exists\,!\,A_{i,j}\in{}\Fbb,T=\textstyle\sum_{j=1}^p\sum_{i
 		\vdots  &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots  &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots\\[-4pt]
 		A_{p,1} &\hspace{-6pt} \cdots &\hspace{-6pt} A_{p,s} &\hspace{-6pt} \cdots &\hspace{-6pt} A_{p,m}
 \end{pmatrix}}.$\par\vspace{-20pt}\quad
-$\Longrightarrow\mA\Par{T}=ST=\textstyle\XPar{{\sum_{r=1}^sE_{r,r}}}\XPar{{\textstyle\sum_{j=1}^p\sum_{i=1}^m A_{j,i}R_{i,j}}}=\textstyle\sum_{j=1}^s\sum_{i=1}^m A_{i,j}Q_{j,i}.$\par\hspace{0pt}
+$\Longrightarrow\mA\Par{T}=ST=\textstyle\XPar{{\sum_{k=1}^sE_{k,k}}}\XPar{{\textstyle\sum_{j=1}^p\sum_{i=1}^m A_{j,i}R_{i,j}}}=\textstyle\sum_{j=1}^s\sum_{i=1}^m A_{i,j}Q_{j,i}.$\par\hspace{0pt}
 \;\;$\hText{\Mt[\BigPar]{S,v\rightarrow w}\Mt[\BigPar]{T,u\rightarrow v}=\Mt[\BigPar]{ST,u\rightarrow w}=\\
 \hfill\Mt[\BigPar]{\mA,R\rightarrow Q}\Mt{T,R}=\Mt[\BigBigPar]{\!\mA\Par{T},Q}=}{\small\begin{pmatrix}
 A_{1,1} &\hspace{-6pt} \cdots &\hspace{-6pt} A_{1,s} &\hspace{-6pt} \cdots &\hspace{-6pt} A_{1,m}\\[-2pt]
@@ -1827,8 +1827,8 @@ A_{s,1} &\hspace{-6pt} \cdots &\hspace{-6pt} A_{s,s} &\hspace{-6pt} \cdots &\hsp
 0 &\hspace{-6pt} \cdots &\hspace{-6pt} 0&\hspace{-6pt} \cdots &\hspace{-6pt} 0
 \end{pmatrix}}\hText{$
 又 $\Mt{T,R}=\Mt[\BigPar]{T,u\rightarrow v}.\\$
-Let $T=I,$ we have $\\$
-$\Mt[\BigPar]{\mA,R\rightarrow Q}=\Mt{S,u\rightarrow w}.}$\par\quad
+If $m=p,$ let $\Mt{T,R}=I,\\$
+$\Mt[\BigPar]{\mA,R\rightarrow Q}=\Mt{S,v\rightarrow w}.}$\par\quad
 $\range\mA={}\Spn{\small\begin{Bmatrix} \underset{\;,}{Q_{1,1}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\underset{\!,}{Q_{m,1}},\\[-2pt] \vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots\\[-2pt] \overset{\;,}{Q_{1,s}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\overset{\!\!\!,}{Q_{m,s}}\end{Bmatrix}},\;\null \mA=\Spn{\small\begin{Bmatrix} \underset{\;,}{R_{1,s+1}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\underset{\!\!,}{R_{m,s+1}},\\[-2pt] \vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots\\[-2pt] \overset{\;,}{R_{1,p}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\overset{\!\!\!,}{R_{m,p}}\end{Bmatrix}}.$
 \;\;$\hText{$
 (a) $\dim\null \mA=m\times\Par{p-s};\\$
@@ -1840,14 +1840,14 @@ $\range\mA={}\Spn{\small\begin{Bmatrix} \underset{\;,}{Q_{1,1}}, &\hspace{-6pt} 
 	\TextB{Prove $\dim\mE=\dim\Lm{V,W}-\dim\Lm{U,W}.$\vspace{1pt}}
 }Define $\Phi:\Lm{V,W}\rightarrow\Lm{U,W}$ by $\Phi\Par{T}=T\mmid_U.$ By \Sbra{3.A {\NOTEFOR} Restriction}, $\Phi$ is liney.\vspace{0pt}\parSol{}
 $\Phi\Par{T}=0\Longleftrightarrow\forall u\in U,Tu=0\Longleftrightarrow T\in\mE.$ Thus $\null\Phi=\mE.$\parSol{}
-Extend $S\in\Lm{U,W}$ to $T\in\Lm{V,W}\Rightarrow\Phi\Par{T}=S\in\range\Phi.$ Thus $\range\Phi=\Lm{U,W}.$\PfEnd\vspace{6pt}\parSol{}
+Extend $S\in\Lm{U,W}$ to $T\in\Lm{V,W}\Rightarrow\Phi\Par{T}=S\in\range\Phi.$ Thus $\range\Phi=\Lm{U,W}.$\PfEnd\vspace{4pt}\parSol{}
 \Or Let $B_U=\Par{u_1,\dots,u_m},B_V=\BigPar{u_1,\dots,u_m,\dots,u_n},B_W=\Par{w_1,\dots,w_p}.$\parSol{}
 Define $E_{i,j}\in\Lm{V,W}:u_x\mapsto\delta_{i,x}w_j.$\vspace{-16pt}\parSol{}
-$\forall T\in\mE,k\in\Bra{1,\dots,m},TE_{k,k}=0\Rightarrow{\normalsize\underbrace{\Spn\begin{Bmatrix} \underset{\;,}{E_{1,1}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\underset{\!,}{E_{m,1}},\\[-2pt] \vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \,\vdots\\[-2pt] \overset{\;,}{E_{1,p}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\overset{\!\!,}{E_{m,p}}\end{Bmatrix}}_{=\:R}}\,\cap\,\mE=\zeroSubs$.\vspace{-32pt}\parSol{}
+$\forall T\in\mE,k\in\Bra{1,\dots,m},TE_{k,k}=0\Rightarrow{\normalsize\Spn\underbrace{\begin{Bmatrix} \underset{\;,}{E_{1,1}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\underset{\!,}{E_{m,1}},\\[-2pt] \vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \,\vdots\\[-2pt] \overset{\;,}{E_{1,p}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\overset{\!\!,}{E_{m,p}}\end{Bmatrix}}_{=\:R}}\,\cap\,\mE=\zeroSubs$.\vspace{-32pt}\parSol{}
 \hspace{-7pt}$\hText{$
 	又 $C=\Spn${\small$\begin{Bmatrix} \underset{\;,}{E_{m+1,1}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\underset{\!,}{E_{n,1}},\\[-2pt] \vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \,\vdots\\[-2pt] \overset{\;,}{E_{m+1,p}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\overset{\!\!,}{E_{n,p}}\end{Bmatrix}$}$\,\subseteq\mE.\\\;\\\;}$\vspace{-80pt}\par
-\hfill Now $\Lm{V,W}=R\oplus C$\Blind{.\quad}\vspace{0pt}\par
-\hfill$\Rightarrow\Lm{V,W}=R+\mE.$\Blind{\quad}\PfEnd\vspace{8pt}
+\hfill Now $\Lm{V,W}=\spn R\oplus C$\Blind{.\quad}\vspace{0pt}\par
+\hfill$\Rightarrow\Lm{V,W}=\spn R+\mE.$\Blind{\quad}\PfEnd\vspace{10pt}
 \SepLine
 
 \Anchor{3D'4}\ProblemB{
@@ -1855,18 +1855,17 @@ $\forall T\in\mE,k\in\Bra{1,\dots,m},TE_{k,k}=0\Rightarrow{\normalsize\underbrac
 	\TextB{Show $\dim\null\mB=\Par{\!\dim W}\Par{\!\dim\null S},\,\dim\range\mB=\Par{\!\dim W}\Par{\!\dim\range S}.$\vspace{2pt}}
 }(a) $\forall T\in\Lm{V,W},TS=0\Longleftrightarrow\range S\subseteq\null T.$ Thus $\null\mB=\Bra{T\in\Lm{V,W}:T\mmid_{\range S}=0}.$\parSol{\vspace{2pt}}
 (b) $\forall R\in\Lm{U,W},\null S\subseteq\null R\Longleftrightarrow\exists\,T\in\Lm{V,W},R=TS,$ by (3.B.24).\parSol{\Hb}
-Thus $\range\mB=\Bra{R\in\Lm{U,W}:R\mmid_{\null S}=0}.$ \;Now by Exe (4E 10).\PfEnd\vspace{6pt}\quad
-\Or Using {\NOTEFOR} [3.60] and nota in Exe (4E 17).\par\vspace{-18pt}\quad
-$\mB(T)=TS=\XPar{{\sum_{i=1}^n\sum_{j=1}^n A_{i,j}R_{j,i}}}\XPar{{\sum_{r=1}^m E_{r,r}}}=\sum_{i=1}^n\sum_{j=1}^m A_{i,j}G_{j,i}\Longrightarrow\Mt{TS,v}={\small\begin{pmatrix}
-		A_{1,1} &\hspace{-6pt} \cdots &\hspace{-6pt} A_{1,m} &\hspace{-6pt} \cdots &\hspace{-6pt} 0\\[-2pt]
+Thus $\range\mB=\Bra{R\in\Lm{U,W}:R\mmid_{\null S}=0}.$ \;Now by Exe (4E 10).\PfEnd\vspace{4pt}\quad
+\Or Let $B_{\range S}=\Par{v_1,\dots,v_r}$ with each $u_i=Sv_i.$ Let $B_V=\Par{v_1,\dots,v_m},B_{\null S}=\Par{u_{r+1},\dots,u_n}.$\par\quad
+Let $B_W=\Par{w_1,\dots,w_p}.$ Define $E_{i,j}\in\Lm{U,V}:u_x\mapsto\delta_{i,x}v_j\Rightarrow S=E_{1,1}+\dots+E_{r,r}.$\par\quad
+Define $R_{i,j}\in\Lm{V,W}:v_x\mapsto\delta_{i,x}w_j.$ Let $R_{k,j}E_{i,k}=Q_{i,j}:u_x\mapsto\delta_{i,x}w_j.$\par\vspace{-20pt}\quad
+$\mB(T)=TS=\XPar{{\sum_{j=1}^p\sum_{i=1}^m A_{j,i}R_{i,j}}}\XPar{{\sum_{k=1}^r E_{k,k}}}=\sum_{j=1}^p\sum_{i=1}^r A_{j,i}Q_{i,j}\Rightarrow\Mt{TS,v}={\small\begin{pmatrix}
+		A_{1,1} &\hspace{-6pt} \cdots &\hspace{-6pt} A_{1,r} &\hspace{-6pt} \cdots &\hspace{-6pt} 0\\[-2pt]
 		\vdots  &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots  &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots\\[-4pt]
-		A_{m,1} &\hspace{-6pt} \cdots &\hspace{-6pt} A_{m,m} &\hspace{-6pt} \cdots &\hspace{-6pt} 0\\[-2pt]
+		A_{r,1} &\hspace{-6pt} \cdots &\hspace{-6pt} A_{r,r} &\hspace{-6pt} \cdots &\hspace{-6pt} 0\\[-2pt]
 		\vdots  &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots  &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots\\[-4pt]
-		A_{n,1} &\hspace{-6pt} \cdots &\hspace{-6pt} A_{n,m} &\hspace{-6pt} \cdots &\hspace{-6pt} 0\end{pmatrix}}.$\par\vspace{-18pt}\quad
-$\range\mB=\Spn{\small\begin{Bmatrix} \underset{\;,}{G_{1,1}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\underset{\!\!,}{G_{m,1}},\\[-2pt] \vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots\\[-2pt] \overset{\;,}{G_{1,n}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\overset{\!\!\!,}{G_{m,n}}\end{Bmatrix}},\;\null\mB=\Spn{\small\begin{Bmatrix} \underset{\;,}{R_{m+1,1}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\underset{\!\!,}{R_{n,1}},\\[-2pt] \vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots\\[-2pt] \overset{\;,}{R_{m+1,n}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\overset{\!\!\!,}{R_{n,n}}\end{Bmatrix}}.$
-\;\;$\hText{\\$
-	(a) $\dim\null\mB=n\times\Par{n-m};\\$
-	(b) $\dim\range\mB=n\times m.}$\par\PfEnd[-12pt]\vspace{-6pt}
+		A_{p,1} &\hspace{-6pt} \cdots &\hspace{-6pt} A_{p,r} &\hspace{-6pt} \cdots &\hspace{-6pt} 0\end{pmatrix}}.$\par\vspace{-20pt}\quad
+$\range\mB=\Spn{\small\begin{Bmatrix} \underset{\;,}{Q_{1,1}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\underset{\!\!,}{Q_{r,1}},\\[-2pt] \vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots\\[-2pt] \overset{\;,}{Q_{1,p}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\overset{\!\!\!,}{Q_{r,p}}\end{Bmatrix}},\;\null\mB=\Spn{\small\begin{Bmatrix} \underset{\;,}{R_{r+1,1}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\underset{\!\!,}{R_{n,1}},\\[-2pt] \vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots\\[-2pt] \overset{\;,}{R_{r+1,p}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\overset{\!\!\!,}{R_{n,p}}\end{Bmatrix}}.$\PfEnd[-14pt]
 \SepLine\pagebreak
 
 \ProblemN{\Anchor{3D16}{16}}{
