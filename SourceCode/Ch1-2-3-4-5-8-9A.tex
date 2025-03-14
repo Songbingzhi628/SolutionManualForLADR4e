@@ -503,12 +503,11 @@ Becs $\Par{X\cap Z}+\Par{Y\cap Z}\ni v=x+y=z_1+z_2\in\BigPar{X+\Par{Y\cap Z}}${\
 \ProblemB{
 	\TextB{Supp $\mC$ is a collec of $k$\hspace{1pt}-\hspace{1pt}dim subsps of $V$ with any two of them have a $\Par{k-1}$\hspace{1pt}-\hspace{1pt}dim intersec.}
 	\TextB{Prove either all contain a $\Par{k-1}$\hspace{1pt}-\hspace{1pt}dim intersec, or all contained in a $\Par{k+1}$\hspace{1pt}-\hspace{1pt}dim subsp.}
-}Asum $\nexists$ common intersec of dim $\Par{k-1}.$ Supp $U,W\in\mC\Rightarrow\Dim\Par{U+W}=k+1.$\parSol{}
-Asum $\exists\,\mC\ni X$ not contained in $U+W.$ Then $\Dim\Par{X+U+W}=2k+1-\Dim\BigPar{X\cap\Par{U+W}}.$\parSol{}
-Note that $m=\Dim\BigPar{X\cap\Par{U+W}}\leqslant k-1,$ and $n=\Dim\Par{X\cap U\cap W}\leqslant k-1.$\parSol{}
-{\FontSmall Becs $m=k\Rightarrow X\cap\Par{U+W}=X\Rightarrow X\subseteq U+W;$\,\,\,and $m=k+1\Rightarrow X\cap\Par{U+W}=U+W\Rightarrow\dim X\geqslant k+1.$}\parSol{}
-$X\cap\Par{U+W}\supseteq\Par{X\cap U}+\Par{X\cap W}\Rightarrow m\geqslant2\Par{k-1}-n\geqslant k-1\Rightarrow\Dim\Par{X+U+W}=k+2.$\parSol{}
-\colorbox{yellow}{TODO}
+}If $V$ is finide and $\dim V=k,$ then $\mC=\Bra{V},$ done. We use induc on $k.$ (i) $k=1.$ Immed.\parSol{}
+(ii) $k>1.$ Asum it holds for $k-1.$ If $\exists$ common $\Par{k-1}$\hspace{1pt}-\hspace{1pt}dim intersec, then done.\parSol{\Hii}
+Othws, we show all $X\in\mC$ are contained in a $\Par{k+1}$\hspace{1pt}-\hspace{1pt}dim subsp.\parSol{\Hii}
+Supp $U,W\in\mC\Rightarrow\Dim\Par{U+W}=k+1.$ Then for $X\in\mC,\;X\cap U,X\cap W$ are $\Par{k-1}$\hspace{1pt}-\hspace{1pt}dim.\parSol{\Hii}
+Now by asum, $\Dim\Par{{X\cap U}+{X\cap W}}=k\Rightarrow X=\Par{X\cap U}+\Par{X\cap W}\Rightarrow X\subseteq U+W.$\PfEnd
 \SepLine
 \ChEnd
 
