@@ -4030,13 +4030,6 @@ $\lambda\in\BigBra{z\in\Fbb:\aXMid{z-A_{j,j}}\leqslant\sum_{j\neq k=1}^n\aXMid{A
 
 \vspace{4pt}
 
-\Anchor{5E1}\ProblemN{1}{
-	\TextA{Give commu optors $S,T\in\Fbb^4$ suth $\exists$ invarspd $S$ but not $T$ and $\exists$ invarspd $T$ but not $S$.}
-}Define $S:\Par{x,y,z,w}\mapsto\Par{y,x,0,0}$ and $T:\Par{x,y,z,w}\mapsto\Par{0,0,w,z}\Rightarrow TS=ST=0.$\parSol{}
-Notice that $S:e_1\mapsto e_2,\;e_3\mapsto 0,$ and $T:e_1\mapsto 0,\;e_3\mapsto e_4.$\parSol{}
-Thus ${e_1}$ eigvec of $T$ but not of $S,$ and ${e_3}$ eigvec of $S$ but not of $T.$
-\SepLine
-
 \Anchor{5E3}\ProblemN{3}{
 	\TextA{Supp $S, T\in\Lm{V}$ commu, and $p\in\PoFi$. Prove $\nullp p\Par{S},\rangep p\Par{S}$ invard $T$.}
 }Becs $Tp\Par{S}=p\Par{S}T.$ By (5.A.2,3).\PfEnd
@@ -4071,24 +4064,31 @@ Apply the asum to $T\mmid_U,S\mmid_U$ and $T\mmid_W,S\mmid_W,$ then put $B_U,B_W
 \Anchor{5E2}\ProblemN{2}{
 	\TextA{Supp $\mE\subseteq\Lm{V}$ and every elem of $\mE$ diag.}
 	\TextA{Prove each pair of elems of $\mE$ commu $\Rightarrow\exists\,B_V$ suth all elem of $\mE$ diag.}
-}Using induc on $\dim V.$ (i) $\dim V=1.$ Immed. (ii) $\dim V>1.$ Asum it holds for smaller vecsps.\parSol{}
-Supp $S\in\mE.$ Let $V=E\Par{\lambda_1,S}\oplus\cdots\oplus E\Par{\lambda_m,S}$ with $m>1.$\parSol{}
-Let each $E_k=E\Par{\lambda_k,S}.$ Becs for all $T\in\mE,$ each $E_k$ invard $T\Rightarrow T\mmid_{E_k}$ diag.\parSol{}
-Becs each $E_k\neq V.$ By asum, each $T\mmid_{E_k}$ diag and commu $\Rightarrow\exists\,B_{E_k}$ suth all such $T\mmid_{E_k}$ diag.\parSol{}
-Hence each $B_{E_k}$ consists of eigvecs of all $T.$ Forming $B_V.$\PfEnd\vspace{6pt}\parSol{}
-\parSol{}
-\SepLine\pagebreak
+}Let $\dim V=n\Rightarrow\dim\Lm{V}=n^2.$\par\quad
+$\exists\,\Bra{T_1,\dots,T_m}\subseteq\mE$ with each elem of $\mE$ in $\Span{T_1,\dots,T_m}$ and $m\leqslant n^2$\par\quad
+For each $T_k,$ becs $V=\bigoplus_{\lambda_k\!\!}E\Par{\lambda_k,T_k}$ and $E\Par{\lambda_k,T_k}$ non0 for finily many $\lambda_k\in\Fbb.$\vspace{2pt}\par\quad
+Becs $U_{k}=E\Par{\lambda_1,T_1}\cap\cdots\cap E\Par{\lambda_{k},T_{k}}=E\Par{\lambda_k,T_k\mmid_{U_{k-1}}}=\bigoplus_{\lambda_{k+1}\!\!}E\Par{\lambda_{k+1},T_{k+1}\mmid_{U_{k}}}=\bigoplus_{\lambda_{k+1}\!\!}U_{k+1}$.\vspace{2pt}\par\quad
+Hence $V=\bigoplus_{\lambda_1\!\!}E\Par{\lambda_1,T_1}=\bigoplus_{\lambda_1,\dots,\lambda_m\!\!}\Sbra{E\Par{\lambda_1,T_1}\cap\cdots\cap E\Par{\lambda_m,T_m}}.$ Take bss of each summand.\vspace{2pt}\par\quad
+Then we form $B_V.$ For any $T\in\mE,$ $\Mt{T,B_V}=c_1\Mt{T_1,B_V}+\dots+c_m\Mt{T_m,B_V}.$\PfEnd
+\SepLine
 
 \Anchor{5E9}\ProblemN{9}{
 	\TextA{Supp $\Fbb=\Cbb,$ $V$ finide and non0. Supp $\mE\subseteq\Lm{V}$ is suth all $S,T\in\mE$ commu.}
 	\PrePa\TextA{Prove $\exists$ eigvec $v\in V$ of all elem of $\mE.$ \,{\tgnr\large(b)} $\exists\,B_V$ suth all elem of $\mE$ has up-trig matrix.}
-}(a) Using induc on $\dim V.$ (i) Immed. (ii) $\dim V>1.$ Asum it holds for smaller $V.$\parSol{\Ha}
-Supp $S\in\mE$ and non0 $E=E\Par{\lambda,S}$ \Sbra{${}\neq V$} invard all $T\in\mE.$\parSol{\Ha}
-By asum, $\exists$ eigvec $v\in V$ for all $T\mmid_{E},$ which is common eigvec of $S$ and all $T.$\vspace{2pt}\parSol{}
-(b) Using induc on $\dim V.$ (i) Immed. (ii) $\dim V>1.$ Asum it holds for smaller $V.$\parSol{\Hb}
-Supp $S\in\mE.$ Let $v_1$ be eigvec of all elem of $\mE.$ Let $W\oplus\Span{v_1}=V,P:av_1+w\mapsto w.$\parSol{\Hb}
-For each $R\in\Lm{V},$ define $\hat{R}\in\Lm{W}$ by $\hat{R}=PR.$ Becs for all $T\in\mE,$ $\hat{S}\hat{T}=\hat{T}\hat{S}.$\parSol{\Hb}
-By asum, $\exists\,B_W=\Par{v_2,\dots,v_n}$ suth $\hat{S}$ and all $\hat{T}$ has up-trig matrix. Simlr to [5.80].\PfEnd
+}Simlr to Exe (2). $\exists\,\Bra{T_1,\dots,T_m}\subseteq\mE.$ Let $U_0=V,U_k=E\Par{\lambda_1,T_1}\cap\cdots\cap E\Par{\lambda_k,T_k}.$\parSol{}
+(a) Let $\lambda_1,\dots,\lambda_m$ be eigvals of $T_1,\dots,T_m$ respectly with each $\lambda_k$ eigval of $T_k\mmid_{U_k}\Rightarrow U_k\neq 0$\parSol{\Ha}
+Now for non0 $v\in U_m,\:\forall T=c_1T_1+\dots+c_mT_m\in\mE,Tv=\Par{c_1\lambda_1+\dots+c_m\lambda_m}v.$\vspace{3pt}\parSol{}
+(b) Using induc on $\dim V.$ (i) Immed. \,(ii) $\dim V>1.$ Asum it holds for smaller $V.$\parSol{\Hb}
+Let $v_1$ be a common eigvec of all $T_k.$ Let $W\oplus\Span{v_1}=V,P:av_1+w\mapsto w.$\parSol{\Hb}
+Simlr in [4E 5.80], each pair of $\Bra{\hat{T}_{1},\dots,\hat{T}_m}$ commu. By asum, $\exists\,B_W\Rightarrow\exists\,B_V.$\parSol{\Hb}
+Now each $\Mt{T_k,B_V}$ up-trig $\Rightarrow\forall T\in\mE,\Mt{T}=c_1\Mt{T_1}+\dots+c_m\Mt{T_m},$ wrto $B_V.$\PfEnd
+\SepLine\pagebreak
+
+\Anchor{5E1}\ProblemN{1}{
+	\TextA{Give commu optors $S,T\in\Fbb^4$ suth $\exists$ invarspd $S$ but not $T$ and $\exists$ invarspd $T$ but not $S$.}
+}Define $S:\Par{x,y,z,w}\mapsto\Par{y,x,0,0}$ and $T:\Par{x,y,z,w}\mapsto\Par{0,0,w,z}\Rightarrow TS=ST=0.$\parSol{}
+Notice that $S:e_1\mapsto e_2,\;e_3\mapsto 0,$ and $T:e_1\mapsto 0,\;e_3\mapsto e_4.$\parSol{}
+Thus ${e_1}$ eigvec of $T$ but not of $S,$ and ${e_3}$ eigvec of $S$ but not of $T.$
 \SepLine
 \ChEnd
 
