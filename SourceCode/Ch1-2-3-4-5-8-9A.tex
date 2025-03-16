@@ -3067,7 +3067,7 @@ Thus $\Par{rs}\Par{z}=1$ for infily many $z,$ so for all $z.$ Now $\deg rs=1=\de
 \vfill
 {\small
 下面第5章中，3e和4e差距过大。我认为是因为4e将原来3e第8章的极小多项式和第2章线性无关最小性和第4章的多项式的原理结合，以极小多项式为工具重写了第5章几个核心定理，并引入一些结论承接读者一些很自然的想法，让第5章的定理和习题更加富有动机和系统性。\par\vspace{2pt}
-我编撰这份笔记，主要面向3e纸质书的读者，所以题号和定理索引都采用3e（除少数4e新增章节）。所以3e读者会对第5章这样的4e变化感到茫然无措。为了内容的紧密性，我决定将3e第8章和9.A节提前到第5章后（事实上前章我已经将部分9.A的习题前置了，这是因为4e也将9.A拆分散落到前章中），对应到4e只有第8章前三节。3e第8章和9.A节个别涉及第6、\!7章的习题，会拆散塞入对应章节的笔记中。\par\vspace{8pt}
+我编撰这份笔记，主要面向3e纸质书的读者，所以题号和定理索引都采用3e（除少数4e新增章节）。所以3e读者会对第5章这样的4e变化感到茫然无措。为了内容的紧密性，我决定将3e第8章提前到第5章后，对应到4e只有第8章前三节。3e第8章个别涉及第6、\!\!7章的习题，会拆散塞入对应章节的笔记中。额外说明，3e的第9章已经被拆散塞入前章了。\par\vspace{8pt}
 }
 \pagebreak
 
@@ -3476,7 +3476,7 @@ Then $Tw=\lambda w,$ where $w=a_0v+a_1u_1+\dots+a_mu_m\neq 0\Leftarrow w\not\in 
 \SepLine
 
 \ProblemN{\Anchor{5A36}{36}}{
-	\TextA{Give a countexa\hspace{1pt}$:$ The result in Exercise 35 is still true if $V$ is infinide.}
+	\TextA{Give a countexa\hspace{1pt}$:$ The result in Exe (35) is still true if $V$ is infinide.}
 }Let $V=\Bra{\,f\in\Rbb^{\Rbb}:\exists\,!\,m\in\Nbb,f\in\Span{1,e^x,\dots,e^{mx}}}.$\parSol{}
 Let $U=\Bra{\,f\in\Rbb^{\Rbb}:\exists\,!\,m\in\Nbp,f\in\Span{e^x,\dots,e^{mx}}}.$\parSol{}
 Define $T\in\Lm{V}$ by $Tf=e^x f.$ Then $\range T=U$ invard inje $T$.\parSol{}
@@ -3504,6 +3504,7 @@ Becs $U$ invard $\Par{T-\lambda I}.$ Now $u\in U\Rightarrow\Par{T-\lambda I}{u}\
 (b) {\FontSmall $T\Par{0,1}=\Par{F_1,F_2}.$ Asum $T^k\Par{0,1}=\Par{F_k,F_{k+1}}.$ Then $T^{k+1}\Par{0,1}=\Par{F_{k+1},F_{k}+F_{k+1}}.$}\vspace{-6pt}\parSol{\Hb}
 {\FontSmall $T^n\Par{0,1}=T^n\XSbra{${\large$\frac{1}{\sqrt{5}\;}$}$\BigPar{v_1-v_2}}={}${\large$\frac{1}{\sqrt{5}\;}$}$\def\envFont{\Large}\XSbra{\bigg(\!${\large$\frac{\:1\,+\,\sqrt{5}\:}{2}$}$\!\bigg)\begin{array}{l}\hspace{-7pt}{}_n\\\\\vspace{-8pt}\end{array}\hspace{-8pt}v_1-\bigg(\!${\large$\frac{\:1\,-\,\sqrt{5}\:}{2}$}$\!\bigg)\begin{array}{l}\hspace{-7pt}{}_n\\\\\vspace{-8pt}\end{array}\hspace{-8pt}v_2\def\envFont{\Large}}.$ Take the first slot.}\PfEnd[-28pt]\vspace{4pt}
 \SepLine
+\ChEnd
 
 \vfill\ChDecl{Ch5BI}{5.B: I}
 
@@ -3515,9 +3516,10 @@ Becs $U$ invard $\Par{T-\lambda I}.$ Now $u\in U\Rightarrow\Par{T-\lambda I}{u}\
 (II)覆盖本节3e后半部分「上三角矩阵」和下节4e；并且，下节还会覆盖下下节4e。\par\vspace{2pt}
 }\vspace{10pt}
 
-\Anchor{5BIN5.17}\ProblemB[]{
-	\NoteForSmall{[5.17]}\;\;\TextB{By [8.20], $\nullp p\Par{T}$ and $\rangep p\Par{T}$ are invard $T$.\vspace{-4pt}}
-}\SepLine\pagebreak
+%\Anchor{5BIN5.17}\ProblemB[]{
+%	\NoteForSmall{[5.17]}\;\;\TextB{By [8.20], $\nullp p\Par{T}$ and $\rangep p\Par{T}$ are invard $T$.\vspace{-4pt}}
+%}\SepLine
+\pagebreak
 
 \ProblemN{\Anchor{5BI9}{9}}{
 	\TextA{Supp $V$ finide, $T\in\Lm{V},$ and non0 $v\in V.$ Let $p\in\PoFi$ be non0 of smallest deg}
@@ -3805,7 +3807,18 @@ By asum, the optor $T\mmid_U$ on a $k$\hspace{1pt}-\hspace{1pt}dim vecsp has inv
 Let $p\Par{z}=\Par{z^2+b_1z+c_1}\cdots\Par{z^2+b_mz+c_m}\Rightarrow\exists\,\Par{T^2+b_jT+c_j}$ not inje\par\quad\Hb
 $\Rightarrow\exists\,v\neq 0,\Par{T^2+b_jT+c_j}v=0\Rightarrow T^2v\in\Span{v,Tv},$ invard $T,$ while $\dim\Span{v,Tv}=2.$\PfEnd
 \SepLine
-%\ChEnd\pagebreak
+
+\Anchor{5BIN4e5.33}\ProblemBX{\NoteForSmall{[4E 5.33]}}{
+	\TextA{Supp $\Fbb=\Rbb,T\in\Lm{V},$ and $b^2<4c$ for $b,c\in\Fbb.$}
+	\TextB{Prove each $\dim\Null\BigPar{T^2+bT+cI}{^j}$ is even for $j\in\Nbp.$}
+}Using induc on $j.$ \,(i) Immed. \,(ii) $j>1.$ Asum it holds for $j-1.$\parSol{}
+Replace $V$ with $\Null\Par{T^2+bT+cI}{^{j}}$ and $T$ with $T$ restr to $\Null\Par{T^2+bT+cI}{^{j}}.$\parSol{}
+Then $\Par{T^2+bT+cI}{^{j}}=0\Rightarrow z^2+bz+c$ is a multi of the min of $T\Rightarrow$ no eigvecs of $T.$\parSol{}
+Let $U$ be invarspd $T$ and has the largest even dim of all such invarsp. If $V=U,$ done. Othws,\parSol{}
+for $w\in V\Backslash U\Rightarrow W=\Par{w,Tw}$ invard $T$ of dim $2\Rightarrow U+W$ of dim $\Par{{\dim U+2}}$ invard $T.$\PfEnd
+\SepLine
+
+\ChEnd
 
 \vfill\ChDecl{Ch5BII}{5.B: II}{\qquad{\small\textbf{注意\,:}\;这一节的题号使用第四版5.C节}}
 
@@ -3817,7 +3830,7 @@ $\Rightarrow\exists\,v\neq 0,\Par{T^2+b_jT+c_j}v=0\Rightarrow T^2v\in\Span{v,Tv}
 	\PrePa\TextA{Show $A + B$ up-trig with $\alpha_1 + \beta_1 , \dots , \alpha_n + \beta_n$ on the diag.}
 	\PrePb\TextA{Show $AB$ up-trig with $\alpha_1 \beta_1 , \dots , \alpha_n \beta_n$ on the diag.}
 }(a) By def, immed. \:(b) Becs $A_{j,k}=B_{j,k}=0$ for $j>k.$ By def, for each $p\in\Bra{1,\dots,n},$\parSol{} $\Par{AB}{_{p,p}}=A_{p,1}B_{1,p}+\dots+A_{p,p-1}B_{p-1,p}+A_{p,p}B_{p,p}+A_{p,p+1}B_{p+1,p}+\dots+A_{p,n}B_{n,p}=A_{p,p}B_{p,p}.$\PfEnd
-\SepLine
+\SepLine\pagebreak
 
 \Anchor{5BII4e3}\ProblemN{3}{
 	\TextA{Supp $T$ inv, $B_V=\Par{v_1,\dots,v_n},$ $\Mt{T}=A$ is up-trig,}
@@ -3828,7 +3841,7 @@ $\Rightarrow\exists\,v\neq 0,\Par{T^2+b_jT+c_j}v=0\Rightarrow T^2v\in\Span{v,Tv}
 (ii) $k\geqslant 2.$ Asum $\Span{v_1,\dots,v_{k-1}}$ invard $T^{-1}.$\par\quad\Hii
 Note that $Tv_k=u_k+\lambda_kv_k\Rightarrow v_k=T^{-1}\Par{c_1v_1+\dots+c_{k-1}v_{k-1}}+\lambda_kT^{-1}v_k.$\par\quad\Hii
 Thus $T^{-1}v_k=\lambda_k^{-1}v_k-\lambda_k^{-1}T^{-1}u_k\in\Span{v_1,\dots,v_k},$ invard $T;$ and $\lambda_{k}^{-1}$ is the $k^\text{th}$ ent on diag.\PfEnd
-\SepLine\pagebreak
+\SepLine
 
 %\Anchor{5BII14}\Anchor{5BII4e4}\ProblemNor{4}{3E 5.B.14}{
 %	\TextA{Give an inv $T$ and a $B_V$ suth each $\Mt{T}{_{k,k}}=0.$}
@@ -3893,12 +3906,12 @@ By (3.E.13), $B_V=\Par{u_1,\dots,u_p,w_1,\dots,w_q}.$ Now each $Tw_j\in\Span{u_1
 \Or By (4E 5.B.25)(b) and [4E 5.44], immed.\PfEnd
 \SepLine
 
-\Anchor{5BII4e14}\ProblemN{14}{
-	\TextA{Supp $V$ is finide. Prove $T$ up-trig $\Longleftrightarrow$ $T\apostrophe$ up-trig.}
-}Immed, by \TIPSN{1} and \TIPSN{2}, \OR by (4E 5.B.28) and [4E 5.44].\PfEnd
-\SepLine
+%\Anchor{5BII4e14}\ProblemN{14}{
+%	\TextA{Supp $V$ is finide. Prove $T$ up-trig $\Longleftrightarrow$ $T\apostrophe$ up-trig.}
+%}Immed, by \TIPSN{1} and \TIPSN{2}, \OR by (4E 5.B.28) and [4E 5.44].\PfEnd
+%\SepLine
 
-\ChEnd\pagebreak
+%\ChEnd
 
 \ChDecl{Ch5C}{5.C \& [4E] 5.D}{\qquad{\small\textbf{注意\,:}\;这一节的题号主要使用第四版5.D节}}
 
@@ -3964,7 +3977,7 @@ Thus all $\mu$'s are dist. Let $s\Par{z}=\Par{z^k-\lambda_1}\cdots\Par{z^k-\lamb
 \Anchor{5C4e15}\ProblemN[]{15}{
 	\TextA{Supp $\Fbb=\Cbb,$ $V$ is finide, $T\in\Lm{V}$ with the min $p.$ Then\hfill\tgnr\FontSmall Using Exe (4.6).}
 	\TextA{$T$ diag $\Longleftrightarrow\nexists\,\Par{z-\lambda}{^2}$ in $p\Longleftrightarrow p,p\apostrophe$ have no common zeros $\Longleftrightarrow\gcd\Par{p,p\apostrophe}=1.$\vspace{-3pt}}
-}\SepLine\pagebreak
+}\SepLine
 
 \Anchor{5C'1}\ProblemB{
 	\TextB{Supp $\Fbb=\Cbb,n\in\Nbp,p\in\PoFi$. Prove $T\in\Lm{V}$ is diag $\Longleftrightarrow\nullp p\Par{T}=\Null\Sbra{p\Par{T}}{^n}.$}
@@ -4110,5 +4123,28 @@ Thus ${e_1}$ eigvec of $T$ but not of $S,$ and ${e_3}$ eigvec of $S$ but not of 
 \ChEnd
 
 \ChDecl{Ch9A}{9.A}{}
+
+\Anchor{9A13}\ProblemN{13}{
+	\TextA{Supp $\Fbb=\Rbb,T\in\Lm{V},$ and $b^2<4c$ for $b,c\in\Fbb.$}
+	\TextA{Prove each $\dim\Null\BigPar{T^2+bT+cI}{^j}$ is even for $j\in\Nbp.$}
+}
+\SepLine
+
+%\Anchor{9A16}\ProblemN{16}{
+%	\TextA{Supp $\Fbb=\Rbb.$ Prove $\exists\,T\in\Lm{V}$ suth $T^2=-I\Longleftrightarrow\dim V$ is even.}
+%}
+%\SepLine
+
+\Anchor{9A17}\ProblemN{17}{
+	\TextA{Supp $\Fbb=\Rbb,T\in\Lm{V}$ suth $T^2=-I.$ Define complex scalar multi on $V$ as}
+	\TextA{$\Par{a+b\i}v=av+bTv.$ Then $V$ itself is already a complex vecsp with these defs.}
+	\TextA{Show the dim of $V$ as a complex vecsp is half of the dim of $V$ as the usual real vecsp.}
+}
+\SepLine
+
+\Anchor{9A18}\ProblemN{18}{
+	\TextA{Supp $\Fbb=\Rbb,$ and $T\in\Lm{V}.$ Prove all eigvals of $T_{\!\!\Cbb}$ are real $\Longleftrightarrow\exists\,B_V$ of geigvecs of $T.$}
+}
+\SepLine
 
 \ChEnd
