@@ -4113,16 +4113,21 @@ Thus ${e_1}$ eigvec of $T$ but not of $S,$ and ${e_3}$ eigvec of $S$ but not of 
 \SepLine
 
 \ChEnd
+\pagebreak
 
 \ChDecl{Ch8B}{8.B}{}
 
 \ChEnd
+\pagebreak
 
 \ChDecl{Ch8C}{8.C}{}
 
 \ChEnd
+\pagebreak
 
 \ChDecl{Ch9A}{9.A}{}
+
+\vspace{4pt}
 
 \Anchor{9A13}\ProblemN{13}{
 	\TextA{Supp $\Fbb=\Rbb,T\in\Lm{V},$ and $b^2<4c$ for $b,c\in\Fbb.$}
@@ -4139,12 +4144,24 @@ Thus ${e_1}$ eigvec of $T$ but not of $S,$ and ${e_3}$ eigvec of $S$ but not of 
 	\TextA{Supp $\Fbb=\Rbb,T\in\Lm{V}$ suth $T^2=-I.$ Define complex scalar multi on $V$ as}
 	\TextA{$\Par{a+b\i}v=av+bTv.$ Then $V$ itself is already a complex vecsp with these defs.}
 	\TextA{Show the dim of $V$ as a complex vecsp is half of the dim of $V$ as the usual real vecsp.}
-}
+}Supp $V\neq\zeroSubs.$ Let $2N=\dim V$ as real vecsp. We construct a real $B_V$ via a $\Par[0pt]{N-1}$\hspace{1pt}-\hspace{1pt}step process.\par\quad
+Let $\Par{v_1,Tv_1}$ be liney indep in $V$ as real vecsp. Let $v_2\not\in\Span{v_1,Tv_1}\Rightarrow\Par{v_1,Tv_1,v_2}$ liney indep.\vspace{1pt}\par\quad
+{\tgbf Step 1.} \;We show $\Par{v_1,Tv_1,v_2,Tv_2}$ liney indep in $V$ as real vecsp. Asum $Tv_2=a_1v_1+b_1Tv_1+a_2v_2.$\par\quad
+\Blind{{\tgbf Step 1.} \;}Then $-v_2=a_1Tv_1-b_1v_1+a_2Tv_2.$ Note that $a_2\neq0$ and $a_2^2=-1$ while $a_2\in\Rbb,$ ctradic.\vspace{2pt}\par\quad
+{\tgbf Step k.} \;We show $\Par{v_1,Tv_1,\dots,v_k,Tv_k,v_{k+1},Tv_{k+1}}$ liney indep in $V$ as real vecsp. Simlr.\par\quad
+\Blind{{\tgbf Step k.} \;}Asum $Tv_{k+1}=a_1v_1+b_1Tv_1+\dots+a_{k+1}v_{k+1}.$ Then $-v_{k+1}=a_1Tv_1-b_1v_1+\dots+a_{k+1}Tv_{k+1}.$\PfEnd
 \SepLine
 
 \Anchor{9A18}\ProblemN{18}{
-	\TextA{Supp $\Fbb=\Rbb,$ and $T\in\Lm{V}.$ Prove all eigvals of $T_{\!\!\Cbb}$ are real $\Longleftrightarrow\exists\,B_V$ of geigvecs of $T.$}
-}
+	\TextA{Supp $\Fbb=\Rbb,$ and $T\in\Lm{V}.$}
+	\PrePa\TextA{Show all eigvals of $T_{\!\Cbb}$ are real $\Rightarrow\exists\,B_V$ suth $T$ up-trig.}
+	\PrePb\TextA{Show all eigvals of $T_{\!\Cbb}$ are real $\Rightarrow\exists\,B_V$ of geigvecs of $T.$}
+}(a) Using induc on $\dim V.$ (i) Immed. (ii) $\dim V>1.$ Asum it holds for smaller $V.$\parSol{\Ha}
+Supp all eigvals of $T_{\!\Cbb}$ are real. Let $U=\Range\Par{T-\lambda I}.$\parSol{\Ha}
+Then all eigvals of $ T_{\!\Cbb}\mmid_{U_{\Cbb}}=\Par{T\mmid_U}{_{\Cbb}}$ are real. By asum, simlr to [5.27].\vspace{3pt}\parSol{}
+(b) .\parSol{\Hb}
+\parSol{\Hb}
+\PfEnd
 \SepLine
 
 \ChEnd
