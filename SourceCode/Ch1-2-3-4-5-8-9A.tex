@@ -3310,7 +3310,7 @@ Now $T_{\!\Cbb}\Par{\overline{v+\i u}}=Tv-\i Tu=\Par{av-bu}-\i\Par{au+bv}=\Par{a
 
 \ProblemN{\Anchor{5A23}{23}}{
 	\TextA{Supp $V$ is finide, and $S, T\in\Lm{V}$. Prove $ST$ and $TS$\, have the same eigvals.}
-}\Sbra{{\tgsl False if infinide. See Exe (18, 20).}} Supp $v\neq 0$ and $STv=\lambda v\Rightarrow T\Par{STv}=\lambda Tv=TS\Par{Tv}.$\parSol{}
+}\!\Sbra{{\tgsl False if infinide. See Exe (18, 20).}} Supp $v\neq 0$ and $STv=\lambda v\Rightarrow T\Par{STv}=\lambda Tv=TS\Par{Tv}.$\parSol{}
 If $Tv=0$, then $T$ not inje, so are $TS,ST.$ Othws, $\lambda$ is eigval of $TS.$ \,Rev the roles in asum.\PfEnd
 \SepLine
 
@@ -3340,8 +3340,8 @@ Thus $\Par{T-\lambda I}S=0\Rightarrow\mA\Par{S}=TS=\lambda S$ with $S\neq 0.$\vs
 %\AComm {If $\mA\Par{S}=ST,\forall S\in\Lm{V}.$ Then the eigvals of $\mA$ are not the eigvals of $T.$}
 \SepLine
 
-\ProblemB{
-	\TextB{Supp $S,T\in\Lm{V},p\in\PoFi$. Prove $Sp\Par{TS}=p\Par{ST}S.$}
+\Anchor{5AT5}\ProblemBX{\TipsN{5}}{
+	\TextA{Supp $S,T\in\Lm{V},p\in\PoFi$. Prove $Sp\Par{TS}=p\Par{ST}S.$}
 }We prove each $S\Par{TS}{^m}=\Par{ST}{^m} S$ by induc. (i) $m=0,1.$ Immed.\parSol{}
 (ii) $m>1.$ $S\Par{TS}{^{m-1}}=\Par{ST}{^{m-1}} S\Rightarrow S\Par{TS}{^{m}}=S\Par{TS}{^{m-1}}\Par{TS}=\Par{ST}{^{m-1}}\Par{ST}S=\Par{ST}{^{m}}S.$\PfEnd\vspace{2pt}
 \AComm If $S$ is inv. Then $p\Par{TS} = S^{-1} p\Par{ST}S,\;p\Par{ST} = Sp\Par{TS}S^{-1}.$\par\Anchor{5BI5}\Anchor{5A4e40}
@@ -4043,10 +4043,9 @@ $\lambda\in\BigBra{z\in\Fbb:\aXMid{z-A_{j,j}}\leqslant\sum_{j\neq k=1}^n\aXMid{A
 
 \vspace{4pt}
 
-\Anchor{5E3}\ProblemN{3}{
-	\TextA{Supp $S, T\in\Lm{V}$ commu, and $p\in\PoFi$. Prove $\nullp p\Par{S},\rangep p\Par{S}$ invard $T$.}
-}Becs $Tp\Par{S}=p\Par{S}T.$ By (5.A.2,3).\PfEnd
-\SepLine
+\Anchor{5E3}\ProblemN[]{3}{
+	$S,T\in\Lm{V}$ commu, $p\in\PoFi\Rightarrow Tp\Par{S}=p\Par{S}T\Rightarrow\nullp p\Par{S},\rangep p\Par{S}$ invard $T,$ by (5.A.2,3).\PfEnd\TextA{\vspace{-4pt}}
+}\SepLine
 
 \Anchor{5E5}\ProblemN{5}{
 	\TextA{Supp $V$ finide. Prove $S,T$ commu $\Longleftrightarrow S\apostrophe,T\apostrophe$ commu.}
@@ -4111,12 +4110,8 @@ Thus ${e_1}$ eigvec of $T$ but not of $S,$ and ${e_3}$ eigvec of $S$ but not of 
 
 \Anchor{8A3}\ProblemN{3}{
 	\TextA{Supp $T\in\Lm{V}$ inv. Prove $G\Par{\lambda,T}=G\Par{\lambda^{-1},T^{-1}}$ for any non0 $\lambda\in\Fbb.$}
-}
-\SepLine
-
-\Anchor{8A4}\ProblemN{4}{
-	\TextA{Supp $T\in\Lm{V}$ and $\alpha,\beta\in\Fbb$ disti. Prove $G\Par{\alpha,T}\cap G\Par{\beta,T}=\zeroSubs.$}
-}
+}$\Par{T-\lambda I}{^j}v=0=\sum_{i=0}^j\mathC_j^i\Par{-\lambda}{^{j-i}}T^iv.$ Apply $\Par{-\lambda}{^{-j}}T^{-j}$ to both sides. $\Par{T^{-1}-\lambda^{-1}}{^j}v=0.$\parSol{}
+\Or\PfEnd
 \SepLine
 
 \Anchor{8A5}\ProblemN{5}{
@@ -4128,6 +4123,17 @@ Thus ${e_1}$ eigvec of $T$ but not of $S,$ and ${e_3}$ eigvec of $S$ but not of 
 	If the min of $T$ is $z^m.$ Then $\exists\,v$ suth $T^{m-1}v\neq0.$\TextB{}
 	Now $B_V=\Par{T^{m-1}v,\dots,Tv,v}.$ Let each $w_k=T^{m-k}v.$ Then $Tw_1=0$ and each $T\Par{w_k}=w_{k-1}.$\TextB{\vspace{-2pt}}
 }\SepLine
+
+\Anchor{8A6}\ProblemN{6}{
+	\TextA{Supp $T\in\Lm{V},n=\dim V,T^n=0\neq T^{n-1}.$ Prove $\nexists\,S\in\Lm{V}$ suth $S^k=T$ for all $k>1.$}
+}Asum $\exists$ suth $S.$ Then $\null S^{kn}=\null T^n=V=\null S^{kn-1}=\dots=\null S^n.$\parSol{}
+Note that $\exists\,j$ suth $\null S^{kn-j}=\null T^{m}$ for some $m\in\Bra{1,\dots,n-1}.$\PfEnd
+\SepLine
+
+%\Anchor{8A9}\ProblemN{9}{
+%	\TextA{Supp $S,T\in\Lm{V}$ and $ST$ nilp. Prove $TS$ nilp.}
+%}Supp $\Par{ST}{^k}=0.$ \NOTICE that $\Par{TS}{^{k+1}}=T\Par{ST}{^k}S=0.$\PfEnd
+%\SepLine
 
 \Anchor{8A4e3}\ProblemBnoor{4E 3}{
 	\TextA{Supp $T\in\Lm{V}.$ Prove $V=\null T\oplus\range T\Longleftrightarrow\null T^2=\null T.$}
@@ -4155,12 +4161,7 @@ $\dim\Null\Par{T-\lambda I}\Par{T-\lambda I}{^{m-1}}=\dim\Null\Par{T-\lambda I}\
 }By Exe (19), becs $\null T^{\dim V}=\null T^{\dim V+1}=\cdots.$ Simlr.\PfEnd\parSol{}
 \Or Asum $\range T^{n}\supsetneq\range T^{n+1}.$ By Exe (17), $V=\range T^0\supsetneq\range T\supsetneq\cdots\supsetneq\range T^{n+1}.$\parSol{}
 Now each $\dim\range T^{k+1}\leqslant\dim\range T^k-1\Rightarrow\dim\range T^{n+1}\leqslant\dim\range T^0-\Par{n+1}.$\PfEnd
-\SepLine
-
-\Anchor{8ANE17-18-19}\ProblemBX[]{\NoteForSmall{Exe (17, 18, 19)}}{
-	Since $V$ finide. Immed by [3.22] and [8.3, 4], Exe (19) $\Rightarrow$ (18) $\Rightarrow$ (17).\TextA{}
-	Which is in opposite order as to the stmts for null sp.\TextA{\vspace{-2pt}}
-}\SepLine
+\SepLine\pagebreak
 
 \Anchor{8A4e16}\ProblemBnoor{4E 16}{
 	\TextA{Supp $S,T\in\Lm{V}$ nilp and commu. Prove $S+T,ST$ are nilp}
@@ -4168,10 +4169,21 @@ Now each $\dim\range T^{k+1}\leqslant\dim\range T^k-1\Rightarrow\dim\range T^{n+
 \ANote If $S,T$ not commu. Then generally $\Par{ST}{^k}\neq S^kT^k.$
 \SepLine
 
+\Anchor{8A4e11}\ProblemBnoor{4E 11}{
+	\TextA{Supp $T\in\Lm{V}.$ Prove $\exists\,B_V$ of gigvecs of $T\Longleftrightarrow$ the min of $T$ is $\Par{z-\lambda_1}\cdots\Par{z-\lambda_m}.$}
+}
+\SepLine
+
+\Anchor{8A4e15}\ProblemBnoor{4E 15}{
+	\TextA{Supp $\Fbb=\Cbb,T\in\Lm{V}.$ Prove $T$ diag $\Longleftrightarrow$ each gigvec is an eigvec.}
+}
+\SepLine
+
 \ChEnd
-\pagebreak
 
 \ChDecl{Ch8B}{8.B}{}
+
+
 
 \ChEnd
 \pagebreak
@@ -4180,6 +4192,12 @@ Now each $\dim\range T^{k+1}\leqslant\dim\range T^k-1\Rightarrow\dim\range T^{n+
 
 \ChEnd
 \pagebreak
+
+\ChDecl{Ch8D}{8.D}{}
+
+\ChEnd
+\pagebreak
+
 
 \ChDecl{Ch9A}{9.A}{\quad{\FontNorm\ANote $V$ denotes a finide non0 vecsp over $\Fbb.$}}
 
