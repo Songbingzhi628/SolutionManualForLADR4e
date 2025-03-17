@@ -3341,10 +3341,10 @@ Thus $\Par{T-\lambda I}S=0\Rightarrow\mA\Par{S}=TS=\lambda S$ with $S\neq 0.$\vs
 \SepLine
 
 \ProblemB{
-	\TextB{Supp $S,T\in\Lm{V},S$ is inv, and $p\in\PoFi$. Prove $Sp\Par{TS}=p\Par{ST}S.$}
+	\TextB{Supp $S,T\in\Lm{V},p\in\PoFi$. Prove $Sp\Par{TS}=p\Par{ST}S.$}
 }We prove each $S\Par{TS}{^m}=\Par{ST}{^m} S$ by induc. (i) $m=0,1.$ Immed.\parSol{}
 (ii) $m>1.$ $S\Par{TS}{^{m-1}}=\Par{ST}{^{m-1}} S\Rightarrow S\Par{TS}{^{m}}=S\Par{TS}{^{m-1}}\Par{TS}=\Par{ST}{^{m-1}}\Par{ST}S=\Par{ST}{^{m}}S.$\PfEnd\vspace{2pt}
-\AComm $p\Par{TS} = S^{-1} p\Par{ST}S,\;p\Par{ST} = Sp\Par{TS}S^{-1}.$\par\Anchor{5BI5}\Anchor{5A4e40}
+\AComm If $S$ is inv. Then $p\Par{TS} = S^{-1} p\Par{ST}S,\;p\Par{ST} = Sp\Par{TS}S^{-1}.$\par\Anchor{5BI5}\Anchor{5A4e40}
 \ACoro Becs $S$ is inv, $T\in\Lm{V}$ is arb $\Longleftrightarrow ST=R\in\Lm{V}$ is arb. Hence $p\Par{S^{-1}RS}=S^{-1}p\Par{R}S.$
 \SepLine
 
@@ -3684,7 +3684,7 @@ Let $T=\i^{1/2}I\;$ defined by $\i^{1/2}\Par{x,y}=\XPar{\frac{\sqrt{2}}{2}x-\fra
 
 \Anchor{5BI4e21}\ProblemBnoor{4E 21}{
 	\TextB{Supp $V$ finide, $T\in\Lm{V}$. Prove the min $p$ has deg at most $1 + \dim \range T$.}
-}Let $q$ be the min of $T\mmid_{\range T}.$ Then $q\Par{T}Tv=0\Rightarrow zq\Par{z}$ of deg $1+\dim\range T$ is multi of $p.$\PfEnd
+}Let $q$ be the min of $T\mmid_{\range T}.$ Then $q\Par{T}Tv=0\Rightarrow zq\Par{z}$ of deg $<1+\dim\range T$ is multi of $p.$\PfEnd
 \SepLine
 
 \Anchor{5BI'1}\ProblemB[]{
@@ -4105,11 +4105,67 @@ Thus ${e_1}$ eigvec of $T$ but not of $S,$ and ${e_3}$ eigvec of $S$ but not of 
 \SepLine
 \ChEnd
 
-\ChDecl{Ch8A}{8.A}{}
+\ChDecl{Ch8A}{8.A}{\quad{\FontNorm\ANote $V$ denotes a finide non0 vecsp over $\Fbb.$}}
+
+\vspace{4pt}
+
+\Anchor{8A3}\ProblemN{3}{
+	\TextA{Supp $T\in\Lm{V}$ inv. Prove $G\Par{\lambda,T}=G\Par{\lambda^{-1},T^{-1}}$ for any non0 $\lambda\in\Fbb.$}
+}
+\SepLine
+
+\Anchor{8A4}\ProblemN{4}{
+	\TextA{Supp $T\in\Lm{V}$ and $\alpha,\beta\in\Fbb$ disti. Prove $G\Par{\alpha,T}\cap G\Par{\beta,T}=\zeroSubs.$}
+}
+\SepLine
 
 \Anchor{8A5}\ProblemN{5}{
 	\TextA{Supp $T\in\Lm{V},$ $T^{n-1}v\neq 0,\;T^nv=0.$ \,Prove $\BigPar{v,Tv,\dots,T^{n-1}v}$ is liney indep.}
 }$a_0v+a_1Tv+\dots+a_{n-1}T^{n-1}v=0\Rightarrow a_0T^{n-1}v=0\Rightarrow a_0=0.$ \,Simlr for $a_1,\dots,a_{n-1}.$\PfEnd
+\SepLine
+
+\Anchor{8A4e24}\ProblemBX[]{\NoteForSmall{[8.19] \OR [4E 8.18]}}{
+	If the min of $T$ is $z^m.$ Then $\exists\,v$ suth $T^{m-1}v\neq0.$\TextB{}
+	Now $B_V=\Par{T^{m-1}v,\dots,Tv,v}.$ Let each $w_k=T^{m-k}v.$ Then $Tw_1=0$ and each $T\Par{w_k}=w_{k-1}.$\TextB{\vspace{-2pt}}
+}\SepLine
+
+\Anchor{8A4e3}\ProblemBnoor{4E 3}{
+	\TextA{Supp $T\in\Lm{V}.$ Prove $V=\null T\oplus\range T\Longleftrightarrow\null T^2=\null T.$}
+}(a) $\null T^2=\null T=\null T^{\dim V}\Rightarrow\dim\range T^{\dim V}=\dim\range T.$\parSol{\Ha}
+\Or $\forall v\in\null T\cap\range T,\exists\,u\in V,Tu=v,T^2u=Tv=0\Longleftrightarrow u\in\null T^2=\null T.$\parSol{\vspace{2pt}}
+(b) $V=\null T\oplus U,U=\range T,$ 又 $\dim\null T^2=\dim\null T+\dim\null T\mmid_{\range T}.$\PfEnd
+\SepLine
+
+\Anchor{8A4e4}\ProblemBnoor{4E 4}{
+	\TextA{Supp $T\in\Lm{V},\lambda\in\Fbb,$ the min of $T$ is a multi of $\Par{z-\lambda}{^m}$ for $m\in\Nbp.$}
+	\TextA{Prove $\dim\Null\Par{T-\lambda I}{^m}\geqslant m.$}
+}Becs $\lambda$ is eigval of $T.$ We show $z^m$ is the min of $\Par{T-\lambda I}\Big|{_{\Null\SmallPar{T-\lambda I}{^m}}}.$\parSol{}
+Using induc on $m.$ (i) $m=1.$ Becs $\dim E\Par{\lambda, T}\geqslant 1.$ \,(ii) $m>1.$ Asum it holds for $\Par{m-1}.$\parSol{}
+$\dim\Null\Par{T-\lambda I}\Par{T-\lambda I}{^{m-1}}=\dim\Null\Par{T-\lambda I}\Big|{_{\Null\SmallPar{T-\lambda I}{^{m-1}}}}+\uline{\dim\Null\Par{T-\lambda I}{^{m-1}}}.$\PfEnd
+\SepLine
+
+\Anchor{8A17}\ProblemN{17}{
+	\TextA{Supp $T\in\Lm{V},m\in\Nbb,\range T^m=\range T^{m+1}.$ Show $\range T^m=\range T^{m+1}=\cdots.$}
+}By Exe (19), $\null T^m=\null T^{m+1}=\cdots\Rightarrow\dim\range T^m=\dim\range T^{m+1}=\cdots.$\PfEnd\parSol{}
+\Or Supp $w=T^{m+k}v.$ Then becs $T^mv\in\range T^{m+1},\exists\,T^{m+1}u=T^mv.$ Thus $w=T^{m+k+1}u.$\PfEnd
+\SepLine
+
+\Anchor{8A18}\ProblemN{18}{
+	\TextA{Supp $T\in\Lm{V},\dim V=n.$ Show $\range T^{n}=\range T^{n+1}=\cdots.$}
+}By Exe (19), becs $\null T^{\dim V}=\null T^{\dim V+1}=\cdots.$ Simlr.\PfEnd\parSol{}
+\Or Asum $\range T^{n}\supsetneq\range T^{n+1}.$ By Exe (17), $V=\range T^0\supsetneq\range T\supsetneq\cdots\supsetneq\range T^{n+1}.$\parSol{}
+Now each $\dim\range T^{k+1}\leqslant\dim\range T^k-1\Rightarrow\dim\range T^{n+1}\leqslant\dim\range T^0-\Par{n+1}.$\PfEnd
+\SepLine
+
+\Anchor{8ANE17-18-19}\ProblemBX[]{\NoteForSmall{Exe (17, 18, 19)}}{
+	Since $V$ finide. Immed by [3.22] and [8.3, 4], Exe (19) $\Rightarrow$ (18) $\Rightarrow$ (17).\TextA{}
+	Which is in opposite order as to the stmts for null sp.\TextA{\vspace{-2pt}}
+}\SepLine
+
+\Anchor{8A4e16}\ProblemBnoor{4E 16}{
+	\TextA{Supp $S,T\in\Lm{V}$ nilp and commu. Prove $S+T,ST$ are nilp}
+}By [4E 5.80], $\exists\,B_V$ suth $S,T$ up-trig \Par{with only $0$'s on diags}. By (4E 5.C.2).\PfEnd
+\ANote If $S,T$ not commu. Then generally $\Par{ST}{^k}\neq S^kT^k.$
 \SepLine
 
 \ChEnd
@@ -4125,7 +4181,7 @@ Thus ${e_1}$ eigvec of $T$ but not of $S,$ and ${e_3}$ eigvec of $S$ but not of 
 \ChEnd
 \pagebreak
 
-\ChDecl{Ch9A}{9.A}{}
+\ChDecl{Ch9A}{9.A}{\quad{\FontNorm\ANote $V$ denotes a finide non0 vecsp over $\Fbb.$}}
 
 \vspace{4pt}
 
@@ -4148,7 +4204,7 @@ Thus ${e_1}$ eigvec of $T$ but not of $S,$ and ${e_3}$ eigvec of $S$ but not of 
 Let $\Par{v_1,Tv_1}$ be liney indep in $V$ as real vecsp. Let $v_2\not\in\Span{v_1,Tv_1}\Rightarrow\Par{v_1,Tv_1,v_2}$ liney indep.\vspace{1pt}\par\quad
 {\tgbf Step 1.} \;We show $\Par{v_1,Tv_1,v_2,Tv_2}$ liney indep in $V$ as real vecsp. Asum $Tv_2=a_1v_1+b_1Tv_1+a_2v_2.$\par\quad
 \Blind{{\tgbf Step 1.} \;}Then $-v_2=a_1Tv_1-b_1v_1+a_2Tv_2.$ Note that $a_2\neq0$ and $a_2^2=-1$ while $a_2\in\Rbb,$ ctradic.\vspace{2pt}\par\quad
-{\tgbf Step k.} \;We show $\Par{v_1,Tv_1,\dots,v_k,Tv_k,v_{k+1},Tv_{k+1}}$ liney indep in $V$ as real vecsp. Simlr.\par\quad
+{\tgbf Step k.} \;\!\Sbra{$k\leqslant N-1$} We show $\Par{v_1,Tv_1,\dots,v_k,Tv_k,v_{k+1},Tv_{k+1}}$ liney indep in $V$ as real vecsp. Simlr.\par\quad
 \Blind{{\tgbf Step k.} \;}Asum $Tv_{k+1}=a_1v_1+b_1Tv_1+\dots+a_{k+1}v_{k+1}.$ Then $-v_{k+1}=a_1Tv_1-b_1v_1+\dots+a_{k+1}Tv_{k+1}.$\PfEnd
 \SepLine
 
