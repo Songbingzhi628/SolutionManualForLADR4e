@@ -567,7 +567,7 @@ Define $T\in\Lm{V,W}$ by $T\Par{u_v+w_v}=Su_v.$\PfEnd\parSol{\vspace{0pt}}
 
 \Anchor{9A2}\Anchor{9A6}\Anchor{3B4e33}\ProblemBnoor{{9.A.2,6 \OR 4E 3.B.33}}{
 	\TextB{Supp $V,W$ are on $\Rbb,$ and $T\in\Lm{V,W}.$ Show}
-	{\tgnr\large(a)} $T_{\!\Cbb}\in\Lm{V_{\!\Cbb},W_{\!\Cbb}}.$ \;{\tgnr\large(b)} $\Null\Par{T_{\!\Cbb}}=\BigPar{\null T}{_\Cbb},\Range\Par{T_{\!\Cbb}}=\BigPar{\range T}{_\Cbb}.$ \;{\tgnr\large(c)} $T_{\!\Cbb}$ is inv $\Longleftrightarrow T$ is inv.\TextB{}
+	{\tgnr\large(a)} $T_{\!\Cbb}\in\Lm{V_{\!\Cbb},W_{\!\Cbb}}.$ \;{\tgnr\large(b)} $\Null\Par{T_{\!\Cbb}}=\BigPar{\null T}{_\Cbb},\,\Range\Par{T_{\!\Cbb}}=\BigPar{\range T}{_\Cbb}.$ \;{\tgnr\large(c)} $T_{\!\Cbb}$ is inv $\Leftrightarrow T$ is inv.\TextB{}
 }{(a) $T_{\!\Cbb}\BigPar{\Par{u_1+\i v_1}+\Par{x+\i y}\Par{u_2+\i v_2}}=T\Par{u_1+xu_2-yv_2}+\i T\Par{v_1+xv_2+yu_2}$\parSol{\Ha}
 	$=T_{\!\Cbb}\Par{u_1+\i v_1}+\Par{x+\i y}T_{\!\Cbb}\Par{u_2+\i v_2}.$\parSol{}
 	(b) $u+\i v\in\Null\Par{T_{\!\Cbb}}\Longleftrightarrow u,v\in\null T\Longleftrightarrow u+\i v\in\BigPar{\null T}{_\Cbb}.$\parSol{\Hb}
@@ -3744,12 +3744,11 @@ $Tw=cv+dw\Rightarrow \Par{T-dI}w=cv\Rightarrow\Par{T-aI}\Par{T-dI}w=cTv-acv=bcw.
 {\vspace{-2pt}\FontSmall(II) Asum (2) or (3) are true, with (1) not true. Then $Tv=av+bw,$ or $Tw=cv+dw.$}\PfEnd
 \SepLine
 
-\Anchor{5BI4e16}\Anchor{8C18}\ProblemBnoor{8.C.18}{
-	\TextA{Define $T\in\Lm{\Fbb^n}:\Par{x_1,\dots,x_n}\mapsto\BigPar{{-a_0\,x_n,\,x_1-a_1\hspace{1pt}x_n,\,\cdots,\,x_{n-1}-a_{n-1}\hspace{1pt}x_n}}.$}
+\Anchor{5BI4e16}\Anchor{8C18}\ProblemBnoor{8.C.18 \OR 4E 16}{
+	\TextA{Define $T\in\Lm{\Fbb^n}:\Par{x_1,\dots,x_n}\mapsto\BigPar{{-a_0\,x_n,\,x_1-a_1\hspace{1pt}x_n,\,\cdots,\,x_{n-1}-a_{n-1}\hspace{1pt}x_n}}.$\vspace{1pt}}
 	\TextA{Show the min $p$ of $T$ is $q\Par{z}=a_0+a_1z+\dots+a_{n-1}z^{n-1}+z^n.$}
-}Becs $Te_0=e_1,\,T^2e_0=e_2,\cdots,\,T^{n-1}e_0=e_{n-1},\,T^ne_0=T^{n-k}e_k=Te_{n-1}=-\Par{a_0\hspace{1pt}e_0+\dots+a_{n-1}\hspace{1pt}e_{n-1}}.$\parSol{}
-%=-a_0Ie_0-a_1Te_0-\dots-a_{n-1}T^{n-1}e_0.
-Let $-T^ne_0=c_0e_1+c_1e_1+\dots+c_{n-1}e_{n-1}\Rightarrow c_k=a_k.$%TODO
+}Becs $Te_1=e_2,\,T^2e_1=e_3,\cdots,\,T^{n-1}e_1=e_n,\,T^ne_1=T^{n-k}e_{k+1}=Te_n=-\Par{a_0\hspace{1pt}e_1+\dots+a_{n-1}\hspace{1pt}e_n}.$\parSol{}
+Let $-T^n=c_0I+c_1T+\dots+c_{n-1}T^{n-1}\Rightarrow$ each $c_k=a_k.$ Becs $n=\dim V.$ No greater deg.\PfEnd
 \SepLine
 
 \Anchor{5BI4e17}\ProblemBnoor{{4E 17}}{
@@ -3786,9 +3785,9 @@ Supp $\deg q\geqslant\deg p.$ For each $k\in\Nbb,\exists\,!\,b_{j,k}\in\Fbb,\,T^
 
 \Anchor{5BI4e14}\ProblemBnoor{4E 14}{
 	\TextA{Supp $V$ finide, $T\in\Lm{V},$ with the min $p\Par{z}=a_0 + a_1 z + \dots + a_{m-1} z^{m-1}+z^m,$}
-	\TextA{and $a_0\neq 0.$ \,Give a repres of $s,$ the min of $T^{-1}.$}
-}Define $q\Par{z}=z^m+{}${\Large$\frac{a_1}{a_0}$}$\,z^{m-1}+\dots+{}${\Large$\frac{a_{m-1}}{a_0}$}$\,z+{}${\Large$\frac{1}{a_0}$}$\Rightarrow q\Par{T^{-1}}=T^{-m}p\Par{T}=0.$\parSol{}
-Becs $\deg s\leqslant\deg q,$ while $\Par{T^{-1}}{^{-1}}=T\Rightarrow\deg q\leqslant\deg s.$\PfEnd\vspace{2pt}\parSol{}
+	\TextA{and $a_0\neq 0.$ \,Give a repres of $s,$ the min of $T^{-1}.$\vspace{2pt}}
+}Define $q\Par{z}=z^m+{}${\Large$\frac{a_1}{a_0}$}$\,z^{m-1}+\dots+{}${\Large$\frac{a_{m-1}}{a_0}$}$\,z+{}${\Large$\frac{1}{a_0}$}${}\Rightarrow q\Par{T^{-1}}=T^{-m}p\Par{T}=0.$\vspace{2pt}\parSol{}
+Becs $\deg s\leqslant\deg q,$ while $\Par{T^{-1}}{^{-1}}=T\Rightarrow\deg q\leqslant\deg s.$\PfEnd\vspace{4pt}\parSol{}
 \Or Becs each $T^{-k}\not\in\Span[\BigPar]{I,T^{-1},\dots,T^{-\SmallPar{k-1}}}$ for $k\in\Bra{1,\dots,m-1}.$ Done.\parSol{}
 For if not, supp $T^{-k}=b_0 I+b_1 T^{-1}+\dots+b_{k-1}T^{k-1}.$ Note that $T$ inv $\Rightarrow\exists\,b_j\neq 0.$\parSol{}
 Now $T^k\Par{T^{-k}}=I=b_0 T^k+b_1 T^{k-1}+\dots+b_{k-1}T\Rightarrow T^j\in\Span{I,T,\dots,T^{k-1}}.$\PfEnd
@@ -3818,7 +3817,7 @@ $\Rightarrow\exists\,v\neq 0,\Par{T^2+b_jT+c_j}v=0\Rightarrow T^2v\in\Span{v,Tv}
 
 \Anchor{5BIN4e5.33}\ProblemBX{\NoteForSmall{[4E 5.33]}}{
 	\TextA{Supp $\Fbb=\Rbb,$ $V$ is finide, $T\in\Lm{V},$ and $b^2<4c$ for $b,c\in\Fbb.$}
-	\TextB{Prove each $\dim\Null\BigPar{T^2+bT+cI}{^j}$ is even for $j\in\Nbp.$}
+	\TextB{Prove $\dim\Null\BigPar{T^2+bT+cI}{^j}$ is even for each $j\in\Nbp.$}
 }Using induc on $j.$ \,(i) Immed. \,(ii) $j>1.$ Asum it holds for $j-1.$\parSol{}
 Replace $V$ with $\Null\Par{T^2+bT+cI}{^{j}}$ and $T$ with $T$ restr to $\Null\Par{T^2+bT+cI}{^{j}}.$\parSol{}
 Then $\Par{T^2+bT+cI}{^{j}}=0\Rightarrow z^2+bz+c$ is a multi of the min of $T\Rightarrow$ no eigvecs of $T.$\parSol{}
@@ -4203,19 +4202,19 @@ By \Sbra{5.B(I) \TIPSN{1}}, the min of $T$ is a multi of $\Par{z-\lambda_j}{^k}.
 
 \ChEnd\pagebreak
 
-\ChDecl{Ch8B}{8.B}{}
+\ChDecl{Ch8B}{8.B}{\quad{\ANote {\FontSmall $V$ denotes a finide non0 vecsp over $\Fbb.$ An Exe marked by $\blacksquare$ is true if infinide or partially finide.}}}
 
 
 
 \ChEnd
 \pagebreak
 
-\ChDecl{Ch8C}{8.C}{}
+\ChDecl{Ch8C}{8.C}{\quad{\ANote {\FontSmall $V$ denotes a finide non0 vecsp over $\Fbb.$ An Exe marked by $\blacksquare$ is true if infinide or partially finide.}}}
 
 \ChEnd
 \pagebreak
 
-\ChDecl{Ch8D}{8.D}{}
+\ChDecl{Ch8D}{8.D}{\quad{\ANote {\FontSmall $V$ denotes a finide non0 vecsp over $\Fbb.$ An Exe marked by $\blacksquare$ is true if infinide or partially finide.}}}
 
 \ChEnd
 \pagebreak
@@ -4227,8 +4226,10 @@ By \Sbra{5.B(I) \TIPSN{1}}, the min of $T$ is a multi of $\Par{z-\lambda_j}{^k}.
 
 \Anchor{9A13}\ProblemN{13}{
 	\TextA{Supp $\Fbb=\Rbb,T\in\Lm{V},$ and $b^2<4c$ for $b,c\in\Fbb.$}
-	\TextA{Prove each $\dim\Null\BigPar{T^2+bT+cI}{^j}$ is even for $j\in\Nbp.$}
-}
+	\TextA{Prove $\dim\Null\BigPar{T^2+bT+cI}{^j}$ is even for each $j\in\Nbp.$}
+}Let $z^2+bz+c=\Par{z-\lambda}\Par{z-\overline{\lambda}}.$ Supp $\Par{T_{\!\Cbb}-\lambda I}{^j}\Par{T_{\!\Cbb}-\overline{\lambda}I}{^j}v=0$\parSol{}
+Note that $v=u+w\in G\Par{\lambda,T_{\!\Cbb}}\oplus G\Par{\overline{\lambda},T_{\!\Cbb}}\Rightarrow u\in\Null\Par{T_{\!\Cbb}-\lambda I}{^j},w\in\Null\Par{T_{\!\Cbb}-\overline{\lambda}I}{^j}.$\vspace{2pt}\parSol{}
+Thus $\Null\Par{T_{\!\Cbb}^2+bT_{\!\Cbb}+cI}{^j}=\Null\Par{T_{\!\Cbb}-\lambda I}{^j}\oplus\Null\Par{T_{\!\Cbb}-\overline{\lambda}I}{^j}.$ By [9.4] and [9.12].\PfEnd
 \SepLine
 
 %\Anchor{9A16}\ProblemN{16}{
@@ -4249,15 +4250,12 @@ Let $\Par{v_1,Tv_1}$ be liney indep in $V$ as real vecsp. Let $v_2\not\in\Span{v
 \SepLine
 
 \Anchor{9A18}\ProblemN{18}{
-	\TextA{Supp $\Fbb=\Rbb,$ and $T\in\Lm{V}.$}
-	\PrePa\TextA{Show all eigvals of $T_{\!\Cbb}$ are real $\Rightarrow\exists\,B_V$ suth $T$ up-trig.}
-	\PrePb\TextA{Show all eigvals of $T_{\!\Cbb}$ are real $\Rightarrow\exists\,B_V$ of gigvecs of $T.$}
-}(a) Using induc on $\dim V.$ (i) Immed. (ii) $\dim V>1.$ Asum it holds for smaller $V.$\parSol{\Ha}
-Supp all eigvals of $T_{\!\Cbb}$ are real. Let $U=\Range\Par{T-\lambda I}.$\parSol{\Ha}
+	\TextA{Supp $\Fbb=\Rbb,$ $T\in\Lm{V},$ and all eigvals of $T_{\!\Cbb}$ are real.}
+	\TextA{Show {\tgnr\large(a)} $\exists\,B_V$ suth $T$ up-trig; \:{\tgnr\large(b)} $\exists\,B_V$ of gigvecs of $T.$}
+}(a) By [9.10] and [4E 5.44], immed. \;\Or Using induc on $\dim V.$ (i) Immed. (ii) $\dim V>1.$\parSol{\Ha}
+Asum it holds for smaller $V.$ Supp all eigvals of $T_{\!\Cbb}$ are real. Let $U=\Range\Par{T-\lambda I}.$\parSol{\Ha}
 Then all eigvals of $ T_{\!\Cbb}\mmid_{U_{\Cbb}}=\Par{T\mmid_U}{_{\Cbb}}$ are real. By asum, simlr to [5.27].\vspace{3pt}\parSol{}
-(b) .\parSol{\Hb}
-\parSol{\Hb}
-\PfEnd
+(b) By (a) and (4E 8.A.11), immed.\PfEnd
 \SepLine
 
 \ChEnd
