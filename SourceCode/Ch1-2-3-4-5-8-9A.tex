@@ -1407,7 +1407,7 @@ Note that $\Mt{T^x S^y}=\Mt{T}{^x}\Mt{S}{^y};\;\Mt{T^x+S^y}=\Mt{T}{^x}+\Mt{S}{^y
 Then $\Mt[\BigPar]{ p\Par{T_1,\dots,T_n}}={\Mt[\BigBigPar]{{\sum_{k_1,\dots,k_n}\!\!\alpha_{k_1,\dots,k_n}\prod_{i=1}^n T_i^{k_i}}}}$\parSol{\vspace{4pt}}
 \Blind{Then $\Mt[\BigPar]{ p\Par{T_1,\dots,T_n}}$} $={\sum_{k_1,\dots,k_n}\!\!\alpha_{k_1,\dots,k_n}\prod_{i=1}^n\Mt[\BigPar]{T_i^{k_i}}}={p\BigBigPar{{\Mt{T_1},\dots,\Mt{T_n}}}}.$\PfEnd\vspace{6pt}
 \BulletPointX\ACoro Supp $\tau$ is an algebraic property. Then $\tau$ holds for liney maps $\Longleftrightarrow \tau$ holds for matrices.\parCor{\IndentB}
-Supp $\alpha_1,\dots,\alpha_n$ are dist with each $\alpha_k\in\Bra{1,\dots,n}.$\parCor{\IndentB}
+Supp $\alpha_1,\dots,\alpha_n$ are disti with each $\alpha_k\in\Bra{1,\dots,n}.$\parCor{\IndentB}
 Now $p\Par{T_1,\dots,T_n}=p\Par{T_{\alpha_1},\dots,T_{\alpha_n}}\Longleftrightarrow p\BigBigPar[0pt]{{\Mt{T_1},\dots,\Mt{T_n}}}=p\BigBigPar[0pt]{{\Mt{T_{\alpha_1}},\dots,\Mt{T_{\alpha_n}}}}.$\SepLine
 
 \ProblemN{\Anchor{3C13}{13}}{
@@ -3744,6 +3744,14 @@ $Tw=cv+dw\Rightarrow \Par{T-dI}w=cv\Rightarrow\Par{T-aI}\Par{T-dI}w=cTv-acv=bcw.
 {\vspace{-2pt}\FontSmall(II) Asum (2) or (3) are true, with (1) not true. Then $Tv=av+bw,$ or $Tw=cv+dw.$}\PfEnd
 \SepLine
 
+\Anchor{5BI4e16}\Anchor{8C18}\ProblemBnoor{8.C.18}{
+	\TextA{Define $T\in\Lm{\Fbb^n}:\Par{x_1,\dots,x_n}\mapsto\BigPar{{-a_0\,x_n,\,x_1-a_1\hspace{1pt}x_n,\,\cdots,\,x_{n-1}-a_{n-1}\hspace{1pt}x_n}}.$}
+	\TextA{Show the min $p$ of $T$ is $q\Par{z}=a_0+a_1z+\dots+a_{n-1}z^{n-1}+z^n.$}
+}Becs $Te_0=e_1,\,T^2e_0=e_2,\cdots,\,T^{n-1}e_0=e_{n-1},\,T^ne_0=T^{n-k}e_k=Te_{n-1}=-\Par{a_0\hspace{1pt}e_0+\dots+a_{n-1}\hspace{1pt}e_{n-1}}.$\parSol{}
+%=-a_0Ie_0-a_1Te_0-\dots-a_{n-1}T^{n-1}e_0.
+Let $-T^ne_0=c_0e_1+c_1e_1+\dots+c_{n-1}e_{n-1}\Rightarrow c_k=a_k.$%TODO
+\SepLine
+
 \Anchor{5BI4e17}\ProblemBnoor{{4E 17}}{
 	\TextA{Supp $V$ finide, $T\in \Lm{V}$ with the min $p,$ and $\lambda\in\Fbb.$}
 	\TextA{Show the min $s$ of $\Par{T-\lambda I}$ is $q\Par{z}=p\Par{z+\lambda}.$}
@@ -3766,7 +3774,7 @@ Define $r\Par{z}=s\Par{\lambda z}\Rightarrow r\Par{T}=s\Par{\lambda T}=0\Rightar
 	\TextA{Prove $\exists\,j\in\Bra{1,\dots,m},\;U_{j-1}=U_n$ for all $n\geqslant j-1.$}
 }Supp $j$ is the smallest suth $T^j v=a_0v+a_1 Tv+\dots+a_{j-1}T^{j-1}v\in U_{j-1}\Rightarrow j\leqslant m.$\parSol{}
 Then $U_{j-1}$ is invard $T,$ so is each $U_n=\Span{v,Tv,\dots,T^{j-1} v,\dots,T^n v}.$\PfEnd
-\SepLine
+\SepLine\pagebreak
 
 \Anchor{5BI4e13}\ProblemBnoor{4E 13}{
 	\TextA{Supp $V$ finide, $T\in \Lm{V},$ with the min $p\Par{z}=c_0+c_1 z+\dots+c_{m-1}z^{m-1}+z^m.$}
@@ -3809,7 +3817,7 @@ $\Rightarrow\exists\,v\neq 0,\Par{T^2+b_jT+c_j}v=0\Rightarrow T^2v\in\Span{v,Tv}
 \SepLine
 
 \Anchor{5BIN4e5.33}\ProblemBX{\NoteForSmall{[4E 5.33]}}{
-	\TextA{Supp $\Fbb=\Rbb,T\in\Lm{V},$ and $b^2<4c$ for $b,c\in\Fbb.$}
+	\TextA{Supp $\Fbb=\Rbb,$ $V$ is finide, $T\in\Lm{V},$ and $b^2<4c$ for $b,c\in\Fbb.$}
 	\TextB{Prove each $\dim\Null\BigPar{T^2+bT+cI}{^j}$ is even for $j\in\Nbp.$}
 }Using induc on $j.$ \,(i) Immed. \,(ii) $j>1.$ Asum it holds for $j-1.$\parSol{}
 Replace $V$ with $\Null\Par{T^2+bT+cI}{^{j}}$ and $T$ with $T$ restr to $\Null\Par{T^2+bT+cI}{^{j}}.$\parSol{}
@@ -3818,9 +3826,9 @@ Let $U$ be invarspd $T$ and has the largest even dim of all such invarsp. If $V=
 for $w\in V\Backslash U\Rightarrow W=\Par{w,Tw}$ invard $T$ of dim $2\Rightarrow U+W$ of dim $\Par{{\dim U+2}}$ invard $T.$\PfEnd
 \SepLine
 
-\ChEnd
+\ChEnd\pagebreak
 
-\vfill\ChDecl{Ch5BII}{5.B: II}{\qquad{\small\textbf{注意\,:}\;这一节的题号使用第四版5.C节}}
+\ChDecl{Ch5BII}{5.B: II}{\qquad{\small\textbf{注意\,:}\;这一节的题号使用第四版5.C节}}
 
 \vspace{4pt}
 
@@ -3830,7 +3838,7 @@ for $w\in V\Backslash U\Rightarrow W=\Par{w,Tw}$ invard $T$ of dim $2\Rightarrow
 	\PrePa\TextA{Show $A + B$ up-trig with $\alpha_1 + \beta_1 , \dots , \alpha_n + \beta_n$ on the diag.}
 	\PrePb\TextA{Show $AB$ up-trig with $\alpha_1 \beta_1 , \dots , \alpha_n \beta_n$ on the diag.}
 }(a) By def, immed. \:(b) Becs $A_{j,k}=B_{j,k}=0$ for $j>k.$ By def, for each $p\in\Bra{1,\dots,n},$\parSol{} $\Par{AB}{_{p,p}}=A_{p,1}B_{1,p}+\dots+A_{p,p-1}B_{p-1,p}+A_{p,p}B_{p,p}+A_{p,p+1}B_{p+1,p}+\dots+A_{p,n}B_{n,p}=A_{p,p}B_{p,p}.$\PfEnd
-\SepLine\pagebreak
+\SepLine
 
 \Anchor{5BII4e3}\ProblemN{3}{
 	\TextA{Supp $T$ inv, $B_V=\Par{v_1,\dots,v_n},$ $\Mt{T}=A$ is up-trig,}
@@ -3881,42 +3889,35 @@ Let $A=\Mt[\BigPar]{I,\,f\rightarrow e}.$ Then $C=A^{-1}BA.$\PfEnd
 $Tv_k\in\Span{v_k,\dots,v_n},\,Tv_{k+1}\in\Span{v_{k+1},\dots,v_n},\cdots,\,Tv_{n}\in\Span{v_n}.$ Thus (c) holds.\PfEnd
 \SepLine
 
-\BulletPointX\TipsN{1}\;\;Supp $B_V=\Par{v_1,\dots,v_n},B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_n},T\in\Lm{V},A=\Mt{T,B_V}.$\TextB{}
+\Anchor{5BIIT1}\BulletPointX\TipsN{1}\;\;Supp $B_V=\Par{v_1,\dots,v_n},B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_n},T\in\Lm{V},A=\Mt{T,B_V}.$\TextB{}
 \IndentTipsN{1}(a) $A$ up-trig $\Longleftrightarrow T=\sum_{k=1}^n\sum_{j=1}^kA_{j,k}E_{k,j}\Longleftrightarrow T\apostrophe=\sum_{k=1}^n\sum_{j=1}^kA^t_{k,j}\reflectbox{\textit{E}}{_{j,k}}\Longleftrightarrow A^t$ low-trig.\TextB{}
-\IndentTipsN{1}(b) $A$ low-trig $\Longleftrightarrow T=\sum_{k=1}^n\sum_{j=1}^kA_{k,j}E_{j,k}\Longleftrightarrow T\apostrophe=\sum_{k=1}^n\sum_{j=1}^kA^t_{j,k}\reflectbox{\textit{E}}{_{k,j}}\Longleftrightarrow A^t$ up-trig.
+\IndentTipsN{1}(b) $A$ low-trig $\Longleftrightarrow T=\sum_{k=1}^n\sum_{j=1}^kA_{k,j}E_{j,k}\Longleftrightarrow T\apostrophe=\sum_{k=1}^n\sum_{j=1}^kA^t_{j,k}\reflectbox{\textit{E}}{_{k,j}}\Longleftrightarrow A^t$ up-trig.\par
 \SepLine
 
-\Anchor{5BII4e11}\ProblemBX{\TipsN{2}}{
+\Anchor{5BIIT2}\ProblemBX{\TipsN{2}}{
 	\TextA{Supp $\Par{\alpha_1,\dots,\alpha_n},\Par{\beta_1,\dots,\beta_n}$ are bses of $V,$ with each $\alpha_k=\beta_{n-k+1}.$}
 	\TextA{Prove $\Mt{T,\alpha\rightarrow\alpha}$ up-trig $\Longleftrightarrow\Mt{T,\beta\rightarrow\beta}$ low-trig.}
-}For each $k\in\Bra{1,\dots,n},\:T\beta_{n-k+1}=T\alpha_k\in\Span{\alpha_1,\dots,\alpha_k}=\Span{\beta_n,\dots,\beta_{n-k+1}}.$\PfEnd
+}For each $k\in\Bra{1,\dots,n},\:T\beta_{n-k+1}=T\alpha_k\in\Span{\alpha_1,\dots,\alpha_k}=\Span{\beta_n,\dots,\beta_{n-k+1}}.$\PfEnd\vspace{2pt}
+\Anchor{5BII4e11}\Anchor{5BII4e14}\ACoro (a) Supp $\Fbb=\Cbb.$ Then $\exists\,B_V$ suth $\Mt{T,B_V}$ low-trig. \;(b) $T$ up-trig $\Longleftrightarrow T\apostrophe$ up-trig.
 \SepLine
 
-\Anchor{5BII4e12}\ProblemN{12}{
-	\TextA{Supp $V$ is finide, $U$ invarspd $T,$ and $\Mt{T}$ is up-trig for some $B_V.$}
-	\PrePa\TextA{Prove $\Mt{T\mmid_U}$ up-trig for some $B_U$. \, {\tgnr\large(b)} Prove $\Mt{T\XSlash U}$ up-trig for some $B_{V\XSlash U}.$}
-}Becs the min $\Par{z-\lambda_1}\cdots\Par{z-\lambda_m}$of $T$ is multi of min of $T\mmid_U$ and of min of $T\XSlash U.$\PfEnd
-\SepLine
-
-\Anchor{5BII4e13}\ProblemN{13}{
-	\TextA{Supp $V$ is finide, $U$ invarspd $T$ suth $T\mmid_U,T\XSlash U$ up-trig. Prove $T$ up-trig.}
-}Let $B_U=\Par{u_1,\dots,u_p},B_{V\XSlash U}=\Par{w_1+U,\dots,w_q+U}$ suth $\Mt{T\mmid_U},\Mt{T\XSlash U}$ up-trig.\parSol{}
+\Anchor{5BII4e12}\Anchor{5BII4e13}\ProblemN{12, 13}{
+	\TextA{Supp $V$ finide, $T\in\Lm{V}.$ Prove $T\mmid_U,T\XSlash U$ up-trig for some $U$ invarsp $\Longleftrightarrow T$ up-trig.}
+}Supp $B_U=\Par{u_1,\dots,u_p},B_{V\XSlash U}=\Par{w_1+U,\dots,w_q+U}$ suth $\Mt{T\mmid_U},\Mt{T\XSlash U}$ up-trig.\parSol{}
 Then each $Tu_k\in\Span{u_1,\dots,u_k}$ and each $Tw_j+U\in\Span{w_1+U,\dots,w_j+U}.$\parSol{}
 By (3.E.13), $B_V=\Par{u_1,\dots,u_p,w_1,\dots,w_q}.$ Now each $Tw_j\in\Span{u_1,\dots,u_p,w_1,\dots,w_j}.$\PfEnd\vspace{2pt}\parSol{}
-\Or By (4E 5.B.25)(b) and [4E 5.44], immed.\PfEnd
+\Or By (4E 5.B.25)(b) and [4E 5.44], immed.\quad Convly, by [4E 5.44], immed.\PfEnd
 \SepLine
-
-%\Anchor{5BII4e14}\ProblemN{14}{
-%	\TextA{Supp $V$ is finide. Prove $T$ up-trig $\Longleftrightarrow$ $T\apostrophe$ up-trig.}
-%}Immed, by \TIPSN{1} and \TIPSN{2}, \OR by (4E 5.B.28) and [4E 5.44].\PfEnd
-%\SepLine
-
-%\ChEnd
+\ChEnd
 
 \ChDecl{Ch5C}{5.C \& [4E] 5.D}{\qquad{\small\textbf{注意\,:}\;这一节的题号主要使用第四版5.D节}}
 
-\vspace{4pt}
+\vspace{6pt}
 
+\Anchor{5C4e15}\ProblemN[]{15}{
+	Supp $\Fbb=\Cbb,$ $V$ is finide, $T\in\Lm{V}$ with the min $p.$ Then using Exe (4.6),\TextA{}
+	$T$ diag $\Longleftrightarrow\nexists\,\Par{z-\lambda}{^2}$ in $p\Longleftrightarrow p,p\apostrophe$ have no common zeros $\Longleftrightarrow\gcd\Par{p,p\apostrophe}=1.$\vspace{-4pt}\TextA{}
+}\SepLine
 
 \Anchor{5C1}\Anchor{5C4e3}\ProblemN{3}{
 	\TextA{Supp $T\in\Lm{V}$ is diag. Prove $V=\null T\oplus\range T.$}
@@ -3974,11 +3975,6 @@ Thus all $\mu$'s are dist. Let $s\Par{z}=\Par{z^k-\lambda_1}\cdots\Par{z^k-\lamb
 \AExa Not true if $\Fbb=\Rbb.$ Define $T\in\Lm{\Rbb^2}:\Par{x,y}\mapsto\Par{{-y,x}}.$ No eigvals.
 \SepLine
 
-\Anchor{5C4e15}\ProblemN[]{15}{
-	\TextA{Supp $\Fbb=\Cbb,$ $V$ is finide, $T\in\Lm{V}$ with the min $p.$ Then\hfill\tgnr\FontSmall Using Exe (4.6).}
-	\TextA{$T$ diag $\Longleftrightarrow\nexists\,\Par{z-\lambda}{^2}$ in $p\Longleftrightarrow p,p\apostrophe$ have no common zeros $\Longleftrightarrow\gcd\Par{p,p\apostrophe}=1.$\vspace{-3pt}}
-}\SepLine
-
 \Anchor{5C'1}\ProblemB{
 	\TextB{Supp $\Fbb=\Cbb,n\in\Nbp,p\in\PoFi$. Prove $T\in\Lm{V}$ is diag $\Longleftrightarrow\nullp p\Par{T}=\Null\Sbra{p\Par{T}}{^n}.$}
 }(a) Supp $T$ diag. Let $p\Par{z}=\Par{z-\alpha_1}\cdots\Par{z-\alpha_m}.$ We show each $\Null\Par{T-\alpha_kI}{^n}=\Null\Par{T-\alpha_kI}.$\parSol{\Ha}
@@ -3996,28 +3992,25 @@ Define $p\Par{z}=\Par{z-\lambda_1}\cdots\Par{z-\lambda_m}.$ Then $\Sbra{p\Par{T}
 Now by \Sbra{5.A \TIPSN{1}}, each $v_k\in U_j\Rightarrow u\in U_1\oplus\cdots\oplus U_m.$\PfEnd
 \SepLine
 
-\Anchor{5C4e17}\ProblemN{17}{
-	\TextA{Supp $V$ is finide. Prove $\Lm{V}$ has a bss consisting of diag optors.}
-}Let $B_V=\Par{v_1,\dots,v_n}.$ Define each $E_{j,k}\in\Lm{V}:v_x\mapsto\delta_{j,x}v_k\Rightarrow$ [5.41](c) true.\PfEnd
-\SepLine
+%\Anchor{5C4e17}\ProblemN{17}{
+%	\TextA{Supp $V$ is finide. Prove $\Lm{V}$ has a bss consisting of diag optors.}
+%}Let $B_V=\Par{v_1,\dots,v_n}.$ Define each $E_{j,k}\in\Lm{V}:v_x\mapsto\delta_{j,x}v_k\Rightarrow$ [5.41](c) true.\PfEnd
+%\SepLine
 
 \Anchor{5C4e18}\ProblemN{18}{
-	\TextA{Supp $T\in\Lm{V}$ is diag. Prove if $U$ invarspd $T,$ then $T\XSlash U\in\Lm{V\XSlash U}$ is diag.}
+	\TextA{Supp $T\in\Lm{V}$ is diag. Prove $T\XSlash U\in\Lm{V\XSlash U}$ is diag for any $U$ invarspd $T.$}
 }By \Sbra{5.A \TIPSN{3}}, $\exists\,B_U=\Par{v_1,\dots,v_m}$ consists of eigvecs of $T.$\parSol{}
 Extend to eigvecs $B_V=\Par{v_1,\dots,v_m,w_1,\dots,w_p}\Rightarrow B_{V\XSlash U}=\Par{w_1+U,\dots,w_p+U}.$\parSol{}
-Becs for each $w_k,\:\exists$ eigval $\lambda$ of $T,\:Tw_k=\lambda w_k\Rightarrow\BigPar{T\XSlash U}\Par{w_k+U}=\lambda w_k+U.$\PfEnd\vspace{3pt}\parSol{}
-\Or Becs the min of $T$ is multi of that of $T\XSlash U.$ By [4E 5.62].\PfEnd
+Becs for each $w_k,\:\exists$ eigval $\lambda$ of $T,\:Tw_k=\lambda w_k\Rightarrow\BigPar{T\XSlash U}\Par{w_k+U}=\lambda w_k+U.$\PfEnd\vspace{2pt}\parSol{}
+\Or Becs the min of $T$ is multi of that of $T\XSlash U.$ By [4E 5.62].\PfEnd\vspace{2pt}
+\Anchor{5C4e19}\AExa Define $T\in\Lm{\Fbb^2}:\Par{x,y}\mapsto\Par{y,0}.$ Then $0$ is the only eigval with $E\Par{0,T}=\Span{e_1}=U.$\parExa
+Then $T\mmid_U=0,T\XSlash U=0.$ \;Now $T\mmid_U,T\XSlash U$ diag while $T$ not diag.\PfEnd
 \SepLine
 
-\Anchor{5C4e19}\ProblemN{19}{
-	\TextA{Give an exa of $T\in\Lm{V}$ not diag while $T\mmid_U,T\XSlash U$ both diag, where $U$ invarspd $T.$}
-}Define $T\in\Lm{\Rbb^3}:\Par{x,y,z}\mapsto\Par{z,x,y}.$ Then $1$ is the only eigval with $\dim E\Par{1,T}=1.$\PfEnd
-\SepLine
-
-\Anchor{5C4e20}\ProblemN{20}{
-	\TextA{Supp $V$ is finide, $T\in\Lm{V}.$ Prove $T$ diag $\Longleftrightarrow T\apostrophe$ diag.\hfill\tgnr\FontNorm By (4E 5.B.28), immed.}
-}By \Sbra{5.B(II) \TIPSN{1}}. Note that low-trig and up-trig are equiv to diag.\PfEnd
-\SepLine
+%\Anchor{5C4e20}\ProblemN{20}{
+%	\TextA{Supp $V$ is finide, $T\in\Lm{V}.$ Prove $T$ diag $\Longleftrightarrow T\apostrophe$ diag.\hfill\tgnr\FontNorm By (4E 5.B.28), immed.}
+%}By \Sbra{5.B(II) \TIPSN{1}}. Note that $S$ low-trig and up-trig $\Longleftrightarrow S$ diag.\PfEnd
+%\SepLine
 
 \Anchor{5C4e22}\ProblemN{22}{
 	\TextA{Supp $V$ finide, $T\in\Lm{V},$ $A=\Mt{T,B_V}\in\Fbb^{n,n}.$}
@@ -4037,15 +4030,15 @@ $\lambda\in\BigBra{z\in\Fbb:\aXMid{z-A_{j,j}}\leqslant\sum_{j\neq k=1}^n\aXMid{A
 \SepLine
 
 \ChEnd
-\pagebreak
 
 \ChDecl{Ch5E}{5.E [4E]}{}
 
 \vspace{4pt}
 
-\Anchor{5E3}\ProblemN[]{3}{
-	$S,T\in\Lm{V}$ commu, $p\in\PoFi\Rightarrow Tp\Par{S}=p\Par{S}T\Rightarrow\nullp p\Par{S},\rangep p\Par{S}$ invard $T,$ by (5.A.2,3).\PfEnd\TextA{\vspace{-4pt}}
-}\SepLine
+\Anchor{5ET1}\ProblemBX{\Tips}{
+	\TextA{Supp $S,T\in\Lm{V}$ commu. Prove $p\Par{S}q\Par{T}=q\Par{T}p\Par{S}$ for all $p,q\in\PoFi.$}
+}Becs each $S^j$ and each $T^k$ commu. Now $LHS=\sum\sum a_jb_kS^jT^k=\sum\sum a_jb_kT^kS^j=RHS.$\PfEnd
+\SepLine
 
 \Anchor{5E5}\ProblemN{5}{
 	\TextA{Supp $V$ finide. Prove $S,T$ commu $\Longleftrightarrow S\apostrophe,T\apostrophe$ commu.}
@@ -4104,19 +4097,21 @@ Thus ${e_1}$ eigvec of $T$ but not of $S,$ and ${e_3}$ eigvec of $S$ but not of 
 \SepLine
 \ChEnd
 
-\ChDecl{Ch8A}{8.A}{\quad{\FontNorm\ANote $V$ denotes a finide non0 vecsp over $\Fbb.$}}
+\ChDecl{Ch8A}{8.A}{\quad{\ANote {\FontSmall $V$ denotes a finide non0 vecsp over $\Fbb.$ An Exe marked by $\blacksquare$ is true if infinide or partially finide.}}}
 
 \vspace{4pt}
 
 \Anchor{8A3}\ProblemN{3}{
-	\TextA{Supp $T\in\Lm{V}$ inv. Prove $G\Par{\lambda,T}=G\Par{\lambda^{-1},T^{-1}}$ for any non0 $\lambda\in\Fbb.$}
-}$\Par{T-\lambda I}{^j}v=0=\sum_{i=0}^j\mathC_j^i\Par{-\lambda}{^{j-i}}T^iv.$ Apply $\Par{-\lambda}{^{-j}}T^{-j}$ to both sides. $\Par{T^{-1}-\lambda^{-1}}{^j}v=0.$\parSol{}
-\Or\PfEnd
+	\TextA{Supp $T\in\Lm{V}$ inv. Prove $G\Par{\lambda,T}=G\Par{\lambda^{-1},T^{-1}}$ for any non0 $\lambda\in\Fbb.$\PfEndB}
+}$\Par{T-\lambda I}{^j}v=0=\sum_{i=0}^j\mathC_j^i\Par{-\lambda}{^{j-i}}T^iv.$ Apply $\Par{-\lambda}{^{-j}}T^{-j}$ to both sides. $\Par{T^{-1}-\lambda^{-1}}{^j}v=0.$\PfEnd\vspace{2pt}\parSol{}
+\Or We use induc on $j$ to show each $\Null\Par{T-\lambda I}{^j}=\Null\Par{T^{-1}-\lambda^{-1}}{^j}.$ \,(i) Immed. (ii) $j>1.$\parSol{}
+Asum true for $\Par{j-1}.$ $\forall v\in\Null\Par{T-\lambda I}{^j},\Par{T-\lambda I}v\in\Null\Par{T-\lambda I}{^{j-1}}=\Null\Par{T^{-1}-\lambda^{-1}I}{^{j-1}}.$\parSol{}
+Thus $0=\Par{T^{-1}-\lambda^{-1}I}{^{j-1}}\Par{T-\lambda I}v=\uline{\Par{T-\lambda I}}\Par{T^{-1}-\lambda^{-1}I}{^{j-1}}v.$ \;By (i) and rev the roles.\PfEnd
 \SepLine
 
 \Anchor{8A5}\ProblemN{5}{
 	\TextA{Supp $T\in\Lm{V},$ $T^{n-1}v\neq 0,\;T^nv=0.$ \,Prove $\BigPar{v,Tv,\dots,T^{n-1}v}$ is liney indep.}
-}$a_0v+a_1Tv+\dots+a_{n-1}T^{n-1}v=0\Rightarrow a_0T^{n-1}v=0\Rightarrow a_0=0.$ \,Simlr for $a_1,\dots,a_{n-1}.$\PfEnd
+}$a_0v+a_1Tv+\dots+a_{n-1}T^{n-1}v=0\Rightarrow a_0T^{n-1}v=0\Rightarrow a_0=0.$ \,Simlr for $a_1,\dots,a_{n-1}.$\PfEndB
 \SepLine
 
 \Anchor{8A4e24}\ProblemBX[]{\NoteForSmall{[8.19] \OR [4E 8.18]}}{
@@ -4125,7 +4120,7 @@ Thus ${e_1}$ eigvec of $T$ but not of $S,$ and ${e_3}$ eigvec of $S$ but not of 
 }\SepLine
 
 \Anchor{8A6}\ProblemN{6}{
-	\TextA{Supp $T\in\Lm{V},n=\dim V,T^n=0\neq T^{n-1}.$ Prove $\nexists\,S\in\Lm{V}$ suth $S^k=T$ for all $k>1.$}
+	\TextA{Supp $T\in\Lm{V}$ nilp and $n=\dim V,T^{n-1}\neq0.$ Prove $\nexists\,S\in\Lm{V},\,S^k=T$ for all $k>1.$}
 }Asum $\exists$ suth $S.$ Then $\null S^{kn}=\null T^n=V=\null S^{kn-1}=\dots=\null S^n.$\parSol{}
 Note that $\exists\,j$ suth $\null S^{kn-j}=\null T^{m}$ for some $m\in\Bra{1,\dots,n-1}.$\PfEnd
 \SepLine
@@ -4135,25 +4130,30 @@ Note that $\exists\,j$ suth $\null S^{kn-j}=\null T^{m}$ for some $m\in\Bra{1,\d
 %}Supp $\Par{ST}{^k}=0.$ \NOTICE that $\Par{TS}{^{k+1}}=T\Par{ST}{^k}S=0.$\PfEnd
 %\SepLine
 
-\Anchor{8A4e3}\ProblemBnoor{4E 3}{
-	\TextA{Supp $T\in\Lm{V}.$ Prove $V=\null T\oplus\range T\Longleftrightarrow\null T^2=\null T.$}
-}(a) $\null T^2=\null T=\null T^{\dim V}\Rightarrow\dim\range T^{\dim V}=\dim\range T.$\parSol{\Ha}
-\Or $\forall v\in\null T\cap\range T,\exists\,u\in V,Tu=v,T^2u=Tv=0\Longleftrightarrow u\in\null T^2=\null T.$\parSol{\vspace{2pt}}
-(b) $V=\null T\oplus U,U=\range T,$ 又 $\dim\null T^2=\dim\null T+\dim\null T\mmid_{\range T}.$\PfEnd
-\SepLine
-
 \Anchor{8A4e4}\ProblemBnoor{4E 4}{
 	\TextA{Supp $T\in\Lm{V},\lambda\in\Fbb,$ the min of $T$ is a multi of $\Par{z-\lambda}{^m}$ for $m\in\Nbp.$}
-	\TextA{Prove $\dim\Null\Par{T-\lambda I}{^m}\geqslant m.$}
-}Becs $\lambda$ is eigval of $T.$ We show $z^m$ is the min of $\Par{T-\lambda I}\Big|{_{\Null\SmallPar{T-\lambda I}{^m}}}.$\parSol{}
+	\TextA{Prove $\dim\Null\Par{T-\lambda I}{^m}\geqslant m.$\hfill\FontNorm\tgnr\ACoro $\dim G\Par{\lambda,T}\geqslant m.$\Blind{\quad}\PfEndB}
+}Becs $\lambda$ is eigval of $T.$ We show $z^m$ is the min of $\Par{T-\lambda I}\Big|{_{\Null\SmallPar{T\,-\,\lambda I}{^m}}}.$\parSol{}
 Using induc on $m.$ (i) $m=1.$ Becs $\dim E\Par{\lambda, T}\geqslant 1.$ \,(ii) $m>1.$ Asum it holds for $\Par{m-1}.$\parSol{}
-$\dim\Null\Par{T-\lambda I}\Par{T-\lambda I}{^{m-1}}=\dim\Null\Par{T-\lambda I}\Big|{_{\Null\SmallPar{T-\lambda I}{^{m-1}}}}+\uline{\dim\Null\Par{T-\lambda I}{^{m-1}}}.$\PfEnd
+$\dim\Null\Par{T-\lambda I}\Par{T-\lambda I}{^{m-1}}=\dim\Null\Par{T-\lambda I}\Big|{_{\Null\SmallPar{T\,-\,\lambda I}{^{m-1}}}}+{}$\uline{$\dim\Null\Par{T-\lambda I}{^{m-1}}$}.\PfEnd\vspace{2pt}\parSol{}
+\Or Let $p\Par{z}=\Par{z-\lambda}{^m}q\Par{z}$ the min of $T.$\parSol{}
+We show each inclusion of $\zeroSubs\subseteq\Null\Par{T-\lambda I}\subseteq\cdots\subseteq\Null\Par{T-\lambda}{^m}$ is strict by ctradic.\parSol{}
+Asum $\Null\Par{T-\lambda I}{^k}=\Null\Par{T-\lambda I}{^{k+1}}$ for $k\in\Bra{1,\dots,m-1}.$\parSol{}
+Then $\Null\Par{T-\lambda I}{^k}=\Null\Par{T-\lambda I}{^m}\Rightarrow\Par{T-\lambda I}{^m}q\Par{T}v=0=\Par{T-\lambda I}{^k}q\Par{T}v.$\PfEnd
+\SepLine
+
+\Anchor{8A4e3}\ProblemBnoor{4E 3}{
+	\TextA{Supp $T\in\Lm{V}.$ Prove $V=\null T\oplus\range T\Longleftrightarrow\null T^2=\null T.$}
+}(a) $\null T^2=\null T=\null T^{\dim V}\Rightarrow\dim\range T^{\dim V}=\dim\range T.$\parSol{\vspace{2pt}}
+(b) $V=\null T\oplus U,U=\range T,$ 又 $\dim\null T^2=\dim\null T+\dim\null T\mmid_{\range T}.$\PfEnd\vspace{4pt}\parSol{}
+\Or (a) Supp $\null T^2=\null T.$ Then $Tu\in\null T\cap\range T\Longleftrightarrow T^2u=0\Longleftrightarrow Tu=0.$\parSol{}
+\Blind{\Or }(b) Supp $\null T\cap\range T=\zeroSubs.$ Then $T^2u=0\Longleftrightarrow Tu\in\null T\Longleftrightarrow Tu=0.$\PfEndB
 \SepLine
 
 \Anchor{8A17}\ProblemN{17}{
 	\TextA{Supp $T\in\Lm{V},m\in\Nbb,\range T^m=\range T^{m+1}.$ Show $\range T^m=\range T^{m+1}=\cdots.$}
 }By Exe (19), $\null T^m=\null T^{m+1}=\cdots\Rightarrow\dim\range T^m=\dim\range T^{m+1}=\cdots.$\PfEnd\parSol{}
-\Or Supp $w=T^{m+k}v.$ Then becs $T^mv\in\range T^{m+1},\exists\,T^{m+1}u=T^mv.$ Thus $w=T^{m+k+1}u.$\PfEnd
+\Or Supp $w=T^{m+k}v.$ Then becs $T^mv\in\range T^{m+1},\exists\,T^{m+1}u=T^mv.$ Thus $w=T^{m+k+1}u.$\PfEndB
 \SepLine
 
 \Anchor{8A18}\ProblemN{18}{
@@ -4161,25 +4161,47 @@ $\dim\Null\Par{T-\lambda I}\Par{T-\lambda I}{^{m-1}}=\dim\Null\Par{T-\lambda I}\
 }By Exe (19), becs $\null T^{\dim V}=\null T^{\dim V+1}=\cdots.$ Simlr.\PfEnd\parSol{}
 \Or Asum $\range T^{n}\supsetneq\range T^{n+1}.$ By Exe (17), $V=\range T^0\supsetneq\range T\supsetneq\cdots\supsetneq\range T^{n+1}.$\parSol{}
 Now each $\dim\range T^{k+1}\leqslant\dim\range T^k-1\Rightarrow\dim\range T^{n+1}\leqslant\dim\range T^0-\Par{n+1}.$\PfEnd
-\SepLine\pagebreak
-
-\Anchor{8A4e16}\ProblemBnoor{4E 16}{
-	\TextA{Supp $S,T\in\Lm{V}$ nilp and commu. Prove $S+T,ST$ are nilp}
-}By [4E 5.80], $\exists\,B_V$ suth $S,T$ up-trig \Par{with only $0$'s on diags}. By (4E 5.C.2).\PfEnd
-\ANote If $S,T$ not commu. Then generally $\Par{ST}{^k}\neq S^kT^k.$
 \SepLine
 
-\Anchor{8A4e11}\ProblemBnoor{4E 11}{
-	\TextA{Supp $T\in\Lm{V}.$ Prove $\exists\,B_V$ of gigvecs of $T\Longleftrightarrow$ the min of $T$ is $\Par{z-\lambda_1}\cdots\Par{z-\lambda_m}.$}
-}
+\Anchor{8A10}\ProblemN{10}{
+	\TextA{Supp $T\in\Lm{V}$ not nilp, $n=\dim V.$ Show $V=\null T^{n-1}\oplus\range T^{n-1}.$}
+}\NOTICE that $\null T^{n-1}\neq\null T^n\Rightarrow\dim\null T^n=n\Longleftrightarrow T^n=0.$ Thus $\null T^{n-1}=\null T^n.$\parSol{}
+又 $V=\null T^n\oplus\range T^n,\range T^n\subseteq\range T^{n-1}\Rightarrow V=\null T^{n-1}+\range T^{n-1}.$\parSol{}
+\Or Then $\dim\range T^{n-1}=\dim\range T^n\Rightarrow\range T^{n-1}=\range T^n.$\PfEnd\vspace{2pt}\parSol{}
+\Or By Exe (4E 3), $\null T^{2\SmallPar{n-1}}=\null T^{n-1}\Longleftrightarrow V=\null T^{n-1}\oplus\range T^{n-1}.$\PfEnd
+\SepLine
+
+\Anchor{8A4e18}\ProblemBnoor{4E 18}{
+	\TextA{Supp $T\in\Lm{V}$ nilp. Prove $T^{1\,+\,\dim\range T}=0.$\PfEndB}
+}Let $U\oplus\null T=V.$ Then $\range T^m\mmid_U=\Range\Par{T\mmid_U}{^m}=\range T^m.$ While $U=\dim\range T.$\PfEnd\parSol{}
+\Or Let $\dim\range T=k.$ Asum $T^{k+1}\neq 0.$ Let $m$ be suth $T^m=0\neq T^{m-1}.$ Then $k+2\leqslant m.$\parSol{}
+Let $v$ be suth $T^{m-1}v\neq 0=T^mv\Rightarrow\Par{v,{}$\uline{$Tv,\dots,T^{m-1}v$}$}$ liney indep $\Rightarrow k\geqslant m-1\geqslant k+1.$\PfEnd
+\SepLine
+
+\Anchor{8A4e12}\ProblemBnoor{4E 12}{
+	\TextA{Supp $T\in\Lm{V}$ and all $v\in V$ is a gigvec of $T.$ Prove $V=G\Par{\lambda,T}.$}
+}Becs for any liney indep $\Par{v,w},$ $\Par{v,w,v+w}$ of gigvecs is liney dep; say corres $\alpha,\beta,\gamma$ repectly.\parSol{}
+If $\alpha=\beta$ then done. If $\alpha=\gamma,v,v+w\in G\Par{\alpha,T}\Rightarrow w\in G\Par{\alpha,T}.$ If $\beta=\gamma,$ then simlr.\parSol{}
+Thus $\alpha=\beta=\gamma.$ Any two liney indep $v,w$ corres one eigval.\PfEndB
 \SepLine
 
 \Anchor{8A4e15}\ProblemBnoor{4E 15}{
-	\TextA{Supp $\Fbb=\Cbb,T\in\Lm{V}.$ Prove $T$ diag $\Longleftrightarrow$ each gigvec is an eigvec.}
-}
+	\TextA{Supp $\Fbb=\Cbb,T\in\Lm{V}.$ Prove non0 $T$ diag $\Rightarrow$ each gigvec is an eigvec.}
+}Supp $V=E\Par{\lambda_1,T}\oplus\cdots\oplus E\Par{\lambda_m,T};$ $\lambda_1=0$ if possible, in this case $m>1.$\parSol{}
+Supp $w\in G\Par{\lambda_j,T}.$ Then $w=v_1+\dots+v_m,$ where each $v_k\in E\Par{\lambda_k,T}.$\parSol{}
+Becs $\Par{T-\lambda_jI}{^k}w=0=\sum_{i=1}^m\lambda_i\Par{\lambda_i-\lambda_k}{^m}v_i\Rightarrow w=v_k,$ othws ctradic.\PfEnd\vspace{3pt}\parSol{}
+\Or Supp $w\in G\Par{\lambda_j,T}$ and $w$ not in any $E\Par{\lambda_i,T}.$\parSol{}
+Then $Iw\neq0\neq\Par{T-\lambda_jI}w.$ Let $\Par{T-\lambda_jI}{^k}w=0\neq\Par{T-\lambda_jI}{^{k-1}}w.$\parSol{}
+By \Sbra{5.B(I) \TIPSN{1}}, the min of $T$ is a multi of $\Par{z-\lambda_j}{^k}.$ 又 $k\geqslant 2.$\PfEnd
 \SepLine
 
-\ChEnd
+\Anchor{8A4e16}\ProblemBnoor{4E 16}{
+	\TextA{Supp $S,T\in\Lm{V}$ nilp and commu. Prove $S+T,ST$ are nilp}
+}By [4E 5.80], $\exists\,B_V$ suth $S,T$ up-trig \Par{with only $0$'s on diags}. By (4E 5.C.2).\PfEnd\vspace{2pt}\parSol{}
+\Or Let $S^p=T^q=0.$ Becs $S,T$ commu, $\Par{ST}{^{\max\!\Bra[\scriptsize]{p,\,q}}}=0=\Par{S+T}{^{p+q}}=\sum_{i=0}^{p+q}\mathC_{p+q}^iS^iT^{p+q-i}.$\PfEndB
+\SepLine
+
+\ChEnd\pagebreak
 
 \ChDecl{Ch8B}{8.B}{}
 
@@ -4199,7 +4221,7 @@ Now each $\dim\range T^{k+1}\leqslant\dim\range T^k-1\Rightarrow\dim\range T^{n+
 \pagebreak
 
 
-\ChDecl{Ch9A}{9.A}{\quad{\FontNorm\ANote $V$ denotes a finide non0 vecsp over $\Fbb.$}}
+\ChDecl{Ch9A}{9.A}{\quad{\ANote {\FontSmall $V$ denotes a finide non0 vecsp over $\Fbb.$}}}
 
 \vspace{4pt}
 
@@ -4229,7 +4251,7 @@ Let $\Par{v_1,Tv_1}$ be liney indep in $V$ as real vecsp. Let $v_2\not\in\Span{v
 \Anchor{9A18}\ProblemN{18}{
 	\TextA{Supp $\Fbb=\Rbb,$ and $T\in\Lm{V}.$}
 	\PrePa\TextA{Show all eigvals of $T_{\!\Cbb}$ are real $\Rightarrow\exists\,B_V$ suth $T$ up-trig.}
-	\PrePb\TextA{Show all eigvals of $T_{\!\Cbb}$ are real $\Rightarrow\exists\,B_V$ of geigvecs of $T.$}
+	\PrePb\TextA{Show all eigvals of $T_{\!\Cbb}$ are real $\Rightarrow\exists\,B_V$ of gigvecs of $T.$}
 }(a) Using induc on $\dim V.$ (i) Immed. (ii) $\dim V>1.$ Asum it holds for smaller $V.$\parSol{\Ha}
 Supp all eigvals of $T_{\!\Cbb}$ are real. Let $U=\Range\Par{T-\lambda I}.$\parSol{\Ha}
 Then all eigvals of $ T_{\!\Cbb}\mmid_{U_{\Cbb}}=\Par{T\mmid_U}{_{\Cbb}}$ are real. By asum, simlr to [5.27].\vspace{3pt}\parSol{}
