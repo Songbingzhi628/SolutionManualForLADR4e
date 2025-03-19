@@ -3274,7 +3274,7 @@ Now $E\Par{\lambda,T}=\Bra{Su:u\in E\Par{\lambda,S^{-1}TS}};\;E\Par{\lambda,S^{-
 
 \Anchor{5A4e15}\ProblemBnoor{4E 15}{
 	\TextB{Show $\lambda$ is eigval of $T$ $\Longleftrightarrow$ of $T\apostrophe.$}
-}\Sbra[3pt]{{\tgsl Req Finide}} \;${T-\lambda I_V}$ not inv $\Longleftrightarrow\Par{T-\lambda I_V}\apostrophe=T\apostrophe-\lambda I_{V\apostrophe}$ not inv.\PfEnd\vspace{2pt}\parSol{}
+}\Sbra[3pt]{{\tgsl Req Finide; For [5.6]}} \;${T-\lambda I_V}$ not inv $\Longleftrightarrow\Par{T-\lambda I_V}\apostrophe=T\apostrophe-\lambda I_{V\apostrophe}$ not inv.\PfEnd\vspace{2pt}\parSol{}
 (a) Supp $\lambda$ is eigval with $v.$ Let $U$ be invar with $U\oplus\Span{v}=V,$ by Exe (4E 39).\parSol{\Ha}
 Define $\psi\in V\apostrophe$ by $\psi\Par{cv+u}=c.$ Then $\Sbra{T\apostrophe\Par{\psi}}\Par{cv+u}=\psi\BigPar{c\lambda v+Tu}=\lambda c=\lambda\psi\Par{cv+u}.$\vspace{2pt}\parSol{}
 (b) A countexa: Let $T$ be the forwd shift optor on $V=\Fbb^\infty.$ No eigvals for $T,$ by Exe (18).\parSol{\Hb}
@@ -4184,11 +4184,11 @@ If $\alpha=\beta$ then done. If $\alpha=\gamma,v,v+w\in G\Par{\alpha,T}\Rightarr
 Thus $\alpha=\beta=\gamma.$ Any two liney indep $v,w$ corres one eigval.\PfEndB
 \SepLine
 
-\Anchor{8A4e15}\ProblemBnoor{4E 15}{
+\Anchor{8A4e15}\Anchor{8B5}\ProblemBnoor{4E 15 \OR 8.B.5}{
 	\TextA{Supp $\Fbb=\Cbb,T\in\Lm{V}.$ Prove non0 $T$ diag $\Rightarrow$ each gigvec is an eigvec.}
 }Supp $V=E\Par{\lambda_1,T}\oplus\cdots\oplus E\Par{\lambda_m,T};$ $\lambda_1=0$ if possible, in this case $m>1.$\parSol{}
-Supp $w\in G\Par{\lambda_j,T}.$ Then $w=v_1+\dots+v_m,$ where each $v_k\in E\Par{\lambda_k,T}.$\parSol{}
-Becs $\Par{T-\lambda_jI}{^k}w=0=\sum_{i=1}^m\lambda_i\Par{\lambda_i-\lambda_k}{^m}v_i\Rightarrow w=v_k,$ othws ctradic.\PfEnd\vspace{3pt}\parSol{}
+Supp $w\in G\Par{\lambda_j,T}.$ Then $w=v_1+\dots+v_m,$ where each $v_i\in E\Par{\lambda_i,T}.$\parSol{}
+Becs $\Par{T-\lambda_jI}{^k}w=0=\sum_{i=1}^m\lambda_i\Par{\lambda_i-\lambda_j}{^k}v_i\Rightarrow w=v_j\in E\Par{\lambda_j,T},$ othws ctradic.\PfEnd\vspace{3pt}\parSol{}
 \Or Supp $w\in G\Par{\lambda_j,T}$ and $w$ not in any $E\Par{\lambda_i,T}.$\parSol{}
 Then $Iw\neq0\neq\Par{T-\lambda_jI}w.$ Let $\Par{T-\lambda_jI}{^k}w=0\neq\Par{T-\lambda_jI}{^{k-1}}w.$\parSol{}
 By \Sbra{5.B(I) \TIPSN{1}}, the min of $T$ is a multi of $\Par{z-\lambda_j}{^k}.$ 又 $k\geqslant 2.$\PfEnd
@@ -4199,6 +4199,13 @@ By \Sbra{5.B(I) \TIPSN{1}}, the min of $T$ is a multi of $\Par{z-\lambda_j}{^k}.
 }By [4E 5.80], $\exists\,B_V$ suth $S,T$ up-trig \Par{with only $0$'s on diags}. By (4E 5.C.2).\PfEnd\vspace{2pt}\parSol{}
 \Or Let $S^p=T^q=0.$ Becs $S,T$ commu, $\Par{ST}{^{\max\!\Bra[\scriptsize]{p,\,q}}}=0=\Par{S+T}{^{p+q}}=\sum_{i=0}^{p+q}\mathC_{p+q}^iS^iT^{p+q-i}.$\PfEndB
 \SepLine
+
+%\Anchor{8A19}\ProblemN{19}{
+%	\TextA{Supp $T\in\Lm{V}.$ Prove $\null T^m=\null T^{m+1}\Longleftrightarrow\range T^m=\range T^{m+1}.$}
+%}If $m<0.$ Then by (4E 5.A.33), $T^{m}$ inv $\Rightarrow T$ inv. Immed. Supp $m\in\Nbp.$\parSol{}
+%{\tgsl This Exe is not true if infinide. Forwd and backwd shift optors on $\Fbb^{\infty}$ will serve as countexas.}\parSol{}
+%Now becs $V$ finide, $\dim\null T_1=\dim\null T_2\Longleftrightarrow\dim\range T_1=\dim\range T_2.$\PfEnd
+%\SepLine
 
 \ChEnd\pagebreak
 
