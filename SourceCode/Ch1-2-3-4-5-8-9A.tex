@@ -3793,6 +3793,11 @@ For if not, supp $T^{-k}=b_0 I+b_1 T^{-1}+\dots+b_{k-1}T^{k-1}.$ Note that $T$ i
 Now $T^k\Par{T^{-k}}=I=b_0 T^k+b_1 T^{k-1}+\dots+b_{k-1}T\Rightarrow T^j\in\Span{I,T,\dots,T^{k-1}}.$\PfEnd
 \SepLine
 
+\Anchor{8C11}\ProblemBnoor{8.C.11}{
+	\TextA{Supp $V$ finide and $T\in\Lm{V}$ inv. Prove $\exists\,q\in\PoFi,T^{-1}=q\Par{T}.$}
+}By (4E 22), $I=a_1T+\dots+a_mT^m\Rightarrow T^{-1}=a_1I+a_2T+\dots+a_mT^{m-1}.$\PfEnd
+\SepLine
+
 \Anchor{5BI4e19}\ProblemBnoor{4E 19}{
 	\TextA{Supp $V$ finide, $T\in\Lm{V},$ with the min $p\Par{z}=c_0+c_1z+\dots+c_{m-1}z^{m-1}+z^m.$}
 	\TextA{Let $\mE =\Bra{q\Par{T}: q \in \PoFi},$ a subsp of $\Lm{V}.$ Prove $\dim\mE=\deg p.$}
@@ -3824,10 +3829,9 @@ Then $\Par{T^2+bT+cI}{^{j}}=0\Rightarrow z^2+bz+c$ is a multi of the min of $T\R
 Let $U$ be invarspd $T$ and has the largest even dim of all such invarsp. If $V=U,$ done. Othws,\parSol{}
 for $w\in V\Backslash U\Rightarrow W=\Par{w,Tw}$ invard $T$ of dim $2\Rightarrow U+W$ of dim $\Par{{\dim U+2}}$ invard $T.$\PfEnd
 \SepLine
+\pagebreak
 
-\ChEnd\pagebreak
-
-\ChDecl{Ch5BII}{5.B: II}{\qquad{\small\textbf{注意\,:}\;这一节的题号使用第四版5.C节}}
+\ChDecl{Ch5BII}{5.B: II}{\qquad{\small\textbf{注意\,:}\;这一节的题号使用第四版5.C节.}}
 
 \vspace{4pt}
 
@@ -3909,7 +3913,7 @@ By (3.E.13), $B_V=\Par{u_1,\dots,u_p,w_1,\dots,w_q}.$ Now each $Tw_j\in\Span{u_1
 \SepLine
 \ChEnd
 
-\ChDecl{Ch5C}{5.C \& [4E] 5.D}{\qquad{\small\textbf{注意\,:}\;这一节的题号主要使用第四版5.D节}}
+\ChDecl{Ch5C}{5.C \& [4E] 5.D}{\qquad{\small\textbf{注意\,:}\;这一节的题号主要使用第四版5.D节.}}
 
 \vspace{6pt}
 
@@ -4096,11 +4100,13 @@ Thus ${e_1}$ eigvec of $T$ but not of $S,$ and ${e_3}$ eigvec of $S$ but not of 
 \SepLine
 \ChEnd
 
-\ChDecl{Ch8A}{8.A}{\quad{\ANote {\FontSmall $V$ denotes a finide non0 vecsp over $\Fbb.$ An Exe marked by $\blacksquare$ is true if infinide or partially finide.}}}
+\ChDecl{Ch8}{8}{\quad{\ANote {\FontSmall $V$ denotes a finide non0 vecsp over $\Fbb.$ An Exe marked by $\blacksquare$ is true if infinide or partially finide.}}}
 
 \vspace{4pt}
 
-\Anchor{8A3}\ProblemN{3}{
+\Anchor{Ch8A}
+
+\Anchor{8A3}\ProblemN{A.3}{
 	\TextA{Supp $T\in\Lm{V}$ inv. Prove $G\Par{\lambda,T}=G\Par{\lambda^{-1},T^{-1}}$ for any non0 $\lambda\in\Fbb.$\PfEndB}
 }$\Par{T-\lambda I}{^j}v=0=\sum_{i=0}^j\mathC_j^i\Par{-\lambda}{^{j-i}}T^iv.$ Apply $\Par{-\lambda}{^{-j}}T^{-j}$ to both sides. $\Par{T^{-1}-\lambda^{-1}}{^j}v=0.$\PfEnd\vspace{2pt}\parSol{}
 \Or We use induc on $j$ to show each $\Null\Par{T-\lambda I}{^j}=\Null\Par{T^{-1}-\lambda^{-1}}{^j}.$ \,(i) Immed. (ii) $j>1.$\parSol{}
@@ -4108,18 +4114,18 @@ Asum true for $\Par{j-1}.$ $\forall v\in\Null\Par{T-\lambda I}{^j},\Par{T-\lambd
 Thus $0=\Par{T^{-1}-\lambda^{-1}I}{^{j-1}}\Par{T-\lambda I}v=\uline{\Par{T-\lambda I}}\Par{T^{-1}-\lambda^{-1}I}{^{j-1}}v.$ \;By (i) and rev the roles.\PfEnd
 \SepLine
 
-\Anchor{8A5}\ProblemN{5}{
+\Anchor{8A5}\ProblemN{A.5}{
 	\TextA{Supp $T\in\Lm{V},$ $T^{n-1}v\neq 0,\;T^nv=0.$ \,Prove $\BigPar{v,Tv,\dots,T^{n-1}v}$ is liney indep.}
 }$a_0v+a_1Tv+\dots+a_{n-1}T^{n-1}v=0\Rightarrow a_0T^{n-1}v=0\Rightarrow a_0=0.$ \,Simlr for $a_1,\dots,a_{n-1}.$\PfEndB
 \SepLine
 
-\Anchor{8A4e24}\ProblemBX[]{\NoteForSmall{[8.19] \OR [4E 8.18]}}{
+\Anchor{8A4e24}\Anchor{8N8.19}\ProblemBX[]{\NoteForSmall{[8.19] \OR [4E 8.18]}}{
 	If the min of $T$ is $z^m.$ Then $\exists\,v$ suth $T^{m-1}v\neq0.$\TextB{}
 	Now $B_V=\Par{T^{m-1}v,\dots,Tv,v}.$ Let each $w_k=T^{m-k}v.$ Then $Tw_1=0$ and each $T\Par{w_k}=w_{k-1}.$\TextB{\vspace{-2pt}}
 }\SepLine
 
-\Anchor{8A6}\ProblemN{6}{
-	\TextA{Supp $T\in\Lm{V}$ nilp and $n=\dim V,T^{n-1}\neq0.$ Prove $\nexists\,S\in\Lm{V},\,S^k=T$ for all $k>1.$}
+\Anchor{8A6}\ProblemN{A.6}{
+	\TextA{Supp $T\in\Lm{V}$ nilp, $n=\dim V,T^{n-1}\neq0.$ Prove $\nexists\,S\in\Lm{V},\,S^k=T$ for all $k>1.$}
 }Asum $\exists$ suth $S.$ Then $\null S^{kn}=\null T^n=V=\null S^{kn-1}=\dots=\null S^n.$\parSol{}
 Note that $\exists\,j$ suth $\null S^{kn-j}=\null T^{m}$ for some $m\in\Bra{1,\dots,n-1}.$\PfEnd
 \SepLine
@@ -4129,7 +4135,7 @@ Note that $\exists\,j$ suth $\null S^{kn-j}=\null T^{m}$ for some $m\in\Bra{1,\d
 %}Supp $\Par{ST}{^k}=0.$ \NOTICE that $\Par{TS}{^{k+1}}=T\Par{ST}{^k}S=0.$\PfEnd
 %\SepLine
 
-\Anchor{8A4e4}\ProblemBnoor{4E 4}{
+\Anchor{8A4e4}\ProblemBnoor{4E A.4}{
 	\TextA{Supp $T\in\Lm{V},\lambda\in\Fbb,$ the min of $T$ is a multi of $\Par{z-\lambda}{^m}$ for $m\in\Nbp.$}
 	\TextA{Prove $\dim\Null\Par{T-\lambda I}{^m}\geqslant m.$\hfill\FontNorm\tgnr\ACoro $\dim G\Par{\lambda,T}\geqslant m.$\Blind{\quad}\PfEndB}
 }Becs $\lambda$ is eigval of $T.$ We show $z^m$ is the min of $\Par{T-\lambda I}\Big|{_{\Null\SmallPar{T\,-\,\lambda I}{^m}}}.$\parSol{}
@@ -4141,7 +4147,7 @@ Asum $\Null\Par{T-\lambda I}{^k}=\Null\Par{T-\lambda I}{^{k+1}}$ for $k\in\Bra{1
 Then $\Null\Par{T-\lambda I}{^k}=\Null\Par{T-\lambda I}{^m}\Rightarrow\Par{T-\lambda I}{^m}q\Par{T}v=0=\Par{T-\lambda I}{^k}q\Par{T}v.$\PfEnd
 \SepLine
 
-\Anchor{8A4e3}\ProblemBnoor{4E 3}{
+\Anchor{8A4e3}\ProblemBnoor{4E A.3}{
 	\TextA{Supp $T\in\Lm{V}.$ Prove $V=\null T\oplus\range T\Longleftrightarrow\null T^2=\null T.$}
 }(a) $\null T^2=\null T=\null T^{\dim V}\Rightarrow\dim\range T^{\dim V}=\dim\range T.$\parSol{\vspace{2pt}}
 (b) $V=\null T\oplus U,U=\range T,$ 又 $\dim\null T^2=\dim\null T+\dim\null T\mmid_{\range T}.$\PfEnd\vspace{4pt}\parSol{}
@@ -4149,20 +4155,20 @@ Then $\Null\Par{T-\lambda I}{^k}=\Null\Par{T-\lambda I}{^m}\Rightarrow\Par{T-\la
 \Blind{\Or }(b) Supp $\null T\cap\range T=\zeroSubs.$ Then $T^2u=0\Longleftrightarrow Tu\in\null T\Longleftrightarrow Tu=0.$\PfEndB
 \SepLine
 
-\Anchor{8A17}\ProblemN{17}{
-	\TextA{Supp $T\in\Lm{V},m\in\Nbb,\range T^m=\range T^{m+1}.$ Show $\range T^m=\range T^{m+1}=\cdots.$}
+\Anchor{8A17}\ProblemN{A.17}{
+	\TextA{Supp $T\in\Lm{V},\range T^m=\range T^{m+1}.$ Show $\range T^m=\range T^{m+1}=\cdots.$}
 }By Exe (19), $\null T^m=\null T^{m+1}=\cdots\Rightarrow\dim\range T^m=\dim\range T^{m+1}=\cdots.$\PfEnd\parSol{}
 \Or Supp $w=T^{m+k}v.$ Then becs $T^mv\in\range T^{m+1},\exists\,T^{m+1}u=T^mv.$ Thus $w=T^{m+k+1}u.$\PfEndB
 \SepLine
 
-\Anchor{8A18}\ProblemN{18}{
+\Anchor{8A18}\ProblemN{A.18}{
 	\TextA{Supp $T\in\Lm{V},\dim V=n.$ Show $\range T^{n}=\range T^{n+1}=\cdots.$}
 }By Exe (19), becs $\null T^{\dim V}=\null T^{\dim V+1}=\cdots.$ Simlr.\PfEnd\parSol{}
 \Or Asum $\range T^{n}\supsetneq\range T^{n+1}.$ By Exe (17), $V=\range T^0\supsetneq\range T\supsetneq\cdots\supsetneq\range T^{n+1}.$\parSol{}
 Now each $\dim\range T^{k+1}\leqslant\dim\range T^k-1\Rightarrow\dim\range T^{n+1}\leqslant\dim\range T^0-\Par{n+1}.$\PfEnd
 \SepLine
 
-\Anchor{8A10}\ProblemN{10}{
+\Anchor{8A10}\ProblemN{A.10}{
 	\TextA{Supp $T\in\Lm{V}$ not nilp, $n=\dim V.$ Show $V=\null T^{n-1}\oplus\range T^{n-1}.$}
 }\NOTICE that $\null T^{n-1}\neq\null T^n\Rightarrow\dim\null T^n=n\Longleftrightarrow T^n=0.$ Thus $\null T^{n-1}=\null T^n.$\parSol{}
 又 $V=\null T^n\oplus\range T^n,\range T^n\subseteq\range T^{n-1}\Rightarrow V=\null T^{n-1}+\range T^{n-1}.$\parSol{}
@@ -4170,31 +4176,31 @@ Now each $\dim\range T^{k+1}\leqslant\dim\range T^k-1\Rightarrow\dim\range T^{n+
 \Or By Exe (4E 3), $\null T^{2\SmallPar{n-1}}=\null T^{n-1}\Longleftrightarrow V=\null T^{n-1}\oplus\range T^{n-1}.$\PfEnd
 \SepLine
 
-\Anchor{8A4e18}\ProblemBnoor{4E 18}{
+\Anchor{8A4e18}\ProblemBnoor{4E A.18}{
 	\TextA{Supp $T\in\Lm{V}$ nilp. Prove $T^{1\,+\,\dim\range T}=0.$\PfEndB}
 }Let $U\oplus\null T=V.$ Then $\range T^m\mmid_U=\Range\Par{T\mmid_U}{^m}=\range T^m.$ While $U=\dim\range T.$\PfEnd\parSol{}
 \Or Let $\dim\range T=k.$ Asum $T^{k+1}\neq 0.$ Let $m$ be suth $T^m=0\neq T^{m-1}.$ Then $k+2\leqslant m.$\parSol{}
 Let $v$ be suth $T^{m-1}v\neq 0=T^mv\Rightarrow\Par{v,{}$\uline{$Tv,\dots,T^{m-1}v$}$}$ liney indep $\Rightarrow k\geqslant m-1\geqslant k+1.$\PfEnd
 \SepLine
 
-\Anchor{8A4e12}\ProblemBnoor{4E 12}{
+\Anchor{8A4e12}\ProblemBnoor{4E A.12}{
 	\TextA{Supp $T\in\Lm{V}$ and all $v\in V$ is a gigvec of $T.$ Prove $V=G\Par{\lambda,T}.$}
 }Becs for any liney indep $\Par{v,w},$ $\Par{v,w,v+w}$ of gigvecs is liney dep; say corres $\alpha,\beta,\gamma$ repectly.\parSol{}
 If $\alpha=\beta$ then done. If $\alpha=\gamma,v,v+w\in G\Par{\alpha,T}\Rightarrow w\in G\Par{\alpha,T}.$ If $\beta=\gamma,$ then simlr.\parSol{}
 Thus $\alpha=\beta=\gamma.$ Any two liney indep $v,w$ corres one eigval.\PfEndB
 \SepLine
 
-\Anchor{8A4e15}\Anchor{8B5}\ProblemBnoor{4E 15 \OR 8.B.5}{
-	\TextA{Supp $\Fbb=\Cbb,T\in\Lm{V}.$ Prove non0 $T$ diag $\Rightarrow$ each gigvec is an eigvec.}
+\Anchor{8A4e15}\Anchor{8B5}\ProblemNnoor{B.5}{4E A.15}{
+	\TextA{Supp $\Fbb=\Cbb,T\in\Lm{V}.$ Prove non0 $T$ diag $\Rightarrow$ each $G\Par{\lambda,T}=E\Par{\lambda,T}.$}
 }Supp $V=E\Par{\lambda_1,T}\oplus\cdots\oplus E\Par{\lambda_m,T};$ $\lambda_1=0$ if possible, in this case $m>1.$\parSol{}
 Supp $w\in G\Par{\lambda_j,T}.$ Then $w=v_1+\dots+v_m,$ where each $v_i\in E\Par{\lambda_i,T}.$\parSol{}
 Becs $\Par{T-\lambda_jI}{^k}w=0=\sum_{i=1}^m\lambda_i\Par{\lambda_i-\lambda_j}{^k}v_i\Rightarrow w=v_j\in E\Par{\lambda_j,T},$ othws ctradic.\PfEnd\vspace{3pt}\parSol{}
-\Or Supp $w\in G\Par{\lambda_j,T}$ and $w$ not in any $E\Par{\lambda_i,T}.$\parSol{}
+\Or Supp $G\Par{\lambda_j,T}\supsetneq E\Par{\lambda_j,T}.$ Let $w\in G\Par{\lambda_j,T}\Backslash E\Par{\lambda_j,T}$\parSol{}
 Then $Iw\neq0\neq\Par{T-\lambda_jI}w.$ Let $\Par{T-\lambda_jI}{^k}w=0\neq\Par{T-\lambda_jI}{^{k-1}}w.$\parSol{}
 By \Sbra{5.B(I) \TIPSN{1}}, the min of $T$ is a multi of $\Par{z-\lambda_j}{^k}.$ 又 $k\geqslant 2.$\PfEnd
 \SepLine
 
-\Anchor{8A4e16}\ProblemBnoor{4E 16}{
+\Anchor{8A4e16}\ProblemBnoor{4E A.16}{
 	\TextA{Supp $S,T\in\Lm{V}$ nilp and commu. Prove $S+T,ST$ are nilp}
 }By [4E 5.80], $\exists\,B_V$ suth $S,T$ up-trig \Par{with only $0$'s on diags}. By (4E 5.C.2).\PfEnd\vspace{2pt}\parSol{}
 \Or Let $S^p=T^q=0.$ Becs $S,T$ commu, $\Par{ST}{^{\max\!\Bra[\scriptsize]{p,\,q}}}=0=\Par{S+T}{^{p+q}}=\sum_{i=0}^{p+q}\mathC_{p+q}^iS^iT^{p+q-i}.$\PfEndB
@@ -4207,25 +4213,72 @@ By \Sbra{5.B(I) \TIPSN{1}}, the min of $T$ is a multi of $\Par{z-\lambda_j}{^k}.
 %Now becs $V$ finide, $\dim\null T_1=\dim\null T_2\Longleftrightarrow\dim\range T_1=\dim\range T_2.$\PfEnd
 %\SepLine
 
-\ChEnd\pagebreak
+\Anchor{Ch8B}
 
-\ChDecl{Ch8B}{8.B}{\quad{\ANote {\FontSmall $V$ denotes a finide non0 vecsp over $\Fbb.$ An Exe marked by $\blacksquare$ is true if infinide or partially finide.}}}
+\Anchor{8B7}\ProblemN{B.7}{
+	\TextA{Supp $\Fbb=\Cbb.$ Prove every inv $T\in\Lm{V}$ has a cube root.}
+}
+\SepLine
 
+\Anchor{8B10}\ProblemN{B.10}{
+	\TextA{Supp $\Fbb=\Cbb,T\in\Lm{V}.$ Prove $\exists$ commu $D,N\in\Lm{V},T=D+N,\,D$ diag, $N$ nilp.}
+}
+\SepLine
 
+\Anchor{8B4e8}\ProblemBnoor{4E B.8}{
+	\TextA{Supp $\Fbb=\Rbb,$ and $\lambda_1,\dots,\lambda_m$ are disti eigvals of $T\in\Lm{V},$ and $p$ is the min.}
+	\TextA{Prove $V=G\Par{\lambda_1,T}\oplus\cdots\oplus G\Par{\lambda_m,T}\Longleftrightarrow p\Par{z}=\Par{z-\lambda_1}{^{k_1}}\cdots\Par{z-\lambda_m}{^{k_m}}.$}
+}
+\SepLine
+
+\Anchor{Ch8C}
+\Anchor{8B4e20}\Anchor{8C20}\ProblemNnoor{C.20}{4E B.20}{
+	\TextA{Supp $\Fbb=\Cbb,$ and each $V_k$ non0 invardspd $T\in\Lm{V}$ of $V=V_1\oplus\cdots\oplus V_m.$}
+	\TextA{Let $p_k$ be the char of $T\mmid_{V_k}.$ Prove the char of $T$ is $p_1\cdots p_m.$}
+}
+\SepLine
+
+\Anchor{Ch8D}
+
+\Anchor{8D5}\ProblemN{D.5}{
+	\TextA{}
+}
+\SepLine
+
+\Anchor{8D6}\ProblemN{D.6}{
+	\TextA{}
+}
+\SepLine
+
+\Anchor{8D7}\Anchor{8B4e21}\ProblemNnoor{D.7}{4E B.21}{
+	\TextA{Supp monic $p,q\in\PoCi$ have the same zeros, and $q$ is a multi of $p.$}
+	\TextA{Prove $\exists\,T\in\Lm{\Cbb^{\deg q}}$ suth the char of $T$ is $q$ and the min of $T$ is $p.$}
+}
+\SepLine
+
+\Anchor{8D8}\ProblemN{D.8}{
+	\TextA{}
+}
+\SepLine
+
+\Anchor{8C4e7}\ProblemBnoor{4E C.7}{
+	\TextA{}
+}
+
+\Anchor{8C4e9}\ProblemBnoor{4E C.9}{
+	\TextA{}
+}
+
+\Anchor{8C4e11}\ProblemBnoor{4E C.11}{
+	\TextA{}
+}
+
+\Anchor{8C4e12}\ProblemBnoor{4E C.12}{
+	\TextA{}
+}
 
 \ChEnd
 \pagebreak
-
-\ChDecl{Ch8C}{8.C}{\quad{\ANote {\FontSmall $V$ denotes a finide non0 vecsp over $\Fbb.$ An Exe marked by $\blacksquare$ is true if infinide or partially finide.}}}
-
-\ChEnd
-\pagebreak
-
-\ChDecl{Ch8D}{8.D}{\quad{\ANote {\FontSmall $V$ denotes a finide non0 vecsp over $\Fbb.$ An Exe marked by $\blacksquare$ is true if infinide or partially finide.}}}
-
-\ChEnd
-\pagebreak
-
 
 \ChDecl{Ch9A}{9.A}{\quad{\ANote {\FontSmall $V$ denotes a finide non0 vecsp over $\Fbb.$}}}
 
