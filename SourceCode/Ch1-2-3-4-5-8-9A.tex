@@ -88,7 +88,8 @@ By Assoc: $\Par{a+\infty}+\Par{{-\infty}}\neq a+\Par{\infty+\Par{{-\infty}}}.$\p
 \Anchor{1C15}\Anchor{1C16}\Onumber{15}\quad{$U+U\ni u+w\in U.$} \qquad \Onumber{16}\quad{$U+W\ni u+w=w+u\in W+U.$}\PfEnd
 \Onumber{\Anchor{1C17}{17}}\quad{$\Par{V_{\!1}+V_{\!2}}+V_{\!3}\ni\Par{v_1+v_2}+v_3=v_1+\Par{v_2+v_3}\in V_{\!1}+\Par{V_{\!2}+V_{\!3}}.$}\PfEnd\Anchor{1C'1}
 \BulletPointX{ \quad}{$\Par{U+W}{_{\Cbb}}\ni \Par{u_1+w_1}+\i\Par{u_2+w_2}=\Par{u_1+\i u_2}+\Par{w_1+\i w_2}\in U_\Cbb+W_{\!\Cbb}.$}\PfEnd
-\BulletPointX{ \quad}$\Par{U\cap W}{_\Cbb}\ni u_1+\i u_2=w_1+\i w_2\in U_\Cbb\cap W_\Cbb.$
+\BulletPointX{ \quad}$\Par{U\cap W}{_\Cbb}\ni u_1+\i u_2=w_1+\i w_2\in U_\Cbb\cap W_\Cbb.$\PfEnd
+\BulletPointX{ \quad}$U_\Cbb=W_\Cbb\Longleftrightarrow U=W.$ \;Supp $U_\Cbb\ni u+\i v\in W_\Cbb.$ Then $U\ni u,v\in W.$\PfEnd
 \SepLine
 
 
@@ -4120,7 +4121,7 @@ Thus $0=\Par{T^{-1}-\lambda^{-1}I}{^{j-1}}\Par{T-\lambda I}v=\uline{\Par{T-\lamb
 \SepLine
 
 \Anchor{8A4e24}\Anchor{8N8.19}\ProblemBX[]{\NoteForSmall{[8.19] \OR [4E 8.18]}}{
-	If the min of $T$ is $z^m.$ Then $\exists\,v$ suth $T^{m-1}v\neq0.$\TextB{}
+	If the min of $T$ is $z^m.$ Then $\exists\,v$ suth $T^{m-1}v\neq0.$ If $m=\dim V.$\TextB{}
 	Now $B_V=\Par{T^{m-1}v,\dots,Tv,v}.$ Let each $w_k=T^{m-k}v.$ Then $Tw_1=0$ and each $T\Par{w_k}=w_{k-1}.$\TextB{\vspace{-2pt}}
 }\SepLine
 
@@ -4240,6 +4241,11 @@ By \Sbra{5.B(I) \TIPSN{1}}, the min of $T$ is a multi of $\Par{z-\lambda_j}{^k}.
 
 \Anchor{Ch8D}
 
+\Anchor{8D3}\ProblemN{D.3}{
+	\TextA{}
+}
+\SepLine
+
 \Anchor{8D5}\ProblemN{D.5}{
 	\TextA{}
 }
@@ -4315,7 +4321,8 @@ Let $\Par{v_1,Tv_1}$ be liney indep in $V$ as real vecsp. Let $v_2\not\in\Span{v
 }(a) By [9.10] and [4E 5.44], immed. \;\Or Using induc on $\dim V.$ (i) Immed. (ii) $\dim V>1.$\parSol{\Ha}
 Asum it holds for smaller $V.$ Supp all eigvals of $T_{\!\Cbb}$ are real. Let $U=\Range\Par{T-\lambda I}.$\parSol{\Ha}
 Then all eigvals of $ T_{\!\Cbb}\mmid_{U_{\Cbb}}=\Par{T\mmid_U}{_{\Cbb}}$ are real. By asum, simlr to [5.27].\vspace{3pt}\parSol{}
-(b) By (a) and (4E 8.A.11), immed.\PfEnd
+(b) By (a), (4E 8.A.11) and [4E 5.44], immed. \Or $V_{\!\Cbb}=G\Par{\lambda_1,T_{\!\Cbb}}\oplus\cdots\oplus G\Par{\lambda_m,T_{\!\Cbb}}.$\parSol{\Hb}
+Becs each $G\Par{\lambda_k,T_{\!\Cbb}}=G\Par{\lambda_k,T}{_{\Cbb}}$ and $U_{\Cbb}+W_{\Cbb}=\Par{U+W}{_{\Cbb}}.$ \;By [9.4](b).\PfEnd
 \SepLine
 
 \ChEnd
