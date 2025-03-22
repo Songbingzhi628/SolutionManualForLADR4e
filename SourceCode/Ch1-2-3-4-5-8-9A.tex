@@ -1291,9 +1291,9 @@ By {\NOTEFOR} Transpose, $\BigPar{AC}{_{j,\cdot}}=\BigSbra{\BigBigPar{\BigPar{AC
 \Anchor{3CN4e3.51}\ProblemBnoor[]{4E 3.51}[\Sbra]{
 	Supp $C\in\Fbb^{m,c},R\in\Fbb^{c,p}$. \hfill\Sbra{ See also {\NOTEFOR} [3.49] and Exe (10). }\TextB{\vspace{2pt}}
 	(a) For $k=1,\dots,p,$\quad $\BigPar{CR}{_{\cdot,k}}=CR_{\cdot,k}=C_{\cdot,\cdot}R_{\cdot,k}=\sum_{r=1}^c C_{\cdot,r}R_{r,k}=R_{1,k}C_{\cdot,1}+\dots+R_{c,k}C_{\cdot,c}$\TextB{\vspace{3pt}}
-	%\Ha\TextB{\large Which means that each cols $CR$ is a liney combination of the cols of $C.$\vspace{6pt}}
+	%\Ha\TextB{\large Which means that each cols $CR$ is a liney combina of the cols of $C.$\vspace{6pt}}
 	(b) For $j=1,\dots,m,$\quad $\BigPar{CR}{_{j,\cdot}}=C_{j,\cdot}R=C_{j,\cdot}R_{\cdot,\cdot}=\sum_{r=1}^c C_{j,r}R_{r,\cdot}=C_{j,1}R_{1,\cdot}+\dots+C_{j,c}R_{c,\cdot}$\TextB{\vspace{2pt}}
-	%\Hb\TextB{\large Which means that each rows $CR$ is a liney combination of the rows of $R.$}
+	%\Hb\TextB{\large Which means that each rows $CR$ is a liney combina of the rows of $R.$}
 }\BulletPointX\AExa $m=2,c=2,p=3.$\TextB{\vspace{2pt}}
 %$\BigPar{AB}_{\cdot,1}=AB_{\cdot, 1}=\begin{pmatrix} 1 &\hspace{-4pt} 2\\[-2pt] 3 &\hspace{-4pt} 4\end{pmatrix}\begin{pmatrix} 5 \\[-2pt] 8\end{pmatrix}=5\begin{pmatrix}1\\[-2pt]3\end{pmatrix}+8\begin{pmatrix}2\\[-2pt]4\end{pmatrix}=\begin{pmatrix} 21\\[-2pt] 47\end{pmatrix}$;\TextB{}
 $\BigPar{AB}{_{\cdot,2}}=AB_{\cdot, 2}=\begin{pmatrix} 1 &\hspace{-4pt} 2\\[-2pt] 3 &\hspace{-4pt} 4\end{pmatrix}\begin{pmatrix} 6 \\[-2pt] 9\end{pmatrix}=A_{\cdot,1}B_{1,2}+A_{\cdot,2}B_{2,2}=6\begin{pmatrix}1\\[-2pt]3\end{pmatrix}+9\begin{pmatrix}2\\[-2pt]4\end{pmatrix}=\begin{pmatrix} 24\\[-2pt] 54\end{pmatrix}$;\TextB{\vspace{2pt}}
@@ -2502,7 +2502,8 @@ Define $\psi\in W\apostrophe$ by $\psi\Par{u+\lambda w}=\lambda\Rightarrow\psi\P
 {\FontSmall Let $B_V=\Par{v_1,\dots,v_n},B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_n},B_W=\Par{w_1,\dots,w_m},B_{W\apostrophe}=\Par{\psi_1,\dots,\psi_m}.$}\TextB{}
 Define each $E_{j,k}\in\Lm{V,W}:v_x\mapsto\delta_{j,x}w_k,$ and each $\reflectbox{\textit{E}}{_{k,j}}\in\Lm{W\apostrophe,V\apostrophe}:\psi_x\mapsto\delta_{k,x}\varphi_j.$\TextB{}
 Note that each $E_{j,k}\!\!\upapostrophe\,\,\Par{\psi_x}=\psi_x\circ E_{j,k}=\delta_{k,x}\varphi_j=\reflectbox{\textit{E}}{_{k,j}}\Par{\psi_x}\Rightarrow E_{j,k}\!\!\upapostrophe\,\,=\reflectbox{\textit{E}}{_{k,j}}.$\vspace{1pt}\TextB{}
-$\Lm{V,W}\ni T=\sum_{j=1}^n\sum_{k=1}^mA_{k,j}E_{j,k}\Longleftrightarrow\mT=\sum_{j=1}^n\sum_{k=1}^mA_{k,j}\reflectbox{\textit{E}}{_{k,j}}\in\Lm{W\apostrophe,V\apostrophe}.$ Uniqly by Exe (16).
+$\Lm{V,W}\ni T=\sum_{j=1}^n\sum_{k=1}^mA_{k,j}E_{j,k}\Longleftrightarrow\mT=\sum_{j=1}^n\sum_{k=1}^mA_{k,j}\reflectbox{\textit{E}}{_{k,j}}\in\Lm{W\apostrophe,V\apostrophe}.$ Uniqly by Exe (16).\vspace{3pt}\Anchor{5E5}\TextB{}
+\ACoro $ST=TS\Longleftrightarrow S\apostrophe T\apostrophe=T\apostrophe S\apostrophe.$ \;By Exe (16). \Or Becs $AC=CA\Longleftrightarrow A^tC^t=C^tA^t.$
 \SepLine
 
 \Anchor{3F4e8}\ProblemBnoor{{4E 8}}{
@@ -2560,7 +2561,7 @@ Now $\Gamma\apostrophe\BigPar{\Psi\Par{x_1,\dots,x_m}}=x_1\varphi_1+\dots+x_m\va
 	\TextA{Let $\Par{\varphi_1,\varphi_2},\Par{\psi_1,\psi_2,\psi_3}$ denote the dual bss of std bss of $\Rbb^2$ and $\Rbb^3$.\vspace{4pt}}
 	\PrePa\TextA{Describe the liney functionals $T\apostrophe\Par{\varphi_1},T\apostrophe\Par{\varphi_2}.$}
 	\Blind{\PrePb}\TextA{{\FontNorm\tgnr For any $\Par{x,y,z}\in\Rbb^3$, $\BigPar{T\apostrophe\Par{\varphi_1}}\Par{x,y,z}=4x+5y+6z, \BigPar{T\apostrophe\Par{\varphi_2}}\Par{x,y,z}=7x+8y+9z$.}\vspace{6pt}}
-	\PrePb\TextA{Write $T\apostrophe\Par{\varphi_1}$ and $T\apostrophe\Par{\varphi_2}$ as liney combinations of $\psi_1,\psi_2,\psi_3$.}
+	\PrePb\TextA{Write $T\apostrophe\Par{\varphi_1}$ and $T\apostrophe\Par{\varphi_2}$ as liney combinas of $\psi_1,\psi_2,\psi_3$.}
 	\Blind{\PrePb}\TextA{{\FontNorm\tgnr$T\apostrophe\Par{\varphi_1}=4\psi_1+5\psi_2+6\psi_3,\,\,T\apostrophe\Par{\varphi_2}=7\psi_1+8\psi_2+9\psi_3.$}\vspace{6pt}}
 	\PrePc\TextA{What is $\null T\apostrophe$? What is $\range T\apostrophe$?}
 }\TextA{\vspace{4pt}}
@@ -2846,8 +2847,8 @@ So that $\exists\,!\,a_i\in\Rbb,p=\sum_{i=1}^{m+1}a_ip_i\Rightarrow\exists\,q=\s
 	\TextB{Supp $V=\Rbb^\Rbb$ with a subsp $U=\Bra{\hspace{3pt}f\in\Rbb^\Rbb:f\Par{x_1}=\cdots=f\Par{x_m}=0},$ where each $x_k\in\Rbb.$\vspace{2pt}}
 	\TextB{Prove if $W\in\Scom{V}{U},$ then $\dim W=m.$\hfill{\large\tgsc Hint$:$ }{\FontNorm Find an iso from $V\XSlash U$ onto $\Rbb^m.$}}
 }Define $T\in\Lm{V\XSlash U,\Rbb^m}$ by $T\Par{f+U}=\BigPar{f\Par{x_1},\dots,f\Par{x_m}}.$\parSol{}
-$\forall f_1+U=f_2+U\in V\XSlash U,f_1-f_2\in U\Rightarrow f_1\Par{x_k}=f_2\Par{x_k}.$ Now $T$ is well-defined.\parSol{\vspace{2pt}}
-Inje: Each $f\Par{x_k}=0\Rightarrow f+U=0.$ \;Let $S=T\circ\pi\Rightarrow\tilde{S}=T.$ Then $S$ is surj, so is $T.$\PfEnd
+$\forall f+U=g+U\in V\XSlash U,\:f-g\in U\Rightarrow f\Par{x_k}=g\Par{x_k}.$ Well-defined.\parSol{\vspace{0pt}}
+Inje: Each $f\Par{x_k}=0\Rightarrow f+U=0.$ \;Surj: Let $S=T\circ\pi\Rightarrow\tilde{S}=T.$ Becs $S$ is surj.\PfEnd
 \SepLine
 
 \Anchor{3F7}\ProblemBnoor{3.F.7}{
@@ -3117,7 +3118,7 @@ By \TIPSN{1}, each $c_jv_j\in U.$ Thus $v\in\Par{U\cap E_1}\oplus\dots\oplus\Par
 \Anchor{5A2}\Anchor{5A3}\ProblemN{2, 3}{
 	\TextB{Supp $S,T\in\Lm{V}$ suth $ST=TS.$ Prove $\null T,\range T$ invard $S.$}
 }(a) $Tv=0\Rightarrow TSv=STv=0.$ \;\; (b) $Tu=v\Rightarrow Sv=STu=TSu\in\range T.$\PfEnd
-\ACoro For any $\lambda,\mu\in\Fbb,\Null\Par{T-\lambda I},\Range\Par{T-\lambda I}$ is invard $\Par{S-\mu I}.$\vspace{-2pt}
+\ACoro Simlr in [5.20], $p\Par{S}\;\!q\Par{T}=q\Par{T}\;\!p\Par{S}.$ Then $q\Par{T}$ invard $p\Par{S}.$\vspace{-2pt}
 \SepLine
 
 \ProblemN{\Anchor{5A6}{6}}{
@@ -4039,26 +4040,30 @@ $\lambda\in\BigBra{z\in\Fbb:\aXMid{z-A_{j,j}}\leqslant\sum_{j\neq k=1}^n\aXMid{A
 
 \vspace{4pt}
 
-\Anchor{5ET1}\ProblemBX{\Tips}{
-	\TextA{Supp $S,T\in\Lm{V}$ commu. Prove $p\Par{S}q\Par{T}=q\Par{T}p\Par{S}$ for all $p,q\in\PoFi.$}
-}Becs each $S^j$ and each $T^k$ commu. Now $LHS=\sum\sum a_jb_kS^jT^k=\sum\sum a_jb_kT^kS^j=RHS.$\PfEnd
+\Anchor{5E1}\ProblemN{1}{
+	\TextA{Give commu optors $S,T\in\Fbb^4$ suth $\exists$ invarspd $S$ but not $T$ and $\exists$ invarspd $T$ but not $S$.}
+}Define $S:\Par{x,y,z,w}\mapsto\Par{y,x,0,0}$ and $T:\Par{x,y,z,w}\mapsto\Par{0,0,w,z}\Rightarrow TS=ST=0.$\parSol{}
+Notice that $S:e_1\mapsto e_2,\;e_3\mapsto 0,$ and $T:e_1\mapsto 0,\;e_3\mapsto e_4.$\parSol{}
+Thus ${e_1}$ eigvec of $T$ but not of $S,$ and ${e_3}$ eigvec of $S$ but not of $T.$
 \SepLine
 
-\Anchor{5E5}\ProblemN{5}{
-	\TextA{Supp $V$ finide. Prove $S,T$ commu $\Longleftrightarrow S\apostrophe,T\apostrophe$ commu.}
-}Supp $ST=TS\Rightarrow T\apostrophe S\apostrophe=\Par{ST}\apostrophe=\Par{TS}\apostrophe=S\apostrophe T\apostrophe.$ Convly, supp $\mS,\mT\in\Lm{V\apostrophe}$ commu.\parSol{}
-By (3.F.16), $\exists\,!\,S,T\in\Lm{V},\;\mS=S\apostrophe,\,\mT=T\apostrophe.$ Then $\Par{TS}\apostrophe=S\apostrophe T\apostrophe=T\apostrophe S\apostrophe=\Par{ST}\apostrophe.$\PfEnd\vspace{2pt}\parSol{}
-\Or Let $A=\Mt{T,B_V},C=\Mt{S,B_V}\Rightarrow A^t=\Mt{T\apostrophe,B_{V\apostrophe}},C^t=\Mt{S\apostrophe,B_{V\apostrophe}}.$\parSol{}
-(a) Given $S,T\in\Lm{V},$ $TS=ST\Longleftrightarrow AC=CA\Longleftrightarrow C^tA^t=A^tC^t\Longleftrightarrow S\apostrophe T\apostrophe=T\apostrophe S\apostrophe.$\parSol{}
-(b) Given $\mS,\mT\in\Lm{V\apostrophe},$ by (3.F.16), $\exists\,!\,S,T\in\Lm{V},\;\mS=S\apostrophe,\,\mT=T\apostrophe.$ By (a).\PfEnd
+\Anchor{5E8}\ProblemN{8}{
+	\TextA{Find a bss of $\PoFx{m}{\Rbb^2}$ suth $D_x,D_y$ up-trig in [5.72].}
+}Let $B=\Par{1,x,y,x^2,xy,y^2,\cdots,\cdots,x^m,x^{m-1}y,\cdots,xy^{m-1},y^m}$ in $\PoFx{m}{\Rbb^2}.$\parSol{}
+Supp a liney combina of $B$ is $0;$ \;$\sum_{j=0}^m\sum_{k=0}^{m-j}a_{j,k}x^jy^k=0.$\parSol{}
+Let $x=0\Rightarrow$ each $a_{0,k}=0,$ and $y=0\Rightarrow$ each $a_{k,0}=0.$ Now $\sum_{j=1}^{m-1}\sum_{k=1}^{m-1-j}a_{j,k}x^jy^k=0.$\parSol{}
+Take $\BigPar{\Par{x_1,y_1},\cdots,\Par{x_q,y_q}}$ \Sbra{where $q=1+\dots+m$} suth all $\sum_{j=1}^{m-1}\sum_{k=1}^{m-1-j}x_s^jy_t^k\,a_{j,k}=0$\parSol{}
+form a system of $q$ equations having uniq solus $\Par{0,\dots,0}.$ Thus $B$ is liney indep.\parSol{}
+Apply $D_x$ to each vec in $B\Rightarrow B_x=\BigPar{0,1,0,2x,y,0,\cdots,\cdots,mx^{m-1},\Par{m-1}x^{m-2}y,\cdots,y^{m-1},0}.$\parSol{}
+Apply $D_y$ to each vec in $B\Rightarrow B_y=\BigPar{0,0,1,0,x,2y,\cdots,\cdots,0,x^{m-1},\cdots,\Par{m-1}xy^{m-2},my^{m-1}}.$\PfEnd
 \SepLine
 
-\Anchor{5E6}\ProblemN{6}{
-	\TextA{Supp $\Fbb=\Cbb,$ $V$ is finide, and $S, T\in\Lm{V}$ commu.}
-	\TextA{Prove $\exists\,\alpha,\lambda\in\Cbb$ suth $\Range\Par{S -\alpha I} + \Range\Par{T -\lambda I}\neq V$.}
-}Supp $A,C\in\Fbb^{n,n}$ are matrices of $S,T$ wrto same $B_V=\Par{v_1,\dots,v_n}$ suth $A,C$ commu.\parSol{}
-Let $\alpha=A_{n,n},\,\lambda=C_{n,n}.$ Then $\Range\Par{S-\alpha I},\Range\Par{T-\lambda I}\subseteq\Span{v_1,\dots,v_{n-1}}.$\PfEnd
-\SepLine
+%\Anchor{5E6}\ProblemN{6}{
+%	\TextA{Supp $\Fbb=\Cbb,$ $V$ is finide, and $S, T\in\Lm{V}$ commu.}
+%	\TextA{Prove $\exists\,\alpha,\lambda\in\Cbb$ suth $\Range\Par{S -\alpha I} + \Range\Par{T -\lambda I}\neq V$.}
+%}Supp $A,C\in\Fbb^{n,n}$ are up-trig matrices of $S,T$ wrto a $B_V=\Par{v_1,\dots,v_n}$ suth $A,C$ commu.\parSol{}
+%Let $\alpha=A_{n,n},\,\lambda=C_{n,n}.$ Then $\Range\Par{S-\alpha I},\Range\Par{T-\lambda I}\subseteq\Span{v_1,\dots,v_{n-1}}.$\PfEnd
+%\SepLine
 
 \Anchor{5E7}\ProblemN{7}{
 	\TextA{Supp $\Fbb=\Cbb,$ and $S,T\in\Lm{V}$ commu, $S$ diag. Prove $\exists\,B_V$ suth $S$ diag and $T$ up-trig.}
@@ -4091,15 +4096,8 @@ Now for non0 $v\in U_m,\:\forall T=c_1T_1+\dots+c_mT_m\in\mE,Tv=\Par{c_1\lambda_
 Let $v_1$ be a common eigvec of all $T_k.$ Let $W\oplus\Span{v_1}=V,P:av_1+w\mapsto w.$\parSol{\Hb}
 Simlr in [4E 5.80], each pair of $\Bra{\hat{T}_{1},\dots,\hat{T}_m}$ commu. By asum, $\exists\,B_W\Rightarrow\exists\,B_V.$\parSol{\Hb}
 Now each $\Mt{T_k,B_V}$ up-trig $\Rightarrow\forall T\in\mE,\Mt{T}=c_1\Mt{T_1}+\dots+c_m\Mt{T_m},$ wrto $B_V.$\PfEnd
-\SepLine\pagebreak
-
-\Anchor{5E1}\ProblemN{1}{
-	\TextA{Give commu optors $S,T\in\Fbb^4$ suth $\exists$ invarspd $S$ but not $T$ and $\exists$ invarspd $T$ but not $S$.}
-}Define $S:\Par{x,y,z,w}\mapsto\Par{y,x,0,0}$ and $T:\Par{x,y,z,w}\mapsto\Par{0,0,w,z}\Rightarrow TS=ST=0.$\parSol{}
-Notice that $S:e_1\mapsto e_2,\;e_3\mapsto 0,$ and $T:e_1\mapsto 0,\;e_3\mapsto e_4.$\parSol{}
-Thus ${e_1}$ eigvec of $T$ but not of $S,$ and ${e_3}$ eigvec of $S$ but not of $T.$
-\SepLine
-\ChEnd
+\SepLine\ChEnd
+\pagebreak
 
 \ChDecl{Ch8}{8}{\quad{\ANote {\FontSmall $V$ denotes a finide non0 vecsp over $\Fbb.$ An Exe marked by $\blacksquare$ is true if infinide or partially finide.}}}
 
@@ -4158,23 +4156,23 @@ Then $\Null\Par{T-\lambda I}{^k}=\Null\Par{T-\lambda I}{^m}\Rightarrow\Par{T-\la
 
 \Anchor{8A17}\ProblemN{A.17}{
 	\TextA{Supp $T\in\Lm{V},\range T^m=\range T^{m+1}.$ Show $\range T^m=\range T^{m+1}=\cdots.$}
-}By Exe (19), $\null T^m=\null T^{m+1}=\cdots\Rightarrow\dim\range T^m=\dim\range T^{m+1}=\cdots.$\PfEnd\parSol{}
+}By Exe (A.19), $\null T^m=\null T^{m+1}=\cdots\Rightarrow\dim\range T^m=\dim\range T^{m+1}=\cdots.$\PfEnd\parSol{}
 \Or Supp $w=T^{m+k}v.$ Then becs $T^mv\in\range T^{m+1},\exists\,T^{m+1}u=T^mv.$ Thus $w=T^{m+k+1}u.$\PfEndB
 \SepLine
 
 \Anchor{8A18}\ProblemN{A.18}{
 	\TextA{Supp $T\in\Lm{V},\dim V=n.$ Show $\range T^{n}=\range T^{n+1}=\cdots.$}
-}By Exe (19), becs $\null T^{\dim V}=\null T^{\dim V+1}=\cdots.$ Simlr.\PfEnd\parSol{}
-\Or Asum $\range T^{n}\supsetneq\range T^{n+1}.$ By Exe (17), $V=\range T^0\supsetneq\range T\supsetneq\cdots\supsetneq\range T^{n+1}.$\parSol{}
+}By Exe (A.19), becs $\null T^{\dim V}=\null T^{\dim V+1}=\cdots.$ Simlr.\PfEnd\parSol{}
+\Or Asum $\range T^{n}\supsetneq\range T^{n+1}.$ By Exe (A.17), $V=\range T^0\supsetneq\range T\supsetneq\cdots\supsetneq\range T^{n+1}.$\parSol{}
 Now each $\dim\range T^{k+1}\leqslant\dim\range T^k-1\Rightarrow\dim\range T^{n+1}\leqslant\dim\range T^0-\Par{n+1}.$\PfEnd
-\SepLine
+\SepLine\pagebreak
 
 \Anchor{8A10}\ProblemN{A.10}{
 	\TextA{Supp $T\in\Lm{V}$ not nilp, $n=\dim V.$ Show $V=\null T^{n-1}\oplus\range T^{n-1}.$}
 }\NOTICE that $\null T^{n-1}\neq\null T^n\Rightarrow\dim\null T^n=n\Longleftrightarrow T^n=0.$ Thus $\null T^{n-1}=\null T^n.$\parSol{}
 又 $V=\null T^n\oplus\range T^n,\range T^n\subseteq\range T^{n-1}\Rightarrow V=\null T^{n-1}+\range T^{n-1}.$\parSol{}
 \Or Then $\dim\range T^{n-1}=\dim\range T^n\Rightarrow\range T^{n-1}=\range T^n.$\PfEnd\vspace{2pt}\parSol{}
-\Or By Exe (4E 3), $\null T^{2\SmallPar{n-1}}=\null T^{n-1}\Longleftrightarrow V=\null T^{n-1}\oplus\range T^{n-1}.$\PfEnd
+\Or By Exe (4E A.3), $\null T^{2\SmallPar{n-1}}=\null T^{n-1}\Longleftrightarrow V=\null T^{n-1}\oplus\range T^{n-1}.$\PfEnd
 \SepLine
 
 \Anchor{8A4e18}\ProblemBnoor{4E A.18}{
@@ -4216,20 +4214,39 @@ By \Sbra{5.B(I) \TIPSN{1}}, the min of $T$ is a multi of $\Par{z-\lambda_j}{^k}.
 
 \Anchor{Ch8B}
 
-\Anchor{8B7}\ProblemN{B.7}{
-	\TextA{Supp $\Fbb=\Cbb.$ Prove every inv $T\in\Lm{V}$ has a cube root.}
-}
-\SepLine
-
 \Anchor{8B10}\ProblemN{B.10}{
-	\TextA{Supp $\Fbb=\Cbb,T\in\Lm{V}.$ Prove $\exists$ commu $D,N\in\Lm{V},T=D+N,\,D$ diag, $N$ nilp.}
-}
+	\TextA{Supp $\Fbb=\Cbb,T\in\Lm{V}.$ Prove $\exists$ commu $D,N\in\Lm{V},T=D+N,\,D$ diag, $N$ nilp.\vspace{2pt}}
+}\ANote $D$ diag, $N$ nilp $\notRightarrow D,N$ commu. \AExa $\footnotesize\begin{pmatrix}1&\hspace{-6pt}0\\[-4pt]0&\hspace{-6pt}0\end{pmatrix},\begin{pmatrix}0&\hspace{-6pt}1\\[-4pt]0&\hspace{-6pt}0\end{pmatrix}.$\vspace{2pt}\parSol{}
+We use induc on $\dim V=n.$ (i) Immed. (ii) $n>1.$ Asum it holds for smaller $V.$\parSol{}
+Becs $V=G_1\oplus U,$ where $U=G_2\oplus\cdots\oplus G_m,$ and each $G_k=G\Par{\lambda_k,T}.$\parSol{}
+$\exists\,B_{G_1}$ suth $T\mmid_{G_1}=\Par{T-\lambda_1I}\Big|{_{G_1}}+\lambda_1I\mmid_{G_1}=N_1+D_1$ up-trig and $N_1,D_1$ commu.\parSol{}
+$\exists$ commu $D_2,N_2\in\Lm{U},T\mmid_U=D_2+N_2,\,D_2$ diag, $N_2$ nilp; wrto some $B_U,$ by (4E 5.E.7).\parSol{}
+Let $B_V=B_{G_1}\cup B_U.$ Define $P_1,P_2\in\Lm{V}$ by $P_1\Par{v_1+u}=v_1,P_2\Par{v_1+u}=u.$\parSol{}
+Let $D=D_1P_1+D_2P_2,N=N_1P_1+N_2P_2.$ \:Becs $P_jD_k=\delta_{j,k}D_j,P_jN_k=\delta_{j,k}N_j.$\parSol{}
+Thus $D+N=\Par{D_1+N_1}P_1+\Par{D_2+N_2}P_2=T,$ and $DN=D_1N_1P_1+D_2N_2P_2=NP.$\PfEnd\vspace{3pt}\parSol{}
+\Or Let $V=G_1\oplus\cdots G_m\Rightarrow\forall v\in V,\exists\,!\,v_k\in G_k,v=v_1+\dots+v_m.$\parSol{}
+Define $D\in\Lm{V}:v\mapsto\Par{\lambda_1v_1+\dots+\lambda_mv_m}\Rightarrow D\mmid_{G_k}=\lambda_kI.$\parSol{}
+Let $N=T-D\Rightarrow N\mmid_{G_k}=\Par{T-D}\Big|{_{G_k}}=\Par{T-\lambda_kI}\Big|{_{G_k}}$ is nilp.\parSol{}
+Then $N^Mv=N^Mv_1+\dots+N^Mv_m=0,$ where $M=\max\!\Bra{d_1,\dots,d_m}.$ Now $N$ is nilp.\parSol{}
+Becs $DN=DT-D^2,ND=TD-D^2,$ 又 each $TDv_k=\lambda_kTv_k=DTv_k\Rightarrow TD=DT.$\PfEnd
 \SepLine
 
-\Anchor{8B4e8}\ProblemBnoor{4E B.8}{
-	\TextA{Supp $\Fbb=\Rbb,$ and $\lambda_1,\dots,\lambda_m$ are disti eigvals of $T\in\Lm{V},$ and $p$ is the min.}
-	\TextA{Prove $V=G\Par{\lambda_1,T}\oplus\cdots\oplus G\Par{\lambda_m,T}\Longleftrightarrow p\Par{z}=\Par{z-\lambda_1}{^{k_1}}\cdots\Par{z-\lambda_m}{^{k_m}}.$}
-}
+\Anchor{8B4e6}\ProblemBnoor{4E B.6}{
+	\TextA{Supp $T\in\Lm{V}$ and $\lambda$ is an eigval. Explain why}
+	\TextA{the exponent of $z-\lambda$ in the factoriz of the min of $T$}
+	\TextA{is the smallest $m\in\Nbp$ suth $\Par{T-\lambda I}{^m}\Big|{_{\,G\SmallPar{\,\lambda,\,T}\,}}=0.$}
+}Let $p\Par{z}=\Par{z-\lambda}{^l}q\Par{z}$ be the min of $T$ with $q\Par{\lambda}\neq0.$ Let $G=G\Par{\lambda,T},N=T-\lambda I.$\parSol{}
+Asum $N^{l+1}\mmid_G=0$ while $N^l\mmid_G\neq0.$ Then $p\Par{T}\Big|{_G}=0=q\Par{T}N^l\mmid_G\Rightarrow q\Par{T}\Big|{_G}\neq0.$ ??? Ctradic.\vspace{2pt}\parSol{}
+Let $m$ be the smallest suth $N^m\mmid_G=0$ with $N^{m-1}\mmid_G\neq0.$\parSol{}
+Asum the min of $T$ is $p\Par{z}=\Par{z-\lambda}{^{m+k}}q\Par{z},k\in\Nbp.$\parSol{}
+Then let $s\Par{z}=\Par{z-\lambda}{^m}q\Par{z}\Rightarrow s\Par{T}=0$ while $0<\deg s<\deg p,$ ctradic.\PfEnd
+\SepLine
+
+\Anchor{8B4e7}\ProblemBnoor{4E B.7}{
+	\TextA{Supp $T\in\Lm{V}$ and $\lambda$ is an eigval with multy $d.$ Prove $G\Par{\lambda,T}=\Null\Par{T-\lambda I}{^d}.$}
+}Let $N=T-\lambda I,$ and $\null N\subsetneq\cdots\subsetneq\null N^m=\null N^{m+1}.$ Choose $B_{\null N}.$\parSol{}
+Extend to $B_{\null N^2}\Rightarrow\cdots\Rightarrow B_{\null N^m},$ with each time adding at least one bss vec. Thus $m\leqslant d.$\PfEnd\vspace{2pt}\parSol{}
+\Or By Exe (4E B.6) and (4E A.4), $\dim\Null\Par{T-\lambda I}{^m}=d\geqslant m.$\PfEnd
 \SepLine
 
 \Anchor{Ch8C}
@@ -4240,6 +4257,12 @@ By \Sbra{5.B(I) \TIPSN{1}}, the min of $T$ is a multi of $\Par{z-\lambda_j}{^k}.
 \SepLine
 
 \Anchor{Ch8D}
+\Anchor{8D7}\Anchor{8B4e21}\ProblemNnoor{D.7}{4E B.21}{
+	\TextA{Supp monic $p,q\in\PoCi$ have the same zeros, and $q$ is a multi of $p.$}
+	\TextA{Prove $\exists\,T\in\Lm{\Cbb^{\deg q}}$ suth the char of $T$ is $q$ and the min of $T$ is $p.$}
+}
+\SepLine\pagebreak
+
 
 \Anchor{8D3}\ProblemN{D.3}{
 	\TextA{}
@@ -4256,32 +4279,20 @@ By \Sbra{5.B(I) \TIPSN{1}}, the min of $T$ is a multi of $\Par{z-\lambda_j}{^k}.
 }
 \SepLine
 
-\Anchor{8D7}\Anchor{8B4e21}\ProblemNnoor{D.7}{4E B.21}{
-	\TextA{Supp monic $p,q\in\PoCi$ have the same zeros, and $q$ is a multi of $p.$}
-	\TextA{Prove $\exists\,T\in\Lm{\Cbb^{\deg q}}$ suth the char of $T$ is $q$ and the min of $T$ is $p.$}
-}
-\SepLine
-
 \Anchor{8D8}\ProblemN{D.8}{
 	\TextA{}
 }
 \SepLine
 
-\Anchor{8C4e7}\ProblemBnoor{4E C.7}{
-	\TextA{}
-}
-
-\Anchor{8C4e9}\ProblemBnoor{4E C.9}{
-	\TextA{}
-}
-
 \Anchor{8C4e11}\ProblemBnoor{4E C.11}{
 	\TextA{}
 }
+\SepLine
 
 \Anchor{8C4e12}\ProblemBnoor{4E C.12}{
 	\TextA{}
 }
+\SepLine
 
 \ChEnd
 \pagebreak
@@ -4289,6 +4300,18 @@ By \Sbra{5.B(I) \TIPSN{1}}, the min of $T$ is a multi of $\Par{z-\lambda_j}{^k}.
 \ChDecl{Ch9A}{9.A}{\quad{\ANote {\FontSmall $V$ denotes a finide non0 vecsp over $\Fbb.$}}}
 
 \vspace{4pt}
+
+\BulletPointX\NoteForSmall{[9.12]}\;\;Another proof: $\overline{T_{\!\Cbb}\Par{u+\i v}}=\overline{Tu+\i Tv}=Tu-\i Tv=T_{\!\Cbb}\Par{u-\i v}=T_{\!\Cbb}\Par{\overline{u+\i v}}.$\TextB{}
+$\overline{\Par{T_{\!\Cbb}-\lambda I}\Par{u+\i v}}=\overline{T_{\!\Cbb}\Par{u+\i v}-\lambda\Par{u+\i v}}=T_{\!\Cbb}\Par{u-\i v}-\overline{\lambda}\Par{u-\i v}=\Par{T_{\!\Cbb}-\overline{\lambda}I}\Par{u-\i v}.$\TextB{}
+We use induc on $m$ to show $\overline{\Par{T_{\!\Cbb}-\lambda I}{^m}\Par{u+\i v}}=\Par{T_{\!\Cbb}-\overline{\lambda}I}{^m}\Par{u-\i v}.$ (i) Immed. (ii) $m>1.$\TextB{}
+Asum it holds for $k\leqslant m.$ Let $\Par{T_{\!\Cbb}-\lambda I}{^{m-1}}\Par{u+\i v}=x+\i y.$ Becs $\overline{\Par{T_{\!\Cbb}-\lambda I}{^{m-1}}\Par{u+\i v}}=x-\i y.$\PfEnd
+\SepLine
+
+\BulletPointX\NoteForSmall{[9.17]}\;\;Detailed proof:\TextB{}
+Let $B=\Par{u_1+\i v_1,\dots,u_m+\i v_m}$ be a bss of $G\Par{\lambda,T_{\!\Cbb}}.$ By [9.12], $\overline{B}=\Par{u_1-\i v_1,\dots,u_m-\i v_m}$ in $G\Par{\overline{\lambda},T_{\!\Cbb}}.$\TextB{}
+(a) If $a_1\Par{u_1-\i v_1}+\dots+a_m\Par{u_m-\i v_m}=0.$ Conjugating, now each $\overline{a_k}=0.$ Liney indep.\TextB{}
+(b) $\forall u-\i v\in G\Par{\overline{\lambda},T_{\!\Cbb}},u+\i v\in G\Par{\lambda,T_{\!\Cbb}}\Rightarrow u+\i v\in\spn B\Rightarrow u-\i v\in\spn\overline{B}.$\PfEnd
+\SepLine
 
 \Anchor{9A13}\ProblemN{13}{
 	\TextA{Supp $\Fbb=\Rbb,T\in\Lm{V},$ and $b^2<4c$ for $b,c\in\Fbb.$}
@@ -4307,7 +4330,7 @@ Thus $\Null\Par{T_{\!\Cbb}^2+bT_{\!\Cbb}+cI}{^j}=\Null\Par{T_{\!\Cbb}-\lambda I}
 	\TextA{Supp $\Fbb=\Rbb,T\in\Lm{V}$ suth $T^2=-I.$ Define complex scalar multi on $V$ as}
 	\TextA{$\Par{a+b\i}v=av+bTv.$ Then $V$ itself is already a complex vecsp with these defs.}
 	\TextA{Show the dim of $V$ as a complex vecsp is half of the dim of $V$ as the usual real vecsp.}
-}Supp $V\neq\zeroSubs.$ Let $2N=\dim V$ as real vecsp. We construct a real $B_V$ via a $\Par[0pt]{N-1}$\hspace{1pt}-\hspace{1pt}step process.\par\quad
+}Supp $V\neq\zeroSubs.$ Let $N=\dim V$ as real vecsp. We construct a real $B_V$ via a $\Par[0pt]{N-1}$\hspace{1pt}-\hspace{1pt}step process.\par\quad
 Let $\Par{v_1,Tv_1}$ be liney indep in $V$ as real vecsp. Let $v_2\not\in\Span{v_1,Tv_1}\Rightarrow\Par{v_1,Tv_1,v_2}$ liney indep.\vspace{1pt}\par\quad
 {\tgbf Step 1.} \;We show $\Par{v_1,Tv_1,v_2,Tv_2}$ liney indep in $V$ as real vecsp. Asum $Tv_2=a_1v_1+b_1Tv_1+a_2v_2.$\par\quad
 \Blind{{\tgbf Step 1.} \;}Then $-v_2=a_1Tv_1-b_1v_1+a_2Tv_2.$ Note that $a_2\neq0$ and $a_2^2=-1$ while $a_2\in\Rbb,$ ctradic.\vspace{2pt}\par\quad
