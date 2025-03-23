@@ -1668,10 +1668,10 @@ $T$ inje, $S$ surj.$\\$
 
 \Anchor{3DT2}\BulletPointX\Tips \,\,\,Supp each $S_k\in\Lm{V_{\!k},W_k},W_k\subseteq V_{\!k+1}\Rightarrow S_m\circ S_{m-1}\circ\cdots\circ S_2\circ S_1$ makes sense.\TextB{}
 (a) By the ctrapos of (3.B.11), $S_m\circ\cdots\circ S_1$ not inje $\Rightarrow\exists\,S_k$ not inje. Convly not true unless $k=1.$\TextB{}
-(b) By Exe (9), if all $V_k$ finide and iso to each other, then $S_m\circ\cdots\circ S_1$ inje $\Rightarrow$ inv, so are all $S_k.$\TextB{}
+(b) By Exe (9), if all $V_{\!k}$ finide and iso to each other, then $S_m\circ\cdots\circ S_1$ inje $\Rightarrow$ inv, so are all $S_k.$\TextB{}
 (c) $\null S_1\subseteq \Null\Par{S_2S_1}\subseteq\cdots\subseteq\Null\Par{S_m\cdots S_2S_1};$ \;$S_m\circ\cdots\circ S_1$ inje $\Rightarrow$ each $S_k\circ\cdots\circ S_1$ inje.\vspace{2pt}\TextB{}
-Supp each $W_k=V_{\!k+1},$ for if $W_k\subsetneq V_{\!k+1},$ then $S_1,S_2$ surj $\notRightarrow S_2\circ S_1\in\Lm{V_1,W_2}$ surj.\TextB{}
-(d) Each $S_k$ surj $\Rightarrow S_m\circ\cdots\circ S_1$ surj. Convly not true unless all $V_k$ finide and iso to each other.\TextB{}
+Supp each $W_k=V_{\!k+1},$ for if $W_k\subsetneq V_{\!k+1},$ then $S_1,S_2$ surj $\notRightarrow S_2\circ S_1\in\Lm{V_{\!1},W_2}$ surj.\TextB{}
+(d) Each $S_k$ surj $\Rightarrow S_m\circ\cdots\circ S_1$ surj. Convly not true unless all $V_{\!k}$ finide and iso to each other.\TextB{}
 (e) $\range S_m\supseteq\Range\Par{S_mS_{m-1}}\supseteq\cdots\supseteq\Range\Par{S_mS_{m-1}\cdots S_1};$ \;$S_m\circ\cdots\circ S_1$ surj $\Rightarrow$ each $S_m\circ\cdots\circ S_k$ surj.
 %	\BulletPointX Define $X_p=\Bra{T\in\Lm{V}:p\Par{T}\text{ holds}};\;P_{\!p}:X_p$ is closd vec multi;\;$Q_p:X_p$ is a group.\TextB{}
 %	(1) $S$ surj $\Leftarrow$ each $S_k$ surj. \;$P_{\!surj}$ holds. \; (2) $S$ inje $\Leftarrow$ each $S_k$ inje. \;$P_{\!inje}$ holds.\TextB{}
@@ -1928,8 +1928,8 @@ $\forall w'_1,w'_2\in W_I$ suth $w'_1+U=w'_2+U\in W_I\XSlash U,\;w'_1-w'_2\in U\
 \Anchor{3ET1}\BulletPointX\TipsN{1}\,\,\,$V$ is a subsp of $U\Longleftrightarrow\forall v\in V,v+U=0+U=U\Longleftrightarrow V\XSlash U=\zeroSubs=\Bra{U}.$
 \SepLine
 
-\Anchor{3EN3.88}\BulletPointX\NoteForSmall{[3.88]}\;\;If $U,V$ are subsp of some vecsp $\mathcal{V}$. Define the quot map $\pi\in\Lm{V,V\XSlash U}.$\TextB{}
-Then $\pi$ is surj by def, and $\null\pi=V\cap U.$ \,Thus if $\mathcal{V}$ is finide, then $\dim V=\dim V\XSlash U+\dim\Par{V\cap U}.$\TextB{}
+\Anchor{3EN3.88}\BulletPointX\NoteForSmall{[3.88]}\;\;If $U,V$ are subsp of some vecsp $\mV$. Define the quot map $\pi\in\Lm{V,V\XSlash U}.$\TextB{}
+Then $\pi$ is surj by def, and $\null\pi=V\cap U.$ \,Thus if $\mV$ is finide, then $\dim V=\dim V\XSlash U+\dim\Par{V\cap U}.$\TextB{}
 \Or Let $I=V\cap U,\;V_{\!I}\oplus I=V.$ Becs $V\XSlash U=V_{\!I}\XSlash U,$ iso to $V_{\!I}.$ Now $\dim V=\dim V_{\!I}+\dim I.$
 \SepLine
 
@@ -2012,7 +2012,7 @@ $\Blind{A}\in v_k+\Span{v_1-v_k,\dots,v_m-v_k}.$\PfEnd
 \SepLine\pagebreak
 
 \ProblemN{\Anchor{3E18}{18}}{
-	\TextA{Supp $T\in\Lm{V,W}$ and $U,V$ are subsps of $\mathcal{V}.$ Let $\pi:V\rightarrow V\XSlash U$ be the quot map.}
+	\TextA{Supp $T\in\Lm{V,W}$ and $U,V$ are subsps of $\mV.$ Let $\pi:V\rightarrow V\XSlash U$ be the quot map.}
 	\TextA{Prove $\exists\,S\in\Lm{V\XSlash U,W},T=S\circ\pi\Longleftrightarrow U\cap V=\null\pi\subseteq\null T$.}
 }Supp $\null\pi\subseteq\null T.$ By ({3.B.24}), done. \;\Or Define $S:\Par{v+U}\mapsto Tv.$\parSol{}
 $\forall v_1,v_2\in V$ suth $v_1+U=v_2+U\Longleftrightarrow v_1-v_2\in U\cap V\subseteq\null T\Longleftrightarrow Tv_1=Tv_2.$\parSol{}
@@ -2106,11 +2106,11 @@ Now $u\in U\Longleftrightarrow u+U=0w+U\Longleftrightarrow\varphi\Par{u}=0.$\PfE
 \SepLine
 
 \Anchor{3E'1}\ProblemB{
-	\TextB{Supp $U,W$ are subsps of $\mathcal{V}$, and $X,Y$ are subsps of $\mathcal{W}.$}
+	\TextB{Supp $U,W$ are subsps of $\mV$, and $X,Y$ are subsps of $\mathcal{W}.$}
 	\TextB{Supp $U,X$ are iso, $W,Y$ are iso. Prove or give a countexa\hspace{1pt}$:$ $U\XSlash W$ and $X\XSlash Y$ are iso.}
-}A countexa: Let $\mathcal{V}=\mathcal{W}=\Fbb^2.$ Let $U=X=Y=\Span{e_1},W=\Span{e_2}.$\parSol{}
+}A countexa: Let $\mV=\mathcal{W}=\Fbb^2.$ Let $U=X=Y=\Span{e_1},W=\Span{e_2}.$\parSol{}
 Then $\dim U\XSlash W=\dim U-\Dim\Par{U\cap W}=1\neq 0=\dim X-\Dim\Par{X\cap Y}=\dim X\XSlash Y.$\PfEnd\parSol{}
-\Or Let $\mathcal{V}=U=W=\Fbb^{\infty}=X,\,Y=\Bra{\Par{0,x_1,x_2,\cdots}}.$ Then $U\XSlash W=\zeroSubs,$ while $\dim X\XSlash Y=1.$\PfEnd
+\Or Let $\mV=U=W=\Fbb^{\infty}=X,\,Y=\Bra{\Par{0,x_1,x_2,\cdots}}.$ Then $U\XSlash W=\zeroSubs,$ while $\dim X\XSlash Y=1.$\PfEnd
 \SepLine
 
 \Anchor{3ET2}\ProblemBX{\TipsN{2}}{
@@ -4189,7 +4189,7 @@ Thus $\alpha=\beta=\gamma.$ Any two liney indep $v,w$ corres one eigval.\PfEndB
 \SepLine
 
 \Anchor{8A4e15}\Anchor{8B5}\ProblemNnoor{B.5}{4E A.15}{
-	\TextA{Supp $\Fbb=\Cbb,T\in\Lm{V}.$ Prove non0 $T$ diag $\Rightarrow$ each $G\Par{\lambda,T}=E\Par{\lambda,T}.$}
+	\TextA{Supp $T\in\Lm{V}.$ Prove non0 $T$ diag $\Rightarrow$ each $G\Par{\lambda,T}=E\Par{\lambda,T}.$}
 }Supp $V=E\Par{\lambda_1,T}\oplus\cdots\oplus E\Par{\lambda_m,T};$ $\lambda_1=0$ if possible, in this case $m>1.$\parSol{}
 Supp $w\in G\Par{\lambda_j,T}.$ Then $w=v_1+\dots+v_m,$ where each $v_i\in E\Par{\lambda_i,T}.$\parSol{}
 Becs $\Par{T-\lambda_jI}{^k}w=0=\sum_{i=1}^m\lambda_i\Par{\lambda_i-\lambda_j}{^k}v_i\Rightarrow w=v_j\in E\Par{\lambda_j,T},$ othws ctradic.\PfEnd\vspace{3pt}\parSol{}
@@ -4259,20 +4259,16 @@ Let $s\Par{z}=\Par{z-\lambda}{^k}q\Par{z}.$ We show $s\Par{T}=0$ and done. Consi
 If $q\Par{T}v=0\Rightarrow s\Par{T}v=0.$ Othws, $q\Par{T}v\in\Null\Par{T-\lambda I}{^m}=\Null\Par{T-\lambda I}{^k}\Rightarrow s\Par{T}v=0.$\PfEnd
 \SepLine
 
-\Anchor{8B9}\ProblemN{B.9}{
-	\TextA{Supp $A,C$ are block diag matrices, and $A_k,C_k$ are of the same size $n_k$ \,for $k\in\Bra{1,\dots,m}.$}
-	\TextA{Show $AC$ is block diag and the $k^{\text{th}}$ block on the diag of $AC$ is $A_kC_k.$}
-}Let $A=\Mt{S},C=\Mt{T},AC=\Mt{ST}\in\Fbb^{n,n},$ where $n=n_1+\dots+n_m.$\parSol{}
-Let $B_1=\Par{e_1,\cdots,e_{n_1}},$ and $B_{k}=\Par{e_{n_1\,+\,\cdots\,+\,n_{k-1}+1},\cdots,e_{n_1\,+\,\cdots\,+\,n_k}}$ for $k\in\Bra{2,\dots,m}.$\vspace{2pt}\parSol{}
-Let each $U_k=\spn B_k$ invard $S,T.$ Becs $\Mt{S\mmid_{U_k},B_k}=A_k,\Mt{T\mmid_{U_k},B_k}=C_k.$\vspace{2pt}\parSol{}
-Now $\Mt[\Sbra]{\Par{ST}\Big|{_{U_k}}}=\Mt{S\mmid_{U_k}T\mmid_{U_k}}=A_kC_k.$
+\Anchor{8L1}\ProblemN{L1}{
+	\TextA{Supp $V=U\oplus W$ and $U,W$ invard $T\in\Lm{V}.$ Prove $\null T\mmid_U\oplus\null T\mmid_W=\null T.$}
+}$\forall v=u+w\in\null T, Tv=Tu+Tw=0\Rightarrow Tu,Tw=0\Rightarrow v\in\null T\mmid_U\oplus\null T\mmid_W.$\PfEnd
 \SepLine
 
 \ProblemB[]{
-	\TextB{Supp $T\in\Lm{V},\lambda_1,\dots,\lambda_m$ are the disti eigvals corres $v_1,\dots,v_m$, and $U$ invard $T.$}
+	\TextB{Supp $T\in\Lm{V},\lambda_1,\dots,\lambda_m$ are the disti eigvals, and $U$ invard $T.$}
 }
 \Anchor{8BT1}\ProblemN{\BulletPointX B.\TipsN{1}}{
-	\TextA{Supp $v_1+\dots+v_m\in U.$ Prove each $v_k\in U.$}
+	\TextA{Supp $v_1+\dots+v_m\in U$ and each $v_k$ is gigvec corres $\lambda_k.$ Prove each $v_k\in U.$}
 }Let each $S_k=\Par{T-\lambda_k I}{^{m_k}},$ where $\Par{T-\lambda_k I}{^{m_k}}v_k\neq0=\Par{T-\lambda_k I}{^{m_k+1}}v_k.$\parSol{}
 Let each $R_k=\Par{T-\lambda_1I}{^n}\cdots\Par{T-\lambda_{k-1}}{^n}\Par{T-\lambda_{k+1}I}{^n}\cdots\Par{T-\lambda_mI}{^n},$ where $n=\dim V.$\parSol{}
 Then each $R_kS_k\Par{v_1+\dots+v_m}=R_kw_k,$ where $w_k=S_kv_k\in E\Par{\lambda_k,T}.$\parSol{}
@@ -4283,52 +4279,67 @@ Becs $U$ invard $T\Rightarrow$ invard $R_kS_k=p\Par{T}.$ Thus $w_k\in U\Rightarr
 	\TextA{Supp $\Fbb=\Cbb.$ Prove $\exists$ subsp $U_k$ of $G\Par{\lambda_k,T}$ suth $U=U_1\oplus\cdots\oplus U_m.$}
 }Let each $U_k=U\cap G\Par{\lambda_k,T}.$ Becs $\forall u\in U,\exists\,!\,v_k\in G\Par{\lambda_k,T},u=v_1+\dots+v_m.$\parSol{}
 Now by \Sbra{B \TIPSN{1}}, each $v_k\in U_k\Rightarrow u\in U_1\oplus\cdots\oplus U_m.$\PfEnd
+\SepLine[0pt][\Blind{\BulletPointX} ]
+
+\Anchor{8BT3}\ProblemN{\BulletPointX B.\TipsN{3}}{
+	\TextA{Supp $\Fbb=\Cbb,V=U\oplus W,$ and $U,W$ non0 invard $T.$}
+	\TextA{Prove $G\Par{\lambda,T}=G\Par{\lambda,T\mmid_U}\oplus G\Par{\lambda,T\mmid_W}.$}
+}Let $S=\Par{T-\lambda I}{^{\dim V}}\Rightarrow\null S=\null S\mmid_U\oplus\null S\mmid_W\Rightarrow G\Par{\lambda, T}=G\Par{\lambda,T\mmid_U}\oplus G\Par{\lambda,T\mmid_W}.$\PfEnd
 \SepLine
-\pagebreak
+
+\Anchor{8B9}\ProblemN{B.9}{
+	\TextA{Supp $A,C$ are block diag matrices, and $A_k,C_k$ are of the same size $n_k$ \,for $k\in\Bra{1,\dots,m}.$}
+	\TextA{Show $AC$ is block diag and the $k^{\text{th}}$ block on the diag of $AC$ is $A_kC_k.$}
+}Let $A=\Mt{S},C=\Mt{T},AC=\Mt{ST}\in\Fbb^{n,n},$ where $n=n_1+\dots+n_m.$\parSol{}
+Let $B_1=\Par{e_1,\cdots,e_{n_1}},$ and $B_{k}=\Par{e_{n_1\,+\,\cdots\,+\,n_{k-1}+1},\cdots,e_{n_1\,+\,\cdots\,+\,n_k}}$ for $k\in\Bra{2,\dots,m}.$\vspace{2pt}\parSol{}
+Let each $U_k=\spn B_k$ invard $S,T.$ Becs $\Mt{S\mmid_{U_k},B_k}=A_k,\Mt{T\mmid_{U_k},B_k}=C_k.$\vspace{2pt}\parSol{}
+Now $\Mt[\Sbra]{\Par{ST}\Big|{_{U_k}}}=\Mt{S\mmid_{U_k}T\mmid_{U_k}}=A_kC_k.$
+\SepLine
 
 \Anchor{Ch8C}
 \Anchor{8B4e20}\Anchor{8C20}\ProblemNnoor{C.20}{4E B.20}{
-	\TextA{Supp $\Fbb=\Cbb,$ and each $V_k$ non0 invarspd $T\in\Lm{V}$ of $V=V_1\oplus\cdots\oplus V_m.$}
-	\TextA{Let $p_k$ be the char of $T\mmid_{V_k}.$ Prove the char of $T$ is $p_1\cdots p_m.$}
-}
+	\TextA{Supp $\Fbb=\Cbb,$ and each $V_{\!k}$ non0 invarspd $T\in\Lm{V}$ of $V=V_{\!1}\oplus\cdots\oplus V_{\!m}.$}
+	\TextA{Let $p_k$ be the char of $T\mmid_{V_{\!k}}.$ Prove the char of $T$ is $p_1\cdots p_m.$}
+}Let $V=G\Par{\lambda_1,T}\oplus\cdots\oplus G\Par{\lambda_n,T}\Rightarrow V_{\!k}=G\Par{\lambda_1,T\mmid_{V_{\!k}}}\oplus\cdots\oplus G\Par{\lambda_m,T\mmid_{V_{\!k}}}.$\parSol{}
+By \Sbra{B \TIPSN{3}}, each $G\Par{\lambda_j,T}=G\Par{\lambda_j,T\mmid_{V_{\!1}}}\oplus\cdots\oplus G\Par{\lambda_j,T\mmid_{V_{\!m}}}.$\parSol{}
+Let $d_{j,k}$ be the multy of $\lambda_j$ of $T\mmid_{V_{\!k}}.$ Then $d_{j,1}+\dots+d_{j,n}=d_j,$ the multy of $\lambda_j$ of $T.$\parSol{}
+Thus each $p_k\Par{z}=\Par{z-\lambda_1}{^{d_{1,k}}}\cdots\Par{z-\lambda_n}{^{d_{n,k}}}.$ While the char of $T$ is $\Par{z-\lambda_1}{^{d_1}}\cdots\Par{z-\lambda_n}{^{d_n}}.$\PfEnd\vspace{2pt}\parSol{}
+\Or Let $A$ be a block diag matrix of $T,$ with each $A_k=\Mt{T\mmid_{V_{\!k}}}$ up-trig. By Exe (B.11).\PfEnd
 \SepLine
 
 \Anchor{Ch8D}
-\Anchor{8D7}\Anchor{8B4e21}\ProblemNnoor{D.7}{4E B.21}{
-	\TextA{Supp monic $p,q\in\PoCi$ have the same zeros, and $q$ is a multi of $p.$}
-	\TextA{Prove $\exists\,T\in\Lm{\Cbb^{\deg q}}$ suth the char of $T$ is $q$ and the min of $T$ is $p.$}
-}
-\SepLine\pagebreak
+%\Anchor{8D7}\Anchor{8B4e21}\ProblemNnoor{D.7}{4E B.21}{
+%	\TextA{Supp monic $p,q\in\PoCi$ have the same zeros, and $q$ is a multi of $p.$}
+%	\TextA{Prove $\exists\,T\in\Lm{\Cbb^{\deg q}}$ suth the char of $T$ is $q$ and the min of $T$ is $p.$}
+%}
+%\SepLine
 
-
-\Anchor{8D3}\ProblemN{D.3}{
-	\TextA{}
-}
-\SepLine
-
-\Anchor{8D5}\ProblemN{D.5}{
-	\TextA{}
-}
-\SepLine
+%\Anchor{8D3}\ProblemN{D.3}{
+%	\TextA{Supp $N\in\Lm{V}$ is nilp. Prove the min of $N$ is $z^{m+1},$}
+%	\TextA{where $m$ is the len of the longest consecutive string of $1$'s}
+%	\TextA{that appears on the line directly above the diag in any Jordan $\Mt{N,B_V}.$}
+%}Get such $m.$ Becs $N^{m+1}=0.$ 又 $N^{m}\neq0.$\PfEnd
+%\SepLine
 
 \Anchor{8D6}\ProblemN{D.6}{
-	\TextA{}
+	\TextA{Supp $N\in\Lm{V}$ is nilp, and $v_1,\dots,v_n$ and $m_1,\dots,m_n$ are as in [8.55].}
+	\TextA{Prove $N^{m_1}v_1,\dots,N^{m_n}v_n$ is a bss of $\null N.$}
 }
 \SepLine
 
 \Anchor{8D8}\ProblemN{D.8}{
-	\TextA{}
-}
-\SepLine
-
-\Anchor{8C4e11}\ProblemBnoor{4E C.11}{
-	\TextA{}
-}
+	\TextA{Supp $\Fbb=\Cbb,$ and $T\in\Lm{V},$ with the min $p.$}
+	\TextA{Prove [P] $\nexists$ non0 invarsps $U,W$ suth $U\oplus W=V\Longleftrightarrow p\Par{z}=\Par{z-\lambda}{^{\dim V}}.$ [Q]}
+}${}^{\neg}Q\Rightarrow{}{^\neg}P:$ \;Let $N=T-\lambda I\Rightarrow$ the min of $N$ is $z^{\dim V}.$\parSol{}
+\Blind{${}^{\neg}Q\Rightarrow{}{^\neg}P:$ \;}Then by Exe (D.3), the line directly above the diag of any Jordan $\Mt{N}$ is all $1.$\parSol{}
+$Q\Rightarrow P:$ \;Asum $V=G\Par{\lambda,T}=U\oplus W,$ and $U,W$ non0 invard $T\Rightarrow\exists$ Jordan $\Mt{T\mmid_U},\Mt{T\mmid_W}.$\parSol{}
+\Blind{$Q\Rightarrow P:$ \;}Let $\max\!\Bra{\dim U,\dim W}=m<\dim V.$ Then $\Par{T-\lambda}{^m}=0.$\PfEnd
 \SepLine
 
 \Anchor{8C4e12}\ProblemBnoor{4E C.12}{
-	\TextA{}
-}
+	\TextA{Supp $T\in\Lm{V}$ diag. Show $\Mt{T}$ diag wrto any Jordan $B_V.$}
+}By Exe (4E C.11), each $v_k$ of a Jordan $B_V$ is a gigvec; so is an eigvec, by Exe (4E A.15).\PfEnd\vspace{2pt}\parSol{}
+\Or Let $A$ be a Jordan block diag matrix of $T.$ By Exe (D.3) and [4E 5.62].\PfEnd
 \SepLine
 
 \ChEnd
