@@ -3085,19 +3085,18 @@ Thus $\Par{rs}\Par{z}=1$ for infily many $z,$ so for all $z.$ Now $\deg rs=1=\de
 	\TextB{Supp $V$ is finide, $T\in\Lm{V},$ and $U$ is invarsp of $\,V$ under $T.$}
 	\TextB{Prove or give a countexa\hspace{1pt}$:$ there exis invarsp of dimension $\dim V-\dim U.$}
 }If $\dim U$ or $\dim V$ is odd, then $\exists$ eigval of $T$ by [4E 5.34], and $\exists$ invarsp of dim $\dim V-1.$\parSol{}
-\colorbox{yellow}{TODO}
+\colorbox{yellow}{TODO}\parSol{}
+\parSol{}
 %\NOTICE that if $\dim V<5,$ then no countexa exists.\parSol{}
 %Let $T\in\Lm{\Rbb^6}$ with no eigvals will do. By (4E 5.B.29), $T$ has invarsp of dim $2,$ not of dim $4.$\PfEnd
 \SepLine
 
 \ProblemB[]{
-	\TextB{Supp $T\in\Lm{V}$ and $U$ is invarsp of $V$ under $T.$}
-	\TextB{Supp $\lambda_1,\dots,\lambda_m$ are the disti eigvals of $T$ corres eigvecs $v_1,\dots,v_m.$}
+	\TextB{Supp $T\in\Lm{V},\lambda_1,\dots,\lambda_m$ are the disti eigvals corres $v_1,\dots,v_m,$ and $U$ invard $T.$}
 }
 \Anchor{5AT1}\ProblemBX{\TipsN{1}}{
-	\TextA{Prove $v_1+\dots+v_m\in U\Longleftrightarrow$ each $v_k\in U.$\vspace{-2pt}}
-}Supp each $v_k\in U.$ Then becs $U$ is a subsp, $v_1+\dots+v_m\in U.$\parSol{}
-Convly, consider the stmt $P\Par{k}:$ if $v_1+\dots+v_k\in U,$ then each $v_j\in U.$\parSol{}
+	\TextA{Supp $v_1+\dots+v_m\in U.$ Prove each $v_k\in U.$\vspace{-2pt}}
+}Consider the stmt $P\Par{k}:$ if $v_1+\dots+v_k\in U,$ then each $v_j\in U.$\parSol{}
 (i) For $k=1,$ $v_1\in U,\;P\Par{1}$ holds.\parSol{\Endi}
 (ii) For $2\leqslant k\leqslant m.$ Asum $P\Par{k-1}$ holds. Supp $v=v_1+\dots+v_k\in U.$\parSol{\Hii}
 Then $Tv=\lambda_1v_1+\dots+\lambda_k v_k\in U\Longrightarrow Tv-\lambda_k v=\Par{\lambda_1-\lambda_k}v_1+\dots+\Par{\lambda_{k-1}-\lambda_k}v_{k-1}\in U.$\parSol{\Hii}
@@ -3991,8 +3990,8 @@ Define $p\Par{z}=\Par{z-\lambda_1}\cdots\Par{z-\lambda_m}.$ Then $\Sbra{p\Par{T}
 \SepLine
 
 \Anchor{5C4e16}\ProblemN{16}{
-	\TextB{Supp $T\in\Lm{V}$ diag. Let $\lambda_1,\dots,\lambda_m$ be the disti eigvals of $T.$}
-	\TextB{Prove $U$ invarspd $T\Rightarrow\exists$ subsp $U_k\subseteq E\Par{\lambda_k,T}$ suth $U=U_1\oplus\cdots U_m.$}
+	\TextA{Supp $T\in\Lm{V}$ diag. Let $\lambda_1,\dots,\lambda_m$ be the disti eigvals of $T.$}
+	\TextA{Prove $U$ invarspd $T\Rightarrow\exists$ subsp $U_k$ of $E\Par{\lambda_k,T}$ suth $U=U_1\oplus\cdots\oplus U_m.$}
 }Let each $U_k=U\cap E\Par{\lambda_k,T}.$ Becs $\forall u\in U,\exists\,!\,v_k\in E\Par{\lambda_j,T},\,u=v_1+\dots+v_m.$\parSol{}
 Now by \Sbra{5.A \TIPSN{1}}, each $v_k\in U_j\Rightarrow u\in U_1\oplus\cdots\oplus U_m.$\PfEnd
 \SepLine
@@ -4040,12 +4039,12 @@ $\lambda\in\BigBra{z\in\Fbb:\aXMid{z-A_{j,j}}\leqslant\sum_{j\neq k=1}^n\aXMid{A
 
 \vspace{4pt}
 
-\Anchor{5E1}\ProblemN{1}{
-	\TextA{Give commu optors $S,T\in\Fbb^4$ suth $\exists$ invarspd $S$ but not $T$ and $\exists$ invarspd $T$ but not $S$.}
-}Define $S:\Par{x,y,z,w}\mapsto\Par{y,x,0,0}$ and $T:\Par{x,y,z,w}\mapsto\Par{0,0,w,z}\Rightarrow TS=ST=0.$\parSol{}
-Notice that $S:e_1\mapsto e_2,\;e_3\mapsto 0,$ and $T:e_1\mapsto 0,\;e_3\mapsto e_4.$\parSol{}
-Thus ${e_1}$ eigvec of $T$ but not of $S,$ and ${e_3}$ eigvec of $S$ but not of $T.$
-\SepLine
+%\Anchor{5E1}\ProblemN{1}{
+%	\TextA{Give commu optors $S,T\in\Fbb^4$ suth $\exists$ invarspd $S$ but not $T$ and $\exists$ invarspd $T$ but not $S$.}
+%}Define $S:\Par{x,y,z,w}\mapsto\Par{y,x,0,0}$ and $T:\Par{x,y,z,w}\mapsto\Par{0,0,w,z}\Rightarrow TS=ST=0.$\parSol{}
+%Notice that $S:e_1\mapsto e_2,\;e_3\mapsto 0,$ and $T:e_1\mapsto 0,\;e_3\mapsto e_4.$\parSol{}
+%Thus ${e_1}$ eigvec of $T$ but not of $S,$ and ${e_3}$ eigvec of $S$ but not of $T.$
+%\SepLine
 
 \Anchor{5E8}\ProblemN{8}{
 	\TextA{Find a bss of $\PoFx{m}{\Rbb^2}$ suth $D_x,D_y$ up-trig in [5.72].}
@@ -4058,12 +4057,12 @@ Apply $D_x$ to each vec in $B\Rightarrow B_x=\BigPar{0,1,0,2x,y,0,\cdots,\cdots,
 Apply $D_y$ to each vec in $B\Rightarrow B_y=\BigPar{0,0,1,0,x,2y,\cdots,\cdots,0,x^{m-1},\cdots,\Par{m-1}xy^{m-2},my^{m-1}}.$\PfEnd
 \SepLine
 
-%\Anchor{5E6}\ProblemN{6}{
-%	\TextA{Supp $\Fbb=\Cbb,$ $V$ is finide, and $S, T\in\Lm{V}$ commu.}
-%	\TextA{Prove $\exists\,\alpha,\lambda\in\Cbb$ suth $\Range\Par{S -\alpha I} + \Range\Par{T -\lambda I}\neq V$.}
-%}Supp $A,C\in\Fbb^{n,n}$ are up-trig matrices of $S,T$ wrto a $B_V=\Par{v_1,\dots,v_n}$ suth $A,C$ commu.\parSol{}
-%Let $\alpha=A_{n,n},\,\lambda=C_{n,n}.$ Then $\Range\Par{S-\alpha I},\Range\Par{T-\lambda I}\subseteq\Span{v_1,\dots,v_{n-1}}.$\PfEnd
-%\SepLine
+\Anchor{5E6}\ProblemN{6}{
+	\TextA{Supp $\Fbb=\Cbb,$ $V$ is finide, and $S, T\in\Lm{V}$ commu.}
+	\TextA{Prove $\exists\,\alpha,\lambda\in\Cbb$ suth $\Range\Par{S -\alpha I} + \Range\Par{T -\lambda I}\neq V$.}
+}Supp $A,C\in\Fbb^{n,n}$ are up-trig matrices of $S,T$ wrto a $B_V=\Par{v_1,\dots,v_n}$ suth $A,C$ commu.\parSol{}
+Let $\alpha=A_{n,n},\,\lambda=C_{n,n}.$ Then $\Range\Par{S-\alpha I},\Range\Par{T-\lambda I}\subseteq\Span{v_1,\dots,v_{n-1}}.$\PfEnd
+\SepLine
 
 \Anchor{5E7}\ProblemN{7}{
 	\TextA{Supp $\Fbb=\Cbb,$ and $S,T\in\Lm{V}$ commu, $S$ diag. Prove $\exists\,B_V$ suth $S$ diag and $T$ up-trig.}
@@ -4231,27 +4230,65 @@ Then $N^Mv=N^Mv_1+\dots+N^Mv_m=0,$ where $M=\max\!\Bra{d_1,\dots,d_m}.$ Now $N$ 
 Becs $DN=DT-D^2,ND=TD-D^2,$ 又 each $TDv_k=\lambda_kTv_k=DTv_k\Rightarrow TD=DT.$\PfEnd
 \SepLine
 
+\Anchor{8B4e7}\ProblemBnoor{4E B.7}{
+	\TextA{Supp $T\in\Lm{V}$ and $\lambda$ is an eigval with multy $d.$ Prove $G\Par{\lambda,T}=\Null\Par{T-\lambda I}{^d}.$}
+}Let $N=T-\lambda I,$ and $\null N\subsetneq\cdots\subsetneq\null N^m=\null N^{m+1}.$ Choose $B_{\null N}.$\parSol{}
+Extend to $B_{\null N^2}\Rightarrow\cdots\Rightarrow B_{\null N^m},$ with each time adding at least one bss vec. Thus $m\leqslant d.$\PfEnd\vspace{3pt}\parSol{}
+\Or Let the min of $T$ be $p\Par{z}=\Par{z-\lambda}{^m}q\Par{z}$ with $q\Par{\lambda}\neq0.$\parSol{}
+\;By (4E B.6), $G\Par{\lambda,T}=\Null\Par{T-\lambda I}{^m}.$ By (4E A.4), $d\geqslant m.$\PfEnd\vspace{3pt}\parSol{}
+\Or Let the min of $N=\Par{T-\lambda I}{^m}\Big|{_{G\SmallPar{\,\lambda,\,T\,}}}$ be $z^m.$\parSol{}
+By (4E 5.B.17), the min of $N+\lambda I=T\mmid_{G\SmallPar{\,\lambda,\,T\,}}$ is $s\Par{z}=\Par{z-\lambda}{^m}.$\parSol{}
+Becs the char of $T$ \Sbra{See [9.21] for $\Fbb=\Rbb$} is a multi of min of $T,$ which is a multi of $s.$\PfEnd
+\SepLine
+
 \Anchor{8B4e6}\ProblemBnoor{4E B.6}{
 	\TextA{Supp $T\in\Lm{V}$ and $\lambda$ is an eigval. Explain why}
 	\TextA{the exponent of $z-\lambda$ in the factoriz of the min of $T$}
 	\TextA{is the smallest $m\in\Nbp$ suth $\Par{T-\lambda I}{^m}\Big|{_{\,G\SmallPar{\,\lambda,\,T}\,}}=0.$}
-}Let $p\Par{z}=\Par{z-\lambda}{^l}q\Par{z}$ be the min of $T$ with $q\Par{\lambda}\neq0.$ Let $G=G\Par{\lambda,T},N=T-\lambda I.$\parSol{}
-Asum $N^{l+1}\mmid_G=0$ while $N^l\mmid_G\neq0.$ Then $p\Par{T}\Big|{_G}=0=q\Par{T}N^l\mmid_G\Rightarrow q\Par{T}\Big|{_G}\neq0.$ ??? Ctradic.\vspace{2pt}\parSol{}
-Let $m$ be the smallest suth $N^m\mmid_G=0$ with $N^{m-1}\mmid_G\neq0.$\parSol{}
-Asum the min of $T$ is $p\Par{z}=\Par{z-\lambda}{^{m+k}}q\Par{z},k\in\Nbp.$\parSol{}
-Then let $s\Par{z}=\Par{z-\lambda}{^m}q\Par{z}\Rightarrow s\Par{T}=0$ while $0<\deg s<\deg p,$ ctradic.\PfEnd
+}Let $G=G\Par{\lambda,T},N=\Par{T-\lambda I}\Big|{_G},$ and $N^m=0\neq N^{m-1}\Rightarrow$ the min of $T\mmid_G$ is $s\Par{z}=\Par{z-\lambda}{^m}.$\parSol{}
+Thus the min $p$ of $T$ is a multi of $s.$ Now we show the deg of $\Par{z-\lambda}$ in $p$ is no more than $m.$\parSol{}
+Let $\lambda_1=\lambda$ and $V_{\!\Cbb}=G_\Cbb\oplus U,$ where $G=G\Par{\lambda_1,T},U=G\Par{\lambda_2,T_{\!\Cbb}}\oplus\cdots\oplus G\Par{\lambda_n,T_{\!\Cbb}}.$\parSol{}
+Asum the min $p\Par{z}=\Par{z-\lambda_1}{^{m+k}}\Par{z-\lambda_2}{^{\alpha_2}}\cdots\Par{z-\lambda_n}{^{\alpha_n}},$ where $k\in\Nbp.$\parSol{}
+Let $r\Par{z}=\Par{z-\lambda}{^m}\Par{z-\lambda_2}{^{\alpha_2}}\cdots\Par{z-\lambda_n}{^{\alpha_n}}\Rightarrow r\Par{T}=0.$ Ctradic the min of $p.$\PfEnd\vspace{4pt}\parSol{}
+\Or Let the min of $T$ be $p\Par{z}=\Par{z-\lambda}{^m}q\Par{z},$ with $q\Par{\lambda}\neq0.$\parSol{}
+We show $\Null\Par{T-\lambda I}{^m}\supseteq\Null\Par{T-\lambda I}{^{m+1}}.$\parSol{}
+Supp $v\in\Null\Par{T-\lambda I}{^{m+1}}\Longleftrightarrow \Par{T-\lambda I}{^m}v\in\Null\Par{T-\lambda I}=E\Par{\lambda,T}.$\parSol{}
+Then $0=p\Par{T}v=q\Par{T}\Sbra{\Par{T-\lambda I}{^m}v}=q\Par{\lambda}\Sbra{\Par{T-\lambda I}{^m}v}\Rightarrow v\in\Null\Par{T-\lambda I}{^m}.$\vspace{2pt}\parSol{}
+We show $m$ is the smallest. Let $k$ be suth $\Null\Par{T-\lambda I}{^k}=G\Par{\lambda,T}.$\parSol{}
+Let $s\Par{z}=\Par{z-\lambda}{^k}q\Par{z}.$ We show $s\Par{T}=0$ and done. Consider $0=p\Par{T}v=\Par{T-\lambda I}{^m}q\Par{T}v.$\parSol{}
+If $q\Par{T}v=0\Rightarrow s\Par{T}v=0.$ Othws, $q\Par{T}v\in\Null\Par{T-\lambda I}{^m}=\Null\Par{T-\lambda I}{^k}\Rightarrow s\Par{T}v=0.$\PfEnd
 \SepLine
 
-\Anchor{8B4e7}\ProblemBnoor{4E B.7}{
-	\TextA{Supp $T\in\Lm{V}$ and $\lambda$ is an eigval with multy $d.$ Prove $G\Par{\lambda,T}=\Null\Par{T-\lambda I}{^d}.$}
-}Let $N=T-\lambda I,$ and $\null N\subsetneq\cdots\subsetneq\null N^m=\null N^{m+1}.$ Choose $B_{\null N}.$\parSol{}
-Extend to $B_{\null N^2}\Rightarrow\cdots\Rightarrow B_{\null N^m},$ with each time adding at least one bss vec. Thus $m\leqslant d.$\PfEnd\vspace{2pt}\parSol{}
-\Or By Exe (4E B.6) and (4E A.4), $\dim\Null\Par{T-\lambda I}{^m}=d\geqslant m.$\PfEnd
+\Anchor{8B9}\ProblemN{B.9}{
+	\TextA{Supp $A,C$ are block diag matrices, and $A_k,C_k$ are of the same size $n_k$ \,for $k\in\Bra{1,\dots,m}.$}
+	\TextA{Show $AC$ is block diag and the $k^{\text{th}}$ block on the diag of $AC$ is $A_kC_k.$}
+}Let $A=\Mt{S},C=\Mt{T},AC=\Mt{ST}\in\Fbb^{n,n},$ where $n=n_1+\dots+n_m.$\parSol{}
+Let $B_1=\Par{e_1,\cdots,e_{n_1}},$ and $B_{k}=\Par{e_{n_1\,+\,\cdots\,+\,n_{k-1}+1},\cdots,e_{n_1\,+\,\cdots\,+\,n_k}}$ for $k\in\Bra{2,\dots,m}.$\vspace{2pt}\parSol{}
+Let each $U_k=\spn B_k$ invard $S,T.$ Becs $\Mt{S\mmid_{U_k},B_k}=A_k,\Mt{T\mmid_{U_k},B_k}=C_k.$\vspace{2pt}\parSol{}
+Now $\Mt[\Sbra]{\Par{ST}\Big|{_{U_k}}}=\Mt{S\mmid_{U_k}T\mmid_{U_k}}=A_kC_k.$
 \SepLine
+
+\ProblemB[]{
+	\TextB{Supp $T\in\Lm{V},\lambda_1,\dots,\lambda_m$ are the disti eigvals corres $v_1,\dots,v_m$, and $U$ invard $T.$}
+}
+\Anchor{8BT1}\ProblemN{\BulletPointX B.\TipsN{1}}{
+	\TextA{Supp $v_1+\dots+v_m\in U.$ Prove each $v_k\in U.$}
+}Let each $S_k=\Par{T-\lambda_k I}{^{m_k}},$ where $\Par{T-\lambda_k I}{^{m_k}}v_k\neq0=\Par{T-\lambda_k I}{^{m_k+1}}v_k.$\parSol{}
+Let each $R_k=\Par{T-\lambda_1I}{^n}\cdots\Par{T-\lambda_{k-1}}{^n}\Par{T-\lambda_{k+1}I}{^n}\cdots\Par{T-\lambda_mI}{^n},$ where $n=\dim V.$\parSol{}
+Then each $R_kS_k\Par{v_1+\dots+v_m}=R_kw_k,$ where $w_k=S_kv_k\in E\Par{\lambda_k,T}.$\parSol{}
+Becs $U$ invard $T\Rightarrow$ invard $R_kS_k=p\Par{T}.$ Thus $w_k\in U\Rightarrow v_k\in U.$\PfEnd\vspace{-2pt}
+\SepLine[0pt][\Blind{\BulletPointX} ]
+
+\Anchor{8BT2}\ProblemN{\BulletPointX B.\TipsN{2}}{
+	\TextA{Supp $\Fbb=\Cbb.$ Prove $\exists$ subsp $U_k$ of $G\Par{\lambda_k,T}$ suth $U=U_1\oplus\cdots\oplus U_m.$}
+}Let each $U_k=U\cap G\Par{\lambda_k,T}.$ Becs $\forall u\in U,\exists\,!\,v_k\in G\Par{\lambda_k,T},u=v_1+\dots+v_m.$\parSol{}
+Now by \Sbra{B \TIPSN{1}}, each $v_k\in U_k\Rightarrow u\in U_1\oplus\cdots\oplus U_m.$\PfEnd
+\SepLine
+\pagebreak
 
 \Anchor{Ch8C}
 \Anchor{8B4e20}\Anchor{8C20}\ProblemNnoor{C.20}{4E B.20}{
-	\TextA{Supp $\Fbb=\Cbb,$ and each $V_k$ non0 invardspd $T\in\Lm{V}$ of $V=V_1\oplus\cdots\oplus V_m.$}
+	\TextA{Supp $\Fbb=\Cbb,$ and each $V_k$ non0 invarspd $T\in\Lm{V}$ of $V=V_1\oplus\cdots\oplus V_m.$}
 	\TextA{Let $p_k$ be the char of $T\mmid_{V_k}.$ Prove the char of $T$ is $p_1\cdots p_m.$}
 }
 \SepLine
