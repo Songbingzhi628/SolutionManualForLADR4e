@@ -4325,11 +4325,18 @@ Thus each $p_k\Par{z}=\Par{z-\lambda_1}{^{d_{1,k}}}\cdots\Par{z-\lambda_n}{^{d_{
 	\TextA{Supp $\Fbb=\Cbb,$ and $T\in\Lm{V},$ with the min $p.$}
 	\TextA{Prove [P] $\nexists$ non0 invarsps $U,W$ suth $U\oplus W=V\Longleftrightarrow p\Par{z}=\Par{z-\lambda}{^{\dim V}}.$ [Q]}
 }$Q\Rightarrow P:$ \;Let $N=T-\lambda I\Rightarrow$ the min of $N$ is $z^{\dim V}.$\parSol{}
-\Blind{$Q\Rightarrow P:$ \;}Then by Exe (D.3), the line directly above the diag of any Jordan $\Mt{N}$ is all $1.$\vspace{3pt}\parSol{}
-${}{^\neg}P\Rightarrow{}{^\neg}Q:$ \;Becs $\exists$ Jordan $\Mt{T\mmid_U},\Mt{T\mmid_W}.$ If $T$ has two or more eigvals, then done.\parSol{}
-\Blind{${}{^\neg}P\Rightarrow{}{^\neg}Q:$ \;}Let $\max\!\Bra{\dim U,\dim W}=m<\dim V.$ Then $\Par{T-\lambda I}{^m}=0.$\vspace{3pt}\parSol{}
-${}{^\neg}Q\Rightarrow{}{^\neg}P:$ \;If $p\Par{z}=\Par{z-\lambda}{^m}$ and $m<\dim V.$ Then $\exists$ Jordan block $A,C$ of $\Mt{T}.$\parSol{}
-\Blind{${}{^\neg}Q\Rightarrow{}{^\neg}P:$ \;}Othws, $p\Par{z}=\Par{z-\lambda_1}{^{m_1}}\cdots\Par{z-\lambda_p}{^{m_p}},$ where $\lambda_1=\lambda$ and $p\geqslant 2.$\PfEnd
+\Blind{$Q\Rightarrow P:$ \;}Then by Exe (D.3), the line directly above the diag of any Jordan $\Mt{N}$ is all $1.$\parSol{}
+\Blind{$Q\Rightarrow P:$ \;}Thus the only Jordan block of $\Mt{N}$ is $\Mt{N}$ itself.\vspace{3pt}\parSol{}
+${}{^\neg}P\Rightarrow{}{^\neg}Q:$ \;If $\exists$ two or more eigvals of $T\mmid_U$ or $T\mmid_W,$ then $p$ has two or more disti factors, done.\parSol{}
+\Blind{${}{^\neg}P\Rightarrow{}{^\neg}Q:$ \;}Now supp $\exists$ only one eigval $\lambda$ for $T\mmid_U$ or $T\mmid_W,$ so for both and for $T,$ by \Sbra{B \TIPSN{3}}.\parSol{}
+\Blind{${}{^\neg}P\Rightarrow{}{^\neg}Q:$ \;}Let $p\Par{z}=\Par{z-\lambda}{^m}.$ Let $M=\max\!\Bra{\dim U,\dim W}<\dim V.$ Let $S=\Par{T-\lambda I}{^M}.$\parSol{}
+\Blind{${}{^\neg}P\Rightarrow{}{^\neg}Q:$ \;}Then by (L1), $\null S\mmid_U\oplus\null S\mmid_W=\null S,$ 又 $\null S\mmid_U=U,\null S\mmid_W=W\Rightarrow m\leqslant M.$\vspace{2pt}\parSol{}
+\Blind{${}{^\neg}P\Rightarrow{}{^\neg}Q:$ \;}\Or Supp $\exists$ only one eigval for $T,$ and $M=\max\!\Bra{\dim U,\dim W}<\dim V.$\parSol{}
+\Blind{${}{^\neg}P\Rightarrow{}{^\neg}Q:$ \;}Then $\exists$ Jordan $\Mt{T\mmid_U},\Mt{T\mmid_W}\Rightarrow$ Jordan $\Mt{T}.$\parSol{}
+\Blind{${}{^\neg}P\Rightarrow{}{^\neg}Q:$ \;}By Exe (D.3), $z^{M+1}$ is a multi of the min of $N=T-\lambda I.$\vspace{4pt}\parSol{}
+${}{^\neg}Q\Rightarrow{}{^\neg}P:$ \;Supp $T$ has only one eigval. Let
+$p\Par{z}=\Par{z-\lambda}{^m}$ with $m<\dim V.$\parSol{}
+\Blind{${}{^\neg}Q\Rightarrow{}{^\neg}P:$ \;}Becs $\exists$ Jordan $B_V=\Par{\underbrace{v_{1,1},\cdots,v_{m_1,1}}_{\text{bss for } U},\underbrace{v_{1,2},\cdots,v_{m_2,2},\cdots,v_{1,k},\cdots,v_{m_k,k}}_{\text{bss for }W}}$ for $T.$\PfEnd\vspace{4pt}
 \SepLine
 
 \Anchor{8C4e12}\ProblemBnoor{4E C.12}{
