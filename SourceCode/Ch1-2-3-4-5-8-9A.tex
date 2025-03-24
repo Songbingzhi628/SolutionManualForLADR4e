@@ -3106,9 +3106,9 @@ By asum, each $v_j'\in U.$ Thus $v_1,\dots,v_{k-1}\in U.$ So that $v_k=v-v_1-\do
 
 \Anchor{5AT2}\ProblemBX{\TipsN{2}}{
 	\TextA{Supp $\dim V=m\Rightarrow B_V=\Par{v_1,\dots,v_m}.$ Let each $E_k=\Span{v_k}.$}
-	\TextA{Prove $U=\BigPar[0pt]{U\cap E_1}\oplus\cdots\oplus\BigPar[0pt]{U\cap E_m}.$\vspace{-1pt}}
-}Becs $V=E_1\oplus\cdots\oplus E_m\Rightarrow\forall v\in U,v=c_1v_1+\dots+c_mv_m,$ uniqly.\parSol{}
-$c_j\neq 0\Rightarrow c_jv_j$ eigvec corres $\lambda_j.$ Or \,$c_k=0\Rightarrow c_kv_k=0\in U.$\parSol{}
+	\TextA{Prove $U=\BigPar[0pt]{U\cap E_1}\oplus\cdots\oplus\BigPar[0pt]{U\cap E_m}.$\vspace{0pt}}
+}Becs $V=E_1\oplus\cdots\oplus E_m\Rightarrow\forall v\in U,v=c_1v_1+\dots+c_mv_m,$ uniqly.\vspace{-1pt}\parSol{}
+$c_j\neq 0\Rightarrow c_jv_j$ eigvec corres $\lambda_j.$ Or \,$c_k=0\Rightarrow c_kv_k=0\in U.$\vspace{1pt}\parSol{}
 By \TIPSN{1}, each $c_jv_j\in U.$ Thus $v\in\Par{U\cap E_1}\oplus\dots\oplus\Par{U\cap E_m}\supseteq U.$\PfEnd\vspace{2pt}
 \ACoro Becs each $\dim E_j=1\Rightarrow\Par{U\cap E_j}=E_j$ or $\zeroSubs.$ Let $E_{k_1},\dots,E_{k_M}$ be all suth each $E_{k_j}=U\cap E_{k_j}.$\par
 \Anchor{5AT3}\BulletPointX\TipsN{3}\,\,\,{\tgsl Supp $U$ is a non0 invarsp of $V$ under $T.$ Let $\dim V=m.$ Then $U=\Span{v_{k_1},\dots,v_{k_M}}.$}
@@ -3117,7 +3117,7 @@ By \TIPSN{1}, each $c_jv_j\in U.$ Thus $v\in\Par{U\cap E_1}\oplus\dots\oplus\Par
 \Anchor{5A2}\Anchor{5A3}\ProblemN{2, 3}{
 	\TextB{Supp $S,T\in\Lm{V}$ suth $ST=TS.$ Prove $\null T,\range T$ invard $S.$}
 }(a) $Tv=0\Rightarrow TSv=STv=0.$ \;\; (b) $Tu=v\Rightarrow Sv=STu=TSu\in\range T.$\PfEnd
-\ACoro Simlr in [5.20], $p\Par{S}\;\!q\Par{T}=q\Par{T}\;\!p\Par{S}.$ Then $q\Par{T}$ invard $p\Par{S}.$\vspace{-2pt}
+\ACoro Simlr in [5.20], $ST=TS\Rightarrow p\Par{S}\;\!q\Par{T}=q\Par{T}\;\!p\Par{S}.$ And $\nullp q\Par{T},\rangep q\Par{T}$ invard $p\Par{S}.$\vspace{-2pt}
 \SepLine
 
 \ProblemN{\Anchor{5A6}{6}}{
@@ -4282,7 +4282,7 @@ Now by \Sbra{B \TIPSN{1}}, each $v_k\in U_k\Rightarrow u\in U_1\oplus\cdots\oplu
 \SepLine[0pt][\Blind{\BulletPointX} ]
 
 \Anchor{8BT3}\ProblemN{\BulletPointX B.\TipsN{3}}{
-	\TextA{Supp $\Fbb=\Cbb,V=U\oplus W,$ and $U,W$ non0 invard $T.$}
+	\TextA{Supp $V=U\oplus W,$ and $U,W$ non0 invard $T.$}
 	\TextA{Prove $G\Par{\lambda,T}=G\Par{\lambda,T\mmid_U}\oplus G\Par{\lambda,T\mmid_W}.$}
 }Let $S=\Par{T-\lambda I}{^{\dim V}}\Rightarrow\null S=\null S\mmid_U\oplus\null S\mmid_W\Rightarrow G\Par{\lambda, T}=G\Par{\lambda,T\mmid_U}\oplus G\Par{\lambda,T\mmid_W}.$\PfEnd
 \SepLine
@@ -4300,7 +4300,7 @@ Now $\Mt[\Sbra]{\Par{ST}\Big|{_{U_k}}}=\Mt{S\mmid_{U_k}T\mmid_{U_k}}=A_kC_k.$
 \Anchor{8B4e20}\Anchor{8C20}\ProblemNnoor{C.20}{4E B.20}{
 	\TextA{Supp $\Fbb=\Cbb,$ and each $V_{\!k}$ non0 invarspd $T\in\Lm{V}$ of $V=V_{\!1}\oplus\cdots\oplus V_{\!m}.$}
 	\TextA{Let $p_k$ be the char of $T\mmid_{V_{\!k}}.$ Prove the char of $T$ is $p_1\cdots p_m.$}
-}Let $V=G\Par{\lambda_1,T}\oplus\cdots\oplus G\Par{\lambda_n,T}\Rightarrow V_{\!k}=G\Par{\lambda_1,T\mmid_{V_{\!k}}}\oplus\cdots\oplus G\Par{\lambda_m,T\mmid_{V_{\!k}}}.$\parSol{}
+}By \Sbra{B \TIPSN{2}}, $V=G\Par{\lambda_1,T}\oplus\cdots\oplus G\Par{\lambda_n,T}\Rightarrow V_{\!k}=G\Par{\lambda_1,T\mmid_{V_{\!k}}}\oplus\cdots\oplus G\Par{\lambda_m,T\mmid_{V_{\!k}}}.$\parSol{}
 By \Sbra{B \TIPSN{3}}, each $G\Par{\lambda_j,T}=G\Par{\lambda_j,T\mmid_{V_{\!1}}}\oplus\cdots\oplus G\Par{\lambda_j,T\mmid_{V_{\!m}}}.$\parSol{}
 Let $d_{j,k}$ be the multy of $\lambda_j$ of $T\mmid_{V_{\!k}}.$ Then $d_{j,1}+\dots+d_{j,n}=d_j,$ the multy of $\lambda_j$ of $T.$\parSol{}
 Thus each $p_k\Par{z}=\Par{z-\lambda_1}{^{d_{1,k}}}\cdots\Par{z-\lambda_n}{^{d_{n,k}}}.$ While the char of $T$ is $\Par{z-\lambda_1}{^{d_1}}\cdots\Par{z-\lambda_n}{^{d_n}}.$\PfEnd\vspace{2pt}\parSol{}
@@ -4321,19 +4321,15 @@ Thus each $p_k\Par{z}=\Par{z-\lambda_1}{^{d_{1,k}}}\cdots\Par{z-\lambda_n}{^{d_{
 %}Get such $m.$ Becs $N^{m+1}=0.$ 又 $N^{m}\neq0.$\PfEnd
 %\SepLine
 
-\Anchor{8D6}\ProblemN{D.6}{
-	\TextA{Supp $N\in\Lm{V}$ is nilp, and $v_1,\dots,v_n$ and $m_1,\dots,m_n$ are as in [8.55].}
-	\TextA{Prove $N^{m_1}v_1,\dots,N^{m_n}v_n$ is a bss of $\null N.$}
-}
-\SepLine
-
 \Anchor{8D8}\ProblemN{D.8}{
 	\TextA{Supp $\Fbb=\Cbb,$ and $T\in\Lm{V},$ with the min $p.$}
 	\TextA{Prove [P] $\nexists$ non0 invarsps $U,W$ suth $U\oplus W=V\Longleftrightarrow p\Par{z}=\Par{z-\lambda}{^{\dim V}}.$ [Q]}
-}${}^{\neg}Q\Rightarrow{}{^\neg}P:$ \;Let $N=T-\lambda I\Rightarrow$ the min of $N$ is $z^{\dim V}.$\parSol{}
-\Blind{${}^{\neg}Q\Rightarrow{}{^\neg}P:$ \;}Then by Exe (D.3), the line directly above the diag of any Jordan $\Mt{N}$ is all $1.$\parSol{}
-$Q\Rightarrow P:$ \;Asum $V=G\Par{\lambda,T}=U\oplus W,$ and $U,W$ non0 invard $T\Rightarrow\exists$ Jordan $\Mt{T\mmid_U},\Mt{T\mmid_W}.$\parSol{}
-\Blind{$Q\Rightarrow P:$ \;}Let $\max\!\Bra{\dim U,\dim W}=m<\dim V.$ Then $\Par{T-\lambda}{^m}=0.$\PfEnd
+}$Q\Rightarrow P:$ \;Let $N=T-\lambda I\Rightarrow$ the min of $N$ is $z^{\dim V}.$\parSol{}
+\Blind{$Q\Rightarrow P:$ \;}Then by Exe (D.3), the line directly above the diag of any Jordan $\Mt{N}$ is all $1.$\vspace{3pt}\parSol{}
+${}{^\neg}P\Rightarrow{}{^\neg}Q:$ \;Becs $\exists$ Jordan $\Mt{T\mmid_U},\Mt{T\mmid_W}.$ If $T$ has two or more eigvals, then done.\parSol{}
+\Blind{${}{^\neg}P\Rightarrow{}{^\neg}Q:$ \;}Let $\max\!\Bra{\dim U,\dim W}=m<\dim V.$ Then $\Par{T-\lambda I}{^m}=0.$\vspace{3pt}\parSol{}
+${}{^\neg}Q\Rightarrow{}{^\neg}P:$ \;If $p\Par{z}=\Par{z-\lambda}{^m}$ and $m<\dim V.$ Then $\exists$ Jordan block $A,C$ of $\Mt{T}.$\parSol{}
+\Blind{${}{^\neg}Q\Rightarrow{}{^\neg}P:$ \;}Othws, $p\Par{z}=\Par{z-\lambda_1}{^{m_1}}\cdots\Par{z-\lambda_p}{^{m_p}},$ where $\lambda_1=\lambda$ and $p\geqslant 2.$\PfEnd
 \SepLine
 
 \Anchor{8C4e12}\ProblemBnoor{4E C.12}{
