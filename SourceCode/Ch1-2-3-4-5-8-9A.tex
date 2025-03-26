@@ -3478,9 +3478,8 @@ Note that $\Par{T\XSlash U}\Par{1+U}=e^x+U=0.$ While $0$ is not an eigval of $T$
 \Anchor{5A4e39}\ProblemBnoor{4E 39}{
 	\TextB{Supp $T\in\Lm{V},$ $V$ is finide. Prove $\exists$ eigval of $T$ $\Longleftrightarrow\exists$ invarsp of dim $\dim V-1$.}
 }(a) Supp $\lambda$ is eigval with $v.$ Becs $\dim\Null\Par{T-\lambda I}\geqslant 1\Longleftrightarrow\dim\Range\Par{T-\lambda I}\leqslant\dim V-1=N.$\parSol{\Ha}
-Let $B_{\Range\SmallPar{T\,-\,\lambda I}}=\Par{w_1,\dots,w_m},\,B_V=\Par{w_1,\dots,w_m,u_1,\dots,u_n},\;B_U=\Par{w_1,\dots,w_m,u_1,\dots,u_{N\,-\,m}}.$\vspace{1pt}\parSol{\Ha}
-Becs $U$ invard $\Par{T-\lambda I}.$ Now $u\in U\Rightarrow\Par{T-\lambda I}{u}\in U\Rightarrow Tu\in U.$\parSol{\Ha}
-\ANote $U$ might not be in $\Scom{V}{\Span{v}}.$\vspace{3pt}\parSol{}
+Let $B_{\Range\SmallPar{T\,-\,\lambda I}}=\Par{w_1,\dots,w_m},\,B_{\Null\SmallPar{T\,-\,\lambda I}}=\Par{u_1,\dots,u_n},\;B_U=\Par{w_1,\dots,w_m,u_1,\dots,u_{N\,-\,m}}.$\vspace{1pt}\parSol{\Ha}
+\ANote $U\not\in\Scom{V}{\Span{v}}$ unless $u_n=v.$\vspace{3pt}\parSol{}
 (b) Supp $U$ is invarspd $T$ with $\dim U=\dim V-1\Rightarrow\dim V\XSlash U=1.$ By (3.A.7), Exe (35).\PfEnd
 \SepLine
 
@@ -3493,7 +3492,7 @@ Becs $U$ invard $\Par{T-\lambda I}.$ Now $u\in U\Rightarrow\Par{T-\lambda I}{u}\
 }(a) {\FontSmall Supp $\lambda\Par{x,y}=\Par{y,x+y}$ with $x$ or $y$ non0. Note that $x=0\Longleftrightarrow y=0,$ and $0$ is not eigval.}\vspace{1pt}\parSol{\Ha}
 {\FontSmall Then $\lambda_1={}${\large$\frac{\:1\,+\,\sqrt{5}\:}{2}$}, $v_1=\Par{1,\frac{\:1\,+\,\sqrt{5}\:}{2}};$
 \,and $\lambda_2={}${\large$\frac{\:1\,-\,\sqrt{5}\:}{2}$}, $v_2=\Par{1,\frac{\:1\,-\,\sqrt{5}\:}{2}}.$ Becs $\dim\Rbb^2=2.$}\vspace{2pt}\parSol{}
-(b) {\FontSmall $T\Par{0,1}=\Par{F_1,F_2}.$ Asum $T^k\Par{0,1}=\Par{F_k,F_{k+1}}.$ Then $T^{k+1}\Par{0,1}=\Par{F_{k+1},F_{k}+F_{k+1}}.$}\vspace{-6pt}\parSol{\Hb}
+(b) {\FontSmall $T\Par{0,1}=\Par{F_1,F_2}.$ Asum $T^k\Par{0,1}=\Par{F_k,F_{k+1}}.$ Then $T^{k+1}\Par{0,1}=\Par{F_{k+1},\,F_{k}+F_{k+1}}.$}\vspace{-6pt}\parSol{\Hb}
 {\FontSmall $T^n\Par{0,1}=T^n\XSbra{${\large$\frac{1}{\sqrt{5}\;}$}$\BigPar{v_1-v_2}}={}${\large$\frac{1}{\sqrt{5}\;}$}$\def\envFont{\Large}\XSbra{\bigg(\!${\large$\frac{\:1\,+\,\sqrt{5}\:}{2}$}$\!\bigg)\begin{array}{l}\hspace{-7pt}{}_n\\\\\vspace{-8pt}\end{array}\hspace{-8pt}v_1-\bigg(\!${\large$\frac{\:1\,-\,\sqrt{5}\:}{2}$}$\!\bigg)\begin{array}{l}\hspace{-7pt}{}_n\\\\\vspace{-8pt}\end{array}\hspace{-8pt}v_2\def\envFont{\Large}}.$ Take the first slot.}\PfEnd[-28pt]\vspace{4pt}
 \SepLine
 \ChEnd
@@ -4213,7 +4212,7 @@ $\exists$ commu $D_2,N_2\in\Lm{U},T\mmid_U=D_2+N_2,\,D_2$ diag, $N_2$ nilp; wrto
 Let $B_V=B_{G_1}\cup B_U.$ Define $P_1,P_2\in\Lm{V}$ by $P_1\Par{v_1+u}=v_1,P_2\Par{v_1+u}=u.$\parSol{}
 Let $D=D_1P_1+D_2P_2,N=N_1P_1+N_2P_2.$ \:Becs $P_jD_k=\delta_{j,k}D_j,P_jN_k=\delta_{j,k}N_j.$\parSol{}
 Thus $D+N=\Par{D_1+N_1}P_1+\Par{D_2+N_2}P_2=T,$ and $DN=D_1N_1P_1+D_2N_2P_2=NP.$\PfEnd\vspace{3pt}\parSol{}
-\Or Let $V=G_1\oplus\cdots G_m\Rightarrow\forall v\in V,\exists\,!\,v_k\in G_k,v=v_1+\dots+v_m.$\parSol{}
+\Or Let $V=G_1\oplus\cdots\oplus G_m\Rightarrow\forall v\in V,\exists\,!\,v_k\in G_k,v=v_1+\dots+v_m.$\parSol{}
 Define $D\in\Lm{V}:v\mapsto\Par{\lambda_1v_1+\dots+\lambda_mv_m}\Rightarrow D\mmid_{G_k}=\lambda_kI.$\parSol{}
 Let $N=T-D\Rightarrow N\mmid_{G_k}=\Par{T-D}\Big|{_{G_k}}=\Par{T-\lambda_kI}\Big|{_{G_k}}$ is nilp.\parSol{}
 Then $N^Mv=N^Mv_1+\dots+N^Mv_m=0,$ where $M=\max\!\Bra{d_1,\dots,d_m}.$ Now $N$ is nilp.\parSol{}
@@ -4300,7 +4299,8 @@ Let each $W_k\oplus G\Par{\lambda_k,T\mmid_U}=G\Par{\lambda_k,T}\Rightarrow W_k=
 Now $W=W_1\oplus\cdots\oplus W_m$ is invard $T$ and $V=U\oplus W.$\PfEnd\vspace{2pt}
 \AComm $G\Par{\lambda_k,T\mmid_W}=G\Par{\lambda_k,T}\cap\Par{W_1\oplus\cdots\oplus W_m}=G\Par{\lambda_k,T\mmid_{W_k}}.$\par\vspace{2pt}
 \ANote This Exe is not true if $\Fbb=\Rbb.$ We give an exa of $T\in\Lm{V}$ and invarsp $U$\parNot
-suth $\nexists$ invarsp $W$ of dimension $\dim V-\dim U.$ Note that no exas exis if $\dim V\leqslant 5.$
+suth $\nexists$ invarsp $W$ of dimension $\dim V-\dim U.$ Note that no exas exis if $\dim V<5.$\parNot
+\colorbox{yellow}{TODO}\parNot
 \SepLine
 
 \Anchor{Ch8C}
@@ -4329,6 +4329,13 @@ Thus each $p_k\Par{z}=\Par{z-\lambda_1}{^{d_{1,k}}}\cdots\Par{z-\lambda_n}{^{d_{
 %}Get such $m.$ Becs $N^{m+1}=0.$ 又 $N^{m}\neq0.$\PfEnd
 %\SepLine
 
+\Anchor{8C4e12}\ProblemBnoor{4E C.12}{
+	\TextA{Supp $T\in\Lm{V}$ diag. Show $\Mt{T}$ diag wrto any Jordan $B_V.$}
+}By Exe (4E C.11), each $v_k$ of a Jordan $B_V$ is a gigvec; so is an eigvec, by Exe (4E A.15).\PfEnd\vspace{2pt}\parSol{}
+\Or Let $A$ be a Jordan block diag matrix of $T.$ By Exe (D.3) and [4E 5.62].\PfEnd
+\SepLine
+\pagebreak
+
 \Anchor{8D8}\ProblemN{D.8}{
 	\TextA{Supp $\Fbb=\Cbb,$ and $T\in\Lm{V},$ with the min $p.$}
 	\TextA{Prove [P] $\nexists$ non0 invarsps $U,W$ suth $U\oplus W=V\Longleftrightarrow p\Par{z}=\Par{z-\lambda}{^{\dim V}}.$ [Q]}
@@ -4346,12 +4353,6 @@ ${}{^\neg}P\Rightarrow{}{^\neg}Q:$ \;If $\exists$ two or more eigvals of $T\mmid
 ${}{^\neg}Q\Rightarrow{}{^\neg}P:$ \;Supp $T$ has only one eigval. Let
 $p\Par{z}=\Par{z-\lambda}{^m}$ with $m<\dim V.$\parSol{}
 \Blind{${}{^\neg}Q\Rightarrow{}{^\neg}P:$ \;}Becs $\exists$ Jordan $B_V=\Par{\underbrace{v_{1,1},\cdots,v_{m_1,1}}_{\text{bss for } U},\underbrace{v_{1,2},\cdots,v_{m_2,2},\cdots,v_{1,k},\cdots,v_{m_k,k}}_{\text{bss for }W}}$ for $T.$\PfEnd\vspace{4pt}
-\SepLine
-
-\Anchor{8C4e12}\ProblemBnoor{4E C.12}{
-	\TextA{Supp $T\in\Lm{V}$ diag. Show $\Mt{T}$ diag wrto any Jordan $B_V.$}
-}By Exe (4E C.11), each $v_k$ of a Jordan $B_V$ is a gigvec; so is an eigvec, by Exe (4E A.15).\PfEnd\vspace{2pt}\parSol{}
-\Or Let $A$ be a Jordan block diag matrix of $T.$ By Exe (D.3) and [4E 5.62].\PfEnd
 \SepLine
 
 \ChEnd
