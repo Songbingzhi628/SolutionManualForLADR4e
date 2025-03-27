@@ -3065,12 +3065,14 @@ Hence $\Par{pq}{^{\SmallPar{k}}}=\mathC_{k}^0{p{^{\SmallPar{0}}}q{^{\SmallPar{k}
 Thus $\Par{rs}\Par{z}=1$ for infily many $z,$ so for all $z.$ Now $\deg rs=1=\deg r+\deg s.$\PfEnd
 \SepLine
 \ChEnd
-\pagebreak
+
+\vfill\textsl{\normalsize 凭借我的经验，我认为，好的自学教材，除了提供足够的一级知识外，还能通过各种方式，将二级、三级知识顺理成章地经过学科思维的浓缩喻于习题或课文中。在LADR的熏陶下，我渐渐认为，自学教材带来的长期收益更重要——所谓素养一类的隐形东西，无论堆砌多少知识记忆都难以学到；外在的选拔，表面上看都是知识竞赛，但真正有含金量的选拔，往往十二分地注重隐形能力；实际的工作表现也是如此；客观上看这确实是在当今公共信息过剩的时代下人与人拉开差距的核心原因之一，也是我相信最能仅通过自身努力耕耘获得长期稳定回报的地方。现在看看速学速成应付选拔竞争的选择有多愚蠢吧：考不上放弃吧，因为几乎没有习得那些隐性能力，就确实是除了知识和解题技巧之外啥也没得到，这些知识中实用的那些内容怎么着都能学到，不具有不可替代性，实际工作更需要隐形的素养；再考再战吧，就得辛苦刷题，总归不如在学的过程中把\!“和习题的挣扎”\!当作练习对学科思维的启发最好。考上了吧又要和更\!“拔尖创新人才”\!竞争隐形的能力，一样难以优胜，只不过这个情况下可以做一个更\!“优越”\!的平庸之人罢了，除了短期速成而来的外在\!“纪念品”\!之外再也没有什么学习成果可长期变现——和质量至上、\!不怕耽误时间进度的学习者相比又能有什么优越之处呢？}\par\vspace{4pt}
 
 {\small
 下面第5章中，3e和4e差距过大。我认为是因为4e将原来3e第8章的极小多项式和第2章线性无关最小性和第4章的多项式的原理结合，以极小多项式为工具重写了第5章几个核心定理，并引入一些结论承接读者一些很自然的想法，让第5章的定理和习题更加富有动机和系统性。\par\vspace{2pt}
 这份笔记主要面向3e纸质书的读者，所以题号和定理索引都采用3e（除少数4e新增章节）。因为3e读者可能会对第5章这样的4e变化感到茫然无措，所以为了内容的紧密性，我决定将3e第8章提前到第5章后，对应到4e只有第8章前三节。3e第8章个别涉及第6、\!\!7章的习题，会拆散塞入对应章节的笔记中。\par\vspace{8pt}
 }
+\pagebreak
 \ChDecl{Ch5A}{5.A}{\qquad{\small\textbf{注意\,:}\;这里将5.B节多项式作用于算子部分与5.C节的本征空间的定义前置.}}
 \vspace{4pt}
 
@@ -3078,26 +3080,7 @@ Thus $\Par{rs}\Par{z}=1$ for infily many $z,$ so for all $z.$ Now $\deg rs=1=\de
 \BulletPointX\AComm $\lambda$ not an eigval of $T\Longleftrightarrow{T-\lambda I}$ inje $\Longleftrightarrow$ inv, if finide.
 \SepLine
 
-\ProblemB[]{
-	\TextB{Supp $T\in\Lm{V},\lambda_1,\dots,\lambda_m$ are the disti eigvals corres $v_1,\dots,v_m,$ and $U$ invarspd $T.$}
-}
 \Anchor{5AT1}\ProblemBX{\TipsN{1}}{
-	\TextA{Supp $v_1+\dots+v_m\in U.$ Prove each $v_k\in U.$\vspace{-2pt}}
-}Consider the stmt $P\Par{k}:$ if $v_1+\dots+v_k\in U,$ then each $v_j\in U.$\parSol{}
-(i) $v_1\in U.$ $P\Par{1}$ holds. (ii) For $2\leqslant k\leqslant m.$ Asum $P\Par{k-1}$ holds. Supp $v=v_1+\dots+v_k\in U.$\parSol{}
-Then $Tv=\lambda_1v_1+\dots+\lambda_k v_k\in U\Longrightarrow Tv-\lambda_k v=\Par{\lambda_1-\lambda_k}v_1+\dots+\Par{\lambda_{k-1}-\lambda_k}v_{k-1}\in U.$\parSol{}
-For each $j\in\Bra{1,\dots,k-1},\lambda_j-\lambda_{k}\neq 0\Rightarrow\Par{\lambda_j-\lambda_k}v_j=v_j'$ is an eigvec of $T$ corres $\lambda_j.$\parSol{}
-By asum, each $v_j'\in U.$ Thus $v_1,\dots,v_{k-1}\in U.$ So that $v_k=v-v_1-\dots-v_{k-1}\in U.$\PfEnd
-\SepLine[0pt][\Blind{\BulletPointX} ]
-
-\Anchor{5AT2}\Anchor{5C4e16}\ProblemBX{\TipsN{2}}{
-	\TextA{Supp $V=E\Par{\lambda_1,T}\oplus\cdots\oplus E\Par{\lambda_m,T}.$ Prove $U=E\Par{\lambda_1,T\mmid_U}\oplus\cdots\oplus E\Par{\lambda_m,T\mmid_U}.$}
-}Becs $\forall u\in U,\exists\,!\,v_j\in E\Par{\lambda_j,T},v=v_1+\dots+v_m.$ By \TIPSN{1}, each $v_j\in U.$\PfEnd%\vspace{2pt}\parSol{}
-%\Or \Sbra[3pt]{{\tgsl Req Finide}} \;Using induc on $\dim U=N.$ (i) $N=1.$ Immed. (ii) $N>1.$ Asum it holds for smaller $U.$\parSol{}
-%Let $U=E\Par{\lambda_j,T}$
-\SepLine
-
-\Anchor{5AT3}\ProblemBX{\TipsN{3}}{
 	\TextA{Supp $V=U\oplus W$ and $U,W$ invard $T\in\Lm{V}.$ Prove $\null T\mmid_U\oplus\null T\mmid_W=\null T.$}
 }$\forall v=u+w\in\null T, Tv=Tu+Tw=0\Rightarrow Tu,Tw=0\Rightarrow v\in\null T\mmid_U\oplus\null T\mmid_W.$\PfEnd
 \ACoro $E\Par{\lambda,T}=E\Par{\lambda,T\mmid_U}\oplus E\Par{\lambda,T\mmid_W}.$ Replace $T$ with $T-\lambda I,$ immed.
@@ -3113,6 +3096,35 @@ By asum, each $v_j'\in U.$ Thus $v_1,\dots,v_{k-1}\in U.$ So that $v_k=v-v_1-\do
 	\TextA{Supp $U$ is invarsp of non0 $V$ under any $T\in\Lm{V}.$ Show $U=V$ or $\zeroSubs$.}
 }We show the ctrapos: {\tgsl Supp $U\neq\zeroSubs$ and $U\neq V.$ Prove $\exists\,T\in\Lm{V},\,U$ is not invard $T$.}\parSol{}
 Let $W\oplus U=V.$ Define $T\in\Lm{V}$ by $T\Par{u+w}=w.$\PfEnd
+\SepLine
+
+\ProblemN{\Anchor{5A10}{10}}{
+	\TextA{Define $T\in\Lm{\Fbb^n}$ by $T\Par{x_1,x_2,x_3,\dots,x_n}=\BigPar{x_1,2 x_2,3 x_3,\dots,n x_n}.$}
+	\PrePa\TextA{Find all eigvals and eigvecs;\;\; {\tgnr\large(b)} Find all invarsps of $V$ under $T.$}
+}Let $\Par{e_1,\dots,e_n}$ be the std bss of $\Fbb^n.$ The eigvals are $\Bra{1,\dots,n}$ of len $\dim\Fbb^n.$\parSol{}
+Let each $E_k=\Span{e_k}.$ The set of all eigvecs is $\Par{E_1\cup\cdots\cup E_n}\nonzero[\Big].$\parSol{}
+Supp $U$ is invarsp. Then $u=\Par{x_1,x_2,\dots,x_n}\in U\Rightarrow Tu=\Par{x_1,2x_2,\dots,x_n}\in U.$\parSol{}
+And $Tu-u=\BigPar{0,x_2,2x_3,\dots,\Par{n-1}x_n}\in U\Rightarrow\cdots\Rightarrow\Par{0,\dots,0,x_n}\Rightarrow$ each $x_ke_k\in U.$\parSol{}
+Get a $B_U$ and pick all non0 $x_k.$ Forming $\Span{e_{k_1},\dots,e_{k_m}}=U.$\PfEnd
+\AComm The result (b) holds generally where $\exists\,B_V$ consists of eigvecs of $T.$
+\SepLine
+
+\ProblemB[]{
+	\TextB{Supp $T\in\Lm{V},\lambda_1,\dots,\lambda_m$ are the disti eigvals corres $v_1,\dots,v_m,$ and $U$ invarspd $T.$}
+}
+\Anchor{5AT2}\ProblemBX{\TipsN{2}}{
+	\TextA{Supp $v_1+\dots+v_m\in U.$ Prove each $v_k\in U.$\vspace{-2pt}}
+}Consider the stmt $P\Par{k}:$ if $v_1+\dots+v_k\in U,$ then each $v_j\in U.$\parSol{}
+(i) $v_1\in U.$ $P\Par{1}$ holds. (ii) For $2\leqslant k\leqslant m.$ Asum $P\Par{k-1}$ holds. Supp $v=v_1+\dots+v_k\in U.$\parSol{}
+Then $Tv=\lambda_1v_1+\dots+\lambda_k v_k\in U\Longrightarrow Tv-\lambda_k v=\Par{\lambda_1-\lambda_k}v_1+\dots+\Par{\lambda_{k-1}-\lambda_k}v_{k-1}\in U.$\parSol{}
+For each $j\in\Bra{1,\dots,k-1},\lambda_j-\lambda_{k}\neq 0\Rightarrow\Par{\lambda_j-\lambda_k}v_j=v_j'$ is an eigvec of $T$ corres $\lambda_j.$\parSol{}
+By asum, each $v_j'\in U.$ Thus $v_1,\dots,v_{k-1}\in U.$ So that $v_k=v-v_1-\dots-v_{k-1}\in U.$\PfEnd
+\SepLine[0pt][\Blind{\BulletPointX} ]
+
+\Anchor{5AT3}\Anchor{5C4e16}\ProblemBX{\TipsN{3}}{
+	\TextA{Supp $V=E\Par{\lambda_1,T}\oplus\cdots\oplus E\Par{\lambda_m,T}.$ Prove $U=E\Par{\lambda_1,T\mmid_U}\oplus\cdots\oplus E\Par{\lambda_m,T\mmid_U}.$}
+}Becs $\forall u\in U,\exists\,!\,v_j\in E\Par{\lambda_j,T},v=v_1+\dots+v_m.$ By \TIPSN{2}, each $v_j\in U.$\PfEnd%%\vspace{2pt}\parSol{}
+%----------\Or \Sbra[3pt]{{\tgsl Req Finide}} \;Using induc on $\dim U=N.$ (i) $N=1.$ Immed. (ii) $N>1.$ Asum it holds for smaller $U.$\parSol{}
 \SepLine
 
 \Anchor{5A4e8}\Anchor{5B4}\ProblemBnoor{4E 8 \OR 5.B.4}{
@@ -3131,35 +3143,27 @@ Becs $\Par{{\cos\theta+\i\sin\theta}}\Par{a+\i b}=r\BigPar{{\cos\!\Par{\alpha+\t
 Hence $T\Par{a,b}=\BigPar{a\cos\theta-b\sin\theta,\,a\sin\theta+b\cos\theta}.$ \:Now $\Mt{T}={}${\normalsize$\begin{pmatrix}\cos\theta & -\sin\theta\\[-4pt]\sin\theta & \Blind{-}\cos\theta\end{pmatrix}$}.\vspace{6pt}
 %\AExa Define $T\in\Lm{\Rbb^2}$ by $T\Par{x, y} = \Par{{-3y, x}}.$\parExa{\IndentB}
 %Becs $\Mt{T}={}${\normalsize$\begin{pmatrix}
-%		\cos90^\circ & -3\sin90^\circ\\[-4pt]
-%		\sin90^\circ & \Blind{-3}\cos90^\circ
-%	\end{pmatrix}$}. By [5.8](a), no eigvals for $T$.
+		%		\cos90^\circ & -3\sin90^\circ\\[-4pt]
+		%		\sin90^\circ & \Blind{-3}\cos90^\circ
+		%	\end{pmatrix}$}. By [5.8](a), no eigvals for $T$.
 \SepLine
 
 %\ProblemN{\Anchor{5A8}{8}}{
-%	\TextA{Define $T\in\Lm{\Fbb^2}$ by $T\Par{w, z} = \Par{z, w}$. Find all eigvals and eigvecs.}
-%}Supp $\lambda$ is an eigval with an eigvec $\Par{w,z}.$ Then $z=\lambda w$ \,{\small and}\, $ w=\lambda z.$\parSol{}
+	%	\TextA{Define $T\in\Lm{\Fbb^2}$ by $T\Par{w, z} = \Par{z, w}$. Find all eigvals and eigvecs.}
+	%}Supp $\lambda$ is an eigval with an eigvec $\Par{w,z}.$ Then $z=\lambda w$ \,{\small and}\, $ w=\lambda z.$\parSol{}
 %Thus $z=\lambda^2 z\Rightarrow \lambda^2=1,$ ignoring the possibility of $z=0$ \Par{ $z=0\Longleftrightarrow w=0$ }.\parSol{}
 %Hence $\lambda_1=-1$ and $\lambda_2=1$ are all the eigvals of $T.$ And $T\Par{z,z}=\Par{z,z},T\Par{z,-z}=\Par{{-z,z}}.$\parSol{}
 %又 $\dim\Fbb^2=2.$ Thus the set of all eigvecs is $\Bra{\Par{z,z},\Par{z,-z}:z\neq 0}.$\PfEnd
 %\SepLine
 %
 %\ProblemN{\Anchor{5A9}{9}}{
-%	\TextA{Define $T\in\Lm{\Fbb^3}$ by $T\Par{z_1,z_2,z_3}=\Par{2z_2, 0,5z_3}$. Find all eigvals and eigvecs.}
-%}Supp $\lambda$ is an eigval with an eigvec $\Par{z_1,z_2,z_3}.$\parSol{}
+	%	\TextA{Define $T\in\Lm{\Fbb^3}$ by $T\Par{z_1,z_2,z_3}=\Par{2z_2, 0,5z_3}$. Find all eigvals and eigvecs.}
+	%}Supp $\lambda$ is an eigval with an eigvec $\Par{z_1,z_2,z_3}.$\parSol{}
 %Then $\Par{2z_2, 0,5z_3}=\lambda\Par{z_1,z_2,z_3}.$ We discuss in two cases:\parSol{}
 %For $\lambda=0,$\, $z_2=z_3=0$ and $z_1$ can be arb \Par{ $z_1\neq 0$ }.\parSol{}
 %For $\lambda\neq 0,$\, $z_2=0=z_1,$ and $z_3$ can be arb \Par{ $z_3\neq 0$ }, then $\lambda=5$.\parSol{}
 %The set of all eigvecs is $\Bra{\Par{0,0,w},\Par{w,0,0}:w\neq 0}.$\PfEnd
 %\SepLine
-
-\ProblemN{\Anchor{5A10}{10}}{
-	\TextA{Define $T\in\Lm{\Fbb^n}$ by $T\Par{x_1,x_2,x_3,\dots,x_n}=\BigPar{x_1,2 x_2,3 x_3,\dots,n x_n}.$}
-	\PrePa\TextA{Find all eigvals and eigvecs;\;\; {\tgnr\large(b)} Find all invarsps of $V$ under $T.$}
-}Let $\Par{e_1,\dots,e_n}$ be the std bss of $\Fbb^n.$ The eigvals are $\Bra{1,\dots,n}$ of len $\dim\Fbb^n.$\parSol{}
-Let each $E_k=\Span{e_k}.$ The set of all eigvecs is $\Par{E_1\cup\cdots\cup E_n}\nonzero[\Big].$\parSol{}
-By {\TIPSN{2}}, invarsps are precisely  $\Span{e_{k_1},\dots,e_{k_m}}$ for $k_j\in\Bra{1,\dots,n}.$\PfEnd
-\SepLine
 
 \ProblemN{\Anchor{5A18}{18}}{
 	\TextA{Define $T\in\Lm{\Fbb^\infty}$ by $T\Par{z_1,z_2,\cdots}=\BigPar{0, z_1,z_2,\cdots}.$ Show $T$ has no eigvals.}
@@ -3219,7 +3223,7 @@ Then $\delta>0$ and each $\lambda_k\neq\alpha$ \Sbra{ $\Longleftrightarrow\Par{T
 }For $0\neq p\in\PoRi,\deg p\apostrophe<\deg p.$ And $\deg 0=-\infty.$ Supp $p\apostrophe=\lambda p.$\parSol{}
 Asum $\lambda\neq 0.$ Then $\deg\lambda p=\deg p\apostrophe<\deg\lambda p,$ ctradic. Thus $\lambda=0.$\parSol{}
 Therefore $\deg\lambda p=-\infty=\deg p\apostrophe\Rightarrow p\in\PoR{0}.$\PfEnd
-\SepLine
+\SepLine\pagebreak
 
 \ProblemN{\Anchor{5A15}{15}}{
 	\TextA{Supp $T\in\Lm{V}$. Supp $S\in\Lm{V}$ is inv.}
@@ -3941,7 +3945,6 @@ Let the min of $T$ be $p\Par{z}=\Par{z-\lambda_1}{^{\alpha_1}}\cdots\Par{z-\lamb
 Let $q\Par{z}\Par{z-\lambda_j}=p\Par{z}\Rightarrow 0=p\Par{T}=\Par{T-\lambda_jI}q\Par{T}\Rightarrow\rangep q\Par{T}\subseteq\Null\Par{T-\lambda_jI}.$\par\quad
 Let $q\Par{z}=\Par{z-\lambda_j}s\Par{z}\Rightarrow\rangep q\Par{T}\subseteq\Range\Par{T-\lambda_jI}.$ \,Note that $q\Par{T}\neq0.$\PfEnd\vspace{6pt}\quad
 \Or Let $\lambda_1,\dots,\lambda_m$ be disti eigvals. Now $V=\Null\Par{T-\lambda_kI}\oplus\Range\Par{T-\lambda_kI}$ for each $\lambda_k.$\par\quad
-%By (L1) and \Sbra{1.C \TIPSN{3}}, $\Range\Par{T-\lambda_1I}=\Null\Par{T-\lambda_2I}\oplus\Sbra{\Range\Par{T-\lambda_2I}\cap\Range\Par{T-\lambda_1I}}.$\par\quad
 Asum $V=\Sbra{\bigoplus_{i=1}^j\Null\Par{T-\lambda_jI}}\oplus\Sbra{\bigcap_{i=1}^j\Range\Par{T-\lambda_jI}}$ for $j\in\Bra{1,\dots,m-1}.$\par\quad
 Becs $\bigcap_{i=1}^j\Range\Par{T-\lambda_iI}\supseteq\Null\Par{T-\lambda_{j+1}I}.$ By (L1) and \Sbra{1.C \TIPSN{3}},\par\quad
 $\bigcap_{i=1}^j\Range\Par{T-\lambda_iI}=\Null\Par{T-\lambda_{j+1}I}\oplus\Sbra{\bigcap_{i=1}^j\Range\Par{T-\lambda_jI}\cap\Range\Par{T-\lambda_{j+1}I}}.$\par\quad
@@ -4267,11 +4270,11 @@ Then $\exists\,!\,u_1\in G\Par{\lambda_1,T\mmid_U},w_k\in G\Par{\lambda_k,T\mmid
 \Anchor{8BT3}\ProblemN{\BulletPointX B.\TipsN{3}}{
 	\TextA{Supp $p=sq$ is the min of $T\in\Lm{V}$ and $s,q$ have no common zeros.}
 	\TextA{Prove $V=\nullp s\Par{T}\oplus\nullp q\Par{T}.$\hfill\tgnr\FontNorm\ACoro $\nullp s\Par{T}=\rangep q\Par{T}.$}
-}By Exe (4E 4.13), $\forall v\in V,v=u+w,$ where $u=s\Par{T}a\Par{T}v,\,w=q\Par{T}b\Par{T}v.$ Immed.\PfEnd\vspace{2pt}
-\ANote Let $V_{\!\Cbb}=G\Par{\lambda_1,T_{\!\Cbb}}\oplus\cdots\oplus G\Par{\lambda_m,T_{\!\Cbb}},$ and $p\Par{z}=\Par{z-\lambda_1}{^{k_1}}\cdots\Par{z-\lambda_m}{^{k_m}}.$\vspace{1pt}\parNot
-Let $s\Par{z}=\Par{z-\lambda_{\alpha_1}}{^{k_{\alpha_1}}}\cdots\Par{z-\lambda_{\alpha_A}}{^{k_{\alpha_A}}},\;q\Par{z}=\Par{z-\lambda_{\beta_1}}{^{k_{\beta_1}}}\cdots\Par{z-\lambda_{\beta_B}}{^{k_{\beta_B}}},$ with all $\alpha_j\neq\beta_i.$\parNot
-Note that $\forall v\in V_{\!\Cbb},\exists\,!\,v_i\in G\Par{\lambda_i,T_{\!\Cbb}},\:v=v_1+\dots+v_m=\Par{v_{\alpha_1}+\dots+v_{\alpha_A}}+\Par{v_{\beta_1}+\dots+v_{\beta_B}}.$\parNot
-Thus $V_{\!\Cbb}=\nullp s\Par{T_{\!\Cbb}}\oplus\nullp q\Par{T_{\!\Cbb}}.$ And simlr, $\nullp s\Par{T_{\!\Cbb}}=G\Par{\lambda_{\alpha_1},T_{\!\Cbb}}\oplus\cdots\oplus G\Par{\lambda_{\alpha_A},T_{\!\Cbb}}.$\vspace{2pt}\parNot
+}By Exe (4E 4.13), $\forall v\in V,v=u+w,$ where $u=s\Par{T}a\Par{T}v,\,w=q\Par{T}b\Par{T}v.$ Immed.\PfEnd\vspace{2pt}\parSol{}
+\Or Let $V_{\!\Cbb}=G\Par{\lambda_1,T_{\!\Cbb}}\oplus\cdots\oplus G\Par{\lambda_m,T_{\!\Cbb}},$ and $p\Par{z}=\Par{z-\lambda_1}{^{k_1}}\cdots\Par{z-\lambda_m}{^{k_m}}.$\vspace{1pt}\parSol{}
+Let $s\Par{z}=\Par{z-\lambda_{\alpha_1}}{^{k_{\alpha_1}}}\cdots\Par{z-\lambda_{\alpha_A}}{^{k_{\alpha_A}}},\;q\Par{z}=\Par{z-\lambda_{\beta_1}}{^{k_{\beta_1}}}\cdots\Par{z-\lambda_{\beta_B}}{^{k_{\beta_B}}},$ with all $\alpha_j\neq\beta_i.$\parSol{}
+Note that $\forall v\in V_{\!\Cbb},\exists\,!\,v_i\in G\Par{\lambda_i,T_{\!\Cbb}},\:v=v_1+\dots+v_m=\Par{v_{\alpha_1}+\dots+v_{\alpha_A}}+\Par{v_{\beta_1}+\dots+v_{\beta_B}}.$\parSol{}
+Thus $V_{\!\Cbb}=\nullp s\Par{T_{\!\Cbb}}\oplus\nullp q\Par{T_{\!\Cbb}}.$ And simlr, $\nullp s\Par{T_{\!\Cbb}}=G\Par{\lambda_{\alpha_1},T_{\!\Cbb}}\oplus\cdots\oplus G\Par{\lambda_{\alpha_A},T_{\!\Cbb}}.$\vspace{2pt}\parSol{}
 \AComm If $\lambda_{\alpha_j}\not\in\Rbb,$ then $\exists\,\lambda_{\alpha_i}=\overline{\lambda_{\alpha_j}}.$ Simlr for $\lambda_{\beta_j}.$ Now $V=\nullp s\Par{T}\oplus\nullp q\Par{T}.$\par\vspace{2pt}
 \NewNotation\;\;We call such $s$ or $q$ a {\tgsc poly block}. A factor $q$ of $p$ is a block $\Longleftrightarrow$ the other half $p\big/q$ is a block.\par
 \ACoro (1) If $q$ is a block of the min $p.$ Then $V=\nullp q\Par{T}\oplus\rangep q\Par{T}.$\parCor
