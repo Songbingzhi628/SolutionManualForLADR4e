@@ -3090,16 +3090,14 @@ For each $j\in\Bra{1,\dots,k-1},\lambda_j-\lambda_{k}\neq 0\Rightarrow\Par{\lamb
 By asum, each $v_j'\in U.$ Thus $v_1,\dots,v_{k-1}\in U.$ So that $v_k=v-v_1-\dots-v_{k-1}\in U.$\PfEnd
 \SepLine[0pt][\Blind{\BulletPointX} ]
 
-\Anchor{5AT2}\ProblemBX{\TipsN{2}}{
-	\TextA{Supp $\dim V=m\Rightarrow B_V=\Par{v_1,\dots,v_m}.$ Let each $E_k=\Span{v_k}.$}
-	\TextA{Prove $U=\BigPar[0pt]{U\cap E_1}\oplus\cdots\oplus\BigPar[0pt]{U\cap E_m}.$\vspace{0pt}}
-}Becs $V=E_1\oplus\cdots\oplus E_m\Rightarrow\forall v\in U,v=c_1v_1+\dots+c_mv_m,$ uniqly.\parSol{}
-By \TIPSN{1}, each $c_jv_j\in U.$ Thus $v\in\Par{U\cap E_1}\oplus\dots\oplus\Par{U\cap E_m}\supseteq U.$\PfEnd\vspace{2pt}
-\ACoro Becs each $\dim E_j=1\Rightarrow\Par{U\cap E_j}=E_j$ or $\zeroSubs.$ Let $E_{k_1},\dots,E_{k_M}$ be all suth each $E_{k_j}=U\cap E_{k_j}.$\par
-\Anchor{5AT3}\BulletPointX\TipsN{3}\,\,\,{\tgsl Supp $U$ is a non0 invarsp of $V$ under $T.$ Let $\dim V=m.$ Then $U=\Span{v_{k_1},\dots,v_{k_M}}.$}
+\Anchor{5AT2}\Anchor{5C4e16}\ProblemBX{\TipsN{2}}{
+	\TextA{Supp $V=E\Par{\lambda_1,T}\oplus\cdots\oplus E\Par{\lambda_m,T}.$ Prove $U=E\Par{\lambda_1,T\mmid_U}\oplus\cdots\oplus E\Par{\lambda_m,T\mmid_U}.$}
+}Becs $\forall u\in U,\exists\,!\,v_j\in E\Par{\lambda_j,T},v=v_1+\dots+v_m.$ By \TIPSN{1}, each $v_j\in U.$\PfEnd%\vspace{2pt}\parSol{}
+%\Or \Sbra[3pt]{{\tgsl Req Finide}} \;Using induc on $\dim U=N.$ (i) $N=1.$ Immed. (ii) $N>1.$ Asum it holds for smaller $U.$\parSol{}
+%Let $U=E\Par{\lambda_j,T}$
 \SepLine
 
-\Anchor{5AT4}\ProblemBX{\TipsN{4}}{
+\Anchor{5AT3}\ProblemBX{\TipsN{3}}{
 	\TextA{Supp $V=U\oplus W$ and $U,W$ invard $T\in\Lm{V}.$ Prove $\null T\mmid_U\oplus\null T\mmid_W=\null T.$}
 }$\forall v=u+w\in\null T, Tv=Tu+Tw=0\Rightarrow Tu,Tw=0\Rightarrow v\in\null T\mmid_U\oplus\null T\mmid_W.$\PfEnd
 \ACoro $E\Par{\lambda,T}=E\Par{\lambda,T\mmid_U}\oplus E\Par{\lambda,T\mmid_W}.$ Replace $T$ with $T-\lambda I,$ immed.
@@ -3127,9 +3125,8 @@ Let $W\oplus U=V.$ Define $T\in\Lm{V}$ by $T\Par{u+w}=w.$\PfEnd
 }Supp $u+w\neq 0$ and $P\Par{u+w}=u=\lambda u+\lambda w\Rightarrow\Par{\lambda-1}u+\lambda w=0.$\parSol{}
 Becs $\Par{\lambda-1}u=\lambda w=0.$ Now $\lambda=0\Longleftrightarrow u=0,$ and $\lambda=1\Longleftrightarrow w=0.$ Thus $Pu=u,Pw=0.$\PfEnd
 \SepLine
-\pagebreak
 
-\Anchor{5AT5}\BulletPointX\TipsN{5}\,\,\,Supp $T\in\Lm{\Rbb^2}$ is the countclockws rotat by $\theta\in\Rbb.$ Define $\mC\Par{a,b}=a+\i b.$\TextB{}
+\Anchor{5AT4}\BulletPointX\TipsN{4}\,\,\,Supp $T\in\Lm{\Rbb^2}$ is the countclockws rotat by $\theta\in\Rbb.$ Define $\mC\Par{a,b}=a+\i b.$\TextB{}
 Becs $\Par{{\cos\theta+\i\sin\theta}}\Par{a+\i b}=r\BigPar{{\cos\!\Par{\alpha+\theta}+\i\sin\!\Par{\alpha+\theta}}}.$\vspace{-6pt}\TextB{}
 Hence $T\Par{a,b}=\BigPar{a\cos\theta-b\sin\theta,\,a\sin\theta+b\cos\theta}.$ \:Now $\Mt{T}={}${\normalsize$\begin{pmatrix}\cos\theta & -\sin\theta\\[-4pt]\sin\theta & \Blind{-}\cos\theta\end{pmatrix}$}.\vspace{6pt}
 %\AExa Define $T\in\Lm{\Rbb^2}$ by $T\Par{x, y} = \Par{{-3y, x}}.$\parExa{\IndentB}
@@ -3161,7 +3158,7 @@ Hence $T\Par{a,b}=\BigPar{a\cos\theta-b\sin\theta,\,a\sin\theta+b\cos\theta}.$ \
 	\PrePa\TextA{Find all eigvals and eigvecs;\;\; {\tgnr\large(b)} Find all invarsps of $V$ under $T.$}
 }Let $\Par{e_1,\dots,e_n}$ be the std bss of $\Fbb^n.$ The eigvals are $\Bra{1,\dots,n}$ of len $\dim\Fbb^n.$\parSol{}
 Let each $E_k=\Span{e_k}.$ The set of all eigvecs is $\Par{E_1\cup\cdots\cup E_n}\nonzero[\Big].$\parSol{}
-By {\TIPSN{3}}, invarsps are precisely  $\Span{e_{k_1},\dots,e_{k_m}}$ for $k_j\in\Bra{1,\dots,n}.$\PfEnd
+By {\TIPSN{2}}, invarsps are precisely  $\Span{e_{k_1},\dots,e_{k_m}}$ for $k_j\in\Bra{1,\dots,n}.$\PfEnd
 \SepLine
 
 \ProblemN{\Anchor{5A18}{18}}{
@@ -3215,7 +3212,7 @@ Let $\delta>0$ be suth, for each eigval $\lambda_k,$ $\lambda_k\not\in\Par{\lamb
 So that for all $\alpha\in\Fbb$ suth $0<\aMid{\alpha-\lambda}<\delta,\Par{T-\alpha I}$ is inv.\PfEnd\vspace{4pt}\parSol{}
 \Or Let $\delta=\min\!\Bra{\aMid{\lambda-\lambda_k}:k\in\envFontSmall\Bra{1,\dots,m}\envFontDefault,\lambda_k\neq\lambda}.$\parSol{}
 Then $\delta>0$ and each $\lambda_k\neq\alpha$ \Sbra{ $\Longleftrightarrow\Par{T-\alpha I}$ is inv } for all $\alpha\in\Fbb$ suth $0<\aMid{\alpha-\lambda}<\delta.$\PfEnd
-\SepLine\pagebreak
+\SepLine
 
 \ProblemN{\Anchor{5A11}{11}}{
 	\TextA{Define $T:\PoRi\rightarrow\PoRi$ by $Tp = p\apostrophe$. Find all eigvals and eigvecs.}
@@ -3306,6 +3303,12 @@ Now $T_{\!\Cbb}\Par{\overline{v+\i u}}=Tv-\i Tu=\Par{av-bu}-\i\Par{au+bv}=\Par{a
 If $Tv=0$, then $T$ not inje, so are $TS,ST.$ Othws, $\lambda$ is eigval of $TS.$ \,Rev the roles in asum.\PfEnd
 \SepLine
 
+\Anchor{5E1}\ProblemBnoor{5.E.1}{
+	\TextA{Give $S,T\in\Fbb^4$ suth $ST=TS$ while $\exists$ invarspd $S$ but not $T,$ invarspd $T$ but not $S$.}
+}Define $S:\Par{x,y,z,w}\mapsto\Par{y,x,0,0}$ and $T:\Par{x,y,z,w}\mapsto\Par{0,0,w,z}\Rightarrow TS=ST=0.$\parSol{}
+Thus ${e_1,e_2}$ are eigvecs of $T$ but not of $S,$ and ${e_3,e_4}$ are eigvecs of $S$ but not of $T.$
+\SepLine\pagebreak
+
 \Anchor{5C6}\ProblemBnoor{5.C.6}{
 	\TextB{Supp $T\in\Lm{V}$ has $n=\dim V$ disti eigvals and $S\in\Lm{V}$ has the same eigvecs}
 	\TextB{{\FontNorm but might not with the same eigvals.} \;Prove $ST=TS.$}
@@ -3332,13 +3335,22 @@ Thus $\Par{T-\lambda I}S=0\Rightarrow\mA\Par{S}=TS=\lambda S$ with $S\neq 0.$\vs
 %\AComm {If $\mA\Par{S}=ST,\forall S\in\Lm{V}.$ Then the eigvals of $\mA$ are not the eigvals of $T.$}
 \SepLine
 
-\Anchor{5AT6}\ProblemBX{\TipsN{6}}{
+\Anchor{5AT5}\ProblemBX{\TipsN{5}}{
 	\TextA{Supp $S,T\in\Lm{V},p\in\PoFi$. Prove $Sp\Par{TS}=p\Par{ST}S.$}
 }We prove each $S\Par{TS}{^m}=\Par{ST}{^m} S$ by induc. (i) $m=0,1.$ Immed.\parSol{}
 (ii) $m>1.$ $S\Par{TS}{^{m-1}}=\Par{ST}{^{m-1}} S\Rightarrow S\Par{TS}{^{m}}=S\Par{TS}{^{m-1}}\Par{TS}=\Par{ST}{^{m-1}}\Par{ST}S=\Par{ST}{^{m}}S.$\PfEnd\vspace{2pt}
 \AComm If $S$ is inv. Then $p\Par{TS} = S^{-1} p\Par{ST}S,\;p\Par{ST} = Sp\Par{TS}S^{-1}.$\par\Anchor{5BI5}\Anchor{5A4e40}
 \ACoro Becs $S$ is inv, $T\in\Lm{V}$ is arb $\Longleftrightarrow ST=R\in\Lm{V}$ is arb. Hence $p\Par{S^{-1}RS}=S^{-1}p\Par{R}S.$
 \SepLine
+
+%\ProblemN{\Anchor{5A25}{25}}{
+%	\TextA{Supp $u,w,$ and $u+w$ are eigvecs of $T\in\Lm{V}.$ Prove the eigvals are the same.}
+%}Supp $\lambda_1,\lambda_2,\lambda_0$ are eigvals of $T$ with eigvecs to $u,w,u+w$ respectly.\parSol{}
+%Then $T\Par{u+w}=\lambda_0\Par{u+w}=Tu+Tw=\lambda_1 u+\lambda_2 w\Rightarrow \Par{\lambda_0-\lambda_1}u=\Par{\lambda_2-\lambda_0}w.$\parSol{}
+%If $\Par{u,w}$ is linely dep, then let $w=cu,$ therefore $\lambda_2 cu=Tw=cTu=\lambda_1 cu\Rightarrow\lambda_2=\lambda_1.$\parSol{}
+%Othws, $\Par{u,w}$ is liney indep. Then $\lambda_0-\lambda_1=\lambda_2-\lambda_0=0\,\Rightarrow\lambda_1=\lambda_2=\lambda_0.$\PfEnd\parSol{}
+%\Or Asum $\lambda_1\neq \lambda_2.$ Then $\Par{u,w}$ is liney indep. Thus $\lambda_0-\lambda_1=\lambda_0-\lambda_2.$ Ctradic.\PfEnd
+%\SepLine
 
 \ProblemN{\Anchor{5A26}{26}}{
 	\TextA{Supp $T\in\Lm{V}$ is suth $\forall v\in V,\exists\,!\,\lambda_v\in\Fbb,Tv=\lambda_v v.$ Prove $T=\lambda I.$}
@@ -3435,15 +3447,6 @@ Let $\Par{\varphi_1,\dots,\varphi_n}$ be the dual bss. Define $\Phi$ by $\Phi\Pa
 Becs $\Sbra{T\apostrophe\Par{\varphi_k}}\Par{e_j}=\varphi_k\BigBigPar{{\sum_{i=1}^n A_{j,i}e_i}}=A_{j,k}.$ By (3.F.9), $T\apostrophe\Par{\varphi_k}=\sum_{j=1}^n A_{j,k}\varphi_j.$\vspace{1pt}\par\quad\Hb
 Now $\BigPar{\Phi^{-1}T\apostrophe\Phi}{e_k}=\BigPar{\Phi^{-1}T\apostrophe}{\varphi_k}=\Phi^{-1}\BigBigPar[0pt]{\sum_{j=1}^n A_{j,k}\varphi_j}=\sum_{j=1}^n A_{j,k}e_j=e_k A^t=Se_k.$ \,Simlr.\PfEnd
 \SepLine
-
-%\ProblemN{\Anchor{5A25}{25}}{
-%	\TextA{Supp $u,w,$ and $u+w$ are eigvecs of $T\in\Lm{V}.$ Prove the eigvals are the same.}
-%}Supp $\lambda_1,\lambda_2,\lambda_0$ are eigvals of $T$ with eigvecs to $u,w,u+w$ respectly.\parSol{}
-%Then $T\Par{u+w}=\lambda_0\Par{u+w}=Tu+Tw=\lambda_1 u+\lambda_2 w\Rightarrow \Par{\lambda_0-\lambda_1}u=\Par{\lambda_2-\lambda_0}w.$\parSol{}
-%If $\Par{u,w}$ is linely dep, then let $w=cu,$ therefore $\lambda_2 cu=Tw=cTu=\lambda_1 cu\Rightarrow\lambda_2=\lambda_1.$\parSol{}
-%Othws, $\Par{u,w}$ is liney indep. Then $\lambda_0-\lambda_1=\lambda_2-\lambda_0=0\,\Rightarrow\lambda_1=\lambda_2=\lambda_0.$\PfEnd\parSol{}
-%\Or Asum $\lambda_1\neq \lambda_2.$ Then $\Par{u,w}$ is liney indep. Thus $\lambda_0-\lambda_1=\lambda_0-\lambda_2.$ Ctradic.\PfEnd
-%\SepLine
 
 \pagebreak
 
@@ -3939,7 +3942,7 @@ Let $q\Par{z}\Par{z-\lambda_j}=p\Par{z}\Rightarrow 0=p\Par{T}=\Par{T-\lambda_j}q
 Let $q\Par{z}=\Par{z-\lambda_j}s\Par{z}\Rightarrow\rangep q\Par{T}\subseteq\Range\Par{T-\lambda_jI}.$ \,Note that $q\Par{T}\neq0.$\PfEnd\vspace{6pt}\quad
 \Or Let $\lambda_1,\dots,\lambda_m$ be disti eigvals. Now $V=\Null\Par{T-\lambda_kI}\oplus\Range\Par{T-\lambda_kI}$ for each $\lambda_k.$\par\quad
 %By (L1) and \Sbra{1.C \TIPSN{3}}, $\Range\Par{T-\lambda_1I}=\Null\Par{T-\lambda_2I}\oplus\Sbra{\Range\Par{T-\lambda_2I}\cap\Range\Par{T-\lambda_1I}}.$\par\quad
-Asum $V=\Sbra{\bigoplus_{i=1}^j\Null\Par{T-\lambda_j}}\oplus\Sbra{\bigcap_{i=1}^j\Range\Par{T-\lambda_j}}$ for $j\in\Bra{1,\dots,m-1}.$\par\quad
+Asum $V=\Sbra{\bigoplus_{i=1}^j\Null\Par{T-\lambda_jI}}\oplus\Sbra{\bigcap_{i=1}^j\Range\Par{T-\lambda_jI}}$ for $j\in\Bra{1,\dots,m-1}.$\par\quad
 Becs $\bigcap_{i=1}^j\Range\Par{T-\lambda_iI}\supseteq\Null\Par{T-\lambda_{j+1}I}.$ By (L1) and \Sbra{1.C \TIPSN{3}},\par\quad
 $\bigcap_{i=1}^j\Range\Par{T-\lambda_iI}=\Null\Par{T-\lambda_{j+1}I}\oplus\Sbra{\bigcap_{i=1}^j\Range\Par{T-\lambda_jI}\cap\Range\Par{T-\lambda_{j+1}I}}.$\par\quad
 By induc, $V=\Sbra{\Null\Par{T-\lambda_1I}\oplus\cdots\oplus\Null\Par{T-\lambda_mI}}\oplus\Sbra{\Range\Par{T-\lambda_1I}\cap\cdots\cap\Range\Par{T-\lambda_mI}}.$\par\quad
@@ -3980,12 +3983,6 @@ Becs $\dim\Null\Par{S^jS}=\Dim\Par{\null S^j\cap\range S}+\dim\null S.$ By induc
 Define $p\Par{z}=\Par{z-\lambda_1}\cdots\Par{z-\lambda_m}.$ Then $\Sbra{p\Par{T}}{^{\dim V}}=0\Rightarrow p\Par{T}=0\Rightarrow p$ is the min.\PfEnd
 \SepLine
 
-\Anchor{5C4e16}\ProblemN{16}{
-	\TextA{Supp $V=E\Par{\lambda_1,T}\oplus\cdots\oplus E\Par{\lambda_m,T},$ and $U$ is invarspd $T\in\Lm{V}.$}
-	\TextA{Prove $U=E\Par{\lambda_1,T\mmid_U}\oplus\cdots\oplus E\Par{\lambda_m,T\mmid_U}.$}
-}Becs $\forall u\in U,\exists\,!\,v_k\in E\Par{\lambda_j,T},\,u=v_1+\dots+v_m.$ 又 By \Sbra{5.A \TIPSN{1}}, each $v_k\in U.$\PfEnd
-\SepLine
-
 %\Anchor{5C4e17}\ProblemN{17}{
 %	\TextA{Supp $V$ is finide. Prove $\Lm{V}$ has a bss consisting of diag optors.}
 %}Let $B_V=\Par{v_1,\dots,v_n}.$ Define each $E_{j,k}\in\Lm{V}:v_x\mapsto\delta_{j,x}v_k\Rightarrow$ [5.41](c) true.\PfEnd
@@ -3993,7 +3990,7 @@ Define $p\Par{z}=\Par{z-\lambda_1}\cdots\Par{z-\lambda_m}.$ Then $\Sbra{p\Par{T}
 
 \Anchor{5C4e18}\ProblemN{18}{
 	\TextA{Supp $T\in\Lm{V}$ is diag. Prove $T\XSlash U\in\Lm{V\XSlash U}$ is diag for any $U$ invarspd $T.$}
-}By \Sbra{5.A \TIPSN{3}}, $\exists\,B_U=\Par{v_1,\dots,v_m}$ consists of eigvecs of $T.$\parSol{}
+}By \Sbra{5.A \TIPSN{2}}, $\exists\,B_U=\Par{v_1,\dots,v_m}$ consists of eigvecs of $T.$\parSol{}
 Extend to eigvecs $B_V=\Par{v_1,\dots,v_m,w_1,\dots,w_p}\Rightarrow B_{V\XSlash U}=\Par{w_1+U,\dots,w_p+U}.$\parSol{}
 Becs for each $w_k,\:\exists$ eigval $\lambda$ of $T,\:Tw_k=\lambda w_k\Rightarrow\BigPar{T\XSlash U}\Par{w_k+U}=\lambda w_k+U.$\PfEnd\vspace{2pt}\parSol{}
 \Or Becs the min of $T$ is multi of that of $T\XSlash U.$ By [4E 5.62].\PfEnd\vspace{2pt}
@@ -4027,13 +4024,6 @@ $\lambda\in\BigBra{z\in\Fbb:\aXMid{z-A_{j,j}}\leqslant\sum_{j\neq k=1}^n\aXMid{A
 \ChDecl{Ch5E}{5.E [4E]}{}
 
 \vspace{4pt}
-
-%\Anchor{5E1}\ProblemN{1}{
-%	\TextA{Give commu optors $S,T\in\Fbb^4$ suth $\exists$ invarspd $S$ but not $T$ and $\exists$ invarspd $T$ but not $S$.}
-%}Define $S:\Par{x,y,z,w}\mapsto\Par{y,x,0,0}$ and $T:\Par{x,y,z,w}\mapsto\Par{0,0,w,z}\Rightarrow TS=ST=0.$\parSol{}
-%Notice that $S:e_1\mapsto e_2,\;e_3\mapsto 0,$ and $T:e_1\mapsto 0,\;e_3\mapsto e_4.$\parSol{}
-%Thus ${e_1}$ eigvec of $T$ but not of $S,$ and ${e_3}$ eigvec of $S$ but not of $T.$
-%\SepLine
 
 \Anchor{5E8}\ProblemN{8}{
 	\TextA{Find a bss of $\PoFx{m}{\Rbb^2}$ suth $D_x,D_y$ up-trig in [5.72].}
@@ -4224,16 +4214,16 @@ Becs $DN=DT-D^2,ND=TD-D^2,$ 又 each $TDv_k=\lambda_kTv_k=DTv_k\Rightarrow TD=DT
 }Let $N=T-\lambda I,$ and $\null N\subsetneq\cdots\subsetneq\null N^m=\null N^{m+1}.$ Choose $B_{\null N}.$\parSol{}
 Extend to $B_{\null N^2}\Rightarrow\cdots\Rightarrow B_{\null N^m},$ with each time adding at least one bss vec. Thus $m\leqslant d.$\PfEnd\vspace{3pt}\parSol{}
 \Or Let the min of $T$ be $p\Par{z}=\Par{z-\lambda}{^m}q\Par{z}$ with $q\Par{\lambda}\neq0.$\parSol{}
-\;By (4E B.6), $G\Par{\lambda,T}=\Null\Par{T-\lambda I}{^m}.$ By (4E A.4), $d\geqslant m.$\PfEnd\vspace{3pt}\parSol{}
-\Or Let the min of $N=\Par{T-\lambda I}{^m}\Big|{_{G\SmallPar{\,\lambda,\,T\,}}}$ be $z^m.$\parSol{}
-By (4E 5.B.17), the min of $N+\lambda I=T\mmid_{G\SmallPar{\,\lambda,\,T\,}}$ is $s\Par{z}=\Par{z-\lambda}{^m}.$\parSol{}
+By (4E B.6), $G\Par{\lambda,T}=\Null\Par{T-\lambda I}{^m}.$ By (4E A.4), $d\geqslant m.$\PfEnd\vspace{3pt}\parSol{}
+\Or Let the min of $N=\Par{T-\lambda I}{^m}\Big|{_{G\SmallPar{\:\!\lambda,\,T\:\!}}}$ be $z^m.$\parSol{}
+By (4E 5.B.17), the min of $N+\lambda I=T\mmid_{G\SmallPar{\:\!\lambda,\,T\:\!}}$ is $s\Par{z}=\Par{z-\lambda}{^m}.$\parSol{}
 Becs the char of $T$ \Sbra{See [9.21] for $\Fbb=\Rbb$} is a multi of min of $T,$ which is a multi of $s.$\PfEnd
 \SepLine
 
 \Anchor{8B4e6}\ProblemBnoor{4E B.6}{
 	\TextA{Supp $T\in\Lm{V}$ and $\lambda$ is an eigval. Explain why}
 	\TextA{the exponent of $z-\lambda$ in the factoriz of the min of $T$}
-	\TextA{is the smallest $m\in\Nbp$ suth $\Par{T-\lambda I}{^m}\Big|{_{\,G\SmallPar{\,\lambda,\,T}\,}}=0.$}
+	\TextA{is the smallest $m\in\Nbp$ suth $\Par{T-\lambda I}{^m}\Big|{_{\:\!G\SmallPar{\:\!\lambda,\,T\:\!}}}=0.$}
 }Let $G=G\Par{\lambda,T},N=\Par{T-\lambda I}\Big|{_G},$ and $N^m=0\neq N^{m-1}\Rightarrow$ the min of $T\mmid_G$ is $s\Par{z}=\Par{z-\lambda}{^m}.$\parSol{}
 Thus the min $p$ of $T$ is a multi of $s.$ Now we show the deg of $\Par{z-\lambda}$ in $p$ is no more than $m.$\parSol{}
 Let $\lambda_1=\lambda$ and $V_{\!\Cbb}=G_\Cbb\oplus U,$ where $G=G\Par{\lambda_1,T},U=G\Par{\lambda_2,T_{\!\Cbb}}\oplus\cdots\oplus G\Par{\lambda_n,T_{\!\Cbb}}.$\parSol{}
@@ -4254,31 +4244,27 @@ If $q\Par{T}v=0\Rightarrow s\Par{T}v=0.$ Othws, $q\Par{T}v\in\Null\Par{T-\lambda
 }Let $A=\Mt{S},C=\Mt{T},AC=\Mt{ST}\in\Fbb^{n,n},$ where $n=n_1+\dots+n_m.$\parSol{}
 Let $B_1=\Par{e_1,\cdots,e_{n_1}},$ and $B_{k}=\Par{e_{n_1\,+\,\cdots\,+\,n_{k-1}+1},\cdots,e_{n_1\,+\,\cdots\,+\,n_k}}$ for $k\in\Bra{2,\dots,m}.$\vspace{2pt}\parSol{}
 Let each $U_k=\spn B_k$ invard $S,T.$ Becs $\Mt{S\mmid_{U_k},B_k}=A_k,\Mt{T\mmid_{U_k},B_k}=C_k.$\vspace{2pt}\parSol{}
-Now $\Mt[\Sbra]{\Par{ST}\Big|{_{U_k}}}=\Mt{S\mmid_{U_k}T\mmid_{U_k}}=A_kC_k.$
+Now $\Mt[\Sbra]{\Par{ST}\Big|{_{U_k}}}=\Mt{S\mmid_{U_k}T\mmid_{U_k}}=A_kC_k.$\PfEnd
 \SepLine
 
 \ProblemB[]{
 	\TextB{Supp $T\in\Lm{V}$ and $U$ is invarspd $T.$ Supp $\lambda_1,\dots,\lambda_m$ are the disti eigvals.}
 }
 \Anchor{8BT1}\ProblemN{\BulletPointX B.\TipsN{1}}{
-	\TextA{Supp $v_1+\dots+v_m\in U$ and each $v_k$ is gigvec corres $\lambda_k.$ Prove each $v_k\in U.$}
-}Let each $S_k=\Par{T-\lambda_k I}{^{m_k}},$ where $\Par{T-\lambda_k I}{^{m_k}}v_k\neq0=\Par{T-\lambda_k I}{^{m_k+1}}v_k.$\parSol{}
-Let each $R_k=\Par{T-\lambda_1I}{^n}\cdots\Par{T-\lambda_{k-1}}{^n}\Par{T-\lambda_{k+1}I}{^n}\cdots\Par{T-\lambda_mI}{^n},$ where $n=\dim V.$\parSol{}
-Then each $R_kS_k\Par{v_1+\dots+v_m}=R_kw_k,$ where $w_k=S_kv_k\in E\Par{\lambda_k,T}.$\parSol{}
-Becs $U$ invard $T\Rightarrow$ invard $R_kS_k=p\Par{T}.$ Thus $w_k\in U\Rightarrow v_k\in U.$\PfEnd
-\SepLine
-
-\Anchor{8BT2}\ProblemN{\BulletPointX B.\TipsN{2}}{
-	\TextA{Prove $U=G\Par{\lambda_1,T\mmid_U}\oplus\cdots\oplus G\Par{\lambda_m,T\mmid_U}.$}
-}Becs $\forall u\in U,\exists\,!\,v_k\in G\Par{\lambda_k,T},u=v_1+\dots+v_m,$ 又 each $v_k\in U.$\PfEnd\vspace{2pt}
+	\TextA{Supp $\Fbb=\Cbb.$ Prove $U=G\Par{\lambda_1,T\mmid_U}\oplus\cdots\oplus G\Par{\lambda_m,T\mmid_U}.$}
+}We use induc on $\dim U=N.$ (i) Immed. (ii) $N>1.$ Asum it holds for smaller $U.$\parSol{}
+Supp $\lambda_1$ is an eigval of $T\mmid_U.$ Let $W\oplus G\Par{\lambda_1,T\mmid_U}=U,$ where $W=\Range\Par{T\mmid_U-\lambda_1I}{^N}$ invard $T\mmid_U.$\parSol{}
+Note that $T\mmid_U\mmid_W=T\mmid_W.$ By asum, $W=G\Par{\lambda_2,T\mmid_W}\oplus\cdots\oplus G\Par{\lambda_m,T\mmid_W}.$\parSol{}
+Now we show $G\Par{\lambda_k,T\mmid_U}\subseteq G\Par{\lambda_k,T\mmid_W}$ for each $k\in\Bra{2,\dots,m}.$ Supp $v\in G\Par{\lambda_k,T\mmid_U}.$\parSol{}
+Then $\exists\,!\,u_1\in G\Par{\lambda_1,T\mmid_U},w_k\in G\Par{\lambda_k,T\mmid_W},\:v=u_1+w_2+\dots+w_m.$ By [8.13].\PfEnd\vspace{2pt}
 \AComm Note that generally, $X\oplus Y\supseteq U\neq\Par{X\cap U}\oplus\Par{Y\cap U},$ and $\Par{X+U}\cap\Par{Y+U}\neq U.$
 \SepLine
 
-\Anchor{8BT3}\ProblemN[]{\BulletPointX B.\TipsN{3}}{
+\Anchor{8BT2}\ProblemN[]{\BulletPointX B.\TipsN{2}}{
 	\TextA{Supp $V=U\oplus W,$ and $U,W$ invard $T.$ Then $G\Par{\lambda,T}=G\Par{\lambda,T\mmid_U}\oplus G\Par{\lambda,T\mmid_W}.$\vspace{-3pt}}
-}\SepLine
+}\SepLine\pagebreak
 
-\Anchor{8BT4}\ProblemN{\BulletPointX B.\TipsN{4}}{
+\Anchor{8BT3}\ProblemN{\BulletPointX B.\TipsN{3}}{
 	\TextA{Supp $p=sq$ is the min of $T\in\Lm{V}$ and $s,q$ have no common zeros.}
 	\TextA{Prove $V=\nullp s\Par{T}\oplus\nullp q\Par{T}.$\hfill\tgnr\FontNorm\ACoro $\nullp s\Par{T}=\rangep q\Par{T}.$}
 }By Exe (4E 4.13), $\forall v\in V,v=u+w,$ where $u=s\Par{T}a\Par{T}v,\,w=q\Par{T}b\Par{T}v.$ Immed.\PfEnd\vspace{2pt}
@@ -4286,29 +4272,24 @@ Becs $U$ invard $T\Rightarrow$ invard $R_kS_k=p\Par{T}.$ Thus $w_k\in U\Rightarr
 Let $s\Par{z}=\Par{z-\lambda_{\alpha_1}}{^{k_{\alpha_1}}}\cdots\Par{z-\lambda_{\alpha_A}}{^{k_{\alpha_A}}},\;q\Par{z}=\Par{z-\lambda_{\beta_1}}{^{k_{\beta_1}}}\cdots\Par{z-\lambda_{\beta_B}}{^{k_{\beta_B}}},$ with all $\alpha_j\neq\beta_i.$\parNot
 Note that $\forall v\in V_{\!\Cbb},\exists\,!\,v_i\in G\Par{\lambda_i,T_{\!\Cbb}},\:v=v_1+\dots+v_m=\Par{v_{\alpha_1}+\dots+v_{\alpha_A}}+\Par{v_{\beta_1}+\dots+v_{\beta_B}}.$\parNot
 Thus $V_{\!\Cbb}=\nullp s\Par{T_{\!\Cbb}}\oplus\nullp q\Par{T_{\!\Cbb}}.$ And simlr, $\nullp s\Par{T_{\!\Cbb}}=G\Par{\lambda_{\alpha_1},T_{\!\Cbb}}\oplus\cdots\oplus G\Par{\lambda_{\alpha_A},T_{\!\Cbb}}.$\vspace{2pt}\parNot
-\AComm If $\lambda_{\alpha_j}\not\in\Rbb,$ then $\exists\,\lambda_{\alpha_i}=\overline{\lambda_{\alpha_j}}.$ Simlr for $\lambda_{\beta_j}.$ Now $V=\nullp s\Par{T}\oplus\nullp q\Par{T}.$\par\vspace{0pt}
+\AComm If $\lambda_{\alpha_j}\not\in\Rbb,$ then $\exists\,\lambda_{\alpha_i}=\overline{\lambda_{\alpha_j}}.$ Simlr for $\lambda_{\beta_j}.$ Now $V=\nullp s\Par{T}\oplus\nullp q\Par{T}.$\par\vspace{2pt}
 \NewNotation\;\;We call such $s$ or $q$ a {\tgsc poly block}. A factor $q$ of $p$ is a block $\Longleftrightarrow$ the other half $p\big/q$ is a block.\par
 \ACoro (1) If $q$ is a block of the min $p.$ Then $V=\nullp q\Par{T}\oplus\rangep q\Par{T}.$\parCor
-(2) If $s,q$ are blocks with no common zeros. Then $V=\rangep s\Par{T}+\range q\Par{T}.$
+(2) If $s,q$ are blocks with no common zeros. Then $V=\rangep s\Par{T}+\range q\Par{T}.$\parCor
+(3) Supp $p=p_1\cdots p_k$ and $p_1,\dots,p_k$ have no common zeros, so are poly blocks of $p.$\parCor
+\Blind{(3) }Then $V=\nullp p_1\Par{T}\oplus\cdots\oplus\nullp p_k\Par{T}.$ Let $\Gamma_{\!j}=\Bra{1,\dots,j-1,j+1,\dots,k}.$\parCor
+\Blind{(3) }Then $\rangep p_j\Par{T}=\bigoplus_{i\,\in\,\Gamma_{\!j}}\nullp p_i\Par{T},\;\nullp p_j\Par{T}=\bigcap_{i\,\in\,\Gamma_{\!j}}\rangep p_i\Par{T}.$\par
+%\ANote Supp $\Fbb=\Rbb.$ Let $p\Par{x}=\Par{x-\lambda_1}{^{\delta_1}}\cdots\Par{x-\lambda_m}{^{\delta_m}}\Par{z^2+b_1z+c_1}{^{\epsilon_1}}\cdots\Par{z^2+b_Mz+c_M}{^{\epsilon_M}}$ be the min of $T\in\Lm{V},$ where each $b_j^2<4c_j.$\parNot
+%Then $V=G\Par{\lambda_1,T}\oplus\cdots\oplus G\Par{\lambda_m,T}\oplus\nullp\Par{T^2+b_1T+c_1}{^{\dim V}}\oplus\cdots\oplus\nullp\Par{T^2+b_MT+c_M}{^{\dim V}}.$
 \SepLine
 
-\Anchor{8BT5}\ProblemN{\BulletPointX B.\TipsN{5}}{
-	\TextA{Supp $\Fbb=\Cbb.$ Prove $\exists$ invarsp $W$ suth $V=U\oplus W.$}
-}Let $V=G\Par{\lambda_1,T}\oplus\cdots\oplus G\Par{\lambda_m,T}\Rightarrow U=G\Par{\lambda_1,T\mmid_U}\oplus\cdots\oplus G\Par{\lambda_m,T\mmid_U}.$\parSol{}
-Let each $W_k\oplus G\Par{\lambda_k,T\mmid_U}=G\Par{\lambda_k,T}\Rightarrow W_k=G\Par{\lambda_k,T}\cap W_k=G\Par{\lambda_k,T\mmid_{W_k}}$ invard $T.$\parSol{}
-Now $W=W_1\oplus\cdots\oplus W_m$ is invard $T$ and $V=U\oplus W.$\PfEnd\vspace{2pt}
-\AComm $G\Par{\lambda_k,T\mmid_W}=G\Par{\lambda_k,T}\cap\Par{W_1\oplus\cdots\oplus W_m}=G\Par{\lambda_k,T\mmid_{W_k}}.$\par\vspace{2pt}
-\ANote This Exe is not true if $\Fbb=\Rbb.$ We give an exa of $T\in\Lm{V}$ and invarsp $U$\parNot
-suth $\nexists$ invarsp $W$ of dimension $\dim V-\dim U.$ Note that no exas exis if $\dim V<5.$\parNot
-\colorbox{yellow}{TODO}\parNot
-\SepLine
 
 \Anchor{Ch8C}
 \Anchor{8B4e20}\Anchor{8C20}\ProblemNnoor{C.20}{4E B.20}{
 	\TextA{Supp $\Fbb=\Cbb,$ and each $V_{\!k}$ non0 invarspd $T\in\Lm{V}$ of $V=V_{\!1}\oplus\cdots\oplus V_{\!m}.$}
 	\TextA{Let $p_k$ be the char of $T\mmid_{V_{\!k}}.$ Prove the char of $T$ is $p_1\cdots p_m.$}
-}By \Sbra{B \TIPSN{2}}, $V=G\Par{\lambda_1,T}\oplus\cdots\oplus G\Par{\lambda_n,T}\Rightarrow V_{\!k}=G\Par{\lambda_1,T\mmid_{V_{\!k}}}\oplus\cdots\oplus G\Par{\lambda_m,T\mmid_{V_{\!k}}}.$\parSol{}
-By \Sbra{B \TIPSN{3}}, each $G\Par{\lambda_j,T}=G\Par{\lambda_j,T\mmid_{V_{\!1}}}\oplus\cdots\oplus G\Par{\lambda_j,T\mmid_{V_{\!m}}}.$\parSol{}
+}By \Sbra{B \TIPSN{1}}, $V=G\Par{\lambda_1,T}\oplus\cdots\oplus G\Par{\lambda_n,T}\Rightarrow V_{\!k}=G\Par{\lambda_1,T\mmid_{V_{\!k}}}\oplus\cdots\oplus G\Par{\lambda_m,T\mmid_{V_{\!k}}}.$\parSol{}
+By \Sbra{B \TIPSN{2}}, each $G\Par{\lambda_j,T}=G\Par{\lambda_j,T\mmid_{V_{\!1}}}\oplus\cdots\oplus G\Par{\lambda_j,T\mmid_{V_{\!m}}}.$\parSol{}
 Let $d_{j,k}$ be the multy of $\lambda_j$ of $T\mmid_{V_{\!k}}.$ Then $d_{j,1}+\dots+d_{j,n}=d_j,$ the multy of $\lambda_j$ of $T.$\parSol{}
 Thus each $p_k\Par{z}=\Par{z-\lambda_1}{^{d_{1,k}}}\cdots\Par{z-\lambda_n}{^{d_{n,k}}}.$ While the char of $T$ is $\Par{z-\lambda_1}{^{d_1}}\cdots\Par{z-\lambda_n}{^{d_n}}.$\PfEnd\vspace{2pt}\parSol{}
 \Or Let $A$ be a block diag matrix of $T,$ with each $A_k=\Mt{T\mmid_{V_{\!k}}}$ up-trig. By Exe (B.11).\PfEnd
@@ -4334,7 +4315,6 @@ Thus each $p_k\Par{z}=\Par{z-\lambda_1}{^{d_{1,k}}}\cdots\Par{z-\lambda_n}{^{d_{
 }By Exe (4E C.11), each $v_k$ of a Jordan $B_V$ is a gigvec; so is an eigvec, by Exe (4E A.15).\PfEnd\vspace{2pt}\parSol{}
 \Or Let $A$ be a Jordan block diag matrix of $T.$ By Exe (D.3) and [4E 5.62].\PfEnd
 \SepLine
-\pagebreak
 
 \Anchor{8D8}\ProblemN{D.8}{
 	\TextA{Supp $\Fbb=\Cbb,$ and $T\in\Lm{V},$ with the min $p.$}
@@ -4345,7 +4325,7 @@ Thus each $p_k\Par{z}=\Par{z-\lambda_1}{^{d_{1,k}}}\cdots\Par{z-\lambda_n}{^{d_{
 ${}{^\neg}P\Rightarrow{}{^\neg}Q:$ \;If $\exists$ two or more eigvals of $T\mmid_U$ or $T\mmid_W,$ then $p$ has two or more disti factors, done.\parSol{}
 \Blind{${}{^\neg}P\Rightarrow{}{^\neg}Q:$ \;}Now supp $\exists$ only one eigval $\lambda$ for $T\mmid_U$ or $T\mmid_W,$ so for both and for $T.$\parSol{}
 \Blind{${}{^\neg}P\Rightarrow{}{^\neg}Q:$ \;}Let $p\Par{z}=\Par{z-\lambda}{^m}.$ Let $M=\max\!\Bra{\dim U,\dim W}<\dim V.$\parSol{}
-\Blind{${}{^\neg}P\Rightarrow{}{^\neg}Q:$ \;}Let $S=\Par{T-\lambda I}{^M}.$ By \Sbra{5.A \TIPSN{4}}, $\null S\mmid_U\oplus\null S\mmid_W=\null S.$\parSol{}
+\Blind{${}{^\neg}P\Rightarrow{}{^\neg}Q:$ \;}Let $S=\Par{T-\lambda I}{^M}.$ By \Sbra{5.A \TIPSN{3}}, $\null S\mmid_U\oplus\null S\mmid_W=\null S.$\parSol{}
 \Blind{${}{^\neg}P\Rightarrow{}{^\neg}Q:$ \;}又 $\null S\mmid_U=G\Par{\lambda,T\mmid_U}=U,$ and simlr $\null S\mmid_W=W\Rightarrow m\leqslant M,$ by Exe (4E B.6).\vspace{2pt}\parSol{}
 \Blind{${}{^\neg}P\Rightarrow{}{^\neg}Q:$ \;}\Or Supp $\exists$ only one eigval for $T,$ and $M=\max\!\Bra{\dim U,\dim W}<\dim V.$\parSol{}
 \Blind{${}{^\neg}P\Rightarrow{}{^\neg}Q:$ \;}Then $\exists$ Jordan $\Mt{T\mmid_U},\Mt{T\mmid_W}\Rightarrow$ Jordan $\Mt{T}.$\parSol{}
@@ -4353,6 +4333,28 @@ ${}{^\neg}P\Rightarrow{}{^\neg}Q:$ \;If $\exists$ two or more eigvals of $T\mmid
 ${}{^\neg}Q\Rightarrow{}{^\neg}P:$ \;Supp $T$ has only one eigval. Let
 $p\Par{z}=\Par{z-\lambda}{^m}$ with $m<\dim V.$\parSol{}
 \Blind{${}{^\neg}Q\Rightarrow{}{^\neg}P:$ \;}Becs $\exists$ Jordan $B_V=\Par{\underbrace{v_{1,1},\cdots,v_{m_1,1}}_{\text{bss for } U},\underbrace{v_{1,2},\cdots,v_{m_2,2},\cdots,v_{1,k},\cdots,v_{m_k,k}}_{\text{bss for }W}}$ for $T.$\PfEnd\vspace{4pt}
+\SepLine
+
+\Anchor{8B'1}\ProblemB{
+	\TextA{Supp $W\oplus E\Par{\lambda,T}=G\Par{\lambda,T}.$ Prove $W$ is not invard $T.$}
+}Let $\Par{T-\lambda I}{^j}w=0\neq\Par{T-\lambda I}{^{j-1}}w=e\in E\Par{\lambda,T}.$ \,If $W$ invar, then $e=0,$ ctradic the min of $j.$\PfEnd
+\SepLine
+
+\Anchor{8B'2}\ProblemB{
+	\TextA{Prove or give a countexa\hspace{1pt}$:$ $\exists$ invarsp $W$ suth $G\Par{\lambda,T}=G\Par{\lambda,T\mmid_U}\oplus G\Par{\lambda,T\mmid_W}.$}
+}See Exa [5.43]: $V=\Cbb^2,B_U=\Par{e_1}.$ Define $Te_1=0,Te_2=e_1\Rightarrow G\Par{0,T}=V.$\PfEnd
+%\AComm $G\Par{\lambda_k,T\mmid_W}=G\Par{\lambda_k,T}\cap\Par{W_1\oplus\cdots\oplus W_m}=G\Par{\lambda_k,T\mmid_{W_k}}.$\par\vspace{2pt}
+%\ANote This Exe is not true if $\Fbb=\Rbb.$ We give an exa of $T\in\Lm{V}$ and invarsp $U$\parNot
+%suth $\nexists$ invarsp $W$ of dimension $\dim V-\dim U.$ Note that no exas exis if $\dim V<5.$\parNot
+%We show no exas exis for $\dim V=5.$ Supp $\dim V=5\Rightarrow\exists\,\lambda$ an eigval of $T.$\parNot
+%Supp $\dim U=2,$ becs the existns of $W$ can be shown easily if $\dim U=1,3,4$ by (4E 5.A.39).\parNot
+%Supp $E\Par{\lambda,T}\subseteq U,$ for if not, pick a $v\in E\Par{\lambda,T}\Backslash U$ and let $W=\Span{v}\oplus U,$ done.\parNot
+%Supp $G\Par{\lambda,T}=U$ and no more eigvals. For if not, (1) $T$ has more than two eigvals, done.\parNot
+%(2) $T$ has only two disti eigvals $\lambda,\mu.$ Let $m_1=\dim G\Par{\lambda,T},m_2=\dim G\Par{\mu,T}.$\parNot
+%If $\Par{m_1,m_2}=\Par{1,4}$ or $\Par{4,1},$ then becs $T$ restr to $G\Par{\lambda,T}$ or $G\Par{\mu,T}$ has an eigval\parNot
+%$\Rightarrow\exists$ invarspd of dim $3.$ If $\Par{m_1,m_2}=\Par{1,1},$ then by char factoriz, ctradic. Other cases are simlr.\parNot
+%(3) If $U\supseteq E\Par{\lambda,T}$ of dim $1$, then by the factoriz of the char poly of $T\mmid_U,$ $\exists$ another eigval.\parNot
+%Thus $G\Par{\lambda,T}=U$ of dim $2,$ then $\exists$ another eigval by char factoriz, done.\PfEnd
 \SepLine
 
 \ChEnd
