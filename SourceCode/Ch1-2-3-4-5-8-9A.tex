@@ -3537,7 +3537,7 @@ Let $B_{\Range\SmallPar{T\,-\,\lambda I}}=\Par{w_1,\dots,w_m},\,B_{\Null\SmallPa
 	\TextA{Supp $T\in\Lm{V},\lambda$ is eigval of $T$ with $v.$ Prove if $p\in\PoFi,$ then $p\Par{T}v=p\Par{\lambda}v.$}
 }Define $p\Par{z}=a_0+a_1 z+\dots+a_m z^m.$ Becs for each $k\in\Nbp,T^k v=\lambda^k v,$ and $T^0v=v.$\parSol{}
 Now $p\Par{T}v=a_0v+a_1\lambda v+\dots+a_m \lambda^m v=p\Par{\lambda}v.$\PfEnd\vspace{2pt}
-\ACoro $p\Par{T}v=\BigSbra[0pt]{c\Par{T-\lambda_1}{^{\alpha_1}}\cdots\Par{T-\lambda_m}{^{\alpha_m}}}v=\BigSbra[0pt]{c\Par{\lambda-\lambda_1}{^{\alpha_1}}\cdots\Par{\lambda-\lambda_m}{^{\alpha_m}}}v.$
+\ACoro $p\Par{T}v=\BigSbra[0pt]{c\Par{T-\lambda_1I}{^{\alpha_1}}\cdots\Par{T-\lambda_mI}{^{\alpha_m}}}v=\BigSbra[0pt]{c\Par{\lambda-\lambda_1}{^{\alpha_1}}\cdots\Par{\lambda-\lambda_m}{^{\alpha_m}}}v.$
 \SepLine
 
 \ProblemN{\Anchor{5BI11}{11}}{
@@ -3750,7 +3750,7 @@ Let $-T^n=c_0I+c_1T+\dots+c_{n-1}T^{n-1}\Rightarrow$ each $c_k=a_k.$ Becs $n=\di
 	\TextA{Show the min $s$ of $\Par{T-\lambda I}$ is $q\Par{z}=p\Par{z+\lambda}.$}
 }Becs $q\Par{T-\lambda I}=p\Par{T}=0\Rightarrow q$ a multi of $s\Rightarrow\deg q=\deg p\geqslant\deg s.$\parSol{}
 Define $r\Par{z}=s\Par{z-\lambda}\Rightarrow r\Par{T}=s\Par{T-\lambda I}=0\Rightarrow \deg r=\deg s\geqslant\deg p.$\PfEnd\vspace{2pt}\parSol{}
-\Or Becs  $T^k\in\Span{I,T,\dots,T^{k-1}}\Longleftrightarrow\Par{T-\lambda}{^k}\in\Span[\BigBigPar]{I,\Par{T-\lambda I},\dots,\Par{T-\lambda I}{^{k-1}}}.$\PfEnd
+\Or Becs  $T^k\in\Span{I,T,\dots,T^{k-1}}\Longleftrightarrow\Par{T-\lambda I}{^k}\in\Span[\BigBigPar]{I,\Par{T-\lambda I},\dots,\Par{T-\lambda I}{^{k-1}}}.$\PfEnd
 \SepLine
 
 \Anchor{5BI4e18}\ProblemBnoor{{4E 18}}{
@@ -3938,7 +3938,7 @@ $\exists$ eigval $\lambda_0\Rightarrow U=\Range\Par{T-\lambda_0I}$ invard $T\Rig
 While $V=E\Par{\lambda_0,T}\oplus U\Rightarrow\dim U<\dim V.$ By asum, $T\mmid_U$ is diag wrto $B_U$ of eigvecs.\PfEnd\vspace{4pt}\par\quad
 \Or Supp $T$ not diag. We show $\exists\,\lambda\in\Cbb,\,\Null\Par{T-\lambda I}\cap\Range\Par{T-\lambda I}\neq\zeroSubs.$\par\quad
 Let the min of $T$ be $p\Par{z}=\Par{z-\lambda_1}{^{\alpha_1}}\cdots\Par{z-\lambda_m}{^{\alpha_m}},$ where each $\alpha_k\geqslant 1$ and $\exists\,\alpha_j>1.$\par\quad
-Let $q\Par{z}\Par{z-\lambda_j}=p\Par{z}\Rightarrow 0=p\Par{T}=\Par{T-\lambda_j}q\Par{T}\Rightarrow\rangep q\Par{T}\subseteq\Null\Par{T-\lambda_jI}.$\par\quad
+Let $q\Par{z}\Par{z-\lambda_j}=p\Par{z}\Rightarrow 0=p\Par{T}=\Par{T-\lambda_jI}q\Par{T}\Rightarrow\rangep q\Par{T}\subseteq\Null\Par{T-\lambda_jI}.$\par\quad
 Let $q\Par{z}=\Par{z-\lambda_j}s\Par{z}\Rightarrow\rangep q\Par{T}\subseteq\Range\Par{T-\lambda_jI}.$ \,Note that $q\Par{T}\neq0.$\PfEnd\vspace{6pt}\quad
 \Or Let $\lambda_1,\dots,\lambda_m$ be disti eigvals. Now $V=\Null\Par{T-\lambda_kI}\oplus\Range\Par{T-\lambda_kI}$ for each $\lambda_k.$\par\quad
 %By (L1) and \Sbra{1.C \TIPSN{3}}, $\Range\Par{T-\lambda_1I}=\Null\Par{T-\lambda_2I}\oplus\Sbra{\Range\Par{T-\lambda_2I}\cap\Range\Par{T-\lambda_1I}}.$\par\quad
@@ -4119,7 +4119,7 @@ Note that $\exists\,j$ suth $\null S^{kn-j}=\null T^{m}$ for some $m\in\Bra{1,\d
 Using induc on $m.$ (i) $m=1.$ Becs $\dim E\Par{\lambda, T}\geqslant 1.$ \,(ii) $m>1.$ Asum it holds for $\Par{m-1}.$\parSol{}
 $\dim\Null\Par{T-\lambda I}\Par{T-\lambda I}{^{m-1}}=\dim\Null\Par{T-\lambda I}\Big|{_{\Null\SmallPar{T\,-\,\lambda I}{^{m-1}}}}+{}$\uline{$\dim\Null\Par{T-\lambda I}{^{m-1}}$}.\PfEnd\vspace{2pt}\parSol{}
 \Or Let $p\Par{z}=\Par{z-\lambda}{^m}q\Par{z}$ the min of $T.$\parSol{}
-We show each inclusion of $\zeroSubs\subseteq\Null\Par{T-\lambda I}\subseteq\cdots\subseteq\Null\Par{T-\lambda}{^m}$ is strict by ctradic.\parSol{}
+We show each inclusion of $\zeroSubs\subseteq\Null\Par{T-\lambda I}\subseteq\cdots\subseteq\Null\Par{T-\lambda I}{^m}$ is strict by ctradic.\parSol{}
 Asum $\Null\Par{T-\lambda I}{^k}=\Null\Par{T-\lambda I}{^{k+1}}$ for $k\in\Bra{1,\dots,m-1}.$\parSol{}
 Then $\Null\Par{T-\lambda I}{^k}=\Null\Par{T-\lambda I}{^m}\Rightarrow\Par{T-\lambda I}{^m}q\Par{T}v=0=\Par{T-\lambda I}{^k}q\Par{T}v.$\PfEnd
 \SepLine
@@ -4336,13 +4336,13 @@ $p\Par{z}=\Par{z-\lambda}{^m}$ with $m<\dim V.$\parSol{}
 \SepLine
 
 \Anchor{8B'1}\ProblemB{
-	\TextA{Supp $W\oplus E\Par{\lambda,T}=G\Par{\lambda,T}.$ Prove $W$ is not invard $T.$}
+	\TextA{Supp $T\in\Lm{V},$ and $W\oplus E\Par{\lambda,T}=G\Par{\lambda,T}.$ Prove $W$ is not invard $T.$}
 }Let $\Par{T-\lambda I}{^j}w=0\neq\Par{T-\lambda I}{^{j-1}}w=e\in E\Par{\lambda,T}.$ \,If $W$ invar, then $e=0,$ ctradic the min of $j.$\PfEnd
 \SepLine
 
 \Anchor{8B'2}\ProblemB{
-	\TextA{Prove or give a countexa\hspace{1pt}$:$ $\exists$ invarsp $W$ suth $G\Par{\lambda,T}=G\Par{\lambda,T\mmid_U}\oplus G\Par{\lambda,T\mmid_W}.$}
-}See Exa [5.43]: $V=\Cbb^2,B_U=\Par{e_1}.$ Define $Te_1=0,Te_2=e_1\Rightarrow G\Par{0,T}=V.$\PfEnd
+	\TextA{Supp $T\in\Lm{V},U$ invarspd $T.$ Give a countexa\hspace{1pt}$:$ $\exists$ invarsp $W$ suth $V=U\oplus W.$}
+}See Exa [5.43]: $V=\Cbb^2,B_U=\Par{e_1}.$ Define $Te_1=0,Te_2=e_1\Rightarrow G\Par{0,T}=V.$
 %\AComm $G\Par{\lambda_k,T\mmid_W}=G\Par{\lambda_k,T}\cap\Par{W_1\oplus\cdots\oplus W_m}=G\Par{\lambda_k,T\mmid_{W_k}}.$\par\vspace{2pt}
 %\ANote This Exe is not true if $\Fbb=\Rbb.$ We give an exa of $T\in\Lm{V}$ and invarsp $U$\parNot
 %suth $\nexists$ invarsp $W$ of dimension $\dim V-\dim U.$ Note that no exas exis if $\dim V<5.$\parNot
@@ -4355,14 +4355,13 @@ $p\Par{z}=\Par{z-\lambda}{^m}$ with $m<\dim V.$\parSol{}
 %$\Rightarrow\exists$ invarspd of dim $3.$ If $\Par{m_1,m_2}=\Par{1,1},$ then by char factoriz, ctradic. Other cases are simlr.\parNot
 %(3) If $U\supseteq E\Par{\lambda,T}$ of dim $1$, then by the factoriz of the char poly of $T\mmid_U,$ $\exists$ another eigval.\parNot
 %Thus $G\Par{\lambda,T}=U$ of dim $2,$ then $\exists$ another eigval by char factoriz, done.\PfEnd
-\SepLine
-
-\ChEnd
-\pagebreak
+\SepLine\ChEnd
 
 \ChDecl{Ch9A}{9.A}{\quad{\ANote {\FontSmall $V$ denotes a finide non0 vecsp over $\Fbb.$}}}
 
 \vspace{4pt}
+
+%TODO: Real Jordan Form.
 
 \BulletPointX\NoteForSmall{[9.12]}\;\;Another proof: $\overline{T_{\!\Cbb}\Par{u+\i v}}=\overline{Tu+\i Tv}=Tu-\i Tv=T_{\!\Cbb}\Par{u-\i v}=T_{\!\Cbb}\Par{\overline{u+\i v}}.$\TextB{}
 $\overline{\Par{T_{\!\Cbb}-\lambda I}\Par{u+\i v}}=\overline{T_{\!\Cbb}\Par{u+\i v}-\lambda\Par{u+\i v}}=T_{\!\Cbb}\Par{u-\i v}-\overline{\lambda}\Par{u-\i v}=\Par{T_{\!\Cbb}-\overline{\lambda}I}\Par{u-\i v}.$\TextB{}
