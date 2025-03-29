@@ -789,6 +789,18 @@ Then $\,f=y_1\,f_1+\dots+y_n\,f_n\in\Span{\,f_1,\dots,f_n}.$ 又 If $\,f=0,$ the
 Define each $f\Par{v_k}=a_k$ and $f\Par{x}=0$ for $x\not\in\Bra{v_1,\dots,v_n}.$ Then $T\Par{f}=v.$\PfEnd
 \SepLine
 
+\Anchor{9A17}\ProblemBnoor{9.A.17}{
+	\TextA{Supp $\Fbb=\Rbb,T\in\Lm{V}$ suth $T^2=-I.$ Define complex scalar multi on $V$ as}
+	\TextA{$\Par{a+b\i}v=av+bTv.$ Then $V$ itself is already a complex vecsp with these defs.}
+	\TextA{Show the dim of $V$ as a complex vecsp is half of the dim of $V$ as the usual real vecsp.}
+}Supp $V\neq\zeroSubs.$ Let $N=\dim V$ as real vecsp. We construct a real $B_V$ via a $\Par[0pt]{N-1}$\hspace{1pt}-\hspace{1pt}step process.\par\quad
+Let $\Par{v_1,Tv_1}$ be liney indep in $V$ as real vecsp. Let $v_2\not\in\Span{v_1,Tv_1}\Rightarrow\Par{v_1,Tv_1,v_2}$ liney indep.\vspace{1pt}\par\quad
+{\tgbf Step 1.} \;We show $\Par{v_1,Tv_1,v_2,Tv_2}$ liney indep in $V$ as real vecsp. Asum $Tv_2=a_1v_1+b_1Tv_1+a_2v_2.$\par\quad
+\Blind{{\tgbf Step 1.} \;}Then $-v_2=a_1Tv_1-b_1v_1+a_2Tv_2.$ Note that $a_2\neq0$ and $a_2^2=-1$ while $a_2\in\Rbb,$ ctradic.\vspace{2pt}\par\quad
+{\tgbf Step k.} \;\!\Sbra{$k\leqslant N-1$} We show $\Par{v_1,Tv_1,\dots,v_k,Tv_k,v_{k+1},Tv_{k+1}}$ liney indep in $V$ as real vecsp. Simlr.\par\quad
+\Blind{{\tgbf Step k.} \;}Asum $Tv_{k+1}=a_1v_1+b_1Tv_1+\dots+a_{k+1}v_{k+1}.$ Then $-v_{k+1}=a_1Tv_1-b_1v_1+\dots+a_{k+1}Tv_{k+1}.$\PfEnd
+\SepLine
+
 \ChEnd
 
 \pagebreak
@@ -2618,10 +2630,10 @@ Then\; $f_1\XPar[0pt]{${\Large$\frac{\;1\;}{m}$}$}=\dots=f_m\XPar[0pt]{${\Large$
 }Define $\theta\in\Lm[\Sbra]{\BigPar{\PoFi}\apostrophe,\Fbb^{\infty}}$ by $\theta\Par{\varphi}=\BigPar{\varphi\Par{1},\varphi\Par{z},\cdots,\varphi\Par{z^m},\cdots}.$\parSol{}
 \NOTICE that $\forall p\in\PoRi,\exists\,!\,c_i\in\Fbb,m=\deg p,\;p\Par{z}=c_0+c_1z+\dots+c_{m}z^{m}\in\PoF{m}.$\vspace{1pt}\parSol{}
 Inje: $\theta\Par{\varphi}=0\Rightarrow\forall p\in\PoFi{},\varphi\Par{p}=c_0\varphi\Par{1}+c_1\varphi\Par{z}+\dots+c_m\varphi\Par{z^m}=0.$\vspace{1pt}\parSol{}
-Surj: Define $\psi_x\Par{p}=x_0c_0+\dots+x_mc_m$ for any $x=\Par{x_0,x_1,\cdots}\in\Fbb^\infty.$ Now each $\psi_x\BigPar{z^k}=x_k.$\parSol{}
+Surj: Supp $x=\Par{x_0,x_1,\cdots}\in\Fbb^\infty.$ Define $\psi_x\Par{p}=x_0c_0+\dots+x_mc_m\Rightarrow$ each $\psi_x\BigPar{z^k}=x_k.$\parSol{}
 \Blind{Surj:} $\forall p,q\in\PoFi{},$ supp $\deg p=m\geqslant n=\deg q,$ \Sbra{{\tgsl which is why we do not write $\Par{p+\lambda q}.$}}\parSol{}
 \Blind{Surj:} $\psi_x\Par{\lambda p+\mu q}=\sum_{j=0}^nx_j\Par{\lambda a_j+\mu b_j}+\sum_{k=1}^{m-n}x_{n+k}\lambda a_{n+k}=\lambda\psi_x\Par{p}+\mu\psi_x\Par{q}.$\PfEnd\vspace{4pt}
-\AComm $\PoFi$ is not iso to $\Fbb^\infty,$ so is $\PoFi$ to $\BigPar{\PoFi}\apostrophe.$ But $\PoFi$ is iso to $\Fbb^\Nbb,$ {\tgsl which the '$U$' in (3.E.14).}
+\AComm $\PoFi,\Fbb^\infty$ not iso $\Longrightarrow\PoFi,\BigPar{\PoFi}\apostrophe$ not iso. But $\PoFi$ is iso to $\Fbb^\Nbb,$ {\tgsl see the '$U$' in (3.E.14).}
 \SepLine
 
 \Anchor{3E14}\ProblemBnoor{3.E.14}{
@@ -3069,13 +3081,13 @@ Thus $\Par{rs}\Par{z}=1$ for infily many $z,$ so for all $z.$ Now $\deg rs=1=\de
 \ChEnd
 
 \vfill\textsl{\normalsize 凭借我的经验，我认为，好的自学教材，除了提供足够的一级知识外，还能通过各种方式，将二级、三级知识顺理成章地经过学科思维的浓缩喻于习题或课文中。在LADR的熏陶下，我渐渐认为，自学教材带来的长期收益更重要——所谓素养一类的隐形东西，无论堆砌多少知识记忆都难以学到；外在的选拔，表面上看都是知识竞赛，但真正有含金量的选拔，往往十二分地注重隐形能力；实际的工作表现也是如此；客观上看这确实是在当今公共信息过剩的时代下人与人拉开差距的核心原因之一，也是我相信最能仅通过自身努力耕耘获得长期稳定回报的地方。现在看看速学速成应付选拔竞争的选择有多愚蠢吧：考不上放弃吧，因为几乎没有习得那些隐性能力，就确实是除了知识和解题技巧之外啥也没得到，这些知识中实用的那些内容怎么着都能学到，不具有不可替代性，实际工作更需要隐形的素养；再考再战吧，就得辛苦刷题，总归不如在学的过程中把\!“和习题的挣扎”\!当作练习对学科思维的启发最好。考上了吧又要和更\!“拔尖创新人才”\!竞争隐形的能力，一样难以优胜，只不过这个情况下可以做一个更\!“优越”\!的平庸之人罢了，除了短期速成而来的外在\!“纪念品”\!之外再也没有什么学习成果可长期变现——和质量至上、\!不怕耽误时间进度的学习者相比又能有什么优越之处呢？}\par\vspace{4pt}
-
+\pagebreak
 {\small
 下面第5章中，3e和4e差距过大。我认为是因为4e将原来3e第8章的极小多项式和第2章线性无关最小性和第4章的多项式的原理结合，以极小多项式为工具重写了第5章几个核心定理，并引入一些结论承接读者一些很自然的想法，让第5章的定理和习题更加富有动机和系统性。\par\vspace{2pt}
-这份笔记主要面向3e纸质书的读者，所以题号和定理索引都采用3e（除少数4e新增章节）。因为3e读者可能会对第5章这样的4e变化感到茫然无措，所以为了内容的紧密性，我决定将3e第8章提前到第5章后，对应到4e只有第8章前三节。3e第8章个别涉及第6、\!\!7章的习题，会拆散塞入对应章节的笔记中。\par\vspace{8pt}
+这份笔记主要面向3e纸质书的读者，所以题号和定理索引都采用3e（除少数4e新增章节）。因为3e读者可能会对第5章这样的4e变化感到茫然无措，所以为了内容的紧密性，我决定将3e第8章提前到第5章后，对应到4e只有第8章前三节。3e第8章个别涉及第6、\!\!7章的习题，会拆散塞入对应章节的笔记中。\par\vspace{14pt}
 }
-\pagebreak
 \ChDecl{Ch5A}{5.A}{\qquad{\small\textbf{注意\,:}\;这里将5.B节多项式作用于算子部分与5.C节的本征空间的定义前置.}}
+
 \vspace{4pt}
 
 \Anchor{5AN5.6}\BulletPointX\NoteForSmall{[5.6]}\;\;If $V$ is infinide. Then (a) $\Longleftrightarrow$ (b) $\Rightarrow$ (d), while (b) $\notRightarrow$(c), and (b) $\notRightarrow$(d).\par
@@ -3107,7 +3119,7 @@ Let $W\oplus U=V.$ Define $T\in\Lm{V}$ by $T\Par{u+w}=w.$\PfEnd
 Let each $E_k=\Span{e_k}.$ The set of all eigvecs is $\Par{E_1\cup\cdots\cup E_n}\nonzero[\Big].$\parSol{}
 Supp $U$ is invarsp. Then $u=\Par{x_1,x_2,\dots,x_n}\in U\Rightarrow Tu=\Par{x_1,2x_2,\dots,x_n}\in U.$\parSol{}
 And $Tu-u=\BigPar{0,x_2,2x_3,\dots,\Par{n-1}x_n}\in U\Rightarrow\cdots\Rightarrow\Par{0,\dots,0,x_n}\Rightarrow$ each $x_ke_k\in U.$\parSol{}
-Get a $B_U$ and pick all non0 $x_k.$ Forming $\Span{e_{k_1},\dots,e_{k_m}}=U.$\PfEnd
+Get a $B_U$ and pick all non0 $x_k.$ Forming $\Span{e_{k_1},\dots,e_{k_m}}=U.$\PfEnd\vspace{2pt}
 \AComm The result (b) holds generally where $\exists\,B_V$ consists of eigvecs of $T.$
 \SepLine
 
@@ -3128,26 +3140,11 @@ By asum, each $v_j'\in U.$ Thus $v_1,\dots,v_{k-1}\in U.$ So that $v_k=v-v_1-\do
 }Becs $\forall u\in U,\exists\,!\,v_j\in E\Par{\lambda_j,T},v=v_1+\dots+v_m.$ By \TIPSN{2}, each $v_j\in U.$\PfEnd%%\vspace{2pt}\parSol{}
 %----------\Or \Sbra[3pt]{{\tgsl Req Finide}} \;Using induc on $\dim U=N.$ (i) $N=1.$ Immed. (ii) $N>1.$ Asum it holds for smaller $U.$\parSol{}
 \SepLine
-
-\Anchor{5A4e8}\Anchor{5B4}\ProblemBnoor{4E 8 \OR 5.B.4}{
-	\TextB{Supp $\lambda$ is eigval of $P\in\Lm{V}$ and $P^2=P.$ Prove $\lambda = 0$ or $1$.}
-}$v\neq 0,\,Pv=\lambda v=\lambda^2 v=P\Par{Pv}.$ Thus $\lambda=1$ or $0.$\PfEnd
-\SepLine
-
-\ProblemN{\Anchor{5A14}{14}}{
-	\TextA{Supp $V=U\oplus W$, and $U,W$ non0. Define $P\Par{u + w} = u.$ Find all eigvals and eigvecs.}
-}Supp $u+w\neq 0$ and $P\Par{u+w}=u=\lambda u+\lambda w\Rightarrow\Par{\lambda-1}u+\lambda w=0.$\parSol{}
-Becs $\Par{\lambda-1}u=\lambda w=0.$ Now $\lambda=0\Longleftrightarrow u=0,$ and $\lambda=1\Longleftrightarrow w=0.$ Thus $Pu=u,Pw=0.$\PfEnd
-\SepLine
+\pagebreak
 
 \Anchor{5AT4}\BulletPointX\TipsN{4}\,\,\,Supp $T\in\Lm{\Rbb^2}$ is the countclockws rotat by $\theta\in\Rbb.$ Define $\mC\Par{a,b}=a+\i b.$\TextB{}
 Becs $\Par{{\cos\theta+\i\sin\theta}}\Par{a+\i b}=r\BigPar{{\cos\!\Par{\alpha+\theta}+\i\sin\!\Par{\alpha+\theta}}}.$\vspace{-6pt}\TextB{}
 Hence $T\Par{a,b}=\BigPar{a\cos\theta-b\sin\theta,\,a\sin\theta+b\cos\theta}.$ \:Now $\Mt{T}={}${\normalsize$\begin{pmatrix}\cos\theta & -\sin\theta\\[-4pt]\sin\theta & \Blind{-}\cos\theta\end{pmatrix}$}.\vspace{6pt}
-%\AExa Define $T\in\Lm{\Rbb^2}$ by $T\Par{x, y} = \Par{{-3y, x}}.$\parExa{\IndentB}
-%Becs $\Mt{T}={}${\normalsize$\begin{pmatrix}
-		%		\cos90^\circ & -3\sin90^\circ\\[-4pt]
-		%		\sin90^\circ & \Blind{-3}\cos90^\circ
-		%	\end{pmatrix}$}. By [5.8](a), no eigvals for $T$.
 \SepLine
 
 %\ProblemN{\Anchor{5A8}{8}}{
@@ -3882,7 +3879,7 @@ Now $q$ of deg $2$ is a multi of the min of $T\mmid_{\nullp p_v\SmallPar{v}},$ w
 (b) $q\Par{z}=\Par{z+1+\i}\Par{z+1-\i}\Rightarrow -1-\i$ or $-1+\i$ zero of $p_v\Rightarrow$ is eigval $\Rightarrow$ on diag.\PfEnd
 \SepLine
 
-\Anchor{5BII4e9}\ProblemN{9}{
+\Anchor{10A5}\Anchor{5BII4e9}\ProblemN{9}{
 	\TextA{Supp $B\in\Cbb^{n,n}.$ Prove $\exists$ inv $A\in\Cbb^{n,n}$ suth $A^{-1} BA$ is up-trig.}
 }Define $T\in\Cbb^n$ with $B=\Mt[\BigPar]{T,\Par{e_1,\dots,e_n}}.$ Let $C=\Mt[\BigPar]{T,\Par{f_1,\dots,f_n}}$ be up-trig.\parSol{}
 Let $A=\Mt[\BigPar]{I,\,f\rightarrow e}.$ Then $C=A^{-1}BA.$\PfEnd
@@ -4367,9 +4364,7 @@ $m_T\Par{z}=\Par{z-\lambda}{^m}$ with $m<\dim V.$\par\quad
 \BulletPointX\NoteForSmall{[9.12]}\;\;Another proof: $\overline{T_{\!\Cbb}\Par{u+\i v}}=\overline{Tu+\i Tv}=Tu-\i Tv=T_{\!\Cbb}\Par{u-\i v}=T_{\!\Cbb}\Par{\overline{u+\i v}}.$\TextB{}
 $\overline{\Par{T_{\!\Cbb}-\lambda I}\Par{u+\i v}}=\overline{T_{\!\Cbb}\Par{u+\i v}-\lambda\Par{u+\i v}}=T_{\!\Cbb}\Par{u-\i v}-\overline{\lambda}\Par{u-\i v}=\Par{T_{\!\Cbb}-\overline{\lambda}I}\Par{u-\i v}.$\TextB{}
 We use induc on $m$ to show $\overline{\Par{T_{\!\Cbb}-\lambda I}{^m}\Par{u+\i v}}=\Par{T_{\!\Cbb}-\overline{\lambda}I}{^m}\Par{u-\i v}.$ (i) Immed. (ii) $m>1.$\TextB{}
-Asum it holds for $k\leqslant m.$ Let $\Par{T_{\!\Cbb}-\lambda I}{^{m-1}}\Par{u+\i v}=x+\i y.$ Becs $\overline{\Par{T_{\!\Cbb}-\lambda I}{^{m-1}}\Par{u+\i v}}=x-\i y.$\PfEnd
-\SepLine
-
+Asum it holds for $k\leqslant m.$ Let $\Par{T_{\!\Cbb}-\lambda I}{^{m-1}}\Par{u+\i v}=x+\i y.$ Becs $\overline{\Par{T_{\!\Cbb}-\lambda I}{^{m-1}}\Par{u+\i v}}=x-\i y.$\PfEnd\vspace{2pt}
 \BulletPointX\NoteForSmall{[9.17]}\;\;Detailed proof:\TextB{}
 Let $B=\Par{u_1+\i v_1,\dots,u_m+\i v_m}$ be a bss of $G\Par{\lambda,T_{\!\Cbb}}.$ By [9.12], $\overline{B}=\Par{u_1-\i v_1,\dots,u_m-\i v_m}$ in $G\Par{\overline{\lambda},T_{\!\Cbb}}.$\TextB{}
 (a) If $a_1\Par{u_1-\i v_1}+\dots+a_m\Par{u_m-\i v_m}=0.$ Conjugating, now each $\overline{a_k}=0.$ Liney indep.\TextB{}
@@ -4389,7 +4384,7 @@ Where each $p_j\Par{z}=z-\mu_j,\,q_k\Par{z}=z^2-2\Par{\Real\lambda_k}z+\aMid{\la
 Fix one $k.$ Let $q\Par{z}=q_k\Par{z}=\Par{z-\lambda}\Par{z-\overline{\lambda}},\lambda=a+b\i,G=G\Par{\lambda,T_{\!\Cbb}},\overline{G}=G\Par{\overline{\lambda},T_{\!\Cbb}}.$\parNot
 Replace $T$ with $T\mmid_{\:\!Q}.$ Let $Q=Q\Par{\lambda,T}$ of dim $\beta,$ and $Q_\Cbb=G\oplus\overline{G},$ and Jordan bss $B_J$ of $Q_\Cbb.$\parNot
 Now $\Mt{T_{\!\Cbb}}=\footnotesize\begin{pmatrix}A_1 &\hspace{-8pt} 0\\[-4pt]0 &\hspace{-8pt} A_2\end{pmatrix},\Mt{T_{\!\Cbb}-\lambda I}=\footnotesize\begin{pmatrix}\overline{R_1} &\hspace{-8pt} 0\\[-2pt]0 &\hspace{-8pt}\overline{R_2}\end{pmatrix},\,\Mt{T_{\!\Cbb}-\overline{\lambda}I}=\footnotesize\begin{pmatrix}{R_2} &\hspace{-8pt} 0\\[-4pt]0 &\hspace{-8pt} R_1\end{pmatrix}$ wrto Jordan bss.\parNot
-So then $\Mt{T_{\!\Cbb}^2+bT_{\!\Cbb}+cI}=\Mt{T_{\!\Cbb}-\lambda I}\Mt{T_{\!\Cbb}-\overline{\lambda}I}=\footnotesize\begin{pmatrix}{R} &\hspace{-8pt} 0\\[-4pt]0 &\hspace{-8pt} \overline{R}\end{pmatrix},$ where $R=R_1R_2.$\parNot
+So then $\Mt{T_{\!\Cbb}^2+bT_{\!\Cbb}+cI}=\Mt{T_{\!\Cbb}-\lambda I}\Mt{\overline{T_{\!\Cbb}-{\lambda}I}}=\footnotesize\begin{pmatrix}{R} &\hspace{-8pt} 0\\[-4pt]0 &\hspace{-8pt} \overline{R}\end{pmatrix},$ where $R=R_1R_2.$\parNot
 Where $A_1,R_1,R_2,R$ are block diag matrices, and $A_1=\Mt{T_{\!\Cbb}\mmid_{\:\!G}},\,A_2=\Mt{T_{\!\Cbb}\mmid_{\:\!\overline{G}}}=\overline{\Mt{T_{\!\Cbb}\mmid_{\:\!G}}}.$\parNot
 Each $A_{1,k}=\footnotesize\begin{pmatrix}\lambda &\hspace{-6pt} 1 &\hspace{-14pt} &\hspace{-14pt} 0\hspace{-6pt}\\[-4pt]&\hspace{-18pt} \ddots &\hspace{-20pt} \ddots &\hspace{-14pt} \hspace{-6pt}\\[-6pt]&\hspace{-20pt} &\hspace{-20pt} \ddots &\hspace{-14pt} 1\hspace{-6pt}\\[-4pt]0 &\hspace{-14pt} &\hspace{-14pt} &\hspace{-14pt} \lambda\hspace{-6pt}\end{pmatrix},R_{1,k}=\footnotesize\begin{pmatrix}0 &\hspace{-6pt} 1 &\hspace{-14pt} &\hspace{-14pt} 0\hspace{-6pt}\\[-4pt]&\hspace{-18pt} \ddots &\hspace{-20pt} \ddots &\hspace{-14pt} \hspace{-6pt}\\[-6pt]&\hspace{-20pt} &\hspace{-20pt} \ddots &\hspace{-14pt} 1\hspace{-6pt}\\[-4pt]0 &\hspace{-14pt} &\hspace{-14pt} &\hspace{-14pt} 0\hspace{-6pt}\end{pmatrix},R_{2,k}=\footnotesize\begin{pmatrix}2b\i &\hspace{-6pt} 1 &\hspace{-14pt} &\hspace{-14pt} 0\hspace{-6pt}\\[-4pt]&\hspace{-18pt} \ddots &\hspace{-20pt} \ddots &\hspace{-14pt} \hspace{-6pt}\\[-6pt]&\hspace{-20pt} &\hspace{-20pt} \ddots &\hspace{-14pt} 1\hspace{-6pt}\\[-4pt]0 &\hspace{-14pt} &\hspace{-14pt} &\hspace{-14pt} 2b\i\hspace{-6pt}\end{pmatrix},R_k=\footnotesize\begin{pmatrix}
 0 &\hspace{-6pt} 2b\i &\hspace{-6pt} 1 &\hspace{-6pt} &\hspace{-6pt} 0\\[-4pt]
@@ -4401,33 +4396,28 @@ Let the Jordan bss $Q_\Cbb$ for $T_{\!\Cbb}$ be $\Par{u_1+\i\,v_1,\dots,u_\beta+
 Now due to $\Mt{T_{\!\Cbb}},$ $T\Par{u_1\pm\i\,v_1}=\Par{a\pm\i\,b}\Par{u_1\pm\i\,v_1}=\Par{a\,u_1-b\,v_1}\pm\i\,\Par{b\,u_1+a\,v_1},$\parNot
 $T\Par{u_j\pm\i\,v_j}=\Par{a\pm\i\,b}\Par{u_j\pm\i\,v_j}+\Par{u_{j-1}\pm\i\,v_{j-1}}=\Par{a\,u_j-b\,v_j+u_{j-1}}\pm\i\,\Par{b\,u_j+a\,u_j+v_{j-1}}.$\parNot
 Hence $Tu_1=a\,u_1-b\,v_1,Tv_1=b\,u_1+a\,v_1,$ and $Tu_j=u_{j-1}+a\,u_j-b\,v_j,Tv_j=v_{j-1}+b\,u_j+a\,u_j.$\parNot
-Let $B_Q=\Par{u_1,v_1,\dots,u_\beta,v_\beta}\Rightarrow\Mt{T,B_Q}=\footnotesize\begin{pmatrix}\mR &\hspace{-6pt} I_2 &\hspace{-14pt} &\hspace{-14pt} 0\hspace{-6pt}\\[-4pt]&\hspace{-18pt} \ddots &\hspace{-20pt} \ddots &\hspace{-14pt} \hspace{-6pt}\\[-6pt]&\hspace{-20pt} &\hspace{-20pt} \ddots &\hspace{-14pt} I_2\hspace{-6pt}\\[-3pt]0 &\hspace{-14pt} &\hspace{-14pt} &\hspace{-14pt} \mR\hspace{-6pt}\end{pmatrix},$ where $\mR=\footnotesize\begin{pmatrix}a &\hspace{-6pt} b\\[-4pt]-b &\hspace{-6pt} a\end{pmatrix}$ and $I_2=\footnotesize\begin{pmatrix}1 &\hspace{-8pt} 0\\[-4pt]0 &\hspace{-8pt} 1\end{pmatrix}.$\PfEnd\vspace{2pt}
-\AComm $\overline{T_{\!\Cbb}-\lambda I}=T_{\!\Cbb}-\overline{\lambda}I.$ {\tgsl I wonder why the matrix of the conjugate of $T_{\!\Cbb}-\lambda I$ is like that above.}
-\SepLine
-\pagebreak
-
-\Anchor{9A17}\ProblemN{17}{
-	\TextA{Supp $\Fbb=\Rbb,T\in\Lm{V}$ suth $T^2=-I.$ Define complex scalar multi on $V$ as}
-	\TextA{$\Par{a+b\i}v=av+bTv.$ Then $V$ itself is already a complex vecsp with these defs.}
-	\TextA{Show the dim of $V$ as a complex vecsp is half of the dim of $V$ as the usual real vecsp.}
-}Supp $V\neq\zeroSubs.$ Let $N=\dim V$ as real vecsp. We construct a real $B_V$ via a $\Par[0pt]{N-1}$\hspace{1pt}-\hspace{1pt}step process.\par\quad
-Let $\Par{v_1,Tv_1}$ be liney indep in $V$ as real vecsp. Let $v_2\not\in\Span{v_1,Tv_1}\Rightarrow\Par{v_1,Tv_1,v_2}$ liney indep.\vspace{1pt}\par\quad
-{\tgbf Step 1.} \;We show $\Par{v_1,Tv_1,v_2,Tv_2}$ liney indep in $V$ as real vecsp. Asum $Tv_2=a_1v_1+b_1Tv_1+a_2v_2.$\par\quad
-\Blind{{\tgbf Step 1.} \;}Then $-v_2=a_1Tv_1-b_1v_1+a_2Tv_2.$ Note that $a_2\neq0$ and $a_2^2=-1$ while $a_2\in\Rbb,$ ctradic.\vspace{2pt}\par\quad
-{\tgbf Step k.} \;\!\Sbra{$k\leqslant N-1$} We show $\Par{v_1,Tv_1,\dots,v_k,Tv_k,v_{k+1},Tv_{k+1}}$ liney indep in $V$ as real vecsp. Simlr.\par\quad
-\Blind{{\tgbf Step k.} \;}Asum $Tv_{k+1}=a_1v_1+b_1Tv_1+\dots+a_{k+1}v_{k+1}.$ Then $-v_{k+1}=a_1Tv_1-b_1v_1+\dots+a_{k+1}Tv_{k+1}.$\PfEnd
+Let $B_Q=\Par{u_1,v_1,\dots,u_\beta,v_\beta}\Rightarrow\Mt{T,B_Q}=\footnotesize\begin{pmatrix}\mR &\hspace{-6pt} I_2 &\hspace{-14pt} &\hspace{-14pt} 0\hspace{-6pt}\\[-4pt]&\hspace{-18pt} \ddots &\hspace{-20pt} \ddots &\hspace{-14pt} \hspace{-6pt}\\[-6pt]&\hspace{-20pt} &\hspace{-20pt} \ddots &\hspace{-14pt} I_2\hspace{-6pt}\\[-3pt]0 &\hspace{-14pt} &\hspace{-14pt} &\hspace{-14pt} \mR\hspace{-6pt}\end{pmatrix},$ where $\mR=\footnotesize\begin{pmatrix}a &\hspace{-6pt} b\\[-4pt]-b &\hspace{-6pt} a\end{pmatrix}$ and $I_2=\footnotesize\begin{pmatrix}1 &\hspace{-8pt} 0\\[-4pt]0 &\hspace{-8pt} 1\end{pmatrix}.$\PfEnd
 \SepLine
 
-\Anchor{9A18}\ProblemN{18}{
-	\TextA{Supp $\Fbb=\Rbb,$ $T\in\Lm{V},$ and all eigvals of $T_{\!\Cbb}$ are real.}
-	\TextA{Show {\tgnr\large(a)} $\exists\,B_V$ suth $T$ up-trig; \:{\tgnr\large(b)} $\exists\,B_V$ of gigvecs of $T.$}
-}(a) By [9.10] and [4E 5.44], immed. \;\Or Using induc on $\dim V.$ (i) Immed. (ii) $\dim V>1.$\parSol{\Ha}
-Asum it holds for smaller $V.$ Supp all eigvals of $T_{\!\Cbb}$ are real. Let $U=\Range\Par{T-\lambda I}.$\parSol{\Ha}
-Then all eigvals of $ T_{\!\Cbb}\mmid_{U_{\Cbb}}=\Par{T\mmid_U}{_{\Cbb}}$ are real. By asum, simlr to [5.27].\vspace{3pt}\parSol{}
-(b) By (a), (4E 8.A.11) and [4E 5.44], immed. \Or $V_{\!\Cbb}=G\Par{\lambda_1,T_{\!\Cbb}}\oplus\cdots\oplus G\Par{\lambda_m,T_{\!\Cbb}}.$\parSol{\Hb}
-Becs each $G\Par{\lambda_k,T_{\!\Cbb}}=G\Par{\lambda_k,T}{_{\Cbb}}$ and $U_{\Cbb}+W_{\Cbb}=\Par{U+W}{_{\Cbb}}.$ \;By [9.4](b).\PfEnd
-\SepLine
+%\Anchor{9A18}\ProblemN{18}{
+%	\TextA{Supp $\Fbb=\Rbb,$ $T\in\Lm{V},$ and all eigvals of $T_{\!\Cbb}$ are real.}
+%	\TextA{Show {\tgnr\large(a)} $\exists\,B_V$ suth $T$ up-trig; \:{\tgnr\large(b)} $\exists\,B_V$ of gigvecs of $T.$}
+%}(a) By [9.10] and [4E 5.44], immed. \;\Or Using induc on $\dim V.$ (i) Immed. (ii) $\dim V>1.$\parSol{\Ha}
+%Asum it holds for smaller $V.$ Supp all eigvals of $T_{\!\Cbb}$ are real. Let $U=\Range\Par{T-\lambda I}.$\parSol{\Ha}
+%Then all eigvals of $ T_{\!\Cbb}\mmid_{U_{\Cbb}}=\Par{T\mmid_U}{_{\Cbb}}$ are real. By asum, simlr to [5.27].\vspace{3pt}\parSol{}
+%(b) By (a), (4E 8.A.11) and [4E 5.44], immed. \Or $V_{\!\Cbb}=G\Par{\lambda_1,T_{\!\Cbb}}\oplus\cdots\oplus G\Par{\lambda_m,T_{\!\Cbb}}.$\parSol{\Hb}
+%Becs each $G\Par{\lambda_k,T_{\!\Cbb}}=G\Par{\lambda_k,T}{_{\Cbb}}$ and $U_{\Cbb}+W_{\Cbb}=\Par{U+W}{_{\Cbb}}.$ \;By [9.4](b).\PfEnd
+%\SepLine
 
-%TODO: Real Jordan Form.
+%\ProblemB{
+	%	\TextB{Supp $\lambda$ is eigval of $P\in\Lm{V}$ and $P^2=P.$ Prove $\lambda = 0$ or $1$.}
+	%}$v\neq 0,\,Pv=\lambda v=\lambda^2 v=P\Par{Pv}.$ Thus $\lambda=1$ or $0.$\PfEnd
+%\SepLine
+%
+%\ProblemB{
+	%	\TextB{Supp $V=U\oplus W$, and $U,W$ non0. Define $P\Par{u + w} = u.$ Find all eigvals and eigvecs.}
+	%}Supp $u+w\neq 0$ and $P\Par{u+w}=u=\lambda u+\lambda w\Rightarrow\Par{\lambda-1}u+\lambda w=0.$\parSol{}
+%Becs $\Par{\lambda-1}u=\lambda w=0.$ Now $\lambda=0\Longleftrightarrow u=0,$ and $\lambda=1\Longleftrightarrow w=0.$ Thus $Pu=u,Pw=0.$\PfEnd
+%\SepLine
 
 \ChEnd
