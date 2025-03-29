@@ -4385,11 +4385,26 @@ By \Sbra{8.B \TIPSN{3}}, $V_{\!\Cbb}=\Null\Par{T_{\!\Cbb}-\lambda I}{^k}\oplus\N
 (a) $Q\Par{\lambda,T}=\nullp q\Par{T}{^d},$ where $d=\dim G\Par{\lambda,T_{\!\Cbb}}.$\parNot
 (b) The expo of $q$ in the factoriz of $m_T$ is the smallest $m\in\Nbp$ suth $q\Par{T}{^m}\Big|{_{\:\!Q\SmallPar{\:\!\lambda,\,T\:\!}}}=0.$\vspace{1pt}\parNot
 (c) $m_T=p_1^{\alpha_1}\!\cdots p_m^{\alpha_m}\:q_1^{\beta_1}\!\cdots q_M^{\beta_M}\Longleftrightarrow V=\Sbra{\bigoplus_{j=1}^mG\Par{\mu_j,T}}\oplus\Sbra{\bigoplus_{k=1}^MQ\Par{\lambda_k,T}}.$\vspace{1pt}\parNot\Hc
-Where each $p_j\Par{z}=z-\mu_j,\,q_k\Par{z}=z^2-2\Par{\Real\lambda_k}z+\aMid{\lambda_k}{^2}=z^2+bz+c.$\vspace{2pt}\parNot
-Becs $\exists$ Jordan bss of $Q_k=Q\Par{\lambda_k,T}$ for $q_k\Par{T}.$ Fix one $k$ and replace $T$ with $T\mmid_{Q_k}.$\parNot
-The Jordan $\Mt{T^2+bT+cI}=\Mt{T_{\!\Cbb}^2+bT_{\!\Cbb}+cI}=\Mt{T_{\!\Cbb}-\lambda I}\Mt{T_{\!\Cbb}-\overline{\lambda}I}.$\parNot
-Note that $\overline{T_{\!\Cbb}-\lambda I}=T_{\!\Cbb}-\overline{\lambda}I.$
+Where each $p_j\Par{z}=z-\mu_j,\,q_k\Par{z}=z^2-2\Par{\Real\lambda_k}z+\aMid{\lambda_k}{^2}=z^2+b_kz+c_k.$\vspace{2pt}\parNot
+Fix one $k.$ Let $q\Par{z}=q_k\Par{z}=\Par{z-\lambda}\Par{z-\overline{\lambda}},\lambda=a+b\i,G=G\Par{\lambda,T_{\!\Cbb}},\overline{G}=G\Par{\overline{\lambda},T_{\!\Cbb}}.$\parNot
+Replace $T$ with $T\mmid_{\:\!Q}.$ Let $Q=Q\Par{\lambda,T}$ of dim $\beta,$ and $Q_\Cbb=G\oplus\overline{G},$ and Jordan bss $B_J$ of $Q_\Cbb.$\parNot
+Now $\Mt{T_{\!\Cbb}}=\footnotesize\begin{pmatrix}A_1 &\hspace{-8pt} 0\\[-4pt]0 &\hspace{-8pt} A_2\end{pmatrix},\Mt{T_{\!\Cbb}-\lambda I}=\footnotesize\begin{pmatrix}\overline{R_1} &\hspace{-8pt} 0\\[-2pt]0 &\hspace{-8pt}\overline{R_2}\end{pmatrix},\,\Mt{T_{\!\Cbb}-\overline{\lambda}I}=\footnotesize\begin{pmatrix}{R_2} &\hspace{-8pt} 0\\[-4pt]0 &\hspace{-8pt} R_1\end{pmatrix}$ wrto Jordan bss.\parNot
+So then $\Mt{T_{\!\Cbb}^2+bT_{\!\Cbb}+cI}=\Mt{T_{\!\Cbb}-\lambda I}\Mt{T_{\!\Cbb}-\overline{\lambda}I}=\footnotesize\begin{pmatrix}{R} &\hspace{-8pt} 0\\[-4pt]0 &\hspace{-8pt} \overline{R}\end{pmatrix},$ where $R=R_1R_2.$\parNot
+Where $A_1,R_1,R_2,R$ are block diag matrices, and $A_1=\Mt{T_{\!\Cbb}\mmid_{\:\!G}},\,A_2=\Mt{T_{\!\Cbb}\mmid_{\:\!\overline{G}}}=\overline{\Mt{T_{\!\Cbb}\mmid_{\:\!G}}}.$\parNot
+Each $A_{1,k}=\footnotesize\begin{pmatrix}\lambda &\hspace{-6pt} 1 &\hspace{-14pt} &\hspace{-14pt} 0\hspace{-6pt}\\[-4pt]&\hspace{-18pt} \ddots &\hspace{-20pt} \ddots &\hspace{-14pt} \hspace{-6pt}\\[-6pt]&\hspace{-20pt} &\hspace{-20pt} \ddots &\hspace{-14pt} 1\hspace{-6pt}\\[-4pt]0 &\hspace{-14pt} &\hspace{-14pt} &\hspace{-14pt} \lambda\hspace{-6pt}\end{pmatrix},R_{1,k}=\footnotesize\begin{pmatrix}0 &\hspace{-6pt} 1 &\hspace{-14pt} &\hspace{-14pt} 0\hspace{-6pt}\\[-4pt]&\hspace{-18pt} \ddots &\hspace{-20pt} \ddots &\hspace{-14pt} \hspace{-6pt}\\[-6pt]&\hspace{-20pt} &\hspace{-20pt} \ddots &\hspace{-14pt} 1\hspace{-6pt}\\[-4pt]0 &\hspace{-14pt} &\hspace{-14pt} &\hspace{-14pt} 0\hspace{-6pt}\end{pmatrix},R_{2,k}=\footnotesize\begin{pmatrix}2b\i &\hspace{-6pt} 1 &\hspace{-14pt} &\hspace{-14pt} 0\hspace{-6pt}\\[-4pt]&\hspace{-18pt} \ddots &\hspace{-20pt} \ddots &\hspace{-14pt} \hspace{-6pt}\\[-6pt]&\hspace{-20pt} &\hspace{-20pt} \ddots &\hspace{-14pt} 1\hspace{-6pt}\\[-4pt]0 &\hspace{-14pt} &\hspace{-14pt} &\hspace{-14pt} 2b\i\hspace{-6pt}\end{pmatrix},R_k=\footnotesize\begin{pmatrix}
+0 &\hspace{-6pt} 2b\i &\hspace{-6pt} 1 &\hspace{-6pt} &\hspace{-6pt} 0\\[-4pt]
+0 &\hspace{-6pt} &\hspace{-6pt} \ddots &\hspace{-6pt} \ddots &\hspace{-6pt} \\[-4pt]
+\vdots &\hspace{-6pt} &\hspace{-6pt} &\hspace{-6pt} \ddots &\hspace{-6pt} 1\\[-4pt]
+0 &\hspace{-6pt} 0 &\hspace{-6pt} &\hspace{-6pt} &\hspace{-6pt} 2b\i\\[-4pt]
+0 &\hspace{-6pt} 0 &\hspace{-6pt} \cdots &\hspace{-6pt} \cdots &\hspace{-6pt} 0\end{pmatrix}.$\parNot
+Let the Jordan bss $Q_\Cbb$ for $T_{\!\Cbb}$ be $\Par{u_1+\i\,v_1,\dots,u_\beta+\i\,v_\beta,u_1-\i\,v_1,\dots,u_\beta-\i\,v_\beta}.$\parNot
+Now due to $\Mt{T_{\!\Cbb}},$ $T\Par{u_1\pm\i\,v_1}=\Par{a\pm\i\,b}\Par{u_1\pm\i\,v_1}=\Par{a\,u_1-b\,v_1}\pm\i\,\Par{b\,u_1+a\,v_1},$\parNot
+$T\Par{u_j\pm\i\,v_j}=\Par{a\pm\i\,b}\Par{u_j\pm\i\,v_j}+\Par{u_{j-1}\pm\i\,v_{j-1}}=\Par{a\,u_j-b\,v_j+u_{j-1}}\pm\i\,\Par{b\,u_j+a\,u_j+v_{j-1}}.$\parNot
+Hence $Tu_1=a\,u_1-b\,v_1,Tv_1=b\,u_1+a\,v_1,$ and $Tu_j=u_{j-1}+a\,u_j-b\,v_j,Tv_j=v_{j-1}+b\,u_j+a\,u_j.$\parNot
+Let $B_Q=\Par{u_1,v_1,\dots,u_\beta,v_\beta}\Rightarrow\Mt{T,B_Q}=\footnotesize\begin{pmatrix}\mR &\hspace{-6pt} I_2 &\hspace{-14pt} &\hspace{-14pt} 0\hspace{-6pt}\\[-4pt]&\hspace{-18pt} \ddots &\hspace{-20pt} \ddots &\hspace{-14pt} \hspace{-6pt}\\[-6pt]&\hspace{-20pt} &\hspace{-20pt} \ddots &\hspace{-14pt} I_2\hspace{-6pt}\\[-3pt]0 &\hspace{-14pt} &\hspace{-14pt} &\hspace{-14pt} \mR\hspace{-6pt}\end{pmatrix},$ where $\mR=\footnotesize\begin{pmatrix}a &\hspace{-6pt} b\\[-4pt]-b &\hspace{-6pt} a\end{pmatrix}$ and $I_2=\footnotesize\begin{pmatrix}1 &\hspace{-8pt} 0\\[-4pt]0 &\hspace{-8pt} 1\end{pmatrix}.$\PfEnd\vspace{2pt}
+\AComm $\overline{T_{\!\Cbb}-\lambda I}=T_{\!\Cbb}-\overline{\lambda}I.$ {\tgsl I wonder why the matrix of the conjugate of $T_{\!\Cbb}-\lambda I$ is like that above.}
 \SepLine
+\pagebreak
 
 \Anchor{9A17}\ProblemN{17}{
 	\TextA{Supp $\Fbb=\Rbb,T\in\Lm{V}$ suth $T^2=-I.$ Define complex scalar multi on $V$ as}
