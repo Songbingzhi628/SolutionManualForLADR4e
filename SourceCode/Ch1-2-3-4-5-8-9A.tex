@@ -793,7 +793,7 @@ Define each $f\Par{v_k}=a_k$ and $f\Par{x}=0$ for $x\not\in\Bra{v_1,\dots,v_n}.$
 
 \pagebreak
 
-\ChDecl{Ch3B}{3$\cdot$B}{}
+\ChDecl{Ch3B}{3$\cdot$B}{\quad{\small\textbf{注意\,:}\;这里我将3.D可逆性、同构部分前置。}}
 
 \vspace{4pt}
 
@@ -2360,9 +2360,9 @@ To fix this, we must have a bss of $V\apostrophe$ as precond, which we'll see in
 
 \ProblemN{\Anchor{3F31}{31}}{
 	\TextA{Supp $V$ is finide and $B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_n}.$ Show $\exists\,!\,B_V$ whose dual bss is the $B_{V\apostrophe}$.}
-}For each $k\in\Bra{1,\dots,n},$ let $\Gamma_{\!k}=\Bra{1,\dots,n}\Backslash[\Big]\Bra{k}.$ Let each $U_k=\bigcap_{j\in\Gamma}\null\varphi_j.$\parSol{}
+}For each $k\in\Bra{1,\dots,n},$ let $\Gamma_{\!k}=\Bra{1,\dots,n}\Backslash[\Big]\Bra{k}.$ Let each $U_k=\bigcap_{j\,\in\,\Gamma_{\!k}}\null\varphi_j.$\parSol{}
 By Exe (4E 23), $V\apostrophe=\Span{\varphi_1,\dots,\varphi_n}=\BigPar{\null\varphi_1\cap\cdots\cap\null\varphi_n}{^0}\Rightarrow U_k\cap\varphi_k=\zeroSubs.$\parSol{}
-Thus $\forall x_k\in U_k\nonzero,\;x_k\not\in\null\varphi_k$ while $x_k\in\null\varphi_j$ for all $j\in\Gamma.$\parSol{}
+Thus $\forall x_k\in U_k\nonzero,\;x_k\not\in\null\varphi_k$ while $x_k\in\null\varphi_j$ for all $j\in\Gamma_{\!k}.$\parSol{}
 Fix one $x_k$ and let $v_k=\Sbra{\varphi_k\Par{x_k}}{^{-1}}x_k\Rightarrow\varphi_k\Par{v_k}=1,\,\varphi_j\Par{v_k}=0$ for all $j\neq k.$\parSol{}
 Simply for each $v_k,$ \,$\varphi_j\Par{v_k}=\delta_{j,k}$ for all $j\Longleftrightarrow$ for each $\varphi_j,$ $\varphi_j\Par{v_k}=\delta_{j,k}$ for all $k.$\parSol{}
 又 $a_1v_1+\dots+a_nv_n=0\Rightarrow$ each $\varphi_k\Par{0}=a_k.$\vspace{2pt}\parSol{}
@@ -2371,14 +2371,14 @@ For each $k,$ we have $\varphi_j\Par{v_k}=\varphi_j\Par{u_k}$ for all $k\Rightar
 \SepLine
 
 \Anchor{3FN31}\BulletPointX\NoteForSmall{Exe (31)}\;\;Supp $V$ is finide, and $\Omega$ is a subsp of $V\apostrophe$ with $B_{\Omega}=\Par{\varphi_1,\dots,\varphi_m}.$\TextB{}
-The '$W$' is not clear when we are to find suth $W_V\apostrophe=\Omega,$ becs the another 'half' is undefined.\TextB{}
+The '$W$' is not clear when we are to find one suth $W_V\upapostrophe=\Omega,$ becs the another 'half' is undefined.\TextB{}
 Extend to $B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_n}.$ By Exe (31), $\exists\,!\,$corres $B_V=\Par{v_1,\dots,v_n}.$\TextB{}
 Let $B_U=\Par{v_{m+1},\dots,v_n},B_W=\Par{v_1,\dots,v_m}.$ \,Thus we found the $W$ suth $\Omega=W_V\upapostrophe,$\TextB{}
 which is well-defined with $B_V$ as precond.
 \SepLine
 \pagebreak
 
-\Anchor{3FT2}\BulletPointX\TipsN{2}\,\,\,Supp $\varphi_1,\dots,\varphi_m\in V\apostrophe.$ Denote $\Sbra{\null\psi_a\cap\cdots\cap\null\varphi_b}$ by \,$\bigcap_a^b\null\varphi_I.$\TextB{}
+\Anchor{3FT2}\BulletPointX\TipsN{2}\,\,\,Supp $\varphi_1,\dots,\varphi_m\in V\apostrophe.$ Denote $\Sbra{\null\varphi_a\cap\cdots\cap\null\varphi_b}$ by \,$\bigcap_a^b\null\varphi_I.$\TextB{}
 \IndentTipsN{2}Supp $\Omega$ is a subsp of $V\apostrophe.$ Denote $\Bra{v\in V:\varphi\Par{v}=0,\forall\varphi\in\Omega}$ by $C^0\,\Omega.$\TextB{\vspace{1pt}}
 If $\Omega$ is infinide, then by def, $\bigcap_{\in\,\Omega}\null\varphi=C^0\,\Omega.$ \; If $\Omega=\Span{\varphi_1,\dots,\varphi_m},$\TextB{}
 then $v\in\bigcap_1^m\null\varphi_I\Longleftrightarrow$ each $\varphi_k\Par{v}=0\Longleftrightarrow\forall\varphi=\sum_{i=1}^na_i\varphi_i\in\Omega,\varphi\Par{v}=0\Longleftrightarrow v\in C^0\,\Omega.$
@@ -2399,10 +2399,10 @@ Thus $\Span{u_1,\dots,u_q}{^0}\subseteq\Span{\beta_1,\dots,\beta_p}=\Omega.$\PfE
 	\TextA{Supp each $\varphi_i,\beta_j\in\Lm{V,W}.$ Supp $\Span{\varphi_1,\dots,\varphi_m}=\Span{\beta_1,\dots,\beta_n}.$}
 	\TextA{Prove $\null\varphi_1\cap\dots\cap\null\varphi_m=\null\beta_1\cap\dots\cap\null\beta_n.$\vspace{0pt}}
 }Becs each $\beta_k\in\Span{\varphi_1,\dots,\varphi_m}.$\parSol{}
-$\forall v\in\bigcap_1^m\null\varphi_I,\beta_k\Par{v}=0.$ Thus $\bigcap_1^m\null\varphi_I\subseteq\bigcap_1^n\null\beta_I.$ \;Rev the roles and done.\PfEnd\vspace{2pt}
-\ANote Supp $\varphi_j=c_1\varphi_1+\dots+c_{j-1}\varphi_{j-1}.$\parNot{\vspace{2pt}}
-Let $N_j\oplus\bigcap_1^{j-1}\null\varphi_I=\null\varphi_j.$ Now $\bigcap_1^j\null\varphi_I=\bigcap_1^{j-1}\null\varphi_I\cap\BigPar{\null\varphi_j}=\bigcap_1^{j-1}\null\varphi_I.$\parNot{\vspace{2pt}}
-Thus $\bigcap_1^m\null\varphi_I=\Sbra{\bigcap_1^{j-1}\null\varphi_I}\cap\Sbra{\bigcap_{j+1}^m\null\varphi_I}.$ \;Hence $\bigcap_1^n\null\beta_I=\bigcap_{1}^m\null\varphi_I.$
+$\forall v\in\bigcap_1^m\null\varphi_I,\beta_k\Par{v}=0.$ Thus $\bigcap_1^m\null\varphi_I\subseteq\bigcap_1^n\null\beta_I.$ \;Rev the roles and done.\PfEnd\vspace{4pt}\parSol{}
+Supp $\Par{\varphi_1,\dots,\varphi_j}$ is a bss of $\Span{\varphi_1,\dots,\varphi_m}.$ Let $N_{k}\oplus\bigcap_1^{j}\null\varphi_I=\null\varphi_k.$\vspace{2pt}\parSol{}
+Now $\bigcap_1^j\null\varphi_I\cap\BigPar{\null\varphi_k}=\bigcap_1^j\null\varphi_I.$ Thus $\bigcap_1^m\null\varphi_I=\bigcap_1^j\null\varphi_I.$\vspace{2pt}\parSol{}
+又 $\beta_k\in\Span{\varphi_1,\dots,\varphi_j}.$ Let $M_k\oplus\bigcap_1^{j}\null\varphi_I=\null\beta_k.$ Simlr, $\bigcap_1^n\null\beta_I=\bigcap_1^j\null\varphi_I.$\PfEnd
 \SepLine
 
 \ProblemN{\Anchor{3F26}{26}}{
@@ -2411,9 +2411,8 @@ Thus $\bigcap_1^m\null\varphi_I=\Sbra{\bigcap_1^{j-1}\null\varphi_I}\cap\Sbra{\b
 \AExa Immed, $\Omega\subseteq\Par{C^0\,\Omega}{^0}.$ Now we give a countexa for $\Omega\supseteq\Par{C^0\,\Omega}{^0}.$\parExa
 Let $V=\Bra{\Par{x_1,x_2,\cdots}\in\Fbb^{\infty}:x_k\neq 0\text{ for only finily many }k}.$ Then $V\apostrophe=\Par{\Fbb^{\infty}}\apostrophe.$\parExa
 Let $\Omega=\Bra[\envFontA]{\varphi\in\Span{\varphi_{\alpha_1},\dots,\varphi_{\alpha_m}}:\exists\:m,\alpha_k\in\Nbp}\subsetneq V\apostrophe.$ Then $C^0\,\Omega=\zeroSubs\Rightarrow\Par{C^0\,\Omega}{^0}=V\apostrophe.$\par\vspace{2pt}
-\ACoro (1) $C^0\,\Span{\varphi_1,\dots,\varphi_m}=\null\varphi_1\cap\cdots\cap\null\varphi_m.$\parCor
-(2) Supp $V$ is finide. For every subsp $\Omega$ of $V\apostrophe,\;\exists\,!\,$subsp $U$ of $V$ suth $\Omega=U^0.$\vspace{-2pt}\parCor
-\Blind{(2)} {\FontSmall\tgsl This form of $\Omega$ does not depend on a bss and thus is considered more general.}\vspace{-2pt}\par
+\ACoro Supp $V$ is finide. For every subsp $\Omega$ of $V\apostrophe,\;\exists\,!\,$subsp $U$ of $V$ suth $\Omega=U^0.$\vspace{-2pt}\parCor
+{\FontSmall\tgsl This form of $\Omega$ does not depend on a bss and thus is considered more general.}\vspace{-2pt}\par
 \SepLine
 
 \Anchor{3F'5}\ProblemB{
