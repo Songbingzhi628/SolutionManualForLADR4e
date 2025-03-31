@@ -40,7 +40,7 @@
 %{ 关于字体设置
 \setmainfont{TeXGyrePagella-Regular}
 \setmathfont{TeXGyrePagellaMath-Regular}
-\setmathfont[range={\mathcal,\Longleftrightarrow,\Longrightarrow,\Longleftarrow,\Rightarrow,\Leftarrow,\Leftrightarrow}]{LatinModernMath-Regular}
+\setmathfont[range={\mathcal,\Longleftrightarrow,\Longrightarrow,\Longleftarrow,\Rightarrow,\Leftarrow,\Leftrightarrow,\sqrt}]{LatinModernMath-Regular}
 %\setmathfont[range={\backslash}]{TeXGyrePagella-Italic}
 \setmathfont[range={\mathbb}]{TeXGyreSchola-Regular}
 \setmathfont[range={\complement}]{TeXGyrePagella-Bold}
@@ -134,6 +134,14 @@
 \newcommand{\cMid}[2][1pt]{\Mid[#1]{#2}}
 \newcommand{\aMid}[2][1pt]{\Mid[#1]{#2}}
 \newcommand{\aXMid}[2][1pt]{\Mid[#1][\Big]{#2}}
+
+\newcommand{\SmallAng}[1]{\langle{#1}\rangle}
+\newcommand{\Ang}[1]{\big\langle{#1}\big\rangle}
+\newcommand{\BigAng}[1]{\Big\langle{#1}\Big\rangle}
+\newcommand{\SmallDvert}[2][1pt]{\Vert\hspace{#1}{#2}\hspace{#1}\Vert}
+\newcommand{\Dvert}[2][1pt]{\big\Vert\hspace{#1}{#2}\hspace{#1}\big\Vert}
+\newcommand{\BigDvert}[2][1pt]{\Big\Vert\hspace{#1}{#2}\hspace{#1}\Big\Vert}
+
 \newcommand{\Bra}[2][\envFont]{{\text{\forbra{#1\{}}}#2{\text{\forbra{#1\}}}}}
 \newcommand{\BigBra}[1]{\Bra[\envFontA]{#1}}
 \newcommand{\SmallPar}[2][0pt]{{\envFontSmall[\scriptsize]\Par[#1]{#2}}}

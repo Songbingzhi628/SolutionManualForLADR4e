@@ -3320,7 +3320,7 @@ Becs $B_V=\Par{v_1,\dots,v_n}.$ Each $\Par{ST}v_j=\mu_j\lambda_j v_j=\Par{TS}v_j
 \SepLine
 
 \Anchor{5C12}\ProblemBnoor{5.C.12}{
-	\TextA{Supp $V$ is finide, $R,T\in\Lm{V}$ has same $\dim V$ eigvals $\lambda_1,\dots,\lambda$.}
+	\TextA{Supp $V$ is finide, $R,T\in\Lm{V}$ has same $\dim V$ eigvals $\lambda_1,\dots,\lambda_n.$}
 	\TextA{Prove $\exists$ inv $S\in\Lm{V}$ suth $R=S^{-1}TS.$}
 }Let $\Par{u_1,\dots,u_n},\Par{v_1,\dots,v_n}$ be the corres eigvecs of $R,T$ respectly, so be the bses of $T$.\parSol{}
 Becs each $Ru_k=\lambda_ku_k,Tv_k=\lambda_kv_k.$ Define each $S\Par{u_k}=v_k.$\PfEnd
@@ -4266,7 +4266,7 @@ Then $\exists\,!\,u_1\in G\Par{\lambda_1,T\mmid_U},w_k\in G\Par{\lambda_k,T\mmid
 
 \Anchor{8B'1}\ProblemB{
 	\TextA{Supp $T\in\Lm{V},$ and $W\oplus E\Par{\lambda,T}=G\Par{\lambda,T}.$ Prove $W$ is not invard $T.$}
-}Let $\Par{T-\lambda I}{^j}w=0\neq\Par{T-\lambda I}{^{j-1}}w=e\in E\Par{\lambda,T}.$ \,If $W$ invar, then $e=0,$ ctradic the min of $j.$\PfEnd
+}Let $w\in W$ and $\Par{T-\lambda I}{^j}w=0\neq\Par{T-\lambda I}{^{j-1}}w\in E\Par{\lambda,T}\Rightarrow W$ is not invar, by the min of $j.$\PfEnd
 \SepLine
 
 \Anchor{8BT2}\ProblemN[]{\BulletPointX B.\TipsN{2}}{
@@ -4292,9 +4292,9 @@ Thus $V_{\!\Cbb}=\nullp s\Par{T_{\!\Cbb}}\oplus\nullp q\Par{T_{\!\Cbb}}.$ And si
 %Then $V=G\Par{\lambda_1,T}\oplus\cdots\oplus G\Par{\lambda_m,T}\oplus\nullp\Par{T^2+b_1T+c_1}{^{\dim V}}\oplus\cdots\oplus\nullp\Par{T^2+b_MT+c_M}{^{\dim V}}.$
 \SepLine
 
-\Anchor{8B'2}\ProblemB{
-	\TextA{Supp $T\in\Lm{V},U$ invarspd $T.$ Give a countexa\hspace{1pt}$:$ $\exists$ invarsp $W$ suth $V=U\oplus W.$}
-}See Exa [5.43]: $V=\Cbb^2,B_U=\Par{e_1}.$ Define $Te_1=0,Te_2=e_1\Rightarrow G\Par{0,T}=V.$
+%\Anchor{8B'2}\ProblemB{
+%	\TextA{Supp $T\in\Lm{V},U$ invarspd $T.$ Give a countexa\hspace{1pt}$:$ $\exists$ invarsp $W$ suth $V=U\oplus W.$}
+%}See Exa [5.43]: $V=\Cbb^2,B_U=\Par{e_1}.$ Define $Te_1=0,Te_2=e_1\Rightarrow G\Par{0,T}=V.$
 %\AComm $G\Par{\lambda_k,T\mmid_W}=G\Par{\lambda_k,T}\cap\Par{W_1\oplus\cdots\oplus W_m}=G\Par{\lambda_k,T\mmid_{W_k}}.$\par\vspace{2pt}
 %\ANote This Exe is not true if $\Fbb=\Rbb.$ We give an exa of $T\in\Lm{V}$ and invarsp $U$\parNot
 %suth $\nexists$ invarsp $W$ of dimension $\dim V-\dim U.$ Note that no exas exis if $\dim V<5.$\parNot
@@ -4355,9 +4355,10 @@ ${}{^\neg}P\Rightarrow{}{^\neg}Q:$ \;If $\exists$ two or more eigvals of $T\mmid
 ${}{^\neg}Q\Rightarrow{}{^\neg}P:$ \;Supp $T$ has only one eigval. Let
 $m_T\Par{z}=\Par{z-\lambda}{^m}$ with $m<\dim V.$\par\quad
 \Blind{${}{^\neg}Q\Rightarrow{}{^\neg}P:$ \;}Becs $\exists$ Jordan $B_V=\Par{\underbrace{v_{1,1},\cdots,v_{m_1,1}}_{\text{bss for } U},\underbrace{v_{1,2},\cdots,v_{m_2,2},\cdots,v_{1,k},\cdots,v_{m_k,k}}_{\text{bss for }W}}$ for $T.$\PfEnd\vspace{4pt}
-\SepLine
+\SepLine\ChEnd
 
-\vfill\ChDecl{Ch9A}{9.A}{\quad{\ANote {\FontSmall $V$ denotes a finide non0 vecsp over $\Fbb.$}}}
+
+\ChDecl{Ch9A}{9.A}{\quad{\ANote {\FontSmall $V$ denotes a finide non0 vecsp over $\Fbb.$}}}
 
 \vspace{4pt}
 
@@ -4380,23 +4381,24 @@ By \Sbra{8.B \TIPSN{3}}, $V_{\!\Cbb}=\Null\Par{T_{\!\Cbb}-\lambda I}{^k}\oplus\N
 (a) $Q\Par{\lambda,T}=\nullp q\Par{T}{^d},$ where $d=\dim G\Par{\lambda,T_{\!\Cbb}}.$\parNot
 (b) The expo of $q$ in the factoriz of $m_T$ is the smallest $m\in\Nbp$ suth $q\Par{T}{^m}\Big|{_{\:\!Q\SmallPar{\:\!\lambda,\,T\:\!}}}=0.$\vspace{1pt}\parNot
 (c) $m_T=p_1^{\alpha_1}\!\cdots p_m^{\alpha_m}\:q_1^{\beta_1}\!\cdots q_M^{\beta_M}\Longleftrightarrow V=\Sbra{\bigoplus_{j=1}^mG\Par{\mu_j,T}}\oplus\Sbra{\bigoplus_{k=1}^MQ\Par{\lambda_k,T}}.$\vspace{1pt}\parNot\Hc
-Where each $p_j\Par{z}=z-\mu_j,\,q_k\Par{z}=z^2-2\Par{\Real\lambda_k}z+\aMid{\lambda_k}{^2}=z^2+b_kz+c_k.$\vspace{2pt}\parNot
-Fix one $k.$ Let $q\Par{z}=q_k\Par{z}=\Par{z-\lambda}\Par{z-\overline{\lambda}},\lambda=a+b\i,G=G\Par{\lambda,T_{\!\Cbb}},\overline{G}=G\Par{\overline{\lambda},T_{\!\Cbb}}.$\parNot
-Replace $T$ with $T\mmid_{\:\!Q}.$ Let $Q=Q\Par{\lambda,T}$ of dim $\beta,$ and $Q_\Cbb=G\oplus\overline{G},$ and Jordan bss $B_J$ of $Q_\Cbb.$\parNot
-Now $\Mt{T_{\!\Cbb}}=\footnotesize\begin{pmatrix}A_1 &\hspace{-8pt} 0\\[-4pt]0 &\hspace{-8pt} A_2\end{pmatrix},\Mt{T_{\!\Cbb}-\lambda I}=\footnotesize\begin{pmatrix}\overline{R_1} &\hspace{-8pt} 0\\[-2pt]0 &\hspace{-8pt}\overline{R_2}\end{pmatrix},\,\Mt{T_{\!\Cbb}-\overline{\lambda}I}=\footnotesize\begin{pmatrix}{R_2} &\hspace{-8pt} 0\\[-4pt]0 &\hspace{-8pt} R_1\end{pmatrix}$ wrto Jordan bss.\parNot
+Where each $p_j\Par{z}=z-\mu_j,\,q_k\Par{z}=z^2-2\Par{\Real\lambda_k}z+\aMid{\lambda_k}{^2}=z^2+b_kz+c_k.$\vspace{4pt}\parNot
+Fix one $k.$ Let $q\Par{z}=q_k\Par{z}=\Par{z-\lambda}\Par{z-\overline{\lambda}},\lambda=a+b\i,G=G\Par{\lambda,T_{\!\Cbb}},\overline{G}=G\Par{\overline{\lambda},T_{\!\Cbb}}.$\vspace{1pt}\parNot
+Replace $T$ with $T\mmid_{\:\!Q}.$ Let $Q=Q\Par{\lambda,T}$ of dim $\beta,$ and $Q_\Cbb=G\oplus\overline{G},$ and Jordan bss $B_J$ of $Q_\Cbb.$\vspace{2pt}\parNot
+Now $\Mt{T_{\!\Cbb}}=\footnotesize\begin{pmatrix}A_1 &\hspace{-8pt} 0\\[-4pt]0 &\hspace{-8pt} A_2\end{pmatrix},\Mt{T_{\!\Cbb}-\lambda I}=\footnotesize\begin{pmatrix}\overline{R_1} &\hspace{-8pt} 0\\[-2pt]0 &\hspace{-8pt}\overline{R_2}\end{pmatrix},\,\Mt{T_{\!\Cbb}-\overline{\lambda}I}=\footnotesize\begin{pmatrix}{R_2} &\hspace{-8pt} 0\\[-4pt]0 &\hspace{-8pt} R_1\end{pmatrix}$ wrto Jordan bss.\vspace{2pt}\parNot
 So then $\Mt{T_{\!\Cbb}^2+bT_{\!\Cbb}+cI}=\Mt{T_{\!\Cbb}-\lambda I}\Mt{\overline{T_{\!\Cbb}-{\lambda}I}}=\footnotesize\begin{pmatrix}{R} &\hspace{-8pt} 0\\[-4pt]0 &\hspace{-8pt} \overline{R}\end{pmatrix},$ where $R=R_1R_2.$\parNot
-Where $A_1,R_1,R_2,R$ are block diag matrices, and $A_1=\Mt{T_{\!\Cbb}\mmid_{\:\!G}},\,A_2=\Mt{T_{\!\Cbb}\mmid_{\:\!\overline{G}}}=\overline{\Mt{T_{\!\Cbb}\mmid_{\:\!G}}}.$\parNot
+Where $A_1,R_1,R_2,R$ are block diag matrices, and $A_1=\Mt{T_{\!\Cbb}\mmid_{\:\!G}},\,A_2=\Mt{T_{\!\Cbb}\mmid_{\:\!\overline{G}}}=\overline{\Mt{T_{\!\Cbb}\mmid_{\:\!G}}}.$\vspace{2pt}\parNot
 Each $A_{1,k}=\footnotesize\begin{pmatrix}\lambda &\hspace{-6pt} 1 &\hspace{-14pt} &\hspace{-14pt} 0\hspace{-6pt}\\[-4pt]&\hspace{-18pt} \ddots &\hspace{-20pt} \ddots &\hspace{-14pt} \hspace{-6pt}\\[-6pt]&\hspace{-20pt} &\hspace{-20pt} \ddots &\hspace{-14pt} 1\hspace{-6pt}\\[-4pt]0 &\hspace{-14pt} &\hspace{-14pt} &\hspace{-14pt} \lambda\hspace{-6pt}\end{pmatrix},R_{1,k}=\footnotesize\begin{pmatrix}0 &\hspace{-6pt} 1 &\hspace{-14pt} &\hspace{-14pt} 0\hspace{-6pt}\\[-4pt]&\hspace{-18pt} \ddots &\hspace{-20pt} \ddots &\hspace{-14pt} \hspace{-6pt}\\[-6pt]&\hspace{-20pt} &\hspace{-20pt} \ddots &\hspace{-14pt} 1\hspace{-6pt}\\[-4pt]0 &\hspace{-14pt} &\hspace{-14pt} &\hspace{-14pt} 0\hspace{-6pt}\end{pmatrix},R_{2,k}=\footnotesize\begin{pmatrix}2b\i &\hspace{-6pt} 1 &\hspace{-14pt} &\hspace{-14pt} 0\hspace{-6pt}\\[-4pt]&\hspace{-18pt} \ddots &\hspace{-20pt} \ddots &\hspace{-14pt} \hspace{-6pt}\\[-6pt]&\hspace{-20pt} &\hspace{-20pt} \ddots &\hspace{-14pt} 1\hspace{-6pt}\\[-4pt]0 &\hspace{-14pt} &\hspace{-14pt} &\hspace{-14pt} 2b\i\hspace{-6pt}\end{pmatrix},R_k=\footnotesize\begin{pmatrix}
 0 &\hspace{-6pt} 2b\i &\hspace{-6pt} 1 &\hspace{-6pt} &\hspace{-6pt} 0\\[-4pt]
 0 &\hspace{-6pt} &\hspace{-6pt} \ddots &\hspace{-6pt} \ddots &\hspace{-6pt} \\[-4pt]
 \vdots &\hspace{-6pt} &\hspace{-6pt} &\hspace{-6pt} \ddots &\hspace{-6pt} 1\\[-4pt]
 0 &\hspace{-6pt} 0 &\hspace{-6pt} &\hspace{-6pt} &\hspace{-6pt} 2b\i\\[-4pt]
-0 &\hspace{-6pt} 0 &\hspace{-6pt} \cdots &\hspace{-6pt} \cdots &\hspace{-6pt} 0\end{pmatrix}.$\parNot
+0 &\hspace{-6pt} 0 &\hspace{-6pt} \cdots &\hspace{-6pt} \cdots &\hspace{-6pt} 0\end{pmatrix}.$\vspace{2pt}\parNot
 Let the Jordan bss $Q_\Cbb$ for $T_{\!\Cbb}$ be $\Par{u_1+\i\,v_1,\dots,u_\beta+\i\,v_\beta,u_1-\i\,v_1,\dots,u_\beta-\i\,v_\beta}.$\parNot
 Now due to $\Mt{T_{\!\Cbb}},$ $T\Par{u_1\pm\i\,v_1}=\Par{a\pm\i\,b}\Par{u_1\pm\i\,v_1}=\Par{a\,u_1-b\,v_1}\pm\i\,\Par{b\,u_1+a\,v_1},$\parNot
-$T\Par{u_j\pm\i\,v_j}=\Par{a\pm\i\,b}\Par{u_j\pm\i\,v_j}+\Par{u_{j-1}\pm\i\,v_{j-1}}=\Par{a\,u_j-b\,v_j+u_{j-1}}\pm\i\,\Par{b\,u_j+a\,u_j+v_{j-1}}.$\parNot
-Hence $Tu_1=a\,u_1-b\,v_1,Tv_1=b\,u_1+a\,v_1,$ and $Tu_j=u_{j-1}+a\,u_j-b\,v_j,Tv_j=v_{j-1}+b\,u_j+a\,u_j.$\parNot
-Let $B_Q=\Par{u_1,v_1,\dots,u_\beta,v_\beta}\Rightarrow\Mt{T,B_Q}=\footnotesize\begin{pmatrix}\mR &\hspace{-6pt} I_2 &\hspace{-14pt} &\hspace{-14pt} 0\hspace{-6pt}\\[-4pt]&\hspace{-18pt} \ddots &\hspace{-20pt} \ddots &\hspace{-14pt} \hspace{-6pt}\\[-6pt]&\hspace{-20pt} &\hspace{-20pt} \ddots &\hspace{-14pt} I_2\hspace{-6pt}\\[-3pt]0 &\hspace{-14pt} &\hspace{-14pt} &\hspace{-14pt} \mR\hspace{-6pt}\end{pmatrix},$ where $\mR=\footnotesize\begin{pmatrix}a &\hspace{-6pt} b\\[-4pt]-b &\hspace{-6pt} a\end{pmatrix}$ and $I_2=\footnotesize\begin{pmatrix}1 &\hspace{-8pt} 0\\[-4pt]0 &\hspace{-8pt} 1\end{pmatrix}.$\PfEnd
+$T\Par{u_j\pm\i\,v_j}=\Par{a\pm\i\,b}\Par{u_j\pm\i\,v_j}+\Par{u_{j-1}\pm\i\,v_{j-1}}=\Par{a\,u_j-b\,v_j+u_{j-1}}\pm\i\,\Par{b\,u_j+a\,v_j+v_{j-1}}.$\parNot
+Hence $Tu_1=a\,u_1-b\,v_1,Tv_1=b\,u_1+a\,v_1,$ and $Tu_j=u_{j-1}+a\,u_j-b\,v_j,Tv_j=v_{j-1}+b\,u_j+a\,v_j.$\parNot
+Let $B_Q=\Par{u_1,v_1,\dots,u_\beta,v_\beta}\Rightarrow\Mt{T,B_Q}=\footnotesize\begin{pmatrix}\mR &\hspace{-6pt} I_2 &\hspace{-14pt} &\hspace{-14pt} 0\hspace{-6pt}\\[-4pt]&\hspace{-18pt} \ddots &\hspace{-20pt} \ddots &\hspace{-14pt} \hspace{-6pt}\\[-6pt]&\hspace{-20pt} &\hspace{-20pt} \ddots &\hspace{-14pt} I_2\hspace{-6pt}\\[-3pt]0 &\hspace{-14pt} &\hspace{-14pt} &\hspace{-14pt} \mR\hspace{-6pt}\end{pmatrix},$ where $\mR=\footnotesize\begin{pmatrix}a &\hspace{-6pt} b\\[-4pt]-b &\hspace{-6pt} a\end{pmatrix}$ and $I_2=\footnotesize\begin{pmatrix}1 &\hspace{-8pt} 0\\[-4pt]0 &\hspace{-8pt} 1\end{pmatrix}.$\vspace{-10pt}\parNot
+\Or $B_Q=\Par{v_1,u_1,\dots,v_\beta,u_\beta}\Rightarrow\mR=\footnotesize\begin{pmatrix}a &\hspace{-6pt} -b\\[-4pt]b &\hspace{-6pt} a\end{pmatrix}.$
 \SepLine
 
 %\Anchor{9A18}\ProblemN{18}{

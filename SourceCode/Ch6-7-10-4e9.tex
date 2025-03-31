@@ -3,21 +3,56 @@
 
 \ChDecl{Ch6A}{6.A}{}
 
+\vspace{4pt}
+
+\Anchor{6A3}\ProblemN{3}{
+	\TextA{}
+}
+\SepLine
+
+\Anchor{6A6}\ProblemN{6}{
+	\TextA{Supp $u,v\in V.$ Prove $\Ang{u,v}=0\Longleftrightarrow\Dvert{u}\leqslant\Dvert{u+av}$ for all $a\in\Fbb.$}
+}Supp $\Ang{u,v}=0=\Ang{u,av}\Rightarrow\Dvert{u+av}{^2}=\Ang{u,u+av}+\Ang{av,u+av}=\Dvert{u}{^2}+\aMid{a}{^2}\Dvert{v}{^2}\geqslant\Dvert{u}{^2}.$\vspace{2pt}\parSol{}
+Supp $\Dvert{u}{^2}\leqslant\Dvert{u+av}{^2}.$ Let $\Ang{u-cv,cv}=0\Rightarrow\Dvert{u-cv}{^2}=\Ang{u,u-cv}=\Dvert{u}{^2}-\overline{c}\Ang{u,v}.$\parSol{}
+Thus $\Dvert{u}{^2}\leqslant\Dvert{u-cv}{^2}=\Dvert{u}{^2}-\aXMid{\Ang{u,v}}{\;\!\XSlash\;\!}\Dvert{v}{^2},$ by [6.14].\PfEnd
+\SepLine
+
+\Anchor{6A9}\ProblemN{9}{
+	\TextA{Supp $u,v\in V,$ and $\Dvert{u},\Dvert{v}\leqslant 1.$ Prove $\sqrt{1-\Dvert{u}{^2}}\sqrt{1-\Dvert{v}{^2}}\leqslant 1-\aXMid{\Ang{u,v}}.$\vspace{1pt}}
+}Becs $\aXMid{\Ang{u,v}}\leqslant 1.$ We show $\BigPar{1-\Dvert{u}{^2}}\BigPar{1-\Dvert{v}{^2}}\leqslant\BigBigPar{1-\aXMid{\Ang{u,v}}}{^2}.$\parSol{}
+Equiv to $\Dvert{u}{^2}\Dvert{v}{^2}-\aXMid{\Ang{u,v}}{^2}\leqslant\Dvert{u}{^2}+\Dvert{v}{^2}-2\:\aXMid{\Ang{u,v}}.$ Note that $2\:\aXMid{\Ang{u,v}}\leqslant\aXMid{\Ang{u,v}}{^2}.$\parSol{}
+
+\SepLine
+
+\Anchor{6A4e19}\ProblemBnoor{4E 19}{
+	\TextA{Supp $T\in\Lm{V},A=\Mt[\BigPar]{T,\Par{v_1,\dots,v_n}},$ and $\lambda$ is eigval.\vspace{2pt}}
+	\TextA{Prove $\aMid{\lambda}{^2}\leqslant\sum_{j=1}^n\sum_{k=1}^n\aMid{A_{j,k}}{^2}.$}
+}
+
+\SepLine
+
+\Anchor{6A4e23}\ProblemBnoor{4E 23}{
+	\TextA{Supp $v_1,\dots,v_m\in V$ with each $\Dvert{v_k}\leqslant 1.$}
+	\TextA{Show $\exists\,a_k\in\Bra{1,-1}$ suth $\Dvert{a_1v_1+\dots+a_mv_m}\leqslant\sqrt{m}.$}
+}We use induc on $m.$ (i) $m=1.$ Immed. (ii) $m>1.$ Asum it holds for smaller $m.$\parSol{}
+Let $u=a_1v_1,w=a_2v_2+\dots+a_mv_m\Rightarrow\Dvert{u}\leqslant1,\Dvert{w}\leqslant\sqrt{m-1}.$\parSol{}
+Then $\Dvert{u+w}{^2}=\Dvert{u}{^2}+\Dvert{w}{^2}+2\REAL\Ang{u,w}\leqslant m.$
+\SepLine
 
 
-\ChEnd
+\ChEnd\pagebreak
 
 \ChDecl{Ch6B}{6.B}{}
 
-\ChEnd
+\ChEnd\pagebreak
 
 \ChDecl{Ch6C}{6.C}{}
 
-\ChEnd
+\ChEnd\pagebreak
 
 \ChDecl{Ch7A}{7.A}{}
 
-\ChEnd
+\ChEnd\pagebreak
 
 \ChDecl{Ch7B}{7.B}{}
 
