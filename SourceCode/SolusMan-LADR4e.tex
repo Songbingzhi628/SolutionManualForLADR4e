@@ -24,7 +24,7 @@ identical terms. {\tgsl All images except for `by-nc-sa.png' in this manual are 
 
 
 \centerline{\Large 简介}\vspace{6pt}\par
-{\footnotesize 这是我个人用于复习的「 {\tgsc Linear Algebra Done Right 3E/4E, by Sheldon Axler} 」笔记，一本习题选答与课文补注。范围覆盖所有第三版和第四版的课文和习题（除了第一章A节、极少数结合上下文太过显而易见的习题。没有任何日后反复推敲价值的当堂习题和方法套路过于雷同的习题）。这份笔记尚处于缓慢的编撰进度中。\par\vspace{4pt}
+{\footnotesize 这是我个人用于复习的「 {\tgsc Linear Algebra Done Right 3E/4E, by Sheldon Axler} 」笔记，一本习题选答与课文补注。范围覆盖所有第三版和第四版的课文和习题（除了第一章A节、极少数结合上下文太过显而易见的习题、没有任何日后反复推敲价值的当堂/'一遍过'习题和方法套路过于雷同的习题）。这份笔记尚处于缓慢的编撰进度中。\par\vspace{4pt}
 {\footnotesize 习题答案中，有我完全独立思考得出的，有抄 \textcolor{blue}{https://linearalgebras.com/} 的, 有抄 \textcolor{blue}{https://math.stackexchange.com/} 的, 有抄 \textcolor{blue}{LADR2eSolutions（By Axler）.pdf } ，有抄最新的 \textcolor{blue}{LADR4eSolutions经典最全（By Axler？）.pdf} ，还有请教别人，乃至请教AI得出来的。\par
 {\scriptsize 这些文档的许可证件，除 \textcolor{blue}{LADR4eSolutions经典最全（By Axler？）.pdf} 找不到/没有指明外，都允许复制/引用。}\par\vspace{4pt}
 课文补注中，除了我独立思考总结出的易错误区和技巧、难点之外，还（因为我想要兼容那些使用LADR第三版纸质书的读者，包括我在内）把LADR4e中对课文定理等等的修改也（作了简化和提炼）摘录上去。部分课文内容因为比较简单，比如3E节的积空间，所以我做了概念前置，这相当于更改了原书的内容顺序。\par\vspace{4pt}
@@ -382,16 +382,15 @@ $}$
 }
 
 \BmarkI{1}{B}{
-	\BM{1}\BM{2}\BM{3}\BM{5}\BM{6}
 	\BMFE{7}
 	\BMX[1]{N1}{Note For Fields}
 }
 
 \BmarkI{1}{C}{
-	\BM{7}\BM{8}\BM{9}\BM{11}\BM{12}\BM{13}\BM{15}\BM{16}\BM{17}\BM{18}\BM{21}\BM{22}\BM{23}\BM{24}
+	\BM{7}\BM{11}\BM{12}\BM{13}\BM{15}\BM{16}\BM{17}\BM{18}\BM{24}
 	\BM{'1}\BM{'2}
 	\BMXStart{Tips}\BMX{T1}{1}\BMX{T2}{2}\BMX{T3}{3}\BMX{T4}{4}
-	\BMXStart{Notes}\BMX{NE5}{For Exe (5)}\BMX{NE6}{For Exe (6)}\BMX{N1.45}{For [1.45]}\BMX{N1.38}{For [1.38]}\BMX{NC}{About Complements}
+	\BMXStart{Notes}\BMX{NE5}{For Exe (5)}\BMX{NE6}{For Exe (6)}\BMX{N1.45}{For [1.45]}\BMX{NC}{About Complements}
 }
 
 \BmarkI{2}{A}{
@@ -408,46 +407,46 @@ $}$
 }
 
 \BmarkI{2}{C}{
-	\BM{1}\BM{7}\BM{9}\BM{10}\BM{14}\BM{16}\BM{15}\BM{17}
+	\BM{7}\BM{9}\BM{10}\BM{14}\BM{16}\BM{17}
 	\BMFE{10}\BMFE{14}\BMFE{15}\BMFE{16}
-	\BM{'1}
+	\BM{'1}\BM{'2}
 	\BMX[1]{T10}{Compare with Exe (10)}
 	\BMXStart{Notes}\BMX{N10}{For Exe (10)}\BMX{N15}{For Exe (15)}
 }
 
 \BmarkI{3}{A}{
-	\BM{3}\BM{4}\BM{5}\BM{7}\BM{8}\BM{9}\BM{10}\BM{11}\BM{12}\BM{13}
+	\BM{10}\BM{11}\BM{12}\BM{13}
 	\BMFE{10}\BMFE{11}\BMFE{17}
-	\BM{'1}\BM{'2}
-	\BMXStart{Tips}\BMX{T1}{1}\BMX{T2}{2}\BMX{T3}{3}
+	\BM{'1}
+	\BMXStart{Tips}\BMX{T1}{1}\BMX{T2}{2}
 	\BMXStart{Notes}\BMX{NR}{For Restr}\BMX{NFS}{For \ensuremath{\Fbb^S}}\BMX{NLC}{For Complex}
 }
 
 \BmarkI{3}{B}{
-	\BM{3}\BM{7}\BM{8}\BM{9}\BM{10}\BM{11}\BM{12}\BM{16}\BM{17}\BM{18}\BM{19}\BM{20}\BM{21}\BM{22}\BM{23}\BM{24}\BM{25}\BM{26}\BM{28}\BM{29}\BM{30}
-	\BMFE{21}\BMFE{24}\BMFE{27}\BMFE{31}\BMFE{32}\BMFE{33}
+	\BM{10}\BM{11}\BM{12}\BM{20}\BM{21}\BM{22}\BM{23}\BM{24}\BM{25}\BM{26}\BM{28}\BM{30}
+	\BM{'1}
+	\BMFE{21}\BMFE{24}\BMFE{27}\BMFE{31}\BMFE{32}
 	\BMXStart{Tips}\BMX{T1}{1}\BMX{T2}{2}\BMX{T3}{3}\BMX{T4}{4}\BMX{T5}{5}
-	\BMXStart{Notes}\BMX{C2425}{For Exe (24, 25)}
 }
 
 \BmarkI{3}{C}{
-	\BM{1}\BM{3}\BM{4}\BM{5}\BM{6}\BM{9}\BM{10}\BM{11}\BM{13}
+	\BM{5}\BM{6}\BM{9}\BM{10}\BM{11}
 	\BMFE{16}\BMFE{17}
 	\BMXStart{Tips}\BMX{T1}{1}\BMX{T2}{2}
-	\BMXStart{Notes}\BMX{N3.3032}{For [3.30, 32]}\BMX{NTrspose}{For Trspose}\BMX{N3.47}{For [3.47]}\BMX{N3.48}{For [3.48]}\BMX{N3.49}{For [3.49]}\BMX{N4e3.51}{For [4E 3.51]}\BMX{NCRFact}{CR Factoriz}\BMX{NCrankEqRrank}{Col Rank = Row Rank}
+	\BMXStart{Notes}\BMX{N3.3032}{For [3.30, 32]}\BMX{NTrspose}{For Trspose}\BMX{N3.47}{For [3.47]}\BMX{N3.49}{For [3.49]}\BMX{N4e3.51}{For [4E 3.51]}\BMX{NCRFact}{CR Factoriz}\BMX{NCrankEqRrank}{Rank Col = Row}
 }
 
 \BmarkI{3}{D}{
-	\BM{1}\BM{2}\BM{3}\BM{4}\BM{5}\BM{6}\BM{7}\BM{8}\BM{9}\BM{10}\BM{11}\BM{12}\BM{13}\BM{15}\BM{16}\BM{17}\BM{18}\BM{19}
-	\BMFE{3}\BMFE{10}\BMFE{15}\BMFE{17}\BMFE{19}\BMFE{20}\BMFE{22}\BMFE{23}\BMFE{24}
+	\BM{3}\BM{4}\BM{5}\BM{6}\BM{7}\BM{8}\BM{9}\BM{10}\BM{16}\BM{18}\BM{19}
+	\BMFE{10}\BMFE{15}\BMFE{17}\BMFE{19}\BMFE{20}\BMFE{23}
 	\BM{'1}\BM{'2}\BM{'3}\BM{'4}
 	\BMXStart{Tips}\BMX{T1}{1}\BMX{T2}{2}\BMX{T3}{3}
-	\BMXStart{Notes}\BMX{N3.60}{For [3.60]}\BMX{N3.62}{For [3.62]}\BMX{N3.65}{For [3.65]}
+	\BMXStart{Notes}\BMX{NE4e22}{For Exe (4E 22)}\BMX{N3.60}{For [3.60]}\BMX{N3.62}{For [3.62]}\BMX{N3.65}{For [3.65]}
 }
 
 \BmarkI{3}{E}{
-	\BM{1}\BM{2}\BM{3}\BM{4}\BM{5}\BM{6}\BM{7}\BM{8}\BM{9}\BM{10}\BM{11}\BM{12}\BM{13}\BM{14}\BM{15}\BM{16}\BM{17}\BM{18}\BM{20}
-	\BMFE{8}\BMFE{14}
+	\BM{1}\BM{2}\BM{3}\BM{6}\BM{7}\BM{8}\BM{9}\BM{10}\BM{11}\BM{12}\BM{13}\BM{14}\BM{16}\BM{17}\BM{18}\BM{20}
+	\BMFE{14}
 	\BM{'1}\BM{'2}
 	\BMXStart{Tips}\BMX{T1}{1}\BMX{T2}{2}\BMX{T3}{3}\BMX{T4}{4}
 	\BMXStart{Notes}\BMX{N3.79}{For [3.79]}\BMX{N3.7983}{For [3.79, 83]}\BMX{N3.85}{For [3.85]}\BMX{N3.88}{For [3.88]}\BMX{N3.889091}{For [3.88, 90, 91]}
@@ -490,7 +489,7 @@ $}$
 
 \BmarkI{5}{C}[5.C(3E) \& 5.D(4E)]{
 	\BM{5}
-	\BMFE{13}\BMFE{14}\BMFE{16}\BMFE{18}\BMFE{19}\BMFE{23}
+	\BMFE{13}\BMFE{14}\BMFE{16}\BMFE{18}\BMFE{19}
 	\BM{'1}
 	\BMXStart{Lemmata}[5C]\BMX{L1}{1}
 }
@@ -503,32 +502,29 @@ $}$
 	\BMXStart{Notes}\BMX{N8.19}{For [8.19] Or [4E 8.18]}
 	\BMXStart{Tips}\BMX{BT1}{B.1}\BMX{BT2}{B.2}\BMX{BT3}{B.3}
 
-	\BMXStart{A}[8A]
-	\BMX{A3}{3}\BMX{A5}{5}\BMX{A6}{6}
-	  \BMX{A13}{13}\BMX{A14}{14}
-	\BMX{A10}{10}\BMX{A17}{17}\BMX{A18}{18}
-	\BMX{A4e3}{4E 3}\BMX{A4e4}{4E 4}\BMX{A4e12}{4E 12}\BMX{A4e15}{4E 15}\BMX{A4e16}{4E 16}\BMX{A4e18}{4E 18}\BMX{A4e24}{4E 24}
+	\newcommand{\BMXI}[2]{\BMX[1]{#1}{#2}}
+	\BMXI{A3}{A.3}\BMXI{A5}{A.5}\BMXI{A6}{A.6}
+	  \BMXI{A13}{A.13}\BMXI{A14}{A.14}
+	\BMXI{A10}{A.10}\BMXI{A17}{A.17}\BMXI{A18}{A.18}
+	\BMXI{A4e3}{4E A.3}\BMXI{A4e4}{4E A.4}\BMXI{A4e12}{4E A.12}\BMXI{A4e15}{4E A.15}\BMXI{A4e16}{4E A.16}\BMXI{A4e18}{4E A.18}\BMXI{A4e24}{4E A.24}
 
-	\BMXStart{B}[8B]
-	\BMX{B5}{5}\BMX{B9}{9}\BMX{B10}{10}
-	\BMX{B'1}{'1}
-	\BMX{B4e6}{4E 6}\BMX{B4e7}{4E 7}
-		\BMX{B4e10}{4E 10}\BMX{B4e19}{4E 19}
-	\BMX{B4e20}{4E 20}
+	\BMXI{B5}{B.5}\BMXI{B9}{B.9}\BMXI{B10}{B.10}
+	\BMXI{B'1}{B.'1}
+	\BMXI{B4e6}{4E B.6}\BMXI{B4e7}{4E B.7}
+		\BMXI{B4e10}{4E B.10}\BMXI{B4e19}{4E B.19}
+	\BMXI{B4e20}{4E B.20}
 
-	\BMXStart{C}[8C]
-	\BMX{C11}{11}
-		\BMX{C13}{13}\BMX{C14}{14}
-	\BMX{C15}{15}
-		\BMX{C16}{16}
-	\BMX{C18}{18}\BMX{C20}{20}
+	\BMXI{C11}{C.11}
+		\BMXI{C13}{C.13}\BMXI{C14}{C.14}
+	\BMXI{C15}{C.15}
+		\BMXI{C16}{C.16}
+	\BMXI{C18}{C.18}\BMXI{C20}{C.20}
 
-	\BMXStart{D}[8D]
-	\BMX{D8}{8}\BMX{C4e12}{4E C.12}
+	\BMXI{D8}{D.8}\BMXI{C4e12}{4E C.12}
 }
 
 \BmarkI{9}{A}{
-	\BM{2}\BM{3}\BM{4}\BM{5}\BM{6}\BM{13}\BM{17}
+	\BM{3}\BM{4}\BM{13}\BM{17}
 }
 
 \BmarkI{6}{A}{
