@@ -927,7 +927,7 @@ Becs $\range T=\range T\mmid_U=\Span{Tv_1,\dots,Tv_n},$ 又 $T$ is inje.
 	\TextB{Supp $T\in\Lm{V}$ and $V=\Span{Tv_1,\dots,Tv_m}$. Prove $V=\Span{v_1,\dots,v_m}$.}
 }Becs $V=\Span{Tv_1,\dots,Tv_m}\Rightarrow T$ surj $\Rightarrow T,T^{-1}$ inv.\parSol{}
 $\forall v\in V,\exists\,a_i\in\Fbb, v=\sum_{i=1}^ma_i Tv_i\Rightarrow T^{-1}v=\sum_{i=1}^ma_i v_i\Rightarrow \range T^{-1}\subseteq\Span{v_1,\dots,v_m}.$\vspace{2pt}\parSol{}
-\Or Reduce to a bss $\Par{Tv_{\alpha_1},\dots,Tv_{\alpha_k}},$ where $k=\dim V,$ each $\alpha_i\in\Bra{1,\dots,m}.$ By (4E 3.D.3).\PfEnd
+\Or Reduce to a bss $\Par{Tv_{\:\!\!\alpha_1},\dots,Tv_{\:\!\!\alpha_k}},$ where $k=\dim V,$ each $\alpha_i\in\Bra{1,\dots,m}.$ By (4E 3.D.3).\PfEnd
 \SepLine
 
 \Anchor{3B4e27}\Anchor{5BI4}\ProblemBnoor{{4E 27}}{
@@ -1208,16 +1208,15 @@ So that $\fT\fC_k\fT=\fR_k,\;\fT\fR_j\fT=\fC_j,$ \,and $\fT\fP_{j,k}\fT=\fP_{k,j
 Let $A={}{\normalsize\begin{pmatrix}A_{1,1} &\hspace{-6pt} \cdots &\hspace{-6pt} A_{1,n}\\[-4pt] \vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots\\[-4pt] A_{m,1} &\hspace{-6pt} \cdots &\hspace{-6pt} A_{m,n}\end{pmatrix}}\Rightarrow A^t={}{\normalsize\begin{pmatrix}A_{1,1} &\hspace{-6pt} \cdots &\hspace{-6pt} A_{m,1}\\[-4pt] \vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots\\[-4pt] A_{1,n} &\hspace{-6pt} \cdots &\hspace{-6pt} A_{m,n}\end{pmatrix}}.$ \;$\MathLeftMid{l}{\!\!$
 Note that $\Par{A_{j,k}}{^t}=A_{j,k}=\Par{A^t}_{k,j}.$ Thus (c) holds.$\\$
 \!\!And $\Par{A_{\cdot,k}}{^t}={}{\small\begin{pmatrix}A_{1,k} &\hspace{-6pt} \cdots &\hspace{-6pt}A_{m,k}\end{pmatrix}}{}={}{\small\begin{pmatrix}A^t_{k,1} &\hspace{-6pt} \cdots &\hspace{-6pt}A^t_{k,m}\end{pmatrix}}{}=\Par{A^t}{_{k,\cdot}}\\$
-\!\!$\Longrightarrow$ (b) holds. Simlr for (a).$}$\par\vspace{8pt}
+\!\!$\Longrightarrow$ (b) holds. Simlr for (a).$}$\par\vspace{10pt}
 \SepLine
 
-\Anchor{3CN3.47}\BulletPointX\NoteForSmall{[3.47]}\,\, $\BigPar{AC}{_{j,k}}=\sum_{r=1}^n A_{j,r}C_{r,k}=\sum_{r=1}^n \BigPar{A_{j,\cdot}}_{1,r}\BigPar{C_{\cdot,k}}_{r,1}=\BigPar{A_{j,\cdot}C_{\cdot,k}}_{1,1}=A_{j,\cdot}C_{\cdot,k}$\PfEnd\vspace{6pt}
-\Anchor{3CN3.49}\BulletPointX\NoteForSmall{[3.49]} ${\BigSbra{\BigPar{AC}_{\cdot,k}}}_{j,1}=\BigPar{AC}_{j,k}=\sum_{r=1}^n A_{j,r}C_{r,k}=\sum_{r=1}^n A_{j,r}\BigPar{C_{\cdot,k}}_{r,1}=\BigPar{AC_{\cdot,k}}_{j,1}$\PfEnd\vspace{6pt}
-\Anchor{3C10}\BulletPointX\Exercise{10}\;\;${\BigSbra{\BigPar{AC}_{j,\cdot}}}_{1,k}=\BigPar{AC}_{j,k}=\sum_{r=1}^n A_{j,r}C_{r,k}=\sum_{r=1}^n \BigPar{A_{j,\cdot}}_{1,r}C_{r,k}=\BigPar{A_{j,\cdot}C}_{1,k}$\PfEnd\vspace{6pt}
-\BulletPointX\ANote For [3.49], let $B_U=\Par{u_1,\dots,u_p},B_V=\Par{v_1,\dots,v_n},B_W=\Par{w_1,\dots,w_m}.$\vspace{2pt}\parNot{}\IndentB{}
-And $C=\Mt{T,B_U,B_V}\in\Fbb^{n,p},A=\Mt{S,B_V,B_W}\in\Fbb^{m,n}.$\vspace{1pt}\parNot{}\IndentB{}
-Then $\Mt{Tu_k,B_V}=C_{\cdot,k}\Rightarrow\Mt[\BigPar]{S\Par{Tu_k},B_W}=AC_{\cdot,k}\,,$ \;又 $\Mt[\BigBigPar]{\Par{ST}\Par{u_k},B_W}=\Par{AC}{_{\cdot,k}}$\PfEnd\vspace{4pt}\parNot{}\IndentB{}
-By {\NOTEFOR} Trspose, $\BigPar{AC}{_{j,\cdot}}=\BigSbra{\BigBigPar{\BigPar{AC}{^t}}{_{\cdot,j}}}{^t}=\BigPar{C^t\Par{A^t}{_{\cdot,j}}}{^t}=\BigPar{\Par{A^t}{_{\cdot,j}}}{^t}C=A_{j,\cdot}C$\PfEnd
+\Anchor{3CN3.47}\BulletPointX\NoteForSmall{[3.47]}\,\, $\BigPar{AC}{_{j,k}}=\sum_{r=1}^n A_{j,r}C_{r,k}=\sum_{r=1}^n \BigPar{A_{j,\cdot}}_{1,r}\BigPar{C_{\cdot,k}}_{r,1}=\BigPar{A_{j,\cdot}C_{\cdot,k}}_{1,1}=A_{j,\cdot}C_{\cdot,k}$\PfEnd\vspace{7pt}
+\Anchor{3CN3.49}\BulletPointX\NoteForSmall{[3.49]} ${\BigSbra{\BigPar{AC}_{\cdot,k}}}_{j,1}=\BigPar{AC}_{j,k}=\sum_{r=1}^n A_{j,r}C_{r,k}=\sum_{r=1}^n A_{j,r}\BigPar{C_{\cdot,k}}_{r,1}=\BigPar{AC_{\cdot,k}}_{j,1}$\PfEnd\vspace{8pt}
+\Anchor{3C10}\BulletPointX\Exercise{10}\;\;${\BigSbra{\BigPar{AC}_{j,\cdot}}}_{1,k}=\BigPar{AC}_{j,k}=\sum_{r=1}^n A_{j,r}C_{r,k}=\sum_{r=1}^n \BigPar{A_{j,\cdot}}_{1,r}C_{r,k}=\BigPar{A_{j,\cdot}C}_{1,k}$\PfEnd\vspace{10pt}
+\BulletPointX\ANote By (3.A.3), let $C=\Mt{T}\in\Fbb^{n,p},A=\Mt{S}\in\Fbb^{m,n}$ wrto std bses.\vspace{3pt}\parNot{}\IndentB{}
+For [3.49], $\Mt{Te_k,B_V}=C_{\cdot,k}\Rightarrow\Mt[\BigPar]{S\Par{Te_k},B_W}=AC_{\cdot,k}\,,$ \;又 $\Mt[\BigBigPar]{\Par{ST}\Par{e_k},B_W}=\Par{AC}{_{\cdot,k}}$\PfEnd\vspace{5pt}\parNot{}\IndentB{}
+For Exe (10), $\BigPar{AC}{_{j,\cdot}}=\BigSbra{\BigBigPar{\BigPar{AC}{^t}}{_{\cdot,j}}}{^t}=\BigPar{C^t\Par{A^t}{_{\cdot,j}}}{^t}=\BigPar{\Par{A^t}{_{\cdot,j}}}{^t}C=A_{j,\cdot}C$\PfEnd
 \SepLine
 
 \Anchor{3CN4e3.51}\ProblemBnoor[]{4E 3.51}[\Sbra]{
@@ -1226,10 +1225,10 @@ By {\NOTEFOR} Trspose, $\BigPar{AC}{_{j,\cdot}}=\BigSbra{\BigBigPar{\BigPar{AC}{
 }\SepLine
 
 \Anchor{3C9}\BulletPointX\NoteForSmall{[3.52]}\;\;$A\in\Fbb^{m,n},c\in\Fbb^{n,1}\Rightarrow Ac\in\Fbb^{m,1}.$\hfill By \Sbra{4E 3.51(a)}, $\BigPar{Ac}{_{\cdot,1}}=c_1A_{\cdot,1}+\dots+c_nA_{\cdot,n}.$\Blind{\quad}\PfEnd\vspace{4pt}\quad
-\Or $\because\;\BigPar{Ac}{_{j,1}}=\sum_{r=1}^n A_{j,r}c_{r,1}=\BigSbra{\sum_{r=1}^n\BigPar{A_{\cdot,r}c_{r,1}}}_{j,1}=\BigPar{c_1 A_{\cdot,1}+\dots+c_n A_{\cdot,n}}_{j,1}$\vspace{1pt}\par\quad
-\Blind{\Or}$\therefore\;\,Ac=A_{\cdot,\cdot}c_{\cdot,1}=\sum_{r=1}^n A_{\cdot,r}c_{r,1}=c_1 A_{\cdot,1}+\dots+c_n A_{\cdot,n}$\;\;\Or $\BigPar{Ac}{_{j,1}}=\BigPar{Ac}{_{j,\cdot}}=A_{j,\cdot}c\in\Fbb.$\PfEnd\vspace{2pt}\quad
+\Or $\because\;\BigPar{Ac}{_{j,1}}=\sum_{r=1}^n A_{j,r}c_{r,1}=\BigSbra{\sum_{r=1}^n\BigPar{A_{\cdot,r}c_{r,1}}}_{j,1}=\BigPar{c_1 A_{\cdot,1}+\dots+c_n A_{\cdot,n}}_{j,1}$\vspace{2pt}\par\quad
+\Blind{\Or}$\therefore\;\,Ac=A_{\cdot,\cdot}c_{\cdot,1}=\sum_{r=1}^n A_{\cdot,r}c_{r,1}=c_1 A_{\cdot,1}+\dots+c_n A_{\cdot,n}$\;\;\Or $\BigPar{Ac}{_{j,1}}=\BigPar{Ac}{_{j,\cdot}}=A_{j,\cdot}c\in\Fbb.$\PfEnd\vspace{3pt}\quad
 \Or Let $B_V=\Par{v_1,\dots,v_n}.$ Now $Ac=\Mt{Tv,B_W}=\Mt[\BigPar]{T\Par{c_1v_1+\dots+c_nv_n}}=c_1A_{\cdot,1}+\dots+c_nA_{\cdot,n}.$\PfEnd
-\SepLine
+\SepLine\pagebreak
 
 \Anchor{3C11}\BulletPointX\Exercise{11}\;\;$a\in\Fbb^{1,n},C\in\Fbb^{n,p}\Rightarrow aC\in\Fbb^{1,p}.$\hfill By \Sbra{4E 3.51(b)}, $\BigPar{aC}{_{1,\cdot}}=a_1C_{1,\cdot}+\dots+a_nC_{n,\cdot}.$\Blind{\quad}\PfEnd\vspace{4pt}\quad
 \Or $\because\;\BigPar{aC}{_{1,k}}=\sum_{r=1}^n a_{1,r}C_{r,k}=\BigSbra{\sum_{r=1}^n a_{1,r}\BigPar{C_{r,\cdot}}}_{1,k}=\BigPar{a_1 C_{1,\cdot}+\dots+a_n C_{n,\cdot}}_{1,k}$\vspace{2pt}\par\quad
@@ -1334,36 +1333,36 @@ Now $p\Par{T_1,\dots,T_n}=p\Par{T_{\alpha_1},\dots,T_{\alpha_n}}\Longleftrightar
 
 \Anchor{3CT2}\ProblemBX{\TipsN{2}}{
 	\TextA{Supp $T\in\Lm{V,W},\;B_V=\Par{v_1,\dots,v_n},B_W=\Par{w_1,\dots,w_m}.$\vspace{-1pt}}
-	{\tgsl Let $L=\BigPar{Tv_{\alpha_1},\dots,Tv_{\alpha_k}},\;L_{\mM}=\BigPar{A_{\cdot,\alpha_1},\cdots,A_{\cdot,\alpha_k}},$ where each $\alpha_i\in\Bra{1,\dots,n}.$}\TextA{\vspace{1pt}}
+	{\tgsl Let $L=\BigPar{Tv_{\:\!\!\alpha_1},\dots,Tv_{\:\!\!\alpha_k}},\;L_{\mM}=\BigPar{A_{\cdot,\alpha_1},\cdots,A_{\cdot,\alpha_k}},$ where each $\alpha_i\in\Bra{1,\dots,n}.$}\TextA{\vspace{1pt}}
 	\PrePa\TextA{Show [P] $L$ is liney indep $\Longleftrightarrow L_{\mM}$ is liney indep. [Q]\vspace{2pt}}
 	\PrePb\TextA{Show [P] $\spn L=W\Longleftrightarrow\spn L_{\mM}=\Fbb^{m,1}.$ [Q]\hfill\FontNorm\Sbra{ Let $A=\Mt{T,B_V,B_W}.$\hspace{1pt}}\vspace{3pt}}
 }(a) Note that $\mM\!:\,Tv_k\rightarrow A_{\cdot,k}$ is iso. of $\spn L$ onto $\spn L_{\mM}.$ By (3.B.9).\parSol{}
-(b) Reduce to liney indep lists. By (a) and (2.39).\PfEnd\vspace{4pt}\quad
-\Or\;$c_1Tv_{\alpha_1}+\dots+c_kTv_{\alpha_k}=c_1\BigPar{A_{1,{\alpha_1}}w_1+\dots+A_{m,{\alpha_1}}w_m}+\dots+c_k\BigPar{A_{1,{\alpha_k}}w_1+\dots+A_{m,{\alpha_k}}w_m}$\par\vspace{2pt}\quad
-\Blind{\Or\;}$\Blind{c_1Tv_{\alpha_1}+\dots+c_kTv_{\alpha_k}}=\BigPar{c_1A_{1,{\alpha_1}}+\dots+c_kA_{1,{\alpha_k}}}w_1+\dots+\BigPar{c_1A_{m,{\alpha_1}}+\dots+c_kA_{m,{\alpha_k}}}w_m.$\par\vspace{4pt}\quad
-\Blind{\Or\;}And \;$c_1A_{\cdot,{\alpha_1}}+\dots+c_kA_{\cdot,{\alpha_k}}=c_1{\normalsize\begin{pmatrix}A_{1,{\alpha_1}}\\[-4pt]\vdots\\[-10pt]A_{m,{\alpha_1}}\end{pmatrix}}+\dots+c_k{\normalsize\begin{pmatrix}A_{1,{\alpha_k}}\\[-4pt]\vdots\\[-10pt]A_{m,{\alpha_k}}\end{pmatrix}}{}={}\normalsize\begin{pmatrix}c_1 A_{1,{\alpha_1}}+\dots+c_kA_{1,{\alpha_k}}\\[-4pt]\vdots\\[-4pt]c_1A_{m,{\alpha_1}}+\dots+c_kA_{m,{\alpha_k}}\end{pmatrix}$.\par\vspace{6pt}\quad
-(a) $P\Rightarrow Q:$\,\;Supp $\;c_1A_{\cdot,{\alpha_1}}+\dots+c_kA_{\cdot,{\alpha_k}}=0.$ \;Let $v=c_1v_{\alpha_1}+\dots+c_kv_{\alpha_k}.$\par\quad\Ha
-\Blind{$Q\Rightarrow P:$\,\;}Then $Tv=\BigPar{c_1A_{1,{\alpha_1}}+\dots+c_kA_{1,{\alpha_k}}}w_1+\dots+\BigPar{c_1A_{m,{\alpha_1}}+\dots+c_kA_{m,{\alpha_k}}}w_m=0w_1+\dots+0w_m.$\par\quad\Ha
-\Blind{$Q\Rightarrow P:$\,\;}Now $c_1Tv_{\alpha_1}+\dots+c_kTv_{\alpha_k}=0.$ Then each $c_i=0\Rightarrow L_{\mM}$ liney indep.\vspace{4pt}\par\quad\Ha
-$Q\Rightarrow P:$\,\;Becs $c_1Tv_{\alpha_1}+\dots+c_kTv_{\alpha_k}=0.$ For each $i\in\Bra{1,\dots,m},\;c_1A_{i,{\alpha_1}}+\dots+c_kA_{i,{\alpha_k}}=0.$\par\quad\Ha
+(b) Reduce to liney indep lists. By (a) and [2.39].\PfEnd\vspace{4pt}\quad
+\Or\;$c_1Tv_{\:\!\!\alpha_1}+\dots+c_kTv_{\:\!\!\alpha_k}=c_1\BigPar{A_{1,\,{\alpha_1}}w_1+\dots+A_{m,\,{\alpha_1}}w_m}+\dots+c_k\BigPar{A_{1,\,{\alpha_k}}w_1+\dots+A_{m,\,{\alpha_k}}w_m}$\par\vspace{2pt}\quad
+\Blind{\Or\;}$\Blind{c_1Tv_{\:\!\!\alpha_1}+\dots+c_kTv_{\:\!\!\alpha_k}}=\BigPar{c_1A_{1,\,{\alpha_1}}+\dots+c_kA_{1,\,{\alpha_k}}}w_1+\dots+\BigPar{c_1A_{m,\,{\alpha_1}}+\dots+c_kA_{m,\,{\alpha_k}}}w_m.$\par\vspace{4pt}\quad
+\Blind{\Or\;}And \;$c_1A_{\cdot,{\alpha_1}}+\dots+c_kA_{\cdot,{\alpha_k}}=c_1{\normalsize\begin{pmatrix}A_{1,\,{\alpha_1}}\\[-4pt]\vdots\\[-10pt]A_{m,\,{\alpha_1}}\end{pmatrix}}+\dots+c_k{\normalsize\begin{pmatrix}A_{1,\,{\alpha_k}}\\[-4pt]\vdots\\[-10pt]A_{m,\,{\alpha_k}}\end{pmatrix}}{}={}\normalsize\begin{pmatrix}c_1 A_{1,\,{\alpha_1}}+\dots+c_kA_{1,\,{\alpha_k}}\\[-4pt]\vdots\\[-4pt]c_1A_{m,\,{\alpha_1}}+\dots+c_kA_{m,\,{\alpha_k}}\end{pmatrix}$.\par\vspace{6pt}\quad
+(a) $P\Rightarrow Q:$\,\;Supp $\;c_1A_{\cdot,{\alpha_1}}+\dots+c_kA_{\cdot,{\alpha_k}}=0.$ \;Let $v=c_1v_{\:\!\!\alpha_1}+\dots+c_kv_{\:\!\!\alpha_k}.$\par\quad\Ha
+\Blind{$Q\Rightarrow P:$\,\;}Then $Tv=\BigPar{c_1A_{1,\,{\alpha_1}}+\dots+c_kA_{1,\,{\alpha_k}}}w_1+\dots+\BigPar{c_1A_{m,\,{\alpha_1}}+\dots+c_kA_{m,\,{\alpha_k}}}w_m=0w_1+\dots+0w_m.$\par\quad\Ha
+\Blind{$Q\Rightarrow P:$\,\;}Now $c_1Tv_{\:\!\!\alpha_1}+\dots+c_kTv_{\:\!\!\alpha_k}=0.$ Then each $c_i=0\Rightarrow L_{\mM}$ liney indep.\vspace{4pt}\par\quad\Ha
+$Q\Rightarrow P:$\,\;Becs $c_1Tv_{\:\!\!\alpha_1}+\dots+c_kTv_{\:\!\!\alpha_k}=0.$ For each $i\in\Bra{1,\dots,m},\;c_1A_{i,\,{\alpha_1}}+\dots+c_kA_{i,\,{\alpha_k}}=0.$\par\quad\Ha
 \Blind{$Q\Rightarrow P:$\,\;}Which is equiv to $c_1A_{\cdot,{\alpha_1}}+\dots+c_kA_{\cdot,{\alpha_k}}=0.$ \;Thus each $c_i=0\Rightarrow L$ liney indep.\par\vspace{4pt}\quad\Ha
 \Or\;$\exists\,A_{\cdot,{\alpha_j}}=c_1A_{\cdot,{\alpha_1}}+\dots+c_{j-1}A_{\cdot,{\alpha_{j-1}}}$\par\quad\Ha
-\Blind{\Or\;}$\Longleftrightarrow$ For each $i\in\Bra{1,\dots,m},\;A_{i,{\alpha_j}}=c_1A_{i,{\alpha_1}}+\dots+c_{j-1}A_{i,{\alpha_{j-1}}}$\par\quad\Ha
-\Blind{\Or\;}$\Longleftrightarrow Tv_{\alpha_j}=A_{1,{\alpha_j}}w_1+\dots+A_{m,{\alpha_j}}w_m$\par\vspace{2pt}\quad\Ha
-\Blind{\Or\;}$\Blind{\Longleftrightarrow Tv_{\alpha_j}}=\BigPar{c_1A_{1,{\alpha_1}}+\dots+c_{j-1}A_{1,{\alpha_{j-1}}}}w_1+\dots+\BigPar{c_1A_{m,{\alpha_1}}+\dots+c_{j-1}A_{m,{\alpha_{j-1}}}}w_m$\par\vspace{2pt}\quad\Ha
-%\Blind{\Or}$\Blind{\Longleftrightarrow Tv_{\alpha_j}}=c_1\BigPar{A_{1,\alpha_1}w_1+\dots+A_{m,\alpha_1}w_m}+\dots+c_{j-1}\BigPar{A_{1,\alpha_{j-1}}w_1+\dots+A_{m,\alpha_{j-1}w_m}}$\par\quad\Ha
-\Blind{\Or\;}$\Longleftrightarrow\exists\,Tv_{\alpha_j}=c_1Tv_{\alpha_1}+\dots+c_{j-1}Tv_{\alpha_{j-1}}.$\par\vspace{6pt}\quad
-(b) Note that each $\Mt{Tv_{\alpha_i}}=A_{\cdot,\alpha_i}$\par\quad\Hb
-$P\Rightarrow Q:$\,\;Supp each $w_i=Iw_i=J_{1,i}Tv_{\alpha_1}+\dots+J_{k,i}Tv_{\alpha_k}.$\par\quad\Hb
+\Blind{\Or\;}$\Longleftrightarrow$ For each $i\in\Bra{1,\dots,m},\;A_{i,\,{\alpha_j}}=c_1A_{i,\,{\alpha_1}}+\dots+c_{j-1}A_{i,\,{\alpha_{j-1}}}$\par\quad\Ha
+\Blind{\Or\;}$\Longleftrightarrow Tv_{\:\!\!\alpha_j}=A_{1,\,{\alpha_j}}w_1+\dots+A_{m,\,{\alpha_j}}w_m$\par\vspace{2pt}\quad\Ha
+\Blind{\Or\;}$\Blind{\Longleftrightarrow Tv_{\:\!\!\alpha_j}}=\BigPar{c_1A_{1,\,{\alpha_1}}+\dots+c_{j-1}A_{1,\,{\alpha_{j-1}}}}w_1+\dots+\BigPar{c_1A_{m,\,{\alpha_1}}+\dots+c_{j-1}A_{m,\,{\alpha_{j-1}}}}w_m$\par\vspace{2pt}\quad\Ha
+%\Blind{\Or}$\Blind{\Longleftrightarrow Tv_{\:\!\!\alpha_j}}=c_1\BigPar{A_{1,\,\alpha_1}w_1+\dots+A_{m,\alpha_1}w_m}+\dots+c_{j-1}\BigPar{A_{1,\,\alpha_{j-1}}w_1+\dots+A_{m,\alpha_{j-1}w_m}}$\par\quad\Ha
+\Blind{\Or\;}$\Longleftrightarrow\exists\,Tv_{\:\!\!\alpha_j}=c_1Tv_{\:\!\!\alpha_1}+\dots+c_{j-1}Tv_{\:\!\!\alpha_{j-1}}.$\par\vspace{6pt}\quad
+(b) Note that each $\Mt{Tv_{\:\!\!\alpha_i}}=A_{\cdot,\alpha_i}$\par\quad\Hb
+$P\Rightarrow Q:$\,\;Supp each $w_i=Iw_i=J_{1,i}Tv_{\:\!\!\alpha_1}+\dots+J_{k,i}Tv_{\:\!\!\alpha_k}.$\par\quad\Hb
 %Then fix one $J=\Mt{I,B_W,L}\in\Fbb^{k,m}.$
 \Blind{$Q\Rightarrow P:$\,\;}$\forall a\in\Fbb^{m,1},\exists\,w=a_1w_1+\dots+a_mw_m\in W,\;a=\Mt{w,B_W}.$\par\quad\Hb
-\Blind{$Q\Rightarrow P:$\,\;}Becs $w=a_1\BigPar{J_{1,1}Tv_{\alpha_1}+\dots+J_{k,1}Tv_{\alpha_k}}+\dots+a_m\BigPar{J_{1,m}Tv_{\alpha_1}+\dots+J_{k,m}Tv_{\alpha_k}}$\par\vspace{2pt}\quad\Hb
-\Blind{$Q\Rightarrow P:$\,\;Becs} $\Blind{w}=\BigPar{a_1J_{1,1}+\dots+a_mJ_{1,m}}Tv_{\alpha_1}+\dots+\BigPar{a_1J_{k,1}+\dots+a_mJ_{k,m}}Tv_{\alpha_k}.$\par\vspace{2pt}\quad\Hb
+\Blind{$Q\Rightarrow P:$\,\;}Becs $w=a_1\BigPar{J_{1,1}Tv_{\:\!\!\alpha_1}+\dots+J_{k,1}Tv_{\:\!\!\alpha_k}}+\dots+a_m\BigPar{J_{1,m}Tv_{\:\!\!\alpha_1}+\dots+J_{k,m}Tv_{\:\!\!\alpha_k}}$\par\vspace{2pt}\quad\Hb
+\Blind{$Q\Rightarrow P:$\,\;Becs} $\Blind{w}=\BigPar{a_1J_{1,1}+\dots+a_mJ_{1,m}}Tv_{\:\!\!\alpha_1}+\dots+\BigPar{a_1J_{k,1}+\dots+a_mJ_{k,m}}Tv_{\:\!\!\alpha_k}.$\par\vspace{2pt}\quad\Hb
 \Blind{$Q\Rightarrow P:$\,\;}Apply $\mM$ to both sides, $a=c_1A_{\cdot,\alpha_1}+\dots+c_kA_{\cdot,\alpha_k},$ where each $c_i=a_1J_{i,1}+\dots+a_mJ_{i,m}.$\par\vspace{6pt}\quad\Hb
 $Q\Rightarrow P:$\,\;$\forall w\in W,\exists\,a=c_1A_{\cdot,{\alpha_1}}+\dots+c_kA_{\cdot,\alpha_k}\in\Fbb^{m,1},\;\Mt{w,B_W}=a$\par\quad\Hb
-\Blind{$Q\Rightarrow P:$\,\;}$\Rightarrow w=\BigPar{c_1A_{1,{\alpha_1}}+\dots+c_kA_{1,{\alpha_k}}}w_1+\dots+\BigPar{c_1A_{m,{\alpha_1}}+\dots+c_kA_{m,{\alpha_k}}}w_m=c_1Tv_{\alpha_1}+\dots+c_kTv_{\alpha_k}.$\vspace{6pt}\par\quad\Hb
+\Blind{$Q\Rightarrow P:$\,\;}$\Rightarrow w=\BigPar{c_1A_{1,\,{\alpha_1}}+\dots+c_kA_{1,\,{\alpha_k}}}w_1+\dots+\BigPar{c_1A_{m,\,{\alpha_1}}+\dots+c_kA_{m,\,{\alpha_k}}}w_m=c_1Tv_{\:\!\!\alpha_1}+\dots+c_kTv_{\:\!\!\alpha_k}.$\vspace{6pt}\par\quad\Hb
 ${}{^\neg}Q\Rightarrow{}{^\neg}P:$\,\;$\exists\,w\in W,\exists\,a\in\Fbb^{m,1},\Mt{w,B_W}=a,$ but $\nexists\,\Par{c_1,\dots,c_k}\in\Fbb^k,a=c_1A_{\cdot,\alpha_1}+\dots+c_kA_{\cdot,\alpha_k}$\par\quad\Hb
-\Blind{${}{^\neg}Q\Rightarrow{}{^\neg}P:$\,\;}$\Rightarrow\nexists\,\Par{c_1,\dots,c_k}\in\Fbb^k,\;w=c_1Tv_{\alpha_1}+\dots+c_kTv_{\alpha_k}.$ For if not, ctradic.\PfEnd\vspace{6pt}
+\Blind{${}{^\neg}Q\Rightarrow{}{^\neg}P:$\,\;}$\Rightarrow\nexists\,\Par{c_1,\dots,c_k}\in\Fbb^k,\;w=c_1Tv_{\:\!\!\alpha_1}+\dots+c_kTv_{\:\!\!\alpha_k}.$ For if not, ctradic.\PfEnd\vspace{6pt}
 \ANote Let $L=\BigPar{Tv_1,\dots,Tv_n},\;L_{\mM}=\BigPar{A_{\cdot,1},\cdots,A_{\cdot,n}}.$\parNot
 Then (a*) By \Sbra{3.B.9, \TIPSN{4}}, $T$ is inje $\Longleftrightarrow L$ is liney indep, so is $L_{\mM}$.\parNot
 And (b*) $T$ is surj $\Longleftrightarrow\spn L=W\Longleftrightarrow\spn L_{\mM}=\Fbb^{m,1}.$\Anchor{3C4e17}\parNot
@@ -1862,11 +1861,11 @@ And $\forall\gamma=v+u=v+w\in A\cap B\Rightarrow u=w\in U\cap W\Rightarrow\gamma
 	\TextA{Prove the intersec of any collec of trslates of subsps is either a trslate of some subsps or $\emptySet.$}
 }Supp $\Bra{A_{\alpha}}{_{\alpha\in\Gamma}}$ is a collec of trslates of subsps of $V$, where $\Gamma$ is an index set.\vspace{2pt}\parSol{}
 $\forall x,y\in\bigcap_{\alpha\in\Gamma}A_{\alpha}\neq\emptySet,\lambda\in\Fbb,\lambda x+\Par{1-\lambda}y\in A_{\alpha}$ for each $\alpha.$ By Exe (8).\PfEnd\parSol{\vspace{6pt}}
-\Or Let each $A_\alpha=w_\alpha+V_{\!\alpha}.$ Supp $x\in\bigcap_{\alpha\in\Gamma}\Par{w_\alpha+V_{\!\alpha}}\neq\emptySet.$\parSol{}
-Then $x-w_\alpha\in V_{\!\alpha}\Longrightarrow x+V_{\!\alpha}=w_\alpha+V_{\!\alpha}=A_\alpha,$ for each $\alpha.$\parSol{}
-We show $\bigcap_{\alpha\in\Gamma}A_\alpha=\bigcap_{\alpha\in\Gamma}\Par{x+V_{\!\alpha}}=x+\bigcap_{\alpha\in\Gamma}V_{\!\alpha}.$\parSol{}
-$y\in\bigcap_{\alpha\in\Gamma}A_\alpha\Longleftrightarrow$ for each $\alpha,\;y=x+v_\alpha\in A_\alpha$\parSol{}
-$\Blind{y\in\bigcap_{\alpha\in\Gamma}A_\alpha}\Longleftrightarrow$ each $v_\alpha=y-x\in\bigcap_{\alpha\in\Gamma}V_{\!\alpha}\Longleftrightarrow y\in x+\bigcap_{\alpha\in\Gamma}V_{\!\alpha}.$\PfEnd
+\Or Let each $A_\alpha=w_\alpha+V_{\!\!\alpha}.$ Supp $x\in\bigcap_{\alpha\in\Gamma}\Par{w_\alpha+V_{\!\!\alpha}}\neq\emptySet.$\parSol{}
+Then $x-w_\alpha\in V_{\!\!\alpha}\Longrightarrow x+V_{\!\!\alpha}=w_\alpha+V_{\!\!\alpha}=A_\alpha,$ for each $\alpha.$\parSol{}
+We show $\bigcap_{\alpha\in\Gamma}A_\alpha=\bigcap_{\alpha\in\Gamma}\Par{x+V_{\!\!\alpha}}=x+\bigcap_{\alpha\in\Gamma}V_{\!\!\alpha}.$\parSol{}
+$y\in\bigcap_{\alpha\in\Gamma}A_\alpha\Longleftrightarrow$ for each $\alpha,\;y=x+v_{\:\!\!\alpha}\in A_\alpha$\parSol{}
+$\Blind{y\in\bigcap_{\alpha\in\Gamma}A_\alpha}\Longleftrightarrow$ each $v_{\alpha}=y-x\in\bigcap_{\alpha\in\Gamma}V_{\!\!\alpha}\Longleftrightarrow y\in x+\bigcap_{\alpha\in\Gamma}V_{\!\!\alpha}.$\PfEnd
 \SepLine
 
 \ProblemN{\Anchor{3E11}{11}}{
@@ -1885,7 +1884,7 @@ $\forall w\in A,\;w=\sum_{i=1}^m \lambda_i v_i=\sum_{i=1}^m \lambda_i\Par{v+u_i}
 \vspace{4pt}Then \;$\sum_{i=1}^{k+1}\mu_i-\mu_\iota=1-\mu_\iota\Longrightarrow\envFontLarge\XSbra{{\envFontDefault\sum_{i=1}^{k+1}\Frac{\mu_i}{1-\mu_\iota}}}-\Frac{\mu_\iota}{1-\mu_\iota}=1.$\par\quad\Hb\Hii
 \vspace{2pt}Let \,$w=\underbrace{\Frac{\mu_1}{1-\mu_\iota}v_1+\dots+\Frac{\mu_{\iota-1}}{1-\mu_\iota}v_{\iota-1}+\Frac{\mu_{\iota+1}}{1-\mu_\iota}v_{\iota+1}+\dots+\Frac{\mu_{k+1}}{1-\mu_\iota}v_{k+1}}_{k\,terms}.$\par\quad\Hb\Hii
 \vspace{4pt}Let \,$\lambda_i=\Frac{\mu_i}{1-\mu_\iota}$ for $i\in\Bra{1,\dots,\iota-1};$ \;$\lambda_j=\Frac{\mu_{j+1}}{1-\mu_\iota}$ for $j\in\Bra{\iota,\dots,k}.$ \;Then,\par\quad\Hb\Hii
-$\MathRightBrace{r}{\sum_{i=1}^k\lambda_i=1\Rightarrow w\in B\\ v_\iota\in B\Rightarrow u\apostrophe=\lambda w+\Par{1-\lambda}v_\iota\in B}\Rightarrow$ Let $\lambda=1-\mu_\iota$. Thus $u\apostrophe=u\in B\Rightarrow A\subseteq B.$\PfEnd\vspace{10pt}\quad
+$\MathRightBrace{r}{\sum_{i=1}^k\lambda_i=1\Rightarrow w\in B\\ v_{\:\!\!\iota}\in B\Rightarrow u\apostrophe=\lambda w+\Par{1-\lambda}v_{\:\!\!\iota}\in B}\Rightarrow$ Let $\lambda=1-\mu_\iota$. Thus $u\apostrophe=u\in B\Rightarrow A\subseteq B.$\PfEnd\vspace{10pt}\quad
 (c) If $m=1,$ then let $A=v_1+\zeroSubs$ and done. \;Now supp $m\geqslant 2.$ Fix one $k\in\Bra{1,\dots,m}.$\par\quad\Hc
 $A\ni \lambda_1v_1+\dots+\lambda_{k-1}v_{k-1}+\BigPar{1-\lambda_1-\dots-\lambda_{k-1}-\lambda_{k+1}-\dots-\lambda_m}v_k+\lambda_{k+1}v_{k+1}+\dots+\lambda_m v_m$\par\quad\Hc
 $\Blind{A}=v_k+\lambda_1\Par{v_1-v_k}+\dots+\lambda_{k-1}\Par{v_{k-1}-v_k}+\lambda_{k+1}\Par{v_{k+1}-v_k}+\dots+\lambda_m\Par{v_m-v_k}$\par\quad\Hc
@@ -3223,7 +3222,7 @@ $T\Par{v+w}=\lambda_{v+w}\Par{v+w}=Tv+Tw=\lambda_v v+\lambda_w w\Rightarrow\Par{
 }We prove the ctrapos. Supp $\exists\,v\in V\nonzero$ not eigvec.\parSol{}
 Then $\Par{v,Tv}$ liney indep $\Rightarrow B_V=\Par{v,Tv,u_1,\dots,u_n}.$ Let $U=\Span{v,u_1,\dots,u_{k-1}}.$\PfEnd\vspace{3pt}\parSol{}
 \Or Supp $v=v_1\in V\nonzero\Rightarrow B_V=\Par{v_1,\dots,v_n}.$ Let $Tv_1=c_1 v_1+\dots+c_n v_n.$\parSol{}
-Let $B_U=\Par{v_1,v_{\alpha_1},\dots,v_{\alpha_{k-1}}}.$ Becs every such $U$ invar. Now $Tv_1\in U\Rightarrow Tv_1=c_1v_1.$\parSol{}
+Let $B_U=\Par{v_1,v_{\:\!\!\alpha_1},\dots,v_{\:\!\!\alpha_{k-1}}}.$ Becs every such $U$ invar. Now $Tv_1\in U\Rightarrow Tv_1=c_1v_1.$\parSol{}
 By Exe (26), done. \BigSbra{For $0\neq c_j\in\Bra{c_2,\dots,c_n},$ let $B_W=\Par{v_1,v_{\beta_1},\dots,v_{\beta_{k-1}}}$ with each $\beta_i\neq j.$}\PfEnd%\vspace{4pt}\quad
 %\Or For each $k\in\Bra{1,\dots,\dim V-1},$ define $P\Par{k}:$ \Largesl{if} each subsp $U$ with $\dim U=k$ invar, then $T=\lambda I.$\par\quad
 %(i) $k=1.$ $P\Par{1}$ holds, by Exe (26).\par\quad\Endi
@@ -4088,7 +4087,7 @@ Then $\exists\,!\,u_1\in G\Par{\lambda_1,T\mmid_U},w_k\in G\Par{\lambda_k,T\mmid
 }By Exe (4E 4.13), $\forall v\in V,v=u+w,$ where $u=s\Par{T}a\Par{T}v,\,w=q\Par{T}b\Par{T}v.$ Immed.\PfEnd\vspace{2pt}\parSol{}
 \Or Let $V_{\!\Cbb}=G\Par{\lambda_1,T_{\!\Cbb}}\oplus\cdots\oplus G\Par{\lambda_m,T_{\!\Cbb}},$ and $p\Par{z}=\Par{z-\lambda_1}{^{k_1}}\cdots\Par{z-\lambda_m}{^{k_m}}.$\vspace{1pt}\parSol{}
 Let $s\Par{z}=\Par{z-\lambda_{\alpha_1}}{^{k_{\alpha_1}}}\cdots\Par{z-\lambda_{\alpha_A}}{^{k_{\alpha_A}}},\;q\Par{z}=\Par{z-\lambda_{\beta_1}}{^{k_{\beta_1}}}\cdots\Par{z-\lambda_{\beta_B}}{^{k_{\beta_B}}},$ with all $\alpha_j\neq\beta_i.$\parSol{}
-Note that $\forall v\in V_{\!\Cbb},\exists\,!\,v_i\in G\Par{\lambda_i,T_{\!\Cbb}},\:v=v_1+\dots+v_m=\Par{v_{\alpha_1}+\dots+v_{\alpha_A}}+\Par{v_{\beta_1}+\dots+v_{\beta_B}}.$\parSol{}
+Note that $\forall v\in V_{\!\Cbb},\exists\,!\,v_i\in G\Par{\lambda_i,T_{\!\Cbb}},\:v=v_1+\dots+v_m=\Par{v_{\:\!\!\alpha_1}+\dots+v_{\:\!\!\alpha_A}}+\Par{v_{\beta_1}+\dots+v_{\beta_B}}.$\parSol{}
 Thus $V_{\!\Cbb}=\nullp s\Par{T_{\!\Cbb}}\oplus\nullp q\Par{T_{\!\Cbb}}.$ And simlr, $\nullp s\Par{T_{\!\Cbb}}=G\Par{\lambda_{\alpha_1},T_{\!\Cbb}}\oplus\cdots\oplus G\Par{\lambda_{\alpha_A},T_{\!\Cbb}}.$\vspace{2pt}\parSol{}
 \AComm If $\lambda_{\alpha_j}\not\in\Rbb,$ then $\exists\,\lambda_{\alpha_i}=\overline{\lambda_{\alpha_j}}.$ Simlr for $\lambda_{\beta_j}.$ Now $V=\nullp s\Par{T}\oplus\nullp q\Par{T}.$\par\vspace{2pt}
 \NewNotation\;\;We call such $s$ or $q$ a {\tgsc poly block}. A factor $q$ of $p$ is a block $\Longleftrightarrow$ the other half $p\big/q$ is a block.\par
@@ -4202,12 +4201,12 @@ Each $A_{1,k}=\footnotesize\begin{pmatrix}\lambda &\hspace{-6pt} 1 &\hspace{-14p
 \vdots &\hspace{-6pt} &\hspace{-6pt} &\hspace{-6pt} \ddots &\hspace{-6pt} 1\\[-4pt]
 0 &\hspace{-6pt} 0 &\hspace{-6pt} &\hspace{-6pt} &\hspace{-6pt} 2b\i\\[-4pt]
 0 &\hspace{-6pt} 0 &\hspace{-6pt} \cdots &\hspace{-6pt} \cdots &\hspace{-6pt} 0\end{pmatrix}.$\vspace{2pt}\parNot
-Let the Jordan bss $Q_\Cbb$ for $T_{\!\Cbb}$ be $\Par{u_1+\i\,v_1,\dots,u_\beta+\i\,v_\beta,u_1-\i\,v_1,\dots,u_\beta-\i\,v_\beta}.$\parNot
+Let the Jordan bss $Q_\Cbb$ for $T_{\!\Cbb}$ be $\Par{u_1+\i\,v_1,\dots,u_\beta+\i\,v_{\:\!\!\beta},u_1-\i\,v_1,\dots,u_\beta-\i\,v_{\:\!\!\beta}}.$\parNot
 Now due to $\Mt{T_{\!\Cbb}},$ $T\Par{u_1\pm\i\,v_1}=\Par{a\pm\i\,b}\Par{u_1\pm\i\,v_1}=\Par{a\,u_1-b\,v_1}\pm\i\,\Par{b\,u_1+a\,v_1},$\parNot
 $T\Par{u_j\pm\i\,v_j}=\Par{a\pm\i\,b}\Par{u_j\pm\i\,v_j}+\Par{u_{j-1}\pm\i\,v_{j-1}}=\Par{a\,u_j-b\,v_j+u_{j-1}}\pm\i\,\Par{b\,u_j+a\,v_j+v_{j-1}}.$\parNot
 Hence $Tu_1=a\,u_1-b\,v_1,Tv_1=b\,u_1+a\,v_1,$ and $Tu_j=u_{j-1}+a\,u_j-b\,v_j,Tv_j=v_{j-1}+b\,u_j+a\,v_j.$\parNot
-Let $B_Q=\Par{u_1,v_1,\dots,u_\beta,v_\beta}\Rightarrow\Mt{T,B_Q}=\footnotesize\begin{pmatrix}\mR &\hspace{-6pt} I_2 &\hspace{-14pt} &\hspace{-14pt} 0\hspace{-6pt}\\[-4pt]&\hspace{-18pt} \ddots &\hspace{-20pt} \ddots &\hspace{-14pt} \hspace{-6pt}\\[-6pt]&\hspace{-20pt} &\hspace{-20pt} \ddots &\hspace{-14pt} I_2\hspace{-6pt}\\[-3pt]0 &\hspace{-14pt} &\hspace{-14pt} &\hspace{-14pt} \mR\hspace{-6pt}\end{pmatrix},$ where $\mR=\footnotesize\begin{pmatrix}a &\hspace{-6pt} b\\[-4pt]-b &\hspace{-6pt} a\end{pmatrix}$ and $I_2=\footnotesize\begin{pmatrix}1 &\hspace{-8pt} 0\\[-4pt]0 &\hspace{-8pt} 1\end{pmatrix}.$\vspace{-10pt}\parNot
-\Or $B_Q=\Par{v_1,u_1,\dots,v_\beta,u_\beta}\Rightarrow\mR=\footnotesize\begin{pmatrix}a &\hspace{-6pt} -b\\[-4pt]b &\hspace{-6pt} a\end{pmatrix}.$
+Let $B_Q=\Par{u_1,v_1,\dots,u_\beta,v_{\:\!\!\beta}}\Rightarrow\Mt{T,B_Q}=\footnotesize\begin{pmatrix}\mR &\hspace{-6pt} I_2 &\hspace{-14pt} &\hspace{-14pt} 0\hspace{-6pt}\\[-4pt]&\hspace{-18pt} \ddots &\hspace{-20pt} \ddots &\hspace{-14pt} \hspace{-6pt}\\[-6pt]&\hspace{-20pt} &\hspace{-20pt} \ddots &\hspace{-14pt} I_2\hspace{-6pt}\\[-3pt]0 &\hspace{-14pt} &\hspace{-14pt} &\hspace{-14pt} \mR\hspace{-6pt}\end{pmatrix},$ where $\mR=\footnotesize\begin{pmatrix}a &\hspace{-6pt} b\\[-4pt]-b &\hspace{-6pt} a\end{pmatrix}$ and $I_2=\footnotesize\begin{pmatrix}1 &\hspace{-8pt} 0\\[-4pt]0 &\hspace{-8pt} 1\end{pmatrix}.$\vspace{-10pt}\parNot
+\Or $B_Q=\Par{v_1,u_1,\dots,v_{\:\!\!\beta},u_\beta}\Rightarrow\mR=\footnotesize\begin{pmatrix}a &\hspace{-6pt} -b\\[-4pt]b &\hspace{-6pt} a\end{pmatrix}.$
 \SepLine
 
 %\Anchor{9A18}\ProblemN{18}{
