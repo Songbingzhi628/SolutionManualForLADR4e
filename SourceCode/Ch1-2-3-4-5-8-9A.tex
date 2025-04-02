@@ -1266,7 +1266,7 @@ Thus (a) $\dim\row A=r\leqslant c=\dim\col A,$ and (b) $\dim\col A=c\leqslant r=
 \Anchor{3C4e16}\ProblemBnoor{4E 16}{
 	\TextB{Supp $A\in\Fbb^{m,n}\nonzero.$ Prove $\rank A=1\Rightarrow\exists\,c_j,d_k\in\Fbb,$ each $A_{j,k}=c_j\cdot d_k.$\vspace{6pt}}
 }Let $c_j=\Frac{A_{j,1}}{A_{1,1}}=\Frac{A_{j,2}}{A_{1,2}}=\dots=\Frac{A_{j,n}}{A_{1,n}},\;\;d_k'=\Frac{A_{1,k}}{A_{1,1}}=\Frac{A_{2,k}}{A_{2,1}}=\dots=\Frac{A_{m,k}}{A_{m,1}}.$\vspace{4pt}\parSol{}
-{$\Rightarrow A_{j,k}=d_k' A_{j,1}=c_j A_{1,k}=c_j d_k' A_{1,1}=c_j d_k,$ where $d_k=d_k' A_{1,1}.$} By CR Factoriz, immed.\PfEnd
+{$\Rightarrow A_{j,k}=d_k' A_{j,1}=c_j A_{1,k}=c_j d_k' A_{1,1}=c_j d_k,$ where $d_k=d_k' A_{1,1}.$}\quad\Or Using CR Factoriz, immed.\PfEnd
 \SepLine
 
 \ProblemN{\Anchor{3C6}{6}}{
@@ -1521,11 +1521,8 @@ Let $S=\Par{A+B}{^{-1}}\Par{C+D},T=\Par{A-B}{^{-1}}\Par{C-D}.$ Now $X={}${\Large
 \ProblemN{\Anchor{3D3}{3}}{
 	\TextA{Supp $V$ and $W$ are iso and finide, $U$ is a subsp of $V$, and $S\in\Lm{U,W}.$}
 	\TextA{Prove $\exists$ inv $T\in\Lm{V,W},Tu = Su,\forall u\in U$ $\Longleftrightarrow$ $S$ is inje. \hfill{\FontNorm\Sbra{ See also (3.A.11). }}}\vspace{2pt}
-}(a) $\forall u\in U,u=T^{-1}Su\Rightarrow T^{-1}S=I\in\Lm{U}.$ Thus by (3.B.20), $S$ is inje.\parSol{\Ha}
-\Or $\null S=\null T\mmid_U=\null T\cap U=\zeroSubs.$\parSol{\vspace{4pt}}
-(b) Let $B_U=\Par{u_1,\dots,u_m}.$ Then $S$ inje $\Rightarrow\Par{Su_1,\dots,Su_m}$ liney indep.\parSol{\Hb}
-Extend to $B_V=\Par{u_1,\dots,u_m,v_1,\dots,v_n},B_W=\Par{Su_1,\dots,Su_m,w_1,\dots,w_n}$.\parSol{\Hb}
-Define $T\in\Lm{V,W}$ by $T\Par{u_i}=Su_i;\,\,\,Tv_j=w_j,$ for each $u_i$ and $v_j.$\PfEnd\vspace{3pt}
+}(a) $\forall u\in U,u=T^{-1}Su\Rightarrow T^{-1}S=I\in\Lm{U}.$ \Or $\null S=\null T\mmid_U=\null T\cap U=\zeroSubs.$\parSol{}
+(b) Get a $B_U,$ apply $S,$ then extend to $B_V,B_W.$\PfEnd\vspace{3pt}
 \AExa Supp $V,W$ are infinide. Let $V=W=\Fbb^{\infty}.$ Define $S\Par{x_1,x_2,\cdots}=\Par{0,x_1,x_2,\cdots}.$\parExa
 Now $S$ is inje. Supp $\exists$ inv $T\in\Lm{V,W}$ suth $T\mmid_V=S.$ Then $T=S$ while $S$ is not surj.\SepLine
 
@@ -1613,13 +1610,21 @@ Supp each $W_k=V_{\!k+1},$ for if $W_k\subsetneq V_{\!k+1},$ then $S_1,S_2$ surj
 %\BulletPointX\NewNotation\;\;{\FontNorm For ease of nota, let $\Mt[\BigPar]{T,\alpha\rightarrow\beta}=\Mt[\BigPar]{T,\Par{\alpha_1,\dots,\alpha_n},\Par{\beta_1,\dots,\beta_n}}.$}
 %\SepLine
 
-\Anchor{3DT3}\ProblemBX[]{\TipsN{3}}{
-	You must first declare bses and the purpose when using $\Mneg\!:\Fbb^{n,1}\mapsto v,$ or $\Fbb^{m,n}\mapsto\Lm{V,W}.$\TextB{\vspace{-3pt}}
-}\SepLine\pagebreak
+\Anchor{3DNE15}\BulletPointX\NoteForSmall{Exe (15)}\TextB{}
+Supp $A\in\Fbb^{m,n}.$ Define $T\in\Lm{\Fbb^{n,1},\Fbb^{m,1}}:x\mapsto Ax\Rightarrow A=\Mt{T}$ wrto std bses $B_1,B_2$ of $\Fbb^{m,1},\Fbb^{n,1}.$\TextB{}
+Becs $T$ have infily many defs of the form $T:x\mapsto C_2AC_1x,$ where $C_1=\Mt{I,B_1',B_1},C_2=\Mt{I,B_2,B_2'}.$\TextB{}
+Now we can well define $\range A=\range T$ and $\null A=\range T,$ becs $A$ is indep of bses.
+\SepLine
 
-\Anchor{3DNE4e22}\BulletPointX\NoteForSmall{Exe (4E 22)}\;\;$T\in\Lm{V,W}$ inv $\Longleftrightarrow\Mt{T}$ wrto some $B_V,B_W$ is inv $\Longleftrightarrow$ wrto any $B_V,B_W.$\TextB{}
+%\Anchor{3DT3}\ProblemBX[]{\TipsN{3}}{
+%	You must first declare bses and the purpose when using $\Mneg\!:\Fbb^{n,1}\mapsto v,$ or $\Fbb^{m,n}\mapsto\Lm{V,W}.$\TextB{\vspace{-3pt}}
+%}\SepLine
+
+\Anchor{3DNE34e22}\BulletPointX\NoteForSmall{Exe (3, 4E 22)}\;\;$T\in\Lm{V,W}$ inv $\Longleftrightarrow\Mt{T}$ inv, wrto some $B_V,B_W$ $\Longleftrightarrow$ wrto any $B_V,B_W.$\TextB{}
 Supp $\Mt{T}$ wrto some bses is inv. Let $S\in\Lm{W,V}$ be suth $\Mt{S}=\Mt{T}{^{-1}}.$\TextB{}
-Then $\Mt{TS}=I=\Mt{ST}$ wrto same bses. Apply $\Mneg,$ now $TS=I,ST=I\Rightarrow S=T^{-1}.$
+Then $\Mt{TS}=I=\Mt{ST}$ wrto same bses. Apply $\Mneg,$ now $TS=I,ST=I\Rightarrow S=T^{-1}.$\PfEnd\TextB{}
+\Or (a) $T\in\Lm{V,W}$ inje $\Longleftrightarrow$ the cols of $\Mt{T,B_V,B_W}$ are liney indep $\Longleftrightarrow\Mt{T}$ inje wrto any bses.\TextB{}
+\Blind{\Or}(b) $T\in\Lm{V,W}$ surj $\Longleftrightarrow$ the cols of $\Mt{T,B_V,B_W}$ spans $\Fbb^{\dim\:\!\!W,1}\Longleftrightarrow\Mt{T}$ surj wrto any bses.
 \SepLine
 
 %\Anchor{10A1}\Anchor{3D4e22}\ProblemBnoor{4E 22, \OR {10.A.1}}{
@@ -1678,32 +1683,32 @@ Extend to $B_W=\BigPar{w_1,\dots,w_p,\dots,w_m}.$ Then $T=E_{1,1}+\dots+E_{p,p},
 	\TextB{Supp $A\in\Fbb^{n,n},\rank A=r.$ Define $T,S\in\Lm{\Fbb^{n,n}}$ by $T\Par{X}=AX,\:S\Par{Y}=YA^t.$}
 	\TextB{Find the dim and a bss of $\range ST.$\vspace{2pt}}
 }Becs $A\mEnt{j,k}=\BigSbra{\sum_{x=1}^nA_{x,j}\mEnt{x,j}}\mEnt{j,k}=\sum_{x=1}^nA_{x,j}\mEnt{x,k}.$ \;Let $B_{\col A}=\Par{C_{\cdot,1},\dots,C_{\cdot,r}}.$\vspace{2pt}\parSol{}
-Each $A_{\cdot,j}=R_{1,j}C_{\cdot,1}+\dots+R_{r,j}C_{\cdot,r}\Rightarrow\range T=\Bra{\mC_{\!j,k}=\sum_{x=1}^nC_{x,j}\mEnt{x,k}:1\leqslant j\leqslant r,\,1\leqslant k\leqslant n}.$\vspace{3pt}\parSol{}
+Each $A_{\cdot,j}=R_{1,j}C_{\cdot,1}+\dots+R_{r,j}C_{\cdot,r}\Rightarrow B_{\range T}=\Bra{\mC_{\!j,k}=\sum_{x=1}^nC_{x,j}\mEnt{x,k}:1\leqslant j\leqslant r,\,1\leqslant k\leqslant n}.$\vspace{4pt}\parSol{}
 Becs $\mC_{\!j,k}A^t=\mC_{\!j,k}\BigSbra{\sum_{y=1}^nA^t_{k,y}\mEnt{k,y}}=\sum_{x=1}^n\sum_{y=1}^nC_{x,j}A_{y,k}\mEnt{x,y}.$\vspace{-20pt}\parSol{}
-Simlr, $\range ST=\Bra{\mX_{\!j,k}=\sum_{x=1}^n\sum_{y=1}^nC_{x,j}C_{y,k}\mEnt{x,y}:1\leqslant j,k\leqslant r}.\;\hMath{l}{\left|}{\right.}{\;\mX_{\!j,k}=\small\begin{pmatrix}C_{1,j}C_{1,k} &\hspace{-8pt} \cdots &\hspace{-8pt} C_{1,j}C_{n,k}\\[-4pt]
+Simlr, $B_{\range ST}=\Bra{\mX_{\!j,k}=\sum_{x=1}^n\sum_{y=1}^nC_{x,j}C_{y,k}\mEnt{x,y}:1\leqslant j,k\leqslant r}.\;\hMath{l}{\left|}{\right.}{\;\mX_{\!j,k}=\small\begin{pmatrix}C_{1,j}C_{1,k} &\hspace{-8pt} \cdots &\hspace{-8pt} C_{1,j}C_{n,k}\\[-4pt]
 		\vdots &\hspace{-8pt} \ddots &\hspace{-8pt} \vdots\\[-4pt]
 		C_{n,j}C_{1,k} &\hspace{-8pt} \cdots &\hspace{-8pt} C_{n,j}C_{n,k}\end{pmatrix}.\\[20pt]\,}$\vspace{-20pt}\parSol{}
-$\Par{\mX_{\!1,k},\dots,\mX_{\!r,k}}$ and  $\Par{\mX_{\!j,1},\dots,\mX_{\!j,r}}$ are liney indep lists.\PfEnd
+%Now $\Par{\mX_{\!1,k},\dots,\mX_{\!r,k}}$ and  $\Par{\mX_{\!j,1},\dots,\mX_{\!j,r}}$ are liney indep lists.\parSol{}
+Each $\mX_{\!j,k}=C_{1,k}\mC_{\!j,1}+\dots+C_{n,k}\mC_{\!j,n}=C_{1,j}\Par{\mC_{\!k,1}}{^t}+\dots+C_{n,j}\Par{\mC_{\!k,n}}{^t}.$\PfEnd
 \SepLine
 
 \Anchor{3D7}\Anchor{3D4e10}\ProblemBnoor{4E 10}{
-	\TextA{Supp $V,W$ finide, $U$ is a subsp of $V,$ $\mE=\Bra{T\in\Lm{V,W}:T\mmid_U=0}.$\vspace{1pt}}
-	\TextA{Prove $\dim\mE=\dim\Lm{V,W}-\dim\Lm{U,W}.$\vspace{1pt}}
+	\TextA{Supp $V,W$ finide, $U$ is a subsp of $V,$ $\mE=\Bra{T\in\Lm{V,W}:T\mmid_U=0}.$ Find $\dim\mE.$}
 }Define $\Phi:\Lm{V,W}\rightarrow\Lm{U,W}$ by $\Phi\Par{T}=T\mmid_U.$ By \Sbra{3.A {\NOTEFOR} Restr}, $\Phi$ is liney.\vspace{0pt}\parSol{}
 $\Phi\Par{T}=0\Longleftrightarrow\forall u\in U,Tu=0\Longleftrightarrow T\in\mE.$ Thus $\null\Phi=\mE.$\parSol{}
-Extend $S\in\Lm{U,W}$ to $T\in\Lm{V,W}\Rightarrow\Phi\Par{T}=S\in\range\Phi.$ Thus $\range\Phi=\Lm{U,W}.$\PfEnd\vspace{4pt}\parSol{}
+Extend $S\in\Lm{U,W}$ to $T\in\Lm{V,W}\Rightarrow\Phi\Par{T}=S\in\range\Phi.$ Thus $\range\Phi=\Lm{U,W}.$\PfEnd\vspace{2pt}\parSol{}
 \Or Let $B_U=\Par{u_1,\dots,u_m},B_V=\BigPar{u_1,\dots,u_m,\dots,u_n},B_W=\Par{w_1,\dots,w_p}.$\parSol{}
 Define $E_{i,j}\in\Lm{V,W}:u_x\mapsto\delta_{i,x}w_j.$\vspace{-16pt}\parSol{}
 $\forall T\in\mE,k\in\Bra{1,\dots,m},TE_{k,k}=0\Rightarrow{\normalsize\Spn\underbrace{\begin{Bmatrix} \underset{\;,}{E_{1,1}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\underset{\!,}{E_{m,1}},\\[-2pt] \vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \,\vdots\\[-2pt] \overset{\;,}{E_{1,p}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\overset{\!\!,}{E_{m,p}}\end{Bmatrix}}_{=\:R}}\,\cap\,\mE=\zeroSubs$.\vspace{-32pt}\parSol{}
 \hspace{-7pt}$\hText{$
 	又 $C=\Spn${\small$\begin{Bmatrix} \underset{\;,}{E_{m+1,1}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\underset{\!,}{E_{n,1}},\\[-2pt] \vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \,\vdots\\[-2pt] \overset{\;,}{E_{m+1,p}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\overset{\!\!,}{E_{n,p}}\end{Bmatrix}$}$\,\subseteq\mE.\\\;\\\;}$\vspace{-80pt}\par
 \hfill Now $\Lm{V,W}=\spn R\oplus C$\Blind{.\quad}\vspace{0pt}\par
-\hfill$\Rightarrow\Lm{V,W}=\spn R+\mE.$\Blind{\quad}\PfEnd\vspace{10pt}
+\hfill$\Rightarrow\Lm{V,W}=\spn R+\mE.$\Blind{\quad}\PfEnd\vspace{10pt}\par
 \SepLine\pagebreak
 
 \Anchor{3D4e17}\ProblemBnoor{4E 17}{
 	\TextB{Supp $U,V,W$ finide, $S\in\Lm{V,W},\mA\in\Lm[\BigPar]{\Lm{U,V},\Lm{U,W}}:T\mapsto ST.$\vspace{1pt}}
-	\TextB{Show $\dim\null\mA=\Par{\!\dim U}\Par{\!\dim\null S},\,\dim\range\mA=\Par{\!\dim U}\Par{\!\dim\range S}$.\vspace{2pt}}
+	\TextB{Show $\dim\null\mA=\Par{{\dim U}}\Par{{\dim\null S}},\,\dim\range\mA=\Par{{\dim U}}\Par{{\dim\range S}}$.\vspace{2pt}}
 }(a) $\forall T\in\Lm{U,V},$ $ST=0\Longleftrightarrow\range T\subseteq\null S.$ Thus $\null\mA=\Lm{U,\null S}.$\parSol{\vspace{2pt}}
 (b) $\forall R\in\Lm{U,W},$ $\range R\subseteq\range S \Longleftrightarrow\exists\,T\in\Lm{U,V},R=ST,$ by (3.B 25).\parSol{\Hb}
 Thus $\range\mA=\Lm{U,\range S}.$\PfEnd\vspace{4pt}\quad
@@ -1738,7 +1743,7 @@ $\range\mA={}\Spn{\small\begin{Bmatrix} \underset{\;,}{Q_{1,1}}, &\hspace{-6pt} 
 
 \Anchor{3D'4}\ProblemB{
 	\TextB{Supp $U,V,W$ finide, $S\in\Lm{U,V},\mB\in\Lm[\BigPar]{\Lm{V,W},\Lm{U,W}}:T\mapsto TS.$\vspace{1pt}}
-	\TextB{Show $\dim\null\mB=\Par{\!\dim W}\Par{\!\dim\null S},\,\dim\range\mB=\Par{\!\dim W}\Par{\!\dim\range S}.$\vspace{2pt}}
+	\TextB{Show $\dim\null\mB=\Par{{\dim W}}\Par{{\dim\null S}},\,\dim\range\mB=\Par{{\dim W}}\Par{{\dim\range S}}.$\vspace{2pt}}
 }(a) $\forall T\in\Lm{V,W},TS=0\Longleftrightarrow\range S\subseteq\null T.$ Thus $\null\mB=\Bra{T\in\Lm{V,W}:T\mmid_{\range S}=0}.$\parSol{\vspace{2pt}}
 (b) $\forall R\in\Lm{U,W},\null S\subseteq\null R\Longleftrightarrow\exists\,T\in\Lm{V,W},R=TS,$ by (3.B.24).\parSol{\Hb}
 Thus $\range\mB=\Bra{R\in\Lm{U,W}:R\mmid_{\null S}=0}.$ \;Now by Exe (4E 10).\PfEnd\vspace{4pt}\quad
@@ -1753,6 +1758,14 @@ $\mB(T)=TS=\XPar{{\sum_{j=1}^p\sum_{i=1}^m A_{j,i}R_{i,j}}}\XPar{{\sum_{k=1}^r E
 		A_{p,1} &\hspace{-6pt} \cdots &\hspace{-6pt} A_{p,r} &\hspace{-6pt} \cdots &\hspace{-6pt} 0\end{pmatrix}}.$\par\vspace{-20pt}\quad
 $\range\mB=\Spn{\small\begin{Bmatrix} \underset{\;,}{Q_{1,1}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\underset{\!\!,}{Q_{r,1}},\\[-2pt] \vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots\\[-2pt] \overset{\;,}{Q_{1,p}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\overset{\!\!\!,}{Q_{r,p}}\end{Bmatrix}},\;\null\mB=\Spn{\small\begin{Bmatrix} \underset{\;,}{R_{r+1,1}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\underset{\!\!,}{R_{n,1}},\\[-2pt] \vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots\\[-2pt] \overset{\;,}{R_{r+1,p}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\overset{\!\!\!,}{R_{n,p}}\end{Bmatrix}}.$\PfEnd[-14pt]
 \SepLine
+
+%\ProblemB{
+%	\TextA{Supp $U,V,W,X$ of dim $m,n,p,q$ respectly, and $S\in\Lm{U,V},R\in\Lm{W,X}.$}
+%	\TextA{Supp $\dim\range S=s,\dim\range R=r.$ Define $\mC\in\Lm[\BigPar]{\Lm{V,W},\Lm{U,X}}:T\mapsto RTS.$}
+%	\TextA{Show $\dim\null\mC=\Par{{\dim\null R}}\Par{{\dim\null S}},\,\dim\range\mC=\Par{{\dim\range R}}\Par{{\dim\range S}}.$}
+%}Apply Exe ('4) to $\mB.$ Done.\par\quad
+%Define $\mA\in\Lm[\BigPar]{\Lm{V,W},\Lm{V,X}}:T\mapsto RT,\;\;\mB\in\Lm[\BigPar]{\Lm{V,\range R},\Lm{U,\range R}}:T\mapsto TS.$\PfEnd
+%\SepLine
 
 \ProblemN{\Anchor{3D16}{16}}{
 	\TextA{Supp $V$ is finide and $S\in\Lm{V}$ suth $\forall T\in\Lm{V},ST=TS$. Prove $\exists\,\lambda\in\Fbb,S=\lambda I$.}
