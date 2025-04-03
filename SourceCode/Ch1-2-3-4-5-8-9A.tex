@@ -3264,10 +3264,8 @@ If $\Par{T-\lambda I}\Big|{_U}=T\mmid_U-\lambda I_U$ not inje. Then $\lambda$ is
 \Or Let $B_U=\Par{u_1,\dots,u_m}\Rightarrow\BigPar{Tv-\lambda v,\,Tu_1-\lambda u_1,\cdots,Tu_m-\lambda u_m}$ of len $\Par{m+1}$ liney dep in $U.$\par\quad
 So that $a_0\Par{T-\lambda I}v+a_1\Par{T-\lambda I}u_1+\dots+a_m\Par{T-\lambda I}u_m=0,\exists\,a_k\neq 0.$\par\quad
 Then $Tw=\lambda w,$ where $w=a_0v+a_1u_1+\dots+a_mu_m\neq 0\Leftarrow w\not\in U\Leftarrow v\not\in U.$\PfEnd\vspace{4pt}\Anchor{5A36}
-\AExa Let $V=\Bra{\,f\in\Rbb^{\Rbb}:\exists\,!\,m\in\Nbb,f\in\Span{1,e^x,\dots,e^{mx}}}.$\parExa
-Let $U=\Bra{\,f\in\Rbb^{\Rbb}:\exists\,!\,m\in\Nbp,f\in\Span{e^x,\dots,e^{mx}}}.$\parExa
-Define $T\in\Lm{V}$ by $Tf=e^x f.$ Then $\Par{T\XSlash U}\Par{1+U}=e^x+U=0$ while $T$ inje.
-\SepLine
+\AExa Let $V=\Fbb^\Nbb,U=\Bra{\,x\in\Fbb^{\Nbb}:x_1=0},T\in\Lm{V}:e_k=e_{k+1}.$ Then $\Par{T\XSlash U}\Par{e_1+U}=e_2+U=0.$
+\SepLine\pagebreak
 
 \Anchor{5A4e39}\ProblemBnoor{4E 39}{
 	\TextB{Supp $T\in\Lm{V},$ $V$ is finide. Prove $\exists$ eigval of $T$ $\Longleftrightarrow\exists$ invarsp $U$ of dim $\dim V-1$.}
@@ -3632,22 +3630,18 @@ Then $U_{j-1}$ is invard $T,$ so is each $U_n=\Span{v,Tv,\dots,T^{j-1} v,\dots,T
 \SepLine
 
 \Anchor{5BII4e2}\ProblemN{II.2}{
-	\TextA{Supp $A$ and $B$ are up-trig \Par{and square} matrices of the same size,}
-	\TextA{with $\alpha_1 , \dots , \alpha_n$ on the diag of $A$ and $\beta_1 , \dots , \beta_n$ on the diag of $B$.}
-	\PrePa\TextA{Show $A + B$ up-trig with $\alpha_1 + \beta_1 , \dots , \alpha_n + \beta_n$ on the diag.}
-	\PrePb\TextA{Show $AB$ up-trig with $\alpha_1 \beta_1 , \dots , \alpha_n \beta_n$ on the diag.}
-}(a) By def, immed. \:(b) Becs $A_{j,k}=B_{j,k}=0$ for $j>k.$ By def, for each $p\in\Bra{1,\dots,n},$\parSol{} $\Par{AB}{_{p,p}}=A_{p,1}B_{1,p}+\dots+A_{p,p-1}B_{p-1,p}+A_{p,p}B_{p,p}+A_{p,p+1}B_{p+1,p}+\dots+A_{p,n}B_{n,p}=A_{p,p}B_{p,p}.$\PfEnd
+	\TextA{Supp $A,B\in\Fbb^{n,n}$ are up-trig with each $A_{p,p}=\alpha_p,B_{p,p}=\beta_p.$}
+	\TextA{Show $AB$ up-trig with $\alpha_1 \beta_1 , \dots , \alpha_n \beta_n$ on the diag.}
+}Becs $A_{j,k}=B_{j,k}=0$ for $j>k.$ By def, for each $p\in\Bra{1,\dots,n},$\parSol{} $\Par{AB}{_{p,p}}=A_{p,1}B_{1,p}+\dots+A_{p,p-1}B_{p-1,p}+A_{p,p}B_{p,p}+A_{p,p+1}B_{p+1,p}+\dots+A_{p,n}B_{n,p}=A_{p,p}B_{p,p}.$\PfEnd
 \SepLine
 
 \Anchor{5BII4e3}\ProblemN{II.3}{
-	\TextA{Supp $T$ inv, $B_V=\Par{v_1,\dots,v_n},$ $\Mt{T}=A$ is up-trig,}
-	\TextA{with $\lambda_1,\dots,\lambda_n$ on diag. Show $A^{-1}$ is also up-trig, with $\lambda_1^{-1},\dots,\lambda_n^{-1}$ on diag.}
-}Becs $\lambda_k$ on diag of $A$ $\Longleftrightarrow\lambda_k$ eigval of $T$ $\Longleftrightarrow\lambda_k^{-1}$ eigval of $T^{-1}$ $\Longleftrightarrow\lambda_k^{-1}$ on diag of $A^{-1}.$\PfEnd\vspace{2pt}\par\quad
-\Or Let each $Tv_k=u_k+\lambda_kv_k,$ where $u_k\in\Span{v_1,\dots,v_{k-1}}.$ We use induc on $k.$\par\quad
-(i) $k=1.$ $Tv_1=\lambda_1v_1\Rightarrow T^{-1}v_1=\lambda_1^{-1}v_1\in\Span{v_1},$ invard $T^{-1};$ and $\lambda_1^{-1}$ is the 1st ent on diag.\par\quad\Endi
-(ii) $k\geqslant 2.$ Asum $\Span{v_1,\dots,v_{k-1}}$ invard $T^{-1}.$\par\quad\Hii
-Note that $Tv_k=u_k+\lambda_kv_k\Rightarrow v_k=T^{-1}\Par{c_1v_1+\dots+c_{k-1}v_{k-1}}+\lambda_kT^{-1}v_k.$\par\quad\Hii
-Thus $T^{-1}v_k=\lambda_k^{-1}v_k-\lambda_k^{-1}T^{-1}u_k\in\Span{v_1,\dots,v_k},$ invard $T;$ and $\lambda_{k}^{-1}$ is the $k^\text{th}$ ent on diag.\PfEnd
+	\TextA{Supp $T$ inv and up-trig wrto $B_V=\Par{v_1,\dots,v_n}.$ Show $T^{-1}$ is up-trig wrto $B_V.$}
+}Each $\Span{v_1,\dots,v_k}=U_k=\range T\mmid_{U_k}=U_k$ invard $T^{-1}=q\Par{T},$ by (8.C.11) and (5.A.3).\PfEnd\vspace{2pt}\parSol{}
+\Or Let each $Tv_k=u_k+\lambda_kv_k,$ where $u_k\in\Span{v_1,\dots,v_{k-1}}.$\parSol{}
+We use induc on $k$ to show each $\Span{v_1,\dots,v_k}$ invard $T^{-1}.$ (i) Immed. (ii) $2\leqslant k\leqslant n-1.$\parSol{}
+Asum $\Span{v_1,\dots,v_{k-1}}$ invard $T^{-1}.$ Then for each $Tv_k=u_k+\lambda_kv_k,$\parSol{}
+$T^{-1}v_k=\lambda_k^{-1}v_k-\lambda_k^{-1}T^{-1}u_k\in\Span{v_1,\dots,v_k},$ invard $T;$ and $\lambda_{k}^{-1}$ is the $k^\text{th}$ ent on diag.\PfEnd
 \SepLine
 
 %\Anchor{5BII14}\Anchor{5BII4e4}\ProblemNor{4}{3E 5.B.14}{
@@ -3692,7 +3686,7 @@ Now $q$ of deg $2$ is a multi of the min of $T\mmid_{\nullp p_v\SmallPar{v}},$ w
 	Supp $B_V=\Par{v_1,\dots,v_n},B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_n},T\in\Lm{V},A=\Mt{T,B_V}.$\TextA{}
 	(a) $A$ up-trig $\Longleftrightarrow T=\sum_{k=1}^n\sum_{j=1}^kA_{j,k}E_{k,j}\Longleftrightarrow T\apostrophe=\sum_{k=1}^n\sum_{j=1}^kA^t_{k,j}\reflectbox{\textit{E}}{_{j,k}}\Longleftrightarrow A^t$ low-trig.\TextA{}
 	(b) $A$ low-trig $\Longleftrightarrow T=\sum_{k=1}^n\sum_{j=1}^kA_{k,j}E_{j,k}\Longleftrightarrow T\apostrophe=\sum_{k=1}^n\sum_{j=1}^kA^t_{j,k}\reflectbox{\textit{E}}{_{k,j}}\Longleftrightarrow A^t$ up-trig.\TextA{\vspace{-3pt}}
-}\SepLine\pagebreak
+}\SepLine
 
 \Anchor{5BIIT2}\ProblemN{\BulletPointX II.\TipsN{2}}{
 	\TextA{Supp $\Par{\alpha_1,\dots,\alpha_n},\Par{\beta_1,\dots,\beta_n}$ are bses of $V,$ with each $\alpha_k=\beta_{n-k+1}.$}
@@ -3754,7 +3748,6 @@ Asum $U=\bigcap_{k=1}^m\Range\Par{T-\lambda_kI}\neq\zeroSubs.$ Becs $U$ invard $
 %}Given eigvecs $B_V=\Par{v_1,\dots,v_n}.$ Becs $T$ diag. Each $Tv_k=\lambda_jv_k.$ Forming $B_{E\SmallPar{\lambda_j,T}}.$ Immed.\PfEnd%%\vspace{2pt}\parSol{}
 %%\Or Let $\lambda_1,\dots,\lambda_m$ be the disti non0 eigvals. Supp $d_0$ eigvecs of $B_V$ corres eigval $0\Rightarrow\dim E\Par{0,T}=d_0.$
 %\SepLine
-\pagebreak
 
 \Anchor{5C4e13}\ProblemN{13}{
 	\TextA{Supp $A,B\in\Fbb^{n,n}$ and $A$ is diag with {\tgsc dist} ents on diag. Prove $AB=BA\Longleftrightarrow B$ is diag.}
@@ -3763,7 +3756,7 @@ Becs (I) $A_{j,j}B_{j,k}=A_{j,1}B_{1,k}+\dots+\Sbra{A_{j,j}B_{j,k}}+\dots+A_{j,n
 And (II) $B_{j,k}A_{k,k}=B_{j,1}A_{1,k}+\dots+\Sbra{B_{j,k}A_{k,k}}+\dots+B_{j,n}A_{n,k}=\Par{BA}{_{j,k}}.$\parSol{}
 Supp $B$ diag. If $j=k,$ then $\Par{BA}{_{j,k}}=\Par{AB}{_{j,k}},$ othws true as well.\parSol{}
 Supp $AB=BA\Rightarrow A_{j,j}B_{j,k}=A_{k,k}B_{j,k}.$ Asum $B_{j,k}\neq0$ with $j\neq k.$ Then $A_{j,j}=A_{k,k},$ ctradic.\PfEnd
-\SepLine
+\SepLine\pagebreak
 
 \Anchor{5C4e14}\ProblemN{14}{
 	\TextA{Supp $\Fbb=\Cbb,$ $k\in\Nbp,$ and $T\in\Lm{V}$ is inv. Prove $T^k$ diag $\Rightarrow T$ diag.}
@@ -3818,9 +3811,9 @@ Becs for each $w_k,\:\exists$ eigval $\lambda$ of $T,\:Tw_k=\lambda w_k\Rightarr
 %%Let $\aMid{c_j}=\max\!\Bra{\aMid{c_1},\dots,\aMid{c_n}}.$ Now $\lambda c_j=\sum_{k=1}^nA^t_{j,k}c_k\Rightarrow\aXMid{\lambda-A^t_{j,j}}\leqslant\sum_{j\neq k=1}^n\aXMid{A_{k,j}}.$\PfEnd\vspace{6pt}\parSol{}
 %$\lambda\in\BigBra{z\in\Fbb:\aXMid{z-A_{j,j}}\leqslant\sum_{j\neq k=1}^n\aXMid{A^t_{j,k}}=\sum_{j\neq k=1}^n\aXMid{A_{k,j}}}$ for some $j\in\Bra{1,\dots,n}.$\PfEnd
 %\SepLine
-\ChEnd\pagebreak
+\ChEnd
 
-\ChDecl{Ch5E}{5.E [4E]}{}
+\vfill\ChDecl{Ch5E}{5.E [4E]}{}
 
 \vspace{4pt}
 
@@ -3840,7 +3833,7 @@ Apply $D_y$ to each vec in $B\Rightarrow B_y=\BigPar{0,0,1,0,x,2y,\cdots,\cdots,
 	\TextA{Prove $\exists\,\alpha,\lambda\in\Cbb$ suth $\Range\Par{S -\alpha I} + \Range\Par{T -\lambda I}\neq V$.}
 }Supp $A,C\in\Fbb^{n,n}$ are up-trig matrices of $S,T$ wrto a $B_V=\Par{v_1,\dots,v_n}$ suth $A,C$ commu.\parSol{}
 Let $\alpha=A_{n,n},\,\lambda=C_{n,n}.$ Then $\Range\Par{S-\alpha I},\Range\Par{T-\lambda I}\subseteq\Span{v_1,\dots,v_{n-1}}.$\PfEnd
-\SepLine
+\SepLine\pagebreak
 
 \Anchor{5E7}\ProblemN{7}{
 	\TextA{Supp $\Fbb=\Cbb,$ and $S,T\in\Lm{V}$ commu, $S$ diag. Prove $\exists\,B_V$ suth $S$ diag and $T$ up-trig.}
