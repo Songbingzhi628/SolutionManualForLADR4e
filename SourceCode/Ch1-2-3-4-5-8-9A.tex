@@ -2368,16 +2368,12 @@ $\forall\varPhi\in\BigPar{\null T}{^0},$ let $\psi=\varPhi\circ R,$ then $T\apos
 \PfEnd
 \SepLine
 
-\Anchor{3FN16}\BulletPointX\NoteForSmall{Exe (16)}\vspace{-2pt}\TextB{}
-%{\FontSmall Let $B_{\range\mT}=\Par{\varphi_1,\dots,\varphi_p}$ with each $\varphi_k=\mT\psi_k. $ Let $B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_p,\gamma_1,\dots,\gamma_q}\Rightarrow B_V=\Par{v_1,\dots,v_p,u_1,\dots,u_q}.$}\vspace{-3pt}\TextB{}
-%{\FontSmall Let $B_{\null\mT}=\Par{\beta_1,\dots,\beta_l}\Rightarrow B_{W\apostrophe}=\Par{\psi_1,\dots,\psi_p,\beta_1,\dots,\beta_r}\Rightarrow B_W=\Par{w_1,\dots,w_p,x_1,\dots,x_r}.$}\TextB{}
-%Let $A^t=\Mt[\BigPar]{\mT,B_{W\apostrophe},B_{V\apostrophe}}.$ Then $A^t_{i,j}=0,A^t_{k,k}=1$ for all $i\neq j$ and each $1\leqslant k\leqslant p.$\TextB{}
-%Define $T$ with each $Tv_i=w_i$ and each $Tu_j=0.$ Then each $T\apostrophe\Par{\beta_k}=0=\mT\beta_k.$\TextB{}
-%And each $\Sbra{T\apostrophe\Par{\psi_j}}\Par{v}=\psi_j\Par{a_1w_1+\dots+a_pw_p}=a_j=\varphi_j\Par{v}={\mT\psi_j}\Par{v}.$ \;Now by Exe (16).\vspace{4pt}\TextB{}
-{\FontSmall Let $B_V=\Par{v_1,\dots,v_n},B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_n},B_W=\Par{w_1,\dots,w_m},B_{W\apostrophe}=\Par{\psi_1,\dots,\psi_m}.$}\TextB{}
-Define each $E_{j,k}\in\Lm{V,W}:v_x\mapsto\delta_{j,x}w_k,$ and each $\reflectbox{\textit{E}}{_{k,j}}\in\Lm{W\apostrophe,V\apostrophe}:\psi_x\mapsto\delta_{k,x}\varphi_j.$\TextB{}
-Note that each $E_{j,k}\!\!\upapostrophe\,\,\Par{\psi_x}=\psi_x\circ E_{j,k}=\delta_{k,x}\varphi_j=\reflectbox{\textit{E}}{_{k,j}}\Par{\psi_x}\Rightarrow E_{j,k}\!\!\upapostrophe\,\,=\reflectbox{\textit{E}}{_{k,j}}.$\vspace{1pt}\TextB{}
-$\Lm{V,W}\ni T=\sum_{j=1}^n\sum_{k=1}^mA_{k,j}E_{j,k}\Longleftrightarrow\mT=\sum_{j=1}^n\sum_{k=1}^mA_{k,j}\reflectbox{\textit{E}}{_{k,j}}\in\Lm{W\apostrophe,V\apostrophe}.$ Uniqly by Exe (16).%\vspace{3pt}\Anchor{5E5}\TextB{}
+\BulletPointX{\FontSmall Let $B_V=\Par{v_1,\dots,v_n},B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_n},B_W=\Par{w_1,\dots,w_m},B_{W\apostrophe}=\Par{\psi_1,\dots,\psi_m}.$}\par
+\Anchor{3FT5}\BulletPointX\TipsN{5}\,\,\,Define $\Phi\in\Lm{V\apostrophe,V}:\varphi_k\mapsto v_k;\;\Psi\in\Lm{W,W\apostrophe}:w_j\mapsto\psi_j.$\TextB{}
+\IndentTipsN{5}Define $T\in\Lm{V,W}$ suth $\Mt{T,B_V,B_W}=A.$ Let $S=\Phi T\apostrophe\Psi\Rightarrow\Mt{S,B_W,B_V}=A^t.$\vspace{2pt}\par
+\Anchor{3FT6}\BulletPointX\TipsN{6}\,\,\,Define each $E_{j,k}\in\Lm{V,W}:v_x\mapsto\delta_{j,x}w_k,$ and each $\reflectbox{\textit{E}}{_{k,j}}\in\Lm{W\apostrophe,V\apostrophe}:\psi_x\mapsto\delta_{k,x}\varphi_j.$\TextB{}
+\IndentTipsN{6}Note that each $E_{j,k}\!\!\upapostrophe\,\,\Par{\psi_x}=\psi_x\circ E_{j,k}=\delta_{k,x}\varphi_j=\reflectbox{\textit{E}}{_{k,j}}\Par{\psi_x}\Rightarrow E_{j,k}\!\!\upapostrophe\,\,=\reflectbox{\textit{E}}{_{k,j}}.$\vspace{1pt}\TextB{}
+\IndentTipsN{5}$\Lm{V,W}\ni \sum_{j=1}^n\sum_{k=1}^mA_{k,j}E_{j,k}\Longleftrightarrow\sum_{j=1}^n\sum_{k=1}^mA_{k,j}\reflectbox{\textit{E}}{_{k,j}}\in\Lm{W\apostrophe,V\apostrophe}.$ Uniqly by Exe (16).%\vspace{3pt}\Anchor{5E5}\TextB{}
 %\ACoro $ST=TS\Longleftrightarrow S\apostrophe T\apostrophe=T\apostrophe S\apostrophe.$ \;By Exe (16). \Or Becs $AC=CA\Longleftrightarrow A^tC^t=C^tA^t.$
 \SepLine
 
@@ -2416,8 +2412,7 @@ Convly, let each $v_k$ be suth $e_k=\Gamma\Par{v_k}=\BigPar{\varphi_1\Par{v_k},\
 \Or Let $U=\Span{v_1,\dots,v_m}.$ Then $B_{U\apostrophe}=\BigPar{\varphi_1\Big|{_U},\dots,\varphi_m\Big|{_U}}\Rightarrow\Par{\varphi_1,\dots,\varphi_m}$ liney indep.\PfEnd\vspace{4pt}\quad
 \Or Let $\Par{\psi_1,\dots,\psi_m}$ be dual bss of the std bss of $\Fbb^m.$ Define an iso $\Psi:\Fbb^m\rightarrow\Par{\Fbb^m}\apostrophe$ by $\Psi\Par{e_k}=\psi_k.$\par\quad
 $\forall\Par{x_1,\dots,x_m}\in\Fbb^m,\Gamma\apostrophe\BigPar{\Psi\Par{x_1,\dots,x_m}}=x_1\varphi_1+\dots+x_m\varphi_m.$ Define $\Phi=\Gamma\apostrophe\circ\Psi.$ Thus by (3.B.3),\par\quad
-(c) $\Gamma$ inje $\Longleftrightarrow\Gamma\apostrophe$ surj $\Longleftrightarrow\Phi$ surj $\Longleftrightarrow\Par{\varphi_1,\dots,\varphi_m}$ spanning $V\apostrophe.$\par\quad
-(d) $\Gamma$ surj $\Longleftrightarrow\Gamma\apostrophe$ inje $\Longleftrightarrow\Phi$ inje $\Longleftrightarrow\Par{\varphi_1,\dots,\varphi_m}$ being liney indep.\PfEnd
+(c) $\Gamma$ inje $\Longleftrightarrow\Gamma\apostrophe$ surj $\Longleftrightarrow\Phi$ surj $\Longleftrightarrow\Par{\varphi_1,\dots,\varphi_m}$ spanning $V\apostrophe.$ \;Simlr for (d).\PfEnd
 \SepLine
 \pagebreak
 
@@ -3303,10 +3298,8 @@ Now $y_1+\dots+y_n=\sum_{j=1}^n\sum_{k=1}^n \BigPar{A_{j,k}x_k-\lambda x_j}=\sum
 Thus $\Range\Par{T-\lambda I}\subseteq\Bra{\Par{y_1,\dots,y_n}:y_1+\dots+y_n=0}.$ Now $\Par{T-\lambda I}$ is not inv.\PfEnd\vspace{4pt}\quad\Hb
 \Or Let $\Par{e_1,\dots,e_n}$ be the std bss of $\Fbb^{n,1}.$ Define $\psi\in\BigPar{\Fbb^{n,1}}\apostrophe$ with each $\psi\Par{e_k}=1.$\vspace{0pt}\par\quad\Hb
 Becs $Ae_k=A_{\cdot,k}=\sum_{j=1}^nA_{j,k}e_j\Rightarrow\psi\Sbra{\Par{T-\lambda I}{e_k}}=\psi\BigBigPar{{\sum_{j=1}^n A_{j,k}e_j}-\lambda e_k}=\sum_{j=1}^n A_{j,k}-\lambda=0.$\PfEnd\vspace{5pt}\quad\Hb
-\Or Define $S\in\Lm{\Fbb^{n,1}}$ by $Sx=A^tx.$ Becs the rows of $\Mt{S}=A^t$ are the cols of $\Mt{T}=A.$\par\quad\Hb
-Let $\Par{\varphi_1,\dots,\varphi_n}$ be the dual bss of $\Par{e_1,\dots,e_n}.$ Define $\Phi\in\Lm[\Sbra]{\Fbb^{n,1},\BigPar{\Fbb^{1,n}}\apostrophe}$ by $\Phi\Par{e_k}=\varphi_k.$\vspace{1pt}\par\quad\Hb
-Now $\BigPar{\Phi^{-1}T\apostrophe\Phi}{e_k}=\BigPar{\Phi^{-1}T\apostrophe}{\varphi_k}=\Phi^{-1}\BigBigPar{{\sum_{j=1}^n A_{j,k}^t\varphi_j}}=\sum_{j=1}^n A_{j,k}^te_j=A^t e_k=Se_k.$\vspace{1pt}\par\quad\Hb
-Becs by (a), $\lambda$ is eigval of $S=\Phi^{-1}T\apostrophe\Phi.$ So of $T\apostrophe,$ by Exe (15). So of $T,$ by Exe (4E 15).\PfEnd
+\Or Define $S\in\Lm{\Fbb^{n,1}}$ by $Sx=A^tx.$ \;By (a), \Sbra{3.F \TIPSN{5}}, and Exe (15, 4E 15),\par\quad\Hb
+the sum of the ent in each row of $A^t$ equals $\lambda\Rightarrow \lambda$ is eigval of $S=\Phi^{-1}T\apostrophe\Phi,$ so of $T\apostrophe,$ of $T.$\PfEnd
 \SepLine
 
 \Anchor{5A'1}\ProblemB{
@@ -3320,9 +3313,11 @@ Each $\Par{xA}{_{1,C}}=\lambda\Par{x}{_{1,C}}.$ \,Thus for $x$ suth $\sum_{k=1}^
 Now $y_1+\dots+y_n=\sum_{k=1}^n\sum_{j=1}^n\Par{x_j A_{j,k}-\lambda x_k}=\sum_{j=1}^n x_j\BigSbra{\sum_{k=1}^n A_{j,k}}-\lambda\sum_{k=1}^n x_k=0.$\par\vspace{2pt}\quad\Hb
 Thus $\Range\Par{T-\lambda I}\subseteq\Bra{\Par{y_1,\dots,y_n}:y_1+\dots+y_n=0}.$ Now $\Par{T-\lambda I}$ is not inv.\PfEnd\vspace{3pt}\quad\Hb
 \Or Simlr in Exe (24). Becs $e_jA=A_{j,\cdot}=\sum_{k=1}^n A_{j,k}e_k\Rightarrow\psi\Sbra{\Par{T-\lambda I}{e_j}}={\sum_{k=1}^n A_{j,k}}-\lambda=0.$\PfEnd\vspace{4pt}\quad\Hb
-\Or Define $S\in\Lm{\Fbb^{1,n}}$ by $Sx=xA^t.$ Let $\Par{\varphi_1,\dots,\varphi_n}$ be the dual bss. Define $\Phi$ by $\Phi\Par{e_k}=\varphi_k.$\par\quad\Hb
-Becs $\Sbra{T\apostrophe\Par{\varphi_k}}\Par{e_j}=\varphi_k\BigBigPar{{\sum_{i=1}^n A_{j,i}e_i}}=A_{j,k}.$ By (3.F.9), $T\apostrophe\Par{\varphi_k}=\sum_{j=1}^n A_{j,k}\varphi_j.$\vspace{1pt}\par\quad\Hb
-Now $\BigPar{\Phi^{-1}T\apostrophe\Phi}{e_k}=\BigPar{\Phi^{-1}T\apostrophe}{\varphi_k}=\Phi^{-1}\BigBigPar[0pt]{\sum_{j=1}^n A_{j,k}\varphi_j}=\sum_{j=1}^n A_{j,k}e_j=e_k A^t=Se_k.$ \,Simlr.\PfEnd
+\Or Define $S\in\Lm{\Fbb^{1,n}}$ by $Sx=xA^t\Rightarrow S=\Phi{^{-1}}T\apostrophe\Phi.$ \;Simlr and by \Sbra{3.D \TIPSN{3}}.
+%Let $\Par{\varphi_1,\dots,\varphi_n}$ be the dual bss. Define $\Phi$ by $\Phi\Par{e_k}=\varphi_k.$\par\quad\Hb
+%Becs $\Sbra{T\apostrophe\Par{\varphi_k}}\Par{e_j}=\varphi_k\BigBigPar{{\sum_{i=1}^n A_{j,i}e_i}}=A_{j,k}.$ By (3.F.9), $T\apostrophe\Par{\varphi_k}=\sum_{j=1}^n A_{j,k}\varphi_j.$\vspace{1pt}\par\quad\Hb
+%Now $\BigPar{\Phi^{-1}T\apostrophe\Phi}{e_k}=\BigPar{\Phi^{-1}T\apostrophe}{\varphi_k}=\Phi^{-1}\BigBigPar[0pt]{\sum_{j=1}^n A_{j,k}\varphi_j}=\sum_{j=1}^n A_{j,k}e_j=e_k A^t=Se_k.$ \,Simlr.
+\PfEnd
 \SepLine
 
 %\Anchor{5C16}\ProblemBnoor{5.C.16}{
