@@ -1636,50 +1636,62 @@ Simlr. Now each $T\beta_k=T\Par{B_{1,k}\alpha_1+\dots+B_{n,k}\alpha_n}=A'_{1,k}\
 \Anchor{3DN3.65}\BulletPointX\NoteForSmall{[3.65]}\;\;$\Mt{Tv}=\Mt[\BigPar]{I,\Par{Tv},B_W}=\Mt{T,B_V,B_W}\Mt[\BigPar]{I,\Par{v},B_V}=\Mt[\BigPar]{T,\Par{v},B_W}.$\vspace{-2pt}
 \SepLine
 
-\Anchor{3DNE15}\BulletPointX\NoteForSmall{Exe (15)}\TextB{}
-Supp $A\in\Fbb^{m,n}.$ Define $T\in\Lm{\Fbb^{n,1},\Fbb^{m,1}}:x\mapsto Ax\Rightarrow A=\Mt{T}$ wrto std bses $B_1,B_2$ of $\Fbb^{m,1},\Fbb^{n,1}.$\TextB{}
-Becs $T$ have infily many defs of the form $T:x\mapsto C_2AC_1x,$ where $C_1=\Mt{I,B_1',B_1},C_2=\Mt{I,B_2,B_2'}.$\TextB{}
-Now we can well define $\range A=\range T$ and $\null A=\range T,$ becs $A$ is indep of bses.
+\Anchor{3DNE15}\BulletPointX\NoteForSmall{Exe (15)}\;\;\uline{$Tx=\Mt{Tx,B_2}$}${}=\Mt{I,B_2',B_2}\Mt{Tx,B_2'}=\Mt{I,B_2',B_2}\Mt{T,B_1',B_2'}\Mt{x,B_1'}$\TextB{}
+\Blind{\NoteForSmall{Exe (15)}\;\;$Tx$}$=\Mt{I,B_2',B_2}\Mt{T,B_1',B_2'}\Mt{I,B_1,B_1'}$\uline{$\Mt{x,B_1}$}${}=\Mt{T,B_1,B_2}$\uline{$x$}${}=Ax.$\vspace{2pt}\TextB{}
+Where $B_1,B_2$ are std bses, and $B_1',B_2'$ are arb bses. Now $A$ is uniq.\TextB{}
+Convly, $\forall A\in\Fbb^{m,n},\exists\,!\,T\in\Lm{\Fbb^{n,1},\Fbb^{m,1}},Tx=Ax=\Mt{T}x\Rightarrow\Mt{T}=A.$\TextB{}
+Hence $\range A=\range T$ and $\null A=\range T$ are well-defined becs the def of $T$ is indep of bses.\vspace{2pt}\TextB{}
+Let $P_{\!1}\in\Lm{\Fbb^{n,1}},P_{\!2}\in\Lm{\Fbb^{m,1}}$ be suth $\Mt{P_{\!1},B_1}=\Mt{I,B_1',B_1},\Mt{P_{\!2},B_2}=\Mt{I,B_2,B_2'}.$\TextB{}
+Now $\Mt{T,B_1,B_2}$ inje $\Longleftrightarrow T$ inje $\Longleftrightarrow P_{\!2}TP_{\!1}$ inje $\Longleftrightarrow\Mt{T,B_1',B_2'}=\Mt{P_{\!2}TP_{\!1},B_1,B_2}$ inje.\vspace{2pt}\TextB{}
+Supp $S\in\Lm{V,W},A_1=\Mt{S,B_V,B_W}=\Mt{T,B_1,B_2},$\TextB{}
+$C_V=\Mt{I,B_V',B_V},C_W=\Mt{I,B_W,B_W'},A_2=\Mt{S,B_V',B_W'}=C_WA_1C_V.$\TextB{}
+Let $P_{\!1}\in\Lm{\Fbb^{n,1}},P_{\!V}\in\Lm{V},P_{\!2}\in\Lm{\Fbb^{m,1}},P_{\!W}\in\Lm{W}$ and bses $B_1',B_2'$ be suth\TextB{}
+$\Mt{P_{\!1},B_1}=\Mt{I,B_1',B_1}=C_V=\Mt{P_{\!V},B_V},\Mt{P_{\!2},B_2}=\Mt{I,B_2,B_2'}=C_W=\Mt{P_{\!W},B_W}.$\TextB{}
+Now $A_1$ inje $\Longleftrightarrow T$ inje $\Longleftrightarrow$ the cols of $A_1$ liney indep $\Longleftrightarrow S$ inje. Simlr for surj.\TextB{}
+And $\Mt{S,B_V,B_W}$ inje $\Longleftrightarrow T$ inje $\Longleftrightarrow P_{\!2}TP_{\!1}$ inje $\Longleftrightarrow C_WA_1C_V=\Mt{S,B_V',B_W'}$ inje.\TextB{}
+Thus $S$ inje $\Longleftrightarrow\Mt{S}$ inje, wrto any bses. Simlr for surj and inv.
 \SepLine
 
 \Anchor{3DT3}\ProblemBX[]{\TipsN{3}}{
-	Identify $\Fbb^{m,n}$ with $\Lm{\Fbb^{n,1},\Fbb^{m,1}},$ due to $Tx=Ax;$ or with $\Lm{\Fbb^{1,m},\Fbb^{1,n}},$ due to $Tx=xA^t.$\TextB{\vspace{-4pt}}
+	Identify $\Fbb^{m,n}$ with $\Lm{\Fbb^{n,1},\Fbb^{m,1}},$ due to $Tx=Ax;$ or with $\Lm{\Fbb^{1,n},\Fbb^{1,m}},$ due to $Tx=xA^t.$\TextB{}
+	Details about the latter: $x\Mt{T}{^t}=\BigPar{\Mt{T}\Mt{x}{^t}}{^t}=\Mt{Tx}{^t}=\Mt{xA^t}{^t}=xA^t\Rightarrow\Mt{T}=A.$\TextB{}
+	\ANote If we define $\Mt{v}=\Par{c_1\:\:\cdots\:\:c_n}.$Then [3,64]: $\Mt{T}{_{k,\cdot}}=\Mt{v_k}\Mt{T}=\Mt{Tv_k}.$\TextB{}
+	\IndentNote Note that $A=\Mt[\BigPar]{T,\Par{v_1,\dots,v_n},\Par{w_1,\dots,w_m}}\in\Fbb^{n,m},$ and each $Tv_k=A_{k,1}w_1+\dots+A_{k,m}w_m.$\TextB{}
+	\IndentNote [3.65]: $\Mt{Tv}=c_1\Mt{Tv_1}+\dots+c_n\Mt{Tv_n}=c_1\Mt{T}{_{1,\cdot}}+\dots+c_n\Mt{T}{_{n,\cdot}}=\Mt{v}{\Mt{T}}.$\TextB{}
+	\IndentNote Exactly in trspose with the original. Now Exe (15): $T\in\Lm{\Fbb^{1,n},\Fbb^{1,m}}:Tx=xA.$\TextB{}
+	\IndentNote Becs $Tx=\Mt{Tx}=\Mt{x}\Mt{T}=x\Mt{T}$ wrto std bses.\TextB{\vspace{-4pt}}
 }\SepLine
 
 \Anchor{3DT4}\ProblemBX[]{\TipsN{4}}{
 	You must first declare bses and the purpose when using $\Mneg\!:\Fbb^{n,1}\mapsto v,$ or $\Fbb^{m,n}\mapsto\Lm{V,W}.$\TextB{\vspace{-4pt}}
 }\SepLine
 
-\Anchor{3DNE34e22}\BulletPointX\NoteForSmall{Exe (3, 4E 22)}\;\;$T\in\Lm{V,W}$ inv $\Longleftrightarrow\Mt{T}$ inv, wrto some $B_V,B_W$ $\Longleftrightarrow$ wrto any $B_V,B_W.$\TextB{}
-Supp $\Mt{T}$ wrto some bses is inv. Let $S\in\Lm{W,V}$ be suth $\Mt{S}=\Mt{T}{^{-1}}.$\TextB{}
-Then $\Mt{TS}=I=\Mt{ST}$ wrto same bses. Apply $\Mneg,$ now $TS=I,ST=I\Rightarrow S=T^{-1}.$\PfEnd\TextB{}
-\Or (a) $T\in\Lm{V,W}$ inje $\Longleftrightarrow$ the cols of $\Mt{T,B_V,B_W}$ are liney indep $\Longleftrightarrow\Mt{T}$ inje wrto any bses.\TextB{}
-\Blind{\Or}(b) $T\in\Lm{V,W}$ surj $\Longleftrightarrow$ the cols of $\Mt{T,B_V,B_W}$ spans $\Fbb^{\dim\:\!\!W,1}\Longleftrightarrow\Mt{T}$ surj wrto any bses.
+\Anchor{3DNE34e22}\BulletPointX\NoteForSmall{Exe (3, 4E 22)}\;\;$T\in\Lm{V,W}$ inv $\Longleftrightarrow\Mt{T}$ inv, wrto any $B_V,B_W.$\TextB{}
+Supp $\Mt{T}$ wrto some $B_V,B_W$ is inv. Let $S\in\Lm{W,V}$ be suth $\Mt{S,B_W,B_V}=\Mt{T}{^{-1}}.$\TextB{}
+$\Mt{TS,B_W}=I=\Mt{ST,B_V}.$ Apply $\Mneg.$ Now $S=T^{-1}\Rightarrow\Mt{T,B_V,B_W}{^{-1}}=\Mt{T^{-1},B_W,B_V}.$
 \SepLine
 
-\Anchor{3DN3.60}\BulletPointX\NoteFor{[3.60]}\;\;Supp $B_V=\Par{v_1,\dots,v_n},\;B_W=\Par{w_1,\dots,w_m}$.\TextB{\vspace{2pt}}
-{Define $E_{i,j}\in\Lm{V,W}$ by $E_{i,j}\Par{v_x}=\delta_{i,x} w_j.$ Denote $\Mt{E_{i,j}}$ by $\mEnt{j,i}.$ And $\BigPar{\mEnt{j,i}}{_{l,k}}=\delta_{i,l}\delta_{j,k}.$}\vspace{4pt}\TextB{}
-\ACoro {$E_{l,k}E_{i,j}=\delta_{j,l}E_{i,k},\;\mEnt{k,l}\mEnt{j,i}=\delta_{l,j}\mEnt{k,i}.$}\TextB{\vspace{-14pt}}
+\Anchor{3DN3.60}\BulletPointX\NoteFor{[3.60]}\;\;Supp $B_V=\Par{v_1,\dots,v_n},\;B_W=\Par{w_1,\dots,w_m}$.\TextB{}
+Define $E_{i,j}\in\Lm{V,W}$ by $E_{i,j}\Par{v_x}=\delta_{i,x}w_j.$ Let $\mEnt{j,i}=\Mt{E_{i,j},B_V,B_W}.$ Now $\BigPar{\mEnt{j,i}}{_{l,k}}=\delta_{i,l}\delta_{j,k}.$\vspace{2pt}\TextB{}
+Define $R_{i,j}\in\Lm{W,V}:w_x\mapsto\delta_{i,x}v_j;$ and $G_{i,j}=R_{x,j}E_{i,x},$ and $Q_{i,j}=E_{x,j}R_{i,x}.$\vspace{2pt}\TextB{}
+Let $\mRnt{j,i}=\Mt{R_{i,j},B_W,B_V},\mGnt{j,i}=\Mt{G_{i,j},B_V},\mQnt{j,i}=\Mt{Q_{i,j},B_W}.$\vspace{2pt}\TextB{}
+Now $R_{l,k}E_{i,j}=\delta_{j,l}G_{i,k},\;\mRnt{k,l}\mEnt{j,i}=\delta_{l,j}\mGnt{k,i}.$ Simlr for $Q_{i,k}$ and $\mQnt{k,i}.$\vspace{4pt}\TextB{}
 \hspace{-5pt}$\hText{$
 Becs $\mM\!:\Lm{V,W}\rightarrow\Fbb^{m,n}$ is iso.$\\$
-$E_{i,j}=\Mneg\mEnt{j,i}.$ \,By [2.42] and [3.61]:$\\[2pt]\,}$\quad
-%Thus $A={}${\normalsize$\envFontSmall[\scriptsize]\begin{pmatrix}
-%A_{1,1}\mE^{\Par{1,1}}\;\;+&\hspace{-6pt}
-%\cdots &\hspace{-6pt}+\;\;A_{1,n}\mE^{\Par{1,n}}\\[-2pt]
-%+&\hspace{-6pt}\cdots &\hspace{-6pt}+\\[-4pt]
-%\vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots\\[-4pt]
-%+&\hspace{-6pt}\cdots &\hspace{-6pt}+\\[-2pt]
-%A_{m,1}\mE^{\Par{m,1}}\;\;+&\hspace{-6pt}\cdots&\hspace{-6pt}+\;\;A_{m,n}\mE^{\Par{m,n}}
-%\end{pmatrix} $}$\;\Longleftrightarrow\;${\FontSmall$\begin{pmatrix}
-%		A_{1,1}E_{1,1}\;\;+&\hspace{-6pt}\cdots &\hspace{-6pt}+\;\;A_{1,n}E_{n,1}\\[-2pt]
-%		+&\hspace{-6pt}\cdots &\hspace{-6pt} +\\[-4pt]
-%		\vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots\\[-4pt]
-%		+&\hspace{-6pt}\cdots &\hspace{-6pt} +\\[-2pt]
-%		A_{m,1}E_{1,m}\;\;+&\hspace{-6pt}\cdots &\hspace{-6pt}+\;\;A_{m,n}E_{n,m}
-%	\end{pmatrix}$}${}=T$.\vspace{6pt}\TextB{}
-$\hText{B_{\Lm[\SmallPar]{V,W}}={}${\normalsize${\begin{pmatrix} \underset{\;,}{E_{1,1}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\underset{\!,}{E_{n,1}},\\[-2pt] \vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots\\[-2pt] \overset{\;,}{E_{1,m}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\overset{\!\!\!,}{E_{n,m}}\end{pmatrix}}$}$;\quad B_{\,\Fbb^{m,n}}={}${\normalsize$\envFontSmall[\scriptsize]{\begin{pmatrix} \underset{\;,}{\mE^{\Par{1,1}}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\underset{\!\!,}{\mE^{\Par{1,n}}},\\[-2pt] \vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots\\[-2pt]\overset{\;,}{\mE^{\Par{m,1}}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\overset{\!\!\!,}{\mE^{\Par{m,n}}}\end{pmatrix}}$}.$\\[2pt]\,\\\,}$\par\vspace{-30pt}
+$E_{i,j}=\Mneg\mEnt{j,i}.$ \,By [2.42] and [3.61]:$\\[0pt]$
+{\tgsl\normalsize We can rewrite the matrix multi in (3.C).}$\\[20pt]\,}\hspace{0pt}\hText{B_{\Lm[\SmallPar]{V,W}}={}${\normalsize${\begin{pmatrix} \underset{\;,}{E_{1,1}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\underset{\!,}{E_{n,1}},\\[-2pt] \vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots\\[-2pt] \overset{\;,}{E_{1,m}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\overset{\!\!\!,}{E_{n,m}}\end{pmatrix}}$}$;\quad B_{\,\Fbb^{m,n}}={}${\normalsize$\envFontSmall[\scriptsize]{\begin{pmatrix} \underset{\;,}{\mE^{\Par{1,1}}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\underset{\!\!,}{\mE^{\Par{1,n}}},\\[-2pt] \vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots\\[-2pt]\overset{\;,}{\mE^{\Par{m,1}}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\overset{\!\!\!,}{\mE^{\Par{m,n}}}\end{pmatrix}}$}.$\\[2pt]\,\\\,}$\par\vspace{-30pt}
 \BulletPointX\Tips \,\,\,Let $B_{\range T}=\Par{Tv_1,\dots,Tv_p},B_V=\BigPar{v_1,\dots,v_p,\dots,v_n}.$ Let each $w_k=Tv_k.$\TextB{\vspace{2pt}}\IndentTips{}
-Extend to $B_W=\BigPar{w_1,\dots,w_p,\dots,w_m}.$ Then $T=E_{1,1}+\dots+E_{p,p},\;\Mt{T}=\mEnt{1,1}+\dots+\mEnt{p,p}.$\vspace{-4pt}
+Extend to $B_W=\BigPar{w_1,\dots,w_p,\dots,w_m}.$ Then $T=E_{1,1}+\dots+E_{p,p},\;\Mt{T}=\mEnt{1,1}+\dots+\mEnt{p,p}.$
+\SepLine\pagebreak
+
+\ProblemN{\Anchor{3D16}{16}}{
+	\TextA{Supp $V$ is finide and non0 $S\in\Lm{V}$ suth $\forall T\in\Lm{V},ST=TS$. Prove $\exists\,\lambda\in\Fbb,S=\lambda I$.}
+}Let $B_{\range S}=\Par{w_1,\dots,w_m}$ with each $w_i=Sv_i.$ Extend to bses $\Par{w_1,\dots,w_n},\Par{v_1,\dots,v_n}$ of $V.$\parSol{}
+{\vspace{2pt}Let {$S=E_{1,1}+\dots+E_{m,m}\Rightarrow \Mt{S,B_V}=\Mt{I,B_{\range S},B_V}.$} Note that $R_{k,1}:w_x\mapsto\delta_{k,x}v_1.$}\parSol{}
+{\vspace{2pt}Then $\forall k\in\Bra{1,\dots,n},$ {\FontLarge$0\neq SR_{k,1}=R_{k,1}S.$} Hence $\dim\null S=0,\;\dim\range S=m=n.$}\parSol{}
+\vspace{2pt}\NOTICE that {\FontLarge$G_{i,j}=R_{i,j}S=SR_{i,j}=Q_{i,j}$}. 又 For each $w_i,\exists\,!\,a_{k,i}\in\Fbb,w_i=a_{1,i}v_1+\dots+a_{n,i}v_n.$\parSol{}
+Then fix one $i.$ Now for each $j\in\Bra{1,\dots,n},Q_{i,j}\Par{w_i}=w_j=a_{i,i}v_j=G_{i,j}\BigBigPar{{\sum_{k=1}^na_{k,i} v_k}}.$\parSol{}
+Let $\lambda=a_{i,i}.$ Hence each $w_j=\lambda v_j.$ Now fix one $j,$ we have $a_{1,1}v_j=\dots=a_{n,n}v_j.$\PfEnd
 \SepLine
 
 \Anchor{3D4e17}\ProblemBnoor{4E 17}{
@@ -1716,7 +1728,6 @@ $\range\mA={}\Spn{\small\begin{Bmatrix} \underset{\;,}{Q_{1,1}}, &\hspace{-6pt} 
 (a) $\dim\null \mA=m\times\Par{p-s};\\$
 (b) $\dim\range \mA=m\times s.}$\par\PfEnd[-10pt]\vspace{-4pt}
 \SepLine
-\pagebreak
 
 \Anchor{3D7}\Anchor{3D4e10}\ProblemBnoor{4E 10}{
 	\TextA{Supp $V,W$ finide, $U$ is a subsp of $V,$ $\mE=\Bra{T\in\Lm{V,W}:T\mmid_U=0}.$ Find $\dim\mE.$}
@@ -1757,17 +1768,6 @@ $\range\mB=\Spn{\small\begin{Bmatrix} \underset{\;,}{Q_{1,1}}, &\hspace{-6pt} \c
 %}Apply Exe ('4) to $\mB.$ Done.\par\quad
 %Define $\mA\in\Lm[\BigPar]{\Lm{V,W},\Lm{V,X}}:T\mapsto RT,\;\;\mB\in\Lm[\BigPar]{\Lm{V,\range R},\Lm{U,\range R}}:T\mapsto TS.$\PfEnd
 %\SepLine
-
-\ProblemN{\Anchor{3D16}{16}}{
-	\TextA{Supp $V$ is finide and $S\in\Lm{V}$ suth $\forall T\in\Lm{V},ST=TS$. Prove $\exists\,\lambda\in\Fbb,S=\lambda I$.}
-}If $S=0$, done. Now supp $S\neq 0.${\FontSmall\hfill\Sbra{{\tgsl Using nota in Exe (4E 17). See also in (3.A).}}}\par\quad
-{\vspace{2pt}Let {$S=E_{1,1}+\dots+E_{m,m}\Rightarrow \Mt{S,B_U}=\Mt{I,B_{\range S},B_U}.$} Note that $R_{k,1}:w_x\mapsto\delta_{k,x}v_1.$}\par\quad
-{\vspace{2pt}Then $\forall k\in\Bra{1,\dots,n},$ {\FontLarge$0\neq SR_{k,1}=R_{k,1}S.$} Hence $\dim\null S=0,\;\dim\range S=m=n.$}\par\quad
-{\vspace{2pt}\NOTICE that {\FontLarge$G_{i,j}=R_{i,j}S=SR_{i,j}=Q_{i,j}$}. Where $G_{i,j}:v_x\mapsto\delta_{i,x}v_j;\;Q_{i,j}:w_x\mapsto\delta_{i,x}w_j.$}\par\quad
-For each $w_i,\exists\,!\,a_{k,i}\in\Fbb,w_i=a_{1,i}v_1+\dots+a_{n,i}v_n.$ Where $a_{k,i}=\Mt[\BigPar]{I,\Par{w_1,\dots,w_n},\Par{v_1,\dots,v_n}}{_{k,i}}.$\par\quad
-Then fix one $i.$ Now for each $j\in\Bra{1,\dots,n},Q_{i,j}\Par{w_i}=w_j=a_{i,i}v_j=G_{i,j}\BigBigPar{{\sum_{k=1}^na_{k,i} v_k}}.$\par\quad
-Let $\lambda=a_{i,i}.$ Hence each $w_j=\lambda v_j.$ Now fix one $j,$ we have $a_{1,1}v_j=\dots=a_{n,n}v_j,$ then all $a_{i,i}$ are equal.\PfEnd
-\SepLine
 
 \Anchor{3D'4}\ProblemB{
 	\TextB{Supp $A\in\Fbb^{n,n}.$ Define $T,S\in\Lm{\Fbb^{n,n}}$ by $T\Par{X}=AX,\:S\Par{Y}=YA^t.$ Find $\dim\range ST.$\vspace{2pt}}
@@ -2227,14 +2227,6 @@ To fix this, we must have a bss of $V\apostrophe$ as precond, which we'll see in
 {\tgsl while finding the corres subsp of $V$ for a subsp of $V\apostrophe$ must have the another 'half' asumed as precond.}
 \SepLine\pagebreak
 
-\Anchor{3F'3}\ProblemB{
-	\TextB{Supp $V=U\oplus W$. Define $\iota:V\rightarrow U$ by $\iota\Par{u+w}=u.$ Thus $\iota\apostrophe\in\Lm{U\apostrophe,V\apostrophe}.$\vspace{2pt}}
-	\PrePa\TextB{Show $\null \iota\apostrophe=\zeroSubs$\hspace{1pt}$:${\tgnr\FontNorm\;\;$\null\iota\apostrophe=\Par{\range\iota}{^0_U}=U_U^0=\zeroSubs.$\;\Or $\iota\apostrophe\Par{\psi}=\psi\circ\iota=0\Longleftrightarrow U\subseteq\null\psi.$}\vspace{2pt}}
-	\PrePb\TextB{Prove $\range\iota\apostrophe=W_V^0$\hspace{1pt}$:${\tgnr\FontNorm\;\;$\range\iota\apostrophe=\BigPar{\null\iota}{^0_V}=W_V^0.$ \:\:Now $\tilde{\iota\apostrophe}$ is iso from $U\apostrophe\XSlash{\envFontDefault\zeroSubs}$ onto $W^0$}\vspace{0pt}}
-}(b) \Or Note that $W=\null{\iota}\subseteq\Null\Par{\psi\circ\iota}.$ Then $\psi\circ\iota\in W^0\Rightarrow\range\iota\apostrophe\in W^0.$\parSol{\Hb}
-\Blind{\Or}Supp $\varphi\in W^0.$ Becs $\null\iota=W\subseteq\null\varphi.$ By \Sbra{3.B \TIPSN{3}}, $\varphi=\varphi\circ\iota=\iota\apostrophe\Par{\varphi}.$\PfEnd
-\SepLine
-
 \ProblemN{\Anchor{3F31}{31}}{
 	\TextA{Supp $V$ is finide and $B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_n}.$ Show $\exists\,!\,B_V$ whose dual bss is the $B_{V\apostrophe}$.}
 }For each $k\in\Bra{1,\dots,n},$ let $\Gamma_{\!k}=\Bra{1,\dots,n}\Backslash[\Big]\Bra{k}.$ Let each $U_k=\bigcap_{j\,\in\,\Gamma_{\!k}}\null\varphi_j.$\parSol{}
@@ -2251,6 +2243,14 @@ For each $k,$ we have $\varphi_j\Par{v_k}=\varphi_j\Par{u_k}$ for all $k\Rightar
 The '$W$' is not clear when we are to find one suth $W_V\upapostrophe=\Omega,$ becs the another 'half' is undefined.\TextB{}
 Extend to $B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_n}.$ By Exe (31), $\exists\,!\,$corres $B_V=\Par{v_1,\dots,v_n}.$ Let $B_U=\Par{v_{m+1},\dots,v_n}.$\TextB{}
 Let $B_W=\Par{v_1,\dots,v_m}.$ \,Thus $W_V\upapostrophe=\Omega.$ Now $W$ is well-defined with $B_V$ as precond.
+\SepLine
+
+\Anchor{3F'3}\ProblemB{
+	\TextB{Supp $V=U\oplus W$. Define $\iota:V\rightarrow U$ by $\iota\Par{u+w}=u.$ Thus $\iota\apostrophe\in\Lm{U\apostrophe,V\apostrophe}.$\vspace{2pt}}
+	\PrePa\TextB{Show $\null \iota\apostrophe=\zeroSubs$\hspace{1pt}$:${\tgnr\FontNorm\;\;$\null\iota\apostrophe=\Par{\range\iota}{^0_U}=U_U^0=\zeroSubs.$\;\Or $\iota\apostrophe\Par{\psi}=\psi\circ\iota=0\Longleftrightarrow U\subseteq\null\psi.$}\vspace{2pt}}
+	\PrePb\TextB{Prove $\range\iota\apostrophe=W_V^0$\hspace{1pt}$:${\tgnr\FontNorm\;\;$\range\iota\apostrophe=\BigPar{\null\iota}{^0_V}=W_V^0.$ \:\:Now $\tilde{\iota\apostrophe}$ is iso from $U\apostrophe\XSlash{\envFontDefault\zeroSubs}$ onto $W^0$}\vspace{0pt}}
+}(b) \Or Note that $W=\null{\iota}\subseteq\Null\Par{\psi\circ\iota}.$ Then $\psi\circ\iota\in W^0\Rightarrow\range\iota\apostrophe\in W^0.$\parSol{\Hb}
+\Blind{\Or}Supp $\varphi\in W^0.$ Becs $\null\iota=W\subseteq\null\varphi.$ By \Sbra{3.B \TIPSN{3}}, $\varphi=\varphi\circ\iota=\iota\apostrophe\Par{\varphi}.$\PfEnd
 \SepLine
 
 \Anchor{3FT2}\BulletPointX\TipsN{2}\,\,\,Supp $\varphi_1,\dots,\varphi_m\in V\apostrophe.$ Denote $\Sbra{\null\varphi_a\cap\cdots\cap\null\varphi_b}$ by \,$\bigcap_a^b\null\varphi_I.$\TextB{}
@@ -4008,9 +4008,9 @@ We use induc on $\dim V=n.$ (i) Immed. (ii) $n>1.$ Asum it holds for smaller $V.
 Becs $V=G_1\oplus U,$ where $U=G_2\oplus\cdots\oplus G_m,$ and each $G_k=G\Par{\lambda_k,T}.$\parSol{}
 $\exists\,B_{G_1}$ suth $T\mmid_{G_1}=\Par{T-\lambda_1I}\Big|{_{G_1}}+\lambda_1I\mmid_{G_1}=N_1+D_1$ up-trig and $N_1,D_1$ commu.\parSol{}
 $\exists$ commu $D_2,N_2\in\Lm{U},T\mmid_U=D_2+N_2,\,D_2$ diag, $N_2$ nilp; wrto some $B_U,$ by (4E 5.E.7).\parSol{}
-Let $B_V=B_{G_1}\cup B_U.$ Define $P_1,P_2\in\Lm{V}$ by $P_1\Par{v_1+u}=v_1,P_2\Par{v_1+u}=u.$\parSol{}
-Let $D=D_1P_1+D_2P_2,N=N_1P_1+N_2P_2.$ \:Becs $P_jD_k=\delta_{j,k}D_j,P_jN_k=\delta_{j,k}N_j.$\parSol{}
-Thus $D+N=\Par{D_1+N_1}P_1+\Par{D_2+N_2}P_2=T,$ and $DN=D_1N_1P_1+D_2N_2P_2=NP.$\PfEnd\vspace{3pt}\parSol{}
+Let $B_V=B_{G_1}\cup B_U.$ Define $P_{\!1},P_{\!2}\in\Lm{V}$ by $P_{\!1}\Par{v_1+u}=v_1,P_{\!2}\Par{v_1+u}=u.$\parSol{}
+Let $D=D_1P_{\!1}+D_2P_{\!2},N=N_1P_{\!1}+N_2P_{\!2}.$ \:Becs $P_jD_k=\delta_{j,k}D_j,P_jN_k=\delta_{j,k}N_j.$\parSol{}
+Thus $D+N=\Par{D_1+N_1}P_{\!1}+\Par{D_2+N_2}P_{\!2}=T,$ and $DN=D_1N_1P_{\!1}+D_2N_2P_{\!2}=NP.$\PfEnd\vspace{3pt}\parSol{}
 \Or Let $V=G_1\oplus\cdots\oplus G_m\Rightarrow\forall v\in V,\exists\,!\,v_k\in G_k,v=v_1+\dots+v_m.$\parSol{}
 Define $D\in\Lm{V}:v\mapsto\Par{\lambda_1v_1+\dots+\lambda_mv_m}\Rightarrow D\mmid_{G_k}=\lambda_kI.$\parSol{}
 Let $N=T-D\Rightarrow N\mmid_{G_k}=\Par{T-D}\Big|{_{G_k}}=\Par{T-\lambda_kI}\Big|{_{G_k}}$ is nilp.\parSol{}
