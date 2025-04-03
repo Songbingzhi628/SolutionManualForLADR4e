@@ -1641,14 +1641,14 @@ Simlr. Now each $T\beta_k=T\Par{B_{1,k}\alpha_1+\dots+B_{n,k}\alpha_n}=A'_{1,k}\
 Where $B_1,B_2$ are std bses, and $B_1',B_2'$ are arb bses. Now $A$ is uniq.\TextB{}
 Convly, $\forall A\in\Fbb^{m,n},\exists\,!\,T\in\Lm{\Fbb^{n,1},\Fbb^{m,1}},Tx=Ax=\Mt{T}x\Rightarrow\Mt{T}=A.$\TextB{}
 Hence $\range A=\range T$ and $\null A=\range T$ are well-defined becs the def of $T$ is indep of bses.\vspace{2pt}\TextB{}
-Let $P_{\!1}\in\Lm{\Fbb^{n,1}},P_{\!2}\in\Lm{\Fbb^{m,1}}$ be suth $\Mt{P_{\!1},B_1}=\Mt{I,B_1',B_1},\Mt{P_{\!2},B_2}=\Mt{I,B_2,B_2'}.$\TextB{}
-Now $\Mt{T,B_1,B_2}$ inje $\Longleftrightarrow T$ inje $\Longleftrightarrow P_{\!2}TP_{\!1}$ inje $\Longleftrightarrow\Mt{T,B_1',B_2'}=\Mt{P_{\!2}TP_{\!1},B_1,B_2}$ inje.\vspace{2pt}\TextB{}
+Let $P_{\!\!\!\:1}\in\Lm{\Fbb^{n,1}},P_{\!\!\!\:2}\in\Lm{\Fbb^{m,1}}$ be suth $\Mt{P_{\!\!\!\:1},B_1}=\Mt{I,B_1',B_1},\Mt{P_{\!\!\!\:2},B_2}=\Mt{I,B_2,B_2'}.$\TextB{}
+Now $\Mt{T,B_1,B_2}$ inje $\Longleftrightarrow T$ inje $\Longleftrightarrow P_{\!\!\!\:2}TP_{\!\!\!\:1}$ inje $\Longleftrightarrow\Mt{T,B_1',B_2'}=\Mt{P_{\!\!\!\:2}TP_{\!\!\!\:1},B_1,B_2}$ inje.\vspace{2pt}\TextB{}
 Supp $S\in\Lm{V,W},A_1=\Mt{S,B_V,B_W}=\Mt{T,B_1,B_2},$\TextB{}
 $C_V=\Mt{I,B_V',B_V},C_W=\Mt{I,B_W,B_W'},A_2=\Mt{S,B_V',B_W'}=C_WA_1C_V.$\TextB{}
-Let $P_{\!1}\in\Lm{\Fbb^{n,1}},P_{\!V}\in\Lm{V},P_{\!2}\in\Lm{\Fbb^{m,1}},P_{\!W}\in\Lm{W}$ and bses $B_1',B_2'$ be suth\TextB{}
-$\Mt{P_{\!1},B_1}=\Mt{I,B_1',B_1}=C_V=\Mt{P_{\!V},B_V},\Mt{P_{\!2},B_2}=\Mt{I,B_2,B_2'}=C_W=\Mt{P_{\!W},B_W}.$\TextB{}
+Let $P_{\!\!\!\:1}\in\Lm{\Fbb^{n,1}},P_{\!V}\in\Lm{V},P_{\!\!\!\:2}\in\Lm{\Fbb^{m,1}},P_{\!W}\in\Lm{W}$ and bses $B_1',B_2'$ be suth\TextB{}
+$\Mt{P_{\!\!\!\:1},B_1}=\Mt{I,B_1',B_1}=C_V=\Mt{P_{\!V},B_V},\Mt{P_{\!\!\!\:2},B_2}=\Mt{I,B_2,B_2'}=C_W=\Mt{P_{\!W},B_W}.$\TextB{}
 Now $A_1$ inje $\Longleftrightarrow T$ inje $\Longleftrightarrow$ the cols of $A_1$ liney indep $\Longleftrightarrow S$ inje. Simlr for surj.\TextB{}
-And $\Mt{S,B_V,B_W}$ inje $\Longleftrightarrow T$ inje $\Longleftrightarrow P_{\!2}TP_{\!1}$ inje $\Longleftrightarrow C_WA_1C_V=\Mt{S,B_V',B_W'}$ inje.\TextB{}
+And $\Mt{S,B_V,B_W}$ inje $\Longleftrightarrow T$ inje $\Longleftrightarrow P_{\!\!\!\:2}TP_{\!\!\!\:1}$ inje $\Longleftrightarrow C_WA_1C_V=\Mt{S,B_V',B_W'}$ inje.\TextB{}
 Thus $S$ inje $\Longleftrightarrow\Mt{S}$ inje, wrto any bses. Simlr for surj and inv.
 \SepLine
 
@@ -3861,7 +3861,7 @@ Then we form $B_V.$ For any $T\in\mE,$ $\Mt{T,B_V}=c_1\Mt{T_1,B_V}+\dots+c_m\Mt{
 	\PrePa\TextA{Prove $\exists$ eigvec $v\in V$ of all elem of $\mE.$ \,{\tgnr\large(b)} $\exists\,B_V$ suth all elem of $\mE$ has up-trig matrix.}
 }Simlr to Exe (2). $\exists\,\Bra{T_1,\dots,T_m}\subseteq\mE.$ Let $U_0=V,U_k=E\Par{\lambda_1,T_1}\cap\cdots\cap E\Par{\lambda_k,T_k}.$\parSol{}
 (a) Let $\lambda_1,\dots,\lambda_m$ be eigvals of $T_1,\dots,T_m$ respectly with each $\lambda_k$ eigval of $T_k\mmid_{U_k}\Rightarrow U_k\neq 0$\parSol{\Ha}
-Now for non0 $v\in U_m,\:\forall T=c_1T_1+\dots+c_mT_m\in\mE,Tv=\Par{c_1\lambda_1+\dots+c_m\lambda_m}v.$\vspace{3pt}\parSol{}
+Now for non0 $v\in U_m,\:\forall T=c_1T_1+\dots+c_mT_m\in\mE,Tv=\Par{c_1\lambda_1+\dots+c_m\lambda_m}v.$\vspace{2pt}\parSol{}
 (b) Using induc on $\dim V.$ (i) Immed. \,(ii) $\dim V>1.$ Asum it holds for smaller $V.$\parSol{\Hb}
 Let $v_1$ be a common eigvec of all $T_k.$ Let $W\oplus\Span{v_1}=V,P:av_1+w\mapsto w.$\parSol{\Hb}
 Simlr in [4E 5.80], each pair of $\Bra{\hat{T}_{1},\dots,\hat{T}_m}$ commu. By asum, $\exists\,B_W\Rightarrow\exists\,B_V.$\parSol{\Hb}
@@ -3893,8 +3893,8 @@ Thus $0=\Par{T^{-1}-\lambda^{-1}I}{^{j-1}}\Par{T-\lambda I}v=\uline{\Par{T-\lamb
 \SepLine
 
 \Anchor{8A4e24}\Anchor{8N8.19}\ProblemBX[]{\NoteForSmall{[8.19] \OR [4E 8.18]}}{
-	If $m_T\Par{z}=z^m.$ Then $\exists\,v$ suth $T^{m-1}v\neq0.$ If $m=\dim V.$\TextB{}
-	Now $B_V=\Par{T^{m-1}v,\dots,Tv,v}.$ Let each $w_k=T^{m-k}v.$ Then $Tw_1=0$ and each $T\Par{w_k}=w_{k-1}.$\TextB{\vspace{-2pt}}
+	If $m_T\Par{z}=z^m.$ Then $\exists\,v$ suth $T^{m-1}v\neq0.$\TextB{}
+	If $m=\dim V.$ Then $B_V=\Par{T^{m-1}v,\dots,Tv,v}.$ Let each $w_k=T^{m-k}v.$ Then $Tw_1=0,T\Par{w_k}=w_{k-1}.$\TextB{\vspace{-2pt}}
 }\SepLine
 
 \Anchor{8A6}\ProblemN{A.6}{
@@ -3943,7 +3943,7 @@ Now each $\dim\range T^{k+1}\leqslant\dim\range T^k-1\Rightarrow\dim\range T^{n+
 \Anchor{8A10}\ProblemN{A.10}{
 	\TextA{Supp $T\in\Lm{V}$ not nilp, $n=\dim V.$ Show $V=\null T^{n-1}\oplus\range T^{n-1}.$}
 }\NOTICE that $\null T^{n-1}\neq\null T^n\Rightarrow\dim\null T^n=n\Longleftrightarrow T^n=0.$ Thus $\null T^{n-1}=\null T^n.$\parSol{}
-又 $V=\null T^n\oplus\range T^n,\range T^n\subseteq\range T^{n-1}\Rightarrow V=\null T^{n-1}+\range T^{n-1}.$\parSol{}
+又 $V=\null T^n\oplus\range T^n,\range T^n\subseteq\range T^{n-1}\Rightarrow V=\null T^{n-1}+\range T^{n-1}.$\PfEnd\parSol{}
 \Or Then $\dim\range T^{n-1}=\dim\range T^n\Rightarrow\range T^{n-1}=\range T^n.$\PfEnd\vspace{2pt}\parSol{}
 \Or By Exe (4E A.3), $\null T^{2\SmallPar{n-1}}=\null T^{n-1}\Longleftrightarrow V=\null T^{n-1}\oplus\range T^{n-1}.$\PfEnd
 \SepLine
@@ -3964,12 +3964,10 @@ Thus $\alpha=\beta=\gamma.$ Any two liney indep $v,w$ corres one eigval.\PfEndB
 
 \Anchor{8A4e15}\Anchor{8B5}\ProblemNnoor{B.5}{4E A.15}{
 	\TextA{Supp $T\in\Lm{V}.$ Prove non0 $T$ diag $\Rightarrow$ each $G\Par{\lambda,T}=E\Par{\lambda,T}.$}
-}Supp $V=E\Par{\lambda_1,T}\oplus\cdots\oplus E\Par{\lambda_m,T};$ $\lambda_1=0$ if possible, in this case $m>1.$\parSol{}
-Supp $w\in G\Par{\lambda_j,T}.$ Then $w=v_1+\dots+v_m,$ where each $v_i\in E\Par{\lambda_i,T}.$\parSol{}
-Becs $\Par{T-\lambda_jI}{^k}w=0=\sum_{i=1}^m\Par{\lambda_i-\lambda_j}{^k}v_i\Rightarrow w=v_j\in E\Par{\lambda_j,T}.$\PfEnd\vspace{3pt}\parSol{}
+}$\forall w\in G\Par{\lambda_j,T},\exists\,!\,v_i\in E\Par{\lambda_i,T},w=v_1+\dots+v_m,.$\parSol{}
+Note that $\Par{T-\lambda_jI}{^k}w=0=\sum_{i=1}^m\Par{\lambda_i-\lambda_j}{^k}v_i\Rightarrow w=v_j\in E\Par{\lambda_j,T}.$\PfEnd\vspace{3pt}\parSol{}
 \Or Supp $G\Par{\lambda_j,T}\supsetneq E\Par{\lambda_j,T}.$ Let $w\in G\Par{\lambda_j,T}\Backslash E\Par{\lambda_j,T}$\parSol{}
-Then $Iw\neq0\neq\Par{T-\lambda_jI}w.$ Let $\Par{T-\lambda_jI}{^k}w=0\neq\Par{T-\lambda_jI}{^{k-1}}w.$\parSol{}
-By \Sbra{5.B(I) \TIPSN{1}}, $m_T$ is a multi of $\Par{z-\lambda_j}{^k}.$ 又 $k\geqslant 2.$\PfEnd
+Let $\Par{T-\lambda_jI}{^k}w=0\neq\Par{T-\lambda_jI}{^{k-1}}w.$ By \Sbra{5.B(I) \TIPSN{1}}, $m_T$ is a multi of $\Par{z-\lambda_j}{^k}.$ 又 $k\geqslant 2.$\PfEnd
 \SepLine
 
 \Anchor{8A4e16}\ProblemBnoor{4E A.16}{
@@ -3989,20 +3987,22 @@ By \Sbra{5.B(I) \TIPSN{1}}, $m_T$ is a multi of $\Par{z-\lambda_j}{^k}.$ 又 $k\
 
 \Anchor{8B10}\ProblemN{B.10}{
 	\TextA{Supp $\Fbb=\Cbb,T\in\Lm{V}.$ Prove $\exists$ commu $D,N\in\Lm{V},T=D+N,\,D$ diag, $N$ nilp.\vspace{2pt}}
-}\ANote $D$ diag, $N$ nilp $\notRightarrow D,N$ commu. \AExa $\footnotesize\begin{pmatrix}1&\hspace{-6pt}0\\[-4pt]0&\hspace{-6pt}0\end{pmatrix},\begin{pmatrix}0&\hspace{-6pt}1\\[-4pt]0&\hspace{-6pt}0\end{pmatrix}.$\vspace{2pt}\parSol{}
+}\ANote $D$ diag, $N$ nilp $\notRightarrow D,N$ commu. \AExa $De_1=e_1,De_2=0,Ne_1=0,Ne_2=e_1.$ %$\footnotesize\begin{pmatrix}1&\hspace{-6pt}0\\[-4pt]0&\hspace{-6pt}0\end{pmatrix},\begin{pmatrix}0&\hspace{-6pt}1\\[-4pt]0&\hspace{-6pt}0\end{pmatrix}.$
+\vspace{2pt}\parSol{}
 We use induc on $\dim V=n.$ (i) Immed. (ii) $n>1.$ Asum it holds for smaller $V.$\parSol{}
 Becs $V=G_1\oplus U,$ where $U=G_2\oplus\cdots\oplus G_m,$ and each $G_k=G\Par{\lambda_k,T}.$\parSol{}
 $\exists\,B_{G_1}$ suth $T\mmid_{G_1}=\Par{T-\lambda_1I}\Big|{_{G_1}}+\lambda_1I\mmid_{G_1}=N_1+D_1$ up-trig and $N_1,D_1$ commu.\parSol{}
 $\exists$ commu $D_2,N_2\in\Lm{U},T\mmid_U=D_2+N_2,\,D_2$ diag, $N_2$ nilp; wrto some $B_U,$ by (4E 5.E.7).\parSol{}
-Let $B_V=B_{G_1}\cup B_U.$ Define $P_{\!1},P_{\!2}\in\Lm{V}$ by $P_{\!1}\Par{v_1+u}=v_1,P_{\!2}\Par{v_1+u}=u.$\parSol{}
-Let $D=D_1P_{\!1}+D_2P_{\!2},N=N_1P_{\!1}+N_2P_{\!2}.$ \:Becs $P_jD_k=\delta_{j,k}D_j,P_jN_k=\delta_{j,k}N_j.$\parSol{}
-Thus $D+N=\Par{D_1+N_1}P_{\!1}+\Par{D_2+N_2}P_{\!2}=T,$ and $DN=D_1N_1P_{\!1}+D_2N_2P_{\!2}=NP.$\PfEnd\vspace{3pt}\parSol{}
-\Or Let $V=G_1\oplus\cdots\oplus G_m\Rightarrow\forall v\in V,\exists\,!\,v_k\in G_k,v=v_1+\dots+v_m.$\parSol{}
-Define $D\in\Lm{V}:v\mapsto\Par{\lambda_1v_1+\dots+\lambda_mv_m}\Rightarrow D\mmid_{G_k}=\lambda_kI.$\parSol{}
-Let $N=T-D\Rightarrow N\mmid_{G_k}=\Par{T-D}\Big|{_{G_k}}=\Par{T-\lambda_kI}\Big|{_{G_k}}$ is nilp.\parSol{}
-Then $N^Mv=N^Mv_1+\dots+N^Mv_m=0,$ where $M=\max\!\Bra{d_1,\dots,d_m}.$ Now $N$ is nilp.\parSol{}
-Becs $DN=DT-D^2,ND=TD-D^2,$ 又 each $TDv_k=\lambda_kTv_k=DTv_k\Rightarrow TD=DT.$\PfEnd
-\SepLine
+Define $P_{\!\!\!\:1},P_{\!\!\!\:2}\in\Lm{V}$ by $P_{\!\!\!\:1}\Par{v_1+u}=v_1,P_{\!\!\!\:2}\Par{v_1+u}=u.$ Let $D=D_1P_{\!\!\!\:1}+D_2P_{\!\!\!\:2},N=N_1P_{\!\!\!\:1}+N_2P_{\!\!\!\:2}.$\parSol{}
+$D+N=\Par{D_1+N_1}P_{\!\!\!\:1}+\Par{D_2+N_2}P_{\!\!\!\:2}=T,$ \, $DN=D_1N_1P_{\!\!\!\:1}+D_2N_2P_{\!\!\!\:2}=NP,$ \, $B_V=B_{G_1}\cup B_U.$\PfEnd\vspace{4pt}\parSol{}
+\Or $\forall v\in V,\exists\,!\,v_k\in G_k,v=v_1+\dots+v_m.$ Define $D\in\Lm{V}:v\mapsto\Par{\lambda_1v_1+\dots+\lambda_mv_m}$\parSol{}
+Then $D\mmid_{G_k}=\lambda_kI.$ Let $N=T-D\Rightarrow N\mmid_{G_k}=\Par{T-D}\Big|{_{G_k}}=\Par{T-\lambda_kI}\Big|{_{G_k}}$ is nilp $\Rightarrow N$ nilp.\parSol{}
+Becs $DN=DT-D^2,ND=TD-D^2,$ 又 each $TDv_k=\lambda_kTv_k=DTv_k\Rightarrow TD=DT.$\PfEnd\vspace{4pt}\parSol{}
+\Or Let gigvecs $B_V=\Par{v_1,\dots,v_n}.$ Define $\Ang{\cdot,\cdot}:V\times V\mapsto\Cbb$ by $\Ang{v_j,v_k}=\delta_{j,k}\Rightarrow B_V$ ortho.\parSol{}
+Define the ortho proj $P_{\!\!\!\:j}\in\Lm{V}:w_j+u\mapsto w_j,$ where $w_j\in G_j,u\in\bigoplus_{i\neq j}G_i.$\parSol{}
+Now $T=T\mmid_{G_1}P_{\!\!\!\:1}+\dots+T\mmid_{G_m}P_{\!\!\!\:m}.$ Let nilp $N_j=T\mmid_{G_j}-\lambda_jI.$\parSol{}
+$\Rightarrow T=\BigPar{\lambda_1P_{\!\!\!\:1}+\dots+\lambda_mP_{\!\!\!\:m}}+\BigPar{N_1P_{\!\!\!\:1}+\dots+N_mP_{\!\!\!\:m}}=D+N,$ and $DN=ND:v_j\mapsto\lambda_kN_kv_j.$\PfEnd
+\SepLine\pagebreak
 
 \Anchor{8B4e7}\ProblemBnoor{4E B.7}{
 	\TextA{Supp $T\in\Lm{V}$ and $\lambda$ is an eigval with multy $d.$ Prove $G\Par{\lambda,T}=\Null\Par{T-\lambda I}{^d}.$}
