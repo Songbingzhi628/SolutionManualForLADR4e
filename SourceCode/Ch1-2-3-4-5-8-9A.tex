@@ -1684,16 +1684,6 @@ $E_{i,j}=\Mneg\mEnt{j,i}.$ \,By [2.42] and [3.61]:$\\[0pt]$
 Extend to $B_W=\BigPar{w_1,\dots,w_p,\dots,w_m}.$ Then $T=E_{1,1}+\dots+E_{p,p},\;\Mt{T}=\mEnt{1,1}+\dots+\mEnt{p,p}.$
 \SepLine\pagebreak
 
-\ProblemN{\Anchor{3D16}{16}}{
-	\TextA{Supp $V$ is finide and non0 $S\in\Lm{V}$ suth $\forall T\in\Lm{V},ST=TS$. Prove $\exists\,\lambda\in\Fbb,S=\lambda I$.}
-}Let $B_{\range S}=\Par{w_1,\dots,w_m}$ with each $w_i=Sv_i.$ Extend to bses $\Par{w_1,\dots,w_n},\Par{v_1,\dots,v_n}$ of $V.$\parSol{}
-{\vspace{2pt}Let {$S=E_{1,1}+\dots+E_{m,m}\Rightarrow \Mt{S,B_V}=\Mt{I,B_{\range S},B_V}.$} Note that $R_{k,1}:w_x\mapsto\delta_{k,x}v_1.$}\parSol{}
-{\vspace{2pt}Then $\forall k\in\Bra{1,\dots,n},$ {\FontLarge$0\neq SR_{k,1}=R_{k,1}S.$} Hence $\dim\null S=0,\;\dim\range S=m=n.$}\parSol{}
-\vspace{2pt}\NOTICE that {\FontLarge$G_{i,j}=R_{i,j}S=SR_{i,j}=Q_{i,j}$}. 又 For each $w_i,\exists\,!\,a_{k,i}\in\Fbb,w_i=a_{1,i}v_1+\dots+a_{n,i}v_n.$\parSol{}
-Then fix one $i.$ Now for each $j\in\Bra{1,\dots,n},Q_{i,j}\Par{w_i}=w_j=a_{i,i}v_j=G_{i,j}\BigBigPar{{\sum_{k=1}^na_{k,i} v_k}}.$\parSol{}
-Let $\lambda=a_{i,i}.$ Hence each $w_j=\lambda v_j.$ Now fix one $j,$ we have $a_{1,1}v_j=\dots=a_{n,n}v_j.$\PfEnd
-\SepLine
-
 \Anchor{3D4e17}\ProblemBnoor{4E 17}{
 	\TextB{Supp $U,V,W$ finide, $S\in\Lm{V,W},\mA\in\Lm[\BigPar]{\Lm{U,V},\Lm{U,W}}:T\mapsto ST.$\vspace{1pt}}
 	\TextB{Show $\dim\null\mA=\Par{{\dim U}}\Par{{\dim\null S}},\,\dim\range\mA=\Par{{\dim U}}\Par{{\dim\range S}}$.\vspace{2pt}}
@@ -1759,7 +1749,7 @@ $\mB(T)=TS=\XPar{{\sum_{j=1}^p\sum_{i=1}^m A_{j,i}R_{i,j}}}\XPar{{\sum_{k=1}^r E
 		\vdots  &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots  &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots\\[-4pt]
 		A_{p,1} &\hspace{-6pt} \cdots &\hspace{-6pt} A_{p,r} &\hspace{-6pt} \cdots &\hspace{-6pt} 0\end{pmatrix}}.$\par\vspace{-20pt}\quad
 $\range\mB=\Spn{\small\begin{Bmatrix} \underset{\;,}{Q_{1,1}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\underset{\!\!,}{Q_{r,1}},\\[-2pt] \vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots\\[-2pt] \overset{\;,}{Q_{1,p}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\overset{\!\!\!,}{Q_{r,p}}\end{Bmatrix}},\;\null\mB=\Spn{\small\begin{Bmatrix} \underset{\;,}{R_{r+1,1}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\underset{\!\!,}{R_{n,1}},\\[-2pt] \vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots\\[-2pt] \overset{\;,}{R_{r+1,p}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\overset{\!\!\!,}{R_{n,p}}\end{Bmatrix}}.$\PfEnd[-14pt]
-\SepLine
+\SepLine\pagebreak
 
 %\ProblemB{
 %	\TextA{Supp $U,V,W,X$ of dim $m,n,p,q$ respectly, and $S\in\Lm{U,V},R\in\Lm{W,X}.$}
@@ -1782,6 +1772,16 @@ Each $\mX_{\!j,k}=C_{1,k}\mC_{\!j,1}+\dots+C_{n,k}\mC_{\!j,n}=C_{1,j}\Par{\mC_{\
 \Or By \TIPSN{3}. Define $\varphi\in\Lm[\BigPar]{\Lm{\Fbb^{n,1}}}:X\mapsto AX;$ \;$\psi\in\Lm[\BigPar]{\Lm{\Fbb^{n,1},\range A}}:Y\mapsto YA^t.$\par\quad
 Then $\range\psi\varphi=\Bra{X\in\Lm{\Fbb^{n,1},\range A}:X\mmid_{\null A^T}=0}$ of dim $\Par{{\range A}}\Par{{\range A^t}}=\Par{\rank A}{^2}.$\PfEnd
 \SepLine
+\ProblemN{\Anchor{3D16}{16}}{
+	\TextA{Supp $V$ is finide and non0 $S\in\Lm{V}$ suth $\forall T\in\Lm{V},ST=TS$. Prove $\exists\,\lambda\in\Fbb,S=\lambda I$.}
+}Let $B_{\range S}=\Par{w_1,\dots,w_m}$ with each $w_i=Sv_i.$ Extend to bses $\Par{w_1,\dots,w_n},\Par{v_1,\dots,v_n}$ of $V.$\parSol{}
+{\vspace{2pt}Let {$S=E_{1,1}+\dots+E_{m,m}\Rightarrow \Mt{S,B_V}=\Mt{I,B_{\range S},B_V}.$} Note that $R_{k,1}:w_x\mapsto\delta_{k,x}v_1.$}\parSol{}
+{\vspace{2pt}Then $\forall k\in\Bra{1,\dots,n},$ {\FontLarge$0\neq SR_{k,1}=R_{k,1}S.$} Hence $\dim\null S=0,\;\dim\range S=m=n.$}\parSol{}
+\vspace{2pt}\NOTICE that {\FontLarge$G_{i,j}=R_{i,j}S=SR_{i,j}=Q_{i,j}$}. 又 For each $w_i,\exists\,!\,a_{k,i}\in\Fbb,w_i=a_{1,i}v_1+\dots+a_{n,i}v_n.$\parSol{}
+Then fix one $i.$ Now for each $j\in\Bra{1,\dots,n},Q_{i,j}\Par{w_i}=w_j=a_{i,i}v_j=G_{i,j}\BigBigPar{{\sum_{k=1}^na_{k,i} v_k}}.$\parSol{}
+Let $\lambda=a_{i,i}.$ Hence each $w_j=\lambda v_j.$ Now fix one $j,$ we have $a_{1,1}v_j=\dots=a_{n,n}v_j.$\PfEnd
+\SepLine
+\ChEnd
 \pagebreak
 
 \ChDecl{Ch3E}{3$\cdot$E}{}
@@ -2656,8 +2656,7 @@ And, each $q_k\in\Span{x^{k+1},\dots,x^m}.$ Using {\TIPS} above.\PfEnd\vspace{6p
 (i) $k=1.$ \;$p_m\Par{x}=x^m\in\Span{p_m};$ \;\; $p_{m-1}\Par{x}=x^{m-1}-x^m\Rightarrow x^{m-1}\in\Span{p_{m-1},p_m}.$\vspace{2pt}\par\quad\Endi
 (ii) $k\in\Bra{1,\dots,m-1}.$ \;Supp for each $j\in\Bra{0,\dots,k},$ we have $x^{m-j}\in\Span[\BigPar]{p_{m-j},\dots,p_m},\exists\,!\,a_m\in\Fbb.$\vspace{2pt}\par\quad\Hii
 Note that $x^{m-\SmallPar{k+1}}=p_{m-\SmallPar{k+1}}\Par{x}+\sum_{j=1}^{k+1}\mathC_{k+1}^j\Par{{-1}}{^{j+1}}x^{m-\SmallPar{k+1}+j}\in\Span[\BigPar]{p_{m-\SmallPar{k+1}},x^{m-k},\dots,x^{m}}.$\vspace{2pt}\par\quad\Hii
-Thus $x^{m-\SmallPar{k+1}}\in\Span[\BigPar]{p_{m-\SmallPar{k+1}},p_{m-k},\dots,p_m}.$\PfEnd\vspace{2pt}\quad
-\AComm The base step and the induc step can be indep.\vspace{10pt}\par\quad
+Thus $x^{m-\SmallPar{k+1}}\in\Span[\BigPar]{p_{m-\SmallPar{k+1}},p_{m-k},\dots,p_m}.$\PfEnd\vspace{10pt}\quad
 \Or For any $m,k\in\Nbp$ suth $k\leqslant m.$ Define $p_{k,m}$ by $p_{k,m}\Par{x}=x^k\Par{1-x}{^{m-k}}.$\par\quad
 Define the stmt $S\Par{m}:\Par{p_{0,m},\dots,p_{m,m}}$ is liney indep \BigPar{ and therefore is a bss }.\par\quad
 We use induc on to show $S\Par{m}$ holds for all $m\in\Nbp.$\vspace{2pt}\par\quad
@@ -2745,7 +2744,7 @@ Becs $\exists\,!\,\alpha_i\geqslant 1,q\in\PoFi,$ and $q\neq 0,$ suth $p\Par{z}=
 \Anchor{4ON4.7}\BulletPointX\NoteFor{[4.7]} {\tgsl the uniqnes of coeffs of polys} \hfill[{\tgsc Another proof}]\TextB{\vspace{2pt}}
 If a poly had two different sets of coeffs, then
 subtracting the two exprs\TextB{}
-would give a poly with some non0 coeffs but infily many zeros. By {\TIPS}.\PfEnd\vspace{-3pt}
+would give a poly with some non0 coeffs but infily many zeros. By {\TIPSN{1}}.\PfEnd\vspace{-3pt}
 \SepLine
 
 \Anchor{4ON4.8}\BulletPointX\NoteFor{[4.8]} {\tgsl div algo for polys} \hfill[{\tgsc Another proof}]\TextB{\vspace{-11pt}}
@@ -2790,7 +2789,7 @@ Thus $p\Par{z}=\sum_{j=1}^m a_j \Par{z-\lambda}\sum_{i=1}^k \lambda^{i-1}z^{k-i}
 	\TextA{Prove $\exists\,!\,p\in\PoF{m},p\Par{z_k}=w_k$ for each $k\in\Bra{1,\dots, m+1}.$}
 }\par\quad
 Define $T\in\Lm[\BigPar]{\PoF{m},\Fbb^{m+1}}$ by $Tq=\BigPar{q\Par{z_1},\dots,q\Par{z_m},q\Par{z_{m+1}}}.$\vspace{1pt}\par\quad
-Becs $Tq=0\Longleftrightarrow q\Par{z_1}=\dots=q\Par{z_m}=q\Par{z_{m+1}}=0\Longleftrightarrow q=0,$ by {\TIPS}. \;Now $T$ iso. Immed.\PfEnd\vspace{4pt}\quad
+Becs $Tq=0\Longleftrightarrow q\Par{z_1}=\dots=q\Par{z_m}=q\Par{z_{m+1}}=0\Longleftrightarrow q=0,$ by {\TIPSN{1}}. \;Now $T$ iso. Immed.\PfEnd\vspace{4pt}\quad
 \Or Let $p_1=1,\;p_k\Par{z}=\prod_{i=1}^{k-1}\Par{z-z_i}=\Par{z-z_1}\cdots\Par{z-z_{k-1}}$ for each $k\in\Bra{2,\dots,m+1}.$\vspace{1pt}\par\quad
 By (2.C.10), $B_p=\Par{p_1,\dots,p_{m+1}}$ is a bss of $\PoF{m}.$ Let $B_e=\Par{e_1,\dots,e_{m+1}}$ be the std bss of $\Fbb^{m+1}.$\vspace{2pt}\par\quad
 Now $Tp_1=\Par{1,\dots,1},\;Tp_k=\XPar{\prod_{i=1}^{k-1}\Par{z_1-z_i},\dots,\prod_{i=1}^{k-1}\Par{z_j-z_i},\dots,\prod_{i=1}^{k-1}\Par{z_{m+1}-z_i}};$\vspace{3pt}\par\quad
@@ -2837,13 +2836,13 @@ Now $p\apostrophe\Par{z}=\Par{z-\lambda_j}q_j\apostrophe\Par{z}+q_j\Par{z}\Right
 Becs $p\apostrophe\Par{z}=\Par{z-\lambda}q\apostrophe\Par{z}+q\Par{z}\Rightarrow p\apostrophe\Par{\lambda}=q\Par{\lambda}=0\Rightarrow q\Par{z}=\Par{z-\lambda}s\Par{z}.$\parSol{\Ha}
 Now $p\Par{z}=\Par{z-\lambda}{^2}s\Par{z}.$ Hence $p$ has strictly less than $m$ disti zeros.\vspace{4pt}\parSol{}
 (b) ${}^{\neg}P\Rightarrow{}{^\neg}Q:$ \;Becs $0\neq p\in\PoF{m}.$ Supp all disti zeros are $\lambda_1,\dots,\lambda_M,$ with $M<m.$\parSol{\Hb}
-By Pigeon Hole Principle, $\Par{z-\lambda_k}{^{2}}q\Par{z}=p\Par{z}$ for some $\lambda_k\Rightarrow p\apostrophe\Par{\lambda_k}=0=p\Par{\lambda_k}.$\PfEnd
+By Pigeon Hole Principle, $\Par{z-\lambda_k}{^{2}}q\Par{z}=p\Par{z}$ for some $\lambda_k\Rightarrow p\apostrophe\Par{\lambda_k}=0=p\Par{\lambda_k}.$\PfEnd\vspace{2pt}
+\ANote If $\Fbb=\Rbb.$ Then replace ``$m$ disti zeros'' with ``$m$ disti zeros in $\Cbb$'' and the result still holds.
 \SepLine
 
 \ProblemN{\Anchor{4O7}{7}}{
-	\TextA{Prove every $p\in\PoRi$ of odd deg has a zero.}
-}Using [4.17], $\deg p=2M+m\Rightarrow m$ is odd, done.\PfEnd\parSol{\vspace{3pt}}
-\Or Write $p\Par{x}=x^m\envFontSmall\XPar{${\FontLarge$\frac{a_0}{x^m}$}${}+{}${\FontLarge$\frac{a_1}{x^{m-1}}$}${}+\dots+{}${\FontLarge$\frac{a_{m-1}}{x}$}${}+a_m\envFontSmall}\Rightarrow p$ continuous on $\Interval{(}{]}{{-\infty,0}}\cup\Interval{[}{)}{0,\infty}.$\parSol{\vspace{3pt}}
+	\TextA{Prove every $p\in\PoRi$ of odd deg has a zero.\hfill\tgnr\FontNorm Using [4.17], $\deg p=2M+m\Rightarrow m$ is odd.}
+}\Or Write $p\Par{x}=x^m\envFontSmall\XPar{${\FontLarge$\frac{a_0}{x^m}$}${}+{}${\FontLarge$\frac{a_1}{x^{m-1}}$}${}+\dots+{}${\FontLarge$\frac{a_{m-1}}{x}$}${}+a_m\envFontSmall}\Rightarrow p$ continuous on $\Interval{(}{]}{{-\infty,0}}\cup\Interval{[}{)}{0,\infty}.$\parSol{\vspace{3pt}}
 \Blind{\Or}Let $\delta=\aMid{a_m}{^{-1}}a_m.$ Becs $\lim\limits_{x\rightarrow -\infty}p\Par{x}=-\delta\infty\,;\;\;\lim\limits_{x\rightarrow \infty}p\Par{x}=\delta\infty\Rightarrow p$ has at least one real zero.\PfEnd
 \SepLine
 
@@ -2864,12 +2863,12 @@ For $x=3,T\Par{x^n}=n3^{n-1}=\sum_{i=1}^n 3^{n-1}=\sum_{i=1}^n 3^{i-1}x^{n-i}.$ 
 \SepLine
 
 \ProblemN{\Anchor{4O11}{11}}{
-	\TextA{Supp $p\in\PoFi$ with $\deg p=m\in\Nbb.$ Let $U=\Bra{pq:q\in\PoFi}$.\vspace{1pt}}
-	\TextA{{\tgnr\large(a)} Show $\dim\PoFi\XSlash U = \deg p$; \; {\tgnr\large(b)} Find a bss of $\PoFi\XSlash U$.}
+	\TextA{Supp $p\in\PoFi$ with $\deg p=m\in\Nbb.$ Let $U=\Bra{pq:q\in\PoFi}$. Find a bss of $\PoFi\XSlash U.$\vspace{1pt}}
+%	\TextA{{\tgnr\large(a)} Show $\dim\PoFi\XSlash U = \deg p$; \; {\tgnr\large(b)} Find a bss of $\PoFi\XSlash U$.}
 }If $\deg p=0,$ then $U=\PoFi,\PoFi\XSlash U=\Bra{0+U},$ with the uniq bss $\Par{}.$ \;Supp $\deg p\geqslant 1.$\par\vspace{2pt}\quad
-(a) Becs $\forall s\in\PoFi,\exists\,!\,r\in\PoF{m-1},q\in\PoFi\Rightarrow\exists\,!\,pq\in U,\;s=\Par{p}q+\Par{r}\Rightarrow\PoFi=U\oplus\PoF{m-1}.$\vspace{0pt}\par\quad\Ha
-By {\NOTEFOR} [3.88, 90, 91] \OR Define $R\Par{s}=r\Rightarrow\null R=U,$ and $R$ surj. Immed.\par\vspace{2pt}\quad
-(b) Let $\Par{1,z,\dots,z^{m-1}}$ be a bss of $\PoF{m-1}.$ By (4E 3.E.14) \OR $\tilde{R}{^{-1}}\!:\PoF{m-1}\rightarrow\PoFi{}\XSlash U$, immed.\PfEnd
+Becs $\forall s\in\PoFi,\exists\,!\,r\in\PoF{m-1},q\in\PoFi\Rightarrow\exists\,!\,pq\in U,\;s=\Par{p}q+\Par{r}\Rightarrow\PoFi=U\oplus\PoF{m-1}.$\vspace{0pt}\par\quad
+By {\NOTEFOR} [3.88, 90, 91] \OR Define $R\Par{s}=r\Rightarrow\null R=U,$ and $R$ surj.\par\vspace{2pt}\quad
+Let $\Par{1,z,\dots,z^{m-1}}$ be a bss of $\PoF{m-1}.$ By (4E 3.E.14) \OR $\tilde{R}{^{-1}}\!:\PoF{m-1}\rightarrow\PoFi{}\XSlash U.$\PfEnd
 \SepLine\pagebreak
 
 \ProblemN{\Anchor{4O9}{9}}{
@@ -2885,7 +2884,7 @@ $\overline{\sum_{i+j=k}c_i\overline{c_j}}=\sum_{i+j=k}\overline{c_i\overline{c_j
 }By {\TIPSN{1}} and Exe (5), $\exists\,!\,q\in\PoR{m}$ suth $q\Par{x_k}=p\Par{x_k}.$ Hence $p=q.$\PfEnd\vspace{11pt}\quad
 \Or Define $q\Par{x}=\sum_{j=0}^m{}${\Large\envFontSmall[\footnotesize]\def\SmallPar{\Par}$\frac{\SmallPar{x\,-\,x_0}\SmallPar{x\,-\,x_1}\,\cdots\,\SmallPar{x\,-\,x_{j-1}}\SmallPar{x\,-\,x_{j+1}}\,\cdots\,\SmallPar{x\,-\,x_m}}{\SmallPar{x_j\,-\,x_0}\SmallPar{x_j\,-\,x_1}\,\cdots\,\SmallPar{x_j\,-\,x_{j-1}}\SmallPar{x_j\,-\,x_{j+1}}\,\cdots\,\SmallPar{x_j\,-\,x_m}}$}${\,}p\Par{x_j}.$\par\vspace{4pt}\quad
 又 Each $x_j,\,p\Par{x_j}\in\Rbb\Rightarrow q\in\PoR{m}.$ \;Becs each $q\Par{x_k}=1\cdot p\Par{x_k}\Rightarrow\Par{q-p}\Par{x_k}=0.$\par\quad
-$\Par{q-p}$ has $\Par{m+1}$ zeros. By {\TIPS}, $q-p=0\Rightarrow p=q\in\PoRi.$\PfEnd
+$\Par{q-p}$ has $\Par{m+1}$ zeros. By {\TIPSN{1}}, $q-p=0\Rightarrow p=q\in\PoRi.$\PfEnd
 \SepLine
 
 \Anchor{4O4e13}\ProblemBnoor{4E 13}{
@@ -2913,7 +2912,7 @@ Hence $s{^{\SmallPar{D}}}\BigPar{\lambda\Sbra{I_{D,j}}}=0.$ The asum holds for a
 \NOTICE that $\forall k=\Bra{0,\dots,A-2},s{^{\SmallPar{k}}}$ and $s{^{\SmallPar{k+1}}}$ have zeros $\BigBra{{\lambda\Sbra{I_{k+1,1}},\dots,\lambda\Sbra{I_{k+1,\,J_{k+1}}}}}$ in common.\vspace{2pt}\par\quad
 Now $\forall D\in\Bra{1,\dots,A-1},s=s{^{\SmallPar{0}}},\dots,s{^{\SmallPar{D}}}$ have zeros $\BigBra{{\lambda\Sbra{I_{D,1}},\dots,\lambda\Sbra{I_{D,\,J_D}}}}$ in common.\vspace{2pt}\par\quad
 Thus $s\Par{z}$ is divisible by $\BigPar{z-\lambda\Sbra{I_{D,1}}}{^{\alpha\def\envFont{\scriptsize}\Sbra{I_{D,1}}}}\cdots\BigPar{z-\lambda\Sbra{I_{D,\,J_D}}}{^{\alpha\def\envFont{\scriptsize}\Sbra{I_{D,\,J_D}}}},$ for each $D\in\Bra{0,\dots,A-1}.$\vspace{2pt}\par\quad
-Hence $s\Par{z}=\Sbra{\Par{z-\lambda_1}{^{\alpha_1}}\cdots\Par{z-\lambda_M}{^{\alpha_M}}}\,s_0\Par{z},$ while $\deg s<m=\alpha_1+\dots+\alpha_M.$ Now by {\TIPS}.\PfEnd
+Hence $s\Par{z}=\Sbra{\Par{z-\lambda_1}{^{\alpha_1}}\cdots\Par{z-\lambda_M}{^{\alpha_M}}}\,s_0\Par{z},$ while $\deg s<m=\alpha_1+\dots+\alpha_M.$ Now by {\TIPSN{1}}.\PfEnd
 \SepLine\pagebreak
 
 \Anchor{4OL1}\ProblemN{L1}{
@@ -3276,11 +3275,11 @@ Define $T\in\Lm{V}$ by $Tf=e^x f.$ Then $\Par{T\XSlash U}\Par{1+U}=e^x+U=0$ whil
 \SepLine
 
 \Anchor{5A4e39}\ProblemBnoor{4E 39}{
-	\TextB{Supp $T\in\Lm{V},$ $V$ is finide. Prove $\exists$ eigval of $T$ $\Longleftrightarrow\exists$ invarsp of dim $\dim V-1$.}
-}(a) Supp $\lambda$ is eigval with $v.$ Becs $\dim\Null\Par{T-\lambda I}\geqslant 1\Longleftrightarrow\dim\Range\Par{T-\lambda I}\leqslant\dim V-1=N.$\parSol{\Ha}
-Let $B_{\Range\SmallPar{T\,-\,\lambda I}}=\Par{w_1,\dots,w_m},\,B_{\Null\SmallPar{T\,-\,\lambda I}}=\Par{u_1,\dots,u_n},\;B_U=\Par{w_1,\dots,w_m,u_1,\dots,u_{N\,-\,m}}.$\vspace{1pt}\parSol{\Ha}
+	\TextB{Supp $T\in\Lm{V},$ $V$ is finide. Prove $\exists$ eigval of $T$ $\Longleftrightarrow\exists$ invarsp $U$ of dim $\dim V-1$.}
+}(a) Supp $\lambda$ is eigval with $v.$ Becs $\dim E\Par{\lambda,T}\geqslant 1\Longleftrightarrow\dim\Range\Par{T-\lambda I}\leqslant\dim V-1=N.$\parSol{\Ha}
+Let $B_{\Range\SmallPar{T\,-\,\lambda I}}=\Par{w_1,\dots,w_m},\,B_{E\SmallPar{\lambda,\,T}}=\Par{u_1,\dots,u_n},\;B_U=\Par{w_1,\dots,w_m,u_1,\dots,u_{N\,-\,m}}.$\vspace{1pt}\parSol{\Ha}
 \ANote $U\not\in\Scom{V}{\Span{v}}$ unless $u_n=v.$\vspace{3pt}\parSol{}
-(b) Supp $U$ is invarspd $T$ with $\dim U=\dim V-1\Rightarrow\dim V\XSlash U=1.$ By (3.A.7), Exe (35).\PfEnd
+(b) Convly, becs $\dim V\XSlash U=1.$ By (3.A.7), Exe (35).\PfEnd
 \SepLine
 
 %\Anchor{5A4e16}\ProblemBnoor{4E 16}{
@@ -3293,36 +3292,35 @@ Let $B_{\Range\SmallPar{T\,-\,\lambda I}}=\Par{w_1,\dots,w_m},\,B_{\Null\SmallPa
 %\SepLine
 
 \ProblemN{\Anchor{5A24}{24}}{
-	\TextA{Supp $A\in\Fbb^{n,n}.$ Define $T\in\Lm{\Fbb^{n,1}}$ by $Tx = Ax$. Prove $1$ is eigval of $T$ if\hspace{2pt}$:$}
-	\PrePa\TextA{the sum of the ent in each row of $A$ equals $1$. \, {\tgnr\large(b)} each col of $A.$}
-}Supp $x\neq0$ and $Ax={\BigPar{A_{j,1}x_1+\dots+A_{j,n}x_n}{_{j=1}^n}}=\lambda\Par{x_j}{_{j=1}^n}=\lambda x.$\par\quad
-(a) Supp $A_{R,1}+\dots+A_{R,n}=1.$ Let $x_1=\dots=x_n.$ Immed.\vspace{2pt}\par\quad
-(b) Supp $A_{1,C}+\dots+A_{n,C}=1.$ Then $\BigSbra{\sum_{R=1}^n A_{R,\cdot}}x=\sum_{k=1}^n\BigPar{{A_{1,k}+\dots+A_{n,k}}}x_k.$\par\quad\Hb
-Now each $\Par{Ax}{_{R,1}}=\Par{x}{_{R,1}}=\Par{\lambda x}{_{R,1}}.$ \,Thus for $x$ with $\sum_{k=1}^nx_k\neq 0,$ $\lambda=1$ is the corres eigval.\PfEnd\vspace{3pt}\quad\Hb
-\Or Becs $\Par{T-I}x=\Par{A-I}x=\BigPar{\Par{A_{j,1}x_1+\dots+A_{j,n}x_n}-x_j}{_{j=1}^n}=\Par{y_j}{_{j=1}^n}.$\vspace{1pt}\par\quad\Hb
-Now $y_1+\dots+y_n=\sum_{j=1}^n\sum_{k=1}^n \BigPar{A_{j,k}x_k-x_j}=\sum_{k=1}^n x_k\BigSbra{\sum_{j=1}^n A_{j,k}}-\sum_{j=1}^n x_j=0.$\par\vspace{2pt}\quad\Hb
-Thus $\Range\Par{T-I}\subseteq\Bra{\Par{y_1,\dots,y_n}:y_1+\dots+y_n=0}.$ Now $\Par{T-I}$ is not inv.\PfEnd\vspace{3pt}\quad\Hb
+	\TextA{Supp $A\in\Fbb^{n,n}.$ Define $T\in\Lm{\Fbb^{n,1}}$ by $Tx = Ax$. Prove $\lambda$ is eigval of $T$ if\hspace{2pt}$:$}
+	\PrePa\TextA{the sum of the ent in each row of $A$ equals $\lambda.$ \, {\tgnr\large(b)} each col of $A.$}
+}Supp $x\neq0$ and $Ax={\BigPar{A_{j,1}x_1+\dots+A_{j,n}x_n}{_{j=1}^n}}=\alpha\Par{x_j}{_{j=1}^n}=\alpha x.$\par\quad
+(a) Supp $A_{R,1}+\dots+A_{R,n}=\lambda.$ Let $x_1=\dots=x_n.$ Immed.\vspace{2pt}\par\quad
+(b) Supp $A_{1,C}+\dots+A_{n,C}=\lambda.$ Note that $\BigSbra{\sum_{R=1}^n A_{R,\cdot}}x=\sum_{k=1}^n\BigPar{{A_{1,k}+\dots+A_{n,k}}}x_k.$\par\quad\Hb
+Each $\Par{Ax}{_{R,1}}=\lambda\Par{x}{_{R,1}}.$ \,Thus for $x$ with $\sum_{k=1}^nx_k\neq 0,$ $\lambda$ is the corres eigval.\PfEnd\vspace{3pt}\quad\Hb
+\Or Becs $\Par{T-\lambda I}x=\Par{A-\lambda I}x=\BigPar{\Par{A_{j,1}x_1+\dots+A_{j,n}x_n}-\lambda x_j}{_{j=1}^n}=\Par{y_j}{_{j=1}^n}.$\vspace{1pt}\par\quad\Hb
+Now $y_1+\dots+y_n=\sum_{j=1}^n\sum_{k=1}^n \BigPar{A_{j,k}x_k-\lambda x_j}=\sum_{k=1}^n x_k\BigSbra{\sum_{j=1}^n A_{j,k}}-\lambda\sum_{j=1}^n x_j=0.$\par\vspace{2pt}\quad\Hb
+Thus $\Range\Par{T-\lambda I}\subseteq\Bra{\Par{y_1,\dots,y_n}:y_1+\dots+y_n=0}.$ Now $\Par{T-\lambda I}$ is not inv.\PfEnd\vspace{4pt}\quad\Hb
 \Or Let $\Par{e_1,\dots,e_n}$ be the std bss of $\Fbb^{n,1}.$ Define $\psi\in\BigPar{\Fbb^{n,1}}\apostrophe$ with each $\psi\Par{e_k}=1.$\vspace{0pt}\par\quad\Hb
-Becs $Ae_k=A_{\cdot,k}=\sum_{j=1}^nA_{j,k}e_j\Rightarrow{\psi\Par{T-I}}{e_k}=\psi\BigBigPar{{\sum_{j=1}^n A_{j,k}e_j}-e_k}=\sum_{j=1}^n A_{j,k}-1=0.$\PfEnd\vspace{3pt}\quad\Hb
+Becs $Ae_k=A_{\cdot,k}=\sum_{j=1}^nA_{j,k}e_j\Rightarrow\psi\Sbra{\Par{T-\lambda I}{e_k}}=\psi\BigBigPar{{\sum_{j=1}^n A_{j,k}e_j}-\lambda e_k}=\sum_{j=1}^n A_{j,k}-\lambda=0.$\PfEnd\vspace{5pt}\quad\Hb
 \Or Define $S\in\Lm{\Fbb^{n,1}}$ by $Sx=A^tx.$ Becs the rows of $\Mt{S}=A^t$ are the cols of $\Mt{T}=A.$\par\quad\Hb
 Let $\Par{\varphi_1,\dots,\varphi_n}$ be the dual bss of $\Par{e_1,\dots,e_n}.$ Define $\Phi\in\Lm[\Sbra]{\Fbb^{n,1},\BigPar{\Fbb^{1,n}}\apostrophe}$ by $\Phi\Par{e_k}=\varphi_k.$\vspace{1pt}\par\quad\Hb
 Now $\BigPar{\Phi^{-1}T\apostrophe\Phi}{e_k}=\BigPar{\Phi^{-1}T\apostrophe}{\varphi_k}=\Phi^{-1}\BigBigPar{{\sum_{j=1}^n A_{j,k}^t\varphi_j}}=\sum_{j=1}^n A_{j,k}^te_j=A^t e_k=Se_k.$\vspace{1pt}\par\quad\Hb
-Becs by (a), $1$ is eigval of $S=\Phi^{-1}T\apostrophe\Phi.$ So of $T\apostrophe,$ by Exe (15). So of $T,$ by Exe (4E 15).\PfEnd
+Becs by (a), $\lambda$ is eigval of $S=\Phi^{-1}T\apostrophe\Phi.$ So of $T\apostrophe,$ by Exe (15). So of $T,$ by Exe (4E 15).\PfEnd
 \SepLine
 
 \Anchor{5A'1}\ProblemB{
-	\TextB{Supp $A\in\Fbb^{n,n}.$ Define $T\in\Lm{\Fbb^{1,n}}$ by $Tx = xA.$ Prove $1$ is eigval of $T$ if\hspace{2pt}$:$}
-	\PrePa\TextB{the sum of the ent in each col of $A$ equals $1$. \, {\tgnr\large(b)} each row of $A.$}
-}Supp $x\neq 0$ and $xA=\BigPar{x_1A_{1,k}+\dots+x_nA_{n,k}}{_{k=1}^n}=\lambda\Par{x_k}{_{k=1}^n}=\lambda x.$\par\quad
+	\TextB{Supp $A\in\Fbb^{n,n}.$ Define $T\in\Lm{\Fbb^{1,n}}$ by $Tx = xA.$ Prove $\lambda$ is eigval of $T$ if\hspace{2pt}$:$}
+	\PrePa\TextB{the sum of the ent in each col of $A$ equals $\lambda.$ \, {\tgnr\large(b)} each row of $A.$}
+}Supp $x\neq 0$ and $xA=\BigPar{x_1A_{1,k}+\dots+x_nA_{n,k}}{_{k=1}^n}=\alpha\Par{x_k}{_{k=1}^n}=\alpha x.$\par\quad
 (a) Supp $A_{1,C}+\dots+A_{n,C}=1.$ Let $x_1=\dots=x_n.$ Immed.\vspace{2pt}\par\quad
-(b) Supp $A_{R,1}+\dots+A_{R,n}=1.$ Then $\sum_{C=1}^nxA_{\cdot,C}=\sum_{j=1}^n\BigPar{A_{j,1}+\dots+A_{j,n}}x_j.$\vspace{0pt}\par\quad\Hb
-Now each $\Par{xA}{_{1,C}}=\Par{x}{_{1,C}}=\Par{\lambda x}{_{1,C}}.$ \,Thus for $x$ suth $\sum_{k=1}^nx_k\neq 0,$ $\lambda=1$ is the corres eigval.\PfEnd\vspace{3pt}\quad\Hb
-\Or Becs $\Par{T-I}x=x\BigPar{A-{I}}=\BigPar{\Par{x_1 A_{1,k}+\dots+x_nA_{n,k}}-x_k}{_{k=1}^n}=\Par{y_k}{_{k=1}^n}.$\vspace{1pt}\par\quad\Hb
-Now $y_1+\dots+y_n=\sum_{k=1}^n\sum_{j=1}^n\Par{x_j A_{j,k}-x_k}=\sum_{j=1}^n x_j\BigSbra{\sum_{k=1}^n A_{j,k}}-\sum_{k=1}^n x_k=0.$\par\vspace{2pt}\quad\Hb
-Thus $\Range\Par{T-I}\subseteq\Bra{\Par{y_1,\dots,y_n}:y_1+\dots+y_n=0}.$ Now $\Par{T-I}$ is not inv.\PfEnd\vspace{3pt}\quad\Hb
-\Or Simlr in Exe (24). Becs $e_jA=A_{j,\cdot}=\sum_{k=1}^n A_{j,k}e_k\Rightarrow{\psi\Par{T-I}}{e_j}={\sum_{k=1}^n A_{j,k}}-1=0.$\PfEnd\vspace{3pt}\quad\Hb
-\Or Define $S\in\Lm{\Fbb^{1,n}}$ by $Sx=xA^t.$ \;\NOTICE that $\Mt{S}\neq A$ and $\Mt{T}\neq A^t.$ \Sbra{{\tgsl Noted by {\tgnr AI}.}}\par\quad\Hb
-Let $\Par{\varphi_1,\dots,\varphi_n}$ be the dual bss. Define $\Phi$ by $\Phi\Par{e_k}=\varphi_k.$\par\quad\Hb
+(b) Supp $A_{R,1}+\dots+A_{R,n}=\lambda.$ Note that $\sum_{C=1}^nxA_{\cdot,C}=\sum_{j=1}^n\BigPar{A_{j,1}+\dots+A_{j,n}}x_j.$\vspace{0pt}\par\quad\Hb
+Each $\Par{xA}{_{1,C}}=\lambda\Par{x}{_{1,C}}.$ \,Thus for $x$ suth $\sum_{k=1}^nx_k\neq 0,$ $\lambda$ is the corres eigval.\PfEnd\vspace{3pt}\quad\Hb
+\Or Becs $\Par{T-\lambda I}x=x\BigPar{A-\lambda I}=\BigPar{\Par{x_1 A_{1,k}+\dots+x_nA_{n,k}}-\lambda x_k}{_{k=1}^n}=\Par{y_k}{_{k=1}^n}.$\vspace{1pt}\par\quad\Hb
+Now $y_1+\dots+y_n=\sum_{k=1}^n\sum_{j=1}^n\Par{x_j A_{j,k}-\lambda x_k}=\sum_{j=1}^n x_j\BigSbra{\sum_{k=1}^n A_{j,k}}-\lambda\sum_{k=1}^n x_k=0.$\par\vspace{2pt}\quad\Hb
+Thus $\Range\Par{T-\lambda I}\subseteq\Bra{\Par{y_1,\dots,y_n}:y_1+\dots+y_n=0}.$ Now $\Par{T-\lambda I}$ is not inv.\PfEnd\vspace{3pt}\quad\Hb
+\Or Simlr in Exe (24). Becs $e_jA=A_{j,\cdot}=\sum_{k=1}^n A_{j,k}e_k\Rightarrow\psi\Sbra{\Par{T-\lambda I}{e_j}}={\sum_{k=1}^n A_{j,k}}-\lambda=0.$\PfEnd\vspace{4pt}\quad\Hb
+\Or Define $S\in\Lm{\Fbb^{1,n}}$ by $Sx=xA^t.$ Let $\Par{\varphi_1,\dots,\varphi_n}$ be the dual bss. Define $\Phi$ by $\Phi\Par{e_k}=\varphi_k.$\par\quad\Hb
 Becs $\Sbra{T\apostrophe\Par{\varphi_k}}\Par{e_j}=\varphi_k\BigBigPar{{\sum_{i=1}^n A_{j,i}e_i}}=A_{j,k}.$ By (3.F.9), $T\apostrophe\Par{\varphi_k}=\sum_{j=1}^n A_{j,k}\varphi_j.$\vspace{1pt}\par\quad\Hb
 Now $\BigPar{\Phi^{-1}T\apostrophe\Phi}{e_k}=\BigPar{\Phi^{-1}T\apostrophe}{\varphi_k}=\Phi^{-1}\BigBigPar[0pt]{\sum_{j=1}^n A_{j,k}\varphi_j}=\sum_{j=1}^n A_{j,k}e_j=e_k A^t=Se_k.$ \,Simlr.\PfEnd
 \SepLine
