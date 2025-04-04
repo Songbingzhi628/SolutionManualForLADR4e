@@ -2092,7 +2092,7 @@ Define $\varphi\in V\apostrophe$ by $\varphi\Par{u+\lambda s+y}=\lambda.$ Hence 
 \SepLine
 
 \Anchor{3FN3.102}\Anchor{3FN18}\Anchor{3F18}\BulletPointX\NoteForSmall{[3.102] and Exe (18)}\;\;For $U=\emptySet,\;U^0=\Bra{\varphi\in V\apostrophe:U\subseteq\null\varphi}=V\apostrophe.$ While $\zeroSubs{^0_V}=V\apostrophe.$\TextB{}
-Not a ctradic becs $\emptySet$ is not a subsp. Now $U^0=V\apostrophe$ can be true with $U=\emptySet\neq\zeroSubs.$\vspace{-2pt}
+Not a ctradic to Exe (21) becs $\emptySet$ is not a subsp. Now $U^0=V\apostrophe$ can be true with $U=\emptySet\neq\zeroSubs.$\vspace{-2pt}
 \SepLine\pagebreak
 
 \Anchor{3FN1}\BulletPointX\NoteForSmall{Exe (1)}\;\;Every liney functional is either surj or is a zero map.\TextB{}
@@ -2198,9 +2198,7 @@ Thus $\Par{\Lambda_2\circ\chi\apostrophe\circ\xi\circ\Lambda_1}$ is the surj $\L
 %$x=u_v+i_u=w_v+i_w.$ Define $\varphi\in U^0,\beta\in W^0$ by $\varphi:u_v\mapsto 1,u\mapsto 0,$ and $\beta:i_u\mapsto 1,i\mapsto 0,$\par\quad
 %for all $u\in\Pure V\XSlash\Span{u_v}$ and $i\in\Pure V\XSlash\Span{i_u}.$ \OR Define $\psi\in W^0,\gamma\in U^0,$ simlr.\par\quad
 %Then $\varphi=\varphi+\beta=\psi+\gamma\in U^0+W^0.$\PfEnd
-\AComm Not true if $U$ or $W$ is merely a subset. Promote $U\cap W$ as $I,$ \,$U$ as $X,$ \,and $W$ as $Y.$\par
-%Now we show $X\cap Y=I.$ So that $\BigPar{U\cap W}{^0}=I^0=\BigPar{X\cap Y}{^0}=X^0+Y^0=U^0+W^0.$\parCom
-\AExa Let $U=\Bra{\Par{x,x+1}\in\Rbb^2},W=\Rbb^2.$ Then $U\cap W=I=U\neq\Rbb^2=X\cap Y.$
+\AExa Not true if $U$ or $W$ is merely a subset. Let $V=\Fbb^2,U=\Span{e_1},W=\Bra{\Par{1,1},\Par{0,1}}.$
 \SepLine
 
 \ProblemBX[]{\ACoro}{
@@ -2230,13 +2228,13 @@ To fix this, we must have a bss of $V\apostrophe$ as precond, which we'll see in
 \ProblemN{\Anchor{3F31}{31}}{
 	\TextA{Supp $V$ is finide and $B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_n}.$ Show $\exists\,!\,B_V$ whose dual bss is the $B_{V\apostrophe}$.}
 }For each $k\in\Bra{1,\dots,n},$ let $\Gamma_{\!k}=\Bra{1,\dots,n}\Backslash[\Big]\Bra{k}.$ Let each $U_k=\bigcap_{j\,\in\,\Gamma_{\!k}}\null\varphi_j.$\parSol{}
-By Exe (4E 23), $V\apostrophe=\Span{\varphi_1,\dots,\varphi_n}=\BigPar{\null\varphi_1\cap\cdots\cap\null\varphi_n}{^0}\Rightarrow U_k\cap\varphi_k=\zeroSubs.$\parSol{}
+By Exe (4E 23), $V\apostrophe=\Span{\varphi_1,\dots,\varphi_n}=\BigPar{\null\varphi_1\cap\cdots\cap\null\varphi_n}{^0}\Rightarrow U_k\cap\null\varphi_k=\zeroSubs.$\parSol{}
 Thus $\forall x_k\in U_k\nonzero,\;x_k\not\in\null\varphi_k$ while $x_k\in\null\varphi_j$ for all $j\in\Gamma_{\!k}.$\parSol{}
 Fix one $x_k$ and let $v_k=\Sbra{\varphi_k\Par{x_k}}{^{-1}}x_k\Rightarrow\varphi_k\Par{v_k}=1,\,\varphi_j\Par{v_k}=0$ for all $j\neq k.$\parSol{}
 Simply for each $v_k,$ \,$\varphi_j\Par{v_k}=\delta_{j,k}$ for all $j\Longleftrightarrow$ for each $\varphi_j,$ $\varphi_j\Par{v_k}=\delta_{j,k}$ for all $k.$\parSol{}
 又 $a_1v_1+\dots+a_nv_n=0\Rightarrow$ each $\varphi_k\Par{0}=a_k.$\vspace{2pt}\parSol{}
 Now we prove the uniqnes part. Supp the dual bss of $B_V'=\Par{u_1,\dots,u_n}$ is the $B_{V\apostrophe}.$\parSol{}
-For each $k,$ we have $\varphi_j\Par{v_k}=\varphi_j\Par{u_k}$ for all $k\Rightarrow v_k-u_k\in\bigcap\null\varphi_j=\zeroSubs.$\PfEnd
+For each $k,$ we have $\varphi_j\Par{v_k}=\varphi_j\Par{u_k}$ for all $k\Rightarrow v_k-u_k\in\bigcap_{j=1}^n\null\varphi_j=\zeroSubs.$\PfEnd
 \SepLine
 
 \Anchor{3FN31}\BulletPointX\NoteForSmall{Exe (31)}\;\;Supp $V$ is finide, and $\Omega$ is a subsp of $V\apostrophe$ with $B_{\Omega}=\Par{\varphi_1,\dots,\varphi_m}.$\TextB{}
@@ -4015,28 +4013,38 @@ Becs the char of $T$ \Sbra{See [9.21] for $\Fbb=\Rbb$} is a multi of $m_T,$ whic
 \SepLine
 
 \Anchor{8B4e6}\ProblemBnoor{4E B.6}{
-	\TextA{Supp $T\in\Lm{V}$ and $\lambda$ is an eigval. Explain why the expo of $z-\lambda$}
+	\TextA{Supp $T\in\Lm{V}$ and $\lambda$ is an eigval. Explain why the expo of $\Par{z-\lambda}$}
 	\TextA{in the factoriz of $m_T$ is the smallest $m\in\Nbp$ suth $\Par{T-\lambda I}{^m}\Big|{_{\:\!G\SmallPar{\:\!\lambda,\,T\:\!}}}=0.$\vspace{2pt}}
 }Let $G=G\Par{\lambda,T},N=\Par{T-\lambda I}\Big|{_G},$ and $N^m=0\neq N^{m-1}\Rightarrow$ the min of $T\mmid_G$ is $s\Par{z}=\Par{z-\lambda}{^m}.$\parSol{}
 Thus $m_T$ is a multi of $s.$ Now we show the expo of $\Par{z-\lambda}$ in $m_T$ is no more than $m.$\parSol{}
 Let $\lambda_1=\lambda.$ Asum $m_{T_{\!\Cbb}}\Par{z}=\Par{z-\lambda_1}{^{m+k}}\Par{z-\lambda_2}{^{\alpha_2}}\cdots\Par{z-\lambda_n}{^{\alpha_n}},$ where $k\in\Nbp.$\parSol{}
-Let $r\Par{z}=\Par{z-\lambda}{^m}\Par{z-\lambda_2}{^{\alpha_2}}\cdots\Par{z-\lambda_n}{^{\alpha_n}}\Rightarrow r\Par{T}=0.$ Ctradic the min of $m_{T_{\!\Cbb}}.$\PfEnd\vspace{4pt}\parSol{}
+Let $r\Par{z}=\Par{z-\lambda}{^m}\Par{z-\lambda_2}{^{\alpha_2}}\cdots\Par{z-\lambda_n}{^{\alpha_n}}\Rightarrow r\Par{T_{\!\Cbb}}=0.$ Ctradic the min of $m_{T_{\!\Cbb}}.$\PfEnd\vspace{4pt}\parSol{}
+\Or Becs all $\Par{T-\alpha I}{^k}\Big|{_{\:\!G\SmallPar{\:\!\lambda,\,T\:\!}}}$ are inv. Note that $m_T\Par{T\mmid_{\:\!G\SmallPar{\:\!\lambda,\,T\:\!}}}=0\Longleftrightarrow\Par{T-\lambda I}{^k}\Big|{_{\:\!G\SmallPar{\:\!\lambda,\,T\:\!}}}=0.$\parSol{}
+So that the expo $k$ of $\Par{z-\lambda}$ is no lesser, and cannot be more, than the smallest $m.$\PfEnd\vspace{4pt}\parSol{}
 \Or Let $m_T\Par{z}=\Par{z-\lambda}{^m}q\Par{z},$ with $q\Par{\lambda}\neq0.$ We show $\Null\Par{T-\lambda I}{^m}\supseteq\Null\Par{T-\lambda I}{^{m+1}}.$\parSol{}
 Supp $v\in\Null\Par{T-\lambda I}{^{m+1}}\Longleftrightarrow \Par{T-\lambda I}{^m}v\in\Null\Par{T-\lambda I}=E\Par{\lambda,T}.$\parSol{}
 Then $0=m_T\Par{T}v=q\Par{T}\Sbra{\Par{T-\lambda I}{^m}v}=q\Par{\lambda}\Sbra{\Par{T-\lambda I}{^m}v}\Rightarrow v\in\Null\Par{T-\lambda I}{^m}.$\vspace{2pt}\parSol{}
 We show $m$ is the smallest. Let $k$ be suth $\Null\Par{T-\lambda I}{^k}=G\Par{\lambda,T},\,s\Par{z}=\Par{z-\lambda}{^k}q\Par{z}.$\parSol{}
 We show $s\Par{T}=0$ and done. Consider $0=m_T\Par{T}v=\Par{T-\lambda I}{^m}q\Par{T}v.$\parSol{}
-If $q\Par{T}v=0\Rightarrow s\Par{T}v=0.$ Othws, $q\Par{T}v\in\Null\Par{T-\lambda I}{^m}=\Null\Par{T-\lambda I}{^k}\Rightarrow s\Par{T}v=0.$\PfEnd
+If $q\Par{T}v=0\Rightarrow s\Par{T}v=0.$ Othws, $q\Par{T}v\in\Null\Par{T-\lambda I}{^m}=\Null\Par{T-\lambda I}{^k}\Rightarrow s\Par{T}v=0.$\PfEnd\vspace{2pt}
+\ANote The expo of an irreducible $q\Par{z}$ in the factoriz of $m_T$ is the smallest $m$ suth $q^m\Par{T}\Big|{_{\nullp q\SmallPar{T}}}=0.$
 \SepLine
 
-\Anchor{8B9}\ProblemN{B.9}{
-	\TextA{Supp $A,C$ are block diag matrices, and $A_k,C_k$ are of the same size $n_k$ \,for $k\in\Bra{1,\dots,m}.$}
-	\TextA{Show $AC$ is block diag and the $k^{\text{th}}$ block on the diag of $AC$ is $A_kC_k.$}
-}Let $A=\Mt{S},C=\Mt{T},AC=\Mt{ST}\in\Fbb^{n,n},$ where $n=n_1+\dots+n_m.$\parSol{}
-Let $B_1=\Par{e_1,\cdots,e_{n_1}},$ and $B_{k}=\Par{e_{n_1\,+\,\cdots\,+\,n_{k-1}+1},\cdots,e_{n_1\,+\,\cdots\,+\,n_k}}$ for $k\in\Bra{2,\dots,m}.$\vspace{2pt}\parSol{}
-Let each $U_k=\spn B_k$ invard $S,T.$ Becs $\Mt{S\mmid_{U_k},B_k}=A_k,\Mt{T\mmid_{U_k},B_k}=C_k.$\vspace{2pt}\parSol{}
-Now $\Mt[\Sbra]{\Par{ST}\Big|{_{U_k}}}=\Mt{S\mmid_{U_k}T\mmid_{U_k}}=A_kC_k.$\PfEnd
+\Anchor{8C12}\ProblemN{C.12}{
+	\TextA{Supp $\Fbb=\Cbb,$ $T\in\Lm{V},$ and $m_T$ has no repeated zeros. Prove $T$ diag. \hfill\tgnr\FontNorm By (4E B.6).}
+}Supp $m_T\Par{z}=\Par{z-\lambda_1}\cdots\Par{z-\lambda_m}$ for disti $\lambda.$ Let $G_j=G\Par{\lambda_j,T}$ invard $T.$\parSol{}
+Fix one $j.$ Supp $v\in G_j$ and $u=\Par{T-\lambda_j}v.$ We show $u=0,$ then $v\in E\Par{\lambda_j,T}.$\parSol{}
+Let $q_j\Par{z}=\prod_{i\neq j}^m\Par{z-\lambda_i}.$ Then $q_j\Par{T}\Par{T-\lambda_jI}v=q_j\Par{T\mmid_{G_j}}u.$ \,又 Each $\Par{T\mmid_{G_j}-\lambda_kI}$ inv.\PfEnd
 \SepLine
+
+%\Anchor{8B9}\ProblemN{B.9}{
+%	\TextA{Supp $A,C$ are block diag matrices, and $A_k,C_k$ are of the same size $n_k$ \,for $k\in\Bra{1,\dots,m}.$}
+%	\TextA{Show $AC$ is block diag and the $k^{\text{th}}$ block on the diag of $AC$ is $A_kC_k.$}
+%}Let $A=\Mt{S},C=\Mt{T},AC=\Mt{ST}\in\Fbb^{n,n},$ where $n=n_1+\dots+n_m.$\parSol{}
+%Let $B_1=\Par{e_1,\cdots,e_{n_1}},$ and $B_{k}=\Par{e_{n_1\,+\,\cdots\,+\,n_{k-1}+1},\cdots,e_{n_1\,+\,\cdots\,+\,n_k}}$ for $k\in\Bra{2,\dots,m}.$\vspace{2pt}\parSol{}
+%Let each $U_k=\spn B_k$ invard $S,T.$ Becs $\Mt{S\mmid_{U_k},B_k}=A_k,\Mt{T\mmid_{U_k},B_k}=C_k.$\vspace{2pt}\parSol{}
+%Now $\Mt[\Sbra]{\Par{ST}\Big|{_{U_k}}}=\Mt{S\mmid_{U_k}T\mmid_{U_k}}=A_kC_k.$\PfEnd
+%\SepLine
 
 \ProblemB[]{
 	\TextB{Supp $T\in\Lm{V}$ and $U$ is invarspd $T.$ Supp $\lambda_1,\dots,\lambda_m$ are the disti eigvals.}
@@ -4128,7 +4136,7 @@ Thus each $p_k\Par{z}=\Par{z-\lambda_1}{^{d_{1,k}}}\cdots\Par{z-\lambda_n}{^{d_{
 	(2) $\null N^{m-j}\oplus U_{m-j}=\null N^{m-j+1}.$\, (3) $\null I\oplus U_0=\null N.$\TextB{}
 	(1) Let $B_{U_{m-1}}=\Par{v_{1,1},\dots,v_{n_1,1}}.$\, Let $B_{U_{m-2}}=\Par{Nv_{1,1},\dots,Nv_{n_1,1},v_{1,2},\dots,v_{n_2,2}}.$\TextB{}
 	(2) Let $B_{U_{m-j}}=\Par{N^{j-1}v_{1,1},\dots,N^{j-1}v_{n_1,1},\dots,Nv_{1,j-1},\dots,Nv_{n_{j-1},j-1},v_{1,j},\dots,v_{n_j,j}}.$\TextB{}
-	(3) Let $B_{U_0}=\Par{N^{m-1}v_{1,1},\dots,N^{m-1}v_{n_1,1},\dots,Nv_{1,m-1},\dots,Nv_{n_{m-1},m-1},v_{1,m},\dots,v_{n_m,m}}.$ Sum up and done.\PfEnd\TextB{\vspace{-3pt}}
+	(3) Let $B_{U_0}=\Par{N^{m-1}v_{1,1},\dots,N^{m-1}v_{n_1,1},\dots,Nv_{1,m-1},\dots,Nv_{n_{m-1},m-1},v_{1,m},\dots,v_{n_m,m}}.$ Sum up and done.\PfEnd\TextB{\vspace{-2pt}}
 }\SepLine
 
 %\Anchor{8C4e12}\ProblemBnoor{4E C.12}{
