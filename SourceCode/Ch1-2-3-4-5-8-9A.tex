@@ -3404,8 +3404,8 @@ Note that $\i^{1/2}=\frac{\sqrt{2}}{2}+\i\frac{\sqrt{2}}{2},\;\Par[1pt]{{-\i}}{^
 
 \Anchor{5BI9}\ProblemN{I.9}{
 	\TextA{Supp $V$ finide, $T\in\Lm{V},$ and non0 $v\in V.$ Let $p\in\PoFi$ be non0 of smallest deg}
-	\TextA{with $p\Par{T}v=0.$ \,Show every zero of $p$ is eigval of $T.$}
-}Let $p\Par{z}=\Par{z-\lambda}q\Par{z}\Rightarrow p\Par{T}v=0=\Par{T-\lambda I}q\Par{T}v\Rightarrow T\BigPar{q\Par{T}v}=\lambda q\Par{T}v.$\PfEnd
+	\TextA{with $p\Par{T}v=0.$ \,Show every zero of $p$ is eigval of $T.$\hfill\tgnr\FontNorm By div algo, $p$ div the min.}
+}\Or Let $p\Par{z}=\Par{z-\lambda}q\Par{z}\Rightarrow p\Par{T}v=0=\Par{T-\lambda I}q\Par{T}v\Rightarrow T\BigPar{q\Par{T}v}=\lambda q\Par{T}v.$\PfEnd
 \SepLine
 
 \Anchor{8C15}\Anchor{5BII4e7}\Anchor{5BIT1}\ProblemN{\BulletPointX I.\TipsN{1}}{
@@ -3522,7 +3522,7 @@ Note that $\dim V\geqslant 2.$ By (3.A.14) \OR (3.D.16 \OR 4E 3.A.11).\PfEnd
 	\TextA{Define $T\in\Lm{\Fbb^n}:\Par{x_1,\dots,x_n}\mapsto\BigPar{{-a_0\,x_n,\,x_1-a_1\hspace{1pt}x_n,\,\cdots,\,x_{n-1}-a_{n-1}\hspace{1pt}x_n}}.$\vspace{1pt}}
 	\TextA{Show the min $p$ of $T$ is $q\Par{z}=a_0+a_1z+\dots+a_{n-1}z^{n-1}+z^n.$}
 }Becs $Te_1=e_2,\,T^2e_1=e_3,\cdots,\,T^{n-1}e_1=e_n,\,T^ne_1=T^{n-k}e_{k+1}=Te_n=-\Par{a_0\hspace{1pt}e_1+\dots+a_{n-1}\hspace{1pt}e_n}.$\parSol{}
-Let $-T^n=c_0I+c_1T+\dots+c_{n-1}T^{n-1}\Rightarrow$ each $c_k=a_k.$ Becs $n=\dim V.$ No greater deg.\PfEnd
+Let $-T^n=c_0I+c_1T+\dots+c_{n-1}T^{n-1}\Rightarrow$ each $c_k=a_k.$ Becs $n=\dim V.$ No smaller deg.\PfEnd
 \SepLine
 
 \Anchor{5BI4e8}\ProblemBnoor{4E I.8}{
@@ -3788,7 +3788,7 @@ Define $p\Par{z}=\Par{z-\lambda_1}\cdots\Par{z-\lambda_m}.$ Then $\Sbra{p\Par{T}
 Extend to eigvecs $B_V=\Par{v_1,\dots,v_m,w_1,\dots,w_p}\Rightarrow B_{V\XSlash U}=\Par{w_1+U,\dots,w_p+U}.$\parSol{}
 Becs for each $w_k,\:\exists$ eigval $\lambda$ of $T,\:Tw_k=\lambda w_k\Rightarrow\BigPar{T\XSlash U}\Par{w_k+U}=\lambda w_k+U.$\PfEnd\vspace{2pt}\parSol{}
 \Or Becs the min of $T$ is multi of that of $T\XSlash U.$ By [4E 5.62].\PfEnd\vspace{2pt}
-\Anchor{5C4e19}\AComm Exa [5.15] gives a exa of $T\in\Lm{V}$ not diag while $T\mmid_U,T\XSlash U$ diag.\PfEnd
+\Anchor{5C4e19}\AComm In Exa [5.15]: $T\in\Lm{V}$ not diag while $T\mmid_U,T\XSlash U$ diag.\PfEnd
 \SepLine
 
 %\Anchor{5C4e20}\ProblemN{20}{
@@ -4019,9 +4019,8 @@ Becs the char of $T$ \Sbra{See [9.21] for $\Fbb=\Rbb$} is a multi of $m_T,$ whic
 	\TextA{in the factoriz of $m_T$ is the smallest $m\in\Nbp$ suth $\Par{T-\lambda I}{^m}\Big|{_{\:\!G\SmallPar{\:\!\lambda,\,T\:\!}}}=0.$\vspace{2pt}}
 }Let $G=G\Par{\lambda,T},N=\Par{T-\lambda I}\Big|{_G},$ and $N^m=0\neq N^{m-1}\Rightarrow$ the min of $T\mmid_G$ is $s\Par{z}=\Par{z-\lambda}{^m}.$\parSol{}
 Thus $m_T$ is a multi of $s.$ Now we show the expo of $\Par{z-\lambda}$ in $m_T$ is no more than $m.$\parSol{}
-Let $\lambda_1=\lambda$ and $V_{\!\Cbb}=G_\Cbb\oplus U,$ where $G=G\Par{\lambda_1,T},U=G\Par{\lambda_2,T_{\!\Cbb}}\oplus\cdots\oplus G\Par{\lambda_n,T_{\!\Cbb}}.$\parSol{}
-Asum $m_T\Par{z}=\Par{z-\lambda_1}{^{m+k}}\Par{z-\lambda_2}{^{\alpha_2}}\cdots\Par{z-\lambda_n}{^{\alpha_n}},$ where $k\in\Nbp.$\parSol{}
-Let $r\Par{z}=\Par{z-\lambda}{^m}\Par{z-\lambda_2}{^{\alpha_2}}\cdots\Par{z-\lambda_n}{^{\alpha_n}}\Rightarrow r\Par{T}=0.$ Ctradic the min of $m_T.$\PfEnd\vspace{4pt}\parSol{}
+Let $\lambda_1=\lambda.$ Asum $m_{T_{\!\Cbb}}\Par{z}=\Par{z-\lambda_1}{^{m+k}}\Par{z-\lambda_2}{^{\alpha_2}}\cdots\Par{z-\lambda_n}{^{\alpha_n}},$ where $k\in\Nbp.$\parSol{}
+Let $r\Par{z}=\Par{z-\lambda}{^m}\Par{z-\lambda_2}{^{\alpha_2}}\cdots\Par{z-\lambda_n}{^{\alpha_n}}\Rightarrow r\Par{T}=0.$ Ctradic the min of $m_{T_{\!\Cbb}}.$\PfEnd\vspace{4pt}\parSol{}
 \Or Let $m_T\Par{z}=\Par{z-\lambda}{^m}q\Par{z},$ with $q\Par{\lambda}\neq0.$ We show $\Null\Par{T-\lambda I}{^m}\supseteq\Null\Par{T-\lambda I}{^{m+1}}.$\parSol{}
 Supp $v\in\Null\Par{T-\lambda I}{^{m+1}}\Longleftrightarrow \Par{T-\lambda I}{^m}v\in\Null\Par{T-\lambda I}=E\Par{\lambda,T}.$\parSol{}
 Then $0=m_T\Par{T}v=q\Par{T}\Sbra{\Par{T-\lambda I}{^m}v}=q\Par{\lambda}\Sbra{\Par{T-\lambda I}{^m}v}\Rightarrow v\in\Null\Par{T-\lambda I}{^m}.$\vspace{2pt}\parSol{}
@@ -4123,11 +4122,20 @@ Thus each $p_k\Par{z}=\Par{z-\lambda_1}{^{d_{1,k}}}\cdots\Par{z-\lambda_n}{^{d_{
 %}Get such $m.$ Becs $N^{m+1}=0.$ 又 $N^{m}\neq0.$\PfEnd
 %\SepLine
 
-\Anchor{8C4e12}\ProblemBnoor{4E C.12}{
-	\TextA{Supp $T\in\Lm{V}$ diag. Show $\Mt{T}$ diag wrto any Jordan $B_V.$}
-}By Exe (4E C.11), each $v_k$ of a Jordan $B_V$ is a gigvec; so is an eigvec, by Exe (4E A.15).\PfEnd\vspace{2pt}\parSol{}
-\Or Let $A$ be a Jordan block diag matrix of $T.$ By Exe (D.3) and [4E 5.62].\PfEnd
-\SepLine
+\Anchor{8N8.55}\ProblemBX[]{\NoteForSmall{[8.55]}}{
+	Another proof: Supp $N^m=0\neq N^{m-1}.$ Let each $\null N^{k+1}=\null N^k\oplus U_k.$\TextB{}
+	(1) $\null N^{m-1}\oplus U_{m-1}=\null N^m=\Par{\null N^{m-2}\oplus U_{m-2}}\oplus U_{m-1}.$\TextB{}
+	(2) $\null N^{m-j}\oplus U_{m-j}=\null N^{m-j+1}.$\, (3) $\null I\oplus U_0=\null N.$\TextB{}
+	(1) Let $B_{U_{m-1}}=\Par{v_{1,1},\dots,v_{n_1,1}}.$\, Let $B_{U_{m-2}}=\Par{Nv_{1,1},\dots,Nv_{n_1,1},v_{1,2},\dots,v_{n_2,2}}.$\TextB{}
+	(2) Let $B_{U_{m-j}}=\Par{N^{j-1}v_{1,1},\dots,N^{j-1}v_{n_1,1},\dots,Nv_{1,j-1},\dots,Nv_{n_{j-1},j-1},v_{1,j},\dots,v_{n_j,j}}.$\TextB{}
+	(3) Let $B_{U_0}=\Par{N^{m-1}v_{1,1},\dots,N^{m-1}v_{n_1,1},\dots,Nv_{1,m-1},\dots,Nv_{n_{m-1},m-1},v_{1,m},\dots,v_{n_m,m}}.$ Sum up and done.\PfEnd\TextB{\vspace{-3pt}}
+}\SepLine
+
+%\Anchor{8C4e12}\ProblemBnoor{4E C.12}{
+%	\TextA{Supp $T\in\Lm{V}$ diag. Show $\Mt{T}$ diag wrto any Jordan $B_V.$}
+%}Each $v_k$ of a Jordan $B_V$ is a gigvec; so is an eigvec, by Exe (B.5).\PfEnd\vspace{2pt}\parSol{}
+%\Or Let $A$ be a Jordan block diag matrix of $T.$ By Exe (D.3) and [4E 5.62].\PfEnd
+%\SepLine
 
 \Anchor{8D8}\ProblemN{D.8}{
 	\TextA{Supp $\Fbb=\Cbb,$ and $T\in\Lm{V}.$}
@@ -4143,8 +4151,7 @@ ${}{^\neg}P\Rightarrow{}{^\neg}Q:$ \;If $\exists$ two or more eigvals of $T\mmid
 ${}{^\neg}Q\Rightarrow{}{^\neg}P:$ \;Supp $T$ has only one eigval. Let
 $m_T\Par{z}=\Par{z-\lambda}{^m}$ with $m<\dim V.$\par\quad
 \Blind{${}{^\neg}Q\Rightarrow{}{^\neg}P:$ \;}Becs $\exists$ Jordan $B_V=\Par{\underbrace{v_{1,1},\cdots,v_{m_1,1}}_{\text{bss for } U},\underbrace{v_{1,2},\cdots,v_{m_2,2},\cdots,v_{1,k},\cdots,v_{m_k,k}}_{\text{bss for }W}}$ for $T.$\PfEnd\vspace{4pt}
-\SepLine\ChEnd
-\pagebreak
+\SepLine
 
 \ChDecl{Ch9A}{9.A}{\quad{\ANote {\FontSmall $V$ denotes a finide non0 vecsp over $\Fbb.$}}}
 
