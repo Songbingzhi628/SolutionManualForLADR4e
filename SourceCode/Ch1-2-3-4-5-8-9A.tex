@@ -786,9 +786,10 @@ Then both $W$ and $V$ have a non0 elem.\par\quad\HII\Hb
 (a) If $\Lm{V,W}=\zeroSubs,$ then by Exa (I), $V$ might not be vecsp.\par\quad\HIII
 (b) If not.\PfEnd
 \SepLine
-\ChEnd
+\ChEnd\pagebreak
 
-\vfill\ChDecl{Ch3B}{3$\cdot$B}{\quad{\small\textbf{注意\,:}\;这里我将3.D可逆性、同构部分前置。}}
+
+\ChDecl{Ch3B}{3$\cdot$B}{\quad{\small\textbf{注意\,:}\;这里我将3.D可逆性、同构部分前置。}}
 
 \vspace{4pt}
 
@@ -805,24 +806,24 @@ Then both $W$ and $V$ have a non0 elem.\par\quad\HII\Hb
 %}$a_1 Tv_1+\dots+a_n Tv_n=0=T\BigBigPar{{\sum_{i=1}^n a_i v_i}}\Longleftrightarrow \sum_{i=1}^n a_i v_i=0\Longleftrightarrow a_1=\dots=a_n=0.$\PfEnd
 %\SepLine
 
-\ProblemN{\Anchor{3B10}{10}} {
-	\TextA{Supp $\Span{v_1,\dots,v_n}=V$. Show $\Span{Tv_1,\dots,Tv_n}=\range T$.}
-}(a) $\range T=\Bra{Tv:v\in\Span{v_1,\dots,v_n}}\Rightarrow Tv_1,\dots,Tv_n\in\range T.$ By [2.7].\parSol{\Ha}
-\Or $\Span{Tv_1,\dots,Tv_n}\ni a_1 Tv_1+\dots+a_n Tv_n=T\Par{a_1 v_1+\dots+a_n v_n}\in\range T.$\parSol{}
-(b) $\forall w\in\range T,w=Tv,\exists\,v\in V\Rightarrow\exists\,a_i\in\Fbb,v=\sum_{i=1}^na_i v_i,w=a_1 Tv_1+\dots+a_n Tv_n.$\PfEnd
-\SepLine
+%\ProblemN{\Anchor{3B10}{10}} {
+%	\TextA{Supp $\Span{v_1,\dots,v_n}=V$. Show $\Span{Tv_1,\dots,Tv_n}=\range T$.}
+%}(a) $\range T=\Bra{Tv:v\in\Span{v_1,\dots,v_n}}\Rightarrow Tv_1,\dots,Tv_n\in\range T.$ By [2.7].\parSol{\Ha}
+%\Or $\Span{Tv_1,\dots,Tv_n}\ni a_1 Tv_1+\dots+a_n Tv_n=T\Par{a_1 v_1+\dots+a_n v_n}\in\range T.$\parSol{}
+%(b) $\forall w\in\range T,w=Tv,\exists\,v\in V\Rightarrow\exists\,a_i\in\Fbb,v=\sum_{i=1}^na_i v_i,w=a_1 Tv_1+\dots+a_n Tv_n.$\PfEnd
+%\SepLine
 
 %\ProblemN{11}{
 %	\TextB{Supp $S_1,\dots,S_n$ are liney and inje suth $S_1S_2\cdots S_n$ makes sense. Prove $S_1S_2\cdots S_n$ inje.}
 %}$S_1S_2\cdots S_nv=0\Rightarrow S_2\cdots S_nv=0\Rightarrow\cdots\Rightarrow S_nv=0\Rightarrow v=0.$\PfEnd
 %\SepLine
 
-\Anchor{5A4e33}\ProblemBnoor{4E 5.A.33}{
-	\TextB{Supp $T\in\Lm{V},m\in\Nbp.$ Prove $T$ inje $\Longleftrightarrow T^m$ inje, and $T$ surj $\Longleftrightarrow$ $T^m$ surj.}
-}(a) $T^m$ inje $\Rightarrow$ if $Tv=0,$ then $T^{m-1} Tv=T^m v=0\Rightarrow v=0,$ thus $T$ inje. \,Convly immed.\vspace{2pt}\parSol{}
-(b) $T^m$ surj $\Rightarrow\forall u\in V,\exists\,v\in V\Rightarrow\exists\,w=T^{m-1}v,\;T^m v=u=Tw.$\parSol{\Hb}
-$T$ surj $\Rightarrow\forall u\in V,\exists\,v_1,\dots,v_m\in V,\,T\Par{v_1}=T^2v_2=\cdots=T^m v_m=u.$\PfEnd
-\SepLine
+%\Anchor{5A4e33}\ProblemBnoor{4E 5.A.33}{
+%	\TextB{Supp $T\in\Lm{V},m\in\Nbp.$ Prove $T$ inje $\Longleftrightarrow T^m$ inje, and $T$ surj $\Longleftrightarrow$ $T^m$ surj.}
+%}(a) $T^m$ inje $\Rightarrow$ if $Tv=0,$ then $T^{m-1} Tv=T^m v=0\Rightarrow v=0,$ thus $T$ inje. \,Convly immed.\vspace{2pt}\parSol{}
+%(b) $T^m$ surj $\Rightarrow\forall u\in V,\exists\,v\in V\Rightarrow\exists\,w=T^{m-1}v,\;T^m v=u=Tw.$\parSol{\Hb}
+%$T$ surj $\Rightarrow\forall u\in V,\exists\,v_1,\dots,v_m\in V,\,T\Par{v_1}=T^2v_2=\cdots=T^m v_m=u.$\PfEnd
+%\SepLine
 
 %\ProblemN{\Anchor{3B16}{16}}{
 %	\TextA{Supp $T\in\Lm{V}$ suth $\null T,\range T$ are finide. Prove $V$ is finide.}
@@ -852,10 +853,8 @@ $T$ surj $\Rightarrow\forall u\in V,\exists\,v_1,\dots,v_m\in V,\,T\Par{v_1}=T^2
 %Define $T\in\Lm{V,W}$ by $T\Par{a_1 v_1+\dots+a_n v_n+b_1 u_1+\dots+b_m u_m}=a_1 w_1+\dots+a_n w_n.$\PfEnd
 %\SepLine
 
-\pagebreak
-
 \Anchor{3BT1}\ProblemBX[]{\TipsN{1}}{
-	\TextA{Supp $U$ is a subsp of $V.$ Then $\forall T\in\Lm{V,W},U\cap\null T=\null T\mmid_U.$\vspace{0pt}}
+	\TextA{Supp $U$ is a subsp of $V.$ Then for $T\in\Lm{V,W},\:U\cap\null T=\null T\mmid_U.$\vspace{0pt}}
 }%Note that $U\cap\null T\subseteq\null T\mmid_U.$ On the other hand, supp $u\in\null T\mmid_U\subseteq U.$\parSol{}
 %Then $T\mmid_U\Par{u}=0$ makes sense and equals $Tu.$ Now $Tu=0\Rightarrow u\in\null T.$\PfEnd
 
@@ -901,18 +900,18 @@ Now $\forall v\in V,\exists\,!\,u_v\in U,\Par{x_v,y_v}\in X\times Y,v=u_v+x_v+y_
 \uline{Then $T=T\circ i.$} Becs $\forall v\in V,T\Par{v}=T\Par{u_v+x_v+y_v}=T\Par{u_v}=T\Par{u_v+x_v}=T\BigPar{i\Par{v}}=\Par{T\circ i}\Par{v}.$\par
 \SepLine
 
-\Anchor{3BT4}\BulletPointX\TipsN{4}\,\,\,Supp $T\in\Lm{V,W},T\neq 0.$ Let $B_{\range T}=\Par{Tv_1,\dots,Tv_n}.$\TextB{}
-By (3.A.4), $R=\Par{v_1,\dots,v_n}$ is liney indep in $V.$ Let $\spn R=U.$ We will prove $U\oplus\null T=V.$\TextB{\vspace{2pt}}
-(a) $T{\BigBigPar{{\sum_{i=1}^n a_i v_i}}}=0\Longleftrightarrow\sum_{i=1}^n a_i Tv_i=0\Longleftrightarrow a_1=\dots=a_n=0.$ Thus $U\cap\null T=\zeroSubs.$\TextB{\vspace{4pt}}
-(b) $Tv=\sum_{i=1}^n a_i Tv_i\Longleftrightarrow v-\sum_{i=1}^n a_i v_i\in\null T\Longleftrightarrow v=\BigBigPar[0pt]{v-\sum_{i=1}^n a_i v_i}+\BigBigPar{{\sum_{i=1}^n a_i v_i}}.$\par\vspace{2pt}\IndentB{}\Hb{}
-Thus $U+\null T=V.$ \;\Or $\range T=\Bra{Tu:u\in U}=\range T\mmid_U.$ Using Exe (12).\PfEnd\vspace{2pt}
-\ACoro Convly, if $U\oplus\null T=V$ and $B_U=\Par{v_1,\dots,v_n},$ then $B_{\range T}=\Par{Tv_1,\dots,Tv_n}.$\parCor
-Becs $\range T=\range T\mmid_U=\Span{Tv_1,\dots,Tv_n},$ 又 $T$ is inje.
+\Anchor{3BT4}\BulletPointX\TipsN{4}\,\,\,Let $B_{\range T}=\Par{Tv_1,\dots,Tv_n}\Rightarrow R=\Par{v_1,\dots,v_n}$ is liney indep in $V.$ Let $\spn R=U.$\TextB{\vspace{3pt}}
+\IndentTipsN{4}(a) $T{\BigBigPar{{\sum_{i=1}^n a_i v_i}}}=0\Longleftrightarrow\sum_{i=1}^n a_i Tv_i=0\Longleftrightarrow a_1=\dots=a_n=0.$ Thus $U\cap\null T=\zeroSubs.$\TextB{\vspace{4pt}}
+\IndentTipsN{4}(b) $Tv=\sum_{i=1}^n a_i Tv_i\Longleftrightarrow v-\sum_{i=1}^n a_i v_i\in\null T\Longleftrightarrow v=\BigBigPar[0pt]{v-\sum_{i=1}^n a_i v_i}+\BigBigPar{{\sum_{i=1}^n a_i v_i}}.$\par\vspace{2pt}\IndentB{}\Hb{}
+\IndentTipsN{4}Thus $U+\null T=V.$ \;\Or $\range T=\Bra{Tu:u\in U}=\range T\mmid_U.$ Using Exe (12).\PfEnd\vspace{4pt}
+\IndentTipsN{4}\ACoro Convly if $U\oplus\null T=V$ and $B_U=\Par{v_1,\dots,v_n},$ then $B_{\range T}=\Par{Tv_1,\dots,Tv_n}.$
+%\parCor
+%\IndentTipsN{4}Becs $\range T=\range T\mmid_U=\Span{Tv_1,\dots,Tv_n},$ 又 $T\mmid_U$ is inje.
 \SepLine
 
 \Anchor{3BT5}\ProblemBX[]{\TipsN{5}}{
 	Supp $S\in\Lm{U,V}$ is surj. Define $\mB\in\Lm[\BigPar]{\Lm{V,W},\Lm{U,W}}$ by $\mB\Par{T}=TS.$\TextA{}
-	Then $\mB$ is inje. Becs {$\mB\Par{T}=TS=0\Longleftrightarrow T\mmid_{\range S}=0.$ \;\Or $\range TS=\range T=\zeroSubs.$}\TextA{\vspace{-3pt}}
+	Then $\mB$ is inje. Becs {$\mB\Par{T}=TS=0\Longleftrightarrow T\mmid_{\range S}=0.$}\TextA{\vspace{-3pt}}
 }\SepLine
 
 %\ProblemB{
@@ -923,12 +922,12 @@ Becs $\range T=\range T\mmid_U=\Span{Tv_1,\dots,Tv_n},$ 又 $T$ is inje.
 %Extend $\Par{v_i}$ to $\Par{v_1,v_2,v_3}$ for each $i$. But none of $\Par{v_1,v_2},\Par{v_1,v_3},\Par{v_2,v_3}$ is a bss of $\null T.$\PfEnd
 %\SepLine
 
-\Anchor{3D4e15}\ProblemBnoor{4E 3.D.15}{
-	\TextB{Supp $T\in\Lm{V}$ and $V=\Span{Tv_1,\dots,Tv_m}$. Prove $V=\Span{v_1,\dots,v_m}$.}
-}Becs $V=\Span{Tv_1,\dots,Tv_m}\Rightarrow T$ surj $\Rightarrow T,T^{-1}$ inv.\parSol{}
-$\forall v\in V,\exists\,a_i\in\Fbb, v=\sum_{i=1}^ma_i Tv_i\Rightarrow T^{-1}v=\sum_{i=1}^ma_i v_i\Rightarrow \range T^{-1}\subseteq\Span{v_1,\dots,v_m}.$\vspace{2pt}\parSol{}
-\Or Reduce to a bss $\Par{Tv_{\:\!\!\alpha_1},\dots,Tv_{\:\!\!\alpha_k}},$ where $k=\dim V,$ each $\alpha_i\in\Bra{1,\dots,m}.$ By (4E 3.D.3).\PfEnd
-\SepLine
+%\Anchor{3D4e15}\ProblemBnoor{4E 3.D.15}{
+%	\TextB{Supp $T\in\Lm{V}$ and $V=\Span{Tv_1,\dots,Tv_m}$. Prove $V=\Span{v_1,\dots,v_m}$.}
+%}Becs $V=\Span{Tv_1,\dots,Tv_m}\Rightarrow T$ surj $\Rightarrow T,T^{-1}$ inv.\parSol{}
+%$\forall v\in V,\exists\,a_i\in\Fbb, v=\sum_{i=1}^ma_i Tv_i\Rightarrow T^{-1}v=\sum_{i=1}^ma_i v_i\Rightarrow \range T^{-1}\subseteq\Span{v_1,\dots,v_m}.$\vspace{2pt}\parSol{}
+%\Or Reduce to $B_V=\Par{Tv_{\:\!\!\alpha_1},\dots,Tv_{\:\!\!\alpha_n}}.$\PfEnd
+%\SepLine
 
 \Anchor{3B4e27}\Anchor{5BI4}\ProblemBnoor{{4E 27}}{
 	\TextB{Supp $P\in\Lm{V}$ and $P^2 = P$. Prove $V=\null P\oplus\range P$.\vspace{0pt}}
@@ -967,61 +966,6 @@ And $Y\ni w=a_1 w_1+\dots+a_m w_m=a_1 Tv_1+\dots+a_m Tv_m\in\range T.$ \;Hence $
 %While $w_2=Tv_2=\lambda Sv_2=2\lambda w_2\Rightarrow \lambda=\frac{\;1\;}{2}$. Ctradic.\PfEnd
 %\SepLine
 
-\ProblemN{\Anchor{3B22}{22}}{
-	\TextA{Supp $U,V$ are finide, $S\in\Lm{V,W},T\in\Lm{U,V}$.}
-	\TextA{Prove $\dim \null ST\leqslant\dim\null S+\dim\null T$.\vspace{0pt}}
-}We show $\dim \null ST=\dim \null S\mmid_{\range T} + \dim \null T.$\parSol{}
-Becs (a) \uline{$\range T\mmid_{\null ST}=\range T\cap\null S=\null S\mmid_{\range T}\,,$}\parSol{}
-\Blind{Becs} (b) \uline{$\null T\mmid_{\null ST}=\null T\cap\null ST=\null T.$} By [3.22]\PfEnd\parSol{\vspace{6pt}}
-%(a) $Tu\in\range T\mmid_{\null ST}\Longleftrightarrow S\Par{Tu}=0\Longleftrightarrow Tu\in\null S\cap\range T=\null S\mmid_{\range T}.$\par\quad
-%(b) $u\in\null T\mmid_{\null ST}=\null T\cap\null ST\Longleftrightarrow Tu=0\Longleftrightarrow u\in\null T.$\PfEnd\vspace{6pt}\quad
-\Or \NOTICE that \uline{$u\in\null ST\Longleftrightarrow S\Par{Tu}=0\Longleftrightarrow Tu\in\null S.$}\parSol{}
-\Blind{\Or}Thus \uline{$\Bra{u\in U:Tu\in\null S}=\mathcal{K}_{\!\null S\;\cap\;\range T}=\null ST.$}\parSol{}
-\Blind{\Or}By Exe (4E 21), $\dim\null ST=\dim\null T+\Dim\BigPar{\null S\cap\range T}.$\PfEnd\vspace{4pt}
-\ACoro (1) $T$ surj $\Rightarrow\dim\null ST=\dim\null S+\dim\null T.$\parCor
-(2) $T$ inv $\Rightarrow\dim\null ST=\dim\null S,\;\null ST=\null T.$\parCor
-(3) $S$ inje $\Rightarrow\dim\null ST=\dim\null T.$\vspace{-3pt}
-\SepLine\pagebreak
-
-\ProblemN{\Anchor{3B23}{23}}{
-	\TextA{Supp $V$ is finide, $S\in\Lm{V,W},T\in\Lm{U,V}$.}
-	\TextA{Prove $\dim\range ST\leqslant\min\!\Bra{{\dim \range S, \dim\range T}}$.}
-	\AComm If $\dim V=\dim U.$ Then $\dim\null ST\geqslant\max\!\Bra{{\dim\null S,\dim\null T}}.$\TextA{}\vspace{2pt}
-}\NOTICE that \uline{$\range ST=\Bra{Sv:v\in\range T}=\range S\mmid_{\range T}.$}\parSol{}
-Let $\range ST=\Span[\BigPar]{Su_1,\dots,Su_{\dim\range T}},$ where $B_{\range T}=\BigPar{u_1,\dots,u_{\dim\range T}}.$\parSol{}
-$\dim\range ST\leqslant \dim\range T$
-又 $\dim\range ST\leqslant \dim\range S.$\PfEnd\parSol{\vspace{4pt}}
-\Or \uline{$\dim\range ST=\dim\range S\mmid_{\range T}=\dim\range T-\dim\null S\mmid_{\range T}$}${}\leqslant \range T.$\PfEnd\parSol{}
-\AComm $\dim\range ST=\dim U-\dim\null ST=\dim \range T\mmid_{U}-\dim\range T\mmid_{\null ST}.$\par\vspace{4pt}
-\ACoro (1) $S\mmid_{\range T}$ inje $\Longleftrightarrow\dim\range ST=\dim\range T.$\parCor
-(2) Let $X\oplus\null S=V.$ Then $X\subseteq\range T\Longleftrightarrow\range ST=\range S.$\vspace{-2pt}\parCor
-\Blind{(2)} And $T$ is surj $\Rightarrow\range ST=\range S.$
-\SepLine
-
-\Anchor{3B4e24}\ProblemB{
-	%\PrePa\TextB{Supp $\dim V = 5,$ and $ST = 0$ where $S,T\in\Lm{V}$. Prove $\dim\range TS\leqslant 2.$\vspace{2pt}}
-	\PrePa\TextB{Supp $\dim V=n,$ \,$ST=0$ where $S,T\in\Lm{V}.$ Prove $\dim\range TS\leqslant\Big\lfloor${\LARGE$\frac{\,n\,}{2}$}$\Big\rfloor.$}
-	\PrePb\TextB{Give an exa of such $S, T$ with $n=5$ and $\dim\range TS = 2$.\vspace{1pt}}
-}Note that $\dim\range TS\leqslant\min\!\BigBra{\!\dim\range T,\dim\range S}.$ We prove by ctradic.\par\vspace{1pt}\quad
-%(a) $\dim\range TS\leqslant\min\!\Bra{\overbrace{\dim \range S}^{5\,-\,\dim\null T}, \overbrace{\dim\range T}^{5\,-\,\dim\null S}}.$\par\quad\Ha
-%We show $\dim\range TS\leqslant 2$ by ctradic. Asum $\dim\range TS\geqslant 3$.\par\quad\Ha
-%Then $\min\!\Bra{5-\dim\null T,5-\dim\null S}\geqslant 3\Rightarrow\max\!\Bra{{\dim\null T,\dim\null S}}\leqslant 2$.\par\quad\Ha
-%又 $\dim\null ST=5\leqslant\dim\null S+\dim\null T\leqslant 4.$ Ctradic.\vspace{6pt}\par\quad\Ha
-%\Or $\MathRightBrace{l}{\dim\null S=5-\dim\range S\\ \dim\range TS\leqslant\dim\range S}\Rightarrow\dim\null S\leqslant 5-\dim\range TS.$\par\vspace{2pt}\quad\Ha
-%And $ST=0\Rightarrow\range T\subseteq\null S\Rightarrow\dim\range TS\leqslant\dim\range T\leqslant\dim\null S.$\PfEnd\vspace{6pt}\quad
-Asum $\dim\range TS\geqslant \Big\lfloor${\Large$\frac{\,n\,}{2}$}$\Big\rfloor+1.$ \,Then $\min\!\BigBra{n-\dim\null T,n-\dim\null S}\envFontDefault\geqslant \Big\lfloor${\Large$\frac{\,n\,}{2}$}$\Big\rfloor+1$\vspace{1pt}\par\quad
-又 $\dim\null ST=n\leqslant\dim\null S+\dim\null T\;\Big|\hspace{-0.7pt}\Rightarrow\max\!\BigBra{\!\dim\null T,\dim\null S}\envFontDefault\leqslant \Big\lceil${\Large$\frac{\,n\,}{2}$}$\Big\rceil-1.$\par\vspace{1pt}\quad
-Thus \;$n\leqslant 2\BigBigPar{\Big\lceil${\Large$\frac{\,n\,}{2}$}$\Big\rceil-1}\Rightarrow{}${\Large$\frac{\,n\,}{2}$}${}\leqslant\Big\lceil${\Large$\frac{\,n\,}{2}$}$\Big\rceil-1$. \;Ctradic.\PfEnd\vspace{4pt}\quad
-\Or $\dim\null S=n-\dim\range S\leqslant n-\dim\range TS.$ \;又 $ST=0\Rightarrow\range T\subseteq\null S.$\par\quad
-$\dim\range TS\leqslant\dim\range T\leqslant\dim\null S\leqslant n-\dim\range TS.$ \;Thus \;$2\dim\range TS\leqslant n.$\PfEnd\vspace{5pt}\quad
-\Or Becs $\dim\range TS\leqslant\Big\lfloor${\Large$\frac{\,n\,}{2}$}$\Big\rfloor,$ and $\Big\lfloor${\Large$\frac{\,n\,}{2}$}$\Big\rfloor+\Big\lceil${\Large$\frac{\,n\,}{2}$}$\Big\rceil=n.$\par\vspace{1pt}\quad
-We show $\dim\null TS\geqslant\Big\lceil${\Large$\frac{\,n\,}{2}$}$\Big\rceil.$ Note that $\dim\null S+\dim\null T\geqslant n.$\par\quad
-$\dim\null S+\dim\null T\mmid_{\range S}=\dim\null TS.$ \;If $\dim\null S\geqslant\Big\lceil${\Large$\frac{\,n\,}{2}$}$\Big\rceil.$ Then done.\par\vspace{1pt}\quad
-Othws, $\dim\null S\leqslant\Big\lceil${\Large$\frac{\,n\,}{2}$}$\Big\rceil-1\Rightarrow\dim\null T\geqslant n-\dim\null S\geqslant n-\Big\lceil${\Large$\frac{\,n\,}{2}$}$\Big\rceil+1=\Big\lfloor${\Large$\frac{\,n\,}{2}$}$\Big\rfloor+1\geqslant\Big\lceil${\Large$\frac{\,n\,}{2}$}$\Big\rceil.$\par\vspace{2pt}\quad
-Thus $\dim\null TS\geqslant\max\!\Bra{{\dim\null S,\dim\null T}}=\Big\lceil${\Large$\frac{\,n\,}{2}$}$\Big\rceil.$\PfEnd\vspace{4pt}\quad
-\AExa Define $T: \; v_1\mapsto 0, \;\;\, v_2\mapsto 0, \;\;\; v_i\mapsto v_i\;;$ \;\; $S: \; v_1\mapsto v_4, \; v_2\mapsto v_5, \;\; v_i\mapsto 0\;;\;\; i=3,4,5.$\par\vspace{-2pt}
-\SepLine
-
 \Anchor{3B20}\Anchor{3B21}\ProblemN{20, 21}{
 	(a) \TextA{Prove if $ST=I\in\Lm{V},$ then $T$ is inje and $S$ is surj.}
 	(b) \TextA{Supp $T\in\Lm{V,W}.$ Prove if $T$ is inje, then $\exists$ surj $S\in\Lm{W,V},\;ST=I$.}
@@ -1038,7 +982,62 @@ Note that $S\mmid_U:U\rightarrow V$ is iso. Define $T=\BigPar{S\mmid_U}{^{-1}},$
 Then $ST=S\circ\BigPar{S\mmid_U}{^{-1}}=S\mmid_U\circ\BigPar{S\mmid_U}{^{-1}}=I_V.$\par\vspace{4pt}\quad\Hc
 \Or \Sbra[3pt]{{\tgsl Req $V$ Finide}} \;Let $B_{\range S}=B_{V}=\Par{Sw_1,\dots,Sw_n}\Rightarrow\Span{w_1,\dots,w_n}\oplus\null S=W.$\par\quad\Hc
 Define $T\in\Lm{V,W}$ by $T\Par{Sw_i}=w_i.$ Now $ST\BigPar{a_1Sw_1+\dots+a_nSw_n}=\Par{a_1Sw_1+\dots+a_nSw_n}.$\PfEnd
+\SepLine\pagebreak
+
+\ProblemN{\Anchor{3B22}{22}}{
+	\TextA{Supp $U,V$ are finide, $S\in\Lm{V,W},T\in\Lm{U,V}$.}
+	\TextA{Prove $\dim \null ST\leqslant\dim\null S+\dim\null T$.\vspace{0pt}}
+}We show $\dim \null ST=\dim \null S\mmid_{\range T} + \dim \null T.$\parSol{}
+Becs (a) \uline{$\range T\mmid_{\null ST}=\range T\cap\null S=\null S\mmid_{\range T}\,,$}\parSol{}
+\Blind{Becs} (b) \uline{$\null T\mmid_{\null ST}=\null T\cap\null ST=\null T.$} By [3.22]\PfEnd\parSol{\vspace{6pt}}
+%(a) $Tu\in\range T\mmid_{\null ST}\Longleftrightarrow S\Par{Tu}=0\Longleftrightarrow Tu\in\null S\cap\range T=\null S\mmid_{\range T}.$\par\quad
+%(b) $u\in\null T\mmid_{\null ST}=\null T\cap\null ST\Longleftrightarrow Tu=0\Longleftrightarrow u\in\null T.$\PfEnd\vspace{6pt}\quad
+\Or \NOTICE that \uline{$u\in\null ST\Longleftrightarrow S\Par{Tu}=0\Longleftrightarrow Tu\in\null S.$}\parSol{}
+\Blind{\Or}Thus \uline{$\Bra{u\in U:Tu\in\null S}=\mathcal{K}_{\!\null S\;\cap\;\range T}=\null ST.$} By Exe (4E 21).\PfEnd\vspace{6pt}
+\ACoro (1) $T$ surj $\Rightarrow\dim\null ST=\dim\null S+\dim\null T.$\parCor
+(2) $T$ inv $\Rightarrow\dim\null ST=\dim\null S,\;\null ST=\null T.$\parCor
+(3) $S$ inje $\Rightarrow\dim\null ST=\dim\null T.$\vspace{-3pt}
 \SepLine
+
+\ProblemN{\Anchor{3B23}{23}}{
+	\TextA{Supp $V$ is finide, $S\in\Lm{V,W},T\in\Lm{U,V}$.}
+	\TextA{Prove $\dim\range ST\leqslant\min\!\Bra{{\dim \range S, \dim\range T}}$.\vspace{2pt}}
+	\AComm If $\dim V=\dim U.$ Then $\dim\null ST\geqslant\max\!\Bra{{\dim\null S,\dim\null T}}.$\TextA{}\vspace{2pt}
+}\NOTICE that \uline{$\range ST=\Bra{Sv:v\in\range T}=\range S\mmid_{\range T}.$}\parSol{}
+Let $\range ST=\Span[\BigPar]{Su_1,\dots,Su_{\dim\range T}},$ where $B_{\range T}=\BigPar{u_1,\dots,u_{\dim\range T}}.$\parSol{}
+$\dim\range ST\leqslant \dim\range T$
+又 $\dim\range ST\leqslant \dim\range S.$\PfEnd\parSol{\vspace{6pt}}
+\Or \uline{$\dim\range ST=\dim\range S\mmid_{\range T}=\dim\range T-\dim\null S\mmid_{\range T}$}${}\leqslant \range T.$\PfEnd\parSol{}
+\AComm $\dim\range ST=\dim U-\dim\null ST=\dim \range T\mmid_{U}-\dim\range T\mmid_{\null ST}.$\par\vspace{6pt}
+\ACoro (1) $S\mmid_{\range T}$ inje $\Longleftrightarrow\dim\range ST=\dim\range T.$\parCor
+(2) Let $X\oplus\null S=V.$ Then $X\subseteq\range T\Longleftrightarrow\range ST=\range S.$\vspace{-2pt}\parCor
+\Blind{(2)} And $T$ is surj $\Rightarrow\range ST=\range S.$
+\SepLine
+
+\Anchor{3B4e24}\ProblemB{
+	%\PrePa\TextB{Supp $\dim V = 5,$ and $ST = 0$ where $S,T\in\Lm{V}$. Prove $\dim\range TS\leqslant 2.$\vspace{2pt}}
+	\PrePa\TextB{Supp $\dim V=n,$ \,$ST=0$ where $S,T\in\Lm{V}.$ Prove $\dim\range TS\leqslant\Big\lfloor${\LARGE$\frac{\,n\,}{2}$}$\Big\rfloor.$}
+	\PrePb\TextB{Give an exa of such $S, T$ with $n=5$ and $\dim\range TS = 2$.\vspace{1pt}}
+}\par\quad
+Note that $\dim\range TS\leqslant\min\!\BigBra{\!\dim\range T,\dim\range S}.$ We prove by ctradic.\par\vspace{2pt}\quad
+%(a) $\dim\range TS\leqslant\min\!\Bra{\overbrace{\dim \range S}^{5\,-\,\dim\null T}, \overbrace{\dim\range T}^{5\,-\,\dim\null S}}.$\par\quad\Ha
+%We show $\dim\range TS\leqslant 2$ by ctradic. Asum $\dim\range TS\geqslant 3$.\par\quad\Ha
+%Then $\min\!\Bra{5-\dim\null T,5-\dim\null S}\geqslant 3\Rightarrow\max\!\Bra{{\dim\null T,\dim\null S}}\leqslant 2$.\par\quad\Ha
+%又 $\dim\null ST=5\leqslant\dim\null S+\dim\null T\leqslant 4.$ Ctradic.\vspace{6pt}\par\quad\Ha
+%\Or $\MathRightBrace{l}{\dim\null S=5-\dim\range S\\ \dim\range TS\leqslant\dim\range S}\Rightarrow\dim\null S\leqslant 5-\dim\range TS.$\par\vspace{2pt}\quad\Ha
+%And $ST=0\Rightarrow\range T\subseteq\null S\Rightarrow\dim\range TS\leqslant\dim\range T\leqslant\dim\null S.$\PfEnd\vspace{6pt}\quad
+Asum $\dim\range TS\geqslant \Big\lfloor${\Large$\frac{\,n\,}{2}$}$\Big\rfloor+1.$ \,Then $\min\!\BigBra{n-\dim\null T,n-\dim\null S}\envFontDefault\geqslant \Big\lfloor${\Large$\frac{\,n\,}{2}$}$\Big\rfloor+1$\vspace{3pt}\par\quad
+又 $\dim\null ST=n\leqslant\dim\null S+\dim\null T\;\Big|\hspace{-0.7pt}\Rightarrow\max\!\BigBra{\!\dim\null T,\dim\null S}\envFontDefault\leqslant \Big\lceil${\Large$\frac{\,n\,}{2}$}$\Big\rceil-1.$\par\vspace{3pt}\quad
+Thus \;$n\leqslant 2\BigBigPar{\Big\lceil${\Large$\frac{\,n\,}{2}$}$\Big\rceil-1}\Rightarrow{}${\Large$\frac{\,n\,}{2}$}${}\leqslant\Big\lceil${\Large$\frac{\,n\,}{2}$}$\Big\rceil-1$. \;Ctradic.\PfEnd\vspace{8pt}\quad
+\Or $\dim\null S=n-\dim\range S\leqslant n-\dim\range TS.$ \;又 $ST=0\Rightarrow\range T\subseteq\null S.$\par\quad
+$\dim\range TS\leqslant\dim\range T\leqslant\dim\null S\leqslant n-\dim\range TS.$ \;Thus \;$2\dim\range TS\leqslant n.$\PfEnd\vspace{8pt}\quad
+\Or Becs $\dim\range TS\leqslant\Big\lfloor${\Large$\frac{\,n\,}{2}$}$\Big\rfloor,$ and $\Big\lfloor${\Large$\frac{\,n\,}{2}$}$\Big\rfloor+\Big\lceil${\Large$\frac{\,n\,}{2}$}$\Big\rceil=n.$\par\vspace{3pt}\quad
+We show $\dim\null TS\geqslant\Big\lceil${\Large$\frac{\,n\,}{2}$}$\Big\rceil.$ Note that $\dim\null S+\dim\null T\geqslant n.$\par\vspace{3pt}\quad
+$\dim\null S+\dim\null T\mmid_{\range S}=\dim\null TS.$ \;If $\dim\null S\geqslant\Big\lceil${\Large$\frac{\,n\,}{2}$}$\Big\rceil.$ Then done.\par\vspace{3pt}\quad
+Othws, $\dim\null S\leqslant\Big\lceil${\Large$\frac{\,n\,}{2}$}$\Big\rceil-1\Rightarrow\dim\null T\geqslant n-\dim\null S\geqslant n-\Big\lceil${\Large$\frac{\,n\,}{2}$}$\Big\rceil+1=\Big\lfloor${\Large$\frac{\,n\,}{2}$}$\Big\rfloor+1\geqslant\Big\lceil${\Large$\frac{\,n\,}{2}$}$\Big\rceil.$\par\vspace{3pt}\quad
+Thus $\dim\null TS\geqslant\max\!\Bra{{\dim\null S,\dim\null T}}=\Big\lceil${\Large$\frac{\,n\,}{2}$}$\Big\rceil.$\PfEnd\vspace{6pt}\quad
+\AExa Define $T: \; v_1\mapsto 0, \;\;\, v_2\mapsto 0, \;\;\; v_i\mapsto v_i\;;$ \;\; $S: \; v_1\mapsto v_4, \; v_2\mapsto v_5, \;\; v_i\mapsto 0\;;\;\; i=3,4,5.$
+\SepLine\pagebreak
 
 \ProblemN{\Anchor{3B24}{24}}{
 	\TextA{Supp {\FontNorm $S\in\Lm{V,M},T\in\Lm{V,W},$} and $\null S\subseteq\null T.$ Prove $\exists\,E\in\Lm{M,W},T=ES$.}
@@ -1127,14 +1126,13 @@ $\MathLeftrightMid{l}{$
 \SepLine
 
 \ProblemN{\Anchor{3B28}28}{
-	\TextA{Supp $T\in\Lm{V,W}.$ Let $\Par{Tv_1,\dots,Tv_m}$ be a bss of $\range T$ and each $w_i=Tv_i.$}
-	\PrePa\TextA{Prove $\exists\,\varphi_1,\dots,\varphi_m\in\Lm{V,\Fbb}$ suth $\forall v\in V,Tv=\varphi_1\Par{v}w_1+\dots+\varphi_m\Par{v}w_m$.\vspace{2pt}}
-	\PrePb{\FontSmall\Sbra{4E 3.F.5}} \TextA{$\forall v\in V,\exists\,!\,\varphi_i\Par{v}\in\Fbb,Tv=\varphi_1\Par{v}w_1+\dots+\varphi_m\Par{v}w_m.$\vspace{1pt}}\Anchor{3F4e5}
+	\TextA{Supp $T\in\Lm{V,W}.$ Let $\Par{Tv_1,\dots,Tv_m}$ be a bss of $\range T$ and each $w_i=Tv_i.$\vspace{2pt}}
+	\PrePa\TextA{Prove $\exists\,\varphi_1,\dots,\varphi_m\in\Lm{V,\Fbb}$ suth $\forall v\in V,Tv=\varphi_1\Par{v}w_1+\dots+\varphi_m\Par{v}w_m$.\vspace{4pt}}
+	\PrePb{\FontSmall\Sbra{4E 3.F.5}} \TextA{$\forall v\in V,\exists\,!\,\varphi_i\Par{v}\in\Fbb,Tv=\varphi_1\Par{v}w_1+\dots+\varphi_m\Par{v}w_m.$\vspace{2pt}}\Anchor{3F4e5}
 	\Blind{\PrePb{\FontSmall\Sbra{4E 3.F.5}}} \TextA{Thus defining each $\varphi_i:V\rightarrow\Fbb.$ \;Show each $\varphi_i\in\Lm{V,\Fbb}.$}
-}{\FontSmall\tgsl The answer for (b) with (b) itself is the answer for (a).}\par\quad
+}{\FontSmall\tgsl The solus to (b) with (b) itself is another solus to (a).}\par\quad
 (b) $\sum_{i=1}^m\varphi_i\Par{u+\lambda v}w_i=T\Par{u+\lambda v}=Tu+\lambda Tv={\BigBigPar{{\sum_{i=1}^m\varphi_i\Par{u}w_i}}}+\lambda{\BigBigPar{{\sum_{i=1}^m\varphi_i\Par{v}w_i}}}.$\PfEnd\vspace{4pt}\quad\Hb
-\Or $\forall v\in V,\exists\,!\,a_i\in\Fbb,Tv=a_1Tv_1+\dots+a_mTv_m.$ Let $B_{\SmallPar[1pt]{\range T}\apostrophe}=\Par{\psi_1, \dots, \psi_m}$.\par\quad\Hb
-Then $\Sbra{T\apostrophe\Par{\psi_{i}}}\Par{v}=\BigPar{\psi_{i}\circ T}\Par{v}=a_i.$ \,Thus each $\varphi_i=\psi_i\circ T=T\apostrophe\Par{\psi_i}\in V\apostrophe.$\PfEnd\vspace{4pt}\quad
+\Or Let $\Par{\psi_1, \dots, \psi_m}$ be a bss of $\Par{\range T}\apostrophe.$ Let each $\varphi_i=T\apostrophe\Par{\psi_i}\in V\apostrophe.$\PfEnd\vspace{4pt}\quad
 (a) $\Span{v_1,\dots,v_m}\oplus\null T=V\Rightarrow\forall v\in V,\exists\,!\,a_i\in\Fbb,u\in\null T,\;v=\sum_{i=1}^m a_i v_i+u.$\par\quad\Ha
 Define $\varphi_i\in\Lm{V,\Fbb}$ by $\varphi_i\Par{v_j}=\delta_{i,j},\;\varphi_i\Par{u}=0$ for all $u\in\null T.$\par\quad\Ha
 Linity: $\forall v,w\in V\,\Sbra{\exists\,!\,a_i,b_i\in\Fbb},\lambda\in\Fbb,\varphi_i\Par{v+\lambda w}=a_i+\lambda b_i=\varphi\Par{v}+\lambda\varphi\Par{w}.$\PfEnd
@@ -1267,17 +1265,6 @@ Thus (a) $\dim\row A=r\leqslant c=\dim\col A,$ and (b) $\dim\col A=c\leqslant r=
 {$\Rightarrow A_{j,k}=d_k' A_{j,1}=c_j A_{1,k}=c_j d_k' A_{1,1}=c_j d_k,$ where $d_k=d_k' A_{1,1}.$}\quad\Or Using CR Factoriz, immed.\PfEnd
 \SepLine
 
-\ProblemN{\Anchor{3C6}{6}}{
-	\TextA{Supp $V,W$ are finide and $T\in\Lm{V,W}.$ Supp $\dim\range T=1.$}
-	\TextA{Prove $\exists\,B_V,B_W,$ all ent of $A=\Mt[\BigPar]{T,B_V,B_W}$ equal $1$.}
-}Let $B_{\null T}=\Par{u_2,\dots,u_n}.$ Extend to a bss $\Par{u_1,u_2,\dots,u_n}$ of $V.$\parSol{}
-Extend to $\Par{Tu_1,w_2,\dots,w_m}$ a bss of $W.$ Let $w_1=Tu_1-w_2-\dots-w_m\Rightarrow B_W=\Par{w_1,\dots,w_m}.$\parSol{}
-Let \,$v_1=u_1,\;v_i=u_1+u_i\Rightarrow B_V=\Par{v_1,\dots,v_n}.$\PfEnd\vspace{3pt}\parSol{}
-\Or Supp $B_{\range T}=\Par{w}.$ \,By {\NOTEFOR} (2.C.15), $\exists\,B_W=\Par{w_1,\dots,w_m},\;w=w_1+\dots+w_m.$\parSol{}
-By \Sbra{2.C {\TIPS}}, $\exists$ a bss $\Par{u_1,\dots,u_n}$ of $V$ suth each $u_k\not\in\null T.$\parSol{}
-Now each $Tu_k\in\range T=\Span{w}\Rightarrow Tu_k=\lambda_k w,\exists\,\lambda_k\in\nonzeroFbb.$ Let each $v_k=\lambda_k^{-1}u_k.$\PfEnd
-\SepLine\pagebreak
-
 \ProblemN{\Anchor{3C5}{5}}{
 	\TextA{Supp $B_W=\Par{w_1,\dots,w_n}$ and $V$ is finide. Supp $T\in\Lm{V,W}$.\vspace{2pt}}
 	\TextA{Prove $\exists\,B_V=\Par{v_1,\dots,v_m},\;\Mt[\BigPar]{T,B_V,B_W}{_{1,\cdot}}=\normalsize\begin{pmatrix}0&\cdots&0\end{pmatrix}$ or $\normalsize\begin{pmatrix}1&0&\cdots&0\end{pmatrix}$.}
@@ -1290,6 +1277,17 @@ Let $v_1=\Frac{u_k}{A_{1,k}}\Rightarrow Tv_1=1w_1+\Frac{A_{2,k}}{A_{1,k}}w_2+\do
 \NOTICE that $Tu_i=A_{1,i}w_1+\dots+A_{n,i}w_n.$ 又 Each $u_i\in\Span{v_1,\dots,v_n}=V.$ Let $B_V=\Par{v_1,\dots,v_n}.$\PfEnd\vspace{4pt}\quad
 \Or Using Exe (4). Let $B_{W\apostrophe}$ be the $B_V.$ Now $\exists\,B_{V\apostrophe}$ suth $\Mt{T\apostrophe,B_{W\apostrophe}\,,B_{V\apostrophe}}{_{\cdot,1}}={\small\begin{pmatrix}1&0&\cdots&0\end{pmatrix}}{^t}$ or ${\small\begin{pmatrix}0&\cdots&0\end{pmatrix}}{^t}.$\par\quad
 Which is equiv to $\exists\,B_V$ \Sbra{Using (3.F.31)} suth $\Mt{T,B_V,B_W}{_{1,\cdot}}={\small\begin{pmatrix}1&0&\cdots&0\end{pmatrix}}$ or ${\small\begin{pmatrix}0&\cdots&0\end{pmatrix}}.$\PfEnd
+\SepLine\pagebreak
+
+\ProblemN{\Anchor{3C6}{6}}{
+	\TextA{Supp $V,W$ are finide and $T\in\Lm{V,W}.$ Supp $\dim\range T=1.$}
+	\TextA{Prove $\exists\,B_V,B_W,$ all ent of $A=\Mt[\BigPar]{T,B_V,B_W}$ equal $1$.}
+}Let $B_{\null T}=\Par{u_2,\dots,u_n}.$ Extend to a bss $\Par{u_1,u_2,\dots,u_n}$ of $V.$\parSol{}
+Extend to $\Par{Tu_1,w_2,\dots,w_m}$ a bss of $W.$ Let $w_1=Tu_1-w_2-\dots-w_m\Rightarrow B_W=\Par{w_1,\dots,w_m}.$\parSol{}
+Let \,$v_1=u_1,\;v_i=u_1+u_i\Rightarrow B_V=\Par{v_1,\dots,v_n}.$\PfEnd\vspace{3pt}\parSol{}
+\Or Supp $B_{\range T}=\Par{w}.$ \,By {\NOTEFOR} (2.C.15), $\exists\,B_W=\Par{w_1,\dots,w_m},\;w=w_1+\dots+w_m.$\parSol{}
+By \Sbra{2.C {\TIPS}}, $\exists$ a bss $\Par{u_1,\dots,u_n}$ of $V$ suth each $u_k\not\in\null T.$\parSol{}
+Now each $Tu_k\in\range T=\Span{w}\Rightarrow Tu_k=\lambda_k w,\exists\,\lambda_k\in\nonzeroFbb.$ Let each $v_k=\lambda_k^{-1}u_k.$\PfEnd
 \SepLine
 
 \Anchor{10A3}\Anchor{3D4e19}\ProblemBnoor{10.A.3, \OR 4E 3.D.19}{
@@ -3201,11 +3199,11 @@ Thus $\Par{T-\lambda I}S=0\Rightarrow\mA\Par{S}=TS=\lambda S$ with $S\neq 0.$\vs
 %\Or Asum $\lambda_1\neq \lambda_2.$ Then $\Par{u,w}$ is liney indep. Thus $\lambda_0-\lambda_1=\lambda_0-\lambda_2.$ Ctradic.\PfEnd
 %\SepLine
 
-\ProblemN{\Anchor{5A26}{26}}{
-	\TextA{Supp $T\in\Lm{V}$ is suth $\forall v\in V,\exists\,!\,\lambda_v\in\Fbb,Tv=\lambda_v v.$ Prove $T=\lambda I.$\hfill\tgnr\FontNorm By Exe (25).}
-}Supp $V$ non0. Becs $\forall v\in V,\exists\,!\,\lambda_v\in\Fbb,Tv=\lambda_v v.$ For any disti non0 $v,w\in V,$\parSol{}
-$T\Par{v+w}=\lambda_{v+w}\Par{v+w}=Tv+Tw=\lambda_v v+\lambda_w w\Rightarrow\Par{\lambda_{v+w}-\lambda_v}v=\Par{\lambda_w-\lambda_{v+w}}w.$\PfEnd
-\SepLine
+%\ProblemN{\Anchor{5A26}{26}}{
+%	\TextA{Supp $T\in\Lm{V}$ is suth $\forall v\in V,\exists\,!\,\lambda_v\in\Fbb,Tv=\lambda_v v.$ Prove $T=\lambda I.$\hfill\tgnr\FontNorm By Exe (25).}
+%}Supp $V$ non0. Becs $\forall v\in V,\exists\,!\,\lambda_v\in\Fbb,Tv=\lambda_v v.$ For any disti non0 $v,w\in V,$\parSol{}
+%$T\Par{v+w}=\lambda_{v+w}\Par{v+w}=Tv+Tw=\lambda_v v+\lambda_w w\Rightarrow\Par{\lambda_{v+w}-\lambda_v}v=\Par{\lambda_w-\lambda_{v+w}}w.$\PfEnd
+%\SepLine
 
 \Anchor{5A27}\Anchor{5A28}\ProblemN{27, 28}{
 	\TextA{Supp $\dim V>1,\,k\in\Bra{1,\dots,\dim V-1}$.}
@@ -3268,7 +3266,7 @@ If $\Par{T-\lambda I}\Big|{_U}=T\mmid_U-\lambda I_U$ not inje. Then $\lambda$ is
 So that $a_0\Par{T-\lambda I}v+a_1\Par{T-\lambda I}u_1+\dots+a_m\Par{T-\lambda I}u_m=0,\exists\,a_k\neq 0.$\par\quad
 Then $Tw=\lambda w,$ where $w=a_0v+a_1u_1+\dots+a_mu_m\neq 0\Leftarrow w\not\in U\Leftarrow v\not\in U.$\PfEnd\vspace{4pt}\Anchor{5A36}
 \AExa Let $V=\Fbb^\Nbb,U=\Bra{\,x\in\Fbb^{\Nbb}:x_1=0},T\in\Lm{V}:e_k=e_{k+1}.$ Then $\Par{T\XSlash U}\Par{e_1+U}=e_2+U=0.$
-\SepLine\pagebreak
+\SepLine
 
 \Anchor{5A4e39}\ProblemBnoor{4E 39}{
 	\TextB{Supp $T\in\Lm{V},$ $V$ is finide. Prove $\exists$ eigval of $T$ $\Longleftrightarrow\exists$ invarsp $U$ of dim $\dim V-1$.}
@@ -3294,9 +3292,8 @@ Let $B_{\Range\SmallPar{T\,-\,\lambda I}}=\Par{w_1,\dots,w_m},\,B_{E\SmallPar{\l
 (a) Supp $A_{R,1}+\dots+A_{R,n}=\lambda.$ Let $x_1=\dots=x_n.$ Immed.\vspace{2pt}\par\quad
 (b) Supp $A_{1,C}+\dots+A_{n,C}=\lambda.$ Note that $\BigSbra{\sum_{R=1}^n A_{R,\cdot}}x=\sum_{k=1}^n\BigPar{{A_{1,k}+\dots+A_{n,k}}}x_k.$\par\quad\Hb
 Each $\Par{Ax}{_{R,1}}=\lambda\Par{x}{_{R,1}}.$ \,Thus for $x$ with $\sum_{k=1}^nx_k\neq 0,$ $\lambda$ is the corres eigval.\PfEnd\vspace{3pt}\quad\Hb
-\Or Becs $\Par{T-\lambda I}x=\Par{A-\lambda I}x=\BigPar{\Par{A_{j,1}x_1+\dots+A_{j,n}x_n}-\lambda x_j}{_{j=1}^n}=\Par{y_j}{_{j=1}^n}.$\vspace{1pt}\par\quad\Hb
-Now $y_1+\dots+y_n=\sum_{j=1}^n\sum_{k=1}^n \BigPar{A_{j,k}x_k-\lambda x_j}=\sum_{k=1}^n x_k\BigSbra{\sum_{j=1}^n A_{j,k}}-\lambda\sum_{j=1}^n x_j=0.$\par\vspace{2pt}\quad\Hb
-Thus $\Range\Par{T-\lambda I}\subseteq\Bra{\Par{y_1,\dots,y_n}:y_1+\dots+y_n=0}.$ Now $\Par{T-\lambda I}$ is not inv.\PfEnd\vspace{4pt}\quad\Hb
+\Or Becs $\Par{T-\lambda I}x=\BigPar{\Par{A_{j,1}x_1+\dots+A_{j,n}x_n}-\lambda x_j}{_{j=1}^n}=\Par{y_j}{_{j=1}^n}.$\vspace{1pt}\par\quad\Hb
+Now $y_1+\dots+y_n=\sum_{k=1}^n x_k\BigSbra{\sum_{j=1}^n A_{j,k}}-\lambda\sum_{j=1}^n x_j=0.$ Thus $\Par{T-\lambda I}$ not surj.\PfEnd\vspace{5pt}\quad\Hb
 \Or Let $\Par{e_1,\dots,e_n}$ be the std bss of $\Fbb^{n,1}.$ Define $\psi\in\BigPar{\Fbb^{n,1}}\apostrophe$ with each $\psi\Par{e_k}=1.$\vspace{0pt}\par\quad\Hb
 Becs $Ae_k=A_{\cdot,k}=\sum_{j=1}^nA_{j,k}e_j\Rightarrow\psi\Sbra{\Par{T-\lambda I}{e_k}}=\psi\BigBigPar{{\sum_{j=1}^n A_{j,k}e_j}-\lambda e_k}=\sum_{j=1}^n A_{j,k}-\lambda=0.$\PfEnd\vspace{5pt}\quad\Hb
 \Or Define $S\in\Lm{\Fbb^{n,1}}$ by $Sx=A^tx.$ \;By (a), \Sbra{3.F \TIPSN{4}}, and Exe (15, 4E 15),\par\quad\Hb
@@ -3310,10 +3307,9 @@ the sum of the ent in each row of $A^t$ equals $\lambda\Rightarrow \lambda$ is e
 (a) Supp $A_{1,C}+\dots+A_{n,C}=1.$ Let $x_1=\dots=x_n.$ Immed.\vspace{2pt}\par\quad
 (b) Supp $A_{R,1}+\dots+A_{R,n}=\lambda.$ Note that $\sum_{C=1}^nxA_{\cdot,C}=\sum_{j=1}^n\BigPar{A_{j,1}+\dots+A_{j,n}}x_j.$\vspace{0pt}\par\quad\Hb
 Each $\Par{xA}{_{1,C}}=\lambda\Par{x}{_{1,C}}.$ \,Thus for $x$ suth $\sum_{k=1}^nx_k\neq 0,$ $\lambda$ is the corres eigval.\PfEnd\vspace{3pt}\quad\Hb
-\Or Becs $\Par{T-\lambda I}x=x\BigPar{A-\lambda I}=\BigPar{\Par{x_1 A_{1,k}+\dots+x_nA_{n,k}}-\lambda x_k}{_{k=1}^n}=\Par{y_k}{_{k=1}^n}.$\vspace{1pt}\par\quad\Hb
-Now $y_1+\dots+y_n=\sum_{k=1}^n\sum_{j=1}^n\Par{x_j A_{j,k}-\lambda x_k}=\sum_{j=1}^n x_j\BigSbra{\sum_{k=1}^n A_{j,k}}-\lambda\sum_{k=1}^n x_k=0.$\par\vspace{2pt}\quad\Hb
-Thus $\Range\Par{T-\lambda I}\subseteq\Bra{\Par{y_1,\dots,y_n}:y_1+\dots+y_n=0}.$ Now $\Par{T-\lambda I}$ is not inv.\PfEnd\vspace{3pt}\quad\Hb
-\Or Simlr in Exe (24). Becs $e_jA=A_{j,\cdot}=\sum_{k=1}^n A_{j,k}e_k\Rightarrow\psi\Sbra{\Par{T-\lambda I}{e_j}}={\sum_{k=1}^n A_{j,k}}-\lambda=0.$\PfEnd\vspace{4pt}\quad\Hb
+\Or Becs $\Par{T-\lambda I}x=\BigPar{\Par{x_1 A_{1,k}+\dots+x_nA_{n,k}}-\lambda x_k}{_{k=1}^n}=\Par{y_k}{_{k=1}^n}.$\vspace{1pt}\par\quad\Hb
+Now $y_1+\dots+y_n=\sum_{j=1}^n x_j\BigSbra{\sum_{k=1}^n A_{j,k}}-\lambda\sum_{k=1}^n x_k=0.$\PfEnd\vspace{5pt}\quad\Hb
+\Or Simlr. Becs $e_jA=A_{j,\cdot}=\sum_{k=1}^n A_{j,k}e_k\Rightarrow\psi\Sbra{\Par{T-\lambda I}{e_j}}={\sum_{k=1}^n A_{j,k}}-\lambda=0.$\PfEnd\vspace{4pt}\quad\Hb
 \Or Define $S\in\Lm{\Fbb^{1,n}}$ by $Sx=xA^t\Rightarrow S=\Phi{^{-1}}T\apostrophe\Phi.$ \;Simlr and by \Sbra{3.D \TIPSN{3}}.
 %Let $\Par{\varphi_1,\dots,\varphi_n}$ be the dual bss. Define $\Phi$ by $\Phi\Par{e_k}=\varphi_k.$\par\quad\Hb
 %Becs $\Sbra{T\apostrophe\Par{\varphi_k}}\Par{e_j}=\varphi_k\BigBigPar{{\sum_{i=1}^n A_{j,i}e_i}}=A_{j,k}.$ By (3.F.9), $T\apostrophe\Par{\varphi_k}=\sum_{j=1}^n A_{j,k}\varphi_j.$\vspace{1pt}\par\quad\Hb
@@ -3333,10 +3329,10 @@ Thus $\Range\Par{T-\lambda I}\subseteq\Bra{\Par{y_1,\dots,y_n}:y_1+\dots+y_n=0}.
 %(b) {\FontSmall $T\Par{0,1}=\Par{F_1,F_2}.$ Asum $T^k\Par{0,1}=\Par{F_k,F_{k+1}}.$ Then $T^{k+1}\Par{0,1}=\Par{F_{k+1},\,F_{k}+F_{k+1}}.$}\vspace{-6pt}\parSol{\Hb}
 %{\FontSmall $T^n\Par{0,1}=T^n\XSbra{${\large$\frac{1}{\sqrt{5}\;}$}$\BigPar{v_1-v_2}}={}${\large$\frac{1}{\sqrt{5}\;}$}$\def\envFont{\Large}\XSbra{\bigg(\!${\large$\frac{\:1\,+\,\sqrt{5}\:}{2}$}$\!\bigg)\begin{array}{l}\hspace{-7pt}{}_n\\\\\vspace{-8pt}\end{array}\hspace{-8pt}v_1-\bigg(\!${\large$\frac{\:1\,-\,\sqrt{5}\:}{2}$}$\!\bigg)\begin{array}{l}\hspace{-7pt}{}_n\\\\\vspace{-8pt}\end{array}\hspace{-8pt}v_2\def\envFont{\Large}}.$ Take the first slot.}\PfEnd[-28pt]\vspace{4pt}
 %\SepLine
-\ChEnd\pagebreak
+\ChEnd
 
 
-\ChDecl{Ch5BI}{5.B}{\quad\footnotesize$\hText{$
+\vfill\ChDecl{Ch5BI}{5.B}{\quad\footnotesize$\hText{$
 	(I)覆盖4e的5.B节全部、3e前半部分与之相关的所有习题。(II)覆盖3e的5.B节后半部分「上三角矩阵」和4e的5.C节。$\\$
 	{\small\textbf{注意\,:}\;4e的5.B节和3e的8.C节、9.A节许多结论和习题有交集。5.B(II)的题号使用4e的5.C节.}$}$
 }
@@ -3346,10 +3342,10 @@ Thus $\Range\Par{T-\lambda I}\subseteq\Bra{\Par{y_1,\dots,y_n}:y_1+\dots+y_n=0}.
 %	\NoteForSmall{[5.17]}\;\;\TextB{By [8.20], $\nullp p\Par{T}$ and $\rangep p\Par{T}$ are invard $T$.\vspace{-4pt}}
 %}\SepLine
 
-\ProblemN{\Anchor{5BI1}{I.1}}{
-	\TextA{Supp $T\in\Lm{V}$ and $T^n=0.$ Prove $\Par{I-T}$ is inv and $\Par{I-T}{^{-1}}=I+T+\dots+T^{n-1}.$}
-}Becs $p\Par{z}=1-x^n=\Par{1-x}\Par{1+x+\dots+x^{n-1}}.$ Consider $p\Par{T}=I,$ by [5.20].\PfEnd
-\SepLine
+%\ProblemN{\Anchor{5BI1}{I.1}}{
+%	\TextA{Supp $T\in\Lm{V}$ and $T^n=0.$ Prove $\Par{I-T}$ is inv and $\Par{I-T}{^{-1}}=I+T+\dots+T^{n-1}.$}
+%}Becs $p\Par{z}=1-x^n=\Par{1-x}\Par{1+x+\dots+x^{n-1}}.$ Consider $p\Par{T}=I,$ by [5.20].\PfEnd
+%\SepLine
 
 %\ProblemN{\Anchor{5BI2}{2}}{
 	%	\TextA{Supp $T\in\Lm{V}$ and $\Par{T - 2I}\Par{T - 3I}\Par{T - 4I} = 0.$ Prove the eigvals are $2,3,4.$}
@@ -3375,29 +3371,28 @@ Thus $\Range\Par{T-\lambda I}\subseteq\Bra{\Par{y_1,\dots,y_n}:y_1+\dots+y_n=0}.
 %又 $-1$ is not eigval of $T\Longleftrightarrow\Par{I+T}$ inje $\Longleftrightarrow\Null\Par{I+T}=\zeroSubs\supseteq\Range\Par{I-T}.$\PfEnd
 %\SepLine\pagebreak
 
-\Anchor{5A4e32}\ProblemB{
-	\TextB{Supp $T\in\Lm{V}$ has no eigvals and $T^4 = I$. Prove $T^2=-I$.}
-}Becs $T^4-I=\Par{T^2-I}\Par{T^2+I}=0$ not inje, so is $\Par{T^2-I}$ or $\Par{T^2+I},$ while $T$ has no eigvals.\parSol{}
-$\Par{T-I},\Par{I+T}$ inje, so is $\Par{T^2-I}\Rightarrow\forall v\in V,\,0=\Par{T^2-I}\Par{T^2+I}v\Longleftrightarrow 0=\Par{T^2+I}v.$\PfEnd\vspace{4pt}\parSol{}
-\Or Note that $\forall v\in V,\,v=\Par{I-T^2}v\Big/2+\Par{I+T^2}v\Big/2.$ 又 $I-T^4=\Par{I\pm T^2}\Par{I\mp T^2}.$\parSol{}
-Then $\Range\Par{I\mp T^2}\subseteq\Null\Par{I\pm T^2}\Rightarrow V=\Null\Par{I-T^2}+\Null\Par{I-T^2}.$\parSol{}
-又 $T$ has no eigvals $\Longleftrightarrow \Par{I-T^2}$ inje $\Longleftrightarrow\Null\Par{I-T^2}=\zeroSubs\supseteq\Range\Par{I+T^2}.$\PfEnd
-\SepLine
+%\Anchor{5A4e32}\ProblemB{
+%	\TextB{Supp $T\in\Lm{V}$ has no eigvals and $T^4 = I$. Prove $T^2=-I$.}
+%}Becs $T^4-I=\Par{T^2-I}\Par{T^2+I}=0$ not inje, so is $\Par{T^2-I}$ or $\Par{T^2+I},$ while $T$ has no eigvals.\parSol{}
+%$\Par{T-I},\Par{I+T}$ inje, so is $\Par{T^2-I}\Rightarrow\forall v\in V,\,0=\Par{T^2-I}\Par{T^2+I}v\Longleftrightarrow 0=\Par{T^2+I}v.$\PfEnd\vspace{4pt}\parSol{}
+%\Or Note that $\forall v\in V,\,v=\Par{I-T^2}v\Big/2+\Par{I+T^2}v\Big/2.$ 又 $I-T^4=\Par{I\pm T^2}\Par{I\mp T^2}.$\parSol{}
+%Then $\Range\Par{I\mp T^2}\subseteq\Null\Par{I\pm T^2}\Rightarrow V=\Null\Par{I-T^2}+\Null\Par{I-T^2}.$\parSol{}
+%又 $T$ has no eigvals $\Longleftrightarrow \Par{I-T^2}$ inje $\Longleftrightarrow\Null\Par{I-T^2}=\zeroSubs\supseteq\Range\Par{I+T^2}.$\PfEnd
+%\SepLine
 
-\Anchor{5BI8}\Anchor{5A4e31}\ProblemN{I.8}{
-	\TextA{Give an exa of $T\in\Lm{\Rbb^2}$ suth $T^4=-I$.}
-}Define $\i^n\in\Lm{\Rbb^2}$ by $\i^n\Par{x,y}=\XPar{\REAL\BigPar{\i^n x+\i^{n+1} y},\,\IMAGINARY\BigPar{\i^n x+\i^{n+1} y}}.$\vspace{0pt}\par\quad
-$\displaystyle T^4+I=\BigPar{T^2+\i I}\BigPar{T^2-\i I}=\BigPar{T+\i^{1/2}I}\BigPar{T-\i^{1/2}I}\BigBigPar{T-\Par{{-\i}}{^{1/2}}I}\BigBigPar{T+\Par{{-\i}}{^{1/2}}I}.$\vspace{2pt}\par\quad
-Note that $\i^{1/2}=\frac{\sqrt{2}}{2}+\i\frac{\sqrt{2}}{2},\;\Par[1pt]{{-\i}}{^{1/2}}=\i^{3/2}=-\frac{\sqrt{2}}{2}+\i\frac{\sqrt{2}}{2}.$ \;Hence $T=\pm\Par[1pt]{{\pm\i}}{^{1/2}}I.$\vspace{0pt}\PfEnd\quad
-%Let $T=\i^{1/2}I\;$ defined by $\i^{1/2}\Par{x,y}=\XPar{\frac{\sqrt{2}}{2}x-\frac{\sqrt{2}}{2}y,\,\frac{\sqrt{2}}{2}x+\frac{\sqrt{2}}{2}y}.$\PfEnd\vspace{2pt}\quad
-\Or Becs $\Mt{T^4}={}$\small$\begin{pmatrix}
-	\Blind{-}\cos\SmallPar{\!-\!\pi} & \sin\SmallPar{\!-\!\pi}\\
-	-\sin\SmallPar{\!-\!\pi} & \cos\SmallPar{\!-\!\pi}
-\end{pmatrix}$\large. \;Using {\small$\begin{pmatrix}\Blind{-}\cos\alpha & \sin\alpha\\-\sin\alpha & \cos\alpha\end{pmatrix}$}$\begin{array}{l}\hspace{-5pt}{}_n\\\\\vspace{-6pt}\end{array}\hspace{-8pt}={}${\small$\begin{pmatrix}\Blind{-}\cos n\alpha & \sin n\alpha\\-\sin n\alpha & \cos n\alpha\end{pmatrix}$}.\vspace{-4pt}\PfEnd%\par\vspace{-6pt}\quad
-%\Blind{\Or}We define $T\in\Lm{\Rbb^2}$ suth $\Mt{T}={}${\small$\begin{pmatrix}
-		%\Blind{-}\cos\SmallPar{\!-\!{\pi}/{4}} & \sin\SmallPar{\!-\!{\pi}/{4}}\\
-		%-\sin\SmallPar{\!-\!{\pi}/{4}} & \cos\SmallPar{\!-\!{\pi}/{4}}\end{pmatrix}$}.\PfEnd\vspace{2pt}
-\SepLine
+%\Anchor{5BI8}\Anchor{5A4e31}\ProblemN{I.8}{
+%	\TextA{Give an exa of $T\in\Lm{\Rbb^2}$ suth $T^4=-I$.}
+%}Define $\i^n\in\Lm{\Rbb^2}$ by $\i^n\Par{x,y}=\XPar{\REAL\BigPar{\i^n x+\i^{n+1} y},\,\IMAGINARY\BigPar{\i^n x+\i^{n+1} y}}.$\vspace{0pt}\par\quad
+%$\displaystyle T^4+I=\BigPar{T^2+\i I}\BigPar{T^2-\i I}=\BigPar{T+\i^{1/2}I}\BigPar{T-\i^{1/2}I}\BigBigPar{T-\Par{{-\i}}{^{1/2}}I}\BigBigPar{T+\Par{{-\i}}{^{1/2}}I}.$\vspace{2pt}\par\quad
+%Note that $\i^{1/2}=\frac{\sqrt{2}}{2}+\i\frac{\sqrt{2}}{2},\;\Par[1pt]{{-\i}}{^{1/2}}=\i^{3/2}=-\frac{\sqrt{2}}{2}+\i\frac{\sqrt{2}}{2}.$ \;Hence $T=\pm\Par[1pt]{{\pm\i}}{^{1/2}}I.$\vspace{0pt}\PfEnd\quad
+%\Or Becs $\Mt{T^4}={}$\small$\begin{pmatrix}
+%	\Blind{-}\cos\SmallPar{\!-\!\pi} & \sin\SmallPar{\!-\!\pi}\\
+%	-\sin\SmallPar{\!-\!\pi} & \cos\SmallPar{\!-\!\pi}
+%\end{pmatrix}$\large. \;Using {\small$\begin{pmatrix}\Blind{-}\cos\alpha & \sin\alpha\\-\sin\alpha & \cos\alpha\end{pmatrix}$}$\begin{array}{l}\hspace{-5pt}{}_n\\\\\vspace{-6pt}\end{array}\hspace{-8pt}={}${\small$\begin{pmatrix}\Blind{-}\cos n\alpha & \sin n\alpha\\-\sin n\alpha & \cos n\alpha\end{pmatrix}$}.\vspace{-4pt}\PfEnd%\par\vspace{-6pt}\quad
+%%\Blind{\Or}We define $T\in\Lm{\Rbb^2}$ suth $\Mt{T}={}${\small$\begin{pmatrix}
+%		%\Blind{-}\cos\SmallPar{\!-\!{\pi}/{4}} & \sin\SmallPar{\!-\!{\pi}/{4}}\\
+%		%-\sin\SmallPar{\!-\!{\pi}/{4}} & \cos\SmallPar{\!-\!{\pi}/{4}}\end{pmatrix}$}.\PfEnd\vspace{2pt}
+%\SepLine
 
 %\Anchor{5BI4e3}\ProblemBnoor{4E 3}{
 	%	\TextB{Find the min poly of $T:\Par{x_1,\dots,x_n}\mapsto\Par{x_1+\dots+x_n,\cdots,x_1+\dots+x_n}.$}
@@ -3429,6 +3424,7 @@ Note that $\i^{1/2}=\frac{\sqrt{2}}{2}+\i\frac{\sqrt{2}}{2},\;\Par[1pt]{{-\i}}{^
 %Now $p\Par{T}v=a_0v+a_1\lambda v+\dots+a_m \lambda^m v=p\Par{\lambda}v.$\PfEnd\vspace{2pt}
 %\ACoro $p\Par{T}v=\BigSbra[0pt]{c\Par{T-\lambda_1I}{^{\alpha_1}}\cdots\Par{T-\lambda_mI}{^{\alpha_m}}}v=\BigSbra[0pt]{c\Par{\lambda-\lambda_1}{^{\alpha_1}}\cdots\Par{\lambda-\lambda_m}{^{\alpha_m}}}v.$
 %\SepLine
+\pagebreak
 
 \ProblemN{\Anchor{5BI11}{11}}{
 	\TextA{Supp $\Fbb = \Cbb,\,T\in\Lm{V},$ nonC $p\in\PoFi.$}
@@ -3457,30 +3453,29 @@ Then $\exists\,\Par{T-\lambda_j I}$ not inje. Now $p\Par{\lambda_j}-\alpha=0.$ \
 %\SepLine
 
 \ProblemB[]{
-	\TextB{Supp non0 $v\in V.$ Prove [5.21] using the given map below.}
+	\TextB{Supp non0 $v\in V.$ Prove [5.21] using the given map below,\hfill\FontNorm and also [4E 5.22], in Exe (I.17).}
 }
 \Anchor{5BI16}\ProblemN[]{I.16}{
 	\TextA{Define $S:\PoC{\dim V}\rightarrow V$ by $S\Par{p}=p\Par{T}v.$ \,\FontNorm Then $S$ not inje $\Rightarrow\exists$ non0 $p\in\null S$.}
 }
 \ProblemN[]{\Anchor{5BI17}{I.17}}{
-	\TextA{Define $S:\PoC{\dim V^2}\rightarrow\Lm{V}$ by $S\Par{p}=p\Par{T}.$ \,\FontNorm Then $S$ not inje $\Rightarrow\exists$ non0 $p\in\null S$.}
-}\ANote Another proof of [4E 5.22] by Exe (I.17).
-%Let $p\Par{z}=c\Par{z-\lambda_1}\cdots\Par{z-\lambda_m}\Rightarrow\Par{T-\lambda_1 I}\cdots\Par{T-\lambda_m I}$ not inje.\PfEnd
+	\TextA{Define $S:\PoC{\dim V^2}\rightarrow\Lm{V}$ by $S\Par{p}=p\Par{T}.$ \,\FontNorm Then $S$ not inje $\Rightarrow\exists$ non0 $p\in\null S$.\vspace{-3pt}}
+}%Let $p\Par{z}=c\Par{z-\lambda_1}\cdots\Par{z-\lambda_m}\Rightarrow\Par{T-\lambda_1 I}\cdots\Par{T-\lambda_m I}$ not inje.\PfEnd
 \SepLine
 
-\Anchor{5BI18}\Anchor{5BI4e15}\ProblemNnoor{I.18}{4E I.15}{
-	\TextA{Supp $\Fbb=\Cbb,$ $V$ finide and non0, $T\in\Lm{V}$.}
-	\TextA{Define $f:\Cbb\rightarrow\Nbb$ by $f\Par{\lambda} = \dim \Range\Par{T-\lambda I}$. Prove $f$ is not continuous.}
-}Let $\lambda_0$ be eigval of $T.$ Then $\Par{T-\lambda_0 I}$ is not surj. Hence $\dim\Range\Par{T-\lambda_0 I}<\dim V.$\parSol{}
-Becs $T$ has finily many eigvals. $\exists$ seq $\Bra{\lambda_n}$ with each $\lambda_n$ not eigval of $T,$ suth $\lim\limits_{n\rightarrow\infty}\lambda_n=\lambda_0$\parSol{}
-Becs each $f\Par{\lambda_n}=\dim\Range\Par{T-\lambda_n I}=\dim V\neq f\Par{\lambda_0}\Rightarrow f\Par{\lambda_0}\neq\lim\limits_{n\rightarrow\infty}\,f\Par{\lambda_n}.$\PfEnd
-\SepLine
+%\Anchor{5BI18}\Anchor{5BI4e15}\ProblemNnoor{I.18}{4E I.15}{
+%	\TextA{Supp $\Fbb=\Cbb,$ $V$ finide and non0, $T\in\Lm{V}$.}
+%	\TextA{Define $f:\Cbb\rightarrow\Nbb$ by $f\Par{\lambda} = \dim \Range\Par{T-\lambda I}$. Prove $f$ is not continuous.}
+%}Let $\lambda_0$ be eigval of $T.$ Then $\Par{T-\lambda_0 I}$ is not surj. Hence $\dim\Range\Par{T-\lambda_0 I}<\dim V.$\parSol{}
+%Becs $T$ has finily many eigvals. $\exists$ seq $\Bra{\lambda_n}$ with each $\lambda_n$ not eigval of $T,$ suth $\lim\limits_{n\rightarrow\infty}\lambda_n=\lambda_0$\parSol{}
+%Becs each $f\Par{\lambda_n}=\dim\Range\Par{T-\lambda_n I}=\dim V\neq f\Par{\lambda_0}\Rightarrow f\Par{\lambda_0}\neq\lim\limits_{n\rightarrow\infty}\,f\Par{\lambda_n}.$\PfEnd
+%\SepLine
 
-\Anchor{5A4e43}\ProblemN{\Anchor{5BI19}{I.19}}{
-	\TextA{Supp $V$ is finide, $\dim V>1,T\in\Lm{V}.$ Prove $\Bra{\,p\Par{T}:p\in\PoFi}\neq\Lm{V}.$}
-}If $\forall S\in\Lm{V},\exists\,p\in\PoFi,S=p\Par{T}.$ Then by [5.20], $\forall S_1,S_2\in\Lm{V},S_1S_2=S_2S_1.$\parSol{}
-Note that $\dim V\geqslant 2.$ By (3.A.14) \OR (3.D.16 \OR 4E 3.A.11).\PfEnd
-\SepLine
+%\Anchor{5A4e43}\ProblemN{\Anchor{5BI19}{I.19}}{
+%	\TextA{Supp $V$ is finide, $\dim V>1,T\in\Lm{V}.$ Prove $\Bra{\:\!p\Par{T}:p\in\PoFi}\neq\Lm{V}.$}
+%}If $\forall S\in\Lm{V},\exists\,p\in\PoFi,S=p\Par{T}.$ Then by [5.20], $\forall S_1,S_2\in\Lm{V},S_1S_2=S_2S_1.$\parSol{}
+%Note that $\dim V\geqslant 2.$ By (3.A.14) \OR (3.D.16 \OR 4E 3.A.11).\PfEnd
+%\SepLine
 
 %\Anchor{5BIN4e5.22}\ProblemBX{\NoteForSmall{[4E 5.22]}}{
 %	\TextB{Supp $V$ finide, $T\in\Lm{V}.$}
@@ -3632,20 +3627,21 @@ Define $r\Par{z}=s\Par{\lambda z}\Rightarrow r\Par{T}=s\Par{\lambda T}=0\Rightar
 Then $U_{j-1}$ is invard $T,$ so is each $U_n=\Span{v,Tv,\dots,T^{j-1} v,\dots,T^n v}.$\PfEnd
 \SepLine
 
-\Anchor{5BII4e2}\ProblemN{II.2}{
-	\TextA{Supp $A,B\in\Fbb^{n,n}$ are up-trig with each $A_{p,p}=\alpha_p,B_{p,p}=\beta_p.$}
-	\TextA{Show $AB$ up-trig with $\alpha_1 \beta_1 , \dots , \alpha_n \beta_n$ on the diag.}
-}Becs $A_{j,k}=B_{j,k}=0$ for $j>k.$ By def, for each $p\in\Bra{1,\dots,n},$\parSol{} $\Par{AB}{_{p,p}}=A_{p,1}B_{1,p}+\dots+A_{p,p-1}B_{p-1,p}+A_{p,p}B_{p,p}+A_{p,p+1}B_{p+1,p}+\dots+A_{p,n}B_{n,p}=A_{p,p}B_{p,p}.$\PfEnd
-\SepLine
+%\Anchor{5BII4e2}\ProblemN{II.2}{
+%	\TextA{Supp $A,B\in\Fbb^{n,n}$ are up-trig with each $A_{p,p}=\alpha_p,B_{p,p}=\beta_p.$\hfill\tgnr\FontNorm $A_{j,k}=B_{j,k}=0$ for $j>k.$}
+%	\TextA{Show $AB$ up-trig with $\alpha_1 \beta_1 , \dots , \alpha_n \beta_n$ on the diag.}
+%}Each $\Par{AB}{_{p,p}}=A_{p,1}B_{1,p}+\dots+A_{p,p-1}B_{p-1,p}+A_{p,p}B_{p,p}+A_{p,p+1}B_{p+1,p}+\dots+A_{p,n}B_{n,p}=A_{p,p}B_{p,p}.$\PfEnd
+%\SepLine
 
-\Anchor{5BII4e3}\ProblemN{II.3}{
-	\TextA{Supp $T$ inv and up-trig wrto $B_V=\Par{v_1,\dots,v_n}.$ Show $T^{-1}$ is up-trig wrto $B_V.$}
-}Each $\Span{v_1,\dots,v_k}=U_k=\range T\mmid_{U_k}=U_k$ invard $T^{-1}=q\Par{T},$ by (8.C.11) and (5.A.3).\PfEnd\vspace{2pt}\parSol{}
-\Or Let each $Tv_k=u_k+\lambda_kv_k,$ where $u_k\in\Span{v_1,\dots,v_{k-1}}.$\parSol{}
-We use induc on $k$ to show each $\Span{v_1,\dots,v_k}$ invard $T^{-1}.$ (i) Immed. (ii) $2\leqslant k\leqslant n-1.$\parSol{}
-Asum $\Span{v_1,\dots,v_{k-1}}$ invard $T^{-1}.$ Then for each $Tv_k=u_k+\lambda_kv_k,$\parSol{}
-$T^{-1}v_k=\lambda_k^{-1}v_k-\lambda_k^{-1}T^{-1}u_k\in\Span{v_1,\dots,v_k},$ invard $T;$ and $\lambda_{k}^{-1}$ is the $k^\text{th}$ ent on diag.\PfEnd
-\SepLine
+%\Anchor{5BII4e3}\ProblemN{II.3}{
+%	\TextA{Supp $T$ inv and up-trig wrto $B_V=\Par{v_1,\dots,v_n}.$ Show $T^{-1}$ is up-trig wrto $B_V.$}
+%}Each $\Span{v_1,\dots,v_k}$ invard $T\Rightarrow$ invard $T^{-1}=q\Par{T},$ by (8.C.11).\PfEnd
+%\vspace{2pt}\parSol{}
+%\Or Let each $Tv_k=u_k+\lambda_kv_k,$ where $u_k\in\Span{v_1,\dots,v_{k-1}}.$\parSol{}
+%We use induc on $k$ to show each $\Span{v_1,\dots,v_k}$ invard $T^{-1}.$ (i) Immed. (ii) $2\leqslant k\leqslant n-1.$\parSol{}
+%Asum $\Span{v_1,\dots,v_{k-1}}$ invard $T^{-1}.$ Then for each $Tv_k=u_k+\lambda_kv_k,$\parSol{}
+%$T^{-1}v_k=\lambda_k^{-1}v_k-\lambda_k^{-1}T^{-1}u_k\in\Span{v_1,\dots,v_k},$ invard $T;$ and $\lambda_{k}^{-1}$ is the $k^\text{th}$ ent on diag.\PfEnd
+%\SepLine
 
 %\Anchor{5BII14}\Anchor{5BII4e4}\ProblemNor{4}{3E 5.B.14}{
 %	\TextA{Give an inv $T$ and a $B_V$ suth each $\Mt{T}{_{k,k}}=0.$}
@@ -3705,9 +3701,9 @@ Then each $Tu_k\in\Span{u_1,\dots,u_k}$ and each $Tw_j+U\in\Span{w_1+U,\dots,w_j
 By (3.E.13), $B_V=\Par{u_1,\dots,u_p,w_1,\dots,w_q}.$ Now each $Tw_j\in\Span{u_1,\dots,u_p,w_1,\dots,w_j}.$\PfEnd\vspace{2pt}\parSol{}
 \Or By (4E 5.B.25)(b) and [4E 5.44], immed.\quad Convly, by [4E 5.44], immed.\PfEnd
 \SepLine
-\ChEnd
+\ChEnd\pagebreak
 
-\vfill\ChDecl{Ch5C}{5.C \& [4E] 5.D}{\qquad{\small\textbf{注意\,:}\;这一节的题号主要使用第四版5.D节.}}
+\ChDecl{Ch5C}{5.C \& [4E] 5.D}{\qquad{\small\textbf{注意\,:}\;这一节的题号主要使用第四版5.D节.}}
 
 \vspace{6pt}
 
@@ -3716,12 +3712,12 @@ By (3.E.13), $B_V=\Par{u_1,\dots,u_p,w_1,\dots,w_q}.$ Now each $Tw_j\in\Span{u_1
 %	$T$ diag $\Longleftrightarrow\nexists\,\Par{z-\lambda}{^2}$ in $p\Longleftrightarrow p,p\apostrophe$ have no common zeros $\Longleftrightarrow\gcd\Par{p,p\apostrophe}=1.$\vspace{-4pt}\TextA{}
 %}\SepLine
 
-\Anchor{5C1}\Anchor{5C4e3}\ProblemN{3}{
-	\TextA{Supp $T\in\Lm{V}$ is diag. Prove $V=\null T\oplus\range T.$}
-}Let $U=E\Par{\lambda_1,T}\oplus\cdots\oplus E\Par{\lambda_m,T},$ where each $\lambda_k\neq 0$ and $B_{E\SmallPar{\lambda_k,T}}=\Par{v_{1,k},\dots,v_{M_k,k}}.$\parSol{}
-By (3.B.12), $\range T=\Bra{Tu:u\in U}=\BigBra{\sum_{k=1}^m\lambda_k\Par{a_{1,k}v_{1,k}+\dots+a_{M_k,k}v_{M_k,k}}:a_{j,k}\in\Fbb}=U.$\PfEnd\vspace{2pt}
-\AExa Convly not true. Define the inv $T\in\Lm{\Rbb^2}:\Par{x,y}\mapsto\Par{{-y,x}}.$ No eigvals.
-\SepLine
+%\Anchor{5C1}\Anchor{5C4e3}\ProblemN{3}{
+%	\TextA{Supp $T\in\Lm{V}$ is diag. Prove $V=\null T\oplus\range T.$}
+%}Let $U=E\Par{\lambda_1,T}\oplus\cdots\oplus E\Par{\lambda_m,T},$ where each $\lambda_k\neq 0$ and $B_{E\SmallPar{\lambda_k,T}}=\Par{v_{1,k},\dots,v_{M_k,k}}.$\parSol{}
+%By (3.B.12), $\range T=\Bra{Tu:u\in U}=\BigBra{\sum_{k=1}^m\lambda_k\Par{a_{1,k}v_{1,k}+\dots+a_{M_k,k}v_{M_k,k}}:a_{j,k}\in\Fbb}=U.$\PfEnd\vspace{2pt}
+%\AExa Convly not true. Define the inv $T\in\Lm{\Rbb^2}:\Par{x,y}\mapsto\Par{{-y,x}}.$ No eigvals.
+%\SepLine
 
 \Anchor{5CL1}\ProblemN{L1}{
 	\TextA{Supp $T\in\Lm{V},\alpha,\beta\in\Fbb$ and $\alpha\neq\beta.$ Prove $\Null\Par{T-\alpha I}\subseteq\Range\Par{T-\beta I}.$}
@@ -3759,7 +3755,7 @@ Becs (I) $A_{j,j}B_{j,k}=A_{j,1}B_{1,k}+\dots+\Sbra{A_{j,j}B_{j,k}}+\dots+A_{j,n
 And (II) $B_{j,k}A_{k,k}=B_{j,1}A_{1,k}+\dots+\Sbra{B_{j,k}A_{k,k}}+\dots+B_{j,n}A_{n,k}=\Par{BA}{_{j,k}}.$\parSol{}
 Supp $B$ diag. If $j=k,$ then $\Par{BA}{_{j,k}}=\Par{AB}{_{j,k}},$ othws true as well.\parSol{}
 Supp $AB=BA\Rightarrow A_{j,j}B_{j,k}=A_{k,k}B_{j,k}.$ Asum $B_{j,k}\neq0$ with $j\neq k.$ Then $A_{j,j}=A_{k,k},$ ctradic.\PfEnd
-\SepLine\pagebreak
+\SepLine
 
 \Anchor{5C4e14}\ProblemN{14}{
 	\TextA{Supp $\Fbb=\Cbb,$ $k\in\Nbp,$ and $T\in\Lm{V}$ is inv. Prove $T^k$ diag $\Rightarrow T$ diag.}
@@ -3816,27 +3812,27 @@ Becs for each $w_k,\:\exists$ eigval $\lambda$ of $T,\:Tw_k=\lambda w_k\Rightarr
 %\SepLine
 \ChEnd
 
-\vfill\ChDecl{Ch5E}{5.E [4E]}{}
+\ChDecl{Ch5E}{5.E [4E]}{}
 
 \vspace{4pt}
 
-\Anchor{5E8}\ProblemN{8}{
-	\TextA{Find a bss of $\PoFx{m}{\Rbb^2}$ suth $D_x,D_y$ up-trig in [5.72].}
-}Let $B=\Par{1,x,y,x^2,xy,y^2,\cdots,\cdots,x^m,x^{m-1}y,\cdots,xy^{m-1},y^m}$ in $\PoFx{m}{\Rbb^2}.$\parSol{}
-Supp a liney combina of $B$ is $0;$ \;$\sum_{j=0}^m\sum_{k=0}^{m-j}a_{j,k}x^jy^k=0.$\parSol{}
-Let $x=0\Rightarrow$ each $a_{0,k}=0,$ and $y=0\Rightarrow$ each $a_{k,0}=0.$ Now $\sum_{j=1}^{m-1}\sum_{k=1}^{m-1-j}a_{j,k}x^jy^k=0.$\parSol{}
-Take $\BigPar{\Par{x_1,y_1},\cdots,\Par{x_q,y_q}}$ \Sbra{where $q=1+\dots+m$} suth all $\sum_{j=1}^{m-1}\sum_{k=1}^{m-1-j}x_s^jy_t^k\,a_{j,k}=0$\parSol{}
-form a system of $q$ equations having uniq solus $\Par{0,\dots,0}.$ Thus $B$ is liney indep.\parSol{}
-Apply $D_x$ to each vec in $B\Rightarrow B_x=\BigPar{0,1,0,2x,y,0,\cdots,\cdots,mx^{m-1},\Par{m-1}x^{m-2}y,\cdots,y^{m-1},0}.$\parSol{}
-Apply $D_y$ to each vec in $B\Rightarrow B_y=\BigPar{0,0,1,0,x,2y,\cdots,\cdots,0,x^{m-1},\cdots,\Par{m-1}xy^{m-2},my^{m-1}}.$\PfEnd
-\SepLine
+%\Anchor{5E8}\ProblemN{8}{
+%	\TextA{Find a bss of $\PoFx{m}{\Rbb^2}$ suth $D_x,D_y$ up-trig in [5.72].}
+%}Let $B=\Par{1,x,y,x^2,xy,y^2,\cdots,\cdots,x^m,x^{m-1}y,\cdots,xy^{m-1},y^m}$ in $\PoFx{m}{\Rbb^2}.$\parSol{}
+%Supp a liney combina of $B$ is $0;$ \;$\sum_{j=0}^m\sum_{k=0}^{m-j}a_{j,k}x^jy^k=0.$\parSol{}
+%Let $x=0\Rightarrow$ each $a_{0,k}=0,$ and $y=0\Rightarrow$ each $a_{k,0}=0.$ Now $\sum_{j=1}^{m-1}\sum_{k=1}^{m-1-j}a_{j,k}x^jy^k=0.$\parSol{}
+%Take $\BigPar{\Par{x_1,y_1},\cdots,\Par{x_q,y_q}}$ \Sbra{where $q=1+\dots+m$} suth all $\sum_{j=1}^{m-1}\sum_{k=1}^{m-1-j}x_s^jy_t^k\,a_{j,k}=0$\parSol{}
+%form a system of $q$ equations having uniq solus $\Par{0,\dots,0}.$ Thus $B$ is liney indep.\parSol{}
+%Apply $D_x$ to each vec in $B\Rightarrow B_x=\BigPar{0,1,0,2x,y,0,\cdots,\cdots,mx^{m-1},\Par{m-1}x^{m-2}y,\cdots,y^{m-1},0}.$\parSol{}
+%Apply $D_y$ to each vec in $B\Rightarrow B_y=\BigPar{0,0,1,0,x,2y,\cdots,\cdots,0,x^{m-1},\cdots,\Par{m-1}xy^{m-2},my^{m-1}}.$\PfEnd
+%\SepLine
 
 \Anchor{5E6}\ProblemN{6}{
 	\TextA{Supp $\Fbb=\Cbb,$ $V$ is finide, and $S, T\in\Lm{V}$ commu.}
 	\TextA{Prove $\exists\,\alpha,\lambda\in\Cbb$ suth $\Range\Par{S -\alpha I} + \Range\Par{T -\lambda I}\neq V$.}
 }Supp $A,C\in\Fbb^{n,n}$ are up-trig matrices of $S,T$ wrto a $B_V=\Par{v_1,\dots,v_n}$ suth $A,C$ commu.\parSol{}
 Let $\alpha=A_{n,n},\,\lambda=C_{n,n}.$ Then $\Range\Par{S-\alpha I},\Range\Par{T-\lambda I}\subseteq\Span{v_1,\dots,v_{n-1}}.$\PfEnd
-\SepLine\pagebreak
+\SepLine
 
 \Anchor{5E7}\ProblemN{7}{
 	\TextA{Supp $\Fbb=\Cbb,$ and $S,T\in\Lm{V}$ commu, $S$ diag. Prove $\exists\,B_V$ suth $S$ diag and $T$ up-trig.}
