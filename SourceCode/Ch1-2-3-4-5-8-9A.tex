@@ -211,7 +211,7 @@ Then $\forall a\in U\wedge a\not\in W,\forall b\in W\wedge b\not\in U,$ we have 
 $a+b\in U\Rightarrow b=\Par{a+b}+\Par{{-a}}\in U$, ctradic $\Rightarrow W\subseteq U.\\ $
 $a+b\in W\Rightarrow a=\Par{a+b}+\Par{{-b}}\in W$, ctradic $\Rightarrow U\subseteq W.}\hText{$
 Ctradic asum.$\\\;}$\PfEnd[-14pt]
-\SepLine
+\SepLine\pagebreak
 
 \ProblemN{\Anchor{1C13}{13}}{
 	\TextA{Supp $U_1,U_2,U_3$ are subsps of $V,$ and the union $U_1\cup U_2\cup U_3=\mathcal{U}$ is a subsp of $V.$}
@@ -2279,7 +2279,7 @@ Thus $\Span{u_1,\dots,u_q}{^0}\subseteq\Span{\beta_1,\dots,\beta_p}=\Omega.$\PfE
 	\TextA{Prove $\null\varphi_1\cap\dots\cap\null\varphi_m=\null\beta_1\cap\dots\cap\null\beta_n.$\vspace{0pt}}
 }Becs each $\beta_k\in\Span{\varphi_1,\dots,\varphi_m}.$\parSol{}
 $\forall v\in\bigcap_1^m\null\varphi_I,\beta_k\Par{v}=0.$ Thus $\bigcap_1^m\null\varphi_I\subseteq\bigcap_1^n\null\beta_I.$ \;Rev the roles and done.\PfEnd\vspace{4pt}\parSol{}
-Supp $\Par{\varphi_1,\dots,\varphi_j}$ is a bss of $\Span{\varphi_1,\dots,\varphi_m}.$ Let $N_{k}\oplus\bigcap_1^{j}\null\varphi_I=\null\varphi_k.$\vspace{2pt}\parSol{}
+\Or Supp $\Par{\varphi_1,\dots,\varphi_j}$ is a bss of $\Span{\varphi_1,\dots,\varphi_m}.$ Let $N_{k}\oplus\bigcap_1^{j}\null\varphi_I=\null\varphi_k.$\vspace{2pt}\parSol{}
 Now $\bigcap_1^j\null\varphi_I\cap\BigPar{\null\varphi_k}=\bigcap_1^j\null\varphi_I.$ Thus $\bigcap_1^m\null\varphi_I=\bigcap_1^j\null\varphi_I.$\vspace{2pt}\parSol{}
 又 $\beta_k\in\Span{\varphi_1,\dots,\varphi_j}.$ Let $M_k\oplus\bigcap_1^{j}\null\varphi_I=\null\beta_k.$ Simlr, $\bigcap_1^n\null\beta_I=\bigcap_1^j\null\varphi_I.$\PfEnd
 \SepLine
@@ -2422,33 +2422,33 @@ $\forall\Par{x_1,\dots,x_m}\in\Fbb^m,\Gamma\apostrophe\BigPar{\Psi\Par{x_1,\dots
 \ProblemN{\Anchor{3F9}{9}}{
 	\TextA{Show $\forall\psi\in V\apostrophe,\psi=\psi\Par{v_1}\:\!\varphi_1+\dots+\psi\Par{v_n}\:\!\varphi_n,$ \FontNorm where $B_V=\Par{v_1,\dots,v_n},B_{V\apostrophe}=\Par{\varphi_1,\cdots,\varphi_n}.$}
 }$\psi\Par{v}=a_1\psi\Par{v_1}+\dots+a_n\psi\Par{v_n}=\psi\Par{v_1}\:\!\varphi_1\Par{v}+\dots+\psi\Par{v_n}\:\!\varphi_n\Par{v}.$\PfEnd
-\SepLine\pagebreak
-
-\Anchor{3F13}\ProblemN[]{13}{
-	\TextA{Define $T:\Rbb^3\!\rightarrow\!\Rbb^2$ by $T\Par{x,y,z}=\Par{4x+5y+6z,7x+8y+9z}$.\vspace{3pt}}
-	\TextA{Let $\Par{\varphi_1,\varphi_2},\Par{\psi_1,\psi_2,\psi_3}$ denote the dual bss of std bss of $\Rbb^2$ and $\Rbb^3$.\vspace{4pt}}
-	\PrePa\TextA{Describe the liney functionals $T\apostrophe\Par{\varphi_1},T\apostrophe\Par{\varphi_2}.$}
-	\Blind{\PrePb}\TextA{{\FontNorm\tgnr For any $\Par{x,y,z}\in\Rbb^3$, $\BigPar{T\apostrophe\Par{\varphi_1}}\Par{x,y,z}=4x+5y+6z, \BigPar{T\apostrophe\Par{\varphi_2}}\Par{x,y,z}=7x+8y+9z$.}\vspace{6pt}}
-	\PrePb\TextA{Write $T\apostrophe\Par{\varphi_1}$ and $T\apostrophe\Par{\varphi_2}$ as liney combinas of $\psi_1,\psi_2,\psi_3$.}
-	\Blind{\PrePb}\TextA{{\FontNorm\tgnr$T\apostrophe\Par{\varphi_1}=4\psi_1+5\psi_2+6\psi_3,\,\,T\apostrophe\Par{\varphi_2}=7\psi_1+8\psi_2+9\psi_3.$}\vspace{6pt}}
-	\PrePc\TextA{What is $\null T\apostrophe$? What is $\range T\apostrophe$?}
-}\TextA{\vspace{4pt}}
-\Hc $T\Par{x,y,z}=0\Longleftrightarrow\MathLeftBrace{l}{4x+5y+6z=0\\7x+8y+9z=0}\Longleftrightarrow\hMath{l}{\left\{}{\;\right|}{x=z,\\y=-2z.}\,\hText{$Thus $\null T=\Span{e_1-2e_2+e_3},\\$where $\Par{e_1,e_2,e_3}$ is std bss of $\Rbb^3.}$\vspace{4pt}\TextA{}
-\Hc Let $\Par{e_1-2e_2+e_3,-2e_2,e_3}$ be a bss, with corres dual bss $\Par{\varepsilon_1,\varepsilon_2,\varepsilon_3}$.\vspace{1.5pt}\TextA{}
-\Hc Thus $\Span{e_1-2e_2+e_3}=\null T\Rightarrow \Span{e_1-2e_2+e_3}{^0}=\Span{\varepsilon_2,\varepsilon_3}=\range T\apostrophe.$\vspace{1.5pt}\TextA{}
-\Hc Note that $\varepsilon_k=\varepsilon_k\Par{e_1}\psi_1+\varepsilon_k\Par{e_2}\psi_2+\varepsilon_k\Par{e_3}\psi_3.$\vspace{1.5pt}\TextA{}
-\Hc And $\MathLeftMid{l}{\varepsilon_2\Par{e_2}=-\frac{\;1\;}{2},\varepsilon_2\Par{e_1}=\varepsilon_2\Par{e_1-2e_2+e_3}+\varepsilon_2\Par{2e_2}-\varepsilon_2\Par{e_3}=1,\\[1.5pt]\varepsilon_3\Par{e_2}=0,\varepsilon_3\Par{e_3}=\varepsilon_3\Par{e_1-2e_2+e_3}+\varepsilon_3\Par{2e_2}-\varepsilon_3\Par{e_3}=-1.}$\vspace{1.5pt}\TextA{}
-\Hc Hence $\varepsilon_2=\psi_1-\frac{\;1\;}{2}\psi_2,\;\varepsilon_3=-\psi_1+\psi_3.$ Now $\range T\apostrophe=\Span{\psi_1-\frac{\;1\;}{2}\psi_2,\:-\psi_1+\psi_3}.$\vspace{3pt}\TextA{}
-\Hc\Or $\range T\apostrophe=\Span[\BigPar]{T\apostrophe\Par{\varphi_1},\,T\apostrophe\Par{\varphi_2}}=\Span{4\psi_1+5\psi_2+6\psi_3,\:7\psi_1+8\psi_2+9\psi_3}.$\vspace{6pt}\TextA{}
-\Hc Supp $T\apostrophe\Par{x\varphi_1+y\varphi_2}=\Par{4x+7y}\psi_1+\Par{5x+8y}\psi_2+\Par{6x+9y}\psi_3=0.$\TextA{}
-\Hc Then $x+y=4x+7y=x=y=0.$ Hence $\null T\apostrophe=\zeroSubs.$\vspace{3pt}\TextA{}
-\Hc\Or $\null T=\Span{e_1-2e_2+e_3}\Rightarrow V=\Span{\hspace{-2pt}-2e_2,\:e_3}\oplus\null T.$\vspace{1pt}\TextA{}
-\Hc$\Rightarrow \range T=\Bra{Tx:x\in\Span{-2e_2,\:e_3}}=\Span[\BigPar]{T\Par{{-2e_2}},\,T\Par{e_3}}$\vspace{1pt}\TextA{}
-\Hc$=\Span{-10f_1-16f_2,\:6f_1+9f_2}=\Span{f_1,\,f_2}=\Rbb^2.$ Now $\null T\apostrophe=\Par{\range T}{^0}=\zeroSubs.$\vspace{4pt}\TextA{}
-\Hc\Or For any $A,B\in\Rbb,$ asum $\Par{x,y,z}$ is suth $A=4x+5y+6z,\,B=7x+8y+9z.$\TextA{}
-\Hc By computing $x=z+4\big/3\Par{b-a},\;y=-2z+\Par{7a-4b}\XSlash 3,\;z=z.$ \;\; {\tgsl\FontSmall An exa for (4E 3.E.8).}\TextA{}
-\Hc Hence $\Par{x,y,z}$ exis $\Rightarrow\Par{A,B}\in\range T.$ \,Now $T$ surj $\Rightarrow T\apostrophe$ inje.\PfEnd
 \SepLine
+
+%\Anchor{3F13}\ProblemN[]{13}{
+%	\TextA{Define $T:\Rbb^3\!\rightarrow\!\Rbb^2$ by $T\Par{x,y,z}=\Par{4x+5y+6z,7x+8y+9z}$.\vspace{3pt}}
+%	\TextA{Let $\Par{\varphi_1,\varphi_2},\Par{\psi_1,\psi_2,\psi_3}$ denote the dual bss of std bss of $\Rbb^2$ and $\Rbb^3$.\vspace{4pt}}
+%	\PrePa\TextA{Describe the liney functionals $T\apostrophe\Par{\varphi_1},T\apostrophe\Par{\varphi_2}.$}
+%	\Blind{\PrePb}\TextA{{\FontNorm\tgnr For any $\Par{x,y,z}\in\Rbb^3$, $\BigPar{T\apostrophe\Par{\varphi_1}}\Par{x,y,z}=4x+5y+6z, \BigPar{T\apostrophe\Par{\varphi_2}}\Par{x,y,z}=7x+8y+9z$.}\vspace{6pt}}
+%	\PrePb\TextA{Write $T\apostrophe\Par{\varphi_1}$ and $T\apostrophe\Par{\varphi_2}$ as liney combinas of $\psi_1,\psi_2,\psi_3$.}
+%	\Blind{\PrePb}\TextA{{\FontNorm\tgnr$T\apostrophe\Par{\varphi_1}=4\psi_1+5\psi_2+6\psi_3,\,\,T\apostrophe\Par{\varphi_2}=7\psi_1+8\psi_2+9\psi_3.$}\vspace{6pt}}
+%	\PrePc\TextA{What is $\null T\apostrophe$? What is $\range T\apostrophe$?}
+%}\TextA{\vspace{4pt}}
+%\Hc $T\Par{x,y,z}=0\Longleftrightarrow\MathLeftBrace{l}{4x+5y+6z=0\\7x+8y+9z=0}\Longleftrightarrow\hMath{l}{\left\{}{\;\right|}{x=z,\\y=-2z.}\,\hText{$Thus $\null T=\Span{e_1-2e_2+e_3},\\$where $\Par{e_1,e_2,e_3}$ is std bss of $\Rbb^3.}$\vspace{4pt}\TextA{}
+%\Hc Let $\Par{e_1-2e_2+e_3,-2e_2,e_3}$ be a bss, with corres dual bss $\Par{\varepsilon_1,\varepsilon_2,\varepsilon_3}$.\vspace{1.5pt}\TextA{}
+%\Hc Thus $\Span{e_1-2e_2+e_3}=\null T\Rightarrow \Span{e_1-2e_2+e_3}{^0}=\Span{\varepsilon_2,\varepsilon_3}=\range T\apostrophe.$\vspace{1.5pt}\TextA{}
+%\Hc Note that $\varepsilon_k=\varepsilon_k\Par{e_1}\psi_1+\varepsilon_k\Par{e_2}\psi_2+\varepsilon_k\Par{e_3}\psi_3.$\vspace{1.5pt}\TextA{}
+%\Hc And $\MathLeftMid{l}{\varepsilon_2\Par{e_2}=-\frac{\;1\;}{2},\varepsilon_2\Par{e_1}=\varepsilon_2\Par{e_1-2e_2+e_3}+\varepsilon_2\Par{2e_2}-\varepsilon_2\Par{e_3}=1,\\[1.5pt]\varepsilon_3\Par{e_2}=0,\varepsilon_3\Par{e_3}=\varepsilon_3\Par{e_1-2e_2+e_3}+\varepsilon_3\Par{2e_2}-\varepsilon_3\Par{e_3}=-1.}$\vspace{1.5pt}\TextA{}
+%\Hc Hence $\varepsilon_2=\psi_1-\frac{\;1\;}{2}\psi_2,\;\varepsilon_3=-\psi_1+\psi_3.$ Now $\range T\apostrophe=\Span{\psi_1-\frac{\;1\;}{2}\psi_2,\:-\psi_1+\psi_3}.$\vspace{3pt}\TextA{}
+%\Hc\Or $\range T\apostrophe=\Span[\BigPar]{T\apostrophe\Par{\varphi_1},\,T\apostrophe\Par{\varphi_2}}=\Span{4\psi_1+5\psi_2+6\psi_3,\:7\psi_1+8\psi_2+9\psi_3}.$\vspace{6pt}\TextA{}
+%\Hc Supp $T\apostrophe\Par{x\varphi_1+y\varphi_2}=\Par{4x+7y}\psi_1+\Par{5x+8y}\psi_2+\Par{6x+9y}\psi_3=0.$\TextA{}
+%\Hc Then $x+y=4x+7y=x=y=0.$ Hence $\null T\apostrophe=\zeroSubs.$\vspace{3pt}\TextA{}
+%\Hc\Or $\null T=\Span{e_1-2e_2+e_3}\Rightarrow V=\Span{{-2e_2,\:e_3}}\oplus\null T.$\vspace{1pt}\TextA{}
+%\Hc$\Rightarrow \range T=\Bra{Tx:x\in\Span{{-2e_2,\:e_3}}}=\Span[\BigPar]{T\Par{{-2e_2}},\,T\Par{e_3}}$\vspace{1pt}\TextA{}
+%\Hc$=\Span{-10f_1-16f_2,\:6f_1+9f_2}=\Span{f_1,\,f_2}=\Rbb^2.$ Now $\null T\apostrophe=\Par{\range T}{^0}=\zeroSubs.$\vspace{4pt}\TextA{}
+%\Hc\Or For any $A,B\in\Rbb,$ asum $\Par{x,y,z}$ is suth $A=4x+5y+6z,\,B=7x+8y+9z.$\TextA{}
+%\Hc By computing $x=z+4\big/3\Par{B-A},\;y=-2z+\Par{7A-4B}\XSlash 3,\;z=z.$ \;\; {\tgsl\FontSmall An exa for (4E 3.E.8).}\TextA{}
+%\Hc Hence $\Par{x,y,z}$ exis $\Rightarrow\Par{A,B}\in\range T.$ \,Now $T$ surj $\Rightarrow T\apostrophe$ inje.\PfEnd
+%\SepLine
 
 %\Anchor{3F14}\ProblemN[]{14}{
 %		\TextA{Define $T:\PoRi\rightarrow\PoRi$ by $\Par{Tp}\Par{x}=x^2 p\Par{x}+p\apostrophe\apostrophe\Par{x}$ for each $x\in\Rbb.$\vspace{4pt}}
@@ -4038,7 +4038,7 @@ If $q\Par{T}v=0\Rightarrow s\Par{T}v=0.$ Othws, $q\Par{T}v\in\Null\Par{T-\lambda
 \Anchor{8C12}\ProblemN{C.12}{
 	\TextA{Supp $\Fbb=\Cbb,$ $T\in\Lm{V},$ and $m_T$ has no repeated zeros. Prove $T$ diag. \hfill\tgnr\FontNorm By (4E B.6).}
 }Supp $m_T\Par{z}=\Par{z-\lambda_1}\cdots\Par{z-\lambda_m}$ for disti $\lambda.$ Let $G_j=G\Par{\lambda_j,T}$ invard $T.$\parSol{}
-Fix one $j.$ Supp $v\in G_j$ and $u=\Par{T-\lambda_j}v.$ We show $u=0,$ then $v\in E\Par{\lambda_j,T}.$\parSol{}
+Fix one $j.$ Supp $v\in G_j$ and $u=\Par{T-\lambda_jI}v.$ We show $u=0,$ then $v\in E\Par{\lambda_j,T}.$\parSol{}
 Let $q_j\Par{z}=\prod_{i\neq j}^m\Par{z-\lambda_i}.$ Then $q_j\Par{T}\Par{T-\lambda_jI}v=q_j\Par{T\mmid_{G_j}}u.$ \,又 Each $\Par{T\mmid_{G_j}-\lambda_kI}$ inv.\PfEnd
 \SepLine
 
