@@ -163,7 +163,7 @@ Thus $\bigcap_{\alpha\in\Gamma}U_\alpha$ is nonempty subset of $V$ that is closd
 
 \Anchor{1CNC}\BulletPointX\NoteForSmall{\Large $“\complement_V U \cup \zeroSubs”$}\;\;$“\complement_V U \cup \zeroSubs”$ is supposed to be a subsp $W$ suth $V=U\oplus W$.\TextB{\vspace{3pt}}
 But if we let $u\in U\nonzero$ and $w\in W\nonzero$, then $\MathRightBrace{l}{w\in\complement_V U \cup \zeroSubs\\ u\pm w\in\complement_V U \cup \zeroSubs }\Rightarrow u\in\complement_V U \cup \zeroSubs.$ Ctradic.\vspace{3pt}\TextB{}
-To fix this, {\FontLarge denote the set $\Bra{W_{\hspace{-1pt}1},W_{\hspace{-1pt}2},\cdots}$ by $\Scom{V}{U}$,} {\small where each $W_{\!i}\oplus U=V.$}
+To fix this, {\FontLarge denote the set $\Bra{W_{\hspace{-1pt}1},W_{\hspace{-1pt}2},\cdots}$ by $\Scom{V}{U}$,} {where each $W_{\!i}\oplus U=V.$}
 \SepLine
 
 \Anchor{1CT2}\ProblemBX{\TipsN{2}}{
@@ -573,7 +573,7 @@ Define $T\in\Lm{V,W}$ by $T\Par{u_v+w_v}=Su_v.$\PfEnd\parSol{\vspace{0pt}}
 
 \Anchor{3ANLC}\ProblemBX[]{\NoteForSmall{Complex of Liney Maps}}{
 	Supp $V,W$ are vecsps over $\Rbb.$ Then $\Lm{V,W}{_\Cbb}=\Lm{V_{\!\Cbb},W_\Cbb}.$\TextB{}
-	For $S,T\in\Lm{V,W},$ $\Par{S+\lambda T}{_\Cbb}=S_\Cbb+\lambda T_{\!\Cbb}.$ For $S\in\Lm{V,W},T\in\Lm{U,V},$ $\Par{ST}{_\Cbb}=S_\Cbb T_{\!\Cbb}.$\TextA{}
+	For $S,T\in\Lm{V,W},$ $\Par{S+\lambda T}{_\Cbb}=S_\Cbb+\lambda T_{\!\Cbb}.$ For $S\in\Lm{V,W},T\in\Lm{U,V},$ $\Par{ST}{_\Cbb}=S_\Cbb T_{\!\Cbb}.$\TextB{}
 	For $T\in\Lm{V,W},$ $\Null\Par{T_{\!\Cbb}}=\Par{\null T}{_\Cbb},\,\Range\Par{T_{\!\Cbb}}=\Par{\range T}{_\Cbb}.$\vspace{-3pt}\TextA{}
 }\SepLine
 
@@ -718,8 +718,8 @@ And \,$0=a_j w_j$ while $a_j\neq 0$ and $w_j\neq 0.$ Ctradic.\PfEnd\vspace{4pt}\
 \Or We prove the ctrapos\hspace{1pt}: \,Supp $\forall w_1,\dots,w_m\in W,\exists\,T\in\Lm{V,W},$ each $Tv_k=w_k.$\par\quad
 {Now we show $\Par{v_1,\dots,v_n}$ is liney indep. Supp {$\exists\,a_i\in\Fbb,a_1 v_1+\dots+a_n v_n=0$}.}\vspace{2pt}\par\quad
 {Choose one $w\in W\nonzero.$ By asum, for {$\BigPar{\overline{a_1}w,\dots,\overline{a_m}w},\exists\,T\in\Lm{V,W},$ each $Tv_k=\overline{a_k}w.$}}\vspace{2pt}\par\quad
-{Now we have {$ 0=T\BigBigPar{{\sum_{k=1}^m a_k v_k}}=\sum_{k=1}^m a_k Tv_k=\sum_{k=1}^m a_k\overline{a_k}w=\BigBigPar{{\sum_{k=1}^m \aMid{a_k}{^2}}}w$}.}\vspace{2pt}\par\quad
-{Then {$\sum_{k=1}^m\aMid{a_k}{^2}=0.$ Thus $a_1=\dots=a_m=0.$} Hence $\Par{v_1,\dots,v_n}$ is liney indep.}\PfEnd
+{Now we have {$ 0=T\BigBigPar{{\sum_{k=1}^m a_k v_k}}=\sum_{k=1}^m a_k Tv_k=\sum_{k=1}^m a_k\overline{a_k}w=\BigBigPar{{\sum_{k=1}^m \aMidsq{a_k}}}w$}.}\vspace{2pt}\par\quad
+{Then {$\sum_{k=1}^m\aMidsq{a_k}=0.$ Thus $a_1=\dots=a_m=0.$} Hence $\Par{v_1,\dots,v_n}$ is liney indep.}\PfEnd
 \SepLine
 
 \Anchor{3A4e11}\ProblemBnoor{4E 11}{
@@ -1127,15 +1127,14 @@ $\MathLeftrightMid{l}{$
 
 \ProblemN{\Anchor{3B28}28}{
 	\TextA{Supp $T\in\Lm{V,W}.$ Let $\Par{Tv_1,\dots,Tv_m}$ be a bss of $\range T$ and each $w_i=Tv_i.$\vspace{2pt}}
-	\PrePa\TextA{Prove $\exists\,\varphi_1,\dots,\varphi_m\in\Lm{V,\Fbb}$ suth $\forall v\in V,Tv=\varphi_1\Par{v}w_1+\dots+\varphi_m\Par{v}w_m$.\vspace{4pt}}
-	\PrePb{\FontSmall\Sbra{4E 3.F.5}} \TextA{$\forall v\in V,\exists\,!\,\varphi_i\Par{v}\in\Fbb,Tv=\varphi_1\Par{v}w_1+\dots+\varphi_m\Par{v}w_m.$\vspace{2pt}}\Anchor{3F4e5}
-	\Blind{\PrePb{\FontSmall\Sbra{4E 3.F.5}}} \TextA{Thus defining each $\varphi_i:V\rightarrow\Fbb.$ \;Show each $\varphi_i\in\Lm{V,\Fbb}.$}
+	\PrePa\TextA{Prove $\exists\,\varphi_1,\dots,\varphi_m\in\Lm{V,\Fbb}$ suth $\forall v\in V,Tv=\varphi_1\Par{v}\:\!w_1+\dots+\varphi_m\Par{v}\:\!w_m$.\vspace{4pt}}
+	\PrePb{\FontSmall\Sbra{4E 3.F.5}} \TextA{$\forall v\in V,\exists\,!\,\varphi_i\Par{v}\in\Fbb,Tv=\varphi_1\Par{v}\:\!w_1+\dots+\varphi_m\Par{v}\:\!w_m.$\vspace{2pt}}\Anchor{3F4e5}
+	\Blind{{\FontSmall\Sbra{4E 3.F.5}}} \TextA{Thus defining each $\varphi_i:V\rightarrow\Fbb.$ \;Show each $\varphi_i\in\Lm{V,\Fbb}.$}
 }{\FontSmall\tgsl The solus to (b) with (b) itself is another solus to (a).}\par\quad
-(b) $\sum_{i=1}^m\varphi_i\Par{u+\lambda v}w_i=T\Par{u+\lambda v}=Tu+\lambda Tv={\BigBigPar{{\sum_{i=1}^m\varphi_i\Par{u}w_i}}}+\lambda{\BigBigPar{{\sum_{i=1}^m\varphi_i\Par{v}w_i}}}.$\PfEnd\vspace{4pt}\quad\Hb
-\Or Let $\Par{\psi_1, \dots, \psi_m}$ be a bss of $\Par{\range T}\apostrophe.$ Let each $\varphi_i=T\apostrophe\Par{\psi_i}\in V\apostrophe.$\PfEnd\vspace{4pt}\quad
 (a) $\Span{v_1,\dots,v_m}\oplus\null T=V\Rightarrow\forall v\in V,\exists\,!\,a_i\in\Fbb,u\in\null T,\;v=\sum_{i=1}^m a_i v_i+u.$\par\quad\Ha
 Define $\varphi_i\in\Lm{V,\Fbb}$ by $\varphi_i\Par{v_j}=\delta_{i,j},\;\varphi_i\Par{u}=0$ for all $u\in\null T.$\par\quad\Ha
-Linity: $\forall v,w\in V\,\Sbra{\exists\,!\,a_i,b_i\in\Fbb},\lambda\in\Fbb,\varphi_i\Par{v+\lambda w}=a_i+\lambda b_i=\varphi\Par{v}+\lambda\varphi\Par{w}.$\PfEnd
+Linity: $\forall v,w\in V\,\Sbra{\exists\,!\,a_i,b_i\in\Fbb},\lambda\in\Fbb,\varphi_i\Par{v+\lambda w}=a_i+\lambda b_i=\varphi\Par{v}+\lambda\varphi\Par{w}.$\PfEnd\vspace{4pt}\quad
+(b) $\sum_{i=1}^m\varphi_i\Par{u+\lambda v}w_i=T\Par{u+\lambda v}=Tu+\lambda Tv={\BigBigPar{{\sum_{i=1}^m\varphi_i\Par{u}w_i}}}+\lambda{\BigBigPar{{\sum_{i=1}^m\varphi_i\Par{v}\:\!w_i}}}.$\PfEnd
 \SepLine
 
 %\ProblemN{\Anchor{3B29}{29}}{
@@ -2775,7 +2774,7 @@ Thus $p\Par{z}=\sum_{j=1}^m a_j \Par{z-\lambda}\sum_{i=1}^k \lambda^{i-1}z^{k-i}
 
 \Anchor{4O4e2}\ProblemBnoor{4E 2}{
 	\TextB{Prove if $w,z\in\Cbb,$ then $\aXMid{\aMid{w}-\aMid{z}}\leqslant\aMid{w-z}.$}
-}$\aMid{w-z}{^2}=\Par{w-z}\Par{\overline{w}-\overline{z}}=\aMid{w}{^2}+\aMid{z}{^2}-2Re\Par{w\overline{z}}\geqslant\aMid{w}{^2}+\aMid{z}{^2}-2\aMid{w\overline{z}}=\aXMid{\aMid{w}-\aMid{z}}{^2}.$\vspace{2pt}\parSol{}
+}$\aMidsq{w-z}=\Par{w-z}\Par{\overline{w}-\overline{z}}=\aMidsq{w}+\aMidsq{z}-2Re\Par{w\overline{z}}\geqslant\aMidsq{w}+\aMidsq{z}-2\aMid{w\overline{z}}=\aXMidsq{\aMid{w}-\aMid{z}}.$\vspace{2pt}\parSol{}
 \Or $\aMid{w}=\aMid{w-z+z}\leqslant\aMid{w-z}+\aMid{z}\Rightarrow \aMid{w}-\aMid{z}\leqslant\aMid{w-z}.$\parSol{}
 \Blind{\Or}$\aMid{z}=\aMid{z-w+w}\leqslant\aMid{z-w}+\aMid{w}\Rightarrow \aMid{z}-\aMid{w}\leqslant\aMid{w-z}.$\PfEnd
 \SepLine
@@ -2821,7 +2820,7 @@ Thus $\Par{rs}\Par{z}=1$ for infily many $z,$ so for all $z.$ Now $\deg rs=1=\de
 \SepLine
 
 \ProblemN{\Anchor{4O6}{6}}{
-	\TextA{Supp non0 $p\in\PoF{m}$ has deg $m.$ Prove}
+	\TextA{Supp non0 $p\in\PoC{m}$ has deg $m.$ Prove}
 	\TextA{[P] $p$ has $m$ disti zeros $\Longleftrightarrow p$ and its deri $p\apostrophe$ have no common zeros. [Q]}
 }(a) Supp $p$ of deg $m$ has $m$ disti zeros. By [4.14], $p\Par{z}=c\Par{z-\lambda_1}\cdots\Par{z-\lambda_m}.$\vspace{1pt}\parSol{\Ha}
 If $m=0,$ then $p=c\neq 0\Rightarrow p$ has no zeros, and $p\apostrophe=0,$ done.\parSol{\Ha}
@@ -2831,7 +2830,7 @@ Now $p\apostrophe\Par{z}=\Par{z-\lambda_j}q_j\apostrophe\Par{z}+q_j\Par{z}\Right
 \Or ${}^{\neg}Q\Rightarrow{}{^\neg}P:$ \;Supp $p\Par{z}=\Par{z-\lambda}q\Par{z},\;p\apostrophe\Par{z}=\Par{z-\lambda}r\Par{z}.$\parSol{\Ha}
 Becs $p\apostrophe\Par{z}=\Par{z-\lambda}q\apostrophe\Par{z}+q\Par{z}\Rightarrow p\apostrophe\Par{\lambda}=q\Par{\lambda}=0\Rightarrow q\Par{z}=\Par{z-\lambda}s\Par{z}.$\parSol{\Ha}
 Now $p\Par{z}=\Par{z-\lambda}{^2}s\Par{z}.$ Hence $p$ has strictly less than $m$ disti zeros.\vspace{4pt}\parSol{}
-(b) ${}^{\neg}P\Rightarrow{}{^\neg}Q:$ \;Becs $0\neq p\in\PoF{m}.$ Supp all disti zeros are $\lambda_1,\dots,\lambda_M,$ with $M<m.$\parSol{\Hb}
+(b) ${}^{\neg}P\Rightarrow{}{^\neg}Q:$ \;Becs $0\neq p\in\PoC{m}.$ Supp all disti zeros are $\lambda_1,\dots,\lambda_M,$ with $M<m.$\parSol{\Hb}
 By Pigeon Hole Principle, $\Par{z-\lambda_k}{^{2}}q\Par{z}=p\Par{z}$ for some $\lambda_k\Rightarrow p\apostrophe\Par{\lambda_k}=0=p\Par{\lambda_k}.$\PfEnd\vspace{2pt}
 \ANote If $\Fbb=\Rbb.$ Then replace ``$m$ disti zeros'' with ``$m$ disti zeros in $\Cbb$'' and the result still holds.
 \SepLine
@@ -2839,7 +2838,7 @@ By Pigeon Hole Principle, $\Par{z-\lambda_k}{^{2}}q\Par{z}=p\Par{z}$ for some $\
 \ProblemN{\Anchor{4O7}{7}}{
 	\TextA{Prove every $p\in\PoRi$ of odd deg has a zero.\hfill\tgnr\FontNorm Using [4.17], $\deg p=2M+m\Rightarrow m$ is odd.}
 }\Or Write $p\Par{x}=x^m\envFontSmall\XPar{${\FontLarge$\frac{a_0}{x^m}$}${}+{}${\FontLarge$\frac{a_1}{x^{m-1}}$}${}+\dots+{}${\FontLarge$\frac{a_{m-1}}{x}$}${}+a_m\envFontSmall}\Rightarrow p$ continuous on $\Interval{(}{]}{{-\infty,0}}\cup\Interval{[}{)}{0,\infty}.$\parSol{\vspace{3pt}}
-\Blind{\Or}Let $\delta=\aMid{a_m}{^{-1}}a_m.$ Becs $\lim\limits_{x\rightarrow -\infty}p\Par{x}=-\delta\infty\,;\;\;\lim\limits_{x\rightarrow \infty}p\Par{x}=\delta\infty\Rightarrow p$ has at least one real zero.\PfEnd
+Let $\delta=\aMid{a_m}{^{-1}}a_m.$ \:\:Becs $\lim\limits_{x\rightarrow -\infty}p\Par{x}=-\delta\infty\,;\;\;\lim\limits_{x\rightarrow \infty}p\Par{x}=\delta\infty\Rightarrow p$ has at least one real zero.\PfEnd
 \SepLine
 
 \ProblemN{\Anchor{4O8}{8}}{
@@ -3512,7 +3511,7 @@ Then $\exists\,\Par{T-\lambda_j I}$ not inje. Now $p\Par{\lambda_j}-\alpha=0.$ \
 
 \Anchor{5BI4e28}\ProblemBnoor{4E I.28}{
 	\TextB{Supp $V$ is finide and $T\in \Lm{V}$. Prove the min $p$ of $T\apostrophe$ equals the min $q$ of $T$.}
-}(a) $\forall\varphi\in V\apostrophe,\,p\Par{T\apostrophe}\Par{\varphi}=\varphi\circ p\Par{T}=0\Rightarrow p\Par{T}\in\null\varphi.$ Thus $p\Par{T}=0.$ And $q\Par{T\apostrophe}=0.$\PfEnd\vspace{2pt}\parSol{}
+}(a) $\forall\varphi\in V\apostrophe,\,p\Par{T\apostrophe}\Par{\varphi}=\varphi\circ p\Par{T}=0\Rightarrow \range p\Par{T}\subseteq\null\varphi.$ Thus $p\Par{T}=0.$ 又 $q\Par{T\apostrophe}=0.$\PfEnd\vspace{2pt}\parSol{}
 \Or By (3.F.15), for any $s\in\PoFi,\:s\Par{T\apostrophe}=s\Par{T}\apostrophe=0\Longleftrightarrow s\Par{T}=0.$ Simlr.\PfEnd
 \SepLine
 
@@ -4189,7 +4188,7 @@ By \Sbra{8.B \TIPSN{3}}, $V_{\!\Cbb}=\Null\Par{T_{\!\Cbb}-\lambda I}{^k}\oplus\N
 (a) $Q\Par{\lambda,T}=\nullp q\Par{T}{^d},$ where $d=\dim G\Par{\lambda,T_{\!\Cbb}}.$\parNot
 (b) The expo of $q$ in the factoriz of $m_T$ is the smallest $m\in\Nbp$ suth $q\Par{T}{^m}\Big|{_{\:\!Q\SmallPar{\:\!\lambda,\,T\:\!}}}=0.$\vspace{1pt}\parNot
 (c) $m_T=p_1^{\alpha_1}\!\cdots p_m^{\alpha_m}\:q_1^{\beta_1}\!\cdots q_M^{\beta_M}\Longleftrightarrow V=\Sbra{\bigoplus_{j=1}^mG\Par{\mu_j,T}}\oplus\Sbra{\bigoplus_{k=1}^MQ\Par{\lambda_k,T}}.$\vspace{1pt}\parNot\Hc
-Where each $p_j\Par{z}=z-\mu_j,\,q_k\Par{z}=z^2-2\Par{\Real\lambda_k}z+\aMid{\lambda_k}{^2}=z^2+b_kz+c_k.$\vspace{4pt}\parNot
+Where each $p_j\Par{z}=z-\mu_j,\,q_k\Par{z}=z^2-2\Par{\Real\lambda_k}z+\aMidsq{\lambda_k}=z^2+b_kz+c_k.$\vspace{4pt}\parNot
 Fix one $k.$ Let $q\Par{z}=q_k\Par{z}=\Par{z-\lambda}\Par{z-\overline{\lambda}},\lambda=a+b\i,G=G\Par{\lambda,T_{\!\Cbb}},\overline{G}=G\Par{\overline{\lambda},T_{\!\Cbb}}.$\vspace{1pt}\parNot
 Replace $T$ with $T\mmid_{\:\!Q}.$ Let $Q=Q\Par{\lambda,T}$ of dim $\beta,$ and $Q_\Cbb=G\oplus\overline{G},$ and Jordan bss $B_J$ of $Q_\Cbb.$\vspace{2pt}\parNot
 Now $\Mt{T_{\!\Cbb}}=\footnotesize\begin{pmatrix}A_1 &\hspace{-8pt} 0\\[-4pt]0 &\hspace{-8pt} A_2\end{pmatrix},\Mt{T_{\!\Cbb}-\lambda I}=\footnotesize\begin{pmatrix}\overline{R_1} &\hspace{-8pt} 0\\[-2pt]0 &\hspace{-8pt}\overline{R_2}\end{pmatrix},\,\Mt{T_{\!\Cbb}-\overline{\lambda}I}=\footnotesize\begin{pmatrix}{R_2} &\hspace{-8pt} 0\\[-4pt]0 &\hspace{-8pt} R_1\end{pmatrix}$ wrto Jordan bss.\vspace{2pt}\parNot

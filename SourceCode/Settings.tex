@@ -130,17 +130,26 @@
 
 \newcommand{\hText}[2][-4pt]{\hMath[#1]{l}{\left.}{\right.}{#2}}
 \newcommand{\Par}[2][1pt]{{\text{\forbra\envFontB(\hspace{#1}}}#2{\text{\hspace{#1}\forbra\envFontB)}}}
-\newcommandx{\Mid}[3][1=1pt,2=\big]{{\text{#2|}}\hspace{#1}{#3}\hspace{#1}{\text{#2|}}}
+\newcommandx{\Mid}[3][1=1pt,2=\big]{{\text{#2|}}\hspace{#1}{}#3{}\hspace{#1}{\text{#2|}}}
 \newcommand{\cMid}[2][1pt]{\Mid[#1]{#2}}
 \newcommand{\aMid}[2][1pt]{\Mid[#1]{#2}}
+\newcommand{\aMidsq}[2][1pt]{\Mid[#1]{#2}{\hspace{0.5pt}}{^2}}
 \newcommand{\aXMid}[2][1pt]{\Mid[#1][\Big]{#2}}
+\newcommand{\aXMidsq}[2][1pt]{\Mid[#1][\Big]{#2}{\hspace{1pt}}{^2}}
+\newcommand{\innerA}[2][]{\aXMid[0pt]{#1\Ang{#2}}}
+\newcommand{\innerAsq}[2][]{\aXMidsq[0pt]{#1\Ang{#2}}}
+\newcommand{\SmallinnerA}[1]{\aMid[0pt]{\SmallAng{#1}}}
+\newcommand{\SmallinnerAsq}[1]{\aMidsq[0pt]{\SmallAng{#1}}}
 
 \newcommand{\SmallAng}[1]{\langle{#1}\rangle}
-\newcommand{\Ang}[1]{\big\langle{#1}\big\rangle}
-\newcommand{\BigAng}[1]{\Big\langle{#1}\Big\rangle}
-\newcommand{\SmallDvert}[2][1pt]{\Vert\hspace{#1}{#2}\hspace{#1}\Vert}
-\newcommand{\Dvert}[2][1pt]{\big\Vert\hspace{#1}{#2}\hspace{#1}\big\Vert}
-\newcommand{\BigDvert}[2][1pt]{\Big\Vert\hspace{#1}{#2}\hspace{#1}\Big\Vert}
+\newcommand{\Ang}[1]{\big\langle{}#1{}\big\rangle}
+\newcommand{\BigAng}[1]{\Big\langle{}#1{}\Big\rangle}
+\newcommand{\SmallDvert}[2][0.5pt]{\Vert\hspace{#1}{}#2{}\hspace{#1}\Vert}
+\newcommand{\SmallDvertsq}[2][0.5pt]{\Vert\hspace{#1}{}#2{}\hspace{#1}\Vert{\hspace{0.5pt}}{^2}}
+\newcommand{\Dvert}[2][1pt]{\big\Vert\hspace{#1}{}#2{}\hspace{#1}\big\Vert}
+\newcommand{\Dvertsq}[2][1pt]{\big\Vert\hspace{#1}{}#2{}\hspace{#1}\big\Vert{\hspace{0.5pt}}{^2}}
+\newcommand{\BigDvert}[2][1pt]{\Big\Vert\hspace{#1}{}#2{}\hspace{#1}\Big\Vert}
+\newcommand{\BigDvertsq}[2][1pt]{\Big\Vert\hspace{#1}{}#2{}\hspace{#1}\Big\Vert{\hspace{0.5pt}}{^2}}
 
 \newcommand{\Bra}[2][\envFont]{{\text{\forbra{#1\{}}}#2{\text{\forbra{#1\}}}}}
 \newcommand{\BigBra}[1]{\Bra[\envFontA]{#1}}
@@ -261,8 +270,8 @@
 \def\card{{\textup{\tgnr card}}\;\!}
 \def\rank{{\textup{\tgnr rank}}\;\!}
 \def\spn{{\textup{\tgnr span}}\;\!}
-\def\Real{{\textup{\tgnr Re}}\;\!} % For  Re x
-\def\Imaginary{{\textup{\tgnr Im}}\;\!} % For  Im x
+\def\Real{{\textup{\tgnr Re}}\;\!} % For  Re x, Re <...>
+\def\Imaginary{{\textup{\tgnr Im}}\;\!} % For  Im x, Im <...>
 \def\REAL{\textup{\tgnr Re}} % For  Re(...)
 \def\IMAGINARY{\textup{\tgnr Im}} % For Im(...)
 \def\Trace{\textup{trace}} % For trace(...)
