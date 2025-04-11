@@ -3568,7 +3568,7 @@ Replace $V$ with $\Null\Par{T^2+bT+cI}{^{j}}$ and $T$ with $T$ restr to $\Null\P
 Then $\Par{T^2+bT+cI}{^j}=0\Rightarrow \Par{z^2+bz+c}{^j}$ is a multi of the min of $T\Rightarrow$ no eigvecs for $T.$\parSol{}
 Let $U$ be invarspd $T$ and has the largest even dim of all such invarsp. If $V=U,$ done. Othws,\parSol{}
 for $w\in V\Backslash U\Rightarrow W=\Par{w,Tw}$ invard $T$ of dim $2\Rightarrow U+W$ of dim $\Par{{\dim U+2}}$ invard $T.$\PfEnd\vspace{2pt}\parSol{}
-\Or Let $q\Par{z}=z^2+bz+c.$ Note that the min of $T$ restr to $\nullp q\Par{T}{^j}$ have no real zeros.\parSol{}
+\Or Let $q\Par{z}=z^2+bz+c.$ Note that the min of $T$ restr to each $\nullp q\Par{T}{^j}$ has no real zeros.\parSol{}
 If some $\dim\nullp q\Par{T}{^j}$ is odd. Then $T$ restr to $\nullp q\Par{T}{^j}$ must have a real eigval, ctradic.\PfEnd
 \SepLine
 
@@ -3735,7 +3735,7 @@ Let $q\Par{z}\Par{z-\lambda_j}=p\Par{z}\Rightarrow 0=p\Par{T}=\Par{T-\lambda_jI}
 Let $q\Par{z}=\Par{z-\lambda_j}s\Par{z}\Rightarrow\rangep q\Par{T}\subseteq\Range\Par{T-\lambda_jI}.$ \,Note that $q\Par{T}\neq0.$\PfEnd\vspace{6pt}\quad
 \Or Let $\lambda_1,\dots,\lambda_m$ be disti eigvals. Now $V=\Null\Par{T-\lambda_kI}\oplus\Range\Par{T-\lambda_kI}$ for each $\lambda_k.$\par\quad
 Asum $V=\Sbra{\bigoplus_{i=1}^j\Null\Par{T-\lambda_jI}}\oplus\Sbra{\bigcap_{i=1}^j\Range\Par{T-\lambda_jI}}$ for $j\in\Bra{1,\dots,m-1}.$\par\quad
-Becs $\bigcap_{i=1}^j\Range\Par{T-\lambda_iI}\supseteq\Null\Par{T-\lambda_{j+1}I}.$ By (L1) and \Sbra{1.C \TIPSN{3}},\par\quad
+Becs by (L1), $\bigcap_{i=1}^j\Range\Par{T-\lambda_iI}\supseteq\Null\Par{T-\lambda_{j+1}I},$ and by \Sbra{1.C \TIPSN{3}},\par\quad
 $\bigcap_{i=1}^j\Range\Par{T-\lambda_iI}=\Null\Par{T-\lambda_{j+1}I}\oplus\Sbra{\bigcap_{i=1}^j\Range\Par{T-\lambda_jI}\cap\Range\Par{T-\lambda_{j+1}I}}.$\par\quad
 By induc, $V=\Sbra{\Null\Par{T-\lambda_1I}\oplus\cdots\oplus\Null\Par{T-\lambda_mI}}\oplus\Sbra{\Range\Par{T-\lambda_1I}\cap\cdots\cap\Range\Par{T-\lambda_mI}}.$\par\quad
 Asum $U=\bigcap_{k=1}^m\Range\Par{T-\lambda_kI}\neq\zeroSubs.$ Becs $U$ invard $T.$ Thus $\exists\,\mu=\lambda_j$ eigval of $T\mmid_U.$ Ctradic.\PfEnd
@@ -4063,8 +4063,8 @@ Then $\exists\,!\,u_1\in G\Par{\lambda_1,T\mmid_U},w_k\in G\Par{\lambda_k,T\mmid
 
 \Anchor{8BT3}\ProblemN{\BulletPointX B.\TipsN{3}}{
 	\TextA{Supp $\Fbb=\Cbb,$ and $q\Par{z}=\Par{z-\lambda_1}{^{\alpha_1}}\cdots\Par{z-\lambda_k}{^{\alpha_k}}.$}
-	\TextA{Let $F_{\!j}=\Null\Par{T-\lambda_j}{^{\alpha_j}}.$ Prove $\nullp q\Par{T}=F_{\!1}\oplus\cdots\oplus F_{\!m}.$}
-}Each $\Par{T-\lambda_kI}{^{\alpha_k}}\Big|{_{\:\!G\SmallPar{\:\!\lambda_j,\,T\:\!}}}$ is inje for $k\neq j\Rightarrow\nullp q\Par{T}\Big|{_{\:\!G\SmallPar{\:\!\lambda_j,\,T\:\!}}}\subseteq F_{\!j}.$ \;\Or By \Sbra{B \TIPSN{1,4}}.\PfEnd
+	\TextA{Let $F_{\!j}=\Null\Par{T-\lambda_jI}{^{\alpha_j}}.$ Prove $\nullp q\Par{T}=F_{\!1}\oplus\cdots\oplus F_{\!m}.$}
+}Each $\Par{T-\lambda_kI}{^{\alpha_k}}\Big|{_{\:\!G\SmallPar{\:\!\lambda_j,\,T\:\!}}}$ is inje for $k\neq j\Rightarrow\nullp q\Par{T}\Big|{_{\:\!G\SmallPar{\:\!\lambda_j,\,T\:\!}}}=F_{\!j}.$ \;\Or By \Sbra{B \TIPSN{1,4}}.\PfEnd
 \SepLine
 \pagebreak
 
@@ -4072,12 +4072,11 @@ Then $\exists\,!\,u_1\in G\Par{\lambda_1,T\mmid_U},w_k\in G\Par{\lambda_k,T\mmid
 	\TextA{Supp $p=sq$ is the min of $T\in\Lm{V}$ and $s,q$ have no common zeros.}
 	\TextA{Prove $V=\nullp s\Par{T}\oplus\nullp q\Par{T}.$\hfill\tgnr\FontNorm\ACoro $\nullp s\Par{T}=\rangep q\Par{T}.$}
 }By Exe (4E 4.13), $\forall v\in V,v=u+w,$ where $u=s\Par{T}a\Par{T}v,\,w=q\Par{T}b\Par{T}v.$ Immed.\PfEnd\vspace{2pt}\parSol{}
-\Or By \Sbra{B \TIPSN{3}}. \:\Or Let $V_{\!\Cbb}=G\Par{\lambda_1,T_{\!\Cbb}}\oplus\cdots\oplus G\Par{\lambda_m,T_{\!\Cbb}},$ and $p\Par{z}=\Par{z-\lambda_1}{^{k_1}}\cdots\Par{z-\lambda_m}{^{k_m}}.$\vspace{1pt}\parSol{}
+\Or Let $V_{\!\Cbb}=G\Par{\lambda_1,T_{\!\Cbb}}\oplus\cdots\oplus G\Par{\lambda_m,T_{\!\Cbb}},$ and $p\Par{z}=\Par{z-\lambda_1}{^{k_1}}\cdots\Par{z-\lambda_m}{^{k_m}}.$\vspace{1pt}\parSol{}
 Let $s\Par{z}=\Par{z-\lambda_{\alpha_1}}{^{k_{\alpha_1}}}\cdots\Par{z-\lambda_{\alpha_A}}{^{k_{\alpha_A}}},\;q\Par{z}=\Par{z-\lambda_{\beta_1}}{^{k_{\beta_1}}}\cdots\Par{z-\lambda_{\beta_B}}{^{k_{\beta_B}}},$ with all $\alpha_j\neq\beta_i.$\parSol{}
-Note that $\forall v\in V_{\!\Cbb},\exists\,!\,v_i\in G\Par{\lambda_i,T_{\!\Cbb}},\:v=v_1+\dots+v_m=\Par{v_{\:\!\!\alpha_1}+\dots+v_{\:\!\!\alpha_A}}+\Par{v_{\beta_1}+\dots+v_{\beta_B}}.$\parSol{}
-Thus $V_{\!\Cbb}=\nullp s\Par{T_{\!\Cbb}}\oplus\nullp q\Par{T_{\!\Cbb}}.$ And simlr, $\nullp s\Par{T_{\!\Cbb}}=G\Par{\lambda_{\alpha_1},T_{\!\Cbb}}\oplus\cdots\oplus G\Par{\lambda_{\alpha_A},T_{\!\Cbb}}.$\vspace{2pt}\parSol{}
-\AComm If $\lambda_{\alpha_j}\not\in\Rbb,$ then $\exists\,\lambda_{\alpha_i}=\overline{\lambda_{\alpha_j}}.$ Simlr for $\lambda_{\beta_j}.$ Now $V=\nullp s\Par{T}\oplus\nullp q\Par{T}.$\par\vspace{2pt}
-\NewNotation\;\;We call such $s$ or $q$ a {\tgsc poly block}. A factor $q$ of $p$ is a block $\Longleftrightarrow$ the other half $p\big/q$ is a block.\par
+By \Sbra{B \TIPSN{3}}, $\nullp s\Par{T_{\!\Cbb}}=G\Par{\lambda_{\alpha_1},T_{\!\Cbb}}\oplus\cdots\oplus G\Par{\lambda_{\alpha_A},T_{\!\Cbb}},$ and simlr for $q.$\vspace{1pt}\parSol{}
+Note that $\lambda_{\alpha_j}\not\in\Rbb,$ then $\exists\,\lambda_{\alpha_i}=\overline{\lambda_{\alpha_j}}.$ Simlr for $\lambda_{\beta_j}.$ Now $V=\nullp s\Par{T}\oplus\nullp q\Par{T}.$\par\vspace{3pt}
+\NewNotation\;\;We call such $s$ or $q$ a {\tgsc poly block}. A factor $q$ of $p$ is a block $\Longleftrightarrow$ the other half $p\big/q$ is a block.\par\vspace{2pt}
 \ACoro (1) If $q$ is a block of $m_T.$ Then $V=\nullp q\Par{T}\oplus\rangep q\Par{T}.$\parCor
 (2) If $s,q$ are blocks with no common zeros. Then $V=\rangep s\Par{T}+\range q\Par{T}.$\parCor
 (3) Supp $p=p_1\cdots p_k$ and $p_1,\dots,p_k$ have no common zeros, so are poly blocks of $p.$\parCor
@@ -4182,8 +4181,8 @@ Let $B=\Par{u_1+\i v_1,\dots,u_m+\i v_m}$ be a bss of $G\Par{\lambda,T_{\!\Cbb}}
 \Anchor{9A13}\ProblemN{13}{
 	\TextA{Supp $\Fbb=\Rbb,T\in\Lm{V},$ and $b^2<4c.$ Let $q\Par{z}=z^2+bz+c=\Par{z-\lambda}\Par{z-\overline{\lambda}}.$\vspace{2pt}}
 	\TextA{Prove $\dim\nullp q\Par{T}{^j}$ is even for each $j\in\Nbp.$\tgnr\hfill\FontSmall\Sbra{See also {\NOTEFOR} [4E 5.33] in (5.BI).}}
-}(a) Replace $V$ with $\nullp q\SmallPar{T}{^j}$ and $T$ with $T$ restr to $V.$ Becs $m_T\Par{z}=q\Par{z}{^k}.$\parSol{\Ha}
-By \Sbra{8.B \TIPSN{4}}, $V_{\!\Cbb}=\Null\Par{T_{\!\Cbb}-\lambda I}{^k}\oplus\Null\Par{T_{\!\Cbb}-\overline{\lambda}I}.$ By [9.17] and [9.4].\PfEnd\vspace{4pt}
+}(a) Replace $V$ with $\nullp q\Par{T}{^j}$ and $T$ with $T$ restr to $V.$ Becs $m_T=q{^k}.$\parSol{\Ha}
+By \Sbra{8.B \TIPSN{4}}, $V_{\!\Cbb}=\Null\Par{T_{\!\Cbb}-\lambda I}{^k}\oplus\Null\Par{T_{\!\Cbb}-\overline{\lambda}I}{^k}.$ By [9.17] and [9.4].\PfEnd\vspace{4pt}
 \ANote Let $Q\Par{\lambda,T}=\nullp q\Par{T}{^{\dim V}}.$ Then by (4E 8.B.6,7) for $T_{\!\Cbb},$ by [9.10,20], and by \Sbra{8.B \TIPSN{4}},\parNot
 (a) $Q\Par{\lambda,T}=\nullp q\Par{T}{^d},$ where $d=\dim G\Par{\lambda,T_{\!\Cbb}}.$\parNot
 (b) The expo of $q$ in the factoriz of $m_T$ is the smallest $m\in\Nbp$ suth $q\Par{T}{^m}\Big|{_{\:\!Q\SmallPar{\:\!\lambda,\,T\:\!}}}=0.$\vspace{1pt}\parNot
