@@ -69,7 +69,7 @@ Then $\Dvertsq{u+w}+\Dvertsq{u-w}\leqslant2m.$ \;\;\Or $\Dvert{u+w}\cdot\Dvert{u
 
 
 \Anchor{6B'1}\ProblemB{
-	\TextA{Supp $\Par{e_1,\dots,e_m}$ is orthog, and $v\in V.$ \,Show $\sum_{k=1}^m\!\BigPar{2-\Dvertsq{e_k}}\,\innerAsq{v,e_k}\leqslant\Dvertsq{v}.$\vspace{2pt}}
+	\TextA{Supp $\Par{e_1,\dots,e_m}$ orthog, $v\in V.$ \,Show $\sum_{k=1}^m\!\BigPar{1-\Dvertsq{e_k}}\,\innerAsq{v,e_k}\leqslant\Dvertsq{v}-\sum_{k=1}^m\innerAsq{v,e_k}.$\vspace{2pt}}
 }Let $u=\Ang{v,e_1}\,e_1+\dots+\Ang{v,e_m}\,e_m\Rightarrow\Dvertsq{u}=\sum_{k=1}^n\innerAsq[{\:\!\Dvert{e_k}\,}]{v,e_k},\,\Ang{u,v}=\sum_{k=1}^n\innerAsq{v,e_k}.$\vspace{2pt}\parSol{}
 Let $\Dvertsq{v-u}=\Dvertsq{v}+\Dvertsq{u}-\Ang{v,u}-\Ang{u,v}=\Dvertsq{v}+\sum_{k=1}^n\!\BigPar{\Dvertsq{e_k}-2}\,\innerAsq{v,e_k}\geqslant0.$\PfEnd\vspace{4pt}
 \Anchor{6B2}\ACoro If orthon, $\Ang{u,\,v-u}=0\Rightarrow\Dvertsq{v}=\Dvertsq{u}+\Dvertsq{v-u}.$\parCor
@@ -77,14 +77,13 @@ Bessel's Inequa: $\sum_{k=1}^m\innerAsq{v,e_k}\leqslant\Dvertsq{v}.$ \:\Sbra{Exe
 \SepLine
 
 \Anchor{6B14}\ProblemN{14}{
-	\TextA{Supp $\Par{e_1,\dots,e_n}$ is a orthon bss of $V$ and each $v_j\in V$ suth $\Dvert{e_j-v_j}<{}${\Large$\frac{\;1}{\sqrt{n}\;}$}.}
-	\TextA{Prove $B_V=\Par{v_1,\dots,v_n}.$}
-}Let $a_1v_1+\dots+a_nv_n=0.$ Note that each {\Large$\frac{\;\aMid{a_j}}{\sqrt{n}\;}$}${}\geqslant\BigDvert{a_j\Par{e_j-v_j}}.$\parSol{}
+	\TextA{Supp $\Par{e_1,\dots,e_m}$ orthon, each $v_j\in V$ suth $\Dvert{e_j-v_j}<{}${\Large$\frac{\;1}{\sqrt{m}\;}$}. Show $\Par{v_1,\dots,v_m}$ liney indep.\vspace{3pt}}
+}Let $a_1v_1+\dots+a_mv_m=0.$ Note that each \:$\aMid{a_j}\big/\!\sqrt{m}\geqslant\BigDvert{a_j\Par{e_j-v_j}}.$\vspace{3pt}\parSol{}
 Then
-$\sum_{j=1}^n\aMidsq{a_j}\Big/n\geqslant\sum_{j=1}^n\BigDvertsq{a_j\Par{e_j-v_j}}$\vspace{3pt}\parSol{}
-\Blind{Then $\sum_{j=1}^n\aMidsq{a_j}\Big/n$}${}\geqslant\BigDvertsq{\sum_{j=1}^na_j\Par{e_j-v_j}}=\sum_{j=1}^n\aMidsq{a_j}\Longrightarrow\sum_{j=1}^n\aMidsq{a_j}=0$ by ctradic.\PfEnd\vspace{6pt}
-\AComm If each $\Dvert{e_j-v_j}=1\Big/\sqrt{n}$, then $\Par{v_1,\dots,v_n}$ might not be a bss even if $n\neq1.$\parCom
-Let $v_j=e_j-\Par{e_1+\dots+e_n}\Big/n\Rightarrow\Dvert{e_j-v_j}{^2}=1\big/n.$ \;Note that $v_1+\dots+v_n=0.$\PfEnd
+$\sum_{j=1}^m\aMidsq{a_j}\Big/m\geqslant\sum_{j=1}^m\BigDvertsq{a_j\Par{e_j-v_j}}$\vspace{3pt}\parSol{}
+\Blind{Then $\sum_{j=1}^m\aMidsq{a_j}\Big/m$}${}\geqslant\BigDvertsq{\sum_{j=1}^ma_j\Par{e_j-v_j}}=\sum_{j=1}^m\aMidsq{a_j}\Longrightarrow\sum_{j=1}^m\aMidsq{a_j}=0$ by ctradic.\PfEnd\vspace{6pt}
+\AComm If each $\Dvert{e_j-v_j}=1\Big/\sqrt{m}$, then $\Par{v_1,\dots,v_m}$ might be liney dep even if $m\neq1.$\parCom
+Let $v_j=e_j-\Par{e_1+\dots+e_m}\Big/m\Rightarrow\Dvert{e_j-v_j}{^2}=1\big/m.$ \;Note that $v_1+\dots+v_m=0.$\PfEnd
 \SepLine
 
 \Anchor{6B4e9}\ProblemBnoor{4E 9}{
@@ -155,16 +154,23 @@ Becs $\Par{D+N}{^{2p+q}}=D^{2p+q}+\dots+D^{2p+q-k}N^k+\dots+D^{p+q+1}N^{p-1}=D^{
 Now $T^{2p+q}v=a_1\lambda_1^{p+q+1}T^{p-1}e_1+\dots+a_n\lambda_n^{p+q+1}T^{p-1}e_n.$ Note that $\Dvert{T^{2p+q}v}\rightarrow 0$ as $m\rightarrow\infty.$\PfEnd
 \SepLine\ChEnd
 
-%\ChDecl{Ch6C}{6.C}{}
-%\vspace{4pt}
-%
-%\Anchor{6C8}\ProblemN{8}{
-%	\TextA{Supp $V$ is finide, $P^2=P\in\Lm{V},$ $\Dvert{Pv}\leqslant\Dvert{v}$ for all $v\in V.$ Prove $\range P=\Par{\null P}{^\perp}.$}
-%}$\Dvert{w}=\Dvert{Pv}\leqslant\BigDvert{Pv+\Par{v-Pv}}=\Dvert{w+u},$ where $w=Pv,u\in\null P.$ \;Supp non0 $u\in\null P.$\parSol{}
-%$\forall a\in\Fbb,\;\Dvert{w}\leqslant\Dvert{w+au},$ \Or $\Dvert{Pv}=\Dvert{P\Par{Pv+au}}\leqslant\Dvert{Pv+au}.$ \;Thus $\Ang{Pv,v-Pv}=0.$\PfEnd
-%\SepLine
-%
-%\ChEnd
+\ChDecl{Ch6C}{6.C}{}
+\vspace{4pt}
+
+\Anchor{6C8}\ProblemN{8}{
+	\TextA{Supp $V$ is finide, $P^2=P\in\Lm{V},$ $\Dvert{Pv}\leqslant\Dvert{v}$ for all $v\in V.$ Prove $\range P=\Par{\null P}{^\perp}.$}
+}$\Dvert{w}=\Dvert{Pv}\leqslant\BigDvert{Pv+\Par{v-Pv}}=\Dvert{w+u},$ where $w=Pv,u\in\null P.$ \;Supp non0 $u\in\null P.$\parSol{}
+$\forall a\in\Fbb,\;\Dvert{w}\leqslant\Dvert{w+au},$ \Or $\Dvert{Pv}=\Dvert{P\Par{Pv+au}}\leqslant\Dvert{Pv+au}.$ \;Thus $\Ang{Pv,v-Pv}=0.$\PfEnd
+\SepLine
+
+\ProblemN{10}{
+	\TextA{Supp $V$ finide, $U$ a subsp, $T\in\Lm{V},$ and $P_UT=TP_U.$ Prove $U$ and $U^\perp$ invard $T.$}
+}(a) $P_UTP_U=TP_UP_U=TP_U.$ \,(b) $P_{U^\perp}TP_{U^\perp}=\Par{I-P_U}T\Par{I-P_U}=T\Par{I-P_U}{^2}=TP_{U^\perp}.$\PfEnd\parSol{}
+\Or (a) $\range T\mmid_U=\range TP_U=\range P_UT\subseteq U.$\parSol{}
+\Blind{\Or}(b) $T=\Par{P_U\mmid_U}{^{-1}}TP_U\Rightarrow\range T\mmid_{U^\perp}=\range\Par{P_U\mmid_U}{^{-1}}TP_U\mmid_{U^\perp}=\zeroSubs.$\PfEnd
+\SepLine
+
+\ChEnd
 
 \pagebreak
 
