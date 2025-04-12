@@ -132,8 +132,10 @@ Let $e_m'=-e_m.$ Sum it up, we have $2^{m-1}\times 2=2^m$ orthon lists. \qquad\O
 	\TextA{Prove $\exists\,c>0,\:\Ang{v,w}{_1}=c\Ang{v,w}{_2}$ for all $v,w\in V.$}
 }Fix non0 $v_1,v_2\in V.$ Define $\varphi_1,\psi_1\in V\apostrophe$ by $\varphi_1:v\mapsto\Ang{v_1,v}{_1},\;\psi_1:v\mapsto\Ang{v,v_2}{_1}.$ Simlr for $\varphi_2,\psi_2.$\parSol{}
 Becs $\Ang{v_1,v}{_1}=0\Longleftrightarrow\Ang{v_1,v}{_2}=0.$ By (3.B.30), let $c_1=\Ang{v_1,v_1}{_1}\Big/\Ang{v_1,v_1}{_2}>0\Rightarrow\varphi_1=c_1\varphi_2.$\parSol{}
-Simlr, let $c_2=\Ang{v_2,v_2}{_1}\Big/\Ang{v_2,v_2}{_2}\Rightarrow\psi_1=c_2\psi_2.$ Choose $v_1=v_2$ so that $c=c_1=c_2.$\parSol{}
-For any $v_1'\neq v_1,v_2'\neq v_2,$ get $c_1',c_2'$ simlr. Becs $c\Ang{v_1',v_2}{_2}=\Ang{v_1',v_2}{_1}=c_1'\Ang{v_1',v_2}{_2}.$ Simlr for $c_2'.$\PfEnd\vspace{4pt}\parSol{}
+Simlr, let $c_2=\Ang{v_2,v_2}{_1}\Big/\Ang{v_2,v_2}{_2}\Rightarrow\psi_1=c_2\psi_2.$ Choose $v_1=v_2$ so that $c=c_1=c_2.$\vspace{2pt}\parSol{}
+For any $v_1'\in V,$ get $c_1'$ simlr. Becs $\Ang{v_1,v}{_1}=c_1\Ang{v_1,v}{_2}$ while $\Ang{v_1',v}{_1}=c_1'\Ang{v_1',v}{_2}.$\parSol{}
+Now $c_1\Ang{v_1,v_1'}{_2}=\Ang{v_1,v_1'}{_1}=\overline{\Ang{v_1',v_1}{_1}}=\overline{c_1'\Ang{v_1',v_1}{_2}}\Rightarrow c_1=c_1'.$ Simlr for $c_2=c_2'.$\vspace{2pt}\parSol{}
+\Or For any $v_1',v_2'\in V,$ get $c_1'=c_2'$ simlr. Becs $c_2\Ang{v_1',v_2}{_2}=\Ang{v_1',v_2}{_1}=c_1'\Ang{v_1',v_2}{_2}.$\PfEnd\vspace{6pt}\parSol{}
 \Or Define $c_v=\Ang{v,v}{_1}\Big/\Ang{v,v}{_2}$ for all non0 $v\in V.$ Fix non0 $u,v\in V.$\parSol{}
 Let $c=\Ang{u,v}{_2}\Big/\Ang{v,v}{_2}\Rightarrow\Ang{u-cv,v}{_1}=\Ang{u-cv,v}{_2}=0\Rightarrow\Ang{u,v}{_1}=c\Ang{v,v}{_1}=c_v\Ang{u,v}{_2}.$\parSol{}
 Rev the roles of $u,v\Rightarrow c_v\Ang{u,v}{_2}={\Ang{u,v}{_1}}=\overline{\Ang{v,u}{_1}}=\overline{c_u\Ang{v,u}{_2}}=c_u\Ang{u,v}{_2}\Rightarrow c_v=c_u.$\PfEnd
