@@ -148,9 +148,11 @@ Then $c_1\Ang{v_1,u}+\dots+c_{n-1}\Ang{v_{n-1},u}>0$ while each $c_j,\Ang{v_j,u}
 \SepLine
 
 \Anchor{6B16}\ProblemN{16}{
-	\TextA{Supp $\Fbb=\Cbb,V$ finide, $T\in\Lm{V},$ all eigvals $\lambda$ have absolute vals less than $1.$\vspace{1pt}}
-	\TextA{Let $\varepsilon>0.$ Prove $\exists\,m\in\Nbp,\:\Dvert{T^mv}\leqslant\varepsilon\Dvert{v}$ for all $v\in V.$}
-}
+	\TextA{Supp $\Fbb=\Cbb,V$ finide, non0 $T\in\Lm{V},$ all eigvals have absolute vals less than $1.$\vspace{1pt}}
+	\TextA{Let $\epsilon>0.$ Prove $\exists\,m\in\Nbp,\:\Dvert{T^mv}\leqslant\epsilon\Dvert{v}$ for all $v\in V.$\vspace{1pt}}
+}By (8.B.10), $T=D+N.$ \,Supp $N^p=0\neq N^{p-1}.$ Supp $T$ up-trig wrto orthon $B_V=\Par{e_1,\dots,e_n}.$\parSol{}
+Becs $\Par{D+N}{^{2p+q}}=D^{2p+q}+\dots+D^{2p+q-k}N^k+\dots+D^{p+q+1}N^{p-1}=D^{p+q+1}\Par{D+N}{^{p-1}},\;q\in\Nbb.$\parSol{}
+Now $T^{2p+q}v=a_1\lambda_1^{p+q+1}T^{p-1}e_1+\dots+a_n\lambda_n^{p+q+1}T^{p-1}e_n.$ Note that $\Dvert{T^{2p+q}v}\rightarrow 0$ as $m\rightarrow\infty.$\PfEnd
 \SepLine\ChEnd
 
 %\ChDecl{Ch6C}{6.C}{}
