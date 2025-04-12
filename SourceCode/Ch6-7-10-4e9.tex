@@ -154,8 +154,19 @@ Becs $\Par{D+N}{^{2p+q}}=D^{2p+q}+\dots+D^{2p+q-k}N^k+\dots+D^{p+q+1}N^{p-1}=D^{
 Now $T^{2p+q}v=a_1\lambda_1^{p+q+1}T^{p-1}e_1+\dots+a_n\lambda_n^{p+q+1}T^{p-1}e_n.$ Note that $\Dvert{T^{2p+q}v}\rightarrow 0$ as $m\rightarrow\infty.$\PfEnd
 \SepLine\ChEnd
 
+\pagebreak
+
 \ChDecl{Ch6C}{6.C}{}
+
 \vspace{4pt}
+
+\Anchor{6CT1}\ProblemBX{\TipsN{1}}{
+	\TextA{Supp $V$ finide, $T\in\Lm{V},$ and all vecs in $\null T$ ortho to all vecs in $\range T.$}
+	\TextA{Prove $\Par{\null T}{^\perp}=\range T.$}
+}Note that $\range T\subseteq\Par{\null T}{^\perp}=\Bra{v\in V:v\text{ ortho to all vecs in }\null T}.$\parSol{}
+Then becs $\null T\cap\range T=\zeroSubs\Rightarrow V=\null T\oplus\range T.$ Now by \Sbra{1.C \TIPSN{2}}.\parSol{}
+\Or $\forall v\in\Par{\null T}{^\perp},\exists\,!\,\Par{u,w}\in\null T\times\range T,\Ang{u+w,u}=\Ang{u,u}=0\Rightarrow v\in\range T.$\PfEnd
+\SepLine
 
 \Anchor{6C8}\ProblemN{8}{
 	\TextA{Supp $V$ is finide, $P^2=P\in\Lm{V},$ $\Dvert{Pv}\leqslant\Dvert{v}$ for all $v\in V.$ Prove $\range P=\Par{\null P}{^\perp}.$}
@@ -163,11 +174,21 @@ Now $T^{2p+q}v=a_1\lambda_1^{p+q+1}T^{p-1}e_1+\dots+a_n\lambda_n^{p+q+1}T^{p-1}e
 $\forall a\in\Fbb,\;\Dvert{w}\leqslant\Dvert{w+au},$ \Or $\Dvert{Pv}=\Dvert{P\Par{Pv+au}}\leqslant\Dvert{Pv+au}.$ \;Thus $\Ang{Pv,v-Pv}=0.$\PfEnd
 \SepLine
 
-\ProblemN{10}{
+\Anchor{6C10}\ProblemN{10}{
 	\TextA{Supp $V$ finide, $U$ a subsp, $T\in\Lm{V},$ and $P_UT=TP_U.$ Prove $U$ and $U^\perp$ invard $T.$}
 }(a) $P_UTP_U=TP_UP_U=TP_U.$ \,(b) $P_{U^\perp}TP_{U^\perp}=\Par{I-P_U}T\Par{I-P_U}=T\Par{I-P_U}{^2}=TP_{U^\perp}.$\PfEnd\parSol{}
 \Or (a) $\range T\mmid_U=\range TP_U=\range P_UT\subseteq U.$\parSol{}
-\Blind{\Or}(b) $T=\Par{P_U\mmid_U}{^{-1}}TP_U\Rightarrow\range T\mmid_{U^\perp}=\range\Par{P_U\mmid_U}{^{-1}}TP_U\mmid_{U^\perp}=\zeroSubs.$\PfEnd
+\Blind{\Or}(b) $\range T\mmid_{U^\perp}=\range T\Par{I-P_U}=\range\Par{I-P_U}T\subseteq U^\perp.$\PfEnd\parSol{}
+\Blind{\Or}\AComm The trick $T=\Par{P_U\mmid_{\range T}}{^{-1}}TP_U$ is invalid.
+\SepLine
+
+\Anchor{6CT2}\BulletPointX\TipsN{2}\,\,\,Supp $U$ finide subsp of $V,v\in V,\varphi\in U\apostrophe:u\mapsto\Ang{u,v}.$\TextB{}
+{\IndentTipsN{2}}Then $\exists\,!\,w\in U,\varphi\Par{u}=\Ang{u,w}=\Ang{u,v}$ for all $u\in U\Rightarrow v-w\in U^\perp.$ Now $w=P_Uv.$
+\SepLine
+
+\Anchor{6CT3}\BulletPointX\TipsN{3}\,\,\,Supp $e_1,\dots,e_n\in V$ with each $\Dvert{e_k}=1,$ and for all $v\in V,\:\Dvert{v}{^2}=\innerAsq{v,\,e_1}+\dots+\innerAsq{v,\,e_n}.$\TextB{}
+{\IndentTipsN{3}}Then each $\Dvert{e_j}{^2}=\sum_{j\neq k}^n\innerAsq{e_j,\,e_k}+\innerAsq{e_j,\,e_j}\Rightarrow$ each $\innerAsq{e_j,e_k}=0.$\TextB{}
+{\IndentTipsN{3}}And by (6.B.2), $V=\Span{e_1,\dots,e_n}.$ \;\Or Becs $\forall v\in\Span{e_1,\dots,e_n}{^\perp},\Dvert{v}{^2}=0.$
 \SepLine
 
 \ChEnd
