@@ -84,7 +84,7 @@ Bessel's Inequa: $\sum_{k=1}^m\innerAsq{v,e_k}\leqslant\Dvertsq{v}.$ \:\Sbra{Exe
 Then
 $\sum_{j=1}^m\aMidsq{a_j}\Big/m\geqslant\sum_{j=1}^m\BigDvertsq{a_j\Par{e_j-v_j}}$\vspace{3pt}\parSol{}
 \Blind{Then $\sum_{j=1}^m\aMidsq{a_j}\Big/m$}${}\geqslant\BigDvertsq{\sum_{j=1}^ma_j\Par{e_j-v_j}}=\sum_{j=1}^m\aMidsq{a_j}\Longrightarrow\sum_{j=1}^m\aMidsq{a_j}=0$ by ctradic.\PfEnd\vspace{6pt}
-\AComm If each $\Dvert{e_j-v_j}=1\Big/\sqrt{m}$, then $\Par{v_1,\dots,v_m}$ might be liney dep even if $m\neq1.$\parCom
+\AComm If each $\Dvert{e_j-v_j}=1\Big/\!\sqrt{m}$, then $\Par{v_1,\dots,v_m}$ might be liney dep even if $m\neq1.$\parCom
 Let $v_j=e_j-\Par{e_1+\dots+e_m}\Big/m\Rightarrow\Dvert{e_j-v_j}{^2}=1\big/m.$ \;Note that $v_1+\dots+v_m=0.$\PfEnd
 \SepLine
 
@@ -93,7 +93,7 @@ Let $v_j=e_j-\Par{e_1+\dots+e_m}\Big/m\Rightarrow\Dvert{e_j-v_j}{^2}=1\big/m.$ \
 	\TextA{to a liney indep $\Par{v_1,\dots,v_m}$ in $V.$ \,Show each $\Ang{v_j,e_j}>0.$}
 }Let $\;f_j=v_j-\Ang{v_j,\,e_1}\,e_1-\dots-\Ang{v_j,\,e_{j-1}}\,e_{j-1}.$\vspace{1pt}\parSol{}
 Becs $\;\Dvert{\,f_j}\,\Ang{v_j,\,e_j}=\Ang{v_j,\,f_j}=\Dvertsq{v_j}-\innerAsq{v_j,\,e_1}-\dots-\innerAsq{v_j,\,e_{j-1}}\geqslant0,$ by Bessel's Inequa.\vspace{1pt}\parSol{}
-If $\,\Ang{v_j,\,f_j}=0,$ then by Exe (2), $v_j\in\Span{e_1,\dots,e_{j-1}}=\Span{v_1,\dots,v_{j-1}}.$ Now $\Dvert{\,f_j}>0.$\PfEnd\vspace{2pt}
+If $\,\Ang{v_j,\,f_j}=0,$ then by Exe (2), $v_j\in\Span{e_1,\dots,e_{j-1}}=\Span{v_1,\dots,v_{j-1}}.$ 又 $\Dvert{\,f_j}\neq0.$\PfEnd\vspace{2pt}
 \Anchor{6B9}\Anchor{6B4e13}\ANote Supp $\Par{v_1,\dots,v_m}$ liney dep. Let $j$ be the largest suth $\Par{v_1,\dots,v_{j-1}}$ liney indep.\parNot
 Apply [6.31]. Now $v_j\in\Span{v_1,\dots,v_{j-1}}=\Span{e_1,\dots,e_{j-1}}\Rightarrow f_j=0.$
 \SepLine
@@ -132,7 +132,8 @@ Let $e_m'=-e_m.$ Sum it up, we have $2^{m-1}\times 2=2^m$ orthon lists. \qquad\O
 	\TextA{Prove $\exists\,c>0,\:\Ang{v,w}{_1}=c\Ang{v,w}{_2}$ for all $v,w\in V.$}
 }Fix non0 $v_1,v_2\in V.$ Define $\varphi_1,\psi_1\in V\apostrophe$ by $\varphi_1:v\mapsto\Ang{v_1,v}{_1},\;\psi_1:v\mapsto\Ang{v,v_2}{_1}.$ Simlr for $\varphi_2,\psi_2.$\parSol{}
 Becs $\Ang{v_1,v}{_1}=0\Longleftrightarrow\Ang{v_1,v}{_2}=0.$ By (3.B.30), let $c_1=\Ang{v_1,v_1}{_1}\Big/\Ang{v_1,v_1}{_2}>0\Rightarrow\varphi_1=c_1\varphi_2.$\parSol{}
-Simlr, let $c_2=\Ang{v_2,v_2}{_1}\Big/\Ang{v_2,v_2}{_2}\Rightarrow\psi_1=c_2\psi_2.$ Choose $v_1=v_2$ so that $c_1=c_2.$\PfEnd\vspace{4pt}\parSol{}
+Simlr, let $c_2=\Ang{v_2,v_2}{_1}\Big/\Ang{v_2,v_2}{_2}\Rightarrow\psi_1=c_2\psi_2.$ Choose $v_1=v_2$ so that $c=c_1=c_2.$\parSol{}
+For any $v_1'\neq v_1,v_2'\neq v_2,$ get $c_1',c_2'$ simlr. Becs $c\Ang{v_1',v_2}{_2}=\Ang{v_1',v_2}{_1}=c_1'\Ang{v_1',v_2}{_2}.$ Simlr for $c_2'.$\PfEnd\vspace{4pt}\parSol{}
 \Or Define $c_v=\Ang{v,v}{_1}\Big/\Ang{v,v}{_2}$ for all non0 $v\in V.$ Fix non0 $u,v\in V.$\parSol{}
 Let $c=\Ang{u,v}{_2}\Big/\Ang{v,v}{_2}\Rightarrow\Ang{u-cv,v}{_1}=\Ang{u-cv,v}{_2}=0\Rightarrow\Ang{u,v}{_1}=c\Ang{v,v}{_1}=c_v\Ang{u,v}{_2}.$\parSol{}
 Rev the roles of $u,v\Rightarrow c_v\Ang{u,v}{_2}={\Ang{u,v}{_1}}=\overline{\Ang{v,u}{_1}}=\overline{c_u\Ang{v,u}{_2}}=c_u\Ang{u,v}{_2}\Rightarrow c_v=c_u.$\PfEnd
