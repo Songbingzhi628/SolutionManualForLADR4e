@@ -6,15 +6,15 @@
 \vspace{4pt}
 
 \ProblemB[]{
-	(a) $\Dvertsq{u+v}=\Dvertsq{u}+\Dvertsq{v}+2\Real\Ang{u,v}.$ \; $\Dvertsq{u+\i v}=\Dvertsq{u}+\Dvertsq{v}+2\Imaginary\Ang{u,v}.$\TextB{}
-	(b) $\aXMid{\Dvert{u}-\Dvert{v}}\leqslant\Dvert{u-v}.$ \,Equa $\Longleftrightarrow u=cv,c>0,$ where $u,v\neq0.$\TextB{}
-	(c) $\aXMid{\Dvert{v}-1}=\BigDvert{v-v\big/\Dvert{v}}\leqslant\Dvert{v-u}$ if $\Dvert{u}=1.$ \,Equa $\Longleftrightarrow u=v\big/\Dvert{v}.$\TextB{}
-	(d) $\aXMid{\Dvertsq{u}-\Dvertsq{v}}=\innerA{u+v,u-v}\leqslant\Dvert{u+v}\,\Dvert{u-v}\leqslant\Dvertsq{u}+\Dvertsq{v}={}${\Large$\frac{\:1\:}{2}$}$\Sbra{\Dvertsq{u+v}+\Dvertsq{u-v}}.$\vspace{-3pt}\TextB{}
+	(a) \,$\Dvertsq{u+v}=\Dvertsq{u}+\Dvertsq{v}+2\Real\Ang{u,v}.$ \; $\Dvertsq{u+\i v}=\Dvertsq{u}+\Dvertsq{v}+2\Imaginary\Ang{u,v}.$\TextB{}
+	(b) \,$\aXMid{\Dvert{u}-\Dvert{v}}\leqslant\Dvert{u-v}.$ \;Equa $\Longleftrightarrow u=cv,c>0,$ where $u,v\neq0.$\TextB{}
+	(c) \,$\aXMid{\Dvert{v}-1}=\BigDvert{v-v\big/\Dvert{v}}\leqslant\Dvert{v-u}$ \,if\, $\Dvert{u}=1.$ \;Equa $\Longleftrightarrow u=v\big/\Dvert{v}.$\TextB{}
+	(d) \,$\aXMid{\Dvertsq{u}-\Dvertsq{v}}=\innerA{u+v,u-v}\leqslant\Dvert{u+v}\,\Dvert{u-v}\leqslant\Dvertsq{u}+\Dvertsq{v}={}${\Large$\frac{\:1\:}{2}$}$\BigSbra{\Dvertsq{u+v}+\Dvertsq{u-v}}.$\vspace{-3pt}\TextB{}
 }\SepLine
 
 \Anchor{6A21}\ProblemN{21}{
-	\TextA{Implement the corres inner prod from a norm $\Dvert{\cdot}:U\rightarrow\Interval{[}{)}{0,\infty}$ satisfying [6.22].}
-	\PrePa $\Dvert{u}=0\Longleftrightarrow u=0.$ \;(b) $\Dvert{au}=\aMid{a}\Dvert{u}.$ \;(c) $\Dvert{u+w}\leqslant\Dvert{u}+\Dvert{w}.$\TextA{}
+	\TextA{Implement the corres inner prod from a norm $\Dvert{{\cdot}}:U\rightarrow\Interval{[}{)}{0,\infty}$ satisfying [6.22].}
+	\PrePa {\,}$\Dvert{u}=0\Longleftrightarrow u=0.$ \;(b) \,$\Dvert{au}=\aMid{a}\Dvert{u}.$ \;(c) \,\uline{$\Dvert{u+w}\leqslant\Dvert{u}+\Dvert{w}.$}\vspace{4pt}\TextA{}
 }If $\Fbb=\Rbb.$ Define $\Ang{u,w}={}${\Large$\frac{\:1\:}{4}$}$\BigPar{\Dvertsq{u+w}-\Dvertsq{u-w}}.$\vspace{2pt}\parSol{}
 Add in 1st slot: $\Ang{u+v,w}=$
 \SepLine
@@ -31,8 +31,8 @@ Supp $\Ang{u+\lambda w,u+\lambda w}=0\Rightarrow u+\lambda w=0\Rightarrow\Ang{u,
 	\TextA{Supp $u,v\in V.$ Prove $\Dvert{u}\leqslant\Dvert{u+av}$ for all $a\in\Fbb\Rightarrow\Ang{u,v}=0.$}
 }Becs $\Dvertsq{u}\leqslant\Dvertsq{u+av}.$ Let $\Ang{u-cv,cv}=0\Rightarrow\Dvertsq{u-cv}=\Ang{u,u-cv}=\Dvertsq{u}-\overline{c}\Ang{u,v}.$\parSol{}
 Thus $\Dvertsq{u}\leqslant\Dvertsq{u-cv}=\Dvertsq{u}-\innerA{u,v}{\;\!\XSlash\;\!}\Dvertsq{v}.$\PfEnd\vspace{4pt}\parSol{}
-\Or $\Dvertsq{u}\leqslant\Dvertsq{u}+\aMidsq{a}\Dvertsq{v}+2\Real\overline{a}\Ang{u,v}\Rightarrow-2\Real\overline{a}\Ang{u,v}\leqslant\aMidsq{a}\Dvertsq{v}$ for all $a\in\Fbb.$\parSol{}
-Let $a=-\Ang{u,v}\Rightarrow2\innerA{u,v}{^2}\leqslant\innerA{u,v}{^2}\Dvertsq{v}.$ If $\Ang{u,v}\neq0,$ then $2\leqslant\Dvertsq{v};$ might not be true.\PfEnd
+\Or $\Dvertsq{u}\leqslant\Dvertsq{u}+\aMidsq{a}\,\Dvertsq{v}+2\REAL\:\overline{a}\:\!\Ang{u,v}\Rightarrow-2\REAL\:\overline{a}\:\!\Ang{u,v}\leqslant\aMidsq{a}\,\Dvertsq{v}$ for all $a\in\Fbb.$\parSol{}
+Let $a=-\Ang{u,v}\Rightarrow2\:\!\innerA{u,v}{^2}\leqslant\innerA{u,v}{^2}\,\Dvertsq{v}.$ If $\Ang{u,v}\neq0,$ then $2\leqslant\Dvertsq{v};$ might not be true.\PfEnd
 \SepLine
 
 \Anchor{6A'1}\ProblemB{
@@ -63,13 +63,13 @@ Then $\Dvertsq{u+w}+\Dvertsq{u-w}\leqslant2m.$ \;\;\Or $\Dvert{u+w}\cdot\Dvert{u
 
 \ProblemB[]{
 	For orthog $\Par{e_1,\dots,e_m}$ and $v=a_1e_1+\dots+a_me_m,$ becs $\Ang{v,e_k}=a_k\Dvertsq{e_k},$ \;$v={}${\Large$\frac{\:\SmallAng{v,\:e_1}\:}{\;\SmallDvertsq{e_1}}$}$\,e_1+\dots+{}${\Large$\frac{\:\SmallAng{v,\:e_m}\:}{\;\SmallDvertsq{e_m}}$}$\,e_m.$\TextB{}
-	Now $\Dvertsq{v}={}${\Large$\frac{\:\SmallinnerAsq{v,\:e_1}\:}{\SmallDvertsq{e_1}}$}${}+\dots+{}${\Large$\frac{\:\SmallinnerAsq{v,\:e_m}\:}{\SmallDvertsq{e_m}}$}$.$ Replace each $e_k$ with $\Dvert{e_k}{^{\,-1}}e_k,$ now $\Par{e_1,\dots,e_m}$ orthon.\TextB{\vspace{6pt}}
+	Now $\Dvertsq{v}={}${\Large$\frac{\:\SmallinnerAsq{v,\:e_1}\:}{\SmallDvertsq{e_1}}$}${}+\dots+{}${\Large$\frac{\:\SmallinnerAsq{v,\:e_m}\:}{\SmallDvertsq{e_m}}$}$.$ Replace each $e_k$ with $\Dvert{e_k}{^{\,-1}}e_k,$ now $\Par{e_1,\dots,e_m}$ is a orthon list.\TextB{\vspace{6pt}}
 	Exe (2) holds only for orthon lists.\TextB{\vspace{-4pt}}
 }\SepLine
 
 
 \Anchor{6B'1}\ProblemB{
-	\TextA{Supp $\Par{e_1,\dots,e_m}$ orthog, $v\in V.$ Show $\sum_{k=1}^m\!\BigPar{2-\Dvertsq{e_k}}\,\innerAsq{v,e_k}\leqslant\Dvertsq{v}.$\vspace{2pt}}
+	\TextA{Supp $\Par{e_1,\dots,e_m}$ is orthog, and $v\in V.$ \,Show $\sum_{k=1}^m\!\BigPar{2-\Dvertsq{e_k}}\,\innerAsq{v,e_k}\leqslant\Dvertsq{v}.$\vspace{2pt}}
 }Let $u=\Ang{v,e_1}\,e_1+\dots+\Ang{v,e_m}\,e_m\Rightarrow\Dvertsq{u}=\sum_{k=1}^n\innerAsq[{\:\!\Dvert{e_k}\,}]{v,e_k},\,\Ang{u,v}=\sum_{k=1}^n\innerAsq{v,e_k}.$\vspace{2pt}\parSol{}
 Let $\Dvertsq{v-u}=\Dvertsq{v}+\Dvertsq{u}-\Ang{v,u}-\Ang{u,v}=\Dvertsq{v}+\sum_{k=1}^n\!\BigPar{\Dvertsq{e_k}-2}\,\innerAsq{v,e_k}\geqslant0.$\PfEnd\vspace{4pt}
 \Anchor{6B2}\ACoro If orthon, $\Ang{u,\,v-u}=0\Rightarrow\Dvertsq{v}=\Dvertsq{u}+\Dvertsq{v-u}.$\parCor
@@ -77,17 +77,22 @@ Bessel's Inequa: $\sum_{k=1}^m\innerAsq{v,e_k}\leqslant\Dvertsq{v}.$ \:\Sbra{Exe
 \SepLine
 
 \Anchor{6B14}\ProblemN{14}{
-	\TextA{Supp $\Par{e_1,\dots,e_n}$ is orthon bss of $V$ and each $v_j\in V$ suth $\Dvert{e_j-v_j}<{}${\Large$\frac{\;1}{\sqrt{n}\;}$}.}
+	\TextA{Supp $\Par{e_1,\dots,e_n}$ is a orthon bss of $V$ and each $v_j\in V$ suth $\Dvert{e_j-v_j}<{}${\Large$\frac{\;1}{\sqrt{n}\;}$}.}
 	\TextA{Prove $B_V=\Par{v_1,\dots,v_n}.$}
-}
+}Let $a_1v_1+\dots+a_nv_n=0.$ Note that each {\Large$\frac{\;\aMid{a_j}}{\sqrt{n}\;}$}${}\geqslant\BigDvert{a_j\Par{e_j-v_j}}.$\parSol{}
+Then
+$\sum_{j=1}^n\aMidsq{a_j}\Big/n\geqslant\sum_{j=1}^n\BigDvertsq{a_j\Par{e_j-v_j}}$\vspace{3pt}\parSol{}
+\Blind{Then $\sum_{j=1}^n\aMidsq{a_j}\Big/n$}${}\geqslant\BigDvertsq{\sum_{j=1}^na_j\Par{e_j-v_j}}=\sum_{j=1}^n\aMidsq{a_j}\Longrightarrow\sum_{j=1}^n\aMidsq{a_j}=0$ by ctradic.\PfEnd\vspace{6pt}
+\AComm If each $\Dvert{e_j-v_j}=1\Big/\sqrt{n}$, then $\Par{v_1,\dots,v_n}$ might not be a bss even if $n\neq1.$\parCom
+Let $v_j=e_j-\Par{e_1+\dots+e_n}\Big/n\Rightarrow\Dvert{e_j-v_j}{^2}=1\big/n.$ \;Note that $v_1+\dots+v_n=0.$\PfEnd
 \SepLine
 
 \Anchor{6B4e9}\ProblemBnoor{4E 9}{
-	\TextA{Supp $\Par{e_1,\dots,e_m}$ is the result of applying [6.31]}
+	\TextA{Supp $\Par{e_1,\dots,e_m}$ is the result of applying [6.31]\vspace{1pt}}
 	\TextA{to a liney indep $\Par{v_1,\dots,v_m}$ in $V.$ \,Show each $\Ang{v_j,e_j}>0.$}
-}Let $f_j=v_j-\Ang{v_j,\,e_1}\,e_1-\dots-\Ang{v_j,\,e_{j-1}}\,e_{j-1}.$\vspace{1pt}\parSol{}
-Becs $\;\Dvert{f_j}\,\Ang{v_j,\,e_j}=\Ang{v_j,\,f_j}=\Dvertsq{v_j}-\innerAsq{v_j,\,e_1}-\dots-\innerAsq{v_j,\,e_{j-1}}\geqslant0,$ by Bessel's Inequa.\vspace{1pt}\parSol{}
-If $\Ang{v_j,\,f_j}=0,$ then by Exe (2), $v_j\in\Span{e_1,\dots,e_{j-1}}=\Span{v_1,\dots,v_{j-1}}.$ Now $\Dvert{f_j}>0.$\PfEnd\vspace{2pt}
+}Let $\;f_j=v_j-\Ang{v_j,\,e_1}\,e_1-\dots-\Ang{v_j,\,e_{j-1}}\,e_{j-1}.$\vspace{1pt}\parSol{}
+Becs $\;\Dvert{\,f_j}\,\Ang{v_j,\,e_j}=\Ang{v_j,\,f_j}=\Dvertsq{v_j}-\innerAsq{v_j,\,e_1}-\dots-\innerAsq{v_j,\,e_{j-1}}\geqslant0,$ by Bessel's Inequa.\vspace{1pt}\parSol{}
+If $\,\Ang{v_j,\,f_j}=0,$ then by Exe (2), $v_j\in\Span{e_1,\dots,e_{j-1}}=\Span{v_1,\dots,v_{j-1}}.$ Now $\Dvert{\,f_j}>0.$\PfEnd\vspace{2pt}
 \Anchor{6B9}\Anchor{6B4e13}\ANote Supp $\Par{v_1,\dots,v_m}$ liney dep. Let $j$ be the largest suth $\Par{v_1,\dots,v_{j-1}}$ liney indep.\parNot
 Apply [6.31]. Now $v_j\in\Span{v_1,\dots,v_{j-1}}=\Span{e_1,\dots,e_{j-1}}\Rightarrow f_j=0.$
 \SepLine
@@ -96,24 +101,24 @@ Apply [6.31]. Now $v_j\in\Span{v_1,\dots,v_{j-1}}=\Span{e_1,\dots,e_{j-1}}\Right
 	\TextB{Supp $\Par{v_1,\dots,v_m}$ liney indep. Explain why the
 	orthon list produced by [6.31]}
 	\TextB{is the only orthon $\Par{e_1,\dots,e_m}$ suth each $\Ang{v_k,\,e_k}>0$ and $\Span{v_1,\dots,v_k}=\Span{e_1,\dots,e_k}.$}
-}Fix one $k.$ Let $v_k=a_1e_1+\dots+a_ke_k\Rightarrow$ each $a_j=\Ang{v_k,e_j}.$ Let $f_k=v_k-a_1e_1-\dots-a_{k-1}e_{k-1}.$\parSol{}
-Then $e_k=f_k\Big/\!a_k\Rightarrow\Ang{f_k,\,f_k}\big/a_k^2=1\Rightarrow a_k=\pm\Dvert{f_k}.$ 又 $a_k>0.$ \:Hence each $e_k=f_k\Big/\Dvert{f_k}.$\PfEnd
+}Fix one $k.$ Let \,$v_k=a_1e_1+\dots+a_ke_k\Rightarrow$ each $a_j=\Ang{v_k,e_j}.$ Let \,$f_k=v_k-a_1e_1-\dots-a_{k-1}e_{k-1}.$\parSol{}
+Then $e_k=f_k\Big/\!a_k\Rightarrow\Ang{\,f_k,\,f_k}\big/a_k^2=1\Rightarrow a_k=\pm\Dvert{\,f_k}.$ 又 $a_k>0.$ \:Hence each $e_k=f_k\Big/\Dvert{\,f_k}.$\PfEnd
 \SepLine
 
 \Anchor{6B10}\ProblemN{10}{
 	\TextA{Supp $\Fbb=\Rbb,$ $\Par{v_1,\dots,v_m}$ is liney indep in $V.$}
-	\TextA{Prove $\exists$ exactly $2^m$ orthon $\Par{e_1,\dots,e_m}$ suth $\Span{e_1,\dots,e_m}=\Span{v_1,\dots,v_m}.$}
+	\TextA{Prove $\exists$ exactly $2^m$ orthon lists spans $\Span{v_1,\dots,v_m}.$}
 }Using induc on $m.$ (i) $m=1.$ Let $e_1=\pm v_1\big/\Dvert{v_1}.$ (ii) $m>1.$ Asum it holds for $\Par{m-1}.$\parSol{}
-Get $2^{m-1}$ orthon corres $\Par{v_1,\dots,v_{m-1}}.$ Fix one $\Par{e_1,\dots,e_{m-1}}$ and apply [6.31] for $v_m$ to get $e_m.$\parSol{}
-Supp $\Par{e_1,\dots,e_{m-1},e_m'}$ is also orthon. \NOTICE that $e_m'=\Ang{e_m',e_m}e_m.$ So $\innerA{e_m',e_m}=1.$\vspace{1pt}\parSol{}
+Get $2^{m-1}$ orthon lists corres $\Par{v_1,\dots,v_{m-1}}.$ Fix one as $\Par{e_1,\dots,e_{m-1}}$ and apply [6.31] at step $m.$\parSol{}
+Supp $\Par{e_1,\dots,e_{m-1},e_m'}$ is also orthon. \NOTICE that $e_m'=\Ang{e_m',\,e_m}\,e_m.$ So $\innerA{e_m',\,e_m}=1.$\vspace{1pt}\parSol{}
 Let $e_m'=-e_m.$ Sum it up, we have $2^{m-1}\times 2=2^m$ orthon lists.\PfEnd
 \SepLine
 
 \Anchor{6B11}\ProblemN{11}{
-	\TextA{Supp $V\neq0,$ and $\Ang{\cdot,\cdot}{_1},\Ang{\cdot,\cdot}{_2}$ are inner prods suth $\Ang{v,w}{_1}=0\Longleftrightarrow\Ang{v,w}{_2}=0.$}
+	\TextA{Supp $V\neq0,$ and $\Ang{\cdot,\cdot}{_1},\Ang{\cdot,\cdot}{_2}$ are inner prods suth $\Ang{v,w}{_1}=0\Longleftrightarrow\Ang{v,w}{_2}=0.$\vspace{1pt}}
 	\TextA{Prove $\exists\,c>0,\:\Ang{v,w}{_1}=c\Ang{v,w}{_2}$ for all $v,w\in V.$}
 }Fix non0 $v_1,v_2\in V.$ Define $\varphi_1,\psi_1\in V\apostrophe$ by $\varphi_1:v\mapsto\Ang{v_1,v}{_1},\;\psi_1:v\mapsto\Ang{v,v_2}{_1}.$ Simlr for $\varphi_2,\psi_2.$\parSol{}
-Becs $\Ang{v_1,v}{_1}=0\Longleftrightarrow\Ang{v_1,v}{_2}=0.$ By (3.B.30), let $c_1=\Ang{v_1,v_1}{_1}\Big/\Ang{v_1,v_1}{_2}>0\Rightarrow\varphi_1=c_v\varphi_2.$\parSol{}
+Becs $\Ang{v_1,v}{_1}=0\Longleftrightarrow\Ang{v_1,v}{_2}=0.$ By (3.B.30), let $c_1=\Ang{v_1,v_1}{_1}\Big/\Ang{v_1,v_1}{_2}>0\Rightarrow\varphi_1=c_1\varphi_2.$\parSol{}
 Simlr, let $c_2=\Ang{v_2,v_2}{_1}\Big/\Ang{v_2,v_2}{_2}\Rightarrow\psi_1=c_2\psi_2.$ Choose $v_1=v_2$ so that $c_1=c_2.$\PfEnd\vspace{4pt}\parSol{}
 \Or Define $c_v=\Ang{v,v}{_1}\Big/\Ang{v,v}{_2}$ for all non0 $v\in V.$ Fix non0 $u,v\in V.$\parSol{}
 Let $c=\Ang{u,v}{_2}\Big/\Ang{v,v}{_2}\Rightarrow\Ang{u-cv,v}{_1}=\Ang{u-cv,v}{_2}=0\Rightarrow\Ang{u,v}{_1}=c\Ang{v,v}{_1}=c_v\Ang{u,v}{_2}.$\parSol{}
@@ -121,9 +126,11 @@ Rev the roles of $u,v\Rightarrow c_v\Ang{u,v}{_2}={\Ang{u,v}{_1}}=\overline{\Ang
 \SepLine
 
 \Anchor{6B12}\ProblemN{12}{
-	\TextA{Supp $V$ is finide and $\Ang{\cdot,\cdot}{_1},\Ang{\cdot,\cdot}{_2}$ are inner prods with corres norms $\Dvert{\cdot}{_1},\Dvert{\cdot}{_2}.$}
-	\TextA{Prove $\exists\,c>0,\:\Dvert{v}\leqslant c\Dvert{v}$ for all $v\in V.$}
-}
+	\TextA{Supp $V$ is finide. Let $\Ang{\cdot,\cdot}{_1}$ and $\Ang{\cdot,\cdot}{_2}$ be inner prods with corres norms $\Dvert{{\cdot}}{_1}$ and $\Dvert{{\cdot}}{_2}.$\vspace{1pt}}
+	\TextA{Prove $\exists\,c>0,\:\Dvert{v}{_1}\leqslant c\Dvert{v}{_2}$ \,for all $v\in V.$}
+}Let $B_V=\Par{e_1,\dots,e_n}$ be orthon wrto $\Ang{\cdot,\cdot}{_2}.$ Supp $v=a_1e_1+\dots+a_ne_n.$\parSol{}
+\NOTICE that $\Dvert{v}{_1}\leqslant\Dvert{a_1e_1}{_1}+\dots+\Dvert{a_ne_n}{_1}\leqslant\max\!\Bra{\Dvert{e_1}{_1},\dots,\Dvert{e_n}{_1}}\cdot\BigPar{\aMid{a_1}+\dots+\aMid{a_n}}.$\vspace{2pt}\parSol{}
+又 $\aMid{a_1}+\dots+\aMid{a_n}\leqslant n\cdot\max\!\Bra{\aMid{a_k}:1\leqslant k\leqslant n}\leqslant n\cdot\sqrt{\aMidsq{a_1}+\dots+\aMidsq{a_n}}\leqslant n\cdot\Dvert{v}{_2}.$\PfEnd
 \SepLine
 
 \Anchor{6B4e19}\ProblemBnoor{4E 19}{
@@ -132,8 +139,16 @@ Rev the roles of $u,v\Rightarrow c_v\Ang{u,v}{_2}={\Ang{u,v}{_1}}=\overline{\Ang
 Then $\varphi_k\Par{v_j}=\delta_{j,k}=\Ang{v_k,u_k}.$ Supp $a_1u_1+\dots+a_nu_n=0\Rightarrow$ each $\Ang{v_j,0}=0=a_j.$\PfEnd
 \SepLine
 
+\ProblemB{
+	\TextB{Supp $u,v_1,\dots,v_n$ are non0 in $V$ suth each $\Ang{v_i,u}>0$ and $\Ang{v_i,v_j}\leqslant0$ \,for $i\neq j.$}
+	\TextB{Show $\Par{v_1,\dots,v_n}$ liney indep.}
+}(i) $n=1,2.$ Asum $v_1=cv_2\Rightarrow c\leqslant 0$ while $\Ang{v_2,u}>0\Rightarrow\Ang{cv_2,u}\leqslant0,$ ctradic.\parSol{}
+(ii) $n>2.$ Asum $\Par{v_1,\dots,v_{n-1}}$ liney indep. Asum $v_n=c_1v_1+\dots+c_{n-1}v_{n-1}.$\parSol{\Hii}
+Then $c_1\Ang{v_1,u}+\dots+c_{n-1}\Ang{v_{n-1},u}>0$ while each $c_j,\Ang{v_j,u}\leqslant0.$ Ctradic.\PfEnd
+\SepLine
+
 \Anchor{6B16}\ProblemN{16}{
-	\TextA{Supp $\Fbb=\Cbb,V$ finide, $T\in\Lm{V},$ all eigvals $\lambda$ have absolute vals less than $1.$}
+	\TextA{Supp $\Fbb=\Cbb,V$ finide, $T\in\Lm{V},$ all eigvals $\lambda$ have absolute vals less than $1.$\vspace{1pt}}
 	\TextA{Let $\varepsilon>0.$ Prove $\exists\,m\in\Nbp,\:\Dvert{T^mv}\leqslant\varepsilon\Dvert{v}$ for all $v\in V.$}
 }
 \SepLine\ChEnd
