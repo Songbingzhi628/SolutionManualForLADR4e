@@ -63,8 +63,10 @@ Then $\Dvertsq{u+w}+\Dvertsq{u-w}\leqslant2m.$ \;\;\Or $\Dvert{u+w}\cdot\Dvert{u
 
 \ProblemB[]{
 	For orthog $\Par{e_1,\dots,e_m}$ and $v=a_1e_1+\dots+a_me_m,$ becs $\Ang{v,e_k}=a_k\Dvertsq{e_k},$ \;$v={}${\Large$\frac{\:\SmallAng{v,\:e_1}\:}{\;\SmallDvertsq{e_1}}$}$\,e_1+\dots+{}${\Large$\frac{\:\SmallAng{v,\:e_m}\:}{\;\SmallDvertsq{e_m}}$}$\,e_m.$\TextB{}
-	Now $\Dvertsq{v}={}${\Large$\frac{\:\SmallinnerAsq{v,\:e_1}\:}{\SmallDvertsq{e_1}}$}${}+\dots+{}${\Large$\frac{\:\SmallinnerAsq{v,\:e_m}\:}{\SmallDvertsq{e_m}}$}$.$ Replace each $e_k$ with $\Dvert{e_k}{^{\,-1}}e_k,$ now $\Par{e_1,\dots,e_m}$ is a orthon list.\TextB{\vspace{6pt}}
-	Exe (2) holds only for orthon lists.\TextB{\vspace{-4pt}}
+	Now $\Dvertsq{v}={}${\Large$\frac{\:\SmallinnerAsq{v,\:e_1}\:}{\SmallDvertsq{e_1}}$}${}+\dots+{}${\Large$\frac{\:\SmallinnerAsq{v,\:e_m}\:}{\SmallDvertsq{e_m}}$}$.$ Replace each $e_k$ with $\Dvert{e_k}{^{\,-1}}e_k,$ now $\Par{e_1,\dots,e_m}$ is a orthon list.
+%	\TextB{\vspace{6pt}}
+%	Exe (2) holds only for orthon lists.
+	\TextB{\vspace{0pt}}
 }\SepLine
 
 
@@ -96,12 +98,24 @@ If $\,\Ang{v_j,\,f_j}=0,$ then by Exe (2), $v_j\in\Span{e_1,\dots,e_{j-1}}=\Span
 Apply [6.31]. Now $v_j\in\Span{v_1,\dots,v_{j-1}}=\Span{e_1,\dots,e_{j-1}}\Rightarrow f_j=0.$
 \SepLine
 
+\Anchor{6BT}\BulletPointX\Tips \,\,\,Supp $\Par{v_1,\dots,v_m}$ liney indep in $V.$ Get the corres orthon $\Par{e_1,\dots,e_m}$ via [6.31].\TextB{}
+{\IndentTips}Let $S=\Bra{\lambda\in\Fbb:\aMid{\lambda}=1},$ and $S^m$ be the collec of maps $\Bra{1,\dots,m}\rightarrow S.$\TextB{}
+{\IndentTips}Supp orthon $\Par{u_1,\dots,u_m}$ suth each $\Span{u_1,\dots,u_k}=\Span{v_1,\dots,v_k}.$\TextB{}
+{\IndentTips}We show it equals $\BigBigPar{c\Par{1}e_1,\dots,c\Par{m}e_m}$ for some $c\in S^m$ by induc on $k.$\TextB{}
+{\IndentTips}(i) $k=1.$ $\Span{e_1}=\Span{u_1}\Rightarrow c\Par{1}=\Dvert{u_1}\Big/\Dvert{e_1}.$\TextB{}
+{\IndentTips}(ii) $k>1.$ Asum each $c\Par{i}=\Dvert{u_i}\Big/\Dvert{e_i}$ for $i\in\!\Bra{1,\dots,k-1}.$\TextB{}
+{\IndentTips\Hii}Becs $u_k=\Ang{u_k,\,e_1}\,e_1+\dots+\Ang{u_k,\,e_k}\,e_k.$ 又 $\Ang{u_k,\,u_j}=0=c\Par{j}\Ang{u_k,\,e_j}=\Ang{u_j,\,e_j}$ for $j\neq k.$\TextB{}
+{\IndentTips\Hii}Now $u_k=\Ang{u_k,\,e_k}\,e_k\Rightarrow$ let $c\Par{k}=\Ang{u_k,\,e_k}=\Dvert{u_k}\Big/\Dvert{e_k}.$
+\SepLine
+
 \Anchor{6B4e10}\ProblemBnoor{4E 10}{
 	\TextB{Supp $\Par{v_1,\dots,v_m}$ liney indep. Explain why the
 	orthon list produced by [6.31]}
 	\TextB{is the only orthon $\Par{e_1,\dots,e_m}$ suth each $\Ang{v_k,\,e_k}>0$ and $\Span{v_1,\dots,v_k}=\Span{e_1,\dots,e_k}.$}
 }Fix one $k.$ Let \,$v_k=a_1e_1+\dots+a_ke_k\Rightarrow$ each $a_j=\Ang{v_k,e_j}.$ Let \,$f_k=v_k-a_1e_1-\dots-a_{k-1}e_{k-1}.$\parSol{}
-Then $e_k=f_k\Big/\!a_k\Rightarrow\Ang{\,f_k,\,f_k}\big/a_k^2=1\Rightarrow a_k=\pm\Dvert{\,f_k}.$ 又 $a_k>0.$ \:Hence each $e_k=f_k\Big/\Dvert{\,f_k}.$\PfEnd
+Then $e_k=f_k\Big/\;\!\!a_k\Rightarrow\Ang{\,f_k,\,f_k}\big/a_k^2=1\Rightarrow a_k=\pm\Dvert{\,f_k}.$ 又 $a_k>0.$ \:Hence each $e_k=f_k\Big/\Dvert{\,f_k}.$\PfEnd\vspace{4pt}\parSol{}
+\Or By \TIPS. Get $\Par{e_1',\dots,e_m'}$ from $\Par{v_1,\dots,v_m}$ via [6.31].\parSol{}
+Becs each $\BigAng{v_k,\,c\Par{k}e_k'}>0,$ while $\Ang{v_k,\,e_k'}>0.$ Thus $c\Par{k}=\REAL\Sbra{c\Par{k}}>0\Rightarrow c\Par{k}=1.$\PfEnd
 \SepLine
 
 \Anchor{6B10}\ProblemN{10}{
@@ -110,7 +124,7 @@ Then $e_k=f_k\Big/\!a_k\Rightarrow\Ang{\,f_k,\,f_k}\big/a_k^2=1\Rightarrow a_k=\
 }Using induc on $m.$ (i) $m=1.$ Let $e_1=\pm v_1\big/\Dvert{v_1}.$ (ii) $m>1.$ Asum it holds for $\Par{m-1}.$\parSol{}
 Get $2^{m-1}$ orthon lists corres $\Par{v_1,\dots,v_{m-1}}.$ Fix one as $\Par{e_1,\dots,e_{m-1}}$ and apply [6.31] at step $m.$\parSol{}
 Supp $\Par{e_1,\dots,e_{m-1},e_m'}$ is also orthon. \NOTICE that $e_m'=\Ang{e_m',\,e_m}\,e_m.$ So $\innerA{e_m',\,e_m}=1.$\vspace{1pt}\parSol{}
-Let $e_m'=-e_m.$ Sum it up, we have $2^{m-1}\times 2=2^m$ orthon lists.\PfEnd
+Let $e_m'=-e_m.$ Sum it up, we have $2^{m-1}\times 2=2^m$ orthon lists. \qquad\Or By \TIPS, immed.\PfEnd
 \SepLine
 
 \Anchor{6B11}\ProblemN{11}{
