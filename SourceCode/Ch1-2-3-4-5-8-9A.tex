@@ -859,14 +859,14 @@ Then both $W$ and $V$ have a non0 elem.\par\quad\HII\Hb
 %Then $T\mmid_U\Par{u}=0$ makes sense and equals $Tu.$ Now $Tu=0\Rightarrow u\in\null T.$\PfEnd
 
 \Anchor{3BT2}\ProblemBX{\TipsN{2}}{
-	\TextA{Supp $T\in\Lm{V,W}$ and $T\mmid_U$ is inje. Let $V=M+N,\;U=X+Y.$\vspace{0pt}}
-	\TextA{Then $\range T=\range T\mmid_M+\range T\mmid_N=\range T\mmid_X+\range T\mmid_Y.$\vspace{1pt}}
-	(a) \TextA{Show $U=X\oplus Y\Longleftrightarrow\range T=\range T\mmid_X\oplus\range T\mmid_Y.$\vspace{1pt}}
+	\TextA{Supp $T\in\Lm{V,W}.$ Let $V=M+N,\;U=X+Y.$\vspace{0pt}}
+	\TextA{Then $\range T=\range T\mmid_M+\range T\mmid_N,\;\range T\mmid_U=\range T\mmid_X+\range T\mmid_Y.$\vspace{1pt}}
+	(a) \TextA{If $T\mmid_U$ is inje. Show $U=X\oplus Y\Longleftrightarrow\range T\mmid_U=\range T\mmid_X\oplus\range T\mmid_Y.$\vspace{1pt}}
 	(b) \TextA{Give an exa suth $V=M\oplus N,\;\range T\neq\range T\mmid_M\oplus\range T\mmid_N.$}
-}Supp $U=X\oplus Y.$ Asum for some $v\in V,$ there exis two disti pairs $\Par{x_1,y_1},\Par{x_2,y_2}$ in $X\times Y$\parSol{}
-suth $Tv=Tx_1+Ty_1=Tx_2+Ty_2.$ Becs $\forall v\in X\oplus Y,\exists\,!\,\Par{x,y}\in X\times Y,v=x+y.$\parSol{}
-Now $T\Par{x_1+y_1}=T\Par{x_2+y_2}\Longrightarrow x_1+y_1=x_2+y_2\Longrightarrow x_1=x_2,y_1=y_2.$ Ctradic.\parSol{}
-Thus $\forall Tv\in\range T,\exists\,!\,Tx\in\range T\mmid_X,Ty\in\range T\mmid_Y,Tv=Tx+Ty.$ Convly, becs $T$ is inje.\PfEnd\vspace{2pt}
+}Supp $U=X\oplus Y.$ Asum for some $u\in U,$ there exis two disti pairs $\Par{x_1,y_1},\Par{x_2,y_2}$ in $X\times Y$\parSol{}
+suth $Tu=Tx_1+Ty_1=Tx_2+Ty_2.$ Becs $\forall u\in U,\exists\,!\,\Par{x,y}\in X\times Y,v=x+y.$\parSol{}
+Now $T\Par{x_1+y_1}=T\Par{x_2+y_2}\Longrightarrow x_1+y_1=x_2+y_2\Longrightarrow\Par{x_1,y_1}=\Par{x_2,y_2},$ ctradic.\parSol{}
+Thus $\forall u\in U,\exists\,!\,\Par{Tx,Ty}\in\range T\mmid_X\times\range T\mmid_Y,Tu=Tx+Ty.$ \quad Convly, becs $T$ inje.\PfEnd\vspace{2pt}
 \AExa Let $B_V=\Par{v_1,v_2,v_3},B_W=\Par{w_1,w_2},\;T:v_1\mapsto 0,\;v_2\mapsto w_1,\;v_3\mapsto w_2.$\parExa
 Let $B_M=\Par{v_1-v_2,v_3},B_N=\Par{v_2}.$ Then $\range T\mmid_M=\Span{w_1,w_2},\range T\mmid_N=\Span{w_1}$\par\vspace{2pt}
 \AComm Also $\null T\mmid_M=\null T\mmid_N=\zeroSubs.$ Hence $\null T\neq\null T\mmid_M\oplus\null T\mmid_N.$
@@ -876,11 +876,11 @@ Let $B_M=\Par{v_1-v_2,v_3},B_N=\Par{v_2}.$ Then $\range T\mmid_M=\Span{w_1,w_2},
 	\TextA{Prove $\forall T\in\Lm{V,W},\exists$ subsp $U$ of $V$ suth}
 	\TextA{{\large$U\cap\null T$}${}=\null T\mmid_U=\zeroSubs,\;\range T={}${\FontNorm$\Bra{Tu:u\in U}$}${}=\range T\mmid_U.$}
 	\TextA{\FontNorm Which is equiv to $T\mmid_U:U\rightarrow\range T$ being iso.}
-}By [2.34] \BigPar{ note that $V$ can be infinide }, $\exists$ subsp $U$ of $V$ suth $V=U\oplus\null T$.\parSol{}
+}By [2.34] \BigPar{note that $V$ can be infinide}, $\exists$ subsp $U$ of $V$ suth $V=U\oplus\null T$.\parSol{}
 $\forall v\in V,\exists\,!\,w\in\null T,u\in U, v=w+u.$ Then $Tv=T\Par{w+u}=Tu\in\Bra{Tu:u\in U}.$\PfEnd\vspace{6pt}
 \ACoro {\FontLarge\tgsl[P] \quad{$T\mmid_U:U\rightarrow\range T$ is iso $\Longleftrightarrow U\oplus\null T=V.$}\quad [Q]}\vspace{2pt}\parCor
 We have shown $Q\Rightarrow P.$ Now we show $P\Rightarrow Q$ to complete the proof.\parCor
-$\forall v\in V,Tv\in\range T=\range T\mmid_U\Rightarrow \exists\,!\,u\in U,Tv=Tu\Rightarrow v-u\in\null T.$\parCor Thus $v=\Par{v-u}+u\in U+\null T.$ 又 $u\in U\cap\null T\Longleftrightarrow T\mmid_U\Par{u}=0\Longleftrightarrow u=0.$\PfEnd\vspace{4pt}\parCor
+$\forall v\in V,Tv\in\range T=\range T\mmid_U\Rightarrow \exists\,!\,u\in U,Tv=Tu\Rightarrow v-u\in\null T.$\parCor Thus $v=\Par{v-u}+u\in U+\null T.$ 又 $U\cap\null T=\null T\mmid_U.$\PfEnd\vspace{4pt}\parCor
 \Or ${}^\neg Q\Rightarrow{}^\neg P:$ \;Becs $U\oplus\null T\subsetneq V.$ We show $\range T\neq\range T\mmid_U$ by ctradic.\parCor
 Let $X\oplus\Par{U\oplus\null T}=V.$ Now $\range T=\range T\mmid_X\oplus\range T\mmid_U.$ And $X$ is non0.\parCor
 Asum $\range T=\range T\mmid_U.$ Then $\range T\mmid_X=\zeroSubs.$ While $T\mmid_X$ is inje. Ctradic.\parCor
@@ -1650,7 +1650,7 @@ Thus $S$ inje $\Longleftrightarrow\Mt{S}$ inje, wrto any bses. Simlr for surj an
 
 \Anchor{3DT3}\ProblemBX[]{\TipsN{3}}{
 	Identify $\Fbb^{m,n}$ with $\Lm{\Fbb^{n,1},\Fbb^{m,1}},$ due to $Tx=Ax;$ or with $\Lm{\Fbb^{1,n},\Fbb^{1,m}},$ due to $Tx=xA^t.$\TextB{}
-	Details about the latter: $x\Mt{T}{^t}=\BigPar{\Mt{T}\Mt{x}{^t}}{^t}=\Mt{Tx}{^t}=\Mt{xA^t}{^t}=xA^t\Rightarrow\Mt{T}=A.$\TextB{}
+	Details about the latter: $x=\Mt{x}{^t}\Rightarrow x\Mt{T}{^t}=\Mt{Tx}{^t}=\Mt{xA^t}{^t}=xA^t\Rightarrow\Mt{T}=A.$\TextB{}
 	\ANote If we define $\Mt{v}=\Par{c_1\:\:\cdots\:\:c_n}.$Then [3,64]: $\Mt{T}{_{k,\cdot}}=\Mt{v_k}\Mt{T}=\Mt{Tv_k}.$\TextB{}
 	\IndentNote Note that $A=\Mt[\BigPar]{T,\Par{v_1,\dots,v_n},\Par{w_1,\dots,w_m}}\in\Fbb^{n,m},$ and each $Tv_k=A_{k,1}w_1+\dots+A_{k,m}w_m.$\TextB{}
 	\IndentNote [3.65]: $\Mt{Tv}=c_1\Mt{Tv_1}+\dots+c_n\Mt{Tv_n}=c_1\Mt{T}{_{1,\cdot}}+\dots+c_n\Mt{T}{_{n,\cdot}}=\Mt{v}{\Mt{T}}.$\TextB{}
@@ -4174,7 +4174,7 @@ We use induc on $m$ to show $\overline{\Par{T_{\!\Cbb}-\lambda I}{^m}\Par{u+\i v
 Asum it holds for $k\leqslant m.$ Let $\Par{T_{\!\Cbb}-\lambda I}{^{m-1}}\Par{u+\i v}=x+\i y.$ Becs $\overline{\Par{T_{\!\Cbb}-\lambda I}{^{m-1}}\Par{u+\i v}}=x-\i y.$\PfEnd\vspace{2pt}
 \BulletPointX\NoteForSmall{[9.17]}\;\;Detailed proof:\TextB{}
 Let $B=\Par{u_1+\i v_1,\dots,u_m+\i v_m}$ be a bss of $G\Par{\lambda,T_{\!\Cbb}}.$ By [9.12], $\overline{B}=\Par{u_1-\i v_1,\dots,u_m-\i v_m}$ in $G\Par{\overline{\lambda},T_{\!\Cbb}}.$\TextB{}
-(a) If $a_1\Par{u_1-\i v_1}+\dots+a_m\Par{u_m-\i v_m}=0.$ Conjugating, now each $\overline{a_k}=0.$ Liney indep.\TextB{}
+(a) If $a_1\Par{u_1-\i v_1}+\dots+a_m\Par{u_m-\i v_m}=0.$ Conjuging, now each $\overline{a_k}=0.$ Liney indep.\TextB{}
 (b) $\forall u-\i v\in G\Par{\overline{\lambda},T_{\!\Cbb}},u+\i v\in G\Par{\lambda,T_{\!\Cbb}}\Rightarrow u+\i v\in\spn B\Rightarrow u-\i v\in\spn\overline{B}.$\PfEnd
 \SepLine
 
