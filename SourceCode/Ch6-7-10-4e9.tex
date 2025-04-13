@@ -76,6 +76,14 @@ Let $u=a_1v_1,\,w=a_2v_2+\dots+a_mv_m\Rightarrow\Dvertsq{u}\leqslant1,\Dvertsq{w
 Then $\Dvertsq{u+w}+\Dvertsq{u-w}\leqslant2m.$ \;\;\Or $\Dvert{u+w}\cdot\Dvert{u-w}\leqslant m.$\PfEnd
 \SepLine
 
+\Anchor{6A'1}\ProblemB{
+	\TextB{Supp $u,v_1,\dots,v_n$ are non0 in $V$ suth each $\Ang{v_i,u}>0$ and $\Ang{v_i,v_j}\leqslant0$ \,for $i\neq j.$}
+	\TextB{Show $\Par{v_1,\dots,v_n}$ liney indep.}
+}(i) $n=1,2.$ Asum $v_1=cv_2\Rightarrow c\leqslant 0$ while $\Ang{v_2,u}>0\Rightarrow\Ang{cv_2,u}\leqslant0,$ ctradic.\parSol{}
+(ii) $n>2.$ Asum $\Par{v_1,\dots,v_{n-1}}$ liney indep. Asum $v_n=c_1v_1+\dots+c_{n-1}v_{n-1}.$\parSol{\Hii}
+Then $c_1\Ang{v_1,u}+\dots+c_{n-1}\Ang{v_{n-1},u}>0$ while each $c_j,\Ang{v_j,u}\leqslant0.$ Ctradic.\PfEnd
+\SepLine
+
 \ChEnd
 
 \vfill\ChDecl{Ch6B}{6.B}{}
@@ -88,23 +96,7 @@ Then $\Dvertsq{u+w}+\Dvertsq{u-w}\leqslant2m.$ \;\;\Or $\Dvert{u+w}\cdot\Dvert{u
 %	\TextB{\vspace{6pt}}
 %	Exe (2) holds only for orthon lists.
 	\TextB{\vspace{0pt}}
-}\SepLine
-
-
-\Anchor{6B'1}\ProblemB{
-	\TextA{Supp $\Par{e_1,\dots,e_m}$ orthog, $v\in V.$ \,Show $\sum_{k=1}^m\!\BigPar{1-\Dvertsq{e_k}}\,\innerAsq{v,e_k}\leqslant\Dvertsq{v}-\sum_{k=1}^m\innerAsq{v,e_k}.$\vspace{2pt}}
-}Let $u=\Ang{v,e_1}\,e_1+\dots+\Ang{v,e_m}\,e_m\Rightarrow\Dvertsq{u}=\sum_{k=1}^n\innerAsq[{\:\!\Dvert{e_k}\,}]{v,e_k},\,\Ang{u,v}=\sum_{k=1}^n\innerAsq{v,e_k}.$\vspace{2pt}\parSol{}
-Let $\Dvertsq{v-u}=\Dvertsq{v}+\Dvertsq{u}-\Ang{v,u}-\Ang{u,v}=\Dvertsq{v}+\sum_{k=1}^n\!\BigPar{\Dvertsq{e_k}-2}\,\innerAsq{v,e_k}\geqslant0.$\PfEnd\vspace{4pt}
-\Anchor{6B2}\ACoro If orthon, $\Ang{u,\,v-u}=0\Rightarrow\Dvertsq{v}=\Dvertsq{u}+\Dvertsq{v-u}.$\parCor
-Bessel's Inequa: $\sum_{k=1}^m\innerAsq{v,e_k}\leqslant\Dvertsq{v}.$ \:\Sbra{Exe (2)} Equa $\Longleftrightarrow v\in\Span{e_1,\dots,e_m}.$
-\SepLine
-
-\Anchor{6B4e19}\ProblemBnoor{4E 19}{
-	\TextA{Supp $B_V=\Par{v_1,\dots,v_n}.$ Prove $\exists\,B_V'=\Par{u_1,\dots,u_n}$ suth $\Ang{v_j,u_k}=\delta_{j,k}.$}
-}Let $\Par{\varphi_1,\dots,\varphi_n}$ be the corres dual bss of $B_V.$ By [6.42], $\exists\,!\,u_k\in V,\varphi_k\Par{v}=\Ang{v,u_k}$ for all $v\in V.$\parSol{}
-Then $\varphi_k\Par{v_j}=\delta_{j,k}=\Ang{v_j,u_k}.$ Supp $a_1u_1+\dots+a_nu_n=0\Rightarrow$ each $\Ang{v_j,0}=0=a_j.$\PfEnd
-\SepLine
-\pagebreak
+}\SepLine\pagebreak
 
 \Anchor{6B14}\ProblemN{14}{
 	\TextA{Supp $\Par{e_1,\dots,e_m}$ orthon, each $v_j\in V$ suth $\Dvert{e_j-v_j}<{}${\Large$\frac{\;1}{\sqrt{m}\;}$}. Show $\Par{v_1,\dots,v_m}$ liney indep.\vspace{3pt}}
@@ -112,8 +104,16 @@ Then $\varphi_k\Par{v_j}=\delta_{j,k}=\Ang{v_j,u_k}.$ Supp $a_1u_1+\dots+a_nu_n=
 Then
 $\sum_{j=1}^m\aMidsq{a_j}\Big/m\geqslant\sum_{j=1}^m\BigDvertsq{a_j\Par{e_j-v_j}}$\vspace{3pt}\parSol{}
 \Blind{Then $\sum_{j=1}^m\aMidsq{a_j}\Big/m$}${}\geqslant\BigDvertsq{\sum_{j=1}^ma_j\Par{e_j-v_j}}=\sum_{j=1}^m\aMidsq{a_j}\Longrightarrow\sum_{j=1}^m\aMidsq{a_j}=0$ by ctradic.\PfEnd\vspace{6pt}
-\AComm If each $\Dvert{e_j-v_j}=1\Big/\!\sqrt{m}$, then $\Par{v_1,\dots,v_m}$ might be liney dep even if $m\neq1.$\parCom
+%\AComm If each $\Dvert{e_j-v_j}=1\Big/\!\sqrt{m}$, then $\Par{v_1,\dots,v_m}$ might be liney dep even if $m\neq1.$\parCom
 \AExa Let $v_j=e_j-\Par{e_1+\dots+e_m}\Big/m\Rightarrow\Dvert{e_j-v_j}{^2}=1\big/m.$ \;Note that $v_1+\dots+v_m=0.$\PfEnd
+\SepLine
+
+\Anchor{6B'1}\ProblemB{
+	\TextA{Supp $\Par{e_1,\dots,e_m}$ orthog, $v\in V.$ \,Show $\sum_{k=1}^m\!\BigPar{1-\Dvertsq{e_k}}\,\innerAsq{v,e_k}\leqslant\Dvertsq{v}-\sum_{k=1}^m\innerAsq{v,e_k}.$\vspace{2pt}}
+}Let $u=\Ang{v,e_1}\,e_1+\dots+\Ang{v,e_m}\,e_m\Rightarrow\Dvertsq{u}=\sum_{k=1}^n\innerAsq[{\:\!\Dvert{e_k}\,}]{v,e_k},\,\Ang{u,v}=\sum_{k=1}^n\innerAsq{v,e_k}.$\vspace{2pt}\parSol{}
+Let $\Dvertsq{v-u}=\Dvertsq{v}+\Dvertsq{u}-\Ang{v,u}-\Ang{u,v}=\Dvertsq{v}+\sum_{k=1}^n\!\BigPar{\Dvertsq{e_k}-2}\,\innerAsq{v,e_k}\geqslant0.$\PfEnd\vspace{4pt}
+\Anchor{6B2}\ACoro If orthon, $\Ang{u,\,v-u}=0\Rightarrow\Dvertsq{v}=\Dvertsq{u}+\Dvertsq{v-u}.$\parCor
+Bessel's Inequa: $\sum_{k=1}^m\innerAsq{v,e_k}\leqslant\Dvertsq{v}.$ \:\Sbra{Exe (2)} Equa $\Longleftrightarrow v\in\Span{e_1,\dots,e_m}.$
 \SepLine
 
 \Anchor{6B4e9}\ProblemBnoor{4E 9}{
@@ -124,14 +124,6 @@ Becs $\;\Dvert{\,f_j}\,\Ang{v_j,\,e_j}=\Ang{v_j,\,f_j}=\Dvertsq{v_j}-\innerAsq{v
 If $\,\Ang{v_j,\,f_j}=0,$ then by Exe (2), $v_j\in\Span{e_1,\dots,e_{j-1}}=\Span{v_1,\dots,v_{j-1}}.$ 又 $\Dvert{\,f_j}\neq0.$\PfEnd\vspace{2pt}
 \Anchor{6B9}\Anchor{6B4e13}\ANote Supp $\Par{v_1,\dots,v_m}$ liney dep. Let $j$ be the largest suth $\Par{v_1,\dots,v_{j-1}}$ liney indep.\parNot
 Apply [6.31]. Now $v_j\in\Span{v_1,\dots,v_{j-1}}=\Span{e_1,\dots,e_{j-1}}\Rightarrow f_j=0.$
-\SepLine
-
-\Anchor{6B'1}\ProblemB{
-	\TextB{Supp $u,v_1,\dots,v_n$ are non0 in $V$ suth each $\Ang{v_i,u}>0$ and $\Ang{v_i,v_j}\leqslant0$ \,for $i\neq j.$}
-	\TextB{Show $\Par{v_1,\dots,v_n}$ liney indep.}
-}(i) $n=1,2.$ Asum $v_1=cv_2\Rightarrow c\leqslant 0$ while $\Ang{v_2,u}>0\Rightarrow\Ang{cv_2,u}\leqslant0,$ ctradic.\parSol{}
-(ii) $n>2.$ Asum $\Par{v_1,\dots,v_{n-1}}$ liney indep. Asum $v_n=c_1v_1+\dots+c_{n-1}v_{n-1}.$\parSol{\Hii}
-Then $c_1\Ang{v_1,u}+\dots+c_{n-1}\Ang{v_{n-1},u}>0$ while each $c_j,\Ang{v_j,u}\leqslant0.$ Ctradic.\PfEnd
 \SepLine
 
 \Anchor{6BT}\BulletPointX\Tips \,\,\,Supp $\Par{v_1,\dots,v_m}$ liney indep in $V.$ Get the corres orthon $\Par{e_1,\dots,e_m}$ via [6.31].\TextB{}
@@ -182,6 +174,23 @@ Rev the roles of $u,v\Rightarrow c_v\Ang{u,v}{_2}={\Ang{u,v}{_1}}=\overline{\Ang
 }Let $B_V=\Par{e_1,\dots,e_n}$ be orthon wrto $\Ang{\cdot,\cdot}{_2}.$ Supp $v=a_1e_1+\dots+a_ne_n.$\parSol{}
 \NOTICE that $\Dvert{v}{_1}\leqslant\Dvert{a_1e_1}{_1}+\dots+\Dvert{a_ne_n}{_1}\leqslant\max\!\Bra{\Dvert{e_1}{_1},\dots,\Dvert{e_n}{_1}}\cdot\BigPar{\aMid{a_1}+\dots+\aMid{a_n}}.$\vspace{2pt}\parSol{}
 又 $\aMid{a_1}+\dots+\aMid{a_n}\leqslant n\cdot\max\!\Bra{\aMid{a_k}:1\leqslant k\leqslant n}\leqslant n\cdot\sqrt{\aMidsq{a_1}+\dots+\aMidsq{a_n}}\leqslant n\cdot\Dvert{v}{_2}.$\PfEnd
+\SepLine
+
+\Anchor{6B13}\ProblemN{13}{
+	\TextA{Supp $\Par{v_1,\dots,v_m}$ liney indep in $V.$ Show $\exists\,w\in V$ suth each $\Ang{w,\:\!v_j}>0.$}
+}Using induc on $m.$ (i) $m=1.$ Let $w=v_1.$ (ii) $m>1.$ Asum it holds for $\Par{m-1}.$\parSol{}
+By asum, $\exists\,w'\in\Span{v_1,\dots,v_{m-1}}$ suth each $\Ang{w',\:\!v_k}>0$ for $k\in\Bra{1,\dots,m-1}.$\parSol{}
+Apply [6.31] to get the corres $\Par{e_1,\dots,e_m}.$ \;Let $w=w'+a\:\!e_m.$\parSol{}
+Becs each $\Ang{e_m,\:\!v_k}=0\Rightarrow\Ang{w,\:\!v_k}=\Ang{w',\:\!v_k}>0$ for $k\in\Bra{1,\dots,m-1}.$\parSol{}
+Note that $\Ang{e_m,\:\!v_m}\neq0.$ Hence $\exists\,a\in\Fbb,\:\Ang{w,\:\!v_m}=\Ang{w'+a\:\!e_m,\:\!v_m}=\Ang{w',\:\!v_m}+a\:\!\Ang{e_m,\:\!v_m}>0.$\PfEnd\vspace{4pt}\parSol{}
+\Or We show $\exists\,w\in V$ suth each $\Ang{w,\:\!v_j}=\Ang{v_j,\:\!w}=1.$ Let $U=\Span{v_1,\dots,v_m}.$\parSol{}
+Define $\varphi\in U\apostrophe$ by $\varphi\Par{v_j}=1.$ Becs $\exists\,!\,w\in U,$ each $\varphi\Par{v_j}=\Ang{v_j,\:\!w}.$\PfEnd
+\SepLine
+
+\Anchor{6B4e19}\ProblemBnoor{4E 19}{
+	\TextA{Supp $B_V=\Par{v_1,\dots,v_n}.$ Prove $\exists\,B_V'=\Par{u_1,\dots,u_n}$ suth $\Ang{v_j,u_k}=\delta_{j,k}.$}
+}Let $\Par{\varphi_1,\dots,\varphi_n}$ be the corres dual bss of $B_V.$ By [6.42], $\exists\,!\,u_k\in V,\varphi_k\Par{v}=\Ang{v,u_k}$ for all $v\in V.$\parSol{}
+Then $\varphi_k\Par{v_j}=\delta_{j,k}=\Ang{v_j,u_k}.$ Supp $a_1u_1+\dots+a_nu_n=0\Rightarrow$ each $\Ang{v_j,0}=0=a_j.$\PfEnd
 \SepLine
 
 \Anchor{6B16}\ProblemN{16}{
