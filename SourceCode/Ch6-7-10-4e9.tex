@@ -69,12 +69,17 @@ Let $a=-\Ang{u,v}\Rightarrow2\:\!\innerA{u,v}{^2}\leqslant\innerA{u,v}{^2}\,\Dve
 \Or Becs $\REAL\BigPar{x\overline{y}\,\Ang{u,v}}=0.$ Take $\Par{x,y}=\Par{1,1}$ and $\Par{\i,1}.$\PfEnd
 \SepLine
 
-\Anchor{6A4e19}\ProblemBnoor{4E 19}{
-	\TextA{Supp $T\in\Lm{V},\,\lambda$ is eigval. Prove $\aMidsq{\lambda}\leqslant\sum_{j=1}^n\sum_{k=1}^n\aMidsq{A_{j,k}},$ \FontNorm\tgnr where $A=\Mt[\BigPar]{T,\Par{v_1,\dots,v_n}}.$\vspace{3pt}}
-}Let $\Ang{a_1v_1+\dots+a_nv_n,b_1v_1+\dots+b_nv_n}=a_1\overline{b_1}+\dots+a_n\overline{b_n}.$ Let $v$ be eigval corres $\lambda$ with $\Dvert{v}=1.$\vspace{1pt}\parSol{}
-Becs $v=a_1v_1+\dots+a_nv_n\Rightarrow Tv=\sum_{k=1}^na_k\sum_{j=1}^nA_{j,k}v_j=\sum_{j=1}^n\BigSbra{\sum_{k=1}^na_kA_{j,k}}v_j.$\vspace{3pt}\parSol{}
-又 Each $\Dvert{v_j}=1,\:\Ang{v_j,v_k}=0\Rightarrow\Dvertsq{Tv}=\sum_{j=1}^n\Big|\sum_{k=1}^na_kA_{j,k}\Big|{^2}=\aMidsq{\lambda}.$\vspace{3pt}\parSol{}
-Note that $\aXMidsq{a_1A_{j,1}+\dots+a_nA_{j,n}}\leqslant\BigDvertsq{\Par{a_1,\dots,a_n}}\cdot\BigDvertsq{\Par{A_{j,1},\dots,A_{j,n}}}=\sum_{k=1}^n\aMidsq{A_{j,k}}.$\PfEnd
+%\Anchor{6A4e19}\ProblemBnoor{4E 19}{
+%	\TextA{Supp $T\in\Lm{V},\,\lambda$ is eigval. Prove $\aMidsq{\lambda}\leqslant\sum_{j=1}^n\sum_{k=1}^n\aMidsq{A_{j,k}},$ \FontNorm\tgnr where $A=\Mt[\BigPar]{T,\Par{v_1,\dots,v_n}}.$\vspace{3pt}}
+%}Let $\Ang{a_1v_1+\dots+a_nv_n,b_1v_1+\dots+b_nv_n}=a_1\overline{b_1}+\dots+a_n\overline{b_n}.$ Let $v$ be eigval corres $\lambda$ with $\Dvert{v}=1.$\vspace{1pt}\parSol{}
+%Becs $v=a_1v_1+\dots+a_nv_n\Rightarrow Tv=\sum_{k=1}^na_k\sum_{j=1}^nA_{j,k}v_j=\sum_{j=1}^n\BigSbra{\sum_{k=1}^na_kA_{j,k}}v_j.$\vspace{3pt}\parSol{}
+%又 Each $\Dvert{v_j}=1,\:\Ang{v_j,v_k}=0\Rightarrow\Dvertsq{Tv}=\sum_{j=1}^n\Big|\sum_{k=1}^na_kA_{j,k}\Big|{^2}=\aMidsq{\lambda}.$\vspace{3pt}\parSol{}
+%Note that $\aXMidsq{a_1A_{j,1}+\dots+a_nA_{j,n}}\leqslant\BigDvertsq{\Par{a_1,\dots,a_n}}\cdot\BigDvertsq{\Par{A_{j,1},\dots,A_{j,n}}}=\sum_{k=1}^n\aMidsq{A_{j,k}}.$\PfEnd
+%\SepLine
+
+\Anchor{6AT}\ProblemBX{\Tips}{
+	\TextB{Supp $A\in\Fbb^{m,n}.$ Prove $\Dvertsq{Ax}\leqslant\sum_{j=1}^m\sum_{k=1}^n\aMidsq{A_{j,k}}\cdot\Dvertsq{x}$ for all $x\in\Fbb^{m,1}.$\vspace{2pt}}
+}$\Dvertsq{Ax}=\Dvertsq{A_{\cdot,1}x_1+\dots+A_{\cdot,n}x_n}=\sum_{j=1}^m\aMidsq{x_1A_{j,1}+\dots+x_nA_{j,n}}\leqslant\sum_{j=1}^m\Dvertsq{A_{j,\cdot}}\cdot\Dvertsq{x}.$\PfEnd
 \SepLine
 
 \Anchor{6A4e23}\ProblemBnoor{4E 23}{
@@ -97,6 +102,14 @@ Then $c_1\Ang{v_1,u}+\dots+c_{n-1}\Ang{v_{n-1},u}>0$ while each $c_j,\Ang{v_j,u}
 \vfill\ChDecl{Ch6B}{6.B}{}
 
 \vspace{4pt}
+
+\Anchor{6B14}\ProblemN{14}{
+	\TextA{Supp $\Par{e_1,\dots,e_m}$ orthon, each $v_j\in V$ suth $\Dvert{e_j-v_j}<{}${\Large$\frac{\;1}{\sqrt{m}\;}$}. Show $\Par{v_1,\dots,v_m}$ liney indep.}
+}Let $a_1v_1+\dots+a_mv_m=0.$\vspace{3pt}\parSol{}
+$\sum_{j=1}^m\aMidsq{a_j}=\BigDvertsq{{\sum_{j=1}^ma_j\Par{e_j-v_j}}}\leqslant\BigSbra{{\sum_{j=1}^m}\aMid{a_j}\cdot\Dvert{e_j-v_j}}{^2}\leqslant\BigDvertsq{\Par{\aMid{a_j}}{_{j=1}^m}}\cdot\BigDvertsq{\BigPar{\Dvert{e_j-v_j}}{_{j=1}^m}}.$\PfEnd\vspace{6pt}
+%\AComm If each $\Dvert{e_j-v_j}=1\Big/\!\sqrt{m}$, then $\Par{v_1,\dots,v_m}$ might be liney dep even if $m\neq1.$\parCom
+\AExa Let $v_j=e_j-\Par{e_1+\dots+e_m}\Big/m\Rightarrow\Dvert{e_j-v_j}{^2}=1\big/m.$ \;Note that $v_1+\dots+v_m=0.$\PfEnd
+\SepLine
 
 \ProblemB[]{
 	For orthog $\Par{e_1,\dots,e_m}$ and $v=a_1e_1+\dots+a_me_m,$ becs $\Ang{v,e_k}=a_k\Dvertsq{e_k},$ \;$v={}${\Large$\frac{\:\SmallAng{v,\:e_1}\:}{\;\SmallDvertsq{e_1}}$}$\,e_1+\dots+{}${\Large$\frac{\:\SmallAng{v,\:e_m}\:}{\;\SmallDvertsq{e_m}}$}$\,e_m.$\TextB{}
@@ -191,23 +204,24 @@ Define $\varphi\in U\apostrophe$ by $\varphi\Par{v_j}=1.$ Becs $\exists\,!\,w\in
 Then $\varphi_k\Par{v_j}=\delta_{j,k}=\Ang{v_j,u_k}.$ Supp $a_1u_1+\dots+a_nu_n=0\Rightarrow$ each $\Ang{v_j,0}=0=a_j.$\PfEnd
 \SepLine
 
-\Anchor{6B14}\ProblemN{14}{
-	\TextA{Supp $\Par{e_1,\dots,e_m}$ orthon, each $v_j\in V$ suth $\Dvert{e_j-v_j}<{}${\Large$\frac{\;1}{\sqrt{m}\;}$}. Show $\Par{v_1,\dots,v_m}$ liney indep.\vspace{3pt}}
-}Let $a_1v_1+\dots+a_mv_m=0.$ Note that each \:$\aMid{a_j}\big/\!\sqrt{m}\geqslant\BigDvert{a_j\Par{e_j-v_j}}.$\vspace{3pt}\parSol{}
-Then
-$\sum_{j=1}^m\aMidsq{a_j}\Big/m\geqslant\sum_{j=1}^m\BigDvertsq{a_j\Par{e_j-v_j}}$\vspace{3pt}\parSol{}
-\Blind{Then $\sum_{j=1}^m\aMidsq{a_j}\Big/m$}${}\geqslant\BigDvertsq{\sum_{j=1}^ma_j\Par{e_j-v_j}}=\sum_{j=1}^m\aMidsq{a_j}\Longrightarrow\sum_{j=1}^m\aMidsq{a_j}=0$ by ctradic.\PfEnd\vspace{6pt}
-%\AComm If each $\Dvert{e_j-v_j}=1\Big/\!\sqrt{m}$, then $\Par{v_1,\dots,v_m}$ might be liney dep even if $m\neq1.$\parCom
-\AExa Let $v_j=e_j-\Par{e_1+\dots+e_m}\Big/m\Rightarrow\Dvert{e_j-v_j}{^2}=1\big/m.$ \;Note that $v_1+\dots+v_m=0.$\PfEnd
-\SepLine
-
 \Anchor{6B16}\ProblemN{16}{
 	\TextA{Supp $\Fbb=\Cbb,V$ finide, non0 $T\in\Lm{V},$ all eigvals have absolute vals less than $1.$\vspace{1pt}}
-	\TextA{Let $\epsilon>0.$ Prove $\exists\,m\in\Nbp,\:\Dvert{T^mv}\leqslant\epsilon\Dvert{v}$ for all $v\in V.$\vspace{1pt}}
-}By (8.B.10), $T=D+N.$ \,Supp $N^p=0\neq N^{p-1}.$ Supp $T$ up-trig wrto orthon $B_V=\Par{e_1,\dots,e_n}.$\vspace{1pt}\parSol{}
-Becs $\Par{D+N}{^{2p+q}}=D^{2p+q}+\dots+D^{2p+q-k}N^k+\dots+D^{p+q+1}N^{p-1}=D^{p+q+1}\Par{D+N}{^{p-1}},\;q\in\Nbb.$\vspace{1pt}\parSol{}
-Now $T^{2p+q}v=a_1\lambda_1^{p+q+1}T^{p-1}e_1+\dots+a_n\lambda_n^{p+q+1}T^{p-1}e_n.$ Note that $\Dvert{T^{2p+q}v}\rightarrow 0$ as $m\rightarrow\infty.$\PfEnd
-\SepLine\ChEnd
+	\TextA{Let $\epsilon>0.$ Prove $\exists\,m\in\Nbp,\:\Dvert{T^mv}\leqslant\epsilon\Dvert{v}$ \,{\tgsc for all v \ensuremath{\boldsymbol{\in}} V}.}\vspace{1pt}
+}Let $\Ang{\cdot,\cdot}{_V}$ be the inner prod on $V,$ and $\Dvert{{\cdot}}{_V}$ be the corres norm on $V.$\parSol{}
+Using Euclid inner prod $\Ang{\cdot,\cdot}$ and the corres norm $\Dvert{{\cdot}}$ on $\Cbb^{n,1}$ id with $\Cbb^n.$\parSol{}
+Supp $A=\Mt{T}$ up-trig wrto orthon $B_V=\Par{e_1,\dots,e_n}.$\parSol{}
+Then $\forall v=x_1e_1+\dots+x_ne_n\in V,\Dvert{v}{_V}=\Dvert{x}.$ Now we show $\Dvert{A^mx}\leqslant\epsilon\Dvert{x}$ for all $x\in\Cbb^{n,1}.$\parSol{}
+Define $D,N\in\Cbb^{n,n}$ by $D_{j,k}=\delta_{j,k}A_{j,k},\:N=A-D.$ Then $N$ is nilp with $N^p=0\neq N^{p-1}.$\parSol{}
+Let $\rho=\max\!\Bra{\aMid{D_{1,1}},\dots,\aMid{D_{n,n}}}\Rightarrow0\leqslant\rho<1,$ and each $\Dvert{D^{\,k}x}\leqslant\rho^{\,k}\Dvert{x}\leqslant\Dvert{x}.$\vspace{1pt}\parSol{}
+Let $M=\sum_{j=1}^n\sum_{k=1}^n\aMidsq{N_{j,k}}.$ We show $\Dvert{N^mx}\leqslant M^m\Dvert{x}$ by induc. (i) $m=1.$ By \Sbra{6.A \TIPS}.\vspace{1pt}\parSol{}
+(ii) $m>1.$ Asum it holds for $\Par{m-1}.$ Then $\Dvert{NN^{m-1}x}\leqslant M\cdot\Dvert{N^{m-1}x}\leqslant M^m\Dvert{x}.$\vspace{3pt}\parSol{}
+Hence $\Dvert{A^{p+q}x}=\BigDvert{b_0D^{\,p+q}x+\dots+b_kD^{\,p+q-k}N^{k}x+\dots+b_{p-1}D^{\,q+1}N^{p-1}x}$\vspace{3pt}\parSol{}
+\Blind{So that $\Dvert{A^{p+q}x}$}$\leqslant\BigSbra{{b_0\rho^{\,p+q}+\dots+b_k\rho^{\,p+q-k}M^k+b_{p-1}\rho^{\,q+1}M^{p-1}}}\Dvert{x}.$\vspace{2pt}\parSol{}
+Where each $b_j=\mathC_{p+q}^j\leqslant\Par{p+q}{^j}$ for $j\in\Bra{0,\dots,p-1}\Rightarrow$ each $b_j\leqslant\Par{p+q}{^{p-1}}.$\vspace{1pt}\parSol{}
+Let $\sigma=\max\!\Bra{1,M,\dots,M^{p-1}}.$ 又 $\max\!\Bra{\rho^{\,p+q},\dots,\rho^{\,q+1}}=\rho^{\,q+1}.$\parSol{}
+Now $\Dvert{A^{p+q}x}\leqslant\Par{p+q}{^{p-1}}\rho^{\,q+1}\sigma\Dvert{x}.$ \;Note that as $q\rightarrow\infty,$ \,$\Par{p+q}{^{p-1}}\rho^{\,q+1}\rightarrow0.$\PfEnd
+\SepLine
+\ChEnd
 
 \pagebreak
 
