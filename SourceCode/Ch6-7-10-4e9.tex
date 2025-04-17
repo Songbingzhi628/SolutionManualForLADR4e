@@ -63,10 +63,9 @@ Thus $\Dvertsq{u}\leqslant\Dvertsq{u-cv}=\Dvertsq{u}-\innerAsq{u,v}{\;\!\XSlash\
 Let $a=-\Ang{u,v}\Rightarrow2\:\!\innerA{u,v}{^2}\leqslant\innerA{u,v}{^2}\,\Dvertsq{v}.$ If $\Ang{u,v}\neq0,$ then $2\leqslant\Dvertsq{v};$ might not be true.\PfEnd
 \SepLine
 
-\Anchor{6A'1}\ProblemB{
-	\TextB{Supp $u,v\in V$ and for all $x,y\in\Fbb,\:\Dvertsq{xu+yv}=\aMidsq{x}\:\!\Dvertsq{u}+\aMidsq{y}\:\!\Dvertsq{v}.$ Prove $\Ang{u,v}=0.$}
-}By Exe (6), $\Dvertsq{u}\leqslant\Dvertsq{u}+\aMidsq{a}\:\!\Dvertsq{v}=\Dvertsq{u+a\:\!v}$ for all $a\in\Fbb.$\PfEnd\parSol{}
-\Or Becs $\REAL\BigPar{x\overline{y}\,\Ang{u,v}}=0.$ Take $\Par{x,y}=\Par{1,1}$ and $\Par{\i,1}.$\PfEnd
+\Anchor{6AT1}\ProblemBX{\TipsN{1}}{
+	\TextB{Supp $u,v\in V,$ $\Dvertsq{xu+yv}=\aMidsq{x}\:\!\Dvertsq{u}+\aMidsq{y}\:\!\Dvertsq{v}$ for $x,y\in\Fbb.$ Prove $\Ang{u,v}=0.$}
+}Becs $\REAL\BigPar{x\overline{y}\,\Ang{u,v}}=0.$ Take $\Par{x,y}=\Par{1,1}$ and $\Par{\i,1}.$\quad\Or By Exe (6), immed.\PfEnd
 \SepLine
 
 %\Anchor{6A4e19}\ProblemBnoor{4E 19}{
@@ -77,7 +76,7 @@ Let $a=-\Ang{u,v}\Rightarrow2\:\!\innerA{u,v}{^2}\leqslant\innerA{u,v}{^2}\,\Dve
 %Note that $\aXMidsq{a_1A_{j,1}+\dots+a_nA_{j,n}}\leqslant\BigDvertsq{\Par{a_1,\dots,a_n}}\cdot\BigDvertsq{\Par{A_{j,1},\dots,A_{j,n}}}=\sum_{k=1}^n\aMidsq{A_{j,k}}.$\PfEnd
 %\SepLine
 
-\Anchor{6AT}\ProblemBX{\Tips}{
+\Anchor{6AT2}\ProblemBX{\TipsN{2}}{
 	\TextB{Supp $A\in\Fbb^{m,n}.$ Prove $\Dvertsq{Ax}\leqslant\sum_{j=1}^m\sum_{k=1}^n\aMidsq{A_{j,k}}\cdot\Dvertsq{x}$ for all $x\in\Fbb^{m,1}.$\vspace{2pt}}
 }$\Dvertsq{Ax}=\Dvertsq{A_{\cdot,1}x_1+\dots+A_{\cdot,n}x_n}=\sum_{j=1}^m\aMidsq{x_1A_{j,1}+\dots+x_nA_{j,n}}\leqslant\sum_{j=1}^m\Dvertsq{A_{j,\cdot}}\cdot\Dvertsq{x}.$\PfEnd
 \SepLine
@@ -93,12 +92,12 @@ Then $\Dvertsq{u+w}+\Dvertsq{u-w}\leqslant2m.$ \;\;\Or $\Dvert{u+w}\cdot\Dvert{u
 	\TextB{Supp $u,v_1,\dots,v_n$ are non0 in $V$ suth each $\Ang{v_i,u}>0$ and $\Ang{v_i,v_j}\leqslant0$ \,for $i\neq j.$}
 	\TextB{Show $\Par{v_1,\dots,v_n}$ liney indep.}
 }(i) Asum $v_1=cv_2.$ Then $\Ang{cv_2,u}>0\Rightarrow c>0,$ while $\Ang{v_1,v_1}=c\Ang{v_2,v_1}\geqslant0\Rightarrow c\leqslant0.$ ctradic.\parSol{}
-(ii) Asum $\Par{v_1,\dots,v_{n-1}}$ liney indep. Asum $v_n=c_1v_1+\dots+c_{n-1}v_{n-1}.$\parSol{\Hii}
-$c_1\Ang{v_1,u}+\dots+c_{n-1}\Ang{v_{n-1},u}>0,$ while $\Ang{v_n,v_n}=c_1\Ang{v_1,v_n}+\dots+c_{n-1}\Ang{v_{n-1},v_n}\geqslant0.$\parSol{\Hii}
-Which means at least one $c_j>0,$ while at least one $c_k<0.$\PfEnd
+(ii) Asum $\Par{v_1,\dots,v_{n-1}}$ liney indep. Asum $v_n=c_1v_1+\dots+c_{n-1}v_{n-1}.$\parSol{}
+Then $\Ang{v_n,u}=c_1\Ang{v_1,u}+\dots+c_{n-1}\Ang{v_{n-1},u}>0.$ \;Thus each $c_k\in\Rbb.$\parSol{}
+Write $c_1v_1+\dots+c_nv_n=0,\:c_n=-1.$ \;Let $P=\Bra{i:c_i\geqslant0},\,N=\Bra{i:c_i<0}.$\vspace{1pt}\parSol{}
+Then $\sum_{j\in P}c_jv_j=\sum_{k\in N}-c_kv_k\Longrightarrow 0\leqslant\BigAng{{\sum_{j\in P}c_jv_j,\,\sum_{k\in N}-c_kv_k}}=\sum_{j\in P}\sum_{k\in N}-c_j\:\!c_k\!\:\Ang{v_j,v_k}\leqslant0.$\vspace{2pt}\parSol{}
+While $\BigAng{{\sum_{j\in P}c_jv_j,u}},\BigAng{{\sum_{k\in N}-c_kv_k,u}}\geqslant0,$ where the equas hold $\Longleftrightarrow$ all $c_i=0.$\PfEnd
 \SepLine
-
-\ChEnd
 
 \vfill\ChDecl{Ch6B}{6.B}{}
 
@@ -214,7 +213,7 @@ Supp $A=\Mt{T}$ up-trig wrto orthon $B_V=\Par{e_1,\dots,e_n}.$\parSol{}
 Then $\forall v=x_1e_1+\dots+x_ne_n\in V,\Dvert{v}{_V}=\Dvert{x}.$ Now we show $\Dvert{A^mx}\leqslant\epsilon\Dvert{x}$ for all $x\in\Cbb^{n,1}.$\parSol{}
 Define $D,N\in\Cbb^{n,n}$ by $D_{j,k}=\delta_{j,k}A_{j,k},\:N=A-D.$ Then $N$ is nilp with $N^p=0\neq N^{p-1}.$\parSol{}
 Let $\rho=\max\!\Bra{\aMid{D_{1,1}},\dots,\aMid{D_{n,n}}}\Rightarrow0\leqslant\rho<1,$ and each $\Dvert{D^{\,k}x}\leqslant\rho^{\,k}\Dvert{x}\leqslant\Dvert{x}.$\vspace{1pt}\parSol{}
-Let $M=\sum_{j=1}^n\sum_{k=1}^n\aMidsq{N_{j,k}}.$ We show $\Dvert{N^mx}\leqslant M^m\Dvert{x}$ by induc. (i) $m=1.$ By \Sbra{6.A \TIPS}.\vspace{1pt}\parSol{}
+Let $M=\sum_{j=1}^n\sum_{k=1}^n\aMidsq{N_{j,k}}.$ We show $\Dvert{N^mx}\leqslant M^m\Dvert{x}$ by induc. (i) $m=1.$ By \Sbra{6.A \TIPSN{2}}.\vspace{1pt}\parSol{}
 (ii) $m>1.$ Asum it holds for $\Par{m-1}.$ Then $\Dvert{NN^{m-1}x}\leqslant M\cdot\Dvert{N^{m-1}x}\leqslant M^m\Dvert{x}.$\vspace{3pt}\parSol{}
 Hence $\Dvert{A^{p+q}x}=\BigDvert{b_0D^{\,p+q}x+\dots+b_kD^{\,p+q-k}N^{k}x+\dots+b_{p-1}D^{\,q+1}N^{p-1}x}$\vspace{3pt}\parSol{}
 \Blind{So that $\Dvert{A^{p+q}x}$}$\leqslant\BigSbra{{b_0\rho^{\,p+q}+\dots+b_k\rho^{\,p+q-k}M^k+b_{p-1}\rho^{\,q+1}M^{p-1}}}\Dvert{x}.$\vspace{2pt}\parSol{}
@@ -246,7 +245,7 @@ $\forall a\in\Fbb,\;\Dvert{w}\leqslant\Dvert{w+au},$ \Or $\Dvert{Pv}=\Dvert{P\Pa
 
 \Anchor{6C10}\ProblemN{10}{
 	\TextA{Supp $V$ finide, $U$ a subsp, $T\in\Lm{V},$ and $P_UT=TP_U.$ Prove $U$ and $U^\perp$ invard $T.$}
-}(a) $P_UTP_U=TP_UP_U=TP_U.$ \,(b) $P_{U^\perp}TP_{U^\perp}=\Par{I-P_U}T\Par{I-P_U}=T\Par{I-P_U}{^2}=TP_{U^\perp}.$\PfEnd\parSol{}
+}(a) $P_UTP_U=TP_UP_U=TP_U.$ \,(b) $P_{U^\perp}TP_{U^\perp}=\Par{I-P_U}T\Par{I-P_U}=T\Par{I-P_U}{^2}=TP_{U^\perp}.$\vspace{2pt}\PfEnd\parSol{}
 \Or (a) $\range T\mmid_U=\range TP_U=\range P_UT\subseteq U.$\parSol{}
 \Blind{\Or}(b) $\range T\mmid_{U^\perp}=\range T\Par{I-P_U}=\range\Par{I-P_U}T\subseteq U^\perp.$\PfEnd\parSol{}
 \Blind{\Or}\AComm The trick $T=\Par{P_U\mmid_{\range T}}{^{-1}}TP_U$ is invalid.
@@ -256,16 +255,43 @@ $\forall a\in\Fbb,\;\Dvert{w}\leqslant\Dvert{w+au},$ \Or $\Dvert{Pv}=\Dvert{P\Pa
 {\IndentTipsN{2}}Then $\exists\,!\,w\in U,\varphi\Par{u}=\Ang{u,w}=\Ang{u,v}$ for all $u\in U\Rightarrow v-w\in U^\perp.$ Now $w=P_Uv.$
 \SepLine
 
-\Anchor{6CT3}\BulletPointX\TipsN{3}\,\,\,Supp $e_1,\dots,e_n\in V$ with each $\Dvert{e_k}=1,$ and for all $v\in V,\:\Dvert{v}{^2}=\innerAsq{v,\,e_1}+\dots+\innerAsq{v,\,e_n}.$\TextB{}
-{\IndentTipsN{3}}Then each $\Dvert{e_j}{^2}=\sum_{j\neq k}^n\innerAsq{e_j,\,e_k}+\innerAsq{e_j,\,e_j}\Rightarrow$ each $\innerAsq{e_j,e_k}=0.$\TextB{}
-{\IndentTipsN{3}}And by (6.B.2), $V=\Span{e_1,\dots,e_n}.$ \;\Or Becs $\forall v\in\Span{e_1,\dots,e_n}{^\perp},\Dvert{v}{^2}=0.$
-\SepLine
+%\Anchor{6CT3}\BulletPointX\TipsN{3}\,\,\,Supp $e_1,\dots,e_n\in V$ with each $\Dvert{e_k}=1,$ and for all $v\in V,\:\Dvert{v}{^2}=\innerAsq{v,\,e_1}+\dots+\innerAsq{v,\,e_n}.$\TextB{}
+%{\IndentTipsN{3}}Then each $\Dvert{e_j}{^2}=\sum_{j\neq k}^n\innerAsq{e_j,\,e_k}+\innerAsq{e_j,\,e_j}\Rightarrow$ each $\innerAsq{e_j,e_k}=0.$\TextB{}
+%{\IndentTipsN{3}}And by (6.B.2), $V=\Span{e_1,\dots,e_n}.$ \;\Or Becs $\forall v\in\Span{e_1,\dots,e_n}{^\perp},\Dvert{v}{^2}=0.$
+%\SepLine
 
 \ChEnd
 
 \pagebreak
 
-\ChDecl{Ch7A}{7.A}{\quad{\ANote {\FontSmall $V$ denotes a finide inner prodsp over $\Fbb.$}}}%An Exe marked by $\blacksquare$ is true if infinide or partially finide.
+\ChDecl{Ch7A}{7.A}{\quad{\ANote {\FontSmall $V$ denotes a finide vecsp over $\Fbb.$}}}%An Exe marked by $\blacksquare$ is true if infinide or partially finide.
+
+\vspace{4pt}
+
+\ProblemN{N}{
+	\TextA{}
+}
+\SepLine
+
+\ProblemN{N}{
+	\TextA{}
+}
+\SepLine
+
+\ProblemN{N}{
+	\TextA{}
+}
+\SepLine
+
+\ProblemN{N}{
+	\TextA{}
+}
+\SepLine
+
+\ProblemN{N}{
+	\TextA{}
+}
+\SepLine
 
 \ChEnd\pagebreak
 
