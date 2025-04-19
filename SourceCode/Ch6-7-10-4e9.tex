@@ -336,12 +336,15 @@ Now $\lambda_j^8e_j=T^8e_j=T^9e_j=\lambda_j^9e_j\Rightarrow\lambda_j=0$ or $1\in
 \SepLine
 
 \ProblemBnoor{4E 8}{
-	\TextA{Supp $\Fbb=\Cbb,T\in\Lm{V}.$ Prove each eigvec of $T$ is an eigvec of $T^*\Rightarrow T$ normal}
-}
+	\TextA{Supp $\Fbb=\Cbb,T\in\Lm{V}.$ Prove each eigvec of $T$ is an eigvec of $T^*\Rightarrow T$ is normal.}
+}Supp $v$ is eigvec of $T$ corres $\lambda$ and of $T^*$ corres $\mu.$\parSol{}
+Then $\lambda\Dvertsq{v}=\Ang{Tv,v}=\Ang{v,T^*v}=\overline{\mu}\Dvertsq{v}\Rightarrow\lambda=\overline{\mu}.$\parSol{}
+Thus each $E\Par{\lambda,T}=E\Par{\overline{\lambda},T^*}$ invard $T,T^*,$ so is $E\Par{\lambda,T}{^\perp}=E\Par{\overline{\lambda},T^*}.$\parSol{}
+Let $W=\bigcap_{\lambda\,\in\,\Fbb}E\Par{\lambda,T}{^\perp}$ invard $T,T^*.$ No eigvals of $T\mmid_W,T^*\mmid_W\Rightarrow W=\zeroSubs.$ By (3.F.22).\PfEnd
 \SepLine
 
 \ProblemBnoor{4E 9}{
-	\TextA{}
+	\TextA{Supp $\Fbb=\Cbb,T\in\Lm{V}$ is normal. Prove $T^*=p\Par{T}.$}
 }
 \SepLine
 
@@ -351,7 +354,16 @@ Now $\lambda_j^8e_j=T^8e_j=T^9e_j=\lambda_j^9e_j\Rightarrow\lambda_j=0$ or $1\in
 \SepLine
 
 \ProblemBnoor{4E 20}{
-	\TextA{}
-}
+	\TextA{Supp $T\in\Lm{V}$ is normal and $U$ invarspd $T.$}
+	\TextA{Prove {\tgnr\large(a)} $U^\perp$ invard $T,$ \;{\tgnr\large(b)} $\Par{T\mmid_U}{^*}=T^*\mmid_U\in\Lm{U},$ \;{\tgnr\large(c)} $T\mmid_U,T\mmid_{U^\perp}$ normal.}
+}Let $\lambda_1,\dots,\lambda_m$ be disti eigvals. By \Sbra{5.A \TIPSN{3}}, $U=E\Par{\lambda_1,T\mmid_U}\oplus\cdots\oplus E\Par{\lambda_m,T\mmid_U}.$\parSol{}
+Let orthon $B_V=\Par{e_1,\dots,e_n}$ of eigvecs suth $B_U=\Par{e_1,\dots,e_m}\Rightarrow B_{U^\perp}=\Par{e_{m+1},\dots,e_n}.$\parSol{}
+(a) Now $U^\perp$ invard $T.$ Apply to $T^*\Rightarrow U$ invard $T^*.$\parSol{}
+(b) $\forall u,v\in U,\BigAng{v,\Par{T\mmid_U}{^*}u}=\Ang{T\mmid_U v,u}=\Ang{v,T*\mmid_U u}\Rightarrow\BigPar{\Par{T\mmid_U}{^*}-T^*\mmid_U}u\in U\cap U^\perp.$\parSol{}
+(c) $\forall u\in U,\Dvert{T\mmid_U u}=\Dvert{T^*\mmid_U u}=\BigDvert{\Par{T\mmid_U}{^*}u}.$ Apply to invarsp $U^\perp.$\parSol{\Hc}
+\Or $T\mmid_U\Par{T\mmid_U}{^*}=TT^*\mmid_U=T^*T\mmid_U=T^*\mmid_UT\mmid_U=\Par{T\mmid_U}{^*}T\mmid_U.$\PfEnd\vspace{2pt}
+\ANote Another proof of [7.24]: Induc step: For $\dim V>1.$ Asum it holds for smaller dim.\parNot
+Let $u$ be an eigvec with $\Dvert{u}=1.$ Let $B_U=\Par{u}\Rightarrow U$ invard $T,$ so is $U^\perp\Rightarrow T\mmid_{U^\perp}$ normal.\parNot
+By asum, $\exists$ orthon $B_{U^\perp}$ of eigvecs of $T\mmid_{U^\perp}.$ Now $B_V=B_U\cap B_{U^\perp}$ of orthon eigvecs.\PfEnd
 \SepLine
 \ChEnd
