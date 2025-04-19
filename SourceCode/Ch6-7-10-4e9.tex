@@ -265,36 +265,99 @@ $\forall a\in\Fbb,\;\Dvert{w}\leqslant\Dvert{w+au},$ \Or $\Dvert{Pv}=\Dvert{P\Pa
 
 \ChDecl{Ch7A}{7.A}{\quad{\ANote {\FontSmall $V$ denotes a finide vecsp over $\Fbb.$}}}%An Exe marked by $\blacksquare$ is true if infinide or partially finide.
 
-\vspace{4pt}
+\vspace{6pt}
 
-\ProblemN{3}{
+\Anchor{7A3}\ProblemN{3}{
 	\TextA{Supp $T\in\Lm{V}$ and $U$ is a subsp of $V.$ Prove $U$ invard $T\Longleftrightarrow U^\perp$ invard $T^*.$}
 }If $U$ invard. Then $\forall u\in U,\forall w\in U^\perp,\:\Ang{Tu,w}=0=\Ang{u,T^*w}\Rightarrow T^*w\in U^\perp.$ Rev the roles.\PfEnd
 \SepLine
 
+%\Anchor{7A4e19}\ProblemBnoor{4E 19}{
+%	\TextA{Supp $T\in\Lm{V}$ and $\Dvert{T^*v}\leqslant\Dvert{Tv}$ for all $v\in V.$ Prove $T$ is normal.}
+%}Let orthon $B_V=\Par{e_1,\dots,e_n}.$ By Exe (4E 5), $\sum_{i=1}^n\Dvertsq{T^*e_i}=\sum_{i=1}^n\Dvertsq{Te_i}.$\parSol{}
+%Becs each $\Dvertsq{T^*e_i}\leqslant\Dvertsq{Te_i}.$ Note that this orhon $B_V$ is arb.\PfEnd
+%\SepLine
+
 \Anchor{7A11}\Anchor{7A4e20}\ProblemB{
-	\TextB{Supp $P^2=P\in\Lm{V}.$ Prove {\tgnr\large(a)} $P=P_U\Rightarrow P$ is self-adj, \;{\tgnr\large(b)} $P$ is normal $\Rightarrow P=P_U.$}
-}(a) $\forall\Par{u,w},\Par{x,y}\in U\times U^\perp,\:\BigAng{P\Par{u+w},x+y}=\Ang{u+w,x}=\BigAng{u+w,P^*\Par{x+y}}.$\parSol{}
-(b) Becs $\range P=\range P^*=\Par{\null P}{^\perp}.$\PfEnd
+	\TextB{Supp $P^2=P=P_U\in\Lm{V}$ for some subsp $U$ of $V.$ Prove $P$ is self-adj.}
+}$\forall\Par{u,w},\Par{x,y}\in U\times U^\perp,\:\BigAng{P\Par{u+w},x+y}=\Ang{u+w,x}=\BigAng{u+w,P^*\Par{x+y}}.$\PfEnd
 \SepLine
 
-%\ProblemN{17}{
-%	\TextA{Supp $T\in\Lm{V}$ is normal. Prove each $\null T^k=\null T$ and $\range T^k=\range T.$}
-%}
+\Anchor{7A4e28}\ProblemBnoor{4E 28}{
+	\TextA{Supp $T\in\Lm{V}$ is normal. Prove the min of $T$ is not a multi of any $\Par{z-\lambda}{^2}.$}
+}Note that each $\Par{T-\lambda I}$ is normal $\Rightarrow$ each $\Null\Par{T-\lambda I}{^k}=\Null\Par{T-\lambda I}.$ By (8.B.5).\PfEnd\vspace{3pt}\parSol{}
+\Or By Exe (16), $V=\Null\Par{T-\lambda I}\oplus\range\Par{T-\lambda I}$ for all $\lambda\in\Fbb.$\parSol{}
+By (5.C.5). If $\Fbb=\Rbb.$ Then by [4.17] for the min of $T_{\!\Cbb}.$ \;\Or By Exe (17), \Sbra{8.B \TIPSN{4}}.\PfEnd\vspace{3pt}\parSol{}
+We prove the ctrapos. Supp the min of $T$ is $p\Par{z}=\Par{z-\lambda}{^2}q\Par{z}.$ Let $s\Par{z}=\Par{z-\lambda}q\Par{z}.$\parSol{}
+Then $\exists\,v\in V,\,s\Par{T}v\neq0\Rightarrow q\Par{T}v\in\Null\Par{T-\lambda I}{^2}\Backslash\Null\Par{T-\lambda I}.$\PfEnd
+\SepLine
+
+%\Anchor{8C16}\Anchor{7A4e24}\ProblemBnoor{4E 24 {\OR} 8.C.16}{
+%	\TextA{Supp $T\in\Lm{V}$ with the min $p.$ Prove the min $s$ of $T$ is $\overline{p}.$}
+%}$\forall q\in\PoFi,\,q\Par{T}=0\Longleftrightarrow q\Par{T}{^*}=\overline{q}\Par{T^*}=0.$ \,{\OR} $\overline{q}\Par{T}=0\Longleftrightarrow \overline{q}\Par{T}{^*}=q\Par{T^*}=0.$\parSol{}
+%Thus $\overline{p}$ is a multi of $s,$ and $\overline{s}$ is a multi of $p.$\PfEnd
 %\SepLine
 
-%\ProblemN{13}{
-%	\TextA{}
-%}
-%\SepLine
-%
-%\ProblemN{18}{
-%	\TextA{}
-%}
-%\SepLine
-
-\ChEnd\pagebreak
+\Anchor{7A17}\ProblemN{17}{
+	\TextA{Supp $T\in\Lm{V}$ is normal. Prove each $\null T^k=\null T$ \,and\, $\range T^k=\range T.$}
+}Becs $\range T=\Par{\null T^*}{^\perp}=\Par{\null T}{^\perp}\Rightarrow T\mmid_{\range T}$ is inje. Thus $\null T^k=\null T.$\parSol{}
+And $\range T^2=\range T\mmid_{\range T}=\range T=\range T\Rightarrow\range T^{k-1}\mmid_{\range T}=\range T^{k-1}\mmid_{\range T^2}.$\PfEnd\vspace{4pt}\parSol{}
+\Or $v\in\null T^{k+1}\Rightarrow T^kv\in\null T=\null T^*\Rightarrow0=\Ang{T^*T^kv,T^{k-1}v}=\Ang{T^kv,T^kv}\Rightarrow v\in\null T^k.$\parSol{}
+Note that $T$ normal $\Rightarrow T^k$ normal. Then $\range T^k=\Par{\null T^k}{^\perp}=\Par{\null T}{^\perp}=\range T.$\PfEnd
+\SepLine
 
 \ChDecl{Ch7B}{7.B}{}
+
+\vspace{4pt}
+
+\ProblemN{N}{
+	\TextA{}
+}
+\SepLine
+
+\ProblemN{N}{
+	\TextA{}
+}
+\SepLine
+
+\ProblemN{N}{
+	\TextA{}
+}
+\SepLine
+
+\ProblemN{N}{
+	\TextA{}
+}
+\SepLine
+
+\ProblemN{N}{
+	\TextA{}
+}
+\SepLine
+
+\ProblemN{N}{
+	\TextA{}
+}
+\SepLine
+
+\ProblemBnoor{4E }{
+	\TextA{}
+}
+\SepLine
+
+\ProblemBnoor{4E }{
+	\TextA{}
+}
+\SepLine
+
+\ProblemBnoor{4E }{
+	\TextA{}
+}
+\SepLine
+
+\ProblemBnoor{4E }{
+	\TextA{}
+}
+\SepLine
 
 \ChEnd
