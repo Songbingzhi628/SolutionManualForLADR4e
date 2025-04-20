@@ -344,22 +344,24 @@ Let $W=\bigcap_{\lambda\,\in\,\Fbb}E\Par{\lambda,T}{^\perp}$ invard $T,T^*.$ No 
 \SepLine
 
 \ProblemBnoor{4E 9}{
-	\TextA{Supp $\Fbb=\Cbb,T\in\Lm{V}$ is normal. Prove $T^*=p\Par{T}.$}
-}
+	\TextA{Supp $\Fbb=\Cbb,T\in\Lm{V}$ is normal. Prove $T^*=p\Par{T}.$\vspace{2pt}}
+}Let $p\Par{z}=\sum_{j=1}^m{}${\Large\envFontSmall[\footnotesize]\def\SmallPar{\Par}$\frac{\Par{z\,-\,\lambda_1}\,\cdots\,\Par{z\,-\,\lambda_{j-1}}\Par{z\,-\,\lambda_{j+1}}\,\cdots\,\Par{z\,-\,\lambda_m}}{\Par{\lambda_j\,-\,\lambda_1}\,\cdots\,\Par{\lambda_j\,-\,\lambda_{j-1}}\Par{\lambda_j\,-\,\lambda_{j+1}}\,\cdots\,\Par{\lambda_j\,-\,\lambda_m}}$}${\,}\overline{\lambda_j}\Rightarrow$ each $p\Par{\lambda_j}=\overline{\lambda_j}.$\vspace{3pt}\parSol{}
+Where $\lambda_1,\dots,\lambda_m$ are disti eigvals of $T\Rightarrow\forall v_k\in E\Par{\lambda_k,T},\,p\Par{T}v_k=p\Par{\lambda_k}v_k=\overline{\lambda_k}v_k=T^*v_k.$\PfEnd
 \SepLine
 
 \ProblemBnoor{4E 12}{
-	\TextA{}
-}
+	\TextA{Supp $\Fbb=\Cbb,T\in\Lm{V}$ is normal, $S\in\Lm{V}$ and $ST=TS.$ Prove $ST^*=T^*S.$}
+}Let $B_V=\Par{e_1,\dots,e_n}$ be orthon eigvecs of $T$ corres $\lambda_1,\dots,\lambda_n.$\parSol{}
+Becs each $E\Par{\lambda_k,T}=E\Par{\overline{\lambda_k},T^*}$ invard $S\Rightarrow ST^*e_k=\overline{\lambda_k}Se_k=T^*Se_k.$\PfEnd
 \SepLine
 
 \ProblemBnoor{4E 20}{
 	\TextA{Supp $T\in\Lm{V}$ is normal and $U$ invarspd $T.$}
 	\TextA{Prove {\tgnr\large(a)} $U^\perp$ invard $T,$ \;{\tgnr\large(b)} $\Par{T\mmid_U}{^*}=T^*\mmid_U\in\Lm{U},$ \;{\tgnr\large(c)} $T\mmid_U,T\mmid_{U^\perp}$ normal.}
-}Let $\lambda_1,\dots,\lambda_m$ be disti eigvals. By \Sbra{5.A \TIPSN{3}}, $U=E\Par{\lambda_1,T\mmid_U}\oplus\cdots\oplus E\Par{\lambda_m,T\mmid_U}.$\parSol{}
-Let orthon $B_V=\Par{e_1,\dots,e_n}$ of eigvecs suth $B_U=\Par{e_1,\dots,e_m}\Rightarrow B_{U^\perp}=\Par{e_{m+1},\dots,e_n}.$\parSol{}
+}By \Sbra{5.A \TIPSN{3}}, and apply [6.31] to each $E\Par{\lambda_k,T\mmid_U},$ let $B_U=\Par{e_1,\dots,e_m}$ be orthon eigvecs.\parSol{}
+Let $B_V=\Par{e_1,\dots,e_n}$ be orthon eigvecs. Then $B_{U^\perp}=\Par{e_{m+1},\dots,e_n}.$\parSol{}
 (a) Now $U^\perp$ invard $T.$ Apply to $T^*\Rightarrow U$ invard $T^*.$\parSol{}
-(b) $\forall u,v\in U,\BigAng{v,\Par{T\mmid_U}{^*}u}=\Ang{T\mmid_U v,u}=\Ang{v,T*\mmid_U u}\Rightarrow\BigPar{\Par{T\mmid_U}{^*}-T^*\mmid_U}u\in U\cap U^\perp.$\parSol{}
+(b) $\forall u,v\in U,\BigAng{v,\Par{T\mmid_U}{^*}u}=\Ang{T\mmid_U v,u}=\Ang{v,T^*\mmid_U u}\Rightarrow\BigPar{\Par{T\mmid_U}{^*}-T^*\mmid_U}u\in U\cap U^\perp.$\parSol{}
 (c) $\forall u\in U,\Dvert{T\mmid_U u}=\Dvert{T^*\mmid_U u}=\BigDvert{\Par{T\mmid_U}{^*}u}.$ Apply to invarsp $U^\perp.$\parSol{\Hc}
 \Or $T\mmid_U\Par{T\mmid_U}{^*}=TT^*\mmid_U=T^*T\mmid_U=T^*\mmid_UT\mmid_U=\Par{T\mmid_U}{^*}T\mmid_U.$\PfEnd\vspace{2pt}
 \ANote Another proof of [7.24]: Induc step: For $\dim V>1.$ Asum it holds for smaller dim.\parNot
