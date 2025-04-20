@@ -167,7 +167,7 @@ To fix this, {\FontLarge denote the set $\Bra{W_{\hspace{-1pt}1},W_{\hspace{-1pt
 \SepLine
 
 \Anchor{1CT2}\ProblemBX{\TipsN{2}}{
-	\TextA{Supp $V_{\!1}\subseteq V_{\!2}$ in Exe {\tgnr(23)}. Prove $V_{\!1}=V_{\!2}.$}
+	\TextA{Supp $V_{\!1}\subseteq V_{\!2}$ and $V_{\!1}\oplus U=V_{\!2}\oplus U.$ Prove $V_{\!1}=V_{\!2}.$}
 }Becs the subset $V_{\!1}$ of vecsp $V_{\!2}$ is closd add and scalar multi, $V_{\!1}$ is a subspace of $V_{\!2}.$\parSol{}
 Supp $W$ is suth $V_{\!2}=V_{\!1}\oplus W.$ Now $V_{\!2}\oplus U=\Par{V_{\!1}\oplus W}\oplus U=\Par{V_{\!1}\oplus U}\oplus W=V_{\!1}\oplus U.$\parSol{}
 If $W\neq\zeroSubs,$ then $V_{\!1}\oplus U\subsetneq\Par{V_{\!1}\oplus U}\oplus W$, ctradic. Hence $W=\zeroSubs,V_{\!1}=V_{\!2}.$\PfEnd
@@ -2670,14 +2670,15 @@ Moreover, \;$\sum_{k=0}^{m-1}a_{k+1}p_{k,m-1}\Par{x}=0.$ By asum, $a_1=\dots=a_{
 Thus $\Par{p_{0,m+1},\dots,p_{m+1,m+1}}$ is liney indep and $S\Par{m+1}$ holds.\PfEnd
 \SepLine
 
-\Anchor{3D4e20}\ProblemBnoor{4E 3.D.20}{
-	\TextA{Supp $q\in\PoRi.$ Prove $\exists\,p\in\PoRi,q\Par{x} = \Par{x^2 + x}p\apostrophe\apostrophe\Par{x} + 2xp\apostrophe\Par{x} + p\Par{3}.$\vspace{1pt}}
-}Note that $\Deg\Sbra{\Par{x^2 + x}p\apostrophe\apostrophe\Par{x} + 2xp\apostrophe\Par{x} + p\Par{3}}=\deg p.$\parSol{}
-Define $T_{\!n}\in\Lm[\BigPar]{\PoR{n}}$ by $T_{\!n}\Par{p}=\Par{x^2 + x}p\apostrophe\apostrophe\Par{x} + 2xp\apostrophe\Par{x} + p\Par{3}.$\parSol{}
-And note that $T_{\!n}\Par{p}=0\Rightarrow\deg T_{\!n}\Par{p}=-\infty=\deg p\Rightarrow p=0.$ Thus $T_{\!n}$ is inv.\parSol{}
-$\forall q\in\PoRi,$ if $q=0,$ let $n=0;$ if $q\neq 0,$ let $n=\deg q,$ we have $q\in\PoR{n}.$\parSol{}
-Now $\exists\,p\in\PoR{n}, q\Par{x}=T_{\!n}\Par{p}=\Par{x^2 + x}p\apostrophe\apostrophe\Par{x} + 2xp\apostrophe\Par{x} + p\Par{3}$ for all $x\in\Rbb.$\PfEnd
-\SepLine\pagebreak
+%\Anchor{3D4e20}\ProblemBnoor{4E 3.D.20}{
+%	\TextA{Supp $q\in\PoRi.$ Prove $\exists\,p\in\PoRi,q\Par{x} = \Par{x^2 + x}p\apostrophe\apostrophe\Par{x} + 2xp\apostrophe\Par{x} + p\Par{3}.$\vspace{1pt}}
+%}Note that $\Deg\Sbra{\Par{x^2 + x}p\apostrophe\apostrophe\Par{x} + 2xp\apostrophe\Par{x} + p\Par{3}}=\deg p.$\parSol{}
+%Define $T_{\!n}\in\Lm[\BigPar]{\PoR{n}}$ by $T_{\!n}\Par{p}=\Par{x^2 + x}p\apostrophe\apostrophe\Par{x} + 2xp\apostrophe\Par{x} + p\Par{3}.$\parSol{}
+%And note that $T_{\!n}\Par{p}=0\Rightarrow\deg T_{\!n}\Par{p}=-\infty=\deg p\Rightarrow p=0.$ Thus $T_{\!n}$ is inv.\parSol{}
+%$\forall q\in\PoRi,$ if $q=0,$ let $n=0;$ if $q\neq 0,$ let $n=\deg q,$ we have $q\in\PoR{n}.$\parSol{}
+%Now $\exists\,p\in\PoR{n}, q\Par{x}=T_{\!n}\Par{p}=\Par{x^2 + x}p\apostrophe\apostrophe\Par{x} + 2xp\apostrophe\Par{x} + p\Par{3}$ for all $x\in\Rbb.$\PfEnd
+%\SepLine
+%\pagebreak
 
 \Anchor{3D19}\ProblemBnoor{3.D.19}{
 	\TextA{Supp $T\in\Lm[\BigPar]{\PoRi}$ is inje. And $\deg Tp\leqslant\deg p$ for every non0 $p\in\PoRi$.}
@@ -2730,16 +2731,12 @@ For $j,k\in\Nbb,\:\Par{x^{j}}{^{\SmallPar{k}}}=\left\{\begin{array}{l}j\Par{j-1}
 \vspace{3pt}
 
 \Anchor{4OT1}\BulletPointX\TipsN{1}\,\,\,{\tgsl Supp $p\in\PoF{n}$ has at least $n+1$ disti zeros. Then by the ctrapos of [4.12], $\deg p<0\Rightarrow p=0.$}\TextB{}
-\Or We show if $p\in\PoFi{}$ has at least $m$ disti zeros, then either $p=0$ or $\deg p\geqslant m.$\TextB{}
-If $p=0$ then done. If not, then supp $p$ has exactly $m$ disti zeros $\lambda_1,\dots,\lambda_m.$\TextB{}
-Becs $\exists\,!\,\alpha_i\geqslant 1,q\in\PoFi,$ and $q\neq 0,$ suth $p\Par{z}=\Sbra{\Par{z-\lambda_1}{^{\alpha_1}}\cdots\Par{z-\lambda_m}{^{\alpha_m}}}q\Par{z}.$\PfEnd\vspace{2pt}
-\BulletPointX\AComm {\tgsl\NOTICE that by [4.17], some term of the poly factoriz might not be in the form $\Par{x-\lambda_k}{^{\alpha_k}}.$}\vspace{-2pt}
-\SepLine
-
-\Anchor{4ON4.7}\BulletPointX\NoteFor{[4.7]} {\tgsl the uniqnes of coeffs of polys} \hfill[{\tgsc Another proof}]\TextB{\vspace{2pt}}
-If a poly had two different sets of coeffs, then
-subtracting the two exprs\TextB{}
-would give a poly with some non0 coeffs but infily many zeros. By {\TIPSN{1}}.\PfEnd\vspace{-3pt}
+{\IndentTipsN{1}}\Or We show if $p\in\PoFi{}$ has at least $m$ disti zeros, then either $p=0$ or $\deg p\geqslant m.$\TextB{}
+{\IndentTipsN{1}}Supp $p\neq0.$ Becs $\exists\,!\,\alpha_i\geqslant 1,q\in\PoFi,\:p\Par{z}=\Sbra{\Par{z-\lambda_1}{^{\alpha_1}}\cdots\Par{z-\lambda_m}{^{\alpha_m}}}q\Par{z}.$\PfEnd\vspace{2pt}\Anchor{4ON4.7}\TextB{}
+%\BulletPointX\AComm {\tgsl\NOTICE that by [4.17], some term of the poly factoriz might not be in the form $\Par{x-\lambda_k}{^{\alpha_k}}.$}\vspace{-2pt}
+\!\Sbra[3pt]{{\tgsc\large Another proof of \tgnr\tgbfx[4.7]}} \;If a poly had two different sets of coeffs,\TextB{}
+then
+subtracting the two exprs would give a poly with some non0 coeffs but infily many zeros.
 \SepLine
 
 \Anchor{4ON4.8}\BulletPointX\NoteFor{[4.8]} {\tgsl div algo for polys} \hfill[{\tgsc Another proof}]\TextB{\vspace{-11pt}}
@@ -2784,7 +2781,7 @@ Thus $p\Par{z}=\sum_{j=1}^m a_j \Par{z-\lambda}\sum_{i=1}^k \lambda^{i-1}z^{k-i}
 	\TextA{Prove $\exists\,!\,p\in\PoF{m},p\Par{z_k}=w_k$ for each $k\in\Bra{1,\dots, m+1}.$}
 }\par\quad
 Define $T\in\Lm[\BigPar]{\PoF{m},\Fbb^{m+1}}$ by $Tq=\BigPar{q\Par{z_1},\dots,q\Par{z_m},q\Par{z_{m+1}}}.$\vspace{1pt}\par\quad
-Becs $Tq=0\Longleftrightarrow q\Par{z_1}=\dots=q\Par{z_m}=q\Par{z_{m+1}}=0\Longleftrightarrow q=0,$ by {\TIPSN{1}}. \;Now $T$ iso. Immed.\PfEnd\vspace{4pt}\quad
+Becs $Tq=0\Rightarrow\Par{m+1}$ disti zeros for $q$ of deg no more than $m\Rightarrow q=0.$ \;Now $T$ iso.\PfEnd\vspace{4pt}\quad
 \Or Let $p_1=1,\;p_k\Par{z}=\prod_{i=1}^{k-1}\Par{z-z_i}=\Par{z-z_1}\cdots\Par{z-z_{k-1}}$ for each $k\in\Bra{2,\dots,m+1}.$\vspace{1pt}\par\quad
 By (2.C.10), $B_p=\Par{p_1,\dots,p_{m+1}}$ is a bss of $\PoF{m}.$ Let $B_e=\Par{e_1,\dots,e_{m+1}}$ be the std bss of $\Fbb^{m+1}.$\vspace{2pt}\par\quad
 Now $Tp_1=\Par{1,\dots,1},\;Tp_k=\XPar{\prod_{i=1}^{k-1}\Par{z_1-z_i},\dots,\prod_{i=1}^{k-1}\Par{z_j-z_i},\dots,\prod_{i=1}^{k-1}\Par{z_{m+1}-z_i}};$\vspace{3pt}\par\quad
@@ -2831,55 +2828,68 @@ Now $p\apostrophe\Par{z}=\Par{z-\lambda_j}q_j\apostrophe\Par{z}+q_j\Par{z}\Right
 Becs $p\apostrophe\Par{z}=\Par{z-\lambda}q\apostrophe\Par{z}+q\Par{z}\Rightarrow p\apostrophe\Par{\lambda}=q\Par{\lambda}=0\Rightarrow q\Par{z}=\Par{z-\lambda}s\Par{z}.$\parSol{\Ha}
 Now $p\Par{z}=\Par{z-\lambda}{^2}s\Par{z}.$ Hence $p$ has strictly less than $m$ disti zeros.\vspace{4pt}\parSol{}
 (b) ${}^{\neg}P\Rightarrow{}{^\neg}Q:$ \;Becs $0\neq p\in\PoC{m}.$ Supp all disti zeros are $\lambda_1,\dots,\lambda_M,$ with $M<m.$\parSol{\Hb}
-By Pigeon Hole Principle, $\Par{z-\lambda_k}{^{2}}q\Par{z}=p\Par{z}$ for some $\lambda_k\Rightarrow p\apostrophe\Par{\lambda_k}=0=p\Par{\lambda_k}.$\PfEnd\vspace{2pt}
+By Pigeon Hole Principle, $\Par{z-\lambda_k}{^{2}}q\Par{z}=p\Par{z}$ for some $\lambda_k\Rightarrow p\apostrophe\Par{\lambda_k}=0=p\Par{\lambda_k}.$\PfEnd\vspace{4pt}
 \ANote If $\Fbb=\Rbb.$ Then replace ``$m$ disti zeros'' with ``$m$ disti zeros in $\Cbb$'' and the result still holds.
 \SepLine
 
-\ProblemN{\Anchor{4O7}{7}}{
-	\TextA{Prove every $p\in\PoRi$ of odd deg has a zero.\hfill\tgnr\FontNorm Using [4.17], $\deg p=2M+m\Rightarrow m$ is odd.}
-}\Or Write $p\Par{x}=x^m\envFontSmall\XPar{${\FontLarge$\frac{a_0}{x^m}$}${}+{}${\FontLarge$\frac{a_1}{x^{m-1}}$}${}+\dots+{}${\FontLarge$\frac{a_{m-1}}{x}$}${}+a_m\envFontSmall}\Rightarrow p$ continuous on $\Interval{(}{]}{{-\infty,0}}\cup\Interval{[}{)}{0,\infty}.$\parSol{\vspace{3pt}}
-Let $\delta=\aMid{a_m}{^{-1}}a_m.$ \:\:Becs $\lim\limits_{x\rightarrow -\infty}p\Par{x}=-\delta\infty\,;\;\;\lim\limits_{x\rightarrow \infty}p\Par{x}=\delta\infty\Rightarrow p$ has at least one real zero.\PfEnd
+%\ProblemN{\Anchor{4O7}{7}}{
+%	\TextA{Prove every $p\in\PoRi$ of odd deg has a zero.\hfill\tgnr\FontNorm Using [4.17], $\deg p=2M+m\Rightarrow m$ is odd.}
+%}\Or Write $p\Par{x}=x^m\envFontSmall\XPar{${\FontLarge$\frac{a_0}{x^m}$}${}+{}${\FontLarge$\frac{a_1}{x^{m-1}}$}${}+\dots+{}${\FontLarge$\frac{a_{m-1}}{x}$}${}+a_m\envFontSmall}\Rightarrow p$ continuous on $\Interval{(}{]}{{-\infty,0}}\cup\Interval{[}{)}{0,\infty}.$\parSol{\vspace{3pt}}
+%Let $\delta=\aMid{a_m}{^{-1}}a_m.$ \:\:Becs $\lim\limits_{x\rightarrow -\infty}p\Par{x}=-\delta\infty\,;\;\;\lim\limits_{x\rightarrow \infty}p\Par{x}=\delta\infty\Rightarrow p$ has at least one real zero.\PfEnd
+%\SepLine
+\vspace{2pt}
+\ProblemN{\Anchor{4O8}{8}}{
+	\TextA{Supp $p\in\PoRi.$ Let $\Par{Tp}\Par{x}={}${\FontNorm$\MathLeftBrace{l}{${\Large\envFontSmall[\footnotesize]\def\SmallPar{\Par}$\frac{p\SmallPar{x}\,-\,p\SmallPar{3}}{x\,-\,3}$}$\;$ if $x\neq 3,\\[4pt]p\apostrophe\Par{3}$\hfill if $x=3.}$} \;Show $Tp\in\PoRi.$\vspace{-10pt}}
+}\par\quad
+For $x\neq 3,T\Par{x^k}={}${\Large$\frac{x^k\,-\,3^k}{x\,-\,3}$}${}=\sum_{i=1}^k 3^{i-1}x^{k-i}.$ \;Still true for $x=3.$\par\quad
+Each $T\Par{a_0+a_1x+\dots+a_mx^m}=a_1+\dots+a_k\sum_{i=1}^k3^{i-1}x^{k-i}+\dots+a_m\sum_{i=1}^m 3^{i-1}x^{m-i}\in\PoRi{}.$\PfEnd\vspace{6pt}\quad
+\Or \NOTICE that \uline{$\exists\,!\,q\in\PoRi,$}$\:p\Par{x}-p\Par{3}=\Par{x-3}q\Par{x}.$ For $x\neq 3,\;q\Par{x}={}${\Large\envFontSmall[\footnotesize]\def\SmallPar{\Par}$\frac{p\SmallPar{x}\,-\,p\SmallPar{3}}{x\,-\,3}$}.\par\quad
+$p\apostrophe\Par{x}=\BigPar{p\Par{x}-p\Par{3}}\apostrophe=q\Par{x}+\Par{x-3}q\apostrophe\Par{x}.$ For $x=3,\;p\apostrophe\Par{3}=q\Par{3}.$ Now $Tp=q.$\PfEnd
+%Let each $q_k\Par{x}\Par{x-3}=p_k\Par{x}-p_k\Par{3}\Rightarrow Tp_k=q_k,$ for $k=1,2.$\par\quad
+%Then $\Par{p_1+\lambda p_2}\Par{x}-\Par{p_1+\lambda p_2}\Par{3}=\Par{x-3}\Par{q_1+\lambda q_2}\Par{x}.$ \,By the uniqnes of $q_1+\lambda q_2.$\PfEnd
 \SepLine
 
-\ProblemN{\Anchor{4O8}{8}}{
-	\TextA{Supp $p\in\PoRi.$ Define $Tp:\Rbb\rightarrow\Rbb\,$ by $\Par{Tp}\Par{x}={}${\FontNorm$\MathLeftBrace{l}{\Frac{p\Par{x}-p\Par{3}}{x-3}\;$ if $x\neq 3,\\[4pt]p\apostrophe\Par{3}$\hfill if $x=3.}$}\vspace{-10pt}}
-	\TextA{Show {\tgnr\large(a)} $Tp\in\PoRi;$ \, {\tgnr\large(b)} $T\in\Lm[\BigPar]{\PoRi}.$\vspace{0pt}}
-}\vspace{2pt}\par\quad
-(a) For $x\neq 3,T\Par{x^n}={}${\Large$\frac{x^n\,-\,3^n}{x\,-\,3}$}${}=\sum_{i=1}^n 3^{i-1}x^{n-i}.$\vspace{2pt}\par\quad\Ha
-For $x=3,T\Par{x^n}=n3^{n-1}=\sum_{i=1}^n 3^{n-1}=\sum_{i=1}^n 3^{i-1}x^{n-i}.$ \,Now each $T\Par{x^n}=\sum_{i=1}^n 3^{i-1}x^{n-i}\in\PoRi{}.$\par\vspace{8pt}\quad
-(b) $T\Par{p+\lambda q}\Par{x}={}${\FontSmall$\hMath{l}{\left\{}{\right|}{
-		\Frac{\Par{p+\lambda q}\Par{x}-\Par{p+\lambda q}\Par{3}}{x-3},\;$ if $x\neq 3,\\
-		\Par{p+\lambda q}\apostrophe\Par{3},$ \hfill if $x=3\Blind{.}
-	}$}${}=\Sbra{T\Par{p}+\lambda T\Par{q}}\Par{x}$ for all $x\in\Rbb.$\PfEnd\vspace{16pt}\quad
-\Or (a) Becs $\exists\,!\,q\in\PoRi,p\Par{x}-p\Par{3}=\Par{x-3}q\Par{x}.$ For $x\neq 3,\;q\Par{x}={}${\Large\envFontSmall[\footnotesize]\def\SmallPar{\Par}$\frac{p\SmallPar{x}\,-\,p\SmallPar{3}}{x\,-\,3}$}.\par\quad\Ha
-\Blind{\Or}$p\apostrophe\Par{x}=\BigPar{p\Par{x}-p\Par{3}}\apostrophe=q\Par{x}+\Par{x-3}q\apostrophe\Par{x}.$ For $x=3,\;p\apostrophe\Par{3}=q\Par{3}.$ Now $Tp=q.$\vspace{4pt}\par\quad
-\Blind{\Or}(b) Let $q_k\Par{x}\Par{x-3}=p_k\Par{x}-p_k\Par{3}.$ Now by (a), $Tp_k=q_k.$\par\quad\Hb
-\Blind{\Or}Then $\Par{p_1+\lambda p_2}\Par{x}-\Par{p_1+\lambda p_2}\Par{3}=\Par{x-3}\Par{q_1+\lambda q_2}\Par{x}.$ \,By the uniqnes of $q_1+\lambda q_2.$\PfEnd
-\SepLine
+%\ProblemN{\Anchor{4O9}{9}}{
+%	\TextA{Supp $p\in\PoCi$. Define $q:\Cbb\rightarrow\Cbb\,$ by $q\Par{z} = p\Par{z}\overline{p\Par{\overline z}}$. Prove $q\in\PoRi$.\vspace{1pt}}
+%}By [4.5], $\overline z{^n}=\overline{z^n}.$ \;For any $f\Par{z}=a_nz^n+\dots+a_1z+a_0,\;\overline{f\Par{\overline{z}}}=\overline{a_n}z^n+\dots+\overline{a_1}z+\overline{a_0}.$\parSol{}
+%Becs $q\Par{z}=p\Par{z}\overline{p\Par{\overline z}}=\overline{p\Par{\overline z}}p\Par{z}=\overline{q\Par{\overline z}}.$ \;Each $c_k=\overline{c_k}\Rightarrow c_k\in\Rbb.$\PfEnd
+%\vspace{6pt}\parSol{}
+%\Or Becs $q\Par{z}=p\Par{z}\overline{p\Par{\overline z}}=\sum_{k=0}^{2n}\XPar{{\sum_{i+j=k}c_i\overline{c_j}}}\,z^k.$ For each $k\in\Bra{0,\dots,2n},$\vspace{0pt}\parSol{}
+%$\overline{\sum_{i+j=k}c_i\overline{c_j}}=\sum_{i+j=k}\overline{c_i\overline{c_j}}=\sum_{i+j=k}{c_j}\overline{c_i}=\sum_{i+j=k}c_i\overline{c_j}\in\Rbb.$\PfEnd
+%\SepLine
+
+%\ProblemN{\Anchor{4O10}{10}}{
+%	\TextA{Supp disti $x_0,x_1,\dots,x_m\in\Rbb,$ and $p\in\PoC{m}$ suth each $p\Par{x_k}\in\Rbb.$ Prove $p\in\PoRi$.}
+%}By {\TIPSN{1}} and Exe (5), $\exists\,!\,q\in\PoR{m}$ suth $q\Par{x_k}=p\Par{x_k}.$ Hence $p=q.$\PfEnd
+%\vspace{11pt}\quad
+%\Or Define $q\Par{x}=\sum_{j=0}^m{}${\Large\envFontSmall[\footnotesize]\def\SmallPar{\Par}$\frac{\SmallPar{x\,-\,x_0}\SmallPar{x\,-\,x_1}\,\cdots\,\SmallPar{x\,-\,x_{j-1}}\SmallPar{x\,-\,x_{j+1}}\,\cdots\,\SmallPar{x\,-\,x_m}}{\SmallPar{x_j\,-\,x_0}\SmallPar{x_j\,-\,x_1}\,\cdots\,\SmallPar{x_j\,-\,x_{j-1}}\SmallPar{x_j\,-\,x_{j+1}}\,\cdots\,\SmallPar{x_j\,-\,x_m}}$}${\,}p\Par{x_j}.$\par\vspace{4pt}\quad
+%又 Each $x_j,\,p\Par{x_j}\in\Rbb\Rightarrow q\in\PoR{m}.$ \;Becs each $q\Par{x_k}=1\cdot p\Par{x_k}\Rightarrow\Par{q-p}\Par{x_k}=0.$\par\quad
+%$\Par{q-p}$ has $\Par{m+1}$ zeros. By {\TIPSN{1}}, $q-p=0\Rightarrow p=q\in\PoRi.$\PfEnd
+%\SepLine
 
 \ProblemN{\Anchor{4O11}{11}}{
-	\TextA{Supp $p\in\PoFi$ with $\deg p=m\in\Nbb.$ Let $U=\Bra{pq:q\in\PoFi}$. Find a bss of $\PoFi\XSlash U.$\vspace{1pt}}
-%	\TextA{{\tgnr\large(a)} Show $\dim\PoFi\XSlash U = \deg p$; \; {\tgnr\large(b)} Find a bss of $\PoFi\XSlash U$.}
-}If $\deg p=0,$ then $U=\PoFi,\PoFi\XSlash U=\Bra{0+U},$ with the uniq bss $\Par{}.$ \;Supp $\deg p\geqslant 1.$\par\vspace{2pt}\quad
-Becs $\forall s\in\PoFi,\exists\,!\,r\in\PoF{m-1},q\in\PoFi\Rightarrow\exists\,!\,pq\in U,\;s=\Par{p}q+\Par{r}\Rightarrow\PoFi=U\oplus\PoF{m-1}.$\vspace{0pt}\par\quad
-By {\NOTEFOR} [3.88, 90, 91] \OR Define $R\Par{s}=r\Rightarrow\null R=U,$ and $R$ surj.\par\vspace{2pt}\quad
-Let $\Par{1,z,\dots,z^{m-1}}$ be a bss of $\PoF{m-1}.$ By (4E 3.E.14) \OR $\tilde{R}{^{-1}}\!:\PoF{m-1}\rightarrow\PoFi{}\XSlash U.$\PfEnd
-\SepLine\pagebreak
-
-\ProblemN{\Anchor{4O9}{9}}{
-	\TextA{Supp $p\in\PoCi$. Define $q:\Cbb\rightarrow\Cbb\,$ by $q\Par{z} = p\Par{z}\overline{p\Par{\overline z}}$. Prove $q\in\PoRi$.\vspace{1pt}}
-}By [4.5], $\overline z{^n}=\overline{z^n}.$ \;For any $f\Par{z}=a_nz^n+\dots+a_1z+a_0,\;\overline{f\Par{\overline{z}}}=\overline{a_n}z^n+\dots+\overline{a_1}z+\overline{a_0}.$\parSol{}
-Becs $q\Par{z}=p\Par{z}\overline{p\Par{\overline z}}=\overline{p\Par{\overline z}}p\Par{z}=\overline{q\Par{\overline z}}.$ \;Each $c_k=\overline{c_k}\Rightarrow c_k\in\Rbb.$\PfEnd\vspace{6pt}\parSol{}
-\Or Becs $q\Par{z}=p\Par{z}\overline{p\Par{\overline z}}=\sum_{k=0}^{2n}\XPar{{\sum_{i+j=k}c_i\overline{c_j}}}\,z^k.$ For each $k\in\Bra{0,\dots,2n},$\vspace{0pt}\parSol{}
-$\overline{\sum_{i+j=k}c_i\overline{c_j}}=\sum_{i+j=k}\overline{c_i\overline{c_j}}=\sum_{i+j=k}{c_j}\overline{c_i}=\sum_{i+j=k}c_i\overline{c_j}\in\Rbb.$\PfEnd
+	\TextA{Supp $p\in\PoFi$ with $\deg p=m\in\Nbb.$ Let $U=\Bra{pq:q\in\PoFi}$. Find a bss of $\PoFi\XSlash U.$}
+	%	\TextA{{\tgnr\large(a)} Show $\dim\PoFi\XSlash U = \deg p$; \; {\tgnr\large(b)} Find a bss of $\PoFi\XSlash U$.}
+}If $\deg p=0,$ then $U=\PoFi,\PoFi\XSlash U=\Bra{0+U},$ with the uniq bss $\Par{}.$ \;Supp $\deg p\geqslant 1.$\par\vspace{1pt}\quad
+Becs $\forall s\in\PoFi,\exists\,!\,r\in\PoF{m-1},q\in\PoFi\Rightarrow\exists\,!\,pq\in U,\;s=\Par{p}q+\Par{r}\Rightarrow{}$\uline{$\PoFi=U\oplus\PoF{m-1}$}.\PfEnd
 \SepLine
 
-\ProblemN{\Anchor{4O10}{10}}{
-	\TextA{Supp disti $x_0,x_1,\dots,x_m\in\Rbb,$ and $p\in\PoC{m}$ suth each $p\Par{x_k}\in\Rbb.$ Prove $p\in\PoRi$.}
-}By {\TIPSN{1}} and Exe (5), $\exists\,!\,q\in\PoR{m}$ suth $q\Par{x_k}=p\Par{x_k}.$ Hence $p=q.$\PfEnd\vspace{11pt}\quad
-\Or Define $q\Par{x}=\sum_{j=0}^m{}${\Large\envFontSmall[\footnotesize]\def\SmallPar{\Par}$\frac{\SmallPar{x\,-\,x_0}\SmallPar{x\,-\,x_1}\,\cdots\,\SmallPar{x\,-\,x_{j-1}}\SmallPar{x\,-\,x_{j+1}}\,\cdots\,\SmallPar{x\,-\,x_m}}{\SmallPar{x_j\,-\,x_0}\SmallPar{x_j\,-\,x_1}\,\cdots\,\SmallPar{x_j\,-\,x_{j-1}}\SmallPar{x_j\,-\,x_{j+1}}\,\cdots\,\SmallPar{x_j\,-\,x_m}}$}${\,}p\Par{x_j}.$\par\vspace{4pt}\quad
-又 Each $x_j,\,p\Par{x_j}\in\Rbb\Rightarrow q\in\PoR{m}.$ \;Becs each $q\Par{x_k}=1\cdot p\Par{x_k}\Rightarrow\Par{q-p}\Par{x_k}=0.$\par\quad
-$\Par{q-p}$ has $\Par{m+1}$ zeros. By {\TIPSN{1}}, $q-p=0\Rightarrow p=q\in\PoRi.$\PfEnd
+\Anchor{4OL1}\ProblemN{L1}{
+	\TextB{Prove $\forall p,q\in\PoFi,k\in\Nbp,\Par{pq}{^{\SmallPar{k}}}=\mathC_{k}^k p{^{\SmallPar{k}}}q{^{\SmallPar{0}}}+\dots+\mathC_{k}^j p{^{\SmallPar{j}}}q{^{\SmallPar{k-j}}}+\dots+\mathC_{k}^0 p{^{\SmallPar{0}}}q{^{\SmallPar{k}}}.$\vspace{2pt}}
+}We use induc by $k\in\Nbp.$ \;(i) $k=1.$ $\Par{pq}{^{\SmallPar{1}}}=\Par{pq}\apostrophe=C_{1}^1 p{^{\SmallPar{1}}}q{^{\SmallPar{0}}}+C_{1}^0 p{^{\SmallPar{0}}}q{^{\SmallPar{1}}}.$ \;(ii) $k\geqslant 2.$\vspace{2pt}\par\quad
+Asum for $\Par{pq}{^{\SmallPar{k-1}}}=\mathC_{k-1}^{k-1} p{^{\SmallPar{k-1}}}q{^{\SmallPar{0}}}+\dots+\mathC_{k-1}^j p{^{\SmallPar{j}}}q{^{\SmallPar{k-1-j}}}+\dots+\mathC_{k-1}^0 p{^{\SmallPar{0}}}q{^{\SmallPar{k-1}}}.$\vspace{4pt}\par\quad
+Now $\Par{pq}{^{\SmallPar{k}}}=\BigPar{\Par{pq}{^{\SmallPar{k-1}}}}\apostrophe=\XPar{{\sum_{j=0}^{k-1}\mathC_{k-1}^{j} p{^{\SmallPar{j}}}q{^{\SmallPar{k-j-1}}}}}\apostrophe=\sum_{j=0}^{k-1}\XSbra{\mathC_{k-1}^{j} \XPar{p{^{\SmallPar{j+1}}}q{^{\SmallPar{k-j-1}}}+p{^{\SmallPar{j}}}q{^{\SmallPar{k-j}}}}}.$\vspace{4pt}\par\quad
+\Blind{Now} $\Blind{\Par{pq}{^{\SmallPar{k}}}\!}=\XSbra{\mathC_{k-1}^{0}\XPar{ \uwave{p{^{\SmallPar{1}}}q{^{\SmallPar{k-1}}}}+\boxed{p{^{\SmallPar{0}}}q{^{\SmallPar{k}}}}}}+\XSbra{\mathC_{k-1}^1\XPar{p{^{\SmallPar{2}}}q{^{\SmallPar{k-2}}}+\uwave{p{^{\SmallPar{1}}}q{^{\SmallPar{k-1}}}}}}$\vspace{4pt}\par\quad
+\Blind{Now} $\Blind{\Par{pq}{^{\SmallPar{k}}}=}+\dots+\XSbra{\mathC_{k-1}^{j-2}\XPar{ \uline{p{^{\SmallPar{j-1}}}q{^{\SmallPar{k-j+1}}}}+p{^{\SmallPar{j-2}}}q{^{\SmallPar{k-j+2}}}}}+\XSbra{\mathC_{k-1}^{j-1}\XPar{ \uuline{p{^{\SmallPar{j}}}q{^{\SmallPar{k-j}}}}+\uline{p{^{\SmallPar{j-1}}}q{^{\SmallPar{k-j+1}}}}}}$\vspace{4pt}\par\quad
+\Blind{Now} $\Blind{\Par{pq}{^{\SmallPar{k}}}=}+\XSbra{\mathC_{k-1}^{j}\XPar{ \uwave{p{^{\SmallPar{j+1}}}q{^{\SmallPar{k-j-1}}}}+\uuline{ p{^{\SmallPar{j}}}q{^{\SmallPar{k-j}}}}}}+\XSbra{\mathC_{k-1}^{j+1}\XPar{p{^{\SmallPar{j+2}}}q{^{\SmallPar{k-j-2}}}+\uwave{p{^{\SmallPar{j+1}}}q{^{\SmallPar{k-j-1}}}}}}$\vspace{4pt}\par\quad
+\Blind{Now} $\Blind{\Par{pq}{^{\SmallPar{k}}}=}+\dots+\XSbra{\mathC_{k-1}^{k-2}\XPar{ \uline{p{^{\SmallPar{k-1}}}q{^{\SmallPar{1}}}}+p{^{\SmallPar{k-2}}}q{^{\SmallPar{2}}}}}+\XSbra{\mathC_{k-1}^{k-1}\XPar{ \boxed{p{^{\SmallPar{k}}}q{^{\SmallPar{0}}}}+\uline{p{^{\SmallPar{k-1}}}q{^{\SmallPar{1}}}}}}.$\vspace{4pt}\par\quad
+Hence $\Par{pq}{^{\SmallPar{k}}}=\mathC_{k}^0{p{^{\SmallPar{0}}}q{^{\SmallPar{k}}}}+\dots+\XSbra{\mathC_{k-1}^{j}+\mathC_{k-1}^{j-1}}\BigPar{p{^{\SmallPar{j}}}q{^{\SmallPar{k-j}}}}+\dots+\mathC_{k}^{k}{p{^{\SmallPar{k}}}q{^{\SmallPar{0}}}}.$\PfEnd
+\SepLine
+
+\Anchor{4OL2}\ProblemN{L2}{
+	\TextB{Supp $\alpha\in\Nbp$ suth $p\Par{z}=\Par{z-\lambda}{^\alpha}q\Par{z}.$ Prove ${p{^{\SmallPar{\alpha-1}}}}\Par{\lambda}=0.$}
+}$\Sbra{\Par{z-\lambda}{^\alpha}q\Par{z}}{^{\SmallPar{\alpha-1}}}=\sum_{j=1}^{\alpha-1}\mathC_{\alpha-1}^j\Sbra{\Par{z-\lambda}{^\alpha}}{^{\SmallPar{j}}}\:\!\Sbra{q\Par{z}}{^{\SmallPar{\alpha-1-j}}}.$\parSol{}
+Note that $\Sbra{\Par{z-\lambda}{^\alpha}}{^{\SmallPar{j}}}=\alpha\Par{\alpha-1}\cdots\Par{\alpha-j+1}\cdot\Par{z-\lambda}{^{\SmallPar{\alpha-j}}}.$\PfEnd
 \SepLine
 
 \Anchor{4O4e13}\ProblemBnoor{4E 13}{
@@ -2908,33 +2918,15 @@ Hence $s{^{\SmallPar{D}}}\BigPar{\lambda\Sbra{I_{D,j}}}=0.$ The asum holds for a
 Now $\forall D\in\Bra{1,\dots,A-1},s=s{^{\SmallPar{0}}},\dots,s{^{\SmallPar{D}}}$ have zeros $\BigBra{{\lambda\Sbra{I_{D,1}},\dots,\lambda\Sbra{I_{D,\,J_D}}}}$ in common.\vspace{2pt}\par\quad
 Thus $s\Par{z}$ is divisible by $\BigPar{z-\lambda\Sbra{I_{D,1}}}{^{\alpha\def\envFont{\scriptsize}\Sbra{I_{D,1}}}}\cdots\BigPar{z-\lambda\Sbra{I_{D,\,J_D}}}{^{\alpha\def\envFont{\scriptsize}\Sbra{I_{D,\,J_D}}}},$ for each $D\in\Bra{0,\dots,A-1}.$\vspace{2pt}\par\quad
 Hence $s\Par{z}=\Sbra{\Par{z-\lambda_1}{^{\alpha_1}}\cdots\Par{z-\lambda_M}{^{\alpha_M}}}\,s_0\Par{z},$ while $\deg s<m=\alpha_1+\dots+\alpha_M.$ Now by {\TIPSN{1}}.\PfEnd
-\SepLine\pagebreak
-
-\Anchor{4OL1}\ProblemN{L1}{
-	\TextB{Prove $\forall p,q\in\PoFi,k\in\Nbp,\Par{pq}{^{\SmallPar{k}}}=\mathC_{k}^k p{^{\SmallPar{k}}}q{^{\SmallPar{0}}}+\dots+\mathC_{k}^j p{^{\SmallPar{j}}}q{^{\SmallPar{k-j}}}+\dots+\mathC_{k}^0 p{^{\SmallPar{0}}}q{^{\SmallPar{k}}}.$\vspace{2pt}}
-}We use induc by $k\in\Nbp.$ \;(i) $k=1.$ $\Par{pq}{^{\SmallPar{1}}}=\Par{pq}\apostrophe=C_{1}^1 p{^{\SmallPar{1}}}q{^{\SmallPar{0}}}+C_{1}^0 p{^{\SmallPar{0}}}q{^{\SmallPar{1}}}.$ \;(ii) $k\geqslant 2.$\vspace{2pt}\par\quad
-Asum for $\Par{pq}{^{\SmallPar{k-1}}}=\mathC_{k-1}^{k-1} p{^{\SmallPar{k-1}}}q{^{\SmallPar{0}}}+\dots+\mathC_{k-1}^j p{^{\SmallPar{j}}}q{^{\SmallPar{k-1-j}}}+\dots+\mathC_{k-1}^0 p{^{\SmallPar{0}}}q{^{\SmallPar{k-1}}}.$\vspace{4pt}\par\quad
-Now $\Par{pq}{^{\SmallPar{k}}}=\BigPar{\Par{pq}{^{\SmallPar{k-1}}}}\apostrophe=\XPar{{\sum_{j=0}^{k-1}\mathC_{k-1}^{j} p{^{\SmallPar{j}}}q{^{\SmallPar{k-j-1}}}}}\apostrophe=\sum_{j=0}^{k-1}\XSbra{\mathC_{k-1}^{j} \XPar{p{^{\SmallPar{j+1}}}q{^{\SmallPar{k-j-1}}}+p{^{\SmallPar{j}}}q{^{\SmallPar{k-j}}}}}.$\vspace{4pt}\par\quad
-\Blind{Now} $\Blind{\Par{pq}{^{\SmallPar{k}}}\!}=\XSbra{\mathC_{k-1}^{0}\XPar{ \uwave{p{^{\SmallPar{1}}}q{^{\SmallPar{k-1}}}}+\boxed{p{^{\SmallPar{0}}}q{^{\SmallPar{k}}}}}}+\XSbra{\mathC_{k-1}^1\XPar{p{^{\SmallPar{2}}}q{^{\SmallPar{k-2}}}+\uwave{p{^{\SmallPar{1}}}q{^{\SmallPar{k-1}}}}}}$\vspace{4pt}\par\quad
-\Blind{Now} $\Blind{\Par{pq}{^{\SmallPar{k}}}=}+\dots+\XSbra{\mathC_{k-1}^{j-2}\XPar{ \uline{p{^{\SmallPar{j-1}}}q{^{\SmallPar{k-j+1}}}}+p{^{\SmallPar{j-2}}}q{^{\SmallPar{k-j+2}}}}}+\XSbra{\mathC_{k-1}^{j-1}\XPar{ \uuline{p{^{\SmallPar{j}}}q{^{\SmallPar{k-j}}}}+\uline{p{^{\SmallPar{j-1}}}q{^{\SmallPar{k-j+1}}}}}}$\vspace{4pt}\par\quad
-\Blind{Now} $\Blind{\Par{pq}{^{\SmallPar{k}}}=}+\XSbra{\mathC_{k-1}^{j}\XPar{ \uwave{p{^{\SmallPar{j+1}}}q{^{\SmallPar{k-j-1}}}}+\uuline{ p{^{\SmallPar{j}}}q{^{\SmallPar{k-j}}}}}}+\XSbra{\mathC_{k-1}^{j+1}\XPar{p{^{\SmallPar{j+2}}}q{^{\SmallPar{k-j-2}}}+\uwave{p{^{\SmallPar{j+1}}}q{^{\SmallPar{k-j-1}}}}}}$\vspace{4pt}\par\quad
-\Blind{Now} $\Blind{\Par{pq}{^{\SmallPar{k}}}=}+\dots+\XSbra{\mathC_{k-1}^{k-2}\XPar{ \uline{p{^{\SmallPar{k-1}}}q{^{\SmallPar{1}}}}+p{^{\SmallPar{k-2}}}q{^{\SmallPar{2}}}}}+\XSbra{\mathC_{k-1}^{k-1}\XPar{ \boxed{p{^{\SmallPar{k}}}q{^{\SmallPar{0}}}}+\uline{p{^{\SmallPar{k-1}}}q{^{\SmallPar{1}}}}}}.$\vspace{4pt}\par\quad
-Hence $\Par{pq}{^{\SmallPar{k}}}=\mathC_{k}^0{p{^{\SmallPar{0}}}q{^{\SmallPar{k}}}}+\dots+\XSbra{\mathC_{k-1}^{j}+\mathC_{k-1}^{j-1}}\BigPar{p{^{\SmallPar{j}}}q{^{\SmallPar{k-j}}}}+\dots+\mathC_{k}^{k}{p{^{\SmallPar{k}}}q{^{\SmallPar{0}}}}.$\PfEnd
-\SepLine
-
-\Anchor{4OL2}\ProblemN{L2}{
-	\TextB{Supp $\alpha\in\Nbp$ suth $p\Par{z}=\Par{z-\lambda}{^\alpha}q\Par{z}.$ Prove ${p{^{\SmallPar{\alpha-1}}}}\Par{\lambda}=0.$}
-}$\Sbra{\Par{z-\lambda}{^\alpha}q\Par{z}}{^{\SmallPar{\alpha-1}}}=\sum_{j=1}^{\alpha-1}\mathC_{\alpha-1}^j\Sbra{\Par{z-\lambda}{^\alpha}}{^{\SmallPar{j}}}\:\!\Sbra{q\Par{z}}{^{\SmallPar{\alpha-1-j}}}.$\parSol{}
-Note that $\Sbra{\Par{z-\lambda}{^\alpha}}{^{\SmallPar{j}}}=\alpha\Par{\alpha-1}\cdots\Par{\alpha-j+1}\cdot\Par{z-\lambda}{^{\SmallPar{\alpha-j}}}.$\PfEnd
 \SepLine
 \ChEnd
 
-\vfill\textsl{\normalsize 凭借我的经验，我认为，好的自学教材，除了提供足够的一级知识外，还能通过各种方式，将二级、三级知识顺理成章地经过学科思维的浓缩喻于习题或课文中。在LADR的熏陶下，我渐渐认为，自学教材带来的长期收益更重要——所谓素养一类的隐形东西，无论堆砌多少知识记忆都难以学到；外在的选拔，表面上看都是知识竞赛，但真正有含金量的选拔，往往十二分地注重隐形能力；实际的工作表现也是如此；客观上看这确实是在当今公共信息过剩的时代下人与人拉开差距的核心原因之一，也是我相信最能仅通过自身努力耕耘获得长期稳定回报的地方。现在看看速学速成应付选拔竞争的选择有多愚蠢吧：考不上放弃吧，因为几乎没有习得那些隐性能力，就确实是除了知识和解题技巧之外啥也没得到，这些知识中实用的那些内容怎么着都能学到，不具有不可替代性，实际工作更需要隐形的素养；再考再战吧，就得辛苦刷题，总归不如在学的过程中把\!“和习题的挣扎”\!当作练习对学科思维的启发最好。考上了吧又要和更\!“拔尖创新人才”\!竞争隐形的能力，一样难以优胜，只不过这个情况下可以做一个更\!“优越”\!的平庸之人罢了，除了短期速成而来的外在\!“纪念品”\!之外再也没有什么学习成果可长期变现——和质量至上、\!不怕耽误时间进度的学习者相比又能有什么优越之处呢？}\par\vspace{4pt}
+\textsl{\normalsize 凭借我的经验，我认为，好的自学教材，除了提供足够的一级知识外，还能通过各种方式，将二级、三级知识顺理成章地经过学科思维的浓缩喻于习题或课文中。在LADR的熏陶下，我渐渐认为，自学教材带来的长期收益更重要——所谓素养一类的隐形东西，无论堆砌多少知识记忆都难以学到；外在的选拔，表面上看都是知识竞赛，但真正有含金量的选拔，往往十二分地注重隐形能力；实际的工作表现也是如此；客观上看这确实是在当今公共信息过剩的时代下人与人拉开差距的核心原因之一，也是我相信最能仅通过自身努力耕耘获得长期稳定回报的地方。现在看看速学速成应付选拔竞争的选择有多愚蠢吧：考不上放弃吧，因为几乎没有习得那些隐性能力，就确实是除了知识和解题技巧之外啥也没得到，这些知识中实用的那些内容怎么着都能学到，不具有不可替代性，实际工作更需要隐形的素养；再考再战吧，就得辛苦刷题，总归不如在学的过程中把\!“和习题的挣扎”\!当作练习对学科思维的启发最好。考上了吧又要和更\!“拔尖创新人才”\!竞争隐形的能力，一样难以优胜，只不过这个情况下可以做一个更\!“优越”\!的平庸之人罢了，除了短期速成而来的外在\!“纪念品”\!之外再也没有什么学习成果可长期变现——和质量至上、\!不怕耽误时间进度的学习者相比又能有什么优越之处呢？}\par\vspace{4pt}
 
 {\small
-下面第5章中，3e和4e差距过大。我认为是因为4e将原来3e第8章的极小多项式和第2章线性无关最小性和第4章的多项式的原理结合，以极小多项式为工具重写了第5章几个核心定理，并引入一些结论承接读者一些很自然的想法，让第5章的定理和习题更加富有动机和系统性。\par\vspace{2pt}
-这份笔记主要面向3e纸质书的读者，所以题号和定理索引都采用3e（除少数4e新增章节）。因为3e读者可能会对第5章这样的4e变化感到茫然无措，所以为了内容的紧密性，我决定将3e第8章提前到第5章后，对应到4e只有第8章前三节。3e第8章个别涉及第6、\!\!7章的习题，会拆散塞入对应章节的笔记中。\par\vspace{14pt}
+此章核心内容3/4e差距过大。4e将第2章线性相关性引理和多项式结合，更自然地引出原来3e的8.C节的极小多项式，并前置了相关习题，让定理和习题更加富有动机和系统性。这份笔记主要面向3e纸质书的读者，所以题号和定理索引都采用3e（除4e新增章节）。为了严密性，我决定将3e第8章提前到第5章后，对应到4e只有第8章前三节。\par\vspace{14pt}
 }\pagebreak
+
 \ChDecl{Ch5A}{5.A}{\qquad{\small\textbf{注意\,:}\;这里将5.B节多项式作用于算子部分与5.C节的本征空间的定义前置.}}
 
 \vspace{4pt}
@@ -3772,7 +3764,8 @@ Done if $T-\alpha_kI=S$ inje. Supp $S$ not inje. \NOTICE that $\null S\mmid_{\ra
 By (3.B.22), $\dim\null S^2=\dim\null S\Rightarrow\null S^2=\null S.$ Asum $\null S^j=\null S$ for $j\geqslant 2.$\parSol{\Ha}
 Becs $\dim\Null\Par{S^jS}=\Dim\Par{\null S^j\cap\range S}+\dim\null S.$ By induc.\vspace{3pt}\parSol{}
 (b) Supp $\Null\Par{T-\lambda I}=\Null\Par{T-\lambda I}{^n}$ for all $\lambda\in\Cbb.$ Let $\lambda_1,\dots,\lambda_m$ be disti eigvals of $T.$\parSol{\Hb}
-Define $p\Par{z}=\Par{z-\lambda_1}\cdots\Par{z-\lambda_m}.$ Then $\Sbra{p\Par{T}}{^{\dim V}}=0\Rightarrow p\Par{T}=0\Rightarrow p$ is the min.\PfEnd
+Define $p\Par{z}=\Par{z-\lambda_1}\cdots\Par{z-\lambda_m}.$ Then $\Sbra{p\Par{T}}{^{\dim V}}=0\Rightarrow p\Par{T}=0\Rightarrow p$ is the min.\PfEnd\parSol{}
+\Or Using (8.A). Becs $V=\Null\Par{T-\lambda I}\oplus\Range\Par{T-\lambda I}$ for all $\lambda\in\Fbb.$\PfEnd
 \SepLine
 
 %\Anchor{5C4e17}\ProblemN{17}{
@@ -3846,9 +3839,8 @@ Apply the asum to $T\mmid_U,S\mmid_U$ and $T\mmid_W,S\mmid_W,$ then put $B_U,B_W
 \Anchor{5E2}\ProblemN{2}{
 	\TextA{Supp $\mE\subseteq\Lm{V}$ and every elem of $\mE$ diag.}
 	\TextA{Prove each pair of elems of $\mE$ commu $\Rightarrow\exists\,B_V$ suth all elem of $\mE$ diag.}
-}Let $\dim V=n\Rightarrow\dim\Lm{V}=n^2.$\par\quad
-$\exists\,\Bra{T_{\!1},\dots,T_{\!m}}\subseteq\mE$ with each elem of $\mE$ in $\Span{T_{\!1},\dots,T_{\!m}}$ and $m\leqslant n^2.$\par\quad
-For each $T_{\!k},$ $V=\bigoplus_{\lambda_k\!\!}E\Par{\lambda_k,T_{\!k}}$ and $E\Par{\lambda_k,T_{\!k}}$ non0 for finily many $\lambda_k\in\Fbb.$\vspace{2pt}\par\quad
+}Let $\dim V=n\Rightarrow\dim\Lm{V}=n^2.$ \;Write $V=\bigoplus_{\lambda_k\,\in\,\Fbb}E\Par{\lambda_k,T}$ for each $T\in\mE.$\vspace{2pt}\par\quad
+$\exists\,\Bra{T_{\!1},\dots,T_{\!m}}\subseteq\mE$ with each elem of $\mE$ in $\Span{T_{\!1},\dots,T_{\!m}}$ and $m\leqslant n^2.$\vspace{2pt}\par\quad
 \NOTICE that $U_{k}=E\Par{\lambda_1,T_{\!1}}\cap\cdots\cap E\Par{\lambda_{k},T_{\!k}}=E\Par{\lambda_k,T_{\!k}\mmid_{U_{k-1}}}=\bigoplus_{\lambda_{k+1}\!\!}E\Par{\lambda_{k+1},T_{\!k+1}\mmid_{U_{k}}}.$\vspace{2pt}\par\quad
 Hence $V=\bigoplus_{\lambda_1\!\!}E\Par{\lambda_1,T_{\!1}}=\bigoplus_{\lambda_1,\dots,\lambda_m\!\!}\Sbra{E\Par{\lambda_1,T_{\!1}}\cap\cdots\cap E\Par{\lambda_m,T_{\!m}}}.$ Take bss of each summand.\vspace{2pt}\par\quad
 Then we form $B_V.$ For any $T\in\mE,$ $\Mt{T,B_V}=c_1\Mt{T_{\!1},B_V}+\dots+c_m\Mt{T_{\!m},B_V}.$\PfEnd
@@ -3963,8 +3955,8 @@ Thus $\alpha=\beta=\gamma.$ Any two liney indep $v,w$ corres one eigval.\PfEndB
 \Anchor{8A4e15}\Anchor{8B5}\ProblemNnoor{B.5}{4E A.15}{
 	\TextA{Supp $T\in\Lm{V}.$ Prove non0 $T$ diag $\Rightarrow$ each $G\Par{\lambda,T}=E\Par{\lambda,T}.$}
 }$\forall w\in G\Par{\lambda_j,T},\exists\,!\,v_i\in E\Par{\lambda_i,T},w=v_1+\dots+v_m,.$\parSol{}
-Note that $\Par{T-\lambda_jI}{^k}w=0=\sum_{i=1}^m\Par{\lambda_i-\lambda_j}{^k}v_i\Rightarrow w=v_j\in E\Par{\lambda_j,T}.$\PfEnd\vspace{3pt}\parSol{}
-\Or Supp $G\Par{\lambda_j,T}\supsetneq E\Par{\lambda_j,T}.$ Let $w\in G\Par{\lambda_j,T}\Backslash E\Par{\lambda_j,T}$\parSol{}
+Note that $\Par{T-\lambda_jI}{^k}w=0=\sum_{i=1}^m\Par{\lambda_i-\lambda_j}{^k}v_i\Rightarrow w=v_j\in E\Par{\lambda_j,T}.$\PfEnd\vspace{3pt}\parSol{}\PfEnd
+\Or By (4E B.6), immed. \;\Or Supp $G\Par{\lambda_j,T}\supsetneq E\Par{\lambda_j,T}.$ Let $w\in G\Par{\lambda_j,T}\Backslash E\Par{\lambda_j,T}$\parSol{}
 Let $\Par{T-\lambda_jI}{^k}w=0\neq\Par{T-\lambda_jI}{^{k-1}}w.$ By \Sbra{5.B(I) \TIPSN{1}}, $m_T$ is a multi of $\Par{z-\lambda_j}{^k}.$ 又 $k\geqslant 2.$\PfEnd
 \SepLine
 
@@ -4007,20 +3999,19 @@ Hence $T=D+N,$ and $DN=ND:v_j\mapsto\lambda_kN_kv_j.$\PfEnd
 }Let $N=T-\lambda I,$ and $\null N\subsetneq\cdots\subsetneq\null N^m=\null N^{m+1}.$ Choose $B_{\null N}.$\parSol{}
 Extend to $B_{\null N^2}\Rightarrow\cdots\Rightarrow B_{\null N^m},$ with each time adding at least one bss vec. Thus $m\leqslant d.$\PfEnd\vspace{3pt}\parSol{}
 \Or Let $m_T\Par{z}=\Par{z-\lambda}{^m}q\Par{z}$ with $q\Par{\lambda}\neq0.$ By (4E B.6,4) $d\geqslant m.$\PfEnd\vspace{3pt}\parSol{}
-\Or Let the min of $N=\Par{T-\lambda I}{^m}\Big|{_{G\SmallPar{\:\!\lambda,\,T\:\!}}}$ be $z^m.$\parSol{}
+\Or Let the min of $N=\Par{T-\lambda I}\Big|{_{G\SmallPar{\:\!\lambda,\,T\:\!}}}$ be $z^m.$\parSol{}
 By (4E 5.B.17), the min of $N+\lambda I=T\mmid_{G\SmallPar{\:\!\lambda,\,T\:\!}}$ is $s\Par{z}=\Par{z-\lambda}{^m}.$\parSol{}
-Becs the char of $T$ \Sbra{See [9.21] for $\Fbb=\Rbb$} is a multi of $m_T,$ which is a multi of $s.$\PfEnd
+Becs the char of $T$ \Sbra{See [9.21] for the case $\Fbb=\Rbb$} is a multi of $m_T,$ which is a multi of $s.$\PfEnd
 \SepLine
 
 \Anchor{8B4e6}\ProblemBnoor{4E B.6}{
 	\TextA{Supp $T\in\Lm{V}$ and $\lambda$ is an eigval. Explain why the expo of $\Par{z-\lambda}$}
 	\TextA{in the factoriz of $m_T$ is the smallest $m\in\Nbp$ suth $\Par{T-\lambda I}{^m}\Big|{_{\:\!G\SmallPar{\:\!\lambda,\,T\:\!}}}=0.$\vspace{2pt}}
-}Let $G=G\Par{\lambda,T},N=\Par{T-\lambda I}\Big|{_G},$ and $N^m=0\neq N^{m-1}\Rightarrow$ the min of $T\mmid_G$ is $s\Par{z}=\Par{z-\lambda}{^m}.$\parSol{}
-Thus $m_T$ is a multi of $s.$ Now we show the expo of $\Par{z-\lambda}$ in $m_T$ is no more than $m.$\parSol{}
-Let $\lambda_1=\lambda.$ Asum $m_{T_{\!\Cbb}}\Par{z}=\Par{z-\lambda_1}{^{m+k}}\Par{z-\lambda_2}{^{\alpha_2}}\cdots\Par{z-\lambda_n}{^{\alpha_n}},$ where $k\in\Nbp.$\parSol{}
-Let $r\Par{z}=\Par{z-\lambda}{^m}\Par{z-\lambda_2}{^{\alpha_2}}\cdots\Par{z-\lambda_n}{^{\alpha_n}}\Rightarrow r\Par{T_{\!\Cbb}}=0.$ Ctradic the min of $m_{T_{\!\Cbb}}.$\PfEnd\vspace{4pt}\parSol{}
-\Or Becs all $\Par{T-\alpha I}{^k}\Big|{_{\:\!G\SmallPar{\:\!\lambda,\,T\:\!}}}$ are inv. Note that $m_T\Par{T\mmid_{\:\!G\SmallPar{\:\!\lambda,\,T\:\!}}}=0\Longleftrightarrow\Par{T-\lambda I}{^k}\Big|{_{\:\!G\SmallPar{\:\!\lambda,\,T\:\!}}}=0.$\parSol{}
-So that the expo $k$ of $\Par{z-\lambda}$ is no lesser, and cannot be more, than the smallest $m.$\PfEnd\vspace{4pt}\parSol{}
+	%Let $G=G\Par{\lambda,T},N=\Par{T-\lambda I}\Big|{_G},$ and $N^m=0\neq N^{m-1}\Rightarrow$ the min of $T\mmid_G$ is $s\Par{z}=\Par{z-\lambda}{^m}.$\parSol{}
+	%Thus $m_T$ is a multi of $s.$ Now we show the expo of $\Par{z-\lambda}$ in $m_T$ is no more than $m.$\parSol{}
+	%Let $\lambda_1=\lambda.$ Asum $m_{T_{\!\Cbb}}\Par{z}=\Par{z-\lambda_1}{^{m+k}}\Par{z-\lambda_2}{^{\alpha_2}}\cdots\Par{z-\lambda_n}{^{\alpha_n}},$ where $k\in\Nbp.$\parSol{}
+	%Let $r\Par{z}=\Par{z-\lambda}{^m}\Par{z-\lambda_2}{^{\alpha_2}}\cdots\Par{z-\lambda_n}{^{\alpha_n}}\Rightarrow r\Par{T_{\!\Cbb}}=0.$ Ctradic the min of $m_{T_{\!\Cbb}}.$\PfEnd\vspace{4pt}\parSol{}
+}Each $\Par{T-\alpha I}{^k}\Big|{_{\:\!G\SmallPar{\:\!\lambda,\,T\:\!}}}$ are inv for $\alpha\neq\lambda.$ \;Becs $m_T\Par{T\mmid_{\:\!G\SmallPar{\:\!\lambda,\,T\:\!}}}=0\Longleftrightarrow\Par{T-\lambda I}{^k}\Big|{_{\:\!G\SmallPar{\:\!\lambda,\,T\:\!}}}=0.$\PfEnd\vspace{4pt}\parSol{}
 \Or Let $m_T\Par{z}=\Par{z-\lambda}{^m}q\Par{z},$ with $q\Par{\lambda}\neq0.$ We show $\Null\Par{T-\lambda I}{^m}\supseteq\Null\Par{T-\lambda I}{^{m+1}}.$\parSol{}
 Supp $v\in\Null\Par{T-\lambda I}{^{m+1}}\Longleftrightarrow \Par{T-\lambda I}{^m}v\in\Null\Par{T-\lambda I}=E\Par{\lambda,T}.$\parSol{}
 Then $0=m_T\Par{T}v=q\Par{T}\Sbra{\Par{T-\lambda I}{^m}v}=q\Par{\lambda}\Sbra{\Par{T-\lambda I}{^m}v}\Rightarrow v\in\Null\Par{T-\lambda I}{^m}.$\vspace{2pt}\parSol{}
@@ -4054,7 +4045,7 @@ Then $\exists\,!\,u_1\in G\Par{\lambda_1,T\mmid_U},w_k\in G\Par{\lambda_k,T\mmid
 
 \Anchor{8B'1}\ProblemB{
 	\TextA{Supp $T\in\Lm{V},$ and $W\oplus E\Par{\lambda,T}=G\Par{\lambda,T}.$ Prove $W$ is not invard $T.$}
-}Let $w\in W$ and $\Par{T-\lambda I}{^j}w=0\neq\Par{T-\lambda I}{^{j-1}}w\in E\Par{\lambda,T}\Rightarrow W$ is not invar, by the min of $j.$\PfEnd
+}Let $w\in W$ and $\Par{T-\lambda I}{^j}w=0\neq\Par{T-\lambda I}{^{j-1}}w\in E\Par{\lambda,T}.$ 又 $W$ invar $\Rightarrow\Par{T-\lambda I}{^{j-1}}w\in W.$\PfEnd
 \SepLine
 
 \Anchor{8BT2}\ProblemN[]{\BulletPointX B.\TipsN{2}}{
@@ -4066,22 +4057,40 @@ Then $\exists\,!\,u_1\in G\Par{\lambda_1,T\mmid_U},w_k\in G\Par{\lambda_k,T\mmid
 	\TextA{Let $F_{\!j}=\Null\Par{T-\lambda_jI}{^{\alpha_j}}.$ Prove $\nullp q\Par{T}=F_{\!1}\oplus\cdots\oplus F_{\!m}.$}
 }Each $\Par{T-\lambda_kI}{^{\alpha_k}}\Big|{_{\:\!G\SmallPar{\:\!\lambda_j,\,T\:\!}}}$ is inje for $k\neq j\Rightarrow\nullp q\Par{T}\Big|{_{\:\!G\SmallPar{\:\!\lambda_j,\,T\:\!}}}=F_{\!j}.$ \;\Or By \Sbra{B \TIPSN{1,4}}.\PfEnd
 \SepLine
-\pagebreak
+
+\Anchor{Ch8C}
+\Anchor{8B4e20}\Anchor{8C20}\ProblemNnoor{C.20}{4E B.20}{
+	\TextA{Supp $\Fbb=\Cbb,$ and each $V_{\!k}$ non0 invarspd $T\in\Lm{V}$ of $V=V_{\!1}\oplus\cdots\oplus V_{\!m}.$}
+	\TextA{Let $p_k$ be the char of $T\mmid_{V_{\!k}}.$ Prove the char of $T$ is $p_1\cdots p_m.$}
+}By \Sbra{B \TIPSN{1}}, $V=G\Par{\lambda_1,T}\oplus\cdots\oplus G\Par{\lambda_n,T}\Rightarrow V_{\!k}=G\Par{\lambda_1,T\mmid_{V_{\!k}}}\oplus\cdots\oplus G\Par{\lambda_m,T\mmid_{V_{\!k}}}.$\parSol{}
+By \Sbra{B \TIPSN{2}}, each $G\Par{\lambda_j,T}=G\Par{\lambda_j,T\mmid_{V_{\!1}}}\oplus\cdots\oplus G\Par{\lambda_j,T\mmid_{V_{\!m}}}.$\parSol{}
+Let $d_{j,k}$ be the multy of $\lambda_j$ of $T\mmid_{V_{\!k}}.$ Then $d_{j,1}+\dots+d_{j,n}=d_j,$ the multy of $\lambda_j$ of $T.$\parSol{}
+Thus each $p_k\Par{z}=\Par{z-\lambda_1}{^{d_{1,k}}}\cdots\Par{z-\lambda_n}{^{d_{n,k}}}.$ While the char of $T$ is $\Par{z-\lambda_1}{^{d_1}}\cdots\Par{z-\lambda_n}{^{d_n}}.$\PfEnd\vspace{2pt}\parSol{}
+\Or Let $A$ be a block diag matrix of $T,$ with each $A_k=\Mt{T\mmid_{V_{\!k}}}$ up-trig. By Exe (B.11).\PfEnd
+\SepLine
 
 \Anchor{8BT4}\ProblemN{\BulletPointX B.\TipsN{4}}{
-	\TextA{Supp $p=sq$ is the min of $T\in\Lm{V}$ and $s,q$ have no common zeros.}
-	\TextA{Prove $V=\nullp s\Par{T}\oplus\nullp q\Par{T}.$\hfill\tgnr\FontNorm\ACoro $\nullp s\Par{T}=\rangep q\Par{T}.$}
-}By Exe (4E 4.13), $\forall v\in V,v=u+w,$ where $u=s\Par{T}a\Par{T}v,\,w=q\Par{T}b\Par{T}v.$ Immed.\PfEnd\vspace{2pt}\parSol{}
-\Or Let $V_{\!\Cbb}=G\Par{\lambda_1,T_{\!\Cbb}}\oplus\cdots\oplus G\Par{\lambda_m,T_{\!\Cbb}},$ and $p\Par{z}=\Par{z-\lambda_1}{^{k_1}}\cdots\Par{z-\lambda_m}{^{k_m}}.$\vspace{1pt}\parSol{}
-Let $s\Par{z}=\Par{z-\lambda_{\alpha_1}}{^{k_{\alpha_1}}}\cdots\Par{z-\lambda_{\alpha_A}}{^{k_{\alpha_A}}},\;q\Par{z}=\Par{z-\lambda_{\beta_1}}{^{k_{\beta_1}}}\cdots\Par{z-\lambda_{\beta_B}}{^{k_{\beta_B}}},$ with all $\alpha_j\neq\beta_i.$\parSol{}
-By \Sbra{B \TIPSN{3}}, $\nullp s\Par{T_{\!\Cbb}}=G\Par{\lambda_{\alpha_1},T_{\!\Cbb}}\oplus\cdots\oplus G\Par{\lambda_{\alpha_A},T_{\!\Cbb}},$ and simlr for $q.$\vspace{1pt}\parSol{}
-Note that $\lambda_{\alpha_j}\not\in\Rbb,$ then $\exists\,\lambda_{\alpha_i}=\overline{\lambda_{\alpha_j}}.$ Simlr for $\lambda_{\beta_j}.$ Now $V=\nullp s\Par{T}\oplus\nullp q\Par{T}.$\par\vspace{3pt}
-\NewNotation\;\;We call such $s$ or $q$ a {\tgsc poly block}. A factor $q$ of $p$ is a block $\Longleftrightarrow$ the other half $p\big/q$ is a block.\par\vspace{2pt}
-\ACoro (1) If $q$ is a block of $m_T.$ Then $V=\nullp q\Par{T}\oplus\rangep q\Par{T}.$\parCor
-(2) If $s,q$ are blocks with no common zeros. Then $V=\rangep s\Par{T}+\range q\Par{T}.$\parCor
-(3) Supp $p=p_1\cdots p_k$ and $p_1,\dots,p_k$ have no common zeros, so are poly blocks of $p.$\parCor
-\Blind{(3) }Then $V=\nullp p_1\Par{T}\oplus\cdots\oplus\nullp p_k\Par{T}.$ Let $\Gamma_{\!j}=\Bra{1,\dots,j-1,j+1,\dots,k}.$\parCor
-\Blind{(3) }Then $\rangep p_j\Par{T}=\bigoplus_{i\,\in\,\Gamma_{\!j}}\nullp p_i\Par{T},\;\nullp p_j\Par{T}=\bigcap_{i\,\in\,\Gamma_{\!j}}\rangep p_i\Par{T}.$\par
+	\TextA{Supp $T\in\Lm{V},p,q\in\PoFi$ have no common zeros on $\Cbb,$ and $\Par{pq}\Par{T}=0.$}
+	\TextA{Prove $V=\nullp p\Par{T}\oplus\nullp q\Par{T}=\rangep p\Par{T}\oplus\rangep q\Par{T}.$
+%	\hfill\tgnr\FontNorm\ACoro $\nullp p\Par{T}=\rangep q\Par{T}.$
+	}
+}By Exe (4E 4.13), $\forall v\in V,v=u+w,$ where $u=r\Par{T}\:\!p\Par{T}\:\!v,\,w=s\Par{T}\:\!q\Par{T}\:\!v.$\parSol{}
+Then $V=\rangep p\Par{T}+\rangep q\Par{T}$ and $\nullp p\Par{T}\cap\nullp q\Par{T}=\zeroSubs.$\parSol{}
+Becs $\Par{pq}\Par{T}=0.$ Now $\rangep p\Par{T}\cap\rangep q\Par{T}=\zeroSubs$ and $V=\nullp p\Par{T}+\nullp q\Par{T}.$\PfEnd\vspace{2pt}\parSol{}
+\Or Let $V_{\!\Cbb}=G\Par{\lambda_1,T_{\!\Cbb}}\oplus\cdots\oplus G\Par{\lambda_m,T_{\!\Cbb}},$ and $m_T\Par{z}=\Par{z-\lambda_1}{^{k_1}}\cdots\Par{z-\lambda_m}{^{k_m}}.$\parSol{}
+Let $\mA=\Bra{\alpha_1,\dots,\alpha_{\!A}}$ be the intersec of the zeros of $p$ and the eigvals of $T.$ \,Simlr for $\mB.$\parSol{}
+Then $\mA\cap\mB=\emptySet.$ Let $p=\omega_{\alpha_1}\!\!\cdots\omega_{\alpha_{\!A}}\,p_0,\;q=\omega_{\beta_1}\!\!\cdots\omega_{\beta_B}\,q_0,$ where $\omega_{\lambda_i}\Par{z}=\Par{z-\lambda_i}{^{k_i}}.$\parSol{}
+By \Sbra{B \TIPSN{3}}, $\nullp p\Par{T_{\!\Cbb}}=G\Par{\alpha_1,T_{\!\Cbb}}\oplus\cdots\oplus G\Par{\alpha_{\!A},T_{\!\Cbb}}.$ \,Simlr for $q.$\vspace{1pt}\parSol{}
+Note that if $\alpha_j\not\in\Rbb,$ then $\exists\,\alpha_i=\overline{\alpha_j}.$ Simlr for $\mB.$ \,Now $V_{\!\Cbb}=\nullp p\Par{T_{\!\Cbb}}\oplus\nullp q\Par{T_{\!\Cbb}}.$\parSol{}
+Then becs $\rangep p\Par{T_{\!\Cbb}}\subseteq\nullp q\Par{T_{\!\Cbb}}$ and then $\rangep p\Par{T_{\!\Cbb}}\cap\nullp p\Par{T_{\!\Cbb}}\subseteq\zeroSubs.$\parSol{}
+By \Sbra{1.C \TIPSN{2}}, $\rangep p\Par{T_{\!\Cbb}}=\nullp q\Par{T_{\!\Cbb}}.$ So that $V_{\!\Cbb}=\rangep p\Par{T_{\!\Cbb}}\oplus\rangep q\Par{T_{\!\Cbb}}.$\PfEnd\vspace{3pt}
+\ACoro Supp $\Par{p_1\cdots p_k}\Par{T}=0,$ and $p_1,\dots,p_k$ have no common zeros on $\Cbb.$\parCor
+(a) We show $V=\nullp p_1\Par{T}\oplus\cdots\oplus\nullp p_k\Par{T}$ by induc on $k$. (i) $k=1,2.$ Immed. (ii) $k>2.$\parCor{\Ha}
+Asum it holds for $\Par{k-1}.$ Then $V=\nullp p_1\Par{T}\oplus\cdots\oplus\nullp p_{k-2}\Par{T}\oplus\Null\Par{p_{k-1}p}\Par{T}.$\parCor{\Ha}
+Simlr to above, $\Null\Par{p_{k-1}p}\Par{T}=\nullp p_{k-1}\Par{T}\oplus\nullp p_k\Par{T}.$\hfill Simlr for $\rangep p\Par{T}.$\vspace{2pt}\parCor
+(b) Becs $\rangep p_j\Par{T}\subseteq\bigoplus_{i\,\in\,\Gamma_{\!j}}\nullp p_i\Par{T},$ and then $\nullp p_j\Par{T}\cap\rangep p_j\Par{T}=\zeroSubs.$\parCor{\Hb}
+Where $\Gamma_{\!j}=\Bra{1,\dots,j-1,j+1,\dots,k}.$ \,Now $\rangep p_j\Par{T}=\bigoplus_{i\,\in\,\Gamma_{\!j}}\nullp p_i\Par{T},$ by \Sbra{1.C \TIPSN{2}}.\vspace{2pt}\parCor
+(c) $\nullp p_j\Par{T}=\bigcap_{i\,\in\,\Gamma_{\!j}}\rangep p_i\Par{T}.$ \;Simlr \OR by (b), immed.\par
 %\ANote Supp $\Fbb=\Rbb.$ Let $m_T\Par{x}=\Par{x-\lambda_1}{^{\delta_1}}\cdots\Par{x-\lambda_m}{^{\delta_m}}\Par{z^2+b_1z+c_1}{^{\epsilon_1}}\cdots\Par{z^2+b_Mz+c_M}{^{\epsilon_M}},$ where each $b_j^2<4c_j.$\parNot
 %Then $V=G\Par{\lambda_1,T}\oplus\cdots\oplus G\Par{\lambda_m,T}\oplus\nullp\Par{T^2+b_1T+c_1}{^{\dim V}}\oplus\cdots\oplus\nullp\Par{T^2+b_MT+c_M}{^{\dim V}}.$
 \SepLine
@@ -4102,18 +4111,6 @@ Note that $\lambda_{\alpha_j}\not\in\Rbb,$ then $\exists\,\lambda_{\alpha_i}=\ov
 %(3) If $U\supseteq E\Par{\lambda,T}$ of dim $1$, then by the factoriz of the char poly of $T\mmid_U,$ $\exists$ another eigval.\parNot
 %Thus $G\Par{\lambda,T}=U$ of dim $2,$ then $\exists$ another eigval by char factoriz, done.\PfEnd
 %\SepLine
-
-\Anchor{Ch8C}
-\Anchor{8B4e20}\Anchor{8C20}\ProblemNnoor{C.20}{4E B.20}{
-	\TextA{Supp $\Fbb=\Cbb,$ and each $V_{\!k}$ non0 invarspd $T\in\Lm{V}$ of $V=V_{\!1}\oplus\cdots\oplus V_{\!m}.$}
-	\TextA{Let $p_k$ be the char of $T\mmid_{V_{\!k}}.$ Prove the char of $T$ is $p_1\cdots p_m.$}
-}By \Sbra{B \TIPSN{1}}, $V=G\Par{\lambda_1,T}\oplus\cdots\oplus G\Par{\lambda_n,T}\Rightarrow V_{\!k}=G\Par{\lambda_1,T\mmid_{V_{\!k}}}\oplus\cdots\oplus G\Par{\lambda_m,T\mmid_{V_{\!k}}}.$\parSol{}
-By \Sbra{B \TIPSN{2}}, each $G\Par{\lambda_j,T}=G\Par{\lambda_j,T\mmid_{V_{\!1}}}\oplus\cdots\oplus G\Par{\lambda_j,T\mmid_{V_{\!m}}}.$\parSol{}
-Let $d_{j,k}$ be the multy of $\lambda_j$ of $T\mmid_{V_{\!k}}.$ Then $d_{j,1}+\dots+d_{j,n}=d_j,$ the multy of $\lambda_j$ of $T.$\parSol{}
-Thus each $p_k\Par{z}=\Par{z-\lambda_1}{^{d_{1,k}}}\cdots\Par{z-\lambda_n}{^{d_{n,k}}}.$ While the char of $T$ is $\Par{z-\lambda_1}{^{d_1}}\cdots\Par{z-\lambda_n}{^{d_n}}.$\PfEnd\vspace{2pt}\parSol{}
-\Or Let $A$ be a block diag matrix of $T,$ with each $A_k=\Mt{T\mmid_{V_{\!k}}}$ up-trig. By Exe (B.11).\PfEnd
-\SepLine
-
 
 \Anchor{Ch8D}
 %\Anchor{8D7}\Anchor{8B4e21}\ProblemNnoor{D.7}{4E B.21}{
@@ -4136,7 +4133,7 @@ Thus each $p_k\Par{z}=\Par{z-\lambda_1}{^{d_{1,k}}}\cdots\Par{z-\lambda_n}{^{d_{
 	Start by $B_{U_{m-1}}=\Par{v_{1,1},\dots,v_{n_1,1}}.$\, But $\Par{Nv_{1,1},\dots,Nv_{n_1,1}}$ might be liney dep. Invalid method.\par\vspace{2pt}
 %	(2) Let $B_{U_{m-j}}=\Par{N^{j-1}v_{1,1},\dots,N^{j-1}v_{n_1,1},\dots,Nv_{1,j-1},\dots,Nv_{n_{j-1},j-1},v_{1,j},\dots,v_{n_j,j}}.$\TextB{}
 %	(3) Let $B_{U_0}=\Par{N^{m-1}v_{1,1},\dots,N^{m-1}v_{n_1,1},\dots,Nv_{1,m-1},\dots,Nv_{n_{m-1},m-1},v_{1,m},\dots,v_{n_m,m}}.$ Sum up and done.
-	\Anchor{8NED6}\BulletPointX\NoteForSmall{Exe (D.6)}\;\;Let $B=\Par{N^{m_1}v_1,\dots,N^{m_1-k}v_1,\dots,N^{m_n}v_n,\dots,N^{m_n-k}v_n},$ $0\leqslant k\leqslant\min\!\Bra{m_1,\dots,m_n}.$\TextB{}
+	\Anchor{8NED6}\BulletPointX\NoteForSmall{Exe (D.6)}\;\;Let $B=\Par{N^{m_1}v_1,\dots,N^{m_1\!-k}v_1,\cdots,N^{m_n}v_n,\dots,N^{m_n\!-k}v_n},$ $0\leqslant k\leqslant\min\!\Bra{m_1,\dots,m_n}.$\TextB{}
 	All liney indep in $\null N^{k+1}.$ Supp $N^{k+1}$ sends a liney combina of the Jordan $B_V$ to zero.\TextB{}
 	Then all coeffs of $N^{m_1-k-i}v_k$ are zero. Thus $\null N^{k+1}\subseteq\spn B.$ Now $B$ is a bss of $\null N^{k+1}.$\TextB{\vspace{-2pt}}
 }
@@ -4152,7 +4149,7 @@ Thus each $p_k\Par{z}=\Par{z-\lambda_1}{^{d_{1,k}}}\cdots\Par{z-\lambda_n}{^{d_{
 	\TextA{Supp $\Fbb=\Cbb,$ and $T\in\Lm{V}.$}
 	\TextA{Prove [P] $\nexists$ non0 invarsps $U,W$ suth $U\oplus W=V\Longleftrightarrow m_T\Par{z}=\Par{z-\lambda}{^{\dim V}}.$ [Q]}
 }$Q\Rightarrow P:$ \;Let $N=T-\lambda I\Rightarrow$ the min of $N$ is $z^{\dim V}.$\parSol{}
-\Blind{$Q\Rightarrow P:$ \;}Then by Exe (D.3), the line directly above the diag of any Jordan $\Mt{N}$ is all $1.$\parSol{}
+\Blind{$Q\Rightarrow P:$ \;}Then by Exe (D.3), the line directly above the diag of {\tgsc any} Jordan $\Mt{N}$ is all $1.$\parSol{}
 \Blind{$Q\Rightarrow P:$ \;}Thus the only Jordan block of $\Mt{N}$ is $\Mt{N}$ itself.\vspace{3pt}\par\quad
 ${}{^\neg}P\Rightarrow{}{^\neg}Q:$ \;If $\exists$ two or more eigvals of $T\mmid_U$ or $T\mmid_W,$ then $m_T$ has two or more disti factors, done.\par\quad
 \Blind{${}{^\neg}P\Rightarrow{}{^\neg}Q:$ \;}Now supp $\exists$ only one eigval $\lambda$ for $T\mmid_U,$ $T\mmid_W,$ and $T.$ Supp $m_T\Par{z}=\Par{z-\lambda}{^m}.$\par\quad
@@ -4168,10 +4165,11 @@ $m_T\Par{z}=\Par{z-\lambda}{^m}$ with $m<\dim V.$\par\quad
 
 \vspace{4pt}
 
-\BulletPointX\NoteForSmall{[9.12]}\;\;Another proof: $\overline{T_{\!\Cbb}\Par{u+\i v}}=\overline{Tu+\i Tv}=Tu-\i Tv=T_{\!\Cbb}\Par{u-\i v}=T_{\!\Cbb}\Par{\overline{u+\i v}}.$\TextB{}
-$\overline{\Par{T_{\!\Cbb}-\lambda I}\Par{u+\i v}}=\overline{T_{\!\Cbb}\Par{u+\i v}-\lambda\Par{u+\i v}}=T_{\!\Cbb}\Par{u-\i v}-\overline{\lambda}\Par{u-\i v}=\Par{T_{\!\Cbb}-\overline{\lambda}I}\Par{u-\i v}.$\TextB{}
+\BulletPointX\NoteForSmall{[9.12]}\;\;Another proof: \;$\overline{T_{\!\Cbb}\Par{u+\i v}}=\overline{Tu+\i Tv}=Tu-\i Tv=T_{\!\Cbb}\Par{\overline{u+\i v}}.$\TextB{}
+$\overline{\Par{T_{\!\Cbb}-\lambda I}\Par{u+\i v}}=\overline{T_{\!\Cbb}\Par{u+\i v}-\lambda\Par{u+\i v}}=T_{\!\Cbb}\Par{u-\i v}-\overline{\lambda}\Par{u-\i v}=\Par{T_{\!\Cbb}-\overline{\lambda}I}\Par{\overline{u+\i v}}.$\TextB{}
 We use induc on $m$ to show $\overline{\Par{T_{\!\Cbb}-\lambda I}{^m}\Par{u+\i v}}=\Par{T_{\!\Cbb}-\overline{\lambda}I}{^m}\Par{u-\i v}.$ (i) Immed. (ii) $m>1.$\TextB{}
-Asum it holds for $k\leqslant m.$ Let $\Par{T_{\!\Cbb}-\lambda I}{^{m-1}}\Par{u+\i v}=x+\i y.$ Becs $\overline{\Par{T_{\!\Cbb}-\lambda I}{^{m-1}}\Par{u+\i v}}=x-\i y.$\PfEnd\vspace{2pt}
+Asum it holds for $\Par{m-1}.$ Let $\Par{T_{\!\Cbb}-\lambda I}{^{m-1}}\Par{u+\i v}=x+\i y.$ Becs $\overline{\Par{T_{\!\Cbb}-\lambda I}{^{m-1}}\Par{u+\i v}}=x-\i y.$\TextB{}
+Then $\overline{\Par{T_{\!\Cbb}-\lambda I}{^m}\Par{u+\i v}}=\overline{\Par{T_{\!\Cbb}-\lambda I}\Par{x+\i y}}=\Par{T_{\!\Cbb}-\overline{\lambda}I}\Par{x-\i y}.$\PfEnd\vspace{2pt}
 \BulletPointX\NoteForSmall{[9.17]}\;\;Detailed proof:\TextB{}
 Let $B=\Par{u_1+\i v_1,\dots,u_m+\i v_m}$ be a bss of $G\Par{\lambda,T_{\!\Cbb}}.$ By [9.12], $\overline{B}=\Par{u_1-\i v_1,\dots,u_m-\i v_m}$ in $G\Par{\overline{\lambda},T_{\!\Cbb}}.$\TextB{}
 (a) If $a_1\Par{u_1-\i v_1}+\dots+a_m\Par{u_m-\i v_m}=0.$ Conjuging, now each $\overline{a_k}=0.$ Liney indep.\TextB{}
