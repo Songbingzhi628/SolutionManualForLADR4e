@@ -320,52 +320,69 @@ Note that $T$ normal $\Rightarrow T^k$ normal. Then $\range T^k=\Par{\null T^k}{
 
 \vspace{4pt}
 
-\ProblemN{14}{
+\Anchor{7B14}\ProblemN{14}{
 	\TextA{Supp $\Fbb=\Rbb,$ $T\in\Lm{V}.$ Prove $T$ diag $\Rightarrow$ self-adj wrto some $\Ang{\cdot,\cdot}{_V}.$}
-}Let $B_V=\Par{e_1,\dots,e_n}$ of eigvecs. \,Define $\Ang{e_j,\:\!e_k}{_V}=\delta_{j,k}.$ \;So that $B_V$ orthon. \;\Or By ctrapos.\PfEnd\vspace{5pt}
+}Let eigvecs $B_V=\Par{e_1,\dots,e_n}$ be orthon wrto $\Ang{e_j,\:\!e_k}{_V}=\delta_{j,k}.$ \,Becs $\Mt{T}=\Mt{T}{^t}=\Mt{T^*}.$\PfEnd\vspace{2pt}
 \Anchor{7B4e24}\ANote (a) $\Mt{T}=\overline{\Mt{T}}{^t}$ wrto some $B_V\Longleftrightarrow T$ self-adj wrto some $\Ang{\cdot,\cdot}{_V}$ $\Longleftrightarrow$ diag.\parNot
 (b) $\Mt{T}\overline{\Mt{T}}{^t}=\overline{\Mt{T}}{^t}\Mt{T}$ wrto some $B_V\Longleftrightarrow T$ normal wrto some $\Ang{\cdot,\cdot}{_V}$ $\Longleftrightarrow$ diag on $\Cbb.$
 \SepLine
 
-\ProblemN{7}{
-	\TextA{Supp $\Fbb=\Cbb,T\in\Lm{V}$ is normal and $T^9=T^8.$ Prove $T^2=T$ is self-adj.}
-}Becs $T^8\Par{T-I}=0\Rightarrow0,1\in\Rbb$ are all possible eigvals.\PfEnd\parSol{}
-\Or $\range T^*=\range T=\Par{\null T}{^\perp}\Rightarrow T\Par{T-I}=0.$ 又 $Tv=Tv+\Par{v-Tv}\Rightarrow T=P_{\range T}.$\PfEnd\parSol{}
-\Or $\exists$ orthon $B_V=\Par{e_1,\dots,e_n}$ of eigvecs with corres $\lambda_1,\dots,\lambda_n.$\parSol{}
-Now $\lambda_j^8e_j=T^8e_j=T^9e_j=\lambda_j^9e_j\Rightarrow\lambda_j=0$ or $1\in\Rbb.$ 又 Each $T^2e_j=\lambda_j^2e_j=\lambda_je_j=Te_j.$\PfEnd
-\SepLine
+%\Anchor{7B7}\ProblemN{7}{
+%	\TextA{Supp $\Fbb=\Cbb,T\in\Lm{V}$ is normal and $T^9=T^8.$ Prove $T^2=T$ is self-adj.}
+%}Becs $T^8\Par{T-I}=0\Rightarrow0,1\in\Rbb$ are all possible eigvals.\PfEnd\parSol{}
+%\Or $\range T^*=\range T=\Par{\null T}{^\perp}\Rightarrow T\Par{T-I}=0.$ 又 $Tv=Tv+\Par{v-Tv}\Rightarrow T=P_{\range T}.$\PfEnd\parSol{}
+%\Or $\exists$ orthon $B_V=\Par{e_1,\dots,e_n}$ of eigvecs with corres $\lambda_1,\dots,\lambda_n.$\parSol{}
+%Now $\lambda_j^8e_j=T^8e_j=T^9e_j=\lambda_j^9e_j\Rightarrow\lambda_j=0$ or $1\in\Rbb.$ 又 Each $T^2e_j=\lambda_j^2e_j=\lambda_je_j=Te_j.$\PfEnd
+%\SepLine
 
-\ProblemBnoor{4E 8}{
+\Anchor{7B4e8}\ProblemBnoor{4E 8}{
 	\TextA{Supp $\Fbb=\Cbb,T\in\Lm{V}.$ Prove each eigvec of $T$ is an eigvec of $T^*\Rightarrow T$ is normal.}
 }Supp $v$ is eigvec of $T$ corres $\lambda$ and of $T^*$ corres $\mu.$\parSol{}
 Then $\lambda\Dvertsq{v}=\Ang{Tv,v}=\Ang{v,T^*v}=\overline{\mu}\Dvertsq{v}\Rightarrow\lambda=\overline{\mu}.$\parSol{}
 Thus each $E\Par{\lambda,T}=E\Par{\overline{\lambda},T^*}$ invard $T,T^*,$ so is $E\Par{\lambda,T}{^\perp}=E\Par{\overline{\lambda},T^*}.$\parSol{}
-Let $W=\bigcap_{\lambda\,\in\,\Fbb}E\Par{\lambda,T}{^\perp}$ invard $T,T^*.$ No eigvals of $T\mmid_W,T^*\mmid_W\Rightarrow W=\zeroSubs.$ By (3.F.22).\PfEnd
+Let $W=\bigcap_{\lambda\,\in\,\Fbb}E\Par{\lambda,T}{^\perp}$ invard $T,T^*.$ No eigvals of $T\mmid_W,T^*\mmid_W\Rightarrow W=\zeroSubs.$ By (3.F.22).\PfEnd\vspace{4pt}\parSol{}
+\Or $\exists$ orthon $B_V=\Par{e_1,\dots,e_n}$ suth $\Mt{T}$ up-trig $\Rightarrow\overline{A}{^t}=\Mt{T^*}$ low-trig.\parSol{}
+(i) Now $Te_1=A_{1,1}e_1\Rightarrow\overline{A_{1,1}}e_1+\dots+\overline{A_{1,n}}e_n=T^*e_1\Rightarrow A_{1,2}=\dots=A_{1,n}=0.$\parSol{}
+(ii) Asum $\Par{A_{1,2}\;\cdots\;A_{1,n}}=\dots=\Par{A_{k-1,k}\;\cdots\;A_{k-1,n}}=0.$ 又 $A$ is up-trig.\vspace{1pt}\parSol{\Hii}
+Then $Te_{k}=A_{k,k}e_{k}\Rightarrow\overline{A_{k,k}}e_1+\dots+\overline{A_{k,n}}e_n=T^*e_{k}\Rightarrow A_{k,k+1}=\dots=A_{k,n}=0.$\PfEnd
 \SepLine
 
-\ProblemBnoor{4E 9}{
-	\TextA{Supp $\Fbb=\Cbb,T\in\Lm{V}$ is normal. Prove $T^*=p\Par{T}.$\vspace{2pt}}
-}Let $p\Par{z}=\sum_{j=1}^m{}${\Large\envFontSmall[\footnotesize]\def\SmallPar{\Par}$\frac{\Par{z\,-\,\lambda_1}\,\cdots\,\Par{z\,-\,\lambda_{j-1}}\Par{z\,-\,\lambda_{j+1}}\,\cdots\,\Par{z\,-\,\lambda_m}}{\Par{\lambda_j\,-\,\lambda_1}\,\cdots\,\Par{\lambda_j\,-\,\lambda_{j-1}}\Par{\lambda_j\,-\,\lambda_{j+1}}\,\cdots\,\Par{\lambda_j\,-\,\lambda_m}}$}${\,}\overline{\lambda_j}\Rightarrow$ each $p\Par{\lambda_j}=\overline{\lambda_j}.$\vspace{3pt}\parSol{}
-Where $\lambda_1,\dots,\lambda_m$ are disti eigvals of $T\Rightarrow\forall v_k\in E\Par{\lambda_k,T},\,p\Par{T}v_k=p\Par{\lambda_k}v_k=\overline{\lambda_k}v_k=T^*v_k.$\PfEnd
+\Anchor{7B4e9}\ProblemBnoor{4E 9}{
+	\TextA{Supp $\Fbb=\Cbb,T\in\Lm{V}$ is normal. Prove $\exists\,p\in\PoFi,\,T^*=p\Par{T}.$}
+}Let $\lambda_1,\dots,\lambda_m$ are disti eigvals of $T.$ \,By Exe (4.5), $\exists\,!\,p\in\PoF{m},$ each $p\Par{\lambda_k}=\overline{\lambda_k}.$ \,Immed.
+%Let $p\Par{z}=\sum_{j=1}^m{}${\Large\envFontSmall[\footnotesize]\def\SmallPar{\Par}$\frac{\Par{z\,-\,\lambda_1}\,\cdots\,\Par{z\,-\,\lambda_{j-1}}\Par{z\,-\,\lambda_{j+1}}\,\cdots\,\Par{z\,-\,\lambda_m}}{\Par{\lambda_j\,-\,\lambda_1}\,\cdots\,\Par{\lambda_j\,-\,\lambda_{j-1}}\Par{\lambda_j\,-\,\lambda_{j+1}}\,\cdots\,\Par{\lambda_j\,-\,\lambda_m}}$}${\,}\overline{\lambda_j}\Rightarrow$ each $p\Par{\lambda_j}=\overline{\lambda_j}.$\vspace{3pt}\parSol{}
+\PfEnd
 \SepLine
 
-\ProblemBnoor{4E 12}{
+\Anchor{7B4e12}\ProblemBnoor{4E 12}{
 	\TextA{Supp $\Fbb=\Cbb,T\in\Lm{V}$ is normal, $S\in\Lm{V}$ and $ST=TS.$ Prove $ST^*=T^*S.$}
 }Let $B_V=\Par{e_1,\dots,e_n}$ be orthon eigvecs of $T$ corres $\lambda_1,\dots,\lambda_n.$\parSol{}
-Becs each $E\Par{\lambda_k,T}=E\Par{\overline{\lambda_k},T^*}$ invard $S\Rightarrow ST^*e_k=\overline{\lambda_k}Se_k=T^*Se_k.$\PfEnd
+Becs each $E\Par{\lambda_k,T}=E\Par{\overline{\lambda_k},T^*}$ invard $S\Rightarrow ST^*e_k=\overline{\lambda_k}Se_k=T^*Se_k.$ \;\Or By Exe (4E 9).\PfEnd
 \SepLine
 
-\ProblemBnoor{4E 20}{
+\Anchor{7B4e20}\ProblemBnoor{4E 20}{
 	\TextA{Supp $T\in\Lm{V}$ is normal and $U$ invarspd $T.$}
 	\TextA{Prove {\tgnr\large(a)} $U^\perp$ invard $T,$ \;{\tgnr\large(b)} $\Par{T\mmid_U}{^*}=T^*\mmid_U\in\Lm{U},$ \;{\tgnr\large(c)} $T\mmid_U,T\mmid_{U^\perp}$ normal.}
 }By \Sbra{5.A \TIPSN{3}}, and apply [6.31] to each $E\Par{\lambda_k,T\mmid_U},$ let $B_U=\Par{e_1,\dots,e_m}$ be orthon eigvecs.\parSol{}
 Let $B_V=\Par{e_1,\dots,e_n}$ be orthon eigvecs. Then $B_{U^\perp}=\Par{e_{m+1},\dots,e_n}.$\parSol{}
-(a) Now $U^\perp$ invard $T.$ Apply to $T^*\Rightarrow U$ invard $T^*.$\parSol{}
-(b) $\forall u,v\in U,\BigAng{v,\Par{T\mmid_U}{^*}u}=\Ang{T\mmid_U v,u}=\Ang{v,T^*\mmid_U u}\Rightarrow\BigPar{\Par{T\mmid_U}{^*}-T^*\mmid_U}u\in U\cap U^\perp.$\parSol{}
-(c) $\forall u\in U,\Dvert{T\mmid_U u}=\Dvert{T^*\mmid_U u}=\BigDvert{\Par{T\mmid_U}{^*}u}.$ Apply to invarsp $U^\perp.$\parSol{\Hc}
-\Or $T\mmid_U\Par{T\mmid_U}{^*}=TT^*\mmid_U=T^*T\mmid_U=T^*\mmid_UT\mmid_U=\Par{T\mmid_U}{^*}T\mmid_U.$\PfEnd\vspace{2pt}
-\ANote Another proof of [7.24]: Induc step: For $\dim V>1.$ Asum it holds for smaller dim.\parNot
+(a) Now $U^\perp$ invard $T.$ \;Apply to $T^*\Rightarrow U$ invard $T^*.$\parSol{}
+(b) $\forall u,v\in U,\:\BigAng{v,\Par{T\mmid_U}{^*}u}=\BigAng{T\mmid_U v,u}=\BigAng{v,T^*\mmid_U u}\Rightarrow\BigPar{\Par{T\mmid_U}{^*}-T^*\mmid_U}u\in U\cap U^\perp.$\vspace{3pt}\parSol{}
+(c) $\forall u\in U,\:\BigDvert{T\mmid_U u}=\BigDvert{T^*\mmid_U u}=\BigDvert{\Par{T\mmid_U}{^*}u}.$\vspace{2pt}\parSol{\Hc}
+\Or $T\mmid_U\Par{T\mmid_U}{^*}=TT^*\mmid_U=T^*T\mmid_U=T^*\mmid_UT\mmid_U=\Par{T\mmid_U}{^*}T\mmid_U.$\PfEnd\vspace{4pt}\parSol{}
+\Or Let orthon $B_U=\Par{e_1,\dots,e_m}\Rightarrow B_V=\Par{e_1,\dots,e_n}\Rightarrow B_{U^\perp}=\Par{e_{m+1},\dots,e_n}.$ Let $A=\Mt{T,B_V}.$\parSol{}
+Let $A$ be block matrix {\small$\begin{pmatrix}X &\hspace{-4pt} Y\\[-2pt] 0 &\hspace{-4pt} Z\end{pmatrix}$}, where $X\in\Fbb^{m,m},Y\in\Fbb^{m,\:\!n-m},Z\in\Fbb^{n-m,\:\!n-m}.$\parSol{}
+(a) Becs $\sum_{j=1}^m\Dvertsq{X_{\cdot,j}}=\sum_{j=1}^m\Dvertsq{Te_j}=\sum_{j=1}^m\Dvertsq{T^*e_j}=\sum_{j=1}^m\BigDvertsq{\overline{X_{j,\cdot}}}+\sum_{j=1}^m\BigDvertsq{\overline{Y_{j,\cdot}}}\Rightarrow Y=0.$\vspace{2pt}\parSol{\Ha}
+Apply to $T^*\Rightarrow U$ invard $T^*.$ \Or Becs $\Mt{T^*,B_V}=\overline{A}{^t}={}${\small$\begin{pmatrix}\overline{X}{^t} &\hspace{-4pt} 0\\[-2pt] 0 &\hspace{-4pt} \overline{Z}{^t}\end{pmatrix}$}.\parSol{}
+(b) $\Mt{T\mmid_U,B_V}=X\Rightarrow\Mt[\BigPar]{\Par{T\mmid_U}{^*},B_V}=\overline{X}{^t}.$ 又 $\Mt{T^*\mmid_U,B_V}=\overline{X}{^t}.$\PfEnd\vspace{4pt}
+\Anchor{7B13}\ANote Another proof of [7.24]: Induc step: For $\dim V>1.$ Asum it holds for smaller dim.\parNot
 Let $u$ be an eigvec with $\Dvert{u}=1.$ Let $B_U=\Par{u}\Rightarrow U$ invard $T,$ so is $U^\perp\Rightarrow T\mmid_{U^\perp}$ normal.\parNot
 By asum, $\exists$ orthon $B_{U^\perp}$ of eigvecs of $T\mmid_{U^\perp}.$ Now $B_V=B_U\cap B_{U^\perp}$ of orthon eigvecs.\PfEnd
 \SepLine
+\ChEnd\pagebreak
+
+\ChDecl{Ch7C}{7.C}{}
+
+\vspace{4pt}
+
+
 \ChEnd
