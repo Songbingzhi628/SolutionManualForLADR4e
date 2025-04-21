@@ -2874,7 +2874,7 @@ Becs $\forall s\in\PoFi,\exists\,!\,r\in\PoF{m-1},q\in\PoFi\Rightarrow\exists\,!
 
 \Anchor{4OL1}\ProblemN{L1}{
 	\TextB{Prove $\forall p,q\in\PoFi,k\in\Nbp,\Par{pq}{^{\SmallPar{k}}}=\mathC_{k}^k p{^{\SmallPar{k}}}q{^{\SmallPar{0}}}+\dots+\mathC_{k}^j p{^{\SmallPar{j}}}q{^{\SmallPar{k-j}}}+\dots+\mathC_{k}^0 p{^{\SmallPar{0}}}q{^{\SmallPar{k}}}.$\vspace{2pt}}
-}We use induc by $k\in\Nbp.$ \;(i) $k=1.$ $\Par{pq}{^{\SmallPar{1}}}=\Par{pq}\apostrophe=C_{1}^1 p{^{\SmallPar{1}}}q{^{\SmallPar{0}}}+C_{1}^0 p{^{\SmallPar{0}}}q{^{\SmallPar{1}}}.$ \;(ii) $k\geqslant 2.$\vspace{2pt}\par\quad
+}We use induc on $k\in\Nbp.$ \;(i) $k=1.$ $\Par{pq}{^{\SmallPar{1}}}=\Par{pq}\apostrophe=C_{1}^1 p{^{\SmallPar{1}}}q{^{\SmallPar{0}}}+C_{1}^0 p{^{\SmallPar{0}}}q{^{\SmallPar{1}}}.$ \;(ii) $k\geqslant 2.$\vspace{2pt}\par\quad
 Asum for $\Par{pq}{^{\SmallPar{k-1}}}=\mathC_{k-1}^{k-1} p{^{\SmallPar{k-1}}}q{^{\SmallPar{0}}}+\dots+\mathC_{k-1}^j p{^{\SmallPar{j}}}q{^{\SmallPar{k-1-j}}}+\dots+\mathC_{k-1}^0 p{^{\SmallPar{0}}}q{^{\SmallPar{k-1}}}.$\vspace{4pt}\par\quad
 Now $\Par{pq}{^{\SmallPar{k}}}=\BigPar{\Par{pq}{^{\SmallPar{k-1}}}}\apostrophe=\XPar{{\sum_{j=0}^{k-1}\mathC_{k-1}^{j} p{^{\SmallPar{j}}}q{^{\SmallPar{k-j-1}}}}}\apostrophe=\sum_{j=0}^{k-1}\XSbra{\mathC_{k-1}^{j} \XPar{p{^{\SmallPar{j+1}}}q{^{\SmallPar{k-j-1}}}+p{^{\SmallPar{j}}}q{^{\SmallPar{k-j}}}}}.$\vspace{4pt}\par\quad
 \Blind{Now} $\Blind{\Par{pq}{^{\SmallPar{k}}}\!}=\XSbra{\mathC_{k-1}^{0}\XPar{ \uwave{p{^{\SmallPar{1}}}q{^{\SmallPar{k-1}}}}+\boxed{p{^{\SmallPar{0}}}q{^{\SmallPar{k}}}}}}+\XSbra{\mathC_{k-1}^1\XPar{p{^{\SmallPar{2}}}q{^{\SmallPar{k-2}}}+\uwave{p{^{\SmallPar{1}}}q{^{\SmallPar{k-1}}}}}}$\vspace{4pt}\par\quad
@@ -2902,7 +2902,7 @@ Now supp $M,N\geqslant 1.$ We show $s=0.$ \,{\FontSmall Simlr for $r=0.$ \Or $s=
 Write $p\Par{z}=a\Par{z-\lambda_1}{^{\alpha_1}}\cdots\Par{z-\lambda_M}{^{\alpha_M}}.$ \BigPar{ $\exists\,!\,\alpha_j\geqslant 1,a\in\Fbb.$ } Let $\max\!\Bra{\alpha_1,\dots,\alpha_M}=A.$\vspace{2pt}\par\quad
 For each $D\in\Bra{0,1,\dots,A-1},$ let $I_{>D}=\Bra{{I_{D,1}},\dots,{I_{D,\,J_D}}}$ be suth each $\alpha\Sbra{I_{D,j}}=\alpha_{I_{D,j}}\geqslant D+1.$\vspace{2pt}\par\quad
 Now $\Bra{M}=I_{>A-1}\subseteq \cdots\subseteq I_{>0}=\Bra{1,\dots,M}.$ Becs $rp+sq=0\Rightarrow\Par{rp+sq}{^{\SmallPar{k}}}=0$ for all $k\in\Nbp.$\vspace{2pt}\par\quad
-We use induc by $D$ to show $s{^{\SmallPar{D}}}\BigPar{\lambda\Sbra{I_{D,j}}}=0$ for each $D\in\Bra{0,\dots,A-1}.$\vspace{2pt}\par\quad
+We use induc on $D$ to show $s{^{\SmallPar{D}}}\BigPar{\lambda\Sbra{I_{D,j}}}=0$ for each $D\in\Bra{0,\dots,A-1}.$\vspace{2pt}\par\quad
 \NOTICE that $p{^{\SmallPar{D}}}\BigPar{\lambda\Sbra{I_{D,j}}}=0$ for each $D\in\Bra{0,\dots,A-1}$ and each $I_{D,j}\in I_{>D}.$\hfill(L2)\vspace{2pt}\par\quad
 (i) $D=0.$ Each $\Par{rp+sq}\BigPar{\lambda\Sbra{I_{0,j}}}=\Par{sq}\BigPar{\lambda\Sbra{I_{0,j}}}=s\BigPar{\lambda\Sbra{I_{0,j}}}=0.$ Where $q\BigPar{\lambda\Sbra{I_{0,j}}}\neq0.$\vspace{2pt}\par\quad\Hi
 $D=1.$ Each $\Par{r\apostrophe p+rp\apostrophe}\BigPar{\lambda\Sbra{I_{1,j}}}+\Par{s\apostrophe q+sq\apostrophe}\BigPar{\lambda\Sbra{I_{1,j}}}=\Par{s\apostrophe q}\BigPar{\lambda\Sbra{I_{1,j}}}=s\apostrophe\BigPar{\lambda\Sbra{I_{1,j}}}=0.$\vspace{1pt}\par\quad\Hi
@@ -3396,7 +3396,7 @@ Now $y_1+\dots+y_n=\sum_{j=1}^n x_j\BigSbra{\sum_{k=1}^n A_{j,k}}-\lambda\sum_{k
 \SepLine
 
 \Anchor{8C15}\Anchor{5BII4e7}\Anchor{5BIT1}\ProblemN{\BulletPointX I.\TipsN{1}}{
-	\TextA{Supp $V$ is finide, and $v \in V$.}
+	\TextA{Supp $V$ is finide, $T\in\Lm{V},$ and $v \in V$.}
 	\PrePa\TextA{Prove $\exists\,!$ monic $p_v$ of smallest deg suth $p_v\Par{T}v = 0$.}
 	\PrePb\TextA{Prove $p_v$ is the min $q$ of $T\mmid_{\nullp p_v\SmallPar{T}}.$\hfill\tgnr\FontNorm So that the min of $T$ is a multi of $p_v.$}
 }(a) {\Existns} \;If $v=0,$ then let $p_v\Par{z}=1.$ Supp $v\neq0.$ Then $\Par{v,Tv,\dots,T^{\dim V}v}$ liney dep.\parSol{\Ha}
@@ -3756,14 +3756,14 @@ Thus all $\mu$'s are dist. Let $s\Par{z}=\Par{z^k-\lambda_1}\cdots\Par{z^k-\lamb
 \SepLine
 
 \Anchor{5C'1}\ProblemB{
-	\TextB{Supp $\Fbb=\Cbb,n\in\Nbp,p\in\PoFi$. Prove $T\in\Lm{V}$ is diag $\Longleftrightarrow\nullp p\Par{T}=\Null\Sbra{p\Par{T}}{^n}.$}
+	\TextB{Supp $\Fbb=\Cbb,n\in\Nbb,n\geqslant2.$ Prove $T$ is diag $\Longleftrightarrow\forall p\in\PoFi,\nullp p\Par{T}=\Null\Sbra{p\Par{T}}{^n}.$}
 }(a) Supp $T$ diag. Let $p\Par{z}=\Par{z-\alpha_1}\cdots\Par{z-\alpha_m}.$ We show each $\Null\Par{T-\alpha_kI}{^n}=\Null\Par{T-\alpha_kI}.$\parSol{\Ha}
 Done if $T-\alpha_kI=S$ inje. Supp $S$ not inje. \NOTICE that $\null S\mmid_{\range S}=\null S\cap\range S=\zeroSubs.$\parSol{\Ha}
 By (3.B.22), $\dim\null S^2=\dim\null S\Rightarrow\null S^2=\null S.$ Asum $\null S^j=\null S$ for $j\geqslant 2.$\parSol{\Ha}
 Becs $\dim\Null\Par{S^jS}=\Dim\Par{\null S^j\cap\range S}+\dim\null S.$ By induc.\vspace{3pt}\parSol{}
 (b) Supp $\Null\Par{T-\lambda I}=\Null\Par{T-\lambda I}{^n}$ for all $\lambda\in\Cbb.$ Let $\lambda_1,\dots,\lambda_m$ be disti eigvals of $T.$\parSol{\Hb}
-Define $p\Par{z}=\Par{z-\lambda_1}\cdots\Par{z-\lambda_m}.$ Then $\Sbra{p\Par{T}}{^{\dim V}}=0\Rightarrow p\Par{T}=0\Rightarrow p$ is the min.\PfEnd\parSol{}
-\Or Using (8.A). Becs $V=\Null\Par{T-\lambda I}\oplus\Range\Par{T-\lambda I}$ for all $\lambda\in\Fbb.$\PfEnd
+Define $p\Par{z}=\Par{z-\lambda_1}\cdots\Par{z-\lambda_m}.$ Then $\Sbra{p\Par{T}}{^{\dim V}}=0\Rightarrow p\Par{T}=0\Rightarrow p$ is the min.\PfEnd\vspace{3pt}\parSol{}
+\Or By (4E 8.A.3) and Exe (5), $T$ diag $\Longleftrightarrow\forall\lambda\in\Fbb,\Null\Par{T-\lambda I}=\Null\Par{T-\lambda I}{^2}.$\PfEnd
 \SepLine
 
 %\Anchor{5C4e17}\ProblemN{17}{
@@ -4063,34 +4063,29 @@ Thus each $p_k\Par{z}=\Par{z-\lambda_1}{^{d_{1,k}}}\!\cdots\Par{z-\lambda_n}{^{d
 \Anchor{8BT3}\ProblemN{\BulletPointX B.\TipsN{3}}{
 	\TextA{Supp $\Fbb=\Cbb,$ and $q\Par{z}=\Par{z-\lambda_1}{^{\alpha_1}}\cdots\Par{z-\lambda_k}{^{\alpha_k}}.$}
 	\TextA{Let $F_{\!j}=\Null\Par{T-\lambda_jI}{^{\alpha_j}}.$ Prove $\nullp q\Par{T}=F_{\!1}\oplus\cdots\oplus F_{\!m}.$}
-}Each $\Par{T-\lambda_kI}{^{\alpha_k}}\Big|{_{\:\!G\SmallPar{\:\!\lambda_j,\,T\:\!}}}$ is inje for $k\neq j\Rightarrow\nullp q\Par{T}\Big|{_{\:\!G\SmallPar{\:\!\lambda_j,\,T\:\!}}}=F_{\!j}.$ \;\Or By \Sbra{B \TIPSN{1,4}}.\PfEnd
+}Each $\Par{T-\lambda_kI}{^{\alpha_k}}\Big|{_{\:\!G\SmallPar{\:\!\lambda_j,\,T\:\!}}}$ is inje for $k\neq j\Rightarrow\nullp q\Par{T}\Big|{_{\:\!G\SmallPar{\:\!\lambda_j,\,T\:\!}}}=F_{\!j}.$ \;\Or By \Sbra{B \TIPSN{1,4}}.\PfEndB
 \SepLine\pagebreak
 
+\ProblemB[]{
+	\TextB{Supp $p,q\in\PoFi$ have no common zeros on $\Cbb.$}
+}
 \Anchor{8BT4}\ProblemN{\BulletPointX B.\TipsN{4}}{
-	\TextA{Supp $\Par{pq}\Par{T}=0$ and $p,q\in\PoFi$ have no common zeros on $\Cbb.$}
-	\PrePa\TextA{Prove $V=\nullp p\Par{T}\oplus\nullp q\Par{T}=\rangep p\Par{T}\oplus\rangep q\Par{T}.$}
-	\PrePb\TextA{Prove $\nullp p\Par{T}=\rangep q\Par{T}.$\vspace{2pt}}
-}(a) By Exe (4E 4.13), $\forall v\in V,v=u+w,$ where $u=r\Par{T}\:\!p\Par{T}\:\!v,\,w=s\Par{T}\:\!q\Par{T}\:\!v.$\parSol{\Ha}
-Then $V=\rangep p\Par{T}+\rangep q\Par{T}$ and $\nullp p\Par{T}\cap\nullp q\Par{T}=\zeroSubs.$\parSol{\Ha}
-Becs $\Par{pq}\Par{T}=0.$ Now $\rangep p\Par{T}\cap\rangep q\Par{T}=\zeroSubs$ and $V=\nullp p\Par{T}+\nullp q\Par{T}.$\vspace{3pt}\parSol{}
-(b) $\rangep q\Par{T}\subseteq\nullp p\Par{T}\Rightarrow\rangep q\Par{T}\cap\nullp q\Par{T}=\zeroSubs$\parSol{\Hb}
-$\Rightarrow V=\rangep q\Par{T}\oplus\nullp q\Par{T}.$ Now By (a) and \Sbra{1.C \TIPSN{1}}.\PfEnd\vspace{4pt}\parSol{}
-\Or Let $V_{\!\Cbb}=G\Par{\lambda_1,T_{\!\Cbb}}\oplus\cdots\oplus G\Par{\lambda_m,T_{\!\Cbb}},$ and $m_T\Par{z}=\Par{z-\lambda_1}{^{k_1}}\cdots\Par{z-\lambda_m}{^{k_m}}.$\parSol{}
-Let $\mA=\Bra{\alpha_1,\dots,\alpha_{\!A}}$ be the intersec of the zeros of $p$ and the eigvals of $T.$ \,Simlr for $\mB.$\parSol{}
-Then $\mA\cap\mB=\emptySet.$ Let $p=\omega_{\alpha_1}\!\!\cdots\omega_{\alpha_{\!A}}\,p_0,\;q=\omega_{\beta_1}\!\!\cdots\omega_{\beta_B}\,q_0,$ where $\omega_{\lambda_i}\Par{z}=\Par{z-\lambda_i}{^{k_i}}.$\parSol{}
-By \Sbra{B \TIPSN{3}}, $\nullp p\Par{T_{\!\Cbb}}=G\Par{\alpha_1,T_{\!\Cbb}}\oplus\cdots\oplus G\Par{\alpha_{\!A},T_{\!\Cbb}}.$ \,Simlr for $q.$\vspace{1pt}\parSol{}
-Note that if $\alpha_j\not\in\Rbb,$ then $\exists\,\alpha_i=\overline{\alpha_j}.$ Simlr for $\mB.$ \,Now $V_{\!\Cbb}=\nullp p\Par{T_{\!\Cbb}}\oplus\nullp q\Par{T_{\!\Cbb}}.$\parSol{}
-Simlr, $\rangep p\Par{T_{\!\Cbb}}=\nullp q\Par{T_{\!\Cbb}}.$ So that $V_{\!\Cbb}=\rangep p\Par{T_{\!\Cbb}}\oplus\rangep q\Par{T_{\!\Cbb}}.$\PfEnd\vspace{3pt}
-\ACoro Supp $\Par{p_1\cdots p_k}\Par{T}=0,$ and $p_1,\dots,p_k\in\PoFi$ have no common zeros on $\Cbb.$\parCor
-(a) We show $V=\nullp p_1\Par{T}\oplus\cdots\oplus\nullp p_k\Par{T}$ by induc on $k$. (i) $k=1,2.$ Immed. (ii) $k>2.$\parCor{\Ha}
-Asum it holds for $\Par{k-1}.$ Simlr to above, $\Null\Par{p_{k-1}p}\Par{T}=\nullp p_{k-1}\Par{T}\oplus\nullp p_k\Par{T}.$
-%\parCor{\Ha}
-%We show $V=\rangep p_1\Par{T}\oplus\cdots\oplus\rangep p_k\Par{T}$ by induc simlr.\parCor{\Ha}
-%$\Range\Par{p_{k-1}p}\Par{T}=\rangep p_{k-1}\Par{T}\oplus\rangep p_k\Par{T}.$
-\vspace{2pt}\parCor
-(b) Becs $\rangep p_j\Par{T}\subseteq\bigoplus_{i\,\in\,\Gamma_{\!j}}\nullp p_i\Par{T}\Rightarrow\nullp p_j\Par{T}\cap\rangep p_j\Par{T}=\zeroSubs.$\parCor{\Hb}
-Where $\Gamma_{\!j}=\Bra{1,\dots,j-1,j+1,\dots,k}.$ \,Now $\rangep p_j\Par{T}=\bigoplus_{i\,\in\,\Gamma_{\!j}}\nullp p_i\Par{T}.$\parCor{\Hb}
-Then $\nullp p_j\Par{T}=\bigcap_{i\,\in\,\Gamma_{\!j}}\rangep p_i\Par{T}.$ \;\NOTICE that $\bigcap_{i\,\in\,\Gamma_{\!j}}\rangep p_i\Par{T}\supsetneq\Range\Par{p_1\cdots p_k}\Par{T}.$
+	\PrePa\TextA{Prove $\nullp p\Par{T}\oplus\nullp q\Par{T}=\Null\Par{pq},\,\rangep p\Par{T}+\rangep q\Par{T}=V.$}
+	\PrePb\TextA{Prove $\rangep p\Par{T}\cap\rangep q\Par{T}=\Range\Par{pq}\Par{T}.$}
+}(a) By Exe (4E 4.13), $\forall v\in V,v=r\Par{T}\:\!p\Par{T}\:\!v+s\Par{T}\:\!q\Par{T}\:\!v.$\par\quad
+(b) $v\in\rangep p\Par{T}\cap\rangep q\Par{T}\Rightarrow\exists\,u,w\in V,v=p\Par{T}u=q\Par{T}w=\Par{pq}\Par{T}\BigPar{r\Par{T}w+s\Par{T}u}.$\PfEndB\vspace{2pt}
+\ACoro Supp $\Par{pq}\Par{T}=0.$ We show $\nullp p\Par{T}=\rangep q\Par{T}.$\parCor
+Becs `$\supseteq$' holds $\Rightarrow\nullp q\Par{T}\cap\rangep p\Par{T}=\zeroSubs.$ By (5.C.3) and \Sbra{1.C \TIPSN{1}}.\PfEnd\parCor
+Supp $\Par{p_1\cdots p_k}\Par{T}=0,$ and $p_1,\dots,p_k\in\PoFi$ have no common zeros on $\Cbb.$\vspace{1pt}\parCor
+(c) Each $\nullp p_j\Par{T}=\Range\BigPar{{\prod_{i\neq j}^k p_i}}\Par{T}=\bigcap_{i\neq j}^k\rangep p_i\Par{T}.$ \;\Or By (d).\vspace{2pt}\parCor
+(d) Each $\rangep p_j\Par{T}=\bigoplus_{i\neq j}^k\nullp p_i\Par{T}.$ Note that $V=\nullp p_j\Par{T}\oplus\Sbra{{\bigoplus_{i\neq j}^k\nullp p_i\Par{T}}}.$\PfEnd\vspace{-2pt}
+\SepLine[0pt][\Blind{\BulletPointX} ]
+
+\BulletPointX\ANote If $\Par{pq}\Par{T}=0.$ \,Let $V_{\!\Cbb}=G\Par{\lambda_1,T_{\!\Cbb}}\oplus\cdots\oplus G\Par{\lambda_m,T_{\!\Cbb}},$ and $m_T\Par{z}=\Par{z-\lambda_1}{^{k_1}}\cdots\Par{z-\lambda_m}{^{k_m}}.$\parNot{\IndentB}
+Let $\mA=\Bra{\alpha_1,\dots,\alpha_{\!A}}$ be the intersec of the zeros of $p$ and the eigvals of $T.$ \,Simlr for $\mB.$\parNot{\IndentB}
+Then $\mA\cap\mB=\emptySet.$ Let $p=\omega_{\alpha_1}\!\!\cdots\omega_{\alpha_{\!A}}\,p_0,\;q=\omega_{\beta_1}\!\!\cdots\omega_{\beta_B}\,q_0,$ where $\omega_{\lambda_i}\Par{z}=\Par{z-\lambda_i}{^{k_i}}.$\parNot{\IndentB}
+By \Sbra{B \TIPSN{3}}, $\nullp p\Par{T_{\!\Cbb}}=G\Par{\alpha_1,T_{\!\Cbb}}\oplus\cdots\oplus G\Par{\alpha_{\!A},T_{\!\Cbb}}.$ \,Simlr for $q.$\vspace{1pt}\parNot{\IndentB}
+Note that if $\alpha_j\not\in\Rbb,$ then $\exists\,\alpha_i=\overline{\alpha_j}.$ Simlr for $\mB.$ \,Now $V_{\!\Cbb}=\nullp p\Par{T_{\!\Cbb}}\oplus\nullp q\Par{T_{\!\Cbb}}.$
 \SepLine
 
 %\Anchor{8B'2}\ProblemB{
@@ -4144,19 +4139,18 @@ Then $\nullp p_j\Par{T}=\bigcap_{i\,\in\,\Gamma_{\!j}}\rangep p_i\Par{T}.$ \;\NO
 %\SepLine
 
 \Anchor{8D8}\ProblemN{D.8}{
-	\TextA{Supp $\Fbb=\Cbb.$}
-	\TextA{Prove [P] $\nexists$ non0 invarsps $U,W$ suth $U\oplus W=V\Longleftrightarrow m_T\Par{z}=\Par{z-\lambda}{^{\dim V}}.$ [Q]}
-}$Q\Rightarrow P:$ \;Let $N=T-\lambda I\Rightarrow$ the min of $N$ is $z^{\dim V}.$\parSol{}
-\Blind{$Q\Rightarrow P:$ \;}Then by Exe (D.3), the line directly above the diag of {\tgsc any} Jordan $\Mt{N}$ is all $1.$\parSol{}
-\Blind{$Q\Rightarrow P:$ \;}Thus the only Jordan block of $\Mt{N}$ is $\Mt{N}$ itself.\vspace{3pt}\par\quad
-${}{^\neg}P\Rightarrow{}{^\neg}Q:$ \;If $\exists$ two or more eigvals of $T\mmid_U$ or $T\mmid_W,$ then $m_T$ has two or more disti factors, done.\par\quad
-\Blind{${}{^\neg}P\Rightarrow{}{^\neg}Q:$ \;}Now supp $\exists$ only one eigval $\lambda$ for $T\mmid_U,$ $T\mmid_W,$ and $T.$ Supp $m_T\Par{z}=\Par{z-\lambda}{^m}.$\par\quad
-\Blind{${}{^\neg}P\Rightarrow{}{^\neg}Q:$ \;}Let $M=\max\!\Bra{\dim U,\dim W}.$ Let $S=\Par{T-\lambda I}{^M}\Rightarrow\null S\mmid_U\oplus\null S\mmid_W=\null S.$\par\quad
-\Blind{${}{^\neg}P\Rightarrow{}{^\neg}Q:$ \;}Becs $G\Par{\lambda,T\mmid_U}=U,\,G\Par{\lambda,T\mmid_W}=W,\,G\Par{\lambda,T}=V,\,\Par{T-\lambda I}{^M}=0.$ Now by Exe (4E B.6).\vspace{2pt}\par\quad
-\Blind{${}{^\neg}P\Rightarrow{}{^\neg}Q:$ \;}\Or Becs $\exists$ Jordan $\Mt{T\mmid_U},\Mt{T\mmid_W}\Rightarrow$ Jordan $\Mt{T}.$ Consider $z^{M+1}$ by Exe (D.3).\vspace{4pt}\par\quad
-${}{^\neg}Q\Rightarrow{}{^\neg}P:$ \;Supp $T$ has only one eigval. Let
-$m_T\Par{z}=\Par{z-\lambda}{^m}$ with $m<\dim V.$\par\quad
-\Blind{${}{^\neg}Q\Rightarrow{}{^\neg}P:$ \;}Becs $\exists$ Jordan $B_V=\Par{\underbrace{v_{1,1},\cdots,v_{m_1,1}}_{\text{bss for } U},\underbrace{v_{1,2},\cdots,v_{m_2,2},\cdots,v_{1,k},\cdots,v_{m_k,k}}_{\text{bss for }W}}$ for $T.$\PfEnd\vspace{4pt}
+	\TextA{Supp $\Fbb=\Cbb.$ Prove $\nexists$ non0 invarsps $U,W$ suth $U\oplus W=V\Longleftrightarrow m_T\Par{z}=\Par{z-\lambda}{^{\dim V}}.$}
+}Let $N=T-\lambda I\Rightarrow$ the min of $N$ is $z^{\dim V}.$\parSol{}
+Then by Exe (D.3), the line directly above the diag of {\tgsc any} Jordan $\Mt{N}$ is all $1.$\parSol{}
+Thus the only Jordan block of $\Mt{N}$ is $\Mt{N}$ itself. \;Convly true as well.\PfEnd\vspace{2pt}\quad
+\Or (a) If $\exists$ two or more eigvals of $T\mmid_U$ or $T\mmid_W,$ then $m_T$ has two or more disti factors, done.\par\quad\Ha
+\Blind{\Or}Now supp $\exists$ only one eigval $\lambda$ for $T\mmid_U,$ $T\mmid_W,$ and $T.$ Supp $m_T\Par{z}=\Par{z-\lambda}{^m}.$\par\quad\Ha
+\Blind{\Or}Let $M=\max\!\Bra{\dim U,\dim W}.$ Let $S=\Par{T-\lambda I}{^M}\Rightarrow\null S\mmid_U\oplus\null S\mmid_W=\null S.$\par\quad\Ha
+\Blind{\Or}Becs $G\Par{\lambda,T\mmid_U}=U,\,G\Par{\lambda,T\mmid_W}=W,\,G\Par{\lambda,T}=V\Rightarrow S=0.$ Now by Exe (4E B.6).\vspace{2pt}\par\quad\Ha
+\Blind{\Or}\Or Becs $\exists$ Jordan $\Mt{T\mmid_U},\Mt{T\mmid_W}\Rightarrow$ Jordan $\Mt{T}.$ Consider $z^M$ by Exe (D.3).\vspace{4pt}\par\quad
+\Blind{\Or}(b) Supp $T$ has only one eigval. Let
+$m_T\Par{z}=\Par{z-\lambda}{^m}$ with $m<\dim V.$\par\quad\Hb
+\Blind{\Or}Becs $\exists$ Jordan $B_V=\Par{\underbrace{v_{1,1},\cdots,v_{m_1,1}}_{\text{bss for } U},\underbrace{v_{1,2},\cdots,v_{m_2,2},\cdots,v_{1,k},\cdots,v_{m_k,k}}_{\text{bss for }W}}$ for $T.$\PfEnd\vspace{4pt}
 \SepLine\ChEnd\pagebreak
 
 \ChDecl{Ch9A}{9.A}{\quad{\ANote {\FontSmall $V$ denotes a finide non0 vecsp over $\Fbb.$}}}
@@ -4165,9 +4159,9 @@ $m_T\Par{z}=\Par{z-\lambda}{^m}$ with $m<\dim V.$\par\quad
 
 \BulletPointX\NoteForSmall{[9.12]}\;\;Another proof: \;$\overline{T_{\!\Cbb}\Par{u+\i v}}=\overline{Tu+\i Tv}=Tu-\i Tv=T_{\!\Cbb}\Par{\overline{u+\i v}}.$\TextB{}
 $\overline{\Par{T_{\!\Cbb}-\lambda I}\Par{u+\i v}}=\overline{T_{\!\Cbb}\Par{u+\i v}-\lambda\Par{u+\i v}}=T_{\!\Cbb}\Par{u-\i v}-\overline{\lambda}\Par{u-\i v}=\Par{T_{\!\Cbb}-\overline{\lambda}I}\Par{\overline{u+\i v}}.$\TextB{}
-We use induc on $m$ to show $\overline{\Par{T_{\!\Cbb}-\lambda I}{^m}\Par{u+\i v}}=\Par{T_{\!\Cbb}-\overline{\lambda}I}{^m}\Par{u-\i v}.$ (i) Immed. (ii) $m>1.$\TextB{}
-Asum it holds for $\Par{m-1}.$ Let $\Par{T_{\!\Cbb}-\lambda I}{^{m-1}}\Par{u+\i v}=x+\i y.$ Becs $\overline{\Par{T_{\!\Cbb}-\lambda I}{^{m-1}}\Par{u+\i v}}=x-\i y.$\TextB{}
-Then $\overline{\Par{T_{\!\Cbb}-\lambda I}{^m}\Par{u+\i v}}=\overline{\Par{T_{\!\Cbb}-\lambda I}\Par{x+\i y}}=\Par{T_{\!\Cbb}-\overline{\lambda}I}\Par{x-\i y}.$\PfEnd\vspace{2pt}
+We use induc on $m$ to show $\overline{\Par{T_{\!\Cbb}-\lambda I}{^m}\Par{u+\i v}}=\Par{T_{\!\Cbb}-\overline{\lambda}I}{^m}\Par{\overline{u+\i v}}.$ (i) Immed. (ii) $m>1.$\TextB{}
+Asum it holds for $\Par{m-1}.$ Let $\Par{T_{\!\Cbb}-\lambda I}{^{m-1}}\Par{u+\i v}=x+\i y\Rightarrow\Par{T_{\!\Cbb}-\overline{\lambda}I}{^{m-1}}\Par{\overline{u+\i v}}=x-\i y.$\TextB{}
+Then $\overline{\Par{T_{\!\Cbb}-\lambda I}{^m}\Par{u+\i v}}=\overline{\Par{T_{\!\Cbb}-\lambda I}\Par{x+\i y}}=\Par{T_{\!\Cbb}-\overline{\lambda}I}\Par{x-\i y}=\Par{T_{\!\Cbb}-\overline{\lambda}I}{^m}\Par{\overline{u+\i v}}.$\PfEnd\vspace{3pt}
 \BulletPointX\NoteForSmall{[9.17]}\;\;Detailed proof:\TextB{}
 Let $B=\Par{u_1+\i v_1,\dots,u_m+\i v_m}$ be a bss of $G\Par{\lambda,T_{\!\Cbb}}.$ By [9.12], $\overline{B}=\Par{u_1-\i v_1,\dots,u_m-\i v_m}$ in $G\Par{\overline{\lambda},T_{\!\Cbb}}.$\TextB{}
 (a) If $a_1\Par{u_1-\i v_1}+\dots+a_m\Par{u_m-\i v_m}=0.$ Conjuging, now each $\overline{a_k}=0.$ Liney indep.\TextB{}
@@ -4177,8 +4171,7 @@ Let $B=\Par{u_1+\i v_1,\dots,u_m+\i v_m}$ be a bss of $G\Par{\lambda,T_{\!\Cbb}}
 \Anchor{9A13}\ProblemN{13}{
 	\TextA{Supp $\Fbb=\Rbb,T\in\Lm{V},$ and $b^2<4c.$ Let $q\Par{z}=z^2+bz+c=\Par{z-\lambda}\Par{z-\overline{\lambda}}.$\vspace{2pt}}
 	\TextA{Prove $\dim\nullp q\Par{T}{^j}$ is even for each $j\in\Nbp.$\tgnr\hfill\FontSmall\Sbra{See also {\NOTEFOR} [4E 5.33] in (5.BI).}}
-}(a) Replace $V$ with $\nullp q\Par{T}{^j}$ and $T$ with $T$ restr to $V.$ Becs $m_T=q{^k}.$\parSol{\Ha}
-By \Sbra{8.B \TIPSN{4}}, $V_{\!\Cbb}=\Null\Par{T_{\!\Cbb}-\lambda I}{^k}\oplus\Null\Par{T_{\!\Cbb}-\overline{\lambda}I}{^k}.$ By [9.17] and [9.4].\PfEnd\vspace{4pt}
+}By \Sbra{8.B \TIPSN{3}}, $\nullp q\Par{T}{^j}=\nullp .$ \;By [9.17] and [9.4].\PfEnd\vspace{4pt}
 \ANote Let $Q\Par{\lambda,T}=\nullp q\Par{T}{^{\dim V}}.$ Then by (4E 8.B.6,7) for $T_{\!\Cbb},$ by [9.10,20], and by \Sbra{8.B \TIPSN{4}},\parNot
 (a) $Q\Par{\lambda,T}=\nullp q\Par{T}{^d},$ where $d=\dim G\Par{\lambda,T_{\!\Cbb}}.$\parNot
 (b) The expo of $q$ in the factoriz of $m_T$ is the smallest $m\in\Nbp$ suth $q\Par{T}{^m}\Big|{_{\:\!Q\SmallPar{\:\!\lambda,\,T\:\!}}}=0.$\vspace{1pt}\parNot
