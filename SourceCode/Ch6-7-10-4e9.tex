@@ -215,7 +215,7 @@ Define $D,N\in\Cbb^{n,n}$ by $D_{j,k}=\delta_{j,k}A_{j,k},\:N=A-D.$ Then $N$ is 
 Let $\rho=\max\!\Bra{\aMid{D_{1,1}},\dots,\aMid{D_{n,n}}}\Rightarrow0\leqslant\rho<1,$ and each $\Dvert{D^{\,k}x}\leqslant\rho^{\,k}\Dvert{x}\leqslant\Dvert{x}.$\vspace{1pt}\parSol{}
 Let $M=\sum_{j=1}^n\sum_{k=1}^n\aMidsq{N_{j,k}}.$ \,{By \Sbra{6.A \TIPSN{2}}}, $\Dvert{Nx}\leqslant M\Dvert{x}\Rightarrow\Dvert{N^{k}x}\leqslant M\Dvert{N^{k-1}x}\leqslant M^k\Dvert{x}.$\vspace{1pt}\parSol{}
 Hence $\Dvert{A^{p+q}x}=\BigDvert{b_0D^{\,p+q}x+\dots+b_kD^{\,p+q-k}N^{k}x+\dots+b_{p-1}D^{\,q+1}N^{p-1}x}$\vspace{3pt}\parSol{}
-\Blind{So that $\Dvert{A^{p+q}x}$}$\leqslant\BigSbra{{b_0\rho^{\,p+q}+\dots+b_k\rho^{\,p+q-k}M^k+b_{p-1}\rho^{\,q+1}M^{p-1}}}\Dvert{x}.$\vspace{2pt}\parSol{}
+\Blind{So that $\Dvert{A^{p+q}x}$}$\leqslant\!\BigSbra{{b_0\rho^{\,p+q}+\dots+b_k\rho^{\,p+q-k}M^k+b_{p-1}\rho^{\,q+1}M^{p-1}}}\Dvert{x}.$\vspace{2pt}\parSol{}
 Where each $b_j=\mathC_{p+q}^j\leqslant\Par{p+q}{^j}$ for $j\in\;\!\!\Bra{0,\dots,p-1}\Rightarrow$ each $b_j\leqslant\Par{p+q}{^{p-1}}.$\vspace{1pt}\parSol{}
 Let $\sigma=\max\!\Bra{1,M,\dots,M^{p-1}}.$ 又 $\max\!\Bra{\rho^{\,p+q},\dots,\rho^{\,q+1}}=\rho^{\,q+1}.$\parSol{}
 Now $\Dvert{A^{p+q}x}\leqslant\Par{p+q}{^{p-1}}\rho^{\,q+1}\sigma\Dvert{x}.$ \;Note that as $q\rightarrow\infty,$ \,$\Par{p+q}{^{p-1}}\rho^{\,q+1}\rightarrow0.$\PfEnd
@@ -242,15 +242,15 @@ $\forall a\in\Fbb,\;\Dvert{w}\leqslant\Dvert{w+au},$ \Or $\Dvert{Pv}=\Dvert{P\Pa
 \SepLine
 
 \Anchor{6C10}\ProblemN{10}{
-	\TextA{Supp $V$ finide, $U$ a subsp, $T\in\Lm{V},$ and $P_UT=TP_U.$ Prove $U$ and $U^\perp$ invard $T.$}
-}(a) $P_UTP_U=TP_UP_U=TP_U.$ \,(b) $P_{U^\perp}TP_{U^\perp}=\Par{I-P_U}T\Par{I-P_U}=T\Par{I-P_U}{^2}=TP_{U^\perp}.$\vspace{2pt}\PfEnd\parSol{}
-\Or (a) $\range T\mmid_U=\range TP_U=\range P_UT\subseteq U.$\parSol{}
-\Blind{\Or}(b) $\range T\mmid_{U^\perp}=\range T\Par{I-P_U}=\range\Par{I-P_U}T\subseteq U^\perp.$\PfEnd\parSol{}
-\Blind{\Or}\AComm The trick $T=\Par{P_U\mmid_{\range T}}{^{-1}}TP_U$ is invalid.
+	\TextA{Supp $V$ finide, $U$ a subsp, $T\in\Lm{V},$ and $P_{\!U}T=TP_{\!U}.$ Prove $U$ and $U^\perp$ invard $T.$}
+}(a) $P_{\!U}TP_{\!U}=TP_{\!U}P_{\!U}=TP_{\!U}.$ \,(b) $P_{U^\perp}TP_{U^\perp}=\Par{I-P_{\!U}}T\Par{I-P_{\!U}}=T\Par{I-P_{\!U}}{^2}=TP_{U^\perp}.$\vspace{2pt}\PfEnd\parSol{}
+\Or (a) $\range T\mmid_U=\range TP_{\!U}=\range P_{\!U}T\subseteq U.$\parSol{}
+\Blind{\Or}(b) $\range T\mmid_{U^\perp}=\range T\Par{I-P_{\!U}}=\range\Par{I-P_{\!U}}T\subseteq U^\perp.$\PfEnd\parSol{}
+\Blind{\Or}\AComm The trick $T=\Par{P_{\!U}\mmid_{\range T}}{^{-1}}TP_{\!U}$ is invalid.
 \SepLine
 
 \Anchor{6CT2}\BulletPointX\TipsN{2}\,\,\,Supp $U$ finide subsp of $V,v\in V,\varphi\in U\apostrophe:u\mapsto\Ang{u,v}.$\TextB{}
-{\IndentTipsN{2}}Then $\exists\,!\,w\in U,\varphi\Par{u}=\Ang{u,w}=\Ang{u,v}$ for all $u\in U\Rightarrow v-w\in U^\perp.$ Now $w=P_Uv.$
+{\IndentTipsN{2}}Then $\exists\,!\,w\in U,\varphi\Par{u}=\Ang{u,w}=\Ang{u,v}$ for all $u\in U\Rightarrow v-w\in U^\perp.$ Now $w=P_{\!U}v.$
 \SepLine
 
 %\Anchor{6CT3}\BulletPointX\TipsN{3}\,\,\,Supp $e_1,\dots,e_n\in V$ with each $\Dvert{e_k}=1,$ and for all $v\in V,\:\Dvert{v}{^2}=\innerAsq{v,\,e_1}+\dots+\innerAsq{v,\,e_n}.$\TextB{}
@@ -277,7 +277,7 @@ $\forall a\in\Fbb,\;\Dvert{w}\leqslant\Dvert{w+au},$ \Or $\Dvert{Pv}=\Dvert{P\Pa
 %\SepLine
 
 %\Anchor{7A11}\Anchor{7A4e20}\ProblemB{
-%	\TextB{Supp $P^2=P=P_U\in\Lm{V}$ for some subsp $U$ of $V.$ Prove $P$ is self-adj.}
+%	\TextB{Supp $P^2=P=P_{\!U}\in\Lm{V}$ for some subsp $U$ of $V.$ Prove $P$ is self-adj.}
 %}$\forall\Par{u,w},\Par{x,y}\in U\times U^\perp,\:\BigAng{P\Par{u+w},x+y}=\Ang{u+w,x}=\BigAng{u+w,P^*\Par{x+y}}.$\PfEnd
 %\SepLine
 
