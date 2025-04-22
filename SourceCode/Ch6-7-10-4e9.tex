@@ -93,10 +93,10 @@ Then $\Dvertsq{u+w}+\Dvertsq{u-w}\leqslant2m.$ \;\;\Or $\Dvert{u+w}\cdot\Dvert{u
 	\TextB{Show $\Par{v_1,\dots,v_n}$ liney indep.}
 }(i) Asum $v_1=cv_2.$ Then $\Ang{cv_2,u}>0\Rightarrow c>0,$ while $\Ang{v_1,v_1}=c\Ang{v_2,v_1}\geqslant0\Rightarrow c\leqslant0.$ ctradic.\parSol{}
 (ii) Asum $\Par{v_1,\dots,v_{n-1}}$ liney indep. Asum $v_n=c_1v_1+\dots+c_{n-1}v_{n-1}.$\parSol{}
-Then $\Ang{v_n,u}=c_1\Ang{v_1,u}+\dots+c_{n-1}\Ang{v_{n-1},u}>0.$ \;Thus each $c_k\in\Rbb.$\parSol{}
+Then $\Ang{v_n,u}=c_1\Ang{v_1,u}+\dots+c_{n-1}\Ang{v_{n-1},u}>0.$ \;Thus we can choose all $c_k\in\Rbb.$\parSol{}
 Write $c_1v_1+\dots+c_nv_n=0,\:c_n=-1.$ \;Let $P=\Bra{i:c_i\geqslant0},\,N=\Bra{i:c_i<0}.$\vspace{1pt}\parSol{}
-Then $\sum_{j\in P}c_jv_j=\sum_{k\in N}-c_kv_k\Longrightarrow 0\leqslant\BigAng{{\sum_{j\in P}c_jv_j,\,\sum_{k\in N}-c_kv_k}}=\sum_{j\in P}\sum_{k\in N}-c_j\:\!c_k\!\:\Ang{v_j,v_k}\leqslant0.$\vspace{2pt}\parSol{}
-While $\BigAng{{\sum_{j\in P}c_jv_j,u}},\BigAng{{\sum_{k\in N}-c_kv_k,u}}\geqslant0,$ where the equas hold $\Longleftrightarrow$ all $c_i=0.$\PfEnd
+Then $\sum_{j\in P}c_jv_j=\sum_{k\in N}-c_kv_k\Longrightarrow 0\leqslant\BigAng{{\sum_{j\in P}c_jv_j,\:\sum_{k\in N}-c_kv_k}}=\sum_{j\in P}\sum_{k\in N}-c_j\:\!c_k\!\:\Ang{v_j,v_k}\leqslant0.$\vspace{2pt}\parSol{}
+While $\BigAng{{\sum_{j\in P}c_jv_j,\,u}},\:\BigAng{{\sum_{k\in N}-c_kv_k,\,u}}\geqslant0,$ where the equas hold $\Longleftrightarrow$ all $c_i=0.$\PfEnd
 \SepLine
 
 \vfill\ChDecl{Ch6B}{6.B}{}
@@ -129,7 +129,7 @@ Bessel's Inequa: $\sum_{k=1}^m\innerAsq{v,e_k}\leqslant\Dvertsq{v}.$ \:\Sbra{Exe
 
 \Anchor{6B4e9}\ProblemBnoor{4E 9}{
 	\TextA{Supp $\Par{e_1,\dots,e_m}$ is the result of applying [6.31]\vspace{1pt}}
-	\TextA{to a liney indep $\Par{v_1,\dots,v_m}$ in $V.$ \,Show each $\Ang{v_j,e_j}>0.$}
+	\TextA{to a liney indep $\Par{v_1,\dots,v_m}$ in $V.$ \,Show each $\Ang{v_j,\:\!e_j}>0.$}
 }Let $\;f_j=v_j-\Ang{v_j,\,e_1}\,e_1-\dots-\Ang{v_j,\,e_{j-1}}\,e_{j-1}.$\vspace{2pt}\parSol{}
 Becs $\;\Dvert{\,f_j}\,\Ang{v_j,\,e_j}=\Ang{v_j,\,f_j}=\Dvertsq{v_j}-\innerAsq{v_j,\,e_1}-\dots-\innerAsq{v_j,\,e_{j-1}}\geqslant0,$ by Bessel's Inequa.\vspace{2pt}\parSol{}
 If $\,\Ang{v_j,\,f_j}=0,$ then by Exe (2), $v_j\in\Span{e_1,\dots,e_{j-1}}=\Span{v_1,\dots,v_{j-1}}.$ 又 $\Dvert{\,f_j}\neq0.$\PfEnd\vspace{3pt}
@@ -142,18 +142,18 @@ Apply [6.31]. Now $v_j\in\Span{v_1,\dots,v_{j-1}}=\Span{e_1,\dots,e_{j-1}}\Right
 {\IndentTips}Supp orthon $\Par{u_1,\dots,u_m}$ suth each $\Span{u_1,\dots,u_k}=\Span{v_1,\dots,v_k}.$\vspace{1pt}\TextB{}
 {\IndentTips}We show it equals $\BigBigPar{c\Par{1}e_1,\dots,c\Par{m}e_m}$ for some $c\in S^m$ by induc on $k.$\vspace{1pt}\TextB{}
 {\IndentTips}(i) $k=1.$ $\Span{e_1}=\Span{u_1}\Rightarrow u_1=\Ang{u_1,\,e_1}\,e_1,$ 又 $\innerA{u_1,\,e_1}=1.$ Let $c\Par{1}=\Ang{u_1,\,e_1}.$\vspace{1pt}\TextB{}
-{\IndentTips}(ii) $k>1.$ Asum each $\aMid{c\Par{i}}=1$ and $c\Par{i}e_i=u_i$ for $i\in\!\Bra{1,\dots,k-1}.$\vspace{1pt}\TextB{}
+{\IndentTips}(ii) $k>1.$ Asum each $\aXMid{c\Par{i}}=1$ and $c\Par{i}e_i=u_i$ for $i\in\;\!\!\Bra{1,\dots,k-1}.$\vspace{1pt}\TextB{}
 {\IndentTips\Hii}$u_k=\Ang{u_k,\:\!e_1}\:\!e_1+\dots+\Ang{u_k,\:\!e_k}\:\!e_k.$ 又 $\Ang{u_j,u_k}=0=c\Par{j}\Ang{e_j,u_k}$ for $j\neq k.$ \,Simlr, $c\Par{k}=\Ang{u_k,\,e_k}.$
 \SepLine
 
 \Anchor{6B4e10}\ProblemBnoor{4E 10}{
 	\TextB{Supp $\Par{v_1,\dots,v_m}$ liney indep. Explain why the
 	orthon list produced by [6.31]}
-	\TextB{is the only orthon $\Par{e_1,\dots,e_m}$ suth each $\Ang{v_k,\,e_k}>0$ and $\Span{v_1,\dots,v_k}=\Span{e_1,\dots,e_k}.$}
-}Fix one $k.$ Let \,$v_k=a_1e_1+\dots+a_ke_k\Rightarrow$ each $a_j=\Ang{v_k,e_j}.$ Let \,$f_k=v_k-a_1e_1-\dots-a_{k-1}e_{k-1}.$\vspace{1pt}\parSol{}
-Then $e_k=f_k\Big/\;\!\!a_k\Rightarrow\Ang{\,f_k,\,f_k}\big/a_k^2=1\Rightarrow a_k=\pm\Dvert{\,f_k}.$ 又 $a_k>0.$ \:Hence each $e_k=f_k\Big/\Dvert{\,f_k}.$\PfEnd\vspace{4pt}\parSol{}
-\Or By \TIPS. Get $\Par{e_1',\dots,e_m'}$ from $\Par{v_1,\dots,v_m}$ via [6.31].\vspace{1pt}\parSol{}
-Becs each $\BigAng{v_k,\,c\Par{k}e_k'}>0,$ while $\Ang{v_k,\,e_k'}>0.$ Thus $c\Par{k}=\REAL\Sbra{c\Par{k}}>0\Rightarrow c\Par{k}=1.$\PfEnd
+	\TextB{is the only orthon $\Par{e_1,\dots,e_m}$ suth each $\Ang{v_k,\;\!e_k}>0$ and $\Span{v_1,\dots,v_k}=\Span{e_1,\dots,e_k}.$}
+}Fix one $k.$ Let \,$v_k=a_1e_1+\dots+a_ke_k\Rightarrow$ each $a_j=\Ang{v_k,\;\!e_j}.$ Let \,$f_k=v_k-a_1\:\!e_1-\dots-a_{k-1}\:\!e_{k-1}.$\vspace{1pt}\parSol{}
+\NOTICE that $\,e_k=f_k\Big/\;\!\!a_k\Rightarrow\Dvertsq{\,f_k}\!\Big/\aMidsq{a_k}=1\Rightarrow\aMid{a_k}=\Dvert{\,f_k}.$ 又 $a_k=\Ang{v_k,\;\!e_k}>0\Rightarrow a_k=\Dvert{\,f_k}.$\PfEnd\vspace{4pt}\parSol{}
+\Or Let $\Par{e_1,\dots,e_m}$ be suth orthon list. \,Get $\Par{e_1',\dots,e_m'}$ from $\Par{v_1,\dots,v_m}$ via [6.31].\vspace{1pt}\parSol{}
+By \TIPS, each $e_k=c\Par{k}e_k',$ 又 $\Ang{v_k,\,e_k},\,\Ang{v_k,\,e_k'}>0\Rightarrow 0<c\Par{k}=1.$\PfEnd
 \SepLine
 
 \Anchor{6B10}\ProblemN{10}{
@@ -190,18 +190,18 @@ Rev the roles of $u,v\Rightarrow c_v\Ang{u,v}{_2}={\Ang{u,v}{_1}}=\overline{\Ang
 \Anchor{6B13}\ProblemN{13}{
 	\TextA{Supp $\Par{v_1,\dots,v_m}$ liney indep in $V.$ Show $\exists\,w\in V$ suth each $\Ang{w,\:\!v_j}>0.$}
 }Using induc on $m.$ (i) $m=1.$ Let $w=v_1.$ (ii) $m>1.$ Asum it holds for $\Par{m-1}.$\parSol{}
-By asum, $\exists\,w'\in\Span{v_1,\dots,v_{m-1}}$ suth each $\Ang{w',\:\!v_k}>0$ for $k\in\!\Bra{1,\dots,m-1}.$\parSol{}
+By asum, $\exists\,w'\in\Span{v_1,\dots,v_{m-1}}$ suth each $\Ang{w',\:\!v_k}>0$ for $k\in\;\!\!\Bra{1,\dots,m-1}.$\parSol{}
 Apply [6.31] to get the corres $\Par{e_1,\dots,e_m}.$ \;Let $w=w'+a\:\!e_m.$\parSol{}
-Becs each $\Ang{e_m,\:\!v_k}=0\Rightarrow\Ang{w,\:\!v_k}=\Ang{w',\:\!v_k}>0$ for $k\in\!\Bra{1,\dots,m-1}.$\parSol{}
+Becs each $\Ang{e_m,\:\!v_k}=0\Rightarrow\Ang{w,\:\!v_k}=\Ang{w',\:\!v_k}>0$ for $k\in\;\!\!\Bra{1,\dots,m-1}.$\parSol{}
 Note that $\Ang{e_m,\:\!v_m}\neq0.$ Hence $\exists\,a\in\Fbb,\:\Ang{w,\:\!v_m}=\Ang{w'+a\:\!e_m,\:\!v_m}=\Ang{w',\:\!v_m}+a\:\!\Ang{e_m,\:\!v_m}>0.$\PfEnd\vspace{4pt}\parSol{}
 \Or We show $\exists\,w\in V$ suth each $\Ang{w,\:\!v_j}=\Ang{v_j,\:\!w}=1.$ Let $U=\Span{v_1,\dots,v_m}.$\parSol{}
-Define $\varphi\in U\apostrophe$ by $\varphi\Par{v_j}=1.$ Becs $\exists\,!\,w\in U,$ each $\varphi\Par{v_j}=\Ang{v_j,\:\!w}.$\PfEnd
+Define $\varphi\in U\apostrophe$ by each $\varphi\Par{v_j}=1.$ \;Becs $\exists\,!\,w\in U,$ each $\varphi\Par{v_j}=\Ang{v_j,\:\!w}.$\PfEnd
 \SepLine
 
 \Anchor{6B4e19}\ProblemBnoor{4E 19}{
 	\TextA{Supp $B_V=\Par{v_1,\dots,v_n}.$ Prove $\exists\,B_V'=\Par{u_1,\dots,u_n}$ suth $\Ang{v_j,u_k}=\delta_{j,k}.$}
-}Let $\Par{\varphi_1,\dots,\varphi_n}$ be the corres dual bss of $B_V.$ By [6.42], $\exists\,!\,u_k\in V,\varphi_k\Par{v}=\Ang{v,u_k}$ for all $v\in V.$\parSol{}
-Then $\varphi_k\Par{v_j}=\delta_{j,k}=\Ang{v_j,u_k}.$ Supp $a_1u_1+\dots+a_nu_n=0\Rightarrow$ each $\Ang{v_j,0}=0=a_j.$\PfEnd
+}Let $\Par{\varphi_1,\dots,\varphi_n}$ be the corres dual bss of $B_V.$ \;Becs $\exists\,!\,u_k\in V,\varphi_k\Par{v}=\Ang{v,u_k}$ for all $v\in V.$\parSol{}
+Then $\varphi_k\Par{v_j}=\delta_{j,k}=\Ang{v_j,u_k}.$ \;Now let $a_1u_1+\dots+a_nu_n=0\Rightarrow$ each $\Ang{v_j,0}=0=a_j.$\PfEnd
 \SepLine
 
 \Anchor{6B16}\ProblemN{16}{
@@ -213,11 +213,10 @@ Supp $A=\Mt{T}$ up-trig wrto orthon $B_V=\Par{e_1,\dots,e_n}.$\parSol{}
 Then $\forall v=x_1e_1+\dots+x_ne_n\in V,\Dvert{v}{_V}=\Dvert{x}.$ Now we show $\Dvert{A^mx}\leqslant\epsilon\Dvert{x}$ for all $x\in\Cbb^{n,1}.$\parSol{}
 Define $D,N\in\Cbb^{n,n}$ by $D_{j,k}=\delta_{j,k}A_{j,k},\:N=A-D.$ Then $N$ is nilp with $N^p=0\neq N^{p-1}.$\parSol{}
 Let $\rho=\max\!\Bra{\aMid{D_{1,1}},\dots,\aMid{D_{n,n}}}\Rightarrow0\leqslant\rho<1,$ and each $\Dvert{D^{\,k}x}\leqslant\rho^{\,k}\Dvert{x}\leqslant\Dvert{x}.$\vspace{1pt}\parSol{}
-Let $M=\sum_{j=1}^n\sum_{k=1}^n\aMidsq{N_{j,k}}.$ We show $\Dvert{N^mx}\leqslant M^m\Dvert{x}$ by induc. (i) $m=1.$ By \Sbra{6.A \TIPSN{2}}.\vspace{1pt}\parSol{}
-(ii) $m>1.$ Asum it holds for $\Par{m-1}.$ Then $\Dvert{NN^{m-1}x}\leqslant M\cdot\Dvert{N^{m-1}x}\leqslant M^m\Dvert{x}.$\vspace{3pt}\parSol{}
+Let $M=\sum_{j=1}^n\sum_{k=1}^n\aMidsq{N_{j,k}}.$ \,{By \Sbra{6.A \TIPSN{2}}}, $\Dvert{Nx}\leqslant M\Dvert{x}\Rightarrow\Dvert{N^{k}x}\leqslant M\Dvert{N^{k-1}x}\leqslant M^k\Dvert{x}.$\vspace{1pt}\parSol{}
 Hence $\Dvert{A^{p+q}x}=\BigDvert{b_0D^{\,p+q}x+\dots+b_kD^{\,p+q-k}N^{k}x+\dots+b_{p-1}D^{\,q+1}N^{p-1}x}$\vspace{3pt}\parSol{}
 \Blind{So that $\Dvert{A^{p+q}x}$}$\leqslant\BigSbra{{b_0\rho^{\,p+q}+\dots+b_k\rho^{\,p+q-k}M^k+b_{p-1}\rho^{\,q+1}M^{p-1}}}\Dvert{x}.$\vspace{2pt}\parSol{}
-Where each $b_j=\mathC_{p+q}^j\leqslant\Par{p+q}{^j}$ for $j\in\!\Bra{0,\dots,p-1}\Rightarrow$ each $b_j\leqslant\Par{p+q}{^{p-1}}.$\vspace{1pt}\parSol{}
+Where each $b_j=\mathC_{p+q}^j\leqslant\Par{p+q}{^j}$ for $j\in\;\!\!\Bra{0,\dots,p-1}\Rightarrow$ each $b_j\leqslant\Par{p+q}{^{p-1}}.$\vspace{1pt}\parSol{}
 Let $\sigma=\max\!\Bra{1,M,\dots,M^{p-1}}.$ 又 $\max\!\Bra{\rho^{\,p+q},\dots,\rho^{\,q+1}}=\rho^{\,q+1}.$\parSol{}
 Now $\Dvert{A^{p+q}x}\leqslant\Par{p+q}{^{p-1}}\rho^{\,q+1}\sigma\Dvert{x}.$ \;Note that as $q\rightarrow\infty,$ \,$\Par{p+q}{^{p-1}}\rho^{\,q+1}\rightarrow0.$\PfEnd
 \SepLine
@@ -232,8 +231,7 @@ Now $\Dvert{A^{p+q}x}\leqslant\Par{p+q}{^{p-1}}\rho^{\,q+1}\sigma\Dvert{x}.$ \;N
 \Anchor{6CT1}\ProblemBX{\TipsN{1}}{
 	\TextA{Supp $V$ finide, $T\in\Lm{V},$ and all vecs in $\null T$ ortho to all vecs in $\range T.$}
 	\TextA{Prove $\Par{\null T}{^\perp}=\range T.$}
-}Note that $\range T\subseteq\Par{\null T}{^\perp}=\Bra{v\in V:v\text{ ortho to all vecs in }\null T}.$\parSol{}
-Then becs $\null T\cap\range T=\zeroSubs\Rightarrow V=\null T\oplus\range T.$ Now by \Sbra{1.C \TIPSN{1}}.\parSol{}
+}Becs $\range T\subseteq\Par{\null T}{^\perp}=\Bra{v\in V:v\text{ ortho to all vecs in }\null T}.$ 又 $\null T\cap\range T=\zeroSubs.$\PfEnd\parSol{}
 \Or $\forall v\in\Par{\null T}{^\perp},\exists\,!\,\Par{u,w}\in\null T\times\range T,\Ang{u+w,u}=\Ang{u,u}=0\Rightarrow v\in\range T.$\PfEnd
 \SepLine
 

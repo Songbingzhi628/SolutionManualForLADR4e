@@ -281,7 +281,7 @@ Note that $a_1\Par{v_1+w}+\dots+a_m\Par{v_m+w}=0\Rightarrow a_1 v_1+\dots+a_m v_
 Then $a_1+\dots+a_m\neq 0$, for if not, $a_1 v_1+\dots+a_m v_m=0$ while $a_i\neq 0$ for some $i$, ctradic.\par\quad
 \Or We prove the ctrapos: Supp $w\not\in\Span{v_1,\dots,v_m}.$ Then $a_1+\dots+a_m=0.$\par\quad
 Thus $a_1v_1+\dots+a_mv_m=0\Rightarrow a_1=\dots=a_m=0.$ Hence $\BigPar{v_1+w,\dots,v_m+w}$ is liney indep.\PfEnd\vspace{2pt}\quad
-\Or $\exists\,j\in\!\Bra{1,\dots,m},v_j+w\in\Span{v_1+w,\dots,v_{j-1}+w}.$ If $j=1$ then $v_1+w=0$ and done.\par\quad
+\Or $\exists\,j\in\;\!\!\Bra{1,\dots,m},v_j+w\in\Span{v_1+w,\dots,v_{j-1}+w}.$ If $j=1$ then $v_1+w=0$ and done.\par\quad
 If $j\geqslant 2,$ then $\exists\,a_i\in\Fbb,v_j+w=a_1\Par{v_1+w}+\dots+a_{j-1}\Par{v_{j-1}+w}\Longleftrightarrow v_j+\lambda w=a_1 v_1+\dots+a_{j-1}v_{j-1}.$\par\quad
 Where $\lambda=1-\Par{a_1+\dots+a_{j-1}}.$ Note that $\lambda\neq 0,$ for if not, $v_j+\lambda w=v_j\in\Span{v_1,\dots,v_{j-1}},$ ctradic.\par\quad
 Now $w=\lambda^{-1}\Par{a_1 v_1+\dots+a_{j-1}v_{j-1}-v_j}\Rightarrow w\in\Span{v_1,\dots,v_m}.$\PfEnd
@@ -350,7 +350,7 @@ Consider other $\Fbb.$ Note that this $\Fbb$ contains at least and strictly more
 %\SepLine
 
 \Anchor{2B4e9}\ProblemBnoor{{4E 9}}{
-	\TextA{Supp $\Par{v_1,\dots,v_m}$ is a list in $V$. For $k\in\!\Bra{1,\dots,m}$, let $w_k=v_1+\dots+v_k.$}
+	\TextA{Supp $\Par{v_1,\dots,v_m}$ is a list in $V$. For $k\in\;\!\!\Bra{1,\dots,m}$, let $w_k=v_1+\dots+v_k.$}
 	\TextA{Show [P] $B_V=\Par{v_1,\dots,v_m}\Longleftrightarrow B_V=\Par{w_1,\dots,w_m}.$ [Q]}
 }\NOTICE that $B_U=\Par{u_1,\dots,u_n}\Longleftrightarrow\forall u\in U,\exists\,!\,a_i\in\Fbb,u=a_1 u_1+\dots+a_n u_n.$\par\quad
 $P\Rightarrow Q:\forall v\in V,\exists\,!\,a_i\in\Fbb,\;v=a_1 v_1+\dots+a_m v_m\Rightarrow v=b_1 w_1+\dots+b_m w_m,\exists\,!\,b_k=a_k-a_{k+1},b_m=a_m.$\vspace{2pt}\par\quad
@@ -472,7 +472,7 @@ Hence $\bigcap\limits_{i=1}^{n-m}U_i\subseteq U.$\PfEnd
 }For each $V_{\!i}\,,$ let $B_{V_{\!i}}=\mE_i.$ Then $V_{\!1}+\dots+V_{\!m}=\Span[\BigPar]{\mE_1\cup\cdots\cup \mE_m};\,\,\,\dim V_{\!i}=\card\mE_i.$\par\quad
 Now $\dim\!\Par{V_{\!1}+\dots+V_{\!m}}=\dim\Span[\BigPar]{\mE_1\cup\cdots\cup \mE_m}\leqslant\Card\BigPar{\mE_1\cup\cdots\cup \mE_m}\leqslant\card \mE_1+\cdots+\card \mE_m.$\par\vspace{2pt}\Anchor{2C16}
 \ACoro $V_{\!1}+\dots+V_{\!m}$ is direct\parCor
-$\Longleftrightarrow$ For each $k\in\!\Bra{1,\dots,m-1},$ $\BigPar{V_{\!1}\oplus\dots\oplus V_{\!k}}\cap V_{k+1}=\zeroSubs,\BigPar{\mE_1\cap\dots\cap\mE_{k-1}}\cap\mE_k=\emptySet$\parCor
+$\Longleftrightarrow$ For each $k\in\;\!\!\Bra{1,\dots,m-1},$ $\BigPar{V_{\!1}\oplus\dots\oplus V_{\!k}}\cap V_{k+1}=\zeroSubs,\BigPar{\mE_1\cap\dots\cap\mE_{k-1}}\cap\mE_k=\emptySet$\parCor
 $\Longleftrightarrow\dim\Span[\BigPar]{\mE_1\cup\dots\cup\mE_m}=\Card\BigPar{\mE_1\cup\dots\cup\mE_m}=\card\mE_1+\dots+\card\mE_m$\parCor
 $\Longleftrightarrow \dim\!\Par{V_{\!1}\oplus\dots\oplus V_{\!m}}=\dim V_{\!1}+\dots+\dim V_{\!m}.$\PfEnd
 \SepLine
@@ -654,7 +654,7 @@ Let $\Par{v_1,Tv_1}$ be liney indep in $V$ as real vecsp. Let $v_2\not\in\Span{v
 %	\TextA{Supp $2\leqslant\dim W=m\leqslant\dim V$, if $V$ is finide.}
 %	\TextA{Show $U=\Bra{T\in\Lm{V,W}:T\text{ is not surj}}$ is not a subsp of $\Lm{V,W}$.}
 %}{\tgsl The set of all surj $T\in\Lm{V,W}$ is not a subsp either. \tgsc Using the generalized version of [3.5].}\par\quad
-%Let $\Par{v_1,\dots,v_n}$ be liney indep in $V$, $\Par{w_1,\dots,w_m}$ be a bss of $W$. \Sbra{  $n\in\!\Bra{m,m+1,\dots}$; $2\leqslant m\leqslant n.$ }\par\quad
+%Let $\Par{v_1,\dots,v_n}$ be liney indep in $V$, $\Par{w_1,\dots,w_m}$ be a bss of $W$. \Sbra{  $n\in\;\!\!\Bra{m,m+1,\dots}$; $2\leqslant m\leqslant n.$ }\par\quad
 %Define $T_{\!1}\in\Lm{V,W}$ as $T_{\!1}:\,\,\,\,v_1\mapsto 0,$\qquad$v_2\mapsto w_2,$\qquad$v_j\mapsto w_j,$\qquad$v_{m+i}\mapsto 0.$\par\quad
 %Define $T_{\!2}\in\Lm{V,W}$ as $T_{\!2}:\,\,\,\,v_1\mapsto w_1,$\,\,\,\quad$v_2\mapsto 0,$\,\,\,\qquad$v_j\mapsto w_j,$\qquad$v_{m+i}\mapsto 0.$\par\quad
 %\BigPar{ For each $j=2,\dots,m;\,\,i=1,\dots,n-m$, if $V$ is finide, othws let $i\in\Nbp.$ } Thus $T_{\!1}+T_{\!2}\not\in U.$\PfEnd\vspace{2pt}
@@ -688,15 +688,15 @@ Let $\Par{v_1,Tv_1}$ be liney indep in $V$ as real vecsp. Let $v_2\not\in\Span{v
 Then $\,f=y_1\,f_1+\dots+y_n\,f_n\in\Span{\,f_1,\dots,f_n}.$ 又 If $\,f=0,$ then each $y_k=0.$\vspace{3pt}\parSol{}
 (b) Let $S=\Bra{x_1,\cdots,x_n,\cdots}.$ Define each $\,f_i\Par{x_j}=\delta_{i,j}\Rightarrow f_i\in C_S.$ 又 $\Par{\,f_1,\cdots,f_n,\cdots}$ liney indep.\parSol{\Hb}
 \ACoro $S$ fini $\Longleftrightarrow\Fbb^S$ finide.\vspace{3pt}\parSol{}
-(c) Define $T:C_V\rightarrow V$ by $T\Par{f}=\sum\,f\Par{x}x.$ Note that $f\Par{x}\neq0$ for finily many $x\in V.$\parSol{\Hc}
+(c) Define $T:C_V\rightarrow V$ by $T\Par{\,f}=\sum\,f\Par{x}x.$ Note that $f\Par{x}\neq0$ for finily many $x\in V.$\parSol{\Hc}
 \uline{Becs for any $v\in V,\exists$ liney indep $\Par{v_1,\dots,v_n}$ suth $v=a_1v_1+\dots+a_nv_n.$} \Sbra{{\FontSmall\tgsl See higher courses}}\parSol{\Hc}
-Define each $\:\!f\Par{v_k}=a_k$ and $f\Par{x}=0$ for $x\not\in\!\Bra{v_1,\dots,v_n}.$ Then $T\Par{\:\!f}=v.$\PfEnd
+Define each $\:\!f\Par{v_k}=a_k$ and $f\Par{x}=0$ for $x\not\in\;\!\!\Bra{v_1,\dots,v_n}.$ Then $T\Par{\,f}=v.$\PfEnd
 \SepLine
 
 %\ProblemN{\Anchor{3A12}{12}}{
 %	\TextA{Supp non0 $V$ is finide and $W$ is infinide. Prove $\Lm{V,W}$ is infinide.}
 %}Let $B_V=\Par{v_1,\dots,v_n}.$ Let $\Par{w_1,\dots,w_m}$ be liney indep in $W$ for any $m\in\Nbp.$\par\vspace{-6pt}\quad
-%Define $T_{x,y}:V\rightarrow W$ by \,$T_{x,y}\Par{v_z}=\delta_{z,x} w_y$, $\forall x\in\!\Bra{1,\dots,n},y\in\!\Bra{1,\dots,m}$, \,where $\delta_{z,x}=\MathLeftBrace{l}{
+%Define $T_{x,y}:V\rightarrow W$ by \,$T_{x,y}\Par{v_z}=\delta_{z,x} w_y$, $\forall x\in\;\!\!\Bra{1,\dots,n},y\in\;\!\!\Bra{1,\dots,m}$, \,where $\delta_{z,x}=\MathLeftBrace{l}{
 %	0,\quad z\neq x,\\
 %	1,\quad z=x.}$\vspace{-5pt}\par\quad
 %{\normalsize$\forall v=\sum_{i=1}^n a_iv_i,\;u=\sum_{i=1}^n b_iv_i,\;\lambda\in\Fbb,T_{x,y}\Par{v+\lambda u}=\Par{a_x+\lambda b_x}w_y=T_{x,y}\Par{v}+\lambda T_{x,y}\Par{u}.$}\vspace{2pt}\par\quad
@@ -709,7 +709,7 @@ Define each $\:\!f\Par{v_k}=a_k$ and $f\Par{x}=0$ for $x\not\in\!\Bra{v_1,\dots,
 	\TextA{Supp $\Par{v_1,\dots,v_m}$ is linely dep in $V$ and $W\neq\zeroSubs$.}
 	\TextA{Prove $\exists\,w_1,\dots,w_m\in W,\not\exists\,T\in\Lm{V,W}$ suth $Tv_k=w_k,\forall k = 1,\dots,m$.}
 }\par\quad
-We prove by ctradic. By liney dep lemma, $\exists\,j\in\!\Bra{1,\dots,m},v_j\in\Span{v_1,\dots,v_{j-1}}$.\par\quad
+We prove by ctradic. By liney dep lemma, $\exists\,j\in\;\!\!\Bra{1,\dots,m},v_j\in\Span{v_1,\dots,v_{j-1}}$.\par\quad
 Supp $a_1 v_1+\dots+a_m v_m=0,$ where $a_j\neq 0.$ \;Now let $w_j\neq 0$, while $w_1=\dots=w_{j-1}=w_{j+1}=w_m=0.$\par\quad
 Define $T\in\Lm{V,W}$ with each $Tv_k=w_k$. Then $T\BigPar{a_1 v_1+\dots+a_m v_m}=0=a_1 w_1+\dots+a_m w_m.$\par\quad
 And \,$0=a_j w_j$ while $a_j\neq 0$ and $w_j\neq 0.$ Ctradic.\PfEnd\vspace{4pt}\quad
@@ -744,8 +744,8 @@ Define $R_{x,y}\in\Lm{V}:\,v_x\mapsto v_y,\;v_z\mapsto 0\,\Par{z\neq x}$. \Or {$
 Then $\BigPar{R_{1,1}+\dots+R_{n,n}}v_j=v_j\Rightarrow\sum_{r=1}^n R_{r,r}=I\Rightarrow\Lm{V}\ni T=I\circ T=T\circ I\in\mE.$\par\quad
 \Or Let each $Tv_j=w_j=A_{1,j}v_1+\dots+A_{n,j}v_n\Rightarrow T=\sum_{x=1}^n\sum_{y=1}^nA_{y,x}R_{x,y}\in\mE.$  Now we prove the asum.\vspace{2pt}\par\quad
 Supp $Sv_i\neq 0$ and $Sv_i=a_1 v_1+\dots+a_n v_n$, where $a_k\neq 0.$ We show $R_{k,y}SR_{x,i}=a_k R_{x,y}\in\mE.$\par\quad
-Becs $SR_{x,i}=a_1R_{x,1}+\dots+a_kR_{x,k}+\dots+a_nR_{x,n}\in\mE,$ for all $x\in\!\Bra{1,\dots,n}.$\par\quad
-\Or $\Par{R_{k,y}S}{v_i}=a_k v_y\Rightarrow\BigPar{\Par{R_{k,y}S}\circ R_{x,i}}{v_z}=\delta_{z,x}\Par{a_k v_y},$ for all $y\in\!\Bra{1,\dots,n}.$ Immed.\PfEnd\vspace{3pt}
+Becs $SR_{x,i}=a_1R_{x,1}+\dots+a_kR_{x,k}+\dots+a_nR_{x,n}\in\mE,$ for all $x\in\;\!\!\Bra{1,\dots,n}.$\par\quad
+\Or $\Par{R_{k,y}S}{v_i}=a_k v_y\Rightarrow\BigPar{\Par{R_{k,y}S}\circ R_{x,i}}{v_z}=\delta_{z,x}\Par{a_k v_y},$ for all $y\in\;\!\!\Bra{1,\dots,n}.$ Immed.\PfEnd\vspace{3pt}
 \AComm Not true if infinide. Consider the subsp $X=\Bra{T\in\Lm{V}:\range T\text{ is finide}}.$\par\quad
 For any $T\in X,\;\forall E\in\Lm{V},\range TE\subseteq\range T;\;\range ET=\Span{Ew_1,\dots,Ew_n}\Rightarrow TE,ET\in X.$
 \SepLine
@@ -754,7 +754,7 @@ For any $T\in X,\;\forall E\in\Lm{V},\range TE\subseteq\range T;\;\range ET=\Spa
 	\TextA{Supp $\dim V=n.$ Supp $\varphi:\Lm{V}\rightarrow\Fbb$ is liney.}
 	\TextA{Show if $\forall S,T\in\Lm{V},\varphi\Par{ST} = \varphi\Par{S}\cdot\varphi\Par{T}$, then $\varphi = 0$.}
 }Using notats in (4E 17) and {\NOTEFOR} [3.60].\parSol{\vspace{2pt}}
-Supp $\varphi\neq 0\Rightarrow\exists\,i,j\in\!\Bra{1,\dots,n},\,\varphi\Par{R_{i,j}}\neq 0$. \envFontLarge Becs {\Large\vspace{4pt}$R_{i,j}=R_{x,j}\circ R_{i,x},\,\,\forall x=1,\dots,n$}\parSol{}
+Supp $\varphi\neq 0\Rightarrow\exists\,i,j\in\;\!\!\Bra{1,\dots,n},\,\varphi\Par{R_{i,j}}\neq 0$. \envFontLarge Becs {\Large\vspace{4pt}$R_{i,j}=R_{x,j}\circ R_{i,x},\,\,\forall x=1,\dots,n$}\parSol{}
 {\Large\vspace{4pt}$\Rightarrow\varphi\Par{R_{i,j}}=\varphi\Par{R_{x,j}}\cdot\varphi\Par{R_{i,x}}\neq 0\Rightarrow\varphi\Par{R_{x,j}}\neq 0$ {\large and} $\varphi\Par{R_{i,x}}\neq 0.$}\parSol{}
 {\vspace{4pt}Again, becs {\Large$R_{i,x}=R_{y,x}\circ R_{i,y},\,\,\forall y=1,\dots,n.$} \;Thus {\Large$\varphi\Par{R_{y,x}}\neq 0,\;\forall x,y=1,\dots,n$}.}\parSol{}
 {Let $k\neq i,j\neq l$ and then {\Large\vspace{4pt}$\varphi\Par{R_{i,j}\circ R_{l,k}}=\varphi\Par{R_{l,k}\circ R_{i,j}}=\varphi\Par{0}=0=\varphi\Par{R_{l,k}}\cdot\varphi\Par{R_{i,j}}$}}\parSol{}
@@ -875,7 +875,7 @@ Let $B_M=\Par{v_1-v_2,v_3},B_N=\Par{v_2}.$ Then $\range T\mmid_M=\Span{w_1,w_2},
 	\TextA{{\large$U\cap\null T$}${}=\null T\mmid_U=\zeroSubs,\;\range T={}${\FontNorm$\Bra{Tu:u\in U}$}${}=\range T\mmid_U.$}
 	\TextA{\FontNorm Which is equiv to $T\mmid_U:U\rightarrow\range T$ being iso.}
 }By [2.34] \BigPar{note that $V$ can be infinide}, $\exists$ subsp $U$ of $V$ suth $V=U\oplus\null T$.\parSol{}
-$\forall v\in V,\exists\,!\,w\in\null T,u\in U, v=w+u.$ Then $Tv=T\Par{w+u}=Tu\in\!\Bra{Tu:u\in U}.$\PfEnd\vspace{6pt}
+$\forall v\in V,\exists\,!\,w\in\null T,u\in U, v=w+u.$ Then $Tv=T\Par{w+u}=Tu\in\;\!\!\Bra{Tu:u\in U}.$\PfEnd\vspace{6pt}
 \ACoro {\FontLarge\tgsl[P] \quad{$T\mmid_U:U\rightarrow\range T$ is iso $\Longleftrightarrow U\oplus\null T=V.$}\quad [Q]}\vspace{2pt}\parCor
 We have shown $Q\Rightarrow P.$ Now we show $P\Rightarrow Q$ to complete the proof.\parCor
 $\forall v\in V,Tv\in\range T=\range T\mmid_U\Rightarrow \exists\,!\,u\in U,Tv=Tu\Rightarrow v-u\in\null T.$\parCor Thus $v=\Par{v-u}+u\in U+\null T.$ 又 $U\cap\null T=\null T\mmid_U.$\PfEnd\vspace{4pt}\parCor
@@ -1099,7 +1099,7 @@ $}\qquad\qquad\qquad\quad$\FontSmall$\hText{U_1\xlongrightarrow[S]{inv}\range S\
 \uline{Let $S\Par{u_i}=Tv_i$ for each $Tv_i.$} \;Define $E$ with each $Ev_i=u_i,Ex=0$ for $x\in\null T.$\PfEnd\vspace{4pt}\quad
 \AComm \Sbra[3pt]{{\tgsl Req $V$ Finide}} \;Note that $\dim U_2\leqslant\dim U_1\Longrightarrow\dim\null T=p\geqslant q=\dim\null S.$\parCom\quad
 Let $B_{\null T}=\Par{x_1,\dots,x_p},B_{\null S}=\Par{y_1,\dots,y_q}.$ Redefine $E:v_i\mapsto u_i,\;x_k\mapsto y_k,\;x_j\mapsto 0,$\parCom\quad
-for each $i\in\!\Bra{1,\dots,\dim U_2},k\in\!\Bra{1,\dots,\dim\null S}=K,j\in\!\Bra{1,\dots,\dim\null T}\Backslash[\Big]K.$\parCom\quad
+for each $i\in\;\!\!\Bra{1,\dots,\dim U_2},k\in\;\!\!\Bra{1,\dots,\dim\null S}=K,j\in\;\!\!\Bra{1,\dots,\dim\null T}\Backslash[\Big]K.$\parCom\quad
 Note that $\Par{u_1,\dots,u_n}$ is liney indep. Let $X=\Span{x_1,\dots,x_q}\oplus\Span{v_1,\dots,v_n}.$\parCom\quad
 Now $E\mmid_X$ is inje, but cannot be re-extend to inv $E\in\Lm{V,Y}$ suth $T=SE.$\par\Anchor{3D5}\vspace{4pt}\quad
 \ACoro \Sbra[3pt]{{\tgsl Req $V$ Finide}} \;If $\range T=\range S,$ then $\dim\null T=\dim\null S=p.$\parCor\quad
@@ -1113,8 +1113,8 @@ While $\range T=\range S\notRightarrow\null T,\null S$ iso. \;\AExa Backwd shift
 \Anchor{3D6}\ProblemBnoor{3.D.6}{
 	\TextA{Supp $V,W$ are finide, and $S,T\in\Lm{V,W},$ and $\dim\null S=\dim\null T=n.$}
 	\TextA{Prove $S=E_2 T E_1,\exists$ inv $ E_1\in\Lm{V}, E_2\in\Lm{W}.$}
-}$\text{Define}\;\,E_1:\,\,\,\,\, v_i\mapsto r_i\,\,;\quad u_j\mapsto s_j;$\quad for each $i\in\!\Bra{1,\dots,m},j\in\!\Bra{1,\dots,n}.$\parSol{}
-$\text{Define}\;\,E_2:Tv_i\mapsto Sr_i\,\,;\;\;x_j\mapsto y_j;$\quad for each $i\in\!\Bra{1,\dots,m},j\in\!\Bra{1,\dots,n}.$
+}$\text{Define}\;\,E_1:\,\,\,\,\, v_i\mapsto r_i\,\,;\quad u_j\mapsto s_j;$\quad for each $i\in\;\!\!\Bra{1,\dots,m},j\in\;\!\!\Bra{1,\dots,n}.$\parSol{}
+$\text{Define}\;\,E_2:Tv_i\mapsto Sr_i\,\,;\;\;x_j\mapsto y_j;$\quad for each $i\in\;\!\!\Bra{1,\dots,m},j\in\;\!\!\Bra{1,\dots,n}.$
 Where:\parSol{\vspace{2pt}}
 $\MathLeftrightMid{l}{$
 	Let $B_{\range T}=\Par{Tv_1,\dots,Tv_m};\;B_{\range S}=\Par{Sr_1,\dots,Sr_m}.\\ $
@@ -1236,9 +1236,9 @@ For Exe (10), $\BigPar{AC}{_{j,\cdot}}=\BigSbra{\BigBigPar{\BigPar{AC}{^t}}{_{\c
 	\PrePa\TextB{Supp $\col A=\Span[\BigPar]{A_{\cdot,1},\cdots,A_{\cdot,n}}\subseteq\Fbb^{m,1},\dim\col A=c,\text{ the col rank}.$ Let $p=c.$\vspace{3pt}}
 	\PrePb\TextB{Supp $\row A=\Span[\BigPar]{A_{1,\cdot},\cdots,A_{m,\cdot}}\subseteq\Fbb^{1,n},\dim\row A=r,\text{ the row rank}.$ Let $p=r.$\vspace{3pt}}
 }Using [4E 3.51]. Notice that $A\neq 0\Rightarrow c,r\geqslant 1.$\vspace{2pt}\par\quad
-(a) Reduce to bss $B_C=\BigPar{C_{\cdot,1},\cdots,C_{\cdot,c}},$ forming $C\in\Fbb^{m,c}$. Then $\forall k\in\!\Bra{1,\dots,n},$\vspace{2pt}\par\quad\Ha
+(a) Reduce to bss $B_C=\BigPar{C_{\cdot,1},\cdots,C_{\cdot,c}},$ forming $C\in\Fbb^{m,c}$. Then $\forall k\in\;\!\!\Bra{1,\dots,n},$\vspace{2pt}\par\quad\Ha
 $A_{\cdot,k}=R_{1,k}C_{\cdot,1}+\dots+R_{c,k}C_{\cdot,c}=\BigPar{CR}{_{\cdot,k}}\;,\exists\,!\,R_{1,k},\cdots,R_{c,k}\in\Fbb,$ forming $R\in\Fbb^{c,n}.$ Thus $A=CR.$\vspace{4pt}\par\quad
-(b) Reduce to bss $B_R=\BigPar{R_{1,\cdot},\cdots,R_{r,\cdot}},$ forming $R\in\Fbb^{r,n}$. Then $\forall j\in\!\Bra{1,\dots,m},$\vspace{2pt}\par\quad\Hb
+(b) Reduce to bss $B_R=\BigPar{R_{1,\cdot},\cdots,R_{r,\cdot}},$ forming $R\in\Fbb^{r,n}$. Then $\forall j\in\;\!\!\Bra{1,\dots,m},$\vspace{2pt}\par\quad\Hb
 $A_{j,\cdot}=C_{j,1}R_{1,\cdot}+\dots+C_{j,r}R_{r,\cdot}=\BigPar{CR}{_{j,\cdot}}\;,\exists\,!\,C_{j,1},\dots,C_{j,r}\in\Fbb,$ forming $C\in\Fbb^{m,r}.$ Thus $A=CR.$\PfEnd
 \SepLine
 
@@ -1269,8 +1269,8 @@ Thus (a) $\dim\row A=r\leqslant c=\dim\col A,$ and (b) $\dim\col A=c\leqslant r=
 Let $\Par{u_1,\dots,u_n}$ be a bss of $V$. Denote $\Mt[\BigPar]{T,\Par{u_1,\dots,u_n},B_W}$ by $A.$\par\quad
 If $A_{1,\cdot}=0,$ then $B_V=\Par{u_1,\dots,u_n}$ and done. Othws, supp $A_{1,k}\neq 0.$\par\quad
 Let $v_1=\Frac{u_k}{A_{1,k}}\Rightarrow Tv_1=1w_1+\Frac{A_{2,k}}{A_{1,k}}w_2+\dots+\Frac{A_{n,k}}{A_{1,k}}w_n.$\;$\MathLeftMid{l}{$
-	\!\!Let $v_{j+1}=u_{j}-A_{1,j}v_1$ for each $j\in\!\Bra{1,\dots,k-1}.\\$
-	\!\!Let $v_i=u_i-A_{1,i} v_1$ for $i\in\!\Bra{k+1,\dots,n}.}$\vspace{4pt}\par\quad
+	\!\!Let $v_{j+1}=u_{j}-A_{1,j}v_1$ for each $j\in\;\!\!\Bra{1,\dots,k-1}.\\$
+	\!\!Let $v_i=u_i-A_{1,i} v_1$ for $i\in\;\!\!\Bra{k+1,\dots,n}.}$\vspace{4pt}\par\quad
 \NOTICE that $Tu_i=A_{1,i}w_1+\dots+A_{n,i}w_n.$ 又 Each $u_i\in\Span{v_1,\dots,v_n}=V.$ Let $B_V=\Par{v_1,\dots,v_n}.$\PfEnd\vspace{4pt}\quad
 \Or Using Exe (4). Let $B_{W\apostrophe}$ be the $B_V.$ Now $\exists\,B_{V\apostrophe}$ suth $\Mt{T\apostrophe,B_{W\apostrophe}\,,B_{V\apostrophe}}{_{\cdot,1}}={\small\begin{pmatrix}1&0&\cdots&0\end{pmatrix}}{^t}$ or ${\small\begin{pmatrix}0&\cdots&0\end{pmatrix}}{^t}.$\par\quad
 Which is equiv to $\exists\,B_V$ \Sbra{Using (3.F.31)} suth $\Mt{T,B_V,B_W}{_{1,\cdot}}={\small\begin{pmatrix}1&0&\cdots&0\end{pmatrix}}$ or ${\small\begin{pmatrix}0&\cdots&0\end{pmatrix}}.$\PfEnd
@@ -1295,7 +1295,7 @@ Supp $T\neq 0,$ and $v\in V\nonzero.$ Asum $\Par{v,Tv}$ is liney indep.\vspace{1
 Extend $\Par{v,Tv}$ to $B_V=\Par{v,Tv,u_3,\dots,u_n}.$ Let $B=\Mt{T,B_V}.$\vspace{1pt}\parSol{}
 $\Rightarrow Tv=B_{1,1} v+B_{2,1}\Par{Tv}+B_{3,1}u_3+\dots+B_{n,1}u_n\Rightarrow B_{2,1}=1,B_{i,1}=0,\,\forall i\neq 2.$\vspace{1pt}\parSol{}
 By asum, $A=\Mt{T,B_V'}=B,\forall B_V'=\Par{v,w_2,\dots,w_{n}}$. Then $A_{2,1}=1,A_{i,1}=0,\forall i\neq 2.$\parSol{}
-$\Rightarrow Tv=w_2,$ which is not true if $w_2=u_3,\;w_3=Tv,\;w_j=u_j,\forall j\in\!\Bra{4,\dots,n}.$ Ctradic.\parSol{}
+$\Rightarrow Tv=w_2,$ which is not true if $w_2=u_3,\;w_3=Tv,\;w_j=u_j,\forall j\in\;\!\!\Bra{4,\dots,n}.$ Ctradic.\parSol{}
 Hence $\Par{v,Tv}$ is linely dep $\Rightarrow \forall v\in V,\exists\,\lambda_v\in\Fbb,Tv=\lambda_v v.$\parSol{}
 Now we show $\lambda_v$ is indep of $v$, that is, for all disti $v,w\in V\nonzero,\lambda_v=\lambda_w.$\parSol{}
 \!\!\!\!$\MathRightBrace{l}{
@@ -1303,12 +1303,12 @@ Now we show $\lambda_v$ is indep of $v$, that is, for all disti $v,w\in V\nonzer
 	\Par{v,w}$ linely dep, $w=c v$ $\Rightarrow Tw=\lambda_w w=\lambda_w cv=c\lambda_v v=T\Par{cv}
 }\Rightarrow T=\lambda I.$\PfEnd\vspace{10pt}\quad
 \Or Let $A=\Mt{T,B_V},$ where $B_V=\Par{u_1,\dots,u_m}$ is arb.\vspace{1pt}\par\quad
-Fix one $B_V=\Par{v_1,\dots,v_m}$ and then $\Par{v_1,\dots,\frac{\;1\;}{2}v_k,\dots,v_m}$ is also a bss for any given $k\in\!\Bra{1,\dots,m}.$\vspace{1pt}\par\quad
+Fix one $B_V=\Par{v_1,\dots,v_m}$ and then $\Par{v_1,\dots,\frac{\;1\;}{2}v_k,\dots,v_m}$ is also a bss for any given $k\in\;\!\!\Bra{1,\dots,m}.$\vspace{1pt}\par\quad
 Fix one $k.$ Now we have $T\!\Par{\frac{\;1\;}{2}v_k}=A_{1,k}v_1+\dots+A_{k,k}\Par{\frac{\;1\;}{2}v_k}+\dots+A_{m,k}v_m$\vspace{1pt}\par\quad
 $\Rightarrow Tv_k=2A_{1,k}v_1+\dots+A_{k,k}v_k+\dots+2A_{m,k}v_m=A_{1,k}v_1+\dots+A_{k,k}v_k+\dots+A_{m,k}v_m.$\vspace{1pt}\par\quad
-Then $A_{j,k}=2A_{j,k}\Rightarrow A_{j,k}=0$ for all $j\neq k.$ Thus $Tv_k=A_{k,k}v_k,\forall k\in\!\Bra{1,\dots,m}.$\vspace{1pt}\par\quad
+Then $A_{j,k}=2A_{j,k}\Rightarrow A_{j,k}=0$ for all $j\neq k.$ Thus $Tv_k=A_{k,k}v_k,\forall k\in\;\!\!\Bra{1,\dots,m}.$\vspace{1pt}\par\quad
 Now we show $A_{k,k}=A_{j,j}$ for all $j\neq k.$ Choose $j,k$ suth $j\neq k.$\vspace{1pt}\par\quad
-Consider $B_V'=\Par{v\apostrophe{\hspace{-3pt}_1},\dots,v\apostrophe{\hspace{-3pt}_j},\dots,v\apostrophe{\hspace{-3pt}_k},\dots,v\apostrophe_{\hspace{-3pt}_m}},$ where $v\apostrophe{\hspace{-3pt}_j}=v_k,\,\,v\apostrophe{\hspace{-3pt}_k}=v_j$ and $v\apostrophe{\hspace{-3pt}_i}=v_i$ for all $i\in\!\Bra{1,\dots,m}\Backslash[\Big]\Bra{\,j,k}.$\vspace{1pt}\par\quad
+Consider $B_V'=\Par{v\apostrophe{\hspace{-3pt}_1},\dots,v\apostrophe{\hspace{-3pt}_j},\dots,v\apostrophe{\hspace{-3pt}_k},\dots,v\apostrophe_{\hspace{-3pt}_m}},$ where $v\apostrophe{\hspace{-3pt}_j}=v_k,\,\,v\apostrophe{\hspace{-3pt}_k}=v_j$ and $v\apostrophe{\hspace{-3pt}_i}=v_i$ for all $i\in\;\!\!\Bra{1,\dots,m}\Backslash[\Big]\Bra{\,j,k}.$\vspace{1pt}\par\quad
 Now $T\Par{v\apostrophe{\hspace{-3pt}_k}}=A_{1,k}v\apostrophe{\hspace{-3pt}_1}+\dots+A_{k,k}v\apostrophe{\hspace{-3pt}_k}+\dots+A_{m,k}v\apostrophe{\hspace{-3pt}_m}=A_{k,k}v\apostrophe{\hspace{-3pt}_k}=A_{k,k}v_j,$ while $T\Par{v\apostrophe{\hspace{-3pt}_k}}=T\Par{v_j}=A_{j,j}v_j.$\PfEnd
 %\Or ??? \Sbra{ There must be another solution using theorems and facts given in (3.D). }\par
 \SepLine
@@ -1321,13 +1321,13 @@ Note that $\Mt{T^x S^y}=\Mt{T}{^x}\Mt{S}{^y};\;\Mt{T^x+S^y}=\Mt{T}{^x}+\Mt{S}{^y
 Then $\Mt[\BigPar]{ p\Par{T_{\!1},\dots,T_{\!n}}}={\Mt[\BigBigPar]{{\sum_{k_1,\dots,k_n}\!\!\alpha_{k_1,\dots,k_n}\prod_{i=1}^n T_{\!i}^{k_i}}}}$\parSol{\vspace{4pt}}
 \Blind{Then $\Mt[\BigPar]{ p\Par{T_{\!1},\dots,T_{\!n}}}$} $={\sum_{k_1,\dots,k_n}\!\!\alpha_{k_1,\dots,k_n}\prod_{i=1}^n\Mt[\BigPar]{T_{\!i}^{k_i}}}={p\BigBigPar{{\Mt{T_{\!1}},\dots,\Mt{T_{\!n}}}}}.$\PfEnd\vspace{6pt}
 \BulletPointX\ACoro Supp $\tau$ is an algebraic property. Then $\tau$ holds for liney maps $\Longleftrightarrow \tau$ holds for matrices.\parCor{\IndentB}
-Supp $\alpha_1,\dots,\alpha_n$ are disti with each $\alpha_k\in\!\Bra{1,\dots,n}.$\parCor{\IndentB}
+Supp $\alpha_1,\dots,\alpha_n$ are disti with each $\alpha_k\in\;\!\!\Bra{1,\dots,n}.$\parCor{\IndentB}
 Now $p\Par{T_{\!1},\dots,T_{\!n}}=p\Par{T_{\alpha_1},\dots,T_{\alpha_n}}\Longleftrightarrow p\BigBigPar[0pt]{{\Mt{T_{\!1}},\dots,\Mt{T_{\!n}}}}=p\BigBigPar[0pt]{{\Mt{T_{\alpha_1}},\dots,\Mt{T_{\alpha_n}}}}.$\SepLine
 \pagebreak
 
 \Anchor{3CT2}\ProblemBX{\TipsN{2}}{
 	\TextA{Supp $T\in\Lm{V,W},\;B_V=\Par{v_1,\dots,v_n},B_W=\Par{w_1,\dots,w_m}.$\vspace{-1pt}}
-	{\tgsl Let $L=\BigPar{Tv_{\:\!\!\alpha_1},\dots,Tv_{\:\!\!\alpha_k}},\;L_{\mM}=\BigPar{A_{\cdot,\,\alpha_1},\cdots,A_{\cdot,\,\alpha_k}},$ where each $\alpha_i\in\!\Bra{1,\dots,n}.$}\TextA{\vspace{1pt}}
+	{\tgsl Let $L=\BigPar{Tv_{\:\!\!\alpha_1},\dots,Tv_{\:\!\!\alpha_k}},\;L_{\mM}=\BigPar{A_{\cdot,\,\alpha_1},\cdots,A_{\cdot,\,\alpha_k}},$ where each $\alpha_i\in\;\!\!\Bra{1,\dots,n}.$}\TextA{\vspace{1pt}}
 	\PrePa\TextA{Show [P] $L$ is liney indep $\Longleftrightarrow L_{\mM}$ is liney indep. [Q]\vspace{2pt}}
 	\PrePb\TextA{Show [P] $\spn L=W\Longleftrightarrow\spn L_{\mM}=\Fbb^{m,1}.$ [Q]\hfill\FontNorm\Sbra{ Let $A=\Mt{T,B_V,B_W}.$\hspace{1pt}}\vspace{3pt}}
 }(a) Note that $\mM\!:\,Tv_k\rightarrow A_{\cdot,k}$ is iso. of $\spn L$ onto $\spn L_{\mM}.$ By (3.B.9).\parSol{}
@@ -1338,10 +1338,10 @@ Now $p\Par{T_{\!1},\dots,T_{\!n}}=p\Par{T_{\alpha_1},\dots,T_{\alpha_n}}\Longlef
 (a) $P\Rightarrow Q:$\,\;Supp $\;c_1A_{\cdot,{\alpha_1}}+\dots+c_kA_{\cdot,{\alpha_k}}=0.$ \;Let $v=c_1v_{\:\!\!\alpha_1}+\dots+c_kv_{\:\!\!\alpha_k}.$\par\quad\Ha
 \Blind{$Q\Rightarrow P:$\,\;}Then $Tv=\BigPar{c_1A_{1,\,{\alpha_1}}+\dots+c_kA_{1,\,{\alpha_k}}}w_1+\dots+\BigPar{c_1A_{m,\,{\alpha_1}}+\dots+c_kA_{m,\,{\alpha_k}}}w_m=0w_1+\dots+0w_m.$\par\quad\Ha
 \Blind{$Q\Rightarrow P:$\,\;}Now $c_1Tv_{\:\!\!\alpha_1}+\dots+c_kTv_{\:\!\!\alpha_k}=0.$ Then each $c_i=0\Rightarrow L_{\mM}$ liney indep.\vspace{4pt}\par\quad\Ha
-$Q\Rightarrow P:$\,\;Becs $c_1Tv_{\:\!\!\alpha_1}+\dots+c_kTv_{\:\!\!\alpha_k}=0.$ For each $i\in\!\Bra{1,\dots,m},\;c_1A_{i,\,{\alpha_1}}+\dots+c_kA_{i,\,{\alpha_k}}=0.$\par\quad\Ha
+$Q\Rightarrow P:$\,\;Becs $c_1Tv_{\:\!\!\alpha_1}+\dots+c_kTv_{\:\!\!\alpha_k}=0.$ For each $i\in\;\!\!\Bra{1,\dots,m},\;c_1A_{i,\,{\alpha_1}}+\dots+c_kA_{i,\,{\alpha_k}}=0.$\par\quad\Ha
 \Blind{$Q\Rightarrow P:$\,\;}Which is equiv to $c_1A_{\cdot,{\alpha_1}}+\dots+c_kA_{\cdot,{\alpha_k}}=0.$ \;Thus each $c_i=0\Rightarrow L$ liney indep.\par\vspace{4pt}\quad\Ha
 \Or\;$\exists\,A_{\cdot,{\alpha_j}}=c_1A_{\cdot,{\alpha_1}}+\dots+c_{j-1}A_{\cdot,{\alpha_{j-1}}}$\par\quad\Ha
-\Blind{\Or\;}$\Longleftrightarrow$ For each $i\in\!\Bra{1,\dots,m},\;A_{i,\,{\alpha_j}}=c_1A_{i,\,{\alpha_1}}+\dots+c_{j-1}A_{i,\,{\alpha_{j-1}}}$\par\quad\Ha
+\Blind{\Or\;}$\Longleftrightarrow$ For each $i\in\;\!\!\Bra{1,\dots,m},\;A_{i,\,{\alpha_j}}=c_1A_{i,\,{\alpha_1}}+\dots+c_{j-1}A_{i,\,{\alpha_{j-1}}}$\par\quad\Ha
 \Blind{\Or\;}$\Longleftrightarrow Tv_{\:\!\!\alpha_j}=A_{1,\,{\alpha_j}}w_1+\dots+A_{m,\,{\alpha_j}}w_m$\par\vspace{2pt}\quad\Ha
 \Blind{\Or\;}$\Blind{\Longleftrightarrow Tv_{\:\!\!\alpha_j}}=\BigPar{c_1A_{1,\,{\alpha_1}}+\dots+c_{j-1}A_{1,\,{\alpha_{j-1}}}}w_1+\dots+\BigPar{c_1A_{m,\,{\alpha_1}}+\dots+c_{j-1}A_{m,\,{\alpha_{j-1}}}}w_m$\par\vspace{2pt}\quad\Ha
 %\Blind{\Or}$\Blind{\Longleftrightarrow Tv_{\:\!\!\alpha_j}}=c_1\BigPar{A_{1,\,\alpha_1}w_1+\dots+A_{m,\alpha_1}w_m}+\dots+c_{j-1}\BigPar{A_{1,\,\alpha_{j-1}}w_1+\dots+A_{m,\alpha_{j-1}w_m}}$\par\quad\Ha
@@ -1380,7 +1380,7 @@ And (b*) $T$ is surj $\Longleftrightarrow\spn L=W\Longleftrightarrow\spn L_{\mM}
 %\SepLine
 
 %\ProblemN{\Anchor{3C15}{15}}{
-	%	\TextA{Supp $A\in\Fbb^{n,n},j,k\in\!\Bra{1,\dots,n}$. Show $\BigPar{A^3}_{j,k}=\sum_{p=1}^n \sum_{r=1}^n A_{j,p}A_{p,r}A_{r,k}$.\vspace{6pt}}
+	%	\TextA{Supp $A\in\Fbb^{n,n},j,k\in\;\!\!\Bra{1,\dots,n}$. Show $\BigPar{A^3}_{j,k}=\sum_{p=1}^n \sum_{r=1}^n A_{j,p}A_{p,r}A_{r,k}$.\vspace{6pt}}
 	%}\vspace{-6pt}\AlignEq{}{\BigPar{AAA}_{j,k} &= \BigPar{AA}_{j,\cdot}\hspace{1pt}A_{\cdot,k}=\textstyle\sum_{p=1}^n \BigPar{A_{j,p}A_{p,\cdot}}A_{\cdot,k}=\textstyle\sum_{p=1}^n \sum_{r=1}^n A_{j,p}A_{p,r}A_{r,k}.\hspace{60pt}\\
 	%	\text{\Or}\;\;\BigPar{AAA}_{j,k} &=\textstyle\sum_{r=1}^n\BigPar{AA}_{j,r}A_{r,k} =\textstyle\sum_{r=1}^n\XPar{\sum_{p=1}^n A_{j,p}A_{p,r}}\hspace{1pt}A_{r,k}\\&=\uline{\textstyle\sum_{r=1}^n\left[A_{j,1}\BigPar{A_{1,r}A_{r,k}}+\dots+A_{j,n}\BigPar{A_{n,r}A_{r,k}}\right]}\\&=\textstyle A_{j,1}\sum_{r=1}^n A_{1,r}A_{r,k}+\dots+A_{j,n}\textstyle\sum_{r=1}^n A_{n,r}A_{r,k}=\textstyle\sum_{p=1}^n \sum_{r=1}^n A_{j,p}A_{p,r}A_{r,k}.}\PfEnd[-25pt]
 %\SepLine
@@ -1720,7 +1720,7 @@ $\Phi\Par{T}=0\Longleftrightarrow\forall u\in U,Tu=0\Longleftrightarrow T\in\mE.
 Extend $S\in\Lm{U,W}$ to $T\in\Lm{V,W}\Rightarrow\Phi\Par{T}=S\in\range\Phi.$ Thus $\range\Phi=\Lm{U,W}.$\PfEnd\vspace{2pt}\parSol{}
 \Or Let $B_U=\Par{u_1,\dots,u_m},B_V=\BigPar{u_1,\dots,u_m,\dots,u_n},B_W=\Par{w_1,\dots,w_p}.$\parSol{}
 Define $E_{i,j}\in\Lm{V,W}:u_x\mapsto\delta_{i,x}w_j.$\vspace{-17pt}\parSol{}
-$\forall T\in\mE,k\in\!\Bra{1,\dots,m},TE_{k,k}=0\Rightarrow{\normalsize\Spn\underbrace{\begin{Bmatrix} \underset{\;,}{E_{1,1}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\underset{\!,}{E_{m,1}},\\[-2pt] \vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \,\vdots\\[-2pt] \overset{\;,}{E_{1,p}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\overset{\!\!,}{E_{m,p}}\end{Bmatrix}}_{=\:R}}\,\cap\,\mE=\zeroSubs$.\vspace{-32pt}\parSol{}
+$\forall T\in\mE,k\in\;\!\!\Bra{1,\dots,m},TE_{k,k}=0\Rightarrow{\normalsize\Spn\underbrace{\begin{Bmatrix} \underset{\;,}{E_{1,1}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\underset{\!,}{E_{m,1}},\\[-2pt] \vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \,\vdots\\[-2pt] \overset{\;,}{E_{1,p}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\overset{\!\!,}{E_{m,p}}\end{Bmatrix}}_{=\:R}}\,\cap\,\mE=\zeroSubs$.\vspace{-32pt}\parSol{}
 \hspace{-7pt}$\hText{$
 	又 $C=\Spn${\small$\begin{Bmatrix} \underset{\;,}{E_{m+1,1}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\underset{\!,}{E_{n,1}},\\[-2pt] \vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \,\vdots\\[-2pt] \overset{\;,}{E_{m+1,p}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\overset{\!\!,}{E_{n,p}}\end{Bmatrix}$}$\,\subseteq\mE.\\\;\\\;}$\vspace{-80pt}\par
 \hfill Now $\Lm{V,W}=\spn R\oplus C$\Blind{.\quad}\vspace{0pt}\par
@@ -1770,9 +1770,9 @@ Then $\range\psi\varphi=\Bra{X\in\Lm{\Fbb^{n,1},\range A}:X\mmid_{\null A^T}=0}$
 	\TextA{Supp $V$ is finide and non0 $S\in\Lm{V}$ suth $\forall T\in\Lm{V},ST=TS$. Prove $\exists\,\lambda\in\Fbb,S=\lambda I$.}
 }Let $B_{\range S}=\Par{w_1,\dots,w_m}$ with each $w_i=Sv_i.$ Extend to bses $\Par{w_1,\dots,w_n},\Par{v_1,\dots,v_n}$ of $V.$\parSol{}
 {\vspace{2pt}Let {$S=E_{1,1}+\dots+E_{m,m}\Rightarrow \Mt{S,B_V}=\Mt{I,B_{\range S},B_V}.$} Note that $R_{k,1}:w_x\mapsto\delta_{k,x}v_1.$}\parSol{}
-{\vspace{2pt}Then $\forall k\in\!\Bra{1,\dots,n},$ {\FontLarge$0\neq SR_{k,1}=R_{k,1}S.$} Hence $\dim\null S=0,\;\dim\range S=m=n.$}\parSol{}
+{\vspace{2pt}Then $\forall k\in\;\!\!\Bra{1,\dots,n},$ {\FontLarge$0\neq SR_{k,1}=R_{k,1}S.$} Hence $\dim\null S=0,\;\dim\range S=m=n.$}\parSol{}
 \vspace{2pt}\NOTICE that {\FontLarge$G_{i,j}=R_{i,j}S=SR_{i,j}=Q_{i,j}$}. 又 For each $w_i,\exists\,!\,a_{k,i}\in\Fbb,w_i=a_{1,i}v_1+\dots+a_{n,i}v_n.$\parSol{}
-Then fix one $i.$ Now for each $j\in\!\Bra{1,\dots,n},Q_{i,j}\Par{w_i}=w_j=a_{i,i}v_j=G_{i,j}\BigBigPar{{\sum_{k=1}^na_{k,i} v_k}}.$\parSol{}
+Then fix one $i.$ Now for each $j\in\;\!\!\Bra{1,\dots,n},Q_{i,j}\Par{w_i}=w_j=a_{i,i}v_j=G_{i,j}\BigBigPar{{\sum_{k=1}^na_{k,i} v_k}}.$\parSol{}
 Let $\lambda=a_{i,i}.$ Hence each $w_j=\lambda v_j.$ Now fix one $j,$ we have $a_{1,1}v_j=\dots=a_{n,n}v_j.$\PfEnd
 \SepLine
 
@@ -1888,9 +1888,9 @@ $\forall w\in A,\;w=\sum_{i=1}^m \lambda_i v_i=\sum_{i=1}^m \lambda_i\Par{v+u_i}
 \vspace{4pt}For $u=\mu_1 v_1+\dots+\mu_k v_k+\mu_{k+1} v_{k+1}\in A.$ \;Fix one $\mu_\iota\neq 1.$\par\quad\Hb\Hii
 \vspace{4pt}Then \;$\sum_{i=1}^{k+1}\mu_i-\mu_\iota=1-\mu_\iota\Longrightarrow\envFontLarge\XSbra{{\envFontDefault\sum_{i=1}^{k+1}\Frac{\mu_i}{1-\mu_\iota}}}-\Frac{\mu_\iota}{1-\mu_\iota}=1.$\par\quad\Hb\Hii
 \vspace{2pt}Let \,$w=\underbrace{\Frac{\mu_1}{1-\mu_\iota}v_1+\dots+\Frac{\mu_{\iota-1}}{1-\mu_\iota}v_{\iota-1}+\Frac{\mu_{\iota+1}}{1-\mu_\iota}v_{\iota+1}+\dots+\Frac{\mu_{k+1}}{1-\mu_\iota}v_{k+1}}_{k\,terms}.$\par\quad\Hb\Hii
-\vspace{4pt}Let \,$\lambda_i=\Frac{\mu_i}{1-\mu_\iota}$ for $i\in\!\Bra{1,\dots,\iota-1};$ \;$\lambda_j=\Frac{\mu_{j+1}}{1-\mu_\iota}$ for $j\in\!\Bra{\iota,\dots,k}.$ \;Then,\par\quad\Hb\Hii
+\vspace{4pt}Let \,$\lambda_i=\Frac{\mu_i}{1-\mu_\iota}$ for $i\in\;\!\!\Bra{1,\dots,\iota-1};$ \;$\lambda_j=\Frac{\mu_{j+1}}{1-\mu_\iota}$ for $j\in\;\!\!\Bra{\iota,\dots,k}.$ \;Then,\par\quad\Hb\Hii
 $\MathRightBrace{r}{\sum_{i=1}^k\lambda_i=1\Rightarrow w\in B\\ v_{\:\!\!\iota}\in B\Rightarrow u\apostrophe=\lambda w+\Par{1-\lambda}v_{\:\!\!\iota}\in B}\Rightarrow$ Let $\lambda=1-\mu_\iota$. Thus $u\apostrophe=u\in B\Rightarrow A\subseteq B.$\PfEnd\vspace{10pt}\quad
-(c) If $m=1,$ then let $A=v_1+\zeroSubs$ and done. \;Now supp $m\geqslant 2.$ Fix one $k\in\!\Bra{1,\dots,m}.$\par\quad\Hc
+(c) If $m=1,$ then let $A=v_1+\zeroSubs$ and done. \;Now supp $m\geqslant 2.$ Fix one $k\in\;\!\!\Bra{1,\dots,m}.$\par\quad\Hc
 $A\ni \lambda_1v_1+\dots+\lambda_{k-1}v_{k-1}+\BigPar{1-\lambda_1-\dots-\lambda_{k-1}-\lambda_{k+1}-\dots-\lambda_m}v_k+\lambda_{k+1}v_{k+1}+\dots+\lambda_m v_m$\par\quad\Hc
 $\Blind{A}=v_k+\lambda_1\Par{v_1-v_k}+\dots+\lambda_{k-1}\Par{v_{k-1}-v_k}+\lambda_{k+1}\Par{v_{k+1}-v_k}+\dots+\lambda_m\Par{v_m-v_k}$\par\quad\Hc
 $\Blind{A}\in v_k+\Span{v_1-v_k,\dots,v_m-v_k}.$\PfEnd
@@ -2122,7 +2122,7 @@ $\exists\,\varphi\in V\apostrophe,\null\varphi=U\oplus X\Rightarrow\varphi\in U^
 
 \Anchor{3F'2}\ProblemB{
 	\TextB{Supp $X=\Bra{x_1,\dots,x_m}\subsetneq V.$ Prove the promotion of $X$ is $\Span{x_1,\dots,x_m}.$}
-}$X^0=\BigBra{{\varphi\in V\apostrophe:\varphi\Par{\lambda x_j+\mu x_k}=0,\forall j,k\in\!\Bra{1,\dots,m},\lambda,\mu\in\Fbb}}=\Span{x_1,\dots,x_m}{^0}.$\PfEnd
+}$X^0=\BigBra{{\varphi\in V\apostrophe:\varphi\Par{\lambda x_j+\mu x_k}=0,\forall j,k\in\;\!\!\Bra{1,\dots,m},\lambda,\mu\in\Fbb}}=\Span{x_1,\dots,x_m}{^0}.$\PfEnd
 \AComm The promotion of every finite subset $X$ of $V$ is the smallest subsp of $V$ containing $X.$
 \SepLine
 
@@ -2237,7 +2237,7 @@ Thus $X=Y,$ ctradic. But what if let $B_{V\apostrophe}=\Par{\beta_1,\beta_2}$ an
 
 \ProblemN{\Anchor{3F31}{31}}{
 	\TextA{Supp $V$ is finide and $B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_n}.$ Show $\exists\,!\,B_V$ whose dual bss is the $B_{V\apostrophe}$.}
-}For each $k\in\!\Bra{1,\dots,n},$ let $\Gamma_{\!k}=\Bra{1,\dots,n}\Backslash[\Big]\Bra{k}.$ Let each $U_k=\bigcap_{j\,\in\,\Gamma_{\!k}}\null\varphi_j.$\parSol{}
+}For each $k\in\;\!\!\Bra{1,\dots,n},$ let $\Gamma_{\!k}=\Bra{1,\dots,n}\Backslash[\Big]\Bra{k}.$ Let each $U_k=\bigcap_{j\,\in\,\Gamma_{\!k}}\null\varphi_j.$\parSol{}
 By Exe (4E 23), $V\apostrophe=\Span{\varphi_1,\dots,\varphi_n}=\BigPar{\null\varphi_1\cap\cdots\cap\null\varphi_n}{^0}\Rightarrow U_k\cap\null\varphi_k=\zeroSubs.$\parSol{}
 Thus $\forall x_k\in U_k\nonzero,\;x_k\not\in\null\varphi_k$ while $x_k\in\null\varphi_j$ for all $j\in\Gamma_{\!k}.$\parSol{}
 Fix one $x_k$ and let $v_k=\Sbra{\varphi_k\Par{x_k}}{^{-1}}x_k\Rightarrow\varphi_k\Par{v_k}=1,\,\varphi_j\Par{v_k}=0$ for all $j\neq k.$\parSol{}
@@ -2392,7 +2392,7 @@ Supp $\Par{v_1,\dots,v_m}$ is liney indep. Let $U=\Span{v_1,\dots,v_m},B_{U\apos
 Define $\iota:u_v+w_v\mapsto u_v.$ Each $\psi_k\circ\iota=\varphi_k\in V\apostrophe\Rightarrow\varphi_k\Par{v_j}=\psi_k\Par{v_j}=\delta_{j,k}\Rightarrow$ each $e_k=\Gamma\Par{\varphi_k}.$\PfEnd\vspace{4pt}\quad
 \Or Let $\Par{\psi_1,\dots,\psi_m}$ be dual bss of the std bss of $\Fbb^m.$ Define an iso $\Psi:\Fbb^m\rightarrow\Par{\Fbb^m}\apostrophe$ by $\Psi\Par{e_k}=\psi_k.$\par\quad
 Define $T\in\Lm{\Fbb^m,V}$ by $Te_k=v_k.$ Now $T\Par{x_1,\dots,x_m}=x_1v_1+\dots+x_mv_m.$\par\quad
-$\forall\varphi\in V\apostrophe,k\in\!\Bra{1,\dots,m},\Sbra{T\apostrophe\Par{\varphi}}\Par{e_k}=\varphi\Par{Te_k}=\varphi\Par{v_k}=\Sbra{\varphi\Par{v_1}\psi_1+\dots+\varphi\Par{v_m}\psi_m}\Par{e_k}$\par\quad
+$\forall\varphi\in V\apostrophe,k\in\;\!\!\Bra{1,\dots,m},\Sbra{T\apostrophe\Par{\varphi}}\Par{e_k}=\varphi\Par{Te_k}=\varphi\Par{v_k}=\Sbra{\varphi\Par{v_1}\psi_1+\dots+\varphi\Par{v_m}\psi_m}\Par{e_k}$\par\quad
 Now $T\apostrophe\Par{\varphi}=\varphi\Par{v_1}\psi_1+\dots+\varphi\Par{v_m}\psi_m=\Psi\BigPar{\Gamma\Par{\varphi}}.$ Hence $T\apostrophe=\Psi\circ\Gamma.$\par\quad
 By (3.B.3),
 (a) $\range T=\Span{v_1,\dots,v_m}=V\Longleftrightarrow T\apostrophe$ inje $\Longleftrightarrow\Gamma$ inje.\par\quad
@@ -2493,17 +2493,17 @@ For each $r\in\Nbp,$ let $\;e_r\Sbra{k}={}${\FontSmall$\hMath[0pt]{l}{\left\{\hs
 For $m\in\Nbp.$ Let $a_1\Par{e_1+U}+\dots+a_m\Par{e_m+U}=0+U\Rightarrow\exists\,u\in U,a_1 e_1+\dots+a_m e_m=u$.\vspace{0pt}\par\quad
 Supp $u=\Par{x_1,\cdots,x_L,{0,\cdots}},$ where $L$ is the largest suth $u\Sbra{L}\neq 0.$\vspace{1pt}\par\quad
 Let $s\in\Nbp$ be suth $h=s\cdot m!+1> L,$ \,and \,$e_1\Sbra{h}=\cdots=e_m\Sbra{h}=1.$\vspace{1pt}\par\quad
-\NOTICE that for any $p,r\in\!\Bra{1,\dots,m},$ \;$e_r\Sbra{s\cdot m!+1+p}=e_r\Sbra{p+1}=1\Longleftrightarrow p\equiv 0\,\Par{\,\text{mod}\,r\,}\Longleftrightarrow r\,\Big|\,p.$\par\vspace{1pt}\quad
+\NOTICE that for any $p,r\in\;\!\!\Bra{1,\dots,m},$ \;$e_r\Sbra{s\cdot m!+1+p}=e_r\Sbra{p+1}=1\Longleftrightarrow p\equiv 0\,\Par{\,\text{mod}\,r\,}\Longleftrightarrow r\,\Big|\,p.$\par\vspace{1pt}\quad
 Let \,$1=p_1\leqslant\cdots\leqslant p_{\tau\TinyPar{p}}=p$\, be the disti factors of $p.$ Moreover, $r\,\Big|\,p\Longleftrightarrow r=p_k$ for some $k.$\par\vspace{1pt}\quad
 Now $u\Sbra{h+p}=0=\sum_{r=1}^m a_r e_r\Sbra{p+1}=\sum_{k=1}^{\tau\TinyPar{p}}a_{p_k}.$\par\vspace{1pt}\quad
 Let $q=p_{\tau\TinyPar{p}-1}$. Then $\tau\Par{q}=\tau\Par{p}-1,$ and each $q_k=p_k.$ Again, $\sum_{r=1}^m a_r e_r\Sbra{h+q}=0=\sum_{k=1}^{\tau\TinyPar{p}-1}a_{p_k}.$\par\vspace{1pt}\quad
-Thus $a_{p_{\tau\TinyPar{p}}}=a_p=0$ for all $p\in\!\Bra{1,\dots,m}\Rightarrow\Par{e_1,\dots,e_m}$ is liney indep in $\Fbb^{\infty}.$\PfEnd\vspace{12pt}\quad
+Thus $a_{p_{\tau\TinyPar{p}}}=a_p=0$ for all $p\in\;\!\!\Bra{1,\dots,m}\Rightarrow\Par{e_1,\dots,e_m}$ is liney indep in $\Fbb^{\infty}.$\PfEnd\vspace{12pt}\quad
 %\vspace{1pt}\par\quad So is $\Par{e_1+U,\dots,e_m+U}$ in $\Fbb^{\infty}\XSlash[-2.5pt]U.$ Becs $m$ is arb. By (2.A.14).
 \Or For each $r\in\Nbp,$ let $\;e_r\Sbra{p}={}${\FontSmall$\hMath[0pt]{l}{\left\{\hspace{-2pt}}{\right|}{1\,,\text{if }2^r\,\Big|\,p\\0\,,\text{othws}}$}$\hText{$
 	Simlr, let $m\in\Nbp$ and $a_1\Par{e_1+U}+\dots+a_m\Par{e_m+U}=0\\$
 	$\Rightarrow a_1e_1+\dots+a_me_m=u\in U.$
 	$}$\vspace{3pt}\par\quad
-Supp $L$ is the largest suth $u\Sbra{L}\neq 0.$ And $l$ is suth $2^{ml}> L.$ \;Then for each $k\in\!\Bra{1,\dots,m},$\vspace{2pt}\par\quad
+Supp $L$ is the largest suth $u\Sbra{L}\neq 0.$ And $l$ is suth $2^{ml}> L.$ \;Then for each $k\in\;\!\!\Bra{1,\dots,m},$\vspace{2pt}\par\quad
 $u\Sbra{2^{ml}+2^k}=0=\sum_{r=1}^m a_re_r\Sbra{2^k}=a_1+\dots+a_k.$ \,Thus each $a_k=0.$ Simlr.\PfEnd
 \SepLine
 \ChEnd
@@ -2647,7 +2647,7 @@ Note that each $p_k\Par{x}={\sum_{j=0}^{m-k}\mathC_{m-k}^j\Par{{-1}}{^{j}}\cdot 
 And, each $q_k\in\Span{x^{k+1},\dots,x^m}.$ Using {\TIPS} above.\PfEnd\vspace{6pt}\quad
 \Or Simlr to the {\TIPS} above. We will recurly prove each $x^{m-k}\in\Span{p_m,\dots,p_{m-k}}.$\par\quad
 (i) $k=1.$ \;$p_m\Par{x}=x^m\in\Span{p_m};$ \;\; $p_{m-1}\Par{x}=x^{m-1}-x^m\Rightarrow x^{m-1}\in\Span{p_{m-1},p_m}.$\vspace{2pt}\par\quad\Endi
-(ii) $k\in\!\Bra{1,\dots,m-1}.$ \;Supp for each $j\in\!\Bra{0,\dots,k},$ we have $x^{m-j}\in\Span[\BigPar]{p_{m-j},\dots,p_m},\exists\,!\,a_m\in\Fbb.$\vspace{2pt}\par\quad\Hii
+(ii) $k\in\;\!\!\Bra{1,\dots,m-1}.$ \;Supp for each $j\in\;\!\!\Bra{0,\dots,k},$ we have $x^{m-j}\in\Span[\BigPar]{p_{m-j},\dots,p_m},\exists\,!\,a_m\in\Fbb.$\vspace{2pt}\par\quad\Hii
 Note that $x^{m-\SmallPar{k+1}}=p_{m-\SmallPar{k+1}}\Par{x}+\sum_{j=1}^{k+1}\mathC_{k+1}^j\Par{{-1}}{^{j+1}}x^{m-\SmallPar{k+1}+j}\in\Span[\BigPar]{p_{m-\SmallPar{k+1}},x^{m-k},\dots,x^{m}}.$\vspace{2pt}\par\quad\Hii
 Thus $x^{m-\SmallPar{k+1}}\in\Span[\BigPar]{p_{m-\SmallPar{k+1}},p_{m-k},\dots,p_m}.$\PfEnd\vspace{10pt}\quad
 \Or For any $m,k\in\Nbp$ suth $k\leqslant m.$ Define $p_{k,m}$ by $p_{k,m}\Par{x}=x^k\Par{1-x}{^{m-k}}.$\par\quad
@@ -2700,7 +2700,7 @@ So that $\exists\,!\,a_i\in\Rbb,p=\sum_{i=1}^{m+1}a_ip_i\Rightarrow\exists\,q=\s
 {\Or We will \uline{recurly define a seq of polys $\Par{p_k}{_{k=0}^\infty}$ where $Dp_0=1,Dp_k=x^k$} for each $k\in\Nbp.$}\par\vspace{2pt}\quad
 {\FontSmall So that $\forall p=\sum_{k=0}^{\deg p}a_k x^k\in\PoRi,Dq=p,\exists\,q={\sum_{k=0}^{\deg p}a_k p_k}.$}\par\vspace{4pt}\quad
 (i) {Becs $\deg Dx=\Par{\!\deg x}-1=0,Dx=C\in\nonzeroFbb.$ Let $p_0=C^{-1}x\Rightarrow Dp_0=C^{-1}Dx=1.$}\vspace{2pt}\par\quad\Endi
-(ii) {Supp we have defined $Dp_0=1,Dp_k=x^k$ for each $k\in\!\Bra{1,\dots,n}.$ Becs $\deg D\Par{x^{n+2}}=n+1.$}\vspace{2pt}\par\quad\Hii
+(ii) {Supp we have defined $Dp_0=1,Dp_k=x^k$ for each $k\in\;\!\!\Bra{1,\dots,n}.$ Becs $\deg D\Par{x^{n+2}}=n+1.$}\vspace{2pt}\par\quad\Hii
 {Let {\;$D\Par{x^{n+2}}=a_{n+1}x^{n+1}+a_n x^n+\dots+a_1 x+a_0,$} with $a_{n+1}\neq 0.$}\vspace{2pt}\par\quad\Hii
 {Then {\;$a_{n+1}^{-1}D\BigPar{x^{n+2}}=x^{n+1}+a_{n+1}^{-1}\BigPar{a_n Dp_n+\dots+a_1 Dp_1 +a_0 Dp_0}$}}\vspace{2pt}\par\quad\Hii
 {$\Rightarrow x^{n+1}=D\XSbra{\uline{a_{n+1}^{-1}\Par{x^{n+2}-a_n p_n-\dots-a_1 p_1-a_0 p_0}}}.$ Thus defining $p_{n+1},$ so that $Dp_{n+1}=x^{n+1}.$}\PfEnd
@@ -2709,9 +2709,9 @@ So that $\exists\,!\,a_i\in\Rbb,p=\sum_{i=1}^{m+1}a_ip_i\Rightarrow\exists\,q=\s
 \Anchor{3E'2}\ProblemB{
 	\TextB{Supp $V=\Rbb^\Rbb$ with a subsp $U=\Bra{\hspace{3pt}f\in\Rbb^\Rbb:f\Par{x_1}=\cdots=f\Par{x_m}=0},$ where each $x_k\in\Rbb.$\vspace{2pt}}
 	\TextB{Prove if $W\in\Scom{V}{U},$ then $\dim W=m.$\hfill{\large\tgsc Hint$:$ }{\FontNorm Find an iso from $V\XSlash U$ onto $\Rbb^m.$}}
-}Define $T\in\Lm{V\XSlash U,\Rbb^m}$ by $T\Par{f+U}=\BigPar{f\Par{x_1},\dots,f\Par{x_m}}.$\parSol{}
-$\forall f+U=g+U\in V\XSlash U,\:f-g\in U\Rightarrow f\Par{x_k}=g\Par{x_k}.$ Well-defined.\parSol{\vspace{0pt}}
-Inje: Each $f\Par{x_k}=0\Rightarrow f+U=0.$ \;Surj: Let $S=T\circ\pi\Rightarrow\tilde{S}=T.$ Becs $S$ is surj.\PfEnd
+}Define $T\in\Lm{V\XSlash U,\Rbb^m}$ by $T\Par{\,f+U}=\BigPar{\,f\Par{x_1},\dots,\,f\Par{x_m}}.$\parSol{}
+$\forall\,f+U=g+U\in V\XSlash U,\;f-g\in U\Rightarrow f\Par{x_k}=g\Par{x_k}.$ Well-defined.\parSol{\vspace{0pt}}
+Inje: Each $\,f\Par{x_k}=0\Rightarrow f+U=0.$ \; Surj: Immed.\PfEnd
 \SepLine
 
 \Anchor{3F7}\ProblemBnoor{3.F.7}{
@@ -2747,7 +2747,7 @@ $\Blind{q}=\underbrace{a_0+a_1 z+\dots+a_{\deg s-1}z^{\deg s-1}}_{r}+s\underbrac
 \Anchor{4ON4.11}\BulletPointX\NoteFor{[4.11]}\;\;{\tgsl each zero of a poly corres to a deg-one factor;}\hfill[{\tgsc Another proof}]\TextB{\vspace{2pt}}
 First supp $p\Par{\lambda}=0.$ Write $p\Par{z}=a_0+a_1 z+\dots+a_m z^m,\exists\,!\,a_0,a_1,\dots,a_m\in\Fbb$ for all $z\in\Fbb.$\vspace{2pt}\TextB{}
 Then $p\Par{z}=p\Par{z}-p\Par{\lambda}=a_1\Par{z-\lambda}+\dots+a_m\Par{z^m-\lambda^m}$ for all $z\in\Fbb.$\vspace{2pt}\TextB{}
-Hence $\forall k\in\!\Bra{1,\dots,m},z^k-\lambda^k=\Par{z-\lambda}\Par{ z^{k-1}\lambda^0+ z^{k-2}\lambda^1+\dots+z^{k-\SmallPar{j+1}}\lambda^j+\dots+z\lambda^{k-2}+z^0\lambda^{k-1}}.$\vspace{4pt}\TextB{}
+Hence $\forall k\in\;\!\!\Bra{1,\dots,m},z^k-\lambda^k=\Par{z-\lambda}\Par{ z^{k-1}\lambda^0+ z^{k-2}\lambda^1+\dots+z^{k-\SmallPar{j+1}}\lambda^j+\dots+z\lambda^{k-2}+z^0\lambda^{k-1}}.$\vspace{4pt}\TextB{}
 Thus $p\Par{z}=\sum_{j=1}^m a_j \Par{z-\lambda}\sum_{i=1}^k \lambda^{i-1}z^{k-i}=\Par{z-\lambda}\sum_{j=1}^m a_j\sum_{i=1}^k \lambda^{i-1}z^{k-i}=\Par{z-\lambda}q\Par{z}.$\PfEnd
 \SepLine
 
@@ -2776,11 +2776,11 @@ Thus $p\Par{z}=\sum_{j=1}^m a_j \Par{z-\lambda}\sum_{i=1}^k \lambda^{i-1}z^{k-i}
 
 \ProblemN{\Anchor{4O5}{5}}{
 	\TextA{Supp $m\in\Nbb,$ and $z_1,\dots,z_{m+1}$ are disti in $\Fbb,$ and $w_1,\dots,w_{m+1}\in\Fbb.$}
-	\TextA{Prove $\exists\,!\,p\in\PoF{m},p\Par{z_k}=w_k$ for each $k\in\!\Bra{1,\dots, m+1}.$}
+	\TextA{Prove $\exists\,!\,p\in\PoF{m},p\Par{z_k}=w_k$ for each $k\in\;\!\!\Bra{1,\dots, m+1}.$}
 }\par\quad
 Define $T\in\Lm[\BigPar]{\PoF{m},\Fbb^{m+1}}$ by $Tq=\BigPar{q\Par{z_1},\dots,q\Par{z_m},q\Par{z_{m+1}}}.$\vspace{1pt}\par\quad
 Becs $Tq=0\Rightarrow\Par{m+1}$ disti zeros for $q$ of deg no more than $m\Rightarrow q=0.$ \;Now $T$ iso.\PfEnd\vspace{4pt}\quad
-\Or Let $p_1=1,\;p_k\Par{z}=\prod_{i=1}^{k-1}\Par{z-z_i}=\Par{z-z_1}\cdots\Par{z-z_{k-1}}$ for each $k\in\!\Bra{2,\dots,m+1}.$\vspace{1pt}\par\quad
+\Or Let $p_1=1,\;p_k\Par{z}=\prod_{i=1}^{k-1}\Par{z-z_i}=\Par{z-z_1}\cdots\Par{z-z_{k-1}}$ for each $k\in\;\!\!\Bra{2,\dots,m+1}.$\vspace{1pt}\par\quad
 By (2.C.10), $B_p=\Par{p_1,\dots,p_{m+1}}$ is a bss of $\PoF{m}.$ Let $B_e=\Par{e_1,\dots,e_{m+1}}$ be the std bss of $\Fbb^{m+1}.$\vspace{2pt}\par\quad
 Now $Tp_1=\Par{1,\dots,1},\;Tp_k=\XPar{\prod_{i=1}^{k-1}\Par{z_1-z_i},\dots,\prod_{i=1}^{k-1}\Par{z_j-z_i},\dots,\prod_{i=1}^{k-1}\Par{z_{m+1}-z_i}};$\vspace{3pt}\par\quad
 {\normalsize$\begin{pmatrix}
@@ -2820,7 +2820,7 @@ Thus $\Par{rs}\Par{z}=1$ for infily many $z,$ so for all $z.$ Now $\deg rs=1=\de
 }(a) Supp $p$ of deg $m$ has $m$ disti zeros. By [4.14], $p\Par{z}=c\Par{z-\lambda_1}\cdots\Par{z-\lambda_m}.$\vspace{1pt}\parSol{\Ha}
 If $m=0,$ then $p=c\neq 0\Rightarrow p$ has no zeros, and $p\apostrophe=0,$ done.\parSol{\Ha}
 If $m=1,$ then $p\Par{z}=c\Par{z-\lambda_1},$ and $p\apostrophe=c$ has no zeros, done.\vspace{1pt}\parSol{\Ha}
-For each $j\in\!\Bra{1,\dots,m}$, let $q_j\Par{z-\lambda_j}=p\Par{z}\Rightarrow q_j\Par{\lambda_j}\neq 0.$\vspace{1pt}\parSol{\Ha}
+For each $j\in\;\!\!\Bra{1,\dots,m}$, let $q_j\Par{z-\lambda_j}=p\Par{z}\Rightarrow q_j\Par{\lambda_j}\neq 0.$\vspace{1pt}\parSol{\Ha}
 Now $p\apostrophe\Par{z}=\Par{z-\lambda_j}q_j\apostrophe\Par{z}+q_j\Par{z}\Rightarrow p\apostrophe\Par{\lambda_j}=q_j\Par{\lambda_j}\neq 0.$\vspace{4pt}\parSol{\Ha}
 \Or ${}^{\neg}Q\Rightarrow{}{^\neg}P:$ \;Supp $p\Par{z}=\Par{z-\lambda}q\Par{z},\;p\apostrophe\Par{z}=\Par{z-\lambda}r\Par{z}.$\parSol{\Ha}
 Becs $p\apostrophe\Par{z}=\Par{z-\lambda}q\apostrophe\Par{z}+q\Par{z}\Rightarrow p\apostrophe\Par{\lambda}=q\Par{\lambda}=0\Rightarrow q\Par{z}=\Par{z-\lambda}s\Par{z}.$\parSol{\Ha}
@@ -2852,7 +2852,7 @@ $p\apostrophe\Par{x}=\BigPar{p\Par{x}-p\Par{3}}\apostrophe=q\Par{x}+\Par{x-3}q\a
 %}By [4.5], $\overline z{^n}=\overline{z^n}.$ \;For any $f\Par{z}=a_nz^n+\dots+a_1z+a_0,\;\overline{f\Par{\overline{z}}}=\overline{a_n}z^n+\dots+\overline{a_1}z+\overline{a_0}.$\parSol{}
 %Becs $q\Par{z}=p\Par{z}\overline{p\Par{\overline z}}=\overline{p\Par{\overline z}}p\Par{z}=\overline{q\Par{\overline z}}.$ \;Each $c_k=\overline{c_k}\Rightarrow c_k\in\Rbb.$\PfEnd
 %\vspace{6pt}\parSol{}
-%\Or Becs $q\Par{z}=p\Par{z}\overline{p\Par{\overline z}}=\sum_{k=0}^{2n}\XPar{{\sum_{i+j=k}c_i\overline{c_j}}}\,z^k.$ For each $k\in\!\Bra{0,\dots,2n},$\vspace{0pt}\parSol{}
+%\Or Becs $q\Par{z}=p\Par{z}\overline{p\Par{\overline z}}=\sum_{k=0}^{2n}\XPar{{\sum_{i+j=k}c_i\overline{c_j}}}\,z^k.$ For each $k\in\;\!\!\Bra{0,\dots,2n},$\vspace{0pt}\parSol{}
 %$\overline{\sum_{i+j=k}c_i\overline{c_j}}=\sum_{i+j=k}\overline{c_i\overline{c_j}}=\sum_{i+j=k}{c_j}\overline{c_i}=\sum_{i+j=k}c_i\overline{c_j}\in\Rbb.$\PfEnd
 %\SepLine
 
@@ -2899,27 +2899,27 @@ Then $rp=-sq.$ Becs $p,q$ are \uline{coprime} $\Rightarrow p\:\mmid\:s,$ while $
 \Or Let $\lambda_1,\dots,\lambda_M$ and $\mu_1,\dots,\mu_N$ be the disti zeros of $p$ and $q$ respectly. \NOTICE that $M\leqslant m,N\leqslant n.$\vspace{2pt}\par\quad
 By the ctrapos of [4.13], $M=0\Longleftrightarrow m=0\Rightarrow s=0\Longleftrightarrow r=0 \Leftarrow n=0\Longleftrightarrow N=0.$\vspace{2pt}\par\quad
 Now supp $M,N\geqslant 1.$ We show $s=0.$ \,{\FontSmall Simlr for $r=0.$ \Or $s=0\Rightarrow r=0.$}\vspace{2pt}\par\quad
-Write $p\Par{z}=a\Par{z-\lambda_1}{^{\alpha_1}}\cdots\Par{z-\lambda_M}{^{\alpha_M}}.$ \BigPar{ $\exists\,!\,\alpha_j\geqslant 1,a\in\Fbb.$ } Let $\max\!\Bra{\alpha_1,\dots,\alpha_M}=A.$\vspace{2pt}\par\quad
-For each $D\in\!\Bra{0,1,\dots,A-1},$ let $I_{>D}=\Bra{{I_{D,1}},\dots,{I_{D,\,J_D}}}$ be suth each $\alpha\Sbra{I_{D,j}}=\alpha_{I_{D,j}}\geqslant D+1.$\vspace{2pt}\par\quad
-Now $\Bra{M}=I_{>A-1}\subseteq \cdots\subseteq I_{>0}=\Bra{1,\dots,M}.$ Becs $rp+sq=0\Rightarrow\Par{rp+sq}{^{\SmallPar{k}}}=0$ for all $k\in\Nbp.$\vspace{2pt}\par\quad
-We use induc on $D$ to show $s{^{\SmallPar{D}}}\BigPar{\lambda\Sbra{I_{D,j}}}=0$ for each $D\in\!\Bra{0,\dots,A-1}.$\vspace{2pt}\par\quad
-\NOTICE that $p{^{\SmallPar{D}}}\BigPar{\lambda\Sbra{I_{D,j}}}=0$ for each $D\in\!\Bra{0,\dots,A-1}$ and each $I_{D,j}\in I_{>D}.$\hfill(L2)\vspace{2pt}\par\quad
+Write $p\Par{z}=a\Par{z-\lambda_1}{^{\alpha_1}}\cdots\Par{z-\lambda_M}{^{\alpha_M}}.$ \BigPar{ $\exists\,!\,\alpha_j\geqslant 1,a\in\Fbb.$ } Let $\max\!\Bra{\alpha_1,\dots,\alpha_M}=A=\alpha_L.$\vspace{2pt}\par\quad
+For each $D\in\;\!\!\Bra{0,1,\dots,A-1},$ let $I_{>D}=\Bra{{I_{D,1}},\dots,{I_{D,\,J_D}}}$ be suth each $\alpha\Sbra{I_{D,j}}=\alpha_{I_{D,j}}\geqslant D+1.$\vspace{2pt}\par\quad
+Now $\Bra{L}=I_{>A-1}\subseteq \cdots\subseteq I_{>0}=\Bra{1,\dots,M}.$ Becs $rp+sq=0\Rightarrow\Par{rp+sq}{^{\SmallPar{k}}}=0$ for all $k\in\Nbp.$\vspace{2pt}\par\quad
+We use induc on $D$ to show $s{^{\SmallPar{D}}}\BigPar{\lambda\Sbra{I_{D,j}}}=0$ for each $D\in\;\!\!\Bra{0,\dots,A-1}.$\vspace{2pt}\par\quad
+\NOTICE that $p{^{\SmallPar{D}}}\BigPar{\lambda\Sbra{I_{D,j}}}=0$ for each $D\in\;\!\!\Bra{0,\dots,A-1}$ and each $I_{D,j}\in I_{>D}.$\hfill(L2)\vspace{2pt}\par\quad
 (i) $D=0.$ Each $\Par{rp+sq}\BigPar{\lambda\Sbra{I_{0,j}}}=\Par{sq}\BigPar{\lambda\Sbra{I_{0,j}}}=s\BigPar{\lambda\Sbra{I_{0,j}}}=0.$ Where $q\BigPar{\lambda\Sbra{I_{0,j}}}\neq0.$\vspace{2pt}\par\quad\Hi
 $D=1.$ Each $\Par{r\apostrophe p+rp\apostrophe}\BigPar{\lambda\Sbra{I_{1,j}}}+\Par{s\apostrophe q+sq\apostrophe}\BigPar{\lambda\Sbra{I_{1,j}}}=\Par{s\apostrophe q}\BigPar{\lambda\Sbra{I_{1,j}}}=s\apostrophe\BigPar{\lambda\Sbra{I_{1,j}}}=0.$\vspace{1pt}\par\quad\Hi
 \Blind{$D=1.$} Where $p\apostrophe\BigPar{\lambda\Sbra{I_{1,j}}}=0,$ and each $I_{1,j}\subseteq I_{0,j}\Rightarrow s\BigPar{\lambda\Sbra{I_{1,j}}}=0.$\vspace{4pt}\par\quad\Endi
-(ii) $2\leqslant D\leqslant A-1.$ Asum $\;s{^{\SmallPar{d}}}\BigPar{\lambda\Sbra{I_{d,j}}}=0$ for each $d\in\!\Bra{0,1,\dots,D-1}$ and each $\lambda\Sbra{I_{d,j}}\in I_{>d}.$\vspace{2pt}\par\quad\Hii
+(ii) $2\leqslant D\leqslant A-1.$ Asum $\;s{^{\SmallPar{d}}}\BigPar{\lambda\Sbra{I_{d,j}}}=0$ for each $d\in\;\!\!\Bra{0,1,\dots,D-1}$ and each $\lambda\Sbra{I_{d,j}}\in I_{>d}.$\vspace{2pt}\par\quad\Hii
 Each $\Sbra{rp+sq}{^{\SmallPar{D}}}\BigPar{\lambda\Sbra{I_{D,j}}}=\Sbra{\mathC_{D}^D r{^{\SmallPar{D}}}p{^{\SmallPar{0}}}+\dots+\mathC_{D}^d r{^{\SmallPar{d}}}p{^{\SmallPar{D-d}}}+\dots+\mathC_{D}^0 r{^{\SmallPar{0}}}p{^{\SmallPar{D}}}}\BigPar{\lambda\Sbra{I_{D,j}}}$\hfill(L1)\vspace{4pt}\par\quad\Hii
-\Blind{Each} $\Blind{\Sbra{rp+sq}{^{\SmallPar{D}}}\BigPar{\lambda\Sbra{I_{D,j}}}=}+\Sbra{\mathC_{D}^D s{^{\SmallPar{D}}}q{^{\SmallPar{0}}}+\dots+\mathC_{D}^d s{^{\SmallPar{d}}}q{^{\SmallPar{D-d}}}+\dots+\mathC_{D}^0 s{^{\SmallPar{0}}}q{^{\SmallPar{D}}}}\BigPar{\lambda\Sbra{I_{D,j}}}$\vspace{4pt}\par\quad\Hii
+\Blind{Each} $\Blind{\Sbra{rp+sq}{^{\SmallPar{D}}}\BigPar{\lambda\Sbra{I_{D,j}}}=}\;\!+\Sbra{\mathC_{D}^D s{^{\SmallPar{D}}}q{^{\SmallPar{0}}}+\dots+\mathC_{D}^d s{^{\SmallPar{d}}}q{^{\SmallPar{D-d}}}+\dots+\mathC_{D}^0 s{^{\SmallPar{0}}}q{^{\SmallPar{D}}}}\BigPar{\lambda\Sbra{I_{D,j}}}$\vspace{4pt}\par\quad\Hii
 \Blind{Each} $\Blind{\Sbra{rp+sq}{^{\SmallPar{D}}}\BigPar{\lambda\Sbra{I_{D,j}}}}=\Sbra{\mathC_{D}^D s{^{\SmallPar{D}}}q{^{\SmallPar{0}}}}\BigPar{\lambda\Sbra{I_{D,j}}}.$\; Where each $\lambda\Sbra{I_{D,j}}\in I_{>D}\subseteq I_{D-1,\alpha}.$\vspace{4pt}\par\quad\Hii
-Hence $s{^{\SmallPar{D}}}\BigPar{\lambda\Sbra{I_{D,j}}}=0.$ The asum holds for all $D\in\!\Bra{0,\dots,A-1}.$\vspace{6pt}\par\quad
+Hence $s{^{\SmallPar{D}}}\BigPar{\lambda\Sbra{I_{D,j}}}=0.$ The asum holds for all $D\in\;\!\!\Bra{0,\dots,A-1}.$\vspace{6pt}\par\quad
 \NOTICE that $\forall k=\Bra{0,\dots,A-2},s{^{\SmallPar{k}}}$ and $s{^{\SmallPar{k+1}}}$ have zeros $\BigBra{{\lambda\Sbra{I_{k+1,1}},\dots,\lambda\Sbra{I_{k+1,\,J_{k+1}}}}}$ in common.\vspace{2pt}\par\quad
-Now $\forall D\in\!\Bra{1,\dots,A-1},s=s{^{\SmallPar{0}}},\dots,s{^{\SmallPar{D}}}$ have zeros $\BigBra{{\lambda\Sbra{I_{D,1}},\dots,\lambda\Sbra{I_{D,\,J_D}}}}$ in common.\vspace{2pt}\par\quad
-Thus $s\Par{z}$ is divisible by $\BigPar{z-\lambda\Sbra{I_{D,1}}}{^{\alpha\def\envFont{\scriptsize}\Sbra{I_{D,1}}}}\cdots\BigPar{z-\lambda\Sbra{I_{D,\,J_D}}}{^{\alpha\def\envFont{\scriptsize}\Sbra{I_{D,\,J_D}}}},$ for each $D\in\!\Bra{0,\dots,A-1}.$\vspace{2pt}\par\quad
+Now $\forall D\in\;\!\!\Bra{1,\dots,A-1},s=s{^{\SmallPar{0}}},\dots,s{^{\SmallPar{D}}}$ have zeros $\BigBra{{\lambda\Sbra{I_{D,1}},\dots,\lambda\Sbra{I_{D,\,J_D}}}}$ in common.\vspace{2pt}\par\quad
+Thus $s\Par{z}$ is divisible by $\BigPar{z-\lambda\Sbra{I_{D,1}}}{^{\alpha\def\envFont{\scriptsize}\Sbra{I_{D,1}}}}\cdots\BigPar{z-\lambda\Sbra{I_{D,\,J_D}}}{^{\alpha\def\envFont{\scriptsize}\Sbra{I_{D,\,J_D}}}},$ for each $D\in\;\!\!\Bra{0,\dots,A-1}.$\vspace{2pt}\par\quad
 Hence $s\Par{z}=\Sbra{\Par{z-\lambda_1}{^{\alpha_1}}\cdots\Par{z-\lambda_M}{^{\alpha_M}}}\,s_0\Par{z},$ while $\deg s<m=\alpha_1+\dots+\alpha_M.$ Now by {\TIPSN{1}}.\PfEnd
 \SepLine
 \ChEnd
 
-\textsl{\normalsize 凭借我的经验，我认为，好的自学教材，除了提供足够的一级知识外，还能通过各种方式，将二级、三级知识顺理成章地经过学科思维的浓缩喻于习题或课文中。在LADR的熏陶下，我渐渐认为，自学教材带来的长期收益更重要——所谓素养一类的隐形东西，无论堆砌多少知识记忆都难以学到；外在的选拔，表面上看都是知识竞赛，但真正有含金量的选拔，往往十二分地注重隐形能力；实际的工作表现也是如此；客观上看这确实是在当今公共信息过剩的时代下人与人拉开差距的核心原因之一，也是我相信最能仅通过自身努力耕耘获得长期稳定回报的地方。现在看看速学速成应付选拔竞争的选择有多愚蠢吧：考不上放弃吧，因为几乎没有习得那些隐性能力，就确实是除了知识和解题技巧之外啥也没得到，这些知识中实用的那些内容怎么着都能学到，不具有不可替代性，实际工作更需要隐形的素养；再考再战吧，就得辛苦刷题，总归不如在学的过程中把\!“和习题的挣扎”\!当作练习对学科思维的启发最好。考上了吧又要和更\!“拔尖创新人才”\!竞争隐形的能力，一样难以优胜，只不过这个情况下可以做一个更\!“优越”\!的平庸之人罢了，除了短期速成而来的外在\!“纪念品”\!之外再也没有什么学习成果可长期变现——和质量至上、\!不怕耽误时间进度的学习者相比又能有什么优越之处呢？}\par\vspace{4pt}
+\textsl{\normalsize 凭借我的经验，我认为，好的自学教材，除了提供足够的一级知识外，还能通过各种方式，将二级、三级知识顺理成章地经过学科思维的浓缩喻于习题或课文中。在LADR的熏陶下，我渐渐认为，自学教材带来的长期收益更重要——所谓素养一类的隐形东西，无论堆砌多少知识记忆都难以学到；外在的选拔，表面上看都是知识竞赛，但真正有含金量的选拔，往往十二分地注重隐性能力；实际的工作表现也是如此；客观上看这确实是在当今公共信息过剩的时代下人与人拉开差距的核心原因之一，也是我相信最能仅通过自身努力耕耘获得长期稳定回报的地方。现在看看速学速成应付选拔竞争的选择有多愚蠢吧：考不上放弃吧，因为几乎没有习得那些隐性能力，就确实是除了知识和解题技巧之外啥也没得到，这些知识中实用的那些内容怎么着都能学到，不具有不可替代性，实际工作更需要隐形的素养；再考再战吧，就得辛苦刷题，总归不如在学的过程中把\!“和习题的挣扎”\!当作练习对学科思维的启发最好。考上了吧又要和更\!“拔尖创新人才”\!竞争隐形的能力，一样难以优胜，只不过这个情况下可以做一个更\!“优越”\!的平庸之人罢了，除了短期速成而来的外在\!“纪念品”\!之外再也没有什么学习成果可长期变现——和质量至上、\!不怕耽误时间进度的学习者相比又能有什么优越之处呢？}\par\vspace{4pt}
 
 {\small
 此章核心内容3/4e差距过大。4e将第2章线性相关性引理和多项式结合，更自然地引出原来3e的8.C节的极小多项式，并前置了相关习题，让定理和习题更加富有动机和系统性。这份笔记主要面向3e纸质书的读者，所以题号和定理索引都采用3e（除4e新增章节）。为了严密性，我决定将3e第8章提前到第5章后，对应到4e只有第8章前三节。\par\vspace{14pt}
@@ -2974,7 +2974,7 @@ Get a $B_U$ and pick all non0 $x_k.$ Forming $\Span{e_{k_1},\dots,e_{k_m}}=U.$\P
 }Consider the stmt $P\Par{k}:$ if $v_1+\dots+v_k\in U,$ then each $v_j\in U.$\parSol{}
 (i) $v_1\in U.$ $P\Par{1}$ holds. (ii) For $2\leqslant k\leqslant m.$ Asum $P\Par{k-1}$ holds. Supp $v=v_1+\dots+v_k\in U.$\parSol{}
 Then $Tv=\lambda_1v_1+\dots+\lambda_k v_k\in U\Longrightarrow Tv-\lambda_k v=\Par{\lambda_1-\lambda_k}v_1+\dots+\Par{\lambda_{k-1}-\lambda_k}v_{k-1}\in U.$\parSol{}
-For each $j\in\!\Bra{1,\dots,k-1},\lambda_j-\lambda_{k}\neq 0\Rightarrow\Par{\lambda_j-\lambda_k}v_j=v_j'$ is an eigvec of $T$ corres $\lambda_j.$\parSol{}
+For each $j\in\;\!\!\Bra{1,\dots,k-1},\lambda_j-\lambda_{k}\neq 0\Rightarrow\Par{\lambda_j-\lambda_k}v_j=v_j'$ is an eigvec of $T$ corres $\lambda_j.$\parSol{}
 By asum, each $v_j'\in U.$ Thus $v_1,\dots,v_{k-1}\in U.$ So that $v_k=v-v_1-\dots-v_{k-1}\in U.$\PfEnd
 \SepLine[0pt][\Blind{\BulletPointX} ]
 
@@ -3046,7 +3046,7 @@ Hence $T\Par{a,b}=\BigPar{a\cos\theta-b\sin\theta,\,a\sin\theta+b\cos\theta}.$ \
 }
 \ProblemN{\Anchor{5A13}{13}}{
 	 \TextB{Prove $\exists\,\alpha\in\Fbb,\aMid{\alpha-\lambda}<\frac{1}{\;1000\;}$ suth $\Par{T-\alpha I}$ is inv.}
-}Let each $\aMid{\alpha_k-\lambda}=\frac{1}{\;1000\,+\,k\;},$ where $k\in\!\Bra{1,\dots,\uline{\dim V+1}}.$ \,Then $\exists\,\alpha_k$ not an eigval.\PfEnd
+}Let each $\aMid{\alpha_k-\lambda}=\frac{1}{\;1000\,+\,k\;},$ where $k\in\;\!\!\Bra{1,\dots,\uline{\dim V+1}}.$ \,Then $\exists\,\alpha_k$ not an eigval.\PfEnd
 \SepLine[0pt][\Blind{\BulletPointX} ]
 
 \Anchor{5A4e11}\ProblemBnoor{4E 11}{
@@ -3195,14 +3195,14 @@ Thus $\Par{T-\lambda I}S=0\Rightarrow\mA\Par{S}=TS=\lambda S$ with $S\neq 0.$\vs
 %\SepLine
 
 \Anchor{5A27}\Anchor{5A28}\ProblemN{27, 28}{
-	\TextA{Supp $\dim V>1,\,k\in\!\Bra{1,\dots,\dim V-1}$.}
+	\TextA{Supp $\dim V>1,\,k\in\;\!\!\Bra{1,\dots,\dim V-1}$.}
 	\TextA{Supp every subsp of dim $k$ is invard a $T\in\Lm{V}.$ \,Prove $T=\lambda I.$}
 }We prove the ctrapos. Supp $\exists\,v\in V\nonzero$ not eigvec.\parSol{}
 Then $\Par{v,Tv}$ liney indep $\Rightarrow B_V=\Par{v,Tv,u_1,\dots,u_n}.$ Let $U=\Span{v,u_1,\dots,u_{k-1}}.$\PfEnd\vspace{3pt}\parSol{}
 \Or Supp $v=v_1\in V\nonzero\Rightarrow B_V=\Par{v_1,\dots,v_n}.$ Let $Tv_1=c_1 v_1+\dots+c_n v_n.$\parSol{}
 Let $B_U=\Par{v_1,v_{\:\!\!\alpha_1},\dots,v_{\:\!\!\alpha_{k-1}}}.$ Becs every such $U$ invar. Now $Tv_1\in U\Rightarrow Tv_1=c_1v_1.$\parSol{}
-By Exe (26), done. \BigSbra{For $0\neq c_j\in\!\Bra{c_2,\dots,c_n},$ let $B_W=\Par{v_1,v_{\beta_1},\dots,v_{\beta_{k-1}}}$ with each $\beta_i\neq j.$}\PfEnd%\vspace{4pt}\quad
-%\Or For each $k\in\!\Bra{1,\dots,\dim V-1},$ define $P\Par{k}:$ \Largesl{if} each subsp $U$ with $\dim U=k$ invar, then $T=\lambda I.$\par\quad
+By Exe (26), done. \BigSbra{For $0\neq c_j\in\;\!\!\Bra{c_2,\dots,c_n},$ let $B_W=\Par{v_1,v_{\beta_1},\dots,v_{\beta_{k-1}}}$ with each $\beta_i\neq j.$}\PfEnd%\vspace{4pt}\quad
+%\Or For each $k\in\;\!\!\Bra{1,\dots,\dim V-1},$ define $P\Par{k}:$ \Largesl{if} each subsp $U$ with $\dim U=k$ invar, then $T=\lambda I.$\par\quad
 %(i) $k=1.$ $P\Par{1}$ holds, by Exe (26).\par\quad\Endi
 %(ii) $1\leqslant k\leqslant\dim V-2.$ Asum $P\Par{k}$ holds, and each subsp $U$ with $\dim U=k+1$ invar.\par\quad\Hii
 %Supp $\dim U=k,$ and $v,w\not\in U$ liney indep. Then $U\oplus\Span{v},U\oplus\Span{w}$ invar.\par\quad\Hii
@@ -3227,7 +3227,7 @@ $\exists\,!\,\lambda_k=0.$ Now $\Bra{\lambda_jv_j:j\neq k}$ liney indep. Thus $m
 	%	\TextA{Supp $V$ is finide, and $v_1,\dots,v_m \in V$. Prove}
 	%	\TextA{$\Par{v_1,\dots,v_m}$ is liney indep $\Longleftrightarrow v_1,\dots,v_m$ are eigvecs of some $T$ corres to disti eigvals.}
 	%}Supp $\Par{v_1,\dots,v_m}$ is liney indep. Let $B_V=\Par{v_1,\dots,v_m,\dots,v_n}.$\parSol{}
-%Define $T\in\Lm{V}$ by $Tv_k=k\cdot v_k$ for each $k\in\!\Bra{1,\dots,m,\dots,n}.$ Convly by [5.10].\PfEnd\vspace{-4pt}
+%Define $T\in\Lm{V}$ by $Tv_k=k\cdot v_k$ for each $k\in\;\!\!\Bra{1,\dots,m,\dots,n}.$ Convly by [5.10].\PfEnd\vspace{-4pt}
 %\SepLine
 
 %\Anchor{5A32}\Anchor{5A4e36}\ProblemB{
@@ -3576,7 +3576,7 @@ If $\deg q\geqslant m.$ For each $k\in\Nbb,\exists\,!\,b_{j,k}\in\Fbb,\,T^{m+k}=
 	\TextA{Let $\mE =\Bra{q\Par{T}: q \in \PoFi},$ a subsp of $\Lm{V}.$ Prove $\dim\mE=\deg p.$}
 }Becs $\mE=\Span[\BigPar]{I,T,\dots,T^{\dim\Lm[\SmallPar]{V}\,-\,1}}=\Span[\BigPar]{I,T,\dots,T^{\deg p\,-\,1}},$ by Exe (4E I.13). Immed.\PfEnd\vspace{2pt}\parSol{}
 \Or Define $\Phi\in\Lm[\BigPar]{\PoFi,\Lm{V}}$ by $\Phi\Par{q}=q\Par{T}\Rightarrow\range\Phi=\mE.$\parSol{}
-Becs $\Phi\Par{q}=q\Par{T}=0\Longleftrightarrow q$ is a multi of the min $p\Longleftrightarrow q\in\!\Bra{ps:s\in\PoFi}=\null\Phi.$\parSol{}
+Becs $\Phi\Par{q}=q\Par{T}=0\Longleftrightarrow q$ is a multi of the min $p\Longleftrightarrow q\in\;\!\!\Bra{ps:s\in\PoFi}=\null\Phi.$\parSol{}
 Now by (4.11), $\dim\PoFi\XSlash\null\Phi=\deg p.$ By [3.91](d).\PfEnd
 \SepLine[0pt][\Blind{\BulletPointX} ]
 
@@ -3590,7 +3590,7 @@ Now by (4.11), $\dim\PoFi\XSlash\null\Phi=\deg p.$ By [3.91](d).\PfEnd
 	\TextA{Give a repres of $s,$ the min of $T^{-1}.$\vspace{2pt}}
 }Define $q\Par{z}=z^m+{}${\Large$\frac{a_1}{a_0}$}$\,z^{m-1}+\dots+{}${\Large$\frac{a_{m-1}}{a_0}$}$\,z+{}${\Large$\frac{1}{a_0}$}${}\Rightarrow q\Par{T^{-1}}=T^{-m}p\Par{T}=0.$\PfEnd\vspace{2pt}\parSol{}
 Becs $\deg s\leqslant\deg q,$ while $\Par{T^{-1}}{^{-1}}=T\Rightarrow\deg q\leqslant\deg s.$ \;\Or By (8.C.11), immed.\PfEnd\vspace{4pt}\parSol{}
-\Or Becs each $T^{-k}\not\in\Span[\BigPar]{I,T^{-1},\dots,T^{-\SmallPar{k-1}}}$ for $k\in\!\Bra{1,\dots,m-1}.$ Done.\parSol{}
+\Or Becs each $T^{-k}\not\in\Span[\BigPar]{I,T^{-1},\dots,T^{-\SmallPar{k-1}}}$ for $k\in\;\!\!\Bra{1,\dots,m-1}.$ Done.\parSol{}
 For if not, supp $T^{-k}=b_0 I+b_1 T^{-1}+\dots+b_{k-1}T^{k-1}.$ Note that $T$ inv $\Rightarrow\exists\,b_j\neq 0.$\parSol{}
 Now $T^k\Par{T^{-k}}=I=b_0 T^k+b_1 T^{k-1}+\dots+b_{k-1}T\Rightarrow T^j\in\Span{I,T,\dots,T^{k-1}}.$\PfEnd
 \SepLine[0pt][\Blind{\BulletPointX} ]
@@ -3611,7 +3611,7 @@ Define $r\Par{z}=s\Par{\lambda z}\Rightarrow r\Par{T}=s\Par{\lambda T}=0\Rightar
 
 \Anchor{5BI4e10}\Anchor{5BI4e23}\ProblemBnoor{4E I.10,23}{
 	\TextA{Supp $\deg p=m,$ and non0 $v\in V.$ Let each $U_k=\Span[\BigPar]{v,Tv,\dots,T^kv}.$\vspace{1pt}}
-	\TextA{Prove $\exists\,j\in\!\Bra{1,\dots,m},\;U_{j-1}=U_n$ for all $n\geqslant j-1.$}
+	\TextA{Prove $\exists\,j\in\;\!\!\Bra{1,\dots,m},\;U_{j-1}=U_n$ for all $n\geqslant j-1.$}
 }Supp $j$ is the smallest suth $T^j v=a_0v+a_1 Tv+\dots+a_{j-1}T^{j-1}v\in U_{j-1}\Rightarrow j\leqslant m.$\parSol{}
 Then $U_{j-1}$ is invard $T,$ so is each $U_n=\Span{v,Tv,\dots,T^{j-1} v,\dots,T^n v}.$\PfEnd
 \SepLine
@@ -3643,7 +3643,7 @@ Then $U_{j-1}$ is invard $T,$ so is each $U_n=\Span{v,Tv,\dots,T^{j-1} v,\dots,T
 %\SepLine
 
 %\Anchor{5BII20}\Anchor{5BII4e6}\ProblemNor[]{6}{3E 5.B.20}{
-%	\TextA{Supp $\Fbb=\Cbb,$ $V$ is finide, $T\in\Lm{V},$ and $k\in\!\Bra{1,\dots,\dim V}.$}
+%	\TextA{Supp $\Fbb=\Cbb,$ $V$ is finide, $T\in\Lm{V},$ and $k\in\;\!\!\Bra{1,\dots,\dim V}.$}
 %	\TextA{Prove $V$ has a $k$\hspace{1pt}-\hspace{1pt}dim invarspd $T.$\hfill\FontNorm\tgnr By [5.27] and [5.26], immed.\vspace{-3pt}}
 %}\SepLine
 
@@ -3666,7 +3666,7 @@ Now $q$ of deg $2$ is a multi of the min of $T\mmid_{\nullp p_v\SmallPar{v}},$ w
 %\Anchor{5BII4e10}\ProblemN{II.10}{
 %	\TextA{Supp $B_V=\Par{v_1,\dots,v_n},A=\Mt{T,B_V}.$ Show the following are equiv\hspace{1pt}$:$}
 %	\PrePa\TextA{$A$ is low-trig. \:{\tgnr\large(b)} Each $Tv_k\in\Span{v_k,\dots,v_n}.$ \:{\tgnr\large(c)} Each $\Span{v_k,\dots,v_n}$ invard $T.$}
-%}By def, (a) and (b) are equiv, and (c) $\Rightarrow$ (b). Now supp (b) holds. For any $k\in\!\Bra{1,\dots,n}.$\parSol{}
+%}By def, (a) and (b) are equiv, and (c) $\Rightarrow$ (b). Now supp (b) holds. For any $k\in\;\!\!\Bra{1,\dots,n}.$\parSol{}
 %$Tv_k\in\Span{v_k,\dots,v_n},\,Tv_{k+1}\in\Span{v_{k+1},\dots,v_n},\cdots,\,Tv_{n}\in\Span{v_n}.$ Thus (c) holds.\PfEnd
 %\SepLine
 
@@ -3679,7 +3679,7 @@ Now $q$ of deg $2$ is a multi of the min of $T\mmid_{\nullp p_v\SmallPar{v}},$ w
 \Anchor{5BIIT2}\ProblemN{\BulletPointX II.\TipsN{2}}{
 	\TextA{Supp $\Par{\alpha_1,\dots,\alpha_n},\Par{\beta_1,\dots,\beta_n}$ are bses of $V,$ with each $\alpha_k=\beta_{n-k+1}.$}
 	\TextA{Prove $\Mt{T,\alpha\rightarrow\alpha}$ up-trig $\Longleftrightarrow\Mt{T,\beta\rightarrow\beta}$ low-trig.}
-}For each $k\in\!\Bra{1,\dots,n},\:T\beta_{n-k+1}=T\alpha_k\in\Span{\alpha_1,\dots,\alpha_k}=\Span{\beta_n,\dots,\beta_{n-k+1}}.$\PfEnd\vspace{2pt}
+}For each $k\in\;\!\!\Bra{1,\dots,n},\:T\beta_{n-k+1}=T\alpha_k\in\Span{\alpha_1,\dots,\alpha_k}=\Span{\beta_n,\dots,\beta_{n-k+1}}.$\PfEnd\vspace{2pt}
 \Anchor{5BII4e11}\Anchor{5BII4e14}\ACoro (a) Supp $\Fbb=\Cbb.$ Then $\exists\,B_V$ suth $\Mt{T,B_V}$ low-trig. \;(b) $T$ up-trig $\Longleftrightarrow T\apostrophe$ up-trig.
 \SepLine
 
@@ -3724,7 +3724,7 @@ Let the min of $T$ be $p\Par{z}=\Par{z-\lambda_1}{^{\alpha_1}}\cdots\Par{z-\lamb
 Let $q\Par{z}\Par{z-\lambda_j}=p\Par{z}\Rightarrow 0=p\Par{T}=\Par{T-\lambda_jI}q\Par{T}\Rightarrow\rangep q\Par{T}\subseteq\Null\Par{T-\lambda_jI}.$\par\quad
 Let $q\Par{z}=\Par{z-\lambda_j}s\Par{z}\Rightarrow\rangep q\Par{T}\subseteq\Range\Par{T-\lambda_jI}.$ \,Note that $q\Par{T}\neq0.$\PfEnd\vspace{6pt}\quad
 \Or Let $\lambda_1,\dots,\lambda_m$ be disti eigvals. Now $V=\Null\Par{T-\lambda_kI}\oplus\Range\Par{T-\lambda_kI}$ for each $\lambda_k.$\par\quad
-Asum $V=\Sbra{\bigoplus_{i=1}^j\Null\Par{T-\lambda_iI}}\oplus\Sbra{\bigcap_{i=1}^j\Range\Par{T-\lambda_iI}}$ for $j\in\!\Bra{1,\dots,m-1}.$\par\quad
+Asum $V=\Sbra{\bigoplus_{i=1}^j\Null\Par{T-\lambda_iI}}\oplus\Sbra{\bigcap_{i=1}^j\Range\Par{T-\lambda_iI}}$ for $j\in\;\!\!\Bra{1,\dots,m-1}.$\par\quad
 Becs by (L1), $\bigcap_{i=1}^j\Range\Par{T-\lambda_iI}\supseteq\Null\Par{T-\lambda_{j+1}I},$ and by \Sbra{1.C \TIPSN{2}},\par\quad
 $\bigcap_{i=1}^j\Range\Par{T-\lambda_iI}=\Null\Par{T-\lambda_{j+1}I}\oplus\Sbra{\bigcap_{i=1}^j\Range\Par{T-\lambda_jI}\cap\Range\Par{T-\lambda_{j+1}I}}.$\par\quad
 By induc, $V=\Sbra{\Null\Par{T-\lambda_1I}\oplus\cdots\oplus\Null\Par{T-\lambda_mI}}\oplus\Sbra{\Range\Par{T-\lambda_1I}\cap\cdots\cap\Range\Par{T-\lambda_mI}}.$\par\quad
@@ -3750,7 +3750,7 @@ Supp $AB=BA\Rightarrow A_{j,j}B_{j,k}=A_{k,k}B_{j,k}.$ Asum $B_{j,k}\neq0$ with 
 	\TextA{Supp $\Fbb=\Cbb,$ $k\in\Nbp,$ and $T\in\Lm{V}$ is inv. Prove $T^k$ diag $\Rightarrow T$ diag.}
 }Let the min of $T^k$ be $p\Par{z}=\Par{z-\lambda_1}\cdots\Par{z-\lambda_m}\Rightarrow$ each $\lambda_k$ non0 and disti.\parSol{}
 Becs any non0 $\lambda\in\Cbb$ has $k$ disti $k^{\text{th}}$ roots. Let $\Bra{\mu_{1,j},\dots,\mu_{k,j}}$ be the roots of $z^k=\lambda_j.$\parSol{}
-For $x,y\in\!\Bra{1,\dots,n},\:x\neq y\Longleftrightarrow \mu_{p,x}^k=\lambda_x\neq\lambda_y=\mu_{q,y}^k$ for each $p,q\in\!\Bra{1,\dots,k}\Rightarrow\mu_{p,x}\neq\mu_{q,y}.$\parSol{}
+For $x,y\in\;\!\!\Bra{1,\dots,n},\:x\neq y\Longleftrightarrow \mu_{p,x}^k=\lambda_x\neq\lambda_y=\mu_{q,y}^k$ for each $p,q\in\;\!\!\Bra{1,\dots,k}\Rightarrow\mu_{p,x}\neq\mu_{q,y}.$\parSol{}
 Thus all $\mu$'s are dist. Let $s\Par{z}=\Par{z^k-\lambda_1}\cdots\Par{z^k-\lambda_m}=\prod_{j=1}^m\prod_{i=1}^k\Par{z-\mu_{i,j}}\Rightarrow s\Par{T}=0.$\PfEnd\vspace{3pt}
 \AExa Not true if $\Fbb=\Rbb.$ Define $T\in\Lm{\Rbb^2}:\Par{x,y}\mapsto\Par{{-y,x}}.$ No eigvals.
 \SepLine
@@ -3798,7 +3798,7 @@ Becs for each $w_k,\:\exists$ eigval $\lambda$ of $T,\:Tw_k=\lambda w_k\Rightarr
 %}Simlr in [5.67] \Par{without using the result} but to $T\apostrophe.$ \Or Becs $\lambda$ is eigval of $T\Longleftrightarrow$ of $T\apostrophe.$\parSol{}
 %%Supp $T\apostrophe\Par{\psi}=\lambda\psi$ with $\psi=c_1\varphi_1+\dots+c_n\varphi_n\neq0\Rightarrow\lambda\psi=\sum_{j=1}^n\BigBigPar{{\sum_{k=1}^nA^t_{j,k}c_kv_j}}=\sum_{j=1}^nc_j\lambda v_j.$\vspace{3pt}\parSol{}
 %%Let $\aMid{c_j}=\max\!\Bra{\aMid{c_1},\dots,\aMid{c_n}}.$ Now $\lambda c_j=\sum_{k=1}^nA^t_{j,k}c_k\Rightarrow\aXMid{\lambda-A^t_{j,j}}\leqslant\sum_{j\neq k=1}^n\aXMid{A_{k,j}}.$\PfEnd\vspace{6pt}\parSol{}
-%$\lambda\in\BigBra{z\in\Fbb:\aXMid{z-A_{j,j}}\leqslant\sum_{j\neq k=1}^n\aXMid{A^t_{j,k}}=\sum_{j\neq k=1}^n\aXMid{A_{k,j}}}$ for some $j\in\!\Bra{1,\dots,n}.$\PfEnd
+%$\lambda\in\BigBra{z\in\Fbb:\aXMid{z-A_{j,j}}\leqslant\sum_{j\neq k=1}^n\aXMid{A^t_{j,k}}=\sum_{j\neq k=1}^n\aXMid{A_{k,j}}}$ for some $j\in\;\!\!\Bra{1,\dots,n}.$\PfEnd
 %\SepLine
 \ChEnd
 
@@ -3890,7 +3890,7 @@ Which equiv \,$\Null\Par{T^{-1}-\lambda^{-1}I}{^{j-1}}v\in\Null\Par{T-\lambda I}
 \Anchor{8A6}\ProblemN{A.6}{
 	\TextA{Supp $T$ nilp, $n=\dim V,T^{n-1}\neq0.$ Prove $\nexists\,S\in\Lm{V},\,S^k=T$ for all $k>1.$}
 }Asum $\exists$ suth $S\Rightarrow S$ is nilp. Then $\null S^n=\dots=\null S^{kn}=\null T^n=V.$\parSol{}
-Now $\exists\,t\in\Nbb$ with $\Par{n-t}\:\!k\in\!\Bra{n,\dots,kn}\Rightarrow\null T^{n-t}=\null S^{nk-tk}=V.$\PfEnd
+Now $\exists\,t\in\Nbb$ with $\Par{n-t}\:\!k\in\;\!\!\Bra{n,\dots,kn}\Rightarrow\null T^{n-t}=\null S^{nk-tk}=V.$\PfEnd
 \SepLine
 
 %\Anchor{8A9}\ProblemN{9}{
@@ -3901,10 +3901,10 @@ Now $\exists\,t\in\Nbb$ with $\Par{n-t}\:\!k\in\!\Bra{n,\dots,kn}\Rightarrow\nul
 \Anchor{8A4e4}\ProblemBnoor{4E A.4}{
 	\TextA{Supp $m_T$ is a multi of $\Par{z-\lambda}{^m}$ with $m\in\Nbp.$ Prove $\dim\Null\Par{T-\lambda I}{^m}\geqslant m.$}
 }Becs $\lambda$ is eigval of $T.$ We show $z^m$ is the min of $N=\Par{T-\lambda I}\Big|{_{\Null\SmallPar{T\,-\,\lambda I}{^m}}}\Rightarrow N^m=0\neq N^{m-1}.$\parSol{}
-Let each $U_k\oplus\null N^{k-1}=\null N^k$ for $k\in\!\Bra{2,\dots,m}\Rightarrow U_k$ not invard $N\Rightarrow U_k$ non0.\parSol{}
+Let each $U_k\oplus\null N^{k-1}=\null N^k$ for $k\in\;\!\!\Bra{2,\dots,m}\Rightarrow U_k$ not invard $N\Rightarrow U_k$ non0.\parSol{}
 Thus $\null N^0\subsetneq\null N\subsetneq\cdots\subsetneq\null N^m\Rightarrow\dim\Null\Par{T-\lambda I}{^m}=\dim\null N^m\geqslant m.$\PfEnd\vspace{3pt}\parSol{}
 \Or Let $m_T\Par{z}=\Par{z-\lambda}{^m}q\Par{z}.$ We show $\zeroSubs\subsetneq\Null\Par{T-\lambda I}\subsetneq\cdots\subsetneq\Null\Par{T-\lambda I}{^m}$ by ctradic.\parSol{}
-Asum $\Null\Par{T-\lambda I}{^k}=\Null\Par{T-\lambda I}{^{k+1}}$ for $k\in\!\Bra{1,\dots,m-1}.$\parSol{}
+Asum $\Null\Par{T-\lambda I}{^k}=\Null\Par{T-\lambda I}{^{k+1}}$ for $k\in\;\!\!\Bra{1,\dots,m-1}.$\parSol{}
 Then $\Null\Par{T-\lambda I}{^k}=\Null\Par{T-\lambda I}{^m}\Rightarrow\Par{T-\lambda I}{^m}q\Par{T}v=0=\Par{T-\lambda I}{^k}q\Par{T}v.$\PfEnd
 \SepLine
 
@@ -4022,10 +4022,10 @@ Let $k$ be suth $\Null\Par{T-\lambda I}{^k}=G\Par{\lambda,T}=\Null\Par{T-\lambda
 \SepLine
 
 %\Anchor{8B9}\ProblemN{B.9}{
-%	\TextA{Supp $A,C$ are block diag matrices, and $A_k,C_k$ are of the same size $n_k$ \,for $k\in\!\Bra{1,\dots,m}.$}
+%	\TextA{Supp $A,C$ are block diag matrices, and $A_k,C_k$ are of the same size $n_k$ \,for $k\in\;\!\!\Bra{1,\dots,m}.$}
 %	\TextA{Show $AC$ is block diag and the $k^{\text{th}}$ block on the diag of $AC$ is $A_kC_k.$}
 %}Let $A=\Mt{S},C=\Mt{T},AC=\Mt{ST}\in\Fbb^{n,n},$ where $n=n_1+\dots+n_m.$\parSol{}
-%Let $B_1=\Par{e_1,\cdots,e_{n_1}},$ and $B_{k}=\Par{e_{n_1\,+\,\cdots\,+\,n_{k-1}+1},\cdots,e_{n_1\,+\,\cdots\,+\,n_k}}$ for $k\in\!\Bra{2,\dots,m}.$\vspace{2pt}\parSol{}
+%Let $B_1=\Par{e_1,\cdots,e_{n_1}},$ and $B_{k}=\Par{e_{n_1\,+\,\cdots\,+\,n_{k-1}+1},\cdots,e_{n_1\,+\,\cdots\,+\,n_k}}$ for $k\in\;\!\!\Bra{2,\dots,m}.$\vspace{2pt}\parSol{}
 %Let each $U_k=\spn B_k$ invard $S,T.$ Becs $\Mt{S\mmid_{U_k},B_k}=A_k,\Mt{T\mmid_{U_k},B_k}=C_k.$\vspace{2pt}\parSol{}
 %Now $\Mt[\Sbra]{\Par{ST}\Big|{_{U_k}}}=\Mt{S\mmid_{U_k}T\mmid_{U_k}}=A_kC_k.$\PfEnd
 %\SepLine
@@ -4038,7 +4038,7 @@ Let $k$ be suth $\Null\Par{T-\lambda I}{^k}=G\Par{\lambda,T}=\Null\Par{T-\lambda
 }We use induc on $\dim U=N.$ (i) Immed. (ii) $N>1.$ Asum it holds for smaller $U.$\parSol{}
 Supp $\lambda_1$ is an eigval of $T\mmid_U.$ Let $W\oplus G\Par{\lambda_1,T\mmid_U}=U,$ where $W=\Range\Par{T\mmid_U-\lambda_1I}{^N}$ invard $T\mmid_U.$\parSol{}
 Note that $T\mmid_U\mmid_W=T\mmid_W.$ By asum, $W=G\Par{\lambda_2,T\mmid_W}\oplus\cdots\oplus G\Par{\lambda_m,T\mmid_W}.$\parSol{}
-Now we show $G\Par{\lambda_k,T\mmid_U}\subseteq G\Par{\lambda_k,T\mmid_W}$ for each $k\in\!\Bra{2,\dots,m}.$\parSol{}
+Now we show $G\Par{\lambda_k,T\mmid_U}\subseteq G\Par{\lambda_k,T\mmid_W}$ for each $k\in\;\!\!\Bra{2,\dots,m}.$\parSol{}
 $\forall v\in G\Par{\lambda_k,T\mmid_U},\exists\,!\,u_1\in G\Par{\lambda_1,T\mmid_U},w_k\in G\Par{\lambda_k,T\mmid_W},\:v=u_1+w_2+\dots+w_m.$ By [8.13].\PfEnd\vspace{3pt}
 \AComm Note that generally, $X\oplus Y\supseteq U\neq\Par{X\cap U}\oplus\Par{Y\cap U},$ and $\Par{X+U}\cap\Par{Y+U}\neq U.$\vspace{-2pt}
 \SepLine
@@ -4108,7 +4108,7 @@ Note that if $\alpha_j\not\in\Rbb,$ then $\exists\,\alpha_i=\overline{\alpha_j}.
 %\SepLine
 
 \Anchor{8N8.55}\ProblemBX[]{\NoteForSmall{[8.55]}}{
-	Supp $N^m=0\neq N^{m-1}.$ Let each $\null N^k=\null N^{k-1}\oplus U_k$ for $k\in\!\Bra{2,\dots,m}.$\TextB{}
+	Supp $N^m=0\neq N^{m-1}.$ Let each $\null N^k=\null N^{k-1}\oplus U_k$ for $k\in\;\!\!\Bra{2,\dots,m}.$\TextB{}
 %	(1) $\null N^{m-1}\oplus U_{m-1}=\null N^m=\Par{\null N^{m-2}\oplus U_{m-2}}\oplus U_{m-1}.$\TextB{}
 %	(2) $\null N^{m-j}\oplus U_{m-j}=\null N^{m-j+1}.$\, (3) $\null I\oplus U_0=\null N.$\TextB{}
 	Start by $B_{U_m}=\Par{v_{1,1},\dots,v_{n_1,1}}.$\, But $\Par{Nv_{1,1},\dots,Nv_{n_1,1}}$ might be liney dep. Invalid method.\par\vspace{2pt}
