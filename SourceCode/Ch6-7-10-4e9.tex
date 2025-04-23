@@ -345,17 +345,17 @@ Let $W=\bigcap_{\lambda\,\in\,\Fbb}E\Par{\lambda,T}{^\perp}$ invard $T,T^*.$ No 
 Then $Te_{k}=A_{k,k}e_{k}\Rightarrow\overline{A_{k,k}}e_1+\dots+\overline{A_{k,n}}e_n=T^*e_{k}\Rightarrow A_{k,k+1}=\dots=A_{k,n}=0.$\PfEnd
 \SepLine
 
-\Anchor{7B4e9}\ProblemBnoor{4E 9}{
-	\TextA{Supp $\Fbb=\Cbb,T\in\Lm{V}$ is normal. Prove $\exists\,p\in\PoFi,\,T^*=p\Par{T}.$}
-}Let $\lambda_1,\dots,\lambda_m$ are disti eigvals of $T.$ \,By Exe (4.5), $\exists\,!\,p\in\PoF{m},$ each $p\Par{\lambda_k}=\overline{\lambda_k}.$ \,Immed.
+%\Anchor{7B4e9}\ProblemBnoor{4E 9}{
+%	\TextA{Supp $\Fbb=\Cbb,T\in\Lm{V}$ is normal. Prove $\exists\,p\in\PoFi,\,T^*=p\Par{T}.$}
+%}Let $\lambda_1,\dots,\lambda_m$ are disti eigvals of $T.$ \,By Exe (4.5), $\exists\,!\,p\in\PoF{m},$ each $p\Par{\lambda_k}=\overline{\lambda_k}.$ \,Immed.
 %Let $p\Par{z}=\sum_{j=1}^m{}${\Large\envFontSmall[\footnotesize]\def\SmallPar{\Par}$\frac{\Par{z\,-\,\lambda_1}\,\cdots\,\Par{z\,-\,\lambda_{j-1}}\Par{z\,-\,\lambda_{j+1}}\,\cdots\,\Par{z\,-\,\lambda_m}}{\Par{\lambda_j\,-\,\lambda_1}\,\cdots\,\Par{\lambda_j\,-\,\lambda_{j-1}}\Par{\lambda_j\,-\,\lambda_{j+1}}\,\cdots\,\Par{\lambda_j\,-\,\lambda_m}}$}${\,}\overline{\lambda_j}\Rightarrow$ each $p\Par{\lambda_j}=\overline{\lambda_j}.$\vspace{3pt}\parSol{}
-\PfEnd
-\SepLine
+%\PfEnd
+%\SepLine
 
 \Anchor{7B4e12}\ProblemBnoor{4E 12}{
 	\TextA{Supp $\Fbb=\Cbb,T\in\Lm{V}$ is normal, $S\in\Lm{V}$ and $ST=TS.$ Prove $ST^*=T^*S.$}
 }Let $B_V=\Par{e_1,\dots,e_n}$ be orthon eigvecs of $T$ corres $\lambda_1,\dots,\lambda_n.$\parSol{}
-Becs each $E\Par{\lambda_k,T}=E\Par{\overline{\lambda_k},T^*}$ invard $S\Rightarrow ST^*e_k=\overline{\lambda_k}Se_k=T^*Se_k.$ \;\Or By Exe (4E 9).\PfEnd
+Becs each $E\Par{\lambda_k,T}=E\Par{\overline{\lambda_k},T^*}$ invard $S\Rightarrow ST^*e_k=\overline{\lambda_k}Se_k=T^*Se_k.$ \;\Or Becs $T^*=p\Par{T}.$\PfEnd
 \SepLine
 
 \Anchor{7B4e20}\ProblemBnoor{4E 20}{
@@ -378,9 +378,38 @@ By asum, $\exists$ orthon $B_{U^\perp}$ of eigvecs of $T\mmid_{U^\perp}.$ Now $B
 \SepLine
 \ChEnd\pagebreak
 
-\ChDecl{Ch7C}{7.C}{}
+\ChDecl{Ch7C}{7.C [4E]}{}
 
 \vspace{4pt}
 
+\Anchor{7C4}\ProblemN{4}{
+	\TextA{Supp $1<n\in\Nbb.$ Show $\exists\,A\in\Fbb^{n,n}$ with all ents positive numbers and $A=\overline{A^t},$}
+	\TextA{while wrto std bss $\Mt{T}=A$ but $T\in\Lm{\Fbb^{n}}$ is not posi.}
+}
+\SepLine
+
+%\Anchor{7C20}\ProblemN{20}{
+%	\TextA{}
+%}
+%\SepLine
+
+\Anchor{7C22}\ProblemN{22}{
+	\TextA{Supp $T$ posi, $u\in V$ with $\Dvert{u}=1$ suth $\Dvert{Tu}\geqslant\Dvert{Tv}$ for all $v\in V$ with $\Dvert{v}=1.$}
+	\TextA{Show $u$ is eigvec corres the largest eigval of $T.$}
+}
+\SepLine
+
+\Anchor{7C23}\ProblemN{23}{
+	\TextA{Define $\Ang{\cdot,\cdot}{_T}$ by $\Ang{u,v}{_T}=\Ang{Tu,v}$ for $T\in\Lm{V}$ and $u,v\in V.$}
+	\TextA{Prove every inner prod on $V$ is of the form $\Ang{\cdot,\cdot}{_T}$ for some posi inv $T.$}
+}
+\SepLine
+
+\ChEnd
+
+
+\ChDecl{Ch7D}{7.D [4E]}{}
+
+\vspace{4pt}
 
 \ChEnd
