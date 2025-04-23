@@ -382,27 +382,36 @@ By asum, $\exists$ orthon $B_{U^\perp}$ of eigvecs of $T\mmid_{U^\perp}.$ Now $B
 
 \vspace{4pt}
 
-\Anchor{7C4}\ProblemN{4}{
-	\TextA{Supp $1<n\in\Nbb.$ Show $\exists\,A\in\Fbb^{n,n}$ with all ents positive numbers and $A=\overline{A^t},$}
-	\TextA{while wrto std bss $\Mt{T}=A$ but $T\in\Lm{\Fbb^{n}}$ is not posi.}
-}
-\SepLine
-
-%\Anchor{7C20}\ProblemN{20}{
-%	\TextA{}
+%\Anchor{7C4}\ProblemN{4}{
+%	\TextA{Supp $1<n\in\Nbb.$ Show $\exists\,A\in\Fbb^{n,n}$ with all ents positive numbers and $A=\overline{A}{^t},$}
+%	\TextA{while wrto std bss $\Mt{T}=A$ but $T\in\Lm{\Fbb^{n}}$ is not posi.}
 %}
 %\SepLine
+
+\Anchor{7C20}\ProblemN{20}{
+	\TextA{Supp $T\in\Lm{V}$ and orthon $B_V=\Par{e_1,\dots,e_n}.$}
+	\TextA{Supp $v_1,\dots,v_n\in V$ and each $\Ang{Te_k,\:\!e_j}=\Ang{v_k,v_j}.$ Prove $T$ posi.\vspace{2pt}}
+%$\overline{\Ang{v_j,v_k}}=\Ang{v_k,v_j}=\Ang{Te_k,\:\!e_j}=\overline{\Ang{Te_j,\:\!e_k}}\Rightarrow\Ang{Te_k,\:\!e_j}=\Ang{e_k,\:\!Te_j}\Rightarrow\Mt{T}=\overline{\Mt{T}}{^t}.$\vspace{1pt}\parSol{}
+%\Or $\forall v=\sum_{k=1}^na_ke_k,\:w=\sum_{j=1}^nb_je_j,\;\Ang{Tv,w}=\sum_{k=1}^n\sum_{j=1}^na_k\overline{b_j}\:\!\Ang{e_k,\:\!Te_j}=\Ang{v,Tw}.$\vspace{2pt}\parSol{}
+%Let $v=\sum_{k=1}^na_ke_k.$ Then $\Ang{Tv,v}=\sum_{k=1}^n\sum_{j=1}^na_k\overline{a_j}\:\!\Ang{Te_k,\:\!e_j}.$ Note that $\Ang{Te_k,\:\!e_j}=\overline{\Ang{Te_j,\:\!e_k}}.$\vspace{2pt}\parSol{}
+%Hence each $a_k\overline{a_j}\:\!\Ang{Te_k,\:\!e_j}+a_j\overline{a_k}\:\!\Ang{Te_j,\:\!e_k}=2\REAL\:a_k\overline{a_j}\:\!\Ang{Te_k,\:\!e_j}.$ 又 Each $\Ang{Te_k,\:\!e_k}=\Ang{v_k,\:\!v_k}\geqslant 0.$\PfEnd\vspace{6pt}\parSol{}
+}Define $R\in\Lm{V}:e_k\mapsto v_k\Rightarrow\Ang{Te_k,\:\!e_j}=\Ang{Re_k,\:\!Re_j}=\Ang{R^*Re_k,\:\!e_j}\Rightarrow\Mt{T,B_V}=\Mt{R^*R,B_V}.$\PfEnd
+\SepLine
 
 \Anchor{7C22}\ProblemN{22}{
 	\TextA{Supp $T$ posi, $u\in V$ with $\Dvert{u}=1$ suth $\Dvert{Tu}\geqslant\Dvert{Tv}$ for all $v\in V$ with $\Dvert{v}=1.$}
 	\TextA{Show $u$ is eigvec corres the largest eigval of $T.$}
-}
+}Supp orthon eigvecs $B_V=\Par{e_1,\dots,e_n}$ corres $\lambda_1\geqslant\dots\geqslant\lambda_n.$ \;Let $u=\sum_{k=1}^nc_ke_k\Rightarrow\sum_{k=1}^n\aMidsq{c_k}=1.$\vspace{1pt}\parSol{}
+Supp $v=\sum_{j=1}^na_je_j$ and $\Dvert{v}=1.$ Then $\Dvertsq{Tv}=\sum_{j=1}^n\aMidsq{\lambda_j}\aMidsq{a_j}\leqslant\aMidsq{\lambda_1}.$ Simlr, $\Dvertsq{Tu}\leqslant\aMidsq{\lambda_1}.$\vspace{1pt}\parSol{}
+又 $\Dvertsq{Tv}=\aMidsq{\lambda_1}\Longleftrightarrow v=a_1e_1+\dots+a_Je_J,$ where $\lambda_1=\cdots=\lambda_J>\lambda_{J+1},$ if $\lambda_n\neq\lambda_1;$ \,othws $J=n.$\vspace{1pt}\parSol{}
+Hence $\sum_{k=1}^n\aMidsq{\lambda_k}\aMidsq{c_k}=\Dvertsq{Tu}=\sum_{k=1}^n\aMidsq{\lambda_1}\aMidsq{c_k}\Rightarrow\sum_{k=J}^n\!\Sbra{\aMidsq{\lambda_1}-\aMidsq{\lambda_k}}\cdot\aMidsq{c_k}=0.$\PfEnd
+\PfEnd
 \SepLine
 
 \Anchor{7C23}\ProblemN{23}{
-	\TextA{Define $\Ang{\cdot,\cdot}{_T}$ by $\Ang{u,v}{_T}=\Ang{Tu,v}$ for $T\in\Lm{V}$ and $u,v\in V.$}
-	\TextA{Prove every inner prod on $V$ is of the form $\Ang{\cdot,\cdot}{_T}$ for some posi inv $T.$}
-}
+	\TextA{Supp $\Ang{\cdot,\cdot}{_1},\Ang{\cdot,\cdot}{_2}$ are inner prods on $V.$ Prove $\exists$ inv posi $T\in\Lm{V},\;\Ang{u,v}{_2}=\Ang{Tu,v}{_1}.$}
+}Let $\Par{e_1,\dots,e_n},\Par{\,f_1,\dots,f_n}$ be orthon bses wrto $\Ang{\cdot,\cdot}{_2},\Ang{\cdot,\cdot}{_1}.$ Define $R\in\Lm{V}$ by $Re_k=f_k.$\parSol{}
+$\forall u=\sum_{i=1}^nx_ie_i,\:v=\sum_{i=1}y_ie_i,\;\Ang{u,v}{_2}=x_1\overline{y_1}+\dots+x_n\overline{y_n}=\Ang{Ru,Rv}{_1}=\Ang{R^*Ru,v}{_1}.$\PfEnd
 \SepLine
 
 \ChEnd
