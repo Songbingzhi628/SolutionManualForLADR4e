@@ -4150,18 +4150,23 @@ Thus the only Jordan block of $\Mt{N}$ is $\Mt{N}$ itself. \;Convly true as well
 \Blind{\Or}(b) Supp $T$ has only one eigval. Let
 $m_T\Par{z}=\Par{z-\lambda}{^m}$ with $m<\dim V.$\par\quad\Hb
 \Blind{\Or}Becs $\exists$ Jordan $B_V=\Par{\underbrace{v_{1,1},\cdots,v_{m_1,1}}_{\text{bss for } U},\underbrace{v_{1,2},\cdots,v_{m_2,2},\cdots,v_{1,k},\cdots,v_{m_k,k}}_{\text{bss for }W}}$ for $T.$\PfEnd\vspace{4pt}
-\SepLine\ChEnd\pagebreak
+\SepLine
+\ChEnd\pagebreak
 
 \ChDecl{Ch9A}{9.A}{\quad{\ANote {\FontSmall $V$ denotes a finide non0 vecsp over $\Fbb.$}}}
 
 \vspace{4pt}
 
-\BulletPointX\NoteForSmall{[9.12]}\;\;Another proof: \;$\overline{T_{\!\Cbb}\Par{u+\i v}}=\overline{Tu+\i Tv}=Tu-\i Tv=T_{\!\Cbb}\Par{\overline{u+\i v}}.$\TextB{}
+\Anchor{9AN910}\BulletPointX\NoteForSmall{[9.10]}\;\;Let $q\in\PoCi$ be the min of $T_{\!\Cbb}.$ Note that $A=\Mt{T_{\!\Cbb}}=\Mt{T}.$\TextB{}
+Then $q\Par{A}=0=\overline{q\Par{A}}=\overline{q}\Par{A}\Rightarrow\overline{q}\Par{T_{\!\Cbb}}=q\Par{T_{\!\Cbb}}=0\Rightarrow q=\overline{q}\Rightarrow q\in\PoRi.$ 又 $q\Par{T}=0.$
+\SepLine
+
+\Anchor{9AN912}\BulletPointX\NoteForSmall{[9.12]}\;\;Another proof: \;$\overline{T_{\!\Cbb}\Par{u+\i v}}=\overline{Tu+\i Tv}=Tu-\i Tv=T_{\!\Cbb}\Par{\overline{u+\i v}}.$\TextB{}
 $\overline{\Par{T_{\!\Cbb}-\lambda I}\Par{u+\i v}}=\overline{T_{\!\Cbb}\Par{u+\i v}-\lambda\Par{u+\i v}}=T_{\!\Cbb}\Par{u-\i v}-\overline{\lambda}\Par{u-\i v}=\Par{T_{\!\Cbb}-\overline{\lambda}I}\Par{\overline{u+\i v}}.$\TextB{}
 We use induc on $m$ to show $\overline{\Par{T_{\!\Cbb}-\lambda I}{^m}\Par{u+\i v}}=\Par{T_{\!\Cbb}-\overline{\lambda}I}{^m}\Par{\overline{u+\i v}}.$ (i) Immed. (ii) $m>1.$\TextB{}
 Asum it holds for $\Par{m-1}.$ Let $\Par{T_{\!\Cbb}-\lambda I}{^{m-1}}\Par{u+\i v}=x+\i y\Rightarrow\Par{T_{\!\Cbb}-\overline{\lambda}I}{^{m-1}}\Par{\overline{u+\i v}}=x-\i y.$\TextB{}
 Then $\overline{\Par{T_{\!\Cbb}-\lambda I}{^m}\Par{u+\i v}}=\overline{\Par{T_{\!\Cbb}-\lambda I}\Par{x+\i y}}=\Par{T_{\!\Cbb}-\overline{\lambda}I}\Par{x-\i y}=\Par{T_{\!\Cbb}-\overline{\lambda}I}{^m}\Par{\overline{u+\i v}}.$\PfEnd\vspace{3pt}
-\BulletPointX\NoteForSmall{[9.17]}\;\;Detailed proof:\TextB{}
+\Anchor{9AN917}\BulletPointX\NoteForSmall{[9.17]}\;\;Detailed proof:\TextB{}
 Let $B=\Par{u_1+\i v_1,\dots,u_m+\i v_m}$ be a bss of $G\Par{\lambda,T_{\!\Cbb}}.$ By [9.12], $\overline{B}=\Par{u_1-\i v_1,\dots,u_m-\i v_m}$ in $G\Par{\overline{\lambda},T_{\!\Cbb}}.$\TextB{}
 (a) If $a_1\Par{u_1-\i v_1}+\dots+a_m\Par{u_m-\i v_m}=0.$ Conjuging, now each $\overline{a_k}=0.$ Liney indep.\TextB{}
 (b) $\forall u-\i v\in G\Par{\overline{\lambda},T_{\!\Cbb}},u+\i v\in G\Par{\lambda,T_{\!\Cbb}}\Rightarrow u+\i v\in\spn B\Rightarrow u-\i v\in\spn\overline{B}.$\PfEnd
