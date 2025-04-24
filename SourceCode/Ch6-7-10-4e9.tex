@@ -311,9 +311,8 @@ Note that $T$ normal $\Rightarrow T^k$ normal. Then $\range T^k=\Par{\null T^k}{
 %\Or $T=0\Rightarrow\forall w\in W,\forall v\in V,\Ang{v,T^*w}=\Ang{Tv,w}=0\Rightarrow\range T^*\subseteq V^\perp.$\parSol{}
 %$T^*T=0\Rightarrow\forall v\in V,\Ang{Tv,Tv}=\Ang{v,T^*Tv}=0\Rightarrow T=0.$\PfEnd
 %\SepLine
-\ChEnd
-\pagebreak
 
+\vspace{8pt}
 \ChDecl{Ch7B}{7.B}{}
 
 \vspace{4pt}
@@ -323,7 +322,7 @@ Note that $T$ normal $\Rightarrow T^k$ normal. Then $\range T^k=\Par{\null T^k}{
 }Let eigvecs $B_V=\Par{e_1,\dots,e_n}$ be orthon wrto $\Ang{e_j,\:\!e_k}{_V}=\delta_{j,k}.$ \,Becs $\Mt{T}=\Mt{T}{^t}=\Mt{T^*}.$\PfEnd\vspace{2pt}
 \Anchor{7B4e24}\ANote (a) $\Mt{T}=\overline{\Mt{T}}{^t}$ wrto some $B_V\Longleftrightarrow T$ self-adj wrto some $\Ang{\cdot,\cdot}{_V}$ $\Longleftrightarrow$ diag.\parNot
 (b) $\Mt{T}\overline{\Mt{T}}{^t}=\overline{\Mt{T}}{^t}\Mt{T}$ wrto some $B_V\Longleftrightarrow T$ normal wrto some $\Ang{\cdot,\cdot}{_V}$ $\Longleftrightarrow$ diag on $\Cbb.$
-\SepLine
+\SepLine\pagebreak
 
 %\Anchor{7B7}\ProblemN{7}{
 %	\TextA{Supp $\Fbb=\Cbb,T\in\Lm{V}$ is normal and $T^9=T^8.$ Prove $T^2=T$ is self-adj.}
@@ -365,18 +364,17 @@ Becs each $E\Par{\lambda_k,T}=E\Par{\overline{\lambda_k},T^*}$ invard $S\Rightar
 Let $B_V=\Par{e_1,\dots,e_n}$ be orthon eigvecs. Then $B_{U^\perp}=\Par{e_{m+1},\dots,e_n}.$\parSol{}
 (a) Now $U^\perp$ invard $T.$ \;Apply to $T^*\Rightarrow U$ invard $T^*.$\parSol{}
 (b) $\forall u,v\in U,\:\BigAng{v,\Par{T\mmid_U}{^*}u}=\BigAng{T\mmid_U v,u}=\BigAng{v,T^*\mmid_U u}\Rightarrow\BigPar{\Par{T\mmid_U}{^*}-T^*\mmid_U}u\in U\cap U^\perp.$\vspace{3pt}\parSol{}
-(c) $\forall u\in U,\:\BigDvert{T\mmid_U u}=\BigDvert{T^*\mmid_U u}=\BigDvert{\Par{T\mmid_U}{^*}u}.$\vspace{2pt}\parSol{\Hc}
-\Or $T\mmid_U\Par{T\mmid_U}{^*}=TT^*\mmid_U=T^*T\mmid_U=T^*\mmid_UT\mmid_U=\Par{T\mmid_U}{^*}T\mmid_U.$\PfEnd\vspace{4pt}\parSol{}
-\Or Let orthon $B_U=\Par{e_1,\dots,e_m}\Rightarrow B_V=\Par{e_1,\dots,e_n}\Rightarrow B_{U^\perp}=\Par{e_{m+1},\dots,e_n}.$ Let $A=\Mt{T,B_V}.$\parSol{}
-Let $A$ be block matrix {\small$\begin{pmatrix}X &\hspace{-4pt} Y\\[-2pt] 0 &\hspace{-4pt} Z\end{pmatrix}$}, where $X\in\Fbb^{m,m},Y\in\Fbb^{m,\:\!n-m},Z\in\Fbb^{n-m,\:\!n-m}.$\parSol{}
-(a) Becs $\sum_{j=1}^m\Dvertsq{X_{\cdot,j}}=\sum_{j=1}^m\Dvertsq{Te_j}=\sum_{j=1}^m\Dvertsq{T^*e_j}=\sum_{j=1}^m\BigDvertsq{\overline{X_{j,\cdot}}}+\sum_{j=1}^m\BigDvertsq{\overline{Y_{j,\cdot}}}\Rightarrow Y=0.$\vspace{2pt}\parSol{\Ha}
-Apply to $T^*\Rightarrow U$ invard $T^*.$ \Or Becs $\Mt{T^*,B_V}=\overline{A}{^t}={}${\small$\begin{pmatrix}\overline{X}{^t} &\hspace{-4pt} 0\\[-2pt] 0 &\hspace{-4pt} \overline{Z}{^t}\end{pmatrix}$}.\parSol{}
-(b) $\Mt{T\mmid_U,B_V}=X\Rightarrow\Mt[\BigPar]{\Par{T\mmid_U}{^*},B_V}=\overline{X}{^t}.$ 又 $\Mt{T^*\mmid_U,B_V}=\overline{X}{^t}.$\PfEnd\vspace{4pt}
+(c) $\forall u\in U,\:\BigDvert{T\mmid_U u}=\BigDvert{T^*\mmid_U u}=\BigDvert{\Par{T\mmid_U}{^*}u}.$ \;\Or $T\mmid_U\Par{T\mmid_U}{^*}=T^*T\mmid_U=T^*\mmid_UT\mmid_U.$\PfEnd\vspace{4pt}
+%\Or Let orthon $B_U=\Par{e_1,\dots,e_m}\Rightarrow B_V=\Par{e_1,\dots,e_n}\Rightarrow B_{U^\perp}=\Par{e_{m+1},\dots,e_n}.$ Let $A=\Mt{T,B_V}.$\parSol{}
+%Let $A$ be block matrix {\small$\begin{pmatrix}X &\hspace{-4pt} Y\\[-2pt] 0 &\hspace{-4pt} Z\end{pmatrix}$}, where $X\in\Fbb^{m,m},Y\in\Fbb^{m,\:\!n-m},Z\in\Fbb^{n-m,\:\!n-m}.$\parSol{}
+%(a) Becs $\sum_{j=1}^m\Dvertsq{X_{\cdot,j}}=\sum_{j=1}^m\Dvertsq{Te_j}=\sum_{j=1}^m\Dvertsq{T^*e_j}=\sum_{j=1}^m\BigDvertsq{\overline{X_{j,\cdot}}}+\sum_{j=1}^m\BigDvertsq{\overline{Y_{j,\cdot}}}\Rightarrow Y=0.$\vspace{2pt}\parSol{\Ha}
+%Apply to $T^*\Rightarrow U$ invard $T^*.$ \Or Becs $\Mt{T^*,B_V}=\overline{A}{^t}={}${\small$\begin{pmatrix}\overline{X}{^t} &\hspace{-4pt} 0\\[-2pt] 0 &\hspace{-4pt} \overline{Z}{^t}\end{pmatrix}$}.\parSol{}
+%(b) $\Mt{T\mmid_U,B_V}=X\Rightarrow\Mt[\BigPar]{\Par{T\mmid_U}{^*},B_V}=\overline{X}{^t}.$ 又 $\Mt{T^*\mmid_U,B_V}=\overline{X}{^t}.$\PfEnd\vspace{4pt}
 \Anchor{7B13}\ANote Another proof of [7.24]: Induc step: For $\dim V>1.$ Asum it holds for smaller dim.\parNot
 Let $u$ be an eigvec with $\Dvert{u}=1.$ Let $B_U=\Par{u}\Rightarrow U$ invard $T,$ so is $U^\perp\Rightarrow T\mmid_{U^\perp}$ normal.\parNot
 By asum, $\exists$ orthon $B_{U^\perp}$ of eigvecs of $T\mmid_{U^\perp}.$ Now $B_V=B_U\cap B_{U^\perp}$ of orthon eigvecs.\PfEnd
 \SepLine
-\ChEnd\pagebreak
+\ChEnd
 
 \ChDecl{Ch7C}{7.C [4E]}{}
 
@@ -390,7 +388,7 @@ By asum, $\exists$ orthon $B_{U^\perp}$ of eigvecs of $T\mmid_{U^\perp}.$ Now $B
 
 \Anchor{7C20}\ProblemN{20}{
 	\TextA{Supp $T\in\Lm{V}$ and orthon $B_V=\Par{e_1,\dots,e_n}.$}
-	\TextA{Supp $v_1,\dots,v_n\in V$ and each $\Ang{Te_k,\:\!e_j}=\Ang{v_k,v_j}.$ Prove $T$ posi.\vspace{2pt}}
+	\TextA{Supp $v_1,\dots,v_n\in V$ and each $\Ang{Te_k,\:\!e_j}=\Ang{v_k,v_j}.$ Prove $T$ posi.\vspace{0pt}}
 %$\overline{\Ang{v_j,v_k}}=\Ang{v_k,v_j}=\Ang{Te_k,\:\!e_j}=\overline{\Ang{Te_j,\:\!e_k}}\Rightarrow\Ang{Te_k,\:\!e_j}=\Ang{e_k,\:\!Te_j}\Rightarrow\Mt{T}=\overline{\Mt{T}}{^t}.$\vspace{1pt}\parSol{}
 %\Or $\forall v=\sum_{k=1}^na_ke_k,\:w=\sum_{j=1}^nb_je_j,\;\Ang{Tv,w}=\sum_{k=1}^n\sum_{j=1}^na_k\overline{b_j}\:\!\Ang{e_k,\:\!Te_j}=\Ang{v,Tw}.$\vspace{2pt}\parSol{}
 %Let $v=\sum_{k=1}^na_ke_k.$ Then $\Ang{Tv,v}=\sum_{k=1}^n\sum_{j=1}^na_k\overline{a_j}\:\!\Ang{Te_k,\:\!e_j}.$ Note that $\Ang{Te_k,\:\!e_j}=\overline{\Ang{Te_j,\:\!e_k}}.$\vspace{2pt}\parSol{}
@@ -413,9 +411,6 @@ Hence $\sum_{k=1}^n\aMidsq{\lambda_k}\aMidsq{c_k}=\Dvertsq{Tu}=\sum_{k=1}^n\aMid
 }Let $\Par{e_1,\dots,e_n},\Par{\,f_1,\dots,f_n}$ be orthon bses wrto $\Ang{\cdot,\cdot}{_2},\Ang{\cdot,\cdot}{_1}.$ Define $R\in\Lm{V}$ by $Re_k=f_k.$\parSol{}
 $\forall u=\sum_{i=1}^nx_ie_i,\:v=\sum_{i=1}y_ie_i,\;\Ang{u,v}{_2}=x_1\overline{y_1}+\dots+x_n\overline{y_n}=\Ang{Ru,Rv}{_1}=\Ang{R^*Ru,v}{_1}.$\PfEnd
 \SepLine
-
-\ChEnd
-
 
 \ChDecl{Ch7D}{7.D [4E]}{}
 
