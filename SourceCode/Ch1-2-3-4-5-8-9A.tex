@@ -3528,7 +3528,7 @@ $ce_1+bTe_1=-T^2 e_1\Longleftrightarrow{}${\small$\begin{pmatrix}1 &\hspace{-6pt
 		
 \Anchor{5BI4e11}\ProblemBnoor{4E I.11}{
 	\TextA{Supp $V$ is 2\hspace{1pt}-\hspace{1pt}dim, $T\in\Lm{V}$ with the min $p$, and $\Mt[\BigPar]{T,\Par{v,w}}={}${\large$\begin{pmatrix} a &\hspace{-4pt} c\\[-4pt] b &\hspace{-4pt} d\end{pmatrix}.$}\vspace{-8pt}}
-	\PrePa\TextA{Show $q\Par{z}=z^2-\Par{a+d}z+\Par{ad-bc}$ is a multi of $p.$}
+	\PrePa\TextA{Show $q\Par{z}=\Par{z-a}\Par{z-d}-bc$ is a multi of $p.$}
 	\PrePb\TextA{Show if $b=c=0$ and $a=d,$ then $p\Par{z}=z-a;$\;othws $p=q.$}
 }(a) $Tv=av+bw\Rightarrow\Par{T-aI}v=bw\Rightarrow\Par{T-dI}\Par{T-aI}v=bTw-bdw=bcv.$\parSol{\Ha}
 $Tw=cv+dw\Rightarrow \Par{T-dI}w=cv\Rightarrow\Par{T-aI}\Par{T-dI}w=cTv-acv=bcw.$\vspace{0pt}\parSol{}
@@ -3946,9 +3946,9 @@ Let $v$ be suth $T^{m-1}v\neq 0=T^mv\Rightarrow\Par{v,{}$\uline{$Tv,\dots,T^{m-1
 \SepLine
 
 \Anchor{8A4e12}\ProblemBnoor{4E A.12}{
-	\TextA{Supp every $v\in V$ is a gigvec of $T.$ Prove $V=G\Par{\lambda,T}.$}
-}Becs for any liney indep $\Par{v,w},$ $\Par{v,w,v+w}$ of gigvecs is liney dep; say corres $\alpha,\beta,\gamma$ repectly.\parSol{}
-If $\alpha=\beta$ then done. If $\alpha=\gamma,v,v+w\in G\Par{\alpha,T}\Rightarrow w\in G\Par{\alpha,T}.$ If $\beta=\gamma,$ then simlr.\parSol{}
+	\TextA{Supp every $v\in V$ is a g-eigvec of $T.$ Prove $V=G\Par{\lambda,T}.$}
+}Becs for any liney indep $\Par{v,w},$ $\Par{v,w,v+w}$ of g-eigvecs is liney dep; say corres $\alpha,\beta,\gamma$ repectly.\parSol{}
+If $\alpha=\beta$ then done. If $\alpha=\gamma,$ then $v,v+w\in G\Par{\alpha,T}\Rightarrow w\in G\Par{\alpha,T}.$ If $\beta=\gamma,$ then simlr.\parSol{}
 Thus $\alpha=\beta=\gamma.$ Any two liney indep $v,w$ corres one eigval.\PfEndB
 \SepLine
 
@@ -3990,7 +3990,7 @@ Then $D\mmid_{G_k}=\lambda_kI.$ Let $N=T-D\Rightarrow N\mmid_{G_k}=\Par{T-D}\Big
 Becs $DN=DT-D^2,ND=TD-D^2,$ 又 each $TDv_k=\lambda_kTv_k=DTv_k\Rightarrow TD=DT.$\PfEnd\vspace{4pt}\parSol{}
 \Or Define $P_{\!\!\!\:j}\in\Lm{V}:w_j+u\mapsto w_j,$ where $w_j\in G_j,u\in\bigoplus_{i\neq j}G_i.$\parSol{}
 Now $T=T\mmid_{G_1}P_{\!\!\!\:1}+\dots+T\mmid_{G_m}P_{\!\!\!\:m}.$ Let $N_j=T\mmid_{G_j}-\lambda_jI\Rightarrow N_1P_{\!\!\!\:1}+\dots+N_mP_{\!\!\!\:m}:v_j\mapsto N_kv_j.$\parSol{}
-Where $B_V=\Par{v_1,\dots,v_n}$ are gigvecs and $v_j\in G_k.$ Let $D=\lambda_1P_{\!\!\!\:1}+\dots+\lambda_mP_{\!\!\!\:m}:v_j\mapsto\lambda_kv_j.$\parSol{}
+Where $B_V=\Par{v_1,\dots,v_n}$ are g-eigvecs and $v_j\in G_k.$ Let $D=\lambda_1P_{\!\!\!\:1}+\dots+\lambda_mP_{\!\!\!\:m}:v_j\mapsto\lambda_kv_j.$\parSol{}
 Hence $T=D+N,$ and $DN=ND:v_j\mapsto\lambda_kN_kv_j.$\PfEnd
 \SepLine\pagebreak
 
@@ -4133,7 +4133,7 @@ Thus each $p_k\Par{z}=\Par{z-\lambda_1}{^{d_{1,k}}}\!\cdots\Par{z-\lambda_n}{^{d
 
 %\Anchor{8C4e12}\ProblemBnoor{4E C.12}{
 %	\TextA{Supp $T\in\Lm{V}$ diag. Show $\Mt{T}$ diag wrto any Jordan $B_V.$}
-%}Each $v_k$ of a Jordan $B_V$ is a gigvec; so is an eigvec, by Exe (B.5).\PfEnd\vspace{2pt}\parSol{}
+%}Each $v_k$ of a Jordan $B_V$ is a g-eigvec; so is an eigvec, by Exe (B.5).\PfEnd\vspace{2pt}\parSol{}
 %\Or Let $A$ be a Jordan block diag matrix of $T.$ By Exe (D.3) and [4E 5.62].\PfEnd
 %\SepLine
 
@@ -4202,7 +4202,7 @@ Let $B_Q=\Par{u_1,v_1,\dots,u_\beta,v_{\:\!\!\beta}}\Rightarrow\Mt{T,B_Q}=\footn
 
 %\Anchor{9A18}\ProblemN{18}{
 %	\TextA{Supp $\Fbb=\Rbb,$ $T\in\Lm{V},$ and all eigvals of $T_{\!\Cbb}$ are real.}
-%	\TextA{Show {\tgnr\large(a)} $\exists\,B_V$ suth $T$ up-trig; \:{\tgnr\large(b)} $\exists\,B_V$ of gigvecs of $T.$}
+%	\TextA{Show {\tgnr\large(a)} $\exists\,B_V$ suth $T$ up-trig; \:{\tgnr\large(b)} $\exists\,B_V$ of g-eigvecs of $T.$}
 %}(a) By [9.10] and [4E 5.44], immed. \;\Or Using induc on $\dim V.$ (i) Immed. (ii) $\dim V>1.$\parSol{\Ha}
 %Asum it holds for smaller $V.$ Supp all eigvals of $T_{\!\Cbb}$ are real. Let $U=\Range\Par{T-\lambda I}.$\parSol{\Ha}
 %Then all eigvals of $ T_{\!\Cbb}\mmid_{U_{\Cbb}}=\Par{T\mmid_U}{_{\Cbb}}$ are real. By asum, simlr to [5.27].\vspace{3pt}\parSol{}
