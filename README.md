@@ -52,7 +52,8 @@
 > - 第3章F节22题(b)问，
 > - 第4章14题(a)问，
 > - 第5章A节27题（有关第2章的小错误），
-> - ······
+> - 第7章D节16问（多项式作用于算子的错误使用），
+> - ...
 
 ---
 
@@ -146,8 +147,9 @@ There is no copyright notice, so I suppose it is **Public Domain**. If it has, I
 > Up to now, I find that there are some wrong answers in this manual:
 > - Chapter 3 Section F Exercise 22 (b),
 > - Chapter 4 Exercise 14 (a),
-> 
-> - ······
+> - Chapter 5 Section A Exercise 27, some mistakes about Chapter 2,
+> - Chapter 7 Section D Exercise 16, wrong use of Polynomials Applied to Operators,
+> - ...
 
 ---
 

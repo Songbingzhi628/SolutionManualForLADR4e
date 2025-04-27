@@ -1501,7 +1501,7 @@ $\MathRightBrace{l}{$
 \SepLine
 
 \Anchor{3D'2}\ProblemB{
-	\TextB{Supp $A,B\in\Lm{V}$ and $A+B,A-B$ are inv. Supp $C,D\in\Lm{V}.$}
+	\TextB{Supp $A,B\in\Lm{V}$ and $A+B,\,A-B$ are inv. Supp $C,D\in\Lm{V}.$}
 	\TextB{Prove $\exists\,X,Y\in\Lm{V}$ suth $AX+BY=C,BX+AY=D.$}
 }Asum $AX+BY=C,BX+AY=D.$ Then $\Par{A\pm B}\Par{X\pm Y}=C\pm D.$\parSol{}
 Let $S=\Par{A+B}{^{-1}}\Par{C+D},T=\Par{A-B}{^{-1}}\Par{C-D}.$ Now $X={}${\Large$\frac{\:1\:}{2}$}$\Par{S+T},Y={}${\Large$\frac{\:1\:}{2}$}$\Par{S-T}.$\PfEnd
@@ -1512,7 +1512,7 @@ Let $S=\Par{A+B}{^{-1}}\Par{C+D},T=\Par{A-B}{^{-1}}\Par{C-D}.$ Now $X={}${\Large
 %\SepLine
 
 \ProblemN{\Anchor{3D3}{3}}{
-	\TextA{Supp $V$ and $W$ are iso and finide, $U$ is a subsp of $V$, and $S\in\Lm{U,W}.$}
+	\TextA{Supp $V$ and $W$ are finide, $U$ is a subsp of $V$, and $S\in\Lm{U,W}.$}
 	\TextA{Prove $\exists$ inv $T\in\Lm{V,W},Tu = Su,\forall u\in U$ $\Longleftrightarrow$ $S$ is inje. \hfill{\FontNorm\Sbra{ See also (3.A.11). }}}
 }(a) $\forall u\in U,u=T^{-1}Su\Rightarrow T^{-1}S=I\in\Lm{U}.$ \Or $\null S=\null T\mmid_U=\null T\cap U=\zeroSubs.$\parSol{}
 (b) Get a $B_U,$ apply $S,$ then extend to $B_V,B_W.$\PfEnd\vspace{2pt}
@@ -1542,7 +1542,7 @@ But $\nexists$ iso subsps $M,N$ of $V,$ suth $V=M\oplus X=N\oplus Y.$
 %\SepLine
 
 \Anchor{3D9}\ProblemN{9}{
-	\TextA{Supp $U,V,W$ are iso and finide, $S\in\Lm{V,W},T\in\Lm{U,V},$ and $ST$ inv.}
+	\TextA{Supp $U,V,W$ are finide, while $S\in\Lm{V,W},T\in\Lm{U,V},$ and $ST$ inv.}
 	\TextA{Prove $S,T$ are inv.\hfill\FontSmall\tgnr\ANote Not true if $U,V,W$ infinide. Exa: Forwd and backwd shift.}
 }Let $R=\Par{ST}{^{-1}}.$ Becs $R\Par{ST}=\Par{RS}T=I_U$ \OR $\Par{ST}R=S\Par{TR}=I_W,$ $T$ inje and $S$ surj.\PfEnd\parSol{}
 \Or $\dim W=\dim\range ST\leqslant\min\!\Bra{\range S,\range T}\Rightarrow S,T$ surj.\PfEnd
@@ -1550,8 +1550,8 @@ But $\nexists$ iso subsps $M,N$ of $V,$ suth $V=M\oplus X=N\oplus Y.$
 
 \ProblemN{\Anchor{3D10}{10}}{
 	\TextA{Supp $V,W$ are finide and $T\in\Lm{V,W},S\in\Lm{W,V}.$ Prove $ST=I\Longleftrightarrow TS=I.$}
-}Supp $ST=I.$ Then $S,T$ inv. We show $TS=I,$ then done by rev the roles.\parSol{}
-Then $S\BigPar{\Par{TS}w}=ST\Par{Sw}=Sw\Rightarrow\Par{TS}w=w.$ \;\Or {\FontSmall$S^{-1}=T$ 又 $S=S\Rightarrow TS=S^{-1}S=I$.}\PfEnd
+}Supp $ST=I\Rightarrow S,T$ inv, by (3.B.20,21). Again, $TS_1=I.$ Becs $STS_1=S_1=S.$\PfEnd\parSol{}
+\Or $S\BigPar{\Par{TS}w}=ST\Par{Sw}=Sw\Rightarrow\Par{TS}w=w.$ \;\Or {\FontSmall$S^{-1}=T$ 又 $S=S\Rightarrow TS=S^{-1}S=I$.}\PfEnd
 \SepLine
 
 \Anchor{3DT2}\BulletPointX\TipsN{2} \,\,\,Supp each $S_k\in\Lm{V_{\!k},W_k},W_k\subseteq V_{\!k+1}\Rightarrow S_m\circ S_{m-1}\circ\cdots\circ S_2\circ S_1$ makes sense.\TextB{}
