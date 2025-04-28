@@ -428,7 +428,8 @@ $\forall u=\sum_{i=1}^nx_i\,e_i,\:v=\sum_{i=1}y_i\,e_i,\;\Ang{u,v}{_2}=x_1\:\!\o
 	\Anchor{7D12}(b) If $T$ is not self-adj and $T\neq\pm I.$ \,Then by (4E 5.B.11), $a=-d,\,a^2+bc=1.$\TextB{}
 	\Hb If $a=-d=\pm 1,$ then $bc=0,$ if $b\neq0$ or $c\neq0,$ then $T$ is not an isomet.\TextB{\vspace{-3pt}}
 }\SepLine
-\ChEnd
+
+\vspace{6pt}
 
 \ChDecl{Ch7D}{7.D [4E]}{\quad{\ANote {\FontSmall $V,W$ are finide non0 vecsps over $\Fbb.$\;\;此处前置了3e的9.B节。}}}
 
@@ -443,6 +444,14 @@ Let $\lambda_k=\Dvert{Tv_k}\Big/\Dvert{v_k}.$ Then $S^*:g_k\mapsto e_k\Rightarro
 \Or Let orthon $B_V=\Par{e_1,\dots,e_n}.$ Becs $\Ang{u+v,u-v}=\Dvertsq{u}-\Dvertsq{v}.$\parSol{}
 Now $0=\Ang{e_1+e_k,\,e_1-e_k}=\Ang{Te_1+Te_k,\,Te_1-Te_k}\Rightarrow$ each $\Dvert{Te_k}=\lambda.$ Supp $\lambda\neq0.$\parSol{}
 Let $S=\lambda^{-1}T.$ Becs $\Ang{e_j,\,e_k}=0\Rightarrow\Ang{Te_j,\,Te_k}=0\Longleftrightarrow\Ang{\lambda Se_j,\lambda Se_k}=0\Longleftrightarrow\Ang{Se_j,Se_k}=0.$\PfEnd
+\SepLine
+
+\Anchor{7D5}\ProblemN{5}{
+	\TextA{Supp $S\in\Lm{V}.$ Prove $S$ self-adj and unit $\Longleftrightarrow\exists\,P_{\!U},\,S=2P_{\!U}-I.$}
+}Supp $S$ self-adj and unit. Then $V=E\Par{1,S}\oplus E\Par{{-1},S},\,E\Par{1,S}=E\Par{{-1},S}{^\perp}\Rightarrow S=2P_{\!U}-I.$\parSol{}
+\Or $S^2=I.$ \,Let $P={}${\Large$\frac{\:1\:}{2}$}$\Par{S+I}\Rightarrow P^2=P$ self-adj $\Rightarrow\range P=\Par{\null P}{^\perp}=U.$\vspace{1pt}\parSol{}
+Supp $S=2P_{\!U}-I\Rightarrow S$ self-adj. Then $\forall u\in U,\,Su=u,$ and $\forall w\in U^\perp,\,Sw=-w.$\parSol{}
+Now $\BigDvertsq{S\Par{u+w}}=\Dvertsq{u+w}.$ \Or $S^2\Par{u+w}=u+w\Rightarrow S^{-1}=S=S^*.$ \Or By [7.42](c).\PfEnd
 \SepLine
 
 \Anchor{7DT}\ProblemBX{\Tips}{
