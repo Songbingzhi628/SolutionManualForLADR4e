@@ -3957,7 +3957,7 @@ Thus $\alpha=\beta=\gamma.$ Any two liney indep $v,w$ corres one eigval.\PfEndB
 \SepLine
 
 \Anchor{8A4e15}\Anchor{8B5}\ProblemNnoor{B.5}{4E A.15}{
-	\TextA{Prove non0 $T$ diag $\Rightarrow$ each $G\Par{\lambda,T}=E\Par{\lambda,T}.$}
+	\TextA{Prove non0 $T$ diag $\Rightarrow$ each $G\Par{\lambda,T}=E\Par{\lambda,T}.$\hfill\tgnr\FontNorm Convly true if req $\Fbb=\Cbb.$}
 }$\forall w\in G\Par{\lambda_j,T},\exists\,!\,v_i\in E\Par{\lambda_i,T},w=v_1+\dots+v_m,.$\parSol{}
 Note that $\Par{T-\lambda_jI}{^k}w=0=\sum_{i=1}^m\Par{\lambda_i-\lambda_j}{^k}v_i\Rightarrow w=v_j\in E\Par{\lambda_j,T}.$\PfEnd\vspace{3pt}\parSol{}
 \Or By (4E B.6), immed. \;\Or Supp $G\Par{\lambda_j,T}\supsetneq E\Par{\lambda_j,T}.$ Let $w\in G\Par{\lambda_j,T}\Backslash E\Par{\lambda_j,T}$\parSol{}
@@ -4063,10 +4063,10 @@ $\forall v\in G\Par{\lambda_k,T\mmid_U},\exists\,!\,u_1\in G\Par{\lambda_1,T\mmi
 	\TextB{Supp $p,q\in\PoFi$ have no common zeros on $\Cbb.$}
 }
 \Anchor{8BT4}\ProblemN{\BulletPointX B.\TipsN{4}}{
-	\PrePa\TextA{Prove $\nullp p\Par{T}\oplus\nullp q\Par{T}=\Null\Par{pq},\,\rangep p\Par{T}+\rangep q\Par{T}=V.$}
+	\PrePa\TextA{Prove $\nullp p\Par{T}\oplus\nullp q\Par{T}=\Null\Par{pq}\Par{T},\,\rangep p\Par{T}+\rangep q\Par{T}=V.$}
 	\PrePb\TextA{Prove $\rangep p\Par{T}\cap\rangep q\Par{T}=\Range\Par{pq}\Par{T}.$}
-}(a) By Exe (4E 4.13), $\forall v\in V,v=r\Par{T}\:\!p\Par{T}\:\!v+s\Par{T}\:\!q\Par{T}\:\!v.$\par\quad
-(b) $v\in\rangep p\Par{T}\cap\rangep q\Par{T}\Rightarrow\exists\,u,w\in V,v=p\Par{T}u=q\Par{T}w=\Par{pq}\Par{T}\BigPar{r\Par{T}w+s\Par{T}u}.$\PfEndB\vspace{2pt}
+}(a) By Exe (4E 4.13), $\forall v\in V,\,v=r\Par{T}\:\!p\Par{T}\:\!v+s\Par{T}\:\!q\Par{T}\:\!v.$\par\quad
+(b) $v\in\rangep p\Par{T}\cap\rangep q\Par{T}\Rightarrow\exists\,u,w\in V,\,v=p\Par{T}u=q\Par{T}w=\Par{pq}\Par{T}\BigPar{r\Par{T}w+s\Par{T}u}.$\PfEndB\vspace{2pt}
 \ACoro Supp $\Par{pq}\Par{T}=0.$ We show $\nullp p\Par{T}=\rangep q\Par{T}.$\parCor
 Becs `$\supseteq$' holds $\Rightarrow\nullp q\Par{T}\cap\rangep p\Par{T}=\zeroSubs.$ By (5.C.3) and \Sbra{1.C \TIPSN{1}}.\PfEnd\parCor
 Supp $\Par{p_1\cdots p_k}\Par{T}=0,$ and $p_1,\dots,p_k\in\PoFi$ have no common zeros on $\Cbb.$\vspace{1pt}\parCor
@@ -4077,8 +4077,8 @@ Supp $\Par{p_1\cdots p_k}\Par{T}=0,$ and $p_1,\dots,p_k\in\PoFi$ have no common 
 \BulletPointX\ANote If $\Par{pq}\Par{T}=0.$ \,Let $V_{\!\Cbb}=G\Par{\lambda_1,T_{\!\Cbb}}\oplus\cdots\oplus G\Par{\lambda_m,T_{\!\Cbb}},$ and $m_T\Par{z}=\Par{z-\lambda_1}{^{k_1}}\cdots\Par{z-\lambda_m}{^{k_m}}.$\parNot{\IndentB}
 Let $\mA=\Bra{\alpha_1,\dots,\alpha_{\!A}}$ be the intersec of the zeros of $p$ and the eigvals of $T.$ \,Simlr for $\mB.$\parNot{\IndentB}
 Then $\mA\cap\mB=\emptySet.$ Let $p=\omega_{\alpha_1}\!\!\cdots\omega_{\alpha_{\!A}}\,p_0,\;q=\omega_{\beta_1}\!\!\cdots\omega_{\beta_B}\,q_0,$ where $\omega_{\lambda_i}\Par{z}=\Par{z-\lambda_i}{^{k_i}}.$\parNot{\IndentB}
-By \Sbra{B \TIPSN{3}}, $\nullp p\Par{T_{\!\Cbb}}=G\Par{\alpha_1,T_{\!\Cbb}}\oplus\cdots\oplus G\Par{\alpha_{\!A},T_{\!\Cbb}}.$ \,Simlr for $q.$\vspace{1pt}\parNot{\IndentB}
-Note that if $\alpha_j\not\in\Rbb,$ then $\exists\,\alpha_i=\overline{\alpha_j}.$ Simlr for $\mB.$ \,Now $V_{\!\Cbb}=\nullp p\Par{T_{\!\Cbb}}\oplus\nullp q\Par{T_{\!\Cbb}}.$
+By \Sbra{B \TIPSN{3}}, $\nullp p\Par{T_{\!\Cbb}}=G\Par{\alpha_1,T_{\!\Cbb}}\oplus\cdots\oplus G\Par{\alpha_{\!A},T_{\!\Cbb}}.$ \,Simlr for $q\Par{T_{\!\Cbb}}.$\vspace{1pt}\parNot{\IndentB}
+For $\Fbb=\Rbb,$ if $\exists\,\alpha_j\not\in\Rbb,$ then $\exists\,\alpha_i=\overline{\alpha_j}.$ Simlr for $\mB.$ \,Now $V_{\!\Cbb}=\nullp p\Par{T_{\!\Cbb}}\oplus\nullp q\Par{T_{\!\Cbb}}.$
 \SepLine
 
 %\Anchor{8B'2}\ProblemB{
