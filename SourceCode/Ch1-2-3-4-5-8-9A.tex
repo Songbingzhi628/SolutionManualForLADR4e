@@ -722,17 +722,17 @@ And \,$0=a_j w_j$ while $a_j\neq 0$ and $w_j\neq 0.$ Ctradic.\PfEnd\vspace{4pt}\
 
 \Anchor{3A4e11}\ProblemBnoor{4E 11}{
 	\TextA{Supp $V$ is finide, $T\in\Lm{V}$ is suth $\forall S\in\Lm{V},ST=TS$. Prove $\exists\,\lambda\in\Fbb,T=\lambda I$.}
-}Asum $V\neq\zeroSubs$ and $\forall v\in V,\Par{v,Tv}$ is linely dep, then $\exists\,\lambda_v\in\Fbb,Tv=\lambda_v v.$\parSol{}
+}Asum $\exists\,v\in V,\Par{v,Tv}$ is liney indep. Let $B_V=\Par{v,Tv,u_1,\dots,u_n}$.\parSol{}
+Define $S\in\Lm{V}$ by $S\Par{av+bTv+c_1 u_1+\dots+c_n u_n}=bv\Rightarrow S\Par{Tv}=v=T\Par{Sv}=0.$\parSol{}
+Asum $V\neq\zeroSubs$ and $\forall v\in V,\Par{v,Tv}$ is linely dep, then $\exists\,\lambda_v\in\Fbb,Tv=\lambda_v v.$\parSol{}
 To prove $\lambda_v$ is indep of $v$, we discuss in two cases:\vspace{2pt}\parSol{}
-\!\!\!$\MathRightBrace{l}{$($-$) If $\Par{v,w}$ is liney indep, $\lambda_{v+w}\Par{v+w}=T\Par{v+w}=Tv+Tw=\lambda_v v+\lambda_w w\\$($=$) Othws, supp $w=cv$, $\lambda_w w=Tw=cTv=c\lambda_v v=\lambda_v w\Rightarrow\Par{\lambda_w-\lambda_v}w}\Rightarrow \lambda_w=\lambda_v.$\vspace{4pt}\parSol{}
-Now we prove the asum. Asum $\exists\,v\in V,\Par{v,Tv}$ is liney indep. Let $B_V=\Par{v,Tv,u_1,\dots,u_n}$.\parSol{}
-Define $S\in\Lm{V}$ by $S\Par{av+bTv+c_1 u_1+\dots+c_n u_n}=bv\Rightarrow S\Par{Tv}=v=T\Par{Sv}=0.$\PfEnd\vspace{6pt}\quad
+\!\!\!$\MathRightBrace{l}{$($-$) If $\Par{v,w}$ is liney indep, $\lambda_{v+w}\Par{v+w}=T\Par{v+w}=Tv+Tw=\lambda_v v+\lambda_w w\\$($=$) Othws, supp $w=cv$, $\lambda_w w=Tw=cTv=c\lambda_v v=\lambda_v w\Rightarrow\Par{\lambda_w-\lambda_v}w}\Rightarrow \lambda_w=\lambda_v.$\PfEnd\vspace{12pt}\quad
 \Or \;\envFontLarge{\Large\vspace{4pt}Let $B_V=\Par{v_1,\dots,v_m}.$ Define {\Large$\varphi\in\Lm{V,\Fbb}$} by $\varphi\Par{v_1}=\cdots=\varphi\Par{v_m}=1.$}\par\quad
 \Blind{\Or \;}{\Large\vspace{4pt}Supp $v\in V.$ Define $S_v\in\Lm{V}$ by $S_v \Par{u}=\varphi\Par{u}v.$}\par\quad
 \Blind{\Or \;}{\Large Then $Tv=T\Par{\varphi\Par{v_1}v}=T\Par{S_v v_1}=S_v\Par{Tv_1}=\varphi\Par{Tv_1}v=\lambda v.$}\PfEnd\vspace{10pt}\quad
 \Or \;{\vspace{5pt}Define {\Large$S_k\BigBigPar{{\sum_{i=1}^n a_i v_i}}=a_k v_k$}. Then {\Large$S_kv=v\Longleftrightarrow\exists\,!\,a_k\in\Fbb,v=a_kv_k$}.}\par\quad
-\Blind{\Or \;}{\vspace{5pt}Hence {\Large$S_k\Par{Tv_k}=T\Par{S_kv_k}=Tv_k\Rightarrow Tv_k=a_k v_k$}.}\par\quad
-\Blind{\Or \;}{\vspace{3pt}Define {\Large$A^{\SmallPar[1.5pt]{j,k}}\in\Lm{V}$} by {\Large$A^{\SmallPar[1.5pt]{j,k}}v_j=v_k,\;A^{\SmallPar[1.5pt]{j,k}}v_k=v_j,\;A^{\SmallPar[1.5pt]{j,k}}v_x=0,x\neq j,k$}.}\par\quad
+\Blind{\Or \;}{\vspace{7pt}Hence {\Large$S_k\Par{Tv_k}=T\Par{S_kv_k}=Tv_k\Rightarrow Tv_k=a_k v_k$}. \;Becs $v_k$ is arb. Simlr to above. Done.}\par\quad
+\Blind{\Or \;}{\vspace{3pt}\Or Define {\Large$A^{\SmallPar[1.5pt]{j,k}}\in\Lm{V}$} by {\Large$A^{\SmallPar[1.5pt]{j,k}}v_j=v_k,\;A^{\SmallPar[1.5pt]{j,k}}v_k=v_j,\;A^{\SmallPar[1.5pt]{j,k}}v_x=0,x\neq j,k$}.}\par\quad
 \Blind{\Or \;}{\hspace{-2.7pt}$\hText{$Then$\\[6pt]\;}$ {\Large$\hMath{r}{\left|\;\;}{\;\right\}}{A^{\SmallPar[1.5pt]{j,k}}Tv_j=TA^{\SmallPar[1.5pt]{j,k}}v_j=Tv_k=a_kv_k\\A^{\SmallPar[1.5pt]{j,k}}Tv_j=A^{\SmallPar[1.5pt]{j,k}}a_jv_j=a_jA^{\SmallPar[1.5pt]{j,k}}v_j=a_jv_k}\Rightarrow a_k=a_j.$}} {Hence $a_k$ is indep of $v_k.$}\PfEnd
 \SepLine
 
