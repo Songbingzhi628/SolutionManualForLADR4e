@@ -386,7 +386,7 @@ By asum, $\exists$ orthon $B_{U^\perp}$ of eigvecs of $T\mmid_{U^\perp}.$ Now $B
 \SepLine
 \ChEnd
 
-\vfill\ChDecl{Ch7C}{7.C [4E] \& 7.D [4E]}{\quad{\ANote {\FontSmall $V$ denotes a finide vecsp over $\Fbb.$\;\;7.D[4E]处结合了3e的9.B节。}}}
+\vfill\ChDecl{Ch7C}{7.C [4E] \& 7.D [4E]}{\quad{\ANote {\FontSmall $V$ denotes a finide vecsp over $\Fbb.$\;\Big|\;7.D[4E]处结合了3e的9.B节。}}}
 
 \vspace{4pt}
 
@@ -490,20 +490,28 @@ Then $S_{\Cbb}\Sbra{\lambda^{-1}\Par{u+\i\,v}}=u+\i\,v\in\bigodot{_{\!\Cbb}}$ wh
 
 \ChDecl{Ch7E}{7.E [4E] \& 7.F[4E]}{\quad{\ANote {\FontSmall $V,W$ are finide non0 vecsps over $\Fbb.$}}}
 
-\vspace{4pt}
+\vspace{6pt}
 
-%\Anchor{7E1}\ProblemN{1}{
-%	\TextA{Supp $T\in\Lm{V,W}.$ Show $T=0\Longleftrightarrow$ all singvals are $0.$}
-%}$T=0\Longleftrightarrow T^*=0\Longleftrightarrow T^*T=0.$\PfEnd\parSol{}
-%\Or Supp $T$ has $N$ positive singvals. Now $N=0\Longleftrightarrow\dim\range T=0\Longleftrightarrow T=0.$\PfEnd
-%\SepLine
+\Anchor{7E1}\ProblemN{E.1}{
+	\TextA{Supp $T\in\Lm{V,W}.$ Show $T=0\Longleftrightarrow$ all singvals are $0.$}
+}(a) $T=0\Longleftrightarrow T^*=0\Longleftrightarrow T^*T=0\Rightarrow$ all singvals are $0.$\parSol{}
+(b) all singvals are $0\Longleftrightarrow T^*T$ nilp. Becs $T^*T$ diag $\Rightarrow T^*T=0=T.$\PfEnd\vspace{2pt}\parSol{}
+\Or Supp $T$ has $N$ positive singvals. Now $N=0\Longleftrightarrow\dim\range T=0\Longleftrightarrow T=0.$\PfEnd
+\SepLine
 
-%\Anchor{7E4}\ProblemN{4}{
-%	\TextA{Supp $T\in\Lm{V,W},$ and $s_1,s_n$ are the max and min of singvals.}
-%	\TextA{Prove $\Bra{\Dvert{Tv}:v\in V,\Dvert{v}=1}=\Interval{[}{]}{s_n,\,s_1}.$}
-%}Supp $B_V=\Par{e_1,\dots,e_n}$ of eigvecs of $T^*T$ corres $s_1^2,\dots,s_n^2.$ \;Supp $v\in V,\Dvert{v}=1.$\parSol{}
-%Then $\Dvertsq{Tv}=s_1^2\:\!\innerA{v,\,e_1}+\dots+s_n^2\:\!\innerA{v,\,e_n}\Rightarrow s_n^2\leqslant\Dvertsq{Tv}\leqslant s_1^2.$\PfEnd
-%\SepLine
+\Anchor{7E4}\ProblemN{E.4}{
+	\TextA{Supp non0 $T\in\Lm{V,W},$ and $s_1,s_n$ are the max and min of singvals.}
+	\TextA{Prove $\Bra{\Dvert{Tv}:v\in V,\Dvert{v}=1}=\Interval{[}{]}{s_n,\,s_1}.$}
+}If $s_1=\dots=s_n=0\Rightarrow T=0.$ Done. If $s_1=\dots=s_n>0\Rightarrow s_1^{-1}T$ is isomet. Done.\parSol{}
+Supp $s_1>s_n.$ Get the SVD $\Par{e_1,\dots,e_m},\Par{f_1,\dots,f_m}$ in $V,W.$\parSol{}
+$\forall v\in V,\,\Dvertsq{Tv}=s_1^2\,\innerAsq{v,\:\!e_1}+\dots+s_m^2\,\innerAsq{v,\:\!e_m}\leqslant s_1^2\:\!\BigPar{\innerAsq{v,\:\!e_1}+\dots+\innerAsq{v,\:\!e_m}}.$\vspace{1pt}\parSol{}
+By Bessel's Inequa, $\Dvertsq{Tv}\leqslant s_1^2\,\Dvertsq{v}.$ \;Thus \,$LHS\subseteq\Interval{[}{]}{0,\,s_1}.$\vspace{2pt}\parSol{}
+If $s_n>0\Rightarrow \dim V=n=m.$ Then $\Dvertsq{Tv}\geqslant s_1^2\:\!\BigPar{\innerAsq{v,\:\!e_1}+\dots+\innerAsq{v,\:\!e_m}}=s_1^2\,\Dvertsq{v}.$\parSol{}
+Supp $s\in\Interval{[}{]}{s_n,\,s_1}.$ We show $\exists\,v\in V$ with $\Dvert{v}=1$ suth $\Dvert{Tv}=s.$\parSol{}
+Which equiv to $\exists$ solus of system of equations (I) $x^2+y^2=1,$ (II) $s_1^2\,x^2+s_n^2\,y^2=s^2.$\vspace{2pt}\parSol{}
+If $s_n=0\Rightarrow m<n=\dim V.$ Extend to $B_V=\Par{e_1,\dots,e_m,\dots,e_n}\Rightarrow e_n\in\null T.$\parSol{}
+Supp $s\in\Interval{[}{]}{0,\,s_1}.$ \,Let $c=s/s_1,\,u=ce_1\Rightarrow\Dvert{Tu}=s.$ Let $v=u+\sqrt{1-c^2}\,e_n.$\PfEnd
+\SepLine
 
 %\Anchor{7E8}\ProblemN{8}{
 %	\TextA{Supp $T\in\Lm{V,W},s_1\geqslant\cdots\geqslant s_m>0,$ and $\Par{e_1,\dots,e_m},\Par{\,f_1,\dots,f_m}$ orthon in $V,W.$}
