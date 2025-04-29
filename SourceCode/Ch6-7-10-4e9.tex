@@ -373,7 +373,7 @@ Becs each $E\Par{\lambda_k,T}=E\Par{\overline{\lambda_k},T^*}$ invard $S\Rightar
 }By \Sbra{5.A \TIPSN{3}}, and apply [6.31] to each $E\Par{\lambda_k,T\mmid_U},$ let $B_U=\Par{e_1,\dots,e_m}$ be orthon eigvecs.\parSol{}
 Let $B_V=\Par{e_1,\dots,e_n}$ be orthon eigvecs. Then $B_{U^\perp}=\Par{e_{m+1},\dots,e_n}.$\parSol{}
 (a) Now $U^\perp$ invard $T.$ \;And $U$ invard $T^*.$\parSol{}
-(b) $\forall u,v\in U,\:\BigAng{v,\Par{T\mmid_U}{^*}u}=\BigAng{T\mmid_U v,u}=\BigAng{v,T^*\mmid_U u}\Rightarrow\BigPar{\Par{T\mmid_U}{^*}-T^*\mmid_U}u\in U\cap U^\perp.$\vspace{3pt}\parSol{}
+(b) $\forall u,v\in U,\:\BigAng{v,\Par{T\mmid_U}{^*}u}=\BigAng{T\mmid_U v,u}=\BigAng{v,T^*\mmid_U u}\Rightarrow\BigPar{\Par{T\mmid_U}{^*}-T^*\mmid_U}u\in U\cap U^\perp.$\vspace{2pt}\parSol{}
 (c) $\forall u\in U,\:\BigDvert{T\mmid_U u}=\BigDvert{T^*\mmid_U u}=\BigDvert{\Par{T\mmid_U}{^*}u}.$ \;\Or $T\mmid_U\Par{T\mmid_U}{^*}=T^*T\mmid_U=T^*\mmid_UT\mmid_U.$\PfEnd\vspace{4pt}
 %\Or Let orthon $B_U=\Par{e_1,\dots,e_m}\Rightarrow B_V=\Par{e_1,\dots,e_n}\Rightarrow B_{U^\perp}=\Par{e_{m+1},\dots,e_n}.$ Let $A=\Mt{T,B_V}.$\parSol{}
 %Let $A$ be block matrix {\small$\begin{pmatrix}X &\hspace{-4pt} Y\\[-2pt] 0 &\hspace{-4pt} Z\end{pmatrix}$}, where $X\in\Fbb^{m,m},Y\in\Fbb^{m,\:\!n-m},Z\in\Fbb^{n-m,\:\!n-m}.$\parSol{}
@@ -386,7 +386,7 @@ By asum, $\exists$ orthon $B_{U^\perp}$ of eigvecs of $T\mmid_{U^\perp}.$ Now $B
 \SepLine
 \ChEnd
 
-\ChDecl{Ch7C}{7.C [4E]}{\quad{\ANote {\FontSmall $V$ denotes a finide vecsp over $\Fbb.$}}}
+\vfill\ChDecl{Ch7C}{7.C [4E] \& 7.D [4E]}{\quad{\ANote {\FontSmall $V$ denotes a finide vecsp over $\Fbb.$\;\;7.D[4E]处结合了3e的9.B节。}}}
 
 \vspace{4pt}
 
@@ -396,7 +396,7 @@ By asum, $\exists$ orthon $B_{U^\perp}$ of eigvecs of $T\mmid_{U^\perp}.$ Now $B
 %}
 %\SepLine
 
-\Anchor{7C20}\ProblemN{20}{
+\Anchor{7C20}\ProblemN{C.20}{
 	\TextA{Supp $T\in\Lm{V}$ and orthon $B_V=\Par{e_1,\dots,e_n}.$}
 	\TextA{Supp $v_1,\dots,v_n\in V$ and each $\Ang{Te_k,\:\!e_j}=\Ang{v_k,v_j}.$ Prove $T$ posi.\vspace{0pt}}
 %$\overline{\Ang{v_j,v_k}}=\Ang{v_k,v_j}=\Ang{Te_k,\:\!e_j}=\overline{\Ang{Te_j,\:\!e_k}}\Rightarrow\Ang{Te_k,\:\!e_j}=\Ang{e_k,\:\!Te_j}\Rightarrow\Mt{T}=\overline{\Mt{T}}{^t}.$\vspace{1pt}\parSol{}
@@ -406,7 +406,7 @@ By asum, $\exists$ orthon $B_{U^\perp}$ of eigvecs of $T\mmid_{U^\perp}.$ Now $B
 }Define $R\in\Lm{V}:e_k\mapsto v_k\Rightarrow\Ang{Te_k,\:\!e_j}=\Ang{Re_k,\:\!Re_j}=\Ang{R^*Re_k,\:\!e_j}\Rightarrow\Mt{T,B_V}=\Mt{R^*R,B_V}.$\PfEnd
 \SepLine
 
-\Anchor{7C22}\ProblemN{22}{
+\Anchor{7C22}\ProblemN{C.22}{
 	\TextA{Supp $T$ posi, $u\in V$ with $\Dvert{u}=1$ suth $\Dvert{Tu}\geqslant\Dvert{Tv}$ for all $v\in V$ with $\Dvert{v}=1.$}
 	\TextA{Show $u$ is eigvec corres the largest eigval of $T.$}
 }Supp orthon eigvecs $B_V=\Par{e_1,\dots,e_n}$ corres $\lambda_1\geqslant\dots\geqslant\lambda_n.$ \;Let $u=\sum_{k=1}^nc_ke_k\Rightarrow\sum_{k=1}^n\aMidsq{c_k}=1.$\vspace{1pt}\parSol{}
@@ -415,11 +415,11 @@ Supp $v=\sum_{j=1}^na_je_j$ and $\Dvert{v}=1.$ Then $\Dvertsq{Tv}=\sum_{j=1}^n\a
 Hence $\sum_{k=1}^n\aMidsq{\lambda_k}\aMidsq{c_k}=\Dvertsq{Tu}=\sum_{k=1}^n\aMidsq{\lambda_1}\aMidsq{c_k}\Rightarrow\sum_{k=J}^n\!\Sbra{\aMidsq{\lambda_1}-\aMidsq{\lambda_k}}\cdot\aMidsq{c_k}=0.$\PfEnd
 \SepLine
 
-\Anchor{7C23}\ProblemN{23}{
+\Anchor{7C23}\ProblemN{C.23}{
 	\TextA{Supp $\Ang{\cdot,\cdot}{_1},\Ang{\cdot,\cdot}{_2}$ are inner prods on $V.$ Prove $\exists$ inv posi $T\in\Lm{V},\;\Ang{u,v}{_2}=\Ang{Tu,v}{_1}.$}
 }Let $\Par{e_1,\dots,e_n},\Par{\,f_1,\dots,f_n}$ be orthon bses wrto $\Ang{\cdot,\cdot}{_2},\Ang{\cdot,\cdot}{_1}.$ Define $R\in\Lm{V}$ by $Re_k=f_k.$\parSol{}
 $\forall u=\sum_{i=1}^nx_i\,e_i,\:v=\sum_{i=1}y_i\,e_i,\;\Ang{u,v}{_2}=x_1\:\!\overline{y_1}+\dots+x_n\:\!\overline{y_n}=\Ang{Ru,Rv}{_1}=\Ang{R^*Ru,v}{_1}.$\PfEnd
-\SepLine
+\SepLine\pagebreak
 
 \Anchor{7CNSRI}\ProblemBX[]{\NoteForSmall{Square Root of Id}}{
 	Supp $T\in\Lm{\Fbb^2}$ and $T^2=I.$ Let $\Mt{T}={}${\small$\begin{pmatrix}a &\hspace{-6pt} b\\[-2pt] c &\hspace{-6pt} d\end{pmatrix}$} wrto std bss.\TextB{}
@@ -430,14 +430,10 @@ $\forall u=\sum_{i=1}^nx_i\,e_i,\:v=\sum_{i=1}y_i\,e_i,\;\Ang{u,v}{_2}=x_1\:\!\o
 	\Hb If $a=-d=\pm 1,$ then $bc=0,$ if $b\neq0$ or $c\neq0,$ then $T$ is not an isomet.\TextB{\vspace{-3pt}}
 }\SepLine
 
-\vspace{6pt}
+\ChDecl{Ch7D}{}{}
 
-\ChDecl{Ch7D}{7.D [4E]}{\quad{\ANote {\FontSmall $V,W$ are finide non0 vecsps over $\Fbb.$\;\;此处前置了3e的9.B节。}}}
-
-\vspace{4pt}
-
-\Anchor{7D2}\ProblemN{2}{
-	\TextA{Supp $T\in\Lm{V,W}.$ Supp $\Ang{Tu,Tv}=0$ for all orthog $u,v\in V.$ Prove $\exists$ isomet $S,\,T=\lambda S.$}
+\Anchor{7D2}\ProblemN{D.2}{
+	\TextA{Supp $T\in\Lm{V,W},\,\Ang{Tu,Tv}=0$ for all orthog $u,v\in V.$ Prove $\exists$ isomet $S,\,T=\lambda S.$}
 }Supp orthog $B_V=\Par{v_1,\dots,v_n}\Rightarrow\Par{Tv_1,\dots,Tv_n}$ is orthog.\parSol{}
 Let $g_k=Tv_k\big/\Dvert{Tv_k},\,e_k=v_k\big/\Dvert{v_k}.$ \,Define isomet $S\in\Lm{V,W}:e_k\mapsto g_k.$\parSol{}
 Let $\lambda_k=\Dvert{Tv_k}\Big/\Dvert{v_k}.$ Then $S^*:g_k\mapsto e_k\Rightarrow S^*T:v_k\mapsto\lambda_kv_k.$\parSol{}
@@ -447,7 +443,7 @@ Now $0=\Ang{e_1+e_k,\,e_1-e_k}=\Ang{Te_1+Te_k,\,Te_1-Te_k}\Rightarrow$ each $\Dv
 Let $S=\lambda^{-1}T.$ Becs $\Ang{e_j,\,e_k}=0\Rightarrow\Ang{Te_j,\,Te_k}=0\Longleftrightarrow\Ang{\lambda Se_j,\lambda Se_k}=0\Longleftrightarrow\Ang{Se_j,Se_k}=0.$\PfEnd
 \SepLine
 
-\Anchor{7D5}\ProblemN{5}{
+\Anchor{7D5}\ProblemN{D.5}{
 	\TextA{Supp $S\in\Lm{V}.$ Prove $S$ self-adj and unit $\Longleftrightarrow\exists\,P_{\!U},\,S=2P_{\!U}-I.$}
 }Supp $S$ self-adj and unit. Then $V=E\Par{1,S}\oplus E\Par{{-1},S},\,E\Par{1,S}=E\Par{{-1},S}{^\perp}\Rightarrow S=2P_{\!U}-I.$\parSol{}
 \Or $S^2=I.$ \,Let $P={}${\Large$\frac{\:1\:}{2}$}$\Par{S+I}\Rightarrow P^2=P$ self-adj $\Rightarrow\range P=\Par{\null P}{^\perp}=U.$\vspace{1pt}\parSol{}
@@ -455,7 +451,7 @@ Supp $S=2P_{\!U}-I\Rightarrow S$ self-adj. Then $\forall u\in U,\,Su=u,$ and $\f
 Now $\BigDvertsq{S\Par{u+w}}=\Dvertsq{u+w}.$ \Or $S^2\Par{u+w}=u+w\Rightarrow S^{-1}=S=S^*.$ \Or By [7.42](c).\PfEnd
 \SepLine
 
-\Anchor{7DT}\ProblemBX{\Tips}{
+\Anchor{7DT}\ProblemN{D.\Tips}{
 	\TextA{Supp $T\in\Lm{V},$ each eigval of $T_{\!\Cbb}$ has abs val $1.$}
 	\TextA{Supp $\Dvert{Tv}\leqslant\Dvert{v}$ for all $v\in V.$ Prove $T$ unit.}
 }Supp Jordan $\Mt{T_{\!\Cbb}}$ wrto $B_1=\Par{u_1+\i\,v_1,\dots,u_n+\i\,v_n}\Rightarrow\Mt{T,B_1}=\Mt{T,B_2},$\parSol{}
@@ -464,7 +460,7 @@ Becs $\BigDvertsq{T_{\!\Cbb}\Par{u+\i\,v}}=\Dvertsq{Tu}+\Dvertsq{Tv}\leqslant\Dv
 Consider $\Mt{T}$ wrto $B_V=\Par{v_1,u_1,\cdots,v_n,u_n}$ and by [9.36].\PfEnd
 \SepLine
 
-\Anchor{7D11}\ProblemN{11}{
+\Anchor{7D11}\ProblemN{D.11}{
 	\TextA{Supp $S\in\Lm{V},$ and $\Bra{Sv:v\in\bigodot\!}=\Bra{v\in V:\Dvert{v}\leqslant 1}=\bigodot.$ Prove $S$ is unit.}
 }\NOTICE that $\BigDvert{S\Par{\Dvert{v}{^{-1}}v}}\leqslant 1\Rightarrow\Dvert{Sv}\leqslant\Dvert{v}$ for all $v\in\bigodot.$\parSol{}
 Asum $S$ not inv. Then $\exists\,v\in V\Backslash\range S,\,\Dvert{v}{^{-1}}v\not\in\Bra{Sv:v\in\bigodot\!}.$\parSol{}
@@ -492,15 +488,15 @@ Becs $\Dvert{Sv}\neq0\Rightarrow\Dvert{Sv}{^{-1}}Sv\in\bigodot,$ while $\BigDver
 
 \ChEnd\pagebreak
 
-\ChDecl{Ch7E}{7.E [4E]}{\quad{\ANote {\FontSmall $V,W$ are finide non0 vecsps over $\Fbb.$}}}
+\ChDecl{Ch7E}{7.E [4E] \& 7.F[4E]}{\quad{\ANote {\FontSmall $V,W$ are finide non0 vecsps over $\Fbb.$}}}
 
 \vspace{4pt}
 
-\Anchor{7E1}\ProblemN{1}{
-	\TextA{Supp $T\in\Lm{V,W}.$ Show $T=0\Longleftrightarrow$ all singvals are $0.$}
-}$T=0\Longleftrightarrow T^*=0\Longleftrightarrow T^*T=0.$\PfEnd\parSol{}
-\Or Supp $T$ has $N$ positive singvals. Now $N=0\Longleftrightarrow\dim\range T=0\Longleftrightarrow T=0.$\PfEnd
-\SepLine
+%\Anchor{7E1}\ProblemN{1}{
+%	\TextA{Supp $T\in\Lm{V,W}.$ Show $T=0\Longleftrightarrow$ all singvals are $0.$}
+%}$T=0\Longleftrightarrow T^*=0\Longleftrightarrow T^*T=0.$\PfEnd\parSol{}
+%\Or Supp $T$ has $N$ positive singvals. Now $N=0\Longleftrightarrow\dim\range T=0\Longleftrightarrow T=0.$\PfEnd
+%\SepLine
 
 %\Anchor{7E4}\ProblemN{4}{
 %	\TextA{Supp $T\in\Lm{V,W},$ and $s_1,s_n$ are the max and min of singvals.}
@@ -517,7 +513,7 @@ Becs $\Dvert{Sv}\neq0\Rightarrow\Dvert{Sv}{^{-1}}Sv\in\bigodot,$ while $\BigDver
 %$\Rightarrow T^*Tv=\sum s_j^2\,\Ang{v,\:\!e_j}\,e_j.$ \;Get an orthon $B_V=\Par{e_1,\dots,e_m,\,g_1,\dots,e_p}\Rightarrow T^*Te_k=s_k^2\:\!e_k,T^*Tg_j=0.$\PfEnd
 %\SepLine
 
-\Anchor{7E11}\ProblemN{11}{
+\Anchor{7E11}\ProblemN{E.11}{
 	\TextA{Supp $T\in\Lm{V},$ orthon $B_V=\Par{v_1,\dots,v_n},$ and $s_1,\dots,s_n$ are the singvals.}
 	\TextA{Prove $\Ang{Tv_1,\;\!v_1}+\dots+\Ang{Tv_n,\;\!v_n}=s_1+\dots+s_n.$}
 }Becs $A=\Mt{T}=\Mt{T}{^*}$ wrto $B_V,$ and each $\Ang{Tv_k,\:\!v_k}=A_{k,k}=\lambda_k\Rightarrow T$ diag wrto $B_V.$\parSol{}
@@ -527,15 +523,15 @@ Becs $T$ posi $\Rightarrow\aMidsq{\lambda_k}=\lambda_k^2.$ 又 $T^*Tv_k=T^2v_k=\
 Get the SVD $\Par{e_1,\dots,e_n},\Par{\,f_1,\dots,f_n}.$ By (4E 7.A.5), $\sum\Dvertsq{\sqrt{T}v_k}=\sum\Dvertsq{\sqrt{T}e_k}=\sum s_k.$\PfEnd
 \SepLine
 
-\Anchor{7E13}\ProblemN{13}{
-	\TextA{Prove $T_{\!1},T_{\!2}\in\Lm{V,W}$ same singvals $\Longleftrightarrow\exists$ unit $S_1\in\Lm{W},S_2\in\Lm{V},\:T_{\!1}=S_1T_{\!2}S_2.$}
-}(a) Get the SVD $\Par{e_k}{_{k=1}^p},\Par{\,f_k}{_{k=1}^p}$ and $\Par{g_k}{_{k=1}^p},\Par{h_k}{_{k=1}^p}$ for $T_{\!1},T_{\!2}$ respectly.\parSol{\Ha}
-Extend up to orthon bss with $\dim V=n,\dim W=m.$\, Define $S_2\Par{e_k}=g_k,\,S_1\Par{h_k}=f_k.$\parSol{\Ha}
-Thus $\forall v=\sum\Ang{v,\:\!e_k}\,e_k\in V,\:T_{\!2}S_2v=\sum s_k\:\!\Ang{v,\:\!e_k}\,h_k\Rightarrow S_1T_{\!2}T_2=\sum s_k\:\!\Ang{v,\:\!e_k}\,f_k=T_{\!1}.$\vspace{2pt}\parSol{}
-(b) $T_{\!1}^*T_{\!1}=S_2^*T_{\!2}^*T_{\!2}S_2\Rightarrow T_{\!1}^*T_{\!1}-\lambda I=S_2^*\Par{T_{\!2}^*T_{\!2}-\lambda I}S_2\Rightarrow\dim E\Par{\lambda,T_{\!1}^*T_{\!1}}=\dim E\Par{\lambda,T_{\!2}^*T_{\!2}}.$
-\SepLine
+%\Anchor{7E13}\ProblemN{13}{
+%	\TextA{Prove $T_{\!1},T_{\!2}\in\Lm{V,W}$ same singvals $\Longleftrightarrow\exists$ unit $S_1\in\Lm{W},S_2\in\Lm{V},\:T_{\!1}=S_1T_{\!2}S_2.$}
+%}(a) Get the SVD $\Par{e_k}{_{k=1}^p},\Par{\,f_k}{_{k=1}^p}$ and $\Par{g_k}{_{k=1}^p},\Par{h_k}{_{k=1}^p}$ for $T_{\!1},T_{\!2}$ respectly.\parSol{\Ha}
+%Extend up to orthon bss with $\dim V=n,\dim W=m.$\, Define $S_2\Par{e_k}=g_k,\,S_1\Par{h_k}=f_k.$\parSol{\Ha}
+%Thus $\forall v=\sum\Ang{v,\:\!e_k}\,e_k\in V,\:T_{\!2}S_2v=\sum s_k\:\!\Ang{v,\:\!e_k}\,h_k\Rightarrow S_1T_{\!2}T_2=\sum s_k\:\!\Ang{v,\:\!e_k}\,f_k=T_{\!1}.$\vspace{2pt}\parSol{}
+%(b) $T_{\!1}^*T_{\!1}=S_2^*T_{\!2}^*T_{\!2}S_2\Rightarrow T_{\!1}^*T_{\!1}-\lambda I=S_2^*\Par{T_{\!2}^*T_{\!2}-\lambda I}S_2\Rightarrow\dim E\Par{\lambda,T_{\!1}^*T_{\!1}}=\dim E\Par{\lambda,T_{\!2}^*T_{\!2}}.$
+%\SepLine
 
-\Anchor{7E17}\ProblemN{17}{
+\Anchor{7E17}\ProblemN{E.17}{
 	\TextA{Supp $T\in\Lm{V}.$ Prove $T$ self-adj $\Longleftrightarrow T^\dagger$ self-adj.}
 }By Exe (16). $T=T^*\Longleftrightarrow T^\dagger=\Par{T^*}{^\dagger}=\Par{T^\dagger}{^*}.$\PfEnd\vspace{2pt}\par\quad
 \Or Let $\lambda_1,\dots,\lambda_m$ be disti eigvals of $T$ with $\lambda=0$ if any. Let $U=\Par{\null T}{^\perp}.$\par\quad
@@ -543,43 +539,40 @@ $m_T=\Par{z-\lambda_1}\cdots\Par{z-\lambda_m}\Longleftrightarrow m_{T|_U}=\Par{z
 $\Longleftrightarrow$ the min of $\Par{T\mmid_U}{^{-1}}$ is $\Par{z-\lambda_1^{-1}}\cdots\Par{z-\lambda_m^{-1}}$ if $T$ inje, and othws $\Par{z-\lambda_2^{-1}}\cdots\Par{z-\lambda_m^{-1}}$\par\quad
 $\Longleftrightarrow m_{T^\dagger}=$ the min of $\Par{T\mmid_U}{^{-1}}$ if $T$ inje, othws $z\Par{z-\lambda_2^{-1}}\cdots\Par{z-\lambda_m^{-1}}.$\PfEnd
 \SepLine
-\ChEnd
-\pagebreak
 
-\ChDecl{Ch7F}{7.F [4E]}{\quad{\ANote {\FontSmall $V,W$ are finide non0 vecsps over $\Fbb.$}}}
+\ChDecl{Ch7F}{}{}
 
-
-\Anchor{7F}\ProblemN{}{
+\Anchor{7F}\ProblemN{F.}{
 	\TextA{}
 }
 \SepLine
 
 
-\Anchor{7F}\ProblemN{}{
+\Anchor{7F}\ProblemN{F.}{
 	\TextA{}
 }
 \SepLine
 
 
-\Anchor{7F}\ProblemN{}{
+\Anchor{7F}\ProblemN{F.}{
 	\TextA{}
 }
 \SepLine
 
 
-\Anchor{7F}\ProblemN{}{
+\Anchor{7F}\ProblemN{F.}{
 	\TextA{}
 }
 \SepLine
 
 
-\Anchor{7F}\ProblemN{}{
+\Anchor{7F}\ProblemN{F.}{
 	\TextA{}
 }
 \SepLine
 
 
-\Anchor{7F}\ProblemN{}{
+\Anchor{7F}\ProblemN{F.}{
 	\TextA{}
 }
 \SepLine
