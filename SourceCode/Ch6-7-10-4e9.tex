@@ -502,15 +502,14 @@ Then $S_{\Cbb}\Sbra{\lambda^{-1}\Par{u+\i\,v}}=u+\i\,v\in\bigodot{_{\!\Cbb}}$ wh
 \Anchor{7E4}\ProblemN{E.4}{
 	\TextA{Supp non0 $T\in\Lm{V,W},$ and $s_1,s_n$ are the max and min of singvals.}
 	\TextA{Prove $\Bra{\Dvert{Tv}:v\in V,\Dvert{v}=1}=\Interval{[}{]}{s_n,\,s_1}.$}
-}If $s_1=\dots=s_n=0\Rightarrow T=0.$ Done. If $s_1=\dots=s_n>0\Rightarrow s_1^{-1}T$ is isomet. Done.\parSol{}
-Supp $s_1>s_n.$ Get the SVD $\Par{e_1,\dots,e_m},\Par{f_1,\dots,f_m}$ in $V,W.$\parSol{}
-$\forall v\in V,\,\Dvertsq{Tv}=s_1^2\,\innerAsq{v,\:\!e_1}+\dots+s_m^2\,\innerAsq{v,\:\!e_m}\leqslant s_1^2\:\!\BigPar{\innerAsq{v,\:\!e_1}+\dots+\innerAsq{v,\:\!e_m}}.$\vspace{1pt}\parSol{}
-By Bessel's Inequa, $\Dvertsq{Tv}\leqslant s_1^2\,\Dvertsq{v}.$ \;Thus \,$LHS\subseteq\Interval{[}{]}{0,\,s_1}.$\vspace{2pt}\parSol{}
-If $s_n>0\Rightarrow \dim V=n=m.$ Then $\Dvertsq{Tv}\geqslant s_1^2\:\!\BigPar{\innerAsq{v,\:\!e_1}+\dots+\innerAsq{v,\:\!e_m}}=s_1^2\,\Dvertsq{v}.$\parSol{}
-Supp $s\in\Interval{[}{]}{s_n,\,s_1}.$ We show $\exists\,v\in V$ with $\Dvert{v}=1$ suth $\Dvert{Tv}=s.$\parSol{}
-Which equiv to $\exists$ solus of system of equations (I) $x^2+y^2=1,$ (II) $s_1^2\,x^2+s_n^2\,y^2=s^2.$\vspace{2pt}\parSol{}
-If $s_n=0\Rightarrow m<n=\dim V.$ Extend to $B_V=\Par{e_1,\dots,e_m,\dots,e_n}\Rightarrow e_n\in\null T.$\parSol{}
-Supp $s\in\Interval{[}{]}{0,\,s_1}.$ \,Let $c=s/s_1,\,u=ce_1\Rightarrow\Dvert{Tu}=s.$ Let $v=u+\sqrt{1-c^2}\,e_n.$\PfEnd
+}Get the SVD $\Par{e_1,\dots,e_m},\Par{\,f_1,\dots,f_m}$ in $V,W.$ \,We show $\forall s\in\Interval{[}{]}{s_n,\,s_1},\exists\,v\in V,\,\Dvert{Tv}=s.$\parSol{}
+Say $v=x\:\!e_1+y\:\!e_n$ with (I) $\Dvertsq{v}=x^2+y^2=1,$ (II) $\Dvertsq{Tv}=s_1^2\,x^2+s_n^2\,y^2=s^2.$\parSol{}
+If $s_1=s_n.$ Done. \,Supp $s_1>s_n.$ Then \,$s_1^2-s^2=\Par{s_1^2-s_n^2}\,y^2,$ and $s^2-s_n^2=\Par{s_1^2-s_n^2}\,x^2.$\PfEnd\vspace{1pt}
+\AComm $T$ is a scalar multi of an isomet $\Longleftrightarrow\Bra{\Dvert{Tv}:v\in V,\Dvert{v}=1}=\Bra{s_1}.$
+%Supp $s_1>s_n.$ $\forall v\in V,\,\Dvertsq{Tv}=s_1^2\,\innerAsq{v,\:\!e_1}+\dots+s_m^2\,\innerAsq{v,\:\!e_m}\leqslant s_1^2\:\!\BigPar{\innerAsq{v,\:\!e_1}+\dots+\innerAsq{v,\:\!e_m}}.$\vspace{1pt}\parSol{}
+%By Bessel's Inequa, $\Dvertsq{Tv}\leqslant s_1^2\,\Dvertsq{v}.$ \;Thus \,$LHS\subseteq\Interval{[}{]}{0,\,s_1}.$\vspace{2pt}\parSol{}
+%If $s_n>0\Rightarrow \dim V=n=m.$ Then $\Dvertsq{Tv}\geqslant s_1^2\:\!\BigPar{\innerAsq{v,\:\!e_1}+\dots+\innerAsq{v,\:\!e_m}}=s_1^2\,\Dvertsq{v}.$\parSol{}
+%Supp $s\in\Interval{[}{]}{s_n,\,s_1}.$ We show $\exists\,v\in V$ with $\Dvert{v}=1$ suth $\Dvert{Tv}=s.$\PfEnd
 \SepLine
 
 %\Anchor{7E8}\ProblemN{8}{
