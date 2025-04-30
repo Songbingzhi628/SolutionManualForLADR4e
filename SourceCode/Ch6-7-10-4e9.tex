@@ -500,11 +500,11 @@ Then $S_{\Cbb}\Sbra{\lambda^{-1}\Par{u+\i\,v}}=u+\i\,v\in\bigodot{_{\!\Cbb}}$ wh
 \SepLine
 
 \Anchor{7E4}\ProblemN{E.4}{
-	\TextA{Supp non0 $T\in\Lm{V,W},$ and $s_1,s_n$ are the max and min of singvals.}
-	\TextA{Prove $\Bra{\Dvert{Tv}:v\in V,\Dvert{v}=1}=\Interval{[}{]}{s_n,\,s_1}.$}
-}Get the SVD $\Par{e_1,\dots,e_m},\Par{\,f_1,\dots,f_m}$ in $V,W.$ \,We show $\forall s\in\Interval{[}{]}{s_n,\,s_1},\exists\,v\in V,\,\Dvert{Tv}=s.$\parSol{}
-Say $v=x\:\!e_1+y\:\!e_n$ with (I) $\Dvertsq{v}=x^2+y^2=1,$ (II) $\Dvertsq{Tv}=s_1^2\,x^2+s_n^2\,y^2=s^2.$\parSol{}
-If $s_1=s_n.$ Done. \,Supp $s_1>s_n.$ Then \,$s_1^2-s^2=\Par{s_1^2-s_n^2}\,y^2,$ and $s^2-s_n^2=\Par{s_1^2-s_n^2}\,x^2.$\PfEnd\vspace{2pt}
+	\TextA{Supp $T\in\Lm{V,W},$ and $s_1,s_n$ are the max and min of singvals.\vspace{1pt}}
+	\TextA{Prove $\Bra{\Dvert{Tv}:v\in V,\Dvert{v}=1}=\Interval{[}{]}{s_n,\,s_1}.$\vspace{2pt}}
+}Get the SVD $\Par{e_1,\dots,e_m},\Par{\,f_1,\dots,f_m}$ in $V,W.$ \,We show $\forall s\in\Interval{[}{]}{s_n,\,s_1},\exists\,v\in V,\,\Dvert{Tv}=s.$\vspace{1pt}\parSol{}
+Say $v=x\:\!e_1+y\:\!e_n$ with (I) $\Dvertsq{v}=x^2+y^2=1,$ (II) $\Dvertsq{Tv}=s_1^2\,x^2+s_n^2\,y^2=s^2.$\vspace{1pt}\parSol{}
+If $s_1=s_n.$ Done. \,Supp $s_1>s_n.$ Then \,$s_1^2-s^2=\Par{s_1^2-s_n^2}\,y^2,$ and $s^2-s_n^2=\Par{s_1^2-s_n^2}\,x^2.$\PfEnd\vspace{3pt}
 \AComm $T$ is a scalar multi of an isomet $\Longleftrightarrow\Bra{\Dvert{Tv}:v\in V,\Dvert{v}=1}=\Bra{s_1}.$
 %Supp $s_1>s_n.$ $\forall v\in V,\,\Dvertsq{Tv}=s_1^2\,\innerAsq{v,\:\!e_1}+\dots+s_m^2\,\innerAsq{v,\:\!e_m}\leqslant s_1^2\:\!\BigPar{\innerAsq{v,\:\!e_1}+\dots+\innerAsq{v,\:\!e_m}}.$\vspace{1pt}\parSol{}
 %By Bessel's Inequa, $\Dvertsq{Tv}\leqslant s_1^2\,\Dvertsq{v}.$ \;Thus \,$LHS\subseteq\Interval{[}{]}{0,\,s_1}.$\vspace{2pt}\parSol{}
@@ -522,9 +522,9 @@ If $s_1=s_n.$ Done. \,Supp $s_1>s_n.$ Then \,$s_1^2-s^2=\Par{s_1^2-s_n^2}\,y^2,$
 
 \Anchor{7E11}\ProblemN{E.11}{
 	\TextA{Supp $T\in\Lm{V}$ is posi, $B_V=\Par{v_1,\dots,v_n}$ is orthon, and $s_1,\dots,s_n$ are the singvals.}
-	\TextA{Prove $\Ang{Tv_1,\;\!v_1}+\dots+\Ang{Tv_n,\;\!v_n}=s_1+\dots+s_n.$}
+	\TextA{Prove $\Ang{Tv_1,\;\!v_1}+\dots+\Ang{Tv_n,\;\!v_n}=s_1+\dots+s_n.$\vspace{1pt}}
 }$\Ang{Tv_k,\;\!v_k}=\Ang{\sqrt{T}v_k,\:\!\sqrt{T}v_k}=\Dvertsq{\sqrt{T}v_k}.$ Note that $\sqrt{T}=\sqrt{T^*}=\Par{\sqrt{T}}{^*}$ is posi.\parSol{}
-\NOTICE that \,$s_1,\dots,s_n$ are the eigvals of $\sqrt{T}{^*}\sqrt{T}=T\Rightarrow\sqrt{s_1},\dots,\sqrt{s_n}$ are the singvals of $\sqrt{T}.$\parSol{}
+\NOTICE that \,$s_1,\dots,s_n$ are the eigvals of $\sqrt{T}{^*}\sqrt{T}=T\Rightarrow\sqrt{s_1},\dots,\sqrt{s_n}$ are the singvals of $\sqrt{T}.$\vspace{1pt}\parSol{}
 Get the SVD $\Par{e_1,\dots,e_n},\Par{\,f_1,\dots,f_n}.$ By (4E 7.A.5), $\sum\Dvertsq{\sqrt{T}v_k}=\sum\Dvertsq{\sqrt{T}e_k}=\sum s_k.$\PfEnd
 %Becs $A=\Mt{T}=\Mt{T}{^*}$ wrto $B_V,$ and each $\Ang{Tv_k,\:\!v_k}=A_{k,k}=\lambda_k\Rightarrow T$ diag wrto $B_V.$\parSol{}
 %Becs $T$ posi $\Rightarrow\aMidsq{\lambda_k}=\lambda_k^2.$ 又 $T^*Tv_k=T^2v_k=\lambda_k^2\:\!v_k=s_k^2\:\!v_k.$\PfEnd\vspace{2pt}\parSol{}
