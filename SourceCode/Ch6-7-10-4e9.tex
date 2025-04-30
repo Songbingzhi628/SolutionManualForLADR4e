@@ -504,7 +504,7 @@ Then $S_{\Cbb}\Sbra{\lambda^{-1}\Par{u+\i\,v}}=u+\i\,v\in\bigodot{_{\!\Cbb}}$ wh
 	\TextA{Prove $\Bra{\Dvert{Tv}:v\in V,\Dvert{v}=1}=\Interval{[}{]}{s_n,\,s_1}.$\vspace{2pt}}
 }Get the SVD $\Par{e_1,\dots,e_m},\Par{\,f_1,\dots,f_m}$ in $V,W.$ \,We show $\forall s\in\Interval{[}{]}{s_n,\,s_1},\exists\,v\in V,\,\Dvert{Tv}=s.$\vspace{1pt}\parSol{}
 Say $v=x\:\!e_1+y\:\!e_n$ with (I) $\Dvertsq{v}=x^2+y^2=1,$ (II) $\Dvertsq{Tv}=s_1^2\,x^2+s_n^2\,y^2=s^2.$\vspace{1pt}\parSol{}
-If $s_1=s_n.$ Done. \,Supp $s_1>s_n.$ Then \,$s_1^2-s^2=\Par{s_1^2-s_n^2}\,y^2,$ and $s^2-s_n^2=\Par{s_1^2-s_n^2}\,x^2.$\PfEnd\vspace{3pt}
+If $s_1=s_n.$ Done. \,Supp $s_1>s_n.$ Then \,$s_1^2-s^2=\Par{s_1^2-s_n^2}\,y^2,$ \,and \:$s^2-s_n^2=\Par{s_1^2-s_n^2}\,x^2.$\PfEnd\vspace{3pt}
 \AComm $T$ is a scalar multi of an isomet $\Longleftrightarrow\Bra{\Dvert{Tv}:v\in V,\Dvert{v}=1}=\Bra{s_1}.$
 %Supp $s_1>s_n.$ $\forall v\in V,\,\Dvertsq{Tv}=s_1^2\,\innerAsq{v,\:\!e_1}+\dots+s_m^2\,\innerAsq{v,\:\!e_m}\leqslant s_1^2\:\!\BigPar{\innerAsq{v,\:\!e_1}+\dots+\innerAsq{v,\:\!e_m}}.$\vspace{1pt}\parSol{}
 %By Bessel's Inequa, $\Dvertsq{Tv}\leqslant s_1^2\,\Dvertsq{v}.$ \;Thus \,$LHS\subseteq\Interval{[}{]}{0,\,s_1}.$\vspace{2pt}\parSol{}
@@ -541,7 +541,7 @@ Get the SVD $\Par{e_1,\dots,e_n},\Par{\,f_1,\dots,f_n}.$ By (4E 7.A.5), $\sum\Dv
 \Anchor{7E17}\ProblemN{E.17}{
 	\TextA{Supp $T\in\Lm{V}.$ Prove $T$ self-adj $\Longleftrightarrow T^\dagger$ self-adj.}
 }By Exe (16). $T=T^*\Longleftrightarrow T^\dagger=\Par{T^*}{^\dagger}=\Par{T^\dagger}{^*}.$\PfEnd\vspace{2pt}\par\quad
-\Or Let $\lambda_1,\dots,\lambda_m$ be disti eigvals of $T$ with $\lambda=0$ if any. Let $U=\Par{\null T}{^\perp}.$\par\quad
+\Or Let $\lambda_1,\dots,\lambda_m$ be disti eigvals of $T$ with $\lambda_1=0$ if any. Let $U=\Par{\null T}{^\perp}.$\par\quad
 $m_T=\Par{z-\lambda_1}\cdots\Par{z-\lambda_m}\Longleftrightarrow m_{T|_U}=\Par{z-\lambda_1}\cdots\Par{z-\lambda_m}$ if $T$ inje, othws $m_{T|_U}=\Par{z-\lambda_2}\cdots\Par{z-\lambda_m}$\par\quad
 $\Longleftrightarrow$ the min of $\Par{T\mmid_U}{^{-1}}$ is $\Par{z-\lambda_1^{-1}}\cdots\Par{z-\lambda_m^{-1}}$ if $T$ inje, and othws $\Par{z-\lambda_2^{-1}}\cdots\Par{z-\lambda_m^{-1}}$\par\quad
 $\Longleftrightarrow m_{T^\dagger}=$ the min of $\Par{T\mmid_U}{^{-1}}$ if $T$ inje, othws $z\Par{z-\lambda_2^{-1}}\cdots\Par{z-\lambda_m^{-1}}.$\PfEnd
