@@ -386,7 +386,7 @@ By asum, $\exists$ orthon $B_{U^\perp}$ of eigvecs of $T\mmid_{U^\perp}.$ Now $B
 \SepLine
 \ChEnd
 
-\vfill\ChDecl{Ch7C}{7.C [4E] \& 7.D [4E]}{\quad{\ANote {\FontSmall $V$ denotes a finide vecsp over $\Fbb.$\;\Big|\;7.D[4E]处结合了3e的9.B节。}}}
+\vfill\ChDecl{Ch7C}{7.C \& 7.D [4E]}{\quad{\ANote {\FontSmall $V$ denotes a finide vecsp over $\Fbb.$\qquad7.D[4E]处结合了3e的9.B节。}}}
 
 \vspace{4pt}
 
@@ -488,9 +488,16 @@ Then $S_{\Cbb}\Sbra{\lambda^{-1}\Par{u+\i\,v}}=u+\i\,v\in\bigodot{_{\!\Cbb}}$ wh
 
 \ChEnd\pagebreak
 
-\ChDecl{Ch7E}{7.E [4E] \& 7.F[4E]}{\quad{\ANote {\FontSmall $V,W$ are finide non0 vecsps over $\Fbb.$}}}
+\ChDecl{Ch7E}{7.E [4E] \& 7.F [4E]}{\quad{\ANote {\FontSmall $V,W$ are finide non0 vecsps over $\Fbb.$}}}
 
 \vspace{6pt}
+
+%\Anchor{7E2}\ProblemN{E.2}{
+%	\TextA{Supp $T\in\Lm{V,W},s>0.$}
+%	\TextA{Prove $s$ is singval $\Rightarrow\exists$ non0 $v\in V,w\in W$ suth $Tv=sw,\,T^*w=sv.$}
+%}Supp $s^2$ is eigval of $T^*T$ with eigvec $v.$ Let $Tv\big/s=w\Rightarrow T^*w=sv.$\PfEnd
+%\AComm If $s=0.$ Let $V=\Fbb^2.$ Let 
+%\SepLine
 
 \Anchor{7E1}\ProblemN{E.1}{
 	\TextA{Supp $T\in\Lm{V,W}.$ Show $T=0\Longleftrightarrow$ all singvals are $0.$}
@@ -521,11 +528,11 @@ If $s_1=s_n.$ Done. \,Supp $s_1>s_n.$ Then \,$s_1^2-s^2=\Par{s_1^2-s_n^2}\,y^2,$
 %\SepLine
 
 \Anchor{7E11}\ProblemN{E.11}{
-	\TextA{Supp $T\in\Lm{V}$ is posi, $B_V=\Par{v_1,\dots,v_n}$ is orthon, and $s_1,\dots,s_n$ are the singvals.}
-	\TextA{Prove $\Ang{Tv_1,\;\!v_1}+\dots+\Ang{Tv_n,\;\!v_n}=s_1+\dots+s_n.$\vspace{1pt}}
-}$\Ang{Tv_k,\;\!v_k}=\Ang{\sqrt{T}v_k,\:\!\sqrt{T}v_k}=\Dvertsq{\sqrt{T}v_k}.$ Note that $\sqrt{T}=\sqrt{T^*}=\Par{\sqrt{T}}{^*}$ is posi.\parSol{}
+	\TextA{Supp $T\in\Lm{V}$ is posi, $B_V=\Par{v_1,\dots,v_n}$ is orthon, and $s_1,\dots,s_n$ are the singvals.\vspace{1pt}}
+	\TextA{Prove $\Ang{Tv_1,\;\!v_1}+\dots+\Ang{Tv_n,\;\!v_n}=s_1+\dots+s_n.$\vspace{2pt}}
+}$\Ang{Tv_k,\;\!v_k}=\BigAng{\sqrt{T}v_k,\:\!\sqrt{T}v_k}=\BigDvertsq{\sqrt{T}v_k}.$ Note that $\sqrt{T}=\sqrt{T^*}=\Par{\sqrt{T}}{^*}$ is posi.\parSol{}
 \NOTICE that \,$s_1,\dots,s_n$ are the eigvals of $\sqrt{T}{^*}\sqrt{T}=T\Rightarrow\sqrt{s_1},\dots,\sqrt{s_n}$ are the singvals of $\sqrt{T}.$\vspace{1pt}\parSol{}
-Get the SVD $\Par{e_1,\dots,e_n},\Par{\,f_1,\dots,f_n}.$ By (4E 7.A.5), $\sum\Dvertsq{\sqrt{T}v_k}=\sum\Dvertsq{\sqrt{T}e_k}=\sum s_k.$\PfEnd
+Get the SVD $\Par{e_1,\dots,e_n},\Par{\,f_1,\dots,f_n}.$ By (4E 7.A.5), $\sum\BigDvertsq{\sqrt{T}v_k}=\sum\BigDvertsq{\sqrt{T}e_k}=\sum s_k.$\PfEnd
 %Becs $A=\Mt{T}=\Mt{T}{^*}$ wrto $B_V,$ and each $\Ang{Tv_k,\:\!v_k}=A_{k,k}=\lambda_k\Rightarrow T$ diag wrto $B_V.$\parSol{}
 %Becs $T$ posi $\Rightarrow\aMidsq{\lambda_k}=\lambda_k^2.$ 又 $T^*Tv_k=T^2v_k=\lambda_k^2\:\!v_k=s_k^2\:\!v_k.$\PfEnd\vspace{2pt}\parSol{}
 \SepLine
@@ -549,38 +556,84 @@ $\Longleftrightarrow m_{T^\dagger}=$ the min of $\Par{T\mmid_U}{^{-1}}$ if $T$ i
 
 \ChDecl{Ch7F}{}{}
 
-\Anchor{7F}\ProblemN{F.}{
-	\TextA{}
+%\Anchor{7F1}\ProblemN{1}{
+%	\TextA{Prove $\aXMid{\Dvert{S}-\Dvert{T}}\leqslant\Dvert{S-T}$ for $S,T\in\Lm{V,W}.$}
+%}$\Dvert{T}=\Dvert{S-T-S}\leqslant\Dvert{S-T}+\Dvert{S}$ \,and\, $\Dvert{S}=\Dvert{S-T+T}\leqslant\Dvert{S-T}+\Dvert{T}.$\PfEnd\vspace{3pt}\parSol{}
+%\Or Let $v\in V$ be suth $\Dvert{\Par{S-T}v}=\Dvert{S-T}\Rightarrow\aXMid{\Dvert{Sv}-\Dvert{Tv}}\leqslant\Dvert{Sv-Tv}.$\parSol{}
+%Supp $\Dvert{Sv}\geqslant\Dvert{Tv}\Rightarrow\aXMid{\Dvert{Sv}-\Dvert{Tv}}\leqslant\Dvert{S}-\Dvert{Tv}.$ Becs $-\Dvert{Tv}\geqslant-\Dvert{T}.$\parSol{}
+%Now 
+%\SepLine
+
+
+\Anchor{7F8}\ProblemN{F.8}{
+	\TextA{Supp $S\in\Lm{V}$ inv. Prove if $T\in\Lm{V}$ and $\Dvert{S-T}<1\big/\Dvert{S^{-1}},$ then $T$ inv.}
+}Note that $1\big/\Dvert{S^{-1}}=s_n,$ where $s_1\geqslant\cdots\geqslant s_n$ are the singvals of $T.$\parSol{}
+Becs \,$s_n=\min\!\Bra{\Dvert{S-T}:T\in\Lm{V}\text{ and }\dim\range T=n-1}>\min\!\Bra{\Dvert{S-T}:T\in\Lm{V}\text{ inv}}.$\parSol{}
+\SepLine
+
+
+\Anchor{7F11}\ProblemN{F.11}{
+	\TextA{Supp $\Fbb=\Cbb,T\in\Lm{V}.$ Prove $\forall\epsilon>0,\exists$ diag $S\in\Lm{V},\,0<\Dvert{T-S}<\epsilon.$}
 }
 \SepLine
 
 
-\Anchor{7F}\ProblemN{F.}{
-	\TextA{}
+\Anchor{7F13}\ProblemN{F.13}{
+	\TextA{Supp $S,T\in\Lm{V}$ are posi. Show $\Dvert{S-T}\leqslant\max\!\Bra{\Dvert{S},\Dvert{T}}\leqslant\Dvert{S+T}.$}
+}
+\SepLine
+
+\Anchor{7F14}\ProblemN{14}{
+	\TextA{Supp $U,W$ subsps of $V$ suth $\Dvert{P_{\!U}-P_{\!W}}<1.$ Prove $\dim U=\dim W.$}
+}Get orthon $B_U=\Par{u_1,\dots,u_m},B_{U^\perp}=\Par{x_1,\dots,x_n}.$\parSol{}
+Then $1=s_m=\min\!\Bra{\Dvert{P_{\!U}-T}:T\in\Lm{V}\text{ and }\dim\range T=0,1,\dots,m-1}.$\parSol{}
+Thus $\dim\range P_{\!W}\geqslant\dim\range P_{\!U}.$ \;Apply revly, done.\PfEnd
+\SepLine
+
+\Anchor{7F16}\ProblemN{16}{
+	\TextA{Supp $S\in\Lm{V}$ is posi inv.}
+	\TextA{Prove $\exists\,\delta>0$ suth if  $T\in\Lm{V}$ self-adj and $\Dvert{S-T}<\delta,$ then $T$ posi.}
+}
+\SepLine
+
+\Anchor{7F22}\ProblemN{22}{
+	\TextA{Supp $T\in\Lm{V,W}.$ Let $n=\dim V$ and $s_1\geqslant\cdots\geqslant s_n$ are the singvals.}
+	\TextA{Prove $s_{n-k+1}=\min\!\Bra{\Dvert{T\mmid_U}:U\text{ is subsp of }V,\,\dim U=k}$ for $1\leqslant k\leqslant n.$}
+}Get the SVD bses $\Par{e_1,\dots,e_n},\Par{\,f_1,\dots,f_n}.$ Let $U=\Span{e_{n-k+1},\dots,e_n}\Rightarrow\Dvert{T\mmid_U}=s_{n-k+1}.$\parSol{}
+Asum $\exists$ $k$\hspace{1pt}-\hspace{1pt}dim subsp $U$ suth $\Dvert{T\mmid_U}<s_{n-k+1}.$ \,Get orthon $B_U=\Par{g_1,\dots,g_k}.$\parSol{}
+Then $\forall u\in U$ suth $\Dvert{u}\leqslant 1,$ \,$\Dvertsq{Tu}=s_1^2\,\innerAsq{u,\:\!e_1}+\dots+s_m^2\,\innerAsq{u,\:\!e_m}<s_{n-k+1}^2.$\parSol{}
+\PfEnd
+\SepLine
+
+%\Anchor{7F26}\ProblemN{F.26}{
+%	\TextA{Supp $T\in\Lm{V}.$ Prove $\exists\,!$ unit $S\in\Lm{V},\,T=S\sqrt{T^*T}\Rightarrow T$ inv.}
+%}
+%\SepLine
+
+
+\Anchor{7F27}\ProblemN{F.27}{
+	\TextA{Supp $T\in\Lm{V},s_1,\dots,s_n$ are singvals with the SVD bses $\Par{e_1,\dots,e_n},\Par{\,f_1,\dots,f_n}.$}
+	\TextA{Define $S\in\Lm{V}:e_k\mapsto\:f_k.$ \;Show for all $E\in\Lm{V}$ unit, $\Dvert{T-E}\geqslant\Dvert{T-S}.$}
 }
 \SepLine
 
 
-\Anchor{7F}\ProblemN{F.}{
-	\TextA{}
-}
+\Anchor{7F28}\ProblemN{F.28}{
+	\TextA{Supp $T\in\Lm{V}.$ Prove $\exists$ unit $S\in\Lm{V},\,T=\sqrt{TT^*}\,S.$}
+}Let $T^*=S\sqrt{TT^*}\Rightarrow T=\sqrt{TT^*}\,S^*.$\PfEnd\vspace{2pt}\parSol{}
+\Or Supp $s_1,\dots,s_m$ are the positive singvals of $T$ with SVD $\Par{e_1,\dots,e_m},\Par{\,f_1,\dots,f_m}.$\vspace{1pt}\parSol{}
+Becs $T^*Te_k=s_k^2e_k,\;f_k=Te_k\big/s_k\Rightarrow TT^*\,f_k=TT^*Te_k\big/s_k=s_kTe_k=s_k^2\:f_k\Rightarrow\sqrt{TT^*}\,f_k=s_k\:f_k.$\vspace{1pt}\parSol{}
+Now $\dim E\Par{s_k,\sqrt{T^*T}}\leqslant\dim E\Par{s_k,\sqrt{TT^*}}.$ Apply revly. Thus $\dim E\Par{0,\sqrt{T^*T}}=\dim E\Par{0,\sqrt{TT^*}}.$\vspace{1pt}\parSol{}
+Get orthon bses of $E\Par{0,\sqrt{T^*T}}$ and $E\Par{0,\sqrt{TT^*}}.$ Forming two orthon bses of $V.$\parSol{}
+Define $S\in\Lm{V}$ by $Se_j=f_j.$ \quad\ANote The same $S$ in $T=S\sqrt{T^*T}.$\PfEnd\vspace{3pt}
+\Anchor{7F29}\ACoro $T=S\sqrt{T^*T}\Rightarrow T^*=\sqrt{T^*T}\,S^*\Longrightarrow TT^*=ST^*TS^*.$\parCor
+\Or $T=S\sqrt{T^*T}=\sqrt{TT^*}\,S\Rightarrow \sqrt{T^*T}=S^*\sqrt{TT^*}\,S\Longrightarrow T^*T=S^*\sqrt{TT^*}\,SS^*\sqrt{TT^*}\,S=S^*TT^*S.$
 \SepLine
 
-
-\Anchor{7F}\ProblemN{F.}{
-	\TextA{}
-}
+\Anchor{7F30}\ProblemN{F.30}{
+	\TextA{Supp $T\in\Lm{V},$ and $S\in\Lm{V}$ unit suth $ST$ posi. Prove $T=S^*\sqrt{T^*T}.$}
+}Becs $T=S^*T^*S^*.$\parSol{}
+Write each $Te_k=s_k\,f_k=S^*T^*S^*e_k\Rightarrow s_kSf_k=T^*S^*e_k$ while $T^*f_k=s_ke_k.$\parSol{} 
 \SepLine
 
-
-\Anchor{7F}\ProblemN{F.}{
-	\TextA{}
-}
-\SepLine
-
-
-\Anchor{7F}\ProblemN{F.}{
-	\TextA{}
-}
-\SepLine
 \ChEnd
