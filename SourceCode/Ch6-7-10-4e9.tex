@@ -564,12 +564,11 @@ $\Longleftrightarrow m_{T^\dagger}=$ the min of $\Par{T\mmid_U}{^{-1}}$ if $T$ i
 %Now 
 %\SepLine
 
-
-\Anchor{7F8}\ProblemN{F.8}{
-	\TextA{Supp $S\in\Lm{V}$ inv. Prove if $T\in\Lm{V}$ and $\Dvert{S-T}<1\big/\Dvert{S^{-1}},$ then $T$ inv.}
-}Note that $1\big/\Dvert{S^{-1}}=s_n,$ where $s_1\geqslant\cdots\geqslant s_n$ are the singvals of $T.$\parSol{}
-Becs \,$s_n=\min\!\Bra{\Dvert{S-T}:T\in\Lm{V}\text{ and }\dim\range T=n-1}>\min\!\Bra{\Dvert{S-T}:T\in\Lm{V}\text{ inv}}.$\parSol{}
-\SepLine
+%\Anchor{7F8}\ProblemN{F.8}{
+%	\TextA{Supp $S\in\Lm{V}$ inv. Prove if $T\in\Lm{V}$ and $\Dvert{S-T}<1\big/\Dvert{S^{-1}},$ then $T$ inv.}
+%}Note that $1\big/\Dvert{S^{-1}}=s_n,$ where $s_1\geqslant\cdots\geqslant s_n$ are the singvals of $T.$\parSol{}
+%Becs $s_n=\min\!\Bra{\Dvert{S-T}:T\in\Lm{V}\text{ and }\dim\range T=n-1}>\Dvert{S-T}$\PfEnd
+%\SepLine
 
 
 \Anchor{7F11}\ProblemN{F.11}{
@@ -583,26 +582,24 @@ Becs \,$s_n=\min\!\Bra{\Dvert{S-T}:T\in\Lm{V}\text{ and }\dim\range T=n-1}>\min\
 }
 \SepLine
 
-\Anchor{7F14}\ProblemN{14}{
+\Anchor{7F14}\ProblemN{F.14}{
 	\TextA{Supp $U,W$ subsps of $V$ suth $\Dvert{P_{\!U}-P_{\!W}}<1.$ Prove $\dim U=\dim W.$}
 }Get orthon $B_U=\Par{u_1,\dots,u_m},B_{U^\perp}=\Par{x_1,\dots,x_n}.$\parSol{}
 Then $1=s_m=\min\!\Bra{\Dvert{P_{\!U}-T}:T\in\Lm{V}\text{ and }\dim\range T=0,1,\dots,m-1}.$\parSol{}
 Thus $\dim\range P_{\!W}\geqslant\dim\range P_{\!U}.$ \;Apply revly, done.\PfEnd
 \SepLine
 
-\Anchor{7F16}\ProblemN{16}{
+\Anchor{7F16}\ProblemN{F.16}{
 	\TextA{Supp $S\in\Lm{V}$ is posi inv.}
 	\TextA{Prove $\exists\,\delta>0$ suth if  $T\in\Lm{V}$ self-adj and $\Dvert{S-T}<\delta,$ then $T$ posi.}
 }
 \SepLine
 
-\Anchor{7F22}\ProblemN{22}{
+\Anchor{7F22}\ProblemN{F.22}{
 	\TextA{Supp $T\in\Lm{V,W}.$ Let $n=\dim V$ and $s_1\geqslant\cdots\geqslant s_n$ are the singvals.}
 	\TextA{Prove $s_{n-k+1}=\min\!\Bra{\Dvert{T\mmid_U}:U\text{ is subsp of }V,\,\dim U=k}$ for $1\leqslant k\leqslant n.$}
-}Get the SVD bses $\Par{e_1,\dots,e_n},\Par{\,f_1,\dots,f_n}.$ Let $U=\Span{e_{n-k+1},\dots,e_n}\Rightarrow\Dvert{T\mmid_U}=s_{n-k+1}.$\parSol{}
-Asum $\exists$ $k$\hspace{1pt}-\hspace{1pt}dim subsp $U$ suth $\Dvert{T\mmid_U}<s_{n-k+1}.$ \,Get orthon $B_U=\Par{g_1,\dots,g_k}.$\parSol{}
-Then $\forall u\in U$ suth $\Dvert{u}\leqslant 1,$ \,$\Dvertsq{Tu}=s_1^2\,\innerAsq{u,\:\!e_1}+\dots+s_m^2\,\innerAsq{u,\:\!e_m}<s_{n-k+1}^2.$\parSol{}
-\PfEnd
+}Get the SVD bses $\Par{e_1,\dots,e_n},\Par{\,f_1,\dots,f_n}.$ Let $U=\Span{e_{n-k+1},\dots,e_n}\Rightarrow\Dvert{T\mmid_U}=s_{n-k+1}.$\vspace{1pt}\parSol{}
+Supp $U$ a $k$\hspace{1pt}-\hspace{1pt}dim subsp of $V.$ Becs $\Dvert{T\mmid_U}=\BigDvert{T\mmid_UP_{\!U}}=\BigDvert{T-T\mmid_{U^\perp}P_{\!U^\perp}}\geqslant s_{n-k+1}.$\PfEnd
 \SepLine
 
 %\Anchor{7F26}\ProblemN{F.26}{
