@@ -456,7 +456,7 @@ $\BigDvertsq{S\Par{u+w}}=\Dvertsq{u+w}.$ \Or $S^2\Par{u+w}=u+w\Rightarrow S^{-1}
 	\TextA{Supp $\Dvert{Tv}\leqslant\Dvert{v}$ for all $v\in V.$ Prove $T$ unit.}
 }Supp Jordan $\Mt{T_{\!\Cbb}}$ wrto $B_1=\Par{u_1+\i\,v_1,\dots,u_n+\i\,v_n}\Rightarrow\Mt{T,B_1}=\Mt{T,B_2},$\parSol{}
 where $B_2=\Par{x_1+\i\,y_1,\dots,x_n+\i\,y_n}$ with each $x_k+\i\,y_k=\BigPar{\!\sqrt{\Dvertsq{u_k}+\Dvertsq{v_k}}}{^{-1}}\Par{u_k+\i\,v_k}.$\parSol{}
-Becs $\BigDvertsq{T_{\!\Cbb}\Par{u+\i\,v}}=\Dvertsq{Tu}+\Dvertsq{Tv}\leqslant\Dvertsq{u+\i\,v}.$ By Exe (9), $T_{\!\Cbb}$ is unit.\parSol{}
+Becs $\BigDvertsq{T_{\!\Cbb}\Par{u+\i\,v}}=\Dvertsq{Tu}+\Dvertsq{Tv}\leqslant\Dvertsq{u+\i\,v}.$ By Exe (D.9), $T_{\!\Cbb}$ is unit.\parSol{}
 Consider $\Mt{T}$ wrto $B_V=\Par{v_1,u_1,\cdots,v_n,u_n}$ and by [9.36].\PfEnd
 \SepLine
 
@@ -547,7 +547,7 @@ Get the SVD $\Par{e_1,\dots,e_n},\Par{\,f_1,\dots,f_n}.$ By (4E 7.A.5), $\sum\Bi
 
 \Anchor{7E17}\ProblemN{E.17}{
 	\TextA{Supp $T\in\Lm{V}.$ Prove $T$ self-adj $\Longleftrightarrow T^\dagger$ self-adj.}
-}By Exe (16). $T=T^*\Longleftrightarrow T^\dagger=\Par{T^*}{^\dagger}=\Par{T^\dagger}{^*}.$\PfEnd\vspace{2pt}\par\quad
+}By Exe (E.16). $T=T^*\Longleftrightarrow T^\dagger=\Par{T^*}{^\dagger}=\Par{T^\dagger}{^*}.$\PfEnd\vspace{2pt}\par\quad
 \Or Let $\lambda_1,\dots,\lambda_m$ be disti eigvals of $T$ with $\lambda_1=0$ if any. Let $U=\Par{\null T}{^\perp}.$\par\quad
 $m_T=\Par{z-\lambda_1}\cdots\Par{z-\lambda_m}\Longleftrightarrow m_{T|_U}=\Par{z-\lambda_1}\cdots\Par{z-\lambda_m}$ if $T$ inje, othws $m_{T|_U}=\Par{z-\lambda_2}\cdots\Par{z-\lambda_m}$\par\quad
 $\Longleftrightarrow$ the min of $\Par{T\mmid_U}{^{-1}}$ is $\Par{z-\lambda_1^{-1}}\cdots\Par{z-\lambda_m^{-1}}$ if $T$ inje, and othws $\Par{z-\lambda_2^{-1}}\cdots\Par{z-\lambda_m^{-1}}$\par\quad
@@ -583,15 +583,15 @@ Becs $s_n=\min\!\Bra{\Dvert{S-T}:\dim\range T=0,1,\dots,n-1}>\Dvert{S-T}\Rightar
 
 %\Anchor{7F9}\ProblemN{F.9}{
 %	\TextA{Supp $T\in\Lm{V}.$ Prove $\forall\epsilon>0,\exists$ inv $S\in\Lm{V}$ suth $0<\Dvert{T-S}<\epsilon.$}
-%}Supp $Tv=\sum s_k\:\!\Ang{v,\:\!e_k}\:f_k.$ Define $S\in\Lm{V}$ by $Sv=\sum\Par{s_k-\delta}\:\!\Ang{v,\:\!e_k}\:f_k,$ where $\delta\in\Interval{(}{)}{0,\epsilon}.$\PfEnd
+%}Supp $Tv=\sum s_k\:\!\Ang{v,\:\!e_k}\:f_k.$ Define $Sv=\sum\Par{s_k-\delta}\:\!\Ang{v,\:\!e_k}\:f_k,$ where $\delta\in\Interval{(}{)}{0,\epsilon}.$\PfEnd
 %\SepLine
 \pagebreak
 
-\Anchor{7F10}\ProblemN{F.10}{
-	\TextA{Supp $\dim V>1,T\in\Lm{V}$ not inv.}
-	\TextA{Prove $\forall\epsilon>0,\exists$ non-inv $S\in\Lm{V}$ suth $0<\Dvert{T-S}<\epsilon.$}
-}
-\SepLine
+%\Anchor{7F10}\ProblemN{F.10}{
+%	\TextA{Supp $\dim V>1,T\in\Lm{V}$ not inv.}
+%	\TextA{Prove $\forall\epsilon>0,\exists$ non-inv $S\in\Lm{V}$ suth $0<\Dvert{T-S}<\epsilon.$}
+%}Supp $Tv=\sum_{k=1}^n s_k\:\!\Ang{v,\:\!e_k}\:f_k.$ Define $Sv=\sum_{k=1}^{n-1}\Par{s_k-\delta}\:\!\Ang{v,\:\!e_k}\:f_k,$ where $\delta\in\Interval{(}{)}{0,\epsilon}.$\PfEnd
+%\SepLine
 
 \Anchor{7F11}\ProblemN{F.11}{
 	\TextA{Supp $\Fbb=\Cbb,T\in\Lm{V}.$ Prove $\forall\epsilon>0,\exists$ diag $S\in\Lm{V},\,0<\Dvert{T-S}<\epsilon.$}
@@ -612,9 +612,11 @@ Let $A=\Mt{T,B_V}.$ Then $\forall v\in V$ with $\Dvert{v}=1,\;\Dvert{Sv-Tv}\leqs
 
 \Anchor{7F14}\ProblemN{F.14}{
 	\TextA{Supp $U,W$ subsps of $V$ suth $\Dvert{P_{\!U}-P_{\!W}}<1.$ Prove $\dim U=\dim W.$}
-}Get orthon $B_U=\Par{u_1,\dots,u_m},B_{U^\perp}=\Par{x_1,\dots,x_n}.$\parSol{}
-Then $1=s_m=\min\!\Bra{\Dvert{P_{\!U}-T}:T\in\Lm{V}\text{ and }\dim\range T=0,1,\dots,m-1}.$\parSol{}
-Thus $\dim\range P_{\!W}\geqslant\dim\range P_{\!U}.$ \;Apply revly, done.\PfEnd
+}Note that $1=s_m=\min\!\Bra{\Dvert{P_{\!U}-T}:T\in\Lm{V}\text{ and }\dim\range T=0,1,\dots,m-1}.$\parSol{}
+Thus $\dim\range P_{\!W}\geqslant\dim\range P_{\!U}.$ \;Apply revly, done.\PfEnd\vspace{2pt}\parSol{}
+\Or Becs $P_{\!U}=I-P_{\!U^\perp}$ \OR $P_{\!W}=I-P_{\!W^\perp}\Rightarrow P_{\!W}-P_{\!U}=P_{\!W}+P_{\!U^\perp}-I$\, \OR \,$P_{\!U}-P_{\!W}=P_{\!U}+P_{\!W^\perp}-I.$\parSol{}
+By Exe (F.8), $P_{\!W}+P_{\!U^\perp}$ and $P_{\!U}+P_{\!W^\perp}$ are inv $\Rightarrow\zeroSubs=\Null\Par{P_{\!W}+P_{\!U^\perp}}\supseteq\null P_{\!W}\cap\null P_{\!U^\perp}.$\parSol{}
+And $V=\Range\Par{P_{\!U}+P_{\!W^\perp}}\subseteq\range P_{\!U}+\range P_{\!W^\perp}=U+W^\perp.$\PfEnd
 \SepLine
 
 \Anchor{7F16}\ProblemN{F.16}{
@@ -633,7 +635,7 @@ Let $T=S\sqrt{T^*T}\Rightarrow\Dvert{T}\leqslant\Dvert{S}\,\BigDvert{\sqrt{T^*T}
 	\TextA{Supp $T\in\Lm{V}$ normal. Prove $\Dvert{T^k}=\Dvert{T}{^k}.$}
 }Let $B_V=\Par{e_1,\dots,e_n}$ be orthon eigvecs of $T^*T$ with corres eigvals $s_1^2,\dots,s_n^2.$\parSol{}
 Becs $\Par{T^k}{^*}T^ke_j=\Par{T^*T}{^k}e_j=s_j^{2k}e_j.$ \;Now $\max\!\Bra{s_1,\dots,s_n}{^k}=\max\!\Bra{s_1^k,\dots,s_n^k}.$\PfEnd\vspace{3pt}\parSol{}
-Note that $\Par{T^*T}{_\Cbb}$ and $T^*T$ have the same eigvals
+\Or Note that $\Par{T^*T}{_\Cbb}$ and $T^*T$ have the same eigvals
 $\Rightarrow\Dvert{T_{\!\Cbb}}{_\Cbb}=\Dvert{T}.$\parSol{}
 Let $B_{V_{\!\Cbb}}=\Par{e_1,\dots,e_n}$ be orthon eigvecs of $T_{\!\Cbb}$ corres eigvals $\lambda_1,\dots,\lambda_n$ of $T^k$ corres $\lambda_1^k,\dots,\lambda_n^k.$\parSol{}
 By Exe (2), $\Dvert{T_{\!\Cbb}^k}=\max\!\Bra{\aMid{\lambda_j^k}}=\max\!\Bra{\aMid{\lambda_j}}{^k}=\Dvert{T_{\!\Cbb}}{^k}.$\PfEnd\vspace{2pt}\parSol{}
@@ -645,16 +647,11 @@ Then $T_{\!\Cbb}^kv=\Dvert{T}{^k}v\Rightarrow\Dvert{T}{^k}=\BigDvert{T_{\!\Cbb}^
 	\TextA{Supp $T\in\Lm{V,W}.$ Let $n=\dim V$ and $s_1\geqslant\cdots\geqslant s_n$ are the singvals.}
 	\TextA{Prove $s_{n-k+1}=\min\!\Bra{\Dvert{T\mmid_U}:U\text{ is subsp of }V,\,\dim U=k}$ \,for $1\leqslant k\leqslant n.$\vspace{1pt}}
 }Get the SVD bses $\Par{e_1,\dots,e_n},\Par{\,f_1,\dots,f_n}.$ Let $U=\Span{e_{n-k+1},\dots,e_n}\Rightarrow\Dvert{T\mmid_U}=s_{n-k+1}.$\vspace{1pt}\parSol{}
-Supp $U$ a $k$\hspace{1pt}-\hspace{1pt}dim subsp of $V.$ Becs $\Dvert{T\mmid_U}=\BigDvert{T\mmid_UP_{\!U}}=\BigDvert{T-T\mmid_{U^\perp}P_{\!U^\perp}}\geqslant s_{n-k+1}.$\PfEnd\vspace{3pt}\parSol{}
-\Or Asum $\exists$ subsp $U$ of dim $k$ suth $\forall u\in U,\;\Dvert{Tu}<s_{n-k+1}\:\!\Dvert{u}\Rightarrow\Dvert{T\mmid_U}<s_{n-k+1}\neq0.$\parSol{}
-Then $\Dvertsq{Tu}=s_1^2\,\innerAsq{u,\:\!e_1}+\dots+s_n^2\,\innerAsq{u,\:\!e_n}<s_{n-k+1}^2\,\Dvertsq{u}\Rightarrow\Span{e_1,\dots,e_{n-k+1}}\not\subseteq U.$\parSol{}
-And $U\neq\Span{e_{n-k+1},\dots,e_n}.$\parSol{}
-Becs $\exists\,u\in U\Backslash\Span{e_1,\dots,e_{n-k+1}},$ let $u=a_ie_i+\dots+a_{n-k+1}e_{n-k+1}+\dots+a_{j}e_j$ with $a_i,a_j\neq0.$\parSol{}
-
-%\Or %Supp $s_1,\dots,s_m$ are the posi. 
-%$\forall u\in U,\;s_q^2\,\Dvertsq{u}\leqslant\Dvertsq{Tu}=s_1^2\,\innerAsq{u,\:\!e_1}+\dots+s_n^2\,\innerAsq{u,\:\!e_n}\leqslant s_p^2\,\Dvertsq{u},$\parSol{}
-%where $p$ is the smallest suth $\Ang{u,\:\!e_p}\neq0$ and $q$ is the largest suth $\Ang{u,\:\!e_q}\neq0.$\parSol{}
-%Note that $\exists\,u\not\in\Span{e_n,\dots,e_{n-k}}\Rightarrow p\leqslant n-k+1.$ \;And $\exists\,u\not\in\Span{e_1,\dots,e_{k-1}}\Rightarrow q\geqslant k.$
+Supp $U$ a $k$\hspace{1pt}-\hspace{1pt}dim subsp of $V.$ Becs $\Dvert{T\mmid_U}=\BigDvert{T\mmid_UP_{\!U}}=\BigDvert{T-T\mmid_{U^\perp}P_{\!U^\perp}}\geqslant s_{n-k+1}.$\PfEnd
+%\Or Asum $\exists$ subsp $U$ of dim $k$ suth $\forall u\in U,\;\Dvert{Tu}<s_{n-k+1}\:\!\Dvert{u}\Rightarrow\Dvert{T\mmid_U}<s_{n-k+1}\neq0.$\parSol{}
+%Then $\Dvertsq{Tu}=s_1^2\,\innerAsq{u,\:\!e_1}+\dots+s_n^2\,\innerAsq{u,\:\!e_n}<s_{n-k+1}^2\,\Dvertsq{u}\Rightarrow\Span{e_1,\dots,e_{n-k+1}}\not\subseteq U.$\parSol{}
+%And $U\neq\Span{e_{n-k+1},\dots,e_n}.$\parSol{}
+%Becs $\exists\,u\in U\Backslash\Span{e_1,\dots,e_{n-k+1}},$ let $u=a_ie_i+\dots+a_{n-k+1}e_{n-k+1}+\dots+a_{j}e_j$ with $a_i,a_j\neq0.$\parSol{}
 \SepLine
 
 %\Anchor{7F26}\ProblemN{F.26}{
