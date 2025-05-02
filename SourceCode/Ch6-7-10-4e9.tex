@@ -570,16 +570,28 @@ $\Longleftrightarrow m_{T^\dagger}=$ the min of $\Par{T\mmid_U}{^{-1}}$ if $T$ i
 \NOTICE that $\Dvertsq{Tv}=s_1^2\,\innerAsq{v,\:\!e_1}+\dots+s_n^2\,\innerAsq{v,\:\!e_n}=s_1^2\:\!\Dvertsq{v}$\parSol{}
 \Blind{\NOTICE that }$\Longleftrightarrow v\in\Span{e_1,\dots,e_j}\Longleftrightarrow T^*Tv=\sum s_i^2\,\Ang{v,\:\!e_i}\,e_i=\sum s_1^2\,\Ang{v,\:\!e_i}\,e_i.$\PfEnd\vspace{4pt}\par\quad
 \Or Supp $T^*Tv=\Dvertsq{T}v.$ Then $\Dvertsq{T}\,\Dvert{v}=\Dvert{T^*Tv}\leqslant\Dvert{T}\,\Dvert{Tv}\Rightarrow\Dvert{T}\,\Dvert{v}\leqslant\Dvert{Tv}.$\par\quad
-Supp $\Dvert{Tv}=\Dvert{T}\,\Dvert{v}.$ Then $\BigDvertsq{T^*Tv-\Dvertsq{T}v}=\Dvertsq{T^*Tv}+\Dvert{T}{^4}\Dvertsq{v}-2\Real\BigAng{T^*Tv,\:\!\Dvertsq{T}v}.$\par\quad
+Supp $\Dvert{Tv}=\Dvert{T}\,\Dvert{v}.$ Then $\BigDvertsq{T^*Tv-\Dvertsq{T}v}=\Dvertsq{T^*Tv}+\Dvert{T}{^4}\Dvertsq{v}-2\Real\BigAng{T^*Tv,\:\!\Dvertsq{T}v}\leqslant0.$\par\quad
 Becs $\Dvertsq{T^*Tv}\leqslant\Dvertsq{T}\Dvertsq{Tv}=\Dvertsq{T}\Dvertsq{T}\Dvertsq{v},$ and $\BigAng{T^*Tv,\:\!\Dvertsq{T}v}=\BigAng{Tv,\:\!\Dvertsq{T}Tv}=\Dvertsq{T}\Dvertsq{Tv}.$\PfEnd
 \SepLine
 
-%\Anchor{7F8}\ProblemN{F.8}{
-%	\TextA{Supp $S\in\Lm{V}$ inv. Prove if $T\in\Lm{V}$ and $\Dvert{S-T}<1\big/\Dvert{S^{-1}},$ then $T$ inv.}
-%}Note that $1\big/\Dvert{S^{-1}}=s_n,$ where $s_1\geqslant\cdots\geqslant s_n$ are the singvals of $T.$\parSol{}
-%Becs $s_n=\min\!\Bra{\Dvert{S-T}:T\in\Lm{V}\text{ and }\dim\range T=n-1}>\Dvert{S-T}$\PfEnd
-%\SepLine
+\Anchor{7F8}\ProblemN{F.8}{
+	\TextA{Supp $S\in\Lm{V}$ inv. Prove if $T\in\Lm{V}$ and $\Dvert{S-T}<1\big/\Dvert{S^{-1}},$ then $T$ inv.}
+}Note that $1\big/\Dvert{S^{-1}}=s_n,$ where $s_1\geqslant\cdots\geqslant s_n$ are the singvals of $T.$\parSol{}
+Becs $s_n=\min\!\Bra{\Dvert{S-T}:\dim\range T=0,1,\dots,n-1}>\Dvert{S-T}\Rightarrow\dim\range T=n.$\PfEnd\vspace{2pt}\parSol{}
+\Or $v\neq0,Tv=0\Rightarrow\Dvert{v}=\Dvert{S^{-1}Sv}\leqslant\Dvert{S^{-1}}\,\Dvert{Sv}=\Dvert{S^{-1}}\,\Dvert{\Par{S-T}v}\Rightarrow1\big/\Dvert{S^{-1}}\leqslant\Dvert{S-T}.$\PfEnd
+\SepLine
 
+%\Anchor{7F9}\ProblemN{F.9}{
+%	\TextA{Supp $T\in\Lm{V}.$ Prove $\forall\epsilon>0,\exists$ inv $S\in\Lm{V}$ suth $0<\Dvert{T-S}<\epsilon.$}
+%}Supp $Tv=\sum s_k\:\!\Ang{v,\:\!e_k}\:f_k.$ Define $S\in\Lm{V}$ by $Sv=\sum\Par{s_k-\delta}\:\!\Ang{v,\:\!e_k}\:f_k,$ where $\delta\in\Interval{(}{)}{0,\epsilon}.$\PfEnd
+%\SepLine
+\pagebreak
+
+\Anchor{7F10}\ProblemN{F.10}{
+	\TextA{Supp $\dim V>1,T\in\Lm{V}$ not inv.}
+	\TextA{Prove $\forall\epsilon>0,\exists$ non-inv $S\in\Lm{V}$ suth $0<\Dvert{T-S}<\epsilon.$}
+}
+\SepLine
 
 \Anchor{7F11}\ProblemN{F.11}{
 	\TextA{Supp $\Fbb=\Cbb,T\in\Lm{V}.$ Prove $\forall\epsilon>0,\exists$ diag $S\in\Lm{V},\,0<\Dvert{T-S}<\epsilon.$}
