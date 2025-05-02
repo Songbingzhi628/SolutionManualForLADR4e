@@ -597,9 +597,18 @@ Thus $\dim\range P_{\!W}\geqslant\dim\range P_{\!U}.$ \;Apply revly, done.\PfEnd
 
 \Anchor{7F22}\ProblemN{F.22}{
 	\TextA{Supp $T\in\Lm{V,W}.$ Let $n=\dim V$ and $s_1\geqslant\cdots\geqslant s_n$ are the singvals.}
-	\TextA{Prove $s_{n-k+1}=\min\!\Bra{\Dvert{T\mmid_U}:U\text{ is subsp of }V,\,\dim U=k}$ for $1\leqslant k\leqslant n.$}
+	\TextA{Prove $s_{n-k+1}=\min\!\Bra{\Dvert{T\mmid_U}:U\text{ is subsp of }V,\,\dim U=k}$ \,for $1\leqslant k\leqslant n.$\vspace{1pt}}
 }Get the SVD bses $\Par{e_1,\dots,e_n},\Par{\,f_1,\dots,f_n}.$ Let $U=\Span{e_{n-k+1},\dots,e_n}\Rightarrow\Dvert{T\mmid_U}=s_{n-k+1}.$\vspace{1pt}\parSol{}
-Supp $U$ a $k$\hspace{1pt}-\hspace{1pt}dim subsp of $V.$ Becs $\Dvert{T\mmid_U}=\BigDvert{T\mmid_UP_{\!U}}=\BigDvert{T-T\mmid_{U^\perp}P_{\!U^\perp}}\geqslant s_{n-k+1}.$\PfEnd
+Supp $U$ a $k$\hspace{1pt}-\hspace{1pt}dim subsp of $V.$ Becs $\Dvert{T\mmid_U}=\BigDvert{T\mmid_UP_{\!U}}=\BigDvert{T-T\mmid_{U^\perp}P_{\!U^\perp}}\geqslant s_{n-k+1}.$\PfEnd\vspace{3pt}\parSol{}
+\Or Asum $\exists$ subsp $U$ of dim $k$ suth $\forall u\in U,\;\Dvert{Tu}<s_{n-k+1}\:\!\Dvert{u}\Rightarrow\Dvert{T\mmid_U}<s_{n-k+1}\neq0.$\parSol{}
+Then $\Dvertsq{Tu}=s_1^2\,\innerAsq{u,\:\!e_1}+\dots+s_n^2\,\innerAsq{u,\:\!e_n}<s_{n-k+1}^2\,\Dvertsq{u}\Rightarrow\Span{e_1,\dots,e_{n-k+1}}\not\subseteq U.$\parSol{}
+And $U\neq\Span{e_{n-k+1},\dots,e_n}.$\parSol{}
+Becs $\exists\,u\in U\Backslash\Span{e_1,\dots,e_{n-k+1}},$ let $u=a_ie_i+\dots+a_{n-k+1}e_{n-k+1}+\dots+a_{j}e_j$ with $a_i,a_j\neq0.$\parSol{}
+
+%\Or %Supp $s_1,\dots,s_m$ are the posi. 
+%$\forall u\in U,\;s_q^2\,\Dvertsq{u}\leqslant\Dvertsq{Tu}=s_1^2\,\innerAsq{u,\:\!e_1}+\dots+s_n^2\,\innerAsq{u,\:\!e_n}\leqslant s_p^2\,\Dvertsq{u},$\parSol{}
+%where $p$ is the smallest suth $\Ang{u,\:\!e_p}\neq0$ and $q$ is the largest suth $\Ang{u,\:\!e_q}\neq0.$\parSol{}
+%Note that $\exists\,u\not\in\Span{e_n,\dots,e_{n-k}}\Rightarrow p\leqslant n-k+1.$ \;And $\exists\,u\not\in\Span{e_1,\dots,e_{k-1}}\Rightarrow q\geqslant k.$
 \SepLine
 
 %\Anchor{7F26}\ProblemN{F.26}{
@@ -608,29 +617,31 @@ Supp $U$ a $k$\hspace{1pt}-\hspace{1pt}dim subsp of $V.$ Becs $\Dvert{T\mmid_U}=
 %\SepLine
 
 
-\Anchor{7F27}\ProblemN{F.27}{
-	\TextA{Supp $T\in\Lm{V},s_1,\dots,s_n$ are singvals with the SVD bses $\Par{e_1,\dots,e_n},\Par{\,f_1,\dots,f_n}.$}
-	\TextA{Define $S\in\Lm{V}:e_k\mapsto\:f_k.$ \;Show for all $E\in\Lm{V}$ unit, $\Dvert{T-E}\geqslant\Dvert{T-S}.$}
-}
-\SepLine
+%\Anchor{7F27}\ProblemN{F.27}{
+%	\TextA{Supp $T\in\Lm{V},s_1,\dots,s_n$ are singvals with the SVD bses $\Par{e_1,\dots,e_n},\Par{\,f_1,\dots,f_n}.$}
+%	\TextA{Define $S\in\Lm{V}:e_k\mapsto f_k.$ \;Show for all $E\in\Lm{V}$ unit, $\Dvert{T-E}\geqslant\Dvert{T-S}.$}
+%}We show $\exists\,v\in V,\,\Dvert{Tv-Ev}\geqslant\Dvert{T-S}=\max\!\Bra{\aMid{s_1-1},\dots,\aMid{s_n-1}}=\aMid{s_M-1}.$\parSol{}
+%Note that $\Dvert{Tv-Ev}\geqslant\aXMid{\Dvert{Tv}-1}$ for $\Dvert{v}=1.$ \;Let $v=e_M\Rightarrow\Dvert{T-E}\geqslant\aMid{s_M-1}.$\PfEnd
+%\SepLine
 
 
 \Anchor{7F28}\ProblemN{F.28}{
 	\TextA{Supp $T\in\Lm{V}.$ Prove $\exists$ unit $S\in\Lm{V},\,T=\sqrt{TT^*}\,S.$}
 }Let $T^*=S\sqrt{TT^*}\Rightarrow T=\sqrt{TT^*}\,S^*.$\PfEnd\vspace{2pt}\parSol{}
 \Or Supp $s_1,\dots,s_m$ are the positive singvals of $T$ with SVD $\Par{e_1,\dots,e_m},\Par{\,f_1,\dots,f_m}.$\vspace{1pt}\parSol{}
-Becs $T^*Te_k=s_k^2e_k,\;f_k=Te_k\big/s_k\Rightarrow TT^*\,f_k=TT^*Te_k\big/s_k=s_kTe_k=s_k^2\:f_k\Rightarrow\sqrt{TT^*}\,f_k=s_k\:f_k.$\vspace{1pt}\parSol{}
-Now $\dim E\Par{s_k,\sqrt{T^*T}}\leqslant\dim E\Par{s_k,\sqrt{TT^*}}.$ Apply revly. Thus $\dim E\Par{0,\sqrt{T^*T}}=\dim E\Par{0,\sqrt{TT^*}}.$\vspace{1pt}\parSol{}
-Get orthon bses of $E\Par{0,\sqrt{T^*T}}$ and $E\Par{0,\sqrt{TT^*}}.$ Forming two orthon bses of $V.$\parSol{}
-Define $S\in\Lm{V}$ by $Se_j=f_j.$ \quad\ANote The same $S$ in $T=S\sqrt{T^*T}.$\PfEnd\vspace{3pt}
+Becs $T^*Te_k=s_k^2\:\!e_k,\;f_k=Te_k\big/s_k\Rightarrow TT^*\,f_k=TT^*Te_k\big/s_k=s_kTe_k=s_k^2\;f_k\Rightarrow\sqrt{TT^*}\:f_k=s_k\:f_k.$\vspace{1pt}\parSol{}
+$\dim E\BigPar{s_k,\sqrt{T^*T}}\leqslant\dim E\BigPar{s_k,\sqrt{TT^*}}.$ Apply revly. Thus $\dim E\BigPar{0,\sqrt{T^*T}}=\dim E\BigPar{0,\sqrt{TT^*}}.$\vspace{1pt}\parSol{}
+Get orthon bses of $E\BigPar{0,\sqrt{T^*T}}$ and $E\BigPar{0,\sqrt{TT^*}}.$ Forming two orthon bses of $V.$\parSol{}
+Define $S\in\Lm{V}$ by $Se_j=\;\!f_j.$ \quad\ANote The same $S$ in $T=S\sqrt{T^*T}.$\PfEnd\vspace{3pt}
 \Anchor{7F29}\ACoro $T=S\sqrt{T^*T}\Rightarrow T^*=\sqrt{T^*T}\,S^*\Longrightarrow TT^*=ST^*TS^*.$\parCor
 \Or $T=S\sqrt{T^*T}=\sqrt{TT^*}\,S\Rightarrow \sqrt{T^*T}=S^*\sqrt{TT^*}\,S\Longrightarrow T^*T=S^*\sqrt{TT^*}\,SS^*\sqrt{TT^*}\,S=S^*TT^*S.$
 \SepLine
 
 \Anchor{7F30}\ProblemN{F.30}{
-	\TextA{Supp $T\in\Lm{V},$ and $S\in\Lm{V}$ unit suth $ST$ posi. Prove $T=S^*\sqrt{T^*T}.$}
-}Becs $T=S^*T^*S^*.$\parSol{}
-Write each $Te_k=s_k\,f_k=S^*T^*S^*e_k\Rightarrow s_kSf_k=T^*S^*e_k$ while $T^*f_k=s_ke_k.$\parSol{} 
+	\TextA{Supp $T\in\Lm{V},$ and $S\in\Lm{V}$ unit suth $ST$ posi. Prove $ST=\sqrt{T^*T}.$}
+}Let $B_V=\Par{e_1,\dots,e_n}$ be orthon eigvecs of $ST$ with corres eigvals $\lambda_1,\dots,\lambda_n.$\parSol{}
+Becs $ST=T^*S^*\Rightarrow T=S^*T^*S^*.$ \;Let each \,$f_k=S^*e_k\Rightarrow T^*\,f_k=\lambda_k\:\!e_k.$\parSol{}
+Thus $T^*Te_k=T^*S^*STe_k=\lambda_k^2\:\!e_k\Rightarrow\sqrt{T^*T}\,e_k=\lambda_k\:\!e_k=STe_k.$\PfEnd
 \SepLine
 
 \ChEnd
