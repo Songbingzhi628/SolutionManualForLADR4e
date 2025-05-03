@@ -487,11 +487,11 @@ Then $S_{\Cbb}\Sbra{\lambda^{-1}\Par{u+\i\,v}}=u+\i\,v\in\bigodot{_{\!\Cbb}}$ wh
 %\SepLine
 
 \ChEnd
-\vfill
+\pagebreak
+
 \ChDecl{Ch7E}{7.E [4E] \& 7.F [4E]}{\quad{\ANote {\FontSmall $V,W$ are finide {\tgbfxx non0} vecsps over $\Fbb.$}}}
 
-\pagebreak
-%\vspace{6pt}
+\vspace{6pt}
 
 %\Anchor{7E2}\ProblemN{E.2}{
 %	\TextA{Supp $T\in\Lm{V,W},s>0.$}
@@ -547,11 +547,10 @@ Get the SVD $\Par{e_1,\dots,e_n},\Par{\,f_1,\dots,f_n}.$ By (4E 7.A.5), $\sum\Bi
 %\SepLine
 
 \Anchor{7E17}\ProblemN{E.17}{
-	\TextA{Supp $T\in\Lm{V}.$ Prove $T$ self-adj $\Longleftrightarrow T^\dagger$ self-adj.}
-}By Exe (E.16). $T=T^*\Longleftrightarrow T^\dagger=\Par{T^*}{^\dagger}=\Par{T^\dagger}{^*}.$\PfEnd\vspace{2pt}\par\quad
-\Or Let $\lambda_1,\dots,\lambda_m$ be disti eigvals of $T$ with $\lambda_1=0$ if any. Let $U=\Par{\null T}{^\perp}.$\par\quad
-$m_T=\Par{z-\lambda_1}\cdots\Par{z-\lambda_m}\Longleftrightarrow m_{T|_U}=\Par{z-\lambda_1}\cdots\Par{z-\lambda_m}$ if $T$ inje, othws $m_{T|_U}=\Par{z-\lambda_2}\cdots\Par{z-\lambda_m}$\par\quad
-$\Longleftrightarrow$ the min of $\Par{T\mmid_U}{^{-1}}$ is $\Par{z-\lambda_1^{-1}}\cdots\Par{z-\lambda_m^{-1}}$ if $T$ inje, and othws $\Par{z-\lambda_2^{-1}}\cdots\Par{z-\lambda_m^{-1}}$\par\quad
+	\TextA{Supp $T\in\Lm{V}.$ Prove $T$ self-adj $\Longleftrightarrow T^\dagger$ self-adj.\hfill\FontNorm\tgnr By Exe (E.16), immed.}
+}Let $\lambda_1,\dots,\lambda_m$ be disti eigvals of $T$ with $\lambda_1=0$ if any. Let $U=\Par{\null T}{^\perp}.$\parSol{}
+$m_T=\Par{z-\lambda_1}\cdots\Par{z-\lambda_m}\Longleftrightarrow m_{T|_U}=m_T$ if $T$ inje, othws $m_{T|_U}=\Par{z-\lambda_2}\cdots\Par{z-\lambda_m}$\parSol{}
+$\Longleftrightarrow$ the min of $\Par{T\mmid_U}{^{-1}}$ is $\Par{z-\lambda_1^{-1}}\cdots\Par{z-\lambda_m^{-1}}$ if $T$ inje, and othws $\Par{z-\lambda_2^{-1}}\cdots\Par{z-\lambda_m^{-1}}$\parSol{}
 $\Longleftrightarrow m_{T^\dagger}=$ the min of $\Par{T\mmid_U}{^{-1}}$ if $T$ inje, othws $z\Par{z-\lambda_2^{-1}}\cdots\Par{z-\lambda_m^{-1}}.$\PfEnd
 \SepLine
 
@@ -568,11 +567,17 @@ $\Longleftrightarrow m_{T^\dagger}=$ the min of $\Par{T\mmid_U}{^{-1}}$ if $T$ i
 \Anchor{7F3}\ProblemN{F.3}{
 	\TextA{Supp $T\in\Lm{V,W}$ and $v\in V.$ Prove $\Dvert{Tv}=\Dvert{T}\,\Dvert{v}\Longleftrightarrow T^*Tv=\Dvertsq{T}v.$}
 }Let $s_1=\dots=s_j\geqslant\cdots\geqslant s_n$ be the singvals with the SVD bses $\Par{e_1,\dots,e_n},\Par{\,f_1,\dots,f_n}.$\parSol{}
-\NOTICE that $\Dvertsq{Tv}=s_1^2\,\innerAsq{v,\:\!e_1}+\dots+s_n^2\,\innerAsq{v,\:\!e_n}=s_1^2\:\!\Dvertsq{v}$\parSol{}
+\NOTICE that $\Dvertsq{Tv}=s_1^2\,\innerAsq{v,\:\!e_1}+\dots+s_n^2\,\innerAsq{v,\:\!e_n}=s_1^2\;\!\Dvertsq{v}$\parSol{}
 \Blind{\NOTICE that }$\Longleftrightarrow v\in\Span{e_1,\dots,e_j}\Longleftrightarrow T^*Tv=\sum s_i^2\,\Ang{v,\:\!e_i}\,e_i=\sum s_1^2\,\Ang{v,\:\!e_i}\,e_i.$\PfEnd\vspace{4pt}\par\quad
 \Or Supp $T^*Tv=\Dvertsq{T}v.$ Then $\Dvertsq{T}\,\Dvert{v}=\Dvert{T^*Tv}\leqslant\Dvert{T}\,\Dvert{Tv}\Rightarrow\Dvert{T}\,\Dvert{v}\leqslant\Dvert{Tv}.$\par\quad
 Supp $\Dvert{Tv}=\Dvert{T}\,\Dvert{v}.$ Then $\BigDvertsq{T^*Tv-\Dvertsq{T}v}=\Dvertsq{T^*Tv}+\Dvert{T}{^4}\Dvertsq{v}-2\Real\BigAng{T^*Tv,\:\!\Dvertsq{T}v}\leqslant0.$\par\quad
 Becs $\Dvertsq{T^*Tv}\leqslant\Dvertsq{T}\Dvertsq{Tv}=\Dvertsq{T}\Dvertsq{T}\Dvertsq{v},$ and $\BigAng{T^*Tv,\:\!\Dvertsq{T}v}=\BigAng{Tv,\:\!\Dvertsq{T}Tv}=\Dvertsq{T}\Dvertsq{Tv}.$\PfEnd
+\SepLine
+
+\Anchor{7F19}\ProblemN{F.19}{
+	\TextA{Prove $\Dvert{T^*T}=\Dvertsq{T}.$\hfill\FontNorm\tgnr $\Dvert{T}=\Dvert{\sqrt{T^*T}\;\!}=\sqrt{\Dvert{T^*T}}.$ \,\Or By Exe (2), $\Dvert{T^*T}=s_1^2.$\Blind{\quad}\PfEnd}
+}$\forall v\in V,\:\BigDvert{\sqrt{T^*T}v}=\Dvert{Tv}\leqslant\Dvert{T}\,\Dvert{v},$ and $\Dvert{Tv}=\BigDvert{\sqrt{T^*T}v}\leqslant\BigDvert{\sqrt{T^*T}\;\!}\,\Dvert{v}\Rightarrow\BigDvert{\sqrt{T^*T}\;\!}=\Dvert{T}.$\PfEnd\vspace{2pt}\parSol{}
+\Or $T=S\sqrt{T^*T},\sqrt{T^*T}=S^*T\Rightarrow\Dvert{T}\leqslant\Dvert{S}\,\BigDvert{\sqrt{T^*T}\;\!},\BigDvert{\sqrt{T^*T}\;\!}\leqslant\Dvert{S^*}\,\Dvert{T}.$\PfEnd
 \SepLine
 
 \Anchor{7F8}\ProblemN{F.8}{
@@ -580,44 +585,6 @@ Becs $\Dvertsq{T^*Tv}\leqslant\Dvertsq{T}\Dvertsq{Tv}=\Dvertsq{T}\Dvertsq{T}\Dve
 }Note that $1\big/\Dvert{S^{-1}}=s_n,$ where $s_1\geqslant\cdots\geqslant s_n$ are the singvals of $T.$\parSol{}
 Becs $s_n=\min\!\Bra{\Dvert{S-T}:\dim\range T=0,1,\dots,n-1}>\Dvert{S-T}\Rightarrow\dim\range T=n.$\PfEnd\vspace{2pt}\parSol{}
 \Or $v\neq0,Tv=0\Rightarrow\Dvert{v}=\Dvert{S^{-1}Sv}\leqslant\Dvert{S^{-1}}\:\Dvert{Sv}=\Dvert{S^{-1}}\:\Dvert{\Par{S-T}v}\Rightarrow1\big/\Dvert{S^{-1}}\leqslant\Dvert{S-T}.$\PfEnd
-\SepLine
-
-%\Anchor{7F9}\ProblemN{F.9}{
-%	\TextA{Supp $T\in\Lm{V}.$ Prove $\forall\epsilon>0,\exists$ inv $S\in\Lm{V}$ suth $0<\Dvert{T-S}<\epsilon.$}
-%}Supp $Tv=\sum s_k\:\!\Ang{v,\:\!e_k}\:f_k.$ Define $Sv=\sum\Par{s_k-\delta}\:\!\Ang{v,\:\!e_k}\:f_k,$ where $\delta\in\Interval{(}{)}{0,\epsilon}.$\PfEnd
-%\SepLine
-
-%\Anchor{7F10}\ProblemN{F.10}{
-%	\TextA{Supp $\dim V>1,T\in\Lm{V}$ not inv.}
-%	\TextA{Prove $\forall\epsilon>0,\exists$ non-inv $S\in\Lm{V}$ suth $0<\Dvert{T-S}<\epsilon.$}
-%}Supp $Tv=\sum_{k=1}^n s_k\:\!\Ang{v,\:\!e_k}\:f_k.$ Define $Sv=\sum_{k=1}^{n-1}\Par{s_k-\delta}\:\!\Ang{v,\:\!e_k}\:f_k,$ where $\delta\in\Interval{(}{)}{0,\epsilon}.$\PfEnd
-%\SepLine
-\pagebreak
-\Anchor{7F11}\ProblemN{F.11}{
-	\TextA{Supp $\Fbb=\Cbb,T\in\Lm{V}.$ Prove $\forall\epsilon>0,\exists$ diag $S\in\Lm{V},\,0<\Dvert{T-S}<\epsilon.$}
-%	We show $\exists\,R\in\Lm{V}$ suth $T+R$ has $\dim V$ disti eigvals, and $0<\Dvert{R}<\epsilon.$\parSol{}
-}Supp $A=\Mt{T}$ up-trig wrto orthon $B_V=\Par{e_1,\dots,e_n}.$ Let $\lambda_k=A_{k,k}.$\parSol{}
-Becs $T$ has finily many eigvals, $\exists\,\delta\in\Interval{(}{)}{0,\:\!\epsilon\big/n},$ $\nexists$ disti $j,k$ suth $\lambda_j+j\delta=\lambda_k+k\delta.$\parSol{}
-Thus define $Re_k=k\delta\:\!e_k\Rightarrow T+R$ has $n$ disti eigvals, while $R$ posi and $0<\Dvert{R}<\delta.$\PfEnd
-\SepLine
-
-%\Anchor{7FT}\ProblemBX{\Tips}{
-%	\TextA{Supp $A,\,B-A\in\Lm{V}$ are posi. Prove $\Dvert{A}\leqslant\Dvert{B}.$}
-%}By Exe (F.13), $\Dvert{A}\leqslant\Dvert{B-A+A}=\Dvert{B}.$\PfEnd\vspace{2pt}\parSol{}
-%\Or Becs $\Dvert{B}I-B$ is posi $\Rightarrow\Dvert{B}I-A=\BigPar{\Dvert{B}I-B}+\Par{B-A}$ is posi.\parSol{}
-%又 $A$ posi $\Rightarrow\Dvert{A}$ is an eigval of $A\Rightarrow\BigPar{\Dvert{B}-\Dvert{A}}$ is eigval of posi $\BigPar{\Dvert{B}I-A}.$\PfEnd
-%\SepLine
-
-\Anchor{7F13}\ProblemN{F.13}{
-	\TextA{Supp $S,T\in\Lm{V}$ are posi. Show $\Dvert{S-T}\leqslant\max\!\Bra{\Dvert{S},\Dvert{T}}\leqslant\Dvert{S+T}.$}
-}$\Dvert{S+T}=\BigDvertsq{\sqrt{S+T}\;\!}\geqslant\BigDvertsq{\sqrt{S+T}\,v}=\Ang{Sv+Tv,v}=\Ang{Sv,v}+\Ang{Tv,v}=\BigDvertsq{\sqrt{S}\,v}+\BigDvertsq{\sqrt{T}\,v}.$\parSol{}
-%Simlr, $\Dvert{S-T}\geqslant\BigDvertsq{\sqrt{S}\,v}-\BigDvertsq{\sqrt{T}\,v}$ and $\Dvert{T-S}\geqslant\BigDvertsq{\sqrt{T}\,v}-\BigDvertsq{\sqrt{S}\,v}.$\parSol{}
-%Now $\Dvert{S-T}\geqslant\Mid[1pt][\bigg]{\BigDvertsq{\sqrt{S}\,v}-\BigDvertsq{\sqrt{T}\,v}}.$\parSol{}
-Let $v\in V$ suth $\BigDvertsq{\sqrt{S}\,v}=\BigDvertsq{\sqrt{S}\;\!}=\Dvert{S}\Rightarrow\Dvert{S+T}\geqslant\Dvert{S}.$ \;Simlr, $\Dvert{S+T}\geqslant\Dvert{T}.$\vspace{2.5pt}\parSol{}
-%\Or By \TIPS, $S,T,S+T-T,S+T-S$ posi $\Rightarrow$ $\Dvert{T}\leqslant\Dvert{S+T-T+T},$ and $\Dvert{S}\leqslant\Dvert{S+T-S+S}.$\vspace{3pt}\parSol{}
-Denote $\,\max\!\Bra{\aMid{\lambda}:\lambda\text{ is eigval of }T}\,$ by $\,\aMid{\lambda_M}{_T}.$ We show $\aMid{\lambda_M}{_{S-T}}\leqslant\max\!\Bra{\aMid{\lambda_M}{_S},\aMid{\lambda_M}{_T}}.$\parSol{}
-Note that $\Dvert{T}\:\!I-T$ is posi, so is $R=\Dvert{T}I-T+S=\Dvert{T}\:\!I-\Par{T-S}.$\parSol{}
-Thus $\Dvert{T}-\aMid{\lambda_M}{_R}=\aMid{\lambda_M}{_{S-T}}\leqslant\Dvert{T}.$ \;Simlr, $\Dvert{T}-\aMid{\lambda_M}{_{\,\SmallDvert{S}\:\!I\,-\,\SmallPar{S-T}}}=\aMid{\lambda_M}{_{T-S}}\leqslant\Dvert{S}.$\PfEnd
 \SepLine
 
 \Anchor{7F14}\ProblemN{F.14}{
@@ -629,20 +596,22 @@ By Exe (F.8), $P_{\!W}+P_{\!U^\perp}$ and $P_{\!U}+P_{\!W^\perp}$ are inv $\Righ
 And $V=\Range\Par{P_{\!U}+P_{\!W^\perp}}\subseteq\range P_{\!U}+\range P_{\!W^\perp}=U+W^\perp.$\PfEnd
 \SepLine
 
-\Anchor{7F16}\ProblemN{F.16}{
-	\TextA{Supp $S\in\Lm{V}$ is posi inv.}
-	\TextA{Prove $\exists\,\delta>0$ suth if  $T\in\Lm{V}$ self-adj and $\Dvert{S-T}<\delta,$ then $T$ posi.}
-}Let $\delta$ be the smallest singval of posi inv $S.$ Then $\forall v\in V,\Ang{Sv,v}=\Dvertsq{\sqrt{S}v}\geqslant\delta\:\!\Dvertsq{v}.$\parSol{}
-Supp $T$ self-adj and $0<\Dvert{S-T}<\delta=\min\!\Bra{\Dvert{S-R}:\dim\range R\leqslant\dim V-1}\Rightarrow T$ inv.\vspace{1pt}\parSol{}
-Then $\aXMid{\Ang{\Par{S-T}v,v}}\leqslant\Dvert{S-T}\:\Dvertsq{v}<\delta\:\!\Dvertsq{v}$ \,for all non0 $v\in V.$\vspace{2pt}\parSol{}
-Asum $\exists\,v\in V,\Ang{Tv,v}<0\Rightarrow\delta\:\!\Dvertsq{v}\leqslant\aXMid{\Ang{Sv,v}}\leqslant\aXMid{\Ang{Sv-Tv,v}}<\delta\:\!\Dvertsq{v}.$\vspace{1pt}\parSol{}
-\Or $\Ang{Tv,v}=\Ang{Sv,v}+\BigAng{\Par{T-S}v,v}\geqslant\delta\:\!\Dvertsq{v}-\BigAng{\Par{S-T}v,v}>0$ for $v\neq0.$\PfEnd
+\Anchor{7F22}\ProblemN{F.22}{
+	\TextA{Supp $T\in\Lm{V,W}.$ Let $n=\dim V$ and $s_1\geqslant\cdots\geqslant s_n$ are the singvals.}
+	\TextA{Prove $s_{n-k+1}=\min\!\Bra{\Dvert{T\mmid_U}:U\text{ is subsp of }V,\,\dim U=k}$ \,for $1\leqslant k\leqslant n.$\vspace{1pt}}
+}Get the SVD bses $\Par{e_1,\dots,e_n},\Par{\,f_1,\dots,f_n}.$ Let $U=\Span{e_{n-k+1},\dots,e_n}\Rightarrow\Dvert{T\mmid_U}=s_{n-k+1}.$\vspace{1pt}\parSol{}
+Supp $U$ a $k$\hspace{1pt}-\hspace{1pt}dim subsp of $V.$ Becs $\Dvert{T\mmid_U}=\BigDvert{T\mmid_UP_{\!U}}=\BigDvert{T-T\mmid_{U^\perp}P_{\!U^\perp}}\geqslant s_{n-k+1}.$\PfEnd
+%\Or Asum $\exists$ subsp $U$ of dim $k$ suth $\forall u\in U,\;\Dvert{Tu}<s_{n-k+1}\:\!\Dvert{u}\Rightarrow\Dvert{T\mmid_U}<s_{n-k+1}\neq0.$\parSol{}
+%Then $\Dvertsq{Tu}=s_1^2\,\innerAsq{u,\:\!e_1}+\dots+s_n^2\,\innerAsq{u,\:\!e_n}<s_{n-k+1}^2\,\Dvertsq{u}\Rightarrow\Span{e_1,\dots,e_{n-k+1}}\not\subseteq U.$\parSol{}
+%And $U\neq\Span{e_{n-k+1},\dots,e_n}.$\parSol{}
+%Becs $\exists\,u\in U\Backslash\Span{e_1,\dots,e_{n-k+1}},$ let $u=a_ie_i+\dots+a_{n-k+1}e_{n-k+1}+\dots+a_{j}e_j$ with $a_i,a_j\neq0.$\parSol{}
 \SepLine
 
-%\Anchor{7F19}\ProblemN{F.19}{
-%	\TextA{Prove $\Dvert{T^*T}=\Dvertsq{T}$ for $T\in\Lm{V,W}.$\hfill\FontNorm\tgnr By Exe (2), $\Dvert{T^*T}=s_1^2.$}
-%}$\forall v\in V,\:\BigDvertsq{\sqrt{T^*T}v}=\Ang{T^*Tv,v}=\Dvertsq{Tv}\leqslant\Dvertsq{T}\,\Dvertsq{v}\Rightarrow\BigDvert{\sqrt{T^*T}\;\!}\leqslant\Dvert{T}.$\parSol{}
-%Let $T=S\sqrt{T^*T}\Rightarrow\Dvert{T}\leqslant\Dvert{S}\,\BigDvert{\sqrt{T^*T}\;\!}=\BigDvert{\sqrt{T^*T}\;\!}.$\PfEnd
+%\Anchor{7FT}\ProblemBX{\Tips}{
+%	\TextA{Supp $A,\,B-A\in\Lm{V}$ are posi. Prove $\Dvert{A}\leqslant\Dvert{B}.$}
+%}By Exe (F.13), $\Dvert{A}\leqslant\Dvert{B-A+A}=\Dvert{B}.$\PfEnd\vspace{2pt}\parSol{}
+%\Or Becs $\Dvert{B}I-B$ is posi $\Rightarrow\Dvert{B}I-A=\BigPar{\Dvert{B}I-B}+\Par{B-A}$ is posi.\parSol{}
+%又 $A$ posi $\Rightarrow\Dvert{A}$ is an eigval of $A\Rightarrow\BigPar{\Dvert{B}-\Dvert{A}}$ is eigval of posi $\BigPar{\Dvert{B}I-A}.$\PfEnd
 %\SepLine
 
 \Anchor{7F20}\ProblemN{F.20}{
@@ -655,17 +624,6 @@ Let $B_{V_{\!\Cbb}}=\Par{e_1,\dots,e_n}$ be orthon eigvecs of $T_{\!\Cbb}$ corre
 By Exe (2), $\Dvert{T_{\!\Cbb}^k}=\max\!\Bra{\aMid{\lambda_j^k}}=\max\!\Bra{\aMid{\lambda_j}}{^k}=\Dvert{T_{\!\Cbb}}{^k}.$\PfEnd\vspace{2pt}\parSol{}
 \Or Becs singvals of $T$ are the abs of eigvals in $\Cbb.$ \,Let $T_{\!\Cbb}v=\Dvert{T}v$ with $v\in V_{\!\Cbb}$ and $\Dvert{v}=1.$\parSol{}
 Then $T_{\!\Cbb}^kv=\Dvert{T}{^k}v\Rightarrow\Dvert{T}{^k}=\BigDvert{T_{\!\Cbb}^kv}\leqslant\Dvert{T_{\!\Cbb}^k}.$ \;又 By Exe (5), $\Dvert{T_{\!\Cbb}^k}\leqslant\Dvert{T_{\!\Cbb}}{^k}$.\PfEnd
-\SepLine
-
-\Anchor{7F22}\ProblemN{F.22}{
-	\TextA{Supp $T\in\Lm{V,W}.$ Let $n=\dim V$ and $s_1\geqslant\cdots\geqslant s_n$ are the singvals.}
-	\TextA{Prove $s_{n-k+1}=\min\!\Bra{\Dvert{T\mmid_U}:U\text{ is subsp of }V,\,\dim U=k}$ \,for $1\leqslant k\leqslant n.$\vspace{1pt}}
-}Get the SVD bses $\Par{e_1,\dots,e_n},\Par{\,f_1,\dots,f_n}.$ Let $U=\Span{e_{n-k+1},\dots,e_n}\Rightarrow\Dvert{T\mmid_U}=s_{n-k+1}.$\vspace{1pt}\parSol{}
-Supp $U$ a $k$\hspace{1pt}-\hspace{1pt}dim subsp of $V.$ Becs $\Dvert{T\mmid_U}=\BigDvert{T\mmid_UP_{\!U}}=\BigDvert{T-T\mmid_{U^\perp}P_{\!U^\perp}}\geqslant s_{n-k+1}.$\PfEnd
-%\Or Asum $\exists$ subsp $U$ of dim $k$ suth $\forall u\in U,\;\Dvert{Tu}<s_{n-k+1}\:\!\Dvert{u}\Rightarrow\Dvert{T\mmid_U}<s_{n-k+1}\neq0.$\parSol{}
-%Then $\Dvertsq{Tu}=s_1^2\,\innerAsq{u,\:\!e_1}+\dots+s_n^2\,\innerAsq{u,\:\!e_n}<s_{n-k+1}^2\,\Dvertsq{u}\Rightarrow\Span{e_1,\dots,e_{n-k+1}}\not\subseteq U.$\parSol{}
-%And $U\neq\Span{e_{n-k+1},\dots,e_n}.$\parSol{}
-%Becs $\exists\,u\in U\Backslash\Span{e_1,\dots,e_{n-k+1}},$ let $u=a_ie_i+\dots+a_{n-k+1}e_{n-k+1}+\dots+a_{j}e_j$ with $a_i,a_j\neq0.$\parSol{}
 \SepLine
 
 %\Anchor{7F26}\ProblemN{F.26}{
@@ -683,9 +641,8 @@ Supp $U$ a $k$\hspace{1pt}-\hspace{1pt}dim subsp of $V.$ Becs $\Dvert{T\mmid_U}=
 
 
 \Anchor{7F28}\ProblemN{F.28}{
-	\TextA{Supp $T\in\Lm{V}.$ Prove $\exists$ unit $S\in\Lm{V},\,T=\sqrt{TT^*}\,S.$}
-}Let $T^*=S\sqrt{TT^*}\Rightarrow T=\sqrt{TT^*}\,S^*.$\PfEnd\vspace{2pt}\parSol{}
-\Or Supp $s_1,\dots,s_m$ are the positive singvals of $T$ with SVD $\Par{e_1,\dots,e_m},\Par{\,f_1,\dots,f_m}.$\vspace{1pt}\parSol{}
+	\TextA{Supp $T\in\Lm{V}.$ Prove $\exists$ unit $S\in\Lm{V},\,T=\sqrt{TT^*}\,S.$\hfill\FontNorm\tgnr Let $T^*=S\sqrt{TT^*}.$\Blind{\quad}\PfEnd}
+}Supp $s_1,\dots,s_m$ are the positive singvals of $T$ with SVD $\Par{e_1,\dots,e_m},\Par{\,f_1,\dots,f_m}.$\vspace{1pt}\parSol{}
 Becs $T^*Te_k=s_k^2\:\!e_k,\;f_k=Te_k\big/s_k\Rightarrow TT^*\,f_k=TT^*Te_k\big/s_k=s_kTe_k=s_k^2\;f_k\Rightarrow\sqrt{TT^*}\:f_k=s_k\:f_k.$\vspace{1pt}\parSol{}
 $\dim E\BigPar{s_k,\sqrt{T^*T}}\leqslant\dim E\BigPar{s_k,\sqrt{TT^*}}.$ Apply revly. Thus $\dim E\BigPar{0,\sqrt{T^*T}}=\dim E\BigPar{0,\sqrt{TT^*}}.$\vspace{1pt}\parSol{}
 Get orthon bses of $E\BigPar{0,\sqrt{T^*T}}$ and $E\BigPar{0,\sqrt{TT^*}}.$ Forming two orthon bses of $V.$\parSol{}
@@ -704,11 +661,52 @@ Thus $T^*Te_k=T^*S^*STe_k=\lambda_k^2\:\!e_k\Rightarrow\sqrt{T^*T}\,e_k=\lambda_
 \SepLine
 
 \Anchor{7F31}\ProblemN{F.31}{
-	\TextA{Supp $T\in\Lm{V}$ self-adj. Or supp $\Fbb=\Cbb$ and $T\in\Lm{V}$ normal.}
+	\TextA{Supp $T\in\Lm{V}$ self-adj. Or supp $\Fbb=\Cbb$ and $T\in\Lm{V}$ normal.\vspace{1pt}}
 	\TextA{Prove $\exists$ unit $S$ with $T=S\sqrt{T^*T}$ suth $S,\sqrt{T^*T}$ diag wrto same orthon bss.}
-}Let $B_V=\Par{e_1,\dots,e_n}$ be orthon eigvecs of $T$ with corres $\lambda_1,\dots,\lambda_n.$\parSol{}
-Note that $T^*e_k=\overline{\lambda_k}e_k\Rightarrow T^*Te_k=\aMidsq{\lambda_k}e_k.$ \;Define $S\in\Lm{V}$ by $Se_k=\aMid{\lambda_k}{^{-1}}\lambda_k\:\!e_k.$\PfEnd\vspace{3pt}\parSol{}
-\Or Becs $T=S\sqrt{T^*T}=\sqrt{TT^*}\,S=\sqrt{T^*T}\,S.$\PfEnd
+}Becs $T=S\sqrt{T^*T}=\sqrt{TT^*}\,S=\sqrt{T^*T}\,S.$ \;If $\Fbb=\Cbb,$ then done. But othws\:?\parSol{}
+Let $B_V=\Par{e_1,\dots,e_n}$ be orthon eigvecs of $T$ with corres $\lambda_1,\dots,\lambda_n.$\parSol{}
+Note that $T^*e_k=\overline{\lambda_k}e_k\Rightarrow T^*Te_k=\aMidsq{\lambda_k}e_k.$ \;Define $S\in\Lm{V}$ by $Se_k=\aMid{\lambda_k}{^{-1}}\lambda_k\:\!e_k.$\PfEnd
+\SepLine
+
+\Anchor{7F13}\ProblemN{F.13}{
+	\TextA{Supp $S,T\in\Lm{V}$ are posi. Show $\Dvert{S-T}\leqslant\max\!\Bra{\Dvert{S},\Dvert{T}}\leqslant\Dvert{S+T}.$}
+}$\Dvert{S+T}=\BigDvertsq{\sqrt{S+T}\;\!}\geqslant\BigDvertsq{\sqrt{S+T}\,v}=\Ang{Sv+Tv,v}=\Ang{Sv,v}+\Ang{Tv,v}=\BigDvertsq{\sqrt{S}\,v}+\BigDvertsq{\sqrt{T}\,v}.$\parSol{}
+%Simlr, $\Dvert{S-T}\geqslant\BigDvertsq{\sqrt{S}\,v}-\BigDvertsq{\sqrt{T}\,v}$ and $\Dvert{T-S}\geqslant\BigDvertsq{\sqrt{T}\,v}-\BigDvertsq{\sqrt{S}\,v}.$\parSol{}
+%Now $\Dvert{S-T}\geqslant\Mid[1pt][\bigg]{\BigDvertsq{\sqrt{S}\,v}-\BigDvertsq{\sqrt{T}\,v}}.$\parSol{}
+Let $v\in V$ suth $\BigDvertsq{\sqrt{S}\,v}=\BigDvertsq{\sqrt{S}\;\!}=\Dvert{S}\Rightarrow\Dvert{S+T}\geqslant\Dvert{S}.$ \;Simlr, $\Dvert{S+T}\geqslant\Dvert{T}.$\vspace{2.5pt}\parSol{}
+%\Or By \TIPS, $S,T,S+T-T,S+T-S$ posi $\Rightarrow$ $\Dvert{T}\leqslant\Dvert{S+T-T+T},$ and $\Dvert{S}\leqslant\Dvert{S+T-S+S}.$\vspace{3pt}\parSol{}
+Denote $\,\max\!\Bra{\aMid{\lambda}:\lambda\text{ is eigval of }T}\,$ by $\,\aMid{\lambda_M}{_T}.$ We show $\aMid{\lambda_M}{_{S-T}}\leqslant\max\!\Bra{\aMid{\lambda_M}{_S},\aMid{\lambda_M}{_T}}.$\parSol{}
+Note that $\Dvert{T}\:\!I-T$ is posi, so is $R=\Dvert{T}I-T+S=\Dvert{T}\:\!I-\Par{T-S}.$\parSol{}
+Thus $\Dvert{T}-\aMid{\lambda_M}{_R}=\aMid{\lambda_M}{_{S-T}}\leqslant\Dvert{T}.$ \;Simlr, $\Dvert{T}-\aMid{\lambda_M}{_{\,\SmallDvert{S}\:\!I\,-\,\SmallPar{S-T}}}=\aMid{\lambda_M}{_{T-S}}\leqslant\Dvert{S}.$\PfEnd
+\SepLine
+
+%\Anchor{7F9}\ProblemN{F.9}{
+	%	\TextA{Supp $T\in\Lm{V}.$ Prove $\forall\epsilon>0,\exists$ inv $S\in\Lm{V}$ suth $0<\Dvert{T-S}<\epsilon.$}
+	%}Supp $Tv=\sum s_k\:\!\Ang{v,\:\!e_k}\:f_k.$ Define $Sv=\sum\Par{s_k-\delta}\:\!\Ang{v,\:\!e_k}\:f_k,$ where $\delta\in\Interval{(}{)}{0,\epsilon}.$\PfEnd
+%\SepLine
+
+%\Anchor{7F10}\ProblemN{F.10}{
+	%	\TextA{Supp $\dim V>1,T\in\Lm{V}$ not inv.}
+	%	\TextA{Prove $\forall\epsilon>0,\exists$ non-inv $S\in\Lm{V}$ suth $0<\Dvert{T-S}<\epsilon.$}
+	%}Supp $Tv=\sum_{k=1}^n s_k\:\!\Ang{v,\:\!e_k}\:f_k.$ Define $Sv=\sum_{k=1}^{n-1}\Par{s_k-\delta}\:\!\Ang{v,\:\!e_k}\:f_k,$ where $\delta\in\Interval{(}{)}{0,\epsilon}.$\PfEnd
+%\SepLine
+
+\Anchor{7F11}\ProblemN{F.11}{
+	\TextA{Supp $\Fbb=\Cbb,T\in\Lm{V}.$ Prove $\forall\epsilon>0,\exists$ diag $S\in\Lm{V},\,0<\Dvert{T-S}<\epsilon.$}
+	%	We show $\exists\,R\in\Lm{V}$ suth $T+R$ has $\dim V$ disti eigvals, and $0<\Dvert{R}<\epsilon.$\parSol{}
+}Supp $A=\Mt{T}$ up-trig wrto orthon $B_V=\Par{e_1,\dots,e_n}.$ Let $\lambda_k=A_{k,k}.$\parSol{}
+Becs $T$ has finily many eigvals, $\exists\,\delta\in\Interval{(}{)}{0,\:\!\epsilon\big/n},$ $\nexists$ disti $j,k$ suth $\lambda_j+j\delta=\lambda_k+k\delta.$\parSol{}
+Thus define $Re_k=k\delta\:\!e_k\Rightarrow T+R$ has $n$ disti eigvals, while $R$ posi and $0<\Dvert{R}<\delta.$\PfEnd
+\SepLine
+
+\Anchor{7F16}\ProblemN{F.16}{
+	\TextA{Supp $S\in\Lm{V}$ is posi inv.}
+	\TextA{Prove $\exists\,\delta>0$ suth if  $T\in\Lm{V}$ self-adj and $\Dvert{S-T}<\delta,$ then $T$ posi.}
+}Let $\delta$ be the smallest singval of posi inv $S.$ Then $\forall v\in V,\Ang{Sv,v}=\Dvertsq{\sqrt{S}v}\geqslant\delta\:\!\Dvertsq{v}.$\parSol{}
+Supp $T$ self-adj and $0<\Dvert{S-T}<\delta=\min\!\Bra{\Dvert{S-R}:\dim\range R\leqslant\dim V-1}\Rightarrow T$ inv.\vspace{1pt}\parSol{}
+Then $\aXMid{\Ang{\Par{S-T}v,v}}\leqslant\Dvert{S-T}\:\Dvertsq{v}<\delta\:\!\Dvertsq{v}$ \,for all non0 $v\in V.$\vspace{2pt}\parSol{}
+Asum $\exists\,v\in V,\Ang{Tv,v}<0\Rightarrow\delta\:\!\Dvertsq{v}\leqslant\aXMid{\Ang{Sv,v}}\leqslant\aXMid{\Ang{Sv-Tv,v}}<\delta\:\!\Dvertsq{v}.$\vspace{1pt}\parSol{}
+\Or $\Ang{Tv,v}=\Ang{Sv,v}+\BigAng{\Par{T-S}v,v}\geqslant\delta\:\!\Dvertsq{v}-\BigAng{\Par{S-T}v,v}>0$ for $v\neq0.$\PfEnd
 \SepLine
 
 \ChEnd
