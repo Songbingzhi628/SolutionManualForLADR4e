@@ -382,7 +382,7 @@ Let $B_V=\Par{e_1,\dots,e_n}$ be orthon eigvecs. Then $B_{U^\perp}=\Par{e_{m+1},
 %(b) $\Mt{T\mmid_U,B_V}=X\Rightarrow\Mt[\BigPar]{\Par{T\mmid_U}{^*},B_V}=\overline{X}{^t}.$ 又 $\Mt{T^*\mmid_U,B_V}=\overline{X}{^t}.$\PfEnd\vspace{4pt}
 \Anchor{7B13}\ANote Another proof of [7.24]: Induc step: For $\dim V>1.$ Asum it holds for smaller dim.\parNot
 Let $u$ be an eigvec with $\Dvert{u}=1.$ Let $B_U=\Par{u}\Rightarrow U$ invard $T,$ so is $U^\perp\Rightarrow T\mmid_{U^\perp}$ normal.\parNot
-By asum, $\exists$ orthon $B_{U^\perp}$ of eigvecs of $T\mmid_{U^\perp}.$ Now $B_V=B_U\cap B_{U^\perp}$ of orthon eigvecs.\PfEnd
+By asum, $\exists$ orthon $B_{U^\perp}$ of eigvecs of $T\mmid_{U^\perp}.$ Now $B_V=B_U\cup B_{U^\perp}$ of orthon eigvecs.\PfEnd
 \SepLine
 \ChEnd
 
@@ -598,16 +598,23 @@ Becs $s_n=\min\!\Bra{\Dvert{S-T}:\dim\range T=0,1,\dots,n-1}>\Dvert{S-T}\Rightar
 }
 \SepLine
 
+\Anchor{7FT}\ProblemBX{\Tips}{
+	\TextA{Supp $A,B-A\in\Lm{V}$ are posi. Prove $\Dvert{A}\leqslant\Dvert{B}.$}
+}By Exe (F.13), $\Dvert{A}\leqslant\Dvert{B-A+A}=\Dvert{B}.$\PfEnd\vspace{2pt}\parSol{}
+\Or Becs $\Dvert{B}I-B$ is posi $\Rightarrow\Dvert{B}I-A=\BigPar{\Dvert{B}I-B}+\Par{B-A}$ is posi.\parSol{}
+又 $A$ posi $\Rightarrow\Dvert{A}$ is an eigval of $A\Rightarrow\BigPar{\Dvert{B}-\Dvert{A}}$ is eigval of posi $\BigPar{\Dvert{B}I-A}.$\PfEnd
+\SepLine
 
 \Anchor{7F13}\ProblemN{F.13}{
 	\TextA{Supp $S,T\in\Lm{V}$ are posi. Show $\Dvert{S-T}\leqslant\max\!\Bra{\Dvert{S},\Dvert{T}}\leqslant\Dvert{S+T}.$}
 }$\Dvert{S+T}=\BigDvertsq{\sqrt{S+T}\;\!}\geqslant\BigDvertsq{\sqrt{S+T}\,v}=\Ang{Sv+Tv,v}=\Ang{Sv,v}+\Ang{Tv,v}=\BigDvertsq{\sqrt{S}\,v}+\BigDvertsq{\sqrt{T}\,v}.$\parSol{}
 %Simlr, $\Dvert{S-T}\geqslant\BigDvertsq{\sqrt{S}\,v}-\BigDvertsq{\sqrt{T}\,v}$ and $\Dvert{T-S}\geqslant\BigDvertsq{\sqrt{T}\,v}-\BigDvertsq{\sqrt{S}\,v}.$\parSol{}
 %Now $\Dvert{S-T}\geqslant\Mid[1pt][\bigg]{\BigDvertsq{\sqrt{S}\,v}-\BigDvertsq{\sqrt{T}\,v}}.$\parSol{}
-Let $v\in V$ suth $\BigDvertsq{\sqrt{S}\,v}=\BigDvertsq{\sqrt{S}\;\!}=\Dvert{S}\Rightarrow\Dvert{S+T}\geqslant\Dvert{S}.$ \;Simlr, $\Dvert{S+T}\geqslant\Dvert{T}.$\vspace{2pt}\parSol{}
-We show $\Dvert{S-T}\leqslant\Dvert{S},$ so that apply rev, $\Dvert{S-T}\leqslant\Dvert{T}.$\parSol{}
-Let $B_V=\Par{e_1,\dots,e_n}$ be orthon eigvecs of $S$ with corres eigvals $\lambda_1,\dots,\lambda_n.$\parSol{}
-Let $A=\Mt{T,B_V}.$ Then $\forall v\in V$ with $\Dvert{v}=1,\;\Dvert{Sv-Tv}\leqslant\max\!\Bra{\Dvertsq{A_{\cdot,k}-\lambda_ku_k}:1\leqslant k\leqslant n}.$
+Let $v\in V$ suth $\BigDvertsq{\sqrt{S}\,v}=\BigDvertsq{\sqrt{S}\;\!}=\Dvert{S}\Rightarrow\Dvert{S+T}\geqslant\Dvert{S}.$ \;Simlr, $\Dvert{S+T}\geqslant\Dvert{T}.$\vspace{1pt}\parSol{}
+\Or By \TIPS, $S,T,S+T-T,S+T-S$ posi $\Rightarrow$ $\Dvert{T}\leqslant\Dvert{S+T-T+T},$ and $\Dvert{S}\leqslant\Dvert{S+T-S+S}.$\vspace{3pt}\parSol{}
+Denote $\,\max\!\Bra{\aMid{\lambda}:\lambda\text{ is eigval of }T}\,$ by $\,\aMid{\lambda_M}{_T}.$ We show $\aMid{\lambda_M}{_{S-T}}\leqslant\max\!\Bra{\aMid{\lambda_M}{_S},\aMid{\lambda_M}{_T}}.$\parSol{}
+Note that $\Dvert{T}I-T$ is posi, so is $R=\Dvert{T}I-T+S=\Dvert{T}I-\Par{T-S}.$\parSol{}
+Thus $\Dvert{T}-\aMid{\lambda_M}{_R}=\aMid{\lambda_M}{_{S-T}}\leqslant\Dvert{T}.$ \;Simlr, $\Dvert{T}-\aMid{\lambda_M}{_{\,\SmallDvert{S}\:\!I\,-\,\SmallPar{S-T}}}=\aMid{\lambda_M}{_{T-S}}\leqslant\Dvert{S}.$\PfEnd
 \SepLine
 
 \Anchor{7F14}\ProblemN{F.14}{
@@ -626,9 +633,9 @@ And $V=\Range\Par{P_{\!U}+P_{\!W^\perp}}\subseteq\range P_{\!U}+\range P_{\!W^\p
 \SepLine
 
 \Anchor{7F19}\ProblemN{F.19}{
-	\TextA{Prove $\Dvert{T^*T}=\Dvertsq{T}$ for $T\in\Lm{V,W}.$}
+	\TextA{Prove $\Dvert{T^*T}=\Dvertsq{T}$ for $T\in\Lm{V,W}.$\hfill\FontNorm\tgnr By Exe (2), $\Dvert{T^*T}=s_1^2.$}
 }$\forall v\in V,\:\BigDvertsq{\sqrt{T^*T}v}=\Ang{T^*Tv,v}=\Dvertsq{Tv}\leqslant\Dvertsq{T}\:\Dvertsq{v}\Rightarrow\BigDvert{\sqrt{T^*T}\;\!}\leqslant\Dvertsq{T}.$\parSol{}
-Let $T=S\sqrt{T^*T}\Rightarrow\Dvert{T}\leqslant\Dvert{S}\,\BigDvert{\sqrt{T^*T}\;\!}=\BigDvert{\sqrt{T^*T}\;\!}.$ \quad\Or By Exe (2), $\Dvert{T^*T}=s_1^2.$\PfEnd
+Let $T=S\sqrt{T^*T}\Rightarrow\Dvert{T}\leqslant\Dvert{S}\,\BigDvert{\sqrt{T^*T}\;\!}=\BigDvert{\sqrt{T^*T}\;\!}.$\PfEnd
 \SepLine
 
 \Anchor{7F20}\ProblemN{F.20}{
@@ -640,7 +647,7 @@ $\Rightarrow\Dvert{T_{\!\Cbb}}{_\Cbb}=\Dvert{T}.$\parSol{}
 Let $B_{V_{\!\Cbb}}=\Par{e_1,\dots,e_n}$ be orthon eigvecs of $T_{\!\Cbb}$ corres eigvals $\lambda_1,\dots,\lambda_n$ of $T^k$ corres $\lambda_1^k,\dots,\lambda_n^k.$\parSol{}
 By Exe (2), $\Dvert{T_{\!\Cbb}^k}=\max\!\Bra{\aMid{\lambda_j^k}}=\max\!\Bra{\aMid{\lambda_j}}{^k}=\Dvert{T_{\!\Cbb}}{^k}.$\PfEnd\vspace{2pt}\parSol{}
 \Or Becs singvals of $T$ are the abs of eigvals in $\Cbb.$ \,Let $T_{\!\Cbb}v=\Dvert{T}v$ with $v\in V_{\!\Cbb}$ and $\Dvert{v}=1.$\parSol{}
-Then $T_{\!\Cbb}^kv=\Dvert{T}{^k}v\Rightarrow\Dvert{T}{^k}=\BigDvert{T_{\!\Cbb}^kv}\leqslant\Dvert{T_{\!\Cbb}^k}.$ \,By Exe (5).\PfEnd
+Then $T_{\!\Cbb}^kv=\Dvert{T}{^k}v\Rightarrow\Dvert{T}{^k}=\BigDvert{T_{\!\Cbb}^kv}\leqslant\Dvert{T_{\!\Cbb}^k}.$ \;又 By Exe (5), $\Dvert{T_{\!\Cbb}^k}\leqslant\Dvert{T_{\!\Cbb}}{^k}$.\PfEnd
 \SepLine
 
 \Anchor{7F22}\ProblemN{F.22}{
