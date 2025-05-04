@@ -708,5 +708,26 @@ Then $\aXMid{\Ang{\Par{S-T}v,v}}\leqslant\Dvert{S-T}\:\Dvertsq{v}<\delta\:\!\Dve
 Asum $\exists\,v\in V,\Ang{Tv,v}<0\Rightarrow\delta\:\!\Dvertsq{v}\leqslant\aXMid{\Ang{Sv,v}}\leqslant\aXMid{\Ang{Sv-Tv,v}}<\delta\:\!\Dvertsq{v}.$\vspace{1pt}\parSol{}
 \Or $\Ang{Tv,v}=\Ang{Sv,v}+\BigAng{\Par{T-S}v,v}\geqslant\delta\:\!\Dvertsq{v}-\BigAng{\Par{S-T}v,v}>0$ for $v\neq0.$\PfEnd
 \SepLine
+\ChEnd
+\pagebreak
+
+\ChDecl{Ch10}{10}{\quad{\ANote {\FontSmall $V$ denotes a finide non0 vecsp over $\Fbb.$}}}%An Exe marked by $\blacksquare$ is true if infinide or partially finide.
+
+\vspace{4pt}
+
+\Anchor{10A17}\ProblemN{A.17}{
+	\TextA{Supp $T\in\Lm{V}$ suth \:\!$\Tr\Par{ST}=0$ \,for all $S\in\Lm{V}.$ \,Prove $T=0.$}
+}Let $S=T^*\Rightarrow\Tr\Par{T^*T}=s_1^2+\dots+s_n^2=0.$ By (4E 7.E.1).\PfEnd\vspace{2pt}\parSol{}
+\Or Asum $T\neq0\Rightarrow\exists$ non0 $v\in V$ suth $Tv_1\neq0.$ Extend $v=v_1$ to $B_V=\Par{v_1,\dots,v_n}.$\parSol{}
+Then $Tv_1=A_{1,1}v_1+\dots+A_{n,1}v_n\Rightarrow\exists\,A_{j,1}\neq0.$ Define $S\in\Lm{V}$ by each $Sv_k=\delta_{j,k}\:\!v_1.$\parSol{}
+Now $S=E_{j,1}\Rightarrow\Mt{ST}={\mEnt{1,j}\Mt{T}}\Longrightarrow0=\Tr\Par{ST}=A_{j,1}.$ Ctradic.\PfEnd
+\SepLine
+
+%\Anchor{10A4e10}\ProblemB{
+%	\TextB{Supp $\tau:\Lm{V}\rightarrow\Fbb,\tau\Par{I}=\dim V,$ and $\forall S,T\in\Lm{V},\tau\Par{ST}=\tau\Par{TS}.$ Prove $\tau=\Tr.$}
+%}$\tau\Par{E_{i,j}}=\tau\Par{E_{x,j}E_{i,x}}=\tau\Par{E_{i,x}E_{x,j}}=\delta_{i,j}\tau\Par{E_{x,x}}.$\vspace{1pt}\parSol{}
+%又 $I=E_{1,1}+\dots+E_{n,n}\Rightarrow\dim V=n\tau\Par{E_{x,x}}.$ \;Hence $\tau\Par{E_{i,j}}=\delta_{i,j}.$\PfEnd
+%\SepLine
+
 
 \ChEnd
