@@ -368,11 +368,10 @@ Becs each $E\Par{\lambda_k,T}=E\Par{\overline{\lambda_k},T^*}$ invard $S\Rightar
 \SepLine
 
 \Anchor{7B4e20}\ProblemBnoor{4E 20}{
-	\TextA{Supp $T\in\Lm{V}$ is normal and $U$ invarspd $T.$}
+	\TextA{Supp $\Fbb=\Cbb,T\in\Lm{V}$ is normal and $U$ invarspd $T.$}
 	\TextA{Prove {\tgnr\large(a)} $U^\perp$ invard $T,$ \;{\tgnr\large(b)} $\Par{T\mmid_U}{^*}=T^*\mmid_U\in\Lm{U},$ \;{\tgnr\large(c)} $T\mmid_U,T\mmid_{U^\perp}$ normal.}
 }By \Sbra{5.A \TIPSN{3}}, and apply [6.31] to each $E\Par{\lambda_k,T\mmid_U},$ let $B_U=\Par{e_1,\dots,e_m}$ be orthon eigvecs.\parSol{}
-Let $B_V=\Par{e_1,\dots,e_n}$ be orthon eigvecs. Then $B_{U^\perp}=\Par{e_{m+1},\dots,e_n}.$\parSol{}
-(a) Now $U^\perp$ invard $T.$ \;And $U$ invard $T^*.$\parSol{}
+Let $B_V=\Par{e_1,\dots,e_n}$ be orthon eigvecs. Then $B_{U^\perp}=\Par{e_{m+1},\dots,e_n},$ invard $T.$ And $U$ invard $T^*.$\parSol{}
 (b) $\forall u,v\in U,\:\BigAng{v,\Par{T\mmid_U}{^*}u}=\BigAng{T\mmid_U v,u}=\BigAng{v,T^*\mmid_U u}\Rightarrow\BigPar{\Par{T\mmid_U}{^*}-T^*\mmid_U}u\in U\cap U^\perp.$\vspace{2pt}\parSol{}
 (c) $\forall u\in U,\:\BigDvert{T\mmid_U u}=\BigDvert{T^*\mmid_U u}=\BigDvert{\Par{T\mmid_U}{^*}u}.$ \;\Or $T\mmid_U\Par{T\mmid_U}{^*}=T^*T\mmid_U=T^*\mmid_UT\mmid_U.$\PfEnd\vspace{4pt}
 %\Or Let orthon $B_U=\Par{e_1,\dots,e_m}\Rightarrow B_V=\Par{e_1,\dots,e_n}\Rightarrow B_{U^\perp}=\Par{e_{m+1},\dots,e_n}.$ Let $A=\Mt{T,B_V}.$\parSol{}
@@ -380,6 +379,7 @@ Let $B_V=\Par{e_1,\dots,e_n}$ be orthon eigvecs. Then $B_{U^\perp}=\Par{e_{m+1},
 %(a) Becs $\sum_{j=1}^m\Dvertsq{X_{\cdot,j}}=\sum_{j=1}^m\Dvertsq{Te_j}=\sum_{j=1}^m\Dvertsq{T^*e_j}=\sum_{j=1}^m\BigDvertsq{\overline{X_{j,\cdot}}}+\sum_{j=1}^m\BigDvertsq{\overline{Y_{j,\cdot}}}\Rightarrow Y=0.$\vspace{2pt}\parSol{\Ha}
 %Apply to $T^*\Rightarrow U$ invard $T^*.$ \Or Becs $\Mt{T^*,B_V}=\overline{A}{^t}={}${\small$\begin{pmatrix}\overline{X}{^t} &\hspace{-4pt} 0\\[-2pt] 0 &\hspace{-4pt} \overline{Z}{^t}\end{pmatrix}$}.\parSol{}
 %(b) $\Mt{T\mmid_U,B_V}=X\Rightarrow\Mt[\BigPar]{\Par{T\mmid_U}{^*},B_V}=\overline{X}{^t}.$ 又 $\Mt{T^*\mmid_U,B_V}=\overline{X}{^t}.$\PfEnd\vspace{4pt}
+\AComm See [9.30] without using [7.24] and the hypo $\Fbb=\Cbb.$\par
 \Anchor{7B13}\ANote Another proof of [7.24]: Induc step: For $\dim V>1.$ Asum it holds for smaller dim.\parNot
 Let $u$ be an eigvec with $\Dvert{u}=1.$ Let $B_U=\Par{u}\Rightarrow U$ invard $T,$ so is $U^\perp\Rightarrow T\mmid_{U^\perp}$ normal.\parNot
 By asum, $\exists$ orthon $B_{U^\perp}$ of eigvecs of $T\mmid_{U^\perp}.$ Now $B_V=B_U\cup B_{U^\perp}$ of orthon eigvecs.\PfEnd
@@ -723,11 +723,11 @@ Then $Tv_1=A_{1,1}v_1+\dots+A_{n,1}v_n\Rightarrow\exists\,A_{j,1}\neq0.$ Define 
 Now $S=E_{j,1}\Rightarrow\Mt{ST}={\mEnt{1,j}\Mt{T}}\Longrightarrow0=\Tr\Par{ST}=A_{j,1}.$ Ctradic.\PfEnd
 \SepLine
 
-%\Anchor{10A4e10}\ProblemB{
-%	\TextB{Supp $\tau:\Lm{V}\rightarrow\Fbb,\tau\Par{I}=\dim V,$ and $\forall S,T\in\Lm{V},\tau\Par{ST}=\tau\Par{TS}.$ Prove $\tau=\Tr.$}
-%}$\tau\Par{E_{i,j}}=\tau\Par{E_{x,j}E_{i,x}}=\tau\Par{E_{i,x}E_{x,j}}=\delta_{i,j}\tau\Par{E_{x,x}}.$\vspace{1pt}\parSol{}
-%又 $I=E_{1,1}+\dots+E_{n,n}\Rightarrow\dim V=n\tau\Par{E_{x,x}}.$ \;Hence $\tau\Par{E_{i,j}}=\delta_{i,j}.$\PfEnd
-%\SepLine
+\Anchor{10A4e10}\ProblemB{
+	\TextB{Supp $\tau:\Lm{V}\rightarrow\Fbb,\tau\Par{I}=\dim V,$ and $\forall S,T\in\Lm{V},\tau\Par{ST}=\tau\Par{TS}.$ Prove $\tau=\Tr.$}
+}$\tau\Par{E_{i,j}}=\tau\Par{E_{x,j}E_{i,x}}=\tau\Par{E_{i,x}E_{x,j}}=\delta_{i,j}\tau\Par{E_{x,x}}.$\vspace{1pt}\parSol{}
+又 $I=E_{1,1}+\dots+E_{n,n}\Rightarrow\dim V=n\tau\Par{E_{x,x}}.$ \;Hence $\tau\Par{E_{i,j}}=\delta_{i,j}.$\PfEnd
+\SepLine
 
 
 \ChEnd
