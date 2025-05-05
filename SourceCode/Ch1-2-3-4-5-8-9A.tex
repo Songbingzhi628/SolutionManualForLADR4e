@@ -4026,6 +4026,17 @@ Let $k$ be suth $\Null\Par{T-\lambda I}{^k}=G\Par{\lambda,T}=\Null\Par{T-\lambda
 \ANote The expo of an irreducible $\omega$ in the factoriz of $m_T$ is the smallest $m$ suth $\omega^m\Par{T}\Big|{_{\nullp\omega\SmallPar{T}}}=0.$
 \SepLine
 
+%\Anchor{8B11}\ProblemN{B.11}{
+%	\TextA{Supp $T\in\Lm{V}$ up-trig wrto $B_V=\Par{v_1,\dots,v_n}.$ \FontNorm\tgnr Let $Tv_k=u_k+\lambda_kv_k,\,u_k\in\Span{v_1,\dots,v_{k-1}}.$}
+%	\TextA{Prove the multi of $\lambda$ is the number of $\lambda$ on the diag.\hfill\FontNorm\tgnr See [4E 8.31].}
+%}Let $\Gamma=\Bra{\alpha_1,\dots,\alpha_d}$ be suth each $\lambda_{\alpha_k}=0,$ and each $\lambda_j\neq0$ for each $k\in\Lambda=\Bra{1,\dots,n}\Backslash\Gamma.$\par\quad
+%We use induc to show $\dim\range T\geqslant n-d.$ (i) Immed. (ii) $n\geqslant 2.$ Asum true for smaller $V.$\par\quad
+%Let $j$ be the largest suth $\lambda_j\neq0\Rightarrow Tv_j\not\in\Span{Tv_1,\dots,Tv_{j-1}}=U_{j-1}\Rightarrow \dim U_j=\dim U_{j-1}+1.$\par\quad
+%By asum on $U_{j-1},$ $\dim U_j\geqslant\Par{j-1-d'}+1,$ where $d'$ is the number of times $0$ appears in $\lambda_1,\dots,\lambda_{j-1}.$\par\quad
+%又 $d-d'=n-j$ is number of $0$ in $\Bra{\lambda_{j+1},\dots,\lambda_n}\Rightarrow\dim\range T\geqslant\dim U_j\geqslant j-d'=n-d.$\par\quad
+%Hence $\dim\null T\leqslant d.$ Apply to $T^n\Rightarrow\dim\null T^n\leqslant d.$ Apply to $\Par{T-\lambda I}{^n}\Rightarrow\dim G\Par{\lambda,T}\leqslant d_{\lambda}.$\PfEnd
+%\SepLine
+
 %\Anchor{8B9}\ProblemN{B.9}{
 %	\TextA{Supp $A,C$ are block diag matrices, and $A_k,C_k$ are of the same size $n_k$ \,for $k\in\;\!\!\Bra{1,\dots,m}.$}
 %	\TextA{Show $AC$ is block diag and the $k^{\text{th}}$ block on the diag of $AC$ is $A_kC_k.$}
@@ -4116,7 +4127,8 @@ For $\Fbb=\Rbb,$ if $\exists\,\alpha_j\not\in\Rbb,$ then $\exists\,\alpha_i=\ove
 	Supp $N^m=0\neq N^{m-1}.$ Let each $\null N^k=\null N^{k-1}\oplus U_k$ for $k\in\;\!\!\Bra{2,\dots,m}.$\TextB{}
 %	(1) $\null N^{m-1}\oplus U_{m-1}=\null N^m=\Par{\null N^{m-2}\oplus U_{m-2}}\oplus U_{m-1}.$\TextB{}
 %	(2) $\null N^{m-j}\oplus U_{m-j}=\null N^{m-j+1}.$\, (3) $\null I\oplus U_0=\null N.$\TextB{}
-	Start by $B_{U_m}=\Par{v_{1,1},\dots,v_{n_1,1}}.$\, But $\Par{Nv_{1,1},\dots,Nv_{n_1,1}}$ might be liney dep. Invalid method.\par\vspace{2pt}
+	(1) Start by $B_{U_m}=\Par{v_{1,1},\dots,v_{n_1,1}}.$\, But $\Par{Nv_{1,1},\dots,Nv_{n_1,1}}$ might be liney dep. Invalid method.\TextB{}
+	(2) $\Mt{N,\,B_{\null N}\cup B_{U_2}\cup\cdots\cup B_{U_m}}$ is a block up-trig matrix with the diag blocks all zero.\par\vspace{2pt}
 %	(2) Let $B_{U_{m-j}}=\Par{N^{j-1}v_{1,1},\dots,N^{j-1}v_{n_1,1},\dots,Nv_{1,j-1},\dots,Nv_{n_{j-1},j-1},v_{1,j},\dots,v_{n_j,j}}.$\TextB{}
 %	(3) Let $B_{U_0}=\Par{N^{m-1}v_{1,1},\dots,N^{m-1}v_{n_1,1},\dots,Nv_{1,m-1},\dots,Nv_{n_{m-1},m-1},v_{1,m},\dots,v_{n_m,m}}.$ Sum up and done.
 	\Anchor{8NED6}\BulletPointX\NoteForSmall{Exe (D.6)}\;\;Let $B=\Par{N^{m_1}v_1,\dots,N^{m_1\!-k}v_1,\cdots,N^{m_n}v_n,\dots,N^{m_n\!-k}v_n},$ $0\leqslant k\leqslant\min\!\Bra{m_1,\dots,m_n}.$\TextB{}
