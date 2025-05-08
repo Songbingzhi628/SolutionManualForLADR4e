@@ -984,9 +984,8 @@ Define $T\in\Lm{V,W}$ by $T\Par{Sw_i}=w_i.$ Now $ST\BigPar{a_1Sw_1+\dots+a_nSw_n
 
 \ProblemN{\Anchor{3B22}{22}}{
 	\TextA{Supp $U,V$ are finide, $S\in\Lm{V,W},T\in\Lm{U,V}$.}
-	\TextA{Prove $\dim \null ST\leqslant\dim\null S+\dim\null T$.\vspace{0pt}}
-}We show $\dim \null ST=\dim \null S\mmid_{\range T} + \dim \null T.$\parSol{}
-Becs (a) \uline{$\range T\mmid_{\null ST}=\range T\cap\null S=\null S\mmid_{\range T}\,,$}\parSol{}
+	\TextA{Prove $\dim\null ST=\dim \null S\mmid_{\range T} + \dim \null T$.\vspace{2pt}}
+}Becs (a) \uline{$\range T\mmid_{\null ST}=\range T\cap\null S=\null S\mmid_{\range T}\,,$}\parSol{}
 \Blind{Becs} (b) \uline{$\null T\mmid_{\null ST}=\null T\cap\null ST=\null T.$} By [3.22]\PfEnd\parSol{\vspace{6pt}}
 %(a) $Tu\in\range T\mmid_{\null ST}\Longleftrightarrow S\Par{Tu}=0\Longleftrightarrow Tu\in\null S\cap\range T=\null S\mmid_{\range T}.$\par\quad
 %(b) $u\in\null T\mmid_{\null ST}=\null T\cap\null ST\Longleftrightarrow Tu=0\Longleftrightarrow u\in\null T.$\PfEnd\vspace{6pt}\quad
@@ -994,7 +993,7 @@ Becs (a) \uline{$\range T\mmid_{\null ST}=\range T\cap\null S=\null S\mmid_{\ran
 \Blind{\Or}Thus \uline{$\Bra{u\in U:Tu\in\null S}=\mathcal{K}_{\!\null S\;\cap\;\range T}=\null ST.$} By Exe (4E 21).\PfEnd\vspace{6pt}
 \ACoro (1) $T$ surj $\Rightarrow\dim\null ST=\dim\null S+\dim\null T.$\parCor
 (2) $T$ inv $\Rightarrow\dim\null ST=\dim\null S,\;\null ST=\null T.$\parCor
-(3) $S$ inje $\Rightarrow\dim\null ST=\dim\null T.$\vspace{-3pt}
+(3) $S$ inje $\Rightarrow\dim\null ST=\dim\null T.$
 \SepLine
 
 \ProblemN{\Anchor{3B23}{23}}{
@@ -1008,10 +1007,11 @@ $\dim\range ST\leqslant \dim\range T$
 \AComm $\dim\range ST=\dim U-\dim\null ST=\dim \range T\mmid_{U}-\dim\range T\mmid_{\null ST}.$\par\vspace{6pt}
 \ACoro (1) $S\mmid_{\range T}$ inje $\Longleftrightarrow\dim\range ST=\dim\range T.$\parCor
 (2) Let $X\oplus\null S=V.$ Then $X\subseteq\range T\Longleftrightarrow\range ST=\range S.$\vspace{-2pt}\parCor
-\Blind{(2)} And $T$ is surj $\Rightarrow\range ST=\range S.$\par\vspace{4pt}
-\AExa Let $U=W=\Rbb,V=\Rbb^2.$ Define $T\in\Lm{\Rbb,\Rbb^2}:x\mapsto\Par{x,0},$ and $S\in\Lm{\Rbb^2,\Rbb}:\Par{x,y}=ax+by.$\parExa
-Let $a\neq0.$ Now $\dim\null S\geqslant 1,\dim\null T=1.$ Thus $ST:x\mapsto ax\Rightarrow\dim\null ST=0.$%\parExa
-% $\dim\null ST\geqslant\max\!\Bra{{\dim\null S,\dim\null T}}.$
+\Blind{(2)} And $T$ is surj $\Rightarrow\range ST=\range S.$\parCor
+(3) $\dim U=\dim V\Rightarrow\dim\null ST\geqslant\dim V-\dim\min\!\Bra{{\dim\range S,\dim\range T}}$\parCor
+\Blind{(3) $\dim U=\dim V\Rightarrow\dim\null ST$}${}=\dim\max\!\Bra{{\dim V-\dim\range S,\dim V-\dim\range T}}.$\par\vspace{4pt}
+\AExa Let $U=W=\Rbb,V=\Rbb^2.$ Define $T\in\Lm{\Rbb,\Rbb^2}:x\mapsto\Par{x,0},$ and $S\in\Lm{\Rbb^2,\Rbb}:\Par{x,y}\mapsto ax,a\neq0.$\parExa
+Now $\dim\null S=1,\dim\null T=0,$ and $\dim\null S\mmid_{\range T}=0.$
 \SepLine
 
 \Anchor{3B4e24}\ProblemB{
@@ -4162,7 +4162,7 @@ Then by Exe (D.3), the line directly above the diag of {\tgsc any} Jordan $\Mt{N
 Thus the only Jordan block of $\Mt{N}$ is $\Mt{N}$ itself. \;Convly true as well.\PfEnd\vspace{2pt}\quad
 \Or (a) If $\exists$ two or more eigvals of $T\mmid_U$ or $T\mmid_W,$ then $m_T$ has two or more disti factors, done.\par\quad\Ha
 \Blind{\Or}Now supp $\exists$ only one eigval $\lambda$ for $T\mmid_U,$ $T\mmid_W,$ and $T.$ Supp $m_T\Par{z}=\Par{z-\lambda}{^m}.$\par\quad\Ha
-\Blind{\Or}Let $M=\max\!\Bra{\dim U,\dim W}.$ Let $S=\Par{T-\lambda I}{^M}\Rightarrow\null S\mmid_U\oplus\null S\mmid_W=\null S.$\par\quad\Ha
+\Blind{\Or}Let $M=\max\!\Bra{{\dim U,\dim W}}.$ Let $S=\Par{T-\lambda I}{^M}\Rightarrow\null S\mmid_U\oplus\null S\mmid_W=\null S.$\par\quad\Ha
 \Blind{\Or}Becs $G\Par{\lambda,T\mmid_U}=U,\,G\Par{\lambda,T\mmid_W}=W,\,G\Par{\lambda,T}=V\Rightarrow S=0.$ Now by Exe (4E B.6).\vspace{2pt}\par\quad\Ha
 \Blind{\Or}\Or Becs $\exists$ Jordan $\Mt{T\mmid_U},\Mt{T\mmid_W}\Rightarrow$ Jordan $\Mt{T}.$ Consider $z^M$ by Exe (D.3).\vspace{4pt}\par\quad
 \Blind{\Or}(b) Supp $T$ has only one eigval. Let
