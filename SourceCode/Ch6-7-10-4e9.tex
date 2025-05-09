@@ -327,6 +327,8 @@ By (5.C.5). If $\Fbb=\Rbb,$ then apply to $T_{\!\Cbb}.$ Now every liney factor h
 
 \vspace{4pt}
 
+% TODO: Duality and Orthog Complements
+
 \Anchor{7B14}\ProblemN{14}{
 	\TextA{Supp $\Fbb=\Rbb,$ $T\in\Lm{V}.$ Prove $T$ diag $\Rightarrow$ self-adj wrto some $\Ang{\cdot,\cdot}{_V}.$}
 }Let eigvecs $B_V=\Par{e_1,\dots,e_n}$ be orthon wrto $\Ang{e_j,\:\!e_k}{_V}=\delta_{j,k}.$ \,Becs $\Mt{T}=\Mt{T}{^t}=\Mt{T^*}.$\PfEnd\vspace{2pt}
@@ -760,20 +762,23 @@ Supp $\beta\Par{u,v}=\Ang{Tu,v}=\sum\Ang{Tu,e_i}\Ang{e_i,v}.$ Then each $\Ang{Tu
 Thus $\Ang{Tu,v}=\sum a_jb_k\Ang{Te_j,e_k}=\sum a_jb_k\;\!\beta\Par{e_j,e_k}=\beta\Par{u,v}.$\PfEnd
 \SepLine
 
-\Anchor{4e9B}\ProblemN{B.}{
-	\TextA{}
-}
+\Anchor{4e9B1}\ProblemN{B.1}{
+	\TextA{Supp $m\in\Nbp.$ Show $\dim V^{\SmallPar{m}}=\dim V^m.$}
+}We use induc on $m.$ (i) $m=1.$ Immed. (ii) $m>1.$ Asum true for $\Par{m-1}.$\parSol{}
+See (4E 9.D). Becs $\mB\BigPar{V^{\SmallPar{m-1}},V}$ is iso to $V^{\SmallPar{m}}$ via $\Sbra{\Lambda\Par{\beta}}\Par{v_1,\dots,v_m}=\beta\BigPar{\Par{v_1,\dots,v_{m-1}},v_m}.$\PfEnd\vspace{3pt}\parSol{}
+Let $B_V=\Par{e_1,\dots,e_n}$ with corres $B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_n}.$\parSol{}
+For each $\Par{i_1,\dots,i_m}\in\!\!\;\Bra{1,\dots,n}{^m}=\Gamma,$ define $m$-liney \,$\alpha_{i_1,\cdots,\,i_m}\Par{v_1,\dots,v_m}=\varphi_{i_1}\:\!\!\Par{v_1}\cdots\varphi_{i_m}\:\!\!\Par{v_m}.$\vspace{1pt}\parSol{}
+Supp $\alpha$ is $m$-liney. Note that $\alpha\Par{v_1,\dots,v_m}=\sum_{i_1=1}^n\cdots\sum_{i_m=1}^n\,\alpha_{i_1,\cdots,\,i_m}\Par{v_1,\dots,v_m}\,\alpha\Par{e_{i_1},\dots,e_{i_m}}.$\vspace{2pt}\parSol{}
+Hence $\alpha\in\Span{\alpha_I}{_{I\,\in\,\Gamma}}.$ \;For liney indep, let $\sum_{i_1=1}^n\cdots\sum_{i_m=1}^n\,c_{i_1,\cdots,\,i_m}\,\alpha_{i_1,\cdots,\,i_m}=0.$\vspace{1pt}\parSol{}
+Note that for $\Par{k_1,\dots,k_m}\in\Gamma\:\!\!,\:\alpha_{i_1,\cdots,\,i_m}\Par{e_{k_1},\dots,e_{k_m}}=\delta_{i_1,\,k_1}\!\!\cdots\delta_{i_m,\,k_m}\Rightarrow 0\Par{e_{k_1},\dots,e_{k_m}}=c_{k_1,\cdots,\,k_m}.$\PfEnd
 \SepLine
 
-\Anchor{4e9B}\ProblemN{B.}{
-	\TextA{}
-}
-\SepLine
-
-\Anchor{4e9B}\ProblemN{B.}{
-	\TextA{}
-}
-\SepLine
+%\Anchor{4e9B3}\ProblemN{B.3}{
+%	\TextA{Supp $\alpha$ is $m$-liney with $\alpha\Par{v_1,\dots,v_j,v_{j+1},\dots,v_m}=0$ \,for $v_j=v_{j+1}.$ \;Show $\alpha\in V^{\SmallPar{m}}_{\alt}.$}
+%}Becs $0=\alpha\Par{v_1,\dots,v_j+v_{j+1},v_j+v_{j+1},\dots,v_m}=\alpha\Par{v_1,\dots,v_{j+1},v_j,\dots,v_m}+\alpha\Par{v_1,\dots,v_j,v_{j+1},\dots,v_m}.$\parSol{}
+%Supp $m>2$ and $u_1,\dots,u_m\in V$ suth $\exists\,u_j=u_k$ with $1\leqslant j<k-1\leqslant m-1.$\parSol{}
+%Observe $\Par{u_1,\dots,u_j,u_{j+1},\dots,u_k,\dots,u_m}.$ By swapping $\Par{u_j,u_{j+1}},\dots,\Par{u_j,u_{k-1}}$ in order.\PfEnd
+%\SepLine
 
 \Anchor{4e9C}\ProblemN{C.}{
 	\TextA{}
