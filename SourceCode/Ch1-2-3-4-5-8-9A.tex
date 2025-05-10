@@ -541,7 +541,7 @@ $}\Longleftrightarrow T\Par{v+\lambda u}=Tv+\lambda Tu.$\vspace{6pt}\TextB{}
 	\TextB{A function $T:V\rightarrow W$ is liney $\Longleftrightarrow$ The graph of $T$ is a subspace of $V\times W.$\vspace{-6pt}}
 }\SepLine
 
-\ProblemBnoor[]{4E 10}{
+\Anchor{3A4e10}\ProblemBnoor[]{4E 10}{
 	\ANote Composition and product are not the same in $\PoFi.$\TextB{\vspace{-3pt}}
 }\SepLine\pagebreak
 
@@ -1262,7 +1262,7 @@ Thus (a) $\dim\row A=r\leqslant c=\dim\col A,$ and (b) $\dim\col A=c\leqslant r=
 	\TextB{Supp $A\in\Fbb^{m,n}\nonzero.$ Prove $\rank A=1\Rightarrow\exists\,c_j,d_k\in\Fbb,$ each $A_{j,k}=c_j\cdot d_k.$\vspace{6pt}}
 }Let $c_j=\Frac{A_{j,1}}{A_{1,1}}=\Frac{A_{j,2}}{A_{1,2}}=\dots=\Frac{A_{j,n}}{A_{1,n}},\;\;d_k'=\Frac{A_{1,k}}{A_{1,1}}=\Frac{A_{2,k}}{A_{2,1}}=\dots=\Frac{A_{m,k}}{A_{m,1}}.$\vspace{4pt}\parSol{}
 {$\Rightarrow A_{j,k}=d_k' A_{j,1}=c_j A_{1,k}=c_j d_k' A_{1,1}=c_j d_k,$ where $d_k=d_k' A_{1,1}.$}\quad\Or Using CR Factoriz, immed.\PfEnd
-\SepLine
+\SepLine\pagebreak
 
 \ProblemN{\Anchor{3C5}{5}}{
 	\TextA{Supp $B_W=\Par{w_1,\dots,w_n}$ and $V$ is finide. Supp $T\in\Lm{V,W}$.\vspace{2pt}}
@@ -1276,7 +1276,7 @@ Let $v_1=\Frac{u_k}{A_{1,k}}\Rightarrow Tv_1=1w_1+\Frac{A_{2,k}}{A_{1,k}}w_2+\do
 \NOTICE that $Tu_i=A_{1,i}w_1+\dots+A_{n,i}w_n.$ 又 Each $u_i\in\Span{v_1,\dots,v_n}=V.$ Let $B_V=\Par{v_1,\dots,v_n}.$\PfEnd\vspace{4pt}\quad
 \Or Using Exe (4). Let $B_{W\apostrophe}$ be the $B_V.$ Now $\exists\,B_{V\apostrophe}$ suth $\Mt{T\apostrophe,B_{W\apostrophe}\,,B_{V\apostrophe}}{_{\cdot,1}}={\small\begin{pmatrix}1&0&\cdots&0\end{pmatrix}}{^t}$ or ${\small\begin{pmatrix}0&\cdots&0\end{pmatrix}}{^t}.$\par\quad
 Which is equiv to $\exists\,B_V$ \Sbra{Using (3.F.31)} suth $\Mt{T,B_V,B_W}{_{1,\cdot}}={\small\begin{pmatrix}1&0&\cdots&0\end{pmatrix}}$ or ${\small\begin{pmatrix}0&\cdots&0\end{pmatrix}}.$\PfEnd
-\SepLine\pagebreak
+\SepLine
 
 \ProblemN{\Anchor{3C6}{6}}{
 	\TextA{Supp $V,W$ are finide and $T\in\Lm{V,W}.$ Supp $\dim\range T=1.$}
@@ -1289,27 +1289,33 @@ By \Sbra{2.C {\TIPS}}, $\exists$ a bss $\Par{u_1,\dots,u_n}$ of $V$ suth each $u
 Now each $Tu_k\in\range T=\Span{w}\Rightarrow Tu_k=\lambda_k w,\exists\,\lambda_k\in\nonzeroFbb.$ Let each $v_k=\lambda_k^{-1}u_k.$\PfEnd
 \SepLine
 
+%\ProblemN{\Anchor{3C1}{1}}{
+%	\TextA{Show $A=\Mt{T}$ has at least $n=\dim\range T$ non0 ent wrto any $B_V,B_W.$}
+%}\par\quad
+%Let $U\oplus\null T=V;\;B_U=\Par{v_1,\dots,v_n},B_V=\Par{v_1,\dots,v_m}.$\par\quad
+%Each $Tv_k\neq 0\Longleftrightarrow A_{\cdot,k}\neq 0.$ Hence every such $A_{\cdot,k}$ has at least one non0 ent.\PfEnd\vspace{4pt}\par\quad
+%\Or We prove by ctradic. Supp $A$ has at most $\Par{n-1}$ non0 ent.\par\quad
+%Then by Pigeon Hole Principle, at least one of $A_{\cdot,1},\dots,A_{\cdot,n}$ equals $0$.\par\quad
+%Thus there are at most $\Par{n-1}$ non0 vecs in $Tv_{1},\dots,Tv_n.$\par\quad
+%又 $\range T=\Span{Tv_{1},\dots,Tv_n}\Rightarrow\dim\range T=\dim\Span{Tv_{1},\dots,Tv_n}\leqslant n-1.$ Ctradic.\PfEnd
+%\SepLine
+
 \Anchor{10A3}\Anchor{3D4e19}\ProblemBnoor{10.A.3, \OR 4E 3.D.19}{
-	\TextB{Supp $V$ is finide and $T\in\Lm{V}$.\FontSmall\hfill\Sbra{See also in (3.A).}}
-	\TextB{Prove $\forall B_V\neq B_V',\;\Mt[\BigPar]{T,B_V}=\Mt[\BigPar]{T,B'_V}\Longrightarrow T=\lambda{I},\exists\,\lambda\in\Fbb.$}
-}Supp $\forall B_V\neq B_V',\;\Mt{T,B_V}=\Mt{T,B'_V}.$ If $T=0$, then done.\vspace{1pt}\parSol{}
-Supp $T\neq 0,$ and $v\in V\nonzero.$ Asum $\Par{v,Tv}$ is liney indep.\vspace{1pt}\parSol{}
-Extend $\Par{v,Tv}$ to $B_V=\Par{v,Tv,u_3,\dots,u_n}.$ Let $B=\Mt{T,B_V}.$\vspace{1pt}\parSol{}
-$\Rightarrow Tv=B_{1,1} v+B_{2,1}\Par{Tv}+B_{3,1}u_3+\dots+B_{n,1}u_n\Rightarrow B_{2,1}=1,B_{i,1}=0,\,\forall i\neq 2.$\vspace{1pt}\parSol{}
-By asum, $A=\Mt{T,B_V'}=B,\forall B_V'=\Par{v,w_2,\dots,w_{n}}$. Then $A_{2,1}=1,A_{i,1}=0,\forall i\neq 2.$\parSol{}
-$\Rightarrow Tv=w_2,$ which is not true if $w_2=u_3,\;w_3=Tv,\;w_j=u_j,\forall j\in\;\!\!\Bra{4,\dots,n}.$ Ctradic.\parSol{}
-Hence $\Par{v,Tv}$ is linely dep $\Rightarrow \forall v\in V,\exists\,\lambda_v\in\Fbb,Tv=\lambda_v v.$\parSol{}
-Now we show $\lambda_v$ is indep of $v$, that is, for all disti $v,w\in V\nonzero,\lambda_v=\lambda_w.$\parSol{}
-\!\!\!\!$\MathRightBrace{l}{
-	\Par{v,w}$ liney indep $\Rightarrow T\Par{v+w}=\lambda_{v+w}\Par{v+w}=\lambda_v v+\lambda_w w=Tv+Tw\\
-	\Par{v,w}$ linely dep, $w=c v$ $\Rightarrow Tw=\lambda_w w=\lambda_w cv=c\lambda_v v=T\Par{cv}
-}\Rightarrow T=\lambda I.$\PfEnd\vspace{10pt}\quad
-\Or Let $A=\Mt{T,B_V},$ where $B_V=\Par{u_1,\dots,u_m}$ is arb.\vspace{1pt}\par\quad
-Fix one $B_V=\Par{v_1,\dots,v_m}$ and then $\Par{v_1,\dots,\frac{\;1\;}{2}v_k,\dots,v_m}$ is also a bss for any given $k\in\;\!\!\Bra{1,\dots,m}.$\vspace{1pt}\par\quad
-Fix one $k.$ Now we have $T\!\Par{\frac{\;1\;}{2}v_k}=A_{1,k}v_1+\dots+A_{k,k}\Par{\frac{\;1\;}{2}v_k}+\dots+A_{m,k}v_m$\vspace{1pt}\par\quad
-$\Rightarrow Tv_k=2A_{1,k}v_1+\dots+A_{k,k}v_k+\dots+2A_{m,k}v_m=A_{1,k}v_1+\dots+A_{k,k}v_k+\dots+A_{m,k}v_m.$\vspace{1pt}\par\quad
-Then $A_{j,k}=2A_{j,k}\Rightarrow A_{j,k}=0$ for all $j\neq k.$ Thus $Tv_k=A_{k,k}v_k,\forall k\in\;\!\!\Bra{1,\dots,m}.$\vspace{1pt}\par\quad
-Now we show $A_{k,k}=A_{j,j}$ for all $j\neq k.$ Choose $j,k$ suth $j\neq k.$\vspace{1pt}\par\quad
+	\TextB{Supp $V$ is finide and $T\in\Lm{V}$.}
+	\TextB{Supp $A=\Mt{T}$ wrto any $B_V.$ \;Prove $T=\lambda{I},\exists\,\lambda\in\Fbb.$}
+}We show $\Par{v,Tv}$ liney dep by ctradic. Let $B_V=\Par{v,Tv,u_1,\dots,u_m},B_V'=\Par{2v,Tv,u_1,\dots,u_m}.$\parSol{}
+Then $Tv=1\cdot Tv=2\cdot Tv=T\Par{2v}\Rightarrow Tv=0.$ Ctradic. Thus $Tv=\lambda_v v.$ \;Simlr to (4E 3.A.11).\PfEnd\vspace{2pt}\quad
+%Supp $\forall B_V\neq B_V',\;\Mt{T,B_V}=\Mt{T,B'_V}.$ If $T=0$, then done.\vspace{1pt}\parSol{}
+%Supp $T\neq 0,$ and $v\in V\nonzero.$ Asum $\Par{v,Tv}$ is liney indep.\vspace{1pt}\parSol{}
+%Extend $\Par{v,Tv}$ to $B_V=\Par{v,Tv,u_3,\dots,u_n}.$ Let $B=\Mt{T,B_V}.$\vspace{1pt}\parSol{}
+%$\Rightarrow Tv=B_{1,1} v+B_{2,1}\Par{Tv}+B_{3,1}u_3+\dots+B_{n,1}u_n\Rightarrow B_{2,1}=1,B_{i,1}=0,\,\forall i\neq 2.$\vspace{1pt}\parSol{}
+%By asum, $A=\Mt{T,B_V'}=B,\forall B_V'=\Par{v,w_2,\dots,w_{n}}$. Then $A_{2,1}=1,A_{i,1}=0,\forall i\neq 2.$\parSol{}
+%$\Rightarrow Tv=w_2,$ which is not true if $w_2=u_3,\;w_3=Tv,\;w_j=u_j,\forall j\in\;\!\!\Bra{4,\dots,n}.$ Ctradic.\parSol{}
+%Hence $\Par{v,Tv}$ is linely dep $\Rightarrow \forall v\in V,\exists\,\lambda_v\in\Fbb,Tv=\lambda_v v.$ \;Simlr to (4E 3.A.11).\PfEnd\vspace{4pt}\quad
+\Or {\FontSmall Fix one $B_V=\Par{v_1,\dots,v_m}$ and then $\Par{v_1,\dots,\frac{\;1\;}{2}v_k,\dots,v_m}$ is also a bss for any given $k\in\;\!\!\Bra{1,\dots,m}.$}\par\quad
+{\FontSmall Fix one $k.$ Now \,$T\Par{\frac{\;1\;}{2}v_k}=A_{1,k}v_1+\dots+A_{k,k}\Par{\frac{\;1\;}{2}v_k}+\dots+A_{m,k}v_m$}\par\quad
+{\FontSmall$\Rightarrow Tv_k=2A_{1,k}v_1+\dots+A_{k,k}v_k+\dots+2A_{m,k}v_m=A_{1,k}v_1+\dots+A_{k,k}v_k+\dots+A_{m,k}v_m.$}\par\quad
+{\FontSmall Then $A_{j,k}=0$ for all $j\neq k.$ Thus each $Tv_k=A_{k,k}v_k.$} \;We show $A_{k,k}=A_{j,j}$ for all $j\neq k.$ Fix one such pair.\vspace{1pt}\par\quad
 Consider $B_V'=\Par{v\apostrophe{\hspace{-3pt}_1},\dots,v\apostrophe{\hspace{-3pt}_j},\dots,v\apostrophe{\hspace{-3pt}_k},\dots,v\apostrophe_{\hspace{-3pt}_m}},$ where $v\apostrophe{\hspace{-3pt}_j}=v_k,\,\,v\apostrophe{\hspace{-3pt}_k}=v_j$ and $v\apostrophe{\hspace{-3pt}_i}=v_i$ for all $i\in\;\!\!\Bra{1,\dots,m}\Backslash[\Big]\Bra{\,j,k}.$\vspace{1pt}\par\quad
 Now $T\Par{v\apostrophe{\hspace{-3pt}_k}}=A_{1,k}v\apostrophe{\hspace{-3pt}_1}+\dots+A_{k,k}v\apostrophe{\hspace{-3pt}_k}+\dots+A_{m,k}v\apostrophe{\hspace{-3pt}_m}=A_{k,k}v\apostrophe{\hspace{-3pt}_k}=A_{k,k}v_j,$ while $T\Par{v\apostrophe{\hspace{-3pt}_k}}=T\Par{v_j}=A_{j,j}v_j.$\PfEnd
 %\Or ??? \Sbra{ There must be another solution using theorems and facts given in (3.D). }\par
@@ -1371,56 +1377,11 @@ And (b*) $T$ is surj $\Longleftrightarrow\spn L=W\Longleftrightarrow\spn L_{\mM}
 \Blind{$T$ inje }$\xLongleftrightarrow{\text{(b)}}\Fbb^{n,1}=\Span[\BigBigPar]{{\Par{A^t}{_{\cdot,1}},\cdots,\Par{A^t}{_{\cdot,m}}}}\Longleftrightarrow\Fbb^{1,n}=\Span[\BigBigPar]{A_{1,\cdot},\cdots,A_{m,\cdot}}.$
 \SepLine
 
-%\ProblemN{\Anchor{3C14}{14}}{
-	%	\TextA{Prove matrix multi is associ.}
-	%	\TextA{\FontNorm Supp $A,B,C$ are matrices suth $\Par{AB}C$ makes sense, we prove $\Par{AB}C=A\Par{BC}.$}
-	%}Supp $A\in\Fbb^{m,n}$ and $B,C\in\Fbb^{n,\,p}.$ We show $LHS=\Sbra{\Par{AB}C}_{j,k}=\Sbra{A\Par{BC}}_{j,k}=RHS.$\parSol{}
-%$LHS=\BigPar{AB}{_{j,\cdot}}C_{\cdot,k}=\sum_{s=1}^n\BigPar{A_{j,s}B_{s,\cdot}}C_{\cdot,k}=\sum_{s=1}^n A_{j,s}\BigPar{B_{s,\cdot}C_{\cdot,k}}=\sum_{s=1}^n A_{j,s}\BigPar{BC}{_{s,k}}=RHS.$\PfEnd\parSol{\vspace{6pt}}
-%\Or Define $T,S,R$ suth $\Mt{T}=A,\Mt{S}=B,\Mt{R}=C.$\parSol{}
-%$\Par{AB}C=\Mt{T\Par{SR}}\xlongequal{\text{[3.9]}}\Mt{TSR}\xlongequal{\text{[3.9]}}\Mt{\Par{TS}R}=A\Par{BC}.$\parSol{}
-%\Or $\Par{TS}R=T\Par{SR}\Rightarrow\Mt{\Par{TS}R}=\Mt{T\Par{SR}}\Rightarrow \Par{AB}C=A\Par{BC}.$\PfEnd
-%\SepLine
 
 %\ProblemN{\Anchor{3C15}{15}}{
 	%	\TextA{Supp $A\in\Fbb^{n,n},j,k\in\;\!\!\Bra{1,\dots,n}$. Show $\BigPar{A^3}_{j,k}=\sum_{p=1}^n \sum_{r=1}^n A_{j,\,p}A_{p,r}A_{r,k}$.\vspace{6pt}}
 	%}\vspace{-6pt}\AlignEq{}{\BigPar{AAA}_{j,k} &= \BigPar{AA}_{j,\cdot}\hspace{1pt}A_{\cdot,k}=\textstyle\sum_{p=1}^n \BigPar{A_{j,\,p}A_{p,\cdot}}A_{\cdot,k}=\textstyle\sum_{p=1}^n \sum_{r=1}^n A_{j,\,p}A_{p,r}A_{r,k}.\hspace{60pt}\\
 	%	\text{\Or}\;\;\BigPar{AAA}_{j,k} &=\textstyle\sum_{r=1}^n\BigPar{AA}_{j,r}A_{r,k} =\textstyle\sum_{r=1}^n\XPar{\sum_{p=1}^n A_{j,\,p}A_{p,r}}\hspace{1pt}A_{r,k}\\&=\uline{\textstyle\sum_{r=1}^n\left[A_{j,1}\BigPar{A_{1,r}A_{r,k}}+\dots+A_{j,n}\BigPar{A_{n,r}A_{r,k}}\right]}\\&=\textstyle A_{j,1}\sum_{r=1}^n A_{1,r}A_{r,k}+\dots+A_{j,n}\textstyle\sum_{r=1}^n A_{n,r}A_{r,k}=\textstyle\sum_{p=1}^n \sum_{r=1}^n A_{j,\,p}A_{p,r}A_{r,k}.}\PfEnd[-25pt]
-%\SepLine
-
-%\Anchor{3C12}\ProblemB{
-	%	\TextB{Prove the commu does not hold in $\Fbb^{m,n}.$}
-	%}Supp $\dim V=n,\dim W=m$ and the commu holds in $\Fbb^{n,m}.$\parSol{}
-%$\forall T\in\Lm{V,W},S\in\Lm{W,V},\Mt{TS}=\Mt{T}\Mt{S}=\Mt{S}\Mt{T}=\Mt{ST}.$\parSol{}
-%Hence $ST=TS.$ Which in general does not hold.\PfEnd
-%\SepLine
-
-%\ProblemN{12}{
-	%	\TextA{Give an exa of 2-by-2 matrices $A$ and $B$ suth $AB\neq BA$.}\vspace{6pt}
-	%}$\begin{pmatrix} 1 & 0\\ 0 & -1\end{pmatrix}\begin{pmatrix}
-	%0 & 1\\ 1 & 0\end{pmatrix}=\begin{pmatrix} 0 & 1\\ -1 & 0\end{pmatrix};$\qquad
-%$\begin{pmatrix} 0 & 1\\ 1 & 0\end{pmatrix}\begin{pmatrix}
-	%1 & 0\\ 0 & -1\end{pmatrix}=\begin{pmatrix} 0 & -1\\ 1 & 0\end{pmatrix}.$\vspace{6pt}\par
-%\SepLine
-
-%\ProblemN{\Anchor{3C1}{1}}{
-%	\TextA{Supp $T\in\Lm{V,W}.$ Show for each pair of $B_V$ and $B_W,$}
-%	\TextA{$A=\Mt{T,B_V,B_W}$ has at least $n=\dim\range T$ non0 ent.}
-%}\par\quad
-%Let $U\oplus\null T=V;\;B_U=\Par{v_1,\dots,v_n},B_V=\Par{v_1,\dots,v_m}.$\par\quad
-%Each $Tv_k\neq 0\Longleftrightarrow A_{\cdot,k}\neq 0.$ Hence every such $A_{\cdot,k}$ has at least one non0 ent.\PfEnd\vspace{4pt}\par\quad
-%\Or We prove by ctradic. Supp $A$ has at most $\Par{n-1}$ non0 ent.\par\quad
-%Then by Pigeon Hole Principle, at least one of $A_{\cdot,1},\dots,A_{\cdot,n}$ equals $0$.\par\quad
-%Thus there are at most $\Par{n-1}$ non0 vecs in $Tv_{1},\dots,Tv_n.$\par\quad
-%又 $\range T=\Span{Tv_{1},\dots,Tv_n}\Rightarrow\dim\range T=\dim\Span{Tv_{1},\dots,Tv_n}\leqslant n-1.$ Ctradic.\PfEnd
-%\SepLine
-
-%\ProblemN{\Anchor{3C13}{13}}{
-%	\TextA{Prove the distr holds for matrix add and matrix multi. \large We prove the left distr.}
-%}Supp $A\in\Fbb^{m,n}$ and $B,C\in\Fbb^{n,\,p}.$\parSol{}
-%Note that ${\BigSbra{{A\BigPar{B+C}}}}{_{j,k}}=\sum_{r=1}^n A_{j,r}\BigPar{B+C}{_{r,k}}=\sum_{r=1}^n \BigPar{A_{j,r}B_{r,k}+A_{j,r}C_{r,k}}=\BigPar{AB+AC}{_{j,k}}.$\parSol{\vspace{6pt}}
-%\Or Define $T,S,R$ suth $\Mt{T}=A,\Mt{S}=B,\Mt{R}=C.$\parSol{}
-%$A\Par{B+C}=\Mt{T\Par{S+R}}\xlongequal{\text{[3.9]}}\Mt{TS+TR}=AB+AC.$\parSol{}
-%\Or $T\Par{S+R}=TS+TR\Rightarrow\Mt{T\Par{S+R}}=\Mt{TS+TR}\Rightarrow A\Par{B+C}=AB+AC.$\PfEnd
 %\SepLine
 
 \pagebreak
@@ -1438,7 +1399,7 @@ $\!\!\!\MathRightBrace{l}{$
 	Define $R_i\in\Lm{V_{\!i},U_i}$ by $R_i\Par{u_i}=\Par{0,\dots,0,u_i,0,\dots,0}\\ $
 	Define $S_i\in\Lm{U,V_{\!i}}$ by $S_i\Par{u_1,\dots,u_i,\dots,u_m}=u_i$
 	$}\Rightarrow\MathLeftBrace{l}{R_iS_j\mmid_{U_j}=\delta_{i,j}I_{U_j},\\S_iR_j=\delta_{i,j}I_{V_{\!j}}.}$\PfEnd\vspace{2pt}\parSol{}
-\AComm The key tool for solving (3.E.4,5).
+\AComm The key tool in solus of (3.E.4,5).
 \SepLine
 
 %\Anchor{3E4}\ProblemBnoor{{3.E.4}}{
@@ -1676,7 +1637,7 @@ Now $R_{l,k}E_{i,j}=\delta_{j,\,l}G_{i,k},\;\mRnt{k,\,l}\mEnt{j,\,i}=\delta_{l,j
 \hspace{-5pt}$\hText{$
 Becs $\mM\!:\Lm{V,W}\rightarrow\Fbb^{m,n}$ is iso.$\\$
 $E_{i,j}=\Mneg\mEnt{j,\,i}.$ \,By [2.42] and [3.61]:$\\[0pt]$
-{\tgsl\normalsize We can rewrite the matrix multi in (3.C).}$\\[20pt]\,}\hspace{0pt}\hText{B_{\Lm[\SmallPar]{V,W}}={}${\normalsize${\begin{pmatrix} \underset{\;,}{E_{1,1}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\underset{\!,}{E_{n,1}},\\[-2pt] \vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots\\[-2pt] \overset{\;,}{E_{1,m}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\overset{\!\!\!,}{E_{n,m}}\end{pmatrix}}$}$;\quad B_{\,\Fbb^{m,n}}={}${\normalsize$\envFontSmall[\scriptsize]{\begin{pmatrix} \underset{\;,}{\mE^{\Par{1,1}}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\underset{\!\!,}{\mE^{\Par{1,n}}},\\[-2pt] \vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots\\[-2pt]\overset{\;,}{\mE^{\Par{m,1}}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\overset{\!\!\!,}{\mE^{\Par{m,n}}}\end{pmatrix}}$}.$\\[2pt]\,\\\,}$\par\vspace{-30pt}
+{\tgsl\normalsize We can rewrite the matrix multi in (3.C).}$\\[20pt]\,}\hspace{0pt}\hText{B_{\!\Lm[\SmallPar]{V,\,W}}={}${\normalsize${\begin{pmatrix} \underset{\;,}{E_{1,1}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\underset{\!,}{E_{n,1}},\\[-2pt] \vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots\\[-2pt] \overset{\;,}{E_{1,m}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\overset{\!\!\!,}{E_{n,m}}\end{pmatrix}}$}$;\quad B_{\,\Fbb^{m,n}}={}${\normalsize$\envFontSmall[\scriptsize]{\begin{pmatrix} \underset{\;,}{\mE^{\Par{1,1}}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\underset{\!\!,}{\mE^{\Par{1,n}}},\\[-2pt] \vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots\\[-2pt]\overset{\;,}{\mE^{\Par{m,1}}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\overset{\!\!\!,}{\mE^{\Par{m,n}}}\end{pmatrix}}$}.$\\[2pt]\,\\\,}$\par\vspace{-30pt}
 \BulletPointX\Tips \,\,\,Let $B_{\range T}=\Par{Tv_1,\dots,Tv_p},B_V=\BigPar{v_1,\dots,v_p,\dots,v_n}.$ Let each $w_k=Tv_k.$\TextB{\vspace{2pt}}\IndentTips{}
 Extend to $B_W=\BigPar{w_1,\dots,w_p,\dots,w_m}.$ Then $T=E_{1,1}+\dots+E_{p,\,p},\;\Mt{T}=\mEnt{1,1}+\dots+\mEnt{p,\,p}.$
 \SepLine\pagebreak
@@ -2683,13 +2644,12 @@ Thus $\Par{p_{0,m+1},\dots,p_{m+1,m+1}}$ is liney indep and $S\Par{m+1}$ holds.\
 \Anchor{3D19}\ProblemBnoor{3.D.19}{
 	\TextA{Supp $T\in\Lm[\BigPar]{\PoRi}$ is inje. And $\deg Tp\leqslant\deg p$ for every non0 $p\in\PoRi$.}
 	\PrePa\TextA{Prove $T$ is surj. \quad {\large\tgnr(b)} Prove for every non0 $p$, $\deg Tp=\deg p$.}
-}(a) $T$ is inje $\Longleftrightarrow\forall n\in\Nbp,T\mmid_{\PoR[\SmallPar]{n}}\in\Lm[\BigPar]{\PoR{n}}$ is inje, so is inv $\Longleftrightarrow T$ is surj.\parSol{}
-(b) Using induc.\parSol{\Hb}
-(i) $\deg p=-\infty\geqslant\deg Tp\Longleftrightarrow p=0=Tp.$ And $\deg p=0\geqslant\deg Tp\Longleftrightarrow p=C\neq 0.$\parSol{\vspace{1pt}\Endi\Hb}
-(ii) Asum $\forall s\in\PoR{n},\deg s=\deg Ts.$ We show $\forall p\in\PoR{n+1},\deg Tp=\deg p$ by ctradic.\parSol{\Hii\Hb}
+}(a) $T$ is inje $\Longleftrightarrow\forall n\in\Nbp,T\mmid_{\PoR[\SmallPar]{n}}\in\Lm[\BigPar]{\PoR{n}}$ is inje, so is inv $\Longleftrightarrow T$ is surj.\vspace{2pt}\parSol{}
+(b) (i) $\deg p=-\infty\geqslant\deg Tp\Longleftrightarrow p=0=Tp.$ \;And $\deg p=0\geqslant\deg Tp\Longleftrightarrow p=C\neq 0.$\parSol{\vspace{1pt}\Endi\Hb}
+(ii) Asum $\forall s\in\PoR{n},\deg s=\deg Ts.$ We show $\forall p\in\PoR{n+1},\deg Tp=\deg p$ by ctradic.\vspace{1pt}\parSol{\Hii\Hb}
 Supp $\exists\,r\in\PoR{n+1},\;\deg Tr\leqslant n<n+1=\deg r.$ \,By (a), $\exists\,s\in\PoR{n},\;T\Par{s}=\Par{Tr}.$\parSol{\Hii\Hb}
 又 $T$ is inje $\Rightarrow s=r.$ While $\deg s=\deg Ts=\deg Tr<\deg r.$ Ctradic.\PfEnd
-\SepLine
+\SepLine\pagebreak
 
 \Anchor{3B26}\ProblemBnoor{3.B.26}{
 	\TextA{Supp $D\in\Lm[\BigPar]{\PoRi}$ and $\forall p,\Deg\BigPar{Dp}=\Par{\!\deg p}-1.$ \;Prove $D\in\PoRi$ is surj.\vspace{2pt}}

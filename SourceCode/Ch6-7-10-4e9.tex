@@ -712,28 +712,46 @@ Asum $\exists\,v\in V,\Ang{Tv,v}<0\Rightarrow\delta\:\!\Dvertsq{v}\leqslant\aXMi
 \SepLine
 \ChEnd
 
-\vfill{\normalsize 少了关于无限维内积空间及其算子的基本内容，LADR第七章学起来明显更快更平常，没有前半部分许多题目去掉有限维假设后的悬疑和激动时刻。\par\vspace{2pt}
-遗憾的是，由于微积分的知识门槛，我放弃了第10章B节最后一小部分和相应习题（这部分在4E中被删掉了，所以我可以找借口说它是3E中不完善的地方）。}\vspace{12pt}
+\vfill{\normalsize 少了关于无限维内积空间及其算子的基本内容，LADR第七章学起来明显更快更平常，没有前半部分许多题目去掉有限维假设后的悬疑和激动时刻。也许研究无限维内积空间有硬性的分析学知识门槛，所以这本书的性质不允许过多涉及这方面。同样遗憾的是，由于微积分的知识门槛，我放弃了第10章B节最后一小部分和相应习题（这部分在4E中被删掉了，所以我可以找借口说它是3E中不完善的地方）。}\vspace{12pt}
 
 \ChDecl{Ch10A}{10.A}{\quad{\ANote {\FontSmall $V$ denotes a finide non0 vecsp over $\Fbb.$ \qquad For (10.B), see [4E] Chapter 9.}}}%An Exe marked by $\blacksquare$ is true if infinide or partially finide.
 
 \vspace{4pt}
 
+\Anchor{10A12}\ProblemN{12}{
+	\TextA{Supp $V$ is inner prodsp, $P=P_{\!U},$ and $S\in\Lm{V}$ is posi. Prove $\Tr\Par{SP}\geqslant 0.$}
+}Let orthon $B_U=\Par{e_1,\dots,e_m},B_{U^\perp}=\Par{\,f_1,\dots,f_n}.$\parSol{}
+Becs $\Tr\Par{SP}=\sum\!\!\:\Ang{SPe_i,e_i}+\sum\!\!\:\Ang{SP\:\!f_j,\,f_j}=\sum\!\!\:\Ang{Se_i,e_i}\geqslant0.$\PfEnd
+\SepLine
+
 \Anchor{10A17}\ProblemN{17}{
 	\TextA{Supp $T\in\Lm{V}$ suth \:\!$\Tr\Par{ST}=0$ \,for all $S\in\Lm{V}.$ \,Prove $T=0.$}
-}Let $S=T^*\Rightarrow\Tr\Par{T^*T}=s_1^2+\dots+s_n^2=0.$ By (4E 7.E.1).\PfEnd\vspace{2pt}\parSol{}
+}Let $S=T^*\Rightarrow\Tr\Par{T^*T}=s_1^2+\dots+s_n^2=0.$ \;By (4E 7.E.1) \OR Exe (11).\PfEnd\vspace{2pt}\parSol{}
 \Or Asum $T\neq0\Rightarrow\exists$ non0 $v\in V$ suth $Tv_1\neq0.$ Extend $v=v_1$ to $B_V=\Par{v_1,\dots,v_n}.$\parSol{}
 Then $Tv_1=A_{1,1}v_1+\dots+A_{n,1}v_n\Rightarrow\exists\,A_{j,1}\neq0.$ Define $S\in\Lm{V}$ by each $Sv_k=\delta_{j,k}\:\!v_1.$\parSol{}
-Now $S=E_{j,1}\Rightarrow\Mt{ST}={\mEnt{1,j}\Mt{T}}\Longrightarrow0=\Tr\Par{ST}=A_{j,1}.$ Ctradic.\PfEnd
-\SepLine
+Now $S=E_{j,1}\Rightarrow\Mt{ST}={\mEnt{1,j}\Mt{T}}\Longrightarrow0=\Tr\Par{ST}=A_{j,1}.$ Ctradic.\PfEnd\vspace{2pt}\parSol{}
+\Or Asum $\exists\,Tv\neq0.$ Extend to $B_V=\Par{Tv,u_1,\dots,u_n}.$ Define $S\in\Lm{V}:Tv\mapsto v,\,u_i\mapsto 0.$\parSol{}
+Now $\Par{TS}\Par{Tv}=Tv,\Par{TS}\Par{u_i}=0\Rightarrow\Tr\Par{TS}=1.$ Ctradic.\PfEnd
+\SepLine\pagebreak
 
 \Anchor{10A4e10}\ProblemBnoor{4E 8.D.10}{
 	\TextB{Supp $\tau:\Lm{V}\rightarrow\Fbb,\tau\Par{I}=\dim V,$ and $\tau\Par{ST}=\tau\Par{TS}.$ Prove $\tau=\Tr.$}
 }$\tau\Par{E_{i,j}}=\tau\Par{E_{x,j}E_{i,x}}=\tau\Par{E_{i,x}E_{x,j}}=\delta_{i,j}\tau\Par{E_{x,x}}.$\vspace{1pt}\parSol{}
 又 $I=E_{1,1}+\dots+E_{n,n}\Rightarrow\dim V=n\tau\Par{E_{x,x}}.$ \;Hence $\tau\Par{E_{i,j}}=\delta_{i,j}.$\PfEnd
 \SepLine
-\ChEnd
-\pagebreak
+
+\Anchor{10A4e12}\ProblemBnoor{4E 8.D.12}{
+	\TextB{Supp $V,W$ are finide inner prodsps. Define $\Ang{\cdot,\cdot}$ on $\Lm{V,W}$ by $\Ang{S,T}=\Tr\Par{ST^*}.$\vspace{2pt}}
+	\TextB{Supp orthon $B_V=\Par{e_1,\dots,e_n},B_W=\Par{\,f_1,\dots,f_m}.$ Prove $\Ang{S,T}=\sum_{j=1}^m\sum_{k=1}^n\Mt{S}{_{j,k}}\overline{\Mt{T}{_{j,k}}}.$\vspace{3pt}}
+}Becs $\Mt{ST^*}{_{j,k}}=\Mt{S}{_{j,r}}\Mt{T^*}{_{r,k}}=\Mt{S}{_{j,r}}\overline{\Mt{T}{_{k,r}}}.$ Take $k=j.$\PfEnd\vspace{4pt}\parSol{}
+\Or Define $E_{k,j}\Par{e_x}=\delta_{k,x}\:f_j,\;R_{j,k}\Par{\,f_y}=\delta_{j,y}e_k,$ and $Q_{j,k}\Par{\,f_y}=\delta_{j,y}\:f_k.$ \;See \NOTEFOR [3.60].\vspace{2pt}\parSol{}
+%Supp $T=\sum_{j=1}^m\sum_{k=1}^nA_{j,k}E_{k,j}\in\Lm{V,W}\Rightarrow A=\Mt{T}$ wrto $B_V,B_W.$\vspace{2pt}\parSol{}
+Becs \,$E_{k,j}^*=R_{j,k},$ and $\Ang{E_{k,l},E_{i,j}}=\Tr\Par{E_{k,l}R_{j,i}}=\Tr\Par{\delta_{i,k}Q_{j,l}}=\delta_{i,k}\delta_{j,l}.$\vspace{2pt}\parSol{}
+%Hence $B_{\!\Lm[\SmallPar]{V,\,W}}=\Bra{E_{k,j}:1\leqslant k\leqslant n,\text{ and }1\leqslant j\leqslant m}$ is orthon.\vspace{3pt}\parSol{}
+Now $\BigAng{{\sum A_{j,k}E_{k,j}\;\!,\;\sum C_{x,y}E_{y,x}}}=\sum A_{j,k}\overline{C_{j,k}}$\PfEnd
+%=\Tr\BigPar{{\sum A_{j,k}E_{k,j}\:\sum \overline{C_{x,y}}R_{x,y}}}.
+%Becs $\sum A_{j,k}E_{k,j}\:\sum \Par{C^*}{_{y,x}}R_{x,y}=\sum\sum A_{j,k}\Par{C^*}{_{y,x}}\,\delta_{k,y}\,Q_{x,j}=\sum\sum A_{j,k}\Par{C^*}{_{k,x}}\,Q_{x,j}.$ Take $x=j.$\PfEnd
+\SepLine
 
 \ChDecl{Ch4e9}{[4E] 9}{\quad{\ANote {\FontSmall $V,W$ denote finide non0 vecsps over $\Fbb.$}}}%An Exe marked by $\blacksquare$ is true if infinide or partially finide.
 
