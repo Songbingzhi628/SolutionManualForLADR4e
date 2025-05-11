@@ -106,7 +106,7 @@ While $\BigAng{{\sum_{j\,\in\,P}c_jv_j,\,u}},\:\BigAng{{\sum_{k\,\in\,N}-c_kv_k,
 \Anchor{6B14}\ProblemN{14}{
 	\TextA{Supp $\Par{e_1,\dots,e_m}$ orthon, each $v_j\in V$ suth $\Dvert{e_j-v_j}<{}${\Large$\frac{\;1}{\sqrt{m}\;}$}. Show $\Par{v_1,\dots,v_m}$ liney indep.}
 }Let $a_1v_1+\dots+a_mv_m=0.$\vspace{3pt}\parSol{}
-$\sum_{j=1}^m\aMidsq{a_j}=\BigDvertsq{{\sum_{j=1}^ma_j\Par{e_j-v_j}}}\leqslant\BigSbra{{\sum_{j=1}^m}\aMid{a_j}\cdot\Dvert{e_j-v_j}}{^2}\leqslant\BigDvertsq{\Par{\aMid{a_j}}{_{j=1}^m}}\cdot\BigDvertsq{\BigPar{\Dvert{e_j-v_j}}{_{j=1}^m}}.$\PfEnd\vspace{6pt}
+$\sum_{j=1}^m\aMidsq{a_j}=\BigDvertsq{{\sum_{j=1}^ma_j\Par{e_j-v_j}}}\leqslant\BigSbra{{\sum_{j=1}^m\aMid{a_j}}\cdot\Dvert{e_j-v_j}}{^2}\leqslant\BigDvertsq{\Par{\aMid{a_j}}{_{j=1}^m}}\cdot\BigDvertsq{\BigPar{\Dvert{e_j-v_j}}{_{j=1}^m}}.$\PfEnd\vspace{6pt}
 %\AComm If each $\Dvert{e_j-v_j}=1\Big/\!\sqrt{m}$, then $\Par{v_1,\dots,v_m}$ might be liney dep even if $m\neq1.$\parCom
 \AExa Let $v_j=e_j-\Par{e_1+\dots+e_m}\Big/m\Rightarrow\Dvert{e_j-v_j}{^2}=1\big/m.$ \;Note that $v_1+\dots+v_m=0.$\PfEnd
 \SepLine
@@ -258,10 +258,25 @@ $\forall a\in\Fbb,\;\Dvert{w}\leqslant\Dvert{w+au},$ \Or $\Dvert{Pv}=\Dvert{P\Pa
 %{\IndentTipsN{3}}And by (6.B.2), $V=\Span{e_1,\dots,e_n}.$ \;\Or Becs $\forall v\in\Span{e_1,\dots,e_n}{^\perp},\Dvert{v}{^2}=0.$
 %\SepLine
 
-\ChEnd
-\vspace{8pt}
+\Anchor{6CT3}\ProblemBX{\TipsN{3}}{
+	\TextA{Supp $U,W$ finide subsps of $V.$ Prove $W^\perp\subseteq U^\perp\Rightarrow U\subseteq W.$}
+}$v\in U\Rightarrow\forall x\in W^\perp\subseteq U^\perp,\:\Ang{v,x}=0\Rightarrow v\in\Par{W^\perp}{^\perp}=W,$ by [6.51].\PfEnd
+\SepLine
 
-\vfill\ChDecl{Ch7A}{7.A}{\quad{\ANote {\FontSmall $V$ denotes a finide vecsp over $\Fbb.$}}}%An Exe marked by $\blacksquare$ is true if infinide or partially finide.
+\Anchor{6CT4}\ProblemBX{\TipsN{4}}{
+	\TextA{Supp $U,W$ subsps of $V.$ Prove $\BigPar{U+W}{^\perp}=U^\perp\cap W^\perp,\,\BigPar{U\cap W}{^\perp}=U^\perp+W^\perp.$}
+}(a) Supp $v\in V.$ Then $\forall u+w\in U+W,\Ang{u+w,v}=0\Longleftrightarrow\forall u\in U,w\in W,\Ang{u,v}=\Ang{u,w}=0.$\vspace{2pt}\parSol{}
+(b) $v_1\in U^\perp,v_2\in W^\perp\Rightarrow\forall x\in U\cap W,\Ang{v_1+v_2,x}=0.$ Thus $U^\perp+W^\perp\subseteq\BigPar{U\cap W}{^\perp}.$\vspace{1pt}\parSol{\Hb}
+\Or $U\cap W\subseteq U,W\Rightarrow\Par{U\cap W}{^\perp}\supseteq U^\perp+W^\perp.$\vspace{2pt}\parSol{\Hb}
+\!\Sbra[3pt]{{\tgsl Req Finide}} \;By (a), $\Dim\BigPar{U^\perp+W^\perp}=\dim V-\Dim\Par{U\cap W}.$\PfEnd\vspace{2pt}\parSol{}
+
+\SepLine
+
+\ChEnd
+%\vspace{8pt}
+\pagebreak
+
+\ChDecl{Ch7A}{7.A}{\quad{\ANote {\FontSmall $V$ denotes a finide vecsp over $\Fbb.$}}}%An Exe marked by $\blacksquare$ is true if infinide or partially finide.
 
 \vspace{6pt}
 
@@ -327,8 +342,6 @@ By (5.C.5). If $\Fbb=\Rbb,$ then apply to $T_{\!\Cbb}.$ Now every liney factor h
 
 \vspace{4pt}
 
-% TODO: Duality and Orthog Complements
-
 \Anchor{7B14}\ProblemN{14}{
 	\TextA{Supp $\Fbb=\Rbb,$ $T\in\Lm{V}.$ Prove $T$ diag $\Rightarrow$ self-adj wrto some $\Ang{\cdot,\cdot}{_V}.$}
 }Let eigvecs $B_V=\Par{e_1,\dots,e_n}$ be orthon wrto $\Ang{e_j,\:\!e_k}{_V}=\delta_{j,k}.$ \,Becs $\Mt{T}=\Mt{T}{^t}=\Mt{T^*}.$\PfEnd\vspace{2pt}
@@ -349,7 +362,7 @@ By (5.C.5). If $\Fbb=\Rbb,$ then apply to $T_{\!\Cbb}.$ Now every liney factor h
 }Supp $v$ is eigvec of $T$ corres $\lambda$ and of $T^*$ corres $\mu.$\parSol{}
 Then $\lambda\Dvertsq{v}=\Ang{Tv,v}=\Ang{v,T^*v}=\overline{\mu}\Dvertsq{v}\Rightarrow\lambda=\overline{\mu}.$\parSol{}
 Thus each $E\Par{\lambda,T}=E\Par{\overline{\lambda},T^*}$ invard $T,T^*\Rightarrow E\Par{\lambda,T}{^\perp}=E\Par{\overline{\lambda},T^*}{^\perp}$ invard $T^*,T.$\parSol{}
-Let $W=\bigcap_{\lambda\,\in\,\Fbb}E\Par{\lambda,T}{^\perp}$ invard $T,T^*.$ No eigvals of $T\mmid_W,T^*\mmid_W\Rightarrow W=\zeroSubs.$ By (3.F.22).\PfEnd\vspace{4pt}\parSol{}
+Let $W=\bigcap_{\lambda\,\in\,\Fbb}E\Par{\lambda,T}{^\perp}$ invard $T,T^*.$ By \Sbra{6.C \TIPSN{?}}, no eigvals of $T\mmid_W,T^*\mmid_W\Rightarrow W=\zeroSubs.$\PfEnd\vspace{4pt}\parSol{}
 \Or $\exists$ orthon $B_V=\Par{e_1,\dots,e_n}$ suth $\Mt{T}$ up-trig $\Rightarrow\overline{A}{^t}=\Mt{T^*}$ low-trig.\parSol{}
 (i) Now $Te_1=A_{1,1}e_1\Rightarrow\overline{A_{1,1}}e_1+\dots+\overline{A_{1,n}}e_n=T^*e_1\Rightarrow A_{1,2}=\dots=A_{1,n}=0.$\parSol{}
 (ii) Asum $\Par{A_{1,2}\;\cdots\;A_{1,n}}=\dots=\Par{A_{k-1,k}\;\cdots\;A_{k-1,n}}=0.$ 又 $A$ is up-trig.\vspace{1pt}\parSol{\Hii}
@@ -421,7 +434,7 @@ Hence $\sum_{k=1}^n\aMidsq{\lambda_k}\aMidsq{c_k}=\Dvertsq{Tu}=\sum_{k=1}^n\aMid
 	\TextA{Supp $\Ang{\cdot,\cdot}{_1},\Ang{\cdot,\cdot}{_2}$ are inner prods on $V.$ Prove $\exists$ inv posi $T\in\Lm{V},\;\Ang{u,v}{_2}=\Ang{Tu,v}{_1}.$}
 }Let $\Par{e_1,\dots,e_n},\Par{\,f_1,\dots,f_n}$ be orthon bses wrto $\Ang{\cdot,\cdot}{_2},\Ang{\cdot,\cdot}{_1}.$ Define $R\in\Lm{V}$ by $Re_k=f_k.$\parSol{}
 $\forall u=\sum_{i=1}^nx_i\,e_i,\:v=\sum_{i=1}y_i\,e_i,\;\Ang{u,v}{_2}=x_1\:\!\overline{y_1}+\dots+x_n\:\!\overline{y_n}=\Ang{Ru,Rv}{_1}=\Ang{R^*Ru,v}{_1}.$\PfEnd
-\SepLine\pagebreak
+\SepLine
 
 \Anchor{7CNSRI}\ProblemBX[]{\NoteForSmall{Square Root of Id}}{
 	Supp $T\in\Lm{\Fbb^2}$ and $T^2=I.$ Let $\Mt{T}={}${\small$\begin{pmatrix}a &\hspace{-6pt} b\\[-2pt] c &\hspace{-6pt} d\end{pmatrix}$} wrto std bss.\TextB{}
@@ -443,7 +456,7 @@ Let $\lambda_k=\Dvert{Tv_k}\Big/\Dvert{v_k}.$ Then $S^*:g_k\mapsto e_k\Rightarro
 \Or Let orthon $B_V=\Par{e_1,\dots,e_n}.$ Becs $\Ang{u+v,\,u-v}=\Dvertsq{u}-\Dvertsq{v}.$\parSol{}
 Now $0=\Ang{e_1+e_k,\,e_1-e_k}=\Ang{Te_1+Te_k,\,Te_1-Te_k}\Rightarrow$ each $\Dvert{Te_k}=\lambda.$ Supp $\lambda\neq0.$\parSol{}
 Let $S=\lambda^{-1}T.$ Becs $\Ang{e_j,\,e_k}=0\Rightarrow\Ang{Te_j,\,Te_k}=\Ang{\lambda Se_j,\,\lambda Se_k}=0\Longleftrightarrow\Ang{Se_j,\,Se_k}=0.$\PfEnd
-\SepLine
+\SepLine\pagebreak
 
 \Anchor{7D5}\ProblemN{D.5}{
 	\TextA{Supp $S\in\Lm{V}.$ Prove $S$ self-adj and unit $\Longleftrightarrow\exists\,P_{\!U},\,S=2P_{\!U}-I.$}
@@ -475,23 +488,21 @@ Then $S_{\Cbb}\Sbra{\lambda^{-1}\Par{u+\i\,v}}=u+\i\,v\in\bigodot{_{\!\Cbb}}$ wh
 \SepLine
 
 
-%\Anchor{7D15}\ProblemN{15}{
-%	\TextA{Supp $T\in\Lm{V}$ unit and $\Par{T-I}$ inv. Prove $\Par{T+I}\Par{T-I}{^{-1}}$ is skew.}
-%}$\Sbra{\Par{T+I}\Par{T-I}{^{-1}}}{^*}=\Par{T^{-1}+I}\Par{T^{-1}-I}{^{-1}}=-\Par{T+I}\Par{T-I}{^{-1}}$\parSol{}
-%$\Longleftrightarrow\Par{T^{-1}+I}\Par{T-I}=T-T^{-1}=-\Par{T^{-1}-T}=-\Par{T^{-1}-I}\Par{T+I}.$\PfEnd
-%\SepLine
-%
-%\Anchor{7D16}\ProblemN{16}{
-%	\TextA{Supp $\Fbb=\Cbb,T\in\Lm{V}$ self-adj. Prove $1$ not eigval of the unit $\Par{T+\i\:\!I}\Par{T-\i\:\!I}{^{-1}}.$}
-%}Supp $\Par{T+\i\:\!I}\Par{T-\i\:\!I}{^{-1}}v=v.$ Note that $\Par{T-\i I}{^{-1}}=q\Par{T}.$\parSol{}
-%Then $\Par{T-\i\:\!I}{^{-1}}\Par{T+\i\:\!I}v=v\Rightarrow\Par{T+\i\:\!I}v=\Par{T-\i\:\!I}v\Rightarrow v=0.$\parSol{}
-%Now $\Sbra{\Par{T+\i\:\!I}\Par{T-\i\:\!I}{^{-1}}}{^*}=\Par{T-\i\:\!I}\Par{T+\i\:\!I}{^{-1}}.$ And $\Par{T+\i\:\!I}\Par{T-\i\:\!I}=T^2+I.$\PfEnd
-%\SepLine
+\Anchor{7D15}\ProblemN{15}{
+	\TextA{Supp $T\in\Lm{V}$ unit and $\Par{T-I}$ inv. Prove $\Par{T+I}\Par{T-I}{^{-1}}$ is skew.}
+}$\Sbra{\Par{T+I}\Par{T-I}{^{-1}}}{^*}=\Par{T^{-1}+I}\Par{T^{-1}-I}{^{-1}}=-\Par{T+I}\Par{T-I}{^{-1}}$\parSol{}
+$\Longleftrightarrow\Par{T^{-1}+I}\Par{T-I}=T-T^{-1}=-\Par{T^{-1}-T}=-\Par{T^{-1}-I}\Par{T+I}.$\PfEnd
+\SepLine
 
+\Anchor{7D16}\ProblemN{16}{
+	\TextA{Supp $\Fbb=\Cbb,T\in\Lm{V}$ self-adj. Prove $1$ not eigval of the unit $\Par{T+\i\:\!I}\Par{T-\i\:\!I}{^{-1}}.$}
+}Supp $\Par{T+\i\:\!I}\Par{T-\i\:\!I}{^{-1}}v=v.$ Note that $\Par{T-\i I}{^{-1}}=q\Par{T}.$\parSol{}
+Then $\Par{T-\i\:\!I}{^{-1}}\Par{T+\i\:\!I}v=v\Rightarrow\Par{T+\i\:\!I}v=\Par{T-\i\:\!I}v\Rightarrow v=0.$\parSol{}
+Now $\Sbra{\Par{T+\i\:\!I}\Par{T-\i\:\!I}{^{-1}}}{^*}=\Par{T-\i\:\!I}\Par{T+\i\:\!I}{^{-1}}.$ And $\Par{T+\i\:\!I}\Par{T-\i\:\!I}=T^2+I.$\PfEnd
+\SepLine
 \ChEnd
-\pagebreak
 
-\ChDecl{Ch7E}{7.E [4E] \& 7.F [4E]}{\quad{\ANote {\FontSmall $V,W$ are finide {\tgbfxx non0} vecsps over $\Fbb.$}}}
+\vfill\ChDecl{Ch7E}{7.E [4E] \& 7.F [4E]}{\quad{\ANote {\FontSmall $V,W$ are finide {\tgbfxx non0} vecsps over $\Fbb.$}}}
 
 \vspace{6pt}
 
@@ -507,7 +518,7 @@ Then $S_{\Cbb}\Sbra{\lambda^{-1}\Par{u+\i\,v}}=u+\i\,v\in\bigodot{_{\!\Cbb}}$ wh
 }(a) $T=0\Longleftrightarrow T^*=0\Longleftrightarrow T^*T=0\Rightarrow$ all singvals are $0.$\parSol{}
 (b) all singvals are $0\Longleftrightarrow T^*T$ nilp. Becs $T^*T$ diag $\Rightarrow T^*T=0=T.$\PfEnd\vspace{2pt}\parSol{}
 \Or Supp $T$ has $N$ positive singvals. Now $N=0\Longleftrightarrow\dim\range T=0\Longleftrightarrow T=0.$\PfEnd
-\SepLine
+\SepLine\pagebreak
 
 \Anchor{7E4}\ProblemN{E.4}{
 	\TextA{Supp $T\in\Lm{V,W},$ and $s_1,s_n$ are the max and min of singvals.\vspace{1pt}}
@@ -732,17 +743,16 @@ Then $Tv_1=A_{1,1}v_1+\dots+A_{n,1}v_n\Rightarrow\exists\,A_{j,1}\neq0.$ Define 
 Now $S=E_{j,1}\Rightarrow\Mt{ST}={\mEnt{1,j}\Mt{T}}\Longrightarrow0=\Tr\Par{ST}=A_{j,1}.$ Ctradic.\PfEnd\vspace{2pt}\parSol{}
 \Or Asum $\exists\,Tv\neq0.$ Extend to $B_V=\Par{Tv,u_1,\dots,u_n}.$ Define $S\in\Lm{V}:Tv\mapsto v,\,u_i\mapsto 0.$\parSol{}
 Now $\Par{TS}\Par{Tv}=Tv,\Par{TS}\Par{u_i}=0\Rightarrow\Tr\Par{TS}=1.$ Ctradic.\PfEnd
-\SepLine\pagebreak
+\SepLine
 
 \Anchor{10A4e10}\ProblemBnoor{4E 8.D.10}{
 	\TextB{Supp $\tau:\Lm{V}\rightarrow\Fbb,\tau\Par{I}=\dim V,$ and $\tau\Par{ST}=\tau\Par{TS}.$ Prove $\tau=\Tr.$}
-}$\tau\Par{E_{i,j}}=\tau\Par{E_{x,j}E_{i,x}}=\tau\Par{E_{i,x}E_{x,j}}=\delta_{i,j}\tau\Par{E_{x,x}}.$\vspace{1pt}\parSol{}
-又 $I=E_{1,1}+\dots+E_{n,n}\Rightarrow\dim V=n\tau\Par{E_{x,x}}.$ \;Hence $\tau\Par{E_{i,j}}=\delta_{i,j}.$\PfEnd
+}$\tau\Par{E_{i,j}}=\tau\Par{E_{x,j}E_{i,x}}=\tau\Par{E_{i,x}E_{x,j}}=\delta_{i,j}\tau\Par{E_{x,x}}.$ \,又 $I=E_{1,1}+\dots+E_{n,n}\Rightarrow n=n\tau\Par{E_{x,x}}.$\PfEnd
 \SepLine
 
 \Anchor{10A4e12}\ProblemBnoor{4E 8.D.12}{
 	\TextB{Supp $V,W$ are finide inner prodsps. Define $\Ang{\cdot,\cdot}$ on $\Lm{V,W}$ by $\Ang{S,T}=\Tr\Par{ST^*}.$\vspace{2pt}}
-	\TextB{Supp orthon $B_V=\Par{e_1,\dots,e_n},B_W=\Par{\,f_1,\dots,f_m}.$ Prove $\Ang{S,T}=\sum_{j=1}^m\sum_{k=1}^n\Mt{S}{_{j,k}}\overline{\Mt{T}{_{j,k}}}.$\vspace{3pt}}
+	\TextB{Let orthon $B_V=\Par{e_1,\dots,e_n},B_W=\Par{\,f_1,\dots,f_m}.$ Prove $\Ang{S,T}=\sum_{j=1}^m\sum_{k=1}^n\Mt{S}{_{j,k}}\overline{\Mt{T}{_{j,k}}}.$\vspace{3pt}}
 }Becs $\Mt{ST^*}{_{j,k}}=\Mt{S}{_{j,r}}\Mt{T^*}{_{r,k}}=\Mt{S}{_{j,r}}\overline{\Mt{T}{_{k,r}}}.$ Take $k=j.$\PfEnd\vspace{4pt}\parSol{}
 \Or Define $E_{k,j}\Par{e_x}=\delta_{k,x}\:f_j,\;R_{j,k}\Par{\,f_y}=\delta_{j,y}e_k,$ and $Q_{j,k}\Par{\,f_y}=\delta_{j,y}\:f_k.$ \;See \NOTEFOR [3.60].\vspace{2pt}\parSol{}
 %Supp $T=\sum_{j=1}^m\sum_{k=1}^nA_{j,k}E_{k,j}\in\Lm{V,W}\Rightarrow A=\Mt{T}$ wrto $B_V,B_W.$\vspace{2pt}\parSol{}

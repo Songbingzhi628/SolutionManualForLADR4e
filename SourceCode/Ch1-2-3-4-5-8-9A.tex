@@ -2068,12 +2068,11 @@ Define $\varphi\in V\apostrophe$ by $\varphi\Par{u+\lambda s+y}=\lambda.$ Hence 
 \Anchor{3FN3.108}\AComm {\tgsc\large Another proof of \tgbfx[3.108]}: $T$ is surj $\Longleftrightarrow T\apostrophe$ is inje.\parCom
 (a) Supp $T\apostrophe$ is inje. \NOTICE that $\psi\neq 0\Longleftrightarrow T\apostrophe\Par{\psi}\neq 0\Longleftrightarrow\psi\not\in\Par{\range T}{^0}.$\parCom
 (b) $T$ is surj $\Rightarrow\Par{\range T}{^0}=\zeroSubs=\null T\apostrophe.$\PfEnd
-\SepLine
+\SepLine\pagebreak
 
 \Anchor{3FN3.102}\Anchor{3FN18}\Anchor{3F18}\BulletPointX\NoteForSmall{[3.102] and Exe (18)}\;\;For $U=\emptySet,\;U^0=\Bra{\varphi\in V\apostrophe:U\subseteq\null\varphi}=V\apostrophe.$ While $\zeroSubs{^0_V}=V\apostrophe.$\TextB{}
 Not a ctradic to Exe (21) becs $\emptySet$ is not a subsp. Now $U^0=V\apostrophe$ can be true with $U=\emptySet\neq\zeroSubs.$\vspace{-2pt}
 \SepLine
-\pagebreak
 
 \Anchor{3FT1}\BulletPointX\TipsN{1}\,\,\,Supp $\varphi_1,\dots,\varphi_m\in V\apostrophe.$ Denote $\Sbra{\null\varphi_a\cap\cdots\cap\null\varphi_b}$ by \,$\bigcap_a^b\null\varphi_I.$\TextB{}
 \IndentTipsN{1}Supp $\Omega$ is a subsp of $V\apostrophe.$ Denote $\Bra{v\in V:\varphi\Par{v}=0,\forall\varphi\in\Omega}$ by $C^0\,\Omega.$\TextB{\vspace{1pt}}
@@ -2094,11 +2093,10 @@ $\exists\,\varphi\in V\apostrophe,\null\varphi=U\oplus X\Rightarrow\varphi\in U^
 }$\Par{U\cup W}{^0}=\Bra{\varphi\in V\apostrophe:\varphi\Par{u}=\varphi\Par{w}=\varphi\Par{u+w}=0,\forall u\in U,w\in W}=\Par{U+W}{^0}.$\PfEnd
 \SepLine
 
-\Anchor{3F'2}\ProblemB{
-	\TextB{Supp $X=\Bra{x_1,\dots,x_m}\subsetneq V.$ Prove the promotion of $X$ is $\Span{x_1,\dots,x_m}.$}
-}$X^0=\BigBra{{\varphi\in V\apostrophe:\text{each }\varphi\Par{x_k}=0}}=\Span{x_1,\dots,x_m}{^0}.$\PfEnd
-\AComm The promotion of every finite subset $X$ of $V$ is the smallest subsp of $V$ containing $X.$
-\SepLine
+%\Anchor{3F'2}\ProblemB[]{
+%	Supp $X=\Bra{x_1,\dots,x_m}\subsetneq V.$ Then $X^0=\BigBra{{\varphi\in V\apostrophe:\text{each }\varphi\Par{x_k}=0}}=\Span{x_1,\dots,x_m}{^0}.$\TextB{}
+%}\AComm The promotion of every finite subset $X$ of $V$ is the smallest subsp of $V$ containing $X.$
+%\SepLine
 
 %\ProblemN{\Anchor{3F20}{20}}{
 %	\TextA{Supp $U,W$ are subsets of $V$. Prove $U\subseteq W\Rightarrow W^0\subseteq U^0.$}
@@ -2107,8 +2105,8 @@ $\exists\,\varphi\in V\apostrophe,\null\varphi=U\oplus X\Rightarrow\varphi\in U^
 
 \ProblemN{\Anchor{3F21}{21}}{
 	\TextA{Supp $U,W$ are subsps of $V$. Prove $W^0\subseteq U^0\Rightarrow U\subseteq W.$}
-}$\varphi\in W^0\Longleftrightarrow{}$\uline{$\null\varphi\supseteq W\Rightarrow\null\varphi\supseteq U$}${}\Longleftrightarrow\varphi\in U^0.$ \,Choose $\null\varphi=W.$\PfEnd\vspace{2pt}\parSol{}
-\Or By Exe (25), $v\in U\Rightarrow\forall\varphi\in W^0\subseteq U^0,\varphi\Par{v}=0\Rightarrow v\in W.$\PfEnd\vspace{4pt}
+}{\FontSmall$\varphi\in W^0\Longleftrightarrow{}$\uline{$\null\varphi\supseteq W\Rightarrow\null\varphi\supseteq U$}${}\Longleftrightarrow\varphi\in U^0.$} {\FontSmall \uline{Wrong} becs generally $\nexists\,\varphi\in V\apostrophe$ with $\null\varphi=W.$}\vspace{2pt}\parSol{}
+$v\in U\Rightarrow\forall\varphi\in W^0\subseteq U^0,\,\varphi\Par{v}=0\Rightarrow v\in W,$ by Exe (25).\PfEnd\vspace{4pt}
 \AComm (1) If $U$ is merely a subset and $W$ is a subsp. Promote $U$ as $X,$ let $W=Y.$\parCom
 \Blind{(1)} Then $Y^0=W^0\subseteq U^0=X^0\Rightarrow Y=W\supseteq X\supseteq U.$ Still true.\parCom
 (2) If $W$ is merely a subset and $U$ is a subsp. Promote $W$ as $Y,$ let $U=X.$ For exa,\parCom
@@ -2146,6 +2144,7 @@ Surj: $\varPhi\in\Par{V\XSlash U}\apostrophe\Rightarrow\forall u\in U,\varPhi\Pa
 %}Define $\chi:\Par{V_{\!1}\times\dots\times V_{\!m}}\apostrophe\rightarrow \dualVn{1}\times\dots\times \dualVm$ by $\chi\Par{T}=\Par{T\circ R_1,\dots,T\circ R_m}=\Par{R\apostrophe_1\Par{T},\dots,R\apostrophe_m\Par{T}}.$\parSol{}
 %Define the $\chi^{-1}$ by $\chi^{-1}\Par{T_{\!1},\dots,T_{\!m}}=T_{\!1}S_1+\dots+T_{\!m}S_m=S\apostrophe_1\Par{T_{\!1}}+\dots+S\apostrophe_m\Par{T_{\!m}}.$\PfEnd
 %\SepLine
+\pagebreak
 
 \ProblemN{\Anchor{3F23}{23}}{
 	\TextA{Supp $U$ and $W$ are subsps of $V$. Prove $\BigPar{U\cap W}{^0}=U^0+W^0$.}
@@ -2156,7 +2155,7 @@ Surj: $\varPhi\in\Par{V\XSlash U}\apostrophe\Rightarrow\forall u\in U,\varPhi\Pa
 }\;\;\hMath{l}{\left|\;}{\right.}{$
 	\!\Or\;$U\cap W\subseteq U\Rightarrow\BigPar{U\cap W}{^0}\supseteq U^0\\$
 	\!\Blind{\Or\;}$U\cap W\subseteq W\Rightarrow\BigPar{U\cap W}{^0}\supseteq W^0}$\vspace{6pt}\par\quad
-(b) \!\Sbra[3pt]{{\tgsl Only in Finide}} \;By Exe (22), $\Dim\BigPar{U^0+W^0}=\dim V-\Dim\Par{U\cap W}.$\PfEnd\vspace{4pt}\quad\Hb
+(b) \!\Sbra[3pt]{{\tgsl Req Finide}} \;By Exe (22), $\Dim\BigPar{U^0+W^0}=\dim V-\Dim\Par{U\cap W}.$\PfEnd\vspace{4pt}\quad\Hb
 %\dim U^0+\dim W^0-\Dim\BigPar{U^0\cap W^0}$\par\vspace{0pt}\quad\Hb
 %$=2\dim V-\dim U-\dim W-\BigPar{\!\dim V-\Dim\Par{U+W}}=
 \Or Let $I=U\cap W.$ We show $\Par{U\cap W}{^0}\subseteq U^0+W^0.$\par\quad\Hb
@@ -2186,7 +2185,7 @@ Thus $\Par{\Lambda_2\circ\chi\apostrophe\circ\xi\circ\Lambda_1}$ is the surj $\L
 	\TextB{$V=U\oplus W\Longleftrightarrow V\apostrophe=U^0\oplus W^0.$\vspace{-4pt}}
 }\SepLine
 
-\Anchor{3F'3}\ProblemB{
+\Anchor{3F'2}\ProblemB{
 	\TextB{Supp $V=U\oplus W$. Define $\iota:V\rightarrow U$ by $\iota\Par{u+w}=u.$ Thus $\iota\apostrophe\in\Lm{U\apostrophe,V\apostrophe}.$\vspace{2pt}}
 	\PrePa\TextB{Show $\null \iota\apostrophe=\zeroSubs$\hspace{1pt}$:${\tgnr\FontNorm\;\;$\null\iota\apostrophe=\Par{\range\iota}{^0_U}=U_U^0=\zeroSubs.$\;\Or $\iota\apostrophe\Par{\psi}=\psi\circ\iota=0\Longleftrightarrow U\subseteq\null\psi.$}\vspace{2pt}}
 	\PrePb\TextB{Prove $\range\iota\apostrophe=W_V^0$\hspace{1pt}$:${\tgnr\FontNorm\;\;$\range\iota\apostrophe=\BigPar{\null\iota}{^0_V}=W_V^0.$ \:\:Now $\tilde{\iota\apostrophe}$ is iso from $U\apostrophe\XSlash{\envFontDefault\zeroSubs}$ onto $W^0.$}\vspace{0pt}}
@@ -2194,7 +2193,7 @@ Thus $\Par{\Lambda_2\circ\chi\apostrophe\circ\xi\circ\Lambda_1}$ is the surj $\L
 \Blind{\Or}Supp $\varphi\in W^0.$ Becs $\null\iota=W\subseteq\null\varphi.$ By \Sbra{3.B \TIPSN{3}}, $\varphi=\varphi\circ\iota=\iota\apostrophe\Par{\varphi}.$\PfEnd
 \SepLine
 
-\Anchor{3F'4}\ProblemB{
+\Anchor{3F'3}\ProblemB{
 	\TextB{Supp $V=U\oplus W.$ Prove $U^0=\Bra{\varphi\in V\apostrophe:\varphi=\varphi\circ\iota},$ \FontNorm where $\iota\in\Lm{V,W}:u_v+w_v\rightarrow w_v$.}
 }$\varphi\in U^0\Longleftrightarrow U\subseteq\null\varphi\Longleftrightarrow\varphi=\varphi\circ\iota,$ by \Sbra{3.B \TIPSN{3}}.\PfEnd\vspace{3pt}
 \Anchor{3FNdual}\ANote The notat $W_V\upapostrophe=\Bra{\varphi\in V\apostrophe:\varphi=\varphi\circ\iota}=U^0$ is not well-defined \Sbra{without a bss}.\parNot
@@ -2261,7 +2260,7 @@ Let $\Omega=\Bra[\envFontA]{\varphi\in\Span{\varphi_{\alpha_1},\dots,\varphi_{\a
 \ACoro Supp $V$ is finide. For every subsp $\Omega$ of $V\apostrophe,\;\exists\,!\,$subsp $U$ of $V$ suth $\Omega=U^0.$\vspace{-2pt}\par
 \SepLine\pagebreak
 
-\Anchor{3F'5}\ProblemB{
+\Anchor{3F'4}\ProblemB{
 	\TextB{Supp $\Span{\varphi_1,\dots,\varphi_m}\subseteq V\apostrophe.$ Let each $U_k\oplus\null\varphi_k=V.$}
 	\TextB{Prove or give a countexa\hspace{1pt}$:$ $\Par{U_1+\dots+U_m}\oplus\BigPar{\null\varphi_1\cap\cdots\cap\null\varphi_m}=V.$}
 }Let $V=\Rbb^2.$ Define $\varphi_1=\varphi_2:\Par{x,y}\mapsto x.$ Let $B_{U_1}=\Par{e_1},B_{U_2}=\Par{e_1+e_2}\Rightarrow U_1+U_2=V.$\parSol{}
