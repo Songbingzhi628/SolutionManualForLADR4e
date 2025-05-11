@@ -275,7 +275,7 @@ ${}^\neg Q\Rightarrow{}^\neg P:$ scalar multi $\Rightarrow$ if $av+bw=0,$ then $
 
 \ProblemN{\Anchor{2A10}{10}}{
 	\TextA{Supp $\Par{v_1,\dots,v_m}$ is liney indep in $V$ and $w\in V$.}
-	\TextA{Prove if $\BigPar{v_1+w,\dots,v_m+w}$ is linely dep, then $w\in\Span{v_1,\dots,v_m}$.}
+	\TextA{Prove if $\BigPar{v_1+w,\dots,v_m+w}$ is liney dep, then $w\in\Span{v_1,\dots,v_m}$.}
 }\par\quad
 Note that $a_1\Par{v_1+w}+\dots+a_m\Par{v_m+w}=0\Rightarrow a_1 v_1+\dots+a_m v_m=-\Par{a_1+\dots+a_m}w.$\par\quad
 Then $a_1+\dots+a_m\neq 0$, for if not, $a_1 v_1+\dots+a_m v_m=0$ while $a_i\neq 0$ for some $i$, ctradic.\par\quad
@@ -313,7 +313,7 @@ ${}^\neg P\Rightarrow{}^\neg Q:\;$ Supp $V$ is finide and $V=\Span{w_1 , ..., w_
 Supp $\Par{p_0,p_1,\dots,p_m}$ is liney indep. Define $p\in\PoF{m}$ by $p\Par{z}=z.$\par\quad
 \NOTICE that $\forall a_i\in\Fbb,z\neq a_0 p_0\Par{z}+\dots+a_m p_m\Par{z},$ for if not, let $z=2.$ Thus $z\not\in\Span{p_0,p_1,\dots,p_m}$.\par\quad
 Then $\Span{p_0,p_1,\dots,p_m}\subsetneq\PoF{m}$ while the list $\Par{p_0,p_1,\dots,p_m}$ has len $\Par{m+1}$.\par\quad
-Hence $\Par{p_0,p_1,\dots,p_m}$ is linely dep. For if not, then becs $\Par{1,z,\dots,z^m}$ of len $\Par{m+1}$ spans $\PoF{m},$\par\quad
+Hence $\Par{p_0,p_1,\dots,p_m}$ is liney dep. For if not, then becs $\Par{1,z,\dots,z^m}$ of len $\Par{m+1}$ spans $\PoF{m},$\par\quad
 by the steps in [2.23] trivially, $\Par{p_0,p_1,\dots,p_m}$ of len $\Par{m+1}$ spans $\PoF{m}.$ Ctradic.\PfEnd\vspace{6pt}\par\quad
 \Or Becs $\Par{1,z,\dots,z^m}$ of len $\Par{m+1}$ spans $\PoF{m}.$ Then $\Par{p_0,p_1,\dots,p_m,z}$ of len $\Par{m+2}$ is liney dep.\par\quad
 As shown above,  $z\not\in\Span{p_0,p_1,\dots,p_m}.$ And hence by [2.21](a), $\Par{p_0,p_1,\dots,p_m}$ is liney dep.\PfEnd
@@ -706,7 +706,7 @@ Define each $\:\!f\Par{v_k}=a_k$ and $f\Par{x}=0$ for $x\not\in\;\!\!\Bra{v_1,\d
 %\SepLine
 
 \ProblemN{\Anchor{3A13}{13}}{
-	\TextA{Supp $\Par{v_1,\dots,v_m}$ is linely dep in $V$ and $W\neq\zeroSubs$.}
+	\TextA{Supp $\Par{v_1,\dots,v_m}$ is liney dep in $V$ and $W\neq\zeroSubs$.}
 	\TextA{Prove $\exists\,w_1,\dots,w_m\in W,\not\exists\,T\in\Lm{V,W}$ suth $Tv_k=w_k,\forall k = 1,\dots,m$.}
 }\par\quad
 We prove by ctradic. By liney dep lemma, $\exists\,j\in\;\!\!\Bra{1,\dots,m},v_j\in\Span{v_1,\dots,v_{j-1}}$.\par\quad
@@ -724,7 +724,7 @@ And \,$0=a_j w_j$ while $a_j\neq 0$ and $w_j\neq 0.$ Ctradic.\PfEnd\vspace{4pt}\
 	\TextA{Supp $V$ is finide, $T\in\Lm{V}$ is suth $\forall S\in\Lm{V},ST=TS$. Prove $\exists\,\lambda\in\Fbb,T=\lambda I$.}
 }Asum $\exists\,v\in V,\Par{v,Tv}$ is liney indep. Let $B_V=\Par{v,Tv,u_1,\dots,u_n}$.\parSol{}
 Define $S\in\Lm{V}$ by $S\Par{av+bTv+c_1 u_1+\dots+c_n u_n}=bv\Rightarrow S\Par{Tv}=v=T\Par{Sv}=0.$\parSol{}
-Asum $V\neq\zeroSubs$ and $\forall v\in V,\Par{v,Tv}$ is linely dep, then $\exists\,\lambda_v\in\Fbb,Tv=\lambda_v v.$\parSol{}
+Asum $V\neq\zeroSubs$ and $\forall v\in V,\Par{v,Tv}$ is liney dep, then $\exists\,\lambda_v\in\Fbb,Tv=\lambda_v v.$\parSol{}
 To prove $\lambda_v$ is indep of $v$, we discuss in two cases:\vspace{2pt}\parSol{}
 \!\!\!$\MathRightBrace{l}{$($-$) If $\Par{v,w}$ is liney indep, $\lambda_{v+w}\Par{v+w}=T\Par{v+w}=Tv+Tw=\lambda_v v+\lambda_w w\\$($=$) Othws, supp $w=cv$, $\lambda_w w=Tw=cTv=c\lambda_v v=\lambda_v w\Rightarrow\Par{\lambda_w-\lambda_v}w}\Rightarrow \lambda_w=\lambda_v.$\PfEnd\vspace{12pt}\quad
 \Or \;\envFontLarge{\Large\vspace{4pt}Let $B_V=\Par{v_1,\dots,v_m}.$ Define {\Large$\varphi\in\Lm{V,\Fbb}$} by $\varphi\Par{v_1}=\cdots=\varphi\Par{v_m}=1.$}\par\quad
@@ -1262,21 +1262,21 @@ Thus (a) $\dim\row A=r\leqslant c=\dim\col A,$ and (b) $\dim\col A=c\leqslant r=
 	\TextB{Supp $A\in\Fbb^{m,n}\nonzero.$ Prove $\rank A=1\Rightarrow\exists\,c_j,d_k\in\Fbb,$ each $A_{j,k}=c_j\cdot d_k.$\vspace{6pt}}
 }Let $c_j=\Frac{A_{j,1}}{A_{1,1}}=\Frac{A_{j,2}}{A_{1,2}}=\dots=\Frac{A_{j,n}}{A_{1,n}},\;\;d_k'=\Frac{A_{1,k}}{A_{1,1}}=\Frac{A_{2,k}}{A_{2,1}}=\dots=\Frac{A_{m,k}}{A_{m,1}}.$\vspace{4pt}\parSol{}
 {$\Rightarrow A_{j,k}=d_k' A_{j,1}=c_j A_{1,k}=c_j d_k' A_{1,1}=c_j d_k,$ where $d_k=d_k' A_{1,1}.$}\quad\Or Using CR Factoriz, immed.\PfEnd
-\SepLine\pagebreak
+\SepLine
 
 \ProblemN{\Anchor{3C5}{5}}{
 	\TextA{Supp $B_W=\Par{w_1,\dots,w_n}$ and $V$ is finide. Supp $T\in\Lm{V,W}$.\vspace{2pt}}
 	\TextA{Prove $\exists\,B_V=\Par{v_1,\dots,v_m},\;\Mt[\BigPar]{T,B_V,B_W}{_{1,\cdot}}=\normalsize\begin{pmatrix}0&\cdots&0\end{pmatrix}$ or $\normalsize\begin{pmatrix}1&0&\cdots&0\end{pmatrix}$.}
 }\par\quad
-Let $\Par{u_1,\dots,u_n}$ be a bss of $V$. Denote $\Mt[\BigPar]{T,\Par{u_1,\dots,u_n},B_W}$ by $A.$\par\quad
+Let $\Par{u_1,\dots,u_n}$ be a bss of $V$. Let $A=\Mt[\BigPar]{T,\Par{u_1,\dots,u_n},B_W}.$\par\quad
 If $A_{1,\cdot}=0,$ then $B_V=\Par{u_1,\dots,u_n}$ and done. Othws, supp $A_{1,k}\neq 0.$\par\quad
 Let $v_1=\Frac{u_k}{A_{1,k}}\Rightarrow Tv_1=1w_1+\Frac{A_{2,k}}{A_{1,k}}w_2+\dots+\Frac{A_{n,k}}{A_{1,k}}w_n.$\;$\MathLeftMid{l}{$
 	\!\!Let $v_{j+1}=u_{j}-A_{1,j}v_1$ for each $j\in\;\!\!\Bra{1,\dots,k-1}.\\$
 	\!\!Let $v_i=u_i-A_{1,i} v_1$ for $i\in\;\!\!\Bra{k+1,\dots,n}.}$\vspace{4pt}\par\quad
-\NOTICE that $Tu_i=A_{1,i}w_1+\dots+A_{n,i}w_n.$ 又 Each $u_i\in\Span{v_1,\dots,v_n}=V.$ Let $B_V=\Par{v_1,\dots,v_n}.$\PfEnd\vspace{4pt}\quad
-\Or Using Exe (4). Let $B_{W\apostrophe}$ be the $B_V.$ Now $\exists\,B_{V\apostrophe}$ suth $\Mt{T\apostrophe,B_{W\apostrophe}\,,B_{V\apostrophe}}{_{\cdot,1}}={\small\begin{pmatrix}1&0&\cdots&0\end{pmatrix}}{^t}$ or ${\small\begin{pmatrix}0&\cdots&0\end{pmatrix}}{^t}.$\par\quad
+\NOTICE that $Tu_i=A_{1,i}w_1+\dots+A_{n,i}w_n.$ 又 Each $u_i\in\Span{v_1,\dots,v_n}=V.$ Let $B_V=\Par{v_1,\dots,v_n}.$\PfEnd\vspace{6pt}\quad
+\Or Using Exe (4). Let $B_{W\apostrophe}$ be the $B_V.$ Now $\exists\,B_{V\apostrophe},\,\Mt{T\apostrophe,B_{W\apostrophe}\,,B_{V\apostrophe}}{_{\cdot,1}}={\small\begin{pmatrix}1&0&\cdots&0\end{pmatrix}}{^t}$ or ${\small\begin{pmatrix}0&\cdots&0\end{pmatrix}}{^t}.$\par\quad
 Which is equiv to $\exists\,B_V$ \Sbra{Using (3.F.31)} suth $\Mt{T,B_V,B_W}{_{1,\cdot}}={\small\begin{pmatrix}1&0&\cdots&0\end{pmatrix}}$ or ${\small\begin{pmatrix}0&\cdots&0\end{pmatrix}}.$\PfEnd
-\SepLine
+\SepLine\pagebreak
 
 \ProblemN{\Anchor{3C6}{6}}{
 	\TextA{Supp $V,W$ are finide and $T\in\Lm{V,W}.$ Supp $\dim\range T=1.$}
@@ -1311,7 +1311,7 @@ Then $Tv=1\cdot Tv=2\cdot Tv=T\Par{2v}\Rightarrow Tv=0.$ Ctradic. Thus $Tv=\lamb
 %$\Rightarrow Tv=B_{1,1} v+B_{2,1}\Par{Tv}+B_{3,1}u_3+\dots+B_{n,1}u_n\Rightarrow B_{2,1}=1,B_{i,1}=0,\,\forall i\neq 2.$\vspace{1pt}\parSol{}
 %By asum, $A=\Mt{T,B_V'}=B,\forall B_V'=\Par{v,w_2,\dots,w_{n}}$. Then $A_{2,1}=1,A_{i,1}=0,\forall i\neq 2.$\parSol{}
 %$\Rightarrow Tv=w_2,$ which is not true if $w_2=u_3,\;w_3=Tv,\;w_j=u_j,\forall j\in\;\!\!\Bra{4,\dots,n}.$ Ctradic.\parSol{}
-%Hence $\Par{v,Tv}$ is linely dep $\Rightarrow \forall v\in V,\exists\,\lambda_v\in\Fbb,Tv=\lambda_v v.$ \;Simlr to (4E 3.A.11).\PfEnd\vspace{4pt}\quad
+%Hence $\Par{v,Tv}$ is liney dep $\Rightarrow \forall v\in V,\exists\,\lambda_v\in\Fbb,Tv=\lambda_v v.$ \;Simlr to (4E 3.A.11).\PfEnd\vspace{4pt}\quad
 \Or {\FontSmall Fix one $B_V=\Par{v_1,\dots,v_m}$ and then $\Par{v_1,\dots,\frac{\;1\;}{2}v_k,\dots,v_m}$ is also a bss for any given $k\in\;\!\!\Bra{1,\dots,m}.$}\par\quad
 {\FontSmall Fix one $k.$ Now \,$T\Par{\frac{\;1\;}{2}v_k}=A_{1,k}v_1+\dots+A_{k,k}\Par{\frac{\;1\;}{2}v_k}+\dots+A_{m,k}v_m$}\par\quad
 {\FontSmall$\Rightarrow Tv_k=2A_{1,k}v_1+\dots+A_{k,k}v_k+\dots+2A_{m,k}v_m=A_{1,k}v_1+\dots+A_{k,k}v_k+\dots+A_{m,k}v_m.$}\par\quad
@@ -1322,7 +1322,7 @@ Now $T\Par{v\apostrophe{\hspace{-3pt}_k}}=A_{1,k}v\apostrophe{\hspace{-3pt}_1}+\
 \SepLine
 
 \Anchor{3CT1}\ProblemBX{\TipsN{1}}{
-	\TextA{Supp $p$ is a poly of $\,n\,$ variables in $\Fbb.$ Prove $\Mt[\BigPar]{p\Par{T_{\!1},\dots,T_{\!n}}}=p\BigPar{\Mt{T_{\!1}},\dots,\Mt{T_{\!n}}}.$}
+	\TextA{Supp $p\in\PoFx{\,}{\Fbb^n}.$ Prove $\Mt[\BigPar]{p\Par{T_{\!1},\dots,T_{\!n}}}=p\BigPar{\Mt{T_{\!1}},\dots,\Mt{T_{\!n}}}.$}
 	\TextA{\FontNorm Where the liney maps $T_{\!1},\dots,T_{\!n}$ are suth $p\Par{T_{\!1},\dots,T_{\!n}}$ makes sense. \tgnr See [5.16,17,20].}
 }Supp the poly $p$ is defined by $p\Par{x_1,\dots,x_n}=\sum_{k_1,\dots,k_n}\!\!\alpha_{k_1,\dots,k_n}\prod_{i=1}^n x_i^{k_i}.$\parSol{\vspace{4pt}}
 Note that $\Mt{T^x S^y}=\Mt{T}{^x}\Mt{S}{^y};\;\Mt{T^x+S^y}=\Mt{T}{^x}+\Mt{S}{^y}.$\parSol{\vspace{4pt}}
@@ -1615,32 +1615,40 @@ Thus $S$ inje $\Longleftrightarrow\Mt{S}$ inje, wrto any bses. Simlr for surj an
 	\ANote If we define $\Mt{v}=\Par{c_1\:\:\cdots\:\:c_n}.$Then [3,64]: $\Mt{T}{_{k,\cdot}}=\Mt{v_k}\Mt{T}=\Mt{Tv_k}.$\TextB{}
 	\IndentNote Note that $A=\Mt[\BigPar]{T,\Par{v_1,\dots,v_n},\Par{w_1,\dots,w_m}}\in\Fbb^{n,m},$ and each $Tv_k=A_{k,1}w_1+\dots+A_{k,m}w_m.$\TextB{}
 	\IndentNote [3.65]: $\Mt{Tv}=c_1\Mt{Tv_1}+\dots+c_n\Mt{Tv_n}=c_1\Mt{T}{_{1,\cdot}}+\dots+c_n\Mt{T}{_{n,\cdot}}=\Mt{v}{\Mt{T}}.$\TextB{}
+	\IndentNote [3.41]: $C=\Mt[\BigPar]{T,\Par{u_1,\dots,u_p},\Par{v_1,\dots,v_n}}\in\Fbb^{p,n},\,A=\Mt[\BigPar]{S,\Par{v_1,\dots,v_n},\Par{w_1,\dots,w_m}}\in\Fbb^{n,m}.$\TextB{}
+	\IndentNote\Blind{[3.41]:} $\sum_{j=1}^m\!\Par{AC}{_{k,j}}w_j=STu_k=\sum_{j=1}^m\!\BigPar{{\sum_{r=1}^nC_{k,r}A_{r,j}}}w_j\Rightarrow\Par{AC}{_{k,j}}=\sum_{r=1}^nC_{k,r}A_{r,j}.$\vspace{4pt}\TextB{}
 	\IndentNote Exactly in trspose with the original. Now Exe (15): $T\in\Lm{\Fbb^{1,n},\Fbb^{1,m}}:Tx=xA.$\TextB{}
 	\IndentNote Becs $Tx=\Mt{Tx}=\Mt{x}\Mt{T}=x\Mt{T}$ wrto std bses.\TextB{\vspace{-4pt}}
 }\SepLine
 
 \Anchor{3DT4}\ProblemBX[]{\TipsN{4}}{
-	You must first declare bses and the purpose when using $\Mneg\!:\Fbb^{n,1}\mapsto v,$ or $\Fbb^{m,n}\mapsto\Lm{V,W}.$\TextB{\vspace{-4pt}}
+	You must first declare bses and the purpose when using $\Mneg\!:\Fbb^{n,1}\mapsto v,$ \,or $\Fbb^{m,n}\mapsto\Lm{V,W}.$\TextB{\vspace{-4pt}}
 }\SepLine
 
-\Anchor{3DNE34e22}\BulletPointX\NoteForSmall{Exe (3, 4E 22)}\;\;$T\in\Lm{V,W}$ inv $\Longleftrightarrow\Mt{T}$ inv, wrto any $B_V,B_W.$\TextB{}
-Supp $\Mt{T}$ wrto some $B_V,B_W$ is inv. Let $S\in\Lm{W,V}$ be suth $\Mt{S,B_W,B_V}=\Mt{T}{^{-1}}.$\TextB{}
-$\Mt{TS,B_W}=I=\Mt{ST,B_V}.$ Apply $\Mneg.$ Now $S=T^{-1}\Rightarrow\Mt{T,B_V,B_W}{^{-1}}=\Mt{T^{-1},B_W,B_V}.$
+\Anchor{3DNE34e22}\BulletPointX\NoteForSmall{Exe (3, 4E 22)}\;\;$T\in\Lm{V,W}$ inv $\Longleftrightarrow\Mt{T}$ inv, wrto any\Par{$\Leftrightarrow$ some} $B_V,B_W.$\TextB{}
+Supp $\Mt{T}$ wrto some $B_V,B_W$ is inv. Let $S\in\Lm{W,V}$ be suth $\Mt{S,B_W,B_V}=\Mt{T,B_V,B_W}{^{-1}}.$\TextB{}
+Then $\Mt{TS,B_W}=\Mt{T,B_V,B_W}\Mt{S,B_W,B_V}=I=\Mt{ST,B_V}.$ Apply $\Mneg\Rightarrow S=T^{-1}.$\vspace{2pt}\TextB{}
+\ACoro $\Mt{T,B_V,B_W}{^{-1}}=\Mt{T^{-1},B_W,B_V},$ if $T$ or $\Mt{T}$ inv.
 \SepLine
 
-\Anchor{3DN3.60}\BulletPointX\NoteFor{[3.60]}\;\;Supp $B_V=\Par{v_1,\dots,v_n},\;B_W=\Par{w_1,\dots,w_m}$.\TextB{}
-Define $E_{i,j}\in\Lm{V,W}$ by $E_{i,j}\Par{v_x}=\delta_{i,x}w_j.$ Let $\mEnt{j,\,i}=\Mt{E_{i,j},B_V,B_W}.$\vspace{2pt}\TextB{}
-Now $\BigPar{\mEnt{j,\,i}}{_{l,k}}=\delta_{j,\,l}\delta_{i,k},$ and $E_{l,k}E_{i,j}=\delta_{j,\,l}E_{i,k}\Rightarrow\mEnt{k,\,l}\mEnt{j,\,i}=\delta_{j,\,l}\mEnt{k,\,i}.$\vspace{2pt}\TextB{}
-Define $R_{i,j}\in\Lm{W,V}:w_x\mapsto\delta_{i,x}v_j;$ and $G_{i,j}=R_{x,j}E_{i,x},$ and $Q_{i,j}=E_{x,j}R_{i,x}.$\vspace{2pt}\TextB{}
-Let $\mRnt{j,\,i}=\Mt{R_{i,j},B_W,B_V},\,\mGnt{j,\,i}=\Mt{G_{i,j},B_V},\,\mQnt{j,\,i}=\Mt{Q_{i,j},B_W}.$\vspace{2pt}\TextB{}
+\Anchor{3DN3.60}\BulletPointX\NoteFor{[3.60]}\;\;Supp $B_V=\Par{v_1,\dots,v_n},\;B_W=\Par{w_1,\dots,w_m}.$\TextB{}
+Define $E_{i,j}\in\Lm{V,W}$ by $E_{i,j}\Par{v_x}=\delta_{i,x}w_j.$ Define $R_{i,j}\in\Lm{W,V}:w_x\mapsto\delta_{i,x}v_j.$\vspace{2pt}\TextB{}
+Define $G_{i,j}=R_{x,j}E_{i,x},$ and $Q_{i,j}=E_{x,j}R_{i,x}.$ \;Let $\mEnt{j,\,i}=\Mt{E_{i,j}},$ simlr for $\mRnt{j,\,i},\mGnt{j,\,i}.$\vspace{2pt}\TextB{}
+%Let $\mRnt{j,\,i}=\Mt{R_{i,j}},\,\mGnt{j,\,i}=\Mt{G_{i,j}},\,\mQnt{j,\,i}=\Mt{Q_{i,j}}.$\vspace{0pt}\TextB{}
 Now $R_{l,k}E_{i,j}=\delta_{j,\,l}G_{i,k},\;\mRnt{k,\,l}\mEnt{j,\,i}=\delta_{l,j}\mGnt{k,\,i}.$ Simlr for $Q_{i,k}$ and $\mQnt{k,\,i}.$\vspace{4pt}\TextB{}
 \hspace{-5pt}$\hText{$
 Becs $\mM\!:\Lm{V,W}\rightarrow\Fbb^{m,n}$ is iso.$\\$
 $E_{i,j}=\Mneg\mEnt{j,\,i}.$ \,By [2.42] and [3.61]:$\\[0pt]$
 {\tgsl\normalsize We can rewrite the matrix multi in (3.C).}$\\[20pt]\,}\hspace{0pt}\hText{B_{\!\Lm[\SmallPar]{V,\,W}}={}${\normalsize${\begin{pmatrix} \underset{\;,}{E_{1,1}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\underset{\!,}{E_{n,1}},\\[-2pt] \vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots\\[-2pt] \overset{\;,}{E_{1,m}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\overset{\!\!\!,}{E_{n,m}}\end{pmatrix}}$}$;\quad B_{\,\Fbb^{m,n}}={}${\normalsize$\envFontSmall[\scriptsize]{\begin{pmatrix} \underset{\;,}{\mE^{\Par{1,1}}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\underset{\!\!,}{\mE^{\Par{1,n}}},\\[-2pt] \vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots\\[-2pt]\overset{\;,}{\mE^{\Par{m,1}}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\overset{\!\!\!,}{\mE^{\Par{m,n}}}\end{pmatrix}}$}.$\\[2pt]\,\\\,}$\par\vspace{-30pt}
+\SepLine
+\pagebreak
+
 \BulletPointX\Tips \,\,\,Let $B_{\range T}=\Par{Tv_1,\dots,Tv_p},B_V=\BigPar{v_1,\dots,v_p,\dots,v_n}.$ Let each $w_k=Tv_k.$\TextB{\vspace{2pt}}\IndentTips{}
 Extend to $B_W=\BigPar{w_1,\dots,w_p,\dots,w_m}.$ Then $T=E_{1,1}+\dots+E_{p,\,p},\;\Mt{T}=\mEnt{1,1}+\dots+\mEnt{p,\,p}.$
-\SepLine\pagebreak
+\SepLine
+
+%Now $\BigPar{\mEnt{j,\,i}}{_{l,k}}=\delta_{j,\,l}\delta_{i,k},$ and $E_{l,k}E_{i,j}=\delta_{j,\,l}E_{i,k}\Rightarrow\mEnt{k,\,l}\mEnt{j,\,i}=\delta_{l,j}\mEnt{k,\,i}.$\vspace{2pt}\TextB{}
+
 
 \Anchor{3D4e17}\ProblemBnoor{4E 17}{
 	\TextB{Supp $U,V,W$ finide, $S\in\Lm{V,W},\mA\in\Lm[\BigPar]{\Lm{U,V},\Lm{U,W}}:T\mapsto ST.$\vspace{1pt}}
@@ -1671,10 +1679,11 @@ A_{s,1} &\hspace{-6pt} \cdots &\hspace{-6pt} A_{s,s} &\hspace{-6pt} \cdots &\hsp
 又 $\Mt{T,R}=\Mt[\BigPar]{T,u\rightarrow v}.\\$
 If $m=p,$ let $\Mt{T,R}=I,\\$
 $\Mt[\BigPar]{\mA,R\rightarrow Q}=\Mt{S,v\rightarrow w}.}$\par\quad
-$\range\mA={}\Spn{\small\begin{Bmatrix} \underset{\;,}{Q_{1,1}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\underset{\!,}{Q_{m,1}},\\[-2pt] \vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots\\[-2pt] \overset{\;,}{Q_{1,s}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\overset{\!\!\!,}{Q_{m,s}}\end{Bmatrix}},\;\null \mA=\Spn{\small\begin{Bmatrix} \underset{\;,}{R_{1,s+1}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\underset{\!\!,}{R_{m,s+1}},\\[-2pt] \vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots\\[-2pt] \overset{\;,}{R_{1,\,p}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\overset{\!\!\!,}{R_{m,\,p}}\end{Bmatrix}}.$
-\;\;$\hText{$
-(a) $\dim\null \mA=m\times\Par{p-s};\\$
-(b) $\dim\range \mA=m\times s.}$\par\PfEnd[-10pt]\vspace{-4pt}
+{\FontSmall $B_{\range\mA}=\Bra{Q_{x,y}:1\leqslant x\leqslant m,\text{ and }1\leqslant y\leqslant s},\:B_{\null\mA}=\Bra{R_{x,y}:1\leqslant x\leqslant m,\text{ and }s+1\leqslant y\leqslant p}.$}\PfEnd
+%$\range\mA={}\Spn{\small\begin{Bmatrix} \underset{\;,}{Q_{1,1}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\underset{\!,}{Q_{m,1}},\\[-2pt] \vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots\\[-2pt] \overset{\;,}{Q_{1,s}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\overset{\!\!\!,}{Q_{m,s}}\end{Bmatrix}},\;\null \mA=\Spn{\small\begin{Bmatrix} \underset{\;,}{R_{1,s+1}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\underset{\!\!,}{R_{m,s+1}},\\[-2pt] \vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots\\[-2pt] \overset{\;,}{R_{1,\,p}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\overset{\!\!\!,}{R_{m,\,p}}\end{Bmatrix}}.$
+%\;\;$\hText{$
+%(a) $\dim\null \mA=m\times\Par{p-s};\\$
+%(b) $\dim\range \mA=m\times s.}$\par\PfEnd[-10pt]\vspace{-4pt}
 \SepLine
 
 \Anchor{3D7}\Anchor{3D4e10}\ProblemBnoor{4E 10}{
@@ -1700,12 +1709,13 @@ Thus $\range\mB=\Bra{R\in\Lm{U,W}:R\mmid_{\null S}=0}.$ \;Now by Exe (4E 10).\Pf
 \Or Let $B_{\range S}=\Par{v_1,\dots,v_r}$ with each $u_i=Sv_i.$ Let $B_V=\Par{v_1,\dots,v_m},B_{\null S}=\Par{u_{r+1},\dots,u_n}.$\par\quad
 Let $B_W=\Par{w_1,\dots,w_p}.$ Define $E_{i,j}\in\Lm{U,V}:u_x\mapsto\delta_{i,x}v_j\Rightarrow S=E_{1,1}+\dots+E_{r,r}.$\par\quad
 Define $R_{i,j}\in\Lm{V,W}:v_x\mapsto\delta_{i,x}w_j.$ Let $R_{k,j}E_{i,k}=Q_{i,j}:u_x\mapsto\delta_{i,x}w_j.$\par\vspace{-20pt}\quad
-$\mB(T)=TS=\XPar{{\sum_{j=1}^p\sum_{i=1}^m A_{j,\,i}R_{i,j}}}\XPar{{\sum_{k=1}^r E_{k,k}}}=\sum_{j=1}^p\sum_{i=1}^r A_{j,\,i}Q_{i,j}\Rightarrow\Mt{TS,v}={\small\begin{pmatrix}
+$\mB\Par{T}=TS=\XPar{{\sum_{j=1}^p\sum_{i=1}^m A_{j,\,i}R_{i,j}}}\XPar{{\sum_{k=1}^r E_{k,k}}}=\sum_{j=1}^p\sum_{i=1}^r A_{j,\,i}Q_{i,j}\Rightarrow\Mt{TS,v}={\small\begin{pmatrix}
 		A_{1,1} &\hspace{-6pt} \cdots &\hspace{-6pt} A_{1,r} &\hspace{-6pt} \cdots &\hspace{-6pt} 0\\[-2pt]
 		\vdots  &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots  &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots\\[-4pt]
 		A_{r,1} &\hspace{-6pt} \cdots &\hspace{-6pt} A_{r,r} &\hspace{-6pt} \cdots &\hspace{-6pt} 0\\[-2pt]
 		\vdots  &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots  &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots\\[-4pt]
 		A_{p,1} &\hspace{-6pt} \cdots &\hspace{-6pt} A_{p,r} &\hspace{-6pt} \cdots &\hspace{-6pt} 0\end{pmatrix}}.$\par\vspace{-20pt}\quad
+%{\FontSmall $B_{\range\mB}=\Bra{Q_{x,y}:1\leqslant x\leqslant r,\text{ and }1\leqslant y\leqslant p},\:B_{\null\mB}=\Bra{R_{x,y}:r+1\leqslant x\leqslant n}.$}\PfEnd
 $\range\mB=\Spn{\small\begin{Bmatrix} \underset{\;,}{Q_{1,1}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\underset{\!\!,}{Q_{r,1}},\\[-2pt] \vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots\\[-2pt] \overset{\;,}{Q_{1,\,p}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\overset{\!\!\!,}{Q_{r,\,p}}\end{Bmatrix}},\;\null\mB=\Spn{\small\begin{Bmatrix} \underset{\;,}{R_{r+1,1}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\underset{\!\!,}{R_{n,1}},\\[-2pt] \vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots\\[-2pt] \overset{\;,}{R_{r+1,\,p}}, &\hspace{-6pt} \cdots &\hspace{-6pt} ,\overset{\!\!\!,}{R_{n,\,p}}\end{Bmatrix}}.$\PfEnd[-14pt]
 \SepLine\pagebreak
 
@@ -3145,7 +3155,7 @@ Thus $\Par{T-\lambda I}S=0\Rightarrow\mA\Par{S}=TS=\lambda S$ with $S\neq 0.$\vs
 %	\TextA{Supp $u,w,$ and $u+w$ are eigvecs of $T\in\Lm{V}.$ Prove the eigvals are the same.}
 %}Supp $\lambda_1,\lambda_2,\lambda_0$ are eigvals of $T$ with eigvecs to $u,w,u+w$ respectly.\parSol{}
 %Then $T\Par{u+w}=\lambda_0\Par{u+w}=Tu+Tw=\lambda_1 u+\lambda_2 w\Rightarrow \Par{\lambda_0-\lambda_1}u=\Par{\lambda_2-\lambda_0}w.$\parSol{}
-%If $\Par{u,w}$ is linely dep, then let $w=cu,$ therefore $\lambda_2 cu=Tw=cTu=\lambda_1 cu\Rightarrow\lambda_2=\lambda_1.$\parSol{}
+%If $\Par{u,w}$ is liney dep, then let $w=cu,$ therefore $\lambda_2 cu=Tw=cTu=\lambda_1 cu\Rightarrow\lambda_2=\lambda_1.$\parSol{}
 %Othws, $\Par{u,w}$ is liney indep. Then $\lambda_0-\lambda_1=\lambda_2-\lambda_0=0\,\Rightarrow\lambda_1=\lambda_2=\lambda_0.$\PfEnd\parSol{}
 %\Or Asum $\lambda_1\neq \lambda_2.$ Then $\Par{u,w}$ is liney indep. Thus $\lambda_0-\lambda_1=\lambda_0-\lambda_2.$ Ctradic.\PfEnd
 %\SepLine
@@ -3391,7 +3401,7 @@ Then $\exists\,\Par{T-\lambda_j I}$ not inje. Now $p\Par{\lambda_j}-\alpha=0.$ \
 
 %\BulletPointX\NoteFor{[5.21]} \TextB{\large Every optor on a finide non0 complex vecsp has an eigval.}
 %Supp $V$ is a finide non0 complex vecsp, $\dim V=n$ and $T\in\Lm{V}$.\TextB{}
-%Supp non0 $v\in V.$ Becs $\Par{v,Tv,T^2 v,\dots,T^n v}$ is linely dep.\TextB{}
+%Supp non0 $v\in V.$ Becs $\Par{v,Tv,T^2 v,\dots,T^n v}$ is liney dep.\TextB{}
 %Let $a_0 I+a_1 T+\dots+a_n T^n=0.$ Then some $a_j\neq 0.$\TextB{}
 %{\tgsl Thus $\exists$ nonC $p$ of smallest deg with $p\Par{T}v=0$.}\TextB{}
 %Becs $\exists\,\lambda \in \Cbb$ suth $p\Par{\lambda} = 0\Rightarrow\exists\,q \in\PoCi,p\Par{z} = \Par{z-\lambda}q\Par{z},\forall z \in\Cbb.$\TextB{}
