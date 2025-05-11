@@ -268,8 +268,9 @@ $\forall a\in\Fbb,\;\Dvert{w}\leqslant\Dvert{w+au},$ \Or $\Dvert{Pv}=\Dvert{P\Pa
 }(a) Supp $v\in V.$ Then $\forall u+w\in U+W,\Ang{u+w,v}=0\Longleftrightarrow\forall u\in U,w\in W,\Ang{u,v}=\Ang{u,w}=0.$\vspace{2pt}\parSol{}
 (b) $v_1\in U^\perp,v_2\in W^\perp\Rightarrow\forall x\in U\cap W,\Ang{v_1+v_2,x}=0.$ Thus $U^\perp+W^\perp\subseteq\BigPar{U\cap W}{^\perp}.$\vspace{1pt}\parSol{\Hb}
 \Or $U\cap W\subseteq U,W\Rightarrow\Par{U\cap W}{^\perp}\supseteq U^\perp+W^\perp.$\vspace{2pt}\parSol{\Hb}
-\!\Sbra[3pt]{{\tgsl Req Finide}} \;By (a), $\Dim\BigPar{U^\perp+W^\perp}=\dim V-\Dim\Par{U\cap W}.$\PfEnd\vspace{2pt}\parSol{}
-
+\!\Sbra[3pt]{{\tgsl Req Finide}} \;By (a), $\Dim\BigPar{U^\perp+W^\perp}=\dim V-\Dim\Par{U\cap W}.$\PfEnd\vspace{4pt}
+\AExa Not true if infinide. Let $U=\Bra{\Par{x_1,0,\cdots,0,x_{2k-1},0,\cdots}\in\Fbb^\infty},W=\Bra{{\sum_{k=1}^\infty a_k\Par{e_{2n}+\text{\Large\ensuremath{\frac{\:1\:}{n}}}\:\!e_{2n-1}}}}.$\vspace{2pt}\parExa{}
+Then $U\cap W=\zeroSubs\Rightarrow\Par{U\cap W}{^\perp}=\Fbb^\infty.$ While $U^\perp+W^\perp\not\ni\BigPar{0,1,0,\text{\Large\ensuremath{\frac{\:1\:}{2}}},0,\cdots,0,\text{\Large\ensuremath{\frac{\:2\:}{k}}},0,\cdots}.$
 \SepLine
 
 \ChEnd
@@ -754,7 +755,7 @@ Now $\Par{TS}\Par{Tv}=Tv,\Par{TS}\Par{u_i}=0\Rightarrow\Tr\Par{TS}=1.$ Ctradic.\
 	\TextB{Supp $V,W$ are finide inner prodsps. Define $\Ang{\cdot,\cdot}$ on $\Lm{V,W}$ by $\Ang{S,T}=\Tr\Par{ST^*}.$\vspace{2pt}}
 	\TextB{Let orthon $B_V=\Par{e_1,\dots,e_n},B_W=\Par{\,f_1,\dots,f_m}.$ Prove $\Ang{S,T}=\sum_{j=1}^m\sum_{k=1}^n\Mt{S}{_{j,k}}\overline{\Mt{T}{_{j,k}}}.$\vspace{3pt}}
 }Becs $\Mt{ST^*}{_{j,k}}=\Mt{S}{_{j,r}}\Mt{T^*}{_{r,k}}=\Mt{S}{_{j,r}}\overline{\Mt{T}{_{k,r}}}.$ Take $k=j.$\PfEnd\vspace{4pt}\parSol{}
-\Or Define $E_{k,j}\Par{e_x}=\delta_{k,x}\:f_j,\;R_{j,k}\Par{\,f_y}=\delta_{j,y}e_k,$ and $Q_{j,k}\Par{\,f_y}=\delta_{j,y}\:f_k.$ \;See \NOTEFOR [3.60].\vspace{2pt}\parSol{}
+\Or Define $E_{k,j}\Par{e_x}=\delta_{k,x}\:f_j,\;R_{j,k}\Par{\,f_y}=\delta_{j,y}e_k,$ and $Q_{j,k}\Par{\,f_y}=\delta_{j,y}\:f_k.$ \;See {\NOTEFOR} [3.60].\vspace{2pt}\parSol{}
 %Supp $T=\sum_{j=1}^m\sum_{k=1}^nA_{j,k}E_{k,j}\in\Lm{V,W}\Rightarrow A=\Mt{T}$ wrto $B_V,B_W.$\vspace{2pt}\parSol{}
 Becs \,$E_{k,j}^*=R_{j,k},$ and $\Ang{E_{k,l},E_{i,j}}=\Tr\Par{E_{k,l}R_{j,i}}=\Tr\Par{\delta_{i,k}Q_{j,l}}=\delta_{i,k}\delta_{j,l}.$\vspace{2pt}\parSol{}
 %Hence $B_{\!\Lm[\SmallPar]{V,\,W}}=\Bra{E_{k,j}:1\leqslant k\leqslant n,\text{ and }1\leqslant j\leqslant m}$ is orthon.\vspace{3pt}\parSol{}
