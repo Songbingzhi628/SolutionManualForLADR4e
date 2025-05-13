@@ -806,15 +806,43 @@ Note that for each $J=\Par{j_1,\dots,j_m}\in\Gamma\:\!\!,\:\alpha_I\Par{e_{j_1},
 Let $A={}${\scriptsize$\begin{pmatrix}B &\hspace{-6pt} D\\[-2pt] 0 &\hspace{-6pt} C\end{pmatrix}$}$,\:P={}${\scriptsize$\begin{pmatrix}B &\hspace{-6pt} 0\\[-2pt] 0 &\hspace{-6pt} C\end{pmatrix}$}$,\:Q={}${\scriptsize$\begin{pmatrix}0 &\hspace{-6pt} D\\[-2pt] 0 &\hspace{-6pt} 0\end{pmatrix}$}$.$ Supp $A\in\Fbb^{n,n},B\in\Fbb^{m,m},C\in\Fbb^{p,p}.$\vspace{-2pt}\parSol{}
 Now $\Det\Par{A_{\cdot,1}\;\cdots\;A_{\cdot,n}}=\Det\BigBigPar{P_{\!\cdot,1}\;\cdots\;P_{\!\cdot,m}\;\,\Par{P+Q}{_{\cdot,m+1}}\;\cdots\;\Par{P+Q}{_{\cdot,n}}}.$\vspace{1pt}\parSol{}
 Becs each col of $D$ is in $\col B=\Fbb^m\Rightarrow$ each $Q_{\cdot,m+k}\in\Span{P_{\!\cdot,1},\dots,P_{\!\cdot,m}}\Rightarrow\det A=\det P.$\PfEnd
+%\vspace{4pt}\parSol{}
+%\Or Let $\Par{e_1,\dots,e_n}$ be std bses of $\Fbb^n.$ Let $U=\Span{e_1,\dots,e_m},W=\Span{e_{m+1},\dots,e_n}.$\parSol{}
+%Define $T\in\Lm{\Fbb^n}:e_k\mapsto A_{\cdot,k}\Rightarrow T\mmid_U\in\Lm{U},$ and $\Mt{T\mmid_U}=B.$ \,Define $S\in\Lm{W}:e_{m+j}\mapsto C_{\cdot,j}$\parSol{}
+%Let $\alpha$ be a $n$-liney form with $\alpha\Par{e_1,\dots,e_n}=1.$ Define $\beta\Par{v_1,\dots,v_m}=\alpha\Par{v_1,\dots,v_m,Te_{m+1},\dots,Te_n}.$\parSol{}
 \SepLine
 
-\Anchor{4e9C12}\ProblemN{C.12}{
-	\TextA{Supp $\dim V=n,$ and $S,T\in\Lm{V},S$ is inv. Define $p:\Fbb\rightarrow\Fbb$ by $p\Par{z}=\Det\Par{zS-T}.$}
-	\TextA{Prove $p\in\PoFi$ with $\det S$ be the coeff of $z^n.$}
+%\Anchor{4e9C9}\ProblemN{C.9}{
+%	\TextA{Supp $V$ is on $\Rbb$ of even dim, $T\in\Lm{V},$ and $\det T<0.$ Prove $T$ has at least two disti eigvals.}
+%}Let $\lambda_1,\dots,\lambda_m$ be disti eigvals of $T_{\!\Cbb},$ and each $\lambda_k$ of multy $m_k.$\parSol{}
+%Now $\det T=\det T_{\!\Cbb}<0\Rightarrow\exists\,\lambda_k<0,$ and $m_k$ is odd $\Rightarrow\prod_{i\neq k}\Par{z-\lambda_i}{^{m_i}}$ is of odd deg.\PfEnd
+%\SepLine
+
+\Anchor{4e9C16}\ProblemN{C.16}{
+	\TextA{Supp $T\in\Lm{V}.$ Define $g:\Fbb\rightarrow\Fbb$ by $g\Par{x}=\Det\Par{I+xT}.$ Show $g\apostrophe\Par{0}=\tr T.$}
+}Supp $T_{\!\Cbb}$ up-trig wrto $B_V$ and $\lambda_1,\dots,\lambda_n$ are the diag ents.\parSol{}
+Then \,$\det\Mt{I+\delta T_{\!\Cbb},B_V}=\Par{1+\delta\lambda_1}\cdots\Par{1+\delta\lambda_n}=1+\delta\Par{\lambda_1+\dots+\lambda_n}+\cdots+\delta^n\:\!\lambda_1\!\cdots\lambda_n$
+%\parSol{}
+%$\Rightarrow g\apostrophe\Par{0}=\lim_{\delta\rightarrow 0}\delta^{-1}\Sbra{g\Par{\delta}-g\Par{0}}=\lambda_1+\dots+\lambda_n.$
+\PfEnd\vspace{2pt}\parSol{}
+\Or Let $p$ be the char of $-T.$ \;Then $\forall x\in\nonzeroFbb,$\parSol{}
+$\Det\Par{I+xT}=x^n\Det\Par{x^{-1}I+T}=x^np\Par{x^{-1}}=1-\tr\Par{{-T}}\cdot x+\cdots+\Par{{-1}}{^n}\Det\Par{{-T}}\cdot x^n.$\PfEnd
+\SepLine
+
+\Anchor{4e9C19}\ProblemN{C.19}{
+	\TextA{}
+	\TextA{}
 }
 \SepLine
 
-\Anchor{4e9C}\ProblemN{C.}{
+\Anchor{4e9C20}\ProblemN{C.20}{
+	\TextA{}
+	\TextA{}
+}
+\SepLine
+
+\Anchor{4e9C21}\ProblemN{C.22}{
+	\TextA{}
 	\TextA{}
 }
 \SepLine
