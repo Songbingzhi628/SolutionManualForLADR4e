@@ -794,14 +794,18 @@ Note that for each $J=\Par{j_1,\dots,j_m}\in\Gamma\:\!\!,\:\alpha_I\Par{e_{j_1},
 %Observe $\Par{u_1,\dots,u_j,u_{j+1},\dots,u_k,\dots,u_m}.$ By swapping $\Par{u_j,u_{j+1}},\dots,\Par{u_j,u_{k-1}}$ in order.\PfEnd
 %\SepLine
 
-\Anchor{4e9C2}\ProblemN{C.2}{
-	\TextA{Supp $A\in\Fbb^{n,n},B\in\Fbb^{n-1,n-1},\,A_{k,1}=\delta_{k,1},\,B_{j,k}=A_{j+1,\,k+1}.$ \;Show $\det A=A_{1,1}\det B.$}
-}
-\SepLine
+%\Anchor{4e9C2}\ProblemN{C.2}{
+%	\TextA{Supp $A\in\Fbb^{n,n},B\in\Fbb^{n-1,n-1},\,A_{k,1}=\delta_{k,1},\,B_{j,k}=A_{j+1,\,k+1}.$ \;Show $\det A=A_{1,1}\det B.$}
+%}$\det A={\sum_{J\,\in\,\perm n}}\Par{\sign J}\,A_{j_1,1}\cdots A_{j_n,n},$ with $J=\Par{j_1,\dots,j_n}$ and $j_1=1\Rightarrow j_2,\dots,j_n\neq 1.$\PfEnd\vspace{4pt}\parSol{}
+%\Or Let $C={}${\scriptsize$\begin{pmatrix}\SmallPar{1} &\hspace{-6pt} 0\\[-2pt] 0 &\hspace{-6pt} B\end{pmatrix}$}${}\Rightarrow\Det\Par{A_{\cdot,1}\;\cdots\;A_{\cdot,n}}=A_{1,1}\Det\BigPar{I_{\cdot,1}\;\,C_{\cdot,2}\;\,\cdots\;\,C_{\cdot,n}}=A_{1,1}\det C.$\PfEnd
+%\SepLine
 
-\Anchor{4e9C}\ProblemN{C.}{
-	\TextA{}
-}
+\Anchor{4e9C2}\Anchor{4e9C5}\ProblemN{C.2,5}{
+	\TextA{Supp square $B,C$ on diag of block up-trig $A.$ Prove $\det A=\Par{{\det B}}\Par{{\det C}}.$}
+}If the cols of $B$ are liney dep, then the cols of $A$ are liney dep, done. Now supp $B$ is inv.\vspace{1pt}\parSol{}
+Let $A={}${\scriptsize$\begin{pmatrix}B &\hspace{-6pt} D\\[-2pt] 0 &\hspace{-6pt} C\end{pmatrix}$}$,\:P={}${\scriptsize$\begin{pmatrix}B &\hspace{-6pt} 0\\[-2pt] 0 &\hspace{-6pt} C\end{pmatrix}$}$,\:Q={}${\scriptsize$\begin{pmatrix}0 &\hspace{-6pt} D\\[-2pt] 0 &\hspace{-6pt} 0\end{pmatrix}$}$.$ Supp $A\in\Fbb^{n,n},B\in\Fbb^{m,m},C\in\Fbb^{p,p}.$\vspace{-2pt}\parSol{}
+Now $\Det\Par{A_{\cdot,1}\;\cdots\;A_{\cdot,n}}=\Det\BigBigPar{P_{\!\cdot,1}\;\cdots\;P_{\!\cdot,m}\;\,\Par{P+Q}{_{\cdot,m+1}}\;\cdots\;\Par{P+Q}{_{\cdot,n}}}.$\vspace{1pt}\parSol{}
+Becs each col of $D$ is in $\col B=\Fbb^m\Rightarrow$ each $Q_{\cdot,m+k}\in\Span{P_{\!\cdot,1},\dots,P_{\!\cdot,m}}\Rightarrow\det A=\det P.$\PfEnd
 \SepLine
 
 \Anchor{4e9C12}\ProblemN{C.12}{
