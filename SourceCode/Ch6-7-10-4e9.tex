@@ -728,7 +728,7 @@ Becs $\Tr\Par{SP}=\sum\!\!\:\Ang{SPe_i,e_i}+\sum\!\!\:\Ang{SP\:\!f_j,\,f_j}=\sum
 }Let $S=T^*\Rightarrow\Tr\Par{T^*T}=s_1^2+\dots+s_n^2=0.$ \;By (4E 7.E.1) \OR Exe (11).\PfEnd\vspace{2pt}\parSol{}
 \Or Asum $T\neq0\Rightarrow\exists$ non0 $v\in V$ suth $Tv_1\neq0.$ Extend $v=v_1$ to $B_V=\Par{v_1,\dots,v_n}.$\parSol{}
 Then $Tv_1=A_{1,1}v_1+\dots+A_{n,1}v_n\Rightarrow\exists\,A_{j,1}\neq0.$ Define $S\in\Lm{V}$ by each $Sv_k=\delta_{j,k}\:\!v_1.$\parSol{}
-Now $S=E_{j,1}\Rightarrow\Mt{ST}={\mEnt{1,j}\Mt{T}}\Longrightarrow0=\Tr\Par{ST}=A_{j,1}.$ Ctradic.\PfEnd\vspace{2pt}\parSol{}
+Now $S=E_{j,1}\Rightarrow\Mt{ST}={\mEnt{1,\,j}\Mt{T}}\Longrightarrow0=\Tr\Par{ST}=A_{j,1}.$ Ctradic.\PfEnd\vspace{2pt}\parSol{}
 \Or Asum $\exists\,Tv\neq0.$ Extend to $B_V=\Par{Tv,u_1,\dots,u_n}.$ Define $S\in\Lm{V}:Tv\mapsto v,\,u_i\mapsto 0.$\parSol{}
 Now $\Par{TS}\Par{Tv}=Tv,\Par{TS}\Par{u_i}=0\Rightarrow\Tr\Par{TS}=1.$ Ctradic.\PfEnd
 \SepLine
@@ -818,29 +818,39 @@ Becs each col of $D$ is in $\col B=\Fbb^m\Rightarrow$ each $Q_{\cdot,m+k}\in\Spa
 %Now $\det T=\det T_{\!\Cbb}<0\Rightarrow\exists\,\lambda_k<0,$ and $m_k$ is odd $\Rightarrow\prod_{i\neq k}\Par{z-\lambda_i}{^{m_i}}$ is of odd deg.\PfEnd
 %\SepLine
 
-\Anchor{4e9C16}\ProblemN{C.16}{
-	\TextA{Supp $T\in\Lm{V}.$ Define $g:\Fbb\rightarrow\Fbb$ by $g\Par{x}=\Det\Par{I+xT}.$ Show $g\apostrophe\Par{0}=\tr T.$}
-}Supp $T_{\!\Cbb}$ up-trig wrto $B_V$ and $\lambda_1,\dots,\lambda_n$ are the diag ents.\parSol{}
-Then \,$\det\Mt{I+\delta T_{\!\Cbb},B_V}=\Par{1+\delta\lambda_1}\cdots\Par{1+\delta\lambda_n}=1+\delta\Par{\lambda_1+\dots+\lambda_n}+\cdots+\delta^n\:\!\lambda_1\!\cdots\lambda_n$
-%\parSol{}
-%$\Rightarrow g\apostrophe\Par{0}=\lim_{\delta\rightarrow 0}\delta^{-1}\Sbra{g\Par{\delta}-g\Par{0}}=\lambda_1+\dots+\lambda_n.$
-\PfEnd\vspace{2pt}\parSol{}
-\Or Let $p$ be the char of $-T.$ \;Then $\forall x\in\nonzeroFbb,$\parSol{}
-$\Det\Par{I+xT}=x^n\Det\Par{x^{-1}I+T}=x^np\Par{x^{-1}}=1-\tr\Par{{-T}}\cdot x+\cdots+\Par{{-1}}{^n}\Det\Par{{-T}}\cdot x^n.$\PfEnd
-\SepLine
+%\Anchor{4e9C16}\ProblemN{C.16}{
+%	\TextA{Supp $T\in\Lm{V}.$ Define $g:\Fbb\rightarrow\Fbb$ by $g\Par{x}=\Det\Par{I+xT}.$ Show $g\apostrophe\Par{0}=\tr T.$}
+%}Supp $T_{\!\Cbb}$ up-trig wrto $B_V$ and $\lambda_1,\dots,\lambda_n$ are the diag ents.\parSol{}
+%Then \,$\det\Mt{I+\delta T_{\!\Cbb},B_V}=\Par{1+\delta\lambda_1}\cdots\Par{1+\delta\lambda_n}=1+\delta\Par{\lambda_1+\dots+\lambda_n}+\cdots+\delta^n\:\!\lambda_1\!\cdots\lambda_n$\PfEnd\vspace{2pt}\parSol{}
+%\Or Let $p$ be the char of $-T.$ \;Then $\forall x\in\nonzeroFbb,$\parSol{}
+%$\Det\Par{I+xT}=x^n\Det\Par{x^{-1}I+T}=x^np\Par{x^{-1}}=1-\tr\Par{{-T}}\cdot x+\cdots+\Par{{-1}}{^n}\Det\Par{{-T}}\cdot x^n.$\PfEnd
+%\SepLine
 
-\Anchor{4e9C19}\ProblemN{C.19}{
-	\TextA{Supp $V$ is inner prodsp, $B_V=\Par{e_1,\dots,e_n}$ is orthon, and $T\in\Lm{V}$ is posi.}
-	\TextA{Prove $\det T\leqslant\prod_{k=1}^n\Ang{Te_k,e_k},$ and if $T$ inv, then equa $\Longleftrightarrow B_V$ are eigvecs.\vspace{2pt}}
-}$\det T=\BigPar{{\det\sqrt{T}}}\BigPar{{\det\sqrt{T}}}\leqslant\prod_{k=1}^n\Dvertsq{\sqrt{T}e_k}=\prod_{k=1}^n\Ang{Te_k,e_k}.$\vspace{2pt}\parSol{}
-Equa $\Longleftrightarrow\det\sqrt{T}\leqslant\prod_{k=1}^n\Dvert{\sqrt{T}e_k}\Longleftrightarrow\BigPar{{\sqrt{T}e_1,\dots,\sqrt{T}e_n}}$ orthog. \,Becs $T$ inv, $\nexists\,\sqrt{T}e_k=0.$\parSol{}
-\SepLine
+%\Anchor{4e9C19}\ProblemN{C.19}{
+%	\TextA{Supp $V$ is inner prodsp, $B_V=\Par{e_1,\dots,e_n}$ is orthon, and $T\in\Lm{V}$ is posi.\vspace{1pt}}
+%	\TextA{Prove $\det T\leqslant\prod_{k=1}^n\Ang{Te_k,e_k},$ and if $T$ inv, then equa $\Longleftrightarrow B_V$ are eigvecs.\vspace{3pt}}
+%}$\det T=\BigPar{{\det\sqrt{T}}}\BigPar{{\det\sqrt{T}}}\leqslant\prod_{k=1}^n\BigDvertsq{\sqrt{T}e_k}=\prod_{k=1}^n\Ang{Te_k,e_k}.$ \;Let $\Mt[\BigPar]{\!\sqrt{T},B_V}=QR$ factoriz.\vspace{2pt}\parSol{}
+%Then $R$ diag $\Longleftrightarrow\det\sqrt{T}=\prod_{k=1}^n\BigDvert{\sqrt{T}e_k}\Longleftrightarrow\Mt{T,B_V}=R^*Q^*QR=R^*R$ diag.\PfEnd\vspace{2pt}\parSol{}
+%\Or Let $B=\Mt[\BigPar]{\!\sqrt{T},B_V}.$ Then equa $\Longleftrightarrow\BigPar{{\!\sqrt{T}e_1,\dots,\sqrt{T}e_n}}$ orthog $\Longleftrightarrow B^*B=\Mt{T,B_V}$ diag.\PfEnd
+%\SepLine
+
+\newcommandx{\mKf}[2]{{\mathcal{K}\!}_{#1}^{\;\TinyPar{#2}}}
 
 \Anchor{4e9C21}\ProblemN{C.22}{
 	\TextA{Supp $n\in\Nbp,$ and $\delta:\Cbb^{n,n}\rightarrow\Cbb$ suth $\delta\Par{AB}=\delta\Par{A}\cdot\delta\Par{B},$ and $\delta\Par{D}=D_{1,1}\!\cdots D_{n,n},$}
 	\TextA{for all $A,B\in\Cbb^{n,n}$ and all diag $D\in\Cbb^{n,n}.$ \;Prove $\delta={\det}.$}
-}Supp $A\in\Cbb^{n,n}.$ Define $T\in\Lm{\Cbb^n}:e_k=A_{\cdot,k}\Rightarrow\Mt{T}=A$ wrto std bses.\parSol{}
-Supp $T$ up-trig wrto $\Par{u_1,\dots,u_n}\Rightarrow B=\Mt{T,u\rightarrow u}=\Mt{I,e\rightarrow u}\Mt{T,e\rightarrow e}\Mt{I,u\rightarrow e}.$\parSol{}
+}Let $\mKf{i,\,j}{\alpha}=I+\alpha\:\!\mEnt{i,\,j}.$ \;We show $\delta\BigPar{\mKf{i,\,j}{\alpha}}=1+\delta_{i,j}\alpha.$ \,Supp $i\neq j.$\vspace{2pt}\parSol{}
+\NOTICE that $\mKf{i,\,j}{\alpha}\,\mKf{i,\,j}{\alpha}=\Par{I+\alpha\,\mEnt{i,\,j}}{^2}=I+2\;\!\alpha\,\mEnt{i,\,j}$\vspace{1pt}\parSol{}
+\Blind{\NOTICE that }$=I+\mEnt{j,\,j}+2\;\!\alpha\,\mEnt{i,\,j}-\frac{\,1\,}{2}\Sbra{I+\mEnt{j,\,j}+2\;\!\alpha\,\mEnt{i,\,j}}$\vspace{1pt}\parSol{}
+\Blind{\NOTICE that }$=\Par{I-\frac{\,1\,}{2}\:\!\mEnt{j,\,j}}\Par{I+\alpha\,\mEnt{i,\,j}}\Par{I+\mEnt{j,\,j}}=\mKf{j,\,j}{1/2}\,\mKf{i,\,j}{\alpha}\,\mKf{j,\,j}{1}.$\vspace{2pt}\parSol{}
+又 $\mKf{i,\,j}{\alpha}\,\mKf{i,\,j}{{-\alpha}}=I.$ \,Thus $\delta\BigPar{\mKf{i,\,j}{\alpha}}=\delta\BigPar{\mKf{j,\,j}{1/2}\,\mKf{j,\,j}{1}}=1.$\vspace{3pt}\parSol{}
+Supp $A\in\Cbb^{n,n}.$ Define $T\in\Lm{\Cbb^n}:e_k=A_{\cdot,k}\Rightarrow\Mt{T}=A$ wrto std bses.\parSol{}
+Write $A=\Mt{I,Tv\rightarrow e}\Mt{T,v\rightarrow Tv}\Mt{I,e\rightarrow v}.$ Thus $A$ not inv $\Rightarrow\delta\Par{A}=0.$ \;Supp $A$ inv.\parSol{}
+Supp $T$ up-trig wrto $\Par{u_1,\dots,u_n}\Rightarrow C=\Mt{T,u\rightarrow u}=\Mt{I,e\rightarrow u}\:\!\Mt{T,e\rightarrow e}\:\!\Mt{I,u\rightarrow e}.$\parSol{}
+Then $A\mKf{i,\,j}{\alpha}=A+\alpha\:\!A\:\!\mEnt{i,\,j},$ which is the result of adding $i^\text{th}$ col times $\alpha$ to the $j^\text{th}$ col.\parSol{}
+{\tgbfx Step 1.} Let $c_1=C_{1,2}\big/C_{1,1}.$ Then let $R_1=C\:\!\mKf{1,\,2}{{-c_1}}.$ Now $\Par{R_1}{_{1,2}}=0.$\parSol{}
+{\tgbfx Step k.} Let $c_k=\BigPar{C_{1,k+1}\big/C_{1,1},\dots,C_{k,k+1}\big/C_{k,k}}.$ Then let $R_{k+1}=R_k\:\!\mKf{1,\,k+1}{{-c_{1,k}}}\!\cdots\mKf{k,\,k+1}{{-c_{k,k}}}.$\parSol{}
+We stop at step $\Par{n-1}.$ \,Becs each $\delta\Par{R_{k+1}}=\delta\Par{R_k}.$\PfEnd
 \SepLine
 
 \Anchor{4e9D}\ProblemN{D.}{

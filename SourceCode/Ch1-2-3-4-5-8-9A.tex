@@ -1644,7 +1644,7 @@ $E_{i,j}=\Mneg\mEnt{j,\,i}.$ \,By [2.42] and [3.61]:$\\[0pt]$
 \pagebreak
 
 \BulletPointX\Tips \,\,\,Let $B_{\range T}=\Par{Tv_1,\dots,Tv_p},B_V=\BigPar{v_1,\dots,v_p,\dots,v_n}.$ Let each $w_k=Tv_k.$\TextB{\vspace{2pt}}\IndentTips{}
-Extend to $B_W=\BigPar{w_1,\dots,w_p,\dots,w_m}.$ Then $T=E_{1,1}+\dots+E_{p,\,p},\;\Mt{T}=\mEnt{1,1}+\dots+\mEnt{p,\,p}.$
+Extend to $B_W=\BigPar{w_1,\dots,w_p,\dots,w_m}.$ Then $T=E_{1,1}+\dots+E_{p,\,p},\;\Mt{T}=\mEnt{1,\,1}+\dots+\mEnt{p,\,p}.$
 \SepLine
 
 %Now $\BigPar{\mEnt{j,\,i}}{_{l,k}}=\delta_{j,\,l}\delta_{i,k},$ and $E_{l,k}E_{i,j}=\delta_{j,\,l}E_{i,k}\Rightarrow\mEnt{k,\,l}\mEnt{j,\,i}=\delta_{l,j}\mEnt{k,\,i}.$\vspace{2pt}\TextB{}
@@ -1729,10 +1729,10 @@ $\range\mB=\Spn{\small\begin{Bmatrix} \underset{\;,}{Q_{1,1}}, &\hspace{-6pt} \c
 
 \Anchor{3D'4}\ProblemB{
 	\TextB{Supp $A\in\Fbb^{n,n}.$ Define $T,S\in\Lm{\Fbb^{n,n}}$ by $T\Par{X}=AX,\:S\Par{Y}=YA^t.$ Find $\dim\range ST.$\vspace{2pt}}
-}Becs $A\mEnt{j,k}=\BigSbra{\sum_{x=1}^nA_{x,j}\mEnt{x,j}}\mEnt{j,k}=\sum_{x=1}^nA_{x,j}\mEnt{x,k}.$ \;Let $B_{\col A}=\Par{C_{\cdot,1},\dots,C_{\cdot,r}}.$\vspace{2pt}\parSol{}
-Each $A_{\cdot,j}=R_{1,j}C_{\cdot,1}+\dots+R_{r,j}C_{\cdot,r}\Rightarrow B_{\range T}=\Bra{\mC_{\!j,k}=\sum_{x=1}^nC_{x,j}\mEnt{x,k}:1\leqslant j\leqslant r,\,1\leqslant k\leqslant n}.$\vspace{4pt}\parSol{}
-Becs $\mC_{\!j,k}A^t=\mC_{\!j,k}\BigSbra{\sum_{y=1}^nA^t_{k,y}\mEnt{k,y}}=\sum_{x=1}^n\sum_{y=1}^nC_{x,j}A_{y,k}\mEnt{x,y}.$\vspace{-20pt}\parSol{}
-Simlr, $B_{\range ST}=\Bra{\mX_{\!j,k}=\sum_{x=1}^n\sum_{y=1}^nC_{x,j}C_{y,k}\mEnt{x,y}:1\leqslant j,k\leqslant r}.\;\hMath{l}{\left|}{\right.}{\;\mX_{\!j,k}=\small\begin{pmatrix}C_{1,j}C_{1,k} &\hspace{-8pt} \cdots &\hspace{-8pt} C_{1,j}C_{n,k}\\[-4pt]
+}Becs $A\mEnt{j,\,k}=\BigSbra{\sum_{x=1}^nA_{x,j}\mEnt{x,\,j}}\mEnt{j,\,k}=\sum_{x=1}^nA_{x,j}\mEnt{x,\,k}.$ \;Let $B_{\col A}=\Par{C_{\cdot,1},\dots,C_{\cdot,r}}.$\vspace{2pt}\parSol{}
+Each $A_{\cdot,j}=R_{1,j}C_{\cdot,1}+\dots+R_{r,j}C_{\cdot,r}\Rightarrow B_{\range T}=\Bra{\mC_{\!j,k}=\sum_{x=1}^nC_{x,j}\mEnt{x,\,k}:1\leqslant j\leqslant r,\,1\leqslant k\leqslant n}.$\vspace{4pt}\parSol{}
+Becs $\mC_{\!j,k}A^t=\mC_{\!j,k}\BigSbra{\sum_{y=1}^nA^t_{k,y}\mEnt{k,\,y}}=\sum_{x=1}^n\sum_{y=1}^nC_{x,j}A_{y,k}\mEnt{x,\,y}.$\vspace{-20pt}\parSol{}
+Simlr, $B_{\range ST}=\Bra{\mX_{\!j,k}=\sum_{x=1}^n\sum_{y=1}^nC_{x,j}C_{y,k}\mEnt{x,\,y}:1\leqslant j,k\leqslant r}.\;\hMath{l}{\left|}{\right.}{\;\mX_{\!j,k}=\small\begin{pmatrix}C_{1,j}C_{1,k} &\hspace{-8pt} \cdots &\hspace{-8pt} C_{1,j}C_{n,k}\\[-4pt]
 		\vdots &\hspace{-8pt} \ddots &\hspace{-8pt} \vdots\\[-4pt]
 		C_{n,j}C_{1,k} &\hspace{-8pt} \cdots &\hspace{-8pt} C_{n,j}C_{n,k}\end{pmatrix}.\\[20pt]\,}$\vspace{-20pt}\parSol{}
 %Now $\Par{\mX_{\!1,k},\dots,\mX_{\!r,k}}$ and  $\Par{\mX_{\!j,1},\dots,\mX_{\!j,r}}$ are liney indep lists.\parSol{}
@@ -2552,7 +2552,7 @@ Let $W=\Span{z,z^2}=\Bra{az+bz^2:a,b\in\Fbb}$, so that $\PoF{4}=U\oplus W.$\PfEn
 		a_{m,0} & a_{m,1} & \cdots & a_{m,m}
 	\end{pmatrix}$}.\TextB{\vspace{-12pt}}
 \AComm Define $\xi_k\Par{p}$ by the coeff of $z^k$ in $p\in\PoF{m}.$\parCom\IndentB{}
-Then $\Mt[\BigBigPar]{\xi_k,\Par{1,z,\dots,z^m},\Par{1}}=\mEnt{1,k}\in\Fbb^{1,m+1}.$\vspace{-2pt}
+Then $\Mt[\BigBigPar]{\xi_k,\Par{1,z,\dots,z^m},\Par{1}}=\mEnt{1,\,k}\in\Fbb^{1,m+1}.$\vspace{-2pt}
 \SepLine\pagebreak
 
 \Anchor{2C10}\ProblemBnoor{2.C.10}{
