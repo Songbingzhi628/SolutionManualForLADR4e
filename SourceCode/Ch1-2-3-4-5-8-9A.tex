@@ -1660,13 +1660,13 @@ Thus $\range\mA=\Lm{U,\range S}.$\PfEnd\vspace{4pt}\quad
 Let $B_U=\Par{u_1,\dots,u_m}.$ Define $E_{i,j}\in\Lm{V,W}:v_x\mapsto\delta_{i,x}w_j.$ Now $S=E_{1,1}+\dots+E_{s,s}.$\par\vspace{0pt}\quad%$\Mt{S,v\rightarrow w}={\footnotesize\begin{pmatrix} \mathbb{1} &\hspace{-6pt}  &\hspace{-6pt} 0 &\hspace{-6pt}  &\hspace{-6pt} 0\\[-8pt]&\hspace{-6pt} \ddots &\hspace{-6pt}  &\hspace{-6pt} \ddots &\hspace{-6pt} \\[-8pt]0 &\hspace{-6pt}  &\hspace{-6pt} \mathbb{1} &\hspace{-6pt}  &\hspace{-6pt} 0\\[-8pt]&\hspace{-6pt} \ddots &\hspace{-6pt}  &\hspace{-6pt} \ddots &\hspace{-6pt} \\[-8pt]0 &\hspace{-6pt}  &\hspace{-6pt} 0 &\hspace{-6pt}  &\hspace{-6pt} 0\end{pmatrix}}.$\par\vspace{-6pt}\quad
 Define $R_{i,j}\in\Lm{U,V}:u_x\mapsto\delta_{i,x}v_j.$ \;Let $E_{k,j}R_{i,k}=Q_{i,j}:u_x\mapsto\delta_{i,x}w_j.$\par\vspace{-20pt}\quad
 %Where $E_{i,k}:v_x\mapsto\delta_{i,x}w_k,\;$ $Q_{i,k}:w_x\mapsto\delta_{i,x}w_k,\;$ and $G_{i,k}:v_x\mapsto\delta_{i,x}v_k.$\par\vspace{-19pt}\quad
-For any $T\in\Lm{V},\exists\,!\,A_{i,j}\in{}\Fbb,T=\textstyle\sum_{j=1}^p\sum_{i=1}^m A_{j,\,i}R_{i,j}\Longrightarrow\Mt{T,u\rightarrow v}={\small\begin{pmatrix}
+For any $T\in\Lm{V},\exists\,!\,A_{i,j}\in{}\Fbb,\,T=\textstyle\sum_{j=1}^p\sum_{i=1}^m A_{j,\,i}R_{i,j}\Longrightarrow\Mt{T,u\rightarrow v}={\small\begin{pmatrix}
 		A_{1,1} &\hspace{-6pt} \cdots &\hspace{-6pt} A_{1,s} &\hspace{-6pt} \cdots &\hspace{-6pt} A_{1,m}\\[-2pt]
 		\vdots  &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots  &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots\\[-4pt]
 		A_{s,1} &\hspace{-6pt} \cdots &\hspace{-6pt} A_{s,s} &\hspace{-6pt} \cdots &\hspace{-6pt} A_{s,m}\\[-2pt]
 		\vdots  &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots  &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots\\[-4pt]
 		A_{p,1} &\hspace{-6pt} \cdots &\hspace{-6pt} A_{p,s} &\hspace{-6pt} \cdots &\hspace{-6pt} A_{p,m}
-\end{pmatrix}}.$\par\vspace{-20pt}\quad
+\end{pmatrix}}$\par\vspace{-20pt}\quad
 $\Longrightarrow\mA\Par{T}=ST=\textstyle\XPar{{\sum_{k=1}^sE_{k,k}}}\XPar{{\textstyle\sum_{j=1}^p\sum_{i=1}^m A_{j,\,i}R_{i,j}}}=\textstyle\sum_{j=1}^s\sum_{i=1}^m A_{i,j}Q_{j,\,i}.$\par\hspace{0pt}
 \;\;$\hText{\Mt[\BigPar]{S,v\rightarrow w}\Mt[\BigPar]{T,u\rightarrow v}=\Mt[\BigPar]{ST,u\rightarrow w}=\\
 \hfill\Mt[\BigPar]{\mA,R\rightarrow Q}\Mt{T,R}=\Mt[\BigBigPar]{\!\mA\Par{T},Q}=}{\small\begin{pmatrix}
@@ -3081,14 +3081,12 @@ If $Tv=0$, then $T$ not inje, so are $TR,RT.$ Othws, $\lambda$ is eigval of $TR.
 %Simlr, $y=z=w=0.$ Then we fail. Thus $T$ has no eigvals.\PfEnd
 %\SepLine
 
-%\Anchor{5A4e15}
-\Anchor{5A'1}\ProblemB{
-	\TextB{Supp $T\in\Lm{V}.$ \,Give a countexa\hspace{1pt}$:$ $\lambda$ is eigval of $T$ $\Longleftrightarrow$ of $T\apostrophe.$}
-}Let $T$ be the forwd shift optor on $V=\FbbP{\infty}.$ No eigvals for $T,$ by Exe (18).\parSol{}
-Define $\psi\in V\apostrophe$ by $\psi\Par{x_1,x_2,\cdots}=x_1.$ Then $\Sbra{T\apostrophe\Par{\psi}}\Par{x_1,x_2,\cdots}=\psi\Par{0,x_1,x_2,\cdots}=0.$\PfEnd
-%\Sbra[3pt]{{\tgsl Req Finide; For [5.6]}} \;${T-\lambda I_V}$ not inv $\Longleftrightarrow\Par{T-\lambda I_V}\apostrophe=T\apostrophe-\lambda I_{V\apostrophe}$ not inv.\PfEnd\vspace{2pt}\parSol{}
-%(a) Supp $\lambda$ is eigval with $v.$ Let $U$ be invar with $U\oplus\Span{v}=V,$ by Exe (4E 39).\parSol{\Ha}
-%Define $\psi\in V\apostrophe$ by $\psi\Par{cv+u}=c.$ Then $\Sbra{T\apostrophe\Par{\psi}}\Par{cv+u}=\psi\BigPar{c\lambda v+Tu}=\lambda c=\lambda\psi\Par{cv+u}.$\vspace{2pt}\parSol{}
+\Anchor{5AT5}\ProblemBX{\TipsN{5}}{
+	\TextA{Supp $S,T\in\Lm{V},p\in\PoFi$. Prove $Sp\Par{TS}=p\Par{ST}S.$}
+}We prove each $S\Par{TS}{^m}=\Par{ST}{^m} S$ by induc. (i) $m=0,1.$ Immed.\parSol{}
+(ii) $m>1.$ $S\Par{TS}{^{m-1}}=\Par{ST}{^{m-1}} S\Rightarrow S\Par{TS}{^{m}}=S\Par{TS}{^{m-1}}\Par{TS}=\Par{ST}{^{m-1}}\Par{ST}S=\Par{ST}{^{m}}S.$\PfEnd\vspace{2pt}
+\AComm If $S$ is inv. Then $p\Par{TS} = S^{-1} p\Par{ST}S,\;p\Par{ST} = Sp\Par{TS}S^{-1}.$\par\Anchor{5BI5}\Anchor{5A4e40}
+\ACoro Becs $S$ is inv, $T\in\Lm{V}$ is arb $\Longleftrightarrow ST=R\in\Lm{V}$ is arb. Hence $p\Par{S^{-1}RS}=S^{-1}p\Par{R}S.$
 \SepLine
 
 %\Anchor{5A4e17}\Anchor{5A16}\ProblemB{
@@ -3131,15 +3129,8 @@ Define $S\in\Lm{V}:v_j\mapsto v,$ \OR $v_j\mapsto\delta_{1,j}v_1.$ Then each $\P
 Thus $\Par{T-\lambda I}S=0\Rightarrow\mA\Par{S}=TS=\lambda S$ with $S\neq 0.$\vspace{2pt}\parSol{}
 (b) Supp $S\neq 0$ and $TS=\lambda S.$ Then $\exists\,v\in V\Backslash\null S.$ Let $u=Sv\Rightarrow Tu=TSv=\lambda Sv=\lambda u.$\parSol{\Hb}
 \Or $TS-\lambda S=\Par{T-\lambda I}S=0\Rightarrow\zeroSubs\neq\range S\subseteq\Null\Par{T-\lambda I}\Rightarrow\Par{T-\lambda I}$ not inje.\PfEnd\vspace{3pt}
-\AComm {If $\mA\Par{S}=ST,\forall S\in\Lm{V}.$ Then the eigvals of $\mA$ are not the eigvals of $T.$}
-\SepLine
-
-\Anchor{5AT5}\ProblemBX{\TipsN{5}}{
-	\TextA{Supp $S,T\in\Lm{V},p\in\PoFi$. Prove $Sp\Par{TS}=p\Par{ST}S.$}
-}We prove each $S\Par{TS}{^m}=\Par{ST}{^m} S$ by induc. (i) $m=0,1.$ Immed.\parSol{}
-(ii) $m>1.$ $S\Par{TS}{^{m-1}}=\Par{ST}{^{m-1}} S\Rightarrow S\Par{TS}{^{m}}=S\Par{TS}{^{m-1}}\Par{TS}=\Par{ST}{^{m-1}}\Par{ST}S=\Par{ST}{^{m}}S.$\PfEnd\vspace{2pt}
-\AComm If $S$ is inv. Then $p\Par{TS} = S^{-1} p\Par{ST}S,\;p\Par{ST} = Sp\Par{TS}S^{-1}.$\par\Anchor{5BI5}\Anchor{5A4e40}
-\ACoro Becs $S$ is inv, $T\in\Lm{V}$ is arb $\Longleftrightarrow ST=R\in\Lm{V}$ is arb. Hence $p\Par{S^{-1}RS}=S^{-1}p\Par{R}S.$
+\AComm {If $\mA:S\mapsto ST.$ Then the eigvals of $\mA$ are not the eigvals of $T$ in general.}
+%TODO:countexa or explanation
 \SepLine
 
 %\ProblemN{\Anchor{5A25}{25}}{
@@ -3179,6 +3170,16 @@ By Exe (26), done. \BigSbra{For $0\neq c_j\in\;\!\!\Bra{c_2,\dots,c_n},$ let $B_
 }Becs $\range T$ finide $\Rightarrow$ not too many. Let $\lambda_1,\dots,\lambda_m$ be the disti eigvals of $T$ with corres $v_1,\dots,v_m.$\parSol{}
 Then $\Par{v_1,\dots,v_m}$ liney indep $\Rightarrow\Par{\lambda_1 v_1,\dots,\lambda_m v_m}$ liney indep, if each $\lambda_k\neq 0.$ \;Othws,\parSol{}
 $\exists\,!\,\lambda_k=0.$ Now $\Bra{\lambda_jv_j:j\neq k}$ liney indep. Thus $m-1\leqslant\dim\range T.$\PfEnd
+\SepLine
+
+%\Anchor{5A4e15}
+\Anchor{5A'1}\ProblemB{
+	\TextB{Supp $T\in\Lm{V}.$ \,Give a countexa\hspace{1pt}$:$ $\lambda$ is eigval of $T$ $\Longleftrightarrow$ of $T\apostrophe.$}
+}Let $T$ be the forwd shift optor on $V=\FbbP{\infty}.$ No eigvals for $T,$ by Exe (18).\parSol{}
+Define $\psi\in V\apostrophe$ by $\psi\Par{x_1,x_2,\cdots}=x_1.$ Then $\Sbra{T\apostrophe\Par{\psi}}\Par{x_1,x_2,\cdots}=\psi\Par{0,x_1,x_2,\cdots}=0.$\PfEnd
+%\Sbra[3pt]{{\tgsl Req Finide; For [5.6]}} \;${T-\lambda I_V}$ not inv $\Longleftrightarrow\Par{T-\lambda I_V}\apostrophe=T\apostrophe-\lambda I_{V\apostrophe}$ not inv.\PfEnd\vspace{2pt}\parSol{}
+%(a) Supp $\lambda$ is eigval with $v.$ Let $U$ be invar with $U\oplus\Span{v}=V,$ by Exe (4E 39).\parSol{\Ha}
+%Define $\psi\in V\apostrophe$ by $\psi\Par{cv+u}=c.$ Then $\Sbra{T\apostrophe\Par{\psi}}\Par{cv+u}=\psi\BigPar{c\lambda v+Tu}=\lambda c=\lambda\psi\Par{cv+u}.$\vspace{2pt}\parSol{}
 \SepLine
 
 %\ProblemN{\Anchor{5A30}{30}}{
