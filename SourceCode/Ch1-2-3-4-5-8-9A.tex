@@ -1222,13 +1222,13 @@ For Exe (10), $\BigPar{AC}{_{j,\cdot}}=\BigSbra{\BigBigPar{\BigPar{AC}{^t}}{_{\c
 }\SepLine
 
 \Anchor{3C9}\BulletPointX\NoteForSmall{[3.52]}\;\;$A\in\FbbP{m,n},c\in\FbbP{n,1}\Rightarrow Ac\in\FbbP{m,1}.$\hfill By \Sbra{4E 3.51(a)}, $\BigPar{Ac}{_{\cdot,1}}=c_1A_{\cdot,1}+\dots+c_nA_{\cdot,n}.$\Blind{\quad}\PfEnd\vspace{4pt}\quad
-\Or $\because\;\BigPar{Ac}{_{j,1}}=\sum_{r=1}^n A_{j,r}c_{r,1}=\BigSbra{\sum_{r=1}^n\BigPar{A_{\cdot,r}c_{r,1}}}_{j,1}=\BigPar{c_1 A_{\cdot,1}+\dots+c_n A_{\cdot,n}}_{j,1}$\vspace{2pt}\par\quad
+\Or $\because\;\BigPar{Ac}{_{j,1}}=\sum_{r=1}^n A_{j,r}c_{r,1}=\BigSbra{{\sum_{r=1}^n\BigPar{A_{\cdot,r}c_{r,1}}}}_{j,1}=\BigPar{c_1 A_{\cdot,1}+\dots+c_n A_{\cdot,n}}_{j,1}$\vspace{2pt}\par\quad
 \Blind{\Or}$\therefore\;\,Ac=A_{\cdot,\cdot}c_{\cdot,1}=\sum_{r=1}^n A_{\cdot,r}c_{r,1}=c_1 A_{\cdot,1}+\dots+c_n A_{\cdot,n}$\;\;\Or $\BigPar{Ac}{_{j,1}}=\BigPar{Ac}{_{j,\cdot}}=A_{j,\cdot}c\in\Fbb.$\PfEnd\vspace{3pt}\quad
 \Or Let $B_V=\Par{v_1,\dots,v_n}.$ Now $Ac=\Mt{Tv,B_W}=\Mt[\BigPar]{T\Par{c_1v_1+\dots+c_nv_n}}=c_1A_{\cdot,1}+\dots+c_nA_{\cdot,n}.$\PfEnd
 \SepLine\pagebreak
 
 \Anchor{3C11}\BulletPointX\Exercise{11}\;\;$a\in\FbbP{1,n},C\in\FbbP{n,\:\!p}\Rightarrow aC\in\FbbP{1,\:\!p}.$\hfill By \Sbra{4E 3.51(b)}, $\BigPar{aC}{_{1,\cdot}}=a_1C_{1,\cdot}+\dots+a_nC_{n,\cdot}.$\Blind{\quad}\PfEnd\vspace{4pt}\quad
-\Or $\because\;\BigPar{aC}{_{1,k}}=\sum_{r=1}^n a_{1,r}C_{r,k}=\BigSbra{\sum_{r=1}^n a_{1,r}\BigPar{C_{r,\cdot}}}_{1,k}=\BigPar{a_1 C_{1,\cdot}+\dots+a_n C_{n,\cdot}}_{1,k}$\vspace{2pt}\par\quad
+\Or $\because\;\BigPar{aC}{_{1,k}}=\sum_{r=1}^n a_{1,r}C_{r,k}=\BigSbra{{\sum_{r=1}^n a_{1,r}\BigPar{C_{r,\cdot}}}}_{1,k}=\BigPar{a_1 C_{1,\cdot}+\dots+a_n C_{n,\cdot}}_{1,k}$\vspace{2pt}\par\quad
 \Blind{\Or}$\therefore\;\,aC=a_{1,\cdot}C_{\cdot,\cdot}=\sum_{r=1}^n a_{1,r}C_{r,\cdot}=a_1 C_{1,\cdot}+\dots+a_n C_{n,\cdot}$\;\;\Or $\BigPar{aC}{_{1,k}}=\BigPar{aC}{_{\cdot,k}}=aC_{\cdot,k}\in\Fbb.$\PfEnd\vspace{4pt}\quad
 \Or \;$aC=\BigBigPar{\Par{aC}{^t}}{^t}=\BigPar{C^ta^t}{^t}=\Sbra{a^t_1\Par{C^t}{_{\cdot,1}}+\dots+a^t_n\Par{C^t}{_{\cdot,n}}}{^t}=a_1C_{1,\cdot}+\dots+a_nC_{n,\cdot}.$\PfEnd
 \SepLine
@@ -1381,7 +1381,7 @@ And (b*) $T$ is surj $\Longleftrightarrow\spn L=W\Longleftrightarrow\spn L_{\mM}
 %\ProblemN{\Anchor{3C15}{15}}{
 	%	\TextA{Supp $A\in\FbbP{n,n},j,k\in\;\!\!\Bra{1,\dots,n}$. Show $\BigPar{A^3}_{j,k}=\sum_{p=1}^n \sum_{r=1}^n A_{j,\,p}A_{p,r}A_{r,k}$.\vspace{6pt}}
 	%}\vspace{-6pt}\AlignEq{}{\BigPar{AAA}_{j,k} &= \BigPar{AA}_{j,\cdot}\hspace{1pt}A_{\cdot,k}=\textstyle\sum_{p=1}^n \BigPar{A_{j,\,p}A_{p,\cdot}}A_{\cdot,k}=\textstyle\sum_{p=1}^n \sum_{r=1}^n A_{j,\,p}A_{p,r}A_{r,k}.\hspace{60pt}\\
-	%	\text{\Or}\;\;\BigPar{AAA}_{j,k} &=\textstyle\sum_{r=1}^n\BigPar{AA}_{j,r}A_{r,k} =\textstyle\sum_{r=1}^n\XPar{\sum_{p=1}^n A_{j,\,p}A_{p,r}}\hspace{1pt}A_{r,k}\\&=\uline{\textstyle\sum_{r=1}^n\left[A_{j,1}\BigPar{A_{1,r}A_{r,k}}+\dots+A_{j,n}\BigPar{A_{n,r}A_{r,k}}\right]}\\&=\textstyle A_{j,1}\sum_{r=1}^n A_{1,r}A_{r,k}+\dots+A_{j,n}\textstyle\sum_{r=1}^n A_{n,r}A_{r,k}=\textstyle\sum_{p=1}^n \sum_{r=1}^n A_{j,\,p}A_{p,r}A_{r,k}.}\PfEnd[-25pt]
+	%	\text{\Or}\;\;\BigPar{AAA}_{j,k} &=\textstyle\sum_{r=1}^n\BigPar{AA}_{j,r}A_{r,k} =\textstyle\sum_{r=1}^n\XPar{{\sum_{p=1}^n A_{j,\,p}A_{p,r}}}\hspace{1pt}A_{r,k}\\&=\uline{\textstyle\sum_{r=1}^n\left[A_{j,1}\BigPar{A_{1,r}A_{r,k}}+\dots+A_{j,n}\BigPar{A_{n,r}A_{r,k}}\right]}\\&=\textstyle A_{j,1}\sum_{r=1}^n A_{1,r}A_{r,k}+\dots+A_{j,n}\textstyle\sum_{r=1}^n A_{n,r}A_{r,k}=\textstyle\sum_{p=1}^n \sum_{r=1}^n A_{j,\,p}A_{p,r}A_{r,k}.}\PfEnd[-25pt]
 %\SepLine
 
 \pagebreak
@@ -1729,9 +1729,9 @@ $\range\mB=\Spn{\small\begin{Bmatrix} \underset{\;,}{Q_{1,1}}, &\hspace{-6pt} \c
 
 \Anchor{3D'4}\ProblemB{
 	\TextB{Supp $A\in\FbbP{n,n}.$ Define $T,S\in\Lm{\FbbP{n,n}}$ by $T\Par{X}=AX,\:S\Par{Y}=YA^t.$ Find $\dim\range ST.$\vspace{2pt}}
-}Becs $A\mEnt{j,\,k}=\BigSbra{\sum_{x=1}^nA_{x,j}\mEnt{x,\,j}}\mEnt{j,\,k}=\sum_{x=1}^nA_{x,j}\mEnt{x,\,k}.$ \;Let $B_{\col A}=\Par{C_{\cdot,1},\dots,C_{\cdot,r}}.$\vspace{2pt}\parSol{}
+}Becs $A\mEnt{j,\,k}=\BigSbra{{\sum_{x=1}^nA_{x,j}\mEnt{x,\,j}}}\mEnt{j,\,k}=\sum_{x=1}^nA_{x,j}\mEnt{x,\,k}.$ \;Let $B_{\col A}=\Par{C_{\cdot,1},\dots,C_{\cdot,r}}.$\vspace{2pt}\parSol{}
 Each $A_{\cdot,j}=R_{1,j}C_{\cdot,1}+\dots+R_{r,j}C_{\cdot,r}\Rightarrow B_{\range T}=\Bra{\mC_{\!j,k}=\sum_{x=1}^nC_{x,j}\mEnt{x,\,k}:1\leqslant j\leqslant r,\,1\leqslant k\leqslant n}.$\vspace{4pt}\parSol{}
-Becs $\mC_{\!j,k}A^t=\mC_{\!j,k}\BigSbra{\sum_{y=1}^nA^t_{k,y}\mEnt{k,\,y}}=\sum_{x=1}^n\sum_{y=1}^nC_{x,j}A_{y,k}\mEnt{x,\,y}.$\vspace{-20pt}\parSol{}
+Becs $\mC_{\!j,k}A^t=\mC_{\!j,k}\BigSbra{{\sum_{y=1}^nA^t_{k,y}\mEnt{k,\,y}}}=\sum_{x=1}^n\sum_{y=1}^nC_{x,j}A_{y,k}\mEnt{x,\,y}.$\vspace{-20pt}\parSol{}
 Simlr, $B_{\range ST}=\Bra{\mX_{\!j,k}=\sum_{x=1}^n\sum_{y=1}^nC_{x,j}C_{y,k}\mEnt{x,\,y}:1\leqslant j,k\leqslant r}.\;\hMath{l}{\left|}{\right.}{\;\mX_{\!j,k}=\small\begin{pmatrix}C_{1,j}C_{1,k} &\hspace{-8pt} \cdots &\hspace{-8pt} C_{1,j}C_{n,k}\\[-4pt]
 		\vdots &\hspace{-8pt} \ddots &\hspace{-8pt} \vdots\\[-4pt]
 		C_{n,j}C_{1,k} &\hspace{-8pt} \cdots &\hspace{-8pt} C_{n,j}C_{n,k}\end{pmatrix}.\\[20pt]\,}$\vspace{-20pt}\parSol{}
@@ -2928,9 +2928,8 @@ Thus ${e_1,e_2}$ are eigvecs of $T$ but not of $S,$ and ${e_3,e_4}$ are eigvecs 
 
 \ProblemN{\Anchor{5A10}{10}}{
 	\TextA{Define $T\in\Lm{\FbbP{n}}$ by $T\Par{x_1,x_2,x_3,\dots,x_n}=\BigPar{x_1,2 x_2,3 x_3,\dots,n x_n}.$}
-	\PrePa\TextA{Find all eigvals and eigvecs;\;\; {\tgnr\large(b)} Find all invarsps of $V$ under $T.$}
-}Let $\Par{e_1,\dots,e_n}$ be the std bss of $\FbbP{n}.$ The eigvals are $\Bra{1,\dots,n}$ of len $\dim\FbbP{n}.$\parSol{}
-Let each $E_k=\Span{e_k}.$ The set of all eigvecs is $\Par{E_1\cup\cdots\cup E_n}\nonzero[\Big].$\parSol{}
+	\TextA{Find all invarsps of $V$ under $T.$\hfill\FontNorm\tgnr Let $\Par{e_1,\dots,e_n}$ be the std bss of $\FbbP{n}.$ Let each $E_k=\Span{e_k}.$}
+}The eigvals are $\Bra{1,\dots,n}$ of len $\dim\FbbP{n}.$ The set of all eigvecs is $\Par{E_1\cup\cdots\cup E_n}\nonzero[\Big].$\parSol{}
 Supp $U$ is invarsp. Then $u=\Par{x_1,x_2,\dots,x_n}\in U\Rightarrow Tu=\Par{x_1,2x_2,\dots,x_n}\in U.$\parSol{}
 And $Tu-u=\BigPar{0,x_2,2x_3,\dots,\Par{n-1}x_n}\in U\Rightarrow\cdots\Rightarrow\Par{0,\dots,0,x_n}\Rightarrow$ each $x_ke_k\in U.$\parSol{}
 Get a $B_U$ and pick all non0 $x_k.$ Forming $\Span{e_{k_1},\dots,e_{k_m}}=U.$\PfEnd\vspace{2pt}
@@ -2953,6 +2952,11 @@ By asum, each $v_j'\in U.$ Thus $v_1,\dots,v_{k-1}\in U.$ So that $v_k=v-v_1-\do
 	\TextA{Supp $V=E\Par{\lambda_1,T}\oplus\cdots\oplus E\Par{\lambda_m,T}.$ Prove $U=E\Par{\lambda_1,T\mmid_U}\oplus\cdots\oplus E\Par{\lambda_m,T\mmid_U}.$}
 }Becs $\forall u\in U,\exists\,!\,v_j\in E\Par{\lambda_j,T},v=v_1+\dots+v_m.$ By \TIPSN{2}, each $v_j\in U.$\PfEnd%%\vspace{2pt}\parSol{}
 %----------\Or \Sbra[3pt]{{\tgsl Req Finide}} \;Using induc on $\dim U=N.$ (i) $N=1.$ Immed. (ii) $N>1.$ Asum it holds for smaller $U.$\parSol{}
+\SepLine
+
+\Anchor{5AT4}\BulletPointX\TipsN{4}\,\,\,Supp $T\in\Lm{\Rbb^2}$ is the countclockws rotat by $\theta\in\Rbb.$ Define $\mC\Par{a,b}=a+\i b.$\TextB{}
+Becs $\Par{{\cos\theta+\i\sin\theta}}\Par{a+\i b}=r\BigPar{{\cos\!\Par{\alpha+\theta}+\i\sin\!\Par{\alpha+\theta}}}.$\vspace{-6pt}\TextB{}
+Hence $T\Par{a,b}=\BigPar{a\cos\theta-b\sin\theta,\,a\sin\theta+b\cos\theta}.$ \:Now $\Mt{T}={}${\normalsize$\begin{pmatrix}\cos\theta & -\sin\theta\\[-4pt]\sin\theta & \Blind{-}\cos\theta\end{pmatrix}$}.\vspace{4pt}
 \SepLine
 
 %\ProblemN{\Anchor{5A8}{8}}{
@@ -2980,16 +2984,14 @@ By asum, each $v_j'\in U.$ Thus $v_1,\dots,v_{k-1}\in U.$ So that $v_k=v-v_1-\do
 
 \ProblemN{\Anchor{5A19}{19}}{
 	\TextA{Supp $n\in\Nbp$. Define $T\in\Lm{\FbbP{n}}$ by $T\Par{x_1,\dots,x_n}=\BigPar{x_1+\dots+x_n,\cdots,x_1+\dots+x_n}.$}
-	\TextA{\FontNorm In other words, the ent of $\Mt{T}$ wrto the std bss are all \,$1$'s.\; \FontLarge Find all eigvals and eigvecs of $T.$\vspace{-2pt}}
+	\TextA{Find all eigvals and eigvecs of $T.$\vspace{-2pt}}
 }Supp $x_k\neq 0$ and $T\Par{x_1,\dots,x_n}=\Par{\lambda x_1,\dots,\lambda x_n}=\BigPar{x_1+\dots+x_n,\dots,x_1+\dots+x_n}.$\parSol{}
 Then (I) $\lambda=0\Rightarrow x_1+\dots+x_n=0.$ \,If $n>1,$ then $\lambda=0$ is eigval; othws not, becs $T=I.$\parSol{}
 \Blind{Then }(II) $\lambda\neq 0\Rightarrow x_1=\dots=x_n\Rightarrow\lambda x_k=n x_k.$ Now $n$ is eigval.\PfEnd\vspace{2pt}\parSol{}
-\Or Becs $\range T=\Bra{\Par{x,\dots,x}\in\FbbP{n}}$ of dim $1.$ By Exe (29). Simlr.\PfEnd\parSol{}
-\Or Supp $n>1.$ Becs $\null T=\Bra{\Par{{-x_2-\dots-x_n,x_2,\dots,x_n}}}$ of dim $n-1>0\Rightarrow 0$ is eigval.\parSol{}
-Notice that $n$ is also eigval corres $\Par{x,\dots,x}\neq 0.$ We show $0,n$ are the only eigvals.\parSol{}
-Supp non0 $x\in\FbbP{n}$ and $\lambda\in\Fbb$ with $Tx=\lambda x.$ Becs $\range T=\Span[\BigPar]{\Par{1,\dots,1}},\exists\,!\,\alpha\in\range T,$\parSol{}
-$\lambda x=\alpha\Rightarrow$ $x$ corres $\lambda$ and $\alpha$ corres $n$ are liney dep. By the ctrapos of [5.10], $\lambda=n.$\PfEnd
-\SepLine\pagebreak
+To show no other eigvals. \;Note that $\range T=\Bra{\Par{x,\dots,x}\in\FbbP{n}}$ of dim $1.$ By Exe (29).\PfEnd\parSol{}
+\Or Supp $n>1,$ and non0 $x\neq0$ with $Tx=\lambda x.$ Becs $\exists\,!\,\alpha\in\range T,\lambda x=\alpha.$\parSol{}
+Now $x$ corres $\lambda$ and $\alpha$ corres $n$ are liney dep. By the ctrapos of [5.10], $\lambda=n.$\PfEnd
+\SepLine
 
 \ProblemN{\Anchor{5A20}{20}}{
 	\TextA{Define $S\in\Lm{\FbbP{\infty}}$ by $S\Par{z_1,z_2,z_3,\cdots} = \Par{z_2,z_3,\cdots}.$}
@@ -3007,11 +3009,6 @@ $\lambda x=\alpha\Rightarrow$ $x$ corres $\lambda$ and $\alpha$ corres $n$ are l
 %Now $S^{-1}TS:\Par{x_0,x_1,\dots,x_n}\mapsto\Par{0x_0,1x_1,2x_2,\dots,nx_n}.$ Simlr to Exe (10).\PfEnd
 %\SepLine
 
-\Anchor{5AT4}\BulletPointX\TipsN{4}\,\,\,Supp $T\in\Lm{\Rbb^2}$ is the countclockws rotat by $\theta\in\Rbb.$ Define $\mC\Par{a,b}=a+\i b.$\TextB{}
-Becs $\Par{{\cos\theta+\i\sin\theta}}\Par{a+\i b}=r\BigPar{{\cos\!\Par{\alpha+\theta}+\i\sin\!\Par{\alpha+\theta}}}.$\vspace{-6pt}\TextB{}
-Hence $T\Par{a,b}=\BigPar{a\cos\theta-b\sin\theta,\,a\sin\theta+b\cos\theta}.$ \:Now $\Mt{T}={}${\normalsize$\begin{pmatrix}\cos\theta & -\sin\theta\\[-4pt]\sin\theta & \Blind{-}\cos\theta\end{pmatrix}$}.\vspace{6pt}
-\SepLine
-
 \ProblemB[]{
 	\TextB{Supp $V$ is finide, $T\in\Lm{V},\lambda\in\Fbb.$}
 }
@@ -3028,6 +3025,16 @@ Let $\delta>0$ be suth, for each eigval $\lambda_k,$ $\lambda_k\not\in\Par{\lamb
 So that for all $\alpha\in\Fbb$ suth $0<\aMid{\alpha-\lambda}<\delta,\Par{T-\alpha I}$ is inv.\PfEnd\vspace{4pt}\parSol{}
 \Or Let $\delta=\min\!\Bra{\aMid{\lambda-\lambda_k}:k\in\envFontSmall\Bra{1,\dots,m}\envFontDefault,\lambda_k\neq\lambda}.$\parSol{}
 Then $\delta>0$ and each $\lambda_k\neq\alpha$ \Sbra{ $\Longleftrightarrow\Par{T-\alpha I}$ is inv } for all $\alpha\in\Fbb$ suth $0<\aMid{\alpha-\lambda}<\delta.$\PfEnd
+\SepLine
+
+%\Anchor{5A4e15}
+\Anchor{5A'1}\ProblemB{
+	\TextB{Supp $T\in\Lm{V}.$ \,Give a countexa\hspace{1pt}$:$ $\lambda$ is eigval of $T$ $\Longleftrightarrow$ of $T\apostrophe.$}
+}Let $T$ be the forwd shift optor on $V=\FbbP{\infty}.$ No eigvals for $T,$ by Exe (18).\parSol{}
+Define $\psi\in V\apostrophe$ by $\psi\Par{x_1,x_2,\cdots}=x_1.$ Then $\Sbra{T\apostrophe\Par{\psi}}\Par{x_1,x_2,\cdots}=\psi\Par{0,x_1,x_2,\cdots}=0.$\PfEnd
+%\Sbra[3pt]{{\tgsl Req Finide; For [5.6]}} \;${T-\lambda I_V}$ not inv $\Longleftrightarrow\Par{T-\lambda I_V}\apostrophe=T\apostrophe-\lambda I_{V\apostrophe}$ not inv.\PfEnd\vspace{2pt}\parSol{}
+%(a) Supp $\lambda$ is eigval with $v.$ Let $U$ be invar with $U\oplus\Span{v}=V,$ by Exe (4E 39).\parSol{\Ha}
+%Define $\psi\in V\apostrophe$ by $\psi\Par{cv+u}=c.$ Then $\Sbra{T\apostrophe\Par{\psi}}\Par{cv+u}=\psi\BigPar{c\lambda v+Tu}=\lambda c=\lambda\psi\Par{cv+u}.$\vspace{2pt}\parSol{}
 \SepLine
 
 %\ProblemN{\Anchor{5A11}{11}}{
@@ -3123,14 +3130,11 @@ If $Tv=0$, then $T$ not inje, so are $TR,RT.$ Othws, $\lambda$ is eigval of $TR.
 
 \Anchor{5A4e37}\ProblemBnoor{4E 37}{
 	\TextA{Supp $V$ is finide, $T\in\Lm{V}$. Define $\mA\in\Lm[\BigPar]{\Lm{V}}$ by $\mA\Par{S} = TS.$}
-	\TextA{Prove the set of eigvals of\;$T$ equals the set of eigvals of $\mA$.}
+	\TextA{Prove the set of eigvals of\;$T$ equals the set of eigvals of $\mA$.\hfill\tgnr\FontNorm Not true if $\mA:S\mapsto ST.$}
 }(a) For $v\neq 0$ and $Tv=\lambda v,$ let $v_1=v\Rightarrow B_V=\Par{v_1,\dots,v_n}.$\parSol{\Ha}
-Define $S\in\Lm{V}:v_j\mapsto v,$ \OR $v_j\mapsto\delta_{1,j}v_1.$ Then each $\Par{T-\lambda I}Sv_j=0.$\parSol{\Ha}
-Thus $\Par{T-\lambda I}S=0\Rightarrow\mA\Par{S}=TS=\lambda S$ with $S\neq 0.$\vspace{2pt}\parSol{}
+Define $S\in\Lm{V}:v_j\mapsto v,$ \OR $v_j\mapsto\delta_{1,j}v_1.$ Then each $\Par{T-\lambda I}Sv_j=0.$\vspace{2pt}\parSol{}
 (b) Supp $S\neq 0$ and $TS=\lambda S.$ Then $\exists\,v\in V\Backslash\null S.$ Let $u=Sv\Rightarrow Tu=TSv=\lambda Sv=\lambda u.$\parSol{\Hb}
-\Or $TS-\lambda S=\Par{T-\lambda I}S=0\Rightarrow\zeroSubs\neq\range S\subseteq\Null\Par{T-\lambda I}\Rightarrow\Par{T-\lambda I}$ not inje.\PfEnd\vspace{3pt}
-\AComm {If $\mA:S\mapsto ST.$ Then the eigvals of $\mA$ are not the eigvals of $T$ in general.}
-%TODO:countexa or explanation
+\Or $TS-\lambda S=\Par{T-\lambda I}S=0\Rightarrow\zeroSubs\neq\range S\subseteq\Null\Par{T-\lambda I}\Rightarrow\Par{T-\lambda I}$ not inje.\PfEnd
 \SepLine
 
 %\ProblemN{\Anchor{5A25}{25}}{
@@ -3170,16 +3174,6 @@ By Exe (26), done. \BigSbra{For $0\neq c_j\in\;\!\!\Bra{c_2,\dots,c_n},$ let $B_
 }Becs $\range T$ finide $\Rightarrow$ not too many. Let $\lambda_1,\dots,\lambda_m$ be the disti eigvals of $T$ with corres $v_1,\dots,v_m.$\parSol{}
 Then $\Par{v_1,\dots,v_m}$ liney indep $\Rightarrow\Par{\lambda_1 v_1,\dots,\lambda_m v_m}$ liney indep, if each $\lambda_k\neq 0.$ \;Othws,\parSol{}
 $\exists\,!\,\lambda_k=0.$ Now $\Bra{\lambda_jv_j:j\neq k}$ liney indep. Thus $m-1\leqslant\dim\range T.$\PfEnd
-\SepLine
-
-%\Anchor{5A4e15}
-\Anchor{5A'1}\ProblemB{
-	\TextB{Supp $T\in\Lm{V}.$ \,Give a countexa\hspace{1pt}$:$ $\lambda$ is eigval of $T$ $\Longleftrightarrow$ of $T\apostrophe.$}
-}Let $T$ be the forwd shift optor on $V=\FbbP{\infty}.$ No eigvals for $T,$ by Exe (18).\parSol{}
-Define $\psi\in V\apostrophe$ by $\psi\Par{x_1,x_2,\cdots}=x_1.$ Then $\Sbra{T\apostrophe\Par{\psi}}\Par{x_1,x_2,\cdots}=\psi\Par{0,x_1,x_2,\cdots}=0.$\PfEnd
-%\Sbra[3pt]{{\tgsl Req Finide; For [5.6]}} \;${T-\lambda I_V}$ not inv $\Longleftrightarrow\Par{T-\lambda I_V}\apostrophe=T\apostrophe-\lambda I_{V\apostrophe}$ not inv.\PfEnd\vspace{2pt}\parSol{}
-%(a) Supp $\lambda$ is eigval with $v.$ Let $U$ be invar with $U\oplus\Span{v}=V,$ by Exe (4E 39).\parSol{\Ha}
-%Define $\psi\in V\apostrophe$ by $\psi\Par{cv+u}=c.$ Then $\Sbra{T\apostrophe\Par{\psi}}\Par{cv+u}=\psi\BigPar{c\lambda v+Tu}=\lambda c=\lambda\psi\Par{cv+u}.$\vspace{2pt}\parSol{}
 \SepLine
 
 %\ProblemN{\Anchor{5A30}{30}}{
@@ -3226,26 +3220,26 @@ Then $Tw=\lambda w,$ where $w=a_0v+a_1u_1+\dots+a_mu_m\neq 0\Leftarrow w\not\in 
 }Supp $\lambda$ is eigval with $v.$ Becs $\dim E\Par{\lambda,T}\geqslant 1\Longleftrightarrow\dim\Range\Par{T-\lambda I}\leqslant\dim V-1=N.$\parSol{}
 Let $B_{\Range\SmallPar{T\,-\,\lambda I}}=\Par{w_1,\dots,w_m}.$ Extend to a liney indep $\Par{w_1,\dots,w_m,\dots,w_N}=B_U.$\parSol{}
 Now $U$ invard $\Par{T-\lambda I}\Rightarrow$ invard $T.$ \;Convly, becs $\dim V\XSlash U=1.$ By (3.A.7), Exe (35).\PfEnd
-\SepLine\pagebreak
+\SepLine
 
-%\Anchor{5A4e16}\ProblemBnoor{4E 16}{
-%	\TextB{Supp $B_V=\Par{v_1,\dots,v_n},T\in\Lm{V},$ and $\lambda$ is eigval.}
-%	\TextB{Let $A_M$ be the max of all ent of $A=\Mt[\BigPar]{T,B_V}.$ Prove $\aMid{\lambda}\leqslant A_M\cdot\dim V.$}
-%}Supp $\lambda$ is eigval with $v.$ Let $v=c_1v_1+\dots+c_nv_n.$\vspace{1pt}\par\quad
-%Becs $\lambda c_1v_1+\dots+\lambda c_nv_n=c_1Tv_1+\dots+c_nTv_n=\sum_{k=1}^nc_k\BigSbra{\sum_{j=1}^n A_{j,k}v_j}=\sum_{j=1}^n\BigSbra{\sum_{k=1}^nc_kA_{j,k}}v_j.$\vspace{2pt}\par\quad
-%Thus $\lambda c_j=\sum_{k=1}^n c_kA_{j,k}\Rightarrow$ each $\aMid{\lambda}\aMid{c_j}=\sum_{k=1}^n\aMid{c_k}\aXMid{A_{j,k}}.$ Let $\aMid{c_M}=\max\!\Bra{\aMid{c_1},\dots,\aMid{c_n}}.$\vspace{2pt}\par\quad
-%Becs $v\neq 0\Rightarrow\aMid{c_M}\neq 0.$ Now $\aMid{\lambda}\aMid{c_M}=\sum_{k=1}^n\aMid{c_k}\aXMid{A_{M,k}}\Rightarrow\aMid{\lambda}\leqslant\sum_{k=1}^n\aMid{A_{M,k}}\leqslant nM.$\PfEnd
-%\SepLine
+\Anchor{5A4e16}\ProblemBnoor{4E 16}{
+	\TextB{Supp $B_V=\Par{v_1,\dots,v_n},T\in\Lm{V},$ and $\lambda$ is eigval.}
+	\TextB{Let $A_M$ be the max of all ent of $A=\Mt[\BigPar]{T,B_V}.$ Prove $\aMid{\lambda}\leqslant A_M\cdot\dim V.$}
+}Supp $\lambda$ is eigval with $v.$ Let $v=c_1v_1+\dots+c_nv_n.$\vspace{1pt}\par\quad
+Becs $\lambda c_1v_1+\dots+\lambda c_nv_n=c_1Tv_1+\dots+c_nTv_n=\sum_{k=1}^nc_k\BigSbra{{\sum_{j=1}^n A_{j,k}v_j}}=\sum_{j=1}^n\BigSbra{{\sum_{k=1}^nc_kA_{j,k}}}v_j.$\vspace{2pt}\par\quad
+Thus $\lambda c_j=\sum_{k=1}^n c_kA_{j,k}\Rightarrow$ each $\aMid{\lambda}\aMid{c_j}=\sum_{k=1}^n\aMid{c_k}\aXMid{A_{j,k}}.$ Let $\aMid{c_M}=\max\!\Bra{\aMid{c_1},\dots,\aMid{c_n}}.$\vspace{2pt}\par\quad
+Becs $v\neq 0\Rightarrow\aMid{c_M}\neq 0.$ Now $\aMid{\lambda}\aMid{c_M}=\sum_{k=1}^n\aMid{c_k}\aXMid{A_{M,k}}\Rightarrow\aMid{\lambda}\leqslant\sum_{k=1}^n\aMid{A_{M,k}}\leqslant nM.$\PfEnd
+\SepLine\pagebreak
 
 \ProblemN{\Anchor{5A24}{24}}{
 	\TextA{Supp $A\in\FbbP{n,n}.$ Define $T\in\Lm{\FbbP{n,1}}$ by $Tx = Ax$. Prove $\lambda$ is eigval of $T$ if\hspace{2pt}$:$}
 	\PrePa\TextA{the sum of the ent in each row of $A$ equals $\lambda.$ \, {\tgnr\large(b)} each col of $A.$}
 }Supp $x\neq0$ and $Ax={\BigPar{A_{j,1}x_1+\dots+A_{j,n}x_n}{_{j=1}^n}}=\alpha\Par{x_j}{_{j=1}^n}=\alpha x.$\par\quad
 (a) Supp $A_{R,1}+\dots+A_{R,n}=\lambda.$ Let $x_1=\dots=x_n.$ Immed.\vspace{2pt}\par\quad
-(b) Supp $A_{1,C}+\dots+A_{n,C}=\lambda.$ Note that $\BigSbra{\sum_{R=1}^n A_{R,\cdot}}x=\sum_{k=1}^n\BigPar{{A_{1,k}+\dots+A_{n,k}}}x_k.$\par\quad\Hb
+(b) Supp $A_{1,C}+\dots+A_{n,C}=\lambda.$ Note that $\BigSbra{{\sum_{R=1}^n A_{R,\cdot}}}x=\sum_{k=1}^n\BigPar{{A_{1,k}+\dots+A_{n,k}}}x_k.$\par\quad\Hb
 Each $\Par{Ax}{_{R,1}}=\lambda\Par{x}{_{R,1}}.$ \,Thus for $x$ with $\sum_{k=1}^nx_k\neq 0,$ $\lambda$ is the corres eigval.\PfEnd\vspace{3pt}\quad\Hb
 \Or Becs $\Par{T-\lambda I}x=\BigPar{\Par{A_{j,1}x_1+\dots+A_{j,n}x_n}-\lambda x_j}{_{j=1}^n}=\Par{y_j}{_{j=1}^n}.$\vspace{1pt}\par\quad\Hb
-Now $y_1+\dots+y_n=\sum_{k=1}^n x_k\BigSbra{\sum_{j=1}^n A_{j,k}}-\lambda\sum_{j=1}^n x_j=0.$ Thus $\Par{T-\lambda I}$ not surj.\PfEnd\vspace{5pt}\quad\Hb
+Now $y_1+\dots+y_n=\sum_{k=1}^n x_k\BigSbra{{\sum_{j=1}^n A_{j,k}}}-\lambda\sum_{j=1}^n x_j=0.$ Thus $\Par{T-\lambda I}$ not surj.\PfEnd\vspace{5pt}\quad\Hb
 \Or Let $\Par{e_1,\dots,e_n}$ be the std bss of $\FbbP{n,1}.$ Define $\psi\in\BigPar{\FbbP{n,1}}\apostrophe$ with each $\psi\Par{e_k}=1.$\vspace{0pt}\par\quad\Hb
 Becs $Ae_k=A_{\cdot,k}=\sum_{j=1}^nA_{j,k}e_j\Rightarrow\psi\Sbra{\Par{T-\lambda I}{e_k}}=\psi\BigBigPar{{\sum_{j=1}^n A_{j,k}e_j}-\lambda e_k}=\sum_{j=1}^n A_{j,k}-\lambda=0.$\PfEnd\vspace{5pt}\quad\Hb
 \Or Define $S\in\Lm{\FbbP{n,1}}$ by $Sx=A^tx.$ \;By (a), \Sbra{3.F \TIPSN{4}}, and Exe (15, 4E 15),\par\quad\Hb
@@ -3260,7 +3254,7 @@ the sum of the ent in each row of $A^t$ equals $\lambda\Rightarrow \lambda$ is e
 (b) Supp $A_{R,1}+\dots+A_{R,n}=\lambda.$ Note that $\sum_{C=1}^nxA_{\cdot,C}=\sum_{j=1}^n\BigPar{A_{j,1}+\dots+A_{j,n}}x_j.$\vspace{0pt}\par\quad\Hb
 Each $\Par{xA}{_{1,C}}=\lambda\Par{x}{_{1,C}}.$ \,Thus for $x$ suth $\sum_{k=1}^nx_k\neq 0,$ $\lambda$ is the corres eigval.\PfEnd\vspace{3pt}\quad\Hb
 \Or Becs $\Par{T-\lambda I}x=\BigPar{\Par{x_1 A_{1,k}+\dots+x_nA_{n,k}}-\lambda x_k}{_{k=1}^n}=\Par{y_k}{_{k=1}^n}.$\vspace{1pt}\par\quad\Hb
-Now $y_1+\dots+y_n=\sum_{j=1}^n x_j\BigSbra{\sum_{k=1}^n A_{j,k}}-\lambda\sum_{k=1}^n x_k=0.$\PfEnd\vspace{5pt}\quad\Hb
+Now $y_1+\dots+y_n=\sum_{j=1}^n x_j\BigSbra{{\sum_{k=1}^n A_{j,k}}}-\lambda\sum_{k=1}^n x_k=0.$\PfEnd\vspace{5pt}\quad\Hb
 \Or Simlr. Becs $e_jA=A_{j,\cdot}=\sum_{k=1}^n A_{j,k}e_k\Rightarrow\psi\Sbra{\Par{T-\lambda I}{e_j}}={\sum_{k=1}^n A_{j,k}}-\lambda=0.$\PfEnd\vspace{4pt}\quad\Hb
 \Or Define $S\in\Lm{\FbbP{1,n}}$ by $Sx=xA^t\Rightarrow S=\Phi{^{-1}}T\apostrophe\Phi.$ \;Simlr and by \Sbra{3.D \TIPSN{3}}.
 %Let $\Par{\varphi_1,\dots,\varphi_n}$ be the dual bss. Define $\Phi$ by $\Phi\Par{e_k}=\varphi_k.$\par\quad\Hb
@@ -3672,7 +3666,7 @@ By (3.E.13), $B_V=\Par{u_1,\dots,u_p,w_1,\dots,w_q}.$ Now each $Tw_j\in\Span{u_1
 %\Anchor{5C1}\Anchor{5C4e3}\ProblemN{3}{
 %	\TextA{Supp $T\in\Lm{V}$ is diag. Prove $V=\null T\oplus\range T.$}
 %}Let $U=E\Par{\lambda_1,T}\oplus\cdots\oplus E\Par{\lambda_m,T},$ where each $\lambda_k\neq 0$ and $B_{E\SmallPar{\lambda_k,T}}=\Par{v_{1,k},\dots,v_{M_k,k}}.$\parSol{}
-%By (3.B.12), $\range T=\Bra{Tu:u\in U}=\BigBra{\sum_{k=1}^m\lambda_k\Par{a_{1,k}v_{1,k}+\dots+a_{M_k,k}v_{M_k,k}}:a_{j,k}\in\Fbb}=U.$\PfEnd\vspace{2pt}
+%By (3.B.12), $\range T=\Bra{Tu:u\in U}=\BigBra{{\sum_{k=1}^m\lambda_k\Par{a_{1,k}v_{1,k}+\dots+a_{M_k,k}v_{M_k,k}}:a_{j,k}\in\Fbb}}=U.$\PfEnd\vspace{2pt}
 %\AExa Convly not true. Define the inv $T\in\Lm{\Rbb^2}:\Par{x,y}\mapsto\Par{{-y,x}}.$ No eigvals.
 %\SepLine
 
