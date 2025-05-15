@@ -3038,15 +3038,20 @@ Then $\delta>0$ and each $\lambda_k\neq\alpha$ \Sbra{ $\Longleftrightarrow\Par{T
 %\SepLine
 
 \ProblemN{\Anchor{5A15}{15}}{
-	\TextA{Supp $T\in\Lm{V}$. Supp $S\in\Lm{V}$ is inv.}
+	\TextA{Supp $R,S,T\in\Lm{V},$ and $S$ is inv.}
 	\PrePa\TextA{Prove $T$ and $S^{-1}TS$ have the same eigvals.}
 	\PrePb\TextA{Describe the relationship between eigvecs of $T$ and eigvecs of $S^{-1}TS.$}
+	\PrePc\TextA{Supp $R$ and $T$ have the same eigvals. Then $\exists$ inv $P\in\Lm{V},\,R=P^{-1}TP.$}
+	\PrePd\TextA{Supp $R,T$ have the same eigvecs. Then $RT=TR.$}
+	\Anchor{5A23}\PrePe\TextA{Prove $RT$ and $TR$ have the same eigvals.\vspace{2pt}}
 }(a) $\lambda$ is an eigval of $T$ with an eigvec $v\Rightarrow S^{-1}TS\Par{\uline{S^{-1}v}}=S^{-1}Tv=S^{-1}\Par{\lambda v}=\uline{\lambda S^{-1}v}.$\parSol{\Ha}
 $\lambda$ is an eigval of $S^{-1}TS$ with an eigvec $v\Rightarrow S\Par{S^{-1}TS}v=T\uline{Sv}=\uline{\lambda Sv}.$\vspace{2pt}\parSol{\Ha}
 \Or Note that $S\Par{S^{-1}TS}S^{-1}=T.$ Every eigval of $S^{-1}TS$ is an eigval of $S\Par{S^{-1}TS}S^{-1}=T.$\vspace{2pt}\parSol{\Ha}
 \Or $Tv=\lambda v\Longleftrightarrow{TS}{u}=\lambda Su\Longleftrightarrow\Par{S^{-1}TS}{u}=\lambda u.$ Where $v=Su.$\parSol{\Ha}
 \Blind{\Or}$\Par{S^{-1}TS}{u}=\lambda u\Longleftrightarrow{S^{-1}T}{v}=\lambda S^{-1}v\Longleftrightarrow Tv=\lambda v.$ Where $u=S^{-1}v.$\vspace{4pt}\parSol{}
-(b) $E\Par{\lambda,T}=\Bra{Su:u\in E\Par{\lambda,S^{-1}TS}};\;E\Par{\lambda,S^{-1}TS}=\Bra{S^{-1}v:v\in E\Par{\lambda,T}}.$\PfEnd
+(b) $E\Par{\lambda,T}=\Bra{Su:u\in E\Par{\lambda,S^{-1}TS}};\;E\Par{\lambda,S^{-1}TS}=\Bra{S^{-1}v:v\in E\Par{\lambda,T}}.$\vspace{3pt}\parSol{}
+(e) \!\Sbra{{\tgsl False if infinide. See Exe (18, 20).}} Supp $v\neq 0$ and $RTv=\lambda v\Rightarrow T\Par{RTv}=\lambda Tv=TR\Par{Tv}.$\parSol{\He}
+If $Tv=0$, then $T$ not inje, so are $TR,RT.$ Othws, $\lambda$ is eigval of $TR.$ \;Rev the roles.\PfEnd
 \SepLine
 
 %\ProblemN{\Anchor{5A17}{17}}{
@@ -3076,13 +3081,14 @@ $\lambda$ is an eigval of $S^{-1}TS$ with an eigvec $v\Rightarrow S\Par{S^{-1}TS
 %Simlr, $y=z=w=0.$ Then we fail. Thus $T$ has no eigvals.\PfEnd
 %\SepLine
 
-\Anchor{5A4e15}\ProblemBnoor{4E 15}{
-	\TextB{Show $\lambda$ is eigval of $T$ $\Longleftrightarrow$ of $T\apostrophe.$}
-}\Sbra[3pt]{{\tgsl Req Finide; For [5.6]}} \;${T-\lambda I_V}$ not inv $\Longleftrightarrow\Par{T-\lambda I_V}\apostrophe=T\apostrophe-\lambda I_{V\apostrophe}$ not inv.\PfEnd\vspace{2pt}\parSol{}
-(a) Supp $\lambda$ is eigval with $v.$ Let $U$ be invar with $U\oplus\Span{v}=V,$ by Exe (4E 39).\parSol{\Ha}
-Define $\psi\in V\apostrophe$ by $\psi\Par{cv+u}=c.$ Then $\Sbra{T\apostrophe\Par{\psi}}\Par{cv+u}=\psi\BigPar{c\lambda v+Tu}=\lambda c=\lambda\psi\Par{cv+u}.$\vspace{2pt}\parSol{}
-(b) A countexa: Let $T$ be the forwd shift optor on $V=\FbbP{\infty}.$ No eigvals for $T,$ by Exe (18).\parSol{\Hb}
+%\Anchor{5A4e15}
+\Anchor{5A'1}\ProblemB{
+	\TextB{Supp $T\in\Lm{V}.$ \,Give a countexa\hspace{1pt}$:$ $\lambda$ is eigval of $T$ $\Longleftrightarrow$ of $T\apostrophe.$}
+}Let $T$ be the forwd shift optor on $V=\FbbP{\infty}.$ No eigvals for $T,$ by Exe (18).\parSol{}
 Define $\psi\in V\apostrophe$ by $\psi\Par{x_1,x_2,\cdots}=x_1.$ Then $\Sbra{T\apostrophe\Par{\psi}}\Par{x_1,x_2,\cdots}=\psi\Par{0,x_1,x_2,\cdots}=0.$\PfEnd
+%\Sbra[3pt]{{\tgsl Req Finide; For [5.6]}} \;${T-\lambda I_V}$ not inv $\Longleftrightarrow\Par{T-\lambda I_V}\apostrophe=T\apostrophe-\lambda I_{V\apostrophe}$ not inv.\PfEnd\vspace{2pt}\parSol{}
+%(a) Supp $\lambda$ is eigval with $v.$ Let $U$ be invar with $U\oplus\Span{v}=V,$ by Exe (4E 39).\parSol{\Ha}
+%Define $\psi\in V\apostrophe$ by $\psi\Par{cv+u}=c.$ Then $\Sbra{T\apostrophe\Par{\psi}}\Par{cv+u}=\psi\BigPar{c\lambda v+Tu}=\lambda c=\lambda\psi\Par{cv+u}.$\vspace{2pt}\parSol{}
 \SepLine
 
 %\Anchor{5A4e17}\Anchor{5A16}\ProblemB{
@@ -3110,36 +3116,22 @@ Define $\psi\in V\apostrophe$ by $\psi\Par{x_1,x_2,\cdots}=x_1.$ Then $\Sbra{T\a
 %\Or $T\Par{Tu}=9u\Rightarrow T^2-9=\Par{T-3I}\Par{T+3I}$ is not injective $\Rightarrow 3$ or $-3$ is an eigval.\PfEnd
 %\SepLine
 
-\ProblemN{\Anchor{5A23}{23}}{
-	\TextA{Supp $V$ is finide, and $S, T\in\Lm{V}$. Prove $ST$ and $TS$\, have the same eigvals.}
-}\!\Sbra{{\tgsl False if infinide. See Exe (18, 20).}} Supp $v\neq 0$ and $STv=\lambda v\Rightarrow T\Par{STv}=\lambda Tv=TS\Par{Tv}.$\parSol{}
-If $Tv=0$, then $T$ not inje, so are $TS,ST.$ Othws, $\lambda$ is eigval of $TS.$ \,Rev the roles in asum.\PfEnd
-\SepLine
-
-%\Anchor{5C6}\ProblemBnoor{5.C.6}{
-%	\TextB{Supp $T\in\Lm{V}$ has $n=\dim V$ disti eigvals and $S\in\Lm{V}$ has the same eigvecs}
-%	\TextB{{\FontNorm but might not with the same eigvals.} \;Prove $ST=TS.$}
-%}Let each $\lambda_jv_j=Tv_j,\mu_jv_j=Sv_j.$ Where $\mu_1,\dots,\mu_n$ might have repeti.\parSol{}
-%Becs $B_V=\Par{v_1,\dots,v_n}.$ Each $\Par{ST}v_j=\mu_j\lambda_j v_j=\Par{TS}v_j\Rightarrow ST=TS.$\PfEnd
+%\ProblemN{\Anchor{5A23}{23}}{
+%	\TextA{Supp $V$ is finide, and $S, T\in\Lm{V}$. Prove $ST$ and $TS$\, have the same eigvals.}
+%}\!\Sbra{{\tgsl False if infinide. See Exe (18, 20).}} Supp $v\neq 0$ and $STv=\lambda v\Rightarrow T\Par{STv}=\lambda Tv=TS\Par{Tv}.$\parSol{}
+%If $Tv=0$, then $T$ not inje, so are $TS,ST.$ Othws, $\lambda$ is eigval of $TS.$ \,Rev the roles in asum.\PfEnd
 %\SepLine
-
-%\Anchor{5C12}\ProblemBnoor{5.C.12}{
-%	\TextA{Supp $V$ is finide, $R,T\in\Lm{V}$ has same $\dim V$ eigvals $\lambda_1,\dots,\lambda_n.$}
-%	\TextA{Prove $\exists$ inv $S\in\Lm{V}$ suth $R=S^{-1}TS.$}
-%}Let $\Par{u_1,\dots,u_n},\Par{v_1,\dots,v_n}$ be the corres eigvecs of $R,T$ respectly, so be the bses of $T$.\parSol{}
-%Becs each $Ru_k=\lambda_ku_k,Tv_k=\lambda_kv_k.$ Define each $S\Par{u_k}=v_k.$\PfEnd
-%\SepLine
+\pagebreak
 
 \Anchor{5A4e37}\ProblemBnoor{4E 37}{
-	\TextB{Supp $V$ is finide, $T\in\Lm{V}$. Define $\mA\in\Lm[\BigPar]{\Lm{V}}$ by $\mA\Par{S} = TS.$}
-	\TextB{Prove the set of eigvals of\;$T$ equals the set of eigvals of $\mA$.}
+	\TextA{Supp $V$ is finide, $T\in\Lm{V}$. Define $\mA\in\Lm[\BigPar]{\Lm{V}}$ by $\mA\Par{S} = TS.$}
+	\TextA{Prove the set of eigvals of\;$T$ equals the set of eigvals of $\mA$.}
 }(a) For $v\neq 0$ and $Tv=\lambda v,$ let $v_1=v\Rightarrow B_V=\Par{v_1,\dots,v_n}.$\parSol{\Ha}
 Define $S\in\Lm{V}:v_j\mapsto v,$ \OR $v_j\mapsto\delta_{1,j}v_1.$ Then each $\Par{T-\lambda I}Sv_j=0.$\parSol{\Ha}
 Thus $\Par{T-\lambda I}S=0\Rightarrow\mA\Par{S}=TS=\lambda S$ with $S\neq 0.$\vspace{2pt}\parSol{}
 (b) Supp $S\neq 0$ and $TS=\lambda S.$ Then $\exists\,v\in V\Backslash\null S.$ Let $u=Sv\Rightarrow Tu=TSv=\lambda Sv=\lambda u.$\parSol{\Hb}
-\Or $TS-\lambda S=\Par{T-\lambda I}S=0\Rightarrow\zeroSubs\neq\range S\subseteq\Null\Par{T-\lambda I}\Rightarrow\Par{T-\lambda I}$ not inje.\PfEnd
-%\vspace{2pt}
-%\AComm {If $\mA\Par{S}=ST,\forall S\in\Lm{V}.$ Then the eigvals of $\mA$ are not the eigvals of $T.$}
+\Or $TS-\lambda S=\Par{T-\lambda I}S=0\Rightarrow\zeroSubs\neq\range S\subseteq\Null\Par{T-\lambda I}\Rightarrow\Par{T-\lambda I}$ not inje.\PfEnd\vspace{3pt}
+\AComm {If $\mA\Par{S}=ST,\forall S\in\Lm{V}.$ Then the eigvals of $\mA$ are not the eigvals of $T.$}
 \SepLine
 
 \Anchor{5AT5}\ProblemBX{\TipsN{5}}{
@@ -3225,16 +3217,15 @@ If $\Par{T-\lambda I}\Big|{_U}=T\mmid_U-\lambda I_U$ not inje. Then $\lambda$ is
 \Or Let $B_U=\Par{u_1,\dots,u_m}\Rightarrow\BigPar{Tv-\lambda v,\,Tu_1-\lambda u_1,\cdots,Tu_m-\lambda u_m}$ of len $\Par{m+1}$ liney dep in $U.$\par\quad
 So that $a_0\Par{T-\lambda I}v+a_1\Par{T-\lambda I}u_1+\dots+a_m\Par{T-\lambda I}u_m=0,\exists\,a_k\neq 0.$\par\quad
 Then $Tw=\lambda w,$ where $w=a_0v+a_1u_1+\dots+a_mu_m\neq 0\Leftarrow w\not\in U\Leftarrow v\not\in U.$\PfEnd\vspace{4pt}\Anchor{5A36}
-\AExa Let $V=\FbbP{\Nbb},U=\Bra{\,x\in\FbbP{\Nbb}:x_1=0},T\in\Lm{V}:e_k=e_{k+1}.$ Then $\Par{T\XSlash U}\Par{e_1+U}=e_2+U=0.$
+\AExa Let $V=\FbbP{\Nbb},U=\Bra{\,x\in\FbbP{\Nbb}:x_1=0},T\in\Lm{V}:e_k\mapsto e_{k+1}.$ Then $\Par{T\XSlash U}\Par{e_1+U}=e_2+U=0.$
 \SepLine
 
 \Anchor{5A4e39}\ProblemBnoor{4E 39}{
 	\TextB{Supp $T\in\Lm{V},$ $V$ is finide. Prove $\exists$ eigval of $T$ $\Longleftrightarrow\exists$ invarsp $U$ of dim $\dim V-1$.}
-}(a) Supp $\lambda$ is eigval with $v.$ Becs $\dim E\Par{\lambda,T}\geqslant 1\Longleftrightarrow\dim\Range\Par{T-\lambda I}\leqslant\dim V-1=N.$\parSol{\Ha}
-Let $B_{\Range\SmallPar{T\,-\,\lambda I}}=\Par{w_1,\dots,w_m},\,B_{E\SmallPar{\lambda,\,T}}=\Par{u_1,\dots,u_n},\;B_U=\Par{w_1,\dots,w_m,u_1,\dots,u_{N\,-\,m}}.$\vspace{1pt}\parSol{\Ha}
-\ANote $U\not\in\Scom{V}{\Span{v}}$ unless $u_n=v.$\vspace{3pt}\parSol{}
-(b) Convly, becs $\dim V\XSlash U=1.$ By (3.A.7), Exe (35).\PfEnd
-\SepLine
+}Supp $\lambda$ is eigval with $v.$ Becs $\dim E\Par{\lambda,T}\geqslant 1\Longleftrightarrow\dim\Range\Par{T-\lambda I}\leqslant\dim V-1=N.$\parSol{}
+Let $B_{\Range\SmallPar{T\,-\,\lambda I}}=\Par{w_1,\dots,w_m}.$ Extend to a liney indep $\Par{w_1,\dots,w_m,\dots,w_N}=B_U.$\parSol{}
+Now $U$ invard $\Par{T-\lambda I}\Rightarrow$ invard $T.$ \;Convly, becs $\dim V\XSlash U=1.$ By (3.A.7), Exe (35).\PfEnd
+\SepLine\pagebreak
 
 %\Anchor{5A4e16}\ProblemBnoor{4E 16}{
 %	\TextB{Supp $B_V=\Par{v_1,\dots,v_n},T\in\Lm{V},$ and $\lambda$ is eigval.}
@@ -3260,7 +3251,7 @@ Becs $Ae_k=A_{\cdot,k}=\sum_{j=1}^nA_{j,k}e_j\Rightarrow\psi\Sbra{\Par{T-\lambda
 the sum of the ent in each row of $A^t$ equals $\lambda\Rightarrow \lambda$ is eigval of $S=\Phi^{-1}T\apostrophe\Phi,$ so of $T\apostrophe,$ of $T.$\PfEnd
 \SepLine
 
-\Anchor{5A'1}\ProblemB{
+\Anchor{5A'2}\ProblemB{
 	\TextB{Supp $A\in\FbbP{n,n}.$ Define $T\in\Lm{\FbbP{1,n}}$ by $Tx = xA.$ Prove $\lambda$ is eigval of $T$ if\hspace{2pt}$:$}
 	\PrePa\TextB{the sum of the ent in each col of $A$ equals $\lambda.$ \, {\tgnr\large(b)} each row of $A.$}
 }Supp $x\neq 0$ and $xA=\BigPar{x_1A_{1,k}+\dots+x_nA_{n,k}}{_{k=1}^n}=\alpha\Par{x_k}{_{k=1}^n}=\alpha x.$\par\quad
