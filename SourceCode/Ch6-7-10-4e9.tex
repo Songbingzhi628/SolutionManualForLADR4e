@@ -856,6 +856,13 @@ Then $A\mKf{i,\,j}{\alpha}=A+\alpha\:\!A\:\!\mEnt{i,\,j},$ which is the result o
 We stop at step $\Par{n-1}.$ \,Becs each $\delta\Par{R_{k+1}}=\delta\Par{R_k}.$\PfEnd
 \SepLine
 
+%\Anchor{4e9D1}\ProblemN{D.1}{
+%	\TextA{Supp $v\in V,w\in W.$ Prove $v\otimes w=0\Rightarrow v=0$ or $w=0.$}
+%}$\forall\varphi\in V\apostrophe,\tau\in W\apostrophe,\,\varphi\Par{v}\,\tau\Par{w}=0.$\parSol{}
+%Asum $v\neq0\Rightarrow\exists\,\varphi\Par{v}\neq0\Rightarrow w=0.$ Simlr for $w\neq0.$\PfEnd\parSol{}
+%\Or We show ctrapos. Supp $v,w\neq0\Rightarrow\exists\,\varphi\Par{v}=\tau\Par{w}=1.$\PfEnd
+%\SepLine
+
 \Anchor{4e9D}\ProblemN{D.}{
 	\TextA{}
 }
@@ -864,5 +871,19 @@ We stop at step $\Par{n-1}.$ \,Becs each $\delta\Par{R_{k+1}}=\delta\Par{R_k}.$\
 \Anchor{4e9D}\ProblemN{D.}{
 	\TextA{}
 }
+\SepLine\pagebreak
+
+\ProblemB{
+	\TextB{Supp $S\in\Lm{V},T\in\Lm{W},$ \FontNorm$B_V=\Par{e_1,\dots,e_n},\,B_W=\Par{\,f_1,\dots,f_m},\;A=\Mt{S,B_V},B=\Mt{T,B_W}.$\vspace{1pt}}
+	\Anchor{4e9D9}\PrePa\TextB{Prove $\exists\,!\,\mA\in\Lm{V\otimes W}:v\otimes w\mapsto Sv\otimes Tw.$\FontNorm\tgnr\hfill Denote it by $S\otimes T.$}
+	\Anchor{4e9D10}\PrePb\TextB{Prove $S\otimes T$ inv $\Longleftrightarrow S,T$ inv.\FontNorm\tgnr\hfill$\Par{S\otimes T}{^{-1}}=S^{-1}\otimes T^{-1}.$}
+	\Anchor{4e9D11}\PrePc\TextB{Supp $V,W$ are inner prodsps. Prove $\Par{S\otimes T}{^*}=S^*\otimes T^*.$}
+}(a) Define $\mA\Par{e_j\otimes\:\!f_k}=Se_j\otimes T\:\!f_k.$ \;Using liney map lemma.\parSol{\Ha}
+\Or Define biliney $\Gamma:V\times W\rightarrow V\otimes W$ by $\Gamma:\Par{v,w}\mapsto Sv\otimes Tw.$ \;Let $\mA=\hat{\Gamma}\in\Lm{V\otimes W}.$\vspace{2pt}\parSol{}
+(b) Supp $S$ or $T$ not inv. Let some $B_{\null S}\subseteq B_V\Rightarrow Se_i=0\Rightarrow\mA\Par{e_i,w}=0\otimes Tw=0.$ Simlr for $T.$\vspace{3pt}\parSol{}
+(c) $\BigAng{Sv\otimes Tw,\,u\otimes x}=\Ang{Sv,u}\Ang{Tw,x}=\Ang{v,S^*u}\Ang{w,T^*x}=\BigAng{v\otimes w,S^*u\otimes T^*x}.$\vspace{3pt}\parSol{\Hc}
+\Or $\mA\Par{v\otimes w}={\sum_{j=1}^n\sum_{k=1}^m}\Par{a_jb_k}\Par{Se_j\otimes T\:\!f_k}={\sum_{j=1}^n\sum_{k=1}^m}\Par{a_jb_k}\sum_{x=1}^n\sum_{y=1}^mA_{x,j}B_{y,k}\Par{e_x\otimes\:\!f_y}.$\vspace{2pt}\parSol{\Hc}
+$\BigAng{Sv\otimes Tw,\,{u\otimes r}}={\sum_{j=1}^n\sum_{k=1}^m}\Par{a_jb_k}\sum_{x=1}^n\sum_{y=1}^mA_{x,j}\:\!\overline{c_x}\,B_{y,k}\:\!\overline{d_y}$\vspace{2pt}\parSol{\Hc}
+$=\BigAng{v\otimes w,\,\mA^*\Par{u\otimes r}}=\BigAng{v\otimes w,\,{\sum_{x=1}^n\sum_{y=1}^m}\Par{c_x\:\!d_y}\sum_{j=1}^n\sum_{k=1}^m\overline{A_{x,j}B_{y,k}}\Par{e_j\otimes\:\!f_k}}.$\PfEnd
 \SepLine
 \ChEnd
