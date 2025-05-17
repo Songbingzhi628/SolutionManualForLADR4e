@@ -2430,28 +2430,28 @@ $\forall\Par{x_1,\dots,x_m}\in\FbbP{m},\Gamma\apostrophe\BigPar{\Psi\Par{x_1,\do
 \ProblemB{
 	\TipsN{3}\,\,\,\TextB{Supp $I$ is a subsp of $U.$ Supp $U$ is a subsp of $V.$}
 	\IndentTipsN{3}\TextB{Let $V=S_V I\oplus I=S_V U\oplus U.$ \;Let $U=S_U I\oplus I.$ \;Then $V=S_V U\oplus S_U I\oplus I.$\vspace{2pt}}
-	\IndentTipsN{3}\TextB{Supp $S_V I=\Pure V\!\XSlash I,$ simlr for $S_V U,S_U I.$ \;Prove $S_V I=S_V U\oplus S_U I.$}
+	\IndentTipsN{3}\TextB{Supp $S_V I=\Pure V\!\!\:\XSlash I,$ simlr for $S_V U,S_U I.$ \;Prove $S_V I=S_V U\oplus S_U I.$}
 	}$\forall v_i\in S_V I,v_i=v_u+u,\exists\,!\,v_u\in S_V U,u\in U\Rightarrow\exists\,!\,u_i\in S_U I,i\in I,v_i=v_u+u_i+i.$\parSol{}
-又 $v_i\in\Pure V\XSlash I.$ Hence $i=0,$ and $v_i\in S_V U\oplus S_U I.$ Now becs $S_V U,U\subseteq S_V I.$\PfEnd
+又 $v_i\in\Pure V\!\!\:\XSlash I.$ Hence $i=0,$ and $v_i\in S_V U\oplus S_U I.$ Now becs $S_V U,U\subseteq S_V I.$\PfEnd
 \SepLine
 
 \ProblemB{
 	\TipsN{4}\,\,\,\TextB{Supp $T\in\Lm{V,W}$ is inv, $V=M\oplus N,\range T\mmid_M=X,\range T\mmid_N=Y.$}
-	\IndentTipsN{4}\TextB{Then $W=\range T=X\oplus Y.$ Show $\Pure V\!\XSlash M=N\Longleftrightarrow\Pure W\XSlash X=Y.$}
+	\IndentTipsN{4}\TextB{Then $W=\range T=X\oplus Y.$ Show $\Pure V\!\!\;\XSlash M=N\Longleftrightarrow\Pure W\XSlash X=Y.$}
 	}Define $S_1:V\XSlash M\rightarrow V$ and $S_2:W\XSlash X\rightarrow W$ by $S_1:v+M\mapsto v$ and $S_2:w+X\mapsto w.$\parSol{}
 Now $v=v_m+v_n\Longleftrightarrow Tv=Tv_m+Tv_n.$ We show $S_1\Par{v+M}=v_n\Longleftrightarrow S_2\Par{Tv+X}=Tv_n.$\parSol{}
 (a) Let $S_2\Par{Tv_n+X}=Tv_n'.$ Then $Tv_n-Tv_n'\in X\Longleftrightarrow v_n-v_n'=v_m'\in M,v=v_n'+\Par{v_m'+v_m}.$\parSol{}
 (b) Let $S_1\Par{v_n+M}=v_n'.$ Then $v_n-v_n'\in M\Longleftrightarrow Tv_n-Tv_n'=Tv_m'\in X,Tv=Tv_n'+\Par{Tv_m'+Tv_m}.$\parSol{}
-Hence by def, $\Pure V\XSlash M=\range S_1=N\Longleftrightarrow\Pure W\XSlash X=\range S_2=Y.$\PfEnd
+Hence by def, $\Pure V\!\!\;\XSlash M=\range S_1=N\Longleftrightarrow\Pure W\XSlash X=\range S_2=Y.$\PfEnd
 \SepLine
 
 \ProblemN{3.F.23}{
 	\TextA{Supp $U$ and $W$ are subsps of $V$. Prove $\BigPar{U\cap W}{^0}\subseteq U^0+W^0$.}
 }Let $I=U\cap W.$ \,Using \Sbra{3.E \TIPSN{3}}. Supp $\varphi\in I^0.$\vspace{-10pt}\parSol{}
-\!$\hText{$Now $S_V I=S_V U\oplus S_U I=S_V W\oplus S_W I.\\$Let $\Span{x}=\Pure V\XSlash\null\varphi.$ If $x=0$ then done.$\\\;\\\;}\qquad\qquad\qquad\qquad\hText{$\includegraphics[width=80pt]{diagram3F-1}$\\\;\\\;}$\vspace{-42pt}\parSol{}
+\!$\hText{$Now $S_V I=S_V U\oplus S_U I=S_V W\oplus S_W I.\\$Let $\Span{x}=\Pure V\!\!\:\XSlash\null\varphi.$ If $x=0$ then done.$\\\;\\\;}\qquad\qquad\qquad\qquad\hText{$\includegraphics[width=80pt]{diagram3F-1}$\\\;\\\;}$\vspace{-42pt}\parSol{}
 Now $0\neq x\in S_V I\Rightarrow\exists\,!\,\Par{u_v,i_u,w_v,i_w}\in S_V U\times S_U I\times S_V W\times S_W I,$\parSol{}
 $x=u_v+i_u=w_v+i_w.$ Define $\alpha\in U^0,\beta\in W^0$ by $\alpha:u_v\mapsto 1,u\mapsto 0,$ and $\beta:i_u\mapsto 1,i\mapsto 0,$\parSol{}
-for all $u\in\Pure V\XSlash\Span{u_v}$ and $i\in\Pure V\XSlash\Span{i_u}.$ \OR Define $\rho\in W^0,\gamma\in U^0,$ simlr.\parSol{}
+for all $u\in\Pure V\!\!\:\XSlash\Span{u_v}$ and $i\in\Pure V\!\!\:\XSlash\Span{i_u}.$ \OR Define $\rho\in W^0,\gamma\in U^0,$ simlr.\parSol{}
 Then $\varphi=\alpha+\beta=\rho+\gamma\in U^0+W^0.$\PfEnd
 \SepLine
 \ChEnd\pagebreak
