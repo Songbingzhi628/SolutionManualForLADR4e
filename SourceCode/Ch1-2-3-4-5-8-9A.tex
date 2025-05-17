@@ -3025,8 +3025,8 @@ Now $x$ corres $\lambda$ and $\alpha$ corres $n$ are liney dep. By the ctrapos o
 	\TextA{Define $S\in\Lm{\FbbP{\infty}}$ by $S\Par{z_1,z_2,z_3,\cdots} = \Par{z_2,z_3,\cdots}.$}
 	\TextA{Show every elem of $\Fbb$ is an eigval of $S$, and find all eigvecs of $S$.\vspace{-2pt}}
 }Supp $z_k\neq 0$ and $S\Par{z_1,z_2,\dots}=\Par{\lambda z_1,\lambda z_2,\dots}=\Par{z_2,z_3,\dots}.$ Then each $\lambda z_k=z_{k+1}.$\parSol{}
-(I) $\lambda=0\Rightarrow$ each$z_k=\dots=z_2=\lambda z_1=0.$ Let $z_1\neq0\Rightarrow E\Par{0,S}=\Span{e_1}.$\parSol{}
-(II) $\lambda\neq 0\Rightarrow\lambda^k z_1=\lambda^{k-1} z_2=\dots=\lambda z_k=z_{k+1},$ let $z_1\neq 0\Rightarrow E\Par{\lambda,S}=\Span[\Sbra]{\Par{1,\lambda^1,\cdots,\lambda^k,\cdots}}.$\PfEnd
+(I) $\lambda=0\Rightarrow$ each $z_k=\dots=z_2=\lambda z_1=0.$ \;Thus $E\Par{0,S}=\Span{e_1}.$\parSol{}
+(II) $\lambda\neq 0\Rightarrow\lambda^k z_1=\lambda^{k-1} z_2=\dots=\lambda z_k=z_{k+1}.$ \;Thus $E\Par{\lambda,S}=\Span[\Sbra]{\Par{1,\lambda^1,\cdots,\lambda^k,\cdots}}.$\PfEnd
 \SepLine
 
 
@@ -3472,7 +3472,7 @@ Then $\exists\,\Par{T-\lambda_j I}$ not inje. Now $p\Par{\lambda_j}-\alpha=0.$ \
 
 \Anchor{5BI4e21}\ProblemBnoor{4E I.21}{
 	\TextB{Supp $V$ finide, $T\in\Lm{V}$. Prove the min $p$ has deg at most $1 + \dim \range T$.}
-}Let $q$ be the min of $T\mmid_{\range T}.$ Then $q\Par{T}Tv=0\Rightarrow zq\Par{z}$ of deg $<1+\dim\range T$ is multi of $p.$\PfEnd
+}Let $q$ be the min of $T\mmid_{\range T}.$ Then $q\Par{T}Tv=0\Rightarrow zq\Par{z}$ of deg $\leqslant1+\dim\range T$ is multi of $p.$\PfEnd
 \SepLine
 
 %\Anchor{5BI4e25}\Anchor{5BI4e26}\ProblemBnoor{4E I.25,26}{
@@ -3490,15 +3490,15 @@ Then $\exists\,\Par{T-\lambda_j I}$ not inje. Now $p\Par{\lambda_j}-\alpha=0.$ \
 \Or By (3.F.15), for any $s\in\PoFi,\:s\Par{T\apostrophe}=s\Par{T}\apostrophe=0\Longleftrightarrow s\Par{T}=0.$ Simlr.\PfEnd
 \SepLine
 
-\Anchor{5BI4e16}\Anchor{8C18}\ProblemBnoor{8.C.18 \OR 4E I.16}{
-	\TextA{Define $T\in\Lm{\FbbP{n}}:\Par{x_1,\dots,x_n}\mapsto\BigPar{{-a_0\,x_n,\;x_1-a_1\hspace{1pt}x_n,\,\cdots,\;x_{n-1}-a_{n-1}\hspace{1pt}x_n}}.$\vspace{1pt}}
-	\TextA{Show the min $p$ of $T$ is $q\Par{z}=a_0+a_1z+\dots+a_{n-1}z^{n-1}+z^n.$}
+\Anchor{5BI4e16}\Anchor{8C18}\ProblemB{
+	\TextB{Define $T\in\Lm{\FbbP{n}}:\Par{x_1,\dots,x_n}\mapsto\BigPar{{-a_0\,x_n,\;x_1-a_1\hspace{1pt}x_n,\,\cdots,\;x_{n-1}-a_{n-1}\hspace{1pt}x_n}}.$\vspace{2pt}}
+	\TextB{Show the min $p$ of $T$ is $q\Par{z}=a_0+a_1z+\dots+a_{n-1}z^{n-1}+z^n.$\vspace{2pt}}
 }Becs $Te_1=e_2,\,T^2e_1=e_3,\cdots,\,T^{n-1}e_1=e_n,\,T^ne_1=T^{n-k}e_{k+1}=Te_n=-\Par{a_0\hspace{1pt}e_1+\dots+a_{n-1}\hspace{1pt}e_n}.$\parSol{}
 Let $-T^n=c_0I+c_1T+\dots+c_{n-1}T^{n-1}\Rightarrow$ each $c_k=a_k.$ Becs $n=\dim V.$ No smaller deg.\PfEnd
 \SepLine
 
 \Anchor{5BI4e8}\ProblemBnoor{4E I.8}{
-	\TextB{Find the min $p$ of $T\in\Lm{\Rbb^2},$ the countclockws rotat optor by $\theta\in\Rbb^+$.}
+	\TextB{Find the min $p$ of $T\in\Lm{\Rbb^2},$ the countclockws rotat optor by $\theta\in\Rbb^+$.\vspace{1pt}}
 }If $\theta=2k\pi,$ then $p\Par{z}=z-1.$ If $\theta=\pi+2k\pi,$ then $p\Par{z}=z+1.$\vspace{-28pt}\parSol{}
 \hfill\includegraphics[width=4.4cm,height=3.2cm,scale=0.22]{diagram5BI-1.png}\vspace{-68pt}\parSol{}
 Othws, let $\Span{v,Tv}=\Rbb^2.$ Let $L=x^2+y^2,$ where $v=\Par{x,y}.$\parSol{}
@@ -3512,9 +3512,9 @@ $ce_1+bTe_1=-T^2 e_1\Longleftrightarrow{}${\small$\begin{pmatrix}1 &\hspace{-6pt
 \SepLine
 		
 \Anchor{5BI4e11}\ProblemBnoor{4E I.11}{
-	\TextA{Supp $V$ is 2\hspace{1pt}-\hspace{1pt}dim, $T\in\Lm{V}$ with the min $p$, and $\Mt[\BigPar]{T,\Par{v,w}}={}${\large$\begin{pmatrix} a &\hspace{-4pt} c\\[-4pt] b &\hspace{-4pt} d\end{pmatrix}.$}\vspace{-8pt}}
+	\TextA{Supp $V$ is 2\hspace{1pt}-\hspace{1pt}dim, $T\in\Lm{V}$ with the min $p$, and $\Mt[\BigPar]{T,\Par{v,w}}={}${\large$\begin{pmatrix} a &\hspace{-4pt} c\\[-4pt] b &\hspace{-4pt} d\end{pmatrix}.$}\vspace{-6pt}}
 	\PrePa\TextA{Show $q\Par{z}=\Par{z-a}\Par{z-d}-bc$ is a multi of $p.$}
-	\PrePb\TextA{Show if $b=c=0$ and $a=d,$ then $p\Par{z}=z-a;$\;othws $p=q.$}
+	\PrePb\TextA{Show if $b=c=0$ and $a=d,$ then $p\Par{z}=z-a;$\;othws $p=q.$\vspace{1pt}}
 }(a) $Tv=av+bw\Rightarrow\Par{T-aI}v=bw\Rightarrow\Par{T-dI}\Par{T-aI}v=bTw-bdw=bcv.$\parSol{\Ha}
 $Tw=cv+dw\Rightarrow \Par{T-dI}w=cv\Rightarrow\Par{T-aI}\Par{T-dI}w=cTv-acv=bcw.$\vspace{0pt}\parSol{}
 (b) {\vspace{-2pt}\FontSmall If $b=c=0$ and $a=d.$ Then $\Mt{T}=a\Mt{I}\Rightarrow T=aI.$ Othws, we show $T\not\in\Span{I},$}\parSol{\Hb}
