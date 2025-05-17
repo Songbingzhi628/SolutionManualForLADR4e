@@ -2031,24 +2031,6 @@ $u_1-u_2\in X$ 又 $u_1,u_2\in U_X\Rightarrow u_1=u_2.$ Now $S$ well-defined, an
 Becs $\range S\mmid_{W\XSlash X\,\cap\,U_X\XSlash X}\subseteq W,$ and $U_X=\range S\Rightarrow U_X\subseteq\range S+W.$ \;Well-defined. Surj.\par\quad
 For $u_x\in U_X,\;u_x+W=0\Longleftrightarrow u_x\in U_X\cap W\Longleftrightarrow u_x+X\in\Par{U_X\cap W}\XSlash X=\null\LmQxx{S}[][W].$ \;Inje.\PfEnd
 \SepLine
-
-%\ProblemB{
-%	\TipsN{3}\,\,\,\TextB{Supp $I$ is a subsp of $U.$ Supp $U$ is a subsp of $V.$}
-%	\IndentTipsN{3}\TextB{Let $V=S_V I\oplus I=S_V U\oplus U.$ \;Let $U=S_U I\oplus I.$ \;Then $V=S_V U\oplus S_U I\oplus I.$\vspace{2pt}}
-%	\IndentTipsN{3}\TextB{Supp $S_V I=\Pure V\XSlash I,$ simlr for $S_V U,S_U I.$ \;Prove $S_V I=S_V U\oplus S_U I.$}
-%}$\forall v_i\in S_V I,v_i=v_u+u,\exists\,!\,v_u\in S_V U,u\in U\Rightarrow\exists\,!\,u_i\in S_U I,i\in I,v_i=v_u+u_i+i.$\parSol{}
-%又 $v_i\in\Pure V\XSlash I.$ Hence $i=0,$ and $v_i\in S_V U\oplus S_U I.$ Now becs $S_V U,U\subseteq S_V I.$\PfEnd
-%\SepLine
-
-%\ProblemB{
-%	\TipsN{4}\,\,\,\TextB{Supp $T\in\Lm{V,W}$ is inv, $V=M\oplus N,\range T\mmid_M=X,\range T\mmid_N=Y.$}
-%	\IndentTipsN{4}\TextB{Then $W=\range T=X\oplus Y.$ Show $\Pure V\XSlash M=N\Longleftrightarrow\Pure W\XSlash X=Y.$}
-%}Define $S_1:V\XSlash M\rightarrow V$ and $S_2:W\XSlash X\rightarrow W$ by $S_1:v+M\mapsto v$ and $S_2:w+X\mapsto w.$\parSol{}
-%Now $v=v_m+v_n\Longleftrightarrow Tv=Tv_m+Tv_n.$ We show $S_1\Par{v+M}=v_n\Longleftrightarrow S_2\Par{Tv+X}=Tv_n.$\parSol{}
-%(a) Let $S_2\Par{Tv_n+X}=Tv_n'.$ Then $Tv_n-Tv_n'\in X\Longleftrightarrow v_n-v_n'=v_m'\in M,v=v_n'+\Par{v_m'+v_m}.$\parSol{}
-%(b) Let $S_1\Par{v_n+M}=v_n'.$ Then $v_n-v_n'\in M\Longleftrightarrow Tv_n-Tv_n'=Tv_m'\in X,Tv=Tv_n'+\Par{Tv_m'+Tv_m}.$\parSol{}
-%Hence by def, $\Pure V\XSlash M=\range S_1=N\Longleftrightarrow\Pure W\XSlash X=\range S_2=Y.$\PfEnd
-%\SepLine
 \ChEnd
 
 \vfill\ChDecl{Ch3F}{3$\cdot$F}{}
@@ -2173,11 +2155,6 @@ thus $\Lambda_1:\Par{\varphi_U,\varphi_W}\mapsto\Par{\psi_U,\psi_W}.$ Then $\xi:
 Now $\Par{\psi_US_U+\psi_WS_W}\mathop{\longmapsto}\limits^{\chi\apostrophe}\Par{\psi_US_U+\psi_WS_W}\circ\chi\mathop{\longmapsto}\limits^{\Lambda_2}\Par{\psi_US_U+\psi_WS_W}\circ\chi\circ\pi_I,$\par\quad\Hb
 which sends $v$ to $\psi_U\Par{v+U}+\psi_W\Par{v+W}=\Par{\varphi_U+\varphi_W}\Par{v},$ which is $\varphi_U+\varphi_W.$\par\quad\Hb
 Thus $\Par{\Lambda_2\circ\chi\apostrophe\circ\xi\circ\Lambda_1}$ is the surj $\Lambda:U^0\times W^0\rightarrow U^0+W^0$ defined in [3.77].\PfEnd\vspace{3pt}
-%\!$\hText{$Now $S_V I=S_V U\oplus S_U I=S_V W\oplus S_W I.$ For $\varphi\in\Par{U\cap W}{^0}=I^0.\\$Let $\Span{x}=\Pure V\XSlash\null\varphi.$ If $x=0$ then done.$\\\;\\\;}\qquad\hText{$\includegraphics[width=80pt]{diagram3F-1}$\\\;\\\;}$\par\vspace{-42pt}\quad
-%Now $0\neq x\in S_V I\Rightarrow\exists\,!\,\Par{u_v,i_u,w_v,i_w}\in S_V U\times S_U I\times S_V W\times S_W I,$\par\quad
-%$x=u_v+i_u=w_v+i_w.$ Define $\varphi\in U^0,\beta\in W^0$ by $\varphi:u_v\mapsto 1,u\mapsto 0,$ and $\beta:i_u\mapsto 1,i\mapsto 0,$\par\quad
-%for all $u\in\Pure V\XSlash\Span{u_v}$ and $i\in\Pure V\XSlash\Span{i_u}.$ \OR Define $\psi\in W^0,\gamma\in U^0,$ simlr.\par\quad
-%Then $\varphi=\varphi+\beta=\psi+\gamma\in U^0+W^0.$\PfEnd
 \AExa Not true if $U$ or $W$ is merely a subset. Let $V=\FbbP{2},U=\Span{e_1},W=\Bra{\Par{1,1},\Par{0,1}}.$
 \SepLine
 
@@ -2428,6 +2405,55 @@ $\forall\Par{x_1,\dots,x_m}\in\FbbP{m},\Gamma\apostrophe\BigPar{\Psi\Par{x_1,\do
 
 \ChEnd\pagebreak
 
+\ChDecl{}{\Largebfx{I Will Never Forget{\,}——{\,}In 3.E, naive but fantastical:}}
+
+\vspace{4pt}
+
+\BulletPointX\TipsN{1}\,\,\,{Supp $U$ is a subsp of $V.$ \uline{Define $S\in\Lm{V\XSlash U,V}$ by $S\Par{v+U}=v.$}}\TextB{}
+{Then $\range S$ is the {\tgsl purest} in $\Scom{V}{U}.$ Now $\null S=\zeroSubs,\;U\oplus\range S=V.$}\TextB{}
+{\uline{Let $E=S\circ\pi.$} Becs $S$ is inje and $\pi$ is surj, $\null E=\null\pi=U,\;\range E=\range S.$}\TextB{}
+{Then $\range E\oplus\null E=V.$ \;\NOTICE that $E:V\rightarrow W$ is the {\tgsl purest eraser}. Now we explain why:}\TextB{\vspace{2pt}}
+\AExa {Notice that $T\Par{e_2-e_1}=\Par{e_2-e_1},$ while $\Par{e_2-e_1}+U=e_2+U,$ but}\parExa{\IndentB}
+{becs $e_2=e_1+\Par{e_2-e_1},$ now still, $\tilde{T}\BigPar{\Par{e_2-e_1}+U}=e_2-e_1=Te_2.$}\parExa{\IndentB}
+{In contrast, $S\BigPar{\Par{e_2-e_1}+U}=S\Par{e_2+U}=e_2,\;E\Par{e_2-e_1}=e_2.$}\parExa{\IndentB}
+{And $\range E=\range S=\Span{e_2}$ is the {\tgsl purest} in $\Scom{V}{U}.$}
+\SepLine
+
+\BulletPointX\NoteForSmall{Exe (13) and (4E 14)}\;\;Let $U\oplus W=V.$ Define $S\Par{w+U}=w.$ \;\Sbra{ See also \TIPSN{1}. }\TextB{}
+(a) Let $B_W=\Par{w_1,\dots,w_m}\Rightarrow B_{V\XSlash U}=\BigPar{w_1+U,\dots,w_m+U}.$ Then $S\Par{w_k+U}$ might not equal $w_k.$\TextB{}
+(b) Let $B_{V\XSlash U}=\BigPar{w_1+U,\dots,w_m+U},$ then let $B_W=\Par{w_1,\dots,w_m}.$ Now each $S\Par{w_k+U}=w_k.$
+\def\Pure{{\textup{\tgnr Pure}}\,}
+\par\vspace{2pt} \BulletPointX\NewNotation\;$\Pure V\XSlash U=W\Longleftrightarrow V=U\oplus W,\;W=\range S.$ {\FontSmall\tgsl The uniqnes of $\Pure V\XSlash U$ follows from $\range S.$}
+\SepLine
+
+\ProblemB{
+	\TipsN{3}\,\,\,\TextB{Supp $I$ is a subsp of $U.$ Supp $U$ is a subsp of $V.$}
+	\IndentTipsN{3}\TextB{Let $V=S_V I\oplus I=S_V U\oplus U.$ \;Let $U=S_U I\oplus I.$ \;Then $V=S_V U\oplus S_U I\oplus I.$\vspace{2pt}}
+	\IndentTipsN{3}\TextB{Supp $S_V I=\Pure V\!\XSlash I,$ simlr for $S_V U,S_U I.$ \;Prove $S_V I=S_V U\oplus S_U I.$}
+	}$\forall v_i\in S_V I,v_i=v_u+u,\exists\,!\,v_u\in S_V U,u\in U\Rightarrow\exists\,!\,u_i\in S_U I,i\in I,v_i=v_u+u_i+i.$\parSol{}
+又 $v_i\in\Pure V\XSlash I.$ Hence $i=0,$ and $v_i\in S_V U\oplus S_U I.$ Now becs $S_V U,U\subseteq S_V I.$\PfEnd
+\SepLine
+
+\ProblemB{
+	\TipsN{4}\,\,\,\TextB{Supp $T\in\Lm{V,W}$ is inv, $V=M\oplus N,\range T\mmid_M=X,\range T\mmid_N=Y.$}
+	\IndentTipsN{4}\TextB{Then $W=\range T=X\oplus Y.$ Show $\Pure V\!\XSlash M=N\Longleftrightarrow\Pure W\XSlash X=Y.$}
+	}Define $S_1:V\XSlash M\rightarrow V$ and $S_2:W\XSlash X\rightarrow W$ by $S_1:v+M\mapsto v$ and $S_2:w+X\mapsto w.$\parSol{}
+Now $v=v_m+v_n\Longleftrightarrow Tv=Tv_m+Tv_n.$ We show $S_1\Par{v+M}=v_n\Longleftrightarrow S_2\Par{Tv+X}=Tv_n.$\parSol{}
+(a) Let $S_2\Par{Tv_n+X}=Tv_n'.$ Then $Tv_n-Tv_n'\in X\Longleftrightarrow v_n-v_n'=v_m'\in M,v=v_n'+\Par{v_m'+v_m}.$\parSol{}
+(b) Let $S_1\Par{v_n+M}=v_n'.$ Then $v_n-v_n'\in M\Longleftrightarrow Tv_n-Tv_n'=Tv_m'\in X,Tv=Tv_n'+\Par{Tv_m'+Tv_m}.$\parSol{}
+Hence by def, $\Pure V\XSlash M=\range S_1=N\Longleftrightarrow\Pure W\XSlash X=\range S_2=Y.$\PfEnd
+\SepLine
+
+\ProblemN{3.F.23}{
+	\TextA{Supp $U$ and $W$ are subsps of $V$. Prove $\BigPar{U\cap W}{^0}\subseteq U^0+W^0$.}
+}Let $I=U\cap W.$ \,Using \Sbra{3.E \TIPSN{3}}. Supp $\varphi\in I^0.$\vspace{-10pt}\parSol{}
+\!$\hText{$Now $S_V I=S_V U\oplus S_U I=S_V W\oplus S_W I.\\$Let $\Span{x}=\Pure V\XSlash\null\varphi.$ If $x=0$ then done.$\\\;\\\;}\qquad\hText{$\includegraphics[width=80pt]{diagram3F-1}$\\\;\\\;}$\vspace{-42pt}\parSol{}
+Now $0\neq x\in S_V I\Rightarrow\exists\,!\,\Par{u_v,i_u,w_v,i_w}\in S_V U\times S_U I\times S_V W\times S_W I,$\parSol{}
+$x=u_v+i_u=w_v+i_w.$ Define $\alpha\in U^0,\beta\in W^0$ by $\alpha:u_v\mapsto 1,u\mapsto 0,$ and $\beta:i_u\mapsto 1,i\mapsto 0,$\parSol{}
+for all $u\in\Pure V\XSlash\Span{u_v}$ and $i\in\Pure V\XSlash\Span{i_u}.$ \OR Define $\rho\in W^0,\gamma\in U^0,$ simlr.\parSol{}
+Then $\varphi=\alpha+\beta=\rho+\gamma\in U^0+W^0.$\PfEnd
+\SepLine
+\ChEnd\pagebreak
 
 \ChDecl{}{\Largebfx{Exes about Sequences and Number Theory before Chapter 4}}
 
