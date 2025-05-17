@@ -2365,8 +2365,8 @@ $\forall\Par{x_1,\dots,x_m}\in\FbbP{m},\Gamma\apostrophe\BigPar{\Psi\Par{x_1,\do
 \SepLine
 
 \ProblemN{\Anchor{3F9}{9}}{
-	\TextA{Show $\forall\psi\in V\apostrophe,\psi=\psi\Par{v_1}\:\!\varphi_1+\dots+\psi\Par{v_n}\:\!\varphi_n,$ \FontNorm where $B_V=\Par{v_1,\dots,v_n},B_{V\apostrophe}=\Par{\varphi_1,\cdots,\varphi_n}.$}
-}$\psi\Par{v}=a_1\psi\Par{v_1}+\dots+a_n\psi\Par{v_n}=\psi\Par{v_1}\:\!\varphi_1\Par{v}+\dots+\psi\Par{v_n}\:\!\varphi_n\Par{v}.$\PfEnd
+	\TextA{Show $\forall\psi\in V\apostrophe,\psi=\psi\Par{v_1}\;\!\varphi_1+\dots+\psi\Par{v_n}\;\!\varphi_n,$ \FontNorm where $B_V=\Par{v_1,\dots,v_n},B_{V\apostrophe}=\Par{\varphi_1,\cdots,\varphi_n}.$}
+}$\psi\Par{v}=a_1\psi\Par{v_1}+\dots+a_n\psi\Par{v_n}=\psi\Par{v_1}\;\!\varphi_1\Par{v}+\dots+\psi\Par{v_n}\;\!\varphi_n\Par{v}.$\PfEnd
 \SepLine
 
 %\Anchor{3F13}\ProblemN[]{13}{
@@ -2431,17 +2431,17 @@ $\forall\Par{x_1,\dots,x_m}\in\FbbP{m},\Gamma\apostrophe\BigPar{\Psi\Par{x_1,\do
 	\TipsN{3}\,\,\,\TextB{Supp $I$ is a subsp of $U.$ Supp $U$ is a subsp of $V.$}
 	\IndentTipsN{3}\TextB{Let $V=S_V I\oplus I=S_V U\oplus U.$ \;Let $U=S_U I\oplus I.$ \;Then $V=S_V U\oplus S_U I\oplus I.$\vspace{2pt}}
 	\IndentTipsN{3}\TextB{Supp $S_V I=\Pure V\!\!\:\XSlash I,$ simlr for $S_V U,S_U I.$ \;Prove $S_V I=S_V U\oplus S_U I.$}
-	}$\forall v_i\in S_V I,v_i=v_u+u,\exists\,!\,v_u\in S_V U,u\in U\Rightarrow\exists\,!\,u_i\in S_U I,i\in I,v_i=v_u+u_i+i.$\parSol{}
-又 $v_i\in\Pure V\!\!\:\XSlash I.$ Hence $i=0,$ and $v_i\in S_V U\oplus S_U I.$ Now becs $S_V U,U\subseteq S_V I.$\PfEnd
+}$\forall v_i\in S_V I,\,v_i=v_u+u,\exists\,!\,v_u\in S_V U,u\in U\Rightarrow\exists\,!\,u_i\in S_U I,i\in I,v_i=v_u+u_i+i.$\parSol{}
+又 $v_i\in\Pure V\!\!\:\XSlash I.$ Hence $i=0,$ and $v_i\in S_V U\oplus S_U I.$ Now becs $S_V U,S_U I\subseteq S_V I.$\PfEnd
 \SepLine
 
 \ProblemB{
-	\TipsN{4}\,\,\,\TextB{Supp $T\in\Lm{V,W}$ is inv, $V=M\oplus N,\range T\mmid_M=X,\range T\mmid_N=Y.$}
+	\TipsN{4}\,\,\,\TextB{Supp $T\in\Lm{V,W}$ is inv, $V=M\oplus N,\:\range T\mmid_M=X,\range T\mmid_N=Y.$}
 	\IndentTipsN{4}\TextB{Then $W=\range T=X\oplus Y.$ Show $\Pure V\!\!\;\XSlash M=N\Longleftrightarrow\Pure W\XSlash X=Y.$}
-	}Define $S_1:V\XSlash M\rightarrow V$ and $S_2:W\XSlash X\rightarrow W$ by $S_1:v+M\mapsto v$ and $S_2:w+X\mapsto w.$\parSol{}
-Now $v=v_m+v_n\Longleftrightarrow Tv=Tv_m+Tv_n.$ We show $S_1\Par{v+M}=v_n\Longleftrightarrow S_2\Par{Tv+X}=Tv_n.$\parSol{}
-(a) Let $S_2\Par{Tv_n+X}=Tv_n'.$ Then $Tv_n-Tv_n'\in X\Longleftrightarrow v_n-v_n'=v_m'\in M,v=v_n'+\Par{v_m'+v_m}.$\parSol{}
-(b) Let $S_1\Par{v_n+M}=v_n'.$ Then $v_n-v_n'\in M\Longleftrightarrow Tv_n-Tv_n'=Tv_m'\in X,Tv=Tv_n'+\Par{Tv_m'+Tv_m}.$\parSol{}
+}Define $S_1:V\XSlash M\rightarrow V$ and $S_2:W\XSlash X\rightarrow W$ by $S_1:v+M\mapsto v$ and $S_2:w+X\mapsto w.$\par\quad
+Now $v=v_m+v_n\Longleftrightarrow Tv=Tv_m+Tv_n.$ We show $S_1\Par{v+M}=v_n\Longleftrightarrow S_2\Par{Tv+X}=Tv_n.$\par\quad
+(a) Supp $S_2\Par{Tv_n+X}=Tv_n'.$ Then $Tv_n-Tv_n'\in X\Longleftrightarrow v_n-v_n'=v_m'\in M,\,v=v_n'+\Par{v_m'+v_m}.$\par\quad
+(b) Supp $S_1\Par{v_n+M}=v_n'.$ Then $v_n-v_n'\in M\Longleftrightarrow Tv_n-Tv_n'=Tv_m'\in X,\,Tv=Tv_n'+\Par{Tv_m'+Tv_m}.$\vspace{2pt}\par\quad
 Hence by def, $\Pure V\!\!\;\XSlash M=\range S_1=N\Longleftrightarrow\Pure W\XSlash X=\range S_2=Y.$\PfEnd
 \SepLine
 
@@ -2462,15 +2462,16 @@ Then $\varphi=\alpha+\beta=\rho+\gamma\in U^0+W^0.$\PfEnd
 
 \Anchor{2A16}\ProblemBnoor{2.A.16}{
 	\TextA{Prove the vecsp $U$ of all continuous functions in $\Rbb^{[0,1]}$ is infinide.}
-}By \Sbra{3.A {\NOTEFOR} $\FbbP{S}$}, immed. \,\Or Fix one $m\in\Nbp$ and $p\in\PoFx{\,}{[0,1]}.$\parSol{}
+}By \Sbra{3.A {\NOTEFOR} $\FbbP{S}$}, immed.\PfEnd\vspace{2pt}\parSol{}
+\Or Fix one $m\in\Nbp$ and $p\Par{x}=a_0+a_1x+\dots+a_mx^m$ for $x\in\;\!\!\Interval{[}{]}{0,1}.$\parSol{}
 Then $p$ has infily many roots and hence each coeff is zero, othws $\deg p\geqslant 0,$ ctradic [4.12].\parSol{}
 Thus $\Par{1,x,\dots,x^m}$ is liney indep in $\Rbb^{[0,1]}.$ Simlr to [2.16], $U$ is infinide.\PfEnd\vspace{8pt}\parSol{}
 \Or Note that\; $\Frac{\;1\;}{1}>\Frac{\;1\;}{2}>\dots>\Frac{\;1\;}{m},\,\,\,\forall m\in\Nbp.$ Supp\; $f_m=\MathLeftBrace{l}{
-	\!x-{}${\Large$\frac{\;1\;}{m}$}$,\;\;x\in\Interval{(}{]}{${\Large$\frac{\;1\;}{m}$}$,\,1\,}\\
-	\!0,\hfill x\in\Sbra{\,0,\,${\Large$\frac{\;1\;}{m}$}$\,}
+	\!x-{}${\Large$\frac{\;1\;}{m}$}$,\;\;x\in\;\!\!\Interval{(}{]}{${\Large$\frac{\;1\;}{m}$}$,\,1\,}\\
+	\!0,\hfill x\in\;\!\!\Sbra{\,0,\,${\Large$\frac{\;1\;}{m}$}$\,}
 }$\vspace{2pt}\parSol{}
-Then\; $f_1\XPar[0pt]{${\Large$\frac{\;1\;}{m}$}$}=\dots=f_m\XPar[0pt]{${\Large$\frac{\;1\;}{m}$}$}=0\neq f_{m+1}\XPar[0pt]{${\Large$\frac{\;1\;}{m}$}$}.$ 
-\;Hence $f_{m+1}\not\in\Span{f_1,\dots,f_m}.$ By (2.A.14).\PfEnd
+Then\; $f_1\XPar[0pt]{${\Large$\frac{\;1\;}{m}$}$}=\dots=f_m\XPar[0pt]{${\Large$\frac{\;1\;}{m}$}$}=0\neq\,f_{m+1}\XPar[0pt]{${\Large$\frac{\;1\;}{m}$}$}.$ 
+\;Hence $f_{m+1}\not\in\Span{\:\!f_1,\dots,f_m}.$ By (2.A.14).\PfEnd
 \SepLine
 
 \Anchor{3F35}\ProblemBnoor{3.F.35}{
