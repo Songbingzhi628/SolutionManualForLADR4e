@@ -2736,11 +2736,11 @@ then
 subtracting the two exprs would give a poly with some non0 coeffs but infily many zeros.
 \SepLine
 
-\Anchor{4ON4.8}\BulletPointX\NoteFor{[4.8]} {\tgsl div algo for polys} \hfill[{\tgsc Another proof}]\TextB{\vspace{-11pt}}
-Supp $\deg p\geqslant \deg s$. Then $\FontLarge\BigPar{\FontNorm\underbrace{1, z,\dots, z^{\deg s-1}}_{\text{of\,len}\,\deg s},\overbrace{s,zs,\cdots,z^{\deg p-\deg s}s}^{\text{of\,len}\,\SmallPar{\deg p\,-\,\deg s\,+\,1}}\FontLarge}$ is a bss of $\PoF{\deg p}.$\TextB{\vspace{-7pt}}
-Becs $q\in\PoFi,\exists\,!\,a_i,b_j\in\Fbb,$\TextB{}
-$q=a_0+a_1 z+\dots+a_{\deg s-1}z^{\deg s-1}+ b_0 s+b_1 zs +\dots+ b_{\deg p-\deg s}z^{\deg p-\deg s}s$\TextB{}
-$\Blind{q}=\underbrace{a_0+a_1 z+\dots+a_{\deg s-1}z^{\deg s-1}}_{r}+s\underbrace{\XPar{b_0+b_1 z +\dots+ b_{\deg p-\deg s}z^{\deg p-\deg s}}}_{q}.$ Note that $r,q$ are uniq.\PfEnd[-16pt]
+\Anchor{4ON4.8}\BulletPointX\NoteFor{[4.8]} {\tgsl div algo for polys} \hfill[{\tgsc Another proof}]\TextB{\vspace{-9pt}}
+Supp $\deg p\geqslant\deg s$. Then $\FontLarge\BigPar{\FontNorm{1, z,\dots, z^{\deg s-1}},\overbrace{s,zs,\cdots,z^{\deg p-\deg s}s}^{\text{of\,len}\,\SmallPar{{\deg p\,-\,\deg s\,+\,1}}}\FontLarge}$ is a bss of $\PoF{\deg p}.$\TextB{\vspace{3pt}}
+%Becs $p\in\PoFi,\exists\,!\,a_i,b_j\in\Fbb,$\TextB{}
+%$p\Par{z}=a_0+a_1 z+\dots+a_{\deg s-1}z^{\deg s-1}+ b_0\,s\Par{z}+b_1z\,s\Par{z}+\dots+ b_{\deg p-\deg s}\,z^{\deg p-\deg s}\:\!s\Par{z}$\TextB{}
+$p\Par{z}=\underbrace{a_0+a_1 z+\dots+a_{\deg s-1}z^{\deg s-1}}_{r\SmallPar[0.5pt]{z}}{}+s\Par{z}\:\!\!\underbrace{\BigSbra{b_0+b_1 z +\dots+ b_{\deg p-\deg s}\,z^{\deg p-\deg s}}}_{q\SmallPar[0.5pt]{z}}.$\PfEnd[-16pt]
 \SepLine
 
 \Anchor{4ON4.11}\BulletPointX\NoteFor{[4.11]}\;\;{\tgsl each zero of a poly corres to a deg-one factor;}\hfill[{\tgsc Another proof}]\TextB{\vspace{2pt}}
@@ -2768,7 +2768,7 @@ Thus $p\Par{z}=\sum_{j=1}^m a_j \Par{z-\lambda}\sum_{i=1}^k \lambda^{i-1}z^{k-i}
 
 \Anchor{4O4e2}\ProblemBnoor{4E 2}{
 	\TextB{Prove if $w,z\in\Cbb,$ then $\aXMid{\aMid{w}-\aMid{z}}\leqslant\aMid{w-z}.$}
-}$\aMidsq{w-z}=\Par{w-z}\Par{\overline{w}-\overline{z}}=\aMidsq{w}+\aMidsq{z}-2Re\Par{w\overline{z}}\geqslant\aMidsq{w}+\aMidsq{z}-2\aMid{w\overline{z}}=\aXMidsq{\aMid{w}-\aMid{z}}.$\vspace{2pt}\parSol{}
+}$\aMidsq{w-z}=\Par{w-z}\Par{\overline{w}-\overline{z}}=\aMidsq{w}+\aMidsq{z}-2\REAL\Par{w\overline{z}}\geqslant\aMidsq{w}+\aMidsq{z}-2\aMid{w\overline{z}}=\aXMidsq{\aMid{w}-\aMid{z}}.$\vspace{2pt}\parSol{}
 \Or $\aMid{w}=\aMid{w-z+z}\leqslant\aMid{w-z}+\aMid{z}\Rightarrow \aMid{w}-\aMid{z}\leqslant\aMid{w-z}.$\parSol{}
 \Blind{\Or}$\aMid{z}=\aMid{z-w+w}\leqslant\aMid{z-w}+\aMid{w}\Rightarrow \aMid{z}-\aMid{w}\leqslant\aMid{w-z}.$\PfEnd
 \SepLine
@@ -2777,20 +2777,20 @@ Thus $p\Par{z}=\sum_{j=1}^m a_j \Par{z-\lambda}\sum_{i=1}^k \lambda^{i-1}z^{k-i}
 	\TextA{Supp $m\in\Nbb,$ and $z_1,\dots,z_{m+1}$ are disti in $\Fbb,$ and $w_1,\dots,w_{m+1}\in\Fbb.$}
 	\TextA{Prove $\exists\,!\,p\in\PoF{m},p\Par{z_k}=w_k$ for each $k\in\;\!\!\Bra{1,\dots, m+1}.$}
 }\par\quad
-Define $T\in\Lm[\BigPar]{\PoF{m},\FbbP{m+1}}$ by $Tq=\BigPar{q\Par{z_1},\dots,q\Par{z_m},q\Par{z_{m+1}}}.$\vspace{1pt}\par\quad
+Define $T\in\Lm[\BigPar]{\PoF{m},\FbbP{m+1}}$ by $Tq=\BigPar{q\Par{z_1},\:\!\dots,\:\!q\Par{z_m},\,q\Par{z_{m+1}}}.$\vspace{1pt}\par\quad
 Becs $Tq=0\Rightarrow\Par{m+1}$ disti zeros for $q$ of deg no more than $m\Rightarrow q=0.$ \;Now $T$ iso.\PfEnd\vspace{4pt}\quad
 \Or Let $p_1=1,\;p_k\Par{z}=\prod_{i=1}^{k-1}\Par{z-z_i}=\Par{z-z_1}\cdots\Par{z-z_{k-1}}$ for each $k\in\;\!\!\Bra{2,\dots,m+1}.$\vspace{1pt}\par\quad
 By (2.C.10), $B_p=\Par{p_1,\dots,p_{m+1}}$ is a bss of $\PoF{m}.$ Let $B_e=\Par{e_1,\dots,e_{m+1}}$ be the std bss of $\FbbP{m+1}.$\vspace{2pt}\par\quad
-Now $Tp_1=\Par{1,\dots,1},\;Tp_k=\XPar{\prod_{i=1}^{k-1}\Par{z_1-z_i},\dots,\prod_{i=1}^{k-1}\Par{z_j-z_i},\dots,\prod_{i=1}^{k-1}\Par{z_{m+1}-z_i}};$\vspace{3pt}\par\quad
+Now $Tp_1=\Par{1,\dots,1},\;Tp_k=\XPar{{\prod_{i=1}^{k-1}\Par{z_1-z_i},\dots,\prod_{i=1}^{k-1}\Par{z_j-z_i},\dots,\prod_{i=1}^{k-1}\Par{z_{m+1}-z_i}}};$\vspace{3pt}\par\quad
 {\normalsize$\begin{pmatrix}
 		1 &\hspace{-6pt} 0 &\hspace{-6pt} 0 &\hspace{-6pt} \cdots &\hspace{-6pt} 0\\[-2pt]
 		1 &\hspace{-6pt} A_{2,2} &\hspace{-6pt} 0 &\hspace{-6pt} \cdots &\hspace{-6pt} 0\\[-2pt]
 		1 &\hspace{-6pt} A_{3,2} &\hspace{-6pt} A_{3,3} &\hspace{-6pt} \cdots &\hspace{-6pt} 0\\[-2pt]
 		\vdots &\hspace{-6pt} \vdots &\hspace{-6pt} \vdots &\hspace{-6pt} \ddots &\hspace{-6pt} \vdots\\[-2pt]
 		1 &\hspace{-6pt} A_{m+1,2} &\hspace{-6pt} A_{m+1,3} &\hspace{-6pt} \cdots &\hspace{-6pt} A_{m+1,m+1}
-	\end{pmatrix}$}${}=\Mt[\BigPar]{T,B_p,B_e}.$ Where $A_{j,k}=\prod_{i=1}^{k-1}\Par{z_j-z_i}\neq 0$ for all $j> k-1\geqslant 1.$\vspace{-74pt}\par\quad
-\hfill And $\prod_{i=1}^{k-1}\Par{z_j-z_i}=0 \Longleftrightarrow j\leqslant k-1,$ becs $z_1,\dots,z_{m+1}$ are disti.\Blind{\quad\qquad}\vspace{30pt}\par\quad
-\hfill Now the rows of $\Mt{T}$ liney indep. By (4E 3.C.17) \OR (3.F.32).\Blind{\quad}\PfEnd\vspace{3pt}
+	\end{pmatrix}$}${}=\Mt[\BigPar]{T,B_p,B_e}.$ Where $A_{j,k}=\prod_{i=1}^{k-1}\Par{z_j-z_i}\neq 0$ for all $j> k-1\geqslant 1.$\vspace{-78pt}\par\quad
+\hfill And $\prod_{i=1}^{k-1}\Par{z_j-z_i}=0 \Longleftrightarrow j\leqslant k-1,$ becs $z_1,\dots,z_{m+1}$ are disti.\Blind{\quad}\vspace{34pt}\par\quad
+\hfill Now the rows of $\Mt{T}$ liney indep. By (4E 3.C.17) \OR (3.F.32).\Blind{\quad}\PfEnd\vspace{6pt}
 \SepLine
 
 %\Anchor{4O4}\ProblemN[]{{4}}{
@@ -2809,9 +2809,9 @@ Now $Tp_1=\Par{1,\dots,1},\;Tp_k=\XPar{\prod_{i=1}^{k-1}\Par{z_1-z_i},\dots,\pro
 
 \Anchor{4OT2}\ProblemBX{\TipsN{2}}{
 	\TextB{Supp non0 $p,q\in\PoFi$ are multi of each other. Prove $p=cq$ for a $c\neq0.$}
-}Let $p=rq,q=sp\Rightarrow p=rsp\Rightarrow r\Par{z}s\Par{z}=1$ for all $z$ with $p\Par{z}\neq 0,$ while such $z$ is fini.\parSol{}
+}Let $p=rq,\,q=sp\Rightarrow p=rsp\Rightarrow r\Par{z}s\Par{z}=1$ for all $z$ with $p\Par{z}\neq 0.$\parSol{}
 Thus $\Par{rs}\Par{z}=1$ for infily many $z,$ so for all $z.$ Now $\deg rs=1=\deg r+\deg s.$\PfEnd
-\SepLine
+\SepLine\pagebreak
 
 \ProblemN{\Anchor{4O6}{6}}{
 	\TextA{Supp non0 $p\in\PoC{m}$ has deg $m.$ Prove}
@@ -2834,6 +2834,7 @@ By Pigeon Hole Principle, $\Par{z-\lambda_k}{^{2}}q\Par{z}=p\Par{z}$ for some $\
 %}\Or Write $p\Par{x}=x^m\envFontSmall\XPar{${\FontLarge$\frac{a_0}{x^m}$}${}+{}${\FontLarge$\frac{a_1}{x^{m-1}}$}${}+\dots+{}${\FontLarge$\frac{a_{m-1}}{x}$}${}+a_m\envFontSmall}\Rightarrow p$ continuous on $\Interval{(}{]}{{-\infty,0}}\cup\Interval{[}{)}{0,\infty}.$\parSol{\vspace{3pt}}
 %Let $\delta=\aMid{a_m}{^{-1}}a_m.$ \:\:Becs $\lim\limits_{x\rightarrow -\infty}p\Par{x}=-\delta\infty\,;\;\;\lim\limits_{x\rightarrow \infty}p\Par{x}=\delta\infty\Rightarrow p$ has at least one real zero.\PfEnd
 %\SepLine
+
 \vspace{2pt}
 \ProblemN{\Anchor{4O8}{8}}{
 	\TextA{Supp $p\in\PoRi.$ Let $\Par{Tp}\Par{x}={}${\FontNorm$\MathLeftBrace{l}{${\Large\envFontSmall[\footnotesize]\def\SmallPar{\Par}$\frac{p\SmallPar{x}\,-\,p\SmallPar{3}}{x\,-\,3}$}$\;$ if $x\neq 3,\\[4pt]p\apostrophe\Par{3}$\hfill if $x=3.}$} \;Show $Tp\in\PoRi.$\vspace{-10pt}}
@@ -2884,15 +2885,15 @@ Hence $\Par{pq}{^{\SmallPar{k}}}=\mathC_{k}^0{p{^{\SmallPar{0}}}q{^{\SmallPar{k}
 \SepLine
 
 \Anchor{4OL2}\ProblemN{L2}{
-	\TextB{Supp $\alpha\in\Nbp$ suth $p\Par{z}=\Par{z-\lambda}{^\alpha}q\Par{z}.$ Prove ${p{^{\SmallPar{\alpha-1}}}}\Par{\lambda}=0.$}
-}$\Sbra{\Par{z-\lambda}{^\alpha}q\Par{z}}{^{\SmallPar{\alpha-1}}}=\sum_{j=1}^{\alpha-1}\mathC_{\alpha-1}^j\Sbra{\Par{z-\lambda}{^\alpha}}{^{\SmallPar{j}}}\:\!\Sbra{q\Par{z}}{^{\SmallPar{\alpha-1-j}}}.$\parSol{}
+	\TextB{Supp $\alpha\in\Nbp$ suth $p\Par{z}=\Par{z-\lambda}{^\alpha}q\Par{z}.$ Prove ${p{^{\SmallPar{\alpha-1}}}}\Par{\lambda}=0.$\vspace{2pt}}
+}$\Sbra{\Par{z-\lambda}{^\alpha}q\Par{z}}{^{\SmallPar{\alpha-1}}}=\sum_{j=0}^{\alpha-1}\mathC_{\alpha-1}^j\Sbra{\Par{z-\lambda}{^\alpha}}{^{\SmallPar{j}}}\:\!\Sbra{q\Par{z}}{^{\SmallPar{\alpha-1-j}}}.$\vspace{3pt}\parSol{}
 Note that $\Sbra{\Par{z-\lambda}{^\alpha}}{^{\SmallPar{j}}}=\alpha\Par{\alpha-1}\cdots\Par{\alpha-j+1}\cdot\Par{z-\lambda}{^{\SmallPar{\alpha-j}}}.$\PfEnd
 \SepLine
 
 \Anchor{4O4e13}\ProblemBnoor{4E 13}{
 	\TextA{Supp nonC $p,q\in\PoCi$ have no common zeros. Let $m = \deg p$, $n = \deg q$.\vspace{1pt}}
 	\TextB{Define $T:\PoC{n-1}\times\PoC{m-1}\rightarrow\PoC{m+n-1}$ by $T\Par{r, s} = rp + sq.$ Prove $T$ is inje.\vspace{3pt}}
-	\ACoro \TextB{$\exists\,!\,r\in\PoC{n-1},s\in\PoC{m-1}$ suth $rp + sq = 1.$}
+	\ACoro \TextB{$\exists\,!\,r\in\PoC{n-1},s\in\PoC{m-1}$ suth $rp + sq = 1.$\vspace{3pt}}
 }Immed, $T$ is liney. \;Supp $T\Par{r,s}=rp+sq=0.$\par\quad
 Then $rp=-sq.$ Becs $p,q$ are \uline{coprime} $\Rightarrow p\:\mmid\:s,$ while $\deg s\leqslant m-1\Rightarrow s=0\Rightarrow r=0.$\PfEnd\vspace{6pt}\quad
 \Or Let $\lambda_1,\dots,\lambda_M$ and $\mu_1,\dots,\mu_N$ be the disti zeros of $p$ and $q$ respectly. \NOTICE that $M\leqslant m,N\leqslant n.$\vspace{2pt}\par\quad
