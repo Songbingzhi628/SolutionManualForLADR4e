@@ -13,13 +13,13 @@
 }\SepLine
 
 \Anchor{6A21}\ProblemN{21}{
-	\TextA{Implement the corres inner prod from a norm $\Dvert{{\cdot}}:U\rightarrow\Interval{[}{)}{0,\infty}$ satisfying [6.22].\vspace{3pt}}
+	\TextA{Implement the corres inner prod from a norm $\Dvert{{\cdot}}:U\rightarrow\Interval{[}{)}{0,\infty}$ satisfying [6.22].\vspace{2pt}}
 %	\PrePa {\,}$\Dvert{u}=0\Longleftrightarrow u=0.$ \;(b) \,$\Dvert{au}=\aMid{a}\Dvert{u}.$ \;(c) \,\uline{$\Dvert{u+w}\leqslant\Dvert{u}+\Dvert{w}.$}\TextA{}
 }If $\Fbb=\Rbb.$ Define $\Ang{u,v}={}${\Large$\frac{\:1\:}{4}$}$\BigPar{\Dvertsq{u+v}-\Dvertsq{u-v}}=\Ang{v,u}.$ \;Before we start:\def\Lbreak{1pt}\def\LBREAK{6pt}\def\Endl{\vspace{\Lbreak}\parSol{}}\def\ENDL{\vspace{\LBREAK}\parSol{}}\vspace{2pt}\parSol{}
 \LX{1} $\Ang{u,v}=-\Ang{{-u,v}}=-\Ang{u,-v}.$\Endl{}
 \LX{2} $\Ang{u+v,v}={}${\Large$\frac{\:1\:}{4}$}$\BigSbra{\Dvertsq{u+v+v}+\Dvertsq{{-u+v+v}}-\Dvertsq{{-u+v+v}}-\Dvertsq{u+v-v}}$\Endl{}
 \Blind{\LX{2}} $\Blind{\Ang{u+v,v}}={}${\Large$\frac{\:1\:}{2}$}$\BigSbra{\BigPar{\Dvertsq{u}+\Dvertsq{2v}}-\BigPar{\Dvertsq{{-u+v}}+\Dvertsq{v}}}$\Endl{}
-\Blind{\LX{2}} $\Blind{\Ang{u+v,v}}=4\,\Ang{v,v}+2\BigPar{\Dvertsq{u}+\Dvertsq{v}}-2\,\Dvertsq{u-v}=\Ang{u,v}+\Ang{v,v}.$\ENDL{}
+\Blind{\LX{2}} $\Blind{\Ang{u+v,v}}={}${\Large$\frac{\:1\:}{4}$}$\BigSbra{2\Dvertsq{u}+2\Dvertsq{v}+4\,\Dvertsq{v}-2\Dvertsq{u-v}}={}${\Large$\frac{\:1\:}{4}$}$\BigPar{\Dvertsq{u+v}-\Dvertsq{u-v}}+\Dvertsq{v}.$\ENDL{}
 \LX{3} $\Ang{u,\,2v}={}${\Large$\frac{\:1\:}{4}$}$\BigSbra{\Dvertsq{u+v+v}-\Dvertsq{u-v-v}}$\Endl{}
 \Blind{\LX{3}} $\Blind{\Ang{u,\,2v}}={}${\Large$\frac{\:1\:}{4}$}$\BigSbra{\Dvertsq{u+v+v}+\Dvertsq{u+v-v}-\Dvertsq{u+v-v}-\Dvertsq{u-v-v}}$\Endl{}
 \Blind{\LX{3}} $\Blind{\Ang{u,\,2v}}={}${\Large$\frac{\:1\:}{2}$}$\BigSbra{\BigPar{\Dvertsq{u+v}+\Dvertsq{v}}-\BigPar{\Dvertsq{u-v}+\Dvertsq{v}}}=2\,\Ang{u,v}.$\ENDL{}
