@@ -1738,16 +1738,18 @@ Simlr, $B_{\range ST}=\Bra{\mX_{\!j,k}=\sum_{x=1}^n\sum_{y=1}^nC_{x,j}C_{y,k}\mE
 %Now $\Par{\mX_{\!1,k},\dots,\mX_{\!r,k}}$ and  $\Par{\mX_{\!j,1},\dots,\mX_{\!j,r}}$ are liney indep lists.\parSol{}
 Each $\mX_{\!j,k}=C_{1,k}\mC_{\!j,1}+\dots+C_{n,k}\mC_{\!j,n}=C_{1,j}\Par{\mC_{\!k,1}}{^t}+\dots+C_{n,j}\Par{\mC_{\!k,n}}{^t}.$\PfEnd\vspace{6pt}\par\quad
 \Or By \TIPSN{3}. Define $\varphi\in\Lm[\BigPar]{\Lm{\FbbP{n,1}}}:X\mapsto AX;$ \;$\psi\in\Lm[\BigPar]{\Lm{\FbbP{n,1},\range A}}:Y\mapsto YA^t.$\par\quad
-Then $\range\psi\varphi=\Bra{X\in\Lm{\FbbP{n,1},\range A}:X\mmid_{\null A^T}=0}$ of dim $\Par{{\range A}}\Par{{\range A^t}}=\Par{\rank A}{^2}.$\PfEnd
+$\range\psi\varphi=\Bra{X\in\Lm{\FbbP{n,1},\range A}:X\mmid_{\null A^T}=0}$ of dim $\Par{{\dim\range A}}\Par{{\dim\range A^t}}=\Par{\rank A}{^2}.$\PfEnd
 \SepLine
+
 \ProblemN{\Anchor{3D16}{16}}{
 	\TextA{Supp $V$ is finide and non0 $S\in\Lm{V}$ suth $\forall T\in\Lm{V},ST=TS$. Prove $\exists\,\lambda\in\Fbb,S=\lambda I$.}
-}Let $B_{\range S}=\Par{w_1,\dots,w_m}$ with each $w_i=Sv_i.$ Extend to bses $\Par{w_1,\dots,w_n},\Par{v_1,\dots,v_n}$ of $V.$\parSol{}
-{\vspace{2pt}Let {$S=E_{1,1}+\dots+E_{m,m}\Rightarrow \Mt{S,B_V}=\Mt{I,B_{\range S},B_V}.$} Note that $R_{k,1}:w_x\mapsto\delta_{k,x}v_1.$}\parSol{}
+}Let $B_{\range S}=\Par{w_1,\dots,w_m}$ with each $w_i=Sv_i.$\parSol{}
+Let $B_{\null T}=\Par{v_{m+1},\dots,v_n}.$ Let $B_1=\Par{v_1,\dots,v_n},\,B_2=\Par{w_1,\dots,w_n}.$\parSol{}
+{\vspace{2pt}Let {$S=E_{1,1}+\dots+E_{m,m}\Rightarrow \Mt{S,B_1,B_2}=\Mt{I,B_{\range S},B_2}.$} Note that $R_{k,1}:w_x\mapsto\delta_{k,x}v_1.$}\parSol{}
 {\vspace{2pt}Then $\forall k\in\;\!\!\Bra{1,\dots,n},$ {\FontLarge$0\neq SR_{k,1}=R_{k,1}S.$} Hence $\dim\null S=0,\;\dim\range S=m=n.$}\parSol{}
-\vspace{2pt}\NOTICE that {\FontLarge$G_{i,j}=R_{i,j}S=SR_{i,j}=Q_{i,j}$}. 又 For each $w_i,\exists\,!\,a_{k,\,i}\in\Fbb,w_i=a_{1,i}v_1+\dots+a_{n,i}v_n.$\parSol{}
-Then fix one $i.$ Now for each $j\in\;\!\!\Bra{1,\dots,n},Q_{i,j}\Par{w_i}=w_j=a_{i,i}v_j=G_{i,j}\BigBigPar{{\sum_{k=1}^na_{k,\,i} v_k}}.$\parSol{}
-Let $\lambda=a_{i,i}.$ Hence each $w_j=\lambda v_j.$ Now fix one $j,$ we have $a_{1,1}v_j=\dots=a_{n,n}v_j.$\PfEnd
+\vspace{2pt}\NOTICE that {\FontLarge$G_{i,\:\!j}=R_{i,\:\!j}S=SR_{i,\:\!j}=Q_{i,\:\!j}$}. 又 For each $w_i,\exists\,!\,a_{k,\:\!i}\in\Fbb,w_i=a_{1,\:\!i}v_1+\dots+a_{n,\:\!i}v_n.$\parSol{}
+Then fix one $i.$ Now for each $j\in\;\!\!\Bra{1,\dots,n},Q_{i,\:\!j}\Par{w_i}=w_j=a_{i,\:\!i}v_j=G_{i,\:\!j}\BigBigPar{{\sum_{k=1}^na_{k,\:\!i} v_k}}.$\parSol{}
+Let $\lambda=a_{i,\:\!i}.$ Hence each $w_j=\lambda v_j.$ Now fix one $j,$ we have $a_{1,1}v_j=\dots=a_{n,n}v_j.$\PfEnd
 \SepLine
 
 %\BulletPointX\TipsN{5}\;\;Identify $v$ with $I$ restr to $\Span{v}$ onto $V,$ to behave as liney maps and use Exe (4E 17).

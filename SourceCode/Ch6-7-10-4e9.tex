@@ -92,10 +92,10 @@ Then $\Dvertsq{u+w}+\Dvertsq{u-w}\leqslant2m.$ \;\;\Or $\Dvert{u+w}\cdot\Dvert{u
 	\TextB{Supp $u,v_1,\dots,v_n$ are non0 in $V$ suth each $\Ang{v_i,u}>0$ and $\Ang{v_i,v_j}\leqslant0$ \,for $i\neq j.$}
 	\TextB{Show $\Par{v_1,\dots,v_n}$ liney indep.}
 }(i) Asum $v_1=cv_2.$ Then $\Ang{cv_2,u}>0\Rightarrow c>0,$ while $\Ang{v_1,v_1}=c\Ang{v_2,v_1}\geqslant0\Rightarrow c\leqslant0.$ ctradic.\parSol{}
-(ii) Asum $\Par{v_1,\dots,v_{n-1}}$ liney indep. Asum $v_n=c_1v_1+\dots+c_{n-1}v_{n-1}.$\parSol{}
-Then $\Ang{v_n,u}=c_1\Ang{v_1,u}+\dots+c_{n-1}\Ang{v_{n-1},u}>0.$ \;Thus we can choose all $c_k\in\Rbb.$\parSol{}
-Write $c_1v_1+\dots+c_nv_n=0,\:c_n=-1.$ \;Let $P=\Bra{i:c_i\geqslant0},\,N=\Bra{i:c_i<0}.$\vspace{2pt}\parSol{}
-Then $\sum_{j\,\in\,P}c_jv_j=\sum_{k\,\in\,N}-c_kv_k\Longrightarrow 0\leqslant\BigAng{{\sum_{j\,\in\,P}c_jv_j,\:\sum_{k\,\in\,N}-c_kv_k}}=\sum-c_j\:\!c_k\!\:\Ang{v_j,v_k}\leqslant0.$\vspace{3pt}\parSol{}
+(ii) Asum $\Par{v_1,\dots,v_{n-1}}$ liney indep. Asum $v_n=c_1v_1+\dots+c_{n-1}v_{n-1}.$\parSol{\Hii}
+Then $\Ang{v_n,u}=c_1\Ang{v_1,u}+\dots+c_{n-1}\Ang{v_{n-1},u}>0.$ \;Thus we can choose all $c_k\in\Rbb.$\parSol{\Hii}
+Write $c_1v_1+\dots+c_nv_n=0,\:c_n=-1.$ \;Let $P=\Bra{i:c_i\geqslant0},\,N=\Bra{i:c_i<0}.$\vspace{2pt}\parSol{\Hii}
+Then $\sum_{j\,\in\,P}c_jv_j=\sum_{k\,\in\,N}-c_kv_k\Longrightarrow 0\leqslant\BigAng{{\sum_{j\,\in\,P}c_jv_j,\:\sum_{k\,\in\,N}-c_kv_k}}=\sum-c_j\:\!c_k\!\:\Ang{v_j,v_k}\leqslant0.$\vspace{3pt}\parSol{\Hii}
 While $\BigAng{{\sum_{j\,\in\,P}c_jv_j,\,u}},\:\BigAng{{\sum_{k\,\in\,N}-c_kv_k,\,u}}\geqslant0,$ where the equas hold $\Longleftrightarrow$ all $c_i=0.$\PfEnd
 \SepLine
 
@@ -184,7 +184,7 @@ Rev the roles of $u,v\Rightarrow c_v\Ang{u,v}{_2}={\Ang{u,v}{_1}}=\overline{\Ang
 	\TextA{Prove $\exists\,c>0,\:\Dvert{v}{_1}\leqslant c\Dvert{v}{_2}$ \,for all $v\in V.$}
 }Let $B_V=\Par{e_1,\dots,e_n}$ be orthon wrto $\Ang{\cdot,\cdot}{_2}.$ Supp $v=a_1e_1+\dots+a_ne_n.$\vspace{1pt}\parSol{}
 \NOTICE that $\Dvert{v}{_1}\leqslant\Dvert{a_1e_1}{_1}+\dots+\Dvert{a_ne_n}{_1}\leqslant\max\!\Bra{\Dvert{e_1}{_1},\dots,\Dvert{e_n}{_1}}\cdot\BigPar{\aMid{a_1}+\dots+\aMid{a_n}}.$\vspace{3pt}\parSol{}
-又 $\aMid{a_1}+\dots+\aMid{a_n}\leqslant n\cdot\max\!\Bra{\aMid{a_k}:1\leqslant k\leqslant n}\leqslant n\cdot\sqrt{\aMidsq{a_1}+\dots+\aMidsq{a_n}}\leqslant n\cdot\Dvert{v}{_2}.$\PfEnd
+又 $\aMid{a_1}+\dots+\aMid{a_n}\leqslant n\cdot\max\!\Bra{\aMid{a_1},\dots,\aMid{a_n}}\leqslant n\cdot\sqrt{\aMidsq{a_1}+\dots+\aMidsq{a_n}}\leqslant n\cdot\Dvert{v}{_2}.$\PfEnd
 \SepLine
 
 \Anchor{6B13}\ProblemN{13}{
@@ -200,8 +200,8 @@ Define $\varphi\in U\apostrophe$ by each $\varphi\Par{v_j}=1.$ \;Becs $\exists\,
 
 \Anchor{6B4e19}\ProblemBnoor{4E 19}{
 	\TextA{Supp $B_V=\Par{v_1,\dots,v_n}.$ Prove $\exists\,B_V'=\Par{u_1,\dots,u_n}$ suth $\Ang{v_j,u_k}=\delta_{j,k}.$}
-}Let $\Par{\varphi_1,\dots,\varphi_n}$ be the corres dual bss of $B_V.$ \;Becs $\exists\,!\,u_k\in V,\varphi_k\Par{v}=\Ang{v,u_k}$ for all $v\in V.$\parSol{}
-Then $\varphi_k\Par{v_j}=\delta_{j,k}=\Ang{v_j,u_k}.$ \;Now let $a_1u_1+\dots+a_nu_n=0\Rightarrow$ each $\Ang{v_j,0}=0=a_j.$\PfEnd
+}Let $\Par{\varphi_1,\dots,\varphi_n}$ be the corres dual bss of $B_V.$ \;Becs $\exists\,!\,u_k\in V,\,\varphi_k\Par{v}=\Ang{v,u_k}$ for all $v\in V.$\parSol{}
+Then $\varphi_k\Par{v_j}=\delta_{j,k}=\Ang{v_j,u_k}.$ \;Now let \,$a_1u_1+\dots+a_nu_n=0\Rightarrow$ each $\Ang{v_j,0}=0=a_j.$\PfEnd
 \SepLine
 
 \Anchor{6B16}\ProblemN{16}{
@@ -212,10 +212,10 @@ Using Euclid inner prod $\Ang{\cdot,\cdot}$ and the corres norm $\Dvert{{\cdot}}
 Supp $A=\Mt{T}$ up-trig wrto orthon $B_V=\Par{e_1,\dots,e_n}.$\parSol{}
 Then $\forall v=x_1e_1+\dots+x_ne_n\in V,\Dvert{v}{_V}=\Dvert{x}.$ Now we show $\Dvert{A^mx}\leqslant\epsilon\Dvert{x}$ for all $x\in\CbbP{n,1}.$\parSol{}
 Define $D,N\in\CbbP{n,n}$ by $D_{j,k}=\delta_{j,k}A_{j,k},\:N=A-D.$ Then $N$ is nilp with $N^p=0\neq N^{p-1}.$\parSol{}
-Let $\rho=\max\!\Bra{\aMid{D_{1,1}},\dots,\aMid{D_{n,n}}}\Rightarrow0\leqslant\rho<1,$ and each $\Dvert{D^{\,k}x}\leqslant\rho^{\,k}\Dvert{x}\leqslant\Dvert{x}.$\vspace{1pt}\parSol{}
-Let $M=\sum_{j=1}^n\sum_{k=1}^n\aMidsq{N_{j,k}}.$ \,{By \Sbra{6.A \TIPSN{2}}}, $\Dvert{Nx}\leqslant M\Dvert{x}\Rightarrow\Dvert{N^{k}x}\leqslant M\Dvert{N^{k-1}x}\leqslant M^k\Dvert{x}.$\vspace{1pt}\parSol{}
+Let $\rho=\max\!\Bra{\aMid{D_{1,1}},\dots,\aMid{D_{n,n}}}\Rightarrow0\leqslant\rho<1,$ and each $\Dvert{D^{\,k}x}\leqslant\rho^{\,k}\Dvert{x}\leqslant\Dvert{x}.$\vspace{3pt}\parSol{}
+Let $M=\sum_{j=1}^n\sum_{k=1}^n\aMidsq{N_{j,k}}.$ \,{By \Sbra{6.A \TIPSN{2}}}, $\Dvert{Nx}\leqslant M\Dvert{x}\Rightarrow\Dvert{N^{k}x}\leqslant M\Dvert{N^{k-1}x}\leqslant M^k\Dvert{x}.$\vspace{5pt}\parSol{}
 Hence $\Dvert{A^{p+q}x}=\BigDvert{b_0D^{\,p+q}x+\dots+b_kD^{\,p+q-k}N^{k}x+\dots+b_{p-1}D^{\,q+1}N^{p-1}x}$\vspace{3pt}\parSol{}
-\Blind{So that $\Dvert{A^{p+q}x}$}$\leqslant\!\BigSbra{{b_0\rho^{\,p+q}+\dots+b_k\rho^{\,p+q-k}M^k+b_{p-1}\rho^{\,q+1}M^{p-1}}}\Dvert{x}.$\vspace{2pt}\parSol{}
+\Blind{So that $\Dvert{A^{p+q}x}$}$\leqslant\!\BigSbra{{b_0\rho^{\,p+q}+\dots+b_k\rho^{\,p+q-k}M^k+b_{p-1}\rho^{\,q+1}M^{p-1}}}\Dvert{x}.$\vspace{4pt}\parSol{}
 Where each $b_j=\mathC_{p+q}^j\leqslant\Par{p+q}{^j}$ for $j\in\;\!\!\Bra{0,\dots,p-1}\Rightarrow$ each $b_j\leqslant\Par{p+q}{^{p-1}}.$\vspace{1pt}\parSol{}
 Let $\sigma=\max\!\Bra{1,M,\dots,M^{p-1}}.$ 又 $\max\!\Bra{\rho^{\,p+q},\dots,\rho^{\,q+1}}=\rho^{\,q+1}.$\parSol{}
 Now $\Dvert{A^{p+q}x}\leqslant\Par{p+q}{^{p-1}}\rho^{\,q+1}\sigma\Dvert{x}.$ \;Note that as $q\rightarrow\infty,$ \,$\Par{p+q}{^{p-1}}\rho^{\,q+1}\rightarrow0.$\PfEnd
@@ -363,7 +363,7 @@ By (5.C.5). If $\Fbb=\Rbb,$ then apply to $T_{\!\Cbb}.$ Now every liney factor h
 }Supp $v$ is eigvec of $T$ corres $\lambda$ and of $T^*$ corres $\mu.$\parSol{}
 Then $\lambda\Dvertsq{v}=\Ang{Tv,v}=\Ang{v,T^*v}=\overline{\mu}\Dvertsq{v}\Rightarrow\lambda=\overline{\mu}.$\parSol{}
 Thus each $E\Par{\lambda,T}=E\Par{\overline{\lambda},T^*}$ invard $T,T^*\Rightarrow E\Par{\lambda,T}{^\perp}=E\Par{\overline{\lambda},T^*}{^\perp}$ invard $T^*,T.$\parSol{}
-Let $W=\bigcap_{\lambda\,\in\,\Fbb}E\Par{\lambda,T}{^\perp}$ invard $T,T^*.$ By \Sbra{6.C \TIPSN{?}}, no eigvals of $T\mmid_W,T^*\mmid_W\Rightarrow W=\zeroSubs.$\PfEnd\vspace{4pt}\parSol{}
+Let $W=\bigcap_{\lambda\,\in\,\Fbb}E\Par{\lambda,T}{^\perp}$ invard $T,T^*.$ By \Sbra{6.C \TIPSN{4}}, no eigvals of $T\mmid_W,T^*\mmid_W\Rightarrow W=\zeroSubs.$\PfEnd\vspace{4pt}\parSol{}
 \Or $\exists$ orthon $B_V=\Par{e_1,\dots,e_n}$ suth $\Mt{T}$ up-trig $\Rightarrow\overline{A}{^t}=\Mt{T^*}$ low-trig.\parSol{}
 (i) Now $Te_1=A_{1,1}e_1\Rightarrow\overline{A_{1,1}}e_1+\dots+\overline{A_{1,n}}e_n=T^*e_1\Rightarrow A_{1,2}=\dots=A_{1,n}=0.$\parSol{}
 (ii) Asum $\Par{A_{1,2}\;\cdots\;A_{1,n}}=\dots=\Par{A_{k-1,k}\;\cdots\;A_{k-1,n}}=0.$ 又 $A$ is up-trig.\vspace{1pt}\parSol{\Hii}
