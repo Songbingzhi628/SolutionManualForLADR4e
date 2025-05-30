@@ -187,16 +187,16 @@ Rev the roles of $u,v\Rightarrow c_v\Ang{u,v}{_2}={\Ang{u,v}{_1}}=\overline{\Ang
 又 $\aMid{a_1}+\dots+\aMid{a_n}\leqslant n\cdot\max\!\Bra{\aMid{a_1},\dots,\aMid{a_n}}\leqslant n\cdot\sqrt{\aMidsq{a_1}+\dots+\aMidsq{a_n}}\leqslant n\cdot\Dvert{v}{_2}.$\PfEnd
 \SepLine
 
-\Anchor{6B13}\ProblemN{13}{
-	\TextA{Supp $\Par{v_1,\dots,v_m}$ liney indep in $V.$ Show $\exists\,w\in V$ suth each $\Ang{w,\:\!v_j}>0.$}
-}Using induc on $m.$ (i) $m=1.$ Let $w=v_1.$ (ii) $m>1.$ Asum it holds for $\Par{m-1}.$\parSol{}
-By asum, $\exists\,w'\in\Span{v_1,\dots,v_{m-1}}$ suth each $\Ang{w',\:\!v_k}>0$ for $k\in\;\!\!\Bra{1,\dots,m-1}.$\parSol{}
-Apply [6.31] to get the corres $\Par{e_1,\dots,e_m}.$ \;Let $w=w'+a\:\!e_m.$\parSol{}
-Becs each $\Ang{e_m,\:\!v_k}=0\Rightarrow\Ang{w,\:\!v_k}=\Ang{w',\:\!v_k}>0$ for $k\in\;\!\!\Bra{1,\dots,m-1}.$\parSol{}
-Note that $\Ang{e_m,\:\!v_m}\neq0.$ Hence $\exists\,a\in\Fbb,\:\Ang{w,\:\!v_m}=\Ang{w'+a\:\!e_m,\:\!v_m}=\Ang{w',\:\!v_m}+a\:\!\Ang{e_m,\:\!v_m}>0.$\PfEnd\vspace{4pt}\parSol{}
-\Or We show $\exists\,w\in V$ suth each $\Ang{w,\:\!v_j}=\Ang{v_j,\:\!w}=1.$ Let $U=\Span{v_1,\dots,v_m}.$\parSol{}
-Define $\varphi\in U\apostrophe$ by each $\varphi\Par{v_j}=1.$ \;Becs $\exists\,!\,w\in U,$ each $\varphi\Par{v_j}=\Ang{v_j,\:\!w}.$\PfEnd
-\SepLine
+%\Anchor{6B13}\ProblemN{13}{
+%	\TextA{Supp $\Par{v_1,\dots,v_m}$ liney indep in $V.$ Show $\exists\,w\in V$ suth each $\Ang{w,\:\!v_j}>0.$}
+%}Using induc on $m.$ (i) $m=1.$ Let $w=v_1.$ (ii) $m>1.$ Asum it holds for $\Par{m-1}.$\parSol{}
+%By asum, $\exists\,w'\in\Span{v_1,\dots,v_{m-1}}$ suth each $\Ang{w',\:\!v_k}>0$ for $k\in\;\!\!\Bra{1,\dots,m-1}.$\parSol{}
+%Apply [6.31] to get the corres $\Par{e_1,\dots,e_m}.$ \;Let $w=w'+a\:\!e_m.$\parSol{}
+%Becs each $\Ang{e_m,\:\!v_k}=0\Rightarrow\Ang{w,\:\!v_k}=\Ang{w',\:\!v_k}>0$ for $k\in\;\!\!\Bra{1,\dots,m-1}.$\parSol{}
+%Note that $\Ang{e_m,\:\!v_m}\neq0.$ Hence $\exists\,a\in\Fbb,\:\Ang{w,\:\!v_m}=\Ang{w'+a\:\!e_m,\:\!v_m}=\Ang{w',\:\!v_m}+a\:\!\Ang{e_m,\:\!v_m}>0.$\PfEnd\vspace{4pt}\parSol{}
+%\Or We show $\exists\,w\in V$ suth each $\Ang{w,\:\!v_j}=\Ang{v_j,\:\!w}=1.$ Let $U=\Span{v_1,\dots,v_m}.$\parSol{}
+%Define $\varphi\in U\apostrophe$ by each $\varphi\Par{v_j}=1.$ \;Becs $\exists\,!\,w\in U,$ each $\varphi\Par{v_j}=\Ang{v_j,\:\!w}.$\PfEnd
+%\SepLine
 
 \Anchor{6B4e19}\ProblemBnoor{4E 19}{
 	\TextA{Supp $B_V=\Par{v_1,\dots,v_n}.$ Prove $\exists\,B_V'=\Par{u_1,\dots,u_n}$ suth $\Ang{v_j,u_k}=\delta_{j,k}.$}
@@ -221,8 +221,6 @@ Let $\sigma=\max\!\Bra{1,M,\dots,M^{p-1}}.$ 又 $\max\!\Bra{\rho^{\,p+q},\dots,\
 Now $\Dvert{A^{p+q}x}\leqslant\Par{p+q}{^{p-1}}\rho^{\,q+1}\sigma\Dvert{x}.$ \;Note that as $q\rightarrow\infty,$ \,$\Par{p+q}{^{p-1}}\rho^{\,q+1}\rightarrow0.$\PfEnd
 \SepLine
 \ChEnd
-
-\pagebreak
 
 \ChDecl{Ch6C}{6.C}{}
 
@@ -275,11 +273,11 @@ Then $U\cap W=\zeroSubs\Rightarrow\Par{U\cap W}{^\perp}=\FbbP{\infty}.$ While $U
 
 \ChEnd
 
-\vfill\ChDecl{Ch7A}{7.A}{\quad{\ANote {\FontSmall $V$ denotes a finide vecsp over $\Fbb.$}}}%An Exe marked by $\blacksquare$ is true if infinide or partially finide.
+\vfill\ChDecl{Ch7A}{7.A,B,C \& 7.D[4E]}{\quad{\ANote {\FontSmall $V$ denotes a finide vecsp over $\Fbb.$\qquad7.D[4E]处结合了3e的9.B节。}}}%An Exe marked by $\blacksquare$ is true if infinide or partially finide.
 
 \vspace{6pt}
 
-\Anchor{7AT}\ProblemBX{\Tips}{
+\Anchor{7AT}\ProblemN{A.\Tips}{
 	\TextA{Supp $T\in\Lm{V}$ is normal. Prove $p\Par{T}$ is normal for any $p\in\PoFi.$}
 }Becs $T$ normal $\Rightarrow T^j$ normal. We use induc on $\deg p=k.$\parSol{}
 (i) $k=0,1.$ \;$p\Par{z}=c_0+c_1z\Rightarrow p\Par{T}{^*}p\Par{T}=\Par{\overline{c_0}I+\overline{c_1}T^*}\Par{c_0I+c_1T}=p\Par{T}p\Par{T}{^*}.$\parSol{}
@@ -302,8 +300,8 @@ Then $p\Par{T}{^*}p\Par{T}=\Sbra{q\Par{T}{^*}+\overline{c_k}\Par{T^k}{^*}}\Sbra{
 %	\TextB{Supp $P^2=P=P_{\!U}\in\Lm{V}$ for some subsp $U$ of $V.$ Prove $P$ is self-adj.}
 %}$\forall\Par{u,w},\Par{x,y}\in U\times U^\perp,\:\BigAng{P\Par{u+w},x+y}=\Ang{u+w,x}=\BigAng{u+w,P^*\Par{x+y}}.$\PfEnd
 %\SepLine
-\pagebreak
-\Anchor{7A17}\ProblemN{17}{
+
+\Anchor{7A17}\ProblemN{A.17}{
 	\TextA{Supp $T\in\Lm{V}$ is normal. Prove each $\null T^k=\null T$ \,and\, $\range T^k=\range T.$}
 }Becs $\range T=\Par{\null T^*}{^\perp}=\Par{\null T}{^\perp}\Rightarrow T\mmid_{\range T}$ is inje. Thus $\null T^k=\null T.$\parSol{}
 And $\range T^2=\range T\mmid_{\range T}=\range T=\range T\Rightarrow\range T^{k-1}\mmid_{\range T}=\range T^{k-1}\mmid_{\range T^2}.$\PfEnd\vspace{4pt}\parSol{}
@@ -311,7 +309,7 @@ And $\range T^2=\range T\mmid_{\range T}=\range T=\range T\Rightarrow\range T^{k
 Note that $T$ normal $\Rightarrow T^k$ normal. Then $\range T^k=\Par{\null T^k}{^\perp}=\Par{\null T}{^\perp}=\range T.$\PfEnd
 \SepLine
 
-\Anchor{7A4e28}\ProblemBnoor{4E 28}{
+\Anchor{7A4e28}\ProblemBnoor{4E A.28}{
 	\TextA{Supp $T\in\Lm{V}$ is normal. Prove the min of $T$ is not a multi of any $\Par{z-\lambda}{^2}.$}
 }Supp the min of $T$ is $p\Par{z}=\Par{z-\lambda}{^k}q\Par{z}$ with $k\geqslant1$ and $q\Par{\lambda}\neq0.$\parSol{}
 Then $p\Par{T}v=0\Rightarrow q\Par{T}v\in\Null\Par{T-\lambda I}{^k}=\Null\Par{T-\lambda I}\Rightarrow k=1.$\PfEnd\vspace{2pt}\parSol{}
@@ -341,14 +339,15 @@ By (5.C.5). If $\Fbb=\Rbb,$ then apply to $T_{\!\Cbb}.$ Now every liney factor h
 %\Or $T=0\Rightarrow\forall w\in W,\forall v\in V,\Ang{v,T^*w}=\Ang{Tv,w}=0\Rightarrow\range T^*\subseteq V^\perp.$\parSol{}
 %$T^*T=0\Rightarrow\forall v\in V,\Ang{Tv,Tv}=\Ang{v,T^*Tv}=0\Rightarrow T=0.$\PfEnd
 %\SepLine
-\ChEnd
+%\ChEnd
+%\pagebreak
 %\vspace{8pt}
 
-\ChDecl{Ch7B}{7.B}{\quad{\ANote {\FontSmall $V$ denotes a finide vecsp over $\Fbb.$}}}
+%\ChDecl{Ch7B}{7.B}{\quad{\ANote {\FontSmall $V$ denotes a finide vecsp over $\Fbb.$}}}
 
-\vspace{4pt}
+%\vspace{4pt}
 
-\Anchor{7B14}\ProblemN{14}{
+\Anchor{7B14}\ProblemN{B.14}{
 	\TextA{Supp $\Fbb=\Rbb,$ $T\in\Lm{V}.$ Prove $T$ diag $\Rightarrow$ self-adj wrto some $\Ang{\cdot,\cdot}{_V}.$}
 }Let eigvecs $B_V=\Par{e_1,\dots,e_n}$ be orthon wrto $\Ang{e_j,\:\!e_k}{_V}=\delta_{j,k}.$ \,Becs $\Mt{T}=\Mt{T}{^t}=\Mt{T^*}.$\PfEnd\vspace{2pt}
 \Anchor{7B4e24}\ANote (a) $\Mt{T}=\overline{\Mt{T}}{^t}$ wrto some $B_V\Longleftrightarrow T$ self-adj wrto some $\Ang{\cdot,\cdot}{_V}$ $\Longleftrightarrow$ diag.\parNot
@@ -362,8 +361,8 @@ By (5.C.5). If $\Fbb=\Rbb,$ then apply to $T_{\!\Cbb}.$ Now every liney factor h
 %\Or $\exists$ orthon $B_V=\Par{e_1,\dots,e_n}$ of eigvecs with corres $\lambda_1,\dots,\lambda_n.$\parSol{}
 %Now $\lambda_j^8e_j=T^8e_j=T^9e_j=\lambda_j^9e_j\Rightarrow\lambda_j=0$ or $1\in\Rbb.$ 又 Each $T^2e_j=\lambda_j^2e_j=\lambda_je_j=Te_j.$\PfEnd
 %\SepLine
-
-\Anchor{7B4e8}\ProblemBnoor{4E 8}{
+\pagebreak
+\Anchor{7B4e8}\ProblemBnoor{4E B.8}{
 	\TextA{Supp $\Fbb=\Cbb,T\in\Lm{V}.$ Prove each eigvec of $T$ is an eigvec of $T^*\Rightarrow T$ is normal.}
 }Supp $v$ is eigvec of $T$ corres $\lambda$ and of $T^*$ corres $\mu.$\parSol{}
 Then $\lambda\Dvertsq{v}=\Ang{Tv,v}=\Ang{v,T^*v}=\overline{\mu}\Dvertsq{v}\Rightarrow\lambda=\overline{\mu}.$\parSol{}
@@ -382,36 +381,43 @@ Then $Te_{k}=A_{k,k}e_{k}\Rightarrow\overline{A_{k,k}}e_1+\dots+\overline{A_{k,n
 %\PfEnd
 %\SepLine
 
-\Anchor{7B4e12}\ProblemBnoor{4E 12}{
+\Anchor{7B4e12}\ProblemBnoor{4E B.12}{
 	\TextA{Supp $\Fbb=\Cbb,T\in\Lm{V}$ is normal, $S\in\Lm{V}$ and $ST=TS.$ Prove $ST^*=T^*S.$}
 }Let $B_V=\Par{e_1,\dots,e_n}$ be orthon eigvecs of $T$ corres $\lambda_1,\dots,\lambda_n.$\parSol{}
 Becs each $E\Par{\lambda_k,T}=E\Par{\overline{\lambda_k},T^*}$ invard $S\Rightarrow ST^*e_k=\overline{\lambda_k}Se_k=T^*Se_k.$ \;\Or Becs $T^*=p\Par{T}.$\PfEnd
 \SepLine
 
-\Anchor{7B4e20}\ProblemBnoor{4E 20}{
+\Anchor{7B4e20}\ProblemBnoor{4E B.20}{
 	\TextA{Supp $\Fbb=\Cbb,T\in\Lm{V}$ is normal and $U$ invarspd $T.$}
 	\TextA{Prove {\tgnr\large(a)} $U^\perp$ invard $T,$ \;{\tgnr\large(b)} $\Par{T\mmid_U}{^*}=T^*\mmid_U\in\Lm{U},$ \;{\tgnr\large(c)} $T\mmid_U,T\mmid_{U^\perp}$ normal.}
 }By \Sbra{5.A \TIPSN{3}}, and apply [6.31] to each $E\Par{\lambda_k,T\mmid_U},$ let $B_U=\Par{e_1,\dots,e_m}$ be orthon eigvecs.\parSol{}
 Let $B_V=\Par{e_1,\dots,e_n}$ be orthon eigvecs. Then $B_{U^\perp}=\Par{e_{m+1},\dots,e_n},$ invard $T.$ And $U$ invard $T^*.$\vspace{2pt}\parSol{}
 (b) $\forall u,v\in U,\:\BigAng{v,\Par{T\mmid_U}{^*}u}=\BigAng{T\mmid_U v,u}=\BigAng{v,T^*\mmid_U u}\Rightarrow\BigPar{\Par{T\mmid_U}{^*}-T^*\mmid_U}u\in U\cap U^\perp.$\vspace{2pt}\parSol{}
-(c) $\forall u\in U,\:\BigDvert{T\mmid_U u}=\BigDvert{T^*\mmid_U u}=\BigDvert{\Par{T\mmid_U}{^*}u}.$ \;\Or $T\mmid_U\Par{T\mmid_U}{^*}=T^*T\mmid_U=T^*\mmid_UT\mmid_U.$\PfEnd\vspace{5pt}
+(c) $\forall u\in U,\:\BigDvert{T\mmid_U u}=\BigDvert{T^*\mmid_U u}=\BigDvert{\Par{T\mmid_U}{^*}u}.$ \;\Or $T\mmid_U\Par{T\mmid_U}{^*}=T^*T\mmid_U=T^*\mmid_UT\mmid_U.$\PfEnd\vspace{3pt}
 %\Or Let orthon $B_U=\Par{e_1,\dots,e_m}\Rightarrow B_V=\Par{e_1,\dots,e_n}\Rightarrow B_{U^\perp}=\Par{e_{m+1},\dots,e_n}.$ Let $A=\Mt{T,B_V}.$\parSol{}
 %Let $A$ be block matrix {\small$\begin{pmatrix}X &\hspace{-4pt} Y\\[-2pt] 0 &\hspace{-4pt} Z\end{pmatrix}$}, where $X\in\FbbP{m,m},Y\in\FbbP{m,\:\!n-m},Z\in\FbbP{n-m,\:\!n-m}.$\parSol{}
 %(a) Becs $\sum_{j=1}^m\Dvertsq{X_{\cdot,j}}=\sum_{j=1}^m\Dvertsq{Te_j}=\sum_{j=1}^m\Dvertsq{T^*e_j}=\sum_{j=1}^m\BigDvertsq{\overline{X_{j,\cdot}}}+\sum_{j=1}^m\BigDvertsq{\overline{Y_{j,\cdot}}}\Rightarrow Y=0.$\vspace{2pt}\parSol{\Ha}
 %Apply to $T^*\Rightarrow U$ invard $T^*.$ \Or Becs $\Mt{T^*,B_V}=\overline{A}{^t}={}${\small$\begin{pmatrix}\overline{X}{^t} &\hspace{-4pt} 0\\[-2pt] 0 &\hspace{-4pt} \overline{Z}{^t}\end{pmatrix}$}.\parSol{}
 %(b) $\Mt{T\mmid_U,B_V}=X\Rightarrow\Mt[\BigPar]{\Par{T\mmid_U}{^*},B_V}=\overline{X}{^t}.$ 又 $\Mt{T^*\mmid_U,B_V}=\overline{X}{^t}.$\PfEnd\vspace{4pt}
 \AComm See [9.30] without using [7.24] and the hypo $\Fbb=\Cbb.$\par
-\SepLine
-
-\BulletPointX\Anchor{7B13}\ANote Another proof of [7.24]: Induc step: For $\dim V>1.$ Asum it holds for smaller dim.\parNot{\IndentB}
-Let $u$ be an eigvec with $\Dvert{u}=1.$ Let $B_U=\Par{u}\Rightarrow U$ invard $T,$ so is $U^\perp\Rightarrow T\mmid_{U^\perp}$ normal.\parNot{\IndentB}
+\Anchor{7B13}\ANote Another proof of [7.24]: Induc step: For $\dim V>1.$ Asum it holds for smaller dim.\parNot
+Let $u$ be an eigvec with $\Dvert{u}=1.$ Let $B_U=\Par{u}\Rightarrow U$ invard $T,$ so is $U^\perp\Rightarrow T\mmid_{U^\perp}$ normal.\parNot
 By asum, $\exists$ orthon $B_{U^\perp}$ of eigvecs of $T\mmid_{U^\perp}.$ Now $B_V=B_U\cup B_{U^\perp}$ of orthon eigvecs.\PfEnd
 \SepLine
-\vspace{8pt}
+%\vspace{8pt}\pagebreak
 
-\ChDecl{Ch7C}{7.C \& 7.D [4E]}{\quad{\ANote {\FontSmall $V$ denotes a finide vecsp over $\Fbb.$\qquad7.D[4E]处结合了3e的9.B节。}}}
+%\ChDecl{Ch7C}{7.C \& 7.D [4E]}{\quad{\ANote {\FontSmall $V$ denotes a finide vecsp over $\Fbb.$\qquad7.D[4E]处结合了3e的9.B节。}}}
 
-\vspace{4pt}
+%\vspace{4pt}
+
+\Anchor{7CNSRI}\ProblemBX[]{\NoteForSmall{Square Root of Id}}{
+	Supp $T\in\Lm{\FbbP{2}}$ and $T^2=I.$ Let $\Mt{T}={}${\small$\begin{pmatrix}a &\hspace{-6pt} b\\[-2pt] c &\hspace{-6pt} d\end{pmatrix}$} wrto std bss.\TextB{}
+	(a) If $T$ is self-adj $\Longleftrightarrow b=c$. Then $ab+bd=0,\,a^2+b^2=b^2+d^2=1.$\TextB{}
+	\Ha $\aMid{a}=\aMid{d}=1,\:\!b=0,$ \;\OR \,$a=\pm\sqrt{1-b^2}=-d,\,b\neq0,$ \;\OR \,$b=\pm\sqrt{1-a^2}=\pm\sqrt{1-d^2}\neq0,\:a=-d.$\TextB{}
+	\Ha If $\Fbb=\Rbb,\,\aMid{b}<1,$ then $\Mt{T}={}${\small$\begin{pmatrix}\cos\alpha &\hspace{-6pt} \Blind{-}\sin\alpha\\[-2pt] \sin\alpha &\hspace{-6pt} -\cos\alpha\end{pmatrix}$}, {\FontSmall and $T\Par{r\cos\beta,\:r\sin\beta}=\BigPar{r\cos\!\Par{\alpha-\beta},\:r\sin\!\Par{\alpha-\beta}}$}.\TextB{\vspace{6pt}}
+	\Anchor{7D12}(b) If $T$ is not self-adj and $T\neq\pm I.$ \,Then by (4E 5.B.11), $a=-d,\,a^2+bc=1.$\TextB{}
+	\Hb If $a=-d=\pm 1,$ then $bc=0,$ and if $\Dvert{Te_1}\neq\Dvert{Te_2}$ or $\Ang{Te_1,Te_2}\neq0,$ then $T$ is not an isomet.\TextB{\vspace{-3pt}}
+}\SepLine
 
 %\Anchor{7C4}\ProblemN{4}{
 %	\TextA{Supp $1<n\in\Nbb.$ Show $\exists\,A\in\FbbP{n,n}$ with all ents positive numbers and $A=\overline{A}{^t},$}
@@ -443,15 +449,6 @@ Hence $\sum_{k=1}^n\aMidsq{\lambda_k}\aMidsq{c_k}=\Dvertsq{Tu}=\sum_{k=1}^n\aMid
 }Let $\Par{e_1,\dots,e_n},\Par{\,f_1,\dots,f_n}$ be orthon bses wrto $\Ang{\cdot,\cdot}{_2},\Ang{\cdot,\cdot}{_1}.$ Define $R\in\Lm{V}$ by $Re_k=f_k.$\parSol{}
 $\forall u=\sum_{i=1}^nx_i\,e_i,\:v=\sum_{i=1}y_i\,e_i,\;\Ang{u,v}{_2}=x_1\:\!\overline{y_1}+\dots+x_n\:\!\overline{y_n}=\Ang{Ru,Rv}{_1}=\Ang{R^*Ru,v}{_1}.$\PfEnd
 \SepLine
-
-\Anchor{7CNSRI}\ProblemBX[]{\NoteForSmall{Square Root of Id}}{
-	Supp $T\in\Lm{\FbbP{2}}$ and $T^2=I.$ Let $\Mt{T}={}${\small$\begin{pmatrix}a &\hspace{-6pt} b\\[-2pt] c &\hspace{-6pt} d\end{pmatrix}$} wrto std bss.\TextB{}
-	(a) If $T$ is self-adj $\Longleftrightarrow b=c$. Then $ab+bd=0,\,a^2+b^2=b^2+d^2=1.$\TextB{}
-	\Ha $\aMid{a}=\aMid{d}=1,\:\!b=0,$ \;\OR \,$a=\pm\sqrt{1-b^2}=-d,\,b\neq0,$ \;\OR \,$b=\pm\sqrt{1-a^2}=\pm\sqrt{1-d^2}\neq0,\:a=-d.$\TextB{}
-	\Ha If $\Fbb=\Rbb,\,\aMid{b}<1,$ then $\Mt{T}={}${\small$\begin{pmatrix}\cos\alpha &\hspace{-6pt} \Blind{-}\sin\alpha\\[-2pt] \sin\alpha &\hspace{-6pt} -\cos\alpha\end{pmatrix}$}, {\FontSmall and $T\Par{r\cos\beta,\:r\sin\beta}=\BigPar{r\cos\!\Par{\alpha-\beta},\:r\sin\!\Par{\alpha-\beta}}$}.\TextB{\vspace{6pt}}
-	\Anchor{7D12}(b) If $T$ is not self-adj and $T\neq\pm I.$ \,Then by (4E 5.B.11), $a=-d,\,a^2+bc=1.$\TextB{}
-	\Hb If $a=-d=\pm 1,$ then $bc=0,$ and if $\Dvert{Te_1}\neq\Dvert{Te_2}$ or $\Ang{Te_1,Te_2}\neq0,$ then $T$ is not an isomet.\TextB{\vspace{-3pt}}
-}\SepLine
 
 \ChDecl{Ch7D}{}{}
 
@@ -493,7 +490,7 @@ Now $\forall v\in V\nonzero,\,S\Sbra{\Dvert{Sv}{^{-1}}v}\in\bigodot\Longleftrigh
 We show each eigval of $S_{\Cbb}$ has abs val $1.$ Then done by \TIPS.\parSol{}
 Asum $\aMid{\lambda}<1$ and $\lambda$ is eigval of $S_{\Cbb}$ with $u+\i\,v$ and $\Dvertsq{u}+\Dvertsq{v}=1.$\parSol{}
 Then $S_{\Cbb}\Sbra{\lambda^{-1}\Par{u+\i\,v}}=u+\i\,v\in\bigodot{_{\!\Cbb}}$ while $\lambda^{-1}\Par{u+\i\,v}\not\in\bigodot{_{\!\Cbb}}.$ Ctradic.\PfEnd
-\SepLine
+\SepLine\ChEnd
 
 %\Anchor{7D15}\ProblemN{15}{
 %	\TextA{Supp $T\in\Lm{V}$ unit and $\Par{T-I}$ inv. Prove $\Par{T+I}\Par{T-I}{^{-1}}$ is skew.}
@@ -508,8 +505,8 @@ Then $S_{\Cbb}\Sbra{\lambda^{-1}\Par{u+\i\,v}}=u+\i\,v\in\bigodot{_{\!\Cbb}}$ wh
 %Then $\Par{T-\i\:\!I}{^{-1}}\Par{T+\i\:\!I}v=v\Rightarrow\Par{T+\i\:\!I}v=\Par{T-\i\:\!I}v\Rightarrow v=0.$\parSol{}
 %Now $\Sbra{\Par{T+\i\:\!I}\Par{T-\i\:\!I}{^{-1}}}{^*}=\Par{T+\i\:\!I}{^{-1}}\Par{T-\i\:\!I}=\Sbra{\Par{T+\i\:\!I}\Par{T-\i\:\!I}{^{-1}}}{^{-1}}.$\PfEnd
 %\SepLine
-
-\vfill\ChDecl{Ch7E}{7.E [4E] \& 7.F [4E]}{\quad{\ANote {\FontSmall $V,W$ are finide {\tgbfxx non0} vecsps over $\Fbb.$}}}
+\pagebreak
+\ChDecl{Ch7E}{7.E [4E] \& 7.F [4E]}{\quad{\ANote {\FontSmall $V,W$ are finide {\tgbfxx non0} vecsps over $\Fbb.$}}}
 
 \vspace{6pt}
 
@@ -594,10 +591,16 @@ Supp $\Dvert{Tv}=\Dvert{T}\,\Dvert{v}.$ Then $\BigDvertsq{T^*Tv-\Dvertsq{T}v}=\D
 Becs $\Dvertsq{T^*Tv}\leqslant\Dvertsq{T}\Dvertsq{Tv}=\Dvertsq{T}\Dvertsq{T}\Dvertsq{v},$ and $\BigAng{T^*Tv,\:\!\Dvertsq{T}v}=\BigAng{Tv,\:\!\Dvertsq{T}Tv}=\Dvertsq{T}\Dvertsq{Tv}.$\PfEnd
 \SepLine
 
+\Anchor{7F5}\ProblemN{F.5}{
+	\TextA{Supp $U$ is finide inner prodsp, $T\in\Lm{U,V},S\in\Lm{U,W}.$ Prove $\Dvert{ST}\leqslant\Dvert{S}\,\Dvert{T}.$}
+}Take $v$ suth $\Dvert{ST}=\Dvert{STv}\leqslant\Dvert{S}\,\Dvert{Tv}\leqslant\Dvert{S}\,\Dvert{T}\,\Dvert{v}\leqslant\Dvert{S}\,\Dvert{T}.$\PfEnd\vspace{3pt}\parSol{}
+\Or $\Dvert{STv}\leqslant\BigDvert{S${\Large$\frac{\:Tv\:}{\SmallDvert{Tv}}$}$}\,\Dvert{Tv}\leqslant\BigDvert{S${\Large$\frac{\:Tv\:}{\SmallDvert{Tv}}$}$}\,\Dvert{T}\leqslant\Dvert{S}\,\Dvert{T}.$\PfEnd
+\SepLine
+
 \Anchor{7F19}\ProblemN{F.19}{
 	\TextA{Prove $\Dvert{T^*T}=\Dvertsq{T}.$\hfill\FontNorm\tgnr $\Dvert{T}=\Dvert{\sqrt{T^*T}\;\!}=\sqrt{\Dvert{T^*T}}.$ \,\Or By Exe (F.2), $\Dvert{T^*T}=s_1^2.$\Blind{\quad}\PfEnd}
-}$\forall v\in V,\:\BigDvert{\sqrt{T^*T}v}=\Dvert{Tv}\leqslant\Dvert{T}\,\Dvert{v},$ and $\Dvert{Tv}=\BigDvert{\sqrt{T^*T}v}\leqslant\BigDvert{\sqrt{T^*T}\;\!}\,\Dvert{v}\Rightarrow\BigDvert{\sqrt{T^*T}\;\!}=\Dvert{T}.$\PfEnd\vspace{2pt}\parSol{}
-\Or $T=S\sqrt{T^*T},\sqrt{T^*T}=S^*T\Rightarrow\Dvert{T}\leqslant\Dvert{S}\,\BigDvert{\sqrt{T^*T}\;\!},\BigDvert{\sqrt{T^*T}\;\!}\leqslant\Dvert{S^*}\,\Dvert{T}.$\PfEnd
+}$\forall v\in V,\:\Dvert{Tv}=\BigDvert{\sqrt{T^*T}v}\leqslant\BigDvert{\sqrt{T^*T}\;\!}\,\Dvert{v}\Rightarrow\Dvert{T}\leqslant\BigDvert{\sqrt{T^*T}\;\!}.$ 又 $\Dvert{T^*T}\leqslant\Dvert{T^*}\,\Dvert{T}.$\PfEnd\vspace{2pt}\parSol{}
+\Or $T=S\sqrt{T^*T},\sqrt{T^*T}=S^*T.$ Simlr.\PfEnd
 \SepLine
 
 \Anchor{7F20}\ProblemN{F.20}{
@@ -624,7 +627,6 @@ Then $T_{\!\Cbb}^kv=\Dvert{T}{^k}v\Rightarrow\Dvert{T}{^k}=\BigDvert{T_{\!\Cbb}^
 %}We show $\exists\,v\in V,\,\Dvert{Tv-Ev}\geqslant\Dvert{T-S}=\max\!\Bra{\aMid{s_1-1},\dots,\aMid{s_n-1}}=\aMid{s_M-1}.$\parSol{}
 %Note that $\Dvert{Tv-Ev}\geqslant\aXMid{\Dvert{Tv}-1}$ for $\Dvert{v}=1.$ \;Let $v=e_M\Rightarrow\Dvert{T-E}\geqslant\aMid{s_M-1}.$\PfEnd
 %\SepLine
-
 
 \Anchor{7F28}\ProblemN{F.28}{
 	\TextA{Supp $T\in\Lm{V}.$ Prove $\exists$ unit $S\in\Lm{V},\,T=\sqrt{TT^*}\,S.$\hfill\FontNorm\tgnr Let $T^*=S\sqrt{TT^*}.$\Blind{\quad}\PfEnd}
