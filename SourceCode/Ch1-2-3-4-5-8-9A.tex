@@ -2847,7 +2847,7 @@ Now $Tp_1=\Par{1,\dots,1},\;Tp_k=\XPar{{\prod_{i=1}^{k-1}\Par{z_1-z_i},\dots,\pr
 %If $m=0,$ then $p=c\neq 0\Rightarrow p$ has no zeros, and $p\apostrophe=0,$ done.\parSol{\Ha}
 %If $m=1,$ then $p\Par{z}=c\Par{z-\lambda_1},$ and $p\apostrophe=c$ has no zeros, done.\vspace{1pt}\parSol{\Ha}
 For each $j\in\;\!\!\Bra{1,\dots,m}$, \,let $\;\!q_j\Par{z}\Par{z-\lambda_j}=p\Par{z}\Rightarrow q_j\Par{\lambda_j}\neq 0.$\vspace{1pt}\parSol{\Ha}
-Now $p\apostrophe\Par{z}=\Par{z-\lambda_j}q_j\apostrophe\Par{z}+q_j\Par{z}\Rightarrow p\apostrophe\Par{\lambda_j}=q_j\Par{\lambda_j}\neq 0.$\vspace{4pt}\parSol{\Ha}
+Now $p\apostrophe\Par{z}=\Par{z-\lambda_j}q_j\upapostrophe\Par{z}+q_j\Par{z}\Rightarrow p\apostrophe\Par{\lambda_j}=q_j\Par{\lambda_j}\neq 0.$\vspace{4pt}\parSol{\Ha}
 \Or ${}^{\neg}Q\Rightarrow{}{^\neg}P:$ \;Supp $p\Par{z}=\Par{z-\lambda}q\Par{z},\;p\apostrophe\Par{z}=\Par{z-\lambda}r\Par{z}.$\parSol{\Ha}
 Becs $p\apostrophe\Par{z}=\Par{z-\lambda}q\apostrophe\Par{z}+q\Par{z}\Rightarrow p\apostrophe\Par{\lambda}=q\Par{\lambda}=0\Rightarrow q\Par{z}=\Par{z-\lambda}s\Par{z}.$%Now $p\Par{z}=\Par{z-\lambda}{^2}s\Par{z}.$ Hence $p$ has strictly less than $m$ disti zeros.
 \vspace{4pt}\parSol{}
@@ -3080,16 +3080,16 @@ Define $\psi\in V\apostrophe$ by $\psi\Par{x_1,x_2,\cdots}=x_1.$ Then $\Sbra{T\a
 	\TextA{Supp $R,S,T\in\Lm{V},$ and $S$ is inv.}
 	\PrePa\TextA{Prove $T$ and $S^{-1}TS$ have the same eigvals.}
 	\PrePb\TextA{Describe the relationship between eigvecs of $T$ and eigvecs of $S^{-1}TS.$}
-	\PrePc\TextA{Supp $R$ and $T$ have the same eigvals. Then $\exists$ inv $P\in\Lm{V},\,R=P^{-1}TP.$}
-	\PrePd\TextA{Supp $R,T$ have the same eigvecs. Then $RT=TR.$}
-	\Anchor{5A23}\PrePe\TextA{Prove $RT$ and $TR$ have the same eigvals.\vspace{2pt}}
+%	\PrePc\TextA{Supp inv $R,T$ have the same eigvals. Then $\exists$ inv $P\in\Lm{V},\,R=P^{-1}TP.$}
+	\PrePc\TextA{Supp $R,T$ have the same eigvecs $B_V=\Par{v_1,\dots,v_n}.$ Then $RT=TR.$}
+	\Anchor{5A23}\PrePd\TextA{Prove $RT$ and $TR$ have the same eigvals.\vspace{2pt}}
 }(a) $\lambda$ is an eigval of $T$ with an eigvec $v\Rightarrow S^{-1}TS\Par{\uline{S^{-1}v}}=S^{-1}Tv=S^{-1}\Par{\lambda v}=\uline{\lambda S^{-1}v}.$\parSol{\Ha}
 $\lambda$ is an eigval of $S^{-1}TS$ with an eigvec $v\Rightarrow S\Par{S^{-1}TS}v=T\uline{Sv}=\uline{\lambda Sv}.$\vspace{2pt}\parSol{\Ha}
 \Or Note that $S\Par{S^{-1}TS}S^{-1}=T.$ Every eigval of $S^{-1}TS$ is an eigval of $S\Par{S^{-1}TS}S^{-1}=T.$\vspace{2pt}\parSol{\Ha}
 \Or $Tv=\lambda v\Longleftrightarrow{TS}{u}=\lambda Su\Longleftrightarrow\Par{S^{-1}TS}{u}=\lambda u.$ Where $v=Su.$\parSol{\Ha}
 \Blind{\Or}$\Par{S^{-1}TS}{u}=\lambda u\Longleftrightarrow{S^{-1}T}{v}=\lambda S^{-1}v\Longleftrightarrow Tv=\lambda v.$ Where $u=S^{-1}v.$\vspace{4pt}\parSol{}
 (b) $E\Par{\lambda,T}=\Bra{Su:u\in E\Par{\lambda,S^{-1}TS}};\;E\Par{\lambda,S^{-1}TS}=\Bra{S^{-1}v:v\in E\Par{\lambda,T}}.$\vspace{3pt}\parSol{}
-(e) \!\Sbra{{\tgsl False if infinide. See Exe (18, 20).}} Supp $v\neq 0$ and $RTv=\lambda v\Rightarrow T\Par{RTv}=\lambda Tv=TR\Par{Tv}.$\parSol{\He}
+(d) \!\Sbra{{\tgsl False if infinide. See Exe (18, 20).}} Supp $v\neq 0$ and $RTv=\lambda v\Rightarrow T\Par{RTv}=\lambda Tv=TR\Par{Tv}.$\parSol{\Hd}
 If $Tv=0$, then $T$ not inje, so are $TR,RT.$ Othws, $\lambda$ is eigval of $TR.$ \;Rev the roles.\PfEnd
 \SepLine
 
@@ -3126,7 +3126,7 @@ If $Tv=0$, then $T$ not inje, so are $TR,RT.$ Othws, $\lambda$ is eigval of $TR.
 (ii) $m>1.$ $S\Par{TS}{^{m-1}}=\Par{ST}{^{m-1}} S\Rightarrow S\Par{TS}{^{m}}=S\Par{TS}{^{m-1}}\Par{TS}=\Par{ST}{^{m-1}}\Par{ST}S=\Par{ST}{^{m}}S.$\PfEnd\vspace{2pt}
 \AComm If $S$ is inv. Then $p\Par{TS} = S^{-1} p\Par{ST}S,\;p\Par{ST} = Sp\Par{TS}S^{-1}.$\par\Anchor{5BI5}\Anchor{5A4e40}
 \ACoro Becs $S$ is inv, $T\in\Lm{V}$ is arb $\Longleftrightarrow ST=R\in\Lm{V}$ is arb. Hence $p\Par{S^{-1}RS}=S^{-1}p\Par{R}S.$
-\SepLine
+\SepLine\pagebreak
 
 %\Anchor{5A4e17}\Anchor{5A16}\ProblemB{
 %	\TextB{Supp $\Fbb=\Rbb,$ $T\in\Lm{V}$.}
@@ -3765,6 +3765,13 @@ Define $p\Par{z}=\Par{z-\lambda_1}\cdots\Par{z-\lambda_m}.$ Then $\Sbra{p\Par{T}
 %}Let $B_V=\Par{v_1,\dots,v_n}.$ Define each $E_{j,k}\in\Lm{V}:v_x\mapsto\delta_{j,x}v_k\Rightarrow$ [5.41](c) true.\PfEnd
 %\SepLine
 
+\Anchor{5C'2}\ProblemB{
+	\TextB{Supp $S,T\in\Lm{V}$ diag and have the same eigvals. Prove $\exists$ inv $E\in\Lm{V},\:S=E^{-1}TE.$}
+}Let $\;\!\alpha_1,\dots,\alpha_n$ be eigvals of $S,T$ wrto $B_1=\Par{v_1,\dots,v_n},\,B_2=\Par{u_1,\dots,u_n}$ respectly.\parSol{}
+Define $E\Par{v_k}=u_k\Rightarrow Sv_k=\alpha_kv_k=E^{-1}\Par{\alpha_ku_k}=E^{-1}TEv_k,$ whether $\alpha_k=0$ or not.\PfEnd
+\AComm eigvals are disti $\Longleftrightarrow$ the exis of such $E$ is uniq.
+\SepLine
+
 \Anchor{5C4e18}\ProblemN{18}{
 	\TextA{Supp $T\in\Lm{V}$ is diag. Prove $T\XSlash U\in\Lm{V\XSlash U}$ is diag for any $U$ invarspd $T.$}
 }By \Sbra{5.A \TIPSN{2}}, $\exists\,B_U=\Par{v_1,\dots,v_m}$ consists of eigvecs of $T.$\parSol{}
@@ -3794,6 +3801,7 @@ Becs for each $w_k,\:\exists$ eigval $\lambda$ of $T,\:Tw_k=\lambda w_k\Rightarr
 %%Let $\aMid{c_j}=\max\!\Bra{\aMid{c_1},\dots,\aMid{c_n}}.$ Now $\lambda c_j=\sum_{k=1}^nA^t_{j,k}c_k\Rightarrow\aXMid{\lambda-A^t_{j,j}}\leqslant\sum_{j\neq k=1}^n\aXMid{A_{k,j}}.$\PfEnd\vspace{6pt}\parSol{}
 %$\lambda\in\BigBra{z\in\Fbb:\aXMid{z-A_{j,j}}\leqslant\sum_{j\neq k=1}^n\aXMid{A^t_{j,k}}=\sum_{j\neq k=1}^n\aXMid{A_{k,j}}}$ for some $j\in\;\!\!\Bra{1,\dots,n}.$\PfEnd
 %\SepLine
+
 \ChEnd
 
 \ChDecl{Ch5E}{5.E [4E]}{}
@@ -3811,12 +3819,12 @@ Becs for each $w_k,\:\exists$ eigval $\lambda$ of $T,\:Tw_k=\lambda w_k\Rightarr
 %Apply $D_y$ to each vec in $B\Rightarrow B_y=\BigPar{0,0,1,0,x,2y,\cdots,\cdots,0,x^{m-1},\cdots,\Par{m-1}xy^{m-2},my^{m-1}}.$\PfEnd
 %\SepLine
 
-\Anchor{5E6}\ProblemN{6}{
-	\TextA{Supp $\Fbb=\Cbb,$ $V$ is finide, and $S, T\in\Lm{V}$ commu.}
-	\TextA{Prove $\exists\,\alpha,\lambda\in\Cbb$ suth $\Range\Par{S -\alpha I} + \Range\Par{T -\lambda I}\neq V$.}
-}Supp $A,C\in\FbbP{n,n}$ are up-trig matrices of $S,T$ wrto a $B_V=\Par{v_1,\dots,v_n}$ suth $A,C$ commu.\parSol{}
-Let $\alpha=A_{n,n},\,\lambda=C_{n,n}.$ Then $\Range\Par{S-\alpha I},\Range\Par{T-\lambda I}\subseteq\Span{v_1,\dots,v_{n-1}}.$\PfEnd
-\SepLine
+%\Anchor{5E6}\ProblemN{6}{
+%	\TextA{Supp $\Fbb=\Cbb,$ $V$ is finide, and $S, T\in\Lm{V}$ commu.}
+%	\TextA{Prove $\exists\,\alpha,\lambda\in\Cbb$ suth $\Range\Par{S -\alpha I} + \Range\Par{T -\lambda I}\neq V$.}
+%}Supp $A,C\in\FbbP{n,n}$ are up-trig matrices of $S,T$ wrto a $B_V=\Par{v_1,\dots,v_n}$ suth $A,C$ commu.\parSol{}
+%Let $\alpha=A_{n,n},\,\lambda=C_{n,n}.$ Then $\Range\Par{S-\alpha I},\Range\Par{T-\lambda I}\subseteq\Span{v_1,\dots,v_{n-1}}.$\PfEnd
+%\SepLine
 
 \Anchor{5E7}\ProblemN{7}{
 	\TextA{Supp $\Fbb=\Cbb,$ and $S,T\in\Lm{V}$ commu, $S$ diag. Prove $\exists\,B_V$ suth $S$ diag and $T$ up-trig.}
