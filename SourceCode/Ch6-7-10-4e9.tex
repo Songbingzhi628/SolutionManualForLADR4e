@@ -274,12 +274,18 @@ Then $U\cap W=\zeroSubs\Rightarrow\Par{U\cap W}{^\perp}=\FbbP{\infty}.$ While $U
 \SepLine
 
 \ChEnd
-%\vspace{8pt}
-\pagebreak
 
-\ChDecl{Ch7A}{7.A}{\quad{\ANote {\FontSmall $V$ denotes a finide vecsp over $\Fbb.$}}}%An Exe marked by $\blacksquare$ is true if infinide or partially finide.
+\vfill\ChDecl{Ch7A}{7.A}{\quad{\ANote {\FontSmall $V$ denotes a finide vecsp over $\Fbb.$}}}%An Exe marked by $\blacksquare$ is true if infinide or partially finide.
 
 \vspace{6pt}
+
+\Anchor{7AT}\ProblemBX{\Tips}{
+	\TextA{Supp $T\in\Lm{V}$ is normal. Prove $p\Par{T}$ is normal for any $p\in\PoFi.$}
+}Becs $T$ normal $\Rightarrow T^j$ normal. We use induc on $\deg p=k.$\parSol{}
+(i) $k=0,1.$ \;$p\Par{z}=c_0+c_1z\Rightarrow p\Par{T}{^*}p\Par{T}=\Par{\overline{c_0}I+\overline{c_1}T^*}\Par{c_0I+c_1T}=p\Par{T}p\Par{T}{^*}.$\parSol{}
+(ii) $k>1.$ \;Asum true for smaller deg. Let $q\Par{z}=c_0+c_1z+\dots+c_{k-1}z^{k-1}\Rightarrow p\Par{z}=q\Par{z}+c_kz^k.$\parSol{\Hii}
+Then $p\Par{T}{^*}p\Par{T}=\Sbra{q\Par{T}{^*}+\overline{c_k}\Par{T^k}{^*}}\Sbra{q\Par{T}+c_kT^k}=p\Par{T}p\Par{T}{^*}.$\PfEnd
+\SepLine
 
 %\Anchor{7A3}\ProblemN{3}{
 %	\TextA{Supp $T\in\Lm{V}$ and $U$ is a subsp of $V.$ Prove $U$ invard $T\Longleftrightarrow U^\perp$ invard $T^*.$}
@@ -292,11 +298,11 @@ Then $U\cap W=\zeroSubs\Rightarrow\Par{U\cap W}{^\perp}=\FbbP{\infty}.$ While $U
 %Becs each $\Dvertsq{T^*e_i}\leqslant\Dvertsq{Te_i}.$ Note that this orhon $B_V$ is arb.\PfEnd
 %\SepLine
 
-%\Anchor{7A11}\Anchor{7A4e20}\ProblemB{
+%\Anchor{7A11}\ProblemB{
 %	\TextB{Supp $P^2=P=P_{\!U}\in\Lm{V}$ for some subsp $U$ of $V.$ Prove $P$ is self-adj.}
 %}$\forall\Par{u,w},\Par{x,y}\in U\times U^\perp,\:\BigAng{P\Par{u+w},x+y}=\Ang{u+w,x}=\BigAng{u+w,P^*\Par{x+y}}.$\PfEnd
 %\SepLine
-
+\pagebreak
 \Anchor{7A17}\ProblemN{17}{
 	\TextA{Supp $T\in\Lm{V}$ is normal. Prove each $\null T^k=\null T$ \,and\, $\range T^k=\range T.$}
 }Becs $\range T=\Par{\null T^*}{^\perp}=\Par{\null T}{^\perp}\Rightarrow T\mmid_{\range T}$ is inje. Thus $\null T^k=\null T.$\parSol{}
@@ -308,9 +314,8 @@ Note that $T$ normal $\Rightarrow T^k$ normal. Then $\range T^k=\Par{\null T^k}{
 \Anchor{7A4e28}\ProblemBnoor{4E 28}{
 	\TextA{Supp $T\in\Lm{V}$ is normal. Prove the min of $T$ is not a multi of any $\Par{z-\lambda}{^2}.$}
 }Supp the min of $T$ is $p\Par{z}=\Par{z-\lambda}{^k}q\Par{z}$ with $k\geqslant1$ and $q\Par{\lambda}\neq0.$\parSol{}
-Then $p\Par{T}v=0\Rightarrow q\Par{T}\in\Null\Par{T-\lambda I}{^k}=\Null\Par{T-\lambda}.$\PfEnd\vspace{2pt}\parSol{}
-\Or Note that each $\Par{T-\lambda I}$ is normal $\Rightarrow$ each $\Null\Par{T-\lambda I}{^k}=\Null\Par{T-\lambda I}.$ By (4E 8.B.6).\PfEnd\parSol{}
-\Or By \Sbra{8.B \TIPSN{4}}. Factoriz the min of $T\Rightarrow$ each liney factor has expo $1.$\PfEnd\vspace{2pt}\parSol{}
+Then $p\Par{T}v=0\Rightarrow q\Par{T}v\in\Null\Par{T-\lambda I}{^k}=\Null\Par{T-\lambda I}\Rightarrow k=1.$\PfEnd\vspace{2pt}\parSol{}
+\Or By {\TIPS} and \Sbra{8.B \TIPSN{4}}. Factoriz the min of $T\Rightarrow$ each liney factor has expo $1.$\PfEnd\vspace{2pt}\parSol{}
 \Or Becs $\Range\Par{T-\lambda I}=\Null\Par{T-\lambda I}{^\perp}\Rightarrow V=\Null\Par{T-\lambda I}\oplus\range\Par{T-\lambda I}$ for all $\lambda\in\Fbb.$\parSol{}
 By (5.C.5). If $\Fbb=\Rbb,$ then apply to $T_{\!\Cbb}.$ Now every liney factor has expo $1.$\PfEnd
 \SepLine
@@ -336,8 +341,8 @@ By (5.C.5). If $\Fbb=\Rbb,$ then apply to $T_{\!\Cbb}.$ Now every liney factor h
 %\Or $T=0\Rightarrow\forall w\in W,\forall v\in V,\Ang{v,T^*w}=\Ang{Tv,w}=0\Rightarrow\range T^*\subseteq V^\perp.$\parSol{}
 %$T^*T=0\Rightarrow\forall v\in V,\Ang{Tv,Tv}=\Ang{v,T^*Tv}=0\Rightarrow T=0.$\PfEnd
 %\SepLine
-
-\vspace{8pt}
+\ChEnd
+%\vspace{8pt}
 
 \ChDecl{Ch7B}{7.B}{\quad{\ANote {\FontSmall $V$ denotes a finide vecsp over $\Fbb.$}}}
 
@@ -387,22 +392,24 @@ Becs each $E\Par{\lambda_k,T}=E\Par{\overline{\lambda_k},T^*}$ invard $S\Rightar
 	\TextA{Supp $\Fbb=\Cbb,T\in\Lm{V}$ is normal and $U$ invarspd $T.$}
 	\TextA{Prove {\tgnr\large(a)} $U^\perp$ invard $T,$ \;{\tgnr\large(b)} $\Par{T\mmid_U}{^*}=T^*\mmid_U\in\Lm{U},$ \;{\tgnr\large(c)} $T\mmid_U,T\mmid_{U^\perp}$ normal.}
 }By \Sbra{5.A \TIPSN{3}}, and apply [6.31] to each $E\Par{\lambda_k,T\mmid_U},$ let $B_U=\Par{e_1,\dots,e_m}$ be orthon eigvecs.\parSol{}
-Let $B_V=\Par{e_1,\dots,e_n}$ be orthon eigvecs. Then $B_{U^\perp}=\Par{e_{m+1},\dots,e_n},$ invard $T.$ And $U$ invard $T^*.$\parSol{}
+Let $B_V=\Par{e_1,\dots,e_n}$ be orthon eigvecs. Then $B_{U^\perp}=\Par{e_{m+1},\dots,e_n},$ invard $T.$ And $U$ invard $T^*.$\vspace{2pt}\parSol{}
 (b) $\forall u,v\in U,\:\BigAng{v,\Par{T\mmid_U}{^*}u}=\BigAng{T\mmid_U v,u}=\BigAng{v,T^*\mmid_U u}\Rightarrow\BigPar{\Par{T\mmid_U}{^*}-T^*\mmid_U}u\in U\cap U^\perp.$\vspace{2pt}\parSol{}
-(c) $\forall u\in U,\:\BigDvert{T\mmid_U u}=\BigDvert{T^*\mmid_U u}=\BigDvert{\Par{T\mmid_U}{^*}u}.$ \;\Or $T\mmid_U\Par{T\mmid_U}{^*}=T^*T\mmid_U=T^*\mmid_UT\mmid_U.$\PfEnd\vspace{4pt}
+(c) $\forall u\in U,\:\BigDvert{T\mmid_U u}=\BigDvert{T^*\mmid_U u}=\BigDvert{\Par{T\mmid_U}{^*}u}.$ \;\Or $T\mmid_U\Par{T\mmid_U}{^*}=T^*T\mmid_U=T^*\mmid_UT\mmid_U.$\PfEnd\vspace{5pt}
 %\Or Let orthon $B_U=\Par{e_1,\dots,e_m}\Rightarrow B_V=\Par{e_1,\dots,e_n}\Rightarrow B_{U^\perp}=\Par{e_{m+1},\dots,e_n}.$ Let $A=\Mt{T,B_V}.$\parSol{}
 %Let $A$ be block matrix {\small$\begin{pmatrix}X &\hspace{-4pt} Y\\[-2pt] 0 &\hspace{-4pt} Z\end{pmatrix}$}, where $X\in\FbbP{m,m},Y\in\FbbP{m,\:\!n-m},Z\in\FbbP{n-m,\:\!n-m}.$\parSol{}
 %(a) Becs $\sum_{j=1}^m\Dvertsq{X_{\cdot,j}}=\sum_{j=1}^m\Dvertsq{Te_j}=\sum_{j=1}^m\Dvertsq{T^*e_j}=\sum_{j=1}^m\BigDvertsq{\overline{X_{j,\cdot}}}+\sum_{j=1}^m\BigDvertsq{\overline{Y_{j,\cdot}}}\Rightarrow Y=0.$\vspace{2pt}\parSol{\Ha}
 %Apply to $T^*\Rightarrow U$ invard $T^*.$ \Or Becs $\Mt{T^*,B_V}=\overline{A}{^t}={}${\small$\begin{pmatrix}\overline{X}{^t} &\hspace{-4pt} 0\\[-2pt] 0 &\hspace{-4pt} \overline{Z}{^t}\end{pmatrix}$}.\parSol{}
 %(b) $\Mt{T\mmid_U,B_V}=X\Rightarrow\Mt[\BigPar]{\Par{T\mmid_U}{^*},B_V}=\overline{X}{^t}.$ 又 $\Mt{T^*\mmid_U,B_V}=\overline{X}{^t}.$\PfEnd\vspace{4pt}
 \AComm See [9.30] without using [7.24] and the hypo $\Fbb=\Cbb.$\par
-\Anchor{7B13}\ANote Another proof of [7.24]: Induc step: For $\dim V>1.$ Asum it holds for smaller dim.\parNot
-Let $u$ be an eigvec with $\Dvert{u}=1.$ Let $B_U=\Par{u}\Rightarrow U$ invard $T,$ so is $U^\perp\Rightarrow T\mmid_{U^\perp}$ normal.\parNot
+\SepLine
+
+\BulletPointX\Anchor{7B13}\ANote Another proof of [7.24]: Induc step: For $\dim V>1.$ Asum it holds for smaller dim.\parNot{\IndentB}
+Let $u$ be an eigvec with $\Dvert{u}=1.$ Let $B_U=\Par{u}\Rightarrow U$ invard $T,$ so is $U^\perp\Rightarrow T\mmid_{U^\perp}$ normal.\parNot{\IndentB}
 By asum, $\exists$ orthon $B_{U^\perp}$ of eigvecs of $T\mmid_{U^\perp}.$ Now $B_V=B_U\cup B_{U^\perp}$ of orthon eigvecs.\PfEnd
 \SepLine
-\ChEnd
+\vspace{8pt}
 
-\vfill\ChDecl{Ch7C}{7.C \& 7.D [4E]}{\quad{\ANote {\FontSmall $V$ denotes a finide vecsp over $\Fbb.$\qquad7.D[4E]处结合了3e的9.B节。}}}
+\ChDecl{Ch7C}{7.C \& 7.D [4E]}{\quad{\ANote {\FontSmall $V$ denotes a finide vecsp over $\Fbb.$\qquad7.D[4E]处结合了3e的9.B节。}}}
 
 \vspace{4pt}
 
@@ -457,7 +464,7 @@ Let $\lambda_k=\Dvert{Tv_k}\Big/\Dvert{v_k}.$ Then $S^*:g_k\mapsto e_k\Rightarro
 \Or Let orthon $B_V=\Par{e_1,\dots,e_n}.$ Becs $\Ang{u+v,\,u-v}=\Dvertsq{u}-\Dvertsq{v}.$\parSol{}
 Now $0=\Ang{e_1+e_k,\,e_1-e_k}=\Ang{Te_1+Te_k,\,Te_1-Te_k}\Rightarrow$ each $\Dvert{Te_k}=\lambda.$ Supp $\lambda\neq0.$\parSol{}
 Let $S=\lambda^{-1}T.$ Becs $\Ang{e_j,\,e_k}=0\Rightarrow\Ang{Te_j,\,Te_k}=\Ang{\lambda Se_j,\,\lambda Se_k}=0\Longleftrightarrow\Ang{Se_j,\,Se_k}=0.$\PfEnd
-\SepLine\pagebreak
+\SepLine
 
 \Anchor{7D5}\ProblemN{D.5}{
 	\TextA{Supp $S\in\Lm{V}.$ Prove $S$ self-adj and unit $\Longleftrightarrow\exists\,P_{\!U},\,S=2P_{\!U}-I.$}
@@ -549,7 +556,7 @@ If $s_1=s_n.$ Done. \,Supp $s_1>s_n.$ Then \,$s_1^2-s^2=\Par{s_1^2-s_n^2}\,y^2,$
 Get the SVD $\Par{e_1,\dots,e_n},\Par{\,f_1,\dots,f_n}.$ By (4E 7.A.5), $\sum\BigDvertsq{\sqrt{T}v_k}=\sum\BigDvertsq{\sqrt{T}e_k}=\sum s_k.$\PfEnd
 %Becs $A=\Mt{T}=\Mt{T}{^*}$ wrto $B_V,$ and each $\Ang{Tv_k,\:\!v_k}=A_{k,k}=\lambda_k\Rightarrow T$ diag wrto $B_V.$\parSol{}
 %Becs $T$ posi $\Rightarrow\aMidsq{\lambda_k}=\lambda_k^2.$ 又 $T^*Tv_k=T^2v_k=\lambda_k^2\:\!v_k=s_k^2\:\!v_k.$\PfEnd\vspace{2pt}\parSol{}
-\SepLine\pagebreak
+\SepLine
 
 %\Anchor{7E13}\ProblemN{13}{
 %	\TextA{Prove $T_{\!1},T_{\!2}\in\Lm{V,W}$ same singvals $\Longleftrightarrow\exists$ unit $S_1\in\Lm{W},S_2\in\Lm{V},\:T_{\!1}=S_1T_{\!2}S_2.$}
@@ -708,8 +715,9 @@ Asum $\exists\,v\in V,\Ang{Tv,v}<0\Rightarrow\delta\:\!\Dvertsq{v}\leqslant\aXMi
 \Or $\Ang{Tv,v}=\Ang{Sv,v}+\BigAng{\Par{T-S}v,v}\geqslant\delta\:\!\Dvertsq{v}-\BigAng{\Par{S-T}v,v}>0$ for $v\neq0.$\PfEnd
 \SepLine
 \ChEnd
+\pagebreak
 
-\vfill{\small 少了关于无限维内积空间及其算子的基本内容，LADR第七章学起来明显更快更平常，没有前半部分许多题目去掉有限维假设后的悬疑和激动时刻。也许研究无限维内积空间有硬性的分析学知识门槛，所以这本书的性质不允许过多涉及这方面。
+{\small 少了关于无限维内积空间及其算子的基本内容，LADR第七章学起来明显更快更平常，没有前半部分许多题目去掉有限维假设后的悬疑和激动时刻。也许研究无限维内积空间有硬性的分析学知识门槛，所以这本书的性质不允许过多涉及这方面。
 %同样遗憾的是，由于微积分的知识门槛，我放弃了第10章B节最后一小部分和相应习题（这部分在4E中被删掉了，所以我可以找借口说它是3E中不完善的地方）。
 }\vspace{12pt}
 
