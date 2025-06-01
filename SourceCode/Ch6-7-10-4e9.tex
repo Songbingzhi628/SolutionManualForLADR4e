@@ -527,7 +527,7 @@ Then $S_{\Cbb}\Sbra{\lambda^{-1}\Par{u+\i\,v}}=u+\i\,v\in\bigodot{_{\!\Cbb}}$ wh
 \Anchor{7E4}\ProblemN{E.4}{
 	\TextA{Supp $T\in\Lm{V,W},$ and $s_1,s_n$ are the max and min of singvals.\vspace{1pt}}
 	\TextA{Prove $\Bra{\Dvert{Tv}:v\in V,\Dvert{v}=1}=\Interval{[}{]}{s_n,\,s_1}.$\vspace{2pt}}
-}Get the SVD $\Par{e_1,\dots,e_m},\Par{\,f_1,\dots,f_m}$ in $V,W.$ \,We show $\forall s\in\Interval{[}{]}{s_n,\,s_1},\exists\,v\in V,\,\Dvert{Tv}=s.$\vspace{1pt}\parSol{}
+}Get the SVD $\Par{e_1,\dots,e_m},\Par{\,f_1,\dots,f_m}$ in $V,W.$ \,We show $\forall s\in\;\!\!\Interval{[}{]}{s_n,\,s_1},\exists\,v\in V,\,\Dvert{Tv}=s.$\vspace{1pt}\parSol{}
 Say $v=x\:\!e_1+y\:\!e_n$ with (I) $\Dvertsq{v}=x^2+y^2=1,$ (II) $\Dvertsq{Tv}=s_1^2\,x^2+s_n^2\,y^2=s^2.$\vspace{1pt}\parSol{}
 If $s_1=s_n.$ Done. \,Supp $s_1>s_n.$ Then \,$s_1^2-s^2=\Par{s_1^2-s_n^2}\,y^2,$ \,and \:$s^2-s_n^2=\Par{s_1^2-s_n^2}\,x^2.$\PfEnd\vspace{3pt}
 \AComm $T$ is a scalar multi of an isomet $\Longleftrightarrow\Bra{\Dvert{Tv}:v\in V,\Dvert{v}=1}=\Bra{s_1}.$
@@ -548,9 +548,9 @@ If $s_1=s_n.$ Done. \,Supp $s_1>s_n.$ Then \,$s_1^2-s^2=\Par{s_1^2-s_n^2}\,y^2,$
 \Anchor{7E11}\ProblemN{E.11}{
 	\TextA{Supp $T\in\Lm{V}$ is posi, $B_V=\Par{v_1,\dots,v_n}$ is orthon, and $s_1,\dots,s_n$ are the singvals.\vspace{1pt}}
 	\TextA{Prove $\Ang{Tv_1,\;\!v_1}+\dots+\Ang{Tv_n,\;\!v_n}=s_1+\dots+s_n.$\vspace{2pt}}
-}$\Ang{Tv_k,\;\!v_k}=\BigAng{\sqrt{T}v_k,\:\!\sqrt{T}v_k}=\BigDvertsq{\sqrt{T}v_k}.$ Note that $\sqrt{T}=\sqrt{T^*}=\Par{\sqrt{T}}{^*}$ is posi.\parSol{}
-\NOTICE that \,$s_1,\dots,s_n$ are the eigvals of $\sqrt{T}{^*}\sqrt{T}=T\Rightarrow\sqrt{s_1},\dots,\sqrt{s_n}$ are the singvals of $\sqrt{T}.$\vspace{1pt}\parSol{}
-Get the SVD $\Par{e_1,\dots,e_n},\Par{\,f_1,\dots,f_n}.$ By (4E 7.A.5), $\sum\BigDvertsq{\sqrt{T}v_k}=\sum\BigDvertsq{\sqrt{T}e_k}=\sum s_k.$\PfEnd
+}$\Ang{Tv_k,\;\!v_k}=\BigAng{\sqrt{T}v_k,\:\!\sqrt{T}v_k}=\BigDvertsq{\sqrt{T}v_k}.$ Note that $\sqrt{T}=\sqrt{T^*}=\BigPar{\!\!\:\sqrt{T}}{^*}$ is posi.\parSol{}
+\NOTICE that \,$s_1,\dots,s_n$ are the eigvals of $\sqrt{T}{^*}\sqrt{T}=T\Longrightarrow\sqrt{s_1},\dots,\sqrt{s_n}$ are the singvals of $\sqrt{T}.$\vspace{1pt}\parSol{}
+Get the SVD $\Par{e_1,\dots,e_n},\Par{\,f_1,\dots,f_n}.$ By (4E 7.A.5), $\uline{\sum\BigDvertsq{\sqrt{T}v_k}=\sum\BigDvertsq{\sqrt{T}e_k}=\sum s_k}.$\PfEnd
 %Becs $A=\Mt{T}=\Mt{T}{^*}$ wrto $B_V,$ and each $\Ang{Tv_k,\:\!v_k}=A_{k,k}=\lambda_k\Rightarrow T$ diag wrto $B_V.$\parSol{}
 %Becs $T$ posi $\Rightarrow\aMidsq{\lambda_k}=\lambda_k^2.$ 又 $T^*Tv_k=T^2v_k=\lambda_k^2\:\!v_k=s_k^2\:\!v_k.$\PfEnd\vspace{2pt}\parSol{}
 \SepLine
@@ -566,9 +566,9 @@ Get the SVD $\Par{e_1,\dots,e_n},\Par{\,f_1,\dots,f_n}.$ By (4E 7.A.5), $\sum\Bi
 \Anchor{7E17}\ProblemN{E.17}{
 	\TextA{Supp $T\in\Lm{V}.$ Prove $T$ self-adj $\Longleftrightarrow T^\dagger$ self-adj.\hfill\FontNorm\tgnr By Exe (E.16), immed.}
 }Let $\lambda_1,\dots,\lambda_m$ be disti eigvals of $T$ with $\lambda_1=0$ if any. Let $U=\Par{\null T}{^\perp}.$\parSol{}
-$m_T=\Par{z-\lambda_1}\cdots\Par{z-\lambda_m}\Longleftrightarrow m_{T|_U}=m_T$ if $T$ inje, othws $m_{T|_U}=\Par{z-\lambda_2}\cdots\Par{z-\lambda_m}$\parSol{}
-$\Longleftrightarrow$ the min of $\Par{T\mmid_U}{^{-1}}$ is $\Par{z-\lambda_1^{-1}}\cdots\Par{z-\lambda_m^{-1}}$ if $T$ inje, and othws $\Par{z-\lambda_2^{-1}}\cdots\Par{z-\lambda_m^{-1}}$\parSol{}
-$\Longleftrightarrow m_{T^\dagger}=$ the min of $\Par{T\mmid_U}{^{-1}}$ if $T$ inje, othws $z\Par{z-\lambda_2^{-1}}\cdots\Par{z-\lambda_m^{-1}}.$\PfEnd
+$m_T\Par{z}=\Par{z-\lambda_1}\cdots\Par{z-\lambda_m}\Longleftrightarrow m_{T|_U}=m_T$ if $T$ inje, othws $m_{T|_U}\Par{z}=\Par{z-\lambda_2}\cdots\Par{z-\lambda_m}$\parSol{}
+$\Longleftrightarrow$ the min of $\Par{T\mmid_U}{^{-1}}$ is $\Par{z-\lambda_1^{-1}}\cdots\Par{z-\lambda_m^{-1}}$ if $T$ inje, and is $\Par{z-\lambda_2^{-1}}\cdots\Par{z-\lambda_m^{-1}}$ othws\parSol{}
+$\Longleftrightarrow m_{T^\dagger}$ is the min of $\Par{T\mmid_U}{^{-1}}$ if $T$ inje, othws $m_{T^\dagger}\Par{z}=z\Par{z-\lambda_2^{-1}}\cdots\Par{z-\lambda_m^{-1}}.$\PfEnd
 \SepLine
 
 \ChDecl{Ch7F}{}{}
@@ -660,7 +660,7 @@ Note that $T^*e_k=\overline{\lambda_k}e_k\Rightarrow T^*Te_k=\aMidsq{\lambda_k}e
 	\TextA{Supp $S\in\Lm{V}$ inv. Prove if $T\in\Lm{V}$ and $\Dvert{S-T}<1\big/\Dvert{S^{-1}},$ then $T$ inv.}
 }Note that $1\big/\Dvert{S^{-1}}=s_n,$ where $s_1\geqslant\cdots\geqslant s_n$ are the singvals of $T.$\parSol{}
 Becs $s_n=\min\!\Bra{\Dvert{S-T}:\dim\range T=0,1,\dots,n-1}>\Dvert{S-T}\Rightarrow\dim\range T=n.$\PfEnd\vspace{2pt}\parSol{}
-\Or $v\neq0,Tv=0\Rightarrow\Dvert{v}=\Dvert{S^{-1}Sv}\leqslant\Dvert{S^{-1}}\:\Dvert{Sv}=\Dvert{S^{-1}}\:\Dvert{\Par{S-T}v}\Rightarrow1\big/\Dvert{S^{-1}}\leqslant\Dvert{S-T}.$\PfEnd
+\Or $v\neq0,{}$\uline{$Tv=0\Rightarrow\Dvert{v}=\Dvert{S^{-1}Sv}$}${}\leqslant\Dvert{S^{-1}}\:\Dvert{Sv}={}$\uline{$\Dvert{S^{-1}}\:\Dvert{\Par{S-T}v}$}.\PfEnd
 \SepLine
 
 \Anchor{7F14}\ProblemN{F.14}{
@@ -668,7 +668,7 @@ Becs $s_n=\min\!\Bra{\Dvert{S-T}:\dim\range T=0,1,\dots,n-1}>\Dvert{S-T}\Rightar
 }Note that $1=s_m=\min\!\Bra{\Dvert{P_{\!U}-T}:T\in\Lm{V}\text{ and }\dim\range T=0,1,\dots,m-1}.$\parSol{}
 Thus $\dim\range P_{\!W}\geqslant\dim\range P_{\!U}.$ \;Apply revly, done.\PfEnd\vspace{2pt}\parSol{}
 \Or Becs $P_{\!U}=I-P_{\!U^\perp}$ \OR $P_{\!W}=I-P_{\!W^\perp}\Rightarrow P_{\!W}-P_{\!U}=P_{\!W}+P_{\!U^\perp}-I$\, \OR \,$P_{\!U}-P_{\!W}=P_{\!U}+P_{\!W^\perp}-I.$\parSol{}
-By Exe (F.8), $P_{\!W}+P_{\!U^\perp}$ and $P_{\!U}+P_{\!W^\perp}$ are inv $\Rightarrow\zeroSubs=\Null\Par{P_{\!W}+P_{\!U^\perp}}\supseteq\null P_{\!W}\cap\null P_{\!U^\perp}.$\parSol{}
+\uline{By Exe (F.8), $P_{\!W}+P_{\!U^\perp}$ and $P_{\!U}+P_{\!W^\perp}$ are inv} $\Rightarrow\zeroSubs=\Null\Par{P_{\!W}+P_{\!U^\perp}}\supseteq\null P_{\!W}\cap\null P_{\!U^\perp}.$\parSol{}
 And $V=\Range\Par{P_{\!U}+P_{\!W^\perp}}\subseteq\range P_{\!U}+\range P_{\!W^\perp}=U+W^\perp.$\PfEnd
 \SepLine
 
@@ -676,7 +676,8 @@ And $V=\Range\Par{P_{\!U}+P_{\!W^\perp}}\subseteq\range P_{\!U}+\range P_{\!W^\p
 	\TextA{Supp $T\in\Lm{V,W}.$ Let $n=\dim V$ and $s_1\geqslant\cdots\geqslant s_n$ are the singvals.}
 	\TextA{Prove $s_{n-k+1}=\min\!\Bra{\Dvert{T\mmid_U}:U\text{ is subsp of }V,\,\dim U=k}$ \,for $1\leqslant k\leqslant n.$\vspace{1pt}}
 }Get the SVD bses $\Par{e_1,\dots,e_n},\Par{\,f_1,\dots,f_n}.$ Let $U=\Span{e_{n-k+1},\dots,e_n}\Rightarrow\Dvert{T\mmid_U}=s_{n-k+1}.$\vspace{1pt}\parSol{}
-Supp $U$ is a $k$\hspace{1pt}-\hspace{1pt}dim subsp of $V.$ Becs $\Dvert{T\mmid_U}=\BigDvert{T\mmid_UP_{\!U}}=\BigDvert{T-T\mmid_{U^\perp}P_{\!U^\perp}}\geqslant s_{n-k+1}.$\PfEnd
+Supp $U$ is a $k$\hspace{1pt}-\hspace{1pt}dim subsp of $V.$ \,\NOTICE that $\uline{\Dvert{T\mmid_U}=\BigDvert{T\mmid_UP_{\!U}}=\BigDvert{T-T\mmid_{U^\perp}P_{\!U^\perp}}}\geqslant s_{n-k+1}.$\PfEnd
+%$\Dvert{T\mmid_U}\leqslant\Dvert{T\mmid_UP_{\!U}}=\Dvert{TP_{\!U}}=\Dvert{T-T\mmid_{U^\perp}P_{\!U^\perp}}.$
 \SepLine
 
 \Anchor{7F13}\ProblemN{F.13}{
