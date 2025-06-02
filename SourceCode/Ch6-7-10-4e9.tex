@@ -72,7 +72,7 @@ Let $a=-\Ang{u,v}\Rightarrow2\:\!\innerA{u,v}{^2}\leqslant\innerA{u,v}{^2}\,\Dve
 %	\TextA{Supp $T\in\Lm{V},\,\lambda$ is eigval. Prove $\aMidsq{\lambda}\leqslant\sum_{j=1}^n\sum_{k=1}^n\aMidsq{A_{j,k}},$ \FontNorm\tgnr where $A=\Mt[\BigPar]{T,\Par{v_1,\dots,v_n}}.$\vspace{3pt}}
 %}Let $\Ang{a_1v_1+\dots+a_nv_n,b_1v_1+\dots+b_nv_n}=a_1\overline{b_1}+\dots+a_n\overline{b_n}.$ Let $v$ be eigval corres $\lambda$ with $\Dvert{v}=1.$\vspace{1pt}\parSol{}
 %Becs $v=a_1v_1+\dots+a_nv_n\Rightarrow Tv=\sum_{k=1}^na_k\sum_{j=1}^nA_{j,k}v_j=\sum_{j=1}^n\BigSbra{\sum_{k=1}^na_kA_{j,k}}v_j.$\vspace{3pt}\parSol{}
-%又 Each $\Dvert{v_j}=1,\:\Ang{v_j,v_k}=0\Rightarrow\Dvertsq{Tv}=\sum_{j=1}^n\Big|\sum_{k=1}^na_kA_{j,k}\Big|{^2}=\aMidsq{\lambda}.$\vspace{3pt}\parSol{}
+%\又 Each $\Dvert{v_j}=1,\:\Ang{v_j,v_k}=0\Rightarrow\Dvertsq{Tv}=\sum_{j=1}^n\Big|\sum_{k=1}^na_kA_{j,k}\Big|{^2}=\aMidsq{\lambda}.$\vspace{3pt}\parSol{}
 %Note that $\aXMidsq{a_1A_{j,1}+\dots+a_nA_{j,n}}\leqslant\BigDvertsq{\Par{a_1,\dots,a_n}}\cdot\BigDvertsq{\Par{A_{j,1},\dots,A_{j,n}}}=\sum_{k=1}^n\aMidsq{A_{j,k}}.$\PfEnd
 %\SepLine
 
@@ -184,7 +184,7 @@ Rev the roles of $u,v\Rightarrow c_v\Ang{u,v}{_2}={\Ang{u,v}{_1}}=\overline{\Ang
 	\TextA{Prove $\exists\,c>0,\:\Dvert{v}{_1}\leqslant c\Dvert{v}{_2}$ \,for all $v\in V.$}
 }Let $B_V=\Par{e_1,\dots,e_n}$ be orthon wrto $\Ang{\cdot,\cdot}{_2}.$ Supp $v=a_1e_1+\dots+a_ne_n.$\vspace{1pt}\parSol{}
 \NOTICE that $\Dvert{v}{_1}\leqslant\Dvert{a_1e_1}{_1}+\dots+\Dvert{a_ne_n}{_1}\leqslant\max\!\Bra{\Dvert{e_1}{_1},\dots,\Dvert{e_n}{_1}}\cdot\BigPar{\aMid{a_1}+\dots+\aMid{a_n}}.$\vspace{3pt}\parSol{}
-又 $\aMid{a_1}+\dots+\aMid{a_n}\leqslant n\cdot\max\!\Bra{\aMid{a_1},\dots,\aMid{a_n}}\leqslant n\cdot\sqrt{\aMidsq{a_1}+\dots+\aMidsq{a_n}}\leqslant n\cdot\Dvert{v}{_2}.$\PfEnd
+\又 $\aMid{a_1}+\dots+\aMid{a_n}\leqslant n\cdot\max\!\Bra{\aMid{a_1},\dots,\aMid{a_n}}\leqslant n\cdot\sqrt{\aMidsq{a_1}+\dots+\aMidsq{a_n}}\leqslant n\cdot\Dvert{v}{_2}.$\PfEnd
 \SepLine
 
 %\Anchor{6B13}\ProblemN{13}{
@@ -440,7 +440,7 @@ By asum, $\exists$ orthon $B_{U^\perp}$ of eigvecs of $T\mmid_{U^\perp}.$ Now $B
 	\TextA{Show $u$ is eigvec corres the largest eigval of $T.$}
 }Supp orthon eigvecs $B_V=\Par{e_1,\dots,e_n}$ corres $\lambda_1\geqslant\dots\geqslant\lambda_n.$ \;Let $u=\sum_{k=1}^nc_ke_k\Rightarrow\sum_{k=1}^n\aMidsq{c_k}=1.$\vspace{1pt}\parSol{}
 Supp $v=\sum_{j=1}^na_je_j$ and $\Dvert{v}=1.$ Then $\Dvertsq{Tv}=\sum_{j=1}^n\aMidsq{\lambda_j}\aMidsq{a_j}\leqslant\aMidsq{\lambda_1}.$ Simlr, $\Dvertsq{Tu}\leqslant\aMidsq{\lambda_1}.$\vspace{1pt}\parSol{}
-又 $\Dvertsq{Tv}=\aMidsq{\lambda_1}\Longleftrightarrow v=a_1e_1+\dots+a_Je_J,$ where $\lambda_1=\cdots=\lambda_J>\lambda_{J+1},$ if $\lambda_n\neq\lambda_1;$ \,othws $J=n.$\vspace{1pt}\parSol{}
+\又 $\Dvertsq{Tv}=\aMidsq{\lambda_1}\Longleftrightarrow v=a_1e_1+\dots+a_Je_J,$ where $\lambda_1=\cdots=\lambda_J>\lambda_{J+1},$ if $\lambda_n\neq\lambda_1;$ \,othws $J=n.$\vspace{1pt}\parSol{}
 Hence $\sum_{k=1}^n\aMidsq{\lambda_k}\aMidsq{c_k}=\Dvertsq{Tu}=\sum_{k=1}^n\aMidsq{\lambda_1}\aMidsq{c_k}\Rightarrow\sum_{k=J}^n\!\Sbra{\aMidsq{\lambda_1}-\aMidsq{\lambda_k}}\cdot\aMidsq{c_k}=0.$\PfEnd
 \SepLine
 
@@ -857,7 +857,7 @@ Becs each col of $D$ is in $\col B=\FbbP{m}\Rightarrow$ each $Q_{\cdot,m+k}\in\S
 \NOTICE that $\mKf{i,\,j}{\alpha}\,\mKf{i,\,j}{\alpha}=\Par{I+\alpha\,\mEnt{i,\,j}}{^2}=I+2\;\!\alpha\,\mEnt{i,\,j}$\vspace{1pt}\parSol{}
 \Blind{\NOTICE that }$=I+\mEnt{j,\,j}+2\;\!\alpha\,\mEnt{i,\,j}-\frac{\,1\,}{2}\Sbra{I+\mEnt{j,\,j}+2\;\!\alpha\,\mEnt{i,\,j}}$\vspace{1pt}\parSol{}
 \Blind{\NOTICE that }$=\Par{I-\frac{\,1\,}{2}\:\!\mEnt{j,\,j}}\Par{I+\alpha\,\mEnt{i,\,j}}\Par{I+\mEnt{j,\,j}}=\mKf{j,\,j}{1/2}\,\mKf{i,\,j}{\alpha}\,\mKf{j,\,j}{1}.$\vspace{2pt}\parSol{}
-又 $\mKf{i,\,j}{\alpha}\,\mKf{i,\,j}{{-\alpha}}=I.$ \,Thus $\delta\BigPar{\mKf{i,\,j}{\alpha}}=\delta\BigPar{\mKf{j,\,j}{1/2}\,\mKf{j,\,j}{1}}=1.$\vspace{3pt}\parSol{}
+\又 $\mKf{i,\,j}{\alpha}\,\mKf{i,\,j}{{-\alpha}}=I.$ \,Thus $\delta\BigPar{\mKf{i,\,j}{\alpha}}=\delta\BigPar{\mKf{j,\,j}{1/2}\,\mKf{j,\,j}{1}}=1.$\vspace{3pt}\parSol{}
 Supp $A\in\CbbP{n,n}.$ Define $T\in\Lm{\CbbP{n}}:e_k=A_{\cdot,k}\Rightarrow\Mt{T}=A$ wrto std bses.\parSol{}
 Write $A=\Mt{I,Tv\rightarrow e}\Mt{T,v\rightarrow Tv}\Mt{I,e\rightarrow v}.$ Thus $A$ not inv $\Rightarrow\delta\Par{A}=0.$ \;Supp $A$ inv.\parSol{}
 Supp $T$ up-trig wrto $\Par{u_1,\dots,u_n}\Rightarrow C=\Mt{T,u\rightarrow u}=\Mt{I,e\rightarrow u}\:\!\Mt{T,e\rightarrow e}\:\!\Mt{I,u\rightarrow e}.$\parSol{}
