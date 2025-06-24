@@ -1490,11 +1490,11 @@ Asum $\exists$ inv $T\in\Lm{V,W}$ suth $T\mmid_V=S.$ Then $T=S$ while $S$ is not
 
 \Anchor{3DT1}\ProblemBX{\TipsN{1}}{
 	\TextA{Supp $V=U\oplus X=W\oplus X.$ Prove $U,W$ are iso.}
-}$\forall u\in U,\exists\,!\,\Par{w,x_1}\in W\times X,u=w+x_1.$ While $\exists\,!\,\Par{u\apostrophe,x_2}\in U\times X,w=u\apostrophe+x_2.$\parSol{}
-Now $x_1=-x_2,\:u=u\apostrophe.$ Thus $\pi:U\rightarrow W$ defined by $\pi\Par{u}=w,$ \,is inje.\parSol{\vspace{3pt}}
-$\forall w\in W,\exists\,!\,\Par{u,x_1}\in U\times X,w=u+x_1.$ While $\exists\,!\,\Par{w\apostrophe,x_2}\in W\times X,u=w\apostrophe+x_2.$\parSol{}
-Now $x_1=-x_2,\:w=w\apostrophe.$ Thus $\pi:U\rightarrow W$ defined by $\pi\Par{u}=w,$ \,is surj.\PfEnd\vspace{4pt}
-\AComm Let $V=\FbbP{\infty}.$ Let $X=\FbbP{\infty},Y=\Bra{\Par{0,x_1,x_2,\cdots}\in\FbbP{\infty}}.$ Now $X,Y$ are iso subsps of $V.$\parCom
+}$\forall u\in U,\exists\,!\,\Par{w,x_1}\in W\times X,\,u=w+x_1.$ Thus $\pi:U\rightarrow W$ well defined by $\pi\Par{u}=w.$\parSol{}
+While $\exists\,!\,\Par{u\apostrophe,x_2}\in U\times X,\,w=u\apostrophe+x_2.$ \,Now $x_1=-x_2,\:u=u\apostrophe\Longrightarrow\pi$ inje and surj.\parSol{\vspace{3pt}}
+\Or 又 $\forall w\in W,\exists\,!\,\Par{u,x_1}\in U\times X,\,w=u+x_1.$ Thus $\xi:W\rightarrow U$ well defined by $\xi\Par{w}=u.$\parSol{}
+While $\exists\,!\,\Par{w\apostrophe,x_2}\in W\times X,\,u=w\apostrophe+x_2.$ Now $x_1=-x_2,\:w=w\apostrophe\Longrightarrow\xi\circ\pi=I,$ and $\pi\circ\xi=I.$\PfEnd\vspace{4pt}
+\AExa Let $V=X=\FbbP{\infty},Y=\Bra{\Par{0,x_1,x_2,\cdots}\in\FbbP{\infty}}\Rightarrow X,Y$ iso.\parExa
 But $\nexists$ iso subsps $M,N$ of $V,$ suth $V=M\oplus X=N\oplus Y.$
 \SepLine
 
@@ -1504,16 +1504,18 @@ But $\nexists$ iso subsps $M,N$ of $V,$ suth $V=M\oplus X=N\oplus Y.$
 %\Anchor{3D'2}\BulletPointX\AComm If $S\in\Lm{V}$ is iso, $T\in\Lm{U,W}$ is iso, and $W\subsetneq V,$ then $ST=S\mmid_{W}T$ is merely inje.\vspace{-2pt}
 %\SepLine
 
+\ProblemB[]{
+	\TextB{Supp $U,V,W$ are finide.\hfill\FontSmall\tgnr\ANote Not true if $U,V,W$ infinide. \;\AExa Forwd and backwd shift.}
+}
 \Anchor{3D9}\ProblemN{9}{
-	\TextA{Supp $U,V,W$ are finide, while $S\in\Lm{V,W},T\in\Lm{U,V},$ and $ST$ inv.}
-	\TextA{Prove $S,T$ are inv.\hfill\FontSmall\tgnr\ANote Not true if $U,V,W$ infinide. Exa: Forwd and backwd shift.}
+	\TextA{Supp $S\in\Lm{V,W},T\in\Lm{U,V},$ and $ST$ inv. Prove $S,T$ are inv.}
 }Let $R=\Par{ST}{^{-1}}.$ Becs $R\Par{ST}=\Par{RS}T=I_U$ \OR $\Par{ST}R=S\Par{TR}=I_W,$ $T$ inje and $S$ surj.\PfEnd\parSol{}
 \Or $\dim W=\dim\range ST\leqslant\min\!\Bra{\range S,\range T}\Rightarrow S,T$ surj.\PfEnd
-\SepLine
+\SepLine[0pt][\Blind{\BulletPointX} ]
 
 \ProblemN{\Anchor{3D10}{10}}{
-	\TextA{Supp $V,W$ are finide and $T\in\Lm{V,W},S\in\Lm{W,V}.$ Prove $ST=I\Longleftrightarrow TS=I.$}
-}Supp $ST=I\Rightarrow S,T$ inv, by (3.B.20,21). Again, $TS_1=I.$ Becs $STS_1=S_1=S.$\PfEnd\parSol{}
+	\TextA{Supp $\dim V=\dim W,$ and $T\in\Lm{V,W},S\in\Lm{W,V}.$ Prove $ST=I\Longleftrightarrow TS=I.$}
+}$ST=I\Rightarrow S,T$ inv. Let $B_V=\Par{v_1,\dots,v_n}\Rightarrow$ each $S\Par{Tv_i}=v_i.$ Thus $TS=I.$ \,Rev the roles.\PfEnd\parSol{}
 \Or $S\BigPar{\Par{TS}w}=ST\Par{Sw}=Sw\Rightarrow\Par{TS}w=w.$ \;\Or {\FontSmall$S^{-1}=T$ 又 $S=S\Rightarrow TS=S^{-1}S=I$.}\PfEnd
 \SepLine
 
