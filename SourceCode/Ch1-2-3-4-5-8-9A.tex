@@ -787,7 +787,7 @@ Then both $W$ and $V$ have a non0 elem.\par\quad\HII\Hb
 \ChEnd\pagebreak
 
 
-\ChDecl{Ch3B}{3$\cdot$B}{\quad{\small\textbf{注意\,:}\;这里我将3.D可逆性、同构部分前置。}}
+\ChDecl{Ch3B}{3$\cdot$B}{\quad{\small\textbf{注意\,:}\;这里我将3.D可逆性、\!同构部分前置。}}
 
 \vspace{4pt}
 
@@ -2408,7 +2408,7 @@ $\forall\Par{x_1,\dots,x_m}\in\FbbP{m},\Gamma\apostrophe\BigPar{\Psi\Par{x_1,\do
 {And $\range E=\range S=\Span{e_2}$ is the {\tgsl purest} in $\Scom{V}{U}.$}
 \SepLine
 
-\BulletPointX\NoteForSmall{Exe (13) and (4E 14)}\;\;Let $U\oplus W=V.$ Define $S\Par{w+U}=w.$ \;\Sbra{ See also \TIPSN{1}. }\TextB{}
+\BulletPointX\NoteForSmall{Exe (13) and (4E 14)}\;\;Let $U\oplus W=V.$ Define $S\Par{w+U}=w$ \:\!as in \TIPSN{1}.\TextB{}
 (a) Let $B_W=\Par{w_1,\dots,w_m}\Rightarrow B_{V\XSlash U}=\BigPar{w_1+U,\dots,w_m+U}.$ Then $S\Par{w_k+U}$ might not equal $w_k.$\TextB{}
 (b) Let $B_{V\XSlash U}=\BigPar{w_1+U,\dots,w_m+U},$ then let $B_W=\Par{w_1,\dots,w_m}.$ Now each $S\Par{w_k+U}=w_k.$
 \def\Pure{{\textup{\tgnr Pure}}\,}
@@ -2441,23 +2441,22 @@ Now $\exists\,!\,\Par{u_v,i_u,w_v,i_w}\in S_V U\times S_U I\times S_V W\times S_
 Define $\alpha\in U^0,\beta\in W^0$ by $\alpha:u_v\mapsto\varphi\Par{u_v},u\mapsto 0,$ and $\beta:i_u\mapsto\varphi\Par{i_u},i\mapsto 0,$\parSol{}
 for all $u\in\Pure V\!\!\:\XSlash\Span{u_v}$ and $i\in\Pure V\!\!\:\XSlash\Span{i_u}.$ \OR Define $\rho\in W^0,\gamma\in U^0,$ simlr.\parSol{}
 Then $\varphi=\alpha+\beta=\rho+\gamma\in U^0+W^0.$\PfEnd
+\SepLine[4pt]
+
+\BulletPointX The def of $\Pure V\:\!\!\XSlash U$ is indeed ridic. To fix it, simply re-define $\Pure V\:\!\!\XSlash U=U^\perp,$\TextB{}
+but may fail \TIPSN{3} and the weird solus of (3.F.23) above.
 \SepLine
 
-%\ProblemB{
-%	\TipsN{4}\,\,\,\TextB{Supp $U$ and $W$ are subsps of $V.$ Define $S_V X=\Pure V\:\!\!\XSlash X$ for any subsp $X$ of $V.$}
-%	\IndentTipsN{4}\PrePa\TextB{Prove $S_V\Par{U+W}=S_V U\cap S_V W,$ \:{\tgnr(b)} $S_V\Par{U\cap W}=S_V U+S_V W.$}
-%}$\forall\Par{a,b}\in\BigPar{S_V\Par{U+W}}\times\Par{U+W},\exists\,\Par{u,w}\in U+W,\,a+b=a+u+w.$\parSol{}
-%$\forall\Par{a,b}\in\BigPar{S_V\Par{U\cap W}}\times\Par{U\cap W},\,a+b=2\times\frac{\:1\:}{2}\times\Par{a+b}.$
-%\SepLine
+\BulletPointX\ANote Supp $U,W$ are subsps of finide $V.$ Define $X_V\upapostrophe=\Par{X^\perp}{^0}$ for all $X\subseteq V.$ Then by \Sbra{6.C \TIPSN{3,4}},\parNot{\IndentB}
+$\Par{U+W}{_V\upapostrophe}=\BigPar{\Par{U+W}{^\perp}}{^0}=\BigPar{U^\perp\cap W^\perp}{^0}=U_V\upapostrophe+W_V\upapostrophe,$ and simlr, $\Par{U\cap W}{_V\upapostrophe}=U_V\upapostrophe\cap W_V\upapostrophe.$
+\SepLine
 
 \Anchor{3F'4}\ProblemB{
 	\TextB{Supp $\Span{\varphi_1,\dots,\varphi_m}\subseteq V\apostrophe.$ Let each $\Span{u_k}\oplus\null\varphi_k=V.$}
 	\TextB{Prove or give a countexa\hspace{1pt}$:$ $\Span{u_1,\dots,u_m}\oplus\BigPar{\null\varphi_1\cap\cdots\cap\null\varphi_m}=V.$}
 }Let $V=\RbbP{2}.$ Define $\varphi_1=\varphi_2:\Par{x,y}\mapsto x.$ Let $u_1=e_1,\;\!u_2=e_1+e_2\Rightarrow\Span{u_1,u_2}=V.$\parSol{}
-\Or Let $B_{V\apostrophe}=\Par{\varphi_1,\varphi_2}$ be corres to the std bss. Let $u_1=u_2=e_1+e_2\Rightarrow\Span{u_1,u_2}\subsetneq V.$\PfEnd
-%\vspace{2pt}
-%\ANote Supp each $\Span{u_k}=\Pure V\:\!\!\XSlash\null\varphi_k$ and $\varphi_k\Par{u_k}=1$ if $\varphi_k\neq0.$ Then each non0 $\varphi_k$
-\SepLine
+\Or Let $B_{V\apostrophe}=\Par{\varphi_1,\varphi_2}$ be corres to the std bss. Let $u_1=u_2=e_1+e_2\Rightarrow\Span{u_1,u_2}\subsetneq V.$\PfEnd\vspace{2pt}
+\ANote Supp each $\Span{u_k}=\Par{\null\varphi_k}{^\perp}.$ Then $\Span{u_1,\dots,u_m}=\Par{\null\varphi_1\cap\cdots\cap\null\varphi_m}{^\perp}.$\SepLine
 \ChEnd\pagebreak
 
 \ChDecl{}{\Largebfx{Exes about Sequences and Number Theory before Chapter 4}}
@@ -2924,7 +2923,7 @@ Hence $\Par{pq}{^{\SmallPar{k}}}=\mathC_{k}^0{p{^{\SmallPar{0}}}q{^{\SmallPar{k}
 \SepLine
 \ChEnd
 
-\vfill\textsl{\normalsize 凭借我的经验，我认为，好的自学教材，除了提供足够的一级知识外，还能通过各种方式，将二级、三级知识顺理成章地经过学科思维的浓缩喻于习题或课文中。在LADR的熏陶下，我渐渐认为，自学教材带来的长期收益更重要——所谓素养一类的隐形东西，无论堆砌多少知识记忆都难以学到；外在的选拔，表面上看都是知识竞赛，但真正有含金量的选拔，往往十二分地注重隐性能力；实际的工作表现也是如此；客观上看这确实是在当今公共信息过剩的时代下人与人拉开差距的核心原因之一，也是我相信最能仅通过自身努力耕耘获得长期稳定回报的地方。现在看看速学速成应付选拔竞争的选择有多愚蠢吧：考不上放弃吧，因为几乎没有习得那些隐性能力，就确实是除了知识和解题技巧之外啥也没得到，这些知识中实用的那些内容怎么着都能学到，不具有不可替代性，实际工作更需要隐形的素养；再考再战吧，就得辛苦刷题，总归不如在学的过程中把\!“和习题的挣扎”\!当作练习对学科思维的启发最好。考上了吧又要和更\!“拔尖创新人才”\!竞争隐形的能力，一样难以优胜，只不过这个情况下可以做一个更\!“优越”\!的平庸之人罢了，除了短期速成而来的外在\!“纪念品”\!之外再也没有什么学习成果可长期变现——和质量至上、\!不怕耽误时间进度的学习者相比又能有什么优越之处呢？}\par\vspace{4pt}
+\vfill\textsl{\normalsize 凭借我的经验，我认为，好的自学教材，除了提供足够的一级知识外，还能通过各种方式，将二级、\!三级知识顺理成章地经过学科思维的浓缩喻于习题或课文中。在LADR的熏陶下，我渐渐认为，自学教材带来的长期收益更重要——所谓素养一类的隐形东西，无论堆砌多少知识记忆都难以学到；外在的选拔，表面上看都是知识竞赛，但真正有含金量的选拔，往往十二分地注重隐性能力；实际的工作表现也是如此；客观上看这确实是在当今公共信息过剩的时代下人与人拉开差距的核心原因之一，也是我相信最能仅通过自身努力耕耘获得长期稳定回报的地方。现在看看速学速成应付选拔竞争的选择有多愚蠢吧：考不上放弃吧，因为几乎没有习得那些隐性能力，就确实是除了知识和解题技巧之外啥也没得到，这些知识中实用的那些内容怎么着都能学到，不具有不可替代性，实际工作更需要隐形的素养；再考再战吧，就得辛苦刷题，总归不如在学的过程中把\!“和习题的挣扎”\!当作练习对学科思维的启发最好。考上了吧又要和更\!“拔尖创新人才”\!竞争隐形的能力，一样难以优胜，只不过这个情况下可以做一个更\!“优越”\!的平庸之人罢了，除了短期速成而来的外在\!“纪念品”\!之外再也没有什么学习成果可长期变现——和质量至上、\!不怕耽误时间进度的学习者相比又能有什么优越之处呢？}\par\vspace{4pt}
 
 {\small
 此章核心内容3/4e差距过大。4e将第2章线性相关性引理和多项式结合，更自然地引出原来3e的8.C节的极小多项式，并前置了相关习题，让定理和习题更加富有动机和系统性。这份笔记主要面向3e纸质书的读者，所以题号和定理索引都采用3e（除4e新增章节）。为了严密性，我决定将3e第8章提前到第5章后，对应到4e只有第8章前三节。\par\vspace{14pt}
