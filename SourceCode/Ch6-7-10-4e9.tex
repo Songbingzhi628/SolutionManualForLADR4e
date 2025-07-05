@@ -167,12 +167,12 @@ Let $e_m'=-e_m.$ Sum it up, we have $2^{m-1}\times 2=2^m$ orthon lists. \qquad\O
 
 \Anchor{6B11}\ProblemN{11}{
 	\TextA{Supp $V\neq0,$ and $\Ang{\cdot,\cdot}{_1},\Ang{\cdot,\cdot}{_2}$ are inner prods suth $\Ang{v,w}{_1}=0\Longleftrightarrow\Ang{v,w}{_2}=0.$\vspace{1pt}}
-	\TextA{Prove $\exists\,c>0,\:\Ang{v,w}{_1}=c\Ang{v,w}{_2}$ for all $v,w\in V.$}
-}Fix non0 $v_1,v_2\in V.$ Define $\varphi_1,\psi_1\in V\apostrophe$ by $\varphi_1:v\mapsto\Ang{v_1,v}{_1},\;\psi_1:v\mapsto\Ang{v,v_2}{_1}.$ Simlr for $\varphi_2,\psi_2.$\parSol{}
-Becs $\Ang{v_1,v}{_1}=0\Longleftrightarrow\Ang{v_1,v}{_2}=0.$ By (3.B.30), let $c_1=\Ang{v_1,v_1}{_1}\Big/\Ang{v_1,v_1}{_2}>0\Rightarrow\varphi_1=c_1\varphi_2.$\parSol{}
+	\TextA{Prove $\exists\,c>0,\:\Ang{v,w}{_1}=c\:\!\Ang{v,w}{_2}$ for all $v,w\in V.$}
+}Fix non0 $v_1,v_2\in V.$ Define $\varphi_1,\psi_1\in V\apostrophe$ by $\varphi_1:v\mapsto\Ang{v,v_1}{_1},\;\psi_1:v\mapsto\Ang{v,v_2}{_1}.$ Simlr for $\varphi_2,\psi_2.$\parSol{}
+Becs $\Ang{v,v_1}{_1}=0\Longleftrightarrow\Ang{v_1,v}{_2}=0.$ By (3.B.30), let $c_1=\Ang{v_1,v_1}{_1}\Big/\Ang{v_1,v_1}{_2}>0\Rightarrow\varphi_1=c_1\varphi_2.$\parSol{}
 Simlr, let $c_2=\Ang{v_2,v_2}{_1}\Big/\Ang{v_2,v_2}{_2}\Rightarrow\psi_1=c_2\psi_2.$ Choose $v_1=v_2$ so that $c=c_1=c_2.$\vspace{3pt}\parSol{}
-For any $v_1'\in V,$ get $c_1'$ simlr. Becs $\Ang{v_1,v}{_1}=c_1\Ang{v_1,v}{_2}$ while $\Ang{v_1',v}{_1}=c_1'\Ang{v_1',v}{_2}.$\vspace{1pt}\parSol{}
-Now $c_1\Ang{v_1,v_1'}{_2}=\Ang{v_1,v_1'}{_1}=\overline{\Ang{v_1',v_1}{_1}}=\overline{c_1'\Ang{v_1',v_1}{_2}}\Rightarrow c_1=c_1'.$ Simlr for $c_2=c_2'.$\vspace{3pt}\parSol{}
+For any $v_1'\in V,$ get $c_1'$ simlr. Becs $\Ang{v,v_1}{_1}=c_1\:\!\Ang{v,v_1}{_2}$ while $\Ang{v,v_1'}{_1}=c_1'\:\!\Ang{v,v_1'}{_2}.$\vspace{1pt}\parSol{}
+Now $c_1\Ang{v_1',v_1}{_2}=\Ang{v_1',v_1}{_1}=\overline{\Ang{v_1,v_1'}{_1}}=\overline{c_1'\:\!\Ang{v_1,v_1'}{_2}}\Rightarrow c_1=c_1'.$ Simlr for $c_2=c_2'.$\PfEnd\vspace{2pt}\parSol{}
 \Or For any $v_1',v_2'\in V,$ get $c_1'=c_2'$ simlr. Becs $c_2\Ang{v_1',v_2}{_2}=\Ang{v_1',v_2}{_1}=c_1'\Ang{v_1',v_2}{_2}.$\PfEnd\vspace{6pt}\parSol{}
 \Or Define $c_v=\Ang{v,v}{_1}\Big/\Ang{v,v}{_2}$ for all non0 $v\in V.$ Fix non0 $u,v\in V.$\parSol{}
 Let $c=\Ang{u,v}{_2}\Big/\Ang{v,v}{_2}\Rightarrow\Ang{u-cv,v}{_1}=\Ang{u-cv,v}{_2}=0\Rightarrow\Ang{u,v}{_1}=c\Ang{v,v}{_1}=c_v\Ang{u,v}{_2}.$\vspace{1pt}\parSol{}
@@ -201,7 +201,7 @@ Rev the roles of $u,v\Rightarrow c_v\Ang{u,v}{_2}={\Ang{u,v}{_1}}=\overline{\Ang
 \Anchor{6B4e19}\ProblemBnoor{4E 19}{
 	\TextA{Supp $B_V=\Par{v_1,\dots,v_n}.$ Prove $\exists\,B_V'=\Par{u_1,\dots,u_n}$ suth $\Ang{v_j,u_k}=\delta_{j,k}.$}
 }Let $\Par{\varphi_1,\dots,\varphi_n}$ be the corres dual bss of $B_V.$ \;Becs $\exists\,!\,u_k\in V,\,\varphi_k\Par{v}=\Ang{v,u_k}$ for all $v\in V.$\parSol{}
-Then $\varphi_k\Par{v_j}=\delta_{j,k}=\Ang{v_j,u_k}.$ \;Now let \,$a_1u_1+\dots+a_nu_n=0\Rightarrow$ each $\Ang{v_j,0}=0=a_j.$\PfEnd
+Then $\varphi_k\Par{v_j}=\delta_{j,k}=\Ang{v_j,u_k}.$ \;Now let \,$a_1u_1+\dots+a_nu_n=0\Rightarrow$ each $\Ang{v_j,0}=a_j.$\PfEnd
 \SepLine
 
 \Anchor{6B16}\ProblemN{16}{
@@ -213,10 +213,10 @@ Supp $A=\Mt{T}$ up-trig wrto orthon $B_V=\Par{e_1,\dots,e_n}.$\parSol{}
 Then $\forall v=x_1e_1+\dots+x_ne_n\in V,\Dvert{v}{_V}=\Dvert{x}.$ Now we show $\Dvert{A^mx}\leqslant\epsilon\Dvert{x}$ for all $x\in\CbbP{n,1}.$\parSol{}
 Define $D,N\in\CbbP{n,n}$ by $D_{j,k}=\delta_{j,k}A_{j,k},\:N=A-D.$ Then $N$ is nilp with $N^p=0\neq N^{p-1}.$\parSol{}
 Let $\rho=\max\!\Bra{\aMid{D_{1,1}},\dots,\aMid{D_{n,n}}}\Rightarrow0\leqslant\rho<1,$ and each $\Dvert{D^{\,k}x}\leqslant\rho^{\,k}\Dvert{x}\leqslant\Dvert{x}.$\vspace{3pt}\parSol{}
-Let $M=\sum_{j=1}^n\sum_{k=1}^n\aMidsq{N_{j,k}}.$ \,{By \Sbra{6.A \TIPSN{2}}}, $\Dvert{Nx}\leqslant M\Dvert{x}\Rightarrow\Dvert{N^{k}x}\leqslant M\Dvert{N^{k-1}x}\leqslant M^k\Dvert{x}.$\vspace{5pt}\parSol{}
+Let $M=\sum_{j=1}^n\sum_{k=1}^n\aMidsq{N_{j,k}}.$ \,{By \Sbra{6.A \TIPSN{2}}}, $\Dvert{Nx}\leqslant M\Dvert{x}\Rightarrow\Dvert{N^{k}x}\leqslant M^k\Dvert{x}.$\vspace{5pt}\parSol{}
 Hence $\Dvert{A^{p+q}x}=\BigDvert{b_0D^{\,p+q}x+\dots+b_kD^{\,p+q-k}N^{k}x+\dots+b_{p-1}D^{\,q+1}N^{p-1}x}$\vspace{3pt}\parSol{}
 \Blind{So that $\Dvert{A^{p+q}x}$}$\leqslant\!\BigSbra{{b_0\rho^{\,p+q}+\dots+b_k\rho^{\,p+q-k}M^k+b_{p-1}\rho^{\,q+1}M^{p-1}}}\Dvert{x}.$\vspace{4pt}\parSol{}
-Where each $b_j=\mathC_{p+q}^j\leqslant\Par{p+q}{^j}$ for $j\in\;\!\!\Bra{0,\dots,p-1}\Rightarrow$ each $b_j\leqslant\Par{p+q}{^{p-1}}.$\vspace{1pt}\parSol{}
+Where each $b_j=\mathC_{p+q}^j\leqslant\Par{p+q}{^j}\leqslant\Par{p+q}{^{p-1}}$ for $j\in\;\!\!\Bra{0,\dots,p-1}.$\vspace{1pt}\parSol{}
 Let $\sigma=\max\!\Bra{1,M,\dots,M^{p-1}}.$ 又 $\max\!\Bra{\rho^{\,p+q},\dots,\rho^{\,q+1}}=\rho^{\,q+1}.$\parSol{}
 Now $\Dvert{A^{p+q}x}\leqslant\Par{p+q}{^{p-1}}\rho^{\,q+1}\sigma\Dvert{x}.$ \;Note that as $q\rightarrow\infty,$ \,$\Par{p+q}{^{p-1}}\rho^{\,q+1}\rightarrow0.$\PfEnd
 \SepLine
@@ -227,9 +227,9 @@ Now $\Dvert{A^{p+q}x}\leqslant\Par{p+q}{^{p-1}}\rho^{\,q+1}\sigma\Dvert{x}.$ \;N
 \vspace{4pt}
 
 \Anchor{6CT1}\ProblemBX{\TipsN{1}}{
-	\TextA{Supp $V$ finide, $T\in\Lm{V},$ and all vecs in $\null T$ ortho to all vecs in $\range T.$}
+	\TextA{Supp $V$ finide, $T\in\Lm{V},$ and all vecs in $\null T$ orthog to all vecs in $\range T.$}
 	\TextA{Prove $\Par{\null T}{^\perp}=\range T.$}
-}Becs $\range T\subseteq\Par{\null T}{^\perp}=\Bra{v\in V:v\text{ ortho to all vecs in }\null T}.$ 又 $\null T\cap\range T=\zeroSubs.$\PfEnd\parSol{}
+}Becs $\range T\subseteq\Par{\null T}{^\perp}.$ 又 $\null T\cap\range T=\zeroSubs.$ \,By \Sbra{1.C \TIPSN{1}}.\PfEnd\parSol{}
 \Or $\forall v\in\Par{\null T}{^\perp},\exists\,!\,\Par{u,w}\in\null T\times\range T,\Ang{u+w,u}=\Ang{u,u}=0\Rightarrow v\in\range T.$\PfEnd
 \SepLine
 
@@ -856,10 +856,10 @@ Becs each col of $D$ is in $\col B=\FbbP{m}\Rightarrow$ each $Q_{\cdot,m+k}\in\S
 	\TextA{for all $A,B\in\CbbP{n,n}$ and all diag $D\in\CbbP{n,n}.$ \;Prove $\delta={\det}.$}
 }Define $\mKf{i,\,j}{\alpha}=I+\alpha\:\!\mEnt{i,\,j}.$ \;We show $\delta\BigPar{\mKf{i,\,j}{\alpha}}=1+\delta_{i,j}\alpha.$ \,Supp $i\neq j.$\vspace{2pt}\parSol{}
 \NOTICE that $\mKf{i,\,j}{\alpha}\,\mKf{i,\,j}{\alpha}=\Par{I+\alpha\,\mEnt{i,\,j}}{^2}=I+2\;\!\alpha\,\mEnt{i,\,j}$\vspace{1pt}\parSol{}
-\Blind{\NOTICE that }$=I+\mEnt{j,\,j}+2\;\!\alpha\,\mEnt{i,\,j}-\frac{\,1\,}{2}\Sbra{I+\mEnt{j,\,j}+2\;\!\alpha\,\mEnt{i,\,j}}$\vspace{1pt}\parSol{}
-\Blind{\NOTICE that }$=\Par{I-\frac{\,1\,}{2}\:\!\mEnt{j,\,j}}\Par{I+\alpha\,\mEnt{i,\,j}}\Par{I+\mEnt{j,\,j}}=\mKf{j,\,j}{1/2}\,\mKf{i,\,j}{\alpha}\,\mKf{j,\,j}{1}.$\vspace{2pt}\parSol{}
-\又 $\mKf{i,\,j}{\alpha}\,\mKf{i,\,j}{{-\alpha}}=I.$ \,Thus $\delta\BigPar{\mKf{i,\,j}{\alpha}}=\delta\BigPar{\mKf{j,\,j}{1/2}\,\mKf{j,\,j}{1}}=1.$\vspace{3pt}\parSol{}
-Supp $A\in\CbbP{n,n}.$ Define $T\in\Lm{\CbbP{n}}:e_k=A_{\cdot,k}\Rightarrow\Mt{T}=A$ wrto std bses.\parSol{}
+\Blind{\NOTICE that }$=\Sbra{I+\mEnt{j,\,j}+2\;\!\alpha\,\mEnt{i,\,j}}-\frac{\,1\,}{2}\:\!\mEnt{j,\,j}\Sbra{I+\mEnt{j,\,j}+2\;\!\alpha\,\mEnt{i,\,j}}$\vspace{1pt}\parSol{}
+\Blind{\NOTICE that }$=\Par{I-\frac{\,1\,}{2}\:\!\mEnt{j,\,j}}\Sbra{\Par{I+\alpha\,\mEnt{i,\,j}}\Par{I+\mEnt{j,\,j}}}=\mKf{j,\,j}{1/2}\,\mKf{i,\,j}{\alpha}\,\mKf{j,\,j}{1}.$\vspace{2pt}\parSol{}
+\又 $\mKf{i,\,j}{\alpha}\,\mKf{i,\,j}{{-\alpha}}=I\Rightarrow\delta\BigPar{\mKf{i,\,j}{\alpha}}\neq0.$ \,Thus $\delta\BigPar{\mKf{i,\,j}{\alpha}}=\delta\BigPar{\mKf{j,\,j}{1/2}\,\mKf{j,\,j}{1}}=1.$\vspace{3pt}\parSol{}
+Supp $A\in\CbbP{n,n}.$ Define $T\in\Lm{\CbbP{n}}:e_k\mapsto A_{\cdot,k}\Rightarrow\Mt{T}=A$ wrto std bses.\parSol{}
 Write $A=\Mt{I,Tv\rightarrow e}\Mt{T,v\rightarrow Tv}\Mt{I,e\rightarrow v}.$ Thus $A$ not inv $\Rightarrow\delta\Par{A}=0.$ \;Supp $A$ inv.\parSol{}
 Supp $T$ up-trig wrto $\Par{u_1,\dots,u_n}\Rightarrow C=\Mt{T,u\rightarrow u}=\Mt{I,e\rightarrow u}\:\!\Mt{T,e\rightarrow e}\:\!\Mt{I,u\rightarrow e}.$\parSol{}
 Then $A\mKf{i,\,j}{\alpha}=A+\alpha\:\!A\:\!\mEnt{i,\,j},$ which is the result of adding $i^\text{th}$ col times $\alpha$ to the $j^\text{th}$ col.\parSol{}
