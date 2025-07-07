@@ -100,9 +100,9 @@ We must have used the same properties in $W.$ \;\Sbra{{\tgsc If $W^V$ is a vecsp
 \BulletPointX\Largesl{Supp $U,W,V_{\!1},V_{\!2},V_{\!3}$ are subsps of $V.$}\par
 \Anchor{1C15}\Anchor{1C16}\Onumber{15}\quad{$U+U\ni u+w\in U.$} \qquad \Onumber{16}\quad{$U+W\ni u+w=w+u\in W+U.$}\PfEnd
 \Onumber{\Anchor{1C17}{17}}\quad{$\Par{V_{\!1}+V_{\!2}}+V_{\!3}\ni\Par{v_1+v_2}+v_3=v_1+\Par{v_2+v_3}\in V_{\!1}+\Par{V_{\!2}+V_{\!3}}.$}\PfEnd\Anchor{1C'1}
-\BulletPointX{ \quad}{$\Par{U+W}{_{\Cbb}}\ni \Par{u_1+w_1}+\i\Par{u_2+w_2}=\Par{u_1+\i u_2}+\Par{w_1+\i w_2}\in U_\Cbb+W_{\!\Cbb}.$}\PfEnd
-\BulletPointX{ \quad}$\Par{U\cap W}{_\Cbb}\ni u_1+\i u_2=w_1+\i w_2\in U_\Cbb\cap W_\Cbb.$\PfEnd
-\BulletPointX{ \quad}$U_\Cbb=W_\Cbb\Longleftrightarrow U=W.$ \;Supp $U_\Cbb\ni u+\i v\in W_\Cbb.$ Then $U\ni u,v\in W.$\PfEnd
+\BulletPointX{ \quad}{$\Par{U+W}{_{\Cbb}}\ni \Par{u_1+w_1}+\i\Par{u_2+w_2}=\Par{u_1+\i\:\!u_2}+\Par{w_1+\i\:\!w_2}\in U_\Cbb+W_{\!\Cbb}.$}\PfEnd
+\BulletPointX{ \quad}$\Par{U\cap W}{_\Cbb}\ni u_1+\i\:\!u_2=w_1+\i\:\!w_2\in U_\Cbb\cap W_\Cbb.$\PfEnd
+\BulletPointX{ \quad}$U_\Cbb=W_\Cbb\Longleftrightarrow U=W.$ \;Supp $U_\Cbb\ni u+\i\:\!v\in W_\Cbb.$ Then $U\ni u,v\in W.$\PfEnd
 \BulletPointX{ \quad}${V_{\!1}}_\Cbb\times\cdots\times{V_{\!m}}_\Cbb=\Par{V_{\!1}\times\cdots\times V_{\!m}}{_\Cbb}.$\PfEnd
 \SepLine
 
@@ -382,10 +382,10 @@ $Q\Rightarrow P:\forall v\in V,\exists\,!\,b_i\in\Fbb,\;v=b_1w_1+\dots+b_mw_m\Ri
 $Q\Rightarrow P:$ \;If $\lambda_k\in\Rbb$ with $\lambda_1v_1+\dots+\lambda_nv_n=0,$ then each $\Real\lambda_k=\lambda_k=0.$\par\quad\Ha
 ${}^\neg P\Rightarrow{}^\neg Q:$ \;$\exists\,v_j=a_{j-1}v_{j-1}+\dots+a_1v_1\in V_{\!\Cbb}.$\par\quad\Ha
 ${}^\neg Q\Rightarrow{}^\neg P:$ \;$\exists\,v_j=\lambda_{j-1}v_{j-1}+\dots+\lambda_1v_1\in V\Rightarrow v_j=\Par{\Real\lambda_{j-1}}v_{j-1}+\dots+\Par{\Real\lambda_1}v_1\in V.$\par\vspace{3pt}\quad
-(b) $P\Rightarrow Q:$ \;$\forall u+\i v\in V_{\!\Cbb},\;u,v\in V\Rightarrow\exists\,a_i,b_i\in\Rbb,u+\i v=\sum_{i=1}^n\Par{a_i+\i b_i}v_i.$\par\quad\Hb
-$Q\Rightarrow P:$ \;$\forall v\in V,\exists\,\!\,a_i+\i b_i\in\Cbb,\;v+\i 0=\BigBigPar{{\sum_{i=1}^na_iv_i}}+\i\,\BigBigPar{{\sum_{i=1}^nb_iv_i}}\envFontSmall\Rightarrow v\in\Span{v_1,\dots,v_m}.$\par\quad\Hb
-${}^\neg P\Rightarrow{}^\neg Q:$ \;$\exists\,v\in V,\,v\not\in\spn B$ with $\Fbb=\Rbb\Rightarrow v+\i 0\not\in\spn B$ with $\Fbb=\Cbb.$\par\quad\Hb
-${}^\neg Q\Rightarrow{}^\neg P:$ \;$\exists\,u+\i v\in V_{\!\Cbb},u+\i v\not\in\spn B\Rightarrow\Par{\Real1}u+\Par{\Real\i}v=u$ or $\Par{\Imaginary1}u+\Par{\Imaginary\i}v=v\not\in\spn B.$
+(b) $P\Rightarrow Q:$ \;$\forall u+\i\:\!v\in V_{\!\Cbb},\;u,v\in V\Rightarrow\exists\,a_i,b_i\in\Rbb,u+\i\:\!v=\sum_{i=1}^n\Par{a_i+\i\:\!b_i}v_i.$\par\quad\Hb
+$Q\Rightarrow P:$ \;$\forall v\in V,\exists\,\!\,a_i+\i\:\!b_i\in\Cbb,\;v+\i\:\!0=\BigBigPar{{\sum_{i=1}^na_iv_i}}+\i\,\BigBigPar{{\sum_{i=1}^nb_iv_i}}\envFontSmall\Rightarrow v\in\Span{v_1,\dots,v_m}.$\par\quad\Hb
+${}^\neg P\Rightarrow{}^\neg Q:$ \;$\exists\,v\in V,\,v\not\in\spn B$ with $\Fbb=\Rbb\Rightarrow v+\i\:\!0\not\in\spn B$ with $\Fbb=\Cbb.$\par\quad\Hb
+${}^\neg Q\Rightarrow{}^\neg P:$ \;$\exists\,u+\i\:\!v\in V_{\!\Cbb},u+\i\:\!v\not\in\spn B\Rightarrow\Par{\Real1}u+\Par{\Real\i}v=u$ or $\Par{\Imaginary1}u+\Par{\Imaginary\i}v=v\not\in\spn B.$
 }\PfEnd\vspace{-4pt}
 \SepLine
 
@@ -590,11 +590,11 @@ Let $\Par{v_1,Tv_1}$ be liney indep in $V$ as real vecsp. Let $v_2\not\in\Span{v
 %\Anchor{9A2}\Anchor{9A6}\Anchor{3B4e33}\ProblemBnoor{{9.A.2,6 \OR 4E 3.B.33}}{
 %	\TextB{Supp $V,W$ are on $\Rbb,$ and $T\in\Lm{V,W}.$ Show}
 %	{\tgnr\large(a)} $T_{\!\Cbb}\in\Lm{V_{\!\Cbb},W_{\!\Cbb}}.$ \;{\tgnr\large(b)} $\Null\Par{T_{\!\Cbb}}=\BigPar{\null T}{_\Cbb},\,\Range\Par{T_{\!\Cbb}}=\BigPar{\range T}{_\Cbb}.$ \;{\tgnr\large(c)} $T_{\!\Cbb}$ is inv $\Leftrightarrow T$ is inv.\TextB{}
-%}{(a) $T_{\!\Cbb}\BigPar{\Par{u_1+\i v_1}+\Par{x+\i y}\Par{u_2+\i v_2}}=T\Par{u_1+xu_2-yv_2}+\i T\Par{v_1+xv_2+yu_2}$\parSol{\Ha}
-%	$=T_{\!\Cbb}\Par{u_1+\i v_1}+\Par{x+\i y}T_{\!\Cbb}\Par{u_2+\i v_2}.$\parSol{}
-%	(b) $u+\i v\in\Null\Par{T_{\!\Cbb}}\Longleftrightarrow u,v\in\null T\Longleftrightarrow u+\i v\in\BigPar{\null T}{_\Cbb}.$\parSol{\Hb}
-%	$w+\i x\in\Range\Par{T_{\!\Cbb}}\Longleftrightarrow w,x\in\range T\Longleftrightarrow w+\i x\in\BigPar{\range T}{_\Cbb}.$\parSol{}
-%	(c) $\forall w,x\in W,\exists\,!\,u,v\in V,T_{\!\Cbb}\Par{u+\i v}=w+\i x\Longleftrightarrow Tu=w,Tv=x.$ \Or By (b).}\large
+%}{(a) $T_{\!\Cbb}\BigPar{\Par{u_1+\i\:\!v_1}+\Par{x+\i\:\!y}\Par{u_2+\i\:\!v_2}}=T\Par{u_1+xu_2-yv_2}+\i\:\!T\Par{v_1+xv_2+yu_2}$\parSol{\Ha}
+%	$=T_{\!\Cbb}\Par{u_1+\i\:\!v_1}+\Par{x+\i\:\!y}T_{\!\Cbb}\Par{u_2+\i\:\!v_2}.$\parSol{}
+%	(b) $u+\i\:\!v\in\Null\Par{T_{\!\Cbb}}\Longleftrightarrow u,v\in\null T\Longleftrightarrow u+\i\:\!v\in\BigPar{\null T}{_\Cbb}.$\parSol{\Hb}
+%	$w+\i\:\!x\in\Range\Par{T_{\!\Cbb}}\Longleftrightarrow w,x\in\range T\Longleftrightarrow w+\i\:\!x\in\BigPar{\range T}{_\Cbb}.$\parSol{}
+%	(c) $\forall w,x\in W,\exists\,!\,u,v\in V,T_{\!\Cbb}\Par{u+\i\:\!v}=w+\i\:\!x\Longleftrightarrow Tu=w,Tv=x.$ \Or By (b).}\large
 %\PfEnd
 %\SepLine
 
@@ -620,7 +620,7 @@ Let $\Par{v_1,Tv_1}$ be liney indep in $V$ as real vecsp. Let $v_2\not\in\Span{v
 
 %\ProblemN{\Anchor{3A9}{9}}{
 %	\TextA{Give a map $\varphi:\Cbb\rightarrow\Cbb$ suth $\forall w,z\in\Cbb,\varphi\Par{w + z} = \varphi\Par{w} + \varphi\Par{z}$ but $\varphi$ is not liney.}
-%}Define $\varphi\Par{u+\i v}=u=\REAL\Par{u+\i v}$\quad\Or Define $\varphi\Par{u+\i v}=v=\IMAGINARY\Par{u+\i v}.$\PfEnd
+%}Define $\varphi\Par{u+\i\:\!v}=u=\REAL\Par{u+\i\:\!v}$\quad\Or Define $\varphi\Par{u+\i\:\!v}=v=\IMAGINARY\Par{u+\i\:\!v}.$\PfEnd
 %\SepLine
 
 %\Anchor{3A4e10}\ProblemB{
@@ -2876,9 +2876,11 @@ Thus $\Par{rs}\Par{z}=1$ for infily many $z,$ so for all $z.$ Now $\deg rs=1=\de
 \SepLine
 
 \Anchor{4OT2}\ProblemBX{\TipsN{2}}{
-	\TextB{Supp $\alpha\in\Nbp.$ Prove $p\Par{z}=\Par{z-\lambda}{^\alpha}q\Par{z}\Longrightarrow{p{^{\SmallPar{\alpha-1}}}}\Par{\lambda}=0.$\vspace{2pt}}
-}By (L1), $\Sbra{\Par{z-\lambda}{^\alpha}q\Par{z}}{^{\SmallPar{\alpha-1}}}=\sum_{j=0}^{\alpha-1}\mathC_{\alpha-1}^j\Sbra{\Par{z-\lambda}{^\alpha}}{^{\SmallPar{j}}}\:\!\Sbra{q\Par{z}}{^{\SmallPar{\alpha-1-j}}}.$\vspace{3pt}\parSol{}
-Note that $\Sbra{\Par{z-\lambda}{^\alpha}}{^{\SmallPar{j}}}=\Sbra{\alpha\Par{\alpha-1}\cdots\Par{\alpha-j+1}}\Par{z-\lambda}{^{\SmallPar{\alpha-j}}}.$\PfEnd
+	\TextB{Supp $\alpha,\beta\in\Nbp,\:\!\alpha\geqslant\beta.$ \,Show $p\Par{z}=\Par{z-\lambda}{^\alpha}\:\!q\Par{z}\Longrightarrow{p{^{\SmallPar{\beta}}}}\Par{z}=\Par{z-\lambda}{^{\alpha\:\!-\:\!\beta}}\:\!s\Par{z}.$\vspace{2pt}}
+}By induc on $\beta.$ Immed. \;\Or By (L1), $\Sbra{\Par{z-\lambda}{^\alpha}q\Par{z}}{^{\SmallPar{\beta}}}=\sum_{j=0}^{\beta}\mathC_{\beta}^j\Sbra{\Par{z-\lambda}{^\alpha}}{^{\SmallPar{j}}}\:\!\Sbra{q\Par{z}}{^{\SmallPar{\beta\:\!-\:\!j}}}.$\vspace{3pt}\parSol{}
+Note that $\Sbra{\Par{z-\lambda}{^\alpha}}{^{\SmallPar{j}}}=\Sbra{\alpha\Par{\alpha-1}\cdots\Par{\alpha-j+1}}\Par{z-\lambda}{^{\SmallPar{\alpha\:\!-\:\!j}}}$ for all $j\in\;\!\!\Bra{0,\dots,\alpha}.$\PfEnd
+%\Or (i) $\beta=1.$ $p\apostrophe\Par{z}=\Par{z-\lambda}{^{\alpha\:\!-\:\!1}}\Sbra{\alpha\:\!q\Par{z}+\Par{z-\lambda}\:\!q\apostrophe\Par{z}}.$ \;(ii) $\beta>1.$ Asum true for $\Par{\beta-1}.$\par\quad
+%\Blind{\Or }Let $p{^{\SmallPar{\beta\:\!-\:\!1}}}=\Par{z-\lambda}{^{\alpha\:\!-\:\!\beta\:\!+\:\!1}}\:\!s\Par{z}\Longrightarrow\Sbra{p{^{\SmallPar{\beta\:\!-\:\!1}}}}\apostrophe\Par{z}=\Par{z-\lambda}{^{\alpha\:\!-\:\!\beta}}\Sbra{\Par{\alpha-\beta+1}\:\!s\Par{z}+\Par{z-\lambda}\:\!s\apostrophe\Par{z}}.$\PfEnd
 \SepLine
 
 \Anchor{4O4e13}\ProblemBnoor{4E 13}{
@@ -2987,8 +2989,8 @@ By asum, each $v_j'\in U.$ Thus $v_1,\dots,v_{k-1}\in U.$ So that $v_k=v-v_1-\do
 %----------\Or \Sbra[3pt]{{\tgsl Req Finide}} \;Using induc on $\dim U=N.$ (i) $N=1.$ Immed. (ii) $N>1.$ Asum it holds for smaller $U.$\parSol{}
 \SepLine
 
-\Anchor{5AT4}\BulletPointX\TipsN{4}\,\,\,Supp $T\in\Lm{\RbbP{2}}$ is the countclockws rotat by $\theta\in\Rbb.$ Define $\mC\Par{a,b}=a+\i b.$\TextB{}
-Becs $\Par{{\cos\theta+\i\sin\theta}}\Par{a+\i b}=r\BigPar{{\cos\!\Par{\alpha+\theta}+\i\sin\!\Par{\alpha+\theta}}}.$\vspace{-6pt}\TextB{}
+\Anchor{5AT4}\BulletPointX\TipsN{4}\,\,\,Supp $T\in\Lm{\RbbP{2}}$ is the countclockws rotat by $\theta\in\Rbb.$ Define $\mC\Par{a,b}=a+\i\:\!b.$\TextB{}
+Becs $\Par{{\cos\theta+\i\sin\theta}}\Par{a+\i\:\!b}=r\BigPar{{\cos\!\Par{\alpha+\theta}+\i\sin\!\Par{\alpha+\theta}}}.$\vspace{-6pt}\TextB{}
 Hence $T\Par{a,b}=\BigPar{a\cos\theta-b\sin\theta,\,a\sin\theta+b\cos\theta}.$ \:Now $\Mt{T}={}${\normalsize$\begin{pmatrix}\cos\theta & -\sin\theta\\[-4pt]\sin\theta & \Blind{-}\cos\theta\end{pmatrix}$}.\vspace{4pt}
 \SepLine
 
@@ -3132,12 +3134,12 @@ If $Tv=0$, then $T$ not inje, so are $TR,RT.$ Othws, $\lambda$ is eigval of $TR.
 %\Anchor{5A4e17}\Anchor{5A16}\ProblemB{
 %	\TextB{Supp $\Fbb=\Rbb,$ $T\in\Lm{V}$.}
 %	\Sbra{{\normalsize\Onumber{16} \;\OR [9.16]\,}} \TextB{$\lambda\in\Cbb.$ Prove $\lambda$ is eigval of $T_{\!\Cbb}$ $\Longleftrightarrow$ $\overline \lambda$ is eigval of $T_{\!\Cbb}.$\vspace{1pt}}
-%}Supp $T_{\!\Cbb}\Par{v+\i u}=Tv+\i Tu=\lambda\Par{v+\i u}.$\vspace{2pt}\parSol{}
-%Becs $\overline{T_{\!\Cbb}\Par{v+\i u}}=\overline{Tv+\i Tu}=Tv-\i Tu=T_{\!\Cbb}\Par{v-\i u}=T_{\!\Cbb}\Par{\overline{v+\i u}}.$\vspace{2pt}\parSol{}
-%And $\overline{\lambda\Par{v+\i u}}=\overline\lambda v-\i\overline\lambda u=\overline\lambda\Par{v-\i u}=\overline\lambda\Par{\overline{v+\i u}}.$\PfEnd\vspace{4pt}\parSol{}
-%\Or Supp $\lambda=a+\i b$ is eigval of $T_{\!\Cbb}$ with $v+\i u.$\parSol{}
-%Becs $T_{\!\Cbb}\Par{v+\i u}=\lambda\Par{v+\i u}=\Par{\uline{av-bu}}+\i\Par{\uwave{{au+bv}_{\,\!}}}=\uline{Tv}+\i\uwave{Tu_{\,\!}}.$\vspace{-4pt}\parSol{}
-%Now $T_{\!\Cbb}\Par{\overline{v+\i u}}=Tv-\i Tu=\Par{av-bu}-\i\Par{au+bv}=\Par{a-\i b}\Par{v-\i u}=\overline\lambda\Par{\overline{v+\i u}}.$\PfEnd
+%}Supp $T_{\!\Cbb}\Par{v+\i\:\!u}=Tv+\i\:\!Tu=\lambda\Par{v+\i\:\!u}.$\vspace{2pt}\parSol{}
+%Becs $\overline{T_{\!\Cbb}\Par{v+\i\:\!u}}=\overline{Tv+\i\:\!Tu}=Tv-\i\:\!Tu=T_{\!\Cbb}\Par{v-\i\:\!u}=T_{\!\Cbb}\Par{\overline{v+\i\:\!u}}.$\vspace{2pt}\parSol{}
+%And $\overline{\lambda\Par{v+\i\:\!u}}=\overline\lambda v-\i\overline\lambda u=\overline\lambda\Par{v-\i\:\!u}=\overline\lambda\Par{\overline{v+\i\:\!u}}.$\PfEnd\vspace{4pt}\parSol{}
+%\Or Supp $\lambda=a+\i\:\!b$ is eigval of $T_{\!\Cbb}$ with $v+\i\:\!u.$\parSol{}
+%Becs $T_{\!\Cbb}\Par{v+\i\:\!u}=\lambda\Par{v+\i\:\!u}=\Par{\uline{av-bu}}+\i\Par{\uwave{{au+bv}_{\,\!}}}=\uline{Tv}+\i\uwave{Tu_{\,\!}}.$\vspace{-4pt}\parSol{}
+%Now $T_{\!\Cbb}\Par{\overline{v+\i\:\!u}}=Tv-\i\:\!Tu=\Par{av-bu}-\i\Par{au+bv}=\Par{a-\i\:\!b}\Par{v-\i\:\!u}=\overline\lambda\Par{\overline{v+\i\:\!u}}.$\PfEnd
 %\SepLine
 
 %\ProblemN{\Anchor{5A21}{21}}{
@@ -3362,7 +3364,7 @@ Now $y_1+\dots+y_n=\sum_{j=1}^n x_j\BigSbra{{\sum_{k=1}^n A_{j,k}}}-\lambda\sum_
 %\Anchor{5BI8}\Anchor{5A4e31}\ProblemN{I.8}{
 %	\TextA{Give an exa of $T\in\Lm{\RbbP{2}}$ suth $T^4=-I$.}
 %}Define $\i^n\in\Lm{\RbbP{2}}$ by $\i^n\Par{x,y}=\XPar{\REAL\BigPar{\i^n x+\i^{n+1} y},\,\IMAGINARY\BigPar{\i^n x+\i^{n+1} y}}.$\vspace{0pt}\par\quad
-%$\displaystyle T^4+I=\BigPar{T^2+\i I}\BigPar{T^2-\i I}=\BigPar{T+\i^{1/2}I}\BigPar{T-\i^{1/2}I}\BigBigPar{T-\Par{{-\i}}{^{1/2}}I}\BigBigPar{T+\Par{{-\i}}{^{1/2}}I}.$\vspace{2pt}\par\quad
+%$\displaystyle T^4+I=\BigPar{T^2+\i\:\!I}\BigPar{T^2-\i\:\!I}=\BigPar{T+\i^{1/2}I}\BigPar{T-\i^{1/2}I}\BigBigPar{T-\Par{{-\i}}{^{1/2}}I}\BigBigPar{T+\Par{{-\i}}{^{1/2}}I}.$\vspace{2pt}\par\quad
 %Note that $\i^{1/2}=\frac{\sqrt{2}}{2}+\i\frac{\sqrt{2}}{2},\;\Par[1pt]{{-\i}}{^{1/2}}=\i^{3/2}=-\frac{\sqrt{2}}{2}+\i\frac{\sqrt{2}}{2}.$ \;Hence $T=\pm\Par[1pt]{{\pm\i}}{^{1/2}}I.$\vspace{0pt}\PfEnd\quad
 %\Or Becs $\Mt{T^4}={}$\small$\begin{pmatrix}
 %	\Blind{-}\cos\SmallPar{\!-\!\pi} & \sin\SmallPar{\!-\!\pi}\\
@@ -4175,15 +4177,15 @@ $m_T\Par{z}=\Par{z-\lambda}{^m}$ with $m<\dim V.$\par\quad\Hb
 Then $q\Par{A}=0=\overline{q\Par{A}}=\overline{q}\Par{A}\Rightarrow\overline{q}\Par{T_{\!\Cbb}}=q\Par{T_{\!\Cbb}}=0\Rightarrow q=\overline{q}\Rightarrow q\in\PoRi.$ 又 $q\Par{T}=0.$
 \SepLine
 
-\Anchor{9AN912}\BulletPointX\NoteForSmall{[9.12]}\;\;Another proof: \;$\overline{T_{\!\Cbb}\Par{u+\i v}}=\overline{Tu+\i Tv}=Tu-\i Tv=T_{\!\Cbb}\Par{\overline{u+\i v}}.$\TextB{}
-$\overline{\Par{T_{\!\Cbb}-\lambda I}\Par{u+\i v}}=\overline{T_{\!\Cbb}\Par{u+\i v}-\lambda\Par{u+\i v}}=T_{\!\Cbb}\Par{u-\i v}-\overline{\lambda}\Par{u-\i v}=\Par{T_{\!\Cbb}-\overline{\lambda}I}\Par{\overline{u+\i v}}.$\TextB{}
-We use induc on $m$ to show $\overline{\Par{T_{\!\Cbb}-\lambda I}{^m}\Par{u+\i v}}=\Par{T_{\!\Cbb}-\overline{\lambda}I}{^m}\Par{\overline{u+\i v}}.$ (i) Immed. (ii) $m>1.$\TextB{}
-Asum it holds for $\Par{m-1}.$ Let $\Par{T_{\!\Cbb}-\lambda I}{^{m-1}}\Par{u+\i v}=x+\i y\Rightarrow\Par{T_{\!\Cbb}-\overline{\lambda}I}{^{m-1}}\Par{\overline{u+\i v}}=x-\i y.$\TextB{}
-Then $\overline{\Par{T_{\!\Cbb}-\lambda I}{^m}\Par{u+\i v}}=\overline{\Par{T_{\!\Cbb}-\lambda I}\Par{x+\i y}}=\Par{T_{\!\Cbb}-\overline{\lambda}I}\Par{x-\i y}=\Par{T_{\!\Cbb}-\overline{\lambda}I}{^m}\Par{\overline{u+\i v}}.$\PfEnd\vspace{3pt}
+\Anchor{9AN912}\BulletPointX\NoteForSmall{[9.12]}\;\;Another proof: \;$\overline{T_{\!\Cbb}\Par{u+\i\:\!v}}=\overline{Tu+\i\:\!Tv}=Tu-\i\:\!Tv=T_{\!\Cbb}\Par{\overline{u+\i\:\!v}}.$\TextB{}
+$\overline{\Par{T_{\!\Cbb}-\lambda I}\Par{u+\i\:\!v}}=\overline{T_{\!\Cbb}\Par{u+\i\:\!v}-\lambda\Par{u+\i\:\!v}}=T_{\!\Cbb}\Par{u-\i\:\!v}-\overline{\lambda}\Par{u-\i\:\!v}=\Par{T_{\!\Cbb}-\overline{\lambda}I}\Par{\overline{u+\i\:\!v}}.$\TextB{}
+We use induc on $m$ to show $\overline{\Par{T_{\!\Cbb}-\lambda I}{^m}\Par{u+\i\:\!v}}=\Par{T_{\!\Cbb}-\overline{\lambda}I}{^m}\Par{\overline{u+\i\:\!v}}.$ (i) Immed. (ii) $m>1.$\TextB{}
+Asum it holds for $\Par{m-1}.$ Let $\Par{T_{\!\Cbb}-\lambda I}{^{m-1}}\Par{u+\i\:\!v}=x+\i\:\!y\Rightarrow\Par{T_{\!\Cbb}-\overline{\lambda}I}{^{m-1}}\Par{\overline{u+\i\:\!v}}=x-\i\:\!y.$\TextB{}
+Then $\overline{\Par{T_{\!\Cbb}-\lambda I}{^m}\Par{u+\i\:\!v}}=\overline{\Par{T_{\!\Cbb}-\lambda I}\Par{x+\i\:\!y}}=\Par{T_{\!\Cbb}-\overline{\lambda}I}\Par{x-\i\:\!y}=\Par{T_{\!\Cbb}-\overline{\lambda}I}{^m}\Par{\overline{u+\i\:\!v}}.$\PfEnd\vspace{3pt}
 \Anchor{9AN917}\BulletPointX\NoteForSmall{[9.17]}\;\;Detailed proof:\TextB{}
-Let $B=\Par{u_1+\i v_1,\dots,u_m+\i v_m}$ be a bss of $G\Par{\lambda,T_{\!\Cbb}}.$ By [9.12], $\overline{B}=\Par{u_1-\i v_1,\dots,u_m-\i v_m}$ in $G\Par{\overline{\lambda},T_{\!\Cbb}}.$\TextB{}
-(a) If $a_1\Par{u_1-\i v_1}+\dots+a_m\Par{u_m-\i v_m}=0.$ Conjuging, now each $\overline{a_k}=0.$ Liney indep.\TextB{}
-(b) $\forall u-\i v\in G\Par{\overline{\lambda},T_{\!\Cbb}},u+\i v\in G\Par{\lambda,T_{\!\Cbb}}\Rightarrow u+\i v\in\spn B\Rightarrow u-\i v\in\spn\overline{B}.$\PfEnd
+Let $B=\Par{u_1+\i\:\!v_1,\dots,u_m+\i\:\!v_m}$ be a bss of $G\Par{\lambda,T_{\!\Cbb}}.$ By [9.12], $\overline{B}=\Par{u_1-\i\:\!v_1,\dots,u_m-\i\:\!v_m}$ in $G\Par{\overline{\lambda},T_{\!\Cbb}}.$\TextB{}
+(a) If $a_1\Par{u_1-\i\:\!v_1}+\dots+a_m\Par{u_m-\i\:\!v_m}=0.$ Conjuging, now each $\overline{a_k}=0.$ Liney indep.\TextB{}
+(b) $\forall u-\i\:\!v\in G\Par{\overline{\lambda},T_{\!\Cbb}},u+\i\:\!v\in G\Par{\lambda,T_{\!\Cbb}}\Rightarrow u+\i\:\!v\in\spn B\Rightarrow u-\i\:\!v\in\spn\overline{B}.$\PfEnd
 \SepLine
 
 \Anchor{9A13}\ProblemN{13}{
@@ -4195,7 +4197,7 @@ Let $B=\Par{u_1+\i v_1,\dots,u_m+\i v_m}$ be a bss of $G\Par{\lambda,T_{\!\Cbb}}
 (b) The expo of $q$ in the factoriz of $m_T$ is the smallest $m\in\Nbp$ suth $q\Par{T}{^m}\Big|{_{\:\!Q\SmallPar{\:\!\lambda,\,T\:\!}}}=0.$\vspace{1pt}\parNot
 (c) $m_T=p_1^{\alpha_1}\!\cdots p_m^{\alpha_m}\:q_1^{\beta_1}\!\cdots q_M^{\beta_M}\Longleftrightarrow V=\Sbra{{\bigoplus_{j=1}^mG\Par{\mu_j,T}}}\oplus\Sbra{{\bigoplus_{k=1}^MQ\Par{\lambda_k,T}}}.$\vspace{1pt}\parNot\Hc
 Where each $p_j\Par{z}=z-\mu_j,\,q_k\Par{z}=z^2-2\Par{\Real\lambda_k}z+\aMidsq{\lambda_k}=z^2+b_kz+c_k.$\vspace{4pt}\parNot
-Fix one $k.$ Let $q\Par{z}=q_k\Par{z}=\Par{z-\lambda}\Par{z-\overline{\lambda}},\lambda=a+b\i,G=G\Par{\lambda,T_{\!\Cbb}},\overline{G}=G\Par{\overline{\lambda},T_{\!\Cbb}}.$\vspace{1pt}\parNot
+Fix one $k.$ Let $q\Par{z}=q_k\Par{z}=\Par{z-\lambda}\Par{z-\overline{\lambda}},\lambda=a+b\:\!\i,G=G\Par{\lambda,T_{\!\Cbb}},\overline{G}=G\Par{\overline{\lambda},T_{\!\Cbb}}.$\vspace{1pt}\parNot
 Replace $T$ with $T\mmid_{\:\!Q}.$ Let $Q=Q\Par{\lambda,T}$ of dim $\beta,$ and $Q_\Cbb=G\oplus\overline{G},$ and Jordan bss $B_J$ of $Q_\Cbb.$\vspace{2pt}\parNot
 Now $\Mt{T_{\!\Cbb}}=\footnotesize\begin{pmatrix}A_1 &\hspace{-8pt} 0\\[-4pt]0 &\hspace{-8pt} A_2\end{pmatrix},\Mt{T_{\!\Cbb}-\lambda I}=\footnotesize\begin{pmatrix}\overline{R_1} &\hspace{-8pt} 0\\[-2pt]0 &\hspace{-8pt}\overline{R_2}\end{pmatrix},\,\Mt{T_{\!\Cbb}-\overline{\lambda}I}=\footnotesize\begin{pmatrix}{R_2} &\hspace{-8pt} 0\\[-4pt]0 &\hspace{-8pt} R_1\end{pmatrix}$ wrto Jordan bss.\vspace{2pt}\parNot
 So then $\Mt{T_{\!\Cbb}^2+bT_{\!\Cbb}+cI}=\Mt{T_{\!\Cbb}-\lambda I}\Mt{\overline{T_{\!\Cbb}-{\lambda}I}}=\footnotesize\begin{pmatrix}{R} &\hspace{-8pt} 0\\[-4pt]0 &\hspace{-8pt} \overline{R}\end{pmatrix},$ where $R=R_1R_2.$\parNot

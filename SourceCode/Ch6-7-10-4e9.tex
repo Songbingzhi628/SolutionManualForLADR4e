@@ -138,22 +138,21 @@ Apply [6.31]. Now $v_j\in\Span{v_1,\dots,v_{j-1}}=\Span{e_1,\dots,e_{j-1}}\Right
 \SepLine
 
 \Anchor{6BT}\BulletPointX\Tips \,\,\,Supp $\Par{v_1,\dots,v_m}$ liney indep in $V.$ Get the corres orthon $\Par{e_1,\dots,e_m}$ via [6.31].\TextB{}
-{\IndentTips}Let $S=\Bra{\lambda\in\Fbb:\aMid{\lambda}=1},$ and $S^m$ be the collec of maps $\Bra{1,\dots,m}\rightarrow S.$\TextB{}
-{\IndentTips}Supp orthon $\Par{u_1,\dots,u_m}$ suth each $\Span{u_1,\dots,u_k}=\Span{v_1,\dots,v_k}.$\vspace{1pt}\TextB{}
-{\IndentTips}We show it equals $\BigBigPar{c\Par{1}e_1,\dots,c\Par{m}e_m}$ for some $c\in S^m$ by induc on $k.$\vspace{1pt}\TextB{}
-{\IndentTips}(i) $k=1.$ $\Span{e_1}=\Span{u_1}\Rightarrow u_1=\Ang{u_1,\,e_1}\,e_1,$ 又 $\innerA{u_1,\,e_1}=1.$ Let $c\Par{1}=\Ang{u_1,\,e_1}.$\vspace{1pt}\TextB{}
-{\IndentTips}(ii) $k>1.$ Asum each $\aXMid{c\Par{i}}=1$ and $c\Par{i}e_i=u_i$ for $i\in\;\!\!\Bra{1,\dots,k-1}.$\vspace{1pt}\TextB{}
-{\IndentTips\Hii}$u_k=\Ang{u_k,\:\!e_1}\:\!e_1+\dots+\Ang{u_k,\:\!e_k}\:\!e_k.$ 又 $\Ang{u_j,u_k}=0=c\Par{j}\Ang{e_j,u_k}$ for $j\neq k.$ \,Simlr, $c\Par{k}=\Ang{u_k,\,e_k}.$
+{\IndentTips}Let $S=\Bra{\lambda\in\Fbb:\aMid{\lambda}=1}.$ \,Supp orthon $\Par{u_1,\dots,u_m}$ suth each $\Span{u_1,\dots,u_k}=\Span{v_1,\dots,v_k}.$\vspace{1pt}\TextB{}
+{\IndentTips}We show it equals $\Par{c_1\:\!e_1,\dots,c_m\:\!e_m}$ for some $\Par{c_1,\dots,c_m}\in S^m$ by induc on $k.$\vspace{1pt}\TextB{}
+{\IndentTips}(i) $k=1.$ $\Span{e_1}=\Span{u_1}\Rightarrow u_1=\Ang{u_1,\:\!e_1}\,e_1,$ 又 $\innerA{u_1,\:\!e_1}=1.$ Let $c_1=\Ang{u_1,\:\!e_1}.$\vspace{1pt}\TextB{}
+{\IndentTips}(ii) $k>1.$ Asum each $\aMid{c_i}=1$ and $c_i\;\!e_i=u_i$ for $i\in\;\!\!\Bra{1,\dots,k-1}.$\vspace{1pt}\TextB{}
+{\IndentTips\Hii}Becs $u_k=\Ang{u_k,\:\!e_1}\:\!e_1+\dots+\Ang{u_k,\:\!e_k}\:\!e_k.$ 又 $\Ang{u_i,u_k}=0=c_i\;\!\Ang{e_i,u_k}.$ \,Simlr, $c_k=\Ang{u_k,\:\!e_k}.$\PfEnd
 \SepLine
 
 \Anchor{6B4e10}\ProblemBnoor{4E 10}{
 	\TextB{Supp $\Par{v_1,\dots,v_m}$ liney indep. Explain why the
 	orthon list produced by [6.31]}
 	\TextB{is the only orthon $\Par{e_1,\dots,e_m}$ suth each $\Ang{v_k,\;\!e_k}>0$ and $\Span{v_1,\dots,v_k}=\Span{e_1,\dots,e_k}.$}
-}Fix one $k.$ Let \,$v_k=a_1e_1+\dots+a_ke_k\Rightarrow$ each $a_j=\Ang{v_k,\;\!e_j}.$ Let \,$f_k=v_k-a_1\:\!e_1-\dots-a_{k-1}\:\!e_{k-1}.$\vspace{1pt}\parSol{}
-\NOTICE that $\,e_k=f_k\Big/\;\!\!a_k\Rightarrow\Dvertsq{\,f_k}\!\Big/\aMidsq{a_k}=1\Rightarrow\aMid{a_k}=\Dvert{\,f_k}.$ 又 $a_k=\Ang{v_k,\;\!e_k}>0\Rightarrow a_k=\Dvert{\,f_k}.$\PfEnd\vspace{4pt}\parSol{}
-\Or Let $\Par{e_1,\dots,e_m}$ be suth orthon list. \,Get $\Par{e_1',\dots,e_m'}$ from $\Par{v_1,\dots,v_m}$ via [6.31].\vspace{1pt}\parSol{}
-By \TIPS, each $e_k=c\Par{k}e_k',$ 又 $\Ang{v_k,\,e_k},\,\Ang{v_k,\,e_k'}>0\Rightarrow 0<c\Par{k}=1.$\PfEnd
+}Supp such orthon $B_1=\Par{e_1,\dots,e_m}.$ Apply [6.31] to get $B_2=\Par{u_1,\dots,u_m}.$ We show $B_1=B_2.$\parSol{}
+(i) $k=1.$ Immed. \,(ii) $k>1.$ Asum true for smaller $k.$\parSol{}
+Let \,$v_k=a_1e_1+\dots+a_ke_k\Rightarrow$ each $a_j=\Ang{v_k,\;\!e_j}.$ Let \,$f_k=v_k-a_1\:\!e_1-\dots-a_{k-1}\:\!e_{k-1}.$\vspace{1pt}\parSol{}
+Becs $e_k=\;\!f_k\Big/\;\!\!a_k\Rightarrow\Dvertsq{\,f_k}\!\Big/\aMidsq{a_k}=1\Rightarrow\aMid{a_k}=\Dvert{\,f_k}.$ 又 $a_k=\Ang{v_k,\;\!e_k}>0\Rightarrow a_k=\Dvert{\,f_k}.$\PfEnd
 \SepLine
 
 \Anchor{6B10}\ProblemN{10}{
