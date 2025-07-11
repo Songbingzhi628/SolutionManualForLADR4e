@@ -1747,7 +1747,7 @@ $\range\psi\varphi=\Bra{X\in\Lm{\FbbP{n,1},\range A}:X\mmid_{\null A^T}=0}$ of d
 	\TextA{Supp $V$ is finide and non0 $S\in\Lm{V}$ suth $\forall T\in\Lm{V},ST=TS$. Prove $\exists\,\lambda\in\Fbb,S=\lambda I$.}
 }Let $B_{\range S}=\Par{w_1,\dots,w_m}$ with each $w_i=Sv_i.$\parSol{}
 Let $B_{\null T}=\Par{v_{m+1},\dots,v_n}.$ Let $B_1=\Par{v_1,\dots,v_n},\,B_2=\Par{w_1,\dots,w_n}.$\parSol{}
-{\vspace{2pt}Let {$S=E_{1,1}+\dots+E_{m,m}\Rightarrow \Mt{S,B_1,B_2}=\Mt{I,B_{\range S},B_2}.$} Note that $R_{k,1}:w_x\mapsto\delta_{k,x}v_1.$}\parSol{}
+{\vspace{2pt}Let {$S=E_{1,1}+\dots+E_{m,m}\Rightarrow \Mt{S,B_1,B_2}=\Mt{P_{\!\!\;\!\range S},B_2,B_2}.$} Note that $R_{k,1}:w_x\mapsto\delta_{k,x}v_1.$}\parSol{}
 {\vspace{2pt}Then $\forall k\in\;\!\!\Bra{1,\dots,n},$ {\FontLarge$0\neq SR_{k,1}=R_{k,1}S.$} Hence $\dim\null S=0,\;\dim\range S=m=n.$}\parSol{}
 \vspace{2pt}\NOTICE that {\FontLarge$G_{i,\:\!j}=R_{i,\:\!j}S=SR_{i,\:\!j}=Q_{i,\:\!j}$}. 又 For each $w_i,\exists\,!\,a_{k,\:\!i}\in\Fbb,w_i=a_{1,\:\!i}v_1+\dots+a_{n,\:\!i}v_n.$\parSol{}
 Then fix one $i.$ Now for each $j\in\;\!\!\Bra{1,\dots,n},Q_{i,\:\!j}\Par{w_i}=w_j=a_{i,\:\!i}v_j=G_{i,\:\!j}\BigBigPar{{\sum_{k=1}^na_{k,\:\!i} v_k}}.$\parSol{}
@@ -2040,19 +2040,26 @@ For $u_x\in U_X,\;u_x+W=0\Longleftrightarrow u_x\in U_X\cap W\Longleftrightarrow
 
 \vspace{4pt}
 
+\ProblemB{
+	\TextB{Supp $V=U_1\oplus\cdots\oplus U_m,$ and each $V_{\!k}=\bigoplus_{i\,\in\,\Gamma_{\!k}}\!U_i,$ where $\Gamma_{\!k}=\Bra{1,\dots,n}\Backslash[\Big]\Bra{k}.$\vspace{2pt}}
+	\TextB{Prove $V\apostrophe=V_{\!1}^0\oplus\cdots\oplus V_{\!m}^0$\FontSmall${}=\BigSbra{{\bigcap_{k=1}^n\!\Sbra{{\bigoplus_{i\,\in\,\Gamma_{\!k}}\!U_i}}}}{^0}=\bigoplus_{k=1}^n\!\Sbra{{\bigcap_{i\,\in\,\Gamma_{\!k}}\!U_i^0}}.$ See the {\COROLLARY} after Exe (23).\PfEnd\vspace{2pt}}
+}Supp $\varphi\in V\apostrophe.$ \,Define each $\varphi_k\in V_{\!k}^0$ by $\varphi_k\Par{u_k}=\varphi\Par{u_k}$ for all $u_k\in U_k.$ Then $\varphi=\varphi_1+\dots+\varphi_m.$\vspace{2pt}\parSol{}
+We use induc by $k$ on $m$ to show the directness of sum. (i) $k=2.$ $\psi\in V_{\!1}^0\cap V_{\!2}^0\Rightarrow\psi=0.$\parSol{}
+(ii) $k>2.$ Asum it holds for smaller $k.$ \,Then $\psi\in\BigPar{V_{\!1}^0\oplus\cdots\oplus V_{\!{k-1}}^0}\bigcap V_{\!k}^0\Rightarrow\psi=0.$\PfEnd
+\SepLine
+
 \ProblemN{\Anchor{3F4}{4}}{
 	\TextA{Supp $U$ is a subsp of $V\neq U.$ Prove $U^0\neq\zeroSubs.$\vspace{1pt}}
 }Let $X\oplus U=V\Rightarrow X\neq\zeroSubs.$ Supp $s\in X\nonzero.$ Let $Y\oplus\Span{s}=X.$\parSol{}
-Define $\varphi\in V\apostrophe$ by $\varphi\Par{u+\lambda s+y}=\lambda.$ Hence $\varphi\neq 0$ and $\varphi\Par{u}=0$ for all $u\in U.$\PfEnd\parSol{\vspace{4pt}}
+Define $\varphi\in V\apostrophe$ by $\varphi\Par{u+\lambda s+y}=\lambda.$ Hence $\varphi\neq 0$ and $\varphi\Par{u}=0$ for all $u\in U.$\PfEnd\parSol{\vspace{3pt}}
 \Or \Sbra[3pt]{{\tgsl Req $V$ Finide}} \;By [3.106], $\dim U^0=\dim V-\dim U>0.$\parSol{}
 \Blind{\Or }\Or Let $B_U=\Par{u_1,\dots,u_m},B_V=\Par{u_1,\dots,u_m,v_1\dots,v_n}$ with $n\geqslant 1.$\parSol{}
-\Blind{\Or}Let $B_{V\apostrophe}=\Par{\psi_1,\dots,\psi_m,\varphi_1,\dots,\varphi_n}.$ Then each $\varphi\in\Span{\varphi_1,\dots,\varphi_n}$ will do.\PfEnd\vspace{4pt}\Anchor{3F19}
+\Blind{\Or}Let $B_{V\apostrophe}=\Par{\psi_1,\dots,\psi_m,\varphi_1,\dots,\varphi_n}.$ Then each $\varphi\in\Span{\varphi_1,\dots,\varphi_n}$ will do.\PfEnd\vspace{7pt}\Anchor{3F19}
 \ACoro \ProblemN[]{19}{
 	\TextA{\tgnr $U^0=\zeroSubs=V^0\Longleftrightarrow U=V$.\vspace{0pt}}
 }\par
-\Anchor{3FN3.108}\AComm {\tgsc\large Another proof of \tgbfx[3.108]}: $T$ is surj $\Longleftrightarrow T\apostrophe$ is inje.\parCom
-(a) Supp $T\apostrophe$ is inje. \NOTICE that $\psi\neq 0\Longleftrightarrow T\apostrophe\Par{\psi}\neq 0\Longleftrightarrow\psi\not\in\Par{\range T}{^0}.$\parCom
-(b) $T$ is surj $\Rightarrow\Par{\range T}{^0}=\zeroSubs=\null T\apostrophe.$\PfEnd
+\AComm\Anchor{3FN3.108}{\tgsc\large Another proof of \tgbfx[3.108]}: $T$ is surj $\Longleftrightarrow T\apostrophe$ is inje.\par
+Supp $T\apostrophe$ inje. Becs $\psi\neq 0\Longleftrightarrow T\apostrophe\Par{\psi}\neq 0\Longleftrightarrow\psi\not\in\Par{\range T}{^0}.$ \;又 $T$ surj $\Rightarrow\Par{\range T}{^0}=\zeroSubs=\null T\apostrophe.$\PfEnd
 \SepLine
 
 \Anchor{3FN3.102}\Anchor{3FN18}\Anchor{3F18}\BulletPointX\NoteForSmall{[3.102] and Exe (18)}\;\;For $U=\emptySet,\;U^0=\Bra{\varphi\in V\apostrophe:U\subseteq\null\varphi}=V\apostrophe.$ While $\zeroSubs{^0_V}=V\apostrophe.$\TextB{}
@@ -2159,9 +2166,10 @@ Thus $\Par{\Lambda_2\circ\chi\apostrophe\circ\xi\circ\Lambda_1}$ is the surj $\L
 \AExa Not true if $U$ or $W$ is merely a subset. Let $V=\FbbP{2},U=\Span{e_1},W=\Bra{\Par{1,1},\Par{0,1}}.$
 \SepLine[-3pt]
 
-\ProblemBX[]{\ACoro}{
-	{$V=U\oplus W\Longleftrightarrow V\apostrophe=U^0\oplus W^0.$}\vspace{-5pt}\TextB{}
-}\SepLine
+\BulletPointX\ACoro
+%{$\Par{U_1+\cdots+U_m}{^0}=U_1^0\cap\cdots\cap U_m^0,$ \,and\;$\Par{U_1\cap\cdots\cap U_m}{^0}=U_1^0+\cdots+U_m^0.$}\parCor{\IndentB}
+{$V=U_1\oplus\cdots\oplus U_m\Longleftrightarrow V\apostrophe=U_1^0\oplus\cdots\oplus U_m^0.$}\vspace{-2pt}
+\SepLine
 
 \Anchor{3F'2}\ProblemB{
 	\TextB{Supp $V=U\oplus W$. Define $\iota:V\rightarrow U$ by $\iota\Par{u+w}=u.$ Thus $\iota\apostrophe\in\Lm{U\apostrophe,V\apostrophe}.$\vspace{2pt}}
@@ -2277,14 +2285,11 @@ $\forall\varPhi\in\BigPar{\null T}{^0},$ let $\psi=\varPhi\circ R,$ then $T\apos
 %	\TextA{{\large\tgnr Note that $I_{V}\upapostrophe,I_{V\apostrophe}:V\apostrophe\rightarrow V\apostrophe.$} \,For $\varphi\in V\apostrophe,\:I_{V\apostrophe}\Par{\varphi}=\varphi=\varphi\circ I_V=I_V\upapostrophe\Par{\varphi}.$ Thus $I_{V\apostrophe}=I_V\upapostrophe.$}
 %}\SepLine
 
-\ProblemN{\Anchor{3F15}{15}}{
-	\TextA{Supp $T\in\Lm{V,W}$. Prove $T\apostrophe=0\Rightarrow T=0.$ \hfill\tgnr\FontNorm\ACoro If $V,W$ finide, then $\Gamma:T\mapsto T\apostrophe$ is iso.}
-}Supp $T\apostrophe=0.$ Then $\null T\apostrophe=\zeroSubs=\Par{\range T}{^0}.$\PfEnd\parSol{}
-\Or By Exe (25), $\range T=\Bra{w\in W:\varphi\Par{w}=0,\forall\varphi\in\Par{\range T}{^0}=\null T\apostrophe=W\apostrophe}=\zeroSubs.$
-%Asum $w\neq 0$ suth $\forall\varphi\in W\apostrophe,\varphi\Par{w}=0.$ Let $U\oplus\Span{w}=W.$ \parSol{}
-%Define $\psi\in W\apostrophe$ by $\psi\Par{u+\lambda w}=\lambda\Rightarrow\psi\Par{w}\neq 0.$ Ctradic. Now $\range T=\zeroSubs.$
-\PfEnd
-\SepLine
+%\ProblemN{\Anchor{3F15}{15}}{
+%	\TextA{Supp $T\in\Lm{V,W}$. Prove $T\apostrophe=0\Rightarrow T=0.$ \hfill\tgnr\FontNorm\ACoro If $V,W$ finide, then $\Gamma:T\mapsto T\apostrophe$ is iso.}
+%}Becs $\null T\apostrophe=\zeroSubs=\Par{\range T}{^0}.$ By Exe (19) \Or (25).\PfEnd
+%%\Or By Exe (25), $\range T=\Bra{w\in W:\varphi\Par{w}=0,\forall\varphi\in\Par{\range T}{^0}=\null T\apostrophe=W\apostrophe}=\zeroSubs.$
+%\SepLine
 
 \BulletPointX{\FontSmall Let $B_V=\Par{v_1,\dots,v_n},B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_n},B_W=\Par{w_1,\dots,w_m},B_{W\apostrophe}=\Par{\psi_1,\dots,\psi_m}.$}\par
 \Anchor{3FT4}\BulletPointX\TipsN{4}\,\,\,Define $\Phi\in\Lm{V\apostrophe,V}:\varphi_k\mapsto v_k;\;\Psi\in\Lm{W,W\apostrophe}:w_j\mapsto\psi_j.$\TextB{}
@@ -2717,12 +2722,12 @@ Inje: Each $\,f\Par{x_k}=0\Rightarrow f+U=0.$ \; Surj: Immed.\PfEnd
 \SepLine
 
 \Anchor{3F7}\ProblemBnoor{3.F.7}{
-	\TextA{Show the dual bss of $\Par{1, x,\dots,x^m}$ of $\PoR{m}$ is $\Par{\varphi_0,\varphi_1,\dots,\varphi_m}$, where {\FontNorm $\varphi_k\Par{p}=\Frac{p^{\SmallPar{k}}\Par{0}}{k!}$.}}
+	\TextA{Show the dual bss of $\Par{1, x,\dots,x^m}$ of $\PoR{m}$ is $\Par{\varphi_0,\varphi_1,\dots,\varphi_m}$, where {\FontNorm $\varphi_k\Par{p}=\Frac{\;p^{\SmallPar{k}}\Par{0}\;}{k!}$.}}
 %	\TextB{{\FontNorm Here $p{^{\SmallPar{k}}}$ denotes the $k^{th}$ deri of $p$, with the understanding that the $0^{th}$ deri of $p$ is $p$.}\vspace{-2pt}}
 }{\tgsl\normalsize The uniqnes of dual bss is guaranteed by [3.5].}\vspace{2pt}\parSol{}
 For $j,k\in\Nbb,\:\Par{x^{j}}{^{\SmallPar{k}}}=\left\{\begin{array}{l}j\Par{j-1}\cdots\Par{j-k+1}\cdot x^{\SmallPar{j-k}}\,,\quad j \geqslant k.\\j\Par{j-1}\cdots\Par{j-j+1}=j!\hfill j=k.\\0,\hfill j \leqslant k.\end{array}\right|\hspace{4pt}\Rightarrow\Par{x^{j}}{^{\SmallPar{k}}}\Par{0}=\MathLeftBrace{l}{0\,\,\,,\,\hspace{5.2pt}j\neq k. \\ k!\,\,,\hspace{6pt}j=k.}$\PfEnd\vspace{8pt}\Anchor{3F8}
 %{\Large$\envFontSmall[\footnotesize]\frac{p^{\SmallPar[0pt]{k}}\Par[0pt]{0}}{k!}$}
-\AExa By [2.C.10], $B_m=\BigBigPar{1,7x-5,\dots,\Par{7x-5}{^m}}$ is a bss of $\PoR{m}$. Let each $\varphi_k={}${\Large\envFontSmall[\footnotesize]$\frac{p^{\SmallPar{k}}\Par{5\text{\large/}\hspace{0.5pt}7}}{7\hspace{1pt}\cdot\,k!}$}.\par\vspace{2pt}
+\AExa By [2.C.10], $B_m=\BigBigPar{1,7x-5,\dots,\Par{7x-5}{^m}}$ is a bss of $\PoR{m}$. Let each $\varphi_k={}${\Large\envFontSmall[\footnotesize]$\frac{\;p^{\SmallPar{k}}\Par{5\text{\large/}\hspace{0.5pt}7}\;}{7^k\hspace{1pt}\cdot\,k!}$}.\par\vspace{2pt}
 \SepLine
 \ChEnd\pagebreak
 
@@ -3768,12 +3773,12 @@ Define $p\Par{z}=\Par{z-\lambda_1}\cdots\Par{z-\lambda_m}.$ Then $\Sbra{p\Par{T}
 %}Let $B_V=\Par{v_1,\dots,v_n}.$ Define each $E_{j,k}\in\Lm{V}:v_x\mapsto\delta_{j,x}v_k\Rightarrow$ [5.41](c) true.\PfEnd
 %\SepLine
 
-\Anchor{5C'2}\ProblemB{
-	\TextB{Supp $S,T\in\Lm{V}$ diag and have the same eigvals. Prove $\exists$ inv $E\in\Lm{V},\:S=E^{-1}TE.$}
-}Let $\;\!\alpha_1,\dots,\alpha_n$ be eigvals of $S,T$ wrto $B_1=\Par{v_1,\dots,v_n},\,B_2=\Par{u_1,\dots,u_n}$ respectly.\parSol{}
-Define $E\Par{v_k}=u_k\Rightarrow Sv_k=\alpha_kv_k=E^{-1}\Par{\alpha_ku_k}=E^{-1}TEv_k,$ whether $\alpha_k=0$ or not.\PfEnd
-\AComm eigvals are disti $\Longleftrightarrow$ the exis of such $E$ is uniq.
-\SepLine
+%\Anchor{5C'2}\ProblemB{
+%	\TextB{Supp $S,T\in\Lm{V}$ diag and have the same eigvals. Prove $\exists$ inv $E\in\Lm{V},\:S=E^{-1}TE.$}
+%}Let $\;\!\alpha_1,\dots,\alpha_n$ be eigvals of $S,T$ wrto $B_1=\Par{v_1,\dots,v_n},\,B_2=\Par{u_1,\dots,u_n}$ respectly.\parSol{}
+%Define $E\Par{v_k}=u_k\Rightarrow Sv_k=\alpha_kv_k=E^{-1}\Par{\alpha_ku_k}=E^{-1}TEv_k,$ whether $\alpha_k=0$ or not.\PfEnd
+%\AComm eigvals are disti $\Longleftrightarrow$ the exis of such $E$ is uniq.
+%\SepLine
 
 \Anchor{5C4e18}\ProblemN{18}{
 	\TextA{Supp $T\in\Lm{V}$ is diag. Prove $T\XSlash U\in\Lm{V\XSlash U}$ is diag for any $U$ invarspd $T.$}
