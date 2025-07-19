@@ -77,7 +77,7 @@ Let $a=-\Ang{u,v}\Rightarrow2\:\!\innerA{u,v}{^2}\leqslant\innerA{u,v}{^2}\,\Dve
 %\SepLine
 
 \Anchor{6AT2}\ProblemBX{\TipsN{2}}{
-	\TextB{Supp $A\in\FbbP{m,n}.$ Prove $\Dvertsq{Ax}\leqslant\sum_{j=1}^m\sum_{k=1}^n\aMidsq{A_{j,\;\!k}}\cdot\Dvertsq{x}$ for all $x\in\FbbP{m,1}.$\vspace{2pt}}
+	\TextB{Supp $A\in\FbbP{m,\;\!n}.$ Prove $\Dvertsq{Ax}\leqslant\sum_{j=1}^m\sum_{k=1}^n\aMidsq{A_{j,\;\!k}}\cdot\Dvertsq{x}$ for all $x\in\FbbP{m,1}.$\vspace{2pt}}
 }$\Dvertsq{Ax}=\Dvertsq{A_{\cdot,1}x_1+\dots+A_{\cdot,n}x_n}=\sum_{j=1}^m\aMidsq{x_1A_{j,1}+\dots+x_nA_{j,\;\!n}}\leqslant\sum_{j=1}^m\Dvertsq{A_{j,\cdot}}\cdot\Dvertsq{x}.$\PfEnd
 \SepLine
 
@@ -210,7 +210,7 @@ Then $\varphi_k\Par{v_j}=\delta_{j,\;\!k}=\Ang{v_j,u_k}.$ \;Now let \,$a_1u_1+\d
 Using Euclid inner prod $\Ang{\cdot,\cdot}$ and the corres norm $\Dvert{{\cdot}}$ on $\CbbP{n,1}$ id with $\CbbP{n}.$\parSol{}
 Supp $A=\Mt{T}$ up-trig wrto orthon $B_V=\Par{e_1,\dots,e_n}.$\parSol{}
 Then $\forall v=x_1e_1+\dots+x_ne_n\in V,\Dvert{v}{_V}=\Dvert{x}.$ Now we show $\Dvert{A^mx}\leqslant\epsilon\Dvert{x}$ for all $x\in\CbbP{n,1}.$\parSol{}
-Define $D,N\in\CbbP{n,n}$ by $D_{j,\;\!k}=\delta_{j,\:\!k}A_{j,\;\!k},\:N=A-D.$ Then $N$ is nilp with $N^p=0\neq N^{p-1}.$\parSol{}
+Define $D,N\in\CbbP{n,\;\!n}$ by $D_{j,\;\!k}=\delta_{j,\:\!k}A_{j,\;\!k},\:N=A-D.$ Then $N$ is nilp with $N^p=0\neq N^{p-1}.$\parSol{}
 Let $\rho=\max\!\Bra{\aMid{D_{1,1}},\dots,\aMid{D_{n,n}}}\Rightarrow0\leqslant\rho<1,$ and each $\Dvert{D^{\,k}x}\leqslant\rho^{\,k}\Dvert{x}\leqslant\Dvert{x}.$\vspace{3pt}\parSol{}
 Let $M=\sum_{j=1}^n\sum_{k=1}^n\aMidsq{N_{j,\;\!k}}.$ \,{By \Sbra{6.A \TIPSN{2}}}, $\Dvert{Nx}\leqslant M\Dvert{x}\Rightarrow\Dvert{N^{k}x}\leqslant M^k\Dvert{x}.$\vspace{5pt}\parSol{}
 Hence $\Dvert{A^{p+q}x}=\BigDvert{b_0D^{\,p+q}x+\dots+b_kD^{\,p+q-k}N^{k}x+\dots+b_{p-1}D^{\,q+1}N^{p-1}x}$\vspace{3pt}\parSol{}
@@ -394,7 +394,7 @@ Let $B_V=\Par{e_1,\dots,e_n}$ be orthon eigvecs. Then $B_{U^\perp}=\Par{e_{m+1},
 (b) $\forall u,v\in U,\:\BigAng{v,\Par{T\mmid_U}{^*}u}=\BigAng{T\mmid_U v,u}=\BigAng{v,T^*\mmid_U u}\Rightarrow\Sbra{\Par{T\mmid_U}{^*}-\Par{T^*\mmid_U}}\Par{u}\in U\cap U^\perp.$\vspace{2pt}\parSol{}
 (c) $\forall u\in U,\:\BigDvert{T\mmid_U u}=\BigDvert{T^*\mmid_U u}=\BigDvert{\Par{T\mmid_U}{^*}u}.$ \;\Or $\Par{T\mmid_U}\Par{T\mmid_U}{^*}=T^*T\mmid_U=T^*\mmid_UT\mmid_U.$\PfEnd\vspace{3pt}
 %\Or Let orthon $B_U=\Par{e_1,\dots,e_m}\Rightarrow B_V=\Par{e_1,\dots,e_n}\Rightarrow B_{U^\perp}=\Par{e_{m+1},\dots,e_n}.$ Let $A=\Mt{T,B_V}.$\parSol{}
-%Let $A$ be block matrix {\small$\begin{pmatrix}X &\hspace{-4pt} Y\\[-2pt] 0 &\hspace{-4pt} Z\end{pmatrix}$}, where $X\in\FbbP{m,m},Y\in\FbbP{m,\:\!n-m},Z\in\FbbP{n-m,\:\!n-m}.$\parSol{}
+%Let $A$ be block matrix {\small$\begin{pmatrix}X &\hspace{-4pt} Y\\[-2pt] 0 &\hspace{-4pt} Z\end{pmatrix}$}, where $X\in\FbbP{m,\;\!m},Y\in\FbbP{m,\:\!n-m},Z\in\FbbP{n-m,\:\!n-m}.$\parSol{}
 %(a) Becs $\sum_{j=1}^m\Dvertsq{X_{\cdot,j}}=\sum_{j=1}^m\Dvertsq{Te_j}=\sum_{j=1}^m\Dvertsq{T^*e_j}=\sum_{j=1}^m\BigDvertsq{\overline{X_{j,\cdot}}}+\sum_{j=1}^m\BigDvertsq{\overline{Y_{j,\cdot}}}\Rightarrow Y=0.$\vspace{2pt}\parSol{\Ha}
 %Apply to $T^*\Rightarrow U$ invard $T^*.$ \Or Becs $\Mt{T^*,B_V}=\overline{A}{^t}={}${\small$\begin{pmatrix}\overline{X}{^t} &\hspace{-4pt} 0\\[-2pt] 0 &\hspace{-4pt} \overline{Z}{^t}\end{pmatrix}$}.\parSol{}
 %(b) $\Mt{T\mmid_U,B_V}=X\Rightarrow\Mt[\BigPar]{\Par{T\mmid_U}{^*},B_V}=\overline{X}{^t}.$ 又 $\Mt{T^*\mmid_U,B_V}=\overline{X}{^t}.$\PfEnd\vspace{4pt}
@@ -419,7 +419,7 @@ By asum, $\exists$ orthon $B_{U^\perp}$ of eigvecs of $T\mmid_{U^\perp}.$ Now $B
 }\SepLine
 
 %\Anchor{7C4}\ProblemN{4}{
-%	\TextA{Supp $1<n\in\Nbb.$ Show $\exists\,A\in\FbbP{n,n}$ with all ents positive numbers and $A=\overline{A}{^t},$}
+%	\TextA{Supp $1<n\in\Nbb.$ Show $\exists\,A\in\FbbP{n,\;\!n}$ with all ents positive numbers and $A=\overline{A}{^t},$}
 %	\TextA{while wrto std bss $\Mt{T}=A$ but $T\in\Lm{\FbbP{n}}$ is not posi.}
 %}
 %\SepLine
@@ -809,7 +809,7 @@ Let $\Mt{\alpha}\in\FbbP{n,\dots,n}$ with each $\Mt{\alpha}{_{j_1,\dots,\,j_m}}=
 %\SepLine
 
 %\Anchor{4e9C2}\ProblemN{C.2}{
-%	\TextA{Supp $A\in\FbbP{n,n},B\in\FbbP{n-1,n-1},\,A_{k,1}=\delta_{k,1},\,B_{j,\;\!k}=A_{j+1,\;\!k+1}.$ \;Show $\det A=A_{1,1}\det B.$}
+%	\TextA{Supp $A\in\FbbP{n,\;\!n},B\in\FbbP{n-1,n-1},\,A_{k,1}=\delta_{k,1},\,B_{j,\;\!k}=A_{j+1,\;\!k+1}.$ \;Show $\det A=A_{1,1}\det B.$}
 %}$\det A={\sum_{J\,\in\,\perm n}}\Par{\sign J}\,A_{j_1,1}\cdots A_{j_n,\;\!n},$ with $J=\Par{j_1,\dots,j_n}$ and $j_1=1\Rightarrow j_2,\dots,j_n\neq 1.$\PfEnd\vspace{4pt}\parSol{}
 %\Or Let $C={}${\scriptsize$\begin{pmatrix}\SmallPar{1} &\hspace{-6pt} 0\\[-2pt] 0 &\hspace{-6pt} B\end{pmatrix}$}${}\Rightarrow\Det\Par{A_{\cdot,1}\;\cdots\;A_{\cdot,n}}=A_{1,1}\Det\BigPar{I_{\cdot,1}\;\,C_{\cdot,2}\;\,\cdots\;\,C_{\cdot,n}}=A_{1,1}\det C.$\PfEnd
 %\SepLine
@@ -851,14 +851,14 @@ Becs each col of $D$ is in $\col B=\FbbP{m}\Rightarrow$ each $Q_{\cdot,m+k}\in\S
 \newcommandx{\mKf}[2]{{\mathcal{K}\!}_{#1}^{\;\TinyPar{#2}}}
 
 \Anchor{4e9C21}\ProblemN{C.22}{
-	\TextA{Supp $n\in\Nbp,$ and $\delta:\CbbP{n,n}\rightarrow\Cbb$ suth $\delta\Par{AB}=\delta\Par{A}\cdot\delta\Par{B},$ and $\delta\Par{D}=D_{1,1}\!\cdots D_{n,n},$}
-	\TextA{for all $A,B\in\CbbP{n,n}$ and all diag $D\in\CbbP{n,n}.$ \;Prove $\delta={\det}.$}
+	\TextA{Supp $n\in\Nbp,$ and $\delta:\CbbP{n,\;\!n}\rightarrow\Cbb$ suth $\delta\Par{AB}=\delta\Par{A}\cdot\delta\Par{B},$ and $\delta\Par{D}=D_{1,1}\!\cdots D_{n,n},$}
+	\TextA{for all $A,B\in\CbbP{n,\;\!n}$ and all diag $D\in\CbbP{n,\;\!n}.$ \;Prove $\delta={\det}.$}
 }Define $\mKf{i,\,j}{\alpha}=I+\alpha\:\!\mEnt{i,\,j}.$ \;We show $\delta\BigPar{\mKf{i,\,j}{\alpha}}=1+\delta_{i,\;\!j}\;\!\alpha.$ \,Supp $i\neq j.$\vspace{2pt}\parSol{}
 \NOTICE that $\mKf{i,\,j}{\alpha}\,\mKf{i,\,j}{\alpha}=\Par{I+\alpha\,\mEnt{i,\,j}}{^2}=I+2\;\!\alpha\,\mEnt{i,\,j}$\vspace{1pt}\parSol{}
 \Blind{\NOTICE that }$=\Sbra{I+\mEnt{j,\,j}+2\;\!\alpha\,\mEnt{i,\,j}}-\frac{\,1\,}{2}\:\!\mEnt{j,\,j}\Sbra{I+\mEnt{j,\,j}+2\;\!\alpha\,\mEnt{i,\,j}}$\vspace{1pt}\parSol{}
 \Blind{\NOTICE that }$=\Par{I-\frac{\,1\,}{2}\:\!\mEnt{j,\,j}}\Sbra{\Par{I+\alpha\,\mEnt{i,\,j}}\Par{I+\mEnt{j,\,j}}}=\mKf{j,\,j}{1/2}\,\mKf{i,\,j}{\alpha}\,\mKf{j,\,j}{1}.$\vspace{2pt}\parSol{}
 \又 $\mKf{i,\,j}{\alpha}\,\mKf{i,\,j}{{-\alpha}}=I\Rightarrow\delta\BigPar{\mKf{i,\,j}{\alpha}}\neq0.$ \,Thus $\delta\BigPar{\mKf{i,\,j}{\alpha}}=\delta\BigPar{\mKf{j,\,j}{1/2}\,\mKf{j,\,j}{1}}=1.$\vspace{3pt}\parSol{}
-Supp $A\in\CbbP{n,n}.$ Define $T\in\Lm{\CbbP{n}}:e_k\mapsto A_{\cdot,k}\Rightarrow\Mt{T}=A$ wrto std bses.\parSol{}
+Supp $A\in\CbbP{n,\;\!n}.$ Define $T\in\Lm{\CbbP{n}}:e_k\mapsto A_{\cdot,k}\Rightarrow\Mt{T}=A$ wrto std bses.\parSol{}
 Write $A=\Mt{I,Tv\rightarrow e}\Mt{T,v\rightarrow Tv}\Mt{I,e\rightarrow v}.$ Thus $A$ not inv $\Rightarrow\delta\Par{A}=0.$ \;Supp $A$ inv.\parSol{}
 Supp $T$ up-trig wrto $\Par{u_1,\dots,u_n}\Rightarrow C=\Mt{T,u\rightarrow u}=\Mt{I,e\rightarrow u}\:\!\Mt{T,e\rightarrow e}\:\!\Mt{I,u\rightarrow e}.$\parSol{}
 Then $A\mKf{i,\,j}{\alpha}=A+\alpha\:\!A\:\!\mEnt{i,\,j},$ which is the result of adding $i^\text{th}$ col times $\alpha$ to the $j^\text{th}$ col.\parSol{}
