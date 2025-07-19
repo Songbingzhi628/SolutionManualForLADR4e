@@ -69,16 +69,16 @@ Let $a=-\Ang{u,v}\Rightarrow2\:\!\innerA{u,v}{^2}\leqslant\innerA{u,v}{^2}\,\Dve
 \SepLine
 
 %\Anchor{6A4e19}\ProblemBnoor{4E 19}{
-%	\TextA{Supp $T\in\Lm{V},\,\lambda$ is eigval. Prove $\aMidsq{\lambda}\leqslant\sum_{j=1}^n\sum_{k=1}^n\aMidsq{A_{j,k}},$ \FontNorm\tgnr where $A=\Mt[\BigPar]{T,\Par{v_1,\dots,v_n}}.$\vspace{3pt}}
+%	\TextA{Supp $T\in\Lm{V},\,\lambda$ is eigval. Prove $\aMidsq{\lambda}\leqslant\sum_{j=1}^n\sum_{k=1}^n\aMidsq{A_{j,\;\!k}},$ \FontNorm\tgnr where $A=\Mt[\BigPar]{T,\Par{v_1,\dots,v_n}}.$\vspace{3pt}}
 %}Let $\Ang{a_1v_1+\dots+a_nv_n,b_1v_1+\dots+b_nv_n}=a_1\overline{b_1}+\dots+a_n\overline{b_n}.$ Let $v$ be eigval corres $\lambda$ with $\Dvert{v}=1.$\vspace{1pt}\parSol{}
-%Becs $v=a_1v_1+\dots+a_nv_n\Rightarrow Tv=\sum_{k=1}^na_k\sum_{j=1}^nA_{j,k}v_j=\sum_{j=1}^n\BigSbra{\sum_{k=1}^na_kA_{j,k}}v_j.$\vspace{3pt}\parSol{}
-%\又 Each $\Dvert{v_j}=1,\:\Ang{v_j,v_k}=0\Rightarrow\Dvertsq{Tv}=\sum_{j=1}^n\Big|\sum_{k=1}^na_kA_{j,k}\Big|{^2}=\aMidsq{\lambda}.$\vspace{3pt}\parSol{}
-%Note that $\aXMidsq{a_1A_{j,1}+\dots+a_nA_{j,n}}\leqslant\BigDvertsq{\Par{a_1,\dots,a_n}}\cdot\BigDvertsq{\Par{A_{j,1},\dots,A_{j,n}}}=\sum_{k=1}^n\aMidsq{A_{j,k}}.$\PfEnd
+%Becs $v=a_1v_1+\dots+a_nv_n\Rightarrow Tv=\sum_{k=1}^na_k\sum_{j=1}^nA_{j,\;\!k}v_j=\sum_{j=1}^n\BigSbra{\sum_{k=1}^na_kA_{j,\;\!k}}v_j.$\vspace{3pt}\parSol{}
+%\又 Each $\Dvert{v_j}=1,\:\Ang{v_j,v_k}=0\Rightarrow\Dvertsq{Tv}=\sum_{j=1}^n\Big|\sum_{k=1}^na_kA_{j,\;\!k}\Big|{^2}=\aMidsq{\lambda}.$\vspace{3pt}\parSol{}
+%Note that $\aXMidsq{a_1A_{j,1}+\dots+a_nA_{j,\;\!n}}\leqslant\BigDvertsq{\Par{a_1,\dots,a_n}}\cdot\BigDvertsq{\Par{A_{j,1},\dots,A_{j,\;\!n}}}=\sum_{k=1}^n\aMidsq{A_{j,\;\!k}}.$\PfEnd
 %\SepLine
 
 \Anchor{6AT2}\ProblemBX{\TipsN{2}}{
-	\TextB{Supp $A\in\FbbP{m,n}.$ Prove $\Dvertsq{Ax}\leqslant\sum_{j=1}^m\sum_{k=1}^n\aMidsq{A_{j,k}}\cdot\Dvertsq{x}$ for all $x\in\FbbP{m,1}.$\vspace{2pt}}
-}$\Dvertsq{Ax}=\Dvertsq{A_{\cdot,1}x_1+\dots+A_{\cdot,n}x_n}=\sum_{j=1}^m\aMidsq{x_1A_{j,1}+\dots+x_nA_{j,n}}\leqslant\sum_{j=1}^m\Dvertsq{A_{j,\cdot}}\cdot\Dvertsq{x}.$\PfEnd
+	\TextB{Supp $A\in\FbbP{m,n}.$ Prove $\Dvertsq{Ax}\leqslant\sum_{j=1}^m\sum_{k=1}^n\aMidsq{A_{j,\;\!k}}\cdot\Dvertsq{x}$ for all $x\in\FbbP{m,1}.$\vspace{2pt}}
+}$\Dvertsq{Ax}=\Dvertsq{A_{\cdot,1}x_1+\dots+A_{\cdot,n}x_n}=\sum_{j=1}^m\aMidsq{x_1A_{j,1}+\dots+x_nA_{j,\;\!n}}\leqslant\sum_{j=1}^m\Dvertsq{A_{j,\cdot}}\cdot\Dvertsq{x}.$\PfEnd
 \SepLine
 
 \Anchor{6A4e23}\ProblemBnoor{4E 23}{
@@ -198,9 +198,9 @@ Rev the roles of $u,v\Rightarrow c_v\Ang{u,v}{_2}={\Ang{u,v}{_1}}=\overline{\Ang
 %\SepLine
 
 \Anchor{6B4e19}\ProblemBnoor{4E 19}{
-	\TextA{Supp $B_V=\Par{v_1,\dots,v_n}.$ Prove $\exists\,B_V'=\Par{u_1,\dots,u_n}$ suth $\Ang{v_j,u_k}=\delta_{j,k}.$}
+	\TextA{Supp $B_V=\Par{v_1,\dots,v_n}.$ Prove $\exists\,B_V'=\Par{u_1,\dots,u_n}$ suth $\Ang{v_j,u_k}=\delta_{j,\;\!k}.$}
 }Let $\Par{\varphi_1,\dots,\varphi_n}$ be the corres dual bss of $B_V.$ \;Becs $\exists\,!\,u_k\in V,\,\varphi_k\Par{v}=\Ang{v,u_k}$ for all $v\in V.$\parSol{}
-Then $\varphi_k\Par{v_j}=\delta_{j,k}=\Ang{v_j,u_k}.$ \;Now let \,$a_1u_1+\dots+a_nu_n=0\Rightarrow$ each $\Ang{v_j,0}=a_j.$\PfEnd
+Then $\varphi_k\Par{v_j}=\delta_{j,\;\!k}=\Ang{v_j,u_k}.$ \;Now let \,$a_1u_1+\dots+a_nu_n=0\Rightarrow$ each $\Ang{v_j,0}=a_j.$\PfEnd
 \SepLine
 
 \Anchor{6B16}\ProblemN{16}{
@@ -210,9 +210,9 @@ Then $\varphi_k\Par{v_j}=\delta_{j,k}=\Ang{v_j,u_k}.$ \;Now let \,$a_1u_1+\dots+
 Using Euclid inner prod $\Ang{\cdot,\cdot}$ and the corres norm $\Dvert{{\cdot}}$ on $\CbbP{n,1}$ id with $\CbbP{n}.$\parSol{}
 Supp $A=\Mt{T}$ up-trig wrto orthon $B_V=\Par{e_1,\dots,e_n}.$\parSol{}
 Then $\forall v=x_1e_1+\dots+x_ne_n\in V,\Dvert{v}{_V}=\Dvert{x}.$ Now we show $\Dvert{A^mx}\leqslant\epsilon\Dvert{x}$ for all $x\in\CbbP{n,1}.$\parSol{}
-Define $D,N\in\CbbP{n,n}$ by $D_{j,k}=\delta_{j,k}A_{j,k},\:N=A-D.$ Then $N$ is nilp with $N^p=0\neq N^{p-1}.$\parSol{}
+Define $D,N\in\CbbP{n,n}$ by $D_{j,\;\!k}=\delta_{j,\:\!k}A_{j,\;\!k},\:N=A-D.$ Then $N$ is nilp with $N^p=0\neq N^{p-1}.$\parSol{}
 Let $\rho=\max\!\Bra{\aMid{D_{1,1}},\dots,\aMid{D_{n,n}}}\Rightarrow0\leqslant\rho<1,$ and each $\Dvert{D^{\,k}x}\leqslant\rho^{\,k}\Dvert{x}\leqslant\Dvert{x}.$\vspace{3pt}\parSol{}
-Let $M=\sum_{j=1}^n\sum_{k=1}^n\aMidsq{N_{j,k}}.$ \,{By \Sbra{6.A \TIPSN{2}}}, $\Dvert{Nx}\leqslant M\Dvert{x}\Rightarrow\Dvert{N^{k}x}\leqslant M^k\Dvert{x}.$\vspace{5pt}\parSol{}
+Let $M=\sum_{j=1}^n\sum_{k=1}^n\aMidsq{N_{j,\;\!k}}.$ \,{By \Sbra{6.A \TIPSN{2}}}, $\Dvert{Nx}\leqslant M\Dvert{x}\Rightarrow\Dvert{N^{k}x}\leqslant M^k\Dvert{x}.$\vspace{5pt}\parSol{}
 Hence $\Dvert{A^{p+q}x}=\BigDvert{b_0D^{\,p+q}x+\dots+b_kD^{\,p+q-k}N^{k}x+\dots+b_{p-1}D^{\,q+1}N^{p-1}x}$\vspace{3pt}\parSol{}
 \Blind{So that $\Dvert{A^{p+q}x}$}$\leqslant\!\BigSbra{{b_0\rho^{\,p+q}+\dots+b_k\rho^{\,p+q-k}M^k+b_{p-1}\rho^{\,q+1}M^{p-1}}}\Dvert{x}.$\vspace{4pt}\parSol{}
 Where each $b_j=\mathC_{p+q}^j\leqslant\Par{p+q}{^j}\leqslant\Par{p+q}{^{p-1}}$ for $j\in\;\!\!\Bra{0,\dots,p-1}.$\vspace{1pt}\parSol{}
@@ -348,7 +348,7 @@ By (5.C.5). If $\Fbb=\Rbb,$ then apply to $T_{\!\Cbb}.$ Now every liney factor h
 
 \Anchor{7B14}\ProblemN{B.14}{
 	\TextA{Supp $\Fbb=\Rbb,$ $T\in\Lm{V}.$ Prove $T$ diag $\Rightarrow$ self-adj wrto some $\Ang{\cdot,\cdot}{_V}.$}
-}Let eigvecs $B_V=\Par{e_1,\dots,e_n}$ be orthon wrto $\Ang{e_j,\:\!e_k}{_V}=\delta_{j,k}.$ \,Becs $\Mt{T}=\Mt{T}{^t}=\Mt{T^*}.$\PfEnd\vspace{2pt}
+}Let eigvecs $B_V=\Par{e_1,\dots,e_n}$ be orthon wrto $\Ang{e_j,\:\!e_k}{_V}=\delta_{j,\:\!k}.$ \,Becs $\Mt{T}=\Mt{T}{^t}=\Mt{T^*}.$\PfEnd\vspace{2pt}
 \Anchor{7B4e24}\ANote (a) $\Mt{T}=\overline{\Mt{T}}{^t}$ wrto some $B_V\Longleftrightarrow T$ self-adj wrto some $\Ang{\cdot,\cdot}{_V}$ $\Longleftrightarrow$ diag.\parNot
 (b) $\Mt{T}\overline{\Mt{T}}{^t}=\overline{\Mt{T}}{^t}\Mt{T}$ wrto some $B_V\Longleftrightarrow T$ normal wrto some $\Ang{\cdot,\cdot}{_V}$ $\Longleftrightarrow$ diag on $\Cbb.$
 \SepLine
@@ -368,9 +368,9 @@ Then $\lambda\Dvertsq{v}=\Ang{Tv,v}=\Ang{v,T^*v}=\overline{\mu}\Dvertsq{v}\Right
 Thus each $E\Par{\lambda,T}=E\Par{\overline{\lambda},T^*}$ invard $T,T^*\Rightarrow E\Par{\lambda,T}{^\perp}=E\Par{\overline{\lambda},T^*}{^\perp}$ invard $T^*,T.$\parSol{}
 Let $W=\bigcap_{\lambda\,\in\,\Fbb}E\Par{\lambda,T}{^\perp}$ invard $T,T^*.$ By \Sbra{6.C \TIPSN{4}}, no eigvals of $T\mmid_W,T^*\mmid_W\Rightarrow W=\zeroSubs.$\PfEnd\vspace{4pt}\parSol{}
 \Or $\exists$ orthon $B_V=\Par{e_1,\dots,e_n}$ suth $\Mt{T}$ up-trig $\Rightarrow\overline{A}{^t}=\Mt{T^*}$ low-trig.\parSol{}
-(i) Now $Te_1=A_{1,1}e_1\Rightarrow\overline{A_{1,1}}e_1+\dots+\overline{A_{1,n}}e_n=T^*e_1\Rightarrow A_{1,2}=\dots=A_{1,n}=0.$\parSol{}
-(ii) Asum $\Par{A_{1,2}\;\cdots\;A_{1,n}}=\dots=\Par{A_{k-1,k}\;\cdots\;A_{k-1,n}}=0.$ 又 $A$ is up-trig.\vspace{1pt}\parSol{\Hii}
-Then $Te_{k}=A_{k,k}e_{k}\Rightarrow\overline{A_{k,k}}e_1+\dots+\overline{A_{k,n}}e_n=T^*e_{k}\Rightarrow A_{k,k+1}=\dots=A_{k,n}=0.$\PfEnd
+(i) Now $Te_1=A_{1,1}e_1\Rightarrow\overline{A_{1,1}}e_1+\dots+\overline{A_{1,\;\!n}}e_n=T^*e_1\Rightarrow A_{1,2}=\dots=A_{1,\;\!n}=0.$\parSol{}
+(ii) Asum $\Par{A_{1,2}\;\cdots\;A_{1,\;\!n}}=\dots=\Par{A_{k-1,\;\!k}\;\cdots\;A_{k-1,\;\!n}}=0.$ 又 $A$ is up-trig.\vspace{1pt}\parSol{\Hii}
+Then $Te_{k}=A_{k,\;\!k}e_{k}\Rightarrow\overline{A_{k,\;\!k}}e_1+\dots+\overline{A_{k,\;\!n}}e_n=T^*e_{k}\Rightarrow A_{k,\;\!k+1}=\dots=A_{k,\;\!n}=0.$\PfEnd
 \SepLine
 
 %\Anchor{7B4e9}\ProblemBnoor{4E 9}{
@@ -550,7 +550,7 @@ If $s_1=s_n.$ Done. \,Supp $s_1>s_n.$ Then \,$s_1^2-s^2=\Par{s_1^2-s_n^2}\,y^2,$
 }$\Ang{Tv_k,\;\!v_k}=\BigAng{\sqrt{T}v_k,\:\!\sqrt{T}v_k}=\BigDvertsq{\sqrt{T}v_k}.$ Note that $\sqrt{T}=\sqrt{T^*}=\BigPar{\!\!\:\sqrt{T}}{^*}$ is posi.\parSol{}
 \NOTICE that \,$s_1,\dots,s_n$ are the eigvals of $\sqrt{T}{^*}\sqrt{T}=T\Longrightarrow\sqrt{s_1},\dots,\sqrt{s_n}$ are the singvals of $\sqrt{T}.$\vspace{1pt}\parSol{}
 Get the SVD $\Par{e_1,\dots,e_n},\Par{\,f_1,\dots,f_n}.$ By (4E 7.A.5), $\uline{\sum\BigDvertsq{\sqrt{T}v_k}=\sum\BigDvertsq{\sqrt{T}e_k}=\sum s_k}.$\PfEnd
-%Becs $A=\Mt{T}=\Mt{T}{^*}$ wrto $B_V,$ and each $\Ang{Tv_k,\:\!v_k}=A_{k,k}=\lambda_k\Rightarrow T$ diag wrto $B_V.$\parSol{}
+%Becs $A=\Mt{T}=\Mt{T}{^*}$ wrto $B_V,$ and each $\Ang{Tv_k,\:\!v_k}=A_{k,\;\!k}=\lambda_k\Rightarrow T$ diag wrto $B_V.$\parSol{}
 %Becs $T$ posi $\Rightarrow\aMidsq{\lambda_k}=\lambda_k^2.$ 又 $T^*Tv_k=T^2v_k=\lambda_k^2\:\!v_k=s_k^2\:\!v_k.$\PfEnd\vspace{2pt}\parSol{}
 \SepLine
 
@@ -704,7 +704,7 @@ Thus $\Dvert{T}-\aMid{\lambda_M}{_R}=\aMid{\lambda_M}{_{S-T}}\leqslant\Dvert{T}.
 \Anchor{7F11}\ProblemN{F.11}{
 	\TextA{Supp $\Fbb=\Cbb,T\in\Lm{V}.$ Prove $\forall\epsilon>0,\exists$ diag $S$ suth $0<\Dvert{T-S}<\epsilon.$}
 	%	We show $\exists\,R\in\Lm{V}$ suth $T+R$ has $\dim V$ disti eigvals, and $0<\Dvert{R}<\epsilon.$\parSol{}
-}Supp $A=\Mt{T}$ up-trig wrto orthon $B_V=\Par{e_1,\dots,e_n}.$ Let $\lambda_k=A_{k,k}.$\parSol{}
+}Supp $A=\Mt{T}$ up-trig wrto orthon $B_V=\Par{e_1,\dots,e_n}.$ Let $\lambda_k=A_{k,\;\!k}.$\parSol{}
 Becs $T$ has finily many eigvals, $\exists\,\delta\in\Interval{(}{)}{0,\:\!\epsilon\big/n},$ $\nexists$ disti $j,k$ suth $\lambda_j+j\delta=\lambda_k+k\delta.$\parSol{}
 Thus define $Re_k=k\delta\:\!e_k\Rightarrow T+R$ has $n$ disti eigvals, while $R$ posi and $0<\Dvert{R}<\delta.$\PfEnd
 \SepLine
@@ -738,7 +738,7 @@ Becs $\Tr\Par{SP}=\sum\!\!\:\Ang{SPe_i,e_i}+\sum\!\!\:\Ang{SP\:\!f_j,\,f_j}=\sum
 	\TextA{Supp $T\in\Lm{V}$ suth \:\!$\Tr\Par{ST}=0$ \,for all $S\in\Lm{V}.$ \,Prove $T=0.$}
 }Let $S=T^*\Rightarrow\Tr\Par{T^*T}=s_1^2+\dots+s_n^2=0.$ \;By (4E 7.E.1) \OR Exe (11).\PfEnd\vspace{2pt}\parSol{}
 \Or Asum $T\neq0\Rightarrow\exists$ non0 $v\in V$ suth $Tv_1\neq0.$ Extend $v=v_1$ to $B_V=\Par{v_1,\dots,v_n}.$\parSol{}
-Then $Tv_1=A_{1,1}v_1+\dots+A_{n,1}v_n\Rightarrow\exists\,A_{j,1}\neq0.$ Define $S\in\Lm{V}$ by each $Sv_k=\delta_{j,k}\:\!v_1.$\parSol{}
+Then $Tv_1=A_{1,1}v_1+\dots+A_{n,1}v_n\Rightarrow\exists\,A_{j,1}\neq0.$ Define $S\in\Lm{V}$ by each $Sv_k=\delta_{j,\:\!k}\:\!v_1.$\parSol{}
 Now $S=E_{j,1}\Rightarrow\Mt{ST}={\mEnt{1,\,j}\Mt{T}}\Longrightarrow0=\Tr\Par{ST}=A_{j,1}.$ Ctradic.\PfEnd\vspace{2pt}\parSol{}
 \Or Asum $\exists\,Tv\neq0.$ Extend to $B_V=\Par{Tv,u_1,\dots,u_n}.$ Define $S\in\Lm{V}:Tv\mapsto v,\,u_i\mapsto 0.$\parSol{}
 Now $\Par{TS}\Par{Tv}=Tv,\Par{TS}\Par{u_i}=0\Rightarrow\Tr\Par{TS}=1.$ Ctradic.\PfEnd
@@ -746,20 +746,20 @@ Now $\Par{TS}\Par{Tv}=Tv,\Par{TS}\Par{u_i}=0\Rightarrow\Tr\Par{TS}=1.$ Ctradic.\
 
 \Anchor{10A4e10}\ProblemBnoor{4E 8.D.10}{
 	\TextB{Supp $\tau\in\BigPar{\Lm{V}}\apostrophe,\tau\Par{I}=\dim V,$ and $\tau\Par{ST}=\tau\Par{TS}.$ Prove $\tau=\Tr.$}
-}$\tau\Par{E_{i,j}}=\tau\Par{E_{x,j}E_{i,x}}=\tau\Par{E_{i,x}E_{x,j}}=\delta_{i,j}\tau\Par{E_{x,x}}.$ \,又 $I=E_{1,1}+\dots+E_{n,n}\Rightarrow n=n\tau\Par{E_{x,x}}.$\PfEnd
+}$\tau\Par{E_{i,\;\!j}}=\tau\Par{E_{x,\;\!j}E_{i,\;\!x}}=\tau\Par{E_{i,\;\!x}E_{x,\;\!j}}=\delta_{i,j}\tau\Par{E_{x,\;\!x}}.$ \,又 $I=E_{1,1}+\dots+E_{n,n}\Rightarrow n=n\tau\Par{E_{x,\:\!x}}.$\PfEnd
 \SepLine
 
 \Anchor{10A4e12}\ProblemBnoor{4E 8.D.12}{
 	\TextB{Supp $V,W$ are finide inner prodsps. Define $\Ang{\cdot,\cdot}$ on $\Lm{V,W}$ by $\Ang{S,T}=\Tr\Par{ST^*}.$\vspace{2pt}}
-	\TextB{Let orthon $B_V=\Par{e_1,\dots,e_n},B_W=\Par{\,f_1,\dots,f_m}.$ Prove $\Ang{S,T}=\sum_{j=1}^m\sum_{k=1}^n\Mt{S}{_{j,k}}\overline{\Mt{T}{_{j,k}}}.$\vspace{3pt}}
-}Becs $\Mt{ST^*}{_{j,k}}=\Mt{S}{_{j,r}}\Mt{T^*}{_{r,k}}=\Mt{S}{_{j,r}}\overline{\Mt{T}{_{k,r}}}.$ Take $k=j.$\PfEnd\vspace{4pt}\parSol{}
-\Or Define $E_{k,j}\Par{e_x}=\delta_{k,x}\:f_j,\;R_{j,k}\Par{\,f_y}=\delta_{j,y}e_k,$ and $Q_{j,k}\Par{\,f_y}=\delta_{j,y}\:f_k.$ \;See {\NOTEFOR} [3.60].\vspace{2pt}\parSol{}
-%Supp $T=\sum_{j=1}^m\sum_{k=1}^nA_{j,k}E_{k,j}\in\Lm{V,W}\Rightarrow A=\Mt{T}$ wrto $B_V,B_W.$\vspace{2pt}\parSol{}
-Becs \,$E_{k,j}^*=R_{j,k},$ and $\Ang{E_{k,l},E_{i,j}}=\Tr\Par{E_{k,l}R_{j,i}}=\Tr\Par{\delta_{i,k}Q_{j,l}}=\delta_{i,k}\delta_{j,l}.$\vspace{2pt}\parSol{}
-%Hence $B_{\!\Lm[\SmallPar]{V,\,W}}=\Bra{E_{k,j}:1\leqslant k\leqslant n,\text{ and }1\leqslant j\leqslant m}$ is orthon.\vspace{3pt}\parSol{}
-Now $\BigAng{{\sum A_{j,k}E_{k,j}\;\!,\;\sum C_{x,y}E_{y,x}}}=\sum A_{j,k}\overline{C_{j,k}}$\PfEnd
-%=\Tr\BigPar{{\sum A_{j,k}E_{k,j}\:\sum \overline{C_{x,y}}R_{x,y}}}.
-%Becs $\sum A_{j,k}E_{k,j}\:\sum \Par{C^*}{_{y,x}}R_{x,y}=\sum\sum A_{j,k}\Par{C^*}{_{y,x}}\,\delta_{k,y}\,Q_{x,j}=\sum\sum A_{j,k}\Par{C^*}{_{k,x}}\,Q_{x,j}.$ Take $x=j.$\PfEnd
+	\TextB{Let orthon $B_V=\Par{e_1,\dots,e_n},B_W=\Par{\,f_1,\dots,f_m}.$ Show $\Ang{S,T}=\sum_{j=1}^m\sum_{k=1}^n\Mt{S}{_{j,\;\!k}}\overline{\Mt{T}{_{j,\;\!k}}}.$\vspace{3pt}}
+}Becs $\Mt{ST^*}{_{j,\;\!k}}=\Mt{S}{_{j,\;\!r}}\Mt{T^*}{_{r\!\!\:,\;\!k}}=\Mt{S}{_{j,\;\!r}}\overline{\Mt{T}{_{k,\;\!r}}}.$ Take $k=j.$\PfEnd\vspace{4pt}\parSol{}
+\Or Define $E_{k,\;\!j}\Par{e_x}=\delta_{k,\;\!x}\:f_j,\;R_{j,\;\!k}\Par{\,f_y}=\delta_{j,\;\!y}e_k,$ and $Q_{j,\;\!k}\Par{\,f_y}=\delta_{j,\;\!y}\:f_k.$ \;See {\NOTEFOR} [3.60].\vspace{2pt}\parSol{}
+%Supp $T=\sum_{j=1}^m\sum_{k=1}^nA_{j,\;\!k}E_{k,\;\!j}\in\Lm{V,W}\Rightarrow A=\Mt{T}$ wrto $B_V,B_W.$\vspace{2pt}\parSol{}
+Becs \,$E_{k,\;\!j}^*=R_{j,\;\!k},$ and $\Ang{E_{k,\;\!l},E_{i,\;\!j}}=\Tr\Par{E_{k,\;\!l}R_{j,\;\!i}}=\Tr\Par{\delta_{i,\:\!k}Q_{j,\;\!l}}=\delta_{i,\:\!k}\delta_{j,\:\!l}.$\vspace{2pt}\parSol{}
+%Hence $B_{\!\Lm[\SmallPar]{V,\,W}}=\Bra{E_{k,\;\!j}:1\leqslant k\leqslant n,\text{ and }1\leqslant j\leqslant m}$ is orthon.\vspace{3pt}\parSol{}
+Now $\BigAng{{\sum A_{j,\;\!k}E_{k,\;\!j}\;\!,\;\sum C_{x,\;\!y}E_{y,\;\!x}}}=\sum A_{j,\;\!k}\overline{C_{j,\;\!k}}$\PfEnd
+%=\Tr\BigPar{{\sum A_{j,\;\!k}E_{k,\;\!j}\:\sum \overline{C_{x,\;\!y}}R_{x,\;\!y}}}.
+%Becs $\sum A_{j,\;\!k}E_{k,\;\!j}\:\sum \Par{C^*}{_{y,\;\!x}}R_{x,\;\!y}=\sum\sum A_{j,\;\!k}\Par{C^*}{_{y,\;\!x}}\,\delta_{k,\;\!y}\,Q_{x,\;\!j}=\sum\sum A_{j,\;\!k}\Par{C^*}{_{k,\;\!x}}\,Q_{x,\;\!j}.$ Take $x=j.$\PfEnd
 \SepLine
 
 \vfill\ChDecl{Ch4e9}{[4E] 9}{\quad{\ANote {\FontSmall $V,W$ denote finide non0 vecsps over $\Fbb.$}}}%An Exe marked by $\blacksquare$ is true if infinide or partially finide.
@@ -797,7 +797,7 @@ Define $m$-liney \,$\alpha_I\Par{v_1,\dots,v_m}=\varphi_{i_1}\:\!\!\Par{v_1}\cdo
 Hence $\alpha=\sum_{I\,\in\,\Gamma}\,\alpha\Par{e_{i_1},\dots,e_{i_m}}\Sbra{\alpha_I}\in\Span{\alpha_I}{_{I\,\in\,\Gamma}}.$ \,Supp $\exists\,c_I\in\Fbb,\,I\in\Gamma$ \,suth\, $\sum_{\,I\,\in\,\Gamma}\,c_I\,\alpha_I=0.$\vspace{2pt}\parSol{}
 Note that for each $J=\Par{j_1,\dots,j_m}\in\Gamma\:\!\!,\:\alpha_I\Par{e_{j_1},\dots,e_{j_m}}=\delta_{I,J}\Rightarrow 0\Par{e_{j_1},\dots,e_{j_m}}=c_J.$\PfEnd\vspace{4pt}\parSol{}
 \Or We show $V^{\SmallPar{m}}=\mB\Par{V,\cdots,V}$ iso to $\FbbP{n,\dots,n}$ via liney $\alpha\mapsto\Mt{\alpha}.$ Supp $A\in\FbbP{n,\dots,n}.$\parSol{}
-Define $\alpha_A\in\mB\Par{V,\cdots,V}$ by $\alpha_A\BigPar{{\sum_{i=1}^nc_{i,1}e_i,\cdots,\sum_{i=1}^nc_{i,m}e_i}}=\sum_{I\,\in\,\Gamma}c_{j_1,1}\cdots c_{j_m,m}\,A_I.$\vspace{1pt}\parSol{}
+Define $\alpha_A\in\mB\Par{V,\cdots,V}$ by $\alpha_A\BigPar{{\sum_{i=1}^nc_{i,1}\:\!e_i,\cdots,\sum_{i=1}^nc_{i,\;\!m}\;\!e_i}}=\sum_{I\,\in\,\Gamma}c_{j_1,1}\cdots c_{j_m,\;\!m}\,A_I.$\vspace{1pt}\parSol{}
 Let $\Mt{\alpha}\in\FbbP{n,\dots,n}$ with each $\Mt{\alpha}{_{j_1,\dots,\,j_m}}=\alpha\Par{e_{j_1},\dots,e_{j_m}}.$ \,Becs $\alpha_{\Mt[\SmallPar]{\alpha}}=\alpha.$\PfEnd
 \SepLine
 
@@ -809,17 +809,17 @@ Let $\Mt{\alpha}\in\FbbP{n,\dots,n}$ with each $\Mt{\alpha}{_{j_1,\dots,\,j_m}}=
 %\SepLine
 
 %\Anchor{4e9C2}\ProblemN{C.2}{
-%	\TextA{Supp $A\in\FbbP{n,n},B\in\FbbP{n-1,n-1},\,A_{k,1}=\delta_{k,1},\,B_{j,k}=A_{j+1,\,k+1}.$ \;Show $\det A=A_{1,1}\det B.$}
-%}$\det A={\sum_{J\,\in\,\perm n}}\Par{\sign J}\,A_{j_1,1}\cdots A_{j_n,n},$ with $J=\Par{j_1,\dots,j_n}$ and $j_1=1\Rightarrow j_2,\dots,j_n\neq 1.$\PfEnd\vspace{4pt}\parSol{}
+%	\TextA{Supp $A\in\FbbP{n,n},B\in\FbbP{n-1,n-1},\,A_{k,1}=\delta_{k,1},\,B_{j,\;\!k}=A_{j+1,\;\!k+1}.$ \;Show $\det A=A_{1,1}\det B.$}
+%}$\det A={\sum_{J\,\in\,\perm n}}\Par{\sign J}\,A_{j_1,1}\cdots A_{j_n,\;\!n},$ with $J=\Par{j_1,\dots,j_n}$ and $j_1=1\Rightarrow j_2,\dots,j_n\neq 1.$\PfEnd\vspace{4pt}\parSol{}
 %\Or Let $C={}${\scriptsize$\begin{pmatrix}\SmallPar{1} &\hspace{-6pt} 0\\[-2pt] 0 &\hspace{-6pt} B\end{pmatrix}$}${}\Rightarrow\Det\Par{A_{\cdot,1}\;\cdots\;A_{\cdot,n}}=A_{1,1}\Det\BigPar{I_{\cdot,1}\;\,C_{\cdot,2}\;\,\cdots\;\,C_{\cdot,n}}=A_{1,1}\det C.$\PfEnd
 %\SepLine
 
 \Anchor{4e9C2}\Anchor{4e9C5}\ProblemN{C.2,5}{
 	\TextA{Supp square $B,C$ on diag of block up-trig $A.$ Prove $\det A=\Par{{\det B}}\Par{{\det C}}.$}
 }If the cols of $B$ are liney dep, then the cols of $A$ are liney dep, done. Now supp $B$ is inv.\vspace{1pt}\parSol{}
-Let $A={}${\scriptsize$\begin{pmatrix}B &\hspace{-6pt} D\\[-2pt] 0 &\hspace{-6pt} C\end{pmatrix}$}$,\:P={}${\scriptsize$\begin{pmatrix}B &\hspace{-6pt} 0\\[-2pt] 0 &\hspace{-6pt} C\end{pmatrix}$}$,\:Q={}${\scriptsize$\begin{pmatrix}0 &\hspace{-6pt} D\\[-2pt] 0 &\hspace{-6pt} 0\end{pmatrix}$}$.$ Supp $A\in\FbbP{n,n},B\in\FbbP{m,m},C\in\FbbP{p,p}.$\vspace{-2pt}\parSol{}
-Now $\Det\Par{A_{\cdot,1}\;\cdots\;A_{\cdot,n}}=\Det\BigBigPar{P_{\!\cdot,1}\;\cdots\;P_{\!\cdot,m}\;\,\Par{P+Q}{_{\cdot,m+1}}\;\cdots\;\Par{P+Q}{_{\cdot,n}}}.$\vspace{1pt}\parSol{}
-Becs each col of $D$ is in $\col B=\FbbP{m}\Rightarrow$ each $Q_{\cdot,m+k}\in\Span{P_{\!\cdot,1},\dots,P_{\!\cdot,m}}\Rightarrow\det A=\det P.$\PfEnd
+Let $A={}${\scriptsize$\begin{pmatrix}B &\hspace{-6pt} D\\[-2pt] 0 &\hspace{-6pt} C\end{pmatrix}$}$,\:P={}${\scriptsize$\begin{pmatrix}B &\hspace{-6pt} 0\\[-2pt] 0 &\hspace{-6pt} C\end{pmatrix}$}$,\:Q={}${\scriptsize$\begin{pmatrix}0 &\hspace{-6pt} D\\[-2pt] 0 &\hspace{-6pt} 0\end{pmatrix}$}$.$ Supp $A\in\FbbP{n,\:\!n},B\in\FbbP{m,\:\!m},C\in\FbbP{p,\;\!p}.$\vspace{-2pt}\parSol{}
+Now $\Det\Par{A_{\cdot,1}\;\cdots\;A_{\cdot,\;\!n}}=\Det\BigBigPar{P_{\!\cdot,1}\;\cdots\;P_{\!\cdot,\;\!m}\;\,\Par{P+Q}{_{\cdot,\;\!m+1}}\;\cdots\;\Par{P+Q}{_{\cdot,\;\!n}}}.$\vspace{1pt}\parSol{}
+Becs each col of $D$ is in $\col B=\FbbP{m}\Rightarrow$ each $Q_{\cdot,m+k}\in\Span{P_{\!\cdot,1},\dots,P_{\!\cdot,\;\!m}}\Rightarrow\det A=\det P.$\PfEnd
 %\vspace{4pt}\parSol{}
 %\Or Let $\Par{e_1,\dots,e_n}$ be std bses of $\FbbP{n}.$ Let $U=\Span{e_1,\dots,e_m},W=\Span{e_{m+1},\dots,e_n}.$\parSol{}
 %Define $T\in\Lm{\FbbP{n}}:e_k\mapsto A_{\cdot,k}\Rightarrow T\mmid_U\in\Lm{U},$ and $\Mt{T\mmid_U}=B.$ \,Define $S\in\Lm{W}:e_{m+j}\mapsto C_{\cdot,j}$\parSol{}
@@ -853,7 +853,7 @@ Becs each col of $D$ is in $\col B=\FbbP{m}\Rightarrow$ each $Q_{\cdot,m+k}\in\S
 \Anchor{4e9C21}\ProblemN{C.22}{
 	\TextA{Supp $n\in\Nbp,$ and $\delta:\CbbP{n,n}\rightarrow\Cbb$ suth $\delta\Par{AB}=\delta\Par{A}\cdot\delta\Par{B},$ and $\delta\Par{D}=D_{1,1}\!\cdots D_{n,n},$}
 	\TextA{for all $A,B\in\CbbP{n,n}$ and all diag $D\in\CbbP{n,n}.$ \;Prove $\delta={\det}.$}
-}Define $\mKf{i,\,j}{\alpha}=I+\alpha\:\!\mEnt{i,\,j}.$ \;We show $\delta\BigPar{\mKf{i,\,j}{\alpha}}=1+\delta_{i,j}\alpha.$ \,Supp $i\neq j.$\vspace{2pt}\parSol{}
+}Define $\mKf{i,\,j}{\alpha}=I+\alpha\:\!\mEnt{i,\,j}.$ \;We show $\delta\BigPar{\mKf{i,\,j}{\alpha}}=1+\delta_{i,\;\!j}\;\!\alpha.$ \,Supp $i\neq j.$\vspace{2pt}\parSol{}
 \NOTICE that $\mKf{i,\,j}{\alpha}\,\mKf{i,\,j}{\alpha}=\Par{I+\alpha\,\mEnt{i,\,j}}{^2}=I+2\;\!\alpha\,\mEnt{i,\,j}$\vspace{1pt}\parSol{}
 \Blind{\NOTICE that }$=\Sbra{I+\mEnt{j,\,j}+2\;\!\alpha\,\mEnt{i,\,j}}-\frac{\,1\,}{2}\:\!\mEnt{j,\,j}\Sbra{I+\mEnt{j,\,j}+2\;\!\alpha\,\mEnt{i,\,j}}$\vspace{1pt}\parSol{}
 \Blind{\NOTICE that }$=\Par{I-\frac{\,1\,}{2}\:\!\mEnt{j,\,j}}\Sbra{\Par{I+\alpha\,\mEnt{i,\,j}}\Par{I+\mEnt{j,\,j}}}=\mKf{j,\,j}{1/2}\,\mKf{i,\,j}{\alpha}\,\mKf{j,\,j}{1}.$\vspace{2pt}\parSol{}
@@ -863,7 +863,7 @@ Write $A=\Mt{I,Tv\rightarrow e}\Mt{T,v\rightarrow Tv}\Mt{I,e\rightarrow v}.$ Thu
 Supp $T$ up-trig wrto $\Par{u_1,\dots,u_n}\Rightarrow C=\Mt{T,u\rightarrow u}=\Mt{I,e\rightarrow u}\:\!\Mt{T,e\rightarrow e}\:\!\Mt{I,u\rightarrow e}.$\parSol{}
 Then $A\mKf{i,\,j}{\alpha}=A+\alpha\:\!A\:\!\mEnt{i,\,j},$ which is the result of adding $i^\text{th}$ col times $\alpha$ to the $j^\text{th}$ col.\parSol{}
 {\tgbfx Step 1.} Let $c_1=C_{1,2}\big/C_{1,1}.$ Then let $R_1=C\:\!\mKf{1,\,2}{{-c_1}}.$ Now $\Par{R_1}{_{1,2}}=0.$\parSol{}
-{\tgbfx Step k.} Let $c_k=\BigPar{C_{1,k+1}\big/C_{1,1},\dots,C_{k,k+1}\big/C_{k,k}}.$ Then let $R_{k+1}=R_k\:\!\mKf{1,\,k+1}{{-c_{1,k}}}\!\cdots\mKf{k,\,k+1}{{-c_{k,k}}}.$\parSol{}
+{\tgbfx Step k.} Let $c_k=\BigPar{C_{1,\;\!k+1}\big/C_{1,1},\dots,C_{k,\;\!k+1}\big/C_{k,\;\!k}}.$ Then let $R_{k+1}=R_k\:\!\mKf{1,\;\!k+1}{{-c_{1,\;\!k}}}\!\cdots\mKf{k,\;\!k+1}{{-c_{k,\;\!k}}}.$\parSol{}
 We stop at step $\Par{n-1}.$ \,Becs each $\delta\Par{R_{k+1}}=\delta\Par{R_k}.$\PfEnd
 \SepLine
 
@@ -888,9 +888,9 @@ We stop at step $\Par{n-1}.$ \,Becs each $\delta\Par{R_{k+1}}=\delta\Par{R_k}.$\
 %\Or Define biliney $\Gamma:V\times W\rightarrow V\otimes W$ by $\Gamma:\Par{v,w}\mapsto Sv\otimes Tw.$ \;Let $\mA=\hat{\Gamma}\in\Lm{V\otimes W}.$\vspace{2pt}\parSol{}
 %(b) Supp $S$ or $T$ not inv. Let some $B_{\null S}\subseteq B_V\Rightarrow Se_i=0\Rightarrow\mA\Par{e_i,w}=0\otimes Tw=0.$ Simlr for $T.$\vspace{3pt}\parSol{}
 %(c) $\BigAng{Sv\otimes Tw,\,u\otimes x}=\Ang{Sv,u}\Ang{Tw,x}=\Ang{v,S^*u}\Ang{w,T^*x}=\BigAng{v\otimes w,S^*u\otimes T^*x}.$\vspace{3pt}\parSol{\Hc}
-%\Or $\mA\Par{v\otimes w}={\sum_{j=1}^n\sum_{k=1}^m}\Par{a_jb_k}\Par{Se_j\otimes T\:\!f_k}={\sum_{j=1}^n\sum_{k=1}^m}\Par{a_jb_k}\sum_{x=1}^n\sum_{y=1}^mA_{x,j}B_{y,k}\Par{e_x\otimes\:\!f_y}.$\vspace{2pt}\parSol{\Hc}
-%$\BigAng{Sv\otimes Tw,\,{u\otimes r}}={\sum_{j=1}^n\sum_{k=1}^m}\Par{a_jb_k}\sum_{x=1}^n\sum_{y=1}^mA_{x,j}\:\!\overline{c_x}\,B_{y,k}\:\!\overline{d_y}$\vspace{2pt}\parSol{\Hc}
-%$=\BigAng{v\otimes w,\,\mA^*\Par{u\otimes r}}=\BigAng{v\otimes w,\,{\sum_{x=1}^n\sum_{y=1}^m}\Par{c_x\:\!d_y}\sum_{j=1}^n\sum_{k=1}^m\overline{A_{x,j}B_{y,k}}\Par{e_j\otimes\:\!f_k}}.$\PfEnd
+%\Or $\mA\Par{v\otimes w}={\sum_{j=1}^n\sum_{k=1}^m}\Par{a_jb_k}\Par{Se_j\otimes T\:\!f_k}={\sum_{j=1}^n\sum_{k=1}^m}\Par{a_jb_k}\sum_{x=1}^n\sum_{y=1}^mA_{x,\;\!j}B_{y,\;\!k}\Par{e_x\otimes\:\!f_y}.$\vspace{2pt}\parSol{\Hc}
+%$\BigAng{Sv\otimes Tw,\,{u\otimes r}}={\sum_{j=1}^n\sum_{k=1}^m}\Par{a_jb_k}\sum_{x=1}^n\sum_{y=1}^mA_{x,\;\!j}\:\!\overline{c_x}\,B_{y,\;\!k}\:\!\overline{d_y}$\vspace{2pt}\parSol{\Hc}
+%$=\BigAng{v\otimes w,\,\mA^*\Par{u\otimes r}}=\BigAng{v\otimes w,\,{\sum_{x=1}^n\sum_{y=1}^m}\Par{c_x\:\!d_y}\sum_{j=1}^n\sum_{k=1}^m\overline{A_{x,\;\!j}B_{y,\;\!k}}\Par{e_j\otimes\:\!f_k}}.$\PfEnd
 %\SepLine
 
 \Anchor{4e9DNE6}\ProblemBX[]{\NoteForSmall{Exe (D.6)}}{
