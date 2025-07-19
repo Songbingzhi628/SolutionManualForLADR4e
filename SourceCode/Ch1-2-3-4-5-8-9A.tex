@@ -3564,7 +3564,7 @@ If some $\dim\nullp q\Par{T}{^j}$ is odd. Then $T$ restr to $\nullp q\Par{T}{^j}
 \TextA{Prove $\forall q\in\PoFi,$ $\exists\,!\,r\in\PoF{\deg p-1},\,q\Par{T}=r\Par{T}.$}
 }Becs $p\neq 0.$ By the div algo, immed. \Sbra{$r=0$ if $q=p.$} \;\;\Or By Exe (4E I.19).\PfEnd\vspace{2pt}\parSol{}
 \Or Let $\deg p=m.$ Becs $T^{m}\in\Span{I,T,\dots,T^{m-1}}.$ For $\deg q<m,$ the repres of $q\Par{T}$ is uniq.\parSol{}
-If $\deg q\geqslant m.$ For each $k\in\Nbb,\exists\,!\,b_{j,k}\in\Fbb,\,T^{m+k}=b_{0,k}I+b_{1,k}T+\dots+b_{m-1,k}T^{m-1}.$\PfEnd
+If $\deg q\geqslant m.$ Note that for each $k\in\Nbb,\exists\,!\,b_{j,k}\in\Fbb,\,T^{m+k}=b_{0,k}I+b_{1,k}T+\dots+b_{m-1,k}T^{m-1}.$\PfEnd
 \SepLine[0pt][\Blind{\BulletPointX} ]
 
 \Anchor{5BI4e19}\ProblemBnoor{4E I.19}{
@@ -3586,9 +3586,9 @@ Now by (4.11), $\dim\PoFi\XSlash\null\Phi=\deg p.$ By [3.91](d).\PfEnd
 }Define $q\Par{z}=z^m+{}${\Large$\frac{\:a_1\:}{a_0}$}$\,z^{m-1}+\dots+{}${\Large$\frac{\:a_{m-1}\:}{a_0}$}$\,z+{}${\Large$\frac{\:1\:}{a_0}$}${}\Rightarrow q\Par{T^{-1}}=T^{-m}p\Par{T}=0.$\vspace{2pt}\parSol{}
 Now $\deg s\leqslant\deg q=\deg p.$ \;Revly, $\deg q=\deg p\leqslant\deg s.$\PfEnd\vspace{4pt}\parSol{}
 \Or Becs each $T^{-k}\not\in\Span[\BigPar]{I,T^{-1},\dots,T^{-\SmallPar{k-1}}}$ for $k\in\;\!\!\Bra{1,\dots,m-1}.$ Done.\parSol{}
-For if not, supp $T^{-k}=b_0 I+b_1 T^{-1}+\dots+b_{k-1}T^{k-1}.$ Note that $T$ inv $\Rightarrow\exists\,b_j\neq 0.$\parSol{}
-Now $T^k\Par{T^{-k}}=I=b_0 T^k+b_1 T^{k-1}+\dots+b_{k-1}T\Rightarrow T^j\in\Span{I,T,\dots,T^{k-1}}.$\PfEnd
+For if not, $\exists\,T^{-k}=b_0 I+b_1 T^{-1}+\dots+b_{k-1}T^{-\SmallPar{k-1}}.$ Apply $T^k.$ Now $a_kT^k+\dots+a_1T+a_0I=0.$\PfEnd
 \SepLine[0pt][\Blind{\BulletPointX} ]
+\pagebreak
 
 \Anchor{5BI4e17}\ProblemBnoor{{4E I.17}}{
 	\TextA{Show the min $s$ of $\Par{T-\lambda I}$ is $q\Par{z}=p\Par{z+\lambda}.$}
