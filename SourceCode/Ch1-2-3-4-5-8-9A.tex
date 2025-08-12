@@ -1165,6 +1165,12 @@ $\exists\,u\apostrophe\in\null \varphi\Backslash[\Big]\null \beta,\,\exists\,u\n
 \Or By Exe (24), $\null \beta\subseteq\null \varphi\Longleftrightarrow\exists\,E\in\Lm{\Fbb},\varphi=E\circ\beta.$ \Sbra{ If $E$ is inv. Then $\null \beta=\null \varphi.$ }\par\quad
 Now $\exists\,E\in\Lm{\Fbb},\varphi=E\circ\beta\Longleftrightarrow\exists\,c=E\Par{1}\in\Fbb,\varphi=c\beta.$ \Sbra{ $E$ is inv $\Longleftrightarrow E\Par{1}\neq 0\Longleftrightarrow c\neq 0.$ }\PfEnd
 \SepLine
+
+%\Anchor{3B'2}\ProblemB{
+%	\TextB{Supp $\varphi,\beta\in\Lm{V,\Fbb}$ liney indep and $\dim V=n.$ \,Show $V=\null\varphi+\null\beta.$}
+%}Let $\varphi\Par{u}=\beta\Par{w}=1.$ Let $B_{\null\varphi}=\Par{e_2,\dots,e_n},B_{\null\beta}=\Par{\,f_2,\dots,\,f_n}.$\parSol{}
+%Note that $\Par{u,w}$ liney indep. Supp $\Mt{\varphi,B_1}=\Par{1\;0\;\cdots\;0}$
+%\SepLine
 \ChEnd\pagebreak
 
 \ChDecl{Ch3C}{3$\cdot$C}{\quad{\small\textbf{注意\,:}\;这里我将原书中3.D后半节正文前置。}}
@@ -2037,7 +2043,7 @@ For $u_x\in U_X,\;u_x+W=0\Longleftrightarrow u_x\in U_X\cap W\Longleftrightarrow
 
 \ProblemB{
 	\TextB{Supp $V=U_1\oplus\cdots\oplus U_m,$ and each $V_{\!k}=\bigoplus_{i\,\in\,\Gamma_{\!k}}\!U_i,$ where $\Gamma_{\!k}=\Bra{1,\dots,n}\Backslash[\Big]\Bra{k}.$\vspace{2pt}}
-	\TextB{Prove $V\apostrophe=V_{\!1}^0\oplus\cdots\oplus V_{\!m}^0$\FontSmall${}=\BigSbra{{\bigcap_{k=1}^n\!\Sbra{{\bigoplus_{i\,\in\,\Gamma_{\!k}}\!U_i}}}}{^0}=\bigoplus_{k=1}^n\!\Sbra{{\bigcap_{i\,\in\,\Gamma_{\!k}}\!U_i^0}}.$ See the {\COROLLARY} after Exe (23).\PfEnd\vspace{2pt}}
+	\TextB{Prove $V\apostrophe=V_{\!1}^0\oplus\cdots\oplus V_{\!m}^0$\FontSmall${}=\BigSbra{{\bigcap_{k=1}^n\!\Sbra{{\bigoplus_{i\,\in\,\Gamma_{\!k}}\!U_i}}}}{^0}=\bigoplus_{k=1}^n\!\Sbra{{\bigcap_{i\,\in\,\Gamma_{\!k}}\!U_i^0}}.$\PfEnd\vspace{2pt}}
 }Supp $\varphi\in V\apostrophe.$ \,Define each $\varphi_k\in V_{\!k}^0$ by $\varphi_k\Par{u_k}=\varphi\Par{u_k}$ for all $u_k\in U_k.$ Then $\varphi=\varphi_1+\dots+\varphi_m.$\vspace{2pt}\parSol{}
 We use induc by $k$ on $m$ to show the directness of sum. (i) $k=2.$ $\psi\in V_{\!1}^0\cap V_{\!2}^0\Rightarrow\psi=0.$\parSol{}
 (ii) $k>2.$ Asum it holds for smaller $k.$ \,Then $\psi\in\BigPar{V_{\!1}^0\oplus\cdots\oplus V_{\!{k-1}}^0}\bigcap V_{\!k}^0\Rightarrow\psi=0.$\PfEnd
@@ -2100,7 +2106,7 @@ $v\in U\Rightarrow\forall\varphi\in W^0\subseteq U^0,\,\varphi\Par{v}=0\Rightarr
 \SepLine
 
 \ProblemN{\Anchor{3F22}{22}}{
-	\TextA{Supp $U$ and $W$ are subsps of $V$. Prove $\BigPar{U+W}{^0}=U^0\cap W^0$.}
+	\TextA{Supp $U,W$ subsps of $V$. Prove $\BigPar{U+W}{^0}=U^0\cap W^0$.\;\;\FontSmall Then $\BigPar{U_1+\cdots+U_m}{^0}=U_1^0\cap\cdots\cap U_m^0.$}
 }\vspace{-14pt}\parSol{}
 \!\!\!$\hText{$
 	(a) $\varphi\in\BigPar{U+W}{^0}\Rightarrow\forall u\in U,w\in W,\\$
@@ -2109,7 +2115,7 @@ $v\in U\Rightarrow\forall\varphi\in W^0\subseteq U^0,\,\varphi\Par{v}=0\Rightarr
 \SepLine
 
 \ProblemN{\Anchor{3F37}{37}}{
-	\TextA{Supp $U$ is a subsp of $V$ and $\pi$ is the quot map. Thus $\pi\apostrophe\in\Lm[\BigPar]{\Par{V\XSlash U}\apostrophe,V\apostrophe}$.\vspace{2pt}}
+	\TextA{Supp $U$ subsp of $V,$ and $\pi$ is the quot map. Thus $\pi\apostrophe\in\Lm[\BigPar]{\Par{V\XSlash U}\apostrophe,V\apostrophe}$.\vspace{2pt}}
 	\PrePa\TextA{Show $\pi\apostrophe$ is inje\hspace{1pt}$:${\tgnr\FontNorm\;\;Becs $\pi$ is surj. Use [3.108].}\vspace{2pt}}
 	\PrePb\TextA{Show $\range \pi\apostrophe=U^0$\hspace{1pt}$:${\tgnr\FontNorm\;\;By {\tgnr[3.109](b)}, $\range\pi\apostrophe=\BigPar{\null\pi}{^0}=U^0.$\hfill \ACoro $\pi\apostrophe$ is iso.}}
 %	\PrePc\TextA{Conclude that $\pi\apostrophe$ is iso from $\Par{V\XSlash U}\apostrophe$ onto $U^0$\hspace{1pt}$:${\tgnr\FontNorm\;\;Immed.}}
@@ -2132,7 +2138,7 @@ Surj: $\varPhi\in\Par{V\XSlash U}\apostrophe\Rightarrow\forall u\in U,\varPhi\Pa
 %\SepLine
 
 \ProblemN{\Anchor{3F23}{23}}{
-	\TextA{Supp $U$ and $W$ are subsps of $V$. Prove $\BigPar{U\cap W}{^0}=U^0+W^0$.\vspace{-2pt}}
+	\TextA{Supp $U,W$ subsps of $V$. Prove $\BigPar{U\cap W}{^0}=U^0+W^0$.\;\;\FontSmall Then $\BigPar{U_1\cap\cdots\cap U_m}{^0}=U_1^0+\cdots+U_m^0.$\vspace{-2pt}}
 }\vspace{3pt}\par\quad
 \!\!\!$\hText{$
 	(a) $\varphi=\psi+\beta\in U^0+W^0\Rightarrow\forall v\in U\cap W,\\$
@@ -2162,8 +2168,7 @@ Thus $\Par{\Lambda_2\circ\chi\apostrophe\circ\xi\circ\Lambda_1}$ is the surj $\L
 \SepLine[-3pt]
 
 \BulletPointX\ACoro
-%{$\Par{U_1+\cdots+U_m}{^0}=U_1^0\cap\cdots\cap U_m^0,$ \,and\;$\Par{U_1\cap\cdots\cap U_m}{^0}=U_1^0+\cdots+U_m^0.$}\parCor{\IndentB}
-{$V=U_1\oplus\cdots\oplus U_m\Longleftrightarrow V\apostrophe=U_1^0\oplus\cdots\oplus U_m^0.$}\vspace{-2pt}
+$V=U\oplus W\Longleftrightarrow V\apostrophe=U^0\oplus W^0.$
 \SepLine
 
 \Anchor{3F'2}\ProblemB{
