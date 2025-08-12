@@ -1141,9 +1141,8 @@ Linity: $\forall v,w\in V\,\Sbra{\exists\,!\,a_i,b_i\in\Fbb},\lambda\in\Fbb,\var
 %\SepLine
 
 \ProblemN{\Anchor{3B30}{30}}{
-	\TextA{Supp $\varphi,\beta\in\Lm{V,\Fbb}$ and $\null\varphi=\null\beta=\eta.$ Prove $\exists\,c\in\Fbb,\varphi=c\beta.$}
-}If $\eta=V$, then $\varphi=\beta=0,$ done. Now by Exe (29),\parSol{}
-$\varphi\Par{u}\neq 0\Longleftrightarrow V=\null\varphi\oplus\Span{u}\Longleftrightarrow V=\null\beta\oplus\Span{u}\Longleftrightarrow\beta\Par{u}\neq 0.$\parSol{}
+	\TextA{Supp non0 $\varphi,\beta\in\Lm{V,\Fbb}$ and $\null\varphi=\null\beta=\eta.$ Prove $\exists\,c\in\Fbb,\varphi=c\beta.$}
+}Let $u$ be suth $\varphi\Par{u}\neq 0,$ equiv to $\beta\Par{u}\neq 0.$ Then $V=\null\varphi\oplus\Span{u}=\null\beta\oplus\Span{u}.$\parSol{}
 \hspace{-5pt}$\hText{$
 	Note that $\forall v\in V,\exists\,!\,u_0\in\eta,\;a_v\in\Fbb,v=u_0+a_vu\\$
 	$\Rightarrow\varphi\Par{u_0+a_vu}=a_v\varphi\Par{u},\;\beta\Par{u_0+a_vu}=a_v\beta\Par{u}.}\;\MathLeftMid{l}{$Let $c={}${\Large\envFontSmall$\frac{\varphi\Par{u}}{\beta\Par{u}}$}${}\in\nonzeroFbb.}$\PfEnd%\vspace{6pt}
@@ -1152,12 +1151,11 @@ $\varphi\Par{u}\neq 0\Longleftrightarrow V=\null\varphi\oplus\Span{u}\Longleftri
 \SepLine
 
 \Anchor{3F4e6}\ProblemBnoor{{4E 3.F.6}}{
-	\TextB{Supp $\varphi,\beta\in\Lm{V,\Fbb}.$ Prove $\null \beta\subseteq\null\varphi\Longleftrightarrow\varphi=c\beta,\exists\,c\in\Fbb.$}
+	\TextB{Supp non0 $\varphi,\beta\in\Lm{V,\Fbb}.$ Prove $\null \beta\subseteq\null\varphi\Longleftrightarrow\varphi=c\beta,\exists\,c\in\Fbb.$}
 	\ACoro $\null \varphi=\null\beta\Longleftrightarrow\varphi=c\beta,\;\exists\,c\in\nonzeroFbb.$\TextB{}
-}Using Exe (29) and (30).\par\quad
-(a) If $\varphi=0,$ then done. Othws, supp $u\not\in\null\varphi\supseteq\null \beta.$\vspace{-4pt}\par\quad\Ha
-Now $V=\null \varphi\oplus\Span{u}=\null \beta\oplus\Span{u}.$ By \Sbra{1.C \TIPSN{1}}, $\null \varphi=\null \beta.$ \;Let $c={}${\Large\envFontSmall$\frac{\varphi\Par{u}}{\beta\Par{u}}$}.\vspace{2pt}\par\quad\Ha
-\Or We discuss in two cases. If $\null \beta=\null \varphi$, or if $\varphi=0,$ then done. Othws,\par\quad\Ha
+}Using Exe (29) and (30).\vspace{-2pt}\par\quad
+(a) $u\not\in\null\varphi\supseteq\null \beta\Rightarrow V=\null \varphi\oplus\Span{u}=\null \beta\oplus\Span{u}\Rightarrow\null \varphi=\null \beta.$ \;Let $c={}${\Large\envFontSmall$\frac{\varphi\Par{u}}{\beta\Par{u}}$}.\vspace{2pt}\par\quad\Ha
+\Or We discuss in two cases. If $\null \beta=\null \varphi$, then done. Othws,\par\quad\Ha
 $\exists\,u\apostrophe\in\null \varphi\Backslash[\Big]\null \beta,\,\exists\,u\not\in\null\varphi\supsetneq\null\beta\Rightarrow V=\null \beta\oplus\Span{u\apostrophe}=\null \beta\oplus\Span{u}.$\par\quad\Ha
 \hspace{-5pt}$\hText{$
 	$\forall v \in V, v=w+au=w\apostrophe+bu\apostrophe,\,\exists\,!\,w, w\apostrophe\in\null \beta\\$
@@ -2895,18 +2893,18 @@ Then $rp=-sq.$ Becs $p,q$ are \uline{coprime} $\Rightarrow p\:\mmid\:s,$ while $
 By the ctrapos of [4.13], $M=0\Longleftrightarrow m=0\Rightarrow s=0\Longleftrightarrow r=0 \Leftarrow n=0\Longleftrightarrow N=0.$\vspace{2pt}\par\quad
 Now supp $M,N\geqslant 1.$ We show $s=0.$ \,{\FontSmall Simlr for $r=0.$ \Or $s=0\Rightarrow r=0.$}\vspace{2pt}\par\quad
 Write $p\Par{z}=a\Par{z-\lambda_1}{^{\alpha_1}}\cdots\Par{z-\lambda_M}{^{\alpha_M}}.$ \,Let $\max\!\Bra{\alpha_1,\dots,\alpha_M}=A=\alpha_L.$\vspace{2pt}\par\quad
-For each $D\in\;\!\!\Bra{0,1,\dots,A-1},$ let $I_{>D}=\Bra{{I_{D,1}},\dots,{I_{D,\,J_D}}}$ be suth each $\alpha\Sbra{I_{D,j}}=\alpha_{I_{D,j}}\geqslant D+1.$\vspace{2pt}\par\quad
+For each $D\in\;\!\!\Bra{0,1,\dots,A-1},$ let $I_{>D}=\Bra{{I_{D,\:\!1}},\dots,{I_{D,\,J_D}}}$ be suth each $\alpha\Sbra{I_{D,\:j}}=\alpha_{I_{D,\:j}}\geqslant D+1.$\vspace{2pt}\par\quad
 Now $\Bra{L}=I_{>A-1}\subseteq \cdots\subseteq I_{>0}=\Bra{1,\dots,M}.$ Becs $rp+sq=0\Rightarrow\Par{rp+sq}{^{\SmallPar{k}}}=0$ for all $k\in\Nbp.$\vspace{2pt}\par\quad
-We use induc on $D$ to show\;$s{^{\SmallPar{D}}}\BigPar{\lambda\Sbra{I_{D,j}}}=0$ for each $D\in\;\!\!\Bra{0,\dots,A-1}.$\vspace{2pt}\par\quad
-\NOTICE that by \TIPSN{2}, \,$p{^{\SmallPar{D}}}\BigPar{\lambda\Sbra{I_{D,j}}}=0$ for each $D\in\;\!\!\Bra{0,\dots,A-1}$ and each $I_{D,j}\in I_{>D}.$\vspace{2pt}\par\quad
+We use induc on $D$ to show\;$s{^{\SmallPar{D}}}\BigPar{\lambda\Sbra{I_{D,\:j}}}=0$ for each $D\in\;\!\!\Bra{0,\dots,A-1}.$\vspace{2pt}\par\quad
+\NOTICE that by \TIPSN{2}, \,$p{^{\SmallPar{D}}}\BigPar{\lambda\Sbra{I_{D,\:j}}}=0$ for each $D\in\;\!\!\Bra{0,\dots,A-1}$ and each $I_{D,\:j}\in I_{>D}.$\vspace{2pt}\par\quad
 (i) $D=0.$ Each $\Par{rp+sq}\BigPar{\lambda\Sbra{I_{0,\;\!j}}}=\Par{sq}\BigPar{\lambda\Sbra{I_{0,\;\!j}}}=s\BigPar{\lambda\Sbra{I_{0,\;\!j}}}=0.$ Where \,$q\BigPar{\lambda\Sbra{I_{0,\;\!j}}}\neq0.$\vspace{2pt}\par\quad\Hi
 $D=1.$ Each $\Par{r\apostrophe p+rp\apostrophe}\BigPar{\lambda\Sbra{I_{1,\;\!j}}}+\Par{s\apostrophe q+sq\apostrophe}\BigPar{\lambda\Sbra{I_{1,\;\!j}}}=\Par{s\apostrophe q}\BigPar{\lambda\Sbra{I_{1,\;\!j}}}=s\apostrophe\BigPar{\lambda\Sbra{I_{1,\;\!j}}}=0.$\vspace{1pt}\par\quad\Hi
 \Blind{$D=1.$} Where \,$p\apostrophe\BigPar{\lambda\Sbra{I_{1,\;\!j}}}=0,$ and each $I_{1,\;\!j}\subseteq I_{0,\;\!j}\Rightarrow s\BigPar{\lambda\Sbra{I_{1,\;\!j}}}=0.$\vspace{4pt}\par\quad\Endi
 (ii) $2\leqslant D\leqslant A-1.$ Asum $\;s{^{\SmallPar{d}}}\BigPar{\lambda\Sbra{I_{d,\;\!j}}}=0$ for each $d\in\;\!\!\Bra{0,1,\dots,D-1}$ and each $\lambda\Sbra{I_{d,\;\!j}}\in I_{>d}.$\vspace{2pt}\par\quad\Hii
-Each $\Sbra{rp+sq}{^{\SmallPar{D}}}\BigPar{\lambda\Sbra{I_{D,j}}}=\Sbra{\mathC_{D}^D r{^{\SmallPar{D}}}p{^{\SmallPar{0}}}+\dots+\mathC_{D}^d r{^{\SmallPar{d}}}p{^{\SmallPar{D-d}}}+\dots+\mathC_{D}^0 r{^{\SmallPar{0}}}p{^{\SmallPar{D}}}}\BigPar{\lambda\Sbra{I_{D,j}}}$\hfill(L1)\vspace{4pt}\par\quad\Hii
-\Blind{Each} $\Blind{\Sbra{rp+sq}{^{\SmallPar{D}}}\BigPar{\lambda\Sbra{I_{D,j}}}=}\;\!+\Sbra{\mathC_{D}^D s{^{\SmallPar{D}}}q{^{\SmallPar{0}}}+\dots+\mathC_{D}^d s{^{\SmallPar{d}}}q{^{\SmallPar{D-d}}}+\dots+\mathC_{D}^0 s{^{\SmallPar{0}}}q{^{\SmallPar{D}}}}\BigPar{\lambda\Sbra{I_{D,j}}}$\vspace{4pt}\par\quad\Hii
-\Blind{Each} $\Blind{\Sbra{rp+sq}{^{\SmallPar{D}}}\BigPar{\lambda\Sbra{I_{D,j}}}}=\Sbra{\mathC_{D}^D s{^{\SmallPar{D}}}q{^{\SmallPar{0}}}}\BigPar{\lambda\Sbra{I_{D,j}}}.$\; Where each $\lambda\Sbra{I_{D,j}}\in I_{>D}\subseteq I_{D-1,\alpha}.$\vspace{4pt}\par\quad\Hii
-Hence \,$s{^{\SmallPar{D}}}\BigPar{\lambda\Sbra{I_{D,j}}}=0.$ The asum holds for all $D\in\;\!\!\Bra{0,\dots,A-1}.$\vspace{6pt}\par\quad
+Each $\Sbra{rp+sq}{^{\SmallPar{D}}}\BigPar{\lambda\Sbra{I_{D,\:j}}}=\Sbra{\mathC_{D}^D\:r{^{\SmallPar{D}}}p{^{\SmallPar{0}}}+\dots+\mathC_{D}^d\;\!r{^{\SmallPar{d}}}p{^{\SmallPar{D-d}}}+\dots+\mathC_{D}^0\;\!r{^{\SmallPar{0}}}p{^{\SmallPar{D}}}}\BigPar{\lambda\Sbra{I_{D,\:j}}}$\hfill(L1)\vspace{4pt}\par\quad\Hii
+\Blind{Each} $\Blind{\Sbra{rp+sq}{^{\SmallPar{D}}}\BigPar{\lambda\Sbra{I_{D,\:j}}}=}\;\!+\Sbra{\mathC_{D}^D\:s{^{\SmallPar{D}}}q{^{\SmallPar{0}}}+\dots+\mathC_{D}^d\:s{^{\SmallPar{d}}}q{^{\SmallPar{D-d}}}+\dots+\mathC_{D}^0\:s{^{\SmallPar{0}}}q{^{\SmallPar{D}}}}\BigPar{\lambda\Sbra{I_{D,\:j}}}$\vspace{4pt}\par\quad\Hii
+\Blind{Each} $\Blind{\Sbra{rp+sq}{^{\SmallPar{D}}}\BigPar{\lambda\Sbra{I_{D,\:j}}}}=\Sbra{\mathC_{D}^D\:s{^{\SmallPar{D}}}q{^{\SmallPar{0}}}}\BigPar{\lambda\Sbra{I_{D,\:j}}}.$\; Where each $\lambda\Sbra{I_{D,\:j}}\in I_{>D}\subseteq I_{D-1,\;\!\alpha}.$\vspace{4pt}\par\quad\Hii
+Hence \,$s{^{\SmallPar{D}}}\BigPar{\lambda\Sbra{I_{D,\:j}}}=0.$ The asum holds for all $D\in\;\!\!\Bra{0,\dots,A-1}.$\vspace{6pt}\par\quad
 \NOTICE that $\forall k=\Bra{0,\dots,A-2},\,s{^{\SmallPar{k}}}$ and $s{^{\SmallPar{k+1}}}$ have common zeros $\BigBra{{\lambda\Sbra{I_{k+1,1}},\dots,\lambda\Sbra{I_{k+1,\,J_{k+1}}}}}.$\vspace{2pt}\par\quad
 Now $\forall D\in\;\!\!\Bra{1,\dots,A-1},\,s=s{^{\SmallPar{0}}},\dots,s{^{\SmallPar{D}}}$ have common zeros $\BigBra{{\lambda\Sbra{I_{D,1}},\dots,\lambda\Sbra{I_{D,\,J_D}}}}.$\vspace{2pt}\par\quad
 Thus \,$s\Par{z}$ is div by $\BigPar{z-\lambda\Sbra{I_{D,1}}}{^{\alpha\def\envFont{\scriptsize}\Sbra{I_{D,1}}}}\cdots\BigPar{z-\lambda\Sbra{I_{D,\,J_D}}}{^{\alpha\def\envFont{\scriptsize}\Sbra{I_{D,\,J_D}}}},$ for each $D\in\;\!\!\Bra{0,\dots,A-1}.$\vspace{2pt}\par\quad
@@ -2914,16 +2912,16 @@ Hence $s\Par{z}=\Sbra{\Par{z-\lambda_1}{^{\alpha_1}}\cdots\Par{z-\lambda_M}{^{\a
 \SepLine\pagebreak
 
 \Anchor{4OL1}\ProblemN{L1}{
-	\TextB{Prove $\forall p,q\in\PoFi,k\in\Nbp,\Par{pq}{^{\SmallPar{k}}}=\mathC_{k}^k p{^{\SmallPar{k}}}q{^{\SmallPar{0}}}+\dots+\mathC_{k}^j p{^{\SmallPar{j}}}q{^{\SmallPar{k-j}}}+\dots+\mathC_{k}^0 p{^{\SmallPar{0}}}q{^{\SmallPar{k}}}.$}
+	\TextB{Prove $\forall p,q\in\PoFi,k\in\Nbp,\Par{pq}{^{\SmallPar{k}}}=\mathC_{k}^k\;\!p{^{\SmallPar{k}}}q{^{\SmallPar{0}}}+\dots+\mathC_{k}^j\;\!p{^{\SmallPar{j}}}q{^{\SmallPar{k-j}}}+\dots+\mathC_{k}^0\;\!p{^{\SmallPar{0}}}q{^{\SmallPar{k}}}.$}
 }\par\quad
-We use induc on $k\in\Nbp.$ \;(i) $k=1.$ $\Par{pq}{^{\SmallPar{1}}}=\Par{pq}\apostrophe=C_{1}^1 p{^{\SmallPar{1}}}q{^{\SmallPar{0}}}+C_{1}^0 p{^{\SmallPar{0}}}q{^{\SmallPar{1}}}.$ \;(ii) $k\geqslant 2.$\vspace{2pt}\par\quad
-Asum for $\Par{pq}{^{\SmallPar{k-1}}}=\mathC_{k-1}^{k-1} p{^{\SmallPar{k-1}}}q{^{\SmallPar{0}}}+\dots+\mathC_{k-1}^j p{^{\SmallPar{j}}}q{^{\SmallPar{k-1-j}}}+\dots+\mathC_{k-1}^0 p{^{\SmallPar{0}}}q{^{\SmallPar{k-1}}}.$\vspace{4pt}\par\quad
-Now $\Par{pq}{^{\SmallPar{k}}}=\BigPar{\Par{pq}{^{\SmallPar{k-1}}}}\apostrophe=\XPar{{\sum_{j=0}^{k-1}\mathC_{k-1}^{j} p{^{\SmallPar{j}}}q{^{\SmallPar{k-j-1}}}}}\apostrophe=\sum_{j=0}^{k-1}\XSbra{\mathC_{k-1}^{j} \XPar{p{^{\SmallPar{j+1}}}q{^{\SmallPar{k-j-1}}}+p{^{\SmallPar{j}}}q{^{\SmallPar{k-j}}}}}.$\vspace{4pt}\par\quad
+We use induc on $k\in\Nbp.$ \;(i) $k=1.$ $\Par{pq}{^{\SmallPar{1}}}=\Par{pq}\apostrophe=C_{1}^1\;\!p{^{\SmallPar{1}}}q{^{\SmallPar{0}}}+C_{1}^0\;\!p{^{\SmallPar{0}}}q{^{\SmallPar{1}}}.$ \;(ii) $k\geqslant 2.$\vspace{2pt}\par\quad
+Asum for $\Par{pq}{^{\SmallPar{k-1}}}=\mathC_{k-1}^{k-1}\;\!p{^{\SmallPar{k-1}}}q{^{\SmallPar{0}}}+\dots+\mathC_{k-1}^j\;\!p{^{\SmallPar{j}}}q{^{\SmallPar{k-1-j}}}+\dots+\mathC_{k-1}^0\;\!p{^{\SmallPar{0}}}q{^{\SmallPar{k-1}}}.$\vspace{4pt}\par\quad
+Now $\Par{pq}{^{\SmallPar{k}}}=\BigPar{\Par{pq}{^{\SmallPar{k-1}}}}\apostrophe=\XPar{{\sum_{j=0}^{k-1}\mathC_{k-1}^{j}\;\!p{^{\SmallPar{j}}}q{^{\SmallPar{k-j-1}}}}}\apostrophe=\sum_{j=0}^{k-1}\;\!\XSbra{\mathC_{k-1}^{j} \XPar{p{^{\SmallPar{j+1}}}q{^{\SmallPar{k-j-1}}}+p{^{\SmallPar{j}}}q{^{\SmallPar{k-j}}}}}.$\vspace{4pt}\par\quad
 \Blind{Now} $\Blind{\Par{pq}{^{\SmallPar{k}}}\!}=\XSbra{\mathC_{k-1}^{0}\XPar{ \uwave{p{^{\SmallPar{1}}}q{^{\SmallPar{k-1}}}}+\boxed{p{^{\SmallPar{0}}}q{^{\SmallPar{k}}}}}}+\XSbra{\mathC_{k-1}^1\XPar{p{^{\SmallPar{2}}}q{^{\SmallPar{k-2}}}+\uwave{p{^{\SmallPar{1}}}q{^{\SmallPar{k-1}}}}}}$\vspace{4pt}\par\quad
 \Blind{Now} $\Blind{\Par{pq}{^{\SmallPar{k}}}=}+\dots+\XSbra{\mathC_{k-1}^{j-2}\XPar{ \uline{p{^{\SmallPar{j-1}}}q{^{\SmallPar{k-j+1}}}}+p{^{\SmallPar{j-2}}}q{^{\SmallPar{k-j+2}}}}}+\XSbra{\mathC_{k-1}^{j-1}\XPar{ \uuline{p{^{\SmallPar{j}}}q{^{\SmallPar{k-j}}}}+\uline{p{^{\SmallPar{j-1}}}q{^{\SmallPar{k-j+1}}}}}}$\vspace{4pt}\par\quad
 \Blind{Now} $\Blind{\Par{pq}{^{\SmallPar{k}}}=}+\XSbra{\mathC_{k-1}^{j}\XPar{ \uwave{p{^{\SmallPar{j+1}}}q{^{\SmallPar{k-j-1}}}}+\uuline{ p{^{\SmallPar{j}}}q{^{\SmallPar{k-j}}}}}}+\XSbra{\mathC_{k-1}^{j+1}\XPar{p{^{\SmallPar{j+2}}}q{^{\SmallPar{k-j-2}}}+\uwave{p{^{\SmallPar{j+1}}}q{^{\SmallPar{k-j-1}}}}}}$\vspace{4pt}\par\quad
 \Blind{Now} $\Blind{\Par{pq}{^{\SmallPar{k}}}=}+\dots+\XSbra{\mathC_{k-1}^{k-2}\XPar{ \uline{p{^{\SmallPar{k-1}}}q{^{\SmallPar{1}}}}+p{^{\SmallPar{k-2}}}q{^{\SmallPar{2}}}}}+\XSbra{\mathC_{k-1}^{k-1}\XPar{ \boxed{p{^{\SmallPar{k}}}q{^{\SmallPar{0}}}}+\uline{p{^{\SmallPar{k-1}}}q{^{\SmallPar{1}}}}}}.$\vspace{8pt}\par\quad
-Hence $\Par{pq}{^{\SmallPar{k}}}=\mathC_{k}^0{p{^{\SmallPar{0}}}q{^{\SmallPar{k}}}}+\dots+\XSbra{\mathC_{k-1}^{j}+\mathC_{k-1}^{j-1}}\BigPar{p{^{\SmallPar{j}}}q{^{\SmallPar{k-j}}}}+\dots+\mathC_{k}^{k}{p{^{\SmallPar{k}}}q{^{\SmallPar{0}}}}.$\PfEnd
+Hence $\Par{pq}{^{\SmallPar{k}}}=\mathC_{k}^0\;\!{p{^{\SmallPar{0}}}q{^{\SmallPar{k}}}}+\dots+\XSbra{\mathC_{k-1}^{j}+\mathC_{k-1}^{j-1}}\BigPar{p{^{\SmallPar{j}}}q{^{\SmallPar{k-j}}}}+\dots+\mathC_{k}^{k}\;\!{p{^{\SmallPar{k}}}q{^{\SmallPar{0}}}}.$\PfEnd
 \SepLine
 \ChEnd
 
@@ -3969,7 +3967,7 @@ Let $\Par{T-\lambda_jI}{^k}w=0\neq\Par{T-\lambda_jI}{^{k-1}}w.$ By \Sbra{5.B(I) 
 \Anchor{8A4e16}\ProblemBnoor{4E A.16}{
 	\TextA{Supp $S,T\in\Lm{V}$ nilp and commu. Prove $S+T,ST$ are nilp}
 }By [4E 5.80], $\exists\,B_V$ suth $S,T$ up-trig \Par{with only $0$'s on diags}. By (4E 5.C.2).\PfEnd\vspace{2pt}\parSol{}
-\Or Let $S^p=T^q=0.$ Becs $S,T$ commu, $\Par{ST}{^{\max\!\Bra[\scriptsize]{p,\,q}}}=0=\Par{S+T}{^{p+q}}=\sum_{i=0}^{p+q}\mathC_{p+q}^iS^iT^{p+q-i}.$\PfEndB
+\Or Let $S^p=T^q=0.$ Becs $S,T$ commu, $\Par{ST}{^{\max\!\Bra[\scriptsize]{p,\,q}}}=0=\Par{S+T}{^{p+q}}=\sum_{i=0}^{p+q}\mathC_{p+q}^i\;\!S^i\;\!T^{p+q-i}.$\PfEndB
 \SepLine
 
 %\Anchor{8A19}\ProblemN{19}{
