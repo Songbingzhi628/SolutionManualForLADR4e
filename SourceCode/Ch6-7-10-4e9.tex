@@ -550,9 +550,9 @@ If $s_1=s_n.$ Done. \,Supp $s_1>s_n.$ Then \,$s_1^2-s^2=\Par{s_1^2-s_n^2}\,y^2,$
 \Anchor{7E11}\ProblemN{E.11}{
 	\TextA{Supp $T\in\Lm{V}$ is posi, $B_V=\Par{v_1,\dots,v_n}$ is orthon, and $s_1,\dots,s_n$ are the singvals.\vspace{1pt}}
 	\TextA{Prove $\Ang{Tv_1,\;\!v_1}+\dots+\Ang{Tv_n,\;\!v_n}=s_1+\dots+s_n.$\vspace{2pt}}
-}$\Ang{Tv_k,\;\!v_k}=\BigAng{\sqrt{T}v_k,\:\!\sqrt{T}v_k}=\BigDvertsq{\sqrt{T}v_k}.$ Note that $\sqrt{T}=\sqrt{T^*}=\BigPar{\!\!\:\sqrt{T}}{^*}$ is posi.\parSol{}
+}$\Ang{Tv_k,\;\!v_k}=\BigAng{\sqrt{T}v_k,\:\!\sqrt{T}v_k}=\BigDvertsq{\;\!\!\sqrt{T}v_k}.$ Note that $\sqrt{T}=\sqrt{T^*}=\BigPar{\!\!\:\sqrt{T}}{^*}$ is posi.\parSol{}
 \NOTICE that \,$s_1,\dots,s_n$ are the eigvals of $\sqrt{T}{^*}\sqrt{T}=T\Longrightarrow\sqrt{s_1},\dots,\sqrt{s_n}$ are the singvals of $\sqrt{T}.$\vspace{1pt}\parSol{}
-Get the SVD $\Par{e_1,\dots,e_n},\Par{\,f_1,\dots,f_n}.$ By (4E 7.A.5), $\uline{\sum\BigDvertsq{\sqrt{T}v_k}=\sum\BigDvertsq{\sqrt{T}e_k}=\sum s_k}.$\PfEnd
+Get the SVD $\Par{e_1,\dots,e_n},\Par{\,f_1,\dots,f_n}.$ By (4E 7.A.5), $\uline{\sum\BigDvertsq{\;\!\!\sqrt{T}v_k}=\sum\BigDvertsq{\;\!\!\sqrt{T}e_k}=\sum s_k}.$\PfEnd
 %Becs $A=\Mt{T}=\Mt{T}{^*}$ wrto $B_V,$ and each $\Ang{Tv_k,\:\!v_k}=A_{k,\;\!k}=\lambda_k\Rightarrow T$ diag wrto $B_V.$\parSol{}
 %Becs $T$ posi $\Rightarrow\aMidsq{\lambda_k}=\lambda_k^2.$ 又 $T^*Tv_k=T^2v_k=\lambda_k^2\:\!v_k=s_k^2\:\!v_k.$\PfEnd\vspace{2pt}\parSol{}
 \SepLine
@@ -600,8 +600,8 @@ Becs $\Dvertsq{T^*Tv}\leqslant\Dvertsq{T}\Dvertsq{Tv}=\Dvertsq{T}\Dvertsq{T}\Dve
 \SepLine
 
 \Anchor{7F19}\ProblemN{F.19}{
-	\TextA{Prove $\Dvert{T^*T}=\Dvertsq{T}.$\hfill\FontNorm\tgnr $\Dvert{T}=\Dvert{\sqrt{T^*T}\;\!}=\sqrt{\Dvert{T^*T}}.$ \,\Or By Exe (F.2), $\Dvert{T^*T}=s_1^2.$\Blind{\quad}\PfEnd}
-}$\forall v\in V,\:\Dvert{Tv}=\BigDvert{\sqrt{T^*T}v}\leqslant\BigDvert{\sqrt{T^*T}\;\!}\,\Dvert{v}\Rightarrow\Dvert{T}\leqslant\BigDvert{\sqrt{T^*T}\;\!}.$ 又 $\Dvert{T^*T}\leqslant\Dvert{T^*}\,\Dvert{T}.$\PfEnd\vspace{2pt}\parSol{}
+	\TextA{Prove $\Dvert{T^*T}=\Dvertsq{T}.$\hfill\FontNorm\tgnr $\Dvert{T}=\Dvert{\;\!\!\sqrt{T^*T}\;\!}=\sqrt{\Dvert{T^*T}}.$ \,\Or By Exe (F.2), $\Dvert{T^*T}=s_1^2.$\Blind{\quad}\PfEnd}
+}$\forall v\in V,\:\Dvert{Tv}=\BigDvert{\;\!\!\sqrt{T^*T}v}\leqslant\BigDvert{\;\!\!\sqrt{T^*T}\;\!}\,\Dvert{v}\Rightarrow\Dvert{T}\leqslant\BigDvert{\;\!\!\sqrt{T^*T}\;\!}.$ 又 $\Dvert{T^*T}\leqslant\Dvert{T^*}\,\Dvert{T}.$\PfEnd\vspace{2pt}\parSol{}
 \Or $T=S\sqrt{T^*T},\sqrt{T^*T}=S^*T.$ Simlr.\PfEnd
 \SepLine
 
@@ -685,8 +685,8 @@ Supp $U$ is a $k$\hspace{1pt}-\hspace{1pt}dim subsp of $V.$ \,\NOTICE that $\uli
 
 \Anchor{7F13}\ProblemN{F.13}{
 	\TextA{Supp $S,T\in\Lm{V}$ are posi. Show $\Dvert{S-T}\leqslant\max\!\Bra{\Dvert{S},\Dvert{T}}\leqslant\Dvert{S+T}.$}
-}$\Dvert{S+T}=\BigDvertsq{\sqrt{S+T}\;\!}\geqslant\BigDvertsq{\sqrt{S+T}\,v}=\Ang{Sv+Tv,v}=\Ang{Sv,v}+\Ang{Tv,v}=\BigDvertsq{\sqrt{S}\,v}+\BigDvertsq{\sqrt{T}\,v}.$\parSol{}
-Let $v\in V$ suth $\BigDvertsq{\sqrt{S}\,v}=\BigDvertsq{\sqrt{S}\;\!}=\Dvert{S}\Rightarrow\Dvert{S+T}\geqslant\Dvert{S}.$ \;Simlr, $\Dvert{S+T}\geqslant\Dvert{T}.$\vspace{2.5pt}\parSol{}
+}$\Dvert{S+T}=\BigDvertsq{\;\!\!\sqrt{S+T}\;\!}\geqslant\BigDvertsq{\;\!\!\sqrt{S+T}\,v}=\Ang{Sv+Tv,v}=\Ang{Sv,v}+\Ang{Tv,v}=\BigDvertsq{\;\!\!\sqrt{S}\,v}+\BigDvertsq{\;\!\!\sqrt{T}\,v}.$\parSol{}
+Let $v\in V$ suth $\BigDvertsq{\;\!\!\sqrt{S}\,v}=\BigDvertsq{\;\!\!\sqrt{S}\;\!}=\Dvert{S}\Rightarrow\Dvert{S+T}\geqslant\Dvert{S}.$ \;Simlr, $\Dvert{S+T}\geqslant\Dvert{T}.$\vspace{2.5pt}\parSol{}
 %\Or By \TIPS, $S,T,S+T-T,S+T-S$ posi $\Rightarrow$ $\Dvert{T}\leqslant\Dvert{S+T-T+T},$ and $\Dvert{S}\leqslant\Dvert{S+T-S+S}.$\vspace{3pt}\parSol{}
 Denote $\,\max\!\Bra{\aMid{\lambda}:\lambda\text{ is eigval of }T}\,$ by $\,\aMid{\lambda_M}{_T}.$ We show $\aMid{\lambda_M}{_{S-T}}\leqslant\max\!\Bra{\aMid{\lambda_M}{_S},\aMid{\lambda_M}{_T}}.$\parSol{}
 Note that $\Dvert{T}\:\!I-T$ is posi, so is $R=\Dvert{T}I-T+S=\Dvert{T}\:\!I-\Par{T-S}.$\parSol{}
@@ -713,15 +713,14 @@ Thus define $Re_k=k\delta\:\!e_k\Rightarrow T+R$ has $n$ disti eigvals, while $R
 \SepLine
 
 \Anchor{7F16}\ProblemN{F.16}{
-	\TextA{Supp $S\in\Lm{V}$ posi inv. Prove $\exists\,\delta>0$ suth if  $T$ self-adj and $\Dvert{S-T}<\delta,$ then $T$ posi.}
-}Let $\delta$ be the smallest singval of posi inv $S.$ Then $\forall v\in V,\Ang{Sv,v}=\Dvertsq{\sqrt{S}v}\geqslant\delta\:\!\Dvertsq{v}.$\parSol{}
+	\TextA{Supp $S\in\Lm{V}$ posi inv. Prove $\exists\,\delta>0,\forall\:\!$self-adj $T$ suth $\Dvert{S-T}<\delta,$ \,$T$ posi.}
+}Let $\delta$ be the smallest singval of posi inv $S.$ Then $\forall v\in V,\Ang{Sv,v}=\Dvertsq{\;\!\!\sqrt{S}v}\geqslant\delta\:\!\Dvertsq{v}.$\parSol{}
 Supp $T$ self-adj and $0<\Dvert{S-T}<\delta=\min\!\Bra{\Dvert{S-R}:\dim\range R\leqslant\dim V-1}\Rightarrow T$ inv.\vspace{1pt}\parSol{}
 Then $\aXMid{\Ang{\Par{S-T}v,v}}\leqslant\Dvert{S-T}\:\Dvertsq{v}<\delta\:\!\Dvertsq{v}$ \,for all non0 $v\in V.$\vspace{2pt}\parSol{}
 Asum $\exists\,v\in V,\Ang{Tv,v}<0\Rightarrow\delta\:\!\Dvertsq{v}\leqslant\aXMid{\Ang{Sv,v}}\leqslant\aXMid{\Ang{Sv-Tv,v}}<\delta\:\!\Dvertsq{v}.$\vspace{1pt}\parSol{}
 \Or $\Ang{Tv,v}=\Ang{Sv,v}+\BigAng{\Par{T-S}v,v}\geqslant\delta\:\!\Dvertsq{v}-\BigAng{\Par{S-T}v,v}>0$ for $v\neq0.$\PfEnd
 \SepLine
-\ChEnd
-\pagebreak
+\ChEnd\pagebreak
 
 {\small 少了关于无限维内积空间及其算子的基本内容，LADR第七章学起来明显更快更平常，没有前半部分许多题目去掉有限维假设后的悬疑和激动时刻。也许研究无限维内积空间有硬性的分析学知识门槛，所以这本书的性质不允许过多涉及这方面。
 %同样遗憾的是，由于微积分的知识门槛，我放弃了第10章B节最后一小部分和相应习题（这部分在4E中被删掉了，所以我可以找借口说它是3E中不完善的地方）。
@@ -735,6 +734,11 @@ Asum $\exists\,v\in V,\Ang{Tv,v}<0\Rightarrow\delta\:\!\Dvertsq{v}\leqslant\aXMi
 %	\TextA{Supp $V$ is inner prodsp, $P=P_{\!U},$ and $S\in\Lm{V}$ is posi. Prove $\Tr\Par{SP}\geqslant 0.$}
 %}Let orthon $B_U=\Par{e_1,\dots,e_m},B_{U^\perp}=\Par{\,f_1,\dots,f_n}.$\parSol{}
 %Becs $\Tr\Par{SP}=\sum\!\!\:\Ang{SPe_i,e_i}+\sum\!\!\:\Ang{SP\:\!f_j,\,f_j}=\sum\!\!\:\Ang{Se_i,e_i}\geqslant0.$\PfEnd
+%\SepLine
+
+%\Anchor{10A'1}\ProblemB{
+%	\TextA{Supp $\dim V=n,$ and $S,T\in\Lm{V}$ are posi. Prove $\Tr\Par{ST}\geqslant0.$}
+%}By Choleskey factoriz, 
 %\SepLine
 
 \Anchor{10A17}\ProblemN{17}{
@@ -847,8 +851,8 @@ Becs each col of $D$ is in $\col B=\FbbP{m}\Rightarrow$ each $Q_{\cdot,m+k}\in\S
 %\Anchor{4e9C19}\ProblemN{C.19}{
 %	\TextA{Supp $V$ is inner prodsp, $B_V=\Par{e_1,\dots,e_n}$ is orthon, and $T\in\Lm{V}$ is posi.\vspace{1pt}}
 %	\TextA{Prove $\det T\leqslant\prod_{k=1}^n\Ang{Te_k,e_k},$ and if $T$ inv, then equa $\Longleftrightarrow B_V$ are eigvecs.\vspace{3pt}}
-%}$\det T=\BigPar{{\det\sqrt{T}}}\BigPar{{\det\sqrt{T}}}\leqslant\prod_{k=1}^n\BigDvertsq{\sqrt{T}e_k}=\prod_{k=1}^n\Ang{Te_k,e_k}.$ \;Let $\Mt[\BigPar]{\!\sqrt{T},B_V}=QR$ factoriz.\vspace{2pt}\parSol{}
-%Then $R$ diag $\Longleftrightarrow\det\sqrt{T}=\prod_{k=1}^n\BigDvert{\sqrt{T}e_k}\Longleftrightarrow\Mt{T,B_V}=R^*Q^*QR=R^*R$ diag.\PfEnd\vspace{2pt}\parSol{}
+%}$\det T=\BigPar{{\det\sqrt{T}}}\BigPar{{\det\sqrt{T}}}\leqslant\prod_{k=1}^n\BigDvertsq{\;\!\!\sqrt{T}e_k}=\prod_{k=1}^n\Ang{Te_k,e_k}.$ \;Let $\Mt[\BigPar]{\!\sqrt{T},B_V}=QR$ factoriz.\vspace{2pt}\parSol{}
+%Then $R$ diag $\Longleftrightarrow\det\sqrt{T}=\prod_{k=1}^n\BigDvert{\;\!\!\sqrt{T}e_k}\Longleftrightarrow\Mt{T,B_V}=R^*Q^*QR=R^*R$ diag.\PfEnd\vspace{2pt}\parSol{}
 %\Or Let $B=\Mt[\BigPar]{\!\sqrt{T},B_V}.$ Then equa $\Longleftrightarrow\BigPar{{\!\sqrt{T}e_1,\dots,\sqrt{T}e_n}}$ orthog $\Longleftrightarrow B^*B=\Mt{T,B_V}$ diag.\PfEnd
 %\SepLine
 
