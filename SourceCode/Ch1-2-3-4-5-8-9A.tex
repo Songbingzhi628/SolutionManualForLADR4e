@@ -1165,12 +1165,6 @@ $\exists\,u\apostrophe\in\null \varphi\Backslash[\Big]\null \beta,\,\exists\,u\n
 \Or By Exe (24), $\null \beta\subseteq\null \varphi\Longleftrightarrow\exists\,E\in\Lm{\Fbb},\varphi=E\circ\beta.$ \Sbra{ If $E$ is inv. Then $\null \beta=\null \varphi.$ }\par\quad
 Now $\exists\,E\in\Lm{\Fbb},\varphi=E\circ\beta\Longleftrightarrow\exists\,c=E\Par{1}\in\Fbb,\varphi=c\beta.$ \Sbra{ $E$ is inv $\Longleftrightarrow E\Par{1}\neq 0\Longleftrightarrow c\neq 0.$ }\PfEnd
 \SepLine
-
-%\Anchor{3B'2}\ProblemB{
-%	\TextB{Supp $\varphi,\beta\in\Lm{V,\Fbb}$ liney indep and $\dim V=n.$ \,Show $V=\null\varphi+\null\beta.$}
-%}Let $\varphi\Par{u}=\beta\Par{w}=1.$ Let $B_{\null\varphi}=\Par{e_2,\dots,e_n},B_{\null\beta}=\Par{\,f_2,\dots,\,f_n}.$\parSol{}
-%Note that $\Par{u,w}$ liney indep. Supp $\Mt{\varphi,B_1}=\Par{1\;0\;\cdots\;0}$
-%\SepLine
 \ChEnd\pagebreak
 
 \ChDecl{Ch3C}{3$\cdot$C}{\quad{\small\textbf{注意\,:}\;这里我将原书中3.D后半节正文前置。}}
@@ -2330,7 +2324,7 @@ By (3.B.3),
 (c) Becs $\Gamma\Par{v}=0\Longleftrightarrow\varphi_1\Par{v}=\dots=\varphi_m\Par{v}=0\Longleftrightarrow v\in\Par{\null \varphi_1}\cap\dots\cap\Par{\null\varphi_m}.$\par\quad\Hc
 By Exe (4E 23), $\Span{\varphi_1,\dots,\varphi_m}=V\apostrophe\Longleftrightarrow\null\Gamma=\Par{\null \varphi_1}\cap\dots\cap\Par{\null\varphi_m}=\zeroSubs.$\par\quad
 (d) Supp $\Par{\varphi_1,\dots,\varphi_m}$ is liney indep. \Sbra[3pt]{{\tgsl Req Finide}} \;Extend to $B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_n}.$\par\quad\Hb
-Then by Exe (31), $B_V=\Par{v_1,\dots,v_n}$ and each $\varphi_k\Par{v_j}=\delta_{j,\:\!k}\Rightarrow$ each $e_k=\Gamma\Par{\varphi_k}.$\par\quad\Hd
+By Exe\;\!(31),\;$B_V=\Par{v_1,\dots,v_n}$ and each $\varphi_k\Par{v_j}=\delta_{j,\:\!k}\Rightarrow$ each $e_k=\Gamma\Par{v_k}.$\par\quad\Hd
 Convly, let each $v_k$ be suth $e_k=\Gamma\Par{v_k}=\BigPar{\varphi_1\Par{v_k},\dots,\varphi_m\Par{v_k}}.$ If $a_1\varphi_1+\dots+a_m\varphi_m=0.$ Immed.\par\quad\Hd
 \Or Let $U=\Span{v_1,\dots,v_m}.$ Then $B_{U\apostrophe}=\BigPar{\varphi_1\Big|{_U},\dots,\varphi_m\Big|{_U}}\Rightarrow\Par{\varphi_1,\dots,\varphi_m}$ liney indep.\PfEnd\vspace{4pt}\quad
 \Or Let $\Par{\psi_1,\dots,\psi_m}$ be dual bss of the std bss of $\FbbP{m}.$ Define an iso $\Psi:\FbbP{m}\rightarrow\Par{\FbbP{m}}\apostrophe$ by $\Psi\Par{e_k}=\psi_k.$\par\quad
@@ -2387,6 +2381,12 @@ $\forall\Par{x_1,\dots,x_m}\in\FbbP{m},\Gamma\apostrophe\BigPar{\Psi\Par{x_1,\do
 %And $\varphi\neq 0\Rightarrow\exists\,v\in V,\:\varphi\Par{v}=1,\null\varphi\oplus\Span{v}=V.$ Becs $\Lambda$ is surj.\parCom
 %Now $\exists\,x\in V,\forall\psi=c\varphi+\rho\in V\apostrophe,\psi\Par{x}=\overline{x}\Par{\psi}=\Phi\Par{\psi}=c.$
 \SepLine
+
+%\Anchor{3F'5}\ProblemB{
+%	\TextB{Supp $\varphi_1,\dots,\varphi_m\in V\apostrophe$ liney indep and $\dim V=n.$ \,Show $V=\null\varphi_1+\dots+\null\varphi_m.$}
+%}Extend to $B_{V\apostrophe}=\Par{\varphi_1,\dots,\varphi_n}\Rightarrow B_V=\Par{v_1,\dots,v_n}.$\parSol{}
+%Each $\null\varphi_k=\Span{e_1,\dots,e_{k-1},e_{k+1},\dots,e_m}\oplus\Span{e_{m+1},\dots,e_n}.$\PfEnd
+%\SepLine
 
 \ProblemN{\Anchor{3F36}{36}}{
 	\TextA{Supp $U$ is a subsp of $V$. Define $i:U\rightarrow V$  by $i\Par{u}=u$. Thus $i\apostrophe\in\Lm{V\apostrophe,U\apostrophe}.$\vspace{2pt}}
