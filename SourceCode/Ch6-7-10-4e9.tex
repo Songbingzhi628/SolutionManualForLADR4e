@@ -419,7 +419,7 @@ By asum, $\exists$ orthon $B_{U^\perp}$ of eigvecs of $T\mmid_{U^\perp}.$ Now $B
 }\SepLine
 
 %\Anchor{7C4}\ProblemN{4}{
-%	\TextA{Supp $1<n\in\Nbb.$ Show $\exists\,A\in\FbbP{n,\;\!n}$ with all ents positive numbers and $A=\overline{A}{^t},$}
+%	\TextA{Supp $1<n\in\Nbb.$ Show $\exists\,A\in\FbbP{n,\;\!n}$ with all ents posi numbers and $A=\overline{A}{^t},$}
 %	\TextA{while wrto std bss $\Mt{T}=A$ but $T\in\Lm{\FbbP{n}}$ is not posi.}
 %}
 %\SepLine
@@ -523,7 +523,7 @@ Then $S_{\Cbb}\Sbra{\lambda^{-1}\Par{u+\i\,v}}=u+\i\,v\in\bigodot{_{\!\Cbb}}$ wh
 	\TextA{Supp $T\in\Lm{V,W}.$ Show $T=0\Longleftrightarrow$ all singvals are $0.$}
 }(a) $T=0\Longleftrightarrow T^*=0\Longleftrightarrow T^*T=0\Rightarrow$ all singvals are $0.$\parSol{}
 (b) all singvals are $0\Longleftrightarrow T^*T$ nilp. Becs $T^*T$ diag $\Rightarrow T^*T=0=T.$\PfEnd\vspace{2pt}\parSol{}
-\Or Supp $T$ has $N$ positive singvals. Now $N=0\Longleftrightarrow\dim\range T=0\Longleftrightarrow T=0.$\PfEnd
+\Or Supp $T$ has $N$ posi singvals. Now $N=0\Longleftrightarrow\dim\range T=0\Longleftrightarrow T=0.$\PfEnd
 \SepLine
 
 \Anchor{7E4}\ProblemN{E.4}{
@@ -541,8 +541,8 @@ If $s_1=s_n.$ Done. \,Supp $s_1>s_n.$ Then \,$s_1^2-s^2=\Par{s_1^2-s_n^2}\,y^2,$
 
 %\Anchor{7E8}\ProblemN{8}{
 %	\TextA{Supp $T\in\Lm{V,W},s_1\geqslant\cdots\geqslant s_m>0,$ and $\Par{e_1,\dots,e_m},\Par{\,f_1,\dots,f_m}$ orthon in $V,W.$}
-%	\TextA{$\forall v\in V,\:Tv=s_1\:\!\Ang{v,\:\!e_1}\,f_1+\dots+s_m\:\!\Ang{v,\:\!e_m}\,f_m.$ Prove $s_1,\dots,s_m$ are the positive singvals of $T.$}
-%}Becs $\range T=\Span{\,f_1,\dots,f_m}\Rightarrow T$ has $\dim\range T=m$ positive singvals.\PfEnd\vspace{2pt}\parSol{}
+%	\TextA{$\forall v\in V,\:Tv=s_1\:\!\Ang{v,\:\!e_1}\,f_1+\dots+s_m\:\!\Ang{v,\:\!e_m}\,f_m.$ Prove $s_1,\dots,s_m$ are the posi singvals of $T.$}
+%}Becs $\range T=\Span{\,f_1,\dots,f_m}\Rightarrow T$ has $\dim\range T=m$ posi singvals.\PfEnd\vspace{2pt}\parSol{}
 %\Or $\forall\Par{v,w}\in V\times W,\:\Ang{Tv,w}=\sum s_j\:\!\Ang{v,\:\!e_j}\:\!\Ang{\,f_j,w}=\Ang{v,T^*w}\Rightarrow T^*w=\sum s_j\:\!\Ang{w,\,f_j}\,e_j.$\parSol{}
 %$\Rightarrow T^*Tv=\sum s_j^2\,\Ang{v,\:\!e_j}\,e_j.$ \;Get an orthon $B_V=\Par{e_1,\dots,e_m,\,g_1,\dots,e_p}\Rightarrow T^*Te_k=s_k^2\:\!e_k,T^*Tg_j=0.$\PfEnd
 %\SepLine
@@ -632,24 +632,25 @@ Then $T_{\!\Cbb}^kv=\Dvert{T}{^k}v\Rightarrow\Dvert{T}{^k}=\BigDvert{T_{\!\Cbb}^
 
 \Anchor{7F28}\ProblemN{F.28}{
 	\TextA{Supp $T\in\Lm{V}.$ Prove $\exists$ unit $S\in\Lm{V},\,T=\sqrt{TT^*}\,S.$\hfill\FontNorm\tgnr Let $T^*=S\sqrt{TT^*}.$\Blind{\quad}\PfEnd}
-}Supp $s_1,\dots,s_m$ are the positive singvals of $T$ with SVD $\Par{e_1,\dots,e_m},\Par{\,f_1,\dots,f_m}.$\vspace{1pt}\parSol{}
+}Supp $s_1,\dots,s_m$ are the posi singvals of $T$ with SVD $\Par{e_1,\dots,e_m},\Par{\,f_1,\dots,f_m}.$\vspace{1pt}\parSol{}
 Becs $T^*Te_k=s_k^2\:\!e_k,\;f_k=Te_k\big/s_k\Rightarrow TT^*\,f_k=TT^*Te_k\big/s_k=s_kTe_k=s_k^2\;f_k\Rightarrow\sqrt{TT^*}\:f_k=s_k\:f_k.$\vspace{1pt}\parSol{}
 $\dim E\BigPar{s_k,\sqrt{T^*T}}\leqslant\dim E\BigPar{s_k,\sqrt{TT^*}}.$ Apply revly. Thus $\dim E\BigPar{0,\sqrt{T^*T}}=\dim E\BigPar{0,\sqrt{TT^*}}.$\vspace{1pt}\parSol{}
 Get orthon bses of $E\BigPar{0,\sqrt{T^*T}}$ and $E\BigPar{0,\sqrt{TT^*}}.$ Forming two orthon bses of $V.$\parSol{}
-Define $S\in\Lm{V}$ by $Se_j=\;\!f_j.$ \quad\ANote The same $S$ in $T=S\sqrt{T^*T}.$\PfEnd\vspace{2pt}\parSol{}
-\Or Extend to orthon bses $\Par{e_1,\dots,e_n},\Par{\,f_1,\dots,f_n}.$ Define $Se_j=\;\!f_j\Rightarrow\sqrt{TT^*}\,Se_k=s_k\:f_k=Te_k.$\PfEnd\vspace{4pt}
+Define $S\in\Lm{V}$ by $Se_j=\;\!f_j.$ \quad\ANote The same $S$ in $T=S\sqrt{T^*T}.$\PfEnd\vspace{4pt}
+%\vspace{2pt}\parSol{}
+%\Or Extend to orthon bses $\Par{e_1,\dots,e_n},\Par{\,f_1,\dots,f_n}.$ Define $Se_j=\;\!f_j\Rightarrow\sqrt{TT^*}\,Se_k=s_k\:f_k=Te_k.$\PfEnd\vspace{4pt}
 \Anchor{7F29}\ACoro $T=S\sqrt{T^*T}\Rightarrow T^*=\sqrt{T^*T}\,S^*\Longrightarrow TT^*=ST^*TS^*.$\parCor
 \Or $T=S\sqrt{T^*T}=\sqrt{TT^*}\,S\Rightarrow \sqrt{T^*T}=S^*\sqrt{TT^*}\,S\Longrightarrow T^*T=S^*TT^*S.$
 \SepLine
 
-\Anchor{7F30}\ProblemN{F.30}{
-	\TextA{Supp $T\in\Lm{V},$ and $S\in\Lm{V}$ unit suth $ST$ posi. Prove $ST=\sqrt{T^*T}.$}
-}\NOTICE that $T^*T=STT^*S^*=\Par{ST}{^2}.$ \;By the uniqnes.
-\PfEnd\vspace{2pt}\parSol{}
-\Or Let $B_V=\Par{e_1,\dots,e_n}$ be orthon eigvecs of $ST$ with corres eigvals $\lambda_1,\dots,\lambda_n.$\parSol{}
-Becs $ST=T^*S^*\Rightarrow T=S^*T^*S^*.$ \;Let each \:$f_k=S^*e_k\Rightarrow T^*\,f_k=\lambda_k\:\!e_k.$\parSol{}
-Thus $T^*Te_k=T^*S^*STe_k=\lambda_k^2\:\!e_k\Rightarrow\sqrt{T^*T}\,e_k=\lambda_k\:\!e_k=STe_k.$\PfEnd
-\SepLine
+%\Anchor{7F30}\ProblemN{F.30}{
+%	\TextA{Supp $T\in\Lm{V},$ and $S\in\Lm{V}$ unit suth $ST$ posi. Prove $ST=\sqrt{T^*T}.$}
+%}\NOTICE that $T^*T=STT^*S^*=\Par{ST}{^2}.$ \;By the uniqnes.
+%\PfEnd\vspace{2pt}\parSol{}
+%\Or Let $B_V=\Par{e_1,\dots,e_n}$ be orthon eigvecs of $ST$ with corres eigvals $\lambda_1,\dots,\lambda_n.$\parSol{}
+%Becs $ST=T^*S^*\Rightarrow T=S^*T^*S^*.$ \;Let each \:$f_k=S^*e_k\Rightarrow T^*\,f_k=\lambda_k\:\!e_k.$\parSol{}
+%Thus $T^*Te_k=T^*S^*STe_k=\lambda_k^2\:\!e_k\Rightarrow\sqrt{T^*T}\,e_k=\lambda_k\:\!e_k=STe_k.$\PfEnd
+%\SepLine
 
 \Anchor{7F31}\ProblemN{F.31}{
 	\TextA{Supp $T\in\Lm{V}$ self-adj. Or supp $\Fbb=\Cbb$ and $T\in\Lm{V}$ normal.\vspace{1pt}}
@@ -681,7 +682,7 @@ And $V=\Range\Par{P_{\!U}+P_{\!W^\perp}}\subseteq\range P_{\!U}+\range P_{\!W^\p
 }Get the SVD bses $\Par{e_1,\dots,e_n},\Par{\,f_1,\dots,f_n}.$ Let $U=\Span{e_{n-k+1},\dots,e_n}\Rightarrow\Dvert{T\mmid_U}=s_{n-k+1}.$\vspace{1pt}\parSol{}
 Supp $U$ is a $k$\hspace{1pt}-\hspace{1pt}dim subsp of $V.$ \,\NOTICE that $\uline{\Dvert{T\mmid_U}=\BigDvert{T\mmid_UP_{\!U}}=\BigDvert{T-T\mmid_{U^\perp}P_{\!U^\perp}}}\geqslant s_{n-k+1}.$\PfEnd
 %$\Dvert{T\mmid_U}\leqslant\Dvert{T\mmid_UP_{\!U}}=\Dvert{TP_{\!U}}=\Dvert{T-T\mmid_{U^\perp}P_{\!U^\perp}}.$
-\SepLine
+\SepLine\pagebreak
 
 \Anchor{7F13}\ProblemN{F.13}{
 	\TextA{Supp $S,T\in\Lm{V}$ are posi. Show $\Dvert{S-T}\leqslant\max\!\Bra{\Dvert{S},\Dvert{T}}\leqslant\Dvert{S+T}.$}
@@ -737,15 +738,16 @@ Asum $\exists\,v\in V,\Ang{Tv,v}<0\Rightarrow\delta\:\!\Dvertsq{v}\leqslant\aXMi
 %\SepLine
 
 %\Anchor{10A'1}\ProblemB{
-%	\TextA{Supp $\dim V=n,$ and $S,T\in\Lm{V}$ are posi. Prove $\Tr\Par{ST}\geqslant0.$}
-%}By Choleskey factoriz, 
+%	\TextA{Supp $\dim V=n,$ and $S,T\in\Lm{V}$ are posi inv. Prove $\Tr\Par{ST}\geqslant0.$}
+%}Let $A=\Mt{S},B=\Mt{T}$ wrto the same bss.\parSol{}
+%Let $A=Q^*Q,B=R^*R,$ where the up-trig $Q,R$ have only posi ents on diag.
 %\SepLine
 
 \Anchor{10A17}\ProblemN{17}{
 	\TextA{Supp $T\in\Lm{V}$ suth \:\!$\Tr\Par{ST}=0$ \,for all $S\in\Lm{V}.$ \,Prove $T=0.$}
 }Let $S=T^*\Rightarrow\Tr\Par{T^*T}=s_1^2+\dots+s_n^2=0.$ \;By (4E 7.E.1) \OR Exe (11).\PfEnd\vspace{2pt}\parSol{}
-\Or Asum $T\neq0\Rightarrow\exists$ non0 $v\in V$ suth $Tv_1\neq0.$ Extend $v=v_1$ to $B_V=\Par{v_1,\dots,v_n}.$\parSol{}
-Then $Tv_1=A_{1,1}v_1+\dots+A_{n,1}v_n\Rightarrow\exists\,A_{j,1}\neq0.$ Define $S\in\Lm{V}$ by each $Sv_k=\delta_{j,\:\!k}\:\!v_1.$\parSol{}
+\Or Asum $T\neq0\Rightarrow\exists$\;\!non0 $v\in V$ suth $Tv\neq0.$ Extend $v=v_1$ to $B_V=\Par{v_1,\dots,v_n}.$\parSol{}
+Supp $Tv_1=A_{1,1}v_1+\dots+A_{n,1}v_n\Rightarrow\exists\,A_{j,1}\neq0.$ Define $S\in\Lm{V}$ by each $Sv_k=\delta_{j,\:\!k}\:\!v_1.$\parSol{}
 Now $S=E_{j,1}\Rightarrow\Mt{ST}={\mEnt{1,\,j}\Mt{T}}\Longrightarrow0=\Tr\Par{ST}=A_{j,1}.$ Ctradic.\PfEnd\vspace{2pt}\parSol{}
 \Or Asum $\exists\,Tv\neq0.$ Extend to $B_V=\Par{Tv,u_1,\dots,u_n}.$ Define $S\in\Lm{V}:Tv\mapsto v,\,u_i\mapsto 0.$\parSol{}
 Now $\Par{TS}\Par{Tv}=Tv,\Par{TS}\Par{u_i}=0\Rightarrow\Tr\Par{TS}=1.$ Ctradic.\PfEnd
@@ -768,7 +770,7 @@ Now $\BigAng{{\sum A_{j,\;\!k}E_{k,\;\!j}\;\!,\;\sum C_{x,\;\!y}E_{y,\;\!x}}}=\s
 %=\Tr\BigPar{{\sum A_{j,\;\!k}E_{k,\;\!j}\:\sum \overline{C_{x,\;\!y}}R_{x,\;\!y}}}.
 %Becs $\sum A_{j,\;\!k}E_{k,\;\!j}\:\sum \Par{C^*}{_{y,\;\!x}}R_{x,\;\!y}=\sum\sum A_{j,\;\!k}\Par{C^*}{_{y,\;\!x}}\,\delta_{k,\;\!y}\,Q_{x,\;\!j}=\sum\sum A_{j,\;\!k}\Par{C^*}{_{k,\;\!x}}\,Q_{x,\;\!j}.$ Take $x=j.$\PfEnd
 \SepLine
-\ChEnd
+
 
 \vfill\ChDecl{Ch4e9}{[4E] 9}{\quad{\ANote {\FontSmall $V,W$ denote finide non0 vecsps over $\Fbb.$}}}%An Exe marked by $\blacksquare$ is true if infinide or partially finide.
 
@@ -777,25 +779,26 @@ Now $\BigAng{{\sum A_{j,\;\!k}E_{k,\;\!j}\;\!,\;\sum C_{x,\;\!y}E_{y,\;\!x}}}=\s
 \Anchor{Ch4e9A}
 \Anchor{4e9A2}\ProblemN{A.2}{
 	\TextA{Supp $\beta$ is biliney on $V$ of dim $n.$ Prove $\exists\,\varphi_k,\tau_k\in V\apostrophe,\,\beta\Par{u,v}=\sum_{k=1}^n\varphi_k\Par{u}\;\!\tau_k\Par{v}.$}
-}$\forall v\in V,\,V\apostrophe\ni\varphi_v:\:\!u\mapsto\beta\Par{u,v}.$ \,Define such $\varphi_1,\dots,\varphi_n$ for a $B_V=\Par{v_1,\dots,v_n}.$\parSol{}
-Now $\forall u,v\in V,\,\beta\Par{u,v}=\beta\BigPar{u,\sum a_iv_i}=\sum a_i\,\beta\Par{u,v_i}=\sum a_i\:\!\varphi_i\Par{u}.$ Get the dual bss of $B_V.$\PfEnd
+}$\forall v\in V,\exists\,\varphi_v\in V\apostrophe$ suth $\varphi_v:\:\!u\mapsto\beta\Par{u,v}.$ \,Define such $\varphi_1,\dots,\varphi_n$ for a $B_V=\Par{v_1,\dots,v_n}.$\parSol{}
+$\forall u,v\in V,\,\beta\Par{u,v}=\beta\BigPar{u,\sum a_iv_i}=\sum a_i\,\beta\Par{u,v_i}=\sum a_i\:\!\varphi_i\Par{u}.$ Get the dual bss of $B_V.$\PfEnd
 %\Or $\forall u\in V,\,V\apostrophe\ni\tau_u:\:\!v\mapsto\beta\Par{u,v}.$ \,Define such $\tau_1,\dots,\tau_n$ for a $B_V=\Par{u_1,\dots,u_n}.$\parSol{}
 %Now $\forall u,v\in V,\,\beta\Par{u,v}=\beta\BigPar{\sum a_iu_i,v}=\sum a_i\,\beta\Par{u_i,v}=\sum a_i\:\!\tau_i\Par{v}.$ Simlr.\PfEnd\vspace{2pt}\parSol{}
 \SepLine
 
-\Anchor{4e9A3}\ProblemN{A.3}{
-	\TextA{Supp $\beta\in\Par{V\times V}\apostrophe$ is biliney. Prove $\beta=0.$}
-}$\beta\Par{u,x}+\beta\Par{v,y}+\beta\Par{u,y}+\beta\Par{v,x}=\beta\Par{u+v,x+y}=\beta\Par{u,x}+\beta\Par{v,y}=\beta\Par{u,y}+\beta\Par{v,x}=0.$\par\quad
-$2\beta\Par{u,v}=\beta\Par{2u,2v}=4\beta\Par{u,v}=0.$ \;\Or $\beta\Par{2u,2v}=\beta\Par{2u,v}=\beta\Par{u,2v}\Rightarrow\beta\Par{0,v}=\beta\Par{u,0}=0.$\PfEnd
-\SepLine
+%\Anchor{4e9A3}\ProblemN{A.3}{
+%	\TextA{Supp $\beta\in\Par{V\times V}\apostrophe$ is biliney. Prove $\beta=0.$}
+%}$\beta\Par{u,x}+\beta\Par{v,y}+\beta\Par{u,y}+\beta\Par{v,x}=\beta\Par{u+v,x+y}=\beta\Par{u,x}+\beta\Par{v,y}=\beta\Par{u,y}+\beta\Par{v,x}=0.$\par\quad
+%$2\beta\Par{u,v}=\beta\Par{2u,2v}=4\beta\Par{u,v}=0.$ \;\Or $\beta\Par{2u,2v}=\beta\Par{2u,v}=\beta\Par{u,2v}\Rightarrow\beta\Par{0,v}=\beta\Par{u,0}=0.$\PfEnd
+%\SepLine
 
 \Anchor{4e9A4}\ProblemN{A.4}{
 	\TextA{Supp $V$ is real inner prodsp, $\beta$ is biliney on $V.$ Show $\exists\,!\,T\in\Lm{V},\,\beta\Par{u,v}=\Ang{Tu,v}.$}
-}Let orthon $B_V=\Par{e_1,\dots,e_n}\Rightarrow\beta\Par{u,v}=\sum\beta\Par{u,e_i}\Ang{e_i,v}=\BigAng{{\sum\beta\Par{u,e_i}e_i},\:\!v}.$\parSol{}
-Supp $\beta\Par{u,v}=\Ang{Tu,v}=\sum\Ang{Tu,e_i}\Ang{e_i,v}.$ Then each $\Ang{Tu,e_i}=\beta\Par{u,e_i}\Rightarrow Tu=\sum\beta\Par{u,e_i}e_i.$\PfEnd\vspace{3pt}\parSol{}
-\Or Define $Te_j=\sum\beta\Par{e_j,e_i}e_i.$ Then $\Ang{Te_j,e_k}=\beta\Par{e_j,e_k}.$\parSol{}
-Thus $\Ang{Tu,v}=\sum a_jb_k\Ang{Te_j,e_k}=\sum a_jb_k\;\!\beta\Par{e_j,e_k}=\beta\Par{u,v}.$\PfEnd
-\SepLine\pagebreak
+}Let orthon $B_V=\Par{e_1,\dots,e_n}\Rightarrow\beta\Par{u,v}=\sum\beta\Par{u,e_i}\Ang{e_i,v}=\BigAng{{\sum\beta\Par{u,e_i}\;\!e_i},\:\!v}.$\parSol{}
+Supp $\beta\Par{u,v}=\Ang{Tu,v}=\sum\Ang{Tu,e_i}\:\!\Ang{e_i,v}.$ Then each $\Ang{Tu,e_i}=\beta\Par{u,e_i}\Rightarrow Tu=\sum\beta\Par{u,e_i}\;\!e_i.$\PfEnd
+%\vspace{3pt}\parSol{}
+%\Or Define $Te_j=\sum\beta\Par{e_j,e_i}\;\!e_i.$ Then $\Ang{Te_j,e_k}=\beta\Par{e_j,e_k}.$\parSol{}
+%Thus $\Ang{Tu,v}=\sum a_jb_k\Ang{Te_j,e_k}=\sum a_jb_k\;\!\beta\Par{e_j,e_k}=\beta\Par{u,v}.$\PfEnd
+\SepLine
 
 \Anchor{4e9B1}\ProblemN{B.1}{
 	\TextA{Supp $m\in\Nbp.$ Show $\dim V^{\SmallPar{m}}=\dim V^m.$}
@@ -807,7 +810,7 @@ Note that for each $J=\Par{j_1,\dots,j_m}\in\Gamma\:\!\!,\:\alpha_I\Par{e_{j_1},
 \Or We show $V^{\SmallPar{m}}=\mB\Par{V,\cdots,V}$ iso to $\FbbP{n,\dots,n}$ via liney $\alpha\mapsto\Mt{\alpha}.$ Supp $A\in\FbbP{n,\dots,n}.$\parSol{}
 Define $\alpha_A\in\mB\Par{V,\cdots,V}$ by $\alpha_A\BigPar{{\sum_{i=1}^nc_{i,1}\:\!e_i,\cdots,\sum_{i=1}^nc_{i,\;\!m}\;\!e_i}}=\sum_{I\,\in\,\Gamma}c_{j_1,1}\cdots c_{j_m,\;\!m}\,A_I.$\vspace{1pt}\parSol{}
 Let $\Mt{\alpha}\in\FbbP{n,\dots,n}$ with each $\Mt{\alpha}{_{j_1,\dots,\,j_m}}=\alpha\Par{e_{j_1},\dots,e_{j_m}}.$ \,Becs $\alpha_{\Mt[\SmallPar]{\alpha}}=\alpha.$\PfEnd
-\SepLine
+\SepLine\pagebreak
 
 %\Anchor{4e9B3}\ProblemN{B.3}{
 %	\TextA{Supp $\alpha$ is $m$-liney with $\alpha\Par{v_1,\dots,v_j,v_{j+1},\dots,v_m}=0$ \,for $v_j=v_{j+1}.$ \;Show $\alpha\in V^{\SmallPar{m}}_{\alt}.$}
@@ -903,13 +906,41 @@ We stop at step $\Par{n-1}.$ \,Becs each $\delta\Par{R_{k+1}}=\delta\Par{R_k}.$\
 
 \Anchor{4e9DNE6}\ProblemBX[]{\NoteForSmall{Exe (D.6)}}{
 	Let $R_r=\Bra{v_1\otimes w_1+\dots+v_r\otimes w_r:\Par{v_1,\dots,v_r,w_1,\dots,w_r}\in V^r\times W^r}.$\vspace{1pt}\TextB{}
-	Let $V=\Fbb^m,W=\Fbb^n.$ We show $R_r$ can be id with $M_r=\Bra{A\in\Fbb^{m,n}:\rank A\leqslant r}.$ Id $v\otimes w$ with $vw^t.$\TextB{}
+	Let $V=\FbbP{m},W=\FbbP{n}.$ We show $R_r$ can be id with $M_r=\Bra{A\in\FbbP{m,n}:\rank A\leqslant r}.$ Id $v\otimes w$ with $vw^t.$\TextB{}
 	Then $\Par{v_1w_1^t+\dots+v_rw_r^t}{_{\cdot,k}}=w_1[k]\cdot v_1+\dots+w_r[k]\cdot v_r\Rightarrow\Col\Par{v_1w_1^t+\dots+v_rw_r^t}=\Span{v_1,\dots,v_r}.$\vspace{1pt}\TextB{}
-	Thus $\Rank\Par{v_1w_1^t+\dots+v_rw_r^t}\leqslant r.$ Let $N=\min\!\Bra{m,n}\Rightarrow R_1,\dots,R_{N-1}\neq V\otimes W$ id with $\Fbb^{m,n}=M_N.$\par\vspace{3pt}
-	\BulletPointX\AComm For $r\in\!\!\;\Bra{1,\dots,N-1},$ $R_r$ is not a subsp of $V\otimes W,$ as $M_r$ is not a subsp of $\Fbb^{m,n},$\parCom{\IndentB}
+	Thus $\Rank\Par{v_1w_1^t+\dots+v_rw_r^t}\leqslant r.$ Let $N=\min\!\Bra{m,n}\Rightarrow R_1,\dots,R_{N-1}\neq V\otimes W$ id with $\FbbP{m,n}=M_N.$\par\vspace{3pt}
+	\BulletPointX\AComm For $r\in\!\!\;\Bra{1,\dots,N-1},$ $R_r$ is not a subsp of $V\otimes W,$ as $M_r$ is not a subsp of $\FbbP{m,n},$\parCom{\IndentB}
 	as the set of non-inv $T\in\Lm{V,W}$ is not a subsp of $\Lm{V,W}.$\TextB{\vspace{-3pt}}
 }\SepLine
 
 %\textsl{\normalsize 
 %}
+\ChEnd
+%\pagebreak
+%
+%\ChDecl{}{\Largebfx{Extra Exes}}{\quad{\ANote {\FontSmall 题目源自网络。}}}
+%
+%\vspace{4pt}
+%
+%\ProblemB{
+%	\TextB{Supp $V$ is inner prodsp, and $T\in\Lm{V},T^2=0.$}
+%	\TextB{Let $S=T^*T+TT^*.$ Prove $V=\range T\oplus\range T^*\oplus\null S.$}
+%}$\forall Tv,T^*w,\,\Ang{Tv,T^*w}=0.$ Thus $\range T\cap\range T^*=\zeroSubs.$\parSol{}
+%$\forall u\in\null S,\,\Ang{Su,u}=\Dvertsq{T^*u}+\Dvertsq{Tu}.$ Thus $\null S\subseteq\null T\cap\null T^*.$\parSol{}
+%$\forall u\in\null S,\forall\Par{Tv,T^*w}\in\range T\times\range T^*,\,\Ang{u,Tv+T^*w}=\Ang{T^*u,v}+\Ang{Tu,w}=0.$ Thus $\range T\oplus\range T^*\subseteq\BigPar{\null S}{^\perp}.$\parSol{}
+%Becs $\range S\subseteq\BigPar{\null S}{^\perp}$ and $\range S\oplus\null S=V.$
+%\SepLine
+%
+%\ChEnd\pagebreak
+%
+%\ChDecl{}{\Largebfx{Simpler Representa of Matrix Multi Using Tensor Prod}}
+%
+%\vspace{4pt}
+%
+%\BulletPointX Let $A\in\FbbP{m,p},C\in\FbbP{p,n},V=\FbbP{1,p},W=\FbbP{p,1}.$ Let $A=\Par{A_{1,\cdot},\dots,A_{m,\cdot}}\in V^m,$ and $C=\Par{C_{\cdot,1},\dots,C_{\cdot,n}}\in W^n.$\TextB{}
+%Let $\Par{e_1,\dots,e_p},\Par{\,f_1,\dots,\,f_p}$ be std bses of $V,W.$\TextB{}
+%Then $AC=A\otimes C=\sum A_{j,r}C_{r,k}\:\!\Par{e_j\otimes\;\!f_k}.$
+%\SepLine
+
+
 \ChEnd
