@@ -905,17 +905,18 @@ We stop at step $\Par{n-1}.$ \,Becs each $\delta\Par{R_{k+1}}=\delta\Par{R_k}.$\
 %\SepLine
 
 \Anchor{4e9DNE6}\ProblemBX[]{\NoteForSmall{Exe (D.6)}}{
-	Let $R_r=\Bra{v_1\otimes w_1+\dots+v_r\otimes w_r:\Par{v_1,\dots,v_r,w_1,\dots,w_r}\in V^r\times W^r}.$\vspace{1pt}\TextB{}
-	Let $V=\FbbP{m},W=\FbbP{n}.$ We show $R_r$ can be id with $M_r=\Bra{A\in\FbbP{m,n}:\rank A\leqslant r}.$ Id $v\otimes w$ with $vw^t.$\TextB{}
-	Then $\Par{v_1w_1^t+\dots+v_rw_r^t}{_{\cdot,k}}=w_1[k]\cdot v_1+\dots+w_r[k]\cdot v_r\Rightarrow\Col\Par{v_1w_1^t+\dots+v_rw_r^t}=\Span{v_1,\dots,v_r}.$\vspace{1pt}\TextB{}
-	Thus $\Rank\Par{v_1w_1^t+\dots+v_rw_r^t}\leqslant r.$ Let $N=\min\!\Bra{m,n}\Rightarrow R_1,\dots,R_{N-1}\neq V\otimes W$ id with $\FbbP{m,n}=M_N.$\par\vspace{3pt}
+	Let $R_r=\Bra{v_1\otimes w_1+\dots+v_{\;\!\!r}\otimes w_{\;\!\!r}:\BigPar{\Par{v_1,\dots,v_{\;\!\!r}},\Par{w_1,\dots,w_{\;\!\!r}}}\in V^r\times W^r}.$\vspace{1pt}\TextB{}
+	Let $V=\FbbP{m},W=\FbbP{n}.$ Let $M_r=\Bra{A\in\FbbP{m,n}:\rank A\leqslant r}.$ Id $v\otimes w$ with $v\:\!w^t.$\TextB{}
+	Then $\Par{v_1\:\!w_1^t+\dots+v_{\;\!\!r}\:\!w_{\;\!\!r}^t}{_{\cdot,k}}=w_1[k]\cdot v_1+\dots+w_{\;\!\!r}[k]\cdot v_{\;\!\!r}\in\Span{v_1,\dots,v_{\;\!\!r}}.$\vspace{1pt}\TextB{}
+	Simlr $\Par{v_1\:\!w_1^t+\dots+v_{\;\!\!r}\:\!w_{\;\!\!r}^t}{_{j,\cdot}}=v_1[\:\!j]\cdot w_1^t+\dots+v_{\;\!\!r}[\:\!j]\cdot w_{\;\!\!r}^t\in\Span{w_1,\dots,w_{\;\!\!r}}.$\vspace{1pt}\TextB{}
+	Let $N=\min\!\Bra{m,n}.$ Then $R_1,\dots,R_{N-1}\neq V\otimes W$ id with $\FbbP{m,n}=M_N.$\vspace{0pt}\TextB{}
+	Immed $R_N=M_N$ via $v\otimes w=v\:\!w^t,$ with a bss of the smaller vecsp.\par\vspace{3pt}
 	\BulletPointX\AComm For $r\in\!\!\;\Bra{1,\dots,N-1},$ $R_r$ is not a subsp of $V\otimes W,$ as $M_r$ is not a subsp of $\FbbP{m,n},$\parCom{\IndentB}
 	as the set of non-inv $T\in\Lm{V,W}$ is not a subsp of $\Lm{V,W}.$\TextB{\vspace{-3pt}}
 }\SepLine
 
 %\textsl{\normalsize 
 %}
-\ChEnd
 %\pagebreak
 %
 %\ChDecl{}{\Largebfx{Extra Exes}}{\quad{\ANote {\FontSmall 题目源自网络。}}}
