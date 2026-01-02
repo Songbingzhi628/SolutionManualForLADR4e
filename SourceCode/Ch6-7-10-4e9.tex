@@ -403,6 +403,15 @@ Let $B_V=\Par{e_1,\dots,e_n}$ be orthon eigvecs. Then $B_{U^\perp}=\Par{e_{m+1},
 Let $u$ be an eigvec with $\Dvert{u}=1.$ Let $B_U=\Par{u}\Rightarrow U$ invard $T,$ so is $U^\perp\Rightarrow T\mmid_{U^\perp}$ normal.\parNot
 By asum, $\exists$ orthon $B_{U^\perp}$ of eigvecs of $T\mmid_{U^\perp}.$ Now $B_V=B_U\cup B_{U^\perp}$ of orthon eigvecs.\PfEnd
 \SepLine
+
+\Anchor{7BNQuo}\ProblemBX[]{\NoteForSmall{[7.28], a quot version}}{
+	Supp $V$ finide and self-adj $T\in\Lm{V}$ with $U$ invard $T,$ so is $U^\perp.$\TextB{}
+	Define inner prod on $V\XSlash U$ by $\BigAng{v+U, w+U}{_{V\XSlash U}}=\Ang{P_{\!\!\!\:U^\perp}v,P_{\!\!\!\:U^\perp}w}.$\TextB{\vspace{1pt}}
+	We show $LHS=\Ang{Tv+U,w+U}{_{V\XSlash U}}=\Ang{v+U,T^*w+U}{_{V\XSlash U}}=RHS,$\TextB{\vspace{1pt}}
+	so that $\BigAng{v+U,\BigPar{T\XSlash U}{^*}\Par{w+U}}{_{V\XSlash U}}=LHS=RHS=\BigAng{v+U,\BigPar{T^*\XSlash U}\Par{w+U}}{_{V\XSlash U}}.$\TextB{\vspace{1pt}}
+	By (6.C.10), $LHS=\Ang{P_{\!\!\!\:U^\perp}Tv,P_{\!\!\!\:U^\perp}w}=\Ang{TP_{\!\!\!\:U^\perp}v,P_{\!\!\!\:U^\perp}w}=\Ang{P_{\!\!\!\:U^\perp}v,T^*P_{\!\!\!\:U^\perp}w}=\Ang{P_{\!\!\!\:U^\perp}v,P_{\!\!\!\:U^\perp}T^*w}=RHS.$\PfEnd\TextB{}
+}\BulletPointX\AComm This avails another approach to [7.29].\vspace{-2pt}\SepLine
+
 %\vspace{8pt}\pagebreak
 
 %\ChDecl{Ch7C}{7.C \& 7.D [4E]}{\quad{\ANote {\FontSmall $V$ denotes a finide vecsp over $\Fbb.$\qquad7.D[4E]处结合了3e的9.B节。}}}
@@ -432,7 +441,7 @@ By asum, $\exists$ orthon $B_{U^\perp}$ of eigvecs of $T\mmid_{U^\perp}.$ Now $B
 %Let $v=\sum_{k=1}^na_ke_k.$ Then $\Ang{Tv,v}=\sum_{k=1}^n\sum_{j=1}^na_k\overline{a_j}\:\!\Ang{Te_k,\:\!e_j}.$ Note that $\Ang{Te_k,\:\!e_j}=\overline{\Ang{Te_j,\:\!e_k}}.$\vspace{2pt}\parSol{}
 %Hence each $a_k\overline{a_j}\:\!\Ang{Te_k,\:\!e_j}+a_j\overline{a_k}\:\!\Ang{Te_j,\:\!e_k}=2\REAL\:a_k\overline{a_j}\:\!\Ang{Te_k,\:\!e_j}.$ 又 Each $\Ang{Te_k,\:\!e_k}=\Ang{v_k,\:\!v_k}\geqslant 0.$\PfEnd\vspace{6pt}\parSol{}
 }Define $R\in\Lm{V}:e_k\mapsto v_k\Rightarrow\Ang{Te_k,\:\!e_j}=\Ang{Re_k,\:\!Re_j}=\Ang{R^*Re_k,\:\!e_j}\Rightarrow\Mt{T,B_V}=\Mt{R^*R,B_V}.$\PfEnd
-\SepLine
+\SepLine\pagebreak
 
 \Anchor{7C22}\ProblemN{C.22}{
 	\TextA{Supp $T$ posi, $u\in V$ with $\Dvert{u}=1$ suth $\Dvert{Tu}\geqslant\Dvert{Tv}$ for all $v\in V$ with $\Dvert{v}=1.$}
@@ -490,7 +499,7 @@ We show each eigval of $S_{\Cbb}$ has abs val $1.$ Then done by \TIPS.\parSol{}
 Asum $\aMid{\lambda}<1$ and $\lambda$ is eigval of $S_{\Cbb}$ with $u+\i\,v$ and $\Dvertsq{u}+\Dvertsq{v}=1.$\parSol{}
 Then $S_{\Cbb}\Sbra{\lambda^{-1}\Par{u+\i\,v}}=u+\i\,v\in\bigodot{_{\!\Cbb}}$ while $\lambda^{-1}\Par{u+\i\,v}\not\in\bigodot{_{\!\Cbb}}.$ Ctradic.\PfEnd
 \SepLine
-\ChEnd
+%\ChEnd
 
 %\Anchor{7D15}\ProblemN{15}{
 %	\TextA{Supp $T\in\Lm{V}$ unit and $\Par{T-I}$ inv. Prove $\Par{T+I}\Par{T-I}{^{-1}}$ is skew.}
@@ -721,7 +730,9 @@ Then $\aXMid{\Ang{\Par{S-T}v,v}}\leqslant\Dvert{S-T}\:\Dvertsq{v}<\delta\:\!\Dve
 Asum $\exists\,v\in V,\Ang{Tv,v}<0\Rightarrow\delta\:\!\Dvertsq{v}\leqslant\aXMid{\Ang{Sv,v}}\leqslant\aXMid{\Ang{Sv-Tv,v}}<\delta\:\!\Dvertsq{v}.$\vspace{1pt}\parSol{}
 \Or $\Ang{Tv,v}=\Ang{Sv,v}+\BigAng{\Par{T-S}v,v}\geqslant\delta\:\!\Dvertsq{v}-\BigAng{\Par{S-T}v,v}>0$ for $v\neq0.$\PfEnd
 \SepLine
-\ChEnd\pagebreak
+\ChEnd
+
+\pagebreak
 
 {\small 少了关于无限维内积空间及其算子的基本内容，LADR第七章学起来明显更快更平常，没有前半部分许多题目去掉有限维假设后的悬疑和激动时刻。也许研究无限维内积空间有硬性的分析学知识门槛，所以这本书的性质不允许过多涉及这方面。
 %同样遗憾的是，由于微积分的知识门槛，我放弃了第10章B节最后一小部分和相应习题（这部分在4E中被删掉了，所以我可以找借口说它是3E中不完善的地方）。
