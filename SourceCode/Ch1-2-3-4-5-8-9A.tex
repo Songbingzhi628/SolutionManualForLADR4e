@@ -3801,14 +3801,14 @@ Becs for each $w_k,\:\exists$ eigval $\lambda$ of $T,\:Tw_k=\lambda w_k\Rightarr
 %\AComm If each $\aXMid{A_{k,\;\!k}}>\sum_{j=1}^n\aXMid{A_{j,\;\!k}}-A_{k,\;\!k},$ then becs [5.67] still holds by Exe (4E 23), $T$ is inv.
 %\SepLine
 
-%\Anchor{5C4e23}\ProblemN{23}{
-%	\TextA{Redefine G disks suth the radius of the $k^\text{th}$ disk is the sum of the absolute vals}
-%	\TextA{of the ents in {\tgsc col} $k$, excluding the diag ent. Show [4E 5.67] still holds.}
-%}Simlr in [5.67] \Par{without using the result} but to $T\apostrophe.$ \Or Becs $\lambda$ is eigval of $T\Longleftrightarrow$ of $T\apostrophe.$\parSol{}
-%%Supp $T\apostrophe\Par{\psi}=\lambda\psi$ with $\psi=c_1\varphi_1+\dots+c_n\varphi_n\neq0\Rightarrow\lambda\psi=\sum_{j=1}^n\BigBigPar{{\sum_{k=1}^nA^t_{j,\;\!k}c_kv_j}}=\sum_{j=1}^nc_j\lambda v_j.$\vspace{3pt}\parSol{}
-%%Let $\aMid{c_j}=\max\!\Bra{\aMid{c_1},\dots,\aMid{c_n}}.$ Now $\lambda c_j=\sum_{k=1}^nA^t_{j,\;\!k}c_k\Rightarrow\aXMid{\lambda-A^t_{j,\;\!j}}\leqslant\sum_{j\neq k=1}^n\aXMid{A_{k,\;\!j}}.$\PfEnd\vspace{6pt}\parSol{}
-%$\lambda\in\BigBra{z\in\Fbb:\aXMid{z-A_{j,\;\!j}}\leqslant\sum_{j\neq k=1}^n\aXMid{A^t_{j,\;\!k}}=\sum_{j\neq k=1}^n\aXMid{A_{k,\;\!j}}}$ for some $j\in\;\!\!\Bra{1,\dots,n}.$\PfEnd
-%\SepLine
+\Anchor{5C4e23}\ProblemN{23}{
+	\TextA{Redefine G disks suth the radius of the $k^\text{th}$ disk is the sum of the absolute vals}
+	\TextA{of the ents in {\tgsc col} $k$, excluding the diag ent. Show [4E 5.67] still holds.}
+}Supp $T\apostrophe\Par{\psi}=\lambda\psi$ with $\psi=c_1\varphi_1+\dots+c_n\varphi_n\neq0\Rightarrow\lambda\psi=\sum_{j=1}^n\!\BigBigPar{{\sum_{k=1}^nA^t_{j,\;\!k}c_k}}\varphi_k=\sum_{k=1}^nc_k\lambda \varphi_k.$\vspace{3pt}\parSol{}
+Let $\aMid{c_j}=\max\!\Bra{\aMid{c_1},\dots,\aMid{c_n}}.$ Now $\lambda c_j=\sum_{k=1}^nA^t_{j,\;\!k}c_k\Rightarrow\aXMid{\lambda-A^t_{j,\;\!j}}\leqslant\sum_{j\neq k=1}^n\aXMid{A_{k,\;\!j}}.$\PfEnd\vspace{5pt}\parSol{}
+\Or Use [5.67] directly. \NOTICE that $\BigBra{z\in\Fbb:\aXMid{z-A_{j,\;\!j}}\leqslant\sum_{j\neq k=1}^n\aXMid{A^t_{j,\;\!k}}=\sum_{j\neq k=1}^n\aXMid{A_{k,\;\!j}}}.$\PfEnd\vspace{5pt}
+\AComm In other words, $\aXMid{z-A_{k,\;\!k}}\leqslant\sum_{k\neq j=1}^n\aXMid{A_{j,\;\!k}}.$
+\SepLine
 
 \ChEnd
 
@@ -3864,8 +3864,8 @@ Now for non0 $v\in U_m,\:\forall T=c_1T_{\!1}+\dots+c_mT_{\!m}\in\mE,Tv=\Par{c_1
 Let $v_1$ be a common eigvec of all $T_{\!k}.$ Let $W\oplus\Span{v_1}=V,P:av_1+w\mapsto w.$\parSol{\Hb}
 Simlr in [4E 5.80], each pair of $\Bra{\hat{T}_{1},\dots,\hat{T}_m}$ commu. By asum, $\exists\,B_W\Rightarrow\exists\,B_V.$\parSol{\Hb}
 Now each $\Mt{T_{\!k},B_V}$ up-trig $\Rightarrow\forall T\in\mE,\Mt{T}=c_1\Mt{T_{\!1}}+\dots+c_m\Mt{T_{\!m}},$ wrto $B_V.$\PfEnd
-\SepLine\ChEnd
-\pagebreak
+\SepLine
+%\ChEnd\pagebreak
 
 \ChDecl{Ch8}{8}{\quad{\ANote {\FontSmall Supp $V$ is a non0 finide vecsp over $\Fbb.$ \;Let $m_T$ be the min of $T\in\Lm{V}.$}}}\par\vspace{-6pt}
 \Blind{\ChDecl{Ch8}{8}{\quad\ANote}}{\FontSmall An Exe marked by $\blacksquare$ is still true if infinide or partially finide.}\par
@@ -3933,7 +3933,7 @@ Then $\Null\Par{T-\lambda I}{^k}=\Null\Par{T-\lambda I}{^m}\Rightarrow\Par{T-\la
 \SepLine
 
 \Anchor{8A18}\ProblemN{A.18}{
-	\TextA{Supp $\dim V=n.$ Show $\range T^{n}=\range T^{n+1}=\cdots.$\hfill\FontNorm\tgnr By Exe (A.19), simlr.\Blind{\quad}\PfEnd}
+	\TextA{Supp $\dim V=n.$ Show $\range T^{n}=\range T^{n+1}=\cdots.$\hfill\FontNorm\tgnr By [8.4] and Exe (A.19), immed.\Blind{\quad}\PfEnd}
 }Asum $\range T^{n}\supsetneq\range T^{n+1}.$ By Exe (A.17), $V=\range T^0\supsetneq\range T\supsetneq\cdots\supsetneq\range T^{n+1}.$\parSol{}
 Now each $\dim\range T^{k+1}\leqslant\dim\range T^k-1\Rightarrow\dim\range T^{n+1}\leqslant\dim\range T^0-\Par{n+1}.$\PfEnd
 \SepLine\pagebreak
