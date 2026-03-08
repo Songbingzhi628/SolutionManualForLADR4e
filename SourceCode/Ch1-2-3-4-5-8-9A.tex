@@ -3884,7 +3884,8 @@ Now each $\Mt{T_{\!k},B_V}$ up-trig $\Rightarrow\forall T\in\mE,\Mt{T}=c_1\Mt{T_
 }$\Par{T-\lambda I}{^j}v=0=\sum_{i=0}^j\mathC_j^i\Par{{-\lambda}}{^{j-i}}T^iv.$ Apply $\Par{{-\lambda}}{^{-j}}T^{-j}$ to both sides. $\Par{T^{-1}-\lambda^{-1}I}{^j}v=0.$\PfEnd\vspace{2pt}\parSol{}
 \Or We use induc on $j$ to show each $\Null\Par{T-\lambda I}{^j}=\Null\Par{T^{-1}-\lambda^{-1}I}{^j}.$ \,(i) Immed. (ii) $j>1.$\parSol{}
 Asum true for $\Par{j-1}\Rightarrow\forall v\in\Null\Par{T-\lambda I}{^j},\Par{T-\lambda I}v\in\Null\Par{T-\lambda I}{^{j-1}}=\Null\Par{T^{-1}-\lambda^{-1}I}{^{j-1}}.$\parSol{}
-Which equiv \,$\Null\Par{T^{-1}-\lambda^{-1}I}{^{j-1}}v\in\Null\Par{T-\lambda I}=\Null\Par{T^{-1}-\lambda^{-1}I},$ by (i).\PfEnd
+Let $u=\Par{T^{-1}-\lambda^{-1}I}{^{j-1}}v$ becs it's too long. Now $\Par{T-\lambda I}u=0\Longleftrightarrow  T^{-1}u=\lambda^{-1}u.$ Immed.\PfEnd
+%Which equiv \,$\Null\Par{T^{-1}-\lambda^{-1}I}{^{j-1}}v\in\Null\Par{T-\lambda I}=\Null\Par{T^{-1}-\lambda^{-1}I},$ by (i).\PfEnd
 \SepLine
 
 \Anchor{8A5}\ProblemN{A.5}{
@@ -4003,12 +4004,17 @@ Where each $B_{G_k}=\Par{v_{1,\;\!k},\dots,v_{n_k,\;\!k}}.$ \:Let $D=\lambda_1P_
 Hence $T=D+N,$ and $DN=ND:v_{j,\;\!k}\mapsto\lambda_kN_kv_{j,\;\!k}.$\PfEnd
 \SepLine\pagebreak
 
+%\Anchor{8BN1}\ProblemB{
+%	\TextA{Supp $p\in\PoCi$ and $\exists\;\!$non0 $v\in\nullp p\Par{T\big|{_{\:\!G\SmallPar{\:\!\lambda,\,T\:\!}}}}.$ Prove $p\Par{\lambda}=0.$}
+%}Let $\lambda_1=\lambda$ and $p\Par{z}=\Par{z-\lambda_1}{^{\alpha_1}}\cdots\Par{z-\lambda_m}{^{\alpha_m}},$ with disti $\lambda$'s and each $\alpha_k\in\Nbp$ except $\alpha_1.$\parSol{}
+%\SepLine
+
 \Anchor{8B4e7}\ProblemBnoor{4E B.7}{
 	\TextA{Supp $\lambda$ is an eigval of $T$ with multy $d.$ Prove $G\Par{\lambda,T}=\Null\Par{T-\lambda I}{^d}.$}
-}Let $N=T-\lambda I,$ and $\null N\subsetneq\cdots\subsetneq\null N^m=\null N^{m+1}.$ Choose $B_{\null N}.$\parSol{}
-Extend to $B_{\null N^2}\Rightarrow\cdots\Rightarrow B_{\null N^m},$ with each step adding at least one bss vec. Thus $m\leqslant d.$\PfEnd\vspace{3pt}\parSol{}
-\Or Let $m_T\Par{z}=\Par{z-\lambda}{^m}q\Par{z}$ with $q\Par{\lambda}\neq0.$\parSol{}
-Becs by (4E B.6), $G\Par{\lambda,T}=\Null\Par{T-\lambda I}{^m}.$ \,Now by (4E A.4).\PfEnd\vspace{3pt}\parSol{}
+}We show $G\Par{\lambda, T}=\Null\Par{T-\lambda I}{^m}$ where $m\leqslant d\Rightarrow\Null\Par{T-\lambda I}{^m}\subseteq\Null\Par{T-\lambda I}{^d}.$\vspace{1pt}\parSol{}
+Let $N=T-\lambda I,$ and $\null N\subsetneq\cdots\subsetneq\null N^m=\null N^{m+1}.$ Choose $B_{\null N}.$\parSol{}
+Extend to $B_{\null N^2}\Rightarrow\cdots\Rightarrow B_{\null N^m},$ with each step adding at least one vec. Thus $m\leqslant d.$\vspace{2pt}\parSol{}
+\Or Using the $m$ in (4E B.6) below,  $G\Par{\lambda,T}\subseteq\Null\Par{T-\lambda I}{^m}.$ Now by (4E A.4), $d\geqslant m.$\PfEnd\vspace{4pt}\parSol{}
 \Or Let the min of $N=\Par{T-\lambda I}\Big|{_{G\SmallPar{\:\!\lambda,\,T\:\!}}}$ be $z^m\Rightarrow$ the min of $N+\lambda I=T\mmid_{G\SmallPar{\:\!\lambda,\,T\:\!}}$ is $s\Par{z}=\Par{z-\lambda}{^m}.$\parSol{}
 Becs the char of $T$ \Sbra{See [9.21] for the case $\Fbb=\Rbb$} is a multi of $m_T,$ which is a multi of $s.$\PfEnd
 \SepLine
