@@ -2890,17 +2890,19 @@ Note that $\Sbra{\Par{z-\lambda}{^\alpha}}{^{\SmallPar{j}}}=\Sbra{\alpha\Par{\al
 
 \Anchor{4O4e13}\ProblemBnoor{4E 13}{
 	\TextA{Supp nonC $p,q\in\PoCi$ have no common zeros. Let $m = \deg p$, $n = \deg q$.\vspace{1pt}}
-	\TextB{Define $T:\PoC{n-1}\times\PoC{m-1}\rightarrow\PoC{m+n-1}$ by $T\Par{r, s} = rp + sq.$ Prove $T$ is inje.\vspace{3pt}}
-	\ACoro \TextB{$\exists\,!\,r\in\PoC{n-1},s\in\PoC{m-1}$ suth $rp + sq = 1.$\vspace{3pt}}
+	\TextB{Define $T:\PoC{n-1}\times\PoC{m-1}\rightarrow\PoC{m+n-1}$ by $T\Par{r, s} = rp + sq.$ Prove $T$ is inje.\vspace{2pt}}
+	\ACoro \TextB{$\exists\,!\,r\in\PoC{n-1},s\in\PoC{m-1}$ suth $rp + sq = 1.$\vspace{2pt}}
 }Immed, $T$ is liney. \;Supp $T\Par{r,s}=rp+sq=0.$\par\quad
-Then $rp=-sq.$ Becs $p,q$ are \uline{coprime} $\Rightarrow p\:\mmid\:s,$ while $\deg s\leqslant m-1\Rightarrow s=0\Rightarrow r=0.$\PfEnd\vspace{6pt}\quad
-\Or Let $\lambda_1,\dots,\lambda_M$ and $\mu_1,\dots,\mu_N$ be the disti zeros of $p$ and $q$ respectly. \NOTICE that $M\leqslant m,N\leqslant n.$\vspace{2pt}\par\quad
-By the ctrapos of [4.13], $M=0\Longleftrightarrow m=0\Rightarrow s=0\Longleftrightarrow r=0 \Leftarrow n=0\Longleftrightarrow N=0.$\vspace{2pt}\par\quad
+Then $rp=-sq.$ Becs $p,q$ are \uline{coprime} $\Rightarrow p\:\mmid\:s,$ while $\deg s\leqslant m-1\Rightarrow s=0\Rightarrow r=0.$\PfEnd\vspace{4pt}\quad
+\Or Let $\lambda_1,\dots,\lambda_M$ and $\mu_1,\dots,\mu_N$ be the disti zeros of $p$ and $q$ respectly. \NOTICE that $M\leqslant m,N\leqslant n.$\par\quad
+By the ctrapos of [4.13], $M=0\Longleftrightarrow m=0\Rightarrow s=0\Longleftrightarrow r=0 \Leftarrow n=0\Longleftrightarrow N=0.$\par\quad
 Now supp $M,N\geqslant 1.$ We show $s=0.$ \,{\FontSmall Simlr for $r=0.$ \Or $s=0\Rightarrow r=0.$}\vspace{2pt}\par\quad
-Write $p\Par{z}=a\Par{z-\lambda_1}{^{\alpha_1}}\cdots\Par{z-\lambda_M}{^{\alpha_M}}.$ \,Let $\max\!\Bra{\alpha_1,\dots,\alpha_M}=A=\alpha_L.$\vspace{2pt}\par\quad
-For each $D\in\;\!\!\Bra{0,1,\dots,A-1},$ let $I_{>D}=\Bra{{I_{D,\:\!1}},\dots,{I_{D,\,J_D}}}$ be suth each $\alpha\Sbra{I_{D,\:j}}=\alpha_{I_{D,\:j}}\geqslant D+1.$\vspace{2pt}\par\quad
-Now $\Bra{L}=I_{>A-1}\subseteq \cdots\subseteq I_{>0}=\Bra{1,\dots,M}.$ Becs $rp+sq=0\Rightarrow\Par{rp+sq}{^{\SmallPar{k}}}=0$ for all $k\in\Nbp.$\vspace{2pt}\par\quad
-We use induc on $D$ to show\;$s{^{\SmallPar{D}}}\BigPar{\lambda\Sbra{I_{D,\:j}}}=0$ for each $D\in\;\!\!\Bra{0,\dots,A-1}.$\vspace{2pt}\par\quad
+\Or By expr of $p\Par{z}$ below, define $\alpha_{\lambda}\Par{p}=\alpha_j$ if $\lambda=\lambda_j,$ and define $\alpha_{\mu}\Par{p}=0$ if $\mu$ is not zero of $p.$\par\quad
+Now asum $r,s$ non0 $\Rightarrow\forall\lambda=\lambda_j,\,\alpha_{\lambda}\Par{rp}=\alpha_{\lambda}\Par{r}+\alpha_{\lambda}\Par{p}=\alpha_{\lambda}\Par{s}=\alpha_{\lambda}\Par{sq}.$ Sum up and ctradic.\PfEnd\vspace{3pt}\quad
+\Or Write $p\Par{z}=a\Par{z-\lambda_1}{^{\alpha_1}}\cdots\Par{z-\lambda_M}{^{\alpha_M}}.$ \,Let $\max\!\Bra{\alpha_1,\dots,\alpha_M}=A=\alpha_L.$\par\quad
+For each $D\in\;\!\!\Bra{0,1,\dots,A-1},$ let $I_{>D}=\Bra{{I_{D,\:\!1}},\dots,{I_{D,\,J_D}}}$ be suth each $\alpha\Sbra{I_{D,\:j}}=\alpha_{I_{D,\:j}}\geqslant D+1.$\vspace{1pt}\par\quad
+Now $\Bra{L}=I_{>A-1}\subseteq \cdots\subseteq I_{>0}=\Bra{1,\dots,M}.$ Becs $rp+sq=0\Rightarrow\Par{rp+sq}{^{\SmallPar{k}}}=0$ for all $k\in\Nbp.$\vspace{1pt}\par\quad
+We use induc on $D$ to show\;$s{^{\SmallPar{D}}}\BigPar{\lambda\Sbra{I_{D,\:j}}}=0$ for each $D\in\;\!\!\Bra{0,\dots,A-1}.$\par\quad
 \NOTICE that by \TIPSN{2}, \,$p{^{\SmallPar{D}}}\BigPar{\lambda\Sbra{I_{D,\:j}}}=0$ for each $D\in\;\!\!\Bra{0,\dots,A-1}$ and each $I_{D,\:j}\in I_{>D}.$\vspace{2pt}\par\quad
 (i) $D=0.$ Each $\Par{rp+sq}\BigPar{\lambda\Sbra{I_{0,\;\!j}}}=\Par{sq}\BigPar{\lambda\Sbra{I_{0,\;\!j}}}=s\BigPar{\lambda\Sbra{I_{0,\;\!j}}}=0.$ Where \,$q\BigPar{\lambda\Sbra{I_{0,\;\!j}}}\neq0.$\vspace{2pt}\par\quad\Hi
 $D=1.$ Each $\Par{r\apostrophe p+rp\apostrophe}\BigPar{\lambda\Sbra{I_{1,\;\!j}}}+\Par{s\apostrophe q+sq\apostrophe}\BigPar{\lambda\Sbra{I_{1,\;\!j}}}=\Par{s\apostrophe q}\BigPar{\lambda\Sbra{I_{1,\;\!j}}}=s\apostrophe\BigPar{\lambda\Sbra{I_{1,\;\!j}}}=0.$\vspace{1pt}\par\quad\Hi
@@ -2908,8 +2910,8 @@ $D=1.$ Each $\Par{r\apostrophe p+rp\apostrophe}\BigPar{\lambda\Sbra{I_{1,\;\!j}}
 (ii) $2\leqslant D\leqslant A-1.$ Asum $\;s{^{\SmallPar{d}}}\BigPar{\lambda\Sbra{I_{d,\;\!j}}}=0$ for each $d\in\;\!\!\Bra{0,1,\dots,D-1}$ and each $\lambda\Sbra{I_{d,\;\!j}}\in I_{>d}.$\vspace{2pt}\par\quad\Hii
 Each $\Sbra{rp+sq}{^{\SmallPar{D}}}\BigPar{\lambda\Sbra{I_{D,\:j}}}=\Sbra{\mathC_{D}^D\:r{^{\SmallPar{D}}}p{^{\SmallPar{0}}}+\dots+\mathC_{D}^d\;\!r{^{\SmallPar{d}}}p{^{\SmallPar{D-d}}}+\dots+\mathC_{D}^0\;\!r{^{\SmallPar{0}}}p{^{\SmallPar{D}}}}\BigPar{\lambda\Sbra{I_{D,\:j}}}$\hfill(L1)\vspace{4pt}\par\quad\Hii
 \Blind{Each} $\Blind{\Sbra{rp+sq}{^{\SmallPar{D}}}\BigPar{\lambda\Sbra{I_{D,\:j}}}=}\;\!+\Sbra{\mathC_{D}^D\:s{^{\SmallPar{D}}}q{^{\SmallPar{0}}}+\dots+\mathC_{D}^d\:s{^{\SmallPar{d}}}q{^{\SmallPar{D-d}}}+\dots+\mathC_{D}^0\:s{^{\SmallPar{0}}}q{^{\SmallPar{D}}}}\BigPar{\lambda\Sbra{I_{D,\:j}}}$\vspace{4pt}\par\quad\Hii
-\Blind{Each} $\Blind{\Sbra{rp+sq}{^{\SmallPar{D}}}\BigPar{\lambda\Sbra{I_{D,\:j}}}}=\Sbra{\mathC_{D}^D\:s{^{\SmallPar{D}}}q{^{\SmallPar{0}}}}\BigPar{\lambda\Sbra{I_{D,\:j}}}.$\; Where each $\lambda\Sbra{I_{D,\:j}}\in I_{>D}\subseteq I_{D-1,\;\!\alpha}.$\vspace{4pt}\par\quad\Hii
-Hence \,$s{^{\SmallPar{D}}}\BigPar{\lambda\Sbra{I_{D,\:j}}}=0.$ The asum holds for all $D\in\;\!\!\Bra{0,\dots,A-1}.$\vspace{6pt}\par\quad
+\Blind{Each} $\Blind{\Sbra{rp+sq}{^{\SmallPar{D}}}\BigPar{\lambda\Sbra{I_{D,\:j}}}}=\Sbra{\mathC_{D}^D\:s{^{\SmallPar{D}}}q{^{\SmallPar{0}}}}\BigPar{\lambda\Sbra{I_{D,\:j}}}.$\; Where each $\lambda\Sbra{I_{D,\:j}}\in I_{>D}\subseteq I_{D-1,\;\!\alpha}.$\vspace{3pt}\par\quad\Hii
+Hence \,$s{^{\SmallPar{D}}}\BigPar{\lambda\Sbra{I_{D,\:j}}}=0.$ The asum holds for all $D\in\;\!\!\Bra{0,\dots,A-1}.$\vspace{3pt}\par\quad
 \NOTICE that $\forall k=\Bra{0,\dots,A-2},\,s{^{\SmallPar{k}}}$ and $s{^{\SmallPar{k+1}}}$ have common zeros $\BigBra{{\lambda\Sbra{I_{k+1,1}},\dots,\lambda\Sbra{I_{k+1,\,J_{k+1}}}}}.$\vspace{2pt}\par\quad
 Now $\forall D\in\;\!\!\Bra{1,\dots,A-1},\,s=s{^{\SmallPar{0}}},\dots,s{^{\SmallPar{D}}}$ have common zeros $\BigBra{{\lambda\Sbra{I_{D,1}},\dots,\lambda\Sbra{I_{D,\,J_D}}}}.$\vspace{2pt}\par\quad
 Thus \,$s\Par{z}$ is div by $\BigPar{z-\lambda\Sbra{I_{D,1}}}{^{\alpha\def\envFont{\scriptsize}\Sbra{I_{D,1}}}}\cdots\BigPar{z-\lambda\Sbra{I_{D,\,J_D}}}{^{\alpha\def\envFont{\scriptsize}\Sbra{I_{D,\,J_D}}}},$ for each $D\in\;\!\!\Bra{0,\dots,A-1}.$\vspace{2pt}\par\quad
@@ -4034,7 +4036,7 @@ Becs the char of $T$ \Sbra{See [9.21] for the case $\Fbb=\Rbb$} is a multi of $m
 Supp $v\in\Null\Par{T-\lambda I}{^{m+1}}\Longleftrightarrow \Par{T-\lambda I}{^m}v\in\Null\Par{T-\lambda I}=E\Par{\lambda,T}.$\parSol{}
 Then $0=m_T\Par{T}v=q\Par{T}\Sbra{\Par{T-\lambda I}{^m}v}=q\Par{\lambda}\Sbra{\Par{T-\lambda I}{^m}v}\Rightarrow v\in\Null\Par{T-\lambda I}{^m}.$\vspace{2pt}\parSol{}
 Let $k$ be suth $\Null\Par{T-\lambda I}{^k}=G\Par{\lambda,T}=\Null\Par{T-\lambda I}{^m}.$ Becs $\Par{T-\lambda I}{^k}q\Par{T}=0\Rightarrow k\geqslant m.$\PfEnd\vspace{2pt}
-\ANote The expo of an irreducible $\omega$ in the factoriz of $m_T$ is the smallest $m$ suth $\omega^m\Par{T}\Big|{_{\nullp\omega\SmallPar{T}}}=0.$
+\ANote The expo of an irreducible $\omega$ in the factoriz of $m_T$ is the smallest $m$ suth $\omega^m\Par{T}\Big|{_{\nullp\omega{^{\,\dim V}}\SmallPar{T}}}=0.$
 \SepLine
 
 %\Anchor{8B11}\ProblemN{B.11}{
@@ -4087,17 +4089,17 @@ $\forall v\in G\Par{\lambda_k,T\mmid_U},\exists\,!\,u_1\in G\Par{\lambda_1,T\mmi
 \Anchor{8BT4}\ProblemN{\BulletPointX B.\TipsN{4}}{
 	\PrePa\TextA{Prove $\nullp p\Par{T}\oplus\nullp q\Par{T}=\Null\Par{pq}\Par{T},\,\rangep p\Par{T}+\rangep q\Par{T}=V.$}
 	\PrePb\TextA{Prove $\rangep p\Par{T}\cap\rangep q\Par{T}=\Range\Par{pq}\Par{T}.$}
-}(a) By Exe (4E 4.13), $\forall v\in V,\,v=r\Par{T}\:\!p\Par{T}\:\!v+s\Par{T}\:\!q\Par{T}\:\!v.$\par\quad
+}(a) $\exists\,!\,r\in\PoF{\deg q\,-\,1},s\in\PoF{\deg p\,-\,1}$ suth $\forall v\in V,\,v=r\Par{T}\:\!p\Par{T}\:\!v+s\Par{T}\:\!q\Par{T}\:\!v.$\par\quad
 (b) $v\in\rangep p\Par{T}\cap\rangep q\Par{T}\Rightarrow\exists\,u,w\in V,\,v=p\Par{T}u=q\Par{T}w=\Par{pq}\Par{T}\BigPar{r\Par{T}w+s\Par{T}u}.$\PfEndB\vspace{2pt}
 \ACoro Supp $\Par{pq}\Par{T}=0.$ We show $\nullp p\Par{T}=\rangep q\Par{T}.$\parCor
-Becs `$\supseteq$' holds $\Rightarrow\nullp q\Par{T}\cap\rangep p\Par{T}=\zeroSubs.$ By (5.C.3) and \Sbra{1.C \TIPSN{1}}.\PfEnd\parCor
+Becs `$\supseteq$' holds $\Rightarrow\nullp q\Par{T}\cap\rangep q\Par{T}=\zeroSubs.$ By \Sbra{1.C \TIPSN{1}}. Simlr for (c) and (d) below.\parCor
 Supp $\Par{p_1\cdots p_k}\Par{T}=0,$ and $p_1,\dots,p_k\in\PoFi$ have no common zeros on $\Cbb.$\vspace{1pt}\parCor
 (c) Each $\nullp p_j\Par{T}=\Range\BigPar{{\prod_{i\neq j}^k p_i}}\Par{T}=\bigcap_{i\neq j}^k\rangep p_i\Par{T}.$ \;\Or By (d).\vspace{2pt}\parCor
 (d) Each $\rangep p_j\Par{T}=\bigoplus_{i\neq j}^k\nullp p_i\Par{T}.$ Note that $V=\nullp p_j\Par{T}\oplus\Sbra{{\bigoplus_{i\neq j}^k\nullp p_i\Par{T}}}.$\PfEnd\vspace{-2pt}
 \SepLine[0pt][\Blind{\BulletPointX} ]
 
 \BulletPointX\ANote If $\Par{pq}\Par{T}=0.$ \,Let $V_{\!\Cbb}=G\Par{\lambda_1,T_{\!\Cbb}}\oplus\cdots\oplus G\Par{\lambda_m,T_{\!\Cbb}},$ and $m_T\Par{z}=\Par{z-\lambda_1}{^{k_1}}\cdots\Par{z-\lambda_m}{^{k_m}}.$\parNot{\IndentB}
-Let $\mA=\Bra{\alpha_1,\dots,\alpha_{\!A}}$ be the intersec of the zeros of $p$ and the eigvals of $T.$ \,Simlr for $\mB.$\parNot{\IndentB}
+Let $\mA=\Bra{\alpha_1,\dots,\alpha_{\!A}}$ be the intersec of the zeros of $p$ and $m_T.$ \,Simlr for $\mB$ and $q.$\parNot{\IndentB}
 Then $\mA\cap\mB=\emptySet.$ Let $p=\omega_{\alpha_1}\!\!\cdots\omega_{\alpha_{\!A}}\,p_0,\;q=\omega_{\beta_1}\!\!\cdots\omega_{\beta_B}\,q_0,$ where $\omega_{\lambda_i}\Par{z}=\Par{z-\lambda_i}{^{k_i}}.$\parNot{\IndentB}
 By \Sbra{B \TIPSN{3}}, $\nullp p\Par{T_{\!\Cbb}}=G\Par{\alpha_1,T_{\!\Cbb}}\oplus\cdots\oplus G\Par{\alpha_{\!A},T_{\!\Cbb}}.$ \,Simlr for $q\Par{T_{\!\Cbb}}.$\vspace{1pt}\parNot{\IndentB}
 For $\Fbb=\Rbb,$ if $\exists\,\alpha_j\not\in\Rbb,$ then $\exists\,\alpha_i=\overline{\alpha_j}.$ Simlr for $\mB.$ \,Now $V_{\!\Cbb}=\nullp p\Par{T_{\!\Cbb}}\oplus\nullp q\Par{T_{\!\Cbb}}.$
